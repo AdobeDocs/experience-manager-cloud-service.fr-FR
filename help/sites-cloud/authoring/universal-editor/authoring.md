@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 23%
+source-wordcount: '1297'
+ht-degree: 20%
 
 ---
 
@@ -33,7 +33,7 @@ Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface
 
 ## Modification du contenu {#editing-content}
 
-La modification du contenu est simple et intuitive. Lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
+La modification du contenu est simple et intuitive. Lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec un contour bleu mince.
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 ![Modification du contenu](assets/editing-content.png)
 
-Appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
+Le mince contour bleu se transforme en bleu épais pour indiquer la sélection et un curseur s’affiche. Effectuez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
 
 Lorsque vous choisissez de sélectionner le composant de texte, ses détails sont affichés dans le rail [propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le rail.
 
@@ -65,10 +65,21 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Pour votre commodité, les options de mise en forme et les détails de votre texte sont disponibles à deux endroits.
 
-* Le **menu contextuel** s’ouvre au-dessus du bloc de texte enrichi et offre des options de mise en forme de base en contexte. En raison des restrictions d’espace, certaines options peuvent être masquées derrière le bouton représentant des points de suspension.
-* Le **[rail de propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** affiche toutes les options de formatage disponibles avec le texte.
+#### Menu contextuel {#context-menu}
+
+Le menu contextuel s’ouvre au-dessus du bloc de texte enrichi et propose des options de mise en forme de base en contexte. En raison des restrictions d’espace, certaines options peuvent être masquées derrière le bouton représentant des points de suspension.
+
+![Menu contextuel de texte enrichi](assets/rich-text-context-menu.png)
 
 Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié.
+
+#### Rail Propriétés {#properties-rail}
+
+Le [rail de propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) affiche un élément pour le texte sélectionné. Appuyez sur l’entrée pour ouvrir une boîte de dialogue présentant un canevas plus grand pour modifier le texte.
+
+![Boîte de dialogue de modification de texte enrichi](assets/rich-text-canvas.png)
+
+Appuyez ou cliquez sur **Annuler** ou **Terminé** pour ignorer ou enregistrer les modifications, respectivement.
 
 ### Modification du média {#edit-media}
 
@@ -95,9 +106,19 @@ Si vous sélectionnez un champ lié à un fragment de contenu, celui-ci se charg
 
 Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
 
-Si vous souhaitez modifier votre fragment de contenu dans l’ [éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) à la place, cliquez sur le [bouton de modification](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le rail des propriétés.
+Si vous souhaitez modifier votre fragment de contenu dans l’ [éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) à la place, appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le rail des propriétés.
+
+>[!TIP]
+>
+>Utilisez la touche d’accès rapide `e` pour modifier le fragment de contenu sélectionné dans l’éditeur de fragment de contenu.
 
 Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu dans l’éditeur universel ou directement dans l’éditeur de fragment de contenu.
+
+>[!NOTE]
+>
+>L’éditeur universel [ valide les champs de fragment de contenu en fonction de leurs modèles ](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui vous permet d’appliquer des règles d’intégrité des données telles que des modèles d’expression régulière et des contraintes d’unicité.
+>
+>Cela garantit que votre contenu répond aux besoins spécifiques de l’entreprise avant d’être publié.
 
 ### Ajout de composants aux conteneurs {#adding-components}
 
@@ -110,7 +131,7 @@ Le composant est inséré dans le conteneur et peut être modifié dans l’édi
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `A` pour ajouter un composant au conteneur sélectionné.
+>Utilisez la touche d’accès rapide `a` pour ajouter un composant au conteneur sélectionné.
 
 ### Suppression de composants des conteneurs {#deleting-components}
 

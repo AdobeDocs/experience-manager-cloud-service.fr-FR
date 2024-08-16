@@ -4,10 +4,10 @@ description: Découvrez les principes de base de l’accès et de la navigation 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 23%
+source-wordcount: '1576'
+ht-degree: 22%
 
 ---
 
@@ -137,7 +137,7 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 >[!TIP]
 >
->Utiliser le raccourci clavier `L` pour ouvrir la barre d’adresse.
+>Utilisez la clé d&#39;accès `l` (la lettre l) pour ouvrir la barre d&#39;adresse.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `P` pour basculer vers et depuis le mode Aperçu.
+>Utilisez la touche d’accès rapide `p` pour basculer vers et depuis le mode Aperçu.
 
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
 
@@ -185,7 +185,11 @@ Sélectionnez l’icône d’aperçu de l’application ouverte pour ouvrir la p
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `O` (lettre O) pour ouvrir l’aperçu de l’application.
+>Utilisez la touche d’accès rapide `o` (lettre o) pour ouvrir l’aperçu de l’application.
+
+>[!TIP]
+>
+>L&#39;URL d&#39;aperçu de votre application [ peut être personnalisée.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Publier {#publish}
 
@@ -196,6 +200,14 @@ Sélectionnez le bouton Publier pour que vous puissiez publier les modifications
 >[!TIP]
 >
 >Consultez le document [Publication de contenu avec l’éditeur universel](publishing.md) pour plus d’informations sur la publication avec l’éditeur universel.
+
+#### Ellipse {#ellipsis}
+
+D’autres options standard sont accessibles à l’aide du bouton représentant des points de suspension.
+
+![Bouton représentant des points de suspension](assets/ellipsis.png)
+
+Par exemple, la possibilité d’annuler la publication d’une page (c’est-à-dire d’inverser l’action du bouton [**Publish**](#publish)) est accessible via le bouton représentant des points de suspension.
 
 #### Boutons supplémentaires {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Si l’éditeur est en mode [aperçu,](#preview-mode) le contenu est navigable e
 
 Le rail des propriétés est toujours présent le long du côté droit de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
 
-![Le rail de propriétés](assets/component-rail.png)
+![Le rail de propriétés](assets/properties-rail.png)
 
 #### Mode Propriétés {#properties-mode}
 
@@ -232,7 +244,7 @@ Tous les composants ne comportent pas de détails qui peuvent être affichés et
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `D` pour passer en mode Propriétés.
+>Utilisez la touche d’accès rapide `d` pour passer en mode Propriétés.
 
 #### Mode Arborescence de contenu {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `F` pour passer en mode arborescence de contenu.
+>Utilisez la touche d’accès rapide `f` pour passer en mode arborescence de contenu.
 
-##### Modifier {#edit}
+##### Ouvrir dans l’éditeur CF {#edit}
 
-Lors de la modification, les options du composant sélectionné s’affichent dans le rail des propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton Modifier .
+Lors de la modification, les options du composant sélectionné s’affichent dans le rail des propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton **Ouvrir dans l’éditeur CF**.
 
-![Icône Modifier](assets/edit.png)
+![Icône Ouvrir dans l’éditeur de fragment de contenu](assets/open-in-cf-editor.png)
 
-Appuyez ou cliquez sur le bouton Modifier pour ouvrir l’ [éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet. Cela vous permet d’accéder à toute la puissance de l’éditeur de fragments de contenu pour modifier le fragment de contenu associé.
+Appuyez ou cliquez sur le bouton **Ouvrir dans l’éditeur de fragment de contenu** pour ouvrir l’ [ éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet. Cela vous permet d’accéder à toute la puissance de l’éditeur de fragments de contenu pour modifier le fragment de contenu associé.
 
 Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu dans l’éditeur universel ou directement dans l’éditeur de fragment de contenu.
 
 >[!TIP]
 >
->Utilisez la touche d&#39;accès rapide `E` pour modifier un composant sélectionné.
+>Utilisez la touche d’accès rapide `e` pour ouvrir un fragment de contenu sélectionné dans l’éditeur de fragment de contenu.
 
 ##### Ajouter {#add}
 
@@ -274,7 +286,7 @@ Appuyez ou cliquez sur le bouton Ajouter pour ouvrir un menu déroulant des comp
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `A` pour ajouter un composant à un composant de conteneur sélectionné.
+>Utilisez la touche d’accès rapide `a` pour ajouter un composant à un composant de conteneur sélectionné.
 
 ##### Supprimer {#delete}
 

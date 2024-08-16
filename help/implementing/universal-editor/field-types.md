@@ -4,9 +4,9 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1183'
 ht-degree: 12%
 
 ---
@@ -302,6 +302,12 @@ Le sélecteur de fragment de contenu peut être utilisé pour sélectionner un [
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si non défini, aucun sélecteur de variation n’est affiché. | Non |
+
+>[!NOTE]
+>
+>L’éditeur universel [ valide les champs de fragment de contenu en fonction de leurs modèles ](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui vous permet d’appliquer des règles d’intégrité des données telles que des modèles d’expression régulière et des contraintes d’unicité.
+>
+>Cela garantit que votre contenu répond aux besoins spécifiques de l’entreprise avant d’être publié.
 
 >[!BEGINTABS]
 
