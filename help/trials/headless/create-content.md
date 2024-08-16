@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Démarrer la console Fragments de contenu"
->abstract="La création de contenu cohérent et de haute qualité qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu découplé à l’aide de la console de fragment de contenu.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>abstract="La création de contenu cohérent et de qualité supérieure qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu découplé à l’aide de la console de fragment de contenu.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -35,11 +35,11 @@ ht-degree: 100%
 
 Les fragments de contenu représentent votre contenu découplé et sont basés sur des structures prédéfinies, appelées modèles de fragment de contenu. Vous avez déjà créé un modèle dans un module précédent.
 
-Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à l’aide de la console Fragments de contenu. Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
+Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à l’aide de la console Fragments de contenu. Envisagez la console Fragments de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
 
-La console Fragment de contenu est utilisée pour créer et modifier du contenu headless sur les canaux de diffusion et indépendamment du contexte, ce qui peut être la méthode la plus efficace dans de nombreux cas de création. Dans un module ultérieur, nous allons explorer la modification de contenu headless dans le contexte et sur place.
+La console Fragments de contenu est utilisée pour créer et modifier du contenu découplé sur les canaux de diffusion et indépendamment du contexte, ce qui peut être la méthode la plus efficace dans de nombreux cas de création. Dans un module ultérieur, nous allons explorer la modification de contenu découplé dans le contexte et sur place.
 
-1. Appuyez ou cliquez sur le bouton **Créer** en haut à droite de la console.
+1. Cliquez sur le bouton **Créer** en haut à droite de la console.
 
 1. La boîte de dialogue **Nouveau fragment de contenu** s’ouvre et vous pouvez commencer à créer un fragment de contenu. Le champ **Emplacement** est automatiquement renseigné à l’emplacement du nouveau contenu.
 
@@ -47,7 +47,7 @@ La console Fragment de contenu est utilisée pour créer et modifier du contenu 
 
 1. Ajoutez `Tuscany` comme **titre** descriptif pour le fragment de contenu. Cela permet d’identifier votre fragment dans la console.
 
-1. Sélectionner **Créer et ouvrir**.
+1. Sélectionnez **Créer et ouvrir**.
 
 ![Création d’un fragment de contenu.](assets/do-not-localize/create-content.png)
 
@@ -57,9 +57,9 @@ La console Fragment de contenu est utilisée pour créer et modifier du contenu 
 
 ## Ajouter du contenu à votre fragment de contenu {#add-content}
 
-Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre dans un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
+Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragments de contenu s’ouvre dans un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
 
-1. L’éditeur de fragment de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
+1. L’éditeur de fragments de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
 
 1. Fournissez un **titre** pour votre fragment en saisissant `Tuscan Adventure`.
 
@@ -77,11 +77,11 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
    ![Ajouter une ressource](assets/do-not-localize/add-asset.png)
 
-1. La boîte de dialogue **Sélectionner une ressource** s’ouvre. À l’aide du navigateur d’arborescence dans le panneau de gauche, accédez à **Toutes les ressources** > **aem-demo-assets** > **en** > **aventures** > **cycling-tuscany**.
+1. La boîte de dialogue **Sélectionner une ressource** s’ouvre. À l’aide du navigateur d’arborescence dans le panneau de gauche, accédez à **Toutes les ressources** > **aem-demo-assets** > **en** > **adventures** > **cycling-tuscany**.
 
 1. Le contenu du dossier **cycling-tuscany** s’affiche à droite. Sélectionnez l’image `ADOBESTOCK_141786166.JPEG`.
 
-1. Sélectionner **Sélectionner**.
+1. Sélectionnez **Sélectionner**.
 
    ![Sélectionner une ressource](assets/do-not-localize/select-asset.png)
 
@@ -91,7 +91,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
    ![Publier le contenu](assets/do-not-localize/publish.png)
 
-1. La boîte de dialogue **Publier des fragments de contenu** s’affiche. AEM effectue automatiquement une vérification des références pour s’assurer que toutes les ressources nécessaires sont publiées pour votre fragment de contenu. Dans ce cas, vous devrez également publier le modèle que vous avez créé. Sélectionner **Publier**.
+1. La boîte de dialogue **Publier des fragments de contenu** s’affiche. AEM effectue automatiquement une vérification des références pour s’assurer que toutes les ressources nécessaires sont publiées pour votre fragment de contenu. Dans ce cas, vous devrez également publier le modèle que vous avez créé. Sélectionnez **Publier**.
 
    ![Vérification de la publication et des références.](assets/do-not-localize/publish-confirm.png)
 

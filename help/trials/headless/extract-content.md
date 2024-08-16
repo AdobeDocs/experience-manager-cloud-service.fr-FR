@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Beau travail ! Vous avez appris les deux types de requêtes de base et comment interroger votre propre contenu. Vous savez désormais comment utiliser l’API GraphQL d’AEM pour créer des requêtes efficaces qui diffusent le contenu dans un format pris en charge par votre application."
+>title="Beau travail ! Vous avez appris les deux types de requêtes de base et la façon dont interroger votre propre contenu. Vous savez désormais comment utiliser l’API GraphQL d’AEM pour créer des requêtes efficaces qui diffusent le contenu dans un format pris en charge par votre application."
 >abstract=""
 
 ## Requête pour obtenir une liste de contenu type {#list-query}
@@ -111,7 +111,7 @@ Vous venez de valider une requête byPath pour récupérer un fragment de conten
 
 ## Interroger votre propre contenu {#own-queries}
 
-Maintenant que vous avez exécuté les deux principaux types de requêtes, vous êtes prêt à interroger votre propre contenu.
+Maintenant que vous avez exécuté les deux principaux types de requêtes, vous êtes désormais en mesure d’interroger votre propre contenu.
 
 1. Pour exécuter des requêtes sur vos propres fragments de contenu, remplacez le point d’entrée du dossier **Ressources de démonstration AEM** par le dossier **Votre projet**.
 
@@ -121,7 +121,7 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Définissez les éléments que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Saisissez une nouvelle fois le crochet ouvert `{`, puis appuyez sur Ctrl + Espace ou Option + Espace pour obtenir une liste de saisie automatique. Sélectionnez `items` dans le menu des options.
 
-1. Appuyez ou cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
+1. Cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
 
 1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
@@ -139,7 +139,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
 1. Vous allez utiliser les données que vous avez créées précédemment en tant que fragment de contenu. Assurez-vous donc que le point d’entrée **Votre projet** est sélectionné dans le menu déroulant **Point d’entrée** dans le coin supérieur droit de l’éditeur.
 
-1. Copiez l’extrait code suivant.
+1. Copiez l’extrait de code suivant.
 
    ```text
       {
@@ -179,7 +179,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
 1. Dans le pop-up **Nom de la requête**, attribuez le nom `adventure-list` à votre requête.
 
-1. Sélectionnez **Enregistrer comme**.
+1. Sélectionnez **Enregistrer sous**.
 
    ![Conserver la requête](assets/do-not-localize/persist-query.png)
 
