@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 67%
+source-wordcount: '659'
+ht-degree: 47%
 
 ---
 
@@ -21,42 +21,35 @@ Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en
 >
 >La configuration d’un certificat peut prendre quelques jours. Adobe recommande donc que le certificat soit configuré bien avant toute date limite ou d’activation.
 
-## Conditions requises du certificat {#certificate-requirements}
+## Exigences de certificat {#certificate-requirements}
 
-Consultez la section **Exigences de certificat** du document [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) pour vous assurer que le certificat que vous souhaitez ajouter est pris en charge par AEM as a Cloud Service.
+Vérifiez les **conditions requises pour les certificats** dans [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) pour vous assurer qu’AEM as a Cloud Service prend en charge le certificat que vous souhaitez ajouter.
 
 ## Ajout d’un certificat {#adding-a-cert}
-
-Pour ajouter un certificat à l’aide de Cloud Manager, procédez comme suit.
 
 1. Se connecter à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionner l’organisation appropriée
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
 
-1. Cliquez sur **SSL Certificates** dans le panneau de navigation de gauche. Un tableau contenant les détails de tout certificat SSL existant s’affiche sur l’écran principal.
+1. Dans le panneau de navigation de gauche, sous **Services**, cliquez sur **Certificats SSL**. (Si nécessaire, vous devrez peut-être cliquer sur l’icône en forme de hamburger dans le coin supérieur gauche pour accéder au panneau de navigation. Un tableau contenant les détails de tout certificat SSL existant s’affiche.
 
    ![Ajout d’un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Cliquez sur **Ajouter un certificat SSL** pour ouvrir la boîte de dialogue **Ajouter un certificat SSL** .
 
-   * Entrez un nom pour votre certificat dans **Nom du certificat**.
-      * Il s’agit d’un nom uniquement à titre d’information, il peut s’agir de n’importe quel nom qui vous aide à référencer facilement votre certificat.
-   * Collez le **certificat**, la **clé privée** et la **chaîne de certificat** dans leurs champs respectifs.
-      * Les trois champs sont obligatoires.
+   * Entrez un nom pour votre certificat dans **Nom du certificat**. Ce champ est fourni à titre d’information uniquement et peut être n’importe quel nom qui vous aide à référencer facilement votre certificat.
+   * Collez les valeurs du **certificat**, de la **clé privée** et de la **chaîne de certificat** dans leurs champs respectifs. Les trois champs sont obligatoires.
 
    ![Boîte de dialogue Ajouter un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Toutes les erreurs détectées s’affichent.
-      * Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat.
-      * Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+   * Toutes les erreurs détectées dans les valeurs s’affichent. Avant de pouvoir enregistrer votre certificat, vous devez corriger toutes les erreurs.
+Voir [Certificate errors](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
-1. Cliquez sur **Enregistrer** pour enregistrer votre certificat.
+1. Cliquez sur **Enregistrer**.
 
-Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvelle ligne dans le tableau.
-
-![Certificat SSL enregistré](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Certificat SSL enregistré](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Votre certificat s’affiche désormais sous la forme d’une nouvelle ligne dans le tableau, comme dans l’image ci-dessus.
 
 >[!NOTE]
 >
@@ -66,7 +59,7 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 
 Certaines erreurs peuvent se produire si un certificat n’est pas installé correctement ou répond aux exigences de Cloud Manager.
 
-### Ordre de certificat correct {#correct-certificate-order}
+### Correction de l’ordre du certificat {#correct-certificate-order}
 
 La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre.
 
@@ -92,7 +85,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondante pour votre certificat `main/server`, vous devez recréer le certificat en générant une nouvelle CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
-### Suppression de certificats du client {#client-certificates}
+### Suppression des certificats du client {#client-certificates}
 
 Lors de l’ajout d’un certificat, si vous recevez une erreur similaire à celle-ci :
 
@@ -102,7 +95,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 
 Vous avez probablement inclus le certificat client dans la chaîne de certificats. Assurez-vous que la chaîne ne contient pas le certificat client et réessayez.
 
-### Politique de certificat {#certificate-policy}
+### Stratégie de certificat {#certificate-policy}
 
 Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre certificat.
 
@@ -110,7 +103,7 @@ Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre cer
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalement, les politiques de certificat sont identifiées par des valeurs OID incorporées. La génération d’un certificat dans du texte et la recherche de l’OID révèleront la politique du certificat.
+Les valeurs OID intégrées identifient normalement les stratégies de certificat. La génération d’un certificat dans du texte et la recherche de l’OID révèlent la stratégie du certificat.
 
 Vous pouvez générer les détails de votre certificat sous forme de texte à l’aide de l’exemple suivant comme guide.
 
@@ -158,7 +151,7 @@ Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moin
 
 ## Étapes suivantes {#next-steps}
 
-Félicitations. Vous disposez désormais d’un certificat SSL fonctionnel pour votre projet. Il s’agit souvent de la première étape de la configuration d’un nom de domaine personnalisé.
+Félicitations. Vous disposez désormais d’un certificat SSL fonctionnel pour votre projet. Cette étape est souvent la première à configurer un nom de domaine personnalisé.
 
-* Consultez le document [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour continuer à configurer un nom de domaine personnalisé.
-* Consultez le document [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) pour en savoir plus sur la mise à jour et la gestion de vos certificats SSL dans Cloud Manager.
+* Pour configurer un nom de domaine personnalisé, voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Pour en savoir plus sur la mise à jour et la gestion de vos certificats SSL dans Cloud Manager, voir [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).

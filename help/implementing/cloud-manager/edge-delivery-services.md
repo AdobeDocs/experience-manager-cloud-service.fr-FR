@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide d
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 30%
+ht-degree: 17%
 
 ---
 
@@ -21,12 +21,13 @@ Découvrez comment diffuser vos projets Cloud Manager à l’aide de Edge Delive
 
 ## Edge Delivery Services en bref {#edge-overview}
 
-Edge Delivery Services est un ensemble de services composable qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Vous pouvez ainsi effectuer les opérations suivantes :
+Edge Delivery Services est un ensemble de services composable qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Cette fonctionnalité vous permet d’effectuer les opérations suivantes :
 
-* Créez des sites rapides avec un score Lighthouse parfait et surveillez en permanence les performances grâce à la surveillance à usage réel (RUM).
+* Créez des sites rapides avec un score Lighthouse parfait.
+* Surveillez continuellement les performances grâce à la fonction RUM (surveillance de l’utilisation réelle).
 * Augmentez l’efficacité de la création en découplant les sources de contenu.
 
-Vous pouvez utiliser AEM gestion de contenu et la création WYSIWYG à l’aide de l’éditeur universel, ainsi que la création basée sur des documents.
+Vous pouvez utiliser AEM gestion de contenu et la création WYSIWYG à l’aide de l’éditeur universel et de la création basée sur des documents.
 
 Cloud Manager dans AEM as a Cloud Service vous permet d’activer le service Edge Delivery pour votre projet.
 
@@ -36,11 +37,11 @@ Cloud Manager dans AEM as a Cloud Service vous permet d’activer le service Edg
 
 ## Edge Delivery Services dans Cloud Manager {#edge-in-cloud-manager}
 
-Si vous possédez des Edge Delivery Services sous licence dans Adobe Experience Manager Sites, vous pouvez embarquer sur votre site avec des Edge Delivery Services directement dans Cloud Manager et passer en ligne [à l&#39;aide d&#39;une expérience guidée en libre-service.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Si vous possédez des Edge Delivery Services sous licence dans Adobe Experience Manager Sites, vous pouvez embarquer sur votre site avec des Edge Delivery Services directement dans Cloud Manager et passer en ligne [ à l’aide d’une expérience guidée en libre-service](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
-Vous bénéficiez ainsi d’une expérience unifiée pour toutes vos propriétés AEM, ce qui garantit la cohérence avec tous les workflows critiques, notamment la gestion des noms de domaine, la gestion des certificats SSL et les mappages CDN.
+Cette fonctionnalité offre une expérience unifiée pour la gestion de toutes vos propriétés AEM. Cela garantit la cohérence entre les workflows clés. Il s’agit notamment de la gestion des noms de domaine, de la gestion des certificats SSL et des mappages CDN.
 
-Les Edge Delivery Services sont disponibles pour les programmes [production et sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Le Edge Delivery Services est disponible pour les [programmes de production et de test](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Activation des Edge Delivery Services {#enabling}
 
@@ -48,7 +49,7 @@ Les Edge Delivery Services peuvent être activés lors de l’ajout d’un nouve
 
 ![Ajout d’un programme de production avec des Edge Delivery Services](assets/add-production-program-with-edge.png)
 
-Pour plus d’informations sur l’ajout de programmes, consultez les documents suivants.
+Pour plus d’informations sur l’ajout de programmes, voir :
 
 * [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
