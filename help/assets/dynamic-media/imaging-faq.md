@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
-ht-degree: 99%
+source-wordcount: '3455'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ Les principaux avantages de la dernière technologie d’imagerie dynamique sont
 * [Rapport pixel de l’appareil](#dpr)
 * [Bande passante réseau](#bandwidth)
 
-### À propos de la conversion au format du navigateur {#bfc}
+### A propos de la conversion au format du navigateur {#bfc}
 
 L’activation de la conversion au format du navigateur en ajoutant `bfc=on` dans l’URL de l’image convertit automatiquement les JPEG et PNG en AVIF avec perte, WebP avec perte, JPEGXR avec perte, JPEG2000 avec perte, en fonction des différents navigateurs. Pour les navigateurs qui ne prennent pas en charge ces formats, l’imagerie dynamique continue de délivrer le JPEG ou le fichier PNG. En plus du format, la qualité du nouveau format est recalculée par l’imagerie dynamique.
 
@@ -136,11 +136,11 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Conversion automatique vers le JPEG2000 si Safari ne prend pas en charge le WebP
 * Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP
 
-  | Format d’image  | Navigateurs pris en charge |
+  | Format d’image | Navigateurs pris en charge |
   |---|---|
   | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
   | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
   | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
@@ -162,7 +162,7 @@ Pour les formats de fichiers image qui prennent en charge la transparence, tels 
 
 Les commandes de diffusion d’images `fmt` et `qlt` ne sont pas prises en charge ; toutes les autres commandes sont prises en charge.
 
-## Questions fréquentes concernant l’imagerie dynamique{#smart-imaging-faq}
+## Questions fréquentes sur l’imagerie dynamique{#smart-imaging-faq}
 
 +++**L’imagerie dynamique entraîne-t-elle des frais de licence ?**
 
