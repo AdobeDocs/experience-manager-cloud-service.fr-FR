@@ -1,44 +1,40 @@
 ---
-title: Ajout d’une liste d’adresses IP autorisées
-description: Découvrez comment ajouter votre propre liste d’adresses IP autorisées à l’aide de Cloud Manager.
+title: Ajout de Listes autorisées IP
+description: Découvrez comment ajouter vos propres Listes autorisées IP à l’aide de Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 75%
+source-wordcount: '227'
+ht-degree: 14%
 
 ---
 
 
-# Ajouter une liste d’adresses IP autorisées {#add-ip-allow-list}
+# Ajouter une liste d’adresses IP autorisées {#add-ip-allow-list}
 
-Découvrez comment ajouter votre propre liste d’adresses IP autorisées à l’aide de Cloud Manager.
+Découvrez comment ajouter votre propre Liste autorisée IP à l’aide de Cloud Manager.
 
-Une personne dotée du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour ajouter une liste d’adresses IP autorisées.
+Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre ces étapes pour ajouter une Liste autorisée IP.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Sur la page **Overview** , accédez à la page **IP Listes autorisées** à l’aide de l’onglet de navigation latéral.
+1. Sur la page **Aperçu du programme** , à l’aide du panneau latéral sur le côté gauche (vous devrez peut-être cliquer sur l’icône de hamburger dans le coin supérieur gauche pour afficher le panneau), cliquez sur **Listes autorisées IP**.
 
-   ![Option de liste d’adresses IP autorisées dans le panneau latéral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   ![Option de Listes autorisées IP dans le panneau latéral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Cliquez sur **Ajouter une Liste autorisée IP**.
+1. Dans le coin supérieur droit de la page Listes autorisées IP, cliquez sur **Ajouter une Liste autorisée IP**.
 
    ![Boîte de dialogue Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Dans la boîte de dialogue **Ajouter une Liste autorisée IP** , saisissez un nom à utiliser pour référencer la liste autorisée dans le champ **Nom de la Liste autorisée IP** .
+1. Dans la boîte de dialogue **Ajouter une Liste autorisée IP**, dans le champ **Nom de Liste autorisée IP**, saisissez un nom que vous souhaitez utiliser pour référencer la Liste autorisée IP. Ce nom est informatif uniquement. Assurez-vous qu’il est suffisamment descriptif pour vous aider à identifier la liste.
 
-   * Ce nom n’est donné qu’à titre d’information et doit être descriptif pour vous aider à identifier la liste.
-
-1. Saisissez un bloc IP ou IP CIDR dans le champ **Adresse IP/CIDR**.
-
-   * Plusieurs blocs peuvent être séparés par une virgule ou un onglet.
+1. Dans le champ **IP address / CIDR** , saisissez un bloc IP ou IP CIDR. Séparez plusieurs blocs par une virgule ou un onglet.
 
 1. Cliquez sur **Enregistrer**.
 
-Après l’enregistrement, la nouvelle liste d’adresses IP autorisées s’affiche sur une ligne du tableau de la page **Listes d’adresses IP autorisées**.
+Après l’enregistrement, la Liste autorisée IP nouvellement créée apparaît en ligne dans le tableau de la page **Listes autorisées IP**.

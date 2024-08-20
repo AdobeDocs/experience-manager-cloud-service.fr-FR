@@ -1,42 +1,49 @@
 ---
-title: Application et annulation de l’application de listes d’adresses IP autorisées
-description: Découvrez comment appliquer et annuler l’application de listes d’adresses IP autorisées aux environnements.
+title: Application et déploiement de Listes autorisées IP
+description: Découvrez comment appliquer et annuler l’application de Listes autorisées IP à des environnements Cloud Manager.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 84%
+source-wordcount: '293'
+ht-degree: 18%
 
 ---
 
 
-# Application et annulation de l’application de listes d’adresses IP autorisées {#apply-allow-list}
+# Application et annulation de l’application de Listes autorisées IP {#apply-allow-list}
 
-Lors de l’application d’une liste d’adresses IP autorisées, toutes les plages d’adresses IP comprises dans la définition de la liste sont associées à un service de création ou de publication dans un environnement. L’annulation de l’application d’une liste représente l’inverse de ce processus.
+Lors de l’application de Listes autorisées IP, toutes les plages d’adresses IP incluses dans la définition de la liste sont associées à un service de création ou de publication au sein d’un environnement. L’annulation de l’application d’une liste représente l’inverse de ce processus.
 
-## Application de listes d’adresses IP autorisées {#applying}
+## Appliquer les Listes autorisées IP {#applying}
 
-Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable du déploiement** peut suivre les étapes suivantes pour appliquer une liste d’adresses IP autorisées.
+Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre ces étapes pour appliquer une Liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+**Pour appliquer des Listes autorisées IP :**
 
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Sélectionnez l’organisation appropriée.
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à la page d’information sur chaque environnement à l’aide de l’écran **Environnements** et accédez au tableau **Liste d’adresses IP autorisées**.
-1. Utilisez les champs de saisie en haut du tableau pour sélectionner la liste autorisée IP et le service de création ou de publication auquel vous souhaitez l’appliquer.
-   * La liste d’adresses IP autorisées doit exister dans Cloud Manager afin de pouvoir être appliquée.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
+1. Accédez à la page de détails de l’environnement spécifique sur l’écran **Environments**.
+1. Accédez à la table **Liste autorisée IP**.
+1. Utilisez les champs de saisie en haut du tableau pour sélectionner la Liste autorisée IP et le service de création ou de publication auquel vous souhaitez appliquer la .
+La Liste autorisée IP doit déjà exister dans Cloud Manager pour l’appliquer. Voir [Ajout de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 1. Cliquez sur **Appliquer** et confirmez votre soumission.
 
-## Annulation de l’application de listes autorisées {#un-applying}
+## Annulation de l’application des Listes autorisées IP {#un-applying}
 
-Une personne dotée du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour ajouter une liste d’adresses IP autorisées.
+Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre ces étapes pour annuler l’application d’une Liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à la page d’information sur chaque environnement à l’aide de l’écran **Environnements** et accédez au tableau **Liste d’adresses IP autorisées**.
-1. Identifiez la ligne de la liste autorisée IP que vous souhaitez annuler.
-1. Sélectionnez le bouton représentant des points de suspension à l’extrémité droite de la ligne.
-1. Sélectionnez l’option **Annuler l’application** et confirmez votre envoi.
+**Pour annuler l’application de Listes autorisées IP :**
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Sélectionnez l’organisation appropriée.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
+1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
+1. Accédez à la page de détails de l’environnement spécifique sur l’écran **Environments**.1}. Accédez à la table **Liste autorisée IP**.
+1. Identifiez la ligne de la Liste autorisée IP que vous souhaitez annuler.
+1. Sur le côté droit de la ligne identifiée, cliquez sur le bouton représentant des points de suspension, puis sélectionnez **Annuler l’application**.
+1. Confirmez votre envoi.
