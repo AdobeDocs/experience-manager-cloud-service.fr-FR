@@ -4,10 +4,10 @@ description: Découvrez comment Universal Editor prend en charge la modification
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '819'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ Pour ce faire, vous devez configurer AEM pour qu’il s’exécute sur HTTPS. À
 
 Le service d’éditeur universel n’est pas une copie complète de l’éditeur universel, mais seulement un sous-ensemble de ses fonctionnalités pour s’assurer que les appels provenant de votre environnement d’AEM local ne sont pas acheminés sur Internet, mais à partir d’un point de terminaison défini que vous contrôlez.
 
-[NodeJS version 16](https://nodejs.org/en/download/releases) est nécessaire pour exécuter une copie locale du service Universal Editor.
+[NodeJS version 20](https://nodejs.org/en/download/releases) est nécessaire pour exécuter une copie locale du service Universal Editor.
 
 Le service d’éditeur universel est disponible via Distribution logicielle. Pour plus d’informations sur la façon d’y accéder, consultez la [documentation sur la distribution de logiciels](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
 
@@ -63,18 +63,36 @@ Un certain nombre de variables d’environnement doivent être définies dans No
 Sur le même chemin que vos fichiers `universal-editor-service.cjs`, `key.pem` et `certificate.pem`, créez un fichier `.env` avec le contenu suivant.
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-La variable a les significations suivantes :
+Il s’agit des valeurs minimales requises pour le développement local dans notre exemple. Le tableau suivant présente en détail ces valeurs et les valeurs supplémentaires disponibles.
 
-* `EXPRESS_PORT` : définit le port sur lequel écoute le service Universal Editor
-* `EXPRESS_PRIVATE` : pointe vers votre [clé privée créée précédemment,](#ue-https) `key.pem`
-* `EXPRESS_CERT` : pointe vers votre [ certificat créé précédemment,](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0` : accepte les certificats auto-signés
+| Valeur | Facultatif | Valeur par défaut | Description |
+|---|---|---|---|
+| `UES_PORT` | Oui | `8080` | Port sur lequel le serveur s’exécute |
+| `UES_PRIVATE_KEY` | Oui | Aucune | Chemin d’accès à la clé privée du serveur HTTPS |
+| `UES_CERT` | Oui | Aucune | Chemin du fichier de certification pour le serveur HTTPS |
+| `UES_TLS_REJECT_UNAUTHORIZED` | Oui | `true` | Rejeter les connexions TLS non autorisées |
+| `UES_DISABLE_IMS_VALIDATION` | Oui | `false` | Désactiver la validation IMS |
+| `UES_ENDPOINT_MAPPING` | Oui | Vide | Mappage des points de terminaison pour les réécritures internes<br>Exemple : `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>Result: Universal Editor Service se connecte à `http://10.0.0.1:4502` au lieu de la connexion fournie `https://your-public-facing-author-domain.net` |
+| `UES_LOG_LEVEL` | Oui | `info` | Niveau de journal du serveur, les valeurs possibles sont `silly`, `trace`, `debug`, `verbose`, `info`, `log`, `warn`, `error` et `fatal` |
+| `UES_SPLUNK_HEC_URL` | Oui | Aucune | URL HEC vers le point de terminaison Splunk |
+| `UES_SPLUNK_TOKEN` | Oui | Aucune | Jeton Splunk |
+| `UES_SPLUNK_INDEX` | Oui | Aucune | Index des journaux à écrire |
+| `UES_SPLUNK_SOURCE` | Oui | `universal-editor-service` | Nom de la source dans les journaux de démarrage |
+
+>[!NOTE]
+>
+>Avant la [version 2024.08.13](/help/release-notes/universal-editor/current.md) d’Universal Editor, les variables suivantes étaient requises dans le fichier `.env`. Ces valeurs seront prises en charge jusqu’au 1er octobre 2024 pour une compatibilité descendante.
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## Exécution du service Universal Editor {#running-ue}
 
