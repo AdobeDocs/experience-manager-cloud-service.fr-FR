@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # Fragments de code {#snippets}
@@ -80,7 +80,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
   </tr>
   <tr>
     <td>Définir les options de liste déroulante </td>
-    <td>Les options de liste déroulante sont définies à l’aide de la propriété <b>Définition des options de</b>.</td>
+    <td>Les options de liste déroulante sont définies à l’aide de la propriété <b>Set Options of</b> de l’éditeur de règles.</td>
     <td>Les options de liste déroulante sont définies à l’aide des fonctions personnalisées. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </td>
    </tr>
       <tr>
-    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans « Then » (alors) </td>
+    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans "Then" </td>
     <td>Les fonctions Valider et Réinitialiser ne prennent en charge que les objets de formulaire dans l’éditeur de règles. 
    </td>
     <td>Les fonctions Valider et Réinitialiser prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
@@ -127,3 +127,10 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
 * [Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
 * [Exemples de développement et d’utilisation d’une fonction personnalisée](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## LISTES AUTORISÉES IP et pipelines front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Ajoutez ici la note importante.
