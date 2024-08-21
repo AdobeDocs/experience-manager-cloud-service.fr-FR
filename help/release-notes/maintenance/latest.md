@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 17465 {#release-17465}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17465, publiée le jeudi 14 août 2024. La version de maintenance précédente était la version 17258.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17465, publiée le 14 août 2024. La version de maintenance précédente était la version 17258.
 
 L’activation des fonctionnalités de la version 2024.8.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
@@ -45,7 +45,7 @@ L’activation des fonctionnalités de la version 2024.8.0 fournit l’ensemble
 * SITES-22813 - API REST des fragments de contenu : définissez les propriétés min/max pour les champs d’énumération.
 * SITES-22031 - API REST des fragments de contenu : obtention des modèles de fragments de contenu autorisés pour le dossier d’un fragment.
 * SITES-17640 - API REST de fragments de contenu : validation de l’opération de publication de fragments de contenu.
-* SITES-22677 - API REST des fragments de contenu : récupérez une liste plate de références descendantes.
+* SITES-22677 - API REST des fragments de contenu : récupération d’une liste plate de références descendantes.
 * SITES-22207 - Modèle dupliqué lors de la création de fragments de contenu.
 * SITES-23093 - Eventing : ajoutez des balises aux payloads pour les événements de modèle de fragment de contenu.
 * SITES-23092 - Eventing : ajoutez des balises aux payloads pour les événements de fragment de contenu.
@@ -89,15 +89,15 @@ L’activation des fonctionnalités de la version 2024.8.0 fournit l’ensemble
 * SITES-22203 - API REST des fragments de contenu : les API Align Management doivent réagir de la même manière à la même situation.
 * SITES-21973 - API REST des fragments de contenu : l’attribut unique du modèle pour les types d’énumération est absent.
 * SITES-20364 - les redirections 302 ne fonctionnent pas avec le sélecteur dans l’URL.
-* SITES-21198 - VersionPreviewServlet : le nettoyage s’exécute simultanément sur tous les noeuds de la grappe, ce qui provoque des conflits de fusion et des validations de blocs.
+* SITES-21198 - Servlet de prévisualisation de version : le nettoyage s’exécute simultanément sur tous les nœuds du cluster, ce qui provoque des conflits de fusion et des validations de blocs.
 
 ### Problèmes connus {#known-issues-17465}
 
 * ASSETS-40875 - La classe AssetDeleteHandler écoute les événements de suppression de ressources et exécute des actions spécifiques en fonction du type d’événement de suppression (PRE_DELETE ou POST_DELETE). Dans certains scénarios, le type d’événement POST_DELETE provoque une exception NullPointerException.
 * FORMS-14340 - Erreur lors de l’instanciation de FormsAndDocumentOmniSearchHandler et CloudStorageSubmitActionInserter. Ce sont des instructions de journal inoffensives.
-* FORMS-15818 - Entrée du descripteur de composant &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; instructions introuvables dans les journaux du serveur. Ce sont des instructions de journal inoffensives.
+* FORMS-15818 - Entrée du descripteur de composant « OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml ». Instructions introuvables dans les journaux du serveur. Ce sont des instructions de journal inoffensives.
 * 
-   * SITES-23662 - L’utilisateur qui déclenche une publication ne peut pas être extrait des instructions de journal JCR dans les journaux du serveur. Il s’agit d’une fonctionnalité en cours de développement qui peut provoquer des erreurs intermittentes et inoffensives &quot;Impossible de trouver un ID utilisateur valide dans le lot d’événements OSGI&quot; dans le journal.
+   * SITES-23662 - La personne qui déclenche une publication ne peut pas être extraite des instructions de journal JCR dans les journaux du serveur. Il s’agit d’une fonctionnalité en cours de développement qui peut provoquer les erreurs intermittentes et inoffensives « Impossible de trouver un ID d’utilisateur ou d’utilisatrice valable dans le lot d’événements OSGI » dans le journal.
 
 ### Avis de modification {#change-notice-17465}
 
@@ -105,13 +105,13 @@ L’activation des fonctionnalités de la version 2024.8.0 fournit l’ensemble
 
 ### Fonctionnalités et API obsolètes {#deprecated-17465}
 
-Veuillez noter que nous sommes en cours de mise à jour de `com.day.cq.wcm.api` et que, avec la version actuelle, nous avons marqué comme `@Deprecated` quelques-unes de ses méthodes et classes. Celles-ci seront supprimées dans les prochaines versions. Par conséquent, envisagez de passer à leurs alternatives suggérées si vous utilisez l’une d’elles.
+Nous actualisons en ce moment `com.day.cq.wcm.api`. Dans la version actuelle, nous avons déclaré certaines de ses méthodes et classes comme `@Deprecated`. Celles-ci seront supprimées des prochaines versions. Envisagez donc de passer à leurs alternatives qui sont suggérées si vous utilisez l’une d’elles.
 
-Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées ](/help/release-notes/deprecated-removed-features.md).
+Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
 ### Correctifs de sécurité {#security-17465}
 
-AEM as a Cloud Service est dédié à l&#39;optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 7 vulnérabilités identifiées, renforçant notre engagement envers une protection système robuste.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige sept vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
 ### Technologies intégrées {#embedded-tech-17465}
 
