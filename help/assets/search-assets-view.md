@@ -4,7 +4,7 @@ description: Découvrez comment rechercher et découvrir des ressources dans la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 94%
@@ -239,7 +239,7 @@ Vous pouvez prévisualiser votre page d’accueil axée sur la recherche afin d�
 1. Accédez à **[!UICONTROL Personnaliser la page d’accueil axée sur la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Activez le bouton **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil avec un thème sombre ou clair.
 1. Cliquez sur **[!UICONTROL Fermer]** pour quitter l’écran d’aperçu.
 
-   ![Aperçu de la page d’accueil axée sur la recherche.](assets/search-first-preview.gif)
+   ![Aperçu de la page d’accueil axée sur la recherche.](/help/assets/assets/search-first-preview.gif)
 
 ## Recherche contextuelle {#contextual-search}
 
@@ -255,7 +255,7 @@ Pour accéder à la recherche contextuelle dans Experience Manager Assets :
 
 1. Définissez l’invite de texte dans la zone de texte Rechercher et cliquez sur **[!UICONTROL Recherche contextuelle]**.
 
-   ![Invite de texte de recherche contextuelle](assets/contextual-search-text-prompt.png)
+   ![Invite de texte de recherche contextuelle](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] affiche les résultats de la recherche.
 
