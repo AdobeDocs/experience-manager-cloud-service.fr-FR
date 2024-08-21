@@ -1,13 +1,13 @@
 ---
-title: Activez AEM Screens pour votre site de démonstration
+title: Activer AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience complète AEM Screens as a Cloud Service sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ Découvrez les étapes pour activer l’expérience complète AEM Screens as a C
 
 >[!NOTE]
 >
->La démonstration AEM Screens nécessite l’ajout du module complémentaire Screens au programme Cloud Manager. Découvrez comment ajouter [Screens as a Add-on à un nouveau programme dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
+>La démonstration AEM Screens nécessite l’ajout du module complémentaire Screens au programme Cloud Manager. Découvrez comment l’ajouter dans la section [Ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours du module complémentaire des démonstrations de référence d’AEM, [Créer un site de démonstration,](create-site.md) vous avez créé un site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
 

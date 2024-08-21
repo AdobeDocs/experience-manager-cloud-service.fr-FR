@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Vous avez déjà un champ pour le titre de l’aventure. Vous devez maintenant a
 
 >[!TIP]
 >
->Le modèle **Aventure** est basé sur l’exemple de site WKND pour AEM. Vous pouvez [visiter le site WKND ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour voir le contenu qui utilise le modèle **Adventure**.
+>Le modèle **Aventure** est basé sur l’exemple de site WKND pour AEM. Vous pouvez [visiter le site WKND ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour afficher le contenu qui utilise le modèle **Aventure**.
 
 Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires. La seule différence réside dans les propriétés que vous devez définir.
 

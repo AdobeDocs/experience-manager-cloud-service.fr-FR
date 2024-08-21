@@ -6,14 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Questions fréquentes sur Cloud Manager {#cloud-manager-faqs}
+# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
 
 Ce document répond aux questions les plus fréquentes sur Cloud Manager dans AEM as a Cloud Service.
 
@@ -21,9 +21,9 @@ Ce document répond aux questions les plus fréquentes sur Cloud Manager dans A
 
 Oui. Ajoutez `maven-toolchains-plugin` avec les paramètres appropriés pour Java™ 11.
 
-Le processus est documenté - voir [Assistant de création de projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Le processus est documenté - voir la section [Assistant de création de projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Par exemple, consultez l’[exemple de code de projet wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Par exemple, consultez l’[exemple de code de projet WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Ma version échoue et affiche une erreur concernant maven-scr-plugin, après le passage de Java™ 8 à Java™ 11. Que puis-je faire ? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +33,7 @@ Votre version d’AEM Cloud Manager peut échouer lorsque vous tentez de passe
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-Pour plus d’informations sur la façon de supprimer ce module externe, voir [Annotations SCR vers annotations OSGI](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Pour plus d’informations sur la façon de supprimer ce plug-in, voir la section [Des annotations SCR aux annotations OSGI](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Ma version échoue et affiche une erreur concernant RequireJavaVersion, après le passage de Java™ 8 à Java™ 11. Que puis-je faire ? {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Cette valeur permet de conserver les déploiements ultérieurs alors que la vers
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, le cas échéant.
 
-Pour plus d’informations sur la gestion des versions, voir [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Pour plus d’informations sur la gestion des versions, voir la section [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#snapshot-version}
 
-Lors des déploiements dans les environnements intermédiaires et de production, une version automatique est générée. Voir [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+En cas de déploiements d’évaluation et de production, une version automatique est générée - voir la section [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
