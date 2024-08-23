@@ -4,7 +4,7 @@ description: Guide de référence du développeur sur les détails des composant
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 97%
@@ -223,9 +223,9 @@ Dans la boîte de dialogue, des champs individuels sont définis :
 
 ### Boîtes de dialogue de conception {#design-dialogs}
 
-Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/sites-console/templates.md) pour plus de détails sur la création des modèles.
+Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/page-editor/templates.md) pour plus de détails sur la création des modèles.
 
-[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/sites-console/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
+[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/page-editor/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
 
 ### IU Coral et IU Granite {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Après avoir créé un composant, vous devez l’activer pour l’utiliser. Son 
 
 Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
 
-Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/sites-console/templates.md) pour plus de détails sur la création des modèles.
+Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/page-editor/templates.md) pour plus de détails sur la création des modèles.
 
 ### Composants et contenu qu’ils créent {#components-and-the-content-they-create}
 

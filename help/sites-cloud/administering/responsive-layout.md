@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 50%
@@ -223,9 +223,9 @@ Pour une mise en page réactive efficace, l’auteur du contenu doit pouvoir fai
 
 Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des pages de contenu, vous devez activer le composant conteneur de mise en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
-* **Par l’intermédiaire de l’environnement de création** - [Modifiez vos modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) pour activer le conteneur de mises en page pour une page.
+* **Par l’intermédiaire de l’environnement de création** - [Modifiez vos modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) pour activer le conteneur de mises en page pour une page.
 * **Définition du composant** - Utilisez `allowedComponent` ou une inclusion statique lors de la définition du composant.
 
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
-Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page [ en modifiant vos modèles de page.](/help/sites-cloud/authoring/sites-console/templates.md)
+Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page [ en modifiant vos modèles de page.](/help/sites-cloud/authoring/page-editor/templates.md)

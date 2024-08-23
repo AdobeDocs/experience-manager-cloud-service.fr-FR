@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des feuilles de calcul pour gérer les 
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ Maintenant que vous savez comment créer une feuille de calcul de redirection, v
 * Métadonnées
 * En-têtes
 * Configuration
+* [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Suivez simplement les mêmes étapes dans les sections [Créer une feuille de calcul](#spreadsheet) et [Mettre à jour le fichier paths.json](#paths-json). Choisissez le modèle approprié, puis mettez à jour le fichier `paths.json`.
 
@@ -138,6 +139,7 @@ Pour [Configuration](https://www.aem.live/docs/configuration), [En-têtes](https
 * Configuration : `/.helix/config.json`
 * En-têtes : `/.helix/headers.json`
 * Métadonnées : `/metadata.json`
+* Taxonomie : Pour plus d’informations, consultez le document [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md) .
 
 En outre, vous pouvez [créer votre propre feuille de calcul](#own-spreadsheet) avec des colonnes arbitraires pour votre propre utilisation.
 

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 94%
@@ -26,7 +26,7 @@ Les modèles, réutilisables et personnalisables, sont d’une grande efficacit�
 
 >[!NOTE]
 >
->Les modèles de site AEM ne doivent pas être confondus avec les [modèles de page](/help/sites-cloud/authoring/sites-console/templates.md). Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
+>Les modèles de site AEM ne doivent pas être confondus avec les [modèles de page](/help/sites-cloud/authoring/page-editor/templates.md). Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
 >
 >Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM](site-themes.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. Les modèles de site AEM définissent la structure du site et le contenu initial et contiennent un thème de site AEM afin de permettre une [création rapide de site](create-site.md).
 

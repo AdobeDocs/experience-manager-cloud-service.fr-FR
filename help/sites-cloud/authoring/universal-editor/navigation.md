@@ -4,7 +4,7 @@ description: Découvrez les principes de base de l’accès et de la navigation 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 22%
@@ -48,7 +48,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 
 >[!NOTE]
 >
->Lors de la modification d’une page dans la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle:](/help/sites-cloud/authoring/sites-console/templates.md) de la page, soit l’éditeur universel décrit dans ce document, soit l’[éditeur de page.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Lors de la modification d’une page dans la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle:](/help/sites-cloud/authoring/page-editor/templates.md) de la page, soit l’éditeur universel décrit dans ce document, soit l’[éditeur de page.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### Accès direct {#accessing-directly}
 

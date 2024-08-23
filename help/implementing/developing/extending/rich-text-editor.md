@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 99%
@@ -154,7 +154,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/sites-console/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >À titre de référence, les composants Texte par défaut (fournis dans le cadre d’une installation standard) se trouvent sous :
 >
@@ -220,7 +220,7 @@ Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des él�
 
 ## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu {#rtecontentpolicies}
 
-L’administration peut contrôler les options de l’éditeur de texte enrichi à l’aide de politiques de contenu, par exemple au lieu d’effectuer la configuration décrite ci-dessus. Les politiques de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/sites-console/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la politique de contenu peut définir que l’option gras est disponible, à l’instar de quelques options de mise en forme de paragraphe. Les politiques de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
+L’administration peut contrôler les options de l’éditeur de texte enrichi à l’aide de politiques de contenu, par exemple au lieu d’effectuer la configuration décrite ci-dessus. Les politiques de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/page-editor/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la politique de contenu peut définir que l’option gras est disponible, à l’instar de quelques options de mise en forme de paragraphe. Les politiques de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
 Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 

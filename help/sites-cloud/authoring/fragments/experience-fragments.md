@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 96%
@@ -95,7 +95,7 @@ La création de dossiers permet :
 
   >[!NOTE]
   >
-  >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-cloud/authoring/sites-console/templates.md) pour créer votre propre modèle.
+  >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-cloud/authoring/page-editor/templates.md) pour créer votre propre modèle.
 
 Le projet WKND structure certains fragments d’expérience en fonction de `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
 

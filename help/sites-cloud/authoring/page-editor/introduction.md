@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 40%
@@ -18,7 +18,7 @@ Une fois votre page créée dans la console [**Sites**,](/help/sites-cloud/autho
 
 >[!NOTE]
 >
->Lors de la modification d’une page dans la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle:](/help/sites-cloud/authoring/sites-console/templates.md) de la page, soit l’éditeur de page décrit dans ce document, soit l’[éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Lors de la modification d’une page dans la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle:](/help/sites-cloud/authoring/page-editor/templates.md) de la page, soit l’éditeur de page décrit dans ce document, soit l’[éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Cela permet d’accéder à des informations détaillées sur la page, y compris
 * [Verrouillage de la page](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Publier la page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Dépublication de la page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Modifier le modèle](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Modifier le modèle](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Afficher comme publié(e)](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [Afficher en administrateur](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

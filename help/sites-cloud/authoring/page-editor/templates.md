@@ -2,9 +2,12 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée. Avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et aux développeuses.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 87%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 87%
 
 Lors de la création d’une page, vous devez sélectionner un modèle et l’utiliser comme base de création. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés.
 
-Avec l’ **éditeur de modèles**, la création et la maintenance de modèles ne sont pas une tâche réservée aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
+Grâce à **Éditeur de modèles**, la création et la maintenance de modèles ne sont plus des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
 
 La **Console de modèles** permet aux auteurs et autrices de modèles de :
 
@@ -78,7 +81,7 @@ Lors de la création d’un modèle modifiable :
    * [Structure](#editing-a-template-structure-template-author) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
    * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
    * [Mise en page](#editing-a-template-layout-template-author) : pour de nombreux appareils.
-   * [Styles](/help/sites-cloud/authoring/features/style-system.md) : définissez les styles à utiliser avec le modèle et ses composants.
+   * [Styles](/help/sites-cloud/authoring/page-editor/style-system.md) : définissez les styles à utiliser avec le modèle et ses composants.
 * [Activer le modèle](#enabling-a-template-template-author) à utiliser lors de la création d’une page
 * [Autoriser le modèle](#allowing-a-template-author) pour la page ou la branche requise de votre site web
 * [Publier le modèle](#publishing-a-template-template-author) pour le rendre disponible dans l’environnement de publication
@@ -184,7 +187,7 @@ Un modèle peut être activé ou désactivé afin de le rendre disponible ou ind
 
 1. Dans la **console de modèles**, sélectionnez le modèle.
 1. Sélectionnez **Activer** ou **Désactiver** dans la barre d’outils, puis de nouveau dans la boîte de dialogue de confirmation.
-1. Vous pouvez désormais utiliser votre modèle lors de la [création d’une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que vous vouliez [modifier le modèle](#editing-templates-template-authors) en fonction de vos besoins.
+1. Vous pouvez désormais utiliser votre modèle lors de la [création d’une page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), bien que vous vouliez [modifier le modèle](#editing-templates-template-authors) en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ Un modèle peut être activé ou désactivé afin de le rendre disponible ou ind
 
 Un modèle peut être rendu disponible ou indisponible pour certaines branches de la page.
 
-1. Ouvrez [Propriétés de la page](/help/sites-cloud/authoring/fundamentals/page-properties.md) pour la page principale de la branche dans laquelle vous souhaitez que le modèle soit disponible.
+1. Ouvrez [Propriétés de la page](/help/sites-cloud/authoring/sites-console/page-properties.md) pour la page principale de la branche dans laquelle vous souhaitez que le modèle soit disponible.
 1. Ouvrez l’onglet **Avancé**.
 1. Sous **Paramètres du modèle**, utilisez **Ajouter un champ** pour spécifier le ou les chemins d’accès de vos modèles.
 
@@ -270,7 +273,7 @@ Lorsqu’un composant a été déverrouillé, vous pouvez définir le [contenu i
 
 #### Disposition {#template-layout}
 
-Vous pouvez prédéfinir la [disposition](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Vous pouvez prédéfinir la [disposition](#editing-a-template-layout-template-author) du modèle pour les formats d’appareil de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Politiques de page {#template-page-policies}
 
@@ -278,9 +281,9 @@ Dans le cadre des [politiques de page](#page-policies), vous pouvez attribuer de
 
 #### Styles {#template-styles}
 
-Le [système de style](/help/sites-cloud/authoring/features/style-system.md) permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
+Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 
-Pour plus d’informations, voir la [documentation sur le système de style](/help/sites-cloud/authoring/features/style-system.md).
+Pour plus d’informations, consultez la [documentation sur le système de style](/help/sites-cloud/authoring/page-editor/style-system.md) .
 
 ### Modification d’un modèle - Structure - Créateur de modèles {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ Une fois ajouté, chaque composant est marqué par :
 
 >[!NOTE]
 >
->Même si l’ajout de composants et de ressources à un modèle n’est pas identique à des actions comparables lors de la [création de pages](/help/sites-cloud/authoring/fundamentals/editing-content.md), il présente de nombreuses similitudes avec ces actions.
+>Même si l’ajout de composants et de ressources à un modèle n’est pas identique à des actions similaires lors de la [création de page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### Actions des composants {#component-actions}
 
@@ -536,7 +539,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 
 ### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
-Vous pouvez définir la disposition du modèle pour différents appareils. La [mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md) pour les modèles fonctionne de la même manière que pour la création de pages.
+Vous pouvez définir la disposition du modèle pour différents appareils. La [mise en page réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) pour les modèles fonctionne de la même manière que pour la création de pages.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 ### Modification d’un modèle - Propriétés de page initiales - Créateur {#editing-a-template-initial-page-properties-author}
 
-À l’aide de l’option **Propriétés de page initiales**, vous pouvez définir les [propriétés initiales de la page](/help/sites-cloud/authoring/fundamentals/page-properties.md) à utiliser lors de la création des pages.
+À l’aide de l’option **Propriétés de page initiales**, vous pouvez définir les [propriétés initiales de la page](/help/sites-cloud/authoring/sites-console/page-properties.md) à utiliser lors de la création des pages.
 
 1. Dans l’éditeur de modèles, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Propriétés de page initiales** pour ouvrir la boîte de dialogue.
 

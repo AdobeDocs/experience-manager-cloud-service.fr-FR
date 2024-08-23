@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 73%
@@ -118,7 +118,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 ## Modèles {#templates}
 
-Dans AEM, un [template](/help/sites-cloud/authoring/sites-console/templates.md) est un type spécialisé de page utilisé comme base pour toute nouvelle page créée.
+Dans AEM, un [template](/help/sites-cloud/authoring/page-editor/templates.md) est un type spécialisé de page utilisé comme base pour toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
