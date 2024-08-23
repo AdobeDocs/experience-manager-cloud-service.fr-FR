@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et découvrir des ressources dans la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
+source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 94%
+source-wordcount: '2002'
+ht-degree: 77%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 94%
 >abstract="Recherchez des ressources en spécifiant un mot-clé dans la barre de recherche ou en filtrant les ressources en fonction de leur statut, de leur type de fichier, de leur type MIME, de leur taille ou de leurs dates de création, de modification et d’expiration. Outre les filtres standard, vous pouvez également appliquer des filtres personnalisés. Vous pouvez enregistrer les résultats filtrés sous la forme d’une recherche enregistrée ou d’une collecte dynamique."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=fr#manage-smart-collection" text="Créer des collectes dynamiques"
 
-[!DNL Assets view] offre des fonctionnalités de recherche efficaces, qui fonctionnent simplement par défaut. La recherche fonctionne de façon exhaustive car il s’agit d’une recherche de type plein texte. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu. [!DNL Assets view] fournit une recherche plein texte, ou même des capacités de recherche basées sur les métadonnées telles que les balises intelligentes, le titre, la date de création et le copyright.
+[!DNL Assets view] fournit une recherche efficace qui fonctionne par défaut. La recherche est complète, car il s’agit d’une recherche de texte intégral. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu. [!DNL Assets view] fournit une recherche plein texte, ou même des capacités de recherche basées sur les métadonnées telles que les balises intelligentes, le titre, la date de création et le copyright.
 
-Pour rechercher des ressources :
+Pour rechercher des ressources,
 
 * Cliquez dans la zone de recherche située en haut de la page. Par défaut, la recherche s’effectue dans le dossier que vous êtes en train de parcourir. Utilisez l’une des méthodes suivantes :
 
   ![Zone de recherche](assets/search-box.png)
 
-   * Effectuez une recherche à l’aide d’un mot-clé ou vous pouvez changer de dossier. Appuyez sur Entrée.
+   * Recherchez à l’aide d’un mot-clé et modifiez éventuellement le dossier. Appuyez sur Entrée.
 
    * Commencez à travailler avec une ressource récemment consultée en la recherchant directement. Cliquez dans la zone de recherche et sélectionnez une ressource récemment consultée parmi les suggestions.
 
@@ -42,16 +42,16 @@ Vous pouvez filtrer les résultats de la recherche en fonction des paramètres s
 * Statut de la ressource : filtrez les résultats de recherche à l’aide de `Approved`, `Rejected` ou d’un statut de ressource `No Status`.
 
 * Type de fichier : filtrez les résultats de la recherche selon les types de fichiers pris en charge, à savoir `Images`, `Documents` et `Videos`.
-* Type MIME : filtrez un ou plusieurs formats de fichiers pris en charge. <!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
+* Type MIME : filtrez un ou plusieurs formats de fichiers pris en charge. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Taille de l’image : fournissez une ou plusieurs dimensions minimales et maximales pour filtrer les images. Les dimensions sont fournies en pixels et ne correspondent pas à la taille de fichier des images.
 * Date de création : date de création de la ressource telle qu’elle figure dans les métadonnées. Le format de date standard utilisé est `yyyy-mm-dd`.
 * Date de modification : date de dernière modification des ressources. Le format de date standard utilisé est `yyyy-mm-dd`.
 
 * Date d’expiration : filtrez les résultats de la recherche en fonction du statut d’une ressource `Expired`. En outre, vous pouvez spécifier une période d’expiration pour les ressources afin de filtrer davantage les résultats de votre recherche.
 
-* Filtres personnalisés : [ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur de la vue Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
+* Filtres personnalisés : [Ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur de la vue Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
 
-Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevancy`, `Size`, `Modified` et `Created`.
+Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevance`, `Size`, `Modified` et `Created`. Les ressources recherchées sont triées en fonction de la `Relevance`, par défaut.
 
 ## Gestion des filtres personnalisés {#custom-filters}
 
@@ -125,41 +125,51 @@ Pour supprimer des filtres personnalisés :
 
 Vous pouvez rechercher une ressource qui n’est disponible dans aucun des dossiers en utilisant la fonction de recherche de ressources [!DNL Adobe Firefly] dans [!DNL Experience Manager Assets]. Vous pouvez ainsi générer efficacement des ressources en temps réel qui ne sont pas stockées dans les dossiers de ressources.
 
-### Avant de commencer
+### Avant de commencer {#search-assets-firefly-prereqs}
 
 Vous devez disposer d’un abonnement [!DNL Adobe Express] actif.
 
-### Générer des ressources
+### Générer des ressources {#generate-assets-firefly}
 
 Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
 1. Accédez à l’espace de travail [!DNL AEM Assets].
-1. Saisissez le nom de la ressource dans la barre de recherche en haut de la page.<br>
-Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de la ressource, aucun résultat n’est renvoyé, car la ressource n’est présente dans aucun des dossiers.
-1. Tapez le nom de la ressource dans la barre de recherche au milieu de la page et cliquez sur **[!UICONTROL Générer]**.
-   ![Intégration de Firefly](assets/firefly-integration.jpg)
-   *Illustration : aucun résultat renvoyé pour Bugatti Type 57 dans le dossier des ressources.* <br>
-Les nouvelles ressources sont générées avec succès.
-   ![Intégration de Firefly](assets/bugatti-type-57.jpg)
-   *Illustration : ressources de référence recherchées à l’aide de la fonction de recherche de ressources [!DNL Adobe Firefly].* <br>
-Vous pouvez charger ces ressources dans votre dossier préféré pour un accès facilité.
 
-### Chargement de ressources
+1. Saisissez le nom de la ressource dans la barre de recherche. Par exemple, vous pouvez rechercher une ressource à l’aide du mot-clé `Bugatti Type 57`. Lors de la recherche de la ressource, aucun résultat n’est trouvé, car la ressource n’est présente dans aucun des dossiers de ressources. Pour générer des ressources à l’aide de l’IA, cliquez sur **[!UICONTROL Générer avec Firefly]**. L’écran [!DNL Adobe Firefly] s’affiche.
+
+   ![Intégration de Firefly](assets/firefly-integration.png)
+
+   Les nouvelles ressources sont générées avec succès. Vous pouvez également modifier la description de l’image en saisissant la nouvelle invite de texte dans la zone de description. [Découvrez comment écrire une bonne invite AI pour générer du contenu extraordinaire et pertinent.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Vous pouvez également [modifier une image avec d’autres fonctionnalités telles que le changement de style, les dimensions d’image, etc.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+
+   ![Intégration de Firefly](assets/bugatti-type-57.png)
+
+1. Sélectionnez une image à enregistrer. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les ressources dans votre dossier préféré pour un accès facile.
+
+1. Le formulaire Enregistrer la ressource s’affiche. Renseignez les champs suivants :
+
+   * Saisissez un nom pour le fichier dans le champ **Enregistrer sous**.
+   * Sélectionnez un dossier de destination.
+   * Fournissez des détails tels que le nom du projet ou de la campagne, les mots-clés, les canaux, la période et la région.
+
+   ![Intégration de Firefly](assets/save-generated-asset.png)
+
+1. Cliquez sur **Enregistrer comme nouvelle ressource** pour enregistrer la ou les ressources.
+
+### Chargement de ressources {#upload-assets-firefly}
 
 Pour télécharger la ressource générée dans le référentiel de ressources :
 
 1. Cliquez sur **[!UICONTROL Charger]**.
 1. Sélectionnez le dossier de ressources dans lequel vous devez télécharger la ressource et cliquez sur **[!UICONTROL Sélectionner le dossier]**.
    ![Charger la ressource](assets/upload-asset-firefly.jpg)
-   *Illustration : sélectionnez le dossier dans lequel télécharger la ressource.*
 
 ## Recherches enregistrées {#saved-search}
 
-La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous pouvez simplement saisir un mot-clé et appuyer sur Retour pour afficher les résultats. Vous pouvez également rechercher rapidement vos mots-clés récemment recherchés en un seul clic.
+La fonctionnalité de recherche est assez facile à utiliser dans [!DNL Assets view]. Dans la zone de recherche, vous ne pouvez pas seulement saisir un mot-clé et appuyer sur Retour pour afficher les résultats. Vous pouvez également rechercher rapidement vos mots-clés récemment recherchés en un seul clic.
 
 Vous pouvez également filtrer les résultats de la recherche en fonction de critères spécifiques relatifs aux métadonnées et au type de ressources. Pour les filtres fréquemment utilisés, [!DNL Assets view] permet d’enregistrer les paramètres de recherche afin d’améliorer l’expérience de recherche. Vous pouvez ensuite sélectionner la recherche enregistrée pour l’utiliser et appliquer le filtre, en un seul clic.
 
-Pour créer une recherche enregistrée, recherchez une ressource, appliquez un ou plusieurs filtres, puis cliquez sur **[!UICONTROL Enregistrer sous]** > **[!UICONTROL Recherche enregistrée]** dans le panneau [!UICONTROL Filtres]. Vous pouvez également cliquer sur **[!UICONTROL Enregistrer sous]** et sélectionnez **[!UICONTROL Collecte dynamique]** pour enregistrer les résultats en tant que collecte dynamique. Consultez [Créer une collecte dynamique](manage-collections-assets-view.md#create-a-smart-collection) pour plus d’informations.
+Pour créer une recherche enregistrée, recherchez une ressource, appliquez un ou plusieurs filtres, puis cliquez sur **[!UICONTROL Enregistrer sous]** > **[!UICONTROL Recherche enregistrée]** dans le panneau [!UICONTROL Filtres]. Vous pouvez également cliquer sur **[!UICONTROL Enregistrer sous]** et sélectionnez **[!UICONTROL Collecte dynamique]** pour enregistrer les résultats en tant que collecte dynamique. Consultez [Créer une collecte dynamique](manage-collections.md#create-a-smart-collection) pour plus d’informations.
 
 ![Créer une collecte dynamique](assets/create-smart-collection.png)
 
@@ -178,7 +188,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Vous pouvez sélectionner les ressources qui s’affichent dans les résultats de recherche et effectuer les opérations suivantes :
 
-* **Rechercher une image similaire** : recherchez une ressource d’image similaire dans l’interface utilisateur d’Assets en fonction des métadonnées et des balises intelligentes.
+* **Rechercher une image similaire** : recherchez une ressource image similaire dans l’interface utilisateur d’Assets en fonction des métadonnées et des balises intelligentes.
 
 * **Détails** : affichez et modifiez les propriétés de la ressource.
 
@@ -202,33 +212,33 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 * **Renommer** : renommez une ressource.
 
-* **Copier vers les bibliothèques** : ajoutez une ressource à la bibliothèque.
+* **Copier vers les bibliothèques** : ajoutez une ressource à la bibliothèque.
 
 * **Affecter des tâches** : affectez des tâches aux utilisateurs et utilisatrices pour une ressource.
 
-* **Surveiller** : [surveillez les opérations](manage-notifications-assets-view.md) effectuées sur une ressource.
+* **Surveiller** : [surveillez les opérations](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/search-assets) effectuées sur une ressource.
 
 ## Configurer la page d’accueil axée sur la recherche {#configuring-search-first-homepage}
 
-Experience Manager Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lorsque vous utilisez l’approche axée sur la recherche pour votre page d’accueil, vous disposez également d’options pour personnaliser l’image de marque de la page en configurant les images d’arrière-plan et du logo en fonction de votre marque.
+La vue Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lorsque vous utilisez l’approche axée sur la recherche pour votre page d’accueil, vous disposez également d’options pour personnaliser l’image de marque de la page en configurant les images d’arrière-plan et du logo en fonction de votre marque.
 
 Pour configurer la page d’accueil axée sur la recherche, exécutez les étapes ci-dessous :
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
-1. Sélectionnez **[!UICONTROL Approche axée sur la recherche]**. La configuration de l’approche axée sur la recherche s’ouvre. Vous pouvez définir l’[alignement](#setting-alignment-search-bar) ou l’[image de l’arrière-plan et du logo](#setting-background-image-and-logo) de votre page d’accueil.
+1. Sélectionnez **[!UICONTROL Approche axée sur la recherche]**. Il ouvre ensuite la première configuration associée à la recherche. Vous pouvez définir [alignement](#setting-alignment-search-bar) ou [définir l’image d’arrière-plan et le logo](#setting-background-image-and-logo) de votre page d’accueil.
 
 ### Définir l’alignement de la barre de recherche {#setting-alignment-search-bar}
 
-[!DNL Assets view] vous permet de modifier l’alignement de la barre de recherche. Vous pouvez afficher la barre de recherche soit au centre, soit en haut. Sélectionnez l’alignement approprié et cliquez sur **[!UICONTROL Sauvegarder]**.
+[!DNL Assets view] permet de modifier l’alignement de la barre de recherche. Vous pouvez faire en sorte que la barre de recherche s’affiche soit au centre, soit en haut. Sélectionnez l’alignement approprié et cliquez sur **[!UICONTROL Sauvegarder]**.
 
 ![Alignement de la page d’accueil axée sur la recherche.](assets/search-first-alignment.png)
 
 ### Définir l’image d’arrière-plan et le logo de la page d’accueil {#setting-background-image-and-logo}
 
-Vous pouvez ajouter le logo de votre marque et une image d’arrière-plan à votre page d’accueil axée sur la recherche. Procédez comme suit :
+Vous pouvez ajouter un logo de marque et une image d’arrière-plan à votre première page d’accueil de recherche. Procédez comme suit :
 
-1. Accédez à la section **[!UICONTROL Image d’arrière-plan et de logo]** sous **[!UICONTROL Page d’accueil]**.
-1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources.
+1. Accédez à la section **[!UICONTROL Image de fond et logo]** sous **[!UICONTROL Page d&#39;accueil]**.
+1. Cliquez sur **[!UICONTROL Remplacer]** pour parcourir les images du référentiel de ressources existant.
 1. Cliquez sur **[!UICONTROL Enregistrer]**. [Prévisualisez](#preview-configured-homepage) vos modifications.
 
 ### Prévisualiser la page d’accueil configurée {#preview-configured-homepage}
@@ -236,7 +246,7 @@ Vous pouvez ajouter le logo de votre marque et une image d’arrière-plan à vo
 Vous pouvez prévisualiser votre page d’accueil axée sur la recherche afin d’en vérifier la disposition et le formatage. La fonction d’**[!UICONTROL Aperçu]** permet de corriger la mise en page ou d’apporter des modifications selon les besoins. Pour prévisualiser la page d’accueil configurée, exécutez les étapes ci-dessous :
 
 1. Cliquez sur **[!UICONTROL Paramètres généraux]** et sélectionnez **[!UICONTROL Approche axée sur la recherche]**.
-1. Accédez à **[!UICONTROL Personnaliser la page d’accueil axée sur la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Activez le bouton **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil avec un thème sombre ou clair.
+1. Accédez à **[!UICONTROL Personnaliser la page d’accueil axée sur la recherche]** et cliquez sur **[!UICONTROL Aperçu]**. Passez la souris sur le bouton **[!UICONTROL Thème sombre]** pour prévisualiser la page d’accueil sur le thème sombre ou clair.
 1. Cliquez sur **[!UICONTROL Fermer]** pour quitter l’écran d’aperçu.
 
    ![Aperçu de la page d’accueil axée sur la recherche.](/help/assets/assets/search-first-preview.gif)
@@ -258,7 +268,6 @@ Pour accéder à la recherche contextuelle dans Experience Manager Assets :
    ![Invite de texte de recherche contextuelle](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] affiche les résultats de la recherche.
-
 
 ### Filtres pris en charge {#supported-filters}
 
@@ -302,7 +311,7 @@ La recherche contextuelle prend en charge les filtres prêts à l’emploi suiva
 
 **Exemple 3**
 
-**Invite de texte** : j’ai besoin d’images de ciel bleu de 1 500 et 2 500 pixels de hauteur, créées au cours du dernier mois et qui ne sont pas expirées ni approuvées.
+**Invite de texte** : j’ai besoin d’images de ciel bleu de 1500 et 2500 pixels de hauteur et créées le mois dernier sans expiration ni approbation.
 
 [!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
 
@@ -322,7 +331,7 @@ Les administrateurs et administratrices ont également la possibilité de désac
 
 ### Commentaires sur la recherche contextuelle {#contextual-search-feedback}
 
-Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur ![Icône de recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg) et cliquez sur l’icône Commentaires . Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Soumettre]**.
+Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur l’![icône Recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg), puis sur l’icône Commentaires. Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Soumettre]**.
 
 ![Commentaires sur la recherche contextuelle](assets/contextual-search-feedback.png)
 
@@ -335,3 +344,5 @@ Si vous devez fournir des commentaires sur la fonction de recherche contextuelle
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
 * Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support)
+
+
