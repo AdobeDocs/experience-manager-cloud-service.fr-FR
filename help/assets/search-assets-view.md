@@ -4,7 +4,7 @@ description: Découvrez comment rechercher et découvrir des ressources dans la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 77%
@@ -149,7 +149,7 @@ Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
    * Saisissez un nom pour le fichier dans le champ **Enregistrer sous**.
    * Sélectionnez un dossier de destination.
-   * Fournissez des détails tels que le nom du projet ou de la campagne, les mots-clés, les canaux, la période et la région.
+   * Saisissez des détails tels que le nom du projet ou de la campagne, les mots-clés, les canaux, la période et la région.
 
    ![Intégration de Firefly](assets/save-generated-asset.png)
 
