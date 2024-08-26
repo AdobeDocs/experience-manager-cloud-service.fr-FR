@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 18%
@@ -17,6 +17,8 @@ ht-degree: 18%
 
 Lors de l’application de Listes autorisées IP, toutes les plages d’adresses IP incluses dans la définition de la liste sont associées à un service de création ou de publication au sein d’un environnement. L’annulation de l’application d’une liste représente l’inverse de ce processus.
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 ## Appliquer les Listes autorisées IP {#applying}
 
 Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre ces étapes pour appliquer une Liste autorisée IP.
@@ -26,8 +28,8 @@ Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Resp
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Sélectionnez l’organisation appropriée.
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
-1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
-1. Accédez à la page de détails de l’environnement spécifique sur l’écran **Environments**.
+1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Sur l’écran **Environments** (Environnements), accédez à la page des détails de l’environnement spécifique.
 1. Accédez à la table **Liste autorisée IP**.
 1. Utilisez les champs de saisie en haut du tableau pour sélectionner la Liste autorisée IP et le service de création ou de publication auquel vous souhaitez appliquer la .
 La Liste autorisée IP doit déjà exister dans Cloud Manager pour l’appliquer. Voir [Ajout de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).

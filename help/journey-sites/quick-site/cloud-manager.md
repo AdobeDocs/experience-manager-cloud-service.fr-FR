@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
@@ -112,6 +112,8 @@ Le flux global est simple et intuitif, même si vous ne disposez pas encore d’
 ![Flux de création rapide de site](assets/qsc-flow.png)
 
 L’avantage principal de l’utilisation de l’outil de création rapide de site est que le développeur front-end pur n’est responsable que de la personnalisation réelle. Le développeur front-end n’a aucune interaction avec AEM et n’a besoin d’aucune connaissance d’AEM.
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## Prochaines étapes {#what-is-next}
 
