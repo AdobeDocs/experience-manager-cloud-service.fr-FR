@@ -1,13 +1,13 @@
 ---
 title: Intégrer AEM Assets distant à AEM Sites
-description: Découvrez comment configurer et connecter AEM sites à l’AEM Assets approuvé dans Creative Cloud.
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+description: Découvrez comment configurer et connecter AEM sites à l’AEM Assets approuvé.
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
+source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 2%
+source-wordcount: '977'
+ht-degree: 14%
 
 ---
-
 
 # Intégrer AEM Assets distant à AEM Sites  {#integrate-approved-assets}
 
@@ -23,7 +23,13 @@ Après la configuration initiale, les utilisateurs peuvent créer des pages sur 
 
 Les fonctionnalités Dynamic Media avec OpenAPI offrent plusieurs autres avantages, tels que l’accès et l’utilisation de ressources distantes dans le fragment de contenu, la récupération des métadonnées des ressources distantes, etc. En savoir plus sur les autres [avantages de Dynamic Media avec les fonctionnalités OpenAPI par rapport à l’Assets connecté](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Avant de commencer {#pre-requisits-sites-integration}
+## Avant de commencer {#pre-requisites-sites-integration}
+
+La prise en charge des ressources distantes à l’aide de Dynamic Media avec les fonctionnalités OpenAPI requiert :
+
+* AEM 6.5 SP 18+ ou AEM as a Cloud Service
+
+* La version 2.23.2 ou ultérieure des composants principaux
 
 * Configurez les [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md#add-variables) suivantes pour AEM as a Cloud Service :
 
@@ -31,21 +37,47 @@ Les fonctionnalités Dynamic Media avec OpenAPI offrent plusieurs autres avantag
      `pXXXX` fait référence à l’ID de programme <br>
      `eYYYY` fait référence à l’ID d’environnement
 
-   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]
+  Ces variables sont définies à l’aide de l’interface utilisateur Cloud Manager de l’environnement AEM as a Cloud Service agissant comme votre instance Sites locale.
 
-  ou configurez les [paramètres OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
+   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId] : vous devez envoyer un ticket de support d’Adobe pour obtenir l’identifiant du client IMS.
+
+     ou configurez les [paramètres OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
 
    1. Connectez-vous à la console et cliquez sur **[!UICONTROL OSGi] >** ou
-utiliser l’URL directe ; par exemple : `http://localhost:4502/system/console/configMgr`
+utiliser l’URL directe ; par exemple : `https://localhost:4502/system/console/configMgr`
 
-   1. Ajoutez **[!UICONTROL repositoryID]**= &quot;delivery-pxxx-eyyyyy.adobeaemcloud.com&quot; et **[!UICONTROL imsClient]**= [IMSClientId]
-En savoir plus sur l’ [authentification IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+   1. Configurez la configuration OSGi **Configuration Dynamic Media de génération suivante** (`NextGenDynamicMediaConfigImpl`) comme suit, en remplaçant les valeurs par celles de votre environnement de ressources distantes.
 
-* Accès IMS pour se connecter à une instance DAM distante AEM as a Cloud Service.
+      ```text
+        imsClient="<ims-client-ID>"
+        enabled=B"true"
+        imsOrg="<ims-org>@AdobeOrg"
+        repositoryId="<repo-id>.adobeaemcloud.com"
+      ```
 
-* Activez le bouton bascule des fonctionnalités Dynamic Media avec OpenAPI dans la gestion des actifs numériques distante.
+      `imsOrg` n’est pas une entrée obligatoire.
+      `repositoryId` = &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot;
+où `pXXXX` fait référence à l’ID de programme
+      `eYYYY` fait référence à l’ID d’environnement
+
+      ![Fenêtre de configuration OSGi de la configuration Dynamic Media de nouvelle génération](/help/assets/assets/remote-assets-osgi.png)
+
+  En savoir plus sur [l&#39;authentification IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+
+  Pour plus d’informations sur la configuration d’OSGi, consultez les documents suivants :
+
+   * [Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) pour AEM as a Cloud Service
+   * [Configuration d’OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr) pour AEM 6.5
+
+* Accès IMS pour se connecter à une instance DAM distante AEM as a Cloud Service. Il fait référence à l’auteur Sites disposant d’un accès IMS à l’environnement DAM distant.
 
 * Configurez le composant Image v3 dans l’instance AEM Sites. Si le composant n’est pas présent, téléchargez et installez le [module de contenu](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0).
+
+## Configurer le HTTPS {#https}
+
+Il est généralement recommandé d’exécuter toutes vos instances AEM de production avec HTTPS. Toutefois, vos environnements de développement locaux ne sont peut-être pas configurés avec ce protocole. Cependant, les ressources distantes utilisant Dynamic Media avec OpenAPI nécessitent HTTPS pour fonctionner.
+
+[Suivez ce guide](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=fr) pour configurer HTTPS partout où vous souhaitez utiliser des ressources distantes, y compris les environnements de développement.
 
 ## Accès aux ressources à partir de DAM distant {#fetch-assets}
 
@@ -58,7 +90,6 @@ Dynamic Media avec les fonctionnalités OpenAPI vous permet d’accéder aux res
 Suivez les étapes ci-dessous pour utiliser des ressources distantes dans AEM éditeur de page sur votre instance AEM Sites. Vous pouvez effectuer cette intégration dans AEM as a Cloud Service et AEM 6.5.
 
 1. Accédez à **[!UICONTROL Sites]** > _votre site web_ où se trouve l’AEM **[!UICONTROL Page]** dans laquelle vous devez ajouter la ressource distante.
-1. Accédez à l’AEM spécifique **[!UICONTROL Page]** de votre site web sous la section **[!UICONTROL Sites]** où vous avez l’intention d’ajouter la ressource distante.
 1. Sélectionnez la page et cliquez sur **[!UICONTROL Modifier (_e_)]**. L’AEM **[!UICONTROL Éditeur de page]** s’ouvre.
 1. Cliquez sur le conteneur de mises en page et ajoutez un composant **[!UICONTROL Image]** .
 1. Cliquez sur le composant **[!UICONTROL Image]** et cliquez sur l&#39;icône ![settings](/help/assets/assets/do-not-localize/settings-icon.svg) .
