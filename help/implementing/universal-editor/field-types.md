@@ -4,9 +4,9 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 12%
 
 ---
@@ -99,6 +99,7 @@ Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour 
 | [Conteneur](#container) | `container` |
 | [Fragment de contenu](#content-fragment) | `aem-content-fragment` |
 | [Date Time](#date-time) | `date-time` |
+| [Fragment d’expérience](#experience-fragment) | `aem-experience-fragment` |
 | [Multiselect](#multiselect) | `multiselect` |
 | [Nombre](#number) | `number` |
 | [Groupe de cases d’option](#radio-group) | `radio-group` |
