@@ -2,7 +2,7 @@
 source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 # Fragments de code {#snippets}
@@ -80,7 +80,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
   </tr>
   <tr>
     <td>Définir les options de liste déroulante </td>
-    <td>Les options de liste déroulante sont définies à l’aide de la propriété <b>Set Options of</b> de l’éditeur de règles.</td>
+    <td>Les options de liste déroulante sont définies à l’aide de la propriété <b>Définition des options de</b>.</td>
     <td>Les options de liste déroulante sont définies à l’aide des fonctions personnalisées. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </td>
    </tr>
       <tr>
-    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans "Then" </td>
+    <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans « Then » (alors) </td>
     <td>Les fonctions Valider et Réinitialiser ne prennent en charge que les objets de formulaire dans l’éditeur de règles. 
    </td>
     <td>Les fonctions Valider et Réinitialiser prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
