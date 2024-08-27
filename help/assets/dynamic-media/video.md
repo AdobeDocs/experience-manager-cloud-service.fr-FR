@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 74%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configurez les lecteurs vidéo pour répondre à vos besoins en matière de branding.
 * Intégrez la vidéo à votre site Web, site mobile ou application mobile à l’aide d’une simple URL ou d’un code intégré.
 
-Voir l’exemple [Lecture de vidéo dynamique](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Voir aussi [Visionneuses pour Experience Manager Assets et Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) et [Visionneuses pour Experience Manager Assets uniquement](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) dans le [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -562,7 +562,7 @@ L’activation de l’une des trois fonctionnalités ci-dessus active toutes ces
 
 ## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media{#about-msma}
 
-Grâce à la fonctionnalité de suivi audio et de sous-titres multiples de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
+Grâce à la fonctionnalité de suivi audio et de sous-titres multiples de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience globale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
 ![Onglet Sous-titres et pistes audio dans Dynamic Media, ainsi qu’un tableau présentant les fichiers de sous-titres .VTT et les fichiers audio .MP3 chargés pour une vidéo.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -601,7 +601,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
 1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
 
-   ![Bouton Propriétés de la ressource.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ressource vidéo sélectionnée en vue Vignette.*
+   ![Bouton Propriétés de la ressource.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ressource vidéo sélectionnée en mode Carte.*
 
 1. Sur la page Propriétés de la vidéo, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**.
 
@@ -609,7 +609,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
    >[!TIP]
    >Si vous ne voyez pas l’onglet [!UICONTROL Sous-titres et pistes audio], cela signifie l’une des deux choses suivantes :
    >* Aucun profil vidéo n’est affecté au dossier dans lequel se trouve la vidéo sélectionnée. Dans ce cas, voir [Application d’un profil vidéo au dossier](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Ou, la vidéo doit être retraitée par Dynamic Media. Dans ce cas, voir [Retraiter les ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Ou, Dynamic Media doit retraiter la vidéo. Dans ce cas, voir [Retraiter les ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
    Une fois l’une des tâches ci-dessus terminée, reprenez cette procédure.
 
@@ -618,7 +618,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 1. (Facultatif) Pour ajouter un ou plusieurs fichiers de sous-titres à une vidéo, procédez comme suit :
 
    * Sélectionnez **[!UICONTROL Charger des sous-titres]**.
-   * Accédez à un ou plusieurs fichiers .vtt (Video Text Tracks), sélectionnez-les, puis ouvrez-les.
+   * Accédez à un ou plusieurs fichiers `.vtt` (Video Text Tracks) et sélectionnez-les, puis ouvrez-les.
    * Pour que les sous-titres soient visibles sur le lecteur multimédia, vous devez ajouter les détails (métadonnées) requis sur chaque fichier de sous-titres que vous avez chargé. Sélectionnez l’icône représentant un crayon à droite du nom du fichier de sous-titres. Dans la boîte de dialogue Modifier la légende, saisissez les détails requis suivants sur le fichier, puis sélectionnez **[!UICONTROL Enregistrer]**. Répétez cette procédure pour chaque fichier de sous-titres que vous avez chargé :
 
 
@@ -626,7 +626,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
    | --- | --- | 
    | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
    | Langue | Sélectionnez la langue des sous-titres. |
-   | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** : texte de légende affiché avec la vidéo qui traduit ou transcrit la boîte de dialogue.<br>**Légende** - Le texte de la légende inclut également des bruits de fond, la différenciation des haut-parleurs et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, ce qui rend le contenu plus accessible aux personnes sourdes ou malentendantes. |
+   | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** : texte de légende affiché avec la vidéo qui traduit ou transcrit la boîte de dialogue.<br>**Légende** - Le texte de la légende comprend des bruits d’arrière-plan et l’identification du haut-parleur. Il inclut également d’autres détails pertinents en plus de la traduction ou de la transcription du dialogue. Cette fonctionnalité rend le contenu plus accessible aux personnes sourdes ou malentendantes. |
    | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, en anglais (CC). |
 
    Vous pouvez modifier les métadonnées de sous-titres ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
@@ -635,7 +635,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 
    * Sélectionnez **[!UICONTROL Charger des pistes audio]**.
    * Accédez à un ou plusieurs fichiers .mp3 et sélectionnez-les, puis ouvrez-les.
-   * Pour que les pistes audio soient visibles dans la liste contextuelle **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia, vous devez ajouter les détails requis sur chaque fichier de suivi audio que vous avez ajouté. Sélectionnez l’icône représentant un crayon à droite du nom d’un fichier de piste audio. Dans la boîte de dialogue Modifier le suivi audio, saisissez les détails requis suivants, puis sélectionnez **[!UICONTROL Enregistrer]**. Répétez cette procédure pour chaque fichier de piste audio que vous avez chargé.
+   * Pour rendre les pistes audio visibles dans la liste contextuelle **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia, ajoutez les détails requis pour chaque fichier de suivi audio. Veillez à inclure toutes les informations nécessaires pour un affichage correct. Sélectionnez l’icône représentant un crayon à droite du nom d’un fichier de piste audio. Dans la boîte de dialogue Modifier le suivi audio, saisissez les détails requis suivants, puis sélectionnez **[!UICONTROL Enregistrer]**. Répétez cette procédure pour chaque fichier de piste audio que vous avez chargé.
 
    | Métadonnées de piste audio | Description |
    | --- | --- |
@@ -931,7 +931,7 @@ Dans la boîte de dialogue **Définir comme valeur par défaut**, sélectionnez 
 1. Dans le coin supérieur droit, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 
-### Prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio{#preview-video-audio-subtitle}
+### Prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio {#preview-video-audio-subtitle}
 
 Une fois les fichiers de sous-titres et de suivi audio chargés dans une vidéo et traités, vous pouvez utiliser la visionneuse vidéo Dynamic Media pour prévisualiser toutes les différentes pistes. Cela vous permet de voir à quoi ressemble votre vidéo pour les clients et de vous assurer qu’elle se comporte comme prévu.
 
@@ -993,7 +993,7 @@ La piste audio d’origine extraite d’un fichier vidéo principal ne peut pas 
 
 **Cas pratique :** Le téléchargement d’un fichier de sous-titres peut s’avérer nécessaire si vous constatez une erreur dans un fichier `.vtt`. Il vous suffit de télécharger le fichier `.vtt` incorrect, de l’ouvrir dans un éditeur de texte brut et d’apporter vos corrections. Après avoir enregistré le fichier `.vtt`, chargez-le à nouveau. Ensuite, utilisez l’option **[!UICONTROL Traduire les sous-titres]** pour retraduire le fichier `.vtt` corrigé.
 
-**Pour télécharger des fichiers de sous-titres ou de pistes audio à partir d’une vidéo, procédez comme suit :**
+**Pour télécharger des fichiers de sous-titres ou de suivi audio qui ont été chargés dans une vidéo :**
 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
 1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
