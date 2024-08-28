@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la surveillance de l’utilisation rée
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->La surveillance côté client ne fonctionne que pour les clients avec AEM Cloud Service version **2024.5.16461** et ultérieure.
+>La surveillance côté client ne fonctionne que pour les clients ayant AEM version de Cloud Service (Adobe Experience Manager) **2024.5.16461** et supérieure.
 
 ## Vue d’ensemble {#overview}
 
-Le service de surveillance de l’utilisation réelle (RUM) est une technologie de surveillance des performances qui capture et analyse en temps réel les expériences utilisateur numériques d’un site web ou d’une application. Il offre une visibilité sur les performances en temps réel d’une application web et fournit des informations plus approfondies sur l’expérience de l’utilisateur final. Le service se concentre sur l’optimisation des performances en surveillant les engagements des sites web, plutôt que sur les utilisateurs eux-mêmes.
+Le service RUM (Real Use Monitoring) est une technologie de surveillance des performances qui capture et analyse en temps réel les expériences utilisateur numériques d’un site web ou d’une application. Il offre une visibilité sur les performances en temps réel d’une application web et fournit des informations plus approfondies sur l’expérience de l’utilisateur final. Le service se concentre sur l’optimisation des performances en surveillant les engagements des sites web, plutôt que sur les utilisateurs eux-mêmes.
 
 Avec RUM, les mesures de performances clés sont suivies dès le lancement de l’URL jusqu’à ce que la demande soit renvoyée au navigateur. Il aide les développeurs à améliorer l’application afin qu’elle soit facile à utiliser pour les utilisateurs finaux.
 
@@ -33,9 +33,8 @@ Avec RUM, les mesures de performances clés sont suivies dès le lancement de l�
 
 ## Qui peut bénéficier d’un service de surveillance à usage réel ? {#who-can-benefit-from-rum-service}
 
-Le service de surveillance de l’utilisation réelle est bénéfique pour tous les clients. Il offre un reflet représentatif des interactions des utilisateurs, ce qui garantit une mesure fiable de l’engagement du site web en capturant le nombre de pages vues côté client.
+AEM a développé RUM pour aider les clients et les Adobes à comprendre comment les visiteurs interagissent avec AEM sites. Le RUM peut être utilisé pour aider à diagnostiquer les problèmes de performance et mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
 
-Pour tous les clients Adobe, ce service fournit des informations précieuses sur les interactions utilisateur. Les clients qui utilisent leur propre réseau de diffusion de contenu peuvent bénéficier de rapports de trafic simplifiés, car Adobe intègre désormais directement la collecte de données, rendant ainsi inutile la création de rapports distincts lors des cycles de renouvellement.
 
 ## Comprendre le fonctionnement du service de surveillance d’utilisation réelle {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ Lorsque vous analysez les données RUM, il peut y avoir des écarts dans les pag
 
 1. **Le chemin d’accès `/.rum` est bloqué sur mon site. Comment dois-je le corriger ?**
 
-   Le chemin d’accès `/.rum` est requis pour que la collection RUM fonctionne. Si vous disposez d’un réseau de diffusion de contenu devant ce qu’Adobe fournit dans le cadre d’AEM as a Cloud Service, assurez-vous que le chemin d’accès `/.rum` vers la même AEM d’origine que le reste de votre contenu AEM. Assurez-vous également qu’il n’est pas ajusté.
+   Le chemin d’accès `/.rum` est requis pour que la collection RUM fonctionne. Si vous utilisez un réseau de diffusion de contenu devant AEM as a Cloud Service de l’Adobe, assurez-vous que le chemin d’accès `/.rum` vers la même origine AEM que votre autre contenu AEM. Assurez-vous également qu’il n’est pas ajusté.
 
 1. **La collection RUM est-elle comptabilisée dans les demandes de contenu à des fins contractuelles ?**
 
