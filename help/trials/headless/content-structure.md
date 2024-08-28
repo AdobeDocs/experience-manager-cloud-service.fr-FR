@@ -66,7 +66,7 @@ L’éditeur de modèles de fragments de contenu vous permet de configurer les t
 1. Une fois un type de données placé, la colonne **Types de données** est automatiquement remplacée par l’onglet **Propriétés** qui vous permet de définir les détails du type de données que vous venez de placer. Pour ce premier champ, nous allons stocker le titre du voyage ou de l’aventure. Saisissez les propriétés suivantes :
 
    * **Rendre en tant que :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le titre de l’aventure.
-   * **Libellé du champ :** `Title` - Le libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Libellé du champ :** `Title` - Il s’agit du libellé affiché pour ce champ lors de la création d’une aventure.
 
 1. Une fois les propriétés du champ définies, vous pouvez revenir à l’onglet **Types de données** dans le panneau de droite et ajouter des champs supplémentaires en procédant par glisser-déposer.
 
@@ -91,7 +91,7 @@ Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires
    * **Rendre en tant que :** **Zone de texte** - Lorsque vous créez une aventure, ce champ stocke une brève description du voyage.
    * **Libellé du champ :** `Description` - Il s’agit du libellé affiché pour ce champ lors de la création d’une aventure.
 
-1. Ajoutez un champ pour stocker le prix de l’aventure en faisant glisser et en déposant un champ de **texte monoligne** et saisissez les propriétés suivantes :
+1. Ajoutez un champ pour stocker le prix de l’aventure en effectuant le glisser-déposer d’un champ de **texte monoligne** et saisissez les propriétés suivantes :
 
    * **Rendre en tant que :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le prix du voyage.
    * **Libellé du champ :** `Price` - Il s’agit du libellé affiché pour ce champ lors de la création d’une aventure.

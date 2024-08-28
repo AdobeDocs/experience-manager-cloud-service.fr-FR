@@ -57,7 +57,7 @@ L’éditeur universel enregistre automatiquement vos modifications dans l’env
 
 Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
 
-1. Sélectionnez l’image de la personne en train de surfer pour la sélectionner.
+1. Sélectionnez l’image de la personne en train de surfer.
 
 1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Sélectionnez la miniature **Image en vedette**.
 
@@ -124,7 +124,7 @@ Pour accélérer votre expérience de création de contenu lorsque l’édition 
    * Notez le contour bleu du composant sélectionné. L’onglet doit afficher le nom du fragment de contenu lorsqu’un fragment de contenu est sélectionné. Dans ce cas **Le camp de surf de Bali**.
    * Étant donné que l’éditeur universel permet de sélectionner n’importe quel objet de la page, les composants qui font partie d’un fragment de contenu peuvent également être sélectionnés individuellement. Sélectionnez l’emplacement indiqué dans l’illustration pour sélectionner l’intégralité du composant Fragment de contenu.
 
-1. L’icône **Modifier** s’affiche sur le rail des composants. Sélectionnez le bouton **Modifier** pour ouvrir l’éditeur de fragments de contenu sur un nouvel onglet.
+1. L’icône **Modifier** s’affiche sur le rail des composants. Sélectionnez l’icône **Modifier** pour ouvrir l’éditeur de fragments de contenu sur un nouvel onglet.
 
 ![Sélection de fragments de contenu dans l’éditeur universel](assets/do-not-localize/ue-content-fragments.png)
 

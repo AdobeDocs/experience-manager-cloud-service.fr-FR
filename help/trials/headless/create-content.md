@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Démarrer la console Fragments de contenu"
->abstract="La création de contenu cohérent et de qualité supérieure qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu découplé à l’aide de la console de fragment de contenu.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>abstract="La création de contenu cohérent et de qualité supérieure qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu découplé à l’aide de la console Fragments de contenu.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -73,7 +73,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. Fournissez une **image** qui représente le voyage en appuyant ou en cliquant sur **Ajouter une ressource** dans le champ **Image**.
 
-1. Dans le pop-up de la ressource, appuyez ou cliquez sur **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque de ressources.
+1. Dans le pop-up de la ressource, cliquez sur **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque de ressources.
 
    ![Ajouter une ressource](assets/do-not-localize/add-asset.png)
 
@@ -87,7 +87,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. L’image sélectionnée s’affiche dans le fragment de contenu. L’éditeur enregistre automatiquement les modifications.
 
-1. Une fois que vous avez terminé d’ajouter du contenu, appuyez ou cliquez sur le bouton **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez ensuite **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
+1. Une fois que vous avez terminé d’ajouter du contenu, cliquez sur le bouton **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez ensuite **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
 
    ![Publier le contenu](assets/do-not-localize/publish.png)
 

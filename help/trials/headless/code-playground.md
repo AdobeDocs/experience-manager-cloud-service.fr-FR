@@ -1,5 +1,5 @@
 ---
-title: Rendu de votre contenu dans une application simple
+title: Rendre votre contenu dans une application simple
 description: Explorez la récupération de contenu JSON à partir de votre environnement d’évaluation à l’aide d’un exemple d’application CodePen et du client AEM Headless pour JavaScript.
 hidefromtoc: true
 index: false
@@ -14,7 +14,7 @@ ht-degree: 100%
 ---
 
 
-# Rendu de votre contenu dans une application simple {#render-content-simple-app}
+# Rendre votre contenu dans une application simple {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Lancer l’exemple d’application CodePen"
->abstract="Ce guide explique en détail comment interroger des données JSON de votre environnement d’évaluation dans une application web JavaScript de base. Vous utilisez les fragments de contenu que vous avez modélisés et créés dans les modules de formation précédents. Au besoin, consultez ces guides avant de passer à celui-ci."
+>abstract="Ce guide explique en détail la façon dont interroger des données JSON de votre environnement d’évaluation dans une application web JavaScript de base. Vous utilisez les fragments de contenu que vous avez modélisés et créés dans les modules de formation précédents. Au besoin, consultez ces guides avant de passer à celui-ci."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -100,7 +100,7 @@ Sur la ligne 25, vous indiquez à partir de quelle requête GraphQL persistante
 
 ## Modification du rendu JSON {#change-rendering}
 
-Le fichier JSON est rendu tel quel dans une balise `pre`, ce qui n’est pas très créatif. Vous pouvez changer le CodePen pour utiliser la fonction `resultToDom()` afin d’illustrer comment la réponse JSON peut être itérée pour créer un résultat plus intéressant.
+Le fichier JSON est rendu tel quel dans une balise `pre`, ce qui n’est pas très créatif. Vous pouvez changer le CodePen pour utiliser la fonction `resultToDom()` afin d’illustrer la façon dont la réponse JSON peut être itérée pour créer un résultat plus intéressant.
 
 1. Pour apporter cette modification, commentez la ligne 37 et supprimez le commentaire de la ligne 40 :
 

@@ -123,9 +123,9 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
 
-1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
+1. Une fois l’opération terminée, cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
-1. Les résultats s’affichent dans le panneau de droite, à côté de l’éditeur de requêtes.
+1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes.
 
    ![Exécution d’une requête personnalisée.](assets/do-not-localize/custom-query-2.png)
 

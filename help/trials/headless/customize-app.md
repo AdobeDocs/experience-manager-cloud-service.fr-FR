@@ -33,7 +33,7 @@ ht-degree: 100%
 
 ## Aperçu de l’application {#preview}
 
-Commencez dans l’éditeur de fragments de contenu avec l’exemple d’application fourni avec votre essai d’AEM découplé déjà chargé. L’exemple d’application est optimisé par les fragments de contenu fournis via GraphQL. Utilisez l’éditeur de fragments de contenu pour vous familiariser avec l’éditeur en prévisualisant l’exemple d’application.
+Commencez dans l’éditeur de fragments de contenu avec l’exemple d’application fourni avec votre essai d’AEM Headless déjà chargé. L’exemple d’application est optimisé par les fragments de contenu fournis via GraphQL. Utilisez l’éditeur de fragments de contenu pour vous familiariser avec l’éditeur en prévisualisant l’exemple d’application.
 
 1. Cliquez sur le bouton **Aperçu** en haut à droite de l’écran de l’éditeur.
 
