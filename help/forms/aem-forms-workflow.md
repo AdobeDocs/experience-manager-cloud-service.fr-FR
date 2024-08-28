@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus d’entreprise. Par exemple, révision et approbation, génération de PDF, workflows Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 95%
 
 ---
@@ -197,7 +201,7 @@ Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de F
 
 ### Envoyer une demande depuis la boîte de réception AEM {#inbox}
 
-La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres du groupe [!DNL workflow-users] peuvent renseigner et envoyer la demande qui déclenche le processus associé. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour envoyer des demandes et gérer des tâches, voir [Gestion des applications et des tâches Forms dans la boîte de réception AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
+La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs membres du groupe [!DNL workflow-users] peuvent remplir et envoyer l’application qui déclenche le processus associé.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purge des instances de processus {#purge-workflow-instances}
 
 Réduire le nombre d’instances de workflow améliore les performances du moteur de workflow. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=fr) purge des instances de processus.
-
-
->[!MORELIKETHIS]
->
->* [Utiliser AEM processus de traduction pour localiser le Forms adaptatif et le document d’enregistrement](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables dans les processus d’AEM centrés sur Forms](/help/forms/variable-in-aem-workflows.md)

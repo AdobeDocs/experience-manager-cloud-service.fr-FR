@@ -2,9 +2,10 @@
 title: Expressions regex de formulaires AEM Forms Edge Delivery Services couramment utilisées pour valider les champs de formulaire
 description: Expressions regex de formulaires AEM Forms Edge Delivery Services couramment utilisées pour valider les champs de formulaire
 feature: Edge Delivery Services
+role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
