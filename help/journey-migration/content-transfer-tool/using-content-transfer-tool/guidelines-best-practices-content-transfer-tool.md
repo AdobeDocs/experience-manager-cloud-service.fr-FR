@@ -4,12 +4,13 @@ description: Découvrez les instructions et les bonnes pratiques relatives à l�
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 62%
+source-wordcount: '1368'
+ht-degree: 54%
 
 ---
+
 
 # Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu {#guidelines}
 
@@ -22,24 +23,24 @@ ht-degree: 62%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
+L’outil de transfert de contenu intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est nécessaire d’utiliser cette version (2.0 ou ultérieure, mais la version 3.0 est désormais recommandée) pour bénéficier de tous les avantages qu’elle offre :
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
 * Amélioration de l’expérience utilisateur grâce à l’amélioration des états de chargement, des barrières de sécurité et de la gestion des erreurs
 * Conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Pour commencer à utiliser la nouvelle version, désinstallez les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous créez des jeux de migration et réexécutez l’extraction et l’ingestion sur les jeux.
+Pour commencer à utiliser la version la plus récente, désinstallez les anciennes versions de l’outil de transfert de contenu. Avec les versions 2.0 et ultérieures, vous créez des jeux de migration et réexécutez l’extraction et l’ingestion sur les jeux.
 Les versions antérieures à la version 2.0.0 ne sont pas prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 
 * Exécutez le [ nettoyage des révisions ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et les [ contrôles de cohérence de l’entrepôt de données ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) sur le référentiel **source** afin que vous puissiez identifier les problèmes potentiels et réduire la taille du référentiel.
 
-* Lors de la phase d’ingestion, Adobe vous recommande d’exécuter l’ingestion à l’aide du mode *Wipe* activé où le référentiel existant (auteur ou publication) dans l’environnement de Cloud Service Adobe Experience Manager (AEM) cible est supprimé. Ensuite, mettez à jour avec les données du jeu de migration. Ce mode est plus rapide que le mode sans effacement, où le jeu de migration est appliqué en plus du contenu actuel.
+* Lors de la phase d’ingestion, Adobe vous recommande d’exécuter l’ingestion en utilisant le mode *Wipe* activé où le référentiel existant (auteur ou Publish) dans l’environnement de Cloud Service Adobe Experience Manager (AEM) cible est supprimé. Ensuite, mettez à jour avec les données du jeu de migration. Ce mode est plus rapide que le mode sans effacement, où le jeu de migration est appliqué en plus du contenu actuel.
 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
 
@@ -47,8 +48,8 @@ Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version 
 La formule générale pour calculer l’espace disque disponible requis est la suivante :
   `data store size + node store size * 1.5`
 
-   * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
-   * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
+* *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
+* *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
 * Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Au maximum, 20 jeux de migration par projet dans Cloud Acceleration Manager peuvent être créés et gérés simultanément pendant l’activité de transfert de contenu. Si plus de 20 jeux de migration sont nécessaires, créez un second projet dans Cloud Acceleration Manager. Toutefois, cela nécessite une gestion de projet supplémentaire et une gouvernance hors produit afin d’éviter le remplacement de contenu sur la cible par plusieurs utilisateurs.
@@ -75,13 +76,13 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La clé d&#39;extraction est valable 14 jours à compter de sa création ou de son renouvellement. Elle peut être renouvelée à tout moment. Si la clé d&#39;extraction a expiré, vous ne pouvez pas effectuer d&#39;extraction.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur ou utilisatrice peut ingérer un jeu de migration dans une instance de création ou de publication, ou les deux. Adobe recommande que, lors du déplacement du contenu vers une instance de production, CTT soit installé sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. Un utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou une instance Publish, ou les deux. Adobe recommande que, lors du déplacement du contenu vers une instance de production, CTT soit installé sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
-* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus _Ingestion_ copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
+* Les groupes transférés par l’outil de transfert de contenu sont uniquement ceux qui sont requis par le contenu pour satisfaire aux autorisations. Le processus _Extraction_ copie l’intégralité de `/home/groups` dans le jeu de migration. Pour plus d’informations, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). Le processus _Ingestion_ copie tous les groupes référencés dans les listes de contrôle d’accès du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’instance de création AEM ne sera donc pas disponible pendant toute la durée du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 

@@ -4,10 +4,10 @@ description: Découvrez comment surveiller les problèmes et améliorer les perf
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 75%
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 75%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
->abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés à AEM"
+>abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés aux AEM"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr" text="Accéder aux journaux et les gérer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 

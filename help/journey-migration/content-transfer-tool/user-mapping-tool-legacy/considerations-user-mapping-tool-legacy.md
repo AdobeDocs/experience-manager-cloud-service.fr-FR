@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 100%
+source-wordcount: '590'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 ## Cas exceptionnels {#exceptional-cases}
 

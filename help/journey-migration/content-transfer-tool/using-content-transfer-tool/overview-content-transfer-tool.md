@@ -4,24 +4,25 @@ description: Découvrez comment utiliser l’outil de transfert de contenu pour 
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 93%
+source-wordcount: '612'
+ht-degree: 90%
 
 ---
+
 
 # Présentation {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Présentation"
->abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour délencher la migration de contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs, utilisatrices ou groupes)."
+>abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour délencher la migration de contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également les groupes automatiquement."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour lancer la migration du contenu existant depuis une instance AEM source (on-premise ou AMS) vers une instance AEM Cloud Service cible.
 
-Cet outil transfère également automatiquement les entités principales (utilisateurs, utilisatrices ou groupes).  Consultez lea section [Mappage des utilisateurs et utilisatrices, et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
+Cet outil transfère également les groupes automatiquement.  Pour plus d’informations, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) .
 
 L’outil de transfert de contenu intègre le processus de transfert de contenu à Cloud Acceleration Manager. Cela permet à la personne utilisatrice de bénéficier de tous les avantages suivants :
 
@@ -37,9 +38,6 @@ Le transfert de contenu comporte deux phases :
 1. **Extraction** : l’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée *jeu de migration*. Un *jeu de migration* est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service.
 
    Pour plus d’informations, consultez la section [Processus d’extraction au cours du transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
-
-   >[!NOTE]
-   >Le mappage des utilisateurs et utilisatrices est désormais exécuté automatiquement dans le cadre de la phase d’extraction sur l’instance de création (mais il peut être désactivé sur l’instance de création ou activé sur l’instance de publication). Consultez [Mappage des utilisateurs et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
 
 1. **Ingestion** : l’ingestion désigne l’ingestion de contenu à partir du *jeu de migration* dans l’instance Cloud Service cible.
 
@@ -78,7 +76,6 @@ Tous les jeux de migration expirent après une longue période d’inactivité d
 Vous pouvez surveiller l’expiration d’un jeu de migration sur la ligne Jeu de migration. Un indicateur visuel utile indiquant que la date d’expiration d’un jeu de migration approche a été ajouté à la carte du projet.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## Prochaines étapes {#whats-next}
 

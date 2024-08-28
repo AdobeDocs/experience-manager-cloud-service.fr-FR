@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
 workflow-type: tm+mt
-source-wordcount: '5478'
+source-wordcount: '5481'
 ht-degree: 98%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 98%
       + [Créer des environnements](/help/journey-onboarding/create-environments.md)
       + [Attribuer des profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
+      + [Gestion des entités](/help/journey-migration/managing-principals.md)
       + [Tâches utilisateur d’AEM](/help/journey-onboarding/aem-users.md)
       + [Liste de contrôle de mise en production](/help/journey-onboarding/go-live-checklist.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
@@ -276,14 +277,15 @@ ht-degree: 98%
          + [Validation des transferts de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Migration des groupes d’utilisateurs et utilisatrices fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Migration des groupes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [Extraction de contenu à partir de la source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indexation après migration de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Gestion des entités après la migration](/help/journey-migration/managing-principals-after-migration.md)
+         + [Dépannage de l’outil de transfert de contenu ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Outil de mappage hérité (hérité){#legacy-user-mapping-tool}
             + [Vue d’ensemble](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)

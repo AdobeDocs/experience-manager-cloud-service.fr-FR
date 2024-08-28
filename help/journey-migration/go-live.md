@@ -4,9 +4,9 @@ description: Découvrez comment effectuer la migration une fois que le code et l
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 93%
 
 ---
@@ -101,7 +101,6 @@ Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des 
 
 * Un nœud JCR dont le nom comporte plus de 150 caractères
 * Un nœud JCR dont la taille est supérieure à 16 Mo
-* Tout utilisateur/groupe avec `rep:AuthorizableID` ingéré et déjà présent sur AEM as a Cloud Service.
 * Si une ressource extraite et ingérée change de chemin d’accès à la source ou à la destination avant l’itération suivante de la migration.
 
 ## Intégrité des ressources {#asset-health}

@@ -4,10 +4,10 @@ description: Exécution de l’outil de transfert de contenu sur une instance de
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 96%
+source-wordcount: '251'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 ## Présentation {#introduction}
 
-L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux.
+L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. Un utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou une instance Publish, ou les deux.
 
 >[!NOTE]
 >Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer l’outil de transfert de contenu sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer l’outil de transfert de contenu dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Consultez la section [Approche recommandée](#recommended-approach) pour plus d’informations.

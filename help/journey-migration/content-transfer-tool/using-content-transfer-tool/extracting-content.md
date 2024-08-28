@@ -4,7 +4,7 @@ description: Découvrez comment extraire du contenu d’une instance Adobe Exper
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 42%
@@ -41,7 +41,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
 1. Cela ouvre la boîte de dialogue Extraction . Cliquez sur **Extract** pour lancer la phase d’extraction.
 
-   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >Vous pouvez éventuellement remplacer le conteneur intermédiaire lors de la phase d’extraction. Si **Remplacer le conteneur d’évaluation** est désactivé, il peut accélérer les extractions pour les migrations suivantes où les chemins de contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.

@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 98%
+source-wordcount: '803'
+ht-degree: 97%
 
 ---
+
 
 # Utilisation de l’outil de mappage des utilisateurs et utilisatrices (hérité) {#using-user-mapping-tool}
 
 >[!INFO]
 >
->Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Cette documentation fait référence à une version obsolète de l’outil. Pour plus d’informations sur la dernière version, voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 L’outil de mappage des utilisateurs utilise une API pour rechercher les utilisateurs du système Adobe IMS (Identity Management System) par email et renvoyer leur ID IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
 

@@ -4,12 +4,13 @@ description: Utiliser l’outil de transfert de contenu pour valider les transfe
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 88%
+source-wordcount: '1189'
+ht-degree: 73%
 
 ---
+
 
 # Validation des transferts de contenu {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Comment valider la migration des entités principales {#how-to-validate-principal-migration}
+## Comment valider la migration des entités principales {#how-to-validate-group-migration}
 
-Voir [Mappage des utilisateurs et utilisatrices, et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour consulter les détails des migrations des entités principales et les raisons pour lesquelles cela est nécessaire.
+Voir [Migration de groupe](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) pour lire les détails principaux de la migration et les raisons pour lesquelles elle est nécessaire.
 
-Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration des entités principales sont disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs, les utilisatrices et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
+Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration des entités principales sont disponibles. Ces informations peuvent être utilisées pour valider les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n&#39;ont pas été migrés.
 
 Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur votre carte de projet puis sur la carte de transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**...**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Une boîte de dialogue s’affiche avec les informations de résumé. Utilisez les icônes d’aide pour lire une description plus complète. Cliquez sur le bouton **Télécharger le rapport** pour télécharger le rapport complet séparé par des virgules (CSV).
+Une boîte de dialogue s’affiche avec les informations de résumé. Utilisez les icônes d’aide pour lire une description plus complète. Cliquez sur le bouton **Télécharger le rapport** pour télécharger le rapport complet séparé par des virgules (CSV).  Notez également qu’à la fin de ce rapport se trouve le rapport des utilisateurs, qui peut être utilisé pour la gestion des utilisateurs après la migration.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Si le mappage utilisateur est désactivé, une autre variante de cette boîte de dialogue s’affiche. Elle indique que le mappage utilisateur a été désactivé et n’affichera pas les 3 champs donnant des valeurs de mappage utilisateur.
+Le rapport Migration de l’entité principale signale les éléments suivants :
+
+* Chaque groupe a migré et le premier chemin de contenu qui a déclenché la migration de ce groupe ; le groupe peut également se trouver sur d’autres chemins, mais seul le premier trouvé pour un groupe donné est signalé. Il indique également s’il a été trouvé dans une liste de contrôle d’accès ou une stratégie de CUG.
+* Chaque groupe n’a pas migré et la raison pour laquelle il n’a pas été migré.  En règle générale, il s’agit de l’une des raisons suivantes :
+   * C’est un groupe intégré
+   * Il se trouve déjà sur le système cible.
+   * Il ne figure pas dans une stratégie ACL ou CUG sur le contenu en cours de migration.
+   * Il comporte un champ unique en double (l’un des champs rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId figure déjà sur la destination, mais tous ces champs doivent être uniques).
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -166,6 +172,6 @@ Certains chemins d’accès des résumés d’extraction et d’ingestion sont d
 
 Les chemins que nous excluons actuellement des résumés sont les suivants : les rendus `cqdam.text.txt` et les noeuds dans `/home`, et les noeuds dans `/jcr:system`.
 
-### Les groupes d’utilisateurs fermés ne fonctionnent pas {#validating-cugs}
+### Groupes d’utilisateurs et d’utilisatrices fermés {#validating-cugs}
 
 Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur l’utilisation d’une stratégie de groupe d’utilisateurs fermé (CUG).
