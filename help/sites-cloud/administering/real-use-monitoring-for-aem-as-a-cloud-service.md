@@ -4,14 +4,14 @@ description: Découvrez comment utiliser la surveillance de l’utilisation rée
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
 
-# Service de surveillance à usage réel pour AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# Service de surveillance d’utilisation réelle pour AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -38,21 +38,21 @@ AEM a développé RUM pour aider les clients et les Adobes à comprendre comment
 
 ## Comprendre le fonctionnement du service de surveillance d’utilisation réelle {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager (AEM) utilise la surveillance de l’utilisation réelle (RUM) pour aider les clients et les Adobes à comprendre la manière dont les visiteurs interagissent avec AEM sites. Cela les aide à diagnostiquer les problèmes de performance et à mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
+AEM utilise RUM pour aider les clients et les Adobes à comprendre comment les visiteurs interagissent avec AEM sites. Cela les aide à diagnostiquer les problèmes de performance et à mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
 
-## Service de surveillance et confidentialité en temps réel {#rum-service-and-privacy}
+## Service de surveillance de l’utilisation réelle et confidentialité {#rum-service-and-privacy}
 
 Le service de surveillance de l’utilisation réelle dans AEM est conçu pour préserver la confidentialité des visiteurs et minimiser la collecte de données. En tant que visiteur, cela signifie que le site que vous visitez ou que vous rendez disponible pour l’Adobe ne collecte aucune information personnelle.
 
 En tant qu’opérateur de site, aucune inscription supplémentaire n’est requise pour activer la surveillance par le biais de cette fonctionnalité. Il n’existe pas de fenêtre contextuelle ni de formulaire de consentement supplémentaire que les utilisateurs finaux peuvent accepter pour activer RUM.
 
-## Échantillonnage des données du service de surveillance d’utilisation réelle {#rum-service-data-sampling}
+## Tirage des données du service de surveillance de l’utilisation réelle {#rum-service-data-sampling}
 
 Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. AEM service RUM  capture uniquement les informations provenant d’une petite fraction de pages vues. Le service est censé être échantillonné et rendu anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Pour l’instant, les opérateurs du site ne peuvent ni augmenter ni diminuer le taux d’échantillonnage. Pour estimer précisément le trafic total, pour chaque 100 pages vues, les données sont collectées à partir de 1, ce qui vous donne une approximation fiable du trafic global.
 
 Lorsque vous décidez si les données sont collectées, elles sont effectuées page vue par page vue et il devient pratiquement impossible de suivre les interactions sur plusieurs pages. Par conception, RUM n’a aucun concept de visiteurs ou de sessions, uniquement des pages vues.
 
-## Données en cours de collecte {#what-data-is-being-collected}
+## Quelles données sont collectées ? {#what-data-is-being-collected}
 
 Le service de surveillance de l’utilisation réelle est conçu pour empêcher la collecte d’informations d’identification personnelle. L&#39;ensemble complet des informations collectées par RUM est répertorié ci-dessous :
 
@@ -76,7 +76,7 @@ La surveillance de l’utilisation réelle surveille automatiquement le trafic c
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Utilisation des données du service de surveillance d’utilisation réelle {#how-rum-service-data-is-being-used}
+## Utilisation des données Real Use Monitoring Service {#how-rum-service-data-is-being-used}
 
 Les données RUM sont bénéfiques aux fins suivantes :
 
@@ -84,11 +84,11 @@ Les données RUM sont bénéfiques aux fins suivantes :
 * Pour rationaliser la recherche automatisée de trafic qui inclut les pages vues.
 * Pour mieux comprendre comment AEM interagit avec d’autres scripts (tels que les analyses, le ciblage ou les bibliothèques externes) sur la même page, afin d’améliorer la compatibilité.
 
-## Limites et compréhension des différences dans les mesures de performances et les pages vues {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+## Limites et compréhension des écarts dans les pages vues et les mesures de performances {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 Lorsque vous analysez les données RUM, il peut y avoir des écarts dans les pages vues et d’autres mesures de performances. Ces écarts peuvent être attribués à plusieurs facteurs inhérents à la surveillance en temps réel côté client. Voici les points essentiels à prendre en compte par les clients lors de l’interprétation de leurs données RUM :
 
-1. **Blocalisateurs de suivi**
+1. **Tracker blockers**
 
    * Les utilisateurs finaux qui utilisent des bloqueurs de suivi ou des extensions de confidentialité peuvent empêcher la collecte de données RUM, car ces outils limitent l’exécution des scripts de suivi. Cette restriction peut entraîner des pages vues et des interactions utilisateur sous-estimées, ce qui crée une incohérence entre l’activité réelle du site et les données capturées par RUM.
 
