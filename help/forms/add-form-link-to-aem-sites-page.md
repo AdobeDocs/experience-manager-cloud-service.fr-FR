@@ -3,7 +3,7 @@ title: Comment ajouter des liens de formulaires sur la page AEM Sites à l’aid
 description: Découvrez comment ajouter des liens de formulaires à la page AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 14%
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 Dans le scénario du site Web bancaire, le composant **Lien** du portail Forms améliore la navigation en guidant les utilisateurs vers des formulaires spécifiques à travers différentes sections du site. Il fournit des références directes à des formulaires tels que des demandes de prêt, des formulaires d’ouverture de compte ou des enquêtes de retour, placés stratégiquement dans tout le site Web. Le composant **Lien** insère des liens qui orientent les utilisateurs vers des Forms adaptatives spécifiques dans la page Sites. Par exemple, sur le site web de la banque, les utilisateurs anonymes peuvent accéder à un formulaire d’enquête générale, tandis que les utilisateurs connectés peuvent accéder directement à des formulaires plus sécurisés, tels que des demandes de prêt ou des formulaires d’autorisation de transaction.
 
-![Icône Lien](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Icône Lien](/help/forms/assets/link-forms.png)
 
 ## Condition préalable
 
@@ -29,11 +29,11 @@ Pour ajouter le composant de portail **Lien** à votre page Sites, procédez com
 
 1. Ouvrez la page AEM Sites en mode **Modifier** .
 1. Accédez à **[!UICONTROL Informations sur la page]** > **[!UICONTROL Modifier le modèle]**.
-   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Cliquez sur la **[!UICONTROL Stratégie]** et cochez la case **[!UICONTROL Lien]** sous le **[Nom de projet d’AEM archétype] - Forms and Communications Portal**.
 
-   ![Sélection de stratégie](/help/forms/assets/add-link.png){width="250" align="center"}
+   ![Sélection de stratégie](/help/forms/assets/add-link.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 1. Maintenant, rouvrez la page AEM Sites en mode création.
@@ -49,7 +49,7 @@ Pour ajouter le composant de portail **Lien** à votre page Sites, procédez com
 
 1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez un composant dans la liste. Par exemple, sélectionnez le composant **Lien** dans la liste pour ajouter le composant **Lien** Forms Portal.
 
-   ![Composant Link](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+   ![Composant Link](/help/forms/assets/add-link-in-sites.png)
 
 Maintenant, configurez les propriétés du composant **Lien**.
 
@@ -59,19 +59,19 @@ Vous pouvez facilement personnaliser les propriétés du composant **Lien** à l
 
 ### Onglet Affichage
 
-![Onglet Affichage](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![Onglet Affichage](/help/forms/assets/link-asset-tab.png)
 
 Dans l’onglet **[!UICONTROL Affichage]**, fournissez la légende du lien et l’info-bulle pour faciliter l’identification des formulaires représentés par le lien.
 
 ### Onglet Asset Info
 
-![Onglet Informations Assets](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![Onglet Informations Assets](/help/forms/assets/link-asset-info.png)
 
 Dans l’onglet **[!UICONTROL Informations sur les ressources]**, spécifiez le chemin d’accès au référentiel où la ressource est stockée.
 
 ### Onglet Paramètres de requête
 
-![Onglet Paramètres de requête](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![Onglet Paramètres de requête](/help/forms/assets/link-query-tab.png)
 
 Dans l’onglet **[!UICONTROL Paramètres de requête]**, spécifiez les paramètres supplémentaires au format de paire clé-valeur. Lorsqu’un clic est effectué sur le lien, ces paramètres supplémentaires sont transmis avec le formulaire.
 
@@ -79,7 +79,7 @@ Dans l’onglet **[!UICONTROL Paramètres de requête]**, spécifiez les paramè
 
 Prévisualisez la page Sites pour afficher le lien vers un formulaire adaptatif, qui est spécifié dans l’onglet des propriétés **Assets Info** du composant **Lien**. Cliquer sur le lien affiche le formulaire à l’écran pour les utilisateurs, qui peuvent y accéder en fonction des autorisations.
 
-![Onglet Paramètres de requête](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Onglet Paramètres de requête](/help/forms/assets/link-forms.png)
 
 ## Articles connexes
 

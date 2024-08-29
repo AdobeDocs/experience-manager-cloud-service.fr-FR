@@ -4,19 +4,21 @@ description: Découvrez comment enregistrer le formulaire adaptatif basé sur le
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 7%
 
 ---
 
 
-# Enregistrer et répertorier les formulaires sous forme de brouillons sur la page Sites
+# Enregistrer les formulaires en tant que brouillons et les répertorier sur la page Sites
+
+<span class="preview"> Cet article contient du contenu sur la fonction **Enregistrement automatique**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
 Prenons l’exemple d’un utilisateur qui commence à remplir un formulaire, mais qui doit se mettre en pause et revenir ultérieurement. AEM propose une option `save-as-draft`, permettant à l’utilisateur d’enregistrer le formulaire en tant que brouillon pour une exécution ultérieure. Pour faciliter cela, AEM fournit le composant Portail Forms **** prêt à l’emploi  Drafts &amp; Submissions{qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons pour une fin ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher leurs formulaires envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce brouillon n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
-![Icône Brouillons](assets/drafts-component.png){width="250" align="center"}
+![Icône Brouillons](assets/drafts-component.png)
 
 ## Prérequis
 
@@ -32,16 +34,16 @@ Le composant **Drafts &amp; Submissions** a besoin d’une configuration de stoc
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
 
-   ![Choix de carte de stockage Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Choix de carte de stockage Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Sélectionnez un dossier de configuration pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 
-   ![Sélectionner le dossier de configuration de stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![Sélectionner le dossier de configuration de stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans les champs **[!UICONTROL Compte de stockage Azure]** et **[!UICONTROL Clé d’accès Azure]** .
 
-   ![Configuration du stockage Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Configuration du stockage Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Cliquez sur **Enregistrer**.
 
@@ -53,12 +55,12 @@ Le composant **Drafts &amp; Submissions** a besoin d’une configuration de stoc
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Connecteur de stockage unifié]**.
 
-   ![Stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![Stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. Dans la section **[!UICONTROL Portail Formulaires]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante **[!UICONTROL Stockage]**.
 1. Spécifiez le chemin de configuration de la configuration du stockage Azure dans le champ **[!UICONTROL Chemin de configuration du stockage]**.
 
-   ![ Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![ Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -74,11 +76,11 @@ Vous pouvez utiliser des composants Forms Portal prêts à l’emploi pour répe
 
 1. Ouvrez la page AEM Sites en mode **Modifier** .
 1. Accédez à **[!UICONTROL Informations sur la page]** > **[!UICONTROL Modifier le modèle]**.
-   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Cliquez sur la **[!UICONTROL stratégie]** et cochez la case **[!UICONTROL Drafts &amp; Submissions]** sous le **[nom de projet AEM archetype] - Forms and Communications Portal**.
 
-   ![Sélection de stratégie](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![Sélection de stratégie](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 1. Maintenant, rouvrez la page AEM Sites en mode création.
@@ -93,7 +95,7 @@ Vous pouvez utiliser des composants Forms Portal prêts à l’emploi pour répe
 
 1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez un composant dans la liste. Par exemple, sélectionnez le composant **Drafts &amp; Submissions** dans la liste pour ajouter le composant **Drafts &amp; Submissions** du portail Forms.
 
-   ![Ajouter un composant Drafts and Submission](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![Ajouter un composant Drafts and Submission](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 Maintenant, configurez les propriétés du composant **Drafts and Submissions** en fonction des exigences.
 
@@ -107,7 +109,7 @@ Vous pouvez configurer les propriétés de la fonction **Drafts &amp; Submission
    * **Sélectionner un type** : pour indiquer la liste de formulaires en tant que brouillons ou formulaires envoyés. Si vous choisissez **Brouillon de Forms**, les formulaires enregistrés en tant que brouillons s’affichent. Vous pouvez également sélectionner **Forms envoyée** pour afficher les formulaires envoyés par les utilisateurs connectés.
    * **Mise en page** : pour afficher la liste des brouillons de formulaires ou des formulaires envoyés au format carte ou liste.
 
-   ![Propriétés du composant Drafts &amp; Submission](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![Propriétés du composant Drafts &amp; Submission](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configuration de formulaires à enregistrer en tant que brouillons
 
@@ -129,13 +131,11 @@ Pour enregistrer un formulaire en tant que brouillon, créez une règle **Enregi
 1. Dans la section **[!UICONTROL When]**, sélectionnez **is click** et, dans la section **[!UICONTROL Then]**, sélectionnez l’option **Save Form** (Enregistrer le formulaire).
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
-   ![Créer une règle pour le bouton](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![Créer une règle pour le bouton](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 Lorsque vous prévisualisez un formulaire adaptatif, remplissez-le et cliquez sur le bouton **Enregistrer le formulaire**, le formulaire est enregistré en tant que brouillon.
 
 ### Enregistrement automatique
-
-<span class="preview"> Cet article contient du contenu sur la fonction **Enregistrement automatique**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Vous pouvez également configurer un formulaire adaptatif pour l’enregistrer a
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône ![Propriétés du guide](/help/forms/assets/configure-icon.svg) de propriétés du conteneur de guide et ouvrez l’onglet **[!UICONTROL Enregistrement automatique]** .
 
-   ![Enregistrement automatique](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![Enregistrement automatique](/help/forms/assets/auto-save.png)
 
 1. Cochez la case **[!UICONTROL Activer]** pour activer l’enregistrement automatique du formulaire.
 1. Configurez **[!UICONTROL Trigger]** comme **basé sur le temps** pour enregistrer automatiquement le formulaire <!--based on the occurrence of an event or--> après un intervalle de temps spécifique.
@@ -159,11 +159,11 @@ Vous pouvez également configurer un formulaire adaptatif pour l’enregistrer a
 Pour afficher les brouillons enregistrés ou les formulaires envoyés, utilisez le composant Portail Forms **Drafts &amp; Submissions**.
 Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Brouillon de Forms** dans la [boîte de dialogue de configuration du composant Drafts &amp; Submissions](#configure-properties-of-the-drafts--submissions-component), les formulaires enregistrés en tant que brouillons apparaissent sur la page Sites. Vous pouvez ouvrir les brouillons en cliquant sur les points de suspension (..) pour remplir le formulaire.
 
-![Icône Brouillons](assets/drafts-component.png){width="250" align="center"}
+![Icône Brouillons](assets/drafts-component.png)
 
 Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Submitted Forms** dans la [boîte de dialogue de configuration du composant Drafts &amp; Submissions](#configure-properties-of-the-drafts--submissions-component), les formulaires envoyés s’affichent. Vous pouvez afficher les formulaires envoyés, mais ne pouvez pas les modifier.
 
-![Icône Envois](assets/submission-listing.png){width="250" align="center"}
+![Icône Envois](assets/submission-listing.png)
 
 Vous pouvez également ignorer les formulaires en cliquant sur les points de suspension (..) qui apparaissent dans le coin inférieur droit du formulaire.
 

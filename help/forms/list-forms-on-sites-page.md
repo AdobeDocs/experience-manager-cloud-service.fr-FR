@@ -3,7 +3,7 @@ title: Comment répertorier les formulaires sur une page Adobe Experience Manage
 description: Découvrez comment répertorier des formulaires sur une page AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 13%
@@ -17,7 +17,7 @@ Imaginez un utilisateur visitant le site web de la banque à la recherche d’un
 
 Le composant **Search &amp; Lister** du portail Forms vous permet d’afficher et de répertorier des formulaires sur une page Sites. Les utilisateurs peuvent configurer et présenter une liste complète de formulaires en fonction de critères spécifiques pour répondre aux besoins de l’entreprise. Les utilisateurs anonymes peuvent consulter la page Sites pour afficher et parcourir les formulaires disponibles. Les formulaires répertoriés peuvent être triés par ordre croissant ou décroissant à l’aide de l’option déroulante **Trier par** située dans le coin supérieur droit de l’écran.
 
-![Icône Recherche et énumérateur](assets/search-and-lister-component.png){width="250" align="center"}
+![Icône Recherche et énumérateur](assets/search-and-lister-component.png)
 
 ## Condition préalable
 
@@ -58,11 +58,11 @@ Pour ajouter le composant de portail **Search &amp; Lister** à votre page Sites
 
 1. Ouvrez la page AEM Sites en mode **Modifier** .
 1. Accédez à **[!UICONTROL Informations sur la page]** > **[!UICONTROL Modifier le modèle]**.
-   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Cliquez sur la **[!UICONTROL stratégie]** et cochez la case **[!UICONTROL Search &amp; Lister]** sous le **[nom de projet AEM archetype] - Forms and Communications Portal**.
 
-   ![Sélection de stratégie](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![Sélection de stratégie](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 1. Maintenant, rouvrez la page AEM Sites en mode création.
@@ -78,7 +78,7 @@ Pour ajouter le composant de portail **Search &amp; Lister** à votre page Sites
 
 1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez un composant dans la liste. Par exemple, sélectionnez le composant **Search and Lister** dans la liste pour ajouter le composant **Search &amp; Lister** Forms Portal.
 
-   ![Composant Search &amp; Lister](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![Composant Search &amp; Lister](/help/forms/assets/add-search-lister.png)
 
 Maintenant, configurez les propriétés du composant **Search and Lister**.
 
@@ -88,7 +88,7 @@ Vous pouvez facilement personnaliser les propriétés du composant **Search and 
 
 ### Onglet Affichage
 
-![Onglet Affichage](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![Onglet Affichage](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. Dans **[!UICONTROL Titre]**, spécifiez le titre du composant Recherche et énumérateur. Un titre indicatif permet aux utilisateurs d’effectuer une recherche rapide dans la liste des formulaires.
 1. Dans la liste **[!UICONTROL Disposition]**, sélectionnez la disposition pour représenter les formulaires au format carte ou liste.
@@ -97,14 +97,14 @@ Vous pouvez facilement personnaliser les propriétés du composant **Search and 
 
 ### Onglet Ressource
 
-![Onglet Ressource](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![Onglet Ressource](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. Dans l’onglet **[!UICONTROL Asset Folder]**, spécifiez l’emplacement d’extraction et de liste des formulaires sur la page.
 1. À l’aide de **[!UICONTROL Ajouter un autre emplacement]**, vous pouvez configurer plusieurs emplacements de dossiers.
 
 ### Onglet Résultats
 
-![Onglet Affichage](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![Onglet Affichage](/help/forms/assets/search-and-lister-result-tab.png)
 
 Dans l’onglet **[!UICONTROL Résultats]**, configurez le nombre maximum de formulaires à afficher par page. La valeur par défaut est de huit formulaires par page.
 
@@ -112,7 +112,7 @@ Dans l’onglet **[!UICONTROL Résultats]**, configurez le nombre maximum de for
 
 Pour afficher la liste des formulaires, utilisez le composant Portail Forms **Search &amp; Lister**. Prévisualisez la page AEM Sites pour afficher la liste des formulaires du dossier **Assets** affiché à l’écran. Vous pouvez également rechercher un formulaire spécifique à l’aide de la barre de recherche.
 
-![Icône Recherche et énumérateur](assets/search-and-lister-component.png){width="250" align="center"}
+![Icône Recherche et énumérateur](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}

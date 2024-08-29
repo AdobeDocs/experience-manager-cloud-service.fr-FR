@@ -4,7 +4,7 @@ description: La disposition et l’apparence des formulaires adaptatifs sur diff
 feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, Différentes mises en page pour les formulaires, AEM de mises en page de formulaires dynamiques, AEM Cloud Service de formulaires, types de mises en page de formulaires dans AEM composants principaux, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Le formulaire adaptatif basé sur les composants principaux prend en charge les 
 
 La disposition de panneau est utile pour organiser les champs associés de manière à faciliter la navigation et la recherche de contenu correspondant. La disposition du panneau dispose les composants de formulaire dans des sections ou des panneaux distincts d’un formulaire adaptatif.
 
-![Disposition de panneau](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Disposition de panneau](/help/forms/assets/panel-layout.png)
 
 Disposition de panneau
 
@@ -54,7 +54,7 @@ Vous pouvez utiliser le [composant de panneau](https://experienceleague.adobe.co
 
 La mise en page de l’assistant permet de simplifier un formulaire complexe en le divisant en plusieurs étapes distinctes. Chaque étape représente une partie différente du processus, et les utilisateurs parcourent les étapes de manière séquentielle, souvent avec les boutons **Suivant** et **Précédent** . Vous pouvez utiliser la mise en page de l’assistant pour créer un formulaire comprenant plusieurs sections ou étapes.
 
-![Disposition de l’assistant](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Disposition de l’assistant](/help/forms/assets/wizard-layout-compare.gif)
 
 Disposition de l’assistant
 
@@ -64,7 +64,7 @@ Vous pouvez utiliser le [composant assistant](https://experienceleague.adobe.com
 
 La disposition à onglets verticaux est également appelée onglets dans la disposition de gauche. La mise en page à onglets verticaux organise les panneaux ou les sections le long du côté gauche d’un formulaire. Il s’agit d’une disposition courante pour les formulaires où les panneaux/sections sont empilés verticalement pour faciliter la lecture et la navigation.
 
-![Disposition verticale](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Disposition verticale](/help/forms/assets/vertical-tab.gif)
 
 Disposition des onglets verticaux
 
@@ -76,7 +76,7 @@ Vous pouvez utiliser le [composant Onglets verticaux](https://experienceleague.a
 La disposition des onglets horizontaux est également appelée Onglets dans la disposition supérieure. La disposition des onglets horizontaux organise les panneaux ou les sections côte à côte dans une rangée. Cette disposition présente les sections de formulaire de manière linéaire sur la largeur du formulaire ou du panneau.
 
 
-![Disposition horizontale](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Disposition horizontale](/help/forms/assets/horizontal-layout.gif)
 
 Disposition des onglets horizontaux
 
@@ -87,7 +87,7 @@ Vous pouvez utiliser le [composant Onglets horizontaux](https://experienceleague
 
 La disposition en accordéon affiche le contenu dans des sections ou des panneaux réductibles d’un formulaire adaptatif. Lorsqu’une section est développée, elle affiche le contenu dans , tandis que d’autres sections restent réduites. Cette disposition est idéale pour afficher de grandes quantités d’informations sous une forme compacte.
 
-![Mise en page en accordéon](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Mise en page en accordéon](/help/forms/assets/accordion-layout-compare.gif)
 
 Disposition en accordéon
 
@@ -132,7 +132,7 @@ Explorons le processus étape par étape pour insérer une mise en page et y ajo
 1. Dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 1. Ouvrez un formulaire adaptatif existant en mode d’édition s’il a déjà été créé.
 
-   ![Ouvrir un formulaire adaptatif](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![Ouvrir un formulaire adaptatif](/help/forms/assets/insert-layout.png)
 
    Vous pouvez également [créer un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md).
 
@@ -176,13 +176,13 @@ Ajoutez un nouveau panneau au composant Onglets horizontaux :
 
    ![Onglet Élément pour les onglets Horizontaux](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Cliquez sur l&#39;icône **Ajouter** pour ajouter un nouveau panneau.
+1. Cliquez sur l&#39;icône **Ajouter** pour ajouter un nouveau panneau.
 
    ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    Lorsque vous cliquez sur l&#39;icône **Ajouter**, la boîte de dialogue **Insérer un nouveau composant** s&#39;affiche.
 
-3. Sélectionnez le composant de panneau.
+1. Sélectionnez le composant de panneau.
 
    ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ Ajoutez un nouveau panneau au composant Onglets horizontaux :
 
    Attribuez un nom au nouveau panneau. Dans le cas contraire, vous ne pourrez pas enregistrer les propriétés du composant Onglets horizontaux.
 
-4. Spécifiez les noms des panneaux comme illustré dans la figure ci-dessous :
+1. Spécifiez les noms des panneaux comme illustré dans la figure ci-dessous :
 
    ![Noms de panneau](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Cliquez sur **Terminé**.
+1. Cliquez sur **Terminé**.
 
    Une fois que vous avez cliqué sur **Terminé**, les trois panneaux s’affichent côte à côte dans une ligne. Les noms des panneaux s’affichent sous forme d’en-têtes pour chaque panneau. Vous pouvez y ajouter des composants.
 
@@ -204,15 +204,15 @@ Ajoutez un nouveau panneau au composant Onglets horizontaux :
 
    Vous pouvez configurer les propriétés du composant Panneau. Par exemple, le formulaire de demande informatique n’inclut pas de titres de panneau. Voici les étapes de configuration des propriétés du composant de panneau.
 
-6. Ouvrez les propriétés du premier panneau.
+1. Ouvrez les propriétés du premier panneau.
 
    ![Propriétés du panneau 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Cochez la case **Masquer le titre** dans l’onglet **De base** .
+1. Cochez la case **Masquer le titre** dans l’onglet **De base** .
 
    ![Masquer le titre](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Cliquez sur **Terminé**.
+1. Cliquez sur **Terminé**.
 
 De même, vous pouvez masquer les titres des deux autres panneaux. Une fois que vous avez terminé, vous pouvez ajouter des composants de formulaire à chaque panneau.
 
@@ -262,7 +262,7 @@ De même, vous pouvez masquer les titres des deux autres panneaux. Une fois que 
 
 1. Cliquez sur **[!UICONTROL Aperçu]** dans le coin supérieur droit de votre environnement de création.
 
-   ![Disposition horizontale](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![Disposition horizontale](/help/forms/assets/horizontal-layout.gif)
 
 Vous pouvez également [ faire glisser les composants](#extra-bytes) pour ajouter les composants de formulaire à chaque panneau.
 
@@ -341,7 +341,7 @@ Effectuez les étapes suivantes pour remplacer la disposition existante d’un f
 
    Après avoir sélectionné la mise en page, la disposition des composants change en conséquence. Par exemple, sélectionnez le composant Onglets verticaux dans la boîte de dialogue **[!UICONTROL Remplacer le composant]** ; la disposition du panneau se transforme en onglets à gauche :
 
-   ![Disposition verticale](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![Disposition verticale](/help/forms/assets/vertical-tab.gif)
 
 ## Octets supplémentaires
 
