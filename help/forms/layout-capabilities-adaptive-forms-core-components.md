@@ -4,7 +4,7 @@ description: La disposition et l’apparence des formulaires adaptatifs sur diff
 feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, Différentes mises en page pour les formulaires, AEM de mises en page de formulaires dynamiques, AEM Cloud Service de formulaires, types de mises en page de formulaires dans AEM composants principaux, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -138,10 +138,10 @@ Explorons le processus étape par étape pour insérer une mise en page et y ajo
 
 1. Recherchez la section dans l’éditeur de formulaire qui vous permet d’ajouter une mise en page.
 
-   ![Éditeur de formulaire](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![Éditeur de formulaire](/help/forms/assets/form-editor.png)
 1. Cliquez sur l&#39;icône **Ajouter** . L’icône est un signe plus (+) qui indique l’option d’ajout de nouveaux composants.
 
-   ![Insérer la mise en page](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![Insérer la mise en page](/help/forms/assets/insert-layout-add-icon.png)
 
    Cliquez sur l’icône **Ajouter** pour afficher une boîte de dialogue **Insérer un nouveau composant** qui affiche divers composants à insérer.
 
@@ -151,20 +151,20 @@ Explorons le processus étape par étape pour insérer une mise en page et y ajo
 
 1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez la disposition souhaitée dans la liste. Dans notre cas, nous sélectionnons le composant Onglets horizontaux pour insérer la disposition des onglets horizontaux.
 
-   ![Sélectionner des onglets horizontaux](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![Sélectionner des onglets horizontaux](/help/forms/assets/select-horizontal-tab.png)
 
    Lorsque vous ajoutez le composant Onglets horizontaux à votre formulaire, il se compose initialement de deux panneaux vides, nommés Item1 et Item2, par défaut. Vous devez ajouter manuellement des composants de formulaire à ces panneaux.
 
-   ![Onglets horizontaux.](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![Onglets horizontaux.](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Ouvrez les propriétés du composant Onglets horizontaux et spécifiez le nom du composant.
 Par exemple, dans ce cas, nous ajoutons le nom du composant Onglets horizontaux en tant que formulaire de demande informatique.
 
-   ![Ajouter un nom pour les onglets horizontaux](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![Ajouter un nom pour les onglets horizontaux](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Cliquez sur **Terminé**.
 
-   ![Onglets horizontaux.](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![Onglets horizontaux.](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Une fois le composant de mise en page ajouté dans le formulaire, modifiez le nombre de panneaux en fonction des besoins.
 
@@ -174,43 +174,43 @@ Ajoutez un nouveau panneau au composant Onglets horizontaux :
 
 1. Ouvrez les propriétés du composant Onglets horizontaux et cliquez sur l’onglet **Éléments** .
 
-   ![Onglet Élément pour les onglets Horizontaux](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![Onglet Élément pour les onglets Horizontaux](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Cliquez sur l&#39;icône **Ajouter** pour ajouter un nouveau panneau.
 
-   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-add-panel.png)
 
    Lorsque vous cliquez sur l&#39;icône **Ajouter**, la boîte de dialogue **Insérer un nouveau composant** s&#39;affiche.
 
 1. Sélectionnez le composant de panneau.
 
-   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-new-panel.png)
 
    Lorsque vous sélectionnez le composant Panneau, le nouveau panneau est ajouté à la disposition horizontale.
 
-   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![Ajouter un nouveau panneau](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    Attribuez un nom au nouveau panneau. Dans le cas contraire, vous ne pourrez pas enregistrer les propriétés du composant Onglets horizontaux.
 
 1. Spécifiez les noms des panneaux comme illustré dans la figure ci-dessous :
 
-   ![Noms de panneau](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![Noms de panneau](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Cliquez sur **Terminé**.
 
    Une fois que vous avez cliqué sur **Terminé**, les trois panneaux s’affichent côte à côte dans une ligne. Les noms des panneaux s’affichent sous forme d’en-têtes pour chaque panneau. Vous pouvez y ajouter des composants.
 
-   ![Noms de panneau](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![Noms de panneau](/help/forms/assets/tabs-on-top-initial-view.png)
 
    Vous pouvez configurer les propriétés du composant Panneau. Par exemple, le formulaire de demande informatique n’inclut pas de titres de panneau. Voici les étapes de configuration des propriétés du composant de panneau.
 
 1. Ouvrez les propriétés du premier panneau.
 
-   ![Propriétés du panneau 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![Propriétés du panneau 1](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Cochez la case **Masquer le titre** dans l’onglet **De base** .
 
-   ![Masquer le titre](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![Masquer le titre](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Cliquez sur **Terminé**.
 
@@ -224,41 +224,41 @@ De même, vous pouvez masquer les titres des deux autres panneaux. Une fois que 
 
 1. Localisez la section du panneau qui vous permet d’ajouter des composants.
 1. Cliquez sur l&#39;icône **Ajouter** . L’icône est un signe plus (+) qui indique l’option d’ajout de nouveaux composants.
-   ![Insérer la mise en page](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![Insérer la mise en page](/help/forms/assets/tabs-on-top-add-component.png)
 
    Cliquez sur l’icône **Ajouter** pour afficher une boîte de dialogue **Insérer un nouveau composant** qui affiche divers composants à insérer.
 
-   ![Boîte de dialogue Insérer un nouveau composant](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![Boîte de dialogue Insérer un nouveau composant](/help/forms/assets/insert-new-component.png)
 
 1. Parcourez les composants disponibles dans la boîte de dialogue qui s’affiche et sélectionnez le composant souhaité. Dans notre cas, sélectionnez le composant Zone de texte .
 1. Ouvrez les propriétés du composant ajouté et indiquez son nom. Permet de modifier les propriétés du composant Zone de texte ajouté et de spécifier son nom.
-   ![Insérer la mise en page](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![Insérer la mise en page](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. De même, ajoutez deux autres composants de zone de texte et nommez les composants ajoutés en tant qu’ID de courrier électronique et Service.\
-   ![Premier panneau](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![Premier panneau](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Maintenant que les composants du premier panneau ont été ajoutés, vous pouvez continuer à ajouter les composants au deuxième panneau.
 
 1. Pour changer de panneau, cliquez sur **Sélectionner un panneau** dans la barre d’outils.
 
-   ![Changer de panneau](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![Changer de panneau](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Lorsque vous cliquez sur l’icône **Sélectionner un panneau**, la liste des panneaux ajoutés dans le composant Onglets horizontaux s’affiche.
 
-   ![Changer de panneau](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![Changer de panneau](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Sélectionnez **2 Panel** dans la liste des panneaux et l’affichage passe du premier panneau au second.
 
-   ![Deuxième panneau](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![Deuxième panneau](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Répétez les étapes décrites des étapes 2 à 4 pour ajouter les composants souhaités dans le panneau 2, comme illustré dans la figure ci-dessous :
 
-   ![Composants du deuxième panneau](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![Composants du deuxième panneau](/help/forms/assets/panel-2-components.png)
 
 1. Passez au **3 Panel** en suivant les étapes décrites aux étapes 6 et 7.
 
 1. Répétez les étapes décrites des étapes 2 à 4 pour ajouter le composant souhaité dans le panneau 3 :
 
-   ![Composants du troisième panneau](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![Composants du troisième panneau](/help/forms/assets/panel-3-component.png)
 
 1. Cliquez sur **[!UICONTROL Aperçu]** dans le coin supérieur droit de votre environnement de création.
 
@@ -319,7 +319,7 @@ Vous pouvez également [ faire glisser les composants](#extra-bytes) pour ajoute
 
 Vous pouvez également supprimer un composant de formulaire du panneau à l’aide de l’icône ![Supprimer l’icône](/help/forms/assets/Smock_Delete_18_N.svg).
 
-![Suppression d’un composant](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Suppression d’un composant](/help/forms/assets/delete-component.png)
 
 Vous pouvez également ajouter les validations requises pour les composants, selon les besoins.
 
@@ -333,11 +333,11 @@ Effectuez les étapes suivantes pour remplacer la disposition existante d’un f
 
 1. Cliquez sur l’icône Remplacer dans la barre d’outils du composant de mise en page et la boîte de dialogue **[!UICONTROL Remplacer le composant]** s’affiche.
 
-   ![Remplacer la mise en page](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![Remplacer la mise en page](/help/forms/assets/replace-layout.png)
 
 1. Sélectionnez la disposition souhaitée dans la boîte de dialogue **[!UICONTROL Remplacer le composant]**.
 
-   ![Boîte de dialogue Remplacer le composant](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Boîte de dialogue Remplacer le composant](/help/forms/assets/replace-component.png)
 
    Après avoir sélectionné la mise en page, la disposition des composants change en conséquence. Par exemple, sélectionnez le composant Onglets verticaux dans la boîte de dialogue **[!UICONTROL Remplacer le composant]** ; la disposition du panneau se transforme en onglets à gauche :
 
@@ -350,11 +350,11 @@ Pour faire glisser des composants dans l’éditeur de formulaire, procédez com
 1. Recherchez la section qui vous permet d’ajouter des composants.
 1. Accédez au panneau de gauche dans votre environnement de création et cliquez sur **Composants**.
 
-   ![Panneau de composants](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![Panneau de composants](/help/forms/assets/add-new-component.png)
 
    Lorsque vous cliquez sur l’option **Components** , la liste des composants disponibles s’affiche.
 
-   ![Panneau de composants](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![Panneau de composants](/help/forms/assets/add-new-component2.png)
 
 1. Parcourez les composants disponibles et sélectionnez le composant souhaité.
 
