@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 98%
+source-wordcount: '5528'
+ht-degree: 97%
 
 ---
 
@@ -690,7 +690,8 @@ ht-degree: 98%
       + [Ajouter un formulaire adaptatif à une page AEM Sites ou un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
-            + [Créer un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
+            + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
+            + [Définir la mise en page d’un formulaire adaptatif en fonction des composants principaux](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif – Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Créer un formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 98%
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Enregistrer un formulaire adaptatif en tant que brouillon](/help/forms/save-core-component-based-form-as-draft.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
                + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 98%
                + [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
                + [Créer et utiliser une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
                + [Exemples de fonctions personnalisées pour un formulaire adaptatif basé sur des composants principaux](/help/forms/custom-function-core-components-use-cases.md)
+            + Présentation du portail Forms et de ses composants{#introduction-to-forms-portal}
+               + [Présentation du composant Portail Forms](/help/forms/configure-forms-portal.md)
+               + [Répertorier les formulaires sur la page Sites à l’aide du composant Search &amp; Lister](/help/forms/list-forms-on-sites-page.md)
+               + [Enregistrer et répertorier les formulaires sous forme de brouillons sur la page Sites à l’aide du composant Drafts &amp; Submissions](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Ajout de liens de formulaire à la page Sites à l’aide du composant Lien](/help/forms/add-form-link-to-aem-sites-page.md)
       + Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
@@ -782,7 +787,6 @@ ht-degree: 98%
             + [Réutilisation des propriétés de métadonnées d’un formulaire adaptatif](/help/forms/reusing-adaptive-forms.md)
          + Amélioration de l’accessibilité d’un formulaire adaptatif {#accessible-adaptive-forms}
             + [Création d’un formulaire adaptatif accessible](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Configurer le Portail Formulaires](/help/forms/configure-forms-portal.md)
          + [Créer et gérer des révisions](/help/forms/create-reviews-forms.md)
          + [Association de réviseurs d’envoi à un formulaire](/help/forms/adding-reviewers-form.md)
          + [Création et gestion de révisions pour un formulaire adaptatif](/help/forms/review-adaptiveforms-in-sites-page.md)

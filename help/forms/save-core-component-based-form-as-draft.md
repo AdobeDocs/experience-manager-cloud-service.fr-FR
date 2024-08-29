@@ -1,228 +1,180 @@
 ---
-title: Comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon ?
-description: Découvrez comment enregistrer le formulaire adaptatif basé sur des composants principaux en tant que brouillon, créer un portail Forms et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
+title: Comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon et utiliser le composant Drafts and Submissions pour répertorier les brouillons et les envois ?
+description: Découvrez comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon. Comprenez également comment utiliser le composant Drafts and Submissions pour répertorier les brouillons et les envois pour les utilisateurs connectés ?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 7%
 
 ---
 
 
-# Enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon {#save-af-form}
+# Enregistrer et répertorier les formulaires sous forme de brouillons sur la page Sites
 
-L’enregistrement d’un formulaire adaptatif en tant que brouillon est une fonctionnalité essentielle qui améliore l’efficacité et la précision de l’utilisateur. Cette fonctionnalité permet aux utilisateurs d’enregistrer la progression et de revenir à l’exécution des tâches ultérieurement sans perdre les informations saisies. Le fait de disposer d’une option `save-as-draft` offre une certaine souplesse dans la gestion du temps, réduit le risque de perte de données et conserve la précision des envois. Vous pouvez enregistrer des formulaires sous forme de brouillons pour les terminer ultérieurement.
+Prenons l’exemple d’un utilisateur qui commence à remplir un formulaire, mais qui doit se mettre en pause et revenir ultérieurement. AEM propose une option `save-as-draft`, permettant à l’utilisateur d’enregistrer le formulaire en tant que brouillon pour une exécution ultérieure. Pour faciliter cela, AEM fournit le composant Portail Forms **** prêt à l’emploi  Drafts &amp; Submissions{qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons pour une fin ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher leurs formulaires envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce brouillon n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
-## Considérations
+![Icône Brouillons](assets/drafts-component.png){width="250" align="center"}
+
+## Prérequis
 
 * [Activez les composants principaux de Forms adaptatif pour votre environnement.](/help/forms/enable-adaptive-forms-core-components.md)
 
-* Assurez-vous que le [composant principal est défini sur la version 3.0.24 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité.
-* Assurez-vous que vous disposez d’un [compte de stockage Azure et d’une clé d’accès](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) pour autoriser l’accès au compte de stockage Azure.
+  Après avoir déployé les derniers composants principaux dans votre environnement, les composants du portail Forms deviennent accessibles dans votre environnement de création.
 
-## Enregistrer un formulaire adaptatif en tant que brouillon
+* [ Configuration du connecteur Azure Storage et Unified Storage pour le composant Portail Forms Drafts &amp; Submissions](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-[!DNL Experience Manager Forms] Data Integration (data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires à des services de stockage [!DNL Azure]. Le modèle de données de formulaire (FDM) peut être utilisé pour créer un Forms adaptatif qui interagit avec le serveur [!DNL Azure] pour activer les processus d’entreprise.
+### Configuration du composant Portail Forms de stockage Azure et de stockage unifié pour les versions préliminaires et les envois
 
-Pour enregistrer le formulaire en tant que brouillon, vérifiez que vous disposez d’un compte de stockage Azure et d’une clé d’accès pour autoriser l’accès au compte de stockage [!DNL Azure]. Pour enregistrer le formulaire en tant que brouillon, procédez comme suit :
-
-1. [Créer une configuration de stockage Azure](#create-azure-storage-configuration)
-1. [Configurer le connecteur de stockage unifié pour le portail Formulaires](#configure-usc-forms-portal)
-1. [Créer une règle pour enregistrer un formulaire adaptatif en tant que brouillon](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1. Créer une configuration de stockage Azure {#create-azure-storage-configuration}
-
-Une fois que vous disposez d’un compte de stockage Azure et d’une clé d’accès pour autoriser l’accès au compte de stockage [!DNL Azure], effectuez les étapes suivantes pour créer la configuration Azure Storage :
+Le composant **Drafts &amp; Submissions** a besoin d’une configuration de stockage pour enregistrer et répertorier les brouillons sur la page AEM Sites. Le connecteur de stockage unifié offre une structure pour lier AEM avec un stockage externe. Pour enregistrer le formulaire en tant que brouillon, vérifiez que vous disposez d’un compte de stockage Azure et d’une clé d’accès pour autoriser l’accès au compte de stockage [!DNL Azure]. Une fois que vous disposez d’un compte de stockage Azure et de la clé d’accès, effectuez les étapes suivantes pour créer une configuration de stockage Azure :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Stockage Azure]**.
 
-   ![Choix de carte de stockage Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Choix de carte de stockage Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. Sélectionnez un dossier de configuration pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 
-   ![Sélectionner le dossier de configuration de stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Sélectionner le dossier de configuration de stockage Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans les champs **[!UICONTROL Compte de stockage Azure]** et **[!UICONTROL Clé d’accès Azure]** .
 
-   ![Configuration du stockage Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Configuration du stockage Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. Cliquez sur **Enregistrer**.
 
->[!NOTE]
->
-> Vous pouvez récupérer le **[!UICONTROL compte de stockage Azure]** et la **[!UICONTROL clé d’accès Azure]** à partir du [portail Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   >[!NOTE]
+   >
+   > Vous pouvez récupérer le **[!UICONTROL compte de stockage Azure]** et la **[!UICONTROL clé d’accès Azure]** à partir du [portail Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
-
-### 2. Configuration du connecteur de stockage unifié pour Forms Portal {#configure-usc-forms-portal}
-
-Après, vous avez créé avec succès la configuration de stockage Azure, configurez le connecteur de stockage unifié pour le portail Forms, en procédant comme suit :
+   Après, vous avez créé avec succès la configuration de stockage Azure, configurez le connecteur de stockage unifié pour le portail Forms, en procédant comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Connecteur de stockage unifié]**.
 
-   ![Stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![Stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. Dans la section **[!UICONTROL Portail Formulaires]**, sélectionnez **[!UICONTROL Azure]** dans la liste déroulante **[!UICONTROL Stockage]**.
-1. Spécifiez le [chemin de configuration pour la configuration de stockage Azure](#create-azure-storage-configuration) dans le champ **[!UICONTROL Chemin de configuration de stockage]**.
+1. Spécifiez le chemin de configuration de la configuration du stockage Azure dans le champ **[!UICONTROL Chemin de configuration du stockage]**.
 
-   ![ Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![ Paramètre de stockage du connecteur unifié](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
 
-1. Sélectionnez **[!UICONTROL Save]** , puis **[!UICONTROL Publish]** pour publier la configuration.
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-### 3. Création de règles pour enregistrer un formulaire adaptatif en tant que brouillon {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> Si vous devez configurer une option de stockage autre qu’Azure, écrivez à aem-forms-ea@adobe.com à partir de votre adresse électronique officielle avec vos besoins détaillés.
 
-Pour enregistrer un formulaire en tant que brouillon, créez une règle **Enregistrer le formulaire** sur un composant de formulaire, comme un bouton. Lorsque vous cliquez sur le bouton, la règle se déclenche et le formulaire est enregistré en tant que brouillon. Effectuez les étapes suivantes pour créer la règle **Enregistrer le formulaire** sur un composant de bouton :
+Une fois que vous avez correctement configuré Azure Storage et Unified Storage Connector pour stocker les brouillons et les formulaires envoyés, ajoutez le composant **Drafts &amp; Submissions** sur la page AEM Sites.
 
-1. Dans l’instance d’auteur, ouvrez un formulaire adaptatif en mode d’édition.
-1. Dans le volet de gauche, sélectionnez ![Icône Composants](assets/components_icon.png) et faites glisser le composant **[!UICONTROL Bouton]** vers le formulaire.
-1. Sélectionnez le composant **[!UICONTROL Bouton]**, puis sélectionnez l’ ![icône de configuration](assets/configure_icon.png).
-1. Sélectionnez l’icône **[!UICONTROL Modifier les règles]** pour ouvrir l’éditeur de règles.
-1. Sélectionnez **[!UICONTROL Créer]** pour configurer et créer la règle.
-1. Dans la section **[!UICONTROL When]**, sélectionnez **is click** et, dans la section **[!UICONTROL Then]**, sélectionnez l’option **Save Form** (Enregistrer le formulaire).
-1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
+## Comment ajouter le composant Drafts &amp; Submissions à une page AEM Sites ?
 
-![Créer une règle pour le bouton](/help/forms/assets/save-form-as-drfat-create-rule.png)
-
-Lorsque vous prévisualisez un formulaire adaptatif, remplissez-le et cliquez sur le bouton **Enregistrer le formulaire**, le formulaire est enregistré en tant que brouillon pour une utilisation ultérieure.
-
-## Composant Drafts &amp; Submissions pour répertorier les brouillons sur la page AEM Sites
-
-AEM Forms fournit le composant de portail **Drafts &amp; Submissions** prêt à l’emploi pour afficher les formulaires enregistrés sur les pages AEM Sites. Le composant **Drafts &amp; Submissions** affiche les formulaires enregistrés en tant que brouillons pour une fin ultérieure, ainsi que les formulaires envoyés. Ce composant offre une expérience personnalisée à tout utilisateur connecté en répertoriant les brouillons et les envois liés à la Forms adaptative créée par l’utilisateur.
-
-Vous pouvez utiliser des composants Forms Portal prêts à l’emploi pour répertorier les brouillons de formulaire dans la page AEM Sites. Effectuez les étapes suivantes pour utiliser le composant de portail **Drafts &amp; Submissions** :
-
-1. [Activation du composant Portail Forms Brouillons et envois](#enable-component)
-2. [Ajout d’un composant Drafts &amp; Submissions sur la page AEM Sites](#Add-drafts-submissions-component)
-3. [Configuration du composant Brouillons et envois](#configure-drafts-submissions-component)
-
-### 1. Activation du composant Portail Forms Brouillons et envois{#enable-component}
-
-Pour activer le composant **[!UICONTROL Drafts &amp; Submissions]** dans la stratégie de modèle, procédez comme suit :
+Vous pouvez utiliser des composants Forms Portal prêts à l’emploi pour répertorier les brouillons et les envois sur la page Sites. Effectuez les étapes suivantes pour ajouter le composant de portail **Drafts &amp; Submissions** :
 
 1. Ouvrez la page AEM Sites en mode **Modifier** .
 1. Accédez à **[!UICONTROL Informations sur la page]** > **[!UICONTROL Modifier le modèle]**.
-   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. Cliquez sur la **[!UICONTROL stratégie]** et cochez la case **[!UICONTROL Drafts &amp; Submissions]** sous le **[nom de projet AEM archetype] - Forms and Communications Portal**.
 
-   ![Sélection de stratégie](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Sélection de stratégie](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
+1. Maintenant, rouvrez la page AEM Sites en mode création.
+1. Recherchez la section dans l’éditeur de page qui vous permet d’ajouter le composant Portail Forms .
+1. Cliquez sur l&#39;icône **Ajouter** . L’icône est un signe plus (+) qui indique l’option d’ajout de nouveaux composants.
 
-Une fois qu’un composant Portal est activé, vous pouvez l’utiliser dans l’instance d’auteur de votre page AEM Sites.
+   Cliquez sur l’icône **Ajouter** pour afficher une boîte de dialogue **Insérer un nouveau composant** qui affiche divers composants à insérer.
 
-### 2. Ajout du composant Drafts &amp; Submissions dans la page AEM Sites{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > Vous pouvez également faire glisser et déposer le composant.
 
-Vous pouvez créer et personnaliser le Portail Formulaires sur les sites web créés à l’aide d’AEM en ajoutant et en configurant les composants du portail. Assurez-vous que le composant [Drafts &amp; Submissions (Brouillons et envois) est activé](#enable-component) avant de l’utiliser dans la page AEM Sites.
+1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez un composant dans la liste. Par exemple, sélectionnez le composant **Drafts &amp; Submissions** dans la liste pour ajouter le composant **Drafts &amp; Submissions** du portail Forms.
 
-Pour ajouter un composant, faites-le glisser du composant du volet **Drafts &amp; Submissions** vers le conteneur de mises en page ou sélectionnez l’icône d’ajout dans le conteneur de mises en page et ajoutez le composant à partir de la boîte de dialogue **[!UICONTROL Insérer un nouveau composant]**.
+   ![Ajouter un composant Drafts and Submission](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
 
-![Ajouter un composant Drafts and Submission](/help/forms/assets/save-form-as-draft-add-dns.png)
+Maintenant, configurez les propriétés du composant **Drafts and Submissions** en fonction des exigences.
 
-### 3. Configuration du composant Drafts &amp; Submissions {#configure-drafts-submissions-component}
+## Configuration des propriétés du composant Drafts &amp; Submissions
 
-Le composant **Drafts &amp; Submissions** affiche les formulaires enregistrés en tant que brouillons en vue de leur remplissage ultérieur et les formulaires envoyés. Pour configurer **Drafts &amp; Submissions**, procédez comme suit :
+Vous pouvez configurer les propriétés de la fonction **Drafts &amp; Submissions** :
 1. Sélectionnez le composant **Drafts &amp; Submissions** .
 1. Cliquez sur l’icône ![Configurer](assets/configure_icon.png) et la boîte de dialogue s’affiche.
 1. Dans la boîte de dialogue **[!UICONTROL Drafts and Submissions]**, spécifiez ce qui suit :
    * **Titre** Pour identifier un composant dans une page Sites et, par défaut, le titre s’affiche au-dessus du composant.
-   * **Type** : pour indiquer la liste de formulaires en tant que brouillons ou formulaires envoyés.
+   * **Sélectionner un type** : pour indiquer la liste de formulaires en tant que brouillons ou formulaires envoyés. Si vous choisissez **Brouillon de Forms**, les formulaires enregistrés en tant que brouillons s’affichent. Vous pouvez également sélectionner **Forms envoyée** pour afficher les formulaires envoyés par les utilisateurs connectés.
    * **Mise en page** : pour afficher la liste des brouillons de formulaires ou des formulaires envoyés au format carte ou liste.
 
-   ![Propriétés du composant Drafts &amp; Submission](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![Propriétés du composant Drafts &amp; Submission](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
 
-1. Cliquez sur **Terminé**.
+## Configuration de formulaires à enregistrer en tant que brouillons
 
-Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Draft Forms**, les formulaires enregistrés en tant que brouillons s’affichent :
-![Icône Brouillons](assets/drafts-component.png)
+Vous pouvez configurer les Forms adaptatives de deux manières suivantes pour les enregistrer en tant que brouillons en vue d’une utilisation ultérieure :
+* [Action de l’utilisateur ou de l’utilisatrice](#user-action)
+* [Enregistrement automatique](#auto-save)
 
-Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Submitted Forms**, les formulaires envoyés apparaissent :
+### Action de l’utilisateur ou de l’utilisatrice
 
-![Icône Envois](assets/submission-listing.png)
+>[!NOTE]
+>
+> Assurez-vous que la [version des composants principaux est définie sur 3.0.24 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour enregistrer les formulaires en tant que brouillons à l’aide de la règle **Enregistrer le formulaire**.
 
-Vous pouvez ouvrir le formulaire en cliquant sur le formulaire correspondant.
+Pour enregistrer un formulaire en tant que brouillon, créez une règle **Enregistrer le formulaire** sur un composant de formulaire, comme un bouton. Lorsque vous cliquez sur le bouton, la règle se déclenche et le formulaire est enregistré en tant que brouillon. Effectuez les étapes suivantes pour créer une règle **Enregistrer le formulaire** sur un composant de bouton :
 
-<!--
+1. Ouvrez un formulaire adaptatif en mode d’édition.
+1. Sélectionnez l’icône **[!UICONTROL Modifier les règles]** pour ouvrir l’éditeur de règles pour le composant **Bouton**.
+1. Sélectionnez **[!UICONTROL Créer]** pour configurer et créer la règle pour le bouton.
+1. Dans la section **[!UICONTROL When]**, sélectionnez **is click** et, dans la section **[!UICONTROL Then]**, sélectionnez l’option **Save Form** (Enregistrer le formulaire).
+1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![Créer une règle pour le bouton](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+Lorsque vous prévisualisez un formulaire adaptatif, remplissez-le et cliquez sur le bouton **Enregistrer le formulaire**, le formulaire est enregistré en tant que brouillon.
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### Enregistrement automatique
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview"> Cet article contient du contenu sur la fonction **Enregistrement automatique**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> Assurez-vous que la [version des composants principaux est définie sur 3.0.52 ou version ultérieure](https://github.com/adobe/aem-core-forms-components) pour enregistrer les formulaires en tant que brouillons à l’aide de la fonction d’enregistrement automatique.
 
-### Configure Link Component {#configure-link-component}
+Vous pouvez également configurer un formulaire adaptatif pour l’enregistrer automatiquement en fonction d’un événement temporel, en vous assurant qu’il est enregistré après la durée spécifiée. Lorsque vous [activez les composants Forms Portal pour votre environnement](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment), l’onglet **Enregistrement automatique** s’affiche dans les propriétés du conteneur Forms. Vous pouvez configurer la fonction d’enregistrement automatique d’un formulaire adaptatif :
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. Dans l’instance d’auteur, ouvrez un formulaire adaptatif en mode d’édition.
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône ![Propriétés du guide](/help/forms/assets/configure-icon.svg) de propriétés du conteneur de guide et ouvrez l’onglet **[!UICONTROL Enregistrement automatique]** .
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![Enregistrement automatique](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. Cochez la case **[!UICONTROL Activer]** pour activer l’enregistrement automatique du formulaire.
+1. Configurez **[!UICONTROL Trigger]** comme **basé sur le temps** pour enregistrer automatiquement le formulaire <!--based on the occurrence of an event or--> après un intervalle de temps spécifique.
+1. Spécifiez l’intervalle de temps dans **[!UICONTROL Enregistrement automatique sur cet intervalle (en secondes)]** pour définir la durée qui déclenche l’enregistrement automatique du formulaire à l’intervalle défini.
+1. Cliquez sur **[!UICONTROL Terminé]**.
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## Afficher les brouillons/formulaires envoyés sur la page Sites à l’aide du composant Drafts &amp; Submissions
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+Pour afficher les brouillons enregistrés ou les formulaires envoyés, utilisez le composant Portail Forms **Drafts &amp; Submissions**.
+Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Brouillon de Forms** dans la [boîte de dialogue de configuration du composant Drafts &amp; Submissions](#configure-properties-of-the-drafts--submissions-component), les formulaires enregistrés en tant que brouillons apparaissent sur la page Sites. Vous pouvez ouvrir les brouillons en cliquant sur les points de suspension (..) pour remplir le formulaire.
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![Icône Brouillons](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+Lorsque **[!UICONTROL Select Type]** est sélectionné en tant que **Submitted Forms** dans la [boîte de dialogue de configuration du composant Drafts &amp; Submissions](#configure-properties-of-the-drafts--submissions-component), les formulaires envoyés s’affichent. Vous pouvez afficher les formulaires envoyés, mais ne pouvez pas les modifier.
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![Icône Envois](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+Vous pouvez également ignorer les formulaires en cliquant sur les points de suspension (..) qui apparaissent dans le coin inférieur droit du formulaire.
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## Étapes suivantes
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+Dans l’article suivant, apprenez [à ajouter des références à des formulaires sur la page Sites à l’aide du composant Link Forms Portal](/help/forms/add-form-link-to-aem-sites-page.md).
 
-### Enable Auto-save {#enable-auto-save}
+## Articles connexes
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## Voir également {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->
