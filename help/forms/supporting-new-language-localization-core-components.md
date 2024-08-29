@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 8%
@@ -22,6 +22,8 @@ ht-degree: 8%
 <span class="preview"> La fonctionnalité de prise en charge de la langue de droite à gauche est disponible dans le programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux, comme Hindi(hi_IN). Vous pouvez également présenter Adaptive Forms dans une langue de droite à gauche (RTL) telle que l’arabe, le persan et l’ourdou en ajoutant ces paramètres régionaux.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
 
 ## Comment AEM Forms détermine-t-il les paramètres régionaux d’un formulaire adaptatif ?
 
