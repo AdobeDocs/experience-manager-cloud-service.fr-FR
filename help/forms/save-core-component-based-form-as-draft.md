@@ -3,8 +3,8 @@ title: Comment enregistrer le formulaire adaptatif basé sur les composants prin
 description: Découvrez comment enregistrer le formulaire adaptatif basé sur les composants principaux en tant que brouillon. Comprenez également comment utiliser le composant Drafts and Submissions pour répertorier les brouillons et les envois pour les utilisateurs connectés ?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 ---
 
 
-# Enregistrer les formulaires en tant que brouillons et les répertorier sur la page Sites
+# Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
 <span class="preview"> Cet article contient du contenu sur la fonction **Enregistrement automatique**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
@@ -83,7 +83,7 @@ Vous pouvez utiliser des composants Forms Portal prêts à l’emploi pour répe
    ![Sélection de stratégie](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
-1. Maintenant, rouvrez la page AEM Sites en mode création.
+1. Ouvrez à nouveau la page AEM Sites en mode création.
 1. Recherchez la section dans l’éditeur de page qui vous permet d’ajouter le composant Portail Forms .
 1. Cliquez sur l&#39;icône **Ajouter** . L’icône est un signe plus (+) qui indique l’option d’ajout de nouveaux composants.
 
