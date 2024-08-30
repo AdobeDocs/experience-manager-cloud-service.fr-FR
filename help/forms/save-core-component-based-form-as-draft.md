@@ -4,9 +4,9 @@ description: Découvrez comment enregistrer le formulaire adaptatif basé sur le
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 7%
 
 ---
@@ -44,6 +44,8 @@ Le composant **Drafts &amp; Submissions** a besoin d’une configuration de stoc
 1. Indiquez le nom du compte de stockage [!DNL Azure] dans les champs **[!UICONTROL Compte de stockage Azure]** et **[!UICONTROL Clé d’accès Azure]** .
 
    ![Configuration du stockage Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   Saisissez `Connection String` dans la zone de texte `Azure Storage Account` et `Azure Key` dans la zone de texte `Azure Access key`.
 
 1. Cliquez sur **Enregistrer**.
 
