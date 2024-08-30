@@ -4,9 +4,9 @@ description: Découvrez les principes de base et les bonnes pratiques de déploi
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3440'
 ht-degree: 95%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs et développeuses écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Cet outil de diffusion est désormais l’unique mécanisme permettant de déployer du code vers les environnements de production, d’évaluation et de développement d’AEM as a Cloud Service. Pour une validation rapide des fonctionnalités et un débogage avant de déployer ces environnements, le code peut être synchronisé d’un environnement local vers un [Environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles sont déployées. Les mises à jour de version d’AEM ayant lieu par la suite sont fréquentes et appliquées automatiquement. Elles sont conçues pour être rétrocompatibles avec le code client déjà déployé.
+La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles sont déployées. AEM mises à jour de version qui se produisent par la suite (qui sont fréquentes et sont automatiquement appliquées), sont conçues pour être rétrocompatibles avec le code client déjà déployé.
 
 Le reste de ce document décrit la manière dont les développeurs et développeuses doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
