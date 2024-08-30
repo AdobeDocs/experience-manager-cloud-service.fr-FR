@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
-ht-degree: 41%
+source-wordcount: '2982'
+ht-degree: 40%
 
 ---
 
@@ -214,11 +214,20 @@ Les bonnes pratiques indiquent que si une ingestion **non effacée** doit être 
 >abstract="Le dépassement de la taille maximale des valeurs de propriété de nœud est une cause courante de l’échec de l’ingestion. Consultez la documentation, y compris celle relative au rapport BPA, pour remédier à cette situation."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr" text="Conditions préalables à la migration"
 
-La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient une erreur `BSONObjectTooLarge` et spécifiez le noeud qui a dépassé la taille maximale. Il s’agit d’une restriction MongoDB.
+La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient l’une des options suivantes :
+
+* une erreur `BSONObjectTooLarge` et spécifiez le noeud qui a dépassé le maximum, ou
+* une erreur `BsonMaximumSizeExceededException` qui indique qu’il existe un noeud susceptible de contenir des caractères Unicode dépassant la taille maximale **
+
+Il s’agit d’une restriction MongoDB.
 
 Pour plus d’informations et consulter un lien vers un outil Oak qui peut vous aider à trouver tous les noeuds volumineux, reportez-vous à la note `Node property value in MongoDB` de la section [ Conditions préalables requises pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) . Une fois tous les noeuds de grande taille corrigés, exécutez à nouveau l’extraction et l’ingestion.
 
 Pour éviter toute restriction, exécutez l’[analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance d’AEM source et examinez les résultats qu’il présente, en particulier le modèle [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ : effectue un rapport sur les noeuds volumineux contenant des caractères Unicode supérieurs à la taille maximale. Vérifiez que vous exécutez la dernière version. Les versions BPA antérieures à la version 2.1.50 n’identifieront pas et ne signaleront pas ces noeuds volumineux ; elles devront être découvertes séparément à l’aide de l’outil Oak prérequis mentionné ci-dessus.
 
 ### Ingestion annulée {#ingestion-rescinded}
 
