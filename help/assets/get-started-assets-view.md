@@ -4,10 +4,10 @@ description: Accès, connexion, cas d’utilisation pris en charge et problèmes
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 89%
 
 ---
 
@@ -39,6 +39,10 @@ Si vous faites partie de différentes organisations, vous pouvez également chan
 Pour modifier vos [!UICONTROL préférences Experience Cloud], cliquez sur [!UICONTROL Préférences].
 
 ![Préférence pour changer de thème (sombre ou clair)](assets/theme-change.png)
+
+>[!NOTE]
+>
+>Si vous accédez à la vue Assets et que vous voyez un message `Network Error`, assurez-vous d’exécuter les instructions mentionnées dans l’article [Cross-Origin Resource Sharing (CORS) configuration](/help/headless/deployment/cross-origin-resource-sharing.md) .
 
 ## Scénarios d’utilisation d’[!DNL Assets View]  {#use-cases}
 

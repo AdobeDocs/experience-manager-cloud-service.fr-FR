@@ -2,9 +2,10 @@
 title: Approbation des ressources dans Experience Manager
 description: Découvrez comment approuver des ressources dans [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL État d
 
 ## Approuver des ressources {#approve-assets}
 
-Vous pouvez approuver des ressources dans [!DNL Experience Manager] et [!DNL Experience Manager Assets]. Pour approuver des ressources dans [!DNL Experience Manager], procédez comme suit :
+Pour approuver des ressources dans [!DNL Experience Manager Admin view], procédez comme suit :
 
 1. Sélectionnez la ou les ressources et cliquez sur **[!UICONTROL Propriétés]** dans le volet supérieur.
 1. Dans l’onglet **[!UICONTROL Basic]**, faites défiler l’écran jusqu’à **[!UICONTROL Review Status]**.
@@ -51,7 +52,7 @@ Vous pouvez approuver des ressources dans [!DNL Experience Manager] et [!DNL Exp
 ## Approbation en bloc de ressources {#bulk-approve-assets}
 
 Rationalisez votre workflow en approuvant rapidement plusieurs ressources à la fois. Vous pouvez approuver en masse des ressources afin d’accélérer le processus d’approbation, ce qui vous permet de gagner du temps et d’améliorer votre productivité.
-<br>Pour approuver des ressources en vrac dans [!DNL Experience Manager], procédez comme suit :
+<br>Pour approuver des ressources en vrac dans [!DNL Experience Manager Admin view], procédez comme suit :
 
 1. Créez un dossier dans l’environnement de création (https://author-pXXX-eYYY.adobeaemcloud.com). Remplacez _XXX_ par votre ID de programme et _YYY_ par l’ID d’environnement de l’Experience Manager.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
@@ -102,4 +103,3 @@ Pour copier l’URL de diffusion d’une ressource approuvée dans le référent
    >[!NOTE]
    >
    >L’option de copie de l’URL de diffusion pour les ressources approuvées est disponible dans la vue Assets.
-
