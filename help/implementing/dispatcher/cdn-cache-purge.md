@@ -4,9 +4,9 @@ description: Découvrez comment supprimer des objets mis en cache du cache CDN d
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ Toutes les variations de purge partagent les éléments suivants :
 
 >[!CAUTION]
 >La purge du cache CDN, en particulier avec l’indicateur dur, augmente le trafic à l’origine et peut entraîner une interruption lorsqu’il n’est pas exécuté correctement.
+
+Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) axé sur la configuration des clés de purge et l’exécution de la purge du cache CDN.
 
 ## Purge d’URL unique {#single-purge}
 

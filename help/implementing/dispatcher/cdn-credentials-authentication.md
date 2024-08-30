@@ -4,10 +4,10 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du noeud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
+Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
 
 Autres propriétés :
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du noeud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
+Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
 
 Autres propriétés :
 
@@ -118,6 +118,8 @@ Autres propriétés :
 
 >[!NOTE]
 >La clé de purge doit être configurée en tant que [ variable d’environnement de Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la fait référence.
+
+Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) axé sur la configuration des clés de purge et l’exécution de la purge du cache CDN.
 
 ## Authentification de base {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du noeud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
+Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
 
 En outre, la syntaxe comprend :
 
