@@ -4,7 +4,7 @@ description: La disposition et l’apparence des formulaires adaptatifs sur diff
 feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, Différentes mises en page pour les formulaires, AEM de mises en page de formulaires dynamiques, AEM Cloud Service de formulaires, types de mises en page de formulaires dans AEM composants principaux, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -326,8 +326,6 @@ Vous pouvez également ajouter les validations requises pour les composants, sel
 ## Comment remplacer une disposition existante par une nouvelle disposition ?
 
 Vous pouvez remplacer une mise en page d’un formulaire par une nouvelle mise en page, ce qui implique de modifier la façon dont les composants sont organisés et affichés dans un formulaire.
-
-
 
 Effectuez les étapes suivantes pour remplacer la disposition existante d’un formulaire :
 
