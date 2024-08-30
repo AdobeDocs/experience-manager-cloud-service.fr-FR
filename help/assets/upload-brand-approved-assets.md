@@ -2,17 +2,19 @@
 title: Chargement des ressources approuvées par votre marque vers [!DNL Content Hub]
 description: Découvrez comment télécharger les ressources approuvées par la marque vers Content Hub
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-
 # Chargement de ressources approuvées pour la marque dans Content Hub {#upload-brand-approved-assets-content-hub}
 
 [Les utilisateurs de Content Hub autorisés à ajouter des ressources](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) peuvent ajouter des ressources à Content Hub à partir du système de fichiers local ou importer des ressources à partir de OneDrive ou de sources de données de Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers disponible sur votre système de fichiers local ou OneDrive et les sources de données Dropbox pour améliorer les fonctionnalités de recherche.
+
+Les ressources marquées comme `Approved` dans Assets as a Cloud Service sont automatiquement disponibles dans Content Hub. Pour plus d’informations, voir [Approbation de ressources pour Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Pour améliorer davantage la recherche de ressources, Content Hub vous permet d’effectuer les opérations suivantes :
 
@@ -72,3 +74,14 @@ Pour ajouter des ressources à Content Hub à partir de OneDrive ou de sources d
 
 Les administrateurs peuvent également configurer les champs obligatoires et facultatifs qui s’affichent lors du chargement des ressources, tels que le nom de la campagne, les mots-clés, les canaux, etc. Pour plus d’informations, voir [Configuration de l’interface utilisateur de Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
+## Gestion des ressources chargées à l’aide de Content Hub {#manage-assets-uploaded-using-content-hub}
+
+[ Les utilisateurs Content Hub autorisés à ajouter des ressources](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) peuvent [ ajouter des ressources à Content Hub](/help/assets/upload-brand-approved-assets.md) à partir d’un système de fichiers local ou importer des ressources à partir de OneDrive ou de sources de données de Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers disponible sur votre système de fichiers local ou OneDrive et les sources de données Dropbox pour améliorer les fonctionnalités de recherche.
+
+L’affichage des ressources chargées à l’aide de Content Hub dépend de l’activation ou non de la [activation du bouton d’approbation automatique](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) :
+
+* Si le bouton d’approbation automatique **[!UICONTROL est activé, les ressources que vous chargez à l’aide de Content Hub sont automatiquement disponibles.]**
+
+* Si le bouton d’approbation **[!UICONTROL automatique]** est désactivé, les ressources que vous chargez à l’aide de Content Hub ne s’affichent pas automatiquement. Les ressources sont disponibles dans le dossier `hydrated-assets` de votre environnement as a Cloud Service Assets. Accédez au dossier et [modifiez en masse](#bulk-approve-assets-content-hub) l’état de ces ressources sur `Approved` pour que ces ressources s’affichent dans Content Hub.
+
+![Processus d’approbation de Content Hub](/help/assets/assets/content-hub-approval.png)
