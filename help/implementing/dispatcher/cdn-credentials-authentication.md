@@ -4,10 +4,10 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 5%
+source-wordcount: '1379'
+ht-degree: 4%
 
 ---
 
@@ -73,6 +73,29 @@ Autres propriétés :
 
 >[!NOTE]
 >La clé Edge doit être configurée en tant que [ variable d’environnement Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la référence.
+
+### Migration sécurisée pour réduire le risque de trafic bloqué {#migrating-safely}
+
+Si votre site est déjà actif, soyez prudent lors de la migration vers le réseau de diffusion de contenu géré par le client, car une mauvaise configuration peut bloquer le trafic public. En effet, seules les demandes avec la valeur d’en-tête X-AEM-Edge-Key attendue seront acceptées par le réseau de diffusion de contenu Adobe. Une approche est recommandée lorsqu’une condition supplémentaire est temporairement incluse dans la règle d’authentification, ce qui la force à évaluer uniquement la requête si un en-tête de test est inclus :
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+Le modèle de requête `curl` suivant peut être utilisé :
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+Une fois le test réussi, la condition supplémentaire peut être supprimée et la configuration redéployée.
 
 ## Purge du jeton API {#purge-API-token}
 
