@@ -3,12 +3,11 @@ title: Comment créer et utiliser des thèmes dans Forms adaptatif ?
 description: Vous pouvez utiliser des thèmes pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif à l’aide des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 keywords: les formulaires adaptatifs mettent en forme les composants principaux. utilisation du thème dans les composants principaux, mise en forme du formulaire adaptatif, personnalisation des thèmes
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
-ht-degree: 30%
+source-wordcount: '2816'
+ht-degree: 31%
 
 ---
 
@@ -428,11 +427,6 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
 * **Modification de la largeur de disposition du panneau conteneur**
 
   Il n’est pas recommandé de modifier la largeur de disposition du panneau conteneur. Lorsque vous spécifiez la largeur d’un panneau de contenu, il devient statique et ne s’adapte pas aux différents affichages.
-
-* **Utilisation d’un éditeur de formulaire ou d’un éditeur de thème pour l’utilisation de l’en-tête et du pied de page**
-
-  Utilisez un éditeur de thème si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
-Si vous souhaitez fournir des informations telles qu’une image de logo, le nom de la société dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaire.
 
 ## Questions fréquentes {#faq}
 
