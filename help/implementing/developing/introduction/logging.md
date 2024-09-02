@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2834'
 ht-degree: 85%
 
 ---
@@ -144,12 +144,13 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 
 Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
 
-Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Deux propriétés de configuration sont prises en charge :
+Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Il existe trois propriétés de configuration prises en charge :
 
 | Propriété de configuration OSGi | Description |
 |---|---|
-| org.apache.sling.commons.log.names | Packages Java pour lesquels collecter les instructions de journal. |
-| org.apache.sling.commons.log.level | Niveau de journal auquel consigner les packages Java, spécifié par org.apache.sling.commons.log.names. |
+| `org.apache.sling.commons.log.names` | Packages Java pour lesquels collecter les instructions de journal. |
+| `org.apache.sling.commons.log.level` | Niveau de journal auquel consigner les packages Java, spécifié par `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Spécifiez la cible de la sortie : `logs/error.log` |
 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
@@ -163,6 +164,7 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
