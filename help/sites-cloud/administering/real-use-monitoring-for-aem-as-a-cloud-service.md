@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la surveillance de l’utilisation rée
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ Avec RUM, les mesures de performances clés sont suivies dès le lancement de l�
 ## Qui peut bénéficier d’un service de surveillance à usage réel ? {#who-can-benefit-from-rum-service}
 
 AEM a développé RUM pour aider les clients et les Adobes à comprendre comment les visiteurs interagissent avec AEM sites. Le RUM peut être utilisé pour aider à diagnostiquer les problèmes de performance et mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
-
-
-## Comprendre le fonctionnement du service de surveillance d’utilisation réelle {#understand-how-the-rum-service-works}
-
-AEM utilise RUM pour aider les clients et les Adobes à comprendre comment les visiteurs interagissent avec AEM sites. Cela les aide à diagnostiquer les problèmes de performance et à mesurer l’efficacité des expériences. RUM protège la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
 
 ## Service de surveillance de l’utilisation réelle et confidentialité {#rum-service-and-privacy}
 
