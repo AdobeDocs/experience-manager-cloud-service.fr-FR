@@ -914,8 +914,8 @@ ht-degree: 97%
       + [Modélisation de contenu](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Données tabulaires et feuilles de calcul](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Projets existants et Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
-      + [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [Fonctionnalités des sites de travail](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [Gérer des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
       + [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)

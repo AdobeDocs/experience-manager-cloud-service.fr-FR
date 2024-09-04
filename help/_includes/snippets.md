@@ -2,7 +2,7 @@
 source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 60%
+ht-degree: 79%
 
 ---
 # Fragments de code {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 60%
 ## Voir également {#see-also}
 
 * [Créer un formulaire adaptatif AEM](/help/forms/creating-adaptive-form-core-components.md)
-* [Ajouter un formulaire adaptatif AEM à la page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Ajouter un formulaire adaptatif AEM à la page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Appliquer des thèmes à un formulaire adaptatif AEM](/help/forms/using-themes-in-core-components.md)
-* [Ajouter des composants à un formulaire adaptatif AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Ajouter des composants à un formulaire adaptatif AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Utiliser reCAPTCHA dans un formulaire adaptatif AEM](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Générer une version de PDF (DE) d’un formulaire adaptatif AEM](/help/forms/generate-document-of-record-core-components.md)
+* [Générer une version PDF (document d’enregistrement) d’un formulaire adaptatif AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Traduire un formulaire adaptatif AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Activer Adobe Analytics sur un formulaire adaptatif pour suivre son utilisation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Connecter un formulaire adaptatif à Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 60%
 * [Connecter un formulaire adaptatif à Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Utiliser Adobe Sign dans un formulaire adaptatif AEM](/help/forms/working-with-adobe-sign.md)
 * [Ajouter un nouveau paramètre régional pour un formulaire adaptatif](/help/forms/supporting-new-language-localization-core-components.md)
-* [Envoyer des données de formulaire adaptatif à une base de données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [Envoyer des données de formulaire adaptatif à une base de données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Envoyer des données de formulaire adaptatif à un point d’entrée REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Envoyer des données de formulaire adaptatif à un workflow AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utiliser le Portail Formulaires pour répertorier des formulaires adaptatifs AEM sur un site web AEM](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 60%
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
 
 
-## Différence entre l’éditeur de règles des composants principaux et l’éditeur de règles des composants de base {#rule-editor-diff}
+## Différences entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base {#rule-editor-diff}
 
 Le tableau suivant montre les différences entre les fonctionnalités disponibles dans les composants principaux et les composants de base de l’éditeur de règles :
 
@@ -74,28 +74,28 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
   <tbody>
   <tr>
     <td><strong>Fonctions</strong></td>
-    <td><strong>Composants de base de formulaires adaptatifs</strong></td>
-    <td><strong>Composants principaux de formulaire adaptatif</strong></td>   
+    <td><strong>Composants de base des formulaires adaptatifs</strong></td>
+    <td><strong>Composants principaux des formulaires adaptatifs</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Définition de la liste déroulante des options </td>
-    <td>La liste déroulante des options est définie à l’aide de la propriété <b>Set Options of</b> de l’éditeur de règles.</td>
+    <td>Définir la liste déroulante des options </td>
+    <td>La liste déroulante des options est définie à l’aide de la propriété <b>Définition des options de</b> de l’éditeur de règles.</td>
     <td>Les options de liste déroulante sont définies à l’aide des fonctions personnalisées. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>Exécuter des opérations mathématiques sur le champ de panneau répétable </td>
-    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétables pour exécuter des fonctions telles que la somme, moyenne à l’aide de l’éditeur de règles. Deux arguments doivent être fournis : le premier spécifie le panneau répétable contenant le champ, le second spécifie le champ dans le panneau répétable correspondant. </td>
+    <td>Les fonctions mathématiques prêtes à l’emploi peuvent être appliquées à des champs de panneau répétable pour exécuter des fonctions telles que la somme et la moyenne avec l’éditeur de règles. Deux arguments doivent être fournis : le premier spécifie le panneau répétable contenant le champ, le second spécifie le champ dans le panneau répétable correspondant. </td>
     <td>Les opérations mathématiques sur le champ de panneau répétable peuvent être effectuées à l’aide des fonctions personnalisées. Vous pouvez également appliquer les fonctions mathématiques directement aux champs du panneau répétable dans l’éditeur de règles.
    </td>
    </tr>
       <tr>
     <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans « Then » (alors) </td>
-    <td>Les fonctions Valider et Réinitialiser ne prennent en charge que l’objet de formulaire dans l’éditeur de règles. 
+    <td>Les fonctions Valider et Réinitialiser ne prennent en charge que les objets de formulaire dans l’éditeur de règles. 
    </td>
-    <td>Les fonctions de validation et de réinitialisation prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
+    <td>Les fonctions Valider et Réinitialiser prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
    </td>
    </tr>
    <tr>
@@ -149,9 +149,9 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
-## Ajout d’une Liste autorisée IP Cloud Manager et de pipelines front-end {#add-cm-allowlist-frontend-pipeline}
+## Ajouter une liste des adresses IP autorisées de Cloud Manager et des pipelines front-end {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Si vous utilisez (ou envisagez d’utiliser) le pipeline frontal pour développer des sites, la Liste autorisée IP de Cloud Manager doit être ajoutée au préalable.
->Voir [Utilisation de la Liste autorisée IP de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
+>Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
