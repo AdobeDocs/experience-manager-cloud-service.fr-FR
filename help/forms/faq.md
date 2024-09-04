@@ -7,9 +7,9 @@ feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Non, l’étape de vérification n’est pas disponible pour [!DNL Forms] as a C
 Oui, vous pouvez ajouter des graphiques aux formulaires adaptatifs. Les formulaires adaptatifs fournissent un composant de graphique. Vous pouvez l’utiliser pour ajouter des graphiques à un formulaire adaptatif.
 
 * **Puis-je connecter un modèle de données de formulaire à un modèle de base de données relationnelle ?**
-Vous pouvez connecter un modèle de données de formulaire à [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] et un profil utilisateur Experience Manager en tant que sources de données. <!--Support to connect a Form Data Model with a relational database is not available.-->
+Vous pouvez lier un modèle de données de formulaire à [!DNL RESTful web services], [!DNL SOAP-based web services] et [!DNL OData services], et un profil d’utilisation Experience Manager en tant que source de données. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **Puis-je utiliser des certificats personnalisés avec le modèle de données de formulaire (FDM) pour l’authentification ?**
 Le modèle de données de formulaire (FDM) ne fournit pas de méthode permettant d’utiliser des certificats personnalisés pour l’authentification. Par conséquent, les certificats personnalisés tels que x509 et SSL bidirectionnel ne sont pas pris en charge.
