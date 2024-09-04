@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2525'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 100%
 
 <!-- hide: yes
 hidefromtoc: yes -->
+
+{{work-with-dynamic-media}}
 
 La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
 
@@ -70,7 +72,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 * **[!UICONTROL Remplacer les images]**
 
-  Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
+  Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
 
   >[!NOTE]
   >
@@ -95,13 +97,13 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 Ce filtre permet d’affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Il permet de contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré.
 
-L’effet d’accentuation utilise les mêmes options que le filtre d’accentuation de Photoshop. Contrairement à ce que suggère son nom, l’accentuation est un filtre d’accentuation.
+L’effet Masquage flou utilise les mêmes options que le filtre Masquage flou de Photoshop. Contrairement à ce que suggère son nom, l’accentuation est un filtre d’accentuation.
 
 | Options d’accentuation | Description |
 | --- | --- |
 | **[!UICONTROL Quantité]** | Requis.<br>Contrôle l’intensité du contraste appliqué aux pixels de contour.<br>Considérez cela comme l’intensité de l’effet. La principale différence entre les valeurs de quantité de l’accentuation dans Adobe Dynamic Media et les valeurs de quantité dans Adobe Photoshop est que Photoshop a une plage de valeurs comprise entre 1 % et 500 %. En revanche, dans Adobe Dynamic Media, la plage de valeurs est comprise entre `0.0` et `5.0`. Une valeur de 5,0 dans Adobe Dynamic Media équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, et ainsi de suite. |
 | **[!UICONTROL Rayon]** | Requis.<br>Contrôle le rayon de l’effet.<br>La plage de valeurs est comprise entre `0` et `250`. L’effet est exécuté sur tous les pixels d’une image et s’étend de tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation similaire pour une image de 2 000 x 2 000 pixels et une image de 500 x 500 pixels, définissez un rayon de deux pixels sur l’image de 2 000 x 2 000 pixels. Définissez ensuite une valeur de rayon d’un pixel sur l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
-| **[!UICONTROL Seuil]** | Requis.<br>Le seuil est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0`= noir, `128`= 50 % gris et `255`=blanc.<br>Une valeur de seuil de `12` ignore les légères variations de luminosité de la peau, afin de ne pas ajouter de bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous disposez d’une photo du visage d’une personne, l’accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
+| **[!UICONTROL Seuil]** | Requis.<br>Le seuil est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0`= noir, `128`= 50 % gris et `255`=blanc.<br>Une valeur de seuil de `12` ignore les légères variations de luminosité de la peau, afin de ne pas ajouter de bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous avez une photo du visage de quelqu’un, l’Accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
 | **[!UICONTROL Monochrome]** | Sélectionnez cette option pour appliquer l’accentuation sur la luminosité de l’image (intensité).<br>Désélectionnez-la pour appliquer l’accentuation sur chaque composante de couleur séparément. |
 
 Voir aussi [Accentuer les images dans Adobe Dynamic Media et sur le serveur d’images](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=fr).

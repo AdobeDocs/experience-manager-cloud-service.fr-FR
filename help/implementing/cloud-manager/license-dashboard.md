@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -65,9 +65,12 @@ Chaque section résume ce qui est disponible et comment il est utilisé, le cas 
 
 ## Afficher les détails d’utilisation {#view-usage-details}
 
-Le bouton **Afficher les détails d’utilisation** donne accès à la fenêtre **Détails d’utilisation** de la solution choisie. Cette fenêtre présente une ventilation détaillée comprenant des graphiques indiquant l’utilisation de votre solution. La manière dont cette utilisation est mesurée dépend de la solution choisie.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Détails de l’utilisation des sites {#sites-usage-details}
+Le bouton **Afficher les détails d’utilisation** de la zone Licence de Cloud Manager fournit une ventilation détaillée de votre utilisation actuelle des ressources. Lorsque vous cliquez dessus, un rapport ou un tableau de bord s’ouvre. Celui-ci répertorie les mesures importantes liées à votre licence. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Cette fonctionnalité vous permet de surveiller et de vous assurer que vous restez dans les limites de votre contrat tout en offrant des informations pour une meilleure planification et optimisation des ressources.
+
+### Détails d&#39;utilisation des sites {#sites-usage-details}
 
 La fenêtre **Détails de l’utilisation des sites** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Sites en fonction des [demandes de contenu.](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ Le côté gauche de la fenêtre présente un graphique circulaire indiquant la v
 
 Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
 
-### Détails de l’utilisation d’Assets {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-La fenêtre **Détails de l’utilisation d’Assets** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Assets en fonction des [utilisateurs standard](#storage) et [.](#standard-users) Sélectionnez l’onglet approprié pour basculer entre les vues.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-Pour les vues de stockage et d’utilisateurs standard, vous pouvez utiliser la liste déroulante **Type d’environnement** pour basculer l’affichage entre les environnements de production, d’évaluation et de développement.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### Stockage  {#storage}
+#### Storage {#storage}
 
-![Fenêtre des détails d’utilisation d’Assets pour le stockage](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-Le côté gauche de la fenêtre présente un graphique circulaire indiquant la ventilation du contrat pour l’année du contrat sélectionnée dans la liste déroulante **Afficher l’année du contrat** .
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### Utilisateurs standard {#standard-users}
+#### Standard Users {#standard-users}
 
-![Fenêtre de détails d’utilisation d’Assets pour les utilisateurs standard](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-Le côté gauche de la fenêtre présente un graphique circulaire indiquant la ventilation du contrat pour l’année du contrat sélectionnée dans la liste déroulante **Afficher l’année du contrat** .
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-Le côté droit de la fenêtre présente un diagramme de surface présentant l&#39;utilisation répartie par programme au fil du temps pour l&#39;année contractuelle sélectionnée. Une survol permet d’afficher une fenêtre contextuelle contenant des détails par programme pour le moment sélectionné.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Foire aux questions {#faq}
 
