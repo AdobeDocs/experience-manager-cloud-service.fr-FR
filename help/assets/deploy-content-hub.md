@@ -3,9 +3,9 @@ title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des utilisateurs disposant de différents types de privilèges (chargement de ressources, utilisateurs d’Adobe Express) et comment accorder des privilèges d’administrateur aux utilisateurs.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
+source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1569'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Le tableau suivant récapitule les types d’utilisateurs Content Hub disponible
 
 >[!NOTE]
 >
->[Les utilisateurs de Experience Manager Assets](#experience-manager-assets-users) peuvent approuver les ressources as a Cloud Service Experience Manager Assets pour les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés à AEM > Instance d’auteur de production > AEM profil de produit Utilisateurs à l’aide d’Admin Console.
+>Les [utilisateurs de Experience Manager Assets](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement as a Cloud Service Experience Manager Assets pour les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés à AEM > Instance d’auteur de production > AEM profil de produit Utilisateurs à l’aide d’Admin Console.
 
 ## Étape 1 : Activation de Content Hub pour Experience Manager Assets à l’aide de Cloud Manager {#enable-content-hub}
 
