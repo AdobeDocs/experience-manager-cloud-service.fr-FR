@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la surveillance de l’utilisation rée
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ Lorsque vous analysez les données RUM, il peut y avoir des écarts dans les pag
 
 ## Questions fréquentes {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **Les clients peuvent-ils intégrer les scripts de service RUM à des systèmes tiers tels que Dynatrace ?**
-
-   Oui.
+   Yes.
+-->
 
 1. **Les mesures de vitales Web collectées sont-elles &quot;Interaction vers la prochaine peinture&quot;, &quot;Temps jusqu’au premier octet&quot; et &quot;Première peinture contentée&quot; ?**
 
