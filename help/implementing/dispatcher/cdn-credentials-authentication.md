@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ Autres propriétés :
    * action : doit spécifier &quot;authenticate&quot;, avec l’authentificateur prévu référencé.
 
 >[!NOTE]
->La clé Edge doit être configurée en tant que [ variable d’environnement Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la référence.
+>La clé Edge doit être configurée en tant que [ variable d’environnement Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la référence. Il est recommandé d’utiliser une clé aléatoire unique d’une longueur minimale de 32 octets ; par exemple, la bibliothèque cryptographique Open SSL peut générer une clé aléatoire en exécutant la commande `openssl rand -hex 32`.
 
 ### Migration sécurisée pour réduire le risque de trafic bloqué {#migrating-safely}
 
@@ -140,7 +140,7 @@ Autres propriétés :
    * action : doit spécifier &quot;authenticate&quot;, avec l’authentificateur prévu référencé.
 
 >[!NOTE]
->La clé de purge doit être configurée en tant que [ variable d’environnement de Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la fait référence.
+>La clé de purge doit être configurée en tant que [ variable d’environnement de Cloud Manager de type secret ](/help/operations/config-pipeline.md#secret-env-vars) avant le déploiement de la configuration qui la fait référence. Il est recommandé d’utiliser une clé aléatoire unique d’une longueur minimale de 32 octets ; par exemple, la bibliothèque cryptographique Open SSL peut générer une clé aléatoire en exécutant la commande openssl rand -hex 32.
 
 Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) axé sur la configuration des clés de purge et l’exécution de la purge du cache CDN.
 
