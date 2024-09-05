@@ -4,9 +4,9 @@ description: Découvrez comment AEM as a Cloud Service peut être utilisé a
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -45,9 +45,3 @@ Consultez le document [Publication de contenu pour Edge Delivery Services](/he
 Edge Delivery Services est basé sur le concept de blocs. AEM est fourni avec une bibliothèque complète de blocs prédéfinis, qui peut être étendue pour répondre aux besoins de votre projet. Le code pour les projets Edge Delivery Services est géré dans GitHub.
 
 Pour plus d’informations, consultez le document [Guide de prise en main pour le développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
-
-## Projets AEM existants : {#existing-projects}
-
-Vous n’avez pas besoin d’attendre un nouveau projet AEM pour bénéficier d’Edge Delivery Services. Edge Delivery Services peut être intégré à votre projet AEM existant afin que vous puissiez tirer immédiatement parti de ses gains de performances.
-
-Consultez le document [Utilisation d’Edge Delivery Services avec des projets AEM existants](/help/edge/wysiwyg-authoring/existing-projects.md) pour plus d’informations.
