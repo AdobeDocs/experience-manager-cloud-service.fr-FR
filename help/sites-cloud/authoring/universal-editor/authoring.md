@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 20%
@@ -88,7 +88,7 @@ Vous pouvez afficher ses détails dans le [rail de propriétés.](/help/sites-cl
 ![Modification de médias](assets/ue-edit-media.png)
 
 1. Appuyez ou cliquez sur l’aperçu de l’image sélectionnée dans le rail des propriétés.
-1. La fenêtre [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
+1. La fenêtre [sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
 1. Sélectionnez cette option pour sélectionner une nouvelle ressource.
 1. Sélectionnez **Sélectionner** pour revenir au rail des propriétés où la ressource a été remplacée.
 

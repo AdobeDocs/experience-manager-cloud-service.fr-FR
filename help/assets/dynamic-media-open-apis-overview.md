@@ -2,7 +2,8 @@
 title: Dynamic Media avec fonctionnalités OpenAPI
 description: Découvrez les concepts clés, tels que les raisons d’utiliser Dynamic Media avec les fonctionnalités OpenAPI et comment l’activer.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ Dynamic Media avec les fonctionnalités OpenAPI place la gestion des actifs num�
 
 Dynamic Media avec les fonctionnalités OpenAPI offre les avantages clés suivants :
 
-* **Intégrations en toute transparence** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à vos développeurs d&#39;[ intégrer facilement la diffusion des ressources à leurs applications ](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe ainsi que les applications tierces. Il fournit une [interface utilisateur du sélecteur de ressources Micro Frontend ](/help/assets/asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Le sélecteur peut être intégré sans effort à n’importe quelle application basée sur des structures JavaScript telles que React JS, Angular JS et Vanilla JS.
+* **Intégrations en toute transparence** : Dynamic Media avec fonctionnalités OpenAPI offre un ensemble complet d’API de recherche et de diffusion. Cela permet à vos développeurs d&#39;[ intégrer facilement la diffusion des ressources à leurs applications ](/help/assets/integrate-dynamic-media-open-apis.md). Les applications comprennent les applications d’Adobe ainsi que les applications tierces. Il fournit une [interface utilisateur du sélecteur de ressources Micro Frontend ](/help/assets/overview-asset-selector.md) pour rechercher et sélectionner des ressources approuvées. Le sélecteur peut être intégré sans effort à n’importe quelle application basée sur des structures JavaScript telles que React JS, Angular JS et Vanilla JS.
 
 * **Gestion centralisée des ressources numériques** : DAM est la source unique de vérité pour toutes les ressources numériques. Vos ressources numériques sont gérées de manière centralisée dans AEM Assets et diffusées aux applications gourmandes par référence à l’aide d’URL de diffusion, sans copier de fichiers binaires de ressources.
 
@@ -103,11 +104,11 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Sélecteur de ressources d’Adobe" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Sélecteur de ressources micro-front d’Adobe</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 </td>
 
 </table>
-

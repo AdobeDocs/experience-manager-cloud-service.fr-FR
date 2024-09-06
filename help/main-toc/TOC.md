@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
-ht-degree: 97%
+source-wordcount: '5578'
+ht-degree: 96%
 
 ---
 
@@ -456,7 +456,17 @@ ht-degree: 97%
    + [Présentation des microservices de ressources](/help/assets/asset-microservices-overview.md)
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
    + Gestion des ressources numériques {#manage}
-      + [Sélecteur de ressources micro front-end](/help/assets/asset-selector.md)
+      + Sélecteur de ressources micro-front {#asset-selector}
+         + [Présentation du sélecteur de ressources](/help/assets/overview-asset-selector.md)
+         + Intégrations du sélecteur de ressources {#asset-selector-integration}
+            + [Présentation des intégrations du sélecteur de ressources](/help/assets/integrate-asset-selector.md)
+            + [Intégration du sélecteur de ressources à une application Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Intégration du sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Intégration du sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
+         + [Exemples de sélecteur de ressources](/help/assets/asset-selector-examples.md)
+         + [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+         + [Chargement du sélecteur de ressources](/help/assets/asset-selector-upload.md)
       + [Sélecteur de destinations micro front-end](/help/assets/destination-selector.md)
       + [Partager des ressources](/help/assets/share-assets.md)
       + [Retraiter des ressources](/help/assets/reprocessing.md)
