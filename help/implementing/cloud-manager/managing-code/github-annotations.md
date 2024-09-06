@@ -4,7 +4,7 @@ description: Découvrez comment les vérifications GitHub annotent les requêtes
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
@@ -42,4 +42,4 @@ Les résultats concernant la [qualité du code](/help/implementing/cloud-manager
 
 ![Exemple d’annotations](assets/github-check-annotations-code-quality-2.png)
 
-Vous pouvez également visualiser les problèmes sous la forme d’un fichier CSV. Celui-ci peut être récupéré en [affichant les détails de l’exécution du pipeline dans Cloud Manager.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)
+Vous pouvez également visualiser les problèmes sous la forme d’un fichier CSV. Celui-ci peut être récupéré en [affichant les détails de l’exécution du pipeline dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details).

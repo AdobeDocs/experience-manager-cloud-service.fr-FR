@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 80%
+source-wordcount: '342'
+ht-degree: 57%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 80%
 
 Cloud Manager vous permet d’afficher, de mettre à jour, de remplacer et de supprimer des noms de domaine personnalisés.
 
-## Affichage et mise à jour {#view-and-update}
+## Affichage et mise à jour d’un nom de domaine personnalisé {#view-and-update}
 
 Utilisez le menu **Affichage et mise à jour** pour afficher simplement les détails d’un ou plusieurs de vos noms de domaine personnalisé.
+
+**Pour afficher et mettre à jour un nom de domaine personnalisé :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -33,13 +35,13 @@ Utilisez le menu **Affichage et mise à jour** pour afficher simplement les dét
 
 1. Sélectionnez l’option **Afficher et mettre à jour**.
 
-## Mise à jour du certificat SSL du nom de domaine personnalisé {#update-cert}
+## Mise à jour du certificat SSL d’un nom de domaine personnalisé {#update-cert}
 
 Vous pouvez suivre [les mêmes étapes pour afficher et mettre à jour un nom de domaine personnalisé](#view-and-update) pour mettre à jour le certificat SSL d’un nom de domaine personnalisé.
 
 >[!NOTE]
 >
->Le certificat SSL doit être valide, [déjà configuré](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), et contenir le nom de domaine personnalisé que vous mettez à jour.
+>Le certificat SSL doit être valide, [déjà configuré](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) et contenir le nom de domaine personnalisé que vous mettez à jour.
 
 ## Suppression d’un nom de domaine personnalisé {#deleting}
 
@@ -63,7 +65,7 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Sur la page **Environnements**, accédez à l’écran des détails de l’environnement qui vous intéresse.
+1. Sur la page **Environnements** , accédez à un écran de détails de l’environnement intéressant.
 1. Dans le tableau des noms de domaine, identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 1. Sélectionnez **Supprimer**.

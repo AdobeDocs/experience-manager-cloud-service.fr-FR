@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,10 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
 ## Accès aux informations sur le référentiel à partir de la fenêtre Référentiels {#repositories-window}
 
-Un bouton **Accéder aux informations sur le référentiel** est également présent dans la barre d’outils de la fenêtre [**Référentiels**.](managing-repositories.md) il affiche les mêmes informations sur l’accès aux référentiels gérés par Adobe.
+Un bouton **Accéder à Repo Info** est également disponible dans la barre d’outils de la fenêtre [**Référentiels**](managing-repositories.md). Il affiche les mêmes informations sur l’accès aux référentiels gérés par Adobe.
 
 ## Révocation d’un mot de passe d’accès {#revoke-password}
 
-Vous pouvez révoquer un mot de passe d’accès à tout moment. Pour ce faire, [créez un ticket d’assistance pour cette demande.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+Vous pouvez révoquer un mot de passe d’accès à tout moment. Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 Le ticket est traité en priorité et la révocation devrait être effectuée dans la journée.

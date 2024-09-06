@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 64%
+source-wordcount: '1603'
+ht-degree: 38%
 
 ---
 
@@ -19,18 +19,24 @@ ht-degree: 64%
 >title="Réseau de diffusion de contenu dans AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service est fourni avec un réseau CDN. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
 
-AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
+AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré, conçu pour réduire la latence en fournissant du contenu pouvant être mis en cache à partir des noeuds périphériques proches du navigateur de l’utilisateur. Ce réseau de diffusion de contenu entièrement géré est optimisé pour AEM performances de l’application.
 
-Le réseau CDN géré par AEM satisfait à la plupart des exigences de performances et de sécurité des clients et clientes. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner.
+Le réseau de diffusion de contenu géré par AEM répond aux besoins de performances et de sécurité de la plupart des clients. Pour le niveau de publication, les clients peuvent choisir d’acheminer le trafic par le biais de leur propre réseau de diffusion de contenu, qu’ils doivent gérer. Cette option est disponible au cas par cas, en particulier lorsque les clients disposent d’intégrations héritées existantes avec un fournisseur CDN difficiles à remplacer.
+
+Les clients qui souhaitent publier du contenu sur le niveau Edge Delivery Services peuvent tirer parti du réseau de diffusion de contenu géré par Adobe. Voir [Adobe du réseau de diffusion de contenu géré ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Réseau CDN géré par AEM  {#aem-managed-cdn}
+## Réseau CDN géré par Adobe {#aem-managed-cdn}
 
-Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager pour préparer la diffusion de contenu à l’aide du réseau CDN prêt à l’emploi d’AEM :
+<!-- CQDOC-21758, 5a -->
 
-1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+Pour vous préparer à la diffusion de contenu à l’aide AEM du réseau de diffusion de contenu intégré via l’interface utilisateur en libre-service Cloud Manager, vous pouvez tirer parti des fonctionnalités de réseau de diffusion de contenu géré par Adobe. Cette fonctionnalité vous permet de gérer la gestion du réseau de diffusion de contenu en libre-service, y compris de configurer et d’installer des certificats SSL tels que DV (Domain Validation) ou EV/OV (Extended/Organization Validation). Pour plus d’informations sur ces méthodes, voir :
+
+* [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Assistance Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
 
 **Limitation du trafic**
 
@@ -40,9 +46,9 @@ Consultez [Gestion des listes d’adresses IP autorisées](/help/implementing/c
 
 >[!CAUTION]
 >
->Seules les requêtes provenant des adresses IP autorisées sont traitées par le biais du réseau CDN géré par AEM. Si vous pointez votre propre réseau CDN sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau CDN sont incluses dans la liste autorisée.
+>L’AEM du réseau de diffusion de contenu géré ne diffuse des requêtes qu’à partir des adresses IP autorisées. Si vous pointez votre propre réseau de diffusion de contenu vers le réseau de diffusion de contenu géré par AEM, assurez-vous que les adresses IP de votre réseau de diffusion de contenu sont incluses dans la Liste autorisée IP.
 
-### Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
+### Configuration du trafic sur le réseau de diffusion de contenu {#cdn-configuring-cloud}
 
 Vous pouvez configurer le trafic sur le réseau de diffusion de contenu de différentes manières, notamment :
 
@@ -51,15 +57,15 @@ Vous pouvez configurer le trafic sur le réseau de diffusion de contenu de diff�
 * application 301/302 [redirections côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
 * déclaration de [sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) pour inverser le proxy d’une requête aux serveurs principaux non AEM
 
-Découvrez comment configurer ces fonctionnalités à l’aide de fichiers YAML dans Git et les déployer à l’aide du [pipeline de configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md) de Cloud Manager.
+Utilisez les fichiers YAML dans Git pour configurer ces fonctionnalités. Utilisez également le [pipeline de configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md) de Cloud Manager pour les déployer.
 
 ### Configuration des pages d’erreur CDN {#cdn-error-pages}
 
-Une page d’erreur CDN peut être configurée pour remplacer la page sans marque par défaut qui est diffusée dans le navigateur dans le rare cas où AEM ne peut pas être atteinte. Pour plus d’informations, voir [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md).
+Vous pouvez configurer une page d’erreur CDN pour remplacer la page sans marque par défaut. Cette page personnalisée s’affiche dans le rare cas où AEM n’est pas disponible. Pour plus d’informations, voir [Configuration des pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ### Purge du contenu mis en cache sur le réseau de diffusion de contenu {#purge-cdn}
 
-La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement du contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau de diffusion de contenu.
+La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser du contenu mis à jour immédiatement, il peut être bénéfique de purger directement le cache CDN.
 
 Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) et [la purge du contenu CDN mis en cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -67,19 +73,19 @@ Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dis
 
 Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
 
-## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
+## Le réseau de diffusion de contenu géré par le client pointe vers AEM réseau de diffusion de contenu géré {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM"
 >abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner."
 
-Si un client ou une cliente doit utiliser son réseau CDN existant, il ou elle peut le gérer et le pointer vers le réseau CDN géré par AEM, dans la mesure où les conditions suivantes sont satisfaites :
+Si un client doit utiliser son réseau de diffusion de contenu existant, il peut le gérer et le pointer vers le réseau de diffusion de contenu géré par AEM, à condition que les conditions suivantes soient satisfaites :
 
-* Le client doit disposer d’un réseau de diffusion de contenu existant potentiellement onéreux à remplacer.
-* Le client doit en assurer la gestion.
-* Le client doit être en mesure de configurer le réseau CDN pour utiliser AEM as a Cloud Service. Consultez les instructions de configuration présentées ci-dessous.
-* Le client ou la cliente doit disposer de spécialistes en ingénierie maîtrisant les réseaux CDN et à même de résoudre les problèmes éventuels.
+* Le client doit disposer d’un réseau de diffusion de contenu existant qui serait onéreux à remplacer.
+* Le client doit le gérer.
+* Le client doit être en mesure de configurer le réseau de diffusion de contenu pour qu’il fonctionne avec AEM as a Cloud Service. Voir les instructions de configuration présentées ci-dessous.
+* Le client doit disposer d’ingénieurs maîtrisant le réseau de diffusion de contenu et disponibles pour résoudre les problèmes liés aux cas.
 * Le client doit effectuer et réussir un test de charge avant de passer en production.
 
 Instructions de configuration :
@@ -88,9 +94,9 @@ Instructions de configuration :
 1. Définissez le SNI sur l’entrée du réseau CDN d’Adobe.
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
-1. Définir `X-AEM-Edge-Key`. La valeur doit être configurée à l’aide d’un pipeline de configuration Cloud Manager, comme décrit dans [cet article.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
+1. Définir `X-AEM-Edge-Key`. La valeur doit être configurée à l’aide d’un pipeline de configuration Cloud Manager, comme décrit dans [cet article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau CDN géré par le client ou la cliente) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
+   * Ce paramétrage est nécessaire afin que le réseau CDN d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant de confiance (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau CDN d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Voir [Exemples de configurations de fournisseur de réseau CDN](#sample-configurations) pour consulter des exemples de configuration provenant de principaux fournisseurs de réseau CDN.
@@ -113,8 +119,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN d’Adobe est effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` qui doit être envoyé dans l’en-tête `Host` de la requête. Le remplacement de l’en-tête `Host` de la requête par un nom de domaine personnalisé peut entraîner un routage incorrect de la requête par le réseau CDN d’Adobe.
-
+>Lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe est effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, qui doit être envoyé dans l’en-tête de la requête `Host`. Le remplacement de l’en-tête de la requête `Host` par un nom de domaine personnalisé peut incorrectement acheminer la requête via le réseau de diffusion de contenu Adobe.
 
 >[!NOTE]
 >
@@ -122,7 +127,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Les environnements de programme Sandbox ne prennent pas en charge un réseau CDN fourni par le client.
+>Les environnements de programme Sandbox ne prennent pas en charge le réseau de diffusion de contenu fourni par le client.
 
 Le passage du réseau CDN client au réseau CDN géré par AEM n’est nécessaire que dans le cas d’une interruption du cache. En utilisant les stratégies d’optimisation du cache décrites dans cet article, l’ajout d’un réseau CDN client ne doit introduire qu’une latence négligeable.
 
@@ -149,13 +154,13 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs grand
 
 ### Erreurs courantes {#common-errors}
 
-Les exemples de configurations fournis indiquent les paramètres de base nécessaires, mais une configuration client peut avoir d’autres règles d’impact qui suppriment, modifient ou réorganisent les en-têtes nécessaires à AEM as a Cloud Service pour diffuser le trafic. Vous trouverez ci-dessous des erreurs courantes qui se produisent lors de la configuration d’un réseau de diffusion de contenu géré par le client pour pointer vers AEM as a Cloud Service.
+Les exemples de configurations fournis affichent les paramètres de base nécessaires. Cependant, une configuration client peut avoir d’autres règles d’impact qui suppriment, modifient ou réorganisent les en-têtes nécessaires pour qu’AEM as a Cloud Service diffuse le trafic. Vous trouverez ci-dessous des erreurs courantes qui se produisent lors de la configuration d’un réseau de diffusion de contenu géré par le client pour pointer vers AEM as a Cloud Service.
 
-**Redirection vers le point d’entrée du service Publish**
+**Redirection vers le point d’entrée du service de publication**
 
 Lorsqu’une requête reçoit une réponse 403 interdite, cela signifie que certains en-têtes requis lui manquent. Cela est généralement dû au fait que le réseau de diffusion de contenu gère à la fois le trafic de domaine apex et `www`, mais n’ajoute pas l’en-tête correct pour le domaine `www`. Ce problème peut être résolu en vérifiant vos journaux de réseau de diffusion de contenu AEM as a Cloud Service et en vérifiant les en-têtes de requête nécessaires.
 
-**Trop de redirections boucle**
+**Trop de redirections Boucle**
 
 Lorsqu’une page reçoit une boucle &quot;Trop de redirection&quot;, un en-tête de requête est ajouté au réseau de diffusion de contenu qui correspond à une redirection qui la force à se rediriger. Par exemple :
 
@@ -169,14 +174,14 @@ Pour résoudre ce problème, évaluez votre stratégie de redirection SSL, les r
 
 ## En-têtes de géolocalisation {#geo-headers}
 
-Le réseau CDN géré par AEM ajoute des en-têtes à chaque requête avec les éléments suivants :
+Le réseau de diffusion de contenu géré par AEM ajoute des en-têtes à chaque requête avec les éléments suivants :
 
 * Le code de pays : `x-aem-client-country`
 * Le code continent : `x-aem-client-continent`
 
 >[!NOTE]
 >
->Si le réseau CDN est géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau CDN des clients plutôt que le client réel. Par conséquent, pour le réseau CDN géré par le client, les en-têtes de géolocalisation doivent être gérés par le réseau CDN client.
+>S’il existe un réseau de diffusion de contenu géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy CDN du client plutôt que le client réel. Les clients doivent gérer les en-têtes de géolocalisation par le biais de leur propre réseau de diffusion de contenu lors de l’utilisation d’un réseau de diffusion de contenu géré par le client.
 
 Les valeurs des codes pays sont les codes Alpha-2 décrits sous [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1).
 
@@ -190,4 +195,4 @@ Les valeurs des codes du continent sont les suivantes :
 * OC Océanie
 * SA Amérique du Sud
 
-Ces informations peuvent s’avérer utiles dans certains cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la requête. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers la page de destination d’un pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
+Ces informations sont utiles pour rediriger vers une autre URL basée sur le pays d’origine de la demande. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers la page de destination d’un pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).

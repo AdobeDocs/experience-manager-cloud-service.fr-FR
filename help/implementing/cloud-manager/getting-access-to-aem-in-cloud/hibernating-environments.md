@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 84%
+source-wordcount: '696'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ Les environnements mis en veille permettent toujours les déploiements et les mi
 
 * Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité.
    * L’inactivité est définie comme le fait que ni le service de création, ni les services de prévisualisation ou de publication ne reçoivent de requêtes.
-   * Une fois mis en veille, ils peuvent être [réactivés manuellement.](#de-hibernation-introduction)
+   * Une fois mis en veille, ils peuvent être [réactivés manuellement].(#de-hibernation-introduction)
 * Les programmes Sandbox sont supprimés après 6 mois de mise en veille continue, après quoi ils peuvent être recréés.
 
 >[!NOTE]

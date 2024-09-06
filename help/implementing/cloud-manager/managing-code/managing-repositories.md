@@ -4,10 +4,10 @@ description: Découvrez comment créer, afficher et supprimer vos référentiels
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,17 +71,17 @@ Cloud Manager prend en charge les référentiels gérés par Adobe (**Référent
 
 ## Accéder aux informations sur le référentiel {#repo-info}
 
-Lorsque vous consultez vos référentiels dans la fenêtre **Référentiels**, vous pouvez consulter des informations sur comment accéder aux référentiels gérés par Adobe par programmation, en appuyant ou en cliquant sur le bouton **Accéder aux informations sur le référentiel** dans la barre d’outils.
+Lors de l’affichage de vos référentiels dans la fenêtre **Référentiels**, vous pouvez afficher les détails sur la manière d’accéder par programmation aux référentiels gérés par Adobe en cliquant sur le bouton **Accéder aux informations sur les référents** dans la barre d’outils.
 
 ![Informations sur le référentiel](assets/repo-info.png)
 
-La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, consultez le document [Accès aux informations du référentiel.](accessing-repos.md)
+La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, consultez le document [Accès aux informations du référentiel](accessing-repos.md).
 
 ## Vérifier les branches / Créer un projet {#check-branches}
 
 L’action **Vérifier les branches / Créer un projet** exécute deux fonctions selon l’état du référentiel.
 
-* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Si le référentiel a déjà créé l’exemple de projet, il vérifie l’état du référentiel et de ses branches et signale si l’exemple de projet existe déjà.
 
 ![Action Vérifier les branches](assets/check-branches.png)

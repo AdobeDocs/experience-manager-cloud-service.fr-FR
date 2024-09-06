@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Pour plus d’informations, consultez le document [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) .
+   * Pour plus d’informations, consultez le document [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) .
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Les chemins configurés pour l’audit de l’expérience sont soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Pour plus d’informations, voir [Compréhension des résultats de l’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+Les chemins configurés pour l’audit de l’expérience sont soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Pour plus d’informations, voir [Compréhension des résultats de l’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 

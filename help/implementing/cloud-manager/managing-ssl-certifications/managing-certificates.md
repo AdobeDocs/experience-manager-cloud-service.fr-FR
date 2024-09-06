@@ -5,77 +5,86 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 78%
+source-wordcount: '722'
+ht-degree: 16%
 
 ---
 
 
 # Gestion des certificats SSL {#managing-ssl-certificates}
 
-Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certificats SSL et comment les modifier, les remplacer, les mettre à jour et les supprimer.
+Découvrez comment utiliser Cloud Manager pour vérifier l’état des certificats SSL gérés par votre Adobe et gérés par le client et comment les supprimer. Pour les certificats gérés par le client, vous pouvez également les modifier et les mettre à jour (les remplacer).
 
-## Vérification du statut des certificats SSL {#checking-status-an-ssl-certificate}
+## Vérification de l’état des certificats SSL {#checking-status-an-ssl-certificate}
 
-Le statut de vos certificats SSL se comprend d’un seul coup d’œil grâce à la page de certificat SSL.
+L’état de vos certificats SSL peut être compris en un coup d’oeil à partir de la page **SSL Certificates**.
 
-* **Vert** - Ce statut indique que votre certificat est valide pendant au moins 14 jours à compter de la date actuelle.
+| État du certificat SSL | Description |
+| --- | --- |
+| Vert | Le certificat est valide pendant au moins 14 jours à compter de la date actuelle. |
+| Orange | Le certificat doit expirer dans moins de 14 jours.<br> ・ Assurez-vous que vous disposez d’un plan pour renouveler votre certificat et le remplacer au moyen de l’interface utilisateur de Cloud Manager afin d’éviter tout accès ou interruption au site.<br> ・ Cloud Manager envoie des notifications régulières dans l’interface utilisateur pour vous alerter d’une expiration de certificat imminente. |
+| Rouge | Le certificat SSL a expiré.<br>Voir [Mise à jour d’un certificat SSL géré par le client expiré](#update-ssl-certificate) ou [Suppression d’un certificat SSL](#deleting-an-ssl-certificate). |
 
-* **Orange** - Ce statut indique que votre certificat va expirer dans moins de 14 jours.
-   * Il est temps de vous assurer que vous disposez d’un plan de renouvellement de votre certificat afin de le remplacer via l’interface utilisateur de Cloud Manager et d’éviter d’éventuelles interruptions d’accès au site.
-   * Cloud Manager envoie régulièrement des notifications dans l’interface utilisateur pour vous avertir d’une expiration imminente du certificat.
+## Mise à jour d’un certificat SSL géré par le client expiré {#update-ssl-certificate}
 
-* **Rouge** - Ce statut indique que le certificat SSL a expiré.
+Lorsqu’un certificat géré par le client expire, les domaines qui sont utilisés avec le certificat expiré ne fonctionnent plus. La mise à jour de vos certificats garantit que votre domaine continue à fonctionner comme vous le souhaitez.
 
-## Mise à jour d’un certificat SSL {#update-ssl-certificate}
+Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
-Lorsqu’un certificat expire, tout domaine utilisé avec le certificat expiré ne fonctionne plus. La mise à jour de vos certificats par le biais des étapes suivantes garantit que votre domaine continue à fonctionner comme vous le souhaitez.
+**Pour mettre à jour un certificat SSL géré par le client expiré :**
 
 1. Se connecter à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionner l’organisation appropriée
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à l’écran **Certificats SSL** à partir de l’écran **Environnements**.
-1. Vous pouvez voir un tableau avec une ligne pour chaque certificat SSL installé avec succès dans votre programme. Cliquez sur le bouton représentant des points de suspension tout à droite de la ligne du certificat que vous souhaitez mettre à jour, puis sélectionnez **Afficher et mettre à jour**.
-1. Les détails du certificat s’affichent et peuvent être mis à jour.
-1. Enregistrez vos modifications.
+1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Dans l’écran **Environments** (Environnements), accédez à l’écran **Certificats SSL**.
+1. Dans la ligne du certificat géré par le client arrivé à expiration que vous souhaitez mettre à jour, cliquez sur le bouton représentant des points de suspension à l’extrémité droite, puis sélectionnez **Afficher et mettre à jour**.
 
-Une fois vos modifications enregistrées, elles sont appliquées automatiquement.
+   ![Mettre à jour une certification SSL gérée par le client expirée](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
->[!NOTE]
->
->L’utilisateur ou l’utilisatrice doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour pouvoir mettre à jour un certificat SSL dans Cloud Manager.
+1. Dans la boîte de dialogue **Afficher et mettre à jour le certificat SSL**, procédez comme suit :
 
-## Remplacement d’un certificat SSL {#replace-ssl-certificate}
+   * (Facultatif) Dans le champ **Certificate name** , saisissez un nouveau nom.
+   * Dans le champ **Certificate** , collez la nouvelle clé de contenu du certificat.
+   * Dans le champ **Clé privée** , mettez à jour ce champ uniquement si vous avez apporté des modifications au certificat.
+   * Dans le champ **Certificate chain** (ou chaîne de confiance), collez la chaîne de certificat.
 
-Vous pouvez remplacer un certificat SSL en suivant les mêmes étapes que celles décrites dans la section [Mise à jour d’un certificat SSL.](#update-ssl-certificate)
+1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications et les faire appliquer automatiquement.
+
+## Remplacement d’un certificat SSL géré par le client expiré {#replace-ssl-certificate}
+
+Suivez les mêmes étapes que celles décrites dans la section [Mise à jour d’un certificat SSL expiré](#update-ssl-certificate) pour remplacer un certificat SSL géré par le client arrivé à expiration.
 
 ## Suppression d’un certificat SSL {#deleting-an-ssl-certificate}
 
-La suppression de certificats de Cloud Manager est une action permanente qui ne peut pas être annulée. Adobe recommande, en règle générale, d’enregistrer les fichiers SSL localement avant de les supprimer dans Cloud Manager.
-
-Cloud Manager ne vous permet pas de supprimer un certificat SSL associé à un ou plusieurs domaines. Tous les domaines associés doivent être supprimés avant de supprimer le certificat SSL. Voir [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
-
-Procédez comme suit pour supprimer un certificat SSL.
-
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à l’écran **Certificats SSL** à partir de l’écran **Environnements**.
-1. Vous pouvez voir un tableau avec une ligne pour chaque certificat SSL installé avec succès dans votre programme. Cliquez sur les points de suspension tout à droite de la ligne du certificat que vous souhaitez supprimer, puis sélectionnez **Supprimer**.
-1. Confirmez la suppression dans la boîte de dialogue **Supprimer le certificat SSL**.
-1. Exécutez le pipeline pour annuler le déploiement du certificat supprimé.
+La suppression des certificats SSL gérés par Adobe ou gérés par le client de Cloud Manager est une action permanente qui ne peut pas être annulée. Adobe recommande, en règle générale, d’enregistrer les fichiers SSL localement avant de les supprimer dans Cloud Manager.
 
 >[!NOTE]
 >
->Un utilisateur ou une utilisatrice doit disposer du rôle **Propriétaire d’entreprise** ou **Responsable de déploiement** pour pouvoir supprimer un certificat SSL dans Cloud Manager.
+>Vous ne pouvez pas supprimer un certificat SSL géré par un Adobe auquel un ou plusieurs domaines actifs sont associés. Tous les domaines actifs associés doivent être supprimés avant de supprimer le certificat SSL. Voir [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
 
-## Configurations de réseau CDN préexistantes {#pre-existing-cdn}
+Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
-Si vous disposez d’une configuration CDN préexistante pour votre certificat SSL, un message informatif s’affiche sur la page **Certificats SSL**, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+**Pour supprimer un certificat SSL :**
 
-Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Dans l’écran **Environments** (Environnements), accédez à l’écran **Certificats SSL**.
+1. Dans la ligne du certificat que vous souhaitez supprimer, cliquez sur le bouton représentant des points de suspension à l’extrémité droite, puis sélectionnez **Supprimer**.
+Si le bouton Supprimer comporte une icône d’information comme illustré dans l’image suivante, reportez-vous à la remarque ci-dessus.
 
-Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
+   ![Bouton Supprimer avec icône d’informations](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
+
+1. Dans la boîte de dialogue **Supprimer le certificat SSL**, cliquez sur **Supprimer** pour confirmer la suppression.
+1. Exécutez le pipeline pour annuler le déploiement du certificat supprimé.
+
+## Configurations CDN préexistantes {#pre-existing-cdn}
+
+Si vous disposez déjà d’une configuration CDN pour votre certificat SSL, la page **Certificats SSL** affiche un message informatif. Il vous encourage à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et gérables dans Cloud Manager.
+
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes ont été migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+
+Pour plus d’informations, voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
 
 Un message similaire est également fourni dans la **Liste d’adresses IP autorisées** et les pages **Environnements** pour les environnements qui possèdent des configurations CDN préexistantes pour les liste d’adresses IP autorisées ou les noms de domaine personnalisés.

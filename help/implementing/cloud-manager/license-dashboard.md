@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 37%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 >
 >Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. [Les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
->Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez le document [Navigation dans l’interface utilisateur de Cloud Manager.](/help/implementing/cloud-manager/navigation.md#program-cards)
+>Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Vue d’ensemble {#overview}
 
@@ -30,7 +30,7 @@ Le tableau de bord de la licence Cloud Manager permet d’accéder facilement au
 1. Les droits aux solutions sont disponibles pour tous vos programmes, y compris les éléments utilisés et disponibles.
 1. Mesures de consommation des demandes de contenu selon les tendances par mois pour la solution Sites
 
-## Utiliser le tableau de bord des licences {#using-dashboard}
+## Utilisation du tableau de bord Licence {#using-dashboard}
 
 Pour accéder à votre tableau de bord des licences, procédez comme suit.
 
@@ -39,7 +39,7 @@ Pour accéder à votre tableau de bord des licences, procédez comme suit.
 >Un utilisateur possédant le rôle **Propriétaire de l’entreprise** doit être connecté pour afficher le tableau de bord de la licence.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
-1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le bouton du menu du hamburger sur l’ [en-tête Cloud Manager.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Les onglets s’affichent.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le bouton de menu du hamburger sur l’en-tête [ de Cloud Manager. ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Les onglets s’affichent alors.
 1. Appuyez ou cliquez sur l’option **Licence** dans l’onglet .
 
 ![Tableau de bord des licences](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Le bouton **Afficher les détails d’utilisation** de la zone Licence de Cloud 
 
 ### Détails d&#39;utilisation des sites {#sites-usage-details}
 
-La fenêtre **Détails de l’utilisation des sites** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Sites en fonction des [demandes de contenu.](#what-is-a-content-request)
+La fenêtre **Détails de l’utilisation des sites** présente des graphiques qui donnent un aperçu de l’utilisation de vos licences Sites en fonction des [requêtes de contenu](#what-is-a-content-request).
 
 ![Fenêtre des détails d’utilisation des sites](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Le côté droit de la fenêtre présente un diagramme de surface présentant l&#
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 

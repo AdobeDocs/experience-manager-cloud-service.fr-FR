@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 60%
@@ -25,7 +25,7 @@ Un nom de domaine personnalisé ne peut pas servir de trafic en direct tant que 
 
 Vous devez répondre à ces exigences avant de vérifier l’état d’enregistrement DNS à l’aide de Cloud Manager.
 
-* Vous devez avoir déjà configuré les paramètres DNS pour votre nom de domaine personnalisé, comme décrit dans le document [Configuration des paramètres DNS.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+* Vous devez avoir déjà configuré les paramètres DNS pour votre nom de domaine personnalisé, comme décrit dans le document [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 ## Comment vérifier l’état de l’enregistrement DNS {#how-to}
 
@@ -37,7 +37,7 @@ Vous devez répondre à ces exigences avant de vérifier l’état d’enregistr
 
 1. Cliquez sur le bouton **Statut** pour le nom de domaine.
 
-Cloud Manager effectue une recherche DNS pour votre nom de domaine et l’affiche [état actuel.](#statuses)
+Cloud Manager effectue une recherche DNS pour votre nom de domaine et l’affiche [état actuel](#statuses).
 
 Cloud Manager déclenche automatiquement une recherche DNS lorsque votre nom de domaine personnalisé est vérifié et déployé correctement pour la première fois. Pour les tentatives suivantes, vous devez sélectionner vous-même l’icône **Résoudre à nouveau** en face du statut.
 

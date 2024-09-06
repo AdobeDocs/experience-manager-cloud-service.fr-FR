@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ Lors de la création d’un référentiel de code dans Cloud Manager, un dossie
 
 >[!NOTE]
 >
->Si votre référentiel a été créé avant la création automatique des dossiers `it.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Si votre référentiel a été créé avant la création automatique des dossiers `it.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’utiliser comme base pour vos propres tests. Ensuite :
 
-1. [Développez vos cas de test.](#writing-functional-tests)
-1. [Exécutez les tests localement.](#local-test-execution)
+1. [Développez vos cas de test](#writing-functional-tests).
+1. [Exécutez les tests localement](#local-test-execution).
 1. Validez votre code dans le référentiel Cloud Manager et exécutez un pipeline Cloud Manager.
 
 ## Écriture de tests fonctionnels personnalisés {#writing-functional-tests}

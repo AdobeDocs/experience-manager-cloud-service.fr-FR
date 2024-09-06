@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
       * **Tests fonctionnels du produit** – Exécutez des [tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) dans l’environnement de développement.
       * **Tests fonctionnels personnalisés** – Exécutez des [tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) dans l’environnement de développement.
       * **Tests de l’interface utilisateur personnalisée** – Exécutez des [tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/ui-testing.md) pour les applications personnalisées.
-      * **Audit De L’Expérience** - Exécuter [Audit De L’Expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Audit De L’Expérience** - Exécuter [Audit De L’Expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
    * **Branche Git** – Cette option définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Elle trouve les branches correspondantes que vous pouvez sélectionner.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
-   * **Pipeline** - Pour les pipelines front-end hors production, vous avez la possibilité d’activer le **[contrôle de l’expérience.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - Pour les pipelines front-end hors production, vous avez la possibilité d’activer le **[contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
 
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Si vous avez activé le contrôle de l’expérience, appuyez ou cliquez sur **Continuer** pour accéder à l’onglet **Audit de l’expérience** où vous pouvez définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
 
-   * Si vous avez activé le **contrôle de l’expérience**, consultez le document [ contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) pour plus d’informations sur la configuration.
+   * Si vous avez activé le **contrôle de l’expérience**, consultez le document [ contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md) pour plus d’informations sur la configuration.
    * Si ce n’est pas le cas, ignorez cette étape.
 
 1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer le pipeline.

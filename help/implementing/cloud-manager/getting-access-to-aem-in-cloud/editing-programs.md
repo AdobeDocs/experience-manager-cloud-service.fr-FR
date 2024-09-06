@@ -1,23 +1,23 @@
 ---
-title: Modification de programmes
+title: Modifier des programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 30%
+source-wordcount: '429'
+ht-degree: 29%
 
 ---
 
 
-# Modification de programmes {#editing-programs}
+# Modifier les programmes {#editing-programs}
 
-Pour gérer et modifier des programmes, démarrez à la console [**Mes programmes**.](/help/implementing/cloud-manager/navigation.md) La page **Mes programmes** donne un aperçu de tous les programmes auxquels vous avez accès. Lors de la sélection d’un programme individuel, la page **Aperçu du programme** fournit les détails du programme en un coup d’oeil.
+Pour gérer et modifier des programmes, démarrez à la [**console Mes programmes**](/help/implementing/cloud-manager/navigation.md). La page **Mes programmes** donne un aperçu de tous les programmes auxquels vous avez accès. Lors de la sélection d’un programme individuel, la page **Aperçu du programme** fournit les détails du programme en un coup d’oeil.
 
-À partir de la **présentation du programme**, les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) et les [programmes Sandbox créés dans votre entreprise.](creating-sandbox-programs.md) En modifiant un programme, vous pouvez :
+À partir de la **présentation du programme**, les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) et les [programmes Sandbox créés dans votre organisation](creating-sandbox-programs.md). En éditant un programme, vous pouvez :
 
 * Ajoutez la solution Sites à un programme existant avec Assets et inversement.
 * Supprimer Sites ou Assets d’un programme existant contenant à la fois Sites et Assets.
@@ -26,9 +26,13 @@ Pour gérer et modifier des programmes, démarrez à la console [**Mes programme
 
 ## Autorisations {#permissions}
 
-Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifier des programmes ou supprimer des programmes Sandbox, ainsi que pour accéder au tableau de bord de la licence.
+Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifier des programmes ou supprimer des programmes Sandbox et accéder au tableau de bord de licence.
 
 ## Modifier un programme {#editing}
+
+Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
+
+**Pour modifier un programme :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -43,18 +47,12 @@ Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifi
    ![Onglet Général](assets/edit-program-prod1.png)
 
 1. Les options disponibles pour la modification du programme sont les mêmes que lors de la création du programme.
-   * Pour plus d’informations sur les options individuelles, reportez-vous aux documents [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) et [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) .
+   * Pour plus d’informations sur les options individuelles, voir [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) et [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) .
    * [D’autres options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) peuvent être disponibles pour votre programme de production en fonction des droits de votre organisation.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
-Les modifications apportées au programme sont enregistrées.
-
->[!NOTE]
->
->Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
-
-## Suppression de programmes Sandbox {#delete-sandbox-program}
+## Suppression d’un programme d’environnement de test {#delete-sandbox-program}
 
 La suppression d’un programme d’environnement de test supprime tous les environnements et pipelines qui y sont associés.
 
@@ -62,7 +60,7 @@ La suppression d’un programme d’environnement de test supprime tous les envi
 >
 >Les utilisateurs avec des rôles de **Propriétaire de l’entreprise** ou **Responsable du déploiement** peuvent également supprimer leurs environnements de production et d’évaluation plutôt que l’ensemble du programme Sandbox.
 
-Pour supprimer un programme sandbox, procédez comme suit.
+**Pour supprimer un programme Sandbox :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 

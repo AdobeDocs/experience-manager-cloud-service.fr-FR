@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 91%
@@ -27,7 +27,7 @@ Il existe trois grandes catégories de tests pris en charge par le pipeline Clou
 
    * Les tests fonctionnels font partie de la phase de test d’un [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et font éventuellement partie de la phase de test d’un [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * Le test de contrôle de l’expérience est activé dans tous les pipelines de production Cloud Manager et ne peut pas être ignoré.
 

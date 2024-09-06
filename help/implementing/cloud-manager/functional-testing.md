@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Les tests sont conditionnés dans une image Docker, conçue pour être aussi vol
 >
 >Les tests d’interface utilisateur personnalisés sont exécutés dans les pipelines de production et de non-production (opt-in), qui sont utilisés par vos déploiements de modifications d’application AEM et AEM les mises à jour push de produit. Ils constituent donc une contribution essentielle au bon fonctionnement de votre application et à l’augmentation de la sécurité des versions. Les tests de l’interface utilisateur client sont également exécutés dans des pipelines internes de validation de version préliminaire pour chaque client, ce qui permet de fournir des commentaires anticipés.
 >
->Les conteneurs non Selenium doivent exécuter des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la [section de test de l’interface utilisateur.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Les conteneurs non Selenium doivent exécuter des tests à l’aide d’un proxy HTTP basé sur les variables d’environnement dans la [section de test de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Afin de préserver l’efficacité des exécutions de pipeline, nous vous recommandons de vous concentrer sur les fonctionnalités clés et les principaux flux d’interaction utilisateur. Il est recommandé d’exécuter les suites de tests d’interface utilisateur complètes qui ne correspondent pas à ce point de contrôle qualité dans le cadre des pipelines de validation client généraux au cours du flux de développement du client.
 
@@ -111,7 +111,7 @@ Le point de contrôle de la qualité de l’expérience effectue des audits [Goo
 
 Ce point de contrôle qualité est fourni par AEM prêt à l’emploi, mais ne bloque pas les pipelines de déploiement. Par défaut, un audit de la page racine (`/`) de l’instance de publication est effectué. Vous pouvez contribuer en configurant jusqu’à 25 chemins personnalisés pris en compte pour les audits.
 
-Pour plus d’informations, voir [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) .
+Pour plus d’informations, voir [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md) .
 
 ### Validation des clients
 

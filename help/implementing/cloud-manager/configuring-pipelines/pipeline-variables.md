@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ Si un pipeline s’exécute, la gestion des variables est bloquée.
 
 1. La fenêtre **Configuration des variables** s’ouvre. Saisissez les détails de la variable dans la première ligne du tableau et appuyez ou cliquez sur **Ajouter**.
 
-   * **Nom de configuration** est un identifiant unique de votre variable, qui doit gérer les [conventions d&#39;appellation des variables de pipeline.](#naming-conventions)
+   * **Nom de configuration** est un identifiant unique de votre variable, qui doit gérer les [conventions d’appellation des variables de pipeline](#naming-conventions).
    * **Value** est la valeur contenue par la variable.
    * **Étape appliquée** est l’étape du pipeline à laquelle la variable s’applique. Elle est requise.
       * **Build**

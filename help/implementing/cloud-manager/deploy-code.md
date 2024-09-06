@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -64,7 +64,7 @@ La phase de **Déploiement dans l’environnement** comprend ces étapes.
 * **Analyse du code** - Cette étape évalue la qualité du code de votre application.
    * Voir [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test.
 * **Images de build** - Ce processus est responsable de la transformation du contenu et des packages du Dispatcher générés par l’étape de build en images Docker et en configuration Kubernetes.
-* **Déploiement sur l’environnement d’évaluation** - L’image est déployée dans l’environnement d’évaluation en vue de la [phase de test d’évaluation.](#stage-testing)
+* **Déployer sur l’environnement d’évaluation** : l’image est déployée dans l’environnement d’évaluation en vue de l’ [ étape de test d’évaluation](#stage-testing).
 
 ![Déploiement dans l’environnement d’évaluation](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ La phase de **test d’évaluation** comprend ces étapes.
    * Les pages configurées sont envoyées au service et évaluées.
    * Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.
    * Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.
-   * Pour plus d’informations, voir [Compréhension des résultats de l’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+   * Pour plus d’informations, voir [Compréhension des résultats de l’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
 
@@ -154,7 +154,7 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 
 ### Réexécution de l’API {#reexecute-API}
 
-En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
+En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) peut servir à déclencher de nouvelles exécutions et à identifier les exécutions déclenchées comme réexécutions.
 
 #### Déclencher une réexécution {#reexecute-deployment-api}
 

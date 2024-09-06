@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 37%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ Les restrictions suivantes s’appliquent.
 * La personne utilisatrice doit être connectée en tant que **Gestionnaire de déploiement** pour configurer ou exécuter des pipelines.
 * À tout moment, il ne peut y avoir qu’un seul pipeline full stack par environnement.
 
-En outre, assurez-vous de savoir comment se comporte le pipeline full stack si vous choisissez d’introduire un [pipeline de configuration de niveau web.](#web-tier-config-pipelines)
+En outre, sachez comment se comporte le pipeline de pile complète si vous choisissez d’introduire un [pipeline de configuration de niveau web](#web-tier-config-pipelines).
 
 * Le pipeline de pile complète pour un environnement ignore la configuration Dispatcher si le pipeline de configuration de niveau web correspondant existe.
 * Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut configurer le pipeline full stack pour inclure ou ignorer la configuration de Dispatcher.

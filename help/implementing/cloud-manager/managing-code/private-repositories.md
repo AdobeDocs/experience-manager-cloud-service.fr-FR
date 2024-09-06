@@ -4,7 +4,7 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 77%
@@ -23,7 +23,7 @@ En configurant Cloud Manager pour utiliser vos propres référentiels GitHub pr
 
 La configuration se compose de deux étapes principales :
 
-1. [Ajout d’un référentiel](#add-repo)
+1. [Ajouter un référentiel](#add-repo)
 1. [Validation de la propriété du référentiel privé](#validate-ownership)
 
 ### Ajouter un référentiel {#add-repo}
@@ -44,7 +44,7 @@ La configuration se compose de deux étapes principales :
 
 >[!TIP]
 >
->Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, voir [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, consultez le document [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
 ### Valider la propriété du référentiel privé {#validate-ownership}
 
@@ -110,7 +110,7 @@ Lorsque la demande d’extraction est fermée ou fusionnée, le pipeline de qual
 
 ## Associer des référentiels privés à des pipelines {#pipelines}
 
-Les référentiels privés validés peuvent être associés à des [pipelines full-stack et front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Les référentiels privés validés peuvent être associés aux [pipelines full-stack et front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >

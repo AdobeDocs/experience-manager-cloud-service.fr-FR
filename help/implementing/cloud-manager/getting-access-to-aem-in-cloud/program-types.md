@@ -5,10 +5,10 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager repose sur une hiérarchie d’entités. Les détails ne sont pas 
 ![Hiérarchie de Cloud Manager](assets/program-types1.png)
 
 * **CLIENT** - Il s’agit du haut de la hiérarchie. Chaque client est configuré avec un identifiant client.
-* **PROGRAMMES** - Chaque client possède un ou plusieurs programmes, [qui reflètent souvent les solutions sous licence du client.](introduction-production-programs.md)
+* **PROGRAMS** - Chaque client possède un ou plusieurs programmes, [qui reflètent souvent les solutions sous licence du client](introduction-production-programs.md).
 * **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, tels que la production pour le contenu en direct, un pour l’évaluation et un à des fins de développement.
    * Chaque programme ne peut avoir qu’un seul environnement de production, mais plusieurs environnements hors production.
 * **RÉFÉRENTIEL** - Les programmes disposent de référentiels Git dans lesquels l’application et le code front-end sont conservés pour les environnements.
@@ -54,13 +54,13 @@ Le workflow est donc un workflow Git standard.
 
 La seule différence réside dans le fait que le référentiel Git distant fait partie de Cloud Manager, qui est transparent pour le développeur.
 
-## Types de programme {#program-types}
+## Types de programmes {#program-types}
 
 Un utilisateur peut créer un programme **production** ou un programme **sandbox**.
 
 * Un **programme de production** est créé pour activer le trafic en direct pour votre site.
    * Consultez [Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus d’informations.
-* Un **programme Sandbox** est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation.
-   * Un environnement Sandbox n’est pas destiné à gérer un trafic en direct et comportera des restrictions absentes d’un programme de production.
-   * Il inclut Sites et Assets et est pourvu automatiquement d’une branche Git comprenant un exemple de code, un environnement de développement et un pipeline hors production.
-   * Consultez [Présentation des programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.
+* Un **programme sandbox** est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation.
+   * Un environnement de test n’est pas destiné à transporter du trafic en direct et comporte des restrictions qu’un programme de production ne prévoit pas.
+   * Elle comprend des sites, Assets et des Edge Delivery Services. Elle est fournie avec une branche git automatiquement renseignée avec un exemple de code, un environnement de développement et un pipeline hors production.
+   * Consultez [Présentation des programmes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) pour plus d’informations.

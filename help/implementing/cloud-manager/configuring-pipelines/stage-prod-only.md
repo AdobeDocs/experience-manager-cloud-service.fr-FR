@@ -1,10 +1,10 @@
 ---
 title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment séparer les déploiements d’évaluation et de production �
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Vue d’ensemble {#overview}
 
@@ -54,9 +54,9 @@ Notez également les problèmes connus suivants avant de commencer à tester cet
 
 ## Création de pipeline {#pipeline-creation}
 
-Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont créés de la même manière que les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et [pipelines hors production couplés standard.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Consultez ces documents pour plus de détails.
+Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont créés de la même manière que les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) couplés standard. Consultez ces documents pour plus de détails.
 
-1. Dans la fenêtre **Pipelines**, appuyez ou cliquez sur **Ajouter un pipeline**.
+1. Dans la fenêtre **Pipelines**, cliquez sur **Ajouter un pipeline**.
 
    * Sélectionnez **Ajouter un pipeline hors production** pour créer un pipeline dédié à l’évaluation uniquement.
    * Sélectionnez **Ajouter un pipeline de production uniquement** pour créer un pipeline dédié uniquement à la production.
@@ -74,7 +74,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 ### Pipelines dédiés uniquement à l’évaluation {#stage-only}
 
 1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline hors production**, la boîte de dialogue **Ajouter un pipeline hors production** s’ouvre.
-1. Pour créer un pipeline dédié uniquement à l’évaluation, sélectionnez l’environnement d’évaluation dans le champ **Environnements de déploiement éligibles** pour votre pipeline. Renseignez les champs restants et appuyez ou cliquez sur **Continuer**.
+1. Pour créer un pipeline dédié uniquement à l’évaluation, sélectionnez l’environnement d’évaluation dans le champ **Environnements de déploiement éligibles** pour votre pipeline. Renseignez les champs restants et cliquez sur **Continuer**.
 
    ![Création d’un pipeline dédié uniquement à l’évaluation](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 ### Pipelines dédiés uniquement à la production {#prod-only}
 
-1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
-1. Saisissez un **Nom de pipeline**. Les options et les fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création d’un pipeline couplé standard. Appuyez ou cliquez sur **Enregistrer** pour enregistrer le pipeline.
+1. Lorsque vous sélectionnez l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
+1. Saisissez un **Nom de pipeline**. Les options et les fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création d’un pipeline couplé standard. Cliquez sur **Enregistrer** pour enregistrer le pipeline.
 
 ## Exécuter des pipelines dédiés à la production uniquement et à l’évaluation uniquement {#running}
 
-Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont exécutés de la même manière que [tous les autres pipelines.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Consultez cette documentation pour plus de détails.
+Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont exécutés de la même manière que [tous les autres pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Consultez cette documentation pour plus de détails.
 
 En outre, une exécution de pipeline dédié uniquement à la production peut être déclenchée directement à partir des détails d’exécution d’un pipeline dédié uniquement à l’évaluation.
 
@@ -97,7 +97,7 @@ Un pipeline dédié uniquement à l’évaluation s’exécute presque de la mê
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](assets/stage-only-pipeline-run.png)
 
-Le bouton **Promouvoir la version** n’apparaît que si vous vous trouvez dans la dernière exécution réussie d’un pipeline dédié uniquement à l’évaluation. Lorsque vous appuyez ou que vous cliquez dessus, vous devez confirmer l’exécution du pipeline dédié uniquement à la production ou créer un pipeline dédié uniquement à la production si celui-ci n’existe pas encore.
+Le bouton **Promouvoir la version** n’apparaît que si vous vous trouvez dans la dernière exécution réussie d’un pipeline dédié uniquement à l’évaluation. Lorsque vous cliquez dessus, il vous demande de confirmer l’exécution du pipeline prod uniquement ou de créer un pipeline prod uniquement s’il n’existe pas déjà.
 
 ### Pipelines dédiés uniquement à la production {#prod-only-run}
 

@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
@@ -118,7 +118,7 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 ### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d’environnement standard peuvent être utilisées avec les secrets [du dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) ne peuvent pas l’être.
 
 Cependant, les variables d&#39;environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 

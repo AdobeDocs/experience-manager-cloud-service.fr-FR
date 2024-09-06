@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ La console Mes programmes fournit une vue d’ensemble de tous les programmes au
 1. Des [Barres d’outils](#toolbars-my-programs-toolbars) pour la sélection de l’organisation, les alertes et les paramètres de compte.
 1. Des onglets qui permettent de changer l’affichage actuel de vos programmes.
    * Vue **Accueil** (par défaut) qui sélectionne la vue **Mes programmes** avec une vue d’ensemble de tous les programmes.
-   * **Licence** accédant au [tableau de bord de la licence.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Notez que les onglets sont par défaut fermés et peuvent être affichés à l’aide du menu Hamburger dans l’[en-tête Cloud Manager](#cloud-manager-header).
+   * **Licence** qui accède au [tableau de bord de licence](/help/implementing/cloud-manager/license-dashboard.md).
+   * Notez que les onglets sont fermés par défaut et peuvent être affichés à l’aide du menu hamburger dans l’[en-tête Cloud Manager](#cloud-manager-header).
 1. Des [Statistiques et un appel à l’action](#statistics) pour une vue d’ensemble de votre activité récente.
 1. [**Section Mes programmes**](#my-programs-section) avec une vue d’ensemble de tous vos programmes.
 1. Des [Liens rapides](#quick-links-section) pour accéder facilement aux ressources connexes.
@@ -63,7 +63,7 @@ La première est l’en-tête de Cloud Manager, qui est présent en permanence 
 1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Fonudation Internal). Appuyez ou cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
 1. Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
 1. L’icône d’aide permet d’accéder rapidement aux ressources d’apprentissage et d’assistance.
-1. L’icône de notification comprend un badge qui indique le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement affectées.
+1. L’icône de notifications comporte un badge indiquant le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement attribuées.
 1. Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre utilisatrice pour accéder à vos paramètres d’utilisateur ou d’utilisatrice. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 #### Barre d’outils des programmes {#program-toolbar}
@@ -183,7 +183,7 @@ La vue d’ensemble du programme vous donne accès à toutes les informations d�
 
 ### Barres d’outils {#program-overview-toolbar}
 
-Les barres d’outils de la vue d’ensemble du programme sont très similaires à celles de la [console Mes programmes.](#my-programs-toolbars) Seules les différences sont indiquées ici.
+Les barres d’outils de la présentation du programme sont similaires à celles de la [console Mes programmes](#my-programs-toolbars). Seules les différences sont indiquées ici.
 
 #### En-tête de Cloud Manager {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Utilisez le menu Hamburger dans l’[en-tête de Cloud Manager](#cloud-manager-
 
 ### Appel à l’action {#cta}
 
-La section Appel à l’action vous fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez le cas échéant voir les prochaines étapes proposées ainsi qu’un rappel de la date de mise en service, [définie lors de la création du programme.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+La section Appel à l’action vous fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les étapes suivantes proposées ainsi qu&#39;un rappel d&#39;une date de mise en service, [définie lors de la création du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Appel à l’action pour un nouveau programme](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Consultez le document [Gestion des pipelines](/help/implementing/cloud-manager/c
 
 ### Carte de performance {#performance}
 
-La carte **Performance** donne un aperçu du **[tableau de bord CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La carte **Performance** donne un aperçu du **[tableau de bord CDN](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Carte de performance](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

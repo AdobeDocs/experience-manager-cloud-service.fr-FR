@@ -4,10 +4,10 @@ description: Découvrez comment vous pouvez utiliser des sous-modules Git pour f
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Vous obtenez un fichier `.gitmodules` similaire au fichier suivant.
     branch = main
 ```
 
-Pour plus d’informations sur les sous-modules Git, consultez le [Manuel de référence Git](https://git-scm.com/book/fr/v2/Git-Tools-Submodules).
+Vous trouverez plus d’informations sur les sous-modules Git dans le [Manuel de référence Git](https://git-scm.com/book/fr/v2/Git-Tools-Submodules).
 
 ### Restrictions et recommandations {#limitations-recommendations}
 

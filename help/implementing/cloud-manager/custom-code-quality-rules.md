@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -96,7 +96,7 @@ public class DoThis implements Runnable {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu généré par l’utilisateur) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format peut être contrôlée en externe, mais elle n’est autorisée que par les sources approuvées.
+L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu généré par l’utilisateur) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format peut être contrôlée en externe, mais elle n’est autorisée que si elle provient de sources approuvées.
 
 #### Code non conforme {#non-compliant-code-1}
 
@@ -645,7 +645,7 @@ Pour plus d’informations sur la personnalisation des définitions d’index, c
 * **Gravité** : bloqueur
 * **Depuis** : 2021.8.0
 
-Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si ce n’est pas le cas, le système risque d’être instable. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Les index Oak de type `lucene` doivent toujours être indexés de manière asynchrone. Si ce n’est pas le cas, le système risque d’être instable. Vous trouverez plus d’informations sur la structure des index Lucene dans la [documentation Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Code non conforme {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ L’outil de migration dans le [référentiel GitHub de ressources d’Experienc
 
 Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page](/help/implementing/developing/components/templates.md).
 
-La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
+La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### L’utilisation des composants de base hérités n’est pas encouragée. {#oakpal-usage-legacy}
 
@@ -908,7 +908,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 
 Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés depuis plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
-Il est possible de faciliter cette conversion grâce aux [outils de modernisation d’Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
+Cette conversion peut être facilitée par les [outils de modernisation Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Utilisez uniquement les noms et l’ordre des modes d’exécution pris en charge {#oakpal-supported-runmodes}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service interdit le déploiement de définitions d’index de recherch
 
 >[!WARNING]
 >
->Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Vous êtes invité à y remédier dès que possible, car cela provoquera l’échec des pipelines à partir de la version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La définition d’index en texte intégral personnalisée de type damAssetLucene doit comporter correctement le préfixe « damAssetLucene ». {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service interdit que les définitions d’index en texte intégral per
 
 >[!WARNING]
 >
->Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Vous êtes invité à y remédier dès que possible, car cela provoquera l’échec des pipelines à partir de la version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Les nœuds de définition d’index ne doivent pas contenir de propriétés portant le même nom. {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service interdit que les définitions d’index de recherche personnal
 
 >[!WARNING]
 >
->Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Vous êtes invité à y remédier dès que possible, car cela provoquera l’échec des pipelines à partir de la version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La personnalisation de certaines définitions d’index intégrées est interdite. {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service interdit toute modification non autorisée des index intégré
 
 >[!WARNING]
 >
->Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Vous êtes invité à y remédier dès que possible, car cela provoquera l’échec des pipelines à partir de la version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configuration des générateurs de jetons dans les analyseurs doit être créée avec le nom « tokenizer ». {#oakpal-tokenizer}
 
@@ -1266,13 +1266,13 @@ AEM Cloud Service interdit la création de jetons dont les noms sont incorrects 
 
 >[!WARNING]
 >
->Nous vous conseillons vivement de prendre en compte ce point dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Vous êtes invité à y remédier dès que possible, car cela provoquera l’échec des pipelines à partir de la version [Cloud Manager August 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configuration des définitions d’indexation ne doit pas contenir d’espaces {#oakpal-indexing-definitions-spaces}
 
-* **Clé** : PathSpacesCheck
+* **Clé** : PathSpacesCheck
 * **Type** : amélioration
 * **Gravité** : mineure
 * **Depuis** : version 2024.7.0
 
-AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés avec des espaces.
+AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés avec des espaces.

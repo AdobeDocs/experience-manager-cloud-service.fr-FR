@@ -4,7 +4,7 @@ description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Clou
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 90%
@@ -84,7 +84,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
   >[!NOTE]
   >L’audit de contenu a depuis été renommé audit de l’expérience.
 
-  Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+  Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 * Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec Smart Content Services.
 

@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 96%
@@ -20,7 +20,7 @@ Découvrez comment les projets AEM sont créés avec Maven et les normes que vou
 
 Pour pouvoir créer et déployer avec Cloud Manager, les projets AEM doivent respecter les instructions suivantes :
 
-* Les projets doivent être créés à l’aide d’[Apache Maven](https://maven.apache.org).
+* Les projets doivent être créés à l’aide de [Apache Maven](https://maven.apache.org).
 * Un fichier `pom.xml` doit se trouver à la racine du référentiel Git. Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules, et ainsi de suite) que nécessaire.
 * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
    * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
@@ -339,7 +339,7 @@ Si vous le souhaitez, le comportement de réutilisation peut être désactivé p
 1. La variable `CM_DISABLE_BUILD_REUSE` est supprimée.
 1. Le pipeline est exécuté à nouveau sans modifier le code. Puisque des artefacts stockés sont associés à `f6ac5e6`, ces artefacts sont réutilisés.
 
-### Restrictions {#caveats}
+### Avertissements {#caveats}
 
 * Les artefacts de build ne sont pas réutilisés dans différents programmes même si le hachage de validation est identique.
 * Les artefacts de build sont réutilisés dans le même programme même si la branche et/ou le pipeline sont différents.

@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -36,11 +36,11 @@ Les autorisations personnalisées permettent aux utilisateurs de créer des prof
 
 Pour créer et utiliser vos propres autorisations personnalisées, trois étapes sont nécessaires :
 
-1. [Créez un profil de produit.](#create)
-1. [Attribuez des autorisations personnalisées au profil de produit.](#assign-permissions)
-1. [Affectez des utilisateurs au profil de produit.](#assign-users)
+1. [Créez un profil de produit](#create).
+1. [Attribuez des autorisations personnalisées au profil de produit](#assign-permissions).
+1. [ Affectez des utilisateurs au profil de produit ](#assign-users).
 
-Cette section décrit ces étapes. Il peut s’avérer utile d’afficher les sections [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lorsque vous créez vos propres autorisations personnalisées.
+Cette section décrit ces étapes en détails. Il peut s’avérer utile d’afficher les sections [Termes](#terms) et [Autorisations configurables](#configurable-permissions) lorsque vous créez vos propres autorisations personnalisées.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Maintenant que vous disposez d’un nouveau profil de produit, vous pouvez lui a
    * Les éléments d’autorisation disponibles pour l’affectation de l’autorisation se trouvent dans la colonne du milieu intitulée **Autorisations disponibles**.
    * Les éléments d’autorisation attribués se trouvent dans la colonne de droite intitulée **Éléments d’autorisation inclus**.
 
-   ![Modification des éléments d’autorisation.](assets/edit-permission-items.png)
+   ![Modification des éléments d’autorisation](assets/edit-permission-items.png)
 
 1. Sélectionnez l’icône plus (`+`) en regard de l’élément d’autorisation afin que vous puissiez l’ajouter à la colonne **Éléments d’autorisation inclus**.
 
@@ -104,7 +104,7 @@ Votre nouveau profil de produit est maintenant enregistré avec ses autorisation
 
 Vous pouvez désormais affecter des personnes au nouveau profil de produit que vous avez créé avec des autorisations personnalisées.
 
-1. Dans l&#39;Admin Console, sélectionnez le nom du [nouveau profil de produit auquel vous avez attribué des autorisations personnalisées.](#assign-permissions)
+1. Dans l’Admin Console, sélectionnez le nom du [nouveau profil de produit auquel vous avez attribué des autorisations personnalisées](#assign-permissions).
 
 1. Dans la fenêtre qui s’ouvre, sélectionnez l’onglet **Utilisateurs et utilisatrices**.
 
@@ -164,17 +164,17 @@ Les termes suivants sont utilisés pour créer et gérer des autorisations perso
 
 | Terme | Description |
 |---|---|
-| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour régir différentes fonctionnalités de Cloud Manager. Pour plus d&#39;informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise** et **Responsable de déploiement** pour régir différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Autorisations personnalisées | Les fonctionnalités de Cloud Manager permettent aux utilisateurs de créer des profils d’autorisation pour définir des rôles pour régir les fonctionnalités prises en charge par Cloud Manager. |
-| Profil de produits | Créé dans l’Admin Console pour gérer les autorisations configurables applicables aux utilisateurs faisant partie du profil d’autorisation. |
+| Profil de produits | Créé dans Admin Console pour gérer les autorisations configurables qui s’appliqueront aux utilisateurs et utilisatrices faisant partie du profil d’autorisation. |
 | Autorisation configurable | Autorisations de Cloud Manager qui peuvent être configurées dans le profil d’autorisation. |
 | Élément d’autorisation | Un programme, un environnement ou une ressource de pipeline sur lequel une autorisation peut être appliquée |
 
-Les éléments d’autorisation se rapportent à la portée dans laquelle l’autorisation est appliquée. En règle générale, il s’agit de l’un des suivants.
+Les éléments d’autorisation se rapportent à la portée dans laquelle l’autorisation est appliquée. En règle générale, il s’agit de l’un des éléments suivants.
 
 | Type d’élément d’autorisation | Exemple | Description |
 |---|---|---|
-| Organisation | Organisation:entrepriseA | Toutes les ressources applicables d’une organisation. Une ressource peut être un programme, un environnement ou un pipeline. Si l’utilisateur ajoute une organisation pour n’importe quelle autorisation, toutes les nouvelles ressources de cette organisation disposent également de cette autorisation. |
+| Organisation | Organisation:entrepriseA | Toutes les ressources applicables d’une organisation. Une ressource peut être un programme, un environnement ou un pipeline. Si l’utilisateur ou l’utilisatrice ajoute une organisation pour n’importe quelle autorisation, toutes les nouvelles ressources de cette organisation auront également cette autorisation. |
 | Programme | Programme A | Toutes les ressources applicables d’un programme |
 | Environnement | Programme A : environnement | Applicable dans un environnement spécifique |
 | Pipeline | Programme A : pipeline | Applicable sur un pipeline spécifique |
@@ -196,7 +196,7 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation d’auto
 * Responsable de déploiement
 * Développeur
 
-Pour plus d&#39;informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
+Pour plus d’informations sur les rôles prédéfinis, voir [Équipe AEM as a Cloud Service et Profils de produit](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Qu’advient-il des profils d’autorisation prédéfinis lors de l’introduction de profils personnalisés ?
 
@@ -212,7 +212,7 @@ Ne supprimez pas les profils d’autorisation prédéfinis de l’Admin Console.
 
 ### Puis-je ajouter des utilisateurs et utilisatrices à plusieurs profils d’autorisation ?
 
-Oui, un utilisateur ou une utilisatrice peut faire partie de plusieurs profils, y compris des profils d’autorisation prédéfinis et personnalisés. Lorsqu’un utilisateur est affecté à plusieurs profils, les autorisations combinées de tous les profils d’autorisation attribués sont disponibles pour cet utilisateur.
+Oui, un utilisateur ou une utilisatrice peut faire partie de plusieurs profils, y compris des profils d’autorisation prédéfinis et personnalisés. Lorsqu’une personne est affectée à plusieurs profils, les autorisations combinées de tous les profils d’autorisation affectés lui seront disponibles.
 
 ### Que se passe-t-il si une personne est autorisée à modifier un environnement/pipeline mais n’a pas accès à un programme contenant l’environnement/le pipeline ?
 

@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domain
 
 Vous devez respecter ces exigences avant de vérifier l’état de votre nom de domaine dans Cloud Manager.
 
-* Vous devez d’abord ajouter un enregistrement TXT pour votre domaine personnalisé, comme décrit dans le document [Ajout d’un enregistrement TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* Vous devez d’abord ajouter un enregistrement TXT pour votre domaine personnalisé, comme décrit dans le document [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## Comment vérifier l’état de votre nom de domaine personnalisé {#how-to}
 
@@ -41,7 +41,7 @@ Le détail de l’état s’affiche. Votre domaine personnalisé est prêt à ê
 
 >[!NOTE]
 >
->Cloud Manager déclenche automatiquement la vérification lorsque vous sélectionnez **Créer** à l’étape de vérification de l’assistant **Ajouter un domaine personnalisé** lors de l’ [ajout d’un nouveau nom de domaine personnalisé à Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Pour les vérifications suivantes, vous devez sélectionner activement l’icône de vérification à nouveau en regard de l’état.
+>Cloud Manager déclenche automatiquement la vérification lorsque vous sélectionnez **Créer** à l’étape de vérification de l’assistant **Ajouter un domaine personnalisé** lors de l’ [ajout d’un nouveau nom de domaine personnalisé à Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Pour les vérifications suivantes, vous devez prendre l’initiative et sélectionner l’icône Vérifier à nouveau en face du statut.
 
 ## Compréhension des états de vérification {#statuses}
 

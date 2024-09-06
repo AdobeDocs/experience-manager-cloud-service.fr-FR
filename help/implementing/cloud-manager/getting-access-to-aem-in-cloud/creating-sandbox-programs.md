@@ -5,66 +5,69 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 74%
+source-wordcount: '436'
+ht-degree: 15%
 
 ---
 
 # Création de programmes Sandbox {#create-sandbox-program}
 
-Un programme Sandbox est généralement créé à des fins de formation, pour l’exécution de démonstrations, d’activation, de points de vente ou de documentation, et n’est pas destiné à transporter du trafic en direct.
+Un programme d’environnement de test est généralement créé à des fins de formation, d’exécution de démonstrations, d’activation, de points ciblés ou de documentation, et n’est pas destiné à transporter du trafic en direct. Voir [Présentation des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 
-Découvrez-en plus sur les types de programme dans le document [Présentation des programmes et des types de programme.](program-types.md)
+Pour en savoir plus sur les types de programme, consultez le document [Présentation des types de programme et de programme](program-types.md).
 
-## Création d’un programme Sandbox {#create}
+## Création d’un programme d’environnement de test {#create}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur **Ajouter un programme** près du coin supérieur droit de l’écran.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, près du coin supérieur droit, cliquez sur **Ajouter un programme**.
 
-   ![Page de destination de Cloud Manager](assets/log-in.png)
+   ![Page de destination de Cloud Manager.](assets/log-in.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer une sandbox** et indiquez un nom de programme.
+1. Dans l&#39;assistant *Créons votre programme*, dans le champ de texte **Nom du programme**, saisissez le nom souhaité pour le programme.
 
-   ![Création d’un type de programme](assets/create-sandbox.png)
+1. Sous **Objectif de programme**, sélectionnez **`Set up a sandbox`**.
 
-1. Vous pouvez éventuellement ajouter une image au programme en faisant glisser un fichier image et en le déposant sur la cible **Ajouter une image de programme** ou en cliquant dessus pour sélectionner une image dans l’explorateur de fichiers. Sélectionnez **Continuer**.
+   ![Création d’un type de programme.](assets/create-sandbox.png)
 
-   * L’image sert uniquement de vignette dans la fenêtre de vue d’ensemble du programme et permet d’identifier le programme.
+1. (Facultatif) Dans le coin inférieur droit de la boîte de dialogue de l’assistant, effectuez l’une des opérations suivantes :
 
-1. Dans la boîte de dialogue **Configuration de votre environnement de test** , sélectionnez les solutions que vous souhaitez activer dans votre programme d’environnement de test en cochant les options de la table **Solutions &amp; Add-ons** .
+   * Faites glisser et déposez un fichier image sur la cible **Ajouter une image de programme** .
+   * Cliquez sur **Ajouter une image de programme**, puis sélectionnez une image dans un navigateur de fichiers.
+   * Cliquez sur l’icône représentant une corbeille pour supprimer une image que vous avez ajoutée.
 
-   * Utilisez les chevrons en regard des noms des solutions pour afficher des modules complémentaires facultatifs supplémentaires pour les solutions.
+1. Cliquez sur **Continuer**.
 
-   * Les solutions **Sites** et **Assets** sont toujours incluses dans les programmes Sandbox et ne peuvent pas être désélectionnées.
+1. Dans la zone de liste **Solutions &amp; Add-ons**, sélectionnez une ou plusieurs solutions à inclure dans le programme.
+
+   * Cliquez sur le chevron à gauche du nom d’une solution pour afficher tous les modules complémentaires facultatifs disponibles que vous souhaitez inclure à une solution sélectionnée.
+   * Les solutions **Sites**, **Assets** et **Edge Deliver Services** sont toujours sélectionnées par défaut lorsque vous créez un programme Sandbox. Vous ne pouvez pas les désélectionner.
 
    ![Sélection de solutions et de modules complémentaires pour une sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Une fois que vous avez sélectionné les solutions et modules complémentaires pour votre programme Sandbox, cliquez sur **Créer**.
-
-Une nouvelle carte de programme Sandbox s’affiche sur la page de destination avec un indicateur de statut au fur et à mesure que le processus de configuration progresse.
+1. Cliquez sur **Créer**. Cloud Manager crée votre programme d’environnement de test et l’affiche sur la page d’entrée pour sélection.
 
 ![Création d’une sandbox à partir de la page d’aperçu](assets/sandbox-setup.png)
 
-## Accès au sandbox {#access}
+## Accès aux environnements de test {#access}
 
-Vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
+Une fois qu’un nouveau programme d’environnement de test est en cours de création, vous pouvez afficher le détail de votre configuration d’environnement de test et accéder à l’environnement en affichant la page d’aperçu du programme.
 
-1. Sur la page d’entrée Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme créé.
+1. Sur la page d’entrée Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme d’environnement de test créé.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 
-1. Une fois l’étape de création du projet terminée, vous pouvez accéder au lien **Accéder aux informations sur le référentiel** pour pouvoir utiliser votre référentiel git.
+1. Une fois l’étape de création du projet terminée, vous pouvez cliquer sur le lien **Accéder aux informations du référentiel** pour pouvoir utiliser votre référentiel git.
 
    ![Configuration du programme](assets/create-program4.png)
 
    >[!TIP]
    >
-   >Pour en savoir plus sur l’accès à votre référentiel git et sa gestion, consultez [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   >Pour en savoir plus sur l’accès à votre référentiel Git et sa gestion, voir [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Une fois l’environnement de développement créé, vous pouvez utiliser le lien **Accès à AEM** pour vous connecter à AEM.
+1. Une fois l’environnement de développement créé, vous pouvez cliquer sur **Accéder à AEM** et vous connecter à AEM.
 
    ![Lien Accès à AEM](assets/create-program5.png)
 
@@ -74,4 +77,4 @@ Vous pouvez afficher les détails de la configuration de votre sandbox et accéd
 
 >[!TIP]
 >
->Consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et sur la compréhension de la console **Mes programmes**.
+>Voir [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md) pour plus d’informations sur la navigation dans Cloud Manager et la compréhension de la console **Mes programmes**.
