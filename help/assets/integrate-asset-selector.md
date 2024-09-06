@@ -3,7 +3,7 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
@@ -29,9 +29,9 @@ Vous pouvez effectuer une authentification sans définir certaines des propriét
 
 Vous pouvez intégrer le sélecteur de ressources à diverses applications, telles que :
 
-* [Intégrer le sélecteur de ressources à une application  [!DNL Adobe] ](#integrate-asset-selector.md)
-* [Intégration du sélecteur de ressources à une application non Adobe](#integrate-asset-selector-non-adobe.md)
-* [Intégration pour Dynamic Media avec les fonctionnalités OpenAPI](#integrate-asset-selector-dynamic-media-open-api.md)
+* [Intégrer le sélecteur de ressources à une application  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Intégration du sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Intégration pour Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!MORELIKETHIS]
