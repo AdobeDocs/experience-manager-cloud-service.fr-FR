@@ -2,17 +2,17 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Exemples d’utilisation du sélecteur de ressources pour la personnalisation selon les besoins.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 57%
+source-wordcount: '252'
+ht-degree: 50%
 
 ---
 
-
 # Exemples d’utilisation des propriétés du sélecteur de ressources {#usage-examples}
 
-Vous pouvez définir les [propriétés](#asset-selector-properties.md) du sélecteur de ressources dans le fichier `index.html` pour personnaliser l’affichage du sélecteur de ressources dans votre application.
+Vous pouvez définir le sélecteur de ressources [properties](/help/assets/asset-selector-properties.md) dans le fichier **index.html** pour personnaliser l’affichage du sélecteur de ressources dans votre application.
 
 ## Exemple 1 : sélecteur de ressources en mode rail
 
@@ -55,4 +55,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
 >* [ API d’ouverture de média dynamique du sélecteur de ressources ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

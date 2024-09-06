@@ -2,7 +2,8 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ L’interface utilisateur micro front-end est mise à disposition dans votre exp
 
 Le sélecteur de ressources offre de nombreux avantages, notamment :
 
-* Facilité d&#39;intégration avec l&#39;une des applications [Adobe](#integrate-asset-selector-adobe-app.md) ou [non-Adobe](#integrate-asset-selector.md) utilisant la bibliothèque Vanilla JavaScript.
+* Facilité d&#39;intégration avec l&#39;une des applications [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) ou [non-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) utilisant la bibliothèque Vanilla JavaScript.
 * Facile à gérer, car les mises à jour du package Sélecteur de ressources sont automatiquement déployées vers le sélecteur de ressources disponible pour votre application. Aucune mise à jour n’est requise dans votre application pour télécharger les dernières modifications.
 * Facile à personnaliser, car il existe des propriétés qui contrôlent l’affichage du sélecteur de ressources dans votre application.
 * Recherche de texte intégral, filtres prêts à l’emploi et filtres personnalisés pour accéder rapidement aux ressources à utiliser dans l’expérience de création.
@@ -51,8 +52,8 @@ Utilisez les conditions préalables ci-dessus si vous avez besoin du workflow d�
 
 **Voir plus**
 
-* [Intégration du sélecteur de ressources à une application d’Adobe](#integrate-asset-selector-adobe-app.md)
-* [Intégration du sélecteur de ressources à une application non Adobe](#integrate-asset-selector-non-adobe-app.md)
+* [Intégration du sélecteur de ressources à une application d’Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Intégration du sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Intégration des API d’ouverture de Dynamic Media Sélecteur de ressources](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ Le sélecteur de ressources fournit également des options de filtres prêts à 
 
 * **[!UICONTROL Status] :** inclut l’état actuel de la ressource parmi `all`, `approved`, `rejected` ou `no status`.
 * **[!UICONTROL Type de fichier] :** comprend `folder`, `file`, `images`, `documents` ou `video`.
-* **[!UICONTROL État d’expiration] :** mentionne les ressources en fonction de leur durée d’expiration. Vous pouvez cocher la case `[!UICONTROL Expired]` pour filtrer les ressources expirées ou définir `[!UICONTROL Expiration Duration]` d’une ressource pour afficher les ressources en fonction de leur durée d’expiration. Lorsqu’une ressource arrive déjà à expiration ou est sur le point d’expirer, un badge semble représenter la même chose. De plus, vous pouvez contrôler si vous souhaitez autoriser l’utilisation (ou le glisser-déposer) d’une ressource expirée. Pour en savoir plus sur la [personnalisation des ressources expirées](#asset-selector-customization.md#customize-expired-assets). Par défaut, le badge **Expiration prochaine** s’affiche pour les ressources qui expirent dans les 30 prochains jours. Cependant, vous pouvez configurer l’expiration à l’aide de la propriété `expirationDate` .
+* **[!UICONTROL État d’expiration] :** mentionne les ressources en fonction de leur durée d’expiration. Vous pouvez cocher la case `[!UICONTROL Expired]` pour filtrer les ressources expirées ou définir `[!UICONTROL Expiration Duration]` d’une ressource pour afficher les ressources en fonction de leur durée d’expiration. Lorsqu’une ressource arrive déjà à expiration ou est sur le point d’expirer, un badge semble représenter la même chose. De plus, vous pouvez contrôler si vous souhaitez autoriser l’utilisation (ou le glisser-déposer) d’une ressource expirée. Pour en savoir plus sur la [personnalisation des ressources expirées](/help/assets/asset-selector-customization.md#customize-expired-assets). Par défaut, le badge **Expiration prochaine** s’affiche pour les ressources qui expirent dans les 30 prochains jours. Cependant, vous pouvez configurer l’expiration à l’aide de la propriété `expirationDate` .
 
   >[!TIP]
   >

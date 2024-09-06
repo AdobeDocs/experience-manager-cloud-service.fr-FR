@@ -2,13 +2,13 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Utilisez des fonctions pour personnaliser le sélecteur de ressources dans votre application.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 26%
 
 ---
-
 
 # Personnalisations du sélecteur de ressources {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ Le sélecteur de ressources vous permet de personnaliser divers composants en fo
 * [Personnalisation des ressources expirées](#customize-expired-assets)
 * [Filtre d’appel contextuel](#contextual-invocation-filter)
 
-Vous devez définir les conditions préalables dans le fichier `index.html` ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification pour accéder au référentiel [!DNL Experience Manager Assets]. Une fois que vous avez terminé, vous pouvez ajouter des fragments de code en fonction de vos besoins.
+Vous devez définir les conditions préalables dans le fichier **index.html** ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification pour accéder au référentiel [!DNL Experience Manager Assets]. Une fois que vous avez terminé, vous pouvez ajouter des fragments de code en fonction de vos besoins.
 
 ## Personnalisation du panneau de filtrage {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ Le tableau suivant décrit des propriétés importantes de l’objet Ressource s
 | *tiff:imageLength* | nombre | Hauteur d’une ressource. |
 | *computedMetadata* | `Record<string, any>` | Objet qui représente un compartiment pour tous les types de métadonnées de la ressource (référentiel, application ou métadonnées incorporées). |
 | *_links* | `Record<string, any>` | Liens hypermédias pour la ressource associée. Inclut des liens pour des ressources telles que des métadonnées et des rendus. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Tableau d’objets contenant des informations sur les rendus de la ressource. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | chaîne | URI du rendu. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | chaîne | Type MIME du rendu. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | nombre | Taille du rendu en octets. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | nombre | Largeur du rendu. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | nombre | Hauteur du rendu. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Tableau d’objets contenant des informations sur les rendus de la ressource. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | chaîne | URI du rendu. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | chaîne | Type MIME du rendu. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | nombre | Taille du rendu en octets. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | nombre | Largeur du rendu. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | nombre | Hauteur du rendu. |
 
 ### Gestion de la sélection de ressources à l’aide du schéma d’objet {#handling-selection}
 

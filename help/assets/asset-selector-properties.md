@@ -2,13 +2,13 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1277'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
-
 
 # Propriétés du sélecteur de ressources {#asset-selector-properties}
 
@@ -33,8 +33,8 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *dropOptions* | `{allowList?: Object}` | Non | | Configure les options de dépôt à l’aide de la « liste autorisée ». |
 | *colorScheme* | Chaîne | Non | | Configure le thème (`light` ou `dark`) du sélecteur de ressources. |
 | *Thème* | Chaîne | Non | Par défaut | Appliquez le thème à l’application Sélecteur de ressources entre `default` et `express`. Il prend également en charge `@react-spectrum/theme-express`. |
-| *handleSelection* | Fonction | Non | | Appelée avec un tableau d’éléments de ressource lorsque des ressources sont sélectionnées et que vous cliquez sur le bouton `Select` en mode modal. Cette fonction est uniquement appelée en mode modal. En mode rail, utilisez les fonctions `handleAssetSelection` ou `onDrop`. Exemple : <pre>handleSelection=(assets: Asset[])=> {...}</pre> Voir [Type de ressource sélectionné](#selected-asset-type) pour plus d’informations. |
-| *handleAssetSelection* | Fonction | Non | | Appelée avec un tableau d’éléments lorsque les ressources sont sélectionnées ou désélectionnées. Cela s’avère utile si vous souhaitez écouter les ressources lorsque l’utilisateur ou l’utilisatrice les sélectionne. Exemple : <pre>handleSelection=(assets: Asset[])=> {...}</pre> Voir [Type de ressource sélectionné](#selected-asset-type) pour plus d’informations. |
+| *handleSelection* | Fonction | Non | | Appelée avec un tableau d’éléments de ressource lorsque des ressources sont sélectionnées et que vous cliquez sur le bouton `Select` en mode modal. Cette fonction est uniquement appelée en mode modal. En mode rail, utilisez les fonctions `handleAssetSelection` ou `onDrop`. Exemple : <pre>handleSelection=(assets: Asset[])=> {...}</pre> Voir [sélection des ressources](/help/assets/asset-selector-customization.md#selection-of-assets) pour plus d’informations. |
+| *handleAssetSelection* | Fonction | Non | | Appelée avec un tableau d’éléments lorsque les ressources sont sélectionnées ou désélectionnées. Cela s’avère utile si vous souhaitez écouter les ressources lorsque l’utilisateur ou l’utilisatrice les sélectionne. Exemple : <pre>handleSelection=(assets: Asset[])=> {...}</pre> Voir [sélection des ressources](/help/assets/asset-selector-customization.md#selection-of-assets) pour plus d’informations. |
 | *onClose* | Fonction | Non | | Appelée lorsque vous cliquez sur le bouton `Close` en mode modal. Cette fonction est uniquement appelée en mode `modal` et n’est pas prise en compte en mode `rail`. |
 | *onFilterSubmit* | Fonction | Non | | Appelée avec des éléments de filtre lorsque l’utilisateur ou l’utilisatrice modifie des critères de filtre. |
 | *selectionType* | Chaîne | Non | Célibataire | Configuration pour la sélection `single` ou `multiple` de ressources à la fois. |
@@ -45,7 +45,7 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *dialogSize* | prise en charge de petite, moyenne, grande, plein écran ou plein écran | Chaîne | Facultatif | Vous pouvez contrôler la mise en page en spécifiant sa taille à l’aide des options données. |
 | *colorScheme* | Clair ou foncé | Non | | Cette propriété est utilisée pour définir le thème d’une application de sélecteur de ressources. Vous pouvez choisir entre le thème clair ou sombre. |
 | *filterRepoList* | Fonction | Non |  | Vous pouvez utiliser la fonction de rappel `filterRepoList` qui appelle le référentiel Experience Manager et renvoie une liste filtrée de référentiels. |
-| *expirationOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit l’état d’une ressource expirée. La fonction renvoie `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [Personnaliser les ressources expirées](#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ou déplacée sur la zone de travail. |
+| *expirationOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit l’état d’une ressource expirée. La fonction renvoie `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [Personnaliser les ressources expirées](/help/assets/asset-selector-customization.md#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ou déplacée sur la zone de travail. |
 | *showToast* | | Non | | Il permet au sélecteur de ressources d’afficher un message de toast personnalisé pour la ressource expirée. |
 | *metadataSchema* | Tableau | Non | | Ajoutez un tableau de champs que vous fournissez pour rassembler les métadonnées de l’utilisateur. Cette propriété vous permet également d’utiliser des métadonnées masquées qui sont automatiquement affectées à une ressource, mais ne sont pas visibles par l’utilisateur. |
 | *onMetadataFormChange* | Fonction de rappel | Non | | Il se compose de `property` et `value`. `Property` est égal à *mapToProperty* du champ transmis à partir du *metadataSchema* dont la valeur est mise à jour. En revanche, `value` est égal à la nouvelle valeur fournie en tant qu’entrée. |
@@ -63,8 +63,5 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
-| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
+| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
-
-
-

@@ -2,13 +2,13 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # Chargement de fichiers et de dossiers dans le sélecteur de ressources {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Pour ajouter des ressources au sélecteur de ressources, procédez comme suit :
 
    Vous pouvez également prévisualiser les images sélectionnées à l’aide des miniatures, puis cliquer sur l’icône X pour supprimer une image particulière de la liste. L’icône X s’affiche uniquement lorsque vous placez le pointeur de la souris sur le nom ou la taille de l’image. Vous pouvez également cliquer sur **[!UICONTROL Tout supprimer]** pour supprimer tous les éléments de votre liste de chargement.
 
-1. Pour terminer le processus de chargement, cliquez sur **[!UICONTROL Télécharger]**. Vos ressources chargées apparaissent. Voir [chargement de base](asset-selector-customization.md#basic-upload) pour connaître le code configurable.
+1. Pour terminer le processus de chargement, cliquez sur **[!UICONTROL Télécharger]**. Vos ressources chargées apparaissent. Voir [chargement de base](/help/assets/asset-selector-customization.md#basic-upload) pour connaître le code configurable.
 
 ## Chargement de ressources avec des métadonnées {#upload-assets-with-metadata}
 
-Vous pouvez ajouter des métadonnées aux ressources tout en les chargeant immédiatement dans votre application. Les métadonnées comprennent divers champs tels que l’objet commercial, les détails du produit, la campagne, etc. Pour ce faire, la propriété `metadataSchema` est utilisée. Accédez à [propriétés du sélecteur de ressources](asset-selector-properties.md) pour en savoir plus sur la propriété `metadataSchema`.
+Vous pouvez ajouter des métadonnées aux ressources tout en les chargeant immédiatement dans votre application. Les métadonnées comprennent divers champs tels que l’objet commercial, les détails du produit, la campagne, etc. Pour ce faire, la propriété `metadataSchema` est utilisée. Accédez à [propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md) pour en savoir plus sur la propriété `metadataSchema`.
 
-Voir [chargement avec des métadonnées](#upload-with-metadata) pour connaître le fragment de code requis pour la configuration.
+Voir [chargement avec des métadonnées](/help/assets/asset-selector-customization.md#upload-with-metadata) pour connaître le fragment de code requis pour la configuration.
 
 ![Chargement de ressources avec des métadonnées](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Voir [chargement avec des métadonnées](#upload-with-metadata) pour connaître 
 
 ## Chargement personnalisé {#customize-upload}
 
-Le sélecteur de ressources vous permet d’ajouter un formulaire de téléchargement personnalisé. Plusieurs personnalisations sont disponibles. Par exemple, la propriété [hideUploadButton](#asset-selector-properties.md) vous permet de masquer le bouton de téléchargement qui s’affiche par défaut dans l’application. Au lieu de cela, vous pouvez personnaliser le rendu en dehors de l’application MFE selon les besoins. Voir [téléchargement personnalisé](#asset-selector-customization.md#customized-upload) pour la configuration.
+Le sélecteur de ressources vous permet d’ajouter un formulaire de téléchargement personnalisé. Plusieurs personnalisations sont disponibles. Par exemple, la propriété [hideUploadButton](/help/assets/asset-selector-properties.md) vous permet de masquer le bouton de téléchargement qui s’affiche par défaut dans l’application. Au lieu de cela, vous pouvez personnaliser le rendu en dehors de l’application MFE selon les besoins. Voir [téléchargement personnalisé](/help/assets/asset-selector-customization.md#customized-upload) pour la configuration.
 
 ![Chargement personnalisé](assets/customized-upload.png)
-

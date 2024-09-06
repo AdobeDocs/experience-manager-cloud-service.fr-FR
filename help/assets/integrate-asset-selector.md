@@ -2,17 +2,17 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
 
 ---
 
-
 # Intégration du sélecteur de ressources à l’aide de Vanilla JS {#integration-using-vanilla-js}
 
-Vous pouvez intégrer n&#39;importe quelle application [!DNL Adobe] ou non Adobe au référentiel [!DNL Experience Manager Assets] et sélectionner des ressources dans l&#39;application. Voir [Intégration de sélecteur de ressources avec diverses applications](#integrate-asset-selector.md).
+Vous pouvez intégrer n&#39;importe quelle application [!DNL Adobe] ou non Adobe au référentiel [!DNL Experience Manager Assets] et sélectionner des ressources dans l&#39;application. Voir [Intégration de sélecteur de ressources avec diverses applications](#asset-selector-integration-with-apps).
 
 L’intégration est effectuée en important le package Sélecteur de ressources et en se connectant à Assets as a Cloud Service à l’aide de la bibliothèque JavaScript Vanilla. Modifiez un `index.html` ou tout fichier approprié dans votre application pour :
 
@@ -39,4 +39,3 @@ Vous pouvez intégrer le sélecteur de ressources à diverses applications, tell
 >* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
 >* [ API d’ouverture de média dynamique du sélecteur de ressources ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

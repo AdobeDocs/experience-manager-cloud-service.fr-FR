@@ -2,7 +2,8 @@
 title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -18,11 +19,11 @@ Le sélecteur de ressources vous permet d’intégrer à l’aide de diverses ap
 
 Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI :
 
-* [Méthodes de communication](#overview-asset-selector.md#prereqs)
+* [Méthodes de communication](/help/assets/overview-asset-selector.md#prereqs)
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (as a Cloud Service Experience Manager Assets, par exemple).
    * AEM Dynamic Media.
-* Seules les [ressources approuvées](#approved-assets.md) peuvent être utilisées pour assurer la cohérence de la marque.
+* Seules les [ressources approuvées](/help/assets/approve-assets.md) peuvent être utilisées pour assurer la cohérence de la marque.
 
 ## Intégration pour Dynamic Media avec les fonctionnalités OpenAPI {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Les propriétés `rootPath` et `path` ne doivent pas faire partie des fonctionna
 aemTierType:[1: "delivery"]
 ```
 
-Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à la propriété `aemTierType` sous [Propriétés du sélecteur de ressources](#asset-selector-properties.md).
+Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à la propriété `aemTierType` sous [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md).
 
 
 ### Création d’une URL de diffusion dynamique à partir des ressources approuvées {#create-dynamic-media-url}
