@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 Découvrez comment le contrôle de l’expérience valide votre processus de déploiement, en vous assurant que les modifications respectent les normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche. Il fournit une interface de tableau de bord claire et informative pour le suivi de ces mesures.
 
->[!NOTE]
->
->Cette fonctionnalité est disponible uniquement pour [le programme d&#39;adoption précoce](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->Pour plus d’informations sur la fonction d’audit d’expérience existante pour AEM as a Cloud Service, voir [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Vue d’ensemble {#overview}
 
 Le contrôle de l’expérience valide le processus de déploiement et permet de s’assurer que les modifications sont déployées :
 
-1. Respectent les normes de base en matière de performances, d’accessibilité, de bonnes pratiques, d’optimisation du moteur de recherche (SEO) et d’application web progressive (PWA).
+1. Respectez les normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation du référencement (SEO).
 
 1. N’introduisent pas de régressions.
 
@@ -88,7 +82,7 @@ Le contrôle de l’expérience est disponible par défaut pour les pipelines de
 
 Les résultats du contrôle de l’expérience sont présentés dans la phase **Test d’évaluation** du pipeline de production via la [ page d’exécution du pipeline de production](/help/implementing/cloud-manager/deploy-code.md).
 
-![Tableau de bord dans le pipeline](assets/experience-audit-dashboard.jpg)
+![Tableau de bord dans le pipeline](assets/experience-audit-dashboard.png)
 
 Le contrôle de l’expérience fournit les scores Google Lighthouse médians pour les [pages configurées](#configuration) et la différence de score par rapport à l’analyse précédente.
 
@@ -139,9 +133,17 @@ Le rapport est divisé en deux zones :
 
 #### Scores de page — tendance {#trend}
 
-Par défaut, la vue sélectionnée pour **Scores de page — tendance** est **Scores médians** pour les **6 derniers mois**.
+Par défaut, la vue sélectionnée pour **Scores de page — tendance** est **Scores médians** pour l’ **année dernière**.
 
-Utilisez les menus déroulants **Sélectionner** et **Afficher** en haut et en bas du bouton du graphique pour sélectionner respectivement les détails spécifiques à la page et différentes périodes. Cliquez sur **mettre à jour la tendance** en haut du graphique pour appliquer les sélections et actualiser le graphique.
+Vous pouvez choisir d’afficher les tendances pour des catégories Lighthouse spécifiques en cliquant sur le nom de la catégorie dans la légende.
+
+![ Tendance sélectionnable ](assets/experience-audit-trend-selectable.png)
+
+Utilisez la liste déroulante **Sélectionner** en haut du graphique pour sélectionner les détails spécifiques à la page, et les menus déroulants **Affichage** et **Déclencheur** en bas pour sélectionner respectivement différentes périodes et le type de déclencheur.
+
+La liste déroulante **Affichage** offre la possibilité de sélectionner une période prédéfinie ou un intervalle personnalisé pour une vue plus spécifique.
+
+![Affichage des tendances](assets/experience-audit-trend-view.png)
 
 Lorsque vous placez le pointeur de la souris sur le graphique, une info-bulle affiche les valeurs des catégories Google Lighthouse à des moments spécifiques.
 
@@ -164,13 +166,13 @@ La section **Recommendations** présente un ensemble agrégé d’informations. 
 
 ![Recommandations](assets/experience-audit-recommendations.png)
 
-Cliquez sur le chevron d’une recommandation pour en afficher les détails.
+Cliquez sur une recommandation pour en afficher des détails.
 
 ![Détails de la recommandation](assets/experience-audit-recommendations-details.png)
 
-Lorsqu’elles sont disponibles, les détails de la recommandation étendue contiennent également le pourcentage de l’impact des recommandations, afin de vous aider à vous concentrer sur les modifications ayant le plus d’impact.
+Lorsqu’elles sont disponibles, les détails de la recommandation étendue contiennent également le pourcentage de l’impact des recommandations, afin de vous aider à vous concentrer sur les modifications ayant le plus d’impact. En outre, les recommandations étendues peuvent inclure des liens vers AEM documentation pertinents et des conseils qui peuvent vous guider tout au long de la mise en oeuvre des correctifs suggérés.
 
-Cliquez sur le lien **Afficher les pages** dans la vue Détails pour afficher les pages auxquelles la recommandation s’applique.
+Cliquez sur le lien **voir pages** dans la vue Détails pour afficher les pages auxquelles la recommandation s’applique.
 
 ![Pages pour les détails de la recommandation](assets/experience-audit-details-pages.png)
 
@@ -222,7 +224,7 @@ Si les [pages que vous avez configurées](#configuration) à contrôler n’éta
 
 Le pipeline affiche une section d’erreur extensible pour afficher les chemins d’URL relatifs auxquels il n’a pas pu accéder.
 
-![Problèmes rencontrés par l’audit d’expérience](assets/experience-audit-issues.jpg)
+![Problèmes rencontrés par l’audit d’expérience](assets/experience-audit-issues.png)
 
 Si vous affichez le rapport complet, les détails sont affichés dans la section **[Résultats de l’analyse du contrôle de l’expérience](#results)**, qui peut également être développée.
 
