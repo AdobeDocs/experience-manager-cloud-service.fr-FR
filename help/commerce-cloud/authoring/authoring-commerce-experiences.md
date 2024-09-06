@@ -4,10 +4,10 @@ description: Découvrez comment créer et créer efficacement des expériences l
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 88%
+source-wordcount: '720'
+ht-degree: 87%
 
 ---
 
@@ -71,9 +71,9 @@ Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la 
 
 ![Éditeur de texte enrichi](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > Si la catégorie et le produit sont sélectionnés, le produit est pris.
+>[!NOTE]
+>
+> Si la catégorie et le produit sont sélectionnés, le produit est sélectionné.
 
 Cela crée un espace réservé pour un lien qui est remplacé par un lien réel lors du rendu de la page.
 
