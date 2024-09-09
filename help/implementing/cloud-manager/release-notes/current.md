@@ -3,10 +3,11 @@ title: Notes de mise à jour de Cloud Manager 2024.9.0 dans Adobe Experience�
 description: Découvrez les notes de mise à jour de Cloud Manager 2024.9.0 dans AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '367'
+ht-degree: 20%
 
 ---
 
@@ -32,9 +33,17 @@ La date de publication de Cloud Manager version 2024.9.0 dans AEM as a Clou
 
   Avec Cloud Manager, vous pouvez désormais [ certificats SSL DV (Domain Validation) générés et gérés par l’Adobe libre-service ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Cette fonctionnalité vous offre la solution la plus rapide, la plus simple et la plus économique pour créer un site web sécurisé pour votre entreprise ou organisation en ligne. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >Les clients de [Content Hub](/help/assets/product-overview.md) doivent recevoir cette fonctionnalité par phases dans le cadre d’un déploiement progressif.
+
 * **Prise en charge des Edge Delivery Services dans Cloud Manager :**
 
-  Si vous disposez d’une licence Edge Delivery Services dans le cadre d’AEM Sites, [vous pouvez désormais embarquer sur votre site avec des Edge Delivery Services directement via Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Cette fonctionnalité permet une expérience d’activation en libre-service et guidée. Il unifie également les processus essentiels tels que la gestion des noms de domaine, les certificats SSL et les mappages CDN sur toutes vos propriétés AEM, assurant ainsi cohérence et efficacité. <!-- CMGR-49859 -->
+  Si vous possédez une licence Edge Delivery Services dans le cadre d’AEM Sites, [vous pouvez désormais embarquer sur votre site avec des Edge Delivery Services directement via Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Cette fonctionnalité permet une expérience d’activation en libre-service et guidée. Il unifie également les processus essentiels tels que la gestion des noms de domaine, les certificats SSL et les mappages CDN sur toutes vos propriétés AEM, assurant ainsi cohérence et efficacité. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >Les clients de [Content Hub](/help/assets/product-overview.md) doivent recevoir cette fonctionnalité par phases dans le cadre d’un déploiement progressif.
 
 * Les clients qui utilisent des référentiels GitHub peuvent désormais créer et utiliser des pipelines de configuration de niveau web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
