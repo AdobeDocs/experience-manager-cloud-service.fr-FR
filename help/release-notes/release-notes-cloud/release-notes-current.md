@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2024.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 29 août 2024. La prochaine disponibilité des fonctionnalités (2024.9.0) est prévue pour le vendredi 26 septembre 2024.
+La date de publication de la version actuelle (2024.8.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 29 août 2024. La prochaine disponibilité des fonctionnalités (2024.9.0) est prévue pour le 26 septembre 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -48,15 +48,15 @@ Have a look at the August 2024 Release Overview video for a summary of the featu
 
 **Création AEM pour Edge Delivery Services**
 
-La fonctionnalité [inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) de Sites existants est désormais prise en charge, notamment :
+La fonctionnalité existante [Héritage](/help/sites-cloud/authoring/universal-editor/inheritance.md) de Sites est désormais prise en charge, notamment ce qui suit :
 
-* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
+* [AEM Launches](/help/sites-cloud/authoring/launches/overview.md)
 * [MSM](/help/sites-cloud/administering/msm/overview.md) au niveau de la page
 
-En outre, les fonctionnalités de gestion de page suivantes sont désormais prises en charge :
+En outre, les fonctionnalités de gestion de page suivantes sont désormais prises en charge :
 
-* [Les balises AEM](/help/sites-cloud/authoring/sites-console/tags.md) peuvent être exportées en tant que [taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) vers des Edge Delivery Services.
-* [Les modèles](/help/edge/wysiwyg-authoring/templates.md) pour les Edge Delivery Services vont bientôt arriver !
+* Les [balises AEM](/help/sites-cloud/authoring/sites-console/tags.md) peuvent être exportées en tant que [taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) vers Edge Delivery Services.
+* Les [modèles](/help/edge/wysiwyg-authoring/templates.md) pour Edge Delivery Services seront bientôt disponibles.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
@@ -69,65 +69,65 @@ Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 
-**Génération d’images d’Adobe Firefly mise à jour**
+**Génération d’images d’Adobe Firefly mise à jour**
 
-Assets as a Cloud Service utilise désormais le dernier widget de Firefly qui vous permet de générer des images dans différents styles à l’aide d’Adobe Firefly. En définissant son style, sa composition, ses dimensions, etc., à l’aide de l’éditeur de Firefly intégré, vous pouvez rapidement créer et enregistrer les ressources dont vous avez besoin directement dans le référentiel AEM Assets pour une utilisation immédiate.
+Assets as a Cloud Service utilise désormais le dernier widget de Firefly qui vous permet de générer des images dans différents styles à l’aide d’Adobe Firefly. En définissant son style, sa composition, ses dimensions, etc., à l’aide de l’éditeur Firefly intégré, vous pouvez rapidement créer et enregistrer les ressources dont vous avez besoin directement dans le référentiel AEM Assets pour une utilisation immédiate.
 
-![Génération d’images d’Adobe Firefly](/help/assets/assets/bugatti-type-57.png)
+![Génération d’images d’Adobe Firefly](/help/assets/assets/bugatti-type-57.png)
 
 **Prise en charge des fichiers PSB**
 
-Assets as a Cloud Service prend désormais en charge les documents Photoshop volumineux (fichiers PSB) en plus de la prise en charge des fichiers PSD existants.
+Assets as a Cloud Service prend désormais en charge les documents Photoshop volumineux (fichiers PSB) en plus de la prise en charge des fichiers PSD existants.
 
-### Nouvelles améliorations dans Content Hub {#content-hub-new-enhancements}
+### Nouvelles améliorations dans le hub de contenus {#content-hub-new-enhancements}
 
 * Amélioration de la gestion des noms de fichier longs, extension facile du nom complet via une info-bulle.
-* Amélioration des miniatures pour mieux adapter les proportions du contenu et couvrir une plus grande zone de contenu.
-* Expérience de miniature personnalisée à partir d’AEM prise en charge avec le centre de contenu.
+* Amélioration des miniatures pour mieux adapter le format du contenu et couvrir une plus grande zone de contenu.
+* Expérience de miniature personnalisée à partir d’AEM prise en charge avec le hub de contenus.
 * Améliorations de la recherche de couleurs.
-* Les améliorations apportées aux configurations permettent d’économiser de l’expérience.
-* Amélioration de la page d’informations des collections pour refléter le nom du créateur.
+* Améliorations apportées à l’expérience d’enregistrement des configurations.
+* Amélioration de la page d’informations des collections pour refléter le nom du créateur ou de la créatrice.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités de préversion d’AEM Forms {#forms-new-prerelease-features}
+### Nouvelles fonctionnalités de la version préliminaire d’AEM Forms {#forms-new-prerelease-features}
 
-#### Enregistrement automatique d’un brouillon pour Forms adaptatif basé sur les composants principaux
+#### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
 
-Les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement complété en tant que brouillon. Ils peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 
-Le programme d’accès anticipé d’AEM Forms vous offre une occasion unique d’accéder de manière exclusive aux innovations de pointe et de les aider à façonner leur développement.
+Le programme d’accès anticipé d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement.
 
 Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Assistant d’AEM Forms AI
+#### Assistant IA d’AEM Forms
 
-L’IA générique pour Forms adaptatif offre un nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Il vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+L’IA générative pour les formulaires adaptatifs offre un nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
 
-![Assistant d’IA générique, Forms adaptatif](/help/forms/assets/generative-ai-assistant.png)
+![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
 
-Les fonctionnalités de l’IA générique proposées sont les suivantes :
+Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
-* **Assistant d’IA pour les requêtes de produits** : obtenez des réponses instantanées à vos questions AEM sur les formulaires. L’assistant d’IA sert de base de connaissances personnelle, fournissant des conseils et des recommandations pertinents directement au sein de la plateforme.
+* **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez sans effort des formulaires complets avec des invites d’IA générique. Notre API générique génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. Notre IA générative génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
-* **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences du client ou les détails du voyage.
+* **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générique. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver l’ajustement idéal pour votre formulaire. Utilisez les invites d’IA générique pour optimiser vos formulaires pour la réactivité mobile et créer des formulaires attrayants pour les utilisateurs.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
 
-* **Configurer l’action d’envoi** : utilisez les invites d’IA générique pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 >[!IMPORTANT]
 >
-> Si vous souhaitez rejoindre le Programme d&#39;accès anticipé pour toute innovation, envoyez simplement un email provenant de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
+> Si vous souhaitez rejoindre le programme d’accès anticipé pour toute innovation, envoyez simplement un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
 
 
-## Principes de base d’[!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Programmes d’adoption précoce liés à la diffusion de contenu {#foundation-early-adopter}
 

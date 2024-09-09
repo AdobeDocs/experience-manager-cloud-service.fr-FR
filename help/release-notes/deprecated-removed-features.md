@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2172'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 >title="Fonctionnalités obsolètes et supprimées dans AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service dispose d’un modèle de déploiement natif dans le cloud. Certaines fonctionnalités ont été remplacées par des homologues natifs du cloud et cet onglet affiche ces fonctionnalités."
 
-Adobe évalue constamment les fonctionnalités du produit pour, au fil du temps, réinventer ou remplacer les fonctionnalités plus anciennes par des solutions plus modernes afin d’améliorer la valeur globale de la clientèle, en prenant toujours en compte la compatibilité ascendante. En outre, comme [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] fournit un modèle de déploiement natif au cloud, certaines capacités et fonctionnalités ont été remplacées par des homologues natives sur le cloud.
+Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur globale apportée à la clientèle, le tout en faisant toujours attention à la rétrocompatibilité. En outre, comme [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] fournit un modèle de déploiement natif au cloud, certaines capacités et fonctionnalités ont été remplacées par des homologues natives sur le cloud.
 
 Pour communiquer la suppression/le remplacement imminent de fonctionnalités d’[!DNL Experience Manager], les règles suivantes s’appliquent :
 
