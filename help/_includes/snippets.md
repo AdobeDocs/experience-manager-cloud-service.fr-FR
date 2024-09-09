@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 77%
+source-wordcount: '993'
+ht-degree: 71%
 
 ---
 # Fragments de code {#snippets}
@@ -156,8 +156,27 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
 >Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## Utilisation de Dynamic Media {#work-with-dynamic-media}
+## Utiliser Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
 >Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+## Voir aussi pour Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Suivez les [Bonnes pratiques de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) pour obtenir le meilleur rapport qualité-prix.
+>
+>* Testez les fonctionnalités d’image Dynamic Media avec l’ [outil d’instantané](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Assurez-vous que la lecture de la vidéo est fluide avec la [vidéo adaptative](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Automatisez le recadrage des [images avec recadrage intelligent](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automatisez le recadrage de [vidéos avec recadrage intelligent](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Diffusez [une expérience interactive 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).

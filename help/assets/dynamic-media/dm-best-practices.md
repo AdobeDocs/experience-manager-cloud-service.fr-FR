@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -411,3 +411,5 @@ Vous souhaitez en savoir plus ? Accédez à [Smart Imaging](/help/assets/dynamic
 Le réseau de diffusion de contenu (CDN) met en cache des ressources Dynamic Media pour une diffusion rapide aux clients. Lorsque des mises à jour sont apportées à ces ressources, il est important que les modifications prennent effet immédiatement sur le site web. En purgeant ou en invalidant le cache CDN, les ressources diffusées par Dynamic Media peuvent être mises à jour rapidement. Cette approche élimine la nécessité d’attendre que le cache arrive à expiration en fonction de la valeur TTL (Time To Live), généralement définie sur dix heures. Selon votre cas d’utilisation spécifique, vous pouvez mettre à jour les paramètres TTL (durée de vie) du réseau CDN en conséquence.
 
 Vous souhaitez en savoir plus ? Accédez à [Invalider le cache CDN au moyen de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+
+{{see-also-dm}}
