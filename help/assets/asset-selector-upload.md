@@ -3,9 +3,9 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ Voir [chargement avec des métadonnées](/help/assets/asset-selector-customizati
 Le sélecteur de ressources vous permet d’ajouter un formulaire de téléchargement personnalisé. Plusieurs personnalisations sont disponibles. Par exemple, la propriété [hideUploadButton](/help/assets/asset-selector-properties.md) vous permet de masquer le bouton de téléchargement qui s’affiche par défaut dans l’application. Au lieu de cela, vous pouvez personnaliser le rendu en dehors de l’application MFE selon les besoins. Voir [téléchargement personnalisé](/help/assets/asset-selector-customization.md#customized-upload) pour la configuration.
 
 ![Chargement personnalisé](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [Exemples de sélecteur de ressources](/help/assets/asset-selector-examples.md)
+>* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
+>* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)

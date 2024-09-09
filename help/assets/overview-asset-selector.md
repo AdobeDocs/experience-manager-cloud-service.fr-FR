@@ -3,10 +3,10 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 35%
+source-wordcount: '1295'
+ht-degree: 34%
 
 ---
 
@@ -219,13 +219,19 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
         <em>Configurez et personnalisez divers composants du sélecteur de ressources en fonction de votre convivialité. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Graphique de chargement du sélecteur de ressources"><br/>
+        <a href="asset-selector-upload.md"> Personnalisations du sélecteur de ressources</a>
+        <p>
+        <em>Découvrez comment télécharger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local ou tiers. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
 >* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [ API d’ouverture de média dynamique du sélecteur de ressources ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Intégrer le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

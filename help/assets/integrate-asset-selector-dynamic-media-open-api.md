@@ -3,7 +3,7 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -174,4 +174,4 @@ Une fois l’intégration avec le sélecteur de ressources Micro-Frontend de l�
 >
 >* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
