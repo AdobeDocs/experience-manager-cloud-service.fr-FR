@@ -1,5 +1,5 @@
 ---
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 71%
@@ -180,3 +180,4 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >* Diffusez [une expérience interactive 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
