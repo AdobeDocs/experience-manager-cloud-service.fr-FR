@@ -6,62 +6,62 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '665'
+ht-degree: 96%
 
 ---
 
 # Créer des composants personnalisés
 
-AEM Forms Edge Delivery Services vous permet de personnaliser les [composants de formulaire d’HTML natifs](/help/edge/docs/forms/form-components.md) et de créer des formulaires interactifs et conviviaux. Il vous permet de modifier les composants de formulaire avec des balises prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md) à l’aide de CSS personnalisés (feuilles de style en cascade) et du code personnalisé pour la décoration du composant, améliorant ainsi l’aspect des champs de formulaire dans un bloc de Forms adaptatif.
+Les Edge Delivery Services pour AEM Forms vous permettent de personnaliser les [composants de formulaire d’HTML natifs](/help/edge/docs/forms/form-components.md) et de créer des formulaires interactifs et conviviaux. Il vous permet de modifier les composants de formulaire avec des balises prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md) à l’aide de CSS personnalisés (feuilles de style en cascade) et du code personnalisé pour la décoration du composant, améliorant ainsi l’aspect des champs de formulaire dans un bloc de formulaires adaptatifs.
 
 ![Composant personnalisé](/help/edge/assets/custom-component-image.png)
 
-Ce document décrit les étapes à suivre pour créer des composants personnalisés en mettant en forme les composants de formulaire d’HTML natifs afin d’améliorer l’expérience utilisateur et d’améliorer l’attrait visuel du formulaire.
+Ce document décrit les étapes à suivre pour créer des composants personnalisés en mettant en forme les composants de formulaire HTML natifs afin d’améliorer l’expérience client et l’attrait visuel du formulaire.
 
-Prenons l’exemple d’un composant `range` qui affiche le `Estimated trip cost` sur un formulaire. Le composant `range` s’affiche en ligne droite, sans afficher de valeurs telles que la valeur minimale, maximale ou sélectionnée.
+Prenons l’exemple d’un composant `range` qui affiche le `Estimated trip cost` sur un formulaire. Le composant `range` s’affiche en ligne droite, sans afficher de valeurs telles que les valeurs minimale, maximale ou sélectionnée.
 
 ![Composant de plage natif](/help/edge/assets/native-range-component.png)
 
-Commençons à personnaliser le champ `range` pour afficher les valeurs minimales, maximales et sélectionnées sur la ligne en ajoutant un style à l’aide de CSS et en ajoutant une fonction personnalisée pour décorer un composant.
+Commençons à personnaliser le champ `range` pour afficher esa valeurs minimale, maximale et sélectionnée sur la ligne en ajoutant un style à l’aide de CSS et en ajoutant une fonction personnalisée pour décorer un composant.
 
-![Composant de plage personnalisée](/help/edge/assets/custom-range-component.png)
+![Composant de plage personnalisé](/help/edge/assets/custom-range-component.png)
 
-À la fin de cet article, vous apprendrez à créer des composants personnalisés en ajoutant des styles au fichier CSS et à la fonction personnalisée.
+À la fin de cet article, vous saurez créer des composants personnalisés en ajoutant des styles au fichier CSS et la fonction personnalisée.
 
-## Conditions préalables
+## Prérequis
 
-Avant de commencer à créer votre composant personnalisé, vous devez :
+Avant de commencer à créer votre composant personnalisé, vous devez :
 
-* posséder des connaissances de base sur les [composants d’HTML natifs](/help/edge/docs/forms/form-components.md).
-* Découvrez comment [appliquer un style aux champs de formulaire en fonction du type de champ à l’aide des sélecteurs CSS](/help/edge/docs/forms/style-theme-forms.md)
-
-
-## Création d’un composant personnalisé
+* posséder des connaissances de base sur les [composants HTML natifs](/help/edge/docs/forms/form-components.md) ;
+* savoir [appliquer un style aux champs de formulaire en fonction du type de champ à l’aide des sélecteurs CSS](/help/edge/docs/forms/style-theme-forms.md).
 
 
-![ étapes pour créer un composant personnalisé](/help/edge/docs/forms/assets/steps-to-create-custom-component.png)
+## Créer un composant personnalisé
+
+
+![Étapes pour créer un composant personnalisé](/help/edge/docs/forms/assets/steps-to-create-custom-component.png)
 
 Comprenons maintenant chaque étape en détail.
 
-Reportez-vous à la [feuille de calcul d&#39;enquête](/help/edge/docs/forms/assets/enquiry.xlsx) pour personnaliser le composant `range` en suivant les étapes décrites ci-dessous.
+Reportez-vous à la [feuille de calcul de demande](/help/edge/docs/forms/assets/enquiry.xlsx) pour personnaliser le composant `range` en suivant les étapes décrites ci-dessous.
 
 ### Ajouter une fonction personnalisée pour décorer le composant
 
-La fonction personnalisée ajoutée dans `[../Form Block/components]` se compose des éléments suivants :
+La fonction personnalisée ajoutée dans `[../Form Block/components]` se compose des éléments suivants :
 
-* **Déclaration de fonction** : définissez le nom de la fonction et ses paramètres.
-* **Implémentation logique** : écrivez la logique pour ajouter le comportement personnalisé du composant.
-* **Fonction export** : rendez la fonction accessible dans `[Form Block]`.
+* **Déclaration de fonction** : définissez le nom de la fonction et ses paramètres.
+* **Implémentation logique** : écrivez la logique pour ajouter le comportement personnalisé du composant.
+* **Export de la fonction** : rendez la fonction accessible dans `[Form Block]`.
 
-Créons un fichier JavaScript nommé `range.js` pour appliquer un style au composant de plage. Pour ajouter une fonction personnalisée :
+Créons un fichier JavaScript nommé `range.js` pour appliquer un style au composant de plage. Pour ajouter une fonction personnalisée :
 
 1. Accédez à votre dossier de projet AEM sur Google Drive ou SharePoint.
 1. Accédez à `[../Form Block/components]`.
 1. Ajoutez un nouveau fichier nommé `range.js`.
-1. Ajoutez la ligne de code suivante :
+1. Ajoutez la ligne de code suivante :
 
    ```javascript
    function updateBubble(input, element) {
@@ -120,16 +120,16 @@ Créons un fichier JavaScript nommé `range.js` pour appliquer un style au compo
 
 1. Enregistrez les modifications.
 
-### Injection du décorateur dans le bloc de formulaire
+### Insérer le décorateur dans le bloc de formulaire
 
-L’ `[Form Block]` utilise l’HTML sémantique pour générer les champs de formulaire, y compris les champs de saisie, les libellés et le texte d’aide, avec des attributs standard pour l’accessibilité. Pour que `[Form Block]` utilise un décorateur personnalisé pour un composant spécifié, définissez-le dans le fichier `mappings.js`. Le fichier `mappings.js` importe une fonction qui renvoie le module responsable de la décoration d’un composant particulier. La fonction prend les propriétés du champ et renvoie une fonction de décorateur pour le champ de formulaire.
+Le `[Form Block]` utilise l’HTML sémantique pour générer les champs de formulaire, y compris les champs de saisie, les libellés et le texte d’aide, avec des attributs standard pour l’accessibilité. Pour que `[Form Block]` utilise un décorateur personnalisé pour un composant spécifié, définissez-le dans le fichier `mappings.js`. Le fichier `mappings.js` importe une fonction qui renvoie le module responsable de la décoration d’un composant particulier. La fonction prend les propriétés du champ et renvoie une fonction de décorateur pour le champ de formulaire.
 
-Dans notre cas, la fonction vérifie la propriété `fieldType` du champ et renvoie le décorateur de plage personnalisé à partir du fichier `range.js` présent dans `[../Form Block/components]`.
+Dans notre cas, la fonction consulte la propriété `fieldType` du champ et renvoie le décorateur de plage personnalisé à partir du fichier `range.js` présent dans `[../Form Block/components]`.
 
-Pour injecter le décorateur dans le bloc de formulaire :
+Pour insérer le décorateur dans le bloc de formulaire :
 
 1. Accédez à `[../Form Block/]` et ouvrez `mapping.js`.
-1. Ajoutez la ligne de code suivante :
+1. Ajoutez la ligne de code suivante :
 
    ```javascript
    export default async function componentDecorator(fd) {
@@ -145,15 +145,15 @@ Pour injecter le décorateur dans le bloc de formulaire :
 
 1. Enregistrez les modifications.
 
-### Ajout d’un style au composant dans le fichier CSS
+### Ajouter un style au composant dans le fichier CSS
 
-Vous pouvez modifier l’aspect des champs de formulaire en fonction du type de champ et des noms de champ à l’aide de sélecteurs CSS, ce qui permet de définir un style cohérent ou unique en fonction des exigences. Pour appliquer un style au composant, ajoutez du code dans le fichier `form.css` afin de modifier l’aspect du composant du formulaire.
+Vous pouvez modifier l’apparence des champs de formulaire en fonction du type de champ et des noms de champs à l’aide de sélecteurs CSS, ce qui permet d’obtenir un style cohérent ou unique en fonction des besoins. Pour appliquer un style au composant, ajoutez du code dans le fichier `form.css` afin de modifier l’aspect du composant du formulaire.
 
-Pour personnaliser le style du composant `range`, incluez un fragment de code CSS qui met en forme un élément d’entrée `range` et ses composants associés dans un formulaire. Cela suppose une mise en page d’HTML structurée avec des classes telles que `.form` et `.range-wrapper`.
+Pour personnaliser le style du composant `range`, incluez un extrait de code CSS qui met en forme un élément d’entrée `range` et ses composants associés dans un formulaire. Cela suppose une mise en page HTML structurée avec des classes telles que `.form` et `.range-wrapper`.
 
-Pour ajouter un style à un composant dans le fichier CSS :
+Pour ajouter un style à un composant dans le fichier CSS :
 1. Accédez à `[../Form Block/]` et ouvrez `form.css`.
-1. Ajoutez la ligne de code suivante :
+1. Ajoutez la ligne de code suivante :
 
    ```javascript
        /** styling for range */
@@ -214,13 +214,13 @@ Pour ajouter un style à un composant dans le fichier CSS :
 
 Déployez les fichiers `range.js`, `mapping.css` et `form.css` mis à jour dans votre projet GitHub et vérifiez la création.
 
-### Aperçu du formulaire à l’aide du sidekick AEM
+### Prévisualiser le formulaire à l’aide du sidekick AEM
 
-Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser votre formulaire avec la fonction nouvellement mise en oeuvre qui met en forme le composant `range`.
+Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser votre formulaire avec la fonction nouvellement mise en œuvre qui met en forme le composant `range`.
 
 ![Formulaire de composant personnalisé](/help/edge/assets/custom-componet-form.png)
 
-La nouvelle mise en forme du composant `range` affiche les valeurs minimales, maximales et sélectionnées sur la ligne en ajoutant des styles à l’aide de CSS et d’une fonction personnalisée qui inclut un décorateur pour le composant.
+Le nouveau style du composant `range` affiche la valeur minimale, maximale et sélectionnée sur la ligne en ajoutant des styles à l’aide de CSS et d’une fonction personnalisée qui inclut un décorateur pour le composant.
 
 
 ## Voir également

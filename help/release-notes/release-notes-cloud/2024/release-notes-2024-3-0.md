@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.3.0 d’ [!DNL Adobe Expe
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 97%
+source-wordcount: '2293'
+ht-degree: 96%
 
 ---
 
@@ -116,7 +116,7 @@ Grâce à Assets Essentials, les administrateurs et les administratrices peuven
 
 ### Nouvelles fonctionnalités pour AEM Forms {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)** : les services AEM Forms Edge Delivery Services constituent un ensemble de services composable qui permet un environnement de développement rapide où les auteurs et les autrices peuvent mettre à jour, publier et lancer de nouveaux formulaires rapidement. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
+* **[Edge Delivery Services Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)** : Edge Delivery Services pour AEM Forms est un ensemble de services composable qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour, publier et lancer de nouveaux formulaires. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
 
   ![Fonctionnalités d’EDS Forms](/help/edge/assets/eds-forms-features.png)
 
