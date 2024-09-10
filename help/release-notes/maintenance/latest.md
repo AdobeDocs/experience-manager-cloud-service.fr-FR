@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
-workflow-type: ht
-source-wordcount: '736'
-ht-degree: 100%
+source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
+workflow-type: tm+mt
+source-wordcount: '572'
+ht-degree: 50%
 
 ---
 
@@ -16,75 +16,60 @@ ht-degree: 100%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 17569 {#release-17569}
+## Version 17689 {#release-17689}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17569, publiée le 27 août 2024. La version de maintenance précédente était la version 17465.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17689, publiée le mercredi 10 septembre 2024. La version de maintenance précédente était la version 17569.
 
 L’activation des fonctionnalités de la version 2024.9.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-17569}
+### Améliorations {#enhancements-17689}
 
-* CQ-4353778 : événements de processus de traduction.
-* CQ-4354583 : envoyer des événements de processus de traduction via Adobe Pipeline.
-* CQ-4356479 : autoriser uniquement le code Adobe pour utiliser le contexte de servlet /adobe.
-* CQ-4358226 : la fonctionnalité Enregistrer le mot-clé de traduction ne fonctionne pas pour un format de chaîne particulier.
-* CQ-4358270 : kit de traduction AEM : 8 août.
-* CQ-4358310 : ajouter oak-compat-query-spi-1.2 au démarrage rapide.
-* GRANITE-49833 : prise en charge par lot de l’expéditeur et du proxy d’événement.
-* GRANITE-52053 : supprimer des usages de Commons Collections 3 : autres plateformes.
-* GRANITE-52492 : rattrapage asynchrone élastique en cas de restauration PIT.
-* GRANITE-53099 : mettre à jour vers Apache Felix Http Jetty 5.1.24.
-* GRANITE-53125 : ajouter une classification à CloudEvent.
-* GRANITE-53328 : mettre à jour Filevault vers la version 3.8.0-T20240726111512-3cc11d50 contenant des améliorations de la journalisation de masquage.
-* GRANITE-53453 : mettre à niveau commons-lang vers la version 3.15.0.
-* GRANITE-53478 : mettre à jour Filevault vers la version 3.8.0.
-* GRANITE-53505 : mettre à jour QS vers commons-collections-3.2.2-adobe-2.
-* GRANITE-53528 : mettre à jour la version des artefacts de plateforme.
-* GRANITE-53547 : fournir une autre API pour éviter l’utilisation d’Apache Commons Lang 2.
-* GRANITE-53575 : utiliser BSAFE 6.2.5 dans CS.
-* GRANITE-53608 : mettre à jour Oak vers la dernière version publique (1.68.0).
-* SITES-23583 : les tests Evergreen de sites échouent sur Java 17.
-* SKYOPS-79535 : mettre à jour vers RUM script v2.
-* SKYOPS-79816 : activer la tâche Sling Feature Analyzer pour les mappages d’utilisation du service dans FACT Tool.
-* SKYOPS-81179 : tester les constructions AEM pour le basculement des lots.
-* SKYOPS-81866 : signaler les avertissements concernant les lots connus comme incompatibles avec Java 21.
-* SKYOPS-82660 : mettre à jour l’API Sling vers la version 2.27.6.
-* SKYOPS-82961 : mettre à jour vers Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
-* SKYOPS-83356 : créer un tableau de bord global pour le suivi des versions JVM utilisées dans les déploiements AEM.
-* SKYOPS-83436 : le déploiement Java Runtime 21 interrompt la création des formulaires adaptatifs AEM Forms.
-* SKYOPS-84272 : consigner la version Java utilisée au démarrage du lanceur AEM.
+* ASSETS-41404 : modifications pour la prise en charge des améliorations de DRM.
+* ASSETS-41621 : mise à jour de la tâche de copie de ressource asynchrone.
+* ASSETS-32166 : mise à jour de la tâche de déplacement asynchrone des ressources.
+* ASSETS-41429 : prise en charge des paramètres d’image prédéfinis dans DM OpenAPI.
+* ASSETS-38968 : amélioration de la représentation des références de fragments de contenu.
+* ASSETS-41787, ASSETS-41183 : améliorations de la structure des opérations en bloc d’Assets.
+* GRANITE-52917 : optimisations pour améliorer les temps d’installation du package de copie de contenu.
+* SCRNS-3980 : écran de détection des gris sur les lecteurs ayant des séquences sans ressources planifiées.
 
-### Problèmes résolus {#fixed-issues-17569}
+### Problèmes résolus {#fixed-issues-17689}
 
-* CMGR-60225 : échec de l’exécution du pipeline identifié sur le client CS d’AEM Sites lors de la validation de la mise à jour vers AEM version 17486.
-* GRANITE-45919 : pays sous embargo dans la liste des régions/pays dans Modifier les paramètres d’utilisation.
-* GRANITE-51715 : le sélecteur ne saisit pas toujours la sélection dans le champ de texte.
-* GRANITE-53290 : vérifier correctement le protocole lors de l’analyse de l’URL dans la vérification XSS.
-* GRANITE-53576 : définition incorrecte du classement des services dans les configurations OSGi.
-* SKYOPS-82129 : perte de mémoire dans les modèles Sling.
+* ASSETS-40875 : NPE intelligent consigné par AssetDeleteHandler.
+* ASSETS-42422 : évitez de déclencher une tâche asynchrone pour un déplacement de ressource unique.
+* ASSETS-41234 : Shell unifié - La navigation globale peut ne pas fonctionner si elle est ouverte lorsque la barre de recherche est ouverte.
+* ASSETS-42256 : Shell unifié - Balise/Badge indiquant que l’environnement ne fonctionne que par intermittence.
+* ASSETS-41271 : évitez la republication inutile d’Assets lors des opérations de déplacement.
+* ASSETS-38894 : Limitez les reprises en traitant watchdog.
+* ASSETS-40815 : utilisez le rendu du PDF d’aperçu pour afficher le fichier PPT dans l’ interface utilisateur du partage de liens .
+* ASSETS-37123 : impossible de charger l’aperçu de la ressource dans la boîte de dialogue Partage de lien.
+* CQ-4358156 : mettre à jour les liens renvoyant de la balise en cours de suppression.
+* SCRNS-4495 : correction du bouton Coller qui ne fonctionnait pas correctement pour différents groupes d’utilisateurs.
+* SCRNS-4512 : suppression des composants associés à l’appareil des écrans AEMaaCS.
+* SCRNS-4466 : dans Tableau de bord des canaux, masquer - Afficher le manifeste, générer du contenu hors ligne, mettre à jour le cache de manifeste, afficher le panneau.
+* SCRNS-4513 : Ajout d’en-têtes de colonne pour la page des résultats de recherche en mode Liste.
 
-### Problèmes connus {#known-issues-17569}
+### Problèmes connus {#known-issues-17689}
 
-* ASSETS-40875 - La classe AssetDeleteHandler écoute les événements de suppression de ressources et exécute des actions spécifiques en fonction du type d’événement de suppression (PRE_DELETE ou POST_DELETE). Dans certains scénarios, le type d’événement POST_DELETE provoque une exception NullPointerException.
-* FORMS-14340 - Erreur lors de l’instanciation de FormsAndDocumentOmniSearchHandler et CloudStorageSubmitActionInserter. Ce sont des instructions de journal inoffensives.
-* FORMS-15818 - Entrée du descripteur de composant « OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml ». Instructions introuvables dans les journaux du serveur. Ce sont des instructions de journal inoffensives.
-* SITES-23662 - La personne qui déclenche une publication ne peut pas être extraite des instructions de journal JCR dans les journaux du serveur. Il s’agit d’une fonctionnalité en cours de développement qui peut provoquer les erreurs intermittentes et inoffensives « Impossible de trouver un ID d’utilisateur ou d’utilisatrice valable dans le lot d’événements OSGI » dans le journal.
+* FORMS-14340 : Erreur lors de l’instanciation de FormsAndDocumentOmniSearchHandler et CloudStorageSubmitActionInserter. Ce sont des instructions de journal inoffensives.
+* FORMS-15818 : entrée du descripteur de composant &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.Les instructions *.xml’ sont introuvables dans les journaux du serveur. Ce sont des instructions de journal inoffensives.
+* SITES-23662 : l’utilisateur qui déclenche une publication ne peut pas être extrait des instructions de journal JCR dans les journaux du serveur. Il s’agit d’une fonctionnalité en cours de développement qui peut provoquer des erreurs intermittentes et inoffensives &quot;Impossible de trouver un ID utilisateur valide dans le lot d’événements OSGI&quot; dans le journal.
 
-### Avis de modification {#change-notice-17569}
+### Avis de modification {#change-notice-17689}
 
 * À compter de septembre 2024, AEM as a Cloud Service désactivera la sérialisation des résolveurs de ressources via le framework de l’exportateur de modèle Sling. Voir la [documentation](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) pour plus d’informations.
 
-### Fonctionnalités et API obsolètes {#deprecated-17569}
+### Fonctionnalités et API obsolètes {#deprecated-17689}
 
 Nous actualisons en ce moment `com.day.cq.wcm.api`. Dans la version actuelle, nous avons déclaré certaines de ses méthodes et classes comme `@Deprecated`. Celles-ci seront supprimées des prochaines versions. Envisagez donc de passer à leurs alternatives qui sont suggérées si vous utilisez l’une d’elles.
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-17569}
+### Correctifs de sécurité {#security-17689}
 
 AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige quatre vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-17569}
+### Technologies intégrées {#embedded-tech-17689}
 
 | Technologie | Version | Lien |
 |---|---|---|
