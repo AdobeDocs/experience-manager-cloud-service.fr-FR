@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 71%
+ht-degree: 89%
 
 ---
 # Fragments de code {#snippets}
@@ -131,21 +131,21 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 ## Portail Formulaires{#forms-portal-see-also}
 
-* [Présentation des composants du portail Forms](/help/forms/configure-forms-portal.md)
-* [Liste de vos formulaires sur la page de sites](/help/forms/list-forms-on-sites-page.md)
-* [Enregistrement des formulaires en tant que brouillons](/help/forms/save-core-component-based-form-as-draft.md)
-* [Ajout de liens de formulaire à une page Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Présentation des composants Portail Formulaires](/help/forms/configure-forms-portal.md)
+* [Répertorier vos formulaires sur une page Sites](/help/forms/list-forms-on-sites-page.md)
+* [Enregistrer vos formulaires en tant que brouillons](/help/forms/save-core-component-based-form-as-draft.md)
+* [Ajouter des liens de formulaire à une page Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
-## Pipelines de Liste autorisée IP et front-end de Cloud Manager {#allowlist-frontend-pipeline}
+## Liste autorisée des adresses IP de Cloud Manager et des pipelines front-end {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Le pipeline front-end requiert que la Liste autorisée IP suivante soit ajoutée au préalable à Cloud Manager.
->Si nécessaire, [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP / CIDR** de la boîte de dialogue **Ajouter une Liste autorisée IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
->Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette Liste autorisée IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
+>Le pipeline front-end requiert que la liste autorisée des adresses IP suivante soit ajoutée au préalable à Cloud Manager.
+>Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
+>Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
->**Liste autorisée IP Cloud Manager**
+>**Liste autorisée des adresses IP**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
