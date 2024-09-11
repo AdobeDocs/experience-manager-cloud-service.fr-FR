@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 5%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
 
-# Tableau de bord des performances du réseau CDN {#cdn-performance}
+# Tableau de bord des performances du réseau CDN {#cdn-performance}
 
 Découvrez comment Cloud Manager évalue les performances du réseau de diffusion de contenu et ce que vous pouvez apprendre du tableau de bord.
 
@@ -66,7 +66,7 @@ Le taux d’accès au cache est une mesure du nombre de requêtes de contenu qu�
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Accès** - Les données sont demandées par le cache, et elles ont été trouvées.
+* **Accès** - Les données sont demandées par le cache et elles sont trouvées.
 * **Miss** - Les données sont demandées par le cache et sont introuvables.
 * **Pass** - Les données sont demandées par le cache et sont définies pour ne pas mettre ces données en cache dans tous les cas.
 * **Autre** - Toutes les requêtes de données du cache qui ne correspondent à aucun autre cas.
@@ -75,4 +75,4 @@ Les mesures du cache sont mises à jour toutes les 24 heures.
 
 >[!TIP]
 >
->Pour plus d’informations sur la façon dont Cloud Manager et le réseau de diffusion de contenu interagissent avec Dispatcher, consultez le document [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Pour plus d’informations sur la façon dont Cloud Manager et le réseau de diffusion de contenu interagissent avec Dispatcher, voir [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

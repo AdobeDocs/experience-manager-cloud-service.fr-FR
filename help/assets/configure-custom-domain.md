@@ -1,15 +1,15 @@
 ---
-title: Configurer un domaine personnalisé pour le niveau de publication
-description: Découvrez comment configurer un domaine personnalisé pour le niveau publication dans Adobe Cloud Manager.
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+title: Configuration d’un domaine personnalisé pour le niveau Publish
+description: Découvrez comment configurer un domaine personnalisé pour le niveau de publication dans Adobe Cloud Manager.
+exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-
-# Configurer un domaine personnalisé pour le niveau de publication{#configure-custom-domain}
+# Configuration d’un domaine personnalisé pour le niveau de publication{#configure-custom-domain}
 
 Dans Adobe Cloud Manager, vous pouvez faire ressortir votre site web en ajoutant un domaine personnalisé. AEM as a Cloud Service est fourni avec un domaine par défaut. Vous pouvez le personnaliser selon vos besoins.
 
@@ -20,9 +20,7 @@ Dans Adobe Cloud Manager, vous pouvez faire ressortir votre site web en ajoutant
 * La stratégie de certificat doit se conformer à la politique Validation étendue (EV) ou Validation d’organisation (OV), et non à la politique Validation de domaine (DV).
 
 
-## Ajouter un domaine personnalisé
-
-Pour configurer un domaine personnalisé pour le niveau de publication, procédez comme suit :
+## Configuration d’un domaine personnalisé pour le niveau de publication
 
 1. Accédez à **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Aperçu du programme]** > **[!UICONTROL Certificats SSL]** et ajoutez votre certificat SSL.
    ![image](/help/assets/assets/ssl-certificate.png)
@@ -31,11 +29,11 @@ Découvrez comment ajouter le [certificat SSL](/help/implementing/cloud-manager/
 1. Après avoir ajouté le certificat SSL, ajoutez un domaine personnalisé. Cliquez sur **[!UICONTROL Paramètres de domaine]** et spécifiez le domaine personnalisé par rapport à l’option **[!UICONTROL Service Publish]** .
 En savoir plus sur [domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Ajoutez 2 [enregistrements CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) dans votre enregistrement DNS correspondant aux domaines de publication.
+1. Ajoutez deux [enregistrements CNAME](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) dans votre enregistrement DNS correspondant aux domaines de publication.
 La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 
 1. Consignez un cas de support pour faciliter la configuration du domaine personnalisé, en vous assurant qu’il dirige vers le niveau de diffusion.
 
 >[!NOTE]
 >
-> Veillez à ajouter le domaine personnalisé à la liste des URL de redirection autorisées dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.
+>Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées. La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.

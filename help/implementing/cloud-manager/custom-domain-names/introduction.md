@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 43%
 
 ---
@@ -52,13 +52,12 @@ Dans un environnement, les deux domaines peuvent être installés dans le résea
 L’ajout d’un nom de domaine personnalisé nécessite une interaction entre le service DNS et Cloud Manager. En raison de ce processus, plusieurs étapes sont nécessaires pour installer, configurer et vérifier les noms de domaine personnalisés. Le tableau suivant présente une vue d’ensemble des étapes requises, y compris des liens vers les ressources de documentation pour terminer ces étapes.
 
 | Étape | Description | Documentation |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Ajouter un certificat SSL à Cloud Manager | [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Ajout d’un domaine personnalisé à Cloud Manager | [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Ajout d’un enregistrement TXT pour vérifier le domaine | [Ajouter un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | Configurez les paramètres DNS en ajoutant des enregistrements CNAME ou APEX DNS qui pointent vers AEM as a Cloud Service | [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | Vérification de l’état du domaine | [Vérifiez l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Configurez les paramètres DNS en ajoutant des enregistrements CNAME ou APEX DNS qui pointent vers AEM as a Cloud Service | [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | Vérifiez le statut de l’enregistrement DNS | [ Vérifiez l’état de l’enregistrement DNS ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | Vérifiez le statut de l’enregistrement DNS | [ Vérifiez l’état de l’enregistrement DNS ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

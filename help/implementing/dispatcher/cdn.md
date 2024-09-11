@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1607'
 ht-degree: 38%
 
 ---
@@ -35,8 +35,10 @@ Les clients qui souhaitent publier du contenu sur le niveau Edge Delivery Servic
 Pour vous préparer à la diffusion de contenu à l’aide AEM du réseau de diffusion de contenu intégré via l’interface utilisateur en libre-service Cloud Manager, vous pouvez tirer parti des fonctionnalités de réseau de diffusion de contenu géré par Adobe. Cette fonctionnalité vous permet de gérer la gestion du réseau de diffusion de contenu en libre-service, y compris de configurer et d’installer des certificats SSL tels que DV (Domain Validation) ou EV/OV (Extended/Organization Validation). Pour plus d’informations sur ces méthodes, voir :
 
 * [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 * [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Assistance Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+
 
 **Limitation du trafic**
 
