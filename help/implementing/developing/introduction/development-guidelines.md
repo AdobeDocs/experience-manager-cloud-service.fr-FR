@@ -4,7 +4,7 @@ description: Découvrez les conseils de développement sur AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
+source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 81%
@@ -183,7 +183,7 @@ Lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent ê
 >
 
 >[!NOTE]
->Certains clients auront la possibilité de tester une expérience repensée pour AEM Cloud Service Developer Console. Voir [cet article](/help/implementing/developing/introduction/developer-console.md) pour plus d’informations.]
+>Certains clients auront la possibilité de tester une expérience repensée pour AEM Cloud Service Developer Console. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.]
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
