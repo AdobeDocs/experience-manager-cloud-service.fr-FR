@@ -3,10 +3,11 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2024.05.0
 feature: Release Information
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
+source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 38%
+source-wordcount: '208'
+ht-degree: 35%
 
 ---
 
@@ -18,11 +19,16 @@ Cette page présente les notes de mise à jour pour les outils de migration dans
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de l’analyseur des bonnes pratiques v2.1.48 est le 9 mai 2024.
+La date de publication de la version 2.1.5 de l’analyseur des bonnes pratiques est mai 2024.
 
 ### Nouveautés {#what-is-new-bpa}
 
 * L’analyseur des bonnes pratiques (BPA) prend désormais en charge le téléchargement automatique des rapports générés par BPA directement vers Cloud Acceleration Manager (CAM). Les utilisateurs n’auront plus besoin de télécharger manuellement le rapport et de le charger dans la CAM. Pour plus d’informations, voir [Utilisation de l’analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+
+### Correctifs {#bug-fixes-bpa}
+
+* L’analyseur des bonnes pratiques détecte désormais tous les noeuds de plus de 16 Mo.
+* Les conditions de race causant la correction d&#39;occurrences non-conformistes.
 
 ## Cloud Acceleration Manager {#cam-release}
 
