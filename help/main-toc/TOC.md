@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '5598'
-ht-degree: 98%
+source-wordcount: '5602'
+ht-degree: 97%
 
 ---
 
@@ -1066,6 +1066,8 @@ ht-degree: 98%
    + [Générer des variations](/help/generative-ai/generate-variations.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
+
+
    + Utilisation de Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programmes {#programs}
@@ -1074,23 +1076,23 @@ ht-degree: 98%
          + [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Modification de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Modifier des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Mise en veille des environnements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Création d’un projet d’application AEM {#create-application-project}
          + [Assistant de création du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-      + [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md)
+      + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
       + Gestion de votre code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Gestion des référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Ajout de référentiels Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Ajout de référentiels privés](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Accès aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Gestion des référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Ajouter des référentiels d’Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Ajouter des référentiels privés](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Référentiels d’accès](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [Utilisation de git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Utilisation de Git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilisation de plusieurs référentiels](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configuration de l’équipe de développement des grands comptes](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Configuration de l’équipe de développement d’entreprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [Configuration du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Annotations du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
@@ -1098,7 +1100,7 @@ ht-degree: 98%
          + [Présentation](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configuration d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Gestion des pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Déploiement de votre code](/help/implementing/cloud-manager/deploy-code.md)
       + Présentation des résultats de test {#test-results}
@@ -1109,8 +1111,8 @@ ht-degree: 98%
             + [Vue d’ensemble des tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
             + [Tests fonctionnels Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
-         + [Tableau de bord du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
-      + [Accéder aux journaux et les gérer](/help/implementing/cloud-manager/manage-logs.md)
+         + [Tableau de bord d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+      + [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md)
       + [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md)
       + [Création de rapports de contrat SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -1122,24 +1124,27 @@ ht-degree: 98%
       + Paramètres du domaine {#custom-domain-names}
          + [Présentation](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [Vérifier l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Vérification du statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificats SSL {#manage-ssl-certificates}
          + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [Dépannage des erreurs de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Configurations CDN {#cdn-configurations}
          + [Ajout d’une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + Listes d’adresses IP autorisées {#ip-allow-lists}
          + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-         + [Ajout d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Application et annulation de l’application de listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+         + [Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+         + [Application et annulation de l’application de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Gérer les listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Compréhension des requêtes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md)
+      + [Présentation des requêtes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Tableau de bord des performances du réseau CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
+
+
    + Développement pour AEM as a Cloud Service {#developing}
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Package de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)
