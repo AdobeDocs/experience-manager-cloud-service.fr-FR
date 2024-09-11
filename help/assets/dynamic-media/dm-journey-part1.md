@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 90%
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 # Parcours Dynamic Media : principes de base, première partie {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bienvenue dans le Parcours Dynamic Media.
 
@@ -268,7 +268,6 @@ Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7v
 
 La première partie de ce parcours couvrait les principes de base de diverses rubriques de Dynamic Media. Si vous souhaitez en savoir plus sur ce que vous lisez, utilisez les matériaux ci-dessous pour explorer les concepts plus en détail. Sinon, vous pouvez continuer avec la deuxième partie de votre parcours. Consultez [Étapes suivantes de ce Parcours Dynamic Media](#whats-next).
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 

@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 97%
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 # Parcours Dynamic Media : principes de base, deuxième partie  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bienvenue dans le Parcours Dynamic Media : principes de base, deuxième partie, au cours duquel vous devriez vous familiariser avec les éléments suivants :
 
@@ -211,8 +211,6 @@ Vous venez de lire des articles sur les visionneuses d’images et les visionneu
 ## Facultatif - En savoir plus
 
 Si vous souhaitez en savoir plus, lisez les documents ci-dessous pour explorer ces concepts plus en détail. Sinon, votre Parcours Dynamic Media est terminé !
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_
