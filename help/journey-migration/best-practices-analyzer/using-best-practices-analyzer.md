@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -35,7 +35,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
 
   >[!NOTE]
-  >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA dans un environnement de *création* aussi proche que possible de l’environnement de *production* concernant les personalisations, les configurations, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+  >Pour éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur un environnement *Stage* aussi proche que possible de l’environnement *Production* dans les domaines de la personnalisation, de la configuration, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu des rapports BPA peut nécessiter un temps important, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
