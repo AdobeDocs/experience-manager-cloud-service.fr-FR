@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1350'
 ht-degree: 2%
 
 ---
@@ -153,6 +153,21 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 |         | queryParamMatch | Supprime tous les paramètres de requête correspondant à une expression régulière spécifiée. |
 | **transform** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie), match, remplacement | Remplace une partie du paramètre de requête (seule la propriété &quot;path&quot; est prise en charge) ou l’en-tête de requête, le paramètre de requête ou le cookie de requête par une nouvelle valeur. |
 |              | op:tolower, (reqProperty ou reqHeader ou queryParam ou reqCookie) | Définit le paramètre de requête (seule la propriété &quot;path&quot; est prise en charge) ou l’en-tête de requête, le paramètre de requête ou le cookie de requête sur sa valeur en minuscules. |
+
+Remplacez les actions qui prennent en charge les groupes de capture, comme illustré ci-dessous :
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 Les actions peuvent être liées ensemble. Par exemple :
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **redirect** | location | Valeur de l’en-tête &quot;Emplacement&quot;. |
 |     | status (facultatif, 301 par défaut) | Statut HTTP à utiliser dans le message de redirection, 301 par défaut, les valeurs autorisées sont : 301, 302, 303, 307, 308. |
+
+Les emplacements d’une redirection peuvent être soit des littéraux de chaîne (par exemple, https://www.example.com/page), soit le résultat d’une propriété (par exemple, un chemin) qui est éventuellement transformée, avec la syntaxe suivante :
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
