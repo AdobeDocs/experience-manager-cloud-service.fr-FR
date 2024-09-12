@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 97%
 
 Bienvenue dans le Parcours Dynamic Media : principes de base, deuxième partie, au cours duquel vous devriez vous familiariser avec les éléments suivants :
 
-* L’anatomie d’une URL Dynamic Media et la manière dont Dynamic Media diffuse du contenu
-* Les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources
-* Les visionneuses d’images, visionneuses à 360° et visionneuses de supports variés
+* Anatomie d’une URL Dynamic Media et manière dont Dynamic Media diffuse du contenu.
+* Principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources.
+* Visionneuses d’images, à 360° et de supports variés.
 
 Consultez également le [Parcours Dynamic Media ; principes de base, première partie](/help/assets/dynamic-media/dm-journey-part1.md).
 
