@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 6%
@@ -46,6 +46,5 @@ Pour les réseaux de diffusion de contenu gérés par Adobe, lors de l’utilisa
    | --- | --- |
    | Réseau CDN géré par Adobe | a. Dans la liste déroulante **Domaine** , sélectionnez le nom de domaine que vous souhaitez utiliser.<br>Aucun domaine vérifié n’est disponible dans la liste déroulante ? Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. Dans la liste déroulante Certificat SSL , sélectionnez un certificat que vous souhaitez utiliser.<br>Aucun certificat SSL disponible dans la liste déroulante ? Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
    | Autre fournisseur de réseau de diffusion de contenu. | Sélectionnez cette option si vous utilisez votre propre fournisseur de réseau de diffusion de contenu et non le réseau de diffusion de contenu géré par l’Adobe qui vous est disponible.<br>Dans la liste déroulante **Domaine** , sélectionnez le nom de domaine que vous souhaitez utiliser.<br>Aucun certificat SSL disponible dans la liste déroulante ? Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
-
 
 1. Cliquez sur **Enregistrer**.

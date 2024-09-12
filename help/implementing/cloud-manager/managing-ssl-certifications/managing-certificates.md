@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -25,15 +25,15 @@ L’état de vos certificats SSL peut être compris en un coup d’oeil à parti
 | --- | --- |
 | Vert | Le certificat est valide pendant au moins 14 jours à compter de la date actuelle. |
 | Orange | Le certificat doit expirer dans moins de 14 jours.<br> ・ Assurez-vous que vous disposez d’un plan pour renouveler votre certificat et le remplacer au moyen de l’interface utilisateur de Cloud Manager afin d’éviter tout accès ou interruption au site.<br> ・ Cloud Manager envoie des notifications régulières dans l’interface utilisateur pour vous alerter d’une expiration de certificat imminente. |
-| Rouge | Le certificat SSL a expiré.<br>Voir [Mise à jour d’un certificat SSL géré par le client expiré](#update-ssl-certificate) ou [Suppression d’un certificat SSL](#deleting-an-ssl-certificate). |
+| Rouge | Le certificat SSL a expiré.<br>Voir [Mise à jour d’un certificat SSL géré par un client expiré](#update-ssl-certificate) ou [Suppression d’un certificat SSL](#deleting-an-ssl-certificate). |
 
-## Mise à jour d’un certificat SSL géré par le client expiré {#update-ssl-certificate}
+## Mise à jour d’un certificat SSL géré par un client arrivé à expiration {#update-ssl-certificate}
 
 Lorsqu’un certificat géré par le client expire, les domaines qui sont utilisés avec le certificat expiré ne fonctionnent plus. La mise à jour de vos certificats garantit que votre domaine continue à fonctionner comme vous le souhaitez.
 
 Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
-**Pour mettre à jour un certificat SSL géré par le client expiré :**
+**Pour mettre à jour un certificat SSL géré par un client expiré :**
 
 1. Se connecter à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionner l’organisation appropriée
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
@@ -52,7 +52,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications et les faire appliquer automatiquement.
 
-## Remplacement d’un certificat SSL géré par le client expiré {#replace-ssl-certificate}
+## Remplacement d’un certificat SSL géré par un client arrivé à expiration {#replace-ssl-certificate}
 
 Suivez les mêmes étapes que celles décrites dans la section [Mise à jour d’un certificat SSL expiré](#update-ssl-certificate) pour remplacer un certificat SSL géré par le client arrivé à expiration.
 

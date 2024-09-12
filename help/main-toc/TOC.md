@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
-source-wordcount: '5602'
+source-wordcount: '5605'
 ht-degree: 97%
 
 ---
@@ -1068,6 +1068,7 @@ ht-degree: 97%
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
 
 
+
    + Utilisation de Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programmes {#programs}
@@ -1134,6 +1135,7 @@ ht-degree: 97%
          + [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Configurations CDN {#cdn-configurations}
          + [Ajout d’une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [Gestion des configurations CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listes d’adresses IP autorisées {#ip-allow-lists}
          + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1143,6 +1145,7 @@ ht-degree: 97%
       + [Présentation des requêtes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Tableau de bord des performances du réseau CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
+
 
 
    + Développement pour AEM as a Cloud Service {#developing}
