@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '5621'
+source-wordcount: '5638'
 ht-degree: 96%
 
 ---
@@ -1122,7 +1122,9 @@ ht-degree: 96%
       + [Notifications](/help/implementing/cloud-manager/notifications.md)
       + [Mise en réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=fr)
       + Edge Delivery Sites {#edge-delivery-sites}
-         + [Prise en charge d’Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Présentation des Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Ajout d’un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [Gestion des sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Paramètres du domaine {#custom-domain-names}
          + [Présentation des paramètres de domaine](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1130,7 +1132,7 @@ ht-degree: 96%
          + [Vérification du statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificats SSL {#manage-ssl-certificates}
-         + [Présentation des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Présentation des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          + [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Dépannage des erreurs de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

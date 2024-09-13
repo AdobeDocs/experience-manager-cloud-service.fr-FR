@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ Voir aussi [Dépannage des erreurs de certificat SSL](/help/implementing/cloud-m
 
 La configuration d’un certificat peut prendre quelques jours. Par conséquent, Adobe recommande que le certificat soit configuré bien avant toute date limite ou d’activation.
 
-Veillez à consulter les **exigences de certificat** dans [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) pour vous assurer qu’AEM as a Cloud Service prend en charge le certificat que vous souhaitez ajouter.
+Veillez à consulter les **exigences de certificat** dans [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) pour vous assurer qu’AEM as a Cloud Service prend en charge le certificat que vous souhaitez ajouter.
 
 Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
 
@@ -45,7 +45,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 
 1. Dans le coin supérieur droit de la page, cliquez sur **Ajouter un certificat SSL**.
 
-1. Dans la boîte de dialogue **Ajouter un certificat SSL**, en fonction de [votre cas d’utilisation particulier](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), effectuez l’une des opérations suivantes :
+1. Dans la boîte de dialogue **Ajouter un certificat SSL**, en fonction de [votre cas d’utilisation particulier](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), effectuez l’une des opérations suivantes :
 
    | | Cas d’utilisation | Étapes |
    | --- | --- | --- |

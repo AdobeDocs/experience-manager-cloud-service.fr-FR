@@ -1,26 +1,26 @@
 ---
-title: Navigation dans l’interface d’utilisation de Cloud Manager
+title: Navigation dans l’interface utilisateur de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 75%
+source-wordcount: '1518'
+ht-degree: 66%
 
 ---
 
 
-# Navigation dans l’interface d’utilisation de Cloud Manager {#navigation}
+# Naviguer dans l’interface d’utilisation de Cloud Manager {#navigation}
 
 Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 
 L’interface d’utilisation de Cloud Manager est composée principalement de deux interfaces graphiques :
 
-* [La console Mes programmes](#my-programs-console) où vous pouvez afficher et gérer tous vos programmes.
-* [La fenêtre Vue d’ensemble du programme](#program-overview) où vous pouvez consulter les détails d’un programme individuel et le gérer.
+* [La console Mes programmes](#my-programs-console) permet d’afficher et de gérer tous vos programmes.
+* [La fenêtre Vue d’ensemble du programme](#program-overview) permet de consulter les détails d’un programme individuel et de le gérer.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ La console Mes programmes fournit une vue d’ensemble de tous les programmes au
    * Notez que les onglets sont fermés par défaut et peuvent être affichés à l’aide du menu hamburger dans l’[en-tête Cloud Manager](#cloud-manager-header).
 1. Des [Statistiques et un appel à l’action](#statistics) pour une vue d’ensemble de votre activité récente.
 1. [**Section Mes programmes**](#my-programs-section) avec une vue d’ensemble de tous vos programmes.
-1. Des [Liens rapides](#quick-links-section) pour accéder facilement aux ressources connexes.
+1. [Liens rapides](#quick-links-section) pour accéder facilement aux ressources associées.
 
 >[!TIP]
 >
@@ -57,16 +57,16 @@ La première est l’en-tête de Cloud Manager, qui est présent en permanence 
 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
-1. Le menu hamburger donne accès à des onglets qui peuvent vous amener à des parties spécifiques d’un programme individuel ou basculer entre le [Tableau de bord de la licence](/help/implementing/cloud-manager/license-dashboard.md) et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
+1. Le menu hamburger permet d&#39;accéder à des onglets pouvant vous emmener dans des parties spécifiques d&#39;un programme. Vous pouvez également basculer entre le [tableau de bord de la licence](/help/implementing/cloud-manager/license-dashboard.md) et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
 1. Le bouton Cloud Manager vous ramène à la console Mes programmes de Cloud Manager, où que vous soyez dans Cloud Manager.
 1. Appuyez ou cliquez sur le bouton Commentaires pour envoyer des commentaires à Adobe concernant Cloud Manager.
-1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Fonudation Internal). Appuyez ou cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
+1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Foundation Internal). Appuyez ou cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
 1. Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
 1. L’icône d’aide permet d’accéder rapidement aux ressources d’apprentissage et d’assistance.
 1. L’icône de notifications comporte un badge indiquant le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement attribuées.
 1. Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre utilisatrice pour accéder à vos paramètres d’utilisateur ou d’utilisatrice. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
-#### Barre d’outils des programmes {#program-toolbar}
+#### Barre d’outils du programme {#program-toolbar}
 
 La barre d’outils des programmes fournit des liens pour basculer entre les programmes Cloud Manager et des actions contextuelles.
 
@@ -76,7 +76,7 @@ La barre d’outils des programmes fournit des liens pour basculer entre les pro
 1. Le lien de prise en main vous permet d’accéder au [parcours d’intégration et de documentation](/help/journey-onboarding/overview.md) pour vous familiariser avec Cloud Manager.
 1. Le bouton d’action propose des actions contextuelles, telles que la création d’un programme.
 
-### Statistiques et appels à l’action {#statistics}
+### Statistiques et appels à l&#39;action {#statistics}
 
 La section statistiques et appel à l’action fournit des données agrégées pour votre organisation. Par exemple, si vous avez configuré vos programmes avec succès, les statistiques de vos activités au cours des 90 derniers jours peuvent s’afficher, notamment :
 
@@ -96,7 +96,8 @@ La section **Mes programmes** répertorie les cartes représentant chaque progra
 >
 >Selon vos privilèges, il se peut que vous ne puissiez pas sélectionner certains programmes.
 
-Utilisez les options de tri pour trouver plus rapidement le programme dont vous avez besoin.
+
+Pour trouver plus facilement le programme dont vous avez besoin, utilisez les options de tri.
 
 ![Options de tri](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Utilisez les options de tri pour trouver plus rapidement le programme dont vous 
 
 #### Cartes de programme {#program-cards}
 
-Chaque programme est représenté par une vignette (ou une ligne dans un tableau), qui donne une vue d’ensemble du programme et des liens rapides pour effectuer des actions.
+Une carte (ou ligne dans un tableau) représente chaque programme, fournissant un aperçu du programme et des liens rapides pour agir.
 
 ![Vignette du programme](assets/program-card.png)
 
@@ -144,7 +145,7 @@ L’icône d’informations permet un accès rapide à des informations supplém
 
 ![Informations](assets/information-list-view.png)
 
-L’icône représentant des points de suspension vous permet d’accéder à des actions supplémentaires que vous pouvez effectuer sur le programme.
+L’icône représentant des points de suspension permet d’accéder à des actions supplémentaires que vous pouvez effectuer sur le programme.
 
 ![Bouton représentant des points de suspension pour les programmes](assets/program-ellipsis.png)
 
@@ -158,22 +159,23 @@ L’icône représentant des points de suspension vous permet d’accéder à de
 >Pour plus d’informations sur les programmes et la création et la gestion des programmes, consultez les documents suivants.
 >
 >* [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+>* [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 >* [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+
 
 ### Section Liens rapides {#quick-links-section}
 
-La section Liens rapides vous donne accès aux ressources connexes couramment utilisées.
+La section Liens rapides vous donne accès aux ressources fréquemment utilisées qui sont liées.
 
-## Fenêtre Vue d’ensemble du programme {#program-overview}
+## Fenêtre Aperçu du programme {#program-overview}
 
-Une fois que vous avez sélectionné un programme dans la console **[Mes programmes](#my-programs-console)**, vous accédez à la fenêtre **Aperçu du programme**.
+Lorsqu’un programme est sélectionné dans la console **[Mes programmes](#my-programs-console)**, vous accédez à la fenêtre **Aperçu du programme**.
 
 ![Vue d’ensemble du programme](assets/program-overview.png)
 
 La vue d’ensemble du programme vous donne accès à toutes les informations d’un programme Cloud Manager. Comme la console **Mes programmes**, elle est composée de plusieurs parties.
 
-1. Des [barres d’outils](#program-overview-toolbar) pour revenir rapidement à la console Mes programmes et naviguer dans le programme.
+1. [Barres d’outils](#program-overview-toolbar) pour revenir rapidement à la console Mes programmes et parcourir le programme
 1. Des [onglets](#program-tabs) pour basculer entre les différents éléments du programme.
 1. Un [appel à l’action](#cta) basé sur les dernières actions du programme.
 1. Une [vue d’ensemble des environnements](#environments) du programme.
@@ -183,7 +185,7 @@ La vue d’ensemble du programme vous donne accès à toutes les informations d�
 
 ### Barres d’outils {#program-overview-toolbar}
 
-Les barres d’outils de la présentation du programme sont similaires à celles de la [console Mes programmes](#my-programs-toolbars). Seules les différences sont indiquées ici.
+Les barres d’outils pour la présentation du programme sont similaires à celles de la [console Mes programmes](#my-programs-toolbars). Seules les différences sont indiquées ici.
 
 #### En-tête de Cloud Manager {#cloud-manager-header-2}
 
@@ -193,39 +195,49 @@ L’en-tête de Cloud Manager comporte un menu Hamburger qui s’ouvre automati
 
 Appuyez ou cliquez sur l’icône de menu Hamburger pour masquer les onglets.
 
-#### Barre d’outils des programmes {#program-toolbar-2}
+#### Barre d’outils du programme {#program-toolbar-2}
 
-La barre d’outils du programme vous permet de basculer rapidement vers d’autres programmes, mais vous permet également d’accéder à des actions contextuelles telles que l’ajout et la modification du programme.
+La barre d’outils du programme permet de basculer rapidement vers d’autres programmes, mais permet également d’accéder à des actions contextuelles telles que l’ajout et la modification du programme.
 
 ![Barre d’outils du programme](assets/cloud-manager-program-toolbar.png)
 
-De plus, la barre d’outils indique toujours l’onglet sur lequel vous vous trouvez si vous avez choisi de masquer les onglets à l’aide du menu Hamburger.
+La barre d’outils affiche toujours l’onglet actif, même si vous avez masqué les onglets à l’aide du menu hamburger.
 
 ### Onglets des programmes {#program-tabs}
 
-Chaque programme comporte de nombreuses options et données. Ces données sont regroupées dans des onglets afin de faciliter la navigation dans le programme. Les onglets permettent d’accéder aux éléments suivants :
+Chaque programme comporte de nombreuses options et des données associées. Ces options et données sont regroupées dans des onglets afin de faciliter la navigation dans le programme. Les onglets permettent d’accéder aux éléments suivants :
+
+**Programme**
 
 * Vue d’ensemble : vue d’ensemble du programme, telle que décrite dans le présent document.
 * [Activité](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) : historique des exécutions de pipeline du programme.
 * [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) : tous les pipelines configurés pour le programme.
 * [Référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) : tous les référentiels configurés pour le programme.
 * [Rapports](/help/implementing/cloud-manager/sla-reporting.md) : mesures, telles que les données SLA.
+
+**Services**
+
 * [Environnements](/help/implementing/cloud-manager/manage-environments.md) : tous les environnements configurés pour le programme.
+* [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Gestion des sites Edge Delivery
 * [Paramètres de domaine](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gestion des noms de domaine personnalisés pour le programme
-* [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - Gestion des certificats SSL pour le programme
+* [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Gestion des certificats SSL pour le programme
+* [Configurations du réseau de diffusion de contenu](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gestion des configurations du réseau de diffusion de contenu
 * [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Définition de listes autorisées pour certaines adresses IP
 * [Jeux de contenu](/help/implementing/developing/tools/content-copy.md) : jeux de contenu créé à des fins de copie.
 * [Activité Copie de contenu](/help/implementing/developing/tools/content-copy.md) : activités de copie de contenu.
 * [Infrastructure réseau](/help/security/configuring-advanced-networking.md) - Gérez les options de mise en réseau avancées pour le programme
+
+**Resources**
+
 * Parcours de formation : ressources de formation supplémentaires pour Cloud Manager.
 
 Par défaut, lorsque vous ouvrez un programme, vous accédez à l’onglet **Vue d’ensemble**. L’onglet actif est mis en surbrillance. Sélectionnez un autre onglet pour afficher ses détails.
 
 Utilisez le menu Hamburger dans l’[en-tête de Cloud Manager](#cloud-manager-header-2) pour masquer les onglets.
 
-### Appel à l’action {#cta}
+### Appel à destination {#cta}
 
-La section Appel à l’action vous fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les étapes suivantes proposées ainsi qu&#39;un rappel d&#39;une date de mise en service, [définie lors de la création du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+La section Appel à l’action fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les étapes suivantes et un rappel d’une date de mise en service, [définie lors de la création du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Appel à l’action pour un nouveau programme](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

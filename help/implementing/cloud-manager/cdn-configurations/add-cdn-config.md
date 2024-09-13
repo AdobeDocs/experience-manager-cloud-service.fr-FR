@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -27,13 +27,16 @@ Pour les réseaux de diffusion de contenu gérés par Adobe, lors de l’utilisa
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans le panneau de navigation de gauche, sous **Services**, cliquez sur **Configurations CDN**.
+1. Selon votre cas d’utilisation, effectuez l’une des opérations suivantes :
 
-1. Dans le coin supérieur droit de la page Configurations du réseau de diffusion de contenu, cliquez sur **Ajouter**.
-
-   ![Boîte de dialogue Configurer le réseau de diffusion de contenu](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | Cas d’utilisation | Étapes |
+   | --- | --- |
+   | Je souhaite ajouter une configuration CDN à un site Edge Delivery *existant* dans Cloud Manager | a. Dans le panneau de navigation de gauche, sous **Services**, cliquez sur **Edge Delivery Sites**.<br>b. Dans le tableau Edge Delivery, à la fin d’une ligne à laquelle aucun domaine n’est associé, cliquez sur les points de suspension.<br>c. Cliquez sur **Configurer CDN**.  ![ Cliquez sur Configurer le réseau de diffusion de contenu pour un site Edge Delivery ](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Je souhaite ajouter une configuration CDN dans Cloud Manager | a. Dans le panneau de navigation de gauche, sous **Services**, cliquez sur **Configurations CDN**.<br>b. Dans le coin supérieur droit de la page Configurations du réseau de diffusion de contenu, cliquez sur **Ajouter**. |
 
 1. Dans la boîte de dialogue **Configurer CDN**, dans la liste déroulante **Origin**, sélectionnez l’une des options suivantes :
+
+   ![Boîte de dialogue Configurer le réseau de diffusion de contenu](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | Origine | Description |
    | --- | --- |
