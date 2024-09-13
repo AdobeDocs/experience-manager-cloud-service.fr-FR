@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -41,7 +41,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 1. Dans l’écran **Environments** (Environnements), accédez à l’écran **Certificats SSL**.
 1. Dans la ligne du certificat géré par le client arrivé à expiration que vous souhaitez mettre à jour, cliquez sur le bouton représentant des points de suspension à l’extrémité droite, puis sélectionnez **Afficher et mettre à jour**.
 
-   ![Mettre à jour une certification SSL gérée par le client expirée](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Mettre à jour une certification SSL gérée par un client expirée](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. Dans la boîte de dialogue **Afficher et mettre à jour le certificat SSL**, procédez comme suit :
 
@@ -54,7 +54,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 
 ## Remplacement d’un certificat SSL géré par un client arrivé à expiration {#replace-ssl-certificate}
 
-Suivez les mêmes étapes que celles décrites dans la section [Mise à jour d’un certificat SSL expiré](#update-ssl-certificate) pour remplacer un certificat SSL géré par le client arrivé à expiration.
+Suivez les mêmes étapes que celles décrites dans la section [Mettre à jour un certificat SSL expiré](#update-ssl-certificate) pour remplacer un certificat SSL géré par le client arrivé à expiration.
 
 ## Suppression d’un certificat SSL {#deleting-an-ssl-certificate}
 
@@ -87,4 +87,4 @@ Le message disparaît une fois que toutes les configurations d’environnement p
 
 Pour plus d’informations, voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
 
-Un message similaire est également fourni dans la **Liste d’adresses IP autorisées** et les pages **Environnements** pour les environnements qui possèdent des configurations CDN préexistantes pour les liste d’adresses IP autorisées ou les noms de domaine personnalisés.
+Un message similaire est également fourni sur les pages **Liste autorisée IP** et **Environnements** pour les environnements ayant des configurations CDN préexistantes pour les Listes autorisées IP ou les noms de domaine personnalisés.
