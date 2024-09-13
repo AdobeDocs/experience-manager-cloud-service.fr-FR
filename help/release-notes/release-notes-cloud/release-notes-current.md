@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1245'
+ht-degree: 79%
 
 ---
 
@@ -65,6 +65,12 @@ Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
+
+**Sous-titres vidéo basés sur l’IA**
+
+Les sous-titres vidéo basés sur l’IA dans Adobe Dynamic Media utilisent l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et améliorer l’expérience de l’utilisateur en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés à des fins de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent ou préfèrent la prise en charge vidéo textuelle.
+
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 
 **Génération d’images d’Adobe Firefly mise à jour**
@@ -80,11 +86,11 @@ Assets as a Cloud Service prend désormais en charge les documents Photoshop 
 ### Nouvelles améliorations dans le hub de contenus {#content-hub-new-enhancements}
 
 * Amélioration de la gestion des noms de fichier longs, extension facile du nom complet via une info-bulle.
-* Amélioration des miniatures pour mieux adapter le format du contenu et couvrir une plus grande zone de contenu.
+* Amélioration des miniatures pour mieux adapter les proportions du contenu et couvrir une plus grande zone de contenu.
 * Expérience de miniature personnalisée à partir d’AEM prise en charge avec le hub de contenus.
 * Améliorations de la recherche de couleurs.
 * Améliorations apportées à l’expérience d’enregistrement des configurations.
-* Amélioration de la page d’informations des collections pour refléter le nom du créateur ou de la créatrice.
+* Amélioration de la page d’informations des collections pour refléter le nom du créateur.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -93,7 +99,7 @@ Assets as a Cloud Service prend désormais en charge les documents Photoshop 
 
 #### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
 
-Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les entreprises en réduisant l’abandon de formulaire, car les utilisateurs n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
@@ -112,17 +118,17 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
 * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. Notre IA générative génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA génératives. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
 * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide d’invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez des invites d’IA générative pour optimiser vos formulaires pour la réactivité mobile et créez des formulaires attrayants visuellement pour les utilisateurs.
 
-* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez des invites d’IA générative pour configurer une action d’envoi sans effort pour votre formulaire. Faites votre choix dans une bibliothèque d’actions d’envoi préconfigurées ou d’actions d’envoi personnalisées créées et déployées par votre équipe de développement.
 
 >[!IMPORTANT]
 >
-> Si vous souhaitez rejoindre le programme d’accès anticipé pour toute innovation, envoyez simplement un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
+> Vous souhaitez adhérer au Programme d’accès anticipé pour toute innovation Forms ? Envoyez un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
