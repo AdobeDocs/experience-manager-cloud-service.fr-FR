@@ -5,24 +5,20 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 84%
+source-wordcount: '293'
+ht-degree: 70%
 
 ---
 
 # Connexion à Microsoft Translator {#connecting-to-microsoft-translator}
 
-Créez une configuration afin que le service cloud [Microsoft Translator](https://www.microsoft.com/fr-fr/translator/business/) utilise votre compte Microsoft Translator pour traduire le contenu de pages ou de ressources AEM.
+AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.microsoft.com/fr-fr/translator/business/) afin de traduire le contenu ou les ressources de la page. Après avoir obtenu une licence de Microsoft pour utiliser Microsoft Translator, configurez le connecteur en suivant les instructions de cette page.
 
 >[!TIP]
 >
->Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
-
->[!NOTE]
->
->AEM propose un compte d’évaluation de Microsoft Translator qui permet de traduire gratuitement un maximum de 2 000 000 caractères par mois. Pour obtenir un abonnement de compte adapté aux systèmes de production, voir [Mise à niveau de la configuration de licence d’évaluation de Microsoft Translator](#upgrading-the-microsoft-translator-trial-license-configuration).
+>Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 | Propriété | Description |
 |---|---|
@@ -30,8 +26,6 @@ Créez une configuration afin que le service cloud [Microsoft Translator](https:
 | Attribution de traduction | (Facultatif) Pour le contenu créé par l’utilisateur ou l’utilisatrice, l’attribution qui apparaît à côté du texte traduit, par exemple `Translations by Microsoft`. |
 | ID d’espace de travail | (Facultatif) ID de votre moteur Microsoft Translator personnalisé à utiliser |
 | Clé d’abonnement | Votre clé d’abonnement Microsoft pour Microsoft Translator |
-
-Après avoir créé la configuration, vous devez [l’activer](#activating-the-translator-service-configurations).
 
 La procédure suivante crée une configuration Microsoft Translator.
 
@@ -48,31 +42,11 @@ La procédure suivante crée une configuration Microsoft Translator.
 1. Cliquez sur **Créer**.
 1. Dans la fenêtre **Modifier la configuration**, indiquez les valeurs du service de traduction décrit dans le tableau précédent.
 
-   ![Modifier la configuration de traduction](../assets/edit-translation-config.png)
+   ![Modifier la configuration de traduction](../assets/msft-config-ui.png)
 
 1. Sélectionnez **Connect** pour vérifier la connexion.
 1. Sélectionnez **Enregistrer et fermer**.
 
-## Mise à niveau de la configuration de licence d’évaluation de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
+## Publication des configurations du service de traducteur {#publishing-the-translator-service-configurations}
 
-Les pages de configuration Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour obtenir un abonnement de compte qui est adapté aux systèmes d’exploitation.
-
-1. Dans le [ panneau de navigation,](/help/sites-cloud/authoring/basic-handling.md#first-steps) sélectionnez **Outils** > **Cloud Service** > **Cloud Service de traduction**.
-1. Sélectionnez votre configuration Microsoft Translator existante.
-1. Sélectionnez **Modifier**.
-1. Dans la fenêtre **Modifier la configuration**, sélectionnez **Abonnement à la mise à niveau**. Une page web Microsoft contenant des détails supplémentaires sur le service s’ouvre.
-
-## Personnalisation de votre moteur Microsoft Translator {#customizing-your-microsoft-translator-engine}
-
-Les pages de configuration de Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour personnaliser votre moteur Microsoft Translator.
-
-1. Dans le [ panneau de navigation,](/help/sites-cloud/authoring/basic-handling.md#first-steps) sélectionnez **Outils** > **Cloud Service** > **Cloud Service de traduction**.
-1. Sélectionnez votre configuration Microsoft Translator existante.
-1. Sélectionnez **Modifier**.
-1. Dans la fenêtre **Modifier la configuration**, sélectionnez **Personnaliser le traducteur**. Utilisez la page web de Microsoft qui s’ouvre pour personnaliser votre service.
-
-## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}
-
-Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode de [publication d’une arborescence](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les nœuds de référentiel qui contiennent les configurations Microsoft Translator. Les nœuds se trouvent sous les nœuds parents suivants :
-
-* `/libs/settings/cloudconfigs/translation/msft-translation`
+Pour terminer, publiez les configurations du traducteur Microsoft afin de prendre en charge le contenu traduit publié, à l’aide de l’action [publier une arborescence](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree).
