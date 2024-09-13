@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.7.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 77%
+source-wordcount: '1626'
+ht-degree: 76%
 
 ---
 
@@ -65,9 +65,11 @@ Le sélecteur de ressources permet désormais aux auteurs de contenu de charger 
 
 ### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
 
-**Sous-titres vidéo basés sur l’IA**
+**Sous-titres vidéo générés par l’IA**
 
-Les sous-titres vidéo basés sur l’IA dans Adobe Dynamic Media utilisent l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et améliorer l’expérience de l’utilisateur en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés à des fins de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent ou préfèrent la prise en charge vidéo textuelle.
+Les sous-titres vidéo générés par l’IA dans Adobe Dynamic Media utilisent une intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et améliorer l’expérience de l’utilisateur en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés à des fins de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent ou préfèrent la prise en charge vidéo textuelle.
+
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, [ créez et envoyez un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 
