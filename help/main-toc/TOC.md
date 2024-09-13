@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
 workflow-type: tm+mt
-source-wordcount: '5615'
-ht-degree: 97%
+source-wordcount: '5621'
+ht-degree: 96%
 
 ---
 
@@ -629,8 +629,8 @@ ht-degree: 97%
    + Hub de contenus {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
       + [Déployer le hub de contenus](/help/assets/deploy-content-hub.md)
-      + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
       + [Charger ou importer des ressources approuvées par la marque dans le hub de contenus](/help/assets/upload-brand-approved-assets.md)
+      + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
       + [Approuver des ressources pour le hub de contenus](/help/assets/approve-assets-content-hub.md)
       + [Rechercher des ressources dans le hub de contenus](/help/assets/search-assets-content-hub.md)
       + [Propriétés de la ressource](/help/assets/asset-properties-content-hub.md)
@@ -638,7 +638,8 @@ ht-degree: 97%
       + [Télécharger des ressources à l’aide du hub de contenus](/help/assets/download-assets-content-hub.md)
       + [Gérer des collections dans le hub de contenus](/help/assets/collections-content-hub.md)
       + [Modifier des images à l’aide d’Adobe Express dans le hub de contenus](/help/assets/edit-images-content-hub.md)
-      + [Asset Insights dans le hub de contenus](/help/assets/insights-content-hub.md)
+      + [Statistiques sur les ressources dans Content Hub](/help/assets/insights-content-hub.md)
+      + [Questions fréquentes sur Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
    + Bonnes pratiques{#best-practices}
       + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
       + [Gestion des métadonnées et bonnes pratiques](/help/assets/metadata-best-practices.md)
