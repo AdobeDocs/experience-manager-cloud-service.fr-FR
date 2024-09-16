@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Créer des composants personnalisés
 
-Les Edge Delivery Services pour AEM Forms vous permettent de personnaliser les [composants de formulaire d’HTML natifs](/help/edge/docs/forms/form-components.md) et de créer des formulaires interactifs et conviviaux. Il vous permet de modifier les composants de formulaire avec des balises prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md) à l’aide de CSS personnalisés (feuilles de style en cascade) et du code personnalisé pour la décoration du composant, améliorant ainsi l’aspect des champs de formulaire dans un bloc de formulaires adaptatifs.
+Edge Delivery Services pour AEM Forms vous permet de personnaliser les [composants de formulaire HTML natifs](/help/edge/docs/forms/form-components.md) et de créer des formulaires interactifs et conviviaux. Il vous permet de modifier les composants de formulaire avec des balises prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md) à l’aide de CSS personnalisés (feuilles de style en cascade) et du code personnalisé pour la décoration du composant, améliorant ainsi l’aspect des champs de formulaire dans un bloc de formulaires adaptatifs.
 
 ![Composant personnalisé](/help/edge/assets/custom-component-image.png)
 

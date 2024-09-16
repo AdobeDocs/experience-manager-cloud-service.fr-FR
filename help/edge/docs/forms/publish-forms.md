@@ -1,13 +1,13 @@
 ---
-title: Publish et Edge Delivery Services pour AEM Forms
-description: Publish et Edge Delivery Services pour AEM Forms
+title: Publier un Edge Delivery Services pour AEM Forms
+description: Publier un Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Une fois que vous êtes en mesure de partager votre formulaire avec vos clientes
 
 ![Écosystème de création basé sur des documents](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
-## Conditions préalables
+## Prérequis
 
 * Vous disposez d’un projet AEM basé sur [le modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou vous avez [ajouté un bloc de formulaire adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Votre formulaire a été entièrement testé et est prêt à l’emploi.

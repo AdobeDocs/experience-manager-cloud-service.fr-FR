@@ -1,19 +1,19 @@
 ---
 title: Composants de bloc de formulaire adaptatif et leurs propriétés
-description: Ce document présente les composants de formulaire et leurs propriétés disponibles dans les Edge Delivery Services pour AEM Forms.
+description: Ce document présente une vue d’ensemble des composants de formulaire et de leurs propriétés disponibles dans Edge Delivery Services pour AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Composants de bloc de formulaire adaptatif et leurs propriétés
 
-Edge Delivery Services pour AEM Forms vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
+Edge Delivery Services pour AEM Forms vous permet de créer des formulaires interactifs et conviviaux à l’aide de divers composants. Ces composants répondent à différents types de collecte de données et peuvent être facilement personnalisés en fonction de vos besoins.
 
 
 ![Exemple de feuille de calcul avec quelques composants et propriétés](/help/edge/assets/sample-form-in-spreadsheet.png)

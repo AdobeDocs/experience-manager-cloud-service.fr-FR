@@ -1,13 +1,13 @@
 ---
-title: Personnalisation du thème et du style d’un Edge Delivery Services pour AEM Forms
-description: Personnalisation du thème et du style d’un Edge Delivery Services pour AEM Forms
+title: Personnaliser le thème et le style d’un Edge Delivery Services pour AEM Forms
+description: Personnaliser le thème et le style d’un Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2016'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

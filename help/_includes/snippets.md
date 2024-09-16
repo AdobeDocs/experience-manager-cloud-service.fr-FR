@@ -1,8 +1,8 @@
 ---
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 89%
 
 ## Voir également {#see-more-forms-eds}
 
-* [Prise en main des Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
 * [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
@@ -160,24 +160,24 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!TIP]
 >
->Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Vous découvrez Dynamic Media ? Pour une vue d’ensemble rapide et de haut niveau de Dynamic Media, consultez la section [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
-## Voir aussi pour Dynamic Media {#see-also-dm}
+## Voir aussi pour Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Vous découvrez Dynamic Media ? Pour une vue d’ensemble rapide et de haut niveau de Dynamic Media, consultez la section [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Suivez les [Bonnes pratiques de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) pour obtenir le meilleur rapport qualité-prix.
+>* Suivez les [Bonnes pratiques de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) pour en tirer le meilleur parti.
 >
->* Testez les fonctionnalités d’image Dynamic Media avec l’ [outil d’instantané](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Testez les fonctionnalités d’image Dynamic Media avec l’[outil Instantané](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Assurez-vous que la lecture de la vidéo est fluide avec la [vidéo adaptative](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Assurez une lecture fluide des vidéos avec une diffusion [vidéo à débit adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Automatisez le recadrage des [images avec recadrage intelligent](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatisez le recadrage des [images avec le recadrage intelligent](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatisez le recadrage de [vidéos avec recadrage intelligent](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatisez le recadrage des [vidéos avec le recadrage intelligent](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Diffusez [une expérience interactive 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Diffusez [une expérience interactive optimisée en 3D](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 

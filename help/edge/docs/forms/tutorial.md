@@ -1,19 +1,19 @@
 ---
-title: Prise en main des Edge Delivery Services pour AEM Forms - Tutoriel du développeur
+title: Commencer avec Edge Delivery Services pour AEM Forms - Tutoriel pour l’équipe de développement
 description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe Experience Manager Forms (AEM). D’ici dix à vingt minutes, vous aurez créé vos propres formulaires.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Prise en main - Tutoriel pour l’équipe de développement
 
-À l’ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. Edge Delivery Services for AEM Forms (EDS) vous permet de créer des formulaires à l’aide d’outils familiers tels que Google Docs et Microsoft Office.
+À l’ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. Edge Delivery Services (EDS) pour AEM Forms vous permet de créer des formulaires à l’aide d’outils courants tels que Google Docs et Microsoft Office.
 
 Ces formulaires envoient directement les données vers un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser l’écosystème dynamique et les API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou pour démarrer un workflow d’entreprise existant.
 
@@ -21,7 +21,7 @@ AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous per
 
 Ce tutoriel AEM Forms vous guide tout au long des étapes de création, de prévisualisation et de publication de votre propre formulaire personnalisé avec un nouveau projet Adobe Experience Manager (AEM) Forms.
 
-## Conditions préalables
+## Prérequis
 
 * Vous disposez d’un compte GitHub et vous comprenez les concepts de base de Git.
 * Vous disposez d’un compte Google ou Microsoft SharePoint.
