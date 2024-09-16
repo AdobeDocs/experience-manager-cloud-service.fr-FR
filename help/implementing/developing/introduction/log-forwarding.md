@@ -4,10 +4,10 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -177,9 +177,10 @@ Les journaux d’AEM (y compris Apache/Dispatcher) apparaissent sous un dossier 
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 Sous chaque dossier, un seul fichier est créé et ajouté. Les clients sont responsables du traitement et de la gestion de ce fichier afin qu’il ne se développe pas trop.
 
@@ -209,6 +210,9 @@ Considérations :
 
 * Créez une clé API, sans intégration avec un fournisseur cloud spécifique.
 * la propriété tags est facultative.
+* Pour les journaux d’AEM, la balise source de données est définie sur `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` ou `aemhttpderror`.
+* Pour les journaux CDN, la balise source Datadog est définie sur `aemcdn`.
+* la balise du service de données est définie sur `adobeaemcloud`, mais vous pouvez la remplacer dans la section des balises.
 
 
 ### Elasticsearch et OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 Considérations :
 
+* par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
 * Pour les informations d’identification, veillez à utiliser les informations d’identification de déploiement plutôt que les informations d’identification de compte. Il s’agit des informations d’identification générées dans un écran qui peut ressembler à cette image :
 
 ![Informations d’identification de déploiement élastiques](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* Pour les journaux d’AEM, `index` est défini sur l’un des `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` ou `aemhttpderror`
 * La propriété de pipeline facultative doit être définie sur le nom du pipeline d’ingestion Elasticsearch ou OpenSearch, qui peut être configuré pour acheminer l’entrée de journal vers l’index approprié. Le type de processeur du pipeline doit être défini sur *script* et le langage de script doit être défini sur *sans douleur*. Voici un exemple de fragment de script pour acheminer les entrées de journal vers un index tel que aemaccess_dev_26_06_2024 :
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 Considérations :
 
-* La chaîne d’URL doit inclure **https://** ou la validation échouera. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est utilisé.
-* Si vous souhaitez utiliser un port différent du port 443, veuillez le fournir dans le cadre de l’URL.
+* La chaîne d’URL doit inclure **https://** ou la validation échouera.
+* L’URL peut inclure un port. Par exemple, `https://example.com:8443/aem_logs/aem`. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est utilisé.
 
 #### Logs CDN HTTPS {#https-cdn}
 
@@ -278,13 +284,14 @@ Il existe également une propriété nommée `sourcetype`, qui est définie sur 
 
 Pour les journaux d’AEM (y compris apache/dispatcher), les demandes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Des propriétés supplémentaires sont mentionnées dans la section [Formats de saisie de journal](#log-format) ci-dessous.
 
-Il existe également une propriété nommée `sourcetype`, définie sur l’une de ces valeurs :
+Il existe également une propriété nommée `Source-Type`, définie sur l’une de ces valeurs :
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+Considérations :
+
+* par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## Mise en réseau avancée {#advanced-networking}
 
->[!NOTE]
->
->Cette fonctionnalité n’est pas encore prête pour les utilisateurs plus précoces.
-
-
 Certaines organisations choisissent de restreindre le trafic qui peut être reçu par les destinations de journalisation.
 
-Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la [documentation rapide - Liste d’adresses IP publiques](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP dédiée vers leur destination finale.
+Pour le journal du réseau de diffusion de contenu, vous pouvez ajouter des adresses IP aux listes autorisées, comme décrit dans la [documentation rapide - Liste d’adresses IP publiques](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, envisagez d’envoyer du trafic vers un serveur https ou (non Adobe) Azure Blob Store où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
 
-Pour les journaux d’AEM (y compris Apache/Dispatcher), vous pouvez configurer le transfert des journaux pour passer par la [mise en réseau avancée](/help/security/configuring-advanced-networking.md). Consultez les modèles pour les trois types de réseau avancés ci-dessous, qui utilisent un paramètre facultatif `port` , ainsi que le paramètre `host` .
-
-### Sortie de port flexible {#flex-port}
-
-Si le trafic du journal va vers un port autre que 443 (par exemple, 8443 ci-dessous), configurez la mise en réseau avancée comme suit :
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-et configurez le fichier yaml comme suit :
+Pour les journaux d’AEM (y compris Apache/Dispatcher), si vous avez configuré la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), vous pouvez utiliser la propriété advancedNetworking pour les transférer à partir d’une adresse IP de sortie dédiée ou sur un VPN.
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### Adresse IP Egress dédiée {#dedicated-egress}
-
-
-Si le trafic du journal doit sortir d’une adresse IP de sortie dédiée, configurez la mise en réseau avancée comme suit :
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-et configurez le fichier yaml comme suit :
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-Si le trafic du journal doit passer par un VPN, configurez la mise en réseau avancée comme suit :
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
