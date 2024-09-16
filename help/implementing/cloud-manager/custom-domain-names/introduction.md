@@ -8,12 +8,12 @@ role: Admin, Architect, Developer
 source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
 
-# Présentation des noms de domaine personnalisés {#introduction}
+# Introduction aux noms de domaine personnalisés {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
