@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '5638'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 96%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
-         + [Notes de mise à jour de la maintenance 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
+         + [Notes de mise à jour de maintenance de la version 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [Notes de mise à jour de la maintenance 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [Notes de mise à jour de la maintenance 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [Notes de mise à jour de la maintenance 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -459,13 +459,13 @@ ht-degree: 96%
    + [Présentation des microservices de ressources](/help/assets/asset-microservices-overview.md)
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
    + Gestion des ressources numériques {#manage}
-      + Sélecteur de ressources micro-front {#asset-selector}
-         + [Présentation du sélecteur de ressources](/help/assets/overview-asset-selector.md)
+      + Sélecteur de ressources micro front-end {#asset-selector}
+         + [Vue d’ensemble du sélecteur de ressources](/help/assets/overview-asset-selector.md)
          + Intégrations du sélecteur de ressources {#asset-selector-integration}
-            + [Présentation des intégrations du sélecteur de ressources](/help/assets/integrate-asset-selector.md)
-            + [Intégration du sélecteur de ressources à une application Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Intégration du sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Intégration du sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [Vue d’ensemble des intégrations du sélecteur de ressources](/help/assets/integrate-asset-selector.md)
+            + [Intégrer le sélecteur de ressources à une application Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Intégrer le sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Intégrer le sélecteur de ressources pour Dynamic Media aux fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
          + [Exemples de sélecteur de ressources](/help/assets/asset-selector-examples.md)
          + [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
@@ -545,7 +545,7 @@ ht-degree: 96%
          + [Bonnes pratiques relatives à Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
-      + [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -1112,7 +1112,7 @@ ht-degree: 96%
          + Tests fonctionnels {#functional-testing}
             + [Vue d’ensemble des tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
             + [Tests fonctionnels Java](/help/implementing/cloud-manager/java-functional-testing.md)
-            + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
+            + [Tests de l’interface d’utilisation](/help/implementing/cloud-manager/ui-testing.md)
          + [Tableau de bord d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md)
       + [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1121,7 +1121,7 @@ ht-degree: 96%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notifications](/help/implementing/cloud-manager/notifications.md)
       + [Mise en réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=fr)
-      + Edge Delivery Sites {#edge-delivery-sites}
+      + Sites Edge Delivery {#edge-delivery-sites}
          + [Présentation des Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Ajout d’un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Gestion des sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
@@ -1136,7 +1136,7 @@ ht-degree: 96%
          + [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Dépannage des erreurs de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Configurations CDN {#cdn-configurations}
+      + Configurations du réseau CDN {#cdn-configurations}
          + [Ajout d’une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [Gestion des configurations CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listes d’adresses IP autorisées {#ip-allow-lists}
