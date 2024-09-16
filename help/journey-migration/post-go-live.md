@@ -1,13 +1,13 @@
 ---
 title: Post-activation
-description: Découvrez comment surveiller les problèmes et améliorer les performances
+description: Découvrez comment surveiller les problèmes et améliorer les performances.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 70%
+source-wordcount: '458'
+ht-degree: 58%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 70%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
->abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés aux AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr" text="Accéder aux journaux et les gérer"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+>abstract="Examinez les bonnes pratiques pour le développement continu et la gestion des logs. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accéder aux journaux et les gérer"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
-Ce parcours est la dernière partie. Vous apprenez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Vous devez veiller au nettoyage des fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
+Ce parcours est la dernière partie. Vous apprenez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurez le nettoyage des fichiers temporaires, passez en revue les bonnes pratiques de développement continu et gérez les journaux.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -42,10 +42,10 @@ Pour en savoir plus sur les outils de développement, consultez la section [Impl
 
 ## CRXDE Lite {#crxde-lite}
 
-En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
+En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements intermédiaire ou de production.
 
 >[!IMPORTANT]
->L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. En outre, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
+>L’écriture dans des référentiels non modifiables, tels que `/libs` et `/apps` au moment de l’exécution, entraîne des erreurs. En outre, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
 Voir [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur la manière de développer votre application AEM à l’aide de CRXDE Lite.
 
