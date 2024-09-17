@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
+source-git-commit: 9b31ea4218ce6a3a0f2a53e28efec4d9b98f9b38
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 11%
+source-wordcount: '1303'
+ht-degree: 10%
 
 ---
 
@@ -55,7 +55,7 @@ Il existe des règles pour exclure les robots les plus connus, notamment les ser
 | Type de requête | Requête de contenu | Description |
 | --- | --- | --- |
 | Code HTTP 100-299 | Inclus | Il s’agit de requêtes régulières qui diffusent tout ou partie du contenu. |
-| Bibliothèques HTTP pour l’automatisation | Inclus | Exemples :<br> ・ Amazon CloudFront<br> ・ Apache Http Client<br> ・ Asynchrone Http Client<br>  Axios<br>  Azureus<br> Curl<br>  GitHub Node Fetch<br> Guzzle<br>  Go-http-client<br> Chrome sans affichage <br> Client<br> Jersey<br> Noeud de  Oembed<br>  okhttp<br> Requêtes Python <br> Netty de réacteur de <br> Wget de <br>  WinHTTP |
+| Bibliothèques HTTP pour l’automatisation | Inclus | Exemples :<br> ・ Amazon CloudFront<br> ・ Apache Http Client<br> ・ Asynchrone Http Client<br>  Axios<br>  Azureus<br> Curl<br>  GitHub Node Fetch<br> Guzzle<br>  Go-http-client<br> Chrome sans affichage <br> Client<br> Jersey<br> Noeud de  Oembed<br>  okhttp<br> Requêtes Python<br> Netty de réacteur <br> Wget de <br>  WinHTTP<br> HTTP<br> Récupération de noeud GitHub <br> Réseau de réacteur de  |
 | Outils de contrôle et de contrôle de l’intégrité | Inclus | Ils sont configurés par le client pour surveiller un certain aspect du site. Par exemple, la disponibilité ou les performances réelles de l’utilisateur. Si celles-ci ciblent des points de terminaison spécifiques tels que /system/sones/health pour les contrôles de l’intégrité, nous vous recommandons d’utiliser le point de terminaison `/system/probes/health` et non les pages d’HTML réelles du site.[Voir ci-dessous](#excluded-content-request)<br>Exemples :<br> ・ Amazon-Route53-Health-Check-Service<br> ・ EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br> ・ Investis-Site24x7<br> Mozilla/5.0+(compatible ; UptimeRobot/2.0; [https://uptimerobot.com/ 9})<br>  ThousandEyes-Dragonfly-x1<br>  OmtrBot/1.0<br>  WebMon/2.0.0](https://uptimerobot.com/) |
 | `<link rel="prefetch">` requêtes | Inclus | Pour accélérer le chargement de la page suivante, les clients peuvent demander au navigateur de charger un ensemble de pages avant que l’utilisateur ne clique sur le lien, de sorte qu’elles se trouvent déjà dans le cache. *Mind : cela augmente le trafic de manière significative*, en fonction du nombre de ces pages prérécupérées. |
 | Trafic qui bloque les rapports Adobe Analytics ou Google Analytics | Inclus | Il est plus courant que des logiciels de confidentialité (Ad-blockers, etc.) soient installés sur les visiteurs de sites pour affecter la précision des Google Analytics ou d’Adobe Analytics. AEM as a Cloud Service comptabilise les requêtes sur le premier point d’entrée de l’infrastructure exploitée par l’Adobe et non sur le côté client. |
@@ -75,7 +75,8 @@ Voir aussi [Tableau de bord de la licence](/help/implementing/cloud-manager/lice
 | URL permettant aux clients de surveiller leur programme de Cloud Service | Exclu | Nous vous recommandons d’utiliser une URL pour surveiller de manière externe la disponibilité ou le contrôle de l’intégrité.<br><br>`/system/probes/health` |
 | Service de réchauffement de la capsule AEM as a Cloud Service | Exclu |
 | Agent : skyline-service-chauffe/1.* |
-| Moteurs de recherche, réseaux sociaux et bibliothèques HTTP (balisés Fastly) connus | Exclu | Des services connus visitent régulièrement le site pour actualiser leur index ou service de recherche :<br><br>Exemples :<br> ・ AddSearchBot<br> ・ AhrefsBot<br> ・ Applebot<br> Google Ask Jeeves Corporate Spider<br> Pinterest Bingbot<br>BingPreview<br>  BLEXBot<br> pider<br>  CrawlerKengo<br>  Facebook externalhit<br> AdsBot<br> Google AdsBot Mobile<br>  Googlebot<br>  Google Lmspider<br>  LucidWorks<br>}  MJ12bot<br> Pingdom<br><br>  SemrushBot<br>  SiteAméliorer<br>  StashBot<br>  StatusCake<br>  YandexBot<br><br> |
+| Moteurs de recherche, réseaux sociaux et bibliothèques HTTP (balisés Fastly) connus | Exclu | Des services connus visitent régulièrement le site pour actualiser leur index ou service de recherche :<br><br>Exemples :<br> ・ AddSearchBot<br> ・ AhrefsBot<br> ・ Applebot<br> Google Ask Jeeves Corporate Spider<br> Pinterest Bingbot<br>BingPreview<br>  BLEXBot<br> pider<br>  CrawlerKengo<br>  Facebook externalhit<br> AdsBot<br> Google AdsBot Mobile<br>  Googlebot<br>  Google Lmspider<br>  LucidWorks<br>} MJ12bot  <br><br> SemrushBot <br> SiteAméliorer<br> StashBot <br> StatusCake <br>  YandexBot<br> Claudebot <br><br> |
 | Exclusion des appels de Commerce integration framework | Exclu | Il s’agit de requêtes effectuées à des AEM qui sont transférées au Commerce integration framework (l’URL commence par `/api/graphql`) afin d’éviter le double comptage. Elles ne sont pas facturables au Cloud Service. |
 | Exclure `manifest.json` | Exclu | Le manifeste n’est pas un appel API, il fournit des informations sur la manière d’installer des sites web sur un ordinateur ou un téléphone mobile. Adobe ne doit pas compter la requête JSON sur `/etc.clientlibs/*/manifest.json` |
 | Exclure `favicon.ico` | Exclu | Bien que le contenu renvoyé ne doive pas être HTML ou JSON, nous observons que, dans certains scénarios tels que les flux d’authentification SAML, les favicons peuvent être renvoyées en tant qu’HTML et sont donc explicitement exclues du décompte. |
+| proxy CDN vers un autre serveur principal | Exclu | Les requêtes acheminées vers différents serveurs principaux non AEM à l’aide de la technique [Sélecteurs d’origine CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) sont exclues, car elles n’atteignent pas AEM. |
