@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1490'
 ht-degree: 22%
 
 ---
 
 
-# Ajout d’un nom de domaine personnalisé {#adding-cdn}
+# Ajouter un nom de domaine personnalisé {#adding-cdn}
 
 Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 
@@ -23,13 +23,13 @@ Renseignez ces exigences avant d’ajouter un nom de domaine personnalisé dans 
 
 * Vous devez avoir ajouté un certificat SSL de domaine pour le domaine que vous souhaitez ajouter avant d’ajouter un nom de domaine personnalisé comme décrit dans le document [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Vous devez disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un nom de domaine personnalisé dans Cloud Manager.
-* Utilisez le CDN Fastly.
+* Utilisez le CDN Fastly ou un autre CDN.
 
 >[!IMPORTANT]
 >
 >Même si vous utilisez un réseau de diffusion de contenu non Adobe, vous devez toujours ajouter votre domaine à Cloud Manager.
 
-## Où ajouter des noms de domaine personnalisés {#}
+## Où ajouter des noms de domaine personnalisés {#where-to-add-cdn}
 
 Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacements dans Cloud Manager :
 
@@ -68,7 +68,7 @@ N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre
 
    | Si vous avez sélectionné le type de certificat | Description |
    | --- | ---  |
-   | Certificat géré par Adobe | Exécutez les [ étapes Adobe des certificats gérés ](#abobe-managed-cert-steps) avant de passer à l’étape suivante. |
+   | Certificat géré par Adobe | Exécutez les [ étapes Adobe des certificats gérés ](#adobe-managed-cert-steps) avant de passer à l’étape suivante. |
    | Certificat géré par le client ou la cliente | Suivez les [étapes du certificat géré par le client](#customer-managed-cert-steps) avant de passer à l’étape suivante. |
 
 1. Cliquez sur **Vérifier**.
@@ -78,7 +78,6 @@ N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre
    >[!NOTE]
    >
    >Si vous utilisez un certificat SSL auto-géré et un fournisseur CDN auto-géré, vous pouvez ignorer cette étape et accéder directement à [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) une fois prêt.
-
 
 
 ### Étapes du certificat géré par Adobe {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ Pour configurer ces paramètres, déterminez si un enregistrement `CNAME` ou ape
 >
 >Pour les réseaux de diffusion de contenu gérés par Adobe, lors de l’utilisation de certificats DV (Domain Validation), seuls les sites avec validation ACME sont autorisés.
 
-#### Conditions requises {#dv-requirements}
+#### Conditions requises {#adobe-managed-cert-dv-requirements}
 
 Renseignez ces exigences avant de configurer vos enregistrements DNS.
 
@@ -105,7 +104,7 @@ Renseignez ces exigences avant de configurer vos enregistrements DNS.
 * Vous pouvez modifier les enregistrements DNS pour le domaine de votre entreprise ou contacter la personne appropriée qui peut le faire.
 * Vous devez avoir déjà vérifié le nom de domaine personnalisé que vous avez configuré comme décrit dans le document [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Enregistrement CNAME {#cname-record}
+#### Enregistrement CNAME {#adobe-managed-cert-cname-record}
 
 Un enregistrement de nom canonique ou CNAME est un type d’enregistrement DNS qui mappe un nom d’alias à un nom de domaine réel ou canonique. Les enregistrements CNAME sont généralement utilisés pour mapper un sous-domaine tel que `www.example.com` au domaine hébergeant le contenu de ce sous-domaine.
 
@@ -115,7 +114,7 @@ Connectez-vous à votre fournisseur de services DNS et créez un enregistrement 
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### enregistrement APEX {#apex-record}
+#### enregistrement APEX {#adobe-managed-cert-apex-record}
 
 Un domaine apex est un domaine personnalisé qui ne contient pas de sous-domaine, tel que `example.com`. Un domaine apex est configuré avec un enregistrement `A`, `ALIAS` ou `ANAME` via votre fournisseur DNS. Des domaines apex doivent pointer vers des adresses IP spécifiques.
 
@@ -132,7 +131,6 @@ Ajoutez les enregistrements `A` suivants aux paramètres DNS de votre domaine pa
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### Étapes du certificat géré par le client {#customer-managed-cert-steps}
 
 Si vous avez sélectionné le type de certificat *Client managed certificate*, exécutez les étapes suivantes dans la boîte de dialogue **Vérifier le domaine** .
@@ -145,7 +143,7 @@ Un enregistrement texte (également appelé enregistrement TXT) est un type d’
 
 Cloud Manager utilise un enregistrement TXT spécifique pour autoriser l’hébergement d’un domaine dans un service CDN. Créez un enregistrement TXT DNS dans la zone qui autorise Cloud Manager à déployer le service CDN avec le domaine personnalisé et à l’associer au service principal. Cette association reste entièrement sous votre contrôle et permet à Cloud Manager de diffuser du contenu du service vers un domaine. Cette autorisation peut être accordée et retirée. L’enregistrement TXT est spécifique au domaine et à l’environnement Cloud Manager.
 
-## Conditions requises {#requirements-customer-cert}
+#### Conditions requises {#customer-managed-cert-requirements}
 
 Renseignez ces exigences avant d’ajouter un enregistrement TXT.
 
@@ -153,7 +151,7 @@ Renseignez ces exigences avant d’ajouter un enregistrement TXT.
 * Vous pouvez modifier les enregistrements DNS pour le domaine de votre entreprise ou contacter la personne appropriée qui peut le faire.
 * Tout d’abord, ajoutez un nom de domaine personnalisé comme décrit précédemment dans cet article.
 
-## Ajout d’un enregistrement TXT à des fins de vérification {#verification}
+#### Ajout d’un enregistrement TXT à des fins de vérification {#customer-managed-cert-verification}
 
 1. Dans la boîte de dialogue **Vérifier le domaine**, Cloud Manager affiche le nom et la valeur TXT à utiliser pour la vérification. Copiez cette valeur.
 
@@ -170,7 +168,7 @@ Renseignez ces exigences avant d’ajouter un enregistrement TXT.
 
 1. Enregistrez l’enregistrement TXT sur l’hôte de votre domaine.
 
-## Vérification de l’enregistrement TXT {#verify}
+#### Vérification de l’enregistrement TXT {#customer-managed-cert-verify}
 
 Une fois que vous avez terminé, vous pouvez vérifier le résultat en exécutant la commande suivante.
 

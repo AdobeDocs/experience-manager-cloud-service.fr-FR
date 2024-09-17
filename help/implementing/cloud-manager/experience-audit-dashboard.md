@@ -5,7 +5,7 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 6%
@@ -47,11 +47,11 @@ Les audits sont exécutés dans le cadre du pipeline. Les audits peuvent égalem
 
 Le contrôle de l’expérience est disponible par défaut pour les pipelines de production. Elle peut être activée en option pour le développement de pipelines front-end et en pile complète. Dans tous les cas, vous devez définir les chemins de contenu évalués lors de l’exécution du pipeline.
 
-1. Selon le type de pipeline que vous souhaitez configurer, suivez les instructions pour :
+1. Selon le type de pipeline que vous souhaitez configurer, effectuez l’une des opérations suivantes :
 
    * Ajoutez un nouveau [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour définir les chemins que l’audit doit évaluer.
-   * Ajoutez un nouveau [pipeline hors production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement à pile complète.
-   * Vous pouvez également [modifier un pipeline existant,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
+   * Ajoutez un nouveau [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si vous souhaitez activer l’audit sur un pipeline front-end ou de développement à pile complète.
+   * Vous pouvez également [modifier un pipeline existant](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) et mettre à jour les options existantes.
 
 1. Pour utiliser le contrôle de l’expérience lors de l’ajout ou de la modification d’un pipeline hors production, cochez la case **contrôle de l’expérience** . Vous pouvez trouver cette option dans l’onglet **Code Source** .
 
@@ -218,7 +218,7 @@ Vous pouvez filtrer le graphique des scores en fonction du type de déclencheur 
 >
 >Une analyse à la demande ne peut être lancée que si l’environnement n’est pas supprimé et qu’il n’y a pas d’autres analyses en attente sur le même environnement.
 
-## Problèmes rencontrés dans le contrôle de l’expérience {#issues}
+## Le contrôle de l’expérience rencontre des problèmes {#issues}
 
 Si les [pages que vous avez configurées](#configuration) à contrôler n’étaient pas disponibles ou qu’il y avait d’autres erreurs dans l’audit, le contrôle de l’expérience reflète ce fait.
 
@@ -236,7 +236,6 @@ Voici quelques raisons pour lesquelles les pages peuvent ne pas être disponible
 * La page n’existe pas.
 * La page redirige qui nécessite une authentification autre que de base.
 * Un problème interne s’est produit.
-* Etc.
 
 >[!TIP]
 >

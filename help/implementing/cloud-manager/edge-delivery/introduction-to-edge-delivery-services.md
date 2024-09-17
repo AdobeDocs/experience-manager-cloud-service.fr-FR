@@ -4,7 +4,7 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide d
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -58,11 +58,11 @@ Selon votre cas d’utilisation, effectuez l’une des opérations suivantes :
 | Je souhaite ajouter un site Edge Delivery à Cloud Manager | Voir [Ajout d’un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | Je souhaite ajouter des Edge Delivery Services à un nouveau programme sandbox ou à un programme sandbox existant. | Voir [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>Lorsque vous créez un programme sandbox, des Edge Delivery Services sont ajoutés au programme par défaut ; vous n’avez pas besoin de le sélectionner.<br>Les programmes Sandbox existants avant la disponibilité générale d’Edge Delivery héritent automatiquement des Edge Delivery Services. |
 
-## Chemin d’accès recommandé pour les clients sous contrat {#recommended-path-eds}
+## Chemin d’accès recommandé pour les clients sous licence {#recommended-path-eds}
 
-En tant que client sous contrat, assurez-vous de tirer le meilleur parti de l’Adobe en accédant à et en utilisant votre licence Edge Delivery Services via Cloud Manager. Cette approche vous permet d’utiliser [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) et de tirer parti des avantages clés tels que la gestion du CDN en libre-service, y compris la configuration et l’ajout de certificats DV. En outre, une fois un certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé. Si vous ne disposez pas d’une licence Edge Delivery Services avec Adobe et que vous décidez de contourner ces avantages, vous ne pouvez utiliser qu’un réseau de diffusion de contenu géré par le client. Cette configuration doit se trouver sur la plateforme `aem.live`.
+En tant que client sous licence, assurez-vous de tirer le meilleur parti de l’Adobe en accédant à et en utilisant votre licence Edge Delivery Services via Cloud Manager. Cette approche vous permet d’utiliser [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) et de tirer parti des avantages clés tels que la gestion du CDN en libre-service, y compris la configuration et l’ajout de certificats DV. En outre, une fois un certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé. Si vous ne disposez pas d’une licence Edge Delivery Services avec Adobe et que vous décidez de contourner ces avantages, vous ne pouvez utiliser qu’un réseau de diffusion de contenu géré par le client. Cette configuration doit se trouver sur la plateforme `aem.live`.
 
-Si vous êtes contractuel avec des licences de Edge Delivery Services AEM as a Cloud Service Sites, connectez-vous à Cloud Manager pour vous assurer que vous pouvez effectuer les opérations suivantes :
+Si vous possédez une licence AEM as a Cloud Service Sites Edge Delivery Services, connectez-vous à Cloud Manager pour vous assurer que vous pouvez effectuer les opérations suivantes :
 
 * Utilisez votre licence sur le programme de votre choix.
 * Profitez des avantages [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) pour effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer).

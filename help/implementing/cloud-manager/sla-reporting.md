@@ -1,51 +1,56 @@
 ---
-title: Création de rapports de contrat SLA
-description: Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service (SLA).
+title: Rapports de contrat SLA
+description: Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 7%
+source-wordcount: '477'
+ht-degree: 10%
 
 ---
 
 
-# Création de rapports de contrat SLA {#sla-reporting}
+# Rapports de contrat SLA {#sla-reporting}
 
-Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service (SLA).
+Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au SLA contractuel (contrat de niveau de service).
 
-## Présentation {#introduction}
+## Affichage d’un rapport SLA {#introduction}
 
-Les données de rapport SLA sont disponibles pour chaque programme de production via l&#39;onglet **Rapports** . Pour y accéder, procédez comme suit.
+Les données du rapport SLA effectuent le suivi des mesures de performances pour deux niveaux de production : Niveau de création et Niveau Publish.
+
+Le graphique linéaire d’une année sélectionnée inclut des points de données pour chaque mois de janvier à décembre. Les mesures suivantes sont suivies.
+
+| Mesure suivie | Couleur de ligne | Description |
+| --- | --- | --- |
+| Niveau d’auteur – réel | Vert clair | Temps de disponibilité mesuré du niveau Auteur de production comptabilisant les incidents causés par les fournisseurs d’Adobe ou d’Adobe. |
+| Niveau de création – contrat | bleu foncé | Le SLA défini dans votre contrat avec l’Adobe pour le niveau de création. |
+| Niveau de publication – réel | Orange | Temps de disponibilité mesuré du niveau Publish de production, en tenant compte des incidents causés par les fournisseurs d’Adobe ou d’Adobe. |
+| Niveau de publication – contrat | Rouge | SLA défini dans votre contrat avec Adobe pour le niveau Publish. |
+
+**Pour afficher un rapport SLA :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. À l’aide du panneau de navigation latéral, accédez à l’onglet **Rapports** à partir de la page **Aperçu**.
+1. Sur la page **Aperçu du programme**, dans le panneau de navigation de gauche, cliquez sur **Rapports**.
 
-1. Cliquez sur l’année souhaitée pour afficher les données SLA sous forme de graphique.
+1. Cliquez sur **Rapports SLA**.
 
-![Exemple de graphique SLA](assets/sla-reporting-1.png)
+   ![Graphique de ligne de rapport SLA](/help/implementing/cloud-manager/assets/cm-sla-report.png)
 
-Placez le curseur sur un point de données pour afficher les valeurs spécifiques de ce point.
+1. Cliquez sur l’année souhaitée pour afficher un graphique linéaire des données SLA.
 
-![Affichage de données détaillées](assets/sla-reporting-b.png)
+1. (En option) Effectuez l’une des actions suivantes :
 
-## Mesures SLA {#sla-metrics}
+   * Placez le curseur sur un point de données du graphique linéaire pour afficher les valeurs spécifiques de ce point.
+   * Sous l’année du graphique linéaire, cliquez sur l’icône Télécharger pour enregistrer un fichier image PNG du graphique linéaire.
+   * Cliquez sur le nom d’une mesure pour afficher uniquement les données de cette mesure. Ou appuyez sur `Shift` sur le clavier lors de la sélection ou de la désélection d’un ou de plusieurs noms de mesure.
 
-Le graphique de l’année sélectionnée comprend plusieurs jeux de données.
-
-* **Contrat de niveau Publish** : il s’agit du contrat SLA défini dans votre contrat avec Adobe pour le niveau de publication.
-
-* **Niveau Publish réel** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents provoqués par les fournisseurs d’Adobe ou d’Adobe.
-
-* **Contrat de niveau auteur** : il s’agit du contrat SLA défini dans votre contrat avec l’Adobe pour le niveau auteur.
-
-* **Niveau de création réel** : il s’agit de la période de disponibilité mesurée du niveau de création de production qui tient compte des incidents causés par les fournisseurs d’Adobe ou d’Adobe.
+   ![Affichage de données détaillées](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Analyse des événements {#event-analysis}
 
@@ -55,13 +60,13 @@ Chaque incident comporte une période, une cause et un ensemble de commentaires.
 
 ![Exemple d’analyse d’événement](assets/sla-reporting-c.png)
 
-## Actualiser l’intervalle {#refresh}
+## Actualisation de l’intervalle des rapports SLA {#refresh}
 
-Les rapports de contrat SLA vous donnent des informations sur les performances de votre environnement de production AEM et sont à jour, mais pas instantanés. La génération des rapports SLA a lieu tous les mois et elle est générée pour les nouveaux programmes marqués comme Production le mois précédent. Ce n&#39;est pas instantané. En raison de ce délai, tenez compte des points suivants lorsque vous passez en revue votre rapport SLA :
+Les rapports SLA vous donnent des informations sur les performances de votre environnement de production AEM et sont à jour, mais pas instantanés. La génération des rapports SLA se produit tous les mois et elle est générée pour les nouveaux programmes marqués comme `Production previous month`. Ce n&#39;est pas instantané. En raison de ce délai, tenez compte des points suivants lorsque vous passez en revue votre rapport SLA :
 
-* Le contrat de niveau de service signalé sera celui qui existait au début du mois, même si le contrat a changé au cours de ce mois.
-* Si aucun contrat SLA n’existait au début du mois car le programme n’existait pas alors, le contrat SLA qui existait à la date de création du programme s’applique.
+* Le SLA signalé est celui qui existait au début du mois, même si SLA a changé au cours de ce mois.
+* S’il n’y avait pas de SLA au début du mois car le programme n’existait pas, le SLA qui existait à la date de création du programme s’applique.
 
 ## Aperçu des environnements {#preview}
 
-L’environnement d’aperçu est conçu comme un outil permettant aux auteurs de contenu de vérifier l’expérience finale du contenu avant de le publier. Pour cette raison, les environnements d’aperçu ne sont pas conçus avec une haute disponibilité et n’ont pas de contrat SLA associé.
+L’environnement d’aperçu est conçu comme un outil permettant aux auteurs de contenu de vérifier l’expérience finale du contenu avant de le publier. En raison de cette fonctionnalité, les environnements d’aperçu ne sont pas conçus pour une haute disponibilité et n’ont pas de SLA associé.
