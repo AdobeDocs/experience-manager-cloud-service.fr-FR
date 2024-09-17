@@ -4,9 +4,9 @@ description: Découvrez la surveillance de l’utilisation réelle (RUM) , un se
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Le service de surveillance de l’utilisation réelle (RUM) est une technologie 
 
 ## Qui peut bénéficier d’un service de surveillance à usage réel ? {#who-can-benefit-from-rum-service}
 
-AEM a développé la surveillance de l’utilisation réelle pour aider les clients et les Adobes à comprendre comment les utilisateurs finaux interagissent avec AEM sites. La surveillance de l’utilisation réelle diagnostique les problèmes de performance et mesure l’efficacité des expériences. La surveillance de l’utilisation réelle préserve la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle (PII) n’est collectée.
+La surveillance de l’utilisation réelle permet aux clients et aux Adobes de comprendre comment les utilisateurs finaux interagissent avec AEM sites. La surveillance de l’utilisation réelle diagnostique les problèmes de performance et mesure l’efficacité des expériences. La surveillance de l’utilisation réelle préserve la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle (PII) n’est collectée.
 
 ## Service de surveillance de l’utilisation réelle et confidentialité {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ Le service de surveillance de l’utilisation réelle est conçu pour empêcher 
 
 ## Fonctionnement de la surveillance des utilisations réelles pour un client {#how-rum-works-for-a-customer}
 
-La surveillance de l’utilisation réelle surveille automatiquement le trafic côté client. En tant que client Adobe, vous n’avez pas besoin d’effectuer d’autres étapes, car ce service est parfaitement intégré à votre configuration existante. La surveillance de l’utilisation réelle (RUM) étant la disponibilité générale (GA) , vous bénéficiez automatiquement de cette nouvelle fonctionnalité. Le service de surveillance de l’utilisation réelle n’expose aucune mesure aujourd’hui via un outil de visualisation. Nous nous efforçons de vous fournir cette fonctionnalité dès que possible.
+La surveillance de l’utilisation réelle surveille automatiquement le trafic côté client. En tant que client Adobe, vous n’avez pas besoin d’effectuer d’autres étapes, car ce service est parfaitement intégré à votre configuration existante. Le service de surveillance de l’utilisation réelle (RUM) étant disponible en général , vous bénéficiez automatiquement de cette nouvelle fonctionnalité. Le service de surveillance de l’utilisation réelle n’expose aucune mesure à surveiller pour les clients. Nous nous efforçons de vous fournir cette fonctionnalité dès que possible.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
