@@ -4,10 +4,10 @@ description: Découvrez comment AEM as a Cloud Service peut bénéficier des
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Vous pouvez interagir avec les équipes produit Adobe via votre canal de collabo
 
 ### Consigner un ticket d’assistance {#support-ticket}
 
-Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux tests SLT, vous pouvez envoyer un ticket d’assistance à la suite du processus à l’aide d’Admin Console :
+Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux TSL, vous pouvez envoyer un ticket d’assistance.
+
+Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votre site Edge Delivery dans Cloud Manager. L&#39;enregistrement de votre site web avec Cloud Manager est recommandé à tous les utilisateurs d&#39;AEM as a Cloud Service et [ apporte de nombreux avantages.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) Pour plus d’informations, reportez-vous à la [documentation de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) si vous n’avez pas encore enregistré votre site.
+
+Une fois votre site web enregistré auprès de Cloud Manager, procédez comme suit en utilisant l’Admin Console pour envoyer un ticket d’assistance :
 
 1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
