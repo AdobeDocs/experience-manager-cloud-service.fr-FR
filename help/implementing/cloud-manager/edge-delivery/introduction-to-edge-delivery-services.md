@@ -4,7 +4,7 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide d
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 6%
@@ -68,7 +68,7 @@ La **liste de tâches d’Edge Delivery** est une liste de contrôle de tâches 
 
 ![Liste de tâches de site Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
-|  | Tâche | Description |
+|   | Tâche | Description |
 | --- | --- | --- |
 | 1 | Rejoindre le canal de collaboration de produit | Cliquer sur **Soumettre la demande maintenant** envoie une demande à l’Adobe pour créer un canal pour votre entreprise. Si le canal existe déjà, vous êtes transféré vers le canal de votre entreprise. |
 | 2 | Remplir les conditions préalables | Cliquez sur **Afficher le tutoriel de prise en main** pour accéder au [didacticiel de prise en main - développeur](https://www.aem.live/developer/tutorial). |
@@ -76,5 +76,7 @@ La **liste de tâches d’Edge Delivery** est une liste de contrôle de tâches 
 | 4 | Ajouter un domaine | Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Configurer le CDN | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configuration du réseau de diffusion de contenu de votre site Edge Delivery | Voir [Ajout d’une configuration CDN](#add-cdn). |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)

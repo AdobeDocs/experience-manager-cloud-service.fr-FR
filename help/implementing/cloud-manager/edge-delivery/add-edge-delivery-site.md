@@ -3,9 +3,9 @@ title: Ajout d’un site Edge Delivery à Cloud Manager
 description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '461'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Ajout d’un site Edge Delivery à Cloud Manager {#adding}
 
-Vous pouvez ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
+Une fois que vous avez ajouté un site Edge Delivery à votre programme de production, votre licence Edge Delivery Services lui est appliquée.
 
 L&#39;ajout d&#39;un site Edge Delivery à Cloud Manager est nécessaire pour [enregistrer un ticket d&#39;assistance pour votre projet Edge Delivery](/help/edge/overview.md##support-ticket).
 
@@ -34,22 +34,21 @@ Voir aussi [Présentation des Edge Delivery Services dans Cloud Manager](/help/i
 
 1. Dans la boîte de dialogue **Ajouter un site Edge Delivery** , fournissez les informations suivantes dans les champs requis :
 
-   | Champ de texte | Données à fournir |
-   | --- | --- |
-   | Nom du site | Saisissez le nom du site Edge Delivery que vous ajoutez. Le nom sert d’identifiant unique au site dans Cloud Manager. |
-   | URL du référentiel | Ce champ fait référence au référentiel Git où est stocké le code de votre site web. Ce champ permet à Cloud Manager d’extraire le code de ce référentiel pendant le processus de déploiement. |
-   | Description du site (facultative) | Entrez une brève description du site Edge Delivery que vous ajoutez. Cette description permet d’identifier et de différencier le site, ce qui facilite la gestion et la reconnaissance des autres sites que vous avez ajoutés. |
+   | Champ de texte | Description |
+   | - | --- |
+   | Nom du site | Saisissez le nom du site Edge Delivery que vous ajoutez.<br>Le nom sert d’identifiant unique au site dans Cloud Manager. |
+   | URL du référentiel | Saisissez le référentiel Git dans lequel le code de votre site web est stocké.<br>Ce champ permet à Cloud Manager d’extraire le code de ce référentiel pendant le processus de déploiement. |
+   | Description du site (facultative) | Entrez une brève description du site Edge Delivery que vous ajoutez.<br>Une description permet d’identifier et de différencier le site, ce qui facilite la gestion et la reconnaissance des autres sites que vous avez ajoutés. |
 
 1. Dans le coin inférieur droit de la boîte de dialogue, cliquez sur **Ajouter**.
 
-1. La boîte de dialogue **Vérifier la propriété du référentiel** s’ouvre. Une fois ouvert, procédez comme suit :
+1. Dans la boîte de dialogue **Vérifier la propriété du référentiel**, vérifiez la propriété de votre référentiel en procédant comme suit :
 
-   1. Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertoriée dans le champ **Repository URL** .
-      * Si nécessaire, cliquez sur l’icône **Copier** pour copier le chemin vers le Presse-papiers.
-      * N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.
-   1. Ajoutez le code du champ **Step &amp;num; 1** au fichier que vous avez créé à l’étape précédente.
-      * Si nécessaire, cliquez sur l’icône **Copier** pour copier le code dans le Presse-papiers.
-   1. Dans le référentiel Git, créez une requête de tirage pour les modifications que vous venez de créer, puis fusionnez-la en `main`.
+   | Numéro de l’étape | Description |
+   | - | - |
+   | **1** | Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertoriée dans le champ **Repository URL** . N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.<br>Si nécessaire, cliquez sur l’icône **Copier** pour copier le chemin d’accès au Presse-papiers. |
+   | **2** | Ajoutez le code affiché dans le champ de texte de l’étape 2 au fichier que vous venez de créer à l’étape 1.<br>Si nécessaire, cliquez sur l’icône **Copier** pour copier le code dans le Presse-papiers. |
+   | **3** | Créez une requête de tirage dans le référentiel Git pour les modifications que vous venez de créer, puis fusionnez-la en `main` pour valider le code. |
 
 1. Cliquez sur **Vérifier**.
 
