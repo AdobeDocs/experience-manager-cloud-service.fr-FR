@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 
    | | Cas d’utilisation | Étapes |
    | --- | --- | --- |
-   | 1 | **Ajout d’un certificat géré par Adobe (DV)** | **Pour ajouter un certificat géré par Adobe (DV) :**<br> a. Sélectionnez le type de certificat **Adobe géré (DV)**.<br>![Ajoutez un certificat DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Dans la liste déroulante **Sélectionner des domaines**, sélectionnez un ou plusieurs domaines à associer au certificat DV.<br> Aucun domaine à sélectionner ? Si tel est le cas, cela signifie que vous devez ajouter un domaine personnalisé. Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Lorsque vous avez terminé d’ajouter un nom de domaine personnalisé, revenez à cette rubrique et recommencez à l’étape 1.<br>d. Passez à l’étape 7. |
+   | 1 | **Ajout d’un certificat géré par Adobe (DV)** | **Pour ajouter un certificat géré par Adobe (DV) :**<br> a. Sélectionnez le type de certificat **Adobe géré (DV)**.<br>![Ajoutez un certificat DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. Dans le champ **Certificate name** , saisissez un nom à associer au certificat.<br>c. Dans la liste déroulante **Sélectionner des domaines**, sélectionnez un ou plusieurs domaines à associer au certificat DV.<br> Aucun domaine à sélectionner ? Si tel est le cas, cela signifie que vous devez ajouter un domaine personnalisé. Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Lorsque vous avez terminé d’ajouter un nom de domaine personnalisé, revenez à cette rubrique et recommencez à l’étape 1.<br>d. Passez à l’étape 7. |
    | 2 | **Ajouter un certificat géré par le client (OV/EV)** | **Pour ajouter un certificat géré par le client (OV/EV) :**<br> a. Sélectionnez le type de certificat **Customer managed (OV/EV)**.<br>b. Dans le champ **Certificate name** , saisissez un nom pour votre certificat. Ce champ est fourni à titre d’information uniquement et peut être n’importe quel nom qui vous aide à référencer facilement votre certificat.<br>c. Dans les champs **Certificate**, **Private key** et **Certificate chain** , collez les valeurs requises dans leurs champs respectifs.<br>![Boîte de dialogue Ajouter un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Toutes les erreurs détectées dans les valeurs s’affichent. Avant de pouvoir enregistrer votre certificat, vous devez corriger toutes les erreurs. Pour en savoir plus sur la résolution des erreurs courantes, voir [erreurs de certificat](#certificate-errors) .<br>d. Passez à l’étape 7. |
 
 <!--
