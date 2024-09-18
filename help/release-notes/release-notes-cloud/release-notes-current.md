@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 77%
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Consultez la vidéo Aperçu de la version de janvier 2024 pour un résumé des fonctionnalités ajoutées dans la version 2024.8.0 :
+Consultez la vidéo Vue d’ensemble de la version d’août 2024 pour un résumé des fonctionnalités ajoutées dans la version 2024.8.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
 
@@ -65,11 +65,11 @@ Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
+### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
 
 **Sous-titres vidéo générés par l’IA**
 
-Les sous-titres vidéo générés par l’IA dans Adobe Dynamic Media utilisent une intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et améliorer l’expérience de l’utilisateur en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés à des fins de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent ou préfèrent la prise en charge vidéo textuelle.
+Les sous-titres vidéo générés par l’IA dans Adobe Dynamic Media utilisent une intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
 Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, [ créez et envoyez un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
@@ -88,11 +88,11 @@ Assets as a Cloud Service prend désormais en charge les documents Photoshop 
 ### Nouvelles améliorations dans le hub de contenus {#content-hub-new-enhancements}
 
 * Amélioration de la gestion des noms de fichier longs, extension facile du nom complet via une info-bulle.
-* Amélioration des miniatures pour mieux adapter les proportions du contenu et couvrir une plus grande zone de contenu.
+* Amélioration des miniatures pour mieux adapter le format du contenu et couvrir une plus grande zone de contenu.
 * Expérience de miniature personnalisée à partir d’AEM prise en charge avec le hub de contenus.
 * Améliorations de la recherche de couleurs.
 * Améliorations apportées à l’expérience d’enregistrement des configurations.
-* Amélioration de la page d’informations des collections pour refléter le nom du créateur.
+* Amélioration de la page d’informations des collections pour refléter le nom du créateur ou de la créatrice.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -101,7 +101,7 @@ Assets as a Cloud Service prend désormais en charge les documents Photoshop 
 
 #### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
 
-Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les entreprises en réduisant l’abandon de formulaire, car les utilisateurs n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
@@ -120,17 +120,17 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
 * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA génératives. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
 * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide d’invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez des invites d’IA générative pour optimiser vos formulaires pour la réactivité mobile et créez des formulaires attrayants visuellement pour les utilisateurs.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
 
-* **Configurer l’action d’envoi** : utilisez des invites d’IA générative pour configurer une action d’envoi sans effort pour votre formulaire. Faites votre choix dans une bibliothèque d’actions d’envoi préconfigurées ou d’actions d’envoi personnalisées créées et déployées par votre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 >[!IMPORTANT]
 >
-> Vous souhaitez adhérer au Programme d’accès anticipé pour toute innovation Forms ? Envoyez un email depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
+> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
