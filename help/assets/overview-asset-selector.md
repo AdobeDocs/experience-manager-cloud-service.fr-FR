@@ -3,9 +3,9 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -40,7 +40,7 @@ Le sélecteur de ressources offre de nombreux avantages, notamment :
 ![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-## Conditions préalables{#prereqs}
+## Prérequis{#prereqs}
 
 Vous devez vous assurer que les méthodes de communication suivantes sont disponibles :
 
@@ -196,15 +196,15 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
         <em>Comprendre comment intégrer le sélecteur de ressources aux API Dynamic Media Open.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Graphique des propriétés du sélecteur de ressources"><br/>
         <a href="asset-selector-customization.md"> Propriétés du sélecteur de ressources</a>
         <p>
         <em>Découvrez les principes de base de la personnalisation de divers composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemple graphique d’exemples de sélecteur de ressources"><br/>
         <a href="asset-selector-customization.md"> Exemples de sélecteur de ressources</a>
@@ -225,6 +225,15 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
         <p>
         <em>Découvrez comment télécharger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local ou tiers. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Graphique des collections du sélecteur de ressources"><br/>
+        <a href="asset-selector-collections.md"> Collections de sélecteurs de ressources</a>
+        <p>
+        <em>Découvrez comment utiliser des collections dans le sélecteur de ressources à l’aide du référentiel Experience Manager. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
