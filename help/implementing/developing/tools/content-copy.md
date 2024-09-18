@@ -4,10 +4,10 @@ description: L’outil de copie de contenu permet de copier du contenu modifiabl
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 81%
+source-wordcount: '1347'
+ht-degree: 77%
 
 ---
 
@@ -86,7 +86,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
    1. Cliquez sur le X en regard des sous-chemins exclus pour pouvoir les supprimer.
    1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer**.
 
-   ![Modification de la liste de chemins](assets/add-content-set-excluded-paths.png)
+   ![Modifier la liste de chemins](assets/add-content-set-excluded-paths.png)
 
 1. Sélectionnez **Créer** pour créer le jeu de contenu.
 
@@ -200,3 +200,10 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
+
+## Problèmes connus {#known-issues}
+
+Tenez compte du problème connu suivant lors de l&#39;utilisation de la fonctionnalité [de copie de contenu.](/help/implementing/developing/tools/content-copy.md)
+
+* Si une ressource de l’environnement source est renommée, l’opération de copie de contenu peut échouer en raison d’UUID en conflit dans l’environnement cible.
+   * Pour éviter cette erreur, au lieu de renommer des ressources, supprimez-les d’abord, puis recréez-les avec le nouveau nom de ressource souhaité.
