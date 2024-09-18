@@ -1,37 +1,32 @@
 ---
 title: Ajout d’un site Edge Delivery à Cloud Manager
-description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox, ainsi que les avantages qu’il apporte.
+description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Ajout d’un site Edge Delivery à Cloud Manager {#eds-add-site}
+# Ajout d’un site Edge Delivery à Cloud Manager {#adding}
 
-Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox, ainsi que les avantages qu’il apporte.
+Vous pouvez ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 
-## Présentation {#introduction}
+L&#39;ajout d&#39;un site Edge Delivery à Cloud Manager est nécessaire pour [enregistrer un ticket d&#39;assistance pour votre projet Edge Delivery](/help/edge/overview.md##support-ticket).
 
-Dans le cadre de votre projet Edge Delivery Services avec AEM as a Cloud Service, nous vous recommandons d’ajouter votre site Edge Delivery à Cloud Manager. L’ajout de votre site web Edge Delivery à Cloud Manager vous apporte les avantages suivants.
+Voir aussi [Présentation des Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-* [Accès au réseau de diffusion de contenu géré par Adobe](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [Accès aux rapports SLA](/help/implementing/cloud-manager/sla-reporting.md)
-* [Accès aux rapports d’utilisation des licences](/help/implementing/cloud-manager/license-dashboard.md)
-
-Veuillez noter que l&#39;ajout de votre site Edge Delivery à Cloud Manager est nécessaire pour [enregistrer un ticket d&#39;assistance pour votre projet Edge Delivery.](/help/edge/overview.md##support-ticket)
-
-## Ajout d’un site Edge Delivery à Cloud Manager {#adding}
+**Pour ajouter un site Edge Delivery à Cloud Manager :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
 1. Utilisez l’une des méthodes suivantes :
+
    * Sur la page **Aperçu du programme**, cliquez sur l’onglet **Edge Delivery**. Ensuite, près du coin inférieur droit de la page, cliquez sur **Ajouter un site Edge Delivery**.
 
-     ![Ajouter un site Edge Delivery depuis l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
+     ![Ajouter un site Edge Delivery à partir de l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * Dans le coin supérieur gauche de la page, cliquez sur l’icône représentant un hamburger pour afficher le menu de navigation de gauche. Sous l’en-tête **Services**, cliquez sur **Edge Delivery Sites**. Dans le coin supérieur droit de la page, cliquez sur **Ajouter un site**.
 
@@ -59,11 +54,3 @@ Veuillez noter que l&#39;ajout de votre site Edge Delivery à Cloud Manager est 
 1. Cliquez sur **Vérifier**.
 
 Une fois le référentiel vérifié, son état dans le tableau Edge Deliver Sites passe à un cercle vert avec une coche blanche à l’intérieur.
-
-Une fois que vous avez ajouté des Edge Delivery Services à un programme de production, votre licence Edge Delivery Services lui est appliquée.
-
-Chaque site Edge Delivery comporte une **liste à faire d’Edge Delivery** pour vous guider tout au long de la création de votre site Edge Delivery.
-
-![Application de to-do Edge Delivery](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-Consultez le document [Introduction aux Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) pour plus d’informations sur ces étapes.
