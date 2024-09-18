@@ -1,14 +1,20 @@
 ---
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 7%
 
 ---
 
 # Configurer l’interface d’utilisation du hub de contenus {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configurer l’interface d’utilisation du hub de contenus"
+>abstract="Experience Manager Assets permet aux administrateurs de configurer les options disponibles dans l’interface utilisateur de Content Hub. En fonction des options de configuration sélectionnées par les administrateurs, les utilisateurs de Content Hub peuvent afficher les champs de Content Hub. Les options de configuration incluent des métadonnées lors de l’importation de ressources, des filtres, des propriétés de ressources, des métadonnées lors de la recherche de ressources, une valorisation de marque personnalisée et tout lien personnalisé."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configuration de ressources sur Content Hub](assets/configure-assets.png)
@@ -27,7 +33,7 @@ Experience Manager Assets permet aux administrateurs de configurer les options d
 
 * Tous les liens personnalisés que vous devez inclure dans Content Hub en plus des ressources, des collections et des insights.
 
-## Conditions préalables {#prerequisites-configuration-ui}
+## Prérequis {#prerequisites-configuration-ui}
 
 [Les administrateurs Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d’autres utilisateurs de votre entreprise.
 
@@ -43,7 +49,7 @@ Pour accéder aux options de configuration sur Content Hub :
 
 ## Gestion des options de configuration dans Content Hub {#manage-configuration-options}
 
-Gérez les options de configuration suivantes pour vos utilisateurs :
+En tant qu’administrateur, gérez les options de configuration suivantes pour vos utilisateurs :
 
 * [Import](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit
 Le lien personnalisé s’affiche sous forme d’un nouvel onglet en regard de l’onglet Statistiques sur la page d’accueil de Content Hub.
 
 ![Onglets Liens personnalisés de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
