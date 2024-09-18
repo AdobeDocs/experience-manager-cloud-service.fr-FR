@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: ht
-source-wordcount: '3928'
-ht-degree: 100%
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+workflow-type: tm+mt
+source-wordcount: '4012'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe vous invite à faire part de vos commentaires ou à poser des questions su
 
 Dans le paysage numérique actuel, le trafic malveillant est une menace omniprésente. Adobe reconnaît la gravité du risque et propose plusieurs approches pour protéger les applications clientes et atténuer les attaques lorsqu’elles se produisent.
 
-À la périphérie, le réseau CDN géré par Adobe absorbe les attaques DoS sur la couche réseau (couches 3 et 4), y compris les attaques par inondation et par réflexion/amplification.
+À la périphérie, le réseau de diffusion de contenu géré par l’Adobe absorbe les attaques DoS sur la couche réseau (couches 3 et 4), y compris les attaques par inondation et par reflux/amplification.
 
 Par défaut, Adobe prend des mesures pour empêcher la dégradation des performances en raison de l’explosion inattendue d’un trafic élevé au-delà d’un certain seuil. En cas d’attaque DoS qui affecte la disponibilité du site, les équipes d’exploitation d’Adobe sont alertées et prennent des mesures pour atténuer les attaques.
 
@@ -474,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## Règles CVE {#cve-rules}
+
+Si WAF est sous licence, Adobe applique automatiquement des règles de blocage pour se protéger contre de nombreuses CVE (Vulnérabilités et exposition courantes) et de nouvelles CVE peuvent être ajoutées peu après avoir été découvertes. Les clients ne doivent pas et ne doivent pas configurer les règles CVE eux-mêmes.
+
+Si une requête de trafic correspond à un CVE, elle apparaît dans l’entrée de journal du réseau de diffusion de contenu correspondante.
+
+Contactez l’assistance Adobe si vous avez des questions à propos d’un CVE particulier ou s’il existe une règle CVE spécifique que votre entreprise souhaite désactiver.
 
 ## Alertes sur les règles de filtrage du trafic {#traffic-filter-rules-alerts}
 
