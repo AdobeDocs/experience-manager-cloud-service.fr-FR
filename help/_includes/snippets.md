@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 83%
 
 ---
 # Fragments de code {#snippets}
@@ -95,7 +95,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
     <td>Valider/réinitialiser la règle de champ/panneau/formulaire dans « Then » (alors) </td>
     <td>Les fonctions Valider et Réinitialiser ne prennent en charge que les objets de formulaire dans l’éditeur de règles. 
    </td>
-    <td>Les fonctions Valider et Réinitialiser prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
+    <td>Les fonctions de validation et de réinitialisation prennent en charge l’objet de formulaire/panneau/champ dans l’éditeur de règles. 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Présentation des composants Portail Formulaires](/help/forms/configure-forms-portal.md)
 * [Répertorier vos formulaires sur une page Sites](/help/forms/list-forms-on-sites-page.md)
 * [Enregistrer vos formulaires en tant que brouillons](/help/forms/save-core-component-based-form-as-draft.md)
-* [Ajouter des liens de formulaire à une page Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Ajout de liens de formulaire à une page Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Liste autorisée des adresses IP de Cloud Manager et des pipelines front-end {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >Le pipeline front-end requiert que la liste autorisée des adresses IP suivante soit ajoutée au préalable à Cloud Manager.
 >Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
->Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
+>Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette Liste autorisée IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
 >**Liste autorisée des adresses IP**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!TIP]
 >
->Vous découvrez Dynamic Media ? Pour une vue d’ensemble rapide et de haut niveau de Dynamic Media, consultez la section [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Voir aussi pour Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Vous découvrez Dynamic Media ? Pour une vue d’ensemble rapide et de haut niveau de Dynamic Media, consultez la section [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Vous découvrez Dynamic Media ? Pour un aperçu rapide et de haut niveau de Dynamic Media, voir [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Suivez les [Bonnes pratiques de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) pour en tirer le meilleur parti.
 >
->* Testez les fonctionnalités d’image Dynamic Media avec l’[outil Instantané](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Testez les fonctionnalités d’image Dynamic Media avec l’ [outil d’instantané](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Assurez une lecture fluide des vidéos avec une diffusion [vidéo à débit adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -178,6 +178,21 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >* Automatisez le recadrage des [vidéos avec le recadrage intelligent](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Diffusez [une expérience interactive optimisée en 3D](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Diffusez une [expérience interactive 3D](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
+## Consigner un ticket d’assistance {#support-ticket}
+
+Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux TSL, vous pouvez envoyer un ticket d’assistance.
+
+Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votre site Edge Delivery dans Cloud Manager. L&#39;enregistrement de votre site web avec Cloud Manager est recommandé à tous les utilisateurs d&#39;AEM as a Cloud Service et [apporte un certain nombre d&#39;avantages](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consultez la [documentation de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) pour plus d’informations si vous n’avez pas encore enregistré votre site.
+
+Une fois votre site web enregistré auprès de Cloud Manager, procédez comme suit en utilisant l’Admin Console pour envoyer un ticket d’assistance :
+
+1. [Suivez le processus d’assistance standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
+1. Ajoutez **Edge Delivery** dans le titre du ticket.
+1. Dans la description, fournissez les détails suivants en plus de la description du problème :
+
+   * URL du site web actif. Par exemple : `www.mydomain.com`.
+   * URL du site web d’origine (URL `.hlx`).
 
