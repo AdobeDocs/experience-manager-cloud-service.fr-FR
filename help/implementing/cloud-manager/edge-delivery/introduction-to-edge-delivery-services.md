@@ -4,7 +4,7 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide d
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -62,7 +62,10 @@ Vous pouvez ajouter des Edge Delivery Services de différentes manières en fonc
 >* Votre entreprise doit disposer d’une licence de Edge Delivery Services inutilisée pour pouvoir l’appliquer à un programme de production.
 >* Une fois la licence Edge Delivery Services appliquée ou supprimée d’un programme, la modification prend effet immédiatement sans qu’il soit nécessaire d’exécuter un pipeline.
 
+
 ## À propos de la liste de tâches d’Edge Delivery {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 La **liste de tâches d’Edge Delivery** est une liste de contrôle de tâches d’intégration destinée à vous guider tout au long de l’intégration et de la gestion de votre site Edge Delivery jusqu’à [go-live](/help/journey-onboarding/go-live-checklist.md).
 
@@ -77,7 +80,6 @@ La **liste de tâches d’Edge Delivery** est une liste de contrôle de tâches 
 | 5 | Configurer le CDN | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configuration du réseau de diffusion de contenu de votre site Edge Delivery | Voir [Ajout d’une configuration CDN](#add-cdn). |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Enregistrer un ticket d’assistance {#eds-support-ticket}
 
