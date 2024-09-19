@@ -3,9 +3,9 @@ title: Ajout d’un site Edge Delivery à Cloud Manager
 description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '505'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,9 @@ Voir aussi [Présentation des Edge Delivery Services dans Cloud Manager](/help/i
 
      ![Ajouter un site Edge Delivery à partir de l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * Dans le coin supérieur gauche de la page, cliquez sur l’icône représentant un hamburger pour afficher le menu de navigation de gauche. Sous l’en-tête **Services**, cliquez sur **Edge Delivery Sites**. Dans le coin supérieur droit de la page, cliquez sur **Ajouter un site**.
+   * Dans le coin supérieur gauche de la page, cliquez sur ![Afficher ou masquer la navigation latérale](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de navigation latéral.
+Sous l’en-tête **Services**, cliquez sur ![Page web pour les sites Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+Dans le coin supérieur droit de la page, cliquez sur **Ajouter un site**.
 
      ![Ajouter un site Edge Delivery à partir du bouton Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -46,10 +48,14 @@ Voir aussi [Présentation des Edge Delivery Services dans Cloud Manager](/help/i
 
    | Numéro de l’étape | Description |
    | - | - |
-   | **1** | Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertoriée dans le champ **Repository URL** . N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.<br>Si nécessaire, cliquez sur l’icône **Copier** pour copier le chemin d’accès au Presse-papiers. |
-   | **2** | Ajoutez le code affiché dans le champ de texte de l’étape 2 au fichier que vous venez de créer à l’étape 1.<br>Si nécessaire, cliquez sur l’icône **Copier** pour copier le code dans le Presse-papiers. |
+   | **1** | Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertoriée dans le champ **Repository URL** . N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.<br>Si nécessaire, cliquez sur ![Copier](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le chemin vers le Presse-papiers. |
+   | **2** | Ajoutez le code affiché dans le champ de texte de l’étape 2 au fichier que vous venez de créer à l’étape 1.<br>Si nécessaire, cliquez sur ![Copier](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le code dans le Presse-papiers. |
    | **3** | Créez une requête de tirage dans le référentiel Git pour les modifications que vous venez de créer, puis fusionnez-la en `main` pour valider le code. |
 
 1. Cliquez sur **Vérifier**.
 
-Une fois le référentiel vérifié, son état dans le tableau Edge Deliver Sites passe à un cercle vert avec une coche blanche à l’intérieur.
+Une fois le référentiel vérifié, son état dans le tableau des sites Edge Delivery passe à un cercle vert avec une coche blanche à l’intérieur.
+
+Dans le même tableau, vous pouvez cliquer sur ![Informations sur le site Edge Delivery.](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher des détails sur votre site, tels que l’URL vérifiée du référentiel et l’URL du site web d’aperçu et de production.
+
+
