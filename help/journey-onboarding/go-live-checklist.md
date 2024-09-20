@@ -5,9 +5,9 @@ exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '567'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Passez en revue cette liste d’activités pour parvenir à une mise en producti
       * Configurez le SSL et le DNS conformément à la documentation de votre fournisseur de réseau de diffusion de contenu.
    * Si vous n’utilisez pas de réseau de diffusion de contenu supplémentaire, configurez le SSL et le DNS conformément à la documentation suivante :
       * Gestion des certificats SSL
-         * [Présentation des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+         * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [Gérer des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gérer des noms de domaine personnalisés (DNS)
          * Assurez-vous que le changement de DNS n’entraîne pas de problèmes inattendus. Créez un sous-domaine de test pour connecter votre instance de production avant la mise en ligne et effectuez une batterie de tests UAT. Ainsi, si votre domaine est exemple.com, vous pouvez créer un sous-domaine test.exemple.com et l’appliquer à l’instance de production. Lors du test UAT du domaine, les éléments tels que la redirection des liens, la mise en cache et les configurations de Dispatcher nécessitent toute votre attention.
