@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1003'
-ht-degree: 100%
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -90,6 +90,7 @@ Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires
 
    * **Rendre en tant que :** **Zone de texte** - Lorsque vous créez une aventure, ce champ stocke une brève description du voyage.
    * **Libellé du champ :** `Description` - Il s’agit du libellé affiché pour ce champ lors de la création d’une aventure.
+   * **Type par défaut** : **Texte brut** - Format requis pour cet exemple.
 
 1. Ajoutez un champ pour stocker le prix de l’aventure en effectuant le glisser-déposer d’un champ de **texte monoligne** et saisissez les propriétés suivantes :
 
