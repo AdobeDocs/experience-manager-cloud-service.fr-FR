@@ -1,13 +1,13 @@
 ---
-title: Création de programmes Sandbox
+title: Créer des programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
@@ -26,17 +26,17 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 
    ![Page de destination de Cloud Manager.](assets/log-in.png)
 
-1. Dans l&#39;assistant *Créons votre programme*, dans le champ de texte **Nom du programme**, saisissez le nom souhaité pour le programme.
+1. Dans l’assistant *Créons votre programme*, dans le champ de texte **Nom du programme**, saisissez le nom souhaité pour le programme.
 
-1. Sous **Objectif de programme**, sélectionnez **`Set up a sandbox`**.
+1. Sous **Objectif de programme**, sélectionnez ![Icône de baguette magique](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Configuration d’un environnement de test**.
 
    ![Création d’un type de programme.](assets/create-sandbox.png)
 
 1. (Facultatif) Dans le coin inférieur droit de la boîte de dialogue de l’assistant, effectuez l’une des opérations suivantes :
 
-   * Faites glisser et déposez un fichier image sur la cible **Ajouter une image de programme** .
-   * Cliquez sur **Ajouter une image de programme**, puis sélectionnez une image dans un navigateur de fichiers.
-   * Cliquez sur l’icône représentant une corbeille pour supprimer une image que vous avez ajoutée.
+   * Faites glisser et déposez un fichier image sur la cible ![Icône Image](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **** Ajouter une image de programme.
+   * Cliquez sur ![Icône Image](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Ajouter une image de programme**, puis sélectionnez une image dans un navigateur de fichiers.
+   * Cliquez sur ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) pour supprimer une image que vous avez ajoutée.
 
 1. Cliquez sur **Continuer**.
 
@@ -55,7 +55,7 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 
 Une fois qu’un nouveau programme d’environnement de test est en cours de création, vous pouvez afficher le détail de votre configuration d’environnement de test et accéder à l’environnement en affichant la page d’aperçu du programme.
 
-1. Sur la page d’entrée Cloud Manager, cliquez sur le bouton représentant des points de suspension du programme d’environnement de test créé.
+1. Sur la page d’entrée Cloud Manager, dans le programme Sandbox, cliquez sur ![Icône Plus petite liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) sur le programme sandbox créé.
 
    ![Accès à l’aperçu du programme](assets/program-overview-sandbox.png)
 

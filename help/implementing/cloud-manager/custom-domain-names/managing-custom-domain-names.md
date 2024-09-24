@@ -1,14 +1,14 @@
 ---
-title: Gestion des noms de domaine personnalisés
+title: Gérer les noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 35%
+source-wordcount: '447'
+ht-degree: 34%
 
 ---
 
@@ -33,10 +33,10 @@ Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domai
 
 1. Dans le coin supérieur gauche de la page, cliquez sur l’icône représentant un hamburger pour afficher le menu de navigation de gauche.
 1. Sous l’en-tête **Services**, cliquez sur **Configurations CDN**.
-1. Sur la page **Configurations du réseau de diffusion de contenu**, cliquez sur les points de suspension en fin de ligne dont vous souhaitez modifier le réseau de diffusion de contenu.
+1. Sur la page **Configurations du réseau de diffusion de contenu**, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez modifier le réseau de diffusion de contenu.
 1. Cliquez sur **Modifier**.
 1. Dans la boîte de dialogue **Modifier la configuration CDN**, procédez comme suit :
-   * Dans la liste déroulante **Niveau** , sélectionnez le niveau (Auteur ou Publish) à utiliser.
+   * Dans la liste déroulante **Niveau** , sélectionnez le niveau (Publish ou Aperçu) à utiliser.
    * Dans la liste déroulante **SSL certificate**, sélectionnez le certificat SSL que vous souhaitez utiliser.
 1. Cliquez sur **Mettre à jour**.
 

@@ -1,18 +1,18 @@
 ---
-title: Gestion des configurations CDN
+title: Gérer les configurations CDN
 description: Découvrez comment utiliser Cloud Manager pour modifier, mettre à jour ou supprimer des configurations CDN pour un site Edge Delivery ou un environnement Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '468'
 ht-degree: 7%
 
 ---
 
 
-# Gestion des configurations CDN {#manage-cdn-configurations}
+# Gestion des configurations du réseau de diffusion de contenu {#manage-cdn-configurations}
 
 Découvrez comment utiliser Cloud Manager pour modifier, mettre à jour ou supprimer des configurations CDN pour un site Edge Delivery ou un environnement Cloud Manager.
 
@@ -31,7 +31,7 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 **Pour modifier une configuration CDN :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Dans le panneau de navigation de gauche, sous **Services**, cliquez sur **Configurations CDN**.
+1. Dans le panneau latéral, sous **Services**, cliquez sur **Configurations CDN**.
 1. Dans la table **Configurations du réseau de diffusion de contenu**, cliquez sur les points de suspension à la fin d’une ligne dont vous souhaitez modifier la configuration.
 
    ![Modification d’une configuration CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
