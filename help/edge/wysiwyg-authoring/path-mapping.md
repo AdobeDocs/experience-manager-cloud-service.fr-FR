@@ -3,7 +3,7 @@ title: Mappage de chemin pour les Edge Delivery Services
 description: Découvrez comment mapper les chemins de page utilisés sur l’instance de création AEM aux chemins de page publics utilisés sur le site web et contrôler le contenu publié sur les Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Les mappages de vos chemins d’accès peuvent être configurés de l’une des 
    }'
    ```
 
-1. Si le projet n’utilise pas le service de configuration, le mappage des chemins est configuré via un fichier paths.json dans le référentiel GitHub de vos projets.
+1. Si le projet n’utilise pas le service de configuration, le mappage des chemins est configuré via un fichier `paths.json` dans le référentiel GitHub de vos projets.
 
-   * Voir [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) pour un exemple.
+   * Voir [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) pour un exemple.
 
 Dans les deux cas, une fois que vous avez configuré les mappages de vos chemins, vous pouvez vérifier la configuration via l’URL de configuration accessible au public `https://<branch>--<site>--<org>.aem.page/config.json`.
