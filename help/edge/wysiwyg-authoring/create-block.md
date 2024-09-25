@@ -4,10 +4,10 @@ description: Découvrez comment créer des blocs instrumentés pour une utilisat
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 64%
+source-wordcount: '1445'
+ht-degree: 62%
 
 ---
 
@@ -18,16 +18,16 @@ Découvrez comment créer des blocs instrumentés pour une utilisation avec l’
 
 ## Conditions préalables {#prerequisites}
 
-Ce guide fournit des instructions détaillées sur la création de blocs instrumentés pour l’éditeur universel dans la création WYSIWYG avec des projets Edge Delivery Services. Il aborde l’ajout de composants, le chargement de définitions de composants dans l’éditeur universel, la publication de pages, l’implémentation des décorations et des styles de bloc, l’application des modifications à l’environnement de production ainsi que la vérification de ces modifications. Quand vous aurez terminé ce guide, vous pourrez créer et déployer un nouveau bloc pour votre propre projet.
+Ce guide fournit des instructions étape par étape pour la création de blocs instrumentés pour l’éditeur universel dans la création WYSIWYG avec des projets Edge Delivery Services. Il aborde l’ajout de composants, le chargement de définitions de composants dans l’éditeur universel, la publication de pages, l’implémentation des décorations et des styles de bloc, l’application des modifications à l’environnement de production ainsi que la vérification de ces modifications. Quand vous aurez terminé ce guide, vous pourrez créer et déployer un nouveau bloc pour votre propre projet.
 
 Ce guide nécessite nécessairement une connaissance existante de la création WYSIWYG avec des projets Edge Delivery Services ainsi que de l’éditeur universel. Avant de commencer ce guide, vous devez déjà avoir accès à Edge Delivery Services et connaître ses principes de base, notamment :
 
 * Vous avez terminé le [tutoriel sur Edge Delivery Services.](/help/edge/developer/tutorial.md)
 * Vous avez accès à un [sandbox AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Vous avez [activé l’éditeur universel dans le même environnement de sandbox.](/help/implementing/universal-editor/getting-started.md)
-* Vous avez terminé le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+* Vous avez terminé le guide de prise en main de [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
-Ce guide s’appuie sur le travail effectué dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+Ce guide s’appuie sur le travail effectué dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
 
 ## Ajouter un nouveau bloc à votre projet {#add-block}
 
@@ -45,7 +45,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ### Créer une définition et un modèle de bloc {#create-block-model}
 
-1&amp;period; Cloner le projet GitHub local que vous avez créé dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
+1&amp;period; Cloner le projet GitHub local que vous avez créé dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec les Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans un éditeur de votre choix.
 
 * L’éditeur Microsoft Code est utilisé ici à titre d’exemple.
 
@@ -155,7 +155,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 Maintenant que votre bloc de citation de base est défini et validé dans l’exemple de projet, vous pouvez ajouter un bloc de citation à une page existante.
 
-1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accédez au site que vous avez créé dans le guide [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et sélectionnez une page.
+1. Dans un navigateur, connectez-vous à AEM as a Cloud Service. [À l’aide de la console Sites,](/help/sites-cloud/authoring/basic-handling.md) accédez au site que vous avez créé dans le guide de [prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et sélectionnez une page.
 
    * Dans ce cas, `index` est utilisé à titre d’exemple.
 
@@ -331,6 +331,12 @@ Lorsque vous ne développez pas dans la branche `main`, vous pouvez ajouter `?re
 
 La publication de contenu avec un nouveau modèle n’est prise en charge que lorsque le modèle est fusionné avec la branche `main`.
 
+## Réutilisation de blocs pour la création basée sur les documents {#reusing-blocks}
+
+Vous pouvez utiliser les blocs que vous créez pour la création WYSIWYG à l’aide d’Universal Editor pour la création basée sur des documents si vous respectez le même modèle de contenu.
+
+Pour plus d’informations, consultez le document [Blocs pour WYSIWYG et Création basée sur les documents](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) .
+
 ## Étapes suivantes {#next-steps}
 
 Maintenant que vous savez comment créer des blocs, il est essentiel de comprendre comment modéliser le contenu de manière sémantique pour optimiser l’expérience de développement.
@@ -339,5 +345,5 @@ Consultez le document [Modélisation de contenu pour la création WYSIWYG avec d
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEMs AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEM AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
