@@ -470,7 +470,7 @@ ht-degree: 99%
          + [Exemples de sélecteur de ressources](/help/assets/asset-selector-examples.md)
          + [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
          + [Chargement du sélecteur de ressources](/help/assets/asset-selector-upload.md)
-         + [Collections de sélecteur de ressources](/help/assets/asset-selector-collections.md)
+         + [Collections du sélecteur de ressources](/help/assets/asset-selector-collections.md)
       + [Sélecteur de destinations micro front-end](/help/assets/destination-selector.md)
       + [Partager des ressources](/help/assets/share-assets.md)
       + [Retraiter des ressources](/help/assets/reprocessing.md)
@@ -809,7 +809,7 @@ ht-degree: 99%
       + [Prévisualiser un formulaire](/help/forms/previewing-forms.md)
    + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Présentation du workflow basé sur l’utilisation de Forms](/help/forms/aem-forms-workflow.md)
-      + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Utilisation d’étapes basées sur l’utilisation de Forms dans un workflow et référence des étapes](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utiliser des variables dans un processus basé sur Forms](/help/forms/variable-in-aem-workflows.md)
       + [Sélection dynamique d’utilisateurs et d’utilisatrices ou de groupes dans le workflow AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
       + [Gérer des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/manage-applications-inbox.md)
@@ -1252,7 +1252,7 @@ ht-degree: 99%
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuration de la segmentation avec ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=fr)
    + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
-      + Extension des AEM avec App Builder {#app-builder}
+      + Étendre AEM avec App Builder {#app-builder}
          + [Étendre AEM à l’aide d’Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Présentation d’App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console de développeur Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
