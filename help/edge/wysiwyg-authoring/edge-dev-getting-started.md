@@ -4,10 +4,10 @@ description: Ce guide vous aidera à maîtriser l’exécution d’un nouveau si
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Vous devez d’abord créer un projet sur GitHub, basé sur le modèle Adobe.
 1. Ajoutez un message de validation selon vos besoins, puis cliquez sur **Valider les modifications**, en les validant directement dans la branche `main`.
 
    ![Validation des modifications](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour les Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Créer et modifier un nouveau site AEM {#create-aem-site}
 

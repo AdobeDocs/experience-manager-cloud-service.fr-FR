@@ -1,17 +1,17 @@
 ---
-title: Gestion des données taxonomiques
+title: Gérer des données taxonomiques
 description: Découvrez comment gérer les données de taxonomie pour utiliser des balises avec votre AEM avec des sites Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
 
-
-# Gestion des données taxonomiques {#managing-taxonomy-data}
+# Gérer des données taxonomiques {#managing-taxonomy-data}
 
 Découvrez comment gérer les données de taxonomie pour utiliser des balises avec votre AEM avec des sites Edge Delivery Services.
 
@@ -108,6 +108,10 @@ Comme lorsque vous [ gérez et publiez des données tabulaires pour votre site d
    * Vous pouvez effectuer la validation vers `main` ou créer une requête d’extraction conformément à votre processus.
 
 Ce processus ne doit être effectué qu’une seule fois par page de taxonomie. Une fois cette opération terminée, vous pouvez publier votre taxonomie.
+
+>[!TIP]
+>
+>Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour les Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Publier une taxonomie {#publishing}
 
