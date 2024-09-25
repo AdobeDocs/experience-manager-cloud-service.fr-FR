@@ -5,9 +5,9 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '234'
 ht-degree: 14%
 
 ---
@@ -21,11 +21,13 @@ Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Resp
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**Pour ajouter une Liste autorisée IP :**
+
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Sur la page **Aperçu du programme** , à l’aide du panneau latéral sur le côté gauche (vous devrez peut-être cliquer sur l’icône de hamburger dans le coin supérieur gauche pour afficher le panneau), cliquez sur **Listes autorisées IP**.
+1. Sur la page **Aperçu du programme**, à l’aide du panneau latéral (vous devrez peut-être cliquer sur l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) dans le coin supérieur gauche pour afficher le panneau), cliquez sur ![Icône Liste des tâches](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
 
    ![Option de Listes autorisées IP dans le panneau latéral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
