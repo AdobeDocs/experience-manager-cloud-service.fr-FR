@@ -4,10 +4,10 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1362'
+ht-degree: 1%
 
 ---
 
@@ -44,14 +44,7 @@ Cet article est organisé de la manière suivante :
 
 ## Configuration {#setup}
 
-1. Créez la structure de dossiers et de fichiers suivante dans le dossier de niveau supérieur de votre projet dans Git :
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` doit contenir des métadonnées et une configuration similaire au format suivant (nous utilisons Splunk comme exemple).
+1. Créez un fichier nommé `logForwarding.yaml`. Il doit contenir des métadonnées, comme décrit dans l’ [article du pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) (**type** doit être défini sur `LogForwarding` et la version définie sur &quot;1&quot;), avec une configuration similaire à la suivante (nous utilisons Splunk comme exemple).
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ Cet article est organisé de la manière suivante :
          index: "AEMaaCS"
    ```
 
-   Le paramètre **kind** doit être défini sur `LogForwarding`, la version doit être définie sur la version du schéma, qui est 1.
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-   Les jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les comme Cloud Manager [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md) de type **secret**. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué, de sorte que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
+1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager, comme référencé par [cette section](/help/operations/config-pipeline.md#creating-and-managing). Notez que les pipelines de pile complète et les pipelines de niveau web ne déploient pas le fichier de configuration.
 
-   Il est possible de définir des valeurs différentes entre les journaux CDN et les journaux d’AEM (y compris Apache/Dispatcher), en incluant un bloc supplémentaire **cdn** et/ou **aem** après le bloc **default**, où les propriétés peuvent remplacer celles définies dans le bloc **default** ; seule la propriété activée est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
+1. Déployez la configuration.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+Les jetons dans la configuration (tels que `${{SPLUNK_TOKEN}}`) représentent des secrets, qui ne doivent pas être stockés dans Git. À la place, déclarez-les en tant que [variables d’environnement secrètes](/help/operations/config-pipeline.md#secret-env-vars) Cloud Manager. Veillez à sélectionner **Tous** comme valeur de liste déroulante pour le champ Service appliqué, de sorte que les journaux puissent être transférés vers les niveaux d’auteur, de publication et d’aperçu.
 
-   Un autre scénario consiste à désactiver le transfert des journaux CDN ou AEM journaux (y compris Apache/Dispatcher). Par exemple, pour ne transférer que les journaux CDN, vous pouvez configurer les éléments suivants :
+Il est possible de définir des valeurs différentes entre les journaux CDN et les journaux d’AEM (y compris Apache/Dispatcher), en incluant un bloc supplémentaire **cdn** et/ou **aem** après le bloc **default**, où les propriétés peuvent remplacer celles définies dans le bloc **default** ; seule la propriété activée est requise. Un cas d’utilisation possible peut être l’utilisation d’un index Splunk différent pour les journaux CDN, comme l’exemple ci-dessous.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager. Notez que les pipelines de pile complète et les pipelines de niveau web ne déploient pas le fichier de configuration.
+Un autre scénario consiste à désactiver le transfert des journaux CDN ou AEM journaux (y compris Apache/Dispatcher). Par exemple, pour ne transférer que les journaux CDN, vous pouvez configurer les éléments suivants :
 
-   * [Voir Configuration des pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Voir Configuration des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## Configuration de la destination de journalisation {#logging-destinations}
 

@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 35%
@@ -115,7 +115,7 @@ Voir [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/co
 
 À l’aide d’un pipeline de configuration, vous pouvez déployer rapidement les paramètres pour le transfert de journaux, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu, y compris les règles de filtrage du trafic (telles que les règles WAF (Web Application Firewall)). En outre, vous pouvez gérer les transformations de requêtes et de réponses, les sélecteurs d’origine, les redirections côté client, les pages d’erreur, les clés CDN gérées par le client, les clés API de purge et l’authentification de base.
 
-Voir [Utilisation des pipelines de configuration](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour obtenir une liste complète des fonctionnalités prises en charge et pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
+Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md) pour obtenir une liste complète des fonctionnalités prises en charge et pour savoir comment gérer les configurations de votre référentiel afin qu’elles soient déployées correctement.
 
 ### Configuration des pipelines de configuration {#configure-config-deployment}
 
