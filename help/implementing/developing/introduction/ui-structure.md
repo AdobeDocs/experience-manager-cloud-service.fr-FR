@@ -4,10 +4,10 @@ description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs prin
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -171,3 +171,15 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 Pour plus d’informations techniques, consultez l’[ensemble de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) relative à l’éditeur de page.
+
+### Shell unifié {#unified-shell}
+
+Voir [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si vous utilisez le Shell unifié comme interface utilisateur AEM.
+
+Si vous avez besoin de personnaliser (ou avez déjà effectué) des personnalisations, celles-ci peuvent être désactivées :
+
+* [de l’interface utilisateur](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* à partir du code de votre projet, en définissant la propriété `Boolean` :
+
+  `/conf/global/setting/unifiedshell` - `false`

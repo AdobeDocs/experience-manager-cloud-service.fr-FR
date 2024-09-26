@@ -4,10 +4,10 @@ description: Découvrez les avantages d’AEM as a Cloud Service sur Unified
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ Lorsqu’il est prêt à l’emploi, AEM as a Cloud Service active Unified Shell
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>Un Shell unifié peut également être désactivé à partir du code de votre projet. Voir [Structure de l’interface utilisateur AEM - Shell unifié](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Passer au thème sombre {#changing-to-dark-theme}
 
 Pour passer au thème sombre, cliquez sur l’icône de votre profil. Cette action affiche une fenêtre contextuelle comme illustré ci-dessous. Vous pouvez utiliser le bouton d’activation/désactivation pour passer à un thème sombre pour Unified Shell.
@@ -73,3 +77,4 @@ Pour accéder à la boîte de réception AEM, vous pouvez cliquer sur l’icône
 Cliquez sur le bouton Boîte de réception dans la fenêtre contextuelle pour accéder à votre boîte de réception AEM :
 
 ![image](/help/overview/assets/unifiedshell6.png)
+
