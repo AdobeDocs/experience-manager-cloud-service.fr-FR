@@ -3,7 +3,7 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL
 description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 12%
@@ -36,7 +36,7 @@ En suivant ces étapes, vous pouvez utiliser le sélecteur de ressources avec vo
 <html>
 <head>
     <title>Asset Selector</title>
-    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
