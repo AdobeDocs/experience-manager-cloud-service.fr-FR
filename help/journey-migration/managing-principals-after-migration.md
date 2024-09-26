@@ -1,20 +1,20 @@
 ---
-title: Gestion des entités après la migration
-description: Découvrez comment configurer des utilisateurs et des groupes dans IMS et AEM
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+title: Gérer des entités après la migration
+description: Découvrez comment configurer des utilisateurs et utilisatrices et des groupes dans IMS et AEM.
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Gestion des entités après la migration {#managing-principals-after-migration}
+# Gérer des entités après la migration {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="Gestion des entités après la migration"
->abstract="Découvrez comment configurer des utilisateurs et des groupes dans IMS et AEM"
+>title="Gérer des entités après la migration"
+>abstract="Découvrez comment configurer des utilisateurs et utilisatrices et des groupes dans IMS et AEM."
 
 Ce document décrit les étapes générales que doivent suivre les clients pour configurer leurs utilisateurs et groupes dans IMS et les AEM pour travailler avec leur environnement AEM as a Cloud Service.
 
@@ -56,5 +56,3 @@ Ces groupes ne se trouvant pas dans IMS, l’outil de chargement en masse ne peu
 * Lorsque l’utilisateur se connecte pour la première fois, son utilisateur IMS est créé dans AEM et il doit avoir accès au(x) nouveau(s) groupe(s) et donc aux groupes de collection d’origine.
 
 Remarque : Pour l’affectation en masse d’utilisateurs, les étapes ci-dessus doivent être utilisées pour créer les utilisateurs dans IMS ; les utilisateurs qui existent déjà dans IMS ne peuvent pas être recréés par téléchargement en masse.
-
-

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 37%
+ht-degree: 39%
 
 ---
 
@@ -35,9 +35,9 @@ Les clients qui souhaitent publier du contenu sur le niveau Edge Delivery Servic
 Pour vous préparer à la diffusion de contenu à l’aide AEM du réseau de diffusion de contenu intégré via l’interface utilisateur en libre-service Cloud Manager, vous pouvez tirer parti des fonctionnalités de réseau de diffusion de contenu géré par Adobe. Cette fonctionnalité vous permet de gérer la gestion du réseau de diffusion de contenu en libre-service, y compris de configurer et d’installer des certificats SSL tels que DV (Domain Validation) ou EV/OV (Extended/Organization Validation). Pour plus d’informations sur ces méthodes, voir :
 
 * [Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-* [Présentation des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-* [Présentation des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Ajout d’une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+* [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Limitation du trafic**
 
@@ -74,7 +74,7 @@ Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dis
 
 Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
 
-## Le réseau de diffusion de contenu géré par le client pointe vers AEM réseau de diffusion de contenu géré {#point-to-point-CDN}
+## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

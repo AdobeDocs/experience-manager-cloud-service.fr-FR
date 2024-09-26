@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="Migration des groupes"
->abstract="L’outil de transfert de contenu vous permet de copier des groupes de votre système Adobe Experience Manager (AEM) existant vers AEM as a Cloud Service."
+>abstract="L’outil de transfert de contenu permet de copier des groupes de votre système Adobe Experience Manager (AEM) existant vers AEM as a Cloud Service."
 
 >[!NOTE]
 >Pour les versions précédentes de l’outil de mappage des utilisateurs, consultez la [documentation des versions antérieures](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -24,10 +24,10 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
->title="Les utilisateurs ne sont pas migrés"
->abstract="L’outil de transfert de contenu ne migre plus les utilisateurs. Les utilisateurs doivent être gérés dans l’Admin Console."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentation AEM Admin Console"
->additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
+>title="Les utilisateurs et utilisatrices ne sont pas migrés."
+>abstract="L’outil de transfert de contenu ne migre plus les utilisateurs et utilisatrices. Ceux-ci doivent être gérés dans Admin Console."
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentation dʼAEM Admin Console"
+>additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, les groupes doivent être migrés des systèmes AEM existants vers AEM as a Cloud Service. Cette tâche est effectuée par l’outil de transfert de contenu.
 

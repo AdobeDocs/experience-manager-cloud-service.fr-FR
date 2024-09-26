@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="Migration des groupes d’utilisateurs fermés"
+>title="Migrer des groupes d’utilisateurs et utilisatrices fermés"
 >abstract="La migration des groupes d’utilisateurs et utilisatrices fermés (CUG) nécessite actuellement quelques vérifications et étapes pour être opérationnelle après une migration."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=fr" text="Groupes d’utilisateurs fermés dans AEM"
 

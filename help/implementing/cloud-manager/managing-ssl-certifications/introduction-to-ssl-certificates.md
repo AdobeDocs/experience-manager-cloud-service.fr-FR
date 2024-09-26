@@ -1,5 +1,5 @@
 ---
-title: Présentation des certificats SSL
+title: Introduction à la gestion des certificats SSL
 description: Découvrez comment Cloud Manager vous fournit des outils en libre-service pour installer les certificats SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
@@ -8,19 +8,19 @@ role: Admin, Architect, Developer
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
 
-# Présentation des certificats SSL{#introduction}
+# Introduction à la gestion des certificats SSL{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gérer des certificats SSL"
 >abstract="Découvrez comment Cloud Manager vous fournit des outils en libre-service pour installer et gérer des certificats SSL afin de sécuriser votre site pour les utilisateurs et utilisatrices. Cloud Manager utilise un service de plateforme TLS pour gérer les certificats SSL et les clés privées détenus par la clientèle et obtenus auprès d’autorités de certification tierces."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Affichage, mise à jour et remplacement d’un certificat SSL"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Vérification du statut d’un certificat SSL"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Affichage, mise à jour et remplacement d’un certificat SSL"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Vérification du statut d’un certificat SSL"
 
 
 Cloud Manager propose des outils en libre-service pour installer et gérer des certificats SSL (Secure Socket Layer), ce qui garantit la sécurité de site à vos utilisateurs. Les deux cas d’utilisation suivants sont pris en charge :
@@ -37,7 +37,7 @@ Cloud Manager propose des outils en libre-service pour installer et gérer des c
 >Les clients ne sont pas autorisés à télécharger des certificats DV (Domain Validation).
 
 
-## Présentation des certificats SSL {#certificates}
+## Introduction à la gestion des certificats SSL {#certificates}
 
 Les entreprises et les organisations utilisent des certificats SSL pour sécuriser leurs sites web et permettre à leurs clients d’y faire confiance. Pour utiliser le protocole SSL, un serveur web nécessite un certificat SSL.
 

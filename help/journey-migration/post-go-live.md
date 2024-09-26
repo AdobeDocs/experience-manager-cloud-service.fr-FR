@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 58%
+ht-degree: 64%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
->abstract="Examinez les bonnes pratiques pour le développement continu et la gestion des logs. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accéder aux journaux et les gérer"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+>abstract="Examinez les bonnes pratiques pour le développement et la gestion continus des journaux. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accéder aux journaux et les gérer"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
 Ce parcours est la dernière partie. Vous apprenez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurez le nettoyage des fichiers temporaires, passez en revue les bonnes pratiques de développement continu et gérez les journaux.
 
