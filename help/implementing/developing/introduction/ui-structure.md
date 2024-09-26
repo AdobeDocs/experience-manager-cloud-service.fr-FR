@@ -4,9 +4,9 @@ description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs prin
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd5601661cd59c158802f900677855be76d5893b
+source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '939'
 ht-degree: 94%
 
 ---
@@ -176,7 +176,7 @@ Pour plus d’informations techniques, consultez l’[ensemble de documentation 
 
 Voir [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si vous utilisez le Shell unifié comme interface utilisateur AEM.
 
-Si vous avez besoin de personnaliser (ou avez déjà effectué) des personnalisations, celles-ci peuvent être désactivées :
+Si vous avez besoin d’effectuer, ou avez déjà fait, des personnalisations, l’option Unified Shall peut être désactivée :
 
 * [de l’interface utilisateur](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
