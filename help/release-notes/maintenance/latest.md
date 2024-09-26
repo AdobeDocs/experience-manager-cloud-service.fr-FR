@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 22f8ffc3e3acec9846a2f868be48195ca62df88b
+source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 17964 {#release-17964}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17964, publiée le jeudi 25 septembre 2024. La version de maintenance précédente était la version 17689.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 17964, publiée le jeudi 25 septembre 2024. La version de maintenance précédente était la version 17689. La version 17882 a été rendue privée en raison d’un problème.
 
 L’activation des fonctionnalités de la version 2024.10.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
