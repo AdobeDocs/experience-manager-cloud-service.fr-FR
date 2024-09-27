@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1415'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Le réseau de diffusion de contenu fourni par l’Adobe dispose de plusieurs fon
 
 * La valeur d’en-tête HTTP X-AEM-Edge utilisée par le réseau de diffusion de contenu Adobe pour valider les requêtes provenant d’un réseau de diffusion de contenu géré par le client.
 * Jeton API utilisé pour purger les ressources dans le cache CDN.
-* Liste de combinaisons nom d’utilisateur/mot de passe pouvant accéder à un contenu restreint, en envoyant un formulaire d’authentification de base. [Cette fonctionnalité est disponible pour les utilisateurs plus précoces.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* Liste de combinaisons nom d’utilisateur/mot de passe pouvant accéder à un contenu restreint, en envoyant un formulaire d’authentification de base.
 
 Chacune d’elles, y compris la syntaxe de configuration, est décrite dans sa propre section ci-dessous.
 
@@ -146,9 +146,6 @@ Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/en/doc
 
 ## Authentification de base {#basic-auth}
 
->[!NOTE]
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme d&#39;adoption précoce, envoyez un email `aemcs-cdn-config-adopter@adobe.com`.
-
 Protégez certaines ressources de contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur ou d’utilisatrice et un mot de passe. Cette fonctionnalité est principalement destinée aux cas d’utilisation de l’authentification légère, tels que la révision du contenu par les parties prenantes de l’entreprise, plutôt qu’en tant que solution complète pour les droits d’accès des utilisateurs finaux.
 
 Une boîte de dialogue d’authentification de base s’affiche pour l’utilisateur final comme suit :
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ Voir la section [Utiliser les pipelines de configuration](/help/operations/confi
 
 En outre, la syntaxe comprend :
 
-* un noeud `data` contenant un noeud `experimental_authentication` (le préfixe expérimental sera supprimé lorsque la fonctionnalité sera publiée).
-* Sous `experimental_authentication`, un noeud `authenticators` et un noeud `rules`, qui sont tous deux des tableaux.
+* un noeud `data` contenant un noeud `authentication`.
+* Sous `authentication`, un noeud `authenticators` et un noeud `rules`, qui sont tous deux des tableaux.
 * Authentificateurs : dans ce scénario, déclarez un authentificateur de base, qui possède la structure suivante :
    * name - chaîne descriptive
    * type - doit être `basic`
-   * un tableau d’informations d’identification, dont chacune comprend les paires nom/valeur suivantes, que les utilisateurs finaux peuvent entrer dans la boîte de dialogue d’authentification de base :
+   * un tableau de 10 informations d’identification au maximum, dont chacune comprend les paires nom/valeur suivantes, que les utilisateurs finaux peuvent entrer dans la boîte de dialogue d’authentification de base :
       * user : nom de l’utilisateur
       * password : sa valeur doit faire référence à une [variable d’environnement de type secret Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), **All** étant sélectionné en tant que champ de service.
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés et quelles ressources doivent être protégées. Chaque règle comprend :
@@ -208,7 +205,7 @@ En outre, la syntaxe comprend :
 1. Initialement, seul `edgeKey1` a été défini, dans ce cas appelé `${{CDN_EDGEKEY_052824}}`, qui, comme convention recommandée, reflète la date à laquelle il a été créé.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ En outre, la syntaxe comprend :
 1. Dans la configuration, référencez-la à partir de `edgeKey2` et déployez-la.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ En outre, la syntaxe comprend :
 1. Une fois que vous êtes certain que l’ancienne clé Edge n’est plus utilisée, supprimez-la en supprimant `edgeKey1` de la configuration.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ En outre, la syntaxe comprend :
 1. Lorsque vous êtes prêt pour la rotation suivante, procédez de la même manière. Toutefois, cette fois, vous ajouterez `edgeKey1` à la configuration, en référençant un nouveau secret d’environnement Cloud Manager nommé, par exemple `${{CDN_EDGEKEY_031426}}`.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

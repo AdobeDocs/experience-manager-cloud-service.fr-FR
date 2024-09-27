@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1321'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ AEM as a Cloud Service propose un ensemble de fonctionnalités configurables au 
 
 * [Transformations de requêtes](#request-transformations) : modifiez les aspects des requêtes entrantes, y compris les en-têtes, les chemins et les paramètres.
 * [transformations de réponse](#response-transformations) - modifiez les en-têtes qui reviennent au client (par exemple, un navigateur web).
-* [Redirections côté client](#client-side-redirectors) - déclenchez une redirection du navigateur. Cette fonctionnalité n’est pas encore disponible en version GA, mais elle est disponible pour les utilisateurs avancés.
+* [Redirections côté client](#client-side-redirectors) - déclenchez une redirection du navigateur.
 * [Sélecteurs d’origine](#origin-selectors) - proxy vers un autre serveur principal d’origine.
 
 Sur le réseau de diffusion de contenu, vous pouvez également configurer des règles de filtrage du trafic (y compris WAF) qui contrôlent le trafic autorisé ou refusé par le réseau de diffusion de contenu. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus à ce sujet sur la page [Règles de filtrage du trafic incluant les règles WAF](/help/security/traffic-filter-rules-including-waf.md) .
@@ -363,9 +363,6 @@ data:
 
 ## Redirections côté client {#client-side-redirectors}
 
->[!NOTE]
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme des premiers adopteurs, envoyez un email `aemcs-cdn-config-adopter@adobe.com` et décrivez votre cas d’utilisation.
-
 Vous pouvez utiliser des règles de redirection côté client pour les redirections 301, 302 et les redirections côté client similaires. Si une règle correspond, le CDN répond avec une ligne d’état qui inclut le code d’état et le message (par exemple, HTTP/1.1 301 Déplacé définitivement), ainsi que le jeu d’en-têtes d’emplacement.
 
 Les emplacements absolus et relatifs avec des valeurs fixes sont autorisés.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }

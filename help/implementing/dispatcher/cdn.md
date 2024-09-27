@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le réseau de diffusion de contenu gér
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1602'
 ht-degree: 39%
 
 ---
@@ -72,7 +72,7 @@ Découvrez [la configuration d&#39;un jeton API de purge](/help/implementing/dis
 
 ### Authentification de base sur le réseau de diffusion de contenu {#basic-auth}
 
-Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md) et rejoignez le programme des premiers adopteurs.
+Pour les cas d’utilisation de l’authentification légère, y compris les parties prenantes de l’entreprise qui examinent le contenu, protégez le contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur et un mot de passe. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## Le réseau CDN du client ou de la cliente pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
 

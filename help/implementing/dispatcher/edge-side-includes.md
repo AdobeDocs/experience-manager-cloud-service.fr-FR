@@ -4,17 +4,14 @@ description: Le réseau de diffusion de contenu géré par Adobe prend désormai
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
 # Edge Side Includes {#edge-side-includes}
-
->[!NOTE]
->Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Pour rejoindre le programme des premiers adopteurs, envoyez un email `aemcs-cdn-config-adopter@adobe.com` et décrivez votre cas d’utilisation.
 
 La vitesse de diffusion du contenu bénéficie d’une mise en cache agressive des pages, obtenue en définissant des en-têtes de cache avec des valeurs TTL (durée de vie) élevées. Cela peut s’avérer difficile lorsque les pages incluent du contenu dynamique, qui doit être fréquemment actualisé ou qui ne peut pas du tout être mis en cache. Heureusement, il existe des stratégies pour lesquelles la page d’HTML contenant peut être mise en cache avec un TTL élevé, ce qui entraîne un report de la récupération des fragments de contenu les plus dynamiques à une date ultérieure, que ce soit par le biais du code JavaScript côté client ou du réseau de diffusion de contenu. Cette dernière approche est une norme appelée Edge Side Includes (ESI), qui est prise en charge pour les sites rendus avec publication AEM. L’HTML inclut des balises ESI qui demandent au réseau de diffusion de contenu de différer la diffusion de la page au navigateur jusqu’à ce qu’il évalue ces balises, en récupérant du contenu supplémentaire plus dynamique (TTL inférieur) à partir de l’origine (ou du cache CDN si son délai d’activation n’a pas expiré).
 
