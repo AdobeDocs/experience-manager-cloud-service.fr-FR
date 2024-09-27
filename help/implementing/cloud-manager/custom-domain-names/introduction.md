@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 44%
@@ -17,7 +17,7 @@ ht-degree: 44%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
->title="Gestion des noms de domaine personnalisés"
+>title="Gérer les noms de domaine personnalisés"
 >abstract="L’interface utilisateur Cloud Manager vous permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Ajout d’un nom de domaine personnalisé"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Afficher et mettre à jour le nom de domaine personnalisé"
@@ -36,7 +36,7 @@ Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement 
 >
 >Cloud Manager n’est pas un service d’enregistrement de noms de domaine et ne fournit pas de services DNS.
 
-## Noms de domaine personnalisés et apportez vos propres CDN {#byo-cdn}
+## Noms de domaine personnalisés et importation de vos propres CDN {#byo-cdn}
 
 AEM as a Cloud Service propose un service CDN (Content Delivery Network) intégré, mais vous permet également de BYO (Bring Your Own) CDN à utiliser avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
 
