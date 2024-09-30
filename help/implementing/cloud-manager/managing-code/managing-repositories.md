@@ -1,109 +1,99 @@
 ---
-title: Gestion des référentiels dans Cloud Manager
-description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
+title: Gérer les référentiels dans Cloud Manager
+description: Découvrez comment créer, afficher et supprimer vos référentiels GIT dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 92%
+source-wordcount: '645'
+ht-degree: 14%
 
 ---
 
 
 # Gestion des référentiels dans Cloud Manager {#managing-repos}
 
-Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
+Découvrez comment afficher, ajouter et supprimer vos référentiels Git dans Cloud Manager.
 
-## Vue d’ensemble {#overview}
+## À propos des référentiels dans Cloud Manager {#overview}
 
-Les référentiels servent à stocker et gérer le code de votre projet à l’aide de Git. Chaque programme que vous créez dans Cloud Manager dispose d’un référentiel géré par Adobe créé pour lui.
+Les référentiels dans Cloud Manager permettent de stocker et de gérer le code de votre projet à l’aide de Git. Pour chaque *program* que vous ajoutez, un référentiel géré par Adobe est automatiquement créé.
 
-Vous pouvez choisir de créer d’autres référentiels gérés par Adobe ainsi que d’ajouter vos propres référentiels privés. Tous les référentiels associés à votre programme peuvent être consultés dans la fenêtre **Référentiels**.
+En outre, vous avez la possibilité de créer d’autres référentiels gérés par l’Adobe ou d’ajouter vos propres référentiels privés. Tous les référentiels liés à votre programme peuvent être affichés sur la page **Référentiels** .
 
-Vous pouvez également sélectionner les référentiels créés dans Cloud Manager lors de l’ajout ou de la modification de pipelines. Consultez [Pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus.
+Les référentiels créés dans Cloud Manager peuvent également être sélectionnés lors de l’ajout ou de la modification de pipelines. Pour plus d’informations sur la configuration des pipelines, voir [Pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Il existe un référentiel principal unique ou une branche pour chaque pipeline donné. Grâce à la [prise en charge des sous-modules Git](git-submodules.md), de nombreuses branches secondaires peuvent être incluses lors de la création.
+Chaque pipeline est lié à un référentiel ou à une branche principale. Cependant, avec la [prise en charge du sous-module Git](git-submodules.md), plusieurs branches secondaires peuvent être incluses pendant le processus de création.
 
-## Fenêtre Référentiels {#repositories-window}
+## Affichage de la page Référentiels {#repositories-window}
+
+Sur la page **Référentiels**, vous pouvez afficher des détails sur le référentiel sélectionné. Ces informations incluent le type de référentiel en cours d’utilisation. Si le référentiel est marqué comme **Adobe**, il indique qu’il s’agit d’un référentiel géré par Adobe. S’il est étiqueté **GitHub**, il fait référence à un référentiel GitHub privé que vous gérez. En outre, la page fournit des détails tels que le moment où le référentiel a été créé et les pipelines qui lui sont associés.
+
+Pour agir sur un référentiel sélectionné, vous pouvez cliquer sur le référentiel et utiliser ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) pour ouvrir un menu déroulant. Pour les référentiels gérés par Adobe, vous pouvez **[Vérifier les branches / Créer un projet](#check-branches)**.
+
+![Actions du référentiel](assets/repository-actions.png)
+*Menu déroulant sur la page Référentiels.*
+
+Parmi les autres actions disponibles dans le menu déroulant, citons **[Copy Repository URL](#copy-url)**, **[View &amp; Update](#view-update)** et **[Delete](#delete)** the repository.
+
+**Pour afficher la page Référentiels :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Sur la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Référentiels** pour accéder à la page **Référentiels**.
+1. Sur la page **Aperçu du programme**, dans le menu latéral, cliquez sur ![Icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Référentiels**.
 
-1. La fenêtre **Référentiels** affiche tous les référentiels associés à votre programme.
+1. La page **Référentiels** affiche tous les référentiels associés au programme sélectionné.
 
-   ![Fenêtre Référentiels](assets/repositories.png)
-
-La fenêtre **Référentiels** fournit des détails sur les référentiels :
-
-* Le type de référentiel
-   * **Adobe** indique les référentiels gérés par Adobe.
-   * **GitHub** indique les référentiels GitHub privés que vous gérez.
-* La date de création
-* Les pipelines associés au référentiel
-
-Vous pouvez sélectionner le référentiel dans la fenêtre et cliquer sur le bouton représentant des points de suspension pour agir sur le référentiel sélectionné.
-
-* **[Vérifier les branches/Créer un projet](#check-branches)** (disponible uniquement pour les référentiels Adobe)
-* **[Copier l’URL du référentiel](#copy-url)**
-* **[Afficher et mettre à jour](#view-update)**
-* **[Supprimer](#delete)**
-
-![Actions du référentiel](assets/repository-actions.png)
+   ![Page Référentiels](assets/repositories.png)
+   *Page Référentiels dans Cloud Manager.*
 
 ## Ajouter des référentiels {#adding-repositories}
 
-Appuyez ou cliquez sur le bouton **Ajouter un référentiel** dans la fenêtre **Référentiels** pour lancer l’assistant **Ajouter un référentiel**.
+Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**
 
-![Assistant Ajouter un référentiel](assets/add-repository-wizard.png)
+![Boîte de dialogue Ajouter un référentiel.](assets/repository-add.png)
+*Boîte de dialogue Ajouter un référentiel.*
 
-Cloud Manager prend en charge les référentiels gérés par Adobe (**Référentiel Adobe**) ainsi que vos propres référentiels auto-gérés (**Référentiel privé**). Les champs requis varient en fonction du type de référentiel que vous choisissez d’ajouter. Pour plus d’informations, consultez les documents suivants.
+Cloud Manager prend en charge deux types de référentiels : les référentiels gérés par l’Adobe (**Adobe Repository**) et les référentiels gérés automatiquement (**Private Repository**). Les champs requis pour la configuration varient en fonction du type de référentiel que vous choisissez d’ajouter. Pour plus d’informations, consultez les sections suivantes :
 
-* [Ajout de référentiels Adobe dans Cloud Manager](adobe-repositories.md)
-* [Ajout de référentiels privés dans Cloud Manager](private-repositories.md)
+* [Ajouter des référentiels Adobe dans Cloud Manager](adobe-repositories.md)
+* [Ajouter des référentiels privés dans Cloud Manager](private-repositories.md)
 
 >[!NOTE]
 >
->* Un utilisateur ou une utilisatrice doit disposer du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** pour pouvoir ajouter un référentiel.
+>* Un utilisateur doit avoir le rôle **Deployment Manager** ou **Business Owner** pour ajouter un référentiel.
 >* Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
 
-## Accéder aux informations sur le référentiel {#repo-info}
-
-Lors de l’affichage de vos référentiels dans la fenêtre **Référentiels**, vous pouvez afficher les détails sur la manière d’accéder par programmation aux référentiels gérés par Adobe en cliquant sur le bouton **Accéder aux informations sur les référents** dans la barre d’outils.
-
-![Informations sur le référentiel](assets/repo-info.png)
-
-La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, consultez le document [Accès aux informations du référentiel](accessing-repos.md).
 
 ## Vérifier les branches / Créer un projet {#check-branches}
 
-L’action **Vérifier les branches / Créer un projet** exécute deux fonctions selon l’état du référentiel.
+Dans **AEM Cloud Manager**, l’action **Vérifier les branches / Créer un projet** a deux objectifs, selon l’état actuel du référentiel.
 
-* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
-* Si le référentiel a déjà créé l’exemple de projet, il vérifie l’état du référentiel et de ses branches et signale si l’exemple de projet existe déjà.
+* Si le référentiel est nouvellement créé, cette action génère un exemple de projet à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Si l’exemple de projet est déjà créé dans le référentiel, l’action vérifie l’état du référentiel et de ses branches, en indiquant si l’exemple de projet existe déjà.
 
-![Action Vérifier les branches](assets/check-branches.png)
+  ![Action Vérifier les branches](assets/check-branches.png)
 
 ## Copier l’URL du référentiel {#copy-url}
 
-L’action **Copier l’URL du référentiel** copie l’URL du référentiel sélectionné dans la fenêtre **Référentiels** vers le Presse-papiers afin d’utiliser cette URL ailleurs.
+L’action **Copier l’URL du référentiel** copie l’URL du référentiel sélectionné dans la page **Référentiels** dans le Presse-papiers à utiliser ailleurs.
 
-## Afficher et mettre à jour {#view-update}
+## Affichage et mise à jour d’un référentiel {#view-update}
 
-L’action **Afficher et mettre à jour** ouvre la boîte de dialogue **Mettre à jour le référentiel**. À l’aide de celle-ci, vous pouvez afficher le **Nom** et la **Prévisualisation de l’URL du référentiel** et mettre à jour la **Description** du référentiel.
+L’action **Afficher et mettre à jour** ouvre la boîte de dialogue **Mettre à jour le référentiel**, dans laquelle vous pouvez afficher les **Nom** et l’ **aperçu de l’URL du référentiel** du référentiel. En outre, il vous permet de mettre à jour la **description** du référentiel.
 
-![Afficher et mettre à jour les informations du référentiel](assets/view-update.png)
+![Afficher et mettre à jour les informations du référentiel](assets/repository-view-update.png)
 
-## Supprimer {#delete}
+## Suppression d’un référentiel {#delete}
 
 L’action **Supprimer** supprime le référentiel de votre projet. Un référentiel ne peut pas être supprimé s’il est associé à un pipeline.
 
-![Supprimer](assets/delete.png)
+![Supprimer](assets/repository-delete.png)
 
-La suppression d’un référentiel entraînera les éléments suivants :
+La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé ultérieurement. Si vous tentez d’utiliser le même nom, le message d’erreur suivant s’affiche :
 
-* Le nom du référentiel supprimé sera inutilisable pour de nouveaux référentiels qui pourraient être créés ultérieurement.
-   * Le message d’erreur `Repository name should be unique within organization.` s’affiche dans de tels cas.
-* Le référentiel supprimé sera indisponible dans Cloud Manager et ne pourra donc pas être lié à un pipeline.
+`Repository name should be unique within organization.`
+
+En outre, le référentiel supprimé n’est plus disponible dans Cloud Manager et ne peut être lié à aucun pipeline.
+
