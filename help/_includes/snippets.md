@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Fragments de code {#snippets}
@@ -155,6 +155,22 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
 >Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## LISTES AUTORISÉES IP et éditeur universel {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[L’éditeur universel](/help/implementing/universal-editor/introduction.md) n’est pas compatible avec les listes autorisées IP.
+>
+>Si vous souhaitez utiliser l’éditeur universel, les listes autorisées IP ne doivent pas être activées.
+
+## Éditeur universel et Listes autorisées IP {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>L’éditeur universel n’est pas compatible avec les [listes autorisées IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>Si vous souhaitez utiliser l’éditeur universel, les listes autorisées IP ne doivent pas être activées.
 
 ## Utiliser Dynamic Media {#work-with-dynamic-media}
 

@@ -1,20 +1,20 @@
 ---
 title: Présentation de l’éditeur universel
-description: Découvrez comment l’éditeur universel permet la modification WYSIWYG (What-you-get) de n’importe quelle expérience headless et headful. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
+description: Découvrez comment l’éditeur universel permet la modification de n’importe quelle expérience (WYSIWYG) sans tête ni tête. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 50%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Présentation de l’éditeur universel {#introduction}
 
-Universal Editor est un éditeur visuel polyvalent qui fait partie d’Adobe Experience Manager Sites. Il permet aux auteurs de modifier n’importe quelle expérience (WYSIWYG) sans tête ou avec des entêtes. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles et comment cela offre une liberté inégalée aux développeurs.
+Universal Editor est un éditeur visuel polyvalent qui fait partie d’Adobe Experience Manager Sites. Il permet aux auteurs de faire la modification de n’importe quelle expérience sans tête ou avec des entêtes (WYSIWYG). Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles et comment cela offre une liberté inégalée aux développeurs.
 
 ## Contexte {#background}
 
@@ -91,6 +91,8 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 * La version `2023.8.13099` ou supérieure d’AEM as a Cloud Service est requise.
 * Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
 * Chrome et Edge sont les navigateurs pris en charge
+
+{{ue-ip-allow-lists}}
 
 ## Étapes suivantes {#next-steps}
 
