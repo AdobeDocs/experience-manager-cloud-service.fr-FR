@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 115c7e02b5f2fda8e57ad1f5bcbc40ff044eb23d
+source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Utilisez les interfaces SPI Core Auth/Auth Core de Sling comme alternative. [Voir les notes de suppression ci-dessous.](#org.apache.sling.commons.auth)</td>
+    <td>Utilisez les interfaces SPI Core Auth/Auth Core de Sling comme alternative. <a href="#org.apache.sling.commons.auth">Voir les notes de suppression ci-dessous.</a></td>
     <td>2015</td>
     <td>30/07/2021</td>
   </tr>
@@ -144,7 +144,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>30/07/2021</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. [Voir les notes de suppression ci-dessous.](#org.eclipse.jetty)</td>
+    <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. <a href="#org.eclipse.jetty">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/05/2021</td>
     <td>26/08/2021</td>
   </tr>
@@ -155,7 +155,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>26/08/2021</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. [Voir les notes de suppression ci-dessous.](#com.mongodb)</td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. <a href="#com.mongodb">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/05/2021</td>
     <td>30/07/2021</td>
   </tr>
@@ -173,7 +173,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Cette API est obsolète car Apache Abdera est un projet retiré depuis 2017. [Voir les notes de suppression ci-dessous.](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>Cette API est obsolète car Apache Abdera est un projet retiré depuis 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
     <td>29/07/2021</td>
     <td>29/09/2021</td>
   </tr>
@@ -202,13 +202,13 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>supprimée</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>API héritée d’AEM 6.x. [Voir les notes de suppression ci-dessous.](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>API héritée d’AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
     <td>08/04/2019</td>
     <td>29/09/2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Le tableau blanc HTTP Apache Felix nʼest plus pris en charge. Migrez votre code vers OSGi Http Whiteboard. [Voir les notes de suppression ci-dessous.](#org.apache.felix.http.whiteboard)</td>
+    <td>Le tableau blanc HTTP Apache Felix nʼest plus pris en charge. Migrez votre code vers OSGi Http Whiteboard. <a href="#org.apache.felix.http.whiteboard">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
   </tr>
@@ -270,7 +270,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>15/06/2023</td>
   </tr>
   <tr>
-    <td>org.slf4j.event	</td>
+    <td>org.slf4j.event    </td>
     <td>Cette API interne slf4j nʼest pas prise en charge par AEM as a Cloud Service.</td>
     <td>11/04/2022</td>
     <td>30/08/2024</td>
