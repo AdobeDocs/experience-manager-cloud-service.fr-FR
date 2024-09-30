@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 7%
+source-wordcount: '1374'
+ht-degree: 14%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Configurer l’interface d’utilisation du hub de contenus"
->abstract="Experience Manager Assets permet aux administrateurs de configurer les options disponibles dans l’interface utilisateur de Content Hub. En fonction des options de configuration sélectionnées par les administrateurs, les utilisateurs de Content Hub peuvent afficher les champs de Content Hub. Les options de configuration incluent des métadonnées lors de l’importation de ressources, des filtres, des propriétés de ressources, des métadonnées lors de la recherche de ressources, une valorisation de marque personnalisée et tout lien personnalisé."
+>abstract="Experience Manager Assets permet à l’équipe d’aministration de configurer les options disponibles dans l’interface d’utilisation du hub de contenus. En fonction des options de configuration sélectionnées par l’équipe d’aministration, les utilisateurs et utilisatrices du hub de contenus peuvent afficher les champs sur le hub de Contenus. Les options de configuration incluent des métadonnées lors de l’import des ressources, des filtres, des propriétés de ressources, des métadonnées lors de la recherche de ressources, d’une image de marque personnalisée et de tout lien personnalisé."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configuration de ressources sur Content Hub](assets/configure-assets.png)
 
-Experience Manager Assets permet aux administrateurs de configurer les options disponibles dans l’interface utilisateur de Content Hub. En fonction des options de configuration sélectionnées par les administrateurs, les utilisateurs de Content Hub peuvent afficher les champs de Content Hub. Les options de configuration incluent :
+Experience Manager Assets permet à l’équipe d’aministration de configurer les options disponibles dans l’interface d’utilisation du hub de contenus. En fonction des options de configuration sélectionnées par l’équipe d’aministration, les utilisateurs et utilisatrices du hub de contenus peuvent afficher les champs sur le hub de Contenus. Les options de configuration incluent :
 
 * Filtres disponibles pour les utilisateurs lors de la recherche de ressources.
 
@@ -33,7 +33,7 @@ Experience Manager Assets permet aux administrateurs de configurer les options d
 
 * Tous les liens personnalisés que vous devez inclure dans Content Hub en plus des ressources, des collections et des insights.
 
-## Prérequis {#prerequisites-configuration-ui}
+## Conditions préalables {#prerequisites-configuration-ui}
 
 [Les administrateurs Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d’autres utilisateurs de votre entreprise.
 
@@ -60,6 +60,8 @@ En tant qu’administrateur, gérez les options de configuration suivantes pour 
 * [Recherche](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Ressources expirées](#expired-assets-content-hub)
 
 * [Liens personnalisés](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Les administrateurs peuvent également personnaliser le titre et le corps du tex
 Les mises à jour de branding activées dans l’interface utilisateur de configuration s’affichent sur la bannière du portail Content Hub :
 
 ![Marque de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Ressources expirées {#expired-assets-content-hub}
+
+Les administrateurs peuvent contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger.
+
+Les ressources expirées ne s’affichent pas par défaut dans Content Hub.
+
+Pour cela, procédez comme suit :
+
+1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Assets expirée]**.
+
+1. Dans la section **[!UICONTROL Visible]** , activez le bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à afficher les ressources expirées]** pour rendre toutes les ressources expirées visibles sur Content Hub.
+
+1. Après avoir activé la visibilité des ressources, vous pouvez activer ou désactiver la possibilité de télécharger les ressources expirées à l’aide du bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources expirées]**.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
+
+   ![Ressources expirées sur Content Hub](assets/expired-assets-content-hub.png)
+
+Après avoir activé la visibilité des ressources, vous pouvez afficher les ressources expirées sur Content Hub, comme illustré dans l’image suivante :
+
+![Ressources expirées sur Content Hub](assets/view-download-expired-assets.png)
+
+Si l’administrateur a activé le téléchargement, les utilisateurs de Content Hub peuvent également le télécharger, comme indiqué dans l’image.
+
+Si la visibilité des ressources expirées est activée, Content Hub met également en surbrillance les ressources arrivant à expiration au cours des 15 prochains jours à l’aide du message `Expiring in n days` sur la carte de ressources.
+
 
 ### Liens personnalisés {#configure-custom-links-content-hub}
 
