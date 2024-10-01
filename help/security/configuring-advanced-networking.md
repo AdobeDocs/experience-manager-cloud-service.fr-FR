@@ -4,9 +4,9 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '5743'
+source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+workflow-type: tm+mt
+source-wordcount: '5685'
 ht-degree: 100%
 
 ---
@@ -583,11 +583,6 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>S/O</td>
     <td>L’adresse IP de la passerelle VPN côté AEM. Votre équipe d’ingénierie réseau peut l’utiliser pour autoriser uniquement les connexions VPN à votre passerelle VPN à partir d’une adresse IP spécifique. </td>
-  </tr>
-  <tr>
-    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>L’adresse IP du trafic provenant du côté AEM du VPN vers vous. Elle peut être placée dans la liste autorisée de votre configuration pour garantir que les connexions ne sont établies qu’à partir d’AEM.</td>
-    <td>Pour autoriser l’accès VPN à AEM, vous devez configurer les entrées DNS CNAME pour mapper votre domaine personnalisé et/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> et/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> à celui-ci.</td>
   </tr>
 </tbody>
 </table>
