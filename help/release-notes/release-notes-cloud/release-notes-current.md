@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 70%
+source-wordcount: '1289'
+ht-degree: 68%
 
 ---
 
@@ -71,6 +71,12 @@ Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres 
 
 Le sélecteur de ressources prend désormais en charge la navigation dans les collections pour trouver la ressource souhaitée.
 ![Collections de sélecteur de ressources](/help/assets/assets/collections-rail-modal-view.png)
+
+### Nouvelles fonctionnalités de Content Hub {#content-hub-new-features}
+
+Les administrateurs peuvent désormais contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger.
+
+![Ressources expirées sur Content Hub](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
