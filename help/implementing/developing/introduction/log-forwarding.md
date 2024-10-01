@@ -4,9 +4,9 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,7 @@ Cet article est organisé de la manière suivante :
 * Configurations de destination de journalisation : chaque destination a un format légèrement différent.
 * Formats de saisie de journal - informations sur les formats de saisie de journal
 * Mise en réseau avancée : envoi de journaux AEM et Apache/Dispatcher via une sortie dédiée ou via un VPN
+* Migration à partir du transfert de journal hérité : comment passer du transfert de journal précédemment configuré par Adobe à l’approche en libre-service
 
 
 ## Configuration {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migration à partir du transfert de journal hérité {#legacy-migration}
+
+Avant que la configuration du transfert du journal ne soit réalisée par le biais d’un modèle en libre-service, les clients étaient invités à ouvrir les tickets d’assistance, où l’Adobe lancerait l’intégration.
+
+Les clients qui ont été configurés de cette manière par Adobe sont les bienvenus pour s’adapter au modèle en libre-service à leur convenance. Cette transition peut être effectuée pour plusieurs raisons :
+
+* Un nouvel environnement (par exemple, un nouvel environnement de développement ou RDE) a été configuré.
+* Modifications apportées à votre point de terminaison Splunk existant ou à vos informations d’identification.
+* Adobe avait configuré le transfert des journaux avant que les journaux CDN ne soient disponibles et que vous souhaitiez recevoir les journaux CDN.
+* Une décision consciente d&#39;adapter de manière proactive au modèle en libre-service afin que votre organisation ait les connaissances nécessaires avant même qu&#39;un changement sensible au temps ne soit nécessaire.
+
+Une fois prêt à migrer, configurez le fichier YAML comme décrit dans les sections précédentes. Utilisez le pipeline de configuration Cloud Manager pour effectuer le déploiement sur chacun des environnements dans lesquels la configuration doit être appliquée.
+
+Il est recommandé, mais non obligatoire, qu’une configuration soit déployée dans tous les environnements afin qu’ils soient tous sous contrôle en libre-service. Dans le cas contraire, vous pouvez oublier les environnements qui ont été configurés par Adobe par rapport à ceux configurés en libre-service.
+
+>[!NOTE]
+>
+>Lorsque le transfert des journaux est déployé dans un environnement précédemment configuré par la prise en charge d’Adobe, vous pouvez recevoir des logs en double pendant quelques heures au maximum. Cela finira par se résoudre automatiquement.
 
