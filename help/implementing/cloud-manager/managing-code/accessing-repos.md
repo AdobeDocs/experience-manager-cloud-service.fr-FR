@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ La fonction **Accéder aux informations sur le référentiel** est visible pour 
 
    ![Accéder à Repo Info sur la carte Pipeline](assets/pipelines-card.png)
 
-1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Dans la boîte de dialogue Repository Info, cliquez sur **`Generate password`**.
+1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Dans la boîte de dialogue **Repository Info**, sélectionnez **Generate password**.
 
-1. Dans la boîte de dialogue de confirmation, cliquez sur **`Generate password`**.
+1. Dans la boîte de dialogue de confirmation, sélectionnez **Générer le mot de passe**.
 
    ![Confirmation de la génération du mot de passe](assets/confirm-generated-password.png)
 

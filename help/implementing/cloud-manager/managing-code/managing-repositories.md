@@ -1,13 +1,13 @@
 ---
 title: Gérer les référentiels dans Cloud Manager
-description: Découvrez comment créer, afficher et supprimer vos référentiels GIT dans Cloud Manager.
+description: Découvrez comment ajouter, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -48,7 +48,9 @@ Parmi les autres actions disponibles dans le menu déroulant, citons **[Copy Rep
    ![Page Référentiels](assets/repositories.png)
    *Page Référentiels dans Cloud Manager.*
 
-## Ajouter des référentiels {#adding-repositories}
+## Ajout d’un référentiel {#adding-repositories}
+
+Un utilisateur doit avoir le rôle **Deployment Manager** ou **Business Owner** pour ajouter un référentiel.
 
 Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**
 
@@ -60,11 +62,15 @@ Cloud Manager prend en charge deux types de référentiels : les référentiels 
 * [Ajouter des référentiels Adobe dans Cloud Manager](adobe-repositories.md)
 * [Ajouter des référentiels privés dans Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* Un utilisateur doit avoir le rôle **Deployment Manager** ou **Business Owner** pour ajouter un référentiel.
->* Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
+Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
 
+## Accès aux informations du référentiel {#repo-info}
+
+Lorsque vous consultez vos référentiels dans la fenêtre **Référentiels**, vous pouvez consulter des informations sur la façon d’accéder aux référentiels gérés par Adobe par programmation, en cliquant sur le bouton **Accéder aux informations sur le référentiel** dans la barre d’outils.
+
+![Informations sur le référentiel](assets/repository-access-repo-info2.png)
+
+La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, voir la section [Accéder aux informations du référentiel](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Vérifier les branches / Créer un projet {#check-branches}
 
@@ -91,7 +97,7 @@ L’action **Supprimer** supprime le référentiel de votre projet. Un référen
 
 ![Supprimer](assets/repository-delete.png)
 
-La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé ultérieurement. Si vous tentez d’utiliser le même nom, le message d’erreur suivant s’affiche :
+La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé ultérieurement. Si vous tentez d’ajouter un référentiel portant le même nom qu’un référentiel supprimé, le message d’erreur suivant s’affiche :
 
 `Repository name should be unique within organization.`
 
