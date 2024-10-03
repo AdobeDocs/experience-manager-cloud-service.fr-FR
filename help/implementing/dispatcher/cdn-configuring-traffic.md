@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1339'
 ht-degree: 2%
 
 ---
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty ou reqHeader ou queryParam ou reqCookie), value | Définit un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, sur une valeur donnée. |
+| **set** | (reqProperty ou reqHeader ou queryParam ou reqCookie), value | Définit un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, sur une valeur donnée, qui peut être un littéral de chaîne ou un paramètre de requête. |
 |     | var, value | Définit une propriété de requête spécifiée sur une valeur donnée. |
-| **unset** | reqProperty | Supprime un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, à une valeur donnée. |
+| **unset** | reqProperty | Supprime un paramètre de requête spécifié (seule la propriété &quot;path&quot; est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, à une valeur donnée, qui peut être un littéral de chaîne ou un paramètre de requête. |
 |         | var | Supprime une variable spécifiée. |
 |         | queryParamMatch | Supprime tous les paramètres de requête correspondant à une expression régulière spécifiée. |
 | **transform** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie), match, remplacement | Remplace une partie du paramètre de requête (seule la propriété &quot;path&quot; est prise en charge) ou l’en-tête de requête, le paramètre de requête ou le cookie de requête par une nouvelle valeur. |
