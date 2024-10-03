@@ -4,10 +4,10 @@ description: Guide rapide relatif aux directives d’accessibilité du contenu w
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 97%
+source-wordcount: '1749'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,9 @@ Adobe Experience Manager (AEM) as a Cloud Service a été développé afin de m
 
 >[!NOTE]
 >
->Une [version mise à jour des instructions, WCAG 2.2](https://www.w3.org/TR/WCAG22/) est actuellement en cours de développement, mais ne sera pas prise en compte pour l’instant.
+>Puisque ces documents ont été écrits la [version mise à jour des directives, WCAG 2.2](https://www.w3.org/TR/WCAG/) a été disponible en octobre 2023.
+>
+>Voir [Comparaison avec WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) et [Nouvelles fonctionnalités de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Elles fournissent aux auteurs, aux concepteurs et aux développeurs de contenu web des conseils à suivre afin de s’assurer que les ressources qu’ils produisent sont aussi accessibles que possible pour autant de personnes que possible, quel que soit le handicap qu’elles peuvent avoir ; par exemple, une déficience visuelle, des troubles de l’audition, des difficultés d’apprentissage ou des restrictions liées à l’âge.
 
