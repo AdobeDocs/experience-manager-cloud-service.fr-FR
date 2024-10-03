@@ -1,20 +1,20 @@
 ---
-title: Configurer des pipelines hors production
-description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
+title: Ajout d’un pipeline hors production
+description: Découvrez comment ajouter un pipeline hors production pour tester la qualité de votre code avant le déploiement dans les environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 73%
 
 ---
 
 
-# Configurer des pipelines hors production {#configuring-non-production-pipelines}
+# Ajouter un pipeline hors production {#configuring-non-production-pipelines}
 
 Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 

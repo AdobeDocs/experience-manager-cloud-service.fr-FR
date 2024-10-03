@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
+source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
 workflow-type: tm+mt
-source-wordcount: '5662'
+source-wordcount: '5675'
 ht-degree: 99%
 
 ---
@@ -104,9 +104,11 @@ ht-degree: 99%
          + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
+
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.9.0](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [Notes de mise à jour de la version 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [Notes de mise à jour de la version 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [Notes de mise à jour de la version 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
@@ -1087,8 +1089,9 @@ ht-degree: 99%
       + Gestion de votre code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Ajouter des référentiels Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Ajouter des référentiels privés](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Ajout d’un référentiel d’Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Ajouter un référentiel externe (Adopteur anticipé)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

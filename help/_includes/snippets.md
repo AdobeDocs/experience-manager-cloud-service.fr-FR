@@ -1,8 +1,8 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 94%
 
 ---
 # Fragments de code {#snippets}
@@ -197,7 +197,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >* Diffusez une [expérience interactive optimisée en 3D](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Consigner un ticket d’assistance {#support-ticket}
+## Enregistrer un ticket d’assistance {#support-ticket}
 
 Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux tests SLT, vous pouvez envoyer un ticket d’assistance.
 

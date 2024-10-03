@@ -1,20 +1,20 @@
 ---
-title: Configuration des pipelines de production
-description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
+title: Ajout d’un pipeline de production
+description: Découvrez comment ajouter un pipeline de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# Configuration d’un pipeline de production {#configure-production-pipeline}
+# Ajout d’un pipeline de production {#configure-production-pipeline}
 
 Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production. Un pipeline de production déploie le code d’abord dans l’environnement intermédiaire, puis, une fois approuvé, déploie le même code dans l’environnement de production.
 
@@ -30,7 +30,7 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 >
 >Vous pouvez [modifier les paramètres du pipeline](managing-pipelines.md) après la configuration initiale.
 
-## Ajout d’un nouveau pipeline de production {#adding-production-pipeline}
+## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez configuré votre programme et que vous disposez d’au moins un environnement utilisant l’interface utilisateur de [!UICONTROL Cloud Manager], vous êtes prêt à ajouter un pipeline production en suivant ces étapes.
 

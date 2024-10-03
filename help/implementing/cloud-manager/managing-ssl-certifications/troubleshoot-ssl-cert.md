@@ -1,13 +1,13 @@
 ---
-title: Dépannage des erreurs de certificat SSL
+title: Dépanner les erreurs de certificat SSL
 description: Découvrez comment résoudre les erreurs de certificat SSL en identifiant les causes courantes afin que vous puissiez maintenir des connexions sécurisées.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 55%
+source-wordcount: '377'
+ht-degree: 49%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 55%
 # Dépannage des erreurs de certificat SSL {#certificate-errors}
 
 Certaines erreurs peuvent se produire si un certificat n’est pas installé correctement ou ne répond pas aux exigences de Cloud Manager.
+
++++**Certificat non valide**
+
+Cette erreur se produit car le client a ajouté une clé privée chiffrée et utilisé une clé privée formatée DER.
+
++++
+
++++**La clé privée doit être au format PKCS 8**
+
+Cette erreur se produit car le client a ajouté une clé privée chiffrée et utilisé une clé privée formatée DER.
+
++++
 
 +++**Ordre de certificat correct**
 

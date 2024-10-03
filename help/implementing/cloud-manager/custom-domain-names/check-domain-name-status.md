@@ -1,14 +1,14 @@
 ---
-title: Vérification du statut du nom de domaine
+title: Vérifier l’état du nom de domaine
 description: Découvrez comment vérifier que Cloud Manager a confirmé avec succès votre nom de domaine personnalisé.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 28%
+source-wordcount: '832'
+ht-degree: 24%
 
 ---
 
@@ -21,7 +21,7 @@ Découvrez comment vérifier que Cloud Manager a confirmé avec succès votre no
 
 Renseignez ces conditions préalables avant de vérifier l’état de votre nom de domaine dans Cloud Manager.
 
-* Ajoutez d’abord un enregistrement TXT pour votre domaine personnalisé, comme décrit dans le document [Ajoutez un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Ajoutez d’abord un certificat EV/OV pour votre domaine personnalisé, comme décrit dans le document [Ajoutez un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Vérifiez l’état de votre nom de domaine personnalisé. {#how-to}
 
@@ -45,13 +45,13 @@ Le détail de l’état s’affiche. Votre domaine personnalisé est prêt à ê
 
 ## Statuts de vérification {#statuses}
 
-Cloud Manager vérifie la propriété du domaine par le biais de la [valeur TXT](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) et affiche l’un des messages d’état suivants.
+Cloud Manager vérifie la propriété du domaine par le biais du certificat géré par le client. Une fois cette opération terminée, l’un des messages d’état suivants s’affiche :
 
 | État | Description |
 | --- | --- |
-| Échec de la vérification du domaine | La valeur TXT est manquante ou est détectée avec des erreurs.<br> Suivez les instructions du message d’état pour résoudre le problème. Une fois prêt, vous devez sélectionner l’icône **Vérifier à nouveau** en face du statut. |
+| Échec de la vérification du domaine | Le certificat EV/OV géré par le client est manquant ou est détecté avec des erreurs.<br> Suivez les instructions du message d’état pour résoudre le problème. Une fois prêt, vous devez sélectionner l’icône **Vérifier à nouveau** en face du statut. |
 | Vérification des domaines en cours | La vérification est en cours.<br>Cet état s’affiche généralement une fois que vous avez sélectionné l’icône **Vérifier de nouveau** en regard de l’état. La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS. |
-| Vérifié - Échec du déploiement | La vérification TXT a réussi, mais le déploiement CDN a échoué.<br>Dans ce cas, contactez votre représentant Adobe. |
+| Vérifié - Échec du déploiement | La vérification du certificat EV/OV a réussi, mais le déploiement CDN a échoué.<br>Dans ce cas, contactez votre représentant Adobe. |
 | Domaine vérifié et déployé | Ce statut indique que votre nom de domaine personnalisé est prêt à être utilisé.<br>À ce stade, votre nom de domaine personnalisé est prêt pour le test et doit pointer vers le nom de domaine Cloud Manager. Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour en savoir plus. |
 | Suppression en cours | La suppression d’un nom de domaine personnalisé est en cours. |
 | Échec de la suppression | La suppression d’un nom de domaine personnalisé a échoué et doit être refaite.<br>Voir [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus. |
@@ -63,7 +63,7 @@ Vous trouverez ci-dessous quelques erreurs courantes de vérification des noms d
 
 ### Domaine non installé {#domain-not-installed}
 
-Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT, même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
+Cette erreur peut se produire lors de la validation du domaine du certificat EV/OV, même après avoir vérifié que le certificat a été mis à jour de manière appropriée.
 
 #### Cause d’erreur {#cause}
 
