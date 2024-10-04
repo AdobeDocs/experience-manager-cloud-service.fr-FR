@@ -4,10 +4,10 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration aux fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de votre instance AEM Cloud Service est autorisé à circuler dans le service externe. Cela s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
-La même adresse IP dédiée est appliquée à tous les programmes dans votre organisation Adobe ainsi qu’à tous les environnements de chacun de vos programmes. Cela s’applique aux services de création et de publication.
+La même adresse IP dédiée est appliquée à tous les environnements d’un programme et s’applique aux services Auteur et Publish.
 
 Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un jeu d’adresses IP partagées avec d’autres clientes et clients d’AEM as a Cloud Service.
 
