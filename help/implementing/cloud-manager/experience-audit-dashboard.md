@@ -1,14 +1,14 @@
 ---
-title: Tableau de bord d’audit de l’expérience
+title: Tableau de bord d’audit d’expérience
 description: Découvrez comment le contrôle de l’expérience valide votre processus de déploiement, en vous assurant que les modifications respectent les normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche. Il fournit une interface de tableau de bord claire et informative pour le suivi de ces mesures.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 6%
+source-wordcount: '1534'
+ht-degree: 8%
 
 ---
 
@@ -100,7 +100,6 @@ Vous pouvez accéder aux résultats complets de l’audit en cliquant sur l’on
 >* Pour plus d’informations sur le fonctionnement de l’audit, voir [Détails de l’évaluation du contrôle de l’expérience](#details).
 >* Pour savoir comment exécuter un audit d’expérience à la demande, voir [Rapports d’audit à la demande](#on-demand).
 >* Si vous rencontrez des problèmes avec l’audit, reportez-vous à la section [Problèmes de rencontre de l’audit d’expérience](#issues).
->* Pour obtenir des conseils généraux sur les performances, voir [Conseils généraux sur les performances](#performance-tips).
 
 ### Affichage des pages les plus lentes {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Si vous cliquez sur le graphique à un moment donné, une fenêtre contextuelle 
 
 #### Résultats de l’analyse de l’audit d’expérience {#scan-results}
 
-La section **Résultats de l’analyse de l’audit d’expérience** fournit des recommandations sur la manière d’améliorer votre score et les détails de toutes les pages analysées. Il est divisé en deux sections :
-
-* **[Recommandations](#recommendations)**
-* **[Pages numérisées](#scanned-pages)**
-
-##### Recommandations {#recommendations}
-
-La section **Recommendations** présente un ensemble agrégé d’informations. Par défaut, les recommandations pour **performance** s’affichent. Utilisez la liste déroulante en regard de l’en-tête **Recommendations** pour passer à une autre catégorie.
-
-![Recommandations](assets/experience-audit-recommendations.png)
-
-Cliquez sur une recommandation pour en afficher des détails.
-
-![Détails de la recommandation](assets/experience-audit-recommendations-details.png)
-
-Lorsqu’elles sont disponibles, les détails de la recommandation étendue contiennent également le pourcentage de l’impact des recommandations, afin de vous aider à vous concentrer sur les modifications ayant le plus d’impact. En outre, les recommandations étendues peuvent inclure des liens vers AEM documentation pertinents et des conseils qui peuvent vous guider tout au long de la mise en oeuvre des correctifs suggérés.
-
-Cliquez sur le lien **voir pages** dans la vue Détails pour afficher les pages auxquelles la recommandation s’applique.
-
-![Pages pour les détails de la recommandation](assets/experience-audit-details-pages.png)
-
-##### Pages analysées {#scanned-pages}
-
-La section **Pages analysées** donne des détails sur les scores de toutes les pages analysées. Utilisez les boutons **Préc** et **Suivant** pour parcourir les résultats et choisir le nombre de pagination de l’affichage.
+La section **Résultats de l’analyse de l’audit d’expérience** donne des détails sur les scores sur toutes les pages analysées. Utilisez les boutons **Préc** et **Suivant** pour parcourir les résultats et choisir le nombre de pagination de l’affichage.
 
 ![Pages numérisées](assets/experience-audit-scanned-pages.png)
 
-Cliquez sur le lien d’une page spécifique pour mettre à jour le filtre **Sélectionner** de la section [**Scores de page — tendance**](#trend) et afficher l’onglet **Scores et recommandations** pour la page sélectionnée.
-
-![Résultats de page](assets/experience-audit-page-results.png)
-
-L’onglet **Rapports bruts** donne des scores pour chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
+Cliquez sur le lien d’une page spécifique pour mettre à jour le filtre **Sélectionner** de la section [**Scores de page — tendance** ](#trend) et afficher l’onglet **Rapports bruts** pour vous donner des scores pour chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
 
 ![Rapport brut](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ Voici quelques raisons pour lesquelles les pages peuvent ne pas être disponible
 
 >[!TIP]
 >
->[L’accès aux rapports bruts](#scanned-pages) pour une page peut fournir des détails sur les raisons pour lesquelles la page n’a pas pu être contrôlée.
-
-## Conseils généraux sur les performances {#performance-tips}
-
-Deux des problèmes d’impact les plus courants qui sont faciles à résoudre concernent les changements de mise en page cumulés (CLS) et la plus grande peinture de contenu (LCP).
-
-Vous pouvez améliorer ces zones en procédant comme suit :
-
-* Pas de chargement différé des images au-dessus du pli : le contenu visible dans le navigateur sans avoir à faire défiler vers le bas.
-* Définir correctement la priorité du chargement des ressources (par exemple, en chargeant de manière asynchrone les images sous le pli une fois le document chargé).
-* Prérécupération des fichiers JavaScript et CSS utilisés pour effectuer le rendu du contenu au-dessus du pli (si nécessaire).
-* Réservez l’espace vertical en attribuant un format aux conteneurs qui se chargent lentement ou dont le rendu est effectué ultérieurement.
-* Conversion des images au format WebP pour réduire leur taille.
-* Utilisation de `<picture>` et d’image `srcset` avec des tailles d’image variées pour différentes tailles de fenêtre d’affichage (et pour s’assurer que le redimensionnement fonctionne).
+>[L’accès aux rapports bruts](#scan-results) pour une page peut fournir des détails sur les raisons pour lesquelles la page n’a pas pu être contrôlée.
 
 ## Détails de l’évaluation du contrôle de l’expérience {#details}
 
@@ -261,7 +220,3 @@ Les détails suivants fournissent des informations supplémentaires sur la mani�
 * L’audit analyse le domaine d’origine (`.com`) à partir des [ chemins de page d’audit d’expérience configurés](#configuration) de l’éditeur afin de simuler des expériences utilisateur réelles, ce qui vous permet de prendre de meilleures décisions sur la gestion et l’optimisation de vos sites web.
 * Dans les pipelines de production à pile complète, l’environnement d’évaluation est analysé. Pour vous assurer que l’audit fournit des détails pertinents lors du contrôle, le contenu de l’environnement d’évaluation doit être aussi proche que possible de l’environnement de production.
 * Les pages affichées dans la liste déroulante **Sélectionner** de la section [**Scores de page — tendance**](#trend) sont toutes des pages connues analysées par le passé par le contrôle de l’expérience.
-* [Une recommandation](#recommendations) peut présenter un gain potentiel et une différence par rapport à l’analyse précédente.
-* Le contrôle de l’expérience estime les améliorations potentielles en traitant le rapport brut pour chaque page. Il met en corrélation les octets perdus ou les millisecondes avec les informations, en attribuant un impact pondéré sur le score de performances. L’audit fournit ces informations, ainsi que les pages concernées, pour vous aider à déterminer la recommandation à suivre.
-Pour plus d’informations, consultez la [section Conseils généraux sur les performances](#performance-tips) .
-* Un pipeline front-end peut être déployé dans un environnement existant et plusieurs pipelines front-end peuvent cibler le même environnement. Les résultats de l’analyse étant agrégés au niveau de l’environnement, les scores, les tendances et les recommandations sont cohérents. Ces résultats s’affichent dans l’environnement sélectionné, quel que soit le pipeline qui a déclenché l’analyse.
