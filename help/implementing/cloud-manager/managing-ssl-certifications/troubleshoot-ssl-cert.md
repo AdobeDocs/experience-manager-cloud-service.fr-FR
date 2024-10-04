@@ -4,7 +4,7 @@ description: Découvrez comment résoudre les erreurs de certificat SSL en ident
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 49%
@@ -18,13 +18,13 @@ Certaines erreurs peuvent se produire si un certificat n’est pas installé cor
 
 +++**Certificat non valide**
 
-Cette erreur se produit car le client a ajouté une clé privée chiffrée et utilisé une clé privée formatée DER.
+Cette erreur se produit car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
 
 +++
 
 +++**La clé privée doit être au format PKCS 8**
 
-Cette erreur se produit car le client a ajouté une clé privée chiffrée et utilisé une clé privée formatée DER.
+Cette erreur se produit car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
 
 +++
 

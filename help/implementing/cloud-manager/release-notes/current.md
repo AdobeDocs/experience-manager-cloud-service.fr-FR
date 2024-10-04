@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2024.10.0 dans Adobe Experience
 description: Découvrez les notes de mise à jour de Cloud Manager 2024.10.0 dans AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 15%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,16 @@ La prochaine version est prévue pour le vendredi 14 novembre 2024.
 * <!-- BOTH CS & AMS --> La version AEM Archetype utilisée dans Cloud Manager est désormais mise à jour vers la version 26. Voir [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> Lors de l’ajout d’un nouveau domaine personnalisé, la méthode de vérification précédente impliquait un long processus de validation DNS. Adobe a simplifié ce processus pour les clients. Désormais, il vous suffit de fournir un certificat SSL valide (EV ou OV), qui sert de preuve de propriété. Il n’est plus nécessaire de mettre à jour les enregistrements TXT dans le DNS.
+
+  >[!NOTE]
+  >
+  >Cette fonctionnalité s’applique uniquement aux certificats EV et OV gérés par le client. Les certificats DV gérés par Adobe nécessitent toujours la présence d’un enregistrement CNAME.
+
+  Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+  ![Vérification du domaine d’un certificat EV/OV géré par le client](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Lorsque vous ajoutez ou modifiez une infrastructure réseau, les valeurs des champs Adresse IP et Masque réseau sont validées selon les règles suivantes :
 
