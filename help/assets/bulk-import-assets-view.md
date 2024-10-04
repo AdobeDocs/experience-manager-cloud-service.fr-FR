@@ -4,10 +4,10 @@ description: Découvrez comment importer des ressources en bloc à l’aide de l
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 93%
+source-wordcount: '1881'
+ht-degree: 87%
 
 ---
 
@@ -125,11 +125,23 @@ Pour créer une configuration d’import en bloc dans [!DNL Experience Manager A
    >* Si vous sélectionnez **Full Dropbox** lors de la création de l’application Dropbox et que le dossier contenant les ressources existe dans `https://www.dropbox.com/home/bulkimport-assets`, indiquez `bulkimport-assets` dans le champ **[!UICONTROL Dossier source]**.
    >* Si vous sélectionnez **Dossier d’application** lors de la création de l’application Dropbox et que le dossier contenant les ressources existe dans `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, indiquez `bulkimport-assets` dans le champ **[!UICONTROL Dossier source]**, où `BulkImportAppFolderScope` fait référence au nom de l’application. `Apps` est automatiquement ajouté après `home` dans ce cas.
 
+   >[!NOTE]
+   >
+   >Si vous utilisez OneDrive comme source de données, spécifiez le chemin du dossier source en fonction des règles suivantes :
+   >* Indiquez uniquement le nom du dossier racine, sans le domaine . Si le chemin URL complet du dossier est `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, spécifiez `/Importfolder/` dans le champ **[!UICONTROL Dossier Source]** .
+   >* Si le nom du dossier contient plusieurs mots séparés par des espaces, indiquez le nom avec les espaces dans la configuration de l’importation en bloc.
+   >* Le dossier source doit se trouver à la racine du répertoire. Les chemins de dossier ne sont pas pris en charge.
+
 1. (Facultatif) Sélectionnez lʼoption **[!UICONTROL Supprimer le fichier source après lʼimport]** afin de supprimer les fichiers originaux du magasin de données source après lʼimport des fichiers dans Experience Manager Assets.
 1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **[!UICONTROL Ignorer]**, **[!UICONTROL Remplacer]** ou **[!UICONTROL Créer une version]**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’import d’une ressource si elle existe déjà.
    ![Import des détails de la source.](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Le fichier source des métadonnées doit se trouver dans le dossier source. Cliquez sur **[!UICONTROL Suivant]** pour accéder à **[!UICONTROL Emplacement et filtres]**.
+
+   >[!NOTE]
+   >
+   >En fonction des règles de sécurité de votre entreprise, vous devrez peut-être demander le consentement de l’administrateur pour que cette application se connecte à l’outil d’importation en bloc. Si cela est nécessaire, l’administrateur doit fournir son consentement avant que la configuration de l’importation en bloc ne puisse être enregistrée.
+
 1. Pour définir un emplacement dans la gestion des ressources numériques (DAM) où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**, indiquez un chemin d’accès. Par exemple, `/content/dam/imported_assets`.
 1. (Facultatif) Dans la section **[!UICONTROL Choisir des filtres]**, indiquez la taille de fichier minimale des ressources en Mo à inclure dans le processus d’ingestion dans le champ **[!UICONTROL Filtrer par taille minimale]**.
 1. (Facultatif) Indiquez la taille de fichier maximale des ressources en Mo à inclure dans le processus d’ingestion dans le champ **[!UICONTROL Filtrer par taille maximale]**.
