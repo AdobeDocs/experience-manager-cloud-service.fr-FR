@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 39%
 
 ---
 
@@ -45,7 +45,7 @@ La console Mes programmes fournit une vue d’ensemble de tous les programmes au
 
 >[!TIP]
 >
->Consultez le document [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour plus d’informations sur les programmes.
+>Voir la section [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour plus d’informations sur les programmes.
 
 ### Barres d’outils {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Par défaut, lorsque vous ouvrez un programme, vous accédez à l’onglet **Vue
 
 Dans le coin supérieur gauche de l’en-tête [ de Cloud Manager ](#cloud-manager-header-2), cliquez sur l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher ou masquer le menu latéral des onglets.
 
-### Appel à destination {#cta}
+### Appel à l’action {#cta}
 
 La section Appel à l’action fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les étapes suivantes et un rappel d’une date de mise en service, [définie lors de la création du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -239,23 +239,23 @@ Pour un programme actif, vous pouvez voir le statut de votre dernier déploiemen
 
 ![Appel à l’action](/help/implementing/cloud-manager/assets/info-banner.png)
 
-### Vignette Environnements {#environments}
+### Carte Environnements {#environments}
 
-La vignette **Environnements** vous fournit une vue d’ensemble de vos environnements ainsi que des liens vers les actions rapides.
+La carte **Environnements** vous fournit une vue d’ensemble de vos environnements, ainsi que des liens vers les actions rapides.
 
 La carte **Environnements** répertorie seulement trois environnements. Cliquez sur **Tout afficher** pour voir tous les environnements du programme.
 
-Consultez le document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la gestion de vos environnements.
+Voir aussi [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md).
 
-### Vignette Pipelines {#pipelines}
+### Carte Pipelines {#pipelines}
 
 La vignette **Pipelines** vous fournit une vue d’ensemble de vos pipelines ainsi que des liens vers les actions rapides.
 
 La vignette **Pipelines** répertorie seulement trois pipelines. Cliquez sur **Tout afficher** pour voir tous les pipelines du programme.
 
-Consultez le document [Gestion des pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pour plus d’informations sur la gestion des pipelines.
+Voir aussi [Gestion des pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pour plus d’informations sur la gestion des pipelines.
 
-### Carte de performance {#performance}
+### Carte des performances {#performance}
 
 La carte **Performance** donne un aperçu du **[tableau de bord CDN](/help/implementing/cloud-manager/cdn-performance.md)**.
 

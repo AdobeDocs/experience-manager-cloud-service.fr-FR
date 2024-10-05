@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 73%
+source-wordcount: '1402'
+ht-degree: 71%
 
 ---
 
@@ -129,7 +129,7 @@ Un déploiement ciblé déploie le code uniquement pour les parties sélectionn�
 
 >[!NOTE]
 >
->Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Consultez le document [Ajouter des référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et pour la liste complète des restrictions.
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Voir [Ajout de référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus d’informations et la liste complète des limites.
 
 Les étapes de création de votre pipeline de déploiement ciblé hors production sont les mêmes une fois que vous avez choisi un type de déploiement.
 
@@ -163,9 +163,9 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
 
 1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer le pipeline.
 
-Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans la carte **Pipelines** dans la page **Aperçu du programme**.
+Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
-## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
+## Ignorer les modules Dispatcher {#skip-dispatcher-packages}
 
 Si vous souhaitez que les packages du Dispatcher soient créés dans le cadre de votre pipeline, mais que vous ne souhaitez pas qu’ils soient publiés pour créer du stockage, vous pouvez désactiver leur publication, ce qui peut réduire la durée d’exécution du pipeline.
 

@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -113,7 +113,7 @@ Ce point de contrôle qualité est fourni par AEM prêt à l’emploi, mais ne b
 
 Pour plus d’informations, voir [Test d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md) .
 
-### Validation des clients
+### Validations client
 
 Le point de contrôle qualité des validations client est un espace réservé à la stratégie et aux efforts de test du client, exécuté avant que les modifications de l’application du client n’atteignent les pipelines de déploiement cloud AEM.
 

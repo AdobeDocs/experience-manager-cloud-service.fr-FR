@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 71%
+source-wordcount: '1109'
+ht-degree: 70%
 
 ---
 
@@ -112,7 +112,7 @@ Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécutio
 
 >[!NOTE]
 >
->Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Consultez le document [Ajouter des référentiels privés dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus de détails et pour la liste complète des restrictions.
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Voir [Ajout d’un référentiel privé dans Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) pour plus d’informations et la liste complète des limites.
 
 ## Suppression de pipelines {#deleting-pipelines}
 

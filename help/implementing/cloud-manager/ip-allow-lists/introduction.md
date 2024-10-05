@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Après l’ajout de , [les Listes autorisées IP peuvent être appliquées ou no
 
 ## Limites {#limitations}
 
-Avant d’utiliser des listes autorisées IP, veuillez comprendre les limitations suivantes quant à leurs fonctionnalités, leur utilisation et leurs effets sur d’autres fonctionnalités.
+Avant d’utiliser des Listes autorisées IP, vous devez comprendre les limites suivantes quant à leurs fonctionnalités, à leur utilisation et à leurs effets sur d’autres fonctionnalités.
 
 ### Limites générales des Listes autorisées IP {#general}
 
@@ -80,7 +80,7 @@ Lorsque vous [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/i
 
 Pour éviter toute interruption de l’exécution du pipeline frontal, assurez-vous que cette Liste autorisée IP Cloud Manager est ajoutée. Ensuite, appliquez la liste à l’environnement de création *avant* d’activer le pipeline.
 
-Pour plus d’informations, consultez les documents [Appliquer la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) et [Activer le pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) .
+Pour plus d’informations, voir [Application d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) et [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) .
 
 ### Éditeur universel et Listes autorisées IP {#universal-editor}
 

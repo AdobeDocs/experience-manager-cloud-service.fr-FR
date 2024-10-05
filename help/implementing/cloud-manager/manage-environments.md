@@ -1,19 +1,19 @@
 ---
-title: Gestion des environnements
+title: Gérer les environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 65%
 
 ---
 
 
-# Gestion des environnements {#managing-environments}
+# Gérer les environnements {#managing-environments}
 
 Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 
@@ -38,7 +38,7 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 >
 >Les environnements de production et d’évaluation ne sont créés que par paire. Vous ne pouvez pas créer uniquement un environnement d’évaluation ou de production.
 
-## Ajout d’un environnement {#adding-environments}
+## Ajouter un environnement {#adding-environments}
 
 Pour ajouter ou modifier un environnement, un utilisateur doit être membre du rôle **Propriétaire de l’entreprise**.
 
@@ -50,13 +50,13 @@ Pour ajouter ou modifier un environnement, un utilisateur doit être membre du r
 
    ![Carte Environnements](assets/no-environments.png)
 
-   * L’option **Ajouter un environnement** est également disponible dans l’onglet **Environnements**.
+   * L’option **Ajouter un environnement** est également disponible sur l’onglet ![Icône de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
 
      ![Onglet Environnements](assets/environments-tab.png)
 
    * L’option **Ajouter un environnement** peut être désactivée en raison d’un niveau d’autorisation insuffisant ou de ressources sous licence.
 
-1. Dans la boîte de dialogue **Ajouter un environnement** qui s’affiche :
+1. Dans la boîte de dialogue **Ajouter un environnement** :
 
    * Sélectionnez un [**type d&#39;environnement**](#environment-types).
       * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le nom du type d’environnement.
@@ -255,7 +255,7 @@ Le comportement de l’option **Mise à jour** varie en fonction de la configura
 * Si le pipeline est déjà en cours de mise à jour, l’option **Mettre à jour** informe l’utilisateur qu’une mise à jour est déjà en cours d’exécution.
 * Si aucun pipeline approprié n’existe, l’option **Mettre à jour** invite l’utilisateur à en créer un.
 
-## Suppression d’environnements de développement {#deleting-environment}
+## Supprimez les environnements de développement {#deleting-environment}
 
 Un utilisateur disposant du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut supprimer un environnement de développement.
 
@@ -310,7 +310,7 @@ Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour l
 
 >[!TIP]
 >
->Pour plus d’informations, consultez le document [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Pour plus d’informations, voir [Présentation des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Gérer les listes d’adresses IP autorisées {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ L’application d’une liste autorisée IP associe toutes les plages d’adress
 
 >[!TIP]
 >
->Pour plus d’informations, consultez le document [Introduction aux Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Pour plus d’informations, voir [Présentation des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 77%
 
 ---
@@ -87,7 +87,7 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 Votre processus de génération peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour le référentiel Git ou vous devrez peut-être les faire varier entre les exécutions de pipeline utilisant la même branche.
 
-Pour plus d’informations, voir le document [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+Pour plus d’informations, voir aussi [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 

@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 37%
+source-wordcount: '911'
+ht-degree: 34%
 
 ---
 
@@ -21,18 +21,13 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 >
 >Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. [Les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
->Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez le document [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), voir [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Vue d’ensemble {#overview}
 
-Le tableau de bord de la licence Cloud Manager permet d’accéder facilement aux informations suivantes :
+Le tableau de bord des licences Cloud Manager permet d’accéder facilement aux droits de solution disponibles pour tous vos programmes, y compris les éléments utilisés et les éléments disponibles. De plus, les mesures de consommation des demandes de contenu sont des tendances par mois pour la solution Sites.
 
-1. Les droits aux solutions sont disponibles pour tous vos programmes, y compris les éléments utilisés et disponibles.
-1. Mesures de consommation des demandes de contenu selon les tendances par mois pour la solution Sites
-
-## Utilisation du tableau de bord Licence {#using-dashboard}
-
-Pour accéder à votre tableau de bord des licences, procédez comme suit.
+## Accès au tableau de bord de la licence {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Pour accéder à votre tableau de bord des licences, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le bouton de menu du hamburger sur l’en-tête [ de Cloud Manager. ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Les onglets s’affichent alors.
-1. Appuyez ou cliquez sur l’option **Licence** dans l’onglet .
+1. Cliquez sur l’option **Licence** dans l’onglet .
 
 ![Tableau de bord des licences](assets/license-dashboard.png)
 
@@ -103,7 +98,9 @@ The left side of the window presents a pie chart showing the contract breakdown 
 
 The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
-## Foire aux questions {#faq}
+## Questions fréquentes {#faq}
+
++++
 
 ### Qu’est-ce qu’une requête de contenu ? {#what-is-a-content-request}
 
@@ -114,6 +111,9 @@ Une demande de contenu est comptabilisée pour chaque page vue ou chaque fois qu
 Les demandes de contenu excluent les demandes ou activités initiées par ou pour le compte d’Adobe dans le seul but de fournir des produits et des services. Le trafic des agents utilisateurs identifiés par Adobe provenant des robots associés aux moteurs de recherche et aux services de médias sociaux est également exclu.
 
 Voir aussi [Comprendre les demandes de contenu de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Comment Adobe Experience Manager mesure-t-il les demandes de contenu ? {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ Les demandes de contenu sont suivies sur les serveurs Edge d’AEM as a Cloud Se
 AEM a également mis en place des règles pour exclure les robots connus, notamment les services connus qui visitent régulièrement le site pour actualiser leur index ou service de recherche.
 
 Voir aussi [Comprendre les demandes de contenu de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Pourquoi mon rapport Analytics présente-t-il des résultats différents de ceux des demandes de contenu AEM ? {#why-are-reports-different}
 
 Les requêtes de contenu peuvent présenter des variations avec les outils de création de rapports Analytics d’une organisation. Pour plus d’informations, voir [Présentation des requêtes de contenu de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Comment en savoir plus sur le volume de ma requête de contenu ? {#current-request-volumes}
 
 Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe d’Adobe ou le service clientèle pour demander un rapport d’utilisation optimal.
++++
+
++++
 
 ### Que se passe-t-il si j’utilise mon propre réseau CDN ? {#using-own-cdn}
 
 Le tableau de bord de la licence affiche uniquement les données suivies par le réseau de diffusion de contenu du Cloud Service. Si vous choisissez d’importer votre propre réseau de diffusion de contenu (BYOCDN), vous signalez le volume de vos demandes de contenu à l’Adobe sur une base annuelle, comme indiqué dans votre contrat.
++++
+
