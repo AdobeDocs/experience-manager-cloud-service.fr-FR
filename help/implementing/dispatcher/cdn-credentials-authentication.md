@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
+source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1486'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,10 @@ Comme décrit dans la page [CDN dans AEM as a Cloud Service](/help/implementing/
 
 Dans le cadre de la configuration, le réseau de diffusion de contenu Adobe et le réseau de diffusion de contenu client doivent s’entendre sur une valeur de l’en-tête HTTP `X-AEM-Edge-Key`. Cette valeur est définie sur chaque requête, sur le réseau de diffusion de contenu client, avant d’être acheminée vers le réseau de diffusion de contenu Adobe, qui valide ensuite que la valeur est comme prévu, de sorte qu’il puisse faire confiance à d’autres en-têtes HTTP, y compris ceux qui aident à acheminer la demande vers l’origine AEM appropriée.
 
-La valeur *X-AEM-Edge-Key* est référencée par les propriétés `edgeKey1` et `edgeKey2` dans un fichier nommé `cdn.yaml` ou similaire, quelque part sous un dossier de niveau supérieur `config`. Lisez [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure) pour plus d’informations sur la structure de dossiers et sur le déploiement de la configuration.
+La valeur *X-AEM-Edge-Key* est référencée par les propriétés `edgeKey1` et `edgeKey2` dans un fichier nommé `cdn.yaml` ou similaire, quelque part sous un dossier de niveau supérieur `config`. Lisez [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure) pour plus d’informations sur la structure de dossiers et sur le déploiement de la configuration.  La syntaxe est décrite dans l’exemple ci-dessous.
 
-La syntaxe est décrite ci-dessous :
+>[!WARNING]
+>Un accès direct sans X-AEM-Edge-Key correct sera refusé pour toutes les requêtes correspondant à la condition (dans l’exemple ci-dessous, cela signifie toutes les requêtes au niveau de publication). Si vous devez introduire progressivement l&#39;authentification, reportez-vous à la section [Migration en toute sécurité pour réduire le risque de trafic bloqué](#migrating-safely) .
 
 ```
 kind: "CDN"
@@ -78,7 +79,7 @@ Autres propriétés :
 
 ### Migration sécurisée pour réduire le risque de trafic bloqué {#migrating-safely}
 
-Si votre site est déjà actif, soyez prudent lors de la migration vers le réseau de diffusion de contenu géré par le client, car une mauvaise configuration peut bloquer le trafic public. En effet, seules les demandes avec la valeur d’en-tête X-AEM-Edge-Key attendue seront acceptées par le réseau de diffusion de contenu Adobe. Une approche est recommandée lorsqu’une condition supplémentaire est temporairement incluse dans la règle d’authentification, ce qui la force à évaluer uniquement la requête si un en-tête de test est inclus :
+Si votre site est déjà actif, soyez prudent lors de la migration vers le réseau de diffusion de contenu géré par le client, car une mauvaise configuration peut bloquer le trafic public. En effet, seules les demandes avec la valeur d’en-tête X-AEM-Edge-Key attendue seront acceptées par le réseau de diffusion de contenu Adobe. Une approche est recommandée lorsqu’une condition supplémentaire est temporairement incluse dans la règle d’authentification, ce qui la fait bloquer uniquement si un en-tête de test est inclus ou si un chemin d’accès est trouvé :
 
 ```
     - name: edge-auth-rule
@@ -86,6 +87,17 @@ Si votre site est déjà actif, soyez prudent lors de la migration vers le rése
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
