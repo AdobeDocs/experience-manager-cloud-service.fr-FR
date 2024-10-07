@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 6%
+source-wordcount: '1038'
+ht-degree: 9%
 
 ---
 
 
 # Gérer des certificats SSL {#managing-ssl-certificates}
 
-Découvrez comment utiliser Cloud Manager pour vérifier l’état des certificats SSL gérés par votre Adobe et gérés par le client et comment les supprimer. Pour les certificats gérés par le client, vous pouvez également les modifier et les mettre à jour (les remplacer).
+Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certificats SSL et comment les modifier, les remplacer, les mettre à jour et les supprimer.
 
 ## Vérification de l’état des certificats SSL {#checking-status-an-ssl-certificate}
 
-L’état de vos certificats SSL peut être compris en un coup d’oeil à partir de la page **SSL Certificates**.
+Cloud Manager donne un aperçu de l’état de tous les certificats de votre programme.
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral.
+1. Sous l’en-tête **Services**, cliquez sur ![Icône de verrouillage](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificats SSL**.
+
+La page **Certificats SSL** fournit l’état de vos certificats SSL.
 
 | État du certificat SSL | Description |
 | --- | --- |
@@ -51,6 +58,12 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
    * Dans le champ **Certificate chain** (ou chaîne de confiance), collez la chaîne de certificat.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications et les faire appliquer automatiquement.
+
+>[!NOTE]
+>
+>Si vous disposez de deux certificats SAN ou plus qui couvrent la même entrée de domaine SAN, si ce domaine est couvert par un certificat et que l’autre est mis à jour, ce dernier sera installé pour le domaine.
+>
+>Pour plus d’informations, voir [Dépannage des problèmes de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) .
 
 ## Remplacement d’un certificat SSL géré par un client arrivé à expiration {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ Le message disparaît une fois que toutes les configurations d’environnement p
 Pour plus d’informations, voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) .
 
 Un message similaire est également fourni sur les pages **Liste autorisée IP** et **Environnements** pour les environnements ayant des configurations CDN préexistantes pour les Listes autorisées IP ou les noms de domaine personnalisés.
-
