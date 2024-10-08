@@ -1,23 +1,26 @@
 ---
 title: Intégration de contents credentials
-description: Content credentials, intégré à AEM Assets et présenté dans la vue Assets, peut fournir un contexte dans l’historique d’une ressource, y compris la manière dont elle a été créée et qui a été impliqué dans sa création. Tout comme une étiquette nutritionnelle pour les contenus numériques, les Contents credentials peuvent contribuer à accroître la transparence et à établir la confiance avec les publics.
+description: Content Credentials, intégré à AEM Assets et présenté dans la vue Assets, peut fournir un contexte dans l’historique d’une ressource, y compris la manière dont elle a été créée et qui a été impliqué dans sa création. Tout comme une étiquette nutritionnelle pour les contenus numériques, les Contents credentials peuvent contribuer à accroître la transparence et à établir la confiance avec les publics.
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
-
 # Informations de traçabilité du contenu {#content-credentials}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Les marques s’intéressent plus que jamais à la transparence du contenu, à la divulgation par l’IA et à la prévention de la falsification des ressources. L’Initiative d’authentification du contenu (CAI) d’Adobe crée des outils conformes à la norme technique [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA). Les contents credentials, qui sont un nouveau type de métadonnées chiffrées et dont l’affichage est estampillé, peuvent aider les visiteurs à comprendre la traçabilité du contenu et à garantir l’intégrité des ressources de marque. Ils peuvent inclure un large éventail de données de provenance qui offrent des informations sur l’historique d’une ressource numérique.
 
 Ces informations peuvent inclure :
 
 * **Émetteur ou signataire :** Informations sur l’entité ou la société qui a émis la signature numérique pour certifier la ressource ou la signer.
-* **Date de publication :** date à laquelle les informations d’identification du contenu ont été appliquées à la ressource.
+* **Date de publication :** date à laquelle le Content Credential a été appliqué à la ressource.
 * **Crédit et utilisation :** Informations sur le producteur de la ressource, y compris le nom, les gestionnaires de médias sociaux ou d’autres informations liées à l’identité.
 * **Processus :** Enregistrements de toute modification ou modification apportée à la ressource.
 * **Détails du périphérique :** Informations sur l’application ou le périphérique utilisé pour créer ou modifier la ressource.

@@ -2,14 +2,17 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 14%
+source-wordcount: '1392'
+ht-degree: 16%
 
 ---
 
 # Configurer l’interface d’utilisation du hub de contenus {#configure-content-hub-user-interface}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -173,7 +176,7 @@ Les mises à jour de branding activées dans l’interface utilisateur de config
 
 ### Ressources expirées {#expired-assets-content-hub}
 
-Les administrateurs peuvent contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger.
+Les administrateurs peuvent contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, les administrateurs et administratrices peuvent également définir si les personnes peuvent les télécharger.
 
 Les ressources expirées ne s’affichent pas par défaut dans Content Hub.
 
@@ -187,11 +190,11 @@ Pour cela, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-   ![Ressources expirées sur Content Hub](assets/expired-assets-content-hub.png)
+   ![Ressources expirées sur le hub de contenus](assets/expired-assets-content-hub.png)
 
 Après avoir activé la visibilité des ressources, vous pouvez afficher les ressources expirées sur Content Hub, comme illustré dans l’image suivante :
 
-![Ressources expirées sur Content Hub](assets/view-download-expired-assets.png)
+![Ressources expirées sur le hub de contenus](assets/view-download-expired-assets.png)
 
 Si l’administrateur a activé le téléchargement, les utilisateurs de Content Hub peuvent également le télécharger, comme indiqué dans l’image.
 

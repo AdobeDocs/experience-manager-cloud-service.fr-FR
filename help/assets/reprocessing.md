@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 43%
 
 ---
 
 # Retraitement des ressources numériques {#reprocessing-digital-assets}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. Si vous souhaitez que ce paramètre prédéfini modifié soit réappliqué aux ressources existantes du dossier, vous devez retraiter le dossier. Vous pouvez retraiter autant de ressources que nécessaire.
 
@@ -50,7 +53,7 @@ Si vous sélectionnez un dossier :
       * **[!UICONTROL Profils de traitement] :** Sélectionnez cette option lorsque vous souhaitez retraiter un profil sélectionné. Vous pouvez choisir l’option **[!UICONTROL Processus complet]** pour inclure le traitement par défaut et le profil personnalisé affecté au niveau du dossier.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Processus de traitement Post] :** sélectionnez cette option lorsque le traitement supplémentaire des ressources est requis, ce qui ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+      * **[!UICONTROL Processus de post-traitement] :** sélectionnez cette option lorsque le traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement. D’autres workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
 Voir [Utilisation des microservices de ressources et des profils de traitement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr) pour en savoir plus sur les profils de traitement et le workflow de post-traitement.
 

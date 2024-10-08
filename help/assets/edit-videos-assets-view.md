@@ -4,14 +4,17 @@ description: Modifiez les vidéos à l’aide des options  [!DNL Adobe Express] 
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # Modification de vidéos dans [!DNL Assets view] {#edit-videos}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La création de variantes de contenu vidéo est facile pour les utilisateurs d’Assets avec les actions rapides [!DNL Adobe Express] incorporées pour la vidéo. Les actions rapides de [!DNL Assets view], optimisées par [!DNL Adobe Express], offrent des options d’édition vidéo conviviales, notamment le recadrage de vidéo, le redimensionnement de la vidéo, le rognage de la vidéo et la conversion de la vidéo en GIF.
 
@@ -21,7 +24,7 @@ Pour modifier une vidéo, accédez aux détails de la vidéo et cliquez sur [!UI
 
 Droits d’accès à [!DNL Adobe Express] et à au moins un environnement dans AEM Assets. L’environnement peut être l’un des référentiels dans [!DNL Assets as a Cloud Service] ou [!DNL Assets view].
 
-## Modification de vidéos à l’aide d’Adobe Express {#edit-video-using-express}
+## Modifier des vidéos à l’aide d’Adobe Express {#edit-video-using-express}
 
 La transformation d’une vidéo en une taille et une orientation parfaites est facile à l’aide d’actions rapides [!DNL Adobe Express] incorporées.
 

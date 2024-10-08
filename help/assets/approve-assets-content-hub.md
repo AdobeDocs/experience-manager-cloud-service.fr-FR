@@ -1,14 +1,18 @@
 ---
-title: Approbation des ressources pour Content Hub
+title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
-# Approbation des ressources pour Content Hub {#approve-assets-content-hub}
+# Approuver des ressources pour le hub de contenus {#approve-assets-content-hub}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Approuver des ressources pour Content Hub](assets/content-hub-approve-assets.png)
 
@@ -24,7 +28,7 @@ Avant de commencer, vous devez disposer des éléments suivants :
 
 * Autorisations d’écriture pour modifier les métadonnées de la ressource afin de pouvoir modifier le champ **[!UICONTROL Status]** disponible dans les [propriétés de la ressource](/help/assets/manage-organize-assets-view.md##manage-asset-status) pour une ressource.
 
-## Approbation des ressources pour Content Hub {#approve-assets-for-content-hub}
+## Approuver des ressources pour le hub de contenus {#approve-assets-for-content-hub}
 
 Les ressources marquées comme `approved` dans Assets as a Cloud Service sont automatiquement disponibles dans Content Hub.
 
@@ -98,6 +102,3 @@ L’affichage des ressources chargées à l’aide de Content Hub dépend de l�
 * Si le bouton d’approbation **[!UICONTROL automatique]** est désactivé, les ressources que vous chargez à l’aide de Content Hub ne s’affichent pas automatiquement. Les ressources sont disponibles dans le dossier `hydrated-assets` de votre environnement as a Cloud Service Assets. Accédez au dossier et [modifiez en masse](#bulk-approve-assets-content-hub) l’état de ces ressources sur `Approved` pour que ces ressources s’affichent dans Content Hub.
 
 ![Processus d’approbation de Content Hub](/help/assets/assets/content-hub-approval.png)
-
-
-

@@ -5,14 +5,17 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 92%
+source-wordcount: '1905'
+ht-degree: 91%
 
 ---
 
 # Sélecteur de destinations micro front-end {#Overview}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Le sélecteur de destination Micro-Frontend fournit une interface utilisateur dans votre application qui s’intègre facilement au référentiel [!DNL Experience Manager Assets as a Cloud Service]. Vous pouvez rechercher ou parcourir le dossier approprié dans le référentiel [!DNL Experience Manager Assets as a Cloud Service] et charger des ressources à partir de votre application.
 

@@ -4,14 +4,17 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 88%
+source-wordcount: '856'
+ht-degree: 87%
 
 ---
 
 # Gérer les documents PDF dans Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, ce qui vous permet de prévisualiser plusieurs pages d’un document PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser au format PDF.
 

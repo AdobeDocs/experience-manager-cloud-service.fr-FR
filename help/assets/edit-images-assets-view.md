@@ -4,14 +4,17 @@ description: Modifiez les images à l’aide des options optimisées d’ [!DNL 
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 59%
+source-wordcount: '1145'
+ht-degree: 77%
 
 ---
 
 # Modifier des images dans [!DNL Assets view] {#edit-images-in-assets-view}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 L’interface utilisateur de la vue Assets permet l’édition d’images de base, optimisée par Adobe Express, intégrée à l’interface utilisateur. Cette modification inclut le redimensionnement, la suppression en arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG. En outre, il permet des modifications avancées par le biais de l’interface Adobe Express incorporée dans l’interface utilisateur de la vue Assets.
 
@@ -35,13 +38,13 @@ Pour obtenir des informations de référence supplémentaires, reportez-vous à 
 
 ### Modifier l’image sur la vue Assets à l’aide d’Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Après avoir accédé à la vue Assets, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles, optimisées par Adobe Express, notamment le redimensionnement, la suppression d’arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG.
+Après avoir accédé à la vue Assets, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles optimisées par Adobe Express, notamment le redimensionnement, la suppression de l’arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG.
 
 #### Redimensionnement de l’image {#resize-image-using-express}
 
 Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. La vue Assets vous permet de redimensionner rapidement les images en fonction des tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Pour redimensionner l’image à l’aide de la vue Assets, procédez comme suit :
 
-1. Cliquez sur **Redimensionner l’image** dans le volet de gauche. Une boîte de dialogue affiche les fonctionnalités de redimensionnement d’image optimisées par Adobe Express.
+1. Cliquez sur **Redimensionner l’image** dans le volet de gauche. Une boîte de dialogue affiche les fonctionnalités de redimensionnement d’image optimisées par Adobe Express.
 1. Sélectionnez la plateforme de médias sociaux appropriée dans la liste déroulante Redimensionner et sélectionnez la taille de l’image parmi les options qui s’affichent.
 1. Mettez l’image à l’échelle, le cas échéant, à l’aide du champ **Échelle d’image**.
 1. Cliquez sur **[!UICONTROL Appliquer]** pour appliquer vos modifications.
@@ -95,14 +98,14 @@ Pour modifier des images à l’aide de l’éditeur incorporé [!DNL Adobe Expr
 1. Cliquez sur **Ouvrir dans Adobe Express**. L’image s’ouvre sur une zone de travail Express.
 1. Apportez les modifications requises à l’image.
 1. Si votre projet nécessite l’ajout de pages supplémentaires, cliquez sur **Ajouter**, sélectionnez Ressources, saisissez un dossier, sélectionnez une image à importer sur la page de zone de travail, puis apportez les modifications requises à l’image.
-1. Pour enregistrer une ou plusieurs ressources, cliquez sur **Enregistrer**. La boîte de dialogue d’enregistrement affiche les options d’enregistrement. Pour choisir parmi les options d’enregistrement, suivez l’une des instructions ci-dessous qui correspond à vos besoins :
-   1. Pour enregistrer une seule page, cliquez sur **Enregistrer comme version** pour exporter l’image en tant que nouvelle version (en conservant le format d’origine), puis enregistrez-la dans le même dossier.
+1. Pour enregistrer une ou plusieurs ressources, cliquez sur **Enregistrer**. La boîte de dialogue d’enregistrement affiche les options d’enregistrement. Pour choisir parmi les options d’enregistrement, suivez l’une des instructions ci-dessous qui correspond à vos besoins :
+   1. Pour enregistrer une seule page, cliquez sur **Enregistrer en tant que version** pour exporter l’image en tant que nouvelle version (en conservant le format d’origine), puis enregistrez-la dans le même dossier.
 
-   1. Pour enregistrer une seule page, cliquez sur **Enregistrer comme nouvelle ressource** pour exporter la ressource dans un autre format et l’enregistrer dans un dossier en tant que nouvelle ressource.
+   1. Pour enregistrer une seule page, cliquez sur **Enregistrer en tant que nouvelle ressource** pour exporter la ressource dans un autre format et l’enregistrer dans un dossier en tant que nouvelle ressource.
 
-   1. Pour enregistrer une seule page à partir de plusieurs pages, cliquez sur **Enregistrer comme version** pour enregistrer la ressource dans son format et son emplacement d’origine.
+   1. Si vous souhaitez enregistrer une seule page à partir de plusieurs pages, cliquez sur **Enregistrer en tant que version** pour enregistrer la ressource dans son format et son emplacement d’origine.
 
-   1. Pour enregistrer plusieurs pages ou une seule page parmi plusieurs pages, cliquez sur **Enregistrer comme nouvelle ressource**. Cette action exporte les ressources uniques ou multiples dans n’importe quel dossier et les enregistre en tant que nouvelles ressources ou ressources dans le format d’origine ou autre.
+   1. Pour enregistrer plusieurs pages ou une seule page parmi plusieurs pages, cliquez sur **Enregistrer en tant que nouvelle ressource**. Cette action exporte les ressources uniques ou multiples dans n’importe quel dossier et les enregistre en tant que nouvelles ressources ou ressources dans le format d’origine ou dans un autre format.
 
 1. Dans la boîte de dialogue Enregistrer, procédez comme suit :
    1. Saisissez un nom pour le fichier dans le champ **Enregistrer sous**.

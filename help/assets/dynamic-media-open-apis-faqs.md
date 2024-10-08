@@ -3,14 +3,17 @@ title: Questions fréquentes sur les fonctionnalités OpenAPI de Dynamic Media
 description: Questions fréquentes sur les fonctionnalités OpenAPI de Dynamic Media
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1512'
 ht-degree: 1%
 
 ---
 
 # Questions fréquentes sur les fonctionnalités OpenAPI de Dynamic Media {#new-dynaminc-media-apis-frequently-asked-questions}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 +++**Toutes les ressources du référentiel as a Cloud Service Experience Manager Assets sont-elles disponibles pour la recherche et la diffusion à l’aide de Dynamic Media avec des fonctionnalités OpenAPI ?**
 

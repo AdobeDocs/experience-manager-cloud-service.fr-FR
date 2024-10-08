@@ -5,14 +5,17 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 93%
+source-wordcount: '1222'
+ht-degree: 95%
 
 ---
 
 # Gestion des actifs {#manage-assets}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Vous pouvez effectuer facilement de nombreuses tâches de gestion des actifs numériques (DAM) grâce à l’interface conviviale d’[!DNL Assets view]. Une fois les ressources ajoutées, vous pouvez les rechercher, les télécharger, les déplacer, les copier, les renommer, les supprimer, les mettre à jour et les modifier.
 
@@ -130,8 +133,8 @@ Pour définir le statut de la ressource :
 
 1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
 
-1. Dans l’onglet **[!UICONTROL Basic]** , sélectionnez l’état de la ressource dans la liste déroulante **[!UICONTROL Status]** . Les valeurs possibles sont Approuvé, Refusé et Aucun état (par défaut).
-Si des fonctionnalités OpenAPI de Dynamic Media sont configurées pour votre environnement, Experience Manager Assets génère une URL publique dès que vous marquez la ressource comme `Approved`.
+1. Dans l’onglet **[!UICONTROL Basic]** , sélectionnez l’état de la ressource dans la liste déroulante **[!UICONTROL Status]** . Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+Si des fonctionnalités OpenAPI de Dynamic Media sont fournies pour votre environnement, Experience Manager Assets génère une URL publique dès que vous marquez la ressource comme `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

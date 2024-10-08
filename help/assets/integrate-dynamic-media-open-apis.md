@@ -3,14 +3,17 @@ title: Intégration d’AEM Assets aux applications en aval
 description: Intégration d’AEM Assets aux applications en aval
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 3022551a38ab287d4d6ea131dcee88fb1b40e5b7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 0%
+source-wordcount: '173'
+ht-degree: 1%
 
 ---
 
 # Intégration d’AEM Assets aux applications en aval {#integrate-dynamic-media-open-apis}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Toutes les [ressources approuvées](/help/assets/approve-assets.md) disponibles dans le référentiel de ressources Experience Manager peuvent être diffusées vers les applications en aval.
 

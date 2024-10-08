@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques en matière de métadonnées pour g
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # Gestion des métadonnées et bonnes pratiques {#metadata-best-practices}
+
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 Pour que votre entreprise se démarque et attire davantage de clients, l’utilisation de visuels de haute qualité tels que des images, des vidéos et d’autres ressources numériques est essentielle. Pour ce faire, vous avez besoin d’un processus qui vous permet d’ajouter des métadonnées à toutes les ressources numériques, ce qui facilite la recherche. Les métadonnées sont des données qui fournissent des détails essentiels sur les ressources numériques, notamment le nom, le type, l’emplacement de la ressource dans un référentiel, la date de modification et les balises associées. Les métadonnées simplifient la gestion des ressources, améliorent la recherche et l’accessibilité et assurent un contrôle efficace des versions.
 
