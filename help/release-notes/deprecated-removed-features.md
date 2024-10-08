@@ -4,9 +4,9 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
+source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2485'
 ht-degree: 98%
 
 ---
@@ -340,7 +340,7 @@ Ajoutez l’API cliente Mongo à votre projet.
 
 Liste d’actions :
 * Ajoutez ce lot à votre projet.
-   * org.mongodb:mongo-java-driver:3.12.7
+   * `org.mongodb:mongo-java-driver:3.12.7`
 
 ### Utilisation de `org.apache.abdera*` et `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
