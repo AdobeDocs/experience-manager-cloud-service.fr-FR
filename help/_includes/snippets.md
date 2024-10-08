@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 # Fragments de code {#snippets}
@@ -156,19 +156,19 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
 >Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## LISTES AUTORISÉES IP et éditeur universel {#ip-allow-lists-ue}
+## Listes d’adresses IP autorisées et éditeur universel {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
->[L’éditeur universel](/help/implementing/universal-editor/introduction.md) n’est pas compatible avec les listes autorisées IP.
+>[L’éditeur universel](/help/implementing/universal-editor/introduction.md) n’est pas compatible avec les listes d’adresses IP autorisées.
 >
 >Si vous souhaitez utiliser l’éditeur universel, les listes autorisées IP ne doivent pas être activées.
 
-## Éditeur universel et Listes autorisées IP {#ue-ip-allow-lists}
+## Éditeur universel et listes d’adresses IP autorisées {#ue-ip-allow-lists}
 
 >[!IMPORTANT]
 >
->L’éditeur universel n’est pas compatible avec les [listes autorisées IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>L’éditeur universel n’est pas compatible avec les [listes d’adresses IP autorisées.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
 >Si vous souhaitez utiliser l’éditeur universel, les Listes autorisées IP ne doivent pas être activées.
 
