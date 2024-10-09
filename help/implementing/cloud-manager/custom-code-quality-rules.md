@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 82%
 
 ---
 
@@ -794,7 +794,7 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [Les packages ne doivent pas contenir de configurations OSGi en double](#oakpal-package-osgi), il s’agit d’un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout recouvrement.
+Tout comme la règle [Les packages ne doivent pas contenir de configurations OSGi en double](#oakpal-package-osgi), il s’agit d’un problème courant sur les projets complexes où le même chemin de noeud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout recouvrement.
 
 ### Le mode de création par défaut ne doit pas être défini sur l’interface utilisateur classique. {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pou
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les bibliothèques clientes d’Experience Manager peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), lorsque vous utilisez des bibliothèques clientes activées par proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` afin d’être référencées efficacement sur les instances de publication.
+Les bibliothèques clientes d’Experience Manager peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), lors de l’utilisation de bibliothèques clientes proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` pour être référencées efficacement sur les instances de publication.
 
 #### Code non conforme {#non-compliant-proxy-enabled}
 

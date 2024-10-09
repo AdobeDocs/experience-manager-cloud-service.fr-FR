@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 7%
 
 ---
@@ -24,7 +24,7 @@ Découvrez comment ajouter votre propre certificat SSL ou un certificat DV (Doma
 ## Conditions préalables {#prerequisites}
 
 * Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour ajouter un certificat.
-* Si vous installez votre propre certificat, veillez à consulter les **exigences de certificat** dans [Introduction à la gestion des certificats SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)
+* Si vous installez votre propre certificat, reportez-vous à la section **Exigences de certificat** dans [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
 
 ## Ajout d’un certificat SSL {#add-certificate}
 
@@ -55,4 +55,4 @@ Vous avez maintenant ajouté un certificat SSL fonctionnel pour votre projet. Ce
 
 >[!TIP]
 >
->Si vous rencontrez des problèmes lors de l&#39;ajout ou de la gestion de vos certificats, consultez le document [Dépannage des erreurs de certificat SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>Si vous rencontrez des problèmes lors de l’ajout ou de la gestion de vos certificats, reportez-vous à la section [ Résolution des problèmes liés aux erreurs de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).

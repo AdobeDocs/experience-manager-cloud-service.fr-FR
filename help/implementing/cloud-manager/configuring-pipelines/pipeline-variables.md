@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 20%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
@@ -28,7 +28,7 @@ Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans
 
 ### Conventions de dénomination des variables de pipeline {#naming-conventions}
 
-Les noms de variables doivent respecter les conventions suivantes.
+Les noms de variables doivent respecter les conventions suivantes :
 
 * Les variables ne peuvent contenir que des caractères alphanumériques et un trait de soulignement (`_`).
 * Les noms doivent être en majuscules.
@@ -37,19 +37,19 @@ Les noms de variables doivent respecter les conventions suivantes.
 * La valeur `string` de chaque variable doit comporter moins de 2 048 caractères.
 * Chaque valeur de variable de type `secretString` doit comporter 500 caractères ou moins.
 
-## Via l’interface utilisateur de Cloud Manager {#ui}
+## Au moyen de l’interface utilisateur de Cloud Manager {#ui}
 
-Les variables de pipeline peuvent être configurées et gérées via l’interface utilisateur de Cloud Manager. Vous devez disposer des autorisations nécessaires pour modifier le pipeline pour ajouter, modifier et supprimer des variables de pipeline.
+Les variables de pipeline peuvent être configurées et gérées au moyen de l’interface utilisateur de Cloud Manager. Vous devez disposer des autorisations nécessaires pour modifier le pipeline pour ajouter, modifier et supprimer des variables de pipeline.
 
 Si un pipeline s’exécute, la gestion des variables est bloquée.
 
 ### Ajout de variables de pipeline {#add-ui}
 
-1. Lorsque [vous gérez vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
+1. Lorsque vous [gérez vos pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
 
    ![Afficher/modifier des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. La fenêtre **Configuration des variables** s’ouvre. Saisissez les détails de la variable dans la première ligne du tableau et appuyez ou cliquez sur **Ajouter**.
+1. La fenêtre **Configuration des variables** s’ouvre. Saisissez les détails de la variable dans la première ligne du tableau et cliquez sur **Ajouter**.
 
    * **Nom de configuration** est un identifiant unique de votre variable, qui doit gérer les [conventions d’appellation des variables de pipeline](#naming-conventions).
    * **Value** est la valeur contenue par la variable.
@@ -65,21 +65,21 @@ Si un pipeline s’exécute, la gestion des variables est bloquée.
 
 ### Modification des variables de pipeline {#edit-ui}
 
-1. Lorsque [vous gérez vos pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) appuyez ou cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
+1. Lorsque vous [gérez vos pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), cliquez sur le bouton représentant des points de suspension du pipeline pour lequel vous souhaitez créer des variables de pipeline et sélectionnez **Afficher/modifier des variables** dans le menu contextuel.
 
    ![Afficher/modifier des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. La fenêtre **Configuration des variables** s’ouvre. Appuyez ou cliquez sur le bouton représentant des points de suspension de la variable que vous souhaitez modifier, puis sélectionnez **Modifier**.
+1. La fenêtre **Configuration des variables** s’ouvre. Cliquez sur le bouton représentant des points de suspension de la variable que vous souhaitez modifier, puis sélectionnez **Modifier**.
 
    ![Modifier la variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. Mettez à jour la valeur de la variable selon les besoins et appuyez ou cliquez sur **Appliquer** (coche à la fin de la ligne) pour appliquer la modification ou sur **Ignorer** (flèche vers l’arrière) pour annuler la modification.
+1. Mettez à jour la valeur de la variable selon les besoins et cliquez sur **Appliquer** (coche à la fin de la ligne) pour appliquer la modification ou sur **Ignorer** (flèche vers l’arrière) pour annuler la modification.
 
    * Seule la valeur de la variable peut être modifiée.
 
    ![Modification d&#39;une variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer les modifications que vous avez apportées aux variables dans le pipeline.
+1. Cliquez sur **Enregistrer**.
 
 Si vous souhaitez supprimer une variable, sélectionnez **Supprimer** au lieu de **Modifier** dans le menu de points de suspension de la variable de pipeline dans la fenêtre **Configuration des variables**.
 

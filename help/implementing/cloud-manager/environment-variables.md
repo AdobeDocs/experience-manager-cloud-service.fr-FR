@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -90,7 +90,7 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 
 1. Après avoir apporté les modifications de configuration requises, sélectionnez **Enregistrer**.
 
-[Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
+[Comme lors de l’ajout de variables](#add-variables), un indicateur avec l’état **Mise à jour** s’affiche en haut du tableau et en regard des variables nouvellement mises à jour pour indiquer que l’environnement est en cours de mise à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
 
 >[!TIP]
 >

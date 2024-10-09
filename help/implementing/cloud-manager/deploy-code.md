@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 81%
+source-wordcount: '1195'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ La phase de **test d’évaluation** comprend ces étapes.
    * Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker pour permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium).
    * Pour plus d’informations, voir [Tests d’interface utilisateur personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
-* **Contrôle de l’expérience** - Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles.
+* **Contrôle de l’expérience** - Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.
    * Les pages configurées sont envoyées au service et évaluées.
    * Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.
    * Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.
@@ -110,7 +110,7 @@ Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes le
 
 ## Délais d’expiration {#timeouts}
 
-Les étapes suivantes expirent s’ils sont en attente de commentaires de l’utilisateur :
+Les étapes suivantes expirent si l’utilisateur attend les commentaires :
 
 | Étape | Délai dépassé |
 |--- |--- |

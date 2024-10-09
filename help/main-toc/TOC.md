@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5678'
 ht-degree: 99%
 
 ---
@@ -1071,7 +1071,7 @@ ht-degree: 99%
    + [Générer des variations](/help/generative-ai/generate-variations.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
-   + Utilisation de Cloud Manager {#using-cloud-manager}
+   + Utilisation de Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1086,7 +1086,7 @@ ht-degree: 99%
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
-      + Gestion de votre code {#managing-code}
+      + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajout d’un référentiel d’Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
@@ -1101,13 +1101,13 @@ ht-degree: 99%
          + [Annotations du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD de Cloud Manager {#cicd-pipelines}
-         + [Présentation](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Présentation des pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurer un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurer un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Déployer votre code](/help/implementing/cloud-manager/deploy-code.md)
-      + Présentation des résultats de test {#test-results}
+      + Présentation des résultats des tests {#test-results}
          + [Vue d’ensemble](/help/implementing/cloud-manager/overview-test-results.md)
          + [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md)
