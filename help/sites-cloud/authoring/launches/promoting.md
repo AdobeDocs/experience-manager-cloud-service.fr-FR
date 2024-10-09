@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 99%
@@ -74,7 +74,9 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
      >[!NOTE]
      >
      >Cela concerne un seul lancement, si vous avez imbriqué des lancements, voir [Promotion d’un lancement imbriqué](#promoting-a-nested-launch).
+
 1. Sélectionnez **Suivant** pour continuer.
+
 1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
 
    ![Réviser la promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
