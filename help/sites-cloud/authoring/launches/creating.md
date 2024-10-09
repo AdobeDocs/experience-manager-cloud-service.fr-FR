@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '1100'
+ht-degree: 94%
 
 ---
 
@@ -159,7 +159,8 @@ Vous pouvez cloner un lancement à partir de la [console de lancements](/help/si
 
 * Sélectionnez le lancement en appuyant/cliquant sur la miniature.
 * La barre d’outils s’affiche. Sélectionnez Cloner.
-   * Le clone s’affiche dans la console.
+   * Le clone sera créé et affiché dans la console.
+   * Le **Titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Propriétés**).
 
 ## Suppression d’un lancement {#deleting-a-launch}
 
