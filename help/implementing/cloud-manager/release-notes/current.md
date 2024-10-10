@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ La prochaine version est prévue pour le 14 novembre 2024.
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> Lors de l’ajout d’un nouveau domaine personnalisé, la méthode de vérification précédente impliquait un long processus de validation DNS. Adobe a simplifié ce processus pour les clients. Désormais, il vous suffit de fournir un certificat SSL valide (EV ou OV), qui sert de preuve de propriété. Il n’est plus nécessaire de mettre à jour les enregistrements TXT dans le DNS.
+* <!-- CS ONLY --> La méthode de vérification précédente, utilisée pour ajouter un domaine personnalisé, passait par un long processus de validation DNS. Adobe a simplifié ce processus pour sa clientèle. Désormais, il vous suffit de fournir un certificat SSL valide (EV ou OV), qui fait office de preuve de propriété. La mise à jour des enregistrements TXT dans le DNS n’est plus nécessaire.
 
   >[!NOTE]
   >
-  >Cette fonctionnalité s’applique uniquement aux certificats EV et OV gérés par le client. Les certificats DV gérés par Adobe nécessitent toujours la présence d’un enregistrement CNAME.
+  >Seuls les certificats EV et OV gérés par la cliente ou le client sont concernés par cette fonctionnalité. Un enregistrement CNAME reste obligatoire pour les certificats DV gérés par Adobe.
 
-  Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+  Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-  ![Vérification du domaine d’un certificat EV/OV géré par le client](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![Vérification du domaine pour un certificat EV/OV géré par un client ou une cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Lorsque vous ajoutez ou modifiez une infrastructure réseau, les valeurs des champs Adresse IP et Masque réseau sont validées selon les règles suivantes :
 
