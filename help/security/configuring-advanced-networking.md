@@ -4,10 +4,10 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
-workflow-type: ht
-source-wordcount: '5675'
-ht-degree: 100%
+source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
+workflow-type: tm+mt
+source-wordcount: '5676'
+ht-degree: 99%
 
 ---
 
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Protocole http ou https</b></td>
-    <td>Trafic vers Azure ou vers les services Adobe</td>
+    <td>Trafic vers Azure (*.windows.net) ou les services Adobe</td>
     <td>N’importe lequel</td>
     <td>Via les adresses IP partagées du cluster (et non l’adresse IP dédiée)</td>
     <td>adobe.io<br>api.windows.net</td>
