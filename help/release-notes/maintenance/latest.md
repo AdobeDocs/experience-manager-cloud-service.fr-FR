@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
+source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 39%
+source-wordcount: '773'
+ht-degree: 41%
 
 ---
 
@@ -24,43 +24,37 @@ L’activation des fonctionnalités de la version 2024.10.0 fournit l’ensembl
 
 ### Améliorations {#enhancements-18099}
 
-* ASSETS-43015 : mise à jour vers le dernier lot auth.ims.
-* ASSETS-41684 : Mise à jour src/main/features/docker/ethos/base-ims-oauth.json.
 * ASSETS-38322 : activation de l’événement de requête http pour AEM.
-* ASSETS-41684 : ajoutez des configurations OSGI OOB pour définir le mappage FI pour les groupes pour Assets, Foundation, Sites et Forms.
 * ASSETS-41448 : mettez à jour le lot auth.ims pour prendre en charge les mappages FI pour les groupes.
+* ASSETS-41684 : ajoutez des configurations OSGI OOB pour définir le mappage FI pour les groupes pour Assets, Foundation, Sites et Forms.
+* ASSETS-43015 : mise à jour vers le dernier lot auth.ims.
 * CQ-4356633 : ajoutez un caractère supplémentaire dans l’info-bulle &quot;Contenu uniquement&quot;.
-* SITES-23584 : les tests des composants de base échouent sur Java 17.
-* GUIDES-19069 : ajout de guidesPeerLinkIndex pour le module complémentaire guides aem.
-* GRANITE-54300 : mettre à jour Oak vers la dernière version publique (1.70.0).
-* GRANITE-54274 : Acceptez le client IMS Firefly.
-* GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version.
-* GRANITE-45298 : Un utilisateur pauvre et privilégié peut obtenir un RCE en créant un formulaire malveillant sans JS mais à la manière de XSS.
-* GRANITE-54266 : absence du service Search Suggestor du SDK de production.
-* GRANITE-50948 - Intégrer le service de référentiel dans AEM Ajouter un service de référentiel alternatif pour le développement local.
-* GRANITE-53966 : utilisez un pool de threads distinct pour la distribution de contenu.
-* GRANITE-53514 : Treeactivation 1.0.26.
-* GRANITE-54054 : variable d’environnement pour com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
 * GRANITE-50948 : Intégrez le service de référentiel à la prise en charge AEM du service de référentiel.
 * GRANITE-52454 : Ajout de l’assistance d’assistance 0.1.2.
-* GRANITE-53514 : Treeactivation 1.0.26.
-* GRANITE-54038 : Ajoutez le client IMS Enterprise Creative Cloud à la liste autorisée de client IMS AEM.
-* GRANITE-36205 : mettez à jour la version interne de oak vers la dernière version.
-* GRANITE-53485 : Authentification de l’entité de sécurité du service de prise en charge pour la réplication du stockage Azure Blob.
-* GRANITE-54006 : mettez à jour Jackson vers 2.17.2.
-* GRANITE-53287 : mise à jour de la version de test d’intégration security-rights.
-* GRANITE-53914 : Échec des tests de plateforme avec Java 17 Mise à jour de la version du module.
-* GRANITE-53870 : créez un mécanisme interne pour ignorer la vérification de version maximale de la JVM pour le démarrage rapide.
 * GRANITE-52454 : Aide à la mise à niveau de l’assistance d’assistance GRANITE-52454 Aide à la mise à niveau pour utiliser la dernière version d’AEMaaCS.
+* GRANITE-53287 : mise à jour de la version de test d’intégration security-rights.
+* GRANITE-53485 : Authentification de l’entité de sécurité du service de prise en charge pour la réplication du stockage Azure Blob.
+* GRANITE-53514 : activation de l’arborescence mise à jour vers la version 1.0.26.
+* GRANITE-53870 : créez un mécanisme interne pour ignorer la vérification de version maximale de la JVM pour le démarrage rapide.
+* GRANITE-53914 : correction des échecs de test de Platform avec Java 17 Mise à jour de la version du module.
+* GRANITE-53966 : utilisez un pool de threads distinct pour la distribution de contenu.
+* GRANITE-54006 : mettez à jour Jackson vers 2.17.2.
+* GRANITE-54038 : Ajoutez le client IMS Enterprise Creative Cloud à la liste autorisée de client IMS AEM.
+* GRANITE-54054 : variable d’environnement pour com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
+* GRANITE-54266 : absence du service Search Suggestor du SDK de production.
+* GRANITE-54274 : Acceptez le client IMS Firefly.
+* GRANITE-54300 : mettre à jour Oak vers la dernière version publique (1.70.0).
+* GUIDES-19069 : ajout de guidesPeerLinkIndex pour le module complémentaire guides aem.
+* SITES-23584 : test de correction de l’échec du composant Foundation sur Java 17.
+* SKYOPS-69768 : les modèles Sling ne désérialisent pas ResourceResolvers.
+* SKYOPS-76378 : amélioration de la sécurité des threads de l’enregistrement/de la désinscription de ResourceBundle dans i18n.
+* SKYOPS-79285 : mise à jour de Sling XSS vers la version 2.4.2.
+* SKYOPS-82383 : Exposez le résultat &#39;helm-values&#39; convert-merge-analyse dans le descripteur d’exécution de la commande.
+* SKYOPS-84810 : ignore l’exécution &quot;40-initialize-publish.sh&quot; au démarrage pour RDE.
+* SKYOPS-84951 : correction du code de génération de somme de contrôle du contenu mutable.
 * SKYOPS-85335 : Mettez à jour org.apache.sling.jcr.repoinit vers la version 1.1.52.
 * SKYOPS-85336 : Mise à jour de Sling Commons Threads vers la version 3.3.0.
-* SKYOPS-76378 : amélioration de la sécurité des threads de l’enregistrement/de la désinscription de ResourceBundle dans i18n.
-* SKYOPS-84951 : le code de génération de somme de contrôle du contenu mutable est incorrect.
-* SKYOPS-82383 : Exposez le résultat &#39;helm-values&#39; convert-merge-analyse dans le descripteur d’exécution de la commande.
 * SKYOPS-86329 : mise à jour des versions des modules de test de plateforme pour la prise en charge du sdk java 21.
-* SKYOPS-69768 : les modèles Sling ne désérialisent pas ResourceResolvers.
-* SKYOPS-84810 : ignore l’exécution &quot;40-initialize-publish.sh&quot; au démarrage pour RDE.
-* SKYOPS-79285 : mise à jour de Sling XSS vers la version 2.4.2
 
 ### Problèmes résolus {#fixed-issues-18099}
 
@@ -77,7 +71,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités et problèmes de G
 
 ### Problèmes connus {#known-issues-18099}
 
-* FORMS - 15818 : entrée du descripteur de composant `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` introuvable dans les journaux de serveur. Ce sont des instructions de journal inoffensives.
+* FORMS-15818 : entrée du descripteur de composant `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` introuvable dans les journaux de serveur. Ce sont des instructions de journal inoffensives.
 
 ### Fonctionnalités et API obsolètes {#deprecated-18099}
 
