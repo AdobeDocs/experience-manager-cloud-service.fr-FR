@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 41%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 41%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 18099 {#release-18099}
+## Version 18175 {#release-18175}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18099, publiée le jeudi 9 octobre 2024. La version de maintenance précédente était la version 17964.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18175, publiée le vendredi 10 octobre 2024. La version de maintenance précédente était la version 17964. La version 18099 a été rendue privée en raison d’un problème.
 
 L’activation des fonctionnalités de la version 2024.10.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-18099}
+### Améliorations {#enhancements-18175}
 
 * ASSETS-38322 : activation de l’événement de requête http pour AEM.
 * ASSETS-41448 : mettez à jour le lot auth.ims pour prendre en charge les mappages FI pour les groupes.
@@ -56,12 +56,11 @@ L’activation des fonctionnalités de la version 2024.10.0 fournit l’ensembl
 * SKYOPS-85336 : Mise à jour de Sling Commons Threads vers la version 3.3.0.
 * SKYOPS-86329 : mise à jour des versions des modules de test de plateforme pour la prise en charge du sdk java 21.
 
-### Problèmes résolus {#fixed-issues-18099}
+### Problèmes résolus {#fixed-issues-18175}
 
 * CNTBF-298 : Supprimez jcr:uuid des packages exportés par CC.
 * SKYOPS-83910 : correction des problèmes de simultanéité détectés dans SKYOPS-82371.
 * GRANITE-52876 : Mise à jour vers com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088 : régression introduite par le correctif de SITES-11992.
 * GUIDES-14445 : la génération du PDF natif échoue avec une erreur liée à l’obtention des dépendances pour Node.js.
 * GUIDES-16961 : le titre avec `<conref>` ne se résout pas dans les tableaux de bord de ligne de base et de traduction de l’éditeur web.
 * GUIDES-17283 : lorsque vous sélectionnez l’option **Utiliser les métadonnées ajoutées dans la topicmeta** , les propriétés de métadonnées ne sont pas propagées dans les propriétés de document de la sortie de l’PDF natif.
@@ -69,11 +68,11 @@ L’activation des fonctionnalités de la version 2024.10.0 fournit l’ensembl
 
 Pour plus d’informations sur les nouvelles fonctionnalités et problèmes de Guides améliorés résolus dans la version, consultez la [feuille de route de la version de Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problèmes connus {#known-issues-18099}
+### Problèmes connus {#known-issues-18175}
 
 * FORMS-15818 : entrée du descripteur de composant `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` introuvable dans les journaux de serveur. Ce sont des instructions de journal inoffensives.
 
-### Fonctionnalités et API obsolètes {#deprecated-18099}
+### Fonctionnalités et API obsolètes {#deprecated-18175}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées ](/help/release-notes/deprecated-removed-features.md).
 
@@ -93,11 +92,11 @@ Notez qu’Adobe procède actuellement à la mise à jour de `com.day.cq.wcm.api
 
 * GRANITE-54165 : org.apache.jackrabbit.oak.plugins.blob obsolète dans l’API publique.
 
-### Correctifs de sécurité {#security-18099}
+### Correctifs de sécurité {#security-18175}
 
 AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 2 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-18099}
+### Technologies intégrées {#embedded-tech-18175}
 
 | Technologie | Version | Lien |
 |---|---|---|
