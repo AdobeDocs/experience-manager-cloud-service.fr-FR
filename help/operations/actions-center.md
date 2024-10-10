@@ -4,10 +4,10 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 50%
+source-wordcount: '1098'
+ht-degree: 48%
 
 ---
 
@@ -77,6 +77,7 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | Requête GraphQL persistante non valide | Incident | Corrigez la requête GraphQL non valide en référençant la [documentation de dépannage des requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pic de trafic à l’origine | Incident | Protect votre origine en configurant des règles de filtrage du trafic de limite de taux qui se déclenchent à des seuils inférieurs à ceux du pic de trafic par défaut à l’alerte d’origine.  Consultez la section [Blocking DoS and DDoS attaquant à l’aide de règles de trafic](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
 | Règles de filtrage du trafic CDN déclenchées | Incident | Si la règle de filtrage du trafic correspondante reflète une attaque et que votre site ne bloque pas ce trafic, protégez votre site en configurant une règle de filtrage du trafic en mode de blocage. Consultez la section [Protection des sites Web avec des règles de filtrage du trafic (y compris les règles WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) de la documentation sur les règles de filtrage du trafic, qui fait référence à un tutoriel. |
+| Erreurs de transfert de journal Splunk | Incident | Vérifiez que votre point de terminaison Splunk fonctionne et est accessible depuis votre environnement AEM Cloud Service. Pour plus d’informations sur le transfert de journal, consultez la [documentation sur le transfert de journal Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Si vous avez besoin d’aide pour résoudre les problèmes ou si vous devez apporter des modifications à votre configuration de journalisation, veuillez envoyer un ticket d’assistance avec Adobe. |
 | Les pages contiennent un grand nombre de noeuds | Proactif | Réduire le nombre total de noeuds dans une page. Reportez-vous à la [documentation sur la complexité de la page](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Grand nombre d’instances de workflow en cours d’exécution | Proactif | Arrêtez les workflows en cours d’exécution qui ne sont plus nécessaires. Découvrez comment [configurer une tâche de purge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans la [documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials). | Nombre de connexions élevé | Proactif | En savoir plus sur le pool de connexions dans la [documentation sur le pool de connexions avec la mise en réseau avancée](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
