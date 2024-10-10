@@ -3,13 +3,13 @@ title: Utilisation des pipelines de configuration
 description: Découvrez comment utiliser les pipelines de configuration pour déployer différentes configurations dans AEM as a Cloud Service, telles que les paramètres de transfert de journal, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu.
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
+source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 1%
+source-wordcount: '973'
+ht-degree: 2%
 
 ---
-
 
 # Utilisation des pipelines de configuration {#config-pipelines}
 
@@ -38,7 +38,7 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 | [Règles de filtre de trafic, y compris WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Déclarer des règles pour bloquer le trafic malveillant |
 | [Transformations de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Déclarer des règles pour transformer la forme de la requête de trafic |
 | [Transformations de réponse](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclarer des règles pour transformer la forme de la réponse pour une requête donnée |
-| [Redirections côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Déclarez les redirections côté client de type 301/302 [ (disponibles uniquement pour les utilisateurs précoces)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Redirections côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Déclarer les redirections côté client de type 301/302 |
 | [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Déclarez des règles pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobes. |
 | [Pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Remplacez la page d’erreur par défaut si AEM’origine ne peut pas être atteinte, en référençant l’emplacement du contenu statique auto-hébergé dans le fichier de configuration. |
 | [Purge CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Déclarez les clés d’API de purge utilisées pour purger le réseau CDN |
