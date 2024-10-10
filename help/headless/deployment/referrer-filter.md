@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 56%
 
 ---
 
@@ -28,7 +28,13 @@ Pour ce faire, ajoutez une configuration OSGi appropriée pour le filtre Référ
 
 Le nom du fichier doit être `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
 
+## Exemple de configuration {#example-configuration}
+
 Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domain`, vous pouvez :
+
+>[!CAUTION]
+>
+>Il s’agit d’un exemple de base qui peut remplacer la configuration standard. Vous devez vous assurer que les mises à jour de produit sont toujours appliquées à toutes les personnalisations.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domai
 }
 ```
 
->[!CAUTION]
->
->Il incombe au client de :
->
->* n’accorder l’accès qu’aux domaines approuvés ;
->* s’assurer qu’aucune information sensible n’est exposée
->* ne pas utiliser la syntaxe de caractère générique [*] ; cette méthode désactive à la fois l’accès authentifié au point d’entrée GraphQL et l’expose par ailleurs vis-à-vis du monde entier.
+## Sécurité des données {#data-security}
 
 >[!CAUTION]
 >
->Tous les [schémas](#schema-generation) GraphQL (dérivés de modèles de fragments de contenu qui ont été **activés**) sont lisibles par le point d’entrée GraphQL.
->
->En d’autres termes, vous devez vous assurer qu’aucune donnée sensible n’est disponible, car elle peut être divulguée de cette façon ; par exemple, cela concerne des informations qui peuvent être présentes sous forme de noms de champ dans la définition de modèle.
+>Il vous incombe toujours de vous pencher pleinement sur les points suivants.
+
+Pour garantir la sécurité de vos données, vous devez vous assurer que :
+
+* L’accès est **uniquement** accordé aux domaines approuvés
+
+* caractère générique [`*`] dans **not** utilisé ; cela désactive l’accès authentifié au point de terminaison GraphQL et l’expose également au monde entier.
+
+* les informations sensibles sont **never** exposées ; ni directement, ni indirectement :
+
+   * Par exemple, tous les [schémas GraphQL](/help/headless/graphql-api/content-fragments.md#schema-generation) sont :
+
+      * dérivés de modèles de fragment de contenu **Activé** ;
+
+     **and**
+
+      * sont lisibles via le point d’entrée GraphQL ;
+
+     Cela signifie que les informations présentes en tant que noms de champ dans la définition de modèle peuvent devenir disponibles.
+
+Vous devez vous assurer qu’aucune donnée sensible n’est disponible de quelque manière que ce soit. De tels détails doivent donc être soigneusement étudiés.
