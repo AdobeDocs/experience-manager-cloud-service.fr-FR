@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Découvrez les points de contrôle qualité disponibles dans le [processus de déploiement AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) et les différents types de tests fonctionnels intégrés. Découvrez comment contribuer et optimiser leur utilisation dans le cadre d’une stratégie de test exhaustive.
 
-## Vue d’ensemble
+## A propos des tests fonctionnels
 
 Le diagramme suivant présente un aperçu général des pipelines disponibles dans le cadre d’une stratégie de test globale et du [processus de déploiement AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![ Points de contrôle qualité du déploiement AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
-## Objectif
+## Objectif des tests fonctionnels
 
 Les pipelines de déploiement d’AEM Cloud Service ont pour objectif de faciliter des déploiements robustes et sécurisés à différentes étapes de votre développement et d’AEM cycle de vie des versions du produit. Ces pipelines intègrent plusieurs points de contrôle de qualité à différents niveaux afin de garantir l’intégrité et la sécurité des déploiements pour vos modifications d’applications AEM et pour AEM mises à jour de produits.
 
@@ -38,13 +38,13 @@ Les points de contrôle qualité intégrés valident principalement les fonction
 
 Il est important de noter que ces points de contrôle qualité ne sont pas destinés à constituer un cadre de test complet pour l’ensemble de votre stratégie de test. Le produit AEM est soumis à des tests approfondis avant d’entrer dans le processus de déploiement du service cloud AEM. De même, votre application doit déjà être de haute qualité avant d’atteindre la phase de déploiement. Cette approche permet de s’assurer que les points de contrôle de qualité se concentrent sur leur principal objectif de protection du processus de déploiement, plutôt que de se substituer à un régime de test complet.
 
-## Points de contrôle de qualité
+## Points de contrôle de qualité dans les tests
 
 Le diagramme suivant fournit une vue détaillée des points de contrôle qualité disponibles et de leur utilisation dans la stratégie de test globale et le [processus de déploiement AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![ Points de contrôle qualité du déploiement AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
 
-### Points de contrôle de qualité fournis par le client
+### Points de contrôle qualité fournis par le client récapitulatif
 
 |                               | Tests unitaires | Tests fonctionnels personnalisés<br/> | Tests de l’interface utilisateur personnalisés<br/> | Validations du client<br/> | Test manuel<br/> |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|

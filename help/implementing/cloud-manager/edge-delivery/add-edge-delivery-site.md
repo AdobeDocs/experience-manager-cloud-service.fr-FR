@@ -3,9 +3,9 @@ title: Ajouter un site Edge Delivery à Cloud Manager
 description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '495'
 ht-degree: 5%
 
 ---
@@ -54,8 +54,8 @@ Dans le coin supérieur droit de la page, cliquez sur **Ajouter un site**.
 
 1. Cliquez sur **Vérifier**.
 
-Une fois le référentiel vérifié, son état dans le tableau des sites Edge Delivery passe à un cercle vert avec une coche blanche à l’intérieur.
+Une fois le référentiel vérifié, son état dans le tableau des sites Edge Delivery est mis à jour. Un cercle vert avec une coche blanche à l’intérieur indique l’état.
 
-Dans le même tableau, cliquez sur ![Informations sur le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher les détails sur votre site, tels que l’URL vérifiée du référentiel et l’URL du site web d’aperçu et de production.
+Dans le même tableau, cliquez sur ![Informations sur le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher les détails du site. Ces informations comprennent l’URL du référentiel vérifiée, ainsi que les URL du site web d’aperçu et de production.
 
 
