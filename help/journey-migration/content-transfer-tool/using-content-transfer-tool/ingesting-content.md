@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 40%
+source-wordcount: '3137'
+ht-degree: 38%
 
 ---
 
@@ -228,6 +228,20 @@ Pour éviter toute restriction, exécutez l’[analyseur des bonnes pratiques](/
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) version 2.1.50+ : effectue un rapport sur les noeuds volumineux contenant des caractères Unicode supérieurs à la taille maximale. Vérifiez que vous exécutez la dernière version. Les versions BPA antérieures à la version 2.1.50 n’identifieront pas et ne signaleront pas ces noeuds volumineux ; elles devront être découvertes séparément à l’aide de l’outil Oak prérequis mentionné ci-dessus.
+
+### Échec de l’ingestion en raison d’erreurs intermittentes inattendues {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Erreurs intermittentes imprévues"
+>abstract="Parfois, des erreurs de service intermittentes inattendues peuvent se produire en aval et, malheureusement, le seul recours consiste à simplement relancer l’ingestion."
+
+Parfois, des problèmes intermittents inattendus peuvent se prêter à des ingérations qui ont échoué et, malheureusement, le seul recours est de relancer l&#39;ingestion. Examinez le journal d’ingestion pour découvrir la cause de l’échec et voir s’il s’aligne sur l’une des erreurs répertoriées ci-dessous, où une nouvelle tentative doit être effectuée.
+
+## Problèmes de MongoDB {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - La phase d’ingestion tentera de présenter la base de données cloud cible à une taille appropriée qui s’aligne sur la taille du contenu du jeu de migration en cours d’ingestion. Très rarement, cette opération ne se termine pas dans le délai prévu.
+* `Exhausted mongo restore retries` - Les tentatives de restauration d’un vidage local du contenu du jeu de migration ingéré vers la base de données cloud ont été épuisées. Cela indique un problème de réseau/d’intégrité global avec MongoDB, qui se soigne souvent après quelques minutes.
 
 ### Ingestion annulée {#ingestion-rescinded}
 
