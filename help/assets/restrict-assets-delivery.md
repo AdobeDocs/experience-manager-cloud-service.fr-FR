@@ -1,66 +1,42 @@
 ---
-title: Limitation de la diffusion des ressources dans Experience Manager
-description: Découvrez comment restreindre la diffusion des ressources dans [!DNL Experience Manager].
+title: Limitation de la diffusion des ressources avec Dynamic Media avec les fonctionnalités OpenAPI
+description: Découvrez comment restreindre la diffusion des ressources avec les fonctionnalités OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 1%
 
 ---
 
-# Limitation de l’accès aux ressources dans [!DNL Experience Manager] {#restrict-access-to-assets}
+# Limitation de la diffusion des ressources avec Dynamic Media avec les fonctionnalités OpenAPI {#restrict-access-to-assets}
 
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-La gouvernance centrale des ressources dans Experience Manager permet à l’administrateur DAM ou aux responsables de marque de gérer l’accès aux ressources. Ils peuvent restreindre l’accès en configurant des rôles pour les ressources approuvées du côté création, en particulier sur l’instance d’auteur AEM as a Cloud Service.
+La gouvernance centrale des ressources dans Experience Manager permet à l’administrateur DAM ou aux responsables de marque de gérer l’accès aux ressources disponibles via Dynamic Media avec les fonctionnalités OpenAPI. Ils peuvent restreindre la diffusion des ressources approuvées (jusqu’à une ressource individuelle) à l’utilisateur ou aux groupes [ Adobe Identity Management System (IMS) sélectionnés en configurant certaines métadonnées sur les ressources dans leur service de création AEM as a Cloud Service.](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)
 
-Les utilisateurs [qui effectuent une recherche](search-assets-api.md) ou qui utilisent [des URL de diffusion](deliver-assets-apis.md) peuvent accéder à des ressources restreintes lorsqu’ils réussissent à passer le processus d’autorisation.
+Une fois qu’une ressource est limitée via Dynamic Media avec OpenAPI, seuls les utilisateurs (intégrés à Adobe IMS) autorisés à accéder à cette ressource se voient accorder l’accès. Pour accéder à la ressource, l’utilisateur doit exploiter les fonctionnalités [Search](search-assets-api.md) et [Delivery](deliver-assets-apis.md) de Dynamic Media avec OpenAPI.
 
 ![Accès restreint aux ressources](/help/assets/assets/restricted-access.png)
-
-## Diffusion restreinte utilisant un jeton IMS {#restrict-delivery-ims-token}
 
 Dans Experience Manager Assets, la diffusion limitée via IMS implique deux étapes clés :
 
 * Création
 * Diffusion
 
-### Création {#authoring}
+## Création {#authoring}
 
-Vous pouvez restreindre la diffusion des ressources dans [!DNL Experience Manager] en fonction des rôles. Pour configurer les rôles, procédez comme suit :
+### Diffusion restreinte utilisant un jeton porteur IMS {#restrict-delivery-ims-token}
 
-1. Accédez à [!DNL Experience Manager] en tant qu’administrateur DAM.
-1. Sélectionnez la ressource pour laquelle vous devez configurer le rôle.
-1. Accédez à **[!UICONTROL Propriétés]** > **[!UICONTROL Avancé]**, puis assurez-vous que le champ **[!UICONTROL Rôles]** existe dans l’onglet [!UICONTROL Métadonnées avancées].
+Vous pouvez restreindre la diffusion des ressources dans [!DNL Experience Manager] en fonction des identités d’utilisateur et de groupe IMS .
 
-   ![Métadonnées de rôles](/help/assets/assets/roles_metadata.jpg)
-Si le champ n’est pas disponible, procédez comme suit pour ajouter le champ :
+>[!NOTE]
+>
+> Cette fonctionnalité n’est actuellement pas en libre-service. Pour restreindre la remise des ressources pour les [utilisateurs](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) et [groupes](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, contactez votre équipe d’assistance entreprise pour obtenir des instructions sur la manière de récupérer les informations requises pour limiter l’accès au portail [Adobe Admin Console](https://adminconsole.adobe.com/) et de configurer l’accès dans le service de création AEM as a Cloud Service.
 
-   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-   1. Sélectionnez le schéma de métadonnées et cliquez sur **[!UICONTROL Modifier _(e)_]**.
-   1. Ajoutez un champ **[!UICONTROL Texte à plusieurs valeurs]** de la section **[!UICONTROL Créer le formulaire]** dans la partie droite de la section Métadonnées dans le formulaire.
-   1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
-      1. Remplacez le **[!UICONTROL libellé du champ]** par _rôles_.
-      1. Mettez à jour la **[!UICONTROL map to property]** vers _./jcr:content/metadata/dam:rôles_.
-
-1. Procurez-vous les groupes IMS à ajouter dans les métadonnées Rôles de la ressource. Pour récupérer les groupes IMS, procédez comme suit :
-   1. Se connecter à `https://adminconsole.adobe.com/.`
-   1. Accédez à votre organisation respective et accédez à **[!UICONTROL Groupes d’utilisateurs]**.
-   1. Sélectionnez le **[!UICONTROL groupe d&#39;utilisateurs]** à ajouter et extrayez les **[!UICONTROL orgID]** et **[!UICONTROL userGroupID]** depuis l&#39;URL ou utilisez votre ID d&#39;organisation tel que `{orgID}@AdobeOrg:{usergroupID}`.
-
-1. Ajoutez l’ID de groupe au champ **[!UICONTROL Rôles]** des propriétés Asset. <br>
-Les ID de groupe définis dans le champ **[!UICONTROL Rôles]** sont les seuls utilisateurs qui peuvent accéder à la ressource. Outre l&#39;identifiant de groupe IMS, vous pouvez également ajouter l&#39;identifiant utilisateur IMS et l&#39;identifiant de profil IMS dans le champ **[!UICONTROL Rôles]** . Par exemple, `{orgId}@AdobeOrg:{profileId}`.
-
-   >[!NOTE]
-   >
-   >Pour la nouvelle vue Assets, vous ne pouvez autoriser l’accès qu’aux niveaux de dossier, et exclusivement aux groupes plutôt qu’aux utilisateurs individuels. En savoir plus sur la [gestion des autorisations dans Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Limitation de la diffusion des ressources à l’aide de la date et de l’heure d’activation et de désactivation {#restrict-delivery-assets-date-time}
+### Limitation de la diffusion des ressources à l’aide de la date et de l’heure d’activation et de désactivation {#restrict-delivery-assets-date-time}
 
 Les auteurs DAM peuvent également restreindre la diffusion des ressources en définissant une heure d’activation ou de désactivation pour l’activation disponible dans les propriétés de la ressource.
 
@@ -95,28 +71,36 @@ De même, pour la vue Assets, si votre ressource n’est pas basée sur le sché
 
 
 
-### Diffusion de ressources restreintes {#delivery-restricted-assets}
+## Diffusion de ressources restreintes {#delivery-restricted-assets}
 
-La diffusion des ressources restreintes repose sur une autorisation réussie d’accès aux ressources. L’autorisation est basée sur un jeton IMS si la requête est envoyée à partir d’une instance d’auteur AEM ou d’un sélecteur de ressources ou sur un cookie spécial si des fournisseurs d’identité personnalisés sont configurés sur votre instance Publish ou Preview.
+La diffusion des ressources restreintes repose sur une autorisation réussie d’accès aux ressources. L’autorisation est soit par l’intermédiaire de [jetons de porteur IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (application pour les demandes initiées à partir de [AEM Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), soit par un cookie sécurisé (si des fournisseurs d’identité personnalisés sont configurés sur vos services Publish/Preview d’AEM et que vous avez configuré la création et l’inclusion de cookies sur les pages).
 
-#### Diffusion pour les demandes d’AEM auteur ou de sélecteur de ressources {#delivery-aem-author-asset-selector}
+### Diffusion pour les demandes d’AEM auteur ou de sélecteur de ressources {#delivery-aem-author-asset-selector}
 
-Pour activer la diffusion de ressources restreintes au cas où la requête serait envoyée à partir de l’instance d’auteur AEM ou du sélecteur de ressources, un jeton IMS valide est essentiel. Procédez comme suit :
+Pour activer la diffusion de ressources restreintes au cas où la requête serait envoyée à partir du service de création AEM ou du sélecteur de ressources AEM, un jeton porteur IMS valide est essentiel.\
+Sur les services de création AEM Cloud Service ainsi que sur le sélecteur de ressources, le jeton de porteur IMS est automatiquement généré et utilisé pour les demandes après une connexion réussie.
 
-1. [Générer un jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Connectez-vous à la console de développement de votre environnement AEM as a Cloud Service.
+>[!NOTE]
+>
+>Pour plus d’informations sur l’activation de l’authentification IMS sur les intégrations basées sur AEM Sélecteur de ressources, contactez le support aux entreprises.
 
-   * Accédez à **[!UICONTROL Environnement]** > **[!UICONTROL Intégrations]** > **[!UICONTROL Jeton local]** > **[!UICONTROL Obtenir un jeton de développement local]** > **[!UICONTROL Copier la valeur accessToken]**. En savoir plus sur [comment accéder au jeton et aux aspects connexes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. Pour les expériences autres que celles basées sur un sélecteur de ressources, AEM as a Cloud Service et Dynamic Media avec des fonctionnalités OpenAPI prennent actuellement en charge les intégrations d’api côté serveur et peuvent générer des jetons de porteur IMS.
+   * Suivez les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations API service à serveur qui peuvent récupérer les jetons de porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Pour une durée limitée, les jetons de porteur IMS de courte durée pour l’utilisateur authentifié sur [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) peuvent être générés en suivant les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow) :
 
-1. Intégrez le jeton d’accès obtenu à l’en-tête **[!UICONTROL Authorization]**, en veillant à ce que sa valeur soit précédée du préfixe **[!UICONTROL Bearer]**.
+1. Lors de la création de requêtes d’API [Search](search-assets-api.md) et [Delivery](deliver-assets-apis.md), ajoutez le jeton de porteur IMS obtenu à l’en-tête **[!UICONTROL Authorization]** de la requête HTTP (assurez-vous que sa valeur est précédée du préfixe **[!UICONTROL Bearer]**).
 
-1. Validez la fonctionnalité du jeton d’accès en initiant une requête. Elle doit générer une erreur 404 dans les cas où il n’existe pas de jeton d’accès IMS, ou le jeton d’accès fourni n’a pas les mêmes entités ou groupes que ceux ajoutés dans les métadonnées de la ressource.
+1. Pour valider la restriction d’accès, lancez une requête d’API de diffusion avec et sans l’en-tête **[!UICONTROL Authorization]** .
+   * La réponse produira un code d’état d’erreur `404` dans les cas où il n’existe aucun jeton porteur IMS, ou le jeton porteur IMS fourni n’appartient pas à l’utilisateur qui s’est vu accorder l’accès à la ressource (directement ou par l’intermédiaire de l’appartenance à un groupe).
+   * La réponse génère un code d’état de réussite `200` avec le contenu binaire de la ressource si le jeton porteur IMS est l’un des utilisateurs ou groupes auxquels l’accès à la ressource a été accordé.
 
-#### Diffusion pour les fournisseurs d’identité personnalisés sur une instance Publish {#delivery-custom-identity-provider}
+### Diffusion pour les fournisseurs d’identité personnalisés sur le service Publish {#delivery-custom-identity-provider}
 
-Dans le cas d’un fournisseur d’identité personnalisé configuré sur votre instance Publish ou Preview, vous pouvez mentionner le groupe qui doit avoir accès aux ressources sécurisées dans l’attribut `groupMembership` pendant le processus de configuration. Lorsque vous vous connectez au fournisseur d’identité personnalisé via l’ [intégration SAML](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), l’attribut `groupMembership` est lu et utilisé pour construire un cookie, qui est envoyé dans toutes les demandes d’authentification, similaire à un jeton IMS en cas de demande de l’auteur AEM ou du sélecteur de ressources.
+AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, et la diffusion limitée des ressources peut être configurée sur des sites web fournis par les services Publish ou Preview d’AEM.
+Si les services Publish et Aperçu d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), le groupe devant avoir accès aux ressources sécurisées dans peut être inclus dans l’attribut `groupMembership` pendant le processus de configuration.\
+Lorsqu’un utilisateur de site web se connecte à un fournisseur d’identité personnalisé et accède au site web hébergé sur le service Publish/Preview, l’attribut `groupMembership` est lu et un cookie sécurisé est créé et fourni sur le site web après une authentification réussie. Ce cookie sécurisé est inclus dans toute requête ultérieure pour diffuser le contenu du site web à l’agent-utilisateur.
 
-Lorsqu’une ressource sécurisée est disponible sur une page et qu’une demande est envoyée à l’URL de diffusion pour effectuer le rendu de la ressource, AEM vérifie les rôles présents dans le cookie ou le jeton IMS et la compare à l’élément `dam:roles property` appliqué lors de la création de la ressource. S’il existe une correspondance, la ressource s’affiche.
+Lorsqu’une ressource sécurisée est demandée sur une page, AEM niveaux Publish et Aperçu extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. S’il existe une correspondance, la ressource s’affiche.
 
 >[!NOTE]
 >
