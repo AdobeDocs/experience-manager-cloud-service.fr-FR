@@ -1,11 +1,11 @@
 ---
-title: Vérification du statut de l’enregistrement DNS
+title: Vérifier le statut des enregistrements DNS
 description: Découvrez comment déterminer si vos paramètres DNS sont correctement résolus à l’aide de Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 25%
@@ -33,7 +33,7 @@ Vous devez avoir déjà configuré les paramètres DNS pour votre nom de domaine
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
-1. Cliquez sur **Paramètres de domaine** dans le panneau de navigation de gauche.
+1. Cliquez sur **Paramètres de domaine** dans le menu de gauche.
 
 1. Cliquez sur le bouton **Statut** pour le nom de domaine.
 

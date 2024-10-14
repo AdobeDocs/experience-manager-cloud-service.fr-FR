@@ -1,14 +1,14 @@
 ---
-title: Création de programmes de production
+title: Créer des programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6a3d2d484bde20586b329010cdfe156570e736f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 12%
+source-wordcount: '1027'
+ht-degree: 13%
 
 ---
 
@@ -119,7 +119,7 @@ Au-delà des droits requis, 99,99 % de SLA ont des exigences supplémentaires à
 
 ## Accéder à votre programme {#accessing}
 
-1. Lorsque la carte du programme s’affiche sur la landing page, cliquez sur le bouton représentant des points de suspension pour afficher les options de menu disponibles.
+1. Lorsque la carte de votre programme s’affiche sur la landing page, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg pour afficher les options de menu disponibles.
 
    ![Aperçu du programme](assets/program-overview.png)
 

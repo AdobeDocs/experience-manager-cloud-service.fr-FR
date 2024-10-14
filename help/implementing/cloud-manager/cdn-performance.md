@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ Le tableau de bord présente un score global des performances du réseau de diff
 
 ![Tableau de bord des performances CDN](assets/cdn-performance-dashboard.png)
 
-Pour plus d’informations sur les performances de votre réseau de diffusion de contenu et pour obtenir des suggestions pour l’améliorer, appuyez ou cliquez sur **Afficher la tendance**.
+Pour plus d’informations sur les performances de votre réseau de diffusion de contenu et pour obtenir des suggestions pour l’améliorer, cliquez sur **Afficher la tendance**.
 
 ![Tendance de performances](assets/cdn-performance-trend.png)
 
-Appuyez ou cliquez sur **Afficher** sous le graphique pour modifier la période du graphique.
+Cliquez sur **Afficher** sous le graphique pour modifier la période du graphique.
 
 Pour obtenir des suggestions sur la façon d’améliorer les performances de votre réseau de diffusion de contenu, sélectionnez l’onglet **Recommendations** .
 
 ![Recommandations CDN](assets/cdn-performance-recommendations.png)
 
-Appuyez ou cliquez sur le chevron en regard d’une recommandation dans la liste pour afficher les détails sur les étapes à suivre pour améliorer et la cause du problème.
+Cliquez sur le chevron en regard d’une recommandation dans la liste pour afficher des informations détaillées sur les étapes à suivre pour améliorer et sur la cause du problème.
 
 ## Définition des accès au cache {#cache-hit}
 

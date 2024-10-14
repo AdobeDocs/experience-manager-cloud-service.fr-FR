@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 65%
+source-wordcount: '2357'
+ht-degree: 62%
 
 ---
 
@@ -109,7 +109,7 @@ Si vous n’avez initialement spécifié aucune zone géographique supplémentai
 
 Vous pouvez également supprimer d’autres zones géographiques de publication. Cependant, vous ne pouvez effectuer que l’action d’ajouter ou l’action de supprimer des zones géographiques dans une seule transaction. Si vous devez ajouter une zone géographique et en supprimer une, ajoutez-la d’abord, enregistrez votre modification, puis supprimez-la (ou inversement).
 
-1. Dans la console Aperçu du programme de votre programme, cliquez sur le bouton représentant des points de suspension de votre environnement de production, puis sélectionnez **Modifier** dans le menu.
+1. Dans la console Aperçu du programme de votre programme, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg pour votre environnement de production et sélectionnez **Modifier** dans le menu.
 
    ![Modifier l’environnement](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Si vous souhaitez configurer la variable [réseau avancé](/help/security/config
 
 Sur la page **Aperçu**, vous pouvez accéder aux détails d’un environnement de deux manières différentes.
 
-1. Sur la page **Overview** , cliquez sur l’onglet **Environments** du panneau de navigation latéral.
+1. Sur la page **Overview** , cliquez sur l’onglet **Environments** dans le menu de gauche.
 
    ![Onglet Environnements](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Sur la page **Aperçu**, vous pouvez accéder aux détails d’un environnement 
 
    ![Onglet Environnements](assets/environments-tab2.png)
 
-1. Appuyez ou cliquez sur un environnement de la liste pour en afficher les détails.
+1. Cliquez sur un environnement de la liste pour en afficher les détails.
 
    ![Détails de l’environnement](assets/environ-preview1.png)
 
-Vous pouvez également cliquer sur le bouton représentant des points de suspension de l’environnement souhaité, puis sélectionner **Afficher les détails**.
+Vous pouvez également cliquer sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg de l’environnement souhaité, puis sélectionner **Afficher les détails**.
 
 ![Affichage des détails de l’environnement](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Vous pouvez également accéder aux mêmes informations à partir de l’onglet 
 
 1. Sur la page **Overview** , sélectionnez l’onglet **Environments** .
 
-1. Dans l’onglet **Environnements**, sélectionnez l’environnement que vous souhaitez interroger dans le panneau de navigation de gauche.
+1. Dans l’onglet **Environnements**, sélectionnez l’environnement que vous souhaitez interroger dans le menu de gauche.
 
 1. Une fois qu’un environnement est sélectionné :
 
@@ -235,11 +235,11 @@ Le processus de mise à jour est donc un processus en deux étapes :
 >[!NOTE]
 > Depuis 2024, les instances de développement et certains programmes Sandbox sont déjà automatiquement mis à jour. Il n’est donc plus nécessaire de gérer manuellement les mises à jour pour ces programmes. En raison de cette transition, l’option Mettre à jour manuellement l’environnement pour les instances de développement peut ne pas être disponible pour _une partie_ de vos programmes.
 
-L’option **Mettre à jour** est disponible à partir de la carte **Environnements** pour certains environnements et environnements de développement dans les programmes Sandbox en cliquant sur le bouton représentant des points de suspension de l’environnement.
+L’option **Mettre à jour** est disponible à partir de la carte **Environnements** pour certains environnements et environnements de développement dans les programmes Sandbox en cliquant sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg de l’environnement.
 
 ![Option de mise à jour de la carte Environnements](assets/environ-update2.png)
 
-Cette option est également disponible en cliquant sur l’onglet **Environnements** du programme, puis en sélectionnant le bouton représentant des points de suspension de l’environnement.
+Cette option est également disponible en cliquant sur l’onglet **Environnements** du programme, puis sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg de l’environnement.
 
 ![Option de mise à jour depuis l’onglet Environnements](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Le comportement de l’option **Mise à jour** varie en fonction de la configura
 
 Un utilisateur disposant du rôle **Responsable de déploiement** ou **Propriétaire de l’entreprise** peut supprimer un environnement de développement.
 
-Dans l’écran **Vue d’ensemble** du programme dans la carte **Environnements**, cliquez sur le bouton représentant des points de suspension de l’environnement de développement que vous souhaitez supprimer.
+Dans l’écran **Overview** du programme sur la carte **Environments**, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg de l’environnement de développement que vous souhaitez supprimer.
 
 ![Option de suppression](assets/environ-delete.png)
 
-L’option de suppression est également disponible dans l’onglet **Environnements** de la fenêtre **Aperçu** du programme. Cliquez sur le bouton représentant des points de suspension de l’environnement et sélectionnez **Supprimer**.
+L’option de suppression est également disponible dans l’onglet **Environnements** de la fenêtre **Aperçu** du programme. Cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg de l’environnement et sélectionnez **Supprimer**.
 
 ![Option de suppression de l’onglet Environnements](assets/environ-delete2.png)
 

@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 15%
 
 ---
@@ -84,6 +84,7 @@ Si un pipeline s’exécute, la gestion des variables est bloquée.
 
 1. Cliquez sur **Enregistrer**.
 
+
 ## Supprimer une variable de pipeline {#delete-ui}
 
 1. Lorsque vous [gérez vos pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), cliquez sur ![Ellipsis - Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) du pipeline pour lequel vous souhaitez supprimer des variables de pipeline.
@@ -92,10 +93,7 @@ Si un pipeline s’exécute, la gestion des variables est bloquée.
 
    ![Afficher/modifier des variables de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Dans la boîte de dialogue **Configuration des variables**, cliquez sur ![Ellipsis - Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la variable que vous souhaitez supprimer.
-
-1. Dans le menu déroulant, cliquez sur **Supprimer**.
-
+1. Dans la boîte de dialogue **Configuration des variables**, cliquez sur ![Ellipsis - Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la variable à supprimer, puis cliquez sur **Supprimer**.
 
 ## Définition de variables de pipeline à l’aide de l’interface de ligne de commande de Cloud Manager {#cli}
 

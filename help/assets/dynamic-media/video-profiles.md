@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
-ht-degree: 100%
+source-wordcount: '3742'
+ht-degree: 99%
 
 ---
 
@@ -151,7 +151,7 @@ Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-me
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Pour créer un profil vidéo en vue de la diffusion en continu à débit adaptatif**,
+**Pour créer un profil vidéo en vue de la diffusion en continu à débit adaptatif :**
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez **[!UICONTROL Créer]**.
@@ -192,7 +192,7 @@ Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. V
 
 Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la diffusion adaptative en continu]**, tous les paramètres prédéfinis de codage que vous ajoutez au profil sont traités comme des rendus vidéo individuels pour la diffusion en flux continu à débit unique ou la diffusion vidéo progressive. En outre, il n’existe aucune validation permettant de s’assurer que tous les rendus vidéo ont le même format.
 
-Les codecs de format vidéo pris en charge sont H.264 (.mp4) et WebM.
+Le codec de format vidéo pris en charge est H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Consultez également la section [Créer un profil de codage vidéo pour la diffusion en continu à débit adaptatif](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 29%
+source-wordcount: '427'
+ht-degree: 24%
 
 ---
 
@@ -70,7 +70,7 @@ La suppression d’un programme d’environnement de test supprime tous les envi
 
    ![Option Supprimer le programme](assets/delete-sandbox1.png)
 
-Vous pouvez également cliquer sur le bouton représentant des points de suspension sur la vignette de votre programme dans la page de présentation de Cloud Manager et sélectionner **Supprimer le programme**.
+Vous pouvez également cliquer sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg sur la carte de votre programme dans la page d’aperçu de Cloud Manager et sélectionner **Supprimer le programme**.
 
 ![Supprimer Sandbox d’une vignette de programme](assets/delete-sandbox2.png)
 

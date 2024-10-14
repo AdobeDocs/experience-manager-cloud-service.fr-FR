@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -23,7 +23,7 @@ Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Resp
 **Pour afficher et mettre à jour des Listes autorisées IP :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Sur la page **Overview**, dans le panneau latéral, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
+1. Sur la page **Overview** , dans le menu de gauche, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
 1. Identifiez la ligne des Listes autorisées IP que vous souhaitez afficher ou mettre à jour.
 1. Cliquez sur ![Icône supplémentaire](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à droite de la ligne.
 1. Dans le menu déroulant, cliquez sur **Afficher et mettre à jour**.
@@ -40,7 +40,7 @@ La boîte de dialogue **Afficher et mettre à jour la Liste autorisée IP** affi
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Sur la page **Overview**, dans le panneau latéral, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
+1. Sur la page **Overview** , dans le menu de gauche, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
 
 1. Dans la colonne **Status** de la table des Listes autorisées IP, placez le pointeur de la souris sur une Liste autorisée IP verte (en cours d’utilisation) pour voir un ou plusieurs services qui lui sont appliqués.
 
@@ -63,10 +63,9 @@ Un utilisateur possédant le rôle **Propriétaire de l’entreprise** ou **Resp
 **Pour supprimer une Liste autorisée IP :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Sur la page **Overview**, dans le panneau latéral, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
-1. Identifiez la ligne de la Liste autorisée IP que vous souhaitez supprimer, puis cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à l’extrémité droite de la ligne.
-1. Dans le menu déroulant, cliquez sur **Supprimer**.
-1. Dans la boîte de dialogue Supprimer la Liste autorisée IP, cliquez sur **Supprimer**.
+1. Sur la page **Overview** , dans le menu de gauche, sous **Services**, cliquez sur l’icône ![Task list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listes autorisées IP**.
+1. Identifiez la ligne de la Liste autorisée IP que vous souhaitez supprimer, puis cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à droite de la ligne, puis sur **Supprimer**.
+1. Dans la boîte de dialogue **Supprimer la Liste autorisée IP**, cliquez sur **Supprimer**.
 
 ## Configurations CDN préexistantes {#pre-existing-cdn}
 

@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1398'
 ht-degree: 71%
 
 ---
@@ -156,12 +156,12 @@ Les étapes de création de votre pipeline de déploiement ciblé hors productio
 
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Si vous avez activé le contrôle de l’expérience, appuyez ou cliquez sur **Continuer** pour accéder à l’onglet **Audit de l’expérience** où vous pouvez définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
+1. Si vous avez activé le contrôle de l’expérience, cliquez sur **Continuer** pour accéder à l’onglet **Audit de l’expérience** où vous pouvez définir les chemins qui doivent toujours être inclus dans le contrôle de l’expérience.
 
    * Si vous avez activé le **contrôle de l’expérience**, consultez le document [ contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md) pour plus d’informations sur la configuration.
    * Si ce n’est pas le cas, ignorez cette étape.
 
-1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer le pipeline.
+1. Cliquez sur **Enregistrer** pour enregistrer le pipeline.
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 

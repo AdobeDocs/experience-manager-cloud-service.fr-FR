@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 10%
@@ -36,7 +36,7 @@ Le graphique linéaire d’une année sélectionnée inclut des points de donné
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Sur la page **Aperçu du programme**, dans le panneau de navigation de gauche, cliquez sur **Rapports**.
+1. Sur la page **Aperçu du programme**, dans le menu de gauche, cliquez sur **Rapports**.
 
 1. Cliquez sur **Rapports SLA**.
 

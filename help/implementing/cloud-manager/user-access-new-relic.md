@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 64%
+source-wordcount: '1825'
+ht-degree: 59%
 
 ---
 
@@ -47,13 +47,13 @@ Pour un nouveau programme, un sous-compte New Relic One est créé pour vous. Vo
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, appuyez ou cliquez sur le programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
 
-1. Au bas de la carte **Environnements** de la page d’aperçu du programme, cliquez sur le bouton représentant des points de suspension et sélectionnez **Activer New Relic**.
+1. Au bas de la carte **Environnements** sur la page de présentation du programme, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg et sélectionnez **Activer New Relic**.
 
    ![Gérer les utilisateurs](assets/newrelic-activate-sub-account.png)
 
-   * Vous pouvez également accéder à l’option **Gérer les utilisateurs** via le bouton représentant des points de suspension situé en haut de l’écran **Environnements** de votre programme.
+   * Vous pouvez également accéder à l’option **Gérer les utilisateurs** en cliquant sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dans la partie supérieure de l’écran **Environnements** de votre programme.
 
 1. [ Exécutez un pipeline ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) pour le même environnement jusqu’à la fin pour terminer l’activation du sous-compte.
 
@@ -71,11 +71,11 @@ Suivez ces étapes pour définir les utilisateurs de votre sous-compte New Reli
 
 1. Cliquez sur le programme pour lequel vous souhaitez gérer vos utilisateurs New Relic One.
 
-1. Au bas de la vignette **Environnements** sur la page de présentation du programme, cliquez sur le bouton représentant des points de suspension et sélectionnez **Gérer les utilisateurs**.
+1. Au bas de la carte **Environnements** sur la page de présentation du programme, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg et sélectionnez **Gérer les utilisateurs**.
 
    ![Gérer les utilisateurs](assets/newrelic-manage-users.png)
 
-   * Vous pouvez également accéder à l’option **Gérer les utilisateurs** via le bouton représentant des points de suspension situé en haut de l’écran **Environnements** de votre programme.
+   * Vous pouvez également accéder à l’option **Gérer les utilisateurs** en cliquant sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dans la partie supérieure de l’écran **Environnements** de votre programme.
 
 1. Dans la boîte de dialogue **Gérer les utilisateurs New Relic**, saisissez le prénom et le nom de l’utilisateur que vous souhaitez ajouter, puis cliquez sur le bouton **Ajouter** . Répétez cette étape pour tous les utilisateurs à ajouter.
 
@@ -121,11 +121,11 @@ Une fois que vous avez [activé votre compte New Relic](#activate-account), vous
 
 1. Cliquez sur le programme pour lequel vous souhaitez accéder à New Relic One.
 
-1. Au bas de la vignette **Environnements** sur la page de présentation du programme, cliquez sur le bouton représentant des points de suspension, puis sélectionnez **Ouvrir New Relic**.
+1. Au bas de la carte **Environments** sur la page de présentation du programme, cliquez sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg et sélectionnez **Open New Relic**.
 
    ![Gérer les utilisateurs](assets/newrelic-access.png)
 
-   * Vous pouvez également accéder à New Relic à l’aide du bouton représentant des points de suspension situé en haut de l’écran **Environnements** de votre programme.
+   * Vous pouvez également accéder à New Relic en cliquant sur https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg dans la partie supérieure de l’écran **Environnements** de votre programme.
 
 1. Dans le nouvel onglet du navigateur qui s’ouvre, connectez-vous à New Relic One.
 

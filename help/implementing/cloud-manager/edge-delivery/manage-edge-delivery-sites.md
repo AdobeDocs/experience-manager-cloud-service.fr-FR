@@ -3,10 +3,10 @@ title: Gérer les sites Edge Delivery dans Cloud Manager
 description: Découvrez comment ajouter une configuration CDN à un site Edge Delivery ou supprimer un site Edge Delivery.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -34,7 +34,7 @@ Dans Adobe Cloud Manager, vous pouvez renommer un site Edge Delivery pour plusie
 
    * Sur la page **Aperçu du programme**, cliquez sur l’onglet **Edge Delivery**. Dans le tableau du site Edge Delivery, cliquez sur les points de suspension en fin de ligne dont vous souhaitez renommer le site.
 Cliquez sur **Renommer**.
-   * Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de navigation de gauche. Sous l’en-tête **Services**, cliquez sur l’icône ![Pages Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+   * Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur l’icône ![Pages Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Dans la table du site Edge Delivery, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez renommer le site. Cliquez sur **Renommer**.
 
 1. Dans la boîte de dialogue **Modifier le site Edge Delivery**, dans le champ de texte **Nom du site**, saisissez le nouveau nom du site.
@@ -56,12 +56,12 @@ Cliquez sur ![Supprimer le site Edge Delivery](https://spectrum.adobe.com/static
 
      ![Ajouter un site Edge Delivery depuis l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Dans le coin supérieur gauche de la page, cliquez sur ![Afficher ou masquer la navigation latérale](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de navigation latéral. Sous l’en-tête **Services**, cliquez sur ![Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+   * Dans le coin supérieur gauche de la page, cliquez sur ![Afficher ou masquer la navigation latérale](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur ![Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Dans la table du site Edge Delivery, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site. Cliquez sur ![Supprimer le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Supprimer**, puis cliquez de nouveau sur **Supprimer** pour confirmer la suppression du site.
 
      ![Ajouter un site Edge Delivery à partir du bouton Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## Enregistrer un ticket d’assistance {#eds-support-ticket}
+## Soumettre un ticket d’assistance {#eds-support-ticket}
 
 {{support-ticket}}
 
