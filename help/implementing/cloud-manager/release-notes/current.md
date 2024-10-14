@@ -4,7 +4,7 @@ description: Consultez les notes de mise à jour de Cloud Manager 2024.10.0 da
 feature: Release Information
 role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
 ht-degree: 100%
 

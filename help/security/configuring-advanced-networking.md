@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Le tableau ci-dessous décrit le routage du trafic :
 </thead>
 <tbody>
   <tr>
-    <td><b>Protocole http ou https</b></td>
+    <td><b>Protocole HTTP ou HTTPS</b></td>
     <td>Trafic http/s standard</td>
     <td>80 ou 443</td>
     <td>Autorisée</td>
@@ -298,8 +298,8 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </thead>
 <tbody>
   <tr>
-    <td><b>Protocole http ou https</b></td>
-    <td>Trafic vers Azure (*.windows.net) ou les services Adobe</td>
+    <td><b>Protocole HTTP ou HTTPS</b></td>
+    <td>Trafic vers Azure (*.windows.net) ou vers les services Adobe</td>
     <td>N’importe lequel</td>
     <td>Via les adresses IP partagées du cluster (et non l’adresse IP dédiée)</td>
     <td>adobe.io<br>api.windows.net</td>
@@ -486,7 +486,7 @@ Le tableau ci-dessous décrit le routage du trafic.
 </thead>
 <tbody>
   <tr>
-    <td><b>Protocole http ou https</b></td>
+    <td><b>Protocole HTTP ou HTTPS</b></td>
     <td>Trafic vers Azure ou vers les services Adobe</td>
     <td>N’importe lequel</td>
     <td>Via les adresses IP partagées du cluster (et non l’adresse IP dédiée)</td>
