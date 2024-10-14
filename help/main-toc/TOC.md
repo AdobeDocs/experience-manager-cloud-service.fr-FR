@@ -1090,9 +1090,9 @@ ht-degree: 99%
       + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Ajout d’un référentiel d’Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajouter un référentiel externe (Adopteur anticipé)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Ajouter un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Ajouter un référentiel externe (adoption précoce)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
