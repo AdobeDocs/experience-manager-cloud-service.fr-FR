@@ -3,16 +3,16 @@ title: Limitation de la diffusion des ressources avec Dynamic Media avec les fon
 description: Découvrez comment restreindre la diffusion des ressources avec les fonctionnalités OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 1%
+source-wordcount: '1117'
+ht-degree: 2%
 
 ---
 
 # Limitation de la diffusion des ressources avec Dynamic Media avec les fonctionnalités OpenAPI {#restrict-access-to-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 La gouvernance centrale des ressources dans Experience Manager permet à l’administrateur DAM ou aux responsables de marque de gérer l’accès aux ressources disponibles via Dynamic Media avec les fonctionnalités OpenAPI. Ils peuvent restreindre la diffusion des ressources approuvées (jusqu’à une ressource individuelle) à l’utilisateur ou aux groupes [ Adobe Identity Management System (IMS) sélectionnés en configurant certaines métadonnées sur les ressources dans leur service de création AEM as a Cloud Service.](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)
@@ -96,12 +96,4 @@ Sur les services de création AEM Cloud Service ainsi que sur le sélecteur de r
 
 ### Diffusion pour les fournisseurs d’identité personnalisés sur le service Publish {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, et la diffusion limitée des ressources peut être configurée sur des sites web fournis par les services Publish ou Preview d’AEM.
-Si les services Publish et Aperçu d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), le groupe devant avoir accès aux ressources sécurisées dans peut être inclus dans l’attribut `groupMembership` pendant le processus de configuration.\
-Lorsqu’un utilisateur de site web se connecte à un fournisseur d’identité personnalisé et accède au site web hébergé sur le service Publish/Preview, l’attribut `groupMembership` est lu et un cookie sécurisé est créé et fourni sur le site web après une authentification réussie. Ce cookie sécurisé est inclus dans toute requête ultérieure pour diffuser le contenu du site web à l’agent-utilisateur.
-
-Lorsqu’une ressource sécurisée est demandée sur une page, AEM niveaux Publish et Aperçu extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. S’il existe une correspondance, la ressource s’affiche.
-
->[!NOTE]
->
-> Dans le [ticket de support pour activer Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mentionnez la diffusion limitée dans le cas d’utilisation. L’ingénierie d’Adobe aidera à apporter les clarifications nécessaires et/ou à mettre en place un processus pour une diffusion limitée.
+Il est possible d’utiliser conjointement AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI, ce qui permet de configurer la diffusion limitée des ressources sur des sites web hébergés sur AEM service Publish ou Preview. Le flux de diffusion sécurisé utilise des cookies de navigateur pour établir l’accès de l’utilisateur et disposer d’un domaine personnalisé pour le niveau de diffusion qui est un sous-domaine du domaine de publication est un prérequis pour mettre en oeuvre ce cas d’utilisation. Si les services Publish et Aperçu d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), un nouveau cookie appelé `delivery-token` encapsulant l’appartenance à un groupe d’utilisateurs doit être défini sur l’authentification de l’utilisateur après l’entrée du domaine de publication. Le niveau de diffusion extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. Pour plus d’informations, enregistrez un [ticket d’assistance aux entreprises](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities).
