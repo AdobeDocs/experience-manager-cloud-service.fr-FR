@@ -1,25 +1,28 @@
 ---
 title: Imagerie dynamique
-description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sensei applique les caractéristiques de visualisation uniques de chaque utilisateur ou utilisatrice pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
+description: Découvrez comment l’imagerie dynamique avec Adobe Sensei AI applique automatiquement les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
+source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
 workflow-type: tm+mt
-source-wordcount: '3455'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Imagerie dynamique {#smart-imaging}
 
-## À propos de l’imagerie dynamique{#about-smart-imaging}
+Découvrez comment l’imagerie dynamique avec Adobe Sensei AI applique automatiquement les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 
-La technologie d’imagerie dynamique applique les fonctionnalités d’intelligence artificielle d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
-De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (Large Contentful Paint) grâce à l’amélioration de l’imagerie dynamique, qui s’accompagne désormais de la prise en charge d’AVIF et de WebP.
+## À propos de l’imagerie dynamique {#about-smart-imaging}
+
+La technologie d’imagerie dynamique applique les fonctionnalités d’Adobe Sensei AI et fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+
+De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (Large Contentful Paint) avec une amélioration de l’imagerie dynamique, qui s’accompagne désormais de la prise en charge d’AVIF et de WebP.
 
 >[!IMPORTANT]
 >
@@ -29,13 +32,13 @@ De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (
 >
 >Testez et découvrez les avantages des modificateurs d’image Dynamic Media et de l’imagerie dynamique à l’aide de Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
-> Snapshot est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Testez des images de test ou des URL Dynamic Media afin d’observer visuellement la sortie de divers modificateurs d’images Dynamic Media et d’optimiser l’imagerie dynamique pour les éléments suivants :
+> Snapshot est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Testez des images de test ou des URL Dynamic Media pour observer visuellement la sortie de divers modificateurs d’image Dynamic Media et optimisez l’imagerie dynamique pour les éléments suivants :
 >
 >* Taille de fichier (avec diffusion WebP et AVIF)
 >* Bande passante réseau
 >* DPR (rapport de pixels de l’appareil)
 >
->Pour découvrir à quel point il est facile d’utiliser Snapshot, regardez la [vidéo de formation Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=fr) (3 minutes et 17 secondes).
+>Pour découvrir à quel point il est facile d’utiliser Snapshot, regardez la [vidéo de formation Snapshot](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutes et 17 secondes).
 
 L’imagerie dynamique tire parti de sa parfaite intégration dans le meilleur service premium CDN (réseau de diffusion de contenu) de sa catégorie proposé par Adobe afin d’offrir un gain de performance accru. Ce service trouve l’itinéraire Internet optimal entre les serveurs, les réseaux et les points de connexion. Au lieu d’utiliser l’itinéraire par défaut sur Internet, le service établit celui possédant la latence et le taux de perte de paquets les plus faibles.
 
@@ -63,11 +66,15 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Avantages de l’imagerie dynamique**
 
-L’imagerie dynamique offre de meilleures performances de diffusion d’images en optimisant automatiquement la taille du fichier image en fonction du navigateur client utilisé, de l’affichage de l’appareil et des conditions réseau. Les images sont les éléments qui demandent le plus de temps lors du chargement d’une page. Aussi, toute amélioration des performances peut-elle avoir une incidence considérable sur les indicateurs IPC, tels que des taux de conversion plus élevés, une augmentation du temps passé sur le site et un taux de rebond moindre.
+L’imagerie dynamique améliore la diffusion des images en optimisant automatiquement la taille du fichier en fonction du navigateur de l’utilisateur, de l’affichage de l’appareil et des conditions réseau. Cette approche garantit des temps de chargement plus rapides et une meilleure expérience d’affichage dans différents environnements. Comme les images constituent la majeure partie du temps de chargement d’une page, toute amélioration des performances peut avoir un impact profond sur les indicateurs de performance clés de l’entreprise, tels que :
+
+* Taux de conversion plus élevés.
+* Durée de consultation d’un site.
+* Taux de rebond du site plus bas.
 
 Les principaux avantages de la dernière technologie d’imagerie dynamique sont les suivants :
 
-* Le format AVIF de nouvelle génération est désormais pris en charge.
+* Prend en charge le format AVIF de nouvelle génération.
 * La conversion avec perte des PNG en WebP et AVIF est désormais possible. Le format PNG étant sans perte, les WebP et AVIF étaient auparavant livrés sans perte.
 * [Conversion au format du navigateur](#bfc)
 * [Rapport pixel de l’appareil](#dpr)
@@ -75,17 +82,17 @@ Les principaux avantages de la dernière technologie d’imagerie dynamique sont
 
 ### A propos de la conversion au format du navigateur {#bfc}
 
-L’activation de la conversion au format du navigateur en ajoutant `bfc=on` dans l’URL de l’image convertit automatiquement les JPEG et PNG en AVIF avec perte, WebP avec perte, JPEGXR avec perte, JPEG2000 avec perte, en fonction des différents navigateurs. Pour les navigateurs qui ne prennent pas en charge ces formats, l’imagerie dynamique continue de délivrer le JPEG ou le fichier PNG. En plus du format, la qualité du nouveau format est recalculée par l’imagerie dynamique.
+L’activation de la conversion au format du navigateur en ajoutant `bfc=on` dans l’URL de l’image convertit automatiquement les JPEG et PNG en AVIF avec perte, WebP avec perte, JPEGXR avec perte, JPEG2000 avec perte, en fonction des différents navigateurs. Pour les navigateurs qui ne prennent pas en charge ces formats, l’imagerie dynamique continue de délivrer le JPEG ou le fichier PNG. L’imagerie dynamique recalcule la qualité du nouveau format avec le changement de format.
 
-L’imagerie dynamique peut également être désactivée en ajoutant `bfc=off` à l’URL de l’image.
+Vous pouvez désactiver l’imagerie dynamique en ajoutant `bfc=off` à l’URL de l’image.
 
-Consultez également la section [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=fr) dans l’API de diffusion et de rendu d’images Dynamic Media.
+Consultez également la section [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) dans l’API de diffusion et de rendu d’images Dynamic Media.
 
 ### À propos de l’optimisation du rapport pixel d’appareil {#dpr}
 
-Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
+Le ratio de pixels d’appareil (RPD), également appelé ratio de pixels CSS, représente la relation entre les pixels physiques et les pixels logiques d’un appareil. Avec l’augmentation des affichages en rétine, la résolution en pixels des appareils mobiles modernes a augmenté rapidement.
 
-L’activation de l’optimisation du rapport de pixels de l’appareil effectue le rendu de l’image à la résolution native de l’écran, ce qui la fait paraître nette.
+L’activation de l’optimisation du rapport de pixels de l’appareil rend l’image à la résolution native de l’écran, ce qui la rend nette.
 
 Actuellement, la densité en pixels de l’affichage provient des valeurs d’en-tête du CDN Akamai.
 
@@ -108,9 +115,9 @@ Consultez également la section [Lorsque vous utilisez des images](/help/assets/
 
 ### À propos de l’optimisation de la bande passante du réseau {#bandwidth}
 
-L’activation de la bande passante réseau ajuste automatiquement la qualité de l’image diffusée en fonction de la bande passante réseau réelle. Lorsque la bande passante réseau est insuffisante, l’optimisation du DPR est automatiquement désactivée, même si elle est déjà activée.
+L’activation de la bande passante du réseau ajuste automatiquement la qualité de l’image diffusée en fonction de la bande passante réelle du réseau. Lorsque la bande passante réseau est insuffisante, l’optimisation du DPR est automatiquement désactivée, même si elle est déjà activée.
 
-Si vous le souhaitez, votre entreprise peut se désabonner de l’optimisation de la bande passante du réseau au niveau de l’image individuelle en ajoutant `network=off` à l’URL de l’image.
+Votre entreprise peut désactiver l’optimisation de la bande passante du réseau pour des images individuelles en ajoutant `network=off` à l’URL de l’image.
 
 | Valeur autorisée dans l’URL d’une image | Description |
 |---|---|
@@ -124,15 +131,15 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
 * Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
-* Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
-* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Auparavant, les images d’origine et dérivées étaient mises en cache et un processus en 2 étapes était nécessaire pour invalider le cache. Dans la dernière version de l’imagerie dynamique, seuls les dérivés sont mis en cache, ce qui permet un processus d’invalidation du cache en une seule étape.
+* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, &quot;Timing Allow Origin&quot; et &quot;X-Robot&quot; comme suggéré dans [Ajoutez une valeur d’en-tête personnalisée aux réponses d’image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Fonctionnement de l’imagerie dynamique{#how-smart-imaging-works}
 
-Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
+Lorsqu’un consommateur demande une image, l’imagerie dynamique analyse les caractéristiques de l’utilisateur et la convertit au format approprié en fonction du navigateur. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
-* Conversion automatique au format AVIF si le navigateur prend en charge le format
-* Conversion automatique au format WebP si la conversion AVIF n’a pas été bénéfique ou si le navigateur ne prend pas en charge l’AVIF
+* Conversion automatique au format AVIF si votre navigateur prend en charge le format
+* Conversion automatique sur WebP si la conversion AVIF n’a pas été bénéfique ou si le navigateur ne prend pas en charge AVIF
 * Conversion automatique vers le JPEG2000 si Safari ne prend pas en charge le WebP
 * Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP
 
@@ -154,7 +161,7 @@ Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique
 * JPEG
 * PNG
 
-Pour le format de fichier image JPEG, la qualité du nouveau format est recalculée par l’imagerie dynamique.
+L’imagerie dynamique recalcule la qualité des formats de fichiers image JPEG lors de la conversion vers un nouveau format.
 
 Pour les formats de fichiers image qui prennent en charge la transparence, tels que le PNG, vous pouvez configurer l’imagerie dynamique pour qu’elle diffuse des fichiers AVIF et WebP avec perte. Pour la conversion en formats avec perte, l’imagerie dynamique utilise la qualité mentionnée dans l’URL de l’image, ou la qualité configurée dans le compte d’entreprise Dynamic Media.
 
@@ -164,7 +171,9 @@ Les commandes de diffusion d’images `fmt` et `qlt` ne sont pas prises en charg
 
 ## Questions fréquentes sur l’imagerie dynamique{#smart-imaging-faq}
 
-+++**L’imagerie dynamique entraîne-t-elle des frais de licence ?**
++++
+
+**L’imagerie dynamique entraîne-t-elle des frais de licence ?**
 
 Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
 
@@ -174,37 +183,49 @@ Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règ
 
 +++
 
-+++**Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ?**
++++
+
+**Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ?**
 
 Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modificateurs suivants :
 
 * `bfc=off` pour désactiver la conversion au format du navigateur. Consultez également la section [Conversion au format du navigateur](#bfc).
 * `dpr=off` pour désactiver le rapport pixel de l’appareil. Consultez également la section [Rapport pixel de l’appareil](#dpr).
 * `network=off` pour désactiver la bande passante réseau. Consultez également la section [Bande passante réseau](#network).
++++
 
 +++
 
-+++**Est-il possible d’« ajuster » l’imagerie dynamique ?**
+**Est-il possible d’« ajuster » l’imagerie dynamique ?**
 
 Oui. L’imagerie dynamique offre trois options que vous pouvez activer ou désactiver.
 
 * [Conversion au format du navigateur](#bfc)
 * [Rapport pixel de l’appareil](#dpr)
 * [Bande passante réseau](#network)
++++
 
 +++
 
-+++**L’imagerie dynamique fonctionne-t-elle avec mes paramètres d’image prédéfinis existants ?**
+**L’imagerie dynamique fonctionne-t-elle avec mes paramètres d’image prédéfinis existants ?**
 
-Oui. L’imagerie dynamique fonctionne avec vos paramètres prédéfinis d’image existants et conserve tous vos paramètres d’image. Ce qui change, c’est le format de l’image, ou le paramètre de qualité, ou les deux. Pour la conversion de format, l’imagerie dynamique conserve la qualité vidéo totale, telle qu’elle est définie par vos paramètres prédéfinis d’image, mais avec une plus petite taille de fichier.
+L’imagerie dynamique s’intègre de manière transparente à vos paramètres d’image prédéfinis existants, en respectant tous vos paramètres d’image.
 
-Supposons, par exemple, qu’un paramètre prédéfini d’image soit configuré comme suit : format JPEG, taille de 500 x 500, qualité=85 et accentuation=0,1,1,5. Lorsque l’imagerie dynamique détecte qu’un utilisateur se trouve dans un navigateur Chrome, l’image est convertie au format WebP, avec une taille de 500 x 500. De plus, l’accentuation = 0,1,1,5 est d’une qualité WebP qui correspond à une qualité de JPEG de 85 aussi proche que possible. L’empreinte de cette conversion WebP est comparée au JPEG, et la plus petite des deux est renvoyée.
+Les seuls réglages concernent le format de l’image, la qualité, ou les deux. Lors de la conversion de format, l’imagerie dynamique conserve la fidélité visuelle complète en fonction des paramètres prédéfinis, mais offre une taille de fichier plus réduite. Il vous suffit de l’activer en ajoutant `bfc=on`, `dpr=on,dprValue` ou `network=on`, ou les trois paramètres à vos URL ou paramètres prédéfinis existants.
 
+Par exemple, supposons qu’un paramètre d’image prédéfini spécifie un format de JPEG de 500 × 500 pixels, avec `quality=85` et `unsharp mask=0.1,1,5`. L’imagerie dynamique détecte si l’utilisateur se trouve dans un navigateur Chrome. Il convertit ensuite l’image en WebP avec les mêmes dimensions (500 × 500) et un masque flou correspondant aux paramètres du JPEG. Le système compare ensuite la taille des fichiers des versions WebP et JPEG et diffuse la plus petite à l’utilisateur.
 +++
 
-+++**Vais-je devoir modifier des URL ou des paramètres d’image prédéfinis, ou déployer un nouveau code sur mon site ?**
+<!-- OLD VERSION BELOW AS PER CQDOC-22085>
+Yes. Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-Non. L’imagerie dynamique fonctionne parfaitement avec vos paramètres d’image prédéfinis et URL d’image existants. En outre, l’imagerie dynamique n’exige pas que vous ajoutiez du code sur votre site web pour détecter le navigateur d’un utilisateur. Tout cela est géré automatiquement.
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned. -->
+
+<!-- QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
+
++++**Do I have to change any URLs, image presets, or deploy new code on my site?**
+
+No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -212,117 +233,118 @@ In case you must configure a new custom domain to use Smart Imaging, the URLs mu
 
 To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
 
-<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
+
+-->
 
 +++
 
-+++**L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?**
+**L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?**
 
 Oui, pour les deux questions. L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
++++
 
 +++
 
-+++**Puis-je utiliser l’imagerie dynamique ?**
+**Puis-je utiliser l’imagerie dynamique ?**
 
-Ça dépend. Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou Dynamic Media sur Experience Manager de votre entreprise doit répondre aux conditions suivantes :
+L’imagerie dynamique est prête à être utilisée immédiatement pour tous les clients. Pour commencer à profiter de ses avantages, ajoutez simplement `bfc=on`, `dpr=on,dprValue` ou `network=on`, ou les trois paramètres à vos URL ou paramètres prédéfinis existants.
 
-* Utiliser le réseau de diffusion de contenu (CDN) fourni par Adobe dans le cadre de votre licence.
-* Utiliser un domaine dédié (par exemple, `images.company.com` ou `mycompany.scene7.com`), plutôt qu’un domaine générique (par exemple, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
-
-Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
-
-Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander à passer à votre propre domaine personnalisé. Faites cette demande de transition lorsque vous soumettez un dossier de support.
-
-Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire avec une licence Dynamic Media.
-
+Pour activer l’imagerie dynamique, le compte Dynamic Media Classic ou Dynamic Media de votre entreprise sur Experience Manager doit inclure le réseau de diffusion de contenu (CDN) intégré à l’Adobe dans votre licence.
 +++
 
-+++**Puis-je activer l’imagerie dynamique sur mon compte ?**
 
-Nombre Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci n’est pas activée automatiquement.
+<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
 
-Créez un dossier de support, comme décrit ci-dessous. Dans votre demande, veillez à mentionner la ou les fonctionnalités d’imagerie dynamique suivantes que vous souhaitez activer sur votre compte :
++++**Can I enable Smart Imaging for my account?**
+
+No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+
+Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
 
 * WebP
 * AVIF
-* Optimisation du Ratio pixel de l’appareil et de la bande passante réseau
-* PNG vers AVIF avec perte ou WebP avec perte
+* DPR and Network Bandwidth optimization
+* PNG to lossy AVIF or lossy WebP
 
-Si l’imagerie dynamique est déjà activée en WebP, mais que vous souhaitez d’autres nouvelles fonctionnalités comme indiqué ci-dessus, vous devez créer un dossier de support.
+If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
 
-**Pour créer un dossier de support permettant d’activer l’imagerie dynamique sur votre compte :**
+**To create a support case to enable Smart Imaging on your account:**
 
-1. [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Indiquez les informations suivantes dans votre dossier de support :
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Provide the following information in your support case:
 
-   * nom, adresse électronique et numéro de téléphone du contact principal.
+    * Primary contact name, email, phone.
 
-   * Répertoriez les fonctionnalités d’imagerie dynamique suivantes que vous souhaitez activer sur votre compte :
+    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
       * WebP
       * AVIF
-      * Optimisation du Ratio pixel de l’appareil et de la bande passante réseau
-      * PNG vers AVIF avec perte ou WebP avec perte
+      * DPR and Network Bandwidth optimization
+      * PNG to lossy AVIF or lossy WebP
+    
+    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-   * Tous les domaines à activer pour l’imagerie intelligente (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
 
-     Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
+       Look for the field labeled **[!UICONTROL Published Server Name]**.
+    
+    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
 
-     Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
+    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
-   * Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
 
-   * Vérifiez que vous utilisez un domaine dédié, tel que `images.company.com` ou `mycompany.scene7.com`, et non un domaine générique, tel que `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
+       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
 
-     Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
+    * Indicate if you want it to work over HTTP/2.
 
-     Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
+1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
+1. You are notified after completion by Customer Support.
+1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
-   * Indiquez si vous souhaitez qu’il fonctionne en HTTP/2.
+    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
+    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
-1. Le service clientèle Adobe vous inscrira sur la liste d’attente des clients pour l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
-1. Dès qu’Adobe est prêt à traiter votre demande, vous serez contacté par le service clientèle afin de programmer une date cible.
-1. **Facultatif** : Vous avez la possibilité de tester l’imagerie intelligente dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
-1. Une fois la procédure achevée, vous en serez informé par l’équipe du service clientèle.
-1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
-   1. Si vous utilisez Dynamic Media Classic, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**. Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
-   1. Si vous utilisez Dynamic Media, [procédez comme suit](config-dm.md). Définissez la valeur **[!UICONTROL Expiration]** sur 24 heures ou plus.
 
-+++
+**When is my account enabled with Smart Imaging?**
 
-+++**Quand l’imagerie dynamique sera-t-elle activée sur mon compte ?**
-
-Les demandes sont traitées dans l’ordre de réception par l’équipe du service clientèle, suivant la liste d’attente.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
 >[!NOTE]
 >
->Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
+>There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+
+-->
 
 +++
 
-+++**Existe-t-il des risques liés à l’utilisation de l’imagerie dynamique ?**
+**Existe-t-il des risques liés à l’utilisation de l’imagerie dynamique ?**
 
 La page web d’un client ne présente aucun risque. Cependant, la transition à l’imagerie dynamique efface votre cache CDN. Cette opération implique de passer à une nouvelle configuration de Dynamic Media Classic ou Dynamic Media sur Experience Manager.
 
 Au cours de la transition initiale, les images non mises en cache accèdent directement aux serveurs d’origine d’Adobe jusqu’à ce que le cache soit reconstitué. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine. Pour la plupart des utilisateurs et utilisatrices, le cache est entièrement reconstitué au niveau du réseau CDN sous un à deux jours.
++++
 
 +++
 
-+++**Puis-je vérifier si l’imagerie dynamique fonctionne ?**
+**Puis-je vérifier si l’imagerie dynamique fonctionne ?**
 
 Oui. Vous pouvez effectuer les opérations suivantes :
 
-1. Une fois que l’imagerie intelligente est activée sur votre compte, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager – Dynamic Media sur le navigateur.
+1. Une fois votre compte configuré avec l’imagerie dynamique, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media dans le navigateur.
 1. Ouvrez le volet de Chrome pour les développeurs en accédant à **[!UICONTROL Afficher]** > **[!UICONTROL Développeur]** > **[!UICONTROL Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
 
 1. Assurez-vous que le cache est désactivé lorsque les outils de développement sont ouverts.
 
    * Sous Windows®, accédez aux paramètres dans le volet de l’outil de développement, puis cochez la case **[!UICONTROL Désactiver le cache (lorsque les outils de développement sont ouverts)]**.
-   * Sous macOS, sélectionnez **[!UICONTROL désactiver le cache]** dans l’onglet **[!UICONTROL Réseau]** du volet de développement.
+   * Sur macOS, dans le volet Développeur, sous l’onglet **[!UICONTROL Réseau]**, sélectionnez **[!UICONTROL désactiver le cache]**.
 
 1. Vérifiez que le type de contenu est converti au format approprié. L’écran ci-dessous illustre la conversion dynamique d’une image PNG au format WebP sur Chrome. Si l’AVIF est activé pour votre domaine, vous pouvez également vous attendre à voir AVIF dans le type de contenu.
 1. Répétez ce test sur différents navigateurs et conditions d’utilisation.
@@ -332,10 +354,11 @@ Oui. Vous pouvez effectuer les opérations suivantes :
 >Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion peut améliorer les performances. Parfois, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
++++
 
 +++
 
-+++**Existe-t-il un moyen de connaître les avantages de l’imagerie dynamique ?**
+**Existe-t-il un moyen de connaître les avantages de l’imagerie dynamique ?**
 
 Oui. L’en-tête d’imagerie dynamique détermine les avantages de l’imagerie dynamique. Lorsque l’imagerie dynamique est activée, après avoir demandé une image, vous pouvez voir `-X-Adobe-Smart-Imaging` sous le titre **[!UICONTROL En-têtes de réponse]**, comme illustré dans l’exemple en surbrillance suivant :
 
@@ -353,20 +376,23 @@ Cet en-tête vous indique ce qui suit :
 >
 >**X-Adobe-Smart-Imaging = -1 avec diffusion en WebP**
 >
->Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que le WebP est toujours en cours de diffusion, cela signifie que l’imagerie dynamique fonctionne, mais que les gains de taille n’ont pas été calculés en raison de l’ancien cache. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
+>Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que WebP est toujours en cours de diffusion, l’imagerie dynamique est active. Toutefois, les avantages de taille n’étaient pas calculés en raison d’un cache obsolète. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
 >Exemple d’utilisation du modificateur :
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
 
 +++
 
-+++**Comment désactiver l’optimisation AVIF dans l’imagerie dynamique ?**
++++
+
+**Comment désactiver l’optimisation AVIF dans l’imagerie dynamique ?**
 
 Oui. Si vous souhaitez revenir au service WebP par défaut, créez un dossier de support de la même façon. Vous pouvez comme d’habitude désactiver l’imagerie dynamique en ajoutant le paramètre `bfc=off` à l’URL de l’image. Cependant, vous ne pouvez pas sélectionner le format WebP ou AVIF dans le modificateur d’URL pour l’imagerie dynamique. Cette fonctionnalité est maintenue au niveau du compte de votre société.
++++
 
 +++
 
-+++**Pourquoi ma requête échoue-t-elle lorsque je dispose d’une URL avec fmt=tif sur le navigateur web Chrome ?**
+**Pourquoi ma requête échoue-t-elle lorsque j’ai une URL avec fmt=tif sur le navigateur web Chrome ?**
 
 Cette erreur ne se produit pas si l’imagerie dynamique n’est pas activée sur votre compte. L’imagerie dynamique fonctionne uniquement avec les formats JPEG ou PNG.
 
@@ -374,67 +400,76 @@ Pour éviter cette erreur, vous pouvez effectuer l’une des opérations suivant
 
 * Spécifiez JPEG ou PNG.
 * N’utilisez pas le modificateur `fmt`.
-* Utilisez un format de navigateur préféré tel que défini par l’imagerie dynamique. Par exemple, vous pouvez utiliser le WebP pour le navigateur web Chrome.
+* Utilisez un format de navigateur préféré tel que défini par l’imagerie dynamique. Par exemple, vous pouvez utiliser WebP pour le navigateur Web Chrome.
++++
 
 +++
 
-+++**Puis-je télécharger une image TIFF à partir de l’URL d’une image ?**
+**Puis-je télécharger une image TIFF à partir de l’URL d’une image ?**
 
 Oui. Ajoutez `fmt=tif` et `bfc=off` au chemin d’URL de l’image.
++++
 
 +++
 
-+++**L’imagerie dynamique gère-t-elle le format de l’image et les paramètres de qualité de l’image ?**
+**L’imagerie dynamique gère-t-elle le format de l’image et les paramètres de qualité de l’image ?**
 
 Oui. L’imagerie dynamique utilise le format et la qualité. Le reste des paramètres restent inchangés, tels que prévus pour l’URL de l’image.
++++
 
 +++
 
-+++**Puis-je définir un paramètre de qualité minimal et maximal ?**
+**Puis-je définir un paramètre de qualité minimal et maximal ?**
 
 Nombre Il n’existe actuellement aucune configuration de ce type.
++++
 
 +++
 
-+++**L’imagerie dynamique ajuste-t-elle le paramètre de qualité de sortie en pourcentage ?**
+**L’imagerie dynamique ajuste-t-elle le paramètre de qualité de sortie en pourcentage ?**
 
-Oui. L’imagerie dynamique ajuste automatiquement le pourcentage de qualité. Ce pourcentage de qualité est déterminé à l’aide d’un algorithme de machine learning développé par Adobe. Ce pourcentage n’est pas spécifique à la plage.
+Oui. L’imagerie dynamique ajuste automatiquement le pourcentage de qualité. Cette qualité est déterminée à l’aide d’un algorithme d’apprentissage automatique développé par Adobe. Ce pourcentage n’est pas spécifique à la plage.
++++
 
 +++
 
-+++**L’imagerie dynamique ne remplace-t-elle que les images JPEG ?**
+**L’imagerie dynamique ne remplace-t-elle que les images JPEG ?**
 
 Oui. Cette fonctionnalité fonctionne uniquement pour les images JPEG et PNG.
++++
 
 +++
 
-+++**Pourquoi une image JPEG est-elle parfois renvoyée à Chrome, au lieu d’une image WebP ?**
+**Pourquoi une image JPEG est-elle parfois renvoyée à Chrome, au lieu d’une image WebP ?**
 
 L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice. Elle renvoie la nouvelle image uniquement si la conversion est bénéfique.
++++
 
 +++
 
-+++**Pourquoi le Rapport pixel d’appareil (dpr) ne fonctionne-t-il pas avec les images composites ?**
+**Pourquoi le Rapport pixel d’appareil (dpr) ne fonctionne-t-il pas avec les images composites ?**
 
 Si une image composite implique un trop grand nombre de calques, la fonctionnalité dpr peut être affectée lors de l’utilisation d’un modificateur de position. Ce problème est connu et sera corrigé dans les prochaines versions de l’imagerie dynamique. Si d’autres fonctionnalités d’imagerie dynamique ne fonctionnent pas comme prévu, vous pouvez créer un dossier de support pour signaler le problème.
++++
 
 +++
 
-+++**Pourquoi un PNG en imagerie dynamique est-il converti en WebP/AVIF sans perte ?**
+**Pourquoi un PNG en imagerie dynamique est-il converti en WebP/AVIF sans perte ?**
 
-Comme le format PNG est un format sans perte, les fichiers WebP et AVIF étaient auparavant livrés sans perte, avec une taille plus grande que prévu. L’imagerie dynamique prend désormais en charge la conversion avec perte. Vous pouvez utiliser le modificateur `cache=update` (une seule fois) dans une demande d’image pour résoudre ce problème. Exemple d’utilisation de ce modificateur :
+Étant donné que le format PNG est un format sans perte, les versions antérieures de WebP et d’AVIF diffusées étaient sans perte, la taille est donc plus élevée que prévu. L’imagerie dynamique prend désormais en charge la conversion avec perte. Vous pouvez utiliser le modificateur `cache=update` (une seule fois) dans une demande d’image pour résoudre ce problème. Exemple d’utilisation de ce modificateur :
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 Pour invalider l’intégralité du cache, vous devez créer un dossier de support à cet effet.
++++
 
 +++
 
-+++**Puis-je continuer à utiliser le PNG pour une conversion sans perte dans l’imagerie dynamique ?**
+**Puis-je continuer à utiliser le PNG pour une conversion sans perte dans l’imagerie dynamique ?**
 
-Oui. L’imagerie dynamique prend désormais en charge la conversion avec perte en fonction du niveau de qualité. Pour continuer à utiliser une conversion sans perte, vous pouvez utiliser la qualité 100 définie soit par la configuration de votre entreprise, soit par le biais de l’URL de l’image en ajoutant `qlt=100` dans le chemin.
-
+Oui. L’imagerie dynamique prend désormais en charge la conversion avec perte en fonction du niveau de qualité. Vous pouvez continuer à utiliser une conversion sans perte en définissant la qualité sur 100, soit par le biais des paramètres de votre entreprise, soit en ajoutant `qlt=100` au chemin d’accès de l’URL de l’image.
 +++
+
 
 
 
