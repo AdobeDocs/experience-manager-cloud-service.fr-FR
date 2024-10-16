@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 47%
+source-wordcount: '4537'
+ht-degree: 44%
 
 ---
 
@@ -94,10 +94,38 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
    aio plugins:update
    ```
 
-1. Configurez le module externe RDE pour utiliser votre organisation, votre programme et votre environnement. La commande de configuration ci-dessous fournira de manière interactive à l’utilisateur une liste de programmes dans son organisation et affichera les environnements RDE de ce programme parmi lesquels choisir.
+1. Connectez-vous à l’aide du client aio.
 
    ```
    aio login
+   ```
+   Les informations de connexion (jeton) sont stockées dans la configuration aio globale et ne prennent donc en charge qu’une seule connexion et une seule organisation. Si vous souhaitez utiliser plusieurs RDE ayant besoin de connexions ou d’organisations différentes, suivez l’exemple ci-dessous pour introduire des contextes.
+
+   <details><summary>Suivez cet exemple pour configurer un contexte local pour l’une de vos connexions RDE</summary>
+   Pour stocker les informations de connexion localement dans un fichier .aio dans le répertoire actuel dans un contexte spécifique, procédez comme suit. Un contexte est également un moyen intelligent de configurer un environnement ou un script CI/CD.  Pour utiliser cette fonctionnalité, veillez à utiliser au moins la version 10.3.1 d’aio-cli. Mettez à jour à l’aide de "npm install -g @adobe/aio-cli"
+
+   Créons un contexte appelé &quot;mycontext&quot; que nous définissons ensuite comme contexte par défaut à l’aide du module externe auth avant d’appeler la commande de connexion.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > La commande de connexion avec l’option `--no-open` génère une URL dans le terminal au lieu d’ouvrir votre navigateur par défaut. Vous pouvez ainsi le copier et l’ouvrir avec une fenêtre **incognito** de votre navigateur. Ainsi, votre session actuellement connectée dans la fenêtre normale du navigateur restera intacte et vous pouvez vous assurer d’utiliser les informations de connexion et l’organisation spécifiques nécessaires à votre contexte.
+
+   La première commande crée une configuration contextuelle de connexion, appelée `mycontext`, dans votre fichier de configuration local `.aio` (le fichier est créé si nécessaire). La deuxième commande définit le contexte `mycontext` comme étant le contexte &quot;actuel&quot;, c’est-à-dire la valeur par défaut.
+
+   Une fois cette configuration en place, la commande login stocke automatiquement les jetons de connexion dans le contexte `mycontext`, ce qui le rend local.
+
+   Plusieurs contextes peuvent être gérés en conservant les configurations locales dans plusieurs dossiers. Vous pouvez également configurer plusieurs contextes dans un seul fichier de configuration et passer d’un contexte à l’autre en modifiant le contexte &quot;actuel&quot;.
+   </details>
+
+1. Configurez le module externe RDE pour utiliser votre organisation, votre programme et votre environnement. La commande de configuration ci-dessous fournira de manière interactive à l’utilisateur une liste de programmes dans son organisation et affichera les environnements RDE de ce programme parmi lesquels choisir.
+
+   ```
    aio aem:rde:setup
    ```
 
