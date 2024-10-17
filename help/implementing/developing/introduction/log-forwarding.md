@@ -4,9 +4,9 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -304,7 +304,13 @@ data:
 
 Considérations :
 
-* par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
+* Par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
+* Le champ sourcetype aura l’une des valeurs suivantes, selon le journal spécifique : *aemaccess*, *aemerror*,
+  *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [Si vous migrez ](#legacy-migration) de l’ancien transfert de journal vers ce modèle en libre-service, les valeurs du champ `sourcetype` envoyées à votre index Splunk ont peut-être changé, ajustez-les en conséquence.
 
 
 <!--
@@ -385,6 +391,10 @@ Les clients qui ont été configurés de cette manière par Adobe sont les bienv
 Une fois prêt à migrer, configurez le fichier YAML comme décrit dans les sections précédentes. Utilisez le pipeline de configuration Cloud Manager pour effectuer le déploiement sur chacun des environnements dans lesquels la configuration doit être appliquée.
 
 Il est recommandé, mais non obligatoire, qu’une configuration soit déployée dans tous les environnements afin qu’ils soient tous sous contrôle en libre-service. Dans le cas contraire, vous pouvez oublier les environnements qui ont été configurés par Adobe par rapport à ceux configurés en libre-service.
+
+>[!NOTE]
+>
+>Les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé. Vous pouvez donc vous adapter en conséquence.
 
 >[!NOTE]
 >
