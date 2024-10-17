@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5684'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1072,7 +1072,7 @@ ht-degree: 99%
    + [Générer des variations](/help/generative-ai/generate-variations.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
-   + Utilisation de Cloud Manager {#using-cloud-manager}
+   + Utiliser Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1102,7 +1102,7 @@ ht-degree: 99%
          + [Annotations du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD de Cloud Manager {#cicd-pipelines}
-         + [Présentation des pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Introduction aux pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurer un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurer un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
