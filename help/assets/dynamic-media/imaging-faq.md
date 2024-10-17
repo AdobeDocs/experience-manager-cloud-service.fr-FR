@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3243'
+ht-degree: 64%
 
 ---
 
@@ -32,7 +32,7 @@ De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (La
 >
 >Testez et découvrez les avantages des modificateurs d’image Dynamic Media et de l’imagerie dynamique à l’aide de Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
-> Snapshot est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Testez des images de test ou des URL Dynamic Media pour observer visuellement la sortie de divers modificateurs d’image Dynamic Media et optimisez l’imagerie dynamique pour les éléments suivants :
+>Snapshot est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Testez des images de test ou des URL Dynamic Media pour observer visuellement la sortie de divers modificateurs d’image Dynamic Media et optimisez l’imagerie dynamique pour les éléments suivants :
 >
 >* Taille de fichier (avec diffusion WebP et AVIF)
 >* Bande passante réseau
@@ -254,74 +254,73 @@ Pour activer l’imagerie dynamique, le compte Dynamic Media Classic ou Dynamic 
 +++
 
 
-<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
++++
 
-+++**Can I enable Smart Imaging for my account?**
+**Quel est le processus pour activer l’imagerie dynamique sur un compte ?**
 
-No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+Pour commencer à utiliser l’imagerie dynamique, ajoutez `bfc=on`, `dpr=on,dprValue` ou `network=on`, ou les trois paramètres à vos URL ou paramètres prédéfinis existants. Si vous préférez ne pas apporter ces modifications manuellement, vous pouvez activer l’imagerie dynamique par défaut en créant un cas de prise en charge.
 
-Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
+Lors de la création du cas de prise en charge, spécifiez les fonctionnalités d’imagerie dynamique à activer sur votre compte :
 
-* WebP
-* AVIF
-* DPR and Network Bandwidth optimization
-* PNG to lossy AVIF or lossy WebP
-
-If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
-
-**To create a support case to enable Smart Imaging on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Provide the following information in your support case:
-
-    * Primary contact name, email, phone.
-
-    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
-      * WebP
-      * AVIF
-      * DPR and Network Bandwidth optimization
-      * PNG to lossy AVIF or lossy WebP
-    
-    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
-    
-    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
-
-    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-
-    * Indicate if you want it to work over HTTP/2.
-
-1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Support.
-1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
-
-    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
-
-
-
-**When is my account enabled with Smart Imaging?**
-
-Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
+* Conversion du format du navigateur (WebP ou AVIF)
+* Optimisation de la bande passante réseau
 
 >[!NOTE]
 >
->There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>Le RPD nécessite des ajustements côté client pour déterminer le `dprValue` correct. Par conséquent, Adobe recommande d’activer le RPD par le biais des URL en ajoutant `dpr=on,dprValue`.
 
--->
+**Pour créer un dossier de support permettant d’activer l’imagerie dynamique sur votre compte :**
+
+1. [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. Indiquez les informations suivantes dans votre dossier de support :
+
+   * **Détails du contact du Principal :**
+
+      * Indiquez vos nom, adresse électronique et numéro de téléphone.
+
+   * **Fonctionnalités d’imagerie dynamique à activer :**
+
+      * Liste des fonctionnalités que vous souhaitez pour votre compte :
+
+         * Conversion du format du navigateur : WebP ou AVIF
+         * Optimisation de la bande passante du réseau
+         * RGPD : le RGPD nécessite des ajustements côté client pour déterminer le `dprValue` correct. Par conséquent, Adobe recommande d’activer le RPD par le biais des URL en ajoutant `dpr=on,dprValue`.
+
+   * **Domaine pour l’imagerie dynamique :**
+
+      * Répertorier tous les domaines pertinents, tels que *`company.com`* ou *`mycompany.scene7.com`*
+      * L’imagerie dynamique prend en charge les domaines génériques et personnalisés.
+      * Pour identifier vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) et connectez-vous au compte de votre société.
+
+         1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
+         1. Recherchez le champ **[!UICONTROL Nom du serveur publié]** pour confirmer votre domaine.
+         1. Vérifiez que vous utilisez le réseau de diffusion de contenu d’Adobe plutôt qu’un réseau géré par un autre fournisseur.
+
+   * **Indique la prise en charge HTTP/2 :**
+
+      * Indiquez si l’imagerie dynamique doit fonctionner sur HTTP/2.
+
+1. Le service clientèle d’Adobe active par défaut les fonctionnalités d’imagerie dynamique demandées, éliminant ainsi la nécessité d’ajouter des paramètres manuellement aux URL.
+1. Adobe recommande de définir la durée de vie (TTL) sur au moins 24 heures afin d’optimiser les performances grâce à la mise en cache.
+Pour ajuster la durée de vie (TTL) :
+
+   1. **Pour Dynamic Media Classic :**
+      1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de Publish]** > **[!UICONTROL Serveur d’images]**.
+      1. Définissez la valeur **[!UICONTROL Délai d’activation par défaut du cache client]** sur 24 heures ou plus.
+   1. **Pour Dynamic Media sur Adobe Experience Manager :**
+      1. Suivez [ces instructions](/help/assets/dynamic-media/config-dm.md).
+      1. Définissez la valeur **[!UICONTROL Expiration]** pendant 24 heures ou plus.
+
+
++++
+
+**Quand un compte est-il activé avec l’imagerie dynamique ?**
+
+Le service clientèle traite les demandes dans l’ordre dans lequel elles sont reçues, en suivant la liste d’attente.
+
+>[!NOTE]
+>
+>Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
 
 +++
 
@@ -469,27 +468,6 @@ Pour invalider l’intégralité du cache, vous devez créer un dossier de suppo
 
 Oui. L’imagerie dynamique prend désormais en charge la conversion avec perte en fonction du niveau de qualité. Vous pouvez continuer à utiliser une conversion sans perte en définissant la qualité sur 100, soit par le biais des paramètres de votre entreprise, soit en ajoutant `qlt=100` au chemin d’accès de l’URL de l’image.
 +++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
