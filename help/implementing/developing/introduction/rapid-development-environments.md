@@ -4,7 +4,7 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 42%
@@ -99,6 +99,7 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
    ```
    aio login
    ```
+
    Les informations de connexion (jeton) sont stockées dans la configuration aio globale et ne prennent donc en charge qu’une seule connexion et une seule organisation. Si vous souhaitez utiliser plusieurs RDE ayant besoin de connexions ou d’organisations différentes, suivez l’exemple ci-dessous pour introduire des contextes.
 
    <details><summary>Suivez cet exemple pour configurer un contexte local pour l’une de vos connexions RDE</summary>
@@ -111,7 +112,6 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > La commande de connexion avec l’option `--no-open` génère une URL dans le terminal au lieu d’ouvrir votre navigateur par défaut. Vous pouvez ainsi le copier et l’ouvrir avec une fenêtre **incognito** de votre navigateur. Ainsi, votre session actuellement connectée dans la fenêtre normale du navigateur restera intacte et vous pouvez vous assurer d’utiliser les informations de connexion et l’organisation spécifiques nécessaires à votre contexte.
@@ -153,8 +153,8 @@ Sélectionnez `yes` sur
 Une fois la configuration locale ou globale sélectionnée, la commande de configuration tente de lire l’ID de votre organisation à partir de votre connexion actuelle, puis de lire les programmes de l’organisation. Si l’organisation est introuvable, vous pouvez la saisir manuellement avec quelques conseils.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Une fois les programmes récupérés, l’utilisateur peut effectuer une sélection dans la liste et également saisir pour filtrer.
@@ -248,7 +248,6 @@ Cependant, avec une coordination étroite, il est possible pour plusieurs dével
 * Pour obtenir une aide détaillée sur une commande, saisissez :
 
   `aio aem rde <command> --help`
-
 
 ### Indicateurs globaux {#global-flags}
 
@@ -507,7 +506,7 @@ L’exemple suivant illustre comment exécuter le niveau Auteur avec un package 
 >
 >Si l’erreur `RDECLI:UNEXPECTED_API_ERROR` s’affiche lors de la lecture des commandes de journaux pour le service de création, réinitialisez votre environnement et réessayez. Cette erreur sera générée si votre dernière opération de réinitialisation date d’avant fin mai 2024.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ La plupart des commandes prennent en charge l’indicateur global ```--json``` q
   }
 }
 ```
+
 </details>
 
 ### Installer {#install}
@@ -723,6 +723,7 @@ La plupart des commandes prennent en charge l’indicateur global ```--json``` q
   ]
 }
 ```
+
 </details>
 
 ### Supprimer {#delete}
@@ -901,6 +902,7 @@ La plupart des commandes prennent en charge l’indicateur global ```--json``` q
   ]
 }
 ```
+
 </details>
 
 ### Réinitialiser {#reset}
@@ -931,6 +933,7 @@ La plupart des commandes prennent en charge l’indicateur global ```--json``` q
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Redémarrer {#restart}
