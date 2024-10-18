@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 44%
+source-wordcount: '4794'
+ht-degree: 42%
 
 ---
 
@@ -1052,3 +1052,17 @@ Vérification de la réussite de la connexion en exécutant
 `aio cloudmanager:list-programs`
 
 Cela devrait répertorier tous les programmes sous votre organisation configurée et confirmer que le rôle correct vous est attribué.
+
+### Utilisation du contexte obsolète &quot;aio-cli-plugin-cloudmanager&quot; {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+En raison de l’historique de &quot;aio-cli-plugin-aem-rde&quot;, le nom de contexte &quot;aio-cli-plugin-cloudmanager&quot; a été utilisé pendant un certain temps. Le plug-in rde utilise désormais la manière IMS de traiter les informations contextuelles, ce qui signifie qu’il existe des options pour stocker les informations contextuelles globalement ou localement, ainsi que la définition par défaut de tous les appels aio sur une valeur par défaut configurée si vous le souhaitez. Le contexte par défaut configuré est stocké localement et permet aux développeurs de suivre et d’utiliser des contextes individuels et leurs informations dans un dossier. Pour plus d&#39;informations, lisez [l&#39;exemple de configuration d&#39;un contexte local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) ci-dessus.
+
+Les développeurs qui utilisent les deux modules externes, aio-cli-plugin-cloudmanager et aio-cli-plugin-aem-rde et qui souhaitent conserver toutes les informations dans le même contexte doivent sélectionner des options dès maintenant :
+
+#### Continuez à utiliser le contexte &quot;aio-cli-plugin-cloudmanager&quot;
+
+Le contexte peut toujours être utilisé. Un avertissement d’obsolescence s’affiche dans le module externe RDE. Cet avertissement peut être omis en utilisant le mode ```--quiet```. Les versions plus récentes du module externe RDE n’offrent plus la solution de secours pour lire le contexte &quot;aio-cli-plugin-cloudmanager&quot;. Pour continuer à l’utiliser, configurez simplement le contexte par défaut sur &quot;aio-cli-plugin-cloudmanager&quot;, voir [l’exemple de configuration d’un contexte local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) ci-dessus.
+
+#### Utilisez un autre nom de contexte également pour le module externe cloud Manager.
+
+Les modules externes de Cloud Manager offrent un paramètre pour définir un contexte à utiliser. Il ne prend pas encore en charge la configuration de contexte par défaut IMS. Pour ce faire, configurez le module externe RDE à l’aide de [l’exemple pour configurer un contexte local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) et indiquez au module externe de gestion du cloud d’utiliser &quot;myContext&quot; comme ```--imsContextName=myContext``` dans chaque appel vers lui.
