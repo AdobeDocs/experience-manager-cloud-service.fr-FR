@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
-ht-degree: 66%
+source-wordcount: '10543'
+ht-degree: 62%
 
 ---
 
@@ -440,7 +440,7 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 **Pour afficher un rapport vidéo, procédez comme suit :**
 
-1. Dans le coin supérieur gauche de Experience Manager, sélectionnez le logo de l’Experience Manager. Dans le rail de gauche, accédez à **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Assets]** > **[!UICONTROL Rapports vidéo]**.
+1. Dans le coin supérieur gauche de Experience Manager, sélectionnez le logo de l’Experience Manager. Dans le rail de gauche, cliquez sur ![Icône Marteau](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Rapports vidéo]**.
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur droit, sélectionnez l’icône **[!UICONTROL Actualiser le rapport vidéo]**.
@@ -532,7 +532,7 @@ L’activation de l’une des trois fonctionnalités ci-dessus active toutes ces
 
 | Fonction | Description |
 | --- | --- |
-| DASH | DASH (« Digital Adaptive Streaming over HTTP ») est la norme internationale pour la diffusion en continu de vidéos et largement adoptée par les différentes visionneuses de vidéos. Lorsque le DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour la diffusion en continu de vidéo adaptative. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.<br>Voici quelques avantages clés de l’activation du DASH sur votre compte :<br> ・ de compiler la vidéo de flux DASH pour la diffusion en continu à débit adaptatif. Cette méthode permet d’améliorer l’efficacité de la diffusion. Le streaming adaptatif garantit la meilleure expérience de visionnage à vos clients et à vos clientes.<br> ・ La diffusion en continu optimisée par le navigateur avec les lecteurs Dynamic Media bascule entre la diffusion en continu HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement au HLS lorsqu’un navigateur Safari est utilisé.<br> ・ Vous pouvez configurer votre méthode de diffusion en continu préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.<br> ・ Encodage vidéo optimisé garantit qu’aucun stockage supplémentaire n’est utilisé lors de l’activation de la fonctionnalité DASH. Un seul ensemble de codages vidéo est créé pour HLS et DASH afin d’optimiser les coûts de stockage vidéo.<br> ・ Permet à vos clients de rendre la diffusion vidéo plus accessible.<br> ・ Obtenez également l’URL de diffusion en continu au moyen des API. |
+| DASH | DASH (« Digital Adaptive Streaming over HTTP ») est la norme internationale pour la diffusion en continu de vidéos et largement adoptée par les différentes visionneuses de vidéos. Lorsque le DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour la diffusion en continu de vidéo adaptative. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.<br>Voici quelques avantages clés de l’activation du DASH sur votre compte :<ul><li>Module vidéo de flux DASH pour la diffusion en continu à débit adaptatif. Cette méthode permet d’améliorer l’efficacité de la diffusion. Le streaming adaptatif garantit la meilleure expérience de visionnage à vos clients et à vos clientes.</li><li>La diffusion en continu optimisée par le navigateur avec les lecteurs Dynamic Media bascule entre la diffusion en continu HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement au HLS lorsqu’un navigateur Safari est utilisé.</li><li>Vous pouvez configurer votre méthode de streaming préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.</li><li>Le codage vidéo optimisé garantit qu’aucun stockage supplémentaire n’est utilisé lors de l’activation de la fonctionnalité DASH. Un seul ensemble de codages vidéo est créé pour HLS et DASH afin d’optimiser les coûts de stockage vidéo.</li><li>Permet de rendre la diffusion vidéo plus accessible à vos clientes et clients.</li><li>Vous pouvez également obtenir l’URL de streaming au moyen des API.</li></ul> |
 | Sous-titres et pistes audio multiples | Vous pouvez bénéficier de l’activation automatique de la prise en charge de plusieurs sous-titres et du suivi audio. Après l’activation, toutes les vidéos suivantes que vous chargez sont traitées avec une nouvelle architecture du serveur principal qui inclut la prise en charge de l’ajout de plusieurs sous-titres et pistes audio à vos vidéos. |
 | Sous-titres générés par l’IA (disponibilité limitée) | Créez des sous-titres pour vos vidéos optimisées par l’IA. L’IA permet de créer la transcription de la vidéo et de la convertir en sous-titres. Même la chronologie est définie. |
 
@@ -554,7 +554,7 @@ L’activation de l’une des trois fonctionnalités ci-dessus active toutes ces
 1. Le service clientèle d’Adobe vous ajoute à la liste d’attente des clients en fonction de l’ordre dans lequel les demandes sont envoyées.
 1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera pour se coordonner avec vous et programmer une date cible d’activation.
 1. Le service clientèle d’Adobe vous en informe une fois l’opération terminée.
-1. Maintenant, effectuez l’une des opérations suivantes :
+1. Maintenant, effectuez une ou plusieurs des opérations suivantes :
 
    * Créez votre [paramètre prédéfini de visionneuse vidéo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) comme d’habitude.
    * Créez votre [profil vidéo](/help/assets/dynamic-media/video-profiles.md) comme vous le faites habituellement.
@@ -708,8 +708,8 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
 
 1. [Chargez la vidéo principale dans un dossier](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) qui comporte déjà un profil vidéo qui lui est affecté.
 1. Accédez à la ressource vidéo chargée à laquelle ajouter plusieurs sous-titres et pistes audio.
-1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, cliquez sur l’icône Propriétés (un cercle avec un &quot;i&quot; à l’intérieur).
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
    ![Ressource vidéo sélectionnée avec une coche sur l’image de la miniature vidéo et l’option Afficher les propriétés surlignée sur la barre d’outils.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ressource vidéo sélectionnée en mode Carte.*
 1. Sur la page Propriétés de la vidéo, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**.
 
@@ -722,12 +722,12 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
    >Une fois l’une des tâches ci-dessus terminée, reprenez cette procédure.
 
    ![Onglet Sous-titres et suivi audio sur la page Propriétés.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Onglet Sous-titres et suivi audio sur la page Propriétés de la vidéo.*
+   *Onglet Captions et suivi audio sur la page Propriétés de la vidéo.*
 
 1. Pour ajouter une ou plusieurs pistes audio à une vidéo, procédez comme suit :
    1. Sélectionnez **[!UICONTROL Charger des pistes audio]**.
    1. Accédez à un ou plusieurs fichiers .mp3 et sélectionnez-les, puis ouvrez-les.
-   1. Pour que les pistes audio soient visibles dans la liste contextuelle **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia, vous devez ajouter les détails requis sur chaque fichier de suivi audio. Cela permet de s’assurer que toutes les pistes audio sont correctement répertoriées et accessibles. Sélectionnez l’icône représentant un crayon à droite du nom d’un fichier de piste audio. Dans la boîte de dialogue **Modifier la piste audio**, saisissez les détails requis suivants :
+   1. Pour que les pistes audio soient visibles dans la liste contextuelle **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia, vous devez ajouter les détails requis sur chaque fichier de suivi audio. Cela permet de s’assurer que toutes les pistes audio sont correctement répertoriées et accessibles. Cliquez sur ![Icône de dessin](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à droite du nom d’un fichier de suivi audio. Dans la boîte de dialogue **Modifier la piste audio**, saisissez les détails requis suivants :
 
       | Métadonnées de piste audio | Description |
       |--- |--- |
@@ -752,13 +752,13 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
    | **Option 3** | Le texte d’un fichier de légende (`.vtt`) doit être corrigé, rechargé pour remplacer l’ancien fichier `.vtt`, puis faire traduire le fichier corrigé par l’IA.<br>Voir **Option 3** ci-dessous. | **[!UICONTROL Traduire la légende]** |
 
    ![Options Créer des sous-titres.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *Le menu déroulant Créer des sous-titres propose trois options : Télécharger des fichiers, Convertir des pistes audio et Traduire la légende.*
+   *Le menu déroulant Créer une légende propose trois options : Télécharger des fichiers, Convertir des pistes audio et Traduire la légende.*
 
 +++**Option 1 :** *J’ai mes propres fichiers de sous-titres préexistants dans les langues que je souhaite utiliser* (**[!UICONTROL option Télécharger les fichiers]** )
 
    1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer une légende]** > **[!UICONTROL Télécharger des fichiers]**.
    1. Accédez à un ou plusieurs de vos fichiers `.vtt` préexistants et sélectionnez-les, puis ouvrez-les.
-   1. Pour que les sous-titres soient visibles sur le lecteur multimédia, vous *devez* ajouter les détails requis sur *chaque fichier de sous-titres* que vous chargez. Sélectionnez l’icône représentant un crayon à droite du nom du fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, saisissez les détails requis suivants sur le fichier :
+   1. Pour que les sous-titres soient visibles sur le lecteur multimédia, vous *devez* ajouter les détails requis sur *chaque fichier de sous-titres* que vous chargez. Cliquez sur ![Icône Dessiner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à droite du nom d’un fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, saisissez les détails requis suivants sur le fichier :
 
       | Métadonnées de sous-titres | Description |
       |--- |--- |
@@ -791,8 +791,8 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
 
       | Option | Description |
       |--- |--- |
-      | Suivi audio à convertir | Dans la liste déroulante, sélectionnez le fichier de suivi audio téléchargé à partir duquel vous souhaitez que les sous-titres soient générés à l’aide de l’IA. |
-      | Langues de sortie | Dans la liste déroulante, sélectionnez une ou plusieurs langues dans lesquelles le fichier de sous-titres doit apparaître.<br>Pour supprimer une langue sélectionnée, cliquez sur **X**.<br>Pendant la lecture vidéo, la liste des langues s’affiche dans le lecteur multimédia dans l’ordre dans lequel vous les sélectionnez ici. |
+      | Suivi audio à convertir | Cliquez sur ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez le fichier de suivi audio téléchargé à partir duquel vous souhaitez que les sous-titres soient générés à l’aide de l’IA. |
+      | Langues de sortie | Cliquez sur ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez une ou plusieurs langues dans lesquelles vous souhaitez que le fichier de sous-titres apparaisse.<br>Pour supprimer une langue sélectionnée, cliquez sur ![Icône Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Pendant la lecture vidéo, la liste des langues s’affiche dans le lecteur multimédia dans l’ordre dans lequel vous les sélectionnez ici. |
 
    1. Cliquez sur **[!UICONTROL Terminé]**.
    1. Près du coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Enregistrer et fermer]**, cliquez sur **[!UICONTROL Enregistrer]**.
@@ -802,7 +802,7 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
       >
       >Selon les paramètres de mise en cache de votre instance, le traitement des métadonnées peut prendre plusieurs minutes avant qu’elles ne soient reflétées dans l’aperçu et dans les URL publiées.
 
-   1. (Facultatif) Sélectionnez l’icône représentant un crayon à droite du nom d’un fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, vous pouvez modifier les détails suivants sur le fichier :
+   1. (Facultatif) Cliquez sur ![Icône Dessiner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à droite du nom d’un fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, vous pouvez modifier les détails suivants sur le fichier :
 
       | Métadonnées de sous-titres | Description |
       | --- | --- |
@@ -821,12 +821,12 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
       ![Boîte de dialogue Traduire les sous-titres.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *La boîte de dialogue Traduire les sous-titres vous permet d’utiliser un fichier de sous-titres existant afin que l’IA génère de nouveaux fichiers de sous-titres en plusieurs langues.*
 
-   1. Dans la boîte de dialogue **Traduire la légende**, définissez les options suivantes :
+   1. Dans la boîte de dialogue **Traduire les sous-titres**, définissez les options suivantes :
 
       | Option | Description |
       |--- |--- |
-      | Légende à traduire | Dans la liste déroulante, choisissez un fichier de sous-titres à partir duquel vous souhaitez que les sous-titres soient générés à l’aide de l’IA. |
-      | Langues de sortie | Dans la liste déroulante, sélectionnez une ou plusieurs langues dans lesquelles le fichier de sous-titres doit apparaître.<br>Pour supprimer une langue sélectionnée, cliquez sur **X**.<br>Pendant la lecture vidéo, la liste des langues s’affiche dans le lecteur multimédia dans l’ordre dans lequel vous les sélectionnez ici. |
+      | Légende à traduire | Cliquez sur ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez un fichier de sous-titres à partir duquel vous souhaitez que les sous-titres soient générés à l’aide de l’IA. |
+      | Langues de sortie | Cliquez sur ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez une ou plusieurs langues dans lesquelles vous souhaitez que le fichier de sous-titres apparaisse.<br>Pour supprimer une langue sélectionnée, cliquez sur ![Icône Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Pendant la lecture vidéo, la liste des langues s’affiche dans le lecteur multimédia dans l’ordre dans lequel vous les sélectionnez ici. |
 
    1. Cliquez sur **[!UICONTROL Terminé]**.
    1. Près du coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Enregistrer et fermer]**, cliquez sur **[!UICONTROL Enregistrer]**.
@@ -836,7 +836,7 @@ Les légendes ajoutées sont prises en charge avec les formats WebVTT et Adobe V
       >
       >Selon les paramètres de mise en cache de votre instance, le traitement des métadonnées peut prendre plusieurs minutes avant qu’elles ne soient reflétées dans l’aperçu et dans les URL publiées.
 
-   1. (Facultatif) Sélectionnez l’icône représentant un crayon à droite du nom d’un fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, vous pouvez modifier les détails suivants sur le fichier :
+   1. (Facultatif) Cliquez sur ![Icône Dessiner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à droite du nom d’un fichier de sous-titres. Dans la boîte de dialogue **Modifier la légende**, vous pouvez modifier les détails suivants sur le fichier :
 
       | Métadonnées de sous-titres | Description |
       | --- | --- |
@@ -888,11 +888,12 @@ Vous pouvez observer l’état de cycle de vie de tout fichier de suivi audio ou
 **Pour afficher le statut du cycle de vie d’une vidéo :**
 
 1. Accédez à la ressource vidéo dont vous souhaitez afficher le statut du cycle de vie.
-1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
-1. Sur la page Propriétés, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**. Dans la colonne Statut, notez l’état de chaque fichier de sous-titres ou audio.
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
+1. Sur la page **Propriétés**, sélectionnez l’onglet **[!UICONTROL Captions &amp; Audio Tracks]** .
+1. Dans la colonne **[!UICONTROL Status]** , notez l’état de chaque légende ou fichier audio.
 
-| Statut des sous-titres ou des pistes audio | Description |
+| État des sous-titres et des suivi audio | Description |
 | --- | --- |
 | Traitement | Lorsqu’un nouveau fichier de sous-titres ou de pistes audio est ajouté et enregistré, il passe à l’état « Traitement ». Dynamic Media traite le fichier en joignant le manifeste de streaming à la vidéo principale. |
 | Traité | Une fois le traitement terminé, la légende ou le fichier de suivi audio, ou la piste audio d’origine associée à la vidéo principale, s’affichent à l’état &quot;Traités&quot;. Vous pouvez prévisualiser les fichiers de sous-titres et de pistes audio qui apparaissent à l’état « Traité » *avant* de publier la vidéo en direct. |
@@ -900,7 +901,6 @@ Vous pouvez observer l’état de cycle de vie de tout fichier de suivi audio ou
 | Échec | Un état « Échec » signifie que le traitement d’un fichier de sous-titre ou de pistes audio n’a pas été terminé. Supprimez le fichier de sous-titres ou de pistes audio, puis chargez-le à nouveau. |
 | Dépublié | Lorsqu’une vidéo principale publiée est explicitement dépubliée, tout fichier de sous-titres ou de piste audio que vous avez ajouté à la vidéo est également dépublié. |
 
-![Colonne Statut mise en surbrillance pour les champs Sous-titres et Pistes audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Statut du cycle de vie de chaque fichier de sous-titres et de pistes audio chargé.*
 
 ### Définir l’audio par défaut pour une vidéo comportant plusieurs pistes audio
 
@@ -918,16 +918,16 @@ Cependant, tout fichier de piste audio chargé peut être défini comme l’audi
 **Pour définir l’audio par défaut d’une vidéo comportant plusieurs pistes audio :**
 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
-1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
 1. Sur la page Propriétés, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**.
 1. Sous l’en-tête **Pistes audio**, sélectionnez le fichier de piste audio à définir comme fichier par défaut pour la vidéo.
-1. Sélectionnez **[!UICONTROL Définir par défaut]**.
-Dans la boîte de dialogue **Définir comme valeur par défaut**, sélectionnez **[!UICONTROL Remplacer]**.
+1. Cliquez sur ![Icône audio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Définir comme valeur par défaut]**.
+1. Dans la boîte de dialogue **Définir comme valeur par défaut**, cliquez sur **[!UICONTROL Remplacer]**.
 
    ![En-tête « Pistes audio » avec un nom de fichier de piste audio sélectionné et le bouton « Définir par défaut » mis en surbrillance.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Définition de la piste audio par défaut pour une vidéo.*
 
-1. Dans le coin supérieur droit, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
+1. Dans le coin supérieur droit, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 
 ### Prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio {#preview-video-audio-subtitle}
@@ -947,22 +947,21 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/ad
 **Pour prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio, procédez comme suit :**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une vidéo existante à laquelle vous avez ajouté plusieurs sous-titres et pistes audio.
-1. Sélectionnez la ressource vidéo afin de pouvoir l’ouvrir en mode aperçu.
-1. Dans la page d’aperçu, dans le coin supérieur gauche de la page, sélectionnez la liste déroulante, puis sélectionnez **[!UICONTROL Visionneuses]**.
+1. Cliquez sur la ressource vidéo pour l’ouvrir en mode d’aperçu.
+1. Sur la page d’aperçu, près du coin supérieur gauche de la page, cliquez sur ![Icône Rail Left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez **[!UICONTROL Visionneuses]**.
 
    ![Liste déroulante présentant l’option Visionneuses.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Dans la liste Visionneuses, sélectionnez une visionneuse à utiliser pour l’aperçu vidéo. Par exemple, la capture d’écran suivante illustre la visionneuse **[!UICONTROL Vidéo]** sélectionnée.
+1. Près du coin supérieur gauche de la page, cliquez sur ![Icône Rail Left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Visionneuses ![Icône Chevron Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), puis sélectionnez une visionneuse à utiliser pour l’aperçu vidéo.
 
-   ![Sélection de la visionneuse Vidéo dans la liste déroulante Visionneuses.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Près du coin inférieur droit, à gauche de l’icône de volume, sélectionnez l’icône en forme de phylactère, puis sélectionnez l’audio ou le sous-titre que vous souhaitez entendre et/ou ou voir. Si vous le souhaitez, sous Sous Sous-titres, vous pouvez désactiver l’affichage des sous-titres en cliquant sur **[!UICONTROL Désactivé]**.
+1. Près du coin inférieur droit de la page, cliquez sur l’icône de bulle vocale, puis sélectionnez le son ou le sous-titre/la légende que vous souhaitez entendre, voir ou les deux.
 
    ![Liste de fenêtres contextuelles (pop-up) Audio et sous-titres dans la visionneuse de vidéos.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation d’un utilisateur ou d’une utilisatrice sélectionnant le contenu audio et les sous-titres pour la lecture vidéo.*
 
-1. Pour commencer la lecture, sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo.
-Remarquez les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** en bas à gauche. Utilisez ces boutons pour [lier l’URL de la vidéo à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporer la vidéo dans une page web](/help/assets/dynamic-media/embed-code.md), respectivement.
-1. Près du coin supérieur droit de la page d’aperçu, sélectionnez **[!UICONTROL Fermer]**.
+1. Pour commencer la lecture, cliquez sur ![Icône PLay](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+Si vous le souhaitez, cliquez sur ![Maximiser l’icône](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) pour agrandir la fenêtre d’affichage.
+Notez les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** près du coin inférieur gauche de la page. Utilisez ces boutons pour [lier l’URL de la vidéo à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporer la vidéo dans une page web](/help/assets/dynamic-media/embed-code.md), respectivement.
+1. Près du coin supérieur droit de la page d’aperçu, cliquez sur **[!UICONTROL Fermer]**.
 
 ### Supprimer des fichiers de sous-titres ou de pistes audio d’une vidéo
 
@@ -973,13 +972,13 @@ La piste audio d’origine extraite d’une vidéo principale ne peut pas être 
 **Pour supprimer des fichiers de sous-titres ou de pistes audio d’une vidéo, procédez comme suit :**
 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
-1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
 1. Sur la page Propriétés, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**.
 1. Effectuez l’une des opérations suivantes :
 
-   * Sous l’en-tête **Sous-titres** , sélectionnez un ou plusieurs fichiers de sous-titres à supprimer de la vidéo, puis cliquez sur **[!UICONTROL Supprimer]**.
-   * Suivi audio : sous l’en-tête **Suivi audio**, sélectionnez un ou plusieurs fichiers de suivi audio à supprimer de la vidéo, puis cliquez sur **[!UICONTROL Supprimer]**.
+   * Sous l’en-tête **Sous-titres**, sélectionnez un ou plusieurs fichiers de sous-titres à supprimer de la vidéo, puis cliquez sur ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Supprimer]**.
+   * Suivi audio : sous l’en-tête **Suivi audio**, sélectionnez un ou plusieurs fichiers de suivi audio à supprimer de la vidéo, puis cliquez sur ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Supprimer]**.
 
 1. Dans la boîte de dialogue Supprimer, cliquez sur **[!UICONTROL OK]**.
 1. Publiez la vidéo.
@@ -995,22 +994,23 @@ La piste audio d’origine extraite d’un fichier vidéo principal ne peut pas 
 **Pour télécharger des fichiers de sous-titres ou de suivi audio qui ont été chargés dans une vidéo :**
 
 1. Accédez à la ressource vidéo dont vous souhaitez définir la piste audio par défaut.
-1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez l’icône Propriétés (cercle contenant un « i »).
-1. Sur la page Propriétés, sélectionnez l’onglet **[!UICONTROL Sous-titres et pistes audio]**.
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
+1. Sur la page **Propriétés**, sélectionnez l’onglet **[!UICONTROL Captions &amp; Audio Tracks]** .
 1. Effectuez l’une des opérations suivantes :
 
-   * Sous l’en-tête **Sous-titres** , sélectionnez un ou plusieurs fichiers de sous-titres à télécharger dans la vidéo, puis sélectionnez **[!UICONTROL Télécharger]**.
-   * Suivi audio : sous l’en-tête **Suivi audio**, sélectionnez un ou plusieurs fichiers de suivi audio à télécharger depuis la vidéo, puis sélectionnez **[!UICONTROL Télécharger]**.
+   * Sous l’en-tête **Sous-titres** , sélectionnez un ou plusieurs fichiers de sous-titres à télécharger dans la vidéo, puis cliquez sur ![Icône de téléchargement](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Télécharger]**.
+   * Suivi audio : sous l’en-tête **Suivi audio**, sélectionnez un ou plusieurs fichiers de suivi audio à télécharger depuis la vidéo, puis cliquez sur ![Icône de téléchargement](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Télécharger]**.
 
 1. Dans la boîte de dialogue Télécharger, définissez les options suivantes :
 
-   | Option | Description |
+   | Option de téléchargement | Description |
    |--- |--- |
    | Enregistrer sous | Utilisez le nom de fichier par défaut, spécifié dans le champ de texte Enregistrer sous ou indiquez votre propre nom. |
    | Créer un dossier distinct pour chaque ressource | Créez un dossier pour chaque fichier de sous-titres ou de pistes audio que vous avez sélectionné pour téléchargement. |
    | E-mail | Utilisez votre programme de messagerie par défaut pour envoyer le fichier .zip à une adresse e-mail spécifique. |
    | Ressources | Indique le nombre de fichiers à télécharger et la taille totale combinée de tous les fichiers sélectionnés. La désélection de cette option ternit (désactive) le bouton **[!UICONTROL Télécharger]** et vous empêche de télécharger un fichier. |
+   | Rendus | Un rendu fait référence à une autre version ou à un aperçu du fichier d’origine, généralement une version plus petite ou à une résolution inférieure. Si la valeur 0 B est indiquée, cela signifie probablement qu’aucune autre version n’est disponible ou qu’il est trop petit pour enregistrer une taille. |
 
 1. Sélectionnez **[!UICONTROL Télécharger]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
@@ -1060,7 +1060,7 @@ Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier VTT.
 
@@ -1085,11 +1085,11 @@ En règle générale, vous attribuez au fichier de légende `.vtt` le même nom 
 
      Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
 
-   * Pour une expérience de visionneuse de vidéos intégrée, sélectionnez **[!UICONTROL Code intégré]**. Dans la boîte de dialogue Code intégré, sélectionnez le code intégré et copiez-le dans le Presse-papiers, puis collez-le dans un simple éditeur de texte. Ajoutez le code intégré copié avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos intégrée, cliquez sur **[!UICONTROL Code incorporé]**. Dans la boîte de dialogue Code intégré, sélectionnez le code intégré et copiez-le dans le Presse-papiers, puis collez-le dans un simple éditeur de texte. Ajoutez le code intégré copié avec la syntaxe suivante :
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
+     Notez le `,1` à la fin du chemin d’accès à la légende. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
 
 ## Ajout de marques de chapitre à la vidéo {#adding-chapter-markers-to-video}
 
@@ -1170,7 +1170,6 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
    </table>
 
 
-
 ## À propos des miniatures vidéo {#about-video-thumbnails}
 
 Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature doit servir à encourager un client à sélectionner la vidéo.
@@ -1190,26 +1189,28 @@ La possibilité de personnaliser une miniature vidéo n’est disponible qu’ap
 
    * [Téléchargé vos vidéos dans le dossier](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Accédez à une ressource vidéo chargée pour laquelle vous souhaitez modifier l’image miniature.
-1. En mode de sélection de ressources, soit **[!UICONTROL Vue liste]** soit **[!UICONTROL Vue carte]**, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Propriétés]** (cercle contenant un « i »).
-1. Sur la page Propriétés de la vidéo, sélectionnez **[!UICONTROL Modifier la miniature]**.
-1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
+1. En mode de sélection des ressources, sélectionnez la ressource vidéo dans l’icône ![Afficher la carte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Mode Carte) ou ![ icône Afficher la liste](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Mode Liste).
+1. Dans la barre d’outils, cliquez sur ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriétés.
+1. Sur la page Propriétés de la vidéo, cliquez sur **[!UICONTROL Modifier la miniature]**.
+1. Dans la boîte de dialogue Modifier la miniature, effectuez l’une des opérations suivantes :
 
    * Pour utiliser une image de la vidéo comme nouvelle miniature :
 
-      * Dans la barre d’outils, cliquez sur l’option **[!UICONTROL Sélectionner une image dans la vidéo]** .
-      * Sélectionnez le bouton Lecture, puis le bouton Pause sur l’image à capturer comme nouvelle miniature de la vidéo.
+      * Dans la barre d’outils, cliquez sur l’onglet **[!UICONTROL Sélectionner une image dans la vidéo]** .
+      * Cliquez sur ![Icône Lecture](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+      * Cliquez sur ![Icône Pause](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) sur l’image que vous souhaitez capturer comme nouvelle miniature de la vidéo.
 
    * Pour utiliser une ressource image comme nouvelle miniature :
 
-      * Dans la barre d’outils, choisissez **[!UICONTROL Sélectionner une miniature dans Ressources]**.
-      * Choisissez **[!UICONTROL Sélectionner la miniature]**.
+      * Dans la barre d’outils, cliquez sur l’onglet **[!UICONTROL Sélectionner la miniature dans Assets]** .
+      * Cliquez sur le bouton **[!UICONTROL Sélectionner la miniature]** .
       * Accédez à une ressource d’image téléchargée et publiée précédemment que vous souhaitez utiliser. La ressource est automatiquement redimensionnée afin de servir d’image miniature pour la vidéo.
-      * Sélectionnez la ressource image, puis choisissez **[!UICONTROL Sélectionner]**.
+      * Sélectionnez la ressource image, puis cliquez sur **[!UICONTROL Sélectionner]**.
 
-1. Sur la page Modifier la miniature, sélectionnez **[!UICONTROL Enregistrer la modification]**.
-1. Sur la page Propriétés de la vidéo, dans le coin supérieur droit, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
+1. Dans la boîte de dialogue Modifier la miniature, cliquez sur **[!UICONTROL Enregistrer la modification]**.
+1. Sur la page Propriétés de la vidéo, dans le coin supérieur droit, cliquez sur **[!UICONTROL Enregistrer et fermer]** ou **[!UICONTROL Enregistrer]**.
 
 
 
