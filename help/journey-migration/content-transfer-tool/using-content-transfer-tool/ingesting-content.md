@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 38%
 >id="aemcloud_ctt_ingestion"
 >title="Ingestion de contenu"
 >abstract="L’ingestion désigne l’ingestion de contenu à partir du jeu de migration dans l’instance Cloud Service cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extraction de complément"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extraction de complément"
 
 Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, procédez comme suit :
 
@@ -94,7 +94,7 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestion de complément"
 >abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis la précédente activité de transfert de contenu. Une fois l’ingestion terminée, recherchez les erreurs/avertissements éventuels dans les journaux. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Affichage des journaux"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Affichage des journaux"
 
 L’outil de transfert de contenu dispose d’une fonctionnalité qui permet d’extraire du contenu différentiel en effectuant un *complément* du jeu de migration. Cela permet de modifier le jeu de migration pour inclure uniquement le contenu qui a changé depuis l’extraction précédente sans avoir à extraire à nouveau tout le contenu.
 
@@ -113,7 +113,7 @@ Commencez par créer une tâche d’ingestion et assurez-vous que l’option **E
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Dépannage pour l’ingestion de contenu"
 >abstract="Reportez-vous aux journaux d’ingestion et à la documentation afin de trouver des solutions aux raisons courantes de l’échec d’une ingestion ainsi que le moyen de résoudre le problème. Une fois corrigée, l’ingestion peut être exécutée à nouveau."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validation des transferts de contenu "
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validation des transferts de contenu "
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
 
@@ -174,7 +174,7 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Violation de contrainte d’unicité"
 >abstract="Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’ingestion hors balayage. Un seul des nœuds en conflit peut exister."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -194,7 +194,7 @@ Ce conflit doit être résolu manuellement. Une personne qui connait le contenu 
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Impossible de supprimer le nœud référencé"
 >abstract="Les conflits entre versions pour un nœud particulier sur l’instance de destination sont une cause courante de l’échec d’ingestion hors balayage. Les versions du nœud doivent être corrigées."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
 
 Une autre cause courante de l’échec d’une [ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) est un conflit de version pour un noeud particulier sur l’instance de destination. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -212,7 +212,7 @@ Les bonnes pratiques indiquent que si une ingestion **non effacée** doit être 
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Propriété de nœud élevée"
 >abstract="Le dépassement de la taille maximale des valeurs de propriété de nœud est une cause courante de l’échec de l’ingestion. Consultez la documentation, y compris celle relative au rapport BPA, pour remédier à cette situation."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Conditions préalables à la migration"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Conditions préalables à la migration"
 
 La valeur des propriétés de nœud stockées dans MongoDB ne doit pas dépasser 16 Mo. Si une valeur de noeud dépasse la taille prise en charge, l’ingestion échoue et le journal contient l’une des options suivantes :
 
@@ -233,8 +233,8 @@ Pour éviter toute restriction, exécutez l’[analyseur des bonnes pratiques](/
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
->title="Erreurs intermittentes imprévues"
->abstract="Parfois, des erreurs de service intermittentes inattendues peuvent se produire en aval et, malheureusement, le seul recours consiste à simplement relancer l’ingestion."
+>title="Erreurs intermittentes inattendues"
+>abstract="Parfois, des erreurs de service intermittentes inattendues peuvent se produire en aval. Malheureusement, le seul recours consiste à simplement relancer l’ingestion."
 
 Parfois, des problèmes intermittents inattendus peuvent se prêter à des ingérations qui ont échoué et, malheureusement, le seul recours est de relancer l&#39;ingestion. Examinez le journal d’ingestion pour découvrir la cause de l’échec et voir s’il s’aligne sur l’une des erreurs répertoriées ci-dessous, où une nouvelle tentative doit être effectuée.
 

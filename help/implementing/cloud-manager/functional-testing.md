@@ -1,6 +1,6 @@
 ---
 title: Tests fonctionnels
-description: Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement d’AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code.
+description: Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Tests fonctionnels"
->abstract="Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement d’AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code."
+>abstract="Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code."
 
 Découvrez les points de contrôle qualité disponibles dans le [processus de déploiement AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) et les différents types de tests fonctionnels intégrés. Découvrez comment contribuer et optimiser leur utilisation dans le cadre d’une stratégie de test exhaustive.
 
