@@ -4,10 +4,10 @@ description: Cette page décrit comment installer et configurer des lecteurs dan
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 98%
+source-wordcount: '595'
+ht-degree: 95%
 
 ---
 
@@ -35,13 +35,13 @@ Pour mettre à jour votre lecteur, procédez comme suit :
 
 1. Cliquez sur l’onglet **Configuration**, puis sur le bouton **Aux paramètres d’usine** sous l’option **Réinitialiser**.
 
-   ![image](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Bouton À la fabrique sous Option de réinitialisation](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Cliquez sur **Confirmer** pour réinitialiser votre lecteur.
 
 1. Toujours à partir de l’onglet **Configuration**, cliquez sur le bouton **Passer en mode cloud** sous l’option **Activer le mode d’exécution**.
 
-   ![image](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![Bouton Passer en mode cloud sous l’option Activer/désactiver le mode d’exécution](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Le fait de cliquer sur **Confirmer** qui s’affiche lorsque vous passez en mode cloud annule l’enregistrement du lecteur.
 
