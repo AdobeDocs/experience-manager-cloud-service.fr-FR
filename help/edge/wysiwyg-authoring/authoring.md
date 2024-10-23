@@ -4,10 +4,10 @@ description: Découvrez le fonctionnement de la création de contenu avec Edge 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Avec Edge Delivery Services, la création est facile, rapide et flexible. Vous disposez de deux options pour créer du contenu pour Edge Delivery Services :
 
-* [Éditeur universel](#universal-editor) - Interface utilisateur moderne de WYSIWYG (What-you-see-is-you-get) pour créer du contenu dans AEM
+* [Éditeur universel](#universal-editor) - Interface utilisateur moderne de WYSIWYG pour la création de contenu dans AEM
 * [Création basée sur des documents](#document-based) - Microsoft Word ou Google Docs, par exemple
 
 ## Création avec l’éditeur universel {#universal-editor}
@@ -40,9 +40,9 @@ Lorsque vous utilisez Edge Delivery Services avec AEM as a Cloud Service, 
 
 Les blocs sont des composants fondamentaux d’une page diffusée par Edge Delivery Services. Les auteurs et autrices peuvent choisir parmi les blocs par défaut fournis en standard par Adobe ou parmi les blocs personnalisés pour votre projet par votre équipe de développement.
 
-L’éditeur universel fournit une interface utilisateur graphique moderne et intuitive pour créer votre contenu en faisant glisser des blocs.
+Universal Editor fournit une interface utilisateur graphique moderne et intuitive pour créer votre contenu en ajoutant et en organisant des blocs.
 
-![Glisser-déposer des blocs dans l’éditeur universel](assets/blocks.png)
+![Ajout et organisation de blocs dans l’éditeur universel](assets/blocks.png)
 
 Les détails des blocs peuvent ensuite être configurés dans le rail Propriétés.
 
@@ -50,10 +50,10 @@ Les détails des blocs peuvent ensuite être configurés dans le rail Propriét�
 
 Pour plus d’informations sur la création à l’aide de l’éditeur universel, consultez le document [Créer du contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
-Consultez le [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour découvrir comment démarrer votre propre projet pour créer avec des AEM et des Edge Delivery Services.
+Consultez le [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour découvrir comment lancer votre propre projet de création avec des AEM et des Edge Delivery Services.
 
 ## Méthodes de création supplémentaires  {#authoring-methods}
 
-La création WYSIWYG est un outil puissant et intuitif pour les auteurs de contenu. Cependant, il existe de nombreux cas d’utilisation de création différents, raison pour laquelle AEM propose des solutions de création supplémentaires.
+La création WYSIWYG est un outil puissant et intuitif pour les auteurs de contenu. Cependant, il existe de nombreux cas d’utilisation de création, raison pour laquelle AEM propose des solutions de création supplémentaires.
 
 Consultez le document [Choix d’une méthode de création](/help/edge/authoring-methods.md) pour en savoir plus sur les solutions de création AEM offres, y compris la création basée sur des documents et sans interface.
