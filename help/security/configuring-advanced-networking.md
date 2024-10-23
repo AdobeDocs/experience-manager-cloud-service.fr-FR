@@ -4,10 +4,10 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -561,9 +561,7 @@ Le tableau ci-dessous décrit le routage du trafic.
 
 ### Domaines utiles à la configuration {#vpn-useful-domains-for-configuration}
 
-Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de domaines et d’adresses IP associées utiles à la configuration et au développement. Le tableau sous le diagramme décrit ces domaines et adresses IP.
-
-![Configuration de domaine VPN](/help/security/assets/AdvancedNetworking.jpg)
+Le tableau ci-dessous décrit un ensemble de domaines et d’adresses IP utiles à la configuration et au développement.
 
 <table>
 <thead>
