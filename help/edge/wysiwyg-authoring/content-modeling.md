@@ -4,10 +4,10 @@ description: Découvrez comment la modélisation de contenu fonctionne pour la c
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 83%
+source-wordcount: '2196'
+ht-degree: 80%
 
 ---
 
@@ -608,20 +608,7 @@ Il est également possible de définir des métadonnées de page supplémentaire
 
 Il est possible de définir des métadonnées pour chaque chemin ou pour chaque modèle de chemin de manière similaire à un tableau dans AEM as a Cloud Service. Il existe une interface utilisateur de création pour les données de type tableau, similaire aux feuilles de calcul Excel ou Google.
 
-Pour créer ce type de tableau, créez une page, puis utilisez le modèle de métadonnées de la console Sites.
-
-Dans les propriétés de page de la feuille de calcul, définissez les champs de métadonnées dont vous avez besoin, ainsi que l’URL. Ajoutez ensuite des métadonnées par chemin de page ou modèle de chemin de page.
-
-Assurez-vous également que la feuille de calcul est ajoutée à votre mappage de chemin avant de la publier.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+Pour plus d’informations, consultez le document [Utilisation de feuilles de calcul pour gérer les données tabulaires](/help/edge/wysiwyg-authoring/tabular-data.md) pour plus d’informations.
 
 ### Propriétés de page {#page-properties}
 
@@ -631,7 +618,7 @@ La plupart des propriétés de page par défaut disponibles dans AEM sont mappé
 * Heure de la dernière publication du document en tant que `published-time` au format ISO8601.
 * `cq:tags` en tant que `cq-tags` comme liste séparée par des virgules des identifiants de balises.
 
-Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur ou de l’autrice sous forme d’onglet dans la boîte de dialogue Propriétés de la page AEM Sites.
+Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui seront mises à la disposition de l’auteur dans l’éditeur universel.
 
 Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadata`.
 
