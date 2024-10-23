@@ -4,10 +4,10 @@ description: Commencez votre Parcours de migration en vous familiarisant avec le
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 91%
+source-wordcount: '579'
+ht-degree: 87%
 
 ---
 
@@ -39,11 +39,11 @@ Le parcours de migration vers Cloud Service comprend les phases suivantes :
 
 La figure ci-dessous est une représentation graphique générale du parcours recommandé de transition vers AEM as a Cloud Service.
 
-![image](/help/journey-migration/assets/move-aemcloud-process.png)
+![Représentation de haut niveau du parcours de transition recommandé vers AEM as a Cloud Service](/help/journey-migration/assets/move-aemcloud-process.png)
 
 Vous pouvez également consulter le diagramme ci-dessous pour obtenir une vue plus détaillée et plus granulaire du parcours de migration.
 
-![image](/help/journey-migration/assets/migration-process.png)
+![Vue détaillée et granulaire du parcours de migration](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

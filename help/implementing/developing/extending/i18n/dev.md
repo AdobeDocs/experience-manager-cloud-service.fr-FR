@@ -4,10 +4,10 @@ description: Les API Java™ et JavaScript vous permettent d’internationaliser
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 96%
 
 ---
 
@@ -174,7 +174,7 @@ Vérifiez si vous avez internationalisé toutes les chaînes de votre interface 
 
 La capture d’écran ci-dessous illustre la traduction souche pour la page d’accueil d’AEM :
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Traduction boueuse de la page d’accueil AEM](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Pour définir la langue de l’utilisateur ou de l’utilisatrice, configurez la propriété language du nœud preferences du compte d’utilisateur ou d’utilisatrice.
 
