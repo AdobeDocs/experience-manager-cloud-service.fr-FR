@@ -1,20 +1,20 @@
 ---
 title: Utilisation de fragments de contenu (Assets - Fragments de contenu)
-description: Découvrez comment les fragments de contenu des as a Cloud Service Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour la création de pages et la diffusion sans interface utilisateur. Comment les utiliser avec MSM.
+description: Découvrez comment les fragments de contenu de l’as a Cloud Service Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu, idéal pour la création de pages et la diffusion sans interface.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 73%
+source-wordcount: '2220'
+ht-degree: 74%
 
 ---
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (as a Cloud Service AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et [ publier du contenu indépendant des pages ](/help/sites-cloud/authoring/fragments/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface. Ils peuvent également être utilisés avec la [gestion multisite pour vous permettre de réutiliser votre contenu](#reusing-content-fragments-with-msm).
+Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [ publier du contenu indépendant des pages ](/help/sites-cloud/authoring/fragments/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface. Ils peuvent également être utilisés avec la [gestion multisite pour vous permettre de réutiliser votre contenu](#reusing-content-fragments-with-msm).
 
 Les fragments de contenu contiennent du contenu structuré :
 

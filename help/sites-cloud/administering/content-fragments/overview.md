@@ -1,20 +1,20 @@
 ---
 title: Présentation de l’utilisation des fragments de contenu
-description: Découvrez comment les fragments de contenu dans AEM as a Cloud Service vous permettent de créer et d’utiliser du contenu, idéal pour la diffusion sans interface utilisateur et la création de pages.
+description: Découvrez comment les fragments de contenu de Adobe Experience Manager (AEM) vous permettent de créer et d’utiliser du contenu structuré idéal pour la diffusion sans interface utilisateur et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1807'
 ht-degree: 41%
 
 ---
 
 # Présentation de l’utilisation des fragments de contenu {#overview-working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [ publier du contenu indépendant des pages ](/help/sites-cloud/authoring/fragments/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour une diffusion sans interface et la création de pages.
+As a Cloud Service Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour [la diffusion sans interface](/help/headless/what-is-headless.md) et la [création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!IMPORTANT]
 >
@@ -24,7 +24,7 @@ Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu
 >
 >Cette section traite de la console **Fragments de contenu** et de l’ *nouvel* éditeur de fragments de contenu. Ils ont été développés pour la diffusion de contenu sans interface utilisateur graphique (bien qu’ils puissent être utilisés pour tous les scénarios).
 >
->Pour plus d’informations, consultez :
+>Pour plus d’informations, consultez ce qui suit :
 >
 >* utilisation de la console **Assets** pour [gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 >* l’utilisation de l’ [*éditeur de fragment de contenu* d’origine](/help/assets/content-fragments/content-fragments-variations.md),
