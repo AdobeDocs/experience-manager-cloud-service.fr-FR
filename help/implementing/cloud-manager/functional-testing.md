@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1322'
 ht-degree: 7%
 
 ---
@@ -91,7 +91,7 @@ Pour plus d’informations, consultez [Tests fonctionnels Java](/help/implementi
 
 Pour optimiser le contrôle des risques pour votre développement spécifique au client, Adobe vous encourage à capturer des tests d’interface utilisateur critiques dans AEM as a Cloud Service. Limitez-les, mais ciblez-les sur l’optimisation de leur impact sur l’expérience client.
 
-Les tests sont conditionnés dans une image Docker, conçue pour être aussi volatile que possible (avec prise en charge de Cypress, Selenium, Java et JavaScript). Ils suivent les mêmes caractéristiques et objectifs que les tests fonctionnels personnalisés.
+Les tests sont conditionnés dans une image Docker, conçue pour être aussi volatile que possible (avec prise en charge de Cypress, Playwright, Selenium, Java et JavaScript). Ils suivent les mêmes caractéristiques et objectifs que les tests fonctionnels personnalisés.
 
 >[!NOTE]
 >

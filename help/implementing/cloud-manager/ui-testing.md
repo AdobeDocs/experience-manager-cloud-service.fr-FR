@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f504f622446f082c3662c39cc0a249b6f92a4b6e
+source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
 workflow-type: tm+mt
-source-wordcount: '2630'
-ht-degree: 79%
+source-wordcount: '2698'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ Le test d’interface utilisateur personnalisé est une fonctionnalité facultat
 
 AEM fournit une suite intégrée de [points de contrôle de qualité Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) pour garantir la fluidité de la mise à jour des applications personnalisées. En particulier, les points de contrôle informatiques prennent déjà en charge la création et l’automatisation des tests personnalisés à l’aide des API d’AEM.
 
-Les tests de l’interface utilisateur sont empaquetés dans une image Docker afin de permettre un large choix de langages et de structures (telles que Cypress, Selenium, Java et Maven, ou encore Javascript). En outre, un projet de tests d’interface utilisateur peut facilement être généré en utilisant [l’ archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr).
+Les tests de l’interface utilisateur sont empaquetés dans une image Docker afin de permettre un large choix de langages et de structures (telles que Cypress, Selenium, Java et Maven, ou encore Javascript). En outre, un projet de tests d’interface utilisateur peut facilement être généré en utilisant [l’ archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Adobe encourage l’utilisation de Cypress, car il propose un rechargement en temps réel et une attente automatique, ce qui permet de gagner du temps et d’améliorer la productivité pendant les tests. Cypress fournit également une syntaxe simple et intuitive, ce qui facilite l’apprentissage et l’utilisation, même pour les personnes qui n’ont pas l’habitude d’effectuer des tests.
 
@@ -44,17 +44,15 @@ Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écr
 
 Cette section décrit les étapes requises pour configurer des tests d’interface utilisateur pour une exécution dans Cloud Manager.
 
-1. Définissez le langage de programmation que vous souhaitez utiliser.
+1. Déterminez la structure de test que vous souhaitez utiliser.
 
-   * Pour Cypress, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+   * Pour Cypress (par défaut), utilisez l’exemple de code du [référentiel d’exemples de test d’AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) ou utilisez l’exemple de code généré automatiquement dans le dossier `ui.tests` de votre référentiel Cloud Manager.
 
-   * Pour JavaScript et WDIO, utilisez l’exemple de code généré automatiquement dans le dossier `ui.tests` de votre référentiel Cloud Manager.
+   * Pour Playwright, utilisez l’exemple de code du [référentiel d’exemples de test d’AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-     >[!NOTE]
-     >
-     >Si votre référentiel a été créé avant la création automatique des dossiers `ui.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+   * Pour Webdriver.IO, utilisez l’exemple de code du référentiel [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Pour Java et WebDriver, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Pour Selenium WebDriver, utilisez l’exemple de code du [référentiel d’exemples de test d’AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Pour les autres langages de programmation, reportez-vous à la section [Création de tests d’interface utilisateur](#building-ui-tests) dans ce document pour configurer le projet test.
 
@@ -270,8 +268,8 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 
 | Type | Valeur | Description |
 |----------------------|-------|-----------------------------------------------------------------------|
-| Processeur | 2.0 | Quantité de temps réservé au processeur par exécution de test |
-| Mémoire | 1Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
+| Processeur | 2.0 | Laps de temps CPU réservé par exécution de test. |
+| Mémoire | 1Gi | Quantité de mémoire allouée au test, valeur en gibioctets. |
 | Expiration | 30m | Durée au bout de laquelle le test est terminé. |
 | Durée recommandée | 15m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que la durée indiquée. |
 
@@ -290,7 +288,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service de Selenium est un processus en deux étapes.
 
 1. Lecture de l’URL du service Selenium à partir de la variable d’environnement `SELENIUM_BASE_URL`.
-1. Sondage à intervalle régulier vers le [point d’entrée de statut](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposé par l’API Selenium.
+1. Sondage à intervalles réguliers au [point d’entrée de statut](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposé par l’API Selenium.
 
 Une fois que le point d’entrée du statut de Selenium donne une réponse positive, les tests peuvent débuter.
 
@@ -432,6 +430,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> Vous trouverez un exemple de mise en oeuvre dans l’exemple de module de test de lecture sur [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+
+
 ## Exécuter les tests de l’interface utilisateur localement {#run-ui-tests-locally}
 
 Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud Manager, il est recommandé d’exécuter localement les tests de l’interface utilisateur vers le [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou dans une instance AEM as a Cloud Service réelle.
@@ -494,7 +497,36 @@ Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud�
 >* Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel
 >* Votre machine doit utiliser la dernière version de Chrome, car le test télécharge automatiquement la dernière version de ChromeDriver à des fins de test.
 >
->Pour plus d’informations, reportez-vous au [Référentiel de l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Pour plus d’informations, reportez-vous au [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+
+### Exemple de test de lecture {#playwright-sample}
+
+1. Ouvrez une interface shell et accédez au dossier `ui.tests` dans votre référentiel
+
+1. Exécutez la commande ci-dessous pour créer une image Docker à l’aide de Maven
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. Exécutez la commande ci-dessous pour lancer les tests à l’aide de Maven.
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>Les fichiers journaux sont stockés dans le dossier `target/` de votre référentiel.
+>
+>Pour plus d’informations, reportez-vous au [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+
 
 ### Exemple de test Java Selenium WebDriver {#java-sample}
 
