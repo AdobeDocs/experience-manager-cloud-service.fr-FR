@@ -2,16 +2,16 @@
 title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # Approuver des ressources pour le hub de contenus {#approve-assets-content-hub}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Approuver des ressources pour Content Hub](assets/content-hub-approve-assets.png)
@@ -28,7 +28,7 @@ Avant de commencer, vous devez disposer des éléments suivants :
 
 * Autorisations d’écriture pour modifier les métadonnées de la ressource afin de pouvoir modifier le champ **[!UICONTROL Status]** disponible dans les [propriétés de la ressource](/help/assets/manage-organize-assets-view.md##manage-asset-status) pour une ressource.
 
-## Approuver des ressources pour le hub de contenus {#approve-assets-for-content-hub}
+## Approuver des ressources pour le hub de contenus{#approve-assets-for-content-hub}
 
 Les ressources marquées comme `approved` dans Assets as a Cloud Service sont automatiquement disponibles dans Content Hub.
 

@@ -2,16 +2,16 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 16%
+source-wordcount: '1822'
+ht-degree: 13%
 
 ---
 
 # Configurer l’interface d’utilisation du hub de contenus {#configure-content-hub-user-interface}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ En tant qu’administrateur, gérez les options de configuration suivantes pour 
 * [Filtres](#configure-filters-content-hub)
 
 * [Détails des ressources](#configure-asset-details-content-hub)
+* [Carte de ressources](#asset-card)
 
 * [Recherche](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Les propriétés activées dans l’interface utilisateur de configuration s’a
 
 ![Propriétés de ressource sur Content Hub](assets/config-ui-asset-properties.png)
 
+### Carte de ressources {#asset-card}
+
+Dans l’interface utilisateur de Content Hub, la vue au niveau de la ressource affiche la **carte de ressources** des ressources approuvées. La carte de ressources affiche les détails clés de la ressource pour les utilisateurs. La carte de ressources comporte une miniature de ressource, des métadonnées de ressource et d’autres options exploitables. Les administrateurs Content Hub ajoutent les champs de métadonnées au niveau du référentiel pour afficher le nom des métadonnées et leur valeur de métadonnées dans la carte de ressources de toutes les ressources à la fois. La carte de ressources accepte six champs de métadonnées. Le champ de métadonnées comprend le nom des métadonnées et la propriété des métadonnées. La carte de ressources affiche les métadonnées et leur valeur de métadonnées. L’administrateur spécifie le nom des métadonnées et les associe à la propriété de métadonnées appropriée. La propriété metadata effectue le rendu d’une valeur de métadonnées dans la carte de ressources. La propriété de métadonnées est liée aux propriétés de la ressource. Par conséquent, la valeur de métadonnées générée varie selon toutes les cartes de ressources. Par exemple, les administrateurs ajoutent une métadonnée **Concédé** dans la carte de ressources et mappent ces métadonnées **Sous licence** à la propriété de métadonnées correcte. Les cartes de ressources de l’interface utilisateur de Content Hub affichent ces métadonnées **sous licence** et leur valeur de métadonnées (**Oui** ou **Non**). Dans cet exemple, Assets ayant une licence affiche **Oui** dans la carte de ressources tandis que les ressources sans licence affichent **NON**.
+
+![Propriétés de ressource sur Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Ajout, modification ou suppression d’une métadonnées sous Carte de ressources {#add-edit-delete-metadata}
+
+Pour ajouter des métadonnées à une ressource, reportez-vous aux instructions ci-dessous :
+
+1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Asset Card**.
+2. Cliquez sur **Ajouter des métadonnées**. La boîte de dialogue **Ajouter des métadonnées de carte de ressource** s’affiche.
+3. Indiquez le nom des métadonnées dans le champ **Label** et sélectionnez une propriété de métadonnées dans le champ **Metadata** . Par exemple, nommez les métadonnées **Concédé** et sélectionnez **dc:license** comme propriété de métadonnées. La propriété de métadonnées sélectionnée est mappée à une valeur qui s’affiche avec les métadonnées dans l’interface utilisateur de Content Hub. Dans cet exemple, la propriété **dc:license** est mappée à l’ID de licence. Cette propriété suit le chemin d’accès à la ressource spécifiée (licence de PDF) pour localiser la ressource correspondante et effectue en conséquence le rendu d’une valeur booléenne (**Oui** ou **Non**) dans l’interface utilisateur en fonction de la présence de la ressource. Si le PDF de licence est trouvé, il affiche **Oui**. Sinon, il affiche **Non**. Par conséquent, dans l’interface utilisateur de Content Hub, les ressources avec un ID de licence affichent **Oui**, tandis que les ressources sans ID de licence affichent **Non**.
+4. Cliquez sur **Confirmer**, puis sur **Enregistrer** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
+   ![carte de ressource](/help/assets/assets/asset-card.png)
+
+De même, cliquez sur ![edit](/help/assets/assets/edit-content-hub.svg) disponible en regard de chaque propriété disponible pour apporter les modifications requises ou cliquez sur ![delete](/help/assets/assets/delete-content-hub.svg) pour supprimer toute propriété de métadonnées existante. Cliquez sur **Enregistrer** après avoir apporté toutes les modifications pour appliquer les modifications.
+
+
 ### Recherche {#configure-metadata-search-content-hub}
 
 Les administrateurs peuvent définir les champs de métadonnées qui font l’objet d’une recherche lorsqu’un utilisateur spécifie un critère de recherche sur Content Hub. Procédez comme suit :
@@ -174,7 +194,7 @@ Les mises à jour de branding activées dans l’interface utilisateur de config
 
 ![Marque de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Ressources expirées {#expired-assets-content-hub}
+### Ressources expirées{#expired-assets-content-hub}
 
 Les administrateurs peuvent contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, les administrateurs et administratrices peuvent également définir si les personnes peuvent les télécharger.
 
