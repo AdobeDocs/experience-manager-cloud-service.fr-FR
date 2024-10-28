@@ -2,10 +2,10 @@
 title: Migration des groupes
 description: Présentation de la migration des groupes dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 10%
+source-wordcount: '1447'
+ht-degree: 9%
 
 ---
 
@@ -46,6 +46,8 @@ Notez que le chemin d’accès consigné/signalé pour un groupe n’est que le 
 
 La plupart des groupes migrés sont configurés pour être gérés par IMS.  Cela signifie qu’un groupe dans IMS portant le même nom sera lié au groupe dans AEM, et que tous les utilisateurs IMS du groupe IMS deviendront AEM utilisateurs et membres du groupe dans l’.  Cela permet à ces utilisateurs d’accéder au contenu en fonction des stratégies de listes de contrôle d’accès ou de groupes d’utilisateurs fermés du groupe.
 
+Notez que les groupes migrés ne sont plus considérés comme des &quot;groupes locaux&quot; ; il s’agit de groupes IMS, et ils doivent être recréés dans IMS afin de pouvoir être synchronisés entre AEM et IMS.  Les groupes peuvent être créés dans IMS par l’intermédiaire d’un Admin Console, entre autres méthodes, individuellement ou en bloc.  Voir [Gestion des groupes d’utilisateurs](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) pour plus d’informations sur la création de groupes individuellement ou en bloc sur l’Admin Console.
+
 L’exception à cette configuration IMS concerne les groupes créés par les collections Assets. Lorsqu’une collection est créée sur AEM, les groupes sont créés pour accéder à cette collection ; ces groupes sont migrés vers le système cloud, mais ils ne sont pas configurés pour être gérés par IMS.  Pour ajouter des utilisateurs IMS à ces groupes, ils doivent être ajoutés à la page Propriétés du groupe dans l’interface utilisateur d’Assets, individuellement ou collectivement dans le cadre d’un autre groupe IMS.
 
 
@@ -53,7 +55,7 @@ L’exception à cette configuration IMS concerne les groupes créés par les co
 
 CTT version 3.0.20 et ultérieure comprend une option pour désactiver la migration des groupes.  Il est configuré dans la console OSGI de la manière suivante :
 
-* Ouvrez la configuration OSGI `(http://<server> /system/console/configMgr)`.
+* Ouvrez la configuration OSGI `(http://<server>/system/console/configMgr)`.
 * Cliquez sur la configuration appelée **Configuration du service d’extraction de l’outil de transfert de contenu**
 * Décochez la case **Inclure des groupes dans la migration** pour désactiver les migrations de groupes.
 * Cliquez sur **Enregistrer** pour vous assurer que la configuration est enregistrée et active sur le serveur.
@@ -73,7 +75,9 @@ Outre les groupes de chaque utilisateur, le rapport contient un champ dans leque
 
 Ces cas peuvent se produire simultanément, et en même temps que les cas précédents.
 
-Le rapport Utilisateur est ajouté à la fin du rapport Migration des principaux (et fait donc partie de celui-ci) (voir [Résumé final et rapport](#final-summary-and-report) ci-dessous).
+Le rapport Utilisateur est ajouté à la fin du rapport Migration des principaux (et fait donc partie de celui-ci) (voir [Résumé final et rapport](#final-summary-and-report) ci-dessous).  Les informations de ce rapport, y compris les groupes signalés pour chaque utilisateur, peuvent être utilisées pour créer un fichier de téléchargement d’utilisateur en bloc qui peut être utilisé en Admin Console pour créer de nombreux utilisateurs dans IMS en bloc.  Les utilisateurs IMS existants peuvent également être modifiés en bloc.
+
+Voir [Gestion de plusieurs utilisateurs | Chargement CSV en masse ](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) pour plus d’informations sur la création ou la modification d’utilisateurs en masse via l’Admin Console.
 
 ## Considérations supplémentaires {#additional-considerations}
 
