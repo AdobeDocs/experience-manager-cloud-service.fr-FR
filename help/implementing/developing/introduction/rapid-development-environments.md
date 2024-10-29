@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
-ht-degree: 42%
+source-wordcount: '4863'
+ht-degree: 41%
 
 ---
 
@@ -277,7 +277,7 @@ Le modèle d’utilisation général est le suivant : `aio aem:rde:install <art
 
 Vous trouverez quelques exemples ci-dessous :
 
-<u>Déploiement d’un package de contenu</u>
+#### Déploiement d’un module de contenu {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ Tout package AEM peut être déployé, par exemple des packages comportant du co
 >
 >La configuration Dispatcher pour le projet WKND n’est pas déployée au moyen de l’installation du package de contenu ci-dessus. Déployez-le séparément en suivant les étapes &quot;Déploiement d’une configuration Apache/Dispatcher&quot;.
 
-<u>Déploiement d’une configuration OSGi</u>
+#### Déploiement d’une configuration OSGI {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ Où la réponse pour un déploiement réussi ressemble à ce qui suit :
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Déploiement d’un lot</u>
+#### Déploiement d’un lot {#deploy-bundle}
 
 Pour déployer un lot, utilisez :
 
@@ -324,7 +324,7 @@ Où la réponse pour un déploiement réussi ressemble à ce qui suit :
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Déployer un fichier de contenu</u>
+#### Déploiement d’un fichier de contenu {#deploy-content-file}
 
 Pour déployer un fichier de contenu, saisissez la commande suivante :
 
@@ -337,7 +337,7 @@ Où la réponse pour un déploiement réussi ressemble à ce qui suit :
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Déploiement d’une configuration Apache/Dispatcher</u>
+#### Déploiement d’une configuration Apache/Dispatcher {#deploy-apache-config}
 
 L’ensemble de la structure de dossiers doit se présenter sous la forme d’un fichier zip pour ce type de configuration.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 L’exemple de code ci-dessus illustre le comportement si un lot ne se résout pas. Dans ce cas, il est &quot;intermédiaire&quot; et n’est installé que si ses exigences (importations manquantes, dans ce cas) sont satisfaites par l’installation d’un autre code.
+
+#### Déploiement de la configuration associée au pipeline (configurations yaml) {#deploy-config-pipeline}
+
+Les configurations spécifiques à un environnement (un ou plusieurs fichiers yaml) décrites dans l’article [Utilisation de pipelines de configuration](/help/operations/config-pipeline.md) peuvent être déployées comme suit :
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+où my-config-folder est le dossier parent contenant vos configurations yaml.
+
+Vous pouvez également installer un fichier zip contenant l’arborescence du dossier de configuration :
+
+`aio aem:rde:install -t env-config config.zip`
+
+Notez que le tableau envTypes du fichier yaml doit inclure la valeur *rde*, comme dans l’exemple ci-dessous :
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Déploiement du code frontal en fonction des thèmes du site et des modèles de site {#deploying-themes-to-rde}
 

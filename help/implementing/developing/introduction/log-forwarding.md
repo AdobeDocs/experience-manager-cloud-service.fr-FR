@@ -4,7 +4,7 @@ description: En savoir plus sur le transfert des journaux vers Splunk et d’aut
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Cet article est organisé de la manière suivante :
 
 1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-1. Pour les types d’environnements autres que RDE (qui n’est actuellement pas pris en charge), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager, comme référencé par [cette section](/help/operations/config-pipeline.md#creating-and-managing). Notez que les pipelines de pile complète et les pipelines de niveau web ne déploient pas le fichier de configuration.
+1. Pour les types d’environnements autres que RDE (qui utilise des outils de ligne de commande), créez un pipeline de configuration de déploiement ciblé dans Cloud Manager, comme référencé par [cette section](/help/operations/config-pipeline.md#creating-and-managing). Notez que les pipelines de pile complète et les pipelines de niveau web ne déploient pas le fichier de configuration.
 
 1. Déployez la configuration.
 

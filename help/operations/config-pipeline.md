@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Découvrez comment utiliser les pipelines de configuration pour déployer diffé
 
 Un pipeline de configuration Cloud Manager déploie les fichiers de configuration (créés au format YAML) dans un environnement cible. Un certain nombre de fonctionnalités d’AEM as a Cloud Service peuvent être configurées de cette manière, notamment le transfert de journal, les tâches de maintenance liées à la purge et plusieurs fonctionnalités de réseau de diffusion de contenu.
 
-Les pipelines de configuration peuvent être déployés via Cloud Manager pour les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test). Les RDE ne sont pas pris en charge.
+Les pipelines de configuration peuvent être déployés via Cloud Manager pour les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test). Les fichiers de configuration peuvent être déployés dans des environnements de développement rapide (RDE) à l’aide de l’ [outil de ligne de commande](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 Les sections suivantes de ce document donnent un aperçu d’informations importantes concernant la manière dont les pipelines de configuration peuvent être utilisés et la manière dont les configurations doivent être structurées. Il décrit les concepts généraux partagés sur l’ensemble ou un sous-ensemble des fonctionnalités prises en charge par les pipelines de configuration.
 
@@ -53,6 +53,9 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 Pour plus d’informations sur la création et la configuration des pipelines, voir le document [Pipelines CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 Lors de la création d’un pipeline de configuration dans Cloud Manager, veillez à sélectionner un **déploiement ciblé** plutôt que le **code de pile complet** lors de la configuration du pipeline.
+
+Comme nous l’avons mentionné précédemment, la configuration pour les RDE est déployée à l’aide de l’[outil de ligne de commande](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) plutôt que d’un pipeline.
+
 
 ## Syntaxe commune {#common-syntax}
 
