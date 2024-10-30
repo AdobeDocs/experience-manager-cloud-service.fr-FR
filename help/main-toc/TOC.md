@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [Formats de fichiers pris en charge](/help/assets/file-format-support.md)
    + [Présentation des microservices de ressources](/help/assets/asset-microservices-overview.md)
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
+   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [Activation d’Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Utilisateurs collaborateurs d’Assets](/help/assets/assets-collaborator-users.md)
    + Gestion des ressources numériques {#manage}
       + Sélecteur de ressources micro front-end {#asset-selector}
          + [Vue d’ensemble du sélecteur de ressources](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [Partager des ressources dans le hub de contenus](/help/assets/share-assets-content-hub.md)
       + [Télécharger des ressources à l’aide du hub de contenus](/help/assets/download-assets-content-hub.md)
       + [Gérer des collections dans le hub de contenus](/help/assets/collections-content-hub.md)
+      + [Gestion d’Assets sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Modifier des images à l’aide d’Adobe Express dans le hub de contenus](/help/assets/edit-images-content-hub.md)
       + [Asset Insights dans le hub de contenus](/help/assets/insights-content-hub.md)
       + [Questions fréquentes sur le hub de contenus](/help/assets/frequently-asked-questions-content-hub.md)
