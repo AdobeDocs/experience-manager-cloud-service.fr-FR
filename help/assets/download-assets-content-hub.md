@@ -3,10 +3,10 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger des ressources à partir du portail Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
@@ -22,20 +22,12 @@ Content Hub vous permet de télécharger et de partager vos ressources. Ces ress
 
 Vous pouvez télécharger une ou plusieurs ressources à l’aide de Content Hub. Les versions d’origine de la ressource sont téléchargées.
 
-## Conditions préalables {#prerequisites}
-
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
-
-## Télécharger une ressource {#download-single-asset}
-
-[Approuvez la licence de la ressource](/help/assets/approve-assets-content-hub.md) avant de la télécharger.
-
-### Téléchargement unique {#single-download-asset}
+## Télécharger une ressource sous licence unique {#single-download-asset}
 
 Sélectionnez une ressource et cliquez sur ![télécharger](/help/assets/assets/download-icon.svg) dans le rail supérieur. La boîte de dialogue Télécharger la ressource affiche la licence de la ressource. Acceptez les conditions et conditions de licence et cliquez sur **Télécharger**.
 Vous pouvez également cliquer sur ![télécharger](/help/assets/assets/download-icon.svg) dans la carte de ressource pour télécharger la ressource.
 
-#### Téléchargement de ressource unique à partir de la boîte de dialogue Ressource {#single-download-from-asset-dialog-box}
+### Télécharger une seule ressource sous licence depuis la boîte de dialogue Ressource {#single-download-from-asset-dialog-box}
 
 1. Cliquez sur la miniature de la ressource. La boîte de dialogue Ressource s’affiche.
 1. Cliquez sur ![télécharger](/help/assets/assets/download-icon.svg) dans la barre d’outils la plus à droite. Le volet de téléchargement affiche les rendus de ressources et la case à cocher d’acceptation des conditions et conditions de licence.
@@ -49,7 +41,7 @@ Vous pouvez également cliquer sur ![télécharger](/help/assets/assets/download
    * Cliquez sur la **boîte de rendu d’origine** pour revenir au rendu de ressource d’origine dans le volet de gauche.
 1. Acceptez les conditions de licence (pour la ressource sous licence) et cliquez sur **Télécharger** pour télécharger la ressource.
 
-### Téléchargement multiple {#multi-download}
+## Télécharger plusieurs Assets sous licence{#multi-download}
 
 1. Sélectionnez les ressources et cliquez sur ![télécharger](/help/assets/assets/download-icon.svg) dans le rail supérieur. La boîte de dialogue qui s’affiche varie selon que la liste de téléchargement inclut des ressources expirées ou uniquement des ressources non expirées. <br/>
    **Boîte de dialogue Télécharger les ressources expirées :** Cette boîte de dialogue affiche l’aperçu des ressources expirées avec leur date d’expiration dans le volet de gauche. Le nombre de ressources expirées sur le total sélectionné s’affiche dans le volet de droite. Cliquez sur **Continuer avec toutes les ressources** pour télécharger les ressources expirées avec d’autres ressources (le cas échéant). La boîte de dialogue Télécharger les ressources s’affiche. Voir la [boîte de dialogue Télécharger des ressources](#Download-asset-dialog-box) pour continuer.
@@ -69,7 +61,7 @@ Vous pouvez également cliquer sur ![télécharger](/help/assets/assets/download
 1. Acceptez les conditions générales, puis cliquez sur **Télécharger** pour télécharger les ressources associées aux licences disponibles dans le volet de gauche.
    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
-### Téléchargement de ressources sans licence {#download-non-licensed-assets}
+### Téléchargement d’Assets sans licence {#download-non-licensed-assets}
 
 Pour télécharger des ressources sans licence, sélectionnez-les et cliquez sur ![télécharger](/help/assets/assets/download-icon.svg) dans le rail supérieur.
 

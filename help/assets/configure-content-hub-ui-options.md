@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 13%
+source-wordcount: '1526'
+ht-degree: 16%
 
 ---
 
@@ -146,17 +146,13 @@ Les propriétés activées dans l’interface utilisateur de configuration s’a
 
 ### Carte de ressources {#asset-card}
 
-Dans l’interface utilisateur de Content Hub, la vue au niveau de la ressource affiche la **carte de ressources** des ressources approuvées. La carte de ressources affiche les détails clés de la ressource pour les utilisateurs. La carte de ressources comporte une miniature de ressource, des métadonnées de ressource et d’autres options exploitables. Les administrateurs Content Hub ajoutent les champs de métadonnées au niveau du référentiel pour afficher le nom des métadonnées et leur valeur de métadonnées dans la carte de ressources de toutes les ressources à la fois. La carte de ressources accepte six champs de métadonnées. Le champ de métadonnées comprend le nom des métadonnées et la propriété des métadonnées. La carte de ressources affiche les métadonnées et leur valeur de métadonnées. L’administrateur spécifie le nom des métadonnées et les associe à la propriété de métadonnées appropriée. La propriété metadata effectue le rendu d’une valeur de métadonnées dans la carte de ressources. La propriété de métadonnées est liée aux propriétés de la ressource. Par conséquent, la valeur de métadonnées générée varie selon toutes les cartes de ressources. Par exemple, les administrateurs ajoutent une métadonnée **Concédé** dans la carte de ressources et mappent ces métadonnées **Sous licence** à la propriété de métadonnées correcte. Les cartes de ressources de l’interface utilisateur de Content Hub affichent ces métadonnées **sous licence** et leur valeur de métadonnées (**Oui** ou **Non**). Dans cet exemple, Assets ayant une licence affiche **Oui** dans la carte de ressources tandis que les ressources sans licence affichent **NON**.
+Vous pouvez également configurer les champs de métadonnées clés que vous devez afficher sur la **carte de ressources** jusqu’à 6 champs au maximum. Pour cela, procédez comme suit :
 
-![Propriétés de ressource sur Content Hub](/help/assets/assets/metadata-on-asset-card.png)
-
-#### Ajout, modification ou suppression d’une métadonnées sous Carte de ressources {#add-edit-delete-metadata}
-
-Pour ajouter des métadonnées à une ressource, reportez-vous aux instructions ci-dessous :
+![Métadonnées clé sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Asset Card**.
 2. Cliquez sur **Ajouter des métadonnées**. La boîte de dialogue **Ajouter des métadonnées de carte de ressource** s’affiche.
-3. Indiquez le nom des métadonnées dans le champ **Label** et sélectionnez une propriété de métadonnées dans le champ **Metadata** . Par exemple, nommez les métadonnées **Concédé** et sélectionnez **dc:license** comme propriété de métadonnées. La propriété de métadonnées sélectionnée est mappée à une valeur qui s’affiche avec les métadonnées dans l’interface utilisateur de Content Hub. Dans cet exemple, la propriété **dc:license** est mappée à l’ID de licence. Cette propriété suit le chemin d’accès à la ressource spécifiée (licence de PDF) pour localiser la ressource correspondante et effectue en conséquence le rendu d’une valeur booléenne (**Oui** ou **Non**) dans l’interface utilisateur en fonction de la présence de la ressource. Si le PDF de licence est trouvé, il affiche **Oui**. Sinon, il affiche **Non**. Par conséquent, dans l’interface utilisateur de Content Hub, les ressources avec un ID de licence affichent **Oui**, tandis que les ressources sans ID de licence affichent **Non**.
+3. Indiquez le nom des métadonnées dans le champ **Label** et sélectionnez une propriété de métadonnées dans le champ **Metadata** .
 4. Cliquez sur **Confirmer**, puis sur **Enregistrer** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
    ![carte de ressource](/help/assets/assets/asset-card.png)
 
