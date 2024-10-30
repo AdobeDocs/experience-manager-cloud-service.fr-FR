@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
-workflow-type: ht
-source-wordcount: '5684'
-ht-degree: 100%
+source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
+workflow-type: tm+mt
+source-wordcount: '5687'
+ht-degree: 99%
 
 ---
 
@@ -1091,7 +1091,7 @@ ht-degree: 100%
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Ajouter un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Ajouter un référentiel externe (adoption précoce)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
@@ -1306,6 +1306,7 @@ ht-degree: 100%
       + [Validation et débogage à l’aide de l’héritage des outils Dispatcher](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [Réseau CDN dans AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurer le trafic sur le réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Redirections d’URL sans pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurer les informations d’identification et l’authentification du réseau CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configurer les pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md)
