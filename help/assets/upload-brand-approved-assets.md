@@ -6,16 +6,16 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Chargement de ressources approuvées pour la marque dans Content Hub {#upload-brand-approved-assets-content-hub}
+# Charger des ressources approuvées pour la marque dans le hub de contenus {#upload-brand-approved-assets-content-hub}
 
 >[!CONTEXTUALHELP]
 >id="upload_assets_content_hub"
->title="Chargement de ressources approuvées pour la marque dans Content Hub"
->abstract="Ajoutez des ressources approuvées à Content Hub à partir du système de fichiers local ou importez des ressources à partir de OneDrive ou de sources de données Dropbox. Toutes les ressources s’affichent au niveau supérieur dans Content Hub, quelle que soit la structure de dossiers pour améliorer les fonctionnalités de recherche."
+>title="Charger des ressources approuvées pour la marque dans le hub de contenus"
+>abstract="Ajoutez des ressources approuvées au hub de contenus à partir du système de fichiers local ou importez des ressources à partir de OneDrive ou de sources de données Dropbox. Toutes les ressources s’affichent au niveau supérieur dans le hub de contenus, quelle que soit la structure de dossiers, pour améliorer les fonctionnalités de recherche."
 
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
