@@ -1,12 +1,12 @@
 ---
 title: Transfert de journal pour AEM as a Cloud Service
-description: En savoir plus sur le transfert des journaux vers Splunk et d’autres fournisseurs de journalisation dans AEM as a Cloud Service
+description: En savoir plus sur le transfert des journaux vers les fournisseurs de journalisation dans AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 1%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est pas encore disponible et certaines destinations de journalisation peuvent ne pas être disponibles au moment de la publication. En attendant, vous pouvez ouvrir un ticket d’assistance pour transférer les journaux vers **Splunk**, comme décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>Le transfert de journal est désormais configuré en libre-service, à la différence de la méthode héritée, qui nécessitait l’envoi d’un ticket d’assistance à l’Adobe. Consultez la section [Migration](#legacy-migration) si le transfert de journal a été configuré par Adobe.
 
-Les clients qui disposent d’une licence pour un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent avoir AEM journaux (y compris Apache/Dispatcher) et des journaux CDN transférés vers les destinations de journalisation associées. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
+Les clients disposant d’une licence avec un fournisseur de journalisation ou hébergeant un produit de journalisation peuvent avoir AEM journaux (y compris Apache/Dispatcher) et des journaux CDN transférés vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
 * Stockage Azure Blob
-* DataDog
+* Datadog
 * Elasticsearch ou OpenSearch
 * HTTPS
 * Splunk
 
-Le transfert de journal est configuré en libre-service en déclarant une configuration dans Git et en la déployant via le pipeline de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test).
+Le transfert de journal est configuré en libre-service en déclarant une configuration dans Git et en la déployant via le pipeline de configuration Cloud Manager vers les types d’environnements de production (hors environnements de test), de développement, d’évaluation et de production RDE.
 
 Il existe une option pour que les journaux d’AEM et Apache/Dispatcher soient acheminés par le biais d’AEM infrastructure de mise en réseau avancée, telle qu’une adresse IP de sortie dédiée.
 
@@ -139,6 +139,8 @@ Voici une capture d’écran d’un exemple de configuration de jeton SAS :
 
 ![Configuration du jeton Azure Blob SAS](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Si les logs ont cessé d’être diffusés après avoir fonctionné correctement, vérifiez si le jeton SAS que vous avez configuré est toujours valide, car il a peut-être expiré.
+
 #### Journaux CDN Azure Blob Storage {#azureblob-cdn}
 
 Chacun des serveurs de journalisation répartis dans le monde produira un nouveau fichier toutes les quelques secondes, sous le dossier `aemcdn`. Une fois créé, le fichier ne sera plus annexé au fichier. Le format du nom de fichier est AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Par exemple, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 Considérations :
 
 * Créez une clé API, sans intégration avec un fournisseur cloud spécifique.
-* la propriété tags est facultative.
+* La propriété tags est facultative.
 * Pour les journaux d’AEM, la balise source de données est définie sur `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` ou `aemhttpderror`.
 * Pour les journaux CDN, la balise source Datadog est définie sur `aemcdn`.
-* la balise du service de données est définie sur `adobeaemcloud`, mais vous pouvez la remplacer dans la section des balises.
+* La balise du service Datadog est définie sur `adobeaemcloud`, mais vous pouvez la remplacer dans la section des balises.
+* Si votre pipeline d’ingestion utilise des balises Datadog pour déterminer l’index approprié pour les journaux de transfert, vérifiez que ces balises sont correctement configurées dans le fichier YAML de transfert de journal. Les balises manquantes peuvent empêcher l’ingestion des journaux si le pipeline en dépend.
+
 
 
 ### Elasticsearch et OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Considérations :
 * Par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
 * Le champ sourcetype aura l’une des valeurs suivantes, selon le journal spécifique : *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Si les adresses IP requises ont été placées sur la liste autorisée et que les journaux ne sont toujours pas distribués, vérifiez qu’aucune règle de pare-feu n’applique la validation du jeton Splunk. Exécute rapidement une étape de validation initiale au cours de laquelle un jeton Splunk non valide est envoyé de manière intentionnelle. Si votre pare-feu est défini pour mettre fin aux connexions avec des jetons Splunk non valides, le processus de validation échoue, ce qui empêche Fastly de diffuser des journaux vers votre instance Splunk.
+
 
 >[!NOTE]
 >

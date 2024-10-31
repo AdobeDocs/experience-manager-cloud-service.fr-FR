@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 85%
+source-wordcount: '2376'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 La plateforme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
-Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
+Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La connexion à AEM as a Cloud Service peut être divisée en trois ensembles logiques :
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service donne accès aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
 
-Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket de transfert Splunk. Les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
-
 **Exemple**
 
 ```
@@ -611,82 +609,18 @@ Selon le trafic et la quantité d’instructions de journal écrites par Debug, 
 * effectuées judicieusement, et uniquement lorsque cela est absolument nécessaire ;
 * annulées le plus tôt possible pour redéployer les niveaux appropriés.
 
-## Journaux Splunk {#splunk-logs}
+## Transfert de journaux {#log-forwarding}
 
-Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à celles disponibles par téléchargement des journaux de Cloud Manager, mais la clientèle peut tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
+Bien que les journaux puissent être téléchargés à partir de Cloud Manager, certaines organisations trouvent utile de transférer ces journaux vers une destination de journalisation préférée. AEM prend en charge les journaux en continu vers les destinations suivantes :
 
-La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client ou de la cliente.
+* Stockage Azure Blob
+* Datadog
+* HTTPD
+* Elasticsearch (et OpenSearch)
+* Splunk
 
-Les journaux CDN seront transférés vers Splunk pour les nouvelles demandes de ticket d’assistance ; les clients qui ont déjà activé le transfert Splunk pourront ajouter des journaux CDN à l’avenir.
-
->[!NOTE]
->
->Les journaux *Specific* et *specific* User ne peuvent pas être transférés vers Splunk.
->
->**Tous** journaux seront transférés vers Splunk, où tout filtrage supplémentaire peut être effectué par le client en fonction de ses besoins.
-
-### Activation du transfert Splunk {#enabling-splunk-forwarding}
-
-Dans la demande d’assistance, les clients doivent indiquer :
-
-* Adresse du point d’entrée Splunk HEC. Ce point d’entrée doit disposer d’un certificat SSL valide et être accessible au public.
-* l’index Splunk ;
-* le port Splunk ;
-* le jeton Splunk HEC. Pour plus d’informations, voir [Exemples de collecteur d’événements HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) .
-
-Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée. Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
+Pour plus d’informations sur la configuration de cette fonctionnalité, reportez-vous à l’ [article Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) .
 
 >[!NOTE]
 >
->Le transfert Splunk pour les environnements de programme de test Sandbox n’est pas pris en charge.
-
->[!NOTE]
->
->La fonctionnalité de transfert Splunk n’est pas possible à partir d’une adresse IP de sortie dédiée.
-
-Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production. Splunk doit disposer d’un certificat SSL et être accessible au public.
-
-Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de Splunk, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
-
-Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements Sandbox aient activé le transfert de Splunk et en partagent un index. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
-
-Vous trouverez ci-dessous un exemple de demande d’assistance :
-
-Programme 123, environnement de production
-
-* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
-* Index Splunk : acme_123prod (le client peut choisir la convention d’affectation des noms qu’il souhaite)
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
-
-Programme 123, environnement d’évaluation
-
-* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
-* Index Splunk : acme_123stage
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
-
-Programme 123, environnements de développement
-
-* Adresse du point d’entrée Splunk HEC : `splunk-hec-ext.acme.com`
-* Index Splunk : acme_123dev
-* Port Splunk : 443
-* Jeton Splunk HEC : ABC123
-
-Il peut suffire que le même index Splunk soit utilisé pour chaque environnement, auquel cas le champ `aem_env_type` peut être utilisé pour les distinguer à l’aide des valeurs dev, stage et prod. S’il existe plusieurs environnements de développement, le champ `aem_env_id` peut également être utilisé. Certaines organisations peuvent choisir un index distinct pour les journaux de l’environnement de production si l’index associé limite l’accès à un ensemble réduit d’utilisateurs Splunk.
-
-Voici un exemple d’entrée de journal :
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>Le transfert des journaux pour les environnements de programme Sandbox n’est pas pris en charge.

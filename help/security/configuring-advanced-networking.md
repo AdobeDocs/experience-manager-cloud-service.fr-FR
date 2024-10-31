@@ -4,9 +4,9 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 99%
 
 ---
@@ -236,10 +236,6 @@ La configuration de l’adresse IP de sortie dédiée est identique à celle d�
 >
 >Une fois créés, les types d’infrastructure d’adresses IP de sortie dédiée ne peuvent pas être modifiés. La seule façon de modifier les valeurs de configuration consiste à les supprimer et à les recréer.
 
->[!INFO]
->
->Si une adresse IP de sortie dédiée est configurée, le transfert Splunk continue à utiliser les plages de sortie dynamiques. Le transfert Splunk ne peut pas être configuré pour utiliser une adresse IP de sortie dédiée.
-
 ### Configuration de l’interface utilisateur {#configuring-dedicated-egress-provision-ui}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
@@ -409,7 +405,6 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 >Les limitations à une infrastructure VPN sont les suivantes :
 >
 >* La prise en charge est limitée à une VPN unique.
->* La fonctionnalité de transfert Splunk n’est pas possible via une connexion VPN.
 >* Les résolveurs DNS doivent être répertoriés dans l’espace Adresse de passerelle pour résoudre les noms d’hôtes privés.
 
 ### Configuration de l’interface utilisateur {#configuring-vpn-ui}
