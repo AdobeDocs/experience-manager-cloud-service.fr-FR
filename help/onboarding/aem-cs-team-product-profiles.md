@@ -4,10 +4,10 @@ description: Découvrez comment l’équipe et les profils de produits AEM as 
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5f630c8a618502907e4be50844e07184e38e1b1e
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '1821'
+ht-degree: 39%
 
 ---
 
@@ -20,17 +20,246 @@ Découvrez comment l’équipe et les profils de produits AEM as a Cloud Ser
 
 Lorsque vous accordez à un utilisateur l’accès à une solution Adobe spécifique, vous ne souhaitez pas nécessairement lui accorder un accès complet. Les profils de produit permettent à chaque solution d’avoir son propre jeu d’autorisations utilisateur. Ils sont disponibles et accessibles à partir de l’[Admin Console](/help/journey-onboarding/admin-console.md).
 
+Adobe Admin Console comporte une hiérarchie structurée de produits, d’instances de produits et de profils de produits dans laquelle les utilisateurs internes d’une organisation peuvent se voir attribuer une appartenance, leur donnant accès aux solutions et fonctionnalités qui ont reçu une licence.
+
+<!-- Alexandru: Drafting for now 
+
+Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
+
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+
 ## Profils de produit AEM as a Cloud Service {#aem-product-profiles}
 
 AEM as a Cloud Service est une offre entièrement native cloud qui fournit AEM as a service. Elle fournit AEM de manière native au cloud, avec de nouveaux attributs comme toujours activé, toujours à jour, toujours sécurisé et toujours à grande échelle. Dans le même temps, elle conserve la proposition de valeur principale qu’AEM fournit en tant que plateforme personnalisable aux clients et permet aux équipes de niveau entreprise d’intégrer dans leur procédure de développement et de diffusion. Pour en savoir plus sur AEM as a Cloud Service, voir [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md).
 
-Vos personnes membres de l’équipe d’AEM as a Cloud Service sont ajoutées et affectées à un ou plusieurs des profils de produit suivants via l’Admin Console lors de l’intégration.
+### Instances de produit au niveau de l’organisation {#org-level-product-instances}
 
-* **Administrateurs et administratrices AEM** : une personne chargée de l’administration AEM est généralement affectée à une équipe de développement, en particulier si celle-ci a besoin d’un accès, par exemple, aux environnements de développement. Le profil de produit d’administration d’AEM est utilisé pour accorder des privilèges d’administration dans l’instance AEM associée.
+>[!NOTE]
+>
+> Certaines instances de produit et certains profils de produit décrits dans cet article peuvent uniquement apparaître pour les environnements nouvellement créés. Un futur mécanisme permettra également la mise à jour des environnements existants.
 
-* **Utilisateurs et utilisatrices AEM** : les utilisateurs et les utilisatrices AEM sont les personnes de votre organisation qui utilisent AEM as a Cloud Service généralement pour créer du contenu. Ces personnes devront accéder à AEM pour effectuer leurs tâches. Le profil de produit des utilisateurs AEM est généralement attribué à un créateur de contenu AEM qui crée et révise le contenu. Ce contenu peut être de nombreux types, tels que des pages, des ressources, des publications, etc. Le profil de produit Utilisateurs AEM présenté ci-dessous est attribué à ces membres.
+Lors du premier traitement par Adobe de la licence d’une solution AEM, deux instances de produit s’affichent dans Adobe Admin Console, sous le produit Adobe Experience Manager as a Cloud Service :
 
-![Profils de produits](/help/onboarding/assets/admin-console-profiles.png)
+* **Niveau-organisation-AEM** : contient un ou plusieurs profils de produit qui représentent l’accès aux fonctionnalités qui sont étendues à tous les environnements AEM, plutôt qu’à un seul.
+* **Cloud Manager** - contient des profils de produit correspondant à différents niveaux d’accès aux fonctionnalités Cloud Manager.
+
+<!--
+>[!NOTE]
+>
+>For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
+-->
+
+![Instances de produit au niveau de l’organisation](/help/onboarding/assets/orglevel.png)
+
+Au sein de l’instance de produit au niveau de l’organisation AEM se trouve un profil de produit nommé AEM reporters au niveau de l’organisation, qui n’est pas utilisé pour l’instant, mais qui peut représenter à l’avenir l’accès à la récupération d’informations sur les licences de produit d’AEM.
+
+Lorsqu’une solution de communication Forms est sous licence, un profil de produit correspondant s’affiche également sous l’instance de produit au niveau de l’organisation AEM.
+
+![Profil produit des reporters](/help/onboarding/assets/org-level-reporters.png)
+
+### Instances de produit au niveau de l’environnement et du niveau {#environment-and-tier-level-product-instances}
+
+Lors de la mise en service de nouveaux programmes avec un ou plusieurs environnements AEM, deux instances de produit s’affichent par environnement, contenant respectivement des profils de produit pour la création et la publication.
+
+![Instances de produit d’environnement](/help/onboarding/assets/env-productinstances.png)
+
+Vous trouverez ci-dessous les profils de produit dans une instance de produit de création, pour une organisation qui a configuré un environnement dans un programme contenant AEM Sites :
+
+![Instances de produit Sites](/help/onboarding/assets/sites-product-instances.png)
+
+Le tableau suivant décrit une liste des profils de produit possibles sous une instance de produit spécifique au niveau de l’environnement.
+
+<table style="table-layout:auto">
+    <tr>
+        <th>Instance de produit</th>
+        <th>Convention de nommage</th>
+        <th>Service par défaut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Instance de création AEM</td>
+        <td>Chefs de contenu AEM Sites - Auteur - Programme <code>id</code> - Environnement <code>id</code></td>
+        <td>Chefs de contenu AEM Sites</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès contrôlé aux fonctionnalités de création d’AEM Sites dans cet environnement. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM de création de contenu AEM Sites, qui est automatiquement créé dans AEM. Les autorisations de groupe AEM doivent être configurées dans AEM avec le niveau d’accès souhaité.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe d’AEM "Chefs de contenu AEM Sites - Service".</li>
+                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Administrateurs - author - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Administrateurs AEM</td>
+        <td>
+            <ul>
+                <li>Prévu pour un accès illimité aux fonctionnalités de l’environnement de création et de publication d’AEM. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM d’auteur Administrateurs d’AEM automatiquement créé dans.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe AEM "Administrateurs d’AEM - Service"</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Utilisateurs AEM - author - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs et utilisatrices AEM</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès très limité aux fonctionnalités de l’environnement de création d’AEM. Les utilisateurs de ce profil de produit seront membres du groupe AEM "Contributeurs" automatiquement créé dans AEM</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe AEM "Utilisateurs AEM - Service"</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Reporters - author - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Reporters AEM</td>
+        <td>
+            <ul>
+                <li>Non utilisé actuellement, mais à l’avenir, peut donner accès aux informations de création de rapports sur le niveau Auteur pour cet environnement.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Collaborateur AEM Assets - auteur - Programme <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs collaborateurs d’AEM Assets</td>
+        <td>
+        <ul>
+                <li>Destiné à un accès en lecture seule à la gestion des ressources numériques. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM "Contributeurs" automatiquement créé dans AEM.
+                </li>
+                <li>
+                Il fournit également les droits d’Adobe Express pour créer des variations de ressources.
+                </li>
+          <ul>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Assets Power User - author - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs AEM Assets Power</td>
+<td>
+        <ul>
+                <li>Destiné à un accès en lecture seule à la gestion des ressources numériques. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM "Contributeurs" automatiquement créé dans AEM.
+                </li>
+                <li>
+                Il fournit également les droits d’Adobe Express pour créer des variations de ressources.
+                </li>
+          <ul>
+</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Chefs de contenu AEM Forms - Auteur - Programme <code>id</code> - Environnement <code>id</code></td>
+        <td>Chefs de contenu AEM Forms</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès contrôlé aux fonctionnalités de création d’AEM Forms dans cet environnement. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM utilisateurs d’AEM Forms forms, qui est automatiquement créé dans AEM.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe d’AEM "Chefs de contenu AEM Forms - Service".</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Développeurs AEM Forms - Auteur - Programme <code>id</code> - Environnement <code>id</code></td>
+        <td>Développeurs AEM Forms</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès contrôlé aux fonctionnalités de création d’AEM Forms dans cet environnement. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM AEM Forms forms-power-users, qui est automatiquement créé dans AEM. Ces utilisateurs ont les droits de télécharger des fichiers XDP et de créer des modèles de données de formulaire en plus des tâches de création de formulaire normales.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe d’AEM "AEM Forms Developers - Service".</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Utilisateurs du service de communications AEM Forms - author - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs du service de communications AEM Forms</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès contrôlé aux fonctionnalités des services de communication AEM Forms sur cet environnement. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM utilisateurs d’AEM Forms forms, qui est automatiquement créé dans AEM.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe d’AEM "Utilisateurs AEM Forms Communications Service - Service".</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Publication AEM</td>
+        <td>Utilisateurs AEM - publish - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs et utilisatrices AEM</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès très limité aux fonctionnalités de l’environnement de création d’AEM. Les utilisateurs de ce profil de produit seront membres du groupe AEM "contrib" automatiquement créé dans AEM</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe AEM "Utilisateurs AEM - Service".</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>AEM Reporters - publish - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Reporters AEM</td>
+        <td>
+            <ul>
+                <li>Non utilisé actuellement, mais à l’avenir, peut donner accès aux informations de création de rapports sur le niveau de publication pour cet environnement.</li>
+            </ul>
+        </td>
+    </tr>
+   <tr>
+        <td></td>
+        <td>Utilisateurs du service de communications AEM Forms - publish - Program <code>id</code> - Environnement <code>id</code></td>
+        <td>Utilisateurs du service de communications AEM Forms</td>
+        <td>
+            <ul>
+                <li>Destiné à un accès contrôlé aux fonctionnalités des services de communication AEM Forms sur cet environnement. Les utilisateurs de ce profil de produit seront membres du groupe d’AEM utilisateurs d’AEM Forms forms, qui est automatiquement créé dans AEM.</li><br>
+                <li>Si le service par défaut reste sélectionné
+                    <ul>
+                        <li>Les utilisateurs de ce profil de produit seront également membres du groupe d’AEM "Utilisateurs AEM Forms Communications Service - Service".</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+Notez que le service de profil de produit associé est activé par défaut pour chaque profil de produit. À moins que vous n’ayez des exigences d’accès complexes, il est recommandé de ne conserver que le service par défaut sélectionné. Un groupe d’AEM correspondant sera créé dans AEM avec la convention d’affectation des noms `<Product Profile Prefix> - Service` (par exemple, **Gestionnaires de contenu AEM Sites - Service**), et les utilisateurs des profils de produit parents deviendront automatiquement membres de ce groupe d’ correspondant.
+
+Le groupe AEM dans AEM associé au service aura l’ensemble agrégé d’utilisateurs qui existent dans tous les profils de produit associés à ce service pour cette combinaison de niveau environnement.
+
+![Services](/help/onboarding/assets/services.png)
+
+L’image suivante représente les groupes d’AEM reflétant le profil de produit et le service de niveau Auteur des responsables de contenu AEM Sites.
+
+![AEM Mappage Groupe vers Service](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >
