@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ La console Mes programmes fournit une vue d’ensemble de tous les programmes au
 1. Des onglets qui permettent de changer l’affichage actuel de vos programmes.
    * Vue **Accueil** (par défaut) qui sélectionne la vue **Mes programmes** avec une vue d’ensemble de tous les programmes.
    * **Licence** qui accède au [tableau de bord de licence](/help/implementing/cloud-manager/license-dashboard.md).
-   * Notez que les onglets sont fermés par défaut et peuvent être affichés à l’aide de https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg dans l’ [en-tête Cloud Manager](#cloud-manager-header).
+   * Notez que les onglets sont par défaut fermés et peuvent être affichés à l’aide de l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) dans l’ [en-tête Cloud Manager](#cloud-manager-header).
 1. Des [Statistiques et un appel à l’action](#statistics) pour une vue d’ensemble de votre activité récente.
 1. [**Section Mes programmes**](#my-programs-section) avec une vue d’ensemble de tous vos programmes.
 1. [Liens rapides](#quick-links-section) pour accéder facilement aux ressources associées.
@@ -195,7 +195,7 @@ La barre d’outils du programme permet de basculer rapidement vers d’autres p
 
 ![Barre d’outils du programme](assets/cloud-manager-program-toolbar.png)
 
-La barre d’outils affiche toujours l’onglet actuellement actif, même si vous avez masqué les onglets à l’aide de https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
+La barre d’outils affiche toujours l’onglet sur lequel vous vous trouvez actuellement, même si vous avez masqué les onglets à l’aide de l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Onglets des programmes {#program-tabs}
 

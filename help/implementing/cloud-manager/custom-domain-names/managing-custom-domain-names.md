@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '791'
 ht-degree: 20%
 
 ---
@@ -31,11 +31,11 @@ Dans Adobe Cloud Manager, vous pouvez modifier une configuration de nom de domai
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
-1. Dans le coin supérieur gauche de la page, cliquez sur ![Afficher l’icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
 
 1. Sous l’en-tête **Services**, cliquez sur **Configurations CDN**.
 
-1. Sur la page **Configurations du réseau de diffusion de contenu**, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez modifier le réseau de diffusion de contenu.
+1. Sur la page **Configurations du réseau de diffusion de contenu**, cliquez sur l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez modifier le réseau de diffusion de contenu.
 
 1. Cliquez sur **Modifier**.
 
