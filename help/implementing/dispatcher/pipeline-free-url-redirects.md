@@ -3,17 +3,14 @@ title: Redirections d’URL sans pipeline
 description: Découvrez comment déclarer des redirections 301 ou 302 sans accès aux pipelines Git ou Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # Redirections d’URL sans pipeline {#pipeline-free-redirects}
-
->[!NOTE]
->Cette fonctionnalité n’est pas encore disponible.
 
 Pour diverses raisons, les entreprises réécrivent les URL d’une manière qui entraîne une redirection 301 (ou 302), ce qui signifie que le navigateur est redirigé vers une autre page.
 
@@ -64,7 +61,7 @@ Ensuite, dans un fichier de configuration Apache tel que `rewrites/rewrite.rules
 
 La directive `RewriteMap` doit indiquer que les données sont stockées dans un format de fichier de gestionnaire de base de données (DBM) à l’aide du format `sdbm` (DBM simple).
 
-Le reste de la configuration dépendra du format de `redirectmap.txt`. Le format le plus simple, illustré dans l’exemple ci-dessous, est un mappage un-à-un entre l’URL d’origine et l’URL mappée :
+Le reste de la configuration dépend du format de `redirectmap.txt`. Le format le plus simple, illustré dans l’exemple ci-dessous, est un mappage un-à-un entre l’URL d’origine et l’URL mappée :
 
 ```
 # RewriteMap from managed rewrite maps
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 Gardez à l’esprit les points suivants :
 
-* Par défaut, lors du chargement d’une carte de réécriture, Apache démarre sans attendre le chargement du ou des fichiers de mappage complets. Il peut donc y avoir des incohérences temporaires jusqu’au chargement de la ou des cartes complètes. Ce paramètre peut être modifié de sorte qu’Apache attende le chargement du contenu complet de la carte, mais cela prendra plus de temps pour qu’Apache démarre. Pour modifier ce comportement afin qu’Apache attende, ajoutez `wait:true` au fichier `managed-rewrite-maps.yaml`.
-* Pour modifier la fréquence entre les chargements, ajoutez `ttl: <integer>` au fichier `managed-rewrite-maps.yaml`. Par exemple, `ttl: 120`.
-* Apache a une longueur maximale de 1 024 pour les entrées uniques RewriteMap .
+* Par défaut, lors du chargement d’une carte de réécriture, Apache démarre sans attendre le chargement du ou des fichiers de mappage complets. Il peut donc y avoir des incohérences temporaires jusqu’au chargement de la ou des cartes complètes. Ce paramètre peut être modifié de sorte qu’Apache attende le chargement du contenu complet de la carte, mais le démarrage d’Apache prend plus de temps. Pour modifier ce comportement afin qu’Apache attende, ajoutez `wait:true` au fichier `managed-rewrite-maps.yaml`.
+* Pour modifier la fréquence entre les chargements, ajoutez `ttl: <integer>` au fichier `managed-rewrite-maps.yaml`. Par exemple : `ttl: 120`.
+* Apache a une longueur maximale de 1 024 pour les entrées uniques RewriteMap.

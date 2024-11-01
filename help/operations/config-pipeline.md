@@ -1,13 +1,13 @@
 ---
-title: Utilisation des pipelines de configuration
+title: Utilisation de \s
 description: Découvrez comment utiliser les pipelines de configuration pour déployer différentes configurations dans AEM as a Cloud Service, telles que les paramètres de transfert de journal, les tâches de maintenance liées à la purge et diverses configurations du réseau de diffusion de contenu.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 2%
+source-wordcount: '997'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Un pipeline de configuration Cloud Manager déploie les fichiers de configuratio
 
 Les pipelines de configuration peuvent être déployés via Cloud Manager pour les types d’environnements de développement, d’évaluation et de production dans les programmes de production (hors environnements de test). Les fichiers de configuration peuvent être déployés dans des environnements de développement rapide (RDE) à l’aide de l’ [outil de ligne de commande](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
-Les sections suivantes de ce document donnent un aperçu d’informations importantes concernant la manière dont les pipelines de configuration peuvent être utilisés et la manière dont les configurations doivent être structurées. Il décrit les concepts généraux partagés sur l’ensemble ou un sous-ensemble des fonctionnalités prises en charge par les pipelines de configuration.
+Les sections suivantes de ce document donnent un aperçu des informations importantes concernant l’utilisation des pipelines de configuration et la structure des configurations pour ces pipelines. Il décrit les concepts généraux partagés sur l’ensemble ou un sous-ensemble des fonctionnalités prises en charge par les pipelines de configuration.
 
 * [Configurations prises en charge](#configurations) - Liste des configurations qui peuvent être déployées avec les pipelines de configuration
 * [Création et gestion des pipelines de configuration](#creating-and-managing) - Comment créer un pipeline de configuration.
@@ -43,10 +43,10 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 | [Pages d’erreur CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Remplacez la page d’erreur par défaut si AEM’origine ne peut pas être atteinte, en référençant l’emplacement du contenu statique auto-hébergé dans le fichier de configuration. |
 | [Purge CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Déclarez les clés d’API de purge utilisées pour purger le réseau CDN |
 | [Jeton HTTP CDN géré par le client](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Déclarez la valeur de X-AEM-Edge-Key nécessaire pour appeler le CDN Adobe à partir d’un CDN client |
-| [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et les mots de passe pour une boîte de dialogue d’authentification de base protégeant certaines URL [ (disponible uniquement pour les utilisateurs adopteurs précoces)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et les mots de passe pour une boîte de dialogue d’authentification de base protégeant certaines URL. |
 | [Tâche de maintenance de purge de version](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant les règles autour du moment où les versions de contenu doivent être purgées. |
 | [ Tâche de maintenance de purge du journal d’audit ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimiser le journal d’audit AEM pour des performances accrues en déclarant des règles sur le moment où les journaux doivent être purgés |
-| [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Pas encore disponible : configurez les points de terminaison et les informations d’identification pour le transfert des journaux vers diverses destinations (par exemple, Splunk, Datadog, HTTPS). |
+| [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points de terminaison et les informations d’identification pour le transfert des journaux vers diverses destinations, notamment Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk). |
 
 ## Création et gestion des pipelines de configuration {#creating-and-managing}
 
@@ -70,7 +70,7 @@ Chaque fichier de configuration commence par des propriétés qui ressemblent à
 
 | Propriété | Description | Valeur par défaut |
 |---|---|---|
-| `kind` | Chaîne qui détermine le type de configuration, par exemple le transfert de journal, les règles de filtrage du trafic ou les transformations de requêtes. | Obligatoire, pas de valeur par défaut |
+| `kind` | Chaîne qui détermine le type de configuration, tel que le transfert de journal, les règles de filtrage du trafic ou les transformations de requêtes. | Obligatoire, pas de valeur par défaut |
 | `version` | Chaîne représentant la version du schéma | Obligatoire, pas de valeur par défaut |
 | `envTypes` | Ce tableau de chaînes est une propriété enfant du noeud `metadata`. Les valeurs possibles sont dev, stage, prod ou toute combinaison. Il détermine les types d’environnement pour lesquels la configuration sera traitée. Par exemple, si le tableau comprend uniquement `dev`, la configuration ne sera pas chargée dans les environnements intermédiaire ou prod, même si la configuration y est déployée. | Tous les types d’environnement (développement, évaluation, production) |
 
@@ -111,7 +111,7 @@ La structure du fichier ressemblera à ce qui suit :
   logForwarding.yaml
 ```
 
-Utilisez cette structure lorsque la même configuration est suffisante pour tous les environnements et pour tous les types de configuration (CDN, transfert de logs, etc.). Dans ce scénario, la propriété de tableau `envTypes` inclurait tous les types d’environnements.
+Utilisez cette structure lorsque la même configuration est suffisante pour tous les environnements et pour tous les types de configuration (CDN, transfert de journal, etc.). Dans ce scénario, la propriété de tableau `envTypes` inclurait tous les types d’environnements.
 
 ```yaml
    kind: "cdn"

@@ -4,10 +4,10 @@ description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 25e5fa5a37ac65010cbc6a55f50268f95e4e33a6
+source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 99%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2024.9.0 |
+| Version | 2024.10.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 
@@ -27,7 +27,7 @@ Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] as
 * Les [nouvelles fonctionnalités](/help/release-notes/release-notes-cloud/release-notes-current.md) sont publiées à une fréquence mensuelle prévisible et sont axées sur les nouvelles fonctionnalités et innovations de produits.
 * Les [versions de maintenance](/help/release-notes/maintenance/latest.md) sont déployées fréquemment et portent sur les mises à jour de sécurité, les correctifs et les améliorations de performances. Ainsi, [!DNL Adobe Experience Manager] as a Cloud Service est toujours à jour avec les correctifs critiques.
 
-En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur une organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs et utilisatrices internes bien à l’avance. Si vous disposez d’un module complémentaire AEM, tel que des formulaires, vous pouvez vous assurer qu’il est également mis à jour en sélectionnant la solution dans les [paramètres du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur leur organisation en testant les fonctionnalités de votre propre environnement personnalisé et en effectuant une formation/préparation préalable des utilisateurs internes. Si vous disposez d’un module complémentaire AEM, tel que des formulaires, vous pouvez vous assurer qu’il est également mis à jour en sélectionnant la solution dans les [paramètres du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud
 
 Pour se préparer pour une version :
 
-1. Annotez vos calendriers : vérifiez les dates clés des versions mensuelles de la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
+1. Annotez vos calendriers : vérifiez les dates clés des versions mensuelles de la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 1. Consultez les notes de mise à jour : lisez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour vous familiariser avec les fonctionnalités de version et de version préliminaire.
 1. Accédez aux nouvelles fonctionnalités et essayez-les : activez le [canal de version préliminaire](/help/release-notes/prerelease.md) dans vos environnements hors production et commencez à essayer les fonctionnalités à évaluer dans vos environnements personnalisés.
 1. Formez vos utilisateurs : utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement et leur faire maîtriser les nouvelles fonctionnalités.

@@ -8,22 +8,22 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '993'
 ht-degree: 6%
 
 ---
 
 # Présentation
 
-<span class="preview"> La fonctionnalité est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité est disponible dans le cadre du programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-L’utilitaire de conversion Forms, composant de la suite [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-Tools/), vous permet de convertir facilement les Forms adaptatifs créés avec des composants de base hérités en formulaires qui tirent parti des fonctionnalités modernes et prises en charge des composants principaux.
+L’utilitaire de conversion Forms, qui fait partie de la suite [AEM Modernize Tool](https://opensource.adobe.com/aem-modernize-tools/), vous permet de convertir facilement le Forms adaptatif créé avec les anciens composants de base en formulaires qui tirent parti des fonctionnalités modernes et prises en charge des composants principaux.
 
 ## Qu’est-ce qu’AEM les outils de modernisation ?
 
-[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-Tools/) fait référence à un ensemble d’utilitaires ou d’applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). En règle générale, ces outils permettent de convertir des composants ou des fonctionnalités plus anciens d’AEM en solutions plus récentes, plus efficaces et plus prises en charge. L’utilitaire de conversion Forms est installé sous AEM Outils de modernisation afin de convertir les Forms adaptatifs basés sur des composants de base en formulaires basés sur des composants principaux.
+[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/) fait référence à un ensemble d’utilitaires ou d’applications logicielles conçus pour faciliter le processus de modernisation ou de mise à jour des projets Adobe Experience Manager (AEM). En règle générale, ces outils permettent de convertir des composants ou des fonctionnalités plus anciens d’AEM en solutions plus récentes, plus efficaces et plus prises en charge. L’utilitaire de conversion Forms est installé sous AEM Outils de modernisation afin de convertir les Forms adaptatifs basés sur des composants de base en formulaires basés sur des composants principaux.
 
 L’utilitaire de conversion de Forms convertit les Forms adaptatifs basés sur des composants de base plus anciens en formulaires basés sur des composants principaux plus récents. Ce processus de conversion permet de s’assurer que les formulaires s’alignent sur les normes et fonctionnalités modernes, améliorant ainsi les performances, la compatibilité et la facilité de maintenance de l’environnement AEM.
 
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes pour installer AEM Modernize Tools dans votre en
 
    `java -jar aem-author-p4502.jar`
 
-1. Cloner le référentiel [AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) dans votre système local.
+1. Cloner le référentiel [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) dans votre système local.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -101,7 +101,7 @@ Pour activer et utiliser les outils de modernisation AEM de votre environnement 
 
 ![AEM de la règle de modernisation des composants](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Exécutez l’utilitaire de conversion de formulaire pour convertir des formulaires basés sur des composants Foundation en formulaires basés sur des composants principaux.
+## Exécutez l’utilitaire de conversion de formulaire pour convertir des formulaires basés sur des composants de base en formulaires basés sur des composants principaux.
 
 1. Accédez à **[!UICONTROL Outils > AEM Moderniser les outils > Conversion Forms]**.
 
@@ -125,7 +125,7 @@ Dans notre cas, l’option **Copier vers Target** est sélectionnée. Si l’opt
 1. Spécifiez le nom `source folder` dans le **[!UICONTROL chemin Source]**.
 1. Spécifiez le nom `target folder` dans le **[!UICONTROL chemin d’accès cible]**.
 1. Sélectionnez **[!UICONTROL Suivant]**.
-1. Cliquez sur **[!UICONTROL Ajouter Forms]**. Tous les formulaires de `source folder` s’affichent à l’écran.
+1. Cliquez sur **[!UICONTROL Ajouter Forms]**. Tous les formulaires de `source folder` apparaissent à l’écran.
 1. Sélectionnez le Forms adaptatif basé sur les composants de base pour le convertir en formulaires basés sur les composants principaux. Vous pouvez également sélectionner plusieurs formulaires.
 
    ![AEM Modernize Tools Select Form](/help/forms/assets/aem-modernize-tools-select-form.png)
