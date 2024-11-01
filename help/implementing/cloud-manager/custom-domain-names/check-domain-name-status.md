@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 22%
+source-wordcount: '846'
+ht-degree: 20%
 
 ---
 
@@ -80,7 +80,7 @@ L’erreur est résolue comme suit :
 
 >[!TIP]
 >
->La résolution des problèmes de délégation de domaine avec Fastly prend généralement 1 à 2 jours ouvrés. Pour cette raison, il est vivement recommandé d’installer les domaines bien avant leur date d’activation.
+>La résolution des problèmes de délégation de domaine avec Fastly prend généralement 1 à 2 jours ouvrés. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation.
 
 >[!NOTE]
 >
