@@ -1,23 +1,23 @@
 ---
-title: Environnement de création
+title: Environnement de création de Cloud Manager
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 58%
 
 ---
 
 
-# Environnement de création {#build-environment}
+# Créer l&#39;environnement {#build-environment}
 
 Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 
-## Détails de l’environnement de génération {#build-environment-details}
+## Création des détails de l’environnement {#build-environment-details}
 
 Cloud Manager crée et teste votre code à l’aide d’un environnement de génération spécialisé.
 
@@ -25,7 +25,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 * Apache Maven 3.9.4 est installé.
    * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP](#https-maven).
 * Les versions Java installées sont Oracle JDK 11.0.22 et Oracle JDK 8u401.
-* **IMPORTANT** : par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient le JDK Oracle 8u401. *_Cette valeur par défaut doit être remplacée pour que AEM Cloud Projects utilise JDK 11_*. Pour plus d’informations, voir la section [Définition de la version du JDK Maven](#alternate-maven-jdk-version) .
+* **IMPORTANT** : par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`, qui contient le JDK Oracle 8u401. *_Cette valeur par défaut doit être remplacée pour que AEM Cloud Projects utilise JDK 11_*. Pour plus d’informations, voir la section [Définition de la version du JDK Maven](#alternate-maven-jdk-version) .
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
@@ -33,7 +33,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
    * `imagemagick`
    * `graphicsmagick`
 * D’autres packages peuvent être installés au moment de la création, comme décrit dans la section [Installer des packages système supplémentaires](#installing-additional-system-packages).
-* Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
+* Chaque version s’exécute dans un environnement propre, le conteneur de génération ne conservant aucun état entre les exécutions.
 * Maven est toujours exécuté avec les trois commandes suivantes.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -44,31 +44,29 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
 >
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
-## Référentiels Maven HTTPS {#https-maven}
+## Référentiels Maven HTTPS {#https-maven}
 
-Cloud Manager [version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. L’amélioration de la sécurité visant à atténuer les vulnérabilités potentielles a constitué un changement significatif introduit dans Maven 3.8.1. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
+Cloud Manager [version 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. L’amélioration de la sécurité visant à atténuer les vulnérabilités potentielles a constitué un changement significatif introduit dans Maven 3.8.1. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 Suite à cette amélioration de la sécurité, certaines personnes peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
 
 Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs et utilisatrices de mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP. Cet ajustement s’aligne sur la transition croissante du secteur vers des protocoles de communication sécurisés et contribue à maintenir un processus de création sécurisé et fiable.
 
-### Utilisation d’une version de Java spécifique {#using-java-support}
+### Utilisation d’une version Java spécifique {#using-java-support}
 
-Par défaut, les projets sont créés par le processus de génération Cloud Manager à l’aide du JDK Oracle 8, mais il est conseillé aux clients AEM Cloud Service de définir la version du JDK utilisée pour exécuter Maven sur `11`.
+Le processus de génération Cloud Manager utilise le JDK Oracle 8 pour créer des projets par défaut, mais les clients AEM Cloud Service doivent définir la version du JDK d’exécution Maven sur `11`.
 
 #### Définition de la version du JDK Maven {#alternate-maven-jdk-version}
 
-Il est recommandé de définir la version du JDK pour l’exécution Maven entière sur `11` dans un fichier `.cloudmanager/java-version`.
+Adobe recommande de définir la version JDK de l’exécution Maven entière sur `11` dans un fichier `.cloudmanager/java-version`.
 
 Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Modifiez le fichier afin qu&#39;il ne contienne que le texte, `11`. Bien que Cloud Manager accepte également une valeur `8`, cette version n’est plus prise en charge pour les projets AEM Cloud Service. Toute autre valeur est ignorée. Lorsque `11` est spécifié, l’Oracle 11 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk-11.0.22`.
 
-## Variables d’environnement {#environment-variables}
-
-### Variables d’environnement standard {#standard-environ-variables}
+## Variables d’environnement - standard {#environment-variables}
 
 Vous pouvez juger nécessaire de modifier le processus de génération en fonction des informations sur le programme ou le pipeline.
 
-Par exemple, si la minification JavaScript au moment de la génération est effectuée via un outil comme gulp, il peut être nécessaire d’utiliser un autre niveau de minification lors de la génération pour un environnement de développement et pour des environnements d’évaluation et de production.
+Par exemple, si la minification JavaScript se produit au moment de la création à l’aide d’un outil comme gulp, différents niveaux de minification peuvent être recommandés pour divers environnements. Une version de développement peut utiliser un niveau de minimisation plus léger par rapport à l’évaluation et à la production.
 
 Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement standard au conteneur de build pour chaque exécution.
 
@@ -83,15 +81,15 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 | `ARTIFACTS_VERSION` | Pour un pipeline intermédiaire ou de production, version synthétique générée par Cloud Manager |
 | `CM_AEM_PRODUCT_VERSION` | Version de la mise à jour |
 
-### Variables de pipeline {#pipeline-variables}
+## Variables d’environnement - pipeline {#pipeline-variables}
 
-Votre processus de génération peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour le référentiel Git ou vous devrez peut-être les faire varier entre les exécutions de pipeline utilisant la même branche.
+Votre processus de création peut nécessiter des variables de configuration spécifiques qui ne doivent pas être stockées dans le référentiel Git. De plus, vous devrez peut-être ajuster ces variables entre les exécutions de pipeline à l’aide de la même branche.
 
-Pour plus d’informations, voir aussi [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+Pour plus d’informations, voir également [Configuration des variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) .
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
-Certaines versions nécessitent d’autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou Ruby et doit avoir un interpréteur de langue approprié installé. Pour ce faire, appelez le plug-in [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) dans votre `pom.xml` pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
+Certaines versions nécessitent des packages système supplémentaires pour fonctionner pleinement. Par exemple, une version peut appeler un script Python ou Ruby et doit avoir un interpréteur de langue approprié installé. Ce processus d’installation peut être géré en appelant le [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) de votre `pom.xml` pour appeler APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Cet exemple installe Python.
 
 ```xml
         <profile>
