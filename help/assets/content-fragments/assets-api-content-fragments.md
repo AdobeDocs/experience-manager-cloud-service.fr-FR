@@ -4,10 +4,10 @@ description: Découvrez la prise en charge des fragments de contenu dans l’API
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 60%
+source-wordcount: '1829'
+ht-degree: 59%
 
 ---
 
@@ -23,6 +23,8 @@ ht-degree: 60%
 Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager (AEM) sans interface utilisateur.
 
 >[!NOTE]
+>
+>Voir [AEM API pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 >
 >Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
@@ -41,7 +43,7 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 
 L’ [API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’Adobe Experience Manager as a Cloud Service d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, au moyen des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer).
 
-L’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
+L’API vous permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que CMS (Content Management System) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
 Par exemple, les [applications monopages](/help/implementing/developing/hybrid/introduction.md), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 

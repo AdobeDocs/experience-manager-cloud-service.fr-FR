@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92392d3d57b40a423acc3e813e96ffb6f791ba4c
+source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
 workflow-type: tm+mt
-source-wordcount: '5714'
+source-wordcount: '5729'
 ht-degree: 99%
 
 ---
@@ -1021,6 +1021,7 @@ ht-degree: 99%
          + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
       + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
+   + [API AEM pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md)
    + API GraphQL {#graphql-api}
       + [API GraphQL pour les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
       + [Gérer les points d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1030,6 +1031,7 @@ ht-degree: 99%
       + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+   + [AEM API REST Open pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [API OpenAPI de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}

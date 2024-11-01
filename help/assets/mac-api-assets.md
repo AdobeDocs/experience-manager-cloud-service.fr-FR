@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 96%
+source-wordcount: '1720'
+ht-degree: 95%
 
 ---
 
 # API HTTP [!DNL Adobe Experience Manager Assets] {#assets-http-api}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Version | Lien de l’article |
@@ -48,6 +48,8 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] ](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
+>
+>Voir [AEM API pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 >
 >Les [OpenAPI de modèle de fragment de contenu et de fragment de contenu](/help/headless/content-fragment-openapis.md) sont également disponibles.
 
