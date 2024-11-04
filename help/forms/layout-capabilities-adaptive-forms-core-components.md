@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, Différentes mises en page pour les formulaires, AEM de mises en page de formulaires dynamiques, AEM Cloud Service de formulaires, types de mises en page de formulaires dans AEM composants principaux, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Adaptive Forms fournit des composants de première classe pour la mise en page et la conception de formulaires de manière efficace. La mise en page contrôle l’affichage des composants dans un formulaire. Les Forms adaptatives prennent en charge différentes mises en page : panneau, assistant, accordéon, onglets dans les onglets supérieur/horizontal et onglets dans les onglets gauche/vertical.
 
-![Types de mise en page](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Condition préalable
 

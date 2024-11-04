@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '5741'
-ht-degree: 99%
+source-wordcount: '5745'
+ht-degree: 98%
 
 ---
 
@@ -739,6 +739,7 @@ ht-degree: 99%
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
+            + [Création d’une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
