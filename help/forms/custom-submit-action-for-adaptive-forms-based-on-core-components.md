@@ -4,7 +4,7 @@ description: Découvrez comment créer une action Envoyer personnalisée pour un
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b1d5e210d84ad1443b30e4b166f52da51a182b09
+source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 5%
@@ -277,6 +277,5 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 ## Articles connexes
 
 {{af-submit-action}}
-
 
 <!-- The [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository includes a sample folder, `customsubmission/logsubmit`, to simplify the process of adding new custom submit actions. It also provides the Java service implementation for the `logsubmit` custom submit action, named `CustomAFSubmitService`.java. These resources are available on GitHub. -->
