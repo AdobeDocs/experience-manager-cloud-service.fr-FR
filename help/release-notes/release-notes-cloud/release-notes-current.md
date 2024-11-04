@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 61%
+source-wordcount: '1514'
+ht-degree: 58%
 
 ---
 
@@ -83,19 +83,19 @@ Les rapports peuvent désormais être générés automatiquement dans la vue Ass
 
 **Gestion des droits numériques pour les ressources sous licence**
 
-Les entreprises peuvent désormais augmenter la conformité aux licences et minimiser le risque de partager des ressources avec des conditions de licence en utilisant DRM pour les ressources sous licence pour les utilisateurs de Content Hub, ce qui oblige les utilisateurs à examiner et accepter les conditions de licence avant de pouvoir commencer à télécharger des ressources sous licence.
+Les entreprises peuvent désormais augmenter la conformité aux licences et minimiser le risque de partager des ressources avec des conditions de licence en utilisant DRM pour les ressources sous licence pour les utilisateurs de Content Hub, ce qui oblige les utilisateurs à examiner et accepter les conditions de licence avant de pouvoir commencer à télécharger des ressources sous licence. Pour plus d’informations, voir [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Configuration des métadonnées de carte de ressources**
 
-Content Hub vous permet désormais de configurer les champs de métadonnées clés que vous devez afficher sur la carte de ressources dans un maximum de 6 champs.
+Content Hub vous permet désormais de configurer les champs de métadonnées clés que vous devez afficher sur la carte de ressources dans un maximum de 6 champs. Pour plus d’informations, voir la section Carte de ressources dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![Métadonnées clé sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configuration de la visibilité et du téléchargement des ressources expirées**
 
-Les administrateurs et administratrices peuvent désormais contrôler s’ils ou elles ont besoin que les ressources expirées soient visibles dans le hub de contenus. Si les ressources expirées sont rendues visibles, les administrateurs et administratrices peuvent également définir si les personnes peuvent les télécharger.
+Les administrateurs et administratrices peuvent désormais contrôler s’ils ou elles ont besoin que les ressources expirées soient visibles dans le hub de contenus. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger. Pour plus d’informations, reportez-vous à la section Assets expirée dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Ressources expirées sur le hub de contenus](/help/assets/assets/expired-assets-content-hub.png)
 
