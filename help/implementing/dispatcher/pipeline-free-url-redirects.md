@@ -3,10 +3,10 @@ title: Redirections d’URL sans pipeline
 description: Découvrez comment déclarer des redirections 301 ou 302 sans accès aux pipelines Git ou Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Ensuite, dans un fichier de configuration Apache tel que `rewrites/rewrite.rules` ou `<yourfile>.vhost`, vous devez configurer le fichier map référencé par la propriété name ( `my.map` dans l’exemple ci-dessus).
+Ensuite, dans un fichier de configuration Apache tel que `rewrites/rewrite.rules` ou `<yourfile>.vhost`, vous devez configurer le fichier map référencé par la propriété name (`my.map` dans l’exemple ci-dessus).
 
 La directive `RewriteMap` doit indiquer que les données sont stockées dans un format de fichier de gestionnaire de base de données (DBM) à l’aide du format `sdbm` (DBM simple).
 
