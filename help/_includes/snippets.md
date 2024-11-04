@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # Fragments de code {#snippets}
@@ -111,6 +111,12 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    <td>L’option <b>Définir la valeur de</b> ne prend pas en charge la propriété <b>Sortie de service</b> pour appeler des API dans l’éditeur de règles.
    </td>
    </tr>
+   <tr>
+   <td>Navigation entre les panneaux</td>
+   <td> Les composants <b>Bouton suivant</b> et <b>Bouton précédent</b> sont fournis pour naviguer entre les panneaux. Un bouton de navigation placé dans le conteneur fonctionne sur ses éléments enfants.</td>
+   <td> La règle <b>Navigation dans le panneau</b> est disponible dans l’éditeur de règles, ce qui permet aux utilisateurs de créer des règles pour naviguer entre les enfants des panneaux.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Différence des diverses éditions de l’éditeur de règles](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
 * [Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
+* [Objet Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
 * [Exemples de développement et d’utilisation d’une fonction personnalisée](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >[L’éditeur universel](/help/implementing/universal-editor/introduction.md) n’est pas compatible avec les listes d’adresses IP autorisées.
 >
->Si vous souhaitez utiliser l’éditeur universel, les listes autorisées IP ne doivent pas être activées.
+>Si vous souhaitez utiliser l’éditeur universel, les listes d’adresses IP autorisées ne doivent pas être activées.
 
 ## Éditeur universel et listes d’adresses IP autorisées {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >L’éditeur universel n’est pas compatible avec les [listes d’adresses IP autorisées.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Si vous souhaitez utiliser l’éditeur universel, les Listes autorisées IP ne doivent pas être activées.
+>Si vous souhaitez utiliser l’éditeur universel, les listes d’adresses IP autorisées ne doivent pas être activées.
 
 ## Utiliser Dynamic Media {#work-with-dynamic-media}
 
@@ -197,7 +204,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >* Diffusez une [expérience interactive optimisée en 3D](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Autre [banque de ressources Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Enregistrer un ticket d’assistance {#support-ticket}
+## Soumettre un ticket d’assistance {#support-ticket}
 
 Si un problème de produit nécessite une enquête et un dépannage supplémentaires et doit répondre aux tests SLT, vous pouvez envoyer un ticket d’assistance.
 

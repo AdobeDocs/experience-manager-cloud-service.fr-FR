@@ -4,15 +4,15 @@ description: AEM Forms prend en charge les fonctions personnalisées qui permett
 keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 5%
+source-wordcount: '1340'
+ht-degree: 7%
 
 ---
 
-
-# Création d’une fonction personnalisée pour un formulaire adaptatif basée sur les composants principaux
+# Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux
 
 Les Forms adaptatives basées sur les composants principaux offrent des expériences utilisateur dynamiques en ajustant le contenu et le comportement en fonction des entrées de l’utilisateur. Les fonctions personnalisées permettent aux développeurs d’étendre les fonctionnalités, en s’assurant que les formulaires répondent à des exigences spécifiques. En intégrant des fonctions personnalisées, les développeurs peuvent implémenter une logique complexe, automatiser les processus et introduire des interactions uniques qui correspondent aux besoins spécifiques de l’entreprise ou aux attentes de l’utilisateur. Il permet de s’assurer que les formulaires s’adaptent non seulement à des conditions variées, mais qu’ils offrent également une solution plus précise et plus efficace pour divers cas d’utilisation.
 Cet article vous guide tout au long des étapes de création de fonctions personnalisées pour le Forms adaptatif à l’aide des composants principaux.
@@ -226,7 +226,7 @@ Prévisualisons le formulaire pour observer comment les fonctions personnalisée
 
 >[!NOTE]
 >
-> Vous pouvez vous référer au dossier [custom function](/help/forms/assets//customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> Vous pouvez vous référer au dossier [custom function](/help/forms/assets//customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Fonctions des fonctions personnalisées
 
@@ -238,49 +238,7 @@ Explorons les fonctionnalités des fonctions personnalisées.
 
 ### Prise en charge asynchrone dans les fonctions personnalisées {#support-of-async-functions}
 
-Les fonctions personnalisées asynchrones n’apparaissent pas dans la liste de l’éditeur de règles. Cependant, il est possible d’appeler des fonctions asynchrones dans des fonctions personnalisées créées à l’aide d’expressions de fonction synchrones.
-
-![Fonction personnalisée de synchronisation et asynchrone](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> L’avantage de l’appel de fonctions asynchrones dans les fonctions personnalisées est que les fonctions asynchrones permettent l’exécution simultanée de plusieurs tâches, avec le résultat de chaque fonction utilisée dans les fonctions personnalisées.
-
-Consultez le code ci-dessous pour découvrir comment nous pouvons appeler des fonctions asynchrones à l’aide de fonctions personnalisées :
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-Dans l’exemple ci-dessus, la fonction asyncFunction est `asynchronous function`. Il effectue une opération asynchrone en effectuant une requête `GET` vers `https://petstore.swagger.io/v2/store/inventory`. Il attend la réponse à l’aide de `await`, analyse le corps de la réponse en tant que JSON à l’aide de `response.json()`, puis renvoie les données. La fonction `callAsyncFunction` est une fonction personnalisée synchrone qui appelle la fonction `asyncFunction` et affiche les données de réponse dans la console. Bien que la fonction `callAsyncFunction` soit synchrone, elle appelle la fonction asynchrone asyncFunction et gère son résultat avec des instructions `then` et `catch`.
-
-Pour en voir le fonctionnement, nous allons ajouter un bouton et créer une règle pour le bouton qui appelle la fonction asynchrone lors d’un clic sur un bouton.
-
-![création d’une règle pour la fonction asynchrone](/help/forms/assets/rule-for-async-funct.png)
-
-Reportez-vous à l’illustration de la fenêtre de console ci-dessous pour démontrer que lorsque l’utilisateur clique sur le bouton `Fetch`, la fonction personnalisée `callAsyncFunction` est appelée, ce qui à son tour appelle une fonction asynchrone `asyncFunction`. Inspect dans la fenêtre de la console pour afficher la réponse à un clic sur le bouton :
-
-![Fenêtre de console](/help/forms/assets/async-custom-funct-console.png)
-
+Vous pouvez implémenter des fonctions asynchrones dans l’éditeur de règles à l’aide de fonctions personnalisées. Pour plus d’informations sur la procédure à suivre, reportez-vous à l’article [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Prise en charge des objets de champ et de portée globale dans les fonctions personnalisées {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ Les objets de champ font référence aux composants ou éléments individuels d�
 >[!NOTE]
 >
 > `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
+
+Pour plus d’informations sur les objets de portée, consultez l’article [Objets de portée dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md) .
 
 ### Prise en charge de la mise en cache dans une fonction personnalisée
 

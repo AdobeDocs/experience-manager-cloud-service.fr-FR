@@ -4,13 +4,13 @@ description: La disposition et l’apparence des formulaires adaptatifs sur diff
 feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, Différentes mises en page pour les formulaires, AEM de mises en page de formulaires dynamiques, AEM Cloud Service de formulaires, types de mises en page de formulaires dans AEM composants principaux, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
 
 ---
-
 
 # Fonctionnalités de mise en page de Forms adaptatif basées sur les composants principaux
 
@@ -261,7 +261,6 @@ De même, vous pouvez masquer les titres des deux autres panneaux. Une fois que 
    ![Composants du troisième panneau](/help/forms/assets/panel-3-component.png)
 
 1. Cliquez sur **[!UICONTROL Aperçu]** dans le coin supérieur droit de votre environnement de création.
-
    ![Disposition horizontale](/help/forms/assets/horizontal-layout.gif)
 
 Vous pouvez également [ faire glisser les composants](#extra-bytes) pour ajouter les composants de formulaire à chaque panneau.

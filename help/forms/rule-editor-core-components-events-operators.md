@@ -4,13 +4,13 @@ description: L’éditeur de règles de Forms adaptatif prend en charge divers t
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 50%
+source-wordcount: '2106'
+ht-degree: 46%
 
 ---
-
 
 # Types d’opérateurs et événements dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux
 
@@ -132,7 +132,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
 
-1. Ouvrez le formulaire adaptatif en mode de modification.
+1. Ouvrez le formulaire en mode d’édition.
 1. Ouvrez l’explorateur de contenu et sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur Terminé et enregistrez à nouveau la boîte de dialogue.
@@ -309,6 +309,50 @@ Une règle Valider standard est structurée comme suit :
 >Si la valeur spécifiée n’est pas conforme à la règle Valider, vous pouvez afficher un message de validation à l’utilisateur ou utilisatrice. Vous pouvez spécifier le message dans le champ **[!UICONTROL Message de validation du script]** dans les propriétés de composant dans la barre latérale.
 
 ![Script-validation](assets/script-validation.png)
+
+#### [!UICONTROL Navigation parmi les panneaux]
+
+Le type de règle **[!UICONTROL Navigation parmi les panneaux]** vous permet de déplacer la cible d’action entre les différents panneaux d’un formulaire. Par exemple, vous pouvez créer une expression pour déplacer la cible d’action vers le panneau suivant.
+
+Une règle **Navigation parmi les panneaux** standard pour déplacer le focus vers le panneau suivant est structurée comme suit :
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+De même, vous pouvez écrire la règle **Naviguer parmi les panneaux** pour déplacer le focus vers le panneau précédent :
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Pour plus d’informations sur la création d’une règle pour naviguer dans un panneau, [cliquez ici](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
+#### [!UICONTROL Appel de fonction asynchrone]
+
+<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible par le biais de notre [canal de pré-version](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
+
+Le type de règle **[!UICONTROL Appel de fonction asynchrone]** vous permet d’exécuter des fonctions asynchrones. Il vous permet de lancer un appel de fonction qui fonctionne indépendamment du thread d’exécution principal, ce qui permet à d’autres processus de continuer à s’exécuter sans attendre que la fonction asynchrone soit terminée.
+
+Une règle d’appel de fonction asynchrone standard pour exécuter une fonction asynchrone est structurée comme suit :
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur de règles visuel, reportez-vous à l’article [Utilisation d’appels de fonction asynchrones dans l’éditeur de règles](/help/forms/using-async-funct-in-rule-editor.md) .
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

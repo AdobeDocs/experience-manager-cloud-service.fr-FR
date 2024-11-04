@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
+source-wordcount: '5741'
 ht-degree: 99%
 
 ---
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [Différence entre l’éditeur de règles de base et l’éditeur de règles des composants principaux](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
                + [Exemples d’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
+               + [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
             + Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux{#create-and-use-custom-function-core-component}
                + [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
                + [Créer et utiliser une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
+               + [Objet Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
                + [Exemples de fonctions personnalisées pour un formulaire adaptatif basé sur des composants principaux](/help/forms/custom-function-core-components-use-cases.md)
             + Présentation du portail Formulaires et de ses composants{#introduction-to-forms-portal}
                + [Présentation du composant portail Formulaires](/help/forms/configure-forms-portal.md)

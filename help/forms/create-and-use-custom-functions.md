@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Présentation des fonctions personnalisées de Forms adaptatif basées sur les composants principaux
+# Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ Le paramètre est une liste d’arguments utilisés par les fonctions personnali
    * date[] : représente un tableau de valeurs de date.
    * array : représente un tableau générique contenant des valeurs de différents types.
    * object : représente l’objet de formulaire transmis à une fonction personnalisée au lieu de transmettre directement sa valeur.
-   * scope : représente l’objet global, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications de formulaire dans des fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible dans l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et comment l’utiliser, [cliquez ici](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions).
+   * scope : représente l’objet global, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications de formulaire dans des fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible dans l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et comment l’utiliser, [cliquez ici](/help/forms/custom-function-core-component-scope-function.md).
 
 Le type de paramètre n’est pas sensible à la casse et les espaces ne sont pas autorisés dans le nom du paramètre.
 

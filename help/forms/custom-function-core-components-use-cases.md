@@ -4,15 +4,15 @@ description: L’article décrit différents cas d’utilisation d’une fonctio
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
 
-
-# Exemples de développement et d’utilisation de fonctions personnalisées
+# Exemples de développement et d’utilisation d’une fonction personnalisée
 
 L’article fournit des exemples détaillés de fonctions personnalisées pour un formulaire adaptatif basées sur des composants principaux, offrant des informations précieuses sur leur mise en oeuvre efficace dans divers scénarios. Les fonctions personnalisées sont utilisées dans l’éditeur de règles d’AEM Forms pour permettre aux développeurs de définir et de contrôler la logique qui régit le comportement des formulaires.
 Cet article explore différentes mises en oeuvre de fonctions personnalisées, expliquant comment elles peuvent être utilisées pour personnaliser les formulaires en fonction de besoins spécifiques et améliorer les fonctionnalités globales.
@@ -264,7 +264,7 @@ Vous pouvez également vérifier la fenêtre de la console pour visualiser les d
 
 Découvrez comment les fonctions personnalisées utilisent les objets de champ et globaux pour remplacer les gestionnaires d’envoi à l’aide d’un formulaire `Contact Us`.
 
-Ajoutez la ligne de code suivante, comme expliqué dans la section [create-custom-function](/help/forms/custom-function-core-component-create-function.md) , pour personnaliser le message d’envoi ou d’échec pour les envois de formulaire et afficher les messages d’envoi de formulaire dans une boîte modale :
+Ajoutez la ligne de code suivante, comme expliqué dans la section [create-custom-fonctionnalités](/help/forms/custom-function-core-component-create-function.md), pour personnaliser le message d’envoi ou d’échec pour les envois de formulaire et afficher les messages d’envoi de formulaire dans une zone modale :
 
 ```javascript
 /**

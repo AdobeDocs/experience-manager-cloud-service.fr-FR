@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 56%
+source-wordcount: '1384'
+ht-degree: 45%
 
 ---
 
@@ -17,6 +17,26 @@ ht-degree: 56%
 L’article fournit des exemples détaillés d’un éditeur de règles pour un formulaire adaptatif basé sur des composants principaux, fournissant des informations sur son implémentation appropriée pour différents scénarios. L’éditeur de règles permet aux développeurs de définir et de gérer la logique contrôlant le comportement des formulaires.
 Maintenant, discutons des différentes mises en oeuvre d’un éditeur de règles.
 
+
+## Navigation entre les panneaux à l’aide du bouton
+
+L’éditeur de règles vous permet d’ajouter des boutons de navigation à vos mises en page de panneau, tels que Onglets horizontaux, Onglets verticaux, Accordéons ou Assistant. Ces boutons améliorent l’expérience utilisateur en simplifiant les transitions entre les différents panneaux d’un formulaire, en déplaçant la sélection vers le panneau sélectionné.
+
+Imaginez que vous interagissiez avec la section des paramètres de profil d’une application, où la navigation est facilitée par des boutons plutôt que par des onglets. Lors de la saisie des paramètres de profil à partir du tableau de bord principal, vous rencontrez une série de panneaux dédiés aux différents aspects de leur profil : **Informations personnelles**, **Sécurité du compte** et **Préférences de notification**.
+
+Chaque panneau contient des champs et des options pertinents pour la mise à jour d’informations spécifiques. Les boutons de navigation, tels que `Next` et `Back`, sont placés en bonne place pour vous permettre de vous déplacer entre ces panneaux. Cliquez sur `Next` pour avancer l&#39;utilisateur vers le panneau **Sécurité du compte** et cliquez sur `Back` pour revenir au panneau **Informations personnelles**. Cette méthode de navigation garantit une transition transparente entre les sections sans perdre de contexte, offrant ainsi une expérience utilisateur fluide et intuitive. L&#39;utilisation des boutons de navigation simplifie le processus de gestion des paramètres de profil, ce qui rend l&#39;interaction plus organisée et conviviale.
+
+Vous pouvez utiliser la règle `Navigate among the panels` pour créer des règles de navigation pour les boutons qui permettent de basculer entre différents panneaux.  Sélectionnez l’attribut `Shift focus to the next item` pour déplacer la mise au point vers le panneau suivant de la mise en page.
+
+![Règle de panneau suivante](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+Lorsque l’utilisateur clique sur le bouton `Next`, la mise en page se déplace vers le panneau suivant.
+
+![Navigation dans le panneau à l’aide du bouton Suivant](/help/forms/assets/navigate-in-panel.gif)
+
+De même, vous pouvez créer une règle pour le bouton `Previous` afin de déplacer la sélection vers le panneau précédent.
+
+![Règle de panneau précédente](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Rationalisation de calculs complexes dans des panneaux répétables avec fonctions
 

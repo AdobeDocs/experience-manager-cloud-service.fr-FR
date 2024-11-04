@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 8%
 
 ---
@@ -90,7 +90,7 @@ Cloner le référentiel des composants principaux de Forms adaptatif : vous avez
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Cette commande télécharge le référentiel et crée un dossier nommé `aem-core-forms-components` sur votre ordinateur. Dans ce guide, nous nous référons à ce dossier en tant que `[Adaptive Forms Core Components repository]`
+   Cette commande télécharge le référentiel et crée un dossier nommé `aem-core-forms-components` sur votre ordinateur. Dans ce guide, nous nous référons à ce dossier sous le nom de `[Adaptive Forms Core Components repository]`.
 
 
 ## Ajouter un paramètre régional {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ Maintenant, incorporons la bibliothèque `clientlib-it-custom-locale` dans votre
 
       ![Collage de clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. Mettre à jour le chemin `aemLangUrl` dans `languageinit.js`
+
+   1. Accédez au répertoire suivant dans votre [ répertoire de projet AEMaaCS ] :
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. Ouvrez le fichier `languageinit.js` dans votre éditeur.
+   1. Recherchez la ligne suivante dans le fichier `languageinit.js` :
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. Remplacez `forms-core-components-it` par votre `<app-id>` (identifiant réel de votre application) dans la ligne ci-dessus.
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> Si vous ne remplacez pas `forms-core-components-it` par le nom de votre projet ou `<app-id>`, la traduction du composant Sélecteur de date échoue.
 
 ### Créez un fichier pour vos nouveaux paramètres régionaux :
 
