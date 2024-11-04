@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
+source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1317'
 ht-degree: 20%
 
 ---
@@ -160,6 +160,10 @@ Le composant sélectionné a été supprimé.
 1. Le composant déplacé devient gris dans l’arborescence de contenu, tandis que votre point d’insertion est représenté par une ligne bleue. Libérez le composant pour le placer à son nouvel emplacement.
 
 Les composants sont réorganisés dans l’arborescence de contenu et dans l’éditeur.
+
+>[!NOTE]
+>
+>Les composants ne peuvent pas être déplacés entre les conteneurs si un [filtre de composant](/help/implementing/universal-editor/customizing.md#filtering-components) différent est défini entre les conteneurs source et cible.
 
 ## Prévisualisation du contenu {#previewing-content}
 

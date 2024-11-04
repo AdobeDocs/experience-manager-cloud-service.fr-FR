@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour d’Universal Editor 2024.08.13
-description: Il s’agit des notes de mise à jour de la version 2024.08.13 d’Universal Editor.
+title: Notes de mise à jour d’Universal Editor 2024.09.3
+description: Il s’agit des notes de mise à jour de la version 2024.09.3 d’Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
+source-git-commit: b70acef8dc259fff3041617abe0a89f7eb73dfab
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 
-# Notes de mise à jour d’Universal Editor 2024.08.13 {#release-notes}
+# Notes de mise à jour d’Universal Editor 2024.09.3 {#release-notes}
 
-Il s’agit des notes de mise à jour de la version d’Universal Editor du 13 août 2024.
+Il s’agit des notes de mise à jour de la version du 3 septembre 2024 d’Universal Editor.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Il s’agit des notes de mise à jour de la version d’Universal Editor du 13 a
 
 ## Nouveautés {#what-is-new}
 
-* **Types de données personnalisés** : personnalisez l’éditeur en fonction de vos besoins de données uniques avec la possibilité de [créer des champs personnalisés dans le panneau des propriétés.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-   * Que vous développiez un sélecteur de produits personnalisé pour des cas d’utilisation commerciaux ou que vous remplissiez une liste déroulante avec des valeurs issues de vos arrière-plans, cette fonctionnalité vous donne le contrôle nécessaire sur les données que les auteurs utilisent pour composer du contenu.
-* **Glisser-déposer inter-conteneurs** : profitez d’une plus grande flexibilité dans la composition des mises en page avec la possibilité de [déplacer des composants sur différents conteneurs par glisser-déposer](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) dans le [panneau Arborescence de contenu.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* **Intégration GitHub optimisée** : la mise en cache des réponses GitHub a été introduite, ce qui accélère considérablement la récupération des balises et de `universal-editor-cors-library`, ce qui se traduit par une expérience utilisateur plus rapide et plus fluide.
-* **Validation de jeton IMS configurable** : pour accroître la flexibilité de la gestion des jetons, la [validation de jeton IMS est désormais facultative.](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-   * Cette option de configuration vous permet de désactiver la validation si nécessaire, ce qui simplifie les configurations de la passerelle cloud.
-* **Intégration Splunk** : la journalisation Splunk a été intégrée dans le [service d’éditeur universel pour le développement local,](/help/implementing/universal-editor/local-dev.md#setting-up-service) améliorant la surveillance et les diagnostics.
-   * Cette intégration garantit un suivi efficace des logs, des opérations plus fluides et un dépannage plus rapide.
+* **`rootPath`désormais disponible pour le sélecteur de contenu** : le sélecteur de contenu peut désormais être fourni avec un `rootPath` pour présenter à l’utilisateur une sélection ciblée de contenu lors de l’utilisation des types de champs [AEM contenu,](/help/implementing/universal-editor/field-types.md#aem-content) [Fragment de contenu,](/help/implementing/universal-editor/field-types.md#content-fragment) et [Fragment d’expérience](/help/implementing/universal-editor/field-types.md#experience-fragment).
+   * La sélection de contenu est ainsi limitée au contenu du chemin d’accès spécifié et aux sous-répertoires.
+
+## Programme d’adoption précoce pour la prise en charge de la version 6.5 {#early-adoption}
+
+Universal Editor est désormais disponible pour les cas d’utilisation sans interface lors de l’utilisation d’AEM 6.5 dans le cadre d’un programme d’adoption précoce.
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un email à votre représentant d’Adobe à partir de l’adresse électronique associée à votre Adobe ID.
 
 ## Correctifs {#bug-fixes}
 
-* **Commentaires sur la publication améliorés** : si la publication échoue en raison d’autorisations insuffisantes, les commentaires envoyés à l’utilisateur lors de la publication ont été améliorés afin d’afficher un avertissement clair au lieu de simplement signaler un échec.
-* **Amélioration de la gestion des URL** : les problèmes de codage/décodage d’URL incorrect qui provoquaient des échecs de publication ont été résolus.
-* **Gestion précise des données** : correction d’un problème en raison duquel les nombres flottants étaient incorrectement stockés en tant qu’entiers, ce qui permet d’assurer une gestion précise des données dans votre contenu.
-* **Sécurité et stabilité** : les vulnérabilités de la sécurité dans les images Docker ont été corrigées et la couverture de test pour les composants critiques tels que le sélecteur de composants et le chemin de navigation ont été implémentés, ce qui a permis d’offrir une expérience d’éditeur plus sécurisée, stable et fiable.
+* **Glisser-déposer inter-conteneurs** : [Le déplacement de composants entre différents conteneurs par glisser-déposer](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) respecte désormais les [filtres de composants](/help/implementing/universal-editor/customizing.md#filtering-components) dans la source et la cible.
