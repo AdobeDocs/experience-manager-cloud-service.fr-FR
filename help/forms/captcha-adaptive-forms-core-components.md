@@ -4,12 +4,11 @@ description: Améliorez la sécurité des formulaires avec le service Google reC
 topic-tags: Adaptive Forms, author
 keywords: Service Google reCAPTCHA, Forms adaptatif, défi CAPTCHA, prévention des robots, composants principaux, sécurité d’envoi de formulaire, prévention des messages indésirables de formulaire
 feature: Adaptive Forms, Core Components
-exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 role: User, Developer
-source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
+source-git-commit: ec2f2a2951689ef20434ea6f531089502299bcb5
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 17%
+source-wordcount: '1418'
+ht-degree: 22%
 
 ---
 
@@ -28,9 +27,48 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 * [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
-## Connectez votre environnement AEM Forms avec le service reCAPTCHA de Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
+## Connexion de vos composants principaux AEM Forms avec le service reCAPTCHA par Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter reCAPTCHA dans les Forms adaptatifs. Il offre des fonctionnalités avancées de CAPTCHA pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, consultez [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] prend en charge Google reCAPTCHA v2 dans Adaptive Forms. Vous pouvez l’utiliser pour présenter un défi CAPTCHA lors de l’envoi du formulaire. Pour connecter votre environnement AEM Forms avec le service reCAPTCHA de Google
+Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter reCAPTCHA dans les Forms adaptatifs. Il offre des fonctionnalités avancées de CAPTCHA pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, consultez [Google reCAPTCHA](https://developers.google.com/recaptcha/). Vous l’utilisez pour présenter un défi CAPTCHA lors de l’envoi du formulaire.[!DNL AEM Forms] as a [!DNL Cloud Service] prend en charge Google reCAPTCHA v2 et reCAPTCHA Enterprise. Toute autre version n’est pas prise en charge. Notez également que reCAPTCHA dans Adaptive Forms n’est pas pris en charge en mode hors ligne sur l’application AEM Forms.
+
+Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
+
+* [reCAPTCHA Enterprise](#steps-to-implement-reCAPTCHA-enterprise-in-forms-core-components)
+* [reCAPTCHA v2](#steps-to-implement-reCAPTCHA-v2-in-forms)
+
+### Configuration de reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms-core-components}
+
+1. Créez ou sélectionnez un [projet Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) et activez [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
+1. Procurez-vous l’ [ID de projet](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) et créez une [clé d’API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) et une [clé de site pour les sites web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
+1. Créez un conteneur de configurations pour les services cloud.
+
+   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
+   1. Sélectionnez un dossier ou créez-en un, puis activez le dossier pour les configurations cloud en procédant comme suit :
+      1. Dans l’explorateur de configurations, sélectionnez le dossier, puis **[!UICONTROL Propriétés]**.
+      1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
+      1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+
+1. Configurez le service cloud pour [!DNL reCAPTCHA Enterprise].
+
+   1. Sur votre instance de création Experience Manager, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Sélectionnez **[!UICONTROL reCAPTCHA]**. La page de configuration s’ouvre. Sélectionnez le conteneur de configuration que vous avez créé et sélectionnez **[!UICONTROL Créer]**.
+   1. Sélectionnez la version [!DNL reCAPTCHA Enterprise] et spécifiez le nom, l’ID de projet, la clé du site et la clé API (Obtenu à l’étape 2) pour le service d’entreprise reCAPTCHA.
+   1. Sélectionnez le type de clé, le type de clé doit être identique à la clé de site que vous avez configurée dans le [projet Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), par exemple, **Cochez la clé de site** ou **Clé de site basée sur le score**.
+   1. Spécifiez un score [seuil compris entre 0 et 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Les scores supérieurs ou égaux aux scores de seuil indiquent une interaction humaine, sinon il s’agit d’une interaction avec un robot.
+   1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration du service cloud.
+
+<!--
+    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
+-->
+
+Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé dans les formulaires adaptatifs. Voir [Utilisation du CAPTCHA dans les formulaires adaptifs](#using-reCAPTCHA).
+
+<!--
+![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
+-->
+
+
+### Configurer Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obtenir la [paire de clés de l’API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Elle comprend une **clé de site** et une **clé secrète**.
 
@@ -58,6 +96,9 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
 
    Une fois le service reCAPTCHA configuré, il peut être utilisé dans un formulaire adaptatif. Pour plus d’informations, voir [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](#using-reCAPTCHA).
 
+
+Utilisation de Google reCAPTCHA dans les formulaires adaptatifs
+
 ## Utiliser Google reCAPTCHA dans un formulaire adaptatif {#using-reCAPTCHA}
 
 Pour utiliser reCAPTCHA dans Adaptive Forms :
@@ -73,19 +114,37 @@ Pour utiliser reCAPTCHA dans Adaptive Forms :
 1. Sélectionnez une Forms adaptative et sélectionnez **[!UICONTROL Modifier]**. Le formulaire adaptatif s’ouvre dans l’éditeur de Forms adaptatif.
 1. A partir de l’explorateur de composants, faites glisser le composant **[!UICONTROL Adaptive Form reCAPTCHA]** sur le formulaire adaptatif.
 
-   La validation de Google reCAPTCHA est sensible au temps et expire dans environ deux minutes. Par conséquent, Adobe recommande de placer le composant **[!UICONTROL reCAPTCHA]** de formulaire adaptatif juste avant le bouton **[!UICONTROL Envoyer]** .
+   >[!NOTE]
+   > * La validation de Google reCAPTCHA est sensible au temps et expire dans environ deux minutes. Par conséquent, Adobe recommande de placer le composant **[!UICONTROL reCAPTCHA]** de formulaire adaptatif juste avant le bouton **[!UICONTROL Envoyer]** .
 
 1. Sélectionnez le composant **[!UICONTROL Adaptive Form reCAPTCHA]** et sélectionnez l’icône de propriétés ![Icône Propriétés](assets/configure-icon.svg) . Elle ouvre la boîte de dialogue des propriétés. Spécifiez les propriétés obligatoires suivantes :
    * **[!UICONTROL Nom] :** Vous pouvez facilement identifier un composant de formulaire avec son nom unique dans le formulaire et dans l’éditeur de règles, mais le nom ne doit pas contenir d’espaces ni de caractères spéciaux.
-   * **[!UICONTROL Configuration CAPTCHA] :** Sélectionnez une configuration cloud configurée pour présenter la boîte de dialogue Google reCAPTCHA pour le formulaire. Vous pouvez avoir plusieurs configurations de cloud dans votre environnement à des fins similaires. Choisissez donc le service avec soin. Si aucun service n’est répertorié, reportez-vous à la section [Connexion de votre environnement AEM Forms avec le service reCAPTCHA de Google](#connect-your-forms-environment-with-recaptcha-service-by-google) pour savoir comment créer un Cloud Service qui connecte votre environnement AEM Forms au service reCAPTCHA par Google.
+   * **[!UICONTROL Titre] :** Spécifiez un titre pour le widget CAPTCHA. La valeur par défaut est **Captcha**. Sélectionnez **Masquer le titre** si vous ne souhaitez pas que le titre apparaisse. Sélectionnez **Autoriser le texte enrichi pour le titre** pour modifier votre titre au format texte enrichi. Vous pouvez également marquer votre titre comme **Unbound Form Element**.
+   * **[!UICONTROL Configuration CAPTCHA] :** Sélectionnez une configuration dans la liste déroulante Paramètres de **reCAPTCHA Enterprise** ou **reCAPTCHA v2** pour présenter la boîte de dialogue Google reCAPTCHA pour le formulaire :
+      1. Si vous sélectionnez la version **reCAPTCHA Enterprise**, le type de clé peut être **checkbox** ou **score basé sur**. Il est basé sur votre sélection lorsque vous configurez la [clé de site pour les sites Web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key) :
+         >[!NOTE]
+         >
+         >* Dans la configuration cloud avec **type de clé** comme **case à cocher**, le message d’erreur personnalisé s’affiche en tant que message intégré en cas d’échec de la validation du captcha.
+         >* Dans la configuration cloud avec **type de clé** comme **score basé sur**, le message d’erreur personnalisé s’affiche sous forme de message contextuel si la validation du captcha échoue.
+      1. Vous pouvez sélectionner la taille **[!UICONTROL normale]** et la taille **[!UICONTROL compacte]**.
+
+     >[!NOTE]
+     >* Vous pouvez avoir plusieurs configurations de cloud dans votre environnement à des fins similaires. Choisissez donc le service avec soin. Si aucun service n’est répertorié, reportez-vous à la section [Connexion de votre environnement AEM Forms avec le service reCAPTCHA de Google](#connect-your-forms-environment-with-recaptcha-service-by-google) pour savoir comment créer un Cloud Service qui connecte votre environnement AEM Forms au service reCAPTCHA par Google.
+
    * **Taille du captcha :** Vous pouvez sélectionner la taille d’affichage de la boîte de dialogue de défi Google reCAPTCHA. Utilisez l’option **[!UICONTROL Compact]** pour afficher une petite taille et l’option **[!UICONTROL Normale]** pour afficher une boîte de dialogue de défi Google reCAPTCHA de taille relativement importante.
+Si vous sélectionnez la version **reCAPTCHA v2** :
+      1. Vous pouvez sélectionner la taille **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA.
+      1. Vous pouvez sélectionner l&#39;option **[!UICONTROL Invisible]** pour afficher le défi CAPTCHA uniquement en cas d&#39;activité suspecte.
+
+   Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir CAPTCHA fonctionner. Le badge **protégé par reCAPTCHA**, affiché ci-dessous, s’affiche sur les formulaires protégés.
+
+   ![Badge protégé par reCAPTCHA de Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Sélectionnez **[!UICONTROL Terminé]**.
 
    Désormais, le **protégé par reCAPTCHA** s’affiche sur votre formulaire adaptatif. Il s’affiche sur toutes les Forms adaptatives configurées pour utiliser le service Google reCAPTCHA.
 
    Désormais, seuls les formulaires légitimes, dans lesquels l’utilisateur réussit à résoudre le problème posé par le service Google reCAPTCHA, sont autorisés à être envoyés.
-   ![Badge protégé par reCAPTCHA de Google](/help/forms/assets/google-recaptcha-v2.png)
 
 <!--
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
