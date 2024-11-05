@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 39%
+source-wordcount: '3187'
+ht-degree: 38%
 
 ---
 
@@ -52,6 +52,7 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
    * **Wipe:** Sélectionnez la valeur `Wipe`
       * L’option **Wipe** définit le point de départ de la destination de l’ingestion. Si **Wipe** est activé, la destination, y compris tout son contenu, est réinitialisée à la version de l’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
       * Cette option n’affecte **PAS** la manière dont l’ingestion du contenu sera effectuée. L’ingestion utilise toujours une stratégie de remplacement de contenu et _non_ une stratégie de fusion de contenu. Ainsi, dans les cas **Wipe** et **Non-Wipe**, l’ingestion d’un jeu de migration remplacera le contenu dans le même chemin d’accès sur la destination. Par exemple, si le jeu de migration contient `/content/page1` et que la destination contient déjà `/content/page1/product1`, l’ingestion supprime l’intégralité du chemin d’accès `page1` et ses sous-pages, y compris `product1`, et le remplace par le contenu du jeu de migration. Cela signifie qu’une planification minutieuse doit être effectuée lors de l’ingestion **non effacée** vers une destination qui contient tout contenu qui doit être conservé.
+      * Les assimilations non effacées sont spécialement conçues pour le cas d’utilisation de l’ingestion de complément. Ces assimilations sont destinées à disposer d’une quantité incrémentielle de nouveau contenu qui a changé depuis la dernière ingestion dans un jeu de migration existant. L’exécution d’ingérations non effacées en dehors de ce cas d’utilisation peut entraîner des temps d’ingestion très longs.
 
    >[!IMPORTANT]
    > Si le paramètre **Wipe** est activé pour l’ingestion, il réinitialise l’ensemble du référentiel existant, y compris les autorisations utilisateur sur l’instance du Cloud Service cible. Cette réinitialisation est également vraie pour un utilisateur administrateur ajouté au groupe **administrateurs** et cet utilisateur doit être ajouté à nouveau au groupe administrateurs pour démarrer une ingestion.
