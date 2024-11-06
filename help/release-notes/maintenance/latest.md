@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 32%
 
 ---
@@ -56,8 +56,11 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 * SITES-25456 : Événements : lors du déplacement d’une page, un événement de suppression de page est généré en plus de l’événement de déplacement de page.
 * SITES-25658 : Événements : le niveau et la sourceUrl ne sont pas renseignés dans les événements d’état du contenu de la page.
 * SITES-6497 : Lancements : la page de création du lancement ne fonctionne pas.
+* SITES-25938 : Lancements : suppression inattendue après le projet de traduction.
 * SITES-25393 : Edge Delivery avec Universal Editor : noeuds de texte perdus lors du rendu de texte enrichi formaté avec un seul paragraphe.
 * SITES-24643 : Edge Delivery avec Universal Editor : les attributs de métadonnées OpenGraph et twitter ne fonctionnent pas dans le modèle de métadonnées de page.
+* SITES-25401 : Fragments d’expérience : mise à jour lente de la référence XF
+
 
 ### Problèmes connus {#known-issues-18459}
 
