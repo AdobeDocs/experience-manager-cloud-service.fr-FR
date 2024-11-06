@@ -4,10 +4,10 @@ description: Découvrez comment configurer des fonctionnalités de mise en rése
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -396,7 +396,7 @@ Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédi
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
-Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cela peut être utile, par exemple, pour sécuriser l’accès à une base de données. Cela permet également de se connecter aux fournisseurs SaaS tels qu’un fournisseur de gestion de la relation client qui prend en charge les VPN ou de se connecter à l’instance de création, d’aperçu ou de publication d’AEM as a Cloud Service à partir d’un réseau d’entreprise.
+Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cela peut être utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter aux fournisseurs SaaS tels qu’un fournisseur de gestion de la relation client qui prend en charge VPN.
 
 La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez les informations de la colonne **Instructions de configuration basées sur l’itinéraire** dans [cette liste d’appareils.](https://learn.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configurez l’appareil comme décrit dans le tableau.
 
@@ -556,7 +556,9 @@ Le tableau ci-dessous décrit le routage du trafic.
 
 ### Domaines utiles à la configuration {#vpn-useful-domains-for-configuration}
 
-Le tableau ci-dessous décrit un ensemble de domaines et d’adresses IP associées, utiles à la configuration et au développement.
+Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de domaines et d’adresses IP associées utiles à la configuration et au développement. Le tableau sous le diagramme décrit ces domaines et adresses IP.
+
+![Configuration de domaine VPN](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -579,21 +581,6 @@ Le tableau ci-dessous décrit un ensemble de domaines et d’adresses IP associ�
   </tr>
 </tbody>
 </table>
-
-### Restreindre le VPN aux connexions entrantes {#restrict-vpn-to-ingress-connections}
-
-Si vous souhaitez n’autoriser que l’accès VPN à AEM, les listes autorisées d’environnement peuvent être configurées dans Cloud Manager, de sorte que seule l’adresse IP définie par `p{PROGRAM_ID}.external.adobeaemcloud.com` est autorisée à s’adresser à l’environnement. Vous pouvez le faire de la même manière que pour toute autre liste autorisée basée sur les adresses IP dans Cloud Manager.
-
-Si les règles doivent être basées sur un chemin d’accès, utilisez des directives http standard au niveau du Dispatcher pour refuser ou autoriser certaines adresses IP. Elles doivent s’assurer que les chemins souhaités ne peuvent pas être mis en cache sur le réseau de diffusion de contenu, de sorte que la demande puisse toujours être mise en origine.
-
-#### Exemple de configuration httpd {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## Activer les configurations de mise en réseau avancée dans les environnements {#enabling}
 
