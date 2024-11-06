@@ -4,11 +4,10 @@ description: Découvrez comment configurer Adobe Acrobat Sign pour [!DNL AEM F
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 87%
+source-wordcount: '2195'
+ht-degree: 84%
 
 ---
 
@@ -57,7 +56,8 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
 1. Maintenant, vous pouvez **[!UICONTROL sélectionner une solution]** pour sélectionner [!DNL Adobe Acrobat Sign].
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Configuration Adobe Acrobat Sign Solutions](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > Vous pouvez modifier le modificateur de portées de `self` à `account` directement depuis l’interface utilisateur d’AEM, comme indiqué à l’étape 12.
+
    Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application [!DNL Adobe Acrobat Sign] et l’obtention des clés, voir [Configurer les paramètres oAuth pour l’application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](/help/forms/assets/oauthconfig-new.png)
 
 1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Acrobat Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez l’[**[!UICONTROL ID client]** (également appelé ID de l’application) et le **[!UICONTROL Secret client]**]. Utilisez l’[ID client et le secret client de l’application Adobe Acrobat Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) que vous avez créés à l’étape précédente.
+
+1. Dans la section [!UICONTROL Domaine de l’autorisation], vous pouvez modifier les portées en &quot;compte&quot; ou &quot;moi&quot; en ajoutant le préfixe &quot;moi&quot; ou &quot;compte&quot; aux portées, si nécessaire.
+   ![Domaine d’autorisation](/help/forms/assets/authorization-scope.png)
 
 1. Sélectionnez l’option **[!UICONTROL Activer Adobe Acrobat Sign pour les pièces jointes]** pour ajouter les fichiers joints à un formulaire adaptatif au document [!DNL Adobe Acrobat Sign] correspondant envoyé à des fins de signature.
 
@@ -263,6 +269,10 @@ Par exemple, pour exécuter le service de configuration tous les jours à 00:00
 
 Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
+## Questions fréquentes
+
+* **Q : Puis-je effectuer le rendu de la page Adobe Sign GovCloud Signature dans un iframe ?**
+* **A :** Oui, vous pouvez afficher la page Adobe Sign GovCloud Signature dans un iframe.
 
 >[!MORELIKETHIS]
 >
