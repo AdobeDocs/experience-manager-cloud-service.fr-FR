@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 L’article fournit des exemples détaillés de fonctions personnalisées pour un formulaire adaptatif basées sur des composants principaux, offrant des informations précieuses sur leur mise en oeuvre efficace dans divers scénarios. Les fonctions personnalisées sont utilisées dans l’éditeur de règles d’AEM Forms pour permettre aux développeurs de définir et de contrôler la logique qui régit le comportement des formulaires.
 Cet article explore différentes mises en oeuvre de fonctions personnalisées, expliquant comment elles peuvent être utilisées pour personnaliser les formulaires en fonction de besoins spécifiques et améliorer les fonctionnalités globales.
 
-## Définition des options de liste déroulante à l’aide de fonctions personnalisées
+## Renseigner les options de liste déroulante à l’aide de fonctions personnalisées
 
-L’éditeur de règles dans les composants principaux ne prend pas en charge la propriété **Set Options of** pour définir les options de liste déroulante au moment de l’exécution. Vous pouvez toutefois définir les options de liste déroulante à l’aide de fonctions personnalisées.
+L’éditeur de règles dans les composants principaux ne prend pas en charge la propriété **Set Options** pour remplir dynamiquement les options de liste déroulante au moment de l’exécution. Cependant, vous pouvez renseigner des options de liste déroulante à l’aide de fonctions personnalisées, qui vous permettent de récupérer des options en fonction d’une logique spécifique. Les fonctions personnalisées offrent une plus grande flexibilité et un meilleur contrôle sur la manière et le moment où les options de liste déroulante sont renseignées, ce qui améliore l’expérience utilisateur.
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](/help/forms/custom-function-core-component-create-function.md) pour définir les options de liste déroulante à l’aide de fonctions personnalisées :
+Pour renseigner les options de liste déroulante à l’aide d’une fonction personnalisée, ajoutez le code suivant comme décrit dans la section [create-custom-function](/help/forms/custom-function-core-component-create-function.md) :
+
 
 ```javascript
     /**
