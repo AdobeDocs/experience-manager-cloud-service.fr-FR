@@ -1,18 +1,18 @@
 ---
-title: Présentation des Edge Delivery Services dans Cloud Manager
+title: Présentation d’Edge Delivery Services dans Cloud Manager
 description: Découvrez comment diffuser vos projets Cloud Manager à l’aide de Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
 
-# Présentation des Edge Delivery Services dans Cloud Manager {#edge-delivery-services}
+# Présentation d’Edge Delivery Services dans Cloud Manager {#edge-delivery-services}
 
 Edge Delivery Services est un ensemble de services composable qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Cette fonctionnalité vous permet d’effectuer les opérations suivantes :
 
@@ -20,7 +20,7 @@ Edge Delivery Services est un ensemble de services composable qui offre une gr
 * Surveillez continuellement les performances grâce à la fonction RUM (surveillance de l’utilisation réelle).
 * Augmentez l’efficacité de la création en découplant les sources de contenu.
 
-Vous pouvez utiliser AEM gestion de contenu et la création WYSIWYG à l’aide de l’éditeur universel et de la création basée sur des documents.
+Vous pouvez utiliser la gestion de contenu AEM et la création WYSIWYG à l’aide d’Universal Editor et de la création basée sur des documents.
 
 Cloud Manager dans AEM as a Cloud Service vous permet d’activer le service Edge Delivery pour votre projet.
 
@@ -76,13 +76,14 @@ La **liste de tâches d’Edge Delivery** est une liste de contrôle de tâches 
 | 1 | Rejoindre le canal de collaboration de produit | Cliquer sur **Soumettre la demande maintenant** envoie une demande à l’Adobe pour créer un canal pour votre entreprise. Si le canal existe déjà, vous êtes transféré vers le canal de votre entreprise. |
 | 2 | Remplir les conditions préalables | Cliquez sur **Afficher le tutoriel de prise en main** pour accéder au [didacticiel de prise en main - développeur](https://www.aem.live/developer/tutorial). |
 | 3 | Ajout d’un site Edge Delivery | Voir [Ajout d’un site Edge Delivery](#eds-add-site). |
-| 4 | Ajouter un domaine | Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+| 4 | Ajouter un domaine | Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Configurer le CDN | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configuration du réseau de diffusion de contenu de votre site Edge Delivery | Voir [Ajout d’une configuration CDN](#add-cdn). |
+| 6 | Configuration du réseau de diffusion de contenu de votre site Edge Delivery | Voir [Ajout d’une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 7 | Activation | Effectuez la dernière étape dans GoLive. |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## Enregistrer un ticket d’assistance {#eds-support-ticket}
+## Soumettre un ticket d’assistance {#eds-support-ticket}
 
 {{support-ticket}}
 
