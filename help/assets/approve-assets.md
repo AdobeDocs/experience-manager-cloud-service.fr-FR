@@ -3,16 +3,16 @@ title: Approbation des ressources dans Experience Manager
 description: Découvrez comment approuver des ressources dans [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 3%
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
 # Approuver des ressources dans [!DNL Experience Manager]
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Les responsables de marques et les marketeurs contrôlent strictement les ressources de marque. Seule la version approuvée et la dernière version de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
@@ -96,13 +96,15 @@ Pour copier l’URL de diffusion d’une ressource approuvée dans le référent
 
 1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Details]**.
 
-1. Cliquez sur l’icône Rendus disponible dans le volet de droite.
+1. Cliquez sur l’icône Dynamic Media disponible dans le volet de droite.
 
-1. Sélectionnez **[!UICONTROL Dynamic Media avec OpenAPI]** disponible dans la section **[!UICONTROL Dynamic]** .
+1. Sélectionnez **[!UICONTROL Dynamic Media with OpenAPI]** disponible dans le panneau **[!UICONTROL Dynamic Media]**.
 
 1. Cliquez sur **[!UICONTROL Copier l’URL]** pour copier l’URL de diffusion de la ressource.
-   ![Copier l’URL de diffusion](/help/assets/assets/copy-delivery-url.png)
+   ![rendus dynamiques](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >L’option de copie de l’URL de diffusion pour les ressources approuvées est disponible dans la vue Assets.
+
+Pour plus d’informations sur les autres rendus qui s’affichent dans le panneau Dynamic Media, voir [Affichage et téléchargement des rendus Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).
