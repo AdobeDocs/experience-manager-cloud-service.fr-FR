@@ -1,10 +1,10 @@
 ---
 title: Définitions de modèles, champs et types de composants
-description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
+description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau Propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 13%
@@ -14,11 +14,11 @@ ht-degree: 13%
 
 # Définitions de modèles, champs et types de composants {#field-types}
 
-Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le rail des propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
+Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau Propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
 
 ## Vue d’ensemble {#overview}
 
-Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les champs et les types de composants qu’ils peuvent manipuler dans le rail des propriétés de l’éditeur. Pour ce faire, créez un modèle et liez-le à partir du composant.
+Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les champs et les types de composants qu’ils peuvent manipuler dans le panneau des propriétés de l’éditeur. Pour ce faire, créez un modèle et liez-le à partir du composant.
 
 Ce document présente la définition d’un modèle, ainsi que les champs et les types de composants disponibles, avec des exemples de configuration.
 
@@ -28,7 +28,7 @@ Ce document présente la définition d’un modèle, ainsi que les champs et les
 
 ## Structure de la définition de modèle {#model-structure}
 
-Pour configurer un composant via le rail de propriétés de l’éditeur universel, une définition de modèle doit exister et être liée au composant.
+Pour configurer un composant via le panneau des propriétés de l’éditeur universel, une définition de modèle doit exister et être liée au composant.
 
 La définition de modèle est une structure JSON, commençant par un tableau de modèles.
 
@@ -36,7 +36,7 @@ La définition de modèle est une structure JSON, commençant par un tableau de 
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

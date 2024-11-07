@@ -4,7 +4,7 @@ description: Si vous êtes un développeur AEM intéressé par le fonctionnement
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -240,7 +240,7 @@ Vos composants doivent également être instrumentés pour être modifiables ave
 
 1. Dans l’éditeur universel, cliquez sur le composant de teaser en haut de la page et vérifiez que vous pouvez le sélectionner.
 
-1. Si vous cliquez sur l’icône **Arborescence de contenu** dans le rail des propriétés de l’éditeur universel, vous pouvez constater que l’éditeur a reconnu tous les teasers sur la page maintenant que vous l’avez instrumenté. Le teaser sélectionné est celui en surbrillance.
+1. Si vous cliquez sur l’icône **Arborescence de contenu** dans le panneau des propriétés de l’éditeur universel, vous pouvez constater que l’éditeur a reconnu tous les teasers sur la page maintenant que vous l’avez instrumenté. Le teaser sélectionné est celui en surbrillance.
 
    ![Sélectionner le composant de teaser instrumenté](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ Vous pouvez voir la modification conservée dans le JCR.
 >
 >L’exemple d’en-tête d’authentification de base `Basic YWRtaW46YWRtaW4=` est destiné à la combinaison utilisateur/mot de passe de `admin:admin`, comme c’est le cas pour le développement d’AEM locales.
 
-## instrumentalisation de l’application pour le rail Propriétés {#properties-rail}
+## instrumentalisation de l’application pour le panneau Propriétés {#properties-rail}
 
 Vous disposez désormais d’une application dont la modification est instrumentée à l’aide d’Universal Editor.
 
-La modification se limite actuellement à la modification en ligne du titre du teaser. Cependant, dans certains cas, la modification statique n’est pas suffisante. Le texte tel que le titre du teaser peut être modifié à l’emplacement où il est avec la saisie du clavier. Toutefois, les éléments plus complexes doivent pouvoir afficher et autoriser la modification de données structurées indépendamment de leur rendu dans le navigateur. Voici à quoi sert le rail de propriétés.
+La modification se limite actuellement à la modification en ligne du titre du teaser. Cependant, dans certains cas, la modification statique n’est pas suffisante. Le texte tel que le titre du teaser peut être modifié à l’emplacement où il est avec la saisie du clavier. Toutefois, les éléments plus complexes doivent pouvoir afficher et autoriser la modification de données structurées indépendamment de leur rendu dans le navigateur. Voici à quoi sert le panneau des propriétés.
 
-Pour mettre à jour votre application afin d’utiliser le rail de propriétés à modifier, revenez au fichier d’en-tête du composant de page de votre application. C’est là que vous avez déjà établi les connexions à votre instance de développement AEM locale et à votre service Universal Editor local. Vous devez définir ici les composants modifiables dans l’application et leurs modèles de données.
+Pour mettre à jour votre application afin d’utiliser le panneau des propriétés à modifier, revenez au fichier d’en-tête du composant de page de votre application. C’est là que vous avez déjà établi les connexions à votre instance de développement AEM locale et à votre service Universal Editor local. Vous devez définir ici les composants modifiables dans l’application et leurs modèles de données.
 
 1. Ouvrez CRXDE Lite.
 
@@ -462,7 +462,7 @@ Pour mettre à jour votre application afin d’utiliser le rail de propriétés 
 
 ## Qu&#39;est-ce que tout cela signifie ? {#what-does-it-mean-2}
 
-Pour être modifiable à l’aide du rail de propriétés, les composants doivent être affectés à `groups`, de sorte que chaque définition commence par une liste de groupes contenant les composants.
+Pour être modifiable à l’aide du panneau des propriétés, les composants doivent être affectés à `groups`, de sorte que chaque définition commence par une liste de groupes contenant les composants.
 
 * `title` est le nom du groupe.
 * `id` est l’identifiant unique du groupe, dans ce cas des composants généraux qui composent le contenu de la page par opposition aux composants avancés pour la mise en page, par exemple.
@@ -487,7 +487,7 @@ Chaque composant doit ensuite être mappé à un `model` pour définir les champ
 * `label` est la description du champ qui apparaît dans l’interface utilisateur de l’éditeur.
 * `valueType` est le type de données.
 
-## instrumentalisation du composant pour le rail de propriétés {#properties-rail-component}
+## instrumentalisation du composant pour le panneau Propriétés {#properties-rail-component}
 
 Vous devez également définir au niveau du composant, le modèle que le composant doit utiliser.
 
@@ -509,17 +509,17 @@ Vous devez également définir au niveau du composant, le modèle que le composa
 
 1. Cliquez sur **Enregistrer tout** dans la barre d’outils et rechargez Universal Editor.
 
-Vous êtes maintenant prêt à tester le rail de propriétés instrumenté pour votre composant.
+Vous êtes maintenant prêt à tester le panneau des propriétés composé pour votre composant.
 
 1. Dans Universal Editor, cliquez sur le titre du teaser pour le modifier à nouveau.
 
-1. Cliquez sur le rail Propriétés pour afficher l’onglet Propriétés et afficher les champs que vous venez d’instrumenter.
+1. Cliquez sur le panneau Propriétés pour afficher l’onglet Propriétés et afficher les champs que vous venez d’instrumenter.
 
-   ![Rail des propriétés instrumentées](assets/dev-properties-rail-instrumented.png)
+   ![Panneau des propriétés instrumentées](assets/dev-properties-rail-instrumented.png)
 
-Vous pouvez maintenant modifier le titre du teaser en ligne comme vous l’aviez fait auparavant ou dans le rail des propriétés. Dans les deux cas, les modifications sont conservées dans votre instance de développement d’AEM locale.
+Vous pouvez maintenant modifier le titre du teaser en ligne comme vous l’aviez fait auparavant ou dans le panneau des propriétés. Dans les deux cas, les modifications sont conservées dans votre instance de développement d’AEM locale.
 
-## Ajout de champs supplémentaires au rail Propriétés {#add-fields}
+## Ajouter des champs supplémentaires au panneau Propriétés {#add-fields}
 
 En utilisant la structure de base du modèle de données pour le composant que vous avez déjà mis en oeuvre, vous pouvez ajouter des champs supplémentaires, suivant le même modèle.
 
@@ -555,9 +555,9 @@ Par exemple, vous pouvez ajouter un champ pour ajuster la mise en forme du compo
 
 1. Cliquez sur le titre du teaser pour le modifier à nouveau.
 
-1. Cliquez sur le rail des propriétés et vérifiez qu’il existe un nouveau champ pour ajuster le style du composant.
+1. Cliquez sur le panneau Propriétés et vérifiez qu’il existe un nouveau champ pour ajuster le style du composant.
 
-   ![Rail des propriétés instrumentées avec champ de style](assets/dev-style-instrumented.png)
+   ![Panneau des propriétés instrumentées avec le champ de style](assets/dev-style-instrumented.png)
 
 N’importe quel champ du JCR pour le composant peut être exposé dans l’éditeur universel de cette manière.
 
@@ -580,8 +580,8 @@ Lorsque vous commencez à instrumenter votre propre application, gardez à l’e
 1. [Vous avez instrumenté le composant de teaser.](#instrumenting-components)
 1. [Vous avez instrumenté les sous-composants du teaser.](#subcomponents)
 1. [Vous avez défini un en-tête d’authentification personnalisé afin que vous puissiez enregistrer les modifications à l’aide de votre service Universal Editor local.](#auth-header)
-1. [Vous avez instrumenté l’application pour utiliser le rail de propriétés.](#properties-rail)
-1. [Vous avez instrumenté le composant de teaser pour utiliser le rail de propriétés.](#properties-rail-component)
+1. [Vous avez instrumenté l’application pour utiliser le panneau des propriétés.](#properties-rail)
+1. [Vous avez instrumenté le composant de teaser pour utiliser le panneau des propriétés.](#properties-rail-component)
 
 Vous pouvez suivre les mêmes étapes pour instrumenter votre propre application en vue de l’utiliser avec Universal Editor. Toutes les propriétés du JCR peuvent être exposées à l’éditeur universel.
 

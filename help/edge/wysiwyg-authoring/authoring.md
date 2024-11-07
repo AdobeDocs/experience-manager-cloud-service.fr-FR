@@ -4,10 +4,10 @@ description: Découvrez le fonctionnement de la création de contenu avec Edge 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Universal Editor fournit une interface utilisateur graphique moderne et intuitiv
 
 ![Ajout et organisation de blocs dans l’éditeur universel](assets/blocks.png)
 
-Les détails des blocs peuvent ensuite être configurés dans le rail Propriétés.
+Les détails des blocs peuvent ensuite être configurés dans le panneau Propriétés .
 
 ![Configuration des propriétés de bloc](assets/block-properties.png)
 

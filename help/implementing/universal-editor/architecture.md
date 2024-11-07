@@ -4,10 +4,10 @@ description: Découvrez l’architecture de l’éditeur universel et le flux de
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 91%
+ht-degree: 82%
 
 ---
 
@@ -36,7 +36,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 ### Éditeurs {#editors}
 
 * **Éditeur universel** – L’éditeur universel utilise un DOM instrumenté pour permettre la modification statique du contenu. Consultez [Attributs et types](attributes-types.md) pour plus d’informations sur les métadonnées nécessaires. Consultez le document [Prise en main de l’éditeur universel dans AEM](getting-started.md) pour découvrir un exemple de l’instrumentation dans AEM.
-* **Rail de propriétés** - Certaines propriétés de composants ne peuvent pas être modifiées en contexte, par exemple, l’heure de rotation d’un carrousel ou l’onglet d’accordéon doit toujours être ouvert ou fermé. Pour activer la modification de ces informations de composant, utilisez l’éditeur basé sur les formulaires qui apparaît dans le rail latéral de l’éditeur.
+* **Panneau Propriétés** - Certaines propriétés des composants ne peuvent pas être modifiées en contexte, par exemple, l’heure de rotation d’un carrousel ou l’onglet d’accordéon doit toujours être ouvert ou fermé. Pour permettre la modification de ces informations de composant, un éditeur basé sur les formulaires est fourni dans le panneau latéral de l’éditeur.
 
 ### Application distante {#remote-app}
 
@@ -51,7 +51,7 @@ L’éditeur universel s’efforce d’obtenir un SDK minimal. Par conséquent, 
 
 ### Couche de persistance {#persistence-layer}
 
-* **Modèle de fragment de contenu** – Pour prendre en charge le rail de modification des propriétés de fragment de contenu, l’éditeur de fragment de contenu et les éditeurs basés sur des formulaires, des modèles par composant et fragment de contenu sont requis.
+* **Modèle de fragment de contenu** - Pour prendre en charge la modification des propriétés de fragment de contenu dans le panneau, l’éditeur de fragment de contenu et les éditeurs basés sur des formulaires, des modèles par composant et un fragment de contenu sont requis.
 * **Contenu** - Le contenu peut être stocké n’importe où, par exemple dans AEM, Magento, etc.
 
 ![Couche de persistance](assets/persistence-layer.png)

@@ -4,7 +4,7 @@ description: Découvrez les différents points d’extension et autres fonctionn
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ La définition de l’attribut `components` dans une définition de filtre sur `
 ]
 ```
 
-### Afficher et masquer les composants de manière conditionnelle dans le rail des propriétés {#conditionally-hide}
+### Afficher et masquer les composants de manière conditionnelle dans le panneau Propriétés {#conditionally-hide}
 
-Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le rail de propriétés en ajoutant un attribut `condition` aux [ champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
+Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut arriver qu’ils n’aient pas de sens dans certains cas. Dans ce cas, vous pouvez masquer des composants dans le panneau des propriétés en ajoutant un attribut `condition` aux [ champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
 
 Les conditions peuvent être définies à l’aide du schéma [JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, le champ s’affiche. Si la condition est fausse, le champ est masqué.
 
@@ -132,7 +132,7 @@ Pour ce faire, incluez simplement l’URL d’aperçu souhaitée dans une balise
 
 En tant que service Adobe Experience Cloud, l’interface utilisateur d’Universal Editor peut être étendue à l’aide d’App Builder et d’Experience Manager.
 
-Les extensions d’IU sont des applications JavaScript créées avec Adobe App Builder qui peuvent être incorporées dans des applications d’IU qui s’exécutent sous le shell unifié Adobe Experience Cloud, comme Universal Editor. Vous pouvez ajouter vos propres boutons et actions au menu d’en-tête et au rail de propriétés, ainsi que créer vos propres événements pour l’éditeur universel.
+Les extensions d’IU sont des applications JavaScript créées avec Adobe App Builder qui peuvent être incorporées dans des applications d’IU qui s’exécutent sous le shell unifié Adobe Experience Cloud, comme Universal Editor. Vous pouvez ajouter vos propres boutons et actions au menu d’en-tête et au panneau des propriétés, ainsi que créer vos propres événements pour l’éditeur universel.
 
 Si vous souhaitez explorer ces possibilités, consultez les ressources suivantes :
 

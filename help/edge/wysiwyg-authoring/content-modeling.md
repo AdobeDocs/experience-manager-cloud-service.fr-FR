@@ -4,10 +4,10 @@ description: Découvrez comment la modélisation de contenu fonctionne pour la c
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ Pour chaque bloc, l’équipe de développement :
 * doit définir le nom du bloc, qui sera rendu dans l’en-tête de tableau du bloc ;
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
 * peut définir un [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure) ;
-   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur ou l’autrice dans le rail des propriétés.
+   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur dans le panneau des propriétés.
 * peut définir un [ID de filtre](/help/implementing/universal-editor/customizing.md#filtering-components).
    * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi qui sont activées.
 

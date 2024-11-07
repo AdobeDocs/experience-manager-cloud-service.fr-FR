@@ -4,10 +4,10 @@ description: Découvrez comment créer des blocs instrumentés pour une utilisat
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 62%
+ht-degree: 59%
 
 ---
 
@@ -165,7 +165,7 @@ Maintenant que votre bloc de citation de base est défini et validé dans l’ex
 
    * Pour charger la page, vous devrez peut-être appuyer ou cliquer sur **Se connecter avec Adobe** pour vous authentifier dans AEM dans l’éditeur universel.
 
-1. Sélectionnez une section dans l’éditeur universel. Dans le rail des propriétés, appuyez ou cliquez sur l’icône **Ajouter**, puis sélectionnez votre nouveau bloc de **Citation** dans le menu.
+1. Sélectionnez une section dans l’éditeur universel. Dans le panneau des propriétés, appuyez ou cliquez sur l’icône **Ajouter** , puis sélectionnez votre nouveau bloc **Citation** dans le menu.
 
    * L’icône **Ajouter** est un symbole plus.
    * Vous pouvez savoir que vous avez sélectionné une section si le contour bleu de l’objet sélectionné comporte un onglet intitulé **Section**.
@@ -175,7 +175,7 @@ Maintenant que votre bloc de citation de base est défini et validé dans l’ex
 
 1. La page est rechargée et le bloc de citation est ajouté au bas de la section sélectionnée avec le contenu par défaut spécifié dans le fichier `component-definitions.json`.
 
-   * Le bloc de citation peut être sélectionné et modifié comme tout autre bloc, soit directement sur le bloc, soit dans le rail de propriétés.
+   * Le bloc de guillemet peut être sélectionné et modifié comme tout autre bloc statique ou dans le panneau des propriétés.
    * Les styles seront appliqués lors d’une étape ultérieure.
 
    ![Page avec le nouveau bloc de citation dans la section sélectionnée](assets/create-block/quote-added.png)

@@ -4,7 +4,7 @@ description: Découvrez les différents événements que l’éditeur universel 
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ La payload est le contenu du service Universal Editor, avec le contenu de secour
 
 ### aue:content-details {#content-details}
 
-L’événement `aue:content-details` est déclenché lorsqu’un composant est chargé dans le rail des propriétés.
+L’événement `aue:content-details` est déclenché lorsqu’un composant est chargé dans le panneau des propriétés.
 
 La payload est le contenu du composant et éventuellement son schéma.
 
@@ -91,7 +91,7 @@ La charge utile est le composant, le conteneur source et le conteneur cible.
 
 ### aue:content-patch {#content-patch}
 
-L’événement `aue:content-patch` est déclenché lorsque les données d’un composant sont mises à jour dans le rail des propriétés.
+L’événement `aue:content-patch` est déclenché lorsque les données d’un composant sont mises à jour dans le panneau des propriétés.
 
 La payload est un correctif JSON des propriétés mises à jour.
 

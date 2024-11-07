@@ -4,10 +4,10 @@ description: Découvrez les attributs de données et les types d’éléments re
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 67%
+ht-degree: 65%
 
 ---
 
@@ -33,7 +33,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 | `data-aue-type` | [Type de l’élément modifiable](#item-types) (par exemple, texte, image et référence) |
 | `data-aue-filter` | Définit les références qui peuvent être utilisées |
 | `data-aue-label` | Définit un libellé personnalisé pour un élément sélectionnable affiché dans l’éditeur. <br>Si `data-aue-model` est défini, le libellé est récupéré via le modèle. |
-| `data-aue-model` | Définit un modèle qui est utilisé pour la modification basée sur les formulaires dans le rail des propriétés |
+| `data-aue-model` | Définit un modèle utilisé pour la modification d’après les formulaires dans le panneau des propriétés. |
 | `data-aue-behavior` | Définit le [comportement d’une instrumentation](#behaviors) ; par exemple, un texte ou une image autonome peut également imiter un composant pour le rendre modifiable ou pouvant être supprimé. |
 
 ## Types d’éléments {#item-types}
@@ -44,7 +44,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 | `richtext` | Le texte est modifiable avec des fonctionnalités de texte enrichi complètes. L’éditeur de texte enrichi s’affiche dans le panneau de droite | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
 | `media` | Le modifiable est une ressource, par exemple une image ou une vidéo. | Facultatif | Requis | Liste<br>facultative des critères de filtre d’image ou vidéo transmise au sélecteur de ressources. | Facultatif | n/a | Facultatif |
 | `container` | L’élément modifiable se comporte comme un conteneur pour les composants, c’est-à-dire le système de paragraphe. | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des composants autorisés | Facultatif | n/a | n/a |
-| `component` | L’élément modifiable est un composant. Il n’ajoute pas de fonctionnalités supplémentaires. Il est nécessaire d’indiquer les parties déplaçables/déplaçables du DOM et d’ouvrir le rail des propriétés et ses champs. | Requis | n/a | n/a | Facultatif | Facultatif | n/a |
+| `component` | L’élément modifiable est un composant. Il n’ajoute pas de fonctionnalités supplémentaires. Il est nécessaire d’indiquer les parties déplaçables/déplaçables du DOM et d’ouvrir le panneau des propriétés et ses champs. | Requis | n/a | n/a | Facultatif | Facultatif | n/a |
 | `reference` | Le modifiable est une référence, par exemple, Fragment de contenu, Fragment d’expérience ou Produit | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des critères de filtre des fragments de contenu, des produits ou des fragments d’expérience transmise au sélecteur de références. | Facultatif | Facultatif | n/a |
 
 Selon le cas d’utilisation, `data-aue-prop` ou `data-aue-resource` peuvent être requis. Par exemple :

@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 21%
@@ -63,7 +63,7 @@ L’interface utilisateur est divisée en deux zones principales.
 * [En-tête Experience Cloud](#experience-cloud-header)
 * [Barre d’outils de l’éditeur universel](#universal-editor-toolbar)
 * [L’éditeur](#editor)
-* [Rail Propriétés](#properties-rail)
+* [Panneau Propriétés](#properties-rail)
 
 ![Interface utilisateur de l’éditeur universel](assets/ui.png)
 
@@ -224,19 +224,19 @@ L’éditeur occupe la plupart de la fenêtre et est l’endroit où la page sp�
 
 Si l’éditeur est en mode [aperçu,](#preview-mode) le contenu est navigable et vous pouvez suivre les liens, mais vous ne pouvez pas modifier le contenu.
 
-### Rail des propriétés {#properties-rail}
+### Panneau Propriétés {#properties-rail}
 
-Le rail des propriétés est toujours présent le long du côté droit de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
+Le panneau des propriétés est toujours présent le long du côté droit de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
 
-![Le rail de propriétés](assets/properties-rail.png)
+![Panneau Propriétés](assets/properties-rail.png)
 
 #### Mode Propriétés {#properties-mode}
 
-En mode Propriétés, le rail affiche les propriétés du composant actuellement sélectionné dans l’éditeur. Il s’agit du mode par défaut du rail des propriétés lorsqu’une page est chargée.
+En mode Propriétés, le panneau affiche les propriétés du composant actuellement sélectionné dans l’éditeur. Il s’agit du mode par défaut du panneau Propriétés lorsqu’une page est chargée.
 
 ![Mode Propriétés](assets/properties-mode.png)
 
-Selon le type de composant sélectionné, les détails peuvent être affichés et modifiés dans le rail des propriétés.
+Selon le type de composant sélectionné, les détails peuvent être affichés et modifiés dans le panneau Propriétés.
 
 ![Détails du composant](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Tous les composants ne comportent pas de détails qui peuvent être affichés et
 
 #### Mode Arborescence de contenu {#content-tree-mode}
 
-En mode Arborescence de contenu, le rail affiche la hiérarchie du contenu de la page.
+En mode Arborescence de contenu, le panneau affiche la hiérarchie du contenu de la page.
 
 ![Mode Arborescence de contenu](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 
 ##### Ouvrir dans l’éditeur CF {#edit}
 
-Lors de la modification, les options du composant sélectionné s’affichent dans le rail des propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton **Ouvrir dans l’éditeur CF**.
+Lors de la modification, les options du composant sélectionné s’affichent dans le panneau Propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton **Ouvrir dans l’éditeur CF**.
 
 ![Icône Ouvrir dans l’éditeur de fragment de contenu](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 ##### Ajouter {#add}
 
-Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout s’affiche sur le rail des propriétés.
+Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout s’affiche dans le panneau des propriétés.
 
 ![Ajouter une icône](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Appuyez ou cliquez sur le bouton Ajouter pour ouvrir un menu déroulant des comp
 
 ##### Dupliquer {#duplicate}
 
-Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de duplication s’affiche sur le rail des propriétés.
+Si vous sélectionnez un composant dans un composant de conteneur, que ce soit dans l’arborescence de contenu ou dans l’éditeur, l’option de duplication s’affiche dans le panneau des propriétés.
 
 ![Icône Dupliquer](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Appuyez ou cliquez sur le bouton dupliquer [duplique le composant sélectionné.
 
 ##### Supprimer {#delete}
 
-Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche sur le rail des propriétés.
+Si vous sélectionnez un composant dans un composant de conteneur, que ce soit dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression apparaît dans le panneau Propriétés.
 
 ![Icône de suppression](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Appuyez ou cliquez sur le bouton de suppression [ pour supprimer le composant.](
 
 #### Boutons supplémentaires {#additional-properties-rail-buttons}
 
-Universal Editor offre une expérience de création personnalisable et extensible. Si d’autres boutons s’affichent dans le rail des propriétés, votre éditeur universel a été étendu.
+Universal Editor offre une expérience de création personnalisable et extensible. Si d’autres boutons s’affichent dans le panneau des propriétés, votre éditeur universel a été étendu.
 
 * Pour plus d’informations sur les possibilités d’extension, consultez la section [Personnalisation et extension de l’éditeur universel.](/help/implementing/universal-editor/customizing.md)
 * Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation sur l’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

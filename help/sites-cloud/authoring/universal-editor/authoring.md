@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 19%
@@ -41,7 +41,7 @@ La modification du contenu est simple et intuitive. Lorsque vous placez le point
 >
 >Par défaut, appuyer ou cliquer sur le contenu le sélectionne pour le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode d&#39;aperçu.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Selon le contenu que vous sélectionnez, vous pouvez avoir différentes options de modification statique et des informations et options supplémentaires pour le contenu dans le [rail de propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Selon le contenu que vous sélectionnez, vous pouvez avoir différentes options de modification statique et des informations et options supplémentaires pour le contenu dans le [panneau des propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Modification de texte brut {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Le mince contour bleu se transforme en bleu épais pour indiquer la sélection et un curseur s’affiche. Effectuez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour enregistrer vos modifications.
 
-Lorsque vous choisissez de sélectionner le composant de texte, ses détails sont affichés dans le rail [propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le rail.
+Lorsque vous choisissez de sélectionner le composant de texte, ses détails sont affichés dans le panneau [propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le panneau.
 
-![Modification de texte dans le rail de propriétés](assets/ue-editing-text-component-rail.png)
+![Modification de texte dans le panneau des propriétés](assets/ue-editing-text-component-rail.png)
 
-En outre, des détails sur votre texte sont disponibles dans le rail de propriétés. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
+En outre, les détails de votre texte sont disponibles dans le panneau des propriétés. Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le panneau des propriétés.
 
 ### Modification de texte enrichi {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Le menu contextuel s’ouvre au-dessus du bloc de texte enrichi et propose des o
 
 Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié.
 
-#### Rail Propriétés {#properties-rail}
+#### Panneau Propriétés {#properties-rail}
 
-Le [rail de propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) affiche un élément pour le texte sélectionné. Appuyez sur l’entrée pour ouvrir une boîte de dialogue présentant un canevas plus grand pour modifier le texte.
+Le [panneau des propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) affiche un élément pour le texte sélectionné. Appuyez sur l’entrée pour ouvrir une boîte de dialogue présentant un canevas plus grand pour modifier le texte.
 
 ![Boîte de dialogue de modification de texte enrichi](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Appuyez ou cliquez sur **Annuler** ou **Terminé** pour ignorer ou enregistrer l
 
 ### Modification du média {#edit-media}
 
-Vous pouvez afficher ses détails dans le [rail de propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Vous pouvez afficher ses détails dans le [panneau des propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Modification de médias](assets/ue-edit-media.png)
 
-1. Appuyez ou cliquez sur l’aperçu de l’image sélectionnée dans le rail des propriétés.
+1. Appuyez ou cliquez sur l’aperçu de l’image sélectionnée dans le panneau des propriétés.
 1. La fenêtre [sélecteur de ressources](/help/assets/overview-asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
 1. Sélectionnez cette option pour sélectionner une nouvelle ressource.
-1. Sélectionnez **Sélectionner** pour revenir au rail des propriétés où la ressource a été remplacée.
+1. Sélectionnez **Sélectionner** pour revenir au panneau des propriétés dans lequel la ressource a été remplacée.
 
 Les modifications sont automatiquement enregistrées dans votre contenu.
 
 ### Modification de fragments de contenu {#edit-content-fragment}
 
-Si vous sélectionnez un [fragment de contenu,](/help/sites-cloud/administering/content-fragments/overview.md), vous pouvez en modifier les détails dans le [ rail de propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Si vous sélectionnez un [fragment de contenu,](/help/sites-cloud/administering/content-fragments/overview.md), vous pouvez en modifier les détails dans le [ panneau des propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
 
-Les champs définis dans le modèle de contenu du fragment de contenu sélectionné sont affichés et modifiables dans le rail des propriétés.
+Les champs définis dans le modèle de contenu du fragment de contenu sélectionné sont affichés et modifiables dans le panneau des propriétés.
 
-Si vous sélectionnez un champ lié à un fragment de contenu, celui-ci se charge dans le rail des composants et le champ est automatiquement défilé vers .
+Si vous sélectionnez un champ lié à un fragment de contenu, celui-ci se charge dans le panneau Composants et le champ est automatiquement défilé vers .
 
-Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le rail des propriétés.
+Les modifications sont automatiquement enregistrées lorsque le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez modifier votre fragment de contenu dans l’ [éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) à la place, appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le rail des propriétés.
+Si vous souhaitez modifier votre fragment de contenu dans l’ [éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) à la place, appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 ### Ajout de composants aux conteneurs {#adding-components}
 
 1. Sélectionnez un composant de conteneur dans l’ [arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou dans l’éditeur.
-1. Sélectionnez ensuite l’icône d’ajout dans le rail des propriétés.
+1. Sélectionnez ensuite l’icône d’ajout dans le panneau des propriétés.
 
    ![Sélectionner un composant à ajouter à un conteneur](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Le composant est inséré dans le conteneur et peut être modifié dans l’édi
 ### Duplication des composants dans les conteneurs {#duplicating-components}
 
 1. Sélectionnez un composant dans un conteneur à l’aide de l’ [arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou de l’éditeur.
-1. Sélectionnez ensuite l&#39;icône **Dupliquer** dans le rail des propriétés.
+1. Sélectionnez ensuite l&#39;icône **Dupliquer** dans le panneau des propriétés.
 
    ![Sélectionner un composant à ajouter à un conteneur](assets/ue-duplicate-component.png)
 1. Le composant est dupliqué et inséré sous le composant sélectionné.
@@ -148,7 +148,7 @@ Le composant est inséré dans le conteneur et peut être modifié dans l’édi
 1. Sélectionnez un composant de conteneur dans l’ [arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou dans l’éditeur.
 1. Sélectionnez l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
 1. Sélectionnez ensuite, dans l’arborescence de contenu, un composant dans le conteneur.
-1. Sélectionnez l’icône de suppression dans le rail des propriétés.
+1. Sélectionnez l’icône de suppression dans le panneau Propriétés.
 
    ![Suppression d’un composant](assets/ue-delete-component.png)
 

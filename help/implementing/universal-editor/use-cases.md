@@ -4,7 +4,7 @@ description: Découvrez les principaux cas d’utilisation d’Universal Editor,
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Si vous souhaitez en savoir plus sur l’architecture d’Universal Editor, cons
 Pour qu’une page ou une application puisse être modifiée par l’éditeur universel, elle doit être correctement instrumentée.
 
 * [Attributs et types](/help/implementing/universal-editor/attributes-types.md) - Pour qu’une application ou une page puisse être modifiée par l’éditeur universel, elle doit être correctement instrumentée. Cela inclut l’inclusion des métadonnées appropriées afin que l’éditeur puisse modifier le contenu de l’application.
-* [Définition des modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md) - Une fois les métadonnées présentes pour activer la modification d’un composant, vous définissez les champs et les types de composants qu’ils peuvent manipuler dans le rail des propriétés de l’éditeur.
+* [Définition des modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md) - Une fois les métadonnées présentes pour activer la modification d’un composant, vous définissez les champs et les types de composants qu’ils peuvent manipuler dans le panneau des propriétés de l’éditeur.
 * [Événements d’éditeur universel](/help/implementing/universal-editor/events.md) - Vous pouvez personnaliser davantage votre application en améliorant l’expérience de modification dans votre application en utilisant des événements émis par l’éditeur universel sur le contenu ou les interactions de l’interface utilisateur.
 
 L’éditeur universel peut également être adapté aux besoins de votre projet.
