@@ -4,10 +4,10 @@ description: Découvrez la version de Cloud Manager 2024.11.0 dans AEM as a Clou
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ Prenez part à notre programme d’adoption précoce de Cloud Manager afin de p
 
 ### Accueil AEM {#aem-home}
 
-AEM Accueil est un nouveau point de départ centralisé pour la gestion de votre contenu, de vos ressources et de vos sites dans Adobe Experience Manager. Personnalisé pour offrir une expérience personnalisée, AEM Home aide les utilisateurs à naviguer sans problème dans l’écosystème AEM en fonction de leurs rôles et de leurs objectifs. Il est conçu pour être votre guide, offrant des informations clés et des actions recommandées pour atteindre efficacement les résultats souhaités. En présentant une feuille de route claire et axée sur le personnage, AEM Home permet aux utilisateurs de trouver rapidement ce dont ils ont besoin pour atteindre leurs objectifs, tout en offrant une expérience plus simple et plus efficace dans toutes les capacités AEM.
+AEM Accueil propose un point de départ centralisé pour la gestion du contenu, des ressources et des sites dans Adobe Experience Manager. Conçu pour offrir une expérience personnalisée, AEM Accueil vous permet de naviguer sans problème dans l’écosystème AEM en fonction de vos rôles et objectifs. Il fournit des informations clés et des actions recommandées pour vous aider à atteindre vos objectifs de manière efficace. Grâce à une disposition claire et personnalisée, AEM Accueil vous permet d’accéder rapidement aux outils essentiels, ce qui vous permet d’offrir une expérience rationalisée et efficace dans toutes les fonctions d’AEM.
 
-Disponible pour les clients les plus jeunes, AEM Home offre un premier coup d’oeil à une expérience améliorée qui optimise les workflows, donne la priorité aux objectifs et génère des résultats. En vous inscrivant, vous avez l&#39;opportunité de façonner le développement de la Maison AEM, en fournissant un retour qui influence son évolution pour servir au mieux la communauté AEM.
+Disponible pour les utilisateurs précoces, AEM Home offre une expérience optimisée axée sur l’amélioration des workflows, la hiérarchisation des objectifs et la diffusion de résultats. L’opt-in vous permet d’influencer le développement d’AEM Home en fournissant des commentaires qui aident à façonner son avenir et à améliorer sa valeur pour l’ensemble de la communauté AEM.
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un email à [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) à partir de votre adresse électronique associée à votre Adobe ID. Veillez à inclure les informations suivantes :
 
