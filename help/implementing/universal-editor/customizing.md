@@ -4,9 +4,9 @@ description: Découvrez les différents points d’extension et autres fonctionn
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Le bouton **Publish** peut donc être entièrement supprimé dans une applicatio
 
 ### Filtrage des composants {#filtering-components}
 
-Lorsque vous utilisez l’éditeur universel, vous pouvez limiter les composants autorisés par composant de conteneur. Pour ce faire, vous devez introduire une balise de script supplémentaire, qui pointe vers la définition de filtre.
+Lors de l’utilisation d’Universal Editor, vous pouvez limiter les composants autorisés par composant de conteneur. Pour ce faire, vous devez introduire une balise de script supplémentaire, qui pointe vers la définition de filtre.
 
 ```html
 <script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
@@ -120,7 +120,7 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic.](https
 
 Vous pouvez spécifier une URL d’aperçu personnalisée via une configuration de métadonnées `urn:adobe:aue:config:preview` qui s’ouvre lorsque vous cliquez sur le bouton **Ouvrir la page** dans la barre d’outils [ supérieure droite de l’éditeur.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Ceci est particulièrement utile pour les applications avec des prévisualisations spécifiques, telles que celles [ utilisant des Edge Delivery Services avec création WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Ceci est particulièrement utile pour les applications avec des exigences d’aperçu spécifiques, telles que celles [ utilisant des Edge Delivery Services avec la création WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Pour ce faire, incluez simplement l’URL d’aperçu souhaitée dans une balise meta de l’application instrumentée comme dans l’exemple suivant.
 
