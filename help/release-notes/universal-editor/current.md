@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ Il s’agit des notes de mise à jour de la version du 5 novembre 2024 d’Unive
 
 >[!TIP]
 >
->Pour consulter les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, reportez-vous à [cette page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelle d’Adobe Experience Manager as a Cloud Service.
 
 ## Nouveautés {#what-is-new}
 

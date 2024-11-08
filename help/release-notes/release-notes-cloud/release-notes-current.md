@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
 source-wordcount: '1514'
-ht-degree: 58%
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.10.0) est le vendredi 31 octobre 2024. La prochaine version des fonctionnalités (2024.11.0) est prévue pour le vendredi 21 novembre 2024.
+La date de publication de la version actuelle d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.10.0) est le 31 octobre 2024. La prochaine version des fonctionnalités (2024.11.0) est prévue pour le 21 novembre 2024.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -44,9 +44,9 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Événements de page modernisés**
+**Modernisation des événements de page**
 
-Les événements de page AEM Sites suivants sont désormais disponibles en tant qu’événements consommables en externe basés sur AEM as a Cloud Service Eventing Platform. Les événements peuvent être traités par Adobe I/O pour interagir avec des processus externes.
+Les événements suivants de la page AEM Sites sont désormais accessibles en tant qu’événements externes consommables, grâce à la plateforme d’événements d’AEM as a Cloud Service. Les événements peuvent être traités via Adobe I/O pour interagir avec des processus externes.
 * Page publiée
 * Page non publiée
 * Page supprimée
@@ -57,9 +57,9 @@ Les événements de page AEM Sites suivants sont désormais disponibles en tant 
 
 Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer des variations](/help/generative-ai/generate-variations.md), maintenant accessible dans Cloud Service. La génération de variations vous permet de générer et d’adapter la création de contenu grâce à l’utilisation de l’IA générative. Contactez votre équipe Adobe en charge des comptes pour en savoir plus sur le programme.
 
-**AEM REST OpenAPI pour la diffusion de fragments de contenu**
+**API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’ [API REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -75,13 +75,13 @@ Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres 
 
 **Rapports planifiés**
 
-Les rapports peuvent désormais être générés automatiquement dans la vue Assets selon un schéma récurrent ou à une date ultérieure, ce qui réduit l’effort de découverte d’informations basées sur les données.
+Les rapports peuvent désormais être générés automatiquement dans la vue Assets selon un planning récurrent ou à une date ultérieure, ce qui réduit les efforts nécessaires pour obtenir des informations fondées sur des données.
 
-![Rapports planifiés -](/help/assets/assets/scheduled-reports-tab.png)
+![Rapports planifiés](/help/assets/assets/scheduled-reports-tab.png)
 
-### Nouvelles fonctionnalités du hub de contenus {#content-hub-new-features}
+### Nouvelles fonctionnalités dans Content Hub {#content-hub-new-features}
 
-**Gestion des droits numériques pour les ressources sous licence**
+**Digital Rights Management pour les ressources sous licence**
 
 Les entreprises peuvent désormais augmenter la conformité aux licences et minimiser le risque de partager des ressources avec des conditions de licence en utilisant DRM pour les ressources sous licence pour les utilisateurs de Content Hub, ce qui oblige les utilisateurs à examiner et accepter les conditions de licence avant de pouvoir commencer à télécharger des ressources sous licence. Pour plus d’informations, voir [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -91,9 +91,9 @@ Les entreprises peuvent désormais augmenter la conformité aux licences et mini
 
 Content Hub vous permet désormais de configurer les champs de métadonnées clés que vous devez afficher sur la carte de ressources dans un maximum de 6 champs. Pour plus d’informations, voir la section Carte de ressources dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
-![Métadonnées clé sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
+![Métadonnées clés sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
 
-**Configuration de la visibilité et du téléchargement des ressources expirées**
+**Configurer la visibilité et le téléchargement des ressources expirées**
 
 Les administrateurs et administratrices peuvent désormais contrôler s’ils ou elles ont besoin que les ressources expirées soient visibles dans le hub de contenus. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger. Pour plus d’informations, reportez-vous à la section Assets expirée dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
@@ -159,25 +159,25 @@ Pour contrôler les envois de formulaires Coral ou Foundation à des emplacement
 
 ### Transfert de journaux en libre-service avec option de mise en réseau avancée {#log-forwarding}
 
-Bien que les journaux AEM (y compris Apache/Dispatcher) et CDN puissent être téléchargés à partir de Cloud Manager, de nombreuses entreprises trouvent utile de diffuser ces journaux vers une destination de journalisation préférée. AEM prend désormais en charge le [transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Les journaux d’AEM peuvent éventuellement être transférés sur des configurations réseau avancées, telles que l’utilisation d’une adresse IP dédiée.
+Bien que les journaux AEM (y compris Apache/Dispatcher) et CDN puissent être téléchargés depuis Cloud Manager, de nombreuses entreprises préfèrent diffuser ces journaux vers une destination de journalisation spécifique. AEM prend désormais en charge le [transfert de journaux](/help/implementing/developing/introduction/log-forwarding.md) vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Les journaux d’AEM peuvent, le cas échéant, être envoyés vers des configurations réseau avancées, comme l’utilisation d’une adresse IP dédiée.
 
-Cette fonctionnalité est configurée par les utilisateurs en libre-service et déployée à l’aide du [pipeline de configuration](/help/operations/config-pipeline.md).
+Cette fonctionnalité est configurée par les utilisateurs et les utilisatrices en libre-service et déployée à l’aide du [pipeline de configuration](/help/operations/config-pipeline.md).
 
-### Redirections d’URL sans pipeline pour les utilisateurs professionnels {#pipeline-free-redirects}
+### Redirections d’URL sans pipeline pour les utilisateurs et utilisatrices professionnels {#pipeline-free-redirects}
 
-Les redirections côté navigateur sont utiles lorsqu’une page web a été supprimée, déplacée ou dans d’autres scénarios. Avec les [redirections d’URL sans pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md), vous pouvez placer un fichier de mappage de réécriture Apache dans un emplacement de publication AEM, où il est automatiquement chargé — sans avoir à valider le fichier dans le contrôle source ni à lancer un pipeline Cloud Manager.
+L’utilisation de redirections côté navigateur est pertinente lorsqu’une page web a été supprimée, déplacée ou dans des scénarios comparables. Avec les [redirections d’URL sans pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md), il est possible de placer un fichier de réécriture Apache dans un emplacement de publication AEM, où il sera chargé automatiquement, sans validation dans le contrôle des sources ni lancement de pipeline Cloud Manager.
 
-Les options de publication du fichier de réécriture incluent son chargement en tant que ressource, l’utilisation du gestionnaire de cartes de réécriture ACS Commons ou l’interaction avec une interface utilisateur personnalisée.
+Les options pour publier le fichier de réécriture incluent son chargement en tant que ressource, l’utilisation du gestionnaire de cartes de réécriture ACS Commons ou l’interaction avec une interface d’utilisation personnalisée.
 
-### Configuration du pipeline pour les RDE {#config-pipeline-rdes}
+### Pipeline de configuration pour les RDE {#config-pipeline-rdes}
 
-Les environnements de développement rapide sont un outil puissant pour déployer et tester rapidement le code et la configuration dans un environnement cloud. Les RDE prennent désormais en charge la [synchronisation des fichiers YAML de configuration](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), y compris les paramètres CDN tels que les règles de filtrage de trafic et les transformations de requête/réponse, ainsi que le transfert de journal et d’autres options de configuration. [Pour plus d’informations, consultez la liste complète](/help/operations/config-pipeline.md) des options de configuration prises en charge.
+Les environnements de développement rapide (RDE) sont un outil puissant pour déployer et tester rapidement le code et la configuration dans un environnement cloud. Les RDE prennent désormais en charge la [synchronisation des fichiers YAML de configuration](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), y compris les paramètres CDN tels que les règles de filtrage du trafic et les transformations requête/réponse, ainsi que la redirection des journaux et d’autres options de configuration. Pour plus d’informations, [consultez la liste complète](/help/operations/config-pipeline.md) des options de configuration prises en charge.
 
 ### Nouveaux profils de produit {#new-product-profiles}
 
-Lorsqu’un nouvel environnement d’AEM est créé, les profils de produit apparaissent automatiquement dans Adobe Admin Console, ce qui permet aux administrateurs d’attribuer l’accès aux solutions et fonctionnalités sous licence.
+Lorsque qu’un nouvel environnement AEM est créé, les profils de produit apparaissent automatiquement dans Adobe Admin Console, permettant à l’équipe d’administration d’attribuer l’accès aux solutions et fonctionnalités sous licence.
 
-Les nouveaux environnements incluent désormais un ensemble mis à jour de profils de produit, ce qui les rend compatibles avec les fonctionnalités futures, notamment la génération d’informations d’identification d’API dans Adobe Developer Console. Les environnements existants pourront mettre à jour leurs profils de produit dans une version ultérieure. [En savoir plus](/help/onboarding/aem-cs-team-product-profiles.md).
+Les nouveaux environnements incluent désormais un ensemble mis à jour de profils de produit, assurant leur compatibilité avec les fonctionnalités futures, comme la génération d’informations d’identification d’API dans Adobe Developer Console. Les environnements existants pourront mettre à jour leurs profils de produit dans une version ultérieure. [En savoir plus](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
 

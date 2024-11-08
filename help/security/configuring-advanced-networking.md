@@ -404,7 +404,7 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 >
 >Les limitations à une infrastructure VPN sont les suivantes :
 >
->* La prise en charge est limitée à une VPN unique.
+>* La prise en charge est limitée à une connexion VPN unique.
 >* Les résolveurs DNS doivent être répertoriés dans l’espace Adresse de passerelle pour résoudre les noms d’hôtes privés.
 
 ### Configuration de l’interface utilisateur {#configuring-vpn-ui}
