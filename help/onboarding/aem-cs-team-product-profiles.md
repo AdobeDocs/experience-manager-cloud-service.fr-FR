@@ -4,10 +4,10 @@ description: Découvrez comment l’équipe et les profils de produits AEM as 
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 39%
+source-wordcount: '2059'
+ht-degree: 34%
 
 ---
 
@@ -275,6 +275,27 @@ L’image suivante représente les groupes d’AEM reflétant le profil de produ
 >
 >* Pour en savoir plus sur les profils de produits d’AEM, consultez [Attribuer des profils de produit d’AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Pour plus d’informations sur le processus d’intégration, voir [parcours d’intégration](/help/journey-onboarding/overview.md).
+
+### Ajout de profils de produit pour les environnements existants {#adding-product-profiles-for-existing-environments}
+
+Il se peut que l’instance de produit au niveau de l’organisation décrite dans les sections ci-dessus, ainsi que certains profils de produit soient absentes des environnements créés avant le début de novembre 2024. Les bascules de service seront également absentes des profils de produit existants. Il est recommandé de mettre à jour ces profils de produit, ce qui est un prérequis pour accéder à d’autres API.
+
+Si un ou plusieurs environnements d’un programme nécessitent la mise à jour de leurs profils de produit, Cloud Manager affiche la note ci-dessous. Notez qu’un environnement doit se trouver sur la dernière version d’AEM pour que ses profils de produit puissent être mis à jour.
+
+![Moderniser les profils de produit](/help/onboarding/assets/modernize-product-profiles.png)
+
+Cliquez sur le bouton **Ajouter des profils de produit** pour ouvrir un menu qui affiche des options permettant d’ajouter de nouveaux profils de produit à tous les environnements disponibles dans le programme ou les environnements individuels.
+
+![Remplacer des environnements](/help/onboarding/assets/choose-env-r.png)
+
+Cliquez sur **Tous les environnements** pour ajouter les nouveaux profils de produit à tous les environnements du programme. Vous pouvez également cliquer sur **Individual Environments** pour ajouter les nouveaux profils de produit aux environnements sélectionnés ; l’utilisateur accède ainsi à une page de liste Environnements, où une action **Ajouter des profils de produit** peut être sélectionnée à partir de l’icône **Plus d’options**.
+
+![Environnements individuels](/help/onboarding/assets/individual-environments.png)
+
+Vous pouvez également ajouter des profils de produit aux environnements sélectionnés en accédant à la section Environnements de la page Aperçu du programme , en cliquant sur l’icône Plus d’options correspondant à un environnement et en sélectionnant Ajouter des profils de produit.
+
+L’état de l’environnement affiche l’option Ajouter des profils de produit pendant l’ajout des nouveaux profils de produit, puis s’affiche en cours d’exécution lorsque le processus est terminé.
+
 
 ## Profils de produit Cloud Manager {#cloud-manager-product-profiles}
 
