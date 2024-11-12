@@ -1,37 +1,41 @@
 ---
-title: Création de modèles de page
-description: Le modèle définit la structure de la page créée. Avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs et aux développeuses.
+title: Modèles de création de pages modifiables à l’aide de l’éditeur de page
+description: Vous pouvez utiliser l’ éditeur de modèles pour créer des modèles que vos auteurs de contenu peuvent utiliser pour créer des pages modifiables à l’aide de l’éditeur de page.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 87%
+source-wordcount: '4415'
+ht-degree: 80%
 
 ---
 
-# Création de modèles de page {#creating-page-templates}
 
-Lors de la création d’une page, vous devez sélectionner un modèle et l’utiliser comme base de création. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés.
+# Modèles de création de pages modifiables à l’aide de l’éditeur de page {#creating-page-templates}
 
-Grâce à **Éditeur de modèles**, la création et la maintenance de modèles ne sont plus des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut également être impliqué. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**auteur de modèles** peut créer et configurer des modèles sans projet de développement.
+Vous pouvez utiliser l’ éditeur de modèles pour créer des modèles que vos auteurs de contenu peuvent utiliser pour créer des pages modifiables à l’aide de l’éditeur de page.
 
-La **Console de modèles** permet aux auteurs et autrices de modèles de :
+## Vue d’ensemble {#overview}
 
-* de créer ou de copier un modèle ;
-* de gérer le cycle de vie du modèle.
+Lorsqu’un auteur crée une page, il doit sélectionner un modèle qui sert de base à la nouvelle page. Le modèle définit la structure de la page créée, tout contenu initial et les composants qui peuvent être utilisés lors de la modification de la page dans l’éditeur de page.
 
-L’**éditeur de modèles** permet aux auteurs et autrices de modèles :
+>[!NOTE]
+>
+>[ Des modèles sont également disponibles pour créer des pages modifiables à l’aide de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Avec l’ **éditeur de modèles**, la création et la maintenance de modèles ne sont pas une tâche réservée aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut créer des modèles. Les développeurs doivent configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser, mais une fois ces bases en place, l’ **auteur de modèles** a la possibilité de créer et de configurer des modèles sans impliquer de développeur.
+
+L’**Éditeur de modèles** permet aux auteurs et autrices de modèles de :
 
 * Ajouter des composants au modèle et les positionner sur une grille réactive.
 * de préconfigurer les composants ;
 * Définir les composants qui peuvent être modifiés sur les pages créées avec le modèle.
 
-Ce document explique comment **un auteur ou une autrice de modèles** peut utiliser la console de modèles et l’éditeur pour créer et gérer des modèles modifiables.
+Ce document explique comment un **auteur de modèles** peut utiliser l’ **éditeur de modèles** pour créer et gérer des modèles modifiables.
 
-Pour obtenir des informations détaillées sur le fonctionnement des modèles modifiables à un niveau technique, voir le document [Modèles de page](/help/implementing/developing/components/templates.md) dédié au développement.
+Pour plus d’informations sur le fonctionnement des modèles modifiables à un niveau technique, consultez le document destiné aux développeurs [ Modèles modifiables](/help/implementing/developing/components/templates.md) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 ## Avant de commencer {#before-you-start}
 
+Avant de commencer, il est important de tenir compte du fait que la création d’un modèle nécessite une collaboration. Pour cette raison, le [rôle](#roles) est indiqué pour chaque tâche. Cela n’a pas d’incidence sur la façon dont vous utilisez le modèle pour créer une page, mais cela affecte la façon dont la page fait référence à son modèle.
+
 >[!NOTE]
 >
 >Un administrateur doit configurer un dossier de modèles dans le **navigateur des configurations** et appliquer les autorisations appropriées permettant au créateur de modèles de créer un modèle dans ce dossier.
 
-Avant de commencer, il est important de tenir compte du fait que la création d’un modèle nécessite une collaboration. Pour cette raison, le [rôle](#roles) est indiqué pour chaque tâche. Cela n’a pas d’incidence sur la façon dont vous utilisez le modèle pour créer une page, mais cela affecte la façon dont la page fait référence à son modèle.
-
 ### Rôles {#roles}
 
-La création d’un modèle à l’aide de la **console Modèles** et de l’**éditeur de modèles** exige une collaboration entre les rôles suivants :
+La création d’un modèle nécessite une collaboration entre les rôles suivants :
 
 * **Administrateur** :
    * La création d’un dossier pour les modèles nécessite des droits `admin`.
@@ -72,9 +76,6 @@ Les tâches présentées dans ce document sont répertoriées avec le rôle resp
 
 Lors de la création d’un modèle modifiable :
 
-* Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
-   * Ou directement à l’adresse : `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creating-a-new-template-template-author), qui est initialement vide.
 * [Définissez des propriétés supplémentaires](#defining-template-properties-template-author) pour le modèle, le cas échéant.
 * [Modifiez le modèle](#editing-templates-template-authors) pour définir :
@@ -92,7 +93,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!TIP]
 >
->Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/implementing/developing/extending/i18n/dev.md) dans un modèle.
 >
 >Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez les [fonctionnalités de localisation des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr)
 
@@ -102,7 +103,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
 
 ### Création d’un modèle - Créateur ou créatrice de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez la **console de modèles** (par le biais de **Outils >** **Général**), puis accédez au dossier requis.
+1. Ouvrez la **[console de modèles](/help/sites-cloud/administering/templates-console.md)** , puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
->[!NOTE]
+>[!TIP]
 >
 >Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, un nombre excessif de modèles peut submerger les auteurs et semer la confusion dans la création de pages. Une bonne règle d’or consiste à maintenir le nombre de modèles au-dessous de 100.
 >
@@ -148,15 +149,7 @@ Un modèle peut avoir les propriétés suivantes :
 * Description
    * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
 
-Pour afficher et/ou modifier les propriétés :
-
-1. Dans la **console de modèles**, sélectionnez le modèle.
-1. Sélectionnez **Afficher les propriétés** dans la barre d’outils ou les options rapides pour ouvrir la boîte de dialogue.
-1. Vous pouvez maintenant afficher ou modifier les propriétés du modèle.
-
->[!NOTE]
->
->Le statut du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
+Après avoir créé le modèle, utilisez la **[console Modèles](/help/sites-cloud/administering/templates-console.md)** pour afficher ou modifier les propriétés du modèle.
 
 #### Miniature du modèle {#template-thumbnail-image}
 
@@ -179,19 +172,13 @@ Pour utiliser un modèle lors de la création d’une page, vous devez effectuer
 
 #### Activation d’un modèle - Créateur de modèles {#enabling-a-template-template-author}
 
-Un modèle peut être activé ou désactivé afin de le rendre disponible ou indisponible dans l’assistant **Créer des pages**.
+Un modèle peut être activé ou désactivé afin de le rendre disponible ou indisponible dans l’assistant **Créer une page**.
+
+Utilisez la **[console de modèles](/help/sites-cloud/administering/templates-console.md)** pour activer ou désactiver un modèle.
 
 >[!CAUTION]
 >
 >Une fois qu’un modèle est activé, un avertissement s’affiche lorsqu’un auteur ou une autrice de modèles commence à le mettre à jour. Cela permet d’informer la personne utilisatrice que le modèle peut être référencé. Toute modification peut donc avoir une incidence sur les pages qui le référencent.
-
-1. Dans la **console de modèles**, sélectionnez le modèle.
-1. Sélectionnez **Activer** ou **Désactiver** dans la barre d’outils, puis de nouveau dans la boîte de dialogue de confirmation.
-1. Vous pouvez désormais utiliser votre modèle lors de la [création d’une page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), bien que vous vouliez [modifier le modèle](#editing-templates-template-authors) en fonction de vos besoins.
-
->[!NOTE]
->
->Le statut du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
 
 #### Autorisation d’un modèle - Créateur {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
    >
    >Si la liste **Modèles autorisés** est laissée vide, alors l’arborescence est remontée jusqu’à ce qu’une valeur/liste soit trouvée.
    >
-   >
    >Voir [Disponibilité des modèles](/help/implementing/developing/components/templates.md#template-availability) : les principes des modèles autorisés restent identiques.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications apportées aux propriétés de la page.
@@ -224,10 +210,7 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 Le modèle étant référencé lors du rendu d’une page, il doit être publié afin d’être disponible dans l’environnement de publication.
 
-1. Dans la **console de modèles**, sélectionnez le modèle.
-1. Sélectionnez **Publier** dans la barre d’outils pour ouvrir l’Assistant.
-1. Sélectionnez les **Politiques de contenu** à publier en tandem.
-1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
+Modèles Publish utilisant la **[console de modèles.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Modification de modèles - Créateurs et créatrices de modèles {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ Lors de la création de modèles, tenez compte des points suivants :
    >AEM affiche des avertissements explicites lorsque vous modifiez le statut de verrouillage des composants sur les modèles qui ne sont plus des brouillons.
 
 1. [Créer vos propres dossiers](#creating-a-template-folder-admin) pour les modèles spécifiques à votre site.
-1. [Publiez vos modèles](#publishing-a-template-template-author) à partir de la console **Modèles**.
+1. [Publish vos modèles](#publishing-a-template-template-author) à partir de la console **[Modèles.]**(/help/sites-cloud/administering/templates-console.md)

@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 34%
@@ -40,7 +40,7 @@ Si vous rencontrez des problèmes, contactez votre administrateur système.
 1. À la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Sélectionnez le modèle que vous souhaitez utiliser pour créer la page, puis cliquez sur **Suivant** pour continuer ou **Annuler** pour abandonner le processus.
-   * Les modèles sont pris en charge à la fois pour l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) et pour l’[éditeur universel.](/help/edge/wysiwyg-authoring/templates.md)
+   * Les modèles sont pris en charge à la fois pour l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) et pour l’[éditeur universel.](/help/sites-cloud/authoring/universal-editor/templates.md)
 
    ![Sélection d’un modèle pour une nouvelle page](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

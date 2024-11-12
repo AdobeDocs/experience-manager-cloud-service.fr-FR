@@ -4,13 +4,13 @@ description: Découvrez les fonctionnalités et les cas d’utilisation d’AEM 
 solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
-source-git-commit: 50421f55444f61d64cd2ecd046bd7bc5f1f859e3
+exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
 
 ---
-
 
 # Fonctionnalités de sites en cours pour les Edge Delivery Services {#wip-sites-features}
 
@@ -35,7 +35,7 @@ La liste suivante présente ces fonctionnalités de travaux en cours et d’autr
 | [Copie de langue](/help/sites-cloud/administering/translation/overview.md) | Partiellement disponible | Les composants héritent du contenu, mais l’héritage peut uniquement être rétabli au niveau de la page. | [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Gestion multisite](/help/sites-cloud/administering/msm/overview.md) | Partiellement disponible | Les composants héritent du contenu, mais l’héritage peut uniquement être rétabli au niveau de la page. | [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Lancements](/help/sites-cloud/authoring/launches/overview.md) | Partiellement disponible | Les composants héritent du contenu, mais l’héritage peut uniquement être rétabli au niveau de la page. | [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) | Bientôt ! | Les pages créées à partir de modèles sont des copies indépendantes du modèle d’origine. | [Utilisation de modèles de page avec l’éditeur universel](/help/edge/wysiwyg-authoring/templates.md) |
+| [Modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) | Bientôt ! | Les pages créées à partir de modèles sont des copies indépendantes du modèle d’origine. | [Utilisation de modèles de page avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [ContextHub et ciblage](/help/sites-cloud/authoring/personalization/overview.md) | Non disponible |  |  |
 | [Timewarp](/help/sites-cloud/authoring/launches/preview.md) | Non disponible |  |  |
 | [Contenu associé](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | Non disponible |  |  |
