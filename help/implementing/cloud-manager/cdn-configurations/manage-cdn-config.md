@@ -4,13 +4,13 @@ description: Découvrez comment utiliser Cloud Manager pour modifier, mettre à 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 9%
+source-wordcount: '773'
+ht-degree: 8%
 
 ---
-
 
 # Gestion des configurations CDN {#manage-cdn-configurations}
 
@@ -33,8 +33,6 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône Réseau social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Configurations CDN**.
 1. Dans la table **Configurations du réseau de diffusion de contenu**, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez mettre à jour la configuration du réseau de diffusion de contenu.
-
-   ![Modification d’une configuration CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. Dans le menu déroulant, cliquez sur **Modifier**.
 
@@ -60,8 +58,6 @@ Les étapes de modification d’une configuration CDN à partir de la page **Env
 1. Sur la page **Environments** , sélectionnez un environnement intéressant.
 
 1. Sur la page des détails de l’environnement, dans le groupe Configurations du réseau de diffusion de contenu , cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) correspondant à la configuration du réseau de diffusion de contenu que vous souhaitez modifier.
-
-   ![Saisie d’un nom de domaine sur la page Détails de l’environnement](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
 
 1. Dans le menu contextuel, cliquez sur **Modifier**.
 
@@ -91,8 +87,6 @@ Un utilisateur doit être membre du rôle **Propriétaire de l’entreprise** ou
 
 1. Dans la table Configurations du réseau de diffusion de contenu, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne correspondant à un réseau de diffusion de contenu que vous souhaitez supprimer, puis cliquez sur **Supprimer**.
 
-   ![Suppression d’une configuration CDN](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
-
 1. Dans la boîte de dialogue **Supprimer la configuration CDN**, cliquez sur **Supprimer**.
 
 1. Cliquez de nouveau sur **Supprimer** pour confirmer la suppression du réseau de diffusion de contenu du site.
@@ -112,10 +106,6 @@ Les étapes de suppression d’une configuration CDN de la page **Environnements
 
 1. Sur la page des détails de l’environnement, dans le regroupement **Configurations du réseau de diffusion de contenu**, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) correspondant à la configuration du réseau de diffusion de contenu que vous souhaitez supprimer, puis cliquez sur **Supprimer**.
 
-   ![Groupe de configuration CDN sur une page des détails de l’environnement](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
 1. Dans la boîte de dialogue **Supprimer la configuration CDN**, cliquez sur **Supprimer**.
 
 1. Cliquez de nouveau sur **Supprimer** pour confirmer la suppression du réseau de diffusion de contenu du site.
-
-
