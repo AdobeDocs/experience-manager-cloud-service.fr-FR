@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,7 @@ Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois,
    * dans le **Propriétés** vous pouvez mettre à jour l’onglet **Titre** et **Description** pour le fragment, ou **Variation**
 * panneau central : affiche les champs réels et le contenu de la variation sélectionnée.
    * permet de modifier le contenu.
+      * lorsqu’ils sont configurés (comme plusieurs) dans le modèle, différents types de données vous permettent d’**ajouter** instances du champ approprié
    * si les champs **Espace réservé d’onglet** sont définis dans le modèle qui s’affiche ici et peuvent être utilisés pour la navigation ; ils seront présentés horizontalement ou sous la forme d’une liste déroulante.
 
   >[!NOTE]

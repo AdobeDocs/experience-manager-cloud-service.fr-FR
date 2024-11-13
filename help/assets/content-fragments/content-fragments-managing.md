@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 89%
+source-wordcount: '1896'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**). Les deux éditeurs disposent d’un bouton d’activation/désactivation dans la barre d’outils supérieure afin d’accéder rapidement à l’autre éditeur.
+>Il existe deux éditeurs pour la création de fragments de contenu. Bien que la fonctionnalité de base soit la même, il existe des différences. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**). Les deux éditeurs disposent d’un bouton d’activation/désactivation dans la barre d’outils supérieure afin d’accéder rapidement à l’autre éditeur.
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 

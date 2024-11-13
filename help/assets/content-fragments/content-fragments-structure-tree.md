@@ -5,10 +5,10 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 56%
+source-wordcount: '183'
+ht-degree: 53%
 
 ---
 
@@ -20,7 +20,7 @@ Utilisez la fonction Arborescence de structure de l’éditeur de fragments de c
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
+>Il existe deux éditeurs pour la création de fragments de contenu. Bien que la fonctionnalité de base soit la même, il existe des différences. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
 
 Dans l’éditeur de fragments de contenu, vous pouvez sélectionner l’icône d’arborescence de structure :
 

@@ -5,10 +5,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 55%
+source-wordcount: '292'
+ht-degree: 53%
 
 ---
 
@@ -20,7 +20,7 @@ Pour les fragments de contenu as a Cloud Service Adobe Experience Manager (AEM),
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**.
+>Il existe deux éditeurs pour la création de fragments de contenu. Bien que la fonctionnalité de base soit la même, il existe des différences. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**.
 
 ## Ajout de contenu associé {#adding-associated-content}
 

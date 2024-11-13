@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3209'
-ht-degree: 58%
+source-wordcount: '3284'
+ht-degree: 55%
 
 ---
 
@@ -151,9 +151,12 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 Une sélection de types de données est disponible pour la définition de votre modèle :
 
 * **Une seule ligne de texte**
-   * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
+   * Ajouter un champ pour une seule ligne de texte ; la longueur maximale peut être définie
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+
 * **Plusieurs lignes de texte**
    * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
 
   >[!NOTE]
   >
@@ -162,28 +165,40 @@ Une sélection de types de données est disponible pour la définition de votre 
   Ce format ne peut pas être modifié à partir de l’[ éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
 
 * **Nombre**
-   * Ajoutez un ou plusieurs champs numériques
+   * Ajouter un champ numérique
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+
 * **Booléen**
    * Ajoutez une case à cocher booléenne
+
 * **Date et heure**
-   * Ajoutez une date et/ou une heure
+   * Ajouter un champ Date et/ou Heure
+
 * **Énumération**
    * Ajouter un ensemble de champs de case à cocher, de bouton radio ou de liste déroulante
+      * Vous pouvez spécifier les options disponibles pour l’auteur du fragment.
+
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
+
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+
 * **Référence du fragment**
    * Références d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
-   * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
-      * Modifier directement le fragment référencé.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de :
+      * Modifier directement le fragment référencé
       * Créez un fragment de contenu en fonction du modèle approprié.
+      * Créer de nouvelles instances du champ
+
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
       * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
+
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
       * Elles s’affichent sous forme de séparateurs dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
