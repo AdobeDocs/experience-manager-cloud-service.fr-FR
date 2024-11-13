@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 8%
@@ -63,7 +63,7 @@ Les étapes de modification d’une configuration CDN à partir de la page **Env
 
 1. Dans la boîte de dialogue **Modifier la configuration du réseau de diffusion de contenu**, définissez une ou plusieurs des options de la liste déroulante correspondante.
 
-Les options affichées dans la boîte de dialogue varient selon que vous utilisez un **réseau de diffusion de contenu géré par Adobe** ou un **autre fournisseur de réseau de diffusion de contenu** (réseau de diffusion de contenu géré par le client).
+   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un **réseau de diffusion de contenu géré par Adobe** ou un **autre fournisseur de réseau de diffusion de contenu** (réseau de diffusion de contenu géré par le client).
 
 1. Cliquez sur **Mettre à jour**.
 
