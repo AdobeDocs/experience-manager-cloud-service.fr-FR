@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -396,7 +396,7 @@ Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédi
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
-Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cela peut être utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter aux fournisseurs SaaS tels qu’un fournisseur de gestion de la relation client qui prend en charge VPN.
+Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cela peut être utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter à des fournisseurs SaaS tels qu’un fournisseur CRM qui prend en charge le VPN.
 
 La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez les informations de la colonne **Instructions de configuration basées sur l’itinéraire** dans [cette liste d’appareils.](https://learn.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configurez l’appareil comme décrit dans le tableau.
 
@@ -582,7 +582,7 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
 </tbody>
 </table>
 
-## Activer les configurations de mise en réseau avancée dans les environnements {#enabling}
+## Activation des configurations de mise en réseau avancée dans les environnements {#enabling}
 
 Une fois que vous avez configuré une option de mise en réseau avancée pour un programme afin de l’utiliser, qu’il s’agisse de la [sortie de port flexible](#flexible-port-egress), de l’[adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou du [VPN](#vpn), vous devez l’activer au niveau de l’environnement.
 
