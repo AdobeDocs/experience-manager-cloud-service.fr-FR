@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 86%
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -83,29 +83,37 @@ Les rapports peuvent désormais être générés automatiquement dans la vue Ass
 
 **Digital Rights Management pour les ressources sous licence**
 
-Les entreprises peuvent désormais augmenter la conformité aux licences et minimiser le risque de partager des ressources avec des conditions de licence en utilisant DRM pour les ressources sous licence pour les utilisateurs de Content Hub, ce qui oblige les utilisateurs à examiner et accepter les conditions de licence avant de pouvoir commencer à télécharger des ressources sous licence. Pour plus d’informations, voir [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+Grâce à DRM pour les ressources sous licence, les entreprises peuvent désormais améliorer la conformité aux licences et réduire les risques associés au partage de ressources. Les utilisateurs et les utilisatrices de Content Hub doivent d’abord examiner et accepter les conditions de licence avant de télécharger les ressources sous licence. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **Configuration des métadonnées de carte de ressources**
 
-Content Hub vous permet désormais de configurer les champs de métadonnées clés que vous devez afficher sur la carte de ressources dans un maximum de 6 champs. Pour plus d’informations, voir la section Carte de ressources dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
+Content Hub vous permet désormais de configurer jusqu’à 6 champs de métadonnées clés à afficher sur la carte de ressources. Pour plus d’informations, consultez la section Carte de ressources dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![Métadonnées clés sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurer la visibilité et le téléchargement des ressources expirées**
 
-Les administrateurs et administratrices peuvent désormais contrôler s’ils ou elles ont besoin que les ressources expirées soient visibles dans le hub de contenus. Si les ressources expirées sont rendues visibles, elles peuvent également définir si les utilisateurs peuvent les télécharger. Pour plus d’informations, reportez-vous à la section Assets expirée dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
+Les administrateurs et administratrices peuvent désormais contrôler s’ils ont besoin que les ressources expirées soient visibles dans Content Hub. Si les ressources expirées sont rendues visibles, les administrateurs et les administratrices peuvent également choisir de permettre ou non leur téléchargement. Pour plus d’informations, consultez la section Ressources expirées dans [Configuration de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Ressources expirées sur le hub de contenus](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+
+* **Amélioration de l’expérience utilisateur avec des boutons de navigation dans les dispositions de panneau** : vous pouvez désormais ajouter des boutons de navigation à vos dispositions de panneau, tels que les onglets horizontaux, les onglets verticaux, les accordéons ou l’assistant. Ces boutons améliorent l’expérience utilisateur en simplifiant les transitions entre les panneaux, en se concentrant sur le panneau sélectionné.
+
+* **Définition des styles d’affichage pour les composants Document d’enregistrement (DoR)** : dans un fichier XFA, vous pouvez désormais spécifier les styles d’affichage pour les composants Document d’enregistrement. Ces styles peuvent ensuite être appliqués aux composants correspondants dans l’éditeur de Forms adaptatif.
+
 ### Nouvelles fonctionnalités de la version préliminaire d’AEM Forms {#forms-new-prerelease-features}
 
-#### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
+* **Enregistrement automatique d’un brouillon pour un Forms adaptatif basé sur les composants principaux** : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
-Les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+* **Mettre à jour facilement les portées Adobe Sign** : vous pouvez modifier les portées d’une configuration Adobe Sign directement à partir de la page Configurations du cloud d’AEM, ce qui facilite et accélère la mise à jour des configurations existantes.
+
+* **Prise en charge des fonctions asynchrones pour Adaptive Forms** : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, telles que l’attente de processus externes ou de récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 
@@ -146,12 +154,12 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
 ### Configuration pour contrôler les envois de formulaire {#configuration-submissions}
 
-Pour contrôler les envois de formulaires Coral ou Foundation à des emplacements spécifiques, AEM a introduit une nouvelle configuration : `com.adobe.granite.ui.components.FormRestrict`. Cette configuration se compose de deux champs :
+Pour contrôler les envois de formulaires Coral ou Foundation à des emplacements spécifiques, AEM a introduit une nouvelle configuration : `com.adobe.granite.ui.components.FormRestrict`. Cette configuration se compose de deux champs :
 
-1. **Ajouter des chemins autorisés** : spécifie les chemins où les actions de formulaire sont autorisées.
-1. **Restrict Behavior** : détermine le comportement des chemins d’accès restreints (chemins non inclus dans la liste autorisée). Vous pouvez choisir entre deux options :
-   * **Popup** (par défaut) : affiche une notification contextuelle.
-   * **Empêcher** : bloque l’envoi du formulaire.
+1. **Ajouter des chemins d’accès autorisés** : spécifie les chemins où les actions de formulaire sont autorisées.
+1. **Restreindre le comportement** : détermine le comportement des chemins restreints (chemins non inclus dans la liste des chemins autorisés). Faites votre choix parmi les options suivantes :
+   * **Fenêtre contextuelle** (par défaut) : affiche une notification contextuelle.
+   * **Empêcher** : bloque l’envoi du formulaire.
 
 >[!NOTE]
 >
@@ -189,7 +197,7 @@ Tout le monde peut accéder à la version Beta publique en cliquant sur le bouto
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 
