@@ -1,10 +1,10 @@
 ---
-title: Notes de mise à jour d’Universal Editor 2024.11.12
-description: Il s’agit des notes de mise à jour de la version 2024.11.12 d’Universal Editor.
+title: Notes de mise à jour d’Universal Editor 2024.11.13
+description: Il s’agit des notes de mise à jour de la version 2024.11.13 d’Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 5%
@@ -12,9 +12,9 @@ ht-degree: 5%
 ---
 
 
-# Notes de mise à jour d’Universal Editor 2024.11.12 {#release-notes}
+# Notes de mise à jour d’Universal Editor 2024.11.13 {#release-notes}
 
-Il s’agit des notes de mise à jour de la version d’Universal Editor du 12 novembre 2024.
+Il s’agit des notes de mise à jour de la version d’Universal Editor du 13 novembre 2024.
 
 >[!TIP]
 >
