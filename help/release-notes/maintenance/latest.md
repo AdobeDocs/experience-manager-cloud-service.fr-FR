@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 32%
+source-wordcount: '820'
+ht-degree: 76%
 
 ---
 
@@ -18,48 +18,57 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 18459 {#18459}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18459, publiée le mercredi 5 novembre 2024. La version de maintenance précédente était la version 18311.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18459, publiée le 5 novembre 2024. La version de maintenance précédente était la version 18311.
 
 L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
 ### Améliorations {#enhancements-18459}
 
-* CQ-4357471 : Ajout de la prise en charge de la traduction des dictionnaires i18n dans AEMaaCS.
-* SITES-23591 : fragments de contenu : mise à niveau de fragment de contenu pour la prise en charge de l’UUID.
-* SITES-25440 : Fragments de contenu : API de recherche CFM pour afficher l’état de réplication.
-* SITES-24369 : Fragments de contenu : améliorations de la documentation OpenAPI.
-* SITES-25478 : Fragments de contenu : Ajoutez la prise en charge principale pour les références de ressources externes.
-* SITES-26119 : Fragments de contenu : ajout de la prise en charge des références de ressources externes dans le type de référence.
-* SITES-21199 : Edge Delivery avec Universal Editor : ajoutez la prise en charge des modèles créés à partir de pages.
-* SITES-20311 : Edge Delivery avec Universal Editor : ajout de la prise en charge de l’importation de CSV dans les feuilles de calcul.
-* SITES-24821 : Edge Delivery avec Universal Editor : faites d’aem.page / aem.live la valeur par défaut à intégrer à Edge Delivery.
+* CQ-4357471 : ajout de la prise en charge de la traduction des dictionnaires i18n dans AEMaaCS.
+* SITES-23591 : fragments de contenu : mise à niveau des fragments de contenu pour la prise en charge de l’UUID.
+* SITES-25440 : fragments de contenu : API de recherche CFM pour afficher le statut de la réplication.
+* SITES-24369 : fragments de contenu : améliorations apportées à la documentation OpenAPI.
+* SITES-25478 : fragments de contenu : ajout de la prise en charge en back-end des références de ressources externes.
+* SITES-26119 : fragments de contenu : ajout de la prise en charge des références de ressources externes dans le type de référence.
+* SITES-21199 : service Edge Delivery avec l’éditeur universel : ajout de la prise en charge des modèles créés à partir de pages.
+* SITES-20311 : Edge Delivery avec l’éditeur universel : ajout de la prise en charge de l’import de fichiers CSV dans les feuilles de calcul.
+* SITES-24821 : service Edge Delivery avec l’éditeur universel : configuration d’aem.page / aem.live comme valeur par défaut pour intégrer Edge Delivery.
+* FORMS-11646 : définition de variables globalContext pour les pages pertinentes AEM Forms
+* FORMS-14833 : AEM Forms peut désormais inclure des fragments de formulaire adaptatif dans le document d’enregistrement final (DE).
+* FORMS-14255 : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ils peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre.
+
 
 ### Problèmes résolus {#fixed-issues-18459}
 
-* CQ-4358730 : CQPagePreviewGenerator échoue lorsqu’il y a plus de 10 clés à traduire.
-* FORMS-14978 : activation du chargement de page pour un formulaire basé sur les composants principaux pour l’éditeur de thème.
-* FORMS-16596 : Problème d’accessibilité : boutons désactivés non reconnus par le Reader d’écran.
-* SITES-10575 : MSM : Blueprint Bloomfilter Loader tente de charger plus de 100 000 lignes.
-* SITES-20755 : Fragments de contenu : la référence de ressource avec actualisation de l’UUID n’affiche pas la miniature.
-* SITES-26253 : Fragments de contenu : migration UUID : remplacez la rubrique de tâche Sling par générique.
-* SITES-21338 : Fragments de contenu : le point de terminaison referencedBy ne renvoie pas la référence de page correcte.
-* SITES-24421 : Fragments de contenu : la modification du point de terminaison CF ne fonctionne pas pour les fichiers CF récupérés via GET CF.
-* SITES-25461 : Fragments de contenu : le filtrage par modèle dans la recherche de CF ne doit pas être sensible à la casse.
-* SITES-25471 : Fragments de contenu : correction de la validation des modèles globaux dans ModelValidatorServlet.
-* SITES-25795 : Fragments de contenu : l’API du modèle CF échoue lorsqu’aucune date cq n’est définie.
-* SITES-25817 : Fragments de contenu : améliorer promoteLaunch : mettre à jour la dernière promotion pour les lancements CF.
-* SITES-26030 : Fragments de contenu : Endpoint /referenceTree ne renvoie pas l’en-tête nécessaire.
-* SITES-26031 : Fragments de contenu : l’état de réplication n’est pas renvoyé sur le point de terminaison de recherche CFM.
-* SITES-26213 : Fragments de contenu : l’annulation de la publication des fragments de contenu ne doit valider que les références publiées.
-* SITES-26226 : Fragments de contenu : problème de démarrage du workflow lorsqu’aucun des chemins donnés n’est utilisable.
-* SITES-26238 : Fragments de contenu : les références de ressources renvoyées par l’API ont un ordre différent de celui renvoyé par JCR.
-* SITES-25456 : Événements : lors du déplacement d’une page, un événement de suppression de page est généré en plus de l’événement de déplacement de page.
-* SITES-25658 : Événements : le niveau et la sourceUrl ne sont pas renseignés dans les événements d’état du contenu de la page.
-* SITES-6497 : Lancements : la page de création du lancement ne fonctionne pas.
-* SITES-25938 : Lancements : suppression inattendue après le projet de traduction.
-* SITES-25393 : Edge Delivery avec Universal Editor : noeuds de texte perdus lors du rendu de texte enrichi formaté avec un seul paragraphe.
-* SITES-24643 : Edge Delivery avec Universal Editor : les attributs de métadonnées OpenGraph et twitter ne fonctionnent pas dans le modèle de métadonnées de page.
-* SITES-25401 : Fragments d’expérience : mise à jour lente de la référence XF
+* CQ-4358730 : échec du CQPagePreviewGenerator lorsqu’il y a plus de 10 clés à traduire.
+* FORMS-14978 : activation du chargement de page pour un formulaire basé sur les composants principaux pour l’éditeur de thème.
+* FORMS-16596 : problème d’accessibilité : boutons désactivés non reconnus par le lecteur d’écran.
+* SITES-10575 : MSM : le chargeur Bloomfilter de plan directeur tente de charger plus de 100 000 lignes.
+* SITES-20755 : fragments de contenu : la référence de ressource avec actualisation de l’UUID n’affiche pas la miniature.
+* SITES-26253 : fragments de contenu : migration UUID : modification de la rubrique de traitement Sling pour qu’elle devienne générique.
+* SITES-21338 : fragments de contenu : le point d’entrée referencedBy ne renvoie pas la référence de page correcte.
+* SITES-24421 : fragments de contenu : la modification du point d’entrée de fragment de contenu ne fonctionne pas pour les fragments de contenu récupérés via GET CF.
+* SITES-25461 : fragments de contenu : le filtrage par modèle dans la recherche de fragment de contenu doit pas être sensible à la casse.
+* SITES-25471 : fragments de contenu : correction de la validation des modèles globaux dans ModelValidatorServlet.
+* SITES-25795 : fragments de contenu : échec de l’API du modèle de fragment de contenu lorsqu’aucune date cq n’est définie.
+* SITES-25817 : fragments de contenu : amélioration de promoteLaunch : mise à jour de la dernière promotion pour les lancements de fragment de contenu.
+* SITES-26030 : fragments de contenu : le point d’entrée /referencesTree ne renvoie pas l’en-tête nécessaire.
+* SITES-26031 : fragments de contenu : le statut de la réplication n’est pas renvoyé sur le point d’entrée de recherche CFM.
+* SITES-26213 : fragments de contenu : l’annulation de la publication des fragments de contenu ne doit valider que les références publiées.
+* SITES-26226 : fragments de contenu : problème de démarrage du workflow lorsqu’aucun des chemins d’accès indiqués n’est utilisable.
+* SITES-26238 : fragments de contenu : les références de ressources renvoyées par l’API ont un ordre différent de celui renvoyé par JCR.
+* SITES-25456 : événements : lors du déplacement d’une page, un événement de suppression de page est également généré, en plus de l’événement de déplacement de page.
+* SITES-25658 : événements : le niveau et la sourceUrl ne sont pas renseignés dans les événements de statut du contenu de la page.
+* SITES-6497 : lancements : la page de création du lancement ne fonctionne pas.
+* SITES-25938 : lancements : suppression inattendue après le projet de traduction.
+* SITES-25393 : Edge Delivery avec l’éditeur universel : nœuds de texte perdus lors du rendu de texte enrichi formaté avec un seul paragraphe.
+* SITES-24643 : Edge Delivery avec l’éditeur universel : les attributs de métadonnées OpenGraph et Twitter ne fonctionnent pas dans le modèle de métadonnées de page.
+* SITES-25401 : fragments d’expérience : mise à jour lente de la référence XF.
+* GRANITE-53907 : impossible d’identifier l’utilisateur du service comme super-utilisateur du workflow
+* CQ-4358028 : la création AEM projet échoue lorsqu’un utilisateur avec uniquement un groupe project-administrators charge une nouvelle miniature sur la page de création du projet.
+* FORMS-15682 : le problème concerne l’intégration d’AEM Forms et de Dynamics FDM. Lorsqu’un utilisateur envoie un formulaire, le document d’enregistrement (DOR) n’est pas envoyé en tant que pièce jointe PDF au champ d’entité spécifié.
+* FORMS-15799 : La page de signature Adobe Sign GovCloud ne note pas le rendu dans iframe
+* FORMS-16113 : lorsqu’un utilisateur, qui est administrateur du compte Adobe Sign, tente d’accéder à un document envoyé par un autre utilisateur (également administrateur), l’API d’obtention du contrat peut renvoyer un ID de contrat différent de celui généré initialement lors de la création du contrat.
 
 
 ### Problèmes connus {#known-issues-18459}
