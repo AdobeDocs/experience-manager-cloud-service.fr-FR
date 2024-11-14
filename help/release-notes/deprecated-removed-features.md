@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
+source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2576'
+ht-degree: 96%
 
 ---
 
@@ -499,3 +499,16 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
       * Type : booléen
 +++
 
+## Mise à jour du Runtime Java vers la version 21 {#java-runtime-update-21}
+
+AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel d&#39;effectuer les ajustements suivants :
+
+### Version minimale de org.objectweb.asm {#org.objectweb.asm}
+
+Mettez à jour org.objectweb.asm vers la version 9.5 ou ultérieure pour garantir la prise en charge des environnements d’exécution JVM plus récents.
+
+### Version minimale de org.apache.groovy {#org.apache.groovy}
+
+Mettez à jour org.apache.groovy vers la version 4.0.22 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
+
+Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
