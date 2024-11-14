@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -101,19 +101,19 @@ Les administrateurs et administratrices peuvent désormais contrôler s’ils on
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+### Nouvelle fonctionnalité dans AEM Forms {#forms-new-features}
 
-* **Amélioration de l’expérience utilisateur avec des boutons de navigation dans les dispositions de panneau** : vous pouvez désormais ajouter des boutons de navigation à vos dispositions de panneau, tels que les onglets horizontaux, les onglets verticaux, les accordéons ou l’assistant. Ces boutons améliorent l’expérience utilisateur en simplifiant les transitions entre les panneaux, en se concentrant sur le panneau sélectionné.
+* [Amélioration de l’expérience utilisateur avec des boutons de navigation dans les dispositions de panneau](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button) : vous pouvez désormais ajouter des boutons de navigation à vos dispositions de panneau, tels que les onglets horizontaux, les onglets verticaux, les accordéons ou l’assistant. Ces boutons améliorent l’expérience utilisateur en simplifiant les transitions entre les panneaux, en se concentrant sur le panneau sélectionné.
 
-* **Définition des styles d’affichage pour les composants Document d’enregistrement (DoR)** : dans un fichier XFA, vous pouvez désormais spécifier les styles d’affichage pour les composants Document d’enregistrement. Ces styles peuvent ensuite être appliqués aux composants correspondants dans l’éditeur de Forms adaptatif.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nouvelles fonctionnalités de la version préliminaire d’AEM Forms {#forms-new-prerelease-features}
 
-* **Enregistrement automatique d’un brouillon pour un Forms adaptatif basé sur les composants principaux** : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+* [Enregistrement automatique d’un brouillon pour un Forms adaptatif basé sur les composants principaux](/help/forms/save-core-component-based-form-as-draft.md) : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
-* **Mettre à jour facilement les portées Adobe Sign** : vous pouvez modifier les portées d’une configuration Adobe Sign directement à partir de la page Configurations du cloud d’AEM, ce qui facilite et accélère la mise à jour des configurations existantes.
+* [Mettre à jour facilement les portées Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms) : vous pouvez modifier les portées d’une configuration Adobe Sign directement à partir de la page Configurations du cloud d’AEM, ce qui facilite et accélère la mise à jour des configurations existantes.
 
-* **Prise en charge des fonctions asynchrones pour Adaptive Forms** : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, telles que l’attente de processus externes ou de récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
+* [Prise en charge des fonctions asynchrones pour Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md) : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, telles que l’attente de processus externes ou de récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Assistant IA d’AEM Forms
 
-L’IA générative pour les formulaires adaptatifs offre un nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
+[L’IA générique pour Forms adaptatif](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) apporte un tout nouveau niveau de puissance et de facilité à vos processus de développement de formulaires. Elle vous permet de créer de meilleurs formulaires plus rapidement que jamais auparavant.
 
 ![Assistant IA générative, formulaires adaptatifs](/help/forms/assets/generative-ai-assistant.png)
 
