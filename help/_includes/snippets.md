@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # Fragments de code {#snippets}
@@ -214,7 +214,7 @@ Si un problème de produit nécessite une enquête et un dépannage supplémenta
 
 Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votre site Edge Delivery dans Cloud Manager. L’enregistrement de votre site web avec Cloud Manager, recommandé à tous les utilisateurs d’AEM as a Cloud Service, [apporte de nombreux avantages](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Pour plus d’informations, consultez la [documentation de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) si vous n’avez pas encore enregistré votre site.
 
-Une fois votre site web enregistré auprès de Cloud Manager, procédez comme suit en utilisant l’Admin Console pour envoyer un ticket d’assistance :
+**Pour enregistrer un ticket d’assistance :**
 
 1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
