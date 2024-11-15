@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -103,17 +103,17 @@ Les administrateurs et administratrices peuvent désormais contrôler s’ils on
 
 ### Nouvelle fonctionnalité dans AEM Forms {#forms-new-features}
 
-* [Amélioration de l’expérience utilisateur avec des boutons de navigation dans les dispositions de panneau](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button) : vous pouvez désormais ajouter des boutons de navigation à vos dispositions de panneau, tels que les onglets horizontaux, les onglets verticaux, les accordéons ou l’assistant. Ces boutons améliorent l’expérience utilisateur en simplifiant les transitions entre les panneaux, en se concentrant sur le panneau sélectionné.
+* [Amélioration de l’interface d’utilisation grâce aux boutons de navigation dans les mises en page de panneau](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button) : vous pouvez désormais ajouter des boutons de navigation à vos mises en page de panneau, par exemple Onglets horizontaux, Onglets verticaux, Accordéons ou Assistant. Ces boutons optimisent la navigation en simplifiant les transitions entre les panneaux et en mettant l’accent sur le panneau sélectionné.
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nouvelles fonctionnalités de la version préliminaire d’AEM Forms {#forms-new-prerelease-features}
 
-* [Enregistrement automatique d’un brouillon pour un Forms adaptatif basé sur les composants principaux](/help/forms/save-core-component-based-form-as-draft.md) : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+* [Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/save-core-component-based-form-as-draft.md) : les utilisateurs et les utilisatrices peuvent désormais bénéficier d’une fonction d’enregistrement automatique, qui sauvegarde automatiquement un formulaire partiellement complété en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
 
-* [Mettre à jour facilement les portées Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms) : vous pouvez modifier les portées d’une configuration Adobe Sign directement à partir de la page Configurations du cloud d’AEM, ce qui facilite et accélère la mise à jour des configurations existantes.
+* [Mise à jour simplifiée des portées d’Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms) : vous pouvez modifier les portées d’une configuration Adobe Sign directement depuis la page Configurations d’AEM Cloud, simplifiant et accélérant ainsi la mise à jour des configurations existantes.
 
-* [Prise en charge des fonctions asynchrones pour Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md) : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, telles que l’attente de processus externes ou de récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
+* [Prise en charge des fonctions asynchrones pour les formulaires adaptatifs](/help/forms/using-async-funct-in-rule-editor.md) : lorsque votre formulaire adaptatif nécessite des opérations asynchrones, comme l’attente de processus externes ou la récupération de données, vous pouvez implémenter ces opérations avec des fonctions personnalisées et les configurer dans l’éditeur de règles.
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 

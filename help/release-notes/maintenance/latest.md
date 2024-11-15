@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 73%
+ht-degree: 92%
 
 ---
 
@@ -26,8 +26,8 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 
 * CQ-4357471 : ajout de la prise en charge de la traduction des dictionnaires i18n dans AEMaaCS.
 * FORMS-11646 : définition de variables globalContext pour les pages appropriées à AEM Forms.
-* FORMS-14833 : AEM Forms peut désormais inclure des fragments de formulaire adaptatif dans le document d’enregistrement final (DE).
-* FORMS-14255 : les utilisateurs peuvent désormais bénéficier d’une fonction d’enregistrement automatique qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ils peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre.
+* FORMS-14833 : les fragments de formulaire adaptatif peuvent désormais être inclus dans le document d’enregistrement final (DE) avec AEM Forms.
+* FORMS-14255 : les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui sauvegarde automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre.
 * SITES-23591 : fragments de contenu : mise à niveau des fragments de contenu pour la prise en charge de l’UUID.
 * SITES-25440 : fragments de contenu : API de recherche CFM pour afficher le statut de la réplication.
 * SITES-24369 : fragments de contenu : améliorations apportées à la documentation OpenAPI.
@@ -40,11 +40,11 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 ### Problèmes résolus {#fixed-issues-18598}
 
 * CQ-4358730 : échec du CQPagePreviewGenerator lorsqu’il y a plus de 10 clés à traduire.
-* CQ-4358028 : la création AEM projet échoue lorsqu’un utilisateur avec uniquement un groupe project-administrators charge une nouvelle miniature sur la page de création du projet.
+* CQ-4358028 : la création d’un projet AEM échoue lorsqu’un utilisateur ou une utilisatrice ayant uniquement les droits d’administration de projet charge une nouvelle miniature sur la page de création du projet.
 * FORMS-14978 : activation du chargement de page pour un formulaire basé sur les composants principaux pour l’éditeur de thème.
-* FORMS-15682 : le problème concerne l’intégration d’AEM Forms et de Dynamics FDM. Lorsqu’un utilisateur envoie un formulaire, le document d’enregistrement (DOR) n’est pas envoyé en tant que pièce jointe PDF au champ d’entité spécifié.
+* FORMS-15682 : le problème concerne l’intégration d’AEM Forms et de Dynamics FDM. Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, le document d’enregistrement (DE) n’est pas envoyé en tant que pièce jointe PDF au champ d’entité spécifié.
 * FORMS-15799 : La page de signature Adobe Sign GovCloud ne note pas le rendu dans iframe.
-* FORMS-16113 : lorsqu’un utilisateur, qui est administrateur du compte Adobe Sign, tente d’accéder à un document envoyé par un autre utilisateur (également administrateur), l’API d’obtention du contrat peut renvoyer un ID de contrat différent de celui généré initialement lors de la création du contrat.
+* FORMS-16113 : lorsqu’un utilisateur ou une utilisatrice, membre de l’équipe d’administration du compte Adobe Sign, tente d’accéder à un document envoyé par une autre personne membre de l’équipe, l’API de contrat peut renvoyer un ID différent de celui généré lors de la création.
 * FORMS-16596 : problème d’accessibilité : boutons désactivés non reconnus par le lecteur d’écran.
 * GRANITE-53907 : impossible d’identifier l’utilisateur du service comme super-utilisateur du workflow.
 * SKYOPS-90560 : La dernière version du modèle Sling a un impact sur les performances de l’exportation du modèle Sling.
