@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -65,7 +65,11 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    ![Page Outils pour parcourir le rapport des ressources](assets/navigation.png)
 
 1. Sur la page [!UICONTROL Rapports de ressources], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Sur la page **[!UICONTROL Créer un rapport]** , sélectionnez le rapport à créer, puis cliquez sur **[!UICONTROL Suivant]**. Attribuez-vous à un **profil produit administrateur d’AEM** pour créer un rapport **Téléchargement**. Voir [Affectation de profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit à un profil de produit Administrateur AEM.
+1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis cliquez sur **[!UICONTROL Suivant]**.
+
+   >[!NOTE]
+   >
+   >Attribuez-vous à un **profil produit administrateur d’AEM** pour créer un rapport **Téléchargement**. Voir [Affectation de profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit à un profil de produit Administrateur AEM.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
