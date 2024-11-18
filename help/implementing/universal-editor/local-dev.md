@@ -4,9 +4,9 @@ description: Découvrez comment vous pouvez exécuter votre propre service d’�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -76,9 +76,17 @@ UES_PORT=8000
 UES_PRIVATE_KEY=./key.pem
 UES_CERT=./certificate.pem
 UES_TLS_REJECT_UNAUTHORIZED=false
+UES_CORS_PRIVATE_NETWORK=true
 ```
 
-Il s’agit des valeurs minimales requises pour le développement local dans notre exemple. Le tableau suivant présente en détail ces valeurs et les valeurs supplémentaires disponibles.
+Il s’agit des valeurs minimales requises pour le développement local dans notre exemple.
+
+>[!NOTE]
+>
+>Si vous exécutez Chrome version 130+, vous devez activer l’envoi d’en-têtes CORS pour [l’accès au réseau privé](https://wicg.github.io/private-network-access/#private-network-request) à l’aide de l’option `UES_CORS_PRIVATE_NETWORK`.
+
+
+Le tableau suivant présente en détail ces valeurs et les valeurs supplémentaires disponibles.
 
 | Valeur | Facultatif | Valeur par défaut | Description |
 |---|---|---|---|
@@ -93,6 +101,7 @@ Il s’agit des valeurs minimales requises pour le développement local dans not
 | `UES_SPLUNK_TOKEN` | Oui | Aucune | Jeton Splunk |
 | `UES_SPLUNK_INDEX` | Oui | Aucune | Index des journaux à écrire |
 | `UES_SPLUNK_SOURCE` | Oui | `universal-editor-service` | Nom de la source dans les journaux de démarrage |
+| `UES_CORS_PRIVATE_NETWORK` | Oui | `false` | Activez l’envoi d’en-têtes CORS pour autoriser le [réseau privé.](https://wicg.github.io/private-network-access/#private-network-request) Requis pour les utilisateurs de Chrome version 130+ |
 
 >[!NOTE]
 >
