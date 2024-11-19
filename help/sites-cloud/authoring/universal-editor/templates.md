@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 3%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 3%
 # Modèles de création de pages modifiables à l’aide de l’éditeur universel {#page-templates}
 
 Découvrez comment créer des modèles qui peuvent être utilisés pour créer des pages modifiables à l’aide de l’éditeur universel, ce qui vous permet de gagner du temps et d’assurer une valorisation de marque cohérente.
-
->[!NOTE]
->
->Cette fonctionnalité sera disponible dans une prochaine version d’AEM as a Cloud Service.
 
 >[!NOTE]
 >
