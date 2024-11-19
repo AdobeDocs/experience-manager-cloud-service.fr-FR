@@ -4,10 +4,10 @@ description: Découvrez les instructions et les bonnes pratiques relatives à l�
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 54%
+source-wordcount: '1389'
+ht-degree: 51%
 
 ---
 
@@ -72,8 +72,6 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également le cas pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être lu dans le groupe **administrateurs** pour récupérer le jeton d’accès pour l’outil de transfert de contenu.
 
-* Les ingestions ne prennent pas en charge la fusion de contenu provenant de plusieurs sources dans l’instance Cloud Service cible si le contenu provenant des deux sources est déplacé vers les mêmes chemins d’accès sur la cible. Pour déplacer le contenu de plusieurs sources vers une seule instance de Cloud Service cible, assurez-vous qu’il n’y a aucun chevauchement des chemins de contenu des sources.
-
 * La clé d&#39;extraction est valable 14 jours à compter de sa création ou de son renouvellement. Elle peut être renouvelée à tout moment. Si la clé d&#39;extraction a expiré, vous ne pouvez pas effectuer d&#39;extraction.
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. Un utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou une instance Publish, ou les deux. Adobe recommande que, lors du déplacement du contenu vers une instance de production, CTT soit installé sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez le CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
@@ -91,6 +89,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Si vous envisagez d’effectuer des compléments, la structure de contenu du contenu existant ne doit pas changer du moment de l’extraction initiale au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+
+* L’outil de transfert de contenu (CTT) ne prend pas en charge les ingérations de fusion. Pour regrouper le contenu de plusieurs systèmes en une seule instance de Cloud Service, seules les versions d’un système source peuvent être migrées. Ce processus nécessite l’utilisation de migrations avec le paramètre wipe=false , ce qui peut entraîner des temps d’ingestion étendus en raison de la nature incrémentielle de l’opération. Si possible, consolidez le contenu sur un seul système source avant de commencer la migration afin d’éliminer la nécessité de fusionner le contenu.
 
 * Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Pour en savoir plus, veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry).
 
