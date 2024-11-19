@@ -4,7 +4,7 @@ description: Découvrez comment vous pouvez exécuter votre propre service d’�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Une fois défini, vous devriez voir chaque appel de mise à jour de contenu alle
 
 Avec le [service d&#39;éditeur universel s&#39;exécutant localement](#running-ue) et votre [ page de contenu instrumentée pour utiliser le service local, ](#using-loca-ue) vous pouvez maintenant démarrer l&#39;éditeur.
 
-1. Ouvrez votre navigateur sur `https://localhost:8000/corslib/LATEST`.
+1. Ouvrez votre navigateur sur `https://localhost:8000/ping`.
 1. Dirigez votre navigateur pour accepter [votre certificat auto-signé.](#ue-https)
 1. Une fois le certificat autosigné approuvé, vous pouvez modifier la page à l’aide de votre service d’éditeur universel local.
 
