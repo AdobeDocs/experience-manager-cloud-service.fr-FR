@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des feuilles de calcul pour gérer les 
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
+source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 92%
+source-wordcount: '1284'
+ht-degree: 73%
 
 ---
 
@@ -80,6 +80,52 @@ Dans cet exemple, vous allez créer une feuille de calcul pour gérer les redire
    * Utilisez la touche de tabulation pour déplacer la sélection vers la cellule suivante.
    * L’éditeur ajoute de nouvelles lignes à la feuille de calcul selon les besoins.
    * Pour supprimer ou déplacer une ligne, utilisez l’icône **Supprimer** à la fin de chaque ligne et les poignées de déplacement au début de chaque ligne, respectivement.
+
+## Importation de données de feuille de calcul {#importing}
+
+Outre la modification des feuilles de calcul dans l’éditeur de page d’AEM, vous pouvez également importer des données à partir d’un fichier CSV.
+
+1. Lorsque vous modifiez votre feuille de calcul dans AEM, appuyez ou cliquez sur le bouton **Télécharger** dans le coin supérieur gauche de l’écran.
+1. Dans la liste déroulante, sélectionnez le mode d’importation de vos données.
+   * **Remplacez Doc** pour remplacer le contenu de toute la feuille de calcul par le contenu du fichier CSV que vous allez transférer.
+   * **Append To Doc** pour ajouter les données du fichier CSV que vous allez charger au contenu de la feuille de calcul existante.
+1. Dans la boîte de dialogue qui s’ouvre, sélectionnez votre fichier CSV, puis appuyez ou cliquez sur **Ouvrir**.
+
+Une boîte de dialogue s’ouvre au fur et à mesure que l’importation est traitée. Une fois l’opération terminée, les données du fichier CSV sont ajoutées ou remplacées par le contenu de la feuille de calcul. Si des erreurs se produisent, par exemple une incohérence de colonnes, elles sont signalées afin que vous puissiez corriger votre fichier CSV.
+
+>[!NOTE]
+>
+>* Les en-têtes du fichier CSV doivent correspondre exactement aux colonnes de la feuille de calcul.
+>* L’importation de l’intégralité du fichier CSV ne modifie pas les en-têtes de colonne, mais uniquement les lignes de contenu.
+>* Si vous devez mettre à jour les colonnes, vous devez le faire dans AEM éditeur de page avant d’effectuer l’importation du fichier CSV.
+>* Un fichier CSV ne peut pas dépasser 10 Mo pour l’importation.
+
+En fonction de votre sélection de `mode`, vous pouvez également `create`, `replace` ou `append` dans des feuilles de calcul à l’aide d’un fichier CSV et d’une commande cURL similaire à la suivante.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+L’appel renvoie une page d’HTML contenant des informations sur l’ID de la tâche.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[Vous pouvez utiliser la **console Tâches**](/help/operations/asynchronous-jobs.md) pour afficher l’état de la tâche ou utiliser l’ID renvoyé pour la requérir.
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
 
 ## Publier une feuille de calcul paths.json {#paths-json}
 
