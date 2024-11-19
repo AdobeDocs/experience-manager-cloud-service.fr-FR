@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '852'
+ht-degree: 91%
 
 ---
 
@@ -33,6 +33,7 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 * SITES-24369 : fragments de contenu : améliorations apportées à la documentation OpenAPI.
 * SITES-25478 : fragments de contenu : ajout de la prise en charge en back-end des références de ressources externes.
 * SITES-26119 : fragments de contenu : ajout de la prise en charge des références de ressources externes dans le type de référence.
+* SITES-24609 : Fragments de contenu : amélioration de la validation lors de la suppression de fragments de contenu.
 * SITES-21199 : service Edge Delivery avec l’éditeur universel : ajout de la prise en charge des modèles créés à partir de pages.
 * SITES-20311 : Edge Delivery avec l’éditeur universel : ajout de la prise en charge de l’import de fichiers CSV dans les feuilles de calcul.
 * SITES-24821 : service Edge Delivery avec l’éditeur universel : configuration d’aem.page / aem.live comme valeur par défaut pour intégrer Edge Delivery.
