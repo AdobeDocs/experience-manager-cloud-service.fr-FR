@@ -4,9 +4,9 @@ description: Découvrez comment supprimer des objets mis en cache du cache CDN d
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Toutes les variations de purge partagent les éléments suivants :
 >[!CAUTION]
 >La purge du cache CDN, en particulier avec l’indicateur dur, augmente le trafic à l’origine et peut entraîner une interruption lorsqu’il n’est pas exécuté correctement.
 
-Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) axé sur la configuration des clés de purge et l’exécution de la purge du cache CDN.
+Vous pouvez référencer [un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) axé sur la configuration des clés de purge et l’exécution de la purge du cache CDN.
 
 ## Purge d’URL unique {#single-purge}
 
@@ -74,6 +74,19 @@ curl
 ```
 
 N’oubliez pas que l’en-tête `X-AEM-Purge` doit inclure la valeur &quot;all&quot;.
+
+## Interaction avec le réseau de diffusion de contenu géré par le client
+
+Dans le cas d&#39;un [réseau de diffusion de contenu géré par le client](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), les `X-Forwarded-Host` et `X-AEM-Edge-Key` doivent également être fournis :
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Interactions avec le calque Apache/Dispatcher {#apache-layer}
 
