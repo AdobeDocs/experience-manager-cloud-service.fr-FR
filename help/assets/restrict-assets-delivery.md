@@ -3,9 +3,9 @@ title: Limitation de la diffusion des ressources avec Dynamic Media avec les fon
 description: Découvrez comment restreindre la diffusion des ressources avec les fonctionnalités OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Le guide des fonctionnalités de Dynamic Media avec OpenAPI est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE Dynamic Media avec OpenAPI Feature PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 La gouvernance centrale des ressources dans Experience Manager permet à l’administrateur DAM ou aux responsables de marque de gérer l’accès aux ressources disponibles via Dynamic Media avec les fonctionnalités OpenAPI. Ils peuvent restreindre la diffusion des ressources approuvées (jusqu’à une ressource individuelle) à l’utilisateur ou aux groupes [ Adobe Identity Management System (IMS) sélectionnés en configurant certaines métadonnées sur les ressources dans leur service de création AEM as a Cloud Service.](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)
 
@@ -34,7 +40,7 @@ Vous pouvez restreindre la diffusion des ressources dans [!DNL Experience Manage
 
 >[!NOTE]
 >
-> Cette fonctionnalité n’est actuellement pas en libre-service. Pour restreindre la remise des ressources pour les [utilisateurs](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) et [groupes](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, contactez votre équipe d’assistance entreprise pour obtenir des instructions sur la manière de récupérer les informations requises pour limiter l’accès au portail [Adobe Admin Console](https://adminconsole.adobe.com/) et de configurer l’accès dans le service de création AEM as a Cloud Service.
+Cette fonctionnalité n’est actuellement pas en libre-service. Pour restreindre la remise des ressources pour les [utilisateurs](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) et [groupes](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, contactez votre équipe d’assistance entreprise pour obtenir des instructions sur la manière de récupérer les informations requises pour limiter l’accès au portail [Adobe Admin Console](https://adminconsole.adobe.com/) et de configurer l’accès dans le service de création AEM as a Cloud Service.
 
 ### Limitation de la diffusion des ressources à l’aide de la date et de l’heure d’activation et de désactivation {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ Sur les services de création AEM Cloud Service ainsi que sur le sélecteur de r
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’activation de l’authentification IMS sur les intégrations basées sur AEM Sélecteur de ressources, contactez le support aux entreprises.
+Pour plus d’informations sur l’activation de l’authentification IMS sur les intégrations basées sur AEM Sélecteur de ressources, contactez le support aux entreprises.
 
 1. Pour les expériences autres que celles basées sur un sélecteur de ressources, AEM as a Cloud Service et Dynamic Media avec des fonctionnalités OpenAPI prennent actuellement en charge les intégrations d’api côté serveur et peuvent générer des jetons de porteur IMS.
    * Suivez les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations API service à serveur qui peuvent récupérer les jetons de porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)

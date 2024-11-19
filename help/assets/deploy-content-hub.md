@@ -1,21 +1,27 @@
 ---
 title: Déployer [!DNL Content Hub]
-description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des utilisateurs disposant de différents types de privilèges (chargement de ressources, utilisateurs d’Adobe Express) et comment accorder des privilèges d’administrateur aux utilisateurs.
+description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des personnes disposant de différents types de privilèges (chargement de ressources, utilisateurs et utilisatrices d’Adobe Express) et comment accorder des privilèges d’administration aux utilisateurs et utilisatrices.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 4%
+source-wordcount: '1615'
+ht-degree: 7%
 
 ---
 
-# Déployer le hub de contenus {#deploy-content-hub}
+# Déployer Content Hub {#deploy-content-hub}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Déployer Content Hub](assets/deploy-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub est disponible dans le cadre de Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux.
 
@@ -53,7 +59,7 @@ Le tableau suivant récapitule les types d’utilisateurs Content Hub disponible
 
 >[!NOTE]
 >
->Les [utilisateurs de Experience Manager Assets](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement as a Cloud Service Experience Manager Assets pour les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés à AEM > Instance d’auteur de production > AEM profil de produit Utilisateurs à l’aide d’Admin Console.
+Les [utilisateurs de Experience Manager Assets](#experience-manager-assets-users) peuvent approuver des ressources dans un environnement as a Cloud Service Experience Manager Assets pour les rendre disponibles sur Content Hub. Ces utilisateurs doivent être ajoutés à AEM > Instance d’auteur de production > AEM profil de produit Utilisateurs à l’aide d’Admin Console.
 
 ## Étape 1 : Activation de Content Hub pour Experience Manager Assets à l’aide de Cloud Manager {#enable-content-hub}
 
@@ -72,7 +78,7 @@ Pour accéder au portail Content Hub, les administrateurs doivent d’abord acti
 
    >[!NOTE]
    >
-   >Si **[!UICONTROL Update]** n’est pas activé pour vous après avoir sélectionné Content Hub, assurez-vous que vous avez spécifié les paramètres d’activation pour le programme.
+   Si **[!UICONTROL Update]** n’est pas activé pour vous après avoir sélectionné Content Hub, assurez-vous que vous avez spécifié les paramètres d’activation pour le programme.
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
 
@@ -80,7 +86,7 @@ Content Hub est désormais activé pour Experience Manager Assets as a Cloud Ser
 
 >[!NOTE]
 >
->Vous pouvez accéder à Content Hub et l’utiliser avec jusqu’à 250 utilisateurs de Content Hub. Contactez votre représentant Adobe si vous avez d’autres questions.
+Vous pouvez accéder à Content Hub et l’utiliser avec jusqu’à 250 utilisateurs de Content Hub. Contactez votre représentant Adobe si vous avez d’autres questions.
 
 
 Si vous découvrez Experience Manager Assets, cliquez sur **[!UICONTROL Ajouter un programme]**, puis fournissez les détails du programme (nom du programme, configurer pour la production) et cliquez sur **[!UICONTROL Continuer]**. Vous pouvez ensuite sélectionner **[!UICONTROL Assets]** et **[!UICONTROL Content Hub]** dans l’onglet **[!UICONTROL Solutions &amp; Add-ons]** .
@@ -93,7 +99,7 @@ Après [l’activation de Content Hub pour Assets as a Cloud Service à l’aide
 
 >[!NOTE]
 >
->Si vous avez configuré Content Hub avant le 14 août 2024, la nouvelle instance est créée avec `contenthub` comme suffixe.
+Si vous avez configuré Content Hub avant le 14 août 2024, la nouvelle instance est créée avec `contenthub` comme suffixe.
 
 Notez qu’il n’y a pas `author` ou `publish` dans le nom d’instance pour Content Hub.
 
@@ -103,7 +109,7 @@ Cliquez sur le nom de l’instance pour afficher le profil de produit Content Hu
 
 >[!NOTE]
 >
->Si vous avez configuré Content Hub avant le 14 août 2024, le profil de produit Content Hub a `contenthub` mentionné après `Limited Users` au lieu de `delivery`.
+Si vous avez configuré Content Hub avant le 14 août 2024, le profil de produit Content Hub a `contenthub` mentionné après `Limited Users` au lieu de `delivery`.
 
 ## Étape 2 : administrateur Content Hub intégré {#onboard-content-hub-administrator}
 
@@ -144,7 +150,7 @@ Ces utilisateurs peuvent désormais accéder aux ressources disponibles sur le p
 
 >[!NOTE]
 >
->Vous pouvez utiliser toutes les fonctionnalités avancées de l’entreprise, telles que la synchronisation avec des fournisseurs d’identité externes.
+Vous pouvez utiliser toutes les fonctionnalités avancées de l’entreprise, telles que la synchronisation avec des fournisseurs d’identité externes.
 
 ### Comment accéder à Content Hub ? {#access-content-hub}
 
@@ -222,4 +228,4 @@ Pour configurer les utilisateurs de Experience Manager Assets :
 
    >[!NOTE]
    >
-   > Vous n’avez pas besoin d’être ajouté au [profil de produit Content Hub](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
+   Vous n’avez pas besoin d’être ajouté au [profil de produit Content Hub](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.

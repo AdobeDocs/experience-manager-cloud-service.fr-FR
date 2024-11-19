@@ -2,19 +2,25 @@
 title: Modifier des images dans Content Hub à l’aide d’Adobe Express
 description: Modifier des images dans Content Hub à l’aide d’Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '436'
+ht-degree: 6%
 
 ---
 
 # Modifier des images dans Content Hub {#edit-images-content-hub}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![ Modifier des images dans Content Hub à l’aide de l’Adobe Express ](assets/edit-images-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub vous permet de créer du contenu avec Adobe Express. Vous pouvez modifier du contenu existant à l’aide d’outils simples d’utilisation, produire des variations de marque avec des modèles et des éléments de marque et créer du contenu avec les dernières fonctionnalités GenAI d’Adobe Firefly.
 
@@ -24,7 +30,7 @@ Les droits d’accès aux utilisateurs d’Adobe Express et de [Content Hub ayan
 
 >[!NOTE]
 >
->Vous pouvez modifier les images des types de fichiers PNG et JPG/JPEG à l’aide de [!DNL Adobe Express].
+Vous pouvez modifier les images des types de fichiers PNG et JPG/JPEG à l’aide de [!DNL Adobe Express].
 
 ## Modifier des images à l’aide d’[!DNL Adobe Express] {#edit-images-using-content-hub}
 

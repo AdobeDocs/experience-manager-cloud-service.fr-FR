@@ -2,17 +2,23 @@
 title: Configuration d’un domaine personnalisé pour le niveau Publish
 description: Découvrez comment configurer un domaine personnalisé pour le niveau de publication dans Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 7%
+source-wordcount: '313'
+ht-degree: 11%
 
 ---
 
 # Configuration d’un domaine personnalisé pour le niveau de publication{#configure-custom-domain}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Le guide des fonctionnalités de Dynamic Media avec OpenAPI est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE Dynamic Media avec OpenAPI Feature PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Dans Adobe Cloud Manager, vous pouvez faire ressortir votre site web en ajoutant un domaine personnalisé. AEM as a Cloud Service est fourni avec un domaine par défaut. Vous pouvez le personnaliser selon vos besoins.
 
@@ -39,4 +45,4 @@ La vérification DNS peut prendre quelques heures en raison des délais de propa
 
 >[!NOTE]
 >
->Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées. La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.
+Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées. La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Coordination avec l’équipe d’Adobe respective pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.

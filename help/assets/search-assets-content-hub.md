@@ -2,17 +2,23 @@
 title: Rechercher des ressources dans le hub de contenus
 description: Découvrez comment rechercher des ressources dans [!DNL Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
 
-
 # Rechercher dans Assets dans [!DNL Content Hub] {#search-assets}
 
 ![Image de bannière de ressources de partage](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Lorsque votre référentiel contient un grand nombre de ressources, la recherche de la ressource appropriée prend du temps. La recherche [!DNL The Content Hub] vous permet de rechercher les ressources approuvées afin que vous puissiez y effectuer des actions supplémentaires, telles que télécharger, partager ou créer des collections. Vous pouvez utiliser différentes fonctionnalités pour affiner vos résultats de recherche, par exemple, en effectuant une recherche textuelle à l’aide de filtres, en effectuant une recherche par balises intelligentes ou par balises intelligentes, en recherchant un format de fichier particulier, etc.
 

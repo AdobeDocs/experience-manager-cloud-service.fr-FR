@@ -3,9 +3,9 @@ title: Approbation des ressources dans Experience Manager
 description: Découvrez comment approuver des ressources dans [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 5%
 
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Le guide des fonctionnalités de Dynamic Media avec OpenAPI est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE Dynamic Media avec OpenAPI Feature PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Les responsables de marques et les marketeurs contrôlent strictement les ressources de marque. Seule la version approuvée et la dernière version de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
 
@@ -36,7 +42,7 @@ Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL État d
 
 >[!NOTE]
 >
->Si vos ressources ou dossiers ont un schéma par défaut différent, veillez à effectuer cette mise à jour dans ce schéma particulier.
+Si vos ressources ou dossiers ont un schéma par défaut différent, veillez à effectuer cette mise à jour dans ce schéma particulier.
 
 ## Approuver des ressources {#approve-assets}
 
@@ -78,7 +84,7 @@ Rationalisez votre workflow en approuvant rapidement plusieurs ressources à la 
 
 >[!NOTE]
 > 
->Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier, vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
+Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier, vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
 
 De même, pour approuver en masse des ressources dans un dossier de la vue Assets :
 
@@ -105,6 +111,6 @@ Pour copier l’URL de diffusion d’une ressource approuvée dans le référent
 
    >[!NOTE]
    >
-   >L’option de copie de l’URL de diffusion pour les ressources approuvées est disponible dans la vue Assets.
+   L’option de copie de l’URL de diffusion pour les ressources approuvées est disponible dans la vue Assets.
 
 Pour plus d’informations sur les autres rendus qui s’affichent dans le panneau Dynamic Media, voir [Affichage et téléchargement des rendus Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

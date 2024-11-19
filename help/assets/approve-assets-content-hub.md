@@ -2,9 +2,9 @@
 title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Approuver des ressources pour Content Hub](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>
+>[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Les responsables de marques et les marketeurs contrôlent strictement les ressources de marque. Seule la version approuvée et la dernière version de la ressource peut être utilisée dans Content Hub, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
 
@@ -34,7 +40,7 @@ Les ressources marquées comme `approved` dans Assets as a Cloud Service sont au
 
 >[!NOTE]
 >
->Assets as a Cloud Service et Content Hub doivent utiliser la même organisation pour que les ressources s’affichent dans Content Hub.
+Assets as a Cloud Service et Content Hub doivent utiliser la même organisation pour que les ressources s’affichent dans Content Hub.
 
 Pour définir l’état de la ressource sur `approved` à l’aide de la vue Assets dans AEM as a Cloud Service :
 
@@ -89,7 +95,7 @@ Pour automatiser l’approbation des ressources nouvellement ingérées dans [!D
 
 >[!NOTE]
 > 
->Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier, vous devez les sélectionner et les approuver manuellement.
+Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier, vous devez les sélectionner et les approuver manuellement.
 
 ## Gestion des ressources chargées à l’aide de Content Hub {#manage-assets-uploaded-using-content-hub}
 
