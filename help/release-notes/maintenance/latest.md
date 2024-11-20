@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -18,14 +18,14 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 18598 {#18598}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18598, publiée le jeudi 13 novembre 2024. La version de maintenance précédente était la version 18311. La version 18459 a été rendue privée en raison d’un problème.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18598, publiée le 13 novembre 2024. La version de maintenance précédente était la version 18311. La version 18459 a été rendue privée en raison d’un problème.
 
 L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
 ### Améliorations {#enhancements-18598}
 
 * CQ-4357471 : ajout de la prise en charge de la traduction des dictionnaires i18n dans AEMaaCS.
-* FORMS-11646 : définition de variables globalContext pour les pages appropriées à AEM Forms.
+* FORMS-11646 : configuration de variables globalContext pour les pages pertinentes AEM Forms.
 * FORMS-14833 : les fragments de formulaire adaptatif peuvent désormais être inclus dans le document d’enregistrement final (DE) avec AEM Forms.
 * FORMS-14255 : les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui sauvegarde automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre.
 * SITES-23591 : fragments de contenu : mise à niveau des fragments de contenu pour la prise en charge de l’UUID.
@@ -44,11 +44,11 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 * CQ-4358028 : la création d’un projet AEM échoue lorsqu’un utilisateur ou une utilisatrice ayant uniquement les droits d’administration de projet charge une nouvelle miniature sur la page de création du projet.
 * FORMS-14978 : activation du chargement de page pour un formulaire basé sur les composants principaux pour l’éditeur de thème.
 * FORMS-15682 : le problème concerne l’intégration d’AEM Forms et de Dynamics FDM. Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, le document d’enregistrement (DE) n’est pas envoyé en tant que pièce jointe PDF au champ d’entité spécifié.
-* FORMS-15799 : La page de signature Adobe Sign GovCloud ne note pas le rendu dans iframe.
+* FORMS-15799 : la page Adobe Sign GovCloud Signature ne s’affiche pas dans l’iframe.
 * FORMS-16113 : lorsqu’un utilisateur ou une utilisatrice, membre de l’équipe d’administration du compte Adobe Sign, tente d’accéder à un document envoyé par une autre personne membre de l’équipe, l’API de contrat peut renvoyer un ID différent de celui généré lors de la création.
 * FORMS-16596 : problème d’accessibilité : boutons désactivés non reconnus par le lecteur d’écran.
-* GRANITE-53907 : impossible d’identifier l’utilisateur du service comme super-utilisateur du workflow.
-* SKYOPS-90560 : La dernière version du modèle Sling a un impact sur les performances de l’exportation du modèle Sling.
+* GRANITE-53907 : impossible d’identifier la personne utilisant le service comme super-utilisateur ou super-utilisatrice du workflow.
+* SKYOPS-90560 : la dernière version du modèle Sling a un impact sur ses performances d’export.
 * SITES-10575 : MSM : le chargeur Bloomfilter de plan directeur tente de charger plus de 100 000 lignes.
 * SITES-20755 : fragments de contenu : la référence de ressource avec actualisation de l’UUID n’affiche pas la miniature.
 * SITES-26253 : fragments de contenu : migration UUID : modification de la rubrique de traitement Sling pour qu’elle devienne générique.
@@ -69,7 +69,7 @@ L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensembl
 * SITES-25938 : lancements : suppression inattendue après le projet de traduction.
 * SITES-25393 : Edge Delivery avec l’éditeur universel : nœuds de texte perdus lors du rendu de texte enrichi formaté avec un seul paragraphe.
 * SITES-24643 : Edge Delivery avec l’éditeur universel : les attributs de métadonnées OpenGraph et Twitter ne fonctionnent pas dans le modèle de métadonnées de page.
-* SITES-25401 : Fragments d’expérience : mise à jour lente de la référence XF.
+* SITES-25401 : fragments d’expérience : mise à jour lente de la référence XF.
 
 ### Problèmes connus {#known-issues-18598}
 
