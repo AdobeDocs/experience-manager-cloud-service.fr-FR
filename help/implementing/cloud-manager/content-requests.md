@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 16941385a05358d9a5cf3f57405b8f2174902af2
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1276'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ## Présentation {#introduction}
 
-Les demandes de contenu se rapportent aux demandes effectuées à AEM Sites, y compris celles liées aux Edge Delivery Services ou aux systèmes de mise en cache fournis par le client, tels qu’un réseau de diffusion de contenu. Ces requêtes diffusent du contenu ou des données au format HTML par le biais de pages vues (par exemple, des pages et des fragments d’expérience) ou au format JSON par le biais d’appels API sans en-tête. Les demandes de contenu sont comptabilisées sous la forme d’une page vue ou de cinq appels d’API et sont mesurées à l’entrée du premier système de mise en cache qui reçoit une demande de contenu. Certaines requêtes HTTP sont incluses ou exclues à des fins de comptage des requêtes de contenu. La liste complète des requêtes HTTP incluses et exclues, ainsi que leurs définitions techniques, sont disponibles dans la documentation.
+Les demandes de contenu se rapportent aux demandes effectuées à AEM Sites, y compris celles liées aux Edge Delivery Services ou aux systèmes de mise en cache fournis par le client, tels qu’un réseau de diffusion de contenu. Ces requêtes diffusent du contenu ou des données au format HTML par le biais de pages vues (par exemple, des pages et des fragments d’expérience) ou au format JSON par le biais d’appels API sans en-tête. Les demandes de contenu sont comptabilisées sous la forme d’une page vue ou de cinq appels d’API et sont mesurées à l’entrée du premier système de mise en cache qui reçoit une demande de contenu. Certaines requêtes HTTP sont incluses ou exclues à des fins de comptage des requêtes de contenu. La liste complète de ces requêtes HTTP incluses et exclues, ainsi que leurs définitions techniques, sont disponibles dans la documentation.
 
 ## A propos des requêtes de contenu Cloud Service {#understanding-cloud-service-content-requests}
 

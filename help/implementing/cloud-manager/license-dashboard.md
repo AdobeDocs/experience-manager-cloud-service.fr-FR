@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ Le tableau de bord Licence Cloud Manager permet d’accéder facilement aux droi
 
 Le tableau de bord se divise en trois sections, comme suit :
 
-* **Solutions** - Cette section résume les solutions pour lesquelles vous disposez d’une licence, telles que Sites ou Assets.
-* **Modules complémentaires** - Cette section résume les modules complémentaires disponibles pour vos solutions sous licence.
-* **Autres droits** - Cette section résume l’environnement de test et de développement ainsi que d’autres droits qui peuvent être utilisés dans votre client.
+* **Solutions** - Les solutions sous licence que vous possédez.
+* **Modules complémentaires** - Quels modules complémentaires disponibles pour vos solutions sous licence ?
+* **Autres droits** - Environnement de test et de développement et autres droits pouvant être utilisés dans votre client.
 
 Chaque section résume ce qui est disponible et comment il est utilisé, le cas échéant. Actuellement, seules les solutions Sites et Assets sont affichées même si d’autres solutions existent dans le client.
 
