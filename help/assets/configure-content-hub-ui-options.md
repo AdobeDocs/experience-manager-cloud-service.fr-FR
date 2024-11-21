@@ -2,7 +2,7 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 >id="configure_content_hub"
 >title="Configurer l’interface d’utilisation du hub de contenus"
 >abstract="Experience Manager Assets permet à l’équipe d’aministration de configurer les options disponibles dans l’interface d’utilisation du hub de contenus. En fonction des options de configuration sélectionnées par l’équipe d’aministration, les utilisateurs et utilisatrices du hub de contenus peuvent afficher les champs sur le hub de Contenus. Les options de configuration incluent des métadonnées lors de l’import des ressources, des filtres, des propriétés de ressources, des métadonnées lors de la recherche de ressources, d’une image de marque personnalisée et de tout lien personnalisé."
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="Regarder la vidéo"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Regarder la vidéo"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configuration de ressources sur Content Hub](assets/configure-assets.png)
