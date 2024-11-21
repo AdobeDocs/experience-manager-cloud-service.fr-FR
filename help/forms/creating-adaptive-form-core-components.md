@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
+source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 79%
+source-wordcount: '2368'
+ht-degree: 77%
 
 ---
 
@@ -35,7 +35,7 @@ Avant de commencer, découvrez les types de composants de formulaires disponible
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
-* **Activer les composants principaux de Forms adaptatif pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement Forms as a Cloud Service basé sur Archetype 39 ou version antérieure, [Activez les composants principaux Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md). Lors de l’activation des composants principaux pour votre environnement, le modèle **Formulaires adaptatifs (composant principal)** et le thème de la zone de travail sont ajoutés à votre environnement. Si votre version du SDK AEM est antérieure à 2023.02.0, [assurez-vous que l’indicateur `prerelease` est activé dans votre environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features), car les composants principaux des formulaires adaptatifs faisaient partie de la version préliminaire avant la version 2023.02.0.
+* **Activer les composants principaux de Forms adaptatif pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement Forms as a Cloud Service basé sur Archetype 39 ou version antérieure, [Activez les composants principaux Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md). Lors de l’activation des composants principaux pour votre environnement, les modèles et thèmes **Forms adaptative (composant principal)** sont ajoutés à votre environnement. Si votre version du SDK AEM est antérieure à 2023.02.0, [assurez-vous que l’indicateur `prerelease` est activé dans votre environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features), car les composants principaux des formulaires adaptatifs faisaient partie de la version préliminaire avant la version 2023.02.0.
 
 * **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, sans nom :
 
@@ -106,6 +106,10 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle.  En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le schéma JSON <!--XFA form template, XML schema or --> ou le modèle de données de formulaire (FDM) associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’ **[!UICONTROL explorateur de contenu]** de la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
 Désormais, vous pouvez faire glisser les [composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) vers le conteneur de Forms adaptatif pour concevoir et créer le formulaire. Vous pouvez également consulter [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action.
+
+>[!NOTE]
+>
+> Vous pouvez également [créer un Forms adaptatif à l’aide de modèles de formulaire XFA (*.fichiers XDP)](/help/forms/create-adaptive-form-using-xfa-templates.md). Cela vous permet de gagner du temps en réutilisant les champs des fichiers XDP directement dans Adaptive Forms.
 
 ## Configurer l’action Envoyer pour un formulaire adaptatif {#configure-submit-action-for-form}
 
@@ -216,6 +220,6 @@ Pour renommer un formulaire adaptatif, procédez comme suit :
 ## Voir également {#see-also}
 
 {{see-also}}
-* [Ajouter un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
+* [Ajouter un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](/help/forms/rule-editor-core-components.md)
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

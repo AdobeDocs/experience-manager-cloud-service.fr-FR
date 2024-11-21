@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 46%
+source-wordcount: '2148'
+ht-degree: 57%
 
 ---
 
@@ -85,11 +85,11 @@ Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effac
 >
 > Lorsque le type de règle ne prend en charge que les instructions de niveau unique, alors les instructions else.
 
-##### Plusieurs champs autorisés dans [!UICONTROL When] {#allowed-multiple-fields}
+##### Plusieurs champs autorisés dans [!UICONTROL Lorsque] {#allowed-multiple-fields}
 
-Dans la condition **When**, vous avez la possibilité d’ajouter d’autres champs à l’exception du champ auquel la règle est appliquée.
+Dans la condition **Lorsque**, vous avez la possibilité d’ajouter d’autres champs à l’exception du champ auquel la règle est appliquée.
 
-Par exemple, en utilisant le type de règle Lorsque , vous pouvez évaluer une condition sur différents objets de formulaire et effectuer l’action suivante :
+Par exemple, en utilisant le type de règle Lorsque, vous pouvez évaluer une condition sur différents objets de formulaire et effectuer l’action suivante :
 
 Lorsque :
 
@@ -105,12 +105,12 @@ Action 1 sur Objet A
 
 _
 
-![Plusieurs champs autorisés dans When](/help/forms/assets/allowed-multiple-field-when.png)
+![Plusieurs champs autorisés dans Lorsque](/help/forms/assets/allowed-multiple-field-when.png)
 
 **Considérations lors de l’utilisation de plusieurs champs autorisés dans la fonction de condition Lorsque**
 
 * Assurez-vous que le [composant principal est défini sur la version 3.0.14 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité dans l’éditeur de règles.
-* Si des règles sont appliquées à différents champs dans la condition Lorsque , la règle se déclenche même si un seul de ces champs est modifié.
+* Si des règles sont appliquées à différents champs dans la condition Lorsque, la règle se déclenche même si un seul de ces champs est modifié.
 
 
 <!--
@@ -130,11 +130,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
+Si plusieurs champs autorisés de la fonctionnalité de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
 
 1. Ouvrez le formulaire en mode d’édition.
-1. Ouvrez l’explorateur de contenu et sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur Terminé et enregistrez à nouveau la boîte de dialogue.
 
 **[!UICONTROL Masquer]** Masque l’objet spécifié.
@@ -145,29 +145,35 @@ Si plusieurs champs autorisés de la fonction de condition Lorsque rencontrent d
 
 **[!UICONTROL Désactiver]** Désactive l’objet spécifié.
 
-**[!UICONTROL Appeler le service]** : appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous appuyez sur le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent. Voir l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
+**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lors du choix d’un service de modèle de données de formulaire, davantage de champs s’affichent où vous pouvez mapper des objets de formulaire avec des paramètres d’entrée pour le service spécifié. Vous pouvez mapper les paramètres de sortie via l’option de payload d’événement pour le service spécifié. Vous pouvez également créer des règles pour gérer les réponses de succès et d’échec de l’opération de service Invoke à l’aide de l’éditeur de règles.
+
+>[!NOTE]
+>
+> Pour en savoir plus sur le service Invoke, [cliquez ici](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+Voir l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
 
 Outre le service Form Data Model, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
-**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous choisissez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent.
+**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous sélectionnez l’option Service web, elle affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires s’affichent dans lesquels vous pouvez mapper des objets de formulaire à des paramètres d’entrée et de sortie pour le service spécifié.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
 Le type de règle **[!UICONTROL Définir la propriété]** permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition. Vous pouvez définir la propriété sur l’une des options suivantes :
 * visible (booléen)
-* label.value (String)
+* label.value (chaîne)
 * label.visible (booléen)
 * description (chaîne)
 * enabled (booléen)
 * readOnly (booléen)
-* obligatoire (booléen)
-* screenReaderText (String)
+* required (booléen)
+* screenReaderText (chaîne)
 * valid (booléen)
 * errorMessage (chaîne)
-* default (Number, String, Date)
-* enumNames (String[])
+* default (nombre, chaîne, date)
+* enumNames (chaîne[])
 * chartType (chaîne)
 
 Par exemple, il vous permet de définir des règles pour afficher la zone de texte lorsqu’un utilisateur clique sur un bouton. Vous pouvez utiliser une fonction personnalisée, un objet de formulaire, une propriété d’objet ou une sortie de service pour définir une règle.
@@ -188,11 +194,11 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Définir la cible d’action]**: définit la cible d’action sur l’objet spécifié.
 
-**[!UICONTROL Submit Form]** Envoie le formulaire.
+**[!UICONTROL Envoyer le formulaire]** Envoie le formulaire.
 
-**[!UICONTROL Reset]** Réinitialise le formulaire ou l’objet spécifié.
+**[!UICONTROL Réinitialiser]** Réinitialise le formulaire ou l’objet spécifié.
 
-**[!UICONTROL Validate]** : valide le formulaire ou l’objet spécifié.
+**[!UICONTROL Valider]** Valide le formulaire ou l’objet spécifié.
 
 **[!UICONTROL Ajouter une instance]** : ajoute une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
@@ -202,7 +208,7 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Accédez à]** Accédez à d’autres ressources de Forms adaptatif, telles que des images ou des fragments de document, ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Dispatch Event]** déclenche des actions ou des comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
+**[!UICONTROL Distribuer l’événement]** Déclenche des actions ou des comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
 
 #### [!UICONTROL Définir la valeur de] {#set-value-of}
 
@@ -222,7 +228,7 @@ Lorsque (facultatif) :
 
 (Condition 1 ET Condition 2 ET Condition 3) est TRUE ;
 
-L’exemple suivant sélectionne la valeur de `Question2` en tant que `True` et définit la valeur de `Result` en tant que `correct`.
+L’exemple ci-après sélectionne la valeur de `Question2` en tant que `True` et définit la valeur de `Result` en tant que `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 

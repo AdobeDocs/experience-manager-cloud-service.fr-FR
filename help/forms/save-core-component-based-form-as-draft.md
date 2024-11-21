@@ -4,9 +4,9 @@ description: Découvrez comment enregistrer le formulaire adaptatif basé sur le
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 7%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
-<span class="preview"> Cet article contient du contenu sur la fonction **Enregistrement automatique**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
+<span class="preview"> Cet article contient du contenu sur la fonctionnalité **Brouillons**, une fonctionnalité de version préliminaire. La fonctionnalité de version préliminaire n’est accessible que par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
 Prenons l’exemple d’un utilisateur qui commence à remplir un formulaire, mais qui doit se mettre en pause et revenir ultérieurement. AEM propose une option `save-as-draft`, permettant à l’utilisateur d’enregistrer le formulaire en tant que brouillon pour une exécution ultérieure. Pour faciliter cela, AEM fournit le composant Portail Forms **** prêt à l’emploi  Drafts &amp; Submissions{qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons pour une fin ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher leurs formulaires envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce brouillon n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
@@ -137,7 +137,7 @@ Pour enregistrer un formulaire en tant que brouillon, créez une règle **Enregi
 
 Lorsque vous prévisualisez un formulaire adaptatif, remplissez-le et cliquez sur le bouton **Enregistrer le formulaire**, le formulaire est enregistré en tant que brouillon.
 
-### Enregistrement automatique
+### Brouillons
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ Vous pouvez également configurer un formulaire adaptatif pour l’enregistrer a
 
 1. Dans l’instance d’auteur, ouvrez un formulaire adaptatif en mode d’édition.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône ![Propriétés du guide](/help/forms/assets/configure-icon.svg) de propriétés du conteneur de guide et ouvrez l’onglet **[!UICONTROL Enregistrement automatique]** .
+1. Cliquez sur l’icône ![Propriétés du guide](/help/forms/assets/configure-icon.svg) des propriétés du conteneur de guide et ouvrez l’onglet **[!UICONTROL Brouillons]** .
 
    ![Enregistrement automatique](/help/forms/assets/auto-save.png)
 
-1. Cochez la case **[!UICONTROL Activer]** pour activer l’enregistrement automatique du formulaire.
-1. Configurez **[!UICONTROL Trigger]** comme **basé sur le temps** pour enregistrer automatiquement le formulaire <!--based on the occurrence of an event or--> après un intervalle de temps spécifique.
-1. Spécifiez l’intervalle de temps dans **[!UICONTROL Enregistrement automatique sur cet intervalle (en secondes)]** pour définir la durée qui déclenche l’enregistrement automatique du formulaire à l’intervalle défini.
+1. Cochez la case **[!UICONTROL Enregistrer automatiquement les brouillons]** pour activer l’enregistrement automatique du formulaire en tant que brouillons.
+1. Configurez **[!UICONTROL Enregistrer la préférence]** comme **Enregistrer les brouillons à intervalles réguliers**, pour enregistrer automatiquement le formulaire <!--based on the occurrence of an event or--> après un intervalle de temps spécifique.
+1. Spécifiez l’intervalle dans **[!UICONTROL Périodicité de l’intervalle de sauvegarde (secondes)]** pour définir la durée qui déclenche l’enregistrement automatique du formulaire à l’intervalle défini.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 ## Afficher les brouillons/formulaires envoyés sur la page Sites à l’aide du composant Drafts &amp; Submissions

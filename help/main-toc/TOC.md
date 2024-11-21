@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 98%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 98%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notes de mise à jour de la version 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Notes de mise à jour de la version 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Notes de mise à jour de la version 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [Notes de mise à jour de la version 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -551,11 +552,11 @@ ht-degree: 98%
       + [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variations – création de contenu de fragment](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenu associé à un fragment de contenu](/help/assets/content-fragments/content-fragments-assoc-content.md)
-      + [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [Métadonnées – Propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
-      + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [Prévisualisation – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Réutiliser les fragments de contenu à l’aide de MSM (pour Assets)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Parcours Dynamic Media : principes de base {#dm-journey}
@@ -719,6 +720,11 @@ ht-degree: 98%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
          + [Conception d’un schéma XML pour un formulaire adaptatif](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + Intégrer le Forms adaptatif à Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Intégration de Adobe Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configuration de la source de données Adobe Marketo Engage pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configuration de l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
       + [Créer un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
       + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 98%
             + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif – Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Créer un formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
+            + [Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaire XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 98%
                + [Types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
                + [Exemples d’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
                + [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
+               + [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur les composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux{#create-and-use-custom-function-core-component}
                + [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
                + [Créer et utiliser une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)

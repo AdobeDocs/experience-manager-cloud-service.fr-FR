@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # Fragments de code {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connexion d’un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Création d’une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Voir également {#see-more-forms-eds}
@@ -131,6 +132,8 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
 * [Différents cas d’utilisation de l’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
 * [Différence des diverses éditions de l’éditeur de règles](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
+* [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur les composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
 * [Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
 * [Objet Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Enregistrer vos formulaires en tant que brouillons](/help/forms/save-core-component-based-form-as-draft.md)
 * [Ajouter des liens de formulaire à une page Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Intégration du Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configuration de la source de données du Marketo Engage pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configuration de l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Liste autorisée des adresses IP de Cloud Manager et des pipelines front-end {#allowlist-frontend-pipeline}
 
