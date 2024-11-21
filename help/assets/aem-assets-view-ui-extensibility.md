@@ -4,9 +4,9 @@ description: Découvrez la fonctionnalité d’extensibilité de l’interface u
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,10 @@ La vue AEM Assets dispose d’une fonctionnalité d’extensibilité de l’inte
 Vous pouvez ajouter vos extensions aux niveaux Ressource, Dossier et Collection. L’extension ajoutée s’affiche dans un panneau dédié sur la page Détails de la ressource, de la collection ou du dossier.
 
 >[!IMPORTANT]
-> L’extensibilité de l’interface utilisateur de la vue AEM Assets est disponible avec [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+>
+> * L’extensibilité de l’interface utilisateur de la vue AEM Assets est disponible avec [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+> * L’extensibilité de l’interface utilisateur d’Assets View est disponible dans une version de Beta. Pour obtenir un accès anticipé à l’extensibilité de l’interface utilisateur de la vue Assets, [créez et envoyez un cas de service clientèle Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+> * Vous pouvez fournir des commentaires sur la documentation en développant les options de commentaires détaillés et en cliquant sur Signaler un problème.
 
 ## <a id="1"></a> Accès à la vue Assets
 
@@ -32,9 +35,6 @@ Accédez à la vue Assets comme suit :
 Dans la vue Assets, accédez à la page Détails d’une ressource, d’un dossier ou d’une collection. Cette page Détails comporte un panneau dédié qui affiche l’extension d’IU ajoutée.
 ![mon espace de travail](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> L’extensibilité de l’interface utilisateur d’AEM Assets View est disponible dans une version de Beta. Vous pouvez fournir des commentaires sur la documentation en développant les options de commentaires détaillés et en cliquant sur Signaler un problème.
 
 ## Conditions préalables pour l’ajout du composant Extensibilité
 
