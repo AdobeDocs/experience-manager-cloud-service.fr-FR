@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 42%
+source-wordcount: '1778'
+ht-degree: 41%
 
 ---
 
@@ -51,6 +51,10 @@ Convertissez rapidement une page Edge Delivery en modèle de page. Vous pouvez a
 **[!DNL Edge Delivery Services]Importateur CSV pour la publication via une instance AEM**
 
 Gérez efficacement vos données de feuille de calcul Edge Delivery (par exemple, les redirections) dans votre outil de feuille de calcul préféré et chargez-les dans AEM via le nouvel importateur CSV. [En savoir plus](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Fonctionnalités de version préliminaire dans AEM Sites
+
+Amélioration du référencement des fragments de contenu avec des références basées sur des identifiants uniques, ce qui garantit des liens stables qui restent valides même lorsque des ressources ou des fragments sont déplacés, ce qui évite d’avoir à effectuer des mises à jour ou à republier. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 
