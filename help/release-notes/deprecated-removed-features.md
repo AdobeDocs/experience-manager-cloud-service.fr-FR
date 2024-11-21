@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 96%
+source-wordcount: '2603'
+ht-degree: 97%
 
 ---
 
@@ -42,9 +42,11 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Assets] | Chargez des ressources directement dans [!DNL Experience Manager]. Voir [API de chargement des ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de chargement direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur ou de l’administratrice de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. Utilisez plutôt l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow). |
+| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Les approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de processus d’activation de l’arborescence](/help/operations/replication.md#tree-activation) sont disponibles. |
+| [!DNL Foundation] | Ni l’onglet Distribute de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de processus d’activation de l’arborescence](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdront progressivement la prise en charge des informations d’identification du compte de service (JWT). Les informations d’identification du nouveau compte de service (JWT) ne pourront pas être créées dans Adobe Developer Console après le 1er mai 2024 inclus. Cependant, les informations d’identification existantes du compte de service (JWT) pourront toujours être utilisées pour les intégrations déjà configurées jusqu’au 1er janvier 2025. À ce moment-là, les informations d’identification existantes du compte de service (JWT) ne fonctionneront plus. La clientèle devra alors migrer vers les informations OAuth serveur à serveur. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrez](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) vers les informations d’identification OAuth serveur à serveur. |
+| [!DNL Foundation] | Workflow d’arborescence de contenu Publish et l’étape de processus d’arborescence de contenu Publish associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation), qui est plus performant. |
+
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -499,9 +501,9 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
       * Type : booléen
 +++
 
-## Mise à jour du Runtime Java vers la version 21 {#java-runtime-update-21}
+## Mise à jour de Java Runtime vers la version 21 {#java-runtime-update-21}
 
-AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel d&#39;effectuer les ajustements suivants :
+AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel d’effectuer les ajustements suivants :
 
 ### Version minimale de org.objectweb.asm {#org.objectweb.asm}
 
@@ -511,4 +513,4 @@ Mettez à jour org.objectweb.asm vers la version 9.5 ou ultérieure pour garanti
 
 Mettez à jour org.apache.groovy vers la version 4.0.22 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
 
-Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
+Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
