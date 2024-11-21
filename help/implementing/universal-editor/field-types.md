@@ -4,10 +4,10 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut 
 
 #### Contenu AEM {#aem-content}
 
-Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour définir des références de contenu. Il offre un type de validation supplémentaire.
+Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM. Contrairement au [composant de référence,](#reference) qui ne peut sélectionner que des ressources, le composant de contenu AEM peut référencer n’importe quel contenu AEM. Il offre un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -636,6 +636,8 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 >[!ENDTABS]
 
 #### Référence {#reference}
+
+Un type de composant de référence active un sélecteur de ressources AEM qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au [composant de contenu AEM,](#aem-content) qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il offre un type de validation supplémentaire.
 
 Un type de composant de référence permet une référence à un autre objet de données de l’objet actif.
 
