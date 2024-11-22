@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 41%
@@ -54,7 +54,7 @@ Gérez efficacement vos données de feuille de calcul Edge Delivery (par exemple
 
 ### Fonctionnalités de version préliminaire dans AEM Sites
 
-Amélioration du référencement des fragments de contenu avec des références basées sur des identifiants uniques, ce qui garantit des liens stables qui restent valides même lorsque des ressources ou des fragments sont déplacés, ce qui évite d’avoir à effectuer des mises à jour ou à republier. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
+Amélioration du [référencement de fragment de contenu avec des références uniques basées sur des ID](/help/headless/graphql-api/uuid-reference-upgrade.md), ce qui garantit des liens stables qui restent valides même lorsque des ressources ou des fragments sont déplacés, éliminant ainsi la nécessité de mises à jour ou de republication. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 

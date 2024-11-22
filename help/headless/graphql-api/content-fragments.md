@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 82%
@@ -257,8 +257,6 @@ Le schéma comporte des champs individuels de deux catégories de base :
 ### Types de données {#data-types}
 
 GraphQL pour AEM prend en charge une liste de types. Tous les types de données de modèles de fragments de contenu pris en charge et les types GraphQL correspondants sont représentés :
-
-<!-- CQDOC-21487 - check additions to table -->
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
@@ -1145,7 +1143,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
       * `_id_` : UUID de votre fragment de contenu dans le référentiel
-        <!-- CQDOC-21487 -->
+
          * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Voir Exemple de requête pour des fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
