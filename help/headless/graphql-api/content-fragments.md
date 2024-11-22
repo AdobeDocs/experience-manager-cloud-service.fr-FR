@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 82%
@@ -1142,7 +1142,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
       * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
          * Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-      * `_id_` : UUID de votre fragment de contenu dans le référentiel
+      * `_id` : UUID de votre fragment de contenu dans le référentiel
 
          * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Voir Exemple de requête pour des fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
