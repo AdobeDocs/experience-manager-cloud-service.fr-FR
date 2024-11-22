@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '3284'
-ht-degree: 55%
+source-wordcount: '3591'
+ht-degree: 51%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>Diverses fonctionnalités des modèles de fragments de contenu sont disponibles par le biais du Programme des Adopteurs Anticipés.
+>
+>Pour connaître l’état et savoir comment vous appliquer si vous le souhaitez, consultez les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés pour la création de pages ou comme base pour votre contenu sans interface utilisateur.
 
@@ -180,18 +186,33 @@ Une sélection de types de données est disponible pour la définition de votre 
 
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
+* **Référence du fragment**
+   * Références d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
+      * Modifier directement le fragment référencé.
+      * Créez un fragment de contenu en fonction du modèle approprié.
+      * Créer de nouvelles instances du champ
+   * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple `/content/dam/path/to/resource`
+* **Référence de fragment (UUID)**
+   * Références d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
+      * Modifier directement le fragment référencé.
+      * Créez un fragment de contenu en fonction du modèle approprié.
+      * Créer de nouvelles instances du champ
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée ; en interne, la référence est conservée sous la forme d’un UUID (universally unique ID) qui référence la ressource.
+      * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder au fragment requis.
 
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
    * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
-
-* **Référence du fragment**
-   * Références d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de :
-      * Modifier directement le fragment référencé
-      * Créez un fragment de contenu en fonction du modèle approprié.
-      * Créer de nouvelles instances du champ
+   * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple `/content/dam/path/to/resource`
+* **Référence du contenu (UUID)**
+   * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
+   * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée ; en interne, la référence est conservée sous la forme d’un UUID (universally unique ID) qui référence la ressource.
+      * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder à la ressource de ressource requise.
 
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
@@ -293,17 +314,28 @@ Différents types de données incluent désormais la possibilité de définir le
 
 Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’un des types de données suivants :
 
-* **[Référence de contenu](#content-reference)**
+* [Référence de contenu](#content-reference)
    * Fournit une référence simple à un autre contenu, quel que soit son type.
-   * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
+   * Fournis par les types de données :
+      * **Référence du contenu** - basé sur un chemin
+      * **Référence du contenu (UUID)** - basé sur l’UUID
+   * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
-* **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
+* [Référence du fragment](#fragment-reference-nested-fragments) (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
+   * Fournis par les types de données :
+      * **Référence du fragment** - basé sur un chemin
+      * **Référence du fragment (UUID)** - Basé sur UUID
    * Permet d’inclure/récupérer des données structurées.
+
      >[!NOTE]
      >
      Cette méthode est particulièrement intéressante lorsque vous utilisez [la diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
+
+>[!NOTE]
+>
+Voir [Mise à niveau de vos fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) pour plus d’informations sur la référence de contenu/fragment et la référence de contenu/fragment (UUID), et la mise à niveau vers les types de données UID.
 
 >[!NOTE]
 >
@@ -323,11 +355,11 @@ Pour plus d’informations, reportez-vous à la section [API GraphQL AEM à util
 
 ### Référence de contenu {#content-reference}
 
-La référence de contenu vous permet d’effectuer le rendu du contenu à partir d’une autre source, par exemple une image, une page ou un fragment d’expérience.
+Les types de données **Référence du contenu** et **Référence du contenu (UUID)** vous permettent d’effectuer le rendu du contenu à partir d’une autre source ; par exemple, image, page ou fragment d’expérience.
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
-* **Chemin d’accès racine**, qui spécifie où stocker tout contenu référencé
+* Le **chemin d’accès racine**, qui spécifie ou représente l’emplacement de stockage du contenu référencé
   >[!NOTE]
   >
   Ceci est obligatoire si vous souhaitez télécharger directement et référencer des images dans ce champ lors de l’utilisation de l’éditeur de fragments de contenu.
@@ -350,7 +382,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-La référence au fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité est particulièrement intéressante lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
+Les types de données **Référence de fragment** et **Référence de fragment (UUID)** peuvent référencer un ou plusieurs fragments de contenu. Cette fonctionnalité est particulièrement intéressante lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
 
 Par exemple :
 
@@ -387,7 +419,7 @@ Outre les propriétés standard, vous pouvez définir les éléments suivants :
 Il est possible de sélectionner plusieurs modèles. Lors de l’ajout de références à un fragment de contenu, tout fragment référencé doit avoir été créé à l’aide de ces modèles.
 
 * **Chemin racine**
-Indique un chemin racine pour tout fragment référencé.
+Cela spécifie, ou représente, un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 

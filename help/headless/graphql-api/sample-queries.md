@@ -4,16 +4,22 @@ description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du con
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 96%
+source-wordcount: '1940'
+ht-degree: 90%
 
 ---
 
 # Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
 Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
+
+>[!IMPORTANT]
+>
+>Diverses fonctionnalités de l’API GraphQL à utiliser avec les fragments de contenu sont disponibles via le programme Adopteur anticipé.
+>
+>Pour connaître l’état et savoir comment vous appliquer si vous le souhaitez, consultez les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ La requête suivante renvoie toutes les `attachments`, un champ spécifique (sou
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### Exemples de requêtes pour un fragment de contenu d’un modèle spécifique à l’aide de références UID {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+Ces requêtes interrogent :
+
+* l’UUID d’un fragment de contenu et des fragments ou ressources de contenu référencés ;
+* le résultat est renvoyé par la propriété JSON `_id`
+
+#### Exemple de requête pour un fragment de contenu d’un modèle spécifique à l’aide d’une référence UUID {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+La requête suivante renvoie toutes les références de contenu en utilisant `_id` et `_path` :
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Exemple de requête pour des fragments de contenu par référence UUID {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+La requête suivante renvoie toutes les références de contenu liées à un `_id` spécifique :
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }
