@@ -1,24 +1,24 @@
 ---
-title: Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services
-description: Découvrez comment la modélisation de contenu fonctionne pour la création WYSIWYG avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
+title: Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services
+description: Découvrez comment fonctionne la modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 79%
+ht-degree: 98%
 
 ---
 
 
-# Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services {#content-modeling}
+# Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services {#content-modeling}
 
-Découvrez comment la modélisation de contenu fonctionne pour la création WYSIWYG avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
+Découvrez comment fonctionne la modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services et comment modéliser votre propre contenu.
 
 ## Conditions préalables {#prerequisites}
 
-Les projets utilisant la création WYSIWYG avec des Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou de la méthode de création [.](/help/edge/wysiwyg-authoring/authoring.md)
+Les projets utilisant la création WYSIWYG avec Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou de la [méthode de création](/help/edge/wysiwyg-authoring/authoring.md).
 
 Avant de commencer à modéliser le contenu de votre projet, veillez à lire la documentation suivante.
 
@@ -26,7 +26,7 @@ Avant de commencer à modéliser le contenu de votre projet, veillez à lire la 
 * [Balisage, sections, blocs et blocage automatique](/help/edge/developer/markup-sections-blocks.md)
 * [Collection de blocs](/help/edge/developer/block-collection.md)
 
-Il est essentiel de comprendre ces concepts afin de trouver un modèle de contenu convaincant qui fonctionne indépendamment des sources de contenu. Ce document fournit des détails sur les mécanismes implémentés spécifiquement pour la création WYSIWYG.
+Il est essentiel de comprendre ces concepts afin de trouver un modèle de contenu convaincant qui fonctionne indépendamment des sources de contenu. Ce document fournit des détails sur les mécanismes impliqués dans la création WYSIWYG.
 
 ## Contenu par défaut {#default-content}
 
@@ -39,17 +39,17 @@ Dans AEM, ce contenu est implémenté sous la forme de composants avec des mod�
 * **Image** : source, description
 * **Bouton** : texte, titre, URL, type (par défaut, principal, secondaire)
 
-Le modèle de ces composants fait partie du [standard pour la création WYSIWYG avec des Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Le modèle de ces composants fait partie du [modèle standard pour la création WYSIWYG avec Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blocs {#blocks}
 
-Les blocs sont utilisés pour créer un contenu plus riche avec des styles et des fonctionnalités spécifiques. Contrairement au contenu par défaut, les blocs nécessitent une sémantique supplémentaire.
+Les blocs sont utilisés pour créer un contenu plus riche avec des styles et des fonctionnalités spécifiques. Contrairement au contenu par défaut, les blocs nécessitent bien une sémantique supplémentaire.
 
 Les blocs sont fondamentalement des éléments de contenu décorés par JavaScript et mis en forme avec une feuille de style.
 
 ### Définition du modèle de bloc {#model-definition}
 
-Lors de l’utilisation de la création WYSIWYG avec des Edge Delivery Services, le contenu des blocs doit être modélisé explicitement afin de fournir à l’auteur l’interface de création de contenu. Pour l’essentiel, vous devez créer un modèle permettant à l’interface utilisateur de création de connaître les options à présenter à l’auteur ou l’autrice en fonction du bloc.
+Lors de l’utilisation de la création WYSIWYG avec Edge Delivery Services, le contenu des blocs doit être explicitement modélisé afin de fournir au créateur ou à la créatrice l’interface pour la création de contenu. Pour l’essentiel, vous devez créer un modèle permettant à l’interface utilisateur de création de connaître les options à présenter à l’auteur ou l’autrice en fonction du bloc.
 
 Le fichier [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) définit le modèle des blocs. Les champs définis dans le modèle de composant sont conservés sous forme de propriétés dans AEM et rendus sous forme de cellules dans le tableau qui constitue un bloc.
 
@@ -326,7 +326,7 @@ Une fois la [mécanique de la structure de bloc expliquée](#block-structure), i
 
 Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [Modèle de David (version 2).](https://www.aem.live/docs/davidsmodel) Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un vaste ensemble de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface utilisateur courants.
 
-Pour la création WYSIWYG avec des Edge Delivery Services, cela soulève la question de savoir comment utiliser un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte comme du texte enrichi.
+Pour la création WYSIWYG avec Edge Delivery Services, cela soulève la question de savoir comment diffuser un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte tel que du texte enrichi.
 
 Pour résoudre ce problème, trois méthodes permettent de créer un modèle de contenu convaincant :
 
@@ -345,7 +345,7 @@ Pour certaines valeurs, la signification sémantique peut être déduite des val
 * **Images** : si une référence à une ressource dans AEM est une ressource avec un type MIME commençant par `image/`, la référence est rendue sous la forme `<picture><img src="${reference}"></picture>`.
 * **Liens** : si une référence existe dans AEM et n’est pas une image, ou si la valeur commence par `https?://` ou `#`, la référence est rendue sous la forme `<a href="${reference}">${reference}</a>`.
 * **Texte enrichi** : si une valeur rognée commence par un paragraphe (`p`, `ul`, `ol`, `h1`-`h6`, etc.), la valeur est rendue sous forme de texte enrichi.
-* **Noms de classe** - La propriété `classes` est traitée comme [options de bloc](/help/edge/developer/markup-sections-blocks.md#block-options) et rendue dans l’en-tête de tableau pour [blocs simples,](#simple) ou comme liste de valeurs pour les éléments d’un bloc de conteneur [.](#container) Il est utile si vous souhaitez [appliquer un style différent à un bloc,](/help/edge/wysiwyg-authoring/create-block.md#block-options) mais n&#39;avez pas besoin de créer un bloc entièrement nouveau.
+* **Noms de classe** : la propriété `classes` est traitée sous forme d’[options de bloc](/help/edge/developer/markup-sections-blocks.md#block-options) et rendue dans l’en-tête du tableau pour des [blocs simples](#simple), ou en tant que liste de valeurs pour les éléments d’un [bloc conteneur.](#container) Elle est utile si vous souhaitez [appliquer un style différent à un bloc,](/help/edge/wysiwyg-authoring/create-block.md#block-options) mais que vous n’avez pas besoin de créer un bloc entièrement nouveau.
 * **Listes de valeurs** : si une valeur est une propriété à plusieurs valeurs et que la première valeur ne correspond à aucune des valeurs précédentes, toutes les valeurs sont concaténées sous la forme d’une liste séparée par des virgules.
 
 Tout le reste est rendu en texte brut.
@@ -608,7 +608,7 @@ Il est également possible de définir des métadonnées de page supplémentaire
 
 Il est possible de définir des métadonnées pour chaque chemin ou pour chaque modèle de chemin de manière similaire à un tableau dans AEM as a Cloud Service. Il existe une interface utilisateur de création pour les données de type tableau, similaire aux feuilles de calcul Excel ou Google.
 
-Pour plus d’informations, consultez le document [Utilisation de feuilles de calcul pour gérer les données tabulaires](/help/edge/wysiwyg-authoring/tabular-data.md) pour plus d’informations.
+Pour plus d’informations, consultez le document [Utilisation de feuilles de calcul pour gérer les données tabulaires](/help/edge/wysiwyg-authoring/tabular-data.md).
 
 ### Propriétés de page {#page-properties}
 
@@ -618,7 +618,7 @@ La plupart des propriétés de page par défaut disponibles dans AEM sont mappé
 * Heure de la dernière publication du document en tant que `published-time` au format ISO8601.
 * `cq:tags` en tant que `cq-tags` comme liste séparée par des virgules des identifiants de balises.
 
-Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui seront mises à la disposition de l’auteur dans l’éditeur universel.
+Il est également possible de définir un modèle de composant pour les métadonnées de page personnalisées, qui sera mis à la disposition de l’auteur ou de l’autrice dans l’éditeur universel.
 
 Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadata`.
 
@@ -637,13 +637,13 @@ Pour ce faire, créez un modèle de composant avec l’identifiant `page-metadat
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous savez comment modéliser du contenu, vous pouvez créer des blocs pour vos propres Edge Delivery Services avec un projet de création WYSIWYG.
+Maintenant que vous savez comment modéliser du contenu, vous pouvez créer des blocs pour votre propre projet de création WYSIWYG avec Edge Delivery Services.
 
-Consultez le document [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) pour savoir comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans la création WYSIWYG avec des projets Edge Delivery Services.
+Consultez le document [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) pour découvrir comment créer des blocs instrumentés pour une utilisation avec l’éditeur universel dans des projets de création WYSIWYG avec Edge Delivery Services.
 
-Si vous connaissez déjà la création de blocs, consultez le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour vous aider à maîtriser un nouveau site Adobe Experience Manager à l’aide de Edge Delivery Services et d’Universal Editor pour la création de contenu.
+Si vous savez déjà comment créer des blocs, consultez le document [Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) pour vous familiariser avec un nouveau site Adobe Experience Manager en utilisant Edge Delivery Services et l’éditeur universel pour la création de contenu.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEM AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services prenant en charge la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

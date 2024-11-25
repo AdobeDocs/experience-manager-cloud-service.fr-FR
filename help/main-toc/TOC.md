@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '5886'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -242,7 +242,7 @@ ht-degree: 96%
       + [Créer des environnements](/help/journey-onboarding/create-environments.md)
       + [Attribuer des profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
-      + [Gestion des entités](/help/journey-migration/managing-principals.md)
+      + [Gestion des principaux](/help/journey-migration/managing-principals.md)
       + [Tâches d’utilisateurs et d’utilisatrices d’AEM](/help/journey-onboarding/aem-users.md)
       + [Liste de contrôle de mise en production](/help/journey-onboarding/go-live-checklist.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
@@ -476,7 +476,7 @@ ht-degree: 96%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Activation d’Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [Utilisateurs collaborateurs d’Assets](/help/assets/assets-collaborator-users.md)
+   + [Utilisateurs collaborateurs et utilisatrices collaboratrices Assets](/help/assets/assets-collaborator-users.md)
    + Gestion des ressources numériques {#manage}
       + Sélecteur de ressources micro front-end {#asset-selector}
          + [Vue d’ensemble du sélecteur de ressources](/help/assets/overview-asset-selector.md)
@@ -622,7 +622,7 @@ ht-degree: 96%
          + [Restreindre la diffusion des ressources](/help/assets/restrict-assets-delivery.md)
          + [Intégrer AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Questions fréquentes](/help/assets/dynamic-media-open-apis-faqs.md)
-         + [Configurer des domaines personnalisés](/help/assets/configure-custom-domain.md)
+         + [Configurer un domaine personnalisé](/help/assets/configure-custom-domain.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
       + [Commencer](/help/assets/get-started-assets-view.md)
@@ -647,7 +647,7 @@ ht-degree: 96%
       + [Extensibilité de l’interface utilisateur de la vue AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Hub de contenus {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
-      + [Déployer le hub de contenus](/help/assets/deploy-content-hub.md)
+      + [Déployer Content Hub](/help/assets/deploy-content-hub.md)
       + [Charger ou importer des ressources approuvées par la marque dans le hub de contenus](/help/assets/upload-brand-approved-assets.md)
       + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
       + [Approuver des ressources pour le hub de contenus](/help/assets/approve-assets-content-hub.md)
@@ -655,8 +655,8 @@ ht-degree: 96%
       + [Propriétés de la ressource](/help/assets/asset-properties-content-hub.md)
       + [Partager des ressources dans le hub de contenus](/help/assets/share-assets-content-hub.md)
       + [Télécharger des ressources à l’aide du hub de contenus](/help/assets/download-assets-content-hub.md)
-      + [Gestion d’Assets sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
-      + [Gérer des collections dans le hub de contenus](/help/assets/collections-content-hub.md)
+      + [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Gérer des collections dans Content Hub](/help/assets/collections-content-hub.md)
       + [Modifier des images à l’aide d’Adobe Express dans le hub de contenus](/help/assets/edit-images-content-hub.md)
       + [Asset Insights dans le hub de contenus](/help/assets/insights-content-hub.md)
       + [Questions fréquentes sur le hub de contenus](/help/assets/frequently-asked-questions-content-hub.md)
@@ -948,7 +948,7 @@ ht-degree: 96%
 + Edge Delivery Services {#edge-delivery}
    + [Vue d’ensemble d’Edge Delivery Services](/help/edge/overview.md)
    + [Utiliser Edge Delivery Services avec AEM](/help/edge/using.md)
-   + [Choisir une méthode de création](/help/edge/authoring-methods.md)
+   + [Choix d’une méthode de création](/help/edge/authoring-methods.md)
    + Création WYSIWYG {#wysiwyg-authoring}
       + [Création de contenu WYSIWYG pour Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Publier du contenu pour Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
@@ -957,7 +957,7 @@ ht-degree: 96%
       + [Modélisation de contenu](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Mappage de chemin](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [Données tabulaires et feuilles de calcul](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [Gérer des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [Blocs WYSIWYG et basés sur des documents](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Pages avec DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
@@ -1043,7 +1043,7 @@ ht-degree: 96%
          + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
       + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
-   + [API AEM pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md)
+   + [API AEM pour la diffusion et la gestion de contenu structuré](/help/headless/apis-headless-and-content-fragments.md)
    + API GraphQL {#graphql-api}
       + [API GraphQL pour les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
       + [Gérer les points d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1054,7 @@ ht-degree: 96%
       + [Mise à niveau des fragments de contenu pour les références UID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [AEM API REST Open pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI REST AEM pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [API OpenAPI de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
@@ -1160,7 +1160,7 @@ ht-degree: 96%
          + [Présentation d’Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Ajouter un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Gérer les sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Gestion de sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Paramètres du domaine {#custom-domain-names}
          + [Présentation des paramètres de domaine](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)

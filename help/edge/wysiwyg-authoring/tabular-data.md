@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Ce document utilise l’exemple des redirections pour illustrer la création de 
 
 Pour créer des mappages à l’aide de feuilles de calcul dans votre projet AEM avec Edge Delivery Services, vous devez avoir créé votre site à l’aide du modèle de site le plus récent.
 
-Pour plus d’informations, consultez le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) .
+Pour plus d’informations, consultez le document [Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Créer une feuille de calcul {#spreadsheet}
 
@@ -150,7 +150,7 @@ Pour qu’AEM puisse publier les données dans votre feuille de calcul, vous dev
 
    >[!NOTE]
    >
-   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès approprié au type [de feuille de calcul que vous créez.](#other)
+   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès approprié vers le [type de feuille de calcul que vous créez.](#other)
 
 1. Cliquez sur **Valider les modifications...** pour enregistrer les modifications apportées à `main`.
 
@@ -174,7 +174,7 @@ La feuille de calcul des redirections est maintenant publiée et accessible au p
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour les Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Autres types de feuilles de calcul {#other}
 
@@ -193,7 +193,7 @@ Pour [Configuration](https://www.aem.live/docs/configuration), [En-têtes](https
 * Configuration : `/.helix/config.json`
 * En-têtes : `/.helix/headers.json`
 * Métadonnées : `/metadata.json`
-* Taxonomie : Pour plus d’informations, consultez le document [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md) .
+* Taxonomie : pour plus d’informations, consultez le document [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md).
 
 En outre, vous pouvez [créer votre propre feuille de calcul](#own-spreadsheet) avec des colonnes arbitraires pour votre propre utilisation.
 
