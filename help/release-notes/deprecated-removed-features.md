@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 93%
+source-wordcount: '2800'
+ht-degree: 90%
 
 ---
 
@@ -505,7 +505,9 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
 
 AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel d’effectuer les ajustements suivants :
 
-### Conditions requises pour la génération :
+### Configuration requise pour l’exécution
+
+Ces réglages sont nécessaires pour garantir la compatibilité avec le runtime Java 21. Les bibliothèques peuvent être mises à jour à tout moment, car elles sont compatibles avec les anciennes versions de Java.
 
 #### Version minimale de org.objectweb.asm {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ Mettez à jour org.apache.groovy vers la version 4.0.22 ou ultérieure pour gara
 
 Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
 
+### Conditions requises pour la création
+
+Ces ajustements sont nécessaires pour permettre la création du projet avec des versions plus récentes de Java, mais pas pour la compatibilité d’exécution. Les modules externes Maven peuvent être mis à jour à tout moment, car ils sont compatibles avec les anciennes versions de Java.
+
 #### Version minimale de bnd-maven-plugin {#bnd-maven-plugin}
 
-Mettez à jour l’utilisation du plug-in bnd-maven-plugin vers la version 6.4.0 ou ultérieure afin de garantir la prise en charge des environnements d’exécution JVM plus récents.
+Mettez à jour l’utilisation du plug-in bnd-maven-plugin vers la version 6.4.0 afin de garantir la prise en charge des environnements d’exécution JVM plus récents. Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version inférieure. Par conséquent, une mise à niveau vers cette version n’est pas recommandée pour l’instant.
 
 #### Version minimale de aemanalytics-maven-plugin {#aemanalyser-maven-plugin}
 
