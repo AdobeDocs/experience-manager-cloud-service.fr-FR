@@ -3,10 +3,10 @@ title: API de diffusion
 description: Découvrez comment utiliser les API de diffusion.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 7%
 
 ---
 
@@ -40,6 +40,11 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 | [Métadonnées de ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Renvoie les propriétés associées à une ressource, telles que le titre, la description, CreateDate, ModifyDate, etc. |
 | [Conteneur du lecteur pour la ressource vidéo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Renvoie le conteneur du lecteur pour la ressource vidéo. Vous pouvez incorporer le lecteur dans un élément d’HTML iframe et lire la vidéo. |
 | [Manifeste de lecture au format de sortie sélectionné](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Renvoie le fichier manifeste de lecture de la ressource vidéo spécifiée dans le format de sortie sélectionné. Vous devez créer un lecteur personnalisé capable de diffuser en continu adaptative via des protocoles HLS ou DASH pour pouvoir extraire le fichier manifeste de lecture et lire la vidéo. |
+
+
+>[!NOTE]
+>
+[Les paramètres d’image prédéfinis, l’imagerie dynamique et d’autres modificateurs d’image ](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) sont disponibles en tant que fonctionnalité de disponibilité limitée. Pour y accéder, [créez et envoyez un cas d’assistance clientèle Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Points de terminaison des API de diffusion {#delivery-apis-endpoint}
 
