@@ -1,18 +1,18 @@
 ---
-title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
+title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Sélecteur de ressources micro front-end {#Overview}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Le sélecteur de ressources micro front-end fournit une interface utilisateur qui s’intègre facilement au référentiel [!DNL Experience Manager Assets] afin que vous puissiez parcourir ou rechercher des ressources numériques disponibles dans le référentiel et les utiliser dans votre expérience de création d’applications.
@@ -23,12 +23,12 @@ L’interface utilisateur micro front-end est mise à disposition dans votre exp
 
 Le sélecteur de ressources offre de nombreux avantages, notamment :
 
-* Facilité d&#39;intégration avec l&#39;une des applications [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) ou [non-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) utilisant la bibliothèque Vanilla JavaScript.
+* Facile à intégrer avec n’importe quelle application [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) ou [autre qu’Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) utilisant la bibliothèque JavaScript Vanilla.
 * Facile à gérer, car les mises à jour du package Sélecteur de ressources sont automatiquement déployées vers le sélecteur de ressources disponible pour votre application. Aucune mise à jour n’est requise dans votre application pour télécharger les dernières modifications.
 * Facile à personnaliser, car il existe des propriétés qui contrôlent l’affichage du sélecteur de ressources dans votre application.
 * Recherche de texte intégral, filtres prêts à l’emploi et filtres personnalisés pour accéder rapidement aux ressources à utiliser dans l’expérience de création.
 * Possibilité de changer de référentiels au sein d’une organisation IMS pour la sélection de ressources.
-* Possibilité de trier les ressources par nom, dimensions et taille, et de les afficher en mode Liste, Grille, Galerie ou Cascade.
+* Possibilité de trier les ressources par nom, dimension et taille, et de les afficher en mode Liste, Grille, Galerie ou Cascade.
 
 <!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
@@ -45,31 +45,31 @@ Le sélecteur de ressources offre de nombreux avantages, notamment :
 
 ## Conditions préalables{#prereqs}
 
-Vous devez vous assurer que les méthodes de communication suivantes sont disponibles :
+Vous devez vous assurer que les méthodes de communication suivantes sont disponibles :
 
 * L’application s’exécute sur HTTPS.
 * L’URL de l’application se trouve dans la liste autorisée d’URL de redirection du client IMS.
 * Le flux de connexion IMS est configuré et rendu à l’aide d’une fenêtre contextuelle sur le navigateur web. Par conséquent, les fenêtres contextuelles doivent être activées ou autorisées sur le navigateur cible.
 
-Utilisez les conditions préalables ci-dessus si vous avez besoin du workflow d’authentification IMS du sélecteur de ressources. Si vous êtes déjà authentifié avec le workflow IMS, vous pouvez également ajouter les informations IMS à la place.
+Utilisez les conditions préalables ci-dessus si vous avez besoin du workflow d’authentification IMS du sélecteur de ressources. Si votre authentification est déjà effective avec le workflow IMS, vous pouvez également ajouter les informations IMS à la place.
 
 **Voir plus**
 
-* [Intégration du sélecteur de ressources à une application d’Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Intégration du sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Intégration des API d’ouverture de Dynamic Media Sélecteur de ressources](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Intégrer le sélecteur de ressources à une application Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Intégrer le sélecteur de ressources à une application autre qu’Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Intégrer des API ouvertes Dynamic Media du sélecteur de ressources](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
 >
-> Ce référentiel est destiné à servir de documentation supplémentaire décrivant les API disponibles et les exemples d’utilisation pour l’intégration du sélecteur de ressources. Avant d’essayer d’installer ou d’utiliser le sélecteur de ressources, assurez-vous que votre organisation a reçu l’accès au sélecteur de ressources dans le cadre du profil as a Cloud Service Experience Manager Assets. Si vous n’avez pas reçu les privilèges d’accès, vous ne pouvez pas intégrer ni utiliser ces composants. Pour demander la mise en service, l’administrateur de votre programme doit envoyer à l’Admin Console un ticket d’assistance portant la mention P2 et inclure les informations suivantes :
+> Ce référentiel est destiné à servir de documentation supplémentaire décrivant les API disponibles et les exemples d’utilisation pour l’intégration du sélecteur de ressources. Avant d’essayer d’installer ou d’utiliser le sélecteur de ressources, assurez-vous que votre organisation a reçu l’accès au sélecteur de ressources dans le cadre du profil Experience Manager Assets as a Cloud Service. Si vous n’avez pas reçu les privilèges d’accès, vous ne pouvez pas intégrer ni utiliser ces composants. Pour demander l’approvisionnement, l’administrateur ou l’administratrice de votre programme doit envoyer à Admin Console un ticket d’assistance portant la mention P2 et inclure les informations suivantes :
 >
 >* Noms de domaine dans lesquels l’application d’intégration est hébergée.
->* Après la mise en service, votre organisation reçoit `imsClientId`, `imsScope` et un `redirectUrl` correspondant aux environnements demandés qui sont essentiels à la configuration du sélecteur de ressources. Sans ces propriétés valides, vous ne pouvez pas exécuter les étapes d’installation.
+>* Après l’approvisionnement, votre organisation reçoit `imsClientId`, `imsScope` et une `redirectUrl` correspondant aux environnements demandés qui sont essentiels à la configuration du sélecteur de ressources. Sans ces propriétés valides, vous ne pouvez pas exécuter les étapes d’installation.
 
 ## Installation {#installation}
 
-Le sélecteur de ressources est disponible via le réseau de diffusion de contenu ESM (par exemple, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) et la version [UMD](https://github.com/umdjs/umd).
+Les sélecteurs de destination sont disponibles via le réseau CDN ESM (par exemple, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) et la version [UMD](https://github.com/umdjs/umd).
 
 Dans les navigateurs utilisant la **version UMD** (recommandé) :
 
@@ -112,11 +112,11 @@ Une fois que le sélecteur de ressources est configuré et que vous êtes authen
 
 ### Masquer/Afficher le panneau {#hide-show-panel}
 
-Pour masquer les dossiers dans le volet de navigation de gauche, cliquez sur l’icône **[!UICONTROL Masquer les dossiers]** . Pour annuler les modifications, cliquez à nouveau sur l’icône **[!UICONTROL Masquer les dossiers]**.
+Pour masquer les dossiers dans le volet de navigation de gauche, cliquez sur l’icône **[!UICONTROL Masquer les dossiers]**. Pour annuler les modifications, cliquez à nouveau sur l’icône **[!UICONTROL Masquer les dossiers]**.
 
 ### Sélecteur de référentiels {#repository-switcher}
 
-Le sélecteur de ressources vous permet également de basculer entre des référentiels pour la sélection de ressources. Vous pouvez sélectionner le référentiel de votre choix dans la liste déroulante disponible dans le panneau de gauche. Les options de référentiel disponibles dans la liste déroulante reposent sur la propriété `repositoryId` définie dans le fichier `index.html`. Il est basé sur l’environnement de l’organisation IMS sélectionnée accessible par l’utilisateur connecté. Les clientes et clients peuvent transmettre une préférence `repositoryID` et, dans ce cas, le sélecteur de ressources arrête le rendu du sélecteur de référentiels et effectue uniquement le rendu des ressources à partir du référentiel donné.
+Le sélecteur de ressources vous permet également de passer d’un référentiel à l’autre lors de la sélection de ressources. Vous pouvez sélectionner le référentiel de votre choix dans la liste déroulante disponible dans le panneau de gauche. Les options de référentiel disponibles dans la liste déroulante reposent sur la propriété `repositoryId` définie dans le fichier `index.html`. Cela dépend des environnements de l’organisation IMS sélectionnée à laquelle accède l’utilisateur ou l’utilisatrice connectés. Les clientes et clients peuvent transmettre une préférence `repositoryID` et, dans ce cas, le sélecteur de ressources arrête le rendu du sélecteur de référentiels et effectue uniquement le rendu des ressources à partir du référentiel donné.
 
 ### Référentiel de ressources
 
@@ -126,22 +126,22 @@ Il s’agit d’une collection de dossiers de ressources que vous pouvez utilise
 
 Le sélecteur de ressources fournit également des options de filtres prêts à l’emploi pour affiner vos résultats de recherche. Les filtres suivants sont disponibles :
 
-* **[!UICONTROL Status] :** inclut l’état actuel de la ressource parmi `all`, `approved`, `rejected` ou `no status`.
-* **[!UICONTROL Type de fichier] :** comprend `folder`, `file`, `images`, `documents` ou `video`.
-* **[!UICONTROL État d’expiration] :** mentionne les ressources en fonction de leur durée d’expiration. Vous pouvez cocher la case `[!UICONTROL Expired]` pour filtrer les ressources expirées ou définir `[!UICONTROL Expiration Duration]` d’une ressource pour afficher les ressources en fonction de leur durée d’expiration. Lorsqu’une ressource arrive déjà à expiration ou est sur le point d’expirer, un badge semble représenter la même chose. De plus, vous pouvez contrôler si vous souhaitez autoriser l’utilisation (ou le glisser-déposer) d’une ressource expirée. Pour en savoir plus sur la [personnalisation des ressources expirées](/help/assets/asset-selector-customization.md#customize-expired-assets). Par défaut, le badge **Expiration prochaine** s’affiche pour les ressources qui expirent dans les 30 prochains jours. Cependant, vous pouvez configurer l’expiration à l’aide de la propriété `expirationDate` .
+* **[!UICONTROL Statut] :** inclut le statut actuel de la ressource parmi `all`, `approved`, `rejected` ou `no status`.
+* **[!UICONTROL Type de fichier] :** comprend `folder`, `file`, `images`, `documents` ou `video`.
+* **[!UICONTROL Statut d’expiration] :** mentionne les ressources en fonction de leur durée d’expiration. Vous pouvez cocher la case `[!UICONTROL Expired]` pour filtrer les ressources expirées ou définir la `[!UICONTROL Expiration Duration]` d’une ressource pour afficher les ressources en fonction de leur durée d’expiration. Lorsqu’une ressource a expiré ou est sur le point d’expirer, un badge s’affiche pour vous informer. De plus, vous pouvez contrôler si vous souhaitez autoriser l’utilisation (ou le glisser-déposer) d’une ressource expirée. Pour en savoir plus sur la [personnalisation des ressources expirées](/help/assets/asset-selector-customization.md#customize-expired-assets). Par défaut, le badge **Va bientôt expirer** s’affiche pour les ressources qui expirent dans les 30 prochains jours. Cependant, vous pouvez configurer l’expiration à l’aide de la propriété `expirationDate`.
 
   >[!TIP]
   >
-  > Si vous souhaitez afficher ou filtrer les ressources en fonction de leur date d’expiration future, mentionnez la période future dans le champ `[!UICONTROL Expiration Duration]`. Il affiche les ressources dont le badge **expirant bientôt** leur est associé.
+  > Si vous souhaitez afficher ou filtrer les ressources en fonction de leur date d’expiration, mentionnez la période dans le champ `[!UICONTROL Expiration Duration]`. Il affiche les ressources qui comportent le badge **Va bientôt expirer**.
 
-* **[!UICONTROL Type MIME] :** comprend `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
-* **[!UICONTROL Taille de l’image] :** comprend une largeur minimale/maximale, une hauteur minimale/maximale de l’image.
+* **[!UICONTROL Type MIME] :** comprend `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
+* **[!UICONTROL Taille de l’image] :** inclut la largeur minimale et maximale, et la hauteur minimale et maximale de l’image.
 
   ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Recherche personnalisée
 
-Outre la recherche de texte intégral, le sélecteur de ressources vous permet de rechercher des ressources dans des fichiers à l’aide d’une recherche personnalisée. Vous pouvez utiliser des filtres de recherche personnalisés en modes Modal et Rail.
+Outre la recherche en texte intégral, le sélecteur de ressources vous permet de rechercher des ressources dans des fichiers à l’aide d’une recherche personnalisée. Vous pouvez utiliser des filtres de recherche personnalisés en modes Modal et Rail.
 
 ![custom-search](assets/custom-search1.png)
 
@@ -149,7 +149,7 @@ Vous pouvez également créer un filtre de recherche par défaut pour enregistre
 
 ### Barre de recherche {#search-bar}
 
-Le sélecteur de ressources vous permet d’effectuer une recherche de texte intégral des ressources dans le référentiel sélectionné. Par exemple, si vous saisissez le mot-clé `wave` dans la barre de recherche, toutes les ressources qui contiennent le mot-clé `wave` dans l’une des propriétés de métadonnées s’affichent.
+Le sélecteur de ressources vous permet d’effectuer une recherche en texte intégral des ressources dans le référentiel sélectionné. Par exemple, si vous saisissez le mot-clé `wave` dans la barre de recherche, toutes les ressources qui contiennent le mot-clé `wave` dans l’une des propriétés de métadonnées s’affichent.
 
 ### Tri {#sorting}
 
@@ -157,14 +157,14 @@ Vous pouvez trier les ressources du sélecteur de ressources selon le nom, les d
 
 ### Types de vues {#types-of-view}
 
-Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vues différentes :
+Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vues différentes :
 
-* **![Mode Liste](assets/do-not-localize/list-view.png) ** Le mode Liste affiche les fichiers et dossiers défilables dans une seule colonne.
-* **![vue de grille](assets/do-not-localize/grid-view.png) [!UICONTROL Affichage de grille]** La vue de grille affiche les fichiers et dossiers défilants dans une grille de lignes et de colonnes.
-* **![vue de la galerie](assets/do-not-localize/gallery-view.png) ** La vue de la galerie affiche les fichiers ou les dossiers dans une liste horizontale verrouillée au centre.
-* **![Vue de la cascade](assets/do-not-localize/waterfall-view.png) ** La vue de la cascade affiche des fichiers ou des dossiers sous la forme d’un Bridge.
+* **![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL Vue Liste]** : la vue Liste affiche les fichiers et dossiers à faire défiler dans une seule colonne.
+* **![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL Vue Grille]** : la vue Grille affiche les fichiers et dossiers à faire défiler dans une grille de lignes et de colonnes.
+* **![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL Vue Galerie]** : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale verrouillée au milieu.
+* **![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue Cascade]** : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
 
-**Graphique d’aperçu**
+**Graphique de vue d’ensemble**
 
 
 ## En savoir plus sur les principales fonctionnalités {#key-capabilities-asset-selector}
@@ -172,66 +172,66 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
 <table>
 <tr>
     <td>
-        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Graphique du sélecteur de ressources Integrate"><br/>
-        <a href="integrate-asset-selector.md">Intégrer le sélecteur de ressources</a>
+        <img src="assets/integrate-asset-selector.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources – Graphique"><br/>
+ <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources</a>
         <p>
-        <em> Découvrez les différentes fonctionnalités permettant d’intégrer le sélecteur de ressources à plusieurs applications.
+        <em>Découvrez les différentes fonctionnalités permettant d’intégrer le sélecteur de ressources à plusieurs applications.
         </p>
      </td>
     <td>
-        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Intégrer le sélecteur de ressources au graphique des applications d’Adobe"><br/>
-        <a href="integrate-asset-selector.md">Intégrer le sélecteur de ressources avec les applications d’Adobe</a>
+        <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources à des applications d’Adobe – Graphique"><br/>
+ <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources à des applications Adobe</a>
         <p>
-        <em>Découvrez comment intégrer le sélecteur de ressources à diverses applications d’Adobe.</em>
+        <em>Découvrez comment intégrer le sélecteur de ressources à diverses applications Adobe.</em>
         </p>
     </td>
     <td>
-        <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Graphique du sélecteur de ressources Integrate"><br/>
-        <a href="integrate-asset-selector.md">Intégrer le sélecteur de ressources à des applications tierces</a>
+        <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources – Graphique"><br/>
+ <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources à des applications tierces</a>
         <p>
-        <em>Développez les fonctionnalités permettant d’intégrer le sélecteur de ressources à des applications non Adobes.</em>
+        <em>Augmentez les possibilités permettant d’intégrer le sélecteur de ressources à des applications autres qu’Adobe.</em>
         </p>
     </td>
     <td>
-        <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Graphique du sélecteur de ressources Integrate"><br/>
-        <a href="integrate-asset-selector.md"> Intégration du sélecteur de ressources aux API Dynamic Media Open </a>
+        <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources – Graphique"><br/>
+ <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources aux API Dynamic Media OpenAPI</a>
         <p>
-        <em>Comprendre comment intégrer le sélecteur de ressources aux API Dynamic Media Open.</em>
+        <em>Découvrez comment intégrer le sélecteur de ressources aux API Dynamic Media OpenAPI.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Graphique des propriétés du sélecteur de ressources"><br/>
-        <a href="asset-selector-customization.md"> Propriétés du sélecteur de ressources</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Propriétés du sélecteur de ressources – Graphique"><br/>
+        <a href="asset-selector-customization.md">Propriétés du sélecteur de ressources</a>
         <p>
-        <em>Découvrez les principes de base de la personnalisation de divers composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
+        <em>Découvrez les principes de base de la personnalisation de composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemple graphique d’exemples de sélecteur de ressources"><br/>
-        <a href="asset-selector-customization.md"> Exemples de sélecteur de ressources</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemples du sélecteur de ressources – Graphique"><br/>
+ <a href="asset-selector-customization.md">Exemples du sélecteur de ressources</a>
         <p>
-        <em>Comprendre l’utilisation des propriétés d’une manière pratique. </em>
+        <em>Utilisez les propriétés de manière pratique. </em>
         </p>
     </td>
     <td>
-        <img src="assets/customize-asset-selector.gif" width="70px" height="70px" alt="Graphique Personnaliser le sélecteur de ressources"><br/>
-        <a href="asset-selector-customization.md"> Personnalisations du sélecteur de ressources</a>
+        <img src="assets/customize-asset-selector.gif" width="70px" height="70px" alt="Personnalisation du sélecteur de ressources – Graphique"><br/>
+ <a href="asset-selector-customization.md">Personnalisation du sélecteur de ressources</a>
         <p>
-        <em>Configurez et personnalisez divers composants du sélecteur de ressources en fonction de votre convivialité. </em>
+        <em>Configurez et personnalisez des composants du sélecteur de ressources en fonction de votre usage. </em>
         </p>
     </td>
     <td>
-        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Graphique de chargement du sélecteur de ressources"><br/>
-        <a href="asset-selector-upload.md"> Chargement du sélecteur de ressources</a>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Chargement dans le sélecteur de ressources – Graphique"><br/>
+ <a href="asset-selector-upload.md">Chargement dans le sélecteur de ressources</a>
         <p>
-        <em>Découvrez comment télécharger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local ou tiers. </em>
+        <em>Découvrez comment charger des fichiers ou des dossiers dans le sélecteur de ressources à partir de votre système de fichiers local ou tiers. </em>
         </p>
     </td>
      <td>
-        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Graphique des collections du sélecteur de ressources"><br/>
-        <a href="asset-selector-collections.md"> Collections de sélecteurs de ressources</a>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Collections du sélecteur de ressources – Graphique"><br/>
+ <a href="asset-selector-collections.md">Collections du sélecteur de ressources</a>
         <p>
         <em>Découvrez comment utiliser des collections dans le sélecteur de ressources à l’aide du référentiel Experience Manager. </em>
         </p>
@@ -243,7 +243,7 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
 
 >[!MORELIKETHIS]
 >
->* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
->* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
+>* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Intégration du sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Intégrer le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Intégration du sélecteur de ressources à Dynamic Media avec fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

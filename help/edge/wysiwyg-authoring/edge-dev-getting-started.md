@@ -1,20 +1,20 @@
 ---
-title: Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services
-description: Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide de Edge Delivery Services et d’Universal Editor pour la création de contenu WYSIWYG.
+title: Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services
+description: Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager avec Edge Delivery Services et l’éditeur universel pour la création de contenu WYSIWYG.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
 source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1223'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services {#edge-dev-getting-started}
+# Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services {#edge-dev-getting-started}
 
-Ce guide vous aidera à maîtriser l’exécution d’un nouveau site Adobe Experience Manager à l’aide de Edge Delivery Services et d’Universal Editor pour la création de contenu WYSIWYG.
+Ce guide vous permet de maîtriser l’exécution d’un nouveau site Adobe Experience Manager avec Edge Delivery Services et l’éditeur universel pour la création de contenu WYSIWYG.
 
 ## Conditions préalables {#prerequisites}
 
@@ -50,7 +50,7 @@ Les sites web sont automatiquement créés pour chacune de vos branches, de l’
 >
 >Consultez la [section Créer](/help/edge/developer/block-collection.md) de la documentation Edge Delivery Services pour plus d’informations sur les blocs et sur la manière de développer pour Edge Delivery Services.
 
-## Prise en main de la création et des Edge Delivery Services WYSIWYG {#getting-started}
+## Prise en main de la création WYSIWYG et de Edge Delivery Services {#getting-started}
 
 Lorsque vous remplissez [les conditions préalables](#prerequisites) et [avez choisi d’utiliser l’éditeur universel,](#editor-choice) vous pouvez commencer votre propre projet.
 
@@ -116,7 +116,7 @@ Vous devez d’abord créer un projet sur GitHub, basé sur le modèle Adobe.
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour les Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Créer et modifier un nouveau site AEM {#create-aem-site}
 
@@ -126,7 +126,7 @@ Maintenant que vous disposez d’un projet GitHub, vous devez créer un site AE
 >
 >Pour modifier votre site à l’aide de l’éditeur universel, vous devez utiliser un navigateur basé sur Chromium.
 
-1. Téléchargez la dernière création WYSIWYG avec le modèle de site Edge Delivery Services depuis GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Téléchargez le dernier modèle du créateur de contenu WYSIWYG avec Edge Delivery Services sur GitHub à l’adresse [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service et accédez à la console Sites, puis appuyez ou cliquez sur **Créer** -> **Site à partir du modèle**.
 
@@ -136,7 +136,7 @@ Maintenant que vous disposez d’un projet GitHub, vous devez créer un site AE
 
    ![Import des modèles](assets/edge-dev-getting-started/site-templates.png)
 
-1. Téléchargez la création WYSIWYG avec le modèle de site Edge Delivery Services que vous avez téléchargé à partir de GitHub.
+1. Chargez le créateur de contenu WYSIWYG avec Edge Delivery Services que vous venez de télécharger à partir de GitHub.
 
    * Le modèle ne doit être chargé qu’une seule fois. Une fois chargé, il peut être réutilisé pour créer d’autres sites.
 
@@ -188,10 +188,10 @@ Lorsque vous avez terminé de modifier votre nouveau site à l’aide de l’éd
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous disposez d’un projet WYSIWYG de création avec Edge Delivery Services, vous pouvez commencer à créer et à mettre en forme vos propres blocs.
+Maintenant que vous disposez d’un créateur de contenu WYSIWYG qui fonctionne avec un projet Edge Delivery Services, vous pouvez commencer à créer vos propres blocs et à leur appliquer des styles.
 
 Consultez le guide [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) pour plus d’informations.
 
 >[!TIP]
 >
->Pour une présentation exhaustive de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service en tant que source de contenu, consultez [ce webinaire GEM AEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Pour une présentation exhaustive de la création d’un projet Edge Delivery Services adapté au créateur de contenu WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
