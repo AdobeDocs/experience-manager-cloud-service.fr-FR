@@ -4,9 +4,9 @@ description: Découvrez comment créer des blocs instrumentés à utiliser avec 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 97%
 
 ---
@@ -328,8 +328,6 @@ En ajoutant une propriété `classes` au bloc, la propriété est rendue dans l�
 Dans ce guide, vous avez validé vos modifications directement dans la branche `main` pour des raisons de simplicité. Dans le cadre d’une expérimentation dans un référentiel d’exemple, ce n’est généralement pas un problème. Dans le cadre d’un travail dans un projet réel, [vous devez suivre les bonnes pratiques en matière de développement](https://www.aem.live/docs/dev-collab-and-good-practices) en effectuant le développement dans une autre branche et en vérifiant toutes les modifications via une demande d’extraction avant de fusionner vers `main`.
 
 Lorsque vous ne développez pas dans la branche `main`, vous pouvez ajouter `?ref=<branch>` dans la barre d’emplacement de l’éditeur universel pour charger la page à partir de votre branche. `<branch>` est le nom de la branche tel qu’il serait utilisé pour la prévisualisation de votre projet ou pour les URL actives, par exemple `https://<branch>--<repo>--<owner>.hlx.page`.
-
-La publication de contenu avec un nouveau modèle n’est prise en charge que lorsque le modèle est fusionné avec la branche `main`.
 
 ## Réutilisation de blocs pour la création basée sur des documents {#reusing-blocks}
 
