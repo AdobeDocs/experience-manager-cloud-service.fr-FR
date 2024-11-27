@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 84%
+source-wordcount: '1318'
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 84%
 | AEM as a Cloud Service | Cet article |
 
 
-Vous pouvez utiliser les composants **Signature tactile** et **Étape de signature** pour tracer la signature (saisie tactile) sur un formulaire adaptatif. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Pour utiliser le composant Étape de signature, l’option Document d’enregistrement doit être activée ou vous devez disposer de formulaires adaptatifs basés sur un modèle de formulaire.
+Vous pouvez utiliser le composant **Scribble Signature** pour dessiner la signature (Griffonnage) sur un formulaire adaptatif. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![Boîte de dialogue de signature tactile](assets/scribble-signature.png)
 
@@ -55,50 +55,89 @@ Vous pouvez sélectionner l’icône **Configurer** ![Configurer l’icône](ass
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](creating-adaptive-form.md).
+1. Ouvrez un formulaire adaptatif en mode d’édition.
 1. Faites glisser le composant **Signature tactile** depuis le navigateur de composant et déposez-le dans le formulaire adaptatif.
-1. Sélectionnez l’icône **Configurer** ![configurer](assets/configure.png). Vous ouvrez ainsi le navigateur de propriétés qui affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
-1. Faites glisser le composant Étape de signature depuis le navigateur de composant et déposez-le dans le formulaire adaptatif.
+1. Sélectionnez l’icône **Configurer** ![configurer](assets/configure.png). Vous ouvrez ainsi le navigateur de propriétés qui affiche les propriétés du composant Signature tactile. [Configurez les propriétés de la signature tactile](#properties-of-scribble-signature-component) comme expliqué dans la section suivante.
 
-   >[!NOTE]
-   >
-   >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature. 
+   ![Signature tactile](/help/forms/assets/scribblesig.png)
 
-1. Dans le navigateur de contenu, sélectionnez **Form Container**, puis l’icône **Configurer** ![ ](assets/configure.png) . L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign**. Sélectionnez l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
+1. Sélectionnez l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
 
-   >[!NOTE]
-   >
-   >Lorsque vous ajoutez un composant Étape de signature à un formulaire adaptatif, l’option Activer Adobe Sign est sélectionnée automatiquement.
+## Configuration des propriétés du composant Signature tactile
 
-1. Sélectionnez l’icône **Configurer**![Configurer](assets/configure.png). Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+Vous pouvez facilement personnaliser votre composant Signature tactile pour les visiteurs qui utilisent la boîte de dialogue Configurer .
 
-   * **Nom de l’élément** : spécifiez le nom du composant.
+### Onglet De base
 
-   * **Titre :** indiquez le titre unique du composant.
-   * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Adobe Sign mettent un certain temps à préparer et charger la signature PDF.
-   * **Service de signature :** sélectionnez l’option **Signature tactile**.
+![Onglet De base](/help/forms/assets/scribblesig-basic.png)
 
-   * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Adobe recommande d’utiliser [themes](themes.md) et [styles intégrés](inline-style-adaptive-forms.md) au lieu de la classe CSS.
+* **Nom** - Vous pouvez identifier facilement un composant de formulaire en lui attribuant un nom unique dans le formulaire et dans l’éditeur de règles, mais le nom ne doit pas contenir d’espaces ni de caractères spéciaux.
 
-   Sélectionnez l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications. La signature est correctement configurée.
+* **Titre** - Avec son titre, vous pouvez facilement identifier un composant dans un formulaire. Par défaut, le titre s’affiche au-dessus du composant. Si vous n’ajoutez pas de titre, le nom du composant s’affiche à la place du texte du titre.
 
-   Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
+* **Autoriser le texte enrichi pour le titre** - Cette fonctionnalité permet aux personnes de mettre en forme les titres en texte brut en y incorporant des fonctionnalités telles que le texte en gras, en italique et souligné, diverses polices, tailles de police et couleurs, et d’autres options pour améliorer la présentation visuelle et la personnalisation. Elle offre une plus grande flexibilité et un contrôle créatif pour faire ressortir les titres dans les documents, sites web ou applications.\
+  Lorsque vous cochez la case **Autoriser le texte enrichi pour le titre**, les options de formatage deviennent visibles pour appliquer un style au titre du composant. Pour accéder à toutes les options de formatage disponibles, vous pouvez cliquer sur l’onglet ![Fullscreen icon](/help/forms/assets/fullscreen-icon.png).
 
-## Signature d’un formulaire adaptatif en utilisant la signature tactile {#sign-an-adaptive-form-using-scribble-signature}
+  ![Prise en charge de texte enrichi](/help/forms/assets/richtext-support-title.png)
 
-1. Une fois que vous avez renseigné le Formulaire adaptatif et que vous avez atteint la page Étape de signature, l’écran de signature s’affiche.
+* **Masquer le titre** - Sélectionnez cette option pour masquer le titre du composant.
+* **Champ obligatoire** - Sélectionnez l’option pour rendre le champ obligatoire.
+* **Message de champ obligatoire** - Le **Message de champ obligatoire** est un message personnalisable affiché pour les utilisateurs lorsqu’ils tentent d’envoyer un formulaire sans remplir un champ obligatoire.
+* **Référence de liaison de modèle de données** - Une référence de liaison est une référence à un élément de données stocké dans une source de données externe et utilisé dans un formulaire. La référence de liaison vous permet de lier dynamiquement les données aux champs du formulaire, de sorte que le formulaire puisse afficher les données les plus récentes de la source de données. Par exemple, une référence de liaison peut être utilisée pour afficher le nom et l’adresse d’un client ou d’une cliente dans un formulaire, en fonction de l’identifiant du client ou de la cliente saisi dans le formulaire. La référence de liaison peut également être utilisée pour mettre à jour la source de données avec les données saisies dans le formulaire. Ainsi, AEM Forms vous permet de créer des formulaires qui interagissent avec des sources de données externes, offrant ainsi une expérience utilisateur fluide pour la collecte et la gestion des données.
+* **Masquer l’objet** - Sélectionnez l’option pour masquer le composant du formulaire. Le composant reste accessible à d’autres fins, par exemple pour les calculs dans l’éditeur de règles. Cela s’avère utile lorsque vous devez stocker des informations qui n’ont pas besoin d’être affichées ou directement modifiées par les utilisateurs ou les utilisatrices.
+* **Désactiver l’objet** - Sélectionnez l’option pour désactiver le composant. Le composant désactivé n’est pas actif ni modifiable par l’utilisateur final ou l’utilisatrice finale. L’utilisateur ou l’utilisatrice peut voir la valeur du champ mais ne peut pas la modifier. Le composant reste accessible à d’autres fins, par exemple pour les calculs dans l’éditeur de règles.
+* **Format** - Le format d’un composant Signature tactile définit la relation proportionnelle entre sa largeur et sa hauteur.
+* **Disposition du champ** - L’option **Disposition du champ** détermine la manière dont les éléments du formulaire, y compris les libellés (légendes) et les messages d’erreur, sont positionnés par rapport au composant. La **légende et erreur en tant que haut du widget** positionne la légende (libellé) du champ et les messages d’erreur au-dessus du composant. **Hériter de la configuration de formulaire adaptatif** utilise les paramètres de disposition de champ par défaut spécifiés dans la configuration de formulaire adaptatif.
+* **Classe CSS** - La **classe CSS** vous permet d’appliquer des styles personnalisés à un composant en affectant une ou plusieurs classes CSS définies dans votre feuille de style. Il permet un style et une personnalisation cohérents de la mise en page dans votre formulaire adaptatif.
 
-   ![Écran de signature de la page EchoSign](assets/esignscribblesign.jpg)
+### Contenu de l&#39;aide
 
-1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Signez le formulaire et cliquez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer la signature.
+![Onglet Contenu d’aide](/help/forms/assets/scribblesig-help.png)
 
-   ![Boîte de dialogue de signature tactile](assets/scribblewidget.png)
+* **Description courte** : Une description courte est une brève explication textuelle qui fournit des informations supplémentaires ou une clarification sur l’objectif d’un champ de formulaire spécifique. Il permet à l’utilisateur ou l’utilisatrice de comprendre le type de données à saisir dans le champ et peut fournir des conseils ou des exemples pour s’assurer que les informations saisies sont valides et répondent aux critères souhaités. Par défaut, les descriptions courtes restent masquées. Activez l’option **Toujours afficher une description courte** pour l’afficher sous le composant.
 
-1. Cliquez sur Terminer pour terminer le processus de signature.
+* **Toujours afficher une description courte** - Activez cette option pour afficher la description courte sous le composant.
 
-   ![Terminer le processus de signature](assets/scribblecomplete.jpg)
+* **Description longue** - Il fait référence à des informations ou des conseils supplémentaires fournis à l’utilisateur pour l’aider à remplir correctement un champ de formulaire. Il s’affiche lorsque l’utilisateur ou l’utilisatrice clique sur l’icône d’aide (i) placée à côté du composant. Il fournit des informations plus détaillées que le libellé ou le texte d’espace réservé d’un champ de formulaire. Il est conçu pour aider l’utilisateur à comprendre les exigences ou les contraintes du champ. Il peut également proposer des suggestions ou des exemples pour faciliter le remplissage du formulaire et le rendre plus précis.
 
-Les signatures sont ajoutées au formulaire, et le contrôle de formulaire passe au panneau suivant.
+### Onglet Accessibilité {#accessibility}
+
+![Onglet Accessibilité](/help/forms/assets/scribblesig-acc.png)
+
+Dans l’onglet **Accessibilité**, les valeurs peuvent être définies pour les libellés d’[accessibilité ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) du composant. Plusieurs options sont disponibles pour l’utilisation du texte pour le lecteur d’écran :
+
+* **Précédence du Reader d’écran** - La priorité du Reader d’écran fait référence à du texte supplémentaire qui est spécifiquement destiné à être lu par les technologies d’assistance, telles que les lecteurs d’écran, utilisés par les malvoyants. Ce texte fournit une description audio de l’objectif du champ de formulaire et peut inclure des informations sur le titre, la description, le nom du champ et tout message pertinent (texte personnalisé). Le texte du lecteur d’écran permet de s’assurer que le formulaire est accessible à tous les utilisateurs et utilisatrices, y compris celles et ceux ayant une déficience visuelle, et leur permet de bien comprendre le champ du formulaire et ses exigences.
+
+   * **Texte personnalisé** : sélectionnez cette option pour utiliser le texte personnalisé pour les libellés d’accessibilité ARIA. Cette option affiche la boîte de dialogue Texte personnalisé. Vous pouvez ajouter des informations pertinentes dans la boîte de dialogue Texte personnalisé.
+   * **Description courte** : sélectionnez cette option pour utiliser la description des étiquettes d’accessibilité ARIA.
+   * **Titre** : sélectionnez cette option pour utiliser le titre pour les libellés d’accessibilité ARIA.
+   * **Nom** : sélectionnez cette option pour utiliser le nom pour les libellés d’accessibilité ARIA.
+   * **Aucun** : sélectionnez cette option si vous ne souhaitez pas l’ajouter pour les libellés d’accessibilité ARIA.
+
+<!--
+
+ * **Element Name**: Specify name of the component.
+
+    * **Title:** Specify unique title of the component.
+    * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
+    * **Signing Service:** Select the **Scribble Signature** option.
+
+    * **CSS Class**: Specify CSS class of the client library, if any. Adobe recommends using [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
+## Sign an Adaptive Form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
+
+1. After you fill an Adaptive Form and reach the Signature Step page, the signature screen is displayed.
+
+   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
+
+   ![Scribble sign dialog](assets/scribblewidget.png)
+
+1. Click complete to finish the signing process.
+
+   ![Complete the signing process](assets/scribblecomplete.jpg)
+
+The signatures are added to the form and the form control moves to the next panel. -->
 
 ## Voir également {#see-also}
 
