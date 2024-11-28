@@ -4,9 +4,9 @@ description: Découvrez la fonctionnalité d’extensibilité de l’interface u
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Dans la vue Assets, accédez à la page Détails d’une ressource, d’un dossi
 ## Conditions préalables pour l’ajout du composant Extensibilité
 
 * [Accès à la vue Assets](#1).
-* Accès au [créateur d’applications Adobe](https://developer.adobe.com/app-builder/docs/overview/), qui est inclus par défaut dans l’ [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+* Accès au [créateur d’applications d’Adobe](https://developer.adobe.com/app-builder/docs/overview/).
 * Autorisé à être développeur du rôle Administrateur système au sein de l’organisation. Voir [this](https://developer.adobe.com/uix/docs/guides/get-access/) pour plus d’informations.
 * L’outil de ligne de commande Adobe IO (AIO CLI) doit être installé sur vos ordinateurs locaux. Cet outil est essentiel pour la création et le déploiement de projets d’extension. Voir [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) pour plus d’informations.
 * Bonne compréhension des technologies JavaScript, Node.js et React.
