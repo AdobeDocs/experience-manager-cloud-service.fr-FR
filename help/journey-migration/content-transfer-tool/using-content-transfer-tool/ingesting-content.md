@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 38%
+source-wordcount: '3296'
+ht-degree: 37%
 
 ---
 
@@ -169,6 +169,17 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Échec de l’ingestion en raison d’un environnement cloud non prêt {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="Environnement cloud non prêt"
+>abstract="Dans de rares cas, l’environnement cloud cible peut rencontrer des problèmes inattendus, ce qui entraîne l’échec de l’ingestion."
+
+Dans de rares cas, l’environnement du Cloud Service cible de l’ingestion peut rencontrer des problèmes inattendus. Par conséquent, l’ingestion échoue, car l’environnement n’est pas à l’état prêt attendu. Consultez le journal d’ingestion pour afficher plus de détails sur l’état d’erreur rencontré.
+
+Assurez-vous que l’environnement de création est disponible et attendez quelques minutes avant de réessayer l’ingestion. Si le problème persiste, contactez le service clientèle en indiquant l’état d’erreur rencontré.
+
 ### Échec de l’ingestion de complément dû à une violation de contrainte d’unicité {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ Pour éviter toute restriction, exécutez l’[analyseur des bonnes pratiques](/
 
 Parfois, des problèmes intermittents inattendus peuvent se prêter à des ingérations qui ont échoué et, malheureusement, le seul recours est de relancer l&#39;ingestion. Examinez le journal d’ingestion pour découvrir la cause de l’échec et voir s’il s’aligne sur l’une des erreurs répertoriées ci-dessous, où une nouvelle tentative doit être effectuée.
 
-## Problèmes de MongoDB {#mongo-db-issues}
+#### Problèmes de MongoDB {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - La phase d’ingestion tentera de présenter la base de données cloud cible à une taille appropriée qui s’aligne sur la taille du contenu du jeu de migration en cours d’ingestion. Très rarement, cette opération ne se termine pas dans le délai prévu.
 * `Exhausted mongo restore retries` - Les tentatives de restauration d’un vidage local du contenu du jeu de migration ingéré vers la base de données cloud ont été épuisées. Cela indique un problème de réseau/d’intégrité global avec MongoDB, qui se soigne souvent après quelques minutes.
