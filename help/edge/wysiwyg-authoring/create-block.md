@@ -51,7 +51,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ![Clonage du projet](assets/create-block/clone.png)
 
-2. Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+&#x200B;2. Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-3. Modifiez le fichier `component-models.json` à la racine du projet, ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+&#x200B;3. Modifiez le fichier `component-models.json` à la racine du projet, ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
 
 * Consultez le document [Modélisation du contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour plus d’informations sur les éléments à prendre en compte lors de la création de modèles de contenu.
 
@@ -119,7 +119,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-4. Modifiez le fichier `component-filters.json` à la racine du projet, ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) afin de pouvoir ajouter le bloc à n’importe quelle section, puis enregistrez le fichier.
+&#x200B;4. Modifiez le fichier `component-filters.json` à la racine du projet, ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) afin de pouvoir ajouter le bloc à n’importe quelle section, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-5. À l’aide de Git, validez ces modifications dans votre branche `main`.
+&#x200B;5. À l’aide de Git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
@@ -196,7 +196,7 @@ Maintenant que vous avez un bloc de citation fonctionnel, vous pouvez lui appliq
 
 ![Création d’un dossier de citation](assets/create-block/new-folder.png)
 
-3. Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration du bloc en ajoutant le code JavaScript suivant, puis enregistrez le fichier.
+&#x200B;3. Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration du bloc en ajoutant le code JavaScript suivant, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4. Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant, puis enregistrez le fichier.
+&#x200B;4. Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5. À l’aide de Git, validez ces modifications dans votre branche `main`.
+&#x200B;5. À l’aide de Git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
-6. Revenez à l’onglet du navigateur de l’éditeur universel dans lequel vous étiez en train de modifier la page de votre projet, puis actualisez-la pour afficher le bloc avec le style appliqué.
+&#x200B;6. Revenez à l’onglet du navigateur de l’éditeur universel dans lequel vous étiez en train de modifier la page de votre projet, puis actualisez-la pour afficher le bloc avec le style appliqué.
 
-7. Le bloc de citation avec le style appliqué s’affiche ainsi sur la page.
+&#x200B;7. Le bloc de citation avec le style appliqué s’affiche ainsi sur la page.
 
 ![Bloc de citation avec son style appliqué dans l’éditeur universel](assets/create-block/quote-styled.png)
 
-8. Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
+&#x200B;8. Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.hlx.page`.
 
 ![Bloc de citation publié et avec son style appliqué](assets/create-block/quote-styled-published.png)
 
