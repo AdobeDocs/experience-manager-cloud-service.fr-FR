@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -42,10 +42,10 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Assets] | Chargez des ressources directement dans [!DNL Experience Manager]. Voir [API de chargement des ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de chargement direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Les approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de processus d’activation de l’arborescence](/help/operations/replication.md#tree-activation) sont disponibles. |
-| [!DNL Foundation] | Ni l’onglet Distribute de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de processus d’activation de l’arborescence](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur ou de l’administratrice de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdront progressivement la prise en charge des informations d’identification du compte de service (JWT). Les informations d’identification du nouveau compte de service (JWT) ne pourront pas être créées dans Adobe Developer Console après le 1er mai 2024 inclus. Cependant, les informations d’identification existantes du compte de service (JWT) pourront toujours être utilisées pour les intégrations déjà configurées jusqu’au 1er janvier 2025. À ce moment-là, les informations d’identification existantes du compte de service (JWT) ne fonctionneront plus. La clientèle devra alors migrer vers les informations OAuth serveur à serveur. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrez](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) vers les informations d’identification OAuth serveur à serveur. |
-| [!DNL Foundation] | Workflow d’arborescence de contenu Publish et l’étape de processus d’arborescence de contenu Publish associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation), qui est plus performant. |
+| [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/replication.md#tree-activation), qui est plus performante. |
 
 
 ## Fonctionnalités supprimées {#removed-features}
@@ -147,7 +147,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>30/07/2021</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. <a href="#org.eclipse.jetty">Voir les notes de suppression ci-dessous.</a></td>
+    <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. <a href="#org.eclipse.jetty">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/05/2021</td>
     <td>26/08/2021</td>
   </tr>
@@ -158,7 +158,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>26/08/2021</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. <a href="#com.mongodb">Voir les notes de suppression ci-dessous.</a></td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. <a href="#com.mongodb">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/05/2021</td>
     <td>30/07/2021</td>
   </tr>
@@ -176,7 +176,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Cette API est obsolète, car le projet Apache Abdera a été supprimé en 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
+    <td>Cette API est obsolète, car le projet Apache Abdera a été supprimé en 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
     <td>29/07/2021</td>
     <td>29/09/2021</td>
   </tr>
@@ -527,17 +527,17 @@ Ces ajustements sont nécessaires pour permettre la création du projet avec des
 
 Mettez à jour l’utilisation du plug-in bnd-maven-plugin vers la version 6.4.0 afin de garantir la prise en charge des environnements d’exécution JVM plus récents. Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version inférieure. Par conséquent, une mise à niveau vers cette version n’est pas recommandée pour l’instant.
 
-#### Version minimale de aemanalytics-maven-plugin {#aemanalyser-maven-plugin}
+#### Version minimale d’aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Mettez à jour l’utilisation d’aemanalytics-maven-plugin vers la version 1.6.6 ou ultérieure pour garantir la prise en charge des environnements d’exécution JVM plus récents.
+Mettez à jour aemanalyser-maven-plugin vers la version 1.6.6 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
 
 #### Version minimale de maven-bundle-plugin  {#maven-bundle-plugin}
 
-Mettez à jour l’utilisation de maven-bundle-plugin vers la version 5.1.5 ou ultérieure pour assurer la prise en charge des nouveaux environnements d’exécution JVM.
+Mettez à jour maven-bundle-plugin vers la version 5.1.5 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
 
-#### Mise à jour des dépendances dans maven-scr-plugin  {#maven-scr-plugin}
+#### Mettre à jour les dépendances dans maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` n’est pas directement compatible avec Java 17 et 21. Cependant, il est possible de générer les fichiers descripteurs en mettant à jour la version de dépendance ASM dans la configuration du module externe, comme dans l’extrait de code ci-dessous :
+`maven-scr-plugin` n’est pas directement compatible avec Java 17 et 21. Cependant, il est possible de générer les fichiers descripteurs en mettant à jour la version de dépendance ASM dans la configuration du plug-in, comme dans l’extrait de code ci-dessous :
 
 ```
 [source,xml]
