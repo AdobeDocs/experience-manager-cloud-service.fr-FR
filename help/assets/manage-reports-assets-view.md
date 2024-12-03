@@ -4,10 +4,10 @@ description: Accédez aux données de la section des rapports de la vue Assets p
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 5ff36490c4d9a6f61255ad06ffab984f18c1823b
+source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 31%
+source-wordcount: '1564'
+ht-degree: 67%
 
 ---
 
@@ -20,11 +20,11 @@ Les rapports de ressources offrent aux administrateurs une visibilité sur l’a
 
 ## Accéder aux rapports {#access-reports}
 
-Tous les utilisateurs et toutes les utilisatrices affectés au profil de produit Administration de la vue Assets peuvent accéder au tableau de bord des Insights ou créer des rapports définis par l’utilisateur dans la vue Assets.
+Tous les utilisateurs affectés au profil de produit Administrateurs d’AEM peuvent accéder au tableau de bord Statistiques ou créer des rapports définis par l’utilisateur dans la vue Assets.
 
 Pour accéder aux rapports, accédez à **[!UICONTROL Rapports]** sous **[!UICONTROL Paramètres]**.
 
-![Rapports.](assets/reports.png)
+![Rapports](assets/reports.png)
 
 <!--
 In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
@@ -39,27 +39,27 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 ## Créer un rapport {#create-report}
 
-L’environnement de vue AEM Assets offre des fonctionnalités de création de rapports complètes par le biais du tableau de bord Rapports. Cette fonctionnalité permet aux utilisateurs de générer et télécharger des rapports CSV détaillant les téléchargements et les téléchargements de ressources dans des périodes spécifiées allant d’une fois unique à des intervalles quotidiens, hebdomadaires, mensuels ou annuels.
+L’environnement de vue AEM Assets offre des fonctionnalités de création de rapports complètes par le biais du tableau de bord Rapports. Cette fonctionnalité permet aux utilisateurs et utilisatrices de générer et de télécharger des rapports CSV détaillant les chargements et les téléchargements de ressources dans des périodes spécifiées, qu’il s’agisse d’intervalles ponctuels, quotidiens, hebdomadaires, mensuels ou annuels.
 
-**Pour créer un rapport :**
+**Pour créer un rapport, procédez come suit :**
 
-1. Accédez à **Reports** et cliquez sur **Créer un rapport** (dans le coin supérieur droit). La boîte de dialogue **créer un rapport** affiche les champs suivants :
+1. Accédez à **Reports** et cliquez sur **Créer un rapport** (dans le coin supérieur droit). La boîte de dialogue **Créer un rapport** affiche les champs suivants :
    ![create-report](/help/assets/assets/executed-reports1.svg)
 
-   **Dans l’onglet Configuration :**
+   **Dans l’onglet Configuration :**
 
-   1. **Type de rapport :** Choisissez entre le type de téléchargement et de téléchargement.
-   1. **Titre :** Ajoutez un titre au rapport.
-   1. **Description :** Ajoutez une description facultative au rapport.
-   1. **Sélectionner le chemin d’accès au dossier :** Sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin du rapport des ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
-   1. **Sélectionner un intervalle de dates :** Sélectionnez la période pour afficher l’activité de téléchargement ou de téléchargement dans le dossier.
+   1. **Type de rapport :** Sélectionnez parmi les types [!UICONTROL téléchargement], [!UICONTROL téléchargement] ou [Rapport de diffusion Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Titre :** ajoutez un titre au rapport.
+   1. **Description :** ajoutez une description facultative au rapport.
+   1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin d’un rapport de ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
+   1. **Sélectionner l’intervalle de dates :** sélectionnez la période pour afficher l’activité de chargement ou de téléchargement dans le dossier.
    <br>
 
    >[!NOTE]
    >
    > La vue Assets convertit tous les fuseaux horaires locaux en temps universel coordonné (UTC).
 
-   **Onglet Colonnes :** Sélectionnez les noms de colonne à afficher dans le rapport. Le tableau suivant explique l’utilisation de toutes les colonnes :
+   **Dans l’onglet Colonnes :** sélectionnez les noms de colonne à afficher dans le rapport. Le tableau suivant explique l’utilisation de toutes les colonnes :
 
    <table>
     <tbody>
@@ -71,108 +71,167 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
      <tr>
       <td>Titre</td>
       <td>Titre de la ressource.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
-      <td>Chemin d’accès</td>
+      <td>Chemin</td>
       <td>Chemin d’accès au dossier qui contient la ressource dans la vue Assets.</td>
-      <td>Téléchargement</td>
+      <td>Chargement, téléchargement et diffusion Dynamic Media</td>
      </tr>
      <tr>
       <td>Type MIME</td>
       <td>Type MIME de la ressource.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Taille</td>
       <td>Taille de la ressource en octets.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Téléchargé par</td>
       <td>ID d’e-mail de l’utilisateur qui a téléchargé la ressource.</td>
-      <td>Télécharger</td>
+      <td>Téléchargement</td>
      </tr>
      <tr>
       <td>Date de téléchargement</td>
       <td>Date à laquelle la ressource a été téléchargée.</td>
-      <td>Télécharger</td>
+      <td>Téléchargement</td>
      </tr>
      <tr>
       <td>Créateur ou créatrice</td>
       <td>Le créateur ou la créatrice de la ressource.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Date de création</td>
       <td>Date à laquelle la ressource a été chargée dans la vue Assets.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Date de modification</td>
       <td>Date de dernière modification de la ressource.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Expiré</td>
       <td>Statut d’expiration de la ressource.</td>
-      <td>Téléchargement</td>
+      <td>Téléchargement et téléchargement</td>
      </tr>
      <tr>
       <td>Téléchargé par « Nom d’utilisateur »</td>
       <td>Nom de l’utilisateur qui a téléchargé la ressource.</td>
-      <td>Télécharger</td>
-     </tr>           
+      <td>Téléchargement</td>
+     </tr> 
+     <tr>
+      <td>Référent</td>
+      <td>URL de diffusion ou d’inclusion de la ressource</td>
+      <td>Diffusion Dynamic Media</td>
+     </tr>  
+     <tr>
+      <td>Accès</td>
+      <td>Nombre de fois où la ressource est diffusée (nombre de diffusions)</td>
+      <td>Diffusion Dynamic Media</td>
+     </tr>          
     </tbody>
    </table>
 
+## Rapports sur les diffusions Dynamic Media {#dynamic-media-delivery-reports}
+
+Obtenez des informations de diffusion pour les ressources diffusées avec Dynamic Media, avec le nombre de diffusions au niveau des ressources, les informations sur les référents, le chemin d’accès aux ressources dans AEM Assets et un identifiant de ressource unique. Les rapports peuvent être générés pour toutes les ressources diffusées via Dynamic Media pour le référentiel AEM Assets ou pour une hiérarchie de dossiers spécifique dans AEM Assets. En outre, les insights des rapports sur les diffusions Dynamic Media permettent de mesurer le retour sur investissement des ressources diffusées, de mesurer les performances des canaux et de prendre en charge des tâches de gestion des ressources informées.
+
+>[!NOTE]
+> 
+>Pour obtenir un accès anticipé au rapport de diffusion Dynamic Media sur votre compte Dynamic Media, [créez et envoyez un cas d’assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+
+### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
+
+Vous devez disposer d’une licence Dynamic Media pour créer et utiliser ce rapport.
+
+>[!IMPORTANT]
+> 
+>* Les rapports sont fournis pour les ressources diffusées par Dynamic Media.
+>* Les rapports sont générés pour le premier million de lignes. Pour capturer tous les fichiers dans cette limite, pensez à inclure la colonne Référent pour les dossiers plus petits.
+>* Les rapports peuvent uniquement être générés pour les 3 derniers mois.
+
+### Création d’un rapport de diffusion Dynamic Media{#create-dynamic-media-delivery-report}
+
+1. Créez un rapport de diffusion Dynamic Media, en suivant les étapes mentionnées dans [Créer un rapport](#create-report).
+
+1. Sélectionnez **[!UICONTROL Diffusion Dynamic Media]** dans la liste déroulante **[!UICONTROL Type de rapport]** .
+
+   ![Liste déroulante Rapport de diffusion Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+
+
+1. Dans l’onglet **[!UICONTROL Colonnes]**, vous pouvez sélectionner la colonne **[!UICONTROL Référent]** pour l’inclure dans votre rapport.
+
+   ![Référent](assets/referrer.png)
+
+   Toutes les colonnes du rapport téléchargé sont en lecture seule, à l’exception de la colonne **Référent**, que vous pouvez modifier pour inclure ou exclure du rapport. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+
+### Actions effectuées sur le rapport Diffusion Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
+
+Après avoir créé le rapport, vous pouvez effectuer les actions suivantes :
+
+* **[!UICONTROL Supprimer]** : vous pouvez supprimer le rapport sélectionné.
+* **[!UICONTROL Télécharger CSV]** : vous pouvez télécharger le rapport sélectionné au format CSV. Le rapport téléchargé se compose des colonnes Nom, Chemin, DynamicMediaID, Référent, Accès .
+   * La colonne **Référent** répertorie l’URL où la ressource est diffusée ou incluse.
+
+   * La colonne **Accès** liste le nombre de fois où la ressource est diffusée (nombre de diffusions).
+
+Pour supprimer ou télécharger le rapport Diffusion Dynamic Media au format CSV, reportez-vous à la section [Affichage et téléchargement d’un rapport existant](#View-and-download-existing-report).
+
+![Fichier CSV téléchargé sur le rapport de diffusion Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+
+
 ## Afficher et télécharger un rapport existant {#View-and-download-existing-report}
 
-Les rapports existants s’affichent sous l’onglet **Rapports exécutés** . Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés avec l’état **terminé**, indiquant qu’ils sont prêts à être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger CSV** ou **Supprimer**.
-![afficher et télécharger des rapports existants](/help/assets/assets/view-download-existing-report.png)
+Les rapports existants s’affichent dans l’onglet **Rapports exécutés**. Cliquez sur **Rapports** et sélectionnez **Rapports exécutés** pour afficher tous les rapports créés dont le statut est **Terminé**, indiquant qu’ils peuvent être téléchargés. Pour télécharger le rapport au format CSV ou le supprimer, sélectionnez la ligne du rapport. Sélectionnez ensuite **Télécharger le fichier CSV** ou **Supprimer**.
+![Affichage et téléchargement de rapports existants](/help/assets/assets/view-download-existing-report.png)
 
-## Planification d’un rapport {#schedule-report}
 
-Dans l’interface utilisateur de la vue AEM Assets, la fonction **Planification du rapport** configure une génération automatique de rapports à des intervalles futurs spécifiés, par exemple tous les jours, toutes les semaines, tous les mois ou tous les ans. Cette fonctionnalité permet de rationaliser les besoins de création de rapports récurrents et d’assurer des mises à jour opportunes des données. Pendant que **Créer un rapport** génère des rapports pour les dates antérieures. Les rapports terminés sont répertoriés sous **Rapports exécutés** et les rapports à venir se trouvent sous ****.
+## Planifier un rapport {#schedule-report}
 
-Pour planifier un rapport, procédez comme suit :
+Dans l’interface utilisateur de la vue AEM Assets, la fonction **Planification du rapport** configure une génération automatique de rapports à des intervalles futurs spécifiés, par exemple tous les jours, toutes les semaines, tous les mois ou tous les ans. Cette fonctionnalité permet de rationaliser les besoins récurrents en matière de reporting et d’assurer des mises à jour opportunes des données. **Créer un rapport** génère pour sa part des rapports pour les dates antérieures. Les rapports terminés sont répertoriés dans **Rapports exécutés** et les rapports à venir se trouvent dans **Rapports planifiés**.
+
+Pour planifier un rapport, procédez comme suit :
 
 1. Cliquez sur Rapports dans le volet de gauche, puis sur Créer un rapport (en haut à droite).
-1. La boîte de dialogue du rapport affiche les informations suivantes :
-   1. **Type de rapport :** Choisissez entre le type de téléchargement et de téléchargement.
-   1. **Titre :** Ajoutez un titre au rapport.
-   1. **Description** : ajoutez une description facultative au rapport.
-   1. **Sélectionner le chemin d’accès au dossier :** Sélectionnez un chemin d’accès au dossier pour générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
-   1. Basculez de **Planification du rapport :** Basculez pour planifier le rapport pour une fois ultérieure ou pour son occurrence répétée.
-      ![rapport de planification](/help/assets/assets/schedule-reports1.svg)
+1. La boîte de dialogue du rapport affiche les informations suivantes :
+   1. **Type de rapport :** choisissez entre le type de chargement et de téléchargement.
+   1. **Titre :** ajoutez un titre au rapport.
+   1. **Description :** ajoutez une description facultative au rapport.
+   1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier afin de générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
+   1. Activer **Planifier un rapport :** activez cette option pour planifier le rapport à une date ultérieure ou récurrente.
+      ![Planification d’un rapport](/help/assets/assets/schedule-reports1.svg)
 
-   1. **Choisir la fréquence :** Spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou une fois) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport unique, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées du 10e au 29e (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates** .
+   1. **Choisir la fréquence :** spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou ponctuel) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport ponctuel, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées entre le 10 et le 29 (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates**.
 
    >[!NOTE]
    >
    > La vue Assets convertit tous les fuseaux horaires locaux en temps universel coordonné (UTC).
 
-## Affichage des rapports planifiés {#view-scheduled-reports}
+## Afficher les rapports planifiés {#view-scheduled-reports}
 
-Les rapports planifiés s’affichent sous l’onglet **Rapports planifiés** d’une manière systématique organisée. Tous les rapports terminés pour chaque rapport planifié sont stockés dans un seul dossier de rapports. Cliquez sur ![développer la réduction](/help/assets/assets/expand-icon1.svg) pour afficher les rapports terminés. Par exemple, si vous avez planifié un rapport quotidien, tous les rapports terminés sont regroupés dans un seul dossier. Cette organisation simplifie la navigation et la découverte des rapports. Pour afficher les rapports planifiés, cliquez sur **Rapports**, puis sur **Rapports planifiés**. Tous les rapports planifiés s’affichent, avec leur état comme étant en cours ou terminé. Les rapports terminés sont prêts à être téléchargés.\
-![rapport planifié](/help/assets/assets/scheduled-reports-tab.png)
+Les rapports planifiés s’affichent dans l’onglet **Rapports planifiés** et sont organisés de manière systématique. Tous les rapports terminés pour chaque rapport planifié sont stockés dans un seul dossier de rapports. Cliquez sur ![développer la réduction](/help/assets/assets/expand-icon1.svg) pour afficher les rapports terminés. Par exemple, si vous avez planifié un rapport quotidien, tous les rapports terminés sont regroupés dans un seul dossier. Cette organisation simplifie la navigation et la recherche des rapports. Pour afficher les rapports planifiés, cliquez sur **Rapports**, puis sur **Rapports planifiés**. Tous les rapports planifiés s’affichent, avec le statut En cours ou Terminé. Les rapports terminés sont prêts à être téléchargés.\
+![Rapport planifié](/help/assets/assets/scheduled-reports-tab.png)
 
-## Modification et annulation de rapports planifiés {#edit-cancel-scheduled-reports}
+## Modifier et annuler des rapports planifiés {#edit-cancel-scheduled-reports}
 
-1. Accédez à l’onglet **Rapports programmés** .
+1. Accédez à l’onglet **Rapports planifiés**.
 1. Sélectionnez la ligne du rapport.
 1. Cliquez sur **Modifier**.
-1. Cliquez sur **Annuler le planning**, puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, la prochaine exécution devient vide et l’état est annulé.
-   ![modifier et annuler le rapport planifié](/help/assets/assets/cancel-edit-scheduled-reports.png)
+1. Cliquez sur **Annuler la planification**, puis sur **Confirmer** pour annuler le rapport planifié. Pour les rapports annulés, la prochaine exécution devient vide et le statut est Annulé.
+   ![Modification et annulation d’un rapport planifié](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Reprendre le planning {#resume-schedule}
 
-Pour reprendre la planification annulée, sélectionnez la ligne du rapport et cliquez sur **Reprendre la planification**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et l’état s’affiche en cours.
-![Reprendre la planification](/help/assets/assets/resume-schedule.png)
+Pour reprendre le planning annulé, sélectionnez la ligne du rapport et cliquez sur **Reprendre le planning**. Lors de la reprise, les entrées d’exécution suivantes s’affichent à nouveau et le statut est En cours.
+![Reprise du planning](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
-> Si vous reprenez un rapport annulé avant la date de fin planifiée, les rapports de la date d’annulation à la date de reprise sont automatiquement générés.
+> Si vous reprenez un rapport annulé avant la date de fin planifiée, les rapports entre la date d’annulation et la date de reprise sont automatiquement générés.
 
 ## Afficher les insights {#view-live-statistics}
 
