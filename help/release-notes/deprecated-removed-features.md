@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -507,7 +507,7 @@ AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la co
 
 ### Configuration requise pour l’exécution
 
-Ces réglages sont nécessaires pour garantir la compatibilité avec le runtime Java 21. Les bibliothèques peuvent être mises à jour à tout moment, car elles sont compatibles avec les anciennes versions de Java.
+Ces réglages sont nécessaires pour garantir la compatibilité avec l’exécution de Java 21. Les bibliothèques peuvent être mises à jour à tout moment, car elles sont compatibles avec les anciennes versions de Java.
 
 #### Version minimale de org.objectweb.asm {#org.objectweb.asm}
 
@@ -519,13 +519,13 @@ Mettez à jour org.apache.groovy vers la version 4.0.22 ou ultérieure pour gara
 
 Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
 
-### Conditions requises pour la création
+### Conditions requises pour le temps de génération :
 
-Ces ajustements sont nécessaires pour permettre la création du projet avec des versions plus récentes de Java, mais pas pour la compatibilité d’exécution. Les modules externes Maven peuvent être mis à jour à tout moment, car ils sont compatibles avec les anciennes versions de Java.
+Ces ajustements sont nécessaires pour permettre la génération du projet avec des versions plus récentes de Java, mais pas pour la compatibilité d’exécution. Les modules externes Maven peuvent être mis à jour à tout moment, car ils sont compatibles avec les anciennes versions de Java.
 
 #### Version minimale de bnd-maven-plugin {#bnd-maven-plugin}
 
-Mettez à jour l’utilisation du plug-in bnd-maven-plugin vers la version 6.4.0 afin de garantir la prise en charge des environnements d’exécution JVM plus récents. Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version inférieure. Par conséquent, une mise à niveau vers cette version n’est pas recommandée pour l’instant.
+Mettez à jour bnd-maven-plugin vers la version 6.4.0 pour garantir la prise en charge des nouveaux environnements d’exécution JVM. Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version inférieure. Par conséquent, une mise à niveau vers cette version n’est pas recommandée pour l’instant.
 
 #### Version minimale d’aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
