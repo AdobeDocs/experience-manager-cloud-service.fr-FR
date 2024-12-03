@@ -4,10 +4,10 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 48%
+source-wordcount: '1118'
+ht-degree: 47%
 
 ---
 
@@ -86,4 +86,5 @@ Le tableau suivant répertorie les types de notifications actuellement pris en c
 | Utilisateurs ajoutés directement au groupe personnalisé | Proactif | Les utilisateurs doivent être ajoutés aux groupes IMS appropriés et ces groupes IMS doivent être ajoutés en tant que membres des groupes AEM. Alignement avec [Bonnes pratiques IMS](/help/security/ims-support.md) | |
 | Contenu JCR manquant | Proactif | Ajoutez le noeud de contenu JCR manquant. Reportez-vous à la [documentation Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Workflows terminés non purgés | Proactif | Réduisez le nombre d’instances de workflow et améliorez les performances en purgeant les instances de workflow qui ont plus de 90 jours. Découvrez comment [configurer les tâches de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| Type de ressource Sling manquant dans la page | Proactif | Ajoutez le noeud de type de ressource Sling manquant. Reportez-vous à la [documentation Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| Type de ressource Sling manquant dans la page | Proactif | Ajoutez le noeud de type de ressource Sling manquant. Reportez-vous à la [documentation Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Requête lente | Proactif | Corrigez les requêtes lentes en définissant des définitions d’index correctes comme suggéré par la [feuille de calcul de requête JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf). |
