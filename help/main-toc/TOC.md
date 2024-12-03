@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 97%
+source-wordcount: '5890'
+ht-degree: 100%
 
 ---
 
@@ -205,13 +205,14 @@ ht-degree: 97%
    + Notes de mise à jour de l’éditeur universel {#univeral-editor}
       + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
-         + [Notes de mise à jour de la version 2024.11.05](/help/release-notes/universal-editor/2024/2024-11-05.md)
-         + [Notes de mise à jour de la version 2024.10.29](/help/release-notes/universal-editor/2024/2024-10-29.md)
-         + [Notes de mise à jour de la version 2024.09.27](/help/release-notes/universal-editor/2024/2024-09-27.md)
-         + [Notes de mise à jour de la version 2024.09.26](/help/release-notes/universal-editor/2024/2024-09-26.md)
-         + [Notes de mise à jour de la version 2024.09.18](/help/release-notes/universal-editor/2024/2024-09-18.md)
-         + [Notes de mise à jour de la version 2024.09.03](/help/release-notes/universal-editor/2024/2024-09-03.md)
-         + [Notes de mise à jour de la version 2024.08.13](/help/release-notes/universal-editor/2024/2024-08-13.md)
+         + [Notes de mise à jour de la version 2024.11.13](/help/release-notes/universal-editor/2024/2024-11-13.md)
+         + [Notes de mise à jour de la version 2024.11.05](/help/release-notes/universal-editor/2024/2024-11-05.md)
+         + [Notes de mise à jour de la version 2024.10.29](/help/release-notes/universal-editor/2024/2024-10-29.md)
+         + [Notes de mise à jour de la version 2024.09.27](/help/release-notes/universal-editor/2024/2024-09-27.md)
+         + [Notes de mise à jour de la version 2024.09.26](/help/release-notes/universal-editor/2024/2024-09-26.md)
+         + [Notes de mise à jour de la version 2024.09.18](/help/release-notes/universal-editor/2024/2024-09-18.md)
+         + [Notes de mise à jour de la version 2024.09.03](/help/release-notes/universal-editor/2024/2024-09-03.md)
+         + [Notes de mise à jour de la version 2024.08.13](/help/release-notes/universal-editor/2024/2024-08-13.md)
          + [Notes de mise à jour de la version 2024.07.28](/help/release-notes/universal-editor/2024/2024-07-28.md)
          + [Notes de mise à jour de la version 2024.06.28](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [Nouveautés?](/help/release-notes/what-is-new.md)
@@ -644,7 +645,7 @@ ht-degree: 97%
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
       + [Informations de traçabilité du contenu](/help/assets/content-credentials.md)
       + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [Extensibilité de l’interface utilisateur de la vue AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [Extensibilité de l’interface utilisateur de la vue Assets d’AEM](/help/assets/aem-assets-view-ui-extensibility.md)
    + Hub de contenus {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
       + [Déployer Content Hub](/help/assets/deploy-content-hub.md)
@@ -720,11 +721,11 @@ ht-degree: 97%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
          + [Conception d’un schéma XML pour un formulaire adaptatif](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Intégrer le Forms adaptatif à Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Intégration de Adobe Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configuration de la source de données Adobe Marketo Engage pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configuration de l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + Intégrer les formulaires adaptatifs à Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Intégrer Adobe Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurer la source de données Adobe Marketo Engage pour les formulaires adaptatifs existants](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurer l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
       + [Créer un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
       + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments.md)
@@ -750,26 +751,26 @@ ht-degree: 97%
             + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
             + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
             + [Utiliser Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilisation de CAPTCHA dans un composant principal de formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utiliser hCAPTCHA dans un formulaire adaptatif pour les composants principaux](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
-            + [Création d’une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+            + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
                + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
                + [Différence entre l’éditeur de règles de base et l’éditeur de règles des composants principaux](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-events-operators.md)
                + [Exemples d’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
-               + [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
-               + [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur les composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Utiliser des fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
+               + [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur des composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux{#create-and-use-custom-function-core-component}
                + [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
                + [Créer et utiliser une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
-               + [Objet Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
+               + [Objet portée dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
                + [Exemples de fonctions personnalisées pour un formulaire adaptatif basé sur des composants principaux](/help/forms/custom-function-core-components-use-cases.md)
             + Présentation du portail Formulaires et de ses composants{#introduction-to-forms-portal}
                + [Présentation du composant portail Formulaires](/help/forms/configure-forms-portal.md)
@@ -797,7 +798,7 @@ ht-degree: 97%
          + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
             + [Utiliser hCaptcha dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Utiliser Turnstile CAPTCHA dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Utiliser CAPTCHA Turnstile dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
             + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
@@ -959,7 +960,7 @@ ht-degree: 97%
       + [Données tabulaires et feuilles de calcul](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [Blocs WYSIWYG et basés sur des documents](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [Pages avec DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [Pages avec ressources DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
@@ -1051,7 +1052,7 @@ ht-degree: 97%
       + [Requêtes GraphQL persistantes](/help/headless/graphql-api/persisted-queries.md)
       + [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md)
       + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-      + [Mise à niveau des fragments de contenu pour les références UID](/help/headless/graphql-api/uuid-reference-upgrade.md)
+      + [Mise à niveau des fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [OpenAPI REST AEM pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
@@ -1100,7 +1101,7 @@ ht-degree: 97%
          + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
 + IA générative {#generative-ai}
    + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + [Assistant (Beta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistant (version bêta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
@@ -1124,7 +1125,7 @@ ht-degree: 97%
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajout d’un référentiel externe (Beta limité)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Ajouter un référentiel externe (version bêta limitée)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
