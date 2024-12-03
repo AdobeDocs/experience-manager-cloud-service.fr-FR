@@ -5,7 +5,7 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 47%
@@ -33,6 +33,9 @@ Cette fonctionnalité fournit des API pour générer et manipuler les documents.
 * Des API HTTP pour une intégration plus facile aux systèmes existants Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses.
 
 * un accès sécurisé aux données. Les API de communication se connectent aux données et n’y accèdent que depuis des référentiels de données désignés par les client(e)s, ce qui rend les communications hautement sécurisées.
+
+La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -168,7 +171,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## Extraction de document
 
-<span class="preview"> La fonctionnalité Extraction de documents est inscrite dans le Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Extraction de documents est inscrite dans le Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 Le service Extraction de documents vous permet d’obtenir les propriétés d’un document de PDF, telles que ses droits d’utilisation, ses propriétés de PDF et ses métadonnées. Les fonctionnalités d’extraction de document sont les suivantes :
 
@@ -198,7 +201,7 @@ Les API de conversion de document de communication aident à convertir un docume
 
 ### Convertir le PDF en XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 Convertit un document de PDF en fichier XDP. Pour qu’un document de PDF soit converti en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire.
 
@@ -217,7 +220,7 @@ Les API Signature permettent à votre entreprise de garantir la sécurité et l
 * Supprimer la signature du champ de signature spécifié dans un document de PDF
 * Supprimer le champ de signature spécifié d’un document de PDF
 
-<span class="preview"> Supprimez la signature du champ de signature spécifié et supprimez le champ de signature spécifié d’un document de PDF disponible sous le programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> Supprimez la signature du champ de signature spécifié et supprimez le champ de signature spécifié d’un document de PDF disponible sous le programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 
 <!--
@@ -254,7 +257,7 @@ Les utilitaires de document avec les API synchrones vous aident à convertir des
 
 #### API de droits d’utilisation (extension de Reader)
 
-<span class="preview"> La fonctionnalité Droits d’utilisation (extension de Reader) figure dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Droits d’utilisation (extension de Reader) figure dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 La fonctionnalité Droits d’utilisation permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service fonctionne avec Adobe Reader 7.0 ou version ultérieure et ajoute des droits d’utilisation à un document PDF. Cette action active des fonctionnalités qui ne sont généralement pas disponibles lors de l’ouverture d’un document de PDF à l’aide d’Adobe Reader, comme l’ajout de commentaires à un document, le remplissage de formulaires et l’enregistrement du document.
 
@@ -304,8 +307,6 @@ Les différentes fonctionnalités de droits d’utilisation pour étendre les se
 
 * **Message** : message affiché dans Adobe Acrobat Reader lors de l’ouverture d’un document de PDF avec un ou plusieurs droits d’utilisation appliqués.
 * **Déverrouiller le mot de passe** : mot de passe requis pour ouvrir un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document du PDF est en outre protégé par un mot de passe d’accès, vous pouvez l’utiliser pour l’ouvrir.
-
-La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 ## Types d’API de communication {#types}
 

@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2323'
 ht-degree: 93%
 
 ---
@@ -185,7 +185,7 @@ En utilisant l’action [Appeler un service de l’éditeur de règles](https://
 
 L’éditeur de règles vous permet d’effectuer les opérations suivantes :
 * [Ajouter la fonction de gestionnaire d’erreurs par défaut](#add-default-errror-handler)
-* [Ajouter la fonction de gestionnaire d’erreurs personnalisé](#add-custom-errror-handler)
+* [Ajouter la fonction de gestionnaire d’erreurs personnalisé](#add-custom-error-handler-function)
 
 
 ### Ajouter la fonction de gestionnaire d’erreurs par défaut {#add-default-errror-handler}
@@ -208,7 +208,7 @@ Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défa
 
 ![afficher le message d’erreur par défaut lorsque vous ajoutez un gestionnaire d’erreurs par défaut dans un formulaire pour gérer les réponses d’erreur](/help/forms/assets/default-error-message.png)
 
-### Ajouter la fonction de gestionnaire d’erreurs personnalisé {#add-custom-errror-handler}
+### Ajouter la fonction de gestionnaire d’erreurs personnalisé
 
 Vous pouvez ajouter une fonction de gestionnaire d’erreurs personnalisé pour effectuer certaines des actions suivantes :
 
@@ -222,14 +222,12 @@ Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque client
 Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action [Service Invoke de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr#invoke), prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant d’animal domestique** et **Nom de l’animal domestique** et utilisez un gestionnaire d’erreurs personnalisé sur le champ **Identifiant d’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple : `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, procédez comme suit :
-1. [Ajout d’une fonction personnalisée pour le gestionnaire d’erreurs](#1-add-custom-function-for-error-handler)
+1. [Ajout d’une fonction personnalisée pour le gestionnaire d’erreurs](#1-add-the-custom-function-for-the-error-handler)
 2. [Utilisez l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé.](#use-custom-error-handler)
 
-#### 1. Ajoutez la fonction personnalisée pour le gestionnaire d’erreurs.
+#### 1. Ajoutez la fonction personnalisée du gestionnaire d’erreurs.
 
->[!NOTE]
->
-> Pour savoir comment ajouter des fonctions personnalisées, cliquez sur [Créer des fonctions personnalisées dans un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Pour savoir comment ajouter des fonctions personnalisées, cliquez sur [Créer des fonctions personnalisées dans un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
        }
    ```
 
+   >[!NOTE]
+   >
+   > * Pour appeler le gestionnaire d’erreurs par défaut à partir de votre gestionnaire d’erreurs personnalisé, la ligne suivante de l’exemple de code est utilisée : `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Dans le fichier `.content.xml`, ajoutez les propriétés `allowProxy` et `categories` pour utiliser la bibliothèque cliente du gestionnaire d’erreurs personnalisée dans un formulaire adaptatif.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       Par exemple, dans ce cas, [custom-errorhandler-name] est fourni comme `customfunctionsdemo`.
+
+
+1. Ajoutez, validez et poussez les modifications dans le référentiel.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!REMARQUE]
-    >
-    > * Pour appeler le gestionnaire d’erreurs par défaut à partir de votre gestionnaire d’erreurs personnalisé, la ligne suivante de l’exemple de code est utilisée : `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-    > * Dans le fichier `.content.xml`, ajoutez les propriétés &quot;allowProxy&quot; et categories pour utiliser le gestionnaire d’erreur personnalisé bibliothèque cliente dans un formulaire adaptatif.
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `categories= customfunction sdemo`
-    >       Par exemple, dans ce cas, [custom-errorhandler-name] est fourni en tant que `customfunction sdemo`.
-
-
-1. Ajoutez, validez et poussez les modifications dans le référentiel.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [Exécuter le pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline)
 
 Une fois le pipeline exécuté, le gestionnaire d’erreurs personnalisé devient disponible dans l’éditeur de règles de formulaire adaptatif. Maintenant, apprenons comment configurer et utiliser un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles dans AEM Forms.
