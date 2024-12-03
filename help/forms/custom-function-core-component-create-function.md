@@ -5,10 +5,10 @@ keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalis
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
-ht-degree: 7%
+ht-degree: 51%
 
 ---
 
@@ -19,32 +19,32 @@ Cet article vous guide tout au long des étapes de création de fonctions person
 
 ## Considérations
 
-* `parameter type` et `return type` ne prennent pas en charge `None`.
+* Les `parameter type` et `return type` ne prennent pas en charge `None`.
 
-* Les fonctions qui ne sont pas prises en charge dans la liste des fonctions personnalisées sont les suivantes :
+* Les fonctions qui ne sont pas prises en charge dans la liste des fonctions personnalisées sont les suivantes :
    * Fonctions du générateur
-   * Fonctions asynchrones/attendues
+   * Fonctions asynchrones/d’attente
    * Définitions des méthodes
    * Méthodes de classe
    * Paramètres par défaut
    * Paramètres REST
 
-## Conditions préalables à la création d’une fonction personnalisée
+## Conditions préalables pour créer une fonction personnalisée
 
 Avant de commencer à ajouter une fonction personnalisée à votre Forms adaptatif, assurez-vous que vous disposez des éléments suivants :
 
 **Logiciel :**
 
-* **Éditeur de texte brut (IDE)** : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme Microsoft Visual Studio Code offre des fonctionnalités avancées pour faciliter la modification.
+* **Éditeur de texte brut (IDE)** : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme Microsoft Visual Studio Code offre des fonctionnalités avancées pour faciliter la modification.
 
-* **Git :** Ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de https://git-scm.com.
+* **Git :** ce système de gestion de versions est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de https://git-scm.com.
 
 
-## Créer une fonction personnalisée {#create-custom-function}
+## Création d’une fonction personnalisée
 
 Créez une bibliothèque cliente pour appeler des fonctions personnalisées dans l’éditeur de règles. Pour plus d’informations, voir [Utilisation des bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr#developing).
 
-Les étapes de création de fonctions personnalisées sont les suivantes :
+Les étapes de création de fonctions personnalisées sont les suivantes :
 1. [Créez une bibliothèque cliente.](#create-client-library)
 1. [Ajout d’une bibliothèque cliente à un formulaire adaptatif](#use-custom-function)
 
@@ -72,17 +72,17 @@ Pour ajouter un nouveau dossier de bibliothèques clientes au [répertoire de pr
 
 1. Ouvrez le [répertoire de projet AEMaaCS] dans un éditeur.
 
-   ![Structure de dossier de fonctions personnalisées](/help/forms/assets/custom-library-folder-structure.png)
+   ![Structure de dossier de fonction personnalisée](/help/forms/assets/custom-library-folder-structure.png)
 
-1. Recherchez `ui.apps`.
-1. Ajoutez un nouveau dossier. Par exemple, ajoutez un dossier nommé `experience-league`.
-1. Accédez au dossier `/experience-league/` et ajoutez un dossier `ClientLibraryFolder`. Par exemple, créez un dossier de bibliothèques clientes nommé `customclientlibs`.
+1. Localisez `ui.apps`.
+1. Ajoutez un nouveau dossier. Par exemple, créez un dossier nommé `experience-league`.
+1. Accédez au dossier `/experience-league/` et ajoutez un `ClientLibraryFolder`. Par exemple, créez un dossier de bibliothèque cliente nommé `customclientlibs`.
 
    `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
 **Ajouter des fichiers et des dossiers au dossier de bibliothèque cliente**
 
-Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
+Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 * fichier .content.xml
 * fichier js.txt
@@ -90,7 +90,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
-1. Dans le `.content.xml`, ajoutez les lignes de code suivantes :
+1. Dans `.content.xml`, ajoutez les lignes de code suivantes :
 
    ```javascript
    <?xml version="1.0" encoding="UTF-8"?>
@@ -103,13 +103,13 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
    >
    > Vous pouvez choisir n’importe quel nom pour les propriétés `client library folder` et `categories`.
 
-1. Dans le `js.txt`, ajoutez les lignes de code suivantes :
+1. Dans `js.txt`, ajoutez les lignes de code suivantes :
 
    ```javascript
          #base=js
        function.js
    ```
-1. Dans le dossier `js`, ajoutez le fichier javascript `function.js` qui comprend les fonctions personnalisées :
+1. Dans le dossier `js`, ajoutez le fichier javascript en tant que `function.js` qui comprend les fonctions personnalisées :
 
    ```javascript
     /**
@@ -135,18 +135,18 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
    ```
 1. Enregistrez les fichiers.
 
-![Structure de dossier de fonctions personnalisées](/help/forms/assets/custom-function-added-files.png)
+![Structure de dossier de fonction personnalisée](/help/forms/assets/custom-function-added-files.png)
 
-**Inclure le nouveau dossier dans filter.xml** :
+**Incluez le nouveau dossier dans filter.xml** :
 
-1. Accédez au fichier `/ui.apps/src/main/content/META-INF/vault/filter.xml` dans votre [ répertoire de projet AEMaaCS].
+1. Accédez au fichier `/ui.apps/src/main/content/META-INF/vault/filter.xml` dans votre [répertoire de projet AEMaaCS].
 
-1. Ouvrez le fichier et ajoutez la ligne suivante à la fin :
+1. Ouvrez le fichier et ajoutez la ligne suivante à la fin :
 
    `<filter root="/apps/experience-league" />`
 1. Enregistrez le fichier.
 
-![filtre de fonction personnalisé xml](/help/forms/assets/custom-function-filterxml.png)
+![Filtre de fonction personnalisée xml](/help/forms/assets/custom-function-filterxml.png)
 
 **Déployez le dossier de bibliothèque cliente nouvellement créé dans votre environnement AEM**
 
@@ -174,10 +174,10 @@ Une fois le pipeline exécuté avec succès, la fonction personnalisée ajoutée
 
 Une fois que vous avez déployé votre bibliothèque cliente dans votre environnement Forms CS, utilisez ses fonctionnalités dans votre formulaire adaptatif. Pour ajouter la bibliothèque cliente dans votre formulaire adaptatif
 
-1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire et choisissez **[!UICONTROL Modifier]**.
+1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez-le et cliquez sur **[!UICONTROL Ouvrir]**.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Basic]** et sélectionnez le nom de la **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
+1. Ouvrez l’onglet **[!UICONTROL De base]** et sélectionnez le nom de la **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
 
    ![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/assets/clientlib-custom-function.png)
 
@@ -191,7 +191,7 @@ Vous pouvez utiliser la fonction personnalisée dans l’ [ éditeur de règles 
 
 ## Utilisation d’une fonction personnalisée dans un formulaire adaptatif
 
-Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisées dans l’éditeur de règles](/help/forms/rule-editor-core-components.md). Ajoutons le code suivant au fichier JavaScript (`Function.js`) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Créez une fonction personnalisée `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
+Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisées dans l’éditeur de règles](/help/forms/rule-editor-core-components.md). Ajoutons le code suivant au fichier JavaScript (`Function.js`) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Créez une fonction personnalisée `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
 
 ```javascript
     /**
@@ -216,17 +216,17 @@ Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisée
     }
 ```
 
-Dans l’exemple ci-dessus, lorsque l’utilisateur saisit la date de naissance au format (AAAA-MM-JJ), la fonction personnalisée `calculateAge` est appelée et renvoie l’âge.
+Dans l’exemple ci-dessus, lorsque la personne saisit la date de naissance au format (AAAA-MM-JJ), la fonction personnalisée `calculateAge` est appelée et renvoie l’âge.
 
 ![Fonction personnalisée Calcul de l’âge dans l’éditeur de règles](/help/forms/assets/custom-function-calculate-age.png)
 
-Prévisualisons le formulaire pour observer comment les fonctions personnalisées sont implémentées par le biais de l’éditeur de règles :
+Prévisualisons le formulaire pour observer comment les fonctions personnalisées sont implémentées par le biais de l’éditeur de règles :
 
 ![Fonction personnalisée Calcul de l’âge dans l’aperçu de formulaire de l’éditeur de règles](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> Vous pouvez vous référer au dossier [custom function](/help/forms/assets//customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> Vous pouvez vous référer au dossier [fonction personnalisée](/help/forms/assets//customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Fonctions des fonctions personnalisées
 
@@ -246,27 +246,27 @@ Les objets de champ font référence aux composants ou éléments individuels d�
 
 >[!NOTE]
 >
-> `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
+> Le paramètre `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
 
 Pour plus d’informations sur les objets de portée, consultez l’article [Objets de portée dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md) .
 
 ### Prise en charge de la mise en cache dans une fonction personnalisée
 
-Les Forms adaptatives implémentent la mise en cache pour les fonctions personnalisées afin d’améliorer le temps de réponse lors de la récupération de la liste des fonctions personnalisées dans l’éditeur de règles. Un message tel que `Fetched following custom functions list from cache` apparaît dans le fichier `error.log`.
+Les formulaires adaptatifs implémentent la mise en cache pour les fonctions personnalisées afin d’améliorer le temps de réponse lors de la récupération de la liste des fonctions personnalisées dans l’éditeur de règles. Un message `Fetched following custom functions list from cache` apparaît dans le fichier `error.log`.
 
-![fonction personnalisée avec prise en charge du cache](/help/forms/assets/custom-function-cache-error.png)
+![Fonction personnalisée avec prise en charge du cache](/help/forms/assets/custom-function-cache-error.png)
 
 Si les fonctions personnalisées sont modifiées, la mise en cache est invalidée et elle est analysée.
 
 ## Résolution des problèmes
 
-* Si le fichier JavaScript contenant du code pour les fonctions personnalisées comporte une erreur, les fonctions personnalisées ne sont pas répertoriées dans l’éditeur de règles d’un formulaire adaptatif. Pour vérifier la liste des fonctions personnalisées, vous pouvez accéder au fichier `error.log` correspondant à l’erreur. En cas d’erreur, la liste des fonctions personnalisées apparaît vide :
+* Si le fichier JavaScript contenant du code pour les fonctions personnalisées comporte une erreur, les fonctions personnalisées ne sont pas répertoriées dans l’éditeur de règles d’un formulaire adaptatif. Pour vérifier la liste des fonctions personnalisées, vous pouvez accéder au fichier `error.log` correspondant à l’erreur. En cas d’erreur, la liste des fonctions personnalisées apparaît vide :
 
-  ![fichier journal d’erreur](/help/forms/assets/custom-function-list-error-file.png)
+  ![Fichier journal d’erreur](/help/forms/assets/custom-function-list-error-file.png)
 
-  En l’absence d’erreur, la fonction personnalisée est récupérée et apparaît dans le fichier `error.log`. Un message sous la forme `Fetched following custom functions list` apparaît dans le fichier `error.log` :
+  En l’absence d’erreur, la fonction personnalisée est récupérée et apparaît dans le fichier `error.log`. Un message `Fetched following custom functions list` apparaît dans le fichier `error.log` :
 
-  ![ fichier journal d&#39;erreur avec fonction personnalisée appropriée](/help/forms/assets/custom-function-list-fetched-in-error.png)
+  ![Fichier journal d’erreur avec fonction personnalisée appropriée](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Étape suivante
 
