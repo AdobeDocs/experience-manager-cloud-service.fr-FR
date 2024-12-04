@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
+source-wordcount: '2724'
 ht-degree: 80%
 
 ---
@@ -85,6 +85,9 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
 >[!NOTE]
 >Vous avez la possibilité d’ignorer le téléchargement automatique vers le mode CAM en sélectionnant **Ignorer le téléchargement automatique du rapport vers le mode CAM**. Si vous choisissez d’ignorer, vous devrez télécharger manuellement le rapport BPA sous la forme d’un fichier de valeurs séparées par des virgules, puis télécharger le fichier dans CAM. Il est recommandé d’utiliser l’option de clé de chargement , car elle simplifie l’opération.
+
+>[!IMPORTANT]
+>Lors d’un chargement manuel au format CAM, la taille des rapports est limitée à environ 200 Mo. Pour les rapports plus volumineux, vous devez utiliser le téléchargement automatique.
 
 1. Le bouton **Générer** devient actif lorsqu’une clé valide est fournie. Cliquez sur **Générer** pour lancer la génération de rapports.
 

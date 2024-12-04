@@ -4,9 +4,9 @@ description: Cette page présente un aperçu de la phase de préparation dans Cl
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 39%
 
 ---
@@ -60,7 +60,7 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
    ![Obtenir la clé de chargement](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >Le rapport peut toujours être téléchargé manuellement, mais l’utilisation de la clé de téléchargement simplifie l’opération. Notez que le rapport ne peut pas être chargé manuellement si vous êtes en mode Incognito du navigateur.
+   >Le rapport peut toujours être téléchargé manuellement, mais l’utilisation de la clé de téléchargement simplifie l’opération. Notez que le rapport ne peut pas être téléchargé manuellement s’il a une taille d’environ 200 Mo ou plus. Le rapport ne peut pas non plus être chargé en mode Incognito du navigateur.
 
 1. Une fois qu’un nouveau rapport a été téléchargé, vous pouvez voir le rapport Analyse des bonnes pratiques dans CAM.
 
