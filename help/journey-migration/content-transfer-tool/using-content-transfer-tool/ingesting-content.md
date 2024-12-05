@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -169,11 +169,11 @@ Si &quot;AEM mises à jour de version&quot; est actif (c’est-à-dire que les m
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Échec de l’ingestion en raison d’un environnement cloud non prêt {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Échec de l’ingestion en raison d’un environnement cloud non opérationnel {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="Environnement cloud non prêt"
+>title="Environnement cloud non opérationnel"
 >abstract="Dans de rares cas, l’environnement cloud cible peut rencontrer des problèmes inattendus, ce qui entraîne l’échec de l’ingestion."
 
 Dans de rares cas, l’environnement du Cloud Service cible de l’ingestion peut rencontrer des problèmes inattendus. Par conséquent, l’ingestion échoue, car l’environnement n’est pas à l’état prêt attendu. Consultez le journal d’ingestion pour afficher plus de détails sur l’état d’erreur rencontré.
