@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +86,7 @@ Si vous avez sélectionné le type de certificat *Adobe managed certificate*, ex
 
 Pour vérifier le domaine utilisé, vous devez ajouter et vérifier un CNAME.
 
-Un enregistrement `CNAME` ou A, une fois configuré, achemine tout le trafic Internet pour le domaine vers l’emplacement où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
+Un type d’enregistrement `CNAME` ou un type d’enregistrement `A`, une fois configuré, achemine tout le trafic Internet pour le domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
 
 Pour configurer ces paramètres, déterminez si un enregistrement `CNAME` ou apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes de ce document peuvent vous aider à déterminer le type d’enregistrement approprié à votre configuration DNS.
 
@@ -130,7 +130,7 @@ Ajoutez les enregistrements `A` suivants aux paramètres DNS de votre domaine pa
 
 >[!TIP]
 >
->Le *CNAME* ou *A Record* peut être défini sur le serveur DNS qui gouverne pour vous faire gagner du temps.
+>L’ *enregistrement CNAME* ou *un enregistrement* peut être défini sur le serveur DNS qui gouverne pour gagner du temps.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
