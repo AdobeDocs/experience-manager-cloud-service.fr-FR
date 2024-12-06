@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 16%
 
 >[!AVAILABILITY]
 >
->Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>Le guide de Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets permet à l’équipe d’aministration de configurer les options disponibles dans l’interface d’utilisation du hub de contenus. En fonction des options de configuration sélectionnées par l’équipe d’aministration, les utilisateurs et utilisatrices du hub de contenus peuvent afficher les champs sur le hub de Contenus. Les options de configuration incluent :
 
@@ -73,6 +73,8 @@ En tant qu’administrateur, gérez les options de configuration suivantes pour 
 * [Branding](#configure-branding-content-hub)
 
 * [Ressources expirées](#expired-assets-content-hub)
+
+* [Rendus](#renditions-content-hub)
 
 * [Liens personnalisés](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Vous pouvez également configurer les champs de métadonnées clés que vous dev
 
 De même, cliquez sur ![edit](/help/assets/assets/edit-content-hub.svg) disponible en regard de chaque propriété disponible pour apporter les modifications requises ou cliquez sur ![delete](/help/assets/assets/delete-content-hub.svg) pour supprimer toute propriété de métadonnées existante. Cliquez sur **Enregistrer** après avoir apporté toutes les modifications pour appliquer les modifications.
 
-
 ### Recherche {#configure-metadata-search-content-hub}
 
 Les administrateurs peuvent définir les champs de métadonnées qui font l’objet d’une recherche lorsqu’un utilisateur spécifie un critère de recherche sur Content Hub. Procédez comme suit :
@@ -223,6 +224,23 @@ Si l’administrateur a activé le téléchargement, les utilisateurs de Content
 
 Si la visibilité des ressources expirées est activée, Content Hub met également en surbrillance les ressources arrivant à expiration au cours des 15 prochains jours à l’aide du message `Expiring in n days` sur la carte de ressources.
 
+### Rendus {#renditions-content-hub}
+
+Les rendus sont des versions personnalisées des ressources numériques, telles que des images, des documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. Pour en savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+Content Hub permet de télécharger des rendus statiques. Les rendus statiques sont différentes représentations du fichier d’origine d’une ressource générée en mode natif. Par exemple, les miniatures ou les rendus optimisés pour les appareils mobiles. Les administrateurs peuvent gérer et contrôler la disponibilité des rendus de ressources, et gérer si vous pouvez télécharger des ressources d’origine ou non.
+
+Pour cela, procédez comme suit :
+
+Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Rendus]**. Les options suivantes sont disponibles :
+
+* Activez le bouton d’activation/désactivation [!UICONTROL Activer la disponibilité des rendus statiques] pour rendre tous les rendus statiques visibles sur Content Hub.
+
+* Activez ou désactivez le bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources d’origine]** afin de contrôler la disponibilité du téléchargement des ressources d’origine.
+
+  ![Configuration de rendus sur Content Hub](assets/config-renditions.png)
+
+Pour plus d’informations sur l’affichage et le téléchargement des rendus statiques dans Content Hub, voir [téléchargement de ressources dans Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Liens personnalisés {#configure-custom-links-content-hub}
 

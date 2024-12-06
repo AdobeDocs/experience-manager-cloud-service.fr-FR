@@ -4,10 +4,10 @@ description: Découvrez comment AEM Assets et Dynamic Media simplifient la gesti
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
+source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +25,22 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 ## Rendus statiques {#static-renditions}
 
 Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’assimilation ou de la modification de ressources. Ces rendus sont optimisés à des fins et plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour le responsive design ou les versions haute résolution pour l’impression, ce qui garantit une expérience efficace et cohérente.
-Découvrez [comment afficher et télécharger](#view-dynamic-renditions) rendus statiques dans [!DNL Experience Manager Assets].
+Découvrez comment [afficher et télécharger des rendus statiques](#view-and-download-static-renditions) dans Experience Manager Assets.
+
+### Affichage et téléchargement de rendus statiques{#view-and-download-static-renditions}
+
+Pour afficher les rendus de ressources et les télécharger, procédez comme suit :
+
+1. Dans la vue Assets, cliquez sur **Assets**, accédez à un dossier, sélectionnez une ressource, puis cliquez sur **Détails**.
+1. Cliquez sur l’icône du rendu disponible dans le volet de droite.
+1. Sélectionnez un rendu pour le prévisualiser, puis cliquez sur ![icône de téléchargement](/help/assets/assets/download-icon.svg) pour le télécharger.
+
+   ![ Afficher et télécharger des rendus dynamiques](/help/assets/assets/view-download-static-rendition.png)
 
 ## Rendus dynamiques {#dynamic-renditions}
 
 Les rendus dynamiques sont des versions personnalisées des ressources créées en temps réel pour répondre à des besoins spécifiques, tels que le redimensionnement des images en fonction de la résolution de l’appareil ou le recadrage pour s’adapter à différents formats.
-Ces rendus permettent aux entreprises de fournir des expériences personnalisées et optimisées à divers besoins d’audience. Vous pouvez afficher et télécharger des rendus dynamiques dans [!DNL Experience Manager Assets].
+Ces rendus permettent aux entreprises de fournir des expériences personnalisées et optimisées à divers besoins d’audience. Vous pouvez afficher et télécharger des rendus dynamiques dans Experience Manager Assets.
 
 ## Rendus Dynamic Media {#dynamic-media-renditions}
 
@@ -57,7 +67,7 @@ Pour afficher ou télécharger des rendus dynamiques d’images dans Experience 
 
 1. Dans le menu de droite, cliquez sur l’icône **[!UICONTROL Dynamic Media]** . Le panneau **[!UICONTROL Dynamic Media]** affiche les rendus Dynamic Media et de recadrage intelligent.
 
-   ![rendus dynamiques](/help/assets/assets/dm-scene7-renditions.png)
+   ![Rendus dynamiques](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Sélectionnez le rendu à prévisualiser et cliquez sur **Copier l’URL** pour copier l’URL du rendu sélectionné. Cliquez sur **Télécharger le rendu** pour télécharger les rendus des ressources d’image.
