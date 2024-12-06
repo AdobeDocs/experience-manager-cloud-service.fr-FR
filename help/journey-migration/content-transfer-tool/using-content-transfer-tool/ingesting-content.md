@@ -4,9 +4,9 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 38%
 
 ---
@@ -64,8 +64,9 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
    >[!IMPORTANT]
    > Vous pouvez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs et administratrices d’AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
 
-1. Une fois les choix d’ingestion sélectionnés, une estimation de sa durée s’affiche. Il s’agit d’une estimation du meilleur effort basée sur des données historiques d’assimilations similaires.
+1. Une fois les choix d’ingestion sélectionnés, une estimation de sa durée peut être affichée. Il s’agit d’une estimation du meilleur effort basée sur des données historiques d’assimilations similaires.
 
+   * Cette estimation n’est pas calculée ni affichée pour les assimilations **non essuyées**, car dans ce cas, CAM ne sait pas quelle quantité de contenu se trouve sur le système cible.
    * Cette estimation n&#39;est calculée et affichée que si les valeurs &quot;Vérifier la taille&quot; de l&#39;extraction ont été collectées et sont disponibles.
    * Cette valeur est une estimation qui, bien qu’elle soit calculée intelligemment, ne doit pas être considérée comme exacte. Plusieurs facteurs peuvent modifier la durée réelle.
    * Pendant l’ingestion, cette valeur sera également disponible dans la boîte de dialogue des durées, accessible via l’action &quot;**Afficher les durées**&quot; de l’ingestion.
