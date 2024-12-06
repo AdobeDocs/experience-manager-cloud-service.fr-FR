@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 2%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## Transformations de réponse {#response-transformations}
 
-Les règles de transformation de réponse vous permettent de définir et de désinitialiser des en-têtes des réponses sortantes du CDN. Consultez également l’exemple ci-dessus pour référencer une variable précédemment définie dans une règle de transformation de requête.
+Les règles de transformation de réponse vous permettent de définir et de désinitialiser des en-têtes des réponses sortantes du CDN. Consultez également l’exemple ci-dessus pour référencer une variable précédemment définie dans une règle de transformation de requête. Le code d’état de la réponse peut également être défini.
 
 Exemple de configuration :
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Actions**
@@ -291,6 +300,7 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
 | **set** | reqHeader, valeur | Définit un en-tête spécifié sur une valeur donnée dans la réponse. |
+|          | respProperty, value | Définit une propriété de réponse. Prend uniquement en charge la propriété &quot;status&quot; pour définir le code d’état. |
 | **unset** | respHeader | Supprime un en-tête spécifié de la réponse. |
 
 ## Sélecteurs d’origine {#origin-selectors}
