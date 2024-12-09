@@ -3,13 +3,13 @@ title: Mappage de chemin pour Edge Delivery Services
 description: Découvrez comment mapper les chemins de page utilisés sur l’instance de création AEM aux chemins de page publics utilisés sur le site web et contrôler le contenu publié sur Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
-workflow-type: ht
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Mappage de chemin pour Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Découvrez comment mapper les chemins de page utilisés sur l’instance de cré
 Pour pouvoir créer du contenu WYSIWYG à l’aide d’AEM et le publier sur Edge Delivery Services, vous devez configurer le mappage de chemin de votre projet. Ce mappage a deux objectifs.
 
 * Il mappe et crée une relation entre les chemins de page utilisés sur votre instance de création AEM et les chemins de page publics utilisés sur votre site web.
-* Il contrôle quel contenu (pages, feuilles, ressources, etc.) est publié dans Edge Delivery Services.
+* Il contrôle le contenu (pages, feuilles, ressources, etc.) qui est publié sur les Edge Delivery Services.
 
 Le mappage du chemin doit être configuré individuellement pour chaque projet et en fonction du contenu et de la structure de l’URL du projet. Il est utilisé par AEM lors de la publication de contenu et de l’édition de contenu dans l’[éditeur universel.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
@@ -79,7 +79,7 @@ Les mappages de vos chemins d’accès peuvent être configurés de l’une des 
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{

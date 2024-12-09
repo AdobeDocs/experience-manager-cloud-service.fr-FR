@@ -4,8 +4,8 @@ description: Découvrez comment gérer les données taxonomiques pour utiliser d
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ Une fois votre taxonomie publiée, ses informations peuvent être exploitées pa
 
 Vous pouvez accéder à la taxonomie en tant que données JSON à l’adresse suivante.
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
 Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de votre taxonomie au fichier `paths.json` de votre projet.](#paths-json) Les données de taxonomie sont renvoyées sous forme de données JSON, comme dans l’exemple suivant.
 

@@ -4,8 +4,8 @@ description: Ce guide vous permet de maîtriser l’exécution d’un nouveau si
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
-workflow-type: ht
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 100%
 
@@ -180,7 +180,7 @@ Lorsque vous avez terminé de modifier votre nouveau site à l’aide de l’éd
 
 1. Ouvrez un nouvel onglet dans le même navigateur et accédez à l’URL de votre nouveau site.
 
-   * `https://main--<repository-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.aem.page`
 
 1. Affichez le contenu publié.
 
