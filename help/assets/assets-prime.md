@@ -3,10 +3,11 @@ title: Assets Prime
 description: En savoir plus sur les aspects clés d’Assets Prime, tels que les avantages clés, les types d’utilisateurs et leurs privilèges.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 16%
 
 ---
 
@@ -19,21 +20,27 @@ ht-degree: 3%
 
 Assets as a Cloud Service Prime comprend une gestion des actifs numériques légère qui vous permet d’exécuter diverses fonctionnalités clés, telles que :
 
-* **Gestion des ressources et services de bibliothèque** &#x200B; : outils qui permettent aux utilisateurs d’ingérer, de stocker, de cataloguer, de contrôler, de gérer et de gérer les ressources numériques d’une marque dans un référentiel centralisé.
+* **Gestion des ressources et services de bibliothèque** : outils qui permettent aux utilisateurs et utilisatrices d’ingérer, de stocker, de cataloguer, de contrôler, de gérer et de gouverner les ressources numériques d’une marque dans un référentiel centralisé.
 
-* **Recherche, découverte et Collaboration** : outils qui permettent aux utilisateurs de parcourir, découvrir, partager et collaborer sur les ressources dont ils ont besoin pour créer des expériences client riches.
+* **Recherche, découverte et collaboration** : outils qui permettent aux utilisateurs et utilisatrices de parcourir, de découvrir, de partager et de collaborer sur les ressources dont ils ont besoin pour créer des expériences client riches.
 
-* **Sécurité et Rights Management** : outils de gestion de l’accès, des autorisations, des droits et de la sécurité pour garantir la conformité, la cohérence et l’intégrité de la marque.
+* **Sécurité et Rights Management** : outils de gestion de l’accès, des autorisations, des droits et de la sécurité pour garantir la conformité, la cohérence et l’intégrité de la marque.
 
-* **Connexions des Creative Cloud** : outils qui permettent aux équipes marketing et créatives de collaborer avec un accès, des commentaires, des révisions et des annotations simplifiés pour mettre à jour ou finaliser des ressources numériques.
+* **Connexions Creative Cloud** : outils qui permettent aux équipes marketing et créatives de collaborer avec un accès, des commentaires, des révisions et des annotations simplifiés pour mettre à jour ou finaliser des ressources numériques.
 
-* **Connexions Experience Cloud** : outils permettant de prendre en charge l’accès natif aux ressources numériques à partir d’autres applications et services Experience Cloud.
+* **Connexions Experience Cloud** : outils permettant de prendre en charge l’accès natif aux ressources numériques à partir d’autres applications et services Experience Cloud.
 
 * **Expérience du portail de distribution sans options d’extensibilité (Content Hub)** : outils permettant d’étendre l’accès aux ressources numériques approuvées d’une marque à des parties prenantes étendues afin d’assurer la cohérence de l’utilisation et de la marque.
 
-* **Intégrations** : intégrations à d’autres applications Adobe et non Adobe.
+* **Intégrations** : intégrations à d’autres applications Adobe et autres qu’Adobe.
 
-* **Dynamic Media (module complémentaire)** : outils permettant de transformer et de diffuser des images, des vidéos et d’autres contenus émergents pour des expériences multimédias riches, interactives et à grande échelle sur n’importe quel appareil.
+* **Dynamic Media (module complémentaire)** : outils permettant de transformer et de diffuser des images, des vidéos et d’autres contenus émergents pour des expériences multimédias riches, interactives et à grande échelle sur n’importe quel appareil.
+
+  >[!NOTE]
+  >
+  >Dynamic Media avec les fonctionnalités OpenAPI, qui vous permet d’accéder à des modificateurs d’image de base tels que la rotation, le recadrage (manuel uniquement - aucun recadrage intelligent), le basculement, la taille, la préférence, la hauteur, la largeur, la qualité, le format et la diffusion vidéo adaptative en continu, est également disponible avec Assets Prime. Contactez l’équipe du compte d’Adobe pour en savoir plus.
+
+1. [Créez un programme](/help/journey-onboarding/create-program.md).
 
 Toutefois, à mesure que vos besoins en DAM s’accroissent et que vous avez besoin de davantage de fonctionnalités, telles que l’extensibilité de l’interface utilisateur, l’automatisation pilotée par les API et le déploiement de code personnalisé, vous devez envisager d’effectuer la mise à niveau vers [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
@@ -77,13 +84,13 @@ L’administrateur système est automatiquement autorisé en tant qu’administr
 
 Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de produit suivants :
 
-* Administrateurs AEM
+* Administrateurs et administratrices AEM
 
 * Utilisateurs et utilisatrices AEM
 
-* [Utilisateurs collaborateurs d’AEM Assets](#onboard-collaborator-users)
+* [Utilisateurs collaborateurs et utilisatrices collaboratrices AEM Assets](#onboard-collaborator-users)
 
-* [Utilisateurs AEM Assets Power](#onboard-power-users)
+* [Utilisateurs et utilisatrices experts AEM Assets](#onboard-power-users)
 
 
 ![Profils de produit AEM Assets](assets/aem-assets-product-profiles.png)
