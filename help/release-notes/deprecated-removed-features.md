@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="Fonctionnalités obsolètes et supprimées dans AEM as a Cloud Service"
->abstract="AEM as a Cloud Service dispose d’un modèle de déploiement natif dans le cloud. Cet onglet met en évidence les fonctionnalités remplacées par leurs homologues natifs dans le cloud."
+>title="Fonctionnalités obsolètes et supprimées dans AEM as a Cloud Service"
+>abstract="AEM as a Cloud Service dispose d’un modèle de déploiement natif dans le cloud. Cet onglet met en évidence les capacités et fonctionnalités remplacées par leurs homologues natifs cloud."
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur globale apportée à la clientèle, le tout en faisant toujours attention à la rétrocompatibilité. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] utilisant un modèle de déploiement natif dans le cloud, il remplace certaines fonctionnalités par des homologues natifs dans le cloud.
 
