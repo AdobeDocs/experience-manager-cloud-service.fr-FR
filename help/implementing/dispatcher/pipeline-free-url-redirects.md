@@ -3,10 +3,11 @@ title: Redirections d’URL sans pipeline
 description: Découvrez comment déclarer des redirections 301 ou 302 sans accès aux pipelines Git ou Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-Ensuite, dans un fichier de configuration Apache tel que `rewrites/rewrite.rules` ou `<yourfile>.vhost`, vous devez configurer le fichier map référencé par la propriété name (`my.map` dans l’exemple ci-dessus).
+Ensuite, dans un fichier de configuration Apache tel que `rewrites/rewrite.rules` ou `<yourfile>.vhost`, vous devez configurer le fichier map référencé par la propriété name (`my.map` dans l’exemple ci-dessus). Une fois chargé, ce fichier map est enregistré dans le stockage local du dispatcher sous l’emplacement **fixed** `/tmp/rewrites/`.
 
-La directive `RewriteMap` doit indiquer que les données sont stockées dans un format de fichier de gestionnaire de base de données (DBM) à l’aide du format `sdbm` (DBM simple).
+La directive `RewriteMap` doit indiquer que les données sont stockées dans un format de fichier de gestionnaire de base de données (DBM) à l’aide du format `sdbm` (DBM simple), et que le chemin d’accès au fichier complet est dérivé du préfixe d’emplacement de stockage et de la propriété name.
 
 Le reste de la configuration dépend du format de `redirectmap.txt`. Le format le plus simple, illustré dans l’exemple ci-dessous, est un mappage un-à-un entre l’URL d’origine et l’URL mappée :
 
