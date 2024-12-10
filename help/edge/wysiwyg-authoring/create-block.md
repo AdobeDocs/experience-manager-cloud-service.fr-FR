@@ -4,10 +4,10 @@ description: Découvrez comment créer des blocs instrumentés à utiliser avec 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 100%
+source-wordcount: '1415'
+ht-degree: 96%
 
 ---
 
@@ -45,13 +45,13 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ### Créer une définition et un modèle de bloc {#create-block-model}
 
-1.Clonez le projet GitHub local que vous avez créé dans le [Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et ouvrez-le dans l’éditeur de votre choix.
+1\. Cloner le projet GitHub local que vous avez créé dans le guide de prise en main [ du développeur pour la création WYSIWYG avec des Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) et l’ouvrir dans un éditeur de votre choix.
 
 * L’éditeur Microsoft Code est utilisé ici à titre d’exemple.
 
 ![Clonage du projet](assets/create-block/clone.png)
 
-&#x200B;2. Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+2\. Modifiez le fichier `component-definition.json` à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-&#x200B;3. Modifiez le fichier `component-models.json` à la racine du projet, ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
+3\. Modifiez le fichier `component-models.json` à la racine du projet et ajoutez la [définition de modèle](/help/implementing/universal-editor/field-types.md#model-structure) suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
 
 * Consultez le document [Modélisation du contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) pour plus d’informations sur les éléments à prendre en compte lors de la création de modèles de contenu.
 
@@ -119,7 +119,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-&#x200B;4. Modifiez le fichier `component-filters.json` à la racine du projet, ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) afin de pouvoir ajouter le bloc à n’importe quelle section, puis enregistrez le fichier.
+4\. Modifiez le fichier `component-filters.json` à la racine du projet et ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) afin de permettre d’ajouter le bloc à n’importe quelle section, puis l’enregistrement du fichier.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-&#x200B;5. À l’aide de Git, validez ces modifications dans votre branche `main`.
+5\. À l’aide de Git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
@@ -190,13 +190,13 @@ Maintenant que votre bloc de citation de base est défini et validé dans l’ex
 
 Maintenant que vous avez un bloc de citation fonctionnel, vous pouvez lui appliquer un style.
 
-1. Revenez à l’éditeur de votre projet.
+1\. Revenez à l’éditeur de votre projet.
 
-2. Créez un dossier `quote` dans le dossier `blocks`.
+2\. Créez un dossier `quote` dans le dossier `blocks`.
 
 ![Création d’un dossier de citation](assets/create-block/new-folder.png)
 
-&#x200B;3. Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration du bloc en ajoutant le code JavaScript suivant, puis enregistrez le fichier.
+3\. Dans le nouveau dossier `quote`, ajoutez un fichier `quote.js` pour implémenter la décoration du bloc en ajoutant le code JavaScript suivant, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;4. Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant, puis enregistrez le fichier.
+4\. Dans le dossier `quote`, ajoutez un fichier `quote.css` pour définir le style du bloc en ajoutant le code CSS suivant, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;5. À l’aide de Git, validez ces modifications dans votre branche `main`.
+5\. À l’aide de Git, validez ces modifications dans votre branche `main`.
 
 * La validation dans `main` est effectuée à titre d’exemple uniquement. [Respectez les bonnes pratiques](https://www.aem.live/docs/dev-collab-and-good-practices) et utilisez une demande d’extraction lors d’un travail sur un projet réel.
 
-&#x200B;6. Revenez à l’onglet du navigateur de l’éditeur universel dans lequel vous étiez en train de modifier la page de votre projet, puis actualisez-la pour afficher le bloc avec le style appliqué.
+6\. Revenez à l’onglet de navigateur dans l’éditeur universel dans lequel vous étiez en train de modifier la page de votre projet, puis rechargez la page pour afficher le bloc avec son style appliqué.
 
-&#x200B;7. Le bloc de citation avec le style appliqué s’affiche ainsi sur la page.
+7\. Vous voyez ainsi sur la page le bloc de citation avec son style appliqué.
 
 ![Bloc de citation avec son style appliqué dans l’éditeur universel](assets/create-block/quote-styled.png)
 
-&#x200B;8. Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.aem.page`.
+8\. Vérifiez que les modifications ont été transférées en production en accédant à la page publiée. Le lien sera similaire à `https://<branch>--<repo>--<owner>.aem.page`.
 
 ![Bloc de citation publié et avec son style appliqué](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ Consultez le document [Modélisation du contenu pour la création WYSIWYG avec d
 >[!TIP]
 >
 >Pour une présentation exhaustive de la création d’un projet Edge Delivery Services adapté à la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM GEM.](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
