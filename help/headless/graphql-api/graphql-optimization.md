@@ -4,10 +4,10 @@ description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 95%
+source-wordcount: '1824'
+ht-degree: 98%
 
 ---
 
@@ -82,16 +82,6 @@ Voir :
 
 * [Mettre en cache vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Gérer le cache pour vos requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### Utilisation de la prémise en cache d’GraphQL AEM {#use-aem-graphql-pre-caching}
-
-**Recommandation**
-
-Cette fonctionnalité permet à AEM de mettre en cache le contenu dans le cadre de requêtes GraphQL qui peuvent ensuite être assemblées sous forme de blocs dans la sortie JSON plutôt que ligne par ligne.
-
-**Références supplémentaires**
-
-Contactez l’Adobe pour activer cette fonctionnalité pour votre programme et vos environnements AEM Cloud Service.
 
 ### Optimisation des requêtes GraphQL {#graphql-query-optimization}
 
