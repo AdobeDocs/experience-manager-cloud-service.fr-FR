@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
+source-git-commit: c8a798e1f1b7234f91682b6e5ef7072e024df022
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 98%
+source-wordcount: '693'
+ht-degree: 36%
 
 ---
 
@@ -16,78 +16,76 @@ ht-degree: 98%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 18598 {#18598}
+## Version 18751 {#18751}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18598, publiée le 13 novembre 2024. La version de maintenance précédente était la version 18311. La version 18459 a été rendue privée en raison d’un problème.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 18751, publiée le jeudi 11 décembre 2024. La version de maintenance précédente était la version 18598.
 
-L’activation des fonctionnalités de la version 2024.11.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation des fonctionnalités de la version 2025.1.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-18598}
+### Améliorations {#enhancements-18751}
 
-* CQ-4357471 : ajout de la prise en charge de la traduction des dictionnaires i18n dans AEMaaCS.
-* FORMS-11646 : configuration de variables globalContext pour les pages pertinentes AEM Forms.
-* FORMS-14833 : les fragments de formulaire adaptatif peuvent désormais être inclus dans le document d’enregistrement final (DE) avec AEM Forms.
-* FORMS-14255 : les utilisateurs et utilisatrices peuvent désormais bénéficier d’une fonctionnalité d’enregistrement automatique qui sauvegarde automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre.
-* SITES-23591 : fragments de contenu : mise à niveau des fragments de contenu pour la prise en charge de l’UUID.
-* SITES-25440 : fragments de contenu : API de recherche CFM pour afficher le statut de la réplication.
-* SITES-24369 : fragments de contenu : améliorations apportées à la documentation OpenAPI.
-* SITES-25478 : fragments de contenu : ajout de la prise en charge en back-end des références de ressources externes.
-* SITES-26119 : fragments de contenu : ajout de la prise en charge des références de ressources externes dans le type de référence.
-* SITES-24609 : Fragments de contenu : amélioration de la validation lors de la suppression de fragments de contenu.
-* SITES-21199 : service Edge Delivery avec l’éditeur universel : ajout de la prise en charge des modèles créés à partir de pages.
-* SITES-20311 : Edge Delivery avec l’éditeur universel : ajout de la prise en charge de l’import de fichiers CSV dans les feuilles de calcul.
-* SITES-24821 : service Edge Delivery avec l’éditeur universel : configuration d’aem.page / aem.live comme valeur par défaut pour intégrer Edge Delivery.
+* SKYOPS-88509 : prise en charge de Java 21 pour le SDK AEM.
 
-### Problèmes résolus {#fixed-issues-18598}
+### Problèmes résolus {#fixed-issues-18751}
 
-* CQ-4358730 : échec du CQPagePreviewGenerator lorsqu’il y a plus de 10 clés à traduire.
-* CQ-4358028 : la création d’un projet AEM échoue lorsqu’un utilisateur ou une utilisatrice ayant uniquement les droits d’administration de projet charge une nouvelle miniature sur la page de création du projet.
-* FORMS-14978 : activation du chargement de page pour un formulaire basé sur les composants principaux pour l’éditeur de thème.
-* FORMS-15682 : le problème concerne l’intégration d’AEM Forms et de Dynamics FDM. Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, le document d’enregistrement (DE) n’est pas envoyé en tant que pièce jointe PDF au champ d’entité spécifié.
-* FORMS-15799 : la page Adobe Sign GovCloud Signature ne s’affiche pas dans l’iframe.
-* FORMS-16113 : lorsqu’un utilisateur ou une utilisatrice, membre de l’équipe d’administration du compte Adobe Sign, tente d’accéder à un document envoyé par une autre personne membre de l’équipe, l’API de contrat peut renvoyer un ID différent de celui généré lors de la création.
-* FORMS-16596 : problème d’accessibilité : boutons désactivés non reconnus par le lecteur d’écran.
-* GRANITE-53907 : impossible d’identifier la personne utilisant le service comme super-utilisateur ou super-utilisatrice du workflow.
-* SKYOPS-90560 : la dernière version du modèle Sling a un impact sur ses performances d’export.
-* SITES-10575 : MSM : le chargeur Bloomfilter de plan directeur tente de charger plus de 100 000 lignes.
-* SITES-20755 : fragments de contenu : la référence de ressource avec actualisation de l’UUID n’affiche pas la miniature.
-* SITES-26253 : fragments de contenu : migration UUID : modification de la rubrique de traitement Sling pour qu’elle devienne générique.
-* SITES-21338 : fragments de contenu : le point d’entrée referencedBy ne renvoie pas la référence de page correcte.
-* SITES-24421 : fragments de contenu : la modification du point d’entrée de fragment de contenu ne fonctionne pas pour les fragments de contenu récupérés via GET CF.
-* SITES-25461 : fragments de contenu : le filtrage par modèle dans la recherche de fragment de contenu doit pas être sensible à la casse.
-* SITES-25471 : fragments de contenu : correction de la validation des modèles globaux dans ModelValidatorServlet.
-* SITES-25795 : fragments de contenu : échec de l’API du modèle de fragment de contenu lorsqu’aucune date cq n’est définie.
-* SITES-25817 : fragments de contenu : amélioration de promoteLaunch : mise à jour de la dernière promotion pour les lancements de fragment de contenu.
-* SITES-26030 : fragments de contenu : le point d’entrée /referencesTree ne renvoie pas l’en-tête nécessaire.
-* SITES-26031 : fragments de contenu : le statut de la réplication n’est pas renvoyé sur le point d’entrée de recherche CFM.
-* SITES-26213 : fragments de contenu : l’annulation de la publication des fragments de contenu ne doit valider que les références publiées.
-* SITES-26226 : fragments de contenu : problème de démarrage du workflow lorsqu’aucun des chemins d’accès indiqués n’est utilisable.
-* SITES-26238 : fragments de contenu : les références de ressources renvoyées par l’API ont un ordre différent de celui renvoyé par JCR.
-* SITES-25456 : événements : lors du déplacement d’une page, un événement de suppression de page est également généré, en plus de l’événement de déplacement de page.
-* SITES-25658 : événements : le niveau et la sourceUrl ne sont pas renseignés dans les événements de statut du contenu de la page.
-* SITES-6497 : lancements : la page de création du lancement ne fonctionne pas.
-* SITES-25938 : lancements : suppression inattendue après le projet de traduction.
-* SITES-25393 : Edge Delivery avec l’éditeur universel : nœuds de texte perdus lors du rendu de texte enrichi formaté avec un seul paragraphe.
-* SITES-24643 : Edge Delivery avec l’éditeur universel : les attributs de métadonnées OpenGraph et Twitter ne fonctionnent pas dans le modèle de métadonnées de page.
-* SITES-25401 : fragments d’expérience : mise à jour lente de la référence XF.
+* ASSETS-42802 : le bouton Retour sur MFE ne fonctionne pas toujours et affiche une boîte de dialogue supplémentaire.
+* ASSETS-44148 : correction de l’événement NODE_MOVED dans AEM peut entraîner une erreur NPE.
+* ASSETS-44418 : correction de l’environnement Correct non configurée sur la ligne d’horizon.
+* ASSETS-44821 : correction du filtre d’événement Mise à jour afin d’inclure les données codées URL de formulaire pour les événements de chargement.
+* CNTBF-298 : la copie de contenu fixe échoue avec des conflits d’UUID.
+* CNTBF-331 : [content-copy-bundle] version 2.0.14.
+* FORMS-16572 : supprimez les échecs de test de workflow pour la génération du SDK Java 21.
+* GRANITE-36205 : mise à jour automatisée pour la version interne de Oak dans QS.
+* GRANITE-53704 : réévaluer Sling Discovery sur Repository Service.
+* GRANITE-54300 : mise à jour Oak vers la dernière version publique (1.70.0).
+* GRANITE-54416 : mettre à jour Filevault vers la version 3.8.2.
+* GRANITE-54462 : configurez SubscriberAgents pour utiliser hc.tags de &quot;systemready&quot;.
+* GRANITE-54542 : mettez à jour la dépendance commons-io vers 2.17.0.
+* GRANITE-54658 : Ajoutez des configurations OSGi de taille de lot et delayFactor pour fullGC dans QS.
+* GRANITE-54696 : plage d’importation étendue pour l’API Jackrabbit.
+* GRANITE-54803 : Désactivez ClusterAtExchange dans AEM lorsque imsauth est actif.
+* GRANITE-55095 : mise à jour Oak vers la dernière version publique (1.72.0).
+* GUIDES-2006 : l’état du document marqué comme Terminé revient à Brouillon avant d’enregistrer une nouvelle version, ce qui signifie que l’état Terminé ne persiste dans aucune version du document.
+* GUIDES-21840 : dans la sortie du PDF natif, les titres de chapitre sont absents de la table des matières, ce qui entraîne une hiérarchie incorrecte.
+* GUIDES-19558 : modification, puis enregistrement d’une ligne de base sur un délai d’expiration de configuration du cloud après 1 minute si la ligne de base comporte un grand nombre de rubriques ou de mappages.
+* GUIDES-19733 : La traduction des cartes à l’aide de la ligne de base devient lente et ne parvient pas à charger la liste de tous les fichiers de rubriques et de mappages associés.
+* SITES-26798 : Le lancement de la promotion automatique ne met pas à jour l’état de la promotion (date de promotion).
+* SITES-27137 : Suppression de la dépendance des mesures Sling commons de MSM core.
+* SKYOPS-75446 : une AEM fixe renvoie parfois un 404 ou des pages avec du contenu manquant.
+* SKYOPS-76366 : Aucune mesure Jetty Threadpool dans AEM version 15977 et ultérieure.
+* SKYOPS-82371 : java.io.IOException: classFile.delete() failed.
+* SKYOPS-83369 : les déploiements d’AEM ne démarrent pas si l’exécution de la tâche de transformation ne génère pas de lots.
+* SKYOPS-83910 : correction de problèmes de simultanéité détectés dans SKYOPS-82371.
+* SKYOPS-84821 : définissez la configuration sling.include.checkcontenttype du servlet principal Sling sur true.
+* SKYOPS-85798 : la tâche de transformation fixe génère des définitions d’index vides.
+* SKYOPS-86251 : effectuez une mise à niveau vers AEM Analyser core 1.5.6 et activez l’analyseur d’import-package-produit dans la tâche de transformation.
+* SKYOPS-86710 : Suppression des échecs de test Minify pour la génération du sdk java 21.
+* SKYOPS-86745 : mise à jour de Sling ResourceResolver 1.12.2.
+* SKYOPS-89616 : correction de l’impossibilité de créer un compte technique dans Adobe Developer Console.
+* SKYOPS-89691 : correction de l’identifiant d’artefact incorrect utilisé pour les avertissements ASM.
+* SKYOPS-89699 : avertissements manquants pour les anciennes versions Groovy incorporées dans la version &quot;orbinson&quot; de la console Groovy.
+* SKYOPS-88664 : consigne et protège contre un cas lorsque le fichier de carte téléchargé a une limite de ligne supérieure à 1024.
+* SKYOPS-89734 : Version du dispatcher 2.0.235.
 
-### Problèmes connus {#known-issues-18598}
+Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans Experience Manager Guides, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Problèmes connus {#known-issues-18751}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-18598}
+### Fonctionnalités et API obsolètes {#deprecated-18751}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-18598}
+### Correctifs de sécurité {#security-18751}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 21 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 3 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-18598}
+### Technologies intégrées {#embedded-tech-18751}
 
 | Technologie | Version | Lien |
 |---|---|---|
-| AEM Oak | 1.70.0 | [API Oak 1.70.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
+| AEM Oak | 1.72.0 | [API Oak 1.72.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.72.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Composants principaux d’AEM | 2.27.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
