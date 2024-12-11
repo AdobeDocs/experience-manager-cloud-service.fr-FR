@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 64%
 
 ---
@@ -74,8 +74,6 @@ Le profil de traitement peut inclure un rendu FPO (For Placement Only). Consulte
 
 ### Création d’un profil standard {#create-standard-profile}
 
-Pour créer un profil de traitement standard, procédez comme suit :
-
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]**. Cliquez sur **[!UICONTROL Créer]**.
 1. Fournissez un nom qui vous aide à identifier de manière unique le profil lors de l’application à un dossier.
 1. Pour générer des rendus FPO, dans l’onglet **[!UICONTROL Image]**, activez **[!UICONTROL Créer le rendu FPO]**. Saisissez une valeur **[!UICONTROL Qualité]** de 1 à 100.
@@ -124,8 +122,6 @@ Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des
 >Vous ne pouvez pas modifier les métadonnées standard à l’aide des applications personnalisées. Vous ne pouvez que modifier des métadonnées personnalisées.
 
 ### Création d’un profil personnalisé {#create-custom-profile}
-
-Pour créer un profil personnalisé, procédez comme suit :
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** > **[!UICONTROL Créer]**.
 1. Sur la page Profil de traitement, cliquez sur l’onglet **[!UICONTROL Personnalisé]**, puis sur **[!UICONTROL Ajouter nouveau]**.
