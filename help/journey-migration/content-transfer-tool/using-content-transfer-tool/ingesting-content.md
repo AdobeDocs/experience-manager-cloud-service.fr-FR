@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 38%
+source-wordcount: '3412'
+ht-degree: 37%
 
 ---
 
@@ -48,6 +48,9 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
 
    >[!NOTE]
    > Si le niveau cible est `Author`, l’instance de création est arrêtée pendant la durée de l’ingestion et n’est pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance). La raison est de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaît en veille pendant l’ingestion de l’instance de création.
+
+   >[!NOTE]
+   > Si le niveau cible est `Publish`, l’instance de publication reste en cours d’exécution lors de l’ingestion.  Cependant, si le processus de compression est en cours d’exécution lors de l’ingestion, il est probable qu’un conflit entre les deux processus se produise.  Pour cette raison, le processus d’ingestion 1) désactive le script de compression minutée de sorte que la compression ne démarre pas pendant l’ingestion, et 2) vérifie si la compression est en cours d’exécution et, dans l’affirmative, attend qu’elle se termine avant que l’ingestion ne se poursuive.  Si l’ingestion par publication prend plus de temps que prévu, vérifiez les journaux d’ingestion pour connaître les instructions de journal associées.
 
    * **Wipe:** Sélectionnez la valeur `Wipe`
       * L’option **Wipe** définit le point de départ de la destination de l’ingestion. Si **Wipe** est activé, la destination, y compris tout son contenu, est réinitialisée à la version de l’AEM spécifiée dans Cloud Manager. Si elle n’est pas activée, la destination conserve son contenu actuel comme point de départ.
