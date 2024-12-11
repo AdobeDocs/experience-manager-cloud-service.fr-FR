@@ -4,10 +4,10 @@ description: Découvrez comment déclarer des redirections 301 ou 302 sans accè
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,14 @@ AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.ad
 Le coeur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher de charger (ou recharger) un ou plusieurs fichiers de mappage de réécriture qui ont été placés à un emplacement spécifié dans le référentiel de publication. Il est important de mentionner que la manière dont les fichiers y parviennent ne fait pas partie de cette fonctionnalité, mais vous pouvez envisager l’une des méthodes suivantes :
 
 * Ingestion du mappage de réécriture en tant que ressource dans l’interface utilisateur de création et publication.
-* L’installation du [gestionnaire de carte de réécriture ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html), qui comprend une interface utilisateur pour gérer les mappages d’URL et peut également publier le fichier de carte de réécriture.
+* L’installation du [gestionnaire de carte de réécriture ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([ au moins version 6.7.0 ou supérieure](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), qui comprend une interface utilisateur pour gérer les mappages d’URL et peut également publier le fichier de carte de réécriture.
 * Flexibilité totale en écrivant une application personnalisée. Par exemple, une interface utilisateur ou une interface de ligne de commande pour gérer les mappages d’URL ou un formulaire pour charger une carte de réécriture, qui utilise ensuite AEM API pour publier le fichier de mappage de réécriture.
 
 >[!NOTE]
 > Cette fonctionnalité nécessite AEM version **18311 ou supérieure**.
+
+>[!NOTE]
+> L’utilisation de cette fonctionnalité de Rewrite Map Manager nécessite ACS Commons version **6.7.0 ou supérieure**.
 
 ## La carte de réécriture {#rewrite-map}
 
