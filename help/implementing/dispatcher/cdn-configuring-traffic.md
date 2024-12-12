@@ -4,7 +4,7 @@ description: Découvrez comment configurer le trafic CDN en déclarant les règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
+source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 2%
@@ -431,7 +431,7 @@ data:
 Les emplacements d’une redirection peuvent être soit des littéraux de chaîne (par exemple, https://www.example.com/page), soit le résultat d’une propriété (par exemple, un chemin) qui est éventuellement transformée, avec la syntaxe suivante :
 
 ```
-experimental_redirects:
+redirects:
   rules:
     - name: country-code-redirect
       when: { reqProperty: path, like: "/" }
