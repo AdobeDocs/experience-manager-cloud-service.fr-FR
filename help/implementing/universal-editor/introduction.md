@@ -4,10 +4,10 @@ description: Découvrez comment l’éditeur universel permet la modification de
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 48%
+source-wordcount: '992'
+ht-degree: 49%
 
 ---
 
@@ -87,8 +87,7 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 À mesure que vous explorez l’éditeur universel et passez à l’implémentation dans vos propres projets, gardez à l’esprit les restrictions suivantes.
 
 * Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, Assets, etc.) doivent être des références en tant qu’instrumentation sur une seule page.
-* AEM as a Cloud Service est le seul AEM principal pris en charge.
-   * [La prise en charge d’AEM 6.5 s’inscrit dans le cadre d’un programme d’adoption précoce.](/help/release-notes/universal-editor/current.md#early-adoption)
+* AEM as a Cloud Service et [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls AEM arrière-plans pris en charge.
 * La version `2023.8.13099` ou supérieure d’AEM as a Cloud Service est requise.
 * Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
 * Dans AEM, Universal Editor prend en charge les mêmes navigateurs de bureau qu’AEM.
