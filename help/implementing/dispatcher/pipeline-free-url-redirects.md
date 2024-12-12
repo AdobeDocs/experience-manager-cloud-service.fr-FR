@@ -4,7 +4,7 @@ description: Découvrez comment déclarer des redirections 301 ou 302 sans accè
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 7968aa15df2a592efb41af228ee79e8c8d4e218b
+source-git-commit: 41d610728fe92b07db722694432653cf7f03ce9c
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -25,19 +25,19 @@ AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.ad
 
 * Les personnes qui assurent les redirections sont des utilisateurs professionnels, qui n’ont pas l’accès nécessaire pour valider les modifications de fichier dans le contrôle de code source ou la possibilité d’exécuter un pipeline de configuration de niveau web Cloud Manager.
 * Le nombre de redirections est compris entre quelques et des dizaines de milliers.
-* Vous souhaitez pouvoir utiliser une interface utilisateur, créée en tant que projet personnalisé ou à l’aide du [gestionnaire de cartes de réécriture ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html).
+* Vous souhaitez pouvoir utiliser une interface utilisateur, créée en tant que projet personnalisé ou à l’aide du [Gestionnaire de cartes de redirection ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html).
 
 Le coeur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher de charger (ou recharger) un ou plusieurs fichiers de mappage de réécriture qui ont été placés à un emplacement spécifié dans le référentiel de publication. Il est important de mentionner que la manière dont les fichiers y parviennent ne fait pas partie de cette fonctionnalité, mais vous pouvez envisager l’une des méthodes suivantes :
 
 * Ingestion du mappage de réécriture en tant que ressource dans l’interface utilisateur de création et publication.
-* L’installation du [gestionnaire de cartes de réécriture ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([au moins version 6.7.0 ou supérieure](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), qui comprend une interface utilisateur pour gérer les mappages d’URL et peut également publier le fichier de mappage de réécriture.
+* L’installation du [gestionnaire de cartes de redirection ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([au moins version 6.7.0 ou supérieure](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), qui comprend une interface utilisateur pour gérer les mappages d’URL et peut également publier le fichier de mappage de réécriture.
 * Flexibilité totale en écrivant une application personnalisée. Par exemple, une interface utilisateur ou une interface de ligne de commande pour gérer les mappages d’URL ou un formulaire pour charger une carte de réécriture, qui utilise ensuite AEM API pour publier le fichier de mappage de réécriture.
 
 >[!NOTE]
 > Cette fonctionnalité nécessite AEM version **18311 ou supérieure**.
 
 >[!NOTE]
-> L’utilisation de cette fonctionnalité de Rewrite Map Manager nécessite ACS Commons version **6.7.0 ou supérieure**.
+> L’utilisation de cette fonctionnalité par Redirect Map Manager nécessite ACS Commons version **6.7.0 ou supérieure**.
 
 ## La carte de réécriture {#rewrite-map}
 
