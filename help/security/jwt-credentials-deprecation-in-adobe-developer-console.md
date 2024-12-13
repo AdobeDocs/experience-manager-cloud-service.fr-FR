@@ -4,10 +4,10 @@ description: Découvrez l’impact de l’obsolescence des informations d’iden
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '483'
-ht-degree: 100%
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 63%
 
 ---
 
@@ -59,3 +59,35 @@ Les clientes et clients créent des projets Adobe Developer Console pour pouvo
 Lorsque Cloud Manager fournit des environnements AEM as a Cloud Service, un projet Adobe Developer Console est génèré automatiquement avec des informations d’identification JWT. Ce projet est marqué comme en lecture seule, comme illustré dans la copie d’écran ci-dessous. Les clientes et clients ne peuvent pas et ne doivent pas tenter de migrer ces projets vers des informations d’identification OAuth de serveur à serveur. Au lieu de cela, Adobe s’occupera de migrer ces projets, avant que les informations d’identification ne soient plus utilisables.
 
 ![Projets générés automatiquement](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## FAQ sur les projets générés automatiquement {#autogen-projects-faqs}
+
+Cette section répond aux questions les plus fréquentes sur l’obsolescence des informations d’identification JWT pour les projets générés automatiquement dans AEM as a Cloud Service.
+
+**Comment puis-je identifier les projets générés automatiquement ?**
+Accéder au Adobe Developer Console | Section Projets.  Les projets générés automatiquement par AEM as a Cloud Service comporteront une icône de cadenas avec un identifiant « généré automatiquement ».  Les projets générés automatiquement suivent le format AEM-p######-e##### et sont créés par l’utilisateur du compte technique.
+
+<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**Que faire si nous rencontrons des problèmes avec nos projets générés automatiquement ?**
+
+Contactez L’Assistance Clientèle D’Adobe [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+
+**Dois-je procéder à la migration de nos projets générés automatiquement ?**
+
+Aucune action n’est requise, car Adobe migrera les données générées automatiquement en votre nom pour les environnements disposant de la version AEM 17258 (août 2024) et ultérieure.
+
+**Quels sont les délais de migration des projets générés automatiquement ?**
+
+L’Adobe lancera une approche de migration progressive au premier trimestre 2025, en commençant par les environnements de développement.
+
+**Comment notre instance AEM as a Cloud Service sera-t-elle affectée si nous disposons d’une version d’AEM qui est plus ancienne que la 17258 de mise à jour d’AEM (août 2024) ?**
+
+Les intégrations de projets générées automatiquement cesseront de fonctionner si elles ne sont pas migrées vers OAuth d’ici juin 2025.
+
+Pour assurer une transition fluide, les clients doivent contacter rapidement l&#39;Assistance clientèle d&#39;Adobe [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) et commencer le processus de mise à jour vers la [dernière version d&#39;AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Cela laissera suffisamment de temps pour les tests de régression et permettra à l’Adobe de gérer efficacement la migration des projets.
+
+**Puis-je effectuer une mise à niveau vers une version OAuth prise en charge sans mettre à niveau ma version AEM as a Cloud Service AEM ?**
+
+Non. Pour assurer une transition fluide, les clients doivent contacter rapidement l&#39;Assistance clientèle d&#39;Adobe [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) et commencer le processus de mise à jour vers la [dernière version d&#39;AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Cela laissera suffisamment de temps pour les tests de régression et permettra à l’Adobe de gérer efficacement la migration des projets.
