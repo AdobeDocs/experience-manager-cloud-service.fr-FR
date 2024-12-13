@@ -1,20 +1,20 @@
 ---
 title: Comment gérer les métadonnées dans la vue Assets ?
-description: Découvrez comment gérer les métadonnées dans la vue Assets. Une meilleure gestion des métadonnées rend une ressource plus accessible, plus facile à gérer et à compléter.
+description: Découvrez comment gérer les métadonnées dans la vue Assets. Une meilleure gestion des métadonnées rend une ressource plus accessible, plus facile à gérer et plus complète.
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 93%
+source-wordcount: '1904'
+ht-degree: 89%
 
 ---
 
 # Métadonnées dans la vue Assets {#metadata}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Les métadonnées sont constituées de données ou de descriptions de données. Par exemple, vos images en tant que ressource peuvent contenir des informations sur l’appareil photo qui a pris la photo ou des informations relatives aux droits d’auteur. Ces informations représentent les métadonnées de l’image. Les métadonnées sont essentielles pour gérer efficacement des ressources. Elles constituent un ensemble de toutes les données disponibles pour cette ressource mais sans être nécessairement contenues dans cette ressource.
@@ -82,8 +82,8 @@ La vue Assets utilise la séquence suivante pour rechercher des noms de formulai
 
 Formulaire de sous-type MIME > Type MIME > `default` > Formulaire prêt à l’emploi
 
-Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire d’usine à tous les documents de PDF chargés.
-Cependant, si vous souhaitez attribuer un formulaire de métadonnées à un dossier [voir](#assign-metadata-form-folder).
+Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire prêt à l’emploi à tous les documents de PDF chargés.
+Cependant, si vous souhaitez affecter un formulaire de métadonnées à un dossier [voir](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -141,7 +141,7 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 
 ### Attribuer un formulaire de métadonnées à un dossier {#assign-metadata-form-folder}
 
-Vous pouvez également affecter un formulaire de métadonnées à un dossier dans votre déploiement de vue Assets. Le formulaire de métadonnées attribué à un dossier selon le type MIME est remplacé lorsque vous appliquez manuellement un formulaire de métadonnées à un dossier. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées.
+Vous pouvez également affecter un formulaire de métadonnées à un dossier dans votre déploiement de vues Assets. Le formulaire de métadonnées attribué à un dossier selon le type MIME est remplacé lorsque vous appliquez manuellement un formulaire de métadonnées à un dossier. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées.
 
 Pour attribuer un formulaire de métadonnées à un dossier :
 
@@ -155,7 +155,7 @@ Pour attribuer un formulaire de métadonnées à un dossier :
 
    Vous pouvez également accéder à la page des détails du dossier et sélectionner un formulaire de métadonnées dans les propriétés du dossier disponibles dans le volet de droite pour attribuer le formulaire de métadonnées au dossier.
 
-   ![Formulaire de métadonnées à partir des propriétés du dossier](assets/metadata-from-folder-props.png)
+   ![Formulaire de métadonnées des propriétés du dossier](assets/metadata-from-folder-props.png)
 
 ### Supprimer un formulaire de métadonnées des dossiers {#remove-metadata-form-folder}
 
@@ -170,6 +170,19 @@ Pour supprimer un formulaire de métadonnées d’un dossier :
 1. Sélectionnez le dossier et cliquez sur **[!UICONTROL Supprimer]**. Vous pouvez également sélectionner plusieurs dossiers dans la liste.
 
 Vous pouvez également accéder à la page des détails du dossier et sélectionner **[!UICONTROL Formulaire de métadonnées mappées sur le système]** dans le champ **[!UICONTROL Formulaires de métadonnées]** pour supprimer le formulaire de métadonnées affecté d’un dossier.
+
+### Utilisation du composant Lien dans le formulaire de métadonnées {#link-component-metadata-form}
+
+Le composant Link permet d’activer les URL externes, notamment les liens de stockage, les informations de copyright, les formulaires de contact, etc. Pour utiliser le composant Lien sur le formulaire de métadonnées, vous devez [configurer le formulaire de métadonnées](#metadata-forms).
+
+Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire de métadonnées :
+
+1. Accédez à la page des détails de la ressource et à **[!UICONTROL URL du lien]**.
+1. Ajoutez une URL que vous souhaitez utiliser pour rediriger pour la ressource sélectionnée.
+1. Cliquez sur **[!UICONTROL Ajouter un lien]**. Effectuez l’une des actions suivantes :
+   * Cliquez sur ![icône de copie](assets/do-not-localize/copy.svg) pour copier l’URL.
+   * Cliquez sur ![icône de modification](assets/do-not-localize/edit.svg) pour modifier l’URL.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
 ## Étapes suivantes {#next-steps}
 
