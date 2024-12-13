@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6895addee405a33f26b66a436ca7aff99e7ea0aa
+source-git-commit: 9bfca6d9868629c49faa5278eb5e972ca8688dc7
 workflow-type: tm+mt
-source-wordcount: '5914'
+source-wordcount: '5917'
 ht-degree: 99%
 
 ---
@@ -639,6 +639,7 @@ ht-degree: 99%
       + [Modifier des vidéos](/help/assets/edit-videos-assets-view.md)
       + [Afficher et gérer des rendus](/help/assets/renditions.md)
       + [Gérer des métadonnées des ressources](/help/assets/metadata-assets-view.md)
+      + [Modification des métadonnées en bloc](/help/assets/bulk-metadata-edit.md)
       + [Partager des ressources](/help/assets/share-links-for-assets-view.md)
       + [Gérer les collections](/help/assets/manage-collections-assets-view.md)
       + [Surveiller une ressource, des dossiers et des collections](/help/assets/manage-notifications-assets-view.md)
@@ -964,8 +965,8 @@ ht-degree: 99%
       + [Pages avec ressources DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Réutilisation du code sur plusieurs sites](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Réplication de la gestion multisite](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Réplication des environnements d’évaluation et de production](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Gestion multisite des réponses](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Réponses aux environnements d’évaluation et de production](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
       + [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)
