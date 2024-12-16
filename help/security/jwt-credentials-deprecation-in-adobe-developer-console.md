@@ -4,9 +4,9 @@ description: Découvrez l’impact de l’obsolescence des informations d’iden
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -64,11 +64,11 @@ Lorsque Cloud Manager fournit des environnements AEM as a Cloud Service, un
 
 Cette section répond aux questions les plus fréquentes sur l’obsolescence des informations d’identification JWT pour les projets générés automatiquement dans AEM as a Cloud Service.
 
-**Comment puis-je identifier les projets générés automatiquement ?**
-Accéder au Adobe Developer Console | Section Projets.  Les projets générés automatiquement par AEM as a Cloud Service comporteront une icône de cadenas avec un identifiant « généré automatiquement ».  Les projets générés automatiquement suivent le format AEM-p######-e##### et sont créés par l’utilisateur du compte technique.
+**Comment puis-je faire quels projets sont générés automatiquement ?**
 
-<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+Accéder au Adobe Developer Console | Section Projets.  Les projets générés automatiquement par AEM as a Cloud Service comporteront une icône de verrou avec un identifiant « généré automatiquement ».  Les projets générés automatiquement suivent le format AEM-p######-e##### et sont créés par l’utilisateur du compte technique.
 
+![Projets générés automatiquement](/help/security/assets/jwt-alert.png)
 
 **Que faire si nous rencontrons des problèmes avec nos projets générés automatiquement ?**
 
