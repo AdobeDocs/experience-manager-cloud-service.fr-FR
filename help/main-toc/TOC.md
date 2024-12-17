@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd502ff77faea5d6e7bbe6d39c0c22cb54e3c165
+source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
 workflow-type: tm+mt
 source-wordcount: '5929'
 ht-degree: 99%
@@ -479,6 +479,7 @@ ht-degree: 99%
    + [Activation d’Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Utilisateurs collaborateurs et utilisatrices collaboratrices Assets](/help/assets/assets-collaborator-users.md)
+   + [Intégration d’AEM Assets lors de la création de contenu pour les Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Gestion des ressources numériques {#manage}
       + Sélecteur de ressources micro front-end {#asset-selector}
          + [Vue d’ensemble du sélecteur de ressources](/help/assets/overview-asset-selector.md)
@@ -649,7 +650,6 @@ ht-degree: 99%
       + [Informations de traçabilité du contenu](/help/assets/content-credentials.md)
       + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Extensibilité de l’interface utilisateur de la vue Assets d’AEM](/help/assets/aem-assets-view-ui-extensibility.md)
-      + [Intégration d’AEM Assets lors de la création de contenu pour les Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Hub de contenus {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
       + [Déployer Content Hub](/help/assets/deploy-content-hub.md)
