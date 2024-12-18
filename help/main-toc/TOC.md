@@ -967,8 +967,8 @@ ht-degree: 99%
       + [Pages avec ressources DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Réutilisation du code sur plusieurs sites](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Gestion multisite des réponses](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Réponses aux environnements d’évaluation et de production](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Gestion de plusieurs sites sans référentiel](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Environnements d’évaluation et de production sans référentiel](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
       + [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)
