@@ -4,7 +4,8 @@ description: Améliorez la sécurité des formulaires avec le service Turnstile 
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 16%
@@ -91,13 +92,13 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
    * **[!UICONTROL Paramètres de configuration] :** sélectionnez une configuration cloud configurée pour le service Captcha de tourniquet.
      >[!NOTE]
      >* Plusieurs configurations cloud peuvent être définies dans votre environnement dans un but similaire. Donc, choisissez le service avec soin. Si aucun service n’est répertorié, reportez-vous à la section [Configuration d’un tourniquet](#steps-to-configure-hcaptcha) pour savoir comment créer un conteneur de configuration afin de connecter votre environnement AEM Forms au service de tourniquet.
+
    * **[!UICONTROL Validation] :** effectuez une validation Captcha sous la forme d’un message d’erreur :
+
       * **Message d’erreur :** le message d’erreur à afficher à l’utilisateur ou à l’utilisatrice en cas d’échec de l’envoi du Captcha.
         >[!NOTE]
         >* Un message d’erreur ne s’affiche que si le CAPTCHA est renseigné côté client.
-
-
-1. Sélectionnez **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Terminé]**.
 
 
 Désormais, seuls les formulaires légitimes, dans lesquels le remplisseur de formulaire résout avec succès le problème posé par le service Turnstile, sont autorisés pour l’envoi du formulaire.
