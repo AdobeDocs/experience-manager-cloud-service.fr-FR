@@ -479,7 +479,7 @@ ht-degree: 99%
    + [Activation d’Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Utilisateurs collaborateurs et utilisatrices collaboratrices Assets](/help/assets/assets-collaborator-users.md)
-   + [Intégration d’AEM Assets lors de la création de contenu pour les Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + [Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Gestion des ressources numériques {#manage}
       + Sélecteur de ressources micro front-end {#asset-selector}
          + [Vue d’ensemble du sélecteur de ressources](/help/assets/overview-asset-selector.md)
@@ -640,7 +640,7 @@ ht-degree: 99%
       + [Modifier des vidéos](/help/assets/edit-videos-assets-view.md)
       + [Afficher et gérer des rendus](/help/assets/renditions.md)
       + [Gérer des métadonnées des ressources](/help/assets/metadata-assets-view.md)
-      + [Renommer en bloc](/help/assets/bulk-rename-assets-view.md)
+      + [Renommer en masse](/help/assets/bulk-rename-assets-view.md)
       + [Modification des métadonnées en bloc](/help/assets/bulk-metadata-edit.md)
       + [Partager des ressources](/help/assets/share-links-for-assets-view.md)
       + [Gérer les collections](/help/assets/manage-collections-assets-view.md)
@@ -1114,7 +1114,7 @@ ht-degree: 99%
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
