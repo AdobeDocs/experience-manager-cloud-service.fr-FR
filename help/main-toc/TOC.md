@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -755,8 +755,8 @@ ht-degree: 99%
             + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
             + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
             + [Utiliser Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilisation de Captcha dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Utilisation d’un Captcha de tourniquet dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Utiliser hCAPTCHA dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Utiliser Turnstile Captcha dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
