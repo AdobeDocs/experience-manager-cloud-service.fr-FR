@@ -1,15 +1,15 @@
 ---
-title: Intégration d’AEM Assets lors de la création de contenu pour les Edge Delivery Services
+title: Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services
 description: Découvrez comment intégrer AEM Assets aux Edge Delivery Services. Cette intégration vous permet d’intégrer AEM Assets à Microsoft Word et Google Docs, d’intégrer AEM Assets à l’éditeur universel, d’intégrer Dynamic Media aux fonctionnalités OpenAPI à l’éditeur universel et d’intégrer Dynamic Media aux fonctionnalités OpenAPI à Microsoft Word et Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
+source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
 workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Intégration d’AEM Assets lors de la création de contenu pour les Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
@@ -84,3 +84,4 @@ Configurez l’éditeur universel pour l’intégration à AEM Assets. Cette int
 
 * Voir [Configuration dans Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) pour ajouter une fonction de sélecteur de ressources personnalisée dans l’éditeur universel. Le sélecteur de ressources personnalisé vous permet d’insérer directement des ressources dans votre contenu de l’éditeur universel.
 * Voir [Présentation de l’extension](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) pour savoir comment accéder à AEM Assets et insérer les ressources lors de la création dans l’éditeur universel.
+
