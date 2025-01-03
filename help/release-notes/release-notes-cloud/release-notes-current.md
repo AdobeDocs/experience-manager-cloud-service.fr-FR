@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: d7156a79f004a454b7689b2085a97d4c513d52b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Présentation de la version de novembre 2024 pour un résumé des fonctionnalités ajoutées à la version 2024.11.0 :
+Consultez la vidéo Vue d’ensemble de la version de novembre 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.11.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
