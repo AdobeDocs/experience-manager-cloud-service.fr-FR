@@ -2,7 +2,7 @@
 title: Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services
 description: Découvrez comment intégrer AEM Assets aux Edge Delivery Services. Cette intégration vous permet d’intégrer AEM Assets à Microsoft Word et Google Docs, d’intégrer AEM Assets à l’éditeur universel, d’intégrer Dynamic Media aux fonctionnalités OpenAPI à l’éditeur universel et d’intégrer Dynamic Media aux fonctionnalités OpenAPI à Microsoft Word et Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Regardez cette vidéo pour découvrir comment diffuser des ressources à l’aid
 
 ## Exemple de site Edge Delivery Services{#example-of-an-Edge-Delivery-Services-site}
 
-Voir [Voyage WKND](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home). Ce site est créé à l’aide des fonctionnalités de création documentaire des Edge Delivery Services. Le contenu du site est créé dans [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) à l’aide de Dynamic Media avec des fonctionnalités OpenAPI pour la diffusion de ressources. Une fois créé, le contenu est publié directement à partir du document. Pour cette configuration de création basée sur des documents, tous les fichiers, dossiers, configurations, codes de style et de fonctionnalité essentiels du site web sont stockés dans ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Voir [Voyage WKND](http://bit.ly/3DExLnf). Ce site est créé à l’aide des fonctionnalités de création documentaire des Edge Delivery Services. Le contenu du site est créé dans [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) à l’aide de Dynamic Media avec des fonctionnalités OpenAPI pour la diffusion de ressources. Une fois créé, le contenu est publié directement à partir du document. Pour cette configuration de création basée sur des documents, tous les fichiers, dossiers, configurations, codes de style et de fonctionnalité essentiels du site web sont stockés dans ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
 
 ## Intégration d’AEM Assets aux flux de création basés sur l’éditeur universel pour les Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
 
