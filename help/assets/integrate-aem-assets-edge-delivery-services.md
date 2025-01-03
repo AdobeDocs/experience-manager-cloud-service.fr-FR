@@ -2,9 +2,9 @@
 title: Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services
 description: Découvrez comment intégrer AEM Assets aux Edge Delivery Services. Cette intégration vous permet d’intégrer AEM Assets à Microsoft Word et Google Docs, d’intégrer AEM Assets à l’éditeur universel, d’intégrer Dynamic Media aux fonctionnalités OpenAPI à l’éditeur universel et d’intégrer Dynamic Media aux fonctionnalités OpenAPI à Microsoft Word et Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
+source-git-commit: ed9d559e09746023577c27dafbd64a8c46acc5da
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,7 @@ Après avoir modifié le contenu, vous pouvez le publier dans les Edge Delivery 
 ## Intégration d’AEM Assets aux flux de création basés sur des documents pour les Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
 L’intégration d’AEM Assets aux outils de création basés sur des documents, tels que Microsoft Word ou Google Docs, fournit un sélecteur de ressources dans votre éditeur directement. Utilisez ce sélecteur de ressources pour accéder à AEM Assets et insérer des ressources approuvées dans votre document.
+Si vous disposez déjà d’un site web Edge Delivery Services, consultez [Plug-in AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) pour intégrer AEM Assets à votre projet AEM existant. Si vous ne disposez pas d’un site web Edge Delivery Services, consultez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration d’AEM Assets à un environnement de création basé sur les documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) ci-dessous.
 
 ### Conditions préalables{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
