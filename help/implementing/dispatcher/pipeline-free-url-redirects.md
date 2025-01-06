@@ -4,9 +4,9 @@ description: Découvrez comment déclarer des redirections 301 ou 302 sans accè
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.ad
 * Le nombre de redirections va de quelques dizaines de milliers à quelques dizaines de milliers.
 * Vous souhaitez avoir la possibilité d’utiliser une interface utilisateur, soit créée en tant que projet personnalisé, soit à l’aide du [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ou [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-Le cœur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher de charger (ou recharger) un ou plusieurs fichiers de mappage de réécriture qui ont été placés à un emplacement spécifié dans le référentiel de publication. Il est important de mentionner que la façon dont les fichiers y sont envoyés dépasse le cadre de cette fonctionnalité, mais vous pouvez envisager l’une des méthodes suivantes :
+Le cœur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher de charger (ou recharger) un ou plusieurs fichiers de mappage de réécriture qui ont été placés à un emplacement spécifié dans le référentiel de publication (afin qu’il soit téléchargeable à partir de l’instance de publication AEM). Il est important de mentionner que la façon dont les fichiers y sont envoyés dépasse le cadre de cette fonctionnalité, mais vous pouvez envisager l’une des méthodes suivantes :
 
 * Ingestion du mappage de réécriture en tant que ressource dans l’interface utilisateur de création et publication de celui-ci.
 * Installation du [Gestionnaire de mappages de redirection ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([version 6.7.0 ou ultérieure](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), qui comprend une interface utilisateur pour gérer les mappages d’URL et peut également publier le fichier de mappage de réécriture.
