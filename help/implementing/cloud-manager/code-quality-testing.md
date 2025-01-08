@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 96%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,21 +29,23 @@ Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/co
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
->[!NOTE]
+Vous pouvez télécharger la liste complète actuelle des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+
+>[!IMPORTANT]
 >
->Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>À compter du jeudi 13 février 2025 (Cloud Manager 2025.2.0), la qualité du code Cloud Manager utilise une version 9.9 de SonarQube mise à jour et une liste mise à jour des règles que vous pouvez [télécharger ici](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Évaluation à trois niveaux {#three-tiered-gate}
 
 Les problèmes identifiés par le test de qualité du code sont affectés à l’une des trois catégories.
 
-* **Critique** - il s’agit des problèmes qui entraînent une défaillance immédiate du pipeline.
+* **Critique** : problèmes qui entraînent une défaillance immédiate du pipeline.
 
-* **Important** - il s’agit des problèmes qui entraînent la mise en pause du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
+* **Important** : problèmes qui entraînent la mise en pause du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, ce qui permet au pipeline de continuer. Au contraire, les problèmes peuvent également être acceptés, ce qui entraîne l’arrêt du pipeline avec un échec.
 
-* **Informations** - Il s’agit des problèmes fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
+* **Info** - Problèmes fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ Les problèmes identifiés par le test de qualité du code sont affectés à l�
 
 ### Évaluations {#ratings}
 
-Les résultats de cette étape sont fournis sous forme de **notes**.
+Les résultats de cette étape sont fournis sous la forme **notes**.
 
 Le tableau suivant résume les notes et les seuils d’échec pour chacune des catégories Critique, Important et Informations.
 
@@ -68,7 +70,7 @@ Le tableau suivant résume les notes et les seuils d’échec pour chacune des c
 
 >[!NOTE]
 >
->Reportez-vous aux [Définitions des mesures de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) pour des définitions plus détaillées.
+>Reportez-vous aux [Définitions des mesures de SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) pour des définitions plus détaillées.
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ Le tableau suivant résume les notes et les seuils d’échec pour chacune des c
 
 ## Traitement des faux positifs {#dealing-with-false-positives}
 
-Le processus d’analyse de qualité n’est pas parfait et identifiera parfois de manière incorrecte des problèmes qui ne sont pas réellement problématiques. On parle alors de **faux positif**.
+Le processus d’analyse de la qualité n’est pas parfait et identifie parfois incorrectement les problèmes qui ne sont pas réellement des problèmes. Cet état est appelé **faux positif**.
 
 Dans ces cas, le code source peut être annoté avec l’annotation standard Java `@SuppressWarnings` en spécifiant l’ID de la règle comme attribut d’annotation. Par exemple, un faux positif courant est que la règle de SonarQube permettant de détecter les mots de passe codés en dur peut être agressive sur la façon dont un mot de passe codé en dur est identifié.
 
@@ -87,7 +89,7 @@ Le code suivant est assez courant dans un projet AEM, qui comporte du code pour 
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube lèvera alors une vulnérabilité de blocage. Mais après avoir examiné le code, vous identifiez qu’il ne s’agit pas d’une vulnérabilité et vous pouvez l’annoter avec l’identifiant de règle approprié.
+SonarQube soulève une vulnérabilité de blocage. Mais après avoir examiné le code, vous identifiez que ce problème n’est pas une vulnérabilité et vous pouvez l’annoter avec l’identifiant de règle approprié.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -106,14 +108,14 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 >[!NOTE]
 >
->Bien que la bonne pratique consiste à rendre l’annotation `@SuppressWarnings` aussi précise que possible (c’est-à-dire à annoter uniquement l’instruction ou le bloc à l’origine du problème), il est tout de même possible d’annoter au niveau de la classe.
+>Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible (par exemple en annotant uniquement l’instruction ou le bloc à l’origine du problème), il est également possible d’annoter au niveau de la classe.
 
 >[!NOTE]
 >Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Pour en savoir plus sur la sécurité dans Cloud Service, reportez-vous à [Vue d’ensemble de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimisation de l’analyse des packages de contenu {#content-package-scanning-optimization}
 
-Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des packages de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui sont efficaces lorsque certaines contraintes de conditionnement sont observées. Le plus significatif est l’optimisation effectuée pour les projets qui génèrent un module de contenu unique, généralement appelé &quot;tout&quot;, qui contient plusieurs autres modules de contenu générés, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
+Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des packages de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées. L’optimisation la plus importante cible les projets qui produisent un seul package « all », contenant plusieurs packages de contenu de la version, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
@@ -128,4 +130,4 @@ Un cas particulier peut se produire lorsque le package de contenu « all » co
 >[!NOTE]
 >
 >* Cette optimisation n’a aucune incidence sur les packages déployés dans AEM.
->* Étant donné que la correspondance entre les packages de contenu incorporés et les packages de contenu ignorés est basée sur les noms de fichier, cette optimisation ne peut pas être effectuée si plusieurs packages de contenu ignorés portent exactement le même nom de fichier ou si le nom du fichier est modifié lors de l’incorporation.
+>* La correspondance entre les packages de contenu incorporés et les packages de contenu ignorés repose sur les noms de fichier. Cette optimisation ne peut pas se produire si plusieurs packages ignorés partagent le même nom de fichier ou si le nom du fichier change lors de l’incorporation.
