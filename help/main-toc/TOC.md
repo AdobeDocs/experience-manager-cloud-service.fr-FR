@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f971857e10cbed5f7c64870c53fa7409e39493bc
+source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
 workflow-type: tm+mt
-source-wordcount: '5940'
-ht-degree: 100%
+source-wordcount: '5948'
+ht-degree: 99%
 
 ---
 
@@ -224,6 +224,7 @@ ht-degree: 100%
    + [Vue d’ensemble de la sécurité dans AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [Configurer la mise en réseau avancée pour AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Prise en charge IMS d’AEM as a Cloud Service](/help/security/ims-support.md)
+   + [Modifications dans la synchronisation des groupes d’utilisateurs et des profils de produits](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md)
    + [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md)
