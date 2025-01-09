@@ -4,10 +4,10 @@ description: Découvrez comment fonctionne la modélisation de contenu pour la c
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 98%
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Le fichier [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplat
 
 Notez que tous les blocs n’ont pas nécessairement un modèle. Certains sont simplement des [conteneurs](#container) pour une liste d’enfants, où chaque enfant a son propre modèle.
 
-Il est également nécessaire de définir les blocs qui existent et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. Le fichier [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) répertorie les composants à mesure qu’ils sont rendus disponibles par l’éditeur universel.
+Il est également nécessaire de définir les blocs qui existent et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. Le fichier [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) répertorie les composants tels qu’ils sont rendus disponibles par l’éditeur universel.
 
 ```json
 {
@@ -112,7 +112,7 @@ Pour chaque bloc, l’équipe de développement :
 * doit définir le nom du bloc, qui sera rendu dans l’en-tête de tableau du bloc ;
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
 * peut définir un [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure) ;
-   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour l’auteur dans le panneau des propriétés.
+   * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour la personne chargée de la création dans le panneau des propriétés.
 * peut définir un [ID de filtre](/help/implementing/universal-editor/customizing.md#filtering-components).
    * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi qui sont activées.
 
