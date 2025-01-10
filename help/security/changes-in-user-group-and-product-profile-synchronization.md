@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Modifications dans la synchronisation des groupes d’utilisateurs et des profils de produits {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ Vous accédez alors au Adobe Admin Console, comme illustré dans la capture d’
 ![Suffixes dans l’Admin Console ](/help/security/assets/admin-console-profile-suffixes.png)
 
 Dans le cas peu probable où votre application AEM fait référence à un groupe qui n’apparaîtra plus dans AEM, veillez à utiliser i) un profil de produit de l’instance AEM appropriée ou ii) un groupe d’utilisateurs Adobe Admin Console.
+
