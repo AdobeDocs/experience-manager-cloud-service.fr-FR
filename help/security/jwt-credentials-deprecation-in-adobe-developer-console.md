@@ -5,9 +5,9 @@ exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
 source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 >
 >Pour plus d’informations, les clientes et clients d’AEM 6.5 doivent se reporter à [la documentation comparable pour AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console).
 
-Les clientes et clients Adobe utilisent [Adobe Developer Console](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. L’un de ces types d’informations d’identification, celui des informations d’identification du compte de service (JWT), a été abandonné au profit des informations d’identification OAuth serveur à serveur. Les nouvelles informations d’identification du compte de service (JWT) ne peuvent pas être créées à compter du 3 juin 2024 et les informations d’identification JWT existantes ne fonctionneront pas à compter du 30 juin 2025. Vous pouvez [en savoir plus sur l’obsolescence](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+Les clientes et clients Adobe utilisent [Adobe Developer Console](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. L’un de ces types d’informations d’identification, celui des informations d’identification du compte de service (JWT), a été abandonné au profit des informations d’identification OAuth serveur à serveur. Les informations d’identification du nouveau compte de service (JWT) ne peuvent plus être créées depuis le 3 juin 2024 et les informations d’identification JWT existantes ne fonctionneront plus à partir du 30 juin 2025. Vous pouvez [en savoir plus sur l’obsolescence](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 Cet article fournit un contexte supplémentaire sur la manière dont AEM as a Cloud Service doit gérer l’obsolescence.
 
@@ -48,7 +48,7 @@ Voir [Configuration des intégrations IMS pour AEM as a Cloud Service](/help
 
 **Versions d’AEM pertinentes** : AEM as a Cloud Service
 
-Les clientes et clients créent des projets Adobe Developer Console pour pouvoir appeler les [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Les informations d’identification du projet Adobe Developer doivent être migrées vers le type d’informations d’identification de serveur à serveur OAuth avant l’expiration des informations d’identification JWT obsolètes en juin 2025.
+Les clientes et clients créent des projets Adobe Developer Console pour pouvoir appeler les [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Les informations d’identification du projet Adobe Developer doivent être migrées vers le type OAuth serveur à serveur avant que les informations d’identification JWT obsolètes n’expirent en juin 2025.
 
 ## Projets générés automatiquement {#autogen-projects}
 
