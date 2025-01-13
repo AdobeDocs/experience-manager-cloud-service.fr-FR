@@ -1,26 +1,26 @@
 ---
-title: Variations - création de contenu de fragment (Assets - fragments de contenu)
-description: Découvrez comment les variations de fragment de contenu vous permettent de créer du contenu pour le fragment, puis de créer des variantes de ce contenu en fonction de vos besoins, augmentant ainsi la flexibilité.
+title: Variations - Créer du contenu de fragment (Assets - Fragments de contenu)
+description: Découvrez comment les variations du fragment de contenu vous permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché, ce qui accroît la flexibilité.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 71%
+source-wordcount: '2518'
+ht-degree: 70%
 
 ---
 
 # Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
 
-[Les variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonctionnalité importante des fragments de contenu as a Cloud Service Adobe Experience Manager (AEM). En effet, ils vous permettent de créer et de modifier des copies du contenu **Principal** à utiliser sur des canaux et des scénarios spécifiques. En particulier, cela rend la diffusion de contenu sans interface encore plus flexible.
+Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonctionnalité importante des fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service. En effet, ils vous permettent de créer et de modifier des copies du contenu **Principal** pour une utilisation sur des canaux et scénarios spécifiques. Cela rend en particulier la diffusion de contenu découplé encore plus flexible.
 
 >[!NOTE]
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu. Bien que la fonctionnalité de base soit la même, il existe des différences. Cette section décrit l’éditeur d’origine, principalement accessible à partir de la console **Assets**. Pour plus d’informations sur le nouvel éditeur, voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), (principalement accessible à partir de la console **Fragments de contenu**).
+>Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**. Voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir de la console **Fragments de contenu**).
 
 Dans l’onglet **Variations**, vous pouvez :
 
@@ -57,9 +57,9 @@ Vous pouvez effectuer les actions suivantes :
 
 * Apportez des modifications à votre contenu directement dans l’onglet **Variations**. Chaque type de données fournit différentes options de modification, par exemple :
 
-   * lorsqu’ils sont configurés (comme plusieurs) dans le modèle, différents types de données vous permettent d’**ajouter** instances du champ approprié
+   * lorsqu’ils sont configurés (en tant que multiples) dans le modèle, divers types de données vous permettent d’**Ajouter** des instances du champ approprié
 
-   * pour les champs **Texte multi-lignes**, vous pouvez également ouvrir l’ [ éditeur plein écran](#full-screen-editor) pour :
+   * pour les champs **Texte multiligne**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) afin de :
 
       * sélectionner le [format](#formats) ;
       * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
@@ -67,7 +67,7 @@ Vous pouvez effectuer les actions suivantes :
 
    * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
 
-* Affectez **Balises** à la variation actuelle ; les balises peuvent être ajoutées, mises à jour et supprimées.
+* Attribuez **Balises** à la variation actuelle. Les balises peuvent être ajoutées, mises à jour et supprimées.
 
    * Les [balises](/help/sites-cloud/authoring/sites-console/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
 
@@ -84,7 +84,7 @@ Vous pouvez effectuer les actions suivantes :
 
 >[!NOTE]
 >
->Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+>Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -156,7 +156,7 @@ Le texte brut permet de saisir du contenu de manière rapide, sans formatage ni 
 
 >[!CAUTION]
 >
->Si vous sélectionnez **Texte brut**, vous risquez de perdre toute mise en forme ou Markdown, ou les ressources que vous avez insérées dans **Texte enrichi** ou **Markdown**.
+>Si vous sélectionnez **Texte brut**, vous risquez de perdre la mise en forme, le markdown ou les ressources que vous avez insérés dans **Texte enrichi** ou **Markdown**.
 
 ### Markdown {#markdown}
 
@@ -195,7 +195,7 @@ Si le modèle de fragment de contenu contient des références à un fragment, l
 
 L’option **Modifier le fragment de contenu** ouvre ce fragment dans un nouvel onglet de l’éditeur (dans le même onglet du navigateur).
 
-Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little Pony Inc.**), cet onglet secondaire est fermé (ici, **Adam Smith**).
+Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little Pony Inc.**), cet onglet secondaire se ferme (dans ce cas, **Adam Smith**).
 
 ![Références à un fragment](assets/cfm-variations-editreference.png)
 
@@ -203,7 +203,7 @@ Si vous sélectionnez à nouveau l’onglet d’origine (par exemple, **Little P
 
 L’option **Nouveau fragment de contenu** permet de créer un fragment. Pour ce faire, une variante de l’assistant de création de fragment de contenu s’ouvre dans l’éditeur.
 
-**Pour créer un fragment de contenu :**
+**Pour créer un fragment de contenu, procédez comme suit**
 
 1. naviguez jusqu’au dossier requis et sélectionnez-le ;
 1. sélectionnez **Suivant** ;
@@ -269,7 +269,7 @@ Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatr
 
    * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
    * Cliquez sur une phrase en surbrillance pour la conserver dans le contenu résumé.
-   * Cliquez sur n’importe quelle phrase non mise en surbrillance pour pouvoir l’éliminer.
+   * Cliquez sur une phrase non mise en surbrillance pour l’éliminer.
 
 1. Sélectionnez **Résumer** pour confirmer les modifications.
 
@@ -277,7 +277,7 @@ Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatr
 
    * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
    * Cliquez sur une phrase en surbrillance pour la conserver dans le contenu résumé.
-   * Cliquez sur n’importe quelle phrase non mise en surbrillance pour pouvoir l’éliminer.
+   * Cliquez sur une phrase non mise en surbrillance pour l’éliminer.
    * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
    * Vous pouvez **prévisualiser** les modifications.
 
@@ -291,7 +291,7 @@ Pour supprimer un fragment :
 
 1. Ouvrez l’éditeur plein écran.
 
-1. L’icône **Annoter** est disponible dans la barre d’outils supérieure. Si nécessaire, vous pouvez sélectionner du texte.
+1. L’icône **Annoter** est disponible dans la barre d’outils supérieure. Vous pouvez sélectionner du texte si nécessaire.
 
    ![annoter](assets/cfm-variations-07.png)
 
@@ -315,11 +315,15 @@ Pour supprimer un fragment :
 
    ![annoter](assets/cfm-variations-07c.png)
 
+>[!NOTE]
+>
+>La fonction Annotations n’affiche pas les commentaires saisis dans le nouvel [éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
+
 ### Affichage, modification et suppression d’annotations {#viewing-editing-deleting-annotations}
 
 Les annotations :
 
-* Elles sont indiquées par la mise en surbrillance sur le texte, en mode plein écran et en mode normal de l’éditeur. Les détails complets d’une annotation peuvent ensuite être affichés, modifiés et/ou supprimés, en cliquant sur le texte mis en surbrillance, ce qui ouvre de nouveau la boîte de dialogue.
+* Ils sont indiqués par la mise en surbrillance sur le texte, en mode plein écran et normal de l’éditeur. Les détails complets d’une annotation peuvent ensuite être affichés, modifiés et/ou supprimés, en cliquant sur le texte mis en surbrillance, ce qui ouvre de nouveau la boîte de dialogue.
 
   >[!NOTE]
   >
@@ -327,11 +331,11 @@ Les annotations :
 
 * Lorsque vous supprimez tout le texte auquel l’annotation a été appliquée, cette dernière est également supprimée.
 
-* Il peut être répertorié et supprimé en sélectionnant l’onglet **Annotations** dans l’éditeur de fragments.
+* Elle peut être répertoriée et supprimée en sélectionnant l’onglet **Annotations** dans l’éditeur de fragments.
 
   ![Annotations](assets/cfm-variations-08.png)
 
-* Il peut être visualisé et supprimé dans la [Chronologie](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) pour le fragment sélectionné.
+* Il peut être affiché et supprimé dans le [Journal](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) pour le fragment sélectionné.
 
 ### Insertion de ressources dans votre fragment {#inserting-assets-into-your-fragment}
 
@@ -349,12 +353,12 @@ Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise
 >
 >Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-1. Positionnez le curseur à l’endroit où vous souhaitez ajouter l’image.
+1. Placez le curseur à l’endroit où vous souhaitez ajouter l’image.
 1. Utilisez l’icône **Insérer une ressource** pour ouvrir la boîte de dialogue de recherche.
 
    ![icône d’insertion de ressource](assets/cfm-variations-09.png)
 
-1. Dans la boîte de dialogue, vous pouvez accéder à la ressource requise dans la gestion des ressources numériques ou rechercher la ressource dans la gestion des ressources numériques.
+1. Dans la boîte de dialogue, vous pouvez soit accéder à la ressource requise dans la gestion des ressources numériques, soit la rechercher dans la gestion des ressources numériques.
 
    Une fois localisée, sélectionnez la ressource requise en cliquant sur la miniature.
 
@@ -362,7 +366,7 @@ Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise
 
    >[!CAUTION]
    >
-   >Après l’ajout d’une ressource, si vous modifiez le format en :
+   >Après avoir ajouté une ressource, si vous modifiez le format en :
    >
    >* **Texte brut** : la ressource est effacée du fragment.
    >* **Markdown** : le fichier n’est pas visible, mais il est toujours présent lorsque vous revenez au **texte enrichi**.
@@ -371,11 +375,11 @@ Elles sont ajoutées à la séquence de paragraphes du fragment sans aucune mise
 
 Pour faciliter la création de fragments de contenu, vous pouvez également ajouter un autre fragment de contenu à votre fragment.
 
-Elles sont ajoutées comme référence à l’emplacement actuel dans votre fragment.
+Ils sont ajoutés comme référence à l’emplacement actuel dans votre fragment.
 
 >[!NOTE]
 >
->Cette option est disponible lorsque votre **texte multiligne** est configuré avec la **référence autorisée pour les fragments**.
+>Cette option est disponible lorsque votre **texte multiligne** est configuré avec **Autoriser la référence du fragment**.
 
 >[!CAUTION]
 >
@@ -387,12 +391,12 @@ Elles sont ajoutées comme référence à l’emplacement actuel dans votre frag
 >
 >Il existe différentes méthodes pour ajouter des [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-1. Positionnez le curseur à l’endroit où vous souhaitez ajouter le fragment.
+1. Placez le curseur à l’endroit où vous souhaitez ajouter le fragment.
 1. Utilisez l’icône **Insérer un fragment de contenu** pour ouvrir la boîte de dialogue de recherche.
 
    ![Icône Insérer un fragment de contenu](assets/cfm-variations-13.png)
 
-1. Dans la boîte de dialogue, vous pouvez accéder au fragment requis dans le dossier Assets ou rechercher le fragment.
+1. Dans la boîte de dialogue, vous pouvez soit accéder au fragment requis dans le dossier Assets, soit le rechercher.
 
    Une fois localisé, sélectionnez le fragment requis en cliquant sur la miniature.
 
@@ -400,18 +404,18 @@ Elles sont ajoutées comme référence à l’emplacement actuel dans votre frag
 
    >[!CAUTION]
    >
-   >Après l’ajout d’une référence à un autre fragment, si vous modifiez le format en :
+   >Après avoir ajouté une référence à un autre fragment, si vous modifiez le format en :
    >
    >* **Texte brut** : la référence est effacée du fragment.
    >* **Markdown** : la référence reste.
 
 ## Héritage {#inheritance}
 
-L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un fragment à un autre. Les champs et variations hérités peuvent être le produit de la [gestion multisite](/help/assets/content-fragments/content-fragments-msm.md).
+L’héritage est le mécanisme par lequel le contenu peut être automatiquement transmis d’un fragment à un autre. Les champs hérités et les variations peuvent être le produit de la [gestion multisite](/help/assets/content-fragments/content-fragments-msm.md).
 
 Vous pouvez annuler (puis réactiver) l’héritage. Selon le contexte, cette option peut être disponible pour une variation ou un champ individuel, si le fragment fait partie d’une Live Copy.
 
-![Un fragment de contenu montrant la relation d’héritage](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+![Fragment de contenu présentant une relation d’héritage](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
 Par exemple :
 
@@ -419,7 +423,7 @@ Par exemple :
 
   ![Bouton Annuler l’héritage](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
 
-* Réactiver l’héritage (si l’héritage est déjà annulé)
+* Réactivez l’héritage (si l’héritage est déjà annulé).
 
   ![Bouton Réactiver l’héritage](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
@@ -440,12 +444,12 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **Créer une variation**.
-1. Une boîte de dialogue s’ouvre pour vous permettre de spécifier les **Titre** et **Description** pour la nouvelle variation.
+1. Une boîte de dialogue s’ouvre pour que vous puissiez spécifier les paramètres **Titre** et **Description** pour la nouvelle variation.
 1. Sélectionnez **Ajouter** et le **contenu principal** du fragment est copié dans la nouvelle variation, qui est maintenant ouverte pour [modification](#editing-a-variation).
 
    >[!NOTE]
    >
-   >Lors de la création d’une variation, c’est toujours le **Principal** qui est copié, et non la variation ouverte.
+   >Lors de la création d’une variation, c’est toujours le Principal **** qui est copié, et non la variation qui est ouverte.
 
    >[!NOTE]
    >
@@ -453,7 +457,7 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
 ### Modifier une variation {#editing-a-variation}
 
-Vous pouvez modifier le contenu de la variation après l’une des opérations suivantes :
+Vous pouvez modifier le contenu de la variation après :
 
 * [Création de la variation](#creating-a-variation).
 * Ouvrez un fragment existant, puis sélectionnez la variation requise dans le panneau latéral.
@@ -488,7 +492,7 @@ Vous pouvez modifier le contenu de la variation après l’une des opérations s
 
 ### Synchronisation avec le maître {#synchronizing-with-master}
 
-**Principal** fait partie d’un fragment de contenu et, par définition, il contient la copie maître du contenu. Tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le contenu principal est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
+**Principal** fait partie d’un fragment de contenu et, par définition, contient la copie maître du contenu. tandis que les variations contiennent les versions individuelles et personnalisées de ce contenu. Lorsque le contenu principal est mis à jour, il est possible que ces modifications soient également liées aux variations et qu’elles doivent, par conséquent, être appliquées à celles-ci.
 
 Lors de la modification d’une variation, vous avez accès à l’action de synchronisation de l’élément actif de la variation avec le contenu principal. Vous pouvez ainsi copier automatiquement les modifications apportées au contenu principal dans la variation requise.
 
@@ -498,7 +502,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 >
 >Seul l’élément actif de la variation est synchronisé.
 >
->La synchronisation fonctionne uniquement sur le type de données **Texte multi-lignes**.
+>La synchronisation fonctionne uniquement avec le type de données **texte multiligne**.
 >
 >Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
@@ -516,8 +520,8 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 1. Le contenu principal et la variation sont affichés côte à côte :
 
-   * le vert indique que le contenu a été ajouté (à la variation).
-   * Le rouge indique que le contenu a été supprimé (de la variation).
+   * le vert indique que le contenu a été ajouté (à la variation)
+   * Le rouge indique que le contenu a été supprimé (de la variation)
    * le texte remplacé apparaît en bleu
 
    ![Synchronisation avec le maître](assets/cfm-variations-11c.png)

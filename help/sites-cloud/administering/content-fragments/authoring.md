@@ -1,101 +1,108 @@
 ---
 title: Créer des fragments de contenu
-description: Découvrez comment créer du contenu pour vos fragments de contenu et créer des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
+description: Découvrez comment créer du contenu pour vos fragments de contenu et comment créer des variantes de ce contenu selon vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2841'
 ht-degree: 7%
 
 ---
 
 # Créer des fragments de contenu {#authoring-content-fragments}
 
-La création de fragments de contenu est axée sur la diffusion sans interface utilisateur et la création de pages.
+>[!IMPORTANT]
+>
+>Diverses fonctionnalités de l’éditeur de fragment de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
+>
+>Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+La création de vos fragments de contenu est axée à la fois sur la diffusion découplée et la création de pages.
 
 Deux éditeurs sont disponibles pour les fragments de contenu. L’éditeur décrit dans cette section :
 
-* a été développé pour la diffusion de contenu sans interface utilisateur graphique (bien qu’il puisse être utilisé pour tous les scénarios).
+* a été développé pour la diffusion de contenu découplé (bien qu’il puisse être utilisé dans tous les scénarios).
 * est disponible à partir de la console **Fragments de contenu**
 
 Cet éditeur fournit les éléments suivants :
 
-* [ Enregistrement automatique ](#saving-autosaving) pour éviter la perte accidentelle de modifications.
-* [Chargement en ligne de ressources en tant que références de contenu](#reference-images), sans avoir à les charger dans la gestion des ressources numériques d’abord.
-* [Générer des variations](#generate-variations-ai) pour utiliser l’IA générique afin d’accélérer la création de contenu en fonction des invites.
-* [Aperçu](#preview-content-fragment) de l’expérience rendue par le fragment de contenu.
-* Possibilité de [Publish](#publish-content-fragment) et [Annuler la publication](#unpublish-content-fragment) de l’éditeur.
-* Possibilité de [afficher et ouvrir les copies de langue associées](#view-language-copies) dans l’éditeur.
-* Possibilité de [afficher les détails de version](#view-version-history) dans l’éditeur. Vous pouvez également revenir à une version sélectionnée.
-* Possibilité de [afficher et d’ouvrir les références parentes](#view-parent-references).
-* Une vue hiérarchique du fragment de contenu et de ses références, à l’aide de l’ [arborescence de structure](#structure-tree).
+* [Enregistrement automatique](#saving-autosaving), pour éviter la perte accidentelle de modifications.
+* [Chargement en ligne des ressources en tant que références de contenu](#reference-images) sans avoir à les charger au préalable dans la gestion des ressources numériques.
+* [Générer des variations](#generate-variations-ai) pour utiliser l’IA dédiée à la génération afin d’accélérer la création de contenu en fonction des invites.
+* [Aperçu](#preview-content-fragment) de l’expérience rendue fournie par le fragment de contenu.
+* Possibilité de [Publish](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment) à partir de l’éditeur.
+* Possibilité d’[afficher et ouvrir des copies de langue associées](#view-language-copies) dans l’éditeur.
+* Possibilité d’[afficher les détails de la version](#view-version-history) dans l’éditeur. Vous pouvez également revenir à une version sélectionnée.
+* Possibilité d’[afficher et ouvrir les références parentes](#view-parent-references).
+* Une vue hiérarchique du fragment de contenu et de ses références, à l’aide de l’[arborescence de structure](#structure-tree).
 
 >[!WARNING]
 >
->L’éditeur décrit dans cette section est *uniquement* disponible as a Cloud Service *online* Adobe Experience Manager (AEM).
+>L’éditeur décrit dans cette section est *uniquement* disponible dans l’as a Cloud Service *en ligne* Adobe Experience Manager (AEM).
 
 ## Éditeur de fragment de contenu {#content-fragment-editor}
 
-Lorsque vous ouvrez l’éditeur de fragments de contenu pour la première fois, quatre zones principales s’affichent :
+Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, vous voyez quatre zones principales :
 
 * barre d’outils supérieure : pour obtenir des informations clés et des actions
    * lien vers la console de fragments de contenu (icône Accueil)
    * informations sur le modèle et le dossier
    * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * Actions [Publish](#publish-content-fragment) et [Annuler la publication](#unpublish-content-fragment)
+   * Actions [Publish](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment)
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
    * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
 
      >[!WARNING]
      >
-     >L’éditeur d’origine s’ouvre dans le même onglet. Il est déconseillé d’ouvrir les deux éditeurs en même temps.
+     >L’éditeur d’origine s’ouvre dans le même onglet. Il n’est pas recommandé d’ouvrir les deux éditeurs en même temps.
 
 * panneau de gauche : affiche la variable **[Variations](#variations)** pour le fragment de contenu et son **Champs**:
-   * ces liens peuvent être utilisés pour [parcourir la structure de fragment de contenu](#navigate-structure)
-* panneau de droite : présente des onglets [ qui affichent les propriétés (métadonnées) et les balises ](#view-properties-tags), des informations sur l’ [historique de version](#view-version-history) et des informations relatives à des [copies de langue](#view-language-copies)
+   * ces liens peuvent être utilisés pour [parcourir la structure du fragment de contenu](#navigate-structure)
+* panneau de droite : présente des onglets [affichant les propriétés (métadonnées) et les balises](#view-properties-tags), des informations sur le [historique de version](#view-version-history) et des informations relatives aux [copies de langue](#view-language-copies)
    * dans le **Propriétés** vous pouvez mettre à jour l’onglet **Titre** et **Description** pour le fragment, ou **Variation**
+   * Dans l’onglet **Commentaires**, vous pouvez ajouter et lire des commentaires pour vous aider à collaborer avec d’autres auteurs
 * panneau central : affiche les champs réels et le contenu de la variation sélectionnée.
    * permet de modifier le contenu.
-      * lorsqu’ils sont configurés (comme plusieurs) dans le modèle, différents types de données vous permettent d’**ajouter** instances du champ approprié
-   * si les champs **Espace réservé d’onglet** sont définis dans le modèle qui s’affiche ici et peuvent être utilisés pour la navigation ; ils seront présentés horizontalement ou sous la forme d’une liste déroulante.
+      * lorsqu’ils sont configurés (en tant que multiples) dans le modèle, divers types de données vous permettent d’**Ajouter** des instances du champ approprié
+   * Si les champs **Espace réservé d’onglet** sont définis dans le modèle, ils sont affichés ici et peuvent être utilisés pour la navigation ; ils sont présentés soit horizontalement, soit sous la forme d’une liste déroulante.
 
   >[!NOTE]
   >
-  >Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Éditeur de fragment de contenu - Aperçu](assets/cf-authoring-overview.png)
 
-## Navigation dans la structure du fragment de contenu {#navigate-structure}
+## Navigation dans la structure du fragment de contenu. {#navigate-structure}
 
-un fragment de contenu unique ;
+un seul fragment de contenu ;
 
 * Se compose de deux niveaux :
 
    * **[Variations](#variations)** du fragment de contenu
-   * **Champs** - définis par le modèle de fragment de contenu et utilisés par chaque variation
+   * **Champs** : définis par le modèle de fragment de contenu et utilisés par chaque variation.
 
-* Peut contenir une variété de références.
+* Peut contenir plusieurs références.
 
 ### Variations et champs {#variations-and-fields}
 
 Dans le panneau de gauche, vous pouvez voir :
 
-* la liste des **[variations](#variations)** créées pour ce fragment :
-   * **Main** est la variation présente lors de la première création du fragment de contenu. Vous pouvez en ajouter d’autres ultérieurement.
-   * vous pouvez utiliser l’option Générer des variations (#generate-variations) pour utiliser un modèle basé sur une invite que l’Adobe a créé pour un cas d’utilisation spécifique.
+* la liste des **[variations](#variations)** qui ont été créées pour ce fragment :
+   * **Principal** est la variation présente lors de la création initiale du fragment de contenu ; vous pouvez en ajouter d’autres ultérieurement
+   * vous pouvez utiliser Generate Variations(#generate-variations) pour utiliser un modèle basé sur une invite que Adobe a créé pour un cas d’utilisation spécifique.
    * vous pouvez également [créer une variation](#create-variation)
-* les **champs** dans le fragment et ses variations :
-   * l’icône indique le [Type de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
-   * le texte est le nom du champ.
-   * ensemble, elles fournissent un lien direct vers le contenu du champ dans le panneau central (pour la variation actuelle).
+* le **Champs** au sein du fragment et ses variantes :
+   * l’icône indique le [type de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
+   * le texte est le nom du champ
+   * ensemble, ils fournissent un lien direct vers le contenu du champ dans le panneau central (pour la variation actuelle)
 
 ### Suivre les liens {#follow-links}
 
-L’icône de lien s’affiche dans différentes parties de l’éditeur. Vous pouvez l’utiliser pour ouvrir l’élément affiché, par exemple un modèle de fragment de contenu, une référence parente ou un fragment référencé :
+L’icône de lien s’affiche dans différentes parties de l’éditeur. Vous pouvez l’utiliser pour ouvrir l’élément affiché, par exemple, un modèle de fragment de contenu, une référence parent ou un fragment référencé :
 
 ![Éditeur de fragment de contenu - Icône de lien](assets/cf-authoring-link-icon.png)
 
@@ -107,7 +114,7 @@ Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’é
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Analyse de la structure du fragment de contenu - Arborescence de structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) .
+>Voir [ Analyse de la structure du fragment de contenu - Arborescence de structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) pour plus d’informations.
 
 ## Enregistrement et enregistrement automatique {#saving-autosaving}
 
@@ -117,15 +124,15 @@ Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’é
 
 ## Variations {#variations}
 
-[Variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) est une fonctionnalité importante pour  des fragments de contenu. Ils vous permettent de créer et de modifier des copies du contenu **Main** pour une utilisation sur des canaux spécifiques, ainsi que des scénarios, ce qui rend la diffusion de contenu sans interface utilisateur graphique et la création de pages encore plus flexible.
+Les [variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sont une fonction importante des fragments de contenu AEM. Ils vous permettent de créer et de modifier des copies du contenu **Principal** à utiliser sur des canaux et scénarios spécifiques, ce qui rend la diffusion de contenu découplé et la création de pages encore plus flexibles.
 
-Dans l’éditeur, vous pouvez effectuer les opérations suivantes :
+L’éditeur vous permet d’effectuer les opérations suivantes :
 
-* [Créer des variations](#create-variation) du contenu **Main**
+* [Créer des variations](#create-variation) du contenu **Principal**
 
-* [ Utilisez Generate Variations AI](#generate-variations-ai) pour utiliser Generative AI afin d’utiliser un modèle basé sur une invite que l’Adobe a créé pour un cas d’utilisation spécifique.
+* [Utilisez Generate Variations AI](#generate-variations-ai) pour utiliser Generative AI afin d’utiliser un modèle basé sur une invite que Adobe a créé pour un cas d’utilisation spécifique.
 
-* Sélectionnez la variation requise pour modifier le contenu.
+* Sélectionnez la variation requise pour modifier le contenu
 
 * [Renommer la variation](#rename-variation)
 
@@ -133,21 +140,21 @@ Dans l’éditeur, vous pouvez effectuer les opérations suivantes :
 
 ### Création d’une variation {#create-variation}
 
-Pour créer une variation de votre fragment de contenu :
+Pour créer une variante de votre fragment de contenu :
 
-1. Dans le panneau de gauche, sélectionnez le signe **plus** (**Créer une variation**) situé à droite de **Variations**.
+1. Dans le panneau de gauche, sélectionnez le **signe plus** (**Créer une variation**) situé à droite de **Variations**.
 
    >[!NOTE]
    >
-   >Après avoir créé votre première variation, les variations existantes sont répertoriées dans le même panneau.
+   >Une fois votre première variation créée, les variations existantes sont répertoriées dans le même panneau.
 
-   ![Éditeur de fragment de contenu - Créer votre première variation](assets/cf-authoring-create-variation-01.png)
+   ![Éditeur de fragment de contenu - Créez votre première variation](assets/cf-authoring-create-variation-01.png)
 
-1. Dans la boîte de dialogue, saisissez un **titre** pour votre variation et une **description** si vous le souhaitez :
+1. Dans la boîte de dialogue, saisissez un **Titre** pour votre variation, ainsi qu’un **Description** si nécessaire :
 
    ![Éditeur de fragment de contenu - Boîte de dialogue Créer une variation](assets/cf-authoring-create-variation-02.png)
 
-1. **Créez** la variation. Il apparaît dans la liste.
+1. **Créer** la variation. Il apparaît dans la liste.
 
 ### Renommer une variation {#rename-variation}
 
@@ -157,27 +164,27 @@ Pour renommer une **variation** :
 
 1. Ouvrez l’onglet **Propriétés** dans le panneau de droite.
 
-1. Mettez à jour la variation **Title**.
+1. Mettez à jour la variation **Titre**.
 
-1. Appuyez sur **Retour** ou déplacez-vous vers un autre champ pour enregistrer automatiquement la modification. Le titre est mis à jour dans le panneau **Variations** sur la gauche.
+1. Appuyez sur **Retour** ou passez à un autre champ pour enregistrer automatiquement la modification. Le titre est mis à jour dans le panneau **Variations** sur la gauche.
 
 ### Créer des variations à l’aide de GenAI avec Générer des variations {#generate-variations-ai}
 
-Utilisez les variations génériques pour tirer parti de l’IA générique pour accélérer la création de contenu.
+Utilisez les variations génératives pour tirer parti de l’IA générative afin d’accélérer la création de contenu.
 
-Pour utiliser les variations génériques dans l’éditeur de fragment de contenu :
+Pour utiliser les variations génératives dans l’éditeur de fragment de contenu :
 
-1. Ouvrez l’éditeur de fragments de contenu. Dans l’en-tête, vous trouverez le point d’entrée pour générer des variations :
+1. Ouvrez l’éditeur de fragment de contenu. Dans l’en-tête, vous trouverez le point d’entrée pour Générer des variations :
 
-   ![Générer des variations dans l’éditeur de fragments de contenu](assets/cfm-generate-variations1.png)
+   ![Générer des variations dans l’éditeur de fragment de contenu](assets/cfm-generate-variations1.png)
 
-1. L’option Générer des variations s’ouvre dans un nouvel onglet. Dans le rail de gauche, vous pouvez voir l’instance AEM Cloud et le fragment de contenu pour lequel vous créez du contenu. Sélectionnez l’invite à utiliser ou créez une invite.
+1. Générer des variations s’ouvre dans un nouvel onglet. Dans le rail de gauche, vous pouvez voir l’instance AEM Cloud et le fragment de contenu pour lequel vous créez du contenu. Sélectionnez l’invite à utiliser ou créez-en une.
 
    >[!NOTE]
    >
-   >Les modèles d’invite d’Adobe disponibles sont désormais limités, mais d’autres modèles seront ajoutés dans les prochaines versions.
+   >Les modèles d’invite d’Adobe disponibles sont actuellement limités, mais d’autres seront ajoutés dans les prochaines versions.
 
-   ![Exporter pour générer des variations dans un fragment de contenu](assets/cfm-generate-variations2.png)
+   ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations2.png)
 
 1. Générez du contenu en remplissant les invites. Le modèle de contenu du fragment sera automatiquement utilisé pour générer du contenu à l’aide de GenAI.
 
@@ -185,28 +192,28 @@ Pour utiliser les variations génériques dans l’éditeur de fragment de conte
    >
    >Actuellement, seuls les champs de texte sont pris en charge.
 
-   ![Exporter pour générer des variations dans un fragment de contenu](assets/cfm-generate-variations3.png)
+   ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations3.png)
 
-1. Sélectionnez la variante de génération que vous souhaitez et sélectionnez &quot;Exporter la variation&quot;. Confirmez le nom de la variation de fragment de contenu et sélectionnez l’une des options suivantes :
+1. Sélectionnez la variante générée de votre choix et sélectionnez « Exporter la variation ». Confirmez le nom de la variation de fragment de contenu et sélectionnez l’une des options suivantes :
 
-   * **Export** : exportez la variation vers le fragment de contenu et restez dans l’application Générer la variation.
-   * **Exporter et ouvrir** : exportez la variation vers le fragment de contenu et ouvrez un nouvel onglet qui affiche le fragment de contenu avec la nouvelle variation de GenAI.
+   * **Exporter** : permet d’exporter une variation vers le fragment de contenu et de rester dans l’application Generate Variation.
+   * **Exporter et ouvrir** : exportez la variation dans le fragment de contenu et ouvrez un nouvel onglet qui affiche le fragment de contenu avec la nouvelle variation de GenAI.
 
-     ![Exporter pour générer des variations dans un fragment de contenu](assets/cfm-generate-variations4.png)
+     ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations4.png)
 
 1. Les variations générées s’affichent dans l’éditeur de fragment de contenu principal.
 
-   ![ Afficher Générer des variations dans un fragment de contenu ](assets/cfm-generate-variations5.png)
+   ![Affichage Générer des variations dans le fragment de contenu](assets/cfm-generate-variations5.png)
 
 Voir [Générer des variations](/help/generative-ai/generate-variations.md) pour en savoir plus.
 
 ### Suppression d’une variation {#delete-variation}
 
-Pour supprimer une variation de votre fragment de contenu :
+Pour supprimer une variante de votre fragment de contenu :
 
     >[!REMARQUE]
     >
-    >Vous ne pouvez pas supprimer **Main**.
+    >Vous ne pouvez pas supprimer **Principal**.
 
 1. Sélectionnez la variation.
 
@@ -216,92 +223,92 @@ Pour supprimer une variation de votre fragment de contenu :
 
 1. Une boîte de dialogue s’ouvre. Sélectionnez **Supprimer** pour confirmer l’action.
 
-## Modifier des champs de texte multiligne : texte brut ou Markdown {#edit-multi-line-text-fields-plaintext-markdown}
+## Modifier les champs de texte multiligne - Texte brut ou Markdown {#edit-multi-line-text-fields-plaintext-markdown}
 
-Les champs de **[texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** peuvent avoir l’un des trois formats suivants :
+Les champs **[texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** peuvent avoir l’un des trois formats suivants :
 
 * Texte brut
 * [Texte (Markdown)](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [Texte enrichi](#edit-multi-line-text-fields-rich-text)
 
-Les champs définis comme Texte brut ou Texte (Markdown) comportent une zone de texte simple, sans options de formatage (à l’écran) :
+Les champs définis en tant que Texte brut ou Markdown ont une simple zone de texte, sans options de mise en forme (à l’écran) :
 
-![Éditeur de fragment de contenu - texte multiligne - plein écran](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Éditeur de fragment de contenu - Texte multiligne - Plein écran](assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
-## Modifier des champs de texte multiligne - Texte enrichi {#edit-multi-line-text-fields-rich-text}
+## Modifier les champs de texte multiligne - Texte enrichi {#edit-multi-line-text-fields-rich-text}
 
-Pour les champs **[Texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** définis comme **Texte enrichi**, différentes fonctionnalités sont disponibles :
+Pour les champs **[texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** définis en tant que **texte enrichi**, différentes fonctionnalités sont disponibles :
 
 * Modifiez le contenu :
    * Annuler/rétablir
-   * Coller/coller en tant que texte
+   * Coller en tant que texte
    * Copier
    * Sélectionner le format de paragraphe
-   * Créer/gérer un tableau
-   * Mise en forme de texte ; gras, italique, souligné, couleur
-   * Définition de l’alignement des paragraphes
+   * Créer/gérer une table
+   * Mise en forme du texte ; gras, italique, souligné, couleur
+   * Définir l’alignement des paragraphes
    * Créer/gérer des listes ; à puces, numérotées
-   * Retrait du texte ; diminuer, augmenter
+   * Retrait de texte ; diminution, augmentation
    * Effacer la mise en forme actuelle
-   * Insérer des liens
+   * Insertion de liens
    * Sélection et insertion de références aux ressources d’image
-   * Ajout de caractères spéciaux
-* [Éditeur plein écran](#full-screen-editor-rich-text) - bascule entre le mode plein écran et le mode intégré
+   * Ajouter des caractères spéciaux
+* [Éditeur plein écran](#full-screen-editor-rich-text) : basculez entre l’écran complet et le flux entrant.
 * [Statistiques](#statistics-rich-text)
 * [Comparer et synchroniser](#compare-and-synchronize-rich-text)
 
 Par exemple :
 
-![Éditeur de fragment de contenu - texte multiligne - bascule plein écran](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Éditeur de fragment de contenu - Texte multiligne - Basculement plein écran](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
->Les champs de texte multi-lignes sont également indiqués par l’icône [appropriée](#fields-datatypes-icons) dans le panneau **Champs**.
+>Les champs de texte multiligne sont également indiqués par l’[icône](#fields-datatypes-icons) appropriée dans le panneau **Champs**.
 
 ### Éditeur plein écran - Texte enrichi {#full-screen-editor-rich-text}
 
-L’éditeur plein écran offre les mêmes options de modification que lors de l’importation dans le flux, mais offre plus d’espace pour le texte.
+L’éditeur plein écran propose les mêmes options de modification que lors du flux entrant, mais offre plus d’espace pour le texte.
 
 Par exemple :
 
-![Éditeur de fragment de contenu - texte multiligne - plein écran](assets/cf-authoring-multilinetext-fullscreen.png)
+![Éditeur de fragment de contenu - Texte multiligne - Plein écran](assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistiques - Texte enrichi {#statistics-rich-text}
 
-L’action **Statistics** affiche diverses informations sur le texte dans un champ multiligne.
+L’action **Statistiques** affiche une plage d’informations sur le texte d’un champ multiligne.
 
 Par exemple :
 
 ![Éditeur de fragment de contenu - Statistiques](assets/cf-authoring-multilinetext-statistics.png)
 
-### Comparaison et synchronisation - Texte enrichi {#compare-and-synchronize-rich-text}
+### Comparer et synchroniser - Texte enrichi {#compare-and-synchronize-rich-text}
 
-L’action **Comparer** est disponible pour les champs multilignes lorsque vous avez ouvert une **Variation**.
+L’action **Comparer** est disponible pour les champs multilignes lorsqu’une **Variation** est ouverte.
 
 Le champ multiligne s’ouvre alors en plein écran et :
 
-* affiche le contenu de **Main** et de la **Variation** actuelle en parallèle, avec toutes les différences mises en surbrillance ;
+* affiche en parallèle le contenu des deux **Principal** et actuel **Variation**, en mettant les différences en surbrillance
 
 * les différences sont indiquées par la couleur :
 
-   * le vert indique le contenu ajouté (à la variation)
+   * le contenu ajouté (à la variation) est indiqué en vert
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
-* fournit l’action **Sync**, qui synchronise le contenu de **Main** avec la variation actuelle ;
+* fournit l’action **Sync**, qui synchronise le contenu de **Principal** à la variation actuelle
 
-   * si **Main** a été mis à jour, ces modifications seront transférées à la variation
-   * si la variation a été mise à jour, ces modifications seront écrasées par le contenu de **Main**
+   * Si **Principal** a été mis à jour, ces modifications sont transférées à la variation
+   * Si la variation a été mise à jour, ces modifications sont remplacées par le contenu de **Principal**
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Main**vers la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
   >
-  >Le transfert des modifications *d’une variation vers **Main*** n’est pas disponible en tant qu’option.
+  >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
-Par exemple, dans le cas où le contenu de la variation a été entièrement réécrit, une synchronisation remplace donc ce nouveau contenu par le contenu de **Main** :
+Par exemple, un scénario où le contenu de la variation a été complètement réécrit, de sorte qu’une synchronisation remplace ce nouveau contenu par le contenu de **Principal** :
 
-![Éditeur de fragment de contenu - Comparer et synchroniser](assets/cf-authoring-multilinetext-compare.png)
+![Éditeur de fragment de contenu - Comparaison et synchronisation](assets/cf-authoring-multilinetext-compare.png)
 
 ## Gestion des références {#manage-references}
 
@@ -316,48 +323,48 @@ Par exemple, dans le cas où le contenu de la variation a été entièrement ré
 
 Pour créer une référence à un fragment de contenu existant :
 
-1. Sélectionnez le champ.
+1. Sélectionnez le champ .
 1. Sélectionnez **Ajouter un fragment existant**.
 1. Sélectionnez le fragment requis dans le sélecteur de fragments.
 
    >[!NOTE]
    >
-   >Vous pouvez sélectionner un seul fragment à la fois.
+   >Vous n’êtes autorisé à sélectionner qu’un seul fragment à la fois.
 
-#### Création d’un fragment de contenu et référence {#create-reference-content-fragment}
+#### Créer un fragment de contenu et une référence {#create-reference-content-fragment}
 
 Vous pouvez également [sélectionner **Créer un fragment** pour ouvrir la boîte de dialogue **Créer**](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Une fois créé, ce fragment sera référencé.
 
 ### Références du contenu {#content-references}
 
-Les [références de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) servent à référencer d’autres types de contenu AEM, tels que des images, des pages et des fragments d’expérience.
+Les [références de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) sont utilisées pour référencer d’autres types de contenu AEM, tels que les images, les pages et les fragments d’expérience.
 
 #### Images de référence {#reference-images}
 
-Dans les champs **Référence du contenu**, vous pouvez :
+Dans les champs **Référence de contenu** vous pouvez effectuer les opérations suivantes :
 
 * ressources de référence qui existent déjà dans le référentiel
-* téléchargez-les directement sur le champ, ce qui évite d’utiliser la console **Assets** pour télécharger
+* les charger directement sur le champ ; cela évite d’avoir à utiliser la console **Assets** pour les charger
 
   >[!NOTE]
   >
-  >Pour télécharger directement une image dans le champ **Référence du contenu**, il **doit** :
+  >Pour charger directement une image dans le champ **Référence de contenu**, elle **doit** :
   >
-  >* avoir un **chemin d’accès racine** défini (dans le [modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Cela indique l’emplacement de stockage de l’image.
+  >* définir un **Chemin racine** (dans le [Modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)) ; Indique l’emplacement de stockage de l’image.
   >* inclure **Image** dans la liste des types de contenu acceptés
 
 Pour ajouter une ressource, vous pouvez effectuer l’une des opérations suivantes :
 
-* faites glisser et déposez directement le nouveau fichier de ressource (par exemple, depuis votre système de fichiers) dans le champ **Référence du contenu**
-* utilisez l’action **Ajouter une ressource**, puis sélectionnez **Parcourir Assets** ou **Télécharger** pour ouvrir le sélecteur approprié à utiliser :
+* faites glisser et déposez directement le nouveau fichier de ressource (par exemple, à partir de votre système de fichiers) dans le champ **Référence de contenu**
+* Utilisez l’action **Ajouter une ressource**, puis sélectionnez **Parcourir Assets** ou **Télécharger** pour ouvrir le sélecteur approprié à utiliser :
 
   ![Éditeur de fragment de contenu - Ajouter des options de ressource](assets/cf-authoring-add-asset-options.png)
 
 #### Pages de référence {#reference-pages}
 
-Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu de ce type :
+Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu similaires :
 
-1. Sélectionnez **Ajouter le chemin d’accès au contenu**.
+1. Sélectionnez **Ajouter un chemin de contenu**.
 
 1. Ajoutez le chemin d’accès requis dans le champ de saisie.
 
@@ -365,140 +372,159 @@ Pour ajouter des références à des pages AEM, des fragments d’expérience ou
 
 >[!NOTE]
 >
->Cela ne doit pas être utilisé pour les références à :
+>Il ne doit pas être utilisé pour les références à :
 >
->* Fragments de contenu : utilisez une [référence de fragment](#fragment-references)
->* Images - utilisez [Images de référence](#reference-images)
+>* Fragments de contenu - utilisez une [référence de fragment](#fragment-references)
+>* Images - utilisez [Images de référence](#reference-images).
 
 ### Afficher les références parentes {#view-parent-references}
 
-La sélection de l’icône de lien dans la barre d’outils supérieure ouvre une liste de toutes les références parentes.
+Si vous sélectionnez l’icône de lien dans la barre d’outils supérieure, une liste de toutes les références parentes s’ouvre.
 
 Par exemple :
 
-![Éditeur de fragment de contenu - Afficher les références](assets/cf-authoring-show-references-link.png)
+![ Éditeur de fragment de contenu - Afficher les références ](assets/cf-authoring-show-references-link.png)
 
 Une fenêtre s’ouvre, répertoriant toutes les références associées. Pour ouvrir une référence, sélectionnez le nom ou le titre, ou l’icône de lien.
 
 Par exemple :
 
-![Éditeur de fragment de contenu - Afficher les références](assets/cf-authoring-show-references.png)
+![ Éditeur de fragment de contenu - Afficher les références ](assets/cf-authoring-show-references.png)
 
 ## Affichage des propriétés et des balises {#view-properties-tags}
 
-Dans l’onglet Propriétés du panneau de droite, les propriétés (métadonnées) et les balises peuvent être visualisées. Les propriétés peuvent être les suivantes :
+Dans l’onglet des propriétés du panneau de droite, les propriétés (métadonnées) et les balises peuvent être affichées. Les propriétés peuvent être :
 
-* pour le **fragment de contenu**, si **Main** est actuellement sélectionné
+* pour le **fragment de contenu** - si **principal** est actuellement sélectionné
 * pour une **Variation** spécifique
 
 ![Éditeur de fragment de contenu - Propriétés](assets/cf-authoring-properties.png)
 
-### Modification des propriétés et des balises {#edit-properties-tags}
+### Modifier les propriétés et les balises {#edit-properties-tags}
 
-Dans l’onglet Propriétés (panneau de droite), vous pouvez également modifier :
+Dans l’onglet des propriétés (panneau de droite), vous pouvez également modifier les éléments suivants :
 
 * **Titre**
 * **Description**
-* **Balises** : utilisation de la liste déroulante ou de la boîte de dialogue de sélection
+* **Balises** : à l’aide de la liste déroulante ou de la boîte de dialogue de sélection
 
-  ![Éditeur de fragment de contenu - Gérer les balises](assets/cf-authoring-edit-tags.png)
+  ![Éditeur de fragment de contenu - Gestion des balises](assets/cf-authoring-edit-tags.png)
 
 ### Ouvrir le modèle de fragment de contenu {#open-content-fragment-model}
 
-Lorsque **Main** est sélectionné, le nom du modèle de fragment de contenu sous-jacent s’affiche dans la section des propriétés. Lorsque vous sélectionnez l’icône de lien, le modèle s’ouvre dans un onglet distinct.
+Lorsque vous avez sélectionné **Principal**, le nom du modèle de fragment de contenu sous-jacent s’affiche dans la section des propriétés. Si vous sélectionnez l’icône de lien, le modèle s’ouvre dans un onglet distinct.
 
 Par exemple :
 
-![Éditeur de fragment de contenu - ouvrir le modèle de fragment de contenu](assets/cf-authoring-open-model.png)
+![Éditeur de fragment de contenu - Ouvrez le modèle de fragment de contenu](assets/cf-authoring-open-model.png)
 
-## Affichage de l’historique des versions {#view-version-history}
+## Afficher l’historique des versions {#view-version-history}
 
-Dans l’onglet **Historique des versions** du panneau de droite, les détails des versions actuelle et précédente s’affichent :
+Dans l’onglet **Historique des versions** du panneau de droite, les détails de la version actuelle et des versions précédentes s’affichent :
 
 >[!NOTE]
 >
 >Une nouvelle version est créée lorsque le fragment de contenu est publié.
 
-![Éditeur de fragment de contenu - Aperçu de l’historique de versions](assets/cf-authoring-version-history-overview.png)
+![Éditeur de fragment de contenu - Aperçu de l’historique des versions](assets/cf-authoring-version-history-overview.png)
 
-### Comparer la version {#compare-version}
+### Comparer les versions {#compare-version}
 
 Pour un fragment de contenu, vous pouvez comparer une version précédente à la version actuelle.
 
 Pour comparer une version précédente à la version actuelle :
 
-1. Sélectionnez l’icône de trois points en regard de la version.
+1. Sélectionnez l’icône des trois petits points en regard de la version.
 
 1. Sélectionnez **Comparer**.
 
-![Éditeur de fragment de contenu - Comparaison de l’historique de versions](assets/cf-authoring-version-history-compare.png)
+![Éditeur de fragment de contenu - Comparaison de l’historique des versions](assets/cf-authoring-version-history-compare.png)
 
-Cela ouvre une vue qui affiche les différences entre la version actuelle du contenu et la version précédente sélectionnée du fragment de contenu. Dans la liste déroulante **Variations avec modifications** , vous pouvez sélectionner pour afficher les différences par rapport au contenu principal et/ou au contenu par rapport à une variation.
+Cela ouvre une vue qui affiche les différences entre la version actuelle du contenu et la version précédente sélectionnée du fragment de contenu. Dans le menu déroulant **Variations avec modifications** vous pouvez choisir de voir les différences entre le contenu principal et/ou le contenu d’une variation.
 
 Les différences sont indiquées par la couleur :
 
 * Vert : indique le contenu ajouté (à la version actuelle)
 * Rouge : indique le contenu supprimé (de la version actuelle)
 
-![Éditeur de fragment de contenu - Historique des versions Comparaison des versions](assets/cf-authoring-version-history-compare-versions.png)
+![Éditeur de fragment de contenu - Historique des versions Comparer les versions](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Rétablissement d’une version {#revert-version}
 
-Vous pouvez restaurer n’importe quelle version.
+Vous pouvez revenir à n’importe quelle version.
 
 Pour revenir à une version spécifique :
 
-1. Sélectionnez l’icône de trois points en regard de la version.
+1. Sélectionnez l’icône des trois petits points en regard de la version.
 
 1. Sélectionnez **Rétablir**.
 
-![ Éditeur de fragment de contenu - Historique des versions - Rétablissement ](assets/cf-authoring-version-history-revert.png)
+![Éditeur de fragment de contenu - Rétablissement de l’historique des versions](assets/cf-authoring-version-history-revert.png)
 
-## Affichage des copies de langue {#view-language-copies}
+## Afficher les copies de langue {#view-language-copies}
 
-Dans l’onglet **Propriétés de langue**, les détails des copies de langue associées s’affichent. Lorsque vous sélectionnez une icône de lien, la copie s’ouvre dans un onglet distinct.
+Les détails de toutes les copies de langue associées sont affichés dans l’onglet **Propriétés de la langue**. Si vous sélectionnez une icône de lien, la copie s’ouvre dans un onglet distinct.
 
 Par exemple :
 
-![Éditeur de fragment de contenu - ouvrir Copie de langue](assets/cf-authoring-open-language-copies.png)
+![Éditeur de fragment de contenu - Ouvrir la copie de langue](assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
->Pour plus d’informations sur la traduction d’un fragment de contenu et la création de copies de langue, voir le [Parcours de traduction AEM sans affichage](/help/journey-headless/translation/overview.md).
+>Pour plus d’informations sur la traduction d’un fragment de contenu et la création de copies de langue, consultez le [Parcours de traduction découplée AEM](/help/journey-headless/translation/overview.md).
 
+## Commentaires sur votre fragment {#commenting-on-your-fragment}
 
-## Aperçu du fragment {#preview-content-fragment}
+L’onglet **Commentaires** dans le panneau de droite fournit les fonctionnalités suivantes :
+
+* Ajouter un nouveau commentaire
+* Balisage d’utilisateurs spécifiques dans un commentaire
+   * Ils reçoivent alors une notification comportant un lien pour ouvrir directement le fragment
+* Aimer un commentaire existant
+* Répondre à un commentaire
+* Formatez vos commentaires ; une mise en forme de base est disponible.
+* Effectuer une recherche de texte dans les commentaires existants
+* Modifier un commentaire existant
+* Supprimer les commentaires
+
+![ Éditeur de fragment de contenu - Onglet Commentaires ](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>Ces commentaires ne sont pas visibles en tant que [Annotations dans l’éditeur d’origine](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) ni dans le [Journal de la console Assets](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+
+## Prévisualiser le fragment {#preview-content-fragment}
 
 L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe.
 
 Pour utiliser cette fonctionnalité, vous devez d’abord :
 
-* Contactez votre équipe informatique pour configurer l’application frontale externe qui effectuera le rendu du fragment de contenu en utilisant sa sortie JSON.
-* Lorsque l’application frontale externe est configurée, le **modèle d’URL d’aperçu par défaut** doit être défini comme une propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Contactez votre équipe informatique pour configurer l’application frontale externe qui effectue le rendu du fragment de contenu en utilisant sa sortie JSON.
+* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
-Une fois l’URL définie, le bouton **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin de générer le fragment de contenu.
+Lorsque l’URL a été définie, le bouton **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
 
 ## Publish de votre fragment {#publish-content-fragment}
 
-Vous pouvez **Publish** insérer votre fragment dans :
+Vous pouvez **Publish** votre fragment vers votre :
 
-* Prévisualiser l’instance
+* Aperçu de l’instance
 * Instance Publish
 
-Vous pouvez publier votre fragment à partir de l’éditeur ou de la console. Pour plus d’informations, voir [Publication et aperçu d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) .
+Vous pouvez publier le fragment à partir de l’éditeur ou de la console. Voir [ Publication et prévisualisation d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
-## Annuler la publication de votre fragment {#unpublish-content-fragment}
+## Dépublication du fragment {#unpublish-content-fragment}
 
-Vous pouvez également **Annuler la publication** de votre fragment à partir de :
+Vous pouvez également **Dépublier** votre fragment à partir de votre :
 
-* Prévisualiser l’instance
+* Aperçu de l’instance
 * Instance Publish
 
-Vous pouvez annuler la publication de votre fragment dans l’éditeur ou dans la console. Pour plus d’informations, voir [Annulation de la publication d’un fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) .
+Vous pouvez dépublier votre fragment à partir de l’éditeur ou de la console. Voir [ Dépublication d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 
 ## Champs, types de données et icônes {#fields-datatypes-icons}
 
-Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’icône indique le **[Type de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** :
+Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’icône indique le **[type de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** :
 
 <table style="table-layout:auto">
  <tbody>
@@ -543,7 +569,7 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Espace réservé pour tabulation</b></p><p>Bien que non représenté par une icône réelle, un <b>espace réservé d’onglet</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, horizontalement comme affiché, ou dans une liste déroulante (lorsqu’il y en a trop à afficher horizontalement).</p> </td>
+   <td><p><b>Espace réservé pour tabulation</b></p><p>Bien que n’étant pas représenté par une icône réelle, un <b>Espace réservé d’onglet</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, soit horizontalement comme illustré, soit dans une liste déroulante (lorsqu’il y en a trop à afficher horizontalement).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
@@ -551,14 +577,14 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
 
 ## Bon à savoir {#good-to-know}
 
-* Pour modifier un fragment de contenu, vous avez besoin de [ des autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
+* Pour modifier un fragment de contenu, vous devez disposer [des autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
   Par exemple, si vous ne disposez pas des autorisations `edit`, l’éditeur sera en lecture seule.
 
-* Un modèle de fragment de contenu peut souvent définir des champs de données nommés **Title** et **Description**. Si ces champs existent, il s’agit de champs définis par l’utilisateur et ils peuvent être mis à jour dans le *panneau central* lors de la modification du fragment.
+* Un modèle de fragment de contenu peut souvent définir des champs de données nommés **Titre** et **Description**. Si ces champs existent, il s’agit de champs définis par l’utilisateur ou l’utilisatrice et qui peuvent être mis à jour dans le panneau *central* lors de la modification du fragment.
 
-  Le fragment de contenu et ses variantes ont également des champs de métadonnées (propriétés de variation) appelés **Titre** et **Description**. Ces champs font partie intégrante d’un fragment de contenu et sont initialement définis lors du fragment. Ils peuvent être mis à jour dans le *panneau de droite* lors de la modification du fragment.
+  Le fragment de contenu et ses variations comportent également des champs de métadonnées (propriétés de variation) appelés **Titre** et **Description**. Ces champs font partie intégrante de tout fragment de contenu et sont initialement définis lors du fragment. Elles peuvent être mises à jour dans le panneau *droit* lors de la modification du fragment.
 
-* Pour plus d’informations sur l’ [ éditeur de fragment de contenu d’origine ](/help/assets/content-fragments/content-fragments-variations.md), reportez-vous à la documentation Assets ; elle est disponible à partir de la console **Assets** et de la console **Fragments de contenu**.
+* Consultez la documentation d’Assets pour obtenir des informations complètes sur l’[éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md) disponible à partir des consoles **Assets** et **fragments de contenu**.
 
-* Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Pour plus d’informations, voir [Personnalisation de la console de fragments de contenu et de l’éditeur](/help/implementing/developing/extending/content-fragments-console-and-editor.md) .
+* Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Voir [Personnalisation de la console et de l’éditeur de fragments de contenu](/help/implementing/developing/extending/content-fragments-console-and-editor.md) pour plus d’informations.
