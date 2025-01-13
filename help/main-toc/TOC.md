@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
+source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
 workflow-type: tm+mt
-source-wordcount: '5948'
+source-wordcount: '5957'
 ht-degree: 99%
 
 ---
@@ -231,7 +231,8 @@ ht-degree: 99%
    + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configurer des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [Bonnes pratiques pour le mappage des utilisateurs et utilisatrices de services Sling et la définition des utilisateurs et utilisatrices de services](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Clés gérées par le client pour les Adobes as a Cloud Service](/help/security/customer-managed-keys.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
