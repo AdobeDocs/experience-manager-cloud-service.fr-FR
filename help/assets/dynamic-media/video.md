@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
+source-wordcount: '10560'
 ht-degree: 59%
 
 ---
@@ -31,8 +31,8 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 
    * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptif_ prédéfini fourni avec Dynamic Media.
 
-      * [Création d’un profil de codage vidéo](/help/assets/dynamic-media/video-profiles.
-      * La résolution maximale du codage vidéo de sortie est de 8 192 × 4 320 ou 4 320 × 8 192.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Création d’un profil de codage vidéo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * La résolution maximale du codage vidéo de sortie est de 8 192 × 4 320 ou de 4 320 × 8 192,md.
       * En savoir plus sur les [bonnes pratiques relatives au codage vidéo](#best-practices-for-encoding-videos).
 
    * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lequel vous allez charger les vidéos issues de sources originales.
