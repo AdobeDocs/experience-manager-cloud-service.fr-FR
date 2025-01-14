@@ -435,7 +435,7 @@ ht-degree: 99%
          + Multi Site Manager {#msm}
             + [Présentation de MSM et Live Copy](/help/sites-cloud/administering/msm/overview.md)
             + [Configuration de la synchronisation des Live Copies](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
-            + [Création et synchronisation de Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
+            + [Création et synchronisation de Live Copies](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Console Aperçu de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [Conflits de déploiement](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [Bonnes pratiques MSM](/help/sites-cloud/administering/msm/best-practices.md)
