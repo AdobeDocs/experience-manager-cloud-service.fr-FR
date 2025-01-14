@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 88%
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # Fragments de code {#snippets}
@@ -53,8 +53,8 @@ ht-degree: 88%
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [Connexion d’un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
-* [Création d’une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+* [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Voir également {#see-more-forms-eds}
 
@@ -114,9 +114,9 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </td>
    </tr>
    <tr>
-   <td>Navigation entre les panneaux</td>
-   <td> Les composants <b>Bouton suivant</b> et <b>Bouton précédent</b> sont fournis pour naviguer entre les panneaux. Un bouton de navigation placé dans le conteneur fonctionne sur ses éléments enfants.</td>
-   <td> La règle <b>Navigation dans le panneau</b> est disponible dans l’éditeur de règles, ce qui permet aux utilisateurs de créer des règles pour naviguer entre les enfants des panneaux.
+   <td>Naviguer entre les panneaux</td>
+   <td> Les composants <b>Bouton suivant</b> et <b>Bouton précédent</b> sont fournis pour naviguer entre les panneaux. Un bouton de navigation placé dans le conteneur fonctionne sur ses éléments enfant.</td>
+   <td> La règle <b>Navigation dans le panneau</b> est disponible dans l’éditeur de règles, ce qui permet aux utilisateurs et utilisatrices de créer des règles pour naviguer entre les enfants des panneaux.
    </td>
    </tr>
    </tr>
@@ -132,11 +132,11 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 * [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
 * [Différents cas d’utilisation de l’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md)
 * [Différence des diverses éditions de l’éditeur de règles](/help/forms/rule-editor-core-components-difference-tables.md)
-* [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
-* [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur les composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [Utiliser des fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md)
+* [Améliorations du service Invoke dans l’éditeur de règles visuel pour les formulaires basés sur des composants principaux](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Présentation des fonctions personnalisées des formulaires adaptatifs basés sur les composants principaux](/help/forms/create-and-use-custom-functions.md)
 * [Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md)
-* [Objet Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
+* [Objet portée dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md)
 * [Exemples de développement et d’utilisation d’une fonction personnalisée](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -149,10 +149,10 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [Intégration du Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configuration de la source de données du Marketo Engage pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Configuration de l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Intégrer Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurer la source de données Marketo Engage pour les formulaires adaptatifs existants](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configurer l’action d’envoi vers Marketo Engage pour les formulaires existants](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Liste autorisée des adresses IP de Cloud Manager et des pipelines front-end {#allowlist-frontend-pipeline}
 
@@ -187,10 +187,10 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >
 >L’éditeur universel n’est pas compatible avec les [listes d’adresses IP autorisées.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Si vous souhaitez utiliser l’éditeur universel, vous devez :
+>Si vous souhaitez utiliser l’éditeur universel, vous devez effectuer l’une des deux actions suivantes :
 >
->* Pas d’activation des Listes autorisées IP.
->* [Exécutez votre propre instance du service Universal Editor.](/help/implementing/universal-editor/local-dev.md)
+>* Ne pas activer les listes d’adresses IP autorisées.
+>* [Exécuter votre propre instance du service d’éditeur universel.](/help/implementing/universal-editor/local-dev.md)
 
 ## Utiliser Dynamic Media {#work-with-dynamic-media}
 
@@ -223,7 +223,7 @@ Si un problème de produit nécessite une enquête et un dépannage supplémenta
 
 Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votre site Edge Delivery dans Cloud Manager. L’enregistrement de votre site web avec Cloud Manager, recommandé à tous les utilisateurs d’AEM as a Cloud Service, [apporte de nombreux avantages](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Pour plus d’informations, consultez la [documentation de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) si vous n’avez pas encore enregistré votre site.
 
-**Pour enregistrer un ticket d’assistance :**
+**Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
 1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
@@ -232,3 +232,11 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
    * URL du site web actif. Par exemple : `www.mydomain.com`.
    * URL du site web d’origine (URL `.hlx`).
 
+## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>L’éditeur SPA reste pris en charge par Adobe, mais les éditeurs préférés pour gérer le contenu découplé dans AEM sont désormais les suivants :
+>
+>* [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour modifier visuellement du contenu découplé.
+>* [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification du contenu découplé à partir des formulaires.

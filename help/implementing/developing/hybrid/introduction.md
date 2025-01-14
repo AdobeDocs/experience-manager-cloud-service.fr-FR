@@ -4,7 +4,7 @@ description: Cet article présente les concepts d’une SPA et décrit l’utili
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 95%
@@ -16,6 +16,8 @@ ht-degree: 95%
 Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
+
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 
@@ -132,7 +134,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-L’expérience du comportement d’un SPA pour l’utilisateur, puis l’inspection de la page SPA, vous permettent de mieux comprendre le fonctionnement d’une application SAP avec l’éditeur d’outils de la page d’accès aux ressources dans.
+Expérimenter le comportement d’un SPA pour l’utilisateur, puis inspecter la page SPA permet de mieux comprendre le fonctionnement d’une application SAP avec l’éditeur SPA dans AEM.
 
 ### Utilisation d’une SPA {#using-an-spa-application}
 
@@ -211,7 +213,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
-En outre, pour l’auteur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
+En outre, pour la personne en charge de la création de contenu, la création de contenu à l’aide d’un éditeur SPA est transparente au sein d’AEM.
 
 Dans la section suivante, nous allons examiner le contrat qui permet à l’éditeur de SPA de relier les composants de la SPA aux composants d’AEM et d’offrir cette expérience de modification transparente.
 
@@ -231,7 +233,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
    Ce chemin d’accès permet de récupérer et d’associer l’objet de configuration de contexte de modification de chaque composant.
 
-   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine la configuration modifiable qui est associée au composant, de sorte que le cadre, la barre d’outils appropriés, etc., soient chargés.
+   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur SPA détermine la configuration modifiable associée au composant, de sorte que le cadre, la barre d’outils, etc. appropriés soient chargés.
 
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 
@@ -243,7 +245,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. En outre, SPA peut être utilisé dans AEM tout en utilisant l’utilisation d’ pour diffuser du contenu vers d’autres points de terminaison sans interface.
+Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. En outre, SPA peut être utilisé au sein d’AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée de manière découplée.
 
 >[!TIP]
 >

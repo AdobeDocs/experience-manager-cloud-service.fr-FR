@@ -4,7 +4,7 @@ description: Cet article présente des questions importantes à prendre en compt
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 100%
@@ -16,6 +16,8 @@ ht-degree: 100%
 Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 Cet article présente des questions importantes à prendre en compte lors du recrutement d’un développeur ou d’une développeuse front-end pour développer une SPA pour AEM. Il propose un aperçu de l’architecture d’AEM pour le déploiement de SPA sur AEM.
+
+{{ue-over-spa}}
 
 ## Principes de développement de SPA pour AEM {#spa-development-principles-for-aem}
 

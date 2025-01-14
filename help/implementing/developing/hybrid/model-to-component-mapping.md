@@ -4,7 +4,7 @@ description: Cet article décrit le fonctionnement du mappage du modèle dynamiq
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # Mappage du modèle dynamique avec les composants pour les SPA {#dynamic-model-to-component-mapping-for-spas}
 
 Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
+
+{{ue-over-spa}}
 
 ## Module ComponentMapping {#componentmapping-module}
 

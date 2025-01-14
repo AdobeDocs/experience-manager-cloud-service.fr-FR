@@ -4,9 +4,9 @@ description: Ce document décrit les étapes recommandées pour charger une SPA 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 97%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 97%
 # Modification d’une SPA externe dans AEM {#editing-external-spa-within-aem}
 
 Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing/headful-headless.md) à appliquer entre votre SPA externe et AEM, pensez que vous aurez souvent à modifier et à afficher la SPA dans AEM.
+
+{{ue-over-spa}}
 
 ## Vue d’ensemble {#overview}
 
@@ -27,7 +29,7 @@ Les conditions préalables sont simples.
 * Créez un projet de base de SPA AEM à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr?#available-properties).
    * Il s’agit de la base du projet AEM qui est mis à jour pour inclure la SPA externe.
    * Pour les exemples de ce document, nous utilisons [le projet SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr#spa-editor) comme point de départ.
-* Ayez les SPA React externes et opérationnelles que vous souhaitez intégrer à votre disposition.
+* Ayez à portée de main le SPA React externe fonctionnel que vous souhaitez intégrer.
 
 ## Chargement de la SPA vers le projet AEM {#upload-spa-to-aem-project}
 
@@ -79,7 +81,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 * `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Ce chemin peut être utilisé pour récupérer le `rootModel` à l’initialisation, le cas échéant.
 * `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
@@ -345,7 +347,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Ajoutez des assistants pour le routage de la SPA.
 
-   * La page créée ne peut pas encore afficher le contenu attendu dans AEM. En effet, le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès actif d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, vous devez ajouter des fonctions d’aide côté SPA.
+   * La page créée ne peut pas encore générer le contenu attendu dans AEM. En effet, le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès actif d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, vous devez ajouter des fonctions d’aide côté SPA.
 
    ![Assistant de routage](assets/external-spa-router-helper.png)
 
@@ -358,11 +360,11 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Vérifiez la modification de la page dans AEM.
 
-   * Déployez le projet pour AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
+   * Déployez le projet sur AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
 
 ## Restrictions du framework {#framework-limitations}
 
-Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme le [ webpack-manifest-plugin sur GitHub](https://github.com/shellscape/webpack-manifest-plugin). Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
+Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource tel que [webpack-manifest-plugin sur GitHub](https://github.com/shellscape/webpack-manifest-plugin). Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -375,4 +377,3 @@ Les documents de référence suivants peuvent être utiles pour comprendre le fo
 * [Documents de référence relatifs aux SPA (référence de l’API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Plan directeur d’applications sur une seule page (SPA) et PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Routage du modèle de SPA](/help/implementing/developing/hybrid/routing.md)
-* [SPA et rendu côté serveur](/help/implementing/developing/hybrid/ssr.md)

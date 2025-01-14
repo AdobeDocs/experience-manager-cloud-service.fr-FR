@@ -4,7 +4,7 @@ description: Dans une SPA, le composant de page ne fournit pas les éléments HT
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # Composant de page SPA {#spa-page-component}
 
 Le composant de page d’une application monopage (SPA) ne fournit pas les composants HTML de ses composants enfants via un fichier HTL ou JSP et des objets de ressource. Cette opération est déléguée à la structure SPA. La représentation des composants enfants est récupérée en tant que structure de données JSON (à savoir le modèle). Les composants SPA sont ensuite ajoutés à la page conformément au modèle JSON fourni. En tant que telle, la composition initiale du corps du composant de page diffère de celle du code HTML prérendu.
+
+{{ue-over-spa}}
 
 ## Gestion du modèle de page {#page-model-management}
 

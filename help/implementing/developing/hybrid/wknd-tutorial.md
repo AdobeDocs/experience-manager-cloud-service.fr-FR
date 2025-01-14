@@ -4,7 +4,7 @@ description: Découvrez le développement d’applications sur une seule page (S
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 ---
 
 # Projet SPA WKND {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 Découvrez le développement d’applications sur une seule page (SPA) grâce à ce tutoriel en plusieurs parties. Vous serez guidé tout au long de la mise en œuvre de la configuration du projet, du mappage des composants, des outils de développement front-end et du routage d’applications pour mettre en œuvre vos propres SPA.
 

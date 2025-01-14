@@ -4,7 +4,7 @@ description: Ce document décrit le contrat général et indépendant du framewo
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 98%
@@ -14,6 +14,8 @@ ht-degree: 98%
 # Plan directeur d’applications sur une seule page (SPA) {#spa-blueprint}
 
 La SPA doit respecter certaines exigences afin que l’auteur puisse utiliser l’éditeur de SPA AEM pour modifier son contenu.
+
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 
@@ -25,7 +27,7 @@ Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les d
 >
 >Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, un calque spécifique au framework composé de modules, composants et services peut être fourni.
 >
->**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en oeuvre une autre structure à utiliser avec AEM.
+>**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous souhaitez mettre en œuvre un autre framework à utiliser avec AEM.
 
 >[!CAUTION]
 >
