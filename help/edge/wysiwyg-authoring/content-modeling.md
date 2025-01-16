@@ -4,10 +4,10 @@ description: Découvrez comment fonctionne la modélisation de contenu pour la c
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Le fichier [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplat
 
 Notez que tous les blocs n’ont pas nécessairement un modèle. Certains sont simplement des [conteneurs](#container) pour une liste d’enfants, où chaque enfant a son propre modèle.
 
-Il est également nécessaire de définir les blocs qui existent et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. Le fichier [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) répertorie les composants tels qu’ils sont rendus disponibles par l’éditeur universel.
+Il est également nécessaire de définir les blocs qui existent et qui peuvent être ajoutés à une page à l’aide de l’éditeur universel. Le fichier [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) répertorie les composants à mesure qu’ils sont rendus disponibles par l’éditeur universel.
 
 ```json
 {
@@ -113,7 +113,7 @@ Pour chaque bloc, l’équipe de développement :
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
 * peut définir un [ID de modèle.](/help/implementing/universal-editor/field-types.md#model-structure) ;
    * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour la personne chargée de la création dans le panneau des propriétés.
-* peut définir un [ID de filtre](/help/implementing/universal-editor/customizing.md#filtering-components).
+* peut définir un [ID de filtre](/help/implementing/universal-editor/filtering.md).
    * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi qui sont activées.
 
 Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
@@ -245,7 +245,7 @@ En voici un exemple : [métadonnées de section.](/help/edge/developer/markup-s
 
 Les deux structures précédentes ont une seule dimension : la liste des propriétés. Les blocs de conteneur permettent d’ajouter des enfants (généralement du même type ou modèle) et sont donc bidimensionnels. Ces blocs continuent de prendre en charge leurs propres propriétés rendues sous forme de lignes, avec une seule colonne au départ. Ils permettent également d’ajouter des enfants, pour lesquels chaque élément est rendu sous forme de ligne et chaque propriété est rendue sous forme de colonne dans cette ligne.
 
-Dans l’exemple suivant, un bloc accepte une liste d’icônes liées en tant qu’enfants, chaque icône liée comportant une image et un lien. Remarquez l’[identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) défini dans les données du bloc afin de référencer la configuration du filtre.
+Dans l’exemple suivant, un bloc accepte une liste d’icônes liées en tant qu’enfants, chaque icône liée comportant une image et un lien. Remarquez l’[identifiant de filtre](/help/implementing/universal-editor/filtering.md) défini dans les données du bloc afin de référencer la configuration du filtre.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ De la même manière qu’une équipe de développement peut définir et modéli
 
 Le modèle de contenu de Edge Delivery Services n’autorise, à dessein, qu’un seul niveau d’imbrication, c’est-à-dire un contenu ou un bloc par défaut figurant dans une section. Cela signifie que, pour disposer de composants visuels plus complexes pouvant contenir d’autres composants, il convient de les modéliser sous forme de sections et de les combiner à l’aide du blocage automatique côté client. Les exemples types sont les onglets et les sections réductibles, comme les accordéons.
 
-Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components), qui sont utilisés par l’[éditeur universel](/help/implementing/universal-editor/introduction.md) uniquement, ainsi qu’un [identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure), qui est utilisé pour effectuer le rendu des métadonnées de section. Dans ce cas, le modèle est le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
+Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [identifiant de filtre](/help/implementing/universal-editor/filtering.md), qui sont utilisés par l’[éditeur universel](/help/implementing/universal-editor/introduction.md) uniquement, ainsi qu’un [identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure), qui est utilisé pour effectuer le rendu des métadonnées de section. Dans ce cas, le modèle est le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
 
-L’[identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure) et l’[identifiant de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) de la section par défaut sont `section`. Ils peuvent être utilisés pour modifier le comportement de la section par défaut. L’exemple suivant ajoute des styles et une image d’arrière-plan au modèle de métadonnées de section.
+L’[identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure) et l’[identifiant de filtre](/help/implementing/universal-editor/filtering.md) de la section par défaut sont `section`. Ils peuvent être utilisés pour modifier le comportement de la section par défaut. L’exemple suivant ajoute des styles et une image d’arrière-plan au modèle de métadonnées de section.
 
 ```json
 {

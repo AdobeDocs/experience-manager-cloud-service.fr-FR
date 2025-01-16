@@ -4,10 +4,10 @@ description: Découvrez comment créer des blocs instrumentés à utiliser avec 
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 ![Clonage du projet](assets/create-block/clone.png)
 
-2\. Modifiez le fichier [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) à la racine du projet, ajoutez la définition suivante pour votre nouveau bloc de devis et enregistrez le fichier.
+2\. Modifiez le fichier [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) à la racine du projet et ajoutez la définition suivante à votre nouveau bloc de citation, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ L’exemple de bloc de citation suivant suit cette approche.
 
 >[!ENDTABS]
 
-4\. Modifiez le fichier [`component-filters.json`](/help/implementing/universal-editor/customizing.md#filtering-components) à la racine du projet, puis ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) pour permettre l’ajout du bloc à n’importe quelle section et l’enregistrement du fichier.
+4\. Modifiez le fichier [`component-filters.json`](/help/implementing/universal-editor/filtering.md) à la racine du projet et ajoutez le bloc de citation à la [définition de filtre](/help/implementing/universal-editor/filtering.md) afin de permettre d’ajouter le bloc à n’importe quelle section, puis enregistrez le fichier.
 
 >[!BEGINTABS]
 

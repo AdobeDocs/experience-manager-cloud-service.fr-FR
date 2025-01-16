@@ -3,13 +3,13 @@ title: Définition du composant
 description: Comprenez en détail le contrat JSON entre la définition du composant et l’éditeur universel.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
 
 ---
-
 
 # Définition du composant {#component-definition}
 
@@ -79,7 +79,7 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 * `title` définit la description textuelle du composant affichée dans l’interface utilisateur.
 * `id` identifie de manière unique le composant.
    * Le [modèle de composant](/help/implementing/universal-editor/field-types.md#model-structure) du même `id` définit les champs du composant.
-   * Dans la mesure où il est unique, il peut être utilisé, par exemple, dans une [définition de filtre](/help/implementing/universal-editor/customizing.md#filtering-components) pour déterminer les composants qui peuvent être ajoutés à un conteneur.
+   * Dans la mesure où il est unique, il peut être utilisé, par exemple, dans une [définition de filtre](/help/implementing/universal-editor/filtering.md) pour déterminer les composants qui peuvent être ajoutés à un conteneur.
 
 ## `plugins` {#plugins}
 
