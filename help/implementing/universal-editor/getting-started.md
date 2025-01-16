@@ -4,10 +4,10 @@ description: Découvrez comment accéder à l’éditeur universel et comment co
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 62%
+source-wordcount: '956'
+ht-degree: 41%
 
 ---
 
@@ -20,17 +20,17 @@ Découvrez comment accéder à l’éditeur universel et comment commencer à in
 >
 >Si vous préférez plonger directement dans un exemple, vous pouvez consulter la section [Exemple d’application de l’éditeur universel sur GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-Bien qu’Universal Editor puisse modifier du contenu à partir de n’importe quelle source, ce document utilise une application AEM comme exemple. Ce document vous guidera tout au fil de ces étapes.
+Bien que l’éditeur universel puisse modifier du contenu à partir de n’importe quelle source, ce document utilise une application AEM comme exemple. Ce document vous guidera tout au fil de ces étapes.
 
 ## Instrumenter la page {#instrument-page}
 
-Universal Editor a besoin d’une bibliothèque JavaScript pour effectuer le rendu et modifier la page dans l’éditeur.
+L’éditeur universel requiert une bibliothèque JavaScript pour effectuer le rendu et la modification de la page dans l’éditeur.
 
-En outre, le service Universal Editor requiert un [ nom de ressource uniforme (URN)](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
+En outre, le service d’éditeur universel requiert un [nom de ressource uniforme (URN)](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
 
-### Inclusion de la bibliothèque CORS de l’éditeur universel {#cors-library}
+### Inclure la bibliothèque CORS de l’éditeur universel {#cors-library}
 
-Pour que l’éditeur universel puisse se connecter à votre application, celle-ci doit inclure la bibliothèque CORS de l’éditeur universel. Ajoutez le script suivant à votre application.
+Pour que l’éditeur universel puisse se connecter à votre application, votre application doit inclure la bibliothèque CORS de l’éditeur universel. Ajoutez le script suivant à votre application .
 
 ```html
  <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
@@ -46,7 +46,7 @@ Les connexions utilisées dans l’application sont stockées sous la forme de b
 
 * `<category>` - Il s’agit d’une classification de la connexion avec deux options.
    * `system` - Pour les points d’entrée de connexion
-   * `config` - Pour [ la définition des paramètres de configuration facultatifs](#configuration-settings)
+   * `config` - Pour [définition des paramètres de configuration facultatifs](#configuration-settings)
 * `<referenceName>` : il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple, `aemconnection`
 * `<protocol>` : indique le plug-in de persistance du service de persistance de l’éditeur universel à utiliser. Par ex. `aem`
 * `<url>` : il s’agit de l’URL vers le système où les modifications doivent être conservées. Par ex. `http://localhost:4502`
@@ -100,25 +100,70 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Paramètres de configuration {#configuration-settings}
 
-Vous pouvez utiliser le préfixe `config` dans l’URL de votre connexion pour définir les points d’entrée de service et d’extension si nécessaire.
+Vous pouvez utiliser le préfixe `config` dans votre URN de connexion pour définir le service et les points d’entrée d’extension, si nécessaire.
 
-Si vous ne souhaitez pas utiliser le service Universal Editor, qui est hébergé par Adobe, mais votre propre version hébergée, vous pouvez le définir dans une balise META. Pour remplacer le point d’entrée de service par défaut fourni par Universal Editor, définissez votre propre point d’entrée de service :
+Si vous souhaitez ne pas utiliser le service d’éditeur universel, qui est hébergé par Adobe, mais votre propre version hébergée, vous pouvez le définir dans une balise meta . Pour remplacer le point d’entrée de service par défaut fourni par l’éditeur universel, définissez votre propre point d’entrée de service :
 
-* Nom de métadonnées - `urn:adobe:aue:config:service`
-* Métadonnées - `content="https://adobe.com"` (exemple)
+* Nom du méta-élément - `urn:adobe:aue:config:service`
+* Méta-contenu - `content="https://adobe.com"` (exemple)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-Si vous souhaitez uniquement que certaines extensions soient activées pour une page, vous pouvez le définir dans une balise meta . Pour récupérer les extensions, définissez les points de fin d’extension :
+Si vous souhaitez uniquement activer certaines extensions pour une page, vous pouvez le définir dans une balise meta. Pour récupérer des extensions, définissez les points d’entrée d’extension :
 
-* Nom méta : `urn:adobe:aue:config:extensions`
-* Métadonnées : `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemple)
+* Méta-nom : `urn:adobe:aue:config:extensions`
+* Métcontenu : `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemple)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## Définissez pour quels chemins d’accès au contenu ou `sling:resourceType` l’éditeur universel doit être ouvert. (Facultatif) {#content-paths}
+
+Si vous disposez déjà d’un projet AEM utilisant [ l’éditeur de page ](/help/sites-cloud/authoring/page-editor/introduction.md), lorsque les auteurs de contenu modifient des pages, les pages s’ouvrent automatiquement avec l’éditeur de page. Vous pouvez définir l’éditeur qu’AEM doit ouvrir en fonction des chemins d’accès au contenu ou du `sling:resourceType`, ce qui rend l’expérience transparente pour vos auteurs, quel que soit l’éditeur requis pour le contenu sélectionné.
+
+1. Ouvrez Configuration Manager.
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. Recherchez **Service d’URL de l’éditeur universel** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+
+1. Définissez pour quels chemins d’accès au contenu ou `sling:resourceType` l’éditeur universel doit être ouvert.
+
+   * Dans le champ **Mappage d’ouverture de l’éditeur universel** indiquez les chemins d’accès pour lesquels l’éditeur universel est ouvert.
+   * Dans le champ **Sling:resourceTypes qui doit être ouvert par l’éditeur universel**, fournissez une liste de ressources ouvertes directement par l’éditeur universel.
+
+1. Cliquez sur **Enregistrer**.
+
+AEM ouvre l’éditeur universel pour les pages basées sur cette configuration dans l’ordre suivant.
+
+1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins d’accès qui y sont définis, l’éditeur universel s’ouvre pour lui.
+1. Pour le contenu ne se trouvant pas sous les chemins définis dans `Universal Editor Opening Mapping`, AEM vérifie si le `resourceType` du contenu correspond à ceux définis dans **Sling:resourceTypes qui doivent être ouverts par l’éditeur universel** et si le contenu correspond à l’un de ces types, l’éditeur universel est ouvert pour lui à l’`${author}${path}.html`.
+1. Sinon, AEM ouvre l’éditeur de page.
+
+Les variables suivantes sont disponibles pour définir vos mappages dans le champ **Universal Editor Opening Mapping**.
+
+* `path` : chemin d’accès au contenu de la ressource à ouvrir
+* `localhost` : entrée du service Externalizer pour les `localhost` sans schéma, par exemple `localhost:4502`
+* `author` : entrée du service Externalizer pour l’auteur sans schéma, par exemple `localhost:4502`
+* `publish` : entrée du service Externalizer pour la publication sans schéma, par exemple `localhost:4503`
+* `preview` : entrée du service Externalizer pour la prévisualisation sans schéma, par exemple `localhost:4504`
+* `env` : `prod`, `stage`, `dev` en fonction des modes d’exécution Sling définis
+* `token` : jeton de requête requis pour le `QueryTokenAuthenticationHandler`
+
+### Exemples de mappages {#example-mappings}
+
+* Ouvrez toutes les pages sous `/content/foo` sur l’auteur AEM :
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`
+
+* Ouvrez toutes les pages sous `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations :
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * Cela entraîne l’ouverture de `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## Vous pouvez désormais utiliser l’éditeur universel. {#youre-ready}
 
