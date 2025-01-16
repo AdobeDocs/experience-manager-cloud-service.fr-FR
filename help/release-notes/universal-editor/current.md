@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2024.12.02
-description: Il s’agit des notes de mise à jour de la version 2024.12.02 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2054.01.16
+description: Il s’agit des notes de mise à jour de la version 2025.01.16 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 16%
+source-wordcount: '236'
+ht-degree: 19%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2024.12.02 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.01.16 {#release-notes}
 
-Il s’agit des notes de mise à jour de la version du 2 décembre 2024 d’Universal Editor.
+Voici les notes de mise à jour de la version du 16 janvier 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Il s’agit des notes de mise à jour de la version du 2 décembre 2024 d’Univ
 
 ## Nouveautés {#what-is-new}
 
-* **Navigation au clavier de l’arborescence de contenu** : [L’arborescence de contenu,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) disponible dans le panneau latéral, est désormais entièrement accessible via le clavier.
-   * Les auteurs peuvent naviguer et interagir avec les éléments d’arborescence à l’aide des commandes de clavier standard, en respectant les [instructions WCAG 2.1](/help/sites-cloud/authoring/page-editor/accessible-content.md) pour l’accessibilité.
-   * Cette amélioration garantit que tous les éléments interactifs de l’arborescence sont utilisables par le clavier, ce qui améliore l’inclusion pour les utilisateurs qui dépendent de la navigation au clavier.
-* **Désélection des éléments modifiables** : les auteurs peuvent désormais désélectionner les éléments modifiables précédemment sélectionnés sur la page.
-   * Cela permet d’éviter les distractions lorsque les auteurs souhaitent afficher la page sans bordures de sélection actives.
-* **Sélecteur de fragments** : sur les instances AEM as a Cloud Service, les références aux fragments ouvrent désormais le sélecteur de fragments en tant que sélecteur de contenu, offrant ainsi des fonctionnalités améliorées telles que l’obéissance aux modèles de fragments de contenu autorisés, la recherche de fragments de contenu et une expérience globale améliorée.
-   * Cela s’aligne sur les autres interfaces utilisateur d’Adobe et améliore la cohérence.
-   * [Pour les environnements AEM 6.5,](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) le sélecteur de contenu existant reste en cours d’utilisation.
-* **Description du conteneur** : [Le composant de conteneur](/help/implementing/universal-editor/field-types.md#container) utilisé dans le [panneau Propriétés,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) pour référencer le contenu, prend désormais en charge un attribut de description, affiché au-dessus des champs du conteneur.
-   * Cet ajout renforce la clarté en fournissant aux auteurs un contexte sur les champs regroupés qu’ils modifient.
+* **Obsolescence de la bibliothèque CORS &lt; 3.0.0** - Pour assurer la compatibilité future et améliorer la sécurité, l’éditeur universel prend désormais exclusivement en charge la version 3.0.0 ou ultérieure de
+  Bibliothèque `@Adobe Express/universal-editor-cors`.
+   * La bibliothèque est désormais uniquement diffusée via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+   * Une notification d’obsolescence s’affiche pour les utilisateurs et utilisatrices lors de l’ouverture d’une page qui utilise des versions plus anciennes de la bibliothèque CORS, les invitant à effectuer la mise à jour.
+* **Point d’extension de la page de destination** - [Un nouveau point d’extension](/help/implementing/universal-editor/customizing.md#extending) a été introduit pour que les extensions s’affichent dans le rail latéral de la page de destination de l’éditeur universel.
+   * Les développeurs peuvent désormais spécifier si les extensions s’appliquent à l’éditeur, à la page de destination ou aux deux, offrant ainsi une plus grande personnalisation et convivialité.
 
 ## Autres améliorations {#other-improvements}
 
-* **Synchronisation des champs de texte enrichi** : la synchronisation du contenu brut et rendu dans les champs de texte enrichi du panneau des propriétés a été améliorée, ce qui permet de résoudre les problèmes liés aux projets Edge Delivery Services où le contenu de texte enrichi et la représentation générée peuvent différer.
-* **Événements de mode d’édition** : l’éditeur universel émet désormais de manière fiable des événements de mode d’édition, y compris après le rechargement d’applications distantes.
+* **Correction d’URL non valides dans les éléments récents de la page de destination** - Un problème était résolu où les URL affichées dans la liste « Récents » de la page de destination de l’éditeur universel étaient rompues.
+* **Synchronisation des thèmes dans Unified Shell** - L’éditeur universel synchronise désormais dynamiquement le thème avec les paramètres Unified Shell du système et ajuste automatiquement les modes clair et sombre.
+   * Cela garantit une apparence visuelle cohérente sur les micro-fronts, y compris les sélecteurs de fragments et de ressources.
