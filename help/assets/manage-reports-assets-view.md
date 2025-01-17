@@ -4,10 +4,10 @@ description: Accédez aux données de la section des rapports de la vue Assets p
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 85%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 67%
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Les rapports de ressources offrent aux administrateurs une visibilité sur l’activité de l’environnement Vue Adobe Experience Manager Assets. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit. Tous les utilisateurs et utilisatrices peuvent accéder au tableau de bord Insights et ceux qui sont affectés au profil de produit Administrateurs et administratrices peuvent créer des rapports définis par l’utilisateur ou l’utilisatrice.
+Les rapports de ressources offrent aux administrateurs et administratrices une visibilité sur l’activité de l’environnement Adobe Experience Manager Assets View. Ces données fournissent des informations utiles sur la façon dont les utilisateurs interagissent avec le contenu et le produit. Tous les utilisateurs et utilisatrices peuvent accéder au tableau de bord Insights et ceux qui sont affectés au profil de produit Administrateurs et administratrices peuvent créer des rapports définis par l’utilisateur ou l’utilisatrice.
 
 ## Accéder aux rapports {#access-reports}
 
-Tous les utilisateurs affectés au profil de produit Administrateurs d’AEM peuvent accéder au tableau de bord Statistiques ou créer des rapports définis par l’utilisateur dans la vue Assets.
+Tous les utilisateurs affectés au profil de produit Administrateurs et administratrices AEM peuvent accéder au tableau de bord des Insights ou créer des rapports définis par l’utilisateur ou l’utilisatrice dans la vue Assets.
 
 Pour accéder aux rapports, accédez à **[!UICONTROL Rapports]** sous **[!UICONTROL Paramètres]**.
 
@@ -39,7 +39,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 ## Créer un rapport {#create-report}
 
-L’environnement de vue AEM Assets offre des fonctionnalités de création de rapports complètes par le biais du tableau de bord Rapports. Cette fonctionnalité permet aux utilisateurs et utilisatrices de générer et de télécharger des rapports CSV détaillant les chargements et les téléchargements de ressources dans des périodes spécifiées, qu’il s’agisse d’intervalles ponctuels, quotidiens, hebdomadaires, mensuels ou annuels.
+L’environnement d’affichage AEM Assets offre des fonctionnalités de création de rapports complètes via le tableau de bord Rapports. Cette fonctionnalité permet aux utilisateurs et utilisatrices de générer et de télécharger des rapports CSV détaillant les chargements et les téléchargements de ressources dans des périodes spécifiées, qu’il s’agisse d’intervalles ponctuels, quotidiens, hebdomadaires, mensuels ou annuels.
 
 **Pour créer un rapport, procédez come suit :**
 
@@ -48,7 +48,7 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
 
    **Dans l’onglet Configuration :**
 
-   1. **Type de rapport :** Sélectionnez parmi les types [!UICONTROL téléchargement], [!UICONTROL téléchargement] ou [Rapport de diffusion Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Type de rapport :** sélectionnez parmi les types [!UICONTROL charger], [!UICONTROL télécharger] ou [Rapport de diffusion Dynamic Media](#dynamic-media-delivery-reports).
    1. **Titre :** ajoutez un titre au rapport.
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin d’un rapport de ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
@@ -71,7 +71,7 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
      <tr>
       <td>Titre</td>
       <td>Titre de la ressource.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Chemin</td>
@@ -81,12 +81,12 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
      <tr>
       <td>Type MIME</td>
       <td>Type MIME de la ressource.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Taille</td>
       <td>Taille de la ressource en octets.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Téléchargé par</td>
@@ -101,22 +101,22 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
      <tr>
       <td>Créateur ou créatrice</td>
       <td>Le créateur ou la créatrice de la ressource.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Date de création</td>
       <td>Date à laquelle la ressource a été chargée dans la vue Assets.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Date de modification</td>
       <td>Date de dernière modification de la ressource.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Expiré</td>
       <td>Statut d’expiration de la ressource.</td>
-      <td>Téléchargement et téléchargement</td>
+      <td>Chargement et téléchargement</td>
      </tr>
      <tr>
       <td>Téléchargé par « Nom d’utilisateur »</td>
@@ -136,17 +136,19 @@ L’environnement de vue AEM Assets offre des fonctionnalités de création de r
     </tbody>
    </table>
 
-## Rapports sur les diffusions Dynamic Media {#dynamic-media-delivery-reports}
+## Rapports de diffusion Dynamic Media {#dynamic-media-delivery-reports}
 
-Obtenez des informations de diffusion pour les ressources diffusées avec Dynamic Media, avec le nombre de diffusions au niveau des ressources, les informations sur les référents, le chemin d’accès aux ressources dans AEM Assets et un identifiant de ressource unique. Les rapports peuvent être générés pour toutes les ressources diffusées via Dynamic Media pour le référentiel AEM Assets ou pour une hiérarchie de dossiers spécifique dans AEM Assets. En outre, les insights des rapports sur les diffusions Dynamic Media permettent de mesurer le retour sur investissement des ressources diffusées, de mesurer les performances des canaux et de prendre en charge des tâches de gestion des ressources informées.
+Obtenez des informations de diffusion pour les ressources diffusées avec Dynamic Media, avec le nombre de diffusions au niveau des ressources, les informations sur les référents, le chemin d’accès aux ressources dans AEM Assets et un identifiant de ressource unique. Les rapports peuvent être générés pour toutes les ressources diffusées via Dynamic Media pour le référentiel AEM Assets ou pour une hiérarchie de dossiers spécifique dans AEM Assets. Par ailleurs, les informations des rapports de diffusion Dynamic Media permettent de mesurer le retour sur investissement des ressources diffusées, de mesurer les performances des canaux et de prendre des décisions éclairées en matière de gestion des ressources.
 
+<!--
 >[!NOTE]
 > 
->Pour obtenir un accès anticipé au rapport de diffusion Dynamic Media sur votre compte Dynamic Media, [créez et envoyez un cas d’assistance clientèle d’Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
 
-Vous devez disposer d’une licence Dynamic Media pour créer et utiliser ce rapport.
+Vous devez disposer d’une licence Dynamic Media pour créer et utiliser ce rapport.
 
 >[!IMPORTANT]
 > 
@@ -154,34 +156,34 @@ Vous devez disposer d’une licence Dynamic Media pour créer et utiliser ce rap
 >* Les rapports sont générés pour le premier million de lignes. Pour capturer tous les fichiers dans cette limite, pensez à inclure la colonne Référent pour les dossiers plus petits.
 >* Les rapports peuvent uniquement être générés pour les 3 derniers mois.
 
-### Création d’un rapport de diffusion Dynamic Media{#create-dynamic-media-delivery-report}
+### Créer un rapport de diffusion Dynamic Media{#create-dynamic-media-delivery-report}
 
-1. Créez un rapport de diffusion Dynamic Media, en suivant les étapes mentionnées dans [Créer un rapport](#create-report).
+1. Créez un rapport de diffusion Dynamic Media, en suivant les étapes mentionnées dans [Créer un rapport](#create-report).
 
-1. Sélectionnez **[!UICONTROL Diffusion Dynamic Media]** dans la liste déroulante **[!UICONTROL Type de rapport]** .
+1. Sélectionnez **[!UICONTROL Diffusion Dynamic Media]** dans la liste déroulante **[!UICONTROL Type de rapport]**.
 
-   ![Liste déroulante Rapport de diffusion Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+   ![Liste déroulante Rapport de diffusion Dynamic Media](assets/dynamic-media-delivery-report-option.png)
 
 
 1. Dans l’onglet **[!UICONTROL Colonnes]**, vous pouvez sélectionner la colonne **[!UICONTROL Référent]** pour l’inclure dans votre rapport.
 
    ![Référent](assets/referrer.png)
 
-   Toutes les colonnes du rapport téléchargé sont en lecture seule, à l’exception de la colonne **Référent**, que vous pouvez modifier pour inclure ou exclure du rapport. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+   Toutes les colonnes du rapport téléchargé sont en lecture seule, à l’exception de la colonne **Référent**, que vous pouvez modifier pour l’inclure ou l’exclure du rapport. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
-### Actions effectuées sur le rapport Diffusion Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
+### Actions effectuées sur le rapport Diffusion Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
 
-Après avoir créé le rapport, vous pouvez effectuer les actions suivantes :
+Après avoir créé le rapport, vous pouvez effectuer les actions suivantes :
 
-* **[!UICONTROL Supprimer]** : vous pouvez supprimer le rapport sélectionné.
-* **[!UICONTROL Télécharger CSV]** : vous pouvez télécharger le rapport sélectionné au format CSV. Le rapport téléchargé se compose des colonnes Nom, Chemin, DynamicMediaID, Référent, Accès .
+* **[!UICONTROL Supprimer]** : vous pouvez supprimer le rapport sélectionné.
+* **[!UICONTROL Télécharger CSV]** : vous pouvez télécharger le rapport sélectionné au format CSV. Le rapport téléchargé se compose des colonnes Nom, Chemin, DynamicMediaID, Référent, Accès.
    * La colonne **Référent** répertorie l’URL où la ressource est diffusée ou incluse.
 
-   * La colonne **Accès** liste le nombre de fois où la ressource est diffusée (nombre de diffusions).
+   * La colonne **Accès** recense le nombre de fois où la ressource est diffusée (nombre de diffusions).
 
-Pour supprimer ou télécharger le rapport Diffusion Dynamic Media au format CSV, reportez-vous à la section [Affichage et téléchargement d’un rapport existant](#View-and-download-existing-report).
+Pour supprimer ou télécharger le rapport Diffusion Dynamic Media au format CSV, voir la section [Afficher et télécharger un rapport existant](#View-and-download-existing-report).
 
-![Fichier CSV téléchargé sur le rapport de diffusion Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+![Fichier CSV téléchargé sur le rapport de diffusion Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Afficher et télécharger un rapport existant {#View-and-download-existing-report}
@@ -192,7 +194,7 @@ Les rapports existants s’affichent dans l’onglet **Rapports exécutés**. Cl
 
 ## Planifier un rapport {#schedule-report}
 
-Dans l’interface utilisateur de la vue AEM Assets, la fonction **Planification du rapport** configure une génération automatique de rapports à des intervalles futurs spécifiés, par exemple tous les jours, toutes les semaines, tous les mois ou tous les ans. Cette fonctionnalité permet de rationaliser les besoins récurrents en matière de reporting et d’assurer des mises à jour opportunes des données. **Créer un rapport** génère pour sa part des rapports pour les dates antérieures. Les rapports terminés sont répertoriés dans **Rapports exécutés** et les rapports à venir se trouvent dans **Rapports planifiés**.
+Dans l’interface utilisateur de la vue AEM Assets, la fonction **Planifier le rapport** configure une génération automatique de rapports à des intervalles futurs spécifiés, tels que quotidien, hebdomadaire, mensuel ou annuel. Cette fonctionnalité permet de rationaliser les besoins récurrents en matière de reporting et d’assurer des mises à jour opportunes des données. **Créer un rapport** génère pour sa part des rapports pour les dates antérieures. Les rapports terminés sont répertoriés dans **Rapports exécutés** et les rapports à venir se trouvent dans **Rapports planifiés**.
 
 Pour planifier un rapport, procédez comme suit :
 
@@ -213,7 +215,7 @@ Pour planifier un rapport, procédez comme suit :
 
 ## Afficher les rapports planifiés {#view-scheduled-reports}
 
-Les rapports planifiés s’affichent dans l’onglet **Rapports planifiés** et sont organisés de manière systématique. Tous les rapports terminés pour chaque rapport planifié sont stockés dans un seul dossier de rapports. Cliquez sur ![développer la réduction](/help/assets/assets/expand-icon1.svg) pour afficher les rapports terminés. Par exemple, si vous avez planifié un rapport quotidien, tous les rapports terminés sont regroupés dans un seul dossier. Cette organisation simplifie la navigation et la recherche des rapports. Pour afficher les rapports planifiés, cliquez sur **Rapports**, puis sur **Rapports planifiés**. Tous les rapports planifiés s’affichent, avec le statut En cours ou Terminé. Les rapports terminés sont prêts à être téléchargés.\
+Les rapports planifiés s’affichent dans l’onglet **Rapports planifiés** et sont organisés de manière systématique. Tous les rapports terminés pour chaque rapport planifié sont stockés dans un seul dossier de rapports. Cliquez![développez, réduisez](/help/assets/assets/expand-icon1.svg)pour afficher les rapports terminés. Par exemple, si vous avez planifié un rapport quotidien, tous les rapports terminés sont regroupés dans un seul dossier. Cette organisation simplifie la navigation et la recherche des rapports. Pour afficher les rapports planifiés, cliquez sur **Rapports**, puis sur **Rapports planifiés**. Tous les rapports planifiés s’affichent, avec le statut En cours ou Terminé. Les rapports terminés peuvent être téléchargés.\
 ![Rapport planifié](/help/assets/assets/scheduled-reports-tab.png)
 
 ## Modifier et annuler des rapports planifiés {#edit-cancel-scheduled-reports}
@@ -241,14 +243,14 @@ La vue Assets vous permet d’afficher des données en temps réel pour votre en
 
 Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigation de gauche pour afficher les graphiques générés automatiquement suivants :
 
-* **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement d’affichage Assets au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
-  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+* **Téléchargements** : nombre de ressources téléchargées à partir de l’environnement d’affichage Assets au cours des 30 derniers jours ou 12 derniers mois, représentées à l’aide d’un graphique linéaire.
+  ![informations-téléchargements](/help/assets/assets/insights-downloads2341.svg)
 
-* **Téléchargements** : nombre de ressources chargées dans l’environnement d’affichage Assets au cours des 30 ou 12 derniers jours représentés à l’aide d’un graphique linéaire.
+* **Chargements** : nombre de ressources chargées dans l’environnement d’affichage Assets au cours des 30 derniers jours ou 12 derniers mois, représentées à l’aide d’un graphique linéaire.
   ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Utilisation du stockage** : utilisation du stockage, en octets, pour l’environnement de vue Assets représenté à l’aide d’un graphique à barres.
+* **Utilisation du stockage** : utilisation du stockage, en octets, pour l’environnement d’affichage Assets représenté à l’aide d’un graphique à barres.
   ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
@@ -262,5 +264,5 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
    -->
 * **Nombre de ressources par taille :** segmente le nombre total de ressources dans votre environnement de la vue Assets en différentes plages de tailles, en soulignant le nombre et le pourcentage de ressources dans chaque plage de tailles, représentés par un graphique en anneau.
   ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Nombre de ressources par type de ressource :** Segmente le nombre total de ressources dans l’environnement de la vue Assets, en soulignant le nombre et le pourcentage de ressources en fonction de leurs types de fichiers, représentés par un graphique en anneau.
+* **Nombre de ressources par type de ressource :** segmente le nombre total de ressources dans votre environnement d’affichage Assets en mettant en surbrillance le nombre et le pourcentage de ressources en fonction de leurs types de fichiers, représentés par un graphique en anneau.
   ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
