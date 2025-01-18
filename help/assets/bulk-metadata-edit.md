@@ -2,7 +2,7 @@
 title: Modification des métadonnées en bloc dans la vue Assets
 description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles simultanément dans la vue Assets.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Exécutez les étapes suivantes pour modifier en bloc les métadonnées de plusi
      >
      >Vous pouvez modifier les métadonnées de 100 ressources à la fois.
 
-Pour afficher les métadonnées appliquées mises à jour dans une ressource, accédez à la page des détails de la ressource (sélectionnez la ressource, cliquez sur **Détails**), puis cliquez sur ![](/help/assets/assets/info-icon-solid-black.svg) pour afficher les métadonnées de la ressource dans le panneau **Informations**.
+Pour afficher les mises à jour des métadonnées appliquées à une ressource, accédez à la page des détails de la ressource (sélectionnez la ressource, cliquez sur **Détails**), puis cliquez sur ![](/help/assets/assets/info-icon-solid-black.svg) pour afficher les métadonnées de la ressource dans le panneau **Informations**.
 
 >[!NOTE]
 >
