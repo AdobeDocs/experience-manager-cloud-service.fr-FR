@@ -4,7 +4,7 @@ description: Découvrez les conseils de développement sur AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 81%
@@ -37,7 +37,7 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 N’utilisez pas le système de fichiers de l’instance dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
-Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publish doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
+À titre d’exemple, lorsque l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publish doit s’assurer que toutes les données qui doivent être conservées sont envoyées à un service externe pour un stockage à plus long terme.
 
 ## Observation {#observation}
 
@@ -69,9 +69,9 @@ Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fo
 
 En plus de fournir des délais d’expiration, une gestion appropriée de ces délais et des codes de statut HTTP inattendus doivent être implémentés.
 
-## Gestion des limites de taux de requête {#rate-limit-handling}
+## Gérer les limites de taux de requête {#rate-limit-handling}
 
-Lorsque le taux de requêtes entrantes à AEM dépasse des niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques à AEM peuvent envisager de coder de manière défensive, en essayant à nouveau après quelques secondes avec une stratégie de backoff exponentiel. Avant la mi-août 2023, AEM avait répondu à la même condition avec le code d’erreur HTTP 503.
+Lorsque le taux de requêtes entrantes vers AEM dépasse les niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques vers AEM peuvent envisager de coder de manière défensive, en réessayant après quelques secondes avec une stratégie d’interruption exponentielle. Avant la mi-août 2023, AEM a répondu à la même condition avec le code d’erreur HTTP 503.
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service ne prend en charge que l’interface utilisateur tact
 
 Les fichiers binaires et bibliothèques natifs ne doivent pas être déployés sur ou installés dans des environnements cloud.
 
-En outre, le code ne doit pas tenter de télécharger des fichiers binaires natifs ou des extensions java natives (par exemple, JNI) au moment de l’exécution.
+En outre, le code ne doit pas tenter de télécharger des fichiers binaires natifs ou des extensions Java natives (par exemple, JNI) au moment de l’exécution.
 
 ## Pas de fichiers binaires de diffusion via AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -97,13 +97,13 @@ La réplication inverse de l’instance de publication vers l’instance d’aut
 
 Le contenu est répliqué de l’instance d’auteur vers l’instance de publication au moyen d’un mécanisme pub-sub. Les agents de réplication personnalisés ne sont pas pris en charge.
 
-## Aucun surchargement d’environnements de développement {#overloading-dev-envs}
+## Ne Pas Surcharger Les Environnements De Développement {#overloading-dev-envs}
 
-Les environnements de production sont dimensionnés plus haut pour garantir un fonctionnement stable, tandis que les environnements de test sont dimensionnés comme les environnements de production pour garantir des tests réalistes dans les conditions de production.
+Les environnements de production sont dimensionnés de manière à garantir un fonctionnement stable, tandis que les environnements intermédiaires sont dimensionnés de la même manière que les environnements de production afin de garantir des tests réalistes dans des conditions de production.
 
-Les environnements de développement et les environnements de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels. Ils ne sont pas conçus pour traiter des charges de travail élevées ni de grandes quantités de contenu.
+Les environnements de développement et de développement rapide doivent se limiter au développement, à l’analyse des erreurs et aux tests fonctionnels. Ils ne sont pas conçus pour traiter des charges de travail élevées ou de grandes quantités de contenu.
 
-Par exemple, la modification d’une définition d’index sur un référentiel de contenu volumineux dans un environnement de développement peut entraîner une réindexation, ce qui entraîne un traitement excessif. Les tests qui nécessitent un contenu important doivent être exécutés dans des environnements intermédiaires.
+Par exemple, la modification d’une définition d’index sur un référentiel de contenu volumineux dans un environnement de développement peut entraîner une réindexation et un traitement excessif. Les tests qui nécessitent du contenu important doivent être exécutés sur des environnements intermédiaires.
 
 ## Surveillance et débogage {#monitoring-and-debugging}
 
@@ -174,12 +174,12 @@ Les images mémoire de threads dans les environnements Cloud sont collectés en 
 
 Pour le développement local, les développeurs ont un accès complet à CRXDE Lite (`/crx/de`) et à la console web AEM (`/system/console`).
 
-Lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent être écrits directement dans , ce qui diffère des environnements cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
+Lors du développement local (à l’aide du SDK), les `/apps` et les `/libs` peuvent être modifiés directement, ce qui diffère des environnements Cloud dans lesquels ces dossiers de niveau supérieur sont immuables.
 
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->AEM as a Cloud Service Developer Console ne doit pas être confondu avec le [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) du même nom.
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 >
 
 >[!NOTE]
@@ -187,17 +187,17 @@ Lors du développement local (à l’aide du SDK), `/apps` et `/libs` peuvent ê
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Il est possible de lancer l’explorateur de référentiel à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. Pour plus d’informations, voir le [Navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
+Au lieu de cela, vous pouvez lancer l’explorateur de référentiels à partir d’AEM as a Cloud Service Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et de prévisualisation. Pour plus d’informations, voir [Navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md).
 
-Un ensemble d’outils de débogage des environnements de développement AEM as a Cloud Service est disponible dans AEM as a Cloud Service Developer Console pour les environnements de développement, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils pour le débogage des environnements de développement d’AEM as a Cloud Service est disponible dans AEM as a Cloud Service Developer Console pour les environnements de RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Vous pouvez utiliser comme raccourci la commande d’interface de ligne de commande Cloud Manager suivante pour lancer AEM as a Cloud Service Developer Console en fonction d’un paramètre d’environnement décrit ci-dessous :
+Pour raccourcir ce processus, utilisez la commande d’interface de ligne de commande Cloud Manager suivante pour lancer AEM as a Cloud Service Developer Console en fonction d’un paramètre d’environnement décrit ci-dessous :
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Voir [Informations sur la version](/help/release-notes/home.md) pour plus d’informations.
+Voir [Informations de mise à jour](/help/release-notes/home.md) pour plus d’informations.
 
 Les développeurs peuvent générer des informations de statut et résoudre diverses ressources.
 
@@ -211,11 +211,11 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Également utile pour le débogage, AEM as a Cloud Service Developer Console comporte un lien vers l’outil Expliquer la requête :
+Également utile pour le débogage, le Developer Console AEM as a Cloud Service comporte un lien vers l’outil Expliquer la requête :
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de production, l’accès à AEM as a Cloud Service Developer Console est défini par &quot;Cloud Manager - Rôle de développeur&quot; dans Adobe Admin Console, tandis que pour les programmes Sandbox, AEM as a Cloud Service Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui donnant accès à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de production, l’accès à AEM as a Cloud Service Developer Console est défini par la mention « Cloud Manager - Rôle de développeur » dans Adobe Admin Console, tandis que pour les programmes Sandbox, AEM as a Cloud Service Developer Console est disponible pour tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Surveillance des performances {#performance-monitoring}
 
@@ -252,7 +252,7 @@ Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/exp
 
 Le port du serveur SMTP doit être défini comme jeu de valeur `portDest` dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée et la valeur `portOrig` doit être une valeur significative comprise entre 30 000 et 30 099, selon la plage requise. Par exemple, si le port du serveur SMTP est 465, le port 30465 doit être utilisé en tant que valeur `portOrig`.
 
-Dans ce cas, en supposant que SSL doive être activé, dans la configuration du service **Day CQ Mail Service OSGI** :
+Dans ce cas, et en supposant que le SSL doive être activé, dans la configuration du service de messagerie **Day CQ OSGI** :
 
 * Définissez `smtp.port` sur `30465`.
 * Définissez `smtp.ssl` sur `true`.
