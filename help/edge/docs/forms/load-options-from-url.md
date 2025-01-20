@@ -4,10 +4,10 @@ description: Les options de la liste déroulante sont incluses dans une feuille 
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '472'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,6 @@ Les avantages du chargement des options de liste déroulante depuis une feuille 
 
 * Gestion simplifiée : conserver les options de liste déroulante dans un emplacement centralisé facilite les mises à jour et les ajouts.
 * Efficacité améliorée : vous évitez de devoir ajouter manuellement de longues listes d’options dans la définition du formulaire.
-
-
-
 
 ![Options de liste déroulante](/help/forms/assets/drop-down-options.png)
 
@@ -58,7 +55,8 @@ saisissez les options de votre pays dans la colonne « Option » (et la colonn
 
 1. Prévisualisez et publiez la feuille `shared-country` à l’aide d’[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Consultez l’URL suivante qui présente la feuille `shared-country` : https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « wkndform » et vous utilisez la branche « main », l’URL qui présente la feuille de `shared-country` :
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -78,13 +76,14 @@ La propriété `Options` d’un champ `select` accepte une URL. L’URL renvoie 
 
    ![Liste déroulante de pays](/help/forms/assets/load-dropdown-options-form.png)
 
-Vous pouvez faire référence à la [feuille de calcul de demande](/help/forms/assets/enquiry-options.xlsx) pour ajouter l’URL aux options de liste déroulante de chargement.
+Vous pouvez faire référence à la [feuille de calcul de demande](/help/edge/assets/enquiry.xlsx) pour ajouter l’URL aux options de liste déroulante de chargement.
 
 Après l’intégration de l’URL dans la définition de formulaire pour charger les options de liste déroulante, les options de la liste déroulante `Destination` commencent à s’afficher à partir de l’URL.
 
-Consultez l’URL ci-dessous, qui affiche le formulaire `enquiry` avec les options enregistrées dans la feuille distincte :
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## Voir également
 

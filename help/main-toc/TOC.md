@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 69cb4bb962e495725dfffff89bcddc16ce65cab1
+source-git-commit: 74b0c51c00601b645e9eba537c632efb3f48fb79
 workflow-type: tm+mt
-source-wordcount: '5961'
+source-wordcount: '5967'
 ht-degree: 99%
 
 ---
@@ -1020,6 +1020,7 @@ ht-degree: 99%
          + [Utiliser reCAPTCHA pour protéger vos formulaires](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des utilisateurs et utilisatrices réels pour les formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Publication de Forms pour les Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Resources Edge Delivery {#resources}

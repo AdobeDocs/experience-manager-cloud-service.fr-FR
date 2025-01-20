@@ -4,10 +4,10 @@ description: Créez plus rapidement des formulaires performants à l’aide de f
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '425'
+ht-degree: 84%
 
 ---
 
@@ -28,27 +28,25 @@ Une fois que vous avez [créé et prévisualisé le formulaire](/help/edge/docs/
 
 Pour permettre à la feuille de calcul d’accepter des données
 
-1. Ouvrez la feuille de calcul qui comporte votre formulaire et ajoutez-y une nouvelle feuille en la renommant `incoming`.
+1. Ouvrez la feuille de calcul contenant votre formulaire et ajoutez une nouvelle feuille, en la renommant `incoming`. Par exemple, le classeur Excel [query](/help/edge/assets/enquiry.xlsx) de Microsoft.
 
    >[!WARNING]
    >
    > Si la feuille `incoming` n’est pas présente, AEM n’envoie aucune donnée à la feuille de calcul.
 
-1. Dans cette feuille, insérez un tableau nommé « intake_form ». Sélectionnez le nombre de colonnes requis pour correspondre aux noms des champs de votre formulaire. Ensuite, dans la barre d’outils, accédez à Insérer > Tableau et cliquez sur OK.
+2. Dans cette feuille, insérez un tableau nommé « intake_form ». Sélectionnez le nombre de colonnes requis pour correspondre aux noms des champs de votre formulaire. Ensuite, dans la barre d’outils, accédez à Insérer > Tableau et cliquez sur OK.
 
-1. Remplacez le nom du tableau par « intake_form ». Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception du tableau.
+3. Remplacez le nom du tableau par « intake_form ». Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception du tableau.
 
-1. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-default ».  Dans votre feuille « shared-default », sélectionnez et copiez les identifiants de formulaires répertoriés sous la colonne « Name », à l’exception du champ d’envoi.
+4. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-default ».  Dans votre feuille « shared-default », sélectionnez et copiez les identifiants de formulaires répertoriés sous la colonne « Name », à l’exception du champ d’envoi.
 
-1. Dans la feuille « incoming », sélectionnez Collage spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Ne conservez que les champs dont les données doivent être capturées, les autres peuvent être ignorés.
+5. Dans la feuille « incoming », sélectionnez Collage spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Ne conservez que les champs dont les données doivent être capturées, les autres peuvent être ignorés.
 
-   Chaque valeur dans la colonne `Name` de la feuille `shared-default`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « contact-us » :
+   Chaque valeur dans la colonne `Name` de la feuille `shared-default`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « requête » :
 
    ![Champs d’un formulaire contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-
-
-1. Utilisez l’extension AEM Sidekick pour prévisualiser les mises à jour du formulaire. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
+6. Utilisez l’extension [AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser les mises à jour des formulaires. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
 
    >[!NOTE]
    >
@@ -57,232 +55,256 @@ Pour permettre à la feuille de calcul d’accepter des données
 
 Une fois que les noms de champs sont ajoutés à la feuille `incoming`, votre formulaire est prêt à accepter des envois. Vous pouvez prévisualiser le formulaire et envoyer des données à la feuille à l’aide de celui-ci.
 
-Une fois la feuille configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [utiliser des requêtes POST](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
+Une fois la feuille configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> commencer à envoyer des données à la feuille.
 
 >[!WARNING]
 >
 >  Les feuilles « shared-default » ne doivent jamais contenir d’informations personnelles identifiables ou de données sensibles que vous ne souhaitez pas rendre accessibles au public.
 
-### Utiliser des API d’administration pour permettre à une feuille de calcul d’accepter des données
+<!--
+### Use Admin APIs to enable a spreadsheet to accept data
 
-Vous pouvez également envoyer une requête POST au formulaire pour lui permettre d’accepter des données et configurer des en-têtes pour la feuille `incoming`. Lors de la réception de la requête POST, le service analyse le corps de la requête et génère de manière autonome les en-têtes et les feuilles essentiels nécessaires à l’ingestion des données.
+You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
 
-Pour utiliser les API d’administration afin de permettre à une feuille de calcul d’accepter des données :
-
-
-1. Ouvrez le classeur que vous avez créé et remplacez le nom de la feuille par défaut par `incoming`.
-
-   >[!WARNING]
-   >
-   > Si la feuille `incoming` n’existe pas, AEM n’enverra aucune donnée à ce classeur.
-
-1. Prévisualisez la feuille dans le sidekick.
-
-   >[!NOTE]
-   >
-   >Même si vous avez déjà prévisualisé la feuille, vous devez la prévisualiser à nouveau après la première création de la feuille `incoming`.
-
-1. Envoyez la requête POST pour générer les en-têtes appropriés dans la feuille `incoming`, puis ajoutez la feuille `shared-default` à votre feuille de calcul, si elle n’existe pas déjà.
-
-   Pour comprendre comment mettre en forme la requête POST afin de configurer votre feuille, reportez-vous à la [Documentation de l’API d’administration](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Vous pouvez consulter l’exemple ci-dessous :
-
-   **Requête**
-
-   ```JSON
-   POST 'https://admin.hlx.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-   --header 'Content-Type: application/json' \
-   --data '{
-       "data": {
-           "Email": "john@wknd.com",
-           "Name": "John",
-           "Subject": "Regarding Product Inquiry",
-           "Message": "I have some questions about your products.",
-           "Phone": "123-456-7890",
-           "Company": "Adobe Inc.",
-           "Country": "United States",
-           "PreferredContactMethod": "Email",
-           "SubscribeToNewsletter": true
-       }
-   }'
-   ```
+To use Admin APIs to enable a spreadsheet to accept data: 
 
 
-   **Réponse**
+1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
 
-   ```JSON
-   HTTP/2 200 
-   content-type: application/json
-   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-   cache-control: no-store, private, must-revalidate
-   accept-ranges: bytes
-   date: Sat, 10 Feb 2024 09:26:48 GMT
-   via: 1.1 varnish
-   x-served-by: cache-del21736-DEL
-   x-cache: MISS
-   x-cache-hits: 0
-   x-timer: S1707557205.094883,VS0,VE3799
-   strict-transport-security: max-age=31557600
-   content-length: 138
-   
-   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
-   ```
+    >[!WARNING] 
+    >
+    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
 
-   Vous pouvez utiliser des outils tels que curl ou Postman pour exécuter cette requête POST, comme illustré ci-dessous :
+1. Preview the sheet in the sidekick.
 
-   ```JSON
-   curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
-       --header 'Content-Type: application/json' \
-       --data '{
-           "data": {
-               "Email": "john@wknd.com",
-               "Name": "John",
-               "Subject": "Regarding Product Inquiry",
-               "Message": "I have some questions about your products.",
-               "Phone": "123-456-7890",
-               "Company": "Wknd Inc.",
-               "Country": "United States",
-               "PreferredContactMethod": "Email",
-               "SubscribeToNewsletter": true
-       }
-   }'
-   ```
+    >[!NOTE] 
+    >
+    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
 
-   La requête POST mentionnée ci-dessus fournit des données d’exemple, y compris les champs de formulaire et leurs valeurs d’exemple respectives. Ces données sont utilisées par le service d’administration pour configurer le formulaire.
+1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
 
-   Votre formulaire peut maintenant accepter des données. Vous constatez également les modifications suivantes dans votre feuille de calcul :
+    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
 
-## Modifications automatiques de la feuille une fois qu’elle est activée pour accepter des données.
+    **Request** 
+    
+    ```JSON
 
-Une fois que la feuille est configurée pour recevoir des données, vous constatez les modifications suivantes dans votre feuille de calcul :
+    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "data": {
+            "Email": "john@wknd.com",
+            "Name": "John",
+            "Subject": "Regarding Product Inquiry",
+            "Message": "I have some questions about your products.",
+            "Phone": "123-456-7890",
+            "Company": "Adobe Inc.",
+            "Country": "United States",
+            "PreferredContactMethod": "Email",
+            "SubscribeToNewsletter": true
+        }
+    }'
 
-Une feuille nommée « Slack » est ajoutée à votre classeur Excel ou à votre feuille Google Sheets. Dans cette feuille, vous pouvez configurer des notifications automatiques pour un canal Slack désigné chaque fois que de nouvelles données sont ingérées dans votre feuille de calcul. Actuellement, AEM prend en charge les notifications exclusivement destinées à l’organisation Slack de l’équipe d’ingénierie AEM et à l’organisation de l’assistance aux entreprises d’Adobe.
-
-1. Pour configurer les notifications Slack, saisissez l’« identifiant de l’équipe » de l’espace de travail Slack et le « nom du canal » ou l’« identifiant ». Vous pouvez également demander au Slackbot (avec la commande debug) l’« identifiant d’équipe » et l’« identifiant du canal ». Il est préférable d’utiliser l’« identifiant du canal » plutôt que le « nom du canal », car il n’est pas modifié lorsque le canal est renommé.
-
-   >[!NOTE]
-   >
-   > Les formulaires plus anciens ne contenaient pas la colonne « identifiant d’équipe ». L’« identifiant d’équipe » a été inclus dans la colonne du canal, séparé par « # » ou « / ».
-
-1. Saisissez le titre de votre choix et sous les champs, saisissez le nom des champs que vous souhaitez voir dans la notification Slack. Chaque en-tête doit être séparé par une virgule (par exemple, nom, adresse e-mail).
-
-   >[!WARNING]
-   >
-   >  Les feuilles « shared-default » ne doivent jamais contenir d’informations personnelles identifiables ou de données sensibles que vous ne souhaitez pas rendre accessibles au public.
+    ```
 
 
-## Envoyer des données à votre feuille {#send-data-to-your-sheet}
+    **Response**
 
-Une fois la feuille définie pour recevoir des données, vous pouvez [prévisualiser le formulaire à l’aide du bloc de formulaires adaptatifs](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [utiliser des API d’administration](#use-admin-apis-to-send-data-to-your-sheet) pour commencer à envoyer des données à la feuille.
+    ```JSON
 
-### Utiliser des API d’administration pour envoyer des données à votre feuille
+    HTTP/2 200 
+    content-type: application/json
+    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+    cache-control: no-store, private, must-revalidate
+    accept-ranges: bytes
+    date: Sat, 10 Feb 2024 09:26:48 GMT
+    via: 1.1 varnish
+    x-served-by: cache-del21736-DEL
+    x-cache: MISS
+    x-cache-hits: 0
+    x-timer: S1707557205.094883,VS0,VE3799
+    strict-transport-security: max-age=31557600
+    content-length: 138
 
-Vous pouvez envoyer des requêtes POST directement à votre formulaire à l’aide de hlx.page, hlx.live ou de votre domaine de production pour envoyer des données.
+    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+
+    ```
+
+    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+
+    ```JSON
+
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "data": {
+                "Email": "john@wknd.com",
+                "Name": "John",
+                "Subject": "Regarding Product Inquiry",
+                "Message": "I have some questions about your products.",
+                "Phone": "123-456-7890",
+                "Company": "Wknd Inc.",
+                "Country": "United States",
+                "PreferredContactMethod": "Email",
+                "SubscribeToNewsletter": true
+        }
+    }'
+
+    ```
+
+    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+
+    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+
+## Automatic changes to sheet once it is enabled to accept data. 
+
+Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+
+A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+
+1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+
+    >[!NOTE] 
+    >
+    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+
+1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+
+    >[!WARNING] 
+    >
+    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+
+
+
+<!--
+## Send data to your sheet {#send-data-to-your-sheet}
+
+After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+
+### Use Admin APIs to send data to your sheet
+
+You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
 
 
 ```JSON
-POST https://branch–repo–owner.hlx.(page|live)/email-form
+
+POST https://branch–repo–owner.aem.(page|live)/email-form
 POST https://my-domain.com/email-form
+
 ```
 
->[!NOTE]
+>[!NOTE] 
 >
-> L’URL ne doit pas avoir l’extension .json. Vous devez publier la feuille pour que les opérations POST fonctionnent sur `.live` ou sur le domaine de production.
+> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
 
-#### Formater les données du formulaire
+#### Formatting the form data
 
-Il existe plusieurs manières de formater les données de formulaire dans le corps de POST. Vous pouvez utiliser :
+There are a few different ways that you can format the form data in the POST body. You can use: 
 
-* un tableau de paires `name:value` :
-
-  ```JSON
-  {
-    "data": [
-      { "name": "name", "value": "Clark Kent" },
-      { "name": "email", "value": "superman@example.com" },
-      { "name": "subject", "value": "Regarding Product Inquiry" },
-      { "name": "message", "value": "I have some questions about your products." },
-      { "name": "phone", "value": "123-456-7890" },
-      { "name": "company", "value": "Example Inc." },
-      { "name": "country", "value": "United States" },
-      { "name": "preferred_contact_method", "value": "Email" },
-      { "name": "newsletter_subscribe", "value": true }
-    ]
-  }
-  ```
-
-  par exemple,
-
-  ```JSON
-  curl -s -i -X POST 'https://main--portal--wkndforms.hlx.page/contact-us' \
-      --header 'Content-Type: application/json' \
-      --data '{
+* array of `name:value` pairs: 
+    
+    ```JSON
+    
+    {
       "data": [
-          { "name": "name", "value": "Clark Kent" },
-          { "name": "email", "value": "superman@example.com" },
-          { "name": "subject", "value": "Regarding Product Inquiry" },
-          { "name": "message", "value": "I have some questions about your        products." },
-          { "name": "phone", "value": "123-456-7890" },
-          { "name": "company", "value": "Example Inc." },
-          { "name": "country", "value": "United States" },
-          { "name": "preferred_contact_method", "value": "Email" },
-          { "name": "newsletter_subscribe", "value": true }
+        { "name": "name", "value": "Clark Kent" },
+        { "name": "email", "value": "superman@example.com" },
+        { "name": "subject", "value": "Regarding Product Inquiry" },
+        { "name": "message", "value": "I have some questions about your products." },
+        { "name": "phone", "value": "123-456-7890" },
+        { "name": "company", "value": "Example Inc." },
+        { "name": "country", "value": "United States" },
+        { "name": "preferred_contact_method", "value": "Email" },
+        { "name": "newsletter_subscribe", "value": true }
       ]
-  }'
-  ```
+    }
+
+    ```
+
+    For example
+
+    ```JSON
+
+    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
+        --header 'Content-Type: application/json' \
+        --data '{
+        "data": [
+            { "name": "name", "value": "Clark Kent" },
+            { "name": "email", "value": "superman@example.com" },
+            { "name": "subject", "value": "Regarding Product Inquiry" },
+            { "name": "message", "value": "I have some questions about your        products." },
+            { "name": "phone", "value": "123-456-7890" },
+            { "name": "company", "value": "Example Inc." },
+            { "name": "country", "value": "United States" },
+            { "name": "preferred_contact_method", "value": "Email" },
+            { "name": "newsletter_subscribe", "value": true }
+        ]
+    }'
+
+    ```
 
 
 
-* un objet avec des paires `key:value` :
+* an object with `key:value` pairs:
 
-  ```JSON
-      {
-        "data": {
-          "name": "Jessica Jones",
-          "email": "jj@example.com",
-          "subject": "Regarding Product Inquiry",
-          "message": "I have some questions about your products.",
-          "phone": "123-456-7890",
-          "company": "Example Inc.",
-          "country": "United States",
-          "preferred_contact_method": "Email",
-          "newsletter_subscribe": true
+    ```JSON
+
+        {
+          "data": {
+            "name": "Jessica Jones",
+            "email": "jj@example.com",
+            "subject": "Regarding Product Inquiry",
+            "message": "I have some questions about your products.",
+            "phone": "123-456-7890",
+            "company": "Example Inc.",
+            "country": "United States",
+            "preferred_contact_method": "Email",
+            "newsletter_subscribe": true
+          }
         }
-      }
-  ```
 
-  par exemple,
+    ```
 
-  ```JSON
-  curl -s -i -X POST 'https://admin.hlx.page/form/wkndforms/portal/main/contact-us.json' \
-  --header 'Content-Type: application/json' \
-  --data '{
-      "data": {
-          "Email": "khushwant@wknd.com",
-          "Name": "khushwant",
-          "Subject": "Regarding Product Inquiry",
-          "Message": "I have some questions about your products.",
-          "Phone": "123-456-7890",
-          "Company": "Adobe Inc.",
-          "Country": "United States",
-          "PreferredContactMethod": "Email",
-          "SubscribeToNewsletter": true
-      }
-  }'
-  ```
+    For example,
 
-* un corps encodé en URL (`x-www-form-urlencoded`) (avec l’en-tête `content-type` défini sur `application/x-www-form-urlencoded`)
+    ```JSON
 
-  ```Shell
-  'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-  ```
+    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "data": {
+            "Email": "khushwant@wknd.com",
+            "Name": "khushwant",
+            "Subject": "Regarding Product Inquiry",
+            "Message": "I have some questions about your products.",
+            "Phone": "123-456-7890",
+            "Company": "Adobe Inc.",
+            "Country": "United States",
+            "PreferredContactMethod": "Email",
+            "SubscribeToNewsletter": true
+        }
+    }'
 
-  par exemple,
+    ```
 
-  ```Shell
-  curl -s -i -X POST \
-    -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-    https://main--portal--wkndforms.hlx.live/contact-us
-  ```
+* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
+
+    ```Shell
+
+    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
+
+    ```
+
+    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
+
+    ```Shell
+
+    curl -s -i -X POST \
+      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
+      https://main--wefinance--wkndform.aem.live/contact-us
+
+    ```
+-->
 
 Ensuite, vous pouvez [personnaliser le message de remerciement](/help/edge/docs/forms/thank-you-page-form.md).
 

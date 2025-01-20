@@ -4,10 +4,10 @@ description: Publier un Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '549'
-ht-degree: 100%
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,7 @@ Une fois que vous êtes en mesure de partager votre formulaire avec vos clientes
 
 1. Ouvrez votre compte Microsoft SharePoint ou votre compte Google Drive et accédez au répertoire de votre projet AEM Edge Delivery.
 
-1. Ouvrez la feuille de calcul qui contient votre formulaire. Par exemple, le classeur Microsoft Excel de formulaire `enquiry`.
+1. Ouvrez la feuille de calcul qui contient votre formulaire. Par exemple, le classeur Excel [query](/help/edge/assets/enquiry.xlsx) de Microsoft.
 
 1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la feuille.
 
@@ -44,16 +44,16 @@ Une fois que vous êtes en mesure de partager votre formulaire avec vos clientes
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le référentiel de votre projet est nommé « portal », qu’il se trouve dans le compte « wkndforms » et que vous utilisez la branche « main », l’URL ressemble à ceci :
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le compte « wkndform » et que vous utilisez la branche « principale » et le formulaire « query », l’URL ressemble à ce qui suit :
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ Pour ajouter le formulaire à votre page web :
 
 1. Accédez à votre compte Microsoft SharePoint ou à votre compte Google Drive et accédez à votre `[AEM Edge Delivery project directory]`.
 
-1. Ouvrez un document dans lequel vous avez l’intention d’incorporer le formulaire. Vous pouvez, par exemple, ouvrir le fichier `index.docx` ou créer un nouveau document.
+1. Ouvrez un document dans lequel vous avez l’intention d’incorporer le formulaire. Par exemple, vous pouvez ouvrir le fichier [query-form.docx](/help/edge/assets/enquiry-form.docx) ou créer un nouveau document.
 
 1. Identifiez la section du document dans laquelle vous souhaitez insérer le formulaire puis accédez-y.
 
-1. Ajoutez un bloc nommé « Formulaire » au fichier, comme dans l’exemple ci-dessous :
+1. Ajoutez un bloc nommé « Form » dans le fichier. Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « windform » et vous utilisez la branche « principale ».
 
    | Formulaire |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![Ajout d’un bloc nommé « Formulaire » au fichier](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -85,25 +85,29 @@ Pour ajouter le formulaire à votre page web :
    >
    > Assurez-vous que l’URL est formatée en tant que lien hypertexte et non sous forme de texte brut.
 
-   Utilisez l’URL de prévisualisation (URL .page) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production. Voici quelques exemples d’URL de prévisualisation et de publication :
+   Utilisez l’URL d’aperçu (.page URL) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production.
+
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « windform » et vous utilisez la branche « principale ».
+
+   Voici quelques exemples d’URL de prévisualisation et de publication :
 
    **URL de prévisualisation**
 
    | Formulaire |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **URL de publication**
 
    | Formulaire |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la page web. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur la [feuille de calcul de demande](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) :
+1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la page web. La page affiche désormais le formulaire. Par exemple, voici le formulaire basé sur la [feuille de calcul de demande](/help/edge/assets/enquiry.xlsx) :
 
 
-   ![Exemple de formulaire EDS](/help/edge/assets/eds-form.png)
+   ![Exemple de formulaire EDS](/help/edge/assets/updated-form.png)
 
 1. Utilisez AEM Sidekick pour publier le formulaire. Désormais, vos clientes et clients peuvent remplir le formulaire et l’envoyer.
 

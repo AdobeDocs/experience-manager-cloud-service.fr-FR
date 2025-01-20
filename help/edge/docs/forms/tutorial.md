@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
    >
    > Si vous utilisez GitHub Enterprise avec le filtrage d’adresses IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73.
 
-   Félicitations. Vous avez désormais un nouveau site web en cours d’exécution dans `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Félicitations. Vous avez désormais un nouveau site web en cours d’exécution dans `https://<branch>--<repo>--<owner>.aem.page/`.
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance`, et la personne propriétaire est `wkndforms`, le site web serait opérationnel à l’adresse [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance` et le propriétaire est `wkndform`, le site web est opérationnel à l’adresse [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
 
 
 
 ### Lier votre propre source de contenu
 
-Votre référentiel GitHub nouvellement créé pointe vers un [exemple de contenu stocké dans un dossier Google Drive](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Ce contenu en lecture seule constitue un excellent point de départ pour vos formulaires. N’hésitez pas à le copier dans votre propre Google Drive et à le personnaliser en fonction de vos besoins.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Exemple de contenu sur Google Drive](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 Pour copier l’exemple de contenu dans votre propre dossier de contenu et pointer votre référentiel GitHub vers votre propre dossier de contenu :
 
 1. Créez un dossier spécifique pour votre contenu AEM dans Google Drive ou Microsoft SharePoint. Ce document utilise un dossier créé sur Microsoft SharePoint.
 
-1. Partagez le dossier avec l’utilisateur ou l’utilisatrice Adobe Experience Manager (helix@adobe.com).
+1. Partagez le dossier avec l’utilisateur de Adobe Experience Manager (forms@adobe.com).
 
    ![Utilisation de l’option Gérer l’accès pour partager un dossier avec un utilisateur ou une utilisatrice AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
    Assurez-vous que vous avez accordé des droits de modification sur le dossier à l’utilisateur ou à l’utilisatrice Adobe Experience Manager.
 
-   ![Partage d’un dossier avec un utilisateur ou une utilisatrice AEM et octroi des droits de modification - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Partager le dossier avec l’utilisateur AEM, fournir les droits d’édition-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Partage d’un dossier avec un utilisateur ou une utilisatrice AEM et octroi des droits de modification - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+   ![Partage du dossier avec l’utilisateur AEM, octroi des droits de modification - Lecteur Google](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Copiez l’[exemple de contenu stocké dans le dossier Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) dans votre dossier. Pour le copier :
+1. Copiez le [exemple de contenu](/help/edge/assets/wefinance1.zip) dans votre dossier. Pour le copier :
 
-   1. Téléchargez les fichiers regroupés ensemble ou téléchargez des fichiers individuels.
+   1. Décompressez le dossier téléchargé et copiez le contenu.
 
       ![Téléchargement de l’exemple de contenu](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
    1. Accédez au référentiel GitHub que vous avez créé plus tôt à l’aide du modèle standard AEM Forms.
    1. Ouvrez `fstab.yaml` pour édition.
-   1. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec l’utilisateur ou l’utilisatrice AEM (helix@adobe.com).
+   1. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec l’utilisateur AEM (forms@adobe.com).
 
       ![Exemple de contenu sur Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ Pour prévisualiser du contenu non publié :
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` fait référence à la branche de votre référentiel GitHub.
@@ -183,11 +183,9 @@ Pour prévisualiser du contenu non publié :
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
 
-   URL `https://<branch>--<repo>--<owner>.hlx.page/enquiry`.
+   URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », que la personne propriétaire du compte est « wkndforms » et que vous utilisez la branche « main », l’URL est :
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le propriétaire du compte « wkndform » et que vous utilisez la branche « principale » et le nom du formulaire comme `enquiry`, l’URL est : [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
 
 ### Créer un formulaire
 
@@ -195,11 +193,11 @@ L’exemple de contenu inclut une feuille « demande » qui sert de modèle po
 
 ![Formulaire de demande](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Commençons par mettre à jour un libellé de champ. Ouvrez la feuille « demande » pour effectuer des modifications, modifiez le libellé du bouton Envoyer en `Let's Chat` et utilisez AEM Sidekick pour prévisualiser et publier le fichier.
+Commençons par mettre à jour un libellé de champ. Ouvrez la feuille « demande » pour effectuer des modifications, modifiez le libellé du bouton Envoyer en `Let's Talk` et utilisez AEM Sidekick pour prévisualiser et publier le fichier.
 
 ![Formulaire de demande](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Lorsque vous prévisualisez ou publiez le fichier, une version JSON du fichier s’affiche dans un nouvel onglet. Copiez l’URL de prévisualisation (.hlx.page) ou de publication (.hlx.live) du fichier.
+Lorsque vous prévisualisez ou publiez le fichier, une version JSON du fichier s’affiche dans un nouvel onglet. Copiez l’URL d’aperçu (.aem.page) ou de publication (.aem.live) du fichier.
 
 ![JSON de la feuille de calcul du formulaire](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ Pour prévisualiser le formulaire de demande mis à jour, accédez à l’URL su
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-Le libellé du bouton Envoyer est remplacé par `Let's Chat`.
+Le libellé du bouton Envoyer est remplacé par `Let's Talk`.
 
-![Formulaire de demande](/help/edge/assets/updated-form.png)
+[![Formulaire de demande](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL : [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 Pour plus d’informations sur la création et la publication d’un nouveau formulaire, consultez le guide [Créer un formulaire](/help/edge/docs/forms/create-forms.md).
 
@@ -254,8 +255,8 @@ Le dossier du bloc de formulaires adaptatifs `blocks/form` est votre espace rés
 
 Votre création est prête à être dévoilée ? Utilisez Git pour valider et envoyer vos modifications. Cela met à jour les environnements de prévisualisation et de production accessibles aux URL suivantes (remplacez les espaces réservés par les détails de votre projet) :
 
-Prévisualisation : `https://<branch>--<repo>--<owner>.hlx.page/`
-Production : `https://<branch>--<repo>--<owner>.hlx.live/`
+Prévisualisation : `https://<branch>--<repo>--<owner>.aem.page/`
+Production : `https://<branch>--<repo>--<owner>.aem.live/`
 
 Félicitations. Vous avez correctement configuré votre environnement de développement local et déployé vos modifications.
 
