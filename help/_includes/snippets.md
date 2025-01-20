@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 96%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 96%
 * [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
 * [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
+* [Utilisation du service d’envoi de formulaire](/help/forms/forms-submission-service.md)
 
 
 ## Différences entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base {#rule-editor-diff}

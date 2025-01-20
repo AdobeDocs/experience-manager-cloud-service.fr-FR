@@ -4,7 +4,7 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance` et le propriétaire est `wkndform`, le site web est opérationnel à l’adresse [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
+   Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance` et le propriétaire est `wkndform`, le site web est opérationnel à l’adresse [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
 
 
 
