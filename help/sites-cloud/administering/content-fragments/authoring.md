@@ -1,14 +1,14 @@
 ---
 title: Créer des fragments de contenu
-description: Découvrez comment créer du contenu pour vos fragments de contenu et comment créer des variantes de ce contenu selon vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
+description: Découvrez comment créer du contenu pour vos fragments de contenu et comment créer des variantes de ce contenu selon vos besoins. Les fragments de contenu offrent une flexibilité accrue pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
-ht-degree: 7%
+source-wordcount: '2851'
+ht-degree: 6%
 
 ---
 
@@ -68,7 +68,9 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
 * panneau central : affiche les champs réels et le contenu de la variation sélectionnée.
    * permet de modifier le contenu.
       * lorsqu’ils sont configurés (en tant que multiples) dans le modèle, divers types de données vous permettent d’**Ajouter** des instances du champ approprié
-   * Si les champs **Espace réservé d’onglet** sont définis dans le modèle, ils sont affichés ici et peuvent être utilisés pour la navigation ; ils sont présentés soit horizontalement, soit sous la forme d’une liste déroulante.
+   * Si des champs **Espace réservé d’onglet** sont définis dans le modèle, ils sont affichés ici et :
+      * peut être utilisé pour la navigation.
+      * s’affiche soit horizontalement, soit sous forme de liste déroulante.
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ Dans le panneau de gauche, vous pouvez voir :
 
 ### Suivre les liens {#follow-links}
 
-L’icône de lien s’affiche dans différentes parties de l’éditeur. Vous pouvez l’utiliser pour ouvrir l’élément affiché, par exemple, un modèle de fragment de contenu, une référence parent ou un fragment référencé :
+L’icône de lien s’affiche dans différentes parties de l’éditeur. Cette icône peut être utilisée pour ouvrir l’élément affiché, par exemple, un modèle de fragment de contenu, une référence parente ou un fragment référencé :
 
 ![Éditeur de fragment de contenu - Icône de lien](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ Par exemple :
 
 ## Commentaires sur votre fragment {#commenting-on-your-fragment}
 
-L’onglet **Commentaires** dans le panneau de droite fournit les fonctionnalités suivantes :
+Pour vous permettre de collaborer au sein du produit et dans le contexte, l’onglet **Commentaires** dans le panneau de droite fournit les fonctionnalités suivantes :
 
 * Ajouter un nouveau commentaire
 * Balisage d’utilisateurs spécifiques dans un commentaire
