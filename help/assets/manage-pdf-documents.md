@@ -4,28 +4,29 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 87%
+source-wordcount: '853'
+ht-degree: 86%
 
 ---
 
 # Gérer les documents PDF dans Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, ce qui vous permet de prévisualiser plusieurs pages d’un document PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser au format PDF.
+Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, qui vous permet de prévisualiser plusieurs pages d’un document de PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser dans un format de PDF.
 
 L’intégration d’AEM Assets à la visionneuse PDF Document Cloud offre les avantages suivants :
+
 * [Prise en charge des composants de la visionneuse PDF Document Cloud](#pdf-doc-cloud)
 * [Prise en charge de la prévisualisation de plusieurs pages et des annotations pour la ressource PDF](#multi-page)
 * [Prise en charge de la prévisualisation de plusieurs pages pour les documents dans d’autres formats](#multi-format)
 
-> Conseil
-> Si vous ne parvenez pas à obtenir la prévisualisation de plusieurs pages d’un document PDF précédemment téléchargé, sélectionnez le document PDF et cliquez sur **![Retraiter](/help/assets/assets/Reprocess.svg) Retraiter les ressources**.
+>[!TIP]
 >
+> Si vous ne parvenez pas à obtenir la prévisualisation de plusieurs pages d’un document de PDF précédemment téléchargé, sélectionnez le PDF et cliquez sur ![Retraiter](/help/assets/assets/Reprocess.svg) **Retraiter Assets**.
 
 ## Prise en charge des composants de la visionneuse PDF Document Cloud {#pdf-doc-cloud}
 
@@ -47,7 +48,7 @@ La visionneuse PDF native Document Cloud possède les composants suivants dans 
 
 ## Prise en charge de la prévisualisation de plusieurs pages et des annotations pour la ressource PDF {#multi-page}
 
-Adobe Experience Manager Assets vous permet de prévisualiser un document de PDF composé de plusieurs pages. Pour prévisualiser plusieurs pages d’un document PDF, procédez comme suit :
+Adobe Experience Manager Assets permet de prévisualiser un document PDF composé de plusieurs pages. Pour prévisualiser plusieurs pages d’un document PDF, procédez comme suit :
 
 1. Suivez la procédure afin de [télécharger des ressources dans AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=fr).
 1. Accédez au document PDF que vous souhaitez télécharger et prévisualiser.
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets vous permet de prévisualiser un document de PDF
 
 Vous pouvez également ajouter des [annotations](#pdf-annotations) au document PDF lors d’une prévisualisation de plusieurs pages.
 
-> REMARQUE
-> La taille maximale d’une ressource prévisualisable est de 100 Mo.
+>[!NOTE]
 >
+> La taille maximale d’une ressource prévisualisable est de 100 Mo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -69,9 +70,10 @@ Vous pouvez également ajouter des [annotations](#pdf-annotations) au document P
 
 **Annotations PDF{#pdf-annotations}**
 
-Experience Manager Assets vous permet d’ajouter des commentaires à un document de PDF. Un document PDF peut comporter plusieurs annotations.
+Experience Manager Assets permet d’ajouter des commentaires dans un document de PDF. Un document PDF peut comporter plusieurs annotations.
 
 Pour annoter un document PDF, procédez comme suit :
+
 1. Accédez à l’interface d’Assets, puis sélectionnez le document PDF à annoter. La visionneuse PDF native s’ouvre à droite et affiche une prévisualisation du document PDF sélectionné.
 1. Cliquez sur **Annoter** dans le menu supérieur.
 Les documents PDF prennent en charge les annotations suivantes :
@@ -117,7 +119,7 @@ Les documents PDF prennent en charge les annotations suivantes :
 
 >[!NOTE]
 >
->Les annotations que vous ajoutez au document du PDF sont disponibles en mode d’aperçu. Toutefois, les annotations ne s’affichent pas lorsque vous téléchargez ou imprimez le document du PDF.
+>Les annotations que vous ajoutez au document du PDF sont disponibles en mode Aperçu. Toutefois, les annotations ne s’affichent pas lorsque vous téléchargez ou imprimez le document du PDF.
 
 ## Prise en charge de la prévisualisation de plusieurs pages pour les documents dans d’autres formats {#multi-format}
 
@@ -126,15 +128,16 @@ Outre les documents au format PDF, vous pouvez également prévisualiser plusieu
 ![Prévisualiser plusieurs pages de documents dans d’autres formats](/help/assets/assets/multi-page-other-formats.png)
 
 Pour prévisualiser plusieurs pages dans d’autres formats de documents pris en charge, procédez comme suit :
+
 1. Suivez la procédure afin de [télécharger des ressources dans AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=fr).
 1. Accédez au document que vous souhaitez télécharger et prévisualiser.
 1. Ouvrez le document.
 1. Sélectionnez PDF dans la section statique du panneau gauche. Le panneau droit affiche la prévisualisation de plusieurs pages d’une ressource. Sélectionnez une miniature dans le panneau gauche pour choisir la page à prévisualiser.
 
-> REMARQUE
+>[!NOTE]
+>
 > * La taille maximale d’une ressource prévisualisable est de 100 Mo.
 > * La taille maximale des fichiers XLS ou XLSX pouvant être prévisualisés est de 20 Mo.
->
 
 **Voir également**
 

@@ -5,16 +5,16 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
 # Sélecteur de destinations micro front-end {#Overview}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Le sélecteur de destination Micro-Frontend fournit une interface utilisateur dans votre application qui s’intègre facilement au référentiel [!DNL Experience Manager Assets as a Cloud Service]. Vous pouvez rechercher ou parcourir le dossier approprié dans le référentiel [!DNL Experience Manager Assets as a Cloud Service] et charger des ressources à partir de votre application.
@@ -205,7 +205,7 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 | *confirmDisabled* | chaîne | Non | | Cette propriété contrôle le bouton de confirmation. |
 | *viewType* | chaîne | Non | | La propriété `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
 | *viewTypeOptions* | chaîne | Non | | Cette propriété est liée à la propriété `viewType`. vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les viewTypeOptions disponibles sont les suivantes : affichage Liste, affichage Grille, affichage Galerie, affichage Cascade et affichage Arborescence. |
-| *itemNameFormatter* | chaîne | Non | | Cette propriété vous permet de mettre en forme le nom de l’élément. |
+| *itemNameFormatter* | chaîne | Non | | Cette propriété permet de mettre en forme le nom de l’élément |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Non |  | Si les traductions prêtes à l’emploi ne sont pas suffisantes pour répondre aux besoins de votre application, vous pouvez exposer une interface par laquelle vous pouvez transmettre vos propres valeurs localisées et personnalisées via la propriété `i18nSymbols`. Le transfert d’une valeur par le biais de cette interface remplace les traductions fournies par défaut par les vôtres.  Pour effectuer le remplacement, vous devez transmettre un objet [Descripteur de message](https://formatjs.io/docs/react-intl/api/#message-descriptor) valide à la clé de `i18nSymbols` que vous voulez remplacer. |
 | *inlineAlertSetup* | chaîne | Non | | Il ajoute un message d’alerte que vous souhaitez transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant « Vous n’êtes pas autorisé à accéder à ce dossier ». |
 | *intl* | Objet | Non | | Le sélecteur de destination fournit des traductions prêtes à l’emploi par défaut. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via la propriété `intl.locale`. Par exemple : `intl={{ locale: "es-es" }}` </br></br>. Les chaînes de paramètres régionaux prises en charge suivent la norme [ISO 639 - Codes](https://www.iso.org/fr/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : anglais (en-us, par défaut), espagnol (es-es), allemand (de-de), français (fr-FR), italien (it-it), japonais (ja-jp), coréen (ko-kr), portugais (pt-br), chinois (traditionnel, zh-cn), chinois (Taïwan, zh-tw). |
@@ -216,7 +216,7 @@ Vous pouvez définir les [propriétés](#destination-selector-properties) du sé
 
 ### Exemple 1 : créer un dossier dans le sélecteur de destination
 
-Le sélecteur de destination vous permet de créer un dossier dans lequel charger, déplacer ou copier des ressources à cet emplacement.
+Le sélecteur de destination vous permet de créer un dossier pour charger, déplacer ou copier des ressources à un emplacement particulier.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -257,7 +257,7 @@ Vous pouvez trier les ressources dans le sélecteur de destination selon le nom,
 
 ### Référentiel de ressources {#assets-repo}
 
-Le sélecteur de destination vous permet également d’afficher les données du référentiel de votre choix disponibles dans l’application AEM. Vous pouvez utiliser la propriété `repositoryID` pour initialiser le chemin du dossier de destination que vous souhaitez afficher à la première instance du sélecteur de destination.
+Le sélecteur de destinations vous permet également d’afficher les données du référentiel de votre choix disponibles dans l’application AEM. Vous pouvez utiliser la propriété `repositoryID` pour initialiser le chemin du dossier de destination que vous souhaitez afficher à la première instance du sélecteur de destination.
 
 ### Ajouter un suffixe ou un préfixe {#add-suffix-or-prefix}
 
@@ -271,15 +271,15 @@ Il vous permet de créer un dossier dans le dossier de destination de votre [!DN
 
 Le sélecteur de destination vous permet d’afficher la ressource dans quatre vues différentes :
 
-* **![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL Vue Liste]** : la vue Liste affiche les fichiers et dossiers défilables dans une seule colonne.
-* **![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL Vue grille]** : la vue Grille affiche les fichiers et dossiers défilables dans une grille de lignes et de colonnes.
-* **![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL Vue Galerie]** : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale centrée et verrouillée.
-* **![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue Cascade]** : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
+* ![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL **Vue Liste**] : la vue Liste affiche les fichiers et dossiers défilables dans une seule colonne.
+* ![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL **Vue grille**] : la vue Grille affiche les fichiers et dossiers défilables dans une grille de lignes et de colonnes.
+* ![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vue Galerie**] : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale centrée et verrouillée.
+* ![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vue Cascade**] : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
 
 ### Infos {#info}
 
-L’icône d’informations ou d’informations vous permet d’afficher les métadonnées de la ressource sélectionnée. Il comprend divers détails tels que les dimensions, la taille, la description, le chemin, la date de modification et la date de création. Les informations de métadonnées sont fournies lors du chargement ou de la copie ou de la création d’une ressource.
+L’icône d’informations vous permet d’afficher les métadonnées de la ressource sélectionnée. Il comprend divers détails tels que les dimensions, la taille, la description, le chemin, la date de modification et la date de création. Les informations de métadonnées sont fournies lors du chargement, de la copie ou de la création d’une ressource.
 
 ### Sélectionner un dossier {#select-folder}
 
-Le bouton Sélectionner un dossier permet de sélectionner des ressources pour effectuer diverses opérations associées à [properties](#destination-selector-properties) sur le sélecteur de destination.
+Le bouton Sélectionner un dossier vous permet de sélectionner des ressources pour effectuer diverses opérations associées à [propriétés](#destination-selector-properties) sur le sélecteur de destination.

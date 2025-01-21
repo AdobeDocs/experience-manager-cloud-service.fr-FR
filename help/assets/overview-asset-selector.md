@@ -3,10 +3,10 @@ title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,10 +159,10 @@ Vous pouvez trier les ressources du sélecteur de ressources selon le nom, les d
 
 Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vues différentes :
 
-* **![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL Vue Liste]** : la vue Liste affiche les fichiers et dossiers à faire défiler dans une seule colonne.
-* **![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL Vue Grille]** : la vue Grille affiche les fichiers et dossiers à faire défiler dans une grille de lignes et de colonnes.
-* **![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL Vue Galerie]** : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale verrouillée au milieu.
-* **![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue Cascade]** : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
+* ![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL **Vue Liste**] : la vue Liste affiche les fichiers et dossiers à faire défiler dans une seule colonne.
+* ![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL **Vue Grille**] : la vue Grille affiche les fichiers et dossiers à faire défiler dans une grille de lignes et de colonnes.
+* ![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vue Galerie**] : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale verrouillée au milieu.
+* ![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vue Cascade**] La vue Cascade affiche les fichiers ou les dossiers sous la forme d’un Bridge.
 
 **Graphique de vue d’ensemble**
 
