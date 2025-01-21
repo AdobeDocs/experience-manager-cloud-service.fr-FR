@@ -4,9 +4,9 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance` et le propriétaire est `wkndform`, le site web est opérationnel à l’adresse [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
-
-
+   Par exemple, si le nom de la branche est `main`, que le référentiel est `wefinance` et que le propriétaire est `wkndforms`, le site web est opérationnel à l’adresse `https://main--wefinance--wkndforms.aem.page`
+&lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Lier votre propre source de contenu
 
@@ -135,8 +134,6 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
    1. Validez le fichier `fsatb.yaml` mis à jour une fois que vous avez mis à jour la référence et que tout semble correct. Si vous rencontrez des problèmes de génération, consultez [Résolution des problèmes de génération dans GitHub](#troubleshooting-github-build-issues).
 
-
-
       ![Validation du fichier fsatab.yaml mis à jour](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       Cela connecte votre dossier de contenu à votre site web. Après la mise à jour de la référence, vous pouvez au départ rencontrer des erreurs « 404 Not Found ». Celles-ci se produisent parce que votre contenu n’a pas encore été prévisualisé. La section suivante explique comment commencer à créer et à prévisualiser votre contenu.
@@ -185,7 +182,8 @@ Pour prévisualiser du contenu non publié :
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le propriétaire du compte « wkndform » et que vous utilisez la branche « principale » et le nom du formulaire comme `enquiry`, l’URL est : [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le propriétaire du compte « wkndform » et que vous utilisez la branche « principale » et le nom du formulaire comme `enquiry`, l’URL est : `https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Créer un formulaire
 
@@ -199,7 +197,7 @@ Commençons par mettre à jour un libellé de champ. Ouvrez la feuille « deman
 
 Lorsque vous prévisualisez ou publiez le fichier, une version JSON du fichier s’affiche dans un nouvel onglet. Copiez l’URL d’aperçu (.aem.page) ou de publication (.aem.live) du fichier.
 
-![JSON de la feuille de calcul du formulaire](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![JSON de la feuille de calcul du formulaire](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 Ouvrez le fichier `enquiry` et remplacez l’URL du bloc de formulaire par l’URL du fichier copié lors de l’étape précédente. Vérifiez que l’URL est un lien hypertexte.
 
@@ -220,9 +218,12 @@ Pour prévisualiser le formulaire de demande mis à jour, accédez à l’URL su
 
 Le libellé du bouton Envoyer est remplacé par `Let's Talk`.
 
-[![Formulaire de demande](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![Formulaire de demande](/help/edge/assets/updated-form.png)
 
-URL : [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL : `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 Pour plus d’informations sur la création et la publication d’un nouveau formulaire, consultez le guide [Créer un formulaire](/help/edge/docs/forms/create-forms.md).

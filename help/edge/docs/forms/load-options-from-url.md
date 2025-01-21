@@ -4,10 +4,10 @@ description: Les options de la liste déroulante sont incluses dans une feuille 
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 93%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,8 @@ saisissez les options de votre pays dans la colonne « Option » (et la colonn
 1. Prévisualisez et publiez la feuille `shared-country` à l’aide d’[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « wkndform » et vous utilisez la branche « main », l’URL qui présente la feuille de `shared-country` :
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ Vous pouvez faire référence à la [feuille de calcul de demande](/help/edge/as
 
 Après l’intégration de l’URL dans la définition de formulaire pour charger les options de liste déroulante, les options de la liste déroulante `Destination` commencent à s’afficher à partir de l’URL.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le propriétaire du compte « wkndform » et que vous utilisez la branche « main », l’URL ci-dessous affiche le formulaire `enquiry` avec les options enregistrées dans la feuille séparée :
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## Voir également

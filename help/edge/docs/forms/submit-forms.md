@@ -4,10 +4,10 @@ description: Créez plus rapidement des formulaires performants à l’aide de f
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
@@ -34,19 +34,19 @@ Pour permettre à la feuille de calcul d’accepter des données
    >
    > Si la feuille `incoming` n’est pas présente, AEM n’envoie aucune donnée à la feuille de calcul.
 
-2. Dans cette feuille, insérez un tableau nommé « intake_form ». Sélectionnez le nombre de colonnes requis pour correspondre aux noms des champs de votre formulaire. Ensuite, dans la barre d’outils, accédez à Insérer > Tableau et cliquez sur OK.
+1. Dans cette feuille, insérez un tableau nommé « intake_form ». Sélectionnez le nombre de colonnes requis pour correspondre aux noms des champs de votre formulaire. Ensuite, dans la barre d’outils, accédez à Insérer > Tableau et cliquez sur OK.
 
-3. Remplacez le nom du tableau par « intake_form ». Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception du tableau.
+1. Remplacez le nom du tableau par « intake_form ». Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception du tableau.
 
-4. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-default ».  Dans votre feuille « shared-default », sélectionnez et copiez les identifiants de formulaires répertoriés sous la colonne « Name », à l’exception du champ d’envoi.
+1. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-aem ».  Dans votre feuille « shared-aem », sélectionnez et copiez les ID de formulaire répertoriés sous la colonne « Nom », à l’exception du champ d’envoi.
 
-5. Dans la feuille « incoming », sélectionnez Collage spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Ne conservez que les champs dont les données doivent être capturées, les autres peuvent être ignorés.
+1. Dans la feuille « incoming », sélectionnez Collage spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Ne conservez que les champs dont les données doivent être capturées, les autres peuvent être ignorés.
 
-   Chaque valeur dans la colonne `Name` de la feuille `shared-default`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « requête » :
+   Chaque valeur dans la colonne `Name` de la feuille `shared-aem`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « requête » :
 
    ![Champs d’un formulaire contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Utilisez l’extension [AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser les mises à jour des formulaires. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
+1. Utilisez l’extension [AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser les mises à jour des formulaires. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Une fois la feuille configurée pour recevoir des données, vous pouvez [prévis
 
 >[!WARNING]
 >
->  Les feuilles « shared-default » ne doivent jamais contenir d’informations personnelles identifiables ou de données sensibles que vous ne souhaitez pas rendre accessibles au public.
+>  Les feuilles « shared-aem » ne doivent jamais contenir d’informations d’identification personnelle ou de données sensibles que vous n’êtes pas à l’aise de voir accessibles au public.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data
