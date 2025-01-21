@@ -4,7 +4,7 @@ description: Découvrez la distribution et le dépannage de la réplication dans
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
+source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
 workflow-type: tm+mt
 source-wordcount: '1701'
 ht-degree: 71%
@@ -23,10 +23,10 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de 
 
 >[!NOTE]
 >
->Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’[Étape du workflow d’activation de l’arborescence](#tree-activation), qui peut gérer efficacement les charges utiles volumineuses.
+>Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [ Workflow d’activation de l’arborescence ](#tree-activation), qui peut gérer efficacement des payloads volumineux.
 >Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
->Si vous devez personnaliser pour une raison quelconque, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
->Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent lorsque vous n’essayez pas de publier un grand nombre de contenus, si ce n’est nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow Activation de l’arborescence.
+>Si, pour une raison quelconque, vous devez effectuer une personnalisation, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
+>Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent en évitant de publier un grand nombre de contenus, si ce n’est pas nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow d’activation de l’arborescence.
 
 ### Publication/dépublication rapide – Publication/dépublication planifiée {#publish-unpublish}
 
@@ -50,18 +50,18 @@ L’inclusion des enfants d’un dossier pour l’option « Publier ultérieure
 
 Vous trouverez des informations plus détaillées sur la gestion de la publication dans la [documentation sur les principes de publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
-### Étape du processus d’activation de l’arborescence {#tree-activation}
+### Étape du workflow d’activation de l’arborescence {#tree-activation}
 
-L’étape de workflow Activation de l’arborescence est destinée à répliquer de manière performante une hiérarchie profonde de noeuds de contenu. Elle s’interrompt automatiquement lorsque la file d’attente est trop volumineuse pour permettre à d’autres réplications de continuer en parallèle avec une latence minimale.
+L’étape de workflow Activation de l’arborescence est destinée à répliquer de manière performante une hiérarchie profonde de nœuds de contenu. Il se met automatiquement en pause lorsque la file d’attente devient trop volumineuse afin de permettre à d’autres réplications de se poursuivre en parallèle avec une latence minimale.
 
-Créez un modèle de processus qui utilise l’étape de processus `TreeActivation` :
+Créez un modèle de workflow qui utilise l’étape de processus `TreeActivation` :
 
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
-1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
-1. Sélectionnez le modèle créé dans la liste et appuyez sur **Modifier**
-1. Dans la fenêtre suivante, supprimez l’étape qui s’affiche par défaut.
-1. Faites glisser et déposez l’étape du processus dans le flux de modèle actuel :
+1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
+1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
+1. Dans la fenêtre suivante, supprimez l’étape qui s’affiche par défaut
+1. Glissez-déposez l’étape de processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)
 
@@ -84,39 +84,39 @@ Créez un modèle de processus qui utilise l’étape de processus `TreeActivati
 
 | Nom | par défaut | Description |
 | -------------- | ------- | --------------------------------------------------------------- |
-| path |         | chemin d’accès racine à partir duquel |
+| path |         | chemin racine à partir duquel commencer |
 | agentId | Publication | Nom de l’agent de réplication à utiliser |
-| chunkSize | 50 | Nombre de chemins à regrouper dans une seule réplication |
-| maxTreeSize | 500000 | Nombre maximal de noeuds pour qu’une arborescence soit considérée comme petite |
+| chunkSize | 50 | Nombre de chemins à regrouper en une seule réplication |
+| maxTreeSize | 500000 | Nombre maximal de nœuds pour qu’une arborescence soit considérée comme petite |
 | maxQueueSize | 10 | Nombre maximal d’éléments dans la file d’attente de réplication |
-| enableVersion | false | Activation du contrôle de version |
-| dryRun | false | Lorsque la valeur est définie sur true, la réplication n’est pas réellement appelée. |
-| userId |         | uniquement pour le travail. Sur le workflow, l’utilisateur qui appelle le workflow est utilisé |
-| filtres |         | Liste des noms des filtres de noeuds. Voir le filtre pris en charge ci-dessous |
+| enableVersion | false | Activer le contrôle de version |
+| dryRun | false | Lorsque la valeur est définie sur true, la réplication n’est pas appelée. |
+| userId |         | uniquement pour le travail. Dans le workflow, l’utilisateur qui appelle le workflow est utilisé |
+| filtres |         | Liste des noms de filtre de nœud. Voir le filtre pris en charge ci-dessous |
 
 **Filtres de prise en charge**
 
 | Nom | Description |
 | ------------- | ------------------------------------------- |
-| onlyModified | Noeuds modifiés depuis la dernière publication |
-| onlyPublished | Noeuds qui ont été publiés avant |
+| onlyModified | Nœuds modifiés depuis la dernière publication |
+| onlyActivated | Nœuds publiés auparavant |
 
 
 **Prise en charge de la reprise**
 
-Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble du contenu complet à publier.  Si le workflow est arrêté par le système, il se poursuit là où il s’est arrêté.
+Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble du contenu complet à publier.  Si le workflow est arrêté par le système, il continue là où il s’est arrêté.
 
 **Surveillance de la progression du workflow**
 
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils - Général - Tâches**.
-1. Examinez la ligne correspondant à votre workflow. La colonne *progress* indique l’état de la réplication. Par exemple, il peut s’afficher 41/564 et, lors de l’actualisation, il peut être mis à jour vers 52/564.
+1. Examinez la ligne correspondant à votre workflow. La colonne *progress* indique la progression de la réplication. Par exemple, il peut afficher 41/564 et, lors du rafraîchissement, il peut être mis à jour à 52/564.
 
-   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png)
+   ![Progression de l’activation de l’arborescence](/help/operations/assets/treeactivation-progress.png)
 
 
-1. Si vous sélectionnez la ligne et l’ouvrez, vous obtiendrez des informations supplémentaires sur le statut de l’exécution du workflow.
+1. La sélection de la ligne et son ouverture fournissent des détails supplémentaires sur le statut de l’exécution du workflow.
 
-   ![Détails de l’état d’activation de l’arborescence](/help/operations/assets/treeactivation-progress-details.png)
+   ![Détails du statut d’activation de l’arborescence](/help/operations/assets/treeactivation-progress-details.png)
 
 
 
@@ -124,7 +124,7 @@ Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble d
 
 >[!NOTE]
 >
->Cette fonctionnalité est obsolète au profit de l’étape Activation de l’arborescence la plus performante, qui peut être incluse dans un workflow personnalisé.
+>Cette fonctionnalité est abandonnée au profit de l’étape d’activation de l’arborescence plus performante, qui peut être incluse dans un workflow personnalisé.
 
 <details>
 <summary>Cliquez ici pour en savoir plus sur cette fonctionnalité obsolète.</summary>
@@ -133,16 +133,16 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 ![Carte du workflow Publier l’arborescence de contenu](/help/operations/assets/publishcontenttreeworkflow.png)
 
-N’appelez pas le modèle d’origine. Veillez plutôt à copier d’abord le modèle et à appeler cette copie.
+N’appelez pas le modèle d’origine. Veillez plutôt à copier le modèle et à appeler cette copie.
 
 Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-Vous pouvez également créer un modèle de processus qui utilise l’étape de processus `Publish Content Tree`.
+Vous pouvez également créer un modèle de workflow qui utilise l’étape de processus `Publish Content Tree`.
 
 1. Sur la page d’accueil d’AEM as a Cloud Service, accédez à **Outils – Workflow – Modèles**.
 1. Sur la page Modèles de workflow, appuyez sur **Créer** dans l’angle supérieur droit de l’écran.
-1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de processus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
-1. Sélectionnez le modèle créé dans la liste et appuyez sur **Modifier**
+1. Ajoutez un titre et un nom à votre modèle. Pour plus d’informations, voir [Création de modèles de workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
+1. Sélectionnez le modèle créé dans la liste, puis appuyez sur **Modifier**
 1. Dans la fenêtre suivante, faites un glisser-déposer de l’étape du processus dans le flux de modèle actuel :
 
    ![Étape du processus](/help/operations/assets/processstep.png)
@@ -271,7 +271,7 @@ La taille du contenu transmis par appel de réplication ne doit pas dépasser `1
 
 Pour résoudre les problèmes de réplication, accédez aux files d’attente de réplication dans l’interface utilisateur web du service de création AEM :
 
-1. Dans le menu AEM, accédez à **Outils** > **Déploiement** > **Distribution**
+1. Dans le menu Démarrer d’AEM, accédez à **Outils** > **Déploiement** > **Distribution**
 1. Sélectionnez la carte **Publication**.
 
    ![État](assets/publish-status.png "État")
@@ -282,6 +282,6 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 
 ![Journaux](assets/publish-logs.png "Journaux")
 
-Si le contenu n’a pas pu être publié, l’ensemble de la publication est restaurée à partir du service Publish d’AEM.
+Si le contenu n’a pas pu être publié, la publication complète est annulée à partir du service Publish d’AEM.
 
 Dans ce cas, la file d’attente principale modifiable affiche un statut rouge. Elle doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, parmi lesquels il est possible d’effacer, si nécessaire, tous les éléments ou un seul.
