@@ -4,14 +4,16 @@ description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
+source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 22%
+source-wordcount: '412'
+ht-degree: 19%
 
 ---
 
 # Notes de mise à jour de Cloud Manager 2025.1.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+
+<!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
 En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -28,7 +30,7 @@ La prochaine version est prévue le vendredi 13 février 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **Règles de qualité du code :** l’étape de qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version Cloud Manager 2025.2.0, prévue pour le jeudi 13 février 2025.
+* **Règles de qualité du code - Mise à niveau du serveur SonarQube :** l’étape Qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version Cloud Manager 2025.2.0, prévue pour le jeudi 13 février 2025.
 
 Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles à l’adresse [Règles de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
@@ -56,6 +58,10 @@ En outre, définissez la variable suivante pour vous assurer que l’étape de q
       * L’exécution Java 21 est déployée lors de la création avec Java 17 ou Java 21.
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
       * Les clients qui créent avec Java 11 et qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+* **« Configurations du réseau de diffusion de contenu » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau de diffusion de contenu » est désormais renommé « Mappages de domaine » pour un meilleur alignement terminologique avec la fonctionnalité. <!-- CMGR-64738 -->
+
+  ![ « Configurations du réseau CDN » renommées « Mappages de domaine » dans l’interface utilisateur](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 
 <!-- ## Early adoption program {#early-adoption}
