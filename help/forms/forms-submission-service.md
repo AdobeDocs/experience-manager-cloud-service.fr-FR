@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
+source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -31,7 +31,7 @@ L’utilisation du service d’envoi Forms avec des feuilles de calcul présente
 Vous trouverez ci-dessous les conditions préalables requises pour utiliser le service Forms Submission :
 
 * Assurez-vous que votre projet AEM dispose du dernier bloc de formulaire adaptatif.
-* Assurez-vous que votre référentiel Git est ajouté à la place sur la liste autorisée pour utiliser le service d’envoi de Forms. Veuillez mailto:aem-forms-ea@adobe.com avec votre nom d’organisation GitHub et le nom du référentiel pour les ajouter à la liste autorisée pour utiliser le service d’envoi de Forms.
+* Assurez-vous que votre référentiel Git est ajouté à la place sur la liste autorisée pour utiliser le service d’envoi de Forms. Veuillez [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec le nom de votre organisation GitHub et le nom du référentiel pour les ajouter à la liste autorisée pour utiliser le service d’envoi de Forms.
 
 ## Configuration du service d’envoi Forms
 
