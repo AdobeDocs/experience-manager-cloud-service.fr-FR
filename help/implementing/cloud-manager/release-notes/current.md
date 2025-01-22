@@ -3,9 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2025.1.0 dans Adobe Experience�
 description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 22%
 
 ---
@@ -49,12 +50,12 @@ En outre, définissez la variable suivante pour vous assurer que l’étape de q
 
    * **Activation des fonctionnalités**
       * Cette fonctionnalité sera activée pour tous les clients et clientes le jeudi 13 février 2025, date coïncidant avec le déploiement par défaut de la nouvelle version de SonarQube.
-      * Les clients peuvent l’activer *immédiatement* en définissant les deux configurations de variable décrites ci-dessus pour la mise à niveau de la version 9.9 de SonarQube.
+      * Les clients peuvent l’activer *immédiatement* en définissant les deux configurations de variables décrites ci-dessus pour la mise à niveau de la version 9.9 de SonarQube.
 
    * **Déploiement d’exécution Java 21**
       * L’exécution Java 21 est déployée lors de la création avec Java 17 ou Java 21.
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
-      * Les clients qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+      * Les clients qui créent avec Java 11 et qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
 <!-- ## Early adoption program {#early-adoption}
