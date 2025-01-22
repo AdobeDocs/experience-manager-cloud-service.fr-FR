@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # Fragments de code {#snippets}
@@ -233,11 +233,11 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
    * URL du site web actif. Par exemple : `www.mydomain.com`.
    * URL du site web d’origine (URL `.hlx`).
 
-## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
+## L’éditeur universel est préférable à l’éditeur SPA. {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->L’éditeur SPA reste pris en charge par Adobe, mais les éditeurs préférés pour gérer le contenu découplé dans AEM sont désormais les suivants :
+>L’éditeur SPA reste pris en charge par Adobe, mais les éditeurs à privilégier pour gérer le contenu découplé dans AEM sont désormais les suivants :
 >
->* [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour modifier visuellement du contenu découplé.
->* [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification du contenu découplé à partir des formulaires.
+>* L’[éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour modifier visuellement du contenu découplé.
+>* L’[éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification du contenu découplé à partir des formulaires.
