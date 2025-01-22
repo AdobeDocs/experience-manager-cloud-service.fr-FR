@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
-workflow-type: ht
-source-wordcount: '2768'
-ht-degree: 100%
+source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
+workflow-type: tm+mt
+source-wordcount: '2513'
+ht-degree: 98%
 
 ---
 
@@ -510,43 +510,43 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
 
 ## Mise à jour de Java Runtime vers la version 21 {#java-runtime-update-21}
 
-<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+Adobe Experience Manager as a Cloud Service passe au runtime Java 21. Pour garantir la compatibilité, il est essentiel de mettre à jour les versions de bibliothèque comme indiqué dans [Exigences d’exécution](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
-AEM as a Cloud Service passe à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel d’effectuer les ajustements suivants :
+<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
-### Configuration requise pour l’exécution
+### Runtime Requirements
 
-Ces réglages sont nécessaires pour garantir la compatibilité avec l’exécution de Java 21. Les bibliothèques peuvent être mises à jour à tout moment, car elles sont compatibles avec les anciennes versions de Java.
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
 
-#### Version minimale de org.objectweb.asm {#org.objectweb.asm}
+#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
 
-Mettez à jour org.objectweb.asm vers la version 9.5 ou ultérieure pour garantir la prise en charge des environnements d’exécution JVM plus récents.
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-#### Version minimale de org.apache.groovy {#org.apache.groovy}
+#### Minimum version of org.apache.groovy {#org.apache.groovy}
 
-Mettez à jour org.apache.groovy vers la version 4.0.22 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
-Ce lot peut être inclus indirectement en ajoutant des dépendances tierces telles que la console AEM Groovy.
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
-### Conditions requises pour le temps de génération :
+### Build-time Requirements
 
-Ces ajustements sont nécessaires pour permettre la génération du projet avec des versions plus récentes de Java, mais pas pour la compatibilité d’exécution. Les modules externes Maven peuvent être mis à jour à tout moment, car ils sont compatibles avec les anciennes versions de Java.
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
 
-#### Version minimale de bnd-maven-plugin {#bnd-maven-plugin}
+#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
 
-Mettez à jour bnd-maven-plugin vers la version 6.4.0 pour garantir la prise en charge des nouveaux environnements d’exécution JVM. Les versions 7 ou ultérieures ne sont pas compatibles avec Java 11 ou version inférieure. Par conséquent, une mise à niveau vers cette version n’est pas recommandée pour l’instant.
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
 
-#### Version minimale d’aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Mettez à jour aemanalyser-maven-plugin vers la version 1.6.6 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
+Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
 
-#### Version minimale de maven-bundle-plugin  {#maven-bundle-plugin}
+#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
 
-Mettez à jour maven-bundle-plugin vers la version 5.1.5 ou ultérieure pour garantir la prise en charge des nouveaux environnements d’exécution JVM.
+Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
-#### Mettre à jour les dépendances dans maven-scr-plugin  {#maven-scr-plugin}
+#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` n’est pas directement compatible avec Java 17 et 21. Cependant, il est possible de générer les fichiers descripteurs en mettant à jour la version de dépendance ASM dans la configuration du plug-in, comme dans l’extrait de code ci-dessous :
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
 
 ```
 [source,xml]
@@ -584,3 +584,4 @@ Mettez à jour maven-bundle-plugin vers la version 5.1.5 ou ultérieure pour ga
    ...
  </project>
 ```
+-->
