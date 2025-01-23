@@ -1,36 +1,36 @@
 ---
 title: Définitions de modèles, champs et types de composants
-description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau Propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
+description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau des propriétés avec des exemples. Découvrez comment instrumenter votre propre application en créant une définition de modèle et en établissant un lien vers le composant .
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
+source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1343'
+ht-degree: 13%
 
 ---
 
 
 # Définitions de modèles, champs et types de composants {#field-types}
 
-Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau Propriétés avec des exemples. Découvrez comment vous pouvez instrumenter votre propre application en créant une définition de modèle et en la liant au composant.
+Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau des propriétés avec des exemples. Découvrez comment instrumenter votre propre application en créant une définition de modèle et en établissant un lien vers le composant .
 
 ## Vue d’ensemble {#overview}
 
-Lorsque vous adaptez vos propres applications pour les utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les champs et les types de composants qu’ils peuvent manipuler dans le panneau des propriétés de l’éditeur. Pour ce faire, créez un modèle et liez-le à partir du composant.
+Lors de l’adaptation de vos propres applications à utiliser avec l’éditeur universel, vous devez instrumenter les composants et définir les champs et types de composants qu’ils peuvent manipuler dans le panneau Propriétés de l’éditeur. Pour ce faire, créez un modèle et liez-le à partir du composant.
 
-Ce document présente la définition d’un modèle, ainsi que les champs et les types de composants disponibles, avec des exemples de configuration.
+Ce document offre un aperçu d’une définition de modèle et des champs, ainsi que des types de composants disponibles, avec des exemples de configurations.
 
 >[!TIP]
 >
->Si vous ne savez pas comment utiliser votre application pour l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour AEM développeurs.](/help/implementing/universal-editor/developer-overview.md)
+>Si vous ne savez pas comment instrumenter votre application pour l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs et développeuses AEM.](/help/implementing/universal-editor/developer-overview.md)
 
-## Structure de la définition de modèle {#model-structure}
+## Structure de définition du modèle {#model-structure}
 
-Pour configurer un composant via le panneau des propriétés de l’éditeur universel, une définition de modèle doit exister et être liée au composant.
+Pour configurer un composant via le panneau Propriétés dans l’éditeur universel, une définition de modèle doit exister et être liée au composant.
 
-La définition de modèle est une structure JSON, commençant par un tableau de modèles.
+La définition du modèle est une structure JSON, commençant par un tableau de modèles .
 
 ```json
 [
@@ -41,7 +41,7 @@ La définition de modèle est une structure JSON, commençant par un tableau de 
 ]
 ```
 
-Pour plus d’informations sur la définition de votre tableau `fields`, reportez-vous à la section **[Fields](#fields)** de ce document.
+Voir la section **[Champs](#fields)** de ce document pour plus d’informations sur la définition de votre tableau de `fields`.
 
 Pour utiliser la définition de modèle avec un composant, l’attribut `data-aue-model` peut être utilisé.
 
@@ -51,13 +51,13 @@ Pour utiliser la définition de modèle avec un composant, l’attribut `data-au
 
 ## Chargement d’une définition de modèle {#loading-model}
 
-Une fois créé, un modèle peut être référencé en tant que fichier externe.
+Une fois un modèle créé, il peut être référencé en tant que fichier externe.
 
 ```html
 <script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
 ```
 
-Vous pouvez également définir le modèle intégré.
+Vous pouvez également définir le modèle en ligne.
 
 ```html
 <script type="application/vnd.adobe.aue.model+json">
@@ -72,50 +72,50 @@ Un objet de champ possède la définition de type suivante.
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `component` | `ComponentType` | Rendu du composant | Oui |
-| `name` | `string` | Propriété où les données doivent être conservées | Oui |
+| `name` | `string` | Propriété dans laquelle les données doivent être conservées | Oui |
 | `label` | `FieldLabel` | Libellé du champ | Oui |
 | `description` | `FieldDescription` | Description du champ | Non |
 | `placeholder` | `string` | Espace réservé pour le champ | Non |
 | `value` | `FieldValue` | Valeur par défaut | Non |
-| `valueType` | `ValueType` | Validation standard, peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
+| `valueType` | `ValueType` | La validation standard peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
 | `required` | `boolean` | Le champ est-il obligatoire ? | Non |
 | `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
 | `hidden` | `boolean` | Le champ est-il masqué par défaut ? | Non |
-| `condition` | `RulesLogic` | Règle pour afficher ou masquer le champ en fonction d’une [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Non |
+| `condition` | `RulesLogic` | Règle d’affichage ou de masquage du champ selon une [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Non |
 | `multi` | `boolean` | Le champ est-il un champ multiple ? | Non |
-| `validation` | `ValidationType` | Règle ou règles de validation du champ | Non |
+| `validation` | `ValidationType` | Règle(s) de validation pour le champ | Non |
 | `raw` | `unknown` | Données brutes pouvant être utilisées par le composant | Non |
 
 ### Types de composants {#component-types}
 
-Vous trouverez ci-dessous les types de composants que vous pouvez utiliser pour les champs de rendu.
+Vous trouverez ci-dessous les types de composants qui peuvent être utilisés pour le rendu des champs.
 
 | Description | Type de composant |
 |---|---|
-| [AEM balise](#aem-tag) | `aem-tag` |
-| [AEM Contenu](#aem-content) | `aem-content` |
+| [Balise AEM](#aem-tag) | `aem-tag` |
+| [Contenu AEM](#aem-content) | `aem-content` |
 | [Booléen](#boolean) | `boolean` |
 | [Groupe de cases à cocher](#checkbox-group) | `checkbox-group` |
 | [Conteneur](#container) | `container` |
 | [Fragment de contenu](#content-fragment) | `aem-content-fragment` |
-| [Date Time](#date-time) | `date-time` |
+| [Date et heure](#date-time) | `date-time` |
 | [Fragment d’expérience](#experience-fragment) | `aem-experience-fragment` |
-| [Multiselect](#multiselect) | `multiselect` |
+| [Sélection multiple](#multiselect) | `multiselect` |
 | [Nombre](#number) | `number` |
 | [Groupe de cases d’option](#radio-group) | `radio-group` |
 | [Référence](#reference) | `reference` |
 | [Texte enrichi](#rich-text) | `richtext` |
-| [Select](#select) | `select` |
-| [Onglet](#tab) | `tab` |
+| [ Sélectionner ](#select) | `select` |
+| [Tabulation](#tab) | `tab` |
 | [Texte](#text) | `text` |
 
-#### AEM balise {#aem-tag}
+#### Balise AEM {#aem-tag}
 
-Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut être utilisé pour joindre des balises au composant.
+Un type de composant de balise AEM active un sélecteur de balises AEM, qui peut être utilisé pour joindre des balises au composant.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -139,15 +139,15 @@ Un type de composant de balise AEM active un sélecteur de balise AEM, qui peut 
 
 #### Contenu AEM {#aem-content}
 
-Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM. Contrairement au [composant de référence,](#reference) qui ne peut sélectionner que des ressources, le composant de contenu AEM peut référencer n’importe quel contenu AEM. Il offre un type de validation supplémentaire.
+Un type de composant de contenu AEM active un sélecteur de contenu AEM qui peut être utilisé pour sélectionner n’importe quelle ressource AEM. Contrairement au composant [référence](#reference) qui ne peut sélectionner que des ressources, le composant de contenu AEM peut référencer n’importe quel contenu AEM. Il propose un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner AEM contenu, en limitant la sélection à ce répertoire et à ces sous-répertoires. | Non |
+| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour permettre à l’utilisateur de sélectionner le contenu AEM, ce qui limite la sélection à ce répertoire et à ses sous-répertoires. | Non |
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -172,11 +172,11 @@ Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peu
 
 #### Booléen {#boolean}
 
-Un type de composant booléen stocke une simple valeur true/false rendue en tant que basculement. Il offre un type de validation supplémentaire.
+Un type de composant booléen stocke une valeur true/false simple rendue sous la forme d’un bouton bascule. Il propose un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Message qui s&#39;affiche si la valeur saisie n&#39;est pas une valeur booléenne | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera si la valeur saisie n’est pas une valeur booléenne | Non |
 
 >[!BEGINTABS]
 
@@ -223,11 +223,11 @@ Un type de composant booléen stocke une simple valeur true/false rendue en tant
 
 #### Groupe de cases à cocher {#checkbox-group}
 
-Tout comme une valeur booléenne, un type de composant de groupe de cases à cocher permet de sélectionner plusieurs éléments true/false, rendus sous la forme de plusieurs cases à cocher.
+Semblable à une valeur booléenne, un type de composant de groupe de cases à cocher permet la sélection de plusieurs éléments true/false, rendus sous la forme de plusieurs cases à cocher.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -249,13 +249,13 @@ Tout comme une valeur booléenne, un type de composant de groupe de cases à coc
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant de groupe de cases à cocher](assets/component-types/checkbox-group.png)
+![Copie d’écran du type de composant de groupe de cases à cocher](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
 #### Conteneur {#container}
 
-Un type de composant de conteneur permet le regroupement de composants. Il propose une configuration supplémentaire.
+Un type de composant de conteneur permet de regrouper des composants. Il propose une configuration supplémentaire.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -263,7 +263,7 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
  {
@@ -302,19 +302,19 @@ Un type de composant de conteneur permet le regroupement de composants. Il propo
 
 #### Fragment de contenu {#content-fragment}
 
-Le sélecteur de fragment de contenu peut être utilisé pour sélectionner un [fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) et ses variations (si nécessaire). Il offre une configuration et une validation supplémentaires.
+Le sélecteur de fragment de contenu peut être utilisé pour sélectionner un [fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) et ses variantes (si nécessaire). Il offre une configuration et une validation supplémentaires.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si non défini, aucun sélecteur de variation n’est affiché. | Non |
+| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si elle n’est pas définie, aucun sélecteur de variation ne s’affiche | Non |
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner le fragment de contenu, en limitant la sélection à ce répertoire et à ces sous-répertoires. | Non |
+| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner le fragment de contenu, ce qui limite la sélection à ce répertoire et à ses sous-répertoires | Non |
 
 >[!NOTE]
 >
->L’éditeur universel [ valide les champs de fragment de contenu en fonction de leurs modèles ](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui vous permet d’appliquer des règles d’intégrité des données telles que des modèles d’expression régulière et des contraintes d’unicité.
+>L’éditeur universel [valide les champs de fragment de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation) ce qui vous permet d’appliquer des règles d’intégrité des données telles que des modèles d’expression régulière et des contraintes d’unicité.
 >
 >Cela garantit que votre contenu répond aux besoins spécifiques de l’entreprise avant d’être publié.
 
@@ -345,20 +345,20 @@ Le sélecteur de fragment de contenu peut être utilisé pour sélectionner un [
 
 >[!ENDTABS]
 
-#### Heure de date {#date-time}
+#### Date et heure {#date-time}
 
 Un type de composant de date et d’heure permet de spécifier une date, une heure ou une combinaison de celles-ci. Il propose des configurations supplémentaires.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `displayFormat` | `string` | Format avec lequel afficher la chaîne de date | Oui |
-| `valueFormat` | `string` | Format dans lequel stocker la chaîne de date | Oui |
+| `displayFormat` | `string` | Format d’affichage de la chaîne de date | Oui |
+| `valueFormat` | `string` | Format de stockage de la chaîne de date | Oui |
 
 Il propose également un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Message qui s’affiche si `valueFormat` n’est pas satisfait | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera si `valueFormat` n’est pas satisfait | Non |
 
 >[!BEGINTABS]
 
@@ -432,21 +432,21 @@ Il propose également un type de validation supplémentaire.
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant d’heure de date](assets/component-types/date-time.png)
+![Capture d’écran du type de composant Date et heure](assets/component-types/date-time.png)
 
 >[!ENDTABS]
 
 #### Fragment d’expérience {#experience-fragment}
 
-Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner un [fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) et ses variations (si nécessaire). Il offre une configuration et une validation supplémentaires.
+Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner un [fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) et ses variantes (si nécessaire). Il offre une configuration et une validation supplémentaires.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si non défini, aucun sélecteur de variation n’est affiché. | Non |
+| `variationName` | `string` | Nom de variable pour stocker la variation sélectionnée. Si elle n’est pas définie, aucun sélecteur de variation ne s’affiche | Non |
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner le fragment d’expérience, en limitant la sélection à ce répertoire et à ces sous-répertoires. | Non |
+| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner le fragment d’expérience, ce qui limite la sélection à ce répertoire et à ses sous-répertoires | Non |
 
 >[!BEGINTABS]
 
@@ -455,14 +455,17 @@ Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
@@ -476,7 +479,7 @@ Le sélecteur de fragment d’expérience peut être utilisé pour sélectionner
 >[!ENDTABS]
 
 
-#### Multisélection {#multiselect}
+#### Sélection multiple {#multiselect}
 
 Un type de composant à sélection multiple présente plusieurs éléments à sélectionner dans une liste déroulante, notamment la possibilité de regrouper les éléments sélectionnables.
 
@@ -539,20 +542,20 @@ Un type de composant à sélection multiple présente plusieurs éléments à s�
 
 >[!TAB Captures d’écran]
 
-![Capture d’écran du type de composant multi-select](assets/component-types/multiselect.png)
+![Capture d’écran du type de composant à sélection multiple](assets/component-types/multiselect.png)
 ![Capture d’écran du type de composant à sélection multiple avec regroupement](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
 #### Nombre {#number}
 
-Un type de composant numérique permet la saisie d’un nombre. Il offre des types de validation supplémentaires.
+Un type de composant numérique permet la saisie d’un nombre. Il propose d’autres types de validation.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `numberMin` | `number` | Nombre minimum autorisé | Non |
-| `numberMax` | `number` | Nombre maximal autorisé | Non |
-| `customErrorMsg` | `string` | Message qui s’affichera si `numberMin` ou `numberMax` n’est pas satisfait | Non |
+| `numberMax` | `number` | Nombre maximum autorisé | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera si `numberMin` ou `numberMax` n’est pas atteint | Non |
 
 >[!BEGINTABS]
 
@@ -605,11 +608,11 @@ Un type de composant numérique permet la saisie d’un nombre. Il offre des typ
 
 #### Groupe de cases d’option {#radio-group}
 
-Un type de composant de groupe de cases d’option permet une sélection mutuellement exclusive de plusieurs options rendues sous la forme d’un groupe semblable à un groupe de cases à cocher.
+Un type de composant de groupe de cases d’option permet une sélection mutuellement exclusive parmi plusieurs options rendues sous la forme d’un groupe similaire à un groupe de cases à cocher.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -637,13 +640,13 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 #### Référence {#reference}
 
-Un type de composant de référence active un sélecteur de ressources AEM qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au [composant de contenu AEM,](#aem-content) qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il offre un type de validation supplémentaire.
+Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [](#aem-content) qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
 
-Un type de composant de référence permet une référence à un autre objet de données de l’objet actif.
+Un type de composant de référence permet de faire référence à un autre objet de données de l’objet actif.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -667,12 +670,12 @@ Un type de composant de référence permet une référence à un autre objet de 
 
 #### Texte enrichi {#rich-text}
 
-Le texte enrichi permet une saisie de texte enrichi multiligne. Il offre des types de validation supplémentaires.
+Le texte enrichi permet une entrée de texte enrichi multiligne. Il propose d’autres types de validation.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `maxSize` | `number` | Nombre maximal de caractères autorisés | Non |
-| `customErrorMsg` | `string` | Message qui s’affiche si `maxSize` est dépassé | Non |
+| `customErrorMsg` | `string` | Message qui s’affichera en cas de dépassement de la `maxSize` | Non |
 
 >[!BEGINTABS]
 
@@ -714,17 +717,17 @@ Le texte enrichi permet une saisie de texte enrichi multiligne. Il offre des typ
 
 >[!TAB Capture d’écran]
 
-![Capture d’écran du type de composant Zone de texte](assets/component-types/richtext.png)
+![Capture d’écran du type de composant de zone de texte](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
 #### Sélectionner {#select}
 
-Un type de composant sélectionné permet de sélectionner une seule option dans une liste d’options prédéfinies d’un menu déroulant.
+Un type de composant de sélection permet de sélectionner une seule option dans une liste d’options prédéfinies dans un menu déroulant.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -752,15 +755,15 @@ Un type de composant sélectionné permet de sélectionner une seule option dans
 
 #### Tabulation {#tab}
 
-Un type de composant Onglets vous permet de regrouper d’autres champs de saisie sur plusieurs onglets afin d’améliorer l’organisation de la mise en page pour les auteurs.
+Un type de composant Onglet permet de regrouper d’autres champs de saisie sur plusieurs onglets afin d’améliorer l’organisation de la disposition pour les auteurs.
 
-Une définition `tab` peut être considérée comme un séparateur dans le tableau de `fields`. Tout ce qui suit un `tab` est placé sur cet onglet jusqu’à ce qu’un nouvel `tab` soit rencontré, où les éléments suivants seront placés sur le nouvel onglet.
+Une définition de `tab` peut être considérée comme un séparateur dans le tableau des `fields`. Tout ce qui suit un `tab` sera placé sur cet onglet jusqu’à ce qu’un nouvel `tab` soit rencontré, après quoi les éléments suivants seront placés sur le nouvel onglet.
 
-Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets, ils doivent être définis avant les onglets.
+Si vous souhaitez que des éléments apparaissent au-dessus de tous les onglets, ils doivent être définis avant tout onglet.
 
 >[!BEGINTABS]
 
->[!TAB Sample]
+>[!TAB Exemple]
 
 ```json
 {
@@ -800,14 +803,14 @@ Si vous souhaitez que les éléments apparaissent au-dessus de tous les onglets,
 
 #### Texte {#text}
 
-Le texte permet une seule ligne de saisie de texte.  Elle comprend des types de validation supplémentaires.
+Le texte permet une seule ligne de saisie de texte.  Elle inclut des types de validation supplémentaires.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `minLength` | `number` | Nombre minimum de caractères autorisés | Non |
 | `maxLength` | `number` | Nombre maximal de caractères autorisés | Non |
-| `regExp` | `string` | Expression régulière à laquelle le texte d’entrée doit correspondre | Non |
-| `customErrorMsg` | `string` | Message qui s’affichera si `minLength`, `maxLength` et/ou `regExp` sont enfreints | Non |
+| `regExp` | `string` | Expression régulière à laquelle le texte saisi doit correspondre | Non |
+| `customErrorMsg` | `string` | Message qui s’affiche en cas de violation des règles `minLength`, `maxLength` et/ou `regExp` | Non |
 
 >[!BEGINTABS]
 
