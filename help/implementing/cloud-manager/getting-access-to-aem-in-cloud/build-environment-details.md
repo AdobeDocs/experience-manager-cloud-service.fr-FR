@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 36%
@@ -117,7 +117,7 @@ Lors de l’exécution locale d’AEM avec Java 21, les scripts de démarrage (`
 >Lorsque `.cloudmanager/java-version` est défini sur `21` ou `17`, l’exécution Java 21 est déployée. L’exécution de Java 21 est planifiée pour un déploiement progressif vers tous les environnements (et pas seulement ceux dont le code est créé avec Java 11) à partir du jeudi 13 février 2025. Le déploiement commencera par les sandbox et les environnements de développement, puis sera déployé dans tous les environnements de production en avril 2025. Les clients qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
-#### Exigences de temps de création
+#### Exigences de temps de création {#build-time-reqs}
 
 Les ajustements suivants sont nécessaires pour permettre la création du projet avec Java 21 et Java 17. Elles peuvent être mises à jour avant même l’exécution de Java 21 et Java 17, car elles sont compatibles avec les versions Java plus anciennes.
 

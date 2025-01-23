@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 19%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -32,15 +32,15 @@ La prochaine version est prévue le vendredi 13 février 2025.
 
 * **Règles de qualité du code - Mise à niveau du serveur SonarQube :** l’étape Qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version Cloud Manager 2025.2.0, prévue pour le jeudi 13 février 2025.
 
-Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles à l’adresse [Règles de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles à l’adresse [Règles de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-Vous pouvez « vérifier rapidement » les nouvelles règles en définissant la variable de texte de pipeline suivante :
+  Vous pouvez « vérifier rapidement » les nouvelles règles en définissant la variable de texte de pipeline suivante :
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour la même `commitId`) :
+  En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour la même `commitId`) :
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![Page de configuration des variables](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ En outre, définissez la variable suivante pour vous assurer que l’étape de q
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
       * Les clients qui créent avec Java 11 et qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **« Configurations du réseau de diffusion de contenu » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau de diffusion de contenu » est désormais renommé « Mappages de domaine » pour un meilleur alignement terminologique avec la fonctionnalité. <!-- CMGR-64738 -->
+* **« Configurations du réseau CDN » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau CDN » est désormais renommé « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec les fonctionnalités. <!-- CMGR-64738 -->
 
   ![ « Configurations du réseau CDN » renommées « Mappages de domaine » dans l’interface utilisateur](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Approvisionnement d’un site Edge Delivery en un clic :** Cloud Manager permet désormais aux utilisateurs disposant des autorisations et licences appropriées de créer un exemple de site de Edge Delivery Services en un seul clic. Ce processus simplifié offre les fonctionnalités automatisées suivantes :
+
+   * **Intégration GitHub** : crée automatiquement un référentiel GitHub au sein d’une organisation existante, préconfiguré avec un modèle standard pour les Edge Delivery Services.
+   * **Installation de l’application de synchronisation du code AEM** - Installe l’application de synchronisation du code AEM sur le référentiel, assurant ainsi une synchronisation et un déploiement transparents.
+   * **Configuration de Content Collaboration** : associe un dossier Google Drive désigné pour le stockage de contenu, fournissant ainsi un environnement collaboratif pour la gestion de contenu.
+   * **Publication de contenu** - Les utilisateurs peuvent désormais publier du contenu pour les sites configurés directement à partir de l’interface utilisateur de Cloud Manager, ce qui simplifie les workflows et améliore l’efficacité.
+   * **Enhanced Collaboration** - La plateforme permet aux utilisateurs d’ajouter plusieurs collaborateurs au dossier de stockage de contenu de Google Drive, ce qui facilite le travail d’équipe et les contributions de contenu.
+
+  Ces améliorations visent à améliorer l’automatisation, à simplifier les processus de configuration et à améliorer la collaboration pour les utilisateurs Edge Delivery Services. <!-- CMGR-59362 -->
+
+  ![Mise en service d’un site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Boîte de dialogue Configuration du site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
+
+* **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
 
 
 <!-- ## Early adoption program {#early-adoption}
