@@ -4,9 +4,9 @@ description: Découvrez les recommandations de bonnes pratiques relatives à la 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 2%
 
 ---
@@ -112,6 +112,10 @@ Pour cet exemple, nous allons créer le `wknd-ch` de site pour la présence suis
    * La configuration `code` doit être identique à celle que vous avez utilisée lors de la création initiale du projet.
    * Le `content` > `source` > `url` doit être adapté au nom du nouveau site que vous êtes en train de créer. Dans cet exemple, il s’agit de `wknd-ch`.
    * En d’autres termes, le nom du site dans l’URL du POST et le `content` > `source` > `url` doivent être identiques.
+   * Adaptez le bloc `admin` pour définir les utilisateurs et utilisatrices qui doivent disposer d’un accès administratif complet au site.
+      * Il s’agit d’un tableau d’adresses e-mail.
+      * Le caractère générique `*` peut être utilisé.
+      * Consultez le document [Configuration de l’authentification pour les auteurs](https://www.aem.live/docs/authentication-setup-authoring#default-roles) pour plus d’informations.
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ Pour cet exemple, nous allons créer le `wknd-ch` de site pour la présence suis
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

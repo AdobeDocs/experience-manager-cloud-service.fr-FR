@@ -4,9 +4,9 @@ description: Si vous disposez de nombreux sites similaires qui ressemblent et se
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -34,10 +34,11 @@ Pour tirer parti de cette fonctionnalité, vérifiez que vous avez effectué les
 * Votre site est déjà entièrement configuré en suivant le document [Guide de prise en main pour le développeur pour la création WYSIWYG avec des Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * Vous exécutez AEM as a Cloud Service 2024.08 au minimum.
 
-Vous devrez également demander à l’Adobe de configurer deux éléments pour vous. Contactez l’Adobe via votre canal de Slack ou soulevez un problème d’assistance pour effectuer ces demandes.
+Vous devrez également demander à l’Adobe de configurer les éléments suivants pour vous. Contactez par le biais de votre canal de Slack ou soulevez un problème d’assistance pour demander l’Adobe d’effectuer ces modifications :
 
-* Le [service de configuration aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) est actif pour votre environnement et vous êtes configuré en tant qu’administrateur.
-* La fonction Repoless doit être activée par Adobe pour votre programme.
+* Demandez l’activation du [service de configuration aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) pour votre environnement et indiquez que vous êtes configuré en tant qu’administrateur.
+* Demandez à d’activer la fonction Repoless pour votre programme par Adobe.
+* Demandez à Adobe de créer l’organisation pour vous.
 
 ## Activer la fonction Réponses {#activate}
 
@@ -64,67 +65,6 @@ Une fois que vous disposez de votre jeton d’accès, il peut être transmis dan
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### Configuration De Votre Service De Configuration {#config-service}
-
-Comme indiqué dans la [conditions préalables](#prerequisites) le service de configuration doit être activé pour votre environnement. Vous pouvez vérifier la configuration de votre service de configuration à l’aide de cette commande cURL.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-Si le service de configuration est correctement configuré, un fichier JSON similaire au suivant est renvoyé.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Contactez l’Adobe via le canal du Slack de votre projet ou soulevez un problème d’assistance si votre service de configuration n’est pas activé. Une fois que vous disposez de votre jeton et que vous avez vérifié que le service de configuration est activé, vous pouvez continuer la configuration.
-
-1. Vérifiez que votre source de contenu est correctement configurée.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Ajoutez un mappage de chemin d’accès à la configuration publique.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Une fois la configuration publique créée, vous pouvez y accéder via une URL similaire à `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` afin de la vérifier.
 
 ### Ajout d’un mappage de chemin pour la configuration du site et définition du compte technique {#access-control}
 
@@ -184,6 +124,11 @@ Une fois la configuration du site mappée, vous pouvez configurer le contrôle d
 
 1. Définissez le compte technique dans votre configuration avec une commande cURL similaire à la suivante.
 
+   * Adaptez le bloc `admin` pour définir les utilisateurs et utilisatrices qui doivent disposer d’un accès administratif complet au site.
+      * Il s’agit d’un tableau d’adresses e-mail.
+      * Le caractère générique `*` peut être utilisé.
+      * Consultez le document [Configuration de l’authentification pour les auteurs](https://www.aem.live/docs/authentication-setup-authoring#default-roles) pour plus d’informations.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ Une fois la configuration du site mappée, vous pouvez configurer le contrôle d
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
