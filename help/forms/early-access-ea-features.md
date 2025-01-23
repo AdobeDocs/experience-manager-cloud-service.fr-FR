@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
+source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 33%
+source-wordcount: '1779'
+ht-degree: 32%
 
 ---
 
@@ -90,7 +90,7 @@ La création WYSIWYG fournit des interfaces WYSIWYG (éditeur universel et édit
 
 ### Connecteur AEM Forms vers Marketo
 
-Le connecteur [AEM Forms vers Marketo](/help/forms/integrate-adaptive-form-with-marketo-engage.md) comble le fossé entre vos formulaires web (Forms adaptatif) créés avec Adobe Experience Manager (AEM) et votre plateforme d’automatisation du marketing, Marketo.
+Le connecteur [AEM Forms vers Marketo](/help/forms/integrate-form-to-marketo-engage.md) comble le fossé entre vos formulaires web (Forms adaptatif) créés avec Adobe Experience Manager (AEM) et votre plateforme d’automatisation du marketing, Marketo.
 
 Lorsqu’une personne envoie un formulaire créé avec AEM Adaptive Forms sur votre site web, le connecteur garantit que les données envoyées sont automatiquement envoyées à Marketo. Vous n’avez ainsi plus besoin de saisir les données manuellement et le risque d’erreur est réduit.
 
@@ -100,6 +100,12 @@ En rationalisant le processus de transfert de données, le connecteur peut vous 
 
 En substance, le connecteur AEM Forms vers Marketo vous permet d’exploiter les forces des deux plateformes pour créer un entonnoir marketing plus efficace.
 
+Prêt à démarrer ? Les articles suivants fournissent des instructions détaillées sur l’utilisation de l’innovation.
+
+* [Intégrer Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Intégration d’un formulaire adaptatif à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configuration de la source de données d’annonces Marketo Engage pour les Forms adaptatives existantes](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Envoyer un formulaire adaptatif existant à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Autres innovations en matière d&#39;accès précoce
 
