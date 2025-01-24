@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 11%
+source-wordcount: '811'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,17 @@ La prochaine version est prévue le vendredi 13 février 2025.
 * **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
 
 * **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
+
+* **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines , ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
+
+   * **Filtrage à critères multiples :** affinez les résultats de recherche avec des filtres tels que le nom du pipeline, l’environnement et le code de déploiement.
+   * **Recherche rationalisée de pipelines :** localisez facilement des pipelines spécifiques pour une navigation plus rapide et une gestion améliorée des workflows.
+
+  Globalement, ces améliorations rendent la gestion et le déploiement des pipelines plus efficaces et plus conviviaux.
+
+  ![Fonction Filtres de pipeline](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Configuration de réseau CDN en libre-service pour le service Edge Delivery :** les nouveaux utilisateurs du service Edge Delivery peuvent désormais configurer leur réseau CDN indépendamment via Cloud Manager. Cette mise à jour étend la prise en charge de `.hlx.page/live` à la nouvelle `.aem.page/live`, offrant ainsi une plus grande flexibilité et une configuration rationalisée pour les utilisateurs.
 
 
 <!-- ## Early adoption program {#early-adoption}
