@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 10%
+source-wordcount: '841'
+ht-degree: 9%
 
 ---
 
@@ -59,7 +59,7 @@ La prochaine version est prévue le vendredi 13 février 2025.
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
       * Les clients qui créent avec Java 11 et qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **« Configurations du réseau CDN » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau CDN » est désormais renommé « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec les fonctionnalités. <!-- CMGR-64738 -->
+* **« Configurations du réseau de diffusion de contenu » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau de diffusion de contenu » est désormais renommé « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec les fonctionnalités. <!-- CMGR-64738 -->
 
   ![ « Configurations du réseau CDN » renommées « Mappages de domaine » dans l’interface utilisateur](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -80,6 +80,8 @@ La prochaine version est prévue le vendredi 13 février 2025.
 * **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
 
 * **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
+
+Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines , ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
 

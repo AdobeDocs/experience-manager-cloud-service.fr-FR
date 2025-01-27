@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 94%
+source-wordcount: '740'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud 
 
 >[!NOTE]
 >
->Cette fonctionnalité est uniquement disponible pour [le programme d&#39;adoption précoce](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>Cette fonctionnalité n’est disponible que dans le cadre du programme d’adoption précoce. Pour plus d’informations et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Apporter votre propre Git - désormais avec prise en charge de GitLab et Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
 
 ## Configuration d’un référentiel externe
 
@@ -32,7 +32,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme auquel vous souhaitez lier un référentiel externe.
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme auquel vous souhaitez lier un référentiel externe.
 
 1. Dans le menu latéral, sous **Services**, sélectionnez ![icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Référentiels**.
 
