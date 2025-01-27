@@ -1,14 +1,14 @@
 ---
 title: Vue d’ensemble d’Edge Delivery Services pour AEM Forms
-description: Edge Delivery Services pour AEM Forms
+description: Edge Delivery Services pour AEM Forms conçus pour des performances de pointe, vous permettent d’envisager l’avenir de la collecte de données rationalisée et de l’interaction client.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 16%
+source-wordcount: '956'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ Avec l’éditeur universel, les utilisateurs et utilisatrices peuvent utiliser 
 
 L’éditeur universel est spécifiquement axé sur le Edge Delivery Services (EDS). La principale force de l’éditeur universel réside dans son ensemble de fonctionnalités robustes, qui comprend des fonctionnalités avancées de création de formulaires, l’édition dynamique de règles et l’intégration transparente à diverses sources de données. Les utilisateurs et utilisatrices peuvent rapidement concevoir des formulaires réactifs à l’aide de composants préconfigurés, de modèles personnalisables et d’une bibliothèque complète d’éléments de formulaire.
 
-![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
 
 
 
@@ -43,7 +43,7 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
     <p>Concevez des formulaires réactifs qui s’adaptent de manière transparente sur tous les appareils. Prévisualisez et testez des conceptions pour les ordinateurs de bureau, les tablettes et les appareils mobiles à l’aide du mode réactif.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Actions d’envoi">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interface de WYSIWYG" alt="Actions d’envoi">
     <h3>Mode réactif </h3>
     <p>Concevez des formulaires qui s’adaptent de manière transparente sur les appareils (ordinateurs de bureau, tablettes et appareils mobiles). Utilisez le mode réactif pour prévisualiser le formulaire pour différentes tailles d’écran.</p>
   </div>
@@ -68,17 +68,17 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Services de préremplissage">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Interface de WYSIWYG" alt="Services de préremplissage">
     <h3>Services de préremplissage</h3>
     <p>Les services de préremplissage renseignent automatiquement les champs de formulaire avec des données utilisateur pertinentes provenant de diverses sources, ce qui réduit la saisie manuelle et améliore l’expérience utilisateur.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Liaison de données">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Interface de WYSIWYG" alt="Liaison de données">
     <h3>Liaison de données</h3>
     <p>La liaison de données permet des connexions directes entre les champs de formulaire et les sources de données principales, ce qui permet la mise à jour en temps réel et le mappage de données avancé.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="Interface de WYSIWYG" alt="Internationalisation/Localisation">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Interface de WYSIWYG" alt="Internationalisation/Localisation">
     <h3>Publication/dépublication</h3>
     <p>Contrôlez facilement la visibilité de vos formulaires : publiez ou dépubliez-les en quelques clics pour gérer dynamiquement la disponibilité, l’accès des utilisateurs et utilisatrices et les mises à jour de contenu.</p>
   </div>
@@ -96,7 +96,7 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
     <p>Les actions Envoyer prennent en charge l’intégration du serveur principal, la logique d’envoi conditionnel, les points d’entrée sécurisés et les préprocesseurs, ce qui simplifie les workflows d’envoi.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Gestion des tâches">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Interface de WYSIWYG" alt="Gestion des tâches">
     <h3>Composants personnalisés</h3>
     <p>Les composants personnalisés permettent aux développeurs et aux développeuses d’étendre les fonctionnalités de formulaire en créant des éléments uniques adaptés à des cas d’utilisation organisationnels spécifiques.</p>
   </div>
@@ -104,17 +104,17 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Personnalisation de l’éditeur">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Interface de WYSIWYG" alt="Personnalisation de l’éditeur">
     <h3>Personnalisation de l’éditeur</h3>
     <p>Les développeurs et développeuses peuvent étendre les fonctionnalités de l’éditeur universel par le biais d’extensions d’interface utilisateur, permettant des solutions personnalisées qui répondent à des besoins organisationnels spécifiques.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Incorporation de Forms">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Interface de WYSIWYG" alt="Incorporation de Forms">
     <h3>Incorporation de Forms</h3>
     <p>Incorporez des formulaires directement dans des pages Sites Edge Delivery Services à l’aide du composant intégré de l’éditeur universel pour une expérience utilisateur fluide.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface de WYSIWYG" alt="Composants personnalisés">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Interface de WYSIWYG" alt="Composants personnalisés">
     <h3>Configuration de remerciement</h3>
     <p>Personnalisez facilement le message ou la page d’accusé de réception affiché pour les utilisateurs après l’envoi réussi du formulaire.
     </p>
