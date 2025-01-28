@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Voici un aperçu rapide des étapes impliquées :
 
 ## Configuration d’un modèle d’HTML pour un formulaire adaptatif
 
-Vous pouvez configurer un formulaire adaptatif pour envoyer un e-mail lors de l’envoi à l’aide de l’action d’envoi [**Envoyer un e-mail**. ](/help/forms/configure-submit-action-send-email.md) L’action propose deux méthodes pour configurer un modèle d’HTML :
+Vous pouvez configurer un formulaire adaptatif pour envoyer un e-mail lors de l’envoi à l’aide de l’action d’envoi [**Envoyer un e-mail**](/help/forms/configure-submit-action-send-email.md). L’action propose deux méthodes pour configurer un modèle d’HTML :
 
 ### Option 1 : sélectionner un fichier contenant le modèle d’HTML
 
@@ -43,10 +43,13 @@ Avant de poursuivre, assurez-vous d’avoir chargé le modèle HTML dans votre e
 1. Ouvrez le formulaire adaptatif pour le modifier.
 1. Accédez au **Explorateur de contenu**, sélectionnez le **Conteneur de guide** et appuyez sur l’icône de propriétés. Une boîte de dialogue avec le titre `Adaptive Form Container` s’affiche.
 1. Accédez à l’onglet **Envoi** et sélectionnez l’action d’envoi **Envoyer un e-mail**.
+
+   ![Action d’envoi Envoyer un e-mail](/help/forms/assets/send-email-action.png)
+
 1. Activez l’option **Utiliser un modèle externe**.
 1. Activez l’option **Utiliser un modèle d’HTML**.
 1. Cliquez sur l’icône de dossier pour l’option Chemin d’accès au modèle externe et recherchez et sélectionnez votre modèle d’HTML.
-1. Cliquez sur Terminé pour enregistrer la configuration.
+1. Cliquez sur **Terminé** pour enregistrer la configuration.
 
 Votre modèle HTML est maintenant configuré pour le formulaire adaptatif.
 
@@ -55,14 +58,13 @@ Votre modèle HTML est maintenant configuré pour le formulaire adaptatif.
 1. Ouvrez le formulaire adaptatif pour le modifier.
 1. Accédez au **Explorateur de contenu**, sélectionnez le **Conteneur de guide** et appuyez sur l’icône de propriétés. Une boîte de dialogue avec le titre `Adaptive Form Container` s’affiche.
 1. Accédez à l’onglet **Envoi** et sélectionnez l’action d’envoi **Envoyer un e-mail**.
-1. Activez l’option **Utiliser un modèle externe**.
 1. Activez l’option **Utiliser un modèle d’HTML**.
 1. Saisissez ou collez votre code d’HTML directement dans la zone **Modèle d’e-mail** fournie.
 
 
 ## Configuration d’un modèle de texte brut pour un formulaire adaptatif
 
-Vous pouvez configurer un formulaire adaptatif pour envoyer un e-mail lors de l’envoi à l’aide de l’action d’envoi [**Envoyer un e-mail**. ](/help/forms/configure-submit-action-send-email.md) L’action propose deux méthodes pour configurer un modèle de texte brut :
+Vous pouvez configurer un formulaire adaptatif pour envoyer un e-mail lors de l’envoi à l’aide de l’action d’envoi [**Envoyer un e-mail**](/help/forms/configure-submit-action-send-email.md). L’action propose deux méthodes pour configurer un modèle de texte brut :
 
 ### Option 1 : sélectionner un fichier contenant le modèle
 
@@ -149,8 +151,6 @@ Voici un exemple de modèle d’e-mail en texte brut :
     Best regards,
     Your Team
 ```
-
-Remplacez les espaces réservés (${name}, ${email}, etc.) par les noms de champ de formulaire correspondants dans votre formulaire adaptatif.
 
 ## Bonnes pratiques relatives aux modèles d’e-mail HTML
 
