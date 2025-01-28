@@ -4,9 +4,9 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Les clients disposant d’une licence auprès d’un fournisseur de journalisati
 * HTTPS
 * Splunk
 
-Le transfert de journal est configuré en libre-service en déclarant une configuration dans Git, puis en la déployant via le pipeline de configuration Cloud Manager vers les types d’environnements de RDE, de développement, d’évaluation et de production dans les programmes de production (hors sandbox).
+Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
 Il existe une option pour que les journaux AEM et Apache/Dispatcher soient acheminés via l’infrastructure de réseau avancée d’AEM, telle que l’adresse IP de sortie dédiée.
 
