@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
@@ -23,22 +23,22 @@ En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM (Adobe Expe
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.1.0 de Cloud Manager dans AEM as a Cloud Service est le mercredi 22 janvier 2025.
+La date de publication de la version 2025.1.0 de Cloud Manager dans AEM as a Cloud Service est le mercredi 22 janvier 2025.
 
-La prochaine version est prévue le vendredi 13 février 2025.
+La prochaine version est prévue le jeudi 13 février 2025.
 
 
 ## Nouveautés {#what-is-new}
 
-* **Règles de qualité du code - Mise à niveau du serveur SonarQube :** l’étape Qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version Cloud Manager 2025.2.0, prévue pour le jeudi 13 février 2025.
+* **Règles de qualité du code - Mise à niveau du serveur SonarQube :** l’étape Qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version 2025.2.0 de Cloud Manager, prévue pour le jeudi 13 février 2025.
 
-  Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles à l’adresse [Règles de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles dans les [Règles de Qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-  Vous pouvez « vérifier rapidement » les nouvelles règles en définissant la variable de texte de pipeline suivante :
+  Vous pouvez consulter les nouvelles règles de façon anticipée en définissant la variable de texte de pipeline suivante :
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour la même `commitId`) :
+  En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour le même `commitId`) :
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
@@ -46,22 +46,22 @@ La prochaine version est prévue le vendredi 13 février 2025.
 
 >[!NOTE]
 >
->Adobe recommande de créer un pipeline de qualité du code CI/CD, configuré sur la même branche que votre pipeline de production principal. Définissez les variables appropriées *avant* dans la version du 13 février 2025 pour vérifier que les nouvelles règles appliquées n’introduisent pas de bloqueurs.
+>Adobe recommande de créer un pipeline de Qualité du code CI/CD, configuré sur la même branche que votre pipeline de production principal. Définissez les variables appropriées *avant* la version du 13 février 2025 pour vérifier que les nouvelles règles appliquées n’introduisent pas de bloqueurs.
 
-* Prise en charge des builds **Java 17 et Java 21 :** les clients peuvent désormais créer des builds avec Java 17 ou Java 21, ce qui leur permet d’accéder à des améliorations de performances et à de nouvelles fonctionnalités de langage. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Lorsque la version de build est définie sur Java 17 ou Java 21, l’exécution déployée est Java 21.
+* **Prise en charge des versions Java 17 et Java 21 :** les clients et clientes peuvent désormais créer des versions avec Java 17 ou Java 21, ce qui leur permet d’accéder à des améliorations de performances et à de nouvelles fonctionnalités de langage. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir la section [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Lorsque la version est définie sur Java 17 ou Java 21, l’environnement d’exécution déployé est Java 21.
 
    * **Activation des fonctionnalités**
-      * Cette fonctionnalité sera activée pour tous les clients et clientes le jeudi 13 février 2025, date coïncidant avec le déploiement par défaut de la nouvelle version de SonarQube.
-      * Les clients peuvent l’activer *immédiatement* en définissant les deux configurations de variables décrites ci-dessus pour la mise à niveau de la version 9.9 de SonarQube.
+      * Cette fonctionnalité sera activée pour tous les utilisateurs et utilisatrices le jeudi 13 février 2025, date coïncidant avec le déploiement par défaut de la nouvelle version de SonarQube.
+      * Les clientes et clients peuvent l’activer *immédiatement* en définissant les deux configurations de variables décrites ci-dessus pour la mise à niveau de la version 9.9 de SonarQube.
 
-   * **Déploiement d’exécution Java 21**
-      * L’exécution Java 21 est déployée lors de la création avec Java 17 ou Java 21.
-      * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
-      * Les clients qui créent avec Java 11 et qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter l’Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+   * **Déploiement de l’environnement d’exécution Java 21**
+      * L’environnement d’exécution Java 21 est déployé lors d’une création avec Java 17 ou Java 21.
+      * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
+      * Les clientes et clients qui créent avec Java 11 et qui souhaitent adopter l’environnement d’exécution Java 21 *plus tôt* peuvent contacter Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 * **« Configurations du réseau de diffusion de contenu » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau de diffusion de contenu » est désormais renommé « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec les fonctionnalités. <!-- CMGR-64738 -->
 
-  ![ « Configurations du réseau CDN » renommées « Mappages de domaine » dans l’interface utilisateur](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  ![« Configurations du réseau CDN » devient « Mappages de domaine » dans l’interface d’utilisation](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
 * **Approvisionnement d’un site Edge Delivery en un clic :** Cloud Manager permet désormais aux utilisateurs disposant des autorisations et licences appropriées de créer un exemple de site de Edge Delivery Services en un seul clic. Ce processus simplifié offre les fonctionnalités automatisées suivantes :
 

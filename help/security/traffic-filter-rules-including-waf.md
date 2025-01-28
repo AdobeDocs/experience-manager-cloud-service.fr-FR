@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin complet d’une URL sans les paramètres de requête. (utilisez `pathRaw` pour la variante sans échappement)</li><li>`url` : renvoie l’URL complète, y compris les paramètres de requête. (utilisez `urlRaw` pour la variante sans échappement)</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’une des options entre `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`forwardedDomain` : renvoie le premier domaine défini en minuscules dans l’en-tête du `X-Forwarded-Host`</li><li>`forwardedIp` : renvoie la première adresse IP de `X-Forwarded-For`’en-tête.</li><li>`clientCountry` : renvoie un code à deux lettres ([Symbole d’indicateur régional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client.</li></ul> |
+| reqProperty | `string` | Propriété de requête.<br><br>L’un de :<br><ul><li>`path` : renvoie le chemin d’accès complet d’une URL sans les paramètres de requête. (utilisez `pathRaw` pour la variante sans échappement)</li><li>`url` : renvoie l’URL complète, y compris les paramètres de requête. (utilisez `urlRaw` pour la variante sans échappement)</li><li>`queryString` : renvoie la partie requête d’une URL.</li><li>`method` : renvoie la méthode HTTP utilisée dans la requête.</li><li>`tier` : renvoie l’une des options entre `author`, `preview` ou `publish`.</li><li>`domain` : renvoie la propriété de domaine (telle que définie dans l’en-tête `Host`) en minuscules.</li><li>`clientIp` : renvoie l’adresse IP du client ou de la cliente.</li><li>`forwardedDomain` : renvoie le premier domaine défini dans l’en-tête `X-Forwarded-Host` en minuscules.</li><li>`forwardedIp` : renvoie la première adresse IP de l’en-tête `X-Forwarded-For`.</li><li>`clientCountry` : renvoie un code à deux lettres ([Symbole d’indicateur régional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) qui identifie le pays dans lequel se trouve le client.</li></ul> |
 | reqHeader | `string` | Renvoie l’en-tête de requête avec le nom spécifié. |
 | queryParam | `string` | Renvoie le paramètre de requête avec le nom spécifié. |
 | reqCookie | `string` | Renvoie le cookie avec le nom spécifié. |
