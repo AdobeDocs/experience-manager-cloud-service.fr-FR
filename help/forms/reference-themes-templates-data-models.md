@@ -1,13 +1,13 @@
 ---
-title: Comment obtenir des thèmes de référence et des modèles pour les formulaires AEM ?
+title: Comment obtenir des thèmes et des modèles de référence pour les formulaires AEM ?
 description: AEM Forms fournit des exemples de thèmes de formulaires adaptatifs, de modèles et de modèles de données de formulaire pour vous aider à créer rapidement des formulaires.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -17,13 +17,15 @@ ht-degree: 84%
 | Application | Lien de l’article |
 | -------- | ---------------------------- |
 | Formulaire adaptatif basé sur les composants principaux | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) |
-| Formulaire adaptatif basé sur des composants de base | Cet article |
+| Formulaire adaptatif basé sur les composants de base | Cet article |
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 AEM Forms as a Cloud Service fournit plusieurs thèmes de référence, modèles et modèle de données de formulaire (FDM) pour vous aider à commencer rapidement la création de Forms adaptatif. Vous pouvez télécharger le [package de contenu de référence du portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) et utiliser la fonction [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) dans votre environnement de production, de développement ou de développement local pour envoyer ces ressources de référence à votre environnement.
 
-Les thèmes, modèles et modèle de données de formulaire (FDM) incluent le module de contenu de référence :
+Les thèmes, modèles et modèle de données de formulaire (FDM) inclus dans le package de contenu de référence sont les suivants :
 
 
 | Thèmes | Modèles | Modèle de données de formulaire (FDM) |
@@ -122,7 +124,7 @@ Les formulaires adaptatifs peuvent ainsi interagir avec les serveurs Microsoft D
 * Demandez des données aux serveurs Microsoft Dynamics 365 et Salesforce et préremplissez des formulaires adaptatifs.
 * Lisez des données à partir des serveurs Microsoft Dynamics 365 et Salesforce.
 
-Vous pouvez obtenir le modèle de données de formulaire suivant (FDM) en installant le [module de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
+Vous pouvez obtenir le modèle de données de formulaire (FDM) suivant en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * Microsoft® Dynamics 365
 * Salesforce

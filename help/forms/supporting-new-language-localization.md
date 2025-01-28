@@ -1,19 +1,21 @@
 ---
-title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif en fonction des composants de base ?
-description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour plus de langues, à l’exception de celui fourni d’usine.
+title: Comment ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif basé sur les composants de base ?
+description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régionaux pour d’autres langues en dehors de celle prête à l’emploi.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 83%
+ht-degree: 80%
 
 ---
 
 # Prise en charge de nouveaux paramètres régionaux pour la localisation des formulaires adaptatifs {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 
 | Version | Lien de l’article |
@@ -30,11 +32,11 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 * **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, les étiquettes, les noms de champ, les messages d’erreur et les descriptions d’aide. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Dictionnaires globaux** Il existe deux dictionnaires globaux, gérés en tant qu’objets JSON, dans la bibliothèque cliente AEM. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous trouverez ces dictionnaires à l’adresse `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Ces emplacements contiennent des dossiers distincts pour chaque paramètre régional. Comme les dictionnaires globaux ne sont pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque langue permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
+* **Dictionnaires globaux** La bibliothèque cliente AEM contient deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous trouverez ces dictionnaires à l’adresse `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Ces emplacements contiennent des dossiers distincts pour chaque paramètre régional. Comme les dictionnaires globaux ne sont pas mis à jour fréquemment, la conservation de fichiers JavaScript distincts pour chaque paramètre régional permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
 
 ## Ajouter la prise en charge de nouveaux paramètres régionaux {#add-support-for-new-locales}
 
-Effectuez les étapes suivantes pour ajouter la prise en charge d’un nouveau paramètre régional :
+Pour ajouter la prise en charge d’un nouveau paramètre régional, procédez comme suit :
 
 1. [Ajoutez la localisation pour les paramètres régionaux non pris en charge](#add-localization-support-for-non-supported-locales)
 1. [Utilisez les paramètres régionaux ajoutés dans Adaptive Forms](#use-added-locale-in-af)
@@ -43,7 +45,7 @@ Effectuez les étapes suivantes pour ajouter la prise en charge d’un nouveau p
 
 AEM Forms prend actuellement en charge la localisation du contenu de formulaire adaptatif en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésl (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR).
 
-Pour ajouter la prise en charge d’un nouveau paramètre régional au runtime Adaptive Forms :
+Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’exécution du Forms adaptatif :
 
 1. [Clonez votre référentiel](#clone-the-repository)
 1. [Ajoutez des paramètres régionaux au service GuideLocalizationService](#add-a-locale-to-the-guide-localization-service)
@@ -71,7 +73,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional au runtime A
 1. Dans le dossier UI.content, créez le dossier `etc/clientlibs`.
 1. Ensuite, créez un dossier appelé `locale-name` sous `etc/clientlibs` pour servir de conteneur pour les bibliothèques clientes xfa et af clientlibs.
 
-##### 3.1 Ajout de la bibliothèque cliente XFA pour un paramètre régional dans un dossier locale-name
+##### 3.1 Ajouter la bibliothèque XFA cliente pour des paramètres régionaux dans un dossier locale-name
 
 Créez un nœud appelé `[locale-name]_xfa` et saisissez `cq:ClientLibraryFolder` sous `etc/clientlibs/locale_name`, avec la catégorie `xfaforms.I18N.<locale>`, puis ajoutez les fichiers suivants :
 
@@ -117,12 +119,12 @@ Avant de valider les modifications dans le référentiel Git d’AEM, vous devez
 
 #### 5. Valider les modifications dans le référentiel et déployer le pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Validez les modifications dans le référentiel GIT après l’ajout d’une prise en charge des paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
+Validez les modifications dans le référentiel GIT après l’ajout d’une prise en charge de paramètres régionaux. Déployez votre code à l’aide du pipeline de pile pleine. Découvrez [comment configurer un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) pour ajouter une nouvelle prise en charge de paramètres régionaux.
 Une fois le pipeline terminé, le nouveau paramètre régional ajouté apparaît dans l’environnement AEM.
 
 ### Utiliser des paramètres régionaux ajoutés dans les formulaires adaptatifs {#use-added-locale-in-af}
 
-Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptatif à l’aide des paramètres régionaux nouvellement ajoutés :
+Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptatif à l’aide du paramètre régional nouvellement ajouté :
 
 1. Connectez-vous à votre instance de création AEM.
 1. Accédez à **Formulaires** > **Formulaires et documents**.
@@ -148,11 +150,11 @@ Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vo
 S’il n’existe pas de bibliothèque cliente pour le paramètre régional nécessaire, il cherche une bibliothèque cliente correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (anglais Afrique du Sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 
-Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire correspondant au paramètre régional requis est introuvable, il utilise le dictionnaire correspondant à la langue dans laquelle le formulaire adaptatif est créé.
+Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif est créé.
 
 En l’absence d’informations de paramètres régionaux, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
-Procurez-vous un [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge de nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans le paramètre régional requis.
+Obtenez un [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge de nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans le paramètre régional requis.
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 

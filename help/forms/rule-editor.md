@@ -1,20 +1,22 @@
 ---
-title: Comment utiliser l’éditeur de règles pour ajouter des règles aux champs de formulaire pour ajouter un comportement dynamique et créer une logique complexe à un formulaire adaptatif ?
+title: Comment utiliser l’éditeur de règles pour ajouter des règles aux champs de formulaire afin d’ajouter un comportement dynamique et de créer une logique complexe à un formulaire adaptatif ?
 description: L’éditeur de règles de Forms adaptatif vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires sans codage ni script.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # Ajout de règles à un formulaire adaptatif {#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -44,7 +46,7 @@ Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peu
 
 {{rule-editor-diff}}
 
-## Compréhension d’une règle {#understanding-a-rule}
+## Présentation d’une règle {#understanding-a-rule}
 
 Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou `False`) renvoyée par l’évaluation d’une condition.
 
@@ -64,7 +66,7 @@ Les types de règles Afficher, Masquer, Activer, Désactiver, Définir la valeur
 >
 >Les types de règles disponibles, y compris les conditions et actions que vous définissez dans l’éditeur de règles, dépendent également du type d’objet de formulaire sur lequel vous créez une règle. L’éditeur de règles affiche uniquement les types de règle et les options valides lors de la création des instructions de condition et d’action pour un type particulier d’objet de formulaire. Par exemple, les types de règle Valider, Définir la valeur de, Activer et Désactiver ne s’affichent pas pour un objet de panneau.
 
-Pour plus d’informations sur les types de règle disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règle disponibles dans l’éditeur de règles](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Pour plus d’informations sur les types de règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 ### Recommandations pour la sélection d’un concept de règle {#guidelines-for-choosing-a-rule-construct}
 
@@ -98,7 +100,7 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 * **A sélectionné :** renvoie la valeur True lorsque l’utilisateur sélectionne une option donnée pour une case à cocher, une liste déroulante, un bouton radio.
 * **Est initialisé (événement) :** renvoie la valeur True si un objet de formulaire est généré dans le navigateur.
 * **Est modifié (événement) :** renvoie la valeur True si l’utilisateur modifie la valeur saisie ou l’option sélectionnée pour un objet de formulaire.
-* **Navigation(event):** renvoie true (vrai) lorsque l’utilisateur clique sur un objet de navigation. Les objets de navigation sont utilisés pour passer d’un panneau à l’autre.
+* **Navigation(event) :** renvoie la valeur True lorsque l’utilisateur clique sur un objet de navigation. Les objets de navigation sont utilisés pour passer d’un panneau à l’autre.
 * **Fin d’étape (événement) :** renvoie la valeur True lorsqu’une étape d’une règle se termine.
 * **Envoi réussi (événement) :** renvoie la valeur True si les données ont bien été envoyées vers un modèle de données de formulaire.
 * **Erreur dans l’envoi (événement) :** renvoie la valeur True si les données n’ont pas été envoyées vers un modèle de données de formulaire.
@@ -145,15 +147,15 @@ Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effac
 
 **[!UICONTROL Désactiver]** Désactive l’objet spécifié.
 
-**[!UICONTROL Appeler le service]** : appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous appuyez sur le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lors du choix d’un service de modèle de données de formulaire (FDM), d’autres champs s’affichent où vous pouvez mapper des objets de formulaire avec des paramètres d’entrée et de sortie pour le service spécifié. Reportez-vous à l’exemple de règle pour appeler des services de modèle de données de formulaire.
+**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lors du choix d’un service de modèle de données de formulaire (FDM), des champs supplémentaires permettant de mapper des objets de formulaire avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent. Reportez-vous à l’exemple de règle pour appeler des services de modèle de données de formulaire.
 
 Outre le service de modèle de données de formulaire, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
-**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir cette valeur par une chaîne, la valeur d’un autre objet, la valeur calculée avec une expression ou une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous choisissez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire (FDM) sur votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper des objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié s’affichent.
+**[!UICONTROL Définir la valeur de]** Calcule et définit la valeur de l’objet spécifié. Vous pouvez définir cette valeur par une chaîne, la valeur d’un autre objet, la valeur calculée avec une expression ou une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous sélectionnez l’option Service web, elle affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires s’affichent dans lesquels vous pouvez mapper des objets de formulaire à des paramètres d’entrée et de sortie pour le service spécifié.
 
-Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire (FDM), voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
+Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
 Le type de règle **[!UICONTROL Définir la propriété]** permet de définir la valeur d’une propriété de l’objet spécifié en fonction d’une action de condition. Vous pouvez définir la propriété sur l’une des options suivantes :
 * visible (booléen)
@@ -169,7 +171,7 @@ Le type de règle **[!UICONTROL Définir la propriété]** permet de définir la
 * valid (booléen)
 * errorMessage (chaîne)
 
-Par exemple, il vous permet de définir des règles pour ajouter dynamiquement des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
+Elle permet, par exemple, de définir des règles pour ajouter dynamiquement des cases à cocher au formulaire adaptatif. Pour définir une règle, vous pouvez utiliser une fonction personnalisée, un objet de formulaire ou une propriété d’objet.
 
 ![Définir la propriété](assets/set_property_rule_new1.png)
 
@@ -447,7 +449,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -742,11 +744,11 @@ Vous pouvez effectuer les actions suivantes sur les règles :
 * **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième positions depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.svg) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
-* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionnez **[!UICONTROL Modifier]** pour ouvrir la règle sélectionnée dans l’éditeur de règles <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
+* **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionnez **[!UICONTROL Modifier]** pour afficher la règle sélectionnée dans l’éditeur de règles <!-- in visual  or code editor mode depending on the mode used to create the rule -->.
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/Désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule.png)
 
@@ -756,7 +758,7 @@ Vous pouvez copier-coller une règle d’un champ à d’autres champs similaire
 
 Pour copier-coller des règles, procédez comme suit :
 
-1. Sélectionnez l’objet de formulaire à partir duquel vous souhaitez copier une règle, puis, dans la barre d’outils du composant, sélectionnez ![modifier la règle](assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
+1. Sélectionnez l’objet de formulaire à partir duquel vous souhaitez copier une règle puis, dans la barre d’outils des composants, sélectionnez ![edit-rules](assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
 
    ![copy rule](assets/copyrule.png)
 
@@ -822,7 +824,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Appeler service de modèle de données de formulaire {#invoke}
 
-Imaginons un service Web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire (FDM) à l’aide du service Web comme source de données. Ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service apparaît dans l’onglet Services du modèle de données de formulaire (FDM). Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies par l’utilisateur pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
+Imaginons un service web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur ou de la demandeuse comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire à l’aide du service web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies par l’utilisateur pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
 
 La règle ci-dessous indique comment configurer l’action Appel du service pour accomplir l’exemple de scénario.
 

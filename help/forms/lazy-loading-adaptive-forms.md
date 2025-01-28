@@ -1,20 +1,22 @@
 ---
-title: Comment améliorer les performances des formulaires volumineux avec chargement différé ?
+title: Comment améliorer les performances des formulaires volumineux avec le chargement différé ?
 description: Découvrez comment améliorer les performances des formulaires volumineux avec le chargement différé. Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en différant l’initialisation et le chargement des fragments des formulaires jusqu’à ce qu’ils soient visibles.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 92%
+ht-degree: 88%
 
 ---
 
 # Amélioration des performances des formulaires volumineux avec le chargement différé{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -24,7 +26,7 @@ ht-degree: 92%
 
 ## Introduction au chargement différé {#introduction-to-lazy-loading}
 
-Lorsque les formulaires sont volumineux et complexes et qu’ils contiennent des centaines, voire des milliers de champs, le délai de réponse expérimenté par les utilisateurs est long pour le rendu du formulaire au moment de l’exécution. Pour réduire le temps de réponse, le Forms adaptatif vous permet de diviser les formulaires en fragments logiques et de les configurer pour différer l’initialisation ou le chargement des fragments jusqu’à ce que le fragment soit visible. Il s’agit du chargement différé. En outre, les fragments configurés pour un chargement différé sont déchargés lorsque l’utilisateur accède à d’autres sections du formulaire et ne sont donc plus visibles.
+Lorsque les formulaires sont volumineux et complexes et qu’ils contiennent des centaines, voire des milliers de champs, le délai de réponse expérimenté par les utilisateurs est long pour le rendu du formulaire au moment de l’exécution. Pour réduire le temps de réponse, le Forms adaptatif permet de diviser les formulaires en fragments logiques et de les configurer de manière à différer l’initialisation ou le chargement des fragments jusqu’à ce que le fragment soit visible. Il s’agit du chargement différé. En outre, les fragments configurés pour un chargement différé sont déchargés lorsque l’utilisateur accède à d’autres sections du formulaire et ne sont donc plus visibles.
 
 Découvrons d’abord les exigences et les étapes préparatoires avant de configurer le chargement différé.
 
@@ -52,7 +54,7 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et sélectionnez ![configure](assets/configure-icon.svg).
+1. Sélectionnez le fragment de formulaire adaptatif et sélectionnez ![configurer](assets/configure-icon.svg).
 1. Dans la barre latérale, activez **[!UICONTROL Chargement différé du fragment]** et sélectionnez **Terminé**.
 
    ![Activation du chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
@@ -62,7 +64,7 @@ Suivez les étapes ci-après pour activer le chargement différé sur un fragmen
 Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme globales, de manière à pouvoir les utiliser dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
 
 1. Ouvrez le fragment de formulaire adaptatif en mode création.
-1. Sélectionnez le champ dont vous souhaitez marquer la valeur comme globale, puis sélectionnez ![configure](assets/configure-icon.svg).
+1. Sélectionnez le champ dont vous souhaitez marquer la valeur comme globale, puis sélectionnez ![configurer](assets/configure-icon.svg).
 1. Dans la barre latérale, activez **[!UICONTROL Utiliser la valeur pendant le chargement différé]**.
 
    ![Champ de chargement différé dans la barre latérale](assets/enable-lazy-loading.png)
@@ -73,7 +75,7 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
-* Adobe recommande d’utiliser un Forms adaptatif basé sur un schéma XSD plutôt qu’un Forms adaptatif basé sur XFA pour configurer le chargement différé sur les formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
+* Adobe recommande d’utiliser le Forms adaptatif basé sur un schéma XSD plutôt que le Forms adaptatif basé sur XFA pour configurer le chargement différé des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
 * Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilisent **[!UICONTROL Réactif -tout sur une page sans disposition de navigation]** pour le panneau racine. En raison de la configuration de la disposition réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Vous risqueriez également de causer une baisse des performances.
 * Il est recommandé de ne pas configurer le chargement différé sur des fragments du premier panneau s’affichant au chargement du formulaire adaptatif.
 * Le chargement différé est pris en charge jusqu’à deux niveaux dans la hiérarchie de fragment.

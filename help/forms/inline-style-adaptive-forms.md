@@ -1,20 +1,22 @@
 ---
 title: Comment appliquer des styles intégrés aux composants de formulaire adaptatif ?
-description: Découvrez comment appliquer des styles personnalisés à un formulaire adaptatif. Vous pouvez également appliquer des propriétés CSS intégrées à des composants individuels d’un formulaire adaptatif.
+description: Découvrez comment appliquer des styles personnalisés à un formulaire adaptatif. Vous pouvez également appliquer des propriétés CSS intégrées sur les composants individuels d’un formulaire adaptatif.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
 # Styles intégrés des composants de formulaire adaptatif {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -111,9 +113,9 @@ En suivant les étapes ci-dessus, vous pouvez sélectionner et mettre en forme d
 
 ## Copie et collage de styles {#copy-paste-styles}
 
-Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. En mode **[!UICONTROL Style]** , sélectionnez le composant et sélectionnez l’icône Copier ![Copier](assets/property-copy-icon.svg).
+Vous pouvez également copier un style et le coller d’un composant à un autre dans un formulaire adaptatif. En mode **[!UICONTROL Style]**, sélectionnez le composant, puis sélectionnez l’icône Copier ![Copier](assets/property-copy-icon.svg).
 
-Sélectionnez l’autre composant du même type et cliquez sur l’icône Coller ![Copier](assets/Smock_Paste_18_N.svg) pour coller le style copié. Vous pouvez également sélectionner l’icône Effacer le style ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
+Sélectionnez l’autre composant du même type et sélectionnez l’icône Coller ![Copier](assets/Smock_Paste_18_N.svg) pour coller le style copié. Vous pouvez également sélectionner l’icône Effacer le style ![Copier](assets/clear-style-icon.svg) pour effacer le style appliqué.
 
 ## Définition des styles pour les différents états d’un composant {#set-styles-for-states}
 
@@ -121,7 +123,7 @@ Vous pouvez définir des styles pour différents états d’un type de composant
 
 Pour définir la mise en forme d’un état d’un composant :
 
-1. En mode **[!UICONTROL Style]** , sélectionnez le composant et sélectionnez l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
+1. En mode **[!UICONTROL Style]**, sélectionnez le composant, puis sélectionnez l’icône Modifier ![Modifier](assets/Smock_Edit_18_N.svg).
 
 1. Sélectionnez l’état du composant à l’aide de la liste déroulante **[!UICONTROL État]**.
 
@@ -129,7 +131,7 @@ Pour définir la mise en forme d’un état d’un composant :
 
 1. Définissez la mise en forme de l’état sélectionné du composant et sélectionnez ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-Vous pouvez également simuler les états de succès et d’erreur. Sélectionnez l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler l’erreur]** .
+Vous pouvez également simuler les états de succès et d’erreur. Sélectionnez l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler une erreur]**.
 
 ![Simuler les états](assets/simulate-states.png)
 

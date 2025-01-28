@@ -1,19 +1,21 @@
 ---
 title: Comment générer un document d’enregistrement (DE) pour AEM Forms ?
-description: Découvrez comment générer un modèle de document d’enregistrement (DE) pour Forms adaptatif.
+description: Découvrez comment générer un modèle de document d’enregistrement pour le Forms adaptatif.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '4170'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
 # Générer un document d’enregistrement pour les formulaires adaptatifs
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 
 | Version | Lien de l’article |
@@ -55,7 +57,7 @@ Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez le
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les modèles XFA (fichiers XDP) disponibles sur votre ordinateur s’affichent. Sélectionnez le fichier approprié. Assurez-vous également que le même schéma (schéma de données) est utilisé pour le formulaire adaptatif et le modèle XFA sélectionné (fichier XDP).
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XDP comme modèle de document d’enregistrement. L’étape suivante consiste à [ lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
+Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XDP comme modèle de document d’enregistrement. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
 
 ## Génération d’un document d’enregistrement basé sur Acroform {#generate-an-Acroform-based-document-of-record}
 
@@ -68,7 +70,7 @@ Chargez votre PDF Adobe Acrobat (Acroform) sur votre instance AEM Forms. Suivez 
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les fichiers Acrobat PDF (Acroform) disponibles sur votre ordinateur s’affichent. Sélectionnez le fichier approprié.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-Votre formulaire adaptatif est maintenant configuré pour utiliser un Acroform comme modèle de document d’enregistrement. L’étape suivante consiste à [ lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
+Votre formulaire adaptatif est maintenant configuré pour utiliser un Acroform comme modèle de document d’enregistrement. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
 
 ## Génération automatique d’un document d’enregistrement {#auto-generate-a-document-of-record}
 
@@ -77,7 +79,7 @@ Lorsqu’un formulaire adaptatif est configuré pour générer automatiquement u
 * Les développeurs de formulaires n’ont pas à gérer manuellement les liaisons de données. Le document d’enregistrement généré automatiquement prend en charge les mises à jour des liaisons de données.
 * Les développeurs de formulaires n’ont pas à masquer manuellement les champs marqués comme exclus du document d’enregistrement. Les documents d’enregistrement générés automatiquement sont préconfigurés pour exclure ces champs.
 * L’option de génération automatique du document d’enregistrement permet de gagner du temps lors de la création d’un modèle de formulaire pour le document d’enregistrement.
-* L’option Document d’enregistrement généré automatiquement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
+* L’option de génération automatique du document d’enregistrement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
 * La génération automatique du document d’enregistrement permet de s’assurer que toute modification du formulaire se répercute immédiatement dans le document d’enregistrement.
 
 Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de générer automatiquement un document d’enregistrement :
@@ -114,7 +116,7 @@ Vous pouvez utiliser l’action de soumission de workflow Experience Manager Env
 
 Les formulaires adaptatifs et les documents correspondants des modèles d’enregistrement peuvent évoluer au fil du temps. Vous pouvez choisir d’ajouter, de supprimer ou de modifier des champs sur un formulaire adaptatif ou un modèle de document d’enregistrement.
 
-Lorsque vous modifiez un modèle de document d’enregistrement et téléchargez le modèle de document d’enregistrement modifié vers AEM Forms, l’éditeur de Forms adaptatif détecte automatiquement les liaisons modifiées et vous informe sur les composants de formulaire adaptatif qui nécessitent de nouvelles liaisons. Il vous permet d’effectuer des mises à jour incrémentielles sur un modèle de document d’enregistrement.
+Lorsque vous modifiez un modèle de document d’enregistrement et chargez le modèle de document d’enregistrement modifié vers AEM Forms, l’éditeur de Forms adaptatif détecte automatiquement les liaisons modifiées et vous informe sur les composants de formulaire adaptatif qui nécessitent de nouvelles liaisons. Il vous permet d’effectuer des mises à jour incrémentielles sur un modèle de document d’enregistrement.
 
 Par exemple, une organisation, *We.Retail*, possède un modèle de document d’enregistrement basé sur AcroForm, *we-retail-facture.pdf*. Le modèle ressemble à ce qui suit :
 
@@ -139,7 +141,7 @@ Désormais, lorsque le formulaire adaptatif est envoyé, un document d’enregis
 
 Gardez en tête les considérations et les limitations suivantes lorsque vous utilisez un document d’enregistrement pour les formulaires adaptatifs.
 
-* Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur s’affiche en tant que texte brut dans le document d’enregistrement.
+* Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur ou l’utilisatrice apparaît en tant que texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
 * La version localisée du document d’enregistrement est créée sur demande pour un paramètre régional lorsque l’utilisateur demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -286,7 +288,7 @@ Composants tabulaires des formulaires adaptatifs, comme l’en-tête, le pied de
 
 ## Modèle de base d’un document d’enregistrement {#base-template-of-a-document-of-record}
 
-Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il vous permet de personnaliser l’aspect par défaut du document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le droit d’auteur dans le pied de page du document d’enregistrement.
+Le modèle de base fournit les informations de style et d’aspect du document d’enregistrement. Il permet de personnaliser l’aspect par défaut d’un document d’enregistrement généré automatiquement. Par exemple, vous pouvez utiliser des modèles de base pour ajouter le logo de votre entreprise dans l’en-tête et les informations sur le droit d’auteur dans le pied de page du document d’enregistrement.
 
 Le gabarit de page du modèle de base est utilisé comme gabarit de modèle de document d’enregistrement. Le gabarit de page peut comporter des informations comme l’en-tête, le pied et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
 
@@ -337,10 +339,10 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 
 Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
-1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configure](assets/configure.png).
+1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configurer](assets/configure.png).
 1. Sélectionnez ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement s’affiche sous la liste déroulante Modèle.
-1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines des propriétés suivantes, ou toutes les propriétés, apparaissent dans l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’apparence du document d’enregistrement :
+1. Selon que vous sélectionnez un modèle par défaut ou un modèle personnalisé, certaines des propriétés suivantes, ou toutes les propriétés, apparaissent dans l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’apparence du document d’enregistrement :
 
    1. **Propriétés de base** :
       * **Modèle** : si vous choisissez de sélectionner un modèle personnalisé, recherchez et sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
@@ -349,7 +351,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
         >[!NOTE]
         >
-        > AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
       * **Exclure les champs masqués du document d’enregistrement** : la définition de la propriété identifie les champs masqués à exclure du document d’enregistrement.
@@ -391,7 +393,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
    </proto>
    ```
 
-1. Pour enregistrer les modifications de marque, sélectionnez **[!UICONTROL Terminé]**.
+1. Pour enregistrer les modifications d’identité graphique, sélectionnez **[!UICONTROL Terminé]**.
 
 ## Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif {#dor-support-in-adaptiveform}
 
@@ -485,7 +487,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 
 >[!NOTE]
 >
-> AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
 
 ### Utilisez un fichier XCI personnalisé dans votre environnement Forms as a Cloud Service
@@ -512,7 +514,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 ### Utilisez un fichier XCI personnalisé dans votre environnement de développement Forms as a Cloud Service local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrez le gestionnaire de configuration du SDK Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
+1. Ouvrez le gestionnaire de configuration SDK de Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
 

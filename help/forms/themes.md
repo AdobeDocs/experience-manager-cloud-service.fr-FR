@@ -1,19 +1,21 @@
 ---
-title: Comment créer et utiliser des thèmes pour mettre en forme un formulaire adaptatif ?
-description: Utilisez les thèmes de formulaire adaptatif pour mettre en forme et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
+title: Comment créer et utiliser des thèmes pour appliquer un style à un formulaire adaptatif ?
+description: Utilisez les thèmes de formulaire adaptatif pour appliquer un style et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
 # Création et utilisation des thèmes {#creating-and-using-themes}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -653,7 +655,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
     
     * **Éditeur de thèmes :**
     
-    l’éditeur de thèmes vous permet de créer des thèmes pour mettre en forme votre formulaire &lt;!-- ou communication interactive -->. Vous pouvez spécifier la mise en forme des composants dans un thème, ce qui permet d’assurer la cohérence de l’aspect entre les différents formulaires que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
+    l’éditeur de thèmes vous permet de créer des thèmes pour mettre en forme votre formulaire &lt;!-- ou communication interactive -->. Vous pouvez spécifier la mise en forme de composants dans un thème, ce qui permet d’assurer la cohérence de l’aspect dans les différents formulaires que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
     
     * **Style intégré :**
     

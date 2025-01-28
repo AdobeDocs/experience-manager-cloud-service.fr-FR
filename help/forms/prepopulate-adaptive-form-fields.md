@@ -1,20 +1,22 @@
 ---
-title: Comment préremplir les champs de formulaire adaptatif ?
-description: Pour préremplir les champs d’un formulaire adaptatif à l’aide de données existantes, les utilisateurs peuvent préremplir les informations de base d’un formulaire en se connectant à leur profil de réseau social.
+title: Comment préremplir des champs de formulaire adaptatif ?
+description: En utilisant des données existantes pour préremplir les champs d’un formulaire adaptatif, les utilisateurs et utilisatrices peuvent préremplir les informations de base dans un formulaire en se connectant avec leurs profils sociaux.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
 # Préremplissage des champs de formulaires adaptatifs{#prefill-adaptive-form-fields}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -263,7 +265,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 >[!NOTE]
 >
-> En règle générale, ne mélangez pas les champs liés et non liés s’ils sont recoupés dans les données renseignées par l’utilisateur dans les champs non liés. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
+> En règle générale, ne mélangez pas les champs liés et non liés s’ils sont croisés dans des données renseignées par l’utilisateur dans des champs non liés. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 

@@ -1,20 +1,22 @@
 ---
 title: Comment ajouter des tableaux à un formulaire adaptatif ?
-description: Utilisez le composant Tableau pour ajouter des tableaux à un formulaire adaptatif. En plus d’aider à la mise en page réactive, le composant de tableau permet d’ajouter des éléments de tableau XDP.
+description: Utilisez le composant Tableau pour ajouter des tableaux à un formulaire adaptatif. En plus de faciliter la mise en page réactive, le composant Tableau permet d’ajouter des éléments de tableau XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
 # Tableaux dans le formulaire adaptatif {#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 
 | Version | Lien de l’article |
@@ -156,7 +158,7 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes dans le tableau.
 1. Cliquez sur **Terminé**.
 
-Au moment de l’exécution ou de l’aperçu, vous voyez les boutons **+** et ![Supprimer le bouton](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une ligne.
+Lors de l’exécution ou de la prévisualisation, vous voyez les boutons **+** et ![Bouton de suppression](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une ligne.
 
 ![ajout-suppression-dynamique-de lignes](assets/add-delete-layout.png)
 

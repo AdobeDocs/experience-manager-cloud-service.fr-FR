@@ -5,25 +5,22 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 14%
+source-wordcount: '1114'
+ht-degree: 12%
 
 ---
 
 # Éditeur universel pour les Edge Delivery Services pour Forms (bloc EDS Forms)
 
+L’éditeur universel révolutionne la création de formulaires pour Adobe Edge Delivery Services (EDS) en offrant une interface What You See Is What You Get simple, visuelle et intuitive (WYSIWYG). Conçu pour les créateurs de contenu et les auteurs de formulaires, il élimine la complexité des processus de création de formulaires traditionnels et les rend accessibles même aux utilisateurs et utilisatrices n’ayant pas de connaissances techniques.
 
-L’éditeur universel est conçu pour aider les créateurs et créatrices de contenu et les auteurs et créatrices de formulaires à créer, gérer et modifier facilement des formulaires. Il offre une expérience de modification simple, visuelle et efficace axée sur les Edge Delivery Services (EDS).
+L’éditeur universel vous permet de concevoir rapidement des formulaires réactifs et interactifs à l’aide de composants préconfigurés tels que des champs de texte, des cases à cocher et des boutons radio. Son solide ensemble de fonctionnalités prend en charge des règles dynamiques, une intégration des données transparente et une personnalisation avancée, afin que chaque formulaire soit adapté à vos besoins.
 
-Avec l’éditeur universel, les utilisateurs et utilisatrices peuvent utiliser des éléments de formulaire (tels que des champs de texte, des cases à cocher et des boutons radio) pour créer des formulaires dans une interface What You See Is What You Get (WYSIWYG). L’approche WYSIWYG rend la création de formulaires intuitive et accessible, même pour les personnes sans expertise technique.
+Que vous gériez un rendu léger côté client, assuriez la compatibilité entre les navigateurs ou respectiez des normes d’accessibilité strictes, l’éditeur universel fournit une solution rationalisée pour la création et la gestion des formulaires.
 
-L’éditeur universel est spécifiquement axé sur le Edge Delivery Services (EDS). La principale force de l’éditeur universel réside dans son ensemble de fonctionnalités robustes, qui comprend des fonctionnalités avancées de création de formulaires, l’édition dynamique de règles et l’intégration transparente à diverses sources de données. Les utilisateurs et utilisatrices peuvent rapidement concevoir des formulaires réactifs à l’aide de composants préconfigurés, de modèles personnalisables et d’une bibliothèque complète d’éléments de formulaire.
-
-![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50 %, align-center}
-
-Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour garantir un rendu côté client léger, une compatibilité entre navigateurs et une stricte conformité aux normes d’accessibilité.
+![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
 ## Fonctionnalités clés de l’éditeur universel pour EDS Forms
 
@@ -36,65 +33,65 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Interface de WYSIWYG" alt="Éditeur de règles">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Éditeur de règles">
     <h3>Éditeur de règles</h3>
     <p>L’éditeur de règles permet aux utilisateurs de créer des interactions de formulaires dynamiques à l’aide de règles pilotées par les événements, de validations instantanées et de gestion des erreurs via JavaScript et JSON allégés.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Interface de WYSIWYG" alt="Mode réactif">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Mode réactif">
     <h3>Mode réactif </h3>
     <p>Concevez des formulaires qui s’adaptent de manière transparente sur les appareils (ordinateurs de bureau, tablettes et appareils mobiles). Utilisez le mode réactif pour prévisualiser et tester les formulaires pour différentes tailles d’écran.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Alt= de l’interface WYSIWYG" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Personnalisation"> 
     <h3>Personnalisation</h3>
     <p>Personalization utilise les données utilisateur pour fournir des expériences de formulaire personnalisées, en ajustant dynamiquement le contenu, la mise en page ou les options en fonction des préférences de l’utilisateur.</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Interface de WYSIWYG" alt="Éditeur de règles">
-    <h3>Test A/B</h3>
-    <p>Les tests A/B (expérimentation) permettent aux entreprises de tester différentes conceptions de formulaire, dispositions et fonctionnalités afin d’identifier les variantes les plus performantes.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Interface de WYSIWYG" alt="Intégration avec Adobe Workfront">
-    <h3> Gestion des tâches </h3>
-    <p>L’intégration à Adobe Workfront permet aux équipes de gérer les tâches de création et de maintenance des formulaires, tout en garantissant des workflows rationalisés.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Interface de WYSIWYG" alt="Services de préremplissage">
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Services de préremplissage">
     <h3>Services de préremplissage</h3>
     <p>Les services de préremplissage renseignent automatiquement les champs de formulaire avec des données utilisateur pertinentes provenant de diverses sources, ce qui réduit la saisie manuelle et améliore l’expérience utilisateur.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Interface de WYSIWYG" alt="Liaison de données">
-    <h3>Liaison de données</h3>
-    <p>La liaison de données permet des connexions directes entre les champs de formulaire et les sources de données principales, prenant en charge les mises à jour en temps réel et le mappage de données avancé pour le stockage structuré des données de réclamation.</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Interface de WYSIWYG" alt="Internationalisation/Localisation">
-    <h3>Publication/dépublication</h3>
-    <p>Contrôlez facilement la visibilité de vos formulaires : publiez ou dépubliez-les directement à partir de l’éditeur en quelques clics seulement, ce qui vous permet de gérer dynamiquement la disponibilité, l’accès des utilisateurs et utilisatrices et les mises à jour de contenu en temps réel, en vous assurant que vos formulaires sont toujours à jour et accessibles si nécessaire.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Éditeur de règles">
+    <h3>Test A/B</h3>
+    <p>Les tests A/B (expérimentation) permettent aux entreprises de tester différentes conceptions de formulaire, dispositions et fonctionnalités afin d’identifier les variantes les plus performantes.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Interface de WYSIWYG" alt="Analytics et tracking">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics et tracking">
     <h3>Analytics et tracking</h3>
     <p>Obtenez des informations sur le comportement des utilisateurs, les interactions des formulaires et les taux d’envoi grâce aux analyses et au suivi intégrés pour permettre une optimisation des formulaires pilotée par les données.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interface de WYSIWYG" alt="Actions d’envoi">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Intégration avec Adobe Workfront">
+    <h3> Gestion des tâches </h3>
+    <p>L’intégration à Adobe Workfront permet aux équipes de gérer les tâches de création et de maintenance des formulaires, tout en garantissant des workflows rationalisés.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Liaison de données">
+    <h3>Liaison de données</h3>
+    <p>La liaison de données permet des connexions directes entre les champs de formulaire et les sources de données principales, prenant en charge les mises à jour en temps réel et le mappage de données avancé pour le stockage structuré des données de réclamation.</p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Internationalisation/Localisation">
+    <h3>Publication/dépublication</h3>
+    <p>Contrôlez facilement la visibilité de vos formulaires : publiez ou dépubliez-les directement à partir de l’éditeur en quelques clics seulement, ce qui vous permet de gérer dynamiquement la disponibilité et les mises à jour de contenu en temps réel.</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Actions d’envoi">
     <h3>Actions d’envoi</h3>
     <p>Les actions Envoyer prennent en charge l’intégration du serveur principal, la logique d’envoi conditionnel, les points d’entrée sécurisés et les préprocesseurs, ce qui simplifie les workflows d’envoi.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Interface de WYSIWYG" alt="Gestion des tâches">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="Gestion des tâches">
     <h3>Composants personnalisés</h3>
     <p>Les composants personnalisés permettent aux développeurs et aux développeuses d’étendre les fonctionnalités de formulaire en créant des éléments uniques adaptés à des cas d’utilisation organisationnels spécifiques.</p>
   </div>
@@ -102,17 +99,17 @@ Les fonctionnalités de l’éditeur universel sont soigneusement conçues pour 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Interface de WYSIWYG" alt="Personnalisation de l’éditeur">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Personnalisation de l’éditeur">
     <h3>Personnalisation de l’éditeur</h3>
     <p>Les développeurs et développeuses peuvent étendre les fonctionnalités de l’éditeur par le biais d’extensions d’interface utilisateur, permettant des solutions personnalisées qui répondent à des besoins organisationnels spécifiques.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Interface de WYSIWYG" alt="Incorporation de Forms">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incorporation de Forms">
     <h3>Incorporation de Forms</h3>
     <p>Incorporez des formulaires directement dans des pages Sites Edge Delivery Services à l’aide du composant intégré de l’éditeur universel pour une expérience utilisateur fluide.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Interface de WYSIWYG" alt="Composants personnalisés">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Composants personnalisés">
     <h3>Configuration de remerciement</h3>
     <p>Personnalisez facilement le message ou la page d’accusé de réception affiché pour les utilisateurs après l’envoi réussi du formulaire.
     </p>
@@ -284,8 +281,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Intégration
 
-Pour activer l’éditeur universel et l’éditeur de règles pour votre environnement ou pour demander des fonctionnalités supplémentaires telles que le portail Forms, le document d’enregistrement, l’intégration d’Adobe Sign ou la prise en charge linguistique de droite à gauche, il vous suffit d’envoyer un courrier électronique à l’adresse [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle avec votre demande.
+Pour activer l’éditeur universel et ses fonctionnalités avancées telles que l’éditeur de règles, écrivez-nous à l’adresse aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel . L’équipe d’Adobe est là pour vous aider à transformer votre expérience de création de formulaires.
 
+## Questions fréquentes
+
+**Q. Qui peut utiliser l’éditeur universel ?**
+L’éditeur universel est conçu pour un large public, notamment :
+
+* Les créateurs et créatrices de contenu qui souhaitent créer des formulaires attrayants visuellement.
+* Développeurs et développeuses ayant besoin de fonctionnalités de personnalisation et d’intégration avancées.
+* Entreprises à la recherche de solutions de formulaires évolutives, sécurisées et conformes.
+
+**Q : Puis-je intégrer des formulaires créés avec l’éditeur universel dans mes systèmes existants ?**
+Absolument. L’éditeur universel prend en charge la liaison de données transparente avec les systèmes principaux, ce qui permet des mises à jour en temps réel et un mappage de données avancé. Il s’intègre également à des outils tels qu’Adobe Workfront pour la gestion des tâches et prend en charge les points d’entrée sécurisés pour les workflows d’envoi de données.
+
+**Q : Est-il possible de personnaliser les composants de formulaire ?**
+Oui, l’éditeur universel permet aux développeurs et aux développeuses de créer des composants personnalisés et adaptés aux besoins spécifiques de l’entreprise. De plus, vous pouvez étendre les fonctionnalités de l’éditeur par le biais d’extensions d’interface utilisateur et de workflows personnalisés.
+
+**Q : Comment l’éditeur universel gère-t-il l’accessibilité ?**
+L’éditeur universel est conçu dans le strict respect des normes d’accessibilité, y compris les directives d’accessibilité du contenu web (WCAG). Cela permet de s’assurer que les formulaires sont utilisables par les personnes en situation de handicap, offrant ainsi une expérience inclusive.
+
+**Q : Quel type d’analyse puis-je obtenir des formulaires ?**
+L’éditeur universel comprend des outils d’analyse et de suivi intégrés pour surveiller les interactions utilisateur, les taux d’envoi de formulaires et les mesures de conversion. Ces informations vous aident à optimiser vos formulaires pour de meilleures performances.
 
 
 ## Commencer à créer des formulaires

@@ -7,16 +7,18 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2323'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
-# Ajout de gestionnaires d’erreurs personnalisés dans AEM Forms adaptatif {#error-handlers-in-adaptive-form}
+# Ajout de gestionnaires d’erreur personnalisés dans AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -180,7 +182,7 @@ En utilisant l’action [Appeler un service de l’éditeur de règles](https://
 
 >[!NOTE]
 >
-> * Pour utiliser des gestionnaires d’erreurs avec l’action de service Invoke de l’éditeur de règles, configurez Adaptive Forms avec un modèle de données de formulaire (FDM).
+> * Pour utiliser des gestionnaires d’erreurs avec l’action Appel du service de l’éditeur de règles, configurez le Forms adaptatif avec un modèle de données de formulaire (FDM).
 > * Un gestionnaire d’erreurs par défaut est fourni pour afficher les messages d’erreur sur les champs si la réponse à l’erreur se trouve dans le schéma standard. Vous pouvez également appeler le gestionnaire d’erreurs par défaut à partir de la fonction de gestionnaire d’erreur personnalisé.
 
 L’éditeur de règles vous permet d’effectuer les opérations suivantes :
@@ -225,7 +227,7 @@ Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formu
 1. [Ajout d’une fonction personnalisée pour le gestionnaire d’erreurs](#1-add-the-custom-function-for-the-error-handler)
 2. [Utilisez l’éditeur de règles pour configurer le gestionnaire d’erreurs personnalisé.](#use-custom-error-handler)
 
-#### 1. Ajoutez la fonction personnalisée du gestionnaire d’erreurs.
+#### 1. Ajoutez la fonction personnalisée pour le gestionnaire d’erreurs
 
 Pour savoir comment ajouter des fonctions personnalisées, cliquez sur [Créer des fonctions personnalisées dans un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
@@ -237,7 +239,7 @@ Pour savoir comment ajouter des fonctions personnalisées, cliquez sur [Créer d
 4. Create a folder named `js`.
 5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
 
-1. Ajoutez le code ci-dessous pour le gestionnaire d’erreurs personnalisé dans le fichier JavaScript, par exemple, `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
+1. Ajoutez le code ci-dessous pour le gestionnaire d’erreurs personnalisé dans le fichier JavaScript, par exemple `function.js`. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.
 Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les en-têtes, reçus du point d’entrée du service REST, dans la console du navigateur.
 
    ```javascript
@@ -258,15 +260,15 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
 
    >[!NOTE]
    >
-   > * Pour appeler le gestionnaire d’erreurs par défaut à partir de votre gestionnaire d’erreurs personnalisé, la ligne suivante de l’exemple de code est utilisée : `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-   > * Dans le fichier `.content.xml`, ajoutez les propriétés `allowProxy` et `categories` pour utiliser la bibliothèque cliente du gestionnaire d’erreurs personnalisée dans un formulaire adaptatif.
+   > * Pour appeler le gestionnaire d’erreurs par défaut depuis votre gestionnaire d’erreurs personnalisé, la ligne suivante de l’exemple de code est utilisée : `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * Dans le fichier `.content.xml`, ajoutez les propriétés `allowProxy` et `categories` pour utiliser la bibliothèque cliente de gestionnaire d’erreurs personnalisé dans un formulaire adaptatif.
    >
    >   * `allowProxy = [Boolean]true`
    >   * `categories= customfunctionsdemo`
    >       Par exemple, dans ce cas, [custom-errorhandler-name] est fourni comme `customfunctionsdemo`.
 
 
-1. Ajoutez, validez et poussez les modifications dans le référentiel.
+1. Ajoutez, validez et transmettez les modifications dans le référentiel.
 
 <!--
 
@@ -411,7 +413,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## Voir également {#see-also}
 
 {{see-also}}
-* [Création et utilisation de gestionnaires d’erreurs personnalisés dans Forms adaptatif (composants principaux)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Création et utilisation de gestionnaires d’erreur personnalisés dans le Forms adaptatif (composants principaux)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 

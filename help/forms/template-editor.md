@@ -4,16 +4,18 @@ description: Créez des modèles de formulaire adaptatif en définissant la stru
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
 # Création d’un modèle de formulaire adaptatif {#adaptive-form-templates}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -40,8 +42,8 @@ Experience Manager met à disposition un dossier global pour organiser les modè
 
 Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour créer un modèle :
 
-1. Sélectionnez **[!UICONTROL Créer]** dans le dossier que vous avez créé.
-1. Dans la section Choisir un type de modèle , sélectionnez **[!UICONTROL Modèle de formulaire adaptatif]** et sélectionnez **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Créer]** à l’intérieur du dossier que vous avez créé.
+1. Dans la section Choisir un type de modèle, sélectionnez **[!UICONTROL Modèle de formulaire adaptatif]** puis **[!UICONTROL Suivant]**.
 
 1. Dans la section Détails du modèle, indiquez un titre de modèle, puis sélectionnez **[!UICONTROL Créer]**.
 Vous pouvez également fournir une description.
@@ -107,7 +109,7 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
 
-Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![ ](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
+Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
 
 
 Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
@@ -169,7 +171,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans un éditeur de modèles. Il permet aux créateurs et aux créatrices de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un créateur ou une créatrice de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Il permet aux créateurs et aux créatrices de formulaires de réglementer l’utilisation du schéma et de gagner du temps. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
 
-1. Sélectionnez **[!UICONTROL Explorateur de contenu]** situé sur le côté gauche.
+1. Sélectionnez **[!UICONTROL Explorateur de contenu]** sur le côté gauche.
 1. Accédez au conteneur de formulaires **[!UICONTROL Paramètre]**.
 1. Sélectionnez **[!UICONTROL Modèle de données]**.
 1. Choisissez votre modèle de données de formulaire via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.

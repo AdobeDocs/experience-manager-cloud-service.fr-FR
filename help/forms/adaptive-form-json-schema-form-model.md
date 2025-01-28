@@ -1,14 +1,14 @@
 ---
 title: Comment concevoir un schéma JSON pour un formulaire adaptatif ?
-description: Découvrez comment créer un schéma JSON pour un formulaire adaptatif et créer un formulaire adaptatif basé sur le schéma pour produire des données de réclamation de schéma.
+description: Découvrez comment créer un schéma JSON pour un formulaire adaptatif et comment créer un formulaire adaptatif basé sur le schéma afin de produire des données conformes au schéma.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,9 @@ ht-degree: 93%
 | Composants principaux | [Cliquez ici](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
 | Foundation | Cet article |
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -44,7 +46,7 @@ Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suiva
 * La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON dans le formulaire adaptatif.
 * Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
 * Au moment de l’envoi, les données saisies par l’utilisateur ou l’utilisatrice sont envoyées au format JSON approprié pour le schéma associé.
-* Vous pouvez également créer le formulaire en fonction du schéma JSON, conformément aux spécifications de la version [2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* Vous pouvez également créer le formulaire basé sur le schéma JSON conformément aux spécifications de la version [2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
 
@@ -450,9 +452,9 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 
 >[!ENDTABS]
 
-Les modifications clés des spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
-* L’ID est déclaré `$id`
-* definitions est déclaré `$defs`
+Les principales modifications apportées aux spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
+* L’ID est déclaré comme `$id`
+* les définitions sont déclarées comme `$defs`
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 

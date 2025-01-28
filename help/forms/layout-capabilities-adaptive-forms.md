@@ -1,19 +1,21 @@
 ---
-title: Quelles sont les fonctionnalités de mise en page d’Adaptive Forms ?
+title: Quelles sont les fonctionnalités de disposition d’Adaptive Forms ?
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '858'
-ht-degree: 91%
+ht-degree: 87%
 
 ---
 
 # Fonctions de mise en page des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 
 | Version | Lien de l’article |
@@ -74,11 +76,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec un style de navigation en accordéon. Cette disposition permet également de créer des panneaux reproductibles. Ces panneaux permettent d’ajouter ou de supprimer des panneaux de manière dynamique en fonction de vos besoins. Vous pouvez définir le nombre minimal et maximal de répétitions d’un panneau. Le titre du panneau peut également être déterminé de manière dynamique en fonction des informations fournies dans les éléments du panneau.
 
-L’expression récapitulative peut être utilisée pour afficher les valeurs fournies par l’utilisateur dans le titre du panneau réduit.
+Une expression récapitulative peut être utilisée pour afficher les valeurs fournies par l’utilisateur dans le titre du panneau réduit.
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/accordion-layout.png)
 
-### [!UICONTROL  Disposition avec onglets : les onglets s’affichent sur la gauche]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Disposition avec onglets - Les onglets s’affichent à gauche]{#tabbed-layout-tabs-appear-on-the-left}
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec une navigation par onglets. Les onglets sont placés à gauche du contenu du panneau.
 
@@ -112,7 +114,7 @@ Cette disposition, comme son nom l’indique, affiche les titres des panneaux ai
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout1.png)
 
-### [!UICONTROL  Disposition sans titres de panneau dans l’en-tête de formulaire]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire]{#layout-without-panel-titles-in-the-form-header}
 
 Cette disposition, comme son nom l’indique, affiche uniquement le menu de navigation et la barre de navigation sans les titres des panneaux. Cette disposition fournit également des icônes Suivant et Précédent pour la navigation.
 

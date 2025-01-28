@@ -1,20 +1,22 @@
 ---
 title: Comment réutiliser les propriétés de métadonnées d’un formulaire adaptatif ?
-description: Découvrez comment réutiliser efficacement un formulaire adaptatif existant pour en créer un nouveau.
+description: Découvrez comment réutiliser efficacement un formulaire adaptatif existant afin d’en créer un nouveau.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
 # Réutilisation des propriétés de métadonnées d’un formulaire adaptatif {#reusing-adaptive-forms}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 
 | Version | Lien de l’article |

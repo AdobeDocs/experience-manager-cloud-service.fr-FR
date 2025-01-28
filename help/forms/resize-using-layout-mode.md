@@ -1,20 +1,22 @@
 ---
-title: Comment utiliser le mode de mise en page pour redimensionner les composants des formulaires adaptatifs ?
-description: Définissez la position des composants AEM Forms, apprenez à accéder au mode de mise en page, redimensionnez les composants, redimensionnez les panneaux et définissez la mise en page multicolonne d’un panneau.
+title: Comment utiliser le mode Disposition pour redimensionner des composants pour les formulaires adaptatifs ?
+description: Définissez la position des composants AEM Forms, apprenez à accéder au mode de disposition, à redimensionner les composants, à redimensionner les panneaux et à définir la disposition à plusieurs colonnes d’un panneau.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
-# Utilisation du mode Mise en page pour redimensionner les composants d’Adaptive Forms {#use-layout-mode-to-resize-components}
+# Utilisation du mode Mise en page pour redimensionner les composants du Forms adaptatif {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
+>[!NOTE]
+>
+> Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -110,7 +112,7 @@ Pour activer la nouvelle grille réactive, procédez comme suit :
 
 ### Incorporation d’un ancien fragment dans un formulaire adaptatif avec une nouvelle disposition réactive {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-La nouvelle disposition réactive du formulaire adaptatif permet d’ajouter au formulaire un fragment de formulaire adaptatif avec l’ancienne disposition réactive. La nouvelle disposition ignore toutefois les propriétés de disposition déjà définies pour les composants utilisés dans le fragment. Vous pouvez passer en mode Mise en page pour définir les propriétés de disposition des composants utilisés dans le fragment.
+La nouvelle disposition réactive pour le formulaire adaptatif vous permet d’ajouter au formulaire un fragment de formulaire adaptatif avec l’ancienne disposition réactive. La nouvelle disposition ignore toutefois les propriétés de disposition déjà définies pour les composants utilisés dans le fragment. Vous pouvez passer en mode Mise en page pour définir les propriétés de disposition des composants utilisés dans le fragment.
 
 ### Incorporation d’un fragment avec une nouvelle disposition réactive dans un ancien formulaire adaptatif {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
@@ -125,7 +127,7 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de formulaires dans le volet de gauche et sélectionnez **[!UICONTROL Stratégie.]**
+1. Sélectionnez le conteneur de formulaires dans le volet de gauche, puis sélectionnez **[!UICONTROL Politique.]**
 
    ![Désactivation du mode Disposition](assets/policy_disable_layout_mode.png)
 
