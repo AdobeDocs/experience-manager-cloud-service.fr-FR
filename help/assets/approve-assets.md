@@ -1,44 +1,55 @@
 ---
-title: Approbation des ressources dans Experience Manager
-description: Découvrez comment approuver des ressources dans [!DNL Experience Manager].
+title: Approbation de ressources dans Experience Manager
+description: Découvrez comment approuver des ressources dans  [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 5%
+source-wordcount: '1115'
+ht-degree: 12%
 
 ---
 
-# Approuver des ressources dans [!DNL Experience Manager]
+# Approbation de ressources dans [!DNL Experience Manager]
 
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!AVAILABILITY]
 >
->Le guide des fonctionnalités de Dynamic Media avec OpenAPI est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>Le guide de Dynamic Media avec fonctionnalités OpenAPI est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE Dynamic Media avec OpenAPI Feature PDF ]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guide PDF de Dynamic Media avec fonctionnalités OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Les responsables de marques et les marketeurs contrôlent strictement les ressources de marque. Seule la version approuvée et la dernière version de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
+Les chefs de marque et les marketeurs contrôlent strictement les ressources de la marque. Seule la version approuvée et la plus récente de la ressource peut être utilisée, ce qui garantit la cohérence de la marque sur tous les canaux et applications.
 
-Vous pouvez approuver des ressources dans AEM Assets afin de rationaliser la gestion des ressources, en veillant à ce que le processus de gestion des ressources soit contrôlé et efficace.
+Vous pouvez approuver des ressources dans AEM Assets afin de rationaliser leur gestion, ce qui garantit un processus contrôlé et efficace de gestion des ressources.
 
 ## Avant de commencer {#pre-requisites}
 
-Vous devez avoir accès à l’as a Cloud Service AEM Assets et aux autorisations nécessaires pour modifier la propriété **[!UICONTROL État de la révision]** pour une ressource.
+Vous devez avoir accès à AEM Assets as a Cloud Service et disposer des autorisations pour modifier la propriété **[!UICONTROL Statut de révision]** d’une ressource.
 
 ## Configuration
 
-Vous devez effectuer une mise à jour unique du schéma de métadonnées applicable dans la vue d’administration avant de pouvoir approuver une ressource. Vous pouvez ignorer cette configuration pour la vue Assets. Pour configurer le schéma de métadonnées, procédez comme suit :
+Vous devez effectuer une mise à jour unique sur le schéma de métadonnées applicable dans la vue Administrateur avant de pouvoir approuver une ressource. Vous pouvez ignorer cette configuration pour la vue Assets. Pour configurer le schéma de métadonnées, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Sélectionnez le schéma de métadonnées applicable et cliquez sur **[!UICONTROL Modifier]**. <br>L’ **[!UICONTROL éditeur de formulaire de schéma de métadonnées]** s’ouvre avec l’onglet **[!UICONTROL De base]** surligné.
-1. Faites défiler l’écran vers le bas et cliquez sur **[!UICONTROL État de la révision]**.
-1. Cliquez sur l’onglet **[!UICONTROL Rules]** dans le panneau de droite.
-1. Décochez **[!UICONTROL Désactiver la modification]** et cliquez sur **[!UICONTROL Enregistrer]**.
-Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL État de la révision]** est mappé, accédez à l’onglet **[!UICONTROL Paramètres]** et affichez la valeur `./jcr:content/metadata/dam:status` dans le champ **[!UICONTROL Associer à la propriété]**.
+1. Sélectionnez le schéma de métadonnées applicable et cliquez sur **[!UICONTROL Modifier]**. <br>L’**[!UICONTROL Éditeur de formulaire de schéma de métadonnées]** s’ouvre avec l’onglet **[!UICONTROL De base]** en surbrillance.
+1. Faites défiler vers le bas et cliquez sur **[!UICONTROL Statut de révision]**.
+1. Cliquez sur l’onglet **[!UICONTROL Règles]** dans le panneau latéral droit.
+1. Décochez **[!UICONTROL Désactiver la modification]**.
+Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL Statut de la révision]** est mappé, accédez à l’onglet **[!UICONTROL Paramètres]** et affichez la valeur `./jcr:content/metadata/dam:status` dans le champ **[!UICONTROL Mapper à la propriété]**.
+1. Faites glisser et déposez un champ **[!UICONTROL Liste déroulante]** de la section **[!UICONTROL Créer le formulaire]** sur le côté droit vers la section Métadonnées du formulaire.
+1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
+   1. Remplacez **[!UICONTROL Libellé du champ]** par _Cible d&#39;approbation_.
+   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:activationTarget_.
+   1. Ajoutez les choix avec `contenthub` et `delivery` comme valeurs d’option.
+
+   >[!NOTE]
+   >
+   Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
@@ -48,69 +59,91 @@ Si vos ressources ou dossiers ont un schéma par défaut différent, veillez à 
 
 Pour approuver des ressources dans [!DNL Experience Manager Admin view], procédez comme suit :
 
-1. Sélectionnez la ou les ressources et cliquez sur **[!UICONTROL Propriétés]** dans le volet supérieur.
-1. Dans l’onglet **[!UICONTROL Basic]**, faites défiler l’écran jusqu’à **[!UICONTROL Review Status]**.
-1. Remplacez l’état de révision par **[!UICONTROL Approuvé]**.
+1. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Propriétés]** dans le volet supérieur.
+1. Dans l’onglet **[!UICONTROL De base]**, faites défiler l’écran jusqu’à **[!UICONTROL Statut de révision]**.
+1. Remplacez le statut de révision par **[!UICONTROL Approuvé]**.
    ![image](/help/assets/assets/approve-old-ui.png)
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   De même, vous pouvez approuver des ressources à l’aide de la [nouvelle vue Assets](/help/assets/manage-organize-assets-view.md).
+   De même, vous pouvez approuver des ressources à l’aide de la [ nouvelle vue Assets ](/help/assets/manage-organize-assets-view.md).
 
 ## Approbation en bloc de ressources {#bulk-approve-assets}
 
-Rationalisez votre workflow en approuvant rapidement plusieurs ressources à la fois. Vous pouvez approuver en masse des ressources afin d’accélérer le processus d’approbation, ce qui vous permet de gagner du temps et d’améliorer votre productivité.
-<br>Pour approuver des ressources en vrac dans [!DNL Experience Manager Admin view], procédez comme suit :
+Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fois. Vous pouvez approuver en bloc des ressources pour accélérer le processus d’approbation, ce qui vous permet de gagner du temps et d’améliorer la productivité.
+<br>Pour approuver des ressources en bloc dans [!DNL Experience Manager Admin view], procédez comme suit :
 
 1. Créez un dossier dans l’environnement de création (https://author-pXXX-eYYY.adobeaemcloud.com). Remplacez _XXX_ par votre ID de programme et _YYY_ par l’ID d’environnement de l’Experience Manager.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
-1. Cliquez sur **[!UICONTROL Créer]** dans le coin supérieur droit de la page.
+1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées nouvellement créé et cliquez sur **[!UICONTROL Modifier _(e)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**surligné.
-1. Faites glisser et déposez un **[!UICONTROL champ de texte d’une seule ligne]** de la section **[!UICONTROL Créer le formulaire]** dans la partie droite de la section Métadonnées dans le formulaire.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
+1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
-   1. Remplacez le **[!UICONTROL libellé du champ]** par _Assets approuvé_.
-   1. Mettez à jour la **[!UICONTROL map to property]** vers _./jcr:content/metadata/dam:status_.
-   1. Remplacez la valeur par défaut par _approved_.
+   1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
+   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:status_.
+   1. Remplacez la valeur Par défaut par _approuvé_.
 
+1. Faites glisser et déposez un champ **[!UICONTROL Liste déroulante]** de la section **[!UICONTROL Créer le formulaire]** sur le côté droit vers la section Métadonnées du formulaire.
+1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
+   1. Remplacez **[!UICONTROL Libellé du champ]** par _Cible d&#39;approbation_.
+   1. Mettez à jour **[!UICONTROL Mappez à la propriété]** sur _./jcr:content/metadata/dam:activationTarget_.
+   1. Ajoutez les choix avec `contenthub` et `delivery` comme valeurs d’option.
+
+   >[!NOTE]
+   >
+   Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
-1. Sur la page **[!UICONTROL Profils de métadonnées]** , sélectionnez le profil de métadonnées nouvellement créé.
+1. Sur la page **[!UICONTROL Profils de métadonnées]**, sélectionnez le profil de métadonnées que vous venez de créer.
 1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées au(x) dossier(s)]** dans la barre d’actions supérieure.
-1. Sélectionnez le ou les dossiers à approuver et cliquez sur **[!UICONTROL Appliquer]**.
+1. Sélectionnez le ou les dossiers à approuver, puis cliquez sur **[!UICONTROL Appliquer]**.
    <br> L’autorisation pour l’ensemble du dossier est définie pour approbation et toutes les ressources chargées dans ce dossier sont automatiquement approuvées.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)
 
 >[!NOTE]
 > 
-Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier, vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
+Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier , vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
 
-De même, pour approuver en masse des ressources dans un dossier de la vue Assets :
+De même, pour approuver en bloc des ressources dans un dossier dans la vue Assets :
 
-1. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Modifier les métadonnées en bloc]**.
+1. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Modifier les métadonnées en masse]**.
 
-1. Sélectionnez **[!UICONTROL Approuvé]** dans le champ **[!UICONTROL État]** disponible dans la section [!UICONTROL Propriétés] du volet de droite.
+1. Sélectionnez **[!UICONTROL Approuvé]** dans le champ **[!UICONTROL Statut]** disponible dans la section [!UICONTROL Propriétés] du volet de droite.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+   Si vous sélectionnez le statut comme `Approved` et si [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou [Content Hub](/help/assets/product-overview.md), ou les deux sont activés pour votre Experience Manager Assets, vous pouvez afficher les options `Delivery` et `Content Hub` disponibles dans le champ **[!UICONTROL Cible d’approbation]**.
 
-## Copie de l’URL de diffusion pour les ressources approuvées {#copy-delivery-url-approved-assets}
+   * Sélectionnez **[!UICONTROL Diffusion]** pour rendre les ressources disponibles à la fois pour Dynamic Media avec les fonctionnalités OpenAPI et Content Hub. Si Content Hub n’est pas activé, la sélection de cette option rend les ressources disponibles pour Dynamic Media avec les fonctionnalités OpenAPI uniquement.
+   * Sélectionnez **[!UICONTROL Content Hub]** pour rendre les ressources disponibles pour Content Hub.
 
-L’URL de diffusion pour toutes les ressources approuvées dans le référentiel est disponible si [!UICONTROL Dynamic Media avec les fonctionnalités OpenAPI] sont activées sur votre instance AEM as a Cloud Service.
+   ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
 
-Pour copier l’URL de diffusion d’une ressource approuvée dans le référentiel :
-
-1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Details]**.
-
-1. Cliquez sur l’icône Dynamic Media disponible dans le volet de droite.
-
-1. Sélectionnez **[!UICONTROL Dynamic Media with OpenAPI]** disponible dans le panneau **[!UICONTROL Dynamic Media]**.
-
-1. Cliquez sur **[!UICONTROL Copier l’URL]** pour copier l’URL de diffusion de la ressource.
-   ![rendus dynamiques](/help/assets/assets/dm-with-openapi-non-image-assets.png)
+   Si vous n’utilisez pas le formulaire de métadonnées par défaut et que vous ne pouvez pas afficher le champ **[!UICONTROL Cible d’approbation]**, [modifiez votre formulaire de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms) pour faire glisser le champ **[!UICONTROL Approbation de]** des composants disponibles vers votre formulaire de métadonnées et cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
    >
-   L’option de copie de l’URL de diffusion pour les ressources approuvées est disponible dans la vue Assets.
+   Si vous sélectionnez la cible de validation comme `Content Hub` dans la vue Assets d’une organisation, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
+## Copier l’URL de diffusion des ressources approuvées {#copy-delivery-url-approved-assets}
+
+L’URL de diffusion de toutes les ressources approuvées dans le référentiel est disponible si vous avez activé [!UICONTROL Dynamic Media avec les fonctionnalités OpenAPI] sur votre instance AEM as a Cloud Service.
+
+Pour copier l’URL de diffusion d’une ressource approuvée dans le référentiel :
+
+1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Détails]**.
+
+1. Cliquez sur l’icône Dynamic Media disponible dans le volet de droite.
+
+1. Sélectionnez **[!UICONTROL Dynamic Media avec OpenAPI]** disponible dans le panneau **[!UICONTROL Dynamic Media]**.
+
+1. Cliquez sur **[!UICONTROL Copier l’URL]** pour copier l’URL de diffusion de la ressource.
+   ![Rendus dynamiques](/help/assets/assets/dm-with-openapi-non-image-assets.png)
+
+   >[!NOTE]
+   >
+   L’option permettant de copier l’URL de diffusion pour les ressources approuvées est uniquement disponible dans la vue Assets.
 
 Pour plus d’informations sur les autres rendus qui s’affichent dans le panneau Dynamic Media, voir [Affichage et téléchargement des rendus Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

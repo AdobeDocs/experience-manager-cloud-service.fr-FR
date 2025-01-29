@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 95%
+source-wordcount: '1633'
+ht-degree: 75%
 
 ---
 
 # Gestion des actifs {#manage-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Vous pouvez effectuer facilement de nombreuses tâches de gestion des actifs numériques (DAM) grâce à l’interface conviviale d’[!DNL Assets view]. Une fois les ressources ajoutées, vous pouvez les rechercher, les télécharger, les déplacer, les copier, les renommer, les supprimer, les mettre à jour et les modifier.
@@ -117,7 +117,7 @@ Vous pouvez également créer des versions à partir de l’historique des versi
 
 **Autorisations requises :**  `Can Edit`, `Owner` ou les autorisations d’administrateur sur une ressource.
 
-La vue Assets vous permet de définir l’état des ressources disponibles dans le référentiel. Définissez le statut d’une ressource pour mieux gouverner et gérer la consommation en aval des ressources numériques.
+La vue Assets vous permet de définir le statut des ressources disponibles dans le référentiel. Définissez le statut d’une ressource pour mieux gouverner et gérer la consommation en aval des ressources numériques.
 
 Vous pouvez définir le statut suivant pour les ressources :
 
@@ -133,11 +133,58 @@ Pour définir le statut de la ressource :
 
 1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
 
-1. Dans l’onglet **[!UICONTROL Basic]** , sélectionnez l’état de la ressource dans la liste déroulante **[!UICONTROL Status]** . Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
 Si des fonctionnalités OpenAPI de Dynamic Media sont fournies pour votre environnement, Experience Manager Assets génère une URL publique dès que vous marquez la ressource comme `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
+
+
+### Définir la cible de validation {#set-approval-target}
+
+La vue Assets vous permet de publier des ressources approuvées dans Dynamic Media avec des fonctionnalités OpenAPI, Content Hub, ou les deux, en fonction de la valeur que vous avez définie dans le champ **Cible d’approbation** disponible sur la page Détails de la ressource.
+
+Pour définir la cible de validation :
+
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
+
+1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+
+1. Si vous sélectionnez **Approuvé** à l’étape 2, sélectionnez une cible d’approbation. Les valeurs possibles sont les suivantes : Diffusion et Content Hub.
+
+   * **Diffusion** est l’option par défaut sélectionnée dans le menu déroulant et elle publie la ressource dans [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) et [Content Hub](/help/assets/product-overview.md), si les deux sont activés pour Experience Manager Assets.
+
+   * La sélection de **Content Hub** publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
+
+   * Si vous ne sélectionnez pas d’option dans la liste déroulante, l’option par défaut activée pour votre environnement AEM as a Cloud Service est automatiquement appliquée à la ressource.
+
+
+   Pour plus d’informations sur les options disponibles, consultez [Cible d’approbation par défaut et destinations de publication pour les ressources approuvées](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media avec OpenAPI est activé, il l’est par défaut.
+
+   ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
+
+1. Spécifiez d’autres propriétés de ressource et cliquez sur **[!UICONTROL Enregistrer]**.
+
+Voici quelques autres points à noter :
+
+* Lorsque vous n’utilisez pas le formulaire de métadonnées par défaut et que vous ne pouvez pas afficher le champ **[!UICONTROL Cible d’approbation]**, [modifiez votre formulaire de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms) pour faire glisser le champ **[!UICONTROL Approbation de]** des composants disponibles vers votre formulaire de métadonnées et cliquez sur **[!UICONTROL Enregistrer]**.
+
+* Lorsque vous sélectionnez la cible de validation comme `Content Hub` dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub.
+
+#### Cible d’approbation par défaut et destinations de publication pour les ressources approuvées {#default-approval-target-options-publish-destinations}
+
+Le tableau suivant illustre les conditions préalables à l’affichage de `Approval Target` liste déroulante et de la cible d’approbation par défaut en fonction de l’activation de DM avec OpenAPI et Content Hub dans votre environnement AEM as a Cloud Service :
+
+| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination Publish |
+| --- | --- | --- | --- |---|
+| Activé | Activé | Oui | Diffusion | Dynamic Media avec OpenAPI et Content Hub |
+| Pas activé | Activé | Oui | Content Hub | Content Hub |
+| Activé | Pas activé | Oui | Diffusion | Dynamic Media avec OpenAPI |
+| Pas activé | Pas activé | Non | N/A | S/O |
 
 ### Définir la date d’expiration de ressources {#set-asset-expiration-date}
 
