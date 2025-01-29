@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 43%
+ht-degree: 93%
 
 ---
 
@@ -59,44 +59,44 @@ La prochaine version est prévue le jeudi 13 février 2025.
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
       * Les clientes et clients qui créent avec Java 11 et qui souhaitent adopter l’environnement d’exécution Java 21 *plus tôt* peuvent contacter Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **« Configurations du réseau de diffusion de contenu » renommées « Mappages de domaine » :** dans le cadre des améliorations de l’interface utilisateur dans AEM Cloud Manager, le libellé « Configurations du réseau de diffusion de contenu » est désormais renommé « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec les fonctionnalités. <!-- CMGR-64738 -->
+* **« Configurations du réseau CDN » devient « Mappages de domaine » :** dans le cadre des améliorations de l’interface d’utilisation dans AEM Cloud Manager, le libellé « Configurations du réseau CDN » devient « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec la fonctionnalité. <!-- CMGR-64738 -->
 
-  ![« Configurations du réseau CDN » devient « Mappages de domaine » dans l’interface d’utilisation](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  ![« Configurations du réseau CDN » devient « Mappages de domaine » dans l’interface d’utilisation](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
-* **Approvisionnement d’un site Edge Delivery en un clic :** Cloud Manager permet désormais aux utilisateurs disposant des autorisations et licences appropriées de créer un exemple de site de Edge Delivery Services en un seul clic. Ce processus simplifié offre les fonctionnalités automatisées suivantes :
+* **Approvisionnement d’un site Edge Delivery en un clic :** Cloud Manager permet désormais aux utilisateurs et utilisatrices disposant des autorisations et licences appropriées de créer un exemple de site de Edge Delivery Services en un seul clic. Ce processus simplifié offre les fonctionnalités automatisées suivantes :
 
-   * **Intégration GitHub** : crée automatiquement un référentiel GitHub au sein d’une organisation existante, préconfiguré avec un modèle standard pour les Edge Delivery Services.
-   * **Installation de l’application de synchronisation du code AEM** - Installe l’application de synchronisation du code AEM sur le référentiel, assurant ainsi une synchronisation et un déploiement transparents.
-   * **Configuration de Content Collaboration** : associe un dossier Google Drive désigné pour le stockage de contenu, fournissant ainsi un environnement collaboratif pour la gestion de contenu.
-   * **Publication de contenu** - Les utilisateurs peuvent désormais publier du contenu pour les sites configurés directement à partir de l’interface utilisateur de Cloud Manager, ce qui simplifie les workflows et améliore l’efficacité.
-   * **Enhanced Collaboration** - La plateforme permet aux utilisateurs d’ajouter plusieurs collaborateurs au dossier de stockage de contenu de Google Drive, ce qui facilite le travail d’équipe et les contributions de contenu.
+   * **Intégration GitHub** : crée automatiquement un référentiel GitHub au sein d’une organisation existante, préconfiguré avec un modèle standard pour Edge Delivery Services.
+   * **Installation de l’application AEM Code Sync** : installe l’application AEM Code Sync sur le référentiel, assurant ainsi une synchronisation et un déploiement transparents.
+   * **Configuration de la collaboration du contenu** : associe un dossier Google Drive désigné pour le stockage de contenu, fournissant ainsi un environnement collaboratif pour la gestion de contenu.
+   * **Publication de contenu** : les utilisateurs et utilisatrices peuvent désormais publier du contenu pour les sites approvisionnés directement à partir de l’interface d’utilisation de Cloud Manager, ce qui simplifie les workflows et améliore l’efficacité.
+   * **Collaboration améliorée** : la plateforme permet aux utilisateurs et utilisatrices d’ajouter plusieurs collaborateurs et collaboratrices au dossier de stockage de contenu de Google Drive, ce qui facilite le travail d’équipe et les contributions au contenu.
 
-  Ces améliorations visent à améliorer l’automatisation, à simplifier les processus de configuration et à améliorer la collaboration pour les utilisateurs Edge Delivery Services. <!-- CMGR-59362 -->
+  Ces améliorations visent à améliorer l’automatisation, à simplifier les processus de configuration et à améliorer la collaboration des utilisateurs et utilisatrices Edge Delivery Services. <!-- CMGR-59362 -->
 
-  ![Mise en service d’un site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![Approvisionnement d’un site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
 
-  ![Boîte de dialogue Configuration du site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+  ![Boîte de dialogue Configuration du site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
 
-* **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
+* **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
 
-* **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines , ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
+* **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines, ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
 
-   * **Filtrage à critères multiples :** affinez les résultats de recherche avec des filtres tels que le nom du pipeline, l’environnement et le code de déploiement.
-   * **Recherche rationalisée de pipelines :** localisez facilement des pipelines spécifiques pour une navigation plus rapide et une gestion améliorée des workflows.
+   * **Filtrage à critères multiples :** affinez les résultats de recherche avec des filtres tels que le nom du pipeline, l’environnement et le code de déploiement.
+   * **Recherche rationalisée de pipelines :** localisez facilement des pipelines spécifiques pour une navigation plus rapide et une gestion améliorée des workflows.
 
   Globalement, ces améliorations rendent la gestion et le déploiement des pipelines plus efficaces et plus conviviaux.
 
   ![Fonction Filtres de pipeline](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
 
-* **Configuration de réseau CDN en libre-service pour le service Edge Delivery :** les nouveaux utilisateurs du service Edge Delivery peuvent désormais configurer leur réseau CDN indépendamment via Cloud Manager. Cette mise à jour étend la prise en charge de `.hlx.page/live` à la nouvelle `.aem.page/live`, offrant ainsi une plus grande flexibilité et une configuration rationalisée pour les utilisateurs.
+* **Configuration de réseau CDN en libre-service pour le service Edge Delivery :** les nouveaux utilisateurs et nouvelles utilisatrices du service Edge Delivery peuvent désormais configurer leur réseau CDN indépendamment via Cloud Manager. Cette mise à jour étend la prise en charge de `.hlx.page/live` à la nouvelle `.aem.page/live`, offrant ainsi une plus grande flexibilité et une configuration rationalisée pour les utilisateurs et utilisatrices.
 
 ## Programme d’adoption précoce {#early-adoption}
 
 Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
 
-* **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
+* **Mise à jour du programme d’adoption précoce - Prise en charge de la validation de PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de pull request (PR) (demande de tirage) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clientes et clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration augmente considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
 
-Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Environnement de test avancé :** une solution spécialement conçue pour combler le fossé entre le développement et la production. Adapté aux besoins de l’entreprise, cet environnement reproduit les spécifications au niveau de la production pour prendre en charge des tests d’acceptation utilisateur (UAT) précis et des évaluations de performances approfondies.
 
