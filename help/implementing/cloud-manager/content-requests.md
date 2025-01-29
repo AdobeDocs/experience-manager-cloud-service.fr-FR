@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
+source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1250'
 ht-degree: 9%
 
 ---
@@ -75,7 +75,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | URL permettant aux clients de surveiller leur programme de Cloud Service | Exclu | Adobe recommande d’utiliser l’URL pour surveiller la disponibilité ou le contrôle d’intégrité en externe.<br><br>`/system/probes/health` |
 | Service de préchauffage de capsule AEM as a Cloud Service | Exclu |
 | Agent : skyline-service-préchauffage/1.* |
-| Moteurs de recherche connus, réseaux sociaux et bibliothèques HTTP (avec le tag Fastly) | Exclu | Services connus visitant régulièrement le site pour actualiser leur index ou service de recherche :<br><br>Exemples :<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br> lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· StashBot<br>· StatusCake<br>· YandexBot<br> <br>· Claudebot |
+| Moteurs de recherche connus, réseaux sociaux et bibliothèques HTTP (avec le tag Fastly) | Exclu | Services connus visitant régulièrement le site pour actualiser leur index ou service de recherche :<br><br>Exemples :<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br> lmspider<br>· LucidWorks<br>· Pinterest`MJ12bot`<br>· SemrushBot<br>· SiteImprov<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br> <br>· Claudebot |
 | Exclure les appels de Commerce integration framework | Exclu | Les demandes envoyées à AEM qui sont transférées vers le Commerce integration framework (l’URL commence par `/api/graphql`) ne sont pas facturables pour le Cloud Service afin d’éviter un double comptage. |
 | Exclure le `manifest.json` | Exclu | Le manifeste n’est pas un appel API. Il permet de fournir des informations sur la manière d’installer des sites web sur un ordinateur ou un téléphone mobile. L’Adobe ne doit pas compter les requêtes JSON à `/etc.clientlibs/*/manifest.json` |
 | Exclure le `favicon.ico` | Exclu | Bien que le contenu renvoyé ne doive pas être HTML ou JSON, il a été observé que certains scénarios tels que les flux d’authentification SAML renvoient des favicons en tant qu’HTML. Par conséquent, les favicons sont explicitement exclus du décompte. |
