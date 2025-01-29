@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 45%
+source-wordcount: '923'
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ La prochaine version est prévue le jeudi 13 février 2025.
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour le même `commitId`) :
+  Définissez également la variable suivante pour vous assurer que l’étape de Qualité du code s’exécute pour la même validation (normalement ignorée pour le même `commitId`) :
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
@@ -79,10 +79,6 @@ La prochaine version est prévue le jeudi 13 février 2025.
 
 * **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
 
-* **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
-
-Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
-
 * **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines , ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
 
    * **Filtrage à critères multiples :** affinez les résultats de recherche avec des filtres tels que le nom du pipeline, l’environnement et le code de déploiement.
@@ -94,10 +90,19 @@ Pour plus d’informations sur « Apportez votre propre Git », désormais pris 
 
 * **Configuration de réseau CDN en libre-service pour le service Edge Delivery :** les nouveaux utilisateurs du service Edge Delivery peuvent désormais configurer leur réseau CDN indépendamment via Cloud Manager. Cette mise à jour étend la prise en charge de `.hlx.page/live` à la nouvelle `.aem.page/live`, offrant ainsi une plus grande flexibilité et une configuration rationalisée pour les utilisateurs.
 
+## Programme d’adoption précoce {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **Mise à jour du programme pour les utilisateurs et utilisatrices précoces - Prise en charge de la validation PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de la requête de tirage (PR) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration améliore considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
+
+Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Environnement de test avancé :** une solution spécialement conçue pour combler le fossé entre le développement et la production. Adapté aux besoins de l’entreprise, cet environnement reproduit les spécifications au niveau de la production pour prendre en charge des tests d’acceptation utilisateur (UAT) précis et des évaluations de performances approfondies.
+
+Si vous souhaitez rejoindre le programme des utilisateurs et utilisatrices précoces, veuillez [remplir ce formulaire](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBT iI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) et nous envoyer un e-mail (détails à suivre) avec votre `OrgID`.
+
+
 
 <!-- ## Bug fixes -->
 
