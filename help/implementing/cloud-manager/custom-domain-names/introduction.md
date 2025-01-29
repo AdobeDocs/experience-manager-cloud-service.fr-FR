@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 41%
+source-wordcount: '720'
+ht-degree: 40%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 41%
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Ajout d’un nom de domaine personnalisé"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Afficher et mettre à jour le nom de domaine personnalisé"
 
-Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. À l’aide de l’interface utilisateur de Cloud Manager, vous pouvez ajouter un domaine personnalisé pour identifier votre site avec un nom de marque unique en libre-service. Le nom de domaine par défaut `*.adobeaemcloud.com` reste, même après avoir associé des noms de domaine personnalisés à votre site web.
+Adobe Experience Manager as a Cloud Service est configuré avec un nom de domaine par défaut, se terminant par `*.adobeaemcloud.com`. À l’aide de l’interface utilisateur de Cloud Manager, vous pouvez ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service. Le nom de domaine `*.adobeaemcloud.com` par défaut est conservé, même après l’association de noms de domaine personnalisés à votre site web.
 
 ## Que sont les noms de domaine personnalisés ? {#what-are-custom-domain-names}
 
-Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) est ce qui vous permet d’associer des domaines personnalisés et de marque à des sites web en traduisant des adresses numériques en adresses mémorables telles que `wknd.com`.
+Chaque site web est associé à une adresse numérique unique, lisible par ordinateur, telle que `184.33.123.64`. Le système de noms de domaine (DNS) permet d’associer des domaines personnalisés de marque à des sites web en traduisant des adresses numériques en adresses mémorisables, telles que `wknd.com`.
 
-Il est recommandé d’attribuer à votre site un nom de domaine qui soit mémorable pour vos clients et qui reflète votre marque.
+Il est recommandé d’attribuer à votre site un nom de domaine qui soit mémorisable pour vos clients et qui reflète votre marque.
 
 Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement de noms de domaine, d’une société ou d’une organisation qui gère et vend des noms de domaine. Les services d’enregistrement des noms de domaine gèrent les noms de domaine sur les serveurs DNS.
 
@@ -36,45 +36,46 @@ Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement 
 >
 >Cloud Manager n’est pas un service d’enregistrement de noms de domaine et ne fournit pas de services DNS.
 
-## Noms de domaine personnalisés et importation de vos propres CDN {#byo-cdn}
+## Noms de domaine personnalisés et apporter vos propres réseaux CDN {#byo-cdn}
 
-AEM as a Cloud Service propose un service CDN (Content Delivery Network) intégré, mais vous permet également de BYO (Bring Your Own) CDN à utiliser avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
+AEM as a Cloud Service offre un service CDN (réseau de diffusion de contenu) intégré, mais vous permet également d’utiliser un réseau CDN BYO (Bring Your Own) avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
 
-* Cloud Manager gère les noms de domaine et les certificats personnalisés installés dans le réseau de diffusion de contenu géré par AEM.
-* Les noms de domaine personnalisés et les certificats installés dans un réseau de diffusion de contenu BYO sont gérés directement dans ce réseau.
+* Cloud Manager gère les noms de domaine et certificats personnalisés installés dans le réseau CDN géré par AEM.
+* Les noms de domaine personnalisés et les certificats installés dans un réseau CDN BYO sont gérés directement dans ce réseau CDN.
 
-**Les domaines gérés dans votre propre réseau de diffusion de contenu ne nécessitent pas d’installation via Cloud Manager**. Ils sont mis à la disposition de l’AEM par le biais de X-Forwarded-Host et correspondent aux hôtes définis dans Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
+**Les domaines gérés dans votre propre réseau CDN ne nécessitent pas d’installation via Cloud Manager** - Ils sont mis à la disposition d’AEM par le biais de X-Forwarded-Host et correspondent aux hôtes virtuels définis dans le Dispatcher. Consultez la [documentation sur le réseau CDN](/help/implementing/dispatcher/cdn.md).
 
-Dans un environnement, les deux domaines peuvent être installés dans le réseau de diffusion de contenu géré par AEM et installés dans un réseau de diffusion de contenu BYO.
+Dans un seul environnement, les deux domaines peuvent être installés dans le réseau CDN géré par AEM et dans un réseau CDN BYO.
 
 ## Workflow {#workflow}
 
-L’ajout d’un nom de domaine personnalisé nécessite une interaction entre le service DNS et Cloud Manager. En raison de ce processus, plusieurs étapes sont nécessaires pour installer, configurer et vérifier les noms de domaine personnalisés. Le tableau suivant présente une vue d’ensemble des étapes requises, y compris des liens vers les ressources de documentation pour terminer ces étapes.
+L’ajout d’un nom de domaine personnalisé nécessite une interaction entre le service DNS et Cloud Manager. En raison de ce workflow, plusieurs étapes sont nécessaires pour installer, configurer et vérifier les noms de domaine personnalisés. Le tableau suivant donne un aperçu des étapes requises, y compris des liens vers des ressources de documentation pour les exécuter.
 
 | Étape | Description | Documentation |
 | --- | --- | --- |
-| 1 | Ajouter un certificat SSL à Cloud Manager | [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Ajouter un certificat SSL à Cloud Manager | [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Ajout d’un domaine personnalisé à Cloud Manager | [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | Configurez les paramètres DNS en ajoutant des enregistrements CNAME ou APEX DNS qui pointent vers AEM as a Cloud Service | [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | Vérification de l’état du domaine | [Vérifiez l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Vérifiez le statut de l’enregistrement DNS | [ Vérifiez l’état de l’enregistrement DNS ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 4 | Vérification du statut du domaine de révision | [Vérifier le statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | Vérifiez le statut de l’enregistrement DNS | [Vérifier le statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->Le processus de configuration de noms de domaine personnalisés avec AEM as a Cloud Service s’avère généralement simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrés pour être résolu. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation. Pour plus d’informations, consultez le document [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) .
+>Le processus de configuration de noms de domaine personnalisés avec AEM as a Cloud Service s’avère généralement simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation. Consultez le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 ## Limites {#limitations}
 
 L’utilisation de noms de domaine personnalisés avec AEMaaCS présente plusieurs limites.
 
-* Les noms de domaine personnalisés ne sont pris en charge dans Cloud Manager que pour les services de publication et de prévisualisation des programmes Sites.
+* Les noms de domaine personnalisés sont pris en charge dans Cloud Manager uniquement pour les services de publication et de prévisualisation pour les programmes Sites.
    * Les domaines personnalisés pour les services de création ne sont pas pris en charge.
 * Chaque environnement Cloud Manager peut héberger jusqu’à 500 domaines personnalisés.
 * Les noms de domaine ne peuvent pas être ajoutés aux environnements tant qu’un pipeline en cours d’exécution est attaché à ces environnements.
-* Le même nom de domaine ne peut pas être utilisé dans plusieurs environnements.
+* Un même nom de domaine ne peut pas être utilisé dans plusieurs environnements.
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois.
 * AEM as a Cloud Service ne prend pas en charge les domaines génériques tels que `*.example.com`.
 * Avant d’ajouter un nom de domaine personnalisé, un certificat SSL valide contenant le nom de domaine personnalisé (les certificats génériques sont valides) doit être installé pour votre programme.
+* Des étapes de configuration supplémentaires sont requises pour utiliser un nom de domaine personnalisé avec [la fonctionnalité Pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains).
 
 ## Commencer {#get-started}
 
