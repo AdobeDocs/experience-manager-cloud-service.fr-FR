@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 47%
+source-wordcount: '1812'
+ht-degree: 44%
 
 ---
 
@@ -59,7 +59,7 @@ La version AEM as a Cloud Service minimale prise en charge pour les nouvelles in
 
 **fragments de contenu améliorés**
 
-Amélioration du [référencement de fragments de contenu avec des références basées sur des identifiants uniques](/help/headless/graphql-api/uuid-reference-upgrade.md), afin de garantir des liens stables et valides même lorsque des ressources ou des fragments sont déplacés, ce qui rend inutiles les mises à jour ou la republication. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
+Amélioration du [référencement de fragments de contenu avec des références basées sur des identifiants uniques](/help/headless/graphql-api/uuid-reference-upgrade.md), afin que les requêtes GraphQL pour les fragments de contenu individuels puissent rester stables même si le fragment a été déplacé vers un autre emplacement. Cela est désormais possible avec les requêtes « ByID ». Bien que les chemins puissent changer, rompant potentiellement les requêtes « ByPath », les UUID sont stables. Les nouveaux identifiants peuvent également être renvoyés en tant que propriétés dans toute requête ou autre requête d’API applicable. Limitation actuelle (2025.1) : les références de page ne sont pas encore prises en charge avec des ID uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée. Il est prévu de supprimer cette limitation dans la prochaine version d’AEM as a Cloud Service.
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
