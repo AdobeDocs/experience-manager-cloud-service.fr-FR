@@ -4,12 +4,13 @@ description: Découvrez comment gérer les données taxonomiques pour utiliser d
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # Gestion des données taxonomiques {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ Vous commencez à modifier une page de taxonomie comme toute autre page dans AEM
 
 La page affichée dans l’éditeur de page est en lecture seule, car le contenu de la taxonomie est généré automatiquement à partir des balises et espaces de noms sélectionnés. Ils agissent comme une sorte de filtre pour générer automatiquement le contenu de la taxonomie. Il n’y a donc aucune raison de modifier directement la page dans l’éditeur.
 
-AEM met automatiquement à jour le contenu de la page de taxonomie lorsque vous mettez à jour les balises et les espaces de noms sous-jacents. Cependant, vous devez [republier la taxonomie](#publishing) après toute modification pour que ces modifications soient disponibles pour vos utilisateurs et utilisatrices.
+AEM met automatiquement à jour le contenu de la page de taxonomie lorsque vous mettez à jour les balises et les espaces de noms sous-jacents. Cependant, vous devez [republier la taxonomie](#publishing) après toute modification afin de rendre ces modifications disponibles pour vos utilisateurs et utilisatrices.
 
 ## Mise à jour de paths.json pour la publication de taxonomie {#paths-json}
 
@@ -155,6 +156,10 @@ Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de vot
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de vot
 Ces données JSON sont automatiquement mises à jour lorsque vous mettez à jour la taxonomie et que vous la republiez. Votre application peut accéder à ces informations par programmation pour vos utilisateurs et utilisatrices.
 
 [Si vous conservez des balises dans plusieurs langues,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) vous pouvez accéder à ces langues en transmettant le code de langue ISO2 comme valeur d’un paramètre `sheet=`.
+
+## Exposition de propriétés de balise supplémentaires {#additional-properties}
+
+Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illustré [dans l’exemple précédent.](#accessing) Vous pouvez configurer votre taxonomie pour afficher des propriétés de balise supplémentaires. Dans cet exemple, nous allons exposer la description de la balise .
+
+1. Utilisez la console Sites pour sélectionner la taxonomie que vous avez créée.
+1. Appuyez ou cliquez sur l’icône **Propriétés** dans la barre d’outils.
+1. Dans la section **Propriétés supplémentaires**, appuyez ou cliquez sur **Ajouter** pour ajouter un champ.
+1. Dans le nouveau champ, saisissez le nom de la propriété JRC à afficher. Dans ce cas, saisissez `jcr:description` pour la description de la balise.
+1. Appuyez et cliquez sur **Enregistrer et fermer**.
+1. La taxonomie étant toujours sélectionnée, appuyez ou cliquez sur **Quick Publish** dans la barre d’outils.
+
+Désormais [lorsque vous accédez à votre taxonomie](#accessing) la description de la balise (ou toute propriété que vous avez choisi d’exposer) est incluse dans le fichier JSON.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```
