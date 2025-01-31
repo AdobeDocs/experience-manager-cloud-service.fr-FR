@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 42%
+source-wordcount: '1750'
+ht-degree: 39%
 
 ---
 
@@ -126,13 +126,21 @@ Adobe Dynamic Media utilise l’intelligence artificielle pour générer autom
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
-* **Gérer la publication** : le workflow « Gérer la publication » permet de publier ou de dépublier des formulaires dans plusieurs environnements, généralement de l’instance d’auteur vers les instances de publication et de prévisualisation. Cela permet aux utilisateurs et utilisatrices de publier, d’annuler la publication ou de planifier la publication du contenu de manière rationnalisée.
+#### Gérer la publication
 
-* **[Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/save-core-component-based-form-as-draft.md)** : les utilisateurs et les utilisatrices peuvent désormais bénéficier d’une fonction d’enregistrement automatique, qui sauvegarde automatiquement un formulaire partiellement complété en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+Vous pouvez utiliser le workflow « Gérer la publication » pour publier ou dépublier des formulaires dans plusieurs environnements, généralement de l’instance d’auteur aux instances de publication et de prévisualisation. Cela permet aux utilisateurs et utilisatrices de publier, d’annuler la publication ou de planifier la publication du contenu de manière rationnalisée.
 
-* **[Améliorations de l’éditeur de règles](/help/forms/invoke-service-enhancements-rule-editor.md)** : pour le Forms adaptatif basé sur les composants principaux, vous pouvez utiliser la sortie d’Invoke Service pour renseigner les options de liste déroulante et définir des panneaux répétables ou individuels. De plus, cette sortie peut être utilisée pour valider d’autres champs.
+#### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
 
-* **[Amélioration de l’interface d’utilisation grâce aux boutons de navigation dans les mises en page de panneau](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)** : vous pouvez désormais ajouter des boutons de navigation à vos mises en page de panneau, par exemple Onglets horizontaux, Onglets verticaux, Accordéons ou Assistant. Ces boutons optimisent la navigation en simplifiant les transitions entre les panneaux et en mettant l’accent sur le panneau sélectionné.
+Les utilisateurs peuvent désormais bénéficier d’une [ fonctionnalité d’enregistrement automatique ](/help/forms/save-core-component-based-form-as-draft.md) qui enregistre automatiquement un formulaire partiellement rempli en tant que brouillon. Ces personnes peuvent revenir ultérieurement pour finir de le remplir sur le même appareil ou sur un autre. Cette fonctionnalité améliore les taux de conversion pour les organisations en réduisant l’abandon de formulaire, car les utilisateurs et utilisatrices n’ont pas besoin de recommencer à remplir le formulaire depuis le début.
+
+#### Améliorations de l’éditeur de règles
+
+Pour le Forms adaptatif basé sur les composants principaux, vous pouvez utiliser la [sortie du service d’appel pour renseigner les options de liste déroulante et définir un panneau répétable ou individuel](/help/forms/invoke-service-enhancements-rule-editor.md). De plus, cette sortie peut être utilisée pour valider d’autres champs.
+
+#### Amélioration de l’expérience utilisateur avec les boutons de navigation dans les dispositions de panneau
+
+Vous pouvez désormais ajouter des boutons de navigation à vos dispositions de panneau, tels que les onglets horizontaux, verticaux, accordéons ou assistants. Ces boutons [simplifient les transitions entre les panneaux et mettent l’accent sur le panneau sélectionné](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ Le programme d’accès anticipé d’AEM Forms vous offre une opportunité uni
 
 Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### [HTML des modèles d’e-mail dans le Forms adaptatif](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### HTML de modèles d’e-mail dans le Forms adaptatif
 
-Le Forms adaptatif permet d’utiliser des modèles d’e-mail HTMLS. Les modèles d’e-mail d’HTML vous permettent d’envoyer des e-mails riches, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec le Forms adaptatif, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+Le Forms adaptatif vous permet d’utiliser des modèles d’e-mail [HTML ](/help/forms/html-email-templates-in-adaptive-forms.md). Les modèles d’e-mail d’HTML vous permettent d’envoyer des e-mails riches, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec le Forms adaptatif, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
 
 ![HTML de modèles d’e-mail](/help/forms/assets/html-email.png)
 
 #### Prise en charge améliorée du stockage dans le cloud : chargement par PDF vers le stockage Blob Azure
 
-Les API de génération de documents d’AEM Forms prennent désormais en charge le chargement direct de documents de PDF générés vers Azure Blob Storage. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
+Les API de génération de documents d’AEM Forms vous permettent désormais de [charger directement les documents de PDF générés vers Azure Blob Storage](/help/forms/early-access-ea-features.md#doc-generation-api). Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
