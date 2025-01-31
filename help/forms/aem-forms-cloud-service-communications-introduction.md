@@ -1,20 +1,20 @@
 ---
-title: Que sont les API de communication as a Cloud Service Forms ?
-description: Utilisez les API de communication pour signer, certifier ou protéger vos documents, pour automatiser les processus de génération de PDF et pour convertir un document de PDF dans un autre format.
+title: Que sont les API de communication Forms as a Cloud Service ?
+description: Utilisez les API Communications pour signer, certifier ou protéger vos documents, pour automatiser les processus de génération de PDF et pour convertir les documents de PDF dans un autre format.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 47%
+source-wordcount: '2435'
+ht-degree: 48%
 
 ---
 
-# API de communication as a Cloud Service d’AEM Forms {#frequently-asked-questions}
+# API de communication d’AEM Forms as a Cloud Service {#frequently-asked-questions}
 
-![Hero Image](assets/cloud-communication-apis-hero-image.jpeg)
+![Image principale](assets/cloud-communication-apis-hero-image.jpeg)
 
 
 | Version | Lien de l’article |
@@ -62,9 +62,16 @@ Vous pouvez utiliser les API de génération de documents pour créer un documen
 ![Création de documents PDF](assets/outPutPDF_popup.png)
 Schéma : workflow standard de création d’un document PDF
 
+L’API de génération de documents renvoie le document de PDF généré. Vous pouvez également charger les PDF générés dans le stockage Blob Azure.
+
+<span class="preview"> Le chargement des PDF générés à l’aide de l’API de génération de documents vers la fonctionnalité de stockage Blob Azure se trouve sous [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+
+
 ### Créer un document PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
 
 Vous pouvez utiliser des API de génération de documents pour créer des documents PostScript (PS), PCL (Printer Command Language) et Zebra Printing Language (ZPL) reposant sur une conception de formulaire XDP ou un document de PDF. Ces API permettent de fusionner un design de formulaire avec des données de formulaire pour générer un document. Vous pouvez enregistrer le document dans un fichier et développer un processus personnalisé pour l’envoyer à une imprimante.
+
+
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -114,11 +121,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulation de documents
 
-Les API de manipulation de documents de communication (Document Transformation) permettent de combiner et de réorganiser des documents de PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) décrit comment utiliser les documents source pour générer un ensemble de documents désirés. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge. Voici quelques exemples de manipulation de documents :
+Les API de manipulation de documents Communications (transformation de documents) permettent d’associer et de réorganiser les documents du PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) décrit comment utiliser les documents source pour générer un ensemble de documents désirés. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge. Voici quelques exemples de manipulation de documents :
 
 ### Assemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous trouverez ci-dessous quelques-unes des méthodes d’assemblage de documents PDF :
+Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Voici quelques-unes des méthodes d’assemblage de documents PDF :
 
 * Assemblage d’un document PDF unique
 * Création d’un portfolio PDF
@@ -141,7 +148,7 @@ Schéma : division d’un document source en plusieurs documents en fonction de
 
 >[!NOTE]
 >
-> AEM Forms offre une variété de polices intégrées qui s’intègrent facilement aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 
@@ -169,17 +176,17 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Extraction de document
+## Extraction de documents
 
-<span class="preview"> La fonctionnalité Extraction de documents est inscrite dans le Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité d’extraction de documents fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-Le service Extraction de documents vous permet d’obtenir les propriétés d’un document de PDF, telles que ses droits d’utilisation, ses propriétés de PDF et ses métadonnées. Les fonctionnalités d’extraction de document sont les suivantes :
+Le service d’extraction de documents vous permet d’obtenir les propriétés d’un document de PDF, telles que ses droits d’utilisation, ses propriétés de PDF et ses métadonnées. Les fonctionnalités d’extraction de documents sont les suivantes :
 
-* Obtient les propriétés d’un document de PDF, telles que si le PDF comporte des pièces jointes, des commentaires, sa version Acrobat, etc.
-* Extrayez les droits d’utilisation activés dans un document de PDF. Les utilisateurs récupèrent les droits d’utilisation activés ou désactivés dans un document de PDF pour l’extensibilité Adobe Acrobat Reader.
-* Pour obtenir les informations de métadonnées présentes dans un document de PDF, les métadonnées sont des informations sur le document (qui se distinguent du contenu du document, telles que le texte et les graphiques). La plateforme de métadonnées extensibles (XMP) Adobe est une norme de gestion des métadonnées de document. Le service XMP Utilities peut récupérer XMP métadonnées de documents PDF et exporter des métadonnées dans des documents PDF.
+* Obtient les propriétés d’un document de PDF, comme si le PDF comporte des pièces jointes, des commentaires, sa version Acrobat, etc.
+* Extrayez les droits d’utilisation activés dans un document de PDF. Les utilisateurs récupèrent les droits d’utilisation activés ou désactivés dans un document de PDF pour permettre l’extensibilité de Adobe Acrobat Reader.
+* Obtenez les informations de métadonnées présentes dans un document de PDF. Les métadonnées sont des informations sur le document (à la différence du contenu du document, tel que le texte et les graphiques). XMP (Adobe Extensible Metadata Platform) est un standard de gestion des métadonnées de document. Le service XMP Utilities peut récupérer des métadonnées XMP à partir de documents PDF et exporter des métadonnées XMP dans des documents PDF.
 
-La [ documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 <!--
 
@@ -197,30 +204,30 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Conversion et validation de documents conformes à la norme PDF/A
 
-Les API de conversion de document de communication aident à convertir un document de PDF en PDF/A. Vous pouvez utiliser les API pour convertir un document de PDF en document compatible avec le PDF/A, ainsi que pour déterminer si un document de PDF est compatible avec le PDF/A. PDF/A est un format d’archivage destiné à la conservation à long terme du contenu du document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo. Les normes de conformité PDF/A prises en charge sont les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
+Les API de conversion de documents Communications permettent de convertir un document de PDF en PDF/A. Vous pouvez utiliser les API pour convertir un document de PDF en document compatible avec le PDF/A et également pour déterminer si un document de PDF est compatible avec le PDF/A. Le PDF/A est un format d’archivage destiné à la conservation à long terme du contenu du document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo. Les normes de conformité PDF/A prises en charge comprennent les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
 
-### Convertir le PDF en XDP {#convert-pdf-to-xdp}
+### Convertir PDF en XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du Programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-Convertit un document de PDF en fichier XDP. Pour qu’un document de PDF soit converti en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire.
+Convertit un document de PDF en fichier XDP. Pour réussir la conversion d’un document de PDF en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire.
 
 ## Document Assurance {#doc-assurance}
 
 Le service DocAssurance comprend les API Signature et Encryption :
 
-### API de signature
+### API Signature
 
-Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Les fonctions de sécurité sont appliquées au document lui-même, le document reste sécurisé et contrôlé pendant tout son cycle de vie. Le document reste sécurisé au-delà du pare-feu, lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API de signature :
+Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Les fonctions de sécurité sont appliquées au document lui-même. Le document reste sécurisé et contrôlé pendant tout son cycle de vie. Le document reste sécurisé au-delà du pare-feu lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API Signature :
 
 * Ajoutez un champ de signature visible à un document de PDF.
-* Ajoutez un champ de signature invisible à un document de PDF.
+* Ajouter un champ de signature invisible à un document de PDF.
 * Signez le champ de signature spécifié dans un document de PDF.
 * Certifier un document de PDF
 * Supprimer la signature du champ de signature spécifié dans un document de PDF
 * Supprimer le champ de signature spécifié d’un document de PDF
 
-<span class="preview"> Supprimez la signature du champ de signature spécifié et supprimez le champ de signature spécifié d’un document de PDF disponible sous le programme des premiers adopteurs. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> Supprimer la signature du champ de signature spécifié et supprimer le champ de signature spécifié d’un document de PDF sont disponibles sous le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
 
 <!--
@@ -236,77 +243,77 @@ The Remove Signature Field API is tailored for removing signature fields from a 
 
 -->
 
-### API de chiffrement
+### API Encryption
 
-Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document de mot de PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour que le document puisse être affiché dans Adobe Reader ou Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
-Vous pouvez accomplir ces tâches à l’aide des API Encryption :
+Vous pouvez accomplir les tâches suivantes à l’aide des API Encryption :
 
-* Chiffrez un document de PDF avec un mot de passe.
-* Supprimez le chiffrement avec mot de passe d’un document de PDF.
+* Chiffrez un document de mot de PDF avec un mot de passe.
+* Supprimez le chiffrement par mot de passe d’un document de mot de PDF.
 * Récupérez le type de sécurité appliqué à un document de PDF.
-* Renvoyer le type de sécurité appliqué à un document PDF.
+* Renvoyer le type de sécurité appliqué à un document de PDF.
 
-Les API Signature et les API Encryption sont [API synchrones](#types-of-communications-apis-types).
+Les API Signature et les API Encryption sont des [API synchrones](#types-of-communications-apis-types).
 
 
 ### Utilitaires de document {#doc-utility}
 
-Les utilitaires de document avec les API synchrones vous aident à convertir des documents entre les formats de fichiers PDF et XDP. Appliquez des droits d’utilisation à un document et extrayez les droits d’utilisation activés à partir d’un document. Requête d’informations sur un document PDF. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> Vous trouverez ci-dessous les détails des API de droits d’utilisation :
+Les utilitaires de document dotés d’API synchrones vous permettent de convertir des documents entre des formats de fichiers PDF et XDP. Appliquez des droits d’utilisation à un document et extrayez les droits d’utilisation activés d’un document. Demande d’informations sur un document de PDF. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> détails sur les API des droits d’utilisation sont donnés ci-dessous :
 
 
-#### API de droits d’utilisation (extension de Reader)
+#### API des droits d’utilisation (extension de Reader)
 
-<span class="preview"> La fonctionnalité Droits d’utilisation (extension de Reader) figure dans le Programme des Adopteurs Anticipés. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview"> La fonctionnalité Droits d’utilisation (extension de Reader) fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-La fonctionnalité Droits d’utilisation permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service fonctionne avec Adobe Reader 7.0 ou version ultérieure et ajoute des droits d’utilisation à un document PDF. Cette action active des fonctionnalités qui ne sont généralement pas disponibles lors de l’ouverture d’un document de PDF à l’aide d’Adobe Reader, comme l’ajout de commentaires à un document, le remplissage de formulaires et l’enregistrement du document.
+La fonctionnalité Droits d’utilisation permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service fonctionne avec Adobe Reader version 7.0 ou ultérieure et ajoute des droits d’utilisation à un document de PDF. Cette action active des fonctionnalités généralement indisponibles à l’ouverture d’un document de PDF à l’aide d’Adobe Reader, telles que l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document.
 
 Lorsque les droits d’utilisation appropriés sont ajoutés aux documents PDF, les destinataires peuvent effectuer les activités suivantes depuis Adobe Reader :
 
-* Remplissez des documents et des formulaires PDF en ligne ou hors ligne, ce qui permet aux destinataires d’enregistrer des copies localement pour leurs enregistrements tout en préservant les informations ajoutées.
-* Enregistrez les documents du PDF sur un disque dur local afin de conserver le document d’origine ainsi que tous les commentaires, données ou pièces jointes supplémentaires.
-* Joindre des fichiers et des clips multimédia à des documents PDF.
-* Signez, certifiez et authentifiez des documents PDF en appliquant des signatures numériques à l’aide des technologies PKI (Public Key Infrastructure, infrastructure à clé publique) standard.
-* Envoyez les documents PDF complétés ou annotés par voie électronique.
-* Utilisez des documents et des formulaires PDF comme interface de développement intuitive pour les bases de données internes et les services Web.
+* Remplir les documents et les formulaires de PDF en ligne ou hors ligne, ce qui permet aux destinataires d&#39;enregistrer des copies localement pour leurs dossiers tout en conservant les informations ajoutées intactes.
+* Enregistrez les documents du PDF sur un disque dur local pour conserver le document d’origine et les commentaires, données ou pièces jointes supplémentaires.
+* Joignez des fichiers et des clips multimédias aux documents du PDF.
+* Signez, certifiez et authentifiez des documents de PDF en utilisant des signatures numériques à l’aide des technologies d’infrastructure à clé publique (PKI) standard.
+* Soumettre électroniquement des documents de PDF remplis ou annotés.
+* Utilisez les documents et les formulaires du PDF comme front-end de développement intuitif des bases de données internes et des services web.
 * Partage de documents PDF pour que les réviseurs puissent ajouter des commentaires à l’aide d’outils intuitifs d’insertion de commentaires et d’annotations, tels que notes autocollantes, tampons, texte surligné et texte barré. Les mêmes fonctions sont disponibles dans Acrobat.
-* Prise en charge du décodage Forms à code à barres.
+* Prise en charge du décodage Barcoded Forms.
 
-Ces fonctionnalités de droits d’utilisation spéciaux sont automatiquement activées lorsqu’un document de PDF dont les droits sont activés est ouvert dans Adobe Reader. Lorsque l’utilisateur a fini de travailler avec un document dont les droits sont activés, ces fonctions sont à nouveau désactivées dans Adobe Reader. Elles restent désactivées jusqu’à ce que l’utilisateur ou l’utilisatrice reçoive un autre document PDF dont les droits sont activés.
+Ces fonctionnalités spéciales de droits d’utilisation sont automatiquement activées lorsqu’un document de PDF défini avec des droits d’utilisation est ouvert dans Adobe Reader. Lorsque l’utilisateur a fini de travailler sur un document défini avec des droits d’utilisation, ces fonctions sont à nouveau désactivées dans Adobe Reader. Elles restent désactivées jusqu’à ce que l’utilisateur ou l’utilisatrice reçoive un autre document PDF dont les droits sont activés.
 
-#### Activation ou désactivation des droits d’utilisation
+#### Activer ou désactiver les droits d’utilisation
 
 Les différentes fonctionnalités de droits d’utilisation pour étendre les services de Reader de PDF sont les suivantes :
 
 * **Décodage des codes à barres** : pour décoder les codes à barres dans le document du PDF.
 
-* **Comments** : pour ajouter des commentaires hors ligne sur le document du PDF.
+* **Commentaires** : commentaires hors ligne sur le document du PDF.
 
-* **Comments Online** : pour commenter en ligne le document du PDF.
+* **Commentaires en ligne** : pour commenter en ligne le document du PDF.
 
 * **Signature numérique** : pour ajouter des signatures numériques à un document de PDF.
 
-* **Champs de formulaire dynamique** : pour ajouter des champs de formulaire à un document de PDF.
+* **Champs de formulaire dynamiques** : pour ajouter des champs de formulaire à un document de PDF.
 
-* **Pages de formulaire dynamiques** : pour ajouter des pages de formulaire à un document de PDF.
+* **Pages de formulaire dynamiques** : ajout de pages de formulaire à un document de PDF.
 
 * **Fichiers incorporés** : pour incorporer des fichiers dans un document de PDF.
 
-* **Importation de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
+* **Import de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
 
 * **Exportation de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
 
-* **Form Fill In** : pour remplir les champs de formulaire dans un document de PDF.
+* **Remplir le formulaire** : pour remplir des champs de formulaire dans un document de PDF.
 
-* **Forms en ligne** : pour accéder à un service Web ou à une base de données à partir d’un document de PDF.
+* **Online Forms** : accès à un service web ou à une base de données à partir d’un document de PDF.
 
-* **Submit Standalone** : pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
+* **Envoyer autonome** : pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
 
 
 #### Autres fonctionnalités
 
-* **Message** : message affiché dans Adobe Acrobat Reader lors de l’ouverture d’un document de PDF avec un ou plusieurs droits d’utilisation appliqués.
-* **Déverrouiller le mot de passe** : mot de passe requis pour ouvrir un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document du PDF est en outre protégé par un mot de passe d’accès, vous pouvez l’utiliser pour l’ouvrir.
+* **Message** : message affiché dans Adobe Acrobat Reader à l’ouverture d’un document de PDF auquel un ou plusieurs droits d’utilisation ont été appliqués.
+* **Déverrouiller le mot de passe** : mot de passe requis pour ouvrir un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document de PDF est protégé en outre par un mot de passe d’autorisation, il peut être utilisé pour l’ouvrir.
 
 ## Types d’API de communication {#types}
 
@@ -314,13 +321,13 @@ Communications fournit des API HTTP pour la génération de documents à la dem
 
 * Les **[API synchrones](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
 
-* Les **[API par lot (API asynchrones)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Par exemple, des factures de téléphone, des relevés de carte de crédit et des relevés d’avantages sont générés tous les mois.
+* Les **[API par lot (API asynchrones)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Par exemple, les factures de téléphone, les relevés de carte de crédit et les relevés d’avantages sociaux sont générés tous les mois.
 
 ## Intégration
 
-La fonctionnalité Communications est disponible sous la forme d’un module autonome et d’un module complémentaire pour les utilisateurs de Forms as a Cloud Service. Vous pouvez contacter l’équipe des ventes d’Adobe ou votre représentant d’Adobe pour demander l’accès. Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut accorder l’accès à vos développeurs (utilisateurs) as a Cloud Service Forms de votre entreprise pour utiliser les API.
+La fonctionnalité Communications est disponible sous la forme d’un module autonome et d’un module complémentaire pour les utilisateurs de Forms as a Cloud Service. Vous pouvez contacter l’équipe des ventes de l’Adobe ou votre représentant de l’Adobe pour demander l’accès. Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut accorder l’accès aux développeurs (utilisateurs) Forms as a Cloud Service de votre organisation pour utiliser les API.
 
-Après l’intégration, pour activer la fonctionnalité de communications pour votre environnement Forms as a Cloud Service :
+Après l’intégration, pour activer la fonctionnalité Communications pour votre environnement Forms as a Cloud Service :
 
 1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
 
@@ -338,7 +345,7 @@ Après l’intégration, pour activer la fonctionnalité de communications pour 
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la [configuration Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -428,4 +435,4 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 * [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
 * [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Architecture as a Cloud Service d’AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Architecture d’AEM Forms as a Cloud Service pour les API de Forms et de communication adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)

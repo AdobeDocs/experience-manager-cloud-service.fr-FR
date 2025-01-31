@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 44%
+source-wordcount: '1750'
+ht-degree: 42%
 
 ---
 
@@ -150,12 +150,6 @@ Le Forms adaptatif permet d’utiliser des modèles d’e-mail HTMLS. Les modèl
 #### Prise en charge améliorée du stockage dans le cloud : chargement par PDF vers le stockage Blob Azure
 
 Les API de génération de documents d’AEM Forms prennent désormais en charge le chargement direct de documents de PDF générés vers Azure Blob Storage. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
-
-* **[Prise en charge des chaînes codées en base64 pour les pièces jointes](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)** : le composant Pièce jointe dans les formulaires adaptatifs basés sur les composants principaux inclut désormais une option pour envoyer les fichiers joints en tant que chaînes codées en base64.
-
->[!IMPORTANT]
->
-> Vous souhaitez adhérer au Programme d’accès anticipé pour des formulaires innovants ? Envoyez un e-mail depuis votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec la liste des fonctionnalités qui vous intéressent.## Module complémentaire CIF {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
