@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6003'
+source-wordcount: '6020'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -707,6 +708,7 @@ ht-degree: 99%
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
+      + [Forms adaptatif Publish à l’aide de la fonction Gérer la publication](/help/forms/manage-publication.md)
    + Commencer {#getting-started-forms}
       + [Consulter des cas d’utilisation et configurer l’environnement de développement](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Créer le formulaire de demande de prêt](/help/forms/create-adaptive-form-tutorial.md)
@@ -1021,6 +1023,8 @@ ht-degree: 99%
          + [Utilisation du service de soumission Forms](/help/forms/forms-submission-service.md)
       + {#universal-editor} WYSIWYG
          + [Présentation - Éditeur universel pour Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Commencer](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Ajouter des règles à à à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
          + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
          + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
