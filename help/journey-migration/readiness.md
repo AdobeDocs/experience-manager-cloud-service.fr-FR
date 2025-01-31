@@ -4,10 +4,10 @@ description: Découvrez les étapes à suivre pour vous assurer que votre instal
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 94%
+source-wordcount: '1915'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Réseau de diffusion de contenu intégré et Obtention de votre propre réseau de diffusion de contenu</td>
     <td></td>
-    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau de diffusion de contenu, vous devez envoyer une demande à l’assistance Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
+    <td>AEM as a Cloud Service inclut le réseau de diffusion de contenu pour tous les environnements, optimisé pour la plupart des cas d’utilisation.<br>Si vous souhaitez configurer votre propre réseau CDN, vous devez soumettre une demande au support technique d’Adobe pour qu’il soit approuvé.<br>Si votre demande est approuvée, le réseau CDN pointe vers Fastly et non vers les instances AEM, quel que soit lʼenvironnement.</td>
   </tr>
   <tr>
     <td>Tâches de longue durée</td>
@@ -169,7 +169,7 @@ Après avoir pris connaissance des modifications apportées à AEM as a Cloud Se
 
 La figure suivante présente les principales étapes impliquées lors de la phase de révision :
 
-![Principales étapes impliquées lors de la phase de révision](/help/journey-migration/assets/planning-phaseimg1.png)
+![Étapes clés de la phase de révision](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Ensuite, vous allez explorer en détail la signification de chacune de ces étapes.
 
@@ -196,7 +196,7 @@ Un rapport type doit contenir les entrées suivantes :
 * Documentation détaillant l’ensemble des fonctionnalités de votre installation AEM particulière.
 * Détails sur vos configurations et code personnalisés AEM.
 * Configurations du Dispatcher de production.
-* Configurations du réseau de diffusion de contenu (le cas échéant).
+* Mappages de domaines (configurations de réseau CDN) (le cas échéant)
 
 **Socialisation du rapport**
 
@@ -218,8 +218,8 @@ Une fois que vous avez compris la portée des modifications requises pour passer
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Prise en main de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Guide complet sur l’utilisation de Cloud Acceleration Manager pour accélérer votre déplacement vers le cloud.
+* [Prise en main de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Un guide complet sur l’utilisation de Cloud Acceleration Manager pour accélérer votre déplacement vers le cloud.
 * [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=fr#dashboard/learning)
 * [Accueil d’AEM a Cloud Service](/help/overview/introduction.md) - Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici.
 * [Présentation d’AEM as a Cloud Service](/help/overview/introduction.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l’architecture.
-* [Parcours d’intégration](/help/journey-onboarding/overview.md) - Ce guide résume la prise en main de l’as a Cloud Service Experience Manager, y compris la manière d’obtenir un accès et de configurer votre équipe.
+* [Parcours d’intégration](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.

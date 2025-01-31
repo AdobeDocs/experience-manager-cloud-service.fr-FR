@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 40%
 
 ---
@@ -194,9 +194,9 @@ Si vous avez activé des régions de publication supplémentaires, vous pouvez v
 
 Vous pouvez également accéder aux mêmes informations à partir de l’onglet **Environnements**.
 
-1. Sur la page **Aperçu**, sélectionnez l’onglet **Environnements**.
+1. Sur la page **Aperçu**, cliquez sur ![icône de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **environnements**.
 
-1. Dans l’onglet **Environnements**, sélectionnez l’environnement sur lequel vous souhaitez effectuer une requête dans le menu de gauche.
+1. Sur la page **Environnements**, sélectionnez l’environnement sur lequel effectuer la requête dans le menu de gauche.
 
 1. Une fois l’environnement sélectionné :
 
@@ -306,7 +306,7 @@ Cette option est également disponible à partir de l’onglet **Environnement**
 
      ![Connexion locale](assets/environ-login-locally.png)
 
-   * Dans le panneau de gauche, cliquez sur **Environnements**. Sur la page **Environnements**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Connexion locale**.
+   * Dans le panneau de gauche, cliquez sur ![icône de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **environnements**. Sur la page **Environnements**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Connexion locale**.
 
      ![Connexion locale à partir de l’onglet Environnements](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Les noms de domaine personnalisés sont pris en charge dans Cloud Manager pour l
 
 Une Liste autorisée IP est prise en charge dans Cloud Manager pour les services de création, de publication et de prévisualisation des programmes Sites.
 
-Pour gérer les Listes autorisées IP, accédez à l’onglet **Environnements** de la page **Aperçu** de votre programme. Cliquez sur un environnement pour en gérer les détails.
+Pour gérer les Listes autorisées IP, accédez à la page ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements** de la page **Aperçu** de votre programme. Cliquez sur un environnement pour en gérer les détails.
 
 ### Application d’une Liste autorisée IP {#apply-ip-allow-list}
 

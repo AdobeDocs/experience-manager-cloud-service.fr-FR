@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1729'
 ht-degree: 36%
 
 ---
@@ -37,7 +37,7 @@ Pour préparer la diffusion de contenu à l’aide du réseau CDN intégré d’
 * [Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configuration d’un réseau CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **Limitation du trafic**
 
@@ -150,13 +150,13 @@ Sous Windows :
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-Cela reflète certaines propriétés utilisées dans la requête dans l’en-tête de réponse `x-aem-debug`. Par exemple :
+Ce processus reflète certaines propriétés utilisées dans la requête dans l’en-tête de réponse `x-aem-debug`. Par exemple :
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-Grâce à cela, vous pouvez vérifier, par exemple, les valeurs de host, si l’authentification Edge est configurée, ainsi que la valeur de l’en-tête x-forwarded-host, si une clé Edge est définie et quelle clé est utilisée (si une clé correspond).
+Ce processus permet de vérifier des détails tels que les valeurs de l’hôte, la configuration de l’authentification Edge et la valeur de l’en-tête x-forwarded-host. Il identifie également si une clé Edge est définie et quelle clé est utilisée en cas de correspondance.
 
 ### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
@@ -187,8 +187,7 @@ Lorsqu’une requête reçoit une réponse 403 interdit, cela signifie qu’il m
 
 **Erreur 421 : redirection mal dirigée**
 
-Lorsqu’une requête reçoit une erreur 421 avec un corps autour de `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`, cela indique que le jeu de `Host` HTTP ne correspond à aucun hôte sur les certificats de l’hôte. Cela indique généralement que le paramètre `Host` ou SNI est incorrect. Assurez-vous que les paramètres `Host` et SNI pointent vers la variable publish-p&lt;PROGRAM_ID>-e<ENV-ID>Hôte .adobeaemcloud.com.
-
+Une erreur 421 avec le message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indique que le `Host` HTTP ne correspond à aucun hôte répertorié sur le certificat. Ce problème indique généralement que le paramètre `Host` ou SNI est incorrect. Assurez-vous que les paramètres `Host` et SNI pointent vers l’hôte publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com.
 
 **Trop de boucles de redirection**
 
