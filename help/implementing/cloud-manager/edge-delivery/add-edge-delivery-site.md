@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un site Edge Delivery à votre programme
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 96%
+source-wordcount: '498'
+ht-degree: 92%
 
 ---
 
@@ -48,12 +48,12 @@ Près du coin supérieur droit de la page, cliquez sur **Ajouter un site**.
 
    | Numéro de l’étape | Description |
    | - | - |
-   | **1** | Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertorié dans le champ **URL des référentiels**. N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.<br>Si nécessaire, cliquez sur ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le chemin vers le Presse-papiers. |
-   | **2** | Ajoutez le code affiché dans le champ de texte de l’étape 2 au fichier que vous venez de créer à l’étape 1.<br>Si nécessaire, cliquez sur ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le code dans le presse-papiers. |
+   | **1** | Ajoutez un fichier avec le chemin d’accès et le nom `well-known/adobe/cloudmanager-challenge.txt` à la branche `main` du référentiel Git répertorié dans le champ **URL des référentiels**. N’ajoutez *pas* de point au début du chemin d’accès à l’emplacement.<br>Si nécessaire, cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le chemin d’accès dans le presse-papiers. |
+   | **2** | Ajoutez le code affiché dans le champ de texte de l’étape 2 au fichier que vous venez de créer à l’étape 1.<br>Si nécessaire, cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) pour copier le code dans le presse-papiers. |
    | **3** | Créez une demande d’extraction dans le référentiel Git pour les modifications que vous venez de créer, puis fusionnez-la en `main` pour valider le code. |
 
 1. Cliquez sur **Vérifier**.
 
-Une fois le référentiel vérifié, son état dans le tableau des sites Edge Delivery est mis à jour. Un cercle vert avec une coche blanche à l’intérieur indique le statut.
+Une fois le référentiel vérifié, son statut dans le tableau des sites Edge Delivery est mis à jour. Un cercle vert avec une coche blanche à l’intérieur indique le statut.
 
-Dans le même tableau, cliquez sur ![Informations sur le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher les détails du site. Ces informations comprennent l’URL du référentiel vérifiée, ainsi que les URL du site web de prévisualisation et de production.
+Dans le même tableau, cliquez sur ![Icône Informations sur le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher les détails du site. Ces informations comprennent l’URL du référentiel vérifiée, ainsi que les URL du site web de prévisualisation et de production.
