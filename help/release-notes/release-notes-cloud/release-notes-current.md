@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1749'
 ht-degree: 42%
 
 ---
@@ -78,7 +78,7 @@ Les éditeurs et éditrices privilégiés pour la gestion du contenu découplé 
 
 #### Fonctionnalités du PWA {#pwa-features}
 
-[Les fonctionnalités de l’application web progressive (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) pour AEM Sites sont désormais obsolètes pour les nouveaux projets commençant par la version 2025.1.0. Cette fonctionnalité reste prise en charge pour les projets existants, mais ne doit pas être utilisée pour les nouveaux projets
+[Les fonctionnalités de l’application web progressive (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) pour AEM Sites sont obsolètes pour les nouveaux projets commençant par la version 2025.1.0. Cette fonctionnalité reste prise en charge pour les projets existants, mais ne doit pas être utilisée pour les nouveaux projets
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
