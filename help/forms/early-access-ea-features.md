@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 32%
+source-wordcount: '1998'
+ht-degree: 29%
 
 ---
 
@@ -109,6 +109,11 @@ Prêt à démarrer ? Les articles suivants fournissent des instructions détaill
 
 ## Autres innovations en matière d&#39;accès précoce
 
+### HTML de modèles d’e-mail dans le Forms adaptatif
+
+Le Forms adaptatif permet d’utiliser des modèles d’e-mail HTMLS. Les modèles d’e-mail d’HTML vous permettent d’envoyer des e-mails riches, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec le Forms adaptatif, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+
+
 ### Prise en charge des langues écrites de droite à gauche (RTL)
 
 Le Forms adaptatif peut désormais s’afficher dans une langue de droite à gauche (RTL), ce qui permet d’offrir une expérience utilisateur plus inclusive et une plus grande facilité d’utilisation.
@@ -170,6 +175,20 @@ Le service Forms génère des formulaires PDF interactifs pour la capture de don
 * **Extraction et import des données** : importez des données dans un formulaire PDF existant et extrayez des données d’un formulaire PDF rempli. Les formats de données XDP et XML sont pris en charge, et l’import dans des formulaires PDF non XFA (également appelés AcroForms) prend également en charge les données FDF et XFDF.
 
 * **Validation des données** : validez les données envoyées, au format XDP ou XML, par rapport à un modèle créé à l’aide d’AEM Forms Designer.
+
+### API de génération de documents
+
+L’API de génération de documents comprend une fonctionnalité facultative permettant le chargement direct des PDF générés vers Azure Blob Storage. Voici quelques avantages clés du chargement direct des PDF dans Azure Blob Storage à l’aide de l’API de génération de documents :
+
+* **Intégration transparente au stockage dans le cloud** :
+Le chargement direct des PDF générés vers Azure Blob Storage élimine le besoin d’étapes manuelles ou programmatiques supplémentaires pour transférer les fichiers, rationalisant les workflows et améliorant l’efficacité.
+
+* **Gestion centralisée des documents**
+Le stockage des PDF dans Azure Blob Storage permet une gestion centralisée des documents, ce qui facilite l’organisation, la récupération et la gestion des fichiers générés dans divers cas d’utilisation.
+
+* **Sécurité améliorée** : en tirant parti des fonctionnalités de sécurité intégrées d’Azure, telles que le chiffrement au repos et le contrôle d’accès en fonction du rôle (RBAC), les documents sensibles restent protégés pendant le stockage.
+
+* **Chemins de stockage personnalisables** : la possibilité de définir des chemins de répertoire personnalisés garantit que les PDF générés sont stockés dans des emplacements organisés et spécifiques à l’application, améliorant ainsi la gestion des fichiers.
 
 ## Voir également
 
