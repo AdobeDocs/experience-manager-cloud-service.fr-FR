@@ -4,9 +4,9 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
+source-git-commit: f5fa8f1f23d35d239f7bb0e22e104627f9f84317
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2722'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Pour créer une zone de travail vide, procédez comme suit :
 
 1. Accédez à la vue Assets et cliquez sur **[!UICONTROL Dynamic Media Assets]** disponible dans le panneau de gauche.
 
-   ![](/help/assets/assets/dm-templates/DM-Assets1.png)
+   ![Modèles Dynamic Media](/help/assets/assets/dm-templates/DM-Assets1.png)
 
 1. Cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle sous Dynamic Media Assets ou accédez à un dossier et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans ce dossier. La boîte de dialogue **[!UICONTROL Nouveau modèle]** s’affiche.
-   ![](/help/assets/assets/dm-templates/new-template.png)
+   ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel ](/help/assets/assets/dm-templates/new-template.png)
 Pour [créer un dossier](/help/assets/add-delete-assets-view.md) sous **[!UICONTROL Dynamic Media Assets]**, créez un dossier sous **[!UICONTROL Assets]**. L’arborescence de dossiers sous **[!UICONTROL Assets]** est répliquée sous **[!UICONTROL Dynamic Media Assets]**.
 1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
-   ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
+   ![ modèle personnalisable en temps réel ](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
 >
@@ -76,22 +76,22 @@ Pour [créer un dossier](/help/assets/add-delete-assets-view.md) sous **[!UICONT
 
 **Options de menu dans le volet de droite :** utilisez ces options pour ajouter les calques d’images et de texte nécessaires à la zone de travail.
 
-* ![](/help/assets/assets/dm-templates/add-image.svg) : cliquez pour ajouter des images à la zone de travail.
-* ![](/help/assets/assets/dm-templates/add-text.svg) : cliquez pour ajouter des textes à la zone de travail.
-* ![](/help/assets/assets/dm-templates/show-layers-list.svg) : cliquez pour afficher la liste de tous les calques (image et texte) sur la zone de travail. Chaque image et texte ajouté à la zone de travail est représenté sous la forme d’un calque distinct.
+* ![Modèles DM](/help/assets/assets/dm-templates/add-image.svg) : cliquez pour ajouter des images à la zone de travail.
+* ![modèles personnalisables](/help/assets/assets/dm-templates/add-text.svg) : cliquez pour ajouter des textes à la zone de travail.
+* ![modèles personnalisables](/help/assets/assets/dm-templates/show-layers-list.svg) : cliquez pour afficher la liste de tous les calques (image et texte) sur la zone de travail. Chaque image et texte ajouté à la zone de travail est représenté sous la forme d’un calque distinct.
 
 **Options de menu dans le volet de gauche :** utilisez ces options pour les actions courantes de l’éditeur, comme indiqué ci-dessous.
 
-* ![](/help/assets/assets/dm-templates/layer-selector.svg) : sélectionnez un calque.
-* ![](/help/assets/assets/dm-templates/bring-forward.svg) : cliquez pour avancer un calque sélectionné ou appuyez sur **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac).
-* ![](/help/assets/assets/dm-templates/send-backward.svg) : cliquez pour envoyer un calque sélectionné vers l’arrière ou appuyez sur **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac).
-* ![](/help/assets/assets/dm-templates/undo.svg) : cliquez pour annuler la dernière action ou appuyez sur **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac).
-* ![](/help/assets/assets/dm-templates/redo.svg) : cliquez pour répéter la dernière action ou appuyez sur **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac).
-* ![](/help/assets/assets/dm-templates/zoomin.svg) : cliquez pour effectuer un zoom sur la zone de travail ou appuyez sur **Ctrl** + **+** (Windows) ou Cmd + **+** (Mac).
-* ![](/help/assets/assets/dm-templates/zoomout.svg) : cliquez pour effectuer un zoom arrière sur la zone de travail ou appuyez sur **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
+* ![ Modèles DM ](/help/assets/assets/dm-templates/layer-selector.svg) : sélectionnez un calque.
+* ![modèles prenant en charge la personnalisation](/help/assets/assets/dm-templates/bring-forward.svg) : cliquez pour avancer un calque sélectionné ou appuyez sur **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac).
+* ![comment créer un modèle qui peut être personnalisé facilement ](/help/assets/assets/dm-templates/send-backward.svg) : cliquez pour envoyer un calque sélectionné vers l’arrière ou appuyez sur **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac).
+* ![créez un modèle qui peut être personnalisé instantanément](/help/assets/assets/dm-templates/undo.svg) : cliquez pour annuler la dernière action ou appuyez sur **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac).
+* ![modèle pour créer rapidement des bannières](/help/assets/assets/dm-templates/redo.svg) : cliquez pour répéter la dernière action ou appuyez sur **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac).
+* ![modèle pour créer rapidement des prospectus](/help/assets/assets/dm-templates/zoomin.svg) : cliquez pour effectuer un zoom sur la zone de travail ou appuyez sur **Ctrl** + **+** (Windows) ou Cmd + **+** (Mac).
+* ![modèle pour créer rapidement des bannières](/help/assets/assets/dm-templates/zoomout.svg) : cliquez pour effectuer un zoom arrière sur la zone de travail ou appuyez sur **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
 * Appuyez sur **Retour arrière** ou **Supprimer** pour supprimer le calque sélectionné si aucun texte ou propriété n’est modifié.
 
-Cliquez sur ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** d’autres options (![](/help/assets/assets/dm-templates/three-dots.svg)) sur le calque Zone de travail pour modifier les dimensions de la zone de travail à tout moment lors de la création du modèle.
+Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/dm-templates/show-layers-list.svg) **>** d’autres options (![](/help/assets/assets/dm-templates/three-dots.svg)) sur le calque Zone de travail pour modifier les dimensions de la zone de travail à tout moment lors de la création du modèle.
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -102,19 +102,19 @@ Cliquez sur ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** d�
 
 Pour ajouter des images à la zone de travail, procédez comme suit :
 
-1. Cliquez sur ![](/help/assets/assets/dm-templates/add-image.svg) pour afficher le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec Dynamic Media.
+1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/dm-templates/add-image.svg) pour afficher le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec Dynamic Media.
 1. Parcourez le panneau ou utilisez des mots-clés dans la barre de recherche pour trouver une image spécifique.
 1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
-   ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
+   ![créez une bannière en quelques secondes](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Ajouter des calques de texte à la zone de travail{#add-text-to-the-canvas}
 
 Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
 
-1. Cliquez sur ![](/help/assets/assets/dm-templates/add-text.svg) pour ajouter un calque de texte à la zone de travail et ouvrir le panneau Propriétés .
+1. Cliquez sur ![création rapide de nouvelles bannières](/help/assets/assets/dm-templates/add-text.svg) pour ajouter un calque de texte à la zone de travail et ouvrir le panneau Propriétés.
 1. Sélectionnez le calque et cliquez sur le texte pour le mettre à jour.
 1. Activez l’option **[!UICONTROL Redimensionnement intelligent du texte]** dans le panneau Propriétés pour ajuster automatiquement la longueur du texte et la taille de police afin qu’ils s’adaptent de manière optimale à la zone désignée.
-   ![](/help/assets/assets/dm-templates/add-text-layer.png)
+   ![meilleures bannières personnalisables](/help/assets/assets/dm-templates/add-text-layer.png)
 
 Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement de votre choix (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
 
@@ -126,22 +126,22 @@ Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, report
 
 Pour modifier ou supprimer un calque de zone de travail, procédez comme suit :
 
-1. Cliquez sur ![](/help/assets/assets/dm-templates/show-layers-list.svg) et sélectionnez le calque dans la zone de travail ou dans la liste Calques.
-1. Cliquez sur **autres options** (![](/help/assets/assets/dm-templates/three-dots.svg)) pour modifier ou supprimer le calque.
+1. Cliquez sur ![Modèles prenant en charge les mises à jour dynamiques](/help/assets/assets/dm-templates/show-layers-list.svg) et sélectionnez le calque dans la zone de travail ou dans la liste Calques.
+1. Cliquez sur **autres options** (![modèles avec prise en charge des mises à jour en temps réel](/help/assets/assets/dm-templates/three-dots.svg)) pour modifier ou supprimer le calque.
 1. Cliquez sur **[!UICONTROL Supprimer]** pour supprimer le calque.
 1. Cliquez sur **[!UICONTROL Modifier]** pour modifier le calque à l’aide du [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
-   ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
+   ![création rapide de bannières](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Panneau Propriétés{#properties-panel}
 
 Pour accéder au panneau des propriétés d’un calque :
 
-1. Cliquez sur ![](/help/assets/assets/dm-templates/show-layers-list.svg).
+1. Cliquez sur ![création rapide de contenu](/help/assets/assets/dm-templates/show-layers-list.svg).
 1. Sélectionnez le calque dans la liste.
 
 Ce panneau affiche la position du point central du calque sur le plan de la zone de travail (valeurs X et Y) et les dimensions du calque (largeur et hauteur), ainsi que les options de mise en forme du texte.
 
-![](/help/assets/assets/dm-templates/properties-panel.png)
+![création rapide de contenu](/help/assets/assets/dm-templates/properties-panel.png)
 
 Dans le panneau des propriétés d’un calque, sélectionnez un autre calque sur la zone de travail pour accéder à son panneau des propriétés.
 
@@ -160,7 +160,7 @@ Pour modifier un calque de texte ou d’image, reportez-vous aux actions courant
 Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement de votre choix (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
 
 **[!UICONTROL Redimensionnement de texte intelligent]** Assurez-vous d’inclure **[!UICONTROL Redimensionnement de texte intelligent]** ([Adaptation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) pour adapter de manière optimale le texte de la zone désignée en ajustant intelligemment la taille et la longueur de la police. Cette fonctionnalité empêche le texte de déborder ou réduit les espaces supplémentaires en bas du texte.
-![](/help/assets/assets/dm-templates/smart-text-resize.png)
+![ création de contenu en un rien de temps ](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### Calques de paramètres {#parameterise-a-layer}
 
@@ -168,11 +168,11 @@ Après avoir créé un modèle avec plusieurs calques d’images et de textes, p
 
 Pour paramétrer un calque :
 
-1. Cliquez sur ![](/help/assets/assets/dm-templates/show-layers-list.svg), sélectionnez un calque et cliquez sur **[!UICONTROL Paramètres]**. Le panneau **[!UICONTROL Paramètres]** s’affiche.
+1. Cliquez sur ![création instantanée de contenu](/help/assets/assets/dm-templates/show-layers-list.svg), sélectionnez un calque et cliquez sur **[!UICONTROL Paramètres]**. Le panneau **[!UICONTROL Paramètres]** s’affiche.
 1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Voir [this](#parameterisation-options-or-allowed-parameters) pour connaître le comportement de la propriété après le paramétrage.
 1. **Facultatif :** renommez le nom du paramètre. Un nom de paramètre comporte un nom de calque suivi d’un suffixe. Pour un calque sélectionné, toutes ses propriétés paramétrées partagent le même nom de calque suivi d’un suffixe variable. Renommez le nom du calque en suivant la convention de nommage sémantique de sorte que, lorsque vous incluez le paramètre dans l’URL, le nom du paramètre explique lui-même le contenu du calque ou son objectif.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
-   ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
+   ![création instantanée de contenu](/help/assets/assets/dm-templates/parameterise-a-layer.png)
 Pour basculer entre le panneau Paramètres d’un calque d’image et de texte, sélectionnez le calque sur la zone de travail et cliquez sur **[!UICONTROL Paramètres]**.
 
 #### Option du panneau Paramètres {#parameterisation-options-or-allowed-parameters}
@@ -201,7 +201,7 @@ Insérez les paramètres ci-dessous pour modifier le texte, sa police, sa couleu
 
 Pour conserver la flexibilité de vos modèles, vous pouvez également utiliser un seul nom de paramètre pour contrôler plusieurs calques. Cette stratégie est utile pour le paramètre de visibilité (masquer ou afficher les calques), afin de mettre à jour la conception ou les graphiques d’un seul modèle.
 
-Pour attribuer le même nom aux paramètres de masquage (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) de plusieurs calques, procédez comme suit pour masquer ou afficher les calques simultanément.
+Pour attribuer le même nom aux paramètres de masquage (![création rapide de contenu](/help/assets/assets/dm-templates/Visibility-icon.svg)) de plusieurs calques, procédez comme suit pour masquer ou afficher les calques simultanément.
 
 1. Accédez au [**[!UICONTROL panneau Propriétés]**](#parameterise-a-layer) d’un calque.
 1. Activez/désactivez le paramètre **[!UICONTROL Masquer]** s’il n’est pas paramétré précédemment.
@@ -219,13 +219,13 @@ Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL
 1. Sur la page Zone de travail, cliquez sur **[!UICONTROL Aperçu]**. Vous pouvez également accéder à **[!UICONTROL Vue Assets]** **>** **[!UICONTROL Dynamic Media Assets]** **>** rechercher et sélectionner votre modèle **>** cliquer sur **[!UICONTROL Modifier le modèle]**>**>** cliquer sur **[!UICONTROL Preview]**. La page d&#39;aperçu affiche le modèle, ses paramètres (calques et propriétés paramétrés), l&#39;état de publication et l&#39;option **[!UICONTROL Publish]**.
 1. Sélectionnez des paramètres dans le panneau **[!UICONTROL Paramètres du modèle]** pour modifier leurs valeurs et mettre instantanément à jour le contenu, la taille, la position ou le formatage textuel du calque de modèle correspondant dans l’aperçu. Par exemple :
    1. Sélectionnez un calque de texte et modifiez son texte ou
-   1. Sélectionnez un calque d’image, cliquez sur ![](/help/assets/assets/dm-templates/add-image.svg), sélectionnez une image dans le sélecteur de ressources, puis cliquez sur **[!UICONTROL Actualiser]**.
+   1. Sélectionnez un calque d’image, cliquez sur ![création de contenu à la volée](/help/assets/assets/dm-templates/add-image.svg), sélectionnez une image dans le sélecteur de ressources, puis cliquez sur **[!UICONTROL Actualiser]**.
 
    Le modèle est immédiatement mis à jour, affichant le texte modifié et remplaçant l’image précédente par la nouvelle. En outre, la valeur du paramètre d’image reflète le nouveau chemin d’accès à l’image. De même, vous pouvez redimensionner un calque en ajustant ses valeurs, et les modifications sont appliquées au modèle en temps réel.
 1. Sélectionnez dans la liste le paramètre de masquage des [calques groupés](#group-layers) pour les afficher ou les masquer ensemble dans le modèle.
 1. **Facultatif :** modifiez la valeur du paramètre **[!UICONTROL Masquer]** comprise entre 0 et 1 et cliquez sur **[!UICONTROL Actualiser]** pour afficher les modifications. Les calques ayant le même paramètre de masquage sont masqués ou affichés ensemble. De même, vous pouvez contrôler la visibilité des calques à partir de l’URL.
 
-   ![](/help/assets/assets/dm-templates-publish-status.png)
+   ![création de contenu à la volée](/help/assets/assets/dm-templates-publish-status.png)
 Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.
    <br>
 1. Pour publier le modèle sur la page d&#39;aperçu, cliquez sur **[!UICONTROL Publish]** et confirmez la publication. Le message Publish Terminé s’affiche et le statut de publication est mis à jour sur Publié.
