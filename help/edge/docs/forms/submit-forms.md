@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Une fois que vous avez [créé et prévisualisé le formulaire](/help/edge/docs/
 
 Pour permettre à la feuille de calcul d’accepter des données
 
-1. Ouvrez la feuille de calcul contenant votre formulaire et ajoutez une nouvelle feuille, en la renommant `incoming`. Par exemple, le classeur Excel [query](/help/edge/assets/enquiry.xlsx) de Microsoft.
+1. Ouvrez la feuille de calcul qui comporte votre formulaire et ajoutez-y une nouvelle feuille en la renommant `incoming`. Par exemple, le classeur Microsoft Excel de formulaires [enquiry](/help/edge/assets/enquiry.xlsx).
 
    >[!WARNING]
    >
@@ -42,15 +42,15 @@ Pour permettre à la feuille de calcul d’accepter des données
 
 1. Remplacez le nom du tableau par « intake_form ». Dans Microsoft Excel, pour modifier le nom du tableau, sélectionnez-le, puis cliquez sur Conception du tableau.
 
-1. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-aem ».  Dans votre feuille « shared-aem », sélectionnez et copiez les ID de formulaire répertoriés sous la colonne « Nom », à l’exception du champ d’envoi.
+1. Ajoutez ensuite les noms des champs de formulaire en tant qu’en-têtes de tableau. Pour vous assurer que les champs sont exactement les mêmes, vous pouvez les copier et les coller à partir de la feuille « shared-aem ».  Dans votre feuille « shared-aem », sélectionnez et copiez les identifiants de formulaires répertoriés sous la colonne « Name », à l’exception du champ d’envoi.
 
 1. Dans la feuille « incoming », sélectionnez Collage spécial > Transposer les lignes en colonnes pour copier les identifiants de champ sous forme d’en-têtes de colonne dans cette nouvelle feuille. Ne conservez que les champs dont les données doivent être capturées, les autres peuvent être ignorés.
 
-   Chaque valeur dans la colonne `Name` de la feuille `shared-aem`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « requête » :
+   Chaque valeur dans la colonne `Name` de la feuille `shared-aem`, à l’exception du bouton d’envoi, peut servir d’en-tête dans la feuille `incoming`. Prenons l’exemple de l’image suivante illustrant les en-têtes d’un formulaire « enquiry » :
 
    ![Champs d’un formulaire contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Utilisez l’extension [AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser les mises à jour des formulaires. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
+1. Utilisez l’extension [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser les mises à jour du formulaire. Votre feuille est maintenant prête à accepter les envois de formulaire entrants.
 
    >[!NOTE]
    >
@@ -59,11 +59,11 @@ Pour permettre à la feuille de calcul d’accepter des données
 
 Une fois que les noms de champs sont ajoutés à la feuille `incoming`, votre formulaire est prêt à accepter des envois. Vous pouvez prévisualiser le formulaire et envoyer des données à la feuille à l’aide de celui-ci.
 
-Une fois la feuille configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> commencer à envoyer des données à la feuille.
+Une fois la feuille configurée pour recevoir des données, vous pouvez [prévisualiser le formulaire](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> pour commencer à envoyer des données à la feuille.
 
 >[!WARNING]
 >
->  Les feuilles « shared-aem » ne doivent jamais contenir d’informations d’identification personnelle ou de données sensibles que vous n’êtes pas à l’aise de voir accessibles au public.
+>  Les feuilles « shared-aem » ne doivent jamais contenir d’informations personnelles identifiables ou de données sensibles que vous ne souhaitez pas rendre accessibles au public.
 
 
 ## Utiliser des API d’administration pour permettre à une feuille de calcul d’accepter des données

@@ -88,9 +88,9 @@ ht-degree: 99%
          + [Notes de mise à jour de la version 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
-      + {#2025} 2025
+      + {#2025} 2025
          + [Notes de mise à jour de maintenance de la version 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
-      + 2024 {#2024}
+      + {#2024} 2024
          + [Notes de mise à jour de maintenance de la version 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
          + [Notes de mise à jour de maintenance de la version 2024.10.0](/help/release-notes/maintenance/2024/2024-10-0.md)
          + [Notes de mise à jour de maintenance de la version 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
@@ -312,7 +312,7 @@ ht-degree: 99%
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestion des entités après la migration](/help/journey-migration/managing-principals-after-migration.md)
-         + [Dépannage de l’outil de transfert de contenu ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Outil de mappage hérité (hérité){#legacy-user-mapping-tool}
             + [Vue d’ensemble](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
@@ -1020,7 +1020,7 @@ ht-degree: 99%
          + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Expressions regex pour les validations](/help/edge/docs/forms/regex-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Utilisation du service de soumission Forms](/help/forms/forms-submission-service.md)
+         + [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
       + {#universal-editor} WYSIWYG
          + [Présentation - Éditeur universel pour Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Commencer](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1032,7 +1032,7 @@ ht-degree: 99%
          + [Utiliser reCAPTCHA pour protéger vos formulaires](/help/edge/docs/forms/recaptacha-forms.md)
          + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des utilisateurs et utilisatrices réels pour les formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Publication de Forms pour les Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Publier des formulaires pour Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Resources Edge Delivery {#resources}

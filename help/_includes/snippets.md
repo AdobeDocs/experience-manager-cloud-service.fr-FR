@@ -66,7 +66,7 @@ ht-degree: 97%
 * [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
 * [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
-* [Utilisation du service d’envoi de formulaire](/help/forms/forms-submission-service.md)
+* [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
 
 
 ## Différences entre l’éditeur de règles dans les composants principaux et l’éditeur de règles dans les composants de base {#rule-editor-diff}
@@ -116,7 +116,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </tr>
    <tr>
    <td>Naviguer entre les panneaux</td>
-   <td> Les composants <b>Bouton suivant</b> et <b>Bouton précédent</b> sont fournis pour naviguer entre les panneaux. Un bouton de navigation placé dans le conteneur fonctionne sur ses éléments enfant.</td>
+   <td> Les composants <b>Bouton suivant</b> et <b>Bouton précédent</b> sont fournis pour naviguer entre les panneaux. Un bouton de navigation placé dans le conteneur fonctionne sur ses éléments enfant</td>
    <td> La règle <b>Navigation dans le panneau</b> est disponible dans l’éditeur de règles, ce qui permet aux utilisateurs et utilisatrices de créer des règles pour naviguer entre les enfants des panneaux.
    </td>
    </tr>
@@ -233,7 +233,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
    * URL du site web actif. Par exemple : `www.mydomain.com`.
    * URL du site web d’origine (URL `.hlx`).
 
-## L’éditeur universel est préférable à l’éditeur SPA. {#ue-over-spa}
+## L’éditeur universel est préférable à l’éditeur SPA {#ue-over-spa}
 
 >[!IMPORTANT]
 >
