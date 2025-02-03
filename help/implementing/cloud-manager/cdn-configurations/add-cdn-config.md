@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '453'
 ht-degree: 11%
 
 ---
@@ -22,6 +22,8 @@ Pour les réseaux de diffusion de contenu gérés par l’Adobe, lors de l’uti
 >[!IMPORTANT]
 >
 >Avez-vous [ajouté un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) et [ajouté un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md), respectivement ? Dans le cas contraire, vous devez effectuer ces deux tâches avant de pouvoir ajouter une configuration de réseau CDN.
+
+Consultez également la section [Réseau CDN géré par l’Adobe ](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
 **Pour ajouter une configuration CDN, procédez comme suit**
 
