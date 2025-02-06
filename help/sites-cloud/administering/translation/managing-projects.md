@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4129'
 ht-degree: 87%
 
 ---
@@ -275,6 +275,28 @@ Vous pouvez ajouter des pages, des ressources ou des balises à la tâche de tra
 >[!TIP]
 >
 >Cette méthode ajoute des pages/ressources et leurs enfants au projet. Sélectionnez **Ressource/page (sans enfants)** si vous souhaitez uniquement ajouter les parents.
+
+### Ajout de dictionnaires i18n à une tâche de traduction {#adding-i-n-dictionaries-to-a-translation-job}
+
+Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter un dictionnaire i18n :
+
+1. Dans la partie inférieure de la vignette Tâche de traduction du projet de traduction, cliquez sur le bouton représentant des points de suspension.
+
+   ![Mosaïque de tâche de traduction](../assets/translation-job.png)
+
+1. Cliquez sur Ajouter et dictionnaire I18N.
+
+   ![Ajouter un dictionnaire i18n](../assets/add-i18n.png)
+
+1. Sélectionnez le **répertoire racine** et le dictionnaire (si nécessaire) que vous souhaitez ajouter, puis sélectionnez **Ajouter**.
+
+   ![Sélectionner le dictionnaire i18N](../assets/select-i18n.png)
+
+Votre dictionnaire se trouve maintenant dans votre tâche de traduction et le processus de traduction peut alors commencer pour créer les copies de langue du dictionnaire dans `/content/cq:i18n` et envoyer ces copies de langue du dictionnaire pour traduction.
+
+>[!NOTE]
+>
+>Pour plus d’informations sur les dictionnaires i18N, consultez [Utilisation du traducteur pour gérer des dictionnaires](/help/implementing/developing/extending/i18n/translator.md).
 
 ### Ajout de balises à une tâche de traduction {#adding-tags-to-a-translation-job}
 

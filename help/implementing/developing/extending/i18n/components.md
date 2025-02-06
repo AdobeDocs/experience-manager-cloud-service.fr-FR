@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 401685af02c720994d72cd95d36f0cfcdf15d198
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 76%
+source-wordcount: '355'
+ht-degree: 81%
 
 ---
 
@@ -21,9 +21,9 @@ Internationalisez vos composants et boîtes de dialogue afin que leurs chaînes 
 
 Procédez comme suit pour internationaliser vos composants et proposer l’interface utilisateur dans différentes langues :
 
-1. [Implémentez vos composants à l’aide de code qui internationalise les chaînes](/help/implementing/developing/extending/i18n/dev.md). Votre code identifie les chaînes à traduire et sélectionne la langue à présenter au moment de l’exécution.
-1. Créez des dictionnaires et ajoutez les chaînes de caractères anglaises à traduire.
-1. Exportez le dictionnaire au format XLIFF, traduisez les chaînes, puis réimportez les fichiers XLIFF dans AEM.
+1. [Mettez en œuvre vos composants à l’aide d’un code qui internationalise les chaînes.](/help/implementing/developing/extending/i18n/dev.md) Votre code identifie les chaînes à traduire et sélectionne la langue à présenter au moment de l’exécution.
+1. [Créer des dictionnaires](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary).
+1. [Exporter](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary) le dictionnaire au format XLIFF, traduire les chaînes, puis réimporter les fichiers XLIFF dans AEM.
 1. Incorporez le dictionnaire au processus de gestion des versions de votre application.
 
 >[!NOTE]
@@ -37,10 +37,11 @@ Le framework d’internationalisation d’AEM utilise des dictionnaires dans le 
 * Le code est facile à lire.
 * La langue par défaut est toujours disponible.
 
-Les modifications de traduction doivent provenir de Git via le pipeline [CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) dans AEM as a Cloud Service.
+L’[outil de traduction](/help/implementing/developing/extending/i18n/translator.md) vous permet de gérer tous les dictionnaires à partir d’un emplacement central.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+Les modifications de traduction doivent provenir de Git via le pipeline [CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) dans AEM as a Cloud Service.
 
 ### Remplacement de chaînes dans les dictionnaires système {#overlaying-strings-in-system-dictionaries}
 
