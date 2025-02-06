@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 29%
+source-wordcount: '2056'
+ht-degree: 28%
 
 ---
 
@@ -111,7 +111,19 @@ Prêt à démarrer ? Les articles suivants fournissent des instructions détaill
 
 ### HTML de modèles d’e-mail dans le Forms adaptatif
 
-Le Forms adaptatif permet d’utiliser des modèles d’e-mail HTMLS. Les modèles d’e-mail d’HTML vous permettent d’envoyer des e-mails riches, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec le Forms adaptatif, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+
+Le Forms adaptatif vous permet d’utiliser des modèles d’e-mail [HTML ](/help/forms/html-email-templates-in-adaptive-forms.md). Les modèles d’e-mail d’HTML vous permettent d’envoyer des e-mails riches, personnalisés et visuellement attrayants lorsqu’un formulaire est envoyé. Ces e-mails peuvent être personnalisés avec des données de formulaire et améliorés à l’aide de différentes balises d’e-mail, telles que des images et des liens. Avec le Forms adaptatif, vous pouvez charger un fichier contenant un modèle HTML ou utiliser un éditeur de texte brut pour créer ces modèles.
+
+![HTML de modèles d’e-mail](/help/forms/assets/html-email.png)
+
+### Action d’envoi des services web RESTful
+
+Le Forms adaptatif peut désormais envoyer facilement des données capturées à des points d’entrée REST externes authentifiés avec la nouvelle action d’envoi des services web RESTful :
+
+* Normes prises en charge : Swagger 2.0 et 3.0 pour une intégration facile des API
+* Authentification sécurisée : OAuth 2.0, authentification de base, clé API et authentification personnalisée
+* Formats de données flexibles : données de formulaire en plusieurs parties, JSON et encodées en URL (paires clé-valeur)
+
 
 
 ### Prise en charge des langues écrites de droite à gauche (RTL)
