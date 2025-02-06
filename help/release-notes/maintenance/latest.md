@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 22%
+source-wordcount: '919'
+ht-degree: 21%
 
 ---
 
@@ -85,6 +85,8 @@ L’activation des fonctionnalités de la version 2025.2.0 fournit l’ensemble
 * SITES-26660 : la comparaison des versions de fragments de contenu peut être rompue lorsque @ContentType est de type « chaîne ».
 * SITES-26626 : customErrorMessage manquant sur les champs numériques et booléens.
 * SITES-26268 : code d’état incorrect renvoyé si une référence n’est pas valide lors de la création d’un fragment.
+* FORMS-18098, FORMS-17954 : le Forms adaptatif ne parvient pas à se charger dans le mode Internet Explorer du navigateur Microsoft Edge.
+* FORMS-17162 : la publication d’une ressource entraîne l’exécution de requêtes prêtes à l’emploi, ce qui dégrade les performances de publication.
 
 ### Problèmes connus {#known-issues-19352}
 
