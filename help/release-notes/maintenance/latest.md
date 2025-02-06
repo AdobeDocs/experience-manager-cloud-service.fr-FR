@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 21%
 
 ---
@@ -56,6 +56,11 @@ L’activation des fonctionnalités de la version 2025.2.0 fournit l’ensemble
 
 ### Problèmes résolus {#fixed-issues-19352}
 
+* CQ-4356756 : ne traduisez pas la prise en charge des ressources connexes.
+* CQ-4358206 : le planificateur de traduction de répétition ne fonctionne pas pour les projets de traduction.
+* CQ-4358126 : impossible de sélectionner le sous-dossier de configuration dans le service cloud de traduction.
+* FORMS-18098, FORMS-17954 : le Forms adaptatif ne parvient pas à se charger dans le mode Internet Explorer du navigateur Microsoft Edge.
+* FORMS-17162 : la publication d’une ressource entraîne l’exécution de requêtes prêtes à l’emploi, ce qui dégrade les performances de publication.
 * SITES-28415 : Edge Delivery avec éditeur universel : correction du bouton Ouvrir les propriétés des feuilles de calcul.
 * SITES-26669 : Edge Delivery avec éditeur universel : correction de problèmes lors du chargement de fichiers CSV codés en UTF-8 avec une nomenclature comme feuille de calcul.
 * SITES-26543 : Edge Delivery avec l’éditeur universel : correction des blocs vides sans qu’un modèle ne génère de balisage incorrect.
@@ -85,8 +90,6 @@ L’activation des fonctionnalités de la version 2025.2.0 fournit l’ensemble
 * SITES-26660 : la comparaison des versions de fragments de contenu peut être rompue lorsque @ContentType est de type « chaîne ».
 * SITES-26626 : customErrorMessage manquant sur les champs numériques et booléens.
 * SITES-26268 : code d’état incorrect renvoyé si une référence n’est pas valide lors de la création d’un fragment.
-* FORMS-18098, FORMS-17954 : le Forms adaptatif ne parvient pas à se charger dans le mode Internet Explorer du navigateur Microsoft Edge.
-* FORMS-17162 : la publication d’une ressource entraîne l’exécution de requêtes prêtes à l’emploi, ce qui dégrade les performances de publication.
 
 ### Problèmes connus {#known-issues-19352}
 
