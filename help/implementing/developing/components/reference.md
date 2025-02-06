@@ -4,10 +4,10 @@ description: Guide de référence du développeur sur les détails des composant
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
-ht-degree: 97%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ Les composants sont essentiels à la création d’une expérience dans AEM. Les
 
 >[!TIP]
 >
->Avant de faire consulter ce document, assurez-vous d’avoir suivi le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et de connaître ainsi les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
+>Avant de faire référence à ce document, assurez-vous d’avoir terminé le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et de vous familiariser ainsi avec les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr).
 
 Comme le tutoriel WKND aborde la plupart des cas d’utilisation, ce document est uniquement conçu comme un supplément à ces ressources. Il présente des détails techniques sur la structuration et la configuration des composants dans AEM et n’est pas conçu comme un guide de prise en main.
 
@@ -57,7 +57,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour prendre le contenu requis, puis le rendre selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour prendre le contenu requis et le rendre selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -92,7 +92,7 @@ Ceci est une abstraction qui permet de s’assurer que même lorsque l’aspect 
 
 La définition d’un composant peut être décomposée comme suit :
 
-* Les composants AEM sont basés sur [Sling.](https://sling.apache.org/documentation.html)
+* Les composants AEM sont basés sur [Sling](https://sling.apache.org/documentation.html).
 * Les composants AEM sont stockés sous `/libs/core/wcm/components`.
 * Les composants spécifiques au projet/site sont stockés sous `/apps/<myApp>/components`.
 * Les composants standard d’AEM sont définis comme `cq:Component` et possèdent les éléments clés suivants :
@@ -105,32 +105,32 @@ La définition d’un composant peut être décomposée comme suit :
 * **Nœud racine** :
    * `<mycomponent> (cq:Component)` – Nœud de hiérarchie du composant.
 * **Propriétés vitales** :
-   * `jcr:title` – Titre du composant, utilisé par exemple comme une étiquette lorsque le composant est répertorié dans le [navigateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) et la [console des composants](/help/sites-cloud/authoring/components-console.md)
-   * `jcr:description` – Description du composant affichée lorsque l’on place le curseur de la souris au-dessus dans le navigateur de composants et la console de composants
-   * Voir la section [Icône de composant](#component-icon) pour plus de détails.
+   * `jcr:title` - Titre du composant, utilisé par exemple comme un libellé lorsque le composant est répertorié dans les [Explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) et [Console de composants](/help/sites-cloud/authoring/components-console.md).
+   * `jcr:description` - Description du composant affichée lorsque l’on place le curseur de la souris au-dessus dans le navigateur de composants et la console de composants.
+   * Voir la section [Icône de composant](#component-icon) pour plus d’informations.
 * **Nœuds enfants essentiels** :
-   * `cq:editConfig (cq:EditConfig)` – Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants
+   * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants.
       * Si le composant présente une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
    * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` – Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
-   * `cq:design_dialog (nt:unstructured)` – Modification de la conception du composant
+   * `cq:design_dialog (nt:unstructured)` - Modification de la conception du composant.
 
 #### Icône de composant {#component-icon}
 
 L’icône ou l’abréviation du composant est définie via les propriétés JCR du composant lorsque le composant est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
 
-1. `cq:icon` – Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) à afficher dans le navigateur de composants
+1. `cq:icon` - Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) à afficher dans l’explorateur de composants.
    * Utilisez la valeur de l’attribut HTML de l’icône Coral.
-1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
+1. `abbreviation` - Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants.
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple, « Im » pour « Image »
+      * Par exemple, « Im » pour « Image ».
       * Le titre localisé est utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
-1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
+1. `cq:icon.png` ou `cq:icon.svg` - Icône du composant, affichée dans le navigateur de composants.
    * La taille des icônes des composants standard est de 20 x 20 pixels.
       * Les icônes plus grandes sont réduites (côté client).
-   * La couleur recommandée est rgb(112, 112, 112) > # 707070
+   * La couleur recommandée est rgb(112, 112, 112) > #707070.
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
    * Si vous importez à partir du système de fichiers via le module externe Eclipse, les noms de fichiers doivent être configurés comme `_cq_icon.png` ou `_cq_icon.svg`, par exemple.
@@ -172,7 +172,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | `cq:isContainer` | `Boolean` | Cela indique si le composant est un composant de type « container » qui peut donc contenir d’autres composants, tels qu’un système de paragraphes. |
 | `cq:dialog` | `nt:unstructured` | Définition de la boîte de dialogue de modification du composant. |
 | `cq:design_dialog` | `nt:unstructured` | Définition de la boîte de dialogue de conception du composant. |
-| `cq:editConfig` | `cq:EditConfig` | Définit la configuration de [modification du composant.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Cet exemple définit la configuration [modifier) du composant](#edit-behavior). |
 | `cq:htmlTag` | `nt:unstructured` | Renvoie des attributs de balise supplémentaires ajoutés à la balise HTML environnante. Active l’ajout d’attributs aux divs générés automatiquement. |
 | `cq:noDecoration` | `Boolean` | Si la valeur est true, le composant n’est pas rendu avec les classes div et css générées automatiquement. |
 | `cq:template` | `nt:unstructured` | S’il est détecté, ce nœud est utilisé comme modèle de contenu lorsque le composant est ajouté depuis l’explorateur de composants. |
@@ -252,11 +252,11 @@ Content not found
 
 Pour créer un widget à utiliser dans une boîte de dialogue de composant, vous devez créer un composant de champ de l’IU Granite.
 
-Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. Pour créer un champ de formulaire, vous devez créer un type de ressource, ce qui équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
+Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource ; cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Plus précisément, l’IU Granite offre divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue, ou de manière plus générale dans des [formulaires.](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Plus précisément, l’IU Granite fournit divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue ou, de manière plus générale, dans des [formulaires](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Une fois que vous avez créé votre type de ressource, vous pouvez instancier le champ en ajoutant un nouveau nœud dans la boîte de dialogue, avec la propriété `sling:resourceType` faisant référence au type de ressource que vous venez d’introduire.
 
@@ -339,7 +339,7 @@ Le script HTL type pour effectuer le rendu du code HTML d’espace réservé ci-
 
 Dans l’exemple précédent, `isEmpty` est une variable vraie uniquement lorsque le composant n’a aucun contenu et est invisible pour l’auteur.
 
-Pour éviter la répétition, Adobe recommande que les implémenteurs des composants utilisent un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Pour éviter la répétition, Adobe recommande aux personnes qui mettent en œuvre les composants d’utiliser un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 L’utilisation du modèle dans le lien précédent se fait ensuite grâce à la ligne HTL suivante :
 
@@ -350,7 +350,7 @@ L’utilisation du modèle dans le lien précédent se fait ensuite grâce à la
 
 Dans l’exemple précédent, `model.text` est la variable qui est vraie uniquement lorsque le contenu comporte du contenu et est visible.
 
-Vous trouverez un exemple d’utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Vous trouverez un exemple d’utilisation de ce modèle dans les composants principaux, [par exemple dans le composant Titre](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configuration avec des nœuds enfants cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
@@ -443,7 +443,7 @@ La validation du champ dans l’IU Granite et les widgets de l’IU Granite est 
 
 ### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous disposez d’un JavaScript personnalisé qui ne doit être exécuté que lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
+Si vous disposez d’un JavaScript personnalisé qui ne doit être exécuté que lorsque la boîte de dialogue est disponible et prête, vous devez prendre en compte l’événement `dialog-ready`.
 
 Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 

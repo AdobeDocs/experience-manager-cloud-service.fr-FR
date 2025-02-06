@@ -4,7 +4,7 @@ description: Si vous disposez de nombreux sites similaires qui ressemblent et se
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,17 +21,17 @@ Par défaut, AEM est étroitement lié à votre référentiel de code, qui répo
 
 Au lieu de créer plusieurs référentiels GitHub et d’exécuter chaque site à partir d’un référentiel GitHub dédié tout en les maintenant synchronisés, AEM prend en charge l’exécution de plusieurs sites à partir de la même base de code.
 
-Cette configuration simplifiée, qui élimine la nécessité de la réplication du code, est également appelée [ « réponses » ](https://www.aem.live/docs/repoless), car tous les sites, à l’exception du premier, n’ont pas besoin de leur propre référentiel GitHub.
+Cette configuration simplifiée, qui élimine la nécessité de la réplication du code, est également appelée « réplication [ »](https://www.aem.live/docs/repoless) car tous, à l’exception de votre premier site, n’ont pas besoin de leur propre référentiel GitHub.
 
 Si votre projet nécessite la flexibilité réactive de la réutilisation du code sur plusieurs sites, vous pouvez activer la fonctionnalité.
 
 Quel que soit le nombre de sites que vous souhaitez créer en fin de compte sans réponse, vous devez créer votre premier site, qui sert de site de base. Ce document explique comment créer votre premier site pour une utilisation sans réponse.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour tirer parti de cette fonctionnalité, vérifiez que vous avez effectué les opérations suivantes.
 
-* Votre site est déjà entièrement configuré en suivant le document [Guide de prise en main pour le développeur pour la création WYSIWYG avec des Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Votre site est déjà entièrement configuré en suivant le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Vous exécutez AEM as a Cloud Service 2024.08 au minimum.
 
 Vous devrez également demander à l’Adobe de configurer les éléments suivants pour vous. Contactez par le biais de votre canal de Slack ou soulevez un problème d’assistance pour demander l’Adobe d’effectuer ces modifications :
@@ -70,7 +70,7 @@ Une fois que vous disposez de votre jeton d’accès, il peut être transmis dan
 
 Vous devez créer une configuration de site et l’ajouter à votre mappage de chemin d’accès.
 
-1. Créez une page à la racine de votre site et choisissez le modèle [**Configuration**. ](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Créez une page à la racine de votre site et choisissez le modèle [**Configuration**](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * Vous pouvez laisser la configuration vide avec uniquement les colonnes `key` et `value` prédéfinies. Il suffit de le créer.
 1. Créez un mappage dans la configuration publique à la configuration du site à l’aide d’une commande cURL similaire à la suivante.
 

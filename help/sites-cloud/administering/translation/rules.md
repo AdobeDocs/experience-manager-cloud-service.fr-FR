@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -18,15 +18,15 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 
-Les règles de traduction décrites dans ce document s’appliquent aux fragments de contenu uniquement si l’option **Activer les champs de modèle de contenu pour la traduction** n’a pas été activée au niveau de la fonction [niveau de configuration de la structure d’intégration de traduction.](integration-framework.md#assets-configuration-properties)
+Les règles de traduction décrites dans ce document s’appliquent aux fragments de contenu uniquement si l’option **Activer les champs de modèle de contenu pour la traduction** n’a pas été activée au niveau de la configuration de la structure d’intégration de traduction [traduction](integration-framework.md#assets-configuration-properties).
 
 Si l’option **Activer les champs de modèle de contenu pour la traduction** est active, AEM utilisera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des règles de traduction en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées et ne nécessite aucune intervention ni aucune étape supplémentaire.
 
-Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, l’option **Activer les champs de modèle de contenu pour la traduction** sur la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
+Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, l’option **Activer les champs de modèle de contenu pour la traduction** dans la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
 
 ## Vue d’ensemble {#overview}
 
@@ -168,7 +168,7 @@ Dans l’interface utilisateur des règles de traduction, vous pouvez effectuer 
 
    ![Ajouter le contexte de traduction](../assets/add-translation-context.png)
 
-1. Utilisez l’explorateur de chemins d’accès pour sélectionner le contexte requis et cliquez sur le bouton **Confirmer** à enregistrer.
+1. Utilisez l’explorateur de chemins d’accès pour sélectionner le contexte requis et cliquez sur le bouton **Confirmer** pour enregistrer.
 
    ![Sélectionner le contexte](../assets/select-context.png)
 
@@ -215,7 +215,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple, `jcr:language`. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte, mais comportent des codes de langue, par exemple `jcr:language`. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés** pour modifier cette valeur, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 

@@ -4,10 +4,10 @@ description: Découvrez les outils disponibles pour vous aider à gérer vos sit
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,13 +17,13 @@ Découvrez les outils disponibles pour vous aider à gérer vos sites de démons
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours du module complémentaire des démonstrations de référence d’AEM, [Créer un site](create-site.md), vous avez créé un site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
+Dans le document précédent du parcours de modules complémentaires de démonstration de référence d’AEM, [Créer un site](create-site.md), vous avez créé un site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
 
 * Découvrir comment accéder à l’environnement de création AEM.
 * Savoir comment créer un site à partir d’un modèle.
 * Découvrir les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
-Si vous avez également [activé AEM Screens pour votre site de démonstration,](screens.md) vous devez également :
+Si vous avez également [activé AEM Screens pour votre site de démonstration](screens.md), vous devez également :
 
 * Connaître les principes de base d’AEM Screens.
 * Comprendre le contenu de la démonstration de We.Cafe.

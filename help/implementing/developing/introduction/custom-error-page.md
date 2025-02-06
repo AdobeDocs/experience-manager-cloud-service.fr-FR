@@ -4,10 +4,10 @@ description: AEM s’accompagne d’un outil standard destiné à la gestion des
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 
 >[!TIP]
 >
->Comme AEM repose sur Apache Sling, des informations complémentaires sont disponibles [dans la documentation relative à la gestion des erreurs Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>AEM étant basé sur Apache Sling, des informations supplémentaires sont disponibles [dans la documentation sur le traitement des erreurs Apache](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Vous pouvez développer vos propres scripts afin de personnaliser les pages affi
    * de `/libs/sling/servlet/errorhandler/`
    * vers `/apps/sling/servlet/errorhandler/`
 
-   Le chemin de destination n’existe pas par défaut. Vous devez donc le créer lors de cette opération pour la première fois.
+   Le chemin de destination n’existe pas par défaut. Vous devez donc le créer lorsque vous effectuez cette opération pour la première fois.
 
 1. Accédez à `/apps/sling/servlet/errorhandler`. Ici, vous pouvez effectuer l’une des opérations suivantes :
 

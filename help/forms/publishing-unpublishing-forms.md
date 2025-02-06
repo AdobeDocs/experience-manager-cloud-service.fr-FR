@@ -1,6 +1,6 @@
 ---
-title: Comment publier et annuler la publication de formulaires et documents dans AEM forms ?
-description: Planifiez la publication et l’annulation de la publication de votre Forms adaptatif. Les formulaires publiés sont répliqués sur l’instance de publication.
+title: Comment publier et dépublier des formulaires et des documents dans AEM forms ?
+description: Planifiez la publication et la dépublication de votre Forms adaptative. Les formulaires publiés sont répliqués sur l’instance de publication.
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
@@ -8,17 +8,17 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
-
 # Publication et dépublication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance Publish est destinée à conserver les ressources et les ressources connexes disponibles pour les utilisateurs finaux.
+[!DNL AEM Forms] vous permet de créer, de publier et de dépublier facilement des formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de Publish permet de conserver les ressources et les ressources associées qui sont disponibles pour les utilisateurs finaux.
 
 ## Ressources prises en charge  {#supported-assets-nbsp}
 
@@ -41,7 +41,7 @@ Lorsque vous sélectionnez un formulaire et que vous le publiez, ses éléments 
 Vos formulaires adaptatifs peuvent utiliser certaines configurations ou des paramètres et personnalisations qui ne sont pas publiés automatiquement. Il est recommandé de publier ou d’activer ces ressources avant de publier un formulaire adaptatif.
 
 * Modèles de formulaire adaptatif modifiable
-* Configurations de Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et le modèle de données de formulaire (FDM)
+* Configurations de Cloud Service pour Adobe Sign, Typekit, reCAPTCHA et Form Data Model (FDM)
 * Les autres configurations de service cloud ne sont activées que si l’utilisateur ou l’utilisatrice dispose d’autorisations d’administration.
 * Personnalisations. Il s’agit notamment des éléments suivants, mais sans s’y limiter :
 
@@ -122,7 +122,7 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 
 ## Automatisation de la publication ou de la dépublication de formulaires et documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms] permet de planifier la publication et la dépublication des éléments de formulaires et documents. Vous pouvez spécifier la planification dans l’éditeur de métadonnées. Pour plus d’informations sur la gestion des métadonnées de formulaire, reportez-vous à la section [Gestion des métadonnées de formulaire.](manage-form-metadata.md)
+[!DNL AEM Forms] permet de planifier la publication et la dépublication des éléments de formulaires et documents. Vous pouvez spécifier la planification dans l’éditeur de métadonnées. Pour plus d’informations sur la gestion des métadonnées de formulaire, voir [Gestion des métadonnées de formulaire](manage-form-metadata.md).
 
 Procédez comme suit pour planifier la date et l’heure de publication et de dépublication des éléments de formulaires et documents :
 

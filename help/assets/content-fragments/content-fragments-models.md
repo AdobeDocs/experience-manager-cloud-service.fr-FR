@@ -1,11 +1,11 @@
 ---
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
-description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu headless dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
+Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [ fragments de contenu ](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
@@ -34,11 +34,11 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
    >Si l’[utilisation des modèles de contenu du fragment n’a pas été activée](/help/assets/content-fragments/content-fragments-configuration-browser.md), l’option **Créer** n’est pas disponible.
 
 1. Spécifiez le **Titre du modèle**.
-Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, une **Description** et sélectionner **Activer le modèle** à [activer le modèle](#enabling-disabling-a-content-fragment-model) si nécessaire.
+Vous pouvez également définir différentes propriétés ; par exemple, ajouter **Balises**, une **Description** et sélectionner **Activer le modèle** pour [activer le modèle](#enabling-disabling-a-content-fragment-model) si nécessaire.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le **modèle d’URL d’aperçu par défaut**, voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
+   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 
@@ -91,7 +91,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
+   Sélectionnez le champ requis, puis l’icône de corbeille. Le système vous invite à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -107,31 +107,31 @@ Une sélection de types de données est disponible pour la définition de votre 
 
 * **Une seule ligne de texte**
    * Ajouter un champ pour une seule ligne de texte ; la longueur maximale peut être définie
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
 
 * **Plusieurs lignes de texte**
    * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
 
   >[!NOTE]
   >
-  Que la zone de texte soit de type Texte enrichi, Texte brut ou Texte (Markdown), est définie dans le modèle par la propriété **Type par défaut**.
+  Que la zone de texte soit du texte enrichi, du texte brut ou Markdown, est définie dans le modèle par la propriété **Type par défaut**.
   >
-  Ce format ne peut pas être modifié à partir de l’[ éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
+  Ce format ne peut pas être modifié à partir de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
 
 * **Nombre**
    * Ajouter un champ numérique
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
 
 * **Booléen**
    * Ajoutez une case à cocher booléenne
 
 * **Date et heure**
-   * Ajouter un champ Date et/ou Heure
+   * Ajouter un champ de date et/ou d’heure
 
 * **Énumération**
-   * Ajouter un ensemble de champs de case à cocher, de bouton radio ou de liste déroulante
-      * Vous pouvez spécifier les options disponibles pour l’auteur du fragment.
+   * Ajouter un ensemble de champs Case à cocher, Bouton radio ou Liste déroulante
+      * Vous pouvez spécifier les options disponibles pour l’auteur du fragment
 
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
@@ -139,24 +139,24 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
 
 * **Référence du fragment**
-   * Références d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
-   * Le champ peut être configuré pour permettre aux auteurs de fragments de :
+   * Fait référence à d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le champ peut être configuré pour permettre aux personnes créant des fragments de :
       * Modifier directement le fragment référencé
-      * Créez un fragment de contenu en fonction du modèle approprié.
-      * Créer de nouvelles instances du champ
+      * Créer un fragment de contenu basé sur le modèle approprié
+      * Création de nouvelles instances du champ
 
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
       * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
-      * Inclut la mise en surbrillance de la syntaxe JSON, la saisie automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
+      * Inclut la mise en surbrillance de la syntaxe JSON, la saisie automatique et la mise en surbrillance des erreurs dans l’éditeur de fragment de contenu.
 
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-      * Elles s’affichent sous forme de séparateurs dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+      * Elles s’affichent sous forme de séparateurs dans l’éditeur de modèles et séparent les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
       * Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
 
      >[!NOTE]
@@ -176,10 +176,10 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
   Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. Lorsque **Multiple Field** est utilisé, vous pouvez définir le nombre minimal et maximal d’éléments. Pour plus d’informations, voir [Validation](#validation) .
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Souvent, cette propriété vous permet de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. Lorsque le **champ multiple** est utilisé, vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
 
 * **Libellé du champ**
-La saisie d’un **libellé du champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
+La saisie d’un **Libellé du champ** génère automatiquement un **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -238,17 +238,17 @@ Différents types de données incluent désormais la possibilité de définir le
    * Seules peuvent être référencées les images d’une plage prédéfinie de largeur et/ou de hauteur (en pixels).
 * **Référence du fragment**
    * Test d’un modèle de fragment de contenu spécifique.
-* **Nombre min. d’éléments** / **Nombre max. d’éléments**
+* **Nombre minimum d’éléments** / **Nombre maximum d’éléments**
 
-  Les champs qui ont été définis comme **Multiple Field** (définis avec **Render As**) ont les options suivantes :
+  Les champs qui ont été définis comme un **champ multiple** (défini avec **Rendre en tant que**) ont les options suivantes :
 
-   * **Nombre min. d’éléments**
-   * **Nombre max. d’éléments**
+   * **Nombre minimum d’éléments**
+   * **Nombre maximal d’éléments**
 
   Ils sont validés :
 
-   * La valeur maximale est validée dans l’ [éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md).
-   * Tous deux sont validés dans l’ [ éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * La valeur maximale est validée dans l’[éditeur de fragment de contenu d’origine](/help/assets/content-fragments/content-fragments-variations.md).
+   * Les deux sont validés dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Utilisation de références pour former un contenu imbriqué {#using-references-to-form-nested-content}
 
@@ -278,7 +278,7 @@ Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu 
 
 ### Référence de contenu {#content-reference}
 
-La référence de contenu vous permet d’effectuer le rendu du contenu à partir d’une autre source, par exemple une image ou un fragment de contenu.
+La référence de contenu vous permet de générer du contenu à partir d’une autre source, par exemple une image ou un fragment de contenu.
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
@@ -293,7 +293,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs couches.
+La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
 
 Par exemple :
 
@@ -359,7 +359,7 @@ Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu�
 
      >[!NOTE]
      >
-     Il n’est utilisé que par l’éditeur de fragment de contenu *new*. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
+     Il n’est utilisé que par le *nouvel* éditeur de fragment de contenu. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
 
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
@@ -368,7 +368,7 @@ Pour un contrôle total de l’utilisation de vos modèles de fragments de conte
 
 ### Activation d’un modèle de fragment de contenu {#enabling-a-content-fragment-model}
 
-Lorsqu’un modèle est créé, il doit être activé afin qu’il :
+Lorsqu’un modèle est créé, il doit être activé de sorte qu’il :
 
 * Peut être sélectionné lors de la création d’un fragment de contenu.
 * Pouvoir être référencé à partir d’un modèle de fragment de contenu.

@@ -4,7 +4,7 @@ description: Découvrez comment utiliser des environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
 ht-degree: 40%
@@ -1062,7 +1062,7 @@ Pour en savoir plus sur le RDE dans AEM as a Cloud Service, consultez le tutorie
 
 ### Comment obtenir la dernière version d’AEM pour un RDE existant {#get-latest-aem-version}
 
-Lors de leur création, les RDE sont définis sur la dernière version de Adobe Experience Manager disponible (AEM). Une réinitialisation du RDE [](#reset-rde) qui peut être effectuée à l’aide de Cloud Manager ou de la commande `aio aem:rde:reset`, enchaîne le RDE et le définit sur la version AEM la plus récente disponible.
+Lors de leur création, les RDE sont définis sur la dernière version de Adobe Experience Manager disponible (AEM). Une [réinitialisation du RDE](#reset-rde), qui peut être effectuée à l’aide de Cloud Manager ou de la commande `aio aem:rde:reset`, enchaîne le RDE et le définit sur la version AEM la plus récente disponible.
 
 ## Dépannage du plug-in RDE aio {#aio-rde-plugin-troubleshooting}
 

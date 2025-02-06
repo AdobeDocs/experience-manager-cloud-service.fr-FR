@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Expe
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 #### Nouveautés Dynamic Media {#what-is-new-dm}
 
-* L’imagerie dynamique DPR (Device Pixel Ratio) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace, sur des appareils dotés d’écrans haute résolution et une bande passante réseau limitée. Pour plus d’informations, consultez [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) et [Optimisation des images avec les formats d’image de nouvelle génération WebP et AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* L’imagerie dynamique DPR (Device Pixel Ratio) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace, sur des appareils dotés d’écrans haute résolution et une bande passante réseau limitée. Pour plus d’informations, consultez [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) et [Optimisation des images avec les formats d’image de nouvelle génération WebP et AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -112,7 +112,7 @@ La prochaine version est prévue pour le 3 juin 2021.
 
 * Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL de Git.
 
-* Les journaux de déploiement téléchargés par un utilisateur Cloud Manager sont plus pertinents et incluent des détails sur les échecs et les scénarios de succès.
+* Les journaux de déploiement téléchargés par un utilisateur de Cloud Manager sont plus informatifs et incluent des détails sur les scénarios d’échecs et de succès.
 
 * Les échecs intermittents rencontrés lors de la publication du code vers le git d’Adobe ont maintenant été résolus.
 
@@ -148,9 +148,9 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas des autorisations d’exécution sur le fichier exécutable Java.
+* Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
 
-* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur du CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
+* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur de CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
 
 ### Correctifs {#bug-fixes-ctt-latest}
 

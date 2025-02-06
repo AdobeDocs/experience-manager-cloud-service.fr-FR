@@ -1,11 +1,11 @@
 ---
 title: Publier des pages
-description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
+description: Découvrez comment publier et dépublier vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 85%
@@ -43,7 +43,7 @@ Dans le cadre de votre utilisation d’Adobe Experience Manager (AEM) as a Cloud
 Selon votre emplacement, vous pouvez effectuer la publication :
 
 * [À partir de l’éditeur de page](#publishing-from-the-page-editor)
-* [Dans la ](#publishing-from-the-sites-console)
+* [À partir du ](#publishing-from-the-sites-console)
 * [À partir de l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
@@ -56,11 +56,11 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous souhaitez préserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants en une seule action.
+>Si vous souhaitez conserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants, en une seule action.
 >
->La commande de page n’est pas garantie :
+>L’ordre des pages n’est pas garanti :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
->* si les pages parents et enfants sont publiées dans des actions distinctes ;
+>* si les pages parentes et enfants sont publiées dans des actions distinctes
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 ### Publication à partir de l’éditeur de page {#publishing-from-the-page-editor}
 
-Si vous modifiez une page dans l’éditeur de page [, ](/help/sites-cloud/authoring/page-editor/introduction.md) elle peut être publiée directement à partir de l’éditeur.
+Si vous modifiez une page dans l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md), elle peut être publiée directement à partir de l’éditeur.
 
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu, puis sélectionnez l’option **Publier la page**.
 
@@ -78,7 +78,7 @@ Si vous modifiez une page dans l’éditeur de page [, ](/help/sites-cloud/autho
 
    * La page est publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
-      * Spécifiez les ressources, balises, etc. que vous souhaitez publier conjointement avec la page, puis utilisez **Publish** pour terminer le processus.
+      * Indiquez les ressources, balises, etc. que vous souhaitez publier avec la page, puis utilisez **Publish** pour terminer le processus.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -93,15 +93,15 @@ Si vous modifiez une page dans l’éditeur de page [, ](/help/sites-cloud/autho
 
 >[!NOTE]
 >
->La publication à partir de l’éditeur de page est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
+>Une publication à partir de l’éditeur de page est une publication superficielle, c’est-à-dire que seules la ou les pages sélectionnées sont publiées alors que les pages enfants ne le sont pas.
 
 >[!NOTE]
 >
 >Les pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
-### Publication à partir de la console Site {#publishing-from-the-sites-console}
+### Publication à partir de la console Sites {#publishing-from-the-sites-console}
 
-Dans la console **Sites**, il existe deux options de publication :
+La console **Sites** propose deux options de publication :
 
 * [Publication rapide](#quick-publish)
 * [Gérer la publication](#manage-publication)
@@ -132,11 +132,11 @@ La méthode **Gérer la publication** propose plus d’options que **Publication
 
 >[!NOTE]
 >
->Si vous souhaitez préserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants en une seule action.
+>Si vous souhaitez conserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants en une seule action.
 >
->La commande de page n’est pas garantie :
+>L’ordre des pages n’est pas garanti :
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
->* si les pages parents et enfants sont publiées dans des actions distinctes ;
+>* si les pages parentes et enfants sont publiées dans des actions distinctes
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
@@ -244,7 +244,7 @@ Vous pouvez dépublier une ou plusieurs pages de la destination souhaitée en pr
 
 ### Dépublication à partir de l’éditeur {#unpublishing-from-the-editor}
 
-Lors de la modification d’une page, si vous souhaitez annuler la publication de cette page, sélectionnez **Annuler la publication de la page** dans le menu **Informations sur la page**, comme vous le feriez [publier la page](#publishing-from-the-editor).
+Lors de la modification d’une page, pour la dépublier, sélectionnez **Dépublier la page** dans le menu **Informations sur la page** comme vous le feriez [publier la page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -278,7 +278,7 @@ Lorsque vous avez saisi ou mis à jour un nombre considérable de pages de conte
 
 Vous pouvez utiliser l’option [Gérer la publication](#manage-publication) sur la console des sites.
 
-1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dont vous souhaitez annuler la publication, puis sélectionnez **Gérer la publication**.
+1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dépublier, puis sélectionnez **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou la dépublication, puis sélectionnez **Suivant** pour continuer.
 1. À l’étape **Portée**, sélectionnez la page racine, puis **Inclure les enfants**.
 

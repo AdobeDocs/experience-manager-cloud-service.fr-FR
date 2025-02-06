@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2020.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.10.0. »
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.10.0.
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **[Composants principaux 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)** : Adobe Experience Manager as a Cloud Service bénéficie des mises à jour automatiques de la dernière version des composants principaux. La version 2.12.0 comprend les dernières améliorations apportées par la communauté. Ces améliorations comprennent [un nouveau gestionnaire de formulaires POST ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=fr#post-data) la possibilité d’inclure des [balises CSS, JavaScript et de métadonnées personnalisées via une configuration contextuelle ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading) et un utilitaire [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr#enabling-custom-components) destiné à simplifier l’intégration de la couche de données Adobe aux composants personnalisés. Voir la [liste des modifications](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) dans la version 2.12.0.
 
-* **[Archétype de projet 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)** : la base recommandée pour démarrer un nouveau projet Experience Manager a été améliorée. Elle comprend désormais la nouvelle [couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr), la possibilité de [diffuser un site dans AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) et de nouveaux [points d’extension pour ajouter un projet CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading)
+* **[Archétype de projet 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)** : la base recommandée pour démarrer un nouveau projet Experience Manager a été améliorée. Elle comprend désormais la nouvelle couche de données client d’Adobe [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr), la possibilité de [diffuser le site dans AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) et de nouveaux points d’extension [ pour ajouter le projet CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading).
 
 * **[Dossiers ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)** : possibilité de créer des dossiers d’audience pour organiser, rechercher et sélectionner facilement des segments d’audience à utiliser pour les fonctionnalités de ciblage d’offre ContextHub.
 
@@ -49,7 +49,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ### Nouveautés de [!DNL Forms]  {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms** : vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour Adaptive Forms afin de collecter les informations sur les utilisateurs. Il permet aux utilisateurs professionnels de prendre des décisions éclairées sur le contenu, la mise en page et le style des formulaires adaptatifs en fonction des insights collectés.
+* **Analytics pour Forms adaptative** : vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) au moyen d’Adobe Analytics pour Forms adaptatif en vue de recueillir des informations sur les utilisateurs. Il permet aux utilisateurs professionnels de prendre des décisions éclairées sur le contenu, la mise en page et le style des formulaires adaptatifs en fonction des insights collectés.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -57,7 +57,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service permet de générer des documents en mode synchrone et par lots.
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode batch.
 
 Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
@@ -65,9 +65,9 @@ Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscri
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication CIF site de référence Venia - 2020.10.2 qui comprend la dernière version de CIF Core Components v1.4.0. Pour plus d’informations, voir [CIF site de référence Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) .
+* Publication du site de référence CIF Venia - 2020.10.2 qui comprend les derniers composants principaux CIF version 1.4.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) pour plus d’informations.
 
-* Publication CIF composants principaux v1.4.0. Pour plus d’informations, voir [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) .
+* Publication des composants principaux de CIF version 1.4.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-commerce}
 

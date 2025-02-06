@@ -6,10 +6,10 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 
 ## Prochaines étapes {#what-is-next}
 
-Commencez par lire l’article suivant : [En savoir plus sur le développement découplé CMS.](learn-about.md)
+Commencez par lire l’article suivant : [En savoir plus sur le développement découplé CMS](learn-about.md),
 
 ### Choisissez votre propre parcours {#choose-your-path}
 

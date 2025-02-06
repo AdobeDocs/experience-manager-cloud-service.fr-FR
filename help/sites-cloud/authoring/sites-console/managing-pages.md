@@ -1,11 +1,11 @@
 ---
 title: Gérer des pages
-description: Découvrez comment gérer les pages de votre site web en AEM, notamment le déplacement, la copie et la suppression.
+description: Découvrez comment gérer les pages de votre site web dans AEM, y compris le déplacement, la copie et la suppression.
 exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 71%
@@ -14,38 +14,38 @@ ht-degree: 71%
 
 # Gérer des pages {#managing-pages}
 
-Découvrez comment gérer les pages de votre site web en AEM, notamment le déplacement, la copie et la suppression.
+Découvrez comment gérer les pages de votre site web dans AEM, y compris le déplacement, la copie et la suppression.
 
 >[!TIP]
 >
->Avant de commencer à gérer vos pages, familiarisez-vous avec [l&#39;organisation de vos pages en AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Avant de commencer à gérer vos pages, familiarisez-vous avec [l’organisation de vos pages dans AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
 >Il existe un certain nombre de [raccourcis clavier](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) à utiliser à partir de la console Sites web qui facilitent l’organisation des pages.
 
-## Privilèges d’accès {#access-privileges}
+## Privilèges d&#39;accès {#access-privileges}
 
-Votre compte doit disposer des droits d’accès et des autorisations appropriés pour agir sur les pages, telles que créer, copier, déplacer, modifier et supprimer.
+Votre compte a besoin des droits d’accès et des autorisations appropriés pour agir sur les pages, comme créer, copier, déplacer, modifier et supprimer.
 
 En cas de problème, contactez l’administrateur ou l’administratrice système.
 
 ## Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
-Après avoir [créé une page](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou accédé à une page existante à l’aide de [la console **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) vous pouvez l’ouvrir pour modification.
+Après avoir [créé une page](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou accédé à une page existante à l’aide de [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), vous pouvez l’ouvrir pour la modifier.
 
-1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Accédez à la page à modifier.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) et la barre d’outils
 
-1. Appuyez ou cliquez sur l’icône **Modifier** .
+1. Appuyez ou cliquez sur l’icône **Modifier**.
 
    ![Bouton Modifier](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La page s’ouvre et vous pouvez la modifier selon vos besoins. Selon la manière dont la page sélectionnée a été créée, l’action **Modifier** ouvrira l’éditeur approprié.
+1. La page s’ouvre et vous pouvez la modifier selon vos besoins. Selon le mode de création de la page sélectionnée, l’action **Modifier** ouvre l’éditeur approprié.
    * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) - Pour les pages créées avec l’éditeur de page AEM
    * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Pour les pages créées avec l’éditeur universel
 
@@ -53,14 +53,14 @@ Après avoir [créé une page](/help/sites-cloud/authoring/sites-console/creatin
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
-1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Accédez à la page à copier.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) et la barre d’outils
 
-1. Appuyez ou cliquez sur l’icône de page **Copier** .
+1. Appuyez ou cliquez sur l’icône de page **Copier**.
 
    ![Copier](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -95,7 +95,7 @@ La procédure pour déplacer ou renommer une page est plus ou moins la même et 
 
 AEM vous offre la possibilité de mettre à jour les liens internes qui font référence à la page renommée ou déplacée. Cette opération peut être effectuée page par page afin d’offrir une flexibilité totale.
 
-1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Accédez à la page à déplacer.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
@@ -106,9 +106,9 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    ![Bouton Déplacer](/help/sites-cloud/authoring/assets/move.png)
 
-1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À partir de l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Spécifiez le nom que la page doit avoir après son déplacement, puis sélectionnez **Suivant** pour continuer.
+   * Indiquez le nom que vous souhaitez donner à la page après l’avoir déplacée, puis sélectionnez **Suivant** pour continuer.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
 
    ![Déplacer et renommer la page](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -119,7 +119,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
 
-1. À l’étape **Sélectionner la destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À partir de l’étape **Sélectionner la destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Utilisez la [vue Colonne](/help/sites-cloud/authoring/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
 
@@ -148,12 +148,12 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    ![Republier la page lors du déplacement](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Appuyez ou cliquez sur **Déplacer** pour définir à quel moment l’action de déplacement doit se produire.
+1. Appuyez ou cliquez sur **Déplacer** pour définir le moment où l’action de déplacement doit se produire.
 
-   * **Maintenant** déclenchera une [tâche asynchrone](#asynchronous-actions) pour déplacer immédiatement la page.
-   * **Plus tard** vous permettra de planifier une date pour le traitement du déplacement.
+   * **Maintenant** déclenchera une [tâche asynchrone](#asynchronous-actions) pour déplacer la page immédiatement.
+   * **Ultérieurement** vous permet de planifier une date pour le traitement du déplacement.
 
-   ![Définition du moment de déplacement](assets/managing-pages-move-page-now-later.png)
+   ![Définir quand déplacer](assets/managing-pages-move-page-now-later.png)
 
 1. Appuyez ou cliquez sur **Continuer** pour terminer le déplacement de la page.
 
@@ -181,7 +181,7 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
 
 ### Suppression d’une page {#deleting-a-page}
 
-1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Accédez à la page à supprimer.
 1. En [mode de sélection](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), sélectionnez la page requise, puis utilisez la commande **Supprimer** de la barre d’outils :
 
@@ -193,7 +193,7 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
 
    * **Voulez-vous archiver les pages avant la suppression ?** – Si cette case est cochée, les versions des pages sélectionnées pour suppression sont créées lors de la suppression.
       * [Il est possible de restaurer les versions ultérieurement](/help/sites-cloud/authoring/sites-console/page-versions.md).
-      * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
+      * Les pages supprimées sans versions précédentes ne peuvent pas être restaurées.
 1. Appuyez ou cliquez sur **Annuler** pour abandonner l’action ou sur **Supprimer** pour confirmer l’action.
    * Si la page ne comporte aucune référence, elle est supprimée.
    * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
@@ -204,7 +204,7 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
 
 ### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller/déverrouiller une page](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page) à partir d’une console ou lors de la modification d’une page individuelle. Les informations sur le verrouillage d’une page s’affichent également aux deux emplacements.
+Vous pouvez [verrouiller/déverrouiller une page](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page) à partir d’une console ou lors de la modification d’une page individuelle. Les deux environnements indiquent également si une page est verrouillée ou non.
 
 ![Bouton Verrouiller](/help/sites-cloud/authoring/assets/lock.png)
 ![Bouton Déverrouiller](/help/sites-cloud/authoring/assets/unlock.png)
@@ -213,7 +213,7 @@ Vous pouvez [verrouiller/déverrouiller une page](/help/sites-cloud/authoring/pa
 
 Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
-1. Ouvrez [la console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Ouvrez [la console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Accédez à l’emplacement qui vous intéresse.
 1. Pour ouvrir la liste des options, sélectionnez **Créer** dans la barre d’outils
 1. Sélectionnez **Dossier** pour ouvrir la boîte de dialogue. Vous pouvez y entrer le **nom** et le **titre** :

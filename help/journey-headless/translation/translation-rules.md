@@ -5,10 +5,10 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles 
 1. Sélectionnez le contexte que vous avez créé, puis sélectionnez **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Désélectionnez l’option **Hériter de`/content/dam`** afin d’ajouter des champs supplémentaires à la configuration.
-1. Une fois la case désélectionnée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs à traduire.](getting-started.md#content-models)
+1. Lorsque cette option n’est pas cochée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous [avez précédemment identifiés comme des champs à traduire](getting-started.md#content-models).
    1. Dans le **Nouvelle propriété** , saisissez le nom de la propriété. Les options **Traduire** et **Hériter** sont cochées automatiquement.
    1. Sélectionnez **Ajouter**.
    1. Répétez ces étapes pour tous les champs que vous devez traduire.
@@ -105,6 +105,6 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Traduire le contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en consultant le document [Traduire du contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
 
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.

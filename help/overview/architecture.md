@@ -4,10 +4,10 @@ description: Présentation de l’architecture d’Adobe Experience Manager as a
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2713'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -180,7 +180,7 @@ Le code et la configuration des projets AEM sont stockés dans un référentiel 
    * Pour stocker du code Java côté serveur et des configurations OSGI pour les niveaux de création et de publication d’AEM.
 * AEM front-end :
    * Pour stocker le code JS côté client, CSS et HTML pour les niveaux de création et de publication d’AEM.
-Pour plus d’informations sur les bibliothèques clientes, voir [Utilisation des bibliothèques côté client sur AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Pour plus d’informations sur les bibliothèques clientes, voir [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * Niveau web AEM :
    * Stocke les fichiers de configuration du Dispatcher pour le niveau de publication AEM.
 * Configuration AEM:

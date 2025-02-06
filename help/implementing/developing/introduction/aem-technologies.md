@@ -4,10 +4,10 @@ description: Présentation des fondements techniques d’AEM, y compris la mani�
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2130'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ AEM est une plateforme robuste fondée sur des technologies éprouvées, évolut
 
 >[!TIP]
 >
->Avant d’étudier les technologies de base d’AEM, Adobe recommande d’accéder à la [Prise en main du développement d’AEM Sites – Tutoriel WKND.](develop-wknd-tutorial.md)
+>Avant de passer aux technologies de base d’AEM, Adobe vous recommande de suivre le [Tutoriel Prise en main du développement d’AEM Sites - WKND](develop-wknd-tutorial.md).
 
 ## Principes fondamentaux {#fundamentals}
 
@@ -250,7 +250,7 @@ Utilise le package d’API Sling, `org.apache.sling.*` et des bibliothèques de 
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 
-Des scripts plus complexes (agrégation de scripts) accèdent à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste), en incluant la *ressource*.
+Les scripts plus complexes (scripts d’agrégation) accèdent à plusieurs ressources (par exemple, la navigation, la barre latérale, le pied de page, les éléments d’une liste), et ce, en incluant la *ressource*.
 
 Dans ce cas, vous pouvez utiliser la commande `sling:include("/<path>/<resource>")`. Elle inclut effectivement la définition de la ressource référencée.
 

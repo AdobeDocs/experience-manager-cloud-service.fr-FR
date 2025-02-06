@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 
 ## Création et gestion des pipelines de configuration {#creating-and-managing}
 
-Pour plus d’informations sur la création et la configuration des pipelines, consultez le document [Pipelines CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+Pour plus d’informations sur la création et la configuration des pipelines, voir [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Lors de la création d’un pipeline de configuration dans Cloud Manager, veillez à sélectionner un **Déploiement ciblé** plutôt qu’un **Code de pile complète** lors de la configuration du pipeline.
 
@@ -95,7 +95,7 @@ ou
     cdn.yaml
 ```
 
-Les noms de dossier et de fichier sous `/config` sont arbitraires. Le fichier YAML, cependant, doit inclure une valeur de propriété [`kind` valide.](#configurations)
+Les noms de dossier et de fichier sous `/config` sont arbitraires. Le fichier YAML doit toutefois inclure une valeur de propriété [`kind` valide](#configurations).
 
 En règle générale, les configurations sont déployées dans tous les environnements. Si toutes les valeurs de propriété sont identiques pour chaque environnement, un seul fichier YAML suffira. Cependant, il est courant que les valeurs de propriété diffèrent d’un environnement à l’autre, par exemple lors du test d’un environnement inférieur.
 

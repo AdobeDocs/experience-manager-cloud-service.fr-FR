@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Ce guide détaille les sujets les plus importants concernant la traduction déco
 
 L’objectif est de vous donner une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire. Si vous ne connaissez aucun de ces sujets, ce parcours représente le parfait point de départ.
 
-Si vous connaissez déjà les principes d’AEM, du découplage et de la traduction, vous disposez peut-être déjà des connaissances fondamentales offertes par ce parcours. Pensez à vous référer à notre documentation technique dans la section présentant les [ressources supplémentaires ci-dessous.](#additional-resources)
+Si vous connaissez déjà les principes d’AEM, du découplage et de la traduction, vous disposez peut-être déjà des connaissances fondamentales offertes par ce parcours. Pensez à vous référer à notre documentation technique dans la section [ressources supplémentaires)](#additional-resources).
 
 ## Parcours de documentation AEM {#documentation-journeys}
 

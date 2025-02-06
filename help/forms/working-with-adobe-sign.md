@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -93,7 +93,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    * Si vous ne disposez pas d’un modèle de formulaire personnalisé, sélectionnez l’option **[!UICONTROL Générer un document d’enregistrement]**. Lorsque vous utilisez cette option, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Sélectionnez **[!UICONTROL Créer.]** Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
+1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif prenant en charge les signatures est créé. Vous pouvez y ajouter vos champs [!DNL Adobe Sign] et envoyer le formulaire pour signature.
 
 #### Activation d’[!DNL Adobe Sign] pour un formulaire adaptatif {#editafsign}
 

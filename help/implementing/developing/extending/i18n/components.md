@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 83%
+ht-degree: 76%
 
 ---
 
@@ -20,10 +21,10 @@ Internationalisez vos composants et boîtes de dialogue afin que leurs chaînes 
 
 Procédez comme suit pour internationaliser vos composants et proposer l’interface utilisateur dans différentes langues :
 
-1. [Mettez en œuvre vos composants à l’aide d’un code qui internationalise les chaînes.](/help/implementing/developing/extending/i18n/dev.md) Votre code identifie les chaînes à traduire et sélectionne la langue à présenter au moment de l’exécution.
-1. Créez des dictionnaires et ajoutez les chaînes anglaises à traduire.
+1. [Implémentez vos composants à l’aide de code qui internationalise les chaînes](/help/implementing/developing/extending/i18n/dev.md). Votre code identifie les chaînes à traduire et sélectionne la langue à présenter au moment de l’exécution.
+1. Créez des dictionnaires et ajoutez les chaînes de caractères anglaises à traduire.
 1. Exportez le dictionnaire au format XLIFF, traduisez les chaînes, puis réimportez les fichiers XLIFF dans AEM.
-1. Insérez le dictionnaire dans le processus de gestion des versions de votre application.
+1. Incorporez le dictionnaire au processus de gestion des versions de votre application.
 
 >[!NOTE]
 >
@@ -36,7 +37,7 @@ Le framework d’internationalisation d’AEM utilise des dictionnaires dans le 
 * Le code est facile à lire.
 * La langue par défaut est toujours disponible.
 
-Les modifications de traduction doivent provenir de Git via le [pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) dans AEM as a cloud service.
+Les modifications de traduction doivent provenir de Git via le pipeline [CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) dans AEM as a Cloud Service.
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 

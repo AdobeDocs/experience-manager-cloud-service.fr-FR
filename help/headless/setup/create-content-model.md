@@ -4,10 +4,10 @@ description: Définissez la structure du contenu que vous allez créer et diffus
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 88%
+ht-degree: 74%
 
 ---
 
@@ -17,9 +17,9 @@ Définissez la structure du contenu que vous allez créer et diffuser à l’aid
 
 ## Que sont les modèles de fragments de contenu ? {#what-are-content-fragment-models}
 
-[Maintenant que vous avez créé une configuration,](create-configuration.md) vous pouvez l’utiliser pour créer des modèles de fragments de contenu.
+[Maintenant que vous avez créé une configuration](create-configuration.md) vous pouvez l’utiliser pour créer des modèles de fragment de contenu.
 
-Les modèles de fragments de contenu définissent la structure des données et du contenu que vous allez créer et gérer dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
+Les modèles de fragment de contenu définissent la structure des données et du contenu que vous allez créer et gérer dans AEM. Il s’agit en quelque sorte du squelette de votre contenu. Lorsque vous choisissez de créer du contenu, vos auteurs choisissent parmi les modèles de fragment de contenu que vous définissez, ce qui les guide dans la création de contenu.
 
 ## Création d’un modèle de fragment de contenu {#how-to-create-a-content-fragment-model}
 
@@ -44,14 +44,14 @@ Un ou une architecte de l’information ne réaliserait ces tâches qu’occasio
 
    ![Configuration des propriétés](../assets/models-configure-properties.png)
 
-1. Lorsque vous avez terminé de créer votre modèle, sélectionnez **Enregistrer**.
+1. Lorsque vous avez fini de créer votre modèle, sélectionnez **Enregistrer**.
 
 1. Le mode du modèle créé dépend de si vous avez sélectionné **Activer le modèle** lors de la création du modèle :
    * sélectionné - le nouveau modèle sera déjà **Activé**
    * non sélectionné - le nouveau modèle sera créé en mode **Brouillon**
 
 1. S’il n’est pas déjà activé, le modèle doit être **Activé** pour pouvoir l’utiliser.
-   1. Sélectionnez le modèle que vous avez créé, puis **Activer**.
+   1. Sélectionnez le modèle que vous avez créé, puis sélectionnez **Activer**.
 
       ![Activation du modèle](../assets/models-enable.png)
    1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
@@ -67,8 +67,8 @@ Vous pouvez créer plusieurs modèles. Les modèles peuvent faire référence à
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous avez défini les structures de vos fragments de contenu en créant des modèles, vous pouvez passer à la troisième partie du guide de prise en main et [créer des dossiers dans lesquels vous stockerez les fragments.](create-assets-folder.md)
+Maintenant que vous avez défini les structures de vos fragments de contenu en créant des modèles, vous pouvez passer à la troisième partie du guide de prise en main et [créer des dossiers dans lesquels vous stockerez les fragments eux-mêmes](create-assets-folder.md).
 
 >[!TIP]
 >
->Pour plus d’informations sur les modèles de fragments de contenu, voir la [documentation sur les modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
+>Pour plus d’informations sur les modèles de fragment de contenu, consultez la [documentation sur les modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).

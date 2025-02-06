@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 20%
+source-wordcount: '1370'
+ht-degree: 19%
 
 ---
 
@@ -25,11 +25,11 @@ Pour ce faire, l’éditeur universel fournit aux personnes en charge de la cré
 
 >[!NOTE]
 >
->Ce document suppose que vous connaissez déjà la procédure d’accès et de navigation dans l’éditeur universel. Si ce n’est pas le cas, consultez le document [Accès à l’éditeur universel et navigation dans cet éditeur.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>Ce document suppose que vous connaissez déjà la procédure d’accès et de navigation dans l’éditeur universel. Si ce n’est pas le cas, consultez [Accès à l’éditeur universel et navigation dans cet éditeur](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 >[!TIP]
 >
->Pour une présentation plus détaillée de l’éditeur universel, consultez le document [Présentation de l’éditeur universel.](/help/implementing/universal-editor/introduction.md)
+>Pour une présentation plus détaillée de l’éditeur universel, voir [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
 
 ## Modification du contenu {#editing-content}
 
@@ -51,7 +51,7 @@ Vous pouvez modifier le texte en place en double-cliquant ou en appuyant deux fo
 
 Le contour bleu fin se transforme en contour bleu foncé pour indiquer la sélection et un curseur s’affiche. Apportez vos modifications, puis appuyez sur Entrée/Retour ou sélectionnez en dehors de la zone de texte pour les enregistrer.
 
-Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés).](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Vous pouvez également modifier le texte dans le panneau.
+Lorsque vous sélectionnez le composant de texte, ses détails s’affichent dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Vous pouvez également modifier le texte dans le panneau.
 
 ![Modification de texte dans le panneau des propriétés](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Appuyez ou cliquez sur **Annuler** ou **Terminé** pour ignorer ou enregistrer l
 
 ### Modification de médias {#edit-media}
 
-Vous pouvez en afficher les détails dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Vous pouvez afficher les détails dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Modification de médias](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Les modifications sont automatiquement enregistrées dans votre contenu.
 
 ### Modification de fragments de contenu {#edit-content-fragment}
 
-Si vous sélectionnez un [fragment de contenu](/help/sites-cloud/administering/content-fragments/overview.md) vous pouvez modifier ses détails dans le panneau [propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Si vous sélectionnez un [fragment de contenu](/help/sites-cloud/administering/content-fragments/overview.md), vous pouvez modifier ses détails dans le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
 
 ![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ Composant sélectionné supprimé.
 
 ### Réorganisation des composants dans les conteneurs {#reordering-components}
 
-1. S’il n’est pas déjà en mode [arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) basculez-le.
+1. S’il n’est pas déjà en [mode arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), basculez-le.
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
 1. Sélectionnez l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
 1. Faites glisser les icônes des poignées en regard des composants du conteneur pour les réorganiser. Faites glisser les composants pour les réorganiser dans le conteneur.
@@ -204,4 +204,4 @@ L’héritage est le mécanisme par lequel le contenu peut être lié, de sorte 
 
 À l’aide de l’éditeur universel, vous pouvez annuler l’héritage pour le contenu en mettant simplement à jour le contenu. L’éditeur désactive automatiquement l’héritage pour toutes les modifications apportées par les auteurs sur cette page, en s’assurant que le contenu modifié est conservé lorsque les mises à jour sont synchronisées à partir du plan directeur.
 
-Pour plus d’informations sur le fonctionnement de l’héritage à l’aide de l’éditeur universel, consultez le document [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+Pour plus d’informations sur le fonctionnement de l’héritage à l’aide de l’éditeur universel, consultez [Héritage de contenu dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/inheritance.md).

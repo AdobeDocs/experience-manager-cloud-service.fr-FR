@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 77%
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ Les sites web multilingues fournissent généralement une certaine quantité de 
 
 >[!TIP]
 >
->Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 Le [site de démonstration WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comprend plusieurs branches de langue et utilise la structure suivante :
 
@@ -61,7 +61,7 @@ Procédez comme suit pour préparer la traduction de vos ressources :
 1. Créez le contenu de votre gabarit de langue.
 1. Créez la racine de langue de chaque copie de langue pour votre site. Par exemple, la copie de langue française de l’exemple de site WKND est `/content/wknd/language-masters/fr`.
 
-Après avoir préparé le contenu à traduire, vous pouvez créer automatiquement les pages manquantes dans les copies de langue et les projets de traduction associés. (Voir [Création d’un projet de traduction](managing-projects.md).) Pour obtenir une présentation du processus de traduction de contenu dans AEM, consultez [Traduction de contenu pour des sites multilingues](overview.md).
+Après avoir préparé le contenu à traduire, vous pouvez créer automatiquement les pages manquantes dans les copies de langue et les projets de traduction associés. (Voir [Création d’un projet de traduction](managing-projects.md).) Pour une présentation du processus de traduction de contenu dans AEM, voir [Traduction de contenu pour des sites web multilingues](overview.md).
 
 ## Création d’une racine de langue {#creating-a-language-root}
 
@@ -69,19 +69,19 @@ Créez une racine de langue comme page racine d’une copie de langue qui identi
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété **Nom**. Le code de la langue doit être dans l’un des formats suivants :
 
-* `<language-code>` - Le code de langue pris en charge est un code à deux lettres tel que défini par la norme ISO-639-1, par exemple `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, tel que défini par la norme ISO 3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La propriété **Name** est utilisée comme nom du noeud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. La propriété **Name** est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès de la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Accédez aux sites.
 1. Sélectionnez le site pour lequel vous souhaitez créer une copie de langue.
-1. Sélectionnez **Créer**, puis **Page**.
+1. Sélectionnez **Créer**, puis sélectionnez **Page**.
 
    ![Création d’une page](../assets/create-page.png)
 
-1. Sélectionnez le modèle de page, puis **Suivant**.
-1. Dans le champ **Name** , saisissez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
+1. Sélectionnez le modèle de page, puis sélectionnez **Suivant**.
+1. Dans le champ **Nom**, entrez le code de pays au format `<language-code>` ou `<language-code>_<country-code>`, par exemple `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Saisissez un titre pour la page.
 
    ![Création d’une page racine de langue](../assets/create-language-root.png)
 
@@ -99,11 +99,11 @@ Utilisez la vue de procédure suivante pour les copies de langue d’une page à
 
    ![Ouverture du rail des références](../assets/opening-references-rail.png)
 
-1. Dans le rail de références, sélectionnez **Copies de langue**. Le rail affiche les copies de langue du site web.
+1. Dans le rail des références, sélectionnez **Copies de langue**. Le rail affiche les copies de langue du site web.
 
 ## Copies de langue à plusieurs niveaux {#multiple-levels}
 
-Les racines de langue peuvent également être regroupées sous des noeuds, par exemple, par région, tout en étant toujours reconnues comme racines de copies de langue.
+Les racines de langues peuvent également être regroupées sous des nœuds, par exemple, par région, tout en étant toujours reconnues comme des racines de copies de langue.
 
 ```text
 /content

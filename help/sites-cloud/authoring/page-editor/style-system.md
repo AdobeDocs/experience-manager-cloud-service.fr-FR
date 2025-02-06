@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ L’utilisation du système de style se passe généralement comme suit.
 
 1. L’auteur des pages AEM peut alors choisir les styles conçus dans l’éditeur de page via le menu de style de la barre d’outils du composant.
 
-Seules les trois dernières étapes sont réellement réalisées en AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
+Seules les trois dernières étapes sont effectivement réalisées dans AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
 
 En fait, la mise en œuvre des styles ne nécessite que le déploiement sur AEM et la sélection dans les composants des modèles souhaités.
 
@@ -66,7 +66,7 @@ Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) e
 Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
 1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section [Vue d’ensemble](#overview).
-1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [En tant qu’auteur de modèles](#as-a-template-author).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [ En tant qu’auteur de modèle ](#as-a-template-author).
 1. Les créateurs et créatrices de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant que créateur ou créatrice de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}
@@ -76,7 +76,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Système de style pour l’auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Sélectionnez le bouton **Styles** sur la barre d’outils du composant **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
+1. Sélectionnez le bouton **Styles** dans la barre d’outils du composant **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
 
    ![Sélection de styles](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -98,7 +98,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Modification des propriétés](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Nom du groupe :** Les styles peuvent être regroupés dans le menu de style que l’auteur du contenu voit lors de la configuration du style du composant.
+   * **Nom du groupe :** les styles peuvent être regroupés dans le menu de style que le créateur de contenu voit lors de la configuration du style du composant.
    * **Les styles peuvent être combinés :** permet de sélectionner simultanément plusieurs styles au sein de ce groupe.
    * **Nom du style :** description du style qui s’affichera à l’auteur ou à l’autrice du contenu lors de la configuration du style du composant.
    * **Classes CSS :** nom réel de la classe CSS associée au style.
@@ -113,7 +113,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 La version 2 ou supérieure des composants principaux est entièrement équipée pour tirer parti du système de style. Elle ne nécessite aucune configuration supplémentaire.
 
-Les étapes suivantes ne sont nécessaires que pour activer le système de style pour vos propres composants personnalisés ou pour [activer l’onglet facultatif Styles dans la boîte de dialogue Modifier.](#enable-styles-tab-edit)
+Les étapes suivantes ne sont nécessaires que pour activer le système de style pour vos propres composants personnalisés ou pour [activer l’onglet Styles facultatif dans la boîte de dialogue Modifier](#enable-styles-tab-edit).
 
 ### Activer l’onglet Style dans la boîte de dialogue Conception {#enable-styles-tab-design}
 

@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des feuilles de calcul pour gérer les 
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
@@ -34,11 +34,11 @@ Ce document utilise l’exemple des redirections pour illustrer la création de 
 
 >[!TIP]
 >
->Pour plus d’informations sur le fonctionnement général des feuilles de calcul avec Edge Delivery Services, consultez le document [Feuilles de calcul et JSON.](/help/edge/developer/spreadsheets.md)
+>Pour plus d’informations sur le fonctionnement général des feuilles de calcul avec les Edge Delivery Services, consultez le document [Feuilles de calcul et JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Les feuilles de calcul ne doivent être utilisées que pour conserver des données tabulaires. Pour stocker des données structurées, [découvrez les fonctionnalités découplées d’AEM.](/help/headless/introduction.md)
+>Les feuilles de calcul ne doivent être utilisées que pour conserver des données tabulaires. Pour stocker des données structurées, [consultez les fonctions d’AEM Headless](/help/headless/introduction.md).
 
 ## Conditions préalables {#prerequisites}
 
@@ -81,24 +81,24 @@ Dans cet exemple, vous allez créer une feuille de calcul pour gérer les redire
    * L’éditeur ajoute de nouvelles lignes à la feuille de calcul selon les besoins.
    * Pour supprimer ou déplacer une ligne, utilisez l’icône **Supprimer** à la fin de chaque ligne et les poignées de déplacement au début de chaque ligne, respectivement.
 
-## Importation de données de feuille de calcul {#importing}
+## Import de données de feuille de calcul {#importing}
 
 Outre la modification des feuilles de calcul dans l’éditeur de page d’AEM, vous pouvez également importer des données à partir d’un fichier CSV.
 
-1. Lorsque vous modifiez votre feuille de calcul dans AEM, appuyez ou cliquez sur le bouton **Télécharger** dans le coin supérieur gauche de l’écran.
-1. Dans la liste déroulante, sélectionnez le mode d’importation de vos données.
-   * **Remplacez Doc** pour remplacer le contenu de toute la feuille de calcul par le contenu du fichier CSV que vous allez transférer.
-   * **Append To Doc** pour ajouter les données du fichier CSV que vous allez charger au contenu de la feuille de calcul existante.
+1. Lorsque vous modifiez votre feuille de calcul dans AEM, appuyez ou cliquez sur le bouton **Charger** dans le coin supérieur gauche de l’écran.
+1. Dans la liste déroulante, sélectionnez le mode d’import de vos données.
+   * Sélectionnez **Remplacer document** pour remplacer le contenu de toute la feuille de calcul par le contenu du fichier CSV que vous allez charger.
+   * Sélectionnez **Ajouter au document** pour ajouter les données du fichier CSV que vous allez charger au contenu existant de la feuille de calcul.
 1. Dans la boîte de dialogue qui s’ouvre, sélectionnez votre fichier CSV, puis appuyez ou cliquez sur **Ouvrir**.
 
-Une boîte de dialogue s’ouvre au fur et à mesure que l’importation est traitée. Une fois l’opération terminée, les données du fichier CSV sont ajoutées ou remplacées par le contenu de la feuille de calcul. Si des erreurs se produisent, par exemple une incohérence de colonnes, elles sont signalées afin que vous puissiez corriger votre fichier CSV.
+Une boîte de dialogue s’ouvre lors du traitement de l’import. Une fois l’opération terminée, les données du fichier CSV sont ajoutées au contenu de la feuille de calcul ou le remplacent. Si des erreurs se produisent, par exemple une incohérence de colonnes, elles sont signalées afin que vous puissiez corriger votre fichier CSV.
 
 >[!NOTE]
 >
 >* Les en-têtes du fichier CSV doivent correspondre exactement aux colonnes de la feuille de calcul.
->* L’importation de l’intégralité du fichier CSV ne modifie pas les en-têtes de colonne, mais uniquement les lignes de contenu.
->* Si vous devez mettre à jour les colonnes, vous devez le faire dans AEM éditeur de page avant d’effectuer l’importation du fichier CSV.
->* Un fichier CSV ne peut pas dépasser 10 Mo pour l’importation.
+>* L’import de l’intégralité du fichier CSV ne modifie pas les en-têtes de colonne, mais uniquement les lignes de contenu.
+>* Si vous devez mettre à jour les colonnes, vous devez le faire dans l’éditeur de page d’AEM avant d’effectuer l’import du fichier CSV.
+>* Un fichier CSV ne peut pas dépasser 10 Mo pour l’import.
 
 En fonction de votre sélection de `mode`, vous pouvez également `create`, `replace` ou `append` dans des feuilles de calcul à l’aide d’un fichier CSV et d’une commande cURL similaire à la suivante.
 
@@ -115,13 +115,13 @@ curl --request POST \
   --form mode=append
 ```
 
-L’appel renvoie une page d’HTML contenant des informations sur l’ID de la tâche.
+L’appel renvoie une page HTML contenant des informations sur l’ID du tâche.
 
 ```text
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[Vous pouvez utiliser la **console Tâches**](/help/operations/asynchronous-jobs.md) pour afficher l’état de la tâche ou utiliser l’ID renvoyé pour la requérir.
+[Vous pouvez utiliser la **console Tâches**](/help/operations/asynchronous-jobs.md) pour afficher le statut de la tâche ou utiliser l’ID renvoyé pour le demander.
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
@@ -150,7 +150,7 @@ Pour qu’AEM puisse publier les données dans votre feuille de calcul, vous dev
 
    >[!NOTE]
    >
-   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès approprié vers le [type de feuille de calcul que vous créez.](#other)
+   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès correspondant au [type de feuille de calcul que vous êtes en train de créer](#other).
 
 1. Cliquez sur **Valider les modifications...** pour enregistrer les modifications apportées à `main`.
 
@@ -174,7 +174,7 @@ La feuille de calcul des redirections est maintenant publiée et accessible au p
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Pour plus d’informations sur les mappages de chemin d’accès, consultez le document [ Mappage de chemin d’accès pour les Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Autres types de feuilles de calcul {#other}
 
@@ -205,7 +205,7 @@ En outre, vous pouvez [créer votre propre feuille de calcul](#own-spreadsheet) 
 
 ## Créer votre propre feuille de calcul {#own-spreadsheet}
 
-1. Suivez les mêmes étapes que dans la section [Créer une feuille de calcul](#spreadsheet).
+1. Suivez les mêmes étapes dans la section [Créer une feuille de calcul](#spreadsheet).
 
 1. Lors de la sélection du modèle, choisissez **Feuille de calcul**.
 

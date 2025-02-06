@@ -4,7 +4,7 @@ description: Découvrez comment configurer des sites distincts pour vos environn
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Découvrez comment configurer des sites distincts pour vos environnements d’é
 
 ## Vue d’ensemble {#overview}
 
-Vous pouvez configurer un site pour votre environnement de production distinct de votre environnement d’évaluation. La configuration d’un second site pour une configuration d’évaluation et de production distincte est similaire à la configuration [ requise pour la gestion multisite.](/help/edge/wysiwyg-authoring/repoless-msm.md) En fait, il peut être associé aux structures de site MSM si nécessaire.
+Vous pouvez configurer un site pour votre environnement de production distinct de votre environnement d’évaluation. La configuration d’un second site pour une configuration d’évaluation et de production distincte est similaire à la [configuration requise pour la gestion multisite](/help/edge/wysiwyg-authoring/repoless-msm.md). En fait, il peut être combiné avec les structures de site MSM si nécessaire.
 
 Ce document utilise l’exemple type d’environnements d’évaluation et de production distincts. Vous pouvez créer des environnements distincts pour les environnements de votre choix.
 
@@ -33,8 +33,8 @@ Dans cet exemple, nous supposons qu’un site de production a déjà été cré�
 
 La configuration d’un site de production distinct comporte deux étapes.
 
-1. [Création de nouveaux sites Edge Delivery Services pour votre environnement de production.](#create-edge-site)
-1. [Mettez à jour la configuration cloud dans AEM pour votre site de production.](#update-cloud-configuration)
+1. [Création de nouveaux sites Edge Delivery Services pour votre environnement de production](#create-edge-site).
+1. [Mettez à jour la configuration cloud dans AEM pour votre site de production](#update-cloud-configuration).
 
 ### Création de nouveaux sites Edge Delivery Services pour votre environnement de production {#create-edge-site}
 

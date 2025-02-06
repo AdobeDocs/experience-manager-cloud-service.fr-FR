@@ -4,10 +4,10 @@ description: Adobe Experience Manager optimise les performances en exécutant de
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 94%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Ces opérations comprennent :
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
 * Déploiement de Live Copies
 
-Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de bord **[!UICONTROL Opérations en arrière-plan]** sur **Navigation globale** > **Outils** > **Général** > **Tâches**.
+Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord **[!UICONTROL Opérations en arrière-plan]** à l’adresse **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez 
 
 Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Opérations en arrière-plan]**.
 
-1. Dans l’interface d’Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
+1. Dans l’interface de l’Experience Manager, sélectionnez **Navigation globale** > **Outils** > **Général** > **Tâches**.
 
 1. Sur la page **[!UICONTROL Opérations en arrière-plan]**, passez en revue les détails des opérations.
 
@@ -73,7 +73,7 @@ Pour afficher le statut des opérations asynchrones en détail, accédez à la p
 
 ## Configuration des options de traitement des tâches asynchrones {#configure}
 
-Il existe plusieurs options concernant les tâches asynchrones qui peuvent être configurées. Les exemples suivants montrent comment y parvenir à l’aide de Configuration Manager sur un système de développement local.
+Plusieurs options relatives aux tâches asynchrones peuvent être configurées. Les exemples suivants montrent comment y parvenir à l’aide de Configuration Manager sur un système de développement local.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
-1. Dans la console web, ouvrez la **[!UICONTROL configuration de la file d’attente par défaut des processus asynchrones]**.
+1. Dans la console web, ouvrez la **[!UICONTROL Configuration par défaut de la file d’attente des processus asynchrones]**.
 1. Dans le champ **[!UICONTROL Nombre seuil de ressources]**, spécifiez le nombre seuil de ressources/dossiers pour le traitement asynchrone des opérations de suppression.
 
    ![Seuil de suppression des ressources](assets/async-delete-threshold.png)
@@ -117,7 +117,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
-1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement asynchrones.]**
+1. Dans la console web, ouvrez la **[!UICONTROL Configuration du traitement des tâches de l’opération de déplacement asynchrone]**.
 1. Dans le champ **[!UICONTROL Nombre seuil de ressources/références]**, spécifiez le nombre seuil de ressources/dossiers ou références pour le traitement asynchrone des opérations de déplacement.
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
@@ -129,7 +129,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
-1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
+1. Dans la console web, ouvrez la **[!UICONTROL Configuration du traitement des tâches de l’opération de déplacement de page asynchrone]**.
 1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, succès ou échec.
 
    ![Configuration MSM](assets/async-msm.png)

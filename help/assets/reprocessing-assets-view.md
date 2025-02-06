@@ -2,7 +2,8 @@
 title: Retraitement des ressources numériques
 description: Découvrez les différentes méthodes de retraitement des ressources numériques
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 43%
@@ -81,7 +82,7 @@ En savoir plus sur le [retraitement des profils de métadonnées](https://experi
 
 ### Retraitement de ressources Dynamic Media dans un dossier {#reprocessing-dynamic-media}
 
-Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, consultez [retraitement des ressources Dynamic Media dans un dossier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, consultez [retraitement des ressources Dynamic Media dans un dossier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 72%
@@ -18,8 +18,8 @@ ht-degree: 72%
 
 Si vous constatez ce que vous pensez être un comportement erroné ou une erreur dans MSM, avant de procéder à un dépannage en profondeur, assurez-vous de vérifier les points suivants :
 
-* Consultez la [FAQ MSM](#faq) car vos problèmes ou questions peuvent déjà y être abordés.
-* Consultez les [bonnes pratiques MSM](best-practices.md) pour obtenir plusieurs conseils, ainsi qu’une clarification de certaines idées fausses.
+* Consultez la [FAQ sur MSM](#faq) car vos problèmes ou questions peuvent y avoir déjà été abordés.
+* Consultez [Bonnes pratiques liées à MSM](best-practices.md) pour obtenir plusieurs conseils, ainsi que des éclaircissements sur certaines idées fausses.
 
 ## Recherche d’informations avancées sur votre plan et le statut de Live Copy {#advanced-info}
 
@@ -43,7 +43,7 @@ Les versions précédentes des servlets renvoyaient des informations calculées 
 
 * Type de mixin `cq:LiveSync`
    * Il est défini sur les nœuds `jcr:content` et définit les pages racine Live Copy.
-   * Ces pages ont un noeud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contient des informations de base et obligatoires sur la Live Copy via les propriétés suivantes :
+   * Ces pages comportent un nœud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contient des informations de base et obligatoires sur la Live Copy dans les propriétés suivantes :
       * `cq:master` pointe vers la page de plan directeur de la Live Copy.
       * `cq:rolloutConfigs` indique les configurations de déploiement principal appliquées à la Live Copy.
       * `cq:isDeep` est « true » si les pages enfants de cette page racine de Live Copy sont incluses dans la Live Copy.
@@ -56,7 +56,7 @@ Les versions précédentes des servlets renvoyaient des informations calculées 
 
 Les informations présentes dans ces propriétés doivent se refléter dans l’interface utilisateur. Toutefois, lors de la résolution des problèmes, il peut s’avérer utile d’observer directement le comportement de MSM dans le référentiel lorsque des actions MSM se produisent.
 
-Connaître ces propriétés peut également s’avérer utile afin que vous puissiez interroger votre référentiel et découvrir des ensembles de pages qui se trouvent dans des états particuliers. Par exemple :
+La connaissance de ces propriétés peut également s’avérer utile pour interroger votre référentiel et découvrir des ensembles de pages qui se trouvent dans des états particuliers. Par exemple :
 
 * `select * from cq:LiveSync` renvoie toutes les pages racine Live Copy.
 
@@ -68,11 +68,11 @@ Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Li
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
-Pour plus d’informations sur cette rubrique, voir [Bonnes pratiques MSM](best-practices.md) .
+Pour plus d’informations à ce sujet, consultez les [Bonnes pratiques relatives à MSM](best-practices.md).
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
-Il n’existe aucun privilège **rollout** pouvant être défini ou supprimé pour les entités de Adobe Experience Manager (utilisateurs ou groupes).
+Aucun privilège **rollout** ne peut être défini ou supprimé pour les principaux de Adobe Experience Manager (utilisateurs ou groupes).
 
 Vous pouvez cependant :
 
@@ -81,13 +81,13 @@ Vous pouvez cependant :
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_moved » ?  {#moved-pages}
 
-Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
+Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existait pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
 
-Dans ce cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page est renommée avant la création de la page Live Copy.
+Dans ce dernier cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page est renommée avant la création de la page Live Copy.
 
-Par défaut, le déploiement attend une page Live Copy liée sur laquelle les mises à jour des plans directeurs sont déployées. Ou, il ne s’attend à aucune page lors de la création d’une page Live Copy.
+Par défaut, le déploiement attend une page Live Copy liée à laquelle les mises à jour des plans directeurs sont déployées. Elle ne s’attend également à aucune page lors de la création d’une page Live Copy.
 
-Si une page &quot;autonome&quot; est trouvée, MSM choisit de renommer cette page et crée une page Live Copy distincte liée.
+Si une page « autonome » est trouvée, MSM choisit de renommer cette page et crée une page Live Copy distincte et liée.
 
 Une telle page autonome dans une sous-arborescence de Live Copy provient généralement d’une opération **Désolidariser**, ou l’ancienne page de Live Copy a pu avoir été supprimée manuellement par un auteur ou une autrice, puis recréée sous le même nom.
 

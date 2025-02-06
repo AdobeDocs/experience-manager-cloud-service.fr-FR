@@ -5,10 +5,10 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ Ce document vous aide à comprendre le fonctionnement de l’outil de création 
 
 Ce document se concentre sur la compréhension de ces éléments fondamentaux de la solution de création rapide de site avant de passer à l’étape suivante du parcours où vous commencez la configuration.
 
-Bien qu’il soit recommandé de suivre ce parcours étape par étape, si vous comprenez déjà le fonctionnement d’AEM Sites et de Cloud Manager et que vous souhaitez commencer directement par la configuration, vous pouvez [passer à l’étape suivante du parcours.](create-site.md)
+Bien qu’il soit recommandé de suivre ce parcours étape par étape, si vous comprenez déjà le fonctionnement d’AEM Sites et de Cloud Manager et que vous souhaitez commencer directement par la configuration, vous pouvez [passer à l’étape suivante du parcours ](create-site.md).
 
 ## Rôle responsable {#responsible-role}
 
@@ -122,11 +122,11 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Découvrez comment AEM Sites et le Cloud Manager travaillent ensemble pour faciliter le développement front-end.
 * Découvrez comment l’étape de personnalisation front-end est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Créer un site à partir d’un modèle,](create-site.md) où vous apprendrez à créer rapidement un site AEM à l’aide d’un modèle.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Créer un site à partir d’un modèle](create-site.md), dans lequel vous apprendrez à créer rapidement un site AEM à l’aide d’un modèle.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Création d’un site à partir d’un modèle](create-site.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Créer un site à partir d’un modèle](create-site.md), vous trouverez ci-après quelques informations facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
 
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=fr) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Reportez-vous à ce document pour plus de détails sur ces rôles et sur la manière de les administrer.

@@ -8,10 +8,10 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -76,7 +76,7 @@ Vous recevez un message indiquant que le projet a été créé.
 
 >[!NOTE]
 >
->On suppose que la structure linguistique nécessaire pour les langues de traduction a déjà été créée dans le cadre de la [définition de votre structure de contenu.](getting-started.md#content-structure) Cette définition doit être réalisée en collaboration avec l’architecte de contenu.
+>On suppose que la structure linguistique nécessaire pour les langues de traduction a déjà été créée dans le cadre de la [définition de votre structure de contenu](getting-started.md#content-structure). Cette opération doit être réalisée en collaboration avec l’architecte de contenu.
 >
 >Si les dossiers de langue ne sont pas créés à l’avance, vous ne pourrez pas créer de copies de langue comme décrit dans les étapes précédentes.
 
@@ -126,7 +126,7 @@ Le projet est divisé en plusieurs cartes.
 
 * **Résumé** : cette carte affiche les informations d’en-tête de base du projet, parmi lesquelles le propriétaire, la langue et le fournisseur de traduction.
 * **Tâche de traduction** : cette ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, notamment son état, le nombre de ressources, etc. En règle générale, il existe un traitement par langue, avec le code de langue ISO-2 ajouté au nom du traitement.
-   * Lors de la [création automatique de traitements de traduction](#automatically-creating), AEM crée les traitements de manière asynchrone et elles peuvent ne pas apparaître immédiatement dans le projet.
+   * Lors de la [ création automatique de tâches de traduction ](#automatically-creating), AEM crée les tâches de manière asynchrone et elles peuvent ne pas apparaître immédiatement dans le projet.
 * **Équipe** : cette carte montre les utilisateurs qui collaborent à ce projet de traduction. Ce parcours ne couvre pas cette rubrique.
 * **Tâches** : les tâches supplémentaires associées à la traduction du contenu, telles que les éléments à réaliser ou les éléments de workflow. Ce parcours ne couvre pas cette rubrique.
 
@@ -213,7 +213,7 @@ Pour ajouter du contenu à une tâche de traduction :
 >
 >L’explorateur de chemins d’accès est un outil puissant qui vous permet de rechercher, de filtrer et de parcourir votre contenu. Appuyez ou cliquez sur le bouton **Contenu uniquement/Filtres** pour activer ou désactiver le panneau latéral et afficher les filtres avancés tels que la **Date de modification** ou le **Statut de la traduction**.
 >
->Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section des ressources supplémentaires.](#additional-resources)
+>Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section Ressources supplémentaires](#additional-resources).
 
 Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
 
@@ -241,7 +241,7 @@ Les traductions automatiques sont renvoyées automatiquement avec un statut **Ap
 
 ## Vérification du contenu traduit {#reviewing}
 
-[Comme nous l’avons vu précédemment,](#using-translation-project) le contenu traduit automatiquement revient dans AEM en statut **Approuvé**, en partant de l’hypothèse que la traduction automatique étant utilisée, aucune intervention humaine n’est nécessaire. Cependant, il est bien sûr toujours possible de consulter le contenu traduit.
+[Comme nous l’avons vu précédemment](#using-translation-project) le contenu traduit automatiquement revient dans AEM en statut **Approuvé** en partant de l’hypothèse que la traduction automatique étant utilisée, aucune intervention humaine n’est nécessaire. Cependant, il est bien sûr toujours possible de consulter le contenu traduit.
 
 Il vous suffit d’accéder à la tâche de traduction terminée et de sélectionner un élément de ligne en appuyant ou en cliquant sur la case à cocher. L’icône **Aperçu dans les sites** s’affiche dans la barre d’outils.
 
@@ -285,7 +285,7 @@ Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction 
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en consultant le document [Publication du contenu traduit](publish-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours en mode découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction en examinant le document [Contenu traduit de Publish](publish-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
 
-* [Gestion des projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez les détails des projets de traduction et des fonctionnalités supplémentaires telles que les processus de traduction humaine et les projets multilingues.
+* [Gestion des projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) – Découvrez les détails des projets de traduction et des fonctionnalités supplémentaires telles que les processus de traduction humaine et les projets multilingues.
 * [Environnements et outils de création](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.

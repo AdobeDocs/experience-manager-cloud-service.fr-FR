@@ -4,7 +4,7 @@ description: Découvrez les différents types d’appels effectués sur votre ap
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -18,33 +18,33 @@ Découvrez les différents types d’appels effectués sur votre application par
 
 ## Vue d’ensemble {#overview}
 
-L’éditeur universel communique avec votre application instrumentée par le biais d’une série d’appels définis. Cela est transparent pour et n’a aucun effet sur l’expérience utilisateur finale.
+L’éditeur universel communique avec votre application instrumentée par le biais d’une série d’appels définis. Cette opération est transparente pour et n’a aucun effet sur l’expérience de l’utilisateur final.
 
-Toutefois, pour le développeur, la compréhension de ces appels et de ce qu’ils font peut s’avérer utile lors du débogage de votre application lors de l’utilisation d’Universal Editor. Si vous avez instrumenté votre application et qu’elle ne se comporte pas comme prévu, il peut s’avérer utile d’ouvrir l’onglet **Réseau** des outils de développement dans votre navigateur et d’inspecter les appels lorsque vous modifiez du contenu dans votre application.
+Toutefois, pour le développeur, comprendre ces appels et ce qu’ils font peut s’avérer utile lors du débogage de votre application lors de l’utilisation de l’éditeur universel. Si vous avez instrumenté votre application et qu’elle ne se comporte pas comme prévu, il peut être utile d’ouvrir l’onglet **Réseau** des outils de développement de votre navigateur et d’examiner les appels lorsque vous modifiez le contenu de votre application.
 
-![Exemple d&#39;un appel de détails sur l&#39;onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
+![Exemple d’appel de détails sur l’onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
 
-* La **charge utile** de l’appel contient des détails sur ce qui est mis à jour par l’éditeur, y compris l’identification des éléments à mettre à jour et la manière de les mettre à jour.
-* La **réponse** comprend des détails sur ce qui a été exactement mis à jour par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme un appel `move`, la page entière doit être actualisée.
+* La **payload** de l’appel contient des détails sur ce qui est mis à jour par l’éditeur, y compris l’identification de ce qui doit être mis à jour et comment le mettre à jour.
+* La **réponse** comprend des détails sur ce qui a été mis à jour exactement par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme lors d’un appel `move`, la page entière doit être actualisée.
 
-Une fois qu’un appel est terminé avec succès, les événements sont déclenchés et incluent la charge utile de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Pour plus d’informations, consultez le document [Événements d’éditeur universel](/help/implementing/universal-editor/events.md) .
+Une fois l’appel terminé avec succès, les événements sont déclenchés et incluent la payload de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Consultez le document [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md) pour plus d’informations.
 
-Vous trouverez ci-dessous une liste des types d’appels effectués par l’éditeur universel vers votre application, ainsi que des exemples de payloads et de réponses.
+Vous trouverez ci-dessous une liste des types d’appels que l’éditeur universel effectue à votre application avec des exemples de payloads et de réponses.
 
 ## Mettre à jour {#update}
 
-Un appel `update` se produit lorsque vous modifiez du contenu dans votre application à l’aide d’Universal Editor. `update` conserve les modifications.
+Un appel `update` se produit lorsque vous modifiez du contenu dans votre application à l’aide de l’éditeur universel. La `update` conserve les modifications.
 
-Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
+Sa payload comprend des détails sur les éléments à écrire dans le JCR.
 
 * `resource` : chemin JCR à mettre à jour
-* `prop` : propriété JCR mise à jour
+* `prop` : propriété JCR en cours de mise à jour
 * `type` : type de valeur JCR de la propriété mise à jour
-* `value` : données mises à jour
+* `value` : les données mises à jour
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -84,14 +84,14 @@ Sa charge utile inclut des détails sur les éléments à écrire dans le JCR.
 
 Un appel `details` se produit lors du chargement de votre application dans l’éditeur universel pour récupérer le contenu de l’application.
 
-Sa charge utile inclut les données à générer ainsi que des détails sur ce que représentent les données (le schéma) afin qu’elles puissent être rendues dans l’éditeur universel.
+Sa payload inclut les données à rendre, ainsi que des détails sur ce que les données représentent (le schéma) afin qu’elles puissent être rendues dans l’éditeur universel.
 
 * Pour un composant, l’éditeur universel récupère uniquement un objet `data`, puisque le schéma des données est défini dans l’application.
-* Pour les fragments de contenu, l’éditeur universel récupère également un objet `schema` puisque le modèle de fragment de contenu est défini dans le JCR.
+* Pour les fragments de contenu, l’éditeur universel récupère également un objet `schema`, car le modèle de fragment de contenu est défini dans le JCR.
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -150,11 +150,11 @@ Un appel `add` se produit lorsque vous placez un nouveau composant dans votre ap
 
 Sa payload comprend un objet `path` contenant l’emplacement où le contenu doit être ajouté.
 
-Il comprend également un objet `content` avec des objets supplémentaires pour les détails spécifiques au point d’entrée du contenu à stocker [ pour chaque module externe.](/help/implementing/universal-editor/architecture.md) Par exemple, si votre application est basée sur le contenu d’AEM et de Magento, la payload contiendra un objet de données pour chaque système.
+Elle comprend également un objet `content` avec des objets supplémentaires pour les détails spécifiques aux points d’entrée du contenu à stocker [pour chaque module externe](/help/implementing/universal-editor/architecture.md). Par exemple, si votre application est basée sur le contenu d’AEM et de Magento, la payload contient un objet de données pour chaque système.
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -206,11 +206,11 @@ Il comprend également un objet `content` avec des objets supplémentaires pour 
 
 Un appel `move` se produit lorsque vous déplacez un composant dans votre application à l’aide de l’éditeur universel.
 
-Sa charge utile comprend un objet `from` définissant l’emplacement du composant et un objet `to` définissant son emplacement de déplacement.
+Sa payload comprend un objet `from` définissant l’emplacement du composant et un objet `to` définissant l’emplacement où il a été déplacé.
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -262,11 +262,11 @@ Sa charge utile comprend un objet `from` définissant l’emplacement du composa
 
 Un appel `remove` se produit lorsque vous supprimez un composant dans votre application à l’aide de l’éditeur universel.
 
-Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
+Sa payload inclut le chemin d’accès de l’objet supprimé.
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -308,15 +308,15 @@ Sa charge utile inclut le chemin d’accès de l’objet qui est supprimé.
 
 >[!ENDTABS]
 
-## Publier {#publish}
+## Publication {#publish}
 
 Un appel `publish` se produit lorsque vous cliquez sur le bouton **Publish** dans l’éditeur universel pour publier le contenu que vous avez modifié.
 
-L’éditeur universel effectue une itération sur le contenu et génère une liste de références qui doit également être publiée.
+L’éditeur universel effectue une itération sur le contenu et génère une liste de références qui doivent également être publiées.
 
 >[!BEGINTABS]
 
->[!TAB Exemple de charge utile]
+>[!TAB Exemple de payload]
 
 ```json
 {
@@ -384,5 +384,5 @@ L’éditeur universel effectue une itération sur le contenu et génère une li
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Événements d’éditeur universels](/help/implementing/universal-editor/events.md)
+* [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md)
 

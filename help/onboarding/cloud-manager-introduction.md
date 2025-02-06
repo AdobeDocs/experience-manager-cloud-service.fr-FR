@@ -4,10 +4,10 @@ description: Découvrez comment Cloud Manager prend en charge votre projet AEM p
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Votre administrateur système sera chargé de configurer votre équipe Cloud Man
 
 Pour accéder à Cloud Manager, procédez comme suit.
 
-1. Accédez à la page de connexion de Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/).
+1. Accédez à la page de connexion de Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
 1. Sélectionnez le programme dans la page **Programmes et produits** de Cloud Manager pour lancer la page **Présentation**.
 
@@ -38,7 +38,7 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Mana
 
 ## Permissions basées sur les rôles dans Cloud Manager {#role-based-permissions}
 
-| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur |
+| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur ou développeuse |
 |--- |--- |--- |--- |--- |--- |
 | Ajouter le programme<br>Modifier le programme | Ajouter un nouveau programme<br>Ajouter ou supprimer des solutions ou des modules complémentaires | x |  |  |  |
 | Créer un environnement | Créer des environnements de production, d’évaluation et de développement. | x | x |  |  |

@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’utilisateurs dans l’Adm
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ De temps à autre, Adobe doit contacter les utilisateurs et utilisatrices au suj
 * **Notification d’incident** : ces notifications sont envoyées lors d’un incident ou lorsqu’Adobe identifie un problème de disponibilité potentiel avec votre environnement AEM as a Cloud Service.
 * **Notification proactive** : ces notifications sont envoyées lorsqu’un membre de l’équipe d’assistance Adobe souhaite fournir des conseils sur une optimisation potentielle ou une recommandation susceptible de bénéficier à votre environnement AEM as a Cloud Service.
 
-Les utilisateurs et utilisatrices peuvent également recevoir ces notifications pour des programmes spécifiques en fonction de leurs [autorisations de groupe personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
+Les utilisateurs peuvent également recevoir ces notifications pour des programmes spécifiques en fonction de leurs [autorisations de groupe personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
 
 En outre, l’affectation de groupes à une notification proactive est prise en charge et les utilisateurs et utilisatrices et groupes peuvent être directement affectés aux profils de produits.
 
@@ -43,7 +43,7 @@ Les profils d’utilisateurs sont créés et gérés dans l’Admin Console. Aus
 
 Pour configurer correctement la réception des notifications, créez deux profils utilisateur. Ces étapes ne sont effectuées qu’une seule fois.
 
-1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Vérifiez que vous vous trouvez dans la bonne organisation.
 
@@ -103,7 +103,7 @@ Pour ajouter des utilisateurs et utilisatrices n’ayant pas encore de Federated
 
    ![Utilisateurs](assets/product_services.png)
 
-1. Si le Federated ID des membres de votre équipe n’a pas encore été configuré, sélectionnez l’onglet **Utilisateurs** dans la section de navigation supérieure, puis sélectionnez **Ajouter un utilisateur**. Sinon, passez à la section [Ajouter des utilisateurs et utilisatrices existants à des profils.](#existing-users)
+1. Si le Federated ID des membres de votre équipe n’a pas encore été configuré, sélectionnez l’onglet **Utilisateurs** dans la section de navigation supérieure, puis sélectionnez **Ajouter un utilisateur**. Sinon, passez à la section [Ajouter des utilisateurs et utilisatrices existants à des profils](#existing-users).
 
    ![Utilisateurs](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Pour ajouter des utilisateurs et utilisatrices dont les Federated ID existent d�
 
 1. Sélectionnez **Utilisateurs** dans la barre de navigation supérieure.
 
-1. Si le federated ID existe déjà pour le membre de l’équipe que vous souhaitez ajouter à un profil de notifications, localisez ce membre dans la liste et cliquez dessus. Sinon, passez à la section [Ajouter de nouveaux utilisateurs et de nouvelles utilisatrices aux profils.](#add-user)
+1. Si le federated ID existe déjà pour le membre de l’équipe que vous souhaitez ajouter à un profil de notifications, localisez ce membre dans la liste et cliquez dessus. Sinon, passez à la section [Ajouter de nouveaux utilisateurs et de nouvelles utilisatrices aux profils](#add-user).
 
 1. Dans la section **Produits** de la fenêtre Détails de l’utilisateur, cliquez sur les trois points de suspension, puis sélectionnez **Modifier**.
 

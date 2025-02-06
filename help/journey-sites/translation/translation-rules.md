@@ -8,10 +8,10 @@ exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -104,6 +104,6 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en consultant le document [Traduire du contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours en mode découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction en examinant le document [Traduire le contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
 
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.

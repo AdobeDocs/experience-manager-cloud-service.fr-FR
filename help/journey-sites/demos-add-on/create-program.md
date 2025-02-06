@@ -4,10 +4,10 @@ description: Découvrez comment configurer un nouveau programme et un nouveau pi
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment configurer un nouveau programme et un nouveau pipeline pour d
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours du module complémentaire de démonstration d’AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
+Dans le document précédent du parcours de module complémentaire de démonstration de référence de Adobe Experience Manager (AEM), [Présentation de l’installation du module complémentaire de démonstration de référence](installation.md), vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
 
 * Posséder une compréhension de base de Cloud Manager.
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.

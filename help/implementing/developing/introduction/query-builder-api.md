@@ -4,10 +4,10 @@ description: La fonctionnalité du générateur de requêtes de partage de resso
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -487,7 +487,7 @@ Utilisez le débogueur AEM Query Builder pour générer une requête XPath expl
 >
 >La configuration des journaux est décrite dans le document [Journalisation](/help/implementing/developing/introduction/logging.md).
 
-Sortie de journal (niveau INFO) de l’implémentation Query Builder lors de l’exécution de la requête décrite à la section précédente [Tests et débogage :](#testing-and-debugging)
+La sortie du journal (niveau INFO) de l’implémentation du générateur de requêtes lors de l’exécution de la requête décrite dans la section précédente [Test et débogage](#testing-and-debugging)
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

@@ -4,10 +4,10 @@ description: Découvrez Cloud Manager et comment il est utilisé pour installer
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ Maintenant que vous avez terminé cette partie du parcours du module complément
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.
 * Découvrez comment les modèles peuvent créer des sites préremplis avec du contenu de démonstration en quelques clics seulement.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Créer un programme et un pipeline,](create-program.md) où vous apprendrez à configurer un nouveau programme et pipeline pour déployer le module complémentaire.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant [Création d’un programme et d’un pipeline](create-program.md), où vous apprendrez à configurer un nouveau programme et pipeline pour déployer le module complémentaire.
 
 ## Ressources supplémentaires {#additional-resources}
 

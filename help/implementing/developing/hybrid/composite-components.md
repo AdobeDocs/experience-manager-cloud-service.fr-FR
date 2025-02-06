@@ -4,10 +4,10 @@ description: Découvrez comment créer vos propres composants composites, compos
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 94%
+ht-degree: 81%
 
 ---
 
@@ -30,16 +30,16 @@ Cet article utilise le composant de carte type comme cas d’utilisation. Les ca
 Les modèles suivants, qui concernent la prise en charge des cas d’utilisation des composants composites, nécessitent les conditions préalables suivantes.
 
 * Votre instance de développement AEM s’exécute localement sur le port 4502 avec un exemple de projet.
-* L’application React externe opérationnelle [est activée pour permettre les modifications dans AEM.](editing-external-spa.md)
-* L’application React est chargée dans l’éditeur AEM [à l’aide du composant RemotePage.](remote-page.md)
+* Vous disposez d’une application React externe opérationnelle [activée pour la modification dans AEM](editing-external-spa.md).
+* L’application React est chargée dans l’éditeur AEM à l’[ du composant RemotePage](remote-page.md).
 
 ## Ajout de composants composites à une SPA {#adding-composite-components}
 
 Il existe trois modèles différents pour mettre en œuvre votre composant composite en fonction de l’implémentation de la SPA dans AEM.
 
-* [Le composant n’existe pas dans votre projet AEM.](#component-does-not-exist)
-* [Le composant existe dans votre projet AEM, mais pas le contenu requis.](#content-does-not-exist)
-* [Le composant et son contenu requis existent tous deux dans votre projet AEM.](#both-exist)
+* [Le composant n’existe pas dans votre projet AEM](#component-does-not-exist).
+* [Le composant existe dans votre projet AEM, mais pas le contenu requis](#content-does-not-exist).
+* [Le composant et son contenu requis existent tous deux dans votre projet AEM](#both-exist).
 
 Les sections suivantes présentent des exemples d’implémentation de chaque cas à l’aide du composant Carte.
 
@@ -134,7 +134,7 @@ Dans ce cas, le composant de carte est déjà créé dans votre projet AEM conte
 
 Vous pouvez ensuite l’ajouter à votre SPA et récupérer son contenu.
 
-1. Pour cela, créez un composant correspondant dans la SPA. Assurez-vous que les composants enfants sont mappés avec leurs types de ressources AEM correspondants dans le projet SPA. Dans cet exemple, nous utilisons les mêmes composants `AEMText` et `AEMImage` que décrit [dans le cas précédent.](#component-does-not-exist)
+1. Pour cela, créez un composant correspondant dans la SPA. Assurez-vous que les composants enfants sont mappés avec leurs types de ressources AEM correspondants dans le projet SPA. Dans cet exemple, nous utilisons les mêmes composants `AEMText` et `AEMImage` que décrit [dans le cas précédent](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ Si le contenu existe dans AEM, il peut être directement inclus dans la SPA en f
 
 ![Chemin composite dans la structure du nœud](assets/composite-path.png)
 
-Le composant `AEMCard` est identique à la valeur définie[ dans le cas d’utilisation précédent.](#content-does-not-exist) Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans la SPA.
+Le composant `AEMCard` est identique à la valeur définie [dans le cas d’utilisation précédent](#content-does-not-exist). Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans le SPA.

@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez comment les modèles de site AEM peuvent être utilisés pour prédé
 
 Il est pratique de disposer de structures prédéfinies pour déployer rapidement un nouveau site en fonction d’un ensemble de normes existantes. Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable.
 
-Les modèles de site contiennent généralement le contenu et la structure du site de base et des informations sur le style du site, connues sous le nom de [thème de site,](site-themes.md) pour permettre à un nouveau site de démarrer rapidement. Les administrateurs et administratrices sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site.](create-site.md)
+Les modèles de site contiennent généralement le contenu et la structure du site de base ainsi que des informations de style du site, connues sous le nom de [thème du site](site-themes.md), pour permettre à un nouveau site de démarrer rapidement. Les administrateurs sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site](create-site.md).
 
 Les modèles, réutilisables et personnalisables, sont d’une grande efficacité. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 
@@ -46,7 +46,7 @@ Vous pouvez ajouter plusieurs modèles à AEM, qui peuvent ensuite être utilis�
 
    ![Assistant Création de site](../assets/site-creation-wizard.png)
 
-1. Dans l’explorateur de fichiers, recherchez le modèle que vous souhaitez utiliser et sélectionnez **Télécharger**.
+1. Dans l’explorateur de fichiers, recherchez le modèle à utiliser, puis sélectionnez **Télécharger**.
 
 1. Une fois chargé, il s’affiche dans la liste des modèles disponibles.
 
@@ -67,7 +67,7 @@ Les modèles de site sont simplement des packages avec une structure logique qui
 
 ## Modèle de site standard {#standard-site-template}
 
-Adobe fournit un modèle de référence des bonnes pratiques que vous pouvez utiliser comme référence pour créer vos propres modèles. [Le modèle de site standard est disponible sur GitHub.](https://github.com/adobe/aem-site-template-standard)
+Adobe fournit un modèle de référence des bonnes pratiques que vous pouvez utiliser comme référence pour créer vos propres modèles. [Le modèle de site standard est disponible sur GitHub](https://github.com/adobe/aem-site-template-standard).
 
 [La dernière version du modèle de site standard](https://github.com/adobe/aem-site-template-standard/releases) peut être téléchargée et utilisée directement pour [créer de nouveaux sites](create-site.md).
 

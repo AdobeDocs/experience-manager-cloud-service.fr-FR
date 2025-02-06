@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2023.4.0 d’ [!DNL Adobe Expe
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
@@ -122,7 +122,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Outils de migration {#migration-tools}
 

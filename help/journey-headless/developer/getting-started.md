@@ -5,16 +5,16 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Prise en main d’AEM découplé as a Cloud Service {#getting-started}
 
-Dans cette partie du [parcours de développement découplé](overview.md), découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM découplé.
+Dans cette partie du [Parcours de développement découplé AEM](overview.md), découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM découplé.
 
 ## Un peu d’histoire...  {#story-so-far}
 
@@ -65,7 +65,7 @@ La réplication consiste à transférer le contenu entre l’instance de créati
 1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication.
 1. Il est ensuite possible d’appeler les API pour récupérer ce contenu.
 
-AEM découplé s’appuie sur cette base technique en offrant des outils puissants pour gérer le contenu en mode découplé, approche [décrite dans la section suivante.](#aem-headless-basics)
+AEM Headless s’appuie sur cette base technique en offrant des outils puissants pour gérer le contenu découplé, approche [décrite dans la section suivante](#aem-headless-basics).
 
 ## Concepts de base d’AEM découplé {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ La hiérarchie des dossiers peut répondre à deux préoccupations majeures conc
 * [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques pour les paramètres régionaux.
 * Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction, mais aussi à gérer logiquement les fragments de contenu.
 
-AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu.](#developer) Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les auteurs de contenu.
+AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu](#developer). Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les auteurs de contenu.
 
 Les dossiers peuvent également être limités de manière à n’autoriser que certains types de contenu (en fonction des modèles de fragment de contenu). Il est recommandé de toujours spécifier explicitement les modèles autorisés pour tous les dossiers de la hiérarchie. Spécification du contenu autorisé pour un dossier donné :
 
@@ -241,7 +241,7 @@ Les développeurs doivent garder à l’esprit quelques recommandations de base 
 * Pour des requêtes plus performantes avec AEM, utilisez toujours des requêtes persistantes. Celles-ci sont abordées plus loin dans le parcours.
 * GraphQL est conçu sur un modèle déclaratif, conformément au principe suivant : « Demandez ce dont vous avez besoin et c’est ce que vous obtiendrez ». En d’autres termes, lors de la création de requêtes GraphQL, évitez systématiquement les requêtes de type `select *` que vous pourriez créer dans une base de données relationnelle.
 
-Pour une [mise en œuvre découplée de type général à l’aide d’AEM,](#level-1) un développeur n’a besoin d’aucune connaissance en matière de codage avec AEM.
+Pour une [implémentation découplée type utilisant AEM](#level-1), le développeur ne nécessite aucune connaissance du codage d’AEM.
 
 ### Exigences de performance {#performance-requirements}
 
@@ -280,7 +280,7 @@ Vous devriez poursuivre votre parcours avec AEM découplé en consultant le docu
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours en mode découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours découplé.
 
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service

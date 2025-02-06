@@ -4,7 +4,7 @@ description: Découvrez les configurations Adobe Experience Manager (AEM) et com
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 78%
@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Configurations et explorateur de configurations {#configuration-browser}
 
-Les configurations Adobe Experience Manager (AEM) permettent de gérer les paramètres dans AEM et servent d’espaces de travail.
+Les configurations Adobe Experience Manager (AEM) permettent de gérer les paramètres dans AEM et font office d’espaces de travail.
 
 ## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
@@ -64,11 +64,11 @@ L’explorateur de configurations permet à un administrateur de créer, gérer 
 
 >[!NOTE]
 >
->Il n’est possible de créer des configurations à l’aide de l’explorateur de configurations que si votre utilisateur dispose des droits `admin`. Ces droits `admin` sont également nécessaires pour attribuer des droits d’accès à la configuration ou pour modifier une configuration.
+>Il n’est possible de créer des configurations à l’aide de l’explorateur de configurations que si votre utilisateur dispose de droits `admin`. Ces droits d’`admin` sont également requis pour attribuer des droits d’accès à la configuration ou pour modifier une configuration d’une autre manière.
 
 #### Création d’une configuration {#creating-a-configuration}
 
-Il est simple de créer une configuration dans AEM à l’aide du navigateur de configuration.
+Il est simple de créer une configuration dans AEM à l’aide de l’explorateur de configurations.
 
 1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils** > **Général** > **Explorateur de configurations**.
 1. Sélectionnez **Créer**.
@@ -77,8 +77,8 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
    ![Création d’une configuration](assets/configuration-create.png)
 
    * Le **Titre** doit être descriptif.
-   * Le **Nom** deviendra celui du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de nommage AEM.](naming-conventions.md)
+   * Le **nom** deviendra celui du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de dénomination AEM](naming-conventions.md).
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configuration que vous souhaitez autoriser.
    * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -96,7 +96,7 @@ Il est simple de créer une configuration dans AEM à l’aide du navigateur de 
 Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
 1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
-1. Sélectionnez la configuration à modifier, puis **Propriétés** dans la barre d’outils.
+1. Sélectionnez la configuration à modifier, puis sélectionnez **Propriétés** dans la barre d’outils.
 1. Sélectionnez les fonctionnalités supplémentaires que vous souhaitez ajouter à la configuration.
 
    >[!NOTE]
@@ -109,7 +109,7 @@ Si vous considérez les configurations comme des espaces de travail, les droits 
    * Le champ **Sélectionner un utilisateur ou un groupe** peut être renseigné par saisie semi-automatique en fonction des utilisateurs et des rôles existants.
 1. Sélectionnez l’utilisateur ou le rôle approprié dans les résultats de saisie semi-automatique.
    * Vous pouvez sélectionner plusieurs utilisateurs ou rôles.
-1. Vérifiez les options d’accès qu’un ou plusieurs utilisateurs ou rôles sélectionnés doivent posséder et cliquez sur **Ajouter**.
+1. Vérifiez les options d’accès qu’un ou plusieurs utilisateurs ou rôles sélectionnés doivent avoir et cliquez sur **Ajouter**.
    ![Ajout de droits d’accès à une configuration](assets/configuration-edit.png)
 1. Répétez les étapes pour sélectionner des utilisateurs, des utilisatrices ou des rôles et attribuer des droits d’accès supplémentaires si nécessaire.
 1. Sélectionnez **Enregistrer et fermer** lorsque vous avez terminé.
@@ -125,7 +125,7 @@ Bien que l’[administrateur et les utilisateurs puissent considérer les config
 * `/content` abrite tout le contenu.
 * `/conf` abrite l’ensemble de la configuration.
 
-Le contenu référence sa configuration associée au moyen d’une propriété `cq:conf`. AEM effectue une recherche en fonction du contenu et de sa propriété `cq:conf` contextuelle pour trouver la configuration appropriée.
+Le contenu fait référence à sa configuration associée au moyen d’une propriété `cq:conf`. AEM effectue une recherche en fonction du contenu et de sa propriété `cq:conf` contextuelle pour trouver la configuration appropriée.
 
 ### Exemple {#developer-example}
 
@@ -137,7 +137,7 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Le point de départ de toute recherche de configuration est une ressource de contenu située quelque part sous `/content`. Il peut s’agir d’une page, d’un composant au sein d’une page, d’une ressource ou d’un dossier de la gestion des ressources numériques. Dans ce contexte, c’est le contenu réel pour lequel nous recherchons la configuration appropriée qui s’applique.
+Le point de départ de toute recherche de configuration est une ressource de contenu quelque part sous `/content`. Il peut s’agir d’une page, d’un composant au sein d’une page, d’une ressource ou d’un dossier de la gestion des ressources numériques. Dans ce contexte, c’est le contenu réel pour lequel nous recherchons la configuration appropriée qui s’applique.
 
 Maintenant, avec l’objet `Conf`, nous pouvons récupérer l’élément de configuration qui nous intéresse. Dans ce cas, il s’agit de `dam/imageserver`, qui est une collection de paramètres associés au `imageserver`. L’appel `getItem` renvoie une `ValueMap`. Vous lisez ensuite une propriété de chaîne `bgkcolor` et fournissez une valeur par défaut de « FFFFFF » au cas où la propriété (ou l’élément de configuration complet) ne serait pas présent.
 
@@ -157,13 +157,13 @@ Examinons maintenant le contenu JCR correspondant :
             - bgkcolor = "FF0000"
 ```
 
-Dans cet exemple, nous supposons qu’il existe un dossier de la gestion des ressources numériques spécifique à WKND et une configuration correspondante. À partir de ce dossier `/content/dam/wknd`, vous pouvez constater qu’il existe une propriété string nommée `cq:conf` qui fait référence à la configuration qui s’applique à la sous-arborescence. La propriété est généralement définie sur le `jcr:content` d’une page ou d’un dossier de ressources. Ces liens `conf` sont explicites. Il est donc facile de les suivre en regardant simplement le contenu dans CRXDE.
+Dans cet exemple, nous supposons qu’il existe un dossier de la gestion des ressources numériques spécifique à WKND et une configuration correspondante. En commençant par cette `/content/dam/wknd` de dossier, vous pouvez voir qu’il existe une propriété de chaîne nommée `cq:conf` qui fait référence à la configuration qui s’applique à la sous-arborescence. La propriété est généralement définie sur le `jcr:content` d’une page ou d’un dossier de ressources. Ces liens `conf` sont explicites. Il est donc facile de les suivre en regardant simplement le contenu dans CRXDE.
 
-En entrant `/conf`, suivez la référence et vérifiez qu’il existe un noeud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
+À l’intérieur de `/conf`, suivez la référence et vérifiez qu’il existe un nœud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
 
-Vous voyez que la configuration contient un noeud `settings` de nom fixe qui contient les éléments réels, y compris le `dam/imageserver` dont vous avez besoin dans ce cas. Cet élément peut être considéré comme un « document de paramètres » et est généralement représenté par une `cq:Page` avec un `jcr:content` contenant le contenu réel.
+Vous constatez que la configuration contient un nœud de `settings` à nom fixe qui contient les éléments réels, y compris les `dam/imageserver` dont vous avez besoin dans ce cas. Cet élément peut être considéré comme un « document de paramètres » et est généralement représenté par une `cq:Page` avec un `jcr:content` contenant le contenu réel.
 
-Enfin, vous voyez la propriété `bgkcolor` dont cet exemple de code a besoin. La `ValueMap` que nous récupérons dans `getItem` repose sur le nœud `jcr:content` de la page.
+Enfin, vous voyez la `bgkcolor` de propriété dont cet exemple de code a besoin. La `ValueMap` que nous récupérons dans `getItem` repose sur le nœud `jcr:content` de la page.
 
 ### Résolution de la configuration {#configuration-resolution}
 
@@ -198,9 +198,9 @@ Pour prendre en charge cette recherche de configuration, AEM dispose d’un méc
 
 ### Utilisation des configurations {#using-configurations}
 
-Les configurations dans AEM reposent sur les configurations basées sur le contexte Sling. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations basées sur le contexte. Les configurations basées sur le contexte sont des configurations liées à une ressource de contenu ou à une arborescence de ressources, comme [ l’a décrit dans l’exemple précédent](#developer-example).
+Les configurations dans AEM reposent sur les configurations basées sur le contexte Sling. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations basées sur le contexte. Les configurations basées sur le contexte sont des configurations liées à une ressource de contenu ou à une arborescence de ressources comme [décrit dans l’exemple précédent](#developer-example).
 
-Pour plus d’informations sur les configurations basées sur le contexte, des exemples et la manière de les utiliser, consultez la [documentation Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Pour plus d’informations sur les configurations contextuelles, des exemples et leur utilisation, consultez la [documentation Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### Console Web ConfMgr {#confmgr-web-console}
 
@@ -214,7 +214,7 @@ Indiquez simplement :
 * **Item** (Élément)
 * **User** (Utilisateur)
 
-Cliquez sur **Résoudre** pour voir les configurations qui sont résolues et obtenir des exemples de code qui aident à résoudre ces configurations.
+Cliquez sur **Résoudre** afin de voir quelles configurations sont résolues et d’obtenir des exemples de code qui permettent de résoudre ces configurations.
 
 ### Console Web de configuration basée sur le contexte {#context-aware-web-console}
 
@@ -227,4 +227,4 @@ Indiquez simplement :
 * **Content Path** (Chemin d’accès au contenu)
 * **Config Name** (Nom de configuration)
 
-Cliquez sur **Résoudre** afin de récupérer les chemins de contexte et les propriétés associés pour la configuration sélectionnée.
+Cliquez sur **Résoudre** afin de récupérer les chemins d’accès au contexte et les propriétés associés pour la configuration sélectionnée.

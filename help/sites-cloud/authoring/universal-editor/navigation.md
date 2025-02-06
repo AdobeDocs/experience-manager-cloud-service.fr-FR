@@ -1,18 +1,18 @@
 ---
-title: Accès et navigation dans l’éditeur universel
+title: Accès à l’éditeur universel et navigation dans cet éditeur
 description: Découvrez les principes de base de l’accès et de la navigation dans l’éditeur universel.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 21%
+source-wordcount: '1613'
+ht-degree: 18%
 
 ---
 
-# Accès et navigation dans l’éditeur universel {#navigating}
+# Accès à l’éditeur universel et navigation dans cet éditeur {#navigating}
 
 Découvrez les principes de base de l’accès et de la navigation dans l’éditeur universel.
 
@@ -20,12 +20,12 @@ Découvrez les principes de base de l’accès et de la navigation dans l’édi
 
 L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en œuvre pour que vous puissiez fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 
-Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour simplement pouvoir intervenir et commencer à modifier le contenu. Ce document décrit comment naviguer dans l’éditeur universel.
+Pour ce faire, l’éditeur universel fournit aux personnes en charge de la création de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour se lancer et commencer à modifier le contenu. Ce document décrit comment naviguer dans l’éditeur universel.
 
 >[!TIP]
 >
->* Pour plus d&#39;informations sur la création à l&#39;aide d&#39;Universal Editor, consultez le document [Création de contenu avec l&#39;Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* Pour une présentation plus détaillée de l’éditeur universel, consultez le document [Présentation de l’éditeur universel.](/help/implementing/universal-editor/introduction.md)
+>* Pour plus d’informations sur la création à l’aide de l’éditeur universel, consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>* Pour une présentation plus détaillée de l’éditeur universel, voir [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md).
 
 ## Préparer l’application {#prepare-app}
 
@@ -37,28 +37,28 @@ Pour créer du contenu pour une application à l’aide de l’éditeur universe
 
 ## Accès à l’éditeur universel {#accessing}
 
-Une fois que l’application est instrumentée pour fonctionner avec l’éditeur universel, l’éditeur universel peut accéder à la fois à l’intérieur d’AEM as a Cloud Service et directement sans accéder à AEM.
+Une fois que l’application est instrumentée pour fonctionner avec l’éditeur universel, l’éditeur universel peut être accessible à la fois dans AEM as a Cloud Service et directement sans accéder à AEM.
 
-### Accès dans AEM as a Cloud Service {#accessing-aem}
+### Accès à dans AEM as a Cloud Service {#accessing-aem}
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service.
-1. Utilisez la [**console Sites**](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée à utiliser avec l’éditeur universel que vous souhaitez modifier.
+1. Utilisez la console [**Sites** ](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
 1. Modifiez la page.
 1. L’éditeur universel s’ouvre pour modifier la page sélectionnée.
 
 >[!NOTE]
 >
->Lors de la modification d’une page dans la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle:](/help/sites-cloud/authoring/page-editor/templates.md) de la page, soit l’éditeur universel décrit dans ce document, soit l’[éditeur de page.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Lors de la modification d’une page dans la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), la console ouvre l’éditeur approprié au [modèle](/help/sites-cloud/authoring/page-editor/templates.md) de la page, soit l’éditeur universel décrit dans ce document, soit l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ### Accès direct {#accessing-directly}
 
-1. Connectez-vous à l’éditeur universel. Vous avez besoin d&#39;une Adobe ID pour vous connecter et [ avoir accès à l&#39;éditeur universel.](/help/implementing/universal-editor/getting-started.md#request-access)
+1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [ l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. Une fois connecté, saisissez l’URL de la page à modifier dans la barre d’emplacement [.](#location-bar) afin que vous puissiez commencer à modifier du contenu tel que du texte ou du contenu multimédia.
+1. Une fois connecté, saisissez l’URL de la page à modifier dans la [barre d’emplacement](#location-bar) afin de commencer à modifier du contenu tel que du contenu texte ou multimédia.
 
 ## Présentation de l’interface utilisateur {#ui}
 
-L’interface utilisateur est divisée en deux zones principales.
+L’interface utilisateur est divisée en ces zones principales.
 
 * [En-tête Experience Cloud](#experience-cloud-header)
 * [Barre d’outils de l’éditeur universel](#universal-editor-toolbar)
@@ -75,13 +75,13 @@ L’en-tête Experience Cloud est toujours présent en haut de l’écran. Il s�
 
 #### Experience Manager {#experience-manager}
 
-Sélectionnez le lien Adobe Experience Cloud à gauche de l’en-tête pour accéder à la racine de votre solution Experience Manager et aux outils tels que [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) et [Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Sélectionnez le lien Adobe Experience Cloud à gauche de l’en-tête pour accéder à la racine de votre solution Experience Manager et aux outils tels que [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) et [Distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
 
 ![Bouton Navigation globale](assets/global-navigation.png)
 
 #### Organisation {#organization}
 
-L’organisation dans laquelle vous êtes actuellement connecté s’affiche. Sélectionnez cette option pour passer à une autre organisation si votre Adobe ID est associé à plusieurs.
+L’organisation dans laquelle vous êtes actuellement connecté s’affiche. Sélectionnez cette option pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
 
 ![Indicateur d’organisation](assets/organization.png)
 
@@ -99,7 +99,7 @@ L’icône d’aide permet d’accéder rapidement aux ressources d’apprentiss
 
 #### Notifications {#notifications}
 
-Cette icône comporte un badge avec le nombre de [notifications incomplètes actuellement attribuées.](/help/implementing/cloud-manager/notifications.md)
+Cette icône contient un badge indiquant le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement attribuées.
 
 ![Notifications](assets/notifications.png)
 
@@ -111,23 +111,23 @@ Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre uti
 
 ### Barre d’outils de l’éditeur universel {#universal-editor-toolbar}
 
-La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste sous l’en-tête [de l’Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
+La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste en dessous [en-tête Experience Cloud ](#experience-cloud-header). Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
 
-![Barre d’outils de l’éditeur universel](assets/universal-editor-toolbar.png)
+![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
 
-#### Bouton Accueil {#home-button}
+#### Le Bouton Accueil {#home-button}
 
-Le bouton d’accueil vous renvoie à la page de début de l’éditeur universel.
+Le bouton Accueil vous renvoie à la page de démarrage de l’éditeur universel
 
 ![Menu Hamburger](assets/home-button.png)
 
-Sur la page de début, vous pouvez saisir l’URL du site à modifier à l’aide de l’éditeur universel.
+Sur la page de démarrage, vous pouvez saisir l’URL du site à modifier à l’aide de l’éditeur universel.
 
 ![Page de démarrage](assets/start-page.png)
 
 >[!NOTE]
 >
->Toute page que vous souhaitez modifier avec l’éditeur universel doit être [ instrumentée pour prendre en charge l’éditeur universel.](/help/implementing/universal-editor/getting-started.md)
+>Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel](/help/implementing/universal-editor/getting-started.md).
 
 #### Barre d’emplacement {#location-bar}
 
@@ -137,35 +137,35 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 >[!TIP]
 >
->Utilisez la clé d&#39;accès `l` (la lettre l) pour ouvrir la barre d&#39;adresse.
+>Utilisez le raccourci clavier `l` (lettre l) pour ouvrir la barre d’adresse.
 
 >[!NOTE]
 >
->Toute page que vous souhaitez modifier avec l’éditeur universel doit être [ instrumentée pour prendre en charge l’éditeur universel.](/help/implementing/universal-editor/getting-started.md)
+>Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel](/help/implementing/universal-editor/getting-started.md).
 
-#### Paramètres d’en-tête d’authentification {#authentication-settings}
+#### Paramètres d&#39;en-tête d&#39;authentification {#authentication-settings}
 
-Sélectionnez l&#39;icône des paramètres d&#39;en-tête d&#39;authentification si vous devez [définir un en-tête d&#39;authentification personnalisé à des fins de développement local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez [définir un en-tête d’authentification personnalisé à des fins de développement local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Bouton Paramètres d’en-tête d’authentification](assets/authentication-header-settings.png)
 
 #### Paramètres de l&#39;émulateur {#emulator}
 
-Sélectionnez l’icône d’émulation pour définir comment l’éditeur universel effectue le rendu de la page.
+Sélectionnez l’icône d’émulation pour définir la manière dont l’éditeur universel effectue le rendu de la page.
 
 ![Icône Émulateur](assets/emulator.png)
 
 Appuyez ou cliquez sur l’icône d’émulation pour afficher les options.
 
-![Options d’émulation](assets/emulation-options.png)
+![ Options d’émulation ](assets/emulation-options.png)
 
-Par défaut, l’éditeur s’ouvre dans la mise en page pour ordinateur où la hauteur et la largeur sont automatiquement définies par le navigateur.
+Par défaut, l’éditeur s’ouvre dans une disposition de bureau où la hauteur et la largeur sont automatiquement définies par le navigateur.
 
 Vous pouvez également choisir d’émuler un appareil mobile et dans l’éditeur universel :
 
 * Définir son orientation
 * Définir la largeur et la hauteur
-* Modification de l’orientation
+* Modifier l’orientation
 
 #### Mode Aperçu {#preview-mode}
 
@@ -175,25 +175,25 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `p` pour basculer vers et depuis le mode Aperçu.
+>Utilisez le raccourci clavier `p` pour activer/désactiver le mode Aperçu.
 
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
 
-Sélectionnez l’icône d’aperçu de l’application ouverte pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans l’éditeur pour prévisualiser votre contenu.
+Sélectionnez l’icône Ouvrir l’aperçu de l’application pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans passer par l’éditeur pour prévisualiser votre contenu.
 
 ![Ouvrir l’aperçu de l’application](assets/open-app-preview.png)
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `o` (lettre o) pour ouvrir l’aperçu de l’application.
+>Utilisez le raccourci clavier `o` (lettre o) pour ouvrir l’aperçu de l’application.
 
 >[!TIP]
 >
->L&#39;URL d&#39;aperçu de votre application [ peut être personnalisée.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>L’URL d’aperçu de votre application [peut être personnalisée](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
-#### Publier {#publish}
+#### Publication {#publish}
 
-Sélectionnez le bouton Publier pour que vous puissiez publier les modifications apportées au contenu en direct pour que vos lecteurs puissent les utiliser.
+Sélectionnez le bouton Publier afin de publier les modifications apportées au contenu dynamique pour que vos lecteurs et lectrices puissent les utiliser.
 
 ![Bouton Publier](assets/publish.png)
 
@@ -201,120 +201,120 @@ Sélectionnez le bouton Publier pour que vous puissiez publier les modifications
 >
 >Consultez le document [Publication de contenu avec l’éditeur universel](publishing.md) pour plus d’informations sur la publication avec l’éditeur universel.
 
-#### Ellipse {#ellipsis}
+#### Points de suspension {#ellipsis}
 
 D’autres options standard sont accessibles à l’aide du bouton représentant des points de suspension.
 
 ![Bouton représentant des points de suspension](assets/ellipsis.png)
 
-Par exemple, la possibilité d’annuler la publication d’une page (c’est-à-dire d’inverser l’action du bouton [**Publish**](#publish)) est accessible via le bouton représentant des points de suspension.
+Par exemple, la possibilité de dépublier une page (c’est-à-dire d’inverser l’action du bouton [**Publish**](#publish)) est accessible à partir du bouton représentant des points de suspension.
 
 #### Boutons supplémentaires {#additional-toolbar-buttons}
 
-Universal Editor offre une expérience de création personnalisable et extensible. Si d’autres boutons s’affichent dans la barre d’outils, votre éditeur universel a été étendu.
+L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans la barre d’outils, cela signifie que votre éditeur universel a été étendu.
 
-* Pour plus d’informations sur les possibilités d’extension, consultez la section [Personnalisation et extension de l’éditeur universel.](/help/implementing/universal-editor/customizing.md)
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation sur l’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Pour plus d’informations sur les possibilités d’extension, consultez la [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la documentation de l’Extension Manager [](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### L’éditeur {#editor}
 
-L’éditeur occupe la plupart de la fenêtre et est l’endroit où la page spécifiée dans [la barre d’emplacement](#location-bar) est rendue.
+L’éditeur occupe la majeure partie de la fenêtre et c’est l’endroit où la page spécifiée dans [la barre d’emplacement](#location-bar) est rendue.
 
 ![Éditeur](assets/editor.png)
 
-Si l’éditeur est en mode [aperçu,](#preview-mode) le contenu est navigable et vous pouvez suivre les liens, mais vous ne pouvez pas modifier le contenu.
+Si l’éditeur se trouve en [mode Aperçu](#preview-mode), le contenu peut être parcouru et vous pouvez suivre les liens, mais vous ne pouvez pas modifier le contenu.
 
 ### Panneau Propriétés {#properties-rail}
 
-Le panneau des propriétés est toujours présent le long du côté droit de l’éditeur. En fonction de son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
+Le panneau Propriétés est toujours présent le long du côté droit de l’éditeur. Selon son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
 
 ![Panneau Propriétés](assets/properties-rail.png)
 
 #### Mode Propriétés {#properties-mode}
 
-En mode Propriétés, le panneau affiche les propriétés du composant actuellement sélectionné dans l’éditeur. Il s’agit du mode par défaut du panneau Propriétés lorsqu’une page est chargée.
+En mode Propriétés , le panneau affiche les propriétés du composant actuellement sélectionné dans l’éditeur. Il s’agit du mode par défaut du panneau Propriétés lorsqu’une page est chargée.
 
 ![Mode Propriétés](assets/properties-mode.png)
 
-Selon le type de composant sélectionné, les détails peuvent être affichés et modifiés dans le panneau Propriétés.
+Selon le type de composant que vous sélectionnez, les détails peuvent être affichés et modifiés dans le panneau des propriétés.
 
 ![Détails du composant](assets/component-details.png)
 
-Tous les composants ne comportent pas de détails qui peuvent être affichés et/ou modifiés.
+Tous les composants ne comportent pas de détails pouvant être affichés et/ou modifiés.
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `d` pour passer en mode Propriétés.
+>Utilisez le raccourci clavier `d` pour passer en mode Propriétés.
 
 #### Mode Arborescence de contenu {#content-tree-mode}
 
-En mode Arborescence de contenu, le panneau affiche la hiérarchie du contenu de la page.
+En mode d’arborescence de contenu, le panneau affiche la hiérarchie du contenu de la page.
 
 ![Mode Arborescence de contenu](assets/content-tree-mode.png)
 
-Lors de la sélection d’un élément dans l’arborescence de contenu, l’éditeur fait défiler le contenu jusqu’à ce qu’il le sélectionne.
+Lorsque vous sélectionnez un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne.
 
 ![Arborescence de contenu](assets/content-tree.png)
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `f` pour passer en mode arborescence de contenu.
+>Utilisez le raccourci clavier `f` pour passer en mode Arborescence de contenu.
 
 ##### Ouvrir dans l’éditeur CF {#edit}
 
-Lors de la modification, les options du composant sélectionné s’affichent dans le panneau Propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton **Ouvrir dans l’éditeur CF**.
+Lors de la modification, les options du composant sélectionné s’affichent dans le panneau des propriétés, où vous pouvez modifier le composant sélectionné. Si le composant sélectionné est un fragment de contenu, vous pouvez également sélectionner le bouton **Ouvrir dans CF Editor**.
 
-![Icône Ouvrir dans l’éditeur de fragment de contenu](assets/open-in-cf-editor.png)
+![Icône Ouvrir dans CF Editor](assets/open-in-cf-editor.png)
 
-Appuyez ou cliquez sur le bouton **Ouvrir dans l’éditeur de fragment de contenu** pour ouvrir l’ [ éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet. Cela vous permet d’accéder à toute la puissance de l’éditeur de fragments de contenu pour modifier le fragment de contenu associé.
+Appuyez ou cliquez sur le bouton **Ouvrir dans l’éditeur CF** pour ouvrir l’[éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet. Vous pouvez ainsi accéder à toute la puissance de l’éditeur de fragment de contenu pour modifier le fragment de contenu associé.
 
 Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu dans l’éditeur universel ou directement dans l’éditeur de fragment de contenu.
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `e` pour ouvrir un fragment de contenu sélectionné dans l’éditeur de fragment de contenu.
+>Utilisez le raccourci `e` pour ouvrir un fragment de contenu sélectionné dans l’éditeur de fragment de contenu.
 
 ##### Ajouter {#add}
 
-Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout s’affiche dans le panneau des propriétés.
+Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout apparaît dans le panneau Propriétés.
 
-![Ajouter une icône](assets/ue-add-component-icon.png)
+![Icône Ajouter](assets/ue-add-component-icon.png)
 
-Appuyez ou cliquez sur le bouton Ajouter pour ouvrir un menu déroulant des composants disponibles pour [ajouter au conteneur sélectionné.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+Appuyez ou cliquez sur le bouton Ajouter pour ouvrir un menu déroulant de composants que vous pouvez [ajouter au conteneur sélectionné](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
 
-![Ajouter un menu contextuel](assets/add-context-menu.png)
+![Ajouter menu contextuel](assets/add-context-menu.png)
 
 >[!TIP]
 >
->Utilisez la touche d’accès rapide `a` pour ajouter un composant à un composant de conteneur sélectionné.
+>Utilisez le raccourci `a` pour ajouter un composant à un composant de conteneur sélectionné.
 
-##### Dupliquer {#duplicate}
+##### Doublon {#duplicate}
 
-Si vous sélectionnez un composant dans un composant de conteneur, que ce soit dans l’arborescence de contenu ou dans l’éditeur, l’option de duplication s’affiche dans le panneau des propriétés.
+Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option Dupliquer s’affiche dans le panneau des propriétés.
 
 ![Icône Dupliquer](assets/duplicate.png)
 
-Appuyez ou cliquez sur le bouton dupliquer [duplique le composant sélectionné.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+Appuyez ou cliquez sur le bouton Dupliquer [duplique le composant sélectionné](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Supprimer {#delete}
 
-Si vous sélectionnez un composant dans un composant de conteneur, que ce soit dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression apparaît dans le panneau Propriétés.
+Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche dans le panneau Propriétés.
 
 ![Icône de suppression](assets/ue-delete-component-icon.png)
 
-Appuyez ou cliquez sur le bouton de suppression [ pour supprimer le composant.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
->Utilisez la touche d&#39;accès rapide `Shift+Backspace` pour supprimer un composant sélectionné d&#39;un conteneur.
+>Utilisez le raccourci `Shift+Backspace` pour supprimer un composant sélectionné d’un conteneur.
 
 #### Boutons supplémentaires {#additional-properties-rail-buttons}
 
-Universal Editor offre une expérience de création personnalisable et extensible. Si d’autres boutons s’affichent dans le panneau des propriétés, votre éditeur universel a été étendu.
+L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans le panneau des propriétés, cela signifie que votre éditeur universel a été étendu.
 
-* Pour plus d’informations sur les possibilités d’extension, consultez la section [Personnalisation et extension de l’éditeur universel.](/help/implementing/universal-editor/customizing.md)
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation sur l’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Pour plus d’informations sur les possibilités d’extension, consultez la [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la documentation de l’Extension Manager [](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous savez comment accéder à l’éditeur universel et naviguer dans celui-ci, vous êtes prêt à [créer du contenu à l’aide de cet éditeur.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Maintenant que vous savez comment accéder à l’éditeur universel et naviguer dans celui-ci, vous êtes prêt à [créer du contenu à l’aide de celui-ci](/help/sites-cloud/authoring/universal-editor/authoring.md).

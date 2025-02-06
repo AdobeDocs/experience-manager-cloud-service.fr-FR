@@ -1,50 +1,50 @@
 ---
 title: Personnaliser la création de pages
-description: Découvrez les mécanismes proposés par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
+description: Découvrez les mécanismes fournis par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
 # Personnaliser la création de pages {#customizing-page-authoring}
 
-Adobe Experience Manager as a Cloud Service fournit des mécanismes permettant de personnaliser la fonctionnalité de création de pages (et les [consoles](/help/implementing/developing/extending/consoles.md)) de votre instance de création.
+Adobe Experience Manager as a Cloud Service fournit des mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages (et les [consoles](/help/implementing/developing/extending/consoles.md)) de votre instance de création.
 
 ## Clientlibs {#clientlibs}
 
-Les bibliothèques côté client vous permettent d’étendre l’implémentation par défaut pour activer la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard.
+Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’activer de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard.
 
 Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` La nouvelle bibliothèque cliente doit :
 
-* Dépend de la bibliothèque cliente de création `cq.authoring.editor.sites.page`.
-* Faites partie de la catégorie `cq.authoring.editor.sites.page.hook` appropriée.
+* Dépendent de l’`cq.authoring.editor.sites.page` de la bibliothèque cliente de création.
+* Faire partie de la catégorie de `cq.authoring.editor.sites.page.hook` appropriée.
 
 Voir [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Recouvrements {#overlays}
 
-Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard dans `/libs` avec votre propre fonctionnalité personnalisée dans `/apps`.
+Les recouvrements reposent sur des définitions de nœud et vous permettent de recouvrir la fonctionnalité standard en `/libs` avec votre propre fonctionnalité personnalisée dans `/apps`.
 
-Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car [sling resource merge](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
+Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la [fusion de ressources sling](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
 
-Pour plus d’informations, voir le [ensemble de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
+Pour plus d’informations, voir la documentation [JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
 
-Pour plus d’informations sur les incrustations, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Pour plus d’informations sur les recouvrements, voir [Recouvrements pour Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
 
-Lorsque vous modifiez une page, plusieurs [modes](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) sont disponibles. Ces modes sont implémentés à l’aide de [calques](/help/implementing/developing/introduction/ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les modes d’AEM standard incluent Modifier, Disposition, Développeur, Timewarp, État de Live Copy et Ciblage.
+Lorsque vous modifiez une page, plusieurs [modes](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) sont disponibles. Ces modes sont implémentés à l’aide de [calques](/help/implementing/developing/introduction/ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les modes AEM standard incluent la modification, la mise en page, le développement, la distorsion du temps, le statut de Live Copy et le ciblage.
 
 ### Exemple de calque : statut de Live Copy {#layer-example-live-copy-status}
 
 Une instance AEM standard fournit la couche MSM. Cela permet d’accéder aux données relatives à la [gestion multisite](/help/sites-cloud/administering/msm/overview.md) et de les mettre en évidence dans le calque.
 
-Pour l’afficher en action, vous pouvez modifier n’importe quelle copie de langue dans l’ [exemple de contenu WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et sélectionner le mode **État de Live Copy** .
+Pour obtenir une démonstration, vous pouvez modifier n’importe quelle copie de langue dans l’exemple de contenu [WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et sélectionner le mode **Statut de la Live Copy**.
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -52,9 +52,9 @@ Vous trouverez la définition du calque MSM (pour référence) à l’emplacemen
 
 ### Exemple de code {#code-sample}
 
-Il s’agit d’un exemple de package montrant comment créer un calque (mode) pour la vue MSM.
+Voici un exemple de package qui montre comment créer un calque (mode) pour la vue MSM.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode).
 
 ## Ajouter une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
 
@@ -64,28 +64,28 @@ L’explorateur de ressources affiche des ressources de différents types/catég
 
 `aem-authoring-extension-assetfinder-flickr` est un exemple de package qui montre comment ajouter un groupe à l’outil de recherche de ressources. Cet exemple se connecte au flux public de [Flickr](https://www.flickr.com) et l’affiche dans le panneau latéral.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr).
 
 ## Filtrer les ressources {#filtering-resources}
 
-Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection dans les ressources d’une liste.
+Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection parmi les ressources d’une liste.
 
 Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant Granite `pathbrowser` est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource particulière, les chemins d’accès présentés peuvent être filtrés comme suit :
 
 * Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
-Pour plus d&#39;informations sur la création d&#39;un prédicat personnalisé, consultez [cet article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Pour plus d’informations sur la création d’un prédicat personnalisé, consultez [cet article](/help/implementing/developing/introduction/query-builder-custom-predicate.md).
 
 ## Ajouter une nouvelle action à une barre d’outils de composant {#add-new-action-to-a-component-toolbar}
 
-Chaque composant dispose généralement d’une barre d’outils qui permet d’accéder à un éventail d’actions pouvant être entreprises sur ce composant.
+Chaque composant comporte généralement une barre d’outils qui permet d’accéder à un éventail d’actions pouvant être entreprises sur ce composant.
 
 ### Exemple de code {#code-sample-2}
 
 `aem-authoring-extension-toolbar-screenshot` est un exemple de package qui montre comment créer une action de barre d’outils personnalisée pour effectuer le rendu de composants.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot).
 
 ## Ajouter un nouvel éditeur statique {#add-new-in-place-editor}
 
@@ -108,10 +108,10 @@ Dans une installation AEM standard :
 
            Définit le type d’éditeur en ligne utilisé lorsqu’une édition statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
-1. Des détails de configuration supplémentaires de l’éditeur peuvent être configurés à l’aide d’un noeud `config` contenant des configurations et d’un noeud `plugin` contenant les détails de configuration de module externe nécessaires.
+1. Les informations de configuration supplémentaires de l’éditeur peuvent être configurées à l’aide d’un nœud `config` contenant des configurations et d’un nœud `plugin` pour contenir les informations de configuration du plug-in nécessaire.
 
 
-Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant image.
+Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant d’image.
 
 ```xml
    <cq:inplaceEditing
@@ -156,7 +156,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 `aem-authoring-extension-inplace-editor` est un exemple de package qui montre comment créer un éditeur statique dans AEM.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
 
 ## Ajouter une nouvelle action de page {#add-a-new-page-action}
 
@@ -166,7 +166,7 @@ Pour ajouter une nouvelle action de page à la barre d’outils de la page, par 
 
 `aem-authoring-extension-header-backtosites` est un exemple de package qui montre comment créer une action de barre d’en-tête personnalisée pour revenir à la console Sites.
 
-Vous trouverez le code de cette page sur [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites).
 
 ## Personnalisation du workflow Demander l’activation {#customizing-the-request-for-activation-workflow}
 
@@ -178,9 +178,9 @@ Le workflow d’usine, **Demande d’activation** :
 
 Pour bénéficier d’un comportement personnalisé lors d’une telle activation, vous pouvez incruster le workflow **Demande d’activation** :
 
-1. Dans `/apps`, superposez l&#39;assistant **Sites** `/libs/wcm/core/content/common/managepublicationwizard`
+1. Dans `/apps`, recouvrez l’`/libs/wcm/core/content/common/managepublicationwizard` de l’assistant **Sites**
 
-   * Cette opération remplace l’instance commune de `/libs/cq/gui/content/common/managepublicationwizard`.
+   * Cela a pour effet de remplacer l’instance commune de `/libs/cq/gui/content/common/managepublicationwizard`.
 
 1. Mettez à jour le modèle de workflow et les configurations/scripts associés selon les besoins.
-1. Supprimez le droit à l’action `replicate` de tous les utilisateurs appropriés pour toutes les pages pertinentes. Pour que ce workflow soit déclenché comme action par défaut lorsque l’un des utilisateurs est concerné, essayez de publier (ou de répliquer) une page.
+1. Retirez à tous les utilisateurs appropriés le droit dont ils disposent sur l’action `replicate` pour toutes les pages pertinentes. Pour déclencher ce workflow en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.

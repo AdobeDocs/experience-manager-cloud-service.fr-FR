@@ -1,36 +1,36 @@
 ---
-title: Configuration des pages d’erreur CDN
+title: Configuration des pages d’erreur du réseau CDN
 description: Découvrez comment remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline de configuration Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# Configuration des pages d’erreur CDN {#cdn-error-pages}
+# Configuration des pages d’erreur du réseau CDN {#cdn-error-pages}
 
-Dans le cas improbable où le [CDN géré par l&#39;Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne peut pas atteindre l&#39;origine de l&#39;AEM, le CDN diffuse par défaut une page d&#39;erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du [pipeline de configuration Cloud Manager.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+Dans le cas peu probable où le réseau CDN géré par l’Adobe [](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuration {#setup}
 
-Avant de pouvoir remplacer la page d’erreur par défaut, vous devez effectuer les opérations suivantes :
+Avant de pouvoir remplacer la page d’erreur par défaut, procédez comme suit :
 
-1. Créez un fichier nommé `cdn.yaml` ou similaire, en référençant la section de syntaxe ci-dessous.
+1. Créez un fichier nommé `cdn.yaml` ou similaire, en vous référant à la section de syntaxe ci-dessous.
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [ Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [ Utilisation de pipelines de configuration ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Déployez la configuration.
 
 ### Syntaxe {#syntax}
 
-La page d’erreur est implémentée sous la forme d’une application d’une seule page (SPA) et référence quelques propriétés, comme illustré dans l’exemple ci-dessous.  Les fichiers statiques référencés par les URL doivent être hébergés par vous sur un service accessible sur Internet tel qu’Amazon S3 ou Azure Blob Storage.
+La page d’erreur est implémentée en tant qu’application sur une seule page (SPA) et fait référence à quelques propriétés, comme illustré dans l’exemple ci-dessous.  Les fichiers statiques référencés par les URL doivent être hébergés par vous sur un service accessible par Internet, tel qu’Amazon S3 ou Azure Blob Storage.
 
 Exemple de configuration :
 
@@ -47,19 +47,19 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du noeud de données. La valeur de la propriété type doit être *CDN* et la propriété `version` doit être définie sur *1*.
+Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour une description des propriétés au-dessus du nœud de données. La valeur de la propriété kind doit être *CDN* et la propriété `version` doit être définie sur *1*.
 
 
 | Nom | Propriétés autorisées | Signification |
 |-----------|--------------------------|-------------|
 | **spa** | title | Titre de la page d’erreur. |
-|     | icoUrl | URL d’un fichier d’icône. |
+|     | icoUrl | URL vers un fichier icône. |
 |     | cssUrl | URL vers un fichier CSS. |
-|     | jsUrl | URL d’un fichier JavaScript. |
+|     | jsUrl | URL vers un fichier JavaScript. |
 
 ### Exemple d’HTML généré {#sample-generated-html}
 
-Le code d’HTML généré par le réseau de diffusion de contenu et diffusé au client, tel qu’un navigateur, ressemblera (mais ne sera pas identique) au fragment de code suivant :
+Le code d’HTML généré par le réseau CDN et diffusé au client, tel qu’un navigateur, ressemble (mais n’est pas identique) au fragment de code suivant :
 
 ```
 <!DOCTYPE html>
@@ -80,18 +80,18 @@ Le code d’HTML généré par le réseau de diffusion de contenu et diffusé au
 
 ### Tests {#testing}
 
-À des fins de test, appelez le point de terminaison dédié avec le code d’erreur pris en charge, par exemple :
+À des fins de test, appelez le point d’entrée dédié avec le code d’erreur pris en charge, par exemple :
 
 ```
 curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 ```
 
-Les codes pris en charge sont : 403, 404, 406, 500 et 503.
+Les codes pris en charge sont : 403, 404, 406, 500 et 503.
 
-Ainsi, vous déclenchez directement le gestionnaire d’erreurs du CDN afin de tester la réponse synthétique pour un code d’erreur donné.
+Ainsi, vous déclenchez directement le gestionnaire d’erreurs du réseau CDN afin de tester la réponse synthétique pour un code d’erreur donné.
 
 ### Tutoriel
 
-Reportez-vous au tutoriel [Pages d’erreur CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) pour obtenir des instructions détaillées sur la création, le déploiement et le test des pages d’erreur du CDN.
+Reportez-vous au tutoriel [Pages d’erreur du réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) pour obtenir des instructions détaillées sur la création, le déploiement et le test des pages d’erreur du réseau CDN.
 
 

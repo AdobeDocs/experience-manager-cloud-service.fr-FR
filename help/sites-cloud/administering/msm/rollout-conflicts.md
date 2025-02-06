@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -18,21 +18,21 @@ Des conflits peuvent apparaître si de nouvelles pages portant le même nom de p
 
 ## Gestion des conflits {#conflict-handling}
 
-Lorsqu’il existe des pages en conflit (dans les branches Plan directeur et Live Copy), MSM vous permet de définir comment (ou même si) elles doivent être gérées.
+Lorsqu’il existe des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
 
 Pour vous assurer que le déploiement n’est pas bloqué, les définitions possibles peuvent inclure :
 
-* Quelle page (plan directeur ou Live Copy) a la priorité lors du déploiement
+* La page (plan directeur ou Live Copy) prioritaire lors du déploiement
 * Quelles pages sont renommées et comment
-* Comment cela affecte-t-il le contenu publié ?
+* Impact sur le contenu publié
 
-Le comportement par défaut de Adobe Experience Manager (AEM) est que le contenu publié n’est pas affecté. Ainsi, si une page qui a été créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié après la gestion et le déploiement des conflits.
+Le comportement par défaut d’AEM (Adobe Experience Manager) prêt à l’emploi est que le contenu publié n’est pas affecté. Ainsi, si une page créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié après la gestion du conflit et le déploiement.
 
 Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Ils peuvent également permettre des actions de publication sous la forme d’un processus individuel.
 
 ### Exemple de scénario {#example-scenario}
 
-Dans les sections suivantes, un exemple de nouvelle page `b` est utilisé, créé à la fois dans le plan directeur et dans la branche Live Copy (créée manuellement), pour illustrer les différentes méthodes de résolution de conflit :
+Dans les sections suivantes, un exemple de nouvelle `b` de page est utilisé, créée dans les branches Plan directeur et Live Copy (créée manuellement) pour illustrer les différentes méthodes de résolution des conflits :
 
 * Plan directeur : `/b`
 
@@ -49,9 +49,9 @@ Dans les sections suivantes, un exemple de nouvelle page `b` est utilisé, cré�
 |  | Plan directeur avant le déploiement | Live Copy avant le déploiement | Publication avant le déploiement |
 |---|---|---|---|
 | Valeur | `b` | `b` | `b` |
-| Commentaire | Création dans la branche du plan directeur, prêt pour le déploiement | Créé manuellement dans la branche Live Copy | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy |
+| Commentaire | Création dans la branche du plan directeur, prêt pour le déploiement | Création manuelle dans la branche Live Copy | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy |
 | Valeur | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Commentaire |  | Créé manuellement dans la branche Live Copy | Contient le contenu de la page `child-level-1` créée manuellement dans la branche Live Copy |
+| Commentaire |  | Création manuelle dans la branche Live Copy | Contient le contenu de la page `child-level-1` créée manuellement dans la branche Live Copy |
 
 ## Gestionnaire de déploiement et gestion des conflits {#rollout-manager-and-conflict-handling}
 
@@ -59,11 +59,11 @@ Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion 
 
 Ceci est effectué à l’aide de la [configuration OSGi](/help/implementing/deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ**. Définissez la valeur **Gérer un conflit avec des pages créées manuellement** (`rolloutmgr.conflicthandling.enabled` ) sur true si le gestionnaire de déploiement doit gérer les conflits d’une page créée dans la Live Copy qui porte un nom déjà présent dans le plan directeur.
 
-AEM possède un [comportement prédéfini lorsque la gestion des conflits a été désactivée.](#behavior-when-conflict-handling-deactivated)
+AEM possède un [comportement prédéfini lorsque la gestion des conflits a été désactivée](#behavior-when-conflict-handling-deactivated).
 
 ## Gestionnaires de conflit {#conflict-handlers}
 
-AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui émergent lors du déploiement du contenu du plan directeur vers la Live Copy. Le changement de nom des pages est la méthode habituelle (et pas seulement) pour résoudre de tels conflits. Plusieurs gestionnaires de conflit peuvent être opérationnels pour permettre une sélection de comportements différents.
+AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui émergent lors du déploiement du contenu du plan directeur vers la Live Copy. Le changement de nom des pages est la méthode habituelle (mais pas la seule) pour résoudre de tels conflits. Plusieurs gestionnaires de conflit peuvent être opérationnels pour permettre une sélection de comportements différents.
 
 AEM fournit :
 
@@ -78,9 +78,9 @@ AEM fournit :
 Le gestionnaire de conflits par défaut est `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur le bas. C’est-à-dire, sous la valeur par défaut de la propriété `service.ranking`, car l’hypothèse est que les gestionnaires personnalisés ont besoin d’un rang supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur Bas. En d’autres termes, sous la valeur par défaut de la propriété `service.ranking` , car l’hypothèse est que les gestionnaires personnalisés ont besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
 
-Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page Live Copy `/b` est déplacée dans la branche Live Copy vers `/b_msm_moved`.
+Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la `/b` de page Live Copy est déplacée dans la branche Live Copy vers `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -99,7 +99,7 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, l
 |  | Plan directeur après le déploiement | Live Copy après le déploiement | Live Copy après le déploiement | Publication après le déploiement |
 |---|---|---|---|---|
 | Valeur | `b` | `b` | `b_msm_moved` | `b` |
-| Commentaire |  | Contient le contenu de la page du plan directeur `b` qui a été déployée | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page d’origine `b` qui a été créé manuellement dans la branche Live Copy et qui est désormais appelée `b_msm_moved` |
+| Commentaire |  | Contient le contenu de la page du plan directeur `b` qui a été déployée | Contient le contenu de la page `b` créée manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la `b` de page d’origine qui a été créée manuellement dans la branche Live Copy et est maintenant appelée `b_msm_moved` |
 | Valeur | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Commentaire |  |  | Aucune modification | Aucune modification |
 
@@ -118,28 +118,28 @@ Les gestionnaires de conflit personnalisés peuvent :
 
 ### Comportement lorsque la gestion des conflits est désactivée {#behavior-when-conflict-handling-deactivated}
 
-Si vous [désactivez manuellement la gestion des conflits,](#rollout-manager-and-conflict-handling) AEM n’engage aucune action concernant les pages en conflit. Les pages ne provoquant pas de conflits sont déployées comme prévu.
+Si vous [désactivez manuellement la gestion des conflits](#rollout-manager-and-conflict-handling), AEM n’engage aucune action concernant les pages en conflit. Les pages ne provoquant pas de conflits sont déployées comme prévu.
 
 >[!CAUTION]
 >
 >Lorsque la gestion des conflits est désactivée, AEM n’indique pas que les conflits sont ignorés. Dans de tels cas, ce comportement doit être explicitement configuré, il est supposé correspondre au comportement souhaité.
 
-Dans ce cas, la Live Copy a la priorité. La page du plan directeur `/b` n’est pas copiée, et la page de la Live Copy `/b` reste intacte.
+Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b` n’est pas copiée, et la page de la Live Copy `/b` reste intacte.
 
 * Blueprint: `/b`
 
-  Il n’est pas copié du tout, mais il est ignoré.
+  Il n’est pas copié du tout, mais est ignoré.
 
 * Live Copy: `/b`
 
-  Ça reste le même.
+  C&#39;est la même chose.
 
 #### Après le déploiement {#after-rollout-no-conflict}
 
 |  | Plan directeur après le déploiement | Live Copy après le déploiement | Publication après le déploiement |
 |---|---|---|---|
 | Valeur | `b` | `b` | `b` |
-| Commentaire |  | Aucune modification ; présente le contenu de la page `b` qui a été créé manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la page `b` qui a été créée manuellement dans la branche Live Copy |
+| Commentaire |  | Aucune modification ; contient le contenu de la `b` de page créée manuellement dans la branche Live Copy | Aucune modification ; contient le contenu de la `b` de page créée manuellement dans la branche Live Copy |
 | Valeur | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Commentaire |  | Aucune modification | Aucune modification |
 

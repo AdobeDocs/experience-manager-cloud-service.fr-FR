@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 73%
@@ -15,13 +15,13 @@ ht-degree: 73%
 
 # Organiser des pages {#creating-and-organizing-pages}
 
-Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer des pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages de sortie.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer de nouvelles pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages existantes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
-## Organisation du site {#organizing-your-site}
+## Organisation de votre site {#organizing-your-site}
 
-En tant qu’auteur, vous devez organiser votre site dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
+En tant qu’auteur, vous devez organiser votre site au sein d’AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
 * vous puissiez les trouver facilement dans l’environnement de création ;
 * les visiteurs sur votre site puissent facilement les parcourir dans l’environnement de publication.
@@ -30,7 +30,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web est construite comme une arborescence qui contient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former les URL, tandis que les titres sont affichés lorsque le contenu de la page est affiché.
 
-Vous trouverez ci-dessous un exemple tiré du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), sur lequel vous pouvez accéder à un article concernant les skateparks (`la-skateparks`) :
+Vous trouverez ci-dessous un exemple provenant du site [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), qui permet d’accéder à un article sur les skateparks (`la-skateparks`) :
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ Vous trouverez ci-dessous un exemple tiré du site [Tutoriel WKND](https://exper
    /...
 ```
 
-Cette structure peut être visualisée à partir de la console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) où vous pouvez parcourir les pages de votre site web et effectuer des actions sur les pages.
+Cette structure est visible à partir de la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), où vous pouvez parcourir les pages de votre site web et y effectuer des actions.
 
 ## Conventions de dénomination des pages {#page-naming-conventions}
 
@@ -95,7 +95,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 ### Titre {#title}
 
-Si vous n’indiquez qu’un **Titre** de page lors de la création d’une page, AEM renvoie la page **Nom** de cette chaîne et [validez le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
+Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM crée la page **Nom** à partir de cette chaîne et [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
@@ -118,19 +118,19 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 ## Modèles {#templates}
 
-Dans AEM, un [template](/help/sites-cloud/authoring/page-editor/templates.md) est un type spécialisé de page utilisé comme base pour toute nouvelle page créée.
+Dans AEM, un [modèle](/help/sites-cloud/authoring/page-editor/templates.md) est un type de page spécialisé utilisé comme base pour toute nouvelle page en cours de création.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
-* **Titre** : titre affiché sur la page web obtenue.
-* **Nom** - Utilisé lors de l’attribution d’un nom à la page
-* **Modèle** - Liste des modèles utilisables lors de la génération de la nouvelle page.
+* **Titre** - Titre affiché sur la page web résultante
+* **Nom** - Utilisé pour nommer la page
+* **Modèle** - Liste des modèles disponibles à utiliser lors de la génération de la nouvelle page
 
 ## Composants {#components}
 
-Les [composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec une gamme de composants prêts à l’emploi, appelés [composants principaux,](/help/implementing/developing/components/overview.md#core-components) qui fournissent des fonctionnalités complètes. Voici quelques exemples de composants :
+Les [composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM pour vous permettre d’ajouter des types de contenu spécifiques. AEM propose toute une gamme de composants prêts à l’emploi, appelés [composants principaux](/help/implementing/developing/components/overview.md#core-components), qui offrent des fonctionnalités complètes. Voici quelques exemples de composants :
 
 * Texte
 * Image

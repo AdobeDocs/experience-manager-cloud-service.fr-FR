@@ -1,11 +1,11 @@
 ---
 title: Fragments de contenu
-description: Les fragments de contenu Adobe Experience Manager as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des canaux, qui peut également être utilisé lors de la création de vos pages.
+description: Les fragments de contenu Adobe Experience Manager as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant du canal, qui peut également être utilisé lors de la création de vos pages.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 85%
@@ -14,22 +14,22 @@ ht-degree: 85%
 
 # Fragments de contenu {#content-fragments}
 
-Les fragments de contenu as a Cloud Service à Adobe Experience Manager (AEM) sont [ créés et gérés en tant que ressources indépendantes de la page ](/help/sites-cloud/administering/content-fragments/overview.md), ce qui vous permet de créer du contenu neutre pour les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
+Les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service sont [créés et gérés en tant que ressources indépendantes de la page](/help/sites-cloud/administering/content-fragments/overview.md), ce qui vous permet de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
 >[!CAUTION]
 >
->Cette page doit être lue conjointement avec [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) (et des pages annexes), car elle présente la terminologie et les concepts de base, ainsi que des informations sur la création et la gestion de fragments, et la diffusion de fragments de contenu structuré sur des canaux autres que les pages d’AEM.
+>Cette page doit être lue conjointement avec [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) (et les pages associées), car elle présente la terminologie et les concepts de base, ainsi que des informations sur la création et la gestion de fragments et la diffusion de fragments de contenu structurés sur des canaux autres que les pages AEM.
 
 >[!NOTE]
 >
->Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés sous la forme **Assets**.
+>Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés en tant que **Assets**.
 >
->Ils sont maintenant principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, bien qu’ils puissent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Il existe deux éditeurs pour la création de fragments de contenu :
+>Il existe deux éditeurs pour créer des fragments de contenu :
 >
->* Le nouvel éditeur de [ fragments de contenu - création](/help/sites-cloud/administering/content-fragments/authoring.md) est principalement accessible à partir de la console **fragments de contenu**.
->* L’ [éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md) est principalement accessible à partir de la console **Assets**.
+>* Le nouvel éditeur de [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md) est principalement accessible à partir de la console **Fragments de contenu**.
+>* L’[éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md) est principalement accessible à partir de la console **Assets**.
 
 >[!NOTE]
 >
@@ -129,8 +129,8 @@ Vous pouvez ainsi ajouter du contenu supplémentaire [intermédiaire](/help/asse
 
 Pour le contenu intermédiaire, vous pouvez :
 
-* Ajoutez des composants à partir du navigateur [Components.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Ajoutez des ressources à partir du navigateur [Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Ajouter des composants à partir de l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Ajouter des ressources à partir du navigateur [Assets](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]

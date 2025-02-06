@@ -4,10 +4,10 @@ description: Le tutoriel suivant décrit les étapes à suivre pour créer un co
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -30,12 +30,12 @@ Les éléments suivants sont requis afin de terminer ce tutoriel :
 
 1. Environnement de développement local
 
-Les étapes du tutoriel et les captures d’écran sont effectuées à l’aide de **CRXDE Lite**. Vous pouvez également utiliser des IDE pour compléter le tutoriel. Vous trouverez plus d’informations sur l’utilisation d’un IDE pour le développement [avec AEM ici.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr)
+Les étapes du tutoriel et les captures d’écran sont effectuées à l’aide de **CRXDE Lite**. Vous pouvez également utiliser des IDE pour compléter le tutoriel. Vous trouverez plus d’informations sur l’utilisation d’un IDE pour développer [avec AEM ici](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr).
 
 
 ## Configuration du projet {#project-setup}
 
-Le code source d’un projet Screens est généralement géré sous la forme d’un projet Maven multimodule. Pour accélérer le tutoriel, un projet a été prégénéré à l’aide de l’[Archétype de projet AEM 13](https://github.com/adobe/aem-project-archetype). Voir [Configuration du projet](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr) pour plus d’informations sur la création d’un projet avec Maven AEM Project Archetype.
+Le code source d’un projet Screens est généralement géré sous la forme d’un projet Maven multimodule. Pour accélérer le tutoriel, un projet a été prégénéré à l’aide de l’[Archétype de projet AEM 13](https://github.com/adobe/aem-project-archetype). Voir [Configuration du projet](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr) pour plus d’informations sur la création d’un projet avec l’archétype de projet Maven AEM.
 
 1. Téléchargez et installez les packages suivants à l’aide du [gestionnaire de packages CRX](http://localhost:4502/crx/packmgr/index.jsp) :
 
@@ -79,7 +79,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   Ce package contient le contenu de départ et la structure de configuration nécessaires pour le projet. **`/conf/we-retail-run`** contient toutes les configurations pour le projet We.Retail Run. **`/content/dam/we-retail-run`** inclut les ressources numériques de départ pour le projet. **`/content/screens/we-retail-run`** contient la structure de contenu Screens. Le contenu situé sous ces chemins est mis à jour principalement dans AEM. Pour assurer la cohérence entre les environnements (local, Dev, Stage, Prod), une structure de contenu de base est souvent enregistrée dans le contrôle des sources.
+   Ce package contient le contenu de départ et la structure de configuration nécessaires pour le projet. **`/conf/we-retail-run`** contient toutes les configurations pour le projet We.Retail Run. **`/content/dam/we-retail-run`** inclut les ressources numériques de départ pour le projet. **`/content/screens/we-retail-run`** contient la structure de contenu Screens. Le contenu situé sous ces chemins d’accès est mis à jour principalement dans AEM. Pour assurer la cohérence entre les environnements (local, Dev, Stage, Prod), une structure de contenu de base est souvent enregistrée dans le contrôle des sources.
 
 1. **Accédez au projet AEM Screens > We.Retail Run :**
 
@@ -134,7 +134,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilisé :
 
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
-   1. **Modifier** : utilisé pour tous les autres modes de création, c’est-à-dire modifier, concevoir, échafauder, développeur...
+   1. **Modifier** : utilisé pour tous les autres modes de création, à savoir la modification, la conception, la génération de modèles automatique, le développement...
 
    `helloworld.html` fonctionne comme un commutateur, en vérifiant quel mode de création est actif et en redirigeant vers un autre script HTL. Une convention commune utilisée par les composants Screens consiste à utiliser un script `edit.html` pour le mode d’édition et un script `production.html` pour le mode de production.
 
@@ -291,7 +291,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
    La propriété catégories est une chaîne qui identifie la bibliothèque cliente. La catégorie cq.screens.components est utilisé en mode Edition et Aperçu/Production. Par conséquent, tout fichier CSS/JS défini dans la bibliothèque sharedclientlib est chargé dans tous les modes.
 
-   Il est recommandé de ne jamais exposer directement les chemins d’accès à /apps dans un environnement de production. La propriété allowProxy garantit que la bibliothèque cliente CSS et JS est référencée au moyen d’un préfixe of/etc.clientlibs.
+   Il est recommandé de ne jamais exposer directement les chemins d’accès à /apps dans un environnement de production. La propriété allowProxy s’assure que la bibliothèque cliente CSS et JS est référencée au moyen d’un préfixe of/etc.clientlibs.
 
 1. Créez un fichier appelé `css.txt` sous le dossier partagé.
 
@@ -331,7 +331,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
 1. Copiez et collez le dossier de bibliothèque cliente `shared` pour créer une bibliothèque cliente nommée `production`.
 
-   ![Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copiez la bibliothèque client partagée pour créer une bibliothèque client de production](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copiez la bibliothèque cliente partagée pour créer une bibliothèque cliente de production.
 
@@ -425,7 +425,7 @@ Le composant Hello World est destiné à être utilisé sur un canal de séquenc
 
    Configuration de conception pointant vers /apps/settings/wcm/designs/we-retail-run
 
-1. Modifiez le canal inactif créé pour pouvoir l’ouvrir.
+1. Modifiez le canal inactif créé afin de pouvoir l’ouvrir.
 
 1. Basculez le mode Page vers le mode **Conception**.
 

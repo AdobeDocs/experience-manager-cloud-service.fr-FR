@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** : le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
+   * **Titre** - Le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
       * Ce champ est obligatoire.
    * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
@@ -38,7 +38,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Valorisation de marque**
 
-  Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+  Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant Page de la version 2.14.0 ou ultérieure des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
    * **Slug de la marque**
 
@@ -79,7 +79,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **URL de redirection**
 
-   * Vous permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
+   * Permet de saisir une URL de redirection pour cette page, ce qui peut vous permettre d’avoir une URL plus courte ou plus expressive.
    * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
@@ -90,8 +90,8 @@ Les propriétés sont réparties sur plusieurs onglets.
   >* Elles ne prennent pas en charge les modèles d’expression régulière.
   >* ne doit pas être définie sur une page existante.
 
-   * **Ajouter** - Sélectionnez cette option pour afficher un champ afin de définir une URL Vanity pour la page.
-      * Sélectionnez à nouveau pour ajouter plusieurs.
+   * **Ajouter** - Sélectionnez cette option pour afficher un champ afin de définir une URL d’origine pour la page.
+      * Sélectionnez à nouveau pour ajouter plusieurs éléments.
       * Sélectionnez l’icône **Supprimer** pour supprimer l’URL Vanity.
    * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
 
@@ -101,14 +101,14 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Langue** – Langue de la page.
    * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Redirection** - Indique la page vers laquelle cette page doit automatiquement rediriger avec un état d’HTML `302 Found`.
+   * **Rediriger** - Indique la page vers laquelle cette page doit être automatiquement redirigée avec un statut de `302 Found` HTML.
       * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un statut HTML `301 Moved Permanently`.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
       * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
       * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
       * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
-      * Voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Voir [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
@@ -150,7 +150,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Image en vedette**
 
-  Sélectionnez et configurez l’image à afficher. Il est utilisé dans les composants qui référencent la page ; par exemple, les teasers, les listes de pages, etc.
+  Sélectionnez et configurez l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
    * **Image**
 
@@ -240,7 +240,7 @@ Grâce à une configuration simple, une personne en charge de la création de co
 
 >[!NOTE]
 >
->Voir [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Voir [Activation des fonctionnalités d’application web progressive](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 
 * **Configurer l’expérience d’installation**
 
@@ -326,7 +326,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
    * Propriétés communes partageant une valeur commune
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne s’affichent que lorsque *all* est commun. Si seulement certaines sont courantes, elles s’affichent uniquement lors de la modification.
+      * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), les valeurs ne s’affichent que lorsque *toutes* sont communes. Si seulement certains sont communs, ils ne seront affichés que lors de la modification.
       * En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
 * **Modifier**

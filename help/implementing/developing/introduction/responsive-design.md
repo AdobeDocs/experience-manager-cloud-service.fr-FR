@@ -1,10 +1,10 @@
 ---
 title: Responsive Design
-description: Grâce au responsive design, les mêmes expériences peuvent être affichées efficacement sur plusieurs appareils selon plusieurs orientations.
+description: Avec le responsive design, les mêmes expériences peuvent être affichées efficacement sur plusieurs appareils dans plusieurs orientations.
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 57%
@@ -39,7 +39,7 @@ Consultez les rubriques suivantes pour en savoir plus sur l’implémentation du
 
 Lors de la phase de conception, utilisez la barre d’outils **Émulateur** afin d’afficher un aperçu de vos pages pour différents formats d’écran.
 
-## Avant de procéder au développement {#before-you-develop}
+## Avant Le Développement {#before-you-develop}
 
 Avant de développer l’application AEM qui prend en charge vos pages web, plusieurs décisions de conception doivent être prises. Par exemple, vous devez disposer des informations suivantes :
 
@@ -54,7 +54,7 @@ La structure d’application AEM type prend en charge toutes les implémentation
 * Les composants de page résident sous `/apps/<application_name>/components`
 * Les modèles résident sous `/apps/<application_name>/templates`
 
-## Utilisation des requêtes de média {#using-media-queries}
+## Utilisation de requêtes de média {#using-media-queries}
 
 Les requêtes de média permettent l’utilisation sélective de styles CSS pour le rendu des pages. Les outils et fonctionnalités de développement AEM vous permettent d’implémenter de manière efficace et efficiente des requêtes de média dans vos applications.
 
@@ -73,9 +73,9 @@ Le [tutoriel WKND](develop-wknd-tutorial.md) utilise cette stratégie pour défi
 
 ### Utiliser des requêtes de média avec des pages AEM {#using-media-queries-with-aem-pages}
 
-[L’exemple de projet WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et l’ [archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) qui inclut les bibliothèques clientes via la stratégie de page.
+[L’exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), qui inclut les bibliothèques clientes via la politique de page.
 
-Si votre propre composant de page n’est pas basé sur le composant principal Page, vous pouvez également inclure le dossier de bibliothèque cliente dans le script HTL ou JSP de celui-ci. Cela générera et référencera le fichier CSS avec les requêtes de média nécessaires au fonctionnement de la grille réactive.
+Si votre propre composant de page n’est pas basé sur le composant principal Page, vous pouvez également inclure le dossier de bibliothèque cliente dans son script HTL ou JSP. Cela génère et référence le fichier CSS avec les requêtes de média nécessaires au fonctionnement de la grille réactive.
 
 #### HTL {#htl}
 
@@ -97,21 +97,21 @@ Le script JSP génère le code HTML suivant qui référence les feuilles de sty
 <link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
 ```
 
-## Aperçu pour des périphériques spécifiques {#previewing-for-specific-devices}
+## Prévisualisation pour des appareils spécifiques {#previewing-for-specific-devices}
 
-L’émulateur vous permet de prévisualiser vos pages dans différentes tailles de fenêtre d’affichage afin que vous puissiez tester le comportement de votre conception réactive. Lors de la modification d’une page dans la console Sites, vous pouvez appuyer ou cliquer sur l’icône **Émulateur** pour afficher l’émulateur.
+L’émulateur vous permet de prévisualiser vos pages dans différentes tailles de fenêtre d’affichage afin de tester le comportement de votre conception en Responsive Design. Lors de la modification d’une page dans la console Sites, vous pouvez appuyer ou cliquer sur l’icône **Émulateur** pour afficher l’émulateur.
 
-![Icône de l’émulateur dans la barre d’outils](assets/emulator-icon.png)
+![Icône Émulateur de la barre d’outils](assets/emulator-icon.png)
 
-Dans la barre d’outils de l’émulateur, vous pouvez appuyer ou cliquer sur l’icône **Périphériques** pour afficher un menu déroulant dans lequel vous pouvez sélectionner un appareil. Lorsque vous sélectionnez un appareil, la page change afin de s’adapter à la taille de la fenêtre d’affichage.
+Dans la barre d’outils de l’émulateur, vous pouvez appuyer ou cliquer sur l’icône **Appareils** pour afficher un menu déroulant dans lequel vous pouvez sélectionner un appareil. Lorsque vous sélectionnez un appareil, la page change afin de s’adapter à la taille de la fenêtre d’affichage.
 
 ![Barre d’outils de l’émulateur](assets/emulator.png)
 
-### Spécification des groupes d’appareils {#specifying-device-groups}
+### Spécification de groupes d’appareils {#specifying-device-groups}
 
-Pour spécifier les groupes d’appareils qui apparaissent dans la liste **Périphériques**, ajoutez une propriété `cq:deviceGroups` au noeud `jcr:content` de la page de modèle de votre site. La valeur de la propriété est un tableau de chemins d’accès pointant vers les nœuds du groupe d’appareils.
+Pour spécifier les groupes d’appareils qui apparaissent dans la liste **Appareils**, ajoutez une propriété `cq:deviceGroups` au nœud `jcr:content` de la page de modèle de votre site. La valeur de la propriété est un tableau de chemins d’accès pointant vers les nœuds du groupe d’appareils.
 
-Par exemple, la page de modèle du site WKND est `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Et le noeud `jcr:content` sous celui-ci inclut la propriété suivante :
+Par exemple, la page de modèle du site WKND est `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Et le nœud de `jcr:content` sous-jacent inclut la propriété suivante :
 
 * Nom : `cq:deviceGroups`
 * Type : `String[]`
@@ -121,15 +121,15 @@ Les nœuds du groupe d’appareils sont situés dans le dossier `/etc/mobile/gro
 
 ## Images réactives {#responsive-images}
 
-Les pages réactives s’adaptent dynamiquement au périphérique sur lequel elles sont générées, offrant ainsi une meilleure expérience à l’utilisateur. Toutefois, il est également important que les ressources soient optimisées au point d’arrêt et sur l’appareil afin de réduire le temps de chargement des pages.
+Les pages réactives s’adaptent dynamiquement au périphérique sur lequel elles sont rendues, offrant ainsi une meilleure expérience à l’utilisateur. Cependant, il est également important que les ressources soient optimisées au point d’arrêt et sur l’appareil afin de réduire le temps de chargement de la page.
 
-[Le composant d’image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comprend des fonctionnalités telles que la sélection d’images adaptatives.
+[le composant Image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comporte des fonctionnalités telles que la sélection d’images adaptatives.
 
-* Par défaut, le composant d’image utilise la [servlet d’image adaptative](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
-* [Diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa stratégie, qui fournit des ressources d’image à partir de la gestion des actifs numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
+* Par défaut, le composant d’image utilise le [ servlet d’image adaptative ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
+* La [ Diffusion d’images optimisées pour le web ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa politique, qui diffuse des ressources d’image à partir de la gestion des ressources numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
 
-## Conteneur de mises en page {#layout-container}
+## Conteneur de disposition {#layout-container}
 
-AEM Conteneur de mises en page permet d’implémenter efficacement une mise en page réactive afin d’adapter les dimensions de la page à la fenêtre d’affichage cliente.
+Le conteneur de disposition AEM permet d’implémenter efficacement une disposition réactive pour adapter les dimensions de la page à la fenêtre d’affichage cliente.
 
-Pour plus d’informations sur le fonctionnement du conteneur de mises en page et l’activation des mises en page réactives pour votre contenu, reportez-vous au document [Configuration du conteneur de mises en page et du mode de mise en page](/help/sites-cloud/administering/responsive-layout.md) .
+Consultez le document [Configuration du conteneur de dispositions et du mode de disposition](/help/sites-cloud/administering/responsive-layout.md) pour plus d’informations sur le fonctionnement du conteneur de dispositions et sur la manière d’activer les dispositions réactives pour votre contenu.

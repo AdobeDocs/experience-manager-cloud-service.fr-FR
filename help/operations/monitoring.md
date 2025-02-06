@@ -4,10 +4,10 @@ description: Surveillance des infrastructures et des services dans AEM as a Clou
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Avec la surveillance personnalisée, la clientèle peut éventuellement fournir 
 
 >[!NOTE]
 >
-> Cette fonctionnalité est uniquement proposée aux environnements de production et aux clients disposant de l’[ assistance cloud avancée.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr) Si vous avez des questions, contactez votre équipe Adobe en charge des comptes.
+> Cette fonctionnalité est uniquement proposée aux environnements de production et aux clients et clientes qui bénéficient de la [assistance cloud avancée](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr). Pour toute question, contactez l’équipe chargée de votre compte d’Adobe.
 
 ## Surveillance des modules internes {#module-monitoring}
 

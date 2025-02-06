@@ -5,10 +5,10 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -50,17 +50,17 @@ Les annotations ne sont visibles qu’en mode Annotation.
 
    ![Détails de l’annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, cliquez sur le bouton x situé à droite de la barre d’outils supérieure.
+1. Pour quitter le mode Annotation et revenir au mode précédemment utilisé, sélectionnez le bouton x à droite de la barre d’outils supérieure.
 
 ## Ajout et modification d’annotations {#annotating-a-component}
 
-Outre l’affichage des annotations, le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu.
+Outre l’affichage des annotations, le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu
 
 1. [Démarrage du mode Annotation](#annotate-mode) sur la page.
 
 1. Sélectionnez l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
-1. Sélectionnez le composant requis (les composants pouvant être annotés sont mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Sélectionnez le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -85,7 +85,7 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
    * Sélectionnez le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher le texte intégral, apporter des modifications ou [supprimer l’annotation](#deleting-annotations).
    * Repositionner la marque de texte.
-   * Sélectionnez une ligne d’esquisse pour la sélectionner et faites-la glisser jusqu’à l’emplacement souhaité.
+   * Sélectionnez une ligne d’esquisse pour sélectionner cette dernière et faites-la glisser jusqu’à la position souhaitée.
    * Déplacer ou copier un composant
       * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
 

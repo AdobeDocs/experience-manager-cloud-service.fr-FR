@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2023.9.0 d’ [!DNL Adobe Expe
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -36,15 +36,15 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo de présentation de la version de septembre 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.9.0 :
+Consultez la vidéo Vue d’ensemble de la version de septembre 2023 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2023.9.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
 ## Edge Delivery Services AEM {#edge-delivery}
 
-Edge Delivery est un nouvel ensemble de services composables dont l’objectif est de maximiser l’impact du contenu afin de générer des résultats commerciaux mesurables au moment de l’interaction client.
+Edge Delivery est un nouvel ensemble de services composables visant à optimiser l’impact du contenu afin de générer des résultats commerciaux mesurables au moment de l’interaction client.
 
-Pour en savoir plus sur les Edge Delivery Services, reportez-vous à l’article [ici](/help/edge/overview.md).
+En savoir plus sur les Edge Delivery Services dans l’article [ici](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -52,15 +52,15 @@ Pour en savoir plus sur les Edge Delivery Services, reportez-vous à l’article
 
 **Attribuer un formulaire de métadonnées à un dossier**
 
-Vous pouvez désormais affecter un formulaire de métadonnées à un dossier spécifique de votre déploiement. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent les propriétés définies dans le formulaire de métadonnées attribué.
+Vous pouvez désormais affecter un formulaire de métadonnées à un dossier spécifique dans votre déploiement . Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent les propriétés définies dans le formulaire de métadonnées attribué.
 
 ![Attribution d’un formulaire de métadonnées à un dossier.](/help/release-notes/assets/assign-to-folder.png)
 
 ### Nouvelles fonctionnalités de la vue d’administration {#admin-view-features}
 
-* **Intégrer AEM Assets as a Cloud Service à la création basée sur les documents pour les Edge Delivery Services** : Intégrez AEM Assets à la création basée sur les documents pour les Edge Delivery Services afin de permettre aux créateurs de sites web d’ [ utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Intégrer AEM Assets as a Cloud Service à la création basée sur des documents pour les Edge Delivery Services** : intégrez AEM Assets à la création basée sur des documents pour les Edge Delivery Services afin de permettre aux auteurs de sites web d’[utiliser les images disponibles dans les référentiels AEM Assets lors de la création de documents dans Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
 
-* **Extraire les archives ZIP** : possibilité de sélectionner les archives ZIP gérées en Experience Manager et [extraire directement les fichiers dans Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
+* **Extraction des archives ZIP** : possibilité de sélectionner des archives ZIP gérées dans l’Experience Manager et [d’extraire les fichiers directement dans l’Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives) sans les télécharger.
 
   ![Épinglage d’éléments pour les groupes.](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 * **[Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)** : vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs et utilisatrices finaux. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service est indisponible.
 
-* **[Version 64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour vous permettre de créer des formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
+* Version **[64 bits d’AEM Forms Designer](/help/forms/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour renforcer votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
 ### Programme d’adoption précoce {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
   Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité.
 
-* **[Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)** : utilisez le Forms adaptatif sans affichage pour permettre à vos développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs par le biais d’API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
+* **[Forms adaptative découplée](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr)** : utilisez le Forms adaptatif découplé pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
    * créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
    * intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
@@ -116,11 +116,11 @@ Vous pouvez désormais affecter un formulaire de métadonnées à un dossier sp�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Nouveau comportement de mise en cache du réseau de diffusion de contenu pour les paramètres d’URL liés à la campagne {#cache-url-params}
+### Nouveau comportement de mise en cache CDN pour les paramètres d’URL liés à la campagne {#cache-url-params}
 
-Pour les nouveaux environnements, le réseau de diffusion de contenu supprime par défaut les paramètres de requête liés au marketing afin d’augmenter les performances de la campagne marketing et les taux d’accès au cache. Les environnements existants ne sont pas affectés. [En savoir plus.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Pour les nouveaux environnements, le réseau CDN supprime par défaut les paramètres de requête liés au marketing afin d’augmenter les performances des campagnes marketing et les taux d’accès au cache. Les environnements existants ne sont pas affectés. [En savoir plus](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
-### Règles de filtre de trafic (y compris les règles WAF) du programme des premiers adopteurs {#waf-early-adopter}
+### Programme de règles de filtrage du trafic (y compris les règles WAF) destiné aux utilisateurs et utilisatrices précoces {#waf-early-adopter}
 
 Filtrez le trafic sur le réseau de diffusion de contenu selon :
 

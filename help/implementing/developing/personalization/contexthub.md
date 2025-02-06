@@ -4,16 +4,16 @@ description: ContextHub est une structure pour stocker, manipuler et présenter 
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 93%
+ht-degree: 86%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Sa principale fonctionnalité est d’offrir la possibilité d’ [afficher les données contextuelles tout en simulant diverses personas et en passant de l’une à l’autre ](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Sa principale fonctionnalité permet d’[afficher des données contextuelles tout en simulant et en basculant entre différentes personnages](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub vous permet d’effectuer les opérations suivantes :
 
@@ -25,7 +25,7 @@ L’API Javascript côté client vous permet d’accéder aux données pour pers
 
 ## Présentation {#presentation}
 
-La barre d’outils [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) permet aux spécialistes du marketing et aux auteurs de voir et de manipuler les données du magasin afin de simuler l’expérience utilisateur lors de la création de pages. La barre d’outils est constituée de groupes de modules d’interface utilisateur qui permettent d’accéder aux [magasins ContextHub,](#persistence) lesquels conservent les données ContextHub sur le client.
+La barre d’outils [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) permet aux spécialistes du marketing et aux auteurs de voir et de manipuler les données du magasin afin de simuler l’expérience utilisateur lors de la création de pages. La barre d’outils se compose de groupes de modules d’interface utilisateur qui permettent d’accéder aux [magasins ContextHub](#persistence), qui conservent les données ContextHub sur le client.
 
 Chaque module d’IU ContextHub est une instance d’un type de module prédéfini :
 

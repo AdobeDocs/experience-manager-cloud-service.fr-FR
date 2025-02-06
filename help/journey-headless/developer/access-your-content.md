@@ -5,16 +5,16 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Accès à votre contenu grâce aux API de diffusion AEM {#access-your-content}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion découplée).
+Dans cette partie du [Parcours de développement AEM Headless](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion headless).
 
 ## Un peu d’histoire...  {#story-so-far}
 

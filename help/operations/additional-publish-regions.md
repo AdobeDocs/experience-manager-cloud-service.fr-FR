@@ -4,7 +4,7 @@ description: Découvrez comment AEM as a Cloud Service prend en charge des régi
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 71%
@@ -23,9 +23,9 @@ Les organisations peuvent acquérir sous licence jusqu’à trois régions de pu
 
 >[!NOTE]
 >
->* Cette fonctionnalité est disponible pour les solutions Sites et Forms .
->* Cette fonctionnalité ne peut pas être appliquée aux [programmes Sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
->* Cette fonctionnalité nécessite que votre programme soit mis à jour AEM version 12142 ou ultérieure.
+>* Cette fonctionnalité est disponible pour les solutions Sites et Forms.
+>* Cette fonctionnalité ne peut pas être appliquée aux [programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+>* Cette fonctionnalité nécessite que votre programme soit mis à jour vers la version AEM 12142 ou ultérieure.
 
 ## Cas d’utilisation {#use-cases}
 
@@ -41,9 +41,9 @@ Après l’attribution de licence à une région de publication supplémentaire,
 
 D’autres régions de publication sont appliquées aux environnements d’évaluation et de production, mais pas aux environnements de développement ou de RDE.
 
-Dans le cas où une région devient indisponible, les clients n’ont pas besoin de gérer le routage du trafic vers les régions disponibles, puisqu’il est géré par le réseau de diffusion de contenu Adobe.
+Dans le cas où une région devient indisponible, les clients n’ont pas besoin de gérer le routage du trafic vers les régions disponibles, car il est géré par le réseau CDN d’Adobe.
 
-Comme décrit dans la section Points à prendre en compte concernant le réseau avancé ci-dessous, il est recommandé aux clients qui utilisent le réseau avancé de le configurer pour chaque région de publication supplémentaire afin de maintenir la disponibilité si une région devient indisponible.
+Comme décrit dans la section Considérations relatives à la mise en réseau avancée ci-dessous, il est recommandé aux clients qui utilisent la mise en réseau avancée de la configurer pour chaque région de publication supplémentaire afin que la disponibilité soit maintenue si une région devient indisponible.
 
 
 ## Points à prendre en compte concernant la mise en réseau avancée {#advanced-networking-considerations}
@@ -54,15 +54,15 @@ Pour plus d’informations, notamment sur l’ajout de configurations de mise en
 
 ## Journalisation {#logging}
 
-Si d’autres régions de publication sont activées, des journaux distincts pour chaque région sont disponibles via Cloud Manager. Pour plus d’informations, voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) et [Journaux des régions Publish supplémentaires](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Si d’autres régions de publication sont activées, des journaux distincts pour chaque région sont disponibles via Cloud Manager. Pour plus d’informations, consultez [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) et [Journaux des régions Publish supplémentaires](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limites {#limitations}
 
 Gardez à l’esprit les limites suivantes lorsque vous envisagez d’utiliser des régions de publication supplémentaires.
 
-* D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites ou AEM Forms.
+* Des régions de publication supplémentaires peuvent uniquement être ajoutées à AEM Sites ou AEM Forms.
    * Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions AEM ou fonctionnalités associées déployées dans le même programme (par exemple, AEM Assets ou Adobe Learning Manager).
-   * Cependant, ces solutions peuvent être ajoutées à un programme tant qu’au moins une solution Sites ou Forms s’y applique.
+   * Cependant, ces solutions peuvent être ajoutées à un programme tant qu’il dispose d’au moins une solution Sites ou Forms qui s’y applique.
 * D’autres régions ne peuvent être ajoutées que si les droits associés sont disponibles et inutilisés dans le client.
 * Vous pouvez ajouter au maximum trois régions de publication supplémentaires à n’importe quel environnement.
 * D’autres régions sont disponibles uniquement pour les programmes de production. Cette fonctionnalité n’est pas disponible dans les programmes sandbox.

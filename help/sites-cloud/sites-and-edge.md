@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Outre les [capacités et fonctionnalités offertes par AEM Sites as a Cloud Serv
 
 ## Que sont les services Edge Delivery Services ? {#what-is-edge}
 
-Les services Edge Delivery Services offrent des expériences exceptionnelles qui favorisent l’engagement et les conversions en proposant des expériences à fort impact, rapides à créer et à développer. C’est un ensemble de services composable qui permet un environnement de développement rapide où les personnes créant le contenu peuvent rapidement effectuer des mises à jour et des publications, et où de nouveaux sites sont lancés rapidement. Pour en savoir plus sur les services Edge Delivery Services, consultez le document [Vue d’ensemble d’Edge Delivery Services.](/help/edge/overview.md)
+Les services Edge Delivery Services offrent des expériences exceptionnelles qui favorisent l’engagement et les conversions en proposant des expériences à fort impact, rapides à créer et à développer. C’est un ensemble de services composable qui permet un environnement de développement rapide où les personnes créant le contenu peuvent rapidement effectuer des mises à jour et des publications, et où de nouveaux sites sont lancés rapidement. En savoir plus sur les Edge Delivery Services dans le document [Présentation des Edge Delivery Services ](/help/edge/overview.md).
 
 L’utilisation d’Edge Delivery Services avec AEM Sites as a Cloud Service présente les avantages suivants pour vos projets :
 

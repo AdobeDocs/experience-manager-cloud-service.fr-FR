@@ -4,10 +4,10 @@ description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités C
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -87,7 +87,7 @@ L’arborescence définit les éléments de données du magasin sous la forme de
 
 ContextHub fournit la classe [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) pour manipuler des objets JavaScript. Utilisez les fonctions de cette classe pour manipuler des objets JavaScript avant de les ajouter à un magasin ou après les avoir récupérés d’un magasin.
 
-En outre, la classe [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) fournit des fonctions pour sérialiser des objets en chaînes et désérialiser des chaînes en objets. Utilisez cette classe pour gérer les données JSON afin de prendre en charge les navigateurs qui n’intègrent pas, en natif, les fonctions `JSON.parse` et `JSON.stringify`.
+En outre, la classe [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) fournit des fonctions pour sérialiser les objets en chaînes et désérialiser les chaînes en objets. Utilisez cette classe pour gérer les données JSON afin de prendre en charge les navigateurs qui n’intègrent pas, en natif, les fonctions `JSON.parse` et `JSON.stringify`.
 
 ## Interaction avec les magasins ContextHub {#interacting-with-contexthub-stores}
 
@@ -105,13 +105,13 @@ Les éléments de données individuels sont stockés sous la forme d’un ensemb
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Les candidats de magasin personnalisés peuvent définir des fonctions supplémentaires qui permettent d’accéder aux données de magasin.
+Les magasins candidats personnalisés peuvent définir des fonctions supplémentaires qui permettent d’accéder aux données du magasin.
 
 >[!NOTE]
 >
 >Par défaut, ContextHub ne connaît pas les utilisateurs et utilisatrices actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs et utilisatrices comme étant « anonymes ».
 >
->Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Voir l’exemple de code : [aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Consultez l’exemple de code : [aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 
@@ -145,7 +145,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 ## Débogage de ContextHub {#debugging-contexthub}
 
-Il existe un certain nombre d’options pour déboguer ContextHub, y compris la génération de journaux. Voir [Configuration de ContextHub pour plus d’informations.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+Il existe un certain nombre d’options pour déboguer ContextHub, y compris la génération de journaux. Voir [Configuration de ContextHub pour plus d’informations](configuring-contexthub.md#logging-debug-messages-for-contexthub).
 
 ## Affichage d’un aperçu de la structure ContextHub {#see-an-overview-of-the-contexthub-framework}
 

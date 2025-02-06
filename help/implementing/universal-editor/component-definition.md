@@ -4,7 +4,7 @@ description: Comprenez en détail le contrat JSON entre la définition du compos
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 
 ## `groups` {#groups}
 
-`groups` définit les groupes de composants que l’auteur voit dans l’éditeur universel lorsqu’il clique sur l’icône **Ajouter** dans le panneau des propriétés de l’éditeur pour [ajouter un nouveau composant à une page.Les groupes de ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) permettent d’organiser les composants. Les groupes courants peuvent être **Composants généraux** et **Composants avancés**.
+`groups` définit les groupes de composants que l’auteur voit dans l’éditeur universel lorsqu’il clique sur l’icône **Ajouter** dans le panneau des propriétés de l’éditeur pour [ajouter un nouveau composant à une page](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Les groupes permettent d’organiser les composants. Les groupes courants peuvent être **Composants généraux** et **Composants avancés**.
 
 * `title` définit la description textuelle du groupe affiché dans l’interface utilisateur de l’éditeur.
 * `id` identifie le groupe de manière unique.
@@ -94,7 +94,7 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 Une fois la `plugin` définie, vous devez indiquer si elle est liée à une page ou à un fragment.
 
 * `page` indique que le composant est le contenu de la page active.
-* `cf` indique que le composant est associé au contenu dans un [fragment de contenu.](/help/assets/content-fragments/content-fragments.md).
+* `cf` indique que le composant est associé au contenu dans un [fragment de contenu](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 

@@ -5,16 +5,16 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
 # Projets {#projects}
 
-Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés volets dans AEM. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés volets dans AEM. Les mosaïques peuvent inclure des informations sur le projet et l’équipe, des ressources, des workflows et d’autres types d’informations, comme décrit en détail dans la section [Mosaïques de projet](#project-tiles).
 
 >[!CAUTION]
 >

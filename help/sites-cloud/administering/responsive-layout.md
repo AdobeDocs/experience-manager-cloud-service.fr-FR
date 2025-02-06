@@ -1,33 +1,33 @@
 ---
-title: Configuration du conteneur de mises en page et du mode Mise en page
-description: Découvrez comment configurer le conteneur de mises en page et le mode de mise en page pour activer les mises en page réactives pour vos auteurs de contenu.
+title: Configuration du conteneur et du mode de disposition
+description: Découvrez comment configurer le conteneur et le mode de disposition pour activer les dispositions réactives pour les auteurs de contenu.
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 50%
+ht-degree: 51%
 
 ---
 
-# Configuration du conteneur de mises en page et du mode Mise en page {#configuring-layout-container-and-layout-mode}
+# Configuration du conteneur et du mode de disposition {#configuring-layout-container-and-layout-mode}
 
-[La mise en page réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme permettant de réaliser une [conception web réactive.](https://fr.wikipedia.org/wiki/Site_web_réactif) Cela permet à l’auteur de contenu de créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
+La [disposition réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Site_web_réactif). Cela permet à l’auteur de contenu de créer des pages web dont la disposition et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* **[Conteneur de mises en page](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive.
+* **[Conteneur de disposition](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive.
    * Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
-   * Le composant **Conteneur de mises en page** par défaut est défini sous `/libs/wcm/foundation/components/responsivegrid`.
+   * Le composant par défaut **Conteneur de disposition** est défini sous `/libs/wcm/foundation/components/responsivegrid`.
    * Vous pouvez définir des conteneurs de mise en page en tant que :
       * composant que l’utilisateur ou l’utilisatrice peut ajouter à une page ;
       * système de paragraphes par défaut de la page ;
-      * En tant que composant et le parsys par défaut.
+      * En tant que composant et système de paragraphes (parsys) par défaut.
          * Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
-* **[Mode Mise en page](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Une fois que le conteneur de mises en page est positionné sur votre page, vous pouvez utiliser le mode **Mise en page** pour positionner le contenu dans la grille réactive.
-* **[Émulateur](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** : permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
+* **[Mode Disposition](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Une fois que le conteneur de dispositions est positionné sur la page, vous pouvez utiliser le mode **Disposition** pour positionner le contenu dans la grille réactive.
+* **[Émulateur](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Permet de créer et de modifier des sites réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -38,45 +38,45 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 >[!NOTE]
 >
->Lors de la création d’un site à partir de l’[archétype de projet](#addlink) ou du [ modèle de site standard](#addlink), la mise en page réactive est généralement configurée. Sinon, vous devez [ activer le composant Conteneur de mises en page ](#enable-the-layout-container-component-for-page) pour vos pages.
+>Lors de la création d’un site à partir de l’[Archétype de projet](#addlink) ou du [Modèle de site standard](#addlink), la disposition réactive est généralement configurée. Sinon, vous devez [activer le composant Conteneur de mises en page](#enable-the-layout-container-component-for-page) pour vos pages.
 
 ## Activation de l’émulateur {#enabling-emulator}
 
-L’ [ archétype de projet ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et le [modèle de site standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sont déjà activés pour utiliser l’émulateur. Si vous avez développé votre propre contenu qui n’est pas basé sur les composants principaux ou l’archétype, consultez le document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) pour plus d’informations sur la manière de développer vos composants tout en exploitant ces fonctionnalités.
+L’[archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et le [modèle de site standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sont déjà activés pour utiliser l’émulateur. Si vous avez développé votre propre contenu non basé sur les composants principaux ou l’archétype, consultez le document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) pour plus d’informations sur la manière de développer vos composants lors de l’utilisation de ces fonctionnalités.
 
 ## Activation du mode Disposition pour votre site {#activate-layout-mode-for-your-site}
 
-Le mode **Mise en page** vous permet d’utiliser l’émulateur pour ajuster la mise en page de votre contenu pour différents appareils. L’exemple de site WKND est déjà activé pour le mode **Disposition**. Pour activer votre propre site, procédez comme suit.
+Le mode **Disposition** permet d’utiliser l’émulateur pour ajuster la disposition de votre contenu pour différents appareils. L’exemple de site WKND est déjà activé pour le mode **Disposition**. Pour activer votre propre site, procédez comme suit.
 
-### Configuration des points d’arrêt {#configure-breakpoints}
+### Configurer les points d’arrêt {#configure-breakpoints}
 
-Les points d’arrêt sont essentiels pour la conception réactive et définissent la manière et le moment où le contenu est adapté à l’appareil cible. Soyez toutefois prudent, car chaque point d’arrêt que vous introduisez génère un travail supplémentaire pour que vos auteurs puissent s’adapter au contenu. Souvent, deux points d’arrêt peuvent suffire, y compris le point d’arrêt par défaut qui est toujours présent. Adobe recommande de ne pas créer plus de trois points d’arrêt, y compris le point par défaut, c’est-à-dire pas plus de deux noeuds sous `cq:responsive/breakpoint`.
+Les points d’arrêt sont essentiels au Responsive Design et définissent comment et quand le contenu est ajusté sur l’appareil cible. Toutefois, faites attention, car chaque point d’arrêt que vous introduisez génère du travail supplémentaire pour que vos auteurs puissent s’adapter au contenu. Souvent, deux points d’arrêt peuvent suffire, y compris le point d’arrêt par défaut qui est toujours présent. Adobe recommande de ne pas créer plus de trois points d’arrêt, y compris la valeur par défaut, c’est-à-dire de ne pas créer plus de deux nœuds sous `cq:responsive/breakpoint`.
 
 * Les points d’arrêt ont un titre et une largeur :
    * Le titre décrit le regroupement de périphériques génériques, avec orientation si nécessaire.
       * Par exemple, `phone`, `tablet`.
-   * La largeur définit la largeur maximale en pixels pour ce regroupement d’appareils générique.
+   * La largeur définit la largeur maximale en pixels pour ce groupe d’appareils générique.
       * Par exemple, si la largeur du téléphone du point d’arrêt est de 768, elle correspond à la largeur maximale de la mise en page utilisée pour un appareil téléphonique ;
 * Les points d’arrêt peuvent être définis :
    * dans le modèle de page, à partir duquel les paramètres sont copiés dans les pages créées avec ce modèle ;
    * sur le nœud de page, à partir duquel les paramètres sont hérités par toutes les pages enfants.
-* Les points d’arrêt sont visibles en tant que marqueurs dans la partie supérieure de l’éditeur de page lorsque vous utilisez l’émulateur.
-* Les points d’arrêt sont hérités de la hiérarchie des noeuds parents et peuvent être remplacés à volonté.
+* Les points d’arrêt sont visibles en tant que marqueurs en haut de l’éditeur de page lorsque vous utilisez l’émulateur.
+* Les points d’arrêt sont hérités de la hiérarchie de nœud parent et peuvent être remplacés à volonté.
 * Il existe un point d’arrêt par défaut (prêt à l’emploi) qui couvre tout ce qui se trouve au-dessus du dernier point d’arrêt configuré.
-* Les points d’arrêt peuvent être définis à l’aide de CRXDE Lite ou XML.
+* Les points d’arrêt peuvent être définis au moyen de CRXDE Lite ou de code XML.
 
-Les points d’arrêt doivent être pris en compte pour les projets nouveaux et existants.
+Des points d’arrêt doivent être pris en compte pour les projets nouveaux et existants.
 
 * Si vous configurez un nouveau projet, vous devez ajouter des points d’arrêt aux modèles.
 * Si vous migrez un projet existant (avec du contenu existant), vous devez :
    * Ajoutez des points d’arrêt aux modèles.
    * Ajoutez les mêmes points d’arrêt aux pages existantes.
 
-En raison de l’héritage, vous devez effectuer cette opération uniquement pour la page racine de votre contenu.
+En raison de l’héritage, il vous suffit de le faire pour la page racine de votre contenu.
 
 #### Configurer des points d’arrêt à l’aide de CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. À l’aide de CRXDE Lite, accédez à l’une des options suivantes :
+1. À l’aide de CRXDE Lite, accédez à :
 
    * Votre définition de modèle
    * Nœud `jcr:content` de votre page
@@ -115,7 +115,7 @@ Exemple de définition :
 
 ## Activation du redimensionnement des composants pour la page {#enable-component-resizing-for-the-page}
 
-Le redimensionnement des composants en mode **Mise en page** est une partie importante de la conception adaptée, qui peut être utilisée dans l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
+Le redimensionnement des composants en mode **Disposition** est une partie importante du Responsive Design, qui peut être utilisée dans l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
 
 ### Définir le conteneur de mise en page comme parsys (système de paragraphes) principal {#set-layout-container-as-main-parsys}
 
@@ -217,15 +217,15 @@ Le mécanisme d’image adaptative est disponible par le biais d’un script qui
 
 ## Activer le composant Conteneur de mise en page pour la page {#enable-the-layout-container-component-for-page}
 
-Pour une mise en page réactive efficace, l’auteur du contenu doit pouvoir faire glisser des instances du composant Conteneur de mises en page sur la page. Cela est déjà activé pour l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
+Pour une mise en page réactive efficace, l’auteur du contenu doit pouvoir faire glisser des instances du composant Conteneur de mise en page sur la page. Cela est déjà activé pour l’exemple de site WKND. Pour activer votre propre site, procédez comme suit.
 
 ### Activer le composant Conteneur de mise en page pour la modification de pages {#enable-the-layout-container-component-for-page-editing}
 
 Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des pages de contenu, vous devez activer le composant conteneur de mise en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
-* **Par l’intermédiaire de l’environnement de création** - [Modifiez vos modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) pour activer le conteneur de mises en page pour une page.
-* **Définition du composant** - Utilisez `allowedComponent` ou une inclusion statique lors de la définition du composant.
+* **Via l’environnement de création** - [Modifiez vos modèles de page](/help/sites-cloud/authoring/page-editor/templates.md) pour activer le conteneur de disposition d’une page.
+* **Définition du composant** - Utilisez la `allowedComponent` ou une inclusion statique lors de la définition du composant.
 
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
-Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page [ en modifiant vos modèles de page.](/help/sites-cloud/authoring/page-editor/templates.md)
+Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de disposition [en modifiant vos modèles de page](/help/sites-cloud/authoring/page-editor/templates.md).

@@ -4,10 +4,10 @@ description: Ce document décrit le contrat général et indépendant du framewo
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -81,7 +81,7 @@ Le modèle de page utilise l’exporteur de modèle JSON, lui-même basé sur l�
 * `:itemsOrder` : liste triée des enfants. L’objet carte JSON ne garantit pas l’ordre de ses champs. En disposant de la carte et du tableau actif, le consommateur de l’API bénéficie des avantages des deux structures.
 * `:path` : chemin d’accès au contenu d’un élément (présent sur les éléments qui représentent une page).
 
-Voir aussi [Prise en main d’AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
+Voir aussi [Prise en main d’AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
 
 ### Module spécifique au framework {#framework-specific-module}
 

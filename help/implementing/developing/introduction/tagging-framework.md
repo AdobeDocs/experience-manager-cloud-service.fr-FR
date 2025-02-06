@@ -4,10 +4,10 @@ description: Balisez le contenu et utilisez l’infrastructure de balisage AEM p
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -24,9 +24,9 @@ Cet article se concentre sur le cadre sous-jacent qui prend en charge le balisag
 
 Pour baliser le contenu et utiliser le framework de balisage AEM, procédez comme suit :
 
-* La balise doit exister en tant que nœud du type [`cq:Tag`](#cq-tag-node-type) sous le [nœud racine de taxonomie.](#taxonomy-root-node)
+* La balise doit exister en tant que nœud du type [`cq:Tag`](#cq-tag-node-type) sous le [nœud racine de taxonomie](#taxonomy-root-node).
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
-* Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#cq-tags-property) du nœud de contenu et est résolu sur un nœud de type [`cq:Tag`.](#cq-tag-node-type)
+* Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#cq-tags-property) du nœud de contenu et est résolu sur un nœud de type [`cq:Tag`](#cq-tag-node-type).
 
 ## cq : balisage du type de nœud {#cq-tag-node-type}
 
@@ -40,19 +40,19 @@ Le framework de balisage limite également les créateurs et créatrices et les 
 
 ### Caractéristiques de la balise {#tag-characteristics}
 
-* Le type de noeud est `cq:Tag`.
-* Le nom du nœud est un composant de [`TagID`.](#tagid)
-* Le [`TagID`](#tagid) contient toujours un [espace de noms.](#tag-namespace)
+* Le type de nœud est `cq:Tag`.
+* Le nom du nœud est un composant de la [`TagID`](#tagid) .
+* Le [`TagID`](#tagid) comprend toujours un [espace de noms](#tag-namespace).
 * La propriété `jcr:title` (le titre à afficher dans l’interface utilisateur) est facultative.
 * La propriété `jcr:description` est facultative.
-* Lorsqu’elle contient des nœuds enfants, la balise est qualifiée de [balise conteneur.](#container-tags)
-* La balise est stockée dans le référentiel, sous un chemin de base appelé [nœud racine de taxonomie.](#taxonomy-root-node)
+* Lorsque vous incluez des nœuds enfants, est appelé [balise conteneur](#container-tags).
+* La balise est stockée dans le référentiel, sous un chemin d’accès de base appelé [nœud racine de taxonomie](#taxonomy-root-node).
 
 ### TagID {#tagid}
 
 Un `TagID` identifie un chemin d’accès qui est résolu sur un nœud de balise dans le référentiel.
 
-En règle générale, le `TagID` est un `TagID` abrégé commençant par l’espace de noms ; il peut également s’agir d’un `TagID` absolu commençant au niveau du [nœud racine de taxonomie.](#taxonomy-root-node)
+En règle générale, la `TagID` est un raccourci `TagID` commençant par l’espace de noms ; il peut également s’agir d’une `TagID` absolue commençant au niveau du [nœud racine de taxonomie](#taxonomy-root-node).
 
 Lorsque le contenu est balisé, la propriété [`cq:tags`](#cq-tags-property) est ajoutée, le cas échéant, au nœud de contenu et le `TagID` est ajouté à la valeur de tableau de la propriété `String`.
 
@@ -66,9 +66,9 @@ Dans AEM, le chemin d’accès de base est `/content/cq:tags` et le nœud racine
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public par rapport à interne) ou par application plus grande (par exemple, Sites ou Assets), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
+Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public ou interne) ou par grande application (par exemple, Sites ou Assets), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
-L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie.](#taxonomy-root-node) Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
+L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 
 Toutes les balises possèdent un espace de noms. Si aucun espace de noms n’est spécifié, la balise est affectée à l’espace de noms par défaut, qui est `TagID` `default`, c’est-à-dire `/content/cq:tags/default`. Dans ce cas, le titre est défini par défaut sur `Standard Tags`.
 
@@ -107,7 +107,7 @@ Pour plus d’informations, voir :
 
 ### Contrôle d’accès {#access-control}
 
-Les balises existent sous la forme de nœud dans le répertoire sous le [nœud racine de taxonomie.](#taxonomy-root-node) Il est possible d’accorder ou de refuser aux auteurs et aux visiteurs du site le droit de créer des balises dans un espace de noms donné en définissant des listes de contrôle d’accès (ACL) appropriées dans le référentiel.
+Les balises existent sous la forme de nœud dans le répertoire sous le [nœud racine de taxonomie](#taxonomy-root-node). Il est possible d’accorder ou de refuser aux auteurs et autrices et aux visiteurs et visiteuses du site le droit de créer des balises dans un espace de noms donné en définissant des listes de contrôle d’accès (ACL) appropriées dans le référentiel.
 
 Refuser les autorisations de lecture sur certains espaces de noms et balises détermine la possibilité d’appliquer des balises à du contenu spécifique.
 

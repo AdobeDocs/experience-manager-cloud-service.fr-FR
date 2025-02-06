@@ -1,13 +1,13 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
-description: Découvrez les principes de base et les bonnes pratiques de déploiement dans AEM as a Cloud Service
+description: Découvrez les principes de base et les bonnes pratiques de déploiement d’vers AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs et développeuses écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Cet outil de diffusion est désormais l’unique mécanisme permettant de déployer du code vers les environnements de production, d’évaluation et de développement d’AEM as a Cloud Service. Pour une validation rapide des fonctionnalités et un débogage avant de déployer ces environnements, le code peut être synchronisé d’un environnement local vers un [Environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles sont déployées. AEM mises à jour de version qui se produisent par la suite (qui sont fréquentes et sont automatiquement appliquées), sont conçues pour être rétrocompatibles avec le code client déjà déployé.
+La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles sont déployées. Les mises à jour de version d’AEM qui se produisent par la suite (qui sont fréquentes et appliquées automatiquement) sont censées être rétrocompatibles avec le code client déjà déployé.
 
 Le reste de ce document décrit la manière dont les développeurs et développeuses doivent adapter leurs pratiques afin de s’adapter aux mises à jour de version d’AEM as a Cloud Service et aux mises à jour client.
 
@@ -37,7 +37,7 @@ Comme pour les versions existantes d’AEM hors cloud, un développement local h
 >[!NOTE]
 >Il existe des différences opérationnelles subtiles entre le comportement de l’application sur un ordinateur local et sur Adobe Cloud. Ces différences architecturales doivent être respectées lors du développement local et peuvent entraîner un comportement différent lors du déploiement sur l’infrastructure cloud. En raison de ces différences, il est important d’effectuer des tests exhaustifs sur les environnements de développement et d’évaluation avant de déployer un nouveau code personnalisé en production.
 
-Pour développer du code personnalisé pour une version interne, vous devez télécharger et installer la version appropriée du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Pour plus d’informations sur l’utilisation des outils Dispatcher AEM as a Cloud Service, voir [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md).
+Pour développer du code personnalisé pour une version interne, vous devez télécharger et installer la version appropriée du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Pour plus d’informations sur l’utilisation des outils AEM as a Cloud Service Dispatcher, voir [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md).
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
@@ -73,7 +73,7 @@ Les modifications d’application dues au modèle de déploiement étant activé
 
 Pour les clients et clientes qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces modules de code, par exemple, les [hooks d’installation](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces packages de code, par exemple, les [ hooks d’installation ](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -110,9 +110,9 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation du package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
+   * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation de l’installation de package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
 >Les packages de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ En outre, il n’existe aucun mécanisme permettant d’annuler les modification
 
 Les packages tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraîne un échec du déploiement.
 
-Comme mentionné ci-dessus, les clients et clientes disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel rendu nécessaire par les modifications de référentiel dans la version 6.5 comme décrit dans la [documentation d’AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
+Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel requis par les modifications du référentiel dans la version 6.5, comme décrit dans la documentation d’[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 ## Repoinit {#repoinit}
 
@@ -136,7 +136,7 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
   >
   >La définition des listes de contrôle d’accès requiert que les structures de nœud soient déjà présentes. Par conséquent, il peut être nécessaire de créer au préalable des instructions de chemin.
 
-* Ajouter un chemin (par exemple, pour les structures de dossiers racine)
+* Ajouter un chemin d’accès (par exemple, pour les structures de dossiers racine)
 * Ajout de CND (définitions de types de nœuds)
 
 Il est préférable d’opter pour repoinit pour ces scénarios de modification de contenu pris en charge en raison des avantages suivants :
@@ -279,7 +279,7 @@ La modification des personnes utilisant le service ou des listes de contrôle d�
 
 ### Modifications des index {#index-changes}
 
-Si des modifications sont apportées aux index, il est important que la nouvelle version continue à utiliser ses index jusqu’à son arrêt, tandis que l’ancienne version utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion des index décrites sous [Recherche et indexation de contenu](/help/operations/indexing.md).
+Si des modifications sont apportées aux index, il est important que la nouvelle version continue à utiliser ses index jusqu’à son arrêt, tandis que l’ancienne version utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion d’index décrites dans [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Codage conservateur pour les restaurations {#conservative-coding-for-rollbacks}
 
@@ -297,7 +297,7 @@ Dans les solutions AEM existantes, les clients et les clientes peuvent exécuter
 
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les bundles OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est prise en charge, alors que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est prise en charge, tandis que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
 AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu destiné à des environnements ou des services spécifiques. Si un environnement de développement doit être alimenté avec des données ou un HTML qui ne se trouvent pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
@@ -334,4 +334,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Configuration des tâches de maintenance dans le contrôle de code source {#maintenance-tasks-configuration-in-source-control}
 
-Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.
+Les configurations de tâches de maintenance doivent être conservées dans le contrôle de la source, car l’écran **Outils > Opérations** n’est plus disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées, plutôt qu’appliquées de manière réactive et oubliées. Voir [ Tâches de maintenance dans AEM as a Cloud Service](/help/operations/maintenance.md) pour plus d’informations.

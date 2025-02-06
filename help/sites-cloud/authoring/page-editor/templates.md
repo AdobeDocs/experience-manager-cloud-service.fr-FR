@@ -1,11 +1,11 @@
 ---
-title: Modèles de création de pages modifiables à l’aide de l’éditeur de page
-description: Vous pouvez utiliser l’ éditeur de modèles pour créer des modèles que vos auteurs de contenu peuvent utiliser pour créer des pages modifiables à l’aide de l’éditeur de page.
+title: Modèles pour créer des pages modifiables avec l’éditeur de page
+description: Vous pouvez utiliser l’éditeur de modèles pour créer des modèles que les auteurs de contenu peuvent utiliser pour créer des pages modifiables avec l’éditeur de page.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 80%
@@ -13,19 +13,19 @@ ht-degree: 80%
 ---
 
 
-# Modèles de création de pages modifiables à l’aide de l’éditeur de page {#creating-page-templates}
+# Modèles pour créer des pages modifiables avec l’éditeur de page {#creating-page-templates}
 
-Vous pouvez utiliser l’ éditeur de modèles pour créer des modèles que vos auteurs de contenu peuvent utiliser pour créer des pages modifiables à l’aide de l’éditeur de page.
+Vous pouvez utiliser l’éditeur de modèles pour créer des modèles que les auteurs de contenu peuvent utiliser pour créer des pages modifiables avec l’éditeur de page.
 
 ## Vue d’ensemble {#overview}
 
-Lorsqu’un auteur crée une page, il doit sélectionner un modèle qui sert de base à la nouvelle page. Le modèle définit la structure de la page créée, tout contenu initial et les composants qui peuvent être utilisés lors de la modification de la page dans l’éditeur de page.
+Lorsqu’un auteur crée une page, il doit sélectionner un modèle, qui est utilisé comme base de la nouvelle page. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés lors de la modification de la page dans l’éditeur de page.
 
 >[!NOTE]
 >
->[ Des modèles sont également disponibles pour créer des pages modifiables à l’aide de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Des modèles sont également disponibles pour créer des pages modifiables avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/templates.md).
 
-Avec l’ **éditeur de modèles**, la création et la maintenance de modèles ne sont pas une tâche réservée aux développeurs. Un type d’utilisateur avancé, appelé **auteur de modèles**, peut créer des modèles. Les développeurs doivent configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser, mais une fois ces bases en place, l’ **auteur de modèles** a la possibilité de créer et de configurer des modèles sans impliquer de développeur.
+Avec l’**Éditeur de modèles**, la création et la maintenance des modèles ne sont pas des tâches réservées aux développeurs. Un type d’utilisateur avancé, appelé **créateur de modèles**, peut créer des modèles. L’équipe de développement doit configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’**créateur de modèles** peut créer et configurer des modèles sans impliquer de développeur.
 
 L’**Éditeur de modèles** permet aux auteurs et autrices de modèles de :
 
@@ -33,9 +33,9 @@ L’**Éditeur de modèles** permet aux auteurs et autrices de modèles de :
 * de préconfigurer les composants ;
 * Définir les composants qui peuvent être modifiés sur les pages créées avec le modèle.
 
-Ce document explique comment un **auteur de modèles** peut utiliser l’ **éditeur de modèles** pour créer et gérer des modèles modifiables.
+Ce document explique comment un **créateur de modèles** peut utiliser l’**éditeur de modèles** pour créer et gérer des modèles modifiables.
 
-Pour plus d’informations sur le fonctionnement des modèles modifiables à un niveau technique, consultez le document destiné aux développeurs [ Modèles modifiables](/help/implementing/developing/components/templates.md) pour plus d’informations.
+Pour plus d’informations sur le fonctionnement des modèles modifiables au niveau technique, consultez le document de développement [Modèles modifiables](/help/implementing/developing/components/templates.md).
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Avant de commencer, il est important de tenir compte du fait que la création d�
 
 ### Rôles {#roles}
 
-La création d’un modèle nécessite une collaboration entre les rôles suivants :
+La création d’un modèle nécessite la collaboration entre les rôles suivants :
 
 * **Administrateur** :
    * La création d’un dossier pour les modèles nécessite des droits `admin`.
@@ -95,15 +95,15 @@ Lors de la création d’un modèle modifiable :
 >
 >Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/implementing/developing/extending/i18n/dev.md) dans un modèle.
 >
->Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez les [fonctionnalités de localisation des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr)
+>Pour les éléments de modèle tels que les en-têtes et pieds de page qui doivent être localisés, utilisez les fonctions de localisation [ des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
-Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche de l’administrateur qui est décrite dans le document [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
+Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche d’administration décrite dans le document [Modèles de page](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Création d’un modèle - Créateur ou créatrice de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez la **[console de modèles](/help/sites-cloud/administering/templates-console.md)** , puis accédez au dossier requis.
+1. Ouvrez la **[console Modèles](/help/sites-cloud/administering/templates-console.md)** puis accédez au dossier requis.
 
    >[!NOTE]
    >
@@ -149,19 +149,19 @@ Un modèle peut avoir les propriétés suivantes :
 * Description
    * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
 
-Après avoir créé le modèle, utilisez la **[console Modèles](/help/sites-cloud/administering/templates-console.md)** pour afficher ou modifier les propriétés du modèle.
+Une fois le modèle créé, utilisez la **[console de modèles](/help/sites-cloud/administering/templates-console.md)** pour afficher ou modifier ses propriétés.
 
 #### Miniature du modèle {#template-thumbnail-image}
 
 Pour définir la miniature du modèle :
 
 1. Modifiez les propriétés du modèle.
-1. Choisissez si vous souhaitez télécharger une miniature ou la faire générer à partir du contenu du modèle.
-   * Si vous souhaitez télécharger une miniature, sélectionnez **Télécharger l’image**
+1. Choisissez si vous souhaitez charger une miniature ou la faire générer à partir du contenu du modèle.
+   * Si vous souhaitez charger une miniature, sélectionnez **Charger l’image**
    * Si vous souhaitez générer une miniature, sélectionnez **Générer l’aperçu**
 1. Pour les deux méthodes, un aperçu de la miniature s’affiche.
-   * Si ce n’est pas le cas, sélectionnez **Effacer** pour télécharger une autre image ou générer à nouveau la miniature.
-1. Lorsque la miniature vous satisfait, sélectionnez **Enregistrer et fermer**.
+   * Si elle n’est pas satisfaisante, sélectionnez **Effacer** pour charger une autre image ou générer à nouveau la miniature.
+1. Lorsque la miniature vous convient, sélectionnez **Enregistrer et fermer**.
 
 ### Activation et autorisation d’un modèle - Créateur ou créatrice de modèles {#enabling-and-allowing-a-template-template-author}
 
@@ -208,9 +208,9 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
 ### Publication d’un modèle - Créateur de modèles {#publishing-a-template-template-author}
 
-Le modèle étant référencé lors du rendu d’une page, il doit être publié afin d’être disponible dans l’environnement de publication.
+Comme le modèle est référencé lors du rendu d’une page, le modèle entièrement configuré doit être publié afin d’être disponible dans l’environnement de publication.
 
-Modèles Publish utilisant la **[console de modèles.](/help/sites-cloud/administering/templates-console.md)**
+les modèles Publish à l’aide de la **[console de modèles](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Modification de modèles - Créateurs et créatrices de modèles {#editing-templates-template-authors}
 
@@ -266,7 +266,7 @@ Dans le cadre des [politiques de page](#page-policies), vous pouvez attribuer de
 
 Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 
-Pour plus d’informations, consultez la [documentation sur le système de style](/help/sites-cloud/authoring/page-editor/style-system.md) .
+Pour plus d’informations, consultez la [documentation du système de style](/help/sites-cloud/authoring/page-editor/style-system.md).
 
 ### Modification d’un modèle - Structure - Créateur de modèles {#editing-a-template-structure-template-author}
 
@@ -279,7 +279,7 @@ En mode **Structure**, vous définissez les composants et le contenu de votre mo
 
 ![Structure de page de l’éditeur de modèles](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Vous pouvez exécuter plusieurs actions en mode **Structure** de l’éditeur de modèles, ainsi que plusieurs fonctions pour vous aider :
+Plusieurs actions peuvent être entreprises dans le mode **Structure** de l’éditeur de modèles, ainsi que plusieurs fonctionnalités pour vous aider :
 
 #### Ajout de composants {#add-components}
 
@@ -305,7 +305,7 @@ Une fois ajouté, chaque composant est marqué par :
 
 >[!NOTE]
 >
->Même si l’ajout de composants et de ressources à un modèle n’est pas identique à des actions similaires lors de la [création de page.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Même si l’ajout de composants et de ressources à un modèle n’est pas identique à des actions comparables lors de la [création de pages](/help/sites-cloud/authoring/page-editor/edit-content.md), il présente de nombreuses similitudes avec ces actions.
 
 #### Actions des composants {#component-actions}
 
@@ -337,8 +337,8 @@ Cela permet de définir les détails de la conception.
 
 La fenêtre de configuration est divisée en deux.
 
-* Dans la partie gauche de la boîte de dialogue sous **Stratégie**, vous pouvez sélectionner une stratégie existante.
-* Dans la partie droite de la boîte de dialogue sous **Properties**, vous pouvez définir les propriétés spécifiques au type de composant.
+* Dans la partie gauche de la boîte de dialogue, sous **Politique**, vous pouvez sélectionner une politique existante ou en sélectionner une existante.
+* Dans la partie droite de la boîte de dialogue, sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
 
 Les propriétés disponibles dépendent du composant sélectionné. Par exemple, pour un composant de texte, les propriétés définissent les options de copier-coller, de mise en forme et de style de paragraphe, entre autres options.
 
@@ -346,21 +346,21 @@ Les propriétés disponibles dépendent du composant sélectionné. Par exemple,
 
 Les politiques de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
-Sous **Stratégie**, vous pouvez sélectionner une stratégie existante à appliquer au composant dans la liste déroulante.
+Sous **Politique** vous pouvez sélectionner une politique existante à appliquer au composant au moyen de la liste déroulante.
 
 ![Sélectionner une politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Vous pouvez ajouter une nouvelle stratégie en sélectionnant le bouton d’ajout en regard de la liste déroulante **Sélectionner une stratégie**. Donnez un nouveau titre dans le champ **Titre de la stratégie**.
+Vous pouvez ajouter une nouvelle politique en cliquant sur le bouton d’ajout en regard de la liste déroulante **Sélectionner une politique**. Donnez un nouveau titre dans le champ **Titre de la politique**.
 
 ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-La stratégie existante sélectionnée dans la liste déroulante **Sélectionner une stratégie** peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
+La politique existante sélectionnée dans la liste déroulante **Sélectionner une politique** peut être copiée en tant que nouvelle politique à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la politique**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
 
 ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 Vous pouvez saisir la description de la politique dans le champ **Description de la politique** (facultatif).
 
-Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir quels autres modèles utilisent la stratégie sélectionnée dans la liste déroulante **Sélectionner une stratégie** .
+Dans la section **Autres modèles utilisant également la politique sélectionnée** vous pouvez facilement voir quels autres modèles utilisent la politique sélectionnée dans la liste déroulante **Sélectionner une politique**.
 
 ![Utilisation d’une politique existante](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -381,13 +381,13 @@ Sur l’onglet **Principal**, les paramètres les plus importants du composant s
 
 Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies, ainsi que l’activation du chargement différé.
 
-Si un paramètre permet plusieurs configurations, cliquez sur le bouton **Ajouter** pour ajouter une autre configuration.
+Si un paramètre permet plusieurs configurations, sélectionnez le bouton **Ajouter** pour ajouter une autre configuration.
 
 ![Bouton Ajouter.](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
 Pour supprimer une configuration, cliquez sur le bouton **Supprimer** situé à droite de la configuration.
 
-Pour supprimer une configuration, cliquez sur le bouton **Supprimer** .
+Pour supprimer une configuration, sélectionnez le bouton **Supprimer**.
 
 ![Bouton Supprimer](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -401,7 +401,7 @@ Par exemple, pour un composant d’image, vous pouvez définir les proportions d
 
 >[!CAUTION]
 >
->Dans AEM rapports de recadrage sont définis comme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
+>Dans AEM, les rapports de recadrage sont définis comme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -445,11 +445,11 @@ Dans l’onglet **Composants autorisés**, vous définissez les composants dispo
 
 ###### Composants par défaut {#default-components}
 
-Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
+Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Seuls les composants avec des zones de dépôt sont disponibles pour une telle configuration.
 
-Sélectionnez **Ajouter le mappage** pour ajouter un nouveau composant et un mappage de type MIME.
+Sélectionnez **Ajouter un mappage** pour ajouter un composant entièrement nouveau et un mappage de type MIME.
 
-Sélectionnez un composant dans la liste et sélectionnez **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
+Sélectionnez un composant dans la liste, puis sélectionnez **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
 
 ![Onglet Composants par défaut](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -554,20 +554,20 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
   ![Sélecteur de politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Vous pouvez ajouter une nouvelle stratégie en cliquant sur le bouton d’ajout en regard de la liste déroulante **Sélectionner une stratégie** . Donnez un nouveau titre dans le champ **Titre de la stratégie**.
+  Vous pouvez ajouter une nouvelle politique en cliquant sur le bouton d’ajout en regard de la liste déroulante **Sélectionner une politique**. Donnez un nouveau titre dans le champ **Titre de la politique**.
 
   ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  La stratégie existante sélectionnée dans la liste déroulante **Sélectionner une stratégie** peut être copiée en tant que nouvelle stratégie à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la stratégie**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
+  La politique existante sélectionnée dans la liste déroulante **Sélectionner une politique** peut être copiée en tant que nouvelle politique à l’aide du bouton Copier en regard de la liste déroulante. Donnez un nouveau titre dans le champ **Titre de la politique**. Par défaut, la politique copiée est intitulée **Copie de X**, X étant le titre de la politique copiée.
 
   ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Définissez le titre de la politique dans le champ **Titre de la politique**. Une stratégie doit avoir un titre pour pouvoir être facilement sélectionnée dans la liste déroulante **Sélectionner une stratégie**.
+* Définissez le titre de la politique dans le champ **Titre de la politique**. Une politique doit comporter un titre afin de pouvoir être facilement sélectionnée dans la liste déroulante **Sélectionner une politique**.
 
   ![Titre de la politique](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Vous pouvez saisir la description de la politique dans le champ **Description de la politique** (facultatif).
-* Dans la section **D’autres modèles utilisent également la stratégie sélectionnée**, vous pouvez facilement voir quels autres modèles utilisent la stratégie sélectionnée dans la liste déroulante **Sélectionner une stratégie** .
+* Dans la section **Autres modèles utilisant également la politique sélectionnée** vous pouvez facilement voir quels autres modèles utilisent la politique sélectionnée dans la liste déroulante **Sélectionner une politique**.
 
   ![Utilisation des politiques](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -593,7 +593,7 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 >[!NOTE]
 >
->Bien que l’auteur du modèle puisse spécifier la stratégie de page sur le modèle, il doit obtenir des informations sur les bibliothèques clientes appropriées de la part du développeur.
+>Bien que l’auteur du modèle puisse spécifier la politique de page sur le modèle, il doit obtenir les détails des bibliothèques côté client appropriées auprès du développeur.
 
 ### Modification d’un modèle - Propriétés de page initiales - Créateur {#editing-a-template-initial-page-properties-author}
 
@@ -647,4 +647,4 @@ Lors de la création de modèles, tenez compte des points suivants :
    >AEM affiche des avertissements explicites lorsque vous modifiez le statut de verrouillage des composants sur les modèles qui ne sont plus des brouillons.
 
 1. [Créer vos propres dossiers](#creating-a-template-folder-admin) pour les modèles spécifiques à votre site.
-1. [Publish vos modèles](#publishing-a-template-template-author) à partir de la console **[Modèles.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish vos modèles](#publishing-a-template-template-author) à partir de la console **[Modèles]**(/help/sites-cloud/administering/templates-console.md).

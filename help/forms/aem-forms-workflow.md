@@ -1,24 +1,24 @@
 ---
 title: Comment utiliser AEM Forms pour l’automatisation des processus d’entreprise (BPM) ?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus d’entreprise. Par exemple, révision et approbation, génération de PDF, workflows Adobe Sign.
+description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement des workflows de processus métier. Par exemple, les workflows de révision et d’approbation, de génération de PDF ou d’Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 95%
 
 ---
 
-
 # Processus basé sur l’utilisation de Forms sur OSGi {#forms-centric-workflow-on-osgi}
 
-![Hero Image](do-not-localize/header.png)
+![Image principale](do-not-localize/header.png)
 
 Les entreprises collectent les données à partir de centaines, voire de milliers de formulaires, de différents systèmes principaux et de sources de données en ligne ou hors ligne. Elles disposent également d’un ensemble dynamique de personnes pour prendre des décisions concernant les données, qui impliquent les processus de révision et d’approbation itératifs.
 
@@ -70,7 +70,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
 1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Sélectionnez **Terminé**.
-1. Sélectionnez le modèle de workflow créé et sélectionnez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Sélectionnez le modèle de workflow créé, puis sélectionnez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * Les étapes Début de flux et Fin de flux. Ces étapes définissent le début et la fin du workflow. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
@@ -78,7 +78,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 1. Activez les notifications électroniques. Vous pouvez configurer le processus basé sur l’utilisation de Forms sur OSGi pour qu’il envoie des notifications électroniques aux utilisateurs ou personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
-   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL ’Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
    1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 1. Créez des étapes de workflow. Un workflow peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du workflow.
@@ -121,7 +121,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    Pour l’exemple de prêt immobilier, ajoutez un document d’enregistrement généré, deux étapes Affecter une tâche et une étape de signature de document pour la Branche 1 du modèle, comme affiché dans l’image ci-dessous. Une étape Affecter une tâche consiste à afficher et envoyer des **documents de prêt à signer au demandeur** et un autre composant de tâche consiste à **afficher les documents signés**. Ajoutez également un composant Affecter une tâche à la branche 2. Il est activé lorsqu’un utilisateur clique sur Refuser dans la boîte de réception AEM.
 
-   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, l’étape Document d’enregistrement et l’étape Signer un document configurée par exemple, la demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
+   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, de l’étape Document d’enregistrement et de l’étape Signer le document configurées par exemple, demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
 
    Le modèle de workflow est prêt. Vous pouvez lancer le workflow via différentes méthodes. Pour plus de détails, consultez [Lancement d’un workflow basé sur l’utilisation de Forms on OSGi](#launch).
 
@@ -201,7 +201,7 @@ Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de F
 
 ### Envoyer une demande depuis la boîte de réception AEM {#inbox}
 
-La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs membres du groupe [!DNL workflow-users] peuvent remplir et envoyer l’application qui déclenche le processus associé.
+La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres [!DNL workflow-users] groupe peuvent renseigner et envoyer la demande qui déclenche le processus associé.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### Purge des instances de processus {#purge-workflow-instances}

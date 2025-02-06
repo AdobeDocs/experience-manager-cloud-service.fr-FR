@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager dans AEM as a Cloud Service vous permet d’activer Edge Deli
 
 Si vous disposez d’Edge Delivery Services sous licence avec Adobe Experience Manager Sites, vous pouvez désormais intégrer votre site à Edge Delivery Services directement dans Cloud Manager et publier votre contenu [à l’aide d’une expérience guidée en libre-service](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
-De plus, vous pouvez accéder à une expérience unifiée pour gérer toutes vos propriétés AEM tout en assurant la cohérence entre les workflows clés. Ces processus comprennent la gestion des noms de domaine, la gestion des certificats SSL et les mappages CDN.
+De plus, vous pouvez accéder à une expérience unifiée pour gérer toutes vos propriétés AEM tout en assurant la cohérence entre les workflows clés. Ces workflows comprennent notamment la gestion des noms de domaine, la gestion des certificats SSL et les mappages de réseau CDN.
 
 ## Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services {#recommended-path-eds}
 
@@ -63,24 +63,24 @@ Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction
 >* Une fois la licence Edge Delivery Services appliquée ou supprimée d’un programme, la modification prend effet immédiatement sans qu’il soit nécessaire d’exécuter un pipeline.
 
 
-## À propos de la liste des tâches Edge Delivery dans Cloud Manager {#ed-todo-list}
+## À propos de la liste des tâches Edge Delivery dans Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-La **liste de tâches Edge Delivery** dans Cloud Manager est une liste de contrôle de tâches d’intégration destinée à vous guider tout au long de l’intégration et de la gestion de votre site Edge Delivery jusqu’à [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’intégration destinée à vous guider tout au long de l’intégration et de la gestion de votre site Edge Delivery jusqu’à sa [mise en production](/help/journey-onboarding/go-live-checklist.md).
 
-![Liste de tâches de site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Liste des tâches à effectuer sur le site Edge Delivery dans Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tâche | Description |
 | --- | --- | --- |
 | 1 | Rejoindre le canal de collaboration de produit | Cliquer sur **Envoyer la demande maintenant** envoie une demande à Adobe pour créer un canal pour votre entreprise. Si le canal existe déjà, vous faites l’objet d’un transfert vers le canal de votre entreprise. |
-| 2 | Remplir les conditions préalables | Voir [Tutoriel de prise en main](https://www.aem.live/developer/tutorial). |
+| 2 | Remplir les conditions préalables | Voir [Afficher le tutoriel de prise en main](https://www.aem.live/developer/tutorial). |
 | 3 | Ajouter un site Edge Delivery | Voir [Ajout d’un site Edge Delivery](#eds-add-site). |
 | 4 | Ajouter un domaine | Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Ajouter le certificat SSL | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurer le réseau CDN de votre site Edge Delivery | Voir [Ajout d’une configuration de réseau CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
 | 7 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
-| 8 | Mise en production | Voir [Liste de contrôle d’activation](/help/edge/docs/go-live-checklist.md). |
+| 8 | Mise en production | Voir [Liste de contrôle de mise en production](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

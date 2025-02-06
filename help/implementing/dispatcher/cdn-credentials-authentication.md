@@ -4,7 +4,7 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Configurer les informations d’identification et l’authentification du réseau CDN {#cdn-credentials-authentication}
 
-Le réseau CDN fourni par l’Adobe dispose de plusieurs fonctionnalités et services, dont certains reposent sur des informations d’identification et une authentification afin d’assurer un niveau approprié de sécurité de l’entreprise. En déclarant des règles dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md) les clients peuvent configurer les éléments suivants en libre-service :
+Le réseau CDN fourni par l’Adobe dispose de plusieurs fonctionnalités et services, dont certains reposent sur des informations d’identification et une authentification afin d’assurer un niveau approprié de sécurité de l’entreprise. En déclarant des règles dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md), les clients peuvent configurer les éléments suivants en libre-service :
 
 * Valeur d’en-tête HTTP X-AEM-Edge-Key utilisée par le réseau CDN d’Adobe pour valider les requêtes provenant d’un réseau CDN géré par le client ou la cliente.
 * Jeton API utilisé pour purger les ressources dans le cache du réseau CDN.

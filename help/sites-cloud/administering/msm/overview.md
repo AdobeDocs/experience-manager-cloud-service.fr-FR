@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 
 >[!NOTE]
 >
->MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
+>MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [ Réutilisation de fragments de contenu à l’aide de MSM pour Assets ](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
 
 ## Scénarios possibles {#possible-scenarios}
 
@@ -122,7 +122,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Créer une Live Copy** (**Sites**)
 
-   * MSM vous permet de [créer une Live Copy ad hoc (ponctuelle) d’une page ou sous-branche individuelle d’un site web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Par exemple, la duplication d’une sous-branche pour fournir des informations sur une nouvelle version/mise à jour d’un produit. Créer une Live Copy de la manière suivante :
+   * MSM vous permet de [créer une Live Copy ad hoc (unique) d’une page ou d’une sous-branche spécifique d’un site web](creating-live-copies.md#creating-a-live-copy-of-a-page). Par exemple, la duplication d’une sous-branche pour fournir des informations sur la nouvelle version d’un produit. Créer une Live Copy de la manière suivante :
       * crée une Live Copy ad hoc (aucune configuration de plan directeur requise) ;
       * peut être utilisé pour créer (immédiatement) une Live Copy pour une page ou une branche.
       * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
@@ -137,11 +137,11 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Aperçu de la Live Copy** (**Sites**)
 
-   * Cette console vous permet de [ visualiser et gérer votre plan directeur et ses Live Copies.](live-copy-overview.md)
+   * Cette console vous permet [d’afficher et de gérer votre plan directeur et ses Live Copies](live-copy-overview.md).
 
 * **Plans directeurs** (**Outils** – **Sites**)
 
-   * Cette console vous permet de [ créer et gérer vos configurations de plan directeur.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Cette console vous permet de [créer et de gérer vos configurations de plan directeur](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Le tableau suivant donne une vue d’ensemble des principaux termes utilisés av
 
 >[!TIP]
 >
->Voir [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) pour les noms d’objet.
+>Pour connaître les noms d’objet](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voir [ Extension de Multi Site Manager .
 
 ## Live Copies {#live-copies}
 
@@ -293,7 +293,7 @@ Les configurations de déploiement peuvent être réutilisées, de sorte que plu
 
 ### Conflits de déploiement {#rollout-conflicts}
 
-Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu dans la source et dans la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits qui peuvent se produire pendant le déploiement.](rollout-conflicts.md)
+Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu à la fois dans la source et la Live Copy. Il est donc utile de savoir comment AEM gère les [ conflits susceptibles de se produire pendant le déploiement](rollout-conflicts.md).
 
 ### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -324,12 +324,12 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Développez le contenu du site source.
 1. Déterminez la configuration de déploiement à utiliser.
 
-   1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) qui peuvent répondre à plusieurs cas d’utilisation.
+   1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) pouvant répondre à plusieurs cas d’utilisation.
    1. Vous pouvez éventuellement [créer une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration), le cas échéant.
 
 1. Déterminez où vous devez [spécifier les configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon vos besoins.
 1. Si nécessaire, [créez une configuration de plan directeur](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.
-1. [Créez une Live Copy.](creating-live-copies.md#creating-a-live-copy)
+1. [Créer une Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. Apportez des modifications au contenu source selon vos besoins. Vous devez utiliser le processus normal de révision et d’approbation de contenu établi par votre entreprise.
 1. [Déployez](creating-live-copies.md#rolling-out-a-blueprint) le plan directeur ou [synchronisez la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) avec les modifications.
 

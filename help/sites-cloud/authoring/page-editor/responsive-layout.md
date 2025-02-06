@@ -1,11 +1,11 @@
 ---
 title: Mise en page réactive
-description: AEM permet de créer une mise en page réactive pour vos pages.
+description: AEM permet de créer une mise en page réactive pour vos pages
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 86%
@@ -48,7 +48,7 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 * masquer des composants pour des mises en page spécifiques à certains appareils ;
 * contrôler les colonnes.
 
-Selon votre projet, le conteneur de mises en page peut être utilisé comme système de paragraphes par défaut pour vos pages ou comme composant pouvant être ajouté à votre page par le biais de l’explorateur de composants (ou les deux).
+Selon votre projet, le conteneur de disposition peut être utilisé comme système de paragraphes par défaut pour vos pages ou comme composant pouvant être ajouté à votre page par le biais de l’explorateur de composants (ou les deux).
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ Selon votre projet, le conteneur de mises en page peut être utilisé comme syst
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Pour plus d’informations, consultez le document [Configuration d’une mise en page réactive](/help/sites-cloud/administering/responsive-layout.md) .
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Consultez le document [Configuration d’une mise en page réactive](/help/sites-cloud/administering/responsive-layout.md) pour plus d’informations.
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -111,7 +111,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
-   * Sélectionnez l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
+   * Sélectionnez l’indicateur d’appareil dans la barre d’outils de l’émulateur.
 
    ![Menu déroulant Sélectionner un appareil](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -124,7 +124,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
    ![Le pli](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
    * Le pli peut également être considéré comme un saut de ligne de page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à des fins pratiques pour indiquer la partie du contenu que l’utilisateur voit sur l’appareil avant de faire défiler l’écran.
-   * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
+   * La ligne du pli n’est pas affichée si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
 
 ## Ajout d’un conteneur de mise en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -137,22 +137,22 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 
 >[!NOTE]
 >
->S’il n’est pas déjà disponible, le **conteneur de mises en page** doit être explicitement [ activé pour un système de paragraphes/une page.](/help/sites-cloud/administering/responsive-layout.md)
+>S’il n’est pas déjà disponible, le **conteneur de disposition** doit être explicitement [activé pour un système de paragraphes/une page](/help/sites-cloud/administering/responsive-layout.md).
 
-1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). À partir de là, vous pouvez le faire glisser vers l’emplacement requis sur la page, après lequel vous pouvez voir l’espace réservé **Faire glisser les composants ici** .
+1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). À partir de là, vous pouvez le faire glisser à l’emplacement requis sur la page, après quoi vous pouvez voir l’espace réservé **Faire glisser les composants ici**.
 1. Vous pouvez ensuite ajouter des composants au conteneur de mise en page, qui contiendront le contenu proprement dit :
 
    ![Conteneur de mise en page](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Sélection et exécution d’une action sur un conteneur de mise en page (mode d’édition) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Comme pour les autres composants, vous pouvez sélectionner un conteneur de mises en page, puis agir sur ce dernier (couper, copier, supprimer) (en mode **Modifier** ) :
+Comme pour d’autres composants, vous pouvez sélectionner un conteneur de disposition (en mode **Modifier**), puis agir sur celui-ci (le couper, le copier et le supprimer) :
 
 >[!CAUTION]
 >
 >Un conteneur de mise en page étant un système de paragraphes, la suppression du composant entraîne la suppression de la grille de mise en page et de tous les composants (ainsi que de leur contenu) qu’il contient.
 
-1. Si vous placez le pointeur de la souris ou sélectionnez l’espace réservé de la grille, le menu d’actions s’affiche.
+1. Si vous placez le pointeur de la souris sur l’espace réservé de la grille ou le sélectionnez, le menu d’actions s’affiche.
 
    ![Ajout au conteneur de mise en page](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -184,7 +184,7 @@ Le mode **Mise en page** peut être activé de deux façons.
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), en sélectionnant le mode **Mise en page**.
    * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
    * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
-* Lors de la [modification d’un composant individuel.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Lors de la [modification d’un composant individuel](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * En utilisant l’option **Mise en page** dans le menu d’action rapide du composant, vous pouvez passer au mode **Mise en page**.
    * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode **Édition** lorsqu’un autre composant est sélectionné.
 
@@ -198,14 +198,14 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
   >
   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
-* Sélectionnez un composant de contenu. La barre d&#39;outils permet d&#39;effectuer les opérations suivantes :
-   * **Parent** - Permet de sélectionner l’intégralité du composant Conteneur de mises en page pour effectuer une action.
+* Sélectionnez un composant de contenu, la barre d’outils vous permet d’effectuer les opérations suivantes :
+   * **Parent** - Permet de sélectionner l’ensemble du composant de conteneur de mises en page pour effectuer une opération.
    * **Flotter sur une nouvelle ligne** : le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
    * **Masquer le composant** : le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
 
   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* En mode **Mise en page** , vous pouvez sélectionner le **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils s’affiche pour ce mode.
+* En mode **Mise en page** vous pouvez sélectionner le composant **Faire glisser les composants ici** pour sélectionner l’ensemble du composant. La barre d’outils s’affiche pour ce mode.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
@@ -213,7 +213,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Ce nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
      ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 

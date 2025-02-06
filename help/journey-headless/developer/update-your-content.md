@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Comment mettre à jour votre contenu à l’aide des API AEM Assets {#update-your-content}
 
-Dans cette partie du [parcours de développement AEM découplé](overview.md), découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
+Dans cette partie du [Parcours de développement découplé AEM](overview.md), apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 
 ## Un peu d’histoire...  {#story-so-far}
 

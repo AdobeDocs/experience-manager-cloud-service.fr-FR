@@ -4,10 +4,10 @@ description: Découvrez comment gérer les données taxonomiques pour utiliser d
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 85%
+ht-degree: 65%
 
 ---
 
@@ -26,9 +26,9 @@ L’éditeur universel fonctionne uniquement avec les identifiants de vos balise
 
 ## Création d’une page de taxonomie {#creating}
 
-Une taxonomie est créée comme [toute autre page dans AEM.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+Une taxonomie est créée comme [toute autre page d’AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Accédez à la console [**Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Accédez à la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Sélectionnez l’emplacement où vous souhaitez créer votre taxonomie.
 
@@ -46,7 +46,7 @@ Une taxonomie est créée comme [toute autre page dans AEM.](/help/sites-cloud/a
 
 1. Appuyez ou cliquez sur **Créer**.
 
-La page de taxonomie est créée. Dans la boîte de dialogue **Réussite**, vous pouvez appuyer ou cliquer sur la boîte de dialogue **Terminé** pour ignorer le message ou sur **Ouvrir** pour modifier la page dans l’[Éditeur de page.](/help/sites-cloud/authoring/page-editor/introduction.md)
+La page de taxonomie est créée. Dans la boîte de dialogue **Succès**, vous pouvez appuyer ou cliquer sur **Terminé** pour ignorer le message ou **Ouvrir** pour modifier la page dans l’[Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Notez le nom de page obtenu pour la page de taxonomie à utiliser dans les étapes suivantes.
 
@@ -54,7 +54,7 @@ Notez le nom de page obtenu pour la page de taxonomie à utiliser dans les étap
 
 Vous commencez à modifier une page de taxonomie comme toute autre page dans AEM.
 
-1. Accédez à la console [**Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Accédez à la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Sélectionnez la taxonomie que vous souhaitez modifier.
 
@@ -82,7 +82,7 @@ AEM met automatiquement à jour le contenu de la page de taxonomie lorsque vous 
 
 ## Mise à jour de paths.json pour la publication de taxonomie {#paths-json}
 
-Comme lorsque vous [gérez et publiez des données tabulaires pour votre site Edge Delivery Services,](/help/edge/wysiwyg-authoring/tabular-data.md) vous devez mettre à jour votre fichier `paths.json` de votre projet pour permettre la publication de vos données de taxonomie.
+Comme lors de la [gestion et publication de données tabulaires pour votre site Edge Delivery Services ](/help/edge/wysiwyg-authoring/tabular-data.md), vous devez mettre à jour le fichier `paths.json` de votre projet pour permettre la publication des données de votre taxonomie.
 
 1. Ouvrez la racine de votre projet dans GitHub.
 
@@ -101,7 +101,7 @@ Comme lorsque vous [gérez et publiez des données tabulaires pour votre site Ed
    }
    ```
 
-   * `<taxonomy-page-name>` doit correspondre au nom de la [page de taxonomie que vous avez créée.](#creating)
+   * `<taxonomy-page-name>` doit correspondre au nom de la page [taxonomie que vous avez créée](#creating).
    * `<taxonomy-json-name>` peut être n’importe quel nom valide de votre choix.
 
 1. Cliquez sur **Valider les modifications...** pour enregistrer les modifications apportées à `main`.
@@ -112,20 +112,20 @@ Ce processus ne doit être effectué qu’une seule fois par page de taxonomie. 
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Pour plus d’informations sur les mappages de chemin d’accès, consultez le document [ Mappage de chemin d’accès pour les Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Publication d’une taxonomie {#publishing}
 
 Une taxonomie n’est pas disponible pour l’éditeur universel ou vos utilisateurs et utilisatrices tant qu’elle n’a pas été publiée.
 
-Les pages de taxonomie sont publiées comme n’importe quelle autre page [à l’aide des icônes **Publication rapide** ou **Gérer la publication** de la barre d’outils.](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+Les pages de taxonomie sont publiées comme toute autre page en [à l’aide des icônes **Quick Publish** ou **Gérer la publication** de la barre d’outils](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Vous devez republier votre page de taxonomie à chaque fois que vous effectuez l’une des opérations suivantes :
 
 * Modifier la page de taxonomie.
 * Réailser une modification ou un ajout aux balises et aux espaces de noms inclus dans votre page de taxonomie.
 
-Si vous créez une page de taxonomie, vous devez d’abord [y ajouter un mappage au fichier `paths.json` de votre projet.](#paths-json)
+Si vous créez une page de taxonomie, vous devez d’abord [ajouter un mappage au fichier `paths.json` de votre projet](#paths-json).
 
 ## Accès aux informations sur la taxonomie {#accessing}
 
@@ -135,7 +135,7 @@ Vous pouvez accéder à la taxonomie en tant que données JSON à l’adresse su
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de votre taxonomie au fichier `paths.json` de votre projet.](#paths-json) Les données de taxonomie sont renvoyées sous forme de données JSON, comme dans l’exemple suivant.
+Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de votre taxonomie au fichier `paths.json` de votre projet](#paths-json). Les données de taxonomie sont renvoyées sous la forme de données JSON comme dans l’exemple suivant.
 
 ```json
 {
@@ -166,11 +166,11 @@ Utilisez le `<taxonomy-json-name>` que vous avez défini lors du [mappage de vot
 
 Ces données JSON sont automatiquement mises à jour lorsque vous mettez à jour la taxonomie et que vous la republiez. Votre application peut accéder à ces informations par programmation pour vos utilisateurs et utilisatrices.
 
-[Si vous conservez des balises dans plusieurs langues,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) vous pouvez accéder à ces langues en transmettant le code de langue ISO2 comme valeur d’un paramètre `sheet=`.
+[Si vous conservez les balises dans plusieurs langues](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) vous pouvez accéder à ces langues en transmettant le code de langue ISO2 comme valeur d’un paramètre de `sheet=`.
 
 ## Exposition de propriétés de balise supplémentaires {#additional-properties}
 
-Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illustré [dans l’exemple précédent.](#accessing) Vous pouvez configurer votre taxonomie pour afficher des propriétés de balise supplémentaires. Dans cet exemple, nous allons exposer la description de la balise .
+Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illustré [dans l’exemple précédent](#accessing). Vous pouvez configurer votre taxonomie pour afficher des propriétés de balise supplémentaires. Dans cet exemple, nous allons exposer la description de la balise .
 
 1. Utilisez la console Sites pour sélectionner la taxonomie que vous avez créée.
 1. Appuyez ou cliquez sur l’icône **Propriétés** dans la barre d’outils.
@@ -179,7 +179,7 @@ Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illus
 1. Appuyez et cliquez sur **Enregistrer et fermer**.
 1. La taxonomie étant toujours sélectionnée, appuyez ou cliquez sur **Quick Publish** dans la barre d’outils.
 
-Désormais [lorsque vous accédez à votre taxonomie](#accessing) la description de la balise (ou toute propriété que vous avez choisi d’exposer) est incluse dans le fichier JSON.
+Désormais [lorsque vous accédez à votre taxonomie](#accessing), la description de la balise (ou toute propriété que vous avez choisi d’exposer) est incluse dans le fichier JSON.
 
 ```json
 {

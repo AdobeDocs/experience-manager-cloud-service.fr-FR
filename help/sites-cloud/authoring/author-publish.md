@@ -1,11 +1,11 @@
 ---
-title: Concepts de création et de publication
+title: Création et publication de concepts
 description: Découvrez les concepts de création dans AEM, à l’aide des environnements de création, de prévisualisation et de publication.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 30%
@@ -13,31 +13,31 @@ ht-degree: 30%
 ---
 
 
-# Concepts de création et de publication {#authoring-publishing}
+# Création et publication de concepts {#authoring-publishing}
 
-Pour un auteur de contenu, une installation AEM as a Cloud Service peut être considérée comme trois niveaux principaux à son niveau le plus élémentaire.
+Pour un auteur de contenu, une installation AEM as a Cloud Service peut être considérée comme trois niveaux principaux à son niveau le plus élémentaire
 
 * Niveau de création
-* Niveau d’aperçu
+* Niveau de prévisualisation
 * Niveau de publication
 
 Ces niveaux interagissent pour vous permettre de rendre le contenu disponible sur votre site web afin que vos visiteurs puissent y accéder. Le workflow de base est le suivant :
 
 1. Les auteurs de contenu créent leur contenu à l’aide du niveau Auteur.
-1. Les auteurs de contenu mettent leur contenu à la disposition des réviseurs pour la prévisualisation à l’aide du niveau d’aperçu.
-1. Une fois que le contenu est prêt pour une utilisation publique, les auteurs le publient à l’aide du niveau de publication.
+1. Les auteurs de contenu mettent leur contenu à la disposition des réviseurs pour un aperçu au niveau Aperçu.
+1. Une fois que le contenu est prêt pour la consommation publique, les auteurs publient le contenu à l’aide du niveau de publication.
 
-Le contenu peut être de différents types, y compris des pages, des ressources et des publications. L’aperçu du contenu peut être ignoré à la discrétion de l’auteur.
+Le contenu peut être de nombreux types différents, notamment des pages, des ressources et des publications. À la discrétion de l’auteur, l’aperçu du contenu peut être ignoré.
 
 ![Diagramme de l’auteur, de l’éditeur et des dispatchers](assets/author-publish.jpg)
 
-Pour plus d’informations sur l’architecture technique d’AEM as a Cloud Service, consultez le document [Introduction à l’architecture d’Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Pour plus d’informations sur l’architecture technique d’AEM as a Cloud Service, consultez le document [Introduction à l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md).
 
 {{edge-delivery-authoring}}
 
 ## Création de contenu {#author-environment}
 
-L’environnement de création du niveau Auteur offre une interface utilisateur graphique conviviale pour créer du contenu. L’auteur ou l’autrice doit se connecter en utilisant un compte auquel les droits d’accès appropriés sont attribués.
+L’environnement de création du niveau Auteur fournit une interface utilisateur graphique facile à utiliser pour créer du contenu. L’auteur ou l’autrice doit se connecter en utilisant un compte auquel les droits d’accès appropriés sont attribués.
 
 Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment (entre autres) :
 
@@ -54,20 +54,20 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 AEM est également administré à partir de l’environnement de création.
 
-Consultez le document [Guide de démarrage rapide de la création](/help/sites-cloud/authoring/quick-start.md) pour une présentation du processus de création.
+Consultez le document [Guide de démarrage rapide pour la création](/help/sites-cloud/authoring/quick-start.md) pour obtenir un aperçu du processus de création.
 
 ## Prévisualisation du contenu {#previewing-content}
 
-AEM propose également un service de prévisualisation qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
+AEM propose également un service d’aperçu qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
 
-Pour plus d’informations, consultez le document [Aperçu du contenu](/help/sites-cloud/authoring/sites-console/previewing-content.md) .
+Consultez le document [Prévisualisation du contenu](/help/sites-cloud/authoring/sites-console/previewing-content.md) pour plus d’informations.
 
 ## Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu de votre site est publié dans l’environnement de publication du niveau de publication. Ici, les pages du site web sont mises à la disposition de l’audience prévue, conformément à l’apparence de votre modèle de contenu.
+Une fois prêt, le contenu de votre site est publié dans l’environnement de publication du niveau de publication. Ici, les pages du site web sont mises à la disposition de l’audience prévue, en fonction de l’aspect de votre modèle de contenu.
 
-Pour plus d’informations sur la publication et l’annulation de la publication de pages, voir le document [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) .
+Consultez le document [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) pour plus d’informations sur la publication et la dépublication de pages.
 
 ## Dispatcher {#dispatcher}
 
-Pour optimiser les performances des visiteurs de votre site web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** met en oeuvre l’équilibrage de charge et la mise en cache pour les niveaux de publication et de prévisualisation.
+Pour optimiser les performances des visiteurs de votre site web, le **[Dispatcher](/help/implementing/dispatcher/overview.md)** implémente l’équilibrage de charge et la mise en cache pour les niveaux de publication et de prévisualisation.

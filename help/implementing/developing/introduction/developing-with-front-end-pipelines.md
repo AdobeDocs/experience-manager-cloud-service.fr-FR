@@ -4,17 +4,17 @@ description: Grâce au pipeline front-end, les développeurs et développeuses f
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
 
 # Développer des sites avec le pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Grâce au pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour tirer pleinement parti de ce processus.
+[Grâce au pipeline front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 >[!TIP]
 >
@@ -22,22 +22,22 @@ ht-degree: 90%
 
 ## Contrat de création front-end {#front-end-build-contract}
 
-Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs disposent d’une certaine flexibilité à l’aide de ce pipeline tant que le contrat de version front-end suivant est respecté.
+Tout comme l’[environnement de création full-stack](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md), le pipeline front-end possède son propre environnement. Les développeurs et développeuses disposent d’une certaine flexibilité concernant l’utilisation de ce pipeline tant que le contrat de création front-end suivant est respecté.
 
-Le pipeline front-end nécessite que le projet front-end Node.js utilise la directive de script `build` pour générer la version qu’il déploie. Cela est dû au fait que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable pour la version front-end.
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la directive de script `build` afin de générer la version qu’il déploie. En effet, Cloud Manager utilise la `npm run build` de commande pour générer le projet déployable pour la version front-end.
 
-Le contenu obtenu du dossier `dist` est finalement déployé par Cloud Manager, sous la forme de fichiers statiques. Ces fichiers sont hébergés en externe sur AEM, mais sont disponibles via une URL `/content/...` sur l’environnement déployé.
+Le contenu obtenu du dossier `dist` est ce qui est finalement déployé par Cloud Manager, les utilisant comme fichiers statiques. Ces fichiers sont hébergés en externe sur AEM, mais sont disponibles via une URL `/content/...` sur l’environnement déployé.
 
 ## Versions de Node {#node-versions}
 
-L’environnement de génération front-end prend en charge les versions suivantes de Node.js.
+L’environnement de création front-end prend en charge les versions de Node.js suivantes.
 
 * 12
 * 14 (par défaut)
 * 16
 * 18
 
-Vous pouvez utiliser la `NODE_VERSION` [variable d&#39;environnement](/help/implementing/cloud-manager/environment-variables.md) pour définir la version souhaitée.
+Vous pouvez utiliser la `NODE_VERSION` [variable d’environnement](/help/implementing/cloud-manager/environment-variables.md) pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 

@@ -4,10 +4,10 @@ description: Une fois que vos ressources Cloud sont configurées, vous devez acc
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 >title="Attribuer les profils de produits AEM"
 >abstract="Vous ne disposez pas de l’autorisation requise pour utiliser Experience Manager Assets. Contactez l’administration."
 
-Dans cette partie du [parcours d’intégration,](overview.md) vous apprendrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
+Dans cette partie du [parcours d’intégration](overview.md), découvrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
 
 ## Objectif {#objective}
 
-Une fois que vous aurez lu le document précédent dans ce parcours d’intégration, [Créer des environnements,](create-environments.md) et que vos ressources Cloud seront configurées, vous devrez accorder à votre équipe l’accès à AEM lui-même à l’aide des profils de produit AEM. En tant qu’administrateur ou administratrice système, vous pouvez le faire en attribuant des profils de produit AEM.
+Après avoir lu le document précédent de ce parcours d’intégration, [Créer des environnements](create-environments.md) et avoir configuré vos ressources cloud, accordez à votre équipe l’accès à AEM lui-même à l’aide des profils de produit AEM. En tant qu’administrateur ou administratrice système, vous pouvez le faire en attribuant des profils de produit AEM.
 
 Après avoir lu ce document, vous comprendrez :
 
@@ -64,7 +64,7 @@ Avant de commencer à lire cette section, vous devez disposer des informations s
 
 Suivez ces étapes pour afficher les profils de produits AEM depuis Admin Console.
 
-1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Sur la page **Aperçu**, sélectionnez **Adobe Experience Manager as a Cloud Service** dans la vignette **Produits et services**.
 

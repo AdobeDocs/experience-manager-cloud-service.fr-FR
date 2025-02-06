@@ -4,10 +4,10 @@ description: Découvrez le fonctionnement de la création de contenu avec Edge 
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,11 @@ L’éditeur universel fournit une interface utilisateur graphique moderne et in
 
 ![Ajout et organisation de blocs dans l’éditeur universel](assets/blocks.png)
 
-Les détails des blocs peuvent ensuite être configurés dans le panneau Propriétés .
+Les détails des blocs peuvent ensuite être configurés dans le panneau Propriétés.
 
 ![Configuration des propriétés de bloc](assets/block-properties.png)
 
-Pour plus d’informations sur la création à l’aide de l’éditeur universel, consultez le document [Créer du contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md).
+Pour plus d’informations sur la création à l’aide de l’éditeur universel, consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Veuillez consulter le [Guide de prise en main du développement pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) afin de savoir comment commencer votre projet de création avec AEM et Edge Delivery Services.
 

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 94%
+source-wordcount: '1414'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Les avantages supplémentaires liés à l’utilisation d’une configuration de
 
 Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements peuvent uniquement être lancés à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
 
-Lors de la création d’un site avec une Live Copy, il est avantageux de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
+Lors de la création d’un site avec Live Copy, il est avantageux de créer des configurations de plan directeur pour garantir la disponibilité de l’ensemble complet des fonctionnalités MSM.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Les modifications apportées à la structure du contenu dans un plan directeur/u
 * Le **déplacement** de pages dans un plan directeur **n’entraîne pas** le déplacement des pages correspondantes dans des Live Copies après déploiement avec la configuration de déploiement standard :
    * La raison de ce comportement est que le déplacement d’une page comprend implicitement une suppression de page. Cela peut provoquer un comportement inattendu lors de la publication, la suppression des pages sur l’instance de création désactivant automatiquement le contenu correspondant sur l’instance de publication. Cela peut également avoir un effet de bord sur les éléments associés, comme les liens, les signets, etc.
       * L’héritage de contenu dans les pages de Live Copies respectives est mis à jour pour refléter le nouvel emplacement de leurs sources dans le plan directeur.
-      * Pour réaliser un déplacement de page d’un plan directeur vers des Live Copies, prenez en compte les [bonnes pratiques suivantes](#page-move).
+      * Pour réaliser un déplacement de page d’un plan directeur vers des Live Copies, prenez en compte les bonnes pratiques [déplacement de page].(#page-move)
 
 ### Bonnes pratiques de déplacement de page {#page-move}
 
@@ -116,7 +116,7 @@ Lorsque vous envisagez de déplacer des pages dans une Live Copy, tenez compte 
    * Pour déployer entièrement le déplacement de page tout en supprimant les pages respectives de leur ancien emplacement dans la Live Copy :
       * Placez la configuration créée avant la configuration de déploiement standard. La configuration de déploiement standard se charge de supprimer les pages de leurs anciens emplacements.
       * Pour déployer le déplacement de page tout en conservant les pages respectives à leurs anciens emplacements dans les Live Copies (ce qui revient essentiellement à dupliquer le contenu) :
-         * Positionnez la configuration créée après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
+         * Placez la configuration créée après la configuration de déploiement standard. Cela permet de s’assurer qu’aucun contenu n’est supprimé dans la Live Copy ni désactivé sur l’instance de publication.
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
@@ -141,13 +141,13 @@ Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `o
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM permet d’exclure les types de noeuds](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de la copie de la source vers la Live Copy.
+En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM vous permet d’exclure des types ](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) nœuds de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 
 Reportez-vous aux articles suivants pour plus d’informations sur MSM et la Live Copy.
 
-* [Création et synchronisation de Live Copies](creating-live-copies.md)
+* [Création et synchronisation de Live Copies](creating-live-copies.md)
 * [Console Aperçu de Live Copy](live-copy-overview.md)
 * [Configuration de la synchronisation des Live Copies](live-copy-sync-config.md)
 * [Conflits de déploiement de MSM](rollout-conflicts.md)

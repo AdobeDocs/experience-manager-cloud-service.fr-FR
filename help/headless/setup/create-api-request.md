@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’API GraphQL pour une diffusion déc
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du co
 
 ## En quoi consistent les API REST GraphQL et Assets ? {#what-are-the-apis}
 
-[Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
+[Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md) vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
 * [L’API GraphQL](/help/headless/graphql-api/content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu. Cette API offre l’ensemble de fonctionnalités le plus robuste pour interroger et utiliser du contenu de fragment de contenu.
    * Pour utiliser l’API, [définissez et activez des points d’entrée dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, l’[interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
@@ -45,7 +45,7 @@ Avant de pouvoir utiliser les API GraphQL, un point d’entrée GraphQL doit êt
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Pour plus d’informations sur l’activation des points de fin GraphQL, voir [Gestion des points de fin GraphQL dans AEM](/help/headless/graphql-api/graphql-endpoint.md).
+Pour plus d’informations sur l’activation des points d’entrée GraphQL, voir [Gestion des points d’entrée GraphQL dans AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Requête de contenu à l’aide de GraphQL avec GraphiQL
 
@@ -61,7 +61,7 @@ GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/vis
    * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
-   * La liste déroulante en haut à droite vous permet de sélectionner le point de terminaison.
+   * La liste déroulante en haut à droite permet de sélectionner le point d’entrée.
    * Un panneau de gauche répertorie les requêtes persistantes (le cas échéant).
    * Le panneau du milieu à gauche vous permet de créer votre requête.
    * Le volet au milieu à droite affiche les résultats.

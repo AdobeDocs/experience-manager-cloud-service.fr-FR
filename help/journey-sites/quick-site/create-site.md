@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Présentation de Cloud Manager et du workflow de création rapide de site,](cloud-manager.md) vous avez découvert Cloud Manager et la façon dont il relie le nouveau processus de création rapide de site, vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Présentation de Cloud Manager et du workflow de création rapide de site](cloud-manager.md), vous en avez appris plus sur Cloud Manager et sur la manière dont il relie le nouveau processus de création rapide de site. Vous devriez maintenant :
 
 * Découvrez comment AEM Sites et le Cloud Manager travaillent ensemble pour faciliter le développement front-end.
 * Découvrez comment l’étape de personnalisation front-end est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
@@ -54,7 +54,7 @@ Les modèles sont efficaces car ils sont réutilisables afin que vos auteurs de 
 
 ## Obtention d’un modèle de site {#obtaining-template}
 
-La manière la plus simple de commencer est de [télécharger la dernière version du modèle de site standard d’AEM à partir de son référentiel GitHub.](https://github.com/adobe/aem-site-template-standard/releases)
+Pour commencer, la méthode la plus simple consiste à [télécharger la dernière version du modèle de site standard d’AEM depuis son référentiel GitHub](https://github.com/adobe/aem-site-template-standard/releases).
 
 Une fois le téléchargement effectué, vous pouvez le charger dans votre environnement AEM comme vous le feriez pour tout autre package. Pour plus d’informations, consultez la [section Ressources supplémentaires](#additional-resources) pour savoir comment utiliser les packages.
 
@@ -177,11 +177,11 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Apprendre à créer un nouveau site à l’aide d’un modèle.
 * Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) où vous allez créer un pipeline front-end pour gérer la personnalisation du thème de votre site.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Configuration de votre pipeline](pipeline-setup.md), dans lequel vous allez créer un pipeline front-end pour gérer la personnalisation du thème de votre site.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Configuration de votre pipeline,](pipeline-setup.md) vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Configuration de votre pipeline](pipeline-setup.md), vous trouverez ci-après quelques informations facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
 
 * [Modèle de site standard AEM](https://github.com/adobe/aem-site-template-standard) - Il s’agit du référentiel GitHub du modèle de site standard d’AEM.
 * [Organisation des pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Ce guide explique comment organiser les pages de votre site AEM.

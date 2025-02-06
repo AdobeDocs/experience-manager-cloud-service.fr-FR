@@ -4,7 +4,7 @@ description: Interdire la sérialisation des ResourceResolvers via l’exporteur
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a64c17943332782814bdacd7484e056cd445d3a9
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 6%
@@ -49,6 +49,6 @@ Ce message du journal signifie que pendant le processus de sérialisation du `/c
 
 Adobe demande à tous les clients de vérifier leurs journaux d’application et leurs bases de code pour voir s’ils sont affectés par ce problème, et de modifier l’application personnalisée si nécessaire, de sorte que ce message d’avertissement n’apparaisse plus dans les journaux.
 
-On suppose que, dans la plupart des cas, ces changements nécessaires sont simples. Les objets `ResourceResolver` ne sont pas du tout requis dans la sortie JSON, puisque les informations qu’ils contiennent ne sont normalement pas requises par les applications frontales, ce qui signifie que dans la plupart des cas, il devrait suffire d’exclure l’objet `ResourceResolver` de sa prise en compte par Jackson (voir les [règles.](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not))
+On suppose que, dans la plupart des cas, ces changements nécessaires sont simples. Les objets `ResourceResolver` ne sont pas du tout requis dans la sortie JSON, puisque les informations qu’ils contiennent ne sont normalement pas requises par les applications frontales, ce qui signifie que dans la plupart des cas, il devrait suffire d’exclure l’objet `ResourceResolver` de sa prise en compte par Jackson (consultez les [règles](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 Si un modèle Sling est affecté par ce problème, mais n’est pas modifié, la désactivation explicite de la sérialisation de l’objet `ResourceResolver` (tel qu’exécuté par Adobe comme deuxième étape) impose une modification de la sortie JSON.

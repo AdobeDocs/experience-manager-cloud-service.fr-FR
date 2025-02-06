@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -111,7 +111,7 @@ Pour créer une Live Copy :
 
    ![Créer une Live Copy](../assets/create-live-copy.png)
 
-1. Sélectionnez la page source, puis **Suivant**. Par exemple :
+1. Sélectionnez la page source, puis sélectionnez **Suivant**. Par exemple :
 
    ![sélectionnez la source de la Live Copy](../assets/live-copy-from.png) ;
 
@@ -161,7 +161,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 * **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy (la valeur par défaut est basée sur le titre)
 * **Propriétaire du site** : (facultatif) informations sur le responsable de la Live Copy
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas synchronisée ultérieurement avec la source.
-* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations, voir [Spécification des configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) .
+* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) voir [ Spécification des configurations de déploiement à utiliser .
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
@@ -172,7 +172,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan d
 
 1. Utilisez le sélecteur **Langues initiales** pour spécifier les langues du site de plan directeur à utiliser pour la Live Copy.
 
-   Toutes les langues disponibles sont sélectionnées par défaut. Pour supprimer une langue, sélectionnez le **X** qui apparaît en regard de la langue.
+   Toutes les langues disponibles sont sélectionnées par défaut. Pour supprimer une langue, sélectionnez la **X** qui s’affiche en regard de la langue.
 
    Par exemple :
 
@@ -334,7 +334,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 
 >[!TIP]
 >
->Si vous créez manuellement une page dans la Live Copy, la nouvelle page est locale à la Live Copy, ce qui signifie qu’elle ne comporte pas de page source correspondante à laquelle elle est jointe.
+>Si vous créez manuellement une page dans la Live Copy, la nouvelle page est locale à la Live Copy, ce qui signifie qu’elle n’a pas de page source correspondante à laquelle être rattachée.
 >
 >Une bonne pratique vous permettant de créer une page locale qui fait partie de la relation, consiste à créer la page locale dans la source et d’effectuer un déploiement en profondeur. Ceci a pour effet de créer la page localement en tant que Live Copies.
 
@@ -348,7 +348,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 
 Vous pouvez ajouter des composants à une page Live Copy à tout moment. Le statut d’héritage de la Live Copy et de son système de paragraphes ne conditionne pas votre capacité à ajouter des composants.
 
-Lorsque la page Live Copy est synchronisée avec la page source, les composants ajoutés demeurent inchangés. Voir également [Modification de l’ordre des composants sur une page Live Copy.](#changing-the-order-of-components-on-a-live-copy-page)
+Lorsque la page Live Copy est synchronisée avec la page source, les composants ajoutés demeurent inchangés. Consultez également la section [Modification de l’ordre des composants sur une page Live Copy](#changing-the-order-of-components-on-a-live-copy-page).
 
 >[!TIP]
 >
@@ -480,7 +480,7 @@ Annulez l’héritage pour modifier le contenu du composant ou supprimer le comp
 
    ![Héritage dans la barre d’outils des composants](../assets/inheritance-toolbar.png)
 
-1. Dans la barre d’outils du composant, sélectionnez l’icône **Annuler l’héritage** .
+1. Dans la barre d’outils du composant, sélectionnez l’icône **Annuler l’héritage**.
 
    ![Icône d’annulation de l’héritage](../assets/cancel-inheritance-icon.png)
 
@@ -539,7 +539,7 @@ Vous pourrez par la suite réactiver l’héritage pour une propriété, si néc
 
 ### Rétablissement des propriétés d’une page Live Copy {#revert-properties-of-a-live-copy-page}
 
-Pour activer l’héritage pour une propriété, sélectionnez l’icône **Rétablir l’héritage** qui s’affiche en regard de la propriété.
+Pour activer l’héritage d’une propriété, sélectionnez l’icône **Inverser l’héritage** qui s’affiche en regard de la propriété.
 
 ![Bouton Restaurer l’héritage](../assets/revert-inheritance-button.png)
 

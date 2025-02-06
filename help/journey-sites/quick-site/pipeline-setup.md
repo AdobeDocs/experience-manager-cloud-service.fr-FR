@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Créez un pipeline front-end pour gérer la personnalisation du thème de votre 
 
 ## Un peu d’histoire…  {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils front-end. Vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils frontaux. Vous devriez maintenant :
 
 * Découvrir comment obtenir des modèles de site AEM.
 * Apprendre à créer un nouveau site à l’aide d’un modèle.
@@ -114,12 +114,12 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Comprendre ce qu’est un pipeline front-end.
 * Savoir comment configurer un pipeline front-end dans Cloud Manager.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Accorder l’accès au développeur front-end](grant-access.md) pour intégrer les développeurs front-end dans Cloud Manager afin qu’ils aient accès à votre référentiel Git et à votre pipeline de sites AEM.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Accorder l’accès au développeur front-end](grant-access.md), dans lequel vous intégrerez les développeurs front-end dans Cloud Manager afin qu’ils aient accès à votre référentiel Git et à votre pipeline de sites AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en examinant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
 
-* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) : si vous souhaitez obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
+* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md) : si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, reportez-vous à ce document.
 * [Configurer le pipeline CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) : pour plus d’informations sur la configuration des pipelines full stack et front-end, consultez ce document.

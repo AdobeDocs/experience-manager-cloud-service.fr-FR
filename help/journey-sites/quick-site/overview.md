@@ -5,10 +5,10 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Vous êtes maintenant prêt à commencer votre parcours de création rapide de s
 
 * Si vous faites partie de l’administration d’AEM ou de Cloud Manager, ou si vous jouez à la fois les rôles de développement front-end et d’administration, ou encore si vous souhaitez simplement comprendre le processus de bout en bout dans AEM, commencez au début du parcours par [Comprendre Cloud Manager](cloud-manager.md) comme indiqué ci-dessous.
 * Si vous n’êtes responsable que du développement front-end et que vous interagissez avec les administrateurs et les administratrices d’AEM et de Cloud Manager, vous pouvez passer directement à [Récupération des informations d’accès au référentiel Git](retrieve-access.md) pour accéder au référentiel Git d’AEM et commencer la personnalisation.
-* Si vous comprenez déjà qu’AEM Sites et Cloud Manager fonctionnent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passer directement à la création d’un site à partir d’un modèle.](create-site.md)
+* Si vous comprenez déjà qu’AEM Sites et Cloud Manager fonctionnent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passer directement à la création d’un site à partir d’un modèle](create-site.md).
 
 ## Ressources supplémentaires {#additional-resources}
 

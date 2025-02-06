@@ -5,10 +5,10 @@ exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -78,8 +78,8 @@ Appuyez-vous sur ces connaissances et poursuivez votre parcours de traduction d�
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Prise en main de la traduction découplée AEM](getting-started.md), vous trouverez ci-dessous quelques ressources supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, sans être obligatoires pour poursuivre ce parcours découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Prise en main de la traduction découplée AEM](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours découplé.
 
-* [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Informations sur AEM Multi-Site Manager et sur le fonctionnement de ses outils de traduction
+* [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Informations sur AEM Multi Site Manager et sur le fonctionnement de ses outils de traduction
 * [Présentation d’AEM en tant que CMS découplé](/help/headless/introduction.md)
 * [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

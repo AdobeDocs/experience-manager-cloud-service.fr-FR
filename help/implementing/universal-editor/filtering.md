@@ -3,13 +3,13 @@ title: Filtrage des composants
 description: Découvrez comment restreindre les composants autorisés par conteneur dans l’éditeur universel à l’aide de filtres de composant.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # Filtrage des composants {#filtering-components}
 
@@ -53,4 +53,4 @@ La définition de l’attribut `components` dans une définition de filtre sur `
 
 >[!TIP]
 >
->Découvrez les autres options de personnalisation et d’extension disponibles pour l’éditeur universel dans le document [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
+>Découvrez d’autres options de personnalisation et d’extension disponibles pour l’éditeur universel dans le document [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).

@@ -1,14 +1,14 @@
 ---
 title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres
-keywords: comment sélectionner une action d’envoi pour un formulaire adaptatif, connecter un formulaire adaptatif à la liste sharepoint, connecter un formulaire adaptatif à la bibliothèque de documents sharepoint, connecter un formulaire adaptatif au modèle de données de formulaire (FDM)
+keywords: comment sélectionner une action envoyer pour un formulaire adaptatif, connecter un formulaire adaptatif à une liste sharepoint, connecter un formulaire adaptatif à une bibliothèque de documents sharepoint, connecter un formulaire adaptatif à un modèle de données de formulaire (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 36%
+source-wordcount: '699'
+ht-degree: 37%
 
 ---
 
@@ -24,24 +24,25 @@ ht-degree: 36%
 | AEM as a Cloud Service (composants de base) | [Cliquez ici](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (composants principaux) | Cet article |
 
-Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Submit]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Il est déclenché lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Forms as a Cloud Service, pour le Forms adaptatif basé sur les composants principaux, propose un tableau d’actions Envoyer préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
 
-* Envoyez facilement des données de formulaire par courrier électronique.
-* Lancez Microsoft® Power Automate les flux ou les flux AEM lors de la transmission des données.
+* Envoyez facilement des données de formulaire par e-mail.
+* Lancez les flux Microsoft® Power Automate ou les workflows AEM lors de la transmission des données.
 * Transmettez directement les données de formulaire à Microsoft® SharePoint Server, Microsoft® Azure Blob Storage ou Microsoft® OneDrive.
 * Envoyez facilement les données à une source de données configurée à l’aide du modèle de données de formulaire (FDM).
-* Envoyez facilement les données à un point de terminaison REST.
+* Envoyez facilement les données à un point d’entrée REST.
 
-Vous pouvez [étendre les actions d’envoi par défaut](custom-submit-action-form.md). Vous pouvez également personnaliser les actions d’envoi en fonction des exigences de l’organisation.
+Vous pouvez [étendre les actions Envoyer par défaut](custom-submit-action-form.md). Vous pouvez également personnaliser les actions Envoyer pour les besoins spécifiques à l’entreprise.
 
-Pour définir une action Envoyer pour un formulaire adaptatif, utilisez la boîte de dialogue Configurer d’un composant **Conteneur de formulaire adaptatif** . La boîte de dialogue de configuration d’un composant **Adaptive Form Container** comprend :
+Pour définir une action Envoyer pour un formulaire adaptatif, utilisez la boîte de dialogue Configurer d’un composant **Conteneur de formulaires adaptatifs**. La boîte de dialogue de configuration d’un composant **Conteneur de formulaires adaptatifs** comprend les éléments suivants :
+
 * Onglet De base
 * Onglet Modèle de données de formulaire
 * Onglet Envoi
 
-Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de la boîte de dialogue Configurer . Pour en savoir plus sur la boîte de dialogue Configurer d’un composant de conteneur de formulaires, [cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de la boîte de dialogue de configuration. Pour en savoir plus sur la boîte de dialogue de configuration d’un composant Conteneur de formulaires, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
 
-## Sélectionner et configurer une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
+## Sélection et configuration d’une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
 
 Pour sélectionner et configurer une action Envoyer pour votre formulaire :
 
@@ -54,30 +55,30 @@ Pour sélectionner et configurer une action Envoyer pour votre formulaire :
 
 1. Sélectionnez et configurez une **[!UICONTROL action Envoyer]** en fonction de vos besoins.
 
-Vous pouvez également configurer différentes actions pour les envois de formulaire adaptatif.
-* **URL de redirection/chemin** : cette option permet à l’utilisateur de configurer une page pour chaque formulaire, vers laquelle les utilisateurs du formulaire sont redirigés après l’envoi d’un formulaire adaptatif.
-* **Afficher le message** - Cette option permet aux utilisateurs et utilisatrices d’ajouter un message qui s’affiche lorsque le formulaire adaptatif est envoyé avec succès. Le texte prédéfini est inclus dans la boîte de dialogue et peut être modifié par l’utilisateur.
+Vous pouvez également configurer différentes actions pour les envois de formulaires adaptatifs.
+* **URL/chemin de redirection** - Cette option permet à l’utilisateur ou à l’utilisatrice de configurer une page pour chaque formulaire, vers laquelle les utilisateurs et utilisatrices du formulaire sont redirigés après l’envoi d’un formulaire adaptatif.
+* **Afficher le message** - Cette option permet aux utilisateurs et utilisatrices d’ajouter un message qui s’affiche lorsque le formulaire adaptatif est envoyé avec succès. Le texte prédéfini est inclus dans la boîte de dialogue et peut être modifié par l’utilisateur ou l’utilisatrice.
 
-Pour plus d’informations sur les actions d’envoi suivantes, voir :
+Pour plus d’informations sur les actions Envoyer suivantes, voir :
 
 * [Envoyer un e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Appeler un flux Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer à SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Appeler une fusion Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Appeler une Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Envoyer à l’aide du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)
 * [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Appeler un workflow AEM](/help/forms/configure-submit-action-workflow.md)
-* [Envoyer à l’intégration Marketo](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Envoyer à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 Vous pouvez également envoyer un formulaire adaptatif à d’autres configurations de stockage :
 
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connecter un formulaire adaptatif à Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
-* [Connexion d’un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
-Vous pouvez [personnaliser les actions d’envoi par défaut](custom-submit-action-form.md). De plus, vous pouvez personnaliser les actions d’envoi afin de vous conformer à des exigences organisationnelles spécifiques.
+Vous pouvez [personnaliser les actions Envoyer par défaut](custom-submit-action-form.md). De plus, vous pouvez personnaliser les actions Envoyer pour vous aligner sur les exigences spécifiques de l’entreprise.
 
 
 <!--
@@ -104,23 +105,23 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
+## Submit to Microsoft&reg; SharePoint {#submit-to-sharedrive}
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data files, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
+Integration of AEM Adaptive Form with Microsoft&reg; SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here](/help/forms/configure-submit-action-sharepoint.md). 
 
 ## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
 The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af).
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
 The **[!UICONTROL Submit to REST Endpoint]** submit action sends the submitted data to a REST URL. This URL can be either an internal server (the server where the form is displayed) or an external server. The data of an Adaptive Form is submitted to a REST URL using the **[!UICONTROL Submit to REST endpoint]** Submit Action.
 
-For a comprehensive guide on the detailed steps to post or submit data to a REST URL, refer to [configure submit to REST Endpoint submit action for Adaptive Forms.](/help/forms/configure-submit-action-restpoint.md)
+For a comprehensive guide on the detailed steps to post or submit data to a REST URL, refer to [configure submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md).
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
@@ -132,11 +133,11 @@ The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive
 
 The **[!UICONTROL Submit to OneDrive]** Submit Action connects an Adaptive Form with a Microsoft&reg; OneDrive. You can submit the form data, files, attachments, or Document of Record to the connected Microsoft&reg; OneDrive Storage. 
 
-AEM Forms Cloud Service with Microsoft® OneDrive helps in optimize data submission. Explore the steps of [integrating OneDrive with AEM Forms](/help/forms/configure-submit-action-onedrive.md) for streamlined and secure storage.
+AEM Forms Cloud Service with Microsoft&reg; OneDrive helps in optimize data submission. Explore the steps of [integrating OneDrive with AEM Forms](/help/forms/configure-submit-action-onedrive.md) for streamlined and secure storage.
 
 ## Submit to Azure Blob Storage {#submit-to-azure-blob-storage}
 
-The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adaptive Form with a Microsoft® Azure portal and allows you to submit various elements such as form data, files, attachments, or Document of Record to the associated Azure Storage containers.
+The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal and allows you to submit various elements such as form data, files, attachments, or Document of Record to the associated Azure Storage containers.
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
@@ -216,7 +217,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
 
-Lorsque vous préremplissez un modèle de données de formulaire (FDM) ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma qui est que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
+Lorsque vous préremplissez un modèle de données de formulaire (FDM) ou un formulaire adaptatif basé sur un schéma avec des données XML ou JSON conformes à un schéma, ce qui signifie que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

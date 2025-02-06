@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 74%
@@ -16,23 +16,23 @@ ht-degree: 74%
 
 La structure d’intégration de traduction s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
 
-1. [Connectez-vous à un fournisseur de services de traduction.](#connecting-to-a-translation-service-provider)
-1. [Créez une configuration de structure d’intégration de traduction.](#creating-a-translation-integration-configuration)
-1. [Associez les configurations de cloud à vos pages.](#configuring-pages-for-translation)
+1. [Connectez-vous à un fournisseur de services de traduction](#connecting-to-a-translation-service-provider).
+1. [Créez une configuration de structure d’intégration de traduction](#creating-a-translation-integration-configuration).
+1. [Associez les configurations cloud à vos pages](#configuring-pages-for-translation).
 
 Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](overview.md).
 
 >[!TIP]
 >
->Si vous débutez dans la traduction de contenu, référez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour celles et ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, reportez-vous à la section [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide d’AEM de puissants outils de traduction, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
 Créez une configuration cloud qui connecte AEM à votre fournisseur de services de traduction.
 
-AEM inclut la possibilité de [se connecter à Microsoft® Translator](connect-ms-translator.md) par défaut. D&#39;autres fournisseurs de technologies de traduction avec des connecteurs AEM qui sont membres du programme des partenaires d&#39;Adobe Exchange se trouvent [ici](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM permet d’établir par défaut une [connexion à Microsoft® Translator](connect-ms-translator.md). D’autres fournisseurs de technologies de traduction disposant de connecteurs AEM et membres du programme de partenariat d’Adobe Exchange sont disponibles [ici](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
 
-Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration de cloud pour le connecteur du traducteur Microsoft®, voir [Intégration à Microsoft® Translator](connect-ms-translator.md).
+Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En règle générale, vous devez fournir vos informations d’identification pour l’authentification auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft® Translator, voir [Intégration à Microsoft® Translator](connect-ms-translator.md).
 
 Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, si nécessaire. Par exemple, créez une configuration pour chacun des comptes ou projets que vous avez avec le même fournisseur.
 
@@ -40,7 +40,7 @@ Après avoir configuré une connexion, vous pouvez créer la configuration du fr
 
 ## Création d’une configuration de l’intégration de traduction {#creating-a-translation-integration-configuration}
 
-Créez une configuration de structure d’intégration de traduction afin de pouvoir spécifier comment traduire votre contenu. La configuration contient les informations suivantes :
+Créez une configuration de structure d’intégration de traduction afin de spécifier comment traduire votre contenu. La configuration contient les informations suivantes :
 
 * Le fournisseur de service de traduction à utiliser
 * Si une traduction humaine ou automatique doit être réalisée
@@ -58,9 +58,9 @@ Une fois que vous avez configuré une structure d’intégration de traduction, 
 
 Une configuration unique de la structure contrôle la manière dont le contenu de page et les ressources sont traduits. Pour créer une configuration de traduction :
 
-1. Dans le [ menu de navigation globale,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) sélectionnez **Outils > Cloud Service et Cloud Service de traduction**.
+1. Dans le [menu de navigation global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), sélectionnez **Outils > Cloud Service et Cloud Service de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
-1. Indiquez les informations suivantes dans les champs, puis sélectionnez **Créer** :
+1. Fournissez les informations suivantes dans les champs requis, puis sélectionnez **Créer**. :
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
    1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud**, ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
@@ -80,7 +80,7 @@ L’onglet **Sites** contrôle la façon dont le contenu des pages est traduit.
 | Traduire les balises | Cette option permet de traduire les balises associées à la page. |
 | Traduire les ressources de page | Cette propriété définit comment traduire les ressources qui sont ajoutées aux composants à partir du système de fichiers ou référencés à partir des ressources :<br>- Ne pas traduire : les ressources de la page ne sont pas traduites.<br>- Utilisation du processus de traduction de sites : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet **Sites**.<br>- Utilisation du processus de traduction des ressources : les ressources sont gérées en fonction des propriétés configurées sur l’onglet **Ressources**. |
 | Exécuter automatiquement la traduction | Activez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier et de définir la portée de la tâche de traduction. |
-| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles à des fins de traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
+| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -94,11 +94,11 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 | Fournisseur de traduction | Cette propriété définit le fournisseur de traduction qui doit effectuer la traduction. Un fournisseur est répertorié dans la liste lorsque le connecteur correspondant est installé. |
 | Catégorie de contenu | (Traduction automatique uniquement) Cette propriété décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
 | Traduire les ressources | Activez cette propriété pour inclure des ressources dans le projet de traduction. |
-| Traduire les métadonnées | Activez cette propriété afin de pouvoir traduire les métadonnées des ressources. |
-| Traduire les balises | Activez cette propriété afin de pouvoir traduire les balises associées à la ressource. |
-| Exécution automatique de la traduction | Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
-| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles à des fins de traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
-| Activer les champs de modèle de contenu pour la traduction | L’activation de cette option utilise le champ **Translatable** sur [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ est traduit et crée automatiquement les [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
+| Traduire les métadonnées | Activez cette propriété pour pouvoir traduire les métadonnées des ressources. |
+| Traduire les balises | Activez cette propriété pour pouvoir traduire les balises associées à la ressource. |
+| Exécution automatique de la traduction | Sélectionnez cette propriété pour pouvoir exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
+| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
+| Activer les champs de modèle de contenu pour la traduction | L’activation de cette option utilise le champ **Traduisible** dans [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) pour déterminer si le champ est traduit et crée automatiquement des [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 
@@ -109,9 +109,9 @@ Pour configurer la traduction de vos pages source dans d’autres langues, assoc
 
 Notez que la configuration de cloud du framework d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration cloud de framework, la page doit être associée à la configuration cloud du fournisseur utilisée par la configuration cloud de framework.
 
-Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous avez associé la page `/content/wknd/language-masters/en/magazine` à une structure d’intégration de traduction, la page `magazine` et les pages enfants situées en dessous sont traduites en fonction de la structure.
+Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous avez associé la page `/content/wknd/language-masters/en/magazine` à une structure d’intégration de traduction, la page `magazine` et les pages enfants en dessous sont traduites en fonction de la structure.
 
-Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web traite principalement des voyages et de l’art de vivre. Cependant, une branche des pages décrit l’entreprise. Dans ce cas, la page racine du site peut être associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Style de vie. La branche qui décrit l’entreprise utilise une structure qui effectue la traduction automatique à l’aide de la catégorie Général .
+Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web traite principalement des voyages et de l’art de vivre. Cependant, une branche des pages décrit l’entreprise. Dans ce cas, la page racine du site peut être associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Art de vivre . La branche qui décrit l’entreprise utilise une structure qui effectue la traduction automatique à l’aide de la catégorie Générale.
 
 ### Association d’une page à un fournisseur de traduction {#associating-a-page-with-a-translation-provider}
 
@@ -119,7 +119,7 @@ Associez une page au fournisseur de traduction que vous utilisez pour traduire l
 
 1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
 1. Sélectionnez l’onglet **Services cloud**.
-1. Dans la liste déroulante **Ajouter une configuration** , sélectionnez la configuration.
+1. Dans la liste déroulante **Ajouter la configuration**, sélectionnez la configuration.
 1. Sélectionnez **Enregistrer et fermer**.
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
@@ -128,5 +128,5 @@ Associez une page au framework d’intégration de traduction qui définit la fa
 
 1. Dans la console Sites, sélectionnez la page à configurer et sélectionnez **Afficher les propriétés**.
 1. Sélectionnez l’onglet **Services cloud**.
-1. Dans la liste déroulante **Ajouter une configuration** , sélectionnez la configuration.
+1. Dans la liste déroulante **Ajouter la configuration**, sélectionnez la configuration.
 1. Sélectionnez **Enregistrer et fermer**.

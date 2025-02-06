@@ -4,10 +4,10 @@ description: Pour le Forms adaptatif, vous pouvez ajouter des paramètres régio
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -56,7 +56,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’
 #### 1. Cloner le référentiel {#clone-the-repository}
 
 1. Sur la ligne de commande, accédez à l’emplacement où vous souhaitez cloner le référentiel Forms Cloud Service.
-1. Exécutez la commande [récupérée à partir de Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Exécutez la commande [récupérée à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilisez le nom d’utilisateur et le mot de passe Git pour cloner le référentiel.
 1. Ouvrez le dossier de référentiel de Forms Cloud Service cloné dans l’éditeur de votre choix.
 

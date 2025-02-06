@@ -1,19 +1,19 @@
 ---
-title: Découvrez comment rechercher et découvrir des ressources dans [!DNL Assets view] ?
-description: Découvrez comment rechercher et découvrir des ressources dans la vue AEM Assets. La puissante fonctionnalité de recherche vous permet de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
+title: Découvrez comment rechercher et trouver des ressources dans  [!DNL Assets view] ?
+description: Découvrez comment rechercher et trouver des ressources dans la vue AEM Assets. Les puissantes fonctionnalités de recherche de vous permettent de découvrir rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
 # Recherche de ressources dans [!DNL Assets view] {#search-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -52,7 +52,7 @@ Vous pouvez filtrer les résultats de la recherche en fonction des paramètres s
 
 * Date d’expiration : filtrez les résultats de la recherche en fonction du statut d’une ressource `Expired`. En outre, vous pouvez spécifier une période d’expiration pour les ressources afin de filtrer davantage les résultats de votre recherche.
 
-* Filtres personnalisés : [Ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur de la vue Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
+* Filtres personnalisés : [ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur d’affichage d’Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
 
 Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevance`, `Size`, `Modified` et `Created`. Les ressources recherchées sont triées en fonction de la `Relevance`, par défaut.
 
@@ -60,7 +60,7 @@ Vous pouvez trier les ressources recherchées par ordre croissant ou décroissan
 
 **Autorisations requises :**  `Can Edit`, `Owner` ou administrateur.
 
-La vue Assets vous permet également d’ajouter des filtres personnalisés à l’interface utilisateur. Vous pouvez ensuite appliquer ces filtres personnalisés en plus des [filtres standard](#refine-search-results) pour affiner vos résultats de recherche.
+La vue Assets permet également d’ajouter des filtres personnalisés à l’interface utilisateur. Vous pouvez ensuite appliquer ces filtres personnalisés en plus des [filtres standard](#refine-search-results) pour affiner vos résultats de recherche.
 
 La vue Assets fournit les filtres personnalisés suivants :
 
@@ -142,7 +142,7 @@ Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
    ![Intégration de Firefly](assets/firefly-integration.png)
 
-   Les nouvelles ressources sont générées. Vous pouvez également modifier la description de l’image en saisissant la nouvelle invite de texte dans la zone de description. [Découvrez comment écrire une bonne invite d’IA pour générer du contenu extraordinaire et pertinent.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html) Vous pouvez également [modifier une image avec d’autres fonctionnalités telles que le changement de style, les dimensions d’image, etc.](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   Les nouvelles ressources sont générées. Vous pouvez également modifier la description de l’image en saisissant la nouvelle invite de texte dans la zone de description. [Découvrez comment écrire une bonne invite d’IA pour générer du contenu extraordinaire et pertinent](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Vous pouvez également [modifier l’image avec d’autres fonctionnalités telles que la modification du style, des dimensions de l’image, etc](https://helpx.adobe.com/in/firefly/using/text-to-image.html).
 
    ![Intégration de Firefly](assets/bugatti-type-57.png)
 
@@ -223,7 +223,7 @@ Vous pouvez sélectionner les ressources qui s’affichent dans les résultats d
 
 ## Configurer la page d’accueil axée sur la recherche {#configuring-search-first-homepage}
 
-La vue Assets vous permet de sélectionner la page d’entrée par défaut de votre entreprise. Lorsque vous utilisez l’approche axée sur la recherche pour votre page d’accueil, vous disposez également d’options pour personnaliser l’image de marque de la page en configurant les images d’arrière-plan et du logo en fonction de votre marque.
+La vue Assets vous permet de sélectionner la page de destination par défaut de votre organisation. Lorsque vous utilisez l’approche axée sur la recherche pour votre page d’accueil, vous disposez également d’options pour personnaliser l’image de marque de la page en configurant les images d’arrière-plan et du logo en fonction de votre marque.
 
 Pour configurer la page d’accueil axée sur la recherche, exécutez les étapes ci-dessous :
 

@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels), nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles full-stack traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
-Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications monopages avec AEM](create-spa.md).
+Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours [Comment créer des applications sur une seule page (SPA) avec AEM](create-spa.md).
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment déployer le thème du site à l’aide du pipeline.
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Personnalisation du thème du site,](customize-theme.md) vous avez appris comment le thème est créé, comment le personnaliser et comment le tester à l’aide du contenu d’AEM en direct, vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Personnaliser le thème du site](customize-theme.md), vous avez appris comment le thème est créé, comment le personnaliser et comment le tester à l’aide de contenu AEM en direct, vous devriez maintenant :
 
 * Comprendre la structure de base du thème du site et comment le modifier.
 * Voir comment tester vos personnalisations de thème à l’aide de contenu d’AEM réel via un proxy local.
@@ -78,7 +78,7 @@ Vous pouvez vérifier le statut du pipeline pour afficher le détail de sa progr
 Une fois le pipeline terminé, vous pouvez informer l’administrateur de valider les modifications. L’administrateur devra alors :
 
 1. Ouvrir l’environnement de création AEM.
-1. Accédez au [site précédemment créé par l’administrateur.](create-site.md)
+1. Accédez au [site précédemment créé par l’administrateur](create-site.md).
 1. Modifiez l’une des pages de contenu.
 1. Voir les modifications appliquées.
 

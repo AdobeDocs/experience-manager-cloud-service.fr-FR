@@ -4,7 +4,7 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 91%
@@ -55,7 +55,7 @@ Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez le
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les modèles XFA (fichiers XDP) disponibles sur votre ordinateur s’affichent. Sélectionnez le fichier approprié. Assurez-vous également que le même schéma (schéma de données) est utilisé pour le formulaire adaptatif et le modèle XFA sélectionné (fichier XDP).
-1. Cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Terminé]**
 
 Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XDP comme modèle de document d’enregistrement. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
 
@@ -68,7 +68,7 @@ Chargez votre PDF Adobe Acrobat (Acroform) sur votre instance AEM Forms. Suivez 
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Associer le modèle de formulaire en tant que modèle de document d’enregistrement**. Lorsque vous sélectionnez cette option, tous les fichiers Acrobat PDF (Acroform) disponibles sur votre ordinateur s’affichent. Sélectionnez le fichier approprié.
-1. Cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Terminé]**
 
 Votre formulaire adaptatif est maintenant configuré pour utiliser un Acroform comme modèle de document d’enregistrement. L’étape suivante consiste à [lier les composants de formulaire adaptatif aux champs de modèle correspondants](#bind-adaptive-form-components-with-template-fields).
 
@@ -89,7 +89,7 @@ Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de gé
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez **Générer un document d’enregistrement**.
-1. Cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Terminé]**
 
 ## Liaison des composants de formulaire adaptatif aux champs de modèle {#bind-adaptive-form-components-with-template-fields}
 

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Après la publication d’une ressource, Dynamic Media active une chaîne d’URL qui référence la ressource. Vous pouvez coller ces URL dans un navigateur Web à des fins de test.
 
-Vous ne pouvez lier ces URL que si vous *n’utilisez pas* Adobe Experience Manager pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre pop-up ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous ne pouvez lier ces URL que si vous *n’utilisez pas* Adobe Experience Manager pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre pop-up ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
 Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depuis Dynamic Media.
 

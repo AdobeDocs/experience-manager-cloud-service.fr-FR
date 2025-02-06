@@ -4,10 +4,10 @@ description: Découvrez les différents points d’extension et d’autres fonct
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -45,9 +45,9 @@ Vous pouvez restreindre les composants autorisés par conteneur dans l’éditeu
 
 ### Affichage et masquage conditionnel des composants dans le panneau Propriétés {#conditionally-hide}
 
-Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut y avoir certaines situations où ils ne sont pas pertinents. Dans ce cas, vous pouvez masquer des composants dans le panneau des propriétés en ajoutant un attribut `condition` aux [champs du modèle de composant.](/help/implementing/universal-editor/field-types.md#fields)
+Bien qu’un ou plusieurs composants puissent généralement être disponibles pour les auteurs, il peut y avoir certaines situations où ils ne sont pas pertinents. Dans ce cas, vous pouvez masquer des composants dans le panneau des propriétés en ajoutant un attribut `condition` aux [champs du modèle de composant](/help/implementing/universal-editor/field-types.md#fields).
 
-Les conditions peuvent être définies à l’aide du schéma [JsonLogic.](https://jsonlogic.com/) Si la condition est vraie, alors le champ s&#39;affiche. Si la condition est false, le champ est masqué.
+Les conditions peuvent être définies à l’aide du schéma [JsonLogic](https://jsonlogic.com/). Si la condition est vraie, alors le champ s&#39;affiche. Si la condition est false, le champ est masqué.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic.](https
 
 ### URL d&#39;aperçu personnalisées {#custom-preview-urls}
 
-Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration de `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Cela est particulièrement utile pour les applications avec des exigences de prévisualisation spécifiques, telles que celles [utilisant Edge Delivery Services avec la création WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Cela s’avère particulièrement utile pour les applications ayant des exigences d’aperçu spécifiques, telles que celles [utilisant des Edge Delivery Services avec la création WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
 Pour ce faire, il vous suffit d’inclure l’URL d’aperçu souhaitée dans une balise meta de l’application instrumentée, comme dans l’exemple suivant.
 
@@ -110,6 +110,6 @@ Si vous souhaitez explorer ces possibilités, consultez les ressources suivantes
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le [tutoriel sur l’extensibilité de l’interface utilisateur AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
 
-[Grâce à l’Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
+[Grâce à l’Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.

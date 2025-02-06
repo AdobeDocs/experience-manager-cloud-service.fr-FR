@@ -4,10 +4,10 @@ description: Grâce à ce guide de démarrage rapide, découvrez les fondamentau
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -44,4 +44,4 @@ Cependant, dans une situation de production, les tâches seront exécutées par 
 
 ## Étape suivante {#next-step}
 
-Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [Création d’une configuration.](create-configuration.md)
+Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [ Création d’une configuration ](create-configuration.md).

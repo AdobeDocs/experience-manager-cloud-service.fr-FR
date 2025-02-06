@@ -4,7 +4,7 @@ description: Notes de mise à jour pour les outils de migration dans AEM as a�
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 99%
@@ -38,8 +38,8 @@ La date de publication de l’outil de transfert de contenu version v2.0.16 est
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Le mappage des utilisateurs et utilisatrices a été rationnalisé et intégré à l’étape d’extraction de contenu. Aucune configuration n’est nécessaire et le mappage utilisateur est effectué automatiquement par défaut lorsque l’utilisateur ou l’utilisatrice lance l’extraction de contenu. L’utilisateur ou l’utilisatrice a la possibilité de désactiver le mappage utilisateur en cas de besoin. En savoir plus [ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
-* L’étape de précopie à l’aide d’[AzCopy](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) a été intégrée à l’outil de transfert de contenu pour accélérer considérablement les extractions de contenu. La précopie est automatiquement configurée et installée lorsque cette version de l’outil de transfert de contenu est installée. Par défaut, lorsque l’extraction est lancée, la précopie s’exécute automatiquement pour les jeux de migration de plus de 200 Go. L’utilisateur ou l’utilisatrice a la possibilité de la désactiver si nécessaire. En savoir plus [ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
+* Le mappage des utilisateurs et utilisatrices a été rationnalisé et intégré à l’étape d’extraction de contenu. Aucune configuration n’est nécessaire et le mappage utilisateur est effectué automatiquement par défaut lorsque l’utilisateur ou l’utilisatrice lance l’extraction de contenu. L’utilisateur ou l’utilisatrice a la possibilité de désactiver le mappage utilisateur en cas de besoin. En savoir plus [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail).
+* L’étape de précopie à l’aide d’[AzCopy](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) a été intégrée à l’outil de transfert de contenu pour accélérer considérablement les extractions de contenu. La précopie est automatiquement configurée et installée lorsque cette version de l’outil de transfert de contenu est installée. Par défaut, lorsque l’extraction est lancée, la précopie s’exécute automatiquement pour les jeux de migration de plus de 200 Go. L’utilisateur ou l’utilisatrice a la possibilité de la désactiver si nécessaire. En savoir plus [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html).
 * L’outil de transfert de contenu peut désormais être utilisé sur les serveurs Windows.
 
 ### Correctifs {#bug-fixes-ctt}

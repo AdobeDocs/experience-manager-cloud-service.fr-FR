@@ -4,21 +4,21 @@ description: Consultez cette page pour savoir comment affecter des membres de l�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Affecter des membres de l’équipe à des profils de produits Cloud Manager {#assign-team-members}
 
-Dans cette partie du [parcours d’intégration](overview.md), découvrez comment affecter des membres de l’équipe à des profils de produits Cloud Manager.
+Dans cette partie du [parcours d’intégration](overview.md), découvrez comment affecter des membres de l’équipe aux profils de produits Cloud Manager.
 
 ## Objectif {#objective}
 
-À l’étape précédente de ce parcours, [Accéder à Admin Console](admin-console.md), vous avez appris à vous connecter à Admin Console et à vérifier vos privilèges en tant qu’administrateur système. Vous êtes maintenant prêt à autoriser les membres de votre équipe à accéder à Cloud Manager. Pour ce faire, attribuez des profils de produits.
+À l’étape précédente dans ce parcours, [Accès à l’Admin Console ](admin-console.md), vous avez appris à vous connecter à l’Admin Console et à vérifier vos privilèges en tant qu’administrateur système. Vous êtes maintenant prêt à autoriser les membres de votre équipe à accéder à Cloud Manager. Pour ce faire, attribuez des profils de produits.
 
 Lorsque vous accordez à un utilisateur l’accès à une solution Adobe, vous n’avez pas nécessairement besoin de lui accorder un accès complet. Les profils de produit permettent à chaque solution d’avoir son propre jeu d’autorisations utilisateur. Vous utilisez Admin Console pour affecter des profils de produits.
 
@@ -177,7 +177,7 @@ Cette partie du parcours d’intégration vous a permis d’en savoir plus sur l
 * Comprendre les trois principaux profils de produits de Cloud Manager : **Propriétaire de l’entreprise**, **Responsable de déploiement** et **Développeur**.
 * Être capable d’affecter des membres de l’équipe aux profils de produits Cloud Manager.
 
-Vous êtes maintenant prêts à poursuivre votre parcours d’intégration en passant au document [Accéder à Cloud Manager](cloud-manager.md), dans lequel vous découvrirez comment accéder à Cloud Manager et créer vos ressources de projet.
+Vous êtes maintenant prêt à poursuivre votre parcours d’intégration en consultant le document [Accès à Cloud Manager](cloud-manager.md), dans lequel vous apprendrez à accéder à Cloud Manager et à créer vos ressources de projet.
 
 ## Ressources supplémentaires {#additional-resources}
 

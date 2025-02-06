@@ -4,10 +4,10 @@ description: Utilisation du plug-in Maven Content Package pour déployer des app
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 94%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 
-Le déploiement des modules construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe et permet l’automatisation des tâches normalement exécutées à l’aide du [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) d’AEM :
+Le déploiement des packages construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe et permet l’automatisation des tâches normalement exécutées à l’aide d’AEM [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
 
 * Création de packages à partir des fichiers du système de fichiers.
 * Installation et désinstallation de packages sur AEM.
@@ -23,7 +23,7 @@ Le déploiement des modules construits sur AEM est effectué par le plug-in Mave
 * Obtention de la liste des packages installés sur AEM.
 * Suppression d’un package d’AEM.
 
-Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, il est également important de comprendre [comment les projets AEM et leurs packages sont structurés.](#aem-project-structure)
+Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, il est également important de comprendre [comment les projets AEM et leurs packages sont structurés](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 >[!NOTE]
 >
->La **création** de packages incombe désormais au [plug-in Maven Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>Le package **création** appartient désormais au plug-in Maven [Apache Jackrabbit FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
->Cet article décrit le **déploiement** des modules construits vers AEM tels qu’ils sont réalisés par le module externe Maven Adobe Content Package.
+>Cet article décrit le **déploiement** des packages construits dans AEM, effectué par le plug-in Maven Content Package d’Adobe.
 
 ## Packages et structure de projet AEM {#aem-project-structure}
 
@@ -41,11 +41,11 @@ AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en ma
 
 >[!TIP]
 >
->Reportez-vous à l’article [AEM Structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et à la documentation [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Consultez l’article sur la [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
 
 ## Obtention du plug-in Maven Content Package {#obtaining-the-content-package-maven-plugin}
 
-Le plug-in est disponible à partir du [référentiel Maven central.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+Le module externe est disponible à partir du [référentiel central Maven](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Objectifs et paramètres du plug-in Maven Content Package
 
@@ -215,4 +215,4 @@ Le dernier archétype de projet AEM met en œuvre la structure de package des bo
 
 >[!TIP]
 >
->Reportez-vous à l’article [AEM Structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et à la documentation [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Consultez l’article sur la [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.

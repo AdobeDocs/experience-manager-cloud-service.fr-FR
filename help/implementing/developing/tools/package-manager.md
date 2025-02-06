@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -197,7 +197,7 @@ Lors de la création de règles, vous définissez une expression régulière (é
 | inclusion | Inclusion inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclusion **n’inclura pas** d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
 | Exclusion | Exclusion exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
 
-Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
+Les filtres de package sont le plus souvent définis lors de la première [création du package](#creating-a-new-package). Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
 ### Création d’un package {#creating-a-new-package}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Cliquez sur **Créer un package**.
 
@@ -266,7 +266,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
    ![Nouveau package](assets/new-package.png)
 
-1. Cliquez sur **Modifier** pour définir le [contenu du package.](#package-contents) Une fois que vous avez fini de modifier les paramètres, cliquez sur **Enregistrer**.
+1. Cliquez sur **Modifier** pour définir le [contenu du package](#package-contents). Cliquez sur **Enregistrer** une fois la modification des paramètres terminée.
 
 1. Vous pouvez maintenant [créer](#building-a-package) votre package.
 
@@ -274,13 +274,13 @@ Il n’est pas obligatoire de concevoir immédiatement le package après lʼavoi
 
 >[!TIP]
 >
->Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+>Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
 
 ### Concevoir un package {#building-a-package}
 
 Un package est souvent conçu au moment où vous [créez le package](#creating-a-new-package), mais vous pouvez y revenir ultérieurement pour concevoir ou reconcevoir le package. Cela peut s’avérer utile si le contenu du référentiel ou les filtres du package ont été modifiés.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -290,13 +290,13 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 
 >[!TIP]
 >
->Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+>Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
 
 ### Modifier un package {#edit-package}
 
 Une fois quʼun package est téléchargé dans AEM, vous pouvez modifier ses paramètres.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -310,7 +310,7 @@ En fonction des modifications que vous avez apportées, vous devrez peut-être [
 
 Une fois qu’un package a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du package telles que la miniature, la description, etc., sans toucher à son contenu.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -324,7 +324,7 @@ Une fois qu’un package a été créé, il peut être réencapsulé. La réenca
 
 Comme chaque version d’un package apparaît dans la liste comme n’importe quel autre package, le gestionnaire de packages peut trouver d’autres versions d’un package sélectionné.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -334,7 +334,7 @@ Comme chaque version d’un package apparaît dans la liste comme n’importe qu
 
 Une fois un package créé, vous pouvez afficher son contenu.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -348,7 +348,7 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 ### Télécharer des packages sur votre système de fichiers {#downloading-packages-to-your-file-system}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -358,11 +358,11 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 >[!TIP]
 >
->Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+>Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
 
 ### Chargement des packages à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Sélectionnez le dossier de groupe dans lequel vous souhaitez que le package soit chargé.
 
@@ -370,7 +370,7 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 1. Fournissez les informations nécessaires sur le package chargé.
 
-   ![Boîte de dialogue de chargement de package](assets/package-upload-dialog.png)
+   ![Boîte de dialogue de chargement de package.](assets/package-upload-dialog.png)
 
    * **Package** - Servez-vous du bouton **Parcourir…** pour sélectionner le package requis dans votre système de fichiers local.
    * **Forcer le chargement** - Si un package portant ce nom existe déjà, cette option force le chargement et remplace le package existant.
@@ -381,7 +381,7 @@ Le contenu du package existe désormais sur AEM, mais pour rendre le contenu dis
 
 >[!TIP]
 >
->Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+>Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
 
 ### Validation de packages {#validating-packages}
 
@@ -399,13 +399,13 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 >[!NOTE]
 >
->Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, la validation **Imports de package OSGi** n’est pas nécessaire.
+>Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, la validation **Imports de packages OSGi** est inutile.
 
 **Contenu vérifié**
 
 Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment il est signalé**
+**Comment est-ce rapporté**
 
 Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
 
@@ -421,7 +421,7 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 >[!NOTE]
 >
->Comme les packages ne peuvent pas être utilisés pour déployer du code dans AEMaaCS, la validation **Recouvrements** n’est pas nécessaire.
+>Les packages ne pouvant pas être utilisés pour déployer du code dans AEMaaCS, la validation **Recouvrements** est inutile.
 
 **Contenu vérifié**
 
@@ -429,7 +429,7 @@ Cette validation détermine si le package en cours d’installation contient un 
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Comment il est signalé**
+**Comment est-ce rapporté**
 
 Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
 
@@ -451,7 +451,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
-**Comment il est signalé**
+**Comment est-ce rapporté**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
 
@@ -471,14 +471,14 @@ Aucune erreur explicite ne peut être fournie. La validation indique simplement 
 
 La validation des packages peut se faire de deux manières différentes :
 
-* [via l’interface utilisateur du gestionnaire de modules ;](#via-package-manager)
-* [via une requête HTTP POST, telle que cURL.](#via-post-request)
+* [via l’interface utilisateur du gestionnaire de packages](#via-package-manager).
+* [via une requête de POST HTTP, telle que cURL](#via-post-request).
 
 La validation doit toujours avoir lieu après le chargement du package, mais avant son installation.
 
 ##### Validation de packages via le Gestionnaire de packages {#via-package-manager}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -516,7 +516,7 @@ Lors de la validation par le biais dʼune requête POST, la réponse est renvoy�
 
 Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnaire de packages d’appliquer les filtres d’un package au contenu de votre référentiel existant, afin de montrer le contenu du référentiel qui est couvert par la définition du filtre du package.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -534,9 +534,9 @@ Le chargement d’un package ajoute uniquement le contenu du package au référe
 
 Avant l’installation de votre package, le gestionnaire de modules crée automatiquement un package instantané contenant le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
-1. Ouvrez les détails du package que vous souhaitez installer dans la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du package que vous souhaitez installer à partir de la liste des packages en cliquant sur le nom du package.
 
 1. Cliquez soit sur le bouton **Installer** dans les détails de l’élément, soit sur le lien **Installer** dans le statut du package.
 
@@ -576,9 +576,9 @@ Si l’instance n’est pas en cours d’exécution, les packages placés dans l
 
 La désinstallation d’un package ramène le contenu du référentiel à l’instantané réalisé automatiquement par le gestionnaire de packages avant l’installation.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
-1. Ouvrez les détails du package que vous souhaitez désinstaller dans la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du package que vous souhaitez désinstaller à partir de la liste des packages en cliquant sur le nom du package.
 
 1. Pour supprimer le contenu de ce package du référentiel, cliquez sur **Plus** > **Désinstaller**.
 
@@ -590,9 +590,9 @@ La désinstallation d’un package ramène le contenu du référentiel à l’in
 
 La suppression d’un package supprime uniquement ses détails du gestionnaire de packages. Si ce package a déjà été installé, le contenu installé n’est pas supprimé.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
-1. Ouvrez les détails du module à supprimer de la liste des modules en cliquant sur son nom.
+1. Ouvrez les détails du package que vous souhaitez supprimer de la liste des packages en cliquant sur le nom du package.
 
 1. AEM vous invite à confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
@@ -602,9 +602,9 @@ La suppression d’un package supprime uniquement ses détails du gestionnaire d
 
 Répliquez le contenu d’un package afin de l’installer dans l’instance de publication.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de packages](#accessing).
 
-1. Ouvrez les détails du module que vous souhaitez répliquer dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du package que vous souhaitez répliquer depuis la liste des packages en cliquant sur le nom du package.
 
 1. Cliquez sur **Plus** > **Répliquer**.
 
@@ -616,4 +616,4 @@ Les packages AEM peuvent être utilisés pour créer et partager du contenu dans
 
 [Distribution logicielle](https://downloads.experiencecloud.adobe.com) fournit des packages AEM à utiliser sur le SDK AEM de développement local. Les packages AEM fournis sur la distribution logicielle ne doivent pas être installés sur les environnements cloud AEMaaCS, sauf approbation expresse de l’assistance clientèle Adobe.
 
-Pour plus d’informations, consultez la [documentation sur la distribution de logiciels.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Pour plus d’informations, consultez la [documentation sur la distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).

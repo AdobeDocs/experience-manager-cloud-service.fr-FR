@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 # Fragments de code {#snippets}
@@ -186,12 +186,12 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!IMPORTANT]
 >
->L’éditeur universel n’est pas compatible avec les [listes d’adresses IP autorisées.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>L’éditeur universel n’est pas compatible avec les [listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 >
 >Si vous souhaitez utiliser l’éditeur universel, vous devez effectuer l’une des deux actions suivantes :
 >
 >* Ne pas activer les listes d’adresses IP autorisées.
->* [Exécuter votre propre instance du service d’éditeur universel.](/help/implementing/universal-editor/local-dev.md)
+>* [Exécutez votre propre instance du service d’éditeur universel](/help/implementing/universal-editor/local-dev.md).
 
 ## Utiliser Dynamic Media {#work-with-dynamic-media}
 
