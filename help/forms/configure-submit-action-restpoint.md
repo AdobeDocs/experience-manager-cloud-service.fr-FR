@@ -1,42 +1,41 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: Point de terminaison REST AEM Forms, Envoyer au point de terminaison REST, Données Post vers l’URL REST, Configuration de l’action REST Endpoint
+keywords: Point d’entrée REST AEM Forms, envoyer au point d’entrée REST, publier les données dans l’URL REST, configurer l’action de point d’entrée REST
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: "Comment configurer une action Envoyer pour un formulaire adaptatif ?"
+title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 61%
+source-wordcount: '703'
+ht-degree: 56%
 
 ---
 
-# Configuration d’un formulaire adaptatif pour une action d’envoi point de fin REST
+# Configuration d’un formulaire adaptatif pour l’action d’envoi de point d’entrée REST
 
-Utilisez l’action **[!UICONTROL Submit to REST Endpoint]** pour publier les données envoyées vers une URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
+Utilisez l’action **[!UICONTROL Envoyer vers le point d’entrée REST]** pour transmettre les données envoyées à l’URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
 ## Avantages
 
-Voici quelques-uns des avantages de la configuration de l’action d’envoi **[!UICONTROL Envoyer vers le point de terminaison REST]** pour le Forms adaptatif :
+Voici quelques avantages de la configuration de l’action d’envoi **[!UICONTROL Envoyer vers le point d’entrée REST]** pour le Forms adaptatif :
 
-* Il permet une intégration transparente des données de formulaire avec des systèmes et services externes via les API RESTful.
-* Il offre une certaine flexibilité pour gérer les envois de données depuis Forms adaptatif, en prenant en charge des structures de données dynamiques et complexes.
-* Il prend en charge le mappage dynamique des champs de formulaire aux paramètres dans l’URL du point de terminaison REST, ce qui permet les envois de données adaptables et personnalisables.
+* Il permet une intégration transparente des données de formulaire aux systèmes et services externes par le biais d’API RESTful.
+* Il offre une certaine flexibilité pour gérer les envois de données à partir de Forms adaptatif, en prenant en charge les structures de données dynamiques et complexes.
+* Il prend en charge le mappage dynamique des champs de formulaire aux paramètres de l’URL du point d’entrée REST, ce qui permet des envois de données adaptables et personnalisables.
 
 
-## Configuration de l’action d’envoi Envoyer vers le point de fin REST {#steps-to-configure-submit-to-restendpoint-submit-action}
+## Configuration de l’action d’envoi Envoyer vers le point d’entrée REST {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-Pour configurer l’action d’envoi :
+Pour configurer l’action d’envoi en fonction de la spécification de l’API Open Swagger :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
-1. Dans la liste déroulante **[!UICONTROL Submit Action]** , sélectionnez **[!UICONTROL Submit to Rest endpoint]**.
-   ![Configuration de l’action du point de terminaison Submit to Rest](/help/forms/assets/submit-action-restendpoint.png)
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer vers le point d’entrée REST]**.
+   ![Configuration de l’action Envoyer vers le point d’entrée Rest](/help/forms/assets/submit-action-restendpoint.png)
 
    Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, `/content/restEndPoint`. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 
@@ -69,9 +68,23 @@ Pour configurer l’action d’envoi :
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
+### Configurer l’action d’envoi en fonction du point d’entrée Rest du service {#config-service-endpoint-auth}
+
+<span class="preview"> La fonctionnalité Point d’entrée du service fait partie du programme des utilisateurs et utilisatrices précoces et s’applique uniquement aux composants principaux. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer vers le point d’entrée REST]**.
+1. Activez la requête de POST.
+1. Spécifiez l’URL du point d’entrée REST.
+1. Sélectionnez la configuration que vous avez créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   ![Configuration du point d’entrée Rest](assets/rest-service-endpoint-config.png)
+1. Cliquez sur Terminé.
+
 ## Bonnes pratiques
 
-* Lorsque vous publiez des données sur un serveur externe, assurez-vous que l’URL est sécurisée et configurez le chemin pour gérer anonymement la demande du POST afin de protéger les informations sensibles.
+* Lors de la publication de données sur un serveur externe, assurez-vous que l’URL est sécurisée et configurez le chemin d’accès pour gérer la demande du POST de manière anonyme afin de protéger les informations sensibles.
 * Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
 
 ## Articles connexes
