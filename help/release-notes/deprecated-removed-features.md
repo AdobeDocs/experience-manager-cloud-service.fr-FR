@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Fonctionnalités | Fonctionnalité obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
-| Sites | [Fonctionnalités du PWA ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Aucun |
-| Sites | [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour l’édition visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. |
+| Sites | [Fonctionnalités PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Aucun |
+| Sites | [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. |
 | [!DNL Sites] | [API JavaScript Use](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API JavaScript Use](https://experienceleague.adobe.com/fr/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propriétés des fragments d’expérience pour le **statut des médias sociaux**. | La suppression de la fonctionnalité est prévue prochainement. |
 | [!DNL Sites] | Fragments de contenu simples basés sur des modèles. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. |
