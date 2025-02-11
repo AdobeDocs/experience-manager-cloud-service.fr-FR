@@ -1,22 +1,32 @@
 ---
-title: Mise en page réactive
-description: AEM permet de créer une mise en page réactive pour vos pages
+title: Disposition réactive
+description: AEM vous permet de créer une mise en page réactive pour vos pages à l’aide du composant Conteneur de mises en page .
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 86%
+source-wordcount: '1789'
+ht-degree: 81%
 
 ---
+
 
 # Disposition réactive {#responsive-layout}
 
 AEM vous propose une disposition réactive des pages à l’aide du composant **Conteneur de disposition**.
 
-Il fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
+>[!TIP]
+>
+>Ce document présente une vue d’ensemble des fonctionnalités du conteneur de disposition disponibles pour les auteurs de contenu. Des ressources supplémentaires sont disponibles :
+>
+>* Pour les administrateurs de site, les détails de la configuration du conteneur de mises en page pour vos sites sont décrits dans le document [Configuration du conteneur et du mode de mise en page](/help/sites-cloud/administering/responsive-layout.md).
+>* Pour les développeurs, les détails du conteneur de disposition et de la grille réactive sont décrits dans le document [The Responsive Design](/help/implementing/developing/introduction/responsive-design.md) qui fournit des conseils et des astuces pour l’utilisation des conteneurs de disposition et de la grille réactive lors de la conception de votre site.
+
+## Vue d’ensemble {#overview}
+
+Le composant **conteneur de disposition** fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
 
 Le conteneur de mise en page :
 
@@ -49,10 +59,6 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 * contrôler les colonnes.
 
 Selon votre projet, le conteneur de disposition peut être utilisé comme système de paragraphes par défaut pour vos pages ou comme composant pouvant être ajouté à votre page par le biais de l’explorateur de composants (ou les deux).
-
->[!TIP]
->
->Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la disposition réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
 
 >[!NOTE]
 >

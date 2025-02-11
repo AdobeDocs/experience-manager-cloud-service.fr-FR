@@ -4,14 +4,26 @@ description: Avec le responsive design, les mêmes expériences peuvent être af
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 57%
+source-wordcount: '1165'
+ht-degree: 44%
 
 ---
 
+
 # Responsive Design {#responsive-design}
+
+Avec le responsive design, les mêmes expériences peuvent être affichées efficacement sur plusieurs appareils dans plusieurs orientations.
+
+>[!TIP]
+>
+>Ce document présente le Responsive Design pour les développeurs et les développeuses, ainsi que la manière dont les fonctionnalités sont réalisées dans AEM. Des ressources supplémentaires sont disponibles :
+>
+>* Pour les personnes créant du contenu, les détails sur l’utilisation des fonctionnalités de conception réactive sur une page de contenu sont disponibles dans le document [Disposition réactive.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Pour les administrateurs de site, les détails de la configuration du conteneur de mises en page pour vos sites sont décrits dans le document [Configuration du conteneur et du mode de mise en page](/help/sites-cloud/administering/responsive-layout.md).
+
+## Vue d’ensemble {#overview}
 
 Concevez vos expériences afin qu’elles s’adaptent à la fenêtre dans laquelle elles sont affichées. Le Responsive Design permet d’afficher efficacement les mêmes pages sur plusieurs appareils dans les deux orientations. L’image suivante montre certaines façons dont une page peut répondre aux modifications de la taille de la fenêtre d’affichage :
 
@@ -132,4 +144,65 @@ Les pages réactives s’adaptent dynamiquement au périphérique sur lequel ell
 
 Le conteneur de disposition AEM permet d’implémenter efficacement une disposition réactive pour adapter les dimensions de la page à la fenêtre d’affichage cliente.
 
-Consultez le document [Configuration du conteneur de dispositions et du mode de disposition](/help/sites-cloud/administering/responsive-layout.md) pour plus d’informations sur le fonctionnement du conteneur de dispositions et sur la manière d’activer les dispositions réactives pour votre contenu.
+>[La documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la grille réactive est une référence qui peut être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes d’HTML statiques pour un futur site AEM.
+
+>[!TIP]
+>
+>Consultez le document [Configuration du conteneur de dispositions et du mode de disposition](/help/sites-cloud/administering/responsive-layout.md) pour plus d’informations sur le fonctionnement du conteneur de dispositions et sur la manière d’activer les dispositions réactives pour votre contenu.
+
+## Grilles réactives imbriquées {#nested-responsive-grids}
+
+Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactives pour répondre aux besoins de votre projet. Toutefois, gardez à l’esprit que la bonne pratique recommandée par Adobe est de garder la structure aussi plate que possible.
+
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
+
+* Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
+* Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.
+
+Cela inclut tous les conteneurs structurels du modèle de page.
+
+Le numéro de colonne du récipient intérieur ne doit jamais être supérieur à celui du récipient extérieur. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
+
+>[!BEGINTABS]
+
+>[!TAB Exemple de structure de nœud]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Exemple d’HTML résultant]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]

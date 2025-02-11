@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 51%
+source-wordcount: '1377'
+ht-degree: 46%
 
 ---
 
+
 # Configuration du conteneur et du mode de disposition {#configuring-layout-container-and-layout-mode}
 
-La [disposition réactive](/help/sites-cloud/authoring/page-editor/responsive-layout.md) est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Site_web_réactif). Cela permet à l’auteur de contenu de créer des pages web dont la disposition et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
+Découvrez comment configurer le conteneur et le mode de disposition pour activer les dispositions réactives pour les auteurs de contenu.
+
+>[!TIP]
+>
+>Ce document décrit comment un administrateur de site peut configurer le conteneur de mises en page pour prendre en charge le Responsive Web Design. Des ressources supplémentaires sont disponibles :
+>
+>* Pour les personnes créant du contenu, les détails sur l’utilisation des fonctionnalités de conception réactive sur une page de contenu sont disponibles dans le document [Disposition réactive.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Pour les développeurs, les détails du conteneur de disposition et de la grille réactive sont décrits dans le document [The Responsive Design](/help/implementing/developing/introduction/responsive-design.md) qui fournit des conseils et des astuces pour l’utilisation des conteneurs de disposition et de la grille réactive lors de la conception de votre site.
+
+## Vue d’ensemble {#overview}
+
+La disposition réactive est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Site_web_réactif). Cela permet à l’auteur de contenu de créer des pages web dont la disposition et les dimensions dépendent des appareils utilisés par leurs utilisateurs.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
@@ -229,3 +241,9 @@ Pour permettre aux créateurs d’ajouter d’autres grilles réactives dans des
 ### Configurer la grille du Conteneur de mise en page {#configure-the-grid-of-the-layout-container}
 
 Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de disposition [en modifiant vos modèles de page](/help/sites-cloud/authoring/page-editor/templates.md).
+
+### Grilles réactives imbriquées {#nested-responsive-grids}
+
+La bonne pratique recommandée par Adobe est de conserver la structure aussi plate que possible.
+
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, consultez le document de développement [Responsive Design](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids).
