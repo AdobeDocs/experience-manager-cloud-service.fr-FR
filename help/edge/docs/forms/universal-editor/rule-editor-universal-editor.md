@@ -1,63 +1,63 @@
 ---
-title: Comment utiliser l’éditeur de règles pour appliquer des règles aux champs de formulaire, ce qui permet un comportement dynamique et une logique complexe pour les formulaires créés avec la création WYSIWYG ?
-description: L’éditeur de règles de l’éditeur universel vous permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires sans codage ni script.
+title: Comment utiliser l’éditeur de règles pour appliquer des règles aux champs de formulaire, ce qui permet un comportement dynamique et une logique complexe pour les formulaires créés avec la création WYSIWYG ?
+description: L’éditeur de règles dans l’éditeur universel permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires, sans code ni script.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
+exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
+source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
 workflow-type: tm+mt
 source-wordcount: '2111'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-
 # Présentation de l’éditeur de règles dans l’éditeur universel
 
-Vous pouvez ajouter un comportement de formulaire dynamique à l’aide de l’éditeur de règles, qui permet de créer des règles. Ces règles permettent une visibilité conditionnelle des champs, automatisent les calculs en fonction des entrées de l’utilisateur et améliorent l’expérience globale de l’utilisateur. En rationalisant le processus de remplissage des formulaires, l’éditeur de règles garantit à la fois précision et efficacité.
+Vous pouvez ajouter un comportement de formulaire dynamique à l’aide de l’éditeur de règles, qui permet de créer des règles. Ces règles permettent une visibilité conditionnelle des champs, automatisent les calculs en fonction des entrées des utilisateurs et utilisatrices et améliorent l’expérience globale d’utilisation. En rationalisant le processus de remplissage des formulaires, l’éditeur de règles garantit à la fois précision et efficacité.
 
-L’éditeur de règles offre une interface visuelle intuitive pour la création et la gestion des règles. Son approche conviviale le rend accessible à tous les utilisateurs et utilisatrices, même ceux et celles qui ne disposent pas d’une vaste expertise technique, ce qui leur permet d’implémenter la logique sans effort dans leurs formulaires.
+L’éditeur de règles offre une interface visuelle intuitive pour la création et la gestion des règles. Son approche conviviale le rend accessible à tous les utilisateurs et utilisatrices, même ceux et celles qui ne disposent pas d’une vaste expertise technique, ce qui leur permet d’implémenter la logique facilement dans leurs formulaires.
 
 ## Présentation d’une règle
 
 Les règles sont des instructions qui guident les utilisateurs et utilisatrices sur les actions à effectuer dans des conditions spécifiques.
 
-* **Condition** : une condition est une vérification ou une règle qui évalue si un élément est vrai ou faux. Cela répond à la question suivante : « Est-ce que cela répond aux exigences ? »
+* **Condition** : une condition est une vérification ou une règle qui évalue si un élément est vrai ou faux. Elle répond à la question suivante : « Est-ce que cela répond aux exigences ? »
 
-* **Action** : une action est ce qui se produit lorsque la condition est vraie. Il s’agit de la tâche ou du comportement déclenché(e) en fonction de l’évaluation de la condition.
+* **Action** : une action est ce qui se produit lorsque la condition est vraie. Il s’agit de la tâche ou du comportement déclenché en fonction de l’évaluation de la condition.
 
 Une règle suit généralement l’un des concepts suivants :
 
-* **Condition-Action** : vérifiez d’abord une condition, puis effectuez une action. Dans l’éditeur de règles, le type de règle `When` applique le concept de `condition-action`.
-* **Action-Condition** : effectuez d’abord une action, puis vérifiez une condition. Les types de règle `Set Value Of` et `Validate` dans l’éditeur de règles appliquent le concept de `action-condition`.
-* **Action-Condition-Action alternative** : exécutez une action, vérifiez une condition, puis exécutez l’action principale ou une action alternative en fonction de la condition. Par exemple, par défaut, l’action alternative pour `Show` est `Hide` et, par `Enable`, `Disable`.
+* **Condition-Action** : vérifiez d’abord une condition, puis effectuez une action. Dans l’éditeur de règles, le type de règle `When` applique le concept de `condition-action`.
+* **Action-Condition** : effectuez d’abord une action, puis vérifiez une condition. Les types de règle `Set Value Of` et `Validate` dans l’éditeur de règles appliquent le concept de `action-condition`.
+* **Action-Condition-Action alternative** : exécutez une action, vérifiez une condition, puis exécutez l’action principale ou une action alternative en fonction de la condition. Par exemple, par défaut, l’action alternative pour `Show` est `Hide`, et pour `Enable`, il s’agit de `Disable`.
 
-Par exemple, une condition peut vérifier si un utilisateur ou une utilisatrice a saisi une certaine valeur dans un champ et l’action peut consister à afficher ou masquer un champ.
-* **Condition** : vérifiez si le revenu est supérieur à 50 000 $.
-* **Action** : si la condition est vraie, afficher le champ `Additional Deduction` ; sinon, effectuer l&#39;action alternative : masquer le champ `Additional Deduction`.
+Par exemple, une condition peut vérifier si un utilisateur ou une utilisatrice a saisi une certaine valeur dans un champ et l’action peut consister à afficher ou à masquer un champ.
+* **Condition** : vérifiez si le revenu est supérieur à 50 000 $.
+* **Action** : si la condition est vraie, affichez le champ `Additional Deduction`. Sinon, effectuez l’action alternative : masquer le champ `Additional Deduction`.
 
-Pour obtenir des instructions détaillées, reportez-vous à la [ajout d’une règle conditionnelle](#2-add-a-conditional-rule).
+Pour obtenir des instructions détaillées, reportez-vous à [Ajouter une règle conditionnelle](#2-add-a-conditional-rule).
 
-## Comment activer l’extension de l’éditeur de règles ?
+## Comment activer l’extension de l’éditeur de règles ?
 
-Dans l’éditeur universel, l’éditeur de règles n’est pas activé par défaut. Pour activer l’extension Éditeur de règles pour votre environnement, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec votre demande.
+Dans l’éditeur universel, l’éditeur de règles n’est pas activé par défaut. Pour activer l’extension de l’éditeur de règles pour votre environnement, envoyez un e-mail à partir de votre adresse officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) avec votre demande.
 
 Une fois que l’extension de l’éditeur de règles est activée pour votre environnement, l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg) s’affiche dans le coin supérieur droit de l’éditeur.
 
-![Éditeur universel de règles](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+![Éditeur de règles de l’éditeur universel](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Sélectionnez l’objet de formulaire pour lequel vous souhaitez créer une règle, puis cliquez sur l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche.
+Sélectionnez l’objet de formulaire pour lequel vous voulez créer une règle, puis cliquez sur ![edit-rules](/help/forms/assets/edit-rules-icon.svg). L’interface d’utilisation de l’éditeur de règles s’affiche.
 
-![Interface utilisateur de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+![Interface d’utilisation de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 
 Vous pouvez maintenant commencer à créer des règles ou une logique métier pour le champ de formulaire sélectionné en utilisant les [types de règles disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
-## Présentation de l’interface utilisateur de l’éditeur de règles
+## Présentation de l’interface d’utilisation de l’éditeur de règles
 
-L’éditeur visuel de l’éditeur de règles s’ouvre lorsque vous cliquez sur l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg) :
+L’éditeur visuel de l’éditeur de règles s’ouvre lorsque vous cliquez sur l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg) :
 
-![Interface utilisateur de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-interface.png)
+![Interface d’utilisation de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
 <table border="1">
   <thead>
@@ -69,34 +69,34 @@ L’éditeur visuel de l’éditeur de règles s’ouvre lorsque vous cliquez su
   <tbody>
     <tr>
       <td>1. Affichage composant-règle</td>
-      <td>Affiche le titre de l’objet de formulaire par lequel vous avez lancé l’éditeur de règles et le type de règle actuellement sélectionné.</td>
+      <td>Affiche le titre de l’objet de formulaire à partir duquel vous avez lancé l’éditeur de règles et le type de règle actuellement sélectionné.</td>
     </tr>
     <tr>
       <td>2. Objets de formulaire et fonctions</td>
-      <td>L’onglet <b>Objets Forms</b> affiche une vue hiérarchique de tous les objets contenus dans le formulaire. L’onglet <b>Fonctions</b> comprend un ensemble de fonctions intégrées.</td>
+      <td>L’onglet <b>Objets de formulaire</b> affiche une arborescence de tous les objets contenus dans le formulaire. L’onglet <b>Fonctions</b> comprend un ensemble de fonctions intégrées.</td>
     </tr>
     <tr>
-      <td>3. Basculement entre les objets de formulaire et les fonctions</td>
-      <td>Le bouton Basculer, lorsqu’il est sélectionné, permet de basculer entre le volet des objets de formulaire et celui des fonctions.</td>
+      <td>3. Bouton (bascule) des objets de formulaire et des fonctions</td>
+      <td>Le bouton bascule, lorsqu’il est sélectionné, permet de basculer entre le volet des objets de formulaire et celui des fonctions.</td>
     </tr>
     <tr>
-      <td>4. Éditeur visuel de règles</td>
-      <td>L’éditeur de règles visuel est la zone de l’interface utilisateur de l’éditeur de règles en mode éditeur visuel dans laquelle vous créez des règles.</td>
+      <td>4. Éditeur de règles visuel</td>
+      <td>Lorsque l’interface utilisateur de l’éditeur de règles est en mode éditeur visuel, l’éditeur de règles visuel est la zone dans laquelle vous créez des règles.</td>
     </tr>
     <tr>
-      <td>5. boutons Terminé et Annuler</td>
-      <td>Le bouton <b>Terminé</b> permet d’enregistrer une règle. Le bouton <b>Annuler</b> ignore toutes les modifications que vous avez apportées à une règle et ferme l’éditeur de règles.</td>
+      <td>5. Boutons Terminé et Annuler</td>
+      <td>Le bouton <b>Terminé</b> permet d’enregistrer une règle. Le bouton <b>Annuler</b> annule tous les changements apportés à une règle et ferme l’éditeur de règles.</td>
     </tr>
   </tbody>
 </table>
 
-Toutes les règles existantes sur un objet de formulaire sont répertoriées lorsque vous sélectionnez l’objet . Vous pouvez afficher le titre et prévisualiser le résumé de la règle dans l’éditeur de règles visuel. De plus, vous pouvez modifier l’ordre des règles, modifier des règles, activer/désactiver des règles ou en supprimer.
+Les règles existantes sur un objet de formulaire sont répertoriées lorsque vous sélectionnez l’objet. Vous pouvez afficher le titre et prévisualiser le résumé de la règle dans l’éditeur de règles visuel. De plus, vous pouvez modifier l’ordre des règles, modifier des règles, activer/désactiver des règles ou en supprimer.
 
 ![afficher les règles disponibles de l’objet de formulaire](/help/edge/docs/forms/assets/rule-editor15.png)
 
 ## Types de règle disponibles
 
-L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles, comme illustré dans le tableau ci-dessous :
+L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles, comme indiqué dans le tableau ci-dessous :
 
 <table border="1">
   <thead>
@@ -112,7 +112,7 @@ L’éditeur de règles fournit un ensemble de types de règle prédéfinis que 
     </tr>
     <tr>
       <td>Effacer la valeur de</td>
-      <td>Efface la valeur de l'objet spécifié.</td>
+      <td>Efface la valeur de l’objet spécifié.</td>
     </tr>
     <tr>
       <td>Masquer/Afficher</td>
@@ -128,7 +128,7 @@ L’éditeur de règles fournit un ensemble de types de règle prédéfinis que 
     </tr>
     <tr>
       <td>Quand</td>
-      <td>Suit le concept de règle d’action <i>condition-action-alternative</i> ou <i>condition-action</i>. Il spécifie une condition à évaluer, suivie d’une action à déclencher si la condition est remplie.</td>
+      <td>Suit le concept de règle d’action <i>condition-action-alternative</i> ou <i>condition-action</i>. Cela spécifie une condition à évaluer, suivie d’une action à déclencher si la condition est remplie.</td>
     </tr>
     <tr>
       <td>Format</td>
@@ -143,8 +143,8 @@ L’éditeur de règles fournit un ensemble de types de règle prédéfinis que 
       <td>Définit la valeur d’une propriété de l’objet spécifié en fonction d’une condition.</td>
     </tr>
     <tr>
-      <td>Définir la cible d'action</td>
-      <td>Définit le focus sur l’objet spécifié.</td>
+      <td>Définir la cible d’action</td>
+      <td>Définit la cible d’action sur l’objet spécifié.</td>
     </tr>
     <tr>
       <td>Enregistrer le formulaire</td>
@@ -159,16 +159,16 @@ L’éditeur de règles fournit un ensemble de types de règle prédéfinis que 
       <td>Ajoute ou supprime une instance de la ligne de panneau ou de tableau répétable spécifiée.</td>
     </tr>
     <tr>
-      <td>Accéder À</td>
-      <td>Permet d’accéder à d’autres ressources, telles que des images ou des fragments de document ou une URL externe Forms adaptative.</td>
+      <td>Accéder à</td>
+      <td>Accède à d’autres formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe.</td>
     </tr>
     <tr>
       <td>Distribuer l’événement</td>
       <td>Déclenche des actions spécifiques en fonction de conditions ou d’événements prédéfinis.</td>
     </tr>
     <tr>
-      <td>Naviguer parmi les panneaux</td>
-      <td>Permet de déplacer la sélection entre différents panneaux d’un formulaire.</td>
+      <td>Naviguer dans les panneaux</td>
+      <td>Permet de déplacer la cible d’action entre différents panneaux d’un formulaire.</td>
     </tr>
   </tbody>
 </table>
@@ -178,144 +178,144 @@ Maintenant, découvrons comment [écrire des règles dans l’éditeur de règle
 
 ## Règles d’écriture
 
-Pour comprendre comment écrire des règles dans l’éditeur visuel de règles, prenons l’exemple simple d’un formulaire de calcul des taxes :
+Pour comprendre comment écrire des règles dans l’éditeur visuel de règles, prenons l’exemple simple d’un formulaire de calcul des taxes :
 
-![Exemple d’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Exemple de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-1.png)
 
-Dans le formulaire décrit ci-dessus, l&#39;utilisateur saisit le salaire brut. En fonction de cette entrée, le champ conditionnel s’affiche et la taxe à payer est calculée.
+Dans le formulaire décrit ci-dessus, l’utilisateur ou l’utilisatrice saisit le salaire brut. En fonction de cette entrée, le champ conditionnel s’affiche et la taxe à payer est calculée.
 
-**Champs de formulaire :**
+**Champs de formulaire :**
 * Salaire brut (saisie utilisateur)
 * Déduction supplémentaire (champ conditionnel)
 * Revenu imposable (champ calculé)
-* Taxe à payer (champ calculé)
+* Impôt à payer (champ calculé)
 
-**Règle conditionnelle :**
-* Condition : Salaire Brut > 50 000
-* Action : afficher le champ Déduction supplémentaire
+**Règle conditionnelle :**
+* Condition : salaire brut > 50 000
+* Action : afficher le champ Déduction supplémentaire
 
-**Règles de calcul:**
+**Règles de calcul :**
 
 * Revenu imposable = Salaire brut - Déduction supplémentaire (le cas échéant)
-* Impôt à payer = Revenu imposable * Taux d&#39;imposition (pour plus de simplicité, supposons un taux fixe de 10 %)
+* Impôt à payer = Revenu imposable * Taux d’imposition (pour plus de simplicité, supposons un taux fixe de 10 %)
 
 Pour créer des règles :
 
-### 1. Créer un formulaire
+### 1. Créer un formulaire
 
-Pour créer un formulaire dans l’éditeur universel :
+Pour créer un formulaire dans l’éditeur universel :
 
 1. Ouvrez un formulaire dans l’éditeur universel pour le modifier.
-1. Ajoutez les composants de formulaire suivants :
-   * Formulaire De Calcul Des Taxes (Titre)
-   * Salaire Brut (Entrée De Texte)
+1. Ajoutez les composants de formulaire suivants :
+   * Formulaire de calcul des impôts (Titre)
+   * Salaire brut (entrée de texte)
    * Déduction supplémentaire (entrée de texte)
-   * Revenu Imposable (Entrée De Texte)
-   * Impôt À Payer (Entrée De Texte)
-   * Envoyer (Bouton Envoyer)
-1. Masquez le champ de formulaire `Additional Deduction` en ouvrant son `Properties`.
+   * Revenu Imposable (Entrée de texte)
+   * Impôt à payer (Entrée de texte)
+   * Envoyer (bouton Envoyer)
+1. Masquez le champ de formulaire `Additional Deduction` en ouvrant ses `Properties`.
 
-   ![Exemple d’éditeur de règles](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Exemple de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Ajouter une règle conditionnelle pour un champ de formulaire
+### 2. Ajouter une règle conditionnelle pour un champ de formulaire
 
-Une fois que vous avez créé le formulaire, écrivez la première règle pour n’afficher le champ `Additional Deduction` que si le salaire brut dépasse 50 000 $. Pour ajouter une règle conditionnelle, procédez comme suit :
+Une fois que vous avez créé le formulaire, écrivez la première règle pour n’afficher le champ `Additional Deduction` que si le salaire brut dépasse 50 000 $. Pour ajouter une règle conditionnelle, procédez comme suit :
 
 1. Ouvrez un formulaire dans l’éditeur universel pour le modifier.
 1. Sélectionnez le composant **[!UICONTROL Salaire brut]** dans l’arborescence de contenu et sélectionnez ![edit-rules](/help/forms/assets/edit-rules-icon.svg).
-   ![Exemple d’éditeur de règles1](/help/edge/docs/forms/assets/rule-editor3.png)
+   ![Exemple 1 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor3.png)
 L’interface visuelle de l’éditeur de règles s’affiche.
-1. Cliquez sur **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
-   ![Exemple d’éditeur de règles2](/help/edge/docs/forms/assets/rule-editor4.png)
-Par défaut, le type de règle `Set Value Of` est sélectionné. Bien que vous ne puissiez pas modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante des règles pour sélectionner un autre type de règle.\
-   ![Exemple d’éditeur de règles3](/help/edge/docs/forms/assets/rule-editor5.png)
-1. Ouvrez la liste déroulante de type de règle et sélectionnez le type de règle **[!UICONTROL Lorsque]**.
-   ![Exemple d’éditeur de règles4](/help/edge/docs/forms/assets/rule-editor6.png)
-1. Sélectionnez **[!UICONTROL Sélectionner l’état]** dans le menu déroulant et sélectionnez **[!UICONTROL est supérieur à]**. Le champ **[!UICONTROL Saisir un nombre]** s’affiche.
-   ![Exemple d’éditeur de règles5](/help/edge/docs/forms/assets/rule-editor7.png)
+1. Sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   ![Exemple 2 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor4.png)
+Par défaut, le type de règle `Set Value Of` est sélectionné. Bien que vous ne puissiez pas changer ou modifier l’objet sélectionné, vous pouvez utiliser la liste déroulante de règles pour sélectionner un autre type de règle.\
+   ![Exemple 3 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor5.png)
+1. Ouvrez la liste déroulante des types de règles et sélectionnez le type de règle **[!UICONTROL Lorsque]**.
+   ![Exemple 4 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor6.png)
+1. Sélectionnez le menu déroulant **[!UICONTROL Sélectionner l’état]** et choisissez **[!UICONTROL est supérieur à]**. Le champ **[!UICONTROL Saisissez un nombre]** s’affiche.
+   ![Exemple 5 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor7.png)
 1. Saisissez `50000` dans le champ **[!UICONTROL Saisissez un nombre]** de la règle.
-   ![Exemple d’éditeur de règles6](/help/edge/docs/forms/assets/rule-editor8.png)
+   ![Exemple 6 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor8.png)
 Vous avez défini la condition comme `When Gross Salary is greater than 50000`. Définissez ensuite l’action à effectuer si cette condition est `True`.
 1. Dans l’instruction `Then`, sélectionnez **[!UICONTROL Afficher]** dans le menu déroulant **[!UICONTROL Sélectionner une action]**.
-   ![Exemple d’éditeur de règles7](/help/edge/docs/forms/assets/rule-editor9.png)
-1. Faites glisser et déposez le champ **[!UICONTROL Déduction supplémentaire]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** et sélectionner le champ **[!UICONTROL Déduction supplémentaire]** dans le menu pop-up, qui répertorie tous les objets de formulaire dans le formulaire.
-   ![Exemple d’éditeur de règles8](/help/edge/docs/forms/assets/rule-editor10.png)
-1. Cliquez sur **[!UICONTROL Ajouter une section Autre]** pour ajouter une autre condition pour le champ **[!UICONTROL Salaire brut]**, au cas où vous saisissez un salaire inférieur à `50000`.
-   ![Exemple d’éditeur de règles9](/help/edge/docs/forms/assets/rule-editor11.png)
+   ![Exemple 7 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor9.png)
+1. Faites glisser et déposez le champ **[!UICONTROL Déduction supplémentaire]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**, puis le champ **[!UICONTROL Déduction supplémentaire]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+   ![Exemple 8 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor10.png)
+1. Cliquez sur **[!UICONTROL Ajouter une section Else]** pour ajouter une autre condition pour le champ **[!UICONTROL Salaire brut]**, au cas où vous saisissez un salaire inférieur à `50000`.
+   ![Exemple 9 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor11.png)
 1. Sélectionnez **[!UICONTROL Masquer]** dans le menu déroulant **[!UICONTROL Sélectionner une action]** de l’instruction `Else`.
-   ![Exemple d’éditeur de règles10](/help/edge/docs/forms/assets/rule-editor12.png)
-1. Faites glisser et déposez le champ **[!UICONTROL Déduction supplémentaire]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** et sélectionner le champ **[!UICONTROL Déduction supplémentaire]** dans le menu pop-up, qui répertorie tous les objets de formulaire dans le formulaire.
-   ![Exemple d’éditeur de règles11](/help/edge/docs/forms/assets/rule-editor13.png)
+   ![Exemple 10 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor12.png)
+1. Faites glisser et déposez le champ **[!UICONTROL Déduction supplémentaire]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**, puis le champ **[!UICONTROL Déduction supplémentaire]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+   ![Exemple 11 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor13.png)
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle.
 La règle s’affiche comme suit dans l’éditeur de règles.
-   ![Exemple d’éditeur de règles12](/help/edge/docs/forms/assets/rule-editor14.png)
+   ![Exemple 12 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor14.png)
 
 >[!NOTE]
 >
-> Vous pouvez également créer une règle Afficher dans le champ Déduction supplémentaire au lieu d&#39;une règle Lorsque dans le champ Salaire brut pour appliquer le même comportement.
+> Vous pouvez également créer une règle Afficher dans le champ Déduction supplémentaire, au lieu d’une règle Lorsque dans le champ Salaire brut pour mettre en œuvre le même comportement.
 
 ### 3. Ajouter des règles de calcul pour les champs du formulaire
 
-Ensuite, créez une règle pour calculer la `Taxable Income`, qui est la différence entre `Gross Salary` et `Additional Deduction` (le cas échéant). Pour ajouter une règle de calcul dans le champ **[!UICONTROL Revenu imposable]**, procédez comme suit :
+Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différence entre `Gross Salary` et `Additional Deduction` (le cas échéant). Pour ajouter une règle de calcul dans le champ **[!UICONTROL Revenu imposable]**, procédez comme suit :
 
-1. En mode création, sélectionnez le champ **[!UICONTROL Revenu imposable]** et sélectionnez l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Sélectionnez ensuite **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
-   ![Exemple d’éditeur de règles13](/help/edge/docs/forms/assets/rule-editor16.png)
+1. En mode Création, sélectionnez le champ **[!UICONTROL Revenu imposable]**, puis l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   ![Exemple 13 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
-   ![Exemple d’éditeur de règles14](/help/edge/docs/forms/assets/rule-editor17.png)
+   ![Exemple 14 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor17.png)
 
-1. Dans le champ Expression mathématique :
+1. Dans le champ de l’expression mathématique :
 
-   * Sélectionnez ou faites glisser et déposez depuis le champ **[!UICONTROL Salaire brut]** de l’onglet Objet Forms vers le premier champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
+   * Sélectionnez ou glissez-déposez, depuis l’onglet Objets de formulaire, le champ **[!UICONTROL Salaire brut]** dans le premier champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
 
    * Sélectionnez **[!UICONTROL Moins]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
-   * Sélectionnez ou faites glisser et déposez depuis le champ **[!UICONTROL Déduction supplémentaire]** de l’onglet Objet Forms vers l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
-     ![Exemple d’éditeur de règles15](/help/edge/docs/forms/assets/rule-editor18.png)
+   * Sélectionnez ou faites glisser et déposez, depuis l’onglet Objet de formulaire, le champ **[!UICONTROL Déduction supplémentaire]** dans l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
+     ![Exemple 15 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
-   Ajoutez à présent une règle pour le champ `Tax Payable `, qui est déterminée en multipliant le revenu imposable par le taux d’imposition. Pour plus de simplicité, supposons un taux d’imposition fixe de `10%`.
+   Ajoutez à présent une règle pour le champ `Tax Payable `, qui est déterminée en multipliant le revenu imposable par le taux de taxation. Pour plus de simplicité, prenons un taux de taxation fixe de `10%`.
 
-1. En mode création, sélectionnez le champ **[!UICONTROL Taxe à payer]** et sélectionnez l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Sélectionnez ensuite **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
-   ![Exemple d’éditeur de règles16](/help/edge/docs/forms/assets/rule-editor19.png)
+1. En mode Création, sélectionnez le champ **[!UICONTROL Impôt à payer]**, puis l’icône ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
+   ![Exemple 16 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor19.png)
 1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
-   ![Exemple d’éditeur de règles17](/help/edge/docs/forms/assets/rule-editor20.png)
-1. Dans le champ Expression mathématique :
+   ![Exemple 17 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor20.png)
+1. Dans le champ de l’expression mathématique :
 
-   * Sélectionnez ou faites glisser et déposez depuis le champ **[!UICONTROL Revenu imposable]** de l’onglet Objet Forms vers le premier champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
+   * Sélectionnez ou glissez-déposez, depuis l’onglet Objets de formulaire, le champ **[!UICONTROL Revenu imposable]** dans le premier champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
 
    * Sélectionnez **[!UICONTROL Multiplié par]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
-   * Sélectionnez **Nombre** dans le champ **[!UICONTROL Sélectionner une option]** et saisissez la valeur telle qu’`10` dans le champ **[!UICONTROL Saisir un nombre]**.
-     ![Exemple d’éditeur de règles18](/help/edge/docs/forms/assets/rule-editor21.png)
+   * Sélectionnez **Nombre** dans le champ **[!UICONTROL Sélectionner une option]** et saisissez la valeur `10` dans le champ **[!UICONTROL Saisir un nombre]**.
+     ![Exemple 18 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Ensuite, sélectionnez la zone en surbrillance autour du champ Expression et choisissez **[!UICONTROL Étendre l’expression]**.
-   ![Exemple d’éditeur de règles19](/help/edge/docs/forms/assets/rule-editor22.png)
-1. Dans le champ d’expression étendue, sélectionnez **[!UICONTROL divisé par]** dans le champ **[!UICONTROL Sélectionner un opérateur]** et **[!UICONTROL Nombre]** dans le champ **[!UICONTROL Sélectionner une option]**. Indiquez ensuite `100` dans le champ numérique.
-   ![Exemple d’éditeur de règles20](/help/edge/docs/forms/assets/rule-editor23.png)
+   ![Exemple 19 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor22.png)
+1. Dans le champ d’expression étendue, sélectionnez **[!UICONTROL divisé par]** dans le champ **[!UICONTROL Sélectionner un opérateur]** et **[!UICONTROL Nombre]** dans le champ **[!UICONTROL Sélectionner une option]**. Spécifiez ensuite la valeur `100` dans le champ Nombre.
+   ![Exemple 20 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
 ### 4. Prévisualiser un formulaire
 
-Désormais, lorsque vous prévisualisez le formulaire et saisissez le **Salaire brut** comme `60,000`, le champ **Déduction supplémentaire** s’affiche et les **Revenu imposable** et **Impôt à payer** sont calculés en conséquence.
+Désormais, lorsque vous prévisualisez le formulaire et saisissez `60,000` pour le **Salaire brut**, le champ **Déduction supplémentaire** s’affiche et les champs **Revenu imposable** et **Impôt à payer** sont calculés en conséquence.
 
 ![Prévisualiser un formulaire](/help/edge/docs/forms/assets/rule-editor-form.png)
 
-Outre les fonctions prêtes à l’emploi telles que Somme, Moyenne qui sont répertoriées sous Fonctions, vous pouvez [créer des fonctions personnalisées](#create-a-custom-function) pour implémenter des logiques commerciales complexes.
+Outre les fonctionnalités prêtes à l’emploi, comme Somme ou Moyenne, qui sont répertoriées sous Fonctions, vous pouvez [créer des fonctions personnalisées](#create-a-custom-function) pour implémenter les logiques métier complexes.
 
-## Fonction personnalisée dans l’éditeur de règles
+## Fonctions personnalisées dans l’éditeur de règles
 
-Forms Edge Delivery Services prend en charge les fonctions personnalisées qui permettent aux utilisateurs de définir des fonctions JavaScript pour l’implémentation de règles métier complexes. Les fonctions personnalisées étendent les fonctionnalités des formulaires en facilitant la manipulation et le traitement des données saisies afin de répondre à des exigences spécifiques.
+Forms Edge Delivery Services prend en charge les fonctions personnalisées qui permettent aux utilisateurs et utilisatrices de définir des fonctions JavaScript pour l’implémentation de règles métier complexes. Les fonctions personnalisées étendent les capacités des formulaires en facilitant la manipulation et le traitement des données saisies pour répondre aux exigences spécifiées.
 
 ### Création d’une fonction personnalisée
 
 Pour créer des fonctions personnalisées, modifiez le fichier `../[blocks]/form/functions.js`. Le processus de création comprend généralement les étapes suivantes :
 
-* **Déclaration de fonction** : définissez le nom de la fonction et ses paramètres (les entrées qu’elle accepte).
-* **Implémentation logique** : écrivez le code qui décrit les calculs ou manipulations spécifiques effectués par la fonction.
-* **Exportation de fonction** : rendez la fonction accessible dans vos règles en l’exportant à partir du fichier approprié.
+* **Déclaration de fonction** : définissez le nom de la fonction et ses paramètres (entrées qu’elle accepte).
+* **Mise en œuvre logique** : écrivez le code qui décrit les calculs ou les manipulations spécifiques effectués par la fonction.
+* **Export de fonction** : rendez la fonction accessible dans vos règles en l’exportant à partir du fichier approprié.
 
 
-Cet exemple illustre deux fonctions personnalisées telles que `getFullName` et `days` :
+Cet exemple illustre les deux fonctions personnalisées `getFullName` et `days` :
 
 ```JavaScript
 /**
@@ -352,19 +352,19 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-![Ajouter une fonction personnalisée](/help/edge/docs/forms/assets/create-custom-function.png)
+![Ajout d’une fonction personnalisée](/help/edge/docs/forms/assets/create-custom-function.png)
 
-### Utilisation d’une fonction personnalisée dans l’éditeur de règles
+### Utiliser une fonction personnalisée dans l’éditeur de règles
 
-Pour utiliser la fonction personnalisée dans l’éditeur de règles :
+Pour utiliser la fonction personnalisée dans l’éditeur de règles, procédez comme suit :
 
-1. **Ajouter la fonction** : incluez votre fonction personnalisée dans le fichier `../[blocks]/form/functions.js`. N’oubliez pas de l’ajouter à l’instruction `export` dans le fichier .
+1. **Ajouter la fonction** : incluez votre fonction personnalisée dans le fichier `../[blocks]/form/functions.js`. N’oubliez pas de l’ajouter à l’instruction `export` dans le fichier.
 1. **Déployer le fichier** : déployez le fichier `functions.js` mis à jour dans votre projet GitHub et vérifiez la création.
-1. **Utilisation de la fonction** : accédez à la fonction dans l’éditeur de règles de votre formulaire en sélectionnant l’option `Function Output` dans le champ **[!UICONTROL Sélectionner une action]**.
+1. **Utilisation des fonctions** : accédez à la fonction dans l’éditeur de règles de votre formulaire en sélectionnant l’option `Function Output` dans le champ **[!UICONTROL Sélectionner une action]**.
 
-   ![Fonction personnalisée dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+   ![Fonctions personnalisées dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Prévisualiser le formulaire** : prévisualisez votre formulaire avec la fonction nouvellement implémentée.
+1. **Prévisualiser le formulaire** : prévisualisez votre formulaire avec la fonction nouvellement mise en œuvre.
 
 ## Articles connexes
 

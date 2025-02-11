@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Cliquez sur ![Icône Supprimer le site Edge Delivery](https://spectrum.adobe.com
 
      ![Ajout d’un site Edge Delivery depuis l’onglet Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Dans le coin supérieur gauche de la page, cliquez sur l’![icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+   * Dans le coin supérieur gauche de la page, cliquez sur l’![icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche. Sous l’en-tête **Services**, cliquez sur ![Icône Page web pour les sites Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites Edge Delivery**.
 Dans le tableau du site Edge Delivery, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez supprimer le site. Cliquez sur ![Icône Supprimer le site Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Supprimer**, puis cliquez de nouveau sur **Supprimer** pour confirmer la suppression du site.
 
      ![Ajout d’un site Edge Delivery à partir du bouton Sites Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)

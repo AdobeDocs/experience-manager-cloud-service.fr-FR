@@ -7,16 +7,16 @@ role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Configurer vos feuilles de calcul Google Sheets ou fichiers Microsoft Excel pour commencer à accepter des données
 
 
-Une fois que vous avez [créé et prévisualisé le formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données. Vous pouvez
+Une fois que vous avez [créé et prévisualisé le formulaire](/help/edge/docs/forms/create-forms.md), il est temps d’activer la feuille de calcul correspondante pour commencer à recevoir des données. Vous pouvez :
 
-* [Activez manuellement la feuille de calcul pour accepter les données](#manually-enable-the-spreadsheet-to-accept-data)
+* [Activer manuellement la feuille de calcul pour accepter des données](#manually-enable-the-spreadsheet-to-accept-data)
 * [Utiliser des API d’administration pour permettre à une feuille de calcul d’accepter des données](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Écosystème de création basé sur des documents](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
@@ -154,7 +154,7 @@ Pour utiliser les API d’administration afin de permettre à une feuille de cal
 
    Votre formulaire peut maintenant accepter des données. Vous constatez également les modifications suivantes dans votre feuille de calcul :
 
-## Modifications automatiques de la feuille une fois qu’elle est activée pour accepter les données.
+## Modifications automatiques de la feuille une fois qu’elle est activée pour accepter des données.
 
 Une fois que la feuille est configurée pour recevoir des données, vous constatez les modifications suivantes dans votre feuille de calcul :
 

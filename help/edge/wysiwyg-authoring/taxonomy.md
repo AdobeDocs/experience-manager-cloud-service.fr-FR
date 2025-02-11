@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -78,11 +78,11 @@ Vous commencez à modifier une page de taxonomie comme toute autre page dans AEM
 
 La page affichée dans l’éditeur de page est en lecture seule, car le contenu de la taxonomie est généré automatiquement à partir des balises et espaces de noms sélectionnés. Ils agissent comme une sorte de filtre pour générer automatiquement le contenu de la taxonomie. Il n’y a donc aucune raison de modifier directement la page dans l’éditeur.
 
-AEM met automatiquement à jour le contenu de la page de taxonomie lorsque vous mettez à jour les balises et les espaces de noms sous-jacents. Cependant, vous devez [republier la taxonomie](#publishing) après toute modification afin de rendre ces modifications disponibles pour vos utilisateurs et utilisatrices.
+AEM met automatiquement à jour le contenu de la page de taxonomie lorsque vous mettez à jour les balises et les espaces de noms sous-jacents. Cependant, vous devez [republier la taxonomie](#publishing) après toute modification pour que ces modifications soient disponibles pour vos utilisateurs et utilisatrices.
 
 ## Mise à jour de paths.json pour la publication de taxonomie {#paths-json}
 
-Comme lors de la [gestion et publication de données tabulaires pour votre site Edge Delivery Services ](/help/edge/wysiwyg-authoring/tabular-data.md), vous devez mettre à jour le fichier `paths.json` de votre projet pour permettre la publication des données de votre taxonomie.
+Comme pour la [gestion et publication de données tabulaires pour votre site Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), vous devez mettre à jour le fichier `paths.json` de votre projet pour permettre la publication des données de taxonomie.
 
 1. Ouvrez la racine de votre projet dans GitHub.
 
@@ -112,13 +112,13 @@ Ce processus ne doit être effectué qu’une seule fois par page de taxonomie. 
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemin d’accès, consultez le document [ Mappage de chemin d’accès pour les Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
+>Pour plus d’informations sur les mappages de chemin d’accès, consultez le document [Mappage de chemin d’accès pour Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Publication d’une taxonomie {#publishing}
 
 Une taxonomie n’est pas disponible pour l’éditeur universel ou vos utilisateurs et utilisatrices tant qu’elle n’a pas été publiée.
 
-Les pages de taxonomie sont publiées comme toute autre page en [à l’aide des icônes **Quick Publish** ou **Gérer la publication** de la barre d’outils](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Les pages de taxonomie sont publiées comme toute autre page en [à l’aide des icônes **Publication rapide** ou **Gérer la publication** de la barre d’outils](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Vous devez republier votre page de taxonomie à chaque fois que vous effectuez l’une des opérations suivantes :
 
@@ -168,16 +168,16 @@ Ces données JSON sont automatiquement mises à jour lorsque vous mettez à jour
 
 [Si vous conservez les balises dans plusieurs langues](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) vous pouvez accéder à ces langues en transmettant le code de langue ISO2 comme valeur d’un paramètre de `sheet=`.
 
-## Exposition de propriétés de balise supplémentaires {#additional-properties}
+## Exposition des propriétés de balise supplémentaires {#additional-properties}
 
-Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illustré [dans l’exemple précédent](#accessing). Vous pouvez configurer votre taxonomie pour afficher des propriétés de balise supplémentaires. Dans cet exemple, nous allons exposer la description de la balise .
+Par défaut, votre taxonomie contiendra des valeurs `tag` et `title` comme illustré [dans l’exemple précédent](#accessing). Vous pouvez configurer votre taxonomie pour afficher des propriétés de balise supplémentaires. Dans cet exemple, nous allons exposer la description de la balise.
 
 1. Utilisez la console Sites pour sélectionner la taxonomie que vous avez créée.
 1. Appuyez ou cliquez sur l’icône **Propriétés** dans la barre d’outils.
 1. Dans la section **Propriétés supplémentaires**, appuyez ou cliquez sur **Ajouter** pour ajouter un champ.
-1. Dans le nouveau champ, saisissez le nom de la propriété JRC à afficher. Dans ce cas, saisissez `jcr:description` pour la description de la balise.
+1. Dans le nouveau champ, saisissez le nom de la propriété JRC à exposer. Dans ce cas, saisissez `jcr:description` pour la description de la balise.
 1. Appuyez et cliquez sur **Enregistrer et fermer**.
-1. La taxonomie étant toujours sélectionnée, appuyez ou cliquez sur **Quick Publish** dans la barre d’outils.
+1. Laissez la taxonomie sélectionnée et appuyez ou cliquez sur **Publication rapide** dans la barre d’outils.
 
 Désormais [lorsque vous accédez à votre taxonomie](#accessing), la description de la balise (ou toute propriété que vous avez choisi d’exposer) est incluse dans le fichier JSON.
 

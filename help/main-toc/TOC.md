@@ -576,7 +576,7 @@ ht-degree: 99%
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
+      + [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -636,7 +636,7 @@ ht-degree: 99%
          + [Configurer un domaine personnalisé](/help/assets/configure-custom-domain.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
-      + [Commencer](/help/assets/get-started-assets-view.md)
+      + [Prise en main](/help/assets/get-started-assets-view.md)
       + [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
       + [Types de fichiers pris en charge et cas d’utilisation](/help/assets/supported-file-formats-assets-view.md)
       + [Afficher les ressources](/help/assets/navigate-assets-view.md)
@@ -656,7 +656,7 @@ ht-degree: 99%
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
       + [Retraitement](/help/assets/reprocessing-assets-view.md)
       + [Gérer les balises](/help/assets/tagging-management-assets-view.md)
-      + [Informations de traçabilité du contenu](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [Publier des ressources sur AEM et Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Extensibilité de l’interface utilisateur de la vue Assets d’AEM](/help/assets/aem-assets-view-ui-extensibility.md)
    + Hub de contenus {#content-hub}
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
-      + [Forms adaptatif Publish à l’aide de la fonction Gérer la publication](/help/forms/manage-publication.md)
+      + [Publier les formulaires adaptatifs à l’aide de la fonction Gérer la publication](/help/forms/manage-publication.md)
    + Commencer {#getting-started-forms}
       + [Consulter des cas d’utilisation et configurer l’environnement de développement](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Créer le formulaire de demande de prêt](/help/forms/create-adaptive-form-tutorial.md)
@@ -774,7 +774,7 @@ ht-degree: 99%
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
             + [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Modèles d’e-mail dans Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [Modèles d’e-mail dans les formulaires adaptatifs](/help/forms/html-email-templates-in-adaptive-forms.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
                + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
@@ -943,7 +943,7 @@ ht-degree: 99%
       + [Solution de commerce tierce](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
-      + [Commencer](/help/commerce-cloud/getting-started.md)
+      + [Prise en main](/help/commerce-cloud/getting-started.md)
       + Création {#authoring}
          + [Expériences de Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [Console du produit](/help/commerce-cloud/authoring/product-cockpit.md)
@@ -1014,7 +1014,7 @@ ht-degree: 99%
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + Prise en main {#getting-started-edge-delivery-services-forms}
-         + [Commencer](/help/edge/docs/forms/tutorial.md)
+         + [Prise en main](/help/edge/docs/forms/tutorial.md)
          + [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
          + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
@@ -1025,10 +1025,10 @@ ht-degree: 99%
          + [Expressions regex pour les validations](/help/edge/docs/forms/regex-forms.md)
          + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
          + [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
-      + {#universal-editor} WYSIWYG
-         + [Présentation - Éditeur universel pour Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Commencer](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Ajouter des règles à à à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+      + WYSIWYG {#universal-editor}
+         + [Vue d’ensemble - Éditeur universel pour les Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Prise en main](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Ajouter des règles à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
          + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
          + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
@@ -1204,7 +1204,7 @@ ht-degree: 99%
          + [Gérer des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Mappages de domaine {#cdn-configurations}
          + [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Gestion des mappages de domaine](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [Gérer les mappages de domaine](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listes d’adresses IP autorisées {#ip-allow-lists}
          + [Présentation des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1277,7 +1277,7 @@ ht-degree: 99%
          + [Personnalisation](/help/implementing/universal-editor/customizing.md)
          + [Architecture](/help/implementing/universal-editor/architecture.md)
          + [Authentification](/help/implementing/universal-editor/authentication.md)
-         + [Commencer](/help/implementing/universal-editor/getting-started.md)
+         + [Prise en main](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
          + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
          + [Appels](/help/implementing/universal-editor/calls.md)
