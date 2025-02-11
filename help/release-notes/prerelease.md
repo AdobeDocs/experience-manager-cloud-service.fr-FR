@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service offre régulièrement de nouvelles fonctionnalités, conformément à la feuille de route des versions de [Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
+Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
 
 Pour vous familiariser avec les fonctionnalités programmées pour la prochaine mise à jour, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les modifications accessibles par le biais de l’interface utilisateur d’AEM et créer du code par rapport à toute nouvelle API en version préliminaire.
 
@@ -50,7 +50,7 @@ Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre
 
 ## Marquer votre calendrier {#mark-calendars}
 
-Le calendrier des mises à jour est établi bien à l’avance et les dates de publication sont publiées le [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
+Le calendrier des mises à jour est établi bien à l’avance et les dates de publication sont publiées sur [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
 
 Notez les dates dans votre agenda afin de consacrer du temps à l’examen et aux tests des prochaines fonctionnalités.
 
@@ -83,7 +83,7 @@ Pour activer le canal de version préliminaire dans un environnement cloud, vous
 
 1. Sélectionnez l’environnement dans lequel vous souhaitez activer le canal de version préliminaire, puis accédez à **Programme** > **Environnement** > **Configuration de l’environnement** pour le configurer.
 
-1. Ajoutez une nouvelle [variable d’environnement](../implementing/cloud-manager/environment-variables.md)
+1. Ajoutez une nouvelle [variable d’environnement](../implementing/cloud-manager/environment-variables.md).
 
    | Nom | Valeur | Service appliqué | Type |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ Pour activer le canal de version préliminaire dans un environnement cloud, vous
 
 Vous pouvez également utiliser l’API Cloud Manager et l’interface de ligne de commande pour mettre à jour les variables d’environnement.
 
-* À l’aide du point d’entrée des variables d’environnement de l’API Cloud Manager [](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), définissez la variable d’environnement `AEM_RELEASE_CHANNEL` sur la valeur `prerelease`.
+* À l’aide du [point d’entrée des variables d’environnement de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), appliquez la variable d’environnement `AEM_RELEASE_CHANNEL` à la valeur `prerelease`.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

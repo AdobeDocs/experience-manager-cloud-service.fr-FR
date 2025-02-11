@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Les clientes et clients peuvent prendre des mesures proactives pour limiter les 
 
 Par exemple, au niveau de la couche Apache, les clientes et clients peuvent configurer l’une des options suivantes : [module Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
 
-Comme cet article le décrit, les règles de filtrage du trafic peuvent être déployées sur le réseau CDN géré par l’Adobe, à l’aide du Cloud Manager [pipelines de configuration](/help/operations/config-pipeline.md). Outre les règles de filtre de trafic basées sur des propriétés telles que l’adresse IP, le chemin d&#39;accès et les en-têtes, ou des règles basées sur la définition de limites de débit, les clientes et clients peuvent également acquérir sous licence une sous-catégorie puissante de règles de filtre de trafic appelées règles WAF.
+Comme le décrit cet article, des règles de filtrage du trafic peuvent être déployées sur le réseau CDN géré par Adobe à l’aide des [pipelines de configuration](/help/operations/config-pipeline.md) de Cloud Manager. Outre les règles de filtre de trafic basées sur des propriétés telles que l’adresse IP, le chemin d&#39;accès et les en-têtes, ou des règles basées sur la définition de limites de débit, les clientes et clients peuvent également acquérir sous licence une sous-catégorie puissante de règles de filtre de trafic appelées règles WAF.
 
 ## Processus suggéré {#suggested-process}
 
@@ -105,11 +105,11 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
 
 1. Si les règles WAF sont sous licence, vous devez activer la fonctionnalité dans Cloud Manager, comme décrit ci-dessous pour les scénarios de programme nouveaux et existants.
 
-   1. Pour configurer WAF sur un nouveau programme, cochez la case **Protection WAF-DDOS** dans l&#39;onglet **Sécurité** lorsque vous [ajoutez un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+   1. Pour configurer le WAF sur un nouveau programme, cochez la case **Protection WAF-DDOS** dans l’onglet **Sécurité** lorsque vous [ajoutez un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
    1. Pour configurer le WAF sur un programme existant, [modifiez votre programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) et dans l’onglet **Sécurité**, décochez ou cochez la case **WAF-DDOS** à tout moment.
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager). Le pipeline référencera un dossier de `config` de niveau supérieur avec le fichier `cdn.yaml` placé quelque part en dessous, voir [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager). Le pipeline fera référence à un dossier `config` de niveau supérieur avec le fichier `cdn.yaml` placé quelque part en dessous. Voir la section [Utiliser des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxe des règles de filtrage de trafic {#rules-syntax}
 

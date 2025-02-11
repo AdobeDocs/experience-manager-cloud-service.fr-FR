@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Cet article vise à vous présenter les différentes fonctionnalités de mise en
 
 >[!TIP]
 >
->Outre cette documentation, vous trouverez également une série de tutoriels conçus pour vous guider dans les différentes options avancées de mise en réseau disponibles à cet [emplacement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+>Outre cette documentation, il existe également une série de tutoriels conçus pour vous guider dans les différentes options de mise en réseau avancée à cet [emplacement](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 ## Vue d’ensemble {#overview}
 
@@ -41,7 +41,7 @@ Cet article décrit en détail chacune de ces options et les raisons pour lesque
 Lors de la configuration de fonctionnalités de mise en réseau avancée, les restrictions suivantes s’appliquent.
 
 * Un programme peut fournir une option de mise en réseau avancée unique (sortie de port flexible, adresse IP de sortie dédiée ou VPN).
-* La mise en réseau avancée n’est pas disponible pour les [programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+* La mise en réseau avancée n’est pas disponible pour les [programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 * Une personne doit bénéficier du rôle **Administrateur ou administratrice** pour ajouter et configurer l’infrastructure réseau dans votre programme.
 * L’environnement de production doit être créé avant que l’infrastructure réseau puisse être ajoutée à votre programme.
 * Votre infrastructure réseau doit se trouver dans la même région que la région principale de votre environnement de production.
@@ -54,8 +54,8 @@ Lors de la configuration de fonctionnalités de mise en réseau avancée, les re
 
 L’utilisation de fonctionnalités de mise en réseau avancée nécessite deux étapes :
 
-1. La configuration de l’option de mise en réseau avancée, qu’il s’agisse de [sortie de port flexible](#flexible-port-egress), [adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou [VPN](#vpn), doit d’abord être effectuée au niveau du programme.
-1. Pour être utilisée, l’option de mise en réseau avancée doit alors être [ activée au niveau de l’environnement](#enabling).
+1. Configuration de l’option de mise en réseau avancée, selon la priorité d’application de la [sortie de port flexible](#flexible-port-egress), de l’[adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou du [VPN](#vpn) au niveau du programme.
+1. Pour être utilisée, l’option de mise en réseau avancée doit ensuite être [activée au niveau de l’environnement](#enabling).
 
 Les deux étapes peuvent être effectuées à l’aide de l’interface utilisateur de Cloud Manager ou de l’API Cloud Manager.
 
@@ -109,7 +109,7 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 
 >[!TIP]
 >
->Le jeu complet de paramètres, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être consultés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Routage du trafic {#flexible-port-egress-traffic-routing}
 
@@ -220,7 +220,7 @@ La même adresse IP dédiée est appliquée à tous les environnements d’un pr
 
 Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un jeu d’adresses IP partagées avec d’autres clientes et clients d’AEM as a Cloud Service.
 
-La configuration de l’adresse IP sortante dédiée est similaire à la [sortie de port flexible](#flexible-port-egress). La principale différence est qu’après la configuration, le trafic sortira toujours d’une adresse IP dédiée et unique. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer, mais si elle le doit malgré tout, vous recevez une notification avancée.
+La configuration de l’adresse IP de sortie dédiée est identique à celle d’une [sortie de port flexible](#flexible-port-egress). La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique après l’application de cette configuration. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer, mais si elle le doit malgré tout, vous recevez une notification avancée.
 
 >[!TIP]
 >
@@ -270,7 +270,7 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 
 >[!TIP]
 >
->Le jeu complet de paramètres, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être consultés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ### Routage du trafic {#dedicated-egress-ip-traffic-routing}
 
@@ -398,7 +398,7 @@ Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédi
 
 Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cela peut être utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter à des fournisseurs SaaS tels qu’un fournisseur CRM qui prend en charge le VPN.
 
-La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez les informations de la colonne **Instructions de configuration basées sur les routes** de [cette liste d’appareils](https://learn.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configurez l’appareil comme décrit dans le tableau.
+La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez les informations de la colonne **Instructions de configuration basées sur l’itinéraire** dans [cette liste d’appareils](https://learn.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configurez l’appareil comme décrit dans le tableau.
 
 >[!NOTE]
 >
@@ -463,7 +463,7 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 
 >[!TIP]
 >
->Le jeu complet de paramètres, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>[Il est possible de consulter dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) le jeu complet de paramètre, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard.
 
 ### Routage du trafic {#vpn-traffic-routing}
 
@@ -651,11 +651,11 @@ Notez que même en l’absence de règles de routage du trafic de l’environnem
 
 >[!TIP]
 >
->Le jeu complet de paramètres, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>[Il est possible de consulter dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) le jeu complet de paramètre, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard.
 
 ## Modifier et supprimer des configurations de mise en réseau avancée dans des environnements {#editing-deleting-environments}
 
-Après [activation des configurations réseau avancées dans les environnements](#enabling), vous pouvez mettre à jour les détails de ces configurations ou les supprimer.
+Après l’[activation de configurations de mise en réseau avancée pour les environnements](#enabling), vous pouvez mettre à jour les détails de ces configurations ou les supprimer.
 
 >[!NOTE]
 >
@@ -673,7 +673,7 @@ Après [activation des configurations réseau avancées dans les environnements]
 
 1. Dans le menu représentant des points de suspension, sélectionnez **Modifier** ou **Supprimer**.
 
-   * Si vous choisissez **Modifier**, mettez à jour les informations selon les étapes décrites dans la section précédente, [Activation à l’aide de l’interface utilisateur](#enabling-ui), puis cliquez sur **Enregistrer**.
+   * Si vous choisissez **Modifier**, mettez à jour les informations selon les étapes décrites dans la section précédente [Activer à l’aide de l’interface d’utilisation](#enabling-ui) et cliquez sur **Enregistrer**.
    * Si vous choisissez **Supprimer**, confirmez la suppression dans la boîte de dialogue de **Suppression de la configuration réseau** avec **Supprimer** ou abandonnez avec **Annuler**.
 
 Les modifications sont répercutées sur l’onglet **Environnements**.
@@ -684,7 +684,7 @@ Pour désactiver la mise en réseau avancée pour un environnement en particulie
 
 >[!TIP]
 >
->Le jeu complet de paramètres, la syntaxe exacte et des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être consultés dans la documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 ## Modifier et supprimer l’infrastructure réseau d’un programme {#editing-deleting-program}
 
@@ -727,9 +727,9 @@ Il n’est possible de configurer qu’un seul type d’infrastructure de mise e
 
 Si vous décidez que vous avez besoin d’un autre type d’infrastructure de mise en réseau avancée que celui que vous avez déjà configuré, supprimez le type existant et créez-en un nouveau. Procédez comme suit :
 
-1. [Supprimer la mise en réseau avancée dans tous les environnements](#editing-deleting-environments).
-1. [Supprimez l’infrastructure réseau avancée](#editing-deleting-program).
-1. Créez le type d’infrastructure réseau avancé dont vous avez désormais besoin, soit [sortie de port flexible](#flexible-port-egress), [adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou [VPN](#vpn).
+1. [Désactivez la mise en réseau avancée dans tous les environnements](#editing-deleting-environments).
+1. [Supprimez l’infrastructure de mise en réseau avancée](#editing-deleting-program).
+1. Créez le type d’infrastructure de mise en réseau avancée dont vous avez besoin, au choix : [sortie de port flexible](#flexible-port-egress), [adresse IP de sortie dédiée](#dedicated-egress-ip-address) ou [VPN](#vpn).
 1. [Réactivez la mise en réseau avancée au niveau de l’environnement](#enabling).
 
 >[!WARNING]
