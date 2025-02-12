@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 35%
+source-wordcount: '910'
+ht-degree: 25%
 
 ---
 
@@ -69,11 +69,41 @@ Désormais, votre site est prêt à utiliser le pipeline front-end. Pour en savo
 
 ## Pipeline front-end et domaines personnalisés {#custom-domains}
 
+Le pipeline front-end peut être utilisé avec la fonctionnalité de domaines personnalisés [Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) mais tenez compte des exigences suivantes lorsque vous utilisez les deux fonctionnalités ensemble.
+
+### Fichiers front-end statiques {#static-files}
+
+Les ressources front-end statiques déployées via le pipeline front-end sont, par défaut, diffusées à partir du domaine statique prédéfini d’Adobe.
+
+Si vous avez besoin d’un domaine personnalisé pour les ressources front-end, vous pouvez installer un domaine personnalisé au niveau de publication et configurer le Dispatcher pour acheminer des chemins spécifiques (tels que `/static/`) vers l’emplacement d’hébergement statique d’Adobe. Cette méthode nécessite la mise à jour de vos [règles Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher) pour transférer et mettre en cache correctement les requêtes pour les ressources statiques.
+
+Une fois que vous avez configuré votre domaine personnalisé et votre Dispatcher, vous pouvez configurer AEM pour diffuser vos ressources front-end à partir du domaine statique.
+
+### Configuration {#configuration}
+
 Comme décrit dans la section [Détails techniques](#technical-details), l’activation de la fonctionnalité de pipeline front-end pour un site crée un `SiteConfig` et des nœuds `HtmlPageItemsConfig` sous `/conf/<site-name>/sling:configs`.
 
-Si vous souhaitez utiliser la fonctionnalité [Domaines personnalisés Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) pour votre site avec le pipeline front-end, des propriétés supplémentaires doivent être ajoutées à ces nœuds.
+Si vous souhaitez utiliser la fonctionnalité de domaines personnalisés Cloud Manager pour votre site avec le pipeline front-end pour les ressources d’état, des propriétés supplémentaires doivent être ajoutées à ces nœuds.
 
 1. Définissez la propriété `customFrontendPrefix` dans `SiteConfig` pour le site.
+   1. Accédez à `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig`.
+   1. Ajoutez ou mettez à jour le `customFrontendPrefix = "https://your-custom-domain.com/static/"` de propriété.
 1. Cette opération met à jour la valeur `prefixPath` du `HtmlPageItemsConfig` avec le domaine personnalisé.
+   1. Accédez à `/conf/<site-name>/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`.
+   1. Vérifiez que le `prefixPath` reflète votre domaine personnalisé, par exemple `prefixPath = "https://your-custom-domain.com/static/<hash>/..."`.
+   * Cette valeur peut également être remplacée manuellement selon les besoins.
+1. Vérifiez votre configuration.
+   1. Après le déploiement, vérifiez que les pages référencent correctement les artefacts de thème du domaine personnalisé.
+   1. Ouvrez les outils de développement de votre navigateur et examinez les chemins d’accès aux fichiers `theme.css` et `theme.js` pour vérifier qu’ils sont chargés à partir du domaine approprié.
 
-Les pages du site font ensuite référence aux artefacts de thème de cette URL mise à jour.
+Les pages du site font ensuite référence aux artefacts de thème de cette URL mise à jour. Le Dispatcher achemine ensuite les requêtes pour ces ressources vers le domaine statique.
+
+## Bonnes pratiques pour les développeurs front-end {#best-practices}
+
+Si vous devez développer et tester les ressources front-end localement avant de les déployer via le pipeline front-end, envisagez les approches suivantes :
+
+* Utilisez le [mode proxy du créateur de thèmes de site](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) pour remplacer les artefacts de thème localement à des fins de test.
+* Servez manuellement vos fichiers de thème à partir d’un serveur de développement local et mettez à jour le `prefixPath` en `HtmlPageItemsConfig` de correspondre à l’adresse du serveur local.
+* Assurez-vous que la mise en cache du navigateur est désactivée pendant le test pour afficher les mises à jour en direct.
+
+Pour plus d’informations sur le développement front-end local, consultez la documentation du [ Créateur de thèmes de site ](https://github.com/adobe/aem-site-theme-builder).
