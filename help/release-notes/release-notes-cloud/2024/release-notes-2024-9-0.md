@@ -3,7 +3,8 @@ title: Notes de mise à jour de la version 2024.9.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2024.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -122,8 +123,8 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 * Les champs Commerce ne sont pas correctement intégrés à l’éditeur de schéma de métadonnées Assets.
 * Problème de glisser-déposer pour le multichamp Produits du carrousel.
 * Problème de glisser-déposer pour le multichamp Catégorie de carrousel.
-* Le fait de cliquer ne fonctionne pas pour les menus dans les Informations sur la page de l’éditeur de catégories et de produits.
-* Le numéro de commande n’est pas visible dans la page de confirmation de commande.
+* Le clic ne fonctionne pas pour les menus dans les Informations sur la page de la page de l’éditeur de catégories et de produits.
+* Le numéro de commande n’est pas visible sur la page de confirmation de commande.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -133,11 +134,11 @@ Le réseau CDN géré par Adobe prend désormais en charge [Edge Side Includes
 
 ### Authentification de base sur le réseau de diffusion de contenu {#basicauth-cdn}
 
-Protégez certaines ressources de contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur ou d’utilisatrice et un mot de passe. Cette fonctionnalité cible principalement les cas d’utilisation de l’authentification légère, comme les parties prenantes de l’entreprise qui examinent le contenu, plutôt que de servir de solution complète pour les droits d’accès des utilisateurs et utilisatrices finaux. La liste des noms d’utilisateur et mots de passe est gérée par le biais d’un fichier de configuration dans Git déployé via le pipeline de configuration, avec une référence aux variables d’environnement Cloud Manager de type secret. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protégez certaines ressources de contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur ou d’utilisatrice et un mot de passe. Cette fonctionnalité cible principalement les cas d’utilisation de l’authentification légère, comme les parties prenantes de l’entreprise qui examinent le contenu, plutôt que de servir de solution complète pour les droits d’accès des utilisateurs et utilisatrices finaux. La liste des noms d’utilisateur et mots de passe est gérée à l’aide d’un fichier de configuration dans Git déployé via le pipeline de configuration, avec une référence aux variables d’environnement Cloud Manager de type secret. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Redirections côté client {#client-side-redirects}
 
-Déclarez les [redirections de navigateur](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) dans un fichier de configuration Git déployé et évalué sur le réseau de diffusion de contenu. Cela peut s’avérer utile dans le cas de scénarios tels que la suppression de pages, la modification de la structure du site et l’optimisation de l’optimisation pour les moteurs de recherche.
+Déclarez [ redirections de navigateur ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) dans un fichier de configuration Git qui sont déployées et évaluées sur le réseau CDN. Cela peut s’avérer utile dans certains cas, notamment pour supprimer des pages, modifier la structure du site et optimiser l’optimisation du référencement.
 
 ### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
 
@@ -153,11 +154,11 @@ Comme pour AEM 6.5, Apache/le Dispatcher ingère des mappages de réécriture p
 
 ### Pipeline de configuration des RDE (programme d’adoption précoce) {#config-pipeline-rdes-early-adopter}
 
-Le [pipeline de configuration](/help/operations/config-pipeline.md) est utilisé pour déployer les configurations de fichiers yaml, y compris les options CDN (règles de filtrage du trafic, transformations de requête/réponse, etc.). Rejoignez le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour déployer ces mêmes configurations dans des RDE (Rapid Development Environments) qui utilisent une interface de ligne de commande.
+Le [Pipeline de configuration](/help/operations/config-pipeline.md) est utilisé pour déployer les configurations de fichier yaml, y compris les options de réseau CDN (règles de filtrage du trafic, transformations de requête/réponse, etc.). Rejoignez le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour déployer ces mêmes configurations dans des RDE (Rapid Development Environments) qui utilisent une interface de ligne de commande.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.7.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -61,27 +61,27 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez
 
 **Charger les ressources avec le sélecteur de ressources**
 
-Le sélecteur de ressources permet désormais aux auteurs de contenu de charger les ressources finales directement à partir du sélecteur, en les faisant glisser ou en les parcourant depuis le système de fichiers local. Cette fonctionnalité permet de charger les ressources finales dans la gestion des ressources numériques à partir de l’application de votre choix.
+Le sélecteur de ressources offre désormais aux auteurs de contenu la possibilité de charger les ressources finales directement à partir du sélecteur, par glisser-déposer ou en accédant au système de fichiers local. Cette fonctionnalité permet de charger les ressources finales dans la gestion des ressources numériques à partir de l’application de votre choix.
 
-### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
+### Fonctionnalité d’accès anticipé dans Dynamic Media {#dm-early-access}
 
 **Sous-titres vidéo générés par l’IA**
 
-Les sous-titres vidéo générés par l’IA dans Adobe Dynamic Media utilisent une intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et améliorer l’expérience de l’utilisateur en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés à des fins de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent ou préfèrent la prise en charge vidéo textuelle.
+Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, [ créez et envoyez un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nouvelles fonctionnalités de la vue Assets {#assets-view-new-features}
 
-**Intégration des informations de traçabilité du contenu**
+**Intégration de Content Credentials**
 
-Experience Manager Assets prend désormais en charge les informations de traçabilité du contenu pour les formats d’image pris en charge. Cette fonctionnalité fournit des informations sur la traçabilité de la ressource et sur sa création, y compris si elle a été modifiée à l’aide de GenAI.
+Experience Manager Assets prend désormais en charge Content Credentials pour les formats d’image pris en charge. Cette fonctionnalité fournit des informations sur la parenté de la ressource et sur la manière dont elle a été créée, y compris si elle a été modifiée à l’aide de GenAI.
 
-![Informations de traçabilité du contenu](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Prévisualisations du contenu du dossier**
 
-Experience Manager Assets affiche désormais des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu, ce qui améliore la visibilité des ressources disponibles dans le référentiel AEM Assets.
+Experience Manager Assets affiche désormais des aperçus visuels du contenu du dossier sur la miniature du dossier lors de l’exploration ou de la recherche de contenu, ce qui améliore la capacité de découverte des ressources disponibles dans le référentiel AEM Assets.
 
 <!--
 
@@ -102,7 +102,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Éditeur de règles visuel amélioré pour les formulaires adaptatifs basés sur les composants principaux
 
-Les auteurs de formulaires adaptatifs peuvent utiliser des champs de formulaire répétables et des fonctions d’éditeur de règles visuelles prêtes à l’emploi pour créer une logique métier complexe dans les formulaires sans avoir besoin de personnalisation ni de prise en charge de la part de l’équipe de développement.
+Les auteurs de formulaires adaptatifs peuvent utiliser des champs de formulaire répétables et des fonctions d’éditeur de règles visuelles prêtes à l’emploi pour créer une logique commerciale complexe dans les formulaires sans avoir besoin d’être personnalisés ou pris en charge par l’équipe de développement.
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 
@@ -112,7 +112,7 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Créer des formulaires adaptatifs à l’aide de l’éditeur universel
 
-Tirez parti de l’[éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) d’Adobe Experience Manager pour créer des formulaires adaptatifs à l’aide du glisser-déposer WYSIWYG fourni via le service Edge Delivery pour les expériences d’inscription découplées et couplées. Les auteurs de formulaires adaptatifs peuvent facilement créer et lancer des expériences pour les variantes des formulaires dans les pages web. Cette fonctionnalité leur permet de déterminer les expériences les plus performantes pour les utilisateurs finaux.
+Tirez parti de l’[éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) d’Adobe Experience Manager pour créer des formulaires adaptatifs à l’aide du glisser-déposer WYSIWYG fourni via le service Edge Delivery pour les expériences d’inscription découplées et couplées. Les auteurs de formulaires adaptatifs peuvent facilement créer et lancer des expériences pour des variantes des formulaires dans les pages web. Cette fonctionnalité leur permet de déterminer les expériences les plus performantes pour les utilisateurs finaux.
 
 >[!IMPORTANT]
 >
@@ -122,9 +122,9 @@ Tirez parti de l’[éditeur universel](https://experienceleague.adobe.com/fr/do
 
 ### Purger le contenu sur le réseau CDN avec une clé API en libre-service {#purge-cdn}
 
-La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser du contenu mis à jour immédiatement, il peut être bénéfique de purger directement le cache CDN.
+La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement le contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau CDN.
 
-[Découvrez comment](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) utiliser en libre-service la configuration d’un jeton API de purge à l’aide du pipeline de configuration Cloud Manager, afin que vous puissiez [appeler les API de purge](/help/implementing/dispatcher/cdn-cache-purge.md), avec l’une de ces variations :
+[Découvrez comment ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) en libre-service la configuration d’un jeton d’API de purge à l’aide du pipeline de configuration Cloud Manager, afin que vous puissiez [appeler les API de purge](/help/implementing/dispatcher/cdn-cache-purge.md), avec l’une des variations suivantes :
 
 * URL unique
 * Plusieurs URL à l’aide d’une balise
@@ -132,13 +132,13 @@ La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôl
 
 ### Configuration en libre-service de X-AEM-Edge-Key pour le réseau CDN géré par la clientèle {#customermanaged-keys}
 
-Auparavant, un ticket d’assistance était nécessaire pour générer la clé X-AEM-Edge-Key requise pour la configuration d’un réseau CDN géré par le client ou la cliente. Ce workflow est désormais en libre-service en déclarant la valeur de clé dans un fichier de configuration déployé à l’aide du pipeline de configuration, supprimant tout délai lors de l’intégration d’un nouvel environnement. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Auparavant, un ticket d’assistance était nécessaire pour générer la clé X-AEM-Edge-Key requise pour la configuration d’un réseau CDN géré par le client ou la cliente. Ce workflow est désormais en libre-service en déclarant la valeur de clé dans un fichier de configuration déployé à l’aide du pipeline de configuration, ce qui supprime tout retard dans l’intégration d’un nouvel environnement. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Alertes sur les règles de filtrage du trafic {#traffic-filter-rules-alerts}
 
-Les règles de filtrage du trafic, qui incluent les règles WAF (Web Application Firewall) (Pare-feu d’applications web) facultatives, vous permettent de configurer le trafic à bloquer.
+Les règles de filtrage du trafic, qui incluent les règles WAF (Web Application Firewall) sous licence facultative, vous permettent de configurer le trafic à bloquer.
 
-Désormais, vous pouvez [vous abonner aux alertes](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) chaque fois que vos règles de filtre de trafic sont déclenchées. Les notifications par e-mail du centre d’actions vous tiennent au courant lorsque certaines conditions de trafic se produisent afin que vous puissiez prendre les mesures appropriées.
+Vous pouvez désormais vous [abonner à des alertes](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) chaque fois que vos règles de filtrage du trafic sont déclenchées. Les notifications par e-mail du centre d’actions vous tiennent au courant lorsque certaines conditions de trafic se produisent afin que vous puissiez prendre les mesures appropriées.
 
 ### Programmes d’adoption précoce liés à la diffusion de contenu {#foundation-early-adopter}
 
@@ -190,7 +190,7 @@ Le centre d’actions vous avertit de manière proactive lorsqu’une ressource 
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
