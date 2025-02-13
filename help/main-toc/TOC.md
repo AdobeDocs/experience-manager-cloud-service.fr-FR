@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
       + [Redirections](/help/edge/docs/redirects.md)
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
+      + [Comment fonctionne Edge Delivery Services Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + Prise en main {#getting-started-edge-delivery-services-forms}
          + [Prise en main](/help/edge/docs/forms/tutorial.md)
          + [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [Vue d’ensemble - Éditeur universel pour les Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Prise en main](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Ajouter des règles à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Ajout de règles à à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Créer des composants personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [Utilisation de reCAPTCHA dans les formulaires](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
          + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
          + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)

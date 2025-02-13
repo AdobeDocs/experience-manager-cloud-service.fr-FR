@@ -3,13 +3,13 @@ title: Présentation de la communication interactive
 description: Concevez facilement des communications dynamiques basées sur les données avec les communications interactives AEM Forms
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 3%
 
 ---
-
 
 # Communications interactives
 
@@ -19,7 +19,17 @@ Vous pouvez utiliser notre outil de conception graphique intuitif par pointer-cl
 
 Des institutions financières qui génèrent des relevés de compte aux organismes gouvernementaux qui rationalisent les avis de prestations, les communications interactives sont l&#39;outil idéal pour créer une correspondance de haute qualité, sécurisée et conforme à la loi, facilement et efficacement.
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![Éditeur de communication interactive](/help/forms/assets/ic-editor.png)
+
 
 ## Fonctionnalités principales
 
