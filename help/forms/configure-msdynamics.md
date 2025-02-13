@@ -3,7 +3,7 @@ title: Comment configurer des modèles de données de formulaire prêts à l’e
 description: Découvrez comment intégrer Microsoft Dynamics 365 à Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 9%
@@ -68,7 +68,8 @@ Créez un compte dans le **Centre d’administration Power Platform** pour :
 
 Une fois que vous avez configuré les conditions préalables ci-dessus, vous pouvez poursuivre l’intégration de Forms adaptatif à Microsoft® Dynamics 365. Pour envoyer des données à Microsoft® Dynamics 365 lors de l’envoi du formulaire, procédez comme suit :
 
-[1. Configurez la configuration du service cloud pour Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+[1. Configuration du service cloud pour Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
 [2. Créer un modèle de données de formulaire (FDM)](#2-create-form-data-model-fdm)
 
 ### 1. Configuration du service cloud pour Microsoft Dynamics
