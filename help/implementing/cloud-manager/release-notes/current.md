@@ -1,54 +1,41 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2025.1.0 dans Adobe Experience Manager as a Cloud Service
-description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2025.2.0 dans Adobe Experience Manager as a Cloud Service
+description: En savoir plus sur la version 2025.2.0 de Cloud Manager dans AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '922'
-ht-degree: 100%
+source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
+workflow-type: tm+mt
+source-wordcount: '720'
+ht-degree: 35%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2025.1.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2025.2.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
-En savoir plus sur la version 2025.1.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
+En savoir plus sur la version 2025.2.0 de Cloud Manager dans AEM (Adobe Experience Manager) as a Cloud Service.
 
->[!NOTE]
->
->Consultez les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.1.0 de Cloud Manager dans AEM as a Cloud Service est le mercredi 22 janvier 2025.
+La date de publication de la version 2025.2.0 de Cloud Manager dans AEM as a Cloud Service a été le vendredi 13 février 2025.
 
-La prochaine version est prévue le jeudi 13 février 2025.
-
+La prochaine version est prévue le vendredi 13 mars 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **Règles de qualité du code - Mise à niveau du serveur SonarQube :** l’étape Qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version 2025.2.0 de Cloud Manager, prévue pour le jeudi 13 février 2025.
+* **Mise à jour vers les règles de qualité du code.**
+À compter du jeudi 13 février 2025, l’étape de qualité du code Cloud Manager utilise désormais une version mise à niveau de SonarQube 9.9.5.90363.
 
-  Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles dans les [Règles de Qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Les règles mises à jour, disponibles pour Cloud Manager dans AEM as a Cloud Service à [cette adresse](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), déterminent les scores de sécurité et la qualité du code pour les pipelines Cloud Manager. Cette mise à jour peut avoir un impact sur vos points de contrôle qualité et bloquer potentiellement les déploiements.
 
-  Vous pouvez consulter les nouvelles règles de façon anticipée en définissant la variable de texte de pipeline suivante :
+* **Prise en charge de la version Java 17 et Java 21.**
 
-  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
-
-  Définissez également la variable suivante pour vous assurer que l’étape de Qualité du code s’exécute pour la même validation (normalement ignorée pour le même `commitId`) :
-
-  `CM_DISABLE_BUILD_REUSE` = `true`
-
-![Page de configuration des variables](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
-
->[!NOTE]
->
->Adobe recommande de créer un pipeline de Qualité du code CI/CD, configuré sur la même branche que votre pipeline de production principal. Définissez les variables appropriées *avant* la version du 13 février 2025 pour vérifier que les nouvelles règles appliquées n’introduisent pas de bloqueurs.
-
-* **Prise en charge des versions Java 17 et Java 21 :** les clients et clientes peuvent désormais créer des versions avec Java 17 ou Java 21, ce qui leur permet d’accéder à des améliorations de performances et à de nouvelles fonctionnalités de langage. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir la section [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Lorsque la version est définie sur Java 17 ou Java 21, l’environnement d’exécution déployé est Java 21.
+  Les clients peuvent désormais créer des versions avec Java 17 ou Java 21, et ont ainsi accès aux améliorations de performances et aux nouvelles fonctionnalités de langage. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir la section [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Lorsque la version est définie sur Java 17 ou Java 21, l’environnement d’exécution déployé est Java 21.
 
    * **Activation des fonctionnalités**
       * Cette fonctionnalité sera activée pour tous les utilisateurs et utilisatrices le jeudi 13 février 2025, date coïncidant avec le déploiement par défaut de la nouvelle version de SonarQube.
@@ -59,52 +46,46 @@ La prochaine version est prévue le jeudi 13 février 2025.
       * Le déploiement progressif vers tous les environnements Cloud Manager commence en février pour les sandbox et les environnements de développement et s’étend aux environnements de production en avril.
       * Les clientes et clients qui créent avec Java 11 et qui souhaitent adopter l’environnement d’exécution Java 21 *plus tôt* peuvent contacter Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **« Configurations du réseau CDN » devient « Mappages de domaine » :** dans le cadre des améliorations de l’interface d’utilisation dans AEM Cloud Manager, le libellé « Configurations du réseau CDN » devient « Mappages de domaine ». Cette modification améliore l’alignement terminologique avec la fonctionnalité. <!-- CMGR-64738 -->
+* **99,99 % de reporting sur la disponibilité pour Edge Delivery Services.**
+Des rapports de disponibilité à 99,99 % de haute disponibilité sont désormais disponibles pour les programmes Edge Delivery Services admissibles. Pour activer cette fonctionnalité, les clients doivent intégrer leurs sites Edge Delivery Services et appliquer leur Service level agreement (SLA) à 99,99 % dans Cloud Manager.
 
-  ![« Configurations du réseau CDN » devient « Mappages de domaine » dans l’interface d’utilisation](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  Voir aussi [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Approvisionnement d’un site Edge Delivery en un clic :** Cloud Manager permet désormais aux utilisateurs et utilisatrices disposant des autorisations et licences appropriées de créer un exemple de site de Edge Delivery Services en un seul clic. Ce processus simplifié offre les fonctionnalités automatisées suivantes :
+* **Amélioration de l’expérience d’invitation des utilisateurs pour Edge Delivery Services.**
+Des améliorations ont été apportées à l’expérience d’invitation d’utilisateurs au référentiel de contenu associé à Edge Delivery Services. <!-- CMGR-65331 -->
 
-   * **Intégration GitHub** : crée automatiquement un référentiel GitHub au sein d’une organisation existante, préconfiguré avec un modèle standard pour Edge Delivery Services.
-   * **Installation de l’application AEM Code Sync** : installe l’application AEM Code Sync sur le référentiel, assurant ainsi une synchronisation et un déploiement transparents.
-   * **Configuration de la collaboration du contenu** : associe un dossier Google Drive désigné pour le stockage de contenu, fournissant ainsi un environnement collaboratif pour la gestion de contenu.
-   * **Publication de contenu** : les utilisateurs et utilisatrices peuvent désormais publier du contenu pour les sites approvisionnés directement à partir de l’interface d’utilisation de Cloud Manager, ce qui simplifie les workflows et améliore l’efficacité.
-   * **Collaboration améliorée** : la plateforme permet aux utilisateurs et utilisatrices d’ajouter plusieurs collaborateurs et collaboratrices au dossier de stockage de contenu de Google Drive, ce qui facilite le travail d’équipe et les contributions au contenu.
+* **Création automatique de profils d’administration sur les instances de publication.**
+Auparavant, Cloud Manager permettait la création manuelle de profils d’administration sur les instances de publication, mais ne prenait pas en charge la création automatique par défaut. Grâce à cette mise à jour, les profils d’administration sont désormais automatiquement créés sur les instances de publication, ce qui améliore la convivialité et réduit le temps de configuration pour les clients.
 
-  Ces améliorations visent à améliorer l’automatisation, à simplifier les processus de configuration et à améliorer la collaboration des utilisateurs et utilisatrices Edge Delivery Services. <!-- CMGR-59362 -->
+  Pour plus d’informations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
 
-  ![Approvisionnement d’un site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![Filtrage des activités du pipeline](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-  ![Boîte de dialogue Configuration du site Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+* **Transition vers OAuth pour les environnements Cloud Service.**
+Les nouveaux environnements Cloud Service utilisent désormais l’authentification service à service basée sur OAuth pour les projets d’intégration Adobe Developer Console au lieu de la méthode d’authentification JWT utilisée précédemment. L’authentification JWT est obsolète et devrait prendre fin en juin 2025.
 
-* **Prise en charge améliorée des sites Edge Delivery Services :** Cloud Manager prend désormais en charge l’intégration des derniers sites Edge Delivery Services. Cette mise à jour comprend une refactorisation complète du réseau CDN et de la pile de diffusion, ce qui se traduit par une robustesse et une maintenabilité améliorées.
+* **Prise en charge des clés privées EC (courbe elliptique) (secp384r1).**
+Cloud Manager prend désormais en charge les clés privées `secp384r1` courbe elliptique (EC), ce qui améliore la sécurité et la conformité pour les certificats SSL OV/EV gérés par le client.
+Pour plus d’informations, voir [Conditions requises pour les certificats SSL OV/EV gérés par le client](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
 
-* **Options de filtrage avancé pour les pipelines :** Cloud Manager propose désormais des options de filtrage avancé sur la page Pipelines, ce qui vous permet d’accéder rapidement aux données pertinentes et d’améliorer l’efficacité du déploiement. Voici quelques-unes des principales fonctionnalités :
+<!--
+## Early adoption program {#early-adoption}
 
-   * **Filtrage à critères multiples :** affinez les résultats de recherche avec des filtres tels que le nom du pipeline, l’environnement et le code de déploiement.
-   * **Recherche rationalisée de pipelines :** localisez facilement des pipelines spécifiques pour une navigation plus rapide et une gestion améliorée des workflows.
-
-  Globalement, ces améliorations rendent la gestion et le déploiement des pipelines plus efficaces et plus conviviaux.
-
-  ![Fonction Filtres de pipeline](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
-
-* **Configuration de réseau CDN en libre-service pour le service Edge Delivery :** les nouveaux utilisateurs et nouvelles utilisatrices du service Edge Delivery peuvent désormais configurer leur réseau CDN indépendamment via Cloud Manager. Cette mise à jour étend la prise en charge de `.hlx.page/live` à la nouvelle `.aem.page/live`, offrant ainsi une plus grande flexibilité et une configuration rationalisée pour les utilisateurs et utilisatrices.
-
-## Programme d’adoption précoce {#early-adoption}
-
-Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
-
-* **Mise à jour du programme d’adoption précoce - Prise en charge de la validation de PR pour Bitbucket et GitLab :** Cloud Manager prend désormais en charge la validation de pull request (PR) (demande de tirage) pour les versions cloud et auto-hébergées de Bitbucket et GitLab. Cette fonctionnalité permet aux clientes et clients de tester leurs modifications de code par rapport aux seuils de qualité de code d’Adobe avant de fusionner une requête de tirage. En garantissant une qualité de code supérieure avant la fusion, cette amélioration augmente considérablement le taux de réussite des modifications de code dans les pipelines de production, ce qui réduit le délai de mise sur le marché et rationalise les workflows de développement.
-
-  Pour plus d’informations sur « Apportez votre propre Git », désormais pris en charge par GitLab et Bitbucket, et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Notes de mise à jour d’octobre 2024 de Cloud Manager](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
-
-* **Environnement de test avancé :** une solution spécialement conçue pour combler le fossé entre le développement et la production. Adapté aux besoins des entreprises, cet environnement reproduit les spécifications au niveau de la production pour prendre en charge des tests d’acceptation d’utilisateur ou d’utilisatrice (UAT) précis et des évaluations de performances approfondies.
-
-  Si vous souhaitez rejoindre le programme d’adoption précoce, [remplissez ce formulaire](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) et envoyez un e-mail à [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) avec votre `OrgID`.
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
+## Correctifs
 
-<!-- ## Bug fixes -->
+* **(IU) Correction d’un problème qui empêchait la configuration du réseau CDN pour les domaines dans Cloud Manager.**
+Les clients et clientes qui tentent d’ajouter une configuration de réseau CDN dans Cloud Manager rencontrent une erreur d’écran lorsqu’ils sélectionnent un domaine dans le menu déroulant. Ce bug de l’interface utilisateur empêchait le mappage de domaine dans les environnements de production, bloquant ainsi le processus de configuration.
+
+  En outre, certains domaines sont restés inaccessibles sur le serveur principal, bien qu’ils aient été supprimés de l’interface utilisateur. Ce problème entraînait des conflits avec les configurations CDN existantes.
+
+  Ce correctif vous permet désormais de sélectionner un domaine dans la liste déroulante sans rencontrer d’erreur. Les incohérences du serveur principal qui empêchaient la reconfiguration du domaine ont été corrigées. Enfin, une validation améliorée garantit désormais que les domaines en conflit sont correctement supprimés avant de les ajouter à nouveau.<!-- CMGR-64888 -->
+* **(serveur principal) Correction d’un problème en raison duquel les notifications d’expiration SSL étaient envoyées plusieurs fois.**
+Un bug a été identifié où le planificateur de notifications d’expiration SSL, conçu pour s’exécuter une fois par jour à minuit, se déclenchait incorrectement deux fois par jour, une fois à minuit et une fois de plus à minuit:30. Ce problème entraînait l’envoi de plusieurs notifications redondantes concernant les certificats SSL arrivant à expiration.
+
+  Le planificateur de notifications s’exécute désormais correctement une seule fois par jour, comme prévu. De plus, vous ne recevez plus de notifications d’expiration SSL en double. <!-- CMGR-64748 -->
 
 
 
