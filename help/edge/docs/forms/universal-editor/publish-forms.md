@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Vous pouvez publier n’importe quel **formulaire adaptatif basé sur EDS** dans
 1. Pour vérifier le statut de publication du formulaire, cliquez de nouveau sur **Publier**.
    ![Statut de publication](/help/forms/assets/publish-status.png)
 
-1. Pour **dépublier** un formulaire, ouvrez-le dans l’éditeur, cliquez sur le menu à trois points dans le coin supérieur droit et sélectionnez **Dépublier**.
+1. Pour **dépublier** un formulaire, ouvrez-le dans l’éditeur, cliquez sur le menu à trois points dans le coin supérieur droit, puis cliquez sur **Dépublier**.
    ![ Dépublier ](/help/forms/assets/unpublish--form.png)
 
 ## Activez l’envoi de formulaire sur Edge Delivery en configurant un filtre Référent pour AEM Publisher

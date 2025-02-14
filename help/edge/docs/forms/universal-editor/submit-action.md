@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 12%
@@ -46,7 +46,7 @@ Pour configurer un point d’entrée REST :
 
 {width=50%,height=50%}![Activer la demande de publication pour les formulaires adaptatifs](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * Pour publier des données sur un serveur interne, indiquez le chemin d’accès de la ressource. Les données sont publiées sur le chemin d’accès de la ressource. Par exemple, `/content/restEndPoint`. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 > * Pour publier des données sur un serveur externe, indiquez une URL. Le format d’URL est le suivant : `https://host:port/path_to_rest_end_point`. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
