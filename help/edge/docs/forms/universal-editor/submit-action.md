@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
-
 
 # Action Envoyer pour formulaire adaptatif
 
@@ -44,7 +44,7 @@ Pour configurer un point d’entrée REST :
 1. Spécifiez l’URL du point d’entrée REST.
 1. Vous pouvez également **Activer la requête POST** et fournir une URL pour publier la requête.
 
-{width=50%,height=50%}![Activer la demande de publication pour les formulaires adaptatifs](/help/forms/assets/enable-post-request-ue.png)
+![Activer la requête POST pour les formulaires adaptatifs](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ L’action d’envoi Envoyer un e-mail permet d’envoyer un e-mail à un ou à 
 1. Il permet de rationaliser le workflow en intégrant directement les envois de formulaire dans les notifications par e-mail.
 1. Il permet aux entreprises de personnaliser le contenu des e-mails, afin qu’il réponde à des besoins de communication spécifiques.
 
-{width=50%,height=50%}![Propriétés de formulaire adaptatif dans l’éditeur universel](/help/forms/assets/submit-actions-ue.png)
+![Propriétés de formulaire adaptatif dans l’éditeur universel](/help/forms/assets/submit-actions-ue.png)
 
 
 Pour configurer une action d’envoi en tant qu’e-mail pour l’envoi du formulaire :
@@ -140,5 +140,3 @@ L’option Lors de l’envoi vous permet de configurer un message d’action d�
 1. Lorsque vous cliquez dessus, l’option suivante s’affiche :
    * **[!UICONTROL Lors de l’envoi]** : Lors de l’envoi vous permet de personnaliser un message à afficher lorsqu’un formulaire est envoyé. Par défaut, un message personnalisé « Merci pour votre envoi du formulaire » s’affiche pour l’utilisateur ou l’utilisatrice lorsqu’un formulaire est envoyé avec succès.
 Vous pouvez également personnaliser le message de remerciement lors de l’envoi du formulaire en sélectionnant l’option **[!UICONTROL Afficher le message]** et en ajoutant/modifiant votre message dans l’**de texte enrichi**.
-
-
