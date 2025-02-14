@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -53,8 +53,7 @@ Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui s
 * **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition de style uniforme entre les formulaires. &lt;!: pour savoir comment ajouter le bloc de Forms adaptatif à votre projet, reportez-vous à la section [Création d’un formulaire](/help/edge/docs/forms/create-forms.md).
 
 * **Style CSS pour Forms** : pour vous assurer que vos styles sont appliqués correctement, encapsulez votre CSS spécifique au formulaire dans le sélecteur de `main .form form`. Cela garantit que vos styles ciblent uniquement les éléments de formulaire dans la zone de contenu principale, évitant les conflits avec d’autres parties du site web.
-
-  Exemple :
+Exemple :
 
   ```css
   main .form form input {
@@ -68,8 +67,7 @@ Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui s
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
+  
 ## Structure des composants
 
 Le bloc Formulaires adaptatifs offre une structure HTML cohérente pour divers éléments de formulaire, simplifiant ainsi la définition de style et la gestion. Vous pouvez manipuler les composants à l’aide de CSS à des fins de définition de style.
