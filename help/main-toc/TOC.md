@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 203286407113ac5d277e72f071ec9c30495e58b3
+source-git-commit: dfd6384c15ae28556b2366e9230d96a324ed3644
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -597,7 +597,8 @@ ht-degree: 99%
       + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
       + [Imagerie dynamique avec rapport pixel d’appareil côté client](/help/assets/dynamic-media/client-side-dpr.md)
-      + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Diffusion de ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge de la 3D](/help/assets/dynamic-media/assets-3d.md)
       + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)

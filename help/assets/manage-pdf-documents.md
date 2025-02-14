@@ -4,7 +4,7 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 1652df9e774d8212b1bcc2898ca5d57e2a0d13bc
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 86%
@@ -16,7 +16,7 @@ ht-degree: 86%
 | [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, qui vous permet de prévisualiser plusieurs pages d’un document de PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser dans un format de PDF.
+Experience Manager Assets s’intègre de manière transparente à la visionneuse Document Cloud PDF, qui vous permet de prévisualiser plusieurs pages d’un document PDF. En outre, vous pouvez également utiliser les fonctionnalités avancées de la visionneuse de fichiers PDF Document Cloud, telles que les annotations, la recherche de texte, la navigation dans le document PDF à l’aide de signets et de miniatures et bien plus encore sans quitter l’application. Experience Manager Assets vous permet également de télécharger des documents dans d’autres formats pris en charge et de les prévisualiser au format PDF.
 
 L’intégration d’AEM Assets à la visionneuse PDF Document Cloud offre les avantages suivants :
 
@@ -26,7 +26,7 @@ L’intégration d’AEM Assets à la visionneuse PDF Document Cloud offre les
 
 >[!TIP]
 >
-> Si vous ne parvenez pas à obtenir la prévisualisation de plusieurs pages d’un document de PDF précédemment téléchargé, sélectionnez le PDF et cliquez sur ![Retraiter](/help/assets/assets/Reprocess.svg) **Retraiter Assets**.
+> Si vous ne parvenez pas à obtenir la prévisualisation de plusieurs pages d’un document PDF précédemment téléchargé, sélectionnez le PDF et cliquez sur ![Retraiter](/help/assets/assets/Reprocess.svg) **Retraiter Assets**.
 
 ## Prise en charge des composants de la visionneuse PDF Document Cloud {#pdf-doc-cloud}
 
@@ -40,7 +40,7 @@ La visionneuse PDF native Document Cloud possède les composants suivants dans 
 
 * **Page précédente/Page suivante** : utilisez l’icône de page précédente ![Page précédente](/help/assets/assets/ArrowUp.svg) ou de page suivante ![Page suivante](/help/assets/assets/ArrowDown.svg) pour faire défiler le document.
 
-* **Zoom arrière/Zoom avant** : utilisez le zoom arrière ![Zoom arrière](/help/assets/assets/ZoomOut.svg) ou Zoom avant ![Zoom avant](/help/assets/assets/ZoomIn.svg) pour atteindre la section souhaitée du document.
+* **Zoom arrière/Zoom avant** : utilisez le zoom arrière ![Zoom arrière](/help/assets/assets/Zoom-out.svg) ou Zoom avant ![Zoom avant](/help/assets/assets/zoom-in.svg) pour atteindre la section souhaitée du document.
 
 * **Page entière**: utilisez les dimensions de largeur ou de hauteur pour adapter le document à la taille de votre écran.
 
@@ -70,7 +70,7 @@ Vous pouvez également ajouter des [annotations](#pdf-annotations) au document P
 
 **Annotations PDF{#pdf-annotations}**
 
-Experience Manager Assets permet d’ajouter des commentaires dans un document de PDF. Un document PDF peut comporter plusieurs annotations.
+Experience Manager Assets permet d’ajouter des commentaires à un document PDF. Un document PDF peut comporter plusieurs annotations.
 
 Pour annoter un document PDF, procédez comme suit :
 
@@ -119,7 +119,7 @@ Les documents PDF prennent en charge les annotations suivantes :
 
 >[!NOTE]
 >
->Les annotations que vous ajoutez au document du PDF sont disponibles en mode Aperçu. Toutefois, les annotations ne s’affichent pas lorsque vous téléchargez ou imprimez le document du PDF.
+>Les annotations que vous ajoutez au document PDF sont disponibles en mode Aperçu. Toutefois, les annotations ne s’affichent pas lorsque vous téléchargez ou imprimez le document PDF.
 
 ## Prise en charge de la prévisualisation de plusieurs pages pour les documents dans d’autres formats {#multi-format}
 
