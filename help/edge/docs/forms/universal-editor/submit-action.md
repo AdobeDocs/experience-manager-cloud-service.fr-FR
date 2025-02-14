@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 12%
+source-wordcount: '735'
+ht-degree: 13%
 
 ---
 
@@ -140,3 +140,8 @@ L’option Lors de l’envoi vous permet de configurer un message d’action d�
 1. Lorsque vous cliquez dessus, l’option suivante s’affiche :
    * **[!UICONTROL Lors de l’envoi]** : Lors de l’envoi vous permet de personnaliser un message à afficher lorsqu’un formulaire est envoyé. Par défaut, un message personnalisé « Merci pour votre envoi du formulaire » s’affiche pour l’utilisateur ou l’utilisatrice lorsqu’un formulaire est envoyé avec succès.
 Vous pouvez également personnaliser le message de remerciement lors de l’envoi du formulaire en sélectionnant l’option **[!UICONTROL Afficher le message]** et en ajoutant/modifiant votre message dans l’**de texte enrichi**.
+
+
+## Voir également
+
+{{see-more-forms-eds}}

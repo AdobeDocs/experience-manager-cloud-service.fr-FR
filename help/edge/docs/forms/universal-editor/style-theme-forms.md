@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -46,6 +46,29 @@ Il est essentiel de comprendre les [concepts de base de CSS](https://www.w3schoo
 * [Modèle de zone](https://www.w3schools.com/css/css_boxmodel.asp) : le modèle de zone CSS décrit la structure des éléments HTML sous la forme d’une zone de contenu entourée d’un remplissage, de bordures et de marges.
 * Flexbox/Grille : les dispositions de [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) et de [grille](https://www.w3schools.com/css/css_grid.asp) CSS sont des outils puissants pour créer des conceptions réactives et flexibles.
 
+## Définir le style d’un formulaire pour un bloc de formulaires adaptatifs
+
+Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui simplifie le processus de sélection et de définition du style des composants de formulaire :
+
+* **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition de style uniforme entre les formulaires. &lt;!: pour savoir comment ajouter le bloc de Forms adaptatif à votre projet, reportez-vous à la section [Création d’un formulaire](/help/edge/docs/forms/create-forms.md).
+
+* **Style CSS pour Forms** : pour vous assurer que vos styles sont appliqués correctement, encapsulez votre CSS spécifique au formulaire dans le sélecteur de `main .form form`. Cela garantit que vos styles ciblent uniquement les éléments de formulaire dans la zone de contenu principale, évitant les conflits avec d’autres parties du site web.
+
+  Exemple :
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## Structure des composants
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**Mise en forme d’un formulaire pour un bloc de Forms adaptatif**
-
-Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui simplifie le processus de sélection et de définition du style des composants de formulaire :
-
-* **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition de style uniforme entre les formulaires. &lt;!: pour savoir comment ajouter le bloc de Forms adaptatif à votre projet, reportez-vous à la section [Création d’un formulaire](/help/edge/docs/forms/create-forms.md).
-
-* **Style CSS pour Forms** : pour vous assurer que vos styles sont appliqués correctement, encapsulez votre CSS spécifique au formulaire dans le sélecteur de `main .form form`. Cela garantit que vos styles ciblent uniquement les éléments de formulaire dans la zone de contenu principale, évitant les conflits avec d’autres parties du site web.
-
-  Exemple :
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 
