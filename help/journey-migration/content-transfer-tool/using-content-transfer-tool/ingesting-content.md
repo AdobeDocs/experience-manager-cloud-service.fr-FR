@@ -1,13 +1,13 @@
 ---
 title: Ingestion de contenu dans Cloud Service
-description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration dans une instance de Cloud Service de destination.
+description: Découvrez comment utiliser Cloud Acceleration Manager pour ingérer du contenu à partir de votre jeu de migration vers une instance Cloud Service de destination.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
-ht-degree: 37%
+source-wordcount: '3441'
+ht-degree: 36%
 
 ---
 
@@ -58,7 +58,7 @@ Pour ingérer votre jeu de migration à l’aide de Cloud Acceleration Manager, 
       * Les ingestions sans effacement sont spécifiquement conçues pour le cas d’utilisation d’ingestion de complément. Ces ingestions sont conçues pour avoir une quantité incrémentielle de nouveau contenu qui a changé depuis la dernière ingestion dans un jeu de migration existant. L’exécution d’ingestions sans effacement en dehors de ce cas d’utilisation peut entraîner des temps d’ingestion très longs.
 
    >[!IMPORTANT]
-   > Si le paramètre **Effacer** est activé pour l’ingestion, il réinitialise l’ensemble du référentiel existant, y compris les autorisations utilisateur sur l’instance de Cloud Service cible. Cette réinitialisation est également vraie pour un utilisateur administrateur ajouté au groupe **administrateurs** et cet utilisateur doit être ajouté à nouveau au groupe administrateurs pour démarrer une ingestion.
+   > Si le paramètre **Effacer** est activé pour l’ingestion, il réinitialise l’ensemble du référentiel existant, y compris les autorisations utilisateur sur l’instance Cloud Service cible. Cette réinitialisation est également vraie pour un utilisateur administrateur ajouté au groupe **administrateurs** et cet utilisateur doit être ajouté à nouveau au groupe administrateurs pour démarrer une ingestion.
 
    * **Pré-copie :** sélectionnez la valeur `Pre-copy`
       * Vous pouvez exécuter l’étape facultative de précopie pour accélérer considérablement l’ingestion. Pour plus d’informations, veuillez consulter la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
@@ -151,21 +151,21 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est donc pas la récupération du jeton qui a posé problème.
 
 * AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il finit par être disponible.
-* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée IP pendant le processus d’ingestion et d’indexation.
-* D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’assistance clientèle d’Adobe.
+* D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’Assistance clientèle d’Adobe.
 
 ### Mises à jour et assimilations de version AEM {#aem-version-updates-and-ingestions}
 
 Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
 
-Si la fonction « Mises à jour de la version AEM » est intégrée au programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant son démarrage. Une fois l’ingestion terminée, l’état de la mise à jour de version est rétabli à ce qu’il était avant le début des ingestions.
+Si la fonction « Mises à jour de la version d’AEM » est intégrée au programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant son démarrage. Une fois l’ingestion terminée, l’état de la mise à jour de version est rétabli à ce qu’il était avant le début des ingestions.
 
 >[!NOTE]
 >
 > Il n’est plus nécessaire de consigner un ticket d’assistance pour désactiver les « Mises à jour de la version AEM ».
 
-Si l’option « Mises à jour de la version AEM » est active (c’est-à-dire, si des mises à jour sont en cours d’exécution ou sont placées en file d’attente pour être exécutées), l’ingestion ne commence pas et l’interface utilisateur affiche le message suivant. Une fois les mises à jour terminées, l’ingestion peut commencer. Cloud Manager peut être utilisé pour afficher l’état actuel des pipelines du programme.
+Si l’option « Mises à jour de la version d’AEM » est active (c’est-à-dire, si des mises à jour sont en cours d’exécution ou sont mises en file d’attente pour être exécutées), l’ingestion ne commence pas et l’interface utilisateur affiche le message suivant. Une fois les mises à jour terminées, l’ingestion peut commencer. Cloud Manager peut être utilisé pour afficher l’état actuel des pipelines du programme.
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ Si l’option « Mises à jour de la version AEM » est active (c’est-à-dire,
 >title="Environnement cloud non opérationnel"
 >abstract="Dans de rares cas, l’environnement cloud cible peut rencontrer des problèmes inattendus, ce qui entraîne l’échec de l’ingestion."
 
-Dans de rares cas, l’environnement du Cloud Service cible de l’ingestion peut rencontrer des problèmes inattendus. Par conséquent, l’ingestion échoue, car l’environnement n’est pas dans l’état prêt attendu. Consultez le journal d’ingestion pour afficher plus de détails sur l’état d’erreur rencontré.
+Dans de rares cas, l’environnement Cloud Service cible de l’ingestion peut rencontrer des problèmes inattendus. Par conséquent, l’ingestion échoue, car l’environnement n’est pas dans l’état prêt attendu. Consultez le journal d’ingestion pour afficher plus de détails sur l’état d’erreur rencontré.
 
 Assurez-vous que l’environnement de création est disponible et patientez quelques minutes avant de réessayer l’ingestion. Si le problème persiste, contactez le service clientèle en indiquant l’état d’erreur rencontré.
 
@@ -239,7 +239,7 @@ Il s’agit d’une restriction MongoDB.
 
 Pour plus d’informations et pour obtenir un lien vers un outil Oak qui pourrait vous aider à trouver tous les nœuds volumineux, consultez la note de `Node property value in MongoDB` dans la section [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Une fois tous les nœuds de grande taille résolus, exécutez à nouveau l’extraction et l’ingestion.
 
-Pour éviter cette restriction, exécutez l’analyseur de bonnes pratiques [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, en particulier le modèle [ « Unsupported Repository Structure » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [ « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -258,6 +258,7 @@ Parfois, des problèmes intermittents inattendus peuvent se produire lors d’é
 
 * `Atlas prescale timeout error` - La phase d’ingestion tente de prédéfinir la base de données cloud cible à une taille appropriée qui correspond à la taille du contenu du jeu de migration en cours d’ingestion. Dans de rares cas, cette opération ne se termine pas dans le délai prévu.
 * `Exhausted mongo restore retries` - Les tentatives de restauration d’une image mémoire locale du contenu du jeu de migration ingéré dans la base de données cloud sont épuisées. Cela indique un problème d’intégrité global/de réseau avec MongoDB, qui guérit souvent spontanément en quelques minutes.
+* `Mongo network error` - Parfois, l’établissement d’une connexion à MongoDB peut échouer, ce qui entraîne la sortie précoce du processus d’ingestion et le signalement comme un échec. Une simple reprise de l’ingestion doit être tentée.
 
 ### Ingestion annulée {#ingestion-rescinded}
 
@@ -272,7 +273,7 @@ Une ingestion créée avec une extraction en cours d’exécution en tant que je
 
 En règle générale, il n’est pas recommandé de modifier les données de l’environnement cloud entre les ingestions.
 
-Lorsqu’une ressource est supprimée de la destination du Cloud Service à l’aide de l’interface utilisateur tactile d’Assets, les données de nœud sont supprimées, mais l’objet Blob de ressource avec l’image n’est pas immédiatement supprimé. Il est marqué pour suppression afin de ne plus apparaître dans l’interface utilisateur. Cependant, il reste dans le magasin de données jusqu’à ce que le nettoyage soit effectué et que l’objet Blob soit supprimé.
+Lorsqu’une ressource est supprimée de la destination Cloud Service à l’aide de l’interface utilisateur tactile d’Assets, les données de nœud sont supprimées, mais l’objet Blob de ressource avec l’image n’est pas immédiatement supprimé. Il est marqué pour suppression afin de ne plus apparaître dans l’interface utilisateur. Cependant, il reste dans le magasin de données jusqu’à ce que le nettoyage soit effectué et que l’objet Blob soit supprimé.
 
 Dans le scénario où une ressource précédemment migrée est supprimée et où l’ingestion suivante est exécutée avant que le garbage collector n’ait terminé la suppression de la ressource, l’ingestion du même jeu de migration ne restaurera pas la ressource supprimée. Lorsque l’ingestion vérifie la ressource dans l’environnement cloud d’, il n’existe aucune donnée de nœud ; par conséquent, l’ingestion copie les données de nœud dans l’environnement cloud. Cependant, lorsqu’il vérifie la banque d’objets blob, il constate que l’objet blob est présent et ignore la copie de l’objet blob. C’est pourquoi les métadonnées sont présentes après l’ingestion lorsque vous examinez la ressource à partir de l’interface utilisateur tactile, mais pas l’image. N’oubliez pas que les jeux de migration et l’ingestion de contenu n’ont pas été conçus pour gérer ce cas. Ils visent à ajouter du nouveau contenu à l’environnement cloud et à ne pas restaurer le contenu précédemment migré.
 
@@ -280,4 +281,4 @@ Dans le scénario où une ressource précédemment migrée est supprimée et où
 
 Une fois l’ingestion réussie, l’indexation AEM démarre automatiquement. Pour plus d’informations, consultez [Indexation après la migration ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) contenu .
 
-Une fois l’ingestion de contenu terminée dans Cloud Service, vous pouvez afficher les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) pour en savoir plus.
+Une fois l’ingestion de contenu dans Cloud Service terminée, vous pouvez afficher les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) pour en savoir plus.
