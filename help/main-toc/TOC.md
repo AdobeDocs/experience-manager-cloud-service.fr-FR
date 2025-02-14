@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
+source-git-commit: 203286407113ac5d277e72f071ec9c30495e58b3
 workflow-type: tm+mt
-source-wordcount: '6071'
+source-wordcount: '6074'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 99%
    + [Nouveautés et différences](/help/overview/what-is-new-and-different.md)
    + [Terminologie – Nouveaux termes pour le cloud](/help/overview/terminology.md)
    + [Présentation de l’architecture d’AEM as a Cloud Service](/help/overview/architecture.md)
+   + [Plateformes clientes prises en charge](/help/overview/supported-platforms.md)
    + [Gestion de l’optimisation du moteur de recherche et des URL](/help/overview/seo-and-url-management.md)
    + [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Évaluer les KPI](/help/overview/assessing-kpis.md)
