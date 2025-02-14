@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
+source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6071'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 99%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
-         + [Notes de mise à jour de la version 2024.11.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [Notes de mise à jour de la version 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Notes de mise à jour de la version 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Notes de mise à jour de la version 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -578,7 +577,6 @@ ht-degree: 99%
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -710,7 +708,6 @@ ht-degree: 99%
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
-      + [Publier les formulaires adaptatifs à l’aide de la fonction Gérer la publication](/help/forms/manage-publication.md)
    + Commencer {#getting-started-forms}
       + [Consulter des cas d’utilisation et configurer l’environnement de développement](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Créer le formulaire de demande de prêt](/help/forms/create-adaptive-form-tutorial.md)
@@ -1038,6 +1035,9 @@ ht-degree: 99%
          + [Ajout de règles à à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [Créer des composants personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Utilisation de reCAPTCHA dans les formulaires](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Actions Envoyer](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Publication de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Personnalisation de la mise en forme des formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
          + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
          + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
@@ -1211,9 +1211,9 @@ ht-degree: 99%
          + [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Dépanner les erreurs de certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gérer des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Mappages de domaine {#cdn-configurations}
-         + [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Gérer les mappages de domaine](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+      + Configurations du réseau CDN {#cdn-configurations}
+         + [Ajouter une configuration CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [Gérer les configurations CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listes d’adresses IP autorisées {#ip-allow-lists}
          + [Présentation des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Ajouter une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
