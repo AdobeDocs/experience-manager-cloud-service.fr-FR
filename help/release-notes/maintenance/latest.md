@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
-workflow-type: ht
-source-wordcount: '950'
-ht-degree: 100%
+source-git-commit: 1d6a54f87d55179c11c7ccc7766eeeb475674f05
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 49%
 
 ---
 
@@ -16,98 +16,52 @@ ht-degree: 100%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 19352 {#19352}
+## Version 19567 {#19567}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 19352, rendue publique le 5 février 2025. La version de maintenance précédente était la version 19149.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 19567, rendue publique le mercredi 18 février 2025. La version de maintenance précédente était la version 19352.
 
 L’activation des fonctionnalités de la version 2025.2.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-### Améliorations {#enhancements-19352}
+### Améliorations {#enhancements-19567}
 
-* FORMS-13998 : ajout d’un composant Accordéon.
-* FORMS-17913 : ajout d’une variante de cartes pour le groupe de boutons radio.
-* FORMS-17333 : activation des modèles d’e-mail HTML dans l’envoi de formulaires AEM.
-* FORMS-17702 : activation des PDF générés dans les API de synchronisation de sortie à charger dans le stockage Blob Azure.
-* SITES-28282 : Edge Delivery avec éditeur universel : indication du chemin d’accès de base, du nom du site et de l’organisation en tant qu’informations de page pour n’importe quelle page.
-* SITES-27055 : Edge Delivery avec éditeur universel : prise en charge des paramètres de requête dans le servlet de proxy inverse.
-* SITES-26796 : Edge Delivery avec éditeur universel : prise en charge des colonnes personnalisées pour la feuille de calcul Taxonomie.
-* SITES-26087 : Edge Delivery avec éditeur universel : prise en charge de l’export au format CSV pour les feuilles de calcul.
-* SITES-26265 : Edge Delivery avec éditeur universel : affichage du compte TA à intégrer à Edge Delivery dans l’interface d’utilisation de configuration.
-* SITES-20372 : Edge Delivery avec éditeur universel : activation des cas d’utilisation de base de MSM pour les feuilles de calcul.
-* SITES-26681 : Edge Delivery avec éditeur universel : prise en charge du paramètre ?sheet= pour les feuilles de calcul Taxonomie de l’auteur ou de l’autrice.
-* SITES-26479 : point d’entrée du statut de publication planifiée du modèle [schéma] de fragment de contenu.
-* SITES-25944 : [vue d’ensemble de Livecopy] : ajout du statut « Live Copy à jour avec un héritage limité ».
-* SITES-28713 : [V2] : ajout de la prise en charge des données structurées au scraper de contenu.
-* SITES-27896 : ouverture automatique de CommentsTab à la notification.
-* SITES-26720 : interdiction de sélectionner une collection entière à partir du sélecteur de ressources.
-* SITES-27875 : autorisation de modifier n’importe quel élément d’un conteneur pouvant être déplacé par défaut.
-* SITES-28340 : plug-in du service d’éditeur universel Dark Alley.
-* SITES-26098 : possibilité d’éviter de publier des pages référencées lors de la publication d’un fragment de contenu.
-* SITES-27789 : prise en charge du composant data-aue-component d’attributs de données dans le DOM.
-* SITES-25997 : amélioration des variations de sorte à prendre en charge la date de modification.
-* SITES-28023 : sortie GraphQL pour les références de ressources distantes (référentiel + ID de ressource).
-* SITES-26058 : point d’entrée du statut de publication planifiée du modèle de fragment de contenu.
-* SITES-25108 : migration du modèle pour les références UUID.
-* SITES-26630 : point d’entrée du statut de publication planifiée de fragments de contenu pour plusieurs fragments de contenu.
-* SITES-23432 : amélioration de la fonctionnalité de suppression des références.
-* SITES-25797 : prise en charge des références de ressources externes - GraphQL.
-* SITES-17514 : amélioration de la suppression du point d’entrée en vue de dépublier le fragment de contenu.
-* SITES-14633 : validation du modèle de fragment de contenu en vue de créer des payloads avant l’installation - Essai.
+* GRANITE-56650 : la distribution de contenu ne doit signaler que la file d’attente bloquée après quelques reprises
+* SKYOPS-89616 : permet de créer jusqu’à 40 comptes techniques dans Adobe Developer Console.
 
-### Problèmes résolus {#fixed-issues-19352}
+### Problèmes résolus {#fixed-issues-19567}
 
-* CQ-4356756 : non traduction de la prise en charge des ressources connexes.
-* CQ-4358206 : non fonctionnement du planificateur de traduction des répétitions pour les projets de traduction.
-* CQ-4358126 : impossible de sélectionner le sous-dossier de configuration dans le service cloud de traduction.
-* FORMS-18098, FORMS-17954 : impossible de charger les formulaires adaptatifs dans le mode Internet Explorer du navigateur Microsoft Edge.
-* FORMS-17162 : exécution de requêtes prêtes à l’emploi pour la publication d’une ressource, entraînant la dégradation des performances de publication.
-* SITES-28415 : Edge Delivery avec éditeur universel : correction du bouton Ouvrir les propriétés des feuilles de calcul.
-* SITES-26669 : Edge Delivery avec éditeur universel : correction de problèmes lors du chargement de fichiers CSV codés en UTF-8 avec une nomenclature comme feuille de calcul.
-* SITES-26543 : Edge Delivery avec éditeur universel : correction des blocs vides sans qu’un modèle ne génère de balisage incorrect.
-* SITES-26857 : Edge Delivery avec éditeur universel : correction du jeton d’authentification du site visible dans l’interface d’utilisation pour les configurations basées sur des fichiers.
-* SITES-26662 : Edge Delivery avec éditeur universel : correction des problèmes liés aux métadonnées en bloc sensibles à la casse.
-* SITES-28133 : contenu disponible en production avec la publication en « aperçu ».
-* SITES-27187 : impossible de publier les références au moyen de l’activation de pages/ressources planifiée avec les références (expérimentale).
-* SITES-27264 : échec systématique sur le maître des deux tests Selenium liés à au fragment de contenu et à la création de la Live Copy.
-* SITES-26559 : épinglage de la requête des modèles de fragment de contenu à l’index cqPageLucene.
-* SITES-24469 : élément interactif non accessible à partir du clavier.
-* SITES-24518 : boutons Nom et Modèle de la table Référence parente non accessibles à l’aide du clavier.
-* SITES-27937 : contraintes UISchema définies sur null après la mise à jour du modèle.
-* SITES-27852 : catégories manquantes dans le modèle UISchema.
-* SITES-27904 : MetadataSchema manquant dans la liste/la recherche Modèles de fragment de contenu pour la projection complète.
-* SITES-26827 : liste des fragments se terminant en boucle infinie.
-* SITES-27678 : [performance] : empêche la récupération inutile de _références.
-* SITES-27589 : échec de la mise à niveau de l’UUID pour les modèles de fragment de contenu avec plusieurs champs de référence de contenu/fragment.
-* SITES-26679 : la dépublication des modèles de fragments de contenu ne doit valider que les références publiées.
-* SITES-26666 : referencesTree et le point d’entrée des références renvoient des résultats différents.
-* SITES-26499 : ordre incorrect de la valeur du champ de balise dans le ou les fragments de GET ; PATCH rend l’ordre aléatoire.
-* SITES-26585 : correction d’une petite erreur de description dans le schéma.
-* SITES-26647 : la validation de référence Supprimer le point d’entrée et Dépublier les fragments peut échouer pour les personnes non-administratrices.
-* SITES-26458 : [rechercher un modèle de fragment de contenu] : correction du filtrage par statut de réplication.
-* SITES-23513 : échec de la validation de l’[Éditeur de modèles de fragments de contenu] pour la propriété « Référence de fragment » - « Modèle de fragment de contenu autorisé ».
-* SITES-26575 : la dépublication d’un fragment à partir de l’aperçu doit mettre à jour previewStatus.
-* SITES-26571 : impossible d’enregistrer les références de page lorsque FT_SITES-12435 est activé.
-* SITES-26660 : la comparaison des versions de fragments de contenu peut être rompue lorsque @ContentType est de type « chaîne ».
-* SITES-26626 : customErrorMessage manquant sur les champs numériques et booléens.
-* SITES-26268 : code d’état incorrect renvoyé si une référence n’est pas valide lors de la création d’un fragment.
+* CNTBF-232 : nœuds nt:file profonds de package pour inclure l’enfant jcr:content obligatoire
+* CQ-4358930 : Problème de performance lors du chargement des propriétés de page avec de nombreux champs multiples
+* GRANITE-55960 : problème de performances du champ Coral Select sur AEM as a Cloud Service
+* GRANITE-56197 : la nouvelle étape du workflow TreeActivation ne traite pas par lots les ressources dans une grande structure de dossiers plats
 
-### Problèmes connus {#known-issues-19352}
+#### Guides AEM {#guides}
+
+* GUIDES-23526 : lors de la mise à jour de conditions à partir du profil de dossier, tous les groupes de conditions sont perdus et les conditions sont aplaties.
+* GUIDES-22574 : si un lien externe contient un UUID, il passe en post-traitement et convertit le lien externe en lien UUID, rompant ainsi le lien dans l&#39;éditeur ainsi que sur les sites de publication.
+* GUIDES-24983 : lors de la copie d’une image à partir d’un produit externe (par exemple, MS PowerPoint) et de son collage dans Guides, la fonctionnalité de chargement à la volée de la ressource en vue de son utilisation dans les fichiers est interrompue.
+* GUIDES-21772 : la génération native de PDF échoue pour le contenu avec l’attribut **chunk** défini sur **à contenu**.
+* GUIDES-23964 : lorsque vous choisissez **Modifier les propriétés**, la boîte de dialogue de ligne de base n&#39;affiche pas les critères précédemment enregistrés pour la ligne de base dynamique.
+* GUIDES-19067 : Lors de la duplication d’un profil de dossier, sa liste d’utilisateurs administrateurs est également copiée à partir du profil de dossier d’origine
+
+Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Problèmes connus {#known-issues-19567}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-19352}
+### Fonctionnalités et API obsolètes {#deprecated-19567}
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-19352}
+### Correctifs de sécurité {#security-19567}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 36 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 21 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-19352}
+### Technologies intégrées {#embedded-tech-19567}
 
 | Technologie | Version | Lien |
-|---|---|---|
-| AEM Oak | 1.72.0 | [API Oak 1.72.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.72.0/index.html) |
+|---|--------------|-------------------------------------------------------------------------------------------------------------------|
+| AEM Oak | 1.76.0 | [API Oak 1.76.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.24-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.26-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Composants principaux d’AEM | 2.27.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
