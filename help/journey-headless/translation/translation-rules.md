@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours de traduction découplée AEM, [Configuration de l’intégration de traduction](configure-connector.md), vous avez appris à installer et à configurer votre intégration de traduction. Vous devez maintenant :
 
@@ -79,7 +79,7 @@ Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles 
 1. Sélectionnez le contexte que vous avez créé, puis sélectionnez **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
 1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Désélectionnez l’option **Hériter de`/content/dam`** afin d’ajouter des champs supplémentaires à la configuration.
-1. Lorsque cette option n’est pas cochée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous [avez précédemment identifiés comme des champs à traduire](getting-started.md#content-models).
+1. Une fois la case décochée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs pour la traduction](getting-started.md#content-models).
    1. Dans le **Nouvelle propriété** , saisissez le nom de la propriété. Les options **Traduire** et **Hériter** sont cochées automatiquement.
    1. Sélectionnez **Ajouter**.
    1. Répétez ces étapes pour tous les champs que vous devez traduire.

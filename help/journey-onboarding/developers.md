@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Tâches du développeur et du responsable de déploiement {#developer-deployment-manager}
 
-Dans cette partie facultative du [parcours d’intégration](overview.md), vous découvrirez comment les développeurs et les responsables de déploiement peuvent accéder à Git pour développer des applications et utiliser des pipelines pour les déployer.
+Dans cette partie facultative du [parcours d’intégration](overview.md), vous découvrirez comment l’équipe de développement et les personnes responsables du déploiement peuvent accéder à Git pour développer des applications et utiliser des pipelines pour les déployer.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Vous avez déjà fait du chemin dans votre parcours d’intégration ! Félicitations ! L’administrateur système a terminé le parcours d’intégration en configurant les ressources cloud nécessaires et en accordant l’accès dans le document [Attribution de profils de produits AEM](assign-profiles-aem.md).
+Vous avez déjà fait du chemin dans votre parcours d’intégration ! Félicitations ! L’administrateur ou l’administratrice système a terminé le parcours d’intégration en configurant les ressources cloud nécessaires et en accordant l’accès dans le document [Attribution de profils de produits AEM](assign-profiles-aem.md).
 
 À ce stade, vos développeurs et responsables de déploiement peuvent commencer à créer vos propres applications, tandis que vos utilisateurs AEM peuvent commencer à créer du contenu. En ce sens, votre intégration est terminée et il est maintenant temps d’utiliser votre nouveau système AEM as a Cloud Service, comme le montre ce document.
 
@@ -136,7 +136,7 @@ Maintenant que vous avez lu ce document, vous devriez :
 
 En tant que développeur ou responsable de déploiement, vous pouvez immédiatement commencer à utiliser vos connaissances opérationnelles de Cloud Manager, mais aussi des environnements de travail, des référentiels et des pipelines ! Mais il y a plus à apprendre sur les puissants outils de CI/CD d’AEM as a Cloud Service. Consultez la section [Ressources supplémentaires](#additional-resources) pour plus d’informations.
 
-Si vous souhaitez savoir comment les auteurs de contenu accèdent à AEM as a Cloud Service et l’utilisent, passez à la dernière partie du parcours d’intégration, [Tâches utilisateur AEM](aem-users.md).
+Si vous souhaitez savoir comment les personnes chargées de la création de contenu accèdent à AEM as a Cloud Service et l’utilisent, passez à la dernière partie du parcours d’intégration, [Tâches d’utilisation d’AEM](aem-users.md).
 
 >[!TIP]
 >

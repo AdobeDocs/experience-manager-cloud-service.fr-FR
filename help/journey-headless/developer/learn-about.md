@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # En savoir plus sur le développement CMS découplé {#learn-about}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), découvrez la technologie découplée et pourquoi l’utiliser.
+Dans cette partie du [parcours de développement AEM Headless](overview.md), découvrez la technologie découplée et pourquoi l’utiliser.
 
 ## Objectif {#objective}
 
@@ -115,7 +115,7 @@ En tant que leader du secteur de la gestion de l’expérience digitale, Adobe s
 
 Ce parcours se concentre exclusivement sur le modèle de diffusion de contenu en mode découplé. Cependant, une fois que vous disposez de ces connaissances fondamentales, vous pouvez explorer plus en détail la manière d’exploiter la puissance des deux modèles.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Merci de vous être engagé sur ce parcours découplé AEM ! Maintenant que vous avez lu ce document, vous devriez :
 
@@ -127,7 +127,7 @@ Appuyez-vous sur ces connaissances et continuez votre parcours découplé AEM en
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Prise en main d’AEM as a Cloud Service découplé](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Prise en main d’AEM Headless as a Cloud Service](getting-started.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours découplé.
 
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)

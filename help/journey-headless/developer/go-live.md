@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Dans cette partie du [Parcours de développement découplé AEM](overview.md), apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Tout assembler – Votre application et votre contenu dans AEM découplé](put-it-all-together.md), vous avez appris à utiliser les outils de développement d’AEM pour rassembler tous les éléments de votre projet.
 
@@ -129,7 +129,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels), nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles full-stack traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
-Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours [Comment créer des applications sur une seule page (SPA) avec AEM](create-spa.md).
+Si ce type de flexibilité est nécessaire pour votre projet, passez à la section facultative supplémentaire du parcours intitulée [Création d’applications monopages (SPA) avec AEM](create-spa.md).
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 93%
 >title="Attribuer les profils de produits AEM"
 >abstract="Vous ne disposez pas de l’autorisation requise pour utiliser Experience Manager Assets. Contactez l’administration."
 
-Dans cette partie du [parcours d’intégration](overview.md), découvrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
+Dans cette partie du [parcours d’intégration](overview.md), vous apprendrez comment octroyer l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
 
 ## Objectif {#objective}
 
-Après avoir lu le document précédent de ce parcours d’intégration, [Créer des environnements](create-environments.md) et avoir configuré vos ressources cloud, accordez à votre équipe l’accès à AEM lui-même à l’aide des profils de produit AEM. En tant qu’administrateur ou administratrice système, vous pouvez le faire en attribuant des profils de produit AEM.
+Après avoir lu le document précédent dans ce parcours d’intégration, [Créer des environnements](create-environments.md), et configuré vos ressources Cloud, vous devez octroyer à votre équipe l’accès à AEM à l’aide des profils de produits AEM. En tant qu’administrateur ou administratrice système, vous pouvez le faire en attribuant des profils de produit AEM.
 
 Après avoir lu ce document, vous comprendrez :
 

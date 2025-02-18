@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 92%
 
 Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de traduction découplée AEM, [Traduire le contenu](configure-connector.md), vous avez appris à utiliser les projets de traduction AEM pour traduire votre contenu découplé. Vous devez maintenant :
+Dans le document précédent du parcours de traduction découplée AEM, [Traduction du contenu](configure-connector.md), vous avez appris à utiliser les projets de traduction AEM pour traduire votre contenu découplé. Vous devez maintenant :
 
 * comprendre ce qu’est un projet de traduction ;
 * être capable de créer des projets de traduction ;
@@ -119,7 +119,7 @@ Vous voyez qu’une nouvelle carte de tâche a été ajoutée au projet. Dans ce
 
 Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte (nombre de ressources et de fragments de contenu) sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
 
-À partir de là, vous [ démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale](translate-content.md#using-translation-project).
+À partir de là, vous pouvez [commencer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale](translate-content.md#using-translation-project).
 
 ### Mise à jour d’un projet de traduction créé manuellement {#updating-manual-project}
 
@@ -141,15 +141,15 @@ Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant
    ![Sélection de la langue cible.](assets/select-target-language.png)
 
 1. Une fois la langue cible de la nouvelle tâche de traduction définie, appuyez ou cliquez sur le bouton représentant des points de suspension en bas de la carte de la tâche pour afficher les détails de la tâche.
-1. La tâche est vide lors de sa première création. Ajoutez du contenu à la tâche en appuyant ou en cliquant sur le bouton **Ajouter** et à l’aide du navigateur de chemins d’accès [comme vous l’avez fait lors de la création initiale du projet de traduction](translate-content.md##manually-creating).
+1. La tâche est vide lors de sa première création. Ajoutez du contenu à la tâche en appuyant ou en cliquant sur le bouton **Ajouter** et à l’aide de l’explorateur de chemins d’accès [comme vous l’avez fait lors de la création initiale du projet de traduction](translate-content.md##manually-creating).
 
 >[!TIP]
 >
 >Les filtres puissants de l’explorateur de chemins d’accès peuvent à nouveau s’avérer utiles pour trouver uniquement le contenu qui a été mis à jour.
 >
->Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section Ressources supplémentaires](#additional-resources).
+>Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section des ressources supplémentaires](#additional-resources).
 
-À partir de là, vous [ démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale](translate-content.md#using-translation-project).
+À partir de là, vous pouvez [commencer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale.](translate-content.md#using-translation-project)
 
 ## Fin du parcours ? {#end-of-journey}
 

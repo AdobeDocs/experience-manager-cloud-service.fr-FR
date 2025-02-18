@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Ce document utilise l’exemple des redirections pour illustrer la création de 
 
 >[!TIP]
 >
->Pour plus d’informations sur le fonctionnement général des feuilles de calcul avec les Edge Delivery Services, consultez le document [Feuilles de calcul et JSON](/help/edge/developer/spreadsheets.md).
+>Pour plus d’informations sur le fonctionnement général des feuilles de calcul avec Edge Delivery Services, consultez le document [Feuilles de calcul et JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Les feuilles de calcul ne doivent être utilisées que pour conserver des données tabulaires. Pour stocker des données structurées, [consultez les fonctions d’AEM Headless](/help/headless/introduction.md).
+>Les feuilles de calcul ne doivent être utilisées que pour conserver des données tabulaires. Pour stocker des données structurées, [découvrez les fonctionnalités découplées d’AEM](/help/headless/introduction.md).
 
 ## Conditions préalables {#prerequisites}
 
@@ -150,7 +150,7 @@ Pour qu’AEM puisse publier les données dans votre feuille de calcul, vous dev
 
    >[!NOTE]
    >
-   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès correspondant au [type de feuille de calcul que vous êtes en train de créer](#other).
+   >Cette entrée `paths.json` est basée sur l’exemple de création de redirections à l’aide de données tabulaires. Veillez à mettre à jour le chemin d’accès approprié vers le [type de feuille de calcul que vous créez](#other).
 
 1. Cliquez sur **Valider les modifications...** pour enregistrer les modifications apportées à `main`.
 
@@ -174,7 +174,7 @@ La feuille de calcul des redirections est maintenant publiée et accessible au p
 
 >[!TIP]
 >
->Pour plus d’informations sur les mappages de chemin d’accès, consultez le document [ Mappage de chemin d’accès pour les Edge Delivery Services ](/help/edge/wysiwyg-authoring/path-mapping.md).
+>Pour plus d’informations sur les mappages de chemins, consultez le document [Mappage de chemins pour Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Autres types de feuilles de calcul {#other}
 
@@ -205,7 +205,7 @@ En outre, vous pouvez [créer votre propre feuille de calcul](#own-spreadsheet) 
 
 ## Créer votre propre feuille de calcul {#own-spreadsheet}
 
-1. Suivez les mêmes étapes dans la section [Créer une feuille de calcul](#spreadsheet).
+1. Suivez les mêmes étapes que dans la section [Créer une feuille de calcul](#spreadsheet).
 
 1. Lors de la sélection du modèle, choisissez **Feuille de calcul**.
 

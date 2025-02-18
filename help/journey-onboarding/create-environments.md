@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Créer des environnements {#create-environments}
 
-Dans cette partie du [parcours d’intégration](overview.md), découvrez comment utiliser Cloud Manager pour créer vos premiers environnements.
+Dans cette partie du [parcours d’intégration](overview.md), vous apprendrez comment utiliser Cloud Manager pour créer vos premiers environnements.
 
 ## Objectif {#objective}
 
-Après avoir lu le document précédent de ce parcours d’intégration, [Création de programmes](create-program.md), vous disposez désormais de votre propre programme Cloud Manager. Vous pouvez désormais apprendre à utiliser Cloud Manager pour créer vos premiers environnements pour ce programme.
+Suite à la lecture du document précédent de ce parcours d’intégration, [Créer des programmes](create-program.md), vous disposez désormais de votre propre programme Cloud Manager. Vous pouvez désormais apprendre à utiliser Cloud Manager pour créer vos premiers environnements pour ce programme.
 
 Après avoir lu ce document, vous pourrez :
 

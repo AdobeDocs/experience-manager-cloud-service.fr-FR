@@ -6,9 +6,9 @@ hidefromtoc: true
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les parcours de documentation fournissent une structure narrative à la document
 
 Un parcours de documentation relie de nombreux sujets et fonctionnalités différents et complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
 
-Les parcours de documentation sont différents des documents techniques existants pour AEM, qui se concentrent principalement sur une seule fonctionnalité et sur la documentation des tâches et en partant du principe que le lecteur est familier avec AEM. En se concentrant sur les concepts généraux et en réorientant le lecteur ou la lectrice vers la documentation technique existante pour plus de détails, les parcours de documentation permettent aux personnes débutantes dans AEM de commencer à comprendre comment la plateforme peut être exploitée en utilisant les bonnes pratiques pour répondre aux besoins et aux workflows courants de l’entreprise. Pour cette raison, les Parcours de documentation servent de complément et non de remplacement à la [documentation technique AEM existante](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr).
+Les parcours de documentation sont différents des documents techniques existants pour AEM, qui se concentrent principalement sur une seule fonctionnalité et sur la documentation des tâches et en partant du principe que le lecteur est familier avec AEM. En se concentrant sur les concepts généraux et en réorientant le lecteur ou la lectrice vers la documentation technique existante pour plus de détails, les parcours de documentation permettent aux personnes débutantes dans AEM de commencer à comprendre comment la plateforme peut être exploitée en utilisant les bonnes pratiques pour répondre aux besoins et aux workflows courants de l’entreprise. C’est pourquoi les parcours de documentation servent de complément et non de remplacement à la [documentation technique existante pour AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr).
 
 ### Le fil rouge de l’apprentissage {#narrative}
 

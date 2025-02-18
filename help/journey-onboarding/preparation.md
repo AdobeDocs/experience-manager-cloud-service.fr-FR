@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Préparation à l’intégration {#onboarding-preparation}
 
-Maintenant que vous savez ce qui vous attend dans le processus d’intégration après avoir lu l’article [Introduction au Parcours d’intégration AEM as a Cloud Service](overview.md), vous êtes probablement prêt à vous lancer. Toutefois, avant que le processus d’intégration ne commence, il existe un certain nombre d’étapes préparatoires que l’administrateur système doit comprendre avant de se connecter au système.
+Maintenant que vous savez ce qui vous attend dans le processus d’intégration après avoir lu l’article [Introduction au parcours d’intégration AEM as a Cloud Service](overview.md), vous êtes probablement en mesure de vous lancer. Toutefois, avant que le processus d’intégration ne commence, il existe un certain nombre d’étapes préparatoires que l’administrateur système doit comprendre avant de se connecter au système.
 
 ## Objectif {#objective}
 

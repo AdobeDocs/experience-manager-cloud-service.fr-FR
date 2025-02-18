@@ -5,9 +5,9 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2195'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment fonctionne la modélisation de contenu pour la création WYSI
 
 ## Conditions préalables {#prerequisites}
 
-Les projets qui utilisent la création WYSIWYG avec des Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou de la [méthode de création](/help/edge/wysiwyg-authoring/authoring.md).
+Les projets utilisant la création WYSIWYG avec Edge Delivery Services héritent de la majorité des mécanismes de tout autre projet Edge Delivery Services, indépendamment de la source de contenu ou de la [méthode de création](/help/edge/wysiwyg-authoring/authoring.md).
 
 Avant de commencer à modéliser le contenu de votre projet, veillez à lire la documentation suivante.
 
@@ -39,7 +39,7 @@ Dans AEM, ce contenu est implémenté sous la forme de composants avec des mod�
 * **Image** : source, description
 * **Bouton** : texte, titre, URL, type (par défaut, principal, secondaire)
 
-Le modèle de ces composants fait partie du [ Boilerplate pour la création WYSIWYG avec des Edge Delivery Services ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
+Le modèle de ces composants fait partie du [modèle standard pour la création WYSIWYG avec Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blocs {#blocks}
 
@@ -111,9 +111,9 @@ Pour chaque bloc, l’équipe de développement :
 * doit utiliser le type de ressource `core/franklin/components/block/v1/block`, l’implémentation générique de la logique de bloc dans AEM ;
 * doit définir le nom du bloc, qui sera rendu dans l’en-tête de tableau du bloc ;
    * Le nom du bloc est utilisé pour récupérer le style et le script appropriés pour décorer le bloc.
-* Peut définir un [ID de modèle](/help/implementing/universal-editor/field-types.md#model-structure).
+* peut définir un [ID de modèle](/help/implementing/universal-editor/field-types.md#model-structure) ;
    * L’ID de modèle est une référence au modèle du composant, qui définit les champs disponibles pour la personne chargée de la création dans le panneau des propriétés.
-* Peut définir un [identifiant de filtre](/help/implementing/universal-editor/filtering.md).
+* peut définir un [ID de filtre](/help/implementing/universal-editor/filtering.md).
    * L’ID de filtre est une référence au filtre du composant, qui permet de modifier le comportement de création, par exemple en limitant les enfants pouvant être ajoutés au bloc ou à la section, ou les fonctionnalités d’éditeur de texte enrichi qui sont activées.
 
 Toutes ces informations sont stockées dans AEM lorsqu’un bloc est ajouté à une page. Si le type de ressource ou le nom du bloc est manquant, le bloc ne s’affiche pas sur la page.
@@ -181,7 +181,7 @@ Dans l’exemple suivant, l’image est d’abord définie dans le modèle, puis
 
 >[!ENDTABS]
 
-Vous remarquerez peut-être que certains types de valeurs autorisent la déduction de la sémantique dans les balises et que les propriétés sont combinées dans des cellules uniques. Ce comportement est décrit dans la section [Type d’inférence](#type-inference).
+Vous remarquerez peut-être que certains types de valeurs autorisent la déduction de la sémantique dans les balises et que les propriétés sont combinées dans des cellules uniques. Ce comportement est décrit dans la section [Déduction du type](#type-inference).
 
 #### Bloc clé-valeur {#key-value}
 
@@ -189,7 +189,7 @@ Dans de nombreux cas, il est recommandé de décorer le balisage sémantique ren
 
 Dans d’autres cas, cependant, le bloc est lu comme une configuration de type paire clé-valeur.
 
-La [métadonnées de section](/help/edge/developer/markup-sections-blocks.md#sections) en est un exemple. Dans ce cas d’utilisation, le bloc peut être configuré pour s’afficher sous la forme d’une table de paires clé-valeur. Pour en savoir plus, consultez la rubrique [Sections et métadonnées de sections](#sections-metadata).
+En voici un exemple : [métadonnées de section](/help/edge/developer/markup-sections-blocks.md#sections). Dans ce cas d’utilisation, le bloc peut être configuré pour effectuer le rendu en tant que table de paires clé-valeur. Pour en savoir plus, consultez la rubrique [Sections et métadonnées de sections](#sections-metadata).
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ Dans l’exemple suivant, un bloc accepte une liste d’icônes liées en tant q
 
 ### Créer des modèles de contenu sémantique pour les blocs {#creating-content-models}
 
-En expliquant le [fonctionnement de la structure des blocs](#block-structure), il est possible de créer un modèle de contenu qui mappe le contenu conservé dans AEM de type un-à-un au niveau de la diffusion.
+Une fois la [mécanique de la structure de bloc expliquée](#block-structure), il est possible de créer un modèle de contenu qui mappe le contenu conservé dans AEM avec le niveau de diffusion, de manière biunivoque.
 
-Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et des conseils généraux dans [David&#39;s Model (take 2)](https://www.aem.live/docs/davidsmodel). Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un ensemble complet de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface utilisateur courants.
+Au début de chaque projet, il convient d’envisager attentivement le modèle de contenu de chaque bloc. Ceux-ci doivent être indépendants de la source de contenu et de l’expérience de création afin de permettre aux auteurs et autrices de les changer ou de les combiner, tout en réutilisant les implémentations et les styles de bloc. Vous trouverez plus de détails et de conseils généraux dans la section [Modèle de David (version 2)](https://www.aem.live/docs/davidsmodel). Plus précisément, la [collection de blocs](/help/edge/developer/block-collection.md) contient un vaste ensemble de modèles de contenu pour des cas d’utilisation spécifiques de modèles d’interface d’utilisation courants.
 
 Pour la création WYSIWYG avec Edge Delivery Services, cela soulève la question de savoir comment diffuser un modèle de contenu sémantique convaincant lorsque les informations sont créées avec des formulaires composés de plusieurs champs au lieu de modifier le balisage sémantique dans un contexte tel que du texte enrichi.
 
@@ -345,7 +345,7 @@ Pour certaines valeurs, la signification sémantique peut être déduite des val
 * **Images** : si une référence à une ressource dans AEM est une ressource avec un type MIME commençant par `image/`, la référence est rendue sous la forme `<picture><img src="${reference}"></picture>`.
 * **Liens** : si une référence existe dans AEM et n’est pas une image, ou si la valeur commence par `https?://` ou `#`, la référence est rendue sous la forme `<a href="${reference}">${reference}</a>`.
 * **Texte enrichi** : si une valeur rognée commence par un paragraphe (`p`, `ul`, `ol`, `h1`-`h6`, etc.), la valeur est rendue sous forme de texte enrichi.
-* **Noms de classe** - La propriété `classes` est traitée comme [options de bloc](/help/edge/developer/markup-sections-blocks.md#block-options) et rendue dans l’en-tête du tableau pour [blocs simples](#simple) ou comme liste de valeurs pour les éléments d’un bloc [conteneur](#container). Il est utile si vous souhaitez [mettre en forme un bloc différemment](/help/edge/wysiwyg-authoring/create-block.md#block-options), mais que vous n’avez pas besoin de créer un bloc entièrement nouveau.
+* **Noms de classe** : la propriété `classes` est traitée sous forme d’[options de bloc](/help/edge/developer/markup-sections-blocks.md#block-options) et rendue dans l’en-tête du tableau pour des [blocs simples](#simple), ou en tant que liste de valeurs pour les éléments d’un [bloc conteneur](#container). Elle est utile si vous souhaitez [appliquer un style différent à un bloc](/help/edge/wysiwyg-authoring/create-block.md#block-options), mais que vous n’avez pas besoin de créer un bloc entièrement nouveau.
 * **Listes de valeurs** : si une valeur est une propriété à plusieurs valeurs et que la première valeur ne correspond à aucune des valeurs précédentes, toutes les valeurs sont concaténées sous la forme d’une liste séparée par des virgules.
 
 Tout le reste est rendu en texte brut.
@@ -532,11 +532,11 @@ Le regroupement d’éléments utilise une convention de nommage selon laquelle 
 
 ## Sections et métadonnées de sections {#sections-metadata}
 
-De la même manière qu’un développeur ou une développeuse peut définir et modéliser plusieurs [blocs](#blocks), il ou elle peut définir différentes sections.
+De la même manière qu’une équipe de développement peut définir et modéliser plusieurs [blocs](#blocks), elle peut définir différentes sections.
 
 Le modèle de contenu de Edge Delivery Services n’autorise, à dessein, qu’un seul niveau d’imbrication, c’est-à-dire un contenu ou un bloc par défaut figurant dans une section. Cela signifie que, pour disposer de composants visuels plus complexes pouvant contenir d’autres composants, il convient de les modéliser sous forme de sections et de les combiner à l’aide du blocage automatique côté client. Les exemples types sont les onglets et les sections réductibles, comme les accordéons.
 
-Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [identifiant de filtre](/help/implementing/universal-editor/filtering.md), qui sont utilisés uniquement par l’[éditeur universel](/help/implementing/universal-editor/introduction.md), ainsi qu’un [identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure), qui est utilisé pour effectuer le rendu des métadonnées de la section. Dans ce cas, le modèle est le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
+Une section peut être définie de la même manière qu’un bloc, mais avec le type de ressource `core/franklin/components/section/v1/section`. Les sections peuvent avoir un nom et un [ID de filtre](/help/implementing/universal-editor/filtering.md), qui sont utilisés par l’[éditeur universel](/help/implementing/universal-editor/introduction.md) uniquement, ainsi qu’un [ID de modèle](/help/implementing/universal-editor/field-types.md#model-structure), qui est utilisé pour effectuer le rendu des métadonnées de section. Dans ce cas, le modèle est le modèle du bloc de métadonnées de section, qui sera automatiquement ajouté à une section en tant que bloc clé-valeur s’il n’est pas vide.
 
 L’[identifiant de modèle](/help/implementing/universal-editor/field-types.md#model-structure) et l’[identifiant de filtre](/help/implementing/universal-editor/filtering.md) de la section par défaut sont `section`. Ils peuvent être utilisés pour modifier le comportement de la section par défaut. L’exemple suivant ajoute des styles et une image d’arrière-plan au modèle de métadonnées de section.
 
@@ -595,7 +595,7 @@ L’exemple suivant définit une section d’onglets qui peut être utilisée po
 
 ## Métadonnées de page {#page-metadata}
 
-Les documents peuvent comporter une page [bloc de métadonnées](https://www.aem.live/developer/block-collection/metadata), qui est utilisée pour définir les éléments de `<meta>` qui sont rendus dans le `<head>` d’une page. Les propriétés de page des pages dans AEM as a Cloud Service sont mappées à celles disponibles et prêtes à l’emploi pour Edge Delivery Services, comme `title`, `description`, `keywords`, etc.
+Les documents peuvent avoir un [bloc de métadonnées](https://www.aem.live/developer/block-collection/metadata) de page, qui est utilisé pour définir les éléments `<meta>` qui sont rendus en `<head>` d’une page. Les propriétés de page des pages dans AEM as a Cloud Service sont mappées à celles disponibles et prêtes à l’emploi pour Edge Delivery Services, comme `title`, `description`, `keywords`, etc.
 
 Avant d’explorer plus en détail la manière de définir vos propres métadonnées, consultez les documents suivants pour comprendre au préalable le concept de métadonnées de page.
 
@@ -645,5 +645,5 @@ Si vous savez déjà comment créer des blocs, consultez le document [Guide de p
 
 >[!TIP]
 >
->Pour une présentation complète de la création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM GEMs](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
+>Pour une présentation détaillée du processus de création d’un projet Edge Delivery Services activé pour la création WYSIWYG avec AEM as a Cloud Service comme source de contenu, consultez [ce webinaire AEM Gems](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
 

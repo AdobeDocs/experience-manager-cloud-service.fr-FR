@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 82%
 
 Intégrez les développeurs front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Configurer votre pipeline](pipeline-setup.md), vous avez appris à créer un pipeline front-end pour gérer la personnalisation du thème de votre site. Vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Configurer le pipeline](pipeline-setup.md), vous avez appris à créer un pipeline front-end pour gérer la personnalisation du thème de votre site. Vous devriez maintenant disposer des compétences suivantes :
 
 * Comprendre ce qu’est un pipeline front-end.
 * Savoir comment configurer un pipeline front-end dans Cloud Manager.
@@ -101,10 +101,10 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Ajouter un développeur front-end en tant qu’utilisateur.
 * Octroyer les rôles requis au développeur front-end.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Récupération des informations d’accès au référentiel Git](retrieve-access.md), qui aborde le développement front-end exclusivement et explique comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Récupérer des informations d’accès au référentiel Git](retrieve-access.md), dont le contenu sʼadresse cette fois exclusivement aux personnes chargées du développement front-end. Découvrez comment celles-ci peuvent accéder aux informations du référentiel Git à lʼaide de Cloud Manager.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Récupération des informations d’identification du développeur front-end](retrieve-access.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Récupérer des informations dʼidentification de la personne chargée du développement front-end](retrieve-access.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours.
 
 * [Parcours d’intégration](/help/journey-onboarding/overview.md) : ce guide sert de point de départ pour vous assurer que vos équipes sont configurées et disposent dʼun accès à AEM as a Cloud Service.

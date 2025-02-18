@@ -5,9 +5,9 @@ exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 94%
 
 Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de module complémentaire de démonstration de référence de Adobe Experience Manager (AEM), [Présentation de l’installation du module complémentaire de démonstration de référence](installation.md), vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
+Dans le document précédent du parcours du module complémentaire de démonstration de référence d’Adobe Experience Manager (AEM), [Présentation de l’installation du module complémentaire de démonstration de référence](installation.md), vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différents éléments fonctionnent ensemble. Vous devez maintenant :
 
 * Posséder une compréhension de base de Cloud Manager.
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.

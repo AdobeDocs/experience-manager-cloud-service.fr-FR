@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Accéder à Cloud Manager {#cloud-resources}
 
-Dans cette partie du [parcours d’intégration](overview.md), vous apprendrez à accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet.
+Dans cette partie du [parcours d’intégration](overview.md), vous apprendrez à accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet.
 
 ## Objectif {#objective}
 
-Dans l’article précédent du présent parcours d’intégration, [Affectation de membres d’équipe à des profils de produit Cloud Manager](assign-profiles-cloud-manager.md), vous avez attribué les rôles appropriés à votre équipe AEMaaCS. Découvrez maintenant comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet que votre équipe utilise.
+Dans l’article précédent du présent parcours d’intégration, [Affectation de membres d’équipe à des profils de produit Cloud Manager](assign-profiles-cloud-manager.md), vous avez attribué les rôles appropriés à votre équipe AEMaaCS. Découvrez maintenant comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet que votre équipe utilise.
 
 Puisque vous avez terminé l’étape précédente dans ce parcours, votre équipe peut accéder à Cloud Manager. Cloud Manager permet de créer et de gérer des ressources de projet telles que des programmes et des environnements.
 
@@ -40,7 +40,7 @@ Avant que les membres de l’équipe que vous avez affectés au rôle de **Propr
 
 1. Assurez-vous, en tant qu’administrateur ou administratrice système, que le rôle de **Propriétaire de l’entreprise** vous est affecté(e).
 
-   * Revenez à l’étape précédente dans ce parcours, [Affecter des membres de l’équipe à des profils de produit Cloud Manager](assign-profiles-cloud-manager.md), pour plus d’informations sur l’attribution du rôle **Propriétaire de l’entreprise** à l’administrateur ou l’administratrice système.
+   * Revenez à l’étape précédente dans ce parcours, [Affecter des membres de l’équipe à des profils de produits Cloud Manager](assign-profiles-cloud-manager.md), pour plus d’informations sur l’attribution du rôle de **Propriétaire de l’entreprise** à l’administrateur ou l’administratrice système.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et familiarisez-vous avec la page de destination normale.
 

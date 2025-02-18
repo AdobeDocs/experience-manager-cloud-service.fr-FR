@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1216'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 Découvrez comment connecter AEM à un service de traduction.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM, [Prise en main de la traduction découplée AEM](learn-about.md) vous avez appris à organiser votre contenu découplé et la manière dont fonctionnent les outils de traduction AEM et vous devriez maintenant :
 
@@ -59,7 +59,7 @@ Si vous choisissez un autre fournisseur, votre administrateur doit installer le 
 >
 >L’utilisation de Microsoft Translator prêt à l’emploi dans AEM ne nécessite pas de configuration supplémentaire et fonctionne en l’état sans configuration de connecteur supplémentaire.
 >
->Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu](#associate). Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
+>Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu](#associate). Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
 >
 >La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production. Si vous décidez de vous procurer une licence, l’administrateur ou l’administratrice système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour configurer la licence.
 
@@ -122,7 +122,7 @@ Pour ce faire, accédez à la racine de langue de votre contenu. Dans notre exem
 1. Accédez à la navigation globale, puis à **Navigation** > **Ressources** > **Fichiers**.
 1. Dans la console Ressources, sélectionnez la racine de langue à configurer et sélectionnez **Propriétés**.
 1. Sélectionnez l’onglet **Services cloud**.
-1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez votre connecteur. Il doit apparaître dans la liste déroulante lorsque vous avez installé son package comme [décrit précédemment](#connect-translation-provider).
+1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez votre connecteur. Il doit s’afficher dans la liste déroulante lorsque vous avez installé son package comme [décrit précédemment](#connect-translation-provider).
 1. Sous **Configurations des services cloud** dans la liste déroulante **Ajouter une configuration**, sélectionnez également votre configuration.
 1. Sélectionnez **Enregistrer et fermer**.
 
@@ -135,7 +135,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translation-rules.md), dans lequel vous apprendrez à utiliser votre configuration en l’état pour effectivement traduire votre contenu.
+Tirez parti de ces connaissances et continuez à progresser dans votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translation-rules.md), dans lequel vous découvrirez comment utiliser votre configuration en l’état pour effectivement traduire votre contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 

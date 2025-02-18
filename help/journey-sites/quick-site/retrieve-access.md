@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 82%
 
 Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Si vous êtes un développeur front-end uniquement responsable de la personnalisation du thème du site, il nʼest pas nécessaire de savoir comment AEM a été configuré et vous pouvez passer à la section [Objectif](#objective) de ce document.
 
-Si vous jouez également le rôle d’administrateur Cloud Manager ou AEM et de développeur front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Octroi de l’accès au développeur front-end](grant-access.md), comment intégrer le développeur front-end afin qu’il ait accès au référentiel Git, et vous devriez maintenant savoir :
+Si vous détenez également le rôle d’administration Cloud Manager ou AEM et de développement front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Octroi dʼaccès au développeur ou à la développeuse front-end](grant-access.md), comment intégrer la personne chargée du développement front-end afin quʼelle ait accès au référentiel Git. À présent, vous devriez disposer des connaissances suivantes :
 
 * Ajouter un développeur front-end en tant qu’utilisateur.
 * Octroyer les rôles requis au développeur front-end.
@@ -114,10 +114,10 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Découvrez Cloud Manager à un haut niveau.
 * Avoir récupéré vos identifiants pour accéder au Git d’AEM afin de valider vos personnalisations.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Personnaliser le thème du site](customize-theme.md), dans lequel vous apprendrez à créer le thème du site, à le personnaliser et à le tester à l’aide de contenu AEM en direct.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Personnaliser le thème du site](customize-theme.md), où vous apprendrez à créer le thème du site, à le personnaliser et à le tester à l’aide de contenu actif d’AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
-* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
+* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) : consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.

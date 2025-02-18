@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment créer des blocs utilisables à la fois pour la création WYS
 
 ## Vue d’ensemble {#overview}
 
-Sur certains projets, vous pouvez prendre en charge la création de [WYSIWYG à l’aide de l’éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) ainsi que la création [basée sur des documents](/help/edge/docs/authoring.md). Pour réduire le temps de développement et garantir la même expérience sur le site, vous pouvez créer un ensemble de blocs pour prendre en charge les deux cas d’utilisation.
+Sur certains projets, vous pouvez prendre en charge à la fois la [création WYSIWYG à l’aide de l’éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) et la [création basée sur des documents](/help/edge/docs/authoring.md). Pour réduire le temps de développement et garantir la même expérience sur le site, vous pouvez créer un ensemble de blocs pour prendre en charge les deux cas d’utilisation.
 
 Pour ce faire, vous devez utiliser la même approche de modélisation de contenu pour votre configuration de création WYSIWYG, ainsi que pour votre configuration de création basée sur des documents.
 

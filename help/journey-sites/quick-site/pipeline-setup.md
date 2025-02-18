@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 85%
 
 Créez un pipeline front-end pour gérer la personnalisation du thème de votre site.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils frontaux. Vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Créer un site à partir d’un modèle](create-site.md), vous avez appris à utiliser un modèle de site pour créer rapidement un site AEM qui peut être davantage personnalisé à l’aide d’outils front-end. Vous devriez maintenant disposer des compétences suivantes :
 
-* Découvrir comment obtenir des modèles de site AEM.
+* Comprendre comment obtenir des modèles de site AEM.
 * Apprendre à créer un nouveau site à l’aide d’un modèle.
-* Découvrir comment télécharger le modèle de votre nouveau site pour le fournir au développeur front-end.
+* Découvrez comment télécharger le modèle de votre nouveau site pour le fournir au développement front-end.
 
 Cet article s’appuie sur ces principes de base afin que vous puissiez configurer un pipeline frontal, que le développeur front-end utilisera ultérieurement dans le parcours pour déployer les personnalisations frontales.
 
@@ -114,11 +114,11 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Comprendre ce qu’est un pipeline front-end.
 * Savoir comment configurer un pipeline front-end dans Cloud Manager.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Accorder l’accès au développeur front-end](grant-access.md), dans lequel vous intégrerez les développeurs front-end dans Cloud Manager afin qu’ils aient accès à votre référentiel Git et à votre pipeline de sites AEM.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Accorder l’accès aux personnes chargées du développement front-end](grant-access.md) pour intégrer celles-ci dans Cloud Manager afin qu’elles aient accès à votre référentiel Git et à votre pipeline de sites AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md) : si vous avez besoin d’informations supplémentaires sur la configuration et la gestion des référentiels Git pour votre projet AEMaaCS, reportez-vous à ce document.

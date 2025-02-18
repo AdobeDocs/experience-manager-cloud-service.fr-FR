@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Accès à votre contenu grâce aux API de diffusion AEM {#access-your-content}
 
-Dans cette partie du [Parcours de développement AEM Headless](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion headless).
+Dans cette partie du [Parcours de développement AEM Headless](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion découplée).
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment modéliser votre contenu](model-your-content.md), vous avez appris les principes de base de la modélisation de contenu dans AEM. Vous devez donc maintenant comprendre comment modéliser votre structure de contenu, puis réaliser cette structure à l’aide des modèles de fragment de contenu et des fragments de contenu AEM :
 
@@ -353,7 +353,7 @@ Pour obtenir des détails complets sur l’utilisation de l’API AEM GraphQL, a
 * L’exemple de structure de fragment de contenu ;
 * Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris à accéder à votre contenu en mode découplé et à y effectuer des requêtes à l’aide de l’API AEM GraphQL, vous pouvez [apprendre à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour](update-your-content.md).
 

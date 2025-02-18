@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Premiers pas vers votre première expérience d’utilisation d’AEM découplé {#path-to-first-experience}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
+Dans cette partie du [Parcours de développement AEM Headless](overview.md), vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent traitant du parcours AEM découplé, intitulé [Prise en main d’AEM as a Cloud Service découplé](getting-started.md), vous avez appris la théorie sur ce qu’est un CMS découplé, et vous devriez maintenant :
 
@@ -77,7 +77,7 @@ Les auteurs et autrices de contenu créent du contenu en fonction des modèles d
 
 ## Configuration {#setup}
 
-Avant de commencer à utiliser du contenu découplé dans AEM, vous devez vous assurer que toutes les fonctionnalités requises sont activées. Cette section décrit ces différentes exigences. Les étapes réelles pour réaliser ces étapes sont détaillées plus loin dans le [Parcours de développement découplé AEM](#overview.md).
+Avant de commencer à utiliser du contenu découplé dans AEM, vous devez vous assurer que toutes les fonctionnalités requises sont activées. Cette section décrit ces différentes exigences. Les étapes réelles pour réaliser ces étapes sont détaillées plus loin dans le [Parcours de développement AEM Headless](#overview.md).
 
 Vous pouvez également consulter les [ressources supplémentaires](#additional-resources) pour plus d’informations sur chaque sujet.
 
@@ -143,7 +143,7 @@ Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez da
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [ Comment modéliser votre contenu en tant que modèles de contenu AEM ](model-your-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu AEM](model-your-content.md), les documents facultatifs suivants approfondissent certains concepts mentionnés dans ce document, mais ils ne sont pas obligatoires pour poursuivre le parcours découplé.
 
 * [Parcours de traduction découplée AEM](/help/journey-headless/translation/overview.md) : ce parcours d’information vous aide à comprendre les principes de la technologie découplée, la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Développement découplé pour AEM Sites as a Cloud Service](/help/headless/introduction.md) : une présentation rapide pour orienter le développeur AEM découplé vers les fonctionnalités qui lui seront utiles.

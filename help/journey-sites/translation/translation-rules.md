@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM Sites, intitulé [Configuration du connecteur de traduction](configure-connector.md), vous avez appris à installer et à configurer votre connecteur de traduction et vous devez maintenant :
 
@@ -93,7 +93,7 @@ Plusieurs propriétés supplémentaires peuvent être configurées dans le cadre
 
 Ces fonctionnalités ne sont généralement pas nécessaires pour commencer à localiser votre contenu mais vous pouvez en apprendre plus à ce sujet dans la section [Ressources supplémentaires](#additional-resources), si vous êtes intéressé.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de traduction découplée AEM Sites vous devriez :
 
@@ -104,6 +104,6 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction en examinant le document [Traduire le contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction en consultant le document [Traduire du contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours.
 
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.

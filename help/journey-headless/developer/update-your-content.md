@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Comment mettre à jour votre contenu à l’aide des API AEM Assets {#update-your-content}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), apprenez à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
+Dans cette partie du [parcours de développement AEM Headless](overview.md), découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment accéder à votre contenu à l’aide des API de diffusion AEM](access-your-content.md), vous avez appris à accéder à votre contenu en mode découplé via l’API AEM GraphQL et vous devriez maintenant :
 
@@ -307,7 +307,7 @@ Pour plus d’informations sur l’utilisation de l’API REST AEM Assets, voir 
 * API HTTP Assets d’Adobe Experience Manager (ressources supplémentaires)
 * Prise en charge des fragments de contenu dans l’API HTTP AEM Assets (ressources supplémentaires)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 

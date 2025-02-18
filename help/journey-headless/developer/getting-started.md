@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Prise en main d’AEM découplé as a Cloud Service {#getting-started}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM découplé.
+Dans cette partie du [parcours de développement AEM Headless](overview.md), découvrez ce qui est nécessaire pour démarrer votre propre projet avec AEM Headless.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent relatif au parcours concernant AEM découplé, [Découvrir le développement découplé du système de gestion de contenu](learn-about.md) (CMS), vous avez appris la théorie de base d’un CMS découplé et vous devez maintenant :
 
@@ -65,7 +65,7 @@ La réplication consiste à transférer le contenu entre l’instance de créati
 1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication.
 1. Il est ensuite possible d’appeler les API pour récupérer ce contenu.
 
-AEM Headless s’appuie sur cette base technique en offrant des outils puissants pour gérer le contenu découplé, approche [décrite dans la section suivante](#aem-headless-basics).
+AEM Headless s’appuie sur cette base technique en offrant des outils puissants pour gérer le contenu en mode découplé, approche [décrite dans la section suivante](#aem-headless-basics).
 
 ## Concepts de base d’AEM découplé {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ La hiérarchie des dossiers peut répondre à deux préoccupations majeures conc
 * [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques pour les paramètres régionaux.
 * Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction, mais aussi à gérer logiquement les fragments de contenu.
 
-AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu](#developer). Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les auteurs de contenu.
+AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu](#developer). Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les personnes chargées de la création de votre contenu.
 
 Les dossiers peuvent également être limités de manière à n’autoriser que certains types de contenu (en fonction des modèles de fragment de contenu). Il est recommandé de toujours spécifier explicitement les modèles autorisés pour tous les dossiers de la hiérarchie. Spécification du contenu autorisé pour un dossier donné :
 
@@ -241,7 +241,7 @@ Les développeurs doivent garder à l’esprit quelques recommandations de base 
 * Pour des requêtes plus performantes avec AEM, utilisez toujours des requêtes persistantes. Celles-ci sont abordées plus loin dans le parcours.
 * GraphQL est conçu sur un modèle déclaratif, conformément au principe suivant : « Demandez ce dont vous avez besoin et c’est ce que vous obtiendrez ». En d’autres termes, lors de la création de requêtes GraphQL, évitez systématiquement les requêtes de type `select *` que vous pourriez créer dans une base de données relationnelle.
 
-Pour une [implémentation découplée type utilisant AEM](#level-1), le développeur ne nécessite aucune connaissance du codage d’AEM.
+Pour une [mise en œuvre découplée de type général à l’aide d’AEM](#level-1), la personne chargée du développement n’a besoin d’aucune connaissance en matière de codage avec AEM.
 
 ### Exigences de performance {#performance-requirements}
 
@@ -267,7 +267,7 @@ Souvent, les différentes sections d’expériences ont des fréquences de mises
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
 * Certains éléments sont-ils spécifiques à l’utilisateur, donc sans pouvoir être mis en cache ?
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
@@ -280,7 +280,7 @@ Vous devriez poursuivre votre parcours avec AEM découplé en consultant le docu
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours découplé.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en examinant le document [Accès à votre première expérience à l’aide d’AEM Headless](path-to-first-experience.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours en mode découplé.
 
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Comprendre la structure d’AEM as a Cloud Service

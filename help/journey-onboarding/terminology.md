@@ -5,15 +5,15 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Terminologie d’AEM as a Cloud Service {#terminology}
 
-Dans cette partie du [parcours d’intégration](overview.md), vous découvrirez certains aspects de la terminologie d’AEM as a Cloud Service et sa structure de base.
+Dans cette partie du [parcours d’intégration](overview.md), vous découvrirez certains aspects de la terminologie d’AEM as a Cloud Service et sa structure de base.
 
 ## Objectif {#objective}
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 83%
 
 Découvrez comment le thème du site est créé, comment le personnaliser et comment le tester à l’aide du contenu réel d’AEM.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Récupération des informations d’accès au référentiel Git](retrieve-access.md), vous avez appris comment les développeurs front-end utilisent Cloud Manager pour accéder aux informations du référentiel Git. Vous devriez maintenant :
+Dans le document précédent du parcours de création rapide de site AEM, [Récupération des informations d’accès au référentiel Git](retrieve-access.md), vous avez appris comment les développeurs et développeuses front-end utilisent Cloud Manager pour accéder aux informations du référentiel Git. Vous devriez désormais disposer des compétences suivantes :
 
 * Découvrez Cloud Manager à un haut niveau.
 * Avoir récupéré vos identifiants pour accéder au Git d’AEM afin de valider vos personnalisations.
@@ -111,7 +111,7 @@ Vous pouvez continuer à personnaliser le thème en fonction des exigences que v
 Une fois vos personnalisations terminées, vous pouvez les valider dans le référentiel Git d’AEM. Vous devez d’abord cloner le référentiel sur votre ordinateur local.
 
 1. Sur la ligne de commande, accédez à l’emplacement où vous souhaitez cloner le référentiel.
-1. Exécutez la commande [récupérée précédemment à partir de Cloud Manager](retrieve-access.md). Il doit être similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Utilisez le nom d’utilisateur et le mot de passe Git que [vous avez récupérés dans la partie précédente de ce parcours ](retrieve-access.md).
+1. Exécutez la commande [récupérée précédemment à partir de Cloud Manager](retrieve-access.md). Elle doit être similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Utilisez le nom d’utilisateur ou d’utilisatrice et le mot de passe Git que [vous avez récupérés dans la partie précédente de ce parcours](retrieve-access.md).
 
    ![Clonage du référentiel](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ Maintenant que vous avez terminé cette partie du parcours de création rapide d
 * Voir comment tester vos personnalisations de thème à l’aide de contenu d’AEM réel via un proxy local.
 * Savoir comment valider vos modifications dans le référentiel Git d’AEM.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Déployer votre thème personnalisé](deploy-theme.md), dans lequel vous apprendrez à déployer le thème à l’aide du pipeline front-end.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Déployer votre thème personnalisé](deploy-theme.md), qui vous apprendra à déployer le thème à l’aide du pipeline front-end.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en examinant le document [Déployer votre thème personnalisé](deploy-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Déployer votre thème personnalisé](deploy-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Thème du site AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) : il s’agit du référentiel GitHub du thème de site AEM.
 * [npm](https://www.npmjs.com) : les thèmes AEM utilisés pour créer rapidement des sites sont basés sur npm.

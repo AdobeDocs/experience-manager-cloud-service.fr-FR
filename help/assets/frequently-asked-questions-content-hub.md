@@ -3,9 +3,9 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Il est possible d’évaluer Content Hub sans affecter le contenu des utilisateu
 * L’administrateur ou l’administratrice Admin Console ajoute [quelques utilisateurs et utilisatrices sélectionnés](/help/assets/deploy-content-hub.md#onboard-content-hub-users) au profil de produit Content Hub, afin qu’ils puissent commencer l’évaluation.
 * Une fois l’évaluation terminée, les utilisateurs et utilisatrices AEM de l’instance de création peuvent supprimer l’approbation des ressources de test et approuver les ressources de production pour Content Hub, puis l’administrateur ou l’administratrice Admin Console peut ajouter tous les utilisateurs et utilisatrices qui ont besoin d’accéder à Content Hub et au contenu approuvé. Félicitations, Content Hub est maintenant actif.
 
-Il existe un programme d’accès anticipé à Content Hub sur les programmes Sandbox et leurs environnements de production de création. Pour en savoir plus, voir [Présentation des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Pour en savoir plus sur le programme d’accès anticipé, contactez votre équipe de compte d’Adobe.
+Il existe un programme d’accès anticipé à Content Hub sur les programmes Sandbox et leurs environnements de production de création. Pour en savoir plus, voir [Présentation des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Pour en savoir plus sur le programme d’accès anticipé, contactez votre équipe Adobe en charge des comptes.
 
 Content Hub n’est pas encore disponible pour les environnements hors production (évaluation et développement). La disponibilité attendue des environnements d’évaluation/de développement pour Assets Ultimate est mars 2025.
 
