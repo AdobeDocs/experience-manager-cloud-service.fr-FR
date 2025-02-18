@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 18%
 
 ---
@@ -111,7 +111,7 @@ Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre uti
 
 ### Barre d’outils de l’éditeur universel {#universal-editor-toolbar}
 
-La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste en dessous [en-tête Experience Cloud ](#experience-cloud-header). Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
+La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste en dessous [en-tête Experience Cloud](#experience-cloud-header). Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
 
 ![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
 
@@ -207,14 +207,14 @@ D’autres options standard sont accessibles à l’aide du bouton représentant
 
 ![Bouton représentant des points de suspension](assets/ellipsis.png)
 
-Par exemple, la possibilité de dépublier une page (c’est-à-dire d’inverser l’action du bouton [**Publish**](#publish)) est accessible à partir du bouton représentant des points de suspension.
+Par exemple, la possibilité de dépublier une page (c’est-à-dire d’inverser l’action du bouton [**Publier**](#publish)) est accessible à partir du bouton représentant des points de suspension.
 
 #### Boutons supplémentaires {#additional-toolbar-buttons}
 
 L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans la barre d’outils, cela signifie que votre éditeur universel a été étendu.
 
-* Pour plus d’informations sur les possibilités d’extension, consultez la [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la documentation de l’Extension Manager [](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Pour plus d’informations sur les possibilités d’extension, consultez la [Extension de l’éditeur universel](/help/implementing/universal-editor/extending.md).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### L’éditeur {#editor}
 
@@ -308,12 +308,12 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 >
 >Utilisez le raccourci `Shift+Backspace` pour supprimer un composant sélectionné d’un conteneur.
 
-#### Boutons supplémentaires {#additional-properties-rail-buttons}
+## Fonctionnalités supplémentaires {#additional-features}
 
-L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans le panneau des propriétés, cela signifie que votre éditeur universel a été étendu.
+L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons ou des options supplémentaires dans le panneau des propriétés ou la barre d’outils, cela signifie que votre éditeur universel a été étendu.
 
 * Pour plus d’informations sur les possibilités d’extension, consultez la [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la documentation de l’Extension Manager [](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Étapes suivantes {#next-steps}
 
