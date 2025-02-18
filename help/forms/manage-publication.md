@@ -1,13 +1,13 @@
 ---
 title: Comment publier ou dépublier des formulaires sur des instances d’aperçu ou de publication ?
-description: Découvrez comment publier ou dépublier des formulaires dans l’environnement de création AEM pour prévisualiser ou publier des instances. Que vous testiez vos formulaires dans un environnement d’évaluation ou que vous les déployiez en direct pour les utilisateurs finaux, AEM fournit des outils rationalisés pour gérer ce processus efficacement.
+description: Découvrez comment publier ou dépublier des formulaires dans l’environnement de création d’AEM pour prévisualiser ou publier des instances. Que vous testiez vos formulaires dans un environnement d’évaluation ou que vous les déployiez en direct pour les utilisateurs finaux, AEM fournit des outils rationalisés pour gérer ce processus efficacement.
 Keywords: Manage publication, Forms Manage publication, AF Manage publication, Adaptive Forms Manage publication, Cloud Manage publication
 feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -19,32 +19,32 @@ ht-degree: 2%
 En tant qu’administrateur ou administratrice Adobe Experience Manager (AEM) Forms, vous pouvez publier des formulaires de votre instance d’auteur sur Experience Manager Forms. Vous avez également la possibilité de planifier la publication d’un formulaire ou d’un dossier à une date ou une heure ultérieure. Une fois la publication effectuée, les utilisateurs et utilisatrices peuvent accéder aux formulaires et les remplir.
 
 Dans Experience Manager Forms, vous pouvez publier un formulaire à l’aide de l’une des méthodes suivantes :
-* [Option Publish](#publish-forms-using-the-publish-option)
+* [Option de publication](#publish-forms-using-the-publish-option)
 * [Option Gérer la publication](#publish-forms-using-the-manage-publication-option)
 
 ## Éléments à garder à l’esprit
 
 * Seuls les membres du groupe de `forms-users` peuvent utiliser l’option **Gérer la publication** pour publier les formulaires.
-* Les modifications apportées aux formulaires ou aux dossiers dans Experience Manager Forms n&#39;apparaissent pas dans l&#39;instance **Publish** tant qu&#39;elles n&#39;ont pas été republiées. Cela garantit que les mises à jour de travail en cours restent indisponibles dans l’instance **Publish**. Seules les modifications explicitement publiées par un administrateur sont reflétées dans l’instance **Publish**.
+* Les modifications apportées aux formulaires ou aux dossiers dans Experience Manager Forms n’apparaissent pas dans l’instance de **Publication** tant qu’elles n’ont pas été republiées. Cela garantit que les mises à jour de travail en cours restent indisponibles dans l’instance de **publication**. Seules les modifications explicitement publiées par un administrateur sont répercutées dans l’instance de **publication**.
 
-## Publish forms avec l’option Publish
+## Publication de formulaires à l’aide de l’option Publication
 
-L&#39;option **Publish** permet de publier immédiatement un formulaire. Pour publier un formulaire Experience Manager à l’aide du bouton **Publish** de la barre d’outils. Pour publier des formulaires à l’aide de l’option Publish, procédez comme suit :
+L&#39;option **Publier** permet de publier immédiatement un formulaire. Pour publier un formulaire Experience Manager à l’aide du bouton **Publier** de la barre d’outils. Pour publier des formulaires à l’aide de l’option Publier , procédez comme suit :
 
 1. Dans la console Experience Manager Forms, accédez au dossier parent et sélectionnez un formulaire que vous souhaitez publier.
-1. Cliquez sur l’option **Publish** dans la barre d’outils, consultez toutes les ressources de référence qui seraient publiées avec le formulaire.
+1. Cliquez sur l’option **Publier** dans la barre d’outils, consultez toutes les ressources de référence qui seraient publiées avec le formulaire.
 1. Cliquez sur **[!UICONTROL Publier]**.
 
-   ![Publish et dépublier le formulaire](/help/edge/docs/forms/assets/publish-form-option.png)
+   ![Publier et dépublier le formulaire](/help/edge/docs/forms/assets/publish-form-option.png)
 
    Une fois le formulaire et ses ressources associées publiés, une boîte de dialogue **Succès** s’affiche.
 1. Cliquez sur **Fermer**.
 
-   ![Boîte de dialogue Succès](/help/forms/assets/publish-success.png)
+   ![Boîte de dialogue Succès](/help/forms/assets/publish-success1.png)
 
 ### Dépublication du formulaire
 
-Une fois le formulaire publié à l’aide de l’option **Publish** et des ressources associées, vous pouvez même le dépublier à l’aide du bouton **[!UICONTROL Dépublier]** disponible dans la barre d’outils. Pour dépublier le formulaire :
+Une fois le formulaire publié à l’aide de l’option **Publier** et des ressources associées, vous pouvez même le dépublier à l’aide du bouton **[!UICONTROL Dépublier]** disponible dans la barre d’outils. Pour dépublier le formulaire :
 
 1. Pour dépublier le formulaire et les ressources associées, sélectionnez le formulaire et cliquez sur **[!UICONTROL Dépublier]** dans la barre d’outils
 
@@ -58,7 +58,7 @@ Une fois le formulaire publié à l’aide de l’option **Publish** et des ress
 
    ![dépublication réussie](/help/forms/assets/unpublishing-start.png)
 
-## Publish forms à l’aide de l’option Gérer la publication
+## Publier des formulaires à l’aide de l’option Gérer la publication
 
 L’option Gérer la publication permet de publier ou de dépublier du contenu vers et depuis la destination sélectionnée, d’ajouter du contenu à la liste de publication à partir du dossier `forms&documents`, de sélectionner les références à publier et de planifier une publication à une date ou une heure ultérieure.  Pour publier des formulaires à l’aide de l’option **Gérer la publication**, procédez comme suit :
 
@@ -75,23 +75,23 @@ L’option Gérer la publication permet de publier ou de dépublier du contenu v
 
    * **Actions**
 
-      * **Publish** : Publish forms vers la destination sélectionnée
+      * **Publier** : permet de publier des formulaires vers la destination sélectionnée
       * **Dépublier** : dépublication de formulaires de la destination
 
    * **Destination**
 
-      * **Publish** : instance Publish forms vers Experience Manager Forms (AEM) Publish.
-      * **Aperçu** : instance d’aperçu de Publish forms vers Experience Manager Forms (AEM).
+      * **Publication** : publication de formulaires sur l’instance de publication Experience Manager Forms (AEM).
+      * **Aperçu** : publication de formulaires sur l’instance d’aperçu de Experience Manager Forms (AEM).
 
    * **Planification**
 
-      * **Maintenant** : Publish forms immédiatement
-      * **Ultérieurement** : formulaires Publish basés sur la **Date d’activation** ou l’heure
+      * **Maintenant** : publiez immédiatement les formulaires
+      * **Ultérieurement** : publiez les formulaires en fonction de l’**Date ou heure d’activation**
 
 1. Cliquez sur **Suivant** pour continuer.
 1. (Facultatif) Dans l’onglet **Portée**, utilisez l’option [Ajouter du contenu](#add-content) pour ajouter plus de contenu à publier. Par exemple, vous pouvez ajouter d’autres fichiers Forms ou Document d’enregistrement.
    ![onglet portée](/help/forms/assets/scope-tab.png)
-1. Cliquez sur **[!UICONTROL Publish]** pour publier les formulaires et les ressources associées et un message de réussite s’affiche.
+1. Cliquez sur **[!UICONTROL Publier]** pour publier les formulaires et les ressources associées et un message de réussite s’affiche.
    ![publication du message réussie](/help/forms/assets/publish-successful.png)
 
 ### Ajouter du contenu
@@ -143,7 +143,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         * -->
 
 
-### Publish ou dépublication ultérieure d’un formulaire
+### Publication ou dépublication ultérieure d’un formulaire
 
 En plus de vous permettre de publier ou de dépublier des formulaires à une date et une heure ultérieures, l’option publier ou dépublier ultérieurement permet également de configurer un workflow. Les formulaires sont publiés ou dépubliés une fois le workflow terminé.
 
@@ -154,10 +154,10 @@ Pour planifier la publication ou la dépublication d’un formulaire :
 
    ![Gérer la publication.](/help/forms/assets/manage-publication.png)
 
-1. Cliquez sur **Publish** ou **Dépublier** dans **[!UICONTROL Action]**.
+1. Cliquez sur **Publier** ou **Dépublier** dans **[!UICONTROL Action]**.
 1. Sélectionnez la **[!UICONTROL Destination]** où vous souhaitez publier ou dépublier le contenu.
    * **Prévisualisation** : utilisez l’option **Prévisualisation** pour publier ou dépublier dans un environnement de prévisualisation Experience Manager Forms. Les environnements de prévisualisation Experience Manager Forms sont utilisés pour tester les formulaires en cours de développement.
-   * **Publish** : utilisez l’option Experience Manager Forms **Publish** pour envoyer le formulaire à l’environnement de publication Experience Manager Forms une fois que le formulaire est prêt à être utilisé dans un environnement de production.
+   * **Publication** : utilisez l’option Experience Manager Forms **Publication** pour envoyer le formulaire à l’environnement de publication Experience Manager Forms une fois que le formulaire est prêt à être utilisé dans un environnement de production.
 
 1. Sélectionnez **[!UICONTROL Plus tard]** dans **Planification**.
 
@@ -169,7 +169,7 @@ Pour planifier la publication ou la dépublication d’un formulaire :
    ![Gérer la publication ajouter du contenu ultérieurement](/help/forms/assets/publish-later-add-content.png)
 1. Cliquez sur **[!UICONTROL Suivant]**.
 1. Dans l’onglet **Workflows**, spécifiez un **[!UICONTROL Titre du workflow]**.
-1. Cliquez sur **[!UICONTROL Publish ultérieurement]**.
+1. Cliquez sur **[!UICONTROL Publier ultérieurement]**.
 
    ![Gestion du processus de publication](/help/forms/assets/manage-publication-workflows.png)
 

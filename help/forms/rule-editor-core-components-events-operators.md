@@ -1,26 +1,26 @@
 ---
-title: Quels sont les différents types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif en fonction des composants principaux ?
+title: Quels sont les différents types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux ?
 description: L’éditeur de règles de Forms adaptatif prend en charge divers types d’opérateurs et événements.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2171'
 ht-degree: 57%
 
 ---
 
 # Types d’opérateurs et événements dans l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux
 
-Dans AEM Forms as a Cloud, l’éditeur de règles comprend divers types d’opérateurs et événements qui vous permettent de définir et d’exécuter facilement des conditions et des actions complexes.
+Dans AEM Forms as a Cloud Service, l’éditeur de règles comprend différents types d’opérateurs et d’événements qui vous permettent de définir et d’exécuter facilement des conditions et des actions complexes.
 
-Les types d’opérateurs disponibles dans l’éditeur de règles d’un formulaire adaptatif offrent un cadre robuste pour créer des conditions précises. Ils vous permettent de manipuler des données, d’effectuer des calculs et de combiner plusieurs conditions de manière logique et cohérente. Que vous compariez des valeurs, effectuiez des opérations arithmétiques ou manipuliez des chaînes, ces opérateurs garantissent que vos règles sont à la fois flexibles et puissantes.
+Les types d’opérateurs disponibles dans l’éditeur de règles d’un formulaire adaptatif fournissent un cadre robuste pour la création de conditions précises. Ils vous permettent de manipuler les données, d’effectuer des calculs et de combiner plusieurs conditions de manière logique et cohérente. Que vous compariez des valeurs, effectuiez des opérations arithmétiques ou manipuliez des chaînes, ces opérateurs garantissent la flexibilité et la puissance de vos règles.
 
-Les événements de l’éditeur de règles servent de déclencheurs pour activer vos règles. Ils définissent les actions spécifiques qui se produisent lorsque certaines conditions sont remplies. En exploitant différents types d’événements, vous pouvez automatiser les réponses à un large éventail de scénarios, par exemple les interactions utilisateur, les heures planifiées, les modifications des données et les états du système. Avec la possibilité de spécifier ces déclencheurs, vous pouvez créer des règles dynamiques et réactives qui répondent à vos besoins spécifiques.
+Les événements de l’éditeur de règles servent de déclencheurs pour activer vos règles. Ils définissent les actions spécifiques qui se produisent lorsque certaines conditions sont remplies. En utilisant différents types d’événements, vous pouvez automatiser les réponses à un large éventail de scénarios, par exemple, les interactions utilisateur, les heures planifiées, les modifications de données et les états du système. La possibilité de spécifier ces déclencheurs vous permet de créer des règles dynamiques et réactives adaptées à vos besoins.
 
-En comprenant et en utilisant les types d’opérateurs et les événements disponibles, vous pouvez exploiter tout le potentiel de l’éditeur de règles, ce qui vous permet de créer des règles efficaces et efficientes qui répondent à vos besoins uniques et améliorent les fonctionnalités globales du système.
+En comprenant et en utilisant les types d’opérateur et d’événement disponibles, vous pouvez exploiter tout le potentiel de l’éditeur de règles, qui permet de créer des règles efficaces et performantes qui répondent à vos besoins et améliorent les fonctionnalités générales du système.
 
 ## Types d’opérateur et événements disponibles dans l’éditeur de règles {#available-operator-types-and-events-in-rule-editor}
 
@@ -46,7 +46,7 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 
 ### Types de règle disponibles dans l’éditeur de règles {#available-rule-types-in-rule-editor}
 
-L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles. Examinons en détail chaque type de règle. Pour plus d’informations sur l’écriture de règles dans l’éditeur de règles, voir [Écrire des règles](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
+L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles. Examinons en détail chaque type de règle. Pour plus d’informations sur l’écriture de règles dans l’éditeur de règles, voir [Écriture de règles](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
 
 #### [!UICONTROL Lorsque] {#whenruletype}
 
@@ -64,7 +64,7 @@ En clair, un type de règle Lorsque standard est structuré comme suit :
 
 `Action 2 on Object B;`
 `AND`
-&quot;Action 3 sur Objet C ;
+« Action 3 relative à l’objet C ;
 
 `Else, do the following:`
 
@@ -73,17 +73,17 @@ _
 
 Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
-Prenons l’exemple d’une liste comportant quatre options : rouge, bleu, vert et jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à la disposition de l’auteur de la règle comme suit :
+Prenons l’exemple d’une liste comportant quatre options : rouge, bleu, vert et jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à la disposition du créateur de la règle comme suit :
 
 ![Options d’affichage à valeurs multiples](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur d’efface la valeur de l’objet spécifié. L’option Effacer la valeur de comme dans l’instruction Lorsque vous permet de créer des conditions complexes avec plusieurs champs. Vous pouvez ajouter l’instruction Else pour ajouter d’autres conditions.
+Lorsque vous créez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur d’efface la valeur de l’objet spécifié. L’option Effacer la valeur de dans l’instruction Lorsque permet de créer des conditions complexes comportant plusieurs champs. Vous pouvez ajouter l’instruction Else pour ajouter d’autres conditions
 
 ![Effacer la valeur de](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Lorsque le type de règle ne prend en charge que les instructions de niveau unique, alors les instructions else.
+> Lorsque le type de règle ne prend en charge que les instructions else à un seul niveau.
 
 ##### Plusieurs champs autorisés dans [!UICONTROL Lorsque] {#allowed-multiple-fields}
 
@@ -93,25 +93,25 @@ Par exemple, en utilisant le type de règle Lorsque, vous pouvez évaluer une co
 
 Lorsque :
 
-(Objet A, condition 1)
+(Objet A Condition 1)
 
 ET/OU
 
-(Objet B, condition 2)
+(Objet B Condition 2)
 
-Ensuite, procédez comme suit :
+Procédez ensuite comme suit :
 
-Action 1 sur Objet A
+Action 1 sur l&#39;objet A
 
 _
 
 ![Plusieurs champs autorisés dans Lorsque](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Considérations lors de l’utilisation de plusieurs champs autorisés dans la fonction de condition Lorsque**
+**Remarques concernant l’utilisation des champs multiples autorisés dans la fonction Lorsque la condition**
 
-* Assurez-vous que le [composant principal est défini sur la version 3.0.14 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité dans l’éditeur de règles.
+* Assurez-vous que le composant [principal) est défini sur la version 3.0.14 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité dans l’éditeur de règles.
 * Si des règles sont appliquées à différents champs dans la condition Lorsque, la règle se déclenche même si un seul de ces champs est modifié.
-
+* Vous pouvez uniquement ajouter les plusieurs champs dans la condition **Lorsque** pour une règle **ET**. Cela n’est pas possible pour une règle **OR**.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -145,15 +145,15 @@ Si plusieurs champs autorisés de la fonctionnalité de condition Lorsque rencon
 
 **[!UICONTROL Désactiver]** Désactive l’objet spécifié.
 
-**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lors du choix d’un service de modèle de données de formulaire, davantage de champs s’affichent où vous pouvez mapper des objets de formulaire avec des paramètres d’entrée pour le service spécifié. Vous pouvez mapper les paramètres de sortie via l’option de payload d’événement pour le service spécifié. Vous pouvez également créer des règles pour gérer les réponses de succès et d’échec de l’opération de service Invoke à l’aide de l’éditeur de règles.
+**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires dans lesquels vous pouvez mapper des objets de formulaire avec des paramètres d’entrée pour le service spécifié s’affichent. Vous pouvez mapper les paramètres de sortie par le biais de l’option de payload d’événement pour le service spécifié. Vous pouvez également créer des règles pour gérer les réponses de succès et d’échec de l’opération du service Invoquer à l’aide de l’éditeur de règles.
 
 >[!NOTE]
 >
 > Pour en savoir plus sur le service Invoke, [cliquez ici](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-Voir l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
+Consultez l’exemple de règle pour appeler les services de modèle de données de formulaire (FDM).
 
-Outre le service Form Data Model, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
+Outre le service de modèle de données de formulaire, vous pouvez spécifier une URL WSDL directe pour appeler un service web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et l’approche recommandée permettant d’appeler un service.
 
 Pour plus d’informations sur la configuration des services dans le modèle de données de formulaire, voir [[!DNL Experience Manager Forms] Intégration de données](data-integration.md).
 
@@ -176,7 +176,7 @@ Le type de règle **[!UICONTROL Définir la propriété]** permet de définir la
 * enumNames (chaîne[])
 * chartType (chaîne)
 
-Par exemple, il vous permet de définir des règles pour afficher la zone de texte lorsqu’un utilisateur clique sur un bouton. Vous pouvez utiliser une fonction personnalisée, un objet de formulaire, une propriété d’objet ou une sortie de service pour définir une règle.
+Elle permet, par exemple, de définir des règles pour afficher la zone de texte lorsqu’un utilisateur clique sur un bouton. Vous pouvez utiliser une fonction personnalisée, un objet de formulaire, une propriété d’objet ou une sortie de service pour définir une règle.
 
 ![Définir la propriété](assets/set_property_rule_new.png)
 
@@ -204,9 +204,9 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Supprimer une instance]** : supprime une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
-**[!UICONTROL Sortie de fonction]** Définit une règle basée sur des fonctions prédéfinies ou des fonctions personnalisées.
+**[!UICONTROL Sortie de fonction]** définit une règle basée sur des fonctions prédéfinies ou des fonctions personnalisées.
 
-**[!UICONTROL Accédez à]** Accédez à d’autres ressources de Forms adaptatif, telles que des images ou des fragments de document, ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Accéder à]** Accédez à d’autres ressources Forms adaptatives, d’autres ressources telles que des images ou des fragments de document ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Distribuer l’événement]** Déclenche des actions ou des comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
 
@@ -218,11 +218,11 @@ Notez que le type de règle **Définir la valeur de** n’est pas disponible pou
 
 Définissez la valeur de Objet A sur :
 
-(chaîne ABC) OU
-(propriété d’objet X de Objet C) OU
+(Chaîne ABC) OU
+(propriété d&#39;objet X de l&#39;objet C) OU
 (valeur d’une fonction) OU
 (valeur d’une expression mathématique) OU
-(valeur de sortie d’un service de modèle de données) ;
+(valeur de sortie d’un service de modèle de données);
 
 Lorsque (facultatif) :
 
@@ -300,7 +300,7 @@ Une règle Désactiver standard est structurée comme suit :
 
 #### [!UICONTROL Valider] {#validate}
 
-Le type de règle **[!UICONTROL Valider]** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez créer une expression pour vérifier que la zone de texte permettant de spécifier un nom ne contient pas de caractères spéciaux ni de nombres.
+Le type de règle **[!UICONTROL Valider]** valide la valeur d’un champ à l’aide d’une expression. Par exemple, vous pouvez écrire une expression pour vérifier que la zone de texte servant à spécifier un nom ne contient ni caractères spéciaux ni chiffres.
 
 Une règle Valider standard est structurée comme suit :
 
@@ -316,11 +316,11 @@ Une règle Valider standard est structurée comme suit :
 
 ![Script-validation](assets/script-validation.png)
 
-#### [!UICONTROL Navigation parmi les panneaux]
+#### [!UICONTROL Naviguer dans les panneaux]
 
-Le type de règle **[!UICONTROL Navigation parmi les panneaux]** vous permet de déplacer la cible d’action entre les différents panneaux d’un formulaire. Par exemple, vous pouvez créer une expression pour déplacer la cible d’action vers le panneau suivant.
+Le type de règle **[!UICONTROL Naviguer parmi les panneaux]** vous permet de déplacer la sélection entre différents panneaux d’un formulaire. Par exemple, vous pouvez créer une expression pour déplacer le focus vers le panneau suivant.
 
-Une règle **Navigation parmi les panneaux** standard pour déplacer le focus vers le panneau suivant est structurée comme suit :
+Une règle standard **Naviguer parmi les panneaux** pour déplacer la sélection vers le panneau suivant est structurée comme suit :
 
 `Navigate among the panels`
 
@@ -330,7 +330,7 @@ Une règle **Navigation parmi les panneaux** standard pour déplacer le focus ve
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-De même, vous pouvez écrire la règle **Naviguer parmi les panneaux** pour déplacer le focus vers le panneau précédent :
+De même, vous pouvez écrire **Naviguer parmi les panneaux** règle pour déplacer la sélection vers le panneau précédent :
 
 `Navigate among the panels`
 
@@ -342,11 +342,11 @@ De même, vous pouvez écrire la règle **Naviguer parmi les panneaux** pour dé
 
 Pour plus d’informations sur la création d’une règle pour naviguer dans un panneau, [cliquez ici](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
-#### [!UICONTROL Appel de fonction asynchrone]
+#### [!UICONTROL  Appel de fonction asynchrone ]
 
-<span class="preview"> Il s’agit d’une fonctionnalité de préversion accessible par le biais de notre [canal de pré-version](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
-Le type de règle **[!UICONTROL Appel de fonction asynchrone]** vous permet d’exécuter des fonctions asynchrones. Il vous permet de lancer un appel de fonction qui fonctionne indépendamment du thread d’exécution principal, ce qui permet à d’autres processus de continuer à s’exécuter sans attendre que la fonction asynchrone soit terminée.
+Le type de règle **[!UICONTROL Appel de fonction asynchrone]** permet d’exécuter des fonctions asynchrones. Il vous permet de lancer un appel de fonction qui fonctionne indépendamment du thread d’exécution principal, ce qui permet à d’autres processus de continuer à s’exécuter sans attendre que la fonction asynchrone se termine.
 
 Une règle d’appel de fonction asynchrone standard pour exécuter une fonction asynchrone est structurée comme suit :
 
@@ -358,7 +358,7 @@ Une règle d’appel de fonction asynchrone standard pour exécuter une fonction
 
 `[Callback Function];`
 
-Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur de règles visuel, reportez-vous à l’article [Utilisation d’appels de fonction asynchrones dans l’éditeur de règles](/help/forms/using-async-funct-in-rule-editor.md) .
+Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [ Utilisation d’appels de fonction asynchrones dans l’éditeur de règles ](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -382,7 +382,7 @@ To define a rule based on a form data model:
 
 ## Étape suivante
 
-Examinons maintenant les [exemples d’un éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md).
+Examinons maintenant divers [exemples d’éditeur de règles pour un formulaire adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Voir également
 
