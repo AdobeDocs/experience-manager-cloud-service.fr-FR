@@ -4,7 +4,7 @@ description: L’éditeur universel est un outil de création visuel moderne con
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 11%
@@ -51,7 +51,7 @@ L’éditeur universel est pris en charge par :
 * AEM as a Cloud Service (version `2023.8.13099` ou ultérieure)
 * AEM 6.5 (pack de services 21 ou 22 plus un pack de fonctionnalités)
 
-Cette documentation est destinée à l’utilisation de l’éditeur universel avec AEM as a Cloud Service. Pour utiliser l’éditeur universel avec AEM 6.5, [consultez la documentation d’AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en).
+Cette documentation est destinée à l’utilisation de l’éditeur universel avec AEM as a Cloud Service. Pour utiliser l’éditeur universel avec AEM 6.5, [consultez la documentation d’AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction).
 
 ## Fonctions {#features}
 

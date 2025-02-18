@@ -4,9 +4,9 @@ description: Comprenez en détail le contrat JSON entre la définition du compos
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Le fichier `component-definition.json` définit les composants disponibles pour 
 
 >[!TIP]
 >
->Pour obtenir un aperçu du processus de modélisation de contenu, consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services ](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Pour une présentation du processus de modélisation de contenu, consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -33,35 +33,42 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ Une fois la `plugin` définie, vous devez indiquer si elle est liée à une page
 
 Si le composant correspond au contenu de la page, vous pouvez fournir les informations suivantes.
 
-* `name` définit un nom facultatif enregistré dans le JCR pour le composant nouvellement créé.
-   * Informations uniquement et non affichées généralement dans l’interface utilisateur, comme le `title`.
 * `resourceType` définit le `resourceType` [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) utilisé pour le rendu du composant.
-* `template` définit des valeurs/clés facultatives à écrire automatiquement dans le composant nouvellement créé.
+* `template` définit les clés/valeurs facultatives à écrire automatiquement dans le composant nouvellement créé et définit le filtre et/ou le modèle à appliquer au composant.
    * Utile pour le texte explicatif, d’exemple ou d’espace réservé.
+
+#### `template` {#template}
+
+En fournissant des paires clé/valeur facultatives, `template` pouvez les écrire automatiquement dans le nouveau composant. En outre, les valeurs facultatives suivantes peuvent également être spécifiées.
+
+* `model` définit le [modèle](/help/implementing/universal-editor/field-types.md#model-structure) utilisé avec le composant.
+   * Le modèle est ainsi conservé de manière centralisée dans la définition du composant et n’a pas besoin d’être [spécifié dans l’instrumentation.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Vous pouvez ainsi déplacer des composants entre des conteneurs.
+* `filter` définit le [filtre](/help/implementing/universal-editor/filtering.md) à utiliser avec le composant.
 
 ### `cf` {#cf}
 

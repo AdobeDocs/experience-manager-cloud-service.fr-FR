@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 61%
+source-wordcount: '857'
+ht-degree: 42%
 
 ---
 
@@ -17,19 +17,46 @@ ht-degree: 61%
 
 Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 
-## Publication de contenu en tant qu’auteur {#publishing-content}
-
-Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre contenu, il vous suffit d’appuyer ou de cliquer sur [l’icône **Publier** dans la barre d’outils de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-
-Vous pouvez également publier [à partir de la console Sites](/help/sites-cloud/authoring/sites-console/publishing-pages.md) ce qui peut s’avérer utile lorsque vous souhaitez publier plusieurs pages de contenu.
-
->[!NOTE]
+>[!TIP]
 >
->L’éditeur universel prend en charge les [ extensions et l’extensibilité de l’interface utilisateur ](/help/implementing/universal-editor/extending.md) pour permettre aux workflows de prendre en charge votre processus de publication.
+>Le processus de publication décrit ici est la fonctionnalité standard prête à l’emploi de l’éditeur universel.
+>
+>L’éditeur universel prend également en charge les [extensions et extensibilité de l’interface utilisateur](/help/implementing/universal-editor/extending.md) pour permettre aux workflows de prendre en charge votre processus de publication, de sorte que votre flux de publication puisse varier.
 
-## Similarités avec AEM {#similarities}
+## Publication de contenu à partir de l’éditeur universel {#publishing-content}
 
-Pour les utilisateurs d’AEM, le processus de publication de contenu avec l’éditeur universel fonctionne comme vous en avez l’habitude : lors de la publication dans AEM, le contenu est répliqué du niveau création vers le niveau publication.
+Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre contenu, il vous suffit d’appuyer ou de cliquer sur l’icône **Publier** dans la barre d’outils de l’éditeur universel.
+
+![Publication de pages](assets/publish-menu.png)
+
+1. Dans l’éditeur universel, appuyez ou cliquez sur [l’icône **Publier** dans la barre d’outils de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Si un [service d’aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible, vous pouvez choisir l’endroit où vous publiez votre contenu, soit en **Aperçu** ou **Publication**.
+1. La section **Éléments** répertorie le contenu inclus dans la publication, notamment :
+   * **Nouveaux** éléments qui n’ont pas encore été publiés.
+   * **Modifié** contenu qui a été publié, mais modifié depuis la dernière publication.
+   * **Publié** contenu qui a été publié et qui n’a pas été modifié depuis cette publication.
+
+   Appuyez ou cliquez sur les cases à cocher en regard de ces éléments pour les inclure ou les exclure de la publication, si nécessaire. Appuyez ou cliquez sur **Étendre** pour afficher les éléments individuels inclus dans les totaux pour les trois catégories et pouvoir les inclure/exclure individuellement.
+
+   ![Publier les éléments](assets/publish-items.png)
+
+   Appuyez ou cliquez sur la flèche vers l’arrière en regard de l’en-tête **Éléments** pour revenir à l’aperçu.
+
+1. Appuyez ou cliquez sur **Publier** pour publier ou **Annuler** pour abandonner.
+
+## Dépublication de contenu à partir de l’éditeur universel {#unpublishing-content}
+
+La dépublication de contenu fonctionne de la même manière que la publication de contenu. Lorsque vous êtes en tant que créateur de contenu et que vous êtes prêt à supprimer du contenu de la publication, appuyez ou cliquez sur l’icône représentant des points de suspension dans la barre d’outils de l’éditeur universel, puis sur **Dépublier**.
+
+Vous disposez alors des mêmes options de dépublication du contenu que lors de la [ publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
+
+## Publication et dépublication à partir de la console Sites {#publishing-sites-console}
+
+Vous pouvez également publier [à partir de la console Sites](/help/sites-cloud/authoring/sites-console/publishing-pages.md) ce qui peut s’avérer utile lorsque vous souhaitez publier plusieurs pages de contenu ou planifier la publication ou la dépublication.
+
+## Similarités avec l’éditeur de page {#similarities}
+
+Pour les utilisateurs de l’éditeur de page [AEM](/help/sites-cloud/authoring/page-editor/introduction.md) le processus de publication de contenu avec l’éditeur universel fonctionne comme vous en avez l’habitude : lors de la publication dans AEM, le contenu est répliqué du niveau création vers le niveau publication.
 
 ## Différences {#differences}
 

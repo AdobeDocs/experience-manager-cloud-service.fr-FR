@@ -4,7 +4,7 @@ description: Découvrez comment accéder à l’éditeur universel et comment co
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 38%
@@ -139,7 +139,7 @@ Si vous disposez déjà d’un projet AEM utilisant [l’éditeur de page](/help
 
 AEM ouvre l’éditeur universel pour les pages basées sur cette configuration dans l’ordre suivant.
 
-1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins d’accès qui y sont définis, l’éditeur universel s’ouvre pour lui.
+1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins définis à cet endroit, l’éditeur universel s’ouvre pour lui.
 1. Pour le contenu ne se trouvant pas sous les chemins définis dans `Universal Editor Opening Mapping`, AEM vérifie si le `resourceType` du contenu correspond à ceux définis dans **Sling:resourceTypes qui doivent être ouverts par l’éditeur universel** et si le contenu correspond à l’un de ces types, l’éditeur universel est ouvert pour lui à l’`${author}${path}.html`.
 1. Sinon, AEM ouvre l’éditeur de page.
 
@@ -155,7 +155,7 @@ Les variables suivantes sont disponibles pour définir vos mappages dans le cham
 
 ### Exemples de mappages {#example-mappings}
 
-* Ouvrez toutes les pages sous `/content/foo` sur l’auteur AEM :
+* Ouvrez toutes les pages sous `/content/foo` dans l’auteur AEM :
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`
@@ -177,7 +177,7 @@ Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
 * [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 * [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Publication de contenu avec l’éditeur universel](/help/implementing/universal-editor/publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.
 * [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par l’éditeur universel.
 * [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.

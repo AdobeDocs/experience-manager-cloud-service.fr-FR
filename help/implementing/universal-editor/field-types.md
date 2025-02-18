@@ -4,10 +4,10 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 13%
+source-wordcount: '1496'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Ce document offre un aperçu d’une définition de modèle et des champs, ainsi
 
 >[!TIP]
 >
->Si vous ne savez pas comment instrumenter votre application pour l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs et développeuses AEM](/help/implementing/universal-editor/developer-overview.md).
+>Si vous ne savez pas comment instrumenter votre application pour l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Structure de définition du modèle {#model-structure}
 
@@ -43,11 +43,41 @@ La définition du modèle est une structure JSON, commençant par un tableau de 
 
 Voir la section **[Champs](#fields)** de ce document pour plus d’informations sur la définition de votre tableau de `fields`.
 
+Vous pouvez lier un modèle à un composant de deux manières : à l’aide de la [définition de composant](#component-definition) ou [ via l’instrumentation.](#instrumentation)
+
+### Liaison à l’aide de la définition de composant {#component-definition}
+
+Il s’agit de la méthode préférée pour lier le modèle au composant. Cela vous permet de conserver le lien de manière centralisée dans la définition du composant et de faire glisser les composants sur les conteneurs.
+
+Il vous suffit d’inclure la propriété `model` dans la directive `template` dans le fichier component-definition.json.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+Pour plus d’informations, consultez le document [Définition du composant.](/help/implementing/universal-editor/component-definition.md)
+
+### Liaison à l’aide de l’instrumentation {#instrumentation}
+
 Pour utiliser la définition de modèle avec un composant, l’attribut `data-aue-model` peut être utilisé.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>L’éditeur universel vérifie d’abord si un modèle est lié via l’instrumentation et l’utilise avant de vérifier la définition du composant. Cela signifie :
+>
+>* Les projets qui ont mis en œuvre le lien vers le modèle via l’instrumentation continueront à fonctionner en l’état, sans qu’il soit nécessaire d’apporter des modifications.
+>* Si vous définissez le modèle dans la [définition de composant](#component-definition) ainsi que dans l&#39;instrumentation, l&#39;instrumentation sera toujours utilisée.
 
 ## Chargement d’une définition de modèle {#loading-model}
 
@@ -109,7 +139,7 @@ Vous trouverez ci-dessous les types de composants qui peuvent être utilisés po
 | [Tabulation](#tab) | `tab` |
 | [Texte](#text) | `text` |
 
-#### Balise AEM {#aem-tag}
+#### AEM Tag {#aem-tag}
 
 Un type de composant de balise AEM active un sélecteur de balises AEM, qui peut être utilisé pour joindre des balises au composant.
 
@@ -139,11 +169,11 @@ Un type de composant de balise AEM active un sélecteur de balises AEM, qui peut
 
 #### Contenu AEM {#aem-content}
 
-Un type de composant de contenu AEM active un sélecteur de contenu AEM qui peut être utilisé pour sélectionner n’importe quelle ressource AEM. Contrairement au [composant de référence](#reference) qui ne peut sélectionner que des ressources, le composant de contenu AEM peut référencer n’importe quel contenu AEM. Il propose un type de validation supplémentaire.
+Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM. Contrairement au [composant de référence](#reference) qui ne peut sélectionner que des ressources, le composant de contenu AEM peut référencer n’importe quel contenu AEM. Il propose un type de validation supplémentaire.
 
 | Type de validation | Type de valeur | Description | Requis |
 |---|---|---|---|
-| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour permettre à l’utilisateur de sélectionner le contenu AEM, ce qui limite la sélection à ce répertoire et à ses sous-répertoires. | Non |
+| `rootPath` | `string` | Chemin d’accès que le sélecteur de contenu ouvre pour que l’utilisateur puisse sélectionner le contenu d’AEM, ce qui limite la sélection à ce répertoire et à ses sous-répertoires | Non |
 
 >[!BEGINTABS]
 

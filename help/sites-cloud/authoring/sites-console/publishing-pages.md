@@ -5,10 +5,10 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 85%
+source-wordcount: '1926'
+ht-degree: 78%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 85%
 
 Une fois le contenu créé et révisé dans l’environnement de création, l’objectif est de [le rendre disponible sur votre site web public](/help/sites-cloud/authoring/author-publish.md) (votre environnement de publication).
 
-On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lorsque vous publiez et dépubliez, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
+On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lors de la publication et de la dépublication, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
 
 Vous pouvez publier/dépublier une page immédiatement ou à une date/heure prédéfinies.
 
 >[!NOTE]
 >
->La publication d’un fragment d’expérience suit globalement la même procédure que pour une page, mais à partir de la console de Fragments d’expérience ou de l’éditeur.
+>La publication d’un [fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) suit globalement la même procédure que pour une page, à partir de la console de Fragments d’expérience ou de l’éditeur.
 
 ## Terminologie {#terminology}
 
 Dans le cadre de votre utilisation d’Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez rencontrer différents termes liés à la publication.
 
 * **Publier/dépublier**
-   * Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+   * Il s’agit des termes principaux pour les actions qui rendent votre contenu disponible publiquement dans vos environnements de publication et/ou de prévisualisation (ou non).
    * Il s’agit des termes utilisés dans la documentation AEM.
 * **Activer/Désactiver**
    * Ces termes sont synonymes de publication/dépublication.
    * Ces termes étaient utilisés dans les versions précédentes d’AEM.
 * **Répliquer/Réplication**
-   * Il s’agit de termes techniques décrivant le mouvement des données (contenu de page, fichiers, code et commentaires utilisateur, par exemple) d’un environnement vers un autre lorsque vous publiez une page.
+   * Il s’agit de termes techniques décrivant le mouvement des données (contenu de page, fichiers, code et commentaires utilisateur, par exemple) d’un service vers un autre lorsque vous publiez une page (de l’auteur à l’aperçu, par exemple).
    * Ces termes sont principalement utilisés par les développeurs.
 
 ## Publication de pages {#publishing-pages-1}
@@ -56,15 +56,12 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous souhaitez conserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants, en une seule action.
+>Si vous souhaitez conserver l’ordre des pages, vous devez utiliser [Gérer la publication](#manage-publication) pour publier la page parente avec toutes les pages enfants en une seule action.
 >
 >L’ordre des pages n’est pas garanti :
+>
 >* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
 >* si les pages parentes et enfants sont publiées dans des actions distinctes
-
->[!NOTE]
->
-> Pour les autres possibilités, reportez-vous à **Heure d’activation** et **Heure de désactivation** dans l’[onglet De base des propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
 ### Publication à partir de l’éditeur de page {#publishing-from-the-page-editor}
 
@@ -78,7 +75,7 @@ Si vous modifiez une page dans l’[éditeur de page](/help/sites-cloud/authorin
 
    * La page est publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
-      * Indiquez les ressources, balises, etc. que vous souhaitez publier avec la page, puis utilisez **Publish** pour terminer le processus.
+      * Indiquez les ressources, balises ou autres que vous souhaitez publier avec la page, puis utilisez **Publier** pour terminer le processus.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -128,15 +125,7 @@ Pour publier une page avec publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-La méthode **Gérer la publication** propose plus d’options que **Publication rapide**, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
-
->[!NOTE]
->
->Si vous souhaitez conserver l’ordre des pages, vous devez utiliser **Gérer la publication** pour publier la page parente avec toutes les pages enfants en une seule action.
->
->L’ordre des pages n’est pas garanti :
->* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
->* si les pages parentes et enfants sont publiées dans des actions distinctes
+**Gérer la publication** offre plus d’options que **Publication rapide**, notamment l’inclusion de pages enfants, la personnalisation des références, la publication sur un service d’aperçu (le cas échéant) et le démarrage de workflows applicables, ainsi que la possibilité de publier la page à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
@@ -150,6 +139,10 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
      Publier ou dépublier des pages sélectionnées.
 
+   * **Destination**
+
+     Choisissez si vous souhaitez effectuer une publication sur votre service de publication (par défaut) ou votre service d’aperçu. Disponible uniquement si un service d’aperçu [ est configuré.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **Planification**
 
      Vous pouvez choisir d’effectuer cette action maintenant ou ultérieurement.
@@ -159,6 +152,10 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
      >[!NOTE]
      >
      >Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au workflow correspondant.
+
+     >[!NOTE]
+     >
+     >La planification de la publication du contenu n’est pas identique à l’[**Heure d’activation** et à l’**Heure de désactivation** disponibles dans les propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) mais peut être utilisée dans des circonstances similaires.
 
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -232,6 +229,8 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
    * définir le titre du package de workflow, si l’option de conservation du package de workflow a été sélectionnée.
 
 1. Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
+
+
 
 ## Dépublication de pages {#unpublishing-pages}
 
