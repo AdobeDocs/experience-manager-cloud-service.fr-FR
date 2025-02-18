@@ -2,7 +2,7 @@
 source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1394'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 # Fragments de code {#snippets}
@@ -187,7 +187,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!IMPORTANT]
 >
->L’éditeur universel n’est pas compatible avec les [listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>L’éditeur universel n’est pas compatible avec les [listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 >
 >Si vous souhaitez utiliser l’éditeur universel, vous devez effectuer l’une des deux actions suivantes :
 >
