@@ -4,7 +4,7 @@ description: Utilisez les thèmes de formulaire adaptatif pour appliquer un styl
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 98%
@@ -493,7 +493,7 @@ Vous pouvez désormais utiliser les polices disponibles dans un service Web dans
 
 Pour configurer Adobe Fonts dans Experience Manager, effectuez les étapes suivantes :
 
-1. Dans l’instance d’auteur, cliquez sur ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]** >**[!UICONTROL  Outils ]**![hammer](assets/hammer.png) >**[!UICONTROL  Déploiement ]** >**[!UICONTROL  Cloud Services ]**.
+1. Dans l’instance d’auteur, cliquez sur ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, accédez à l’option **[!UICONTROL Adobe Fonts]** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre pour la configuration et cliquez sur **[!UICONTROL Créer]**.
 
