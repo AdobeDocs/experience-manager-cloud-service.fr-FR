@@ -1,20 +1,20 @@
 ---
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
-description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
+description: Découvrez comment les modèles de fragment de contenu servent de base à votre contenu découplé dans AEM, ce qui vous permet de créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [ fragments de contenu ](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
+Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
@@ -261,6 +261,7 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 * **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
    * Permet d’intégrer ou de récupérer des données structurées.
+
      >[!NOTE]
      >
      Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -434,6 +435,7 @@ Pour configurer les **politiques** des **modèles de fragments de contenu autori
 1. **Enregistrez** les modifications.
 
 Les modèles de fragment de contenu autorisés pour un dossier sont résolus comme suit :
+
 * **Politiques** pour les **modèles de fragments de contenu autorisés**.
 * Si elles sont absentes, essayez de déterminer la politique à l’aide des règles d’héritage.
 * Si la chaîne d’héritage ne produit pas de résultat, examinez la configuration de **Services cloud** pour ce dossier (directement dans un premier temps, puis par héritage).
@@ -510,7 +512,7 @@ Cette fonctionnalité fournit une gouvernance pour les modèles de fragment de c
 
 ### Les exigences {#the-requirements}
 
-* Sensibiliser les utilisateurs aux risques de la modification de modèles déjà utilisés pour la diffusion de contenu en direct (c’est-à-dire des modèles qui ont déjà été publiés).
+* Sensibiliser les utilisateurs aux risques liés à la modification de modèles déjà utilisés pour la diffusion de contenu en direct, c’est-à-dire des modèles qui ont été publiés.
 
 * Éviter également toute modification imprévue.
 
