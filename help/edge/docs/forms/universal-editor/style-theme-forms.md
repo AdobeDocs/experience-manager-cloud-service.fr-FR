@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 87%
@@ -29,7 +29,7 @@ Ce document décrit la structure du HTML pour divers composants de formulaire. I
 
 ## Présentation des types de champs de formulaire
 
-Avant de passer à la définition du style, examinons les [types de champs](/help/edge/docs/forms/form-components.md) de formulaire communs pris en charge par le bloc de formulaires adaptatifs :
+Avant de passer à la définition du style, examinons les [types de champs](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) de formulaire communs pris en charge par le bloc de formulaires adaptatifs :
 
 * Champs d’entrée : ces champs incluent des entrées de texte, des entrées d’e-mail, des entrées de mot de passe, et bien plus encore.
 * Groupes de cases à cocher : utilisés pour sélectionner plusieurs options.
@@ -57,17 +57,17 @@ Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui s
 Exemple :
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## Structure des composants
 
@@ -90,10 +90,10 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 ```
 
 * Classes : l’élément div comporte plusieurs classes pour le ciblage d’éléments et de définitions de styles spécifiques. Vous avez besoin des classes `{Type}-wrapper` ou `field-{Name}` pour développer un sélecteur CSS afin de définir le style d’un champ de formulaire :
-   * {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
-   * {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques, les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)`, et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
-   * {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement.
-   * {Required} : il s’agit d’une valeur booléenne indiquant si le champ est obligatoire.
+* {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
+* {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques, les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)`, et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
+* {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement.
+* {Required} : il s’agit d’une valeur booléenne indiquant si le champ est obligatoire.
 * Libellé : l’élément `label` fournit un texte descriptif pour le champ et l’associe à l’élément d’entrée à l’aide de l’attribut `for`.
 * Entrée : l’élément `input` définit le type de données à renseigner. Par exemple : texte, nombre, e-mail.
 * Description (facultatif) : `div` avec la classe `field-description` fournit des informations ou des instructions supplémentaires à l’intention de l’utilisateur ou de l’utilisatrice.
