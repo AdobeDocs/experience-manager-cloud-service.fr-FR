@@ -4,9 +4,9 @@ description: Cet article explique comment prévisualiser des formulaires à l’
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 17%
 
 ---
@@ -23,16 +23,16 @@ Le mode réactif permet aux développeurs de concevoir des mises en page qui s�
 
 ## Aperçu de Forms en mode réactif pour différents appareils
 
-L’éditeur universel fournit une icône **Émulateur** ![icône Émulateur](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%} située dans le coin supérieur droit de l’écran. Cette icône vous permet de prévisualiser des pages sur différents formats d’appareil et de tester le comportement de votre conception réactive pour une meilleure expérience utilisateur.
+L’éditeur universel propose une icône **Émulateur** située dans le coin supérieur droit de l’écran. Elle vous permet de prévisualiser des pages sur différents formats d’appareil et de tester le comportement de votre conception responsive pour une meilleure expérience utilisateur.
 
 Pour voir comment l’éditeur universel effectue le rendu des formulaires sur différentes tailles d’écran, procédez comme suit :
 
 1. Ouvrez le formulaire dans l’éditeur universel pour le modifier.
-1. Sélectionnez l’icône ![Émulateur](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%} disponible dans la barre d’outils de l’éditeur universel, puis cliquez sur l’icône de l’émulateur pour afficher l’option.
+2. Sélectionnez l’icône ![Émulateur](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponible dans la barre d’outils de l’éditeur universel, puis cliquez sur l’icône de l’émulateur pour afficher l’option.
 
    ![Mode réactif](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Sélectionnez l’option pour émuler un appareil mobile et dans l’éditeur universel
+3. Sélectionnez l’option pour émuler un appareil mobile et dans l’éditeur universel
 
    ![Mode réactif](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -47,19 +47,19 @@ L’éditeur universel fournit différents émulateurs pour prévisualiser les f
     </tr>
     <tr>
         <td>Poste de travail</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Émulateur de bureau"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Émulateur de bureau" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tablette</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Émulateur de tablette"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Émulateur de tablette" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Mobile</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Émulateur mobile" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Émulateur mobile" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Appareil Personnalisé</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Émulateur d’appareil personnalisé"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Émulateur d’appareil personnalisé" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
