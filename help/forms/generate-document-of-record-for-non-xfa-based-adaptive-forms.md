@@ -4,7 +4,7 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 91%
@@ -131,6 +131,7 @@ Le développeur charge et applique le modèle mis à jour au formulaire adaptati
 ![Erreur de liaison](assets/we-retail-binding-error.png)
 
 Le développeur de formulaires associe les champs de formulaires adaptatifs au modèle de document d’enregistrement correspondant.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Désormais, lorsque le formulaire adaptatif est envoyé, un document d’enregistrement mis à jour est créé.
@@ -351,7 +352,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
         >[!NOTE]
         >
-        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
       * **Exclure les champs masqués du document d’enregistrement** : la définition de la propriété identifie les champs masqués à exclure du document d’enregistrement.
@@ -487,7 +488,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 
 >[!NOTE]
 >
-> AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
 
 ### Utilisez un fichier XCI personnalisé dans votre environnement Forms as a Cloud Service
@@ -514,7 +515,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 ### Utilisez un fichier XCI personnalisé dans votre environnement de développement Forms as a Cloud Service local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrez le gestionnaire de configuration SDK de Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
+1. Ouvrez le gestionnaire de configuration Cloud Service SDK. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
 

@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 16%
@@ -29,7 +29,7 @@ AEM Forms as a Cloud Service prend en charge les solutions CAPTCHA suivantes :
 
 ## Intégration de l’environnement AEM Forms à Captcha Turnstile
 
-Le Captcha Turnstile de Cloudflare est une mesure de sécurité qui vise à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Elle présente une case à cocher lors de l’envoi du formulaire pour vérifier qu’ils sont humains, avant de leur permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le Captcha de créneau dans les composants principaux de Forms adaptatif.
+Le Captcha Turnstile de Cloudflare est une mesure de sécurité qui vise à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Elle présente une case à cocher lors de l’envoi du formulaire pour vérifier qu’ils sont humains, avant de leur permettre d’envoyer le formulaire. AEM Forms as a Cloud Service prend en charge le captcha de tuile dans les composants principaux de Forms adaptatif.
 
 ### Conditions préalables à l’intégration de l’environnement AEM Forms avec le Captcha Turnstile {#prerequisite}
 
@@ -39,7 +39,7 @@ Pour configurer Turnstile pour les composants principaux d’AEM Forms, vous dev
 
 Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
 
-1. Créez un conteneur de configuration sur votre environnement AEM Forms as a Cloud Service. Un conteneur de configuration contient les configurations cloud utilisées pour connecter AEM à des services externes. Pour créer et configurer un conteneur de configuration afin de connecter votre environnement AEM Forms à Turnstile, procédez comme suit :
+1. Créez un conteneur de configuration sur votre environnement AEM Forms as a Cloud Service. Un conteneur de configurations contient les configurations cloud utilisées pour connecter AEM à des services externes. Pour créer et configurer un conteneur de configuration afin de connecter votre environnement AEM Forms à Turnstile, procédez comme suit :
    1. Ouvrez votre instance AEM Forms as a Cloud Service.
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Dans l’explorateur de configurations, créez un dossier et activez les configurations cloud pour celui-ci ou activez les configurations cloud pour un dossier existant, comme expliqué ci-dessous :
@@ -54,7 +54,7 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
          1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et quitter.
 
 1. Configurez le Cloud Service :
-   1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** puis cliquez sur **[!UICONTROL Tourniquet]**.
+   1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Services cloud]** et cliquez sur **[!UICONTROL Tourniquet]**.
       ![Tourniquet dans l’interface utilisateur](assets/turnstile-in-ui.png)
    1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.
       ![Tourniquet de configuration](assets/config-hcaptcha.png)
@@ -62,9 +62,10 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
    1. Spécifiez **[!UICONTROL Titre]**, **[!UICONTROL Nom]**, **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour le service Turnstile [obtenu dans les conditions préalables](#prerequisite).
    1. Cliquez sur **[!UICONTROL Créer]**.
 
-      ![Configurer le Cloud Service pour connecter votre environnement AEM Forms à Turnstile](assets/config-turntstile-cc.png)
+      ![Configurez le Cloud Service pour connecter votre environnement AEM Forms à Turnstile](assets/config-turntstile-cc.png)
 
    >[!NOTE]
+   >
    > Les utilisateurs n’ont pas besoin de modifier les URL de validation de JavaScript côté client et côté serveur, car elles sont déjà préremplies pour la validation Turnstile.
 
    Une fois le service Captcha de tourniquet configuré, il peut être utilisé dans un [formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction).
@@ -90,13 +91,17 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
    * **[!UICONTROL Nom] :** indiquez le nom de votre composant Captcha ; vous pouvez identifier facilement un composant de formulaire en lui attribuant un nom unique dans le formulaire et dans l’éditeur de règles.
    * **[!UICONTROL Titre] :** spécifiez le titre de votre composant Captcha. vous pouvez autoriser le texte enrichi pour le titre et également masquer le titre en cochant les cases.
    * **[!UICONTROL Paramètres de configuration] :** sélectionnez une configuration cloud configurée pour le service Captcha de tourniquet.
+
      >[!NOTE]
+     >
      >* Plusieurs configurations cloud peuvent être définies dans votre environnement dans un but similaire. Donc, choisissez le service avec soin. Si aucun service n’est répertorié, reportez-vous à la section [Configuration d’un tourniquet](#steps-to-configure-hcaptcha) pour savoir comment créer un conteneur de configuration afin de connecter votre environnement AEM Forms au service de tourniquet.
 
    * **[!UICONTROL Validation] :** effectuez une validation Captcha sous la forme d’un message d’erreur :
 
       * **Message d’erreur :** le message d’erreur à afficher à l’utilisateur ou à l’utilisatrice en cas d’échec de l’envoi du Captcha.
+
         >[!NOTE]
+        >
         >* Un message d’erreur ne s’affiche que si le CAPTCHA est renseigné côté client.
 
 1. Cliquez sur **[!UICONTROL Terminé]**.

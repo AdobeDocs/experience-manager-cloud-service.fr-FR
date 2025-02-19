@@ -3,7 +3,8 @@ title: Comment configurer des modèles de données de formulaire prêts à l’e
 description: Découvrez comment intégrer Microsoft Dynamics 365 à Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 9%
@@ -51,6 +52,7 @@ Créez un compte dans le **Centre d’administration Power Platform** pour :
    * Activation des applications Microsoft Dynamics 365
 
    Suivez les étapes de la vidéo pour créer un compte dans le Centre d’administration Power Platform. Dans cette vidéo, un compte d’évaluation a été créé à des fins de démonstration.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Enregistrer une application pour [!DNL Microsoft® Dynamics 365] dans Azure Active Directory**

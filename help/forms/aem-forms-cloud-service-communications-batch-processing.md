@@ -1,19 +1,19 @@
 ---
-title: Création sans effort de PDF en bloc - Principal de l’art avec traitement par lots - Votre auto-guide de génération de millions de documents PDF !
+title: Création PDF en bloc sans effort - Principal l’art avec le traitement par lots - Votre guide d’aide autonome pour générer des millions de documents PDF !
 description: Comment créer des communications personnalisées et axées sur la marque ?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 94%
 
 ---
 
-# Traitement par lots des communications as a Cloud Service AEM Forms
+# Traitement par lots des communications AEM Forms as a Cloud Service
 
-Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et orientées sur la marque, telles que des correspondances d’entreprise, des documents, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des factures mensuelles et des kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque. Il peut notamment s’agir de correspondances commerciales, de documents, de relevés, de lettres de traitement des demandes, d’avis de prestations, de factures mensuelles et de kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
 La fonctionnalité Communications fournit des API pour la génération de documents planifiés et à la demande. Vous pouvez utiliser des API synchrones pour les API à la demande et Batch (API asynchrones) concernant la génération de documents planifiés :
 
@@ -78,9 +78,10 @@ Avant d’utiliser une opération par lots :
 * Créer une configuration d’entrepôt de données par lots
 * Chargez les modèles et d’autres ressources vers votre instance Experience Manager Forms Cloud Service.
 
-### Chargement des données client (fichiers XML) dans le stockage Azure {#upload-customer-data-to-Azure-Storage}
+### Chargement des données client (fichiers XML) dans le stockage Azure
 
 Sur votre stockage Microsoft Azure, créez des [conteneurs](https://docs.microsoft.com/fr-fr/azure/vs-azure-tools-storage-explorer-blobs) et [chargez des données client (XML)](https://docs.microsoft.com/fr-fr/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) dans les [dossiers](https://docs.microsoft.com/fr-fr/azure/storage/blobs/storage-quickstart-blobs-portal) situés à l’intérieur des conteneurs.
+
 >[!NOTE]
 >
 >Vous pouvez configurer le stockage Microsoft Azure pour nettoyer automatiquement le dossier d’entrée ou déplacer le contenu du dossier de sortie vers un autre emplacement à des intervalles planifiés. Veillez toutefois à ce que les dossiers ne soient pas nettoyés lorsqu’une opération de lot référençant les dossiers est toujours en cours d’exécution.
@@ -176,7 +177,7 @@ La documentation de référence sur les API fournit des informations détaillée
 
 >[!MORELIKETHIS]
 >
->* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ Architecture as a Cloud Service AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Présentation des communications AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architecture AEM Forms as a Cloud Service pour les API Adaptive Forms et Communication](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
->* [Traitement des communications - API de lot](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

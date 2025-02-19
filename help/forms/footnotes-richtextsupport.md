@@ -4,7 +4,7 @@ description: Utilisez l’éditeur de texte enrichi (RTE) pour les notes de bas 
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 80%
@@ -51,6 +51,7 @@ Pour ajouter une note de bas de page dans les formulaires adaptatifs, procédez 
    >* S’il existe des notes de bas de page en double, le nombre est le même pour toutes les notes de bas de page en double.
 
 1. À partir de l’explorateur des composants, glissez-déposez le composant **[!UICONTROL Espace réservé pour la note de bas de page]** sur le formulaire adaptatif.
+
    >[!NOTE]
    >
    >* Sur l’instance de publication, les notes de bas de page s’affichent à l’emplacement où le composant **[!UICONTROL Espace réservé de la note de bas de page]** est placé sur le formulaire adaptatif.
