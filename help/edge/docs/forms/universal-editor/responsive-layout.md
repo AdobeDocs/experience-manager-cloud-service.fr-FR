@@ -4,9 +4,9 @@ description: Cet article explique comment prévisualiser des formulaires à l’
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
+source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '430'
 ht-degree: 17%
 
 ---
@@ -28,11 +28,11 @@ L’éditeur universel propose une icône **Émulateur** située dans le coin su
 Pour voir comment l’éditeur universel effectue le rendu des formulaires sur différentes tailles d’écran, procédez comme suit :
 
 1. Ouvrez le formulaire dans l’éditeur universel pour le modifier.
-2. Sélectionnez l’icône ![Émulateur](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponible dans la barre d’outils de l’éditeur universel, puis cliquez sur l’icône de l’émulateur pour afficher l’option.
+1. Sélectionnez l’icône ![Émulateur](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponible dans la barre d’outils de l’éditeur universel, puis cliquez sur l’icône de l’émulateur pour afficher l’option.
 
    ![Mode réactif](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-3. Sélectionnez l’option pour émuler un appareil mobile et dans l’éditeur universel
+1. Sélectionnez une option pour émuler un formulaire dans l’éditeur universel sur un appareil sélectionné : Bureau, Tablette, Mobile.
 
    ![Mode réactif](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -42,24 +42,24 @@ L’éditeur universel fournit différents émulateurs pour prévisualiser les f
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
-        <th>Type d’émulateur</th>
-        <th>Image de l’appareil</th>
+        <th style="width: 20%">Type d’émulateur</th>
+        <th style="width: 80%">Image de l’appareil</th>
     </tr>
     <tr>
-        <td>Poste de travail</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Émulateur de bureau" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Poste de travail</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Émulateur de bureau" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Tablette</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Émulateur de tablette" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Tablette</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Émulateur de tablette" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Mobile</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Émulateur mobile" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Mobile</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Émulateur mobile" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td>Appareil Personnalisé</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Émulateur d’appareil personnalisé" style="width: auto; height: auto"></td>
+        <td style="width: 20%">Appareil Personnalisé</td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Émulateur d’appareil personnalisé" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
