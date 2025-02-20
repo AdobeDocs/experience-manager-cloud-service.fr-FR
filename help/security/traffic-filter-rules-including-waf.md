@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4049'
-ht-degree: 100%
+source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
+workflow-type: tm+mt
+source-wordcount: '4215'
+ht-degree: 95%
 
 ---
 
@@ -206,7 +206,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 **Remarques**
 
-* La propriété de requête `clientIp` ne peut être utilisée qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation des prédicats `in` et `notIn`. L’exemple suivant implémente une condition pour évaluer si l’adresse IP d’un client ou d’une cliente se trouve dans la plage d’adresses IP 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
+* La propriété de requête `clientIp` ne peut être utilisée qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation des prédicats `in` et `notIn`. L’exemple suivant met en œuvre une condition pour évaluer si une adresse IP client est dans la plage d’adresses IP de 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
 
 ```
 when:
@@ -235,8 +235,12 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre de trafic WAF disponibles sous licence, peut faire référence aux éléments suivants :
 
+#### Trafic Malveillant
+
 | **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
 |---|---|---|
+| ATTAQUER | Attaquer | Indicateur utilisé pour identifier les requêtes contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
+| ATTAQUER À PARTIR D’UNE ADRESSE IP INCORRECTE | Attaque provenant d&#39;une adresse IP incorrecte | Indicateur pour identifier les requêtes provenant de `BAD-IP` et contenant un ou plusieurs des types d’attaques répertoriés dans ce tableau |
 | SQLI | Injection SQL | L’injection SQL est une tentative d’accès à une application ou d’obtention d’informations privilégiées en exécutant des requêtes de base de données arbitraires. |
 | BACKDOOR | Backdoor | Un signal backdoor est une requête qui tente de déterminer si un fichier backdoor commun est présent sur le système. |
 | CMDEXE | Exécution de commande | L’exécution de commande est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes système arbitraires au moyen d’entrées de l’utilisateur ou de l’utilisatrice. |
@@ -245,24 +249,37 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | TRAVERSAL | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | Log4J JNDI | Les attaques Log4J JNDI tentent d’exploiter la [Vulnérabilité Log4Shell](https://fr.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
+| CVE | CVE | Indicateur pour identifier un CVE. Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les CVE contre lesquels Adobe vous protégera. |
+
+#### Trafic suspect
+
+| **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
+|---|---|---|
+| ABNORMALPATH | Chemin d’accès anormal | Le chemin d’accès anormal indique que le chemin d’accès d’origine est différent du chemin d’accès normalisé (par exemple, `/foo/./bar` est normalisé en `/foo/bar`). |
+| BAD-IP | Adresse IP incorrecte | Indicateur utilisé pour identifier les requêtes provenant d’adresses IP qui sont identifiées comme incorrectes, soit parce qu’il existe des sources identifiées comme malveillantes (`SANS`, `TORNODE`), soit parce qu’elles ont été identifiées comme incorrectes par le WAF après avoir envoyé trop de requêtes malveillantes |
 | BHH | En-têtes de saut incorrects | Les en-têtes de saut incorrects indiquent une tentative de passage HTTP via un en-tête de transcodage (TE) ou de longueur de contenu (CL) mal formé, ou un en-tête de TE et de CL bien formé. |
 | CODEINJECTION | Injection de code | L’injection de code est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes arbitraires de code d’application à l’aide d’entrées de l’utilisateur ou de l’utilisatrice. |
-| ABNORMALPATH | Chemin d’accès anormal | Le chemin d’accès anormal indique que le chemin d’accès d’origine est différent du chemin d’accès normalisé (par exemple, `/foo/./bar` est normalisé en `/foo/bar`). |
-| DOUBLEENCODING | Encodage double | L’encodage double vérifie la technique d’évasion du double encodage des caractères HTML. |
+| COMPRESSÉ | Compression détectée | Le corps de la requête POST est compressé et ne peut pas être inspecté. Par exemple, si un en-tête de requête `Content-Encoding: gzip` est spécifié et que le corps POST n’est pas en texte brut. |
+| RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
 | NOTUTF8 | Encodage non valide | Un encodage non valide peut entraîner la traduction par le serveur de caractères malveillants d’une requête dans une réponse, provoquant un déni de service ou un XSS. |
-| JSON-ERROR | Erreur d’encodage JSON | Corps de requête POST, PUT ou PATCH spécifié comme contenant JSON dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse JSON. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 | MALFORMED-DATA | Données incorrectes dans le corps de la requête | Corps de requête POST, PUT ou PATCH incorrect selon l’en-tête de requête « Content-Type ». Par exemple, si un en-tête de requête « Content-Type: application/x-www-form-urlencoded » est spécifié et contient un corps de POST qui est json. Il s’agit souvent d’une erreur de programmation, d’une requête automatisée ou malveillante. Nécessite l’agent 3.2 ou version ultérieure. |
 | SANS | Trafic IP malveillant | [Internet Storm Center SANS](https://isc.sans.edu/) : liste des adresses IP qui ont été signalées comme ayant participé à une activité malveillante. |
 | NO-CONTENT-TYPE | En-tête de requête « Content-Type » manquant | Requête POST, PUT ou PATCH ne comportant pas d’en-tête de requête « Content-Type ». Par défaut, les serveurs d’applications doivent assumer « Content-Type: text/plain; charset=us-ascii » dans ce cas. De nombreuses requêtes automatisées et malveillantes peuvent ne pas disposer de « Content-Type ». |
 | NOUA | Aucun agent utilisateur | Indique qu’une requête ne contenait pas d’en-tête « User-Agent » ou que la valeur de l’en-tête n’a pas été définie. |
-| TORNODE | Trafic Tor | Tor est un logiciel qui cache l’identité d’un utilisateur ou d’une utilisatrice. Un pic de trafic Tor peut indiquer qu’une personne malveillante essaie de masquer sa localisation. |
 | NULLBYTE | Octet nul | Les octets nuls n’apparaissent généralement pas dans une requête et indiquent que la requête est incorrecte et potentiellement malveillante. |
+| HORS DOMAINE | Domaine hors-bande | Les domaines hors-bande sont généralement utilisés pendant les tests de pénétration pour identifier les vulnérabilités dans lesquelles l’accès réseau est autorisé. |
 | PRIVATEFILE | Fichiers privés | Les fichiers privés sont de nature confidentielle, par exemple un fichier Apache `.htaccess` ou un fichier de configuration susceptible de faire fuiter des informations sensibles. |
 | SCANNER | Scanner | Identifie les services et outils d’analyse les plus utilisés. |
-| RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
-| XML-ERROR | Erreur de codage XML | Corps de requête POST, PUT ou PATCH spécifié comme contenant du code XML dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse XML. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
-| CENTRE DE DONNÉES | Centre de données | Identifie la requête comme provenant d’un fournisseur d’hébergement connu. Ce type de trafic n’est généralement pas associé à un utilisateur final réel ou une utilisatrice finale réelle. |
 
+#### Trafic divers
+
+| **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
+|---|---|---|
+| CENTRE DE DONNÉES | Centre de données | Identifie la requête comme provenant d’un fournisseur d’hébergement connu. Ce type de trafic n’est généralement pas associé à un utilisateur final réel ou une utilisatrice finale réelle. |
+| DOUBLEENCODING | Encodage double | L’encodage double vérifie la technique d’évasion du double encodage des caractères HTML. |
+| JSON-ERROR | Erreur d’encodage JSON | Corps de requête POST, PUT ou PATCH spécifié comme contenant JSON dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse JSON. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
+| TORNODE | Trafic Tor | Tor est un logiciel qui cache l’identité d’un utilisateur ou d’une utilisatrice. Un pic de trafic Tor peut indiquer qu’une personne malveillante essaie de masquer sa localisation. |
+| XML-ERROR | Erreur de codage XML | Corps de requête POST, PUT ou PATCH spécifié comme contenant du code XML dans l’en-tête de requête « Content-Type », mais contenant des erreurs d’analyse XML. Cela est souvent lié à une erreur de programmation ou à une requête automatisée ou malveillante. |
 
 ## Considérations {#considerations}
 
@@ -282,7 +299,7 @@ Voici quelques exemples de règles. Voir la [section de limite de débit](#rate-
 
 **Exemple 1**
 
-Cette règle bloque les requêtes provenant de l’**adresse IP 192.168.1.1** :
+Cette règle bloque les requêtes provenant des 192.168.1.1**IP** :
 
 ```
 kind: "CDN"
@@ -322,7 +339,7 @@ data:
 
 **Exemple 3**
 
-Cette règle bloque les requêtes à la publication qui contiennent le paramètre de requête `foo`, mais autorise chaque requête provenant de l’adresse IP 192.168.1.1 :
+Cette règle bloque les requêtes en publication qui contiennent le paramètre de requête `foo`, mais autorise chaque requête provenant de 192.168.1.1 IP :
 
 ```
 kind: "CDN"
