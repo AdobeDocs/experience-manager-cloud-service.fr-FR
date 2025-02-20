@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 99%
+source-wordcount: '1392'
+ht-degree: 97%
 
 ---
 # Fragments de code {#snippets}
@@ -56,6 +56,17 @@ ht-degree: 99%
 * [Connecter un formulaire adaptatif à Microsoft](/help/forms/configure-msdynamics.md)
 * [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Éditeur universel{#universal-editor-see-also}
+
+* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Publier votre formulaire](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Envoyer le formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Création de règles pour votre formulaire](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Utilisation de reCAPTCHA dans votre formulaire](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Créer un composant personnalisé pour votre formulaire](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Aperçu du formulaire en mode réactif](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## Voir également {#see-more-forms-eds}
 
@@ -165,7 +176,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
 >**Liste autorisée des adresses IP**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251,,,
 >   
 
 ## Ajouter une liste des adresses IP autorisées de Cloud Manager et des pipelines front-end {#add-cm-allowlist-frontend-pipeline}

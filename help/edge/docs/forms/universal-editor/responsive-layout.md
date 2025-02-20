@@ -4,10 +4,10 @@ description: Cet article explique comment prévisualiser des formulaires à l’
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 17%
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -67,14 +67,7 @@ Vous pouvez utiliser l’icône **Rotateur d’écran** pour basculer entre les 
 
 ## Voir également
 
-* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
-* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
-* [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
-* [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-* [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
-* [Surveillance d’utilisation réelle](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 

@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 78%
+source-wordcount: '1038'
+ht-degree: 84%
 
 ---
 
@@ -36,9 +36,8 @@ Voici la disposition avec des cartes à largeur égale (utilisant des colonnes �
 
 | ![Publication/Dépublication](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Mode réactif](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![ Composants personnalisés ](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**Publication/Dépublication**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Mode réactif**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Composants personnalisés**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| Contrôlez facilement la visibilité de vos formulaires : publiez ou dépubliez-les directement à partir de l’éditeur en quelques clics seulement. | Concevez des formulaires qui s’adaptent de manière transparente sur les appareils (ordinateurs de bureau, tablettes et appareils mobiles). Utilisez le mode réactif pour prévisualiser et tester les formulaires pour différentes tailles d’écran. | Les composants personnalisés permettent aux développeurs et aux développeuses d’étendre les fonctionnalités de formulaire en créant des éléments uniques adaptés à des cas d’utilisation organisationnels spécifiques. |
+| Contrôlez facilement la visibilité de vos formulaires : publiez ou dépubliez-les directement à partir de l’éditeur en quelques clics seulement. | Concevez des formulaires qui s’adaptent facilement à tous les appareils (ordinateurs de bureau, tablettes et appareils mobiles). Utilisez le mode réactif pour prévisualiser et tester les formulaires pour différentes tailles d’écran. | Les composants personnalisés permettent aux développeurs et aux développeuses d’étendre les fonctionnalités de formulaire en créant des éléments uniques adaptés à des cas d’utilisation organisationnels spécifiques. |
 
 | ![Style](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Services de préremplissage](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Test A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -52,9 +51,8 @@ Voici la disposition avec des cartes à largeur égale (utilisant des colonnes �
 
 | ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Intégration de Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuration de remerciement](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | **Personnalisation de l’éditeur** | **Intégration de Forms** | [**Configuration de remerciement**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Les développeurs et développeuses peuvent étendre les fonctionnalités de l’éditeur par le biais d’extensions d’interface utilisateur, permettant des solutions personnalisées qui répondent à des besoins organisationnels spécifiques. | Incorporez des formulaires directement dans des pages Edge Delivery Services Sites à l’aide du composant intégré de l’éditeur universel. | Personnalisez facilement le message ou la page d’accusé de réception affiché pour les utilisateurs après l’envoi réussi du formulaire. |
+| Les développeurs et développeuses peuvent étendre les fonctionnalités de l’éditeur par le biais d’extensions d’interface d’utilisation, permettant des solutions personnalisées qui répondent à des besoins organisationnels spécifiques. | Incorporez des formulaires directement dans des pages Edge Delivery Services Sites à l’aide du composant intégré de l’éditeur universel. | Personnalisez facilement le message ou la page d’accusé de réception affiché aux utilisateurs et utilisatrices après l’envoi du formulaire. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ L’éditeur universel comprend des outils d’analyse et de suivi intégrés po
 
 ## Commencer à créer des formulaires
 
-* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
-* [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
-* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
-* [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
-* [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-* [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
-* [Surveillance d’utilisation réelle](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 
