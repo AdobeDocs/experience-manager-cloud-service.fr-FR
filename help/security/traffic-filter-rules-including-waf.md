@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4215'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Un groupe de conditions est composé de plusieurs conditions simples et/ou de gr
 
 **Remarques**
 
-* La propriété de requête `clientIp` ne peut être utilisée qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation des prédicats `in` et `notIn`. L’exemple suivant met en œuvre une condition pour évaluer si une adresse IP client est dans la plage d’adresses IP de 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
+* La propriété de requête `clientIp` ne peut être utilisée qu’avec les prédicats suivants : `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` peut également être comparé à des plages d’adresses IP lors de l’utilisation des prédicats `in` et `notIn`. L’exemple suivant implémente une condition pour évaluer si l’adresse IP d’un client ou d’une cliente se trouve dans la plage d’adresses IP 192.168.0.0/24 (de 192.168.0.0 à 192.168.0.255) :
 
 ```
 when:
@@ -235,12 +235,12 @@ Les actions sont classées par ordre de priorité en fonction de leurs types dan
 
 La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre de trafic WAF disponibles sous licence, peut faire référence aux éléments suivants :
 
-#### Trafic Malveillant
+#### Trafic malveillant
 
 | **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
 |---|---|---|
-| ATTAQUER | Attaquer | Indicateur utilisé pour identifier les requêtes contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
-| ATTAQUER À PARTIR D’UNE ADRESSE IP INCORRECTE | Attaque provenant d&#39;une adresse IP incorrecte | Indicateur pour identifier les requêtes provenant de `BAD-IP` et contenant un ou plusieurs des types d’attaques répertoriés dans ce tableau |
+| ATTACK | Attaque | Indicateur utilisé pour identifier les requêtes contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
+| ATTACK-FROM-BAD-IP | Attaque provenant d’une adresse IP incorrecte | Indicateur utilisé pour identifier les requêtes de `BAD-IP` contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
 | SQLI | Injection SQL | L’injection SQL est une tentative d’accès à une application ou d’obtention d’informations privilégiées en exécutant des requêtes de base de données arbitraires. |
 | BACKDOOR | Backdoor | Un signal backdoor est une requête qui tente de déterminer si un fichier backdoor commun est présent sur le système. |
 | CMDEXE | Exécution de commande | L’exécution de commande est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes système arbitraires au moyen d’entrées de l’utilisateur ou de l’utilisatrice. |
@@ -249,7 +249,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | TRAVERSAL | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | Log4J JNDI | Les attaques Log4J JNDI tentent d’exploiter la [Vulnérabilité Log4Shell](https://fr.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
-| CVE | CVE | Indicateur pour identifier un CVE. Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les CVE contre lesquels Adobe vous protégera. |
+| CVE | CVE | Indicateur utilisé pour identifier un CVE. Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les CVE contre lesquels Adobe vous protégera. |
 
 #### Trafic suspect
 
@@ -259,7 +259,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | BAD-IP | Adresse IP incorrecte | Indicateur utilisé pour identifier les requêtes provenant d’adresses IP qui sont identifiées comme incorrectes, soit parce qu’il existe des sources identifiées comme malveillantes (`SANS`, `TORNODE`), soit parce qu’elles ont été identifiées comme incorrectes par le WAF après avoir envoyé trop de requêtes malveillantes |
 | BHH | En-têtes de saut incorrects | Les en-têtes de saut incorrects indiquent une tentative de passage HTTP via un en-tête de transcodage (TE) ou de longueur de contenu (CL) mal formé, ou un en-tête de TE et de CL bien formé. |
 | CODEINJECTION | Injection de code | L’injection de code est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes arbitraires de code d’application à l’aide d’entrées de l’utilisateur ou de l’utilisatrice. |
-| COMPRESSÉ | Compression détectée | Le corps de la requête POST est compressé et ne peut pas être inspecté. Par exemple, si un en-tête de requête `Content-Encoding: gzip` est spécifié et que le corps POST n’est pas en texte brut. |
+| COMPRESSED | Compression détectée | Le corps de la requête POST est compressé et ne peut pas être inspecté. Par exemple, si un en-tête de requête `Content-Encoding: gzip` est spécifié et que le corps POST n’est pas en texte brut. |
 | RESPONSESPLIT | Fractionnement des réponses HTTP | Identifie le moment où les caractères CRLF sont envoyés en entrée de l’application pour injecter des en-têtes dans la réponse HTTP. |
 | NOTUTF8 | Encodage non valide | Un encodage non valide peut entraîner la traduction par le serveur de caractères malveillants d’une requête dans une réponse, provoquant un déni de service ou un XSS. |
 | MALFORMED-DATA | Données incorrectes dans le corps de la requête | Corps de requête POST, PUT ou PATCH incorrect selon l’en-tête de requête « Content-Type ». Par exemple, si un en-tête de requête « Content-Type: application/x-www-form-urlencoded » est spécifié et contient un corps de POST qui est json. Il s’agit souvent d’une erreur de programmation, d’une requête automatisée ou malveillante. Nécessite l’agent 3.2 ou version ultérieure. |
@@ -267,7 +267,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | NO-CONTENT-TYPE | En-tête de requête « Content-Type » manquant | Requête POST, PUT ou PATCH ne comportant pas d’en-tête de requête « Content-Type ». Par défaut, les serveurs d’applications doivent assumer « Content-Type: text/plain; charset=us-ascii » dans ce cas. De nombreuses requêtes automatisées et malveillantes peuvent ne pas disposer de « Content-Type ». |
 | NOUA | Aucun agent utilisateur | Indique qu’une requête ne contenait pas d’en-tête « User-Agent » ou que la valeur de l’en-tête n’a pas été définie. |
 | NULLBYTE | Octet nul | Les octets nuls n’apparaissent généralement pas dans une requête et indiquent que la requête est incorrecte et potentiellement malveillante. |
-| HORS DOMAINE | Domaine hors-bande | Les domaines hors-bande sont généralement utilisés pendant les tests de pénétration pour identifier les vulnérabilités dans lesquelles l’accès réseau est autorisé. |
+| OOB-DOMAIN | Domaine hors-bande | Les domaines hors-bande sont généralement utilisés pendant les tests de pénétration pour identifier les vulnérabilités dans lesquelles l’accès réseau est autorisé. |
 | PRIVATEFILE | Fichiers privés | Les fichiers privés sont de nature confidentielle, par exemple un fichier Apache `.htaccess` ou un fichier de configuration susceptible de faire fuiter des informations sensibles. |
 | SCANNER | Scanner | Identifie les services et outils d’analyse les plus utilisés. |
 
@@ -299,7 +299,7 @@ Voici quelques exemples de règles. Voir la [section de limite de débit](#rate-
 
 **Exemple 1**
 
-Cette règle bloque les requêtes provenant des 192.168.1.1**IP** :
+Cette règle bloque les requêtes provenant de l’**IP192.168.1.1** :
 
 ```
 kind: "CDN"
@@ -339,7 +339,7 @@ data:
 
 **Exemple 3**
 
-Cette règle bloque les requêtes en publication qui contiennent le paramètre de requête `foo`, mais autorise chaque requête provenant de 192.168.1.1 IP :
+Cette règle bloque les requêtes à la publication qui contiennent le paramètre de requête `foo`, mais autorise chaque requête provenant de l’adresse IP 192.168.1.1 :
 
 ```
 kind: "CDN"

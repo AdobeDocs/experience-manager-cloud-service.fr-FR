@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1750'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media utilise l’intelligence artificielle pour générer autom
 
 #### Gérer la publication
 
-Vous pouvez utiliser le workflow [Gérer la publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) pour publier ou dépublier des formulaires dans plusieurs environnements, généralement de l’instance d’auteur aux instances de publication et de prévisualisation. Cela permet aux utilisateurs et utilisatrices de publier, d’annuler la publication ou de planifier la publication du contenu de manière rationalisée.
+Vous pouvez utiliser le workflow [Gérer la publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) pour publier ou annuler la publication de formulaires dans tous les environnements, généralement de l’instance de création aux instances de publication et de prévisualisation. Cela permet aux utilisateurs et utilisatrices de publier, d’annuler la publication ou de planifier la publication du contenu de manière rationalisée.
 
 #### Enregistrement automatique d’un brouillon pour les formulaires adaptatifs basés sur les composants principaux
 
