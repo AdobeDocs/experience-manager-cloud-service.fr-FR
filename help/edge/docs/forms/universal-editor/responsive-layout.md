@@ -4,19 +4,20 @@ description: Cet article explique comment prévisualiser des formulaires à l’
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
 
 ---
 
-
 # Mode réactif dans la création WYSIWYG
 
 L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) vous permet de prévisualiser Edge Delivery Services Forms avec différents émulateurs pour voir l’aspect du formulaire lors de la création.
 
 Le mode réactif permet aux développeurs de concevoir des mises en page qui s’adaptent automatiquement à différentes tailles d’écran, notamment aux ordinateurs de bureau, aux tablettes et aux appareils mobiles. L’éditeur universel prend en charge les émulateurs pour les ordinateurs de bureau, les tablettes et les appareils mobiles. Vous pouvez définir la hauteur et la largeur en fonction de la taille de votre écran et effectuer les actions suivantes :
+
 * Définir l’orientation
 * Spécifier la largeur et la hauteur
 * Modifier l’orientation
@@ -68,6 +69,3 @@ Vous pouvez utiliser l’icône **Rotateur d’écran** pour basculer entre les 
 ## Voir également
 
 {{universal-editor-see-also}}
-
-
-

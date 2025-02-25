@@ -4,8 +4,9 @@ description: Ce tutoriel vous aide à maîtriser l’interface de l’éditeur u
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 0%
@@ -42,7 +43,7 @@ L’en-tête Experience Cloud se trouve dans la partie supérieure de la console
 ![En-tête Experience Cloud de l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 
-Examinons chacun de ses composants.
+Comprenons chacun de ses composants.
 
 * **Adobe Experience Cloud**
 
@@ -85,7 +86,7 @@ L’icône représente les détails de l’auteur du formulaire, ainsi que le no
 La barre d’outils vous permet d’accéder à d’autres formulaires et de les modifier. Elle leur permet également de publier ou de dépublier le formulaire, de modifier les propriétés du formulaire et d’accéder à l’éditeur de règles.
 ![Barre d’outils de l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Examinons chacun de ses composants.
+Comprenons chacun de ses composants.
 
 * **Bouton Accueil**
 Le bouton Accueil vous permet d’accéder à la page de démarrage de l’éditeur universel. Vous pouvez également saisir directement l’URL du formulaire à modifier à l’aide de l’éditeur universel.
@@ -151,7 +152,7 @@ Le **panneau Propriétés** se trouve sur le côté droit de l’éditeur. Il af
 ![ue-properties panel](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png){width=50%,height=50%}
 
 
-Examinons chacun de ses composants.
+Comprenons chacun de ses composants.
 
 
 * **Mode Propriétés**
