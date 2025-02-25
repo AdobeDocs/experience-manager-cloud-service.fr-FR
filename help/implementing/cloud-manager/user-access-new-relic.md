@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 42%
+source-wordcount: '1809'
+ht-degree: 41%
 
 ---
 
@@ -161,7 +161,7 @@ Si vous avez été ajouté en tant qu’utilisateur New Relic One, comme décrit
 
 1. New Relic vous envoie un e-mail contenant un lien pour confirmer le compte.
 
-Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance par le biais de l’Admin Console [](https://adminconsole.adobe.com/).
+Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, enregistrez un ticket d’assistance par le biais de [Admin Console](https://adminconsole.adobe.com/).
 
 Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 
@@ -179,11 +179,11 @@ Les restrictions suivantes s’appliquent à l’ajout d’utilisateurs à New 
 
 >[!NOTE]
 >
->Si aucune activité n’est détectée dans votre sous-compte New Relic One pendant 90 jours ou plus, l’agent APM est arrêté.
+>Si aucune activité n’est détectée dans votre sous-compte New Relic One pendant 30 jours ou plus, l’agent APM est arrêté.
 >
 >Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One de votre programme AEM as a Cloud Service, ouvrez un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes {#faqs}
 
@@ -191,17 +191,18 @@ Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Rel
 
 Adobe contrôle les services de création, de publication et de prévisualisation (le cas échéant) d’AEM as a Cloud Service via le plug-in Java de New Relic One. Adobe active la télémétrie et la surveillance personnalisées de New Relic One APM dans les environnements de production et hors production d’AEM as a Cloud Service.
 
-Votre compte New Relic One est associé à un compte principal géré par Adobe et comporte plusieurs rapports d’applications : trois par environnement AEM as a Cloud Service.
+Votre compte New Relic One est associé à un compte principal géré par Adobe et comporte plusieurs rapports d’applications ; trois par environnement AEM as a Cloud Service.
 
 * Une application pour le service de création par environnement.
-* Une application pour le service `Publish` par environnement (y compris Golden Publish)
+* Une application pour le service `Publish` par environnement (y compris la publication Golden).
 * Une application pour le service de prévisualisation par environnement.
 
 Remarque :
 
 * Chaque application utilise une clé de licence.
 * Les environnements AEM as a Cloud Service ne signalent qu’un seul compte New Relic One.
-* Les mesures et événements de surveillance complets pour les deux New Relic One sont conservés pendant trois mois. &lt;!— CQDOC-22238 - Mise à jour de sept jours à trois mois. >
+* Les mesures et événements de surveillance complets pour les deux New Relic One sont conservés pendant trois mois.
+
 +++
 
 +++**Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?** {#alerting-new-relic}
@@ -235,5 +236,5 @@ L’assistance Adobe surveille AEM as a Cloud Service avec New Relic One et d’
 
 +++**L&#39;agent APM pour mon compte New Relic One est arrêté. Que s&#39;est-il passé ?** {#deactivated}
 
-[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 90 jours ou plus. Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 +++
