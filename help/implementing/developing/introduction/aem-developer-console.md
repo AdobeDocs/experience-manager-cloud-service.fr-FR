@@ -1,26 +1,26 @@
 ---
-title: Developer Console AEM as a Cloud Service (Bêta)
-description: En savoir plus sur CRX/DE Lite et AEM as a Cloud Service Developer Console
+title: AEM AS A CLOUD SERVICE DEVELOPER CONSOLE - BETA
+description: En savoir plus sur CRXDE Lite et AEM as a Cloud Service Developer Console.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efff267b714c7ebb3a8b547da5b720ec7eca2f48
+exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
+source-git-commit: 11c52f6782df3b608bedd4b120c145a7a80a0702
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 7%
+source-wordcount: '1009'
+ht-degree: 2%
 
 ---
-
 
 # Developer Console AEM as a Cloud Service (Bêta) {#developer-console}
 
 >[!NOTE]
 >
->Cet article décrit une expérience repensée pour AEM Cloud Service Developer Console, qui est désormais en version bêta, et disponible pour certains clients en cliquant sur un bouton dans la partie supérieure de l’IU classique. Nous apprécions tout commentaire que vous pouvez envoyer à `aemcs-new-devconsole-ui-beta@adobe.com`. Pour plus d’informations sur Developer Console AEM classique, voir [cet article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
+>Cet article décrit une expérience repensée pour AEM Cloud Service Developer Console, qui est désormais en version bêta. Certains clients peuvent y accéder en cliquant sur un bouton dans la partie supérieure de l’IU classique. Adobe vous invite à envoyer vos commentaires à `aemcs-new-devconsole-ui-beta@adobe.com`. Pour plus d’informations sur AEM Developer Console classique, consultez [cet article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
-AEM as a Cloud Service Developer Console comprend un ensemble d’outils pour le débogage dans les environnements cloud. Il est accessible par le biais d’un lien par environnement dans Cloud Manager.
+AEM as a Cloud Service Developer Console comprend un ensemble d’outils pour le débogage dans les environnements cloud. Il est accessible via un lien spécifique à l’environnement dans Cloud Manager.
 
 >[!NOTE]
->AEM as a Cloud Service Developer Console ne doit pas être confondu avec le [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) du même nom.
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 >
 
 
@@ -44,64 +44,67 @@ Les développeurs peuvent accéder aux fonctionnalités décrites ci-dessous :
 
 ## Bundles OSGi {#osgi-bundles}
 
-![Nouvel écran de lots OSGi dans la console de développement](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+![Nouvel écran des lots OSGi dans la console de développement](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
-* Vous obtenez ainsi un aperçu des lots OSGI qui sont déployés sur le type d’environnement sélectionné. Elle active une recherche de texte intégral.
+* Présentation des lots OSGI déployés dans le type d’environnement sélectionné. Elle permet d’effectuer une recherche de texte intégral.
 * Il est utile d’obtenir des informations sur l’état réel des lots dans l’environnement. Vous pouvez obtenir des informations telles que les packages exportés, les packages importés, les services utilisés, etc.
-* Les développeurs veulent vérifier sur l’environnement réel et vérifier si le lot fait ce qu’ils attendent de lui.
-* **Exemple de cas d’utilisation :** Une plage de versions d’une dépendance est spécifiée dans votre lot. Quelque chose ne va pas dans la dépendance. Vous souhaitez vérifier quelle version de la dépendance est connectée à votre lot. Pour vérifier cela, accédez aux détails du lot et utilisez l’importation de bundles / packages pour vérifier la version du lot ou de la version du package utilisée au moment de l’exécution pour le savoir. Grâce à ces informations, vous pouvez ajuster la plage de versions de votre dépendance Maven ou adapter votre code.
+* L’équipe de développement souhaite effectuer une vérification sur l’environnement réel et vérifier si le lot fonctionne comme prévu.
+* **Exemple de cas d’utilisation :** une plage de versions d’une dépendance est spécifiée dans votre lot. Quelque chose ne fonctionne pas dans la dépendance. Vous souhaitez vérifier quelle version de la dépendance est connectée à votre lot. Pour vérifier, accédez aux détails du bundle et utilisez l’importation de bundles/packages pour vérifier quelle version de bundle ou version de package est utilisée au moment de l’exécution. Grâce à ces informations, vous pouvez ajuster votre plage de versions de dépendance Maven ou adapter votre code.
 
 ## Packages Java {#java-packages}
 
 ![Onglet Packages Java dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
 
-* Vous pouvez ainsi utiliser une invite de recherche pour rechercher les modules actifs dans le système OSGI de l’environnement. Dans cet emplacement, vous pouvez voir quel lot exporte (ou fournit) le package, et vous pouvez voir quel lot importe (ou utilise) le package. Vous pouvez également rechercher des packages en double (même package, différentes versions), ce qui peut entraîner des problèmes dans certains cas.
-* **Exemple de cas d’utilisation :** Un service personnalisé qui utilise le [chargeur de classe dynamique](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) charge une classe sans spécifier de version, qui est exportée par plusieurs lots avec des versions différentes, ce qui entraîne la différence de l’implémentation et le changement de comportement. Le développeur souhaite savoir quels packages se trouvent dans l’environnement sans analyser le modèle de fonctionnalité. Il recherche donc ce package et voit toutes les versions exportées. Ils disposent ainsi des informations nécessaires pour entrer dans une meilleure plage de versions.
+* Une invite de recherche que vous pouvez utiliser pour rechercher des packages actifs dans le système OSGI de l’environnement. À cet emplacement, vous pouvez voir le bundle qui exporte (ou fournit) le package, et vous pouvez voir quel bundle importe (ou utilise) le package. Vous pouvez également vérifier les packages en double (même package, versions différentes), ce qui peut entraîner des problèmes dans certains cas.
+* **Exemple de cas d’utilisation :** un service personnalisé utilisant le [chargeur de classe dynamique](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) charge une classe sans spécifier de version. Comme plusieurs lots exportent différentes versions, l’implémentation varie, ce qui entraîne des changements de comportement. Le développeur souhaite vérifier quels packages se trouvent dans l’environnement sans analyser le modèle de fonctionnalité. Ils recherchent le package et affichent toutes les versions exportées. Cette fonctionnalité leur donne les informations nécessaires pour entrer une meilleure plage de versions.
 
 ## Servlets {#servlets}
 
 ![Onglet Servlets dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
 
-* Vous pouvez ainsi spécifier un chemin avec des sélecteurs et une extension avec un GET ou un POST à l’aide d’une invite de recherche. Il fournit ensuite les résultats des servlets par ordre de préférence qui gérera la requête dans Sling.
-* **Exemple de cas d’utilisation :** Vous disposez d’une servlet OSGI qui doit être activée sur une requête et qui doit imprimer quelque chose dans la réponse, mais vous obtenez une réponse vide à la place. Vous devez vérifier si une autre servlet a priorité sur votre servlet en raison de sélecteurs plus spécifiques, `resourceType`, d’extensions ou de classement. Vous recherchez le chemin attendu et découvrez qu’une autre servlet est active avec un rang supérieur. Ensuite, vous décidez si vous pouvez obtenir le classement de votre servlet en ajoutant des sélecteurs, par exemple.
+* Une invite de recherche dans laquelle vous pouvez spécifier un chemin avec des sélecteurs et une extension avec GET ou POST. Il fournit ensuite les résultats des servlets par ordre de préférence, ce qui gère la requête dans Sling.
+* **Exemple de cas d’utilisation :** vous disposez d’un servlet OSGI qui doit s’activer lors d’une requête et imprimer la sortie dans la réponse. Cependant, au lieu de la sortie attendue, la réponse renvoie une valeur vide. Vous devez vérifier si un autre servlet est prioritaire sur votre servlet en raison de sélecteurs, de `resourceType`, d’extensions ou de classement plus spécifiques. Vous recherchez le chemin d’accès attendu et découvrez qu’un autre servlet est actif avec un rang supérieur. Ensuite, vous décidez si vous pouvez obtenir votre servlet ci-dessus au rang en ajoutant des sélecteurs, par exemple.
 
 ## Services {#services}
 
 ![Onglet Services dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/services-dev-console.png)
 
-* Similaire à la vue Composants OSGI, mais en fonction des services. Vous pouvez rechercher rapidement les services fournis avec certaines propriétés.
+* Similaire à la vue Composants OSGI, mais basé sur les services. Vous pouvez rechercher rapidement les services fournis avec certaines propriétés.
 
 ## Composants OSGi {#osgi-components}
 
 ![Onglet Composants OSGi dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
 
-* Vous obtenez ainsi un aperçu des composants OSGI présents dans le type d’environnement sélectionné. Elle active une recherche de texte intégral.
-* Vous pouvez obtenir l’état actif des composants OSGI dans l’environnement. Vous pouvez voir quels services elle satisfait, le lot qui le fournit et le type d’activation (immédiat ou retardé).
-* **Exemple d’utilisation 1 :** En tant que développeur, vous souhaitez vérifier si un composant activé avec une configuration est actif ou non dans un environnement particulier, car vous n’obtenez pas le comportement attendu. Il vous suffit de rechercher le composant dans la recherche et de vérifier s’il est actif ou non.
-* **Exemple d’utilisation 2 :** Vous souhaitez savoir quels composants prêts à l’emploi sont présents dans l’environnement et quels services ils satisfont pour en savoir plus sur Adobe Experience Manager as a Cloud Service. Vous pouvez les extraire dans la liste des composants.
+* Présentation des composants OSGI présents dans le type d’environnement sélectionné. Elle permet d’effectuer une recherche de texte intégral.
+* Vous pouvez obtenir l’état actif des composants OSGI dans l’environnement . Vous pouvez voir quels services elle satisfait, le lot qui la fournit et le type d’activation (immédiate ou différée).
+* **Exemple de cas d’utilisation 1 :** en tant que développeur ou développeuse, vous devez vérifier si un composant activé avec une configuration est actif dans un environnement spécifique. La raison en est que le comportement attendu ne se produit pas. Il vous suffit de rechercher le composant dans la recherche et de vérifier s’il est actif ou non.
+* **Exemple de cas d’utilisation 2 :** vous souhaitez voir quels composants prêts à l’emploi sont disponibles dans l’environnement et identifier les services qu’ils prennent en charge. Cette fonctionnalité vous permet d’en savoir plus sur Adobe Experience Manager as a Cloud Service. Vous pouvez les extraire dans la liste des composants.
 
 ## Intégrations {#integrations}
 
 ![Onglet Intégrations dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
 
-* Permet aux administrateurs de générer, renommer et supprimer des informations d’identification de service et des jetons de développeur.
+* Les administrateurs ont la possibilité de générer, renommer et supprimer des informations d’identification de service et des jetons de développement.
 
 ## Référentiel {#repository}
 
 * Ouvre le [navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
 
-## Images mémoire/requêtes d’état {#status-dumps-queries}
+## Vidages de statut/requêtes {#status-dumps-queries}
 
-![Onglet Images d’état / Requêtes dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+![Onglet Vidages de statut/Requêtes dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
 
-* Donne un texte intégral ou une image mémoire JSON de l’état actuel des bundles, packages, configurations, services, composants, tâches Sling ou définitions Oak.
-* Cela peut s’avérer utile, en particulier si le développeur a découvert un état inattendu et souhaite communiquer ou documenter cela pour d’autres développeurs. Le téléchargement du vidage vous donne un instantané de l’état à des fins de référence ultérieure.
+* Une image mémoire de texte intégral ou JSON de l’état actuel des lots, des packages, des configurations, des services, des composants, des tâches Sling ou des définitions Oak.
+* Utile en particulier si le développeur a découvert un état inattendu et souhaite communiquer ou documenter cet état pour d’autres développeurs. Le téléchargement de l’image mémoire vous donne un instantané de l’état pour référence ultérieure.
 
 ## Configurations {#configurations}
 
 ![Onglet Configurations dans l’interface utilisateur de la console de développement](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
 
-* Vous obtenez ainsi une liste consultable des configurations actives dans l’environnement. Vous pouvez voir quelles propriétés sont fournies par les configurations en consultant la page des détails.
-* **Exemple de cas d’utilisation :** Un développeur veut s’assurer que les configurations qu’il a spécifiées sont réellement présentes dans l’environnement. Si la configuration est manquante, ils peuvent vérifier le modèle de fonctionnalité ou le mode d’exécution ou le dossier de configuration.
+* Liste consultable des configurations actives dans l’environnement. Vous pouvez voir quelles propriétés sont fournies par les configurations en consultant la page de détails.
+* **Exemple de cas d’utilisation :** un développeur souhaite s’assurer que les configurations qu’il a spécifiées sont réellement présentes dans l’environnement. Si la configuration fait défaut, ils peuvent vérifier le modèle de fonction ou le mode ou dossier d’exécution de la configuration.
 
-Pour les programmes de production, l’accès à AEM as a Cloud Service Developer Console est défini par &quot;Cloud Manager - Rôle de développeur&quot; dans Adobe Admin Console, tandis que pour les programmes Sandbox, AEM as a Cloud Service Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui donnant accès à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développement » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs et les utilisatrices doivent également être définis dans le profil de produit Utilisateurs et utilisatrices d’AEM ou Administrateurs et administratrices d’AEM sur les services de création et de publication pour afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de production, la mention « Cloud Manager - Rôle de développeur » dans Adobe Admin Console contrôle l’accès à AEM as a Cloud Service Developer Console. Pour les programmes Sandbox, tout utilisateur disposant d’un profil de produit accordant l’accès à AEM peut utiliser Developer Console. Pour tous les programmes, la mention « Cloud Manager - Rôle de développeur » est requise pour les vidages de statut et l’accès au navigateur de référentiel. Pour afficher les données des services de création et de publication, les utilisateurs doivent également être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM sur les deux services.
+
+Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+
