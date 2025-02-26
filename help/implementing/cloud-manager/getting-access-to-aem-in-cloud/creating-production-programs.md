@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 12%
+source-wordcount: '1098'
+ht-degree: 11%
 
 ---
 
 
 # Création de programmes de production {#create-production-program}
 
-Un programme de production est destiné aux utilisateurs qui connaissent bien AEM et Cloud Manager et qui sont prêts à écrire, créer et tester du code, dans le but de le déployer pour gérer le trafic en direct.
+Un programme de production est destiné aux utilisateurs qui connaissent bien Adobe Experience Manager (AEM) et Cloud Manager, et est prêt à écrire, créer et tester du code, dans le but de le déployer pour gérer le trafic en direct.
 
 Pour en savoir plus sur les types de programme, consultez le document [Présentation des programmes et des types de programme](program-types.md).
 
 ## Création d’un programme de production {#create}
 
-Selon les droits de votre entreprise, des [options supplémentaires](#options) peuvent s’afficher lors de l’ajout de votre programme.
+Selon les droits de votre entreprise, d’autres options de programme de production peuvent s’afficher lors de l’ajout de votre programme.
+Voir [Options de programme de production supplémentaires](#options).
 
 **Pour créer un programme de production, procédez comme suit**
 
@@ -73,7 +74,7 @@ Selon les droits de votre entreprise, des [options supplémentaires](#options) p
 
 ## Autres options de programme de production {#options}
 
-Selon les droits disponibles pour votre organisation, vous pouvez disposer d’options supplémentaires lors de la création d’un programme de production.
+Selon les droits disponibles pour votre organisation, vous pouvez disposer des options supplémentaires suivantes lorsque vous créez un programme de production.
 
 ### Sécurité {#security}
 
@@ -83,9 +84,9 @@ Si vous disposez des droits nécessaires, l’onglet **Sécurité** s’affiche 
 
 L’onglet **Sécurité** fournit les options d’activation de la **HIPAA** ou de la **protection WAF-DDOS**, ou les deux, pour votre programme de production.
 
-Adobe conforme à la norme HIPAA et WAF-DDOS (Web Application Firewall - Distributed Denial of Service) : assure la sécurité du cloud grâce à une approche sur plusieurs couches de la protection contre les vulnérabilités.
+Compatible avec la norme HIPAA d’Adobe et WAF-DDOS (Web Application Firewall - Distributed Denial of Service), il offre une sécurité cloud intégrée à une approche sur plusieurs couches de la protection contre les vulnérabilités.
 
-* **HIPAA** - Cette option permet la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
+* **HIPAA** - Cette option permet à Adobe de mettre en œuvre une solution conforme à la norme HIPAA.
    * [En savoir plus](https://www.adobe.com/trust/compliance/hipaa-ready.html) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
    * HIPAA ne peut pas être activé ou désactivé après la création du programme.
 * **Protection WAF-DDOS** - Cette option active le pare-feu d&#39;application web au moyen de règles pour protéger votre application.
@@ -98,23 +99,25 @@ Si vous disposez des droits nécessaires, l&#39;onglet **SLA** s&#39;affiche en 
 
 ![Options SLA](assets/create-production-program-sla.png)
 
-AEM Sites et Forms offrent un service level agreement standard à 99,9 % (SLA). L’option **99,99 % Service level agreement** permet un pourcentage de disponibilité minimal de 99,99 % pour vos environnements de production pour Sites et/ou Forms.
+Sites et Forms offrent un service level agreement standard à 99,9 % (SLA). L’option **99,99 % Service level agreement** garantit une disponibilité minimale de 99,99 % pour vos environnements de production, que ce soit pour Sites, Forms, Edge Delivery Services ou les trois.
 
-SLA à 99,99 % offre des avantages, notamment une disponibilité plus élevée et une latence plus faible, et nécessite l’application d’une [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) à l’environnement de production dans le programme.
+SLA à 99,99 % offre des avantages, notamment une disponibilité plus élevée et une latence plus faible.
 
-Lorsque les [conditions requises](#sla-requirements) pour activer le SLA à 99,99 % sont remplies, vous devez exécuter un [pipeline de pile pleine](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour l’activer.
+Pour les programmes Sites et Forms, le SLA à 99,99 % nécessite l’application d’une [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) à l’environnement de production dans le programme. Lorsque les [conditions requises](#sla-requirements) pour activer le SLA à 99,99 % sont remplies, vous devez exécuter un [pipeline de pile pleine](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour l’activer.
+
+Pour Edge Delivery Services, il n’existe *aucune* exigence autre que la configuration de la licence SLA à 99,99 % sur le programme.
 
 #### Configuration requise pour SLA à 99,99 % {#sla-requirements}
 
-Au-delà des droits requis, 99,99 % de SLA requiert une utilisation supplémentaire.
+Outre les droits requis, l’utilisation de la version 99,99 % de SLA pour les programmes Sites ou Forms s’accompagne des exigences supplémentaires suivantes :
 
 * L’organisation doit disposer de 99,99 % de SLA et de droits de région de publication supplémentaires disponibles lors de l’application de 99,99 % de SLA au programme.
 * Cloud Manager vérifie qu’un droit inutilisé [région de publication supplémentaire](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) est disponible avant d’appliquer 99,99 % de SLA au programme.
 * Lors de la modification d’un programme, s’il contient déjà un environnement de production avec au moins une région de publication supplémentaire, Cloud Manager vérifie uniquement la disponibilité d’un droit SLA de 99,99 %.
 * Pour l’activation de SLA à 99,99 % et la création de rapports, l’[ environnement de production/d’évaluation ](/help/implementing/cloud-manager/manage-environments.md#adding-environments) doit avoir été créé et au moins une région de publication supplémentaire doit avoir été appliquée à l’environnement de production/d’évaluation.
-   * Si vous utilisez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), veillez à consulter le document [Ajout de plusieurs régions Publish à un nouvel environnement](/help/implementing/cloud-manager/manage-environments.md#adding-regions) pour obtenir des recommandations afin que la connectivité soit maintenue en cas d’échec régional.
-* Au moins une région de publication supplémentaire doit rester dans votre programme SLA à 99,99 %. Les utilisateurs ne sont pas autorisés à supprimer la dernière région de publication supplémentaire de votre programme SLA à 99,99 %.
-* SLA à 99,99 % est pris en charge pour les programmes de production pour lesquels la solution Sites ou Forms est activée.
+   * Si vous utilisez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md), veillez à consulter le document [Ajout de plusieurs régions de publication à un nouvel environnement](/help/implementing/cloud-manager/manage-environments.md#adding-regions) pour obtenir des recommandations afin que la connectivité soit maintenue en cas d’échec régional.
+* Votre programme SLA à 99,99 % doit toujours inclure au moins une région de publication supplémentaire. Les utilisateurs ne sont pas autorisés à supprimer la dernière région de publication supplémentaire restante du programme.
+* Votre SLA à 99,99 % est pris en charge pour les programmes de production pour lesquels la solution Sites ou Forms est activée.
 * Exécutez un [pipeline de pile pleine](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) pour activer ou désactiver le SLA à 99,99 % lors de la modification d’un programme.
 
 ## Accéder à votre programme {#accessing}
