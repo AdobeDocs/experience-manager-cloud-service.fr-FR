@@ -1,13 +1,13 @@
 ---
 title: Rapports de contrat SLA
-description: Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service.
+description: Découvrez comment évaluer les performances de votre environnement de production AEM par rapport au Service level agreement sous-traité.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: e6f5414454f79f46421593440587e81941a8f4c2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '474'
 ht-degree: 10%
 
 ---
@@ -15,22 +15,22 @@ ht-degree: 10%
 
 # Rapports de contrat SLA {#sla-reporting}
 
-Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au SLA contractuel (contrat de niveau de service).
+Découvrez comment évaluer les performances de votre environnement de production AEM par rapport au contrat SLA (Service level agreement).
 
 ## Affichage d’un rapport SLA {#introduction}
 
-Les données du rapport SLA effectuent le suivi des mesures de performances pour deux niveaux de production : Niveau de création et Niveau Publish.
+Les données de rapport SLA effectuent le suivi des mesures de performances pour deux niveaux de production : niveau création et niveau publication.
 
-Le graphique linéaire d’une année sélectionnée inclut des points de données pour chaque mois de janvier à décembre. Les mesures suivantes sont suivies.
+Le graphique linéaire d’une année sélectionnée comprend des points de données pour chaque mois, de janvier à décembre. Les mesures suivantes sont suivies.
 
 | Mesure suivie | Couleur de ligne | Description |
 | --- | --- | --- |
-| Niveau d’auteur – réel | Vert clair | Temps de disponibilité mesuré du niveau Auteur de production comptabilisant les incidents causés par les fournisseurs d’Adobe ou d’Adobe. |
-| Niveau de création – contrat | bleu foncé | Le SLA défini dans votre contrat avec l’Adobe pour le niveau de création. |
-| Niveau de publication – réel | Orange | Temps de disponibilité mesuré du niveau Publish de production, en tenant compte des incidents causés par les fournisseurs d’Adobe ou d’Adobe. |
-| Niveau de publication – contrat | Rouge | SLA défini dans votre contrat avec Adobe pour le niveau Publish. |
+| Niveau d’auteur – réel | Vert clair | Temps de disponibilité mesuré du niveau de création de production comptabilisant les incidents causés par les fournisseurs Adobe ou Adobe. |
+| Niveau de création – contrat | Bleu foncé | SLA défini dans votre contrat avec Adobe pour le niveau de création. |
+| Niveau de publication – réel | Orange | Temps de disponibilité mesuré du niveau de publication de production, en tenant compte des incidents causés par les fournisseurs Adobe ou Adobe. |
+| Niveau de publication – contrat | Rouge | SLA défini dans votre contrat avec Adobe pour le niveau de publication. |
 
-**Pour afficher un rapport SLA :**
+**Pour afficher un rapport SLA, procédez comme suit**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -40,7 +40,7 @@ Le graphique linéaire d’une année sélectionnée inclut des points de donné
 
 1. Cliquez sur **Rapports SLA**.
 
-   ![Graphique de ligne de rapport SLA](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![Graphique linéaire du rapport SLA](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. Cliquez sur l’année souhaitée pour afficher un graphique linéaire des données SLA.
 
@@ -48,25 +48,24 @@ Le graphique linéaire d’une année sélectionnée inclut des points de donné
 
    * Placez le curseur sur un point de données du graphique linéaire pour afficher les valeurs spécifiques de ce point.
    * Sous l’année du graphique linéaire, cliquez sur l’icône Télécharger pour enregistrer un fichier image PNG du graphique linéaire.
-   * Cliquez sur le nom d’une mesure pour afficher uniquement les données de cette mesure. Ou appuyez sur `Shift` sur le clavier lors de la sélection ou de la désélection d’un ou de plusieurs noms de mesure.
-
-   ![Affichage de données détaillées](/help/implementing/cloud-manager/assets/cm-sla-download.png)
+   * Cliquez sur le nom d’une mesure pour afficher uniquement ses données. Vous pouvez également appuyer sur la touche `Shift` du clavier lors de la sélection ou de la désélection d’un ou de plusieurs noms de mesure.
 
 ## Analyse des événements {#event-analysis}
 
-La section **Analyse des événements** sous le graphique affiche l’ensemble des incidents qui se sont produits pour le programme au cours de l’année sélectionnée.
+La section **Analyse des événements** située sous le graphique indique l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée.
 
-Chaque incident comporte une période, une cause et un ensemble de commentaires.
+Chacun des incidents comporte une période, une cause et un ensemble de commentaires.
 
-![Exemple d’analyse d’événement](assets/sla-reporting-c.png)
+![Exemple d’analyse des événements](assets/sla-reporting-c.png)
 
-## Actualisation de l’intervalle des rapports SLA {#refresh}
+## Intervalle d’actualisation des rapports SLA {#refresh}
 
-Les rapports SLA vous donnent des informations sur les performances de votre environnement de production AEM et sont à jour, mais pas instantanés. La génération des rapports SLA se produit tous les mois et elle est générée pour les nouveaux programmes marqués comme `Production previous month`. Ce n&#39;est pas instantané. En raison de ce délai, tenez compte des points suivants lorsque vous passez en revue votre rapport SLA :
+Les rapports SLA vous donnent des informations sur les performances de votre environnement de production AEM. Ils sont à jour, mais pas instantanés. La génération du rapport SLA a lieu tous les mois et est générée pour les nouveaux programmes marqués comme `Production previous month`. Ce n&#39;est pas instantané. En raison de ce retard, gardez à l’esprit les points suivants lorsque vous examinerez votre rapport SLA :
 
-* Le SLA signalé est celui qui existait au début du mois, même si SLA a changé au cours de ce mois.
-* S’il n’y avait pas de SLA au début du mois car le programme n’existait pas, le SLA qui existait à la date de création du programme s’applique.
+* Le SLA signalé est celui qui existait au début du mois, même si SLA a changé pendant ce mois.
+* S’il n’y avait pas de SLA au début du mois parce que le programme n’existait pas, le SLA qui existait à la date de création du programme s’applique.
 
-## Aperçu des environnements {#preview}
+## Environnements de prévisualisation {#preview}
 
-L’environnement d’aperçu est conçu comme un outil permettant aux auteurs de contenu de vérifier l’expérience finale du contenu avant de le publier. En raison de cette fonctionnalité, les environnements d’aperçu ne sont pas conçus pour une haute disponibilité et n’ont pas de SLA associé.
+L’environnement de prévisualisation est conçu comme un outil permettant aux personnes en charge de la création de contenu de vérifier l’expérience finale du contenu avant sa publication. En raison de cette fonctionnalité, les environnements de prévisualisation ne sont pas conçus avec une haute disponibilité et ne disposent pas d’un SLA associé.
+
