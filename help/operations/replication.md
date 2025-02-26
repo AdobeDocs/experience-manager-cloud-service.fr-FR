@@ -4,9 +4,9 @@ description: Découvrez la distribution et le dépannage de la réplication dans
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 71%
 
 ---
@@ -98,7 +98,7 @@ Créez un modèle de workflow qui utilise l’étape de processus `TreeActivatio
 
 | Nom | Description |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nœuds modifiés depuis la dernière publication |
+| onlyModified | Nœuds (nouveaux et préexistants) qui ont été modifiés depuis la dernière publication |
 | onlyActivated | Nœuds publiés auparavant |
 
 
@@ -282,6 +282,6 @@ Pour résoudre les problèmes de réplication, accédez aux files d’attente de
 
 ![Journaux](assets/publish-logs.png "Journaux")
 
-Si le contenu n’a pas pu être publié, la publication complète est annulée à partir du service Publish d’AEM.
+Si la publication du contenu n’a pas pu être effectuée, l’intégralité de la publication est rétablie à partir du service de publication AEM.
 
 Dans ce cas, la file d’attente principale modifiable affiche un statut rouge. Elle doit être examinée afin d’identifier le ou les éléments qui ont provoqué l’annulation de la publication. En cliquant sur cette file d’attente, les éléments en attente s’affichent, parmi lesquels il est possible d’effacer, si nécessaire, tous les éléments ou un seul.
