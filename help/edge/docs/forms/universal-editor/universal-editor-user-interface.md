@@ -3,10 +3,8 @@ title: Présentation de l’éditeur universel - Tutoriel de développement
 description: Ce tutoriel vous aide à maîtriser l’interface de l’éditeur universel. Il vous aide à comprendre l’interface utilisateur de création de vos propres formulaires Edge Delivery Services dans l’éditeur universel.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 0%

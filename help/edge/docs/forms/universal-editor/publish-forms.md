@@ -3,17 +3,18 @@ title: Publiez AEM Forms pour Edge Delivery Services.
 description: Publiez vos formulaires Edge Delivery Services rapidement et en toute simplicité.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 1%
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
 # Publication de votre formulaire adaptatif dans Edge Delivery Services
+
+<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+
 
 Une fois votre formulaire finalisé et prêt à être utilisé, vous pouvez le publier pour le rendre accessible à vos clients à des fins de collecte et d’envoi de données. La publication garantit que le formulaire est disponible sur Edge Delivery, ce qui permet aux utilisateurs et utilisatrices d’interagir avec celui-ci de manière transparente. Ce processus permet aux clients de remplir et d’envoyer le formulaire en temps réel, ce qui garantit une capture des données efficace et un traitement rationalisé.
 

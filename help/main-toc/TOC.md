@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '6094'
-ht-degree: 98%
+source-wordcount: '6193'
+ht-degree: 95%
 
 ---
 
@@ -1024,37 +1024,36 @@ ht-degree: 98%
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + [Comment fonctionne Edge Delivery Services Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + Prise en main {#getting-started-edge-delivery-services-forms}
-         + [Prise en main](/help/edge/docs/forms/tutorial.md)
-         + [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
-         + [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
-         + [Ajouter des validations à des champs de formulaires](/help/edge/docs/forms/validate-forms.md)
-         + [Charger les options d’une URL vers un formulaire](/help/edge/docs/forms/load-options-from-url.md)
-         + [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
-         + [Utiliser les règles pour ajouter un comportement dynamique à un formulaire](/help/edge/docs/forms/rules-forms.md)
-         + [Expressions regex pour les validations](/help/edge/docs/forms/regex-forms.md)
-         + [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
+      + {#getting-started-edge-delivery-services-forms} de création basée sur des documents
+         + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
+         + [Comment créer Forms à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
+         + [Connecter votre formulaire aux feuilles Google : Guide de configuration de la collecte de données](/help/edge/docs/forms/submit-forms.md)
+         + [Guide de publication et de collecte de données pour la mise en ligne de votre formulaire](/help/edge/docs/forms/publish-forms.md)
+         + [Validation des champs de formulaire : ajoutez des contrôles d’erreur à votre Forms.](/help/edge/docs/forms/validate-forms.md)
+         + [Design Beautiful Forms : guide de style et de personnalisation](/help/edge/docs/forms/style-theme-forms.md)
+         + [Créer des messages de succès : personnalisation de la page de remerciement du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Guide d’envoi de formulaire : utilisation du service d’envoi Forms](/help/forms/forms-submission-service.md)
+         + [Champs de formulaire dynamique : options de chargement à partir des URL](/help/edge/docs/forms/load-options-from-url.md)
+         + [Ajout d’un comportement intelligent : Guide logique et règles de formulaire](/help/edge/docs/forms/rules-forms.md)
+         + [Validation avancée des formulaires : guide d’expression régulière](/help/edge/docs/forms/regex-forms.md)
+         + [Création d’un Forms réutilisable : guide des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
+         + [Création De Forms Dynamique : Ajout De Sections Répétables](/help/edge/docs/forms/repeatable-forms.md)
+         + [Rendre votre formulaire global : Guide de traduction de formulaire](/help/edge/docs/forms/translate-forms.md)
+         + [Protection de votre Forms : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Créer des composants de formulaire personnalisés : guide du développeur](/help/edge/docs/forms/custom-components-forms.md)
+         + [Surveiller les performances des formulaires : Guide de surveillance en utilisation réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Déploiement de Forms sur Edge : Guide de publication pour Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + WYSIWYG {#universal-editor}
-         + [Vue d’ensemble - Éditeur universel pour les Edge Delivery Services pour Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Prise en main](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Présentation de l’interface WYSIWYG](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Ajout de règles à à l’aide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Créer des composants personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Utilisation de reCAPTCHA dans les formulaires](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Actions Envoyer](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Publication de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Personnalisation de la mise en forme des formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Mode réactif](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-      + Fonctionnalités {#advanced-features-edge-delivery-services-forms}
-         + [Utiliser des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
-         + [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
-         + [Traduire votre formulaire](/help/edge/docs/forms/translate-forms.md)
-         + [Utiliser reCAPTCHA pour protéger vos formulaires](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Composants personnalisés](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveillance des utilisateurs et utilisatrices réels pour les formulaires](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Publier des formulaires pour Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Rendre votre Forms compatible avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Design Beautiful Forms : guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Ajout d’un comportement dynamique à Forms : guide complet de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guide d’envoi de formulaire : configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Publication et déploiement de Forms : guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Créer des composants de formulaire personnalisés : guide du développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Références {#forms-references}
          + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
    + Resources Edge Delivery {#resources}

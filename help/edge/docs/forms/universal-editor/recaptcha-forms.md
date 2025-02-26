@@ -4,18 +4,19 @@ description: Utiliser Google reCAPTCHA dans un formulaire pour Edge Delivery S
 feature: Edge Delivery Services
 keywords: reCAPTCHA dans les formulaires, en utilisant reCAPTCHA dans l’éditeur universel, ajouter reCAPTCHA dans les formulaires
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1273'
 ht-degree: 12%
 
 ---
 
 
 # Utilisation de reCAPTCHA dans la création WYSIWYG
+
+<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+
 
 Le CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) est un outil populaire utilisé pour protéger les sites web contre les activités frauduleuses, le spam et les abus.
 
