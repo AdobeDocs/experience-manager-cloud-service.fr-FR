@@ -4,9 +4,9 @@ description: Si vous disposez de nombreux sites similaires qui ressemblent et se
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ Si vous disposez de nombreux sites similaires qui ressemblent et se comportent g
 
 ## Une base de code pour plusieurs sites {#one-codebase}
 
-Par défaut, AEM est étroitement lié à votre référentiel de code, qui répond à la majorité des cas d’utilisation. Cependant, vous pouvez avoir plusieurs sites qui diffèrent principalement par leur contenu, mais qui peuvent utiliser la même base de code.
+Par défaut, AEM est étroitement lié à votre référentiel de code, ce qui répond à la majorité des cas d’utilisation. Cependant, vous pouvez avoir plusieurs sites qui diffèrent principalement par leur contenu, mais qui peuvent utiliser la même base de code.
 
-Au lieu de créer plusieurs référentiels GitHub et d’exécuter chaque site à partir d’un référentiel GitHub dédié tout en les maintenant synchronisés, AEM prend en charge l’exécution de plusieurs sites à partir de la même base de code.
+Plutôt que de créer plusieurs référentiels GitHub et d’exécuter chaque site à partir d’un référentiel GitHub dédié tout en les maintenant synchronisés, AEM prend en charge l’exécution de plusieurs sites à partir de la même base de code.
 
 Cette configuration simplifiée, qui élimine la nécessité de la réplication du code, est également appelée « réplication [ »](https://www.aem.live/docs/repoless) car tous, à l’exception de votre premier site, n’ont pas besoin de leur propre référentiel GitHub.
 
@@ -31,13 +31,13 @@ Quel que soit le nombre de sites que vous souhaitez créer en fin de compte sans
 
 Pour tirer parti de cette fonctionnalité, vérifiez que vous avez effectué les opérations suivantes.
 
-* Votre site est déjà entièrement configuré en suivant le document [Guide de prise en main du développeur pour la création WYSIWYG avec des Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Votre site est déjà entièrement configuré en suivant le document [Guide de prise en main du développeur pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Vous exécutez AEM as a Cloud Service 2024.08 au minimum.
 
-Vous devrez également demander à l’Adobe de configurer les éléments suivants pour vous. Contactez par le biais de votre canal de Slack ou soulevez un problème d’assistance pour demander l’Adobe d’effectuer ces modifications :
+Vous devrez également demander à Adobe de configurer les éléments suivants pour vous. Contactez par le biais de votre canal Slack ou soulevez un problème d’assistance pour demander à Adobe d’effectuer les modifications suivantes :
 
 * Demandez l’activation du [service de configuration aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) pour votre environnement et indiquez que vous êtes configuré en tant qu’administrateur.
-* Demandez à d’activer la fonction Repoless pour votre programme par Adobe.
+* Demandez à Adobe d’activer la fonction réponses pour votre programme.
 * Demandez à Adobe de créer l’organisation pour vous.
 
 ## Activer la fonction Réponses {#activate}
@@ -56,7 +56,7 @@ Ces étapes utilisent l’`https://wknd.site` de site comme exemple. Remplacez l
 
 Vous aurez d’abord besoin d’un jeton d’accès pour utiliser le service de configuration et le configurer pour le cas d’utilisation des réponses.
 
-1. Accédez à `https://admin.hlx.page/login` et utilisez l’adresse `login_adobe` pour vous connecter avec le fournisseur d’identités d’Adobe.
+1. Accédez à `https://admin.hlx.page/login` et utilisez l’adresse `login_adobe` pour vous connecter au fournisseur d’identités Adobe.
 1. Vous serez transféré à `https://admin.hlx.page/profile`.
 1. À l’aide des outils de développement de votre navigateur, copiez la valeur du `x-auth-token` à partir du cookie de jeton web JSON défini par la page `admin.hlx.page`.
 
@@ -157,13 +157,13 @@ Puisque vous utilisez maintenant le service de configuration, vous pouvez suppri
 
 Une fois AEM configuré pour une utilisation en mode sans réponse, vous devez utiliser le service de configuration et fournir un `config.json` valide avec le mappage des chemins d’accès.
 
-### Mettre à jour la configuration AEM {#update-aem}
+### Mettre à jour la configuration d’AEM {#update-aem}
 
-Vous êtes maintenant prêt à apporter les modifications nécessaires à vos Edge Delivery Services dans AEM.
+Vous êtes maintenant prêt à apporter les modifications nécessaires à votre Edge Delivery Services dans AEM.
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Outils** -> **Configuration des Cloud Service** -> **Configuration des Edge Delivery Services** et sélectionnez la configuration qui a été automatiquement créée pour votre site, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
-1. Dans la fenêtre **Configuration des Edge Delivery Services**, remplacez le type de projet par **aem.live avec la configuration repoless** et appuyez ou cliquez sur **Enregistrer et fermer**.
-   ![Configuration des Edge Delivery Services ](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+1. Connectez-vous à l’instance d’auteur AEM et accédez à **Outils** -> **Services cloud** -> **Configuration Edge Delivery Services** et sélectionnez la configuration qui a été automatiquement créée pour votre site, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
+1. Dans la fenêtre **Configuration de Edge Delivery Services**, remplacez le type de projet par **aem.live avec la configuration repoless** et appuyez ou cliquez sur **Enregistrer et fermer**.
+   ![Configuration Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Revenez à votre site à l’aide de l’éditeur universel et assurez-vous qu’il s’affiche toujours correctement.
 1. Modifier une partie de votre contenu et le republier.
 1. Rendez-vous sur le site publié à l’adresse `https://main--<your-aem-project>--<your-github-org>.aem.page/` et vérifiez que les modifications sont correctement répercutées.
@@ -176,13 +176,14 @@ Maintenant que votre site de base est configuré pour une utilisation sans répo
 
 * [Gestion de plusieurs sites sans référentiel](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Environnements d’évaluation et de production sans référentiel](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Authentification de site pour la création de contenu](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Résolution des problèmes {#troubleshooting}
 
 Le problème le plus courant rencontré après la configuration du cas d’utilisation des réponses est que les pages dans l’éditeur universel ne s’affichent plus ou que vous recevez une page blanche ou un message d’erreur AEM as a Cloud Service générique. Dans ce cas :
 
 * Affichez la source de la page rendue.
-   * Existe-t-il réellement un rendu (HTML correct avec les fichiers JSON liés à `scripts.js`, `aem.js` et l’éditeur) ?
+   * Existe-t-il réellement un rendu (la tête HTML correcte avec les fichiers JSON liés à `scripts.js`, `aem.js` et l’éditeur) ?
 * Recherchez des exceptions dans la `error.log` AEM de l’instance de création.
    * Le problème le plus courant est l’échec du composant de page avec des erreurs 404.
    * `config.json or paths.json` ne peut pas être chargé

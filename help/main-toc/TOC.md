@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
+source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
 workflow-type: tm+mt
-source-wordcount: '6091'
-ht-degree: 99%
+source-wordcount: '6094'
+ht-degree: 98%
 
 ---
 
@@ -990,10 +990,11 @@ ht-degree: 99%
       + [Gestion des données taxonomiques](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [Blocs WYSIWYG et basés sur des documents](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Pages avec ressources DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Réutilisation du code sur plusieurs sites](/help/edge/wysiwyg-authoring/repoless.md)
       + [Gestion de plusieurs sites sans référentiel](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Environnements d’évaluation et de production sans référentiel](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Configuration de l’authentification de site](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
       + [Métadonnées en bloc](/help/edge/docs/bulk-metadata.md)
