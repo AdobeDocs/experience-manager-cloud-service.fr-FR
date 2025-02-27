@@ -3,13 +3,11 @@ title: Éditeur universel pour Edge Delivery Services for Forms
 description: Utilisez l’éditeur universel pour Edge Delivery Services for Forms afin de créer un Forms adaptatif.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 72%
+source-wordcount: '1087'
+ht-degree: 70%
 
 ---
 
@@ -47,14 +45,14 @@ Voici la disposition avec des cartes à largeur égale (utilisant des colonnes �
 | [**Style**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Services De Préremplissage** (Bientôt Disponible) | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | L’utilisation de styles CSS permet aux développeurs et aux développeuses de personnaliser l’aspect des éléments de formulaire et de créer une conception attrayante sur le plan visuel, en harmonie avec l’esthétique du site web. | Les services de préremplissage renseignent automatiquement les champs de formulaire avec des données d’utilisateurs ou d’utilisatrices pertinentes provenant de diverses sources, ce qui réduit la saisie manuelle et améliore l’expérience d’utilisation. | Les tests A/B permettent aux entreprises de tester différentes conceptions, dispositions et fonctionnalités de formulaire afin d’identifier les variantes les plus performantes. |
 
-| ![Analytics et tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Gestion des tâches](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Liaison de données](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analytics et tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![ Fragments de formulaire ](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Liaison de données](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics et tracking**](https://www.aem.live/developer/martech-integration) | **Gestion Des Tâches** (Bientôt Disponible) | **Liaison De Données** (Bientôt Disponible) |
-| Obtenez des informations sur le comportement des utilisateurs et utilisatrices, les interactions des formulaires et les taux d’envoi grâce aux analyses et au tracking intégrés pour permettre une optimisation des formulaires pilotée par les données. | L’intégration à Adobe Workfront permet aux équipes de gérer les tâches de création et de maintenance des formulaires, tout en garantissant des workflows rationalisés. | La liaison de données permet des connexions directes entre les champs de formulaire et les sources de données principales, ce qui permet la mise à jour en temps réel et le mappage de données avancé. |
+| [**Analytics et tracking**](https://www.aem.live/developer/martech-integration) | **Fragments De Formulaire** (Bientôt Disponible) | **Liaison De Données** (Bientôt Disponible) |
+| Obtenez des informations sur le comportement des utilisateurs et utilisatrices, les interactions des formulaires et les taux d’envoi grâce aux analyses et au tracking intégrés pour permettre une optimisation des formulaires pilotée par les données. | Les fragments de formulaire permettent la réutilisation en permettant de créer une seule fois des sections couramment utilisées et de les réutiliser dans plusieurs formulaires, ce qui garantit la cohérence et réduit les efforts de maintenance. | La liaison de données permet des connexions directes entre les champs de formulaire et les sources de données principales, ce qui permet la mise à jour en temps réel et le mappage de données avancé. |
 
 | ![ CAPTCHA ](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Intégration de Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuration de remerciement](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Intégration de Forms** | [**Configuration de remerciement**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Intégration De Forms** (Bientôt Disponible) | [**Configuration de remerciement**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Utilisez reCAPTCHA pour protéger les formulaires contre les robots automatisés, en assurant une collecte de données sécurisée et fiable. | Incorporez des formulaires directement dans des pages Edge Delivery Services Sites à l’aide du composant intégré de l’éditeur universel. | Personnalisez facilement le message ou la page d’accusé de réception affiché aux utilisateurs et utilisatrices après l’envoi du formulaire. |
 
 
