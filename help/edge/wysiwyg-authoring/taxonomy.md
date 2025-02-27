@@ -4,10 +4,10 @@ description: Découvrez comment gérer les données taxonomiques pour utiliser d
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ Le balisage est une fonctionnalité importante qui vous aide à organiser et à 
 Ces balises s’avèrent utiles non seulement pour vous et les personnes chargées de la création dans l’organisation de votre contenu, mais également pour vos lecteurs et lectrices. Les balises et leur taxonomie peuvent être utilisées dans les composants de la page pour aider vos lecteurs et lectrices à parcourir votre contenu.
 
 L’éditeur universel fonctionne uniquement avec les identifiants de vos balises. En créant une page de taxonomie pour votre contenu, vous exposez les descriptions de ces balises dans toutes les langues à l’éditeur universel afin qu’il puisse utiliser ces informations lors du rendu du contenu.
+
+>[!TIP]
+>
+>Consultez le document [Définitions de modèle, champs et types de composants](/help/implementing/universal-editor/field-types.md) pour plus d’informations sur le champ de balise AEM disponible pour l’éditeur universel, qui peut fonctionner avec votre taxonomie.
 
 ## Création d’une page de taxonomie {#creating}
 
