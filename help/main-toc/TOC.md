@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '6193'
+source-wordcount: '6195'
 ht-degree: 95%
 
 ---
@@ -1024,6 +1024,7 @@ ht-degree: 95%
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + [Comment fonctionne Edge Delivery Services Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + {#getting-started-edge-delivery-services-forms} de création basée sur des documents
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Comment créer Forms à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
@@ -1043,7 +1044,7 @@ ht-degree: 95%
          + [Créer des composants de formulaire personnalisés : guide du développeur](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveiller les performances des formulaires : Guide de surveillance en utilisation réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
          + [Déploiement de Forms sur Edge : Guide de publication pour Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
-      + WYSIWYG {#universal-editor}
+      + Création WYSIWYG {#universal-editor}
          + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Comment créer votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

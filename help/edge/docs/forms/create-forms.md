@@ -4,10 +4,10 @@ description: Créez rapidement des formulaires parfaits. ⚡ Création basée su
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Ces formulaires envoient directement les données vers un fichier Microsoft Exc
 
 Avant de commencer, vérifiez que vous avez déjà effectué les étapes suivantes :
 
-* Configurez un projet AEM [à l’aide de la norme AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [bloc de Forms adaptatif ajouté à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et clonez le référentiel GitHub correspondant sur votre ordinateur local.
+* Vous avez configuré un [projet AEM à l’aide du modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouté un bloc de formulaires adaptatifs à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloné le référentiel GitHub correspondant sur votre ordinateur local.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Assurez-vous d’avoir accès à Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
@@ -64,7 +64,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 Plutôt que de recourir à des processus complexes, il est possible de créer facilement un formulaire à l’aide d’une feuille de calcul. Vous pouvez définir les lignes et les colonnes qui constitueront la structure du formulaire. Chaque ligne représente un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components) individuel et les en-têtes de colonne définissent les [propriétés du champ](/help/edge/docs/forms/form-components.md#components-properties) correspondantes.
 
-Prenons l’exemple de la feuille de calcul suivante, dans laquelle les champs de contour de lignes pour une feuille de calcul [d’interrogation](/help/edge/assets/enquiry.xlsx) et les en-têtes de colonne définissent leurs propriétés :
+Prenons l’exemple de la feuille de calcul suivante, dans laquelle les lignes correspondent aux champs d’une feuille de calcul [enquiry](/help/edge/assets/enquiry.xlsx) et les en-têtes de colonne définissent leurs propriétés :
 
 ![Feuille de calcul de demande](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -78,11 +78,11 @@ Pour poursuivre la création du formulaire :
 
 1. Assurez-vous que la feuille est partagée avec la personne appropriée utilisant AEM (par exemple, `forms@adobe.com`) [conformément aux configurations spécifiées pour votre projet](https://www.aem.live/docs/setup-customer-sharepoint). Octroyez à l’utilisateur ou l’utilisatrice l’autorisation de modification de la feuille.
 
-1. Ouvrez la feuille de calcul créée et renommez la feuille par défaut en « shared-aem ».
+1. Ouvrez la feuille de calcul créée et renommez la feuille par défaut en « shared-aem ».
 
    ![Renommage de la feuille par défaut en « shared-default »](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Pour ajouter les champs de formulaire, insérez des lignes et des en-têtes de colonne dans la feuille « shared-aem ». Chaque ligne doit représenter un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components), avec des en-têtes de colonne définissant les [propriétés](/help/edge/docs/forms/form-components.md#components-properties) du champ correspondantes.
+1. Pour ajouter les champs du formulaire, insérez les lignes et les en-têtes de colonne dans la feuille « shared-aem ». Chaque ligne doit représenter un [champ de formulaire](/help/edge/docs/forms/form-components.md#available-components), avec des en-têtes de colonne définissant les [propriétés](/help/edge/docs/forms/form-components.md#components-properties) du champ correspondantes.
 
 
    Pour un démarrage rapide, pensez à copier le contenu de la [feuille de calcul de demande](/help/edge/assets/enquiry.xlsx) dans votre feuille de calcul. Après avoir copié le contenu, enregistrez votre feuille de calcul.
@@ -105,7 +105,7 @@ Pour poursuivre la création du formulaire :
    * `<repository>` indique votre référentiel GitHub.
    * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le compte « wknd form » et que vous utilisez la branche « main », l’URL ressemble à ce qui suit :
+   Par exemple, si le référentiel de votre projet est nommé « wefinance », qu’il se trouve dans le compte « wkndform » et que vous utilisez la branche « main », l’URL ressemble à ceci :
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
 &lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
@@ -113,7 +113,7 @@ Pour poursuivre la création du formulaire :
 
 +++
 
-+++ Étape 2 : prévisualisez le formulaire à l’aide de votre page Edge Delivery Services (EDS).
++++ Étape 2 : prévisualiser le formulaire à l’aide de votre page Edge Delivery Services.
 
 
 À ce stade, vous avez préparé la structure du formulaire. Maintenant, pour prévisualiser le formulaire :

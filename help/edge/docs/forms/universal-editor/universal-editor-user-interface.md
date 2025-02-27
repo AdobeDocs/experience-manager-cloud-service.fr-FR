@@ -4,16 +4,16 @@ description: Ce tutoriel vous aide à maîtriser l’interface de l’éditeur u
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
 
 # Exploration de l’interface de l’éditeur universel (WYSIWYG)
 
-L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offre une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive pour Adobe Edge Delivery Services (EDS) Forms. Il fournit une interface moderne avec une fonctionnalité de glisser-déposer pour une création de formulaire efficace.
+L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offre une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive pour Adobe Edge Delivery Services Forms. Il fournit une interface moderne avec une fonctionnalité de glisser-déposer pour une création de formulaire efficace.
 
 ![ Interface utilisateur de l’éditeur universel ](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 

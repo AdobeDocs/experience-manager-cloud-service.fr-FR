@@ -4,16 +4,16 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # Prise en main - Tutoriel pour l’équipe de développement
 
-À l’ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. Edge Delivery Services (EDS) pour AEM Forms vous permet de créer des formulaires à l’aide d’outils courants tels que Google Docs et Microsoft Office.
+À l’ère numérique actuelle, la création de formulaires conviviaux est essentielle pour toute entreprise. Edge Delivery Services pour AEM Forms vous permet de créer des formulaires à l’aide d’outils familiers tels que Google Docs et Microsoft Office.
 
 Ces formulaires envoient directement les données vers un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser l’écosystème dynamique et les API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou pour démarrer un workflow d’entreprise existant.
 
@@ -59,7 +59,7 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
    >[!NOTE]
    >
    >
-   > Si vous utilisez GitHub Enterprise avec le filtrage d’adresses IP, vous pouvez ajouter l’adresse IP suivante à la liste autorisée : 3.227.118.73.
+   > Si vous utilisez GitHub Enterprise avec le filtrage IP, vous pouvez ajouter l’adresse IP suivante au place sur la liste autorisée : 3.227.118.73
 
    Félicitations. Vous avez désormais un nouveau site web en cours d’exécution dans `https://<branch>--<repo>--<owner>.aem.page/`.
 

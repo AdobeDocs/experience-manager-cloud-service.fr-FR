@@ -3,10 +3,11 @@ title: Présentation de l’éditeur universel - Mode réactif
 description: Cet article explique comment prévisualiser des formulaires à l’aide de différents émulateurs dans l’éditeur universel pour visualiser leur aspect lors de la création.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -66,6 +67,54 @@ L’éditeur universel fournit différents émulateurs pour prévisualiser les f
 </table>
 
 Vous pouvez utiliser l’icône **Rotateur d’écran** pour basculer entre les orientations portrait et paysage lors de la prévisualisation d’un formulaire sur différents appareils. Il permet aux développeurs de tester la manière dont le responsive design s’adapte aux rotations d’écran sur différents appareils.
+
+L’éditeur universel prend en charge les différentes dispositions de formulaire. Pour découvrir les différentes mises en page, reportez-vous à la section [Fonctionnalités de mise en page](#layout-capabilities).
+
+## Fonctionnalités de disposition
+
+L’éditeur universel vous permet de créer des formulaires simples d’utilisation qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition du formulaire contrôle l’affichage des éléments ou des composants dans un formulaire.
+
+L’éditeur universel prend en charge les types de disposition suivants pour les formulaires :
+* [Disposition de panneau](#panel-layout)
+* [Disposition Assistant](#wizard-layout)
+* [Disposition en accordéon](#accordion-layout)
+
+### Disposition de panneau
+
+La disposition des panneaux est utile pour organiser les champs associés de manière à faciliter la navigation et la recherche du contenu correspondant. La disposition des panneaux organise les composants de formulaire en sections ou panneaux distincts dans les formulaires.
+
+![Disposition de panneau](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+Vous pouvez utiliser le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition du panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+
+### Disposition Assistant
+
+
+La disposition « Assistant » permet de simplifier un formulaire complexe en le divisant en étapes distinctes. Chaque étape représente une partie différente du processus et les utilisateurs et utilisatrices naviguent de manière séquentielle parmi les étapes, souvent avec les boutons **Suivant** et **Précédent**. Vous pouvez utiliser la disposition Assistant pour créer un formulaire qui implique plusieurs sections ou étapes.
+
+![Disposition Assistant](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+
+### Disposition Accordéon
+
+La disposition en accordéon affiche le contenu dans des sections ou des panneaux réductibles d’un formulaire adaptatif. Lorsqu’une section est développée, elle affiche le contenu dans , tandis que les autres sections restent réduites. Cette disposition est idéale pour afficher de grandes quantités d’informations sous une forme compacte.
+
+![Disposition Accordéon](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+Vous pouvez utiliser le [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+
+### Comment choisir la bonne mise en page ?
+
+Il est important de sélectionner la disposition appropriée pour optimiser l’expérience utilisateur et les fonctionnalités de formulaire. Le tableau ci-dessous vous aide à comprendre les différentes options de mise en page disponibles et vous guide dans le choix de la mise en page la plus adaptée en fonction de vos besoins et cas d’utilisation spécifiques :
+
+| Fonctionnalité | Disposition de panneau | Disposition Assistant | Disposition Accordéon |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Objectif** | Regroupe les contenus associés dans des sections distinctes | Guide les utilisateurs et utilisatrices à travers un processus ou un formulaire à plusieurs étapes | Organise le contenu en sections réductibles |
+| **Structure** | Sections distinctes | Étapes/pages séquentielles | Panneaux/sections réductibles |
+| **Navigation** | Cliquez sur les en-têtes du panneau pour naviguer | - En avant : bouton « Suivant » <br>- En arrière : bouton « Précédent » <br>- Étapes facultatives à ignorer | Cliquez sur les en-têtes pour développer/réduire les sections. |
+| **Expérience utilisateur** | Organise de grandes quantités de contenu de manière gérable. | Conseils détaillés pour réduire la surcharge | Mode compact avec sections développées/réduites |
+| **Cas d’utilisation** | Formulaires complexes avec sections classées | Processus de configuration, formulaires complexes | Questions fréquentes, menus de paramètres, sections de contenu détaillées |
 
 ## Voir également
 

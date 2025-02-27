@@ -1,8 +1,8 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 97%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 # Fragments de code {#snippets}
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## Éditeur universel{#universal-editor-see-also}
 
-* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Publier votre formulaire](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Envoyer le formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Création de règles pour votre formulaire](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Utilisation de reCAPTCHA dans votre formulaire](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Créer un composant personnalisé pour votre formulaire](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Aperçu du formulaire en mode réactif](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [Créer Votre Premier Formulaire À L’Aide De L’Éditeur Universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Ajout d’un comportement dynamique à Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publication et déploiement de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms : guide de style et de thème](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Créer des composants de formulaire personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Voir également {#see-more-forms-eds}
 
