@@ -2,7 +2,7 @@
 title: Explorer Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Procédez comme suit pour configurer Content Hub pour votre équipe :
 
 1. [Ressources approuvées dans Experience Manager Assets en tant qu’auteur ou administrateur de gestion des ressources numériques](approve-assets.md).
 
-1. [Configurer l’interface utilisateur de Content Hub pour d’autres utilisateurs en tant qu’administrateur](configure-content-hub-ui-options.md)..
+1. [Configurez l’interface utilisateur de Content Hub pour d’autres utilisateurs en tant qu’administrateur](configure-content-hub-ui-options.md).
 
 1. [Accordez l’accès à Content Hub à d’autres utilisateurs et utilisatrices de l’équipe](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
