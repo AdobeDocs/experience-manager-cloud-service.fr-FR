@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 6%
+source-wordcount: '2657'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ Cet éditeur fournit les éléments suivants :
 * [Chargement en ligne des ressources en tant que références de contenu](#reference-images) sans avoir à les charger au préalable dans la gestion des ressources numériques.
 * [Générer des variations](#generate-variations-ai) pour utiliser l’IA dédiée à la génération afin d’accélérer la création de contenu en fonction des invites.
 * [Aperçu](#preview-content-fragment) de l’expérience rendue fournie par le fragment de contenu.
-* Possibilité de [Publish](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment) à partir de l’éditeur.
+* Possibilité de [Publier](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment) à partir de l’éditeur.
 * Possibilité d’[afficher et ouvrir des copies de langue associées](#view-language-copies) dans l’éditeur.
 * Possibilité d’[afficher les détails de la version](#view-version-history) dans l’éditeur. Vous pouvez également revenir à une version sélectionnée.
 * Possibilité d’[afficher et ouvrir les références parentes](#view-parent-references).
@@ -51,7 +51,7 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
    * lien vers la console de fragments de contenu (icône Accueil)
    * informations sur le modèle et le dossier
    * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * Actions [Publish](#publish-content-fragment) et [Dépublier](#unpublish-content-fragment)
+   * [Publication](#publish-content-fragment) et [Dépublication](#unpublish-content-fragment)
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
    * bascule pour passer à l’éditeur d’origine (basé sur les ressources)
@@ -95,7 +95,7 @@ Dans le panneau de gauche, vous pouvez voir :
 
 * la liste des **[variations](#variations)** qui ont été créées pour ce fragment :
    * **Principal** est la variation présente lors de la création initiale du fragment de contenu ; vous pouvez en ajouter d’autres ultérieurement
-   * vous pouvez utiliser Generate Variations(#generate-variations) pour utiliser un modèle basé sur une invite que Adobe a créé pour un cas d’utilisation spécifique.
+   * vous pouvez utiliser Generate Variations(#generate-variations) pour utiliser un modèle basé sur une invite créé par Adobe pour un cas d’utilisation spécifique.
    * vous pouvez également [créer une variation](#create-variation)
 * le **Champs** au sein du fragment et ses variantes :
    * l’icône indique le [type de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -126,13 +126,13 @@ Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’é
 
 ## Variations {#variations}
 
-Les [variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sont une fonction importante des fragments de contenu AEM. Ils vous permettent de créer et de modifier des copies du contenu **Principal** à utiliser sur des canaux et scénarios spécifiques, ce qui rend la diffusion de contenu découplé et la création de pages encore plus flexibles.
+Les [variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) sont une fonctionnalité importante des fragments de contenu AEM. Ils vous permettent de créer et de modifier des copies du contenu **Principal** à utiliser sur des canaux et scénarios spécifiques, ce qui rend la diffusion de contenu découplé et la création de pages encore plus flexibles.
 
 L’éditeur vous permet d’effectuer les opérations suivantes :
 
 * [Créer des variations](#create-variation) du contenu **Principal**
 
-* [Utilisez Generate Variations AI](#generate-variations-ai) pour utiliser Generative AI afin d’utiliser un modèle basé sur une invite que Adobe a créé pour un cas d’utilisation spécifique.
+* [Utilisez Generate Variations AI](#generate-variations-ai) pour utiliser Generative AI afin d’utiliser un modèle basé sur des invites créé par Adobe pour un cas d’utilisation spécifique.
 
 * Sélectionnez la variation requise pour modifier le contenu
 
@@ -174,40 +174,9 @@ Pour renommer une **variation** :
 
 Utilisez les variations génératives pour tirer parti de l’IA générative afin d’accélérer la création de contenu.
 
-Pour utiliser les variations génératives dans l’éditeur de fragment de contenu :
+Ouvrez l’éditeur de fragment de contenu pour trouver le point d’entrée afin de générer des variations.
 
-1. Ouvrez l’éditeur de fragment de contenu. Dans l’en-tête, vous trouverez le point d’entrée pour Générer des variations :
-
-   ![Générer des variations dans l’éditeur de fragment de contenu](assets/cfm-generate-variations1.png)
-
-1. Générer des variations s’ouvre dans un nouvel onglet. Dans le rail de gauche, vous pouvez voir l’instance AEM Cloud et le fragment de contenu pour lequel vous créez du contenu. Sélectionnez l’invite à utiliser ou créez-en une.
-
-   >[!NOTE]
-   >
-   >Les modèles d’invite d’Adobe disponibles sont actuellement limités, mais d’autres seront ajoutés dans les prochaines versions.
-
-   ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations2.png)
-
-1. Générez du contenu en remplissant les invites. Le modèle de contenu du fragment sera automatiquement utilisé pour générer du contenu à l’aide de GenAI.
-
-   >[!NOTE]
-   >
-   >Actuellement, seuls les champs de texte sont pris en charge.
-
-   ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations3.png)
-
-1. Sélectionnez la variante générée de votre choix et sélectionnez « Exporter la variation ». Confirmez le nom de la variation de fragment de contenu et sélectionnez l’une des options suivantes :
-
-   * **Exporter** : permet d’exporter une variation vers le fragment de contenu et de rester dans l’application Generate Variation.
-   * **Exporter et ouvrir** : exportez la variation dans le fragment de contenu et ouvrez un nouvel onglet qui affiche le fragment de contenu avec la nouvelle variation de GenAI.
-
-     ![Exporter pour générer des variations dans le fragment de contenu](assets/cfm-generate-variations4.png)
-
-1. Les variations générées s’affichent dans l’éditeur de fragment de contenu principal.
-
-   ![Affichage Générer des variations dans le fragment de contenu](assets/cfm-generate-variations5.png)
-
-Voir [Générer des variations](/help/generative-ai/generate-variations.md) pour en savoir plus.
+Voir [ Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md) pour en savoir plus.
 
 ### Suppression d’une variation {#delete-variation}
 
@@ -364,7 +333,7 @@ Pour ajouter une ressource, vous pouvez effectuer l’une des opérations suivan
 
 #### Pages de référence {#reference-pages}
 
-Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu similaires :
+Pour ajouter des références à des pages AEM, des fragments d’expérience ou d’autres types de contenu de ce type :
 
 1. Sélectionnez **Ajouter un chemin de contenu**.
 
@@ -506,12 +475,12 @@ Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 Lorsque l’URL a été définie, le bouton **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
 
-## Publish de votre fragment {#publish-content-fragment}
+## Publier votre fragment {#publish-content-fragment}
 
-Vous pouvez **Publish** votre fragment vers votre :
+Vous pouvez **Publier** votre fragment vers votre :
 
 * Aperçu de l’instance
-* Instance Publish
+* Instance de publication
 
 Vous pouvez publier le fragment à partir de l’éditeur ou de la console. Voir [ Publication et prévisualisation d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
@@ -520,7 +489,7 @@ Vous pouvez publier le fragment à partir de l’éditeur ou de la console. Voir
 Vous pouvez également **Dépublier** votre fragment à partir de votre :
 
 * Aperçu de l’instance
-* Instance Publish
+* Instance de publication
 
 Vous pouvez dépublier votre fragment à partir de l’éditeur ou de la console. Voir [ Dépublication d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 

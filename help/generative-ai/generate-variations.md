@@ -4,10 +4,10 @@ description: En savoir plus sur Générer des variations, accessible à partir d
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ Vous pouvez [accéder à Générer des variations](#access-generate-variations) 
 >[!NOTE]
 >
 >Dans tous les cas, pour utiliser Générer des variations, vous devez vous assurer de remplir les [conditions d’accès préalables](#access-prerequisites).
+
+>[!NOTE]
+>
+>Vous pouvez également accéder à [Générer des variations intégrées aux éditeurs d’AEM](/help/generative-ai/generate-variations-integrated-editor.md).
 
 Vous pouvez ensuite :
 
@@ -177,7 +181,7 @@ Ici, vous pouvez placer le pointeur de la souris sur l’image pour afficher les
 
 >[!NOTE]
 >
->Les [informations de traçabilité du contenu](https://helpx.adobe.com/fr/creative-cloud/help/content-credentials.html) ne sont pas conservées lorsqu’elles sont utilisées pour une création basée sur des documents.
+>Les [Content Credentials](https://helpx.adobe.com/fr/creative-cloud/help/content-credentials.html) ne sont pas conservées lorsqu’elles sont utilisées pour une création basée sur des documents.
 
 ### Utilisation du contenu {#use-content}
 
