@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ La configuration d’un référentiel GitHub privé dans Cloud Manager se compos
 1. [Ajoutez un référentiel GitHub privé](#add-repo) à un programme sélectionné.
 1. Ensuite, [vérifiez la propriété du référentiel GitHub privé](#validate-ownership).
 
+>[!NOTE]
+>Cloud Manager prend uniquement en charge les référentiels privés sur GitHub Cloud (github.com). <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### Ajouter un référentiel GitHub privé à un programme {#add-repo}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
@@ -68,7 +71,6 @@ Vous pouvez désormais [valider la propriété du référentiel privé](#validat
 >[!TIP]
 >
 >Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, consultez le document [Référentiels Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
-
 
 
 ### Validation de la propriété d’un référentiel GitHub privé {#validate-ownership}
