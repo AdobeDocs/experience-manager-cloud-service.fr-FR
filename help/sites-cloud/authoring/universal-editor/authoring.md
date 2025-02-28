@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1410'
 ht-degree: 19%
 
 ---
@@ -177,6 +177,14 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 >[!NOTE]
 >
 >Les composants ne peuvent pas être déplacés entre les conteneurs si un [filtre de composant](/help/implementing/universal-editor/filtering.md) différent est défini entre les conteneurs source et cible.
+
+### Créer des variations à l’aide de GenAI avec Générer des variations {#generate-variations-ai}
+
+Utilisez les variations génératives pour tirer parti de l’IA générative afin d’accélérer la création de contenu.
+
+Ouvrez l’éditeur universel pour trouver le point d’entrée afin de générer des variations.
+
+Voir [ Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md) pour en savoir plus.
 
 ## Prévisualisation du contenu {#previewing-content}
 
