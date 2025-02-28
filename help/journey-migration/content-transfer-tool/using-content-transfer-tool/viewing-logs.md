@@ -4,7 +4,7 @@ description: Affichage des journaux d’un jeu de migration dans l’outil de tr
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 83%
@@ -33,13 +33,13 @@ Suivez ensuite les étapes ci-dessous :
 
 1. Sélectionnez un jeu de migration et cliquez sur **Afficher le journal** dans la barre d’actions. La boîte de dialogue Journaux s’affiche. Cliquez sur **Journaux d’extraction** pour afficher les journaux dans un nouvel onglet.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    Ou cliquez sur le statut **TERMINÉ** pour afficher les journaux dans un nouvel onglet.
 
 1. Pour consulter les dernières lignes des journaux sans utiliser l’interface utilisateur, vous pouvez vous connecter à votre environnement AEM source via SSH et exécuter la commande tail sur le fichier `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Journaux d’ingestion
 
-Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**) de la tâche. Vous pouvez ensuite cliquer sur **Télécharger le journal** pour télécharger les journaux.
+Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager, puis recherchez la tâche de migration souhaitée et cliquez sur les trois points (**...**). Vous pouvez ensuite cliquer sur **Télécharger le journal** pour télécharger les journaux.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

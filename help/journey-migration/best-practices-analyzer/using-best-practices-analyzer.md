@@ -1,13 +1,13 @@
 ---
 title: Utilisation de l’analyseur des bonnes pratiques
-description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour comprendre la préparation à la mise à niveau.
+description: Découvrez comment utiliser l’analyseur de bonnes pratiques pour comprendre le degré de préparation à la mise à niveau.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 80%
+source-wordcount: '2796'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
 
   >[!NOTE]
-  >Pour éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur un environnement *Stage* aussi proche que possible de l’environnement *Production* dans les domaines de la personnalisation, de la configuration, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+  >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA dans un environnement *d’évaluation* aussi proche que possible de l’environnement *de production* en ce qui concerne la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu des rapports BPA peut nécessiter un temps important, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
@@ -55,7 +55,7 @@ Il est possible de télécharger l’analyseur des bonnes pratiques dans un fich
 
 ## Connectivité de l’environnement source {#source-environment-connectivity}
 
-L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour charger automatiquement le rapport généré par l’application sur une seule page vers Cloud Acceleration Manager avec succès, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
+L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour charger automatiquement le rapport généré par BPA vers Cloud Acceleration Manager, les points d’entrée suivants doivent être accessibles à partir de l’instance qui exécute AEM :
 
 * Le service de stockage d’objets blob Azure : `casstorageprod.blob.core.windows.net`
 
@@ -75,42 +75,56 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![Analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Cliquez sur **Générer le rapport** pour exécuter l’analyseur des bonnes pratiques.
+1. Cliquez sur **Générer un rapport** pour exécuter l’analyseur des bonnes pratiques.
 
-   ![Générer le rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
-
-1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’ [analyse des bonnes pratiques dans CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
-
-   ![Définir la clé de téléchargement BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![Générer un rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 >[!NOTE]
->Vous avez la possibilité d’ignorer le téléchargement automatique vers le mode CAM en sélectionnant **Ignorer le téléchargement automatique du rapport vers le mode CAM**. Si vous choisissez d’ignorer, vous devrez télécharger manuellement le rapport BPA sous la forme d’un fichier de valeurs séparées par des virgules, puis télécharger le fichier dans CAM. Il est recommandé d’utiliser l’option de clé de chargement , car elle simplifie l’opération.
+> À partir de la version 2.1.54 de BPA, une nouvelle fonctionnalité a été introduite pour obtenir le score Lighthouse.
+1. Après avoir cliqué sur **Générer le rapport**, un pop-up s’affiche pour demander l’URL du site public AEM pour le score Lighthouse. L’utilisateur doit saisir une URL valide dans le champ fourni.
+
+   ![Image](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. Si l’URL est valide, un message de réussite s’affiche.
+
+      ![Image](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. Si l’URL n’est pas valide, un message d’erreur s’affiche.
+
+      ![Image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
+
+1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[ Analyse des bonnes pratiques dans CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+
+   ![Définir la clé de chargement BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>Vous avez la possibilité d’ignorer le chargement automatique vers CAM en sélectionnant **Ignorer le chargement automatique du rapport vers CAM**. Si vous choisissez d’ignorer cette étape, vous devez télécharger manuellement le rapport BPA sous la forme d’un fichier de valeurs séparées par des virgules, puis charger le fichier dans CAM. Il est recommandé d’utiliser l’option Charger la clé , car elle simplifie l’opération.
 
 >[!IMPORTANT]
->Lors d’un chargement manuel au format CAM, la taille des rapports est limitée à environ 200 Mo. Pour les rapports plus volumineux, vous devez utiliser le téléchargement automatique.
+>Lors du chargement manuel vers CAM, les tailles des rapports sont limitées à environ 200MB. Pour les rapports plus volumineux, vous devez utiliser le chargement automatique.
 
-1. Le bouton **Générer** devient actif lorsqu’une clé valide est fournie. Cliquez sur **Générer** pour lancer la génération de rapports.
+1. Le bouton **Générer** devient actif lorsqu’une clé valide est fournie. Cliquez sur **Générer** pour lancer la génération du rapport.
 
-   ![Générer le rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+   ![Générer un rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
-1. Pendant que BPA génère le rapport, vous pouvez afficher l’avancée de l’outil à l’écran. Il affiche la progression en termes de pourcentage achevé. Il affiche également le nombre d’éléments analysés et le nombre de résultats trouvés.
+1. Pendant que BPA génère le rapport, vous pouvez afficher l’avancée de l’outil à l’écran. Il affiche la progression en termes de pourcentage d’achèvement. Il affiche également le nombre d’éléments analysés et le nombre de résultats trouvés.
 
-   ![Génération d’un rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![Génération du rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
->L’horodatage d’expiration de la clé de chargement BPA s’affiche dans le coin supérieur droit. Vous devez renouveler la clé de chargement BPA à l’expiration proche. Pour renouveler la clé, vous pouvez cliquer sur **Renouveler** pour accéder à l’instance CAM afin de renouveler la clé.
+>La date et l’heure d’expiration de la clé de chargement BPA s’affichent dans le coin supérieur droit. Vous devez renouveler la clé de chargement BPA lorsqu’elle approche de son expiration. Pour renouveler la clé, vous pouvez cliquer sur **Renouveler** pour accéder à CAM afin de renouveler la clé.
 
-1. Une fois le rapport BPA généré, il affiche un résumé et le nombre de résultats sous forme de tableau organisé selon le type de résultat et le niveau d’importance. Pour plus d’informations sur un résultat spécifique, vous pouvez cliquer sur le nombre correspondant au type de résultat dans le tableau.
+1. Une fois le rapport BPA généré, il affiche un résumé et le nombre des résultats sous forme de tableau organisé par type de résultat et niveau d’importance. Pour obtenir plus de détails sur un résultat donné, vous pouvez cliquer sur le nombre correspondant au type de résultat du tableau.
 
-   ![Aperçu du rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![Présentation du rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **Exporter au format CSV**. Vous avez également la possibilité d&#39;afficher le rapport dans CAM en cliquant sur **Accéder à CAM**. Vous accédez alors à la page [Bonnes pratiques d’analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) de la CAM.
+1. Vous avez la possibilité de télécharger le rapport au format CSV (valeurs séparées par des virgules) en cliquant sur **Exporter au format CSV**. Vous avez également la possibilité d’afficher le rapport dans CAM en cliquant sur **Accéder à CAM**. Vous accédez alors à la page [Analyse des bonnes pratiques](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) dans CAM.
 
 Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à générer de nouveau le rapport en cliquant sur **Actualiser le rapport**.
 
 ![Actualiser le rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Si le cache arrive à expiration, vous avez la possibilité de visualiser le dernier rapport généré dans CAM en cliquant sur **Afficher le dernier rapport généré dans CAM** ou lancer une nouvelle génération de rapport en cliquant sur **Générer un nouveau rapport**.
+1. Si le cache expire, vous avez la possibilité d’afficher le dernier rapport généré dans CAM en cliquant sur **Afficher le dernier rapport généré dans CAM** ou d’en lancer une nouvelle génération en cliquant sur **Générer un nouveau rapport**.
 
 ![Aucun rapport](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
@@ -119,7 +133,7 @@ Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à
 
 Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), procédez comme suit :
 
-1. Cliquez sur l’icône de rail gauche dans la partie gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
+1. Cliquez sur l’icône du rail de gauche sur le côté gauche de la page. Cela affichera le **filtre ACS Commons**. Cliquez sur le **filtre ACS Commons** pour afficher la case à cocher interactive comme illustré dans l’image ci-dessous.
 
    ![Filtre ACS Commons](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
@@ -128,7 +142,7 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
 
 1. Désélectionnez la case pour filtrer tous les résultats liés à ACS Commons. Un **nombre de résultats filtrés** devrait s’afficher sur le rapport, comme illustré dans l’image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
 
-   ![ {Filtered Finding Count](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![ Nombre de résultats filtrés ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
@@ -185,7 +199,7 @@ Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV
 
 Si le cache a atteint son délai d’expiration, le rapport est de nouveau généré avant la création et le téléchargement du fichier CSV.
 
-Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance. Son format est adapté pour permettre l’affichage et la modification dans une application comme Microsoft Excel. Il est prévu de fournir toutes les informations sur les résultats sous une forme reproductible, ce qui peut s’avérer utile lors de la comparaison des rapports au fil du temps afin de mesurer les progrès réalisés.
+Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance. Son format est adapté pour permettre l’affichage et la modification dans une application comme Microsoft Excel. Il est destiné à fournir toutes les informations de recherche dans un format répétable qui peut être utile lors de la comparaison de rapports au fil du temps pour mesurer les progrès.
 
 Les colonnes du rapport au format CSV sont les suivantes :
 
