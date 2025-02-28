@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -49,8 +49,8 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | Champ | Description |
    | --- | --- |
    | **Nom du référentiel** | Obligatoire. Nom expressif pour votre nouveau référentiel. |
-   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br> Si vous utilisez un référentiel hébergé par GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
-   | S **Select Repository Type** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez : **GitHub**, **GitLab** ou **BitBucket**. Si le chemin d’accès de l’URL du référentiel ci-dessus inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné. |
+   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
+   | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez : **GitHub**, **GitLab** ou **BitBucket**. Si le chemin d’accès de l’URL du référentiel ci-dessus inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné. |
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
@@ -64,7 +64,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | --- | --- |
    | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
    | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>• Autorisations requises : <br> • `Read access to metadata`.<br> • `Read and write access to code and pull requests`.<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).<br>• Autorisations requises :<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>• Autorisations requises :<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
    |  | **Type de référentiel : Bitbucket**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>• Autorisations requises :<br> • `Read and write access to code and pull requests`. |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 
 ## Limites
 
-Les référentiels externes ne peuvent pas être liés aux pipelines de configuration.
+* Les référentiels externes ne peuvent pas être liés aux pipelines de configuration.
+* Les pipelines avec des référentiels externes (non hébergés sur GitHub) et le déclencheur « Lors des modifications Git » ne démarrent pas automatiquement. Elles ne peuvent être lancées que manuellement.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
