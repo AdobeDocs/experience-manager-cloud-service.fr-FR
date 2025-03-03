@@ -8,50 +8,50 @@ hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
 source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms
+# Edge Delivery Services pour AEM Forms
 
-Adobe Edge Delivery Services Forms transforme la création, l’exécution et le traitement des formulaires. Grâce à Edge Delivery Services, les entreprises peuvent créer des formulaires numériques rapides, sécurisés et hautement disponibles, ce qui améliore l’expérience utilisateur et l’efficacité opérationnelle dans un environnement de développement rapide. Avec Edge Delivery Services Forms, vous pouvez augmenter les conversions, réduire les coûts et accélérer la diffusion de contenu.
+Adobe Edge Delivery Services pour AEM Forms révolutionne la création, l’exécution et le traitement des formulaires. Grâce à Edge Delivery Services, les entreprises peuvent créer des formulaires numériques rapides, sécurisés et hautement disponibles, afin d’améliorer l’expérience client et l’efficacité opérationnelle dans un environnement de développement rapide. Avec Edge Delivery Services pour AEM Forms, vous pouvez augmenter les conversions, réduire les coûts et accélérer la diffusion de contenu.
 
-## Avantages de Edge Delivery Services Forms
+## Avantages de Edge Delivery Services pour AEM Forms
 
-* **Création de formulaire plus rapide** : créez des formulaires hautes performances avec un score Lighthouse parfait et surveillez en permanence leurs performances en situation réelle à l’aide de la surveillance réelle de l’utilisateur (RUM).
+* **Création de formulaire plus rapide** : créez des formulaires à hautes performances avec un score Lighthouse parfait et suivez en permanence leurs performances en situation réelle dans la Surveillance des utilisateurs et utilisatrices réels (RUM).
 
-* **Processus de création rationalisé** : gérez facilement du contenu provenant de plusieurs sources pour une plus grande flexibilité. Par défaut, vous pouvez créer des formulaires à l’aide de WYSIWYG et de la création de documents, ce qui permet une intégration transparente de divers formats de contenu.
+* **Processus de création fluide** : gérez facilement du contenu provenant de plusieurs sources pour une plus grande flexibilité. Par défaut, vous pouvez créer des formulaires à l’aide de WYSIWYG et de la création basée sur des documents, ce qui permet une intégration transparente de divers formats de contenu.
 
-* **Facilité d’utilisation pour les utilisateurs n’ayant pas de connaissances techniques** : Edge Delivery Services permet aux non-programmeurs de gérer et de publier facilement des formulaires sans avoir à disposer de connaissances approfondies en matière de programmation.
+* **Facilité d’utilisation pour les personnes non techniques** : Edge Delivery Services permet aux équipes qui ne sont pas chargées du développement de gérer et de publier facilement des formulaires sans avoir à disposer de connaissances approfondies en matière de programmation.
 
-* **Amélioration de l’expérience utilisateur** : permet des temps de chargement rapides et des interactions fluides, ce qui réduit au minimum les temps d’attente et offre aux utilisateurs une expérience de remplissage de formulaires intuitive.
+* **Amélioration de l’expérience client** : permet des temps de chargement rapides et des interactions fluides, ce qui réduit au minimum les temps d’attente et offre aux utilisateurs et utilisatrices une expérience de remplissage de formulaires intuitive.
 
-* **Exécution sans serveur** : Edge Delivery Services permet l’exécution sans serveur de la logique de formulaire. Cela inclut les éléments suivants :
+* **Exécution sans serveur** : Edge Delivery Services permet l’exécution sans serveur de la logique de formulaire. Cela comprend :
 
-   * **Validation côté client** : la validation des champs de formulaire se produit côté client, ce qui réduit les délais d’aller-retour.
+   * **Validation côté client** : la validation des champs de formulaire se produit côté client, ce qui réduit les délais d’aller-retour.
 
-   * **Préremplissage et Personalization** : le préremplissage des données de formulaire est géré côté client pour une expérience utilisateur fluide.
+   * **Préremplissage et personnalisation** : le préremplissage des données de formulaire est géré côté client pour une expérience client fluide.
 
-   * **Traitement des envois** : les envois de formulaire sont validés et transférés en toute sécurité sans serveur central
+   * **Traitement des envois** : les envois de formulaire sont validés et transférés en toute sécurité sans serveur central.
 
-## Comment fonctionne Edge Delivery Services Forms ?
+## Fonctionnement d’Edge Delivery Services pour AEM Forms ?
 
-Les utilisateurs peuvent créer des Forms Edge Delivery Services à l’aide d’outils de création documentaires tels que Google Drive, SharePoint ou l’éditeur universel (création WYSIWYG), tout en exploitant les styles, comportements et composants de base disponibles dans le référentiel GitHub. Une fois la création effectuée, Edge Delivery Services Forms peut envoyer des données à n’importe quelle plateforme à l’aide du service d’envoi Forms.
+Les utilisateurs et utilisatrices peuvent créer des formulaires Edge Delivery Services pour AEM Forms à l’aide d’outils de création basés sur des documents tels que Google Drive, SharePoint ou l’éditeur universel (création WYSIWYG), tout en tirant parti des styles, comportements et composants de base disponibles dans le référentiel GitHub. Une fois la création effectuée, Edge Delivery Services pour AEM Forms peut envoyer des données à n’importe quelle plateforme à l’aide du service d’envoi de formulaires.
 
-![Fonctionnement de Edge Delivery Services Forms](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Fonctionnement d’Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Composants clés de Edge Delivery Services Forms
+### Composants clés de Edge Delivery Services pour AEM Forms
 
-Les principaux composants de Forms des services Edge Delivery sont les suivants :
+Les principaux composants d’Edge Delivery Servies pour AEM Forms sont les suivants :
 
-* **Référentiel GitHub** : le référentiel GitHub sert de référence pour la création de Forms Edge Delivery Services. Les formulaires tirent parti du style et des fonctionnalités de base du référentiel et permettent aux utilisateurs et utilisatrices d’ajouter des personnalisations et des composants personnalisés au Forms Edge Delivery Services.
+* **Référentiel GitHub** : le référentiel GitHub sert de référence pour la création de formulaires Edge Delivery Services pour AEM Forms. Les formulaires utilisent les styles et les fonctionnalités de base du référentiel et permettent aux utilisateurs et utilisatrices d’ajouter des personnalisations et des composants personnalisés aux formulaires Edge Delivery Services pour AEM Forms.
 
-* **Création de formulaires** : Edge Delivery Services Forms prend en charge deux types de création : WYSIWYG et la création basée sur des documents. La création basée sur des documents permet aux utilisateurs de créer des formulaires à l’aide d’outils familiers tels que Google Docs et Microsoft Office. La création WYSIWYG permet aux utilisateurs et utilisatrices de concevoir des formulaires visuellement à l’aide de l’éditeur universel, ce qui facilite la création et la gestion des formulaires pour les personnes n’ayant pas de connaissances techniques. L’éditeur universel offre une expérience de création de formulaire intuitive et permet d’accéder à de nombreuses fonctionnalités de formulaire.
+* **Création de formulaires** : Edge Delivery Services pour AEM Forms prend en charge deux types de création, WYSIWYG et la création basée sur des documents. La création basée sur des documents permet aux utilisateurs et utilisatrices de créer des formulaires à l’aide d’outils couramment utilisés tels que Google Docs et Microsoft Office. La création WYSIWYG permet aux utilisateurs et utilisatrices de concevoir visuellement des formulaires à l’aide de l’éditeur universel, afin de faciliter la création et la gestion des formulaires pour les personnes n’ayant pas de connaissances techniques. L’éditeur universel offre une expérience de création de formulaire intuitive et permet d’accéder à de nombreuses fonctionnalités de formulaire.
 
-* **Service d’envoi Forms** : le service d’envoi Forms vous permet de stocker les données des envois de formulaires sur n’importe quelle plateforme, telle que OneDrive, SharePoint ou Google Sheets, ce qui facilite l’accès et la gestion des données de formulaire dans votre système préféré.
+* **Service d’envoi de formulaires** : le service d’envoi de formulaires vous permet de stocker les données des envois de formulaires sur n’importe quelle plateforme, telle que OneDrive, SharePoint ou Google Sheets, ce qui facilite l’accès et la gestion des données de formulaire dans votre système préféré.
 
 ## Création d’un formulaire
 
@@ -110,7 +110,7 @@ Le tableau suivant décrit les fonctionnalités et les cas d’utilisation de ch
 >[!NOTE]
 >
 >
-> Si vous constatez des fonctionnalités manquantes dans l’éditeur universel qui étaient auparavant disponibles dans l’éditeur de formulaires adaptatifs, vous pouvez les demander en envoyant un e-mail à mailto:aem-forms-ea@adobe.com à l’aide de votre adresse e-mail officielle.
+> Si vous constatez des fonctionnalités manquantes dans l’éditeur universel qui étaient auparavant disponibles dans l’éditeur de formulaires adaptatifs, vous pouvez les demander en envoyant un e-mail à mailto:aem-forms-ea@adobe.com en utilisant votre adresse e-mail officielle.
 
 ## Voir également
 

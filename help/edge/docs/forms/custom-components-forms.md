@@ -5,20 +5,21 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Créer des composants personnalisés
+# Création de composants personnalisés
 
 Edge Delivery Services pour AEM Forms vous permet de personnaliser les [composants de formulaire HTML natifs](/help/edge/docs/forms/form-components.md) et de créer des formulaires interactifs et conviviaux. Il vous permet de modifier les composants de formulaire avec des balises prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md) à l’aide de CSS personnalisés (feuilles de style en cascade) et du code personnalisé pour la décoration du composant, améliorant ainsi l’aspect des champs de formulaire dans un bloc de formulaires adaptatifs.
 
 ![Composant personnalisé](/help/edge/assets/custom-component-image.png)
 
-Ce document décrit les étapes à suivre pour créer des composants personnalisés en mettant en forme les composants de formulaire HTML natifs afin d’améliorer l’expérience client et l’attrait visuel du formulaire.
+Ce document décrit les étapes à suivre pour créer des composants personnalisés en mettant en forme les composants de formulaire HTML natifs afin d’améliorer l’expérience client et l’attrait visuel du formulaire.
 
 Prenons l’exemple d’un composant `range` qui affiche le `Estimated trip cost` sur un formulaire. Le composant `range` s’affiche en ligne droite, sans afficher de valeurs telles que les valeurs minimale, maximale ou sélectionnée.
 
@@ -58,7 +59,7 @@ La fonction personnalisée ajoutée dans `[../Form Block/components]` se compose
 Pour ajouter une fonction personnalisée :
 
 1. Accédez à `[../Form Block/components]`.
-1. Recherchez un fichier nommé `range.js`. s’il n’est pas présent, créez-le.
+1. Localisez un fichier nommé `range.js`. s’il n’est pas présent, créez-le.
 1. Ajoutez la ligne de code suivante :
 
    ```javascript
@@ -214,7 +215,7 @@ Déployez les fichiers `range.js`, `mapping.js` et `form.css` mis à jour dans v
 
 ### Prévisualiser le formulaire à l’aide du sidekick AEM
 
-Prévisualisez votre formulaire avec la fonction nouvellement implémentée qui définit le style du composant `range`.
+Prévisualisez votre formulaire avec la fonction nouvellement mise en œuvre qui met en forme le composant `range`.
 
 ![Formulaire de composant personnalisé](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## Voir également
 
 {{see-more-forms-eds}}
-
-
-
-
