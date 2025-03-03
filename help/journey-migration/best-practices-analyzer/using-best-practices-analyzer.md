@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’analyseur de bonnes pratiques pour 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 78%
@@ -81,6 +81,8 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
 >[!NOTE]
 > À partir de la version 2.1.54 de BPA, une nouvelle fonctionnalité a été introduite pour obtenir le score Lighthouse.
+
+
 1. Après avoir cliqué sur **Générer le rapport**, un pop-up s’affiche pour demander l’URL du site public AEM pour le score Lighthouse. L’utilisateur doit saisir une URL valide dans le champ fourni.
 
    ![Image](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
