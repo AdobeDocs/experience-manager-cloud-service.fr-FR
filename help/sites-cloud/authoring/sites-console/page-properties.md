@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 90%
+source-wordcount: '2296'
+ht-degree: 89%
 
 ---
 
@@ -119,6 +119,8 @@ Les propriétés sont réparties sur plusieurs onglets.
 * **Paramètres de modèles**
 
    * **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
+   * **Utiliser la page comme modèle** - [Créez un modèle basé sur la page active.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * S’applique uniquement aux pages créées pour être utilisées avec l’éditeur universel exploitant Edge Delivery Services.
 
 * **Exigence d’authentification**
 
