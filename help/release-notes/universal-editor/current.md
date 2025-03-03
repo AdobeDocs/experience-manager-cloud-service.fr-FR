@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: ad72a4a724cd69376a936a2beb4fc8fd9d7a730e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Notes de mise à jour de l’éditeur universel version 2025.02.25 {#release-notes}
 
-Voici les notes de mise à jour de la version du 25 février 2025 de l’éditeur universel.
+Il s’agit des notes de mise à jour de la version du 25 février 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,5 +22,5 @@ Voici les notes de mise à jour de la version du 25 février 2025 de l’éditeu
 
 ## Autres améliorations {#other-improvements}
 
-* **Sélecteur de balises pour AEM 6.5** - Le sélecteur de balises s’ouvre désormais correctement lors de l’[exécution de l’éditeur universel avec AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-* **Sélecteur de ressources pour AEM 6.5** - Le sélecteur de ressources 6.5 s’ouvre désormais correctement lors de l’[exécution de l’éditeur universel avec AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Sélecteur de balises d’AEM 6.5** : le sélecteur de balises s’ouvre désormais correctement lors de l’[exécution de l’éditeur universel avec AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Sélecteur de ressources d’AEM 6.5** : le sélecteur de ressources 6.5 s’ouvre désormais correctement lors de l’[exécution de l’éditeur universel avec AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)

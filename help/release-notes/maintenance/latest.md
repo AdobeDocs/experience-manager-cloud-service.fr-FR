@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 19687 {#19687}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 19687 , rendue publique le 26 février 2025. La version de maintenance précédente était la version 19586.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 19687, rendue publique le 26 février 2025. La version de maintenance précédente était la version 19586.
 
 L’activation des fonctionnalités de la version 2025.2.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
@@ -28,7 +28,7 @@ Aucun.
 
 ### Problèmes résolus {#fixed-issues-19687}
 
-* SKYOPS-97524 : l’état de basculement de la fonctionnalité peut être incorrect par intermittence et affecter diverses fonctionnalités d’AEM.
+* SKYOPS-97524 : l’état de basculement de la fonctionnalité peut être incorrect par intermittence et affecter diverses fonctionnalités d’AEM.
 
 ### Problèmes connus {#known-issues-19687}
 
