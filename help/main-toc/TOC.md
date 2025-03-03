@@ -766,7 +766,7 @@ ht-degree: 95%
             + [Envoyer un formulaire adaptatif à Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + Connexion d’un formulaire adaptatif à Microsoft® SharePoint{#connect-to-sharepoint}
-               + [Connecter un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
                + [Envoyer à la bibliothèque de documents SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [Envoyer à la liste SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
                + [Configurer un site SharePoint avec accès limité à l’aide du champ d’application de l’autorisation](/help/forms/configure-sharepoint-site-limited-access.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
             + [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modèles d’e-mail dans les formulaires adaptatifs](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Gérer la publication dans Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Gestion de la publication dans Experience Manager Forms](/help/forms/manage-publication.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
                + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [Redirections](/help/edge/docs/redirects.md)
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
-      + [Comment fonctionne Edge Delivery Services Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Fonctionnement d’Edge Delivery Services pour AEM Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + {#getting-started-edge-delivery-services-forms} de création basée sur des documents
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)

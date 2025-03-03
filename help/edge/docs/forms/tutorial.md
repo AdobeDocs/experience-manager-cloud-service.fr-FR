@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Ces formulaires envoient directement les données vers un fichier Microsoft Excel ou Google Sheets, ce qui vous permet d’utiliser l’écosystème dynamique et les API robustes de Google Sheets, Microsoft Excel et Microsoft SharePoint pour traiter facilement les données envoyées ou pour démarrer un workflow d’entreprise existant.
 
-AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires pour capturer les données et stocker les données capturées. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de Forms adaptatif](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
+AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires pour capturer les données et stocker les données capturées. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
 
 Ce tutoriel AEM Forms vous guide tout au long des étapes de création, de prévisualisation et de publication de votre propre formulaire personnalisé avec un nouveau projet Adobe Experience Manager (AEM) Forms.
 

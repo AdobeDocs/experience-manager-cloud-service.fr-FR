@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -157,27 +157,27 @@ Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc de form
 >[!NOTE]
 >
 >
-> Cette étape s’applique aux projets créés à l’aide du [modèle standard AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Si vous avez créé votre projet AEM à l’aide du modèle standard d’AEM Forms [](https://github.com/adobe-rnd/aem-boilerplate-forms), vous pouvez ignorer cette étape.
+> Cette étape s’applique aux projets créés à l’aide du [modèle standard AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Si vous avez créé votre projet AEM à l’aide du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), vous pouvez ignorer cette étape.
 
-Pour intégrer :
+Pour effectuer l’intégration :
 1. **Ajouter les fichiers et dossiers requis**
-   1. Copiez et collez les dossiers et fichiers suivants du [modèle standard d’AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) dans votre projet AEM :
+   1. Copiez et collez les dossiers et fichiers suivants du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) dans votre projet AEM :
 
-      * [bloc de formulaire](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) dossier
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) folder
-      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
+      * Dossier [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+      * Dossier [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * Dossier [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
       * Fichier [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
-      * fichier [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+      * Fichier [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
 1. **Mettre à jour les définitions de composant et les fichiers de modèle**
-   1. Accédez au fichier `../models/_component-definition.json` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [_component-definition.json dans AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+   1. Accédez au fichier `../models/_component-definition.json` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [_component-definition.json dans le modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-   1. Accédez au fichier `../models/_component-models.json` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [_component-models.json dans le modèle AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. Accédez au fichier `../models/_component-models.json` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [_component-models.json dans le modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26).
 
 1. **Ajouter l’éditeur de formulaire dans le script de l’éditeur**
-   1. Accédez au fichier `../scripts/editor-support.js` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [editor-support.js dans AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+   1. Accédez au fichier `../scripts/editor-support.js` dans votre projet AEM et mettez-le à jour avec les modifications du fichier [editor-support.js dans le modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106).
 1. **Mettre à jour le fichier de configuration ESLint**
-   1. Accédez au fichier `../.eslintignore` dans votre projet AEM et ajoutez la ligne de codes suivante pour éviter les erreurs liées au moteur de règle Bloc de formulaire :
+   1. Accédez au fichier `../.eslintignore` dans votre projet AEM et ajoutez la ligne de code suivante pour éviter les erreurs liées au moteur de règle Bloc de formulaire :
 
       ```
           blocks/form/rules/formula/*
@@ -195,7 +195,7 @@ Vous pouvez ouvrir votre projet AEM dans l’éditeur universel pour la créatio
 1. Ajoutez la section Formulaire adaptatif à votre page Projet AEM. Pour ajouter :
    1. Accédez à votre projet AEM dans la console Sites, sélectionnez la page du site à modifier, puis cliquez sur **Modifier**. La page du projet AEM s’ouvre dans l’éditeur universel pour modification.
 Dans ce cas, la page `index.html` est utilisée à titre d’illustration.
-   1. Ouvrez l’arborescence de contenu et accédez à une section dans laquelle vous souhaitez ajouter la section Formulaire adaptatif .
+   1. Ouvrez l’arborescence de contenu et accédez à l’emplacement où vous souhaitez ajouter la section Formulaire adaptatif.
    1. Cliquez sur l’icône **[!UICONTROL Ajouter]** et sélectionnez le composant **[!UICONTROL Formulaire adaptatif]** dans la liste des composants.
 
    ![arborescence de contenu](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
@@ -223,7 +223,7 @@ La capture d’écran ci-dessous affiche le formulaire créé dans le projet AEM
 
       ![formulaire ajouté](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      Une fois satisfait de l’aperçu, l’utilisateur peut procéder à la publication de la page.
+      Une fois que l’aperçu est satisfaisant, l’utilisateur ou l’utilisatrice peut publier la page.
 
       >[!NOTE]
       >
@@ -280,7 +280,7 @@ Vous pouvez apporter des modifications locales au dossier `blocks/form` du bloc 
 
 Une fois les modifications effectuées, utilisez les commandes Git pour les valider et les transmettre. Cela met à jour les environnements de prévisualisation et de production accessibles aux URL suivantes (remplacez les espaces réservés par les détails de votre projet) :
 
-Aperçu : `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+Aperçu : `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
 
 Production : `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 

@@ -2,7 +2,7 @@
 source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 # Fragments de code {#snippets}
@@ -53,7 +53,7 @@ ht-degree: 96%
 * [Envoyer à Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer vers Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connecter un formulaire adaptatif à Microsoft](/help/forms/configure-msdynamics.md)
+* [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-msdynamics.md)
 * [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
