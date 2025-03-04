@@ -2,7 +2,8 @@
 title: Filtres de recherche personnalisés
 description: En savoir plus sur la personnalisation du formulaire des filtres de recherche
 role: User, Leader, Developer
-source-git-commit: 0f97264a3daf7a40ecbb619b5c686ffc279800fb
+exl-id: 383e8165-439e-447b-a19d-d5446238a13f
+source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 13%
@@ -375,7 +376,7 @@ Chaque élément de filtre est associé à un ensemble de propriétés. Les prop
         <ul>
         <li>Cliquez sur <b>ajouter</b> pour ajouter une nouvelle valeur. 
         <li>Cliquez sur <span>✎</span> pour modifier le libellé. 
-        <li>Cliquez sur <img src="assets/do-not-localize/delete.svg"> pour supprimer la valeur de l’option. 
+        <li>Cliquez sur <img src="assets/do-not-localize/delete-icon.png"> pour supprimer la valeur de l’option. 
         <li>Cliquez sur <b>Modifier</b> pour modifier les options d’édition. 
         <li>Vous pouvez également modifier la séquence des options en les maintenant enfoncées.
         </td>
