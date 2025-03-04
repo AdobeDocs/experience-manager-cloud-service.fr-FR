@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 17%
+source-wordcount: '1668'
+ht-degree: 18%
 
 ---
 
@@ -34,31 +34,31 @@ Experience Manager Assets permet à l’équipe d’aministration de configurer 
 
 * Filtres disponibles pour les utilisateurs lors de la recherche de ressources.
 
-* Détails ou propriétés des ressources disponibles pour chaque ressource.
+* Détails ou propriétés de la ressource disponibles pour chaque ressource.
 
 * Champs de métadonnées disponibles pour les utilisateurs lors de l’ajout de ressources à Content Hub.
 
-* Champs de métadonnées de ressource disponibles pour la recherche dans Content Hub.
+* Champs de métadonnées de ressource disponibles pour une recherche dans Content Hub.
 
-* Contenu de marque que vous devez afficher pour votre entreprise.
+* Valorisation de marque du contenu que vous devez afficher pour votre organisation.
 
-* Tous les liens personnalisés que vous devez inclure dans Content Hub en plus des ressources, des collections et des insights.
+* Tous les liens personnalisés que vous devez inclure sur Content Hub en plus des ressources, des collections et des informations.
 
-## Conditions préalables {#prerequisites-configuration-ui}
+## Prérequis {#prerequisites-configuration-ui}
 
-[Les administrateurs Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d’autres utilisateurs de votre entreprise.
+Les [administrateurs Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) peuvent définir les options de configuration pour d&#39;autres utilisateurs de votre organisation.
 
-## Accès aux options de configuration sur Content Hub {#access-configuration-options-content-hub}
+## Accéder aux options de configuration sur Content Hub {#access-configuration-options-content-hub}
 
-Pour accéder aux options de configuration sur Content Hub :
+Pour accéder aux options de configuration de Content Hub :
 
 1. Cliquez sur l’icône utilisateur dans le volet de droite.
 
 1. Dans la section **[!UICONTROL Paramètres du produit]**, sélectionnez **[!UICONTROL Configurations]**.
 
-   ![ Accès aux options de configuration sur Content Hub](assets/access-content-hub-configuration-ui.png)
+   ![Accéder aux options de configuration sur Content Hub](assets/access-content-hub-configuration-ui.png)
 
-## Gestion des options de configuration dans Content Hub {#manage-configuration-options}
+## Gestion des options de configuration sur Content Hub {#manage-configuration-options}
 
 En tant qu’administrateur, gérez les options de configuration suivantes pour vos utilisateurs :
 
@@ -87,23 +87,23 @@ Vous pouvez configurer les champs de métadonnées qui s’affichent pour les ut
 
 1. Cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
-1. Spécifiez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Metadata]** et sélectionnez le type d’entrée pour les nouvelles métadonnées de ressource.
+1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée des nouvelles métadonnées de la ressource.
 
-1. Cliquez sur le bouton **[!UICONTROL Champ obligatoire]** pour rendre le nouveau champ de métadonnées obligatoire pour spécifier les utilisateurs lors du chargement de nouvelles ressources.
+1. Cliquez sur le bouton (bascule) **[!UICONTROL Champ obligatoire]** pour rendre le nouveau champ de métadonnées obligatoire à spécifier pour les utilisateurs lors du chargement de nouvelles ressources.
 
-1. Cliquez sur **[!UICONTROL Confirmer]**. Les nouvelles métadonnées s’affichent dans la liste des propriétés de ressource existantes.
+1. Cliquez sur **[!UICONTROL Confirmer]**. Les nouvelles métadonnées s’affichent dans la liste des propriétés de la ressource existante.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété disponible, pour modifier les étiquettes, rendre ces champs obligatoires ou non obligatoires pour les utilisateurs lors du chargement des ressources à l’aide du bouton d’activation/désactivation **[!UICONTROL Champ obligatoire]** ou cliquer sur l’icône Supprimer pour supprimer toute propriété de métadonnées.
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété disponible, pour modifier les libellés, rendre ces champs obligatoires ou non obligatoires pour les utilisateurs lors du chargement de ressources à l’aide du bouton (bascule) **[!UICONTROL champ obligatoire]** ou cliquer sur l’icône Supprimer pour supprimer une propriété de métadonnées.
 
-Cliquez sur le bouton **[!UICONTROL Validation automatique]** si vous souhaitez que toutes les ressources que vous ajoutez au référentiel Experience Manager Assets soient automatiquement approuvées afin qu’elles soient disponibles dans Content Hub immédiatement. Autrement, les auteurs ou les administrateurs DAM doivent approuver manuellement les ressources pour les rendre disponibles sur Content Hub. Le bouton bascule est désactivé par défaut.
+Cliquez sur le bouton (bascule) **[!UICONTROL Approbation automatique]** si vous avez besoin que toutes les ressources que vous ajoutez au référentiel Experience Manager Assets soient approuvées automatiquement afin qu’elles soient disponibles immédiatement dans Content Hub. Dans le cas contraire, les auteurs ou les administrateurs de gestion des ressources numériques doivent approuver manuellement les ressources pour les rendre disponibles sur Content Hub. Par défaut, le bouton (bascule) est défini sur l’état Désactivé .
 
-Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
+Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
 ![Détails de chargement de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-upload-details.png)
 
-Les métadonnées activées dans l’interface utilisateur de configuration s’affichent sur la page de chargement des ressources :
+Les métadonnées activées dans l’interface utilisateur de configuration s’affichent dans la page de chargement des ressources :
 
 ![Chargement de métadonnées sur Content Hub](assets/configuration-ui-add-assets.png)
 
@@ -115,103 +115,103 @@ Content Hub permet aux administrateurs de configurer des filtres qui s’affiche
 
 1. Cliquez sur **[!UICONTROL Ajouter des filtres]**.
 
-1. Spécifiez un libellé pour le filtre, mappez-le à une propriété à l’aide du champ **[!UICONTROL Metadata]** et sélectionnez le type d’entrée pour le nouveau filtre.
+1. Indiquez un libellé pour le filtre, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée du nouveau filtre.
 1. Cliquez sur **[!UICONTROL Confirmer]**. Le nouveau filtre s’affiche dans la liste des filtres existants.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications afin que le nouveau filtre s’affiche sur la page Rechercher lors du filtrage des ressources.
 
    >[!NOTE]
    >
-   Le nouveau filtre s’affiche sur la page Recherche uniquement s’il existe une autre ressource dans le référentiel correspondant aux critères de filtrage.
+   Le nouveau filtre ne s’affiche sur la page Rechercher que s’il existe au moins une ressource dans le référentiel correspondant aux critères de filtre.
 
-De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les étiquettes ou cliquer sur l’icône Supprimer pour supprimer tout filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![Filtres d’IU de configuration sur Content Hub](assets/configuration-ui-filters.png)
+![Filtres de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-filters.png)
 
-Les filtres activés dans l’interface utilisateur de configuration s’affichent sur la page Rechercher :
+Les filtres activés dans l’interface utilisateur de configuration s’affichent dans la page Rechercher :
 
-![Rechercher sur Content Hub](assets/filters-for-search.png)
+![Recherche sur Content Hub](assets/filters-for-search.png)
 
 
 ### Détails des ressources {#configure-asset-details-content-hub}
 
-Vous pouvez également configurer les propriétés de ressource qui s’affichent pour chaque ressource, telles que le nom de fichier, le titre, le format, la taille, etc. Pour cela, procédez comme suit :
+Vous pouvez également configurer les propriétés de la ressource qui s’affichent pour chaque ressource, telles que le nom du fichier, le titre, le format, la taille, etc. Pour cela, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Détails de la ressource]**.
 
 1. Cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
-1. Spécifiez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Metadata]** et sélectionnez le type d’entrée pour les nouvelles métadonnées de ressource.
-1. Cliquez sur **[!UICONTROL Confirmer]**. Les nouvelles métadonnées s’affichent dans la liste des propriétés de ressource existantes.
+1. Indiquez un libellé pour la propriété, mappez-le à une propriété à l’aide du champ **[!UICONTROL Métadonnées]** et sélectionnez le type d’entrée des nouvelles métadonnées de la ressource.
+1. Cliquez sur **[!UICONTROL Confirmer]**. Les nouvelles métadonnées s’affichent dans la liste des propriétés de la ressource existante.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété s’affiche sur la page des détails de la ressource.
 
-De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété disponible, pour modifier les étiquettes ou cliquer sur l’icône Supprimer pour supprimer les détails de ressource existants. Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer tout détail de ressource existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![ Détails des ressources de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-asset-details.png)
+![Détails de la ressource de l’interface utilisateur de configuration dans Content Hub](assets/configuration-ui-asset-details.png)
 
-Les propriétés activées dans l’interface utilisateur de configuration s’affichent sur la page Détails de la ressource :
+Les propriétés activées dans l’interface utilisateur de configuration s’affichent dans la page Détails de la ressource :
 
-![Propriétés de ressource sur Content Hub](assets/config-ui-asset-properties.png)
+![Propriétés de la ressource sur Content Hub](assets/config-ui-asset-properties.png)
 
 ### Carte de ressources {#asset-card}
 
-Vous pouvez également configurer les champs de métadonnées clés que vous devez afficher sur la **carte de ressources** jusqu’à 6 champs au maximum. Pour cela, procédez comme suit :
+Vous pouvez également configurer les champs de métadonnées clés que vous devez afficher sur la **Carte des ressources** jusqu’à 6 champs maximum. Pour cela, procédez comme suit :
 
 ![Métadonnées clés sur la carte de ressources](/help/assets/assets/asset-card-key-metadata.png)
 
-1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Asset Card**.
-2. Cliquez sur **Ajouter des métadonnées**. La boîte de dialogue **Ajouter des métadonnées de carte de ressource** s’affiche.
-3. Indiquez le nom des métadonnées dans le champ **Label** et sélectionnez une propriété de métadonnées dans le champ **Metadata** .
-4. Cliquez sur **Confirmer**, puis sur **Enregistrer** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
-   ![carte de ressource](/help/assets/assets/asset-card.png)
+1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **Carte des ressources**.
+2. Cliquez sur **Ajouter des métadonnées**. La boîte de dialogue **Ajouter des métadonnées de carte de ressources** s’affiche.
+3. Indiquez le nom des métadonnées dans le champ **Libellé** et sélectionnez une propriété de métadonnées dans le champ **Métadonnées**.
+4. Cliquez sur **Confirmer** puis sur **Enregistrer** pour appliquer les modifications afin que la nouvelle propriété s’affiche sur la page des détails de la ressource.
+   ![carte des ressources](/help/assets/assets/asset-card.png)
 
-De même, cliquez sur ![edit](/help/assets/assets/edit-content-hub.svg) disponible en regard de chaque propriété disponible pour apporter les modifications requises ou cliquez sur ![delete](/help/assets/assets/delete-content-hub.svg) pour supprimer toute propriété de métadonnées existante. Cliquez sur **Enregistrer** après avoir apporté toutes les modifications pour appliquer les modifications.
+De même, cliquez sur ![Modifier](/help/assets/assets/edit-content-hub.svg) disponible en regard de chaque propriété disponible pour apporter les modifications nécessaires ou cliquez sur ![Supprimer](/help/assets/assets/delete-content-hub.svg) pour supprimer une propriété de métadonnées existante. Cliquez sur **Enregistrer** après avoir effectué toutes les modifications pour appliquer les modifications.
 
 ### Recherche {#configure-metadata-search-content-hub}
 
-Les administrateurs peuvent définir les champs de métadonnées qui font l’objet d’une recherche lorsqu’un utilisateur spécifie un critère de recherche sur Content Hub. Procédez comme suit :
+L’administration peut définir les champs de métadonnées qui font l’objet d’une recherche lorsqu’un utilisateur spécifie un critère de recherche dans Content Hub. Procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Ajouter des métadonnées]**.
 
 1. Spécifiez le champ de métadonnées et cliquez sur **[!UICONTROL Confirmer]**.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications afin que la nouvelle propriété de métadonnées s’affiche dans la liste des champs de métadonnées.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété de métadonnées s’affiche dans la liste des champs de métadonnées.
 
-De même, vous pouvez cliquer sur ![Modifier l’icône](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![Recherche de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-metadata-search.png)
+![Recherche dans l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-metadata-search.png)
 
 
 ### Branding {#configure-branding-content-hub}
 
-Les administrateurs peuvent également personnaliser le titre et le corps du texte sur la bannière du portail Content Hub, en fonction de vos besoins en termes de branding. Pour cela, procédez comme suit :
+Les administrateurs peuvent également personnaliser le titre et le corps du texte de la bannière du portail Content Hub, en fonction de vos exigences de marque. Pour cela, procédez comme suit :
 
-1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Valorisation de marque]**.
+1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Branding]**.
 
-1. Spécifiez le texte dans les champs **[!UICONTROL Texte du titre sur la bannière]** et **[!UICONTROL Texte du corps sur la bannière]** .
+1. Spécifiez du texte dans les champs **[!UICONTROL Texte du titre sur la bannière]** et **[!UICONTROL Texte du corps sur la bannière]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-![Marque de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-branding.png)
+![Configuration du branding de l’interface utilisateur sur Content Hub](assets/configuration-ui-branding.png)
 
-Les mises à jour de branding activées dans l’interface utilisateur de configuration s’affichent sur la bannière du portail Content Hub :
+Les mises à jour d’identité graphique activées dans l’interface utilisateur de configuration s’affichent dans la bannière du portail Content Hub :
 
-![Marque de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-branding-updates.png)
+![Configuration du branding de l’interface utilisateur sur Content Hub](assets/configuration-ui-branding-updates.png)
 
 ### Ressources expirées{#expired-assets-content-hub}
 
-Les administrateurs peuvent contrôler s’ils ont besoin que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, les administrateurs et administratrices peuvent également définir si les personnes peuvent les télécharger.
+Les administrateurs peuvent décider s’ils souhaitent que les ressources expirées soient visibles sur Content Hub. Si les ressources expirées sont rendues visibles, les administrateurs et administratrices peuvent également définir si les personnes peuvent les télécharger.
 
-Les ressources expirées ne s’affichent pas par défaut dans Content Hub.
+Par défaut, les ressources arrivées à expiration ne s’affichent pas dans Content Hub.
 
 Pour cela, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Assets expirée]**.
 
-1. Dans la section **[!UICONTROL Visible]** , activez le bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à afficher les ressources expirées]** pour rendre toutes les ressources expirées visibles sur Content Hub.
+1. Dans la section **[!UICONTROL Visible]**, activez le bouton (bascule) **[!UICONTROL Autoriser les utilisateurs à afficher les ressources expirées]** pour rendre toutes les ressources expirées visibles sur Content Hub.
 
-1. Après avoir activé la visibilité des ressources, vous pouvez activer ou désactiver la possibilité de télécharger les ressources expirées à l’aide du bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources expirées]**.
+1. Après avoir activé la visibilité des ressources, vous pouvez activer ou désactiver la possibilité de télécharger les ressources expirées à l’aide du bouton **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources expirées]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
@@ -221,46 +221,44 @@ Après avoir activé la visibilité des ressources, vous pouvez afficher les res
 
 ![Ressources expirées sur le hub de contenus](assets/view-download-expired-assets.png)
 
-Si l’administrateur a activé le téléchargement, les utilisateurs de Content Hub peuvent également le télécharger, comme indiqué dans l’image.
+Si l’administrateur a activé le téléchargement, les utilisateurs de Content Hub peuvent également les télécharger, comme indiqué dans l’image.
 
-Si la visibilité des ressources expirées est activée, Content Hub met également en surbrillance les ressources arrivant à expiration au cours des 15 prochains jours à l’aide du message `Expiring in n days` sur la carte de ressources.
+Si la visibilité des ressources arrivées à expiration est activée, Content Hub met également en surbrillance les ressources arrivant à expiration dans les 15 prochains jours à l’aide du message `Expiring in n days` sur la carte des ressources.
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que des images, des documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. Pour en savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
-
-Content Hub permet de télécharger des rendus statiques. Les rendus statiques sont différentes représentations du fichier d’origine d’une ressource générée en mode natif. Par exemple, les miniatures ou les rendus optimisés pour les appareils mobiles. Les administrateurs peuvent gérer et contrôler la disponibilité des rendus de ressources, et gérer si vous pouvez télécharger des ressources d’origine ou non.
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
 Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Rendus]**. Les options suivantes sont disponibles :
 
-* Activez le bouton d’activation/désactivation [!UICONTROL Activer la disponibilité des rendus statiques] pour rendre tous les rendus statiques visibles sur Content Hub.
+* Activez le bouton (bascule) [!UICONTROL Activer la disponibilité des rendus] pour rendre tous les rendus visibles sur Content Hub.
 
-* Activez ou désactivez le bouton d’activation/désactivation **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources d’origine]** afin de contrôler la disponibilité du téléchargement des ressources d’origine.
+* Activez ou désactivez le bouton (bascule) **[!UICONTROL Autoriser les utilisateurs à télécharger les ressources d’origine]** pour contrôler la disponibilité du téléchargement des ressources d’origine.
 
-  ![Configuration de rendus sur Content Hub](assets/config-renditions.png)
+  ![Configuration des rendus sur Content Hub](assets/config-renditions.png)
 
-Pour plus d’informations sur l’affichage et le téléchargement des rendus statiques dans Content Hub, voir [téléchargement de ressources dans Content Hub](/help/assets/download-assets-content-hub.md).
+Pour plus d’informations sur l’affichage et le téléchargement des rendus dans Content Hub, voir [téléchargement de ressources dans Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Liens personnalisés {#configure-custom-links-content-hub}
 
-Vous pouvez également ajouter des onglets personnalisés en plus des onglets **[!UICONTROL Tous les Assets]**, **[!UICONTROL Collections]** et **[!UICONTROL Statistiques]** standard sur le portail Content Hub juste en dessous de la bannière. Pour cela, procédez comme suit :
+Vous pouvez également ajouter des onglets personnalisés en plus des onglets standard **[!UICONTROL Toutes les Assets]**, **[!UICONTROL Collections]** et **[!UICONTROL Informations]** sur le portail Content Hub, juste en dessous de la bannière. Pour cela, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Liens personnalisés]**.
 
 1. Cliquez sur **[!UICONTROL Ajouter un lien]**.
 
-1. Spécifiez le texte dans les champs **[!UICONTROL Libellé]** et **[!UICONTROL URL]** . Le libellé que vous définissez s&#39;affiche sous forme d&#39;onglet et lorsque vous cliquez sur le libellé, vous accédez à l&#39;URL définie dans le champ **[!UICONTROL URL]**.
+1. Spécifiez du texte dans les champs **[!UICONTROL Libellé]** et **[!UICONTROL URL]**. Le libellé que vous définissez s’affiche sous la forme d’un onglet et, lorsque vous cliquez sur le libellé, vous accédez à l’URL définie dans le champ **[!UICONTROL URL]**.
 
 1. Cliquez sur **[!UICONTROL Confirmer]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-De même, vous pouvez cliquer sur ![Icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque URL, pour modifier les liens ou cliquer sur l’icône Supprimer pour supprimer toute URL existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir apporté toutes les modifications pour appliquer les modifications.
+De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque URL, pour modifier les liens ou cliquer sur l’icône de suppression pour supprimer une URL existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 
-![Liens personnalisés de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-custom-links.png)
+![Liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-custom-links.png)
 
-Le lien personnalisé s’affiche sous forme d’un nouvel onglet en regard de l’onglet Statistiques sur la page d’accueil de Content Hub.
+Le lien personnalisé s’affiche sous la forme d’un nouvel onglet en regard de l’onglet Insights sur la page d’accueil de Content Hub.
 
-![Onglets Liens personnalisés de l’interface utilisateur de configuration sur Content Hub](assets/configuration-ui-custom-link-tab.png)
+![Onglets de liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-custom-link-tab.png)
