@@ -3,10 +3,10 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger des ressources à partir du portail Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ En savoir plus sur [affichage et gestion des rendus dans Experience Manager Asse
 
 >[!NOTE]
 > 
-* Pour obtenir un accès anticipé au compte Dynamic Media, [créez et envoyez un dossier de support client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+* La fonctionnalité de rendus de recadrage dynamique et intelligent est en phase d’adoption précoce. Pour accéder à cette fonctionnalité, [créez et envoyez un dossier de support client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 * Les clients nouvellement intégrés aux [services d’API ouverts Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) doivent réviser leurs paramètres d’image prédéfinis existants pour approbation.
 
 
