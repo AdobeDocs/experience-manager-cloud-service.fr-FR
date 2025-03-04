@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [Protection de votre Forms : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Créer des composants de formulaire personnalisés : guide du développeur](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveiller les performances des formulaires : Guide de surveillance en utilisation réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Déploiement de Forms sur Edge : Guide de publication pour Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Création WYSIWYG {#universal-editor}
          + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendre votre Forms compatible avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Design Beautiful Forms : guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

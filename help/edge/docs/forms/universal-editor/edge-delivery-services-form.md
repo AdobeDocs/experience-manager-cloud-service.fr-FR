@@ -7,8 +7,8 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: ht
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Adobe Experience Manager propose et prend en charge plusieurs éditeurs pour c
 
 L’éditeur universel est un éditeur visuel polyvalent qui offre une fonctionnalité « ce que vous voyez est ce que vous obtenez » (WYSIWYG), assurant ainsi une expérience de création de formulaire intuitive. Il est recommandé d’utiliser l’éditeur universel lors de la création de formulaires, car ce dernier offre une conception moderne et conviviale dotée d’une interface pratique par glisser-déposer.
 
-Pour créer des formulaires à l’aide de l’éditeur universel, les modèles Edge Delivery Services disponibles dans l’environnement AEM sont utilisés. Ces formulaires héritent de l’aspect des configurations dans le référentiel GitHub Edge Delivery Services. [Une connexion entre votre environnement AEM et le référentiel GitHub Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md) est établie pour permettre la publication de ces formulaires sur les Edge Delivery Services.
+Pour créer des formulaires à l’aide de l’éditeur universel, les modèles Edge Delivery Services disponibles dans l’environnement AEM sont utilisés. Ces formulaires héritent de l’aspect des configurations dans le référentiel GitHub Edge Delivery Services. [Une connexion entre votre environnement AEM et le référentiel GitHub Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) est établie pour permettre la publication de ces formulaires sur les Edge Delivery Services.
 
 Pour des informations détaillées sur la création à l’aide de l’éditeur universel, consultez l’article [Créer du contenu avec l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
 
