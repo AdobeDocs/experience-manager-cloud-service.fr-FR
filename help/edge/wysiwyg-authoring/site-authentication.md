@@ -3,13 +3,13 @@ title: Configuration de l’authentification de site pour la création de conten
 description: Découvrez comment AEM Live prend en charge l’authentification basée sur les jetons et comment configurer AEM pour utiliser l’authentification avec la création WYSIWYG.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Configuration de l’authentification de site pour la création de contenu {#site-authentication}
 
@@ -46,11 +46,13 @@ Ces éléments sont nécessaires pour terminer la configuration de l’authentif
 Une fois l’authentification du site configurée, vous pouvez l’activer dans votre environnement de création AEM.
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **Outils** -> **Services cloud** -> **Configuration Edge Delivery Services** et sélectionnez la configuration qui a été automatiquement créée pour votre site, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
-1. Dans la fenêtre **Configuration de Edge Delivery Services**, sélectionnez l&#39;onglet **Authentification** et indiquez les valeurs suivantes, que vous avez notées lors de la configuration de l&#39;authentification du site.
-
-   * **Identifiant de compte technique**
-   * **Jeton d’authentification du site**
+1. Dans la fenêtre **Configuration de Edge Delivery Services**, sélectionnez l&#39;onglet **Authentification**, fournissez le **Jeton d&#39;authentification de site**, que vous avez copié précédemment.
 
    ![Configuration Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Vérifiez que l’**ID de compte technique** correspond à celui que vous avez copié précédemment.
+
+   * Ce champ est en lecture seule et prédéfini.
+   * Le compte technique est le même pour tous les sites sur un seul environnement de création AEM.
 
 1. Appuyez et cliquez sur **Enregistrer et fermer**.

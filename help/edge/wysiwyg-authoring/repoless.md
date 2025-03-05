@@ -4,9 +4,9 @@ description: Si vous disposez de nombreux sites similaires qui ressemblent et se
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ Vous devez créer une configuration de site et l’ajouter à votre mappage de c
 
 Une fois la configuration du site mappée, vous pouvez configurer le contrôle d’accès en définissant votre compte technique afin qu’il dispose des privilèges de publication.
 
-1. Dans votre navigateur, récupérez le compte technique dans la réponse du lien suivant.
+1. Connectez-vous à l’instance d’auteur AEM et accédez à **Outils** -> **Services cloud** -> **Configuration Edge Delivery Services** et sélectionnez la configuration qui a été automatiquement créée pour votre site, puis appuyez ou cliquez sur **Propriétés** dans la barre d’outils.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Dans la fenêtre **Configuration de Edge Delivery Services**, sélectionnez l’onglet **Authentification** et copiez la valeur de **Identifiant du compte technique**.
 
-1. La réponse sera similaire à ce qui suit.
+   * Il ressemblera à `<tech-account-id>@techacct.adobe.com`
+   * Le compte technique est le même pour tous les sites sur un seul environnement de création AEM.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Définissez le compte technique dans votre configuration avec une commande cURL similaire à la suivante.
+1. Définissez le compte technique pour votre configuration de réponses avec une commande cURL similaire à la suivante, à l’aide de l’identifiant de compte technique que vous avez copié.
 
    * Adaptez le bloc `admin` pour définir les utilisateurs et utilisatrices qui doivent disposer d’un accès administratif complet au site.
       * Il s’agit d’un tableau d’adresses e-mail.
