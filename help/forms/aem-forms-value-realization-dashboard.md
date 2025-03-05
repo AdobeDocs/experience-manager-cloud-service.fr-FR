@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Présentation de votre tableau de bord de réalisation des valeurs
 
 ![Tableau de bord de réalisation de la valeur](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Il s’agit d’une fonctionnalité bêta, activée uniquement pour quelques clients sélectionnés. </span>
+<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
+
 
 Bienvenue dans votre guichet unique pour comprendre la valeur que vos formulaires apportent ! Ce tableau de bord vous fournit des informations précieuses qui vous permettent d’optimiser vos formulaires, de rationaliser les workflows et, au final, d’atteindre plus rapidement vos objectifs.
 
-Cet article présente un aperçu conceptuel du tableau de bord de réalisation de valeurs et de ses avantages. Pour obtenir des instructions d’utilisation détaillées et l’interprétation des mesures, voir [Interprétation des informations d’utilisation des formulaires à l’aide du tableau de bord de réalisation des valeurs](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+Cet article présente un aperçu conceptuel du tableau de bord de réalisation de valeurs et de ses avantages. Pour obtenir des instructions d’utilisation détaillées et l’interprétation des mesures, voir [Interprétation des informations d’utilisation des formulaires à l’aide du tableau de bord de réalisation des valeurs](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![tableau de bord de réalisation des valeurs](/help/forms/assets/forms-usage-insights.png)
+
 
 ## Que contient le tableau de bord ? {#content-of-dashboard}
 
 Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des formulaires. Voici une répartition des sections clés :
+
 
 ### Activité Formulaires et documents dans le temps
 
@@ -44,8 +46,6 @@ Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des for
 * **Réutilisation des fragments de formulaire** : évaluez la fréquence d’utilisation de ces fragments dans différents formulaires.
 
 
-
-
 ## En quoi cela vous avantage-t-il ? {#benefits-to-you}
 
 Ce tableau de bord vous permet de prendre des décisions pilotées par les données concernant vos formulaires. Procédez comme suit :
@@ -53,6 +53,8 @@ Ce tableau de bord vous permet de prendre des décisions pilotées par les donn�
 * **Identification des Forms populaires** : des taux d’envoi élevés indiquent la valeur des formulaires. Analysez-les pour connaître les bonnes pratiques à répliquer dans d’autres.
 * **Optimiser la création de formulaire** : réduisez les temps de création en identifiant les goulets d’étranglement. Explorer des modèles préconfigurés ou rationaliser les workflows.
 * **BOOSTER LA RÉUTILISATION DES FRAGMENTS** : encourager la collaboration et la possibilité de découvrir des fragments réutilisables. Une bonne organisation des bibliothèques de fragments peut améliorer considérablement l’efficacité.
+
+  ![tableau de bord de réalisation des valeurs](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Transformer les informations en actions {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ Rappelez-vous, ce tableau de bord est votre allié ! En l’utilisant efficaceme
 
 ## Voir également
 
-* [Interprétation des informations d’utilisation](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Utilisation du tableau de bord pour analyser les tendances d’utilisation des Forms et des documents](/help/forms/using-the-value-realization-dashboard.md)
