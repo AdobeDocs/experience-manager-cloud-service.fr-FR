@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 100%
@@ -119,7 +119,7 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
 
    * [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 

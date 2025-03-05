@@ -5,7 +5,7 @@ landing-page-description: Apprenez comment utiliser et administrer Headless dans
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 96%
@@ -44,9 +44,9 @@ AEM as a Cloud Service est un outil souple pour le modèle d’implémentation d
 1. **Fragments de contenu**
    * Un fragment de contenu est créé à partir d’un modèle de fragment de contenu.
    * Il est créé par les créateurs et créatrices de contenu à l’aide de l’éditeur de fragments de contenu AEM.
-   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou la [Console fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **API de contenu pour la diffusion**
-   * Voir [AEM API pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
+   * Consultez [API AEM pour la diffusion et la gestion de contenu structuré](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 
    * La diffusion de contenu direct est également possible avec l’[Exportateur JSON du composant principal du fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr).
 

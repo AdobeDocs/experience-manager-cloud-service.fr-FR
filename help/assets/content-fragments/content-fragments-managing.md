@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 88%
@@ -39,7 +39,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
 >
 >Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**. Voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir de la console **Fragments de contenu**). Les deux éditeurs comportent un bouton bascule dans la barre d’outils supérieure pour fournir un accès rapide à l’autre éditeur.
 
@@ -198,7 +198,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
    * **Modifié** : orange
    * **Désactivé** : rouge
 
-* Un bouton permet d’**Essayer un nouvel éditeur** en ouvrant directement l’*nouvel* [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) accessible via la console [Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Un bouton permet d’**Essayer un nouvel éditeur** en ouvrant directement l’*nouvel* [Éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md) accessible via la console [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
   >[!WARNING]
   >

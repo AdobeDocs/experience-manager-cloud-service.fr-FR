@@ -5,8 +5,8 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 100%
 
@@ -153,6 +153,6 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Guides AEM WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) : ce projet GitHub comprend des exemples d’applications qui mettent en évidence l’API AEM GraphQL.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) : un aperçu complet de l’architecture AEM.
 * [Configuration découplée](/help/headless/introduction.md#getting-started) : une présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.
-* [Créer des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) : documentation technique sur les modèles de fragment de contenu.
+* [Créer des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) : documentation technique sur les modèles de fragment de contenu.
 * [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) : documentation technique sur les fragments de contenu.
 * [Demander du contenu avec GraphQL](/help/headless/graphql-api/content-fragments.md) : documentation technique sur l’API GraphQL.

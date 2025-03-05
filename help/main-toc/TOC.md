@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6216'
 ht-degree: 95%
 
 ---
@@ -419,8 +419,9 @@ ht-degree: 95%
          + [Présentation et concepts](/help/sites-cloud/administering/content-fragments/overview.md)
          + [Diffusion sans affichage avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [Configuration du fragment de contenu](/help/sites-cloud/administering/content-fragments/setup.md)
-         + [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-         + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [Gestion des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+         + [Définir des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [Gérer des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
          + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)

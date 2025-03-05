@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 85%
@@ -24,7 +24,7 @@ Les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service 
 >
 >Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés en tant que **Assets**.
 >
->Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Il existe deux éditeurs pour créer des fragments de contenu :
 >

@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 79%
@@ -179,7 +179,7 @@ GraphQL est une API fortement typée, ce qui signifie que les données doivent �
 
 La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer le [Schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
 
-Pour les fragments de contenu, les schémas GraphQL (structure et types) reposent sur des [Modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **activés** et leurs types de données
+Pour les fragments de contenu, les schémas GraphQL (structure et types) reposent sur des [Modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) **activés** et leurs types de données
 
 >[!CAUTION]
 >

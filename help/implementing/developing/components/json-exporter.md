@@ -4,7 +4,7 @@ description: AEM Content Services est conçu pour généraliser la description
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 88%
@@ -79,6 +79,6 @@ Votre page peut contenir un fragment de contenu unique ou plusieurs composants d
 ## Documentation connexe {#related-documentation}
 
 * [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)

@@ -4,7 +4,7 @@ description: Découvrez les configurations Adobe Experience Manager (AEM) et com
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 78%
@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Configurations et explorateur de configurations {#configuration-browser}
 
-Les configurations Adobe Experience Manager (AEM) permettent de gérer les paramètres dans AEM et font office d’espaces de travail.
+Les configurations Adobe Experience Manager (AEM) permettent de gérer les paramètres dans AEM et servent d’espaces de travail.
 
 ## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
@@ -36,7 +36,7 @@ Les équipes d’administration et de création AEM peuvent considérer les conf
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
 * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Modèles modifiables](/help/sites-cloud/authoring/page-editor/templates.md)
 * diverses configurations de cloud
 
@@ -82,7 +82,7 @@ Il est simple de créer une configuration dans AEM à l’aide de l’explorateu
       * Il peut être adapté si nécessaire.
 1. Vérifiez le type de configuration que vous souhaitez autoriser.
    * [Segments Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Modèles modifiables](/help/sites-cloud/authoring/page-editor/templates.md)
    * diverses configurations de cloud
 1. Sélectionnez **Créer**.

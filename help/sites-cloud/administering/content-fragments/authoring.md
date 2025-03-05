@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 6%
@@ -50,7 +50,7 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
 * barre d’outils supérieure : pour obtenir des informations clés et des actions
    * lien vers la console de fragments de contenu (icône Accueil)
    * informations sur le modèle et le dossier
-   * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
    * [Publication](#publish-content-fragment) et [Dépublication](#unpublish-content-fragment)
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
@@ -508,7 +508,7 @@ L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs m
 Pour utiliser cette fonctionnalité, vous devez d’abord :
 
 * Contactez votre équipe informatique pour configurer l’application frontale externe qui effectue le rendu du fragment de contenu en utilisant sa sortie JSON.
-* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 Lorsque l’URL a été définie, le bouton **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
 
