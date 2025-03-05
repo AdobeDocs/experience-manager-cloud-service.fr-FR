@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 97%
+source-wordcount: '1505'
+ht-degree: 94%
 
 ---
 # Fragments de code {#snippets}
@@ -252,3 +252,25 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 >
 >* L’[éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour modifier visuellement du contenu découplé.
 >* L’[éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification du contenu découplé à partir des formulaires.
+
+## Éditeur universel{#ue-see-also}
+
+* [Créer Votre Premier Formulaire À L’Aide De L’Éditeur Universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Ajout d’un comportement dynamique à Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publication et déploiement de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms : guide de style et de thème](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Créer des composants de formulaire personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## Voir également {#see-more-eds-forms}
+
+* [Commencer avec Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Créer un formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configurer vos fichiers Google Sheets ou Microsoft Excel pour accepter des données](/help/edge/docs/forms/submit-forms.md)
+* [Publier votre formulaire et commencer à collecter des données](/help/edge/docs/forms/publish-forms.md)
+* [Personnaliser l’apparence de vos formulaires](/help/edge/docs/forms/style-theme-forms.md)
+* [Ajouter des sections répétables à un formulaire](/help/edge/docs/forms/repeatable-forms.md)
+* [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
+* [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
+* [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)

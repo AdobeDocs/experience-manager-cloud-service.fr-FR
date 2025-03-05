@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
 # Service de soumission Forms avec Edge Delivery Services Forms
+
+<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+
 
 Le service d’envoi Forms vous permet de stocker les données des envois de formulaire dans n’importe quelle feuille de calcul, telle que OneDrive, SharePoint ou Google Sheets, ce qui vous permet d’accéder facilement aux données de formulaire et de les gérer sur votre plateforme de feuille de calcul préférée.
 
@@ -26,7 +29,7 @@ L’utilisation du service d’envoi Forms avec des feuilles de calcul présente
 * **Structure des données** : lors de la configuration de l’envoi, vous pouvez mapper les champs de formulaire aux colonnes de feuille de calcul correspondantes pour le stockage de données organisé.
 * **Contrôle d’accès** : vous pouvez tirer parti des autorisations existantes pour contrôler qui peut accéder aux données de formulaire envoyées et les modifier, en fonction du service de feuille de calcul choisi.
 
-## Prérequis
+## Conditions préalables
 
 Vous trouverez ci-dessous les conditions préalables requises pour utiliser le service Forms Submission :
 
@@ -84,7 +87,7 @@ Pour configurer le service d’envoi de Forms avec Google Sheets ou Microsoft Ex
 
    ![Lier une feuille de calcul](/help/forms/assets/form-submission-sheet-linking.png)
 
-1. Prévisualisez et publiez la feuille à l’aide de l’AEM Sidekick [](https://www.aem.live/docs/sidekick) avec le service d’envoi de formulaire mis à jour.
+1. Prévisualisez et publiez la feuille à l’aide de [AEM Sidekick](https://www.aem.live/docs/sidekick) avec le service d’envoi de formulaire mis à jour.
 
 >[!NOTE]
 >
@@ -92,7 +95,7 @@ Pour configurer le service d’envoi de Forms avec Google Sheets ou Microsoft Ex
 
 ### Configuration du service d’envoi Forms à l’aide de l’API
 
-Vous pouvez également envoyer une demande de **POST** au formulaire pour mettre à jour la feuille de `incoming` avec des données.
+Vous pouvez également envoyer une requête **POST** au formulaire pour mettre à jour la feuille de `incoming` avec des données.
 
 >[!NOTE]
 >
@@ -100,9 +103,9 @@ Vous pouvez également envoyer une demande de **POST** au formulaire pour mettre
 > * Partagez la feuille de `incoming` avec le `forms@adobe.com` Adobe Experience Manager et accordez l’accès de modification.
 > * Prévisualisez et publiez la feuille de `incoming` dans le sidekick.
 
-Pour savoir comment formater la requête du POST afin de configurer votre feuille, reportez-vous à la documentation [API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Vous pouvez consulter l’exemple ci-dessous :
+Pour comprendre comment formater la requête POST pour configurer votre feuille, reportez-vous à la documentation [API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Vous pouvez consulter l’exemple ci-dessous :
 
-Vous pouvez utiliser des outils tels que curl ou Postman pour exécuter cette requête de POST, comme illustré ci-dessous.
+Vous pouvez utiliser des outils tels que curl ou Postman pour exécuter cette requête POST, comme illustré ci-dessous.
 
 * **Utilisation de Postman** :
 
@@ -173,15 +176,15 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     « json
     
     curl -X POST « https://forms.adobe.com/adobe/forms/af/submit/{id} » ^
-    —header « Content-Type : application/json » ^
+    —header « Content-Type: application/json » ^
     —header « x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization] » ^
-    —data « {\« data\ »: {\« startDate\ »: \« 2025-01-10\ », \« endDate\ »: \« 2025-01-25\ », \« destination\ »: \« Australia\ », \« class\ »: \« First Class\ », \« budget\ »: \« 2000\ », \« amount\ »: \ »1000000\ », \« name\ »: \« Joe\ », \« age\ »: \« 35\ », \« subscribe\ »: null, \« email\ »: \ »mary@gmail.com\« }} »
+    —data « {\« data\ »: {\« startDate\ »: \« 2025-01-10\ », \« endDate\ »: \« 2025-01-25\ », \« destination\ »: \« Australia\ », \« class\ » \« First Class\ », \« budget\ »: \« 2000\ », \« amount\ »: \ »1000000\ », \« name\ »: \« Joe\ », \« age\ »: \« 35\ », \« subscribe\ »: null, \« email\ »: \ »mary@gmail.com\« }} »
     
      »
 
 >[!ENDTABS]
 
-La requête de POST mentionnée ci-dessus met à jour la feuille de `incoming` avec la réponse ci-dessous :
+La requête POST mentionnée ci-dessus met à jour la feuille de `incoming` avec la réponse ci-dessous :
 
 ```json
     < HTTP/1.1 201 Created

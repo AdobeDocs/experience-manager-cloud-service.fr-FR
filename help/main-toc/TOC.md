@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 95%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 95%
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + [Fonctionnement d’Edge Delivery Services pour AEM Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + Création WYSIWYG {#universal-editor}
+         + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Rendre votre Forms compatible avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Design Beautiful Forms : guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Ajout d’un comportement dynamique à Forms : guide complet de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guide d’envoi de formulaire : configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Publication et déploiement de Forms : guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Créer des composants de formulaire personnalisés : guide du développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + {#getting-started-edge-delivery-services-forms} de création basée sur des documents
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Comment créer Forms à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
+         + [Divers composants du bloc de formulaire adaptatif](/help/edge/docs/forms/form-components.md)
          + [Connecter votre formulaire aux feuilles Google : Guide de configuration de la collecte de données](/help/edge/docs/forms/submit-forms.md)
          + [Guide de publication et de collecte de données pour la mise en ligne de votre formulaire](/help/edge/docs/forms/publish-forms.md)
          + [Validation des champs de formulaire : ajoutez des contrôles d’erreur à votre Forms.](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 95%
          + [Rendre votre formulaire global : Guide de traduction de formulaire](/help/edge/docs/forms/translate-forms.md)
          + [Protection de votre Forms : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Créer des composants de formulaire personnalisés : guide du développeur](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveiller les performances des formulaires : Guide de surveillance en utilisation réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + Création WYSIWYG {#universal-editor}
-         + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Rendre votre Forms compatible avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Design Beautiful Forms : guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Ajout d’un comportement dynamique à Forms : guide complet de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Guide d’envoi de formulaire : configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Publication et déploiement de Forms : guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Créer des composants de formulaire personnalisés : guide du développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + Références {#forms-references}
-         + [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
+         + [Surveillance Des Performances Des Formulaires : Guides De Surveillance D’Utilisation Réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Resources Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)
