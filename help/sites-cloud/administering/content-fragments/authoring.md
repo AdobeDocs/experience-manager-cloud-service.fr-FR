@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 7%
+source-wordcount: '2847'
+ht-degree: 6%
 
 ---
 
@@ -312,10 +312,11 @@ Les [références de contenu](/help/sites-cloud/administering/content-fragments/
 
 #### Images de référence {#reference-images}
 
-Dans les champs **Référence de contenu** vous pouvez effectuer les opérations suivantes :
+Dans les champs **Référence de contenu** vous pouvez :
 
-* ressources de référence qui existent déjà dans le référentiel
-* les charger directement sur le champ ; cela évite d’avoir à utiliser la console **Assets** pour les charger
+* ressources de référence qui existent déjà dans votre référentiel local
+* ressources de référence résidant dans un référentiel distant
+* charger les ressources directement dans le champ ; cela évite d’avoir à utiliser la console **Assets** pour effectuer le chargement
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ Dans les champs **Référence de contenu** vous pouvez effectuer les opérations
   >* définir un **Chemin racine** (dans le [Modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)) ; Indique l’emplacement de stockage de l’image.
   >* inclure **Image** dans la liste des types de contenu acceptés
 
-Pour ajouter une ressource, vous pouvez effectuer l’une des opérations suivantes :
+##### Assets locale de référence {#reference-local-assets}
+
+Pour référencer une ressource locale, vous pouvez effectuer l’une des opérations suivantes :
 
 * faites glisser et déposez directement le nouveau fichier de ressource (par exemple, à partir de votre système de fichiers) dans le champ **Référence de contenu**
 * Utilisez l’action **Ajouter une ressource**, puis sélectionnez **Parcourir Assets** ou **Télécharger** pour ouvrir le sélecteur approprié à utiliser :
 
   ![Éditeur de fragment de contenu - Ajouter des options de ressource](assets/cf-authoring-add-asset-options.png)
+
+##### Assets distante de référence {#reference-remote-assets}
+
+Pour référencer des ressources distantes :
+
+1. Spécifiez le **référentiel** distant lors de la recherche de ressources :
+
+   ![Éditeur de fragment de contenu - Sélectionner une ressource à distance](assets/cf-authoring-remote-asset-01.png)
+
+2. Une fois la sélection effectuée, l’emplacement est visible dans les informations sur les ressources :
+
+   ![Éditeur de fragment de contenu - Ressource provenant du référentiel distant](assets/cf-authoring-remote-asset-02.png)
+
+###### Assets à distance - Limites {#remote-assets-limitations}
+
+Il existe certaines limitations lors du référencement de ressources distantes :
+
+* Seules les ressources [approuvées](/help/assets/approve-assets.md) sont disponibles pour référence à partir d’un référentiel de ressources distant.
+
+* Si une ressource référencée est supprimée du référentiel distant, une référence de contenu est rompue.
+
+* Tous les référentiels de ressources de diffusion auxquels l’utilisateur a accès peuvent être sélectionnés. La liste disponible ne peut pas être limitée.
+
+* L’instance AEM et les instances du référentiel de ressources distant doivent être dans la même version.
+
+* Aucune métadonnée de ressource n’est exposée via l’API de gestion ou l’API de diffusion. Vous devez utiliser l’API de métadonnées de ressource pour récupérer les détails des métadonnées de la ressource :
+
+   * les métadonnées de la ressource : [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * obtenez des informations de métadonnées en bloc à l’aide de l’API de recherche (expérimental) : [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>Consultez également la section [API AEM GraphQL à utiliser avec des fragments de contenu - Prise en charge des ressources Dynamic Media pour OpenAPI (Assets à distance)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Pages de référence {#reference-pages}
 

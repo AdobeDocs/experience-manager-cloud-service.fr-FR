@@ -4,10 +4,10 @@ description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du con
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 90%
+source-wordcount: '1972'
+ht-degree: 89%
 
 ---
 
@@ -17,9 +17,9 @@ Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du contenu en mode 
 
 >[!IMPORTANT]
 >
->Diverses fonctionnalités de l’API GraphQL à utiliser avec les fragments de contenu sont disponibles via le programme Adopteur anticipé.
+>Plusieurs fonctionnalités de l’API GraphQL à utiliser avec des fragments de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
 >
->Pour connaître l’état et savoir comment vous appliquer si vous le souhaitez, consultez les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1492,16 +1492,16 @@ La requête suivante renvoie toutes les `attachments`, un champ spécifique (sou
 }
 ```
 
-### Exemples de requêtes pour un fragment de contenu d’un modèle spécifique à l’aide de références UID {#sample-wknd-fragment-specific-model-uuid-references}
+### Exemples de requêtes pour un fragment de contenu d’un modèle spécifique à l’aide de références UUID {#sample-wknd-fragment-specific-model-uuid-references}
 
 Ces requêtes interrogent :
 
-* l’UUID d’un fragment de contenu et des fragments ou ressources de contenu référencés ;
-* le résultat est renvoyé par la propriété JSON `_id`
+* l’UUID d’un fragment de contenu et des fragments de contenu ou ressources référencés
+* le résultat est renvoyé par l’intermédiaire de la propriété JSON `_id`
 
-#### Exemple de requête pour un fragment de contenu d’un modèle spécifique à l’aide d’une référence UUID {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+#### Exemple de requête pour un fragment de contenu d’un modèle spécifique utilisant une référence UUID {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
 
-La requête suivante renvoie toutes les références de contenu en utilisant `_id` et `_path` :
+La requête suivante renvoie toutes les références de contenu à l’aide de `_id` et `_path` :
 
 ```graphql
 {
@@ -1531,7 +1531,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_i
 }
 ```
 
-#### Exemple de requête pour des fragments de contenu par référence UUID {#sample-wknd-fragment-specific-model-by-uuid-reference}
+#### Exemple de requête pour les fragments de contenu par référence UUID {#sample-wknd-fragment-specific-model-by-uuid-reference}
 
 La requête suivante renvoie toutes les références de contenu liées à un `_id` spécifique :
 
@@ -1873,19 +1873,23 @@ Cette requête interroge :
 } 
 ```
 
-## Exemples de requêtes pour la diffusion de DAM et Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+## Exemples de requêtes pour la diffusion de la gestion des ressources numériques et de Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
-Pour la diffusion d’images optimisée pour le web (des ressources de gestion des actifs numériques) :
+Pour la diffusion d’images optimisées pour le web (des ressources de gestion des ressources numériques) :
 
-* [Exemple de requête pour une diffusion d’images optimisée pour le web avec des paramètres complets](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+* [Exemple de requête pour la diffusion d’images optimisées pour le web avec des paramètres complets](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
 
-* [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+* [Exemple de requête pour la diffusion d’images optimisées pour le web avec un seul paramètre spécifié](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
 Pour la diffusion de l’URL vers une ressource Dynamic Media
 
 * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
 * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+Pour la diffusion de ressources distantes, qui ne sont pas locales à l’instance AEM actuelle, à partir de l’éditeur de fragment de contenu.
+
+* Voir [Exemple de requête pour Dynamic Media pour la prise en charge des ressources OpenAPI (Assets à distance)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## Exemple de structure de fragment de contenu (utilisée avec GraphQL) {#content-fragment-structure-graphql}
 

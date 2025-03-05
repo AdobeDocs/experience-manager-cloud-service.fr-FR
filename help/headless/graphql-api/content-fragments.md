@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 82%
+source-wordcount: '6021'
+ht-degree: 79%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 82%
 
 >[!IMPORTANT]
 >
->Diverses fonctionnalités de l’API GraphQL à utiliser avec les fragments de contenu sont disponibles via le programme Adopteur anticipé.
+>Plusieurs fonctionnalités de l’API GraphQL à utiliser avec des fragments de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
 >
->Pour connaître l’état et savoir comment vous appliquer si vous le souhaitez, consultez les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 
@@ -39,7 +39,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 
 >[!NOTE]
 >
->Voir [AEM API pour la diffusion et la gestion de contenu structurées](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
+>Consultez [API AEM pour la diffusion et la gestion de contenu structuré](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Il est recommandé d’utiliser les [Requêtes persistantes](/help/headless/grap
 
 Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
 
-Bien que GraphQL prenne également en charge les requêtes de GET, celles-ci peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide des requêtes persistantes.
+Bien que GraphQL prenne également en charge les requêtes GET, celles-ci peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées grâce aux Requêtes persistantes.
 
 Voir [Activer le cache des requêtes persistantes](/help/headless/deployment/dispatcher-caching.md) pour plus de détails.
 
@@ -171,13 +171,13 @@ Les autorisations sont celles requises pour accéder aux ressources.
 
 Les requêtes GraphQL sont exécutées avec l’autorisation de l’utilisateur ou utilisatrice AEM de la requête sous-jacente. Si l’utilisateur ou l’utilisatrice ne dispose pas d’un accès en lecture à certains fragments (stockés en tant que ressources), ils ne feront pas partie du jeu de résultats.
 
-En outre, l’utilisateur doit avoir accès à un point de terminaison GraphQL pour pouvoir exécuter des requêtes GraphQL.
+En outre, l’utilisateur ou l’utilisatrice doit avoir accès à un point d’entrée GraphQL pour pouvoir exécuter des requêtes GraphQL.
 
 ## Génération de schémas {#schema-generation}
 
 GraphQL est une API fortement typée, ce qui signifie que les données doivent être clairement structurées et organisées par type.
 
-La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer le [schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
+La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer le [Schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
 
 Pour les fragments de contenu, les schémas GraphQL (structure et types) reposent sur des [Modèles de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **activés** et leurs types de données
 
@@ -250,7 +250,7 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
   Une sélection de [types de données](#Data-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** de l’onglet **Type de données**.
 
-   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, un champ de texte d’une seule ligne peut être configuré pour contenir plusieurs textes d’une seule ligne en sélectionnant `multifield` dans la liste déroulante.
+   * Prenez également en compte le paramètre **Rendre en tant que**, car les utilisateurs et utilisatrices peuvent configurer certains types de données. Par exemple, pour configurer un champ de texte monoligne afin de contenir plusieurs textes monolignes, choisissez `multifield` dans la liste déroulante.
 
 * GraphQL pour AEM génère également plusieurs [champs d’assistance](#helper-fields).
 
@@ -260,7 +260,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Une seule ligne de texte | `String`, `[String]` | Utilisé pour les chaînes simples telles que les noms d’auteur, les noms d’emplacement, etc. |
+| Une seule ligne de texte | `String`, `[String]` | Utilisé pour les chaînes simples telles que les noms de créateur ou de créatrice, les noms d’emplacement, etc. |
 | Plusieurs lignes de texte | `String`, `[String]` | Utilisé pour la sortie de texte, telle que le corps d’un article |
 | Nombre | `Float`, `[Float]` | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen | `Boolean` | Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
@@ -276,7 +276,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 ### Champs d’assistant {#helper-fields}
 
-Outre les types de données pour les champs générés par l’utilisateur, GraphQL pour AEM génère également plusieurs champs *helper* pour aider à identifier un fragment de contenu ou fournir des informations supplémentaires sur un fragment de contenu.
+Outre les types de données des champs générés par l’utilisateur, GraphQL pour AEM génère également plusieurs champs *helper* pour faciliter l’identification d’un fragment de contenu ou fournir des informations supplémentaires sur un fragment de contenu.
 
 Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur ou l’utilisatrice de ce qui a été généré automatiquement.
 
@@ -317,13 +317,13 @@ Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/
 
 #### ID (UUID) {#id-uuid}
 
-Le champ Identifiant est également utilisé comme identifiant dans AEM GraphQL. Il représente le chemin d’accès de la ressource Fragment de contenu dans le référentiel AEM, mais au lieu de contenir le chemin d’accès réel, il contient un UUID représentant la ressource. Nous l’avons choisi comme identificateur d’un fragment de contenu, car il :
+Le champ d’identifiant est également utilisé comme identifiant dans AEM GraphQL. Il représente le chemin d’accès de la ressource de fragment de contenu dans le référentiel AEM, mais au lieu de contenir le chemin d’accès réel, il contient un UUID représentant la ressource. Nous l’avons choisi comme identificateur d’un fragment de contenu, car il :
 
 * est unique dans AEM ;
-* peut être facilement récupéré,
+* facilement récupérables,
 * ne change pas lorsque la ressource est déplacée.
 
-L’UUID d’un fragment de contenu et d’un fragment de contenu référencé, ou ressource, peut être renvoyé via la propriété JSON `_id`.
+L’UUID d’un fragment de contenu et d’un fragment de contenu ou d’une ressource référencé(e) peut être renvoyé via la `_id` de propriété JSON.
 
 ```graphql
 {
@@ -553,11 +553,11 @@ Chaque champ peut être filtré par son propre jeu d’expressions. Les jeux d�
 
 Une définition de filtre (transmise comme l’argument `filter` dans une requête) contient les éléments suivants :
 
-* Une sous-définition pour chaque champ (le champ est accessible par son nom, par exemple, il y a un champ `lastName` dans le filtre pour le champ `lastName` dans le type Données (champ))
+* Une sous-définition pour chaque champ (le champ est accessible via son nom, par exemple, il y a un champ `lastName` dans le filtre pour le champ `lastName` dans le type de données (champ)).
 * Chaque sous-définition contient le tableau `_expressions`, qui fournit le jeu d’expressions, ainsi que le champ `_logOp`, qui définit l’opérateur logique avec lequel les expressions doivent être combinées.
 * Chaque expression est définie par la valeur (champ `value`) et l’opérateur (champ `_operator`) auxquels le contenu d’un champ doit être comparé.
 
-Vous pouvez omettre `_logOp` si vous souhaitez combiner des éléments avec `AND` et `_operator` si vous souhaitez vérifier l’égalité, car il s’agit des valeurs par défaut.
+Vous pouvez omettre l’`_logOp` si vous souhaitez combiner des éléments avec des `AND` et l’`_operator` si vous souhaitez vérifier l’égalité, car il s’agit des valeurs par défaut.
 
 L’exemple suivant illustre une requête complète qui filtre toutes les personnes dont le `lastName` est `Provo` ou contenant `sjö`, quel que soit le cas :
 
@@ -609,8 +609,8 @@ Cette fonctionnalité vous permet de trier les résultats de la requête en fonc
 Les critères de tri sont les suivants :
 
 * il s’agit d’une liste de valeurs séparées par des virgules représentant le chemin du champ,
-   * le premier champ de la liste définit l’ordre de tri principal, le second champ est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
-   * notation pointillée, c’est-à-dire field1.subfield.subfield, etc..
+   * le premier champ de la liste définit l’ordre de tri principal, le second est utilisé si deux valeurs du critère de tri principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
+   * notation en pointillés, c’est-à-dire field1.subfield.subfield et ainsi de suite...
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
    * le sens d’ordre peut être spécifié par champ : vous pouvez trier un champ par ordre croissant et un autre par ordre décroissant (name, firstName DESC).
@@ -747,9 +747,9 @@ query {
 
 ## Diffusion d’images optimisées pour le web dans des requêtes GraphQL {#web-optimized-image-delivery-in-graphql-queries}
 
-La diffusion d&#39;images optimisées pour le Web permet d&#39;utiliser une requête Graphql pour :
+La diffusion d’images optimisées pour le web vous permet d’utiliser une requête Graphql pour :
 
-* Demande d’une URL à une image de ressource DAM (référencée par une **référence de contenu**)
+* Demander une URL à une image de ressource de gestion des ressources numériques (référencée par une **Référence de contenu**)
 
 * Transmettez des paramètres avec la requête, de sorte qu’un rendu spécifique de l’image soit automatiquement généré et renvoyé.
 
@@ -769,17 +769,17 @@ Vous pouvez ainsi créer dynamiquement des rendus d’image pour la diffusion JS
 
 La solution de GraphQL vous permet :
 
-* Demander une URL : utilisez `_dynamicUrl` sur la référence `ImageRef`
+* Demander une URL : utiliser `_dynamicUrl` sur la référence `ImageRef`
 
-* Transmettez les paramètres : ajoutez `_assetTransform` à l’en-tête de liste où vos filtres sont définis.
+* Transmettre des paramètres : ajoutez des `_assetTransform` à l’en-tête de liste où vos filtres sont définis.
 
 >[!NOTE]
 >
->Une **référence de contenu** peut être utilisée pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>Une **Référence de contenu** peut être utilisée pour les ressources de gestion des ressources numériques et les ressources Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
 >* `_dynamicUrl` : ressource DAM
->* `_dmS7Url` : une ressource Dynamic Media
+>* `_dmS7Url` : ressource Dynamic Media
 > 
->Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` sera `null`. Voir [Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` est `null`. Voir [ Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -944,7 +944,7 @@ Par exemple, pour exécuter directement les exemples précédents (enregistrés 
      >
      >Le chiffre `;`est obligatoire pour terminer correctement la liste des paramètres.
 
-### Limites de la diffusion d’images optimisée pour le web {#web-optimized-image-delivery-limitations}
+### Limites de la diffusion d’images optimisées pour le web {#web-optimized-image-delivery-limitations}
 
 Les restrictions suivantes s’appliquent :
 
@@ -957,40 +957,40 @@ Les restrictions suivantes s’appliquent :
 
 ## Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource Dynamic Media (Scene7) AEM (référencée par une **référence de contenu**).
+GraphQL pour les fragments de contenu AEM vous permet de demander une URL à une ressource AEM Dynamic Media (Scene7) (référencée par une **Référence de contenu**).
 
 La solution de GraphQL vous permet :
 
 * d’utiliser `_dmS7Url` sur la référence `ImageRef` ;
    * voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
-* utiliser `_dmS7Url` sur plusieurs références ; `ImageRef`, `MultimediaRef` et `DocumentRef`
+* utiliser des `_dmS7Url` sur plusieurs références ; `ImageRef`, `MultimediaRef` et `DocumentRef`
    * voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 * Utilisation de `_dmS7Url` avec la fonctionnalité de recadrage intelligent
 
-   * La propriété `_smartCrops` expose les configurations de recadrage intelligent disponibles pour une ressource spécifique.
+   * La propriété `_smartCrops` expose les configurations de recadrage intelligent disponibles pour une ressource spécifique
 
-   * voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - avec recadrage intelligent ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
-
->[!NOTE]
->
->Pour ce faire, vous devez disposer d’une [configuration de cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
->
->Cela ajoute les attributs `dam:scene7File` et `dam:scene7Domain` aux métadonnées de la ressource lors de sa création.
+   * voir [ Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
->Une **référence de contenu** peut être utilisée pour les ressources DAM et Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>Pour cela, vous devez disposer d’une [configuration cloud Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 >
->* `_dmS7Url` : une ressource Dynamic Media
+>Les attributs `dam:scene7File` et `dam:scene7Domain` sont alors ajoutés aux métadonnées de la ressource lors de sa création.
+
+>[!NOTE]
+>
+>Une **Référence de contenu** peut être utilisée pour les ressources de gestion des ressources numériques et les ressources Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>
+>* `_dmS7Url` : ressource Dynamic Media
 >* `_dynamicUrl` : ressource DAM
 > 
->Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` sera `null`. Voir [diffusion d’images optimisée pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` est `null`. Voir [ Diffusion d’images optimisées pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Voici un exemple de requête :
-* pour plusieurs fragments de contenu de type `team` et `person`, renvoyant un `ImageRef`
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’un `ImageRef`
 
 ```graphql
 query allTeams {
@@ -1017,7 +1017,7 @@ query allTeams {
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Voici un exemple de requête :
-* pour plusieurs fragments de contenu de type `team` et `person`, renvoyant un `ImageRef`, `MultimediaRef` et `DocumentRef` :
+* pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’un `ImageRef`, d’un `MultimediaRef` et d’un `DocumentRef` :
 
 ```graphql
 query allTeams {
@@ -1055,11 +1055,11 @@ query allTeams {
 }
 ```
 
-### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - avec recadrage intelligent {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 Voici un exemple de requête :
 
-* pour exposer les configurations de recadrage intelligent disponibles pour les ressources demandées
+* pour afficher les configurations de recadrage intelligent disponibles pour les ressources demandées :
 
 ```graphql
 query allTeams {
@@ -1084,6 +1084,110 @@ query allTeams {
   }
 } 
 ```
+
+## Prise en charge des ressources Dynamic Media pour OpenAPI (Assets à distance) {#dynamic-media-for-openapi-asset-support}
+
+L’intégration [Ressources distantes](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) vous permet de référencer des Assets qui ne sont pas locales à l’instance AEM active à partir de l’éditeur de fragment de contenu. Elle est implémentée par Dynamic Media pour la prise en charge des ressources OpenAPI dans l’éditeur de fragment de contenu et le GraphQL JSON.
+
+### Exemple de requête pour Dynamic Media pour la prise en charge des ressources OpenAPI (Assets à distance) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+Voici un exemple de requête :
+
+* pour illustrer le concept de référencement de ressources distantes :
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* la réponse
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limites**
+
+Les limitations actuelles sont les suivantes :
+
+* La diffusion GraphQL prend uniquement en charge `repositoryId` et `assetId` (les autres métadonnées de ressource ne sont pas renvoyées)
+
+  >[!NOTE]
+  >
+  >L’URL complète doit ensuite être construite côté client, en fonction de l’[API de diffusion de ressources](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Seules les ressources *approuvées* pourront être référencées à partir des référentiels distants
+* Si une ressource référencée est supprimée du référentiel distant, la référence à une ressource de fragment de contenu sera rompue.
+* Tous les référentiels de ressources de diffusion auxquels l’utilisateur a accès seront disponibles pour sélection. La liste disponible ne peut pas être limitée.
+* L’instance AEM et les instances du référentiel de ressources distant doivent être de la même version.
+* Aucune métadonnée de ressource n’est exposée via l’[API Management](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) et l’[API Delivery](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Vous devez utiliser l’API de métadonnées de ressource pour récupérer les détails des métadonnées de la ressource.
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
@@ -1142,10 +1246,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
       * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
          * Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-      * `_id` : UUID de votre fragment de contenu dans le référentiel
+      * `_id` : UUID du fragment de contenu dans le référentiel
 
-         * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
-         * [Voir Exemple de requête pour des fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
+         * Voir [ Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * [Voir Exemple de requête pour les fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
          * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
@@ -1162,34 +1266,34 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * Pour la diffusion d&#39;images :
+   * Pour la diffusion d’images :
 
       * `_authorURL` : URL complète de la ressource image sur l’auteur AEM
-      * `_publishURL` : URL complète de la ressource image sur AEM Publish
+      * `_publishURL` : URL complète de la ressource image sur l’instance de publication AEM
 
-      * Pour la [diffusion d’image optimisée pour le web](#web-optimized-image-delivery-in-graphql-queries) (de ressources DAM) :
+      * Pour la [diffusion d’images optimisées pour le web](#web-optimized-image-delivery-in-graphql-queries) (des ressources de gestion des ressources numériques) :
 
          * `_dynamicUrl` : URL complète de la ressource DAM optimisée pour le web sur la référence `ImageRef`
 
            >[!NOTE]
            >
-           >`_dynamicUrl` est l’URL préférée à utiliser pour les ressources DAM optimisées pour le web et doit remplacer `_path`, `_authorUrl` et `_publishUrl` chaque fois que cela est possible.
+           >`_dynamicUrl` est l’URL préférée à utiliser pour les ressources de gestion des ressources numériques optimisées pour le web. Elle doit remplacer l’utilisation de `_path`, `_authorUrl` et `_publishUrl` chaque fois que cela est possible.
 
-         * `_assetTransform` : pour transmettre des paramètres sur l’en-tête de liste dans lequel vos filtres sont définis
+         * `_assetTransform` : pour transmettre des paramètres dans l’en-tête de liste où vos filtres sont définis
 
          * Voir :
 
-            * [Exemple de requête pour une diffusion d’images optimisée pour le web avec des paramètres complets](#web-optimized-image-delivery-full-parameters)
+            * [Exemple de requête pour la diffusion d’images optimisées pour le web avec des paramètres complets](#web-optimized-image-delivery-full-parameters)
 
-            * [Exemple de requête pour une diffusion d’image optimisée pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
+            * [Exemple de requête pour la diffusion d’images optimisées pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [ ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-   * `_tags` : pour révéler les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
+   * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
 
       * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
       * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag).
@@ -1232,13 +1336,13 @@ Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vo
 
 Voir [Authentification pour les requêtes distantes AEM GraphQL sur les fragments de contenu](/help/headless/security/authentication.md).
 
-## Tests automatisés {#automated-testing}
+## Test automatisé {#automated-testing}
 
-Lors de l’exécution d’un pipeline de déploiement dans AEM Cloud Manager, les tests automatisés sont exécutés pendant l’exécution du pipeline.
+Lors de l’exécution d’un pipeline de déploiement dans AEM Cloud Manager, des tests automatisés sont exécutés lors de l’exécution du pipeline.
 
-Pour fournir des résultats précis, votre environnement AEM as a Cloud Service **Stage** doit refléter votre environnement **Production** aussi près que possible. Ceci est particulièrement important pour le contenu.
+Pour obtenir des résultats précis, votre environnement AEM as a Cloud Service **Stage** doit refléter votre environnement **Production** aussi fidèlement que possible. Ceci est particulièrement important pour le contenu.
 
-Pour ce faire, utilisez l’&#39;outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) d’&#39;AEM as a Cloud Service pour copier le contenu de production dans l’environnement d’évaluation.[
+Pour ce faire, vous pouvez utiliser l’outil de copie de contenu d’AEM as a Cloud Service [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) pour copier votre contenu de production dans l’environnement d’évaluation.
 
 ## Limites {#limitations}
 
