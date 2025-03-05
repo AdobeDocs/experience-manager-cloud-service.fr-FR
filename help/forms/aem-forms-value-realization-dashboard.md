@@ -1,64 +1,78 @@
 ---
-title: Tableau de bord de la réalisation de valeurs AEM Forms
-description: Surveillez facilement les envois de formulaire sur vos instances AEM Forms avec notre tableau de bord de suivi intuitif.
+title: Tableau de bord de réalisation des valeurs d’AEM Forms
+description: Surveillez facilement les envois de formulaires sur vos instances AEM Forms avec notre tableau de bord de suivi intuitif.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# Présentation du tableau de bord de la réalisation de vos valeurs : tirer parti de votre Forms {#value-realization-dashboard}
 
-<span class="preview"> Cette fonctionnalité est une fonctionnalité bêta, activée uniquement pour quelques clients sélectionnés. </span>
+# Présentation de votre tableau de bord de réalisation des valeurs
 
-Bienvenue dans votre guichet unique pour comprendre la valeur que vos formulaires apportent ! Ce tableau de bord vous fournit des informations précieuses pour optimiser vos formulaires, rationaliser les processus et, au final, atteindre vos objectifs plus rapidement.
-
-## Qu’y a-t-il dans le tableau de bord ? {#content-of-dashboard}
-
-Ce tableau de bord est votre fenêtre sur l’utilisation de vos formulaires. Voici une ventilation des sections clés :
-
-### Activité du formulaire au fil du temps :
-
-* **Envois de formulaire** : affichez les tendances de la fréquence d’exécution de vos formulaires.
-* **Rendus de document** : effectuez le suivi du nombre de documents rendus au fil du temps.
-* **Forms créée et publiée** : surveillez le rythme de création et de déploiement de nouveaux formulaires.
-* **Temps de création et de publication de formulaire** : analysez les temps moyens de création et de publication de formulaires pour identifier les domaines à améliorer.
-
-### Utilisation du fragment :
-
-* **Nombre de fragments de formulaire en cours d’utilisation** : voir le nombre de sections de formulaire réutilisables actuellement intégrées aux formulaires actifs.
-* **Number of Form Fragment Re-use** : jauge la fréquence d’utilisation de ces fragments dans différents formulaires.
+![Tableau de bord de réalisation de la valeur](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-## En Quoi Cela Vous Bénéficie-T-Il ? {#benefits-to-you}
+<span class="preview"> Il s’agit d’une fonctionnalité bêta, activée uniquement pour quelques clients sélectionnés. </span>
 
-Ce tableau de bord vous permet de prendre des décisions basées sur les données concernant vos formulaires. Voici comment :
+Bienvenue dans votre guichet unique pour comprendre la valeur que vos formulaires apportent ! Ce tableau de bord vous fournit des informations précieuses qui vous permettent d’optimiser vos formulaires, de rationaliser les workflows et, au final, d’atteindre plus rapidement vos objectifs.
 
-* **Identifier le Forms populaire** : des taux d’envoi élevés indiquent des formulaires de valeur. Analysez-les pour connaître les bonnes pratiques à répliquer dans d’autres.
-* **Optimiser la création de formulaire** : réduisez les temps de création en identifiant les goulets d’étranglement. Explorez les modèles prédéfinis ou rationalisez les workflows.
-* **Stimuler la réutilisation des fragments** : encouragez la collaboration et la découverte de fragments réutilisables. Des bibliothèques de fragments bien organisées peuvent améliorer considérablement l’efficacité.
+Cet article présente un aperçu conceptuel du tableau de bord de réalisation de valeurs et de ses avantages. Pour obtenir des instructions d’utilisation détaillées et l’interprétation des mesures, voir [Interprétation des informations d’utilisation des formulaires à l’aide du tableau de bord de réalisation des valeurs](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
 
 
-## Transformation des statistiques en action {#turning-insights-into-actions}
+![tableau de bord de réalisation des valeurs](/help/forms/assets/forms-usage-insights.png)
 
-Traduisons ces résultats en étapes pratiques !
+## Que contient le tableau de bord ? {#content-of-dashboard}
 
-* **Faibles envois ?** Examinez la clarté et la convivialité du formulaire. Est-ce trop long ou poser des questions déroutantes ? Envisagez de réviser pour une meilleure expérience utilisateur.
-* **Temps de création élevé ?** Ventilez le processus de création. Les étapes ou fonctionnalités inutiles ne sont-elles pas utilisées efficacement ? Utilisez des fonctionnalités d’économie de temps telles que les modèles.
+Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des formulaires. Voici une répartition des sections clés :
+
+### Activité Formulaires et documents dans le temps
+
+* **Envois de formulaires** : consultez les tendances relatives à la fréquence de remplissage de vos formulaires.
+* **Rendus de document** : suivez le nombre de documents rendus au fil du temps.
+* **Forms Créé et publié** : surveillez la vitesse à laquelle les nouveaux formulaires sont créés et déployés.
+* **Temps de création et de publication de formulaire** : analysez les temps moyens de création et de publication des formulaires pour identifier les améliorations à apporter.
+
+### Utilisation du fragment
+
+* **Nombre de fragments de formulaire utilisés** : consultez le nombre de sections de formulaire réutilisables actuellement intégrées aux formulaires actifs.
+* **Réutilisation des fragments de formulaire** : évaluez la fréquence d’utilisation de ces fragments dans différents formulaires.
+
+
+
+
+## En quoi cela vous avantage-t-il ? {#benefits-to-you}
+
+Ce tableau de bord vous permet de prendre des décisions pilotées par les données concernant vos formulaires. Procédez comme suit :
+
+* **Identification des Forms populaires** : des taux d’envoi élevés indiquent la valeur des formulaires. Analysez-les pour connaître les bonnes pratiques à répliquer dans d’autres.
+* **Optimiser la création de formulaire** : réduisez les temps de création en identifiant les goulets d’étranglement. Explorer des modèles préconfigurés ou rationaliser les workflows.
+* **BOOSTER LA RÉUTILISATION DES FRAGMENTS** : encourager la collaboration et la possibilité de découvrir des fragments réutilisables. Une bonne organisation des bibliothèques de fragments peut améliorer considérablement l’efficacité.
+
+
+## Transformer les informations en actions {#turning-insights-into-actions}
+
+Traduisons ces résultats en actions concrètes !
+
+* **Faibles envois ?** Examinez la clarté et la convivialité du formulaire. Est-ce trop long ou a-t-il des questions déroutantes? Envisagez de réviser pour une meilleure expérience utilisateur.
+* **Temps de création élevés ?** Décomposer le processus de création. Existe-t-il des étapes ou des fonctionnalités inutiles qui ne sont pas utilisées efficacement ? Utilisez des fonctionnalités permettant de gagner du temps telles que les modèles.
 * **Fragments sous-utilisés ?** Assurez-vous que les fragments sont bien organisés, consultables et faciles à comprendre. Envisagez de promouvoir l’utilisation des fragments au sein de votre équipe.
 
-En analysant ces tendances, vous pouvez créer de meilleurs formulaires, gagner du temps sur la création et exploiter les composants réutilisables. Cela se traduit par un flux de travail plus fluide, des utilisateurs plus heureux et, en fin de compte, un meilleur retour sur votre investissement.
+En analysant ces tendances, vous pouvez créer de meilleurs formulaires, gagner du temps lors de la création et exploiter des composants réutilisables. Cela se traduit par un workflow plus fluide, des utilisateurs plus heureux et, finalement, un meilleur retour sur investissement.
 
 ## Autres conseils {#additional-tips}
 
-* **Définir les objectifs :** Déterminez ce que vous souhaitez obtenir avec vos formulaires. S’agit-il d’une collecte de données accrue, d’une génération de pistes plus rapide ou d’une meilleure satisfaction client ? Connaître vos objectifs guide votre analyse du tableau de bord.
-* **Révision régulière :** Planifiez les visites régulières avec le tableau de bord pour suivre la progression et identifier de nouveaux domaines à améliorer.
-* **Expérience et affinage :** N’ayez pas peur d’expérimenter différentes conceptions de formulaire et différentes utilisations de fragments. Le tableau de bord vous aide à mesurer l’efficacité de vos modifications.
+* **Définir des objectifs :** déterminez ce que vous souhaitez accomplir avec vos formulaires. Collecte de données accrue, génération de pistes plus rapide ou amélioration de la satisfaction client ? La connaissance de vos objectifs guide votre analyse du tableau de bord.
+* **Révision régulière :** planifiez des vérifications régulières avec le tableau de bord pour suivre les progrès et identifier les nouveaux domaines à améliorer.
+* **Expérimenter et affiner :** n’ayez pas peur d’expérimenter avec différentes conceptions de formulaire et l’utilisation de fragment. Le tableau de bord vous aide à mesurer l’efficacité de vos modifications.
 
-Rappelez-vous, ce tableau de bord est votre allié ! En l’utilisant efficacement, vous pouvez transformer vos formulaires d’outils simples de collecte de données en ressources stratégiques qui vous aideront, ainsi qu’à votre entreprise, à réussir.
+Rappelez-vous, ce tableau de bord est votre allié ! En l’utilisant efficacement, vous pouvez transformer vos formulaires de simples outils de collecte de données en ressources stratégiques qui favorisent le succès pour vous et votre entreprise.
+
+## Voir également
+
+* [Interprétation des informations d’utilisation](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
