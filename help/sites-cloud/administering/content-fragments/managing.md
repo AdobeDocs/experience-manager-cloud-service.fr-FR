@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 42%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 42%
 >
 >Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-Découvrez comment gérer vos **fragments de contenu** dans Adobe Experience Manager (AEM) as a Cloud Service, à partir de la [console Fragments de contenu](#content-fragments-console) et de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor) dédiés. Ces fragments de contenu peuvent être utilisés comme base de votre contenu découplé ou pour la création de pages.
+Découvrez comment gérer vos **fragments de contenu** dans Adobe Experience Manager (AEM) as a Cloud Service, à l’aide de la [console Fragments de contenu](#content-fragments-console) et de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor) dédiés. Ces fragments de contenu peuvent être utilisés comme base de votre contenu découplé ou pour la création de pages.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Pour plus d’informations, consultez la section suivante :
 
 >[!CAUTION]
 >
->Cette console est *uniquement* disponible dans l’as a Cloud Service en ligne Adobe Experience Manager (AEM).
+>Cette console est *uniquement* disponible dans l’as a Cloud Service Adobe Experience Manager (AEM) en ligne.
 
 ### Structure et gestion de base de la console {#basic-structure-handling-content-fragments-console}
 
@@ -163,7 +163,7 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 
 >[!NOTE]
 >
->Des actions telles que Publish, Dépublier, Supprimer, Déplacer, Renommer et Copier déclenchent chacune une tâche asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
+>Des actions telles que Publier, Dépublier, Supprimer, Déplacer, Renommer et Copier déclenchent chacune une tâche asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
 ### Les informations fournies sur vos fragments de contenu {#information-content-fragments}
 
@@ -237,6 +237,7 @@ Pour créer un fragment de contenu :
 
    * **Emplacement** - Saisie automatique de l’emplacement actuel, mais vous pouvez sélectionner un autre emplacement si nécessaire.
    * **Modèle de fragment de contenu** - Sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
+   * **Balise automatique** - Lorsque vous sélectionnez cette option, toutes les balises affectées au modèle de fragment de contenu sont héritées par le nouveau fragment de contenu et lui sont ajoutées.
    * **Titre**
    * **Nom** - Saisie automatique en fonction du **Titre**, mais vous pouvez le modifier, si nécessaire.
    * **Description**
@@ -310,7 +311,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
   >[!CAUTION]
   >
-  >La publication de fragments de contenu dans le **service d’aperçu** n’est disponible qu’à partir de la console Fragments de contenu ; à l’aide de l’action **Publish**.
+  >La publication de fragments de contenu dans le **service d’aperçu** n’est disponible qu’à partir de la console Fragments de contenu ; à l’aide de l’action **Publier**.
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
 ### Publication {#publishing}
 
-Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publish** à partir de :
+Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
 * la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
@@ -332,11 +333,11 @@ Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publish
 
 * la barre d’outils de l’[éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Après avoir sélectionné l’action **Publish** :
+Après avoir sélectionné l’action **Publier** :
 
 1. Sélectionnez l’une des options suivantes pour ouvrir la boîte de dialogue appropriée :
 
-   * **Maintenant** **- sélectionnez le service** Publish ou le service **Aperçu** ; après confirmation, le fragment sera publié immédiatement
+   * **Maintenant** - sélectionnez le service **Publication** ou le service **Aperçu** ; après confirmation, le fragment sera publié immédiatement
    * **Planification** - en plus du service requis, vous pouvez également sélectionner la date et l’heure de publication du fragment
 
 1. Fournissez tous les détails dans la boîte de dialogue. Par exemple, pour une requête de publication planifiée :
