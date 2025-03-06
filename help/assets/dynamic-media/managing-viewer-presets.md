@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '4326'
-ht-degree: 100%
+source-wordcount: '4301'
+ht-degree: 99%
 
 ---
 
@@ -427,7 +427,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
      Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
-     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, pour en savoir plus sur les marqueurs CSS de la visionneuse de zoom, reportez-vous à [Personnalisation de la visionneuse de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
+     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous souhaitez en savoir plus sur les marqueurs CSS de la visionneuse Zoom, voir [Personnalisation de la visionneuse Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
 
    >[!NOTE]
    >
@@ -448,10 +448,6 @@ Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > *
       * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
       * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
       * Si le navigateur ne prend en charge ni DASH ni HLS, la lecture progressive est utilisée en dernier lieu.
-
-   >[!NOTE]
-   >
-   >Pour afficher et utiliser l’option **[!UICONTROL dash]**, celle-ci doit d’abord être activée par le support technique d’Adobe sur votre compte. Voir [Activer DASH sur votre compte](/help/assets/dynamic-media/video.md#enable-dash).
 
 1. Dans le menu déroulant **[!UICONTROL Type sélectionné]**, sélectionnez un composant dont vous souhaitez modifier le comportement.
 

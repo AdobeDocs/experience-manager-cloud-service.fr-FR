@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2023.2.0 d’ [!DNL Adobe Expe
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,6 @@ Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résum�
 * Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
    * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux
    * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos.
-   * Disponible en Amérique du Nord, pour activation via un ticket d’assistance, bientôt disponible en APAC, EMEA
 
 * Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. Les fonctionnalités de balisage et de recadrage intelligents sont désormais également prises en charge pour ces fichiers.
 
