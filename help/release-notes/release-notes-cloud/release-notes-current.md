@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 60%
+source-wordcount: '1419'
+ht-degree: 48%
 
 ---
 
@@ -122,19 +122,27 @@ Les API de génération de documents d’AEM Forms vous permettent désormais de
 
 ### Prise en charge de Java 21 {#java21}
 
-Vous pouvez désormais créer du code avec Java 21, ce qui inclut de nouvelles fonctionnalités (par exemple, la correspondance de modèles pour les instructions switch, les classes scellées) et des améliorations de performances. Les versions Java 17 sont également prises en charge. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir l’article [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
+Comme mentionné dans les notes de mise à jour de janvier, vous pouvez désormais créer du code avec Java 21, qui inclut de nouvelles fonctionnalités (par exemple, la correspondance de modèles pour les instructions de commutateur, les classes scellées) et des améliorations de performances ; les versions Java 17 sont également nouvellement prises en charge. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, voir l’article [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 L’**exécution** de Java 21 la plus performante sera automatiquement déployée lorsqu’une version Java 17 ou 21 est détectée. Cependant, nous vous recommandons également d’opter pour l’exécution de Java 21 pour les environnements créés avec Java 11, en envoyant un e-mail à [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Découvrez les [exigences d’exécution de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> L’**exécution** de Java 21 sera progressivement déployée dans **tous** les environnements (à l’exception de ceux déjà créés avec Java 17 ou 21, qui disposent déjà d’une exécution Java 21), en commençant par les sandbox et le développement/RDE en février, puis l’évaluation/l’exploitation en avril.
+> En février, Java 21 **runtime** a été déployé dans les environnements de développement/RDE (en dehors de ceux déjà créés avec Java 17 ou 21, qui disposent déjà d’une exécution Java 21). Java 21 sera appliqué aux environnements d’évaluation/de production en avril.
 
-### Les programmes de sandbox prennent en charge les pipelines de configuration. {#sandbox-config-pipelines}
+### Edge Computing - Demande de commentaires {#edge-computing-feedback}
 
-Les programmes de sandbox prennent désormais en charge les pipelines de configuration, qui peuvent être configurés dans Cloud Manager pour déployer des fichiers yaml conservés dans Git.
+L’Edge Computing rapproche le traitement des données du navigateur, ce qui présente des avantages, notamment une latence réduite. Adobe aimerait savoir si vous trouvez cette technologie utile pour la diffusion de l’instance de publication AEM et les projets Edge Delivery Services. De plus, indiquez-nous ce que vous envisagez de faire avec comme contribution à la feuille de route du produit.
 
-[Découvrez](/help/operations/config-pipeline.md) les pipelines de configuration, qui permettent la configuration du réseau CDN, le transfert de journaux et les tâches de maintenance de purge de version ou de journal d’audit.
+Quelques cas d’utilisation possibles :
+* Authentification avec un IdP pour accéder au contenu
+* Effectuer le rendu d’un contenu dynamique (personnalisé, localisé) en fonction de la géolocalisation, du type d’appareil, des attributs utilisateur, etc.
+* Manipulation d’image avancée
+* Middleware entre le réseau CDN et une origine
+* Couche entre le navigateur et une API tierce, peut-être pour reformater la réponse de l’API
+* Agréger des données provenant de plusieurs origines afin de faciliter leur rendu par le navigateur client
+
+Envoyez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) contenant des questions et des commentaires.
 
 ### API OpenAPI - Programme d’adoption anticipée {#open-apis-earlyadopter}
 
@@ -148,10 +156,6 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 * [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [API Sites and Assets Folders](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Edge Computing - Demande de commentaires {#edge-computing-feedback}
-
-L’Edge Computing rapproche le traitement des données du navigateur, ce qui présente des avantages, notamment une latence réduite. Adobe aimerait savoir si cette technologie est utile pour la diffusion de publications AEM et les projets Edge Delivery Services. De plus, faites-nous part de l’utilisation que vous envisagez d’en faire afin de contribuer à la feuille de route du produit. Envoyez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) contenant des questions et des commentaires.
 
 ### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
 
