@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # Utiliser le tableau de bord de réalisation des valeurs pour analyser les tendances d’utilisation des formulaires et documents
 
 <span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à l’adresse aem-forms-ea@adobe.com. <span>
 
 ![Tableau de bord de réalisation des valeurs](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 En surveillant régulièrement les mesures présentées dans le tableau de bord « Informations sur l’utilisation de Forms », vous pouvez obtenir des informations précieuses sur les performances de vos formulaires, documents et fragments de formulaire. Utilisez ces données pour prendre des décisions éclairées sur la conception de formulaire, la gestion des fragments et la stratégie de formulaire globale.
 
