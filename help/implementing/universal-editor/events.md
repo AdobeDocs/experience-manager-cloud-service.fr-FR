@@ -4,9 +4,9 @@ description: Découvrez les différents événements envoyés par l’éditeur u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ Payload de réponse
 
 ## Événements d’interface utilisateur {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-L’événement `aue:ui-publish` est déclenché lors de la publication du contenu (avec des appels au niveau du `BODY`).
-
-La payload consiste en une liste d’ID d’élément et de leur statut de publication.
-
-### aue:ui-select {#ui-select}
-
-L’événement `aue:ui-select` est déclenché lorsqu’un composant est sélectionné.
-
-La payload correspond à l’ID d’élément, aux propriétés de l’élément et au type d’élément du composant sélectionné.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 L’événement `aue:ui-preview` est déclenché lorsque le mode de modification de la page devient **Aperçu**.
@@ -271,10 +248,9 @@ La payload est vide pour cet événement.
 
 | Événement | Comportement |
 |---|---|
-| `aue:ui-publish` | Ne rien faire |
 | `aue:ui-select` | Faire défiler jusqu’à l’élément sélectionné |
-| `aue:ui-preview` | Ajouter un `class="adobe-ue-preview"` à la balise d’HTML |
-| `aue:ui-edit` | Ajouter un `class=adobe-ue-edit"` à la balise d’HTML |
+| `aue:ui-preview` | Ajouter des `class="adobe-ue-preview"` à la balise HTML |
+| `aue:ui-edit` | Ajouter des `class=adobe-ue-edit"` à la balise HTML |
 | `aue:ui-viewport-change` | Ne rien faire |
 | `aue:initialized` | Ne rien faire |
 
