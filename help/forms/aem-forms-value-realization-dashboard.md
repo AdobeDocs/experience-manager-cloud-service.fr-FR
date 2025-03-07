@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des for
 * **Envois de formulaires** : consultez les tendances relatives à la fréquence de remplissage de vos formulaires.
 * **Rendus de document** : suivez le nombre de documents rendus au fil du temps.
 * **Forms Créé et publié** : surveillez la vitesse à laquelle les nouveaux formulaires sont créés et déployés.
-* **Temps de création et de publication de formulaire** : analysez les temps moyens de création et de publication des formulaires pour identifier les améliorations à apporter.
 
 ### Utilisation du fragment
 

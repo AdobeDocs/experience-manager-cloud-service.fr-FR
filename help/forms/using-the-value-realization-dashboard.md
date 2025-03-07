@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Cet article fournit des instructions d’utilisation détaillées et l’interpr
 Pour accéder au tableau de bord des informations d’utilisation de Forms :
 
 1. Accédez à **Forms** > **Forms et documents**
-1. Cliquez sur **Tableau de bord des informations**. Le tableau de bord s’ouvre dans une nouvelle fenêtre.
+1. Cliquez sur **Tableau de bord InProduct**. Le tableau de bord s’ouvre dans une nouvelle fenêtre.
 
    ![Tableau de bord de réalisation des valeurs](/help/forms/assets/forms-usage-insights.png)
 
