@@ -1,14 +1,14 @@
 ---
-title: Tableau de bord de réalisation des valeurs d’AEM Forms
-description: Surveillez facilement les envois de formulaires sur vos instances AEM Forms avec notre tableau de bord de suivi intuitif.
+title: Tableau de bord de réalisation de valeur AEM Forms
+description: Surveillez facilement les envois de formulaires sur vos instances AEM Forms avec un tableau de bord de suivi intuitif.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 Bienvenue dans votre guichet unique pour comprendre la valeur que vos formulaires apportent ! Ce tableau de bord vous fournit des informations précieuses qui vous permettent d’optimiser vos formulaires, de rationaliser les workflows et, au final, d’atteindre plus rapidement vos objectifs.
 
-Cet article présente un aperçu conceptuel du tableau de bord de réalisation de valeurs et de ses avantages. Pour obtenir des instructions d’utilisation détaillées et l’interprétation des mesures, voir [Interprétation des informations d’utilisation des formulaires à l’aide du tableau de bord de réalisation des valeurs](/help/forms/using-the-value-realization-dashboard.md).
-
-
+Cet article présente un aperçu conceptuel du tableau de bord de réalisation de valeurs et de ses avantages. Pour obtenir des instructions d’utilisation détaillées et l’interprétation des mesures, voir [utiliser le tableau de bord de réalisation des valeurs pour analyser les tendances d’utilisation des formulaires et documents](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## Que contient le tableau de bord ? {#content-of-dashboard}
@@ -50,7 +48,7 @@ Ce tableau de bord est votre fenêtre sur l’univers de l’utilisation des for
 
 Ce tableau de bord vous permet de prendre des décisions pilotées par les données concernant vos formulaires. Procédez comme suit :
 
-* **Identification des Forms populaires** : des taux d’envoi élevés indiquent la valeur des formulaires. Analysez-les pour connaître les bonnes pratiques à répliquer dans d’autres.
+* **Identification des Forms populaires** : des taux d’envoi élevés indiquent la valeur des formulaires. Analysez ces formulaires à la recherche de bonnes pratiques à répliquer dans d’autres.
 * **Optimiser la création de formulaire** : réduisez les temps de création en identifiant les goulets d’étranglement. Explorer des modèles préconfigurés ou rationaliser les workflows.
 * **BOOSTER LA RÉUTILISATION DES FRAGMENTS** : encourager la collaboration et la possibilité de découvrir des fragments réutilisables. Une bonne organisation des bibliothèques de fragments peut améliorer considérablement l’efficacité.
 
