@@ -6,15 +6,15 @@ role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1285'
+ht-degree: 42%
 
 ---
 
 
-# Mode réactif dans la création WYSIWYG
+# Mode réactif dans la création WYSIWYG
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 ## Présentation du Responsive Forms
 
@@ -22,9 +22,9 @@ Dans le monde multi-appareils d&#39;aujourd&#39;hui, vos formulaires doivent avo
 
 L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) vous permet de créer des formulaires qui s’adaptent automatiquement à différentes tailles d’écran, offrant ainsi une expérience utilisateur optimale, quel que soit l’appareil utilisé.
 
-## Aperçu de Forms en mode réactif pour différents appareils
+## Prévisualiser les formulaires en mode réactif pour différents appareils
 
-L’éditeur universel propose une icône **Émulateur** située dans le coin supérieur droit de l’écran. Elle vous permet de prévisualiser des pages sur différents formats d’appareil et de tester le comportement de votre conception responsive pour une meilleure expérience utilisateur.
+L’éditeur universel propose une icône **Émulateur** située en haut à droite de l’écran. Elle vous permet de prévisualiser des pages sur différents formats d’appareils et de tester le comportement de votre conception réactive pour une meilleure expérience d’utilisation.
 
 Pour prévisualiser un formulaire en mode réactif, procédez comme suit :
 
@@ -33,14 +33,14 @@ Pour prévisualiser un formulaire en mode réactif, procédez comme suit :
 3. Sélectionnez un format d’appareil :
    - Bureau (par défaut)
    - Tablette
-   - Mobile
+   - Appareil mobile
    - Personnalisé (spécifiez la largeur et la hauteur)
 
 ![Capture d’écran de l’éditeur universel affichant les options de mode réactif pour différents appareils](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
 Vous pouvez également utiliser l’icône **Rotateur d’écran** pour basculer entre les orientations portrait et paysage lors de la prévisualisation sur une tablette ou un appareil mobile.
 
-L’éditeur universel fournit différents émulateurs pour prévisualiser les formulaires sur différents appareils. Le tableau ci-dessous répertorie les types d’émulateurs disponibles, ainsi que les représentations d’appareils correspondantes :
+L’éditeur universel fournit différents émulateurs pour prévisualiser les formulaires sur différents appareils. Le tableau ci-dessous répertorie les types d’émulateurs disponibles, ainsi que les représentations d’appareils correspondantes :
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
@@ -48,7 +48,7 @@ L’éditeur universel fournit différents émulateurs pour prévisualiser les f
         <th style="width: 80%">Image de l’appareil</th>
     </tr>
     <tr>
-        <td style="width: 20%">Poste de travail</td>
+        <td style="width: 20%">Ordinateur de bureau</td>
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Vue de bureau d’un formulaire avec disposition pleine largeur" style="width: auto; height: auto"></td>
     </tr>
     <tr>
@@ -56,28 +56,28 @@ L’éditeur universel fournit différents émulateurs pour prévisualiser les f
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Vue Tablette d’un formulaire présentant une disposition de largeur moyenne avec des composants ajustés" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td style="width: 20%">Mobile</td>
+        <td style="width: 20%">Appareil mobile</td>
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Vue mobile d’un formulaire présentant une disposition étroite avec des composants empilés" style="width: auto; height: auto"></td>
     </tr>
     <tr>
-        <td style="width: 20%">Appareil Personnalisé</td>
+        <td style="width: 20%">Appareil personnalisé</td>
         <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Vue d’appareil personnalisée d’un formulaire avec dimensions spécifiées par l’utilisateur" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
 ## Fonctionnalités de disposition
 
-L’éditeur universel vous permet de créer des formulaires simples d’utilisation qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition du formulaire contrôle l’affichage des éléments ou des composants dans un formulaire.
+L’éditeur universel vous permet de créer des formulaires simples d’utilisation qui offrent des expériences dynamiques. La disposition du formulaire contrôle l’affichage des éléments ou des composants dans un formulaire.
 
-L’éditeur universel prend en charge les types de disposition suivants pour les formulaires :
+L’éditeur universel prend en charge les types de disposition suivantes pour les formulaires :
 
 - [Disposition de panneau](#panel-layout)
-- [Disposition Assistant](#wizard-layout)
+- [Disposition de l’Assistant](#wizard-layout)
 - [Disposition en accordéon](#accordion-layout)
 
 ### Disposition de panneau
 
-La disposition des panneaux est utile pour organiser les champs associés de manière à faciliter la navigation et la recherche du contenu correspondant. La disposition des panneaux organise les composants de formulaire en sections distinctes ou en panneaux dans les formulaires.
+La disposition de panneau est utile pour organiser les champs associés de manière à faciliter la navigation et la recherche du contenu correspondant. La disposition des panneaux organise les composants de formulaire en sections distinctes ou en panneaux dans les formulaires.
 
 ![Disposition de panneau présentant plusieurs sections distinctes dans un formulaire](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
@@ -85,11 +85,11 @@ La disposition des panneaux est utile pour organiser les champs associés de man
 
 **Comportement réactif :** sur les plus petits écrans, les panneaux s’empilent généralement verticalement, en conservant leurs regroupements distincts tout en s’ajustant à la largeur plus étroite.
 
-Vous pouvez utiliser le [composant de panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition du panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
-### Disposition Assistant
+### Disposition de l’Assistant
 
-La disposition « Assistant » permet de simplifier un formulaire complexe en le divisant en étapes distinctes. Chaque étape représente une partie différente du processus et les utilisateurs et utilisatrices naviguent de manière séquentielle parmi les étapes, souvent avec les boutons **Suivant** et **Précédent**. Vous pouvez utiliser la disposition Assistant pour créer un formulaire qui implique plusieurs sections ou étapes.
+La disposition « Assistant » permet de simplifier un formulaire complexe en le divisant en étapes distinctes. Chaque étape représente une partie différente du processus et les utilisateurs et utilisatrices naviguent de manière séquentielle parmi les étapes, souvent avec les boutons **Suivant** et **Précédent**. Vous pouvez utiliser la disposition de l’Assistant pour créer un formulaire qui implique plusieurs sections ou étapes.
 
 ![Disposition Assistant présentant un formulaire à plusieurs étapes avec commandes de navigation](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
@@ -97,11 +97,11 @@ La disposition « Assistant » permet de simplifier un formulaire complexe en le
 
 **Comportement réactif :** sur les appareils mobiles, l’assistant conserve son approche étape par étape, mais ajuste le contenu de chaque étape pour l’adapter à l’écran plus étroit, en empilant souvent des éléments qui apparaîtraient côte à côte sur des écrans plus grands.
 
-Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
-### Disposition Accordéon
+### Disposition en accordéon
 
-La disposition en accordéon affiche le contenu dans des sections ou des panneaux réductibles d’un formulaire adaptatif. Lorsqu’une section est développée, elle affiche le contenu dans , tandis que les autres sections restent réduites. Cette disposition est idéale pour afficher de grandes quantités d’informations sous une forme compacte.
+La disposition en accordéon affiche le contenu dans des sections ou des panneaux réductibles d’un formulaire adaptatif. Lorsqu’une section est développée, elle y affiche le contenu tandis que les autres sections restent réduites. Cette disposition est idéale pour afficher de grandes quantités d’informations sous une forme compacte.
 
 ![Disposition en accordéon présentant des sections extensibles dans un formulaire](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
@@ -109,18 +109,18 @@ La disposition en accordéon affiche le contenu dans des sections ou des panneau
 
 **Comportement réactif :** les accordéons fonctionnent particulièrement bien sur les appareils mobiles, car ils conservent naturellement l’espace vertical en n’affichant que la section de contenu développée, ce qui les rend idéaux pour les écrans plus petits.
 
-Vous pouvez utiliser le [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
-### Comment choisir la bonne mise en page ?
+### Comment choisir la bonne disposition ?
 
-Il est important de sélectionner la disposition appropriée pour optimiser l’expérience utilisateur et les fonctionnalités de formulaire. Le tableau ci-dessous vous aide à comprendre les différentes options de mise en page disponibles et vous guide dans le choix de la mise en page la plus adaptée en fonction de vos besoins et cas d’utilisation spécifiques :
+Il est important de sélectionner la disposition appropriée pour optimiser l’expérience clientèle et les fonctionnalités de formulaire. Le tableau ci-dessous vous aide à comprendre les différentes options de disposition disponibles et vous guide dans le choix de la plus adaptée en fonction de vos besoins et cas d’utilisation spécifiques :
 
-| Fonctionnalité | Disposition de panneau | Disposition Assistant | Disposition Accordéon |
+| Fonctionnalité | Disposition de panneau | Disposition de l’Assistant | Disposition en accordéon |
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Objectif** | Regroupe les contenus associés dans des sections distinctes | Guide les utilisateurs et utilisatrices à travers un processus ou un formulaire à plusieurs étapes | Organise le contenu en sections réductibles |
+| **Objectif** | Regroupe les contenus associés dans des sections distinctes. | Guide les utilisateurs et utilisatrices à travers un processus ou un formulaire à plusieurs étapes. | Organise le contenu en sections réductibles. |
 | **Structure** | Sections distinctes | Étapes/pages séquentielles | Panneaux/sections réductibles |
-| **Navigation** | Cliquez sur les en-têtes du panneau pour naviguer | - En avant : bouton « Suivant » <br>- En arrière : bouton « Précédent » <br>- Étapes facultatives à ignorer | Cliquez sur les en-têtes pour développer/réduire les sections. |
-| **Expérience utilisateur** | Organise de grandes quantités de contenu de manière gérable. | Conseils détaillés pour réduire la surcharge | Mode compact avec sections développées/réduites |
+| **Navigation** | Cliquez sur les en-têtes du panneau pour naviguer. | - En avant : bouton « Suivant » <br>- En arrière : bouton « Précédent » <br>- Étapes facultatives à ignorer | Cliquez sur les en-têtes pour développer/réduire les sections. |
+| **Expérience clientèle** | Organise de grandes quantités de contenu faciles à gérer. | Conseils détaillés pour réduire la surcharge | Vue compacte avec sections développées/réduites |
 | **Cas d’utilisation** | Formulaires complexes avec sections classées | Processus de configuration, formulaires complexes | Questions fréquentes, menus de paramètres, sections de contenu détaillées |
 | **Idéal pour mobile** | Modéré : les panneaux s’empilent verticalement | Correct : se concentre uniquement sur l’étape actuelle. | Excellent : conserve l’espace grâce à des sections réductibles |
 

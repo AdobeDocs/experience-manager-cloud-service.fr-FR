@@ -8,20 +8,20 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # Protection de votre Forms contre le spam grâce à Google reCAPTCHA
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel.</span>
 
 
 
 ## Pourquoi utiliser reCAPTCHA dans vos formulaires ?
 
-| ![Sécurité](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Protection des robots](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![Expérience utilisateur](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
+| ![Sécurité](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Protection des robots](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![Expérience clientèle](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Sécurité renforcée** | **Prévention des robots et des spams** | **Expérience utilisateur transparente** |
 | Protégez vos formulaires contre les activités frauduleuses et les attaques malveillantes | Empêchez les robots automatisés d’inonder vos formulaires de contenu non pertinent ou nuisible | Le reCAPTCHA invisible fonctionne en coulisses sans perturber les utilisateurs légitimes |

@@ -7,14 +7,14 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1706'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 
 # Exploration de l’interface de l’éditeur universel (WYSIWYG)
 
-L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offre une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive pour Adobe Edge Delivery Services Forms. Il fournit une interface moderne et par glisser-déposer pour une création de formulaire efficace.
+L’[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offre une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive pour les formulaires Adobe Edge Delivery Services (EDS) pour AEM Forms. Il fournit une interface moderne et par glisser-déposer pour une création de formulaire efficace.
 
 ![Interface utilisateur de l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -191,7 +191,7 @@ Explorons ses composants clés :
 
   >[!NOTE]
   >
-  > Pour obtenir des instructions détaillées sur l’utilisation de l’option Générer des variations pour les formulaires, reportez-vous à l’article [Générer des variations](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+  > Pour obtenir des instructions détaillées sur l’utilisation de l’option Générer des variations pour les formulaires, reportez-vous à l’article [Générer des variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 - **Expérimentation**
 
@@ -205,11 +205,11 @@ Explorons ses composants clés :
 
   ![Personnalisation](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
 
-- **Test A/B**
+- **Tests A/B**
 
   Le **Test A/B** vous aide à comparer des variations spécifiques de votre formulaire afin de déterminer laquelle est la plus performante. Contrairement à l’expérimentation au sens large, les tests A/B se concentrent généralement sur la comparaison d’éléments ou de modifications spécifiques afin d’identifier l’option la plus efficace.
 
-  ![Test A/B](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+  ![Tests A/B](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
 - **Gestion des tâches**
 

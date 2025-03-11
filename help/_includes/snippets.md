@@ -2,7 +2,7 @@
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -59,13 +59,13 @@ ht-degree: 94%
 
 ## Éditeur universel{#universal-editor-see-also}
 
-* [Créer Votre Premier Formulaire À L’Aide De L’Éditeur Universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Ajout d’un comportement dynamique à Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Publication et déploiement de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms : guide de style et de thème](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Créer votre premier formulaire à l’aide de l’Éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Ajouter un comportement dynamique aux formulaires](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publier et déployer des formulaires](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Concevoir des formulaires élégants : Guide de style et de thèmes](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [Créer des composants de formulaire personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Protéger vos formulaires contre le spam : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Voir également {#see-more-forms-eds}
 
@@ -174,8 +174,8 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
 >Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
->**Liste autorisée des adresses IP**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251,,,
+>**Liste autorisée des adresses IP de Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Ajouter une liste des adresses IP autorisées de Cloud Manager et des pipelines front-end {#add-cm-allowlist-frontend-pipeline}
@@ -255,13 +255,13 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 ## Éditeur universel{#ue-see-also}
 
-* [Créer Votre Premier Formulaire À L’Aide De L’Éditeur Universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Ajout d’un comportement dynamique à Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Publication et déploiement de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms : guide de style et de thème](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Créer votre premier formulaire à l’aide de l’Éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Ajouter un comportement dynamique aux formulaires](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publier et déployer des formulaires](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Concevoir des formulaires élégants : Guide de style et de thèmes](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [Créer des composants de formulaire personnalisés](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Protéger vos formulaires contre le spam : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Voir également {#see-more-eds-forms}
 

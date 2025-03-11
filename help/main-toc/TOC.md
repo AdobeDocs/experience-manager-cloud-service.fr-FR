@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
 source-wordcount: '6239'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -1002,7 +1002,7 @@ ht-degree: 95%
       + [Réutilisation du code sur plusieurs sites](/help/edge/wysiwyg-authoring/repoless.md)
       + [Gestion de plusieurs sites sans référentiel](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Environnements d’évaluation et de production sans référentiel](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [Configuration de l’authentification de site](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [Configurer l’authentification de site](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [Fonctionnalités des sites en cours de travail](/help/edge/wysiwyg-authoring/wip-features.md)
    + Création basée sur des documents {#document-authoring}
       + [Création](/help/edge/docs/authoring.md)
@@ -1035,35 +1035,35 @@ ht-degree: 95%
       + [Fonctionnement d’Edge Delivery Services pour AEM Forms ?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Création WYSIWYG {#universal-editor}
-         + [Présentation de Forms Universal Editor pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Présentation de l’éditeur universel de formulaires pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Comment créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Guide de l’interface de l’éditeur universel : présentation des outils, fonctionnalités et navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Rendre votre Forms compatible avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Design Beautiful Forms : guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Ajout d’un comportement dynamique à Forms : guide complet de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Guide d’envoi de formulaire : configuration et personnalisation des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Protection de votre Forms contre le spam : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Publication et déploiement de Forms : guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Créer des composants de formulaire personnalisés : guide du développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + {#getting-started-edge-delivery-services-forms} de création basée sur des documents
-         + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
-         + [Comment créer Forms à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
+         + [Guide de l’interface de l’éditeur universel : présentation des outils, des fonctionnalités et de la navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Rendre vos formulaires compatibles avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Concevoir des formulaires élégants : Guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Ajouter un comportement dynamique aux formulaires : Guide complet de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guide d’envoi de formulaires : configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Protéger vos formulaires contre le spam : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Publication et déploiement de formulaires : Guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Créer des composants de formulaire personnalisés : Guide de développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+      + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
+         + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
+         + [Création de formulaires à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
          + [Divers composants du bloc de formulaire adaptatif](/help/edge/docs/forms/form-components.md)
-         + [Connecter votre formulaire aux feuilles Google : Guide de configuration de la collecte de données](/help/edge/docs/forms/submit-forms.md)
-         + [Guide de publication et de collecte de données pour la mise en ligne de votre formulaire](/help/edge/docs/forms/publish-forms.md)
-         + [Validation des champs de formulaire : ajoutez des contrôles d’erreur à votre Forms.](/help/edge/docs/forms/validate-forms.md)
-         + [Design Beautiful Forms : guide de style et de personnalisation](/help/edge/docs/forms/style-theme-forms.md)
-         + [Créer des messages de succès : personnalisation de la page de remerciement du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Guide d’envoi de formulaire : utilisation du service d’envoi Forms](/help/forms/forms-submission-service.md)
-         + [Champs de formulaire dynamique : options de chargement à partir des URL](/help/edge/docs/forms/load-options-from-url.md)
-         + [Ajout d’un comportement intelligent : Guide logique et règles de formulaire](/help/edge/docs/forms/rules-forms.md)
-         + [Validation avancée des formulaires : guide d’expression régulière](/help/edge/docs/forms/regex-forms.md)
-         + [Création d’un Forms réutilisable : guide des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
-         + [Création De Forms Dynamique : Ajout De Sections Répétables](/help/edge/docs/forms/repeatable-forms.md)
-         + [Rendre votre formulaire global : Guide de traduction de formulaire](/help/edge/docs/forms/translate-forms.md)
-         + [Protection de votre Forms : ajout de la sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Créer des composants de formulaire personnalisés : guide du développeur](/help/edge/docs/forms/custom-components-forms.md)
+         + [Connecter votre formulaire à Google Sheets : Guide de configuration de la collecte de données](/help/edge/docs/forms/submit-forms.md)
+         + [Activer votre formulaire : Guide de publication et de collecte de données](/help/edge/docs/forms/publish-forms.md)
+         + [Validation des champs de formulaire : ajouter des vérifications des erreurs à vos formulaires](/help/edge/docs/forms/validate-forms.md)
+         + [Concevoir des formulaires élégants : Guide de style et de personnalisation](/help/edge/docs/forms/style-theme-forms.md)
+         + [Créer des messages réussis : personnaliser la page de remerciement de votre formulaire](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Guide d’envoi de formulaire : utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
+         + [Champs de formulaire dynamique : options de chargement à partir des URL](/help/edge/docs/forms/load-options-from-url.md)
+         + [Ajouter un comportement intelligent : Guide de logique et de règles de formulaire](/help/edge/docs/forms/rules-forms.md)
+         + [Validation avancée des formulaires : Guide d’expression régulière](/help/edge/docs/forms/regex-forms.md)
+         + [Créer des formulaires réutilisables : Guide des fragments de formulaire](/help/edge/docs/forms/form-fragments.md)
+         + [Créer des formulaires dynamiques : ajouter des sections répétables](/help/edge/docs/forms/repeatable-forms.md)
+         + [Rendre votre formulaire international : Guide de traduction des formulaires](/help/edge/docs/forms/translate-forms.md)
+         + [Protéger vos formulaires : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance Des Performances Des Formulaires : Guides De Surveillance D’Utilisation Réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Resources Edge Delivery {#resources}
       + Sidekick {#sidekick}
@@ -1156,7 +1156,7 @@ ht-degree: 95%
          + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
 + IA générative {#generative-ai}
    + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + [Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Assistant (version bêta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
@@ -1216,7 +1216,7 @@ ht-degree: 95%
       + Sites Edge Delivery {#edge-delivery-sites}
          + [Présentation d’Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Ajouter un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [Création d’un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [Créer un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Gestion de sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Paramètres du domaine {#custom-domain-names}

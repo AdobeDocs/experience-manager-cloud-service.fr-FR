@@ -6,14 +6,14 @@ role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1773'
+ht-degree: 98%
 
 ---
 
 # Créer un composant personnalisé en création WYSIWYG
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 
 Edge Delivery Services pour AEM Forms offre des possibilités de personnalisation, ce qui permet aux développeurs et développeuses front-end de créer des composants de formulaire personnalisés. Ces composants personnalisés s’intègrent de manière transparente à l’expérience de création WYSIWYG, ce qui permet aux créateurs et créatrices de formulaires de les ajouter, de les configurer et de les gérer facilement dans l’éditeur de formulaires. Grâce aux composants personnalisés, les créateurs et créatrices peuvent améliorer leurs fonctionnalités tout en assurant un processus de création fluide et intuitif.
@@ -72,7 +72,7 @@ Ajoutez un dossier et des fichiers pour votre nouveau composant personnalisé da
    * **id** : identifiant unique du composant.
    * **fieldType** : Forms prend en charge différents **fieldType** pour capturer des types spécifiques d’entrée utilisateur. Le [fieldType pris en charge se trouve dans la section Octet supplémentaire](#supported-fieldtypes).
    * **resourceType** : chaque composant personnalisé est associé à un type de ressource en fonction de son fieldType. Le [resourceType pris en charge se trouve dans la section Octet supplémentaire](#supported-resourcetype).
-   * **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
+   * **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
    * **fd:viewType** : représente le nom du composant personnalisé. Il s’agit de l’identifiant unique du composant. Vous devez créer une vue personnalisée pour le composant.
 
 Le fichier `_range.json`, après avoir ajouté la définition du composant, est le suivant :
@@ -187,7 +187,7 @@ Pour ajouter la propriété personnalisée Step Value (Valeur d’étape), ajout
 Le fragment de code JSON définit une propriété personnalisée appelée **Step Value** (Valeur d’étape) pour un composant **Range** (Plage). Vous trouverez ci-dessous une répartition de chaque champ :
 
 * **component** : indique le type de champ de saisie utilisé dans la boîte de dialogue Propriété. Dans ce cas, `number` indique que le champ accepte des valeurs numériques.
-* **name** : identifiant de la propriété, utilisé pour la référencer dans la logique du composant. Ici, la `stepValue` représente le paramètre de valeur d’étape de la plage.
+* **name** : identifiant de la propriété, utilisé pour la référencer dans la logique du composant. Ici, la `stepValue` représente le paramètre de valeur d’étape de la plage.
 * **label** : nom d’affichage de la propriété tel qu’il apparaît dans la boîte de dialogue Propriété.
 * **valueType** : définit le type de données attendu pour la propriété. La valeur `number` garantit que seules les entrées numériques sont autorisées.
 
