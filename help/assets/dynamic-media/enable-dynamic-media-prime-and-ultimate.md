@@ -4,7 +4,7 @@ description: Découvrez comment activer les offres  [!DNL Dynamic Media] Prime e
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
+source-git-commit: 42c90ae69af31b1b54f5b4ed01100df0cbe5dad2
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -65,7 +65,7 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
    1. **[!UICONTROL Étape de l’environnement]** : **[!UICONTROL En cours d’exécution]**
    1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  les fonctionnalités OpenAPI sont activées ]**
 
-      ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### Réessayer l’activation {#retry-activation}
 
@@ -74,7 +74,7 @@ Si l’activation échoue, le Cloud Manager affiche les mises à jour de statut 
 * **[!UICONTROL Étape de l’environnement]** : échec de **[!UICONTROL DM avec OpenAPI]**
 * ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**: échec de l’activation des fonctionnalités**[!UICONTROL  OpenAPI ]**
 
-  ![réessayer l’activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+  ![réessayer l’activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
 Sélectionnez **[!UICONTROL Cliquer pour réessayer]** pour redémarrer l’activation.
 
@@ -109,7 +109,7 @@ Procédez comme suit :
 
 1. Sélectionnez la solution **[!UICONTROL Dynamic Media]** et cliquez sur **[!UICONTROL Continuer]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme. Cette action redémarre tous les environnements existants de votre programme et leur ajoute la solution [!DNL Dynamic Media]. En outre, tout nouvel environnement créé dans votre programme est automatiquement [!DNL Dynamic Media].
 
-   ![configuration pour la production](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![configuration pour la production](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
 
 Voir [Activer [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) pour commencer à utiliser les fonctionnalités de [!DNL Dynamic Media] avec les fonctionnalités OpenAPI dans votre environnement.
 
@@ -123,7 +123,7 @@ Pour afficher les sociétés (comptes) existantes ou ajouter une nouvelle socié
 
 1. [Accès à Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [!DNL Dynamic Media with OpenAPI] des crédits dans votre entreprise.
+1. Vous disposez d’[!DNL Dynamic Media] licence Ultimate.
 
 #### Créer et répertorier [!DNL Dynamic Media] sociétés dans votre organisation IMS {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
 
@@ -135,7 +135,7 @@ Pour créer et répertorier une nouvelle société [!DNL Dynamic Media] (compte)
 
 1. Indiquez un nom de société [!DNL Dynamic Media] unique, sélectionnez une région de société et ajoutez une liste d’ID de messagerie d’administration de société séparés par des virgules.
 
-   ![Créer une société Dynamic Media](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+   ![Créer une société Dynamic Media](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
 1. Cliquez sur **[!UICONTROL Créer]** pour commencer à créer votre entreprise. Cette action ajoute une nouvelle ligne à **[!UICONTROL [!DNL Dynamic Media]section sociétés]** et affiche **[!UICONTROL Configuration]** comme **[!UICONTROL STATUT]** de la société.
 
@@ -155,11 +155,11 @@ Si [!DNL Dynamic Media] création d’entreprise échoue, procédez comme suit e
 
 1. Si le **[!UICONTROL Statut]** est En attente, signalez le problème à l’équipe du service clientèle pour résolution.
 
-   ![statut en attente](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+   ![statut en attente](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
 
 1. Si la **[!UICONTROL Statut]** a échoué, réessayez en fonction de la raison de l’échec.
 
-   ![statut en échec](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
+   ![statut en échec](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
 
 ### Facultatif : configuration d’un domaine personnalisé dans le niveau de diffusion {#configure-custom-domain-in-delivery-tier}
 
@@ -196,7 +196,7 @@ Exécutez les étapes suivantes dans Cloud Manager pour configurer un domaine pe
 
 1. Exécutez les étapes **[!UICONTROL Configurer CNAME]** pour mapper [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (enregistrement CNAME) dans l’enregistrement DNS du fournisseur de services DNS. Ce mappage garantit que les requêtes reçues au niveau du domaine personnalisé sont redirigées vers le réseau CDN d’Adobe.
 
-   ![boîte de dialogue de préparation à la mise en production](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+   ![boîte de dialogue de préparation à la mise en production](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
 1. Cliquez sur **[!UICONTROL Ok]**, le **[!UICONTROL STATUT]** se met à jour sur **[!UICONTROL Vérifié]**. Le domaine personnalisé est prêt à être utilisé dans l’URL de diffusion.
 
@@ -267,7 +267,7 @@ See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-ma
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
-TBD: Wiki in progress.
+TBD: Wiki in progress..
 -->
 
 ## Activer [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
