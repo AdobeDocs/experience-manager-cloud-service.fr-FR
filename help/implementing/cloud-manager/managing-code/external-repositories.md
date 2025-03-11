@@ -1,19 +1,19 @@
 ---
 title: Ajout de référentiels externes dans Cloud Manager - Version bêta limitée
-description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration avec les référentiels GitHub, GitLab et Bitbucket.
+description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise Server, GitLab et Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 40%
+source-wordcount: '1618'
+ht-degree: 37%
 
 ---
 
 # Ajout de référentiels externes dans Cloud Manager - Version bêta limitée {#external-repositories}
 
-Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration avec les référentiels GitHub, GitLab et Bitbucket.
+Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise Server, GitLab et Bitbucket.
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | Type de jeton | Description |
    | --- | --- |
    | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-   | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>· Pour les autorisations requises, voir [Création d’un nouveau PAT pour GitHub](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-github-path).<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>· Pour les autorisations requises, voir [Création d’un nouveau fichier PAT pour GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-gitlab-path).<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   |  | **Type de référentiel : Bitbucket**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>· Pour les autorisations requises, voir [Créer un nouveau PAT pour Bitbucket](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/create-new-bitbucket-path). |
+   | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>· Pour les autorisations requises, consultez les informations suivantes : ![Créer un nouveau chemin d’accès pour GitHub](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>· Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>· Pour les autorisations requises, consultez les informations suivantes : ![Créer un nouveau chemin d’accès pour GitLab](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>· Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+   |  | **Type de référentiel : Bitbucket**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>· Pour les autorisations requises, consultez les informations suivantes ![Créer un nouveau PAT pour Bitbucket](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png). |
 
    >[!NOTE]
    >
