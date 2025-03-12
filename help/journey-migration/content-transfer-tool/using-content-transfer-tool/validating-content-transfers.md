@@ -4,10 +4,10 @@ description: Utiliser l’outil de transfert de contenu pour valider les transfe
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 73%
+source-wordcount: '1220'
+ht-degree: 71%
 
 ---
 
@@ -145,13 +145,14 @@ Pour afficher ces informations, accédez à Cloud Acceleration Manager. Clique
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Une boîte de dialogue contenant les informations récapitulatives s’affiche. Utilisez les icônes d’aide pour lire une description plus complète. Cliquez sur le bouton **Télécharger le rapport** pour télécharger le rapport complet séparé par des virgules (CSV).  Notez également qu’à la fin de ce rapport se trouve le rapport d’utilisateur , qui peut être utilisé pour la gestion des utilisateurs après la migration.
+Une boîte de dialogue contenant les informations récapitulatives s’affiche. Utilisez les icônes d’aide pour lire une description plus complète. Pour télécharger le rapport complet de migration des entités principales séparées par des virgules (CSV), sélectionnez **Rapport de migration des entités principales** dans la liste déroulante sous **Télécharger un fichier...** et cliquez sur le bouton **Télécharger**. Notez également qu’à la fin de ce rapport se trouve le rapport d’utilisateur , qui peut être utilisé pour la gestion des utilisateurs après la migration.
 
 ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 Le rapport de migration principale indique :
 
 * Chaque groupe a été migré, ainsi que le premier chemin d’accès au contenu qui a déclenché la migration de ce groupe. Le groupe peut également se trouver sur d’autres chemins, mais seul le premier trouvé pour un groupe donné est signalé. Il indique également s’il a été trouvé dans une liste de contrôle d’accès ou une politique de CUG.
+* Le mot « local » est indiqué sur la ligne de chaque groupe migré en tant que groupe local.
 * Chaque groupe n’a pas été migré et la raison pour laquelle il n’a pas été migré.  En règle générale, il s’agit de l’une des raisons suivantes :
    * C&#39;est un groupe intégré
    * Il est déjà sur le système cible
