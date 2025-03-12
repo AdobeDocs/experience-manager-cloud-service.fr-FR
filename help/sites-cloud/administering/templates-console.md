@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Découvrez comment la console de modèles sert d’emplacement central pour affi
 
 ## Vue d’ensemble {#overview}
 
-Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. [Les modèles modifiables AEM](/help/implementing/developing/components/templates.md) peuvent définir la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception).
+Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. [Les modèles modifiables AEM ](/help/implementing/developing/components/templates.md) peuvent définir la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception).
 
 Une sélection de modèles est présentée aux auteurs de contenu lorsqu’ils [créent des pages dans la console Sites](/help/sites-cloud/authoring/sites-console/creating-pages.md). Les modèles peuvent être utilisés pour créer des pages modifiables avec :
 
@@ -95,12 +95,12 @@ Lorsqu’un modèle est créé, il est par défaut à l’état **Brouillon** (p
 
 Un modèle doit être activé avant de pouvoir être utilisé par les personnes créant du contenu pour créer des pages. Si un modèle n’est plus nécessaire, il peut être désactivé afin de ne plus s’afficher dans l’assistant de création de page.
 
-* Sélectionnez le modèle, puis cliquez ou appuyez sur **Désactiver** pour le désactiver.
-* Sélectionnez le modèle, puis cliquez ou appuyez sur **Activer** pour l’activer.
+* Sélectionnez le modèle et cliquez sur **Désactiver** pour le désactiver.
+* Sélectionnez le modèle et cliquez sur **Activer** pour l’activer.
 
 ## Publication {#publish}
 
-Un modèle créé avec l’éditeur de modèles ne peut être utilisé qu’une fois publié. Sélectionnez le modèle et cliquez ou appuyez sur **Publish** pour le publier.
+Un modèle créé avec l’éditeur de modèles ne peut être utilisé qu’une fois publié. Sélectionnez le modèle, puis cliquez sur **Publier** pour le publier.
 
 Les modèles créés avec l’éditeur universel n’ont pas besoin d’être publiés pour être utilisés.
 
@@ -117,7 +117,7 @@ Une fois collé, vous pouvez :
 * [Modifiez le modèle](#edit) pour l’ajuster si nécessaire.
 * [Utilisez la fenêtre des propriétés](#properties) pour mettre à jour le titre du modèle.
 * [Activez le modèle](#enable-disable) afin qu’il puisse être utilisé pour créer une page.
-* [Publish du modèle](#publish) si nécessaire.
+* [Publiez le modèle](#publish) si nécessaire.
 
 >[!TIP]
 >
