@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 48%
+source-wordcount: '1493'
+ht-degree: 46%
 
 ---
 
@@ -59,6 +59,10 @@ La prise en charge de l’UUID des fragments de contenu est désormais général
 **Dynamic Media avec prise en charge d’OpenAPI dans l’éditeur de fragments de contenu et GraphQL**
 
 Les Assets stockées dans des programmes AEM as a Cloud Service différents de ceux des fragments de contenu et activées avec la nouvelle fonctionnalité Dynamic Media avec OpenAPI peuvent désormais être utilisées dans les fragments de contenu. Le sélecteur d’images dans le nouvel éditeur de fragment de contenu permet désormais de sélectionner des référentiels « distants » en tant que source des ressources d’image à référencer dans le fragment. Lors de la diffusion de ces fragments de contenu à l’aide d’AEM GraphQL, la réponse JSON inclut désormais les propriétés requises pour les ressources distantes (assetId, repositoryId) afin que les applications clientes puissent créer des médias dynamiques respectifs avec des URL OpenAPI pour récupérer l’image.
+
+**Déploiement de l’éditeur de fragment de contenu**
+
+Nous continuerons à activer le nouvel éditeur de fragment de contenu basé sur l’interface utilisateur Spectrum dans AEM as a Cloud Service. Après être devenue la valeur par défaut pour tous les environnements de développement Cloud Service en novembre 2024, elle sera définie sur toutes les phases le 1er avril 2025 et sur tous les environnements de production le 1er mai 2025. Dans tous les cas, les utilisateurs auront toujours la possibilité de revenir à l’éditeur de fragment de contenu traditionnel dans l’interface utilisateur tactile d’AEM.
 
 **API HTTP de traduction**
 
