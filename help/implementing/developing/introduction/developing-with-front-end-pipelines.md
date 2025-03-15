@@ -4,10 +4,10 @@ description: Le pipeline front-end améliore l’indépendance des développeurs
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d21437b56af1d337e20b25b53fdd00ecb856bf1
+source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 27%
+source-wordcount: '1126'
+ht-degree: 28%
 
 ---
 
@@ -32,9 +32,9 @@ Le contenu obtenu du dossier `dist` est ce que Cloud Manager déploie finalement
 
 L’environnement de création front-end prend en charge les versions `Node.js` suivantes :
 
-<!-- * 23
+* 23
 * 22
-* 20 -->
+* 20
 * 18
 * 16
 * 14 (par défaut)
