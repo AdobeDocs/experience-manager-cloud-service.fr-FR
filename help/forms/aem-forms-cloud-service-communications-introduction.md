@@ -1,438 +1,309 @@
 ---
-title: Que sont les API de communication Forms as a Cloud Service ?
-description: Utilisez les API Communications pour signer, certifier ou protéger vos documents, pour automatiser les processus de génération de PDF et pour convertir les documents de PDF dans un autre format.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs & Integrations
+title: API de communication d’AEM Forms as a Cloud Service
+description: Générer, manipuler et sécuriser des documents avec les API de communication d’AEM Forms dans le cloud
+Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
+feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
+source-git-commit: a9eed5b6219163e721d81c9d77a31604666a2ac5
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 48%
+source-wordcount: '1432'
+ht-degree: 5%
 
 ---
 
-# API de communication d’AEM Forms as a Cloud Service {#frequently-asked-questions}
 
-![Image principale](assets/cloud-communication-apis-hero-image.jpeg)
+# API de communication d’AEM Forms as a Cloud Service {#communications-apis-overview}
 
+> **Disponibilité de la version**
+>
+> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM as a Cloud Service** : cet article
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
-| AEM as a Cloud Service | Cet article |
+## Présentation
 
-La fonctionnalité Communications vous permet de créer des documents personnalisés, normalisés et approuvés par la marque, tels que des correspondances commerciales, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des factures mensuelles ou des kits de bienvenue.
-
-Cette fonctionnalité fournit des API pour générer et manipuler les documents. Vous pouvez générer ou manipuler un document à la demande ou créer une tâche par lots pour générer plusieurs documents à des intervalles définis. Les API Communications fournissent les éléments suivants :
-
-* Des fonctionnalités simplifiées de génération de documentation par lots et à la demande
-
-* La possibilité de combiner, réorganiser et valider des documents PDF à la demande
-
-* Des API HTTP pour une intégration plus facile aux systèmes existants Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses.
-
-* un accès sécurisé aux données. Les API de communication se connectent aux données et n’y accèdent que depuis des référentiels de données désignés par les client(e)s, ce qui rend les communications hautement sécurisées.
-
-La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+Les API de communication d’AEM Forms as a Cloud Service vous permettent de créer des documents personnalisés, normalisés et approuvés par la marque, adaptés aux besoins de votre entreprise. Ces puissantes API vous permettent de générer, manipuler et sécuriser des documents par programmation, que ce soit à la demande ou dans les processus par lots à volume élevé.
 
 
-<!-- 
-![A sample credit card statement](assets/statement.png)
-A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
+### Principaux avantages
 
--->
+* **Génération de documents rationalisée** - Créez des documents personnalisés en fusionnant des modèles avec les données du client
+* **Puissante manipulation de documents** - Combinez, réorganisez et validez les documents PDF par programmation
+* **Options de déploiement flexibles** - Utilisez des API à la demande pour les besoins de faible latence ou des API par lots pour les opérations à débit élevé.
+* **Sécurité renforcée** - Appliquez les signatures numériques, la certification et le chiffrement pour protéger les documents sensibles
+* **Architecture native dans le cloud** - Tirez parti d’une infrastructure cloud évolutive et sécurisée sans frais de maintenance.
+
+## Fonctionnalités essentielles
+
+Les API Communications fournissent un ensemble complet de fonctionnalités de traitement des documents organisées en fonction des domaines fonctionnels suivants :
+
+
+| Génération de documents | Manipulation de documents | Extraction de documents | Conversion de document | Document Assurance |
+|---------------------|----------------------|---------------------|---------------------|-------------------|
+| Générez des documents personnalisés en fusionnant des modèles avec des données dans divers formats, y compris les formats PDF et d’impression. | Combinez, réorganisez et validez des documents PDF par programmation pour créer de nouveaux packages de documents. | Extrayez des propriétés, des métadonnées et du contenu des documents PDF pour un traitement ultérieur. | convertir des documents entre différents formats, y compris la validation de conformité PDF/A pour les besoins d’archivage ; | Appliquez les signatures numériques, la certification et le chiffrement pour sécuriser et protéger les documents. |
 
 ## Génération de documents
 
-Les API de génération de documents de communication permettent de combiner un modèle (XFA ou PDF) avec des données client (XML) pour générer des documents aux formats PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL. Ces API utilisent des modèles PDF et XFA avec des [données XML](communications-known-issues-limitations.md#form-data) pour générer un seul document à la demande ou plusieurs documents à l’aide d’un traitement par lots.
+Les API de génération de documents Communications combinent des modèles (XFA ou PDF) avec des données client (XML) pour créer des documents personnalisés dans PDF et divers formats d’impression (PS, PCL, DPL, IPL, ZPL).
 
-En règle générale, vous créez un modèle à l’aide de [Designer](use-forms-designer.md) et utilisez les API Communications pour fusionner les données avec le modèle. Votre application peut envoyer le document de sortie à une imprimante réseau, à une imprimante locale ou à un système de stockage pour archivage. Les workflows standard et personnalisés se présentent comme suit :
+### Fonctionnement de la génération de documents
+
+Le workflow type comprend :
+
+1. Création d&#39;un modèle à l&#39;aide de [Designer](use-forms-designer.md)
+2. Préparation des données XML pour renseigner le modèle
+3. Utilisation des API Communications pour fusionner le modèle avec les données
+4. Génération de documents de sortie au format souhaité
 
 ![Workflow de génération de documents Communications](assets/communicaions-workflow.png)
 
-En fonction du cas d’utilisation, vous pouvez également rendre ces documents disponibles au téléchargement via votre site Web ou un serveur de stockage.
+### Créer des documents PDF
 
-Voici quelques exemples d’API de génération de documents :
+Les API de génération de documents vous permettent de créer des documents PDF non interactifs en fusionnant des données XML avec des modèles de formulaire :
 
-### Création de documents PDF {#create-pdf-documents}
+![Créer des documents PDF](assets/outPutPDF_popup.png)
 
-Vous pouvez utiliser les API de génération de documents pour créer un document PDF basé sur un design de formulaire et des données de formulaire XML. La sortie est un document PDF non interactif. En d’autres termes, les utilisateurs ne peuvent pas saisir ni modifier les données de formulaire. Un processus de base consiste à fusionner les données de formulaire XML avec un design de formulaire pour créer un document PDF. L’illustration suivante présente la fusion d’un design de formulaire et de données de formulaire XML pour produire un document PDF.
+Vous pouvez diffuser les PDF générés aux utilisateurs par le biais de téléchargements, les stocker dans un référentiel ou les charger éventuellement dans Azure Blob Storage.
 
-![Création de documents PDF](assets/outPutPDF_popup.png)
-Schéma : workflow standard de création d’un document PDF
+<span class="preview">Le téléchargement des PDF générés vers Azure Blob Storage est disponible via le [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Contactez aem-forms-ea@adobe.com à partir de votre e-mail officiel pour rejoindre.</span>
 
-L’API de génération de documents renvoie le document de PDF généré. Vous pouvez également charger les PDF générés dans le stockage Blob Azure.
+### Créer des documents au format d’impression
 
-<span class="preview"> Le chargement des PDF générés à l’aide de l’API de génération de documents vers la fonctionnalité de stockage Blob Azure se trouve sous [Programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+Générer des documents dans des formats d’impression, notamment :
+* PostScript (PS)
+* PCL (Printer Command Language)
+* Langue d&#39;impression Zebra (ZPL)
 
+Ces formats sont idéaux pour les opérations d&#39;impression de gros volumes et les besoins d&#39;impression spécialisés.
 
-### Créer un document PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
+### Traitement par lots de plusieurs documents
 
-Vous pouvez utiliser des API de génération de documents pour créer des documents PostScript (PS), PCL (Printer Command Language) et Zebra Printing Language (ZPL) reposant sur une conception de formulaire XDP ou un document de PDF. Ces API permettent de fusionner un design de formulaire avec des données de formulaire pour générer un document. Vous pouvez enregistrer le document dans un fichier et développer un processus personnalisé pour l’envoyer à une imprimante.
+Traitez des volumes importants de documents efficacement à l’aide des API par lots :
 
+![Workflow de traitement par lots](assets/ou_OutputBatchMany_popup.png)
 
+Le traitement par lots vous permet d’effectuer les opérations suivantes :
 
-<!-- ### Processing batch data to create multiple documents
-
-Communications APIs can create separate documents for each record within an XML batch data source. The APIs can also create a single document that contains all records (this functionality is the default). Assume that an XML data source contains ten records and you instruct the APIs to create a separate document for each record (for example, PDF documents). As a result, the APIs generate ten PDF documents.
-
-The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all the records.
-
-The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
-
- -->
-
-### Traitement des données par lots pour créer plusieurs documents {#processing-batch-data-to-create-multiple-documents}
-
-Vous pouvez utiliser des API de génération de documents pour créer des documents distincts pour chaque enregistrement au sein d’une source de données par lots XML. Vous pouvez générer des documents en mode massif et asynchrone. Vous pouvez configurer différents paramètres pour la conversion, puis lancer le traitement par lots.
-
-![Création de documents PDF](assets/ou_OutputBatchMany_popup.png)
-
-<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
-
-<!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all the records.
-
-![Create PDF Documents](assets/ou_OutputBatchSingle_popup.png)
-
-The following illustration shows the Communication APIs processing an XML data file that contains multiple records. Assume that you instruct the Communication APIs to create a separate PDF document for each data record. In this situation, the Communication APIs generates a separate PDF document for each data record.
-
-![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
-
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
-
-### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
-
-You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document's fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
-
-You can flatten the following types of PDF documents:
-
-* Interactive PDF documents created in Designer (that contain XFA streams).
-
-* Acrobat PDF forms
-
-If you attempt to flatten a non-interactive PDF document, an exception occurs.
-
-### Retain Form State {#retain-form-state}
-
-An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
-
-When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
+* Générer des documents distincts pour chaque enregistrement d&#39;une source de données XML
+* Traitement asynchrone des documents pour de meilleures performances
+* Configuration de différents paramètres de conversion pour le traitement par lots
 
 ## Manipulation de documents
 
-Les API de manipulation de documents Communications (transformation de documents) permettent d’associer et de réorganiser les documents du PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) décrit comment utiliser les documents source pour générer un ensemble de documents désirés. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge. Voici quelques exemples de manipulation de documents :
+Les API de manipulation de documents vous permettent de combiner, de réorganiser et de transformer des documents PDF par programmation.
 
-### Assemblage de documents PDF
+### Assemblage de document
 
-Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Voici quelques-unes des méthodes d’assemblage de documents PDF :
+Regroupez plusieurs documents PDF ou XDP en un seul document cohérent :
 
-* Assemblage d’un document PDF unique
-* Création d’un portfolio PDF
-* Assemblage de documents chiffrés
-* Assemblage de documents à l’aide de la numérotation Bates
-* Aplatissement et assemblage de documents
+![Assemblage d’un document PDF unique à de documents PDF multiples](assets/as_document_assembly.png)
 
-![Assemblage d’un document PDF unique à partir de plusieurs documents PDF](assets/as_document_assembly.png)
-Schéma : assemblage d’un document PDF unique à partir de plusieurs documents PDF
+Les fonctionnalités d’assemblage de documents incluent :
+* Création de documents PDF simples à partir de plusieurs sources
+* Création de portfolios PDF
+* Assembler des documents chiffrés
+* Ajout d’une numérotation Bates pour les documents juridiques
+* Aplatissement et assemblage de formulaires interactifs
 
-### Désassemblage de documents PDF
+### Désassemblage du document
 
-Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’instructions.
+Répartissez les documents PDF volumineux en composants plus petits et plus faciles à gérer :
 
-* Extraire des pages d’un document source
-* Division d’un document source en fonction de signets
+![La division d’un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)
 
-![Division d’un document source en plusieurs documents en fonction de signets](assets/as_intro_pdfsfrombookmarks.png)
-Schéma : division d’un document source en plusieurs documents en fonction de signets
+Le désassemblage de documents permet d’effectuer les opérations suivantes :
+* Extraction de pages spécifiques à partir de documents source
+* Diviser les documents en fonction de signets
+* Créer des ensembles de documents logiques à partir de compilations plus volumineuses
 
 >[!NOTE]
 >
-> AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
-
-<!-- 
-
-## Document utilities
-
-Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments.
-
-### Retrieve PDF document properties
-
-You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
-
-* Is a PDF Document: Check whether the source document is a PDF document.
-* Is a fillable form: Check whether the source PDF document is a fillable form.
-* Form Type: Retrieve the form type of the document.
-* Check for Attachments: Check whether the source PDF document has any attachments.
-* Check for Comments: Check whether the source PDF document has any review comments.
-* Is a PDF Package: Check whether the document is a PDF package.
-* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
-* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
-* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
-* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
-* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
-
-### Convert PDF Documents into XDP Documents
-
-The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
+> AEM Forms comprend de nombreuses polices intégrées qui s’intègrent de manière transparente aux fichiers PDF. Pour obtenir la liste complète des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
 ## Extraction de documents
 
-<span class="preview"> La fonctionnalité d’extraction de documents fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+<span class="preview">L’extraction de documents est disponible via le [Programme des utilisateurs et utilisatrices précoces](/help/forms/early-access-ea-features.md). Contactez aem-forms-ea@adobe.com à partir de votre e-mail officiel pour rejoindre.</span>
 
-Le service d’extraction de documents vous permet d’obtenir les propriétés d’un document de PDF, telles que ses droits d’utilisation, ses propriétés de PDF et ses métadonnées. Les fonctionnalités d’extraction de documents sont les suivantes :
+Les API d’extraction de documents vous permettent de récupérer des informations à partir de documents PDF, notamment :
 
-* Obtient les propriétés d’un document de PDF, comme si le PDF comporte des pièces jointes, des commentaires, sa version Acrobat, etc.
-* Extrayez les droits d’utilisation activés dans un document de PDF. Les utilisateurs récupèrent les droits d’utilisation activés ou désactivés dans un document de PDF pour permettre l’extensibilité de Adobe Acrobat Reader.
-* Obtenez les informations de métadonnées présentes dans un document de PDF. Les métadonnées sont des informations sur le document (à la différence du contenu du document, tel que le texte et les graphiques). XMP (Adobe Extensible Metadata Platform) est un standard de gestion des métadonnées de document. Le service XMP Utilities peut récupérer des métadonnées XMP à partir de documents PDF et exporter des métadonnées XMP dans des documents PDF.
+* Propriétés du document (s’agit-il d’un formulaire à remplir, comporte-t-il des pièces jointes, etc.)
+* Droits et autorisations d’utilisation
+* Informations de métadonnées à l’aide de la plateforme de métadonnées extensible Adobe (XMP)
 
-La [documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
-
-<!--
-
-<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
-### XMP Utilities {#XMP-utilities}
-
-<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
-PDF documents contain metadata, which is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve and save XMP metadata from PDF documents and import XMP metadata into PDF documents.
-
--->
+Cette fonctionnalité est particulièrement utile pour les systèmes de gestion des documents, les solutions d’archivage et l’automatisation des workflows.
 
 ## Conversion de document
 
-### Conversion et validation de documents conformes à la norme PDF/A
+### Conversion et validation PDF/A
 
-Les API de conversion de documents Communications permettent de convertir un document de PDF en PDF/A. Vous pouvez utiliser les API pour convertir un document de PDF en document compatible avec le PDF/A et également pour déterminer si un document de PDF est compatible avec le PDF/A. Le PDF/A est un format d’archivage destiné à la conservation à long terme du contenu du document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo. Les normes de conformité PDF/A prises en charge comprennent les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
+Convertissez des documents PDF standard au format PDF/A à des fins d’archivage à long terme :
 
-### Convertir PDF en XDP {#convert-pdf-to-xdp}
+* Prise en charge des normes de conformité PDF/A-1a, 1b, 2a, 2b, 3a et 3b
+* Validation de la conformité PDF/A
+* Préservation de l’intégrité du document avec des polices incorporées et du contenu non compressé
 
-<span class="preview"> La fonctionnalité Convertir le PDF en XDP fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+### Conversion de PDF vers XDP
 
-Convertit un document de PDF en fichier XDP. Pour réussir la conversion d’un document de PDF en fichier XDP, le document de PDF doit contenir un flux XFA dans le dictionnaire.
+La conversion de <span class="preview">PDF vers XDP est disponible via le [Programme des utilisateurs et utilisatrices précoces](/help/forms/early-access-ea-features.md). Contactez aem-forms-ea@adobe.com à partir de votre e-mail officiel pour rejoindre.</span>
+
+Convertissez des documents PDF contenant des flux XFA au format XDP pour l’édition et la réutilisation de modèles.
 
 ## Document Assurance {#doc-assurance}
 
-Le service DocAssurance comprend les API Signature et Encryption :
+Document Assurance comprend des API de signature et de chiffrement pour protéger vos documents tout au long de leur cycle de vie.
 
 ### API Signature
 
-Les API Signature permettent à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Les fonctions de sécurité sont appliquées au document lui-même. Le document reste sécurisé et contrôlé pendant tout son cycle de vie. Le document reste sécurisé au-delà du pare-feu lorsqu’il est téléchargé hors ligne et lorsqu’il est renvoyé à votre entreprise. Vous pouvez accomplir les tâches suivantes à l’aide des API Signature :
+Protégez les documents PDF avec des signatures numériques et la certification :
 
-* Ajoutez un champ de signature visible à un document de PDF.
-* Ajouter un champ de signature invisible à un document de PDF.
-* Signez le champ de signature spécifié dans un document de PDF.
-* Certifier un document de PDF
-* Supprimer la signature du champ de signature spécifié dans un document de PDF
-* Supprimer le champ de signature spécifié d’un document de PDF
+* Ajouter des champs de signature visibles ou invisibles
+* Signer numériquement les champs de signature
+* Certifier l’intégrité des documents
+* Supprimer des signatures des documents
+* Supprimer des champs de signature des documents
 
-<span class="preview"> Supprimer la signature du champ de signature spécifié et supprimer le champ de signature spécifié d’un document de PDF sont disponibles sous le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
-
-
-<!--
-
-### Remove Signature APIs
-
-The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
-
-
-### Remove Signature Field APIs
-
-The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
-
--->
+<span class="preview">La suppression des signatures et des champs de signature est disponible via le [Programme des utilisateurs et utilisatrices précoces](/help/forms/early-access-ea-features.md). Contactez aem-forms-ea@adobe.com à partir de votre e-mail officiel pour rejoindre.</span>
 
 ### API Encryption
 
-Les API Encryption vous permettent de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document de mot de PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour que le document puisse être affiché dans Adobe Reader ou Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Sécuriser le contenu du document avec le chiffrement :
 
-Vous pouvez accomplir les tâches suivantes à l’aide des API Encryption :
-
-* Chiffrez un document de mot de PDF avec un mot de passe.
-* Supprimez le chiffrement par mot de passe d’un document de mot de PDF.
-* Récupérez le type de sécurité appliqué à un document de PDF.
-* Renvoyer le type de sécurité appliqué à un document de PDF.
-
-Les API Signature et les API Encryption sont des [API synchrones](#types-of-communications-apis-types).
-
+* Chiffrer des documents PDF avec des mots de passe
+* Supprimer le chiffrement avec mot de passe
+* Détermination des types de sécurité appliqués aux documents
+* Récupérer des informations de sécurité à partir de documents protégés
 
 ### Utilitaires de document {#doc-utility}
 
-Les utilitaires de document dotés d’API synchrones vous permettent de convertir des documents entre des formats de fichiers PDF et XDP. Appliquez des droits d’utilisation à un document et extrayez les droits d’utilisation activés d’un document. Demande d’informations sur un document de PDF. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> détails sur les API des droits d’utilisation sont donnés ci-dessous :
+Les utilitaires de document fournissent des fonctionnalités supplémentaires pour l’utilisation de documents PDF :
 
+#### API des droits d’utilisation (extension Reader)
 
-#### API des droits d’utilisation (extension de Reader)
+<span class="preview">Les droits d’utilisation (extension Reader) sont disponibles via le [programme des utilisateurs précoces](/help/forms/early-access-ea-features.md). Contactez aem-forms-ea@adobe.com à partir de votre e-mail officiel pour rejoindre.</span>
 
-<span class="preview"> La fonctionnalité Droits d’utilisation (extension de Reader) fait partie du programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
+Étendez les fonctionnalités d’Adobe Reader en ajoutant des droits d’utilisation aux documents PDF, ce qui permet de bénéficier de fonctionnalités telles que :
 
-La fonctionnalité Droits d’utilisation permet à votre entreprise de partager facilement des documents de PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service fonctionne avec Adobe Reader version 7.0 ou ultérieure et ajoute des droits d’utilisation à un document de PDF. Cette action active des fonctionnalités généralement indisponibles à l’ouverture d’un document de PDF à l’aide d’Adobe Reader, telles que l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document.
+* Remplissage et enregistrement du formulaire
+* Ajouter des commentaires et des annotations
+* Signature numérique
+* Pièces jointes
+* Import/export de données de formulaire
+* Accès aux services Web et aux bases de données
 
-Lorsque les droits d’utilisation appropriés sont ajoutés aux documents PDF, les destinataires peuvent effectuer les activités suivantes depuis Adobe Reader :
+Les droits d’utilisation disponibles sont les suivants :
 
-* Remplir les documents et les formulaires de PDF en ligne ou hors ligne, ce qui permet aux destinataires d&#39;enregistrer des copies localement pour leurs dossiers tout en conservant les informations ajoutées intactes.
-* Enregistrez les documents du PDF sur un disque dur local pour conserver le document d’origine et les commentaires, données ou pièces jointes supplémentaires.
-* Joignez des fichiers et des clips multimédias aux documents du PDF.
-* Signez, certifiez et authentifiez des documents de PDF en utilisant des signatures numériques à l’aide des technologies d’infrastructure à clé publique (PKI) standard.
-* Soumettre électroniquement des documents de PDF remplis ou annotés.
-* Utilisez les documents et les formulaires du PDF comme front-end de développement intuitif des bases de données internes et des services web.
-* Partage de documents PDF pour que les réviseurs puissent ajouter des commentaires à l’aide d’outils intuitifs d’insertion de commentaires et d’annotations, tels que notes autocollantes, tampons, texte surligné et texte barré. Les mêmes fonctions sont disponibles dans Acrobat.
-* Prise en charge du décodage Barcoded Forms.
-
-Ces fonctionnalités spéciales de droits d’utilisation sont automatiquement activées lorsqu’un document de PDF défini avec des droits d’utilisation est ouvert dans Adobe Reader. Lorsque l’utilisateur a fini de travailler sur un document défini avec des droits d’utilisation, ces fonctions sont à nouveau désactivées dans Adobe Reader. Elles restent désactivées jusqu’à ce que l’utilisateur ou l’utilisatrice reçoive un autre document PDF dont les droits sont activés.
-
-#### Activer ou désactiver les droits d’utilisation
-
-Les différentes fonctionnalités de droits d’utilisation pour étendre les services de Reader de PDF sont les suivantes :
-
-* **Décodage des codes à barres** : pour décoder les codes à barres dans le document du PDF.
-
-* **Commentaires** : commentaires hors ligne sur le document du PDF.
-
-* **Commentaires en ligne** : pour commenter en ligne le document du PDF.
-
-* **Signature numérique** : pour ajouter des signatures numériques à un document de PDF.
-
-* **Champs de formulaire dynamiques** : pour ajouter des champs de formulaire à un document de PDF.
-
-* **Pages de formulaire dynamiques** : ajout de pages de formulaire à un document de PDF.
-
-* **Fichiers incorporés** : pour incorporer des fichiers dans un document de PDF.
-
-* **Import de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
-
-* **Exportation de données de formulaire** : pour importer des données de formulaire dans un document de PDF.
-
-* **Remplir le formulaire** : pour remplir des champs de formulaire dans un document de PDF.
-
-* **Online Forms** : accès à un service web ou à une base de données à partir d’un document de PDF.
-
-* **Envoyer autonome** : pour envoyer des données de formulaire hors ligne à partir d’un document de PDF.
-
-
-#### Autres fonctionnalités
-
-* **Message** : message affiché dans Adobe Acrobat Reader à l’ouverture d’un document de PDF auquel un ou plusieurs droits d’utilisation ont été appliqués.
-* **Déverrouiller le mot de passe** : mot de passe requis pour ouvrir un document de PDF chiffré. En règle générale, il s’agit du mot de passe d’ouverture du document, mais si le document de PDF est protégé en outre par un mot de passe d’autorisation, il peut être utilisé pour l’ouvrir.
+* **Interaction de formulaire** : remplissage de formulaire, importation/exportation de données de formulaire, champs/pages de formulaire dynamique
+* **Annotations** : commentaires (en ligne et hors ligne), signatures numériques
+* **Gestion des documents** : fichiers incorporés, envoi autonome, décodage des codes-barres
+* **Services en ligne** : Forms en ligne, accès aux services web
 
 ## Types d’API de communication {#types}
 
-Communications fournit des API HTTP pour la génération de documents à la demande et par lots :
+Communications fournit deux types d’API pour répondre à différents cas d’utilisation :
 
-* Les **[API synchrones](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
+### API synchrones
 
-* Les **[API par lot (API asynchrones)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Par exemple, les factures de téléphone, les relevés de carte de crédit et les relevés d’avantages sociaux sont générés tous les mois.
+**Idéal pour** : génération de documents à la demande, à faible latence et uniques.
+**Cas pratiques** : génération de documents déclenchée par l’utilisateur, applications interactives
+**Documentation** : [Référence d’API synchrone](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
 
-## Intégration
+### API Batch (asynchrones)
 
-La fonctionnalité Communications est disponible sous la forme d’un module autonome et d’un module complémentaire pour les utilisateurs de Forms as a Cloud Service. Vous pouvez contacter l’équipe des ventes de l’Adobe ou votre représentant de l’Adobe pour demander l’accès. Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut accorder l’accès aux développeurs (utilisateurs) Forms as a Cloud Service de votre organisation pour utiliser les API.
+**Idéal pour** : génération planifiée de documents multiples à débit élevé
+**Cas pratiques** : relevés mensuels, factures, avis, rapports planifiés
+**Documentation** : [Référence de l’API Batch](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
 
-Après l’intégration, pour activer la fonctionnalité Communications pour votre environnement Forms as a Cloud Service :
+## Prise en main des API Communications
 
-1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
+### Processus d’intégration
 
-1. Ouvrez l’option Modifier le programme, accédez à l’onglet Solutions et modules complémentaires, puis sélectionnez l’option **[!UICONTROL Formulaires - Communications]**.
+Communications est disponible sous la forme d’un module autonome ou d’un module complémentaire pour les utilisateurs Forms as a Cloud Service :
+
+1. Contactez le service commercial Adobe ou votre représentant Adobe pour demander l’accès
+2. Adobe autorisera l’accès pour votre organisation et accordera les privilèges d’administrateur
+3. Votre administrateur peut ensuite accorder l’accès aux développeurs de votre organisation
+
+### Activation des communications dans votre environnement
+
+Pour activer les communications dans votre environnement Forms as a Cloud Service, procédez comme suit :
+
+1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service
+2. Ouvrez l’option Modifier le programme et accédez à l’onglet Solutions et modules complémentaires .
+3. Sélectionnez l’option **[!UICONTROL Forms - Communications]**
 
    ![Communications](assets/communications.png)
 
-   Si vous avez déjà activé l’option **[!UICONTROL Forms - Inscription numérique]**, sélectionnez l’option **[!UICONTROL Forms - Module complémentaire Communications]**.
+   Si vous avez déjà activé **[!UICONTROL Forms - Inscription numérique]**, sélectionnez l’option **[!UICONTROL Forms - Module complémentaire Communications]** à la place.
 
    ![Module complémentaire](assets/add-on.png)
 
-1. Cliquez sur **[!UICONTROL Mettre à jour]**.
-
-1. Exécutez le pipeline de build. Une fois que le pipeline de build a réussi, les API Communications sont activées pour votre environnement.
+4. Cliquez sur **[!UICONTROL Mettre à jour]**
+5. Exécuter le pipeline de création : les API Communications seront activées une fois l’opération terminée.
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
+> Pour activer les API de manipulation de documents, ajoutez la règle suivante à votre configuration [Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-<!--
+## Documentation de référence sur les API {#api-reference}
 
-Communication help you combine a template and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+Les API Communications sont organisées en plusieurs catégories fonctionnelles, chacune avec une documentation de référence détaillée. Ces références d’API fournissent des informations complètes sur les points d’entrée, les paramètres, les formats de requête/réponse et les exigences d’authentification.
 
-  * Generate documents by populating template files (PDF and XDP) with XML data.
-  * Generate output forms in various formats, including non-interactive PDF print streams.
+### API de génération de documents
 
-Consider a scenario where you have one or more templates and multiple records of XML data for each template. You can use Communications APIs to generate a print document for each record.  You can also combine the records into a single document.  The result is a non-interactive PDF document. A non-interactive PDF document does not let users enter data into its fields.
+| API | Description | Lien de référence |
+|-----|-------------|----------------|
+| Génération de documents - Synchrone | Génération de documents à la demande avec une faible latence pour les scénarios interactifs | [ Référence d’API ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/) |
+| Génération de documents - lot | Traitement asynchrone de volumes importants de documents pour les opérations planifiées | [ Référence d’API ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/) |
 
- There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as REST endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
+### API de manipulation de documents
 
-The first parameter of both the operations accept the path and name of the template file (for example, ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document.  
+| API | Description | Lien de référence |
+|-----|-------------|----------------|
+| Manipulation de documents - Synchrone | Combiner, fractionner et transformer des documents PDF à l’aide des instructions DDX | [ Référence d’API ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/) |
 
-The [API reference documentation](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b1223732-ae0f-4921-bdc0-c31e48b56044) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [Batch APIs](assets/batch-api.yaml) or [non-Batch API.yaml](assets/non-batch-api.yaml) file and upload it to postman to check functionality of APIs.
+### API Document Assurance
 
->[!VIDEO](https://video.tv.adobe.com/v/335771)
+| API | Description | Lien de référence |
+|-----|-------------|----------------|
+| DocAssurance - Synchrone | Appliquer les signatures numériques, la certification, le chiffrement et les extensions Reader | [ Référence d’API ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/) |
 
-Uploading Communication APIs .yaml file to postman to check functionality of APIs.
+### Paramètres d’API courants
 
-## Using the Communications APIs {#workflows}
+Chaque catégorie d’API comporte des paramètres spécifiques, mais certains paramètres courants incluent :
 
-Typically, you create a template using [Designer](use-forms-designer.md) and use communications APIs ( generatePDFOutput and generatePrintedOutput) to:
+#### Paramètres De Génération De Documents
 
-* Convert these templates to various formats, including PDF, PostScript, ZPL, and PCL.
-* Merge XML form data with a form design to generate a document.
-* Generate a document without merging XML form data into the document. However, the primary workflow is merging data into the document.
+| Paramètre | Type | Requis | Description |
+|-----------|------|----------|-------------|
+| `template` | Chaîne | Oui | Chemin d’accès au fichier modèle XDP ou PDF |
+| `data` | Chaîne | Non | Données XML à fusionner avec le modèle |
+| `outputOptions` | Objet | Non | Options de configuration du document de sortie |
 
-Then, the output document is stored to a file. You can design custom workflows to send the file to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
+#### Paramètres de manipulation de documents
 
-![Communications Workflow](assets/communicaions-workflow.png)
+| Paramètre | Type | Requis | Description |
+|-----------|------|----------|-------------|
+| `ddx` | Chaîne | Oui | Instructions DDX pour l’assemblage ou le désassemblage de documents |
+| `inputDocuments` | Objet | Oui | Mappage des documents d’entrée à traiter |
+| `outputOptions` | Objet | Non | Options de configuration du document de sortie |
 
-### Create PDF documents {#create-pdf-documents}
+#### Paramètres de Document Assurance
 
-You can use the _generatePDFOutput_ API to create PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following illustration shows the merging of a form design and XML form data to produce a PDF document.
+| Paramètre | Type | Requis | Description |
+|-----------|------|----------|-------------|
+| `inputPDF` | Chaîne | Oui | Document PDF d’entrée à sécuriser ou à signer |
+| `certificateAlias` | Chaîne | Conditionnel | Alias du certificat pour les opérations de signature |
+| `credentialPassword` | Chaîne | Conditionnel | Mot de passe pour les informations d’identification utilisées lors de la signature |
 
-![Create PDF Documents](assets/outPutPDF_popup.png)
+Pour obtenir des détails complets sur les paramètres, les exigences d’authentification et des exemples de requêtes/réponses, reportez-vous à la documentation de référence spécifique à l’API liée dans les tableaux ci-dessus.
 
-### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
-
-You can use Communications APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on an XDP form design or PDF document. The _generatePrintedOutput_ API merges a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
-
- ### Processing batch data to create multiple documents
-
-Communications APIs can create separate documents for each record within an XML batch data source. The APIs can also create a single document that contains all records (this functionality is the default). Assume that an XML data source contains ten records and you instruct the APIs to create a separate document for each record (for example, PDF documents). As a result, the APIs generate ten PDF documents.
-
-The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all the records.
-
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
-
-### Processing batch data to create multiple documents {#processing-batch-data-to-create-multiple-documents}
-
-You create separate documents for each record within an XML batch data source. You can can also create a single document that contains all records (this functionality is the default). Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents.
-
-The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all the records.
-
-![Create PDF Documents](assets/ou_OutputBatchSingle_popup.png)
-
-The following illustration shows the Communication APIs processing an XML data file that contains multiple records. Assume that you instruct the Communication APIs to create a separate PDF document for each data record. In this situation, the Communication APIs generates a separate PDF document for each data record.
-
-![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
-
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents.
-
-### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
-
-You can use the Communications APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document's fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
-
-You can flatten the following types of PDF documents:
-
-* Interactive PDF documents created in Designer (that contain XFA streams).
-
-* Acrobat PDF forms
-
-If you attempt to flatten a non-interactive PDF document, an exception occurs.
-
-### Retain Form State {#retain-form-state}
-
-An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
-
-When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
-
-## Voir également {#see-also}
+## Ressources supplémentaires {#see-also}
 
 * [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
 * [Traitement des communications - API par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Architecture d’AEM Forms as a Cloud Service pour les API de Forms et de communication adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Architecture d’AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-architecture.md)
+* [Documentation de référence sur les API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [Fonctionnalités du programme des utilisateurs et utilisatrices précoces](/help/forms/early-access-ea-features.md)
