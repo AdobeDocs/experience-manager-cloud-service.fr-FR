@@ -4,24 +4,29 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 97%
+source-wordcount: '1858'
+ht-degree: 98%
 
 ---
 
 
 # Commencer avec Edge Delivery Services pour AEM Forms dans l’éditeur universel (WYSIWYG)
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| Création basée sur l’éditeur universel | Cet article |
+| Création basée sur des documents | [Cliquez ici](/help/edge/docs/forms/tutorial.md) |
 
+
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> avec le nom de votre organisation GitHub et le nom du référentiel. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 À l’ère numérique actuelle, les formulaires conviviaux sont essentiels pour toute entreprise. Les formulaires Edge Delivery Services sont créés à l’aide de l’éditeur universel, qui offre des fonctionnalités WYSIWYG (ce que vous voyez est ce que vous obtenez). Il fournit une interface moderne et intuitive pour une création de formulaire efficace.
 
 AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires Edge Delivery Services pour capturer et stocker les données. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png)
+![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 Ce tutoriel vous guide tout au long de la création, de la prévisualisation et de la publication de votre formulaire avec un projet de site Adobe Experience Manager nouveau ou existant à l’aide de la création WYSIWYG dans l’éditeur universel.
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 98%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + Création WYSIWYG {#universal-editor}
          + [Présentation de l’éditeur universel de formulaires pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Comment créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Création de votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guide de l’interface de l’éditeur universel : présentation des outils, des fonctionnalités et de la navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendre vos formulaires compatibles avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Concevoir des formulaires élégants : Guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 98%
          + [Protéger vos formulaires contre le spam : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Publication et déploiement de formulaires : Guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [Intégration du modèle de données de formulaire : intégration de Forms au modèle de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Création de formulaires à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
