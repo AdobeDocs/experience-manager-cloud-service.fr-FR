@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 47%
+source-wordcount: '1215'
+ht-degree: 42%
 
 ---
 
@@ -52,8 +52,9 @@ Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur univers
 
 1. **Création d’un formulaire adaptatif sur une instance d’auteur AEM Forms**
 
-   1. Accédez à votre instance de création AEM Forms as a Cloud Service.
-   1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et Documents]**.1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant.
+   1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+   1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+   1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Forms adaptatif]**. Cette action permet d’ouvrir l’assistant.
    1. Dans l&#39;onglet **Source**, sélectionnez un modèle de formulaire basé sur Edge Delivery Services :
 
       ![Créer un Forms EDS](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ Voici comment accéder au formulaire dans Edge Delivery Services :
 La structure de l’URL reste la même pour les versions intermédiaires et actives. Cependant, le contenu affiché diffère en fonction du contexte :
 
 ![Afficher le formulaire publié](/help/edge/assets/eds-view-publish-form.png)
+
+## Gestion des formulaires
+
+Vous pouvez effectuer plusieurs opérations sur le formulaire à l’aide de l’interface utilisateur d’AEM Forms.
+
+1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+
+1. Sélectionnez un formulaire et la barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le formulaire sélectionné.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Opération</strong></p> </td>
+   <td><p><strong>Description</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Modifier</p> </td>
+   <td><p>Ouvre le formulaire en mode d'édition.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Propriétés</p> </td>
+   <td><p>Fournit des options pour modifier les propriétés du formulaire.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Copier</p> </td>
+   <td><p> Fournit des options pour copier le formulaire et le coller à l’emplacement souhaité. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Prévisualisation</p> </td>
+   <td><p>Fournit des options pour prévisualiser le formulaire sous HTML ou effectuer un aperçu personnalisé en fusionnant les données d’un fichier XML avec le formulaire. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Téléchargement</p> </td>
+   <td><p>Télécharge le formulaire sélectionné.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Permet de lancer et de gérer la révision du formulaire sélectionné.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Publier/Dépublier</p> </td>
+   <td><p>Publie/dépublie le formulaire sélectionné.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Supprimer</p> </td>
+   <td><p>Supprime le formulaire sélectionné.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Comparer</p> </td>
+   <td><p>Compare deux formulaires différents à des fins de prévisualisation.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## Résolution des problèmes
 

@@ -1,17 +1,17 @@
 ---
-title: Comment créer un modèle de données de formulaire (FDM) pour un formulaire dans l’éditeur universel ?
+title: Comment intégrer un modèle de données de formulaire (FDM) pour un formulaire dans l’éditeur universel ?
 description: Découvrez comment créer des formulaires basés sur un modèle de données de formulaire (FDM). Générer et modifier des exemples de données pour les objets de modèle de données dans FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 8%
 
 ---
-
 
 # Intégrer des formulaires à un modèle de données de formulaire dans l’éditeur universel
 
@@ -128,7 +128,7 @@ Lorsque vous créez un formulaire non basé sur un schéma, aucune source de don
 
    ![Créer un formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Vous pouvez également ajouter manuellement une liaison de données à un élément de formulaire en la spécifiant dans les propriétés **Référence de liaison** de l’élément de formulaire.
+   Vous devez ajouter manuellement une liaison de données à un élément de formulaire en la spécifiant dans les propriétés **Référence de liaison** de l’élément de formulaire.
 Par exemple, ajoutons une référence de liaison de données à la zone de texte **Nom de l’animal de compagnie** déjà présente dans le formulaire :
 
    ![Ajout manuel de la recherche de données pour un champ de formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
