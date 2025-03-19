@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 19%
 
 ---
@@ -161,7 +161,7 @@ Composant sélectionné supprimé.
 >
 >Utilisez la touche de raccourci `Shift+Backspace` supprimer le composant sélectionné de son conteneur.
 
-### Réorganisation des composants dans les conteneurs {#reordering-components}
+### Réorganisation des composants {#reordering-components}
 
 1. S’il n’est pas déjà en [mode arborescence de contenu](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), basculez-le.
 1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
@@ -176,7 +176,7 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 >[!NOTE]
 >
->Les composants ne peuvent pas être déplacés entre les conteneurs si un [filtre de composant](/help/implementing/universal-editor/filtering.md) différent est défini entre les conteneurs source et cible.
+>Les composants ne peuvent être déplacés entre des conteneurs que si les conteneurs cibles [filtre de composant](/help/implementing/universal-editor/filtering.md) autorisent le composant sélectionné.
 
 ### Créer des variations à l’aide de GenAI avec Générer des variations {#generate-variations-ai}
 
