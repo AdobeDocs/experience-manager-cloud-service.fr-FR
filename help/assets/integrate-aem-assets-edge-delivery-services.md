@@ -2,9 +2,9 @@
 title: Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services
 description: Découvrez comment intégrer AEM Assets à Edge Delivery Services. Cette intégration vous permet d’intégrer AEM Assets à Microsoft Word et Google Docs, d’intégrer AEM Assets à l’éditeur universel, d’intégrer Dynamic Media aux fonctionnalités OpenAPI à l’éditeur universel et d’intégrer Dynamic Media aux fonctionnalités OpenAPI à Microsoft Word et Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
+source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 3%
 Vous pouvez modifier le contenu dans :
 
 * [Microsoft Word ou Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
-* [Éditeur universel](#integrate-aem-assets-with-universal-editor)
+* [Éditeur universel](#integrate-aem-assets-with-UE-universal-editor)
 
 Après avoir modifié le contenu, vous pouvez le publier dans Edge Delivery Services.
 
 ## Intégration d’AEM Assets aux flux de création basés sur des documents pour Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
-L’intégration d’AEM Assets aux outils de création basés sur des documents, tels que Microsoft Word ou Google Docs, fournit un sélecteur de ressources directement dans votre éditeur. Utilisez ce sélecteur de ressources pour accéder à AEM Assets et insérer des ressources approuvées dans votre document.
-
-Si vous disposez déjà d’un site web Edge Delivery Services, consultez [Plug-in AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) pour intégrer AEM Assets à votre projet AEM existant. Si vous ne disposez pas d’un site web Edge Delivery Services, consultez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration d’AEM Assets à un environnement de création basé sur les documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) ci-dessous.
+Lorsqu’AEM Assets est intégré aux outils de création basés sur des documents, tels que Microsoft Word ou Google Docs, il fournit un sélecteur de ressources dans votre éditeur. Utilisez ce sélecteur de ressources pour accéder à AEM Assets et insérer des ressources approuvées dans votre document.
+Si vous disposez déjà d’un site web Edge Delivery Services, consultez le document [Plug-in AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) pour savoir comment intégrer AEM Assets à votre projet AEM existant.
+Suivez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration d’AEM Assets à un environnement de création basé sur des documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) si vous ne disposez pas d’un site web Edge Delivery Services pour publier votre contenu inclusif AEM Assets créé dans des outils de création basés sur des documents.
 
 ### Prérequis{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Avant de commencer, assurez-vous que votre environnement de création basé sur les documents est prêt :
 
-* Intégrez AEM à un outil de création basé sur les documents pour configurer l’environnement de création. Voir [Prise en main - Tutoriel pour les développeurs](https://www.aem.live/developer/tutorial) pour configurer l’environnement de création.
+* Intégrez AEM à un outil de création basé sur les documents pour configurer l’environnement de création. Voir [Prise en main - Tutoriel pour les développeurs](https://www.aem.live/developer/tutorial) pour savoir comment configurer l’environnement de création.
 
 ### Intégration d’AEM Assets à l’environnement de création basé sur les documents{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
@@ -65,23 +65,23 @@ Pour utiliser la référence de ressource, vous devez disposer des éléments su
 
 ### Utilisation des ressources diffusées à l’aide de Dynamic Media avec les fonctionnalités OpenAPI{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Pour utiliser les ressources diffusées à l’aide de Dynamic Media avec des fonctionnalités OpenAPI lors de la création de contenu, consultez :
+Sélectionnez les liens suivants pour savoir comment utiliser Dynamic Media avec les fonctionnalités OpenAPI afin de diffuser des images, des vidéos et d’autres types de ressources dans votre contenu :
 
-* [Utilisation des références d’image](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
-* [Utilisation de références vidéo](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [Utilisation des références de ressources pour les ressources vidéo et non-images telles que les PDF, les fichiers Zip, etc](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [Ajouter des images à votre contenu](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
+* [Ajouter des vidéos à votre contenu](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
+* [Ajoutez à votre contenu des ressources vidéo et autres que des images, telles que des fichiers PDF et Zip](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-Regardez cette vidéo pour découvrir comment diffuser des ressources à l’aide de Dynamic Media avec les fonctionnalités OpenAPI.
+Regardez cette vidéo pour découvrir comment diffuser des ressources dans votre contenu à l’aide de Dynamic Media avec les fonctionnalités OpenAPI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
 ## Exemple de site Edge Delivery Services{#example-of-an-Edge-Delivery-Services-site}
 
-Voir [Voyage WKND](http://bit.ly/3DExLnf). Ce site est créé à l’aide des fonctionnalités de création documentaire de Edge Delivery Services. Le contenu du site est créé dans [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) à l’aide de Dynamic Media avec des fonctionnalités OpenAPI pour la diffusion de ressources. Une fois créé, le contenu est publié directement à partir du document. Pour cette configuration de création basée sur des documents, tous les fichiers, dossiers, configurations, codes de style et de fonctionnalité essentiels du site web sont stockés dans ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Consultez la section [Voyage WKND](http://bit.ly/3DExLnf), un site créé à l’aide des fonctionnalités de création de documents de Edge Delivery Services. Le contenu du site est créé dans [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) et Dynamic Media avec les fonctionnalités OpenAPI est utilisé pour diffuser des ressources dans le contenu. Après la création, le contenu est directement publié à partir du document. Explorez ce [référentiel Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) pour en savoir plus sur l’ensemble des fichiers, dossiers, configurations, codes de style et de fonctionnalité du site web utilisés pour créer la configuration de création basée sur des documents pour ce site Edge Delivery Services (EDS).
 
-## Intégration d’AEM Assets aux flux de création basés sur l’éditeur universel pour Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
+## Intégration d’AEM Assets aux flux de création basés sur l’éditeur universel pour Edge Delivery Services {#integrate-aem-assets-with-UE-universal-editor}
 
 Configurez l’éditeur universel pour l’intégration à AEM Assets. Cette intégration vous permet d’utiliser Dynamic Media avec des fonctionnalités OpenAPI pour diffuser des ressources.
 
-* Voir [Configuration dans Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) pour ajouter une fonction de sélecteur de ressources personnalisée dans l’éditeur universel. Le sélecteur de ressources personnalisé vous permet d’insérer directement des ressources dans votre contenu de l’éditeur universel.
+* Voir [Configuration dans Edge Delivery Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) pour savoir comment ajouter une fonction de sélecteur de ressources personnalisée dans l’éditeur universel. Le sélecteur de ressources personnalisé vous permet d’insérer directement des ressources dans votre contenu de l’éditeur universel.
 * Voir [Présentation de l’extension](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) pour savoir comment accéder à AEM Assets et insérer les ressources lors de la création dans l’éditeur universel.
