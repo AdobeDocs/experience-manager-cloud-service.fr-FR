@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -70,7 +70,7 @@ The option **Enable model** is activated by default. This means that your model 
 Confirm with **Create** and you can then **Open** your model to start defining the structure.
 -->
 
-## Définir des modèles de fragment de contenu {#defining-content-fragment-models}
+## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
 Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
 

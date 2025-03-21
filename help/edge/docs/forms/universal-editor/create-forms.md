@@ -1,6 +1,6 @@
 ---
-title: Comment créer un Forms adaptatif autonome à l’aide de l’éditeur universel ?
-description: Cet article explique comment créer un Forms adaptatif à l’aide de l’assistant de création de formulaire dans l’instance d’auteur AEM et publier des formulaires dans AEM Edge Delivery Services.
+title: Comment créer des formulaires adaptatifs autonomes à l’aide de l’éditeur universel ?
+description: Cet article explique comment créer des formulaires adaptatifs à l’aide de l’assistant de création de formulaire dans l’instance de création AEM et publier des formulaires dans AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: true
@@ -9,13 +9,13 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 42%
+ht-degree: 85%
 
 ---
 
 # Créer des formulaires autonomes à l’aide de l’éditeur universel (WYSIWYG)
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 Cet article vous guide tout au long du processus de création de formulaires autonomes avec l’éditeur universel en sélectionnant un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaire. Vous pouvez également publier les formulaires créés avec l’éditeur universel dans AEM Edge Delivery Services.
 
@@ -23,13 +23,13 @@ Cet article vous guide tout au long du processus de création de formulaires aut
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* [Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un ensemble de services composables qui permet un environnement de développement rapide dans lequel les auteurs et autrices peuvent mettre à jour, publier et lancer rapidement de nouveaux formulaires à l’aide de l’éditeur universel. L’éditeur universel simplifie la création de formulaires pour les services de diffusion Adobe Edge grâce à une interface WYSIWYG visuelle et conviviale.
+* [Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) constitue un ensemble de services composable permettant un environnement de développement rapide où les auteurs et les autrices peuvent mettre à jour, publier et lancer de nouveaux formulaires rapidement à l’aide de l’éditeur universel. L’éditeur universel simplifie la création de formulaires pour Adobe Edge Delivery Services grâce à une interface WYSIWYG visuelle et conviviale.
 
-* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Vous pouvez consulter [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action **Adobe recommande d’utiliser ces composants modernes et extensibles pour développer un Forms adaptatif**.
+* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Vous pouvez consulter [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action **Adobe recommande d’utiliser ces composants modernes et extensibles pour développer des formulaires adaptatifs**.
 
-* [Composants de base des formulaires adaptatifs](/help/forms/creating-adaptive-form.md) : il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser [Composants principaux de Forms adaptatif](#create-an-adaptive-form-core-components) pour créer un Forms adaptatif.
+* [Composants de base des formulaires adaptatifs](/help/forms/creating-adaptive-form.md) : il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser les [composants principaux de formulaires adaptatifs pour créer des formulaires adaptatifs](#create-an-adaptive-form-core-components).
 
-AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires Edge Delivery Services pour capturer et stocker les données. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de Forms adaptatif](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de Forms adaptatif à un projet de site AEM existant](#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires Edge Delivery Services pour capturer et stocker les données. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png)
 
@@ -42,22 +42,22 @@ AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous per
 
 ## Créer un formulaire adaptatif à l’aide de l’éditeur universel
 
-L’éditeur universel vous permet de créer facilement des formulaires autonomes réactifs et interactifs à l’aide de composants prêts à l’emploi tels que des champs de texte, des cases à cocher et des boutons radio. Il offre des fonctionnalités puissantes telles que des règles dynamiques, une intégration de données fluide et des options de personnalisation, ce qui vous permet de créer des formulaires en fonction de vos besoins exacts.
+L’éditeur universel vous permet de créer facilement des formulaires réactifs et interactifs autonomes à l’aide de composants préconfigurés tels que des champs de texte, des cases à cocher et des boutons radio. Il offre des fonctionnalités puissantes telles que des règles dynamiques, une intégration de données fluide et des options de personnalisation, ce qui vous permet de créer des formulaires en fonction de vos besoins exacts.
 
 >[!NOTE]
 >
-> Vous pouvez également [créer un formulaire dans AEM Sites à l’aide du modèle de site Edge Delivery Services dans l’éditeur universel et le publier dans Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
+> Vous pouvez également [créer un formulaire dans AEM Sites à l’aide du modèle de site Edge Delivery Services dans l’éditeur universel et le publier dans Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
-Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur universel, procédez comme suit :
+Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur universel, procédez comme suit :
 
-1. **Création d’un formulaire adaptatif sur une instance d’auteur AEM Forms**
+1. **Créer un formulaire adaptatif sur une instance de création AEM Forms**
 
    1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
    1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
    1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Forms adaptatif]**. Cette action permet d’ouvrir l’assistant.
-   1. Dans l&#39;onglet **Source**, sélectionnez un modèle de formulaire basé sur Edge Delivery Services :
+   1. Dans l’onglet **Source**, sélectionnez un modèle de formulaire basé sur Edge Delivery Services :
 
-      ![Créer un Forms EDS](/help/edge/assets/create-eds-forms.png)
+      ![Créer des formulaires EDS](/help/edge/assets/create-eds-forms.png)
 
 
       Lorsque vous sélectionnez un modèle basé sur Edge Delivery Services, le bouton **[!UICONTROL Créer]** est activé.
@@ -66,7 +66,7 @@ Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur univers
 
    1. Cliquez sur **[!UICONTROL Créer]**. L’assistant **Créer un formulaire** s’affiche.
    1. Spécifiez les **Nom** et **Titre**.
-   1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est :
+   1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
       `https://github.com/wkndforms/edsforms`
    1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -82,9 +82,9 @@ Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur univers
 
       Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en vue Création.
 
-1. **Créez le formulaire dans l’éditeur universel**
+1. **Créer le formulaire dans l’éditeur universel**
 
-   1. Ouvrez l’explorateur de contenu et accédez au composant **[!UICONTROL Formulaire adaptatif]** dans l’**arborescence Contenu**.
+   1. Ouvrez l’explorateur de contenu et accédez au composant **[!UICONTROL Formulaire adaptatif]** dans l’**arborescence de contenu**.
 
       ![arborescence de contenu](/help/edge/assets/content-tree.png)
 
@@ -96,9 +96,9 @@ Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur univers
 
       ![ouvrir les propriétés](/help/edge/assets/component-properties.png)
 
-      La capture d’écran ci-dessous affiche le formulaire `Registration Form` simple créé dans l’éditeur universel :
+      La copie d’écran ci-dessous affiche le simple formulaire `Registration Form` créé dans l’éditeur universel :
 
-      ![formulaire de contact](/help/edge/assets/contact-us.png)
+      ![Formulaire de contact](/help/edge/assets/contact-us.png)
 
       Vous pouvez maintenant [configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md).
 
@@ -122,9 +122,9 @@ Pour créer un formulaire adaptatif autonome à l’aide de l’éditeur univers
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-## Publication du formulaire
+## Publier le formulaire
 
-Publiez maintenant le formulaire autonome dans Edge Delivery Services en cliquant sur le bouton **[!UICONTROL Publier]** dans le coin supérieur droit de l’éditeur universel.
+Publiez maintenant le formulaire autonome dans Edge Delivery Services en cliquant sur le bouton **[!UICONTROL Publier]** dans le coin supérieur droit de l’éditeur universel.
 
 ![publier le formulaire](/help/edge/assets/publish-form.png)
 
@@ -138,14 +138,14 @@ Voici comment accéder au formulaire dans Edge Delivery Services :
 
   `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
 
-  Par exemple, si le référentiel de votre projet s’appelle « esforms », qu’il se trouve sous le compte « windowforms » et que vous utilisez la branche « principale » et le formulaire comme « Formulaire d’enregistrement », l’URL de la version intermédiaire ressemble à ce qui suit :
+  Par exemple, si le référentiel de votre projet est nommé « edsforms », qu’il se trouve dans le compte « wkndform » et que vous utilisez la branche « main » et le formulaire « Formulaire d’rengistrement », l’URL intermédiaire ressemble à celle-ci :
   `https://main--edsforms--wkndforms.aem.page/content/forms/af/registration-form`
 
 * **Version en direct (formulaire publié)** : la version active affiche la dernière version publiée du formulaire, accessible aux utilisateurs finaux. Utilisez le format d’URL suivant pour accéder à la version active publiée du formulaire :
 
   `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
 
-  Par exemple, si le référentiel de votre projet s’appelle « esforms », qu’il se trouve sous le compte « windowforms » et que vous utilisez la branche « principale » et le formulaire comme « Formulaire d’enregistrement », l’URL de la version intermédiaire ressemble à ce qui suit :
+  Par exemple, si le référentiel de votre projet est nommé « edsforms », qu’il se trouve dans le compte « wkndform » et que vous utilisez la branche « main » et le formulaire « Formulaire d’rengistrement », l’URL intermédiaire ressemble à celle-ci :
   `https://main--edsforms--wkndforms.aem.live/content/forms/af/registration-form`
 
 La structure de l’URL reste la même pour les versions intermédiaires et actives. Cependant, le contenu affiché diffère en fonction du contexte :

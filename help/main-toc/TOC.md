@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
 source-wordcount: '6103'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + {#2025} 2025
-         + [Notes de mise à jour de la version 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
+         + [Notes de mise à jour de la version 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + {#2024} 2024
          + [Notes de mise à jour de la version 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Notes de mise à jour de la version 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -423,8 +423,8 @@ ht-degree: 98%
          + [Diffusion sans affichage avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [Configuration du fragment de contenu](/help/sites-cloud/administering/content-fragments/setup.md)
          + [Gestion des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
-         + [Définir des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-         + [Gérer des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [Définition de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
          + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
@@ -589,8 +589,8 @@ ht-degree: 98%
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utiliser Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
-      + [Prime Dynamic Media et Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
-      + [Activation de Dynamic Media Prime et d’Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
+      + [Dynamic Media Prime et Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [Activer Dynamic Media Prime et Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Résolution des problèmes liés à Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -656,8 +656,8 @@ ht-degree: 98%
       + [Afficher les ressources](/help/assets/navigate-assets-view.md)
       + [Chargement et ajout de ressources](/help/assets/add-delete-assets-view.md)
       + [Importer des ressources en bloc](/help/assets/bulk-import-assets-view.md)
-      + [Recherche et découverte de ressources](/help/assets/search-assets-view.md)
-      + [Filtres de recherche personnalisés](/help/assets/custom-search-filters.md)
+      + [Rechercher et découvrir des ressources](/help/assets/search-assets-view.md)
+      + [Filtres de recherche personnalisée](/help/assets/custom-search-filters.md)
       + [Tâches de gestion des ressources](/help/assets/manage-organize-assets-view.md)
       + [Modification des images](/help/assets/edit-images-assets-view.md)
       + [Modifier des vidéos](/help/assets/edit-videos-assets-view.md)
@@ -895,9 +895,9 @@ ht-degree: 98%
    + Rapports de transaction {#using-communications}
       + [API de rapports de transactions facturables](/help/forms/transaction-reports-billable-apis.md)
       + [Enregistrer une transaction pour une implémentation personnalisée](/help/forms/record-transaction-custom-implementation.md)
-   + {#vr-dashboard} du tableau de bord de réalisation des valeurs
-      + [Présentation de votre tableau de bord de réalisation des valeurs](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Utiliser le tableau de bord de réalisation des valeurs pour analyser les tendances d’utilisation des formulaires et documents](/help/forms/using-the-value-realization-dashboard.md)
+   + Tableau de bord de réalisation de valeurs {#vr-dashboard}
+      + [Comprendre votre tableau de bord de réalisation de valeurs](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Utilisation du tableau de bord de réalisation de valeurs pour analyser les tendances d’utilisation des formulaires et documents](/help/forms/using-the-value-realization-dashboard.md)
    + Référence de l’API de développement {#aem-forms-developer-api-reference}
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Création WYSIWYG {#universal-editor}
          + [Présentation de l’éditeur universel de formulaires pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Tutoriel détaillé sur comment commencer à créer à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Commencement de la création à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Création de votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guide de l’interface de l’éditeur universel : présentation des outils, des fonctionnalités et de la navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendre vos formulaires compatibles avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
@@ -1067,7 +1067,7 @@ ht-degree: 98%
          + [Rendre votre formulaire international : Guide de traduction des formulaires](/help/edge/docs/forms/translate-forms.md)
          + [Protéger vos formulaires : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
-         + [Surveillance Des Performances Des Formulaires : Guides De Surveillance D’Utilisation Réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Surveiller les performances des formulaires : guides de surveillance d’utilisation réelle](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Resources Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)
