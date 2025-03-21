@@ -1,12 +1,12 @@
 ---
 title: Surveillance des utilisateurs et utilisatrices en temps réel (RUM) pour AEM as a Cloud Service
-description: Découvrez la surveillance de l’utilisation réelle (RUM) , un service automatisé qui permet de surveiller la collecte de données côté client.
+description: Découvrez Real Use Monitoring (RUM) , un service automatisé qui permet de surveiller la collecte de données côté client.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -15,62 +15,62 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le service de surveillance de l’utilisation réelle, la collecte de données côté client, est un service automatisé. Aucune configuration de client n’est requise.
+>Le service de surveillance de l’utilisation réelle, la collecte de données côté client, est un service automatisé. Aucune configuration client n’est requise.
 
 >[!INFO]
 >
->La surveillance côté client ne fonctionne que pour les clients ayant AEM version de Cloud Service (Adobe Experience Manager) **2024.5.16461** et supérieure.
+>La surveillance côté client ne fonctionne que pour les clients et clientes disposant de la version **2024.5.16461** et ultérieure d’AEM (Adobe Experience Manager) Cloud Service.
 
 ## Vue d’ensemble {#overview}
 
-Le service de surveillance de l’utilisation réelle (RUM) est une technologie de surveillance des performances qui contrôle le trafic côté client sur un site web ou une application en temps réel. Ce service se concentre sur la collecte de mesures et de données essentielles à l’optimisation des performances en surveillant les engagements des sites web, plutôt que sur les utilisateurs eux-mêmes. Avec RUM, les mesures de performances clés sont suivies dès le lancement de l’URL jusqu’à ce que la demande soit renvoyée au navigateur.
+Le service RUM (Real Use Monitoring) est une technologie de surveillance des performances qui surveille en temps réel le trafic côté client sur un site web ou une application. Ce service se concentre sur la collecte de mesures et de données essentielles pour optimiser les performances en surveillant les engagements des sites web, plutôt que sur les utilisateurs eux-mêmes. Avec RUM, les mesures de performances clés sont suivies depuis le lancement de l’URL jusqu’à ce que la requête soit renvoyée au navigateur.
 
-## Qui peut bénéficier d’un service de surveillance à usage réel ? {#who-can-benefit-from-rum-service}
+## Qui peut bénéficier d&#39;un service de surveillance de l&#39;utilisation réelle ? {#who-can-benefit-from-rum-service}
 
-La surveillance de l’utilisation réelle permet aux clients et aux Adobes de comprendre comment les utilisateurs finaux interagissent avec AEM sites. La surveillance de l’utilisation réelle diagnostique les problèmes de performance et mesure l’efficacité des expériences. La surveillance de l’utilisation réelle préserve la confidentialité des visiteurs par échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle (PII) n’est collectée.
+La surveillance de l’utilisation réelle permet aux clients et à Adobe de comprendre comment les utilisateurs finaux interagissent avec les sites AEM. La surveillance de l’utilisation réelle diagnostique les problèmes de performances et mesure l’efficacité des expériences. La surveillance de l’utilisation réelle préserve la confidentialité des visiteurs par le biais de l’échantillonnage (seule une petite partie de toutes les pages vues est surveillée) et aucune information d’identification personnelle n’est collectée.
 
-## Service de surveillance de l’utilisation réelle et confidentialité {#rum-service-and-privacy}
+## Service de surveillance de l&#39;utilisation réelle et confidentialité {#rum-service-and-privacy}
 
-Le service de surveillance de l’utilisation réelle dans AEM préserve la confidentialité des visiteurs et minimise la collecte de données. En tant que visiteur, cela signifie que le site que vous visitez ou que vous rendez disponible pour l’Adobe ne collecte aucune information personnelle.
+Le service de surveillance de l’utilisation réelle d’AEM préserve la confidentialité des visiteurs et réduit la collecte de données. En tant que visiteur, cela signifie que le site que vous visitez ou que vous mettez à la disposition d’Adobe ne collecte aucune information personnelle.
 
-En tant qu’opérateur de site, aucune inscription supplémentaire n’est requise pour activer la surveillance par le biais de cette fonctionnalité. Il n’existe pas de fenêtre contextuelle ni de formulaire de consentement supplémentaire que les utilisateurs finaux peuvent accepter pour activer RUM.
+En tant qu’opérateur de site, aucun accord préalable supplémentaire n’est nécessaire pour activer la surveillance via cette fonctionnalité. Il n’existe aucun formulaire de consentement ou de pop-up supplémentaire que les utilisateurs finaux peuvent accepter pour activer RUM.
 
-## Tirage des données du service de surveillance de l’utilisation réelle {#rum-service-data-sampling}
+## Échantillonnage des données du service de surveillance d&#39;utilisation réelle {#rum-service-data-sampling}
 
-Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. AEM service de surveillance de l’utilisation réelle (RUM) ne capture que les informations provenant d’une petite fraction des pages vues. Le service est censé être échantillonné et rendu anonyme plutôt qu’un remplacement pour les analyses. Par défaut, le ratio d’échantillonnage des pages est de 1:100. Pour l’instant, les opérateurs du site ne peuvent ni augmenter ni diminuer le taux d’échantillonnage. Pour estimer précisément le trafic total, pour chaque 100 pages vues, les données sont collectées à partir de 1, ce qui vous donne une approximation fiable du trafic global.
+Les solutions d’analyse web traditionnelles tentent de collecter des données sur chaque visiteur. Le service de surveillance d’utilisation réelle (RUM) d’AEM ne capture les informations qu’à partir d’une petite fraction des pages vues. Le service est destiné à être échantillonné et anonymisé plutôt qu’à remplacer les analyses. Par défaut, les pages ont un rapport d’échantillonnage de 1:100. Les exploitants de sites ne peuvent pas augmenter ou diminuer le taux d&#39;échantillonnage pour le moment. Pour estimer avec précision le trafic total, pour chaque centaine de pages vues, les données sont collectées à partir de 1, ce qui vous donne une approximation fiable du trafic global.
 
-Lorsque vous décidez si les données sont collectées, elles sont effectuées page vue par page vue et il devient pratiquement impossible de suivre les interactions sur plusieurs pages. Par conception, RUM n’a aucun concept de visiteurs ou de sessions, uniquement des pages vues.
+Lorsque vous décidez si les données sont collectées, elles le sont page par page vue. Il devient ainsi pratiquement impossible d’effectuer le suivi des interactions entre plusieurs pages. Par défaut, RUM ne connaît pas les visiteurs ni les sessions, seulement les pages vues.
 
 ## Quelles données sont collectées ? {#what-data-is-being-collected}
 
-Le service de surveillance de l’utilisation réelle est conçu pour empêcher la collecte d’informations d’identification personnelle. L&#39;ensemble complet des informations collectées par RUM est répertorié ci-dessous :
+Le service de surveillance de l&#39;utilisation réelle est conçu pour empêcher la collecte d&#39;informations d&#39;identification personnelle. L’ensemble complet des informations collectées par RUM est répertorié ci-dessous :
 
 * Nom d’hôte du site visité, par exemple : `experienceleague.adobe.com`
-* Le type d’agent utilisateur large et le système d’exploitation utilisé pour afficher la page, par exemple : `desktop:windows` ou `mobile:ios`
-* Heure de la collecte des données, par exemple : `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL de la page visitée, par exemple : `https://experienceleague.adobe.com/docs`
-* URL du référent (URL de la page qui a lié à la page active, si l’utilisateur a suivi un lien)
-* Un identifiant généré de manière aléatoire de la page vue, dans un format similaire à : `2Ac6`
-* Poids ou inverse du taux d’échantillonnage, par exemple : `100`. Cela signifie que seulement une page vue sur cent est enregistrée.
-* Point de contrôle, ou nom, d’un événement particulier dans la séquence de chargement de la page. Ou interagir avec lui en tant que visiteur
-* Source, ou identifiant, de l’élément DOM avec lequel l’utilisateur interagit pour le point de contrôle mentionné ci-dessus. Par exemple, il peut s’agir d’une image.
-* La cible, ou le lien vers une page ou une ressource externe avec laquelle l’utilisateur interagit pour le point de contrôle mentionné ci-dessus. Par exemple : `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Les mesures de performances des principales caractéristiques du web (CWV), notamment la plus grande peinture de contenu (LCP), le premier délai d’entrée (FID), le changement de mise en page cumulée (CLS) et le délai de premier octet (TTF) qui décrivent la qualité de l’expérience du visiteur.
+* Type d’agent utilisateur général et système d’exploitation utilisés pour afficher la page, par exemple : `desktop:windows` ou `mobile:ios`
+* Heure à laquelle les données ont été collectées, par exemple : `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs`
+* URL du référent (URL de la page qui a été liée à la page active, si l’utilisateur a suivi un lien)
+* Identifiant de la page vue généré de manière aléatoire, dans un format similaire à : `2Ac6`
+* Poids ou inverse du taux d’échantillonnage, tel que : `100`. Cela signifie que seule une page vue sur cent est enregistrée
+* Point de contrôle ou nom d’un événement particulier dans la séquence de chargement de la page. Ou, en interagissant avec lui en tant que visiteur
+* Source, ou identifiant, de l’élément DOM avec lequel l’utilisateur interagit pour le point de contrôle mentionné ci-dessus. Par exemple, il peut s’agir d’une image
+* Cible ou lien vers une page ou une ressource externe avec laquelle l’utilisateur interagit pour le point de contrôle mentionné ci-dessus. Par exemple : `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* Les mesures de performances [Core Web Vitals (CWV)](https://web.dev/articles/lcp) [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) et [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) qui décrivent la qualité d’expérience du visiteur.
 
-## Fonctionnement de la surveillance des utilisations réelles pour un client {#how-rum-works-for-a-customer}
+## Fonctionnement de la surveillance d’utilisation réelle pour un client {#how-rum-works-for-a-customer}
 
-La surveillance de l’utilisation réelle surveille automatiquement le trafic côté client. En tant que client Adobe, vous n’avez pas besoin d’effectuer d’autres étapes, car ce service est parfaitement intégré à votre configuration existante. Le service de surveillance de l’utilisation réelle (RUM) étant disponible en général , vous bénéficiez automatiquement de cette nouvelle fonctionnalité. Le service de surveillance de l’utilisation réelle n’expose aucune mesure à surveiller pour les clients. Nous nous efforçons de vous fournir cette fonctionnalité dès que possible.
+Real Use Monitoring surveille automatiquement le trafic côté client. En tant que client Adobe, vous n’avez pas besoin de prendre des mesures supplémentaires, car ce service est intégré de manière transparente à votre configuration existante. Le service de surveillance de l’utilisation réelle (RUM) étant généralement disponible , vous bénéficiez automatiquement de cette nouvelle fonctionnalité. Le service de surveillance d’utilisation réelle n’expose aucune mesure destinée aux clients aujourd’hui à surveiller. Nous nous efforçons de vous fournir cette fonctionnalité dès que possible.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Utilisation de la surveillance de l’utilisation réelle par Adobe {#how-rum-data-is-being-used}
+## Comment Adobe utilise la surveillance en utilisation réelle {#how-rum-data-is-being-used}
 
 Les données de surveillance d’utilisation réelle sont utilisées aux fins suivantes :
 
-* Pour identifier et corriger les goulets d’étranglement en termes de performances pour les sites clients
-* Pour mieux comprendre comment AEM interagit avec d’autres scripts (tels que les analyses, le ciblage ou les bibliothèques externes) sur la même page, afin d’améliorer la compatibilité.
+* Pour identifier et corriger les goulots d’étranglement en termes de performances des sites clients
+* comprendre comment AEM interagit avec d’autres scripts (tels que les bibliothèques d’analyse, de ciblage ou externes) sur la même page, afin d’accroître la compatibilité ;
 <!--
 ## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
@@ -93,20 +93,20 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Yes.
 -->
 
-1. **Les mesures &quot;Interaction vers la prochaine peinture&quot;, &quot;Temps jusqu’au premier octet&quot; et &quot;Première peinture contentée&quot; sont-elles collectées ?**
+1. **Les mesures « Interaction avec la peinture suivante », « Temps jusqu’au premier octet » et « Première peinture contentante » sont-elles collectées ?**
 
-   L’interaction avec la peinture suivante (INP) et le temps jusqu’au premier octet (TTF) sont collectés.  La première peinture contentée n’est pas collectée pour le moment.
+   L&#39;interaction avec la peinture suivante (INP) et le temps jusqu&#39;au premier octet (TTFB) sont collectés.  La première peinture contentante n&#39;est pas collectée pour le moment.
 
-1. **Le chemin d’accès `/.rum` est bloqué sur mon site. Comment dois-je le corriger ?**
+1. **Le chemin d’accès `/.rum` est bloqué sur mon site, comment dois-je le corriger ?**
 
-   Le chemin d’accès `/.rum` est requis pour que la collection RUM fonctionne. Si vous utilisez un réseau de diffusion de contenu devant AEM as a Cloud Service de l’Adobe, assurez-vous que le chemin d’accès `/.rum` vers la même origine AEM que votre autre contenu AEM. Assurez-vous également qu’il n’est pas ajusté.
+   Le chemin d’accès `/.rum` est requis pour que la collecte RUM fonctionne. Si vous utilisez un réseau CDN en amont d’Adobe AEM as a Cloud Service, assurez-vous que le chemin d’accès au `/.rum` est transféré vers la même origine AEM que vos autres contenus AEM. Et assurez-vous qu’il n’est pas ajusté d’une manière ou d’une autre.
 
-1. **La collection RUM est-elle comptabilisée dans les demandes de contenu à des fins contractuelles ?**
+1. **La collecte RUM est-elle prise en compte dans les demandes de contenu à des fins contractuelles ?**
 
-   La bibliothèque RUM et la collection RUM ne sont pas comptabilisées comme des requêtes de contenu et n’augmentent pas le nombre de pages vues signalé ou d’appels API. De plus, pour les clients qui utilisent un réseau de diffusion de contenu prêt à l’emploi avec AEM as a Cloud Service, la [collection côté serveur](#serverside-collection) est la base des demandes de contenu.
+   La bibliothèque RUM et la collection RUM ne sont pas comptées comme des requêtes de contenu et n’augmentent pas le nombre signalé de pages vues ou d’appels d’API. En outre, pour les clients qui utilisent le réseau CDN prêt à l’emploi avec AEM as a Cloud Service, la [collecte côté serveur](#serverside-collection) est la base des demandes de contenu.
 
 1. **Comment puis-je me désinscrire ?**
 
-   Adobe recommande d’utiliser la surveillance de l’utilisation réelle (RUM) en raison de ses avantages significatifs et qu’elle permettra à l’Adobe de vous aider à optimiser vos expériences numériques en améliorant les performances du site web. Le service est conçu pour être transparent et n’a aucun impact sur les performances de votre site web.
+   Adobe recommande d’utiliser la surveillance de l’utilisation réelle (RUM) en raison de ses avantages significatifs et du fait qu’elle permettra à Adobe de vous aider à optimiser vos expériences digitales en améliorant les performances des sites web. Le service est conçu pour être transparent et n’a aucun impact sur les performances de votre site web.
 
-   S’exclure peut signifier manquer une chance d’améliorer l’engagement du trafic sur votre site web. Toutefois, si vous rencontrez des problèmes, contactez l’assistance Adobe.
+   Se désinscrire peut signifier rater une chance d’améliorer l’engagement du trafic sur votre site web. Cependant, si vous rencontrez des problèmes, contactez l’assistance Adobe.
