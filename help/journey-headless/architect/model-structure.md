@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 Au début du [Parcours de création de contenu découplé AEM](overview.md), la section [Bases de la modélisation de contenu pour le découplage avec AEM](basics.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
-Cet article s’appuie sur ces connaissances préalables afin que vous compreniez comment créer vos propres modèles de fragment de contenu pour votre projet AEM découplé.
+Cet article s’appuie sur ces principes afin que vous compreniez comment créer vos propres modèles de fragment de contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
@@ -42,19 +42,35 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette action dans **Outils** -> **Général** -> **Modèles de fragment de contenu**.
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie.
 
-![Modèles de fragment de contenu dans les outils](assets/cfm-tools.png)
+1. Dans la console Fragments de contenu, sélectionnez le panneau des modèles de fragment de contenu.
 
-Après avoir sélectionné cette option, accédez à l’emplacement de votre modèle et sélectionnez **Créer**. Vous pouvez saisir ici différentes informations importantes.
+1. Accédez au dossier approprié à votre configuration, ou sous-configuration.
 
-L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle est disponible pour être utilisé (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez désactiver cette option si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
+1. Utilisez **Créer** pour ouvrir la boîte de dialogue **Nouveau modèle de fragment de contenu**.
 
-![Création de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![Titre et description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-Confirmez en cliquant sur **Créer** et vous pourrez **Ouvrir** votre modèle pour commencer à en définir la structure.
+1. Compléter les détails
 
-## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
+1. Utilisez **Créer** pour enregistrer le modèle vide ou **Créer et ouvrir**.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
+
+## Définir des modèles de fragment de contenu {#defining-content-fragment-models}
 
 Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
 
@@ -66,7 +82,7 @@ Vous pouvez faire glisser des instances de **Types de données** dans l’espace
 
 ![Définition de champs](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Après avoir ajouté un type de données, vous devrez définir les **Propriétés** de ce champ. Celles-ci dépendent du type utilisé. Par exemple :
+Après avoir ajouté un type de données, vous devrez définir les **Propriétés** de ce champ. Ces propriétés dépendent du type utilisé. Par exemple :
 
 ![Propriétés des données](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ Les auteurs et autrices de contenu ne voient pas les types de données et les pr
 La gestion de vos modèles de fragment de contenu comprend :
 
 * l’activation (ou la désactivation) de ces fragments, ce qui les rend disponibles pour les auteurs lors de la création de fragments de contenu.
-* la suppression : la suppression est toujours nécessaire, mais vous devez savoir lorsque vous supprimez un modèle déjà utilisé pour les fragments de contenu, en particulier pour les fragments déjà publiés.
+* Suppression : la suppression est toujours nécessaire, mais vous devez savoir lorsque vous supprimez un modèle déjà utilisé pour les fragments de contenu, en particulier pour les fragments déjà publiés.
 
 ## Publication {#publishing}
 
@@ -99,7 +115,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 >[!NOTE]
 >
->Si un auteur ou une autrice essaye de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, et le modèle est publié avec le fragment.
+>Si un auteur ou une autrice tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, et le modèle est publié avec le fragment.
 
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cette fonctionnalité a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Ce statut est indiqué dans la console par la mention **Verrouillé**.
 

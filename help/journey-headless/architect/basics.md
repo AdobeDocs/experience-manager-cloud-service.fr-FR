@@ -5,10 +5,10 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Dès le début du [Parcours d’architecture de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) a couvert les concepts de base et la terminologie relatifs à la modélisation du contenu découplé.
 
-Cet article s’appuie sur ces éléments afin que vous compreniez comment modéliser votre contenu pour votre projet AEM découplé.
+Cet article s’appuie sur ces principes afin que vous compreniez comment modéliser votre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
@@ -87,9 +87,12 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 * Date et heure
 * Énumération
 * Balises
-* Référence de contenu
 * Référence du fragment
+* Référence de fragment (UUID)
+* Référence de contenu
+* Référence de contenu (UUID)
 * Objet JSON
+* Espace réservé pour tabulation
 
 >[!NOTE]
 >
@@ -99,11 +102,11 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
-* **Référence de contenu**
+* **Référence de contenu**/**Référence de contenu (UUID)**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**
+* **Référence du fragment**/**Référence du fragment (UUID)**
 Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
@@ -113,6 +116,10 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 >[!NOTE]
 >
 >Vous pouvez également créer des références ad hoc à l’aide de liens dans des blocs de texte.
+
+>[!NOTE]
+>
+>Dans l’éditeur, les références UUID spécifient le chemin d’accès à la ressource référencée. En interne, de telles références sont conservées en tant qu’identifiants universels uniques (UUID) qui référencent les ressources.
 
 ## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 
