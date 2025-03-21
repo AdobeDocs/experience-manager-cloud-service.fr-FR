@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des feuilles de calcul pour gérer les 
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 99%
 
 ---
 
@@ -180,10 +180,10 @@ La feuille de calcul des redirections est maintenant publiée et accessible au p
 
 Maintenant que vous savez comment créer une feuille de calcul de redirection, vous pouvez créer n’importe quel autre type de feuille de calcul standard :
 
-* Espaces réservés
-* Métadonnées
-* En-têtes
-* Configuration
+* [Espaces réservés](https://www.aem.live/docs/placeholders)
+* [Métadonnées](https://www.aem.live/docs/bulk-metadata)
+* [En-têtes](https://www.aem.live/docs/custom-headers)
+* [Configuration](https://www.aem.live/docs/configuration), par exemple pour [invalidation du cache](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Suivez simplement les mêmes étapes dans les sections [Créer une feuille de calcul](#spreadsheet) et [Mettre à jour le fichier paths.json](#paths-json). Choisissez le modèle approprié, puis mettez à jour le fichier `paths.json`.
