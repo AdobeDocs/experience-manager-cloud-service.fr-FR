@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Après la publication, vous disposez de deux options.
    * **Lien direct :**
 Utilisez l’URL fournie pour créer un lien direct vers la vidéo. Créez des liens hypertexte appropriés sur votre site marketing.
    * **Incorporer la vidéo :**
-Copiez le code intégré fourni et collez-le dans l’HTML de votre page web où vous souhaitez que la vidéo apparaisse. Cela permet à la vidéo d’être lue directement sur votre site.
+Copiez le code incorporé fourni et collez-le dans l’HTML de votre page web où vous souhaitez que la vidéo apparaisse. Cela permet à la vidéo d’être lue directement sur votre site.
 
 Vous souhaitez en savoir plus ? Accédez à [ Vidéo ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -399,7 +399,7 @@ L’internationalisation des vidéos pour une consommation multilingue est essen
    * Organisez, parcourez et recherchez des ressources vidéo dans AEM.
    * Prévisualisation et publication des ressources vidéo.
    * Affichez la vidéo source et ses rendus codés, ainsi que les miniatures associées.
-   * Modifiez les propriétés vidéo telles que le titre, la description et les balises2.
+   * Modifiez les propriétés vidéo, telles que le titre, la description et les balises2.
 
 * **Localisation:**
    * Pour chaque zone géographique/langue cible, créez des pistes audio et des sous-titres.
@@ -410,7 +410,7 @@ L’internationalisation des vidéos pour une consommation multilingue est essen
    * Si vous utilisez AEM comme système de gestion de contenu web (WCM), vous pouvez ajouter directement des vidéos à vos pages web.
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web à l’aide d’URL ou de codes incorporés.
 
-Vous souhaitez en savoir plus ? Accédez à [À propos de la prise en charge de plusieurs légendes et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) ou regardez [Ajouter plusieurs légendes et pistes audio à une vidéo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minute, 41 secondes).
+Vous souhaitez en savoir plus ? Accédez à [À propos de la prise en charge des légendes multiples et des pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Diffusion de ressources aux clients
