@@ -3,17 +3,49 @@ title: Assets Ultimate
 description: Découvrez les aspects clés d’Assets Ultimate, tels que les avantages clés, les types d’utilisateurs et d’utilisatrices et leurs privilèges.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+workflow-type: tm+mt
+source-wordcount: '869'
+ht-degree: 97%
 
 ---
 
 # [!DNL Assets] as a Cloud Service Ultimate {#assets-ultimate-user-types-privileges}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Assets as a Cloud Service Ultimate](/help/assets/assets/aem-assets-ultimate-banner.png)
 

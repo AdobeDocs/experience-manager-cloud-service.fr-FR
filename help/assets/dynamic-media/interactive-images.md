@@ -5,16 +5,53 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4072'
-ht-degree: 96%
+source-wordcount: '4118'
+ht-degree: 95%
 
 ---
 
 # Images interactives{#interactive-images}
 
-Vous pouvez facilement créer des expériences riches et attrayantes pour vos clients à partir d’images statiques en ajoutant des zones réactives « shoppable » aux images par glisser-déposer. Les zones réactives Shoppable rassemblent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de point de vente de type « Ajouter au panier » ou « Acheter ». Les clients peuvent sélectionner ces zones réactives qui renvoient directement vers le produit ou le service, l’ajouter à un panier ou être liées à une page web. Les expériences directes de ce type augmentent l’engagement et les conversions des clients sur votre site web.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
+Vous pouvez facilement créer des expériences riches et attrayantes pour vos clients à partir d’images statiques en ajoutant des zones réactives « shoppable » aux images par glisser-déposer. Les zones réactives Shoppable rassemblent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de point de vente de type « Ajouter au panier » ou « Acheter ». Les clients peuvent sélectionner ces zones réactives qui pointent directement vers le produit ou le service, l’ajoutent à un panier ou pointent vers une page web. Les expériences directes de ce type augmentent l’engagement et les conversions des clients sur votre site web.
 
 Voici une bannière publicitaire avec une fenêtre pop-up d’aperçu rapide. L’utilisateur active l’aperçu rapide en appuyant sur le cercle ou la « zone réactive » du modèle.
 
@@ -259,19 +296,19 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.
    1. Sur l’image, sélectionnez un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement. Vous pouvez également utiliser les touches fléchées du clavier pour contrôler la position d’une zone réactive sélectionnée.
    1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
-   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis sélectionnez **[!UICONTROL Supprimer]** (icône de corbeille) sous l’en-tête **[!UICONTROL Zones réactives]**.
+   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis sélectionnez **[!UICONTROL Supprimer]** (icône corbeille) sous l’en-tête **[!UICONTROL Zone réactive]**.
 
 1. Dans le champ de texte Nom, saisissez le nom de la zone réactive. Ce nom apparaît également dans la liste déroulante Zone réactive sélectionnée.
 1. Utilisez l’une des méthodes suivantes :
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit que vous souhaitez utiliser, puis sélectionnez **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis sélectionnez **Sélectionner** dans le coin supérieur droit de la page. Vous voici de retour dans la page de gestion des zones réactives.
       * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
 
          * Consultez [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur du SKU, saisissez le SKU du produit. La valeur SKU saisie renseigne automatiquement la partie variable du modèle d’aperçu rapide. Cela garantit que le système peut associer la zone réactive à l’aperçu rapide d’un SKU en particulier.
-         * (Facultatif) Si d’autres variables de l’aperçu rapide sont utilisées pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
+         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous utilisez généralement pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
 
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
@@ -320,7 +357,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/ad
 1. En mode Ressources, accédez à une image interactive existante que vous avez créée et sélectionnez-la pour la prévisualiser.
 1. Près du coin supérieur gauche de la page de prévisualisation, dans la liste déroulante Contenu, sélectionnez **[!UICONTROL Visionneuses]**.
 1. Dans la liste Visionneuse, sélectionnez **[!UICONTROL Shoppable_Banner]** ou sur le nom du paramètre prédéfini de visionneuse d’images interactives que vous avez créé.
-1. Pour tester les actions associées aux zones réactives, sélectionnez les zones réactives de l’image.
+1. Pour tester les actions associées aux zones réactives, sélectionnez-les sur l’image.
 
 ## Publication des ressources d’images interactives {#publishing-interactive-image-assets}
 
@@ -378,7 +415,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code en front-end.
 1. Le code en front-end charge les données ou le contenu de l’aperçu rapide.
 1. Facultativement, le code en front-end convertit les données chargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu de l’HTML à l’écran pour l’utilisateur.
+1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur.
 
 Ces appels ne représentent pas nécessairement des appels d’API publics indépendants qui sont appelés en suivant la logique de la page web à partir d’une étape arbitraire. Il s’agit plutôt d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 

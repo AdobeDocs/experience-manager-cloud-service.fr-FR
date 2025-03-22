@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1990'
 ht-degree: 89%
 
 ---
 
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -63,38 +97,38 @@ Ainsi, [!DNL Assets] vous fournit les moyens adéquats pour créer, gérer et é
 
 ## Types de métadonnées {#types-of-metadata}
 
-Les métadonnées sont classées comme métadonnées techniques, d’information et administratives.
+Les métadonnées sont classées en tant que métadonnées techniques, informatives et administratives.
 
 ### Métadonnées techniques
 
-Les métadonnées techniques se concentrent sur les aspects techniques des ressources numériques, fournissant des informations essentielles relatives aux éléments suivants :
+Les métadonnées techniques se concentrent sur les aspects techniques des ressources numériques et fournissent des informations cruciales concernant :
 
 * Taille du fichier
 * Format
 * Résolution
 * Dimensions
-* Mode colorimétrique
+* Mode Couleur
 
 Ce type de métadonnées permet aux utilisateurs de comprendre et d’utiliser efficacement les ressources numériques.
 
 ### Métadonnées d’information
 
-Les métadonnées d’information fournissent des informations descriptives pour améliorer la compréhension du contenu, ce qui facilite la découverte de contenu et la recherche. Il comprend des mots-clés, des légendes et des descriptions. <br>Par exemple, lors de la gestion d’une vidéo dans Experience Manager Assets, nous pouvons inclure les métadonnées d’information suivantes :
+Les métadonnées d’information fournissent des informations descriptives pour améliorer la compréhension du contenu et faciliter la découverte et la recherche de contenu. Il comprend des mots-clés, des légendes et des descriptions. <br>Par exemple, lors de la gestion d’une vidéo dans Experience Manager Assets, nous pouvons inclure les métadonnées d’information suivantes :
 
 * **Mots-clés** : marketing, lancement de produit, promotion
-* **Légende** : présentation de notre dernier produit avec des fonctionnalités intéressantes
-* **Description** : présentation détaillée du contenu vidéo.
+* **Légende** : Présentation de notre dernier produit aux fonctionnalités intéressantes
+* **Description** : aperçu détaillé du contenu vidéo.
 
-### Métadonnées administratives
+### Métadonnées d’administration
 
-Les métadonnées administratives traitent des aspects de gestion des ressources numériques. Il assure le contrôle d’accès, la conformité et la gestion du cycle de vie global des ressources dans le système de gestion des ressources numériques. Il comprend des informations relatives à :
+Les métadonnées administratives traitent des aspects de gestion des ressources numériques. Il garantit le contrôle de l’accès, la conformité et la gestion du cycle de vie global des ressources dans le système de gestion des ressources numériques. Il contient des informations relatives aux éléments suivants :
 
-* Propriété des ressources
+* Propriété des actifs
 * Droits d’utilisation
 * Autorisations
 * Autres détails administratifs
 
-Ce type de métadonnées garantit une gestion, un contrôle d’accès et une conformité efficaces des ressources.
+Ce type de métadonnées assure une gestion efficace des ressources, un contrôle d’accès et une conformité.
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
@@ -173,7 +207,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
 1. Accédez à l’emplacement des ressources que vous souhaitez modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** pour ouvrir la page [!UICONTROL Propriétés] pour les ressources sélectionnées.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]** pour ouvrir la page [!UICONTROL Propriétés] des ressources sélectionnées.
 
    >[!NOTE]
    >
@@ -187,7 +221,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
    >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
-1. Pour sélectionner un schéma de métadonnées différent pour les ressources, sélectionnez **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma de votre choix. Enregistrez les modifications.
+1. Pour sélectionner un schéma de métadonnées différent pour les ressources, sélectionnez **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité. Enregistrez les modifications.
 1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Sélectionnez **[!UICONTROL Envoyer]**.
 
    >[!CAUTION]

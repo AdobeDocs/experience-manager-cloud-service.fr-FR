@@ -7,29 +7,66 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 6%
 
 ---
 
-# Demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent
+# Demande d’un rapport d’erreur pour les URL de diffusion Dynamic Media en échec
 
-Vous pouvez demander un rapport d’erreur qui identifie les URL Dynamic Media qui ont échoué au moment de la diffusion. Le rapport est un regroupement de données allant jusqu’à cinq jours, disponible au format CSV. Le rapport d’erreur contient les informations suivantes :
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-* URL de diffusion Dynamic Media en échec : une URL en échec est une URL générée par Dynamic Media qui ne peut produire aucun contenu au moment de la diffusion.
-* URL du référent : URL du référent à partir de laquelle l’URL de diffusion ayant échoué est appelée.
-* Nombre d’échecs : nombre de fois où l’URL de diffusion a été chargée, ce qui a entraîné un échec.
+Vous pouvez demander un rapport d’erreur qui identifie les URL Dynamic Media ayant échoué au moment de l’envoi. Le rapport est une agrégation de données allant jusqu’à cinq jours et est disponible au format CSV. Le rapport d’erreur contient les informations suivantes :
 
-Lorsque vous demandez le rapport d’erreur, l’équipe Dynamic Media d’Adobe vous le transmet par courrier électronique au format CSV. Il couvre une période de cinq jours à partir du jour où votre demande a été faite.
+* URL de diffusion Dynamic Media en échec - Une URL en échec est une URL générée par Dynamic Media qui ne peut produire aucun contenu au moment de la diffusion.
+* URL du référent - URL du référent à partir de laquelle l’URL de diffusion en échec est appelée.
+* Nombre d’échecs : nombre de fois où l’URL de diffusion a été chargée et a provoqué un échec.
 
-Vous pouvez demander un rapport d’erreur une fois par mois pour une société donnée.
+Lorsque vous demandez le rapport d’erreur, l’équipe Dynamic Media d’Adobe vous envoie le rapport par e-mail, au format CSV. Il couvre une période de cinq jours à compter du jour où votre demande a été faite.
 
-**Pour demander un rapport d’erreur pour les URL de diffusion Dynamic Media qui échouent :**
+Vous pouvez demander un rapport d’erreur une fois par mois, pour une société donnée.
 
-1. [Envoyez un courrier électronique à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) avec le nom de la société associée à votre compte Dynamic Media.
+**Pour demander un rapport d’erreur concernant les URL de diffusion Dynamic Media qui échouent, procédez comme suit**
 
-   Si vous ne connaissez pas le nom de l’entreprise, consultez la page [Configuration Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) dans **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuration Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, cochez la case *[Icône_dossier_Dynamic_Media]*, puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
+1. [Envoyez un e-mail à reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) avec le nom de la société associée à votre compte Dynamic Media.
 
-   ![Accès à la page de configuration de Dynamic Media.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   Si vous ne connaissez pas le nom de la société, consultez la page [Configuration de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr#configuring-dynamic-media-cloud-services) dans **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de Dynamic Media]**. Sur la page du navigateur de configuration Dynamic Media, cliquez sur **[!UICONTROL global]**, cochez la case *[Dynamic_Media_folder_icon]*, puis sélectionnez **[!UICONTROL Modifier]**. Vous devez disposer des droits d’administrateur dans AEM pour accéder à la page de configuration de Dynamic Media.
+
+   ![Accès à la page de configuration Dynamic Media.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

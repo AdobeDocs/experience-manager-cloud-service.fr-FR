@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1969'
 ht-degree: 98%
 
 ---
@@ -30,8 +30,42 @@ Possible topics to cover in this article are below.
 
 # Fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu de proposer des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs en situation de handicap en améliorant l’accessibilité d’[!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d’utilisateurs et appliquer les normes internationales afin d’inclure les personnes atteintes d’une déficience visuelle, auditive, de mobilité ou autre.
 
@@ -174,7 +208,7 @@ Pour les opérations de métadonnées généralement effectuées par des rôles 
 
 * L’option [!UICONTROL Enregistrer et fermer] de la page [!UICONTROL Propriétés] d’une ressource est désormais accessible à l’aide du clavier.
 * Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL De base] des [!UICONTROL Propriétés] de ressource.
-* Les utilisateurs peuvent utiliser la boîte de dialogue contextuelle du sélecteur de données à l’aide du clavier. L’élément d’interface utilisateur sélecteur de date est utilisé pour définir les heures d’ouverture et de fermeture, et pour sélectionner la date.
+* Les utilisateurs peuvent utiliser la boîte de dialogue pop-up du sélecteur de date à l’aide du clavier. L’élément d’interface utilisateur sélecteur de date est utilisé pour définir les heures d’ouverture et de fermeture, et pour sélectionner la date.
 * La fonctionnalité glisser à l’aide du clavier s’exécute correctement dans l’[!UICONTROL éditeur de schéma de métadonnées] dans le mode de navigation du lecteur d’écran.
 * Un utilisateur peut déplacer la sélection à l’aide du clavier vers le champ Ajouter un utilisateur ou Groupe sous [!UICONTROL Groupe d’utilisateurs fermé] dans l’onglet [!UICONTROL Autorisations] du dossier [!UICONTROL Propriétés].
 

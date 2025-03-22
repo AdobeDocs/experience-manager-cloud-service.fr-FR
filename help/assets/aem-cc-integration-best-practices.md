@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3484'
 ht-degree: 94%
 
 ---
 
 # Bonnes pratiques d’intégration d’Adobe Experience Manager et Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -85,7 +119,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) pour un module complémentaire configurable pour Assets afin de publier des ressources.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/).
-* Experience Manager [partage de lien](/help/assets/share-assets.md) pour partager des ressources à la demande à l’aide de liens.
+* Experience Manager [partage de liens](/help/assets/share-assets.md) pour partager des ressources à la demande à l’aide de liens.
 * [Interface web d’Assets](/help/assets/manage-digital-assets.md) avec des zones destinées aux parties externes, sécurisées par la configuration du contrôle d’accès, et avec les ajustements de configuration informatique/réseau nécessaires pour permettre à ces utilisateurs externes d’accéder à Experience Manager.
 
 ## Concepts clés et cas d’utilisation {#key-concepts-and-use-cases}
@@ -149,7 +183,7 @@ La plupart des entreprises choisissent de stocker uniquement les ressources pert
 
 Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques (DAM) fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent du temps et des ressources d’infrastructure supplémentaires.
 
-Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques (DAM).
+Souvent, il n’est pas recommandé de stocker toutes les ressources et mises à jour. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques (DAM).
 
 #### Quand les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-assets-are-stored-in-dam}
 
@@ -184,7 +218,7 @@ Experience Manager Assets prend en charge deux types d’utilisateurs selon leu
 
 #### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques (DAM) {#creative-users-with-direct-access-to-dam}
 
-En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès à l’instance DAM, y compris la connexion Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
+En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès à l’instance de gestion des ressources numériques, y compris la connexion à Experience Manager. Experience Manager et l’infrastructure réseau peuvent être configurés afin d’autoriser un accès direct aux parties externes (généralement, des entreprises de confiance telles que des agences travaillant pour un client) pour disposer d’un accès à Experience Manager via le réseau (par le biais de la liste adresses IP autorisées ou d’un VPN, par exemple).
 
 Dans ce cas, Adobe Asset Link ou l’application de bureau Experience Manager permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources préparées par les créatifs dans la gestion des ressources numériques (DAM).
 
@@ -208,22 +242,22 @@ Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 * Lorsque les utilisateurs et utilisatrices de Photoshop, InDesign ou Illustrator souhaitent modifier un fichier, ils ou elles effectuent une opération d’extraction sur la ressource donnée.
 * La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des utilisateurs synchronisés sur le disque par l’application de bureau Creative Cloud et l’indicateur d’extraction est activé sur la ressource dans Experience Manager afin de minimiser les conflits de modification.
 * À partir de là, la personne travaille dans un fichier qui est stocké localement à l’emplacement synchronisé et peut continuer à travailler et à enregistrer les modifications nécessaires à n’importe quelle fréquence.
-* En outre, puisque la ressource se trouve dans le compte de Creative Cloud, elle est également disponible sur d’autres appareils que l’utilisateur peut avoir (par exemple, elle peut être ouverte ou modifiée dans une application mobile de Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs de Creative Cloud à des fins de collaboration.
+* En outre, comme la ressource se trouve dans le compte Creative Cloud, elle est également disponible sur d’autres appareils que la personne peut posséder (par exemple, elle peut être ouverte ou modifiée dans une application mobile Creative Cloud dédiée) et peut être partagée avec d’autres personnes utilisatrices de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans Experience Manager est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’Experience Manager comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie d’ Experience Manager Assets.
 
 L’application de bureau Experience Manager propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans Experience Manager après un bref instant. Avec une telle configuration, les enregistrements fréquents durant la phase de travail en cours seraient tous chargés dans Experience Manager et versionnés, ce qui créerait un trafic réseau important et des défis d’évolutivité potentiels, sans mentionner les versions inutiles dans Experience Manager.
 
-L’approche recommandée consiste à utiliser une option dans l’appli de bureau Experience Manager pour désactiver les mises à jour automatisées et charger manuellement les modifications apportées aux ressources dans Experience Manager, à l’aide de l’action de chargement des modifications dans l’interface utilisateur État des ressources de l’application.
+L’approche recommandée dans ce cas consiste à utiliser une option dans l’application de bureau Experience Manager pour désactiver les mises à jour automatisées et à charger manuellement les modifications des ressources dans Experience Manager, à l’aide de l’action de chargement des modifications dans l’interface utilisateur Statut de la ressource de l’application.
 
 #### Chargement en masse dans DAM {#bulk-upload-to-dam}
 
 Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
-* Chargement des résultats de projets de séance photo ou plus volumineux
+* Chargement des résultats de séance photo ou de projets plus volumineux
 * Chargement de ressources fournies par les agences de création
 * Chargement de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
-Cette description fait référence aux chargements de fichiers sur le plan opérationnel (par exemple, chaque semaine ou avec chaque séance photo ), en tant qu’élément normal du processus de l’utilisateur de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
+Cette description fait référence aux chargements de fichiers de manière opérationnelle (par exemple, chaque semaine ou chaque séance photo ), en tant qu’élément normal du workflow de l’utilisateur de l’application de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
 
 Vous pouvez utiliser les fonctionnalités de chargement suivantes :
 

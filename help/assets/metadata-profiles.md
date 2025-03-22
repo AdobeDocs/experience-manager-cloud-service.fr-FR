@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1449'
 ht-degree: 91%
 
 ---
 
 # Profils de métadonnées {#metadata-profiles}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -30,12 +64,12 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**, puis cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil de métadonnées, par exemple, Exemple de métadonnées, et sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
+1. Saisissez un titre pour le profil de métadonnées, par exemple Exemple, Métadonnées, puis sélectionnez **[!UICONTROL Envoyer]**. La page Modifier le formulaire pour le profil de métadonnées s’affiche.
 1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
 Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
    * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
-   * **[!UICONTROL Associer à la propriété]** - La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le nœud de la ressource.
+   * **[!UICONTROL Associer à la propriété]** - La valeur de cette propriété fournit le chemin/nom relatif du nœud de la ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le nœud de la ressource.
 
      La valeur que vous spécifiez pour **[!UICONTROL Mapper à la propriété]** est conservée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, [!DNL Adobe Experience Manager Assets] stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
 
@@ -93,7 +127,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 1. Accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées aux dossiers]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources nouvellement chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées aux dossiers]** puis sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources récemment chargées. Ensuite, cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 #### Application de profils de métadonnées aux dossiers à partir des propriétés {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -123,7 +157,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer un profil, puis cliquez sur **[!UICONTROL Terminé]**.
+1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées des dossiers]** sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis cliquez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 

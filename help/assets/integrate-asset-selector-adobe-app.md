@@ -1,23 +1,57 @@
 ---
-title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
+title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+description: Intégrer le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 12%
+source-wordcount: '813'
+ht-degree: 16%
 
 ---
 
 # Intégration du sélecteur de ressources à l’application Adobe {#integrate-asset-selector-with-adobe-app}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Le sélecteur de ressources vous permet d’intégrer à l’aide de diverses applications Adobe afin de leur permettre de travailler ensemble de manière transparente.
+Le sélecteur de ressources vous permet de les intégrer à l’aide de diverses applications Adobe afin de leur permettre de travailler ensemble en toute transparence.
 
-## Conditions préalables{#prereqs-adobe-app}
+## Prérequis{#prereqs-adobe-app}
 
 Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à une application [!DNL Adobe] :
 
@@ -26,9 +60,9 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 * imsToken
 * apikey
 
-## Intégrer le sélecteur de ressources à une application [!DNL Adobe] {#adobe-app-integration-vanilla}
+## Intégration du sélecteur de ressources à une application [!DNL Adobe] {#adobe-app-integration-vanilla}
 
-L’exemple suivant illustre l’utilisation du sélecteur de ressources lors de l’exécution d’une application [!DNL Adobe] sous Shell unifié ou lorsque `imsToken` est déjà généré pour l’authentification.
+L’exemple suivant illustre l’utilisation du sélecteur de ressources lors de l’exécution d’une application [!DNL Adobe] sous Unified Shell ou lorsque vous avez déjà généré des `imsToken` pour l’authentification.
 
 Insérez le package Sélecteur de ressources dans votre code à l’aide de la balise `script`, comme illustré dans les _lignes 6 à 15_ de l’exemple ci-dessous. Une fois le script chargé, vous pouvez utiliser la variable globale `PureJSSelectors`. Définissez les [propriétés](/help/assets/asset-selector-properties.md) du sélecteur de ressources comme illustré dans les _lignes 16 à 23_. Les propriétés `imsOrg` et `imsToken` sont toutes deux requises pour l’authentification dans l’application Adobe. La propriété `handleSelection` sert à gérer les ressources sélectionnées. Pour effectuer le rendu du sélecteur de ressources, appelez la fonction `renderAssetSelector` comme indiqué dans la _ligne 17_. Le sélecteur de ressources s’affiche dans l’élément de conteneur `<div>`, comme indiqué dans les _lignes 21 et 22_.
 
@@ -67,32 +101,32 @@ En suivant ces étapes, vous pouvez utiliser le sélecteur de ressources avec vo
 
 ### ImsAuthProps {#ims-auth-props}
 
-Les propriétés `ImsAuthProps` définissent les informations d’authentification et le flux que le sélecteur de ressources utilise pour obtenir un `imsToken`. En définissant ces propriétés, vous pouvez contrôler le comportement du flux d’authentification et enregistrer les écouteurs pour divers événements d’authentification.
+Les propriétés `ImsAuthProps` définissent les informations d’authentification et le flux que le sélecteur de ressources utilise pour obtenir une `imsToken`. En définissant ces propriétés, vous pouvez contrôler le comportement du flux d’authentification et enregistrer des écouteurs pour divers événements d’authentification.
 
 | Nom de la propriété | Description |
 |---|---|
-| `imsClientId` | Une valeur string représentant l’ID client IMS utilisé à des fins d’authentification. Cette valeur est fournie par Adobe et est spécifique à votre Adobe AEM organisation CS. |
+| `imsClientId` | Valeur de chaîne représentant l’identifiant client IMS utilisé à des fins d’authentification. Cette valeur est fournie par Adobe et est spécifique à votre organisation Adobe AEM CS. |
 | `imsScope` | Décrit les portées utilisées dans l’authentification. Les portées déterminent le niveau d’accès de l’application aux ressources de votre organisation. Plusieurs portées peuvent être séparées par des virgules. |
-| `redirectUrl` | Représente l’URL vers laquelle l’utilisateur est redirigé après l’authentification. Cette valeur est généralement définie sur l’URL actuelle de l’application. Si `redirectUrl` n&#39;est pas fourni, `ImsAuthService` utilise redirectUrl utilisé pour enregistrer le `imsClientId` |
-| `modalMode` | Valeur booléenne indiquant si le flux d’authentification doit être affiché dans un modal (fenêtre contextuelle). S’il est défini sur `true`, le flux d’authentification s’affiche dans une fenêtre contextuelle. S’il est défini sur `false`, le flux d’authentification s’affiche dans un rechargement de page complet. _Remarque :_ pour un meilleur UX, vous pouvez contrôler dynamiquement cette valeur si la fenêtre contextuelle de l’utilisateur est désactivée. |
-| `onImsServiceInitialized` | Fonction de rappel appelée lorsque le service d’authentification Adobe IMS est initialisé. Cette fonction prend un paramètre, `service`, qui est un objet représentant le service Adobe IMS. Voir [`ImsAuthService`](#imsauthservice-ims-auth-service) pour plus de détails. |
-| `onAccessTokenReceived` | Fonction de rappel appelée lorsqu’un `imsToken` est reçu du service d’authentification Adobe IMS. Cette fonction utilise un paramètre, `imsToken`, qui est une chaîne représentant le jeton d’accès. |
+| `redirectUrl` | Représente l’URL de redirection de l’utilisateur après l’authentification. Cette valeur est généralement définie sur l’URL actuelle de l’application. Si aucun `redirectUrl` n’est fourni, `ImsAuthService` utilise redirectUrl pour enregistrer les `imsClientId` |
+| `modalMode` | Valeur booléenne indiquant si le flux d’authentification doit être affiché dans une fenêtre modale (pop-up) ou non. S’il est défini sur `true`, le flux d’authentification s’affiche dans un pop-up. S’il est défini sur `false`, le flux d’authentification s’affiche lors d’un rechargement complet de la page. _Remarque :_ pour une meilleure expérience utilisateur, vous pouvez contrôler dynamiquement cette valeur si le pop-up du navigateur est désactivé. |
+| `onImsServiceInitialized` | Une fonction de rappel appelée lors de l’initialisation du service d’authentification Adobe IMS. Cette fonction accepte un paramètre, `service`, qui est un objet représentant le service Adobe IMS. Voir [`ImsAuthService`](#imsauthservice-ims-auth-service) pour plus d’informations. |
+| `onAccessTokenReceived` | Une fonction de rappel appelée lorsqu’un `imsToken` est reçu du service d’authentification Adobe IMS. Cette fonction accepte un paramètre, `imsToken`, qui est une chaîne représentant le jeton d’accès. |
 | `onAccessTokenExpired` | Fonction de rappel appelée lorsqu’un jeton d’accès a expiré. Cette fonction est généralement utilisée pour déclencher un nouveau flux d’authentification afin d’obtenir un nouveau jeton d’accès. |
-| `onErrorReceived` | Fonction de rappel appelée lorsqu’une erreur se produit lors de l’authentification. Cette fonction prend deux paramètres : le type d&#39;erreur et le message d&#39;erreur. Le type d’erreur est une chaîne représentant le type d’erreur et le message d’erreur est une chaîne représentant le message d’erreur. |
+| `onErrorReceived` | Une fonction de rappel appelée lorsqu’une erreur se produit lors de l’authentification. Cette fonction utilise deux paramètres : le type d’erreur et le message d’erreur. Le type d’erreur est une chaîne représentant le type d’erreur et le message d’erreur est une chaîne représentant le message d’erreur. |
 
 ### ImsAuthService {#ims-auth-service}
 
-La classe `ImsAuthService` gère le flux d’authentification pour le sélecteur de ressources. Il est responsable de l&#39;obtention d&#39;un `imsToken` auprès du service d&#39;authentification Adobe IMS. `imsToken` est utilisé pour authentifier l’utilisateur et autoriser l’accès à [!DNL Adobe Experience Manager] en tant que référentiel Assets [!DNL Cloud Service]. ImsAuthService utilise les propriétés `ImsAuthProps` pour contrôler le flux d’authentification et enregistrer les écouteurs pour divers événements d’authentification. Vous pouvez utiliser la fonction [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) pratique pour enregistrer l’instance _ImsAuthService_ avec le sélecteur de ressources. Les fonctions suivantes sont disponibles sur la classe `ImsAuthService`. Cependant, si vous utilisez la fonction _registerAssetsSelectorsAuthService_, vous n’avez pas besoin d’appeler directement ces fonctions.
+`ImsAuthService` classe gère le flux d’authentification pour le sélecteur de ressources. Il est chargé d’obtenir un `imsToken` du service d’authentification Adobe IMS. Le `imsToken` permet d’authentifier l’utilisateur et d’autoriser l’accès au référentiel [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets. ImsAuthService utilise les propriétés `ImsAuthProps` pour contrôler le flux d’authentification et enregistrer des écouteurs pour divers événements d’authentification. Vous pouvez utiliser la fonction [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) pratique pour enregistrer l’instance _ImsAuthService_ avec le sélecteur de ressources. Les fonctions suivantes sont disponibles dans la classe `ImsAuthService`. Cependant, si vous utilisez la fonction _registerAssetsSelectorsAuthService_, vous n’avez pas besoin d’appeler directement ces fonctions.
 
 | Nom de la fonction | Description |
 |---|---|
 | `isSignedInUser` | Détermine si l’utilisateur est actuellement connecté au service et renvoie une valeur booléenne en conséquence. |
-| `getImsToken` | Récupère l’authentification `imsToken` pour l’utilisateur actuellement connecté, qui peut être utilisée pour authentifier les requêtes sur d’autres services, comme la génération de la ressource _rendition. |
-| `signIn` | Lance le processus de connexion de l’utilisateur. Cette fonction utilise le `ImsAuthProps` pour afficher l’authentification dans une fenêtre contextuelle ou un rechargement de page complet. |
-| `signOut` | Déclenche l’utilisateur du service, invalide son jeton d’authentification et l’oblige à se reconnecter pour accéder aux ressources protégées. L’appel de cette fonction recharge la page active. |
-| `refreshToken` | Actualise le jeton d’authentification de l’utilisateur actuellement connecté, l’empêchant d’expirer et assurant un accès ininterrompu aux ressources protégées. Renvoie un nouveau jeton d’authentification qui peut être utilisé pour les requêtes suivantes. |
+| `getImsToken` | Récupère le `imsToken` d’authentification de l’utilisateur actuellement connecté, qui peut être utilisé pour authentifier des requêtes à d’autres services, tels que la génération du _rendu de ressource. |
+| `signIn` | Lance le processus de connexion de l’utilisateur. Cette fonction utilise le `ImsAuthProps` pour afficher l’authentification dans un pop-up ou un rechargement complet de la page |
+| `signOut` | Déconnecte l’utilisateur du service, invalide son jeton d’authentification et exige qu’il se reconnecte pour accéder aux ressources protégées. Appeler cette fonction recharge la page active. |
+| `refreshToken` | Actualise le jeton d’authentification de l’utilisateur actuellement connecté, ce qui empêche son expiration et garantit un accès ininterrompu aux ressources protégées. Renvoie un nouveau jeton d’authentification pouvant être utilisé pour les requêtes suivantes. |
 
-### Validation avec le jeton IMS fourni {#validation-ims-token}
+### Validation avec jeton IMS fourni {#validation-ims-token}
 
 ```
 <script>
@@ -119,7 +153,7 @@ La classe `ImsAuthService` gère le flux d’authentification pour le sélecteur
 </script>
 ```
 
-### Enregistrement des rappels au service IMS {#register-callback-ims-service}
+### Enregistrement des rappels vers le service IMS {#register-callback-ims-service}
 
 ```
 // object `imsProps` to be defined as below 
@@ -152,7 +186,7 @@ onErrorReceived: (type, msg) => {
 
 >[!MORELIKETHIS]
 >
->* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
+>* [Intégration du sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Intégrer le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Intégration du sélecteur de ressources à Dynamic Media avec fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)

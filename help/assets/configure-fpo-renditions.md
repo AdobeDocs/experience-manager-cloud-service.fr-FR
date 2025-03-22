@@ -1,21 +1,55 @@
 ---
 title: Génération de rendus pour placement uniquement pour Adobe InDesign
-description: Générez des rendus FPO (For Placement Only) de nouvelles ressources et de ressources existantes à l’aide du workflow Experience Manager Assets et d’ImageMagick.
+description: Générez des rendus FPO (pour l’emplacement uniquement) de nouvelles ressources et de ressources existantes à l’aide du workflow Experience Manager Assets et d’ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 80%
+source-wordcount: '555'
+ht-degree: 76%
 
 ---
 
 # Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -24,7 +58,7 @@ ht-degree: 80%
 
 Lorsque vous transférez des ressources volumineuses d’Experience Manager vers des documents Adobe InDesign, un professionnel de la création doit attendre un temps conséquent avant de [placer une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement dans des documents InDesign des rendus de petite taille pour commencer. Lorsque la sortie finale est requise, par exemple pour les workflows d’impression et de publication, les ressources d’origine en pleine résolution remplacent le rendu temporaire en arrière-plan. Cette mise à jour asynchrone en arrière-plan accélère le processus de conception pour améliorer la productivité et n’entrave pas le processus créatif.
 
-Assets fournit des rendus utilisés uniquement pour placement (FPO). Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions. Si un rendu FPO n’est pas disponible pour une ressource, Adobe InDesign utilise la ressource d’origine à la place. Ce mécanisme de secours garantit que le workflow créatif se poursuit sans interruption.
+Assets fournit des rendus utilisés uniquement à des fins d’emplacement (FPO). Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions. Si un rendu FPO n’est pas disponible pour une ressource, Adobe InDesign utilise la ressource d’origine à la place. Ce mécanisme de secours garantit que le workflow créatif se poursuit sans interruption.
 
 Experience Manager as a Cloud Service offre des fonctionnalités de traitement des ressources natives dans le cloud pour générer les rendus FPO. Utilisez les microservices de ressources pour la génération de rendu. Vous pouvez configurer la génération de rendu des ressources nouvellement chargées et des ressources qui existent dans Experience Manager.
 
@@ -45,7 +79,7 @@ Sélectionnez **[!UICONTROL Créer le rendu FPO]** pour générer le rendu FPO. 
 
 ## Génération de rendus de nouvelles ressources {#generate-renditions-of-new-assets}
 
-Pour générer des rendus FPO de nouvelles ressources, appliquez le **[!UICONTROL Profil de traitement]** au dossier dans les propriétés du dossier. Sur la page Propriétés d’un dossier, cliquez sur l’onglet **[!UICONTROL Traitement des ressources]**, sélectionnez le **[!UICONTROL profil FPO]** comme **[!UICONTROL profil de traitement]** et enregistrez les modifications. Toutes les nouvelles ressources chargées dans le dossier sont traitées à l’aide de ce profil.
+Pour générer des rendus FPO de nouvelles ressources, appliquez le **[!UICONTROL Profil de traitement]** au dossier dans les propriétés du dossier. Dans la page Propriétés d’un dossier, cliquez sur l’onglet **[!UICONTROL Traitement des ressources]**, sélectionnez le **[!UICONTROL profil FPO]** en tant que **[!UICONTROL profil de traitement]** et enregistrez les modifications. Toutes les nouvelles ressources chargées dans le dossier sont traitées à l’aide de ce profil.
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 
@@ -59,7 +93,7 @@ Pour générer des rendus, sélectionnez les ressources et procédez comme suit.
 
 ## Affichage des rendus FPO {#view-fpo-renditions}
 
-Vous pouvez vérifier que les rendus FPO générés sont bien renseignés une fois le workflow terminé. Dans l’interface utilisateur de Experience Manager Assets, cliquez sur la ressource pour ouvrir un aperçu volumineux. Ouvrez le rail de gauche et sélectionnez **[!UICONTROL Rendus]**. Vous pouvez également utiliser le raccourci clavier `Alt + 3` lorsque l’aperçu est ouvert.
+Vous pouvez vérifier que les rendus FPO générés une fois le workflow terminé. Dans l’interface utilisateur de Experience Manager Assets, cliquez sur la ressource pour afficher un aperçu volumineux. Ouvrez le rail de gauche et sélectionnez **[!UICONTROL Rendus]**. Vous pouvez également utiliser le raccourci clavier `Alt + 3` lorsque l’aperçu est ouvert.
 
 Cliquez sur **[!UICONTROL Rendu FPO]** pour charger son aperçu. Vous pouvez éventuellement cliquer avec le bouton droit sur le rendu et l’enregistrer dans votre système de fichiers. Recherchez les rendus disponibles dans le rail de gauche.
 

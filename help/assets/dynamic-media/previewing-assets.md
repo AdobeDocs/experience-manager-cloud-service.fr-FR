@@ -1,18 +1,55 @@
 ---
 title: Prévisualiser des ressources
-description: Découvrez comment prévisualiser des ressources dans Dynamic Media afin que vous puissiez voir comment elles sont affichées par un client dans son propre navigateur web.
+description: Découvrez comment prévisualiser des ressources dans Dynamic Media afin de voir comment elles sont vues par un client dans son propre navigateur web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 96%
+source-wordcount: '1274'
+ht-degree: 94%
 
 ---
 
-# Aperçu des ressources{#previewing-assets}
+# Prévisualiser des ressources{#previewing-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-appareil affectée à la ressource est utilisée pour l’aperçu.
 
@@ -59,7 +96,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       <li><p><strong>Tournez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : cliquez avec le bouton gauche et faites glisser.</p> Écran tactile : appuyez et faites glisser.</p></li>
       <li><p><strong>Panoramique</strong> : basculez votre angle de vue vers la gauche, la droite, le haut et le bas.</p> Souris : cliquez avec le bouton droit et faites glisser.</p> Écran tactile : appuyez avec deux doigts et faites glisser.</p></li>
       <li><p><strong>Zoom</strong> : permet de zoomer pour déplacer l’appareil dans et hors des zones de la scène 3D.</p> Souris : effectuez un défilement à l’aide de la roulette.</p> Écran tactile : effectuez un pincement du doigt.</p></li>
-      <li><p><strong>Recentrez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : double-cliquez.</p> Écran tactile : double-sélection.</li></ul></td>
+      <li><p><strong>Recentrez votre appareil photo</strong> : faites tourner votre angle de vue autour de la scène et des objets 3D.</p> Souris : double-cliquez.</p> Écran tactile : sélectionnez-le deux fois.</li></ul></td>
       </tr>
       <tr>
       <td><p>Image</p> </td>
@@ -71,7 +108,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
         </ul> <p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br>Si vous utilisez un écran tactile, double-sélectionnez l’image à agrandir par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
+        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br>Si vous utilisez un écran tactile, sélectionnez deux fois l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
       <tr>
       <td>Multimédia</td>

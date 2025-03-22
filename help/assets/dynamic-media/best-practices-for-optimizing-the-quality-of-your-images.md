@@ -1,18 +1,55 @@
 ---
-title: Bonnes pratiques relatives à l’optimisation de la qualité des images
+title: 'Bonnes pratiques relatives à l’optimisation de la qualité des images '
 description: Découvrez les bonnes pratiques qui vous permettent d’optimiser la qualité de vos ressources d’images à l’aide de Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1694'
+ht-degree: 71%
 
 ---
 
-# Bonnes pratiques relatives à l’optimisation de la qualité des images {#best-practices-for-optimizing-the-quality-of-your-images}
+# Bonnes pratiques relatives à l’optimisation de la qualité des images  {#best-practices-for-optimizing-the-quality-of-your-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 {{work-with-dynamic-media}}
 
@@ -26,39 +63,39 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 
 **Imagerie dynamique :**
 
-* L’activation de l’imagerie dynamique dans Dynamic Media permet l’optimisation automatique du format, de la taille et de la qualité des images en fonction des fonctionnalités du navigateur client.
-Vous souhaitez en savoir plus ? Accédez à [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
-* Cela améliore les performances de diffusion des images en réglant dynamiquement ces paramètres.
+* L’activation de l’imagerie dynamique dans Dynamic Media permet d’optimiser automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+Vous souhaitez en savoir plus ? Accédez à [ Imagerie dynamique ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+* Il améliore les performances de diffusion des images en ajustant dynamiquement ces paramètres.
 * Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation [Instantané](https://snapshot.scene7.com/).
 
 **Formats d’image :**
 
 * Évitez d’utiliser des commandes `fmt=webp` ou `fmt=avif` explicites dans une URL, sauf si cela est spécifiquement requis pour un cas d’utilisation.
-* L’imagerie dynamique sélectionne automatiquement le meilleur format, ce qui optimise les gains de bande passante.
+* L’imagerie dynamique sélectionne automatiquement le meilleur format, ce qui se traduit par des gains de bande passante optimaux.
 
 **Comportement par défaut :**
 
-* Lorsqu’aucune commande de format n’est spécifiée dans l’URL et que l’imagerie dynamique n’est pas activée, la diffusion d’image Dynamic Media utilise par défaut le format JPEG.
+* Lorsqu’aucune commande de format n’est spécifiée dans l’URL et que l’imagerie dynamique n’est pas activée, la diffusion d’images Dynamic Media utilise par défaut le format JPEG.
 
-En prenant des décisions éclairées sur les formats d’image et en activant l’imagerie dynamique, vous pouvez considérablement améliorer les performances et l’expérience utilisateur.
+En choisissant en connaissance de cause les formats d’image et en activant l’imagerie dynamique, vous pouvez améliorer considérablement les performances et l’expérience utilisateur.
 
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-## Bonnes pratiques relatives à la sélection de l’image source {#bp-select-source-image}
+## Bonnes pratiques pour sélectionner l’image source {#bp-select-source-image}
 
-Considérations essentielles pour l’utilisation des images source :
+Points essentiels à prendre en compte pour l’utilisation des images sources :
 
 * **Format d’image Source :**
-   * L’utilisation de formats sans perte tels que PNG, TIFF ou PSD garantit que la qualité de l’image reste élevée sans aucun artefact de compression.
-   * Ces formats conservent toutes les données d’origine, ce qui les rend idéales pour la modification et le traitement ultérieur.
+   * L’utilisation de formats sans perte tels que PNG, TIFF ou PSD garantit que la qualité de l’image reste élevée sans artefact de compression.
+   * Ces formats conservent toutes les données d’origine, ce qui les rend parfaits pour l’édition et le traitement ultérieur.
 * **Taille de l’image Source :**
-   * En commençant par une image haute résolution, vous bénéficiez de davantage de détails et de flexibilité.
-   * Lorsque les images doivent être affichées à des tailles différentes (par exemple, sur différents appareils ou à différentes résolutions d’écran), le fait d’avoir une image source plus grande permet une meilleure mise à l’échelle.
-   * Pour les images qui prennent en charge le zoom (comme les photos de produit), visez les dimensions d’environ 2 000 pixels ou plus sur le côté le plus long.
-   * Les logos ou bannières qui ne nécessitent pas de zoom peuvent être téléchargés à la plus grande taille nécessaire pour l’utilisation prévue.
+   * Commencer avec une image haute résolution offre plus de détails et de flexibilité.
+   * Lorsque des images doivent être affichées dans différentes tailles (par exemple, sur plusieurs appareils ou résolutions d’écran), une image source plus grande permet une meilleure mise à l’échelle.
+   * Pour les images qui prennent en charge le zoom (comme les photos de produits), visez des dimensions d’environ 2 000 pixels ou plus sur le côté le plus long.
+   * Les logos ou bannières qui ne nécessitent pas de zoom peuvent être téléchargés dans la plus grande taille nécessaire à leur utilisation prévue.
 
-En effectuant ces choix prudents au niveau de la source, vous pouvez contribuer de manière significative à la qualité globale de votre contenu visuel.
+En effectuant ces choix judicieux au niveau de la source, vous pouvez contribuer de manière significative à la qualité globale de votre contenu visuel.
 
 <!-- REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
@@ -101,11 +138,11 @@ Vous pouvez utiliser deux méthodes d’accentuation d’image :
       * **[!UICONTROL quantité]** (0 à 5, intensité de l’effet)
       * **[!UICONTROL rayon]** (0 à 250, largeur des « lignes d’accentuation » tracées autour de l’objet accentué, mesurées en pixels.)
 
-     Gardez à l’esprit que les paramètres rayon et quantité fonctionnent l’un par rapport à l’autre. La réduction du rayon peut être compensée en augmentant la quantité. Le rayon permet un contrôle plus précis, car une valeur inférieure accentue uniquement les pixels de contour, tandis qu’une valeur supérieure accentue une bande plus large de pixels.
+     Gardez à l’esprit que les paramètres rayon et montant fonctionnent l’un contre l’autre. La réduction du rayon peut être compensée par une augmentation de la quantité. Le rayon permet un contrôle plus fin, car une valeur faible accentue uniquement les pixels de contour, tandis qu’une valeur élevée accentue une bande plus large de pixels.
 
       * **[!UICONTROL seuil]** (0 à 255, sensibilité de l’effet)
 
-     Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter les zones à l’accentuation excessive avec des couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 ignore les légères variations de la luminosité de la peau pour éviter d’ajouter du &quot;bruit&quot;, tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
+     Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter les zones à l’accentuation excessive avec des couleurs similaires, telles que les tons chair. Par exemple, une valeur seuil de 12 ignore les légères variations de luminosité de la peau pour éviter d’ajouter du « bruit », tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
 
      Pour plus d’informations sur la façon de définir ces trois paramètres, y compris les bonnes pratiques à appliquer avec le filtre, reportez-vous aux ressources suivantes :
 
@@ -129,7 +166,7 @@ Laissez le paramètre monochrome sur 0.
 ### Bonnes pratiques relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage des JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. La plage de ce paramètre est 0 à 100.
-* Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre un paramètre de 90, 95 et 100 est presque imperceptible. Et pourtant, 100 augmente inutilement la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
+* Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre un réglage de 90 ou 95 et 100 est presque imperceptible. Et pourtant, 100 augmente inutilement la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
 * Pour optimiser pour une petite taille de fichier image tout en conservant la qualité de l’image à un niveau acceptable, définissez la `qlt= value` sur 80. Les valeurs inférieures à 70-75 entraînent une dégradation significative de la qualité de l’image.
 * Une bonne pratique pour rester dans la moyenne consiste à définir `qlt= value` sur 85.
 * Utilisation du drapeau chromatique dans le paramètre `qlt=`
@@ -144,13 +181,13 @@ La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 Le paramètre `jpegSize` est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 
 * Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
-* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image corresponde à la taille maximale autorisée. Ou, jusqu’à ce que le système détermine qu’il ne peut pas s’adapter et renvoie une erreur.
+* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` tel que défini. Sinon, la `&qlt=` est progressivement réduite jusqu’à ce que l’image corresponde à la taille maximale autorisée. Ou, jusqu’à ce que le système détermine qu’il ne peut pas tenir et renvoie une erreur.
 
 Une bonne pratique consiste à définir `&jpegSize=` et à ajouter le paramètre `&qlt=` si vous diffusez des images JPG vers des appareils dont la mémoire est limitée.
 
 ## Résumé des bonnes pratiques {#best-practices-summary}
 
-Pour obtenir une image de qualité élevée et un fichier de petite taille, il est recommandé de commencer par la combinaison de paramètres suivante :
+En règle générale, pour obtenir une qualité d’image élevée et une petite taille de fichier, commencez par la combinaison de paramètres suivante :
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 

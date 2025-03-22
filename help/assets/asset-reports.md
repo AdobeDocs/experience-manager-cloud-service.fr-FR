@@ -1,21 +1,55 @@
 ---
 title: Rapports sur l’utilisation et le partage
-description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets] qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans vous aident  [!DNL Adobe Experience Manager Assets]  comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 89%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
 # Rapports de ressources {#asset-reports}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -26,7 +60,7 @@ Les rapports de ressources vous permettent d’évaluer l’utilité de votre d�
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
-La structure de création de rapports [!DNL Assets] utilise [!DNL Sling] tâches de manière asynchrone pour traiter les demandes de rapports de manière ordonnée. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports augmente l’efficacité et la vitesse de génération des rapports.
+La structure de création de rapports [!DNL Assets] utilise des tâches de [!DNL Sling] de manière asynchrone pour traiter les demandes de rapport de manière ordonnée. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports augmente l’efficacité et la vitesse de génération des rapports.
 
 L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les statuts d’exécution des rapports (succès, échec et mise en file d’attente).
 
@@ -69,7 +103,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Attribuez-vous à un **profil produit administrateur d’AEM** pour créer un rapport **Téléchargement**. Voir [Affectation de profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit à un profil de produit Administrateur AEM.
+   >Accédez à un **profil de produit Administrateur AEM** pour créer un rapport **Télécharger**. Voir [Attribuer des profils de produit AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) pour vous donner le droit d’accéder à un profil de produit Administrateur AEM.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
@@ -107,12 +141,12 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/configure_columns.png)
 
-   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter via un sélecteur de chemin de propriété.
+   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter par le biais d’un sélecteur de chemin de propriété.
 
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
-1. Sur la page [!UICONTROL Rapports de ressources], le statut de la génération des rapports repose sur l’état actuel du traitement de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
+1. Sur la page [!UICONTROL Rapports de ressources], le statut de la génération des rapports repose sur l’état actuel du traitement de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même statut apparaît dans la boîte de réception de notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
 
    <!--![A generated report](assets/report_page.png)-->
    ![Statut du rapport généré](assets/report-status.JPG)

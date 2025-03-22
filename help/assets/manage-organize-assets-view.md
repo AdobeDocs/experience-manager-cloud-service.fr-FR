@@ -5,17 +5,51 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 75%
+source-wordcount: '1661'
+ht-degree: 74%
 
 ---
 
 # Gestion des actifs {#manage-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Vous pouvez effectuer facilement de nombreuses tâches de gestion des actifs numériques (DAM) grâce à l’interface conviviale d’[!DNL Assets view]. Une fois les ressources ajoutées, vous pouvez les rechercher, les télécharger, les déplacer, les copier, les renommer, les supprimer, les mettre à jour et les modifier.
 
@@ -142,7 +176,7 @@ Si des fonctionnalités OpenAPI de Dynamic Media sont fournies pour votre envir
 
 ### Définir la cible de validation {#set-approval-target}
 
-La vue Assets vous permet de publier des ressources approuvées dans Dynamic Media avec des fonctionnalités OpenAPI, Content Hub, ou les deux, en fonction de la valeur que vous avez définie dans le champ **Cible d’approbation** disponible sur la page Détails de la ressource.
+La vue Assets vous permet de publier des ressources approuvées dans Dynamic Media avec des fonctionnalités OpenAPI et/ou Content Hub, en fonction de la valeur que vous avez définie dans le champ **Cible d’approbation** disponible sur la page Détails de la ressource.
 
 Pour définir la cible de validation :
 
@@ -163,7 +197,7 @@ Pour définir la cible de validation :
 
    >[!NOTE]
    >
-   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media avec OpenAPI est activé, il l’est par défaut.
+   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media est activé avec OpenAPI, il l’est par défaut.
 
    ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
 
@@ -179,7 +213,7 @@ Voici quelques autres points à noter :
 
 Le tableau suivant illustre les conditions préalables à l’affichage de `Approval Target` liste déroulante et de la cible d’approbation par défaut en fonction de l’activation de DM avec OpenAPI et Content Hub dans votre environnement AEM as a Cloud Service :
 
-| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination Publish |
+| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
 | --- | --- | --- | --- |---|
 | Activé | Activé | Oui | Diffusion | Dynamic Media avec OpenAPI et Content Hub |
 | Pas activé | Activé | Oui | Content Hub | Content Hub |

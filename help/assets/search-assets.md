@@ -6,22 +6,56 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 90%
 
 ---
 
 # Rechercher des ressources dans AEM {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
-
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire les délais de mise sur le marché grâce à une expérience de recherche des ressources intelligente et transparente basées sur des fonctionnalités prêtes à l’emploi et des méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les rédacteurs et les rédactrices, pour une gestion robuste des ressources par les utilisateurs/utilisatrices et les spécialistes marketing ou encore pour l’administration par les administrateurs et administratrices DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
@@ -40,7 +74,7 @@ La recherche de ressources dans AEM prend en charge les cas d’utilisation suiv
 | [Limites](#limitations) et [conseils](#tips) | | |
 | [Exemples illustrés](#samples) | | |
 
-Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans le dossier **[!UICONTROL Files]**. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter la portée de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
+Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans le dossier **[!UICONTROL Fichiers]**. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omnisearch pour limiter la portée de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
@@ -52,23 +86,23 @@ Familiarisez-vous avec l’interface de recherche des ressources et les actions 
 <!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 -->
-![Comprendre l’interface des résultats de recherche Experience Manager Assets](assets/aem-search-interface.png)
-*Figure : Présentation de l’interface des résultats de recherche [!DNL Experience Manager Assets].*
+![Présentation de l’interface des résultats de recherche de Experience Manager Assets](assets/aem-search-interface.png)
+*Image : présentation de [!DNL Experience Manager Assets]’interface des résultats de recherche.*
 
-**A.** Enregistrez la recherche en tant que collection dynamique.
-**B.** Filtres ou prédicats pour limiter les résultats de la recherche.
-**C.** Affichez des fichiers, des dossiers ou les deux.
-**D.** L’emplacement de recherche est DAM.
-**E.** Accéder Aux Recherches Enregistrées.
+**A.** Enregistrer la recherche en tant que collection dynamique.
+**B.** Filtre ou prédicat pour limiter les résultats de la recherche.
+**C.** Afficher des fichiers, des dossiers ou les deux.
+**D.** L’emplacement de la recherche est DAM.
+**Par Exemple** Accéder Aux Recherches Enregistrées.
 **F.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche.
-**G.** Affiche Assets comme recherche par défaut.
-**H.** L’emplacement de recherche est DAM.
-**I.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur.
+**Par exemple** affiche Assets comme recherche par défaut.
+**H.** L’emplacement de la recherche est DAM.
+**I.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur.
 **J.** Sélectionnez les résultats de recherche chargés.
-**K.** Tri par créé, modifié, nom, aucun.
-**L.** Tri par ordre croissant ou décroissant.
-**M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermez la recherche.
-**O.** Basculer entre le mode Carte et le mode Liste.
+**K.** Trier par Créé, Modifié, Nom, Aucun.
+**L.** Triez par ordre croissant ou décroissant.
+**M.** Nombre de résultats de recherche affichés sur le total des résultats de recherche. **N.** Fermer la recherche.
+**O.** Basculer entre les vues Carte et Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -78,19 +112,19 @@ Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de l
 
 *Figure : Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.*
 
-Experience Manager Assets affiche par défaut le nombre de facettes pour deux propriétés :
+Par défaut, Experience Manager Assets affiche le nombre de facettes pour deux propriétés :
 
 * Type de ressource (jcr:content/metadata/dc:format)
 
-* État d’approbation (jcr:content/metadata/dam:status)
+* Statut d’approbation (jcr:content/metadata/dam:status)
 
-Depuis août 2023, Experience Manager Assets inclut une nouvelle version 9 de l’index `damAssetLucene`. Les versions précédentes, `damAssetLucene-8` et antérieures, utilisent le mode `statistical` pour vérifier le contrôle d’accès sur un échantillon des éléments pour chaque nombre de facettes de recherche.
+Depuis août 2023, Experience Manager Assets comprend une nouvelle version 9 de l’index `damAssetLucene`. Les versions précédentes, `damAssetLucene-8` et ultérieures, utilisent le mode `statistical` pour vérifier le contrôle d’accès sur un échantillon d’éléments pour chaque nombre de facettes de recherche.
 
-`damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query pour ne plus évaluer le contrôle d’accès sur les comptes de facettes renvoyés par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides. Par conséquent, les utilisateurs peuvent se voir présenter des valeurs de nombre de facettes, qui incluent les ressources auxquelles ils n’ont pas accès. Ces utilisateurs ne peuvent pas accéder à ces ressources, les télécharger ni lire d’autres détails, y compris leurs chemins d’accès, ni obtenir d’autres informations les concernant.
+`damAssetLucene-9` modifie le comportement du comptage des facettes de requête d’Oak afin de ne plus évaluer le contrôle d’accès sur les nombres de facettes renvoyés par l’index de recherche sous-jacent, ce qui accélère les temps de réponse de la recherche. Par conséquent, les utilisateurs peuvent se voir présenter des valeurs de nombre de facettes, qui incluent des ressources auxquelles ils n’ont pas accès. Ces utilisateurs ne peuvent pas accéder à ces ressources, les télécharger ni en lire d’autres détails, y compris leurs chemins d’accès, ni obtenir d’autres informations à leur sujet.
 
-Si vous devez passer au comportement précédent (`statistical`), voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de l’index `damAssetLucene-9`. Adobe ne recommande pas de passer au mode `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
+Si vous devez passer au comportement précédent (mode `statistical`), consultez la section [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) pour créer une version personnalisée de l’index `damAssetLucene-9`. Adobe ne recommande pas de passer en mode `secure` en raison de l’impact sur les temps de réponse de la recherche avec des jeux de résultats volumineux.
 
-Pour plus d’informations sur les fonctionnalités des facettes Oak, y compris une description détaillée de ces modes, voir [Facettes - Documentation Oak - Index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+Pour plus d’informations sur les fonctionnalités des facettes d’Oak, y compris une description détaillée de ces modes, voir [Facettes - Documentation d’Oak - Index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggestions de recherche en cours de frappe {#searchsuggestions}
 
@@ -155,15 +189,15 @@ Vous pouvez l’utiliser à votre avantage en améliorant le classement de certa
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
-## Configuration de la taille de lot des ressources pour afficher les résultats de recherche {#configure-asset-batch-size}
+## Configuration de la taille de lot des ressources pour afficher les résultats de la recherche {#configure-asset-batch-size}
 
-Les administrateurs peuvent maintenant configurer la taille du lot des ressources qui s’affichent lorsque vous effectuez une recherche. Les résultats de recherche de ressources s’affichent en multiples de la taille de lot configurée lorsque vous faites défiler la page vers le bas pour charger les résultats. Vous pouvez sélectionner les tailles de lot disponibles (200, 500 et 1 000 ressources). Si vous définissez un nombre de lots inférieur, les temps de réponse de la recherche sont plus rapides.
+Les administrateurs peuvent désormais configurer la taille du lot des ressources qui s’affichent lorsque vous effectuez une recherche. Les résultats de recherche de ressources s’affichent en multiples de la taille de lot configurée lorsque vous faites défiler la page vers le bas pour charger les résultats. Vous pouvez sélectionner les tailles de lot disponibles (200, 500 et 1 000 ressources). Si vous définissez un nombre de lots inférieur, les temps de réponse de la recherche sont plus rapides.
 
-Par exemple, si vous définissez la limite du nombre de résultats sur une taille de lot de 200 ressources, Experience Manager Assets affiche une taille de lot de 200 ressources dans les résultats de recherche lorsque vous commencez à effectuer la recherche. Lorsque vous faites défiler les résultats de recherche vers le bas, le lot suivant de 200 ressources s’affiche. Le processus se poursuit jusqu’à ce que toutes les ressources correspondant à la requête soient affichées.
+Par exemple, si vous définissez la limite du nombre de résultats sur une taille de lot de 200 ressources, Experience Manager Assets affiche une taille de lot de 200 ressources dans les résultats de la recherche lorsque vous commencez à effectuer la recherche. Lorsque vous faites défiler vers le bas pour parcourir les résultats de la recherche, le lot suivant de 200 ressources s’affiche. Le processus se poursuit jusqu’à ce que toutes les ressources correspondant à la requête soient affichées.
 
-Pour configurer la taille du lot de ressources, procédez comme suit :
+Pour configurer la taille de lot de ressources :
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Configurations Assets]** > **[!UICONTROL Configuration de l’omni-recherche Assets]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Configurations Assets]** > **[!UICONTROL Configuration Assets Omnisearch]**.
 
 1. Sélectionnez la limite du nombre de résultats et cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -518,9 +552,9 @@ Comme pour la fonction de création de version, vous pouvez créer un workflow p
 
 Liez et dissociez les ressources qui s’affichent dans les résultats de recherche. Sélectionnez les ressources, puis cliquez sur **[!UICONTROL Lier]** ou **[!UICONTROL Dissocier]**.
 
-### Accédez à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
+### Accéder à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
 
-Accédez à l’emplacement du dossier des ressources affichées dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Afficher l’emplacement du fichier]**.
+Accédez à l’emplacement du dossier pour les ressources affichées dans les résultats de la recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Afficher l’emplacement du fichier]**.
 
 ## Résultats de recherche inattendus et problèmes {#unexpected-results}
 

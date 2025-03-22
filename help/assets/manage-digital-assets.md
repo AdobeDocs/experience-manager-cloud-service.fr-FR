@@ -6,17 +6,51 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4323'
 ht-degree: 82%
 
 ---
 
 # Gestion des ressources {#manage-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -47,24 +81,24 @@ Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici 
 
 Voir [Ajout de ressources numériques à Experience Manager](add-assets.md).
 
-## Extraction des archives ZIP {#extract-zip-archives}
+## Extraire des archives ZIP {#extract-zip-archives}
 
-Sélectionnez les archives ZIP gérées dans Experience Manager et extrayez directement les fichiers dans Experience Manager sans les télécharger.
+Sélectionnez les archives ZIP gérées dans Experience Manager et extrayez les fichiers directement dans Experience Manager sans les télécharger.
 
 Pour extraire les fichiers ZIP, procédez comme suit :
 
 1. Sélectionnez le type de fichier ZIP.
-1. Cliquez sur l’option **[!UICONTROL Extract Archive]** disponible dans la barre d’actions.
+1. Cliquez sur l’option **[!UICONTROL Extraire l’archive]** disponible dans la barre d’actions.
 1. Sélectionnez le dossier dans lequel vous devez enregistrer les ressources extraites disponibles dans le dossier compressé.
 1. Cliquez sur **[!UICONTROL Suivant]**.
-1. Sélectionnez le comportement approprié pour gérer les conflits de nom de fichier lors de l’extraction. Vous pouvez sélectionner pour créer une version d’une ressource existante, la remplacer, conserver les deux ressources dans le dossier de destination ou ignorer l’extraction de la nouvelle ressource.
-1. Cliquez sur **[!UICONTROL Extract]**. Démarrage du processus d’extraction de code postal. Une fois le processus terminé, vous pouvez afficher les ressources extraites dans le dossier de destination.
+1. Sélectionnez le comportement approprié pour gérer les conflits de noms de fichier lors de l’extraction. Vous pouvez choisir de créer une version d’une ressource existante, de remplacer la ressource, de conserver les deux ressources dans le dossier de destination ou d’ignorer l’extraction de la nouvelle ressource.
+1. Cliquez sur **[!UICONTROL Extraire]**. Le processus d’extraction du fichier Zip démarre. Une fois le processus terminé, vous pouvez afficher les ressources extraites dans le dossier de destination.
 
-   ![Extraction zip](assets/zip-extraction.png)
+   ![extraction zip](assets/zip-extraction.png)
 
 >[!NOTE]
 >
->* La taille maximale de fichier ZIP prise en charge est de 15 Go.
+>* La taille de fichier ZIP maximale prise en charge est de 15 Go.
 >* Vous pouvez extraire un maximum de trois fichiers ZIP à la fois.
 
 ## Aperçu des ressources {#previewing-assets}
@@ -72,19 +106,19 @@ Pour extraire les fichiers ZIP, procédez comme suit :
 Pour prévisualiser une ressource, procédez comme suit.
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement de la ressource à prévisualiser.
-1. Sélectionnez la ressource de votre choix pour l’ouvrir.
+1. Sélectionnez la ressource souhaitée pour l’ouvrir.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/file-format-support.md) (avec modification interactive).
 
-   Pour effectuer un zoom avant sur une ressource, sélectionnez `+` (ou sélectionnez la loupe sur la ressource). Pour effectuer un zoom arrière, sélectionnez `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
+   Pour effectuer un zoom avant sur une ressource, sélectionnez `+` (ou sélectionnez la loupe au niveau de la ressource). Pour effectuer un zoom arrière, sélectionnez `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
 
-   Sélectionnez **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
+   Sélectionnez **[!UICONTROL Réinitialiser]** pour rétablir la taille d’origine de la vue.
 
 ## Modification des propriétés {#editing-properties}
 
 1. Accédez à l’emplacement de la ressource dont vous souhaitez modifier les métadonnées.
 
-1. Sélectionnez la ressource, puis **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher les propriétés de la ressource. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
+1. Sélectionnez la ressource, puis sélectionnez **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher les propriétés de la ressource. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -141,7 +175,7 @@ Certains attributs propres à une copie spécifique d’une ressource ne sont pa
 
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources, puis sélectionnez l’icône **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]** ![copy_icon](assets/copy_icon.png) depuis la carte de la ressource.
+1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources, puis l’icône **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]** ![copy_icon](assets/copy_icon.png) depuis la carte de la ressource.
 
    >[!NOTE]
    >
@@ -182,7 +216,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    * Accédez au nouvel emplacement des ressources, puis sélectionnez **[!UICONTROL Suivant]** pour continuer.
 
-   * Sélectionnez **[!UICONTROL Précédent]** pour revenir à l’écran **[!UICONTROL Renommer]** .
+   * Sélectionnez **[!UICONTROL Précédent]** pour revenir à l’écran **[!UICONTROL Renommer]**.
 
 1. Si les ressources déplacées sont référencées par des pages, des ressources ou des collections, l’onglet **[!UICONTROL Adapter les références]** s’affiche à côté de l’onglet **[!UICONTROL Sélectionner la destination]**.
 
@@ -205,7 +239,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. Sélectionnez l’icône de navigation globale, puis **[!UICONTROL Rendus]** dans la liste.
+1. Sélectionnez l’icône de navigation globale, puis sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -221,13 +255,13 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, puis sélectionnez l’icône **[!UICONTROL Supprimer le rendu]** de la barre d’outils. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques ou supprimer les ressources et charger à nouveau celles qui ont été supprimées.
+   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, puis sélectionnez l’icône **[!UICONTROL Supprimer le rendu]** dans la barre d’outils. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques ou supprimer les ressources et charger à nouveau celles qui ont été supprimées.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Chargement d’un nouveau rendu**
 
-   Accédez à la page des détails de la ressource, puis sélectionnez l’icône **[!UICONTROL Ajouter le rendu]** dans la barre d’outils pour charger un nouveau rendu pour la ressource.
+   Accédez à la page de détails de la ressource et sélectionnez l’icône **[!UICONTROL Ajouter le rendu]** dans la barre d’outils pour charger un nouveau rendu pour la ressource.
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -237,7 +271,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. Assets affiche le rendu selon les dimensions exactes ou les plus proches de celles spécifiées.
 
-   Vous ne pouvez pas créer de rendus avec les préfixes suivants, car ils sont internes à l’Adobe :
+   Vous ne pouvez pas créer de rendus avec les préfixes suivants, car ils sont internes à Adobe :
 
    * cq5
 
@@ -428,10 +462,10 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 >Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragments.](content-fragments/content-fragments.md).
 
 1. Accédez à l’emplacement de la ressource à laquelle vous souhaitez ajouter des annotations.
-1. Sélectionnez l&#39;icône **[!UICONTROL Annoter]** à partir de l&#39;une des options suivantes :
+1. Sélectionnez l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou accédé à la page de ressource
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
@@ -464,11 +498,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >
    >Vous pouvez également ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
-1. Pour choisir une autre couleur afin de différencier les utilisateurs, cliquez sur l’icône Profil et sélectionnez **[!UICONTROL Mes préférences]**.
+1. Pour choisir une autre couleur afin de différencier les utilisateurs, sélectionnez l’icône Profil et sélectionnez **[!UICONTROL Mes préférences]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis sélectionnez **[!UICONTROL Accepter]**.
+   Indiquez la couleur souhaitée dans la zone **[!UICONTROL Couleur de l’annotation]**, puis sélectionnez **[!UICONTROL Accepter]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -488,7 +522,7 @@ Vous ne pouvez afficher qu’une annotation à la fois.
 
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
-1. Sélectionnez l’icône de navigation globale, puis **[!UICONTROL Chronologie]** dans la liste.
+1. Sélectionnez l’icône de navigation globale, puis choisissez **[!UICONTROL Chronologie]** dans la liste.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -500,7 +534,7 @@ Vous ne pouvez afficher qu’une annotation à la fois.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   Sélectionnez **[!UICONTROL Supprimer]** pour supprimer un commentaire particulier.
+   Sélectionnez **[!UICONTROL Supprimer]** pour supprimer un commentaire spécifique.
 
 ### Impression des annotations {#printing-annotations}
 
@@ -512,7 +546,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou le statut 
 >
 >Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
 
-Pour imprimer les annotations et l’état de révision, sélectionnez l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un statut de révision.
+Pour imprimer les annotations et le statut de révision, sélectionnez l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un statut de révision.
 
 1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
 1. Utilisez l’une des méthodes suivantes :
@@ -546,7 +580,7 @@ Pour imprimer les annotations et l’état de révision, sélectionnez l’icôn
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
+   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
 
    Revenez au fichier PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
 
@@ -568,9 +602,9 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 * Afficher la révision actuelle d’une ressource.
 * restaurer une version précédente de la ressource.
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version, puis sélectionnez-la pour ouvrir sa page Ressource.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version, puis sélectionnez-la pour ouvrir sa page de ressource.
 
-1. Sélectionnez l’icône de navigation globale et choisissez **[!UICONTROL Chronologie]** dans le menu.
+1. Sélectionnez l’icône de navigation globale, puis choisissez **[!UICONTROL Chronologie]** dans le menu.
 
    ![chronologie](assets/timeline.png)
 
@@ -600,7 +634,7 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
 1. Pour générer un aperçu de la version, sélectionnez **[!UICONTROL Aperçu de la version]**.
 1. Pour afficher cette version dans l’interface utilisateur d’Assets, sélectionnez **[!UICONTROL Revenir à cette version]**.
-1. Pour comparer deux versions, accédez à la page Ressource de la ressource et sélectionnez la version à comparer à la version actuelle.
+1. Pour comparer deux versions, accédez à la page des ressources de la ressource et sélectionnez la version à comparer à la version actuelle.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
@@ -610,8 +644,8 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
 ### Démarrage d’un workflow sur une ressource {#starting-a-workflow-on-an-asset}
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez démarrer un workflow, puis sélectionnez la ressource pour ouvrir la page Ressource.
-1. Sélectionnez l’icône de navigation globale et choisissez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez démarrer un workflow, puis sélectionnez la ressource pour ouvrir la page de ressource.
+1. Sélectionnez l’icône de navigation globale, puis choisissez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
 
    ![chronologie-1](assets/timeline-1.png)
 
@@ -619,7 +653,7 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. Sélectionnez **[!UICONTROL Démarrer le processus]** dans la liste.
+1. Sélectionnez **[!UICONTROL Démarrer le workflow]** dans la liste.
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -631,7 +665,7 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. Sélectionnez **[!UICONTROL Démarrer]**, puis **[!UICONTROL Continuer]** dans la boîte de dialogue pour confirmer. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
+1. Sélectionnez **[!UICONTROL Démarrer]** puis sélectionnez **[!UICONTROL Continuer]** dans la boîte de dialogue pour confirmer. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 85%
+source-wordcount: '1014'
+ht-degree: 84%
 
 ---
 
 # Métadonnées en cascade {#cascading-metadata}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Lors de la capture des informations de métadonnées d’une ressource, les utilisateurs et utilisatrices fournissent des informations dans les différents champs disponibles. Vous pouvez afficher des champs de métadonnées ou des valeurs de champ spécifiques en fonction des options sélectionnées dans les autres champs. Ce type d’affichage conditionnel des métadonnées est appelé « métadonnées en cascade ». En d’autres termes, vous pouvez créer une dépendance entre un champ/une valeur de métadonnées spécifique et un ou plusieurs champs et/ou leurs valeurs.
 
@@ -56,7 +90,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Les paires clé-valeur sont les options fournies à un utilisateur ou une utilisatrice de formulaire. Vous pouvez fournir les paires clé-valeur manuellement ou à partir d’un fichier JSON.
 
-   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, puis **[!UICONTROL Ajouter un choix]** et spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
+   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, sélectionnez **[!UICONTROL Ajouter un choix]** et spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
 
    * Pour récupérer dynamiquement les valeurs d’un fichier JSON, sélectionnez **[!UICONTROL Ajouter via le chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
 
@@ -83,7 +117,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Sous **[!UICONTROL Condition requise]**, sélectionnez l’option **[!UICONTROL Requis, d’après la nouvelle règle]**.
-1. Sélectionnez **[!UICONTROL Ajouter une règle]** et choisissez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur de champ sur laquelle vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les modifications.
+1. Sélectionnez **[!UICONTROL Ajouter une règle]** et choisissez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Choisissez également la valeur du champ sur lequel créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
    ![define_rule](assets/define_rule.png)
 
@@ -99,7 +133,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!CAUTION]
    >
-   >Pour réinitialiser les valeurs, sélectionnez n’importe où dans l’interface autre que les valeurs. Si les valeurs sont réinitialisées, vous devez les sélectionner à nouveau.
+   >Pour réinitialiser les valeurs, sélectionnez n’importe quel emplacement de l’interface autre que les valeurs. Si les valeurs sont réinitialisées, vous devez les sélectionner à nouveau.
 
    >[!NOTE]
    >

@@ -3,17 +3,51 @@ title: Approbation de ressources dans Experience Manager
 description: Découvrez comment approuver des ressources dans  [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 12%
+source-wordcount: '1143'
+ht-degree: 11%
 
 ---
 
 # Approbation de ressources dans [!DNL Experience Manager]
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -74,7 +108,7 @@ Pour approuver des ressources dans [!DNL Experience Manager Admin view], procéd
 Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fois. Vous pouvez approuver en bloc des ressources pour accélérer le processus d’approbation, ce qui vous permet de gagner du temps et d’améliorer la productivité.
 <br>Pour approuver des ressources en bloc dans [!DNL Experience Manager Admin view], procédez comme suit :
 
-1. Créez un dossier dans l’environnement de création (https://author-pXXX-eYYY.adobeaemcloud.com). Remplacez _XXX_ par votre ID de programme et _YYY_ par l’ID d’environnement de l’Experience Manager.
+1. Créez un dossier dans l’environnement de création (https://author-pXXX-eYYY.adobeaemcloud.com). Remplacez _XXX_ par votre ID de programme et _YYY_ par l’ID d’environnement d’Experience Manager.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
@@ -112,9 +146,9 @@ De même, pour approuver en bloc des ressources dans un dossier dans la vue Asse
 
 1. Sélectionnez **[!UICONTROL Approuvé]** dans le champ **[!UICONTROL Statut]** disponible dans la section [!UICONTROL Propriétés] du volet de droite.
 
-   Si vous sélectionnez le statut comme `Approved` et si [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou [Content Hub](/help/assets/product-overview.md), ou les deux sont activés pour votre Experience Manager Assets, vous pouvez afficher les options `Delivery` et `Content Hub` disponibles dans le champ **[!UICONTROL Cible d’approbation]**.
+   Si vous sélectionnez le statut comme `Approved` et si [Dynamic Media avec des fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou [Content Hub](/help/assets/product-overview.md), ou les deux sont activés pour votre Experience Manager Assets, vous pouvez afficher les options `Delivery` et `Content Hub` disponibles dans le champ **[!UICONTROL Cible d’approbation]**.
 
-   * Sélectionnez **[!UICONTROL Diffusion]** pour rendre les ressources disponibles à la fois pour Dynamic Media avec les fonctionnalités OpenAPI et Content Hub. Si Content Hub n’est pas activé, la sélection de cette option rend les ressources disponibles pour Dynamic Media avec les fonctionnalités OpenAPI uniquement.
+   * Sélectionnez **[!UICONTROL Diffusion]** pour rendre les ressources disponibles pour Dynamic Media avec les fonctionnalités OpenAPI et Content Hub. Si Content Hub n’est pas activé, la sélection de cette option rend les ressources disponibles uniquement pour Dynamic Media avec les fonctionnalités OpenAPI.
    * Sélectionnez **[!UICONTROL Content Hub]** pour rendre les ressources disponibles pour Content Hub.
 
    ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
@@ -129,7 +163,7 @@ De même, pour approuver en bloc des ressources dans un dossier dans la vue Asse
 
 ## Copier l’URL de diffusion des ressources approuvées {#copy-delivery-url-approved-assets}
 
-L’URL de diffusion de toutes les ressources approuvées dans le référentiel est disponible si vous avez activé [!UICONTROL Dynamic Media avec les fonctionnalités OpenAPI] sur votre instance AEM as a Cloud Service.
+L’URL de diffusion de toutes les ressources approuvées dans le référentiel est disponible si les fonctionnalités [!UICONTROL Dynamic Media avec OpenAPI] sont activées sur votre instance AEM as a Cloud Service.
 
 Pour copier l’URL de diffusion d’une ressource approuvée dans le référentiel :
 

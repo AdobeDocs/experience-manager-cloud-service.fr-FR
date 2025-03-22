@@ -4,23 +4,57 @@ description: Découvrez comment importer des ressources en bloc à l’aide de l
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 87%
+source-wordcount: '1927'
+ht-degree: 86%
 
 ---
 
 # Importer des ressources en bloc à l’aide de la vue Assets  {#bulk-import-assets-view}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 L’import en bloc dans la vue AEM Assets permet aux administrateurs et administratrices d’importer un grand nombre de ressources d’une source de données vers AEM Assets. Les administrateurs et administratrices n’ont plus besoin de charger des ressources ou des dossiers individuels vers AEM Assets.
 
 >[!NOTE]
 >
->L’importateur en masse d’affichage Assets utilise le même serveur principal que celui de l’importateur en masse d’affichage administrateur. Cependant, il offre davantage de sources de données à importer et une expérience utilisateur plus simplifiée.
+>L’importateur en bloc de vues Assets utilise le même serveur principal que celui de l’importateur en bloc de vues Admin. Cependant, il offre davantage de sources de données à partir desquelles importer des données et une expérience utilisateur plus rationalisée.
 
 Vous pouvez importer des ressources à partir des sources de données suivantes :
 
@@ -37,7 +71,7 @@ Vous pouvez importer des ressources à partir des sources de données suivantes�
 | Azure | <ul> <li>Compte de stockage Azure </li> <li> Conteneur d’objets blob Azure <li> Clé d’accès Azure ou jeton SAS en fonction du mode d’authentification </li></ul> |
 | AWS | <ul> <li>Région AWS </li> <li> Compartiment AWS <li> Clé d’accès AWS </li><li> Secret d’accès AWS </li></ul> |
 | Google Cloud | <ul> <li>Compartiment GCP </li> <li> Adresse e-mail du compte de service GCP <li> Clé privée du compte de service GCP</li></ul> |
-| Dropbox | <ul> <li>Identifiant du client Dropbox (clé d’application) </li> <li> Secret client Dropbox (secret d’application)</li></ul> |
+| Dropbox | <ul> <li>Identifiant du client Dropbox (clé de l’application) </li> <li> Secret client Dropbox (secret d’application)</li></ul> |
 | OneDrive | <ul> <li>Identifiant locataire OneDrive  </li> <li> Identifiant client OneDrive</li><li> Clé secrète client OneDrive</li></ul> |
 
 Outre ces conditions préalables en fonction de la source de données, vous devez connaître le nom du dossier source disponible dans votre source de données, qui contient toutes les ressources à importer dans AEM Assets.
@@ -130,9 +164,9 @@ Pour créer une configuration d’import en bloc dans [!DNL Experience Manager A
 
    >[!NOTE]
    >
-   >Si vous utilisez OneDrive comme source de données, spécifiez le chemin du dossier source en fonction des règles suivantes :
-   >* Indiquez uniquement le nom du dossier racine, sans le domaine . Si le chemin URL complet du dossier est `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, spécifiez `/Importfolder/` dans le champ **[!UICONTROL Dossier Source]** .
-   >* Si le nom du dossier contient plusieurs mots séparés par des espaces, indiquez le nom avec les espaces dans la configuration de l’importation en bloc.
+   >Si vous utilisez OneDrive comme source de données, spécifiez le chemin d’accès au dossier source en fonction des règles suivantes :
+   >* Indiquez uniquement le nom du dossier racine, sans le domaine. Si le chemin URL complet du dossier est `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, spécifiez `/Importfolder/` dans le champ **[!UICONTROL Dossier Source]**.
+   >* Si le nom du dossier contient plusieurs mots séparés par des espaces, spécifiez le nom avec les espaces dans la configuration d’importation en bloc.
    >* Le dossier source doit se trouver à la racine du répertoire. Les chemins de dossier ne sont pas pris en charge.
 
 1. (Facultatif) Sélectionnez lʼoption **[!UICONTROL Supprimer le fichier source après lʼimport]** afin de supprimer les fichiers originaux du magasin de données source après lʼimport des fichiers dans Experience Manager Assets.
@@ -143,7 +177,7 @@ Pour créer une configuration d’import en bloc dans [!DNL Experience Manager A
 
    >[!NOTE]
    >
-   >En fonction des règles de sécurité de votre entreprise, vous devrez peut-être demander le consentement de l’administrateur pour que cette application se connecte à l’outil d’importation en bloc. Si cela est nécessaire, l’administrateur doit fournir son consentement avant que la configuration de l’importation en bloc ne puisse être enregistrée.
+   >Selon les règles de sécurité de votre entreprise, vous devrez peut-être obtenir le consentement de l’administrateur pour que cette application se connecte à l’outil d’importation en bloc. Si nécessaire, l’administrateur doit donner son consentement avant que la configuration d’importation en bloc puisse être enregistrée.
 
 1. Pour définir un emplacement dans la gestion des ressources numériques (DAM) où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**, indiquez un chemin d’accès. Par exemple, `/content/dam/imported_assets`.
 1. (Facultatif) Dans la section **[!UICONTROL Choisir des filtres]**, indiquez la taille de fichier minimale des ressources en Mo à inclure dans le processus d’ingestion dans le champ **[!UICONTROL Filtrer par taille minimale]**.
@@ -158,7 +192,7 @@ Pour créer une configuration d’import en bloc dans [!DNL Experience Manager A
 
    * Sélectionnez **[!UICONTROL Enregistrer l’import]** pour enregistrer la configuration afin de pouvoir l’exécuter ultérieurement.
    * Sélectionnez **[!UICONTROL Enregistrer et exécuter l’import]** pour enregistrer la configuration et exécuter l’import en bloc.
-   * Sélectionnez **[!UICONTROL Enregistrer et planifier l’import]** pour enregistrer la configuration et planifier l’import en bloc ultérieurement. Vous pouvez choisir la fréquence de l’importation en bloc et définir la date et l’heure de l’importation. L’importation en bloc s’exécute à la date et à l’heure définies dans la fréquence choisie.
+   * Sélectionnez **[!UICONTROL Enregistrer et planifier l’import]** pour enregistrer la configuration et planifier l’import en bloc ultérieurement. Vous pouvez choisir la fréquence de l’importation en bloc et définir la date et l’heure de l’importation. L’importation en bloc s’exécute à la date et à l’heure définies selon la fréquence choisie.
 
    ![Exécution de l’import en bloc.](assets/save-run.png)
 
@@ -170,7 +204,7 @@ Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience M
 
 Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifie également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour une nouvelle importation, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichiers des ressources et dossiers.
 
-Pour plus d’informations sur les noms interdits, la gestion des noms de ressources et la gestion des noms de dossiers lors de l’importation en masse, voir [ Gestion des noms de fichier lors de l’importation en masse dans la vue d’administration](add-assets.md##filename-handling-bulkimport).
+Pour plus d’informations sur les noms interdits, la gestion des noms de ressources et la gestion des noms de dossiers lors de l’importation en bloc, voir [Gestion des noms de fichier lors de l’importation en bloc dans la vue Administration](add-assets.md##filename-handling-bulkimport).
 
 ## Afficher les configurations d’import en bloc existantes {#view-import-configuration}
 
@@ -229,6 +263,6 @@ Cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) corresponda
 
 Pour afficher l’emplacement cible des ressources où les ressources sont importées après l’exécution de la tâche d’import en bloc, cliquez sur l’![icône Plus](assets/do-not-localize/more-icon.svg) correspondant au nom de la configuration, puis sur **[!UICONTROL Afficher les ressources]**.
 
-## Vidéo : Importation de ressources en bloc à l’aide de la vue Assets
+## Vidéo : importation en bloc de ressources à l’aide de la vue Assets
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

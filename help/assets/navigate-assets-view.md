@@ -1,20 +1,54 @@
 ---
-title: '[!DNL Assets view] user interface'
+title: Interface utilisateur d’[!DNL Assets view]
 description: Comprendre l’interface utilisateur et de la navigation dans [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 78%
+source-wordcount: '1026'
+ht-degree: 76%
 
 ---
 
 # Accédez aux fichiers et aux dossiers et affichez les ressources {#view-assets-and-details}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -34,17 +68,17 @@ Lorsque vous vous connectez à [!DNL Assets view], l’interface suivante s’af
 
 ## Parcourir et afficher les ressources et les dossiers {#browse-repository}
 
-Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Experience Manager Assets affiche des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu. Cela améliore la visibilité des ressources disponibles dans le référentiel AEM Assets. Cette miniature de dossier permet d’économiser le temps consacré à la recherche de ressources spécifiques dans un dossier du référentiel AEM Assets.
+Vous pouvez accéder aux dossiers requis à partir de l’interface utilisateur principale ou de la barre latérale gauche. Experience Manager Assets affiche des aperçus visuels du contenu du dossier sur la miniature du dossier lors de la navigation ou de la recherche de contenu. Cela améliore la capacité de découverte des ressources disponibles dans le référentiel AEM Assets. Cette miniature de dossier vous permet de gagner du temps lors de la recherche de ressources spécifiques dans un dossier du référentiel AEM Assets.
 Quand vous naviguez dans le dossier des ressources, vous pouvez utiliser l’interface pour afficher les miniatures et parcourir visuellement le référentiel ou bien afficher les détails pour trouver rapidement la ressource souhaitée. Les options disponibles dans la barre latérale gauche sont les suivantes :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md) : Assets comprend désormais un espace de travail personnalisable, composé de widgets permettant d’accéder facilement aux éléments clés de l’interface utilisateur d’Assets et aux informations qui vous intéressent le plus. Sur une page unique, bénéficiez d’un aperçu de vos tâches et d’un accès rapide aux principaux workflows. Grâce à un accès rapide et convivial aux menus pertinents, vous gagnez en efficacité et en vitesse de contenu.
-* [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous effectuez se trouvent sous l’onglet **Tâches terminées** .
+* [Tâches](/help/assets/my-workspace-assets-view.md) : vous pouvez afficher les tâches qui vous sont affectées sous l’onglet **Mes tâches**. En revanche, les tâches que vous créez peuvent être affichées sous l’onglet **Tâches affectées**. En outre, les tâches que vous avez terminées se trouvent sous l’onglet **Tâches terminées**.
 * [Ressources](/help/assets/manage-organize-assets-view.md) : liste de tous les dossiers auxquels vous avez accès sous la forme d’une arborescence.
 * **Récemment consultés** : liste des ressources que vous avez récemment prévisualisées. [!DNL Assets view] affiche uniquement les ressources que vous prévisualisez. Cette fonctionnalité n’affiche pas les ressources que vous faites défiler en naviguant dans les fichiers ou dossiers du référentiel.
 * [Collections](/help/assets/manage-collections-assets-view.md) : une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Assets d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
-* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à son emplacement d’origine ou la supprimer définitivement. Vous pouvez spécifier un mot-clé ou appliquer des filtres tels que le statut de la ressource, le type de fichier, le type MIME, la taille de l’image, la création, la modification et les dates d’expiration des ressources, ainsi que le filtrage par ressources ignorées par la personne actuelle. Vous pouvez également appliquer des filtres personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, voir [Recherche de ressources dans la vue Assets](/help/assets/search-assets-view.md).
+* **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à son emplacement d’origine ou la supprimer définitivement. Vous pouvez spécifier un mot-clé ou appliquer des filtres tels que le statut de la ressource, le type de fichier, le type MIME, la taille de l’image, la création, la modification et les dates d’expiration des ressources, ainsi que le filtrage par ressources ignorées par la personne actuelle. Vous pouvez également appliquer des filtres personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, consultez la section [Recherche de ressources dans la vue Assets](/help/assets/search-assets-view.md).
 * **Paramètres** : vous pouvez configurer différentes options de la vue Assets à l’aide des **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -75,11 +109,11 @@ Pour naviguer dans un dossier, double-cliquez sur les miniatures du dossier ou s
 
 Avant d’utiliser, de partager ou de télécharger une ressource, vous pouvez l’afficher pour en connaître les détails. La fonction d’aperçu vous permet d’afficher non seulement les images, mais également quelques autres types de ressources pris en charge.
 
-Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de détails](assets/do-not-localize/edit-in-icon.png) [!UICONTROL Détails] dans la barre d’outils supérieure. Vous ne pouvez pas seulement afficher la ressource, mais également afficher ses métadonnées détaillées et prendre d’autres mesures.
+Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de détails](assets/do-not-localize/edit-in-icon.png) [!UICONTROL Détails] dans la barre d’outils supérieure. Vous pouvez non seulement afficher la ressource, mais également afficher le détail de ses métadonnées et effectuer d’autres actions.
 
 ![Aperçu d’une ressource](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A** : revenez au dossier actuel ou au résultat de la recherche dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : Affectez des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaire et annotation **G{1 3} : affichez les tâches liées à la ressource sélectionnée** H **: Afficher et gérer les versions** I **: afficher les rendus de l’image** J **: modifier l’image** K **: afficher les rendus Dynamic Media, y compris le recadrage intelligent et Dynamic Media avec des rendus de fonctionnalités OpenAPI.** **L** : Métadonnées de base **M** : Métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actuel sans revenir au dossier **P** : Aperçu plus détaillé. Zoom, plein écran et d’autres options.
+**A** : revenez au dossier actuel ou au résultat de la recherche actuel dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : affecter des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaires et annotations **G** : afficher les tâches liées à la ressource sélectionnée **H** : afficher et gérer les versions **I** : afficher les rendus de l’image **J** : modifier l’image **K** : afficher les rendus Dynamic Media, y compris le recadrage intelligent et les rendus Dynamic Media avec fonctionnalités OpenAPI. **L** : métadonnées de base **M** : métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier **P** : aperçu plus détaillé. Zoom, plein écran et d’autres options.
 
 Vous pouvez également prévisualiser des vidéos.
 

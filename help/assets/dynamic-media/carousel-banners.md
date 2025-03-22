@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4538'
 ht-degree: 98%
 
 ---
 
 # Bannières de carrousel{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Les bannières de carrousel permettent aux spécialistes du marketing de générer des interactions en créant facilement du contenu promotionnel interactif et rotatif et en le diffusant sur n&#39;importe quel écran.
 
@@ -85,7 +122,7 @@ Pour démarrer rapidement :
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * [Ajoutez une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page)Vous pouvez ajouter l’URL de bannière de carrousel ou le code intégré que vous avez copié sur la page web.
+   * [Ajoutez une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page)vous pouvez ajouter l’URL de la bannière de carrousel ou le code intégré que vous avez copié sur la page web.
 
       * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
 
@@ -444,7 +481,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code en front-end.
 1. Le code en front-end charge les données ou le contenu de l’aperçu rapide.
 1. Facultativement, le code en front-end convertit les données chargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et affiche le contenu de l’HTML à l’écran pour l’utilisateur.
+1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur.
 
 Ces appels ne représentent pas des appels d’API publics indépendants qui peuvent être appelés par la logique de page web à partir d’une étape arbitraire. Il s’agit plutôt d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 

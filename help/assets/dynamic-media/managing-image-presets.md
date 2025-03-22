@@ -5,40 +5,77 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 72%
+source-wordcount: '3596'
+ht-degree: 71%
 
 ---
 
 # Gestion des paramètres d’image prédéfinis{#managing-image-presets}
 
-Les paramètres d’image prédéfinis permettent à Adobe Experience Manager Assets de diffuser des images dynamiquement dans différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme afin d’optimiser l’apparence de l’image lors de sa diffusion.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
+Les paramètres d’image prédéfinis permettent à Adobe Experience Manager Assets de diffuser des images de manière dynamique à différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme afin d’optimiser l’apparence de l’image lors de sa diffusion.
 
 Les administrateurs peuvent créer des paramètres prédéfinis pour l’exportation de fichiers. Les utilisateurs peuvent choisir un paramètre prédéfini lors de l’exportation d’images, qui reformate également les images selon les spécifications définies par l’administrateur.
 
-Vous pouvez également créer des paramètres d’image prédéfinis réactifs. Si vous appliquez un paramètre d’image prédéfini réactif à vos ressources, il change en fonction de l’appareil ou de la taille d’écran sur lequel elles sont affichées. Vous pouvez configurer les paramètres d’image prédéfinis pour qu’ils utilisent le CMJN dans l’espace colorimétrique, en plus du RGB ou du gris.
+Vous pouvez également créer des paramètres d’image prédéfinis réactifs. Si vous appliquez un paramètre prédéfini réactif d’image à vos ressources, il varie en fonction de l’appareil ou de la taille d’écran sur lequel elles sont affichées. Vous pouvez configurer les paramètres d’image prédéfinis de manière à utiliser CMJN dans l’espace colorimétrique, en plus de RGB ou de Gris.
 
-Cette section décrit comment créer, modifier et gérer généralement les paramètres d’image prédéfinis. Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque vous la prévisualisez. Voir [Application de paramètres prédéfinis d’image](/help/assets/dynamic-media/image-presets.md).
+Cette section décrit comment créer, modifier et généralement gérer les paramètres d’image prédéfinis. Vous pouvez appliquer un paramètre d’image prédéfini à une image à chaque fois que vous la prévisualisez. Voir [Application de paramètres prédéfinis d’image](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](/help/assets/dynamic-media/imaging-faq.md) pour plus d’informations.
+>L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis existants et utilise les informations disponibles à la dernière milliseconde de diffusion pour réduire davantage la taille du fichier image en fonction de la vitesse de connexion du navigateur ou du réseau. Voir [Imagerie numérique](/help/assets/dynamic-media/imaging-faq.md) pour plus d’informations.
 
 ## En savoir plus sur les paramètres prédéfinis d’image {#understanding-image-presets}
 
 Tout comme une macro, un paramètre d’image prédéfini est un ensemble prédéfini de commandes de dimensionnement et de formatage enregistrées sous un nom. Pour comprendre le fonctionnement des paramètres d’image prédéfinis, supposons que votre site web exige que chaque image du produit s’affiche dans des tailles différentes, des formats différents et des taux de compression différents pour diffusion sur les ordinateurs de bureau et les appareils mobiles.
 
-Vous pouvez créer deux paramètres d’image prédéfinis : 500 x 500 pixels pour l’ordinateur de bureau et 150 x 150 pixels pour les appareils mobiles. Vous créez deux paramètres d’image prédéfinis, l’un appelé `Enlarge` pour afficher des images à 500 x 500 pixels et l’autre appelé `Thumbnail` pour afficher des images à 150 x 150 pixels. Pour diffuser des images à la taille `Enlarge` et `Thumbnail`, l’Experience Manager trouve la définition des `Enlarge Image Preset` et `Thumbnail Image Preset`. Ensuite, Experience Manager génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
+Vous pouvez créer deux paramètres d’image prédéfinis : 500 x 500 pixels pour le bureau et 150 x 150 pixels pour le mobile. Vous créez deux paramètres d’image prédéfinis, l’un appelé `Enlarge` pour afficher des images à 500 x 500 pixels et l’autre appelé `Thumbnail` pour afficher des images à 150 x 150 pixels. Pour diffuser des images au format `Enlarge` et `Thumbnail`, Experience Manager trouve la définition des `Enlarge Image Preset` et des `Thumbnail Image Preset`. Ensuite, Experience Manager génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
 
 Les images dont la taille est réduite lorsqu’elles sont diffusées dynamiquement peuvent perdre en netteté et en détail. C’est pourquoi chaque paramètre d’image prédéfini contient des commandes de mise en forme pour optimiser une image lorsqu’elle est diffusée à une taille spécifique. Ces commandes garantissent que vos images sont nettes et claires lorsqu’elles sont diffusées sur votre site web ou dans votre application.
 
-Les administrateurs et administratrices peuvent créer des paramètres d’image prédéfinis. Pour créer un paramètre d’image prédéfini, vous pouvez partir de zéro ou partir d’un paramètre existant et l’enregistrer sous un nouveau nom.
+Les administrateurs et administratrices peuvent créer des paramètres d’image prédéfinis. Pour créer un paramètre d’image prédéfini, vous pouvez commencer à partir de zéro ou à partir d’un paramètre existant et l’enregistrer sous un nouveau nom.
 
 ## Gestion des paramètres d’image prédéfinis {#managing-image-presets-1}
 
-Pour gérer vos paramètres d’image prédéfinis dans Experience Manager, sélectionnez le logo de l’Experience Manager afin d’accéder à la console de navigation globale, puis sélectionnez l’icône Outils et accédez à **[!UICONTROL Assets]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
+La gestion des paramètres d’image prédéfinis dans Experience Manager s’effectue en sélectionnant le logo Experience Manager pour accéder à la console de navigation globale, puis en sélectionnant l’icône Outils et en accédant à **[!UICONTROL Assets]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -46,19 +83,19 @@ Pour gérer vos paramètres d’image prédéfinis dans Experience Manager, sél
 >
 >Tous les paramètres d’image prédéfinis que vous créez sont également disponibles en tant que rendus dynamiques lorsque vous prévisualisez ou diffusez des ressources.
 >
->Vous n’avez *pas besoin de publier les paramètres d’image prédéfinis, car les paramètres d’image prédéfinis sont automatiquement publiés.*
+>Vous n’avez *besoin* publier les paramètres d’image prédéfinis, car ils sont automatiquement publiés.
 >
 >Voir [Publication de paramètres d’image prédéfinis](#publishing-image-presets).
 
 >[!NOTE]
 >
->Le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter ou diminuer le nombre de paramètres d’image prédéfinis qui s’affichent. Voir [Augmentation du nombre de paramètres prédéfinis d’image affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>Le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter ou réduire le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres prédéfinis d’image affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Formats de fichiers Adobe Illustrator (AI), PostScript® (EPS) et PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-Si vous avez l’intention de prendre en charge l’ingestion de fichiers AI, EPS et PDF afin de pouvoir générer des rendus dynamiques de ces formats de fichiers, passez en revue les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, EPS et PDF afin de générer des rendus dynamiques de ces formats de fichiers, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
-Le format de fichier d’Adobe Illustrator est une variante du format PDF. Les principales différences, dans le contexte de Experience Manager Assets, sont les suivantes :
+Le format de fichier d’Adobe Illustrator est une variante du format PDF. Les principales différences, dans le cadre de Experience Manager Assets, sont les suivantes :
 
 * Les documents Adobe Illustrator se composent d’une seule page avec plusieurs calques. Chaque calque est extrait sous la forme d’une sous-ressource PNG sous la ressource Illustrator principale.
 * Les documents PDF se composent d’une ou de plusieurs pages. Chaque page est extraite sous la forme d’une sous-ressource PDF d’une seule page sous le document PDF multi-pages principal.
@@ -67,13 +104,13 @@ Le composant `Create Sub Asset process` crée les sous-ressources dans le workfl
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la ressource, sélectionnez le menu Contenu et sélectionnez **[!UICONTROL Sous-ressources]** ou **[!UICONTROL Pages]**. Les sous-ressources sont des ressources à part entière. Le composant de workflow `Create Sub Asset` extrait les pages du PDF. Elles sont ensuite stockées sous les noms `page1.pdf`, `page2.pdf`, etc. sous la ressource principale. Une fois qu’elles sont stockées, le workflow `DAM Update Asset` les traite.
+Vous pouvez afficher les sous-ressources ou les pages lorsque vous ouvrez la ressource, sélectionnez le menu Contenu et sélectionnez **[!UICONTROL Sous-ressources]** ou **[!UICONTROL Pages]**. Les sous-ressources sont des ressources à part entière. Le composant de workflow `Create Sub Asset` extrait les pages PDF. Elles sont ensuite stockées sous les noms `page1.pdf`, `page2.pdf`, etc. sous la ressource principale. Une fois qu’elles sont stockées, le workflow `DAM Update Asset` les traite.
 
 Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus dynamiques pour des fichiers AI, EPS ou PDF, les étapes de traitement suivantes doivent être exécutées :
 
-1. Dans le workflow `DAM Update Asset`, le composant de processus `Rasterize PDF/AI Image Preview Rendition` pixellise la première page de la ressource d’origine, à l’aide de la résolution configurée, dans un rendu `cqdam.preview.png`.
+1. Dans le workflow `DAM Update Asset`, le composant de processus `Rasterize PDF/AI Image Preview Rendition` pixellise la première page de la ressource d’origine (à l’aide de la résolution configurée) en un rendu `cqdam.preview.png`.
 
-1. Le composant de processus `Dynamic Media Process Image Assets` du workflow optimise le rendu `cqdam.preview.png` dans un fichier PTIFF.
+1. Le composant de processus `Dynamic Media Process Image Assets` du workflow optimise le rendu `cqdam.preview.png` en PTIFF.
 
 >[!NOTE]
 >
@@ -88,7 +125,7 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 
 Vous accédez aux options des composants de processus `Rasterize PDF/AI Image Preview Rendition` par le biais du workflow `DAM Update Asset`.
 
-Sélectionnez Adobe Experience Manager dans le coin supérieur gauche, puis cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Ressource de mise à jour DAM]** puis, dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Sur la page du workflow Ressources de mise à jour de gestion des actifs numériques , double-sélectionnez le composant de processus `Rasterize PDF/AI Image Preview Rendition` pour ouvrir la boîte de dialogue Propriétés des étapes .
+Sélectionnez Adobe Experience Manager dans le coin supérieur gauche, puis cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Ressource de mise à jour DAM]** puis, dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Sur la page du workflow Ressource de mise à jour de gestion des ressources numériques , double-sélectionnez le composant de processus `Rasterize PDF/AI Image Preview Rendition` pour ouvrir sa boîte de dialogue Propriétés de l’étape .
 
 #### Options Pixelliser le rendu d’aperçus d’image PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -111,7 +148,7 @@ Une valeur maximale est définie pour le composant de processus `Rasterize PDF/A
 
 ### Format de fichier InDesign (INDD) {#indesign-indd-file-format}
 
-Si vous avez l’intention de prendre en charge l’ingestion de fichiers INDD afin de pouvoir générer le rendu dynamique de ce format de fichier, passez en revue les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Si vous envisagez de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer un rendu dynamique de ce format de fichier, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
 Dans le cas des fichiers InDesign, les sous-ressources ne sont extraites que si Adobe InDesign Server est intégré à Experience Manager. Les ressources référencées sont liées en fonction de leurs métadonnées. InDesign Server n’est pas nécessaire pour la liaison. Cependant, les ressources référencées doivent être présentes dans Experience Manager avant que les fichiers InDesign soient traités, pour que les liens soient créés entre les fichiers InDesign et les ressources référencées.
 
@@ -121,7 +158,7 @@ Le composant Extraction de médias du workflow `DAM Update Asset` exécute plusi
 
 ![Chemins ExtendScript dans les arguments du processus Extraction de médias](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Chemins ExtendScript dans les arguments du composant de processus Extraction de médias dans le workflow Ressource de mise à jour de gestion des actifs numériques.
+Les chemins ExtendScript dans les arguments du composant de processus Extraction de médias du workflow Ressource de mise à jour de la gestion des ressources numériques .
 
 Les scripts suivants sont utilisés par l’intégration Dynamic Media :
 
@@ -129,7 +166,7 @@ Les scripts suivants sont utilisés par l’intégration Dynamic Media :
 | Nom ExtendScript | Valeur par défaut | Description |
 |---|---|---|
 | ThumbnailExport.jsx | Oui | Génère un rendu `thumbnail.jpg` de 300 PPP optimisé et transformé en rendu PTIFF par le composant de processus `Dynamic Media Process Image Assets`. |
-| JPEGPagesExport.jsx | Oui | Génère une sous-ressource JPEG de 300 PPP pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Le workflow `DAM Update Asset` l’optimise et le convertit en PTIFF. |
+| JPEGPagesExport.jsx | Oui | Génère une sous-ressource JPEG de 300 PPP pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Le workflow `DAM Update Asset` l’optimise et la convertit en PTIFF. |
 | PDFPagesExport.jsx | Non | Génère une sous-ressource PDF pour chaque page. La sous-ressource PDF est traitée comme indiqué précédemment. Étant donné que le PDF ne contient qu’une seule page, aucune sous-ressource n’est générée. |
 
 ### Configuration de la taille de la miniature de l’image {#configuring-image-thumbnail-size}
@@ -189,11 +226,11 @@ Créez des paramètres d’image prédéfinis afin de pouvoir appliquer les para
 >
 >Si vous utilisez Internet Explorer 9, un paramètre prédéfini nouvellement créé n’apparaît pas immédiatement dans la liste après l’enregistrement. Pour contourner ce problème, désactivez le cache d’Internet Explorer 9.
 
-Si vous avez l’intention de prendre en charge l’ingestion de fichiers AI, PDF et EPS afin de pouvoir générer le rendu dynamique de ces formats de fichiers, passez en revue les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, PDF et EPS afin de pouvoir générer des rendus dynamiques de ces formats de fichiers, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
 Voir [Formats de fichiers Adobe Illustrator (AI), PostScript® (EPS) et PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
-Si vous avez l’intention de prendre en charge l’ingestion de fichiers INDD afin de pouvoir générer le rendu dynamique de ce format de fichier, passez en revue les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Si vous envisagez de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer un rendu dynamique de ce format de fichier, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
 Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
@@ -206,7 +243,7 @@ Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Pour rendre ce paramètre d’image prédéfini réactif, effacez les valeurs des champs **[!UICONTROL width]** et **[!UICONTROL height]** et laissez-les vides.
+   >Pour rendre ce paramètre prédéfini d’image réactif, effacez les valeurs des champs **[!UICONTROL largeur]** et **[!UICONTROL hauteur]** et laissez-les vides.
 
 1. Dans la fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]**, saisissez les valeurs adéquates dans les onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, notamment un nom. Les options sont décrites dans [Options d’image prédéfinies](#image-preset-options). Les paramètres prédéfinis s’affichent dans le volet de gauche et peuvent être utilisés à la volée avec d’autres ressources.
 
@@ -216,13 +253,13 @@ Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
 ### Création d’un paramètre d’image prédéfini réactif {#creating-a-responsive-image-preset}
 
-Pour créer un paramètre d’image prédéfini réactif, suivez les étapes de la section [Création de paramètres d’image prédéfinis](#creating-image-presets). Lorsque vous saisissez la hauteur et la largeur dans la fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]**, effacez les valeurs et laissez-les vides.
+Pour créer un paramètre prédéfini réactif d’image, suivez la procédure décrite dans la section [Création de paramètres prédéfinis d’image](#creating-image-presets). Lorsque vous saisissez la hauteur et la largeur dans la fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]**, effacez les valeurs et laissez-les vides.
 
-Si vous ne les laissez pas vides, cela indique à l’Experience Manager que ce paramètre d’image prédéfini est réactif. Vous pouvez, le cas échéant, ajuster les autres valeurs.
+Si vous ne les renseignez pas, Experience Manager reçoit un message indiquant que ce paramètre d’image prédéfini est réactif. Vous pouvez, le cas échéant, ajuster les autres valeurs.
 
 >[!NOTE]
 >
->Pour afficher les boutons **[!UICONTROL URL]** et **[!UICONTROL RESS]** lors de l’application d’un paramètre d’image prédéfini à une ressource, la ressource doit être publiée.
+>Pour que les boutons **[!UICONTROL URL]** et **[!UICONTROL RESS]** s’affichent lors de l’application d’un paramètre prédéfini d’image à une ressource, celle-ci doit être publiée.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -243,8 +280,8 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 | Champ | Description |
 | --- | --- |
 | **Nom** | Entrez un nom descriptif sans espaces. Pour aider les utilisateurs à identifier ce paramètre d’image prédéfini, incluez la spécification de taille d’image dans le nom. |
-| **Largeur et hauteur** | Saisissez en pixels la taille à laquelle l’image est diffusée. La largeur et la hauteur doivent être supérieures à 0 pixel. Si l’une des valeurs est 0, aucun paramètre prédéfini n’est créé. Si les deux valeurs sont vides, un paramètre d’image prédéfini réactif est créé. |
-| **Format** | Sélectionnez un format dans le menu.<br>Choisir **JPEG** offre les autres options suivantes :<br>• **Qualité** - L’échelle de qualité JPEG s’étend de 1 à 100. L’échelle est visible lorsque vous faites glisser le curseur.<br> ・ **Activer le sous-échantillonnage de la chrominance JPG** - Comme l’oeil est moins sensible aux informations colorimétriques à haute fréquence qu’à la luminance à haute fréquence, les images de JPEG divisent les informations d’image en composantes de luminance et de couleur. Lorsqu’une image de JPEG est compressée, le composant de luminance est conservé à pleine résolution, tandis que les composants de couleur sont sous-échantillonnés en calculant la moyenne entre des groupes de pixels. Le sous-échantillonnage réduit le volume de données à un demi-tiers ou à un tiers avec un impact minimal sur la qualité perçue. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique permet de réduire le niveau de compression utile pour les images à fort contraste (par exemple, les images avec du texte superposé).<br><br>Choisir **GIF** ou **GIF avec couche alpha** offre les options supplémentaires de **Quantification de couleurs GIF** suivantes :<br>• **Type** : Sélectionnez **Adaptatif** (par défaut), **Web** ou **Macintosh**. Si vous sélectionnez **GIF avec couche alpha**, l’option Macintosh n’est pas disponible.<br>• **Juxtaposition** : sélectionnez **Diffus** ou **Désactivé**.<br>• **Nombre de couleurs** : saisissez un nombre compris entre 2 et 256.<br> ・ **Liste de couleurs** - Entrez une liste séparée par des virgules. Par exemple, pour blanc, gris et noir, saisissez `000000,888888,ffffff`.<br><br>Si vous sélectionnez **PDF**, **TIFF** ou **TIFF avec couche alpha**, cette option supplémentaire est proposée :<br>• **Compression** : Sélectionnez un algorithme de compression. Les options d’algorithme pour le format PDF sont **Aucun**, **Zip** et **Jpeg**. Les options pour le format TIFF sont **Aucun**, **LZW**, **Jpeg** et **Zip**. Les options pour le format TIFF avec couche alpha sont **Aucun**, **LZW** et **Zip**.<br><br>Aucune option supplémentaire n’est fournie si vous sélectionnez **PNG**, **PNG avec couche alpha** ou **EPS**. |
+| **Largeur et hauteur** | Saisissez la taille (en pixels) à laquelle l’image est diffusée. La largeur et la hauteur doivent être supérieures à 0 pixel. Si l’une des valeurs est 0, aucun préréglage n’est créé. Si les deux valeurs sont vides, un paramètre d’image prédéfini réactif est créé. |
+| **Format** | Sélectionnez un format dans le menu.<br>Choisir **JPEG** offre les autres options suivantes :<br>• **Qualité** - L’échelle de qualité JPEG s’étend de 1 à 100. L’échelle est visible lorsque vous faites glisser le curseur.<br>· **Activer le sous-échantillonnage de la chrominance JPG** - L’œil étant moins sensible aux informations de couleur haute fréquence que la luminance haute fréquence, les images JPEG divisent les informations d’image en luminance et en composants de couleur. Lorsqu’une image JPEG est compressée, la composante de luminance est laissée à la résolution maximale, tandis que les composantes de couleur sont sous-échantillonnées en calculant la moyenne de groupes de pixels. Le sous-échantillonnage réduit le volume de données à la moitié ou au tiers, avec un impact minimal sur la qualité perçue. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique réduit le taux de compression utile pour les images à fort contraste (par exemple, les images avec texte superposé).<br><br>Choisir **GIF** ou **GIF avec couche alpha** offre les options supplémentaires de **Quantification de couleurs GIF** suivantes :<br>• **Type** : Sélectionnez **Adaptatif** (par défaut), **Web** ou **Macintosh**. Si vous sélectionnez **GIF avec couche alpha**, l’option Macintosh n’est pas disponible.<br>• **Juxtaposition** : sélectionnez **Diffus** ou **Désactivé**.<br>• **Nombre de couleurs** : saisissez un nombre compris entre 2 et 256.<br>· **Liste de couleurs** - Saisissez une liste séparée par des virgules. Par exemple, pour blanc, gris et noir, saisissez `000000,888888,ffffff`.<br><br>Si vous sélectionnez **PDF**, **TIFF** ou **TIFF avec couche alpha**, cette option supplémentaire est proposée :<br>• **Compression** : Sélectionnez un algorithme de compression. Les options d’algorithme pour le format PDF sont **Aucun**, **Zip** et **Jpeg**. Les options pour le format TIFF sont **Aucun**, **LZW**, **Jpeg** et **Zip**. Les options pour le format TIFF avec couche alpha sont **Aucun**, **LZW** et **Zip**.<br><br>Aucune option supplémentaire n’est fournie si vous sélectionnez **PNG**, **PNG avec couche alpha** ou **EPS**. |
 | **Accentuation** | Sélectionnez l’option **Activer l’accentuation simple** pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. |
 
 #### Options de l’onglet Avancé {#advanced-tab-options}
@@ -268,7 +305,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
    <td>Vous pouvez remplacer l’intention de rendu par défaut. Les intentions de rendu déterminent ce qui arrive aux couleurs qui ne peuvent pas être reproduites dans le profil colorimétrique cible (hors gamme). L’intention de rendu est ignorée si elle n’est pas compatible avec le profil ICC.
     <ul>
      <li>Sélectionnez <strong>Perception</strong> pour compresser la gamme totale d’un espace colorimétrique dans un autre lorsqu’une ou plusieurs couleurs de l’image d’origine se situent en dehors de la gamme de l’espace colorimétrique de destination.</li>
-     <li>Sélectionnez <strong>Colorimétrie relative</strong> lorsqu’une couleur de l’espace colorimétrique actuel se situe hors de la gamme des couleurs dans l’espace cible. Et vous voulez le mapper à la gamme de couleurs la plus proche sans modifier d'autres couleurs. </li>
+     <li>Sélectionnez <strong>Colorimétrie relative</strong> lorsqu’une couleur de l’espace colorimétrique actuel se situe hors de la gamme des couleurs dans l’espace cible. Vous pouvez également la mapper à la gamme de couleurs cible la plus proche sans modifier les autres couleurs. </li>
      <li>Sélectionnez <strong>Saturation</strong> si vous voulez reproduire la saturation des couleurs de l’image d’origine lors de sa conversion dans l’espace colorimétrique cible. </li>
      <li>Sélectionnez <strong>Colorimétrie absolue</strong> pour faire correspondre exactement les couleurs sans aucun ajustement pour le point blanc ou noir qui altérerait la luminosité de l’image.</li>
     </ul> </td>
@@ -279,7 +316,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Tramage</strong></td>
-   <td>Sélectionnez cette option pour éviter ou réduire d’éventuels artefacts de bandes de couleurs. </td>
+   <td>Sélectionnez cette option pour éviter ou réduire les éventuels artefacts de bandes de couleurs. </td>
   </tr>
   <tr>
    <td><strong>Type d’accentuation</strong></td>
@@ -287,12 +324,12 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     <ul>
      <li>Sélectionnez <strong>Aucun</strong> si vous souhaitez désactiver l’accentuation.</li>
      <li>Sélectionnez l’option <strong>Accentuer</strong> pour appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </li>
-     <li>Sélectionnez <strong> Accentuation</strong> si vous souhaitez affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Photoshop « Accentuation ».</li>
+     <li>Sélectionnez <strong> Accentuation </strong> si vous souhaitez affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Photoshop « Accentuation ».</li>
     </ul> <p>L’option <strong>Accentuation</strong> propose les options suivantes :</p>
     <ul>
      <li><strong>Quantité</strong> : contrôle le degré de contraste appliqué aux pixels de contour. La valeur réelle par défaut est de 1,0. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5,0. Envisagez la quantité comme une mesure de l’intensité du filtre.</li>
      <li><strong>Rayon</strong> : détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images haute résolution, entrez un nombre réel compris entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour. Une valeur élevée accentue une bande plus large de pixels. La valeur correcte dépend de la taille de l’image.</li>
-     <li><strong>Seuil</strong> : détermine la plage de contraste à ignorer lorsque le filtre Accentuation est appliqué. En d’autres termes, cette option définit le degré d’accentuation des pixels qui doit différer de la zone environnante pour être considérée comme des pixels de contour et une accentuation. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 2 et 20. </li>
+     <li><strong>Seuil</strong> - Détermine la plage de contraste à ignorer lorsque le filtre d’accentuation est appliqué. En d’autres termes, cette option définit le degré d’accentuation des pixels qui doit différer de la zone environnante pour être considérés comme des pixels de contour et accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 2 et 20. </li>
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
@@ -332,9 +369,9 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
  </tbody>
 </table>
 
-### Définition des options de paramètre d’image prédéfini à l’aide des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
+### Définir des options de paramètre prédéfini d’image à l’aide de modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets De base et Avancé, vous pouvez définir des modificateurs d’image pour vous donner plus d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu des images repose sur l’API de rendu d’images de Dynamic Media et est défini en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 

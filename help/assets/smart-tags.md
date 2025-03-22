@@ -5,18 +5,52 @@ contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 97%
+source-wordcount: '2506'
+ht-degree: 96%
 
 ---
 
 
 # Ajouter des balises intelligentes aux ressources dans AEM {#smart-tags-assets-aem}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -71,7 +105,7 @@ Par défaut, AEM ajoute automatiquement les balises intelligentes aux ressources
 
 ## Comprendre les directives et les modèles relatifs aux balises {#understand-tag-models-guidelines}
 
-Un modèle de balise est un groupe de balises connexes qui sont associées à divers aspects visuels des images balisées. Les balises sont liées aux différents aspects visuels des images, de sorte qu’une fois appliquées, les balises permettent de rechercher des types d’images spécifiques. Par exemple, une collection de chaussures peut avoir des balises différentes. Cependant, toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle. Lorsqu’elles sont appliquées, les balises permettent de trouver différents types de chaussures, par exemple, par conception ou par utilisation. Pour comprendre la représentation du contenu d’un modèle d’entraînement dans [!DNL Experience Manager], imaginez un modèle d’entraînement comme une entité de niveau supérieur, composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise s’applique exclusivement à une image.
+Un modèle de balise est un groupe de balises connexes qui sont associées à divers aspects visuels des images balisées. Les balises sont liées aux différents aspects visuels des images, de sorte qu’une fois appliquées, les balises permettent de rechercher des types d’images spécifiques. Par exemple, une collection de chaussures peut avoir des balises différentes. Cependant, toutes les balises sont liées à des chaussures et peuvent appartenir au même modèle. Lorsqu’elles sont appliquées, les balises permettent de trouver différents types de chaussures, selon leur conception ou leur utilisation, par exemple. Pour comprendre la représentation du contenu d’un modèle d’entraînement dans [!DNL Experience Manager], imaginez un modèle d’entraînement comme une entité de niveau supérieur, composée d’un groupe de balises ajoutées manuellement et d’exemples d’images pour chaque balise. Chaque balise s’applique exclusivement à une image.
 
 Avant de créer un modèle de balise et d’entraîner le service, identifiez un ensemble de balises uniques décrivant le mieux les objets contenus dans les images replacés dans le contexte de votre activité. Vérifiez que les ressources figurant dans la série sélectionnée sont conformes aux [instructions d’entraînement](#training-guidelines).
 
@@ -81,7 +115,7 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 
 **Quantité et taille :** 10 images au minimum et 50 images au maximum par balise.
 
-**Cohérence** : assurez-vous que les images pour la même balise sont visuellement similaires. Il est préférable d’ajouter les balises portant sur les mêmes aspects visuels (par exemple, un même type d’objet dans une image) dans un modèle de balise unique. Par exemple, il n’est pas recommandé de baliser ces images en `my-party` (pour l’entraînement), car elles ne sont pas visuellement similaires.
+**Cohérence** : assurez-vous que les images pour la même balise sont visuellement similaires. Il est préférable d’ajouter les balises portant sur les mêmes aspects visuels (par exemple, un même type d’objet dans une image) dans un modèle de balise unique. Par exemple, il n’est pas recommandé de baliser ces images comme `my-party` (pour l’entraînement), car elles ne sont pas visuellement similaires.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](assets/do-not-localize/coherence.png)
 
@@ -126,7 +160,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Créez les balises nécessaires et la structure de balise appropriée. Chargez les images appropriées dans le référentiel de gestion des ressources numériques (DAM).
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
-1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]** . Une fenêtre contextuelle s’ouvre.
+1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]**. Une fenêtre pop-up s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags` que vous souhaitez ajouter au modèle. Cliquez sur **[!UICONTROL Suivant]**.
 
    >[!NOTE]
@@ -192,7 +226,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Balisage de ressources avec des balises intelligentes dans AEM {#tag-assets}
+## Balisage de ressources à l’aide de balises intelligentes dans AEM {#tag-assets}
 
 Tous les types de ressources pris en charge sont automatiquement balisés par [!DNL Experience Manager Assets] lors du chargement. Le balisage est activé et fonctionne, par défaut. AEM applique les balises intelligentes appropriées en temps quasi réel. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 

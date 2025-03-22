@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 100%
+source-wordcount: '3480'
+ht-degree: 97%
 
 ---
 
 # À propos des paramètres prédéfinis de lot {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Utilisez les **[!UICONTROL paramètres prédéfinis de lot]** pour créer et organiser différentes ressources dans une visionneuse d’images ou une visionneuse à 360° lorsque vous chargez des fichiers de ressources dans un dossier, individuellement ou par une ingestion en masse. Il est possible d’exécuter le paramètre prédéfini en même temps que les tâches d’importation de ressources planifiées dans [!DNL Dynamic Media]. Chaque paramètre prédéfini est un ensemble d’instructions indépendant possédant un nom unique. Il définit comment construire la visionneuse d’images ou la visionneuse à 360° à l’aide d’images correspondant aux conventions d’affectation des noms définies dans la recette du paramètre prédéfini.
 
@@ -44,7 +81,7 @@ Vous pouvez créer de nombreux paramètres prédéfinis de lot pour répondre au
 
 La zone **[!UICONTROL Convention d’affectation des noms de ressources]** de la page **[!UICONTROL Paramètre prédéfini de lot]** contient deux éléments utilisables pour définir votre paramètre prédéfini de lot : **[!UICONTROL Correspondance]** et **[!UICONTROL Nom de base]**. Ces éléments vous permettent de définir une convention d’affectation des noms et d’identifier la partie de la convention utilisée pour nommer la visionneuse dans laquelle ils se trouvent. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-La convention d’affectation des noms individuelle d’une entreprise utilise une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
+La convention de nommage individuelle d’une entreprise utilise souvent une ou plusieurs lignes de définition de chacun de ces deux éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
 
 Par exemple, la syntaxe d’une expression régulière avec correspondance littérale peut se présenter comme suit :
 
@@ -109,8 +146,8 @@ Voir [Création d’un paramètre prédéfini de lot pour une visionneuse d’im
 | --- | --- |
 | Nom du paramètre prédéfini | Lecture seule. Nom spécifié lors de la première création du lot. Si vous devez renommer le paramètre prédéfini, vous pouvez copier le paramètre prédéfini de lot existant et spécifier un nouveau nom. Voir [Copie d’un paramètre prédéfini de lot existant](#copy-bsp). |
 | Type | Lecture seule. Le type a été spécifié lors de la première création du lot. La copie d’un paramètre prédéfini de lot existant ne vous permet pas de modifier son [!UICONTROL type] ; vous devez créer un paramètre prédéfini. |
-| Inclure les ressources dérivées | Facultatif. Pour que l’IPS (Image Production System) de [!DNL Dynamic Media] intègre des images générées ou « dérivées » à votre visionneuse à 360° ou votre visionneuse d’images, sélectionnez **[!UICONTROL Oui]** (par défaut). Une ressource dérivée est une image qui n’a pas été directement chargée par un utilisateur. Au lieu de cela, la ressource a été produite par l’IPS lors du chargement d’une ressource principale. Par exemple, une ressource d’image générée par l’IPS à partir d’une page d’un fichier PDF, au moment où le fichier PDF a été chargé dans [!DNL Dynamic Media], est considérée comme une ressource dérivée. |
-| Dossier de destination | Facultatif. Si vous définissez un grand nombre de visionneuses d’images ou de visionneuses à 360°, Adobe recommande de conserver séparément des dossiers contenant les ressources elles-mêmes. Ainsi, vous pouvez envisager de créer un dossier Visionneuses d’images ou Visionneuses à 360° et de rediriger l’application pour y placer les visionneuses créées sous forme de lots.<br>Dans ce cas, spécifiez le dossier dans la structure de dossiers Experience Manager Assets (`/content/dam`) pour lequel le paramètre prédéfini de lot doit être actif. Assurez-vous que le dossier est activé pour la synchronisation de [!DNL Dynamic Media] afin de l’autoriser en tant que dossier de destination. Voir [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Plusieurs dossiers peuvent être dotés d’un paramètre prédéfini de lot donné si vous appliquez ce paramètre au moyen des **[!UICONTROL Propriétés]** du dossier. Voir [Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties).<br>Si vous ne spécifiez pas de dossier, la visionneuse d’images ou la visionneuse à 360° générée par un paramètre prédéfini d’ensemble par lot est créée dans le même dossier que le dossier de ressources dans lequel vous avez chargé le fichier. |
+| Inclure les ressources dérivées | Facultatif. Pour que l’IPS (Image Production System) de [!DNL Dynamic Media] intègre des images générées ou « dérivées » à votre visionneuse à 360° ou votre visionneuse d’images, sélectionnez **[!UICONTROL Oui]** (par défaut). Une ressource dérivée est une image qui n’a pas été directement chargée par un utilisateur. Au lieu de cela, la ressource a été produite par l’IPS lors du chargement d’une ressource principale. Par exemple, une ressource d’image générée par l’IPS à partir d’une page d’un fichier PDF, au moment où le fichier PDF a été chargé dans [!DNL Dynamic Media], est considérée comme une ressource dérivée. |
+| Dossier de destination | Facultatif. Si vous définissez un grand nombre de visionneuses d’images ou de visionneuses à 360°, Adobe recommande de conserver séparément des dossiers contenant les ressources elles-mêmes. Ainsi, vous pouvez envisager de créer un dossier Visionneuses d’images ou Visionneuses à 360° et de rediriger l’application pour y placer les visionneuses créées sous forme de lots.<br>Dans ce cas, spécifiez le dossier dans la structure de dossiers Experience Manager Assets (`/content/dam`) pour lequel le paramètre prédéfini de lot doit être actif. Assurez-vous que le dossier est activé pour la synchronisation de [!DNL Dynamic Media] afin de l’autoriser en tant que dossier de destination. Voir [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br> Plusieurs dossiers peuvent être dotés d’un paramètre prédéfini de lot donné si vous appliquez ce paramètre au moyen des **[!UICONTROL Propriétés]** du dossier. Voir [Application de paramètres prédéfinis de lot à partir de la page Propriétés d’un dossier de ressources](#apply-bsp-to-folders-via-properties).<br>Si vous ne spécifiez pas de dossier, la visionneuse d’images ou la visionneuse à 360° générée par un paramètre prédéfini d’ensemble par lot est créée dans le même dossier que le dossier de ressources dans lequel vous avez chargé le fichier. |
 | **[!UICONTROL Définir la convention d’affectation des noms]** |  |
 | Préfixe<br>ou<br>Suffixe | Facultatif. Entrez un préfixe, un suffixe ou les deux dans les champs respectifs.<br>Les champs de préfixe et de suffixe permettent de créer de nombreux paramètres prédéfinis de lot à l’aide d’une autre convention personnalisée d’affectation de noms de fichier pour un ensemble de contenu particulier. Cette méthode est particulièrement utile dans les cas où il existe une exception à un schéma d’affectation de nom par défaut défini par une société.<br>Le préfixe ou le suffixe est ajouté au **[!UICONTROL nom de base]** que vous définissez dans la zone **[!UICONTROL Convention d’affectation des noms de ressources]**. En ajoutant un préfixe ou un suffixe, vous vous assurez que la visionneuse d’images ou la visionneuse à 360° est créée de manière exclusive et indépendante des autres ressources. Cette opération peut également aider d’autres personnes à identifier les types de fichiers. Par exemple, pour déterminer un mode de couleur utilisé, vous pouvez ajouter comme préfixe ou suffixe `rgb` ou `cmyk`.<br>Bien que la spécification d’une convention d’affectation des noms d’ensemble ne soit pas nécessaire pour utiliser la fonctionnalité de paramètre prédéfini de lot, il est recommandé d’appliquer une telle convention. Cette pratique permet de définir autant d’éléments de convention d’affectation des noms que vous souhaitez regrouper pour simplifier la création d’ensembles par lot. |
 | **[!UICONTROL Résultats de la règle – RegX]** |  |

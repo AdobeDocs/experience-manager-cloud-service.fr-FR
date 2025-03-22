@@ -11,14 +11,51 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3615'
-ht-degree: 90%
+source-wordcount: '3661'
+ht-degree: 89%
 
 ---
 
 # Parcours Dynamic Media : principes de base, première partie {#dm-journey-part1}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 {{see-also-dm}}
 
@@ -90,11 +127,11 @@ Au fur et à mesure que vous lisez, vous allez en apprendre plus sur l’importa
 
 Lorsque vous êtes prêt à publier une ressource image ou vidéo, elle est prise en charge par la colonne vertébrale de Dynamic Media, composée d’un puissant réseau de diffusion de premier niveau. Le réseau sert des centaines de clients dans le monde entier tous les jours. Les ressources sont distribuées sur le réseau de diffusion de contenu (CDN), hébergé par Akamai. Le réseau de diffusion de contenu est un système de services informatiques en réseau qui coopèrent de manière transparente pour diffuser du contenu, en particulier du contenu multimédia volumineux, aux utilisateurs finaux.
 
-Dans le système du CDN, le contenu web est stocké dans des caches web sur Internet. Il est ensuite diffusé à partir du cache web vers les utilisateurs finaux afin de permettre une diffusion plus rapide. Ainsi, la première fois qu’une personne télécharge une page web, les ressources qu’elle voit sont placées dans un cache CDN. Ils sont stockés sur le serveur, de sorte que la prochaine fois qu’une personne se trouvant dans la même zone accédera à la page web, le même contenu mis en cache sera diffusé plus rapidement. Le contenu est diffusé plus rapidement car il se trouve plus près de l’utilisateur. Un réseau de diffusion de contenu accélère l’affichage des pages web, tout en réduisant la demande de bande passante sur le serveur central, car le contenu est diffusé à partir d’un réseau de cache, et non d’un serveur central dans chaque instance. Ce flux optimisé offre une meilleure expérience utilisateur, ce qui entraîne une augmentation des ventes.
+Dans le système du CDN, le contenu web est stocké dans des caches web sur Internet. Il est ensuite diffusé à partir du cache web vers les utilisateurs finaux afin de permettre une diffusion plus rapide. Ainsi, la première fois qu’une personne télécharge une page web, les ressources qu’elle voit sont placées dans un cache CDN. Ils sont stockés sur le serveur, de sorte que la prochaine fois qu’une personne se trouvant dans la même zone accédera à la page web, le même contenu mis en cache sera diffusé plus rapidement. Le contenu est diffusé plus rapidement car il est plus proche de l’utilisateur. Un réseau de diffusion de contenu accélère l’affichage des pages web, tout en réduisant la demande de bande passante sur le serveur central, car le contenu est diffusé à partir d’un réseau de cache, et non d’un serveur central dans chaque instance. Ce flux optimisé offre une meilleure expérience utilisateur, ce qui entraîne une augmentation des ventes.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historiquement, le réseau de diffusion de contenu fournit 3,5 pétaoctets de trafic aux clients chaque mois. Le système peut délivrer 52 milliards de ressources en une seule journée. Ce nombre équivaut à 864 000 images et vidéos diffusées avec succès aux clients, _toutes les secondes_.
+Historiquement, le réseau CDN diffuse 3,5 pétaoctets de trafic aux clients chaque mois. Le système peut délivrer 52 milliards de ressources en une seule journée. Ce nombre équivaut à 864 000 images et vidéos diffusées avec succès aux clients, _toutes les secondes_.
 
 ### Imagerie dynamique
 
@@ -119,7 +156,7 @@ L’imagerie dynamique n’est pas activée par défaut, car elle nécessite des
 
 ### Visionneuses de vidéos adaptatives
 
-Lorsqu’il y a une vidéo sur une page ou sur une page principale, vos clients ont tendance à interagir avec ce contenu plus longtemps et à rester sur la page plus longtemps, ce qui est généralement une bonne chose. Ce comportement est exposé dans les analyses que l’Adobe a effectuées. Cependant, traiter des vidéos peut être complexe. D’une part, vous avez souvent à gérer un fichier principal de taille importante. Il est complexe de déterminer la taille et la diffusion de la vidéo, le tout pour s’assurer que l’expérience s’exécute sans problème quel que soit l’appareil sur lequel elle est visionnée et quelle que soit la bande passante.
+Lorsqu’il y a une vidéo sur une page ou sur une page principale, vos clients ont tendance à interagir avec ce contenu plus longtemps et à rester sur la page plus longtemps, ce qui est généralement une bonne chose. Ce comportement est démontré par les analyses réalisées par Adobe. Cependant, traiter des vidéos peut être complexe. D’une part, vous avez souvent à gérer un fichier principal de taille importante. Il est difficile de déterminer la taille et la diffusion de la vidéo, le tout pour s’assurer que l’expérience fonctionne sans problème, quel que soit l’appareil sur lequel elle est diffusée et quelle que soit la bande passante.
 
 Pour résoudre ce problème, Dynamic Media vous permet de créer des _Visionneuses de vidéos adaptatives_.
 
@@ -135,11 +172,11 @@ L’utilisation des visionneuses de vidéos adaptatives offre une lecture fluide
 
 ## Cas d’utilisation de Dynamic Media {#dm-journey-b}
 
-Vous trouverez ci-dessous des solutions et des problèmes de cas d’utilisation courants que Dynamic Media peut vous aider à résoudre pour stimuler l’engagement positif des clients, la fidélité, la conversion et un retour sur investissement accru.
+Vous trouverez ci-dessous des problèmes courants et les solutions proposées par Dynamic Media pour vous aider à stimuler l’engagement positif des clients, la fidélité, la conversion et un meilleur retour sur investissement.
 
 ### Cas pratique : l’approche des fichiers principaux
 
-L’un des cas d’utilisation les plus importants pour Dynamic Media est également l’un des plus évidents. En d’autres termes, réduire le poids des pages et des expériences, ainsi que la taille du contenu, qu’il s’agisse d’une image ou d’une vidéo diffusée.
+L’un des cas d’utilisation les plus importants pour Dynamic Media est également l’un des plus évidents. En d’autres termes, vous pouvez réduire le poids des pages et des expériences, ainsi que la taille du contenu, qu’il s’agisse d’une image ou d’une vidéo en cours de diffusion.
 
 Vous trouverez ci-dessous un exemple type d’expérience ou de page web. Environ 90 % d’une page est constituée de médias riches, tels que des images et des vidéos, qui sont généralement des fichiers beaucoup plus lourds.
 
@@ -177,13 +214,13 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 | **Problème** | **Solution Dynamic Media** |
 |---|---|
 | Difficulté à gérer et diffuser des vidéos optimisées pour divers appareils. | Utilisez une seule vidéo qui prend automatiquement en charge la taille de tous les appareils. |
-| Les vidéos sont bloquées ou lues en basse qualité en raison de la bande passante disponible de l’utilisateur. | Diffusez de la vidéo par le biais d’un lecteur HTML qui détecte automatiquement la bande passante disponible et adapte la qualité pour garantir une lecture fluide et une haute fidélité. |
+| Les vidéos sont bloquées ou lues en basse qualité en raison de la faible bande passante disponible. | Diffusez de la vidéo par le biais d’un lecteur HTML qui détecte automatiquement la bande passante disponible et adapte la qualité pour garantir une lecture fluide et une haute fidélité. |
 | La création manuelle de toutes les versions d’une vidéo n’est pas réalisable et prend trop de temps pour garantir un affichage et une lecture corrects sur tous les appareils. | Économisez des heures de travail de transcodage fastidieux grâce à un workflow simplifié. |
 | | Libérez du temps pour un travail à plus forte valeur ajoutée. |
 
-Les clients se rendent dans Dynamic Media avec les problèmes suivants qu’ils espèrent résoudre :
+Les clients consultent Dynamic Media avec les problèmes suivants qu’ils espèrent résoudre :
 
-&quot;_Mon entreprise a la vidéo, et le département a dépensé une grosse somme d&#39;argent pour la créer, mais s&#39;est abstenu de la placer sur des pages ou de la diffuser. La raison était que depuis les tests, la qualité de la vidéo ne pouvait pas être garantie, ou même si elle allait vraiment jouer. Et finalement, cela affecte la marque de l&#39;entreprise et potentiellement son rôle dans la conversion._&quot;
+« _Mon entreprise a la vidéo et le ministère a dépensé une grosse somme d’argent pour la créer, mais a répugné à la placer sur des pages ou à la diffuser. La raison en était que, d’après les tests, la qualité de la vidéo ne pouvait pas être garantie, ni même si elle allait vraiment être lue. Cela finit par affecter la marque de l’entreprise et potentiellement son rôle dans la conversion._ »
 
 La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page de destination principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
 
@@ -201,7 +238,7 @@ Voici plusieurs autres cas d’utilisation à prendre en compte.
 
 | **Problème** | **Solution Dynamic Media** |
 |---|---|
-| La création manuelle d’images ou de vidéos, leur mesure et leur couper manuellement pour mettre en évidence le point focal et les afficher de manière appropriée sur toutes les tailles d’écran et tous les appareils, demandent beaucoup de temps et de main-d’oeuvre. | Utilisez le recadrage intelligent dans Dynamic Media, une fonctionnalité d’IA d’Adobe Sensei, pour détecter automatiquement le point focal d’une image ou d’une vidéo et le recadrer pour pouvoir le gérer. |
+| La création, la mesure et le découpage manuels d’images ou de vidéos pour mettre en évidence le point focal et les afficher de manière appropriée sur toutes les tailles d’écran et tous les appareils demandent beaucoup de temps et de main d’œuvre. | Utilisez le recadrage intelligent dans Dynamic Media, une fonctionnalité d’IA d’Adobe Sensei, pour détecter automatiquement le point focal d’une image ou d’une vidéo et le recadrer pour pouvoir le gérer. |
 | Temps perdu qui pourrait être mieux investi pour créer des expériences à fort impact. | Capture le point ciblé prévu, quelle que soit la taille de l’écran. |
 | Des ressources à usage unique créées pour chaque expérience et appareil. | Élimine les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran. |
 
@@ -266,7 +303,7 @@ Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7v
 
 ## Facultatif - En savoir plus
 
-La première partie de ce parcours couvrait les principes de base de diverses rubriques de Dynamic Media. Si vous souhaitez en savoir plus sur ce que vous lisez, utilisez les matériaux ci-dessous pour explorer les concepts plus en détail. Sinon, vous pouvez continuer avec la deuxième partie de votre parcours. Consultez [Étapes suivantes de ce Parcours Dynamic Media](#whats-next).
+La première partie de ce parcours couvrait les principes de base de diverses rubriques de Dynamic Media. Si vous souhaitez en savoir plus sur ce que vous lisez, consultez les documents ci-dessous pour explorer les concepts plus en détail. Sinon, vous pouvez continuer avec la deuxième partie de votre parcours. Consultez [Étapes suivantes de ce Parcours Dynamic Media](#whats-next).
 
 <!--
 _Dynamic Media Help topics_
@@ -293,7 +330,7 @@ _Visionneuses Dynamic Media_
 
 ## Étapes suivantes de ce Parcours Dynamic Media {#whats-next}
 
-Dans la partie II de ce parcours, vous examinez attentivement les URL de Dynamic Media pour mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les visionneuses d’images, à 360° et de supports variés, et leur mode de création.
+Dans la deuxième partie de ce parcours, vous examinerez de près les URL Dynamic Media afin de mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les visionneuses d’images, à 360° et de supports variés, et leur mode de création.
 
 C’est parti pour le [Parcours Dynamic Media : principes de base, deuxième partie](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

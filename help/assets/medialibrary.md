@@ -1,14 +1,14 @@
 ---
-title: Utilisation de Media Library pour la gestion de base des ressources numériques
-description: "[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."
+title: Utilisation de Media Library pour la gestion de base des ressources numériques
+description: '[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources.'
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Architect, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 93%
+source-wordcount: '631'
+ht-degree: 91%
 
 ---
 
@@ -23,8 +23,42 @@ Define what is not included
 
 # Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -97,7 +131,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle.
 
-Vous ne pouvez pas utiliser les balises intelligentes, le lien [!DNL Asset], le sélecteur [!DNL Asset], le balisage en masse, modifier les workflows de ressources ou l’interface utilisateur [!DNL Adobe Experience Manager] standard pour accéder à Media Library sans licence [!DNL Assets].
+Vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur de [!DNL Asset], de balisage en masse, de workflows de modification des ressources ou d’interface utilisateur [!DNL Adobe Experience Manager] standard pour accéder à Media Library sans licence [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
@@ -120,4 +154,4 @@ Vous ne pouvez pas utiliser les balises intelligentes, le lien [!DNL Asset], le 
 >[!MORELIKETHIS]
 >
 >* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] en tant que description  [!DNL Cloud Service]  produit](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

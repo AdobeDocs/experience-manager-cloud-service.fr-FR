@@ -5,17 +5,51 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 45%
+source-wordcount: '731'
+ht-degree: 43%
 
 ---
 
 # Retraitement des ressources numériques {#reprocessing-digital-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié. Si vous souhaitez que ce paramètre prédéfini modifié soit réappliqué aux ressources existantes du dossier, vous devez retraiter le dossier. Vous pouvez retraiter autant de ressources que nécessaire.
 
@@ -77,7 +111,7 @@ En savoir plus sur [Retraitement des balises de couleurs pour les images existan
 
 ### Recadrage intelligent {#reprocessing-smart-crop}
 
-En savoir plus sur le [recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) qui vous permet d’appliquer un recadrage spécifique (**[!UICONTROL recadrage intelligent]** et recadrage des pixels) et une configuration d’accentuation aux ressources chargées.
+En savoir plus sur la [recadrage intelligent Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) qui vous permet d’appliquer un recadrage spécifique (**[!UICONTROL recadrage intelligent]** et recadrage des pixels) et une configuration d’accentuation aux ressources chargées.
 
 ### Métadonnées {#reprocessing-metadata}
 
@@ -87,11 +121,11 @@ En savoir plus sur le [retraitement des profils de métadonnées](https://experi
 
 ### Retraitement de ressources Dynamic Media dans un dossier {#reprocessing-dynamic-media}
 
-Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, consultez [retraitement des ressources Dynamic Media dans un dossier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
+Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media existant ou un profil vidéo Dynamic Media que vous avez modifié. Pour plus d’informations, consultez [retraitement de ressources Dynamic Media dans un dossier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
->Vous devez configurer [!DNL Dynamic Media] sur l’environnement pour activer la boîte de dialogue Dynamic Media.
+>Vous devez configurer [!DNL Dynamic Media] dans l’environnement pour activer la boîte de dialogue Dynamic Media.
 >
 
 ### Workflows

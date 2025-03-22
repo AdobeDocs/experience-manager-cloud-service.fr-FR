@@ -4,17 +4,51 @@ description: Mappez les champs de métadonnées des ressources entre les applica
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 92%
+source-wordcount: '1058'
+ht-degree: 91%
 
 ---
 
 # Configurer le mappage des métadonnées de ressource entre Adobe Workfront et Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Vous pouvez mapper les champs de métadonnées des ressources entre les applications Adobe Workfront et Experience Manager as a Cloud Service. Suite au mappage des champs de métadonnées, lorsque vous envoyez une ressource de Workfront à Experience Manager Assets, vous pouvez afficher les métadonnées de ressource mappées dans Experience Manager Assets.
 
@@ -46,7 +80,7 @@ Pour définir le mappage des métadonnées pour les champs Nom du projet, Nom du
 
 1. Sélectionnez l’intégration Experience Manager Assets et cliquez sur **[!UICONTROL Modifier]**.
 
-1. Cliquez sur **[!UICONTROL Métadonnées]**. Sous l’onglet **[!UICONTROL Ressources]**, mappez le champ Workfront [!UICONTROL Projet] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:projectName`. Si vous ne trouvez pas la correspondance exacte, Adobe vous recommande de rechercher la meilleure correspondance pour mapper le champ Workfront et Experience Manager Assets. Vous pouvez éviter de mapper des champs ayant différents types de données. Par exemple, le mappage d’un champ de date Workfront à un champ Ressources de description.
+1. Cliquez sur **[!UICONTROL Métadonnées]**. Sous l’onglet **[!UICONTROL Ressources]**, mappez le champ Workfront [!UICONTROL Projet] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:projectName`. Si vous ne trouvez pas la correspondance exacte, Adobe vous recommande de rechercher la meilleure correspondance pour mapper les champs Workfront et Experience Manager Assets. Vous pouvez éviter de mapper des champs ayant différents types de données. Par exemple, le mappage d’un champ de date Workfront à un champ Ressources de description.
 1. Mappez le champ Workfront [!UICONTROL Document] > [!UICONTROL Nom] au champ Experience Manager Assets `wm:documentName`.
 
    ![Mappage dans Workfront](assets/workfront-metadata-mapping.png)
@@ -128,7 +162,7 @@ Pour appliquer des paramètres de métadonnées au dossier d’images :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 
-1. Sélectionnez le schéma de métadonnées dans la liste disponible et cliquez sur **[!UICONTROL Appliquer aux dossiers]**.
+1. Sélectionnez le schéma de métadonnées dans la liste disponible, puis cliquez sur **[!UICONTROL Appliquer aux dossiers]**.
 
 1. Sélectionnez le dossier de destination vers lequel [l’image est envoyée à partir de l’application Adobe Workfront](#send-image-workfront-assets) et cliquez sur **[!UICONTROL Appliquer]**.
 

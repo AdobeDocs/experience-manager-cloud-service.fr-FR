@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 72%
+source-wordcount: '866'
+ht-degree: 71%
 
 ---
 
 # Vérifier les ressources dans des dossiers et des collections {#review-folder-assets-and-collections}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -31,7 +65,7 @@ Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvan
 ## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
-1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si vous ne pouvez pas voir l’icône dans la barre d’outils, sélectionnez **[!UICONTROL Plus]**, puis sélectionnez l’icône.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône ne s’affiche pas dans la barre d’outils, sélectionnez **[!UICONTROL Plus]** puis l’icône .
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -55,17 +89,17 @@ Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvan
 
    ![review_name](assets/review_name.png)
 
-1. Sélectionnez **[!UICONTROL Submit]**, puis **[!UICONTROL Done]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
-1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à l’IU Assets. Pour approuver des ressources, sélectionnez l’icône **[!UICONTROL Notifications]** , puis sélectionnez la tâche de révision dans la liste.
+1. Sélectionnez **[!UICONTROL Envoyer]**, puis sélectionnez **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
+1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à l’IU Assets. Pour approuver des ressources, sélectionnez l’icône **[!UICONTROL Notifications]** puis la tâche de révision dans la liste.
 
    ![notification](assets/notification.png)
 
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis sélectionnez **[!UICONTROL Réviser]**.
-1. Sur la page **[!UICONTROL Tâche d’examen]**, sélectionnez des ressources, puis sélectionnez l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter, selon le cas.
+1. Sur la page **[!UICONTROL Tâche de révision]**, sélectionnez les ressources, puis cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour les approuver ou les rejeter, selon les besoins.
 
    ![review_task](assets/review_task.png)
 
-1. Sélectionnez l’icône **[!UICONTROL Complète]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire et sélectionnez **[!UICONTROL Terminer]** pour confirmer.
+1. Sélectionnez l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis sélectionnez **[!UICONTROL Terminé]** pour confirmer.
 1. Accédez à l’interface utilisateur d’Assets et ouvrez le dossier. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**
@@ -79,7 +113,7 @@ Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvan
 ## Création d’une tâche de révision pour les collections {#creating-a-review-task-for-collections}
 
 1. Sur la page Collections, sélectionnez la collection pour laquelle vous souhaitez créer une tâche de révision.
-1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si vous ne pouvez pas voir l’icône dans la barre d’outils, sélectionnez **[!UICONTROL Plus]**, puis sélectionnez l’icône.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Créer une tâche de révision]** pour ouvrir la page **[!UICONTROL Tâche de révision]**. Si l’icône ne s’affiche pas dans la barre d’outils, sélectionnez **[!UICONTROL Plus]** puis l’icône .
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -99,14 +133,14 @@ Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvan
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Sélectionnez **[!UICONTROL Submit]**, puis **[!UICONTROL Done]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
-1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, sélectionnez l’icône **[!UICONTROL Notifications]** , puis sélectionnez la tâche de révision dans la liste.
+1. Sélectionnez **[!UICONTROL Envoyer]**, puis sélectionnez **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
+1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, sélectionnez l’icône **[!UICONTROL Notifications]** puis la tâche de révision dans la liste.
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis sélectionnez **[!UICONTROL Réviser]**.
-1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources et cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources, selon le cas.
+1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources et cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources, selon les besoins.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Sélectionnez l’icône **[!UICONTROL Complète]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire et sélectionnez **[!UICONTROL Terminer]** pour confirmer.
+1. Sélectionnez l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis sélectionnez **[!UICONTROL Terminé]** pour confirmer.
 1. Accédez à la console Collections et ouvrez la collection. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**

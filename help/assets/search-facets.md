@@ -4,17 +4,51 @@ description: Cet article décrit comment créer, modifier et utiliser les facett
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 90%
+source-wordcount: '2551'
+ht-degree: 89%
 
 ---
 
 # Facettes de recherche {#search-facets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -36,7 +70,7 @@ Les facettes de recherche qui apparaissent dans le panneau Filtres sont définie
 Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formulaire. Utilisez le prédicat Propriété pour rechercher des ressources qui correspondent à une seule propriété que vous spécifiez. Ajoutez le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher des ressources créées au cours d’une période donnée.
 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
-1. Sur la page Search Forms, sélectionnez **[!UICONTROL Assets Admin Search Rail]**, puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
+1. Sur la page Search Forms, sélectionnez **[!UICONTROL Rail de recherche d’administration Assets]** puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Localisez et sélectionnez le rail de recherche d’administrateurs de ressources](assets/assets_admin_searchrail.png)
 
@@ -104,14 +138,14 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 >
 >Le prédicat Options est un wrapper personnalisé qui comprend des prédicats de propriété pour démontrer le comportement décrit. Pour l’heure, aucun point d’entrée REST n’est disponible pour la prise en charge native de cette fonctionnalité.
 
-1. Sélectionnez le logo de l’Experience Manager, puis accédez à **[!UICONTROL Outils > Général > Search Forms]**.
-1. Sur la page **[!UICONTROL Rechercher dans Forms]**, sélectionnez **[!UICONTROL Assets Admin Search Rail]**, puis sélectionnez l’icône Modifier.
+1. Sélectionnez le logo Experience Manager, puis accédez à **[!UICONTROL Outils > Général > Rechercher dans Forms]**.
+1. Sur la page **[!UICONTROL Rechercher dans Forms]**, sélectionnez **[!UICONTROL Rail de recherche d’administration d’Assets]** puis sélectionnez l’icône Modifier.
 1. Sur la page **[!UICONTROL Modifier le formulaire de recherche]**, faites glisser **[!UICONTROL Options du prédicat]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, indiquez un nom convivial pour le libellé ; **[!UICONTROL Type de fichier]**, par exemple. Spécifiez la propriété en fonction de laquelle la recherche doit être effectuée dans le champ de propriété, par exemple, `jcr:content/metadata/dc:format.`.
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Sélectionnez ![Icône d’ajout Assets](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte d’affichage et la valeur des options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, sélectionnez ![Icône d’ajout Assets](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
+   * Sélectionnez ![Assets icône d’ajout](assets/do-not-localize/aem_assets_add_icon.png) en regard du champ Options pour spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, sélectionnez ![Assets ajouter une icône](assets/do-not-localize/aem_assets_add_icon.png) et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -127,20 +161,20 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 Le prédicat `Multi Value Property` vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous disposiez des images de plusieurs produits dans [!DNL Assets] et que les métadonnées de chaque image comprennent un numéro de SKU qui est associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
-1. Sur la page Search Forms, sélectionnez **[!UICONTROL Assets Admin Search Rail]**, puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
+1. Sur la page Search Forms, sélectionnez **[!UICONTROL Rail de recherche d’administration Assets]**, puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de propriété à plusieurs valeurs]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
 1. Assurez-vous que l’option **[!UICONTROL Prise en charge des délimiteurs]** est sélectionnée. Dans le champ **[!UICONTROL Délimiteurs d’entrée]**, spécifiez des délimiteurs pour séparer les valeurs individuelles. Par défaut, la virgule est spécifiée comme séparateur. Vous pouvez spécifier un autre délimiteur.
-1. Dans le champ **Description** , saisissez une description facultative, puis sélectionnez **[!UICONTROL Terminé]**.
+1. Dans le champ **Description**, saisissez une description facultative, puis sélectionnez **[!UICONTROL Terminé]**.
 1. Accédez au panneau Filtres dans l’interface utilisateur d’Assets. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
 1. Spécifiez plusieurs valeurs dans le champ à plusieurs valeurs séparées par des délimiteurs et effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous spécifiez.
 
 ## Ajout d’un prédicat de balises {#adding-a-tags-predicate}
 
-Le prédicat `Tags` vous permet d’effectuer des recherches de ressources basées sur des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OU à l’aide des balises spécifiées. Cependant, vous pouvez utiliser l’option Correspondre à toutes les balises pour rechercher des ressources qui incluent toutes les balises que vous spécifiez.
+Le prédicat `Tags` vous permet de rechercher des ressources sur la base des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OU à l’aide des balises spécifiées. Cependant, vous pouvez utiliser l’option Correspondre à toutes les balises pour rechercher des ressources qui incluent toutes les balises que vous spécifiez.
 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
-1. Sur la page Search Forms, sélectionnez **[!UICONTROL Assets Admin Search Rail]** , puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
+1. Sur la page Search Forms, sélectionnez **[!UICONTROL Rail de recherche d’administration Assets]** puis sélectionnez **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
 1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/cq:tags`, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
 1. Configurez la propriété Chemin d’accès racine aux balises de ce prédicat pour renseigner différentes balises dans la liste Balises.
@@ -148,7 +182,7 @@ Le prédicat `Tags` vous permet d’effectuer des recherches de ressources basé
 
    ![Paramètres standard du prédicat de balises](assets/tags_predicate.png)
 
-1. Dans le champ **[!UICONTROL Description]** , saisissez une description facultative, puis sélectionnez **[!UICONTROL Terminé]**.
+1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis sélectionnez **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Spécifiez des balises en fonction desquelles vous souhaitez rechercher des ressources ou faites votre choix dans la liste de suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à toutes]** pour rechercher les correspondances qui incluent toutes les balises que vous spécifiez.
@@ -309,9 +343,9 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 
 ## Suppression des facettes de recherche par défaut {#removing-default-search-facets}
 
-Adobe vous recommande d’être prudent lors de la suppression des facettes de recherche par défaut afin d’éviter des problèmes de performances. La suppression des facettes de recherche par défaut peut également avoir une incidence sur le comportement de la fonction par défaut.
+Adobe vous recommande de faire attention lors de la suppression des facettes de recherche par défaut afin d’éviter tout problème de performances. La suppression des facettes de recherche par défaut peut également avoir un impact sur le comportement de la fonction par défaut.
 
-Ne supprimez pas les champs masqués suivants, car cela entraîne un problème de performances des requêtes avec OmniSearch et les collections dynamiques :
+Ne supprimez pas les champs masqués suivants, car cela entraînerait un problème de performances des requêtes avec OmniSearch et les collections dynamiques :
 
 * group.2_group.type=dam:Asset
 

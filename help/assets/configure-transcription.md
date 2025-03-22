@@ -9,22 +9,56 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1714'
 ht-degree: 88%
 
 ---
 
 # Configuration de la transcription dans [!DNL Experience Manager Assets] {#configure-transcription-service}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 La transcription est le processus de traduction de l’audio d’un fichier audio ou vidéo en texte (voix vers texte) à l’aide de la technologie de reconnaissance vocale.
 [!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. Le service de transcription d’[!DNL Experience Manager Assets] permet aux marketeurs et marketeuses de gérer efficacement leur contenu audio et vidéo en permettant de trouver plus facilement le contenu texte et en augmentant le retour sur investissement de ces ressources par la prise en charge de l’accessibilité et de la localisation.
 
-Les transcriptions sont des versions textuelles de contenu parlé ; un exemple est un film que vous visionnez sur n’importe quelle plateforme OTT, qui comprend souvent des sous-titres pour faciliter l’accessibilité ou pour consommer du contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et qui génère les transcriptions textuelles (fichiers .vtt) ainsi que les informations de date et heure. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
+Les transcriptions sont des versions textuelles du contenu parlé ; par exemple, un film que vous visionnez sur n’importe quelle plateforme OTT comprend souvent des sous-titres pour faciliter son accessibilité ou pour utiliser le contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et qui génère les transcriptions textuelles (fichiers .vtt) ainsi que les informations de date et heure. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
 
 La fonction de transcription est disponible sans coût supplémentaire dans [!DNL Experience Manager Assets]. Toutefois, les administrateurs et administratrices ont besoin des informations d’identification Azure de l’utilisateur ou de l’utilisatrice pour configurer le service de transcription dans [!DNL Experience Manager Assets]. Vous pouvez également [obtenir les informations d’identification d’évaluation](https://azure.microsoft.com/en-us/pricing/details/media-services/) directement depuis Microsoft® pour découvrir la fonctionnalité de transcription audio ou vidéo dans Assets.
 
@@ -58,15 +92,15 @@ Voici les configurations requises pour activer la fonction de transcription dans
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration d’Azure Media Services]**. Sélectionnez un dossier (emplacement) dans le rail de gauche et cliquez sur le bouton [!UICONTROL Créer] pour configurer la connexion à votre compte [!DNL Azure]. Ce dossier correspond à l’emplacement où votre configuration cloud [!DNL Azure] est stockée dans Experience Manager Assets. Saisissez les informations d’identification [!DNL Azure] et cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration d’Azure Media Services]**. Sélectionnez un dossier (emplacement) dans le rail de gauche, puis cliquez sur le bouton [!UICONTROL Créer] pour configurer la connexion à votre compte [!DNL Azure]. Ce dossier correspond à l’emplacement où votre configuration cloud [!DNL Azure] est stockée dans Experience Manager Assets. Saisissez les informations d’identification [!DNL Azure] et cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
 ### Configuration du profil de traitement pour la transcription {#configure-processing-profile}
 
 Une fois que les [!DNL Azure Media Services] sont configurés dans Experience Manager Assets, l’étape suivante consiste à créer un profil de traitement des ressources pour générer une transcription basée sur l’IA des ressources audio et vidéo. Le profil de traitement basé sur l’IA génère des transcriptions de la [ressource audio ou vidéo prise en charge](#supported-file-formats-for-transcription) comme rendu dans Experience Manager Assets et stocke la transcription (fichier .vtt) dans le même dossier que celui où réside la ressource d’origine. Il est donc plus facile pour les utilisateurs de rechercher et de localiser la ressource et son rendu de transcription.
 
-Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** et cliquez sur le bouton **[!UICONTROL Créer]** pour créer un profil de traitement basé sur l’IA pour générer la transcription de vos fichiers audio et vidéo. Par défaut, la page du profil de traitement ne reflète que trois onglets (Image, Vidéo et Personnalisé). Cependant, un onglet **[!UICONTROL IA dédiée au contenu]** est visible si vous avez configuré les [!DNL Azure Media Services] dans votre instance [!DNL Experience Manager Assets]. Vérifiez vos informations d’identification [!DNL Azure] si vous ne voyez pas l’onglet **[!UICONTROL IA dédiée au contenu]** lors de la création d’un profil de traitement.
+Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** et cliquez sur le bouton **[!UICONTROL Créer]** pour créer un profil de traitement basé sur l’IA afin de générer la transcription de vos fichiers audio et vidéo. Par défaut, la page du profil de traitement ne reflète que trois onglets (Image, Vidéo et Personnalisé). Cependant, un onglet **[!UICONTROL IA dédiée au contenu]** est visible si vous avez configuré les [!DNL Azure Media Services] dans votre instance [!DNL Experience Manager Assets]. Vérifiez vos informations d’identification [!DNL Azure] si vous ne voyez pas l’onglet **[!UICONTROL IA dédiée au contenu]** lors de la création d’un profil de traitement.
 
-Dans l&#39;onglet **[!UICONTROL Content AI]**, cliquez sur le bouton **[!UICONTROL Ajouter nouveau]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour générer les transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
+Dans l’onglet **[!UICONTROL IA dédiée au contenu]**, cliquez sur le bouton **[!UICONTROL Ajouter]** pour configurer la transcription. Ici, vous pouvez inclure et exclure les formats de fichiers (types MIME) pour la génération des transcriptions en sélectionnant les types de fichiers dans la liste déroulante. Dans l’illustration suivante, tous les fichiers audio et vidéo pris en charge sont inclus et les fichiers texte sont exclus.
 
 Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** pour créer et stocker le rendu de transcription (fichier .vtt) dans le même dossier que la ressource d’origine. Les autres rendus sont également générés par le workflow de traitement des ressources de la gestion des actifs numériques par défaut, quel que soit ce paramètre.
 
@@ -80,7 +114,7 @@ Le profil vidéo contient également les configurations personnalisées suivante
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Nous allons maintenant configurer la transcription dans ce profil vidéo. Accédez à l’onglet **[!UICONTROL Content AI]** et cliquez sur le bouton **[!UICONTROL Ajouter nouveau]** . Incluez tous les fichiers audio et vidéo et excluez les fichiers image et application. Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** et enregistrez la configuration.
+Nous allons maintenant configurer la transcription dans ce profil vidéo. Accédez à l’onglet **[!UICONTROL IA dédiée au contenu]** et cliquez sur le bouton **[!UICONTROL Ajouter]**. Incluez tous les fichiers audio et vidéo et excluez les fichiers image et application. Activez le bouton (bascule) **[!UICONTROL Créer une transcription VTT dans le même répertoire]** et enregistrez la configuration.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

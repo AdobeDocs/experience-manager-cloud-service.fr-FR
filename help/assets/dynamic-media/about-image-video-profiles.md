@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 89%
+source-wordcount: '1437'
+ht-degree: 87%
 
 ---
 
 # À propos des profils d’image et vidéo Dynamic Media{#about-dm-image-video-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Un profil d’image ou vidéo permet de déterminer les options à appliquer aux ressources que vous chargez dans un dossier. Par exemple, vous pouvez spécifier le codage vidéo à appliquer aux ressources vidéo Dynamic Media que vous chargez, ou le profil d’image à appliquer aux ressources d’image Dynamic Media afin de les recadrer correctement.
 
@@ -40,11 +77,11 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil d’image Dynamic Media ou un profil vidéo Dynamic Media que vous avez ensuite modifié.
 
-Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l’ayez affecté à un dossier. Le profil d’image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil d’image. Désormais, au lieu d’avoir à sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Retraitement Dynamic Media* .
+Supposons que vous ayez créé un profil d’image Dynamic Media et que vous l’ayez affecté à un dossier. Le profil d’image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil d’image. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Retraitement Dynamic Media*.
 
 Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Même si vous n’avez pas modifié de profil d’image ou vidéo, ou si vous avez déjà appliqué un profil d’image ou vidéo, vous pouvez toujours exécuter, à tout moment, le workflow de retraitement sur un dossier de ressources.
 
-Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Retraitement Dynamic Media_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media pour traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans [!DNL Adobe Experience Manager]. Si la taille du lot est importante, il est possible que le traitement soit retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
+Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Retraitement Dynamic Media_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans [!DNL Adobe Experience Manager]. Si la taille du lot est importante, il est possible que le traitement soit retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
 
 Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load).
 
@@ -62,7 +99,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 **Pour retraiter des ressources Dynamic Media dans un dossier :**
 
-1. Dans [!DNL Experience Manager], à partir de la page Assets, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le workflow **Retraitement de Dynamic Media**.
+1. Dans [!DNL Experience Manager], à partir de la page Assets, accédez à un dossier de ressources auquel un profil d’image ou vidéo est affecté et pour lequel vous souhaitez appliquer le workflow **Retraitement Dynamic Media**.
 
    Le nom du profil s’affiche directement sous le nom du dossier dans le Mode Carte lorsque le Profil d’image ou le Profil vidéo lui est affecté.
 
@@ -81,7 +118,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Dans la liste déroulante **[!UICONTROL Démarrer le workflow]**, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
-   ![Capture d’écran de l’interface utilisateur de la chronologie avec &quot;Retraitement Dynamic Media&quot; sélectionné dans la liste déroulante Démarrer le processus et bouton Démarrer mis en surbrillance](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![ Copie d’écran de l’interface utilisateur du journal avec « Retraitement Dynamic Media » sélectionné dans la liste déroulante Démarrer le workflow et le bouton Démarrer (encadrés)](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Sélectionnez **[!UICONTROL Démarrer]**, puis **[!UICONTROL Confirmer]**.
 
@@ -96,13 +133,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Dans [!DNL Experience Manager], sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
 1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 
-   ![Capture d&#39;écran de la page Modèles de processus avec le workflow &quot;Retraitement Dynamic Media&quot; sélectionné dans le mode Carte de l&#39;Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![ Copie d’écran de la page Modèles de workflow avec le workflow « Retraitement Dynamic Media » sélectionné en mode Carte d’Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de workflow Retraitement Dynamic Media.
 1. En haut à droite de la page de workflow Retraitement Dynamic Media, sélectionnez **[!UICONTROL Modifier]** pour « déverrouiller » le workflow.
 1. Dans le workflow, sélectionnez le composant Chargement par lots Scene7 pour ouvrir la barre d’outils, puis sélectionnez l’icône **[!UICONTROL Configurer]** de cette barre d’outils.
 
-   ![Capture d’écran du composant &quot;Transfert par lots Scene7&quot; sur la page &quot;Retraitement Dynamic Media&quot; avec le pointeur de la souris survolant l’icône &quot;Configurer&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+   ![ Copie d’écran du composant « Chargement par lots de Scene7 » sur la page « Retraitement Dynamic Media » avec le pointeur de la souris survolant l’icône « Configurer »](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. Dans la boîte de dialogue **[!UICONTROL Chargement par lots vers Scene7 – Propriétés des étapes]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.

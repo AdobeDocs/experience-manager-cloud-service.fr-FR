@@ -11,21 +11,58 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 96%
+source-wordcount: '2667'
+ht-degree: 95%
 
 ---
 
 # Parcours Dynamic Media : principes de base, deuxième partie  {#dm-journey-part2}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 {{see-also-dm}}
 
 Bienvenue dans le Parcours Dynamic Media : principes de base, deuxième partie, au cours duquel vous devriez vous familiariser avec les éléments suivants :
 
-* Anatomie d’une URL Dynamic Media et manière dont Dynamic Media diffuse du contenu.
-* Principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources.
+* Anatomie d’une URL Dynamic Media et méthode de Dynamic Media pour diffuser du contenu.
+* Principes fondamentaux de la création de paramètres d’image prédéfinis pour le rendu des ressources.
 * Visionneuses d’images, à 360° et de supports variés.
 
 Consultez également le [Parcours Dynamic Media ; principes de base, première partie](/help/assets/dynamic-media/dm-journey-part1.md).
@@ -85,7 +122,7 @@ Maintenant imaginez que le directeur artistique regarde les images et dise :
 
 _« Je voulais vraiment que sur cette photo la grande aiguille pointe vers le quatre et la petite main vers le 1, pour que l’on voie mieux le cadran »._
 
-Le créatif devra redémarrer toutes les nouvelles images statiques.
+Le spécialiste de la création devra de nouveau filmer toutes les nouvelles images statiques.
 
 Toutefois, avec Dynamic Media, si vous disposez de paramètres d’image prédéfinis différents, vous pouvez utiliser ces images où vous en avez besoin. Ce sont les paramètres d’image prédéfinis qui appliquent les normes.
 
@@ -123,9 +160,9 @@ _Création d’un paramètre d’image prédéfini en sélectionnant des options
 
 Vous vous rappelez que, dans le chapitre précédent [Anatomie d’une URL Dynamic Media](#dm-journey-d), vous avez lu des informations sur l’URL Dynamic Media et sur la manière dont elle est créée. Dans la boîte de dialogue **[!UICONTROL Modificateur d’image]**, vous pouvez saisir les paramètres de traitement d’image supplémentaires de votre choix dans la zone de texte. Les paramètres sont inclus dans le nom du paramètre prédéfini de l’URL lors de la diffusion de vos images, à l’aide du paramètre prédéfini. Dans la capture d’écran ci-dessus, le paramètre `bgc=451B15` a été ajouté. En réalité, une couleur de fond marron foncé a été ajoutée.
 
-Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il va fournir n&#39;importe quelle image qui utilise le paramètre prédéfini de manière cohérente à chaque fois ; il va être le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
+Vous pouvez considérer un paramètre d’image prédéfini comme une recette pour vos images. Il diffusera toutes les images qui utilisent le paramètre prédéfini de manière cohérente à chaque fois ; il sera le même. Le paramètre `&op_brightness=+10` a également été ajouté pour augmenter légèrement la luminosité.
 
-Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d&#39;image prédéfini _Medium_ à une image d&#39;un bol de chocolat liquide.
+Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est désormais disponible pour toutes les images dont vous disposez. Dans ce cas, vous souhaitez appliquer le paramètre d’image prédéfini _Medium_ à l’image d’une casserole de chocolat fondu.
 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_
@@ -156,7 +193,7 @@ Parmi les utilisations les plus courantes de Dynamic Media figure la possibilit
 
 Les visionneuses d’images sont généralement composées d’une série de ressources d’image présentées comme une seule entité. Ces ensembles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément et offrent des outils pour zoomer et examiner les images de plus près. [Afficher une visionneuse d’images appelée « Running » utilisant la visionneuse Fenêtre déroulante](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running)
 
-Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une série de produits que les ventes et le marketing souhaitent voir les clients comme une seule présentation ; une visionneuse d’images.
+Dans Dynamic Media, vous pouvez voir plusieurs images de chaussures de course. Il s’agit d’une gamme de produits que les ventes et le marketing souhaitent que les clients voient dans une seule présentation, c’est-à-dire une visionneuse d’images.
 
 ![Création d’une visionneuse d’images](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Début de la création d’une visionneuse d’images_

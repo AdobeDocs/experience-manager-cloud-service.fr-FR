@@ -5,26 +5,60 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 77%
+source-wordcount: '1737'
+ht-degree: 76%
 
 ---
 
 # Gestion des ressources numériques à l’aide de l’API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-## Prise en main de l’API HTTP AEM [!DNL Assets] {#overview}
+## Prise en main de l’API HTTP [!DNL Assets] d’AEM {#overview}
 
-L’API HTTP AEM [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour et supprimer) sur des ressources numériques par le biais d’une interface REST disponible à l’adresse /`api/assets`. Ces opérations s’appliquent aux métadonnées, rendus et commentaires des ressources. Elle comprend la [prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
+L’API HTTP [!DNL Assets] d’AEM permet d’effectuer des opérations CRUD (créer, lire, mettre à jour et supprimer) sur des ressources numériques par le biais d’une interface REST disponible à l’adresse /`api/assets`. Ces opérations s’appliquent aux métadonnées, rendus et commentaires des ressources. Elle comprend la [prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >

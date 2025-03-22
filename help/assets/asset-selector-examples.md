@@ -1,27 +1,61 @@
 ---
-title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Exemples d’utilisation du sélecteur de ressources pour la personnalisation selon les besoins.
+title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+description: Exemples d’utilisation du sélecteur de ressources à personnaliser en fonction des besoins.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 46%
+source-wordcount: '303'
+ht-degree: 52%
 
 ---
 
 # Exemples d’utilisation des propriétés du sélecteur de ressources {#usage-examples}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Vous pouvez définir le sélecteur de ressources [properties](/help/assets/asset-selector-properties.md) dans le fichier **index.html** pour personnaliser l’affichage du sélecteur de ressources dans votre application.
+Vous pouvez définir le sélecteur de ressources [propriétés](/help/assets/asset-selector-properties.md) dans le fichier **index.html** pour personnaliser l’affichage du sélecteur de ressources dans votre application.
 
 ## Exemple 1 : sélecteur de ressources en mode rail
 
 ![rail-view-exemple](assets/rail-view-example-vanilla.png)
 
-Si la valeur de AssetSelector `rail` est définie sur `false` ou n’est pas mentionnée dans les propriétés, le sélecteur de ressources s’affiche par défaut dans la vue modale. La propriété `acvConfig` permet de définir des configurations plus détaillées, telles que le glisser-déposer. Visitez [ pour activer ou désactiver le glisser-déposer ](asset-selector-customization.md#enable-disable-drag-and-drop) afin de comprendre l’utilisation de la propriété `acvConfig`.
+Si la valeur du `rail` AssetSelector est définie sur `false` ou n’est pas mentionnée dans les propriétés, le sélecteur de ressources s’affiche par défaut en mode modal. La propriété `acvConfig` permet des configurations détaillées, comme la fonction Glisser-déposer. Consultez [activer ou désactiver le glisser-déposer](asset-selector-customization.md#enable-disable-drag-and-drop) pour comprendre l’utilisation de `acvConfig` propriété.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -39,7 +73,7 @@ Utilisez différentes propriétés pour définir les métadonnées d’une resso
 
 ## Exemple 3 :propriété de filtre personnalisé dans la vue de rail
 
-En plus de la recherche facettée, le sélecteur Assets vous permet de personnaliser divers attributs pour affiner votre recherche à partir de [!DNL Adobe Experience Manager] en tant qu’application [!DNL Cloud Service]. Ajoutez le code suivant pour ajouter des filtres de recherche personnalisés à votre application. Dans l’exemple ci-dessous, la recherche `Type Filter` qui filtre le type de ressource parmi les Images, Documents ou Vidéos ou le type de filtre que vous avez ajouté pour la recherche.
+Outre la recherche à facettes, le sélecteur Assets vous permet de personnaliser divers attributs pour affiner votre recherche à partir de l’application [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Ajoutez le code suivant pour ajouter des filtres de recherche personnalisés dans votre application. Dans l’exemple ci-dessous, la recherche `Type Filter` qui filtre le type de ressource parmi les Images, Documents ou Vidéos ou le type de filtre que vous avez ajouté pour la recherche.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -55,7 +89,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
->* [Chargement de sélecteur de ressources](/help/assets/asset-selector-upload.md)
+>* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Chargement du sélecteur de ressources](/help/assets/asset-selector-upload.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Intégrer le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Intégration du sélecteur de ressources à Dynamic Media avec fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

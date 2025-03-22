@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 77%
+source-wordcount: '1112'
+ht-degree: 76%
 
 ---
 
 # Schéma de métadonnées de dossier {#folder-metadata-schema}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
@@ -23,7 +57,7 @@ ht-degree: 77%
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Sélectionnez le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Sélectionnez le logo du [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Forms de schéma de métadonnées de dossier, sélectionnez **[!UICONTROL Créer]**.
 1. Indiquez un nom pour le formulaire, puis sélectionnez **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
 
@@ -36,18 +70,18 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 
 Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
 
-1. Dans la page Forms du schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez l’icône **[!UICONTROL Modifier]** dans la barre d’outils.
-1. Sur la page Éditeur de schéma de métadonnées de dossier, sélectionnez l’icône **[!UICONTROL +]** pour ajouter un onglet au formulaire. Pour renommer l’onglet, sélectionnez le nom par défaut et spécifiez le nouveau nom sous **[!UICONTROL Paramètres]**.
+1. Sur la page Forms de schéma , sélectionnez le formulaire que vous avez créé, puis sélectionnez l’icône **[!UICONTROL Modifier]** dans la barre d’outils.
+1. Sur la page Éditeur de schéma de métadonnées de dossier, sélectionnez l’icône **[!UICONTROL +]** pour ajouter un onglet au formulaire. Pour renommer l’onglet, sélectionnez le nom par défaut, puis spécifiez le nouveau nom sous **[!UICONTROL Paramètres]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Pour ajouter d’autres onglets, cliquez sur l’icône **[!UICONTROL +]** . Sélectionnez **[!UICONTROL X]** pour supprimer un onglet.
+   Pour ajouter d’autres onglets, sélectionnez l’icône **[!UICONTROL +]**. Sélectionnez **[!UICONTROL X]** pour supprimer un onglet.
 
 1. Dans l’onglet actif, ajoutez un ou plusieurs composants de l’onglet **[!UICONTROL Créer le formulaire]**.
 
    ![adding_components](assets/adding_components.png)
 
-   Si vous créez plusieurs onglets, sélectionnez un onglet particulier pour ajouter des composants.
+   Si vous créez plusieurs onglets, sélectionnez-en un en particulier pour ajouter des composants.
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
@@ -104,7 +138,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 
 ### Modification d’éléments de formulaire {#editing-form-items}
 
-Pour modifier les propriétés des éléments de formulaire, sélectionnez le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]** . Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
+Pour modifier les propriétés d’éléments de formulaire, sélectionnez le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]**. Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
@@ -130,7 +164,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 ## Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
-Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et sélectionnez l’icône Supprimer dans la barre d’outils.
+Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et sélectionnez l’icône Supprimer de la barre d’outils.
 
 ![delete_form](assets/delete_form.png)
 
@@ -142,7 +176,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Sélectionnez le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]**> **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Sélectionnez le logo du [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]**> **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Appliquer aux dossiers]**.
 
@@ -159,7 +193,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
 
-1. Dans l’interface utilisateur de [!DNL Experience Manager Assets], sélectionnez **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans l’interface utilisateur d’[!DNL Experience Manager Assets], sélectionnez **[!UICONTROL Créer]** dans la barre d’outils.
 1. Indiquez un titre et un nom de dossier.
 1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma souhaité. Sélectionnez ensuite **[!UICONTROL Créer]**.
 
@@ -172,7 +206,7 @@ Vous pouvez attribuer un schéma de métadonnées de dossier lors de la créatio
 
 Ouvrez les propriétés d’un dossier configuré avec un schéma de métadonnées de dossier. Un onglet **[!UICONTROL Métadonnées de dossier]** s’affiche sur la page des propriétés du dossier. Pour afficher le formulaire de schéma de métadonnées de dossier, sélectionnez cet onglet.
 
-Saisissez les valeurs de métadonnées dans les différents champs et sélectionnez **[!UICONTROL Enregistrer]** pour les stocker. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
+Saisissez les valeurs de métadonnées dans les différents champs, puis sélectionnez **[!UICONTROL Enregistrer]** pour les stocker. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 

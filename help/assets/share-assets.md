@@ -4,17 +4,51 @@ description: Distribuez vos ressources numériques à l’aide de méthodes tell
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1875'
 ht-degree: 80%
 
 ---
 
 # Partager et distribuer des ressources gérées dans [!DNL Experience Manager] {#share-assets-from-aem}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -43,10 +77,10 @@ Vous avez besoin de droits d’administration pour [configurer les paramètres p
    * **Inclure les originaux :**
 
       * Sélectionnez `Select Include Originals` pour sélectionner l’option `Include Originals` par défaut dans la boîte de dialogue de partage de lien.
-      * Sélectionnez la manière dont l’option `Include Originals` vous est présentée dans la boîte de dialogue Partage de liens. [!UICONTROL Modifiable] permet à l’utilisateur de modifier les paramètres définis ici dans les paramètres initiaux. Avec `Read-only`, le paramètre s’affiche mais ne peut pas être modifié. `Hidden` masque le paramètre et utilise la valeur configurée ici dans les Paramètres initiaux.
+      * Sélectionnez la manière dont l’option `Include Originals` vous est présentée dans la boîte de dialogue Partager un lien. [!UICONTROL Modifiable] permet à l’utilisateur de modifier les paramètres définis ici dans les Paramètres initiaux. Avec `Read-only`, le paramètre s’affiche, mais ne peut pas être modifié. `Hidden` masque le paramètre et utilise la valeur configurée ici dans les paramètres initiaux.
    * **Inclure les rendus :**
       * Sélectionnez `Select Include Renditions` pour sélectionner l’option `Include Renditions` par défaut dans la boîte de dialogue de partage de lien.
-      * Sélectionnez la manière dont l’option `Include Renditions` vous est présentée dans la boîte de dialogue Partage de liens. [!UICONTROL Modifiable] permet à l’utilisateur de modifier les paramètres définis ici dans les paramètres initiaux. Avec `Read-only`, le paramètre s’affiche mais ne peut pas être modifié. `Hidden` masque le paramètre et utilise la valeur configurée ici dans les Paramètres initiaux.
+      * Sélectionnez la manière dont l’option `Include Renditions` vous est présentée dans la boîte de dialogue Partager un lien. [!UICONTROL Modifiable] permet à l’utilisateur de modifier les paramètres définis ici dans les Paramètres initiaux. Avec `Read-only`, le paramètre s’affiche, mais ne peut pas être modifié. `Hidden` masque le paramètre et utilise la valeur configurée ici dans les paramètres initiaux.
 
 1. Indiquez la période de validité par défaut du lien dans le champ `Validity Period` de la section `Expiration date`.
 
@@ -103,31 +137,31 @@ Pour partager des ressources par e-mail :
    * Dans la zone **[!UICONTROL Objet]**, saisissez un objet pour préciser l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.
    * Dans le champ **[!UICONTROL Expiration]**, indiquez une date et une heure d’expiration du lien à l’aide du sélecteur de date.
-   * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu d’origine.
+   * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier original]** pour permettre aux destinataires de télécharger le rendu original.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs. Les utilisateurs reçoivent un e-mail contenant le lien partagé.
 
    ![E-mail de partage de lien](assets/link-sharing-email-notification.png)
 
-### Personnalisation du modèle de courrier électronique {#customize-email-template}
+### Personnaliser le modèle d’e-mail {#customize-email-template}
 
-Un modèle bien conçu véhicule le professionnalisme et la compétence, améliorant ainsi la crédibilité de votre message et de votre organisation. [!DNL Adobe Experience Manager] vous permet de personnaliser le modèle d’email qui est envoyé aux destinataires qui reçoivent l’email contenant le lien partagé. En outre, les modèles d&#39;email personnalisés permettent de personnaliser le contenu de votre email en s&#39;adressant à vos destinataires avec le nom et en référençant des détails spécifiques qui les concernent. Cette touche personnelle peut donner au destinataire un sentiment de valeur et accroître son engagement. De plus, un modèle personnalisé garantit la cohérence de vos emails avec l’identité de votre marque, notamment les logos, les couleurs et les polices. La cohérence renforce la reconnaissance de la marque et la confiance entre les destinataires.
+Un modèle bien conçu transmet le professionnalisme et la compétence, améliorant la crédibilité de votre message et de votre organisation. Le [!DNL Adobe Experience Manager] vous permet de personnaliser le modèle d’e-mail, qui est envoyé aux destinataires de l’e-mail contenant le lien partagé. En outre, les modèles d’e-mail personnalisés permettent de personnaliser le contenu de votre e-mail en adressant vos destinataires avec un nom et en référençant des détails spécifiques les concernant. Cette touche personnelle peut faire en sorte que le destinataire se sente valorisé et accroisse son engagement. En outre, un modèle personnalisé garantit que vos e-mails sont cohérents avec l’identité de votre marque, y compris les logos, les couleurs et les polices. La cohérence renforce la reconnaissance de la marque et la confiance entre les destinataires.
 
-#### Format d’un modèle d’email personnalisé {#format-of-custom-email-template}
+#### Format d’un modèle d’e-mail personnalisé {#format-of-custom-email-template}
 
-Le modèle d’email peut être personnalisé à l’aide de texte brut ou d’un HTML. Le lien de modèle modifiable par défaut se trouve à l’adresse `/libs/settings/dam/adhocassetshare/en.txt`. Vous pouvez remplacer le modèle en créant le fichier `/apps/settings/dam/adhocassetshare/en.txt`. Vous pouvez modifier le modèle d&#39;email autant de fois que nécessaire.
+Le modèle d’e-mail peut être personnalisé en utilisant du texte brut ou HTML. Le lien du modèle modifiable par défaut se trouve à l’adresse `/libs/settings/dam/adhocassetshare/en.txt`. Vous pouvez remplacer le modèle en créant le fichier `/apps/settings/dam/adhocassetshare/en.txt`. Vous pouvez modifier le modèle d’e-mail autant de fois que nécessaire.
 
 | Espaces réservés | Description |
 |---|-----|
-| `${emailSubject}` | Objet d&#39;un email |
-| `${emailInitiator}` | ID de courrier électronique de l’utilisateur qui a créé le courrier électronique. |
-| `${emailMessage}` | Corps de l&#39;email |
+| `${emailSubject}` | Objet d’un e-mail |
+| `${emailInitiator}` | ID d’e-mail de l’utilisateur qui a créé l’e-mail |
+| `${emailMessage}` | Corps de l’e-mail |
 | `${pagePath}` | URL du lien partagé |
 | `${linkExpiry}` | Date d’expiration du lien partagé |
 
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
-#### Exemple de modèle de courrier électronique personnalisé {#custom-email-template-example}
+#### Exemple de modèle d’e-mail personnalisé {#custom-email-template-example}
 
 ```
 subject: ${emailSubject}
@@ -148,7 +182,7 @@ subject: ${emailSubject}
 
 ### Télécharger les ressources à l’aide du lien de ressource {#download-assets-using-asset-link}
 
-Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par le biais du courrier électronique.
+Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par e-mail.
 
 * Cliquez sur le lien de la ressource ou collez l’URL dans votre navigateur. L’interface [!UICONTROL Partage de liens] s’ouvre et vous pouvez basculer vers la [!UICONTROL Vue Vignette] ou la [!UICONTROL Vue Liste].
 
@@ -250,7 +284,7 @@ Les utilisateurs peuvent télécharger les ressources requises et les partager e
 
 Les spécialistes marketing et les utilisateurs de services dédiés peuvent facilement partager des ressources approuvées avec des professionnels de la création à l’aide des solutions suivantes :
 
-* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide d’une appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
+* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide d’une application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link** : les professionnels de la création peuvent rechercher et utiliser des ressources directement dans [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop].
 
@@ -305,7 +339,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Configurations pour utiliser [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il connecte [!DNL Adobe Experience Manager Assets] aux [!DNL Creative Cloud] applications de bureau, [!DNL Adobe InDesign], [!DNL Adobe Photoshop] et [!DNL Adobe Illustrator]. Le panneau [!DNL Adobe Asset Link] permet aux créatifs d’accéder au contenu stocké dans [!DNL Assets] et de le modifier sans quitter les applications de création qui leur sont les plus familières.
+Adobe Asset Link simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il se connecte [!DNL Adobe Experience Manager Assets] aux applications de bureau [!DNL Creative Cloud], [!DNL Adobe InDesign], [!DNL Adobe Photoshop] et [!DNL Adobe Illustrator]. Le panneau [!DNL Adobe Asset Link] permet aux créatifs d’accéder au contenu stocké dans [!DNL Assets] et de le modifier sans quitter les applications de création qui leur sont les plus familières.
 
 Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset Link]](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html).
 

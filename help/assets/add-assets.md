@@ -4,17 +4,51 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3190'
 ht-degree: 97%
 
 ---
 
 # Ajoutez vos ressources numériques à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] accepte différents types de ressources numériques provenant de nombreuses sources. Il stocke les binaires et les rendus créés. Il peut aussi effectuer le traitement des ressources à l’aide de divers services de workflow et [!DNL Adobe Sensei], ce qui permet la distribution via de nombreux canaux sur différentes surfaces.
 
@@ -178,7 +212,7 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Indiquez un titre pour la configuration de lʼimportation en bloc dans le champ **[!UICONTROL Titre]**.
 
-1. Sélectionnez le type de source de données dans la liste déroulante **[!UICONTROL Importer Source]** .
+1. Sélectionnez le type de source de données dans la liste déroulante **[!UICONTROL Importer Source]**.
 
 1. Indiquez les valeurs permettant de créer une connexion avec la source de données. Par exemple, si vous sélectionnez **Stockage Azure Blob** comme source de données, spécifiez les valeurs du compte de stockage Azure, du conteneur dʼobjets blob Azure et de la clé d’accès Azure.
 
@@ -387,7 +421,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur d’[!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Le code personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
-* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Si vous tentez de le faire, un message d’alerte peut s’afficher, indiquant &quot;Ce répertoire contient plus de 1 000 éléments. Les chargements et les nouvelles créations de dossiers peuvent être retardés.&quot; Bien que vous puissiez toujours ajouter d’autres ressources à un dossier, vous pouvez rencontrer des problèmes de performances, tels qu’une navigation plus lente vers ces dossiers.
+* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Si vous essayez de le faire, vous risquez d’obtenir un message d’alerte indiquant : « Ce répertoire contient plus de 1 000 éléments. Les chargements et la création de nouveaux dossiers peuvent être retardés. » Bien que vous puissiez ajouter d’autres ressources à un dossier, vous pouvez rencontrer des problèmes de performances, tels qu’une navigation plus lente vers ces dossiers.
 
 * Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si la fonction [Statistiques sur les ressources](/help/assets/assets-insights.md) est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 

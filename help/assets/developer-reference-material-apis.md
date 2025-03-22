@@ -1,21 +1,55 @@
 ---
 title: Références du développeur pour  [!DNL Assets]
-description: "[!DNL Assets] Les API et le contenu de référence des développeurs vous permettent de gérer des ressources, notamment des fichiers binaires, des métadonnées, des rendus, des commentaires et des [!DNL Content Fragments]."
+description: '[!DNL Assets] Les API et le contenu de référence des développeurs vous permettent de gérer des ressources, notamment des fichiers binaires, des métadonnées, des rendus, des commentaires et des [!DNL Content Fragments].'
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 97%
+source-wordcount: '1984'
+ht-degree: 96%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] Cas d’utilisation pour les développeurs, API et documents de référence {#assets-cloud-service-apis}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 L’article contient des recommandations, des documents de référence et des ressources pour les développeurs de [!DNL Assets] as a [!DNL Cloud Service]. Il comprend un nouveau module de chargement de ressources, des références d’API et des informations sur la prise en charge fournie dans les workflows de post-traitement.
 
@@ -190,7 +224,7 @@ Le processus de chargement d’un binaire n’est pas terminé tant que l’URL 
 
 ### Exemple de script Shell pour charger des ressources dans AEM as a Cloud Service {#upload-assets-shell-script}
 
-Le processus de chargement en plusieurs étapes pour un accès binaire direct dans AEM as a Cloud Service est illustré dans l’exemple shell-script `aem-upload.sh` suivant :
+Le processus de chargement en plusieurs étapes pour un accès binaire direct dans AEM as a Cloud Service est illustré dans l’exemple de `aem-upload.sh` shell-script suivant :
 
 ```bash
 #!/bin/bash
@@ -555,4 +589,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Cloud] en tant que [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

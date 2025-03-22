@@ -5,19 +5,53 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2909'
+source-wordcount: '2937'
 ht-degree: 64%
 
 ---
 
 # Utilisation des microservices de ressources et des profils de traitement {#get-started-using-asset-microservices}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide d’applications natives au cloud (également appelées programmes de travail). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
+Les microservices de ressources permettent un traitement évolutif et résilient des ressources à l’aide d’applications natives dans le cloud (également appelées programmes de travail). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
 Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, mais elle nécessitait auparavant des solutions tierces telles qu’[!DNL ImageMagick].
 
@@ -41,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
 | [Configuration par défaut](#default-config) | Elle est disponible en l’état et ne peut pas être modifiée. Cette configuration fournit une fonctionnalité de génération de rendu de base. | <ul> <li>Miniatures standard utilisées par l’interface utilisateur d’[!DNL Assets] (48, 140 et 319 pixels) </li> <li> Aperçu grand format (rendu web : 1 280 pixels). </li><li> Extraction des métadonnées et du texte</li></ul> |
-| [Configuration personnalisée](#standard-config) | Configuré par les administrateurs à l’aide de l’interface utilisateur . D’autres options sont fournies pour la génération du rendu en étendant l’option par défaut. Étend l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO (For Placement Only). </li> <li>Change le format de fichier et la résolution des images.</li> <li> S’applique de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
+| [Configuration personnalisée](#standard-config) | Configuré par les administrateurs au moyen de l’interface utilisateur. D’autres options sont fournies pour la génération de rendu en étendant l’option par défaut. Étend l’option prête à l’emploi pour fournir différents formats et rendus. | <ul><li>Rendu FPO (pour placement uniquement). </li> <li>Change le format de fichier et la résolution des images.</li> <li> S’applique de manière conditionnelle aux types de fichiers configurés. </li> </ul> |
 | [Profil personnalisé](#custom-config) | Configuré par les administrateurs via l’interface utilisateur pour utiliser du code personnalisé par le biais d’applications personnalisées afin d’appeler [Asset Compute Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Prend en charge des exigences plus complexes dans une méthode évolutive et basée sur le cloud. | Voir les [Cas d’utilisation autorisés](#custom-config) |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
@@ -53,7 +87,7 @@ Les microservices de ressources prennent en charge un large éventail de formats
 
 ## Configuration par défaut {#default-config}
 
-Certains paramètres par défaut sont préconfigurés pour garantir que les rendus par défaut requis dans Experience Manager sont disponibles. La configuration par défaut garantit également que les opérations d’extraction de métadonnées et de texte sont disponibles. Les utilisateurs peuvent commencer à charger ou à mettre à jour immédiatement les ressources, et le traitement de base est disponible par défaut.
+Certains paramètres par défaut sont préconfigurés pour garantir que les rendus par défaut requis dans Experience Manager sont disponibles. La configuration par défaut garantit également que les opérations d’extraction de métadonnées et d’extraction de texte sont disponibles. Les utilisateurs peuvent commencer à charger ou à mettre à jour immédiatement les ressources, et le traitement de base est disponible par défaut.
 
 Avec la configuration par défaut, seul le profil de traitement le plus élémentaire est configuré. Un tel profil de traitement n’est pas visible dans l’interface utilisateur et vous ne pouvez pas le modifier. Il s’exécute toujours pour traiter les ressources chargées. Ce profil de traitement par défaut permet de s’assurer que l’intégralité du traitement de base requis par [!DNL Experience Manager] est terminé sur toutes les ressources.
 
@@ -62,15 +96,15 @@ Avec la configuration par défaut, seul le profil de traitement le plus élémen
 
 ## Configuration standard {#standard-config}
 
-[!DNL Experience Manager] permet de générer des rendus plus spécifiques pour des formats courants en fonction des besoins de l’utilisateur. Un administrateur peut créer des [!UICONTROL profils de traitement] supplémentaires pour faciliter la création de ce rendu. Les utilisateurs affectent alors un ou plusieurs des profils disponibles à des dossiers spécifiques afin qu’un traitement supplémentaire soit réalisé. Par exemple, le traitement supplémentaire peut générer des rendus pour le web, les appareils mobiles et les tablettes. La vidéo suivante explique comment créer et appliquer des [!UICONTROL Profils de traitement] et comment accéder aux rendus qui ont été créés.
+[!DNL Experience Manager] permet de générer des rendus plus spécifiques pour les formats courants en fonction des besoins de l’utilisateur. Un administrateur peut créer des [!UICONTROL profils de traitement] supplémentaires pour faciliter la création de ce rendu. Les utilisateurs affectent alors un ou plusieurs des profils disponibles à des dossiers spécifiques afin qu’un traitement supplémentaire soit réalisé. Supposons, par exemple, que le traitement supplémentaire puisse générer des rendus pour le web, les appareils mobiles et les tablettes. La vidéo suivante explique comment créer et appliquer des [!UICONTROL Profils de traitement] et comment accéder aux rendus qui ont été créés.
 
-* **Largeur et hauteur du rendu** : la spécification de hauteur et de largeur du rendu fournit des tailles maximales de l’image de sortie générée. Les microservices de ressources tentent de générer le rendu le plus grand possible, avec une largeur et une hauteur ne dépassant pas les valeurs spécifiées. Les proportions sont conservées, c’est-à-dire qu’elles sont identiques à l’original. Une valeur vide signifie que le traitement des ressources utilise, par défaut, la taille en pixels de l’original.
+* **Largeur et hauteur du rendu** : la spécification de largeur et de hauteur du rendu fournit les tailles maximales de l’image de sortie générée. Les microservices de ressources tentent de générer le rendu le plus grand possible, avec une largeur et une hauteur ne dépassant pas les valeurs spécifiées. Les proportions sont conservées, c’est-à-dire qu’elles sont identiques à l’original. Une valeur vide signifie que le traitement des ressources utilise, par défaut, la taille en pixels de l’original.
 
 * **Règles d’inclusion de type MIME** : lors du traitement d’une ressource avec un type MIME spécifique, ce dernier est d’abord comparé à la valeur des types MIME exclus pour la spécification de rendu. En cas de correspondance avec cette liste, ce rendu spécifique n’est pas généré pour la ressource (liste bloquée). Dans le cas contraire, le type MIME est comparé au type MIME inclus et, si une correspondance est trouvée, le rendu est généré (liste autorisée).
 
-* **Rendu FPO spécial** : lorsque vous placez des ressources de grande taille d’[!DNL Experience Manager] dans des documents [!DNL Adobe InDesign], un professionnel de la création attend un certain temps après avoir [placé une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser [!DNL InDesign]. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement dans des documents [!DNL InDesign] des rendus de petite taille, qui peuvent être remplacés ultérieurement par des ressources pleine résolution On-demand. [!DNL Experience Manager] fournit des rendus utilisés uniquement pour le placement. Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions.
+* **Rendu FPO spécial** : lorsque vous placez des ressources de grande taille d’[!DNL Experience Manager] dans des documents [!DNL Adobe InDesign], un professionnel de la création attend un certain temps après avoir [placé une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser [!DNL InDesign]. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement des rendus de petite taille dans des documents [!DNL InDesign] pour commencer, qui peuvent être remplacés par des ressources en pleine résolution à la demande ultérieurement. [!DNL Experience Manager] fournit des rendus utilisés uniquement pour l’emplacement. Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions.
 
-Le profil de traitement peut inclure un rendu FPO (For Placement Only). Consultez la [!DNL Adobe Asset Link] [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) pour savoir si vous devez l’activer pour votre profil de traitement. Pour plus d’informations, consultez la [documentation complète sur Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
+Le profil de traitement peut inclure un rendu FPO (pour placement uniquement). Voir la [!DNL Adobe Asset Link] [documentation](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) pour savoir si vous devez l’activer pour votre profil de traitement. Pour plus d’informations, consultez la [documentation complète d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
 ### Création d’un profil standard {#create-standard-profile}
 
@@ -102,7 +136,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profil et cas d’utilisation personnalisés {#custom-config}
 
-[!DNL Asset Compute Service] prend en charge divers cas d’utilisation, notamment le traitement par défaut et le traitement de formats spécifiques à l’Adobe, tels que les fichiers Photoshop. Il permet également d’implémenter un traitement personnalisé ou spécifique à l’organisation. La personnalisation du workflow Ressource de mise à jour de gestion des actifs numériques requise par le passé est gérée automatiquement ou au moyen de la configuration Profils de traitement . Si ces options de traitement ne répondent pas aux besoins de votre entreprise, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+Le [!DNL Asset Compute Service] prend en charge divers cas d’utilisation, notamment le traitement par défaut et le traitement de formats spécifiques à Adobe tels que les fichiers Photoshop. Il permet également d’implémenter un traitement personnalisé ou spécifique à une organisation. La personnalisation du workflow Ressource de mise à jour de la gestion des ressources numériques requise dans le passé est gérée automatiquement ou au moyen de la configuration des profils de traitement. Si ces options de traitement ne répondent pas à vos besoins professionnels, Adobe recommande de développer et d’utiliser le [!DNL Asset Compute Service] pour étendre les fonctionnalités par défaut. Pour obtenir aperçu, voir [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 
 >[!NOTE]
 >
@@ -112,10 +146,10 @@ Le profil personnalisé peut transformer des formats d’image, de vidéo, de do
 
 Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application) qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
-* Utilisez l’ [API ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) de [!DNL Adobe Photoshop] et enregistrez le résultat sous forme de rendu.
+* Utilisez l’API [ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) de [!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour apporter des modifications, par exemple un système PIM.
-* Utilisez l’API [!DNL Photoshop] pour générer une variété de rendus basés sur le modèle Photoshop.
-* Utilisez l’ [ API Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) pour optimiser les ressources ingérées et les enregistrer en tant que rendus.
+* Utilisez l’API [!DNL Photoshop] pour générer divers rendus à partir du modèle Photoshop.
+* Utilisez l’API [Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) pour optimiser les ressources ingérées et les enregistrer en tant que rendus.
 
 >[!NOTE]
 >
@@ -124,11 +158,11 @@ Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des
 ### Création d’un profil personnalisé {#create-custom-profile}
 
 1. Les administrateurs accèdent à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** > **[!UICONTROL Créer]**.
-1. Sur la page Profil de traitement, cliquez sur l’onglet **[!UICONTROL Personnalisé]**, puis sur **[!UICONTROL Ajouter nouveau]**.
-1. Dans le champ de texte Nom , saisissez le nom de fichier souhaité pour le rendu, puis fournissez les informations suivantes.
+1. Sur la page Profil de traitement , cliquez sur l’onglet **[!UICONTROL Personnalisé]**, puis sur **[!UICONTROL Ajouter]**.
+1. Dans le champ de texte Nom , saisissez le nom de fichier souhaité du rendu, puis fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
-   * [URL de point d’entrée d’une application personnalisée App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). L’application doit provenir de la même organisation que le compte Experience Manager.
+   * [URL du point d’entrée d’une application personnalisée App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). L’application doit provenir de la même organisation que le compte Experience Manager.
    * Paramètres Ajouter un service pour [transmettre des informations ou des paramètres supplémentaires à l’application personnalisée](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend).
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichiers spécifiques.
 
@@ -144,22 +178,22 @@ Les applications personnalisées sont des applications [Project App Builder](h
 
 Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui exploite l’API Photoshop pour modifier les images.
 
-L’intégration d’Asset Compute Service permet à Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ [!UICONTROL Paramètres de service]. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police ainsi que la couleur, l’épaisseur et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
+L’intégration d’Asset Compute Service permet à Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ [!UICONTROL Paramètres de service]. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API . Par exemple, vous pouvez transmettre le nom de la police ainsi que la couleur, l’épaisseur et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
 
 <!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*Figure : Utilisez le champ [!UICONTROL Paramètres de service] pour transmettre des informations supplémentaires aux paramètres prédéfinis générés dans l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont chargées, elles sont mises à jour avec le texte `Jumanji` dans la police `Arial-BoldMT`.*
+*Image : utilisez le champ [!UICONTROL Paramètres de service] pour transmettre des informations supplémentaires aux paramètres prédéfinis intégrés à l’application personnalisée. Dans cet exemple, lorsque des images de campagne sont chargées, elles sont mises à jour avec le texte `Jumanji` dans la police `Arial-BoldMT`.*
 
 ## Utilisation de profils de traitement pour traiter des ressources {#use-profiles}
 
-Créez et appliquez d’autres profils de traitement personnalisés à des dossiers spécifiques. Ce workflow permet à l’Experience Manager de traiter les ressources chargées ou mises à jour dans ces dossiers. Le profil de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un profil personnalisé, les deux profils sont utilisés pour traiter les ressources chargées.
+Créez et appliquez des profils de traitement personnalisés supplémentaires à des dossiers spécifiques. Ce workflow permet à Experience Manager de traiter les ressources chargées ou mises à jour dans ces dossiers. Le profil de traitement standard intégré par défaut est toujours exécuté, mais il n’est pas visible dans l’interface utilisateur. Si vous ajoutez un profil personnalisé, les deux profils sont utilisés pour traiter les ressources chargées.
 
 Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
 * Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de traitement]** et utiliser l’action **[!UICONTROL Appliquer le profil aux dossiers]**. Il ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques et de les sélectionner, puis de confirmer l’application du profil.
-* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur d’Assets et utiliser l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier. Dans l’onglet **[!UICONTROL Traitement des ressources]**, ils peuvent sélectionner le profil de traitement approprié pour ce dossier dans la liste [!UICONTROL  Profil de traitement]. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur d’Assets et exécuter l’action **[!UICONTROL Propriétés]** pour afficher l’écran des propriétés du dossier. Dans l’onglet **[!UICONTROL Traitement des ressources]**, ils peuvent sélectionner le profil de traitement approprié pour ce dossier dans la liste [!UICONTROL Profil de traitement]. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
   ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés de l’élément](assets/folder-properties-processing-profile.png)
 
 * Les utilisateurs peuvent sélectionner des dossiers ou des ressources spécifiques dans l’interface utilisateur d’Assets pour appliquer un profil de traitement, puis sélectionner l’option ![icône de retraitement des ressources](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Retraiter les ressources]** dans les options disponibles dans la partie supérieure.
@@ -172,7 +206,7 @@ Une fois qu’un profil de traitement a été appliqué à un dossier, toutes le
 
 >[!NOTE]
 >
->Un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence, mais peut être remplacé par un autre profil appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
+>Un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence, mais peut être remplacé par un autre qui est appliqué à un sous-dossier. Lorsque des ressources sont chargées dans un dossier, Experience Manager recherche un profil de traitement dans les propriétés du dossier conteneur. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
 
 Pour vérifier que les ressources sont traitées, prévisualisez les rendus générés dans la vue [!UICONTROL Rendus] dans le rail de gauche. Ouvrez l’aperçu de la ressource et ouvrez le rail de gauche pour accéder à la vue **[!UICONTROL Rendus]**. Les rendus spécifiques situés dans le profil de traitement, pour lesquels le type de la ressource correspond aux règles d’inclusion du type MIME, doivent être visibles et accessibles.
 
@@ -182,20 +216,20 @@ Pour vérifier que les ressources sont traitées, prévisualisez les rendus gén
 
 ## Workflows de post-traitement {#post-processing-workflows}
 
-Dans le cas où un traitement supplémentaire des ressources est nécessaire et ne peut pas être réalisé à l’aide des profils de traitement, des workflows de post-traitement supplémentaires peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
+Si un traitement supplémentaire des ressources est nécessaire, mais ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-Une fois le traitement des microservices terminé, [!DNL Experience Manager] exécute automatiquement les workflows de post-traitement ou les [ workflows de démarrage automatique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows), s’ils sont configurés. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
+Une fois le traitement des microservices terminé, [!DNL Experience Manager] exécute automatiquement les workflows de post-traitement ou [workflows de démarrage automatique](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows), s’ils sont configurés. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
 * Étapes du workflow personnalisé de traitement des ressources.
 * Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
-* Le traitement supplémentaire est effectué par des services externes.
+* Un traitement supplémentaire est effectué par des services externes.
 
 Pour ajouter une configuration de workflow de post-traitement à [!DNL Experience Manager], procédez comme suit :
 
-* Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de workflow de post-traitement* dans cette documentation. Il s’agit de modèles de workflow [!DNL Experience Manager] standard.
+* Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de workflow de post-traitement* dans cette documentation. Il s’agit de modèles de workflow [!DNL Experience Manager] réguliers.
 * Ajoutez les étapes de workflow spécifiques à ces modèles. Passez en revue les étapes du workflow par défaut et ajoutez toutes les étapes par défaut requises au workflow personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent soit appliqué automatiquement lors du chargement des ressources, ajoutez l’étape à votre modèle personnalisé de workflow de post-traitement.
-* Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour de gestion des actifs numériques] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
-* Créez une configuration pour le service d’exécution de workflow personnalisé qui vous permet de configurer l’exécution d’un modèle de workflow de post-traitement en fonction d’un chemin d’accès (emplacement du dossier) ou d’une expression régulière.
+* Ajoutez l’étape [!UICONTROL  Processus terminé du workflow de ressource de mise à jour de gestion des ressources numériques ] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
+* Créez une configuration pour le service d’exécution de workflow personnalisé qui vous permet de configurer l’exécution d’un modèle de workflow de post-traitement par un chemin d’accès (emplacement du dossier) ou par une expression régulière.
 
 Pour plus d’informations sur les étapes de workflow standard pouvant être utilisées dans le workflow de post-traitement, voir [Étapes du workflow de post-traitement](developer-reference-material-apis.md#post-processing-workflows-steps) (en anglais) dans la documentation de référence du développeur.
 
@@ -203,13 +237,13 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
-Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser à la fois les étapes prises en charge disponibles et les étapes de workflow implémentées sur mesure.
+Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser les étapes prises en charge qui sont disponibles, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
 
-Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape garantit que l’Experience Manager reconnaît le moment où le traitement des ressources est terminé.
+Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet à Experience Manager de reconnaître la fin du traitement des ressources.
 
 ### Configuration de l’exécution du workflow de post-traitement {#configure-post-processing-workflow-execution}
 
-Une fois que les microservices de ressources ont terminé le traitement des ressources chargées, vous pouvez définir un workflow de post-traitement pour traiter les ressources plus efficacement. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
+Une fois que les microservices de ressources ont terminé le traitement des ressources chargées, vous pouvez définir un workflow de post-traitement pour traiter davantage les ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
 
 * [Appliquez un modèle de workflow dans le dossier Propriétés](#apply-workflow-model-to-folder).
 * [Configurez le service d’exécution de workflow personnalisé](#configure-custom-workflow-runner-service).
@@ -219,17 +253,17 @@ Une fois que les microservices de ressources ont terminé le traitement des ress
 Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
 
 1. Créer un modèle de processus.
-1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement Assets]** .
+1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement Assets]**.
 1. Sous **[!UICONTROL Workflow de démarrage automatique]**, sélectionnez le workflow requis, fournissez le titre du workflow, puis enregistrez les modifications.
 
    ![Application d’un workflow de post-traitement à un dossier dans ses propriétés](assets/post-processing-profile-workflow-for-folders.png)
 
-#### Configuration du service d’exécution de processus personnalisé {#configure-custom-workflow-runner-service}
+#### Configuration du service d’exécution de workflow personnalisé {#configure-custom-workflow-runner-service}
 
-Vous pouvez configurer le service d’exécution de workflow personnalisé pour les configurations avancées qui ne peuvent pas être satisfaites facilement en appliquant un workflow à un dossier. Par exemple, un workflow qui utilise une expression régulière. Le gestionnaire de workflow personnalisé DAM Adobe CQ (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi. Il propose les deux options de configuration suivantes :
+Vous pouvez configurer le service d’exécution de workflow personnalisé pour les configurations avancées qui ne peuvent pas être réalisées facilement en appliquant un workflow à un dossier. Par exemple, un workflow qui utilise une expression régulière. Le gestionnaire de workflow personnalisé DAM Adobe CQ (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi. Il propose les deux options de configuration suivantes :
 
-* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Chemins et modèles séparés à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Expressions et modèles distincts à l’aide d’un deux-points. Pointez l’expression régulière pour qu’elle pointe directement vers le noeud de ressource, et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Chemins et modèles séparés à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin d’accès `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Séparez les expressions et les modèles par deux points. Pointez l’expression régulière vers le nœud de ressource directement, et non sur l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Pour savoir comment déployer une configuration OSGi, voir [déploiement vers [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
@@ -245,25 +279,25 @@ Lorsque le post-traitement n’est pas nécessaire, créez et utilisez un modèl
    * Titre : désactiver le workflow de démarrage automatique
    * Nom : disable-auto-start-workflow
 1. Cliquez sur **Terminé** pour créer le modèle de workflow.
-1. Sélectionner et modifier le modèle de processus créé
-1. Dans l’éditeur de modèles de workflow, cliquez sur **Étape 1** de la définition de modèle et supprimez-la.
-1. Dans le panneau latéral, cliquez sur **Steps**.
-1. Faites glisser l’étape **Processus de mise à jour de ressource DAM terminé** dans la définition de modèle.
+1. Sélectionner et modifier le modèle de workflow créé
+1. Dans l’éditeur de modèles de workflow, cliquez sur **Étape 1** dans la définition de modèle et supprimez-la.
+1. Dans le panneau latéral, cliquez sur **Étapes**.
+1. Faites glisser l’étape **Workflow de mise à jour de ressource de gestion des ressources numériques terminé** dans la définition du modèle.
 1. Cliquez sur **Informations sur la page** (en regard du bouton bascule **Panneau latéral**), puis sur **Ouvrir les propriétés**.
-1. Sous l’onglet De base, cliquez sur **Processus transitoire**.
+1. Sous l’onglet De base , cliquez sur **Workflow transitoire**.
 1. Dans la barre d’actions supérieure, cliquez sur **Enregistrer et fermer**.
 1. Dans la barre d’actions supérieure, cliquez sur **Synchroniser**.
-1. Fermez l’éditeur de modèles de workflow.
+1. Fermez l’éditeur de modèle de workflow.
 
 ##### Application du modèle de workflow de démarrage automatique désactivé
 
-Suivez les étapes décrites dans la section [Application d’un modèle de processus à un dossier](#apply-workflow-model-to-folder) et définissez le **workflow Désactiver le démarrage automatique** comme **workflow de démarrage automatique** pour les dossiers qui ne nécessitent pas le post-traitement des ressources.
+Suivez les étapes décrites dans la section [appliquer un modèle de workflow à un dossier](#apply-workflow-model-to-folder) et définissez le **workflow de démarrage automatique désactivé** comme **workflow de démarrage automatique** pour les dossiers qui ne nécessitent pas de post-traitement des ressources.
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage du fait d’une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques ou supprimer les ressources et les charger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage du fait d’une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser les [!DNL Experience Manager] pour supprimer des rendus spécifiques ou supprimer les ressources et les charger à nouveau.
 * Actuellement, la prise en charge se limite à la génération de rendus. La génération de nouvelles ressources n’est pas prise en charge.
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de ressources très volumineuses, l’opération d’extraction des métadonnées échoue parfois.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de ressources très volumineuses, l’opération d’extraction des métadonnées peut parfois échouer.
 
 **Voir également**
 
@@ -284,7 +318,7 @@ Suivez les étapes décrites dans la section [Application d’un modèle de proc
 >[!MORELIKETHIS]
 >
 >* [Présentation d’Asset Compute Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
->* [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+>* [Découvrez l’extensibilité et quand l’utiliser](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 >* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [Types MIME pris en charge pour divers cas d’utilisation](/help/assets/file-format-support.md).
 

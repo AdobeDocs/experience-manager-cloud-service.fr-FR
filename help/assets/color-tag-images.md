@@ -1,24 +1,58 @@
 ---
 title: Balises de couleurs pour les images
-description: Adobe Experience Manager Assets vous permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
+description: Adobe Experience Manager Assets vous permet de faire la distinction entre les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1290'
 ht-degree: 71%
 
 ---
 
 # Balises de couleurs pour les images {#color-tag-images}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Bannière de balisage des couleurs](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets utilise les fonctionnalités d’Adobe Sensei AI pour distinguer les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
+Adobe Experience Manager (AEM) Assets utilise les fonctionnalités de l’IA d’Adobe Sensei pour faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs des images.
 
 Vous pouvez configurer le nombre de couleurs, comprises entre un et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
 
@@ -30,12 +64,12 @@ La figure suivante illustre l’ordre des tâches que vous effectuez pour config
 
 | Format de fichier | Extension | Type MIME | Espace colorimétrique d’entrée | Taille maximale de fichier source prise en charge | Résolution maximale de la taille de fichier prise en charge |
 |---|---|---|---|---|---|
-| JPEG | .jpg et .jpeg | image/jpeg | sRVB | 15 Go | 2 000 × 2 000 pixels |
-| PNG | .png | image/png | sRVB | 15 Go | 2 000 × 2 000 pixels |
-| TIFF | .tif et .tiff | image/tiff | sRGB | 4 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
-| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
-| GIF | .gif | image/gif | sRVB | 15 Go | 2 000 × 2 000 pixels |
-| BMP | .bmp | image/bmp | sRVB | 4 Go (limitée par les spécifications de format) | 2 000 × 2 000 pixels |
+| JPEG | .jpg et .jpeg | image/jpeg | sRVB | 15 Go | 20000 × 20000 pixels |
+| PNG | .png | image/png | sRVB | 15 Go | 20000 × 20000 pixels |
+| TIFF | .tif et .tiff | image/tiff | sRGB | 4 Go (limitée par les spécifications de format) | 20000 × 20000 pixels |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 Go (limitée par les spécifications de format) | 20000 × 20000 pixels |
+| GIF | .gif | image/gif | sRVB | 15 Go | 20000 × 20000 pixels |
+| BMP | .bmp | image/bmp | sRVB | 4 Go (limitée par les spécifications de format) | 20000 × 20000 pixels |
 
 ## Gérer les propriétés du balisage des couleurs {#manage-color-tagging-properties}
 
@@ -47,11 +81,11 @@ Pour gérer les propriétés de balisage des couleurs pour les images :
 
 1. Spécifiez le format d’affichage de la balise de couleur dans le champ **[!UICONTROL Format d’affichage]**. Les options possibles incluent le nom de la couleur, le RGB ou le format HEX.
 
-1. Indiquez le nombre de couleurs que vous souhaitez baliser pour les images dans le champ **[!UICONTROL Limite]**. Ces couleurs s’affichent lorsque vous consultez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
+1. Indiquez le nombre de couleurs à baliser pour les images du champ **[!UICONTROL Limite]**. Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image. Vous pouvez définir un nombre compris entre un et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
 
 1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images comprenant la couleur rouge.
 
-   Vous pouvez indiquer un nombre compris entre cinq et cent dans ce champ. La valeur par défaut est 11.
+   Vous pouvez indiquer tout nombre compris entre 5 et 100 dans ce champ. La valeur par défaut est 11.
 
    >[!NOTE]
    >
@@ -89,7 +123,7 @@ Les schémas de métadonnées contiennent des champs spécifiques pour renseigne
 
 >[!NOTE]
 >
->Le champ Balise de couleur intelligente est disponible dans le schéma de métadonnées par défaut. Si vous utilisez un schéma de métadonnées personnalisé, configurez votre schéma pour ajouter un champ de balise de couleur intelligente.
+>Le champ Balise de couleur intelligente est disponible dans le schéma de métadonnées par défaut. Si vous utilisez un schéma de métadonnées personnalisé, configurez-le pour ajouter un champ de balise de couleur intelligente.
 
 Pour ajouter le composant Balises de couleurs intelligentes à l’éditeur des formulaires de schéma de métadonnées :
 
@@ -109,21 +143,21 @@ Pour ajouter le composant Balises de couleurs intelligentes à l’éditeur des 
 
 ## Balises de couleurs pour les images existantes dans la gestion des ressources numériques (DAM) {#color-tags-existing-images}
 
-Les images existantes dans la gestion des actifs numériques ne sont pas balisées automatiquement par la couleur. [!UICONTROL Retraiter Assets] manuellement pour générer des balises de couleur pour ces utilisateurs.
+Les images existantes dans la gestion des ressources numériques ne sont pas automatiquement balisées par couleur. [!UICONTROL Retraiter Assets] manuellement pour générer leurs balises de couleurs.
 
-Pour baliser les images ou les dossiers (y compris les sous-dossiers) de ressources qui existent dans le référentiel de ressources, procédez comme suit :
+Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les sous-dossiers) des ressources qui existent dans le référentiel des ressources, procédez comme suit :
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
-1. Sélectionnez [!UICONTROL Fichiers].
+1. Sélectionnez [!UICONTROL  Fichiers ].
 
-1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleur.
+1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleurs.
 
 1. Sélectionnez le dossier complet ou des images spécifiques.
 
 1. Sélectionnez l’icône [!UICONTROL Retraiter les ressources] ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) et sélectionnez l’option [!UICONTROL Processus complet].
 
-Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de toute image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises de couleur intelligente] de l’onglet [!UICONTROL De base] .
+Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL  Balises de couleurs intelligentes ] de l’onglet [!UICONTROL De base].
 
 
 ## Afficher les balises de couleurs intelligentes des images {#view-color-tags}
@@ -138,15 +172,15 @@ Pour afficher les balises de couleurs intelligentes pour les images :
 
    ![Afficher les balises de couleurs](assets/view-color-tags.png)
 
-   Passez la souris sur une balise de couleur pour afficher le **[!UICONTROL seuil de couverture/dominance %]** d’une couleur dans une image.
+   Pointez la souris sur une balise de couleur pour afficher le **[!UICONTROL % de seuil de couverture/dominance]** d’une couleur dans une image.
 
 ## Configurer le prédicat de couleur d’AEM Assets {#configure-search-predicate}
 
-Vous pouvez configurer un filtre de recherche pour les images. Vous pouvez ensuite baser vos critères de recherche sur une couleur spécifique pour filtrer les résultats.
+Vous pouvez configurer un filtre de recherche d’images. Vous pouvez ensuite baser vos critères de recherche sur une couleur spécifique pour filtrer les résultats.
 
 >[!NOTE]
 >
->Configurez le prédicat de couleur AEM Assets uniquement si vous n’utilisez pas le formulaire de recherche par défaut.
+>Configurez le prédicat de couleur d’AEM Assets uniquement si vous n’utilisez pas le formulaire de recherche par défaut.
 
 Pour configurer le filtre de recherche, créez un prédicat de couleur de ressource à l’aide du rail de recherche d’administrateurs de ressources.
 
@@ -168,13 +202,13 @@ Pour configurer le filtre de recherche :
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Après avoir configuré toutes les propriétés de balisage des couleurs et [configuré le prédicat de couleur Assets](#search-images-based-on-colors), vous pouvez rechercher des images en fonction d’une couleur comme filtre.
+Après avoir configuré toutes les propriétés de balisage des couleurs ainsi que [le prédicat de couleur d’Assets](#search-images-based-on-colors), vous pouvez rechercher des images en fonction d’une couleur appliquée comme filtre.
 
 Pour rechercher des images en fonction des couleurs :
 
 1. Accédez à **[!UICONTROL Ressources > Fichiers]**.
 
-1. Sélectionnez **[!UICONTROL Filter]** dans la liste déroulante.
+1. Sélectionnez **[!UICONTROL Filtrer]** dans la liste déroulante.
    ![Filtrer les ressources](assets/filter-assets.png)
 
 1. Sélectionnez le [prédicat de couleur d’AEM Assets](#configure-search-predicate).

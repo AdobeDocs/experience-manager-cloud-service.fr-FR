@@ -1,34 +1,68 @@
 ---
-title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Utilisez des fonctions pour personnaliser le sélecteur de ressources dans votre application.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 26%
+source-wordcount: '1289'
+ht-degree: 29%
 
 ---
 
 # Personnalisations du sélecteur de ressources {#asset-selector-customization}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Le sélecteur de ressources vous permet de personnaliser divers composants en fonction des préférences, des exigences ou des besoins fonctionnels. Vous pouvez personnaliser les composants suivants [Sélecteur de ressources Micro-Frontend](#overview-asset-selector.md) :
+Le sélecteur de ressources vous permet de personnaliser divers composants en fonction des préférences, des exigences ou des besoins fonctionnels. Vous pouvez personnaliser les composants suivants [Sélecteur de ressources micro front-end](#overview-asset-selector.md) :
 
-* [Personnalisation du panneau de filtrage](#customize-filter-panel)
-* [Personnalisation des informations dans la vue modale](#customize-info-in-modal-view)
+* [Personnaliser le panneau de filtrage](#customize-filter-panel)
+* [Personnaliser les informations en mode modal](#customize-info-in-modal-view)
 * [Activation ou désactivation du mode glisser-déposer](#enable-disable-drag-and-drop)
 * [Sélection d’Assets](#selection-of-assets)
-* [Personnalisation des ressources expirées](#customize-expired-assets)
+* [Personnaliser les ressources expirées](#customize-expired-assets)
 * [Filtre d’appel contextuel](#contextual-invocation-filter)
 
-Vous devez définir les conditions préalables dans le fichier **index.html** ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification pour accéder au référentiel [!DNL Experience Manager Assets]. Une fois que vous avez terminé, vous pouvez ajouter des fragments de code en fonction de vos besoins.
+Vous devez définir les conditions préalables dans le fichier **index.html** ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification permettant d’accéder au référentiel [!DNL Experience Manager Assets]. Une fois cette opération terminée, vous pouvez ajouter des fragments de code en fonction de vos besoins.
 
-## Personnalisation du panneau de filtrage {#customize-filter-panel}
+## Personnaliser le panneau de filtrage {#customize-filter-panel}
 
-Vous pouvez ajouter le fragment de code suivant dans l’objet `assetSelectorProps` pour personnaliser le panneau de filtrage :
+Vous pouvez ajouter le fragment de code suivant dans `assetSelectorProps` objet pour personnaliser le panneau de filtrage :
 
 ```
 filterSchema: [
@@ -88,9 +122,9 @@ filterSchema: [
 ],
 ```
 
-## Personnalisation des informations dans la vue modale {#customize-info-in-modal-view}
+## Personnaliser les informations en mode modal {#customize-info-in-modal-view}
 
-Vous pouvez personnaliser la vue des détails d’une ressource lorsque vous cliquez sur l’icône ![icône d’information](assets/info-icon.svg) . Exécutez le code ci-dessous :
+Vous pouvez personnaliser la vue des détails d’une ressource en cliquant sur l’icône ![icône d’informations](assets/info-icon.svg). Exécutez le code ci-dessous :
 
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
@@ -104,7 +138,7 @@ assetSelectorProps.infoPopoverMap = infoPopoverMap;
 
 ## Activation ou désactivation du mode glisser-déposer {#enable-disable-drag-and-drop}
 
-Ajoutez les propriétés suivantes à `assetSelectorProp` pour activer le mode glisser-déposer. Pour désactiver la fonction glisser-déposer, remplacez le paramètre `true` par `false`.
+Ajoutez les propriétés suivantes aux `assetSelectorProp` pour activer le mode glisser-déposer. Pour désactiver le glisser-déposer, remplacez le paramètre `true` par `false`.
 
 ```
 rail: true,
@@ -129,7 +163,7 @@ const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
 
 Le type de ressource sélectionné est un tableau d’objets qui contient des informations sur les ressources lors de l’utilisation des fonctions `handleSelection`, `handleAssetSelection`, et `onDrop`.
 
-Exécutez les étapes suivantes pour configurer la sélection d’une ou de plusieurs ressources :
+Pour configurer la sélection de ressources uniques ou multiples, procédez comme suit :
 
 ```
 acvConfig: {
@@ -204,14 +238,14 @@ La propriété `handleSelection` est utilisée pour gérer des sélections uniqu
 
 ### Désactivation de la sélection d’Assets {#disable-selection}
 
-L’option Désactiver la sélection permet de masquer ou de désactiver la sélection des ressources ou des dossiers. Elle masque la case à cocher de la carte ou de la ressource qui l’empêche d’être sélectionnée. Pour utiliser cette fonction, vous pouvez déclarer la position d’une ressource ou d’un dossier que vous souhaitez désactiver dans un tableau. Par exemple, si vous souhaitez désactiver la sélection d’un dossier apparaissant à la première position, vous pouvez ajouter le code suivant :
+Désactiver la sélection est utilisé pour masquer ou désactiver la sélection des ressources ou des dossiers. Cela masque la case à cocher de sélection de la carte ou de la ressource, ce qui l’empêche d’être sélectionnée. Pour utiliser cette fonction, vous pouvez déclarer la position d’une ressource ou d’un dossier à désactiver dans un tableau. Par exemple, si vous souhaitez désactiver la sélection d’un dossier apparaissant à la première position, vous pouvez ajouter le code suivant :
 `disableSelection: [0]:folder`
 
-Vous pouvez fournir au tableau une liste des types MIME (images, dossiers, fichiers ou autres types MIME, par exemple image/jpeg) que vous souhaitez désactiver. Les types MIME que vous déclarez sont mappés aux attributs `data-card-type` et `data-card-mimetype` d’une ressource.
+Vous pouvez fournir au tableau une liste de types MIME (tels qu’image, dossier, fichier ou autres types MIME, par exemple image/jpeg) que vous souhaitez désactiver. Les types MIME que vous déclarez sont mappés dans les attributs `data-card-type` et `data-card-mimetype` d’une ressource.
 
-En outre, il est possible de faire glisser Assets avec une sélection désactivée. Pour désactiver la fonction glisser-déposer d’un type de ressource spécifique, vous pouvez utiliser la propriété `dragOptions.allowList` .
+De plus, vous pouvez faire glisser Assets avec la sélection désactivée. Pour désactiver le glisser-déposer d’un type de ressource particulier, vous pouvez utiliser `dragOptions.allowList` propriété .
 
-La syntaxe de la sélection de désactivation est la suivante :
+La syntaxe de la désactivation de la sélection est la suivante :
 
 ```
 (args)=> {
@@ -229,13 +263,13 @@ La syntaxe de la sélection de désactivation est la suivante :
 
 >[!NOTE]
 >
-> Dans le cas d’une ressource, la case à cocher de sélection est masquée, alors que dans le cas d’un dossier, il n’est pas possible de sélectionner le dossier, mais la navigation du dossier en question continue à s’afficher.
+> Dans le cas d’une ressource, la case à cocher de sélection est masquée, tandis que dans le cas d’un dossier, la sélection du dossier n’est pas possible, mais la navigation dans le dossier mentionné reste active.
 
 <!--For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-## Personnalisation des ressources expirées {#customize-expired-assets}
+## Personnaliser les ressources expirées {#customize-expired-assets}
 
-Le sélecteur de ressources vous permet de contrôler l’utilisation d’une ressource expirée. Vous pouvez personnaliser la ressource expirée avec un badge **Expiration prochaine** qui peut vous aider à connaître à l’avance les ressources qui vont expirer dans les 30 jours à compter de la date actuelle. De plus, il peut être personnalisé selon les besoins. Vous pouvez également autoriser la sélection d’une ressource expirée sur la zone de travail ou vice versa. La personnalisation d’une ressource expirée peut être effectuée à l’aide de fragments de code de différentes manières :
+Le sélecteur de ressources vous permet de contrôler l’utilisation d’une ressource arrivée à expiration. Vous pouvez personnaliser la ressource arrivée à expiration avec un badge **Expiration imminente** qui peut vous aider à connaître à l’avance les ressources qui arriveront à expiration dans les 30 jours suivant la date actuelle. De plus, cela peut être personnalisé en fonction des besoins. Vous pouvez également autoriser la sélection d’une ressource arrivée à expiration sur la zone de travail ou inversement. La personnalisation d’une ressource arrivée à expiration peut être effectuée à l’aide de certains fragments de code de différentes manières :
 
 <!--{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
@@ -248,9 +282,9 @@ expiryOptions: {
 }
 ```
 
-### Sélection d’une ressource expirée {#selection-of-expired-asset}
+### Sélection d’une ressource arrivée à expiration {#selection-of-expired-asset}
 
-Vous pouvez personnaliser l’utilisation d’une ressource expirée pour la rendre sélectionnable ou non sélectionnable. Vous pouvez personnaliser si vous souhaitez autoriser ou non le glisser-déposer d’une ressource expirée sur le canevas du sélecteur de ressources. Pour ce faire, utilisez les paramètres suivants pour rendre une ressource non sélectionnable sur la zone de travail :
+Vous pouvez personnaliser l’utilisation d’une ressource arrivée à expiration afin de la rendre sélectionnable ou non. Vous pouvez personnaliser l’autorisation du glisser-déposer d’une ressource expirée sur la zone de travail du sélecteur de ressources. Pour ce faire, utilisez les paramètres suivants pour rendre une ressource non sélectionnable sur la zone de travail :
 
 ```
 expiryOptions:{
@@ -262,9 +296,9 @@ Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behav
 
 ![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
 
-### Définition de la durée d’une ressource expirée {#set-duration-of-expired-asset}
+### Définition de la durée d’une ressource arrivée à expiration {#set-duration-of-expired-asset}
 
-Le fragment de code suivant vous permet de définir le badge **Expiration prochaine** pour les ressources qui expirent dans les cinq jours suivants : <!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
+Le fragment de code suivant vous permet de définir **Expiration prochaine** le badge des ressources qui expirent dans les cinq prochains jours : <!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
 
 ```
 /**
@@ -288,18 +322,18 @@ Le fragment de code suivant vous permet de définir le badge **Expiration procha
 
 <!--In the above code snippet, the `getExpiryStatus` function is used to show the **Expiring soon** badge that have expiration date stored in `customExpirationDate`. Additionally, it sets the expiration date of an asset to five days from the current date. The `millisecondsInDay` helps you set expiry of an asset by specifying the time range in milliseconds. You can replace milliseconds with hours directly or customize function as per the requirement. Whereas, the `getTime()` function returns the number of milliseconds for the mentioned date. See [properties](#asset-selector-properties) to know about `expirationDate` property.-->
 
-Reportez-vous à l’exemple suivant pour comprendre le fonctionnement de la propriété pour récupérer la date et l’heure actuelles :
+Reportez-vous à l’exemple suivant pour comprendre comment la propriété fonctionne pour récupérer la date et l’heure actuelles :
 
 ```
 const currentData = new Date();
 currentData.getTime(),
 ```
 
-renvoie `1718779013959` selon le format de date 2024-06-19T06:36:53.959Z.
+renvoie `1718779013959` qui est selon le format de date 2024-06-19T06:36:53.959Z.
 
-### Personnaliser le message du toast d’une ressource expirée {#customize-toast-message}
+### Personnaliser le message toast d’une ressource expirée {#customize-toast-message}
 
-La propriété `showToast` est utilisée pour personnaliser le message toast que vous souhaitez afficher sur une ressource expirée.
+La propriété `showToast` est utilisée pour personnaliser le message toast que vous souhaitez afficher sur une ressource arrivée à expiration.
 
 Syntaxe :
 
@@ -311,9 +345,9 @@ Syntaxe :
 }
 ```
 
-Le délai par défaut est de 500 millisecondes. En revanche, vous pouvez la modifier selon vos besoins. De plus, la transmission de la valeur `timeout: 0` permet de garder le toast ouvert jusqu&#39;à ce que vous cliquiez sur le bouton croix.
+La temporisation par défaut est de 500 millisecondes. En revanche, vous pouvez la modifier selon vos besoins. En outre, la transmission de la valeur `timeout: 0` garde le toast ouvert jusqu’à ce que vous cliquiez sur la croix.
 
-Vous trouverez ci-dessous un exemple d’affichage d’un message toast lorsqu’il est nécessaire pour interdire la sélection d’un dossier et afficher un message correspondant :
+Vous trouverez ci-dessous un exemple d’affichage d’un message toast lorsqu’il est nécessaire d’interdire la sélection d’un dossier et d’afficher un message correspondant :
 
 ```
 const showToast = {
@@ -323,7 +357,7 @@ const showToast = {
 }
 ```
 
-Utilisez le fragment de code suivant pour afficher un message de toast pour l’utilisation d’une ressource expirée :
+Utilisez le fragment de code suivant pour afficher un message toast pour l’utilisation d’une ressource arrivée à expiration :
 
 ```
 (args) => {
@@ -356,11 +390,11 @@ Utilisez le fragment de code suivant pour afficher un message de toast pour l’
 
 ## Filtre d’appel contextuel{#contextual-invocation-filter}
 
-Le sélecteur de ressources vous permet d’ajouter un filtre de sélecteur de balises. Il prend en charge un groupe de balises qui combine toutes les balises pertinentes avec un groupe de balises particulier. En outre, il vous permet de sélectionner des balises supplémentaires correspondant à la ressource que vous recherchez. De plus, vous pouvez définir les groupes de balises par défaut sous le filtre d’appel contextuel qui sont principalement utilisés par vous afin qu’ils vous soient accessibles en déplacement.
+Le sélecteur de ressources vous permet d’ajouter un filtre de sélecteur de balises. Il prend en charge un groupe de balises qui combine toutes les balises pertinentes à un groupe de balises particulier. En outre, il vous permet de sélectionner des balises supplémentaires correspondant à la ressource que vous recherchez. De plus, vous pouvez également définir les groupes de balises par défaut sous le filtre d’appel contextuel que vous utilisez le plus souvent, afin qu’ils soient accessibles en déplacement.
 
 >
 >
-> * Vous devez ajouter un extrait de code d’appel contextuel pour activer le filtre de balisage dans la recherche.
+> * Vous devez ajouter un fragment de code d’appel contextuel pour activer le filtre de balisage dans la recherche.
 > * Il est obligatoire d’utiliser la propriété name correspondant au type de groupe de balises `(property=xcm:keywords.id=)`.
 
 Syntaxe :
@@ -376,7 +410,7 @@ const filterSchema=useMemo(() => {
 }, []);
 ```
 
-Pour ajouter des groupes de balises dans le panneau Filtres, il est obligatoire d’ajouter au moins un groupe de balises par défaut. En outre, utilisez le fragment de code ci-dessous pour ajouter les balises par défaut présélectionnées dans le groupe de balises.
+Pour ajouter des groupes de balises dans le panneau Filtres, il est obligatoire d’ajouter au moins un groupe de balises par défaut. De plus, utilisez le fragment de code ci-dessous pour ajouter les balises par défaut présélectionnées dans le groupe de balises.
 
 ```
 export const WithAssetTags = (props) = {
@@ -408,16 +442,16 @@ const filterSchema = useMemo ((); => {
 
 ![filtre de groupe de balises](assets/tag-group.gif)
 
-## Chargement dans le sélecteur de ressources {#upload-in-asset-selector}
+## Charger dans le sélecteur de ressources {#upload-in-asset-selector}
 
-Vous pouvez charger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local. Pour charger des fichiers à l’aide du système de fichiers local, vous devez généralement utiliser une fonctionnalité de chargement fournie par une application front-end micro-Sélecteur de ressources. Plusieurs fragments de code requis pour appeler le téléchargement dans le sélecteur de ressources impliquent :
+Vous pouvez charger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local. Pour charger des fichiers à l’aide du système de fichiers local, vous devez généralement utiliser une fonctionnalité de chargement fournie par une microapplication front-end du sélecteur de ressources. Divers fragments de code requis pour appeler le chargement dans le sélecteur de ressources impliquent :
 
-* [Fragment de code de formulaire de téléchargement de base](#basic-upload)
+* [Extrait de code de formulaire de chargement de base](#basic-upload)
 * [Chargement avec des métadonnées](#upload-with-metadata)
 * [Chargement personnalisé](#customized-upload)
-* [Téléchargement à l’aide de sources tierces](#upload-using-third-party-source)
+* [Chargement à l’aide de sources tierces](#upload-using-third-party-source)
 
-### Formulaire de téléchargement de base {#basic-upload}
+### Formulaire de chargement de base {#basic-upload}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -541,7 +575,7 @@ const MultipleAllInOneUploadExample = () => {
 }
 ```
 
-### Téléchargement à l’aide de sources tierces {#upload-using-third-party-source}
+### Chargement à l’aide de sources tierces {#upload-using-third-party-source}
 
 ```
 import { useState, useRef } from 'react';
@@ -612,6 +646,6 @@ const ControlledUploadExample = () => {
 >[!MORELIKETHIS]
 >
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
+>* [Intégration du sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Intégrer le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Intégration du sélecteur de ressources à Dynamic Media avec fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

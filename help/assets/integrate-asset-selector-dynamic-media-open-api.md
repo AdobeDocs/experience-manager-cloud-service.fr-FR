@@ -1,52 +1,86 @@
 ---
-title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Intégrez le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
+title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+description: Intégrer le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
-# Intégration pour Dynamic Media avec les fonctionnalités OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
+# Intégration de Dynamic Media aux fonctionnalités OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Le sélecteur de ressources vous permet d’intégrer à l’aide de diverses applications Adobe afin de leur permettre de travailler ensemble de manière transparente.
+Le sélecteur de ressources vous permet de les intégrer à l’aide de diverses applications Adobe afin de leur permettre de travailler ensemble en toute transparence.
 
 
-## Conditions préalables {#prereqs-polaris}
+## Prérequis {#prereqs-polaris}
 
-Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à Dynamic Media avec les fonctionnalités OpenAPI :
+Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de ressources à Dynamic Media avec des fonctionnalités OpenAPI :
 
 * [Méthodes de communication](/help/assets/overview-asset-selector.md#prereqs)
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
-   * Référentiel Assets (as a Cloud Service Experience Manager Assets, par exemple).
+   * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les [ressources approuvées](/help/assets/approve-assets.md) peuvent être utilisées pour assurer la cohérence de la marque.
+* Seules les ressources [ approuvées ](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
-## Intégration pour Dynamic Media avec les fonctionnalités OpenAPI {#adobe-app-integration-polaris}
+## Intégration de Dynamic Media aux fonctionnalités OpenAPI {#adobe-app-integration-polaris}
 
-L’intégration du sélecteur de ressources avec le processus Dynamic Media OpenAPI implique différentes étapes, notamment la création d’une URL Dynamic Media personnalisée ou la sélection d’une URL Dynamic Media, etc.
+L’intégration du sélecteur de ressources avec le processus OpenAPI Dynamic Media implique différentes étapes, notamment la création d’une URL Dynamic Media personnalisée ou l’obtention d’une URL Dynamic Media prête à être sélectionnée, etc.
 
 ### Intégrer le sélecteur de ressources pour Dynamic Media aux fonctionnalités OpenAPI {#integrate-dynamic-media}
 
-Les propriétés `rootPath` et `path` ne doivent pas faire partie des fonctionnalités Dynamic Media avec OpenAPI . Vous pouvez plutôt configurer la propriété `aemTierType`. Voici la syntaxe de la configuration :
+Les propriétés `rootPath` et `path` ne doivent pas faire partie de Dynamic Media avec les fonctionnalités OpenAPI. Vous pouvez plutôt configurer la propriété `aemTierType` . Voici la syntaxe de la configuration :
 
 ```
 aemTierType:[1: "delivery"]
 ```
 
-Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à la propriété `aemTierType` sous [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md).
+Cette configuration vous permet d’afficher toutes les ressources approuvées sans dossiers ou sous la forme d’une structure plate. Pour plus d’informations, accédez à `aemTierType` propriété sous [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md).
 
 
-### Création d’une URL de diffusion dynamique à partir des ressources approuvées {#create-dynamic-media-url}
+### Création d’une URL de diffusion dynamique à partir de ressources approuvées {#create-dynamic-media-url}
 
 Une fois que vous avez configuré le sélecteur de ressources, un schéma d’objets est utilisé pour créer une URL de diffusion dynamique à partir des ressources sélectionnées.
-Par exemple, un schéma d’un objet d’un tableau d’objets reçu lors de la sélection d’une ressource :
+Par exemple, le schéma d’un objet d’un tableau d’objets reçu lors de la sélection d’une ressource :
 
 ```
 {
@@ -58,7 +92,7 @@ Par exemple, un schéma d’un objet d’un tableau d’objets reçu lors de la 
 }
 ```
 
-Toutes les ressources sélectionnées sont transportées par la fonction `handleSelection` qui agit comme un objet JSON. Par exemple, `JsonObj`. L&#39;URL de diffusion dynamique est créée en combinant les opérateurs suivants :
+Toutes les ressources sélectionnées sont transportées par `handleSelection` fonction qui agit comme un objet JSON. Par exemple, `JsonObj`. L’URL de diffusion dynamique est créée en combinant les opérateurs ci-dessous :
 
 | Objet | JSON |
 |---|---|
@@ -70,31 +104,31 @@ Toutes les ressources sélectionnées sont transportées par la fonction `handle
 
 #### Spécification de l’API de diffusion des ressources approuvées {#approved-assets-delivery-api-specification}
 
-Format d’URL :
+Format de l&#39;URL :
 `https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Où,
 
 * L’hôte est `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * La racine de l’API est `"/adobe/dynamicmedia/deliver"`
-* `<asset-id>` est l’identifiant de ressource
+* `<asset-id>` est l’identifiant de la ressource
 * `<seo-name>` est le nom d’une ressource
 * `<format>` est le format de sortie
 * `<image modification query parameters>` comme prise en charge par la spécification de l’API de diffusion des ressources approuvées
 
-#### API de diffusion des ressources approuvées {#approved-assets-delivery-api}
+#### API de diffusion de ressources approuvées {#approved-assets-delivery-api}
 
-L&#39;URL de diffusion dynamique présente la syntaxe suivante :
+L’URL de diffusion dynamique possède la syntaxe suivante :
 `https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, où,
 
 * L’hôte est `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * La racine de l’API pour la diffusion du rendu original est `"/adobe/assets/deliver"`.
-* `<asset-id>` est l’identifiant de ressource
-* `<seo-name>`est le nom de la ressource qui peut avoir ou ne pas avoir d’extension
+* `<asset-id>` est l’identifiant de la ressource
+* `<seo-name>`est le nom de la ressource qui peut ou non avoir une extension
 
-### Prêt à sélectionner l’URL de diffusion dynamique {#ready-to-pick-dynamic-delivery-url}
+### Prêt à choisir l’URL de diffusion dynamique {#ready-to-pick-dynamic-delivery-url}
 
-Toutes les ressources sélectionnées sont transportées par la fonction `handleSelection` qui agit comme un objet JSON. Par exemple, `JsonObj`. L&#39;URL de diffusion dynamique est créée en combinant les opérateurs suivants :
+Toutes les ressources sélectionnées sont transportées par `handleSelection` fonction qui agit comme un objet JSON. Par exemple, `JsonObj`. L’URL de diffusion dynamique est créée en combinant les opérateurs ci-dessous :
 
 | Objet | JSON |
 |---|---|
@@ -103,17 +137,17 @@ Toutes les ressources sélectionnées sont transportées par la fonction `handle
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
-Vous trouverez ci-dessous les deux manières de parcourir l’objet JSON :
+Vous trouverez ci-dessous les deux façons de parcourir l’objet JSON :
 
 ![URL de diffusion dynamique](assets/dynamic-delivery-url.png)
 
-* **Miniature :** Les miniatures peuvent être des images et les ressources sont PDF, vidéo, images, etc. Vous pouvez toutefois utiliser les attributs de hauteur et de largeur de la miniature d’une ressource comme rendu de diffusion dynamique.
+* **Miniature :** les miniatures peuvent être des images et les ressources sont des PDF, des vidéos, des images, etc. Vous pouvez toutefois utiliser les attributs de hauteur et de largeur de la miniature d’une ressource comme rendu de diffusion dynamique.
 L’ensemble de rendus suivant peut être utilisé pour les ressources de type PDF :
-Une fois qu’un pdf est sélectionné dans le sidekick, le contexte de sélection fournit les informations suivantes. Vous trouverez ci-dessous la manière de parcourir l’objet JSON :
+Une fois qu’un PDF est sélectionné dans le sidekick, le contexte de sélection propose les informations ci-dessous. Vous trouverez ci-dessous la manière de parcourir l’objet JSON :
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
 
-  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau de lien de rendu de la capture d’écran ci-dessus. Par exemple, les propriétés clés de l’un des rendus de miniature sont les suivantes :
+  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau du lien de rendu à partir de la capture d’écran ci-dessus. Par exemple, les propriétés de clé de l’un des rendus de miniature sont les suivantes :
 
   ```
   { 
@@ -124,9 +158,9 @@ Une fois qu’un pdf est sélectionné dans le sidekick, le contexte de sélecti
   } 
   ```
 
-Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu d’origine du PDF doit être incorporée dans l’expérience cible si PDF est requis et non sa miniature. Par exemple, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`.
+Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu original PDF doit être incorporée dans l’expérience cible si PDF est requis, et non sa miniature. Par exemple, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`.
 
-* **Vidéo :** Vous pouvez utiliser l’URL du lecteur vidéo pour les ressources de type vidéo qui utilisent un iFrame incorporé. Vous pouvez utiliser les rendus de tableau suivants dans l’expérience cible :
+* **Vidéo :** vous pouvez utiliser l’URL du lecteur vidéo pour les ressources de type vidéo qui utilisent un iFrame incorporé. Vous pouvez utiliser les rendus de tableau suivants dans l’expérience cible :
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -138,43 +172,43 @@ Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu d’origine 
   } 
   ```
 
-  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau de lien de rendu de la capture d’écran ci-dessus. Par exemple, les propriétés clés de l’un des rendus de miniature sont les suivantes :
+  Vous pouvez vous reporter à `selection[0].....selection[4]` pour le tableau du lien de rendu à partir de la capture d’écran ci-dessus. Par exemple, les propriétés de clé de l’un des rendus de miniature sont les suivantes :
 
-  Le fragment de code de la capture d’écran ci-dessus est un exemple de ressource vidéo. Elle inclut le tableau de liens de rendus. `selection[5]` dans l’extrait est l’exemple de miniature d’image qui peut être utilisé comme espace réservé de miniature vidéo dans l’expérience cible. Le `selection[5]` du tableau des rendus est destiné au lecteur vidéo. Il sert un HTML et peut être défini comme `src` de l’iframe. Il prend en charge la diffusion en continu à débit adaptatif qui est une diffusion de la vidéo optimisée pour le web.
+  L’extrait de code de la capture d’écran ci-dessus est un exemple de ressource vidéo. Il comprend un tableau de liens de rendus. La `selection[5]` dans l’extrait est l’exemple de miniature d’image qui peut être utilisée comme espace réservé de la miniature vidéo dans l’expérience cible. La `selection[5]` dans le tableau des rendus est pour le lecteur vidéo. Elle sert d’HTML et peut être définie comme `src` de l’iframe. Il prend en charge la diffusion en continu à débit adaptatif, qui est une diffusion de la vidéo optimisée pour le web.
 
   Dans l’exemple ci-dessus, l’URL du lecteur vidéo est `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-### Configuration des filtres personnalisés {#configure-custom-filters-dynamic-media-open-api}
+### Configuration de filtres personnalisés {#configure-custom-filters-dynamic-media-open-api}
 
-Le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI vous permet de configurer des propriétés personnalisées et des filtres en fonction de celles-ci. La propriété `filterSchema` est utilisée pour configurer ces propriétés. La personnalisation peut être exposée sous la forme `metadata.<metadata bucket>.<property name>.` sur laquelle les filtres peuvent être configurés, où,
+Le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI vous permet de configurer des propriétés personnalisées et des filtres basés sur celles-ci. La propriété `filterSchema` est utilisée pour configurer ces propriétés. La personnalisation peut être exposée en tant que `metadata.<metadata bucket>.<property name>.` par rapport auxquelles les filtres peuvent être configurés, où,
 
 * `metadata` est l’information d’une ressource
 * `embedded` est le paramètre statique utilisé pour la configuration, et
-* `<propertyname>` est le nom du filtre que vous configurez.
+* `<propertyname>` est le nom du filtre que vous configurez
 
-Pour la configuration, les propriétés définies au niveau de `jcr:content/metadata/` sont exposées sous la forme `metadata.<metadata bucket>.<property name>.` pour les filtres que vous souhaitez configurer.
+Pour la configuration, les propriétés définies au niveau de l’`jcr:content/metadata/` sont exposées comme `metadata.<metadata bucket>.<property name>.` pour les filtres que vous souhaitez configurer.
 
-Par exemple, dans le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI, une propriété sur `asset jcr:content/metadata/client_name:market` est convertie en `metadata.embedded.client_name:market` pour la configuration des filtres.
+Par exemple, dans le sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI , une propriété sur `asset jcr:content/metadata/client_name:market` est convertie en `metadata.embedded.client_name:market` pour la configuration des filtres.
 
 Pour obtenir le nom, une activité unique doit être effectuée. Effectuez un appel API de recherche pour la ressource et obtenez le nom de la propriété (le compartiment, essentiellement).
 
-### Interface utilisateur du sélecteur de ressources pour Dynamic Media avec fonctionnalités OpenAPI {#interface-dynamic-media-open-api}
+### Interface utilisateur du sélecteur de ressources pour Dynamic Media avec les fonctionnalités OpenAPI {#interface-dynamic-media-open-api}
 
-Une fois l’intégration avec le sélecteur de ressources Micro-Frontend de l’Adobe effectuée, vous pouvez afficher la structure des ressources uniquement de toutes les ressources approuvées disponibles dans le référentiel de ressources Experience Manager.
+Après l’intégration au sélecteur de ressources micro front-end d’Adobe, vous ne pouvez voir que la structure de toutes les ressources approuvées disponibles dans le référentiel de ressources Experience Manager.
 
-![Dynamic Media avec l’interface utilisateur des fonctionnalités OpenAPI](assets/polaris-ui.png)
+![Dynamic Media avec interface utilisateur des fonctionnalités OpenAPI](assets/polaris-ui.png)
 
 * **A** : [masquer/afficher le panneau](#hide-show-panel)
 * **B** : [Assets](#repository)
 * **C** : [Tri](#sorting)
 * **D** : [filtres](#filters)
 * **E** : [barre de recherche](#search-bar)
-* **F** : [Tri par ordre croissant ou décroissant](#sorting)
+* **F** : [tri par ordre croissant ou décroissant](#sorting)
 * **G** : Annuler la sélection
-* **H** : sélectionnez une ou plusieurs ressources
+* **H** : sélectionner une ou plusieurs ressources
 
 >[!MORELIKETHIS]
 >
->* [Intégrer le sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
+>* [Intégration du sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
->* [Personnalisations du sélecteur de ressources](/help/assets/asset-selector-customization.md)
+>* [Personnalisation du sélecteur de ressources](/help/assets/asset-selector-customization.md)

@@ -5,17 +5,51 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 92%
+source-wordcount: '1582'
+ht-degree: 91%
 
 ---
 
 # Gestion de la publication dans Experience Manager Assets {#manage-publication-in-aem}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 En tant qu’administrateur [!DNL Adobe Experience Manager Assets], vous pouvez publier des ressources et des dossiers contenant des ressources de votre instance d’auteur sur [!DNL Experience Manager Assets], [!DNL Dynamic Media] et [!DNL Brand Portal]. Vous pouvez également planifier la publication d’une ressource ou d’un dossier à une date ou une heure ultérieure. Une fois ces éléments publiés, les utilisateurs peuvent accéder aux ressources et les distribuer à d’autres utilisateurs. Par défaut, vous pouvez publier des ressources et des dossiers sur [!DNL Experience Manager Assets]. Cependant, vous pouvez configurer [!DNL Experience Manager Assets] pour activer la publication sur [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr) et [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
@@ -31,13 +65,13 @@ Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du
 
 ## Publication de ressources à l’aide de la publication rapide {#quick-publish}
 
-La publication rapide permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur l’option **[!UICONTROL Quick Publish]** dans la barre d’outils et sélectionnez la destination dans la liste déroulante où vous souhaitez publier les ressources.
+La publication rapide vous permet de publier immédiatement le contenu vers la destination sélectionnée. Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur l’option **[!UICONTROL Publication rapide]** dans la barre d’outils, puis sélectionnez dans la liste déroulante la destination où vous souhaitez publier les ressources.
 
 ![Publication rapide](assets/quick-publish-to-aem.png)
 
 ## Publication de ressources à l’aide de la fonction Gérer la publication {#manage-publication}
 
-La fonction Gérer la publication vous permet de publier ou d’annuler la publication de contenu vers et à partir de la destination sélectionnée, d’[ ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, d’[ inclure des paramètres de dossier ](#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et de [planifier la publication](#publish-assets-later) à une date ou une heure ultérieure.
+L’option Gérer la publication permet de publier ou de dépublier du contenu vers et depuis la destination sélectionnée, [d’ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, [d’inclure des paramètres de dossier](#include-folder-settings) de publier le contenu des dossiers sélectionnés et d’appliquer des filtres, et [de planifier la publication](#publish-assets-later) à une date ou une heure ultérieure.
 
 Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils. Si vous n’avez pas configuré [!DNL Dynamic Media] et [!DNL Brand Portal] dans votre instance [!DNL Experience Manager Assets], vous pouvez publier des ressources et des dossiers uniquement dans [!DNL Experience Manager Assets].
 
@@ -64,7 +98,7 @@ Pour continuer, cliquez sur **[!UICONTROL Suivant]**. Selon la sélection, l’o
 
 ### Ajouter du contenu {#add-content}
 
-La publication sur [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur le bouton **[!UICONTROL Ajouter du contenu]** pour ajouter plus de contenu.
+La publication vers [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur le bouton **[!UICONTROL Ajouter du contenu]** pour ajouter plus de contenu.
 
 Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plusieurs dossiers à la fois. Cependant, vous ne pouvez pas ajouter de ressources à partir de plusieurs dossiers à la fois.
 
@@ -181,7 +215,7 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 
 ## Demander la publication {#request-publication}
 
-L’option `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur l’environnement [!DNL AEM] Assets. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs et utilisatrices. Vous pouvez être *contributeur ou contributrice*, c’est-à-dire que vous pouvez charger des ressources, mais vous ne pouvez pas les publier tant que les chargements ne sont pas vérifiés. En outre, étant un *administrateur*, vous pouvez gérer les workflows de lecture et d’écriture d’Assets.
+L’option `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur l’environnement [!DNL AEM] Assets. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs et utilisatrices. Vous pouvez être *contributeur ou contributrice*, c’est-à-dire que vous pouvez charger des ressources, mais vous ne pouvez pas les publier tant que les chargements ne sont pas vérifiés. En outre, en tant qu’*administrateur*, vous pouvez gérer la lecture et l’écriture de workflows d’Assets.
 
 L’option Demander la publication est disponible pour les personnes suivantes :
 

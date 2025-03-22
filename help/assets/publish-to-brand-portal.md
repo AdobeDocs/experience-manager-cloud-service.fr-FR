@@ -5,17 +5,51 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1333'
+ht-degree: 90%
 
 ---
 
 # Publication de ressources sur Brand Portal {#publish-assets-to-brand-portal}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -35,8 +69,8 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
->Assets doit être publié par lots. La recommandation pour la taille du lot est de 15 Ko.
-> Pour [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service], le taux de transfert observé en état de laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
+>Assets doit être publié par lots. La recommandation pour la taille de lot est de 15 000.
+> Pour [!DNL Experience Manager Assets] en [!DNL Cloud Service], le taux de transfert observé dans les conditions du laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -80,7 +114,7 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
 
-   ![publier plus tard](assets/publish-later.png)
+   ![publier ultérieurement](assets/publish-later.png)
 
 1. Sélectionnez une **[!UICONTROL Date d’activation]** et spécifiez l’heure. Cliquez sur **[!UICONTROL Suivant]**.
 
@@ -94,9 +128,9 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
 >[!NOTE]
 >
-> * Les utilisateurs existants du groupe DAM-Users ont un accès en lecture sur le chemin &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
-> * Les nouveaux utilisateurs (ou les utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal :
-> Chemins :
+> * Les utilisateurs existants appartenant au groupe DAM-Users ont un accès en lecture sur le chemin d’accès « /conf/global/settings/cloudconfigs/mediaportal »
+> * Les nouveaux utilisateurs (ou utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal.
+> Chemins d’accès :
 > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
 >`/libs : jcr:read`
 >`/conf : jcr:read`
@@ -133,7 +167,7 @@ Vous pouvez publier ou dépublier des dossiers de ressources immédiatement ou e
 
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
-1. **Dossiers Publish plus tard**
+1. **Publication ultérieure de dossiers**
 Pour planifier la publication des dossiers de ressources à une date ou une heure ultérieure :
 
    1. Sélectionnez les dossiers dont vous souhaitez planifier la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut.
@@ -145,7 +179,7 @@ Pour planifier la publication des dossiers de ressources à une date ou une heur
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![publier le dossier ultérieur](assets/publish-later-folder.png)
+   ![publication ultérieure du dossier](assets/publish-later-folder.png)
 
    1. Confirmez votre sélection dans **[!UICONTROL Portée]**. Cliquez sur **[!UICONTROL Suivant]**.
 

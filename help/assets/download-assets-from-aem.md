@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 85%
+source-wordcount: '1382'
+ht-degree: 84%
 
 ---
 
 # Télécharger des ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -91,7 +125,7 @@ Pour télécharger des ressources, procédez comme suit :
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**.
 
-   Si vous avez demandé à être averti en cas de téléchargement volumineux, vous recevrez un e-mail dans votre boîte de réception contenant une URL de téléchargement pour le dossier zip archivé. Cliquez sur le lien de téléchargement du courrier électronique pour télécharger l’archive ZIP.
+   Si vous avez demandé à être averti en cas de téléchargement volumineux, vous recevrez un e-mail dans votre boîte de réception contenant une URL de téléchargement pour le dossier zip archivé. Cliquez sur le lien de téléchargement présent dans l’e-mail pour télécharger l’archive zip.
 
    ![notifications-par-e-mail-en-cas-de-téléchargements-volumineux](/help/assets/assets/email-for-large-notification.png)
 
@@ -135,13 +169,13 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## Rendu onTime ou OffTime {#on-off-time-rendition}
+## Rendu OnTime ou OffTime {#on-off-time-rendition}
 
-Pour activer le service `OnOffTimeAssetAccessFilter`, vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être définie sur `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
+Pour activer le service `OnOffTimeAssetAccessFilter`, vous devez créer une configuration OSGi. Ce service permet de bloquer l’accès aux rendus et aux métadonnées en plus de la ressource elle-même en fonction des paramètres d’heure d’activation/de désactivation. La configuration OSGi doit être fournie à des fins d’`com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Suivez les étapes ci-dessous :
 
-1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’emplacement `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` en tant que contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
+1. Dans le code de votre projet dans Git, créez un fichier de configuration à l’adresse `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Le fichier doit contenir `{}` comme contenu, ce qui signifie une configuration OSGi vide pour le composant OSGi correspondant. Cette action active le service.
 1. Déployez votre code, y compris cette nouvelle configuration, via [!DNL Cloud Manager].
-1. Une fois déployé, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure actuelle ou après l’heure de désactivation, un message d’erreur s’affiche.
+1. Une fois déployés, les rendus et les métadonnées sont accessibles en fonction des paramètres d’heure d’activation/de désactivation des ressources. Si la date ou l’heure actuelle est antérieure à l’heure d’activation ou postérieure à l’heure de désactivation, un message d’erreur s’affiche.
 Pour plus d’informations sur l’ajout d’une configuration OSGi vide, consultez ce [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr).
 
 ## Conseils et restrictions {#tips-limitations}

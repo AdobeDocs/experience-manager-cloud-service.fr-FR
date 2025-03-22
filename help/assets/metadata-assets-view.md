@@ -5,17 +5,51 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 89%
+source-wordcount: '1932'
+ht-degree: 91%
 
 ---
 
 # Métadonnées dans la vue Assets {#metadata}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Les métadonnées sont constituées de données ou de descriptions de données. Par exemple, vos images en tant que ressource peuvent contenir des informations sur l’appareil photo qui a pris la photo ou des informations relatives aux droits d’auteur. Ces informations représentent les métadonnées de l’image. Les métadonnées sont essentielles pour gérer efficacement des ressources. Elles constituent un ensemble de toutes les données disponibles pour cette ressource mais sans être nécessairement contenues dans cette ressource.
 
@@ -82,7 +116,7 @@ La vue Assets utilise la séquence suivante pour rechercher des noms de formulai
 
 Formulaire de sous-type MIME > Type MIME > `default` > Formulaire prêt à l’emploi
 
-Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire prêt à l’emploi à tous les documents de PDF chargés.
+Par exemple, si un formulaire de métadonnées portant le nom `PDF` ou `pdf` existe, les documents PDF chargés contiennent des champs de métadonnées tels que définis dans le formulaire. Si un formulaire de métadonnées du nom de `PDF` ou `pdf` n’existe pas, la vue Assets vérifie s’il existe un formulaire de métadonnées du nom de `application`. S’il existe un formulaire de métadonnées du nom de `application`, les documents PDF chargés contiennent les champs de métadonnées définis dans le formulaire. Si la vue Assets ne trouve toujours pas de formulaire de métadonnées correspondant, il recherche le formulaire de métadonnées `default` pour appliquer les champs de métadonnées définis dans le formulaire aux documents PDF chargés. Si aucune de ces étapes ne fonctionne, la vue Assets applique les champs de métadonnées définis dans le formulaire prêt à l’emploi à tous les documents PDF chargés.
 Cependant, si vous souhaitez affecter un formulaire de métadonnées à un dossier [voir](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
@@ -171,17 +205,17 @@ Pour supprimer un formulaire de métadonnées d’un dossier :
 
 Vous pouvez également accéder à la page des détails du dossier et sélectionner **[!UICONTROL Formulaire de métadonnées mappées sur le système]** dans le champ **[!UICONTROL Formulaires de métadonnées]** pour supprimer le formulaire de métadonnées affecté d’un dossier.
 
-### Utilisation du composant Lien dans le formulaire de métadonnées {#link-component-metadata-form}
+### Utiliser le composant Lien dans un formulaire de métadonnées {#link-component-metadata-form}
 
-Le composant Link permet d’activer les URL externes, notamment les liens de stockage, les informations de copyright, les formulaires de contact, etc. Pour utiliser le composant Lien sur le formulaire de métadonnées, vous devez [configurer le formulaire de métadonnées](#metadata-forms).
+Le composant Lien est utilisé pour activer les URL externes, y compris les liens de stockage, les informations de copyright, les formulaires de contact, etc. Pour utiliser le composant Lien sur le formulaire de métadonnées, vous devez [configurer le formulaire de métadonnées](#metadata-forms).
 
 Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire de métadonnées :
 
-1. Accédez à la page des détails de la ressource et à **[!UICONTROL URL du lien]**.
-1. Ajoutez une URL que vous souhaitez utiliser pour rediriger pour la ressource sélectionnée.
-1. Cliquez sur **[!UICONTROL Ajouter un lien]**. Effectuez l’une des actions suivantes :
-   * Cliquez sur ![icône de copie](assets/do-not-localize/copy.svg) pour copier l’URL.
-   * Cliquez sur ![icône de modification](assets/do-not-localize/edit.svg) pour modifier l’URL.
+1. Accédez à la page des détails de la ressource et à **[!UICONTROL l’URL du lien]**.
+1. Ajoutez une URL que vous souhaitez utiliser comme redirection pour la ressource sélectionnée.
+1. Cliquez sur **[!UICONTROL Ajouter un lien]**. Effectuez l’une des actions suivantes :
+   * Cliquez sur ![l’icône de copie](assets/do-not-localize/copy.svg) pour copier l’URL.
+   * Cliquez sur ![l’icône d’édition](assets/do-not-localize/edit.svg) pour modifier l’URL.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
 ## Étapes suivantes {#next-steps}

@@ -4,17 +4,51 @@ description: La page Mon espace de travail est composée de modules visuels pers
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 89%
+source-wordcount: '791'
+ht-degree: 88%
 
 ---
 
 # Mon espace de travail d’Assets {#my-workspace}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!CONTEXTUALHELP]
 >id="assets_my_workspace"
@@ -49,7 +83,7 @@ Pour épingler une ressource, un dossier ou une collection :
 
 1. Sélectionnez l’élément et cliquez sur **[!UICONTROL Épingler à l’accès rapide]**.
 
-1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Pour les groupes]**, choisissez un nom de groupe existant dans le champ **[!UICONTROL Epinglage pour les groupes]**.
+1. Sélectionnez cette option si vous devez épingler l’élément uniquement pour vous, pour l’ensemble de l’organisation ou pour les groupes sélectionnés. Si vous sélectionnez **[!UICONTROL Pour les groupes]**, choisissez un nom de groupe existant dans le champ **[!UICONTROL Épingler pour les groupes]**.
 
    ![Épinglage d’éléments pour les groupes.](assets/pin-items-for-groups.png)
 1. Cliquez sur **[!UICONTROL Épingler]**.
@@ -67,7 +101,7 @@ Vous pouvez également afficher les principaux termes recherchés, ainsi que le 
 
 **Tâches**
 
-Affiche la liste des tâches qui vous sont actuellement affectées dans l’onglet **[!UICONTROL Mes tâches]**, que vous avez créé dans l’onglet **[!UICONTROL Tâches affectées]**, ainsi que les tâches que vous avez déjà effectuées dans l’onglet **[!UICONTROL Tâches terminées]**. Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Terminer la tâche]** pour approuver ou rejeter une tâche. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
+Affiche la liste des tâches qui vous sont actuellement affectées dans l’onglet **[!UICONTROL Mes tâches]**, que vous avez créée dans l’onglet **[!UICONTROL Tâches affectées]** et les tâches que vous avez déjà effectuées dans l’onglet **[!UICONTROL Tâches terminées]**. Vous pouvez sélectionner une tâche et cliquer sur **[!UICONTROL Terminer la tâche]** pour l’approuver ou la rejeter. Vous pouvez également sélectionner une tâche et cliquer sur **[!UICONTROL Afficher les détails de la tâche]** pour afficher la tâche et l’approuver, la rejeter, la modifier ou la supprimer.
 
 ![Tâches dans l’espace de travail](assets/tasks-workspace.png)
 

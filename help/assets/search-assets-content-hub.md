@@ -1,68 +1,105 @@
 ---
 title: Rechercher des ressources dans le hub de contenus
-description: Découvrez comment rechercher des ressources dans [!DNL Content Hub]
+description: Découvrez comment rechercher des ressources dans  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 1%
+source-wordcount: '708'
+ht-degree: 7%
 
 ---
 
-# Rechercher dans Assets dans [!DNL Content Hub] {#search-assets}
+# Rechercher dans Assets en [!DNL Content Hub] {#search-assets}
 
-![Image de bannière de ressources de partage](assets/search.png)
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
+![Partager l’image de la bannière de ressources](assets/search.png)
 
 >[!AVAILABILITY]
 >
->Le guide Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant Adobe Acrobat AI pour répondre à vos requêtes.
+>Le guide de Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE PDF de guide Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
 
-Lorsque votre référentiel contient un grand nombre de ressources, la recherche de la ressource appropriée prend du temps. La recherche [!DNL The Content Hub] vous permet de rechercher les ressources approuvées afin que vous puissiez y effectuer des actions supplémentaires, telles que télécharger, partager ou créer des collections. Vous pouvez utiliser différentes fonctionnalités pour affiner vos résultats de recherche, par exemple, en effectuant une recherche textuelle à l’aide de filtres, en effectuant une recherche par balises intelligentes ou par balises intelligentes, en recherchant un format de fichier particulier, etc.
+Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel, la recherche de la bonne ressource prend du temps. [!DNL The Content Hub] recherche vous permet de rechercher les ressources approuvées afin d’effectuer des actions supplémentaires sur celles-ci, telles que le téléchargement, le partage ou la création de collections. Vous pouvez utiliser différentes fonctionnalités pour affiner les résultats de votre recherche, par exemple, effectuer une recherche textuelle, utiliser des filtres, effectuer une recherche par balises ou balises intelligentes, rechercher un format de fichier particulier, etc.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 [Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
 ## Ce que vous pouvez rechercher  {#what-you-can-search}
 
-La recherche [!DNL Content Hub] fournit des résultats basés sur :
+La recherche [!DNL Content Hub] fournit des résultats en fonction des éléments suivants :
 
-* **Texte correspondant :** La recherche [!DNL Content Hub] vous permet de rechercher une ressource à l’aide de son nom ou de sa description. Vous pouvez effectuer une recherche par mot-clé, qui compare le mot-clé au texte disponible dans les propriétés d’une ressource.
+* **Texte correspondant :** la recherche [!DNL Content Hub] vous permet de rechercher une ressource à l’aide de son nom ou de sa description. Vous pouvez effectuer une recherche par mot-clé, qui compare le mot-clé au texte disponible dans les propriétés d’une ressource.
 
-* **Contexte de correspondance :** [!DNL Content Hub] la liste des résultats de recherche contient les résultats immédiats des ressources que vous obtenez en fonction du contexte de correspondance. Par exemple, si vous tapez `cool` dans la barre de recherche, les ressources liées à `winter`, `snow`, `cold surroundings` s’affichent dans la liste de recherche.
+* **Contexte de correspondance :** [!DNL Content Hub] liste de résultats de recherche contient les résultats immédiats des ressources obtenues en fonction du contexte de correspondance. Par exemple, si vous saisissez `cool` dans la barre de recherche, les ressources liées à `winter`, `snow`, `cold surroundings` s’affichent dans la liste de recherche.
 
-* **Informations sur les ressources (titre, balises ou balises intelligentes) :** [!DNL Content Hub] utilise un algorithme de recherche dynamique pour classer les résultats de recherche avec précision et autant de pertinence que possible. [Metadata](#asset-properties.md) est la collection de toutes les données disponibles pour une ressource, mais elles ne sont pas nécessairement contenues dans cette ressource. [Cela vous aide à classer davantage les ressources et s’avère utile à mesure que la quantité d’informations numériques augmente ](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
+* **Informations sur les ressources (titre, balises ou balises intelligentes) :** [!DNL Content Hub] utilise un algorithme de recherche dynamique pour classer les résultats de recherche avec précision et autant de pertinence que possible. Les [métadonnées](#asset-properties.md) sont la collection de toutes les données disponibles pour une ressource, mais elles ne sont pas nécessairement contenues dans cette ressource. [Cela vous permet de classer les ressources de manière détaillée à mesure que le volume d’informations numériques augmente](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
 
-* **Date de dernière modification :** Les ressources qui ont été modifiées récemment apparaissent en haut de la liste des résultats de recherche. Vous pouvez également filtrer la période selon vos besoins.
+* **Date de dernière modification :** les ressources qui ont été modifiées récemment apparaissent en haut de la liste des résultats de recherche. Vous pouvez également filtrer la période en fonction de vos besoins.
 
-* **Utilisation :** Les ressources les plus utilisées apparaissent en haut de la liste de recherche.
+* **Utilisation :** les ressources couramment utilisées apparaissent en haut de la liste de recherche.
 
-* **Historique de recherche :** Cliquez dans la zone de recherche sans saisir de caractère pour obtenir votre historique de recherche. Vous pouvez également supprimer un mot-clé particulier de l’historique. L’historique de recherche est enregistré dans la mémoire cache d’un navigateur web, ce qui signifie que si vous accédez à la recherche [!DNL Content Hub] dans un autre navigateur ou effacez la mémoire cache du navigateur, vous ne pouvez plus afficher l’historique de recherche.
+* **Historique de recherche :** cliquez dans la zone de recherche sans saisir de caractère pour obtenir votre historique de recherche. Vous pouvez également supprimer n’importe quel mot-clé de l’historique. L’historique de recherche est enregistré dans la mémoire cache d’un navigateur web, ce qui signifie que si vous accédez à la recherche [!DNL Content Hub] dans un autre navigateur ou effacez la mémoire cache du navigateur, vous ne pouvez plus afficher l’historique de recherche.
 
-* **Effectuez une recherche pendant que vous tapez :** La recherche [!DNL Content Hub] améliore votre expérience de recherche en fournissant des suggestions de saisie semi-automatique au fur et à mesure que vous commencez à saisir du texte.
+* **Recherche en cours de saisie :** la recherche [!DNL Content Hub] améliore votre expérience de recherche en fournissant des suggestions de saisie semi-automatique lorsque vous commencez à saisir du texte.
 
 ## Recherche de base {#basic-search}
 
-Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et spécifiez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner les résultats de la recherche.
+Pour effectuer une recherche de base sur [!DNL the Content Hub], accédez à la barre de recherche et indiquez le mot-clé à rechercher. Accédez aux filtres disponibles dans le volet de gauche et appliquez-les pour affiner vos résultats de recherche.
 
-Par exemple, recherchez toutes les images **[!UICONTROL JPEG]** contenant le mot-clé `architect`, qui ont été modifiées au cours de l’année écoulée. Pour exécuter ce scénario, procédez comme suit :
+Par exemple, recherchez toutes les images **[!UICONTROL JPEG]** contenant le mot-clé `architect`, qui a été modifié au cours de l’année dernière. Pour exécuter ce scénario, procédez comme suit :
 
 1. Spécifiez `architect` comme mot-clé de recherche.
 
 1. Accédez au panneau Filtres > **[!UICONTROL Format]** > sélectionnez **[!UICONTROL JPEG]**.
 
-1. Accédez à **[!UICONTROL Modified]** > spécifiez la plage de dates.
+1. Accédez à **[!UICONTROL Modifié]** > spécifiez la période.
 
    ![Recherche de base](assets/basic-search.png)
 
 ## Limitation des résultats de recherche à l’aide de filtres {#narrow-down-search-results}
 
-Utilisez le panneau Filtres pour rechercher des ressources en fonction des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction de différents prédicats de recherche. Vous pouvez sélectionner tous les prédicats appropriés pour réduire ou réduire les résultats de recherche. Lorsque vous sélectionnez plusieurs options dans un filtre, Content Hub affiche les ressources qui correspondent à l’une des options sélectionnées dans un filtre. Cependant, lorsque vous sélectionnez plusieurs options sur plusieurs filtres, Content Hub affiche uniquement les ressources qui correspondent à toutes les options sélectionnées sur plusieurs filtres pour réduire les résultats de la recherche.
+Utilisez le panneau Filtres pour rechercher des ressources en fonction des métadonnées. Vous pouvez filtrer les résultats de la recherche en fonction de divers prédicats de recherche. Vous pouvez sélectionner tous les prédicats appropriés pour réduire ou affiner vos résultats de recherche. Lorsque vous sélectionnez plusieurs options dans un filtre, Content Hub affiche les ressources qui correspondent à l’une des options sélectionnées dans un filtre. Cependant, lorsque vous sélectionnez plusieurs options dans les filtres, Content Hub affiche uniquement les ressources correspondant à toutes les options sélectionnées dans les filtres pour affiner les résultats de la recherche.
 
-Les filtres par défaut incluent le format de fichier, l’approbation, la date d’approbation, les ressources expirées et non expirées, ainsi que la date d’expiration. Les administrateurs peuvent également configurer les filtres qui s’affichent dans la liste des filtres. Pour plus d’informations, voir [Configuration de l’interface utilisateur de Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
+Les filtres par défaut incluent le format de fichier, approuvé par, la date d’approbation, les ressources expirées et non expirées, ainsi que la date d’expiration. Les administrateurs peuvent également configurer les filtres qui s’affichent dans la liste des filtres. Pour plus d’informations, voir [Configuration de l’interface utilisateur de Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
 <!--
 
@@ -156,6 +193,6 @@ Les filtres par défaut incluent le format de fichier, l’approbation, la date 
 
 -->
 
-## En savoir plus sur la recherche {#do-more-with-search}
+## En savoir plus avec la recherche {#do-more-with-search}
 
-[!DNL The Content Hub] ne se limite pas à la recherche, mais permet d’effectuer des actions supplémentaires, telles que [télécharger](download-assets-content-hub.md), [partager](share-assets-content-hub.md) et [ajouter des ressources à la collection](collections-content-hub.md), directement depuis l’interface de recherche ou d’aperçu. Sélectionnez les ressources de la page des résultats de recherche pour afficher ces options.
+[!DNL The Content Hub] ne se limite pas à la recherche. Il vous permet plutôt d’effectuer des actions supplémentaires, telles que [télécharger](download-assets-content-hub.md), [partager](share-assets-content-hub.md) et [ajouter des ressources à la collection](collections-content-hub.md), directement à partir de l’interface de recherche ou de prévisualisation. Sélectionnez les ressources sur la page des résultats de la recherche pour afficher ces options.

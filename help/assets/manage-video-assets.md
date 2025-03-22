@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5001'
+source-wordcount: '5029'
 ht-degree: 94%
 
 ---
 
 # Gestion des ressources vidéo {#manage-video-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [ Bonnes pratiques en matière de métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Dynamic Media avec fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation destinée aux développeurs AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -28,34 +62,34 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
-Vous pouvez télécharger et prévisualiser des ressources vidéo au format pris en charge vers [!DNL Experience Manager Assets].
+Vous pouvez charger et prévisualiser des ressources vidéo au format pris en charge dans [!DNL Experience Manager Assets].
 <!-- It generates previews for video assets with the extension MP4. -->
 
 ### Chargement de ressources vidéo
 
 Pour charger une ressource vidéo, procédez comme suit :
 
-1. Dans le dossier Ressources numériques ou les sous-dossiers, accédez à l’emplacement où vous devez ajouter la ressource.
-1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils et sélectionnez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
-En savoir plus sur le [téléchargement de ressources](manage-digital-assets.md#uploading-assets) dans [!DNL Experience Manager Assets].
+1. Dans le ou les sous-dossiers de ressources numériques, accédez à l’emplacement où vous devez ajouter la ressource.
+1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils et choisissez **[!UICONTROL Fichiers]**. <br>Vous pouvez également faire glisser un fichier sur l’interface utilisateur.
+En savoir plus sur le [chargement de ressources](manage-digital-assets.md#uploading-assets) dans [!DNL Experience Manager Assets].
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
 
 ### Prévisualisation de ressources vidéo
 
-Vous pouvez prévisualiser des vidéos dans des rendus pris en charge dans l’interface utilisateur de [!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
+Vous pouvez prévisualiser les vidéos dans les rendus pris en charge dans l’interface utilisateur d’[!DNL Assets]. Pour prévisualiser une ressource vidéo, procédez comme suit :
 
-1. Transférez une ressource vidéo d’un format pris en charge vers [!DNL Experience Manager Assets]. En savoir plus sur les [formats vidéo pris en charge](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
-1. Cliquez sur la ressource, puis sélectionnez l’option ![details](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
-1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) de la miniature vidéo. <br>Vous pouvez lire, suspendre, contrôler le volume et zoomer sur la vidéo en plein écran.
+1. Chargez une ressource vidéo d’un format pris en charge dans [!DNL Experience Manager Assets]. En savoir plus sur les [ formats vidéo pris en charge ](file-format-support.md#video-formats). <br>Une fois le chargement effectué, la ressource vidéo est traitée et un rendu d’aperçu est généré.
+1. Cliquez sur la ressource, puis sélectionnez ![l’option Détails](assets/do-not-localize/details_icon.svg) **[!UICONTROL Détails]** dans la barre d’outils supérieure. La ressource vidéo s’ouvre dans la visionneuse de vidéos.
+1. Cliquez sur l’icône ![option de lecture](assets/do-not-localize/play.png) sur la miniature de la vidéo. <br>Vous pouvez lire, mettre en pause, contrôler le volume et zoomer sur la vidéo en plein écran.
 
 Pour les ressources vidéo existantes dans [!DNL Experience Manager Assets], vous devez **[!UICONTROL Retraiter]** les ressources dans [!DNL Experience Manager] pour activer la fonction d’aperçu vidéo. Découvrez comment [retraiter des ressources numériques](reprocessing.md) dans [!DNL Experience Manager].
 
 ### Limites de l’aperçu vidéo
 
-* Les fichiers MXF n’affichent pas d’aperçus vidéo même si le rendu est généré.
-* Les fichiers WebM ne génèrent pas de rendus d’aperçu, car ils peuvent être lus en mode natif par les navigateurs Web.
+* Les fichiers MXF n’affichent pas les aperçus vidéo, même si le rendu est généré.
+* Les fichiers WebM ne génèrent pas de rendus d’aperçu, car ils peuvent être lus en mode natif par les navigateurs web.
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
@@ -86,7 +120,7 @@ Vous pouvez également [dépublier des vidéos pour les supprimer de YouTube](#u
 
 ### Configuration des paramètres de Google Cloud {#configuring-google-cloud-settings}
 
-Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Vous avez besoin du compte, car vous avez besoin d’informations d’identification pour publier des ressources vidéo dans YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
+Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Vous avez besoin du compte car vous avez besoin des informations d’identification pour publier des ressources vidéo dans YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Il n’est pas nécessaire que le compte utilisé avec Google Cloud et le compte Google utilisé pour YouTube soient les mêmes.
 
@@ -596,7 +630,7 @@ For YouTube publishing jobs, do the following:
 
 ## Transcodage à l’aide du profil de traitement {#transcode-video}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] permet de réaliser un transcodage de base des fichiers vidéo MP4 à l’aide de profils de traitement. Cette fonctionnalité vous permet non seulement de charger, mais également de prévisualiser et de mettre à l’échelle un fichier vidéo MP4.
+[!DNL Experience Manager] as a [!DNL Cloud Service] permet de réaliser un transcodage de base des fichiers vidéo MP4 à l’aide de profils de traitement. Cette fonctionnalité vous permet non seulement de télécharger, mais également de prévisualiser et de mettre à l’échelle un fichier vidéo MP4.
 
 ![Création d’un profil de traitement pour le transcodage vidéo dans [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 

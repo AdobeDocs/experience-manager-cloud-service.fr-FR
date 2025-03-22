@@ -2,17 +2,51 @@
 title: Intégrer AEM Assets distant à AEM Sites
 description: Découvrez comment configurer et connecter des sites AEM à des AEM Assets approuvées.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1056'
 ht-degree: 17%
 
 ---
 
 # Intégrer AEM Assets distant à AEM Sites  {#integrate-approved-assets}
 
-| [Bonnes pratiques de recherche](/help/assets/search-best-practices.md) | [Bonnes pratiques relatives aux métadonnées](/help/assets/metadata-best-practices.md) | [Hub de contenus](/help/assets/product-overview.md) | [Fonctionnalités Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentation de développement pour AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -20,7 +54,7 @@ ht-degree: 17%
 >
 >[!BADGE Guide PDF de Dynamic Media avec fonctionnalités OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Une gestion efficace des ressources numériques est essentielle pour offrir des expériences de marque attrayantes et cohérentes sur différentes plateformes en ligne. Dynamic Media avec les fonctionnalités OpenAPI améliore la gestion des ressources numériques en permettant une intégration transparente entre AEM Sites et AEM Assets as a Cloud Service. Cette fonctionnalité innovante vous permet de partager et de gérer facilement différents types de ressources numériques approuvées dans plusieurs environnements AEM, ce qui simplifie les workflows pour les auteurs de sites et les éditeurs de contenu.
+Une gestion efficace des ressources numériques est essentielle pour offrir des expériences de marque attrayantes et cohérentes sur différentes plateformes en ligne. Dynamic Media avec des fonctionnalités OpenAPI améliore la gestion des ressources numériques en permettant une intégration transparente entre AEM Sites et AEM Assets as a Cloud Service. Cette fonctionnalité innovante vous permet de partager et de gérer facilement différents types de ressources numériques approuvées dans plusieurs environnements AEM, ce qui simplifie les workflows pour les auteurs de sites et les éditeurs de contenu.
 
 Dynamic Media avec les fonctionnalités OpenAPI permet aux auteurs de sites d’utiliser des ressources de gestion des ressources numériques à distance directement dans l’éditeur de page d’AEM et [fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=fr), ce qui simplifie la création et la gestion de contenu.
 
@@ -30,11 +64,11 @@ Les utilisateurs peuvent connecter plusieurs instances AEM Sites, sans restricti
 
 Après la configuration initiale, les utilisateurs peuvent créer des pages sur l’instance AEM Sites et ajouter des ressources si nécessaire. Lors de l’ajout de ressources, ils peuvent sélectionner des ressources stockées dans leur gestion des ressources numériques (DAM) locale ou parcourir et utiliser les ressources disponibles dans la gestion des ressources numériques (DAM) distante.
 
-Dynamic Media avec les fonctionnalités OpenAPI offre plusieurs autres avantages, tels que l’accès et l’utilisation de ressources distantes dans le fragment de contenu, la récupération des métadonnées des ressources distantes, etc. Découvrez les autres [avantages de Dynamic Media avec les fonctionnalités OpenAPI par rapport à Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
+Dynamic Media avec des fonctionnalités OpenAPI offre plusieurs autres avantages, tels que l’accès et l’utilisation de ressources distantes dans le fragment de contenu, la récupération des métadonnées des ressources distantes, etc. Découvrez les autres [avantages de Dynamic Media avec les fonctionnalités OpenAPI par rapport à Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
 
 ## Avant de commencer {#pre-requisites-sites-integration}
 
-La prise en charge des ressources distantes à l’aide de Dynamic Media avec les fonctionnalités OpenAPI nécessite :
+La prise en charge des ressources distantes à l’aide de Dynamic Media avec des fonctionnalités OpenAPI nécessite :
 
 * AEM 6.5 SP 18+ ou AEM as a Cloud Service
 
@@ -50,7 +84,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec le
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId] : vous devez envoyer un ticket d’assistance Adobe pour obtenir l’identifiant du client IMS.
 
-     ou configurez les paramètres [OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
+     ou configurez les [ paramètres OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
 
    1. Connectez-vous à la console et cliquez sur **[!UICONTROL OSGi] >** ou
 Utilisez l’URL directe, par exemple : `https://localhost:4502/system/console/configMgr`.
@@ -90,11 +124,11 @@ Il est généralement recommandé d’exécuter toutes vos instances AEM de prod
 
 ## Accès aux ressources à partir de la gestion des ressources numériques à distance {#fetch-assets}
 
-Dynamic Media avec les fonctionnalités OpenAPI vous permet d’accéder aux ressources disponibles dans votre instance DAM distante sur votre éditeur de page AEM Sites local et votre fragment de contenu AEM.
+Dynamic Media avec des fonctionnalités OpenAPI permet d’accéder aux ressources disponibles dans votre instance DAM distante sur votre éditeur de page AEM Sites local et votre fragment de contenu AEM.
 
 ![Image](/help/assets/assets/open-APIs.png)
 
-### Accès aux ressources distantes dans l’éditeur de page AEM {#access-assets-page-editor}
+### Accès aux ressources distantes dans l’éditeur de page d’AEM {#access-assets-page-editor}
 
 Suivez les étapes ci-dessous pour utiliser des ressources distantes dans l’éditeur de page d’AEM sur votre instance AEM Sites. Vous pouvez effectuer cette intégration dans AEM as a Cloud Service et AEM 6.5.
 
@@ -113,7 +147,7 @@ Suivez les étapes ci-dessous pour utiliser des ressources distantes dans l’é
 
 Vous pouvez accéder aux ressources distantes dans l’éditeur de page d’AEM prêt à l’emploi uniquement pour les composants principaux Image v3 et Teaser v2. Pour d’autres composants, y compris les composants personnalisés, des personnalisations sont requises pour intégrer le sélecteur de ressources à ces composants.
 
-#### Vidéo : accès aux ressources distantes dans l’éditeur de page d’AEM
+#### Vidéo : accéder aux ressources distantes dans l’éditeur de page d’AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
@@ -138,10 +172,10 @@ Vous êtes invité à vous connecter.
 1. Sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]**.
    <br> L’URL de la ressource distante s’affiche dans le composant de texte.
 
-#### Vidéo : accès aux ressources distantes dans le fragment de contenu AEM
+#### Vidéo : accéder aux ressources distantes dans le fragment de contenu AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
 
-### Accès aux ressources distantes en Edge Delivery Services {#access-assets-eds}
+### Accès aux ressources distantes dans Edge Delivery Services {#access-assets-eds}
 
-Vous pouvez également accéder aux ressources distantes en Edge Delivery Services. Pour plus d’informations, voir [ Utilisation des ressources d’Assets as a Cloud Service diffusées à l’aide de Dynamic Media avec les fonctionnalités OpenAPI ](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
+Vous pouvez également accéder aux ressources distantes dans Edge Delivery Services. Pour plus d’informations, voir [ Utilisation des ressources d’Assets as a Cloud Service diffusées à l’aide de Dynamic Media avec les fonctionnalités OpenAPI ](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
