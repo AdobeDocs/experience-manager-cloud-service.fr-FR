@@ -2,7 +2,7 @@
 title: Configuration multi-magasin Commerce
 description: Découvrez comment mapper plusieurs vues de magasin d’Adobe Commerce à Adobe Experience Manager. Cela permet aux projets de prendre en charge des cas d’utilisation à plusieurs clients et multilingues.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 74%
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 # Configuration multi-magasin Commerce {#multi-store}
 
-Les composants principaux Adobe Experience Manager (AEM) CIF peuvent être utilisés sur plusieurs structures de site d’ et l’implémentation du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
+Les composants principaux CIF Adobe Experience Manager (AEM) peuvent être utilisés sur plusieurs structures de site AEM et l’implémentation du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
 Présentation vidéo détaillant les options d’intégration de plusieurs vues de magasin Adobe Commerce à Adobe Experience Manager Sites.
 
@@ -30,7 +30,7 @@ Les fonctionnalités de gestion multi-site AEM de Live Copy et Language Copy s
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
 
-Pour connecter un site AEM et AEM composants principaux à une vue de magasin dédiée, procédez comme suit :
+Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
 
 ## Configuration {#configuration}
 
@@ -53,10 +53,10 @@ Pour connecter un site AEM et AEM composants principaux à une vue de magasin d�
 4. Affectez la configuration enfant à un site AEM.
 
    * Accédez à la console AEM Sites.
-   * Accédez à la racine de région ou de langue de la structure de votre site. Par exemple, `/content/venia/us _or_ /content/venia/us/en` pour la page d’exemple Venia
+   * Accédez à la racine de région ou de langue de la structure de votre site. Par exemple, `/content/venia/us _or_ /content/venia/us/en` pour l’exemple de page Venia
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
-   * Dans la section `Configuration` , sélectionnez la configuration que vous avez créée à l’étape 3.
+   * Dans la section `Configuration` , sélectionnez la configuration que vous avez créée à l’étape 3
 
 ## Ressources supplémentaires
 

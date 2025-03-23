@@ -3,13 +3,13 @@ title: Prise en main d’AEM Commerce as a Cloud Service
 description: Découvrez comment déployer un projet commercial Adobe Experience Manager (AEM) à l’aide d’Adobe Cloud Manager, d’un pipeline CI/CD et du storefront de référence Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 90%
@@ -44,7 +44,7 @@ Cette variable d’environnement est utilisée à deux endroits :
 
 Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
-Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. AEM instances Publish ne peuvent pas afficher de données intermédiaires.
+Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Ces données nécessitent que vous configuriez un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances de création AEM pour des raisons de sécurité. Les instances de publication AEM ne peuvent pas afficher de données intermédiaires.
 
 Il existe deux options pour configurer le point d’entrée :
 
@@ -108,7 +108,7 @@ Le module complémentaire et les [Composants principaux CIF](https://github.com/
 
 Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM, accédez à Outils > Cloud Service > CIF Configuration.
+1. Dans AEM, accédez à Outils > Services cloud > Configuration de CIF.
 
 2. Sélectionnez la configuration de commerce que vous souhaitez modifier.
 

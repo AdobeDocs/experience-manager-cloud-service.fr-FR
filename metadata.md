@@ -6,10 +6,10 @@ index: y
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: d0e79edd83faafc1233b812019c877ec360e50c8
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 51%
@@ -19,7 +19,7 @@ ht-degree: 51%
 
 # Métadonnées pour utilisation interne
 
-Les métadonnées du système de création GitHub sont hiérarchisées et définies comme les niveaux de précédent croissants suivants.
+Les métadonnées dans le système de création GitHub sont hiérarchiques et sont définies selon les niveaux de précédent croissants suivants.
 
 1. metadata.md
 1. Table des matières
@@ -50,4 +50,4 @@ Article
 
 * `title`
 * `description`
-* `contentOwner` (uniquement sur le contenu de la ressource principale sous `/help/assets`)
+* `contentOwner` (uniquement sur le contenu des ressources de base sous `/help/assets`)
