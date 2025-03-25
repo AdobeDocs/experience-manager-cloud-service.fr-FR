@@ -5,7 +5,7 @@ feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 66%
@@ -15,7 +15,7 @@ ht-degree: 66%
 
 # Intégration d’AEM as a Cloud Service à Adobe Campaign {#integrating-campaign}
 
-Découvrez la prise en charge d’AEM as a Cloud Service pour les intégrations avec Adobe Campaign.
+Découvrez la prise en charge d’AEM as a Cloud Service pour les intégrations à Adobe Campaign.
 
 >[!NOTE]
 >
@@ -23,16 +23,15 @@ Découvrez la prise en charge d’AEM as a Cloud Service pour les intégrations 
 >
 >Pour plus d’informations sur l’intégration d’Adobe Campaign à AEM 6.5, solution AEM on-premise ou hébergée par AMS, [consultez ce document](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=fr).
 
-## Intégration à Adobe Campaign v7/v8 {#acc}
+## Intégration avec Adobe Campaign v7/v8 {#acc}
 
 La prise en charge de l’intégration à AEM as a Cloud Service dépend de la version de Campaign que vous avez implémentée.
 
-| Version de Campaign | Intégration à AEMaaCS |
+| Version de la campagne | Intégration à AEMaaCS |
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=fr) | Non pris en charge |
 | [Campaign v8 (console cliente)](https://experienceleague.adobe.com/fr/docs/campaign-v8) | Non pris en charge |
-| Interface utilisateur web de Campaign | Pris en charge. [En savoir plus](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
-
+| Interface utilisateur web de Campaign | Pris en charge. [ En savoir plus ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Intégrer à Adobe Campaign Standard {#acs}
 
