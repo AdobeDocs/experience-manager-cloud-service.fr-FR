@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
+source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6106'
 ht-degree: 99%
 
 ---
@@ -657,7 +657,7 @@ ht-degree: 99%
       + [Chargement et ajout de ressources](/help/assets/add-delete-assets-view.md)
       + [Importer des ressources en bloc](/help/assets/bulk-import-assets-view.md)
       + [Rechercher et découvrir des ressources](/help/assets/search-assets-view.md)
-      + [Filtres de recherche personnalisée](/help/assets/custom-search-filters.md)
+      + [Filtres de recherche personnalisés](/help/assets/custom-search-filters.md)
       + [Tâches de gestion des ressources](/help/assets/manage-organize-assets-view.md)
       + [Modification des images](/help/assets/edit-images-assets-view.md)
       + [Modifier des vidéos](/help/assets/edit-videos-assets-view.md)
@@ -1318,6 +1318,7 @@ ht-degree: 99%
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=fr)
+         + [Obsolescence de l’éditeur de SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md)
          + [Tutoriel sur SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Prise en main avec React](/help/implementing/developing/hybrid/getting-started-react.md)

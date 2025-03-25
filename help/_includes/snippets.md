@@ -1,5 +1,5 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
@@ -248,7 +248,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 >[!IMPORTANT]
 >
->L’éditeur de SPA [a été abandonné](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) pour les nouveaux projets. Il est toujours pris en charge par Adobe pour les projets existants, mais ne doit pas être utilisé pour de nouveaux projets. Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont désormais les suivants :
+>L’éditeur de SPA [a été abandonné](/help/implementing/developing/hybrid/spa-editor-deprecation.md) pour les nouveaux projets. Il est toujours pris en charge par Adobe pour les projets existants, mais ne doit pas être utilisé pour de nouveaux projets. Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont désormais les suivants :
 >
 >* L’[éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour modifier visuellement du contenu découplé.
 >* L’[éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification du contenu découplé à partir des formulaires.
