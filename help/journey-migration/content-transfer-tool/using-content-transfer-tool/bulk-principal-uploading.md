@@ -1,20 +1,20 @@
 ---
 title: Chargement groupé des entités de sécurité dans IMS après l’utilisation du CTT
-description: Cette section présente les fichiers de chargement en bloc pour les groupes et les utilisateurs ainsi que leur utilisation dans Admin Console pour créer des groupes et des utilisateurs dans IMS.
+description: Cette section présente les fichiers de chargement en masse pour les groupes et les personnes, ainsi que leur utilisation dans Admin Console pour créer des groupes et des personnes dans IMS.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Chargement groupé des entités de sécurité dans IMS après l’utilisation du CTT {#bulk-principal-uploading}
+# Chargement en masse des entités principales dans IMS après l’utilisation de l’outil de transfert de contenu (CTT) {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
->title="Chargement groupé des entités"
->abstract="Cette section présente les fichiers de chargement en bloc pour les groupes et les utilisateurs ainsi que leur utilisation dans Admin Console pour créer des groupes et des utilisateurs dans IMS."
+>title="Chargement en masse de entités princpales"
+>abstract="Cette section présente les fichiers de chargement en masse pour les groupes et les personnes, ainsi que leur utilisation dans Admin Console pour créer des groupes et des personnes dans IMS."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentation dʼAEM Admin Console"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
