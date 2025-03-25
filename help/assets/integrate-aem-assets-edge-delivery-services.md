@@ -2,7 +2,7 @@
 title: Intégration lors  [!DNL AEM Assets]  la création de contenu pour  [!DNL Edge Delivery Services]
 description: Découvrez comment intégrer le [!DNL AEM Assets] avec [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  [!DNL Microsoft Word]  et [!DNL Google Docs], integrate [!DNL AEM Assets] avec [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Universal Editor] et l’intégrer [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Microsoft Word] et [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
+source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
