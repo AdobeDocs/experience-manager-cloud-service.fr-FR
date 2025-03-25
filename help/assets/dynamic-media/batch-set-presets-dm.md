@@ -5,51 +5,14 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 97%
+source-wordcount: '3434'
+ht-degree: 98%
 
 ---
 
 # À propos des paramètres prédéfinis de lot {#about-bsp}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Utilisez les **[!UICONTROL paramètres prédéfinis de lot]** pour créer et organiser différentes ressources dans une visionneuse d’images ou une visionneuse à 360° lorsque vous chargez des fichiers de ressources dans un dossier, individuellement ou par une ingestion en masse. Il est possible d’exécuter le paramètre prédéfini en même temps que les tâches d’importation de ressources planifiées dans [!DNL Dynamic Media]. Chaque paramètre prédéfini est un ensemble d’instructions indépendant possédant un nom unique. Il définit comment construire la visionneuse d’images ou la visionneuse à 360° à l’aide d’images correspondant aux conventions d’affectation des noms définies dans la recette du paramètre prédéfini.
 
