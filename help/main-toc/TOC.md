@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
+source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
 workflow-type: tm+mt
 source-wordcount: '6106'
 ht-degree: 99%
@@ -1323,7 +1323,7 @@ ht-degree: 99%
          + [Tutoriel sur SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Prise en main avec React](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Prise en main avec Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [Immersion dans les SPA](/help/implementing/developing/hybrid/deep-dives.md)
+         + [Immersion dans les SPA](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [Développement de SPA pour AEM](/help/implementing/developing/hybrid/developing.md)
          + [Présentation de l’éditeur de SPA](/help/implementing/developing/hybrid/editor-overview.md)
          + [Plan directeur d’applications sur une seule page (SPA)](/help/implementing/developing/hybrid/blueprint.md)
