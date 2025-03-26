@@ -4,9 +4,9 @@ description: Découvrez comment déclarer des redirections 301 ou 302 sans accè
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ Pour diverses raisons, les organisations réécrivent les URL d’une manière q
 
 Les scénarios incluent :
 
-* Une page d’HTML supprimée, de sorte que l’utilisateur ou l’utilisatrice est redirigé vers une page de remplacement (parfois la page d’accueil) plutôt que de voir une erreur `404 Page Not Found`.
-* Une page d’HTML renommée.
+* Une page HTML supprimée, de sorte que l’utilisateur est redirigé vers une page de remplacement (parfois la page d’accueil) plutôt que de voir une erreur `404 Page Not Found`.
+* Une page HTML renommée.
 * Optimisation de l’optimisation pour les moteurs de recherche.
 
 AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) pour implémenter les redirections côté client, mais la stratégie décrite dans cet article, redirections sans pipeline, est un bon choix lorsque :
@@ -35,10 +35,12 @@ Le cœur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher
 * Flexibilité totale grâce à l’écriture d’une application personnalisée. Par exemple, une interface utilisateur ou une interface de ligne de commande pour gérer les mappages d’URL ou encore un formulaire pour charger un mappage de réécriture, qui utilise ensuite les API AEM pour publier le fichier de mappage de réécriture.
 
 >[!NOTE]
-> Cette fonctionnalité nécessite la version AEM **18311 ou ultérieure**.
+> Cette fonctionnalité nécessite AEM version **18311 ou ultérieure**.
 
 >[!NOTE]
 > L’utilisation de cette fonctionnalité de Redirect Map Manager nécessite ACS Commons version **6.7.0 ou ultérieure** tandis que l’utilisation de Redirect Manager nécessite version **6.10.0 ou ultérieure**.
+
+Pour obtenir un guide de mise en œuvre détaillé, reportez-vous au tutoriel [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## La carte de réécriture {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## Considérations {#considerations}
 
 Gardez à l’esprit les points suivants :
@@ -83,3 +84,8 @@ Gardez à l’esprit les points suivants :
 * Par défaut, lors du chargement d’un mappage de réécriture, Apache démarre sans attendre le chargement du ou des fichiers de mappage complets. Il peut donc y avoir des incohérences temporaires jusqu’au chargement du ou des mappages complets. Ce paramètre peut être modifié de sorte qu’Apache attende le chargement du contenu de mappage complet, mais il faut plus de temps pour qu’Apache démarre. Pour modifier ce comportement afin qu’Apache attende, ajoutez `wait:true` au fichier `managed-rewrite-maps.yaml`.
 * Pour modifier la fréquence entre les chargements, ajoutez `ttl: <integer>` au fichier `managed-rewrite-maps.yaml`. Par exemple : `ttl: 120`.
 * Apache a une limite de longueur de 1 024 pour les entrées uniques RewriteMap.
+
+## Tutoriels {#tutorials}
+
+1. [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [Redirections d’URL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
