@@ -1,18 +1,18 @@
 ---
-title: Gérer des fragments de contenu
+title: Gestion des fragments de contenu
 description: Découvrez comment gérer vos fragments de contenu AEM à partir de la console et de l’éditeur, créer du contenu comme base de votre contenu découplé ou pour la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 38%
 
 ---
 
-# Gérer des fragments de contenu {#managing-content-fragments}
+# Gestion des fragments de contenu {#managing-content-fragments}
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ Après avoir défini vos [modèles de fragment de contenu](#creating-a-content-m
 
 Vous pouvez utiliser le panneau tout à gauche de la console [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) pour sélectionner **Fragments de contenu** comme type de ressource à afficher, parcourir et gérer :
 
-![Console Fragments de contenu - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Console Fragments de contenu - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 Sélectionnez **Fragments de contenu** pour ouvrir la console dans un nouvel onglet.
 

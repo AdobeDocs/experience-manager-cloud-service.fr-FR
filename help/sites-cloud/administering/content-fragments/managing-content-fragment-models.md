@@ -4,9 +4,10 @@ description: Découvrez comment gérer les modèles de fragment de contenu ; ils
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 36%
 
 ---
@@ -49,7 +50,7 @@ Pour donner un aperçu très rapide, pour utiliser les modèles de fragment de c
 
 Vous pouvez utiliser le panneau tout à gauche de la console [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) pour sélectionner **Modèles de fragment de contenu** comme type de ressource à afficher, parcourir et gérer :
 
-![Console Fragments de contenu - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Console Fragments de contenu - navigation](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Cette action ouvre la vue pour les modèles de fragment de contenu :
 
@@ -62,7 +63,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
    * Affiche également votre organisation IMS.
    * Fournit diverses [actions](#actions-unselected)
 * Le panneau de gauche :
-   * Affiche toutes les [configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) répertoriées comme dossiers
+   * Affiche les [chemins d’accès à toutes les configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) répertoriés sous forme de dossiers
    * Ici, vous pouvez masquer ou afficher l’arborescence de dossiers.
    * Vous pouvez sélectionner un dossier spécifique de l’arborescence
    * Il peut être redimensionné pour afficher les dossiers imbriqués (sous-configurations)
@@ -75,7 +76,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
          * [Vous pouvez sélectionner les colonnes à afficher](#select-columns-console)
       * [Plusieurs champs d’information](#information-content-fragment-models) à propos d’un modèle de fragment de contenu fournissent des liens ; en fonction du champ, ils peuvent :
          * Ouvrez le modèle approprié dans l’éditeur
-         * Afficher des informations sur la configuration
+         * Afficher des informations sur le chemin d’accès à la configuration
          * Afficher des informations sur l’état du modèle
       * [Certains autres champs d’information](#information-content-fragments) à propos d’un modèle de fragment de contenu peuvent être utilisés pour le [filtrage rapide](#fast-filtering) :
          * Sélectionnez une valeur dans la colonne pour l’appliquer immédiatement en tant que filtre
@@ -96,8 +97,8 @@ Le panneau principal/droit (vue du tableau) de la console fournit diverses infor
    * Fournit un lien pour ouvrir le modèle dans l’éditeur.
 * Verrouillé
    * Lorsque le modèle est verrouillé, une icône de cadenas l’indique.
-* **Configuration**
-   * Fournit un lien pour ouvrir la configuration dans la console.
+* **Chemin**
+   * Fournit le chemin d’accès sous la forme d’un lien pour ouvrir la configuration dans la console.
 Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
 * **Statut**
    * Informations uniquement.
@@ -123,7 +124,7 @@ Lorsque vous sélectionnez un modèle spécifique, ses propriétés s’affichen
 
 ![Console Fragments de contenu - Informations sur un modèle de fragment de contenu sélectionné](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Chemin](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Statut](#enabling-a-content-fragment-model)**
 * **Titre**
 * **Balises**
@@ -233,7 +234,7 @@ Sélectionnez par exemple **Activé** dans la colonne **Statut**. Une fois cette
    >* Si l[utilisation des modèles de fragment de contenu a été activée ](/help/sites-cloud/administering/content-fragments/setup.md)
    >* lorsque vous avez sélectionné le dossier dans lequel vous souhaitez créer le modèle.
 
-1. Sélectionnez la **Configuration** et spécifiez le **Nom**.
+1. Sélectionnez le **Chemin** de la configuration et spécifiez le **Nom**.
 
    >[!NOTE]
    >
