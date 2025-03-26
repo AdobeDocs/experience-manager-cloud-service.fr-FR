@@ -2,9 +2,9 @@
 title: Modification des métadonnées en bloc dans  [!DNL Assets View]
 description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [DNL! Vue Assets] simultanément.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-La fonctionnalité **[!DNL Bulk Metadata Edit]** de [!DNL Assets View] vous permet de modifier simultanément un ensemble prédéfini de champs de métadonnées standard pour plusieurs fichiers de ressources. Sélectionnez plusieurs ressources et mettez à jour en une fois leur ensemble prédéfini de métadonnées standard au lieu de mettre à jour individuellement ces métadonnées standard pour chaque ressource. Cette fonctionnalité de modification en bloc de l’ensemble standard de propriétés de métadonnées pour plusieurs ressources à la fois maintient l’efficacité, la cohérence et la précision de ces propriétés de métadonnées standard sur l’ensemble important de ressources, améliorant ainsi la capacité de recherche et l’organisation de ces ressources.
+La fonctionnalité **[!DNL Bulk Metadata Edit]** de [!DNL Assets View] vous permet de modifier simultanément un ensemble prédéfini de champs de métadonnées standard pour plusieurs fichiers de ressources. Sélectionnez plusieurs ressources et mettez à jour en une fois leur ensemble prédéfini de métadonnées standard au lieu de mettre à jour individuellement ces métadonnées standard pour chaque ressource. Cette fonctionnalité permet de maintenir l’efficacité, la cohérence et la précision de l’ensemble des propriétés de métadonnées standard sur les grands ensembles de ressources, ce qui améliore la capacité de recherche et l’organisation de ces ressources.
 
 ## Modification en masse des métadonnées de ressources {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
