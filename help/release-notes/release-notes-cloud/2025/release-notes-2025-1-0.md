@@ -3,10 +3,11 @@ title: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités de la vue AEM Assets {#new-features-assets}
+### Nouvelles fonctionnalités d’AEM Assets {#new-features-assets}
 
-**Personnalisation des filtres de recherche**
+**Rapports de diffusion Dynamic Media**
 
-Les filtres de recherche personnalisés améliorent la précision et l’efficacité de la recherche d’informations pertinentes. Il permet des recherches plus personnalisées, en filtrant les données en fonction d’attributs spécifiques tels que la marque, le produit, la catégorie ou d’autres identifiants clés. Cela améliore l’organisation, réduit le temps passé à analyser des résultats non pertinents et permet une prise de décision plus rapide. Elle prend également en charge l’évolutivité, car les jeux de données volumineux deviennent plus faciles à parcourir et à analyser.
+Obtenez des informations de diffusion pour les ressources diffusées avec Dynamic Media, y compris le nombre de diffusions au niveau des ressources, les détails sur les référents, les chemins d’accès aux ressources dans AEM Assets et des identifiants de ressource uniques. Générez des rapports pour toutes les ressources du référentiel AEM Assets ou pour des hiérarchies de dossiers spécifiques. Ces informations vous permettent de mesurer le retour sur investissement des ressources diffusées, d’évaluer les performances des canaux et de prendre des décisions éclairées en matière de gestion des ressources.
 
-![filtres de recherche personnalisés](/help/assets/assets/custom-search-filters.png)
+![Rendus dynamiques](/help/assets/assets/referrer.png)
 
-### Nouvelles fonctionnalités dans Content Hub {#new-features-content-hub}
+**Plusieurs sous-titres et pistes audio Dynamic Media**
 
-Description
+[Prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
+
+**Prise en charge du streaming adaptatif dynamique via HTTP**
+
+Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
+
+* Le streaming adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices.
+
+* Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos.
+
+**Relations des ressources**
+
+La vue Assets prend désormais en charge l’affichage et la modification des relations de ressources dans un panneau simplifié de détails des ressources. Ajoutez facilement des relations telles que Source et Dérivé au contenu afin que les utilisateurs et utilisatrices puissent trouver plus efficacement du contenu Hero essentiel.
+
+**Retraiter les ressources**
+
+La vue Assets prend désormais en charge le retraitement des ressources disponibles dans un dossier. Vous pouvez choisir d’utiliser l’option **Processus complet** ou d’utiliser des options avancées, telles que les rendus d’aperçu par défaut, les métadonnées, le workflow de post-traitement et le profil de traitement.
 
 ### Fonctionnalités d’accès anticipé dans AEM Assets {#early-access-features-assets}
 
