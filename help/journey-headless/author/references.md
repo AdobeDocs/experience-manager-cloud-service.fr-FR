@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 89%
 
 ---
 
@@ -44,6 +44,13 @@ Certaines références comportent des types de données dédiés (par exemple, R
 
 Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Vous accédez alors à un navigateur qui vous permet de sélectionner l’élément de contenu.
 
+Il en existe deux types :
+
+* **Référence de contenu**
+   * indique le chemin d’accès à la ressource référencée
+* **Référence de contenu (UUID)**
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée sous la forme d’un identifiant universel unique (UUID) qui référence la ressource
+
 ## Références de ressources/médias {#assets-media-references}
 
 Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre, vous permettant de sélectionner la ressource.
@@ -75,6 +82,13 @@ Voilà pour commencer. En fonction du niveau de complexité, une distinction peu
 Vous pouvez représenter ces interconnexions à l’aide de références de fragments, car ils peuvent être compris à la fois par vous (l’auteur) et par les applications découplées.
 
 En tant qu’auteur ou autrice, vous n’êtes pas responsable de la définition de ces relations (l’architecte de contenu les définit lors de la création du modèle de fragment de contenu), mais vous devez savoir comment reconnaître et modifier les références.
+
+Il existe deux types :
+
+* **Référence du fragment**
+   * indique le chemin d’accès à la ressource référencée
+* **Référence de fragment (UUID)**
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée sous la forme d’un identifiant universel unique (UUID) qui référence la ressource
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
