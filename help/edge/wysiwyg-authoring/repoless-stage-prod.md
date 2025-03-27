@@ -4,9 +4,9 @@ description: Découvrez comment configurer des sites distincts pour vos environn
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ Maintenant que vous avez effectué toutes les modifications de configuration né
 1. Visitez votre nouveau site Edge Delivery Services pour cette page à l’adresse `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 Si les modifications que vous avez apportées s’affichent, la configuration distincte de votre site de production fonctionne correctement.
+
+## Utilisation {#usage}
+
+Une fois que vous avez configuré votre projet avec des environnements d’évaluation et de production sans réponse, vous pouvez gérer le code pour ceux-ci indépendamment. Le diagramme suivant illustre les relations du contenu dans vos différents environnements, dans AEM, les sites Edge Delivery Services et vos référentiels GitHub.
+
+![Illustration des environnements AEM et des environnements de production/d’évaluation de réponses](assets/repoless/aem-edge-github.png)
