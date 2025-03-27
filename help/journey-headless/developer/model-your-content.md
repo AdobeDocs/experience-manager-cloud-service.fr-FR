@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 96%
 
 ---
 
@@ -177,16 +177,17 @@ Par exemple :
 
 AEM fournit les types de données suivants pour que vous puissiez modéliser votre contenu :
 
-* Texte d’une seule ligne
-* Texte de plusieurs lignes
+* Une seule ligne de texte
+* Plusieurs lignes de texte
 * Nombre
 * Booléen
 * Date et heure
 * Énumération
 * Balises
-* Référence de contenu
-* Référence du fragment
+* Référence du fragment / UUID de référence du fragment
+* Référence de contenu / UUID de référence de contenu
 * Objet JSON
+* Espace réservé pour tabulation
 
 ### Références et contenu imbriqué {#references-nested-content}
 
@@ -213,7 +214,9 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette action sous **Outils** > **Général** > **Modèles de fragment de contenu**. Par exemple :
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Tout cela peut être effectué dans la console Fragments de contenu. Dans la console , sélectionnez le panneau des modèles de fragment de contenu, accédez au dossier approprié, puis utilisez **Créer** pour ouvrir la boîte de dialogue **Nouveau modèle de fragment de contenu**.
+
+Une fois la création effectuée, vous pouvez modifier votre modèle. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ Les fragments de contenu sont toujours basés sur un modèle de fragment de cont
 
 ### Sélection du modèle approprié {#select-model}
 
-La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Pour ce faire, utilisez Créer > Fragment de contenu dans le dossier requis dans Ressources > Fichiers. L’assistant vous guide tout au long des étapes.
-
-Un fragment de contenu est basé sur un modèle de fragment de contenu spécifique que vous sélectionnez comme première étape du processus de création.
+La première étape pour créer réellement votre contenu consiste à créer un fragment de contenu. Cette opération s’effectue à l’aide de **Créer** dans l’onglet **Fragments de contenu** de la console Fragments de contenu.
 
 ### Création et modification de contenu structuré {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ Une fois votre fragment créé, vous pouvez l’ouvrir dans l’éditeur de frag
 
 Après avoir sélectionné le modèle approprié, un fragment de contenu est ouvert pour modification dans l’éditeur de fragment de contenu :
 
-![Éditeur de fragment de contenu](assets/cfm-editor.png)
+![Éditeur de fragment de contenu - Aperçu](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
