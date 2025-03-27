@@ -3,10 +3,10 @@ title: API de diffusion
 description: Découvrez comment utiliser les API de diffusion.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 11%
+source-wordcount: '634'
+ht-degree: 12%
 
 ---
 
@@ -75,11 +75,7 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 | [Conteneur du lecteur pour la ressource vidéo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Renvoie le conteneur du lecteur pour la ressource vidéo. Vous pouvez incorporer le lecteur dans un élément HTML iframe et lire la vidéo. |
 | [Manifestes de lecture au format de sortie sélectionné](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Renvoie le fichier de manifeste de lecture pour la ressource vidéo spécifiée au format de sortie sélectionné. Vous devez créer un lecteur personnalisé capable de diffuser en continu adaptative par le biais des protocoles HLS ou DASH pour pouvoir extraire le fichier de manifeste de lecture et lire la vidéo. |
 
-
->[!NOTE]
->
-* [Les paramètres d’image prédéfinis, l’imagerie dynamique et d’autres modificateurs d’image](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) sont disponibles à titre de fonctionnalité à disponibilité limitée. Pour obtenir l’accès, [créez et envoyez un dossier de service clientèle Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-* Le recadrage intelligent n’est pas disponible avec [Assets Prime](/help/assets/assets-ultimate-overview.md).
+Pour plus d’informations sur les offres Dynamic Media disponibles et leurs fonctionnalités, consultez [Dynamic Media Prime et Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Points d’entrée des API de diffusion {#delivery-apis-endpoint}
 
