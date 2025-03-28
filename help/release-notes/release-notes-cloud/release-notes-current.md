@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 76%
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2025.4.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 24 avril 2025. La prochaine disponibilité des fonctionnalités (2025.5.0) est prévue pour le vendredi 29 mai 2025.
+La date de publication de la version actuelle d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) est le vendredi 27 mars 2025. La prochaine disponibilité des fonctionnalités (2025.4.0) est prévue pour le vendredi 24 avril 2025.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
