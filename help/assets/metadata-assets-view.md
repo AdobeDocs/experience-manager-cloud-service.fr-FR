@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 91%
+source-wordcount: '2124'
+ht-degree: 85%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 91%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -217,6 +217,39 @@ Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire 
    * Cliquez sur ![l’icône de copie](assets/do-not-localize/copy.svg) pour copier l’URL.
    * Cliquez sur ![l’icône d’édition](assets/do-not-localize/edit.svg) pour modifier l’URL.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
+
+
+### Utilisation du composant Balises dans le formulaire de métadonnées {#tag-component-metadata-form}
+
+L’élément racine représente l’arborescence des balises que vous pouvez associer aux ressources et qui permet d’identifier la ressource en fonction de la balise qui lui est attribuée. De plus, vous pouvez restreindre l’accès à une taxonomie spécifique lors de la configuration du formulaire de métadonnées dans l’éditeur de métadonnées.
+
+#### Configuration du composant Balises {#tags-component-configuration}
+
+Configurez le composant Balises en procédant comme suit :
+
+1. Accédez à l’éditeur de métadonnées, puis à l’**[!UICONTROL Balises]** et placez-le sur la zone de travail.
+1. Renommez le composant sur la zone de travail. Pour ce faire, accédez à **[!UICONTROL Libellé]** sous la propriété [!UICONTROL Métadonnées] dans le panneau Paramètres et ajoutez le texte pour son identification.
+1. Sous la [!UICONTROL propriété de métadonnées] dans le panneau Paramètres, recherchez la propriété de métadonnées que vous souhaitez affecter au composant.
+1. Cliquez sur **[!UICONTROL Restreindre à une taxonomie spécifique]** pour restreindre le chemin racine de la taxonomie. Pour ce faire, parcourez les balises et choisissez la taxonomie du chemin d’accès particulier.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
+
+   ![Configuration des balises racine](assets/root-tag-config.png)
+
+1. [Attribuer un formulaire de métadonnées à des dossiers](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+Pour afficher les balises racine configurées, accédez à la page de détails de la ressource où le mappage entre le formulaire de métadonnées et les balises racine est effectué.
 
 ## Étapes suivantes {#next-steps}
 
