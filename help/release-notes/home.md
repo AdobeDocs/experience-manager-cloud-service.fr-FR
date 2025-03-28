@@ -4,7 +4,7 @@ description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 4844a75e23dc6338052f6a78e4e77c0d9caeef04
+source-git-commit: 7fbf67498b97efac7f38fd6e8736c9ae34955f06
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 99%
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2025.3.0 |
+| Version | 2025.4.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 
