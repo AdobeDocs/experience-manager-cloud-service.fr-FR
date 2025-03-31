@@ -2,10 +2,10 @@
 title: Migration des groupes
 description: Présentation de la migration de groupe dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 7%
+source-wordcount: '1921'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ La plupart des groupes migrés sont configurés pour être gérés par IMS.  Cel
 
 Notez que les groupes migrés ne sont plus considérés comme des « groupes locaux » AEM ; il s’agit de groupes prêts pour IMS dans AEM, bien qu’ils puissent ne pas exister encore dans IMS.  Ils doivent être recréés séparément dans IMS afin de pouvoir être synchronisés entre AEM et IMS.  Les groupes peuvent être créés dans IMS via Admin Console, entre autres méthodes, individuellement ou en bloc.  Voir [Gérer les groupes d’utilisateurs](https://helpx.adobe.com/fr/enterprise/using/user-groups.html) pour plus d’informations sur la création de groupes individuellement ou en bloc sur Admin Console.
 
-L’exception à cette configuration IMS concerne les groupes créés par les collections Assets. Lors de la création d’une collection sur AEM, des groupes sont créés pour accéder à cette collection. Ces groupes sont migrés vers le système cloud, mais ils ne sont pas configurés pour être gérés par IMS.  Pour ajouter des utilisateurs IMS à ces groupes, ils doivent être ajoutés à la page Propriétés du groupe dans l’interface utilisateur d’Assets, individuellement ou collectivement dans le cadre d’un autre groupe IMS.
+L’exception à cette configuration IMS concerne les groupes créés par des collections Assets et des dossiers privés. Lors de la création d’une collection ou d’un dossier privé sur AEM, des groupes sont créés pour accéder à ce contenu. Ces groupes sont migrés vers le système cloud, mais ils ne sont pas configurés pour être gérés par IMS.  Pour ajouter des utilisateurs IMS à ces groupes, ils doivent être ajoutés à la page Propriétés du groupe dans l’interface utilisateur d’Assets, individuellement ou collectivement dans le cadre d’un autre groupe IMS.
 
 
 ## Migration de l’exclusion d’un groupe {#group-migration-option}
