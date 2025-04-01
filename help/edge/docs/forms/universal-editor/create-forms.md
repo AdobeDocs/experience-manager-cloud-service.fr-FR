@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -45,20 +45,20 @@ L’éditeur universel vous permet de créer facilement des formulaires réactif
 
 ### Créer un formulaire
 
-1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+1. Connectez-vous à votre instance de création AEM Forms as a Cloud Service.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Forms adaptatif]**. Cette action permet d’ouvrir l’assistant.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant.
 1. Dans l’onglet **Source**, sélectionnez un modèle de formulaire basé sur Edge Delivery Services :
 
    ![Créer des formulaires EDS](/help/edge/assets/create-eds-forms.png)
 
 
-   Lorsque vous sélectionnez un modèle basé sur Edge Delivery Services, le bouton **[!UICONTROL Créer]** est activé.
+   Lorsque vous sélectionnez un modèle basé sur Edge Delivery Services, le bouton **[!UICONTROL Créer]** est activé.
 1. (Facultatif) Dans les onglets **[!UICONTROL Source de données]** ou **[!UICONTROL Envoi]**, vous pouvez sélectionner une source de données ou une action d’envoi.
 1. (Facultatif) Dans l’onglet **[!UICONTROL Diffusion]**, vous pouvez spécifier une date de publication ou de dépublication pour un formulaire.
 
-1. Cliquez sur **[!UICONTROL Créer]**. L’assistant **Créer un formulaire** s’affiche.
-1. Spécifiez les **Nom** et **Titre**.
+1. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche.
+1. Spécifiez le **Nom** et le **Titre**.
 1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
    `https://github.com/wkndforms/edsforms`
 1. Cliquez sur **[!UICONTROL Créer]**.
@@ -147,12 +147,12 @@ La structure de l’URL reste la même pour les versions intermédiaires et acti
 
 ### Gestion d’un formulaire
 
-Vous pouvez effectuer plusieurs opérations sur le formulaire à l’aide de l’interface utilisateur d’AEM Forms.
+Vous pouvez effectuer plusieurs opérations sur des formulaires depuis l’interface d’utilisation d’AEM Forms.
 
-1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+1. Connectez-vous à votre instance de création AEM Forms as a Cloud Service.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 
-1. Sélectionnez un formulaire et la barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le formulaire sélectionné.
+1. Sélectionnez un formulaire pour que la barre d’outils affiche les opérations suivantes à effectuer sur le formulaire sélectionné.
 
 <table>
  <tbody>
@@ -162,7 +162,7 @@ Vous pouvez effectuer plusieurs opérations sur le formulaire à l’aide de l�
   </tr>
   <tr>
    <td><p>Modifier</p> </td>
-   <td><p>Ouvre le formulaire en mode d'édition.<br /> <br /> </p> </td>
+   <td><p>Ouvrez le formulaire en mode d’édition.<br /> <br /> </p> </td>
   </tr>
     <tr>
    <td><p>Propriétés</p> </td>
@@ -173,14 +173,14 @@ Vous pouvez effectuer plusieurs opérations sur le formulaire à l’aide de l�
   </tr>
    <tr>
    <td><p>Prévisualisation</p> </td>
-   <td><p>Fournit des options pour prévisualiser le formulaire sous HTML ou effectuer un aperçu personnalisé en fusionnant les données d’un fichier XML avec le formulaire. <br /> </p> </td>
+   <td><p>Fournit des options de prévisualisation du formulaire en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le formulaire. <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Téléchargement</p> </td>
    <td><p>Télécharge le formulaire sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du formulaire sélectionné.<br /> <br /> </p> </td>
   </tr>
   <!--<tr>
@@ -197,7 +197,7 @@ Vous pouvez effectuer plusieurs opérations sur le formulaire à l’aide de l�
   </tr>
   <tr>
    <td><p>Comparer</p> </td>
-   <td><p>Compare deux formulaires différents à des fins de prévisualisation.<br /> <br /> </p> </td>
+   <td><p>Compare deux formulaires différents à des fins de prévisualisation.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>

@@ -115,7 +115,7 @@ ht-degree: 99%
          + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Notes de mise à jour de Cloud Manager {#cloud-manager}
+   + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [En cours](/help/implementing/cloud-manager/release-notes/current.md)
       + {#2025} 2025
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -143,7 +143,7 @@ ht-degree: 99%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -217,7 +217,7 @@ ht-degree: 99%
    + Notes de mise à jour de l’éditeur universel {#univeral-editor}
       + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
       + {#2025} 2025
-         + [Notes de mise à jour de la version 2025.02.25](/help/release-notes/universal-editor/2025/2025-02-25.md)
+         + [Notes de mise à jour du 25 février 2025](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [Notes de mise à jour de la version 2025.02.17](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [Notes de mise à jour de la version 2025.01.16](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + {#2024} 2024
@@ -323,7 +323,7 @@ ht-degree: 99%
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestion des entités après la migration](/help/journey-migration/managing-principals-after-migration.md)
-         + [Chargement groupé des entités de sécurité dans IMS après la migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
+         + [Chargement en masse des principaux dans IMS après la migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Outil de mappage hérité (hérité){#legacy-user-mapping-tool}
             + [Vue d’ensemble](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -1048,8 +1048,8 @@ ht-degree: 99%
          + [Protéger vos formulaires contre le spam : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Publication et déploiement de formulaires : Guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Intégration du modèle de données de formulaire : intégration de Forms au modèle de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Segments réutilisables, modulaires et autonomes : création et utilisation de fragments de formulaire dans les formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Intégration du modèle de données de formulaire : intégration des formulaires au modèle de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Segments réutilisables, modulaires et autonomes : création et utilisation des fragments de formulaire dans les formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Création de formulaires à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
@@ -1391,7 +1391,7 @@ ht-degree: 99%
          + [Internationaliser des chaînes d’interface utilisateur](/help/implementing/developing/extending/i18n/dev.md)
          + [Utilisation du traducteur pour gérer les dictionnaires](/help/implementing/developing/extending/i18n/translator.md)
          + [Extraction de chaînes pour la traduction](/help/implementing/developing/extending/i18n/extract.md)
-      + [Extensions et Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+      + [Extensions et Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + Déploiement sur AEM as a Cloud Service {#deploying}
       + [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md)
