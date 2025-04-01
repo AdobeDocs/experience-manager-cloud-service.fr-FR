@@ -5,7 +5,7 @@ landing-page-description: Apprenez comment utiliser et administrer Headless dans
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
+source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 96%
@@ -22,8 +22,6 @@ Vous pouvez lire la documentation détaillée des différentes fonctionnalités 
 >[!NOTE]
 >
 >Voir aussi [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
-
-{{headless-trials-promotion}}
 
 ## Présentation {#overview}
 
