@@ -4,9 +4,9 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 2%
 
 Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
-* Amazon S3 (version bêta privée, voir [^1])
+* Amazon S3 (version bêta privée, voir la remarque ci-dessous)
 * Stockage Azure Blob
 * Datadog
 * Elasticsearch ou OpenSearch
 * HTTPS
 * Splunk
-* Logique Sumo (version bêta privée, voir [^1])
+* Sumo Logic (version bêta privée, voir la note ci-dessous)
 
 Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
@@ -33,7 +33,9 @@ Il existe une option pour que les journaux AEM et Apache/Dispatcher soient achem
 
 Notez que la bande passante réseau associée aux journaux envoyés à la destination de journalisation est considérée comme faisant partie de l’utilisation des E/S réseau de votre entreprise.
 
-[^1 ] Amazon S3 et la logique Sumo sont disponibles dans Private Beta et ne prennent en charge que les journaux AEM (y compris Apache/Dispatcher).  New Relic via HTTPS est également en version bêta privée. Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+>[!NOTE]
+>
+>Amazon S3 et Sumo Logic sont disponibles dans Private Beta et ne prennent en charge que les journaux AEM (y compris Apache/Dispatcher).  New Relic via HTTPS est également en version bêta privée. Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
 ## Organisation de cet article {#how-organized}
 
@@ -192,6 +194,7 @@ Les configurations des destinations de journalisation prises en charge sont rép
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >Journaux écrits périodiquement dans S3, toutes les 10 minutes pour chaque type de fichier journal.  Cela peut entraîner un délai initial pour l’écriture des journaux dans S3 une fois la fonctionnalité basculée.  Vous trouverez plus d’informations sur les raisons de ce comportement [ici](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
@@ -384,7 +387,7 @@ Considérations :
 
 Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
->
+>[!NOTE]
 >New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement de configuration de votre compte New Relic.  Voir [ici](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) pour consulter la documentation de New Relic.
 
 #### Journaux de réseau CDN HTTPS {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > Vous aurez besoin d&#39;un abonnement Sumo Logic Enterprise pour profiter de la fonctionnalité de champ « index ».  Les journaux des abonnements qui ne sont pas des abonnements d’entreprise seront acheminés vers la partition `sumologic_default` en standard.  Voir la [Documentation sur le partitionnement de la logique Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) pour plus d’informations.
 
 ## Formats d&#39;entrée de journal {#log-formats}
