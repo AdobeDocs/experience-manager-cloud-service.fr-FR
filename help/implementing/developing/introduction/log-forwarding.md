@@ -4,10 +4,10 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
-ht-degree: 1%
+source-wordcount: '2275'
+ht-degree: 2%
 
 ---
 
@@ -15,21 +15,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour l’Adobe. Pour plus d&#39;informations, consultez la section [Migration](#legacy-migration) si votre transfert de journal a été configuré par Adobe.
+>Le transfert de journal est désormais configuré en libre-service, différent de la méthode héritée qui nécessitait l’envoi d’un ticket d’assistance pour Adobe. Pour plus d&#39;informations, consultez la section [ Migration ](#legacy-migration) si le transfert du journal a été configuré par Adobe.
 
-Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent faire transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
+Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
+* Amazon S3 (version bêta privée, voir [^1])
 * Stockage Azure Blob
 * Datadog
 * Elasticsearch ou OpenSearch
 * HTTPS
 * Splunk
+* Logique Sumo (version bêta privée, voir [^1])
 
 Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
 Il existe une option pour que les journaux AEM et Apache/Dispatcher soient acheminés via l’infrastructure de réseau avancée d’AEM, telle que l’adresse IP de sortie dédiée.
 
 Notez que la bande passante réseau associée aux journaux envoyés à la destination de journalisation est considérée comme faisant partie de l’utilisation des E/S réseau de votre entreprise.
+
+[^1 ] Amazon S3 et la logique Sumo sont disponibles dans Private Beta et ne prennent en charge que les journaux AEM (y compris Apache/Dispatcher).  New Relic via HTTPS est également en version bêta privée. Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
 ## Organisation de cet article {#how-organized}
 
@@ -177,14 +181,51 @@ data:
       advancedNetworking: true
 ```
 
-Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisée, comme décrit dans la section [Documentation Fastly - Liste publique d’adresses IP](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, pensez à envoyer du trafic vers un serveur https ou un Azure Blob Store (non Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
+Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisée, comme décrit dans la section [Documentation Fastly - Liste publique d’adresses IP](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, pensez à envoyer le trafic vers un serveur https ou un Azure Blob Store (autre qu’Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
 
 >[!NOTE]
->Il n’est pas possible que les journaux CDN s’affichent à partir de la même adresse IP que celle à partir de laquelle vos journaux AEM apparaissent. En effet, les journaux sont envoyés directement depuis Fastly et non AEM Cloud Service.
+>Il n’est pas possible que les journaux du réseau CDN apparaissent à partir de la même adresse IP que celle à partir de laquelle vos journaux AEM apparaissent. En effet, les journaux sont envoyés directement depuis Fastly et non depuis AEM Cloud Service.
 
 ## Consignation de la configuration de destination {#logging-destinations}
 
 Les configurations des destinations de journalisation prises en charge sont répertoriées ci-dessous, avec des considérations spécifiques.
+
+### Amazon S3 {#amazons3}
+
+>
+>Journaux écrits périodiquement dans S3, toutes les 10 minutes pour chaque type de fichier journal.  Cela peut entraîner un délai initial pour l’écriture des journaux dans S3 une fois la fonctionnalité basculée.  Vous trouverez plus d’informations sur les raisons de ce comportement [ici](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+Pour utiliser le redirecteur de journal S3, vous devez préconfigurer un utilisateur AWS IAM avec la politique appropriée pour accéder à votre compartiment S3.  Voir [ici](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) pour savoir comment créer des informations d’identification d’utilisateur IAM.
+
+La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`.  Par exemple :
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+Voir [ici](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre de la politique de compartiment AWS.
 
 ### Stockage Azure Blob {#azureblob}
 
@@ -241,7 +282,7 @@ aemcdn/
 
 Chaque fichier contient plusieurs entrées de journal json, chacune sur une ligne distincte. Les formats d’entrée de journal sont décrits à la section [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) et chaque entrée de journal inclut également les propriétés supplémentaires mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
 
-#### Journaux AEM de stockage Blob Azure {#azureblob-aem}
+#### Journaux AEM du stockage Blob Azure {#azureblob-aem}
 
 Les journaux AEM (y compris Apache/Dispatcher) s’affichent sous un dossier avec la convention de nommage suivante :
 
@@ -339,6 +380,13 @@ Considérations :
 * La chaîne d&#39;URL doit inclure **https://** sinon la validation échouera.
 * L’URL peut inclure un port. Par exemple, `https://example.com:8443/aem_logs/aem`. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est supposé.
 
+#### API du journal New Relic {#newrelic-https}
+
+Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+
+>
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement de configuration de votre compte New Relic.  Voir [ici](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) pour consulter la documentation de New Relic.
+
 #### Journaux de réseau CDN HTTPS {#https-cdn}
 
 Les requêtes web (POST) seront envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec le format d’entrée de journal décrit sous [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). Des propriétés supplémentaires sont mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
@@ -349,7 +397,7 @@ Il existe également une propriété nommée `sourcetype`, qui est définie sur 
 >
 > Avant l’envoi de la première entrée du journal CDN, votre serveur HTTP doit réussir un défi unique : une requête envoyée au chemin d’accès ``/.well-known/fastly/logging/challenge`` doit répondre avec un astérisque ``*`` dans le corps et le code d’état 200.
 
-#### Journaux AEM HTTPS {#https-aem}
+#### Journaux HTTPS AEM {#https-aem}
 
 Pour les journaux AEM (y compris Apache/Dispatcher), les requêtes web (POST) sont envoyées en continu, avec une payload json qui est un tableau d’entrées de journal, avec les différents formats d’entrée de journal comme décrit dans [Journalisation pour AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Des propriétés supplémentaires sont mentionnées dans la section [Formats d’entrée de journal](#log-formats) ci-dessous.
 
@@ -389,24 +437,30 @@ Considérations :
 >
 > [En cas de migration](#legacy-migration) du transfert de journal hérité vers ce modèle en libre-service, les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé. Ajustez-les en conséquence.
 
-<!--
-### Sumo Logic {#sumologic}
+### Logique Sumo {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+Lors de la configuration de la logique Sumo pour l’ingestion de données, une « adresse HTTP Source » s’affiche, qui fournit l’hôte, l’URI du destinataire et la clé privée dans une seule chaîne.  Par exemple :
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+Vous devez copier la dernière section de l’URL (sans la `/` précédente) et l’ajouter en tant que [Variable d’environnement secrète Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars) comme décrit dans la section [Configuration](#setup) ci-dessus, puis référencer cette variable dans votre configuration.  Un exemple est fourni ci-dessous.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> Vous aurez besoin d&#39;un abonnement Sumo Logic Enterprise pour profiter de la fonctionnalité de champ « index ».  Les journaux des abonnements qui ne sont pas des abonnements d’entreprise seront acheminés vers la partition `sumologic_default` en standard.  Voir la [Documentation sur le partitionnement de la logique Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) pour plus d’informations.
 
 ## Formats d&#39;entrée de journal {#log-formats}
 
@@ -430,20 +484,20 @@ aem_tier: author
 
 ## Migration à partir du transfert de journal hérité {#legacy-migration}
 
-Avant que la configuration du transfert du journal ne soit réalisée via un modèle en libre-service, les clients étaient invités à ouvrir des tickets d’assistance, où l’Adobe lancerait l’intégration.
+Avant que la configuration du transfert du journal ne soit réalisée via un modèle en libre-service, il était demandé aux clients d’ouvrir des tickets d’assistance, où Adobe lancerait l’intégration.
 
-Les clients qui ont été configurés de cette manière par Adobe sont invités à s’adapter au modèle de libre-service à leur convenance. Il existe plusieurs raisons d’effectuer cette transition :
+Les clients qui ont été configurés de cette manière par Adobe sont invités à s’adapter au modèle en libre-service à leur convenance. Il existe plusieurs raisons d’effectuer cette transition :
 
 * Un nouvel environnement (par exemple, un nouvel environnement de développement ou un nouvel outil RDE) a été configuré.
 * Modifications de votre point d’entrée Splunk existant ou de vos informations d’identification.
-* L’Adobe avait configuré votre transfert de journal avant que les journaux CDN ne soient disponibles et que vous souhaitiez recevoir les journaux CDN.
+* Adobe avait configuré le transfert de vos journaux avant que les journaux CDN ne soient disponibles et que vous souhaitiez recevoir les journaux CDN.
 * Une décision consciente de s’adapter de manière proactive au modèle en libre-service afin que votre entreprise dispose des connaissances nécessaires avant même qu’un changement sensible au facteur temps ne soit nécessaire.
 
 Une fois prêt à migrer, configurez simplement le fichier YAML comme décrit dans les sections précédentes. Utilisez le pipeline de configuration Cloud Manager pour effectuer un déploiement dans chacun des environnements où la configuration doit être appliquée.
 
-Il est recommandé, mais pas obligatoire, de déployer une configuration sur tous les environnements afin qu’ils soient tous en libre-service. Dans le cas contraire, vous risquez d’oublier les environnements configurés par Adobe par rapport à ceux configurés en libre-service.
+Il est recommandé, mais pas obligatoire, de déployer une configuration sur tous les environnements afin qu’ils soient tous en libre-service. Dans le cas contraire, vous pouvez oublier les environnements qui ont été configurés par Adobe par rapport à ceux qui ont été configurés en libre-service.
 
 >[!NOTE]
 >Les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé, ajustez-les en conséquence.
 >
->Lorsque le transfert de journal est déployé dans un environnement précédemment configuré par le support d’Adobe, vous pouvez recevoir des journaux en double pendant quelques heures au maximum. Cela finira par se résoudre automatiquement.
+>Lorsque le transfert de journal est déployé dans un environnement précédemment configuré par le support Adobe, vous pouvez recevoir des journaux en double pendant quelques heures au maximum. Cela finira par se résoudre automatiquement.
