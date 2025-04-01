@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 36%
 
 ---
@@ -95,7 +95,7 @@ Le panneau principal/droit (vue du tableau) de la console fournit diverses infor
 
 * **Nom**
    * Fournit un lien pour ouvrir le modèle dans l’éditeur.
-* Verrouillé
+* **Verrouillé** (icône de cadenas)
    * Lorsque le modèle est verrouillé, une icône de cadenas l’indique.
 * **Chemin**
    * Fournit le chemin d’accès sous la forme d’un lien pour ouvrir la configuration dans la console.
