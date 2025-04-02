@@ -4,10 +4,10 @@ description: Découvrez comment activer les offres  [!DNL Dynamic Media] Prime e
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
@@ -53,7 +53,7 @@ Cet article fournit le workflow de bout en bout pour activer les offres [!DNL Dy
 
 ## Activer [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-Exécutez les étapes suivantes dans votre environnement de service cloud pour activer [!DNL Dynamic Media] Ultimate :
+Pour activer [!DNL Dynamic Media] Ultimate :
 
 1. [Activer [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [Configurer [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Si [!DNL Dynamic Media] création d’entreprise échoue, procédez comme suit e
 
 1. Si le **[!UICONTROL Statut]** est En attente, signalez le problème à l’équipe du service clientèle pour résolution.
 
-   ![statut en attente](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![statut en attente](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Si la **[!UICONTROL Statut]** a échoué, réessayez en fonction de la raison de l’échec.
 
-   ![statut en échec](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![statut en échec](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Facultatif : configuration d’un domaine personnalisé dans le niveau de diffusion {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## Activer [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Exécutez les étapes suivantes dans votre environnement de service cloud pour activer [!DNL Dynamic Media] Prime :
+Pour activer [!DNL Dynamic Media] Prime :
 
 1. [Activer Dynamic Media avec OpenAPI](#activate-dynamic-media-with-openapi)
 1. [Facultatif : configuration d’un domaine personnalisé dans le niveau de diffusion](#configure-custom-domain-in-delivery-tier)

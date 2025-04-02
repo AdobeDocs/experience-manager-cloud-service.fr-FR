@@ -3,9 +3,9 @@ title: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1600'
 ht-degree: 98%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -136,6 +136,12 @@ Pour plus d’informations, consultez [Restreindre l’accès aux ressources dan
 +++**Comment obtenir des autorisations pour modifier le statut d’approbation d’une ressource ?**
 
 En tant qu’utilisateur ou utilisatrice de la gestion des ressources numériques, vous ne disposez peut-être pas des autorisations nécessaires pour [approuver les ressources](approve-assets.md#approve-assets). Afin d’obtenir les autorisations nécessaires pour modifier le statut d’approbation d’une ressource, les administrateurs et administratrices peuvent modifier le schéma de métadonnées par défaut ou tout autre schéma de métadonnées appliqué au dossier de ressources afin de fournir des autorisations de modification au champ **[!UICONTROL Statut de révision]**. Pour plus d’informations, voir [Comment désactiver la modification du champ Statut de révision](approve-assets.md#configuration).
+
++++
+
++++**Quelle est la taille de fichier prise en charge pour les vidéos ?**
+
+Dynamic Media avec les fonctionnalités OpenAPI prend en charge les vidéos de forme longue. Les vidéos peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
 +++
 
