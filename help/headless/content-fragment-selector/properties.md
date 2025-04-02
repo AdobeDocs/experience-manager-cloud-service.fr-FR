@@ -2,13 +2,13 @@
 title: Propriétés du sélecteur de fragment de contenu micro front-end pour Adobe Experience Manager as a Cloud Service
 description: Propriétés pour configurer le sélecteur de fragments de contenu micro front-end afin de rechercher, rechercher et récupérer des fragments de contenu de votre application.
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
-
 
 # Sélecteur de fragment de contenu - Propriétés connexes {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ Vous pouvez utiliser les propriétés suivantes pour personnaliser le rendu du s
 | `filters` | FragmentFilter | Non | | Filtres à appliquer pour la liste des fragments de contenu. Par défaut, les fragments situés sous `/content/dam` s’affichent. Valeur par défaut : `{ folder: "/content/dam" }` |
 | `isOpen` | booléen | Oui | `false` | Indicateur pour déclencher l’ouverture ou la fermeture du sélecteur. |
 | `onDismiss` | () => void | Oui | | Fonction à appeler lorsque **Ignorer** est sélectionné. |
-| `onSubmit` | ({ contentFragments : `{id: string, path: string}[]`, domainNames : `string[]` }) => void | Fonction à appeler lorsque l’option **Sélectionner** est utilisée après la sélection d’un ou de plusieurs fragments de contenu. <br><br>La fonction recevra :<br><ul><li> les fragments de contenu sélectionnés avec les champs `id` et `path` ;</li><li>et les noms de domaine liés à l’ID de programme et à l’ID d’environnement du référentiel, dont le statut est `ready` et l’`tier` de publication .</li></ul><br>En l’absence de noms de domaine, l’instance de publication sera utilisée comme domaine de secours. |
-| `theme` | « light » | « sombre » | Non | | Thème du sélecteur de fragment de contenu. Le thème par défaut est défini sur le thème de l’environnement UnifiedShell. |
-| `selectionType` | « célibataire » | « multiple » | Non | `single` | Type de sélection pouvant être utilisé pour restreindre la sélection du FragmentSelector. |
-| `dialogSize` | « plein écran » | « fullscreenTakeover » | Non | `fullscreen` | Propriété facultative permettant de contrôler la taille de la boîte de dialogue. |
+| `onSubmit` | ({ contentFragments : `{id: string, path: string}[]`, domainNames : `string[]` }) => void | Oui | | Fonction à appeler lorsque l’option **Sélectionner** est utilisée après la sélection d’un ou de plusieurs fragments de contenu. <br><br>La fonction recevra :<br><ul><li> les fragments de contenu sélectionnés avec les champs `id` et `path` ;</li><li>et les noms de domaine liés à l’ID de programme et à l’ID d’environnement du référentiel, dont le statut est `ready` et l’`tier` de publication .</li></ul><br>En l’absence de noms de domaine, l’instance de publication sera utilisée comme domaine de secours. |
+| `theme` | « clair » ou « sombre » | Non | | Thème du sélecteur de fragment de contenu. Le thème par défaut est défini sur le thème de l’environnement UnifiedShell. |
+| `selectionType` | « single » ou « multiple » | Non | `single` | Type de sélection pouvant être utilisé pour restreindre la sélection du FragmentSelector. |
+| `dialogSize` | « fullscreen » ou « fullscreenTakeover » | Non | `fullscreen` | Propriété facultative permettant de contrôler la taille de la boîte de dialogue. |
 | `waitForImsToken` | booléen | Non | `false` | Indique si le sélecteur de fragment de contenu est rendu dans le contexte du flux SUSI et doit attendre que le `imsToken` soit prêt. |
 | `imsAuthInfo` | ImsAuthInfo | Non | | Objet contenant les informations d’authentification IMS de l’utilisateur connecté. |
 | `runningInUnifiedShell` | booléen | Non | | Indique si le sélecteur de fragment de contenu s’exécute sous UnifiedShell ou en mode autonome. |
