@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 21%
 
 ---
@@ -25,7 +25,7 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 ### Améliorations {#enhancements-20133}
 
 * ASSETS-47850 : permet de restreindre l’ajout de configurations Scene7 si AEM CS est activé pour ES.
-* CQ-4359547 : suppression complète de Guava du référentiel https://git.corp.adobe.com/target-sdk/tsdk-core.
+* CQ-4359547 : suppression complète de Guava du référentiel Git.
 * FORMS-17551 : ajout de la prise en charge du document d’enregistrement pour les intégrations de listes SharePoint.
 * FORMS-18432 : implémentation d’une configuration de préremplissage côté client spécifique au formulaire (basée sur la regex) pour activer la fonctionnalité de préremplissage sélectif sans modifications au niveau OSGI.
 * FORMS-18513 : prise en charge de la transformation de l’arbre de données implémentée dans le connecteur AEP pour améliorer les fonctionnalités de l’assistant et les fonctionnalités de gestion des données.
@@ -57,16 +57,16 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-28549 : créez des `/cf/domains` pour renvoyer l’ID de domaine en fonction du niveau AEM.
 * SITES-29026 : ajout d’un paramètre facultatif qui spécifie les paramètres régionaux du fragment de contenu à l’aide d’un code de langue et de pays.
 * SITES-29031 : amélioration de la logique des fragments PATCH-ing, offrant ainsi de meilleures performances.
-* SITES-29169 : toutes les ressources publiées (qu’elles aient le statut PUBLIÉ ou MODIFIÉ) seront republiées si elles font référence à une ressource qui a été déplacée, renommée ou supprimée.
+* SITES-29169 : les ressources dont l’état est PUBLIÉ seront republiées si elles font référence à une ressource qui a été déplacée, renommée ou supprimée.
 * SITES-29376 : activer/désactiver l’ajout de code pour valider la suppression de ressources publiées.
-* SITES-29417 : mettez à jour /libs/cq/Page/proxy.jsp pour transférer la requête vers le nœud jcr:content au lieu d’inclure .
+* SITES-29417 : mettez à jour `/libs/cq/Page/proxy.jsp` pour transférer la requête vers le nœud jcr:content au lieu d’inclure .
 * SITES-2947 : créer/modifier la visualisation kibana pour comparer le râpage de publication.
 * SITES-29733 : performances accrues de la recherche de modèles par balises de fragments de contenu.
 * SITES-8316 : politiques de contenu : mettez en cache ContentPolicyManager.
-* SITES-24906 : Edge Delivery avec éditeur universel : prise en charge des feuilles de calcul créées par l’auteur sans mappage (accès anticipé)
-* SITES-24907 : Edge Delivery avec éditeur universel : prise en charge de la publication d’Assets sur plusieurs sites pour les cas d’utilisation de MSM (accès anticipé)
-* SITES-27956 : Edge Delivery avec éditeur universel : amélioration du débit de publication (accès anticipé)
-* SITES-27956 : Edge Delivery avec éditeur universel : amélioration de la gestion des erreurs pour la publication sur Edge Delivery Services (accès anticipé)
+* SITES-24906 : Edge Delivery avec éditeur universel : prend en charge les feuilles de calcul créées par l’auteur sans mappage (accès anticipé).
+* SITES-24907 : Edge Delivery avec éditeur universel : prise en charge de la publication d’Assets sur plusieurs sites pour les cas d’utilisation de MSM (accès anticipé).
+* SITES-27956 : Edge Delivery avec éditeur universel : amélioration du débit de publication (accès anticipé).
+* SITES-27956 : Edge Delivery avec éditeur universel : améliorez la gestion des erreurs pour la publication sur Edge Delivery Services (accès anticipé).
 
 ### Problèmes résolus {#fixed-issues-20133}
 
