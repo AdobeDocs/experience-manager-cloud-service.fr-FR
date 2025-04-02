@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 83%
+source-wordcount: '2364'
+ht-degree: 84%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 83%
 
 La plateforme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
-Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La connexion à AEM as a Cloud Service peut être divisée en trois ensembles logiques :
+Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en trois ensembles logiques :
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
-* La journalisation du réseau de diffusion de contenu, qui comme son nom l’indique, effectue la journalisation sur le réseau de diffusion de contenu. Cette fonctionnalité est progressivement déployée auprès des clients début septembre.
+* La journalisation sur le réseau CDN, qui, comme son nom l’indique, effectue la journalisation sur le réseau CDN.
 
 ## Journalisation AEM {#aem-logging}
 
@@ -144,12 +144,12 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 
 Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
 
-Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Il existe trois propriétés de configuration prises en charge :
+Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Trois propriétés de configuration sont prises en charge :
 
 | Propriété de configuration OSGi | Description |
 |---|---|
 | `org.apache.sling.commons.log.names` | Packages Java pour lesquels collecter les instructions de journal. |
-| `org.apache.sling.commons.log.level` | Niveau de journal auquel consigner les packages Java, spécifié par `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.level` | Niveau de journalisation auquel consigner les packages Java, spécifié par `org.apache.sling.commons.log.names` |
 | `org.apache.sling.commons.log.file` | Spécifiez la cible de la sortie : `logs/error.log` |
 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
@@ -196,7 +196,7 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 
 La journalisation des requêtes HTTP dans AEM as a Cloud Service fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP par ordre d’arrivée. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM ainsi que l’ordre dans lequel elles sont traitées et reçoivent une réponse.
 
-La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Souvent, les requêtes et leurs réponses correspondantes ont d’autres requêtes et réponses HTTP interjoncées dans le journal.
+La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Souvent, d’autres requêtes HTTP et réponses correspondantes sont intercalées entre elles dans le journal.
 
 **Exemple de journal**
 
@@ -285,13 +285,13 @@ AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et l
 * Journal des erreurs du serveur web Apache HTTPD
 * Journal de Dispatcher
 
-Ces journaux ne sont disponibles que pour le niveau Publish.
+Ces journaux ne sont disponibles que pour le niveau Publication.
 
 Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
 
 ### Journal des accès au serveur web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Le journal des accès au serveur web Apache HTTPD fournit des instructions pour chaque requête HTTP qui atteint le serveur web/Dispatcher du niveau Publication. Les requêtes diffusées à partir d’un réseau de diffusion de contenu en amont ne sont pas reflétées dans ces journaux.
+Le journal des accès au serveur web Apache HTTPD fournit des instructions pour chaque requête HTTP qui atteint le serveur web/Dispatcher du niveau Publication. Les requêtes diffusées à partir d’un réseau CDN en amont ne sont pas reflétées dans ces journaux.
 
 Consultez les informations sur le format du journal des erreurs dans la [documentation officielle d’Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -403,7 +403,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos RewriteRules, il est recommandé d’augmenter le niveau de journal sur trace2. Il est recommandé de déboguer les règles de réécriture à l’aide du [SDK Dispatcher](../../dispatcher/validation-debug.md). Le niveau de journalisation maximal pour AEM as a Cloud Service est de `debug`. Il n’est donc actuellement pas possible de déboguer efficacement les règles de réécriture dans le cloud.
+Il peut être défini sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos règles de réécriture, il est recommandé de passer au niveau de journal trace2. Il est recommandé de déboguer les règles de réécriture à l’aide de [Dispatcher SDK](../../dispatcher/validation-debug.md). Le niveau maximal de journalisation pour AEM as a Cloud Service est `debug`. Il n’est donc actuellement pas possible de déboguer efficacement les règles de réécriture dans le cloud.
 
 Pour plus d’informations, consultez la [documentation du module mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -508,7 +508,7 @@ Define DISP_LOG_LEVEL debug
 
 ## Journal CDN {#cdn-log}
 
-AEM as a Cloud Service donne accès aux journaux CDN, qui sont utiles pour les cas d’utilisation, notamment l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de le définir sur différents modes tels que les informations, les avertissements ou les erreurs.
+AEM as a Cloud Service permet d’accéder aux journaux du réseau CDN, qui sont utiles pour les cas d’utilisation, y compris l’optimisation du taux d’accès au cache. Le format de journal du réseau CDN ne peut pas être personnalisé et il n’existe aucun concept de définition sur différents modes tels que info, warn ou error.
 
 **Exemple**
 
@@ -534,11 +534,11 @@ AEM as a Cloud Service donne accès aux journaux CDN, qui sont utiles pour les c
 
 **Format du journal**
 
-Les journaux CDN sont différents des autres journaux dans la mesure où ils respectent un format json.
+Les journaux du réseau CDN sont distincts des autres journaux en ce qu’ils respectent un format json.
 
 | **Nom du champ** | **Description** |
 |---|---|
-| *timestamp* | Heure à laquelle la demande a commencé, après la fin de TLS |
+| *timestamp* | Heure à laquelle la requête a démarré, après l’arrêt du TLS |
 | *ttfb* | Abréviation de *Time To First Byte*. Intervalle entre le démarrage de la requête et le début de la diffusion du corps de la réponse. |
 | *cli_ip* | Adresse IP du client ou de la cliente. |
 | *cli_country* | Code de pays alpha-2 à deux lettres [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1) pour le pays du client ou de la cliente. |
@@ -552,7 +552,7 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 | *status* | Code d’état HTTP sous la forme d’une valeur d’entier. |
 | *res_age* | Durée (en secondes) pendant laquelle une réponse a été mise en cache (dans tous les nœuds). |
 | *pop* | Centre de données du serveur de cache de réseau CDN. |
-| *rules* | Les noms des [règles de filtre de trafic](/help/security/traffic-filter-rules-including-waf.md) et des indicateurs WAF correspondants, indiquant également si la correspondance a entraîné un bloc. Vide si aucune règle ne correspondait. |
+| *rules* | Les noms des [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) et indicateurs WAF correspondants, indiquant également si la correspondance a entraîné un blocage. Vide si aucune règle ne correspond. |
 
 
 ## Comment accéder aux journaux {#how-to-access-logs}
@@ -561,11 +561,11 @@ Les journaux CDN sont différents des autres journaux dans la mesure où ils res
 
 Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
-### Journaux des régions Publish supplémentaires {#logs-for-additional-publish-regions}
+### Journaux pour les régions de publication supplémentaires {#logs-for-additional-publish-regions}
 
 Si d’autres régions de publication sont activées pour un environnement particulier, les journaux de chaque région peuvent être téléchargés à partir de Cloud Manager, comme mentionné ci-dessus.
 
-Les journaux d’AEM et de dispatcher pour les autres régions de publication spécifient la région dans les 3 premières lettres après l’ID d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
+Les journaux AEM et les journaux du Dispatcher pour les régions de publication supplémentaires spécifient la région dans les 3 premières lettres après l’identifiant d’environnement, comme illustré par **nld2** dans l’exemple ci-dessous, qui fait référence à une instance de publication AEM supplémentaire située aux Pays-Bas :
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -611,7 +611,7 @@ Selon le trafic et la quantité d’instructions de journal écrites par Debug, 
 
 ## Transfert de journaux {#log-forwarding}
 
-Bien que les journaux puissent être téléchargés à partir de Cloud Manager, certaines organisations trouvent utile de transférer ces journaux vers une destination de journalisation préférée. AEM prend en charge les journaux en continu vers les destinations suivantes :
+Bien que les journaux puissent être téléchargés à partir de Cloud Manager, certaines organisations estiment qu’il est bénéfique de les transférer vers une destination de journalisation préférée. AEM prend en charge les logs de streaming vers les destinations suivantes :
 
 * Stockage Azure Blob
 * Datadog
@@ -619,8 +619,8 @@ Bien que les journaux puissent être téléchargés à partir de Cloud Manager, 
 * Elasticsearch (et OpenSearch)
 * Splunk
 
-Pour plus d’informations sur la configuration de cette fonctionnalité, reportez-vous à l’ [article Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) .
+Consultez l’article [ Transfert de journal ](/help/implementing/developing/introduction/log-forwarding.md) pour plus d’informations sur la configuration de cette fonctionnalité.
 
 >[!NOTE]
 >
->Le transfert des journaux pour les environnements de programme Sandbox n’est pas pris en charge.
+>Le transfert de journal pour les environnements de programme Sandbox n’est pas pris en charge.
