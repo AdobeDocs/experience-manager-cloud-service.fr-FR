@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
+source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1514'
 ht-degree: 21%
 
 ---
@@ -36,13 +36,11 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-25433 : prend en charge le rendu de page complète lors de la comparaison d’anciennes versions.
 * SITES-25923 : LinkInfoStorageImpl peut bloquer lorsqu’aucune URL n’est plus stockée.
 * SITES-26208 : la suppression d’un fragment de contenu par le biais d’un workflow permet désormais d’actualiser les ressources de référencement en supprimant le fragment nouvellement supprimé.
-* SITES-26400 : réduction des obstacles à l’adoption du service Edge Delivery en améliorant, simplifiant et renforçant Crosswalk
 * SITES-26500 : ajout de l’option permettant de déplacer des fragments de contenu via le workflow - `move-fragments`.
 * SITES-26711 : déclencheur de déploiement - les liens ne sont pas mis à jour.
 * SITES-27583 : fragments d’expérience perdant leur historique de version après avoir été déplacés.
 * SITES-27618 : la recherche de références à un fragment dans les pages ne renvoie pas tous les résultats.
 * SITES-27781 : validation au niveau du modèle implémentée pour les références de fragment de contenu, ce qui permet de valider les fragments référencés par rapport à leurs contraintes de modèle et à la balise requise.
-* SITES-27782 : création d’un agent éditeur et abonné spécifique à Crosswalk.
 * SITES-27784 : mettez à jour la génération des requêtes SQL pour utiliser la fonction PATH au lieu de `jcr:path`.
 * SITES-28040 : Adobe Target ExperienceFragmentsReplicationListener endommagé.
 * SITES-28051 : obtenez les autorisations de l’utilisateur actuel sur un fragment de contenu : GET /cf/fragments/{fragmentId}/permissions.
@@ -65,6 +63,10 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-2947 : créer/modifier la visualisation kibana pour comparer le râpage de publication.
 * SITES-29733 : performances accrues de la recherche de modèles par balises de fragments de contenu.
 * SITES-8316 : politiques de contenu : mettez en cache ContentPolicyManager.
+* SITES-24906 : Edge Delivery avec éditeur universel : prise en charge des feuilles de calcul créées par l’auteur sans mappage (accès anticipé)
+* SITES-24907 : Edge Delivery avec éditeur universel : prise en charge de la publication d’Assets sur plusieurs sites pour les cas d’utilisation de MSM (accès anticipé)
+* SITES-27956 : Edge Delivery avec éditeur universel : amélioration du débit de publication (accès anticipé)
+* SITES-27956 : Edge Delivery avec éditeur universel : amélioration de la gestion des erreurs pour la publication sur Edge Delivery Services (accès anticipé)
 
 ### Problèmes résolus {#fixed-issues-20133}
 
@@ -90,7 +92,7 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-26881 : bogue d’accessibilité AEMaaCS - rôle incorrect est fourni pour l’icône « Trois points » qui se trouve en regard du champ de saisie de commentaire.
 * SITES-26956 : suivi sur SITES-24920 Impossible de déplacer la page dans l’environnement de production.
 * SITES-27707 : la liste des ressources de l’outil de recherche de contenu échoue en raison de problèmes liés aux noms des ressources (régression de la version 6.5 SP22).
-* SITES-27757 : l’icône ne réécrit pas correctement avec helix-html-pipeline.
+* SITES-27757 : Edge Delivery avec éditeur universel : réécrivez les icônes en fonction de la sémantique helix-html-pipeline.
 * SITES-27780 : une balise &lt;br> inattendue apparaît dans l’éditeur de texte enrichi avec le DefaultPasteMode en texte brut sur le SP22.
 * SITES-27958 : le vérificateur de liens renvoie des erreurs « Cette session est fermée ».
 * SITES-28149 : ExperienceFragmentLinkRewriterProvider personnalisé non déclenché lors de l’exportation XF vers Target.
