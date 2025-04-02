@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -39,6 +39,10 @@ La page **Certificats SSL** fournit le statut de vos certificats SSL.
 Lorsqu’un certificat géré par le client expire, les domaines utilisés avec le certificat expiré ne fonctionnent plus. La mise à jour de vos certificats garantit que votre domaine continue à fonctionner comme vous le souhaitez.
 
 Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour terminer cette tâche.
+
+>[!IMPORTANT]
+>
+>Lors de l’ajout ou de la mise à jour d’un certificat SSL, n’incluez pas le nouveau certificat dans la chaîne de certificats. Son inclusion empêche le chargement de s’effectuer correctement.
 
 **Pour mettre à jour un certificat SSL expiré géré par le client :**
 
@@ -88,7 +92,7 @@ Voici quelques raisons de renommer un certificat SSL :
 
 1. Sous l’en-tête **Services**, cliquez sur ![Icône Verrouiller fermé](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificats SSL**.
 
-1. Sur la page **Certificats SSL**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) au bout d’une ligne dont vous souhaitez renommer le certificat SSL **géré par l’Adobe**.
+1. Sur la page **Certificats SSL**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez renommer le certificat SSL **géré par Adobe**.
 
 1. Dans le menu déroulant, cliquez sur **Renommer**.
 
@@ -99,7 +103,7 @@ Voici quelques raisons de renommer un certificat SSL :
 
 ## Suppression d’un certificat SSL {#deleting-an-ssl-certificate}
 
-La suppression de certificats SSL gérés par l’Adobe ou par le client à partir de Cloud Manager est une action permanente qui ne peut pas être annulée. Adobe recommande, en règle générale, d’enregistrer les fichiers SSL localement avant de les supprimer dans Cloud Manager.
+La suppression des certificats SSL gérés par Adobe ou gérés par le client depuis Cloud Manager est une action permanente qui ne peut pas être annulée. Adobe recommande, en règle générale, d’enregistrer les fichiers SSL localement avant de les supprimer dans Cloud Manager.
 
 >[!NOTE]
 >
