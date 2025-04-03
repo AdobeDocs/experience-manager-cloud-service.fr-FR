@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
+source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 93%
+source-wordcount: '957'
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 93%
 
 Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure.
 
-Les lancement permettent de préparer les modifications pour une publication ultérieure (tout en conservant vos pages actives). Après avoir modifié et mis à jour vos pages de lancement, vous devez les promouvoir de nouveau dans la source, puis activer les pages source (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
+Un *lancement* est créé pour vous permettre d’apporter des modifications en vue d’une publication ultérieure, tout en conservant vos pages actives. Cela signifie que vous modifiez deux versions simultanément : les pages qui sont actuellement publiées et une version de ces pages, qui sera publiée à un moment donné dans le futur. Une fois ce délai écoulé, vous pouvez remplacer les pages d’origine et publier la nouvelle version.
+
+Vous créez un *Launch*, puis, après avoir modifié et mis à jour vos pages *Launch*, vous *les convertir* en *Source*. Vous pouvez ensuite activer ces pages *Source* (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
 Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
@@ -32,7 +34,7 @@ Vous pouvez également :
 
 Les lancements peuvent également être :
 
-* Créés pour plusieurs branches racine. Bien que vous puissiez créer le lancement pour l’ensemble du site (et y apporter les modifications), cela peut s’avérer impossible, car l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
+* Créés pour plusieurs branches racine. Bien que vous puissiez créer le lancement pour l’ensemble du site (et y apporter les modifications), cela peut s’avérer peu pratique, car l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
 * Imbriqués (un lancement dans un lancement) pour permettre de créer un lancement à partir d’un lancement existant, de sorte que les créateurs et créatrices de contenu puissent tirer parti des changements déjà effectués plutôt que de devoir refaire les mêmes changements pour plusieurs lancements.
 
 Cette section explique comment créer, modifier et convertir (et, le cas échéant, [supprimer](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) les pages de lancement de la console Sites ou de la console [Lancements](#the-launches-console) :
@@ -99,19 +101,19 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
    ![Références des lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Sélectionnez le lancement approprié, la liste des actions possibles s&#39;affiche :
+1. Sélectionnez le lancement approprié, puis la liste des actions possibles s’affiche :
 
    ![Actions à effectuer sur les lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## Console Lancements {#the-launches-console}
 
-La console Lancements présente un aperçu de vos lancements et vous permet d’agir sur ceux répertoriés.
+La console Lancements donne un aperçu de vos lancements et vous permet d’agir sur ceux répertoriés.
 
 ![Console Lancements – Gestion du contenu](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 Vous pouvez accéder à la console via :
 
-* La console **Outils** : **Outils**, **Général**, **Lancements**.
+* La Console **Outils** : **Outils**, **Général**, **Lancements**.
 
 * La **Console Lancements** dans la partie inférieure de la section **Lancements** du rail **Références** lors du parcours du contenu source dans la console Sites.
 
