@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -206,16 +206,9 @@ Les comportements suivants s’appliquent :
 * Si la validation PR ou les déclencheurs de pipeline ne fonctionnent pas, vérifiez que le secret Webhook est à jour dans Cloud Manager et votre fournisseur Git.
 
 
-
-
-
-
-
-
-## Limites
+## Limitation
 
 * Les référentiels externes ne peuvent pas être liés aux pipelines de configuration.
-* Les pipelines avec des référentiels externes (non hébergés sur GitHub) et le déclencheur « Lors des modifications Git » ne démarrent pas automatiquement. Elles ne peuvent être lancées que manuellement.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
