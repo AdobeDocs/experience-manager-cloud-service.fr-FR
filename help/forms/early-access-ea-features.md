@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2286'
 ht-degree: 29%
 
 ---
@@ -74,9 +74,9 @@ Voici ce que le Forms de conversation apporte de plus :
 Les Forms de conversation sont plus qu’une nouveauté : elles changent la donne en termes d’expérience utilisateur.  Stimulez l’engagement, réduisez l’abandon de formulaire et rendez l’interaction avec votre site web plus agréable pour tous.
 
 
-### Création WYSIWYG (éditeur universel) pour Edge Delivery Services for Forms
+### Création WYSIWYG pour Edge Delivery Services
 
-L’éditeur universel fournit une interface WYSIWYG puissante permettant de créer et de publier des [formulaires adaptatifs sur Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), alliant simplicité de conception visuelle et fonctionnalités avancées. La création WYSIWYG offre toutes les fonctionnalités de la [création basée sur les documents](/help/edge/docs/forms/create-forms.md), ainsi qu’un large éventail de fonctionnalités supplémentaires :
+La création WYSIWYG fournit des interfaces WYSIWYG (éditeur universel et éditeur de Forms adaptatif) pour créer et publier des formulaires adaptatifs sur Edge Delivery Services. La création WYSIWYG offre toutes les fonctionnalités de la [création basée sur les documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
 
 * Éditeur de règles avancé pour créer une logique complexe.
 * Extensibilité côté serveur pour les fonctionnalités personnalisées.
@@ -86,26 +86,6 @@ L’éditeur universel fournit une interface WYSIWYG puissante permettant de cr�
 * Intégration à différentes sources de données pour préremplir les formulaires et envoyer des données.
 * Modèle de données de formulaire (FDM) pour définir la structure des données et les interactions avec diverses sources de données.
 * Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris l’envoi de données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics et de nombreuses autres sources de données.
-
-![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**Avantages :**
-
-* **Délai de rentabilisation accéléré (TTV)** : lancez des formulaires plus rapidement grâce à une création visuelle intuitive qui élimine les exigences complexes en matière de codage.
-* **Coûts de développement réduits** : réduisez le coût total de possession en permettant aux utilisateurs professionnels de créer et de modifier des formulaires avec une implication informatique minimale.
-* **Développement simplifié** : créez des composants personnalisés à l’aide d’HTML, CSS et JavaScript uniquement, sans avoir besoin de connaître le framework spécialisé.
-* **Pile web moderne** : repose sur des normes web et des technologies modernes connues des développeurs front-end.
-* **Prototypage rapide** : créez et testez rapidement des concepts de formulaire avant d’investir dans le développement complet.
-
-
-**Consultez la documentation pour en savoir plus :**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**Fonctions clés**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Utiliser des mises en page réactives**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configurer les actions d’envoi**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**Prise en main de l’éditeur universel pour le Forms adaptatif**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Donner un style à vos formulaires**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Ajoutez la sécurité reCAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**Créer votre premier formulaire**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Utiliser l’éditeur de règles**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Publication de formulaires**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**Comprendre l’interface utilisateur**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Créer des composants personnalisés**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### Connecteur AEM Forms vers Marketo
@@ -127,27 +107,38 @@ Prêt à démarrer ? Les articles suivants fournissent des instructions détaill
 * [Configuration de Marketo Engage et de la source de données pour le Forms adaptatif existant](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Envoyer un formulaire adaptatif existant à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### Tableau de bord de réalisation des valeurs
+### Communications interactives sur le cloud
 
-Suivez et analysez les performances de vos formulaires avec le tableau de bord de réalisation de valeurs. Cet outil d’analyse vous aide à prendre des décisions pilotées par les données afin d’optimiser votre stratégie de formulaires.
+Les communications interactives sur le cloud constituent une solution puissante pour la création, la gestion et la diffusion de correspondances interactives pilotées par les données, telles que la correspondance commerciale, les documents, les déclarations, les prospectus de gestion de patrimoine, les e-mails marketing, les factures et les kits de bienvenue.
 
-![Tableau De Bord Des Informations D’Utilisation De Forms](/help/forms/assets/forms-usage-insights.png)
+![Éditeur de communication interactive](/help/forms/assets/ic-editor.png)
 
-**Fonctionnalités principales :**
+#### Fonctionnalités clés :
 
-* Surveiller les envois de formulaires, les rendus de documents et les mesures de création/publication de formulaires
-* Suivre l’utilisation des fragments de formulaire et leur réutilisation dans votre organisation
-* Identifier les tendances, les périodes de pointe et les opportunités d’amélioration
+* **Éditeur basé sur le cloud** : contrairement à AEM Forms Desktop Designer qui ne peut être installé que sur des machines Windows, l’éditeur de communications interactives s’exécute dans n’importe quel navigateur moderne sans qu’une installation ne soit nécessaire. Cette approche basée sur le cloud élimine les problèmes d’installation, offre une accessibilité sur plusieurs plateformes et permet la collaboration depuis n’importe quel emplacement avec un accès Internet.
 
-Le tableau de bord fournit des informations dans deux sections principales :
+* **Conception conviviale** : interface intuitive par pointer-cliquer nécessitant des connaissances techniques minimales.
 
-* **Activité Formulaires et documents au fil du temps** : effectue le suivi des envois, des rendus et de la création/publication des formulaires
-* **Utilisation du fragment** : surveille l’adoption et la réutilisation des fragments
+* **Intégration de données** : connectez-vous aux schémas, aux bases de données et aux services web pour la génération de contenu dynamique.
 
-Pour plus d’informations :
+* **Média enrichi** : intégrez facilement du texte, des images et des éléments interactifs.
 
-* [Présentation de votre tableau de bord de réalisation des valeurs](/help/forms/aem-forms-value-realization-dashboard.md)
-* [Interprétation des informations d’utilisation des formulaires et des documents](/help/forms/using-the-value-realization-dashboard.md)
+* **Fragments de document** : réutilisez des blocs de contenu modulaires sur plusieurs documents par souci de cohérence et d’efficacité.
+
+* **Sortie multicanal** : créez des expériences unifiées sur les formats papier et numériques en respectant la réglementation.
+
+* **Contenu dynamique** : générez du contenu personnalisé à l’aide de la logique commerciale et de la liaison de données.
+
+* **Flexibilité du format** : sortie aux formats PDF, HTML, PCL, PostScript® et ZPL.
+
+#### Cas d’utilisation :
+
+* Institutions financières générant des relevés de compte
+* Les organismes gouvernementaux rationalisent les avis de prestations
+* Créer une correspondance de haute qualité, sécurisée et conforme à la loi
+* Gestion de la création, de l’assemblage et de la diffusion des correspondances interactives pilotées par les données
+
+Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
 ## Autres innovations en matière d&#39;accès précoce
 
