@@ -4,9 +4,9 @@ description: Découvrez comment exécuter votre propre service d’éditeur univ
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 2%
 
 Découvrez comment exécuter votre propre service d’éditeur universel pour le développement local ou dans le cadre de votre propre infrastructure.
 
+>[!NOTE]
+>
+>Les services de l’éditeur universel local ne sont pas requis ou pris en charge pour les projets utilisant la création AEM avec Edge Delivery Services.
+
 ## Vue d’ensemble {#overview}
 
 Le service d’éditeur universel lie l’éditeur universel et le système principal. Pour pouvoir développer localement pour l’éditeur universel, vous devez exécuter une copie locale du service Éditeur universel. En effet :
 
-* Le service d’éditeur universel officiel d’Adobe est hébergé à l’échelle mondiale et votre instance AEM locale doit être exposée à Internet.
+* Le service officiel de l’éditeur universel d’Adobe est hébergé à l’échelle mondiale et votre instance AEM locale doit être exposée à Internet.
 * Lors du développement avec un SDK AEM local, le service d’éditeur universel d’Adobe n’est pas accessible à partir d’Internet.
-* Si votre instance AEM présente des restrictions d’adresse IP et que le service d’éditeur universel d’Adobe ne se trouve pas dans une plage d’adresses IP définie, vous pouvez l’héberger vous-même.
+* Si votre instance d’AEM comporte des restrictions d’adresse IP et que le service d’éditeur universel d’Adobe ne se trouve pas dans une plage d’adresses IP définie, vous pouvez l’héberger vous-même.
 
 ## Cas d’utilisation {#use-cases}
 
@@ -31,11 +35,11 @@ Votre propre copie du service d’éditeur universel est utile si vous souhaitez
 * Développez localement sur AEM pour l’utiliser avec l’éditeur universel.
 * Exécutez votre propre service d’éditeur universel dans le cadre de votre propre infrastructure, indépendamment du service d’éditeur universel d’Adobe.
 
-Les deux cas d’utilisation sont pris en charge. Ce document explique comment exécuter AEM dans HTTPS avec une copie locale du service d’éditeur universel.
+Les deux cas d’utilisation sont pris en charge. Ce document explique comment exécuter AEM en HTTPS avec une copie locale du service d’éditeur universel.
 
 Si vous souhaitez exécuter votre propre service d’éditeur universel dans le cadre de votre propre infrastructure, vous devez suivre les mêmes étapes que pour l’exemple de développement local.
 
-## Configurer AEM pour une exécution sur HTTPS {#aem-https}
+## Configuration d’AEM pour une exécution sur HTTPS {#aem-https}
 
 Dans une trame externe sécurisée par HTTPS, une trame HTTP non sécurisée ne peut pas être chargée. Le service d’éditeur universel s’exécute sur HTTPS. Par conséquent, AEM ou toute autre page distante doit également s’exécuter sur HTTPS.
 

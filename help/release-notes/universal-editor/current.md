@@ -4,10 +4,10 @@ description: Il s’agit des notes de mise à jour de la version du 10 mars 20
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b3c98f5e41dbc5e1714d0ed418a317199c735b73
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 68%
 
 ---
 
@@ -25,6 +25,15 @@ Il s’agit des notes de mise à jour de la version du 10 mars 2025 de l’éd
 * **Déplacement de composants :** [le déplacement de composants entre des conteneurs](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) observe désormais le filtre de composant du conteneur cible.
    * Il n’est plus nécessaire de mettre en place la même [définition de filtre](/help/implementing/universal-editor/filtering.md) pour les conteneurs cible et de destination afin de déplacer le composant entre les conteneurs.
 * **Pages verrouillées :** le service d’éditeur universel observe le [statut de verrouillage d’une page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) et écrit uniquement sur les pages qui ne sont pas verrouillées ou qui sont verrouillées par l’utilisateur ou l’utilisatrice.
+
+## Nouvelles extensions pour l’éditeur universel {#extensions}
+
+Un certain nombre de nouvelles extensions ont été publiées sur [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) pour l’éditeur universel, ce qui améliore l’expérience de création.
+
+* **Extension MSM** : vous pouvez désormais interrompre et réinstancier l’héritage des composants/blocs à l’aide de cette extension.
+* **Extension des propriétés de page** : accédez à la fenêtre des propriétés de page de la page directement à partir de l’éditeur universel à l’aide de cette extension.
+* **Extension de workflow** : utilisez des workflows sur les pages et les fragments de contenu créés sur la page à l’aide de cette extension.
+* **Extension de verrouillage de page** : utilisez cette extension pour verrouiller et déverrouiller une page directement à partir de l’éditeur universel.
 
 ## Autres améliorations {#other-improvements}
 
