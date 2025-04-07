@@ -4,7 +4,7 @@ description: Découvrez comment intégrer le [!DNL AEM Assets] avec [!DNL Edge D
 tags: "AEM Assets""Edge Delivery Services""Dynamic Media""Dynamic Media with OpenAPI capabilities""Universal Editor""Edge Delivery Services with Universal Editor"
 features: "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]""How to use [!DNL AEM Assets] with [!DNL Universal Editor]""How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]""How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools""How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 64cf8feed8cc8c3c38b29f36ee7b2d7944f408d1
+source-git-commit: 3d333fb7b6304c5e0d9898bd9fbd947e54d2e7e1
 workflow-type: tm+mt
 source-wordcount: 671
 ht-degree: 6%
@@ -63,7 +63,7 @@ Après avoir modifié le contenu, vous pouvez le publier dans Edge Delivery Serv
 
 Lorsque [!DNL AEM Assets] s’intègre à vos outils de création basés sur des documents, tels que [!DNL Microsoft Word] ou [!DNL Google Docs], il fournit un sélecteur de ressources dans votre outil de création. Utilisez ce sélecteur de ressources pour accéder aux [!DNL AEM Assets] et insérer des ressources approuvées dans votre contenu.
 Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez la documentation du [[!DNL AEM Assets] plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) pour savoir comment l’intégrer [!DNL AEM Assets] votre projet [!DNL AEM] existant.
-Suivez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration [!DNL AEM Assets] à l’environnement de création basé sur les documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) ci-après si vous ne disposez pas d’un site web [!DNL Edge Delivery Services] pour publier votre [!DNL AEM Assets] contenu inclusif créé dans des outils de création basés sur les documents.
+Suivez les sections [Conditions préalables](#integrate-aem-assets-with-microsoft-word-and-google-docs) et [Intégration [!DNL AEM Assets] à l’environnement de création basé sur les documents](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) ci-après si vous ne disposez pas d’un site web [!DNL Edge Delivery Services] pour publier votre [!DNL AEM Assets] contenu inclusif créé dans les outils de création basés sur les documents.
 
 ### Prérequis{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
