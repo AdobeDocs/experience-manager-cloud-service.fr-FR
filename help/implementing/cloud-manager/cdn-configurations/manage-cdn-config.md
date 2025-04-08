@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Avant qu’un domaine personnalisé puisse servir le trafic, vous devez effectue
    | Option | Étapes |
    | --- | --- |
    | Configurer un ENREGISTREMENT A | Recommandé pour les domaines racine tels que `example.com`<br><ol><li>Connectez-vous au portail de votre fournisseur de services DNS.<li>Accédez à la section Enregistrements DNS .<li>Créez un enregistrement A pour pointer vers toutes les adresses IP répertoriées.</li></ol> |
-   | Configurer CNAME | Recommandé pour les domaines personnalisés tels que `www.example.com`<br><ol><li>Connectez-vous au portail du fournisseur de services DMS.<li>Accédez à la section Enregistrements DNS .<li>Mappez [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (enregistrement CNAME) dans l’enregistrement DNS du fournisseur de services DNS (votre domaine personnalisé). Ce mappage garantit que les requêtes reçues au niveau du domaine personnalisé sont redirigées vers le réseau CDN d’Adobe.</li></ol> |
+   | Configurer CNAME | Recommandé pour les domaines personnalisés tels que `www.example.com`<br><ol><li>Connectez-vous au portail du fournisseur de services DMS.<li>Accédez à la section Enregistrements DNS .<li>Mappez `cdn.adobeaemcloud.com` (enregistrement CNAME) dans l’enregistrement DNS du fournisseur de services DNS (votre domaine personnalisé). Ce mappage garantit que les requêtes reçues au niveau du domaine personnalisé sont redirigées vers le réseau CDN d’Adobe.</li></ol> |
 
 1. Dans la boîte de dialogue **Préparation de la mise en production**, cliquez sur **OK** pour enregistrer l’enregistrement.
 
