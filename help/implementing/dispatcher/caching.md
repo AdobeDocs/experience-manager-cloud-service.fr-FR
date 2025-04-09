@@ -4,10 +4,10 @@ description: Découvrez les principes de base de la mise en cache dans AEM as a 
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
+source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 87%
+source-wordcount: '3071'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,18 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
 
 ## Mise en cache {#caching}
 
+La mise en cache des réponses HTTP dans le réseau CDN d’AEM as a Cloud Service est contrôlée par les en-têtes de réponse HTTP suivants à partir de l’origine : `Cache-Control`, `Surrogate-Control` ou `Expires`.
+
+Ces en-têtes de cache sont généralement définis dans les configurations vhost d’AEM Dispatcher à l’aide de mod_headers, mais peuvent également être définis dans le code Java™ personnalisé s’exécutant dans l’instance de publication AEM elle-même (voir [Comment activer la mise en cache du réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+
+La clé de cache pour les ressources CDN contient l’URL de requête complète, y compris les paramètres de requête. Chaque paramètre de requête produit donc une entrée de cache différente. Envisagez de supprimer les paramètres de requête indésirables ; [voir ci-dessous](#marketing-parameters) pour améliorer le taux d’accès au cache.
+
+Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache par le réseau CDN d’AEM as a Cloud Service (voir [ Comment désactiver la mise en cache CDN)
+](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) pour plus de détails).  En outre, les réponses qui définissent des cookies, c’est-à-dire qui ont un en-tête de réponse `Set-Cookie`, ne sont pas mises en cache par le réseau CDN.
+
 ### HTML/texte {#html-text}
+
+La configuration de Dispatcher définit certains en-têtes de mise en cache par défaut pour `text/html` type de contenu.
 
 * par défaut, mis en cache par le navigateur pendant cinq minutes, en fonction de l’en-tête `cache-control` émis par la couche Apache. Le réseau de diffusion de contenu respecte également cette valeur.
 * le paramètre de mise en cache HTML/Texte par défaut peut être désactivé en définissant la variable `DISABLE_DEFAULT_CACHING` dans `global.vars` :
@@ -272,7 +283,7 @@ Dans l’exemple suivant, seuls les paramètres `page` et `product` ne sont pas 
 }
 ```
 
-1. Autorisez tous les paramètres, à l’exception des paramètres marketing. Le fichier [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) définit une liste de paramètres marketing couramment utilisés qui seront ignorés. L’Adobe ne mettra pas à jour ce fichier. Il peut être étendu par les utilisateurs en fonction de leurs fournisseurs marketing.
+1. Autorisez tous les paramètres, à l’exception des paramètres marketing. Le fichier [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) définit une liste de paramètres marketing couramment utilisés qui seront ignorés. Adobe ne mettra pas à jour ce fichier. Il peut être étendu par les utilisateurs en fonction de leurs fournisseurs marketing.
 
 ```
 /ignoreUrlParams {
