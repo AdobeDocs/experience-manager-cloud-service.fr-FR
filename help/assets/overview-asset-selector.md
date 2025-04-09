@@ -3,9 +3,9 @@ title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ Vous devez vous assurer que les méthodes de communication suivantes sont dispon
 
 * L’application hôte s’exécute sur HTTPS.
 * Vous ne pouvez pas exécuter l’application sur `localhost`. Si vous souhaitez intégrer le sélecteur de ressources sur votre ordinateur local, vous devez créer un domaine personnalisé, par exemple `[https://<your_campany>.localhost.com:<port_number>]`, et l’ajouter dans le `redirectUrl list`.
-* Vous pouvez configurer et ajouter des `ADOBE_PROVIDED_CLIENT_ID` dans la variable d’environnement AEM Cloud Service avec les `imsClientId` correspondantes.
-  ![Environnement d’ID client IMS du sélecteur de ressources](assets/asset-selector-ims-client-id-env.png)
+* Vous pouvez configurer et ajouter clientID dans la variable d’environnement AEM Cloud Service avec les `imsClientId` correspondantes.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * La liste des portées IMS doit être définie dans la configuration de l’environnement.
 * L’URL de l’application se trouve dans la liste autorisée d’URL de redirection du client IMS.
 * Le flux de connexion IMS est configuré et rendu à l’aide d’une fenêtre contextuelle sur le navigateur web. Par conséquent, les fenêtres contextuelles doivent être activées ou autorisées sur le navigateur cible.
