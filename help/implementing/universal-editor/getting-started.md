@@ -4,10 +4,10 @@ description: Découvrez comment accéder à l’éditeur universel et comment co
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 36%
+source-wordcount: '981'
+ht-degree: 37%
 
 ---
 
@@ -124,9 +124,7 @@ Si vous souhaitez uniquement activer certaines extensions pour une page, vous po
 
 Si vous disposez déjà d’un projet AEM utilisant [l’éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md), lorsque les auteurs de contenu modifient des pages, les pages s’ouvrent automatiquement avec l’éditeur de page. Vous pouvez définir l’éditeur qu’AEM doit ouvrir en fonction des chemins d’accès au contenu ou du `sling:resourceType`, ce qui rend l’expérience transparente pour vos auteurs, quel que soit l’éditeur requis pour le contenu sélectionné.
 
-1. Pour tirer parti de cette fonctionnalité de configuration, contactez l’assistance clientèle d’Adobe afin d’activer l’accès au service d’URL de l’éditeur universel pour votre programme.
-
-1. Une fois que l’assistance clientèle a activé l’accès au service d’URL de l’éditeur universel, ouvrez Configuration Manager.
+1. Ouvrez Configuration Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
