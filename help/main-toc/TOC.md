@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 61992513d7c965d1c0b1f3d1134d35cc53bebe2f
+source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6134'
 ht-degree: 99%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 99%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [En cours](/help/implementing/cloud-manager/release-notes/current.md)
       + {#2025} 2025
+         + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
       + {#2024} 2024
@@ -1323,7 +1324,7 @@ ht-degree: 99%
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=fr)
-         + [Obsolescence de l’éditeur de SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
+         + [Abandon de l’éditeur de SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md)
          + [Tutoriel sur SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Prise en main avec React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -1435,7 +1436,7 @@ ht-degree: 99%
    + [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md)
    + [Suppression de l’index générique Lucene](/help/operations/removal-generic-lucene-index.md)
    + [Bonnes pratiques en matière de requête et d’indexation](/help/operations/query-and-indexing-best-practices.md)
-   + [Vérificateur de liens](/help/operations/link-checker.md)
+   + [Outil de vérification de lien](/help/operations/link-checker.md)
 + Conformité {#compliance}
    + [Conformité dans AEM as a Cloud Service](/help/compliance/home.md)
    + Préparation à la confidentialité et protection des données {#data-privacy}
