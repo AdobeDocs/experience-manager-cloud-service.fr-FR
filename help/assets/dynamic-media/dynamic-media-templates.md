@@ -4,10 +4,10 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 1%
+source-wordcount: '3050'
+ht-degree: 2%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 1%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -305,6 +305,41 @@ Modifiez le modèle en procédant comme suit :
 2. Accédez à l’emplacement du modèle.
 3. Sélectionnez le modèle.
 4. Cliquez sur **[!UICONTROL Modifier le modèle]**. La zone de travail de modèle affiche le modèle et la liste de tous ses calques dans le panneau Calques. Commencez à modifier le modèle en fonction de vos besoins.
+
+## Ajoutez le lien Appel à l’action à votre calque de modèle{#add-CTA-in-dynamic-media-templates}
+
+Transformez n’importe quel calque d’image ou de texte de votre modèle Dynamic Media en lien hypertexte en y ajoutant un lien CTA qui dirige les utilisateurs vers une page cible. Pour ajouter un lien CTA à une couche, procédez comme suit :
+
+1. Accédez à l’emplacement de votre modèle, sélectionnez le modèle et cliquez sur ![modifier](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Modifier le modèle]**. Le modèle s’affiche sur la zone de travail.
+1. Sélectionnez le calque de modèle et [accédez à son panneau Propriétés](#edit-or-delete-a-layer) pour y ajouter un lien CTA.
+1. Dans le panneau des propriétés, sélectionnez **[!UICONTROL Ajouter un CTA]**, spécifiez l’URL de destination dans le champ **[!UICONTROL URL]** et cliquez sur **[!UICONTROL Enregistrer]**.
+   ![ajouter CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser votre modèle et voir ses paramètres définis.
+1. Cliquez sur **[!UICONTROL Publier]** et sélectionnez **[!UICONTROL Oui]** pour publier le modèle, s’il n’a pas été publié précédemment.
+1. Accédez au dossier dans lequel ce modèle est enregistré, sélectionnez-le et cliquez sur ![page de détails](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Détails]**.
+1. Cliquez sur **[!UICONTROL Copier les options]** et sélectionnez **[!UICONTROL Copier le code intégré]**.
+
+   ![copier le code incorporé](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   Voici un exemple de code intégré :
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. Ajoutez le code intégré copié au fichier HTML de votre site et exécutez-le dans votre navigateur pour afficher le modèle.
+
+Cliquez sur l’élément CTA sur le modèle pour accéder à la page de destination.
+
+Regardez cette vidéo détaillée pour découvrir comment ajouter un lien CTA à un calque de modèle.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## Points importants à noter {#important-points-to-note}
 
