@@ -4,7 +4,7 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -314,7 +314,7 @@ Transformez n’importe quel calque d’image ou de texte de votre modèle Dynam
 1. Sélectionnez le calque de modèle et [accédez à son panneau Propriétés](#edit-or-delete-a-layer) pour y ajouter un lien CTA.
 1. Dans le panneau des propriétés, sélectionnez **[!UICONTROL Ajouter un CTA]**, spécifiez l’URL de destination dans le champ **[!UICONTROL URL]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
-![ajouter CTA](/help/assets/assets/add-cta.png)
+   ![ajouter CTA](/help/assets/assets/add-cta.png)
 
 1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser votre modèle et voir ses paramètres définis.
 1. Cliquez sur **[!UICONTROL Publier]** et sélectionnez **[!UICONTROL Oui]** pour publier le modèle, s’il n’a pas été publié précédemment.
@@ -327,7 +327,7 @@ Transformez n’importe quel calque d’image ou de texte de votre modèle Dynam
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
