@@ -4,7 +4,7 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -313,13 +313,15 @@ Transformez n’importe quel calque d’image ou de texte de votre modèle Dynam
 1. Accédez à l’emplacement de votre modèle, sélectionnez le modèle et cliquez sur ![modifier](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Modifier le modèle]**. Le modèle s’affiche sur la zone de travail.
 1. Sélectionnez le calque de modèle et [accédez à son panneau Propriétés](#edit-or-delete-a-layer) pour y ajouter un lien CTA.
 1. Dans le panneau des propriétés, sélectionnez **[!UICONTROL Ajouter un CTA]**, spécifiez l’URL de destination dans le champ **[!UICONTROL URL]** et cliquez sur **[!UICONTROL Enregistrer]**.
-   ![ajouter CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![ajouter CTA](/help/assets/assets/add-cta.png)
+
 1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser votre modèle et voir ses paramètres définis.
 1. Cliquez sur **[!UICONTROL Publier]** et sélectionnez **[!UICONTROL Oui]** pour publier le modèle, s’il n’a pas été publié précédemment.
 1. Accédez au dossier dans lequel ce modèle est enregistré, sélectionnez-le et cliquez sur ![page de détails](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Détails]**.
 1. Cliquez sur **[!UICONTROL Copier les options]** et sélectionnez **[!UICONTROL Copier le code intégré]**.
 
-   ![copier le code incorporé](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![copier le code incorporé](/help/assets/assets/copy-options1.png)
 
    Voici un exemple de code intégré :
 
