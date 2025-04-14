@@ -1,6 +1,6 @@
 ---
-title: Comment créer des formulaires autonomes basés sur un modèle Edge Delivery Services à l’aide de l’éditeur universel ?
-description: Cet article explique comment utiliser l’éditeur universel pour créer des formulaires en sélectionnant un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaires. Vous pouvez également publier les formulaires dans AEM Edge Delivery Services.
+title: Comment créer des formulaires autonomes basés sur un modèle Edge Delivery Services à l’aide de l’éditeur universel ?
+description: Cet article explique comment utiliser l’éditeur universel pour créer des formulaires en sélectionnant un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaires. Vous pouvez également publier les formulaires dans AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: true
@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -34,11 +34,11 @@ Cet article vous guide tout au long du processus de création de formulaires aut
 
 ## Utilisation des formulaires dans l’éditeur universel
 
-Avec l’éditeur universel, vous pouvez facilement créer des formulaires autonomes réactifs et interactifs. Vous pouvez effectuer les actions suivantes sur les formulaires dans l’éditeur universel :
+Avec l’éditeur universel, vous pouvez facilement créer des formulaires autonomes réactifs et interactifs. Vous pouvez effectuer les actions suivantes sur les formulaires dans l’éditeur universel :
 * [Créer un formulaire](#create-a-form)
-* [Créer un formulaire](#author-a-form)
-* [Publication d’un formulaire](#publish-a-form)
-* [Gestion d’un formulaire](#manage-a-form)
+* [Préparer un formulaire](#author-a-form)
+* [Publier un formulaire](#publish-a-form)
+* [Gérer un formulaire](#manage-a-form)
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Avec l’éditeur universel, vous pouvez facilement créer des formulaires auton
 
    Lorsque vous sélectionnez un modèle basé sur Edge Delivery Services, le bouton **[!UICONTROL Créer]** est activé.
 1. (Facultatif) Dans les onglets **[!UICONTROL Source de données]** ou **[!UICONTROL Envoi]**, vous pouvez sélectionner une source de données ou une action d’envoi.
-1. (Facultatif) Dans l’onglet **[!UICONTROL Diffusion]**, vous pouvez spécifier une date de publication ou de dépublication pour un formulaire.
+1. (Facultatif) Dans l’onglet **[!UICONTROL Diffusion]**, vous pouvez spécifier une date de publication ou d’annulation de publication pour un formulaire.
 
 1. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche.
 1. Spécifiez le **Nom** et le **Titre**.
@@ -77,7 +77,7 @@ Avec l’éditeur universel, vous pouvez facilement créer des formulaires auton
 
    Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en vue Création.
 
-### Créer un formulaire
+### Préparer un formulaire
 
 1. Ouvrez l’explorateur de contenu et accédez au composant **[!UICONTROL Formulaire adaptatif]** dans l’**arborescence de contenu**.
 
@@ -117,7 +117,7 @@ Avec l’éditeur universel, vous pouvez facilement créer des formulaires auton
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-### Publication d’un formulaire
+### Publier un formulaire
 
 Publiez maintenant le formulaire autonome dans Edge Delivery Services en cliquant sur le bouton **[!UICONTROL Publier]** dans le coin supérieur droit de l’éditeur universel.
 
@@ -147,7 +147,7 @@ La structure de l’URL reste la même pour les versions intermédiaires et acti
 
 ![Afficher le formulaire publié](/help/edge/assets/eds-view-publish-form.png)
 
-### Gestion d’un formulaire
+### Gérer un formulaire
 
 Vous pouvez effectuer plusieurs opérations sur des formulaires depuis l’interface d’utilisation d’AEM Forms.
 
