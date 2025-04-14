@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 65%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) est le vendredi 27 mars 2025. La prochaine disponibilité des fonctionnalités (2025.4.0) est prévue pour le vendredi 24 avril 2025.
+La date de publication de la version actuelle d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) est le 27 mars 2025. La prochaine disponibilité des fonctionnalités (2025.4.0) est prévue pour le 24 avril 2025.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -46,19 +46,19 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités de Dynamic Media {#new-features-dynamic-media}
+### Nouvelles fonctionnalités de Dynamic Media {#new-features-dynamic-media}
 
-**Prise en charge de formulaires longs pour les vidéos diffusées à l’aide d’Dynamic Media avec Open API**
+**Prise en charge des formes longues pour les vidéos diffusées à l’aide de Dynamic Media avec OpenAPI**
 
-Dynamic Media avec OpenAPI prend désormais en charge les vidéos longues. Les vidéos longues peuvent prendre en charge jusqu’à 50 Go et 2 heures.
+Dynamic Media avec OpenAPI prend désormais en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
 ### Dynamic Media Classic {#dmc}
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-L’onglet Bande passante du tableau de bord des rapports Dynamic Media Classic n’est plus pris en charge à compter d’avril 2025.
+L’onglet Bande passante du tableau de bord de création de rapports Dynamic Media Classic n’est plus pris en charge depuis avril 2025.
 
-Voir [Bande passante et stockage, Types de rapports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Voir [Bande passante et stockage, types de rapports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
 ## Nouvelles fonctionnalités de la vue Assets {#new-features-assets-view}
@@ -66,7 +66,7 @@ Voir [Bande passante et stockage, Types de rapports](https://experienceleague.ad
 
 **Prise en charge des balises racines**
 
-AEM Assets prend désormais en charge le mappage d’une propriété de balise dans un formulaire de métadonnées à des métadonnées personnalisées. En outre, en tant qu’administrateur, vous pouvez restreindre la disponibilité des balises aux utilisateurs en limitant l’accès à une balise racine spécifique et aux balises qui existent sous la balise racine.
+AEM Assets prend désormais en charge le mappage d’une propriété de balise dans un formulaire de métadonnées vers des métadonnées personnalisées. En outre, l’équipe d’administration peut limiter la disponibilité des balises pour les personnes en limitant l’accès à une balise racine spécifique et aux balises qui existent sous la balise racine.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -84,27 +84,27 @@ Les formulaires adaptatifs vous permettent d’utiliser des [modèles d’e-mail
 
 #### Amélioration de la prise en charge de l’espace de stockage dans le cloud : chargement direct de PDF vers le stockage Blob Azure
 
-AEM Forms API de génération de documents vous [permettent désormais de télécharger directement des documents](/help/forms/early-access-ea-features.md#doc-generation-api) PDF générés dans Azure Blob Storage. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
+Les API de génération de documents d’AEM Forms vous permettent désormais de [charger directement des documents PDF générés](/help/forms/early-access-ea-features.md#doc-generation-api) vers Azure Blob Storage. Cette amélioration simplifie le stockage et la récupération, améliorant l’efficacité et l’intégration aux workflows cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Prise en charge de Java 21 {#java21}
 
-Depuis la version de janvier, vous pouvez créer du code avec Java 21 et Java 17. Vous avez accès à de nouvelles fonctionnalités telles que la correspondance de modèles, les classes scellées et diverses améliorations de performances. Pour connaître les étapes de configuration, y compris la mise à jour de votre projet Maven et de vos versions de bibliothèque, consultez l’article Environnement de [génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) .
+Depuis la version de janvier, vous pouvez créer du code avec Java 21 et Java 17. Vous avez accès à de nouvelles fonctionnalités telles que la correspondance de motifs, les classes scellées et diverses améliorations des performances. Pour connaître les étapes de configuration, notamment la mise à jour des versions de votre projet Maven et de votre bibliothèque, consultez l’article [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
-Le runtime **Java 21**, plus performant, est automatiquement déployé lorsqu’une version Java 17 ou 21 est détectée. Cependant, Adobe recommande également d’opter pour le runtime Java 21 pour les environnements créés avec Java 11, en envoyant [un e-mail à aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Découvrez les [exigences d’exécution de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+La version Java 21 **runtime** la plus performante est automatiquement déployée lorsqu’une version Java 17 ou 21 est détectée. Cependant, Adobe recommande également de choisir l’exécution Java 21 pour les environnements créés avec Java 11, en envoyant un e-mail à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Découvrez les [exigences d’exécution de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> Le runtime **Java 21** a été déployé dans vos environnements dev/RDE en février ; il sera appliqué à vos environnements d’étape/production les **28 et 29** avril. Notez que **le code** de création avec Java 21 (ou Java 17) est indépendant du runtime Java 21 - vous devez explicitement prendre des mesures pour générer du code avec Java 21 (ou Java 17).
+> Java 21 **runtime** a été déployé dans vos environnements de développement/RDE en février ; il sera appliqué à vos environnements d’évaluation/de production les **28 et 29 avril**. Notez que la **création de code** avec Java 21 (ou Java 17) est indépendante de l’exécution Java 21. Vous devez engager des mesures explicites pour créer du code avec Java 21 (ou Java 17).
 
-### AEM Transfert de connexion vers d’autres destinations - Programme bêta {#log-forwarding-earlyadopter}
+### Transfert de journal AEM vers d’autres destinations - Programme bêta {#log-forwarding-earlyadopter}
 
-Maintenant en version bêta, vous pouvez transférer AEM journaux vers New Relic (en utilisant HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, mais pas les journaux CDN. Envoyez-aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) par courrier électronique [pour obtenir l’accès.
+Avec la version bêta, vous pouvez désormais transférer les journaux AEM vers New Relic (à l’aide de HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, contrairement aux journaux de réseau CDN. Envoyer un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
 
-Bien que les journaux puissent être téléchargés à partir de Cloud Manager, de nombreuses organisations trouvent avantageux de diffuser ces journaux vers une destination de journalisation préférée. AEM prend déjà en charge le transfert de journaux AEM (GA) et CDN vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Cette fonctionnalité est configurée en libre-service et déployée à l’aide du pipeline de configuration.
+Bien que les journaux puissent être téléchargés depuis Cloud Manager, de nombreuses organisations préfèrent diffuser ces journaux vers une destination de journalisation spécifique. AEM prend déjà en charge le transfert de journaux AEM (disponibilité générale) et de réseau CDN vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Cette fonctionnalité est configurée en libre-service et déployée à l’aide du pipeline de configuration.
 
-Pour en savoir plus, consultez la documentation](/help/implementing/developing/introduction/log-forwarding.md) sur le transfert des [journaux.
+Pour en savoir plus, consultez la [documentation sur le transfert de journaux](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge Computing - Demande de commentaires {#edge-computing-feedback}
 
