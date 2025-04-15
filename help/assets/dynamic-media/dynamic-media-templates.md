@@ -4,9 +4,9 @@ description: Découvrez comment créer des modèles Dynamic Media à l’aide d�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
+source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3072'
 ht-degree: 2%
 
 ---
@@ -283,7 +283,7 @@ Pour copier l’URL du modèle publié affiché dans l’aperçu :
 1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec vos clients ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
 
 Découvrez comment créer un modèle Dynamic Media pas à pas dans cette vidéo.
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Effectuer des mises à jour en temps réel sur le modèle à partir de l’URL{#update-the-template-from-the-url}
 
@@ -307,7 +307,7 @@ Modifiez le modèle en procédant comme suit :
 3. Sélectionnez le modèle.
 4. Cliquez sur **[!UICONTROL Modifier le modèle]**. La zone de travail de modèle affiche le modèle et la liste de tous ses calques dans le panneau Calques. Commencez à modifier le modèle en fonction de vos besoins.
 
-## Ajoutez le lien Appel à l’action à votre calque de modèle{#add-CTA-in-dynamic-media-templates}
+## Ajoutez un lien Appel à l’action (CTA) à votre calque de modèle{#add-CTA-in-dynamic-media-templates}
 
 Transformez n’importe quel calque d’image ou de texte de votre modèle Dynamic Media en lien hypertexte en y ajoutant un lien CTA qui dirige les utilisateurs vers une page cible. Pour ajouter un lien CTA à une couche, procédez comme suit :
 
@@ -342,7 +342,7 @@ Cliquez sur l’élément CTA sur le modèle pour accéder à la page de destina
 
 Regardez cette vidéo détaillée pour découvrir comment ajouter un lien CTA à un calque de modèle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Points importants à noter {#important-points-to-note}
 
