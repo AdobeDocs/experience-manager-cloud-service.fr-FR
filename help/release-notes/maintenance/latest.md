@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '1588'
+ht-degree: 99%
 
 ---
 
@@ -67,10 +67,10 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-24907 : Edge Delivery avec éditeur universel : prise en charge de la publication d’Assets sur plusieurs sites pour les cas d’utilisation MSM (accès anticipé).
 * SITES-27956 : Edge Delivery avec éditeur universel : amélioration du débit de publication (accès anticipé).
 * SITES-27956 : Edge Delivery avec éditeur universel : amélioration de la gestion des erreurs pour la publication sur Edge Delivery Services (accès anticipé).
-* SITES-29602 : CIF : suppression de l’utilisation de Guava dans core-cif-components-core.
-* SITES-25785 : CIF : ajout d’une sélection de variantes de produit pour le type de données de référence de produit CIF.
-* SITES-26392 : CIF[expérimental] : JSON+LD dans les composants principaux CIF dans les PDP.
-* SITES-21278 : CIF[Expérimental] : CIF peut effacer le cache.
+* SITES-29602 : CIF : suppression de l’utilisation de Guava dans core-cif-components-core.
+* SITES-25785 : CIF : ajout d’une sélection de variantes de produit pour le type de données de référence de produit CIF.
+* SITES-26392 : CIF [Expérimental] : JSON+LD dans les composants principaux CIF dans les PDP.
+* SITES-21278 : CIF [Expérimental] : CIF peut effacer le cache.
 
 ### Problèmes résolus {#fixed-issues-20133}
 
@@ -115,9 +115,9 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * SITES-29363 : le bouton Réinitialiser la Live Copy ne fonctionne pas pour la hiérarchie de contenu de la Live Copy imbriquée.
 * SITES-29369 : problème d’événement de ressource dans AIO | Déclenchement incorrect des événements de page publiés/dépubliés.
 * SITES-29972 : les actions Supprimer et Renommer génèrent parfois de faux commentaires sur le workflow.
-* SITES-24631 : CIF : problème de recherche dans le champ de produit.
-* SITES-24902 : CIF : le format d’URL du produit ne fonctionne pas comme prévu pour les #variant_sku.
-* SITES-29191 : CIF : impossible d’ajouter plus de 20 SKU au composant Liste de produits.
+* SITES-24631 : CIF : problème de recherche dans le champ de produit.
+* SITES-24902 : CIF : le format d’URL du produit ne fonctionne pas comme prévu pour les #variant_sku.
+* SITES-29191 : CIF : impossible d’ajouter plus de 20 SKU au composant Liste de produits.
 
 ### Problèmes connus {#known-issues-20133}
 
