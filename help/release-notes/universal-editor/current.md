@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel du 10 mars 2025
-description: Il s’agit des notes de mise à jour de la version du 10 mars 2025 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.04.04
+description: Il s’agit des notes de mise à jour de la version 2025.04.04 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: ht
-source-wordcount: '295'
-ht-degree: 100%
+source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel du 10 mars 2025 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.04.04 {#release-notes}
 
-Il s’agit des notes de mise à jour de la version du 10 mars 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 4 avril 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,26 +22,10 @@ Il s’agit des notes de mise à jour de la version du 10 mars 2025 de l’éd
 
 ## Nouveautés {#what-is-new}
 
-* **Déplacement de composants :** [le déplacement de composants entre des conteneurs](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) observe désormais le filtre de composant du conteneur cible.
-   * Il n’est plus nécessaire de mettre en place la même [définition de filtre](/help/implementing/universal-editor/filtering.md) pour les conteneurs cible et de destination afin de déplacer le composant entre les conteneurs.
-* **Pages verrouillées :** le service d’éditeur universel observe le [statut de verrouillage d’une page](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) et écrit uniquement sur les pages qui ne sont pas verrouillées ou qui sont verrouillées par l’utilisateur ou l’utilisatrice.
-
-## Nouvelles extensions pour l’éditeur universel {#extensions}
-
-Un certain nombre de nouvelles extensions ont été publiées sur [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) pour l’éditeur universel, ce qui améliore l’expérience de création.
-
-* **Extension MSM** : vous pouvez désormais interrompre et réinstancier l’héritage des composants ou des blocs à l’aide de cette extension.
-* **Extension des propriétés de page** : grâce à cette extension, vous accédez à la fenêtre des propriétés de page de la page directement à partir de l’éditeur universel.
-* **Extension de workflow** : utilisez des workflows sur les pages et les fragments de contenu instrumentés sur la page à l’aide de cette extension.
-* **Extension de verrouillage de page** : utilisez cette extension pour verrouiller et déverrouiller une page directement à partir de l’éditeur universel.
+* **Prise en charge de Dynamic Media avec OpenAPI** - [Le sélecteur de ressources](/help/assets/overview-asset-selector.md#repository-switcher) dans l’éditeur universel prend désormais en charge [Dynamic Media avec OpenAPI et les ressources distantes](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Autres améliorations {#other-improvements}
 
-* Des correctifs ont été apportés pour corriger la validation de la zone de travail découplée.
-
-## Abandon {#deprecation}
-
-* La bibliothèque `universal-editor-cors` fournie via npm ou `https://unviersal-editor-service.experiencecloud.live/corslib/*` ne doit plus être utilisée.
-   * Une balise de script pointant vers `https://universal-editor-service.adobe.io/cors.js` doit être utilisée à la place.
-   * Consultez la [Vue d’ensemble de l’éditeur universel pour les développeurs et développeuses AEM](/help/implementing/universal-editor/developer-overview.md) pour en savoir plus sur la manière d’instrumenter correctement votre page et l’utiliser avec l’éditeur universel.
-   * Un message d’abandon s’affiche une fois par jour si la mauvaise méthode est utilisée.
+* La suppression du contexte de mise en page a été corrigée.
+* Des améliorations ont été apportées aux tests e2e.
+* Mises à jour des dépendances et nettoyage du code ont été effectués.
