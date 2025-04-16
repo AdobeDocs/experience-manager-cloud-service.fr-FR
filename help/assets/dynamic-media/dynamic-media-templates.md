@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 1%
 
 ---
@@ -87,8 +87,8 @@ Pour créer un modèle de [!DNL Dynamic Media], vous devez disposer des élémen
 
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
-1. Accédez à votre [!DNL Assets View] et [créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans **[!UICONTROL Assets]**. L’arborescence de dossiers dans **[!UICONTROL Assets]** est répliquée dans **[!UICONTROL Dynamic Media Assets]**. Utilisez ce dossier [!UICONTROL Dynamic Media Assets] pour enregistrer votre modèle de [!DNL Dynamic Media] ultérieurement.
-1. Sélectionnez **[!UICONTROL Assets]** et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle.
+1. Accédez à votre [!DNL Assets View] et [créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. L’arborescence de dossiers dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** est répliquée dans **[!UICONTROL Dynamic Media Assets]**. Enregistrez votre modèle de [!DNL Dynamic Media] dans ce dossier [!UICONTROL Dynamic Media Assets].
+1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle.
 1. [Créer une zone de travail vierge](#create-a-canvas)
 1. [Ajouter des images à la zone de travail](#add-images-to-the-canvas)
 1. [Ajouter des calques de texte à la zone de travail](#add-text-to-the-canvas)
@@ -99,13 +99,15 @@ Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 Pour créer une zone de travail vide, procédez comme suit :
 
-1. Accédez à [!DNL Assets View] et sélectionnez **[!UICONTROL Dynamic Media Assets]** disponible dans le panneau de gauche.
+1. Accédez à [!DNL Assets View], sélectionnez **[!UICONTROL Dynamic Media Assets]** disponible dans le panneau de gauche et accédez à votre dossier pour enregistrer votre modèle dans ce dossier.
 
    ![Modèles Dynamic Media](/help/assets/assets/DM-Assets1.png)
 
-1. Sélectionnez **[!UICONTROL Créer un modèle]** sur cette page ou accédez à votre dossier **[!UICONTROL Assets Dynamic Media]** et sélectionnez **[!UICONTROL Créer un modèle]**. Le modèle est enregistré à l’emplacement où vous l’avez créé, soit dans le dossier racine tel que **[!UICONTROL Dynamic Media Assets]**, soit dans un dossier au sein de la racine. Après avoir sélectionné **[!UICONTROL Créer un modèle]** la boîte de dialogue **[!UICONTROL Nouveau modèle]** s’affiche.
+1. Sélectionnez **[!UICONTROL Créer un modèle]**. La boîte de dialogue **[!UICONTROL Nouveau modèle]** s’affiche.
    ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel ](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  Le modèle est enregistré à l’emplacement où vous l’avez créé. Sur [!DNL Assets View] page d’accueil, sélectionnez **[!UICONTROL Dynamic Media Assets]** et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans le dossier racine **[!UICONTROL Dynamic Media Assets]**.
 1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
    ![ modèle personnalisable en temps réel ](/help/assets/assets/blank-canvas-page.png)
 
@@ -267,7 +269,7 @@ Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL
    ![création de contenu à la volée](/help/assets/assets/dm-templates-publish-status.png)
 Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.
    <br>
-1. Pour publier le modèle sur la page d’aperçu, cliquez sur **[!UICONTROL Publier]** et confirmez la publication. Le message Publication terminée s’affiche et le statut de publication est mis à jour sur Publié.
+1. Pour publier le modèle sur la page d’aperçu, cliquez sur **[!UICONTROL Publier]** et confirmez la publication. Le message **[!UICONTROL Publication terminée]** s’affiche et le statut de publication est mis à jour sur **[!UICONTROL Publié]**.
 
 >[!NOTE]
 >
