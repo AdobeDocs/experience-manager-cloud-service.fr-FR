@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 93%
@@ -58,7 +58,7 @@ Amélioration du [référencement de fragments de contenu avec des références 
 
 **AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’API [AEM REST OpenAPI pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md) est désormais disponible pour AEM as a Cloud Service.
+L’API [AEM REST OpenAPI pour la diffusion de fragments de contenu](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ### Fonctionnalités obsolètes {#sites-deprecated}
 

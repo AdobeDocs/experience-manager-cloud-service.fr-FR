@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -57,7 +57,7 @@ Amélioration du [référencement de fragment de contenu avec des références b
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

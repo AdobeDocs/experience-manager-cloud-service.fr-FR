@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
-ht-degree: 95%
+source-wordcount: '6152'
+ht-degree: 94%
 
 ---
 
@@ -1122,7 +1122,7 @@ ht-degree: 95%
       + [Mise à niveau des fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Résolution de problèmes liés aux requêtes GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI REST AEM pour la diffusion de fragments de contenu](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [Diffusion de fragments de contenu AEM avec OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [API OpenAPI de fragments de contenu et de modèles](/help/headless/content-fragment-openapis.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 95%
       + Éditeur universel {#universal-editor}
          + [Présentation](/help/implementing/universal-editor/introduction.md)
          + [Cas d’utilisation](/help/implementing/universal-editor/use-cases.md)
+         + [L’éditeur universel et l’éditeur Sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attributs et types d’élément](/help/implementing/universal-editor/attributes-types.md)
          + [Définition du composant](/help/implementing/universal-editor/component-definition.md)
          + [Définitions de modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)

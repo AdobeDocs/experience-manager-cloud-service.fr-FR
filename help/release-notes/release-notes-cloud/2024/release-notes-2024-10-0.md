@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.10.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -56,7 +56,7 @@ Tirez profit de GenAI grâce à une nouvelle fonctionnalité d’AEM, [générer
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-rest-openapi-content-fragment-delivery.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
