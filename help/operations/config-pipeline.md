@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 2%
@@ -38,13 +38,13 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 | [Règles de filtrage du trafic, y compris WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Déclarer les règles pour bloquer le trafic malveillant |
 | [Transformations de requête](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Déclaration des règles pour transformer la forme de la demande de trafic |
 | [ Transformations de réponse ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Déclaration de règles pour transformer la forme de la réponse pour une requête donnée |
-| [ Redirections côté client ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Déclarez les redirections côté client de style 301/302 |
-| [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Déclarez des règles pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobes |
+| [Redirections côté serveur](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Déclarez les redirections côté serveur de type 301/302 |
+| [Sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Déclarez des règles pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobe |
 | [Pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Remplacer la page d’erreur par défaut si l’origine AEM ne peut pas être atteinte, en référençant l’emplacement du contenu statique auto-hébergé dans le fichier de configuration |
 | [Purge CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Déclarez les clés API de purge utilisées pour purger le réseau CDN. |
 | [Jeton HTTP CDN géré par le client](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Déclarez la valeur de X-AEM-Edge-Key nécessaire pour appeler le réseau CDN Adobe à partir d’un réseau CDN client |
 | [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et mots de passe d’une boîte de dialogue d’authentification de base protégeant certaines URL. |
-| [ Tâche de maintenance de purge de version ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant les règles déterminant quand les versions de contenu doivent être purgées. |
+| [ Tâche de maintenance de purge de version ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. |
 | [ Tâche de maintenance de purge du journal d’audit ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. |
 | [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points d’entrée et les informations d’identification pour le transfert des journaux vers diverses destinations, y compris Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
 

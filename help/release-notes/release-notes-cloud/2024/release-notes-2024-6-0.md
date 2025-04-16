@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.6.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Consultez la vidéo Vue d’ensemble de la version de juin 2024 pour obtenir un
 
 ### Nouvelles fonctionnalités dans Experience Manager Sites {#new-feature-sites}
 
-**Service de surveillance des utilisateurs et utilisatrices en temps réel (RUM)** {#real-use-monitoring}
+**Service de données de surveillance d’utilisation réelle (RUM)** {#real-use-monitoring}
 
 Le [service de surveillance des utilisateurs et utilisatrices en temps réel (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) est désormais en disponibilité générale. Il permet la collecte de données côté client pour AEM as a Cloud Service. Ce service offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il offre aux clientes et clients des informations avancées sur le trafic et les performances de leurs pages, ce qui leur offre une occasion précieuse de comprendre et d’améliorer les performances de ces pages.
 
@@ -211,9 +211,9 @@ Auparavant, un ticket d’assistance était nécessaire pour générer la clé X
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Redirections côté client (programme d’adoption précoce) {#client-side-redirects-early-adopter}
+#### Redirections Côté Serveur (Programme Des Utilisateurs Et Utilisatrices Précoces) {#server-side-redirects-early-adopter}
 
-Configurez des redirections côté client 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Notez qu’il existe déjà plusieurs autres fonctionnalités liées à la [configuration du réseau CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), y compris les transformations de requêtes et de réponses, et le routage du trafic vers les sites hors AEM.
 
 #### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 

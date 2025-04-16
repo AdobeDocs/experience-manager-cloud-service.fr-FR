@@ -4,7 +4,7 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 2%
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # Configurer le trafic sur le réseau CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service propose un ensemble de fonctionnalités configurables au niveau de la couche [CDN géré par l’Adobe ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) qui modifient la nature des requêtes entrantes ou des réponses sortantes. Les règles suivantes, décrites en détail sur cette page, peuvent être déclarées pour obtenir le comportement suivant :
+AEM as a Cloud Service propose un ensemble de fonctionnalités configurables au niveau de la couche [CDN géré par Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) qui modifient la nature des requêtes entrantes ou des réponses sortantes. Les règles suivantes, décrites en détail sur cette page, peuvent être déclarées pour obtenir le comportement suivant :
 
 * [Transformations de requête](#request-transformations) - modifiez certains aspects des requêtes entrantes, y compris les en-têtes, les chemins et les paramètres.
 * [Transformations de réponse](#response-transformations) - modifiez les en-têtes qui sont en train de revenir au client (par exemple, un navigateur web).
-* [Redirections côté client](#client-side-redirectors) - déclenchez une redirection de navigateur.
+* [Redirections côté serveur](#server-side-redirectors) - déclenchez une redirection de navigateur.
 * [Sélecteurs d’origine](#origin-selectors) : proxy vers un autre serveur principal d’origine.
 
 Vous pouvez également configurer sur le réseau CDN les règles de filtrage du trafic (y compris WAF), qui contrôlent le trafic autorisé ou refusé par le réseau CDN. Cette fonctionnalité est déjà disponible et vous pouvez en savoir plus à ce sujet sur la page [Règles de filtrage de trafic , y compris les règles WAF](/help/security/traffic-filter-rules-including-waf.md).
@@ -306,7 +306,7 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 ## Sélecteurs d’origine {#origin-selectors}
 
-Vous pouvez tirer parti du réseau CDN AEM pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobes (par chemin d’accès ou sous-domaine, par exemple).
+Vous pouvez tirer parti du réseau CDN d’AEM pour acheminer le trafic vers différents serveurs principaux, y compris les applications non Adobe (par chemin d’accès ou sous-domaine, par exemple).
 
 Exemple de configuration :
 
@@ -357,12 +357,12 @@ Les connexions aux origines sont SSL uniquement et utilisent le port 443.
 | **forwardAuthorization** (facultatif, la valeur par défaut est false) | Si la valeur est définie sur true , l’en-tête « Authorization » de la requête client est transmis au serveur principal. Dans le cas contraire, l’en-tête d’autorisation est supprimé. |
 | **timeout** (facultatif, en secondes, la valeur par défaut est de 60) | Nombre de secondes que le réseau CDN doit attendre pour qu’un serveur principal fournisse le premier octet d’un corps de réponse HTTP. Cette valeur est également utilisée comme délai d’expiration entre octets pour le serveur principal. |
 
-### Proxy vers les Edge Delivery Services {#proxying-to-edge-delivery}
+### Proxy vers Edge Delivery Services {#proxying-to-edge-delivery}
 
-Il existe des scénarios où les sélecteurs d’origine doivent être utilisés pour acheminer le trafic via AEM Publish vers les Edge Delivery Services AEM :
+Il existe des scénarios où les sélecteurs d’origine doivent être utilisés pour acheminer le trafic via l’instance de publication AEM vers AEM Edge Delivery Services :
 
-* Certains contenus sont diffusés par un domaine géré par AEM Publish, tandis que d’autres contenus du même domaine sont diffusés par des Edge Delivery Services
-* Le contenu diffusé par les Edge Delivery Services bénéficierait des règles déployées via le pipeline de configuration, y compris les règles de filtrage du trafic ou les transformations de requête/réponse
+* Certains contenus sont diffusés par un domaine géré par l’instance de publication AEM, tandis que d’autres contenus du même domaine sont diffusés par Edge Delivery Services
+* Le contenu diffusé par Edge Delivery Services bénéficierait des règles déployées via le pipeline de configuration, y compris les règles de filtrage du trafic ou les transformations de requête/réponse
 
 Voici un exemple de règle de sélecteur d’origine qui peut accomplir cela :
 
@@ -390,10 +390,10 @@ data:
 ```
 
 >[!NOTE]
-> Puisque le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant les Edge Delivery Services [Configurer la documentation d’invalidation des notifications push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Puisque le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation Edge Delivery Services [Configuration de l’invalidation des notifications push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
-## Redirections côté client {#client-side-redirectors}
+## Redirections côté serveur {#server-side-redirectors}
 
 Vous pouvez utiliser des règles de redirection côté client pour les redirections 301, 302 et autres redirections côté client similaires. Si une règle correspond, le réseau CDN répond avec une ligne d’état qui inclut le code d’état et le message (par exemple, HTTP/1.1 301 Moved Permanency), ainsi que l’ensemble d’en-têtes d’emplacement.
 

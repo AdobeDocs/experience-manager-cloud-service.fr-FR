@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.3.0 d’ [!DNL Adobe Expe
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -116,14 +116,14 @@ Grâce à Assets Essentials, les administrateurs et les administratrices peuven
 
 ### Nouvelles fonctionnalités pour AEM Forms {#forms-new-features}
 
-* **[Edge Delivery Services Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)** : Edge Delivery Services pour AEM Forms est un ensemble de services composable qui permet un environnement de développement rapide dans lequel les auteurs peuvent rapidement mettre à jour, publier et lancer de nouveaux formulaires. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)** : Edge Delivery Services pour AEM Forms est un ensemble composable de services qui permet un environnement de développement rapide dans lequel les auteurs et autrices peuvent mettre à jour, publier et lancer rapidement de nouveaux formulaires. Ces services offrent des expériences de formulaires exceptionnelles et à fort impact qui favorisent l’engagement et les conversions. Ces expériences de formulaires sont faciles à créer et à développer.
 
   ![Fonctionnalités d’EDS Forms](/help/edge/assets/eds-forms-features.png)
 
 Ces services permettent d’effectuer les opérations suivantes :
 
 * Utilisez plusieurs sources de contenu sur le même site de formulaires et utilisez vos outils de création préférés, tels que Microsoft Excel, Google Sheets ou l’éditeur de formulaires adaptatifs.
-* Diffusez des expériences d’inscription numérique qui se chargent et s’affichent rapidement et en permanence pour surveiller les performances de vos formulaires grâce à la surveillance de l’utilisation réelle (RUM).
+* Proposez des expériences d’inscription numérique qui chargent et rendent rapidement et surveillent en permanence les performances de vos formulaires par le biais de la surveillance d’utilisation réelle (RUM).
 * Utilisez du HTML brut, du code CSS moderne et du code Vanilla JavaScript pour créer des expériences exceptionnelles, en évitant la courbe abrupte d’apprentissage d’un framework spécifique.
 
 
@@ -189,9 +189,9 @@ Cette mise à jour offre une expérience plus inclusive aux utilisateurs et util
 * **[Vous pouvez tirer parti du service de données de surveillance de l’utilisation réelle (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** pour activer la collecte côté client pour AEM as a Cloud Service.
 La surveillance de l’utilisation en temps réel (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
-  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, avec le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance de l’utilisation réelle (RUM) pour vous.
+  Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, avec le nom de domaine de chacun des environnements pour lesquels vous souhaitez activer l’utilisation de RUM depuis votre adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance d’utilisation réelle (RUM) pour vous.
 
-## Principes de base d’[!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Programmes d’adoption précoce {#foundation-early-adopter}
 
@@ -205,7 +205,7 @@ Vous pouvez maintenant envoyer un e-mail à **<aemcs-cdn-config-adopter@adobe.co
 
 Outre les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées qui incluent les règles WAF (Web Application Firewall) sous licence optionnelle, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration du réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour accéder aux éléments suivants :
 
-* Redirections côté client 301/302
+* Redirections côté serveur 301/302
 * Établir un proxy des requêtes en périphérie vers des origines arbitraires (comme les applications non AEM)
 * Transformations d’URL
 * Définir ou modifier des en-têtes de requête ou de réponse

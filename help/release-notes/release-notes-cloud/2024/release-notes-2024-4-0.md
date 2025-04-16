@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.4.0 d’ [!DNL Adobe Expe
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -186,9 +186,9 @@ Dans le cas improbable où le réseau CDN ne pourrait pas acheminer le trafic ve
 
 ### Programmes d’adoption précoce {#foundation-early-adopter}
 
-#### Redirections côté client (programme d’adoption précoce) {#client-side-redirects-early-adopter}
+#### Redirections côté serveur (programme destiné aux utilisateurs et utilisatrices précoces) {#server-side-redirects-early-adopter}
 
-Configurez des redirections côté client 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>**.
+Configurez les redirections côté serveur 301/302 dans le contrôle de code source et déployez-les sur le réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Alertes relatives aux règles de filtrage du trafic (programme d’adoption précoce) {#traffic-filter-rules-alerts-early-adopter}
 

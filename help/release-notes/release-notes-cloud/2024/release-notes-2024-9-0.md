@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.9.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ Le réseau CDN géré par Adobe prend désormais en charge [Edge Side Includes
 
 Protégez certaines ressources de contenu en affichant une boîte de dialogue d’authentification de base nécessitant un nom d’utilisateur ou d’utilisatrice et un mot de passe. Cette fonctionnalité cible principalement les cas d’utilisation de l’authentification légère, comme les parties prenantes de l’entreprise qui examinent le contenu, plutôt que de servir de solution complète pour les droits d’accès des utilisateurs et utilisatrices finaux. La liste des noms d’utilisateur et mots de passe est gérée à l’aide d’un fichier de configuration dans Git déployé via le pipeline de configuration, avec une référence aux variables d’environnement Cloud Manager de type secret. [En savoir plus](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Redirections côté client {#client-side-redirects}
+### Redirections Côté Serveur {#server-side-redirects}
 
-Déclarez [ redirections de navigateur ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) dans un fichier de configuration Git qui sont déployées et évaluées sur le réseau CDN. Cela peut s’avérer utile dans certains cas, notamment pour supprimer des pages, modifier la structure du site et optimiser l’optimisation du référencement.
+Déclarez [ redirections de navigateur ](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) dans un fichier de configuration Git qui sont déployées et évaluées sur le réseau CDN. Cela peut s’avérer utile dans certains cas, notamment pour supprimer des pages, modifier la structure du site et optimiser l’optimisation du référencement.
 
 ### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
 
