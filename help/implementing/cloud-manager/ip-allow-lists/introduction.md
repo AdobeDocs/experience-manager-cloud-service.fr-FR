@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 25%
 
 ---
@@ -26,31 +26,31 @@ Découvrez comment les Listes autorisées IP peuvent limiter les adresses à par
 
 ## Vue d’ensemble {#overview}
 
-AEM as a Cloud Service est par défaut accessible via Internet. Bien que la sécurité soit gérée au moyen de l’authentification et de l’autorisation des utilisateurs et utilisatrices, la liste autorisée d’adresses IP permet de limiter l’accès aux seules adresses IP de confiance.
+AEM as a cloud service est par défaut accessible par le biais d’Internet. Bien que la sécurité soit gérée au moyen de l’authentification et de l’autorisation des utilisateurs et utilisatrices, la liste autorisée d’adresses IP permet de limiter l’accès aux seules adresses IP de confiance.
 
-Les Listes autorisées IP de Cloud Manager peuvent être utilisées pour limiter et contrôler l’accès uniquement à ces adresses IP approuvées. Les utilisateurs de Cloud Manager disposant des autorisations appropriées peuvent [créer et ajouter des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) d’adresses IP de confiance à partir desquelles les utilisateurs de leur site peuvent accéder à leurs domaines d’AEM.
+Les Listes autorisées IP Cloud Manager peuvent être utilisées pour contrôler l’accès et le limiter uniquement à ces adresses IP de confiance. Les utilisateurs de Cloud Manager disposant des autorisations appropriées peuvent [créer et ajouter des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) d’adresses IP de confiance à partir desquelles les utilisateurs de leur site peuvent accéder à leurs domaines AEM.
 
-Après l’ajout de , [les Listes autorisées IP peuvent être appliquées ou non ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) plusieurs fois en tant qu’unité ou entité à un service de création, ou à un service d’éditeur, ou les deux, dans un environnement.
+Après l’ajout, les Listes autorisées IP [ peuvent être appliquées ou non appliquées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) plusieurs fois en tant qu’unité ou entité à un service de création ou un service d’éditeur, ou les deux, dans un environnement.
 
 >[!NOTE]
 >
->Si aucune Liste autorisée IP n’est appliquée, toutes les adresses IP sont autorisées par défaut. Lorsqu’une Liste autorisée IP est appliquée, aucune adresse IP n’est autorisée, à l’exception des adresses de la Liste autorisée IP.
+>Si aucune Liste autorisée IP n’est appliquée, toutes les adresses IP sont autorisées par défaut. Lorsqu’une Liste autorisée IP est appliquée, aucune adresse IP n’est autorisée, à l’exception de celles figurant sur la Liste autorisée IP.
 
 ## Limites {#limitations}
 
-Avant d’utiliser des Listes autorisées IP, vous devez comprendre les limites suivantes quant à leurs fonctionnalités, à leur utilisation et à leurs effets sur d’autres fonctionnalités.
+Avant d’utiliser les Listes autorisées IP, vous devez connaître les restrictions suivantes concernant leurs fonctionnalités, leur utilisation et leur impact sur les autres fonctionnalités.
 
-### Limites générales des Listes autorisées IP {#general}
+### Restrictions générales des Listes autorisées IP {#general}
 
-* Vous pouvez ajouter un maximum de 50 Listes autorisées IP à votre programme.
-* Il est possible d’ajouter un maximum de 50 adresses IP/CIDR à chaque Liste autorisée IP.
-* Les noms de Liste autorisée IP sont pris en charge dans Cloud Manager pour le service de création ou de publication, ou les deux, dans un environnement.
+* Vous pouvez ajouter jusqu’à 50 Listes autorisées IP à votre programme.
+* Vous pouvez ajouter jusqu’à 50 adresses IP/CIDR à chaque Liste autorisée IP.
+* Les noms de Liste autorisée IP sont pris en charge dans Cloud Manager pour le service de création ou le service de publication, ou les deux, dans un environnement.
 
 ### Pipelines front-end et Listes autorisées IP {#front-end-pipeline}
 
-Si vous utilisez (ou envisagez d’utiliser) le pipeline [front-end pour développer des sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), la Liste autorisée IP Cloud Manager suivante doit être ajoutée au préalable.
+Si vous utilisez ou avez l’intention d’utiliser le pipeline front-end [ pour développer des sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), la Liste autorisée IP Cloud Manager suivante doit être ajoutée au préalable.
 
-Lorsque vous [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), nommez-la *`Cloud Manager`*, puis copiez la liste des adresses ci-dessous et collez-les dans la boîte de dialogue Liste autorisée IP.
+Lorsque vous [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), donnez-lui *`Cloud Manager`* nom, puis copiez la liste d’adresses ci-dessous et collez-la dans la boîte de dialogue Liste autorisée IP .
 
 ```text
 52.254.106.192/28
@@ -78,10 +78,6 @@ Lorsque vous [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/i
 4.152.211.251
 ```
 
-Pour éviter toute interruption de l’exécution du pipeline frontal, assurez-vous que cette Liste autorisée IP Cloud Manager est ajoutée. Ensuite, appliquez la liste à l’environnement de création *avant* d’activer le pipeline.
+Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette Liste autorisée IP Cloud Manager est ajoutée. Appliquez ensuite la liste à l’environnement de création *avant* d’activer le pipeline.
 
-Pour plus d’informations, voir [Application d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) et [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) .
-
-### Éditeur universel et Listes autorisées IP {#universal-editor}
-
-{{ip-allow-lists-ue}}
+Voir [Appliquer la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) et [Activer le pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) pour plus d’informations.
