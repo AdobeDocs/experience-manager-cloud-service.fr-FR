@@ -7,23 +7,23 @@ hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Création d’un Forms adaptatif à l’aide de l’éditeur universel
+# Créer des formulaires adaptatifs à l’aide de l’éditeur universel
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
-L’éditeur universel est un éditeur visuel polyvalent qui fournit une expérience WYSIWYG (ce que vous voyez est ce que vous obtenez) pour la modification des formulaires. Il simplifie la création de formulaires réactifs et conviviaux avec une fonction glisser-déposer, à l’aide des composants Forms adaptatifs disponibles tels que les zones de texte, les boutons radio et les cases à cocher.
+L’éditeur universel est un éditeur visuel polyvalent qui fournit une expérience WYSIWYG (vous obtenez ce que vous voyez) pour la modification des formulaires. Il simplifie la création de formulaires réactifs et conviviaux avec une fonction glisser-déposer, à l’aide des composants Formulaires adaptatifs disponibles tels que les zones de texte, les boutons radio et les cases à cocher.
 
-AEM fournit un bloc, appelé bloc de Forms adaptatif, pour vous aider à créer facilement des Forms Edge Delivery Services pour capturer et stocker des données à l’aide de l’éditeur universel. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires Edge Delivery Services pour capturer et stocker les données. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png)
 
-Cet article vous guide tout au long du processus de création de formulaires autonomes à l’aide de l’éditeur universel en sélectionnant un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaire.
+Cet article vous guide tout au long du processus de création de formulaires autonomes avec l’éditeur universel en sélectionnant un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaires.
 
 ## Conditions préalables
 
@@ -95,7 +95,7 @@ Avec l’éditeur universel, vous pouvez facilement créer des formulaires auton
 
    ![Formulaire de contact](/help/edge/assets/contact-us.png)
 
-   Vous pouvez maintenant [configurer et personnaliser les actions d’envoi de formulaires](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Vous pouvez maintenant [configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--

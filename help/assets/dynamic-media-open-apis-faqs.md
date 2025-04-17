@@ -4,9 +4,9 @@ description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenA
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,9 +139,9 @@ En tant qu’utilisateur ou utilisatrice de la gestion des ressources numérique
 
 +++
 
-+++**Quelle est la taille de fichier prise en charge pour les vidéos ?**
++++**Quelle est la taille de fichier prise en charge pour les vidéos ?**
 
-Dynamic Media avec les fonctionnalités OpenAPI prend en charge les vidéos de forme longue. Les vidéos peuvent prendre en charge jusqu’à 50 Go et 2 heures.
+Dynamic Media avec OpenAPI prend en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
 +++
 

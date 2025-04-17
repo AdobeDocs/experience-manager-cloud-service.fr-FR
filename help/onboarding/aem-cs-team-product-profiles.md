@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -278,7 +278,7 @@ L’image suivante représente les groupes AEM reflétant le profil de produit e
 
 ### Ajout de profils de produit pour les environnements existants {#adding-product-profiles-for-existing-environments}
 
-Les environnements créés avant début avril 2024 peuvent ne pas disposer de l’instance de produit au niveau de l’organisation décrite dans les sections ci-dessus, ainsi que de certains profils de produit. Les bascules de service seront également absents des profils de produit existants. Il est recommandé de mettre à jour ces profils de produit, ce qui est un prérequis pour accéder à d’autres API à l’avenir.
+Il se peut que l’instance de produit au niveau de l’organisation décrite dans les sections ci-dessus ainsi que certains profils de produit soient absents des environnements créés avant le début d’avril 2024. Les bascules de service seront également absents des profils de produit existants. Il est recommandé de mettre à jour ces profils de produit, ce qui est un prérequis pour accéder à d’autres API à l’avenir.
 
 Si un ou plusieurs environnements d’un programme nécessitent la mise à jour de leurs profils de produit, Cloud Manager affiche la note ci-dessous. Notez qu’un environnement doit se trouver sur la dernière version d’AEM pour que ses profils de produit puissent être mis à jour.
 
