@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Utilisez votre modèle de [!DNL Dynamic Media] dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
+Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
 Voici quelques-unes des principales fonctionnalités :
 
@@ -88,7 +88,7 @@ Pour créer un modèle de [!DNL Dynamic Media], vous devez disposer des élémen
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 1. Accédez à votre [!DNL Assets View] et [créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. L’arborescence de dossiers dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** est répliquée dans **[!UICONTROL Dynamic Media Assets]**. Enregistrez votre modèle de [!DNL Dynamic Media] dans ce dossier [!UICONTROL Dynamic Media Assets].
-1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle.
+1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle. La publication d’images est nécessaire pour générer l’URL de diffusion du modèle, qui peut être utilisée dans les applications en aval.
 1. [Créer une zone de travail vierge](#create-a-canvas)
 1. [Ajouter des images à la zone de travail](#add-images-to-the-canvas)
 1. [Ajouter des calques de texte à la zone de travail](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Pour créer une zone de travail vide, procédez comme suit :
    >[!NOTE]
    >
    >  Le modèle est enregistré à l’emplacement où vous l’avez créé. Sur [!DNL Assets View] page d’accueil, sélectionnez **[!UICONTROL Dynamic Media Assets]** et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans le dossier racine **[!UICONTROL Dynamic Media Assets]**.
+
 1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
    ![ modèle personnalisable en temps réel ](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Pour créer une zone de travail vide, procédez comme suit :
 * ![modèles personnalisables](/help/assets/assets/add-text.svg) : cliquez pour ajouter des textes à la zone de travail.
 * ![modèles personnalisables](/help/assets/assets/show-layers-list.svg) : cliquez pour afficher la liste de tous les calques (image et texte) sur la zone de travail. Chaque image et texte ajouté à la zone de travail est représenté sous la forme d’un calque distinct.
 
-**Options de menu dans le volet de gauche :** utilisez ces options pour les actions courantes de l’éditeur, comme indiqué ci-dessous.
+**Options de menu dans le volet de gauche :** utilisez ces options pour les actions suivantes de l’éditeur commun.
 
-* ![ Modèles DM ](/help/assets/assets/layer-selector.svg) : sélectionnez un calque.
-* ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) : cliquez pour avancer un calque sélectionné ou appuyez sur **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac).
-* ![comment créer un modèle qui peut être personnalisé facilement ](/help/assets/assets/send-backward.svg) : cliquez pour envoyer un calque sélectionné vers l’arrière ou appuyez sur **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac).
-* ![créez un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) : cliquez pour annuler la dernière action ou appuyez sur **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac).
-* ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) : cliquez pour répéter la dernière action ou appuyez sur **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac).
-* ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) : cliquez pour effectuer un zoom sur la zone de travail ou appuyez sur **Ctrl** + **+** (Windows) ou Cmd + **+** (Mac).
-* ![modèle pour créer rapidement des bannières](/help/assets/assets/Zoom-out.svg) : cliquez pour effectuer un zoom arrière sur la zone de travail ou appuyez sur **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
+* ![Modèles DM](/help/assets/assets/layer-selector.svg) : sélectionnez ![Modèles DM](/help/assets/assets/layer-selector.svg) et cliquez sur un calque sur la zone de travail pour le sélectionner.
+* ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) : cliquez sur ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) ou utilisez le raccourci clavier **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac) pour avancer un calque sélectionné.
+* ![comment créer un modèle qui peut être personnalisé facilement ](/help/assets/assets/send-backward.svg) : cliquez sur ![comment créer un modèle qui peut être personnalisé facilement](/help/assets/assets/send-backward.svg) ou utilisez un raccourci clavier, **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac) pour envoyer un calque sélectionné vers l’arrière.
+* ![créez un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) : cliquez sur ![créer un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) ou utilisez un raccourci clavier, **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac) pour annuler la dernière action.
+* ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) : cliquez sur ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) ou utilisez le raccourci clavier **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac) pour rétablir la dernière action.
+* ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) : cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) ou utilisez le raccourci clavier **Ctrl** + **+** (Windows) ou **Cmd** + **+** (Mac) pour effectuer un zoom sur la zone de travail.
+* ![modèle pour créer rapidement des bannières](/help/assets/assets/Zoom-out.svg) : cliquez sur ![modèle pour créer rapidement des bannières](/help/assets/assets/Zoom-out.svg) ou utilisez le raccourci clavier **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac) pour effectuer un zoom arrière sur la zone de travail.
 * Appuyez sur **Retour arrière** ou **Supprimer** pour supprimer le calque sélectionné si aucun texte ou propriété n’est modifié.
 
-Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/show-layers-list.svg) **>** d’autres options (![](/help/assets/assets/three-dots.svg)) sur le calque Zone de travail pour modifier les dimensions de la zone de travail à tout moment lors de la création du modèle.
+Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/show-layers-list.svg) et sélectionnez d’autres options (![](/help/assets/assets/three-dots.svg)) sur le calque Zone de travail pour modifier les dimensions de la zone de travail à tout moment lors de la création du modèle.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets
 
 Pour ajouter des images à la zone de travail, procédez comme suit :
 
-1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour afficher le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
+1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour ouvrir le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
 1. Parcourez le panneau ou utilisez des mots-clés dans la barre de recherche pour trouver une image spécifique.
 1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
    ![créez une bannière en quelques secondes](/help/assets/assets/add-image-to-canvas.png)
