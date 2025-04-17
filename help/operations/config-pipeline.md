@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les pipelines de configuration pour dé
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,8 @@ Le tableau suivant propose une liste complète de ces configurations avec des li
 | [Authentification de base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Déclarez les noms d’utilisateur et mots de passe d’une boîte de dialogue d’authentification de base protégeant certaines URL. |
 | [ Tâche de maintenance de purge de version ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le référentiel AEM en déclarant des règles relatives au moment où les versions de contenu doivent être purgées. |
 | [ Tâche de maintenance de purge du journal d’audit ](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimisez le journal d’audit AEM pour améliorer les performances en déclarant des règles concernant le moment où les journaux doivent être purgés. |
-| [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points d’entrée et les informations d’identification pour le transfert des journaux vers diverses destinations, y compris Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [Transfert de journal](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurez les points d’entrée et les informations d’identification pour le transfert des journaux vers diverses destinations, y compris Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
+| [Enregistrement d’un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Étendue des projets d’API Adobe Developer Console à des environnements AEM spécifiques en enregistrant l’identifiant client. Cela est nécessaire pour l’utilisation des API basées sur OpenAPI qui nécessitent une authentification |
 
 ## Création et gestion des pipelines de configuration {#creating-and-managing}
 

@@ -4,46 +4,50 @@ description: Découvrez la prise en charge d’AEM as a Cloud Service pour les A
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: e735f7d2a39e3165907969d2e27565639499a636
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
 
 # API OpenAPI {#openapi-based-apis}
 
+Les nouvelles API d’AEM as a Cloud Service suivent la spécification OpenAPI et offrent donc un ensemble cohérent et bien documenté d’API.
+
 >[!NOTE]
 >
->Les API ouvertes sont disponibles dans le cadre d’un programme d’accès anticipé. Si vous souhaitez y accéder, nous vous encourageons à envoyer un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) avec une description de votre cas d’utilisation.
+> Un [tutoriel complet](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) est une ressource recommandée pour apprendre à configurer et à appeler les API AEM basées sur OpenAPI.
 
-Les nouvelles API d’AEM as a Cloud Service suivent la spécification OpenAPI et produisent ainsi des API cohérentes, bien documentées et conviviales. Des informations détaillées sont disponibles dans les pages suivantes :
+Pour les points d’entrée qui nécessitent une authentification, l’approche d’authentification diffère en fonction du point d’entrée, mais peut utiliser OAuth de serveur à serveur, l’application web OAuth ou l’application d’une seule page (SPA) OAuth. Les informations d&#39;identification sont configurées via les projets dans [Adobe Developer Console](https://developer.adobe.com/developer-console/).
 
-* Un [tutoriel complet](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) sur la configuration et l’appel des API AEM basées sur OpenAPI à l’aide de l’authentification serveur à serveur.
+Les cas d’utilisation courants des API impliquent des intégrations à des systèmes tels qu’un CRM ou un PIM, où les API d’AEM sont appelées pour récupérer les données ou les conserver. Dans le cadre de la mise en œuvre de l’intégration, les applications peuvent s’abonner à [des événements émis par AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), ce qui peut déclencher une logique commerciale dans Adobe App Builder ou une autre infrastructure.
+
+Ce document sert de présentation, mais une documentation plus approfondie est disponible dans les pages suivantes :
+
+* Les liens de la section API basée sur OpenAPI de la [documentation de référence](https://developer.adobe.com/experience-cloud/experience-manager-apis/). La documentation de référence de chaque API comprend également un playground d’API, qui permet de tester facilement un point d’entrée à l’aide d’un jeton porteur généré avec le Adobe Developer Console.
+
 * Informations [Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), y compris [ concepts et syntaxe d’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
-* Point d’entrée de l’API [documentation de référence](https://developer.adobe.com/experience-cloud/experience-manager-apis/), où certaines API sont basées sur OpenAPI, comme [cette API Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). La documentation de référence comprend également un laboratoire d’API, qui facilite l’essai d’un point d’entrée à l’aide d’un jeton porteur généré avec le Adobe Developer Console.
 
-Un cas d’utilisation courant d’API implique des intégrations à des systèmes tels qu’un CRM ou un PIM, où les API d’AEM sont appelées pour récupérer les données ou les conserver. Dans le cadre de la mise en œuvre de l’intégration, les applications peuvent s’abonner à [des événements émis par AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), ce qui peut déclencher une logique commerciale dans Adobe App Builder ou une autre infrastructure.
+* Tutoriel de niveau supérieur décrivant [les approches d’authentification](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) et d’autres concepts.
 
-Les types d’authentification d’API pris en charge varient en fonction du point d’entrée, mais peuvent être OAuth de serveur à serveur, OAuth Web App et OAuth Single Page App (SPA).
+* Tutoriel vidéo sur [comment configurer les API basées sur OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
->[!NOTE]
->
-> Le [tutoriel complet](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) est une ressource recommandée pour apprendre à configurer et à appeler les API AEM basées sur OpenAPI.
-
+* [Tutoriel complet](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) sur la configuration et l’appel des OpenAPI avec la stratégie d’authentification serveur à serveur. Vous trouverez des tutoriels similaires pour les approches Authentification par application web et Application d’une seule page .
 
 ## Configuration de l’accès à l’API {#configuring-api-access}
 
-De nombreuses API AEM basées sur OpenAPI nécessitent une authentification, ce qui nécessite que les informations d&#39;identification soient générées à l&#39;aide de [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/). La configuration comprend les étapes suivantes :
+Certaines API d&#39;AEM basées sur OpenAPI nécessitent une authentification, qui nécessite que les informations d&#39;identification soient générées à l&#39;aide de [Adobe Developer Console](https://developer.adobe.com/developer-console/). La configuration comprend les étapes suivantes :
 
-1. Assurez-vous que les [profils de produit de votre programme AEM sont mis à jour](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) et qu’un service approprié est activé pour accéder à l’API souhaitée.
-1. Créez un projet dans Adobe Developer Console et ajoutez-y la ou les API souhaitées, en sélectionnant également le type d’authentification approprié.
-1. Générez les informations d’identification qui seront ensuite utilisées pour échanger un jeton du porteur lors de l’appel de l’API.
-1. Enregistrez l’identifiant client avec l’environnement en configurant un fichier YAML, qui est déployé à l’aide du pipeline de configuration (ou de la ligne de commande pour les RDE).
+1. Modernisation de l’environnement AEM as a Cloud Service.
+1. Activez l’accès aux API AEM [à l’aide des profils de produit](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles).
+1. Créez un projet Adobe Developer Console (ADC).
+1. Configurez le projet ADC. Cela génère des informations d’identification qui seront utilisées ultérieurement pour échanger contre un jeton du porteur lors de l’appel de l’API.
+1. Configurez l’instance AEM pour activer la communication de projet ADC. Cela implique l’enregistrement de l’ID client avec l’environnement en configurant et en déployant un fichier YAML, comme décrit dans la section [Enregistrement d’un ID client](#registering-a-client-id) ci-dessous.
 
-Pour obtenir des instructions détaillées, consultez le tutoriel [Configurer des API basées sur OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/setup) .
+Pour obtenir des instructions détaillées, reportez-vous au tutoriel [Configurer des API basées sur OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
-## Enregistrement d’un ID client {#registering-a-client-id}
+### Enregistrement d’un ID client {#registering-a-client-id}
 
 Les identifiants client définissent la portée des API dans un projet Adobe Developer Console pour des environnements AEM spécifiques. Pour ce faire, procédez comme suit :
 
