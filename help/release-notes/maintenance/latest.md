@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 45%
+ht-degree: 48%
 
 ---
 
@@ -48,7 +48,7 @@ L’activation des fonctionnalités de la version 2025.4.0 fournit l’ensemble
 * CQ-4355411 : des info-bulles restent affichées dans la boîte de dialogue Préférences utilisateur.
 * GRANITE-57265 : les valeurs de sélection de liste déroulante ne sont pas sélectionnées.
 * GRANITE-57067 - Politiques efficaces manquantes dans l’interface utilisateur.
-* SITES-30727 : le glisser-déposer peut échouer pour les sous-composants dans l’éditeur d’AEM.
+* SITES-30727 : le glisser-déposer peut échouer pour les sous-composants dans l’éditeur AEM.
 * SKYOPS-90607 : les tâches Sling sont exécutées dans un déploiement inactif/contenu modifiable.
 * SKYOPS-95722 : suppression de la taille de `MaxPermSize` des indicateurs de démarrage rapide dans AEM-SDK.
 * SKYOPS-103569 : certaines images ne peuvent pas être chargées avec Java 21 : `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
