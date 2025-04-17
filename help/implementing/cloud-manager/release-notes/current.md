@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2025.4.0 de Cloud Manager
-description: Découvrez la version 2025.4.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
+description: En savoir plus sur la version 2025.4.0 de Cloud Manager dans Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -22,27 +22,27 @@ Consultez également les [notes de mise à jour actuelles d’Adobe Experience�
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.4.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 10 avril 2025.
+La date de publication de la version 2025.4.0 de Cloud Manager dans AEM as a Cloud Service est le jeudi 10 avril 2025.
 
-La prochaine version est prévue le vendredi 8 mai 2025.
+La prochaine version est prévue le jeudi 8 mai 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **(interface utilisateur) Visibilité améliorée du déploiement**
+* **Visibilité améliorée du déploiement (Interface d’utilisation)**
 
-  La page des détails d’exécution du pipeline dans Cloud Manager affiche désormais un message de statut (« *En attente - autre mise à jour en cours* ») lorsqu’un déploiement attend la fin d’un autre déploiement. Ce workflow permet de comprendre plus facilement le séquencement lors du déploiement de l’environnement.  <!-- CMGR-66890 -->
+  La page des détails d’exécution du pipeline dans Cloud Manager affiche désormais un message de statut (« *En attente - autre mise à jour en cours* ») lorsqu’un déploiement attend la fin d’un autre déploiement. Ce workflow permet de comprendre plus facilement le séquencement lors du déploiement de l’environnement. <!-- CMGR-66890 -->
 
   ![Boîte de dialogue de déploiement de développement affichant les détails et la répartition](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-* Amélioration de la validation du domaine **(UI)**
+* **Amélioration de la validation du domaine (Interface d’utilisation)**
 
-  Lors de l’ajout d’un domaine, Cloud Manager affiche désormais une erreur si le domaine est déjà installé dans un compte Fastly : « *Le domaine est déjà installé dans un compte Fastly. Supprimez-le d’abord de cet emplacement avant de l’ajouter à Cloud Service.* »
+  Lors de l’ajout d’un domaine, Cloud Manager affiche désormais une erreur si le domaine est déjà installé dans un compte Fastly : « *Le domaine est déjà installé dans un compte Fastly. Supprimez-le d’abord de cet emplacement avant de l’ajouter à Cloud Service.* »
 
 ## Programme d’adoption précoce {#early-adoption}
 
-Participez au programme d’adoption précoce de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme d’adoption précoce de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les possibilités d’adoption précoce suivantes sont actuellement disponibles :
+Les possibilités d’adoption précoce suivantes sont actuellement disponibles :
 
 ### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
 
@@ -77,15 +77,15 @@ Pour exprimer votre intérêt et partager vos commentaires, envoyez un e-mail à
 
 * **Problème lié à un champ de nom commun (NC) manquant dans les certificats**
 
-  Cloud Manager ne renvoie plus une réponse NullPointerException (NPE) et 500 HTTP lors du traitement des certificats EV/OV qui n’incluent pas de nom commun (CN) dans le champ Objet . Les certificats modernes omettent souvent CN et utilisent à la place Subject Alternative Name (SAN). Ce correctif garantit que l’absence de réseau de diffusion de contenu ne provoque plus de panne pendant le processus de création de la configuration en présence de SAN. <!-- CMGR-67548 -->
+  Cloud Manager ne renvoie plus de réponse NullPointerException (NPE) et HTTP 500 lors du traitement des certificats EV/OV qui n’incluent pas de nom commun (CN) dans le champ Objet. Les certificats modernes omettent souvent le CN et utilisent à la place le SAN (Subject Alternative Name). Ce correctif garantit que l’absence de réseau de diffusion de contenu ne provoque plus de panne pendant le processus de création de la configuration en présence du SAN. <!-- CMGR-67548 -->
 
 * **Problème de vérification de domaine avec une correspondance de certificat incorrecte**
 
-  Cloud Manager ne vérifie plus correctement les domaines à l’aide de certificats incorrects. Auparavant, la logique de validation utilisait la correspondance basée sur les modèles au lieu de la correspondance exacte, ce qui faisait apparaître des domaines comme `should-not-be-verified.example.com` comme vérifiés en raison du chevauchement avec des certificats valides pour `example.com`. Ce correctif garantit que la validation de domaine recherche désormais les correspondances exactes, empêchant les associations de certificats erronées. <!-- CMGR-67225 -->
+  Cloud Manager ne vérifie plus de manière erronée les domaines à l’aide de certificats incorrects. Auparavant, la logique de validation utilisait la correspondance basée sur les modèles au lieu de la correspondance exacte, ce qui faisait apparaître des domaines tels que `should-not-be-verified.example.com` comme vérifiés en raison du chevauchement avec des certificats valides pour `example.com`. Ce correctif garantit que la validation de domaine recherche désormais les correspondances exactes, empêchant les associations de certificats erronées. <!-- CMGR-67225 -->
 
 * **Unicité appliquée pour les noms de transfert de port de réseau avancé**
 
-  Cloud Manager applique désormais un nom unique pour les transferts de port de mise en réseau avancée. Auparavant, les noms en double étaient autorisés, ce qui pouvait entraîner des conflits. Ce correctif garantit que chaque entrée de transfert de port a un nom distinct, conformément aux bonnes pratiques en matière d’intégrité de la configuration réseau. <!-- CMGR-67082 -->
+  Cloud Manager applique désormais un nom unique pour les transferts de port de mise en réseau avancée. Auparavant, les noms en double étaient autorisés, ce qui pouvait entraîner des conflits. Ce correctif garantit que chaque entrée de transfert de port a un nom distinct, conformément aux bonnes pratiques en matière d’intégrité de la configuration réseau. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
