@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Après l’ajout, les Listes autorisées IP [ peuvent être appliquées ou non a
 >
 >Si aucune Liste autorisée IP n’est appliquée, toutes les adresses IP sont autorisées par défaut. Lorsqu’une Liste autorisée IP est appliquée, aucune adresse IP n’est autorisée, à l’exception de celles figurant sur la Liste autorisée IP.
 
-## Limites {#limitations}
-
-Avant d’utiliser les Listes autorisées IP, vous devez connaître les restrictions suivantes concernant leurs fonctionnalités, leur utilisation et leur impact sur les autres fonctionnalités.
-
-### Restrictions générales des Listes autorisées IP {#general}
+## Remarques sur l’utilisation {#usage-notes}
 
 * Vous pouvez ajouter jusqu’à 50 Listes autorisées IP à votre programme.
 * Vous pouvez ajouter jusqu’à 50 adresses IP/CIDR à chaque Liste autorisée IP.

@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 34%
 
 ---
@@ -153,9 +153,7 @@ Les référentiels privés validés peuvent être associés à des [pipelines fu
 
 
 
-## Limites {#limitations}
-
-Certaines limitations s’appliquent lors de l’utilisation de référentiels cloud GitHub privés avec Cloud Manager.
+## Remarques sur l’utilisation {#usage-notes}
 
 * Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés.
 * Aucune balise Git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile pleine de production.

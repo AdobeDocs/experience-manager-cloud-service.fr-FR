@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 40%
+source-wordcount: '710'
+ht-degree: 41%
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez acheter un nom de domaine auprès d’un service d’enregistrement 
 
 ## Noms de domaine personnalisés et apporter vos propres réseaux CDN {#byo-cdn}
 
-AEM as a Cloud Service offre un service CDN (réseau de diffusion de contenu) intégré, mais vous permet également d’utiliser un réseau CDN BYO (Bring Your Own) avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
+AEM as a Cloud Service offre un service CDN (réseau de diffusion de contenu) intégré, mais vous permet également d’utiliser votre propre réseau CDN BYO (Bring Your Own) avec AEM. Les domaines personnalisés peuvent être installés dans le réseau CDN géré par AEM ou dans un réseau CDN géré par vous-même.
 
 * Cloud Manager gère les noms de domaine et certificats personnalisés installés dans le réseau CDN géré par AEM.
 * Les noms de domaine personnalisés et les certificats installés dans un réseau CDN BYO sont gérés directement dans ce réseau CDN.
@@ -63,9 +63,7 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 >
 >Le processus de configuration de noms de domaine personnalisés avec AEM as a Cloud Service s’avère généralement simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. Pour cette raison, il est recommandé d’installer les domaines bien avant leur date d’activation. Consultez le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
-## Limites {#limitations}
-
-L’utilisation de noms de domaine personnalisés avec AEMaaCS présente plusieurs limites.
+## Remarques sur l’utilisation {#usage-notes}
 
 * Les noms de domaine personnalisés sont pris en charge dans Cloud Manager uniquement pour les services de publication et de prévisualisation pour les programmes Sites.
    * Les domaines personnalisés pour les services de création ne sont pas pris en charge.

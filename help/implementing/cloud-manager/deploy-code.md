@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 38%
 
 ---
@@ -19,10 +19,10 @@ Découvrez comment déployer votre code vers la Production à l’aide des pipel
 
 ![Diagramme de pipeline de production](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-Le déploiement du code de manière transparente sur l’environnement intermédiaire, puis jusqu’à la production, est effectué via un pipeline de production. L’exécution du pipeline de production est divisée en deux phases logiques :
+Le déploiement transparent du code vers les environnements d’évaluation, puis de production s’effectue via un pipeline de production. L’exécution du pipeline de production est divisée en deux phases logiques :
 
-1. **Déploiement dans l’environnement intermédiaire** : le code est créé et déployé dans l’environnement intermédiaire pour les tests fonctionnels automatisés, les tests de l’interface utilisateur, le contrôle de l’expérience et les tests d’acceptation utilisateur (UAT).
-1. **Déploiement dans l’environnement de production** - Une fois que la version est validée à l’étape et approuvée pour la promotion en production, le même artefact de version est déployé dans l’environnement de production.
+1. **Déploiement dans l’environnement d’évaluation** - Le code est créé et déployé dans l’environnement d’évaluation pour les tests fonctionnels automatisés, les tests de l’interface utilisateur, le contrôle de l’expérience et les tests d’acceptation utilisateur (UAT).
+1. **Déploiement dans l’environnement de production** - Une fois la version validée à l’étape d’évaluation et approuvée pour le passage en production, le même artefact de build est déployé dans l’environnement de production.
 
 _Seul le type de pipeline Code full stack prend en charge l’analyse de code, les tests de fonction, les tests d’interface utilisateur et le contrôle de l’expérience._
 
@@ -32,7 +32,7 @@ Tous les déploiements de Cloud Service suivent un processus continu pour garant
 
 >[!NOTE]
 >
->Le cache du Dispatcher est effacé à chaque déploiement. Il est ensuite &quot;réchauffé&quot; avant que les nouveaux noeuds de publication n’acceptent le trafic.
+>Le cache du Dispatcher est effacé à chaque déploiement. Il est ensuite « préchauffé » avant que les nouveaux nœuds de publication n’acceptent le trafic.
 
 ## Déploiement de votre code avec Cloud Manager dans AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
@@ -42,7 +42,7 @@ Une fois que vous avez [configuré votre pipeline de production](/help/implement
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme pour lequel vous souhaitez déployer du code.
 
-1. Sur la page **Overview**, dans la zone d’appel à l’action, cliquez sur **Deploy**.
+1. Sur la page **Aperçu**, dans la zone call-to-action, cliquez sur **Déployer**.
 
    ![CTA](assets/deploy-code1.png)
 
@@ -50,64 +50,64 @@ Une fois que vous avez [configuré votre pipeline de production](/help/implement
 
    ![Écran Exécution du pipeline](assets/deploy-code2.png)
 
-Le processus de création déploie votre code au cours des trois phases triées suivantes :
+Le processus de création déploie votre code par le biais des trois phases ordonnées suivantes :
 
-1. [Phase de déploiement intermédiaire](#stage-deployment)
+1. [Phase de déploiement dans l’environnement intermédiaire](#stage-deployment)
 1. [Phase de test d’évaluation](#stage-testing)
-1. [Phase de déploiement de la production](#production-deployment)
+1. [Phase de déploiement en production](#production-deployment)
 
 >[!TIP]
 >
 >En outre, vous pouvez examiner les étapes de divers processus de déploiement en affichant les journaux, ou en examinant les résultats, pour les critères de test.
 
-### Phase de déploiement intermédiaire {#stage-deployment}
+### Phase de déploiement dans l’environnement intermédiaire {#stage-deployment}
 
-La phase de **déploiement dans l’environnement intermédiaire** comprend les étapes suivantes :
+La phase **Déploiement dans l’environnement intermédiaire** comprend les étapes suivantes :
 
 | Étape de déploiement dans l’environnement d’évaluation | Description |
 | --- | --- |
 | Validation | Vérifie que le pipeline est configuré pour utiliser les ressources actuellement disponibles. par exemple, en s’assurant de l’existence de la branche configurée et de la disponibilité des environnements. |
-| Test unitaire et de création | Exécute un processus de génération en conteneur.<br>Pour plus d’informations sur l’environnement de génération, voir [Détails de l’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) . |
+| Test unitaire et de création | Exécute un processus de création en conteneur.<br>Voir [Détails de l’environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de création. |
 | Analyse du code | Évalue la qualité du code de votre application.<br>Voir [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test. |
-| Créer des images | Ce processus convertit le contenu et les modules Dispatcher de l’étape de création en images Docker. Il génère également des configurations Kubernetes basées sur ces packages. |
-| Déployer dans l’environnement intermédiaire | L’image est déployée dans l’environnement d’évaluation en vue de l’[ étape de test d’évaluation](#stage-testing). |
+| Créer des images | Ce processus convertit le contenu et les packages Dispatcher de l’étape Créer en images Docker. Il génère également des configurations Kubernetes basées sur ces packages. |
+| Déployer dans l’environnement intermédiaire | L’image est déployée dans l’environnement d’évaluation en vue de la [phase de test d’évaluation](#stage-testing). |
 
 ![Déploiement dans l’environnement d’évaluation](assets/stage-deployment.png)
 
 ### Phase de test d’évaluation {#stage-testing}
 
-La phase **Test d’évaluation** comprend les étapes suivantes :
+La phase de **test d’évaluation** comprend les étapes suivantes :
 
 | Étape du test dans l’environnement d’évaluation | Description |
 | --- | --- |
-| Tests fonctionnels du produit | Le pipeline Cloud Manager exécute les tests qui s’exécutent sur l’environnement intermédiaire.<br>Voir aussi [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
-| Tests fonctionnels personnalisés | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Si la version ne génère pas de fichier JAR de test, le test est automatiquement réussi.<br>Voir aussi [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
-| Test d’interface utilisateur personnalisé | Fonctionnalité facultative qui exécute automatiquement des tests d’interface utilisateur créés pour des applications personnalisées.<br>Les tests d’interface utilisateur sont basés sur Selenium et conditionnés dans une image Docker pour offrir une flexibilité en langage et en structures. Cette approche vous permet d’utiliser Java et Maven, Node et WebDriver.io, ou tout framework ou technologie Selenium.<br>Voir aussi [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Audit d’expérience | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.<ul><li>Les pages configurées sont envoyées au service et évaluées.</li><li>Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.</li><li>Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.</li></ul>Voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Tests fonctionnels du produit | Le pipeline Cloud Manager exécute des tests qui s’exécutent sur l’environnement d’évaluation.<br>Voir aussi [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
+| Tests fonctionnels personnalisés | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Si le build ne génère pas de fichier JAR de test, le test réussit automatiquement.<br>Voir aussi [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
+| Test d’interface utilisateur personnalisé | Une fonctionnalité facultative qui exécute automatiquement les tests de l’interface utilisateur créés pour des applications personnalisées.Les tests de l’interface utilisateur <br> sont basés sur Selenium et conditionnés dans une image Docker afin d’offrir une flexibilité au niveau du langage et des structures. Cette approche vous permet d’utiliser Java et Maven, Node et WebDriver.io, ou tout framework ou technologie basé sur Selenium.<br>Voir aussi [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Audit d’expérience | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.<ul><li>Les pages configurées sont envoyées au service et évaluées.</li><li>Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.</li><li>Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.</li></ul>Voir [Comprendre les résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
 
-### Phase de déploiement de la production {#production-deployment}
+### Phase de déploiement en production {#production-deployment}
 
 Le processus de déploiement des topologies de production diffère légèrement afin de minimiser l’impact sur les visiteurs d’un site AEM.
 
-Les déploiements en production suivent généralement les mêmes étapes que précédemment décrites, mais de manière progressive. Ces étapes sont les suivantes :
+Les déploiements en production suivent généralement les mêmes étapes décrites précédemment, mais par roulements. Ces étapes sont les suivantes :
 
 1. Déploiement des packages AEM sur l’instance de création.
-1. Désolidarisez `dispatcher1` de l’équilibreur de charge.
-1. Déployez AEM packages sur `publish1` et le package Dispatcher sur `dispatcher1`, videz le cache Dispatcher.
-1. Replacez `dispatcher1` dans l’équilibreur de charge.
-1. Lorsque `dispatcher1` est de retour en service, désolidarisez `dispatcher2` de l’équilibreur de charge.
-1. Déployez AEM packages sur `publish2` et le package Dispatcher sur `dispatcher2`, videz le cache Dispatcher.
-1. Replacez `dispatcher2` dans l’équilibreur de charge.
+1. Désolidarisez le `dispatcher1` de l’équilibreur de charge.
+1. Déployez les packages AEM sur `publish1` et le package Dispatcher sur `dispatcher1`, videz le cache de Dispatcher.
+1. Replacez-`dispatcher1` dans l’équilibreur de charge.
+1. Lorsque `dispatcher1` est de nouveau en service, désolidarisez le `dispatcher2` de la répartition de charge.
+1. Déployez les packages AEM sur `publish2` et le package Dispatcher sur `dispatcher2`, videz le cache de Dispatcher.
+1. Replacez-`dispatcher2` dans l’équilibreur de charge.
 
-Ce processus se poursuit jusqu’à ce que le déploiement ait atteint tous les éditeurs et dispatchers dans la topologie.
+Ce processus se poursuit jusqu’à ce que le déploiement ait atteint tous les éditeurs et Dispatchers dans la topologie.
 
 ![Phase de déploiement en production](assets/production-deployment.png)
 
-## Délais d’expiration pendant un déploiement {#timeouts}
+## Délais d’expiration lors d’un déploiement {#timeouts}
 
-Les étapes suivantes expirent si elles attendent les commentaires des utilisateurs lors d’un déploiement :
+Les étapes suivantes expirent s’ils sont en attente de commentaires de l’utilisateur lors d’un déploiement :
 
 | Étape | Délai dépassé |
 |--- |--- |
@@ -118,13 +118,13 @@ Les étapes suivantes expirent si elles attendent les commentaires des utilisate
 | Planning du déploiement en production | 14 jours |
 | Assistance de l’ingénieur du service client | 14 jours |
 
-## Réexécuter un déploiement en production {#reexecute-deployment}
+## Réexécution d’un déploiement en production {#reexecute-deployment}
 
-Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, la réexécution de l’étape de déploiement en production est prise en charge tant que l’étape de déploiement en production est terminée, quel que soit le type d’achèvement (par exemple, annulé ou non). La réexécution crée une nouvelle exécution à l’aide du même pipeline constitué des trois étapes suivantes :
+Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, la réexécution de l’étape de déploiement en production est prise en charge tant que l’étape de déploiement en production est terminée, quel que soit le type d’achèvement (par exemple, annulée ou infructueuse). La réexécution crée une nouvelle exécution à l’aide du même pipeline, composée des trois étapes suivantes :
 
-1. **Validation** : même validation qui survient lors de l’exécution normale d’un pipeline.
-1. **Build** - Dans le contexte d’une réexécution, l’étape de création copie les artefacts et n’exécute pas de nouveau processus de création.
-1. **Déploiement en production** : utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale du pipeline.
+1. **Validation** - La même validation qui se produit lors de l’exécution normale d’un pipeline.
+1. **Version** - Dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. **Déploiement en production** - Utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
 Dans de telles circonstances, si une réexécution est possible, la page de statut du pipeline de production fournit l’option **Réexécuter** en regard de l’option habituelle **Télécharger le journal de création**.
 
@@ -134,10 +134,10 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 >
 >Lors d’une nouvelle exécution, l’étape de création est étiquetée dans l’interface utilisateur afin d’indiquer qu’elle copie (et non qu’elle recrée) des artefacts.
 
-### Limites {#limitations}
+### Remarques sur l’utilisation {#usage-notes}
 
 * La réexécution de l’étape de déploiement en production n’est disponible que lors de la dernière exécution.
-* La réexécution n’est pas disponible pour les exécutions de mise à jour push. Si la dernière exécution est une exécution de mise à jour push, la réexécution n’est pas possible.
+* La réexécution n’est pas disponible pour les exécutions de mise à jour des notifications push. Si la dernière exécution est une exécution de mise à jour push, la réexécution n’est pas possible.
 * Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, une nouvelle exécution n’est pas possible.
 
 ### Exécuter à nouveau l’API {#reexecute-API}
@@ -146,12 +146,12 @@ En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://devel
 
 #### Déclencher une nouvelle exécution {#reexecute-deployment-api}
 
-Pour déclencher une réexécution, envoyez une requête de PUT au lien HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` sur l’état de l’étape de déploiement de production.
+Pour déclencher une réexécution, envoyez une requête PUT au `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` HAL Link à l’état d’étape de déploiement en production.
 
 * Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape.
 * En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape.
 
-Ce lien n’est disponible que pour l’étape de déploiement en production.
+Ce lien est disponible uniquement pour l’étape de déploiement en production.
 
 ```JavaScript
  {
@@ -190,8 +190,8 @@ Ce lien n’est disponible que pour l’étape de déploiement en production.
 
 La syntaxe de la valeur href du lien HAL n’est qu’un exemple. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
 
-L’envoi d’une requête de PUT à ce point de terminaison entraîne une réponse 201 en cas de réussite, et le corps de la réponse est la représentation de la nouvelle exécution. Ce workflow est similaire au démarrage d’une exécution régulière via l’API.
+L’envoi d’une requête PUT vers ce point d’entrée entraîne la génération d’une réponse 201 en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Ce workflow est similaire au démarrage d’une exécution régulière via l’API.
 
-#### Identifier une exécution de nouvelle exécution {#identify-reexecution}
+#### Identifier une exécution de réexécution {#identify-reexecution}
 
 Le système identifie les réexécutions en définissant le champ `trigger` sur la valeur `RE_EXECUTE`.
