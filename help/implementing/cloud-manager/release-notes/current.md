@@ -4,9 +4,9 @@ description: En savoir plus sur la version 2025.4.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '614'
 ht-degree: 100%
 
 ---
@@ -62,16 +62,17 @@ Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementin
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
-### Page d’accueil AEM {#aem-home}
+<!--
+### AEM Home {#aem-home}
 
-La page d’accueil AEM est le point de départ centralisé de la gestion du contenu, des ressources et des sites dans Adobe Experience Manager. Conçue pour offrir une expérience personnalisée, elle vous permet de naviguer de manière fluide à travers l’écosystème AEM en fonction de vos rôles et objectifs. Véritable guide, elle vous fournit des informations clés et vous recommande des actions pour vous aider à atteindre vos objectifs de manière efficace. Avec une interface claire et centrée sur les utilisateurs et les utilisatrices, la page d’accueil AEM facilite un accès rapide aux outils essentiels et offre une expérience efficace et rationalisée pour utiliser toutes les fonctionnalités d’AEM.
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Actuellement en phase d’adoption précoce., la page d’accueil AEM offre une expérience optimisée axée sur l’amélioration des workflows, la hiérarchisation des objectifs et la diffusion de résultats. En participant à ce test, vous pouvez avoir un impact sur le développement de cette page en fournissant des commentaires qui contribuent à façonner son évolution et à améliorer sa valeur pour l’ensemble de la communauté AEM.
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
-Pour exprimer votre intérêt et partager vos commentaires, envoyez un e-mail à [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. N’oubliez pas d’inclure les informations suivantes :
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
-* Le rôle qui correspond le mieux à votre profil : créateur ou créatrice de contenu, développeur ou développeuse, propriétaire d’entreprise, membre de l’équipe d’administration ou autre (fournissez une description).
-* Votre principale surface d’accès à AEM : AEM Sites, AEM Assets, AEM Forms, Cloud Manager, ou Autre (fournir une description).
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
 
 ## Correctifs
 

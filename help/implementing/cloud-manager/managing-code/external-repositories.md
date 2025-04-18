@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 27%
 
 ---
 
@@ -27,7 +27,6 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 1. Fournissez un jeton d’accès au référentiel externe.
 1. Validez la propriété du référentiel GitHub privé.
 1. [Configurez un webhook](#configure-webhook) dans un référentiel externe.
-
 
 
 ## Ajout d’un référentiel externe {#add-ext-repo}
@@ -212,90 +211,5 @@ Les comportements suivants s’appliquent :
 * Assurez-vous que l’URL du Webhook comprend une clé API valide.
 * Vérifiez que les événements webhook sont correctement configurés dans les paramètres de votre fournisseur Git.
 * Si la validation PR ou les déclencheurs de pipeline ne fonctionnent pas, vérifiez que le secret Webhook est à jour dans Cloud Manager et votre fournisseur Git.
-
-
-## Déploiement dans un environnement de développement rapide à partir de fournisseurs Git externes {#deploy-to-rde}
-
->[!NOTE]
->
->Cette fonctionnalité est disponible via le programme des utilisateurs et utilisatrices précoces. Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
-
-Cloud Manager prend en charge le déploiement de code vers des environnements de développement rapide (RDE) directement à partir de fournisseurs Git externes lors de l’utilisation de la configuration [Bring Your Own Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-Le déploiement des RDE à partir d’un référentiel Git externe nécessite les éléments suivants :
-
-* Utilisation d’un référentiel Git externe intégré à Cloud Manager (configuration BYOG).
-* Un ou plusieurs environnements RDE doivent être configurés pour votre projet.
-* Si vous utilisez `github.com`, vous devez vérifier et accepter l’installation de l’application GitHub mise à jour afin d’accorder les nouvelles autorisations requises.
-
-**Notes d’utilisation**
-
-* Le déploiement vers le RDE est actuellement pris en charge uniquement pour le contenu AEM et les packages Dispatcher.
-* Le déploiement d’autres types de packages (par exemple, les packages d’application AEM complets) n’est pas encore pris en charge.
-* Actuellement, la réinitialisation d’un environnement RDE à l’aide d’un commentaire n’est pas prise en charge. Les clients doivent utiliser les commandes de l’interface de ligne de commande AIO existantes, comme [décrit ici](/help/implementing/developing/introduction/rapid-development-environments.md).
-
-**Fonctionnement**
-
-1. **Message de validation de la qualité du code.**
-
-   Lorsqu’une requête de tirage (PR) déclenche l’exécution d’un pipeline de qualité du code, les résultats de validation indiquent si le déploiement peut passer à un environnement RDE.
-
-   Aspect sur GitHub Enterprise :
-   ![Message de validation de la qualité du code sur GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   Aspect sur GitLab :
-   ![ Message de validation de la qualité du code sur GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   Comment cela se présente-t-il sur Bitbucket :
-   ![ Message de validation de la qualité du code sur Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **Déclencher le déploiement à l’aide d’un commentaire.**
-
-   Pour lancer le déploiement, ajoutez un commentaire au PR au format suivant : `deploy on rde-environment-<envName>`
-
-   ![Déclencher le déploiement à l’aide d’un commentaire](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   Le `<envName>` doit correspondre au nom d’un environnement RDE existant. Si le nom est introuvable, un commentaire est renvoyé indiquant que l’environnement n’est pas valide.
-
-   Si le statut de l’environnement n’est pas prêt, vous obtenez le commentaire suivant :
-
-   ![Environnement non prêt à être déployé](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **Vérification de l’environnement et déploiement des artefacts.**
-
-   Si le RDE est prêt, Cloud Manager publie un nouveau chèque dans le PR.
-
-   Aspect sur GitHub Enterprise :
-
-   ![Statut de l’environnement sur GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   Aspect sur GitLab :
-
-   ![Statut de l’environnement sur GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   Comment cela se présente-t-il sur Bitbucket :
-
-   ![Statut de l’environnement sur Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **Message de déploiement réussi.**
-
-   Une fois le déploiement terminé, Cloud Manager publie un message de réussite résumant les artefacts déployés dans l’environnement cible.
-
-   Aspect sur GitHub Enterprise :
-
-   ![Statut de déploiement de l’environnement sur GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   Aspect sur GitLab :
-
-   ![Statut de déploiement de l’environnement sur GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   Comment cela se présente-t-il sur Bitbucket :
-
-   ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 
