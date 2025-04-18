@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les environnements de développement ra
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
 workflow-type: tm+mt
-source-wordcount: '5390'
+source-wordcount: '5392'
 ht-degree: 24%
 
 ---
@@ -81,18 +81,18 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, 
 
 >[!IMPORTANT]
 >
->Assurez-vous que la version 20 de [Node et NPM sont installés](https://nodejs.org/en/download/) pour que l’interface de ligne de commande d’Adobe I/O et les modules externes connexes fonctionnent correctement.
+>Assurez-vous que vous avez installé la version 20 de [Node et NPM](https://nodejs.org/en/download/) pour que l’interface de ligne de commande d’Adobe I/O (AIO) et les modules externes connexes fonctionnent correctement.
 
 
-1. Installez les outils de l’interface de ligne de commande Adobe I/O conformément à cette [procédure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Installez le plug-in RDE d’AEM pour les outils de l’interface de ligne de commande Adobe I/O :
+1. Installez les outils de l’interface de ligne de commande AIO conformément à cette [procédure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Installez le plug-in RDE AEM pour les outils de l’interface de ligne de commande AIO :
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. Connectez-vous à l’aide du client aio.
+1. Connectez-vous à l’aide du client Adobe I/O (AIO).
 
    ```
    aio login
@@ -473,6 +473,60 @@ Logs:
 >
 >Si vous avez créé votre RDE avant avril 2023 et que vous rencontrez le `UNEXPECTED_API_ERROR` lors de l’utilisation de la fonctionnalité front-end pour la première fois, cela peut être dû à une configuration obsolète. Pour résoudre ce problème, supprimez l’environnement et créez-en un.
 
+### Vérifier le statut du RDE {#checking-rde-status}
+
+Vous pouvez utiliser l’interface de ligne de commande du RDE pour vérifier si l’environnement est prêt à être déployé et pour consulter les déploiements effectués à l’aide du plug-in du RDE.
+
+Exécutant les éléments suivants :
+
+`aio aem:rde:status`
+
+Renvoie avec les éléments suivants :
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+```
+
+Si la commande renvoie une note sur le déploiement des instances, vous pouvez continuer et effectuer la prochaine mise à jour, mais la dernière ne sera peut-être pas encore visible sur l’instance.
+
+### Afficher l’historique de déploiement {#show-deployment-history}
+
+Vous pouvez vérifier l’historique des déploiements effectués sur le RDE en exécutant la commande suivante :
+
+`aio aem:rde:history`
+
+Qui renvoie une réponse sous la forme :
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### Supprimer du RDE {#deleting-from-rde}
+
+Vous pouvez utiliser l’outil d’interface de ligne de commande pour supprimer des configurations et des lots déployés précédemment dans le RDE. Utilisez la commande `status` pour obtenir une liste des éléments pouvant être supprimés, qui inclut les `bsn` des lots et des `pid` des configurations à référencer dans la commande de suppression.
+
+Par exemple, si `com.adobe.granite.demo.MyServlet.cfg.json` a été installé, la référence `bsn` est juste `com.adobe.granite.demo.MyServlet`, sans le suffixe **cfg.json**.
+
+La suppression des packages ou fichiers de contenu n’est pas prise en charge. Pour les supprimer, réinitialisez le RDE, qui revient à son état par défaut.
+
+Consultez l’exemple ci-dessous pour plus de détails :
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [Utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+
+
 ## Déploiement sur un RDE à partir de fournisseurs Git externes {#deploy-to-rde}
 
 >[!NOTE]
@@ -491,7 +545,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
 
 * Le déploiement vers le RDE est actuellement pris en charge uniquement pour le contenu AEM et les packages Dispatcher.
 * Le déploiement d’autres types de packages (par exemple, les packages d’application AEM complets) n’est pas encore pris en charge.
-* Actuellement, la réinitialisation d’un environnement RDE à l’aide d’un commentaire n’est pas prise en charge. Les clients doivent utiliser les commandes de l’interface de ligne de commande AIO existantes, comme [décrit ici](/help/implementing/developing/introduction/rapid-development-environments.md).
+* Actuellement, la réinitialisation d’un environnement RDE à l’aide d’un commentaire n’est pas prise en charge. Vous devez plutôt utiliser la commande de réinitialisation de l’interface de ligne de commande AIO existante, comme [décrit ici](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line).
 
 **Fonctionnement**
 
@@ -553,58 +607,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
    ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### Vérifier le statut du RDE {#checking-rde-status}
 
-Vous pouvez utiliser l’interface de ligne de commande du RDE pour vérifier si l’environnement est prêt à être déployé et pour consulter les déploiements effectués à l’aide du plug-in du RDE.
-
-Exécutant les éléments suivants :
-
-`aio aem:rde:status`
-
-Renvoie avec les éléments suivants :
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-```
-
-Si la commande renvoie une note sur le déploiement des instances, vous pouvez continuer et effectuer la prochaine mise à jour, mais la dernière ne sera peut-être pas encore visible sur l’instance.
-
-### Afficher l’historique de déploiement {#show-deployment-history}
-
-Vous pouvez vérifier l’historique des déploiements effectués sur le RDE en exécutant la commande suivante :
-
-`aio aem:rde:history`
-
-Qui renvoie une réponse sous la forme :
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### Suppression du RDE {#deleting-from-rde}
-
-Vous pouvez utiliser l’outil d’interface de ligne de commande pour supprimer des configurations et des lots déployés précédemment dans le RDE. Utilisez la commande `status` pour obtenir une liste des éléments pouvant être supprimés, qui inclut les `bsn` des lots et des `pid` des configurations à référencer dans la commande de suppression.
-
-Par exemple, si `com.adobe.granite.demo.MyServlet.cfg.json` a été installé, la référence `bsn` est juste `com.adobe.granite.demo.MyServlet`, sans le suffixe **cfg.json**.
-
-La suppression des packages ou fichiers de contenu n’est pas prise en charge. Pour les supprimer, réinitialisez le RDE, qui revient à son état par défaut.
-
-Consultez l’exemple ci-dessous pour plus de détails :
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [Utilisation des commandes RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 ## Journaux {#rde-logging}
 
