@@ -4,15 +4,20 @@ description: En savoir plus sur Générer des variations, accessible à partir d
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 99%
 
 ---
 
 
 # Générer des variations {#generate-variations}
+
+
+>[!NOTE]
+>
+>Il est recommandé d’accéder à [Générer des variations intégrées dans les éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md), car la version décrite sur cette page sera abandonnée à l’avenir.
 
 Si vous recherchez un moyen d’optimiser vos canaux numériques et d’accélérer la création de contenu, vous pouvez utiliser Générer des variations. Générer des variations utilise l’intelligence artificielle (IA) générative pour créer des variations de contenu basées sur des prompts. Ces prompts sont fournis par Adobe ou créés et gérés par les utilisateurs et utilisatrices. Après avoir créé des variations, vous pouvez utiliser le contenu de votre site web et mesurer également leur succès à l’aide de la fonctionnalité [Expérimentation](https://www.aem.live/docs/experimentation) d’[Edge Delivery Services](/help/edge/overview.md).
 
@@ -25,10 +30,6 @@ Vous pouvez [accéder à Générer des variations](#access-generate-variations) 
 >[!NOTE]
 >
 >Dans tous les cas, pour utiliser Générer des variations, vous devez vous assurer de remplir les [conditions d’accès préalables](#access-prerequisites).
-
->[!NOTE]
->
->Vous pouvez également accéder à [Générer des variations intégrées aux éditeurs d’AEM](/help/generative-ai/generate-variations-integrated-editor.md).
 
 Vous pouvez ensuite :
 
@@ -122,7 +123,7 @@ Sert à modifier la température de l’IA générative d’Adobe :
 * **Modification du prompt**
    * [Vous pouvez modifier le prompt sous-jacent](#edit-the-prompt) pour affiner les résultats générés.
 
-### Génération de la copie {#generate-copy}
+### Générer la copie {#generate-copy}
 
 Après avoir rempli les champs de saisie et/ou modifié le prompt, vous pouvez commencer à générer du contenu et consulter les réponses.
 
@@ -411,7 +412,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 * Adobe Express
 
