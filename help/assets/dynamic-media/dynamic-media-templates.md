@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
+source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3172'
 ht-degree: 1%
 
 ---
@@ -83,12 +83,13 @@ Pour créer un modèle de [!DNL Dynamic Media], vous devez disposer des élémen
    * Sur la page **[!UICONTROL Modifier [!DNL Dynamic Media] configuration]**, **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** défini sur **[!UICONTROL Désactivé par défaut]** n’est pas appliqué à tous les dossiers AEM (**[!UICONTROL Synchroniser tout le contenu]** est décoché). Voir [Configuration de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d’informations.
    * **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** est défini sur **[!UICONTROL Activer pour les sous-dossiers]** pour le dossier ou sous-dossier de destination dans lequel vous enregistrerez le modèle après sa création. Voir [Configuration [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d&#39;informations.
 
-## Créer [!DNL Dynamic Media] modèle WYSIWYG{#how-to-create-dynamic-media-wysiwyg-template}
+## Créer [!DNL Dynamic Media] modèle{#how-to-create-dynamic-media-template}
 
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 1. Accédez à votre [!DNL Assets View] et [créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. L’arborescence de dossiers dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** est répliquée dans **[!UICONTROL Dynamic Media Assets]**. Enregistrez votre modèle de [!DNL Dynamic Media] dans ce dossier [!UICONTROL Dynamic Media Assets].
-1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle. La publication d’images est nécessaire pour générer l’URL de diffusion du modèle, qui peut être utilisée dans les applications en aval.
+1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle. La publication des images est nécessaire pour générer l’URL de diffusion du modèle, après la création du modèle, qui peut être utilisé dans les applications en aval.
+1. [Exécutez les étapes de chargement et de publication de la ressource](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) pour charger et publier votre fichier de police simultanément dans AEM et Dynamic Media afin d’utiliser une police autre que la famille de polices par défaut Adobe Sans F2 dans le calque de texte. [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez à [retraiter](/help/assets/reprocessing-assets-view.md) les anciennes polices (sur [!DNL Assets View] page d’accueil, cliquez sur ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, accédez à l’emplacement du fichier de police, sélectionnez le fichier de police un par un et cliquez sur ![Retraiter](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Retraiter]**) pour les utiliser dans la création du modèle. Voir [Polices](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) pour en savoir plus sur les polices.
 1. [Créer une zone de travail vierge](#create-a-canvas)
 1. [Ajouter des images à la zone de travail](#add-images-to-the-canvas)
 1. [Ajouter des calques de texte à la zone de travail](#add-text-to-the-canvas)
@@ -158,11 +159,7 @@ Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
 1. Sélectionnez **[!UICONTROL Redimensionnement intelligent du texte]** dans le panneau Propriétés pour ajuster automatiquement la longueur du texte et la taille de police afin qu’ils s’adaptent de manière optimale à la zone désignée.
    ![meilleures bannières personnalisables](/help/assets/assets/add-text-layer.png)
 
-Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
-
->[!NOTE]
->
-> Pour utiliser une autre police que la famille de polices par défaut d’Adobe Sans F2, vous devez charger et publier le fichier de police sur [!AEM Assets] et [!DNL Dynamic Media]. Si votre instance contient d’anciennes polices, veillez à [retraiter](/help/assets/reprocessing-assets-view.md) pour les afficher dans l’éditeur de modèles.
+Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau. Voir [étape 3 de la section Créer [!DNL Dynamic Media] modèle](#how-to-create-dynamic-media-template) pour plus d’informations sur les polices.
 
 ### Modifier ou supprimer un calque {#edit-or-delete-a-layer}
 
@@ -361,3 +358,5 @@ Regardez cette vidéo détaillée pour découvrir comment ajouter un lien CTA à
 
 1. Explorez [[!DNL Dynamic Media]  et ses fonctionnalités](/help/assets/dynamic-media/dynamic-media.md)
 1. Explorer [[!DNL Dynamic Media] avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)
+
+
