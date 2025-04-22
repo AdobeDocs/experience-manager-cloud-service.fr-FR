@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3222'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Pour créer un modèle de [!DNL Dynamic Media], vous devez disposer des élémen
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 1. Accédez à votre [!DNL Assets View] et [créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. L’arborescence de dossiers dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** est répliquée dans **[!UICONTROL Dynamic Media Assets]**. Enregistrez votre modèle de [!DNL Dynamic Media] dans ce dossier [!UICONTROL Dynamic Media Assets].
-1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle. La publication des images est nécessaire pour générer l’URL de diffusion du modèle, après la création du modèle, qui peut être utilisé dans les applications en aval.
+1. Sélectionnez ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**et [chargez et publiez vos images vers et [!DNL AEM]  [!DNL Dynamic Media] simultanément](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) pour les utiliser lors de la création du modèle. La publication des images est nécessaire pour générer l’URL de diffusion du modèle, après la création du modèle. L’URL de diffusion peut être utilisée dans les applications en aval.
 1. [Exécutez ces étapes de chargement et de publication de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) pour charger et publier simultanément un fichier de police dans AEM et Dynamic Media afin de l’utiliser pour créer le modèle. [!UICONTROL Adobe Sans F2] est la seule police par défaut disponible dans le calque de texte. [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser dans la création du modèle (sur [!DNL Assets View] page d’accueil, cliquez sur ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, accédez à l’emplacement du fichier de police, sélectionnez le fichier de police un par un et cliquez sur ![Retraiter](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Retraiter]**). Voir [Polices](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) pour en savoir plus sur les polices.
 1. [Créer une zone de travail vierge](#create-a-canvas)
 1. [Ajouter des images à la zone de travail](#add-images-to-the-canvas)
@@ -159,7 +159,7 @@ Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
 1. Sélectionnez **[!UICONTROL Redimensionnement intelligent du texte]** dans le panneau Propriétés pour ajuster automatiquement la longueur du texte et la taille de police afin qu’ils s’adaptent de manière optimale à la zone désignée.
    ![meilleures bannières personnalisables](/help/assets/assets/add-text-layer.png)
 
-Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau. Le champ **[!UICONTROL Famille de polices]** affiche les polices existantes retraitées ainsi que les polices nouvellement chargées et publiées. Pour plus d’informations, reportez-vous à l’étape 3 de la section [Créer [!DNL Dynamic Media] modèle](#how-to-create-dynamic-media-template) ci-dessus.
+Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau. Le champ **[!UICONTROL Famille de polices]** affiche la police par défaut [!UICONTROL Adobe Sans F2], les polices existantes retraitées et les polices nouvellement chargées et publiées. Pour plus d’informations, reportez-vous à l’étape 3 de la section [Créer [!DNL Dynamic Media] modèle](#how-to-create-dynamic-media-template) ci-dessus.
 
 ### Modifier ou supprimer un calque {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ Procédez comme suit pour prévisualiser et publier le modèle et copier l’URL
    ![création de contenu à la volée](/help/assets/assets/dm-templates-publish-status.png)
 Vous pouvez également activer le bouton (bascule) **[!UICONTROL Inclure tous les paramètres]** pour modifier toutes les valeurs de paramètre affichées et voir les mises à jour dans l’aperçu du modèle.
    <br>
-1. Pour publier le modèle sur la page d’aperçu, cliquez sur **[!UICONTROL Publier]** et confirmez la publication. Le message **[!UICONTROL Publication terminée]** s’affiche et le statut de publication est mis à jour sur **[!UICONTROL Publié]**.
+1. Pour publier le modèle à partir de la page d’aperçu, cliquez sur **[!UICONTROL Publier]** et confirmez la publication. Un message **[!UICONTROL Publication terminée]** s’affiche et le statut de publication est mis à jour sur **[!UICONTROL Publié]**.
 
->[!NOTE]
->
->Pour publier le modèle, les images du modèle doivent être publiées en premier.
+   >[!NOTE]
+   >
+   >Pour publier le modèle, les images du modèle doivent être publiées en premier.
 
 ### Copier l’URL de diffusion
 
 Les paramètres sélectionnés sur la page **[!UICONTROL Aperçu]** deviennent les paramètres d’URL dans l’URL du modèle.
 
-Pour copier l’URL du modèle publié affiché dans l’aperçu :
+Veillez à ce que les images du modèle soient publiées sur AEM et Dynamic Media afin de générer une URL de diffusion du modèle publié.
+
+Pour copier l&#39;URL de diffusion du modèle, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL  ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
 1. Collez cette URL dans l’onglet de votre navigateur et affichez votre modèle dynamique. Personnalisez le modèle en temps réel en mettant à jour la valeur du paramètre requis (valeur de la clé) dans l’URL directement, comme illustré à l’[étape 2](#preview-and-publish-template-and-copy-template-deliver-url) de la section **Prévisualisation et publication**.
