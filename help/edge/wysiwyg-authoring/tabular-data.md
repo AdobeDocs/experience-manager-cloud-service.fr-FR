@@ -4,10 +4,13 @@ description: Découvrez comment utiliser des feuilles de calcul pour gérer les 
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
