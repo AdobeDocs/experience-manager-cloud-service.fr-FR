@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -633,7 +633,7 @@ ht-degree: 99%
       + [Diffusion d’images optimisées pour un site réactif](/help/assets/dynamic-media/responsive-site.md)
       + [Aperçu de ressources Dynamic Media](/help/assets/dynamic-media/previewing-assets.md)
       + [Ajout de ressources Dynamic Media à des pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-      + [Intégration de la visionneuse de vidéos ou d’images Dynamic dans une page web](/help/assets/dynamic-media/embed-code.md)
+      + [Incorporation de la visionneuse de vidéos ou d’images Dynamic dans une page web](/help/assets/dynamic-media/embed-code.md)
       + [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
       + [Rapport de demande d’erreur pour les URL de diffusion en échec](/help/assets/dynamic-media/reporting-dm.md)
       + [Utilisation de jeux de règles de transformation d’URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
@@ -908,7 +908,7 @@ ht-degree: 99%
       + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Référence de l’API JavaScript du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
+      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
    + Résolution des problèmes {#troubleshooting-aem-forms-cloud-service}
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -1078,14 +1078,9 @@ ht-degree: 99%
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)
          + [Installer l’extension](/help/edge/docs/sidekick-extension.md)
-         + [Configurateur de projet](https://www.aem.live/tools/sidekick/)
          + [Bibliothèque de Sidekick](/help/edge/docs/sidekick-library.md)
       + [Questions fréquentes](/help/edge/docs/faq.md)
-      + [API Admin](https://www.aem.live/docs/admin.html)
-      + [Statut AEM](https://status.adobe.com)
       + Outils {#tools}
-         + [Extension Chrome AEM Sidekick](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Robot Github](https://github.com/apps/aem-code-sync)
          + [Journal d’audit](/help/edge/docs/auditlog.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
