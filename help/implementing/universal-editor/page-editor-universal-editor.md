@@ -1,19 +1,19 @@
 ---
 title: Éditeur de page et éditeur universel
-description: L’éditeur de page reste pris en charge par Adobe, mais l’éditeur universel offre des possibilités existantes pour vos nouveaux projets.
+description: L’éditeur de page reste pris en charge par Adobe, mais l’éditeur universel offre des possibilités intéressantes pour vos nouveaux projets.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
-
 # Éditeur de page et éditeur universel {#page-editor-universal-editor}
 
-L’éditeur de page reste pris en charge par Adobe, mais l’éditeur universel offre des possibilités existantes pour vos nouveaux projets.
+L’éditeur de page reste pris en charge par Adobe, mais l’éditeur universel offre des possibilités intéressantes pour vos nouveaux projets.
 
 ## Contexte {#background}
 
@@ -46,17 +46,17 @@ Comme l’écart de fonctionnalités entre les deux éditeurs diminue constammen
 
 ### Persistance {#persistence}
 
-|  | Éditeur de page | Remarque | Éditeur universel | Remarques |
+|  | Éditeur de page | Remarques | Éditeur universel | Remarques |
 |---|---|---|---|---|
 | Modification des composants de page | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Modification de [fragments de contenu](/help/assets/content-fragments/content-fragments.md) | [!BADGE Indisponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | Inclure de nouveaux fragments et réorganiser leur ordre |
 
 ### Fonctionnalités {#capabilities}
 
-|  | Éditeur de page | Remarque | Éditeur universel | Remarques |
+|  | Éditeur de page | Remarques | Éditeur universel | Remarques |
 |---|---|---|---|---|
 | Modèles de page | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | L’éditeur universel est indépendant du système de modèles utilisé. Cependant, le modèle d’implémentation type favorise les modèles définis par le développeur, car l’outil frontal moderne permet aux développeurs et aux développeuses de définir et de gérer plus facilement la logique de modèle directement dans le code. |
-| Modification de WYSIWYG | [!BADGE Disponible]{type=Positive} Limité aux pages |  | [!BADGE Disponible]{type=Positive} | Pages et fragments de contenu pris en charge |
+| Modification de WYSIWYG | [!BADGE Disponible]{type=Positive} | Limité à pages | [!BADGE Disponible]{type=Positive} | Pages et fragments de contenu pris en charge |
 | [Générer des variations](/help/generative-ai/generate-variations.md) | [!BADGE Indisponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | [Disponible en tant qu’extension](/help/implementing/universal-editor/extending.md) |
 | Insérer un nouveau bloc | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Réorganiser le bloc | [!BADGE Disponible]{type=Positive} | Possible avec un glisser-déposer contextuel, mais pas dans le panneau latéral « arborescence » | [!BADGE Disponible]{type=Positive} | Possible par glisser-déposer dans le panneau latéral « vue d’arborescence », mais pas encore en contexte (prévu) |
