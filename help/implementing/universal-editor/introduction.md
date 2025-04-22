@@ -4,7 +4,7 @@ description: L’éditeur universel est un outil de création visuel moderne con
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 11%
@@ -108,7 +108,7 @@ Pendant que vous explorez l’éditeur universel et que vous progressez dans sa 
 * Dans le cadre d’AEM, l’éditeur universel [prend en charge les mêmes navigateurs de bureau qu’AEM.](/help/overview/supported-platforms.md)
    * Les versions mobiles de ces navigateurs ne sont pas prises en charge.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## Étapes suivantes {#next-steps}
 
