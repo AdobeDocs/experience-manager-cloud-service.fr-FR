@@ -4,21 +4,15 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 79%
 
 ---
 
 
-# API AEM GraphQL pour l’utilisation des fragments de contenu {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Plusieurs fonctionnalités de l’API GraphQL à utiliser avec des fragments de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
->
->Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+# API AEM GraphQL à utiliser avec des fragments de contenu {#graphql-api-for-use-with-content-fragments}
 
 Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 
@@ -1187,7 +1181,7 @@ Les limitations actuelles sont les suivantes :
 * Si une ressource référencée est supprimée du référentiel distant, la référence à une ressource de fragment de contenu sera rompue.
 * Tous les référentiels de ressources de diffusion auxquels l’utilisateur a accès seront disponibles pour sélection. La liste disponible ne peut pas être limitée.
 * L’instance AEM et les instances du référentiel de ressources distant doivent être de la même version.
-* Aucune métadonnée de ressource n’est exposée via l’[API Management](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) et l’[API Delivery](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Vous devez utiliser l’API de métadonnées de ressource pour récupérer les détails des métadonnées de la ressource.
+* Aucune métadonnée de ressource n’est exposée via l’[API Management Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) et la [diffusion de fragments de contenu AEM avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). Vous devez utiliser l’API de métadonnées de ressource pour récupérer les détails des métadonnées de la ressource.
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 

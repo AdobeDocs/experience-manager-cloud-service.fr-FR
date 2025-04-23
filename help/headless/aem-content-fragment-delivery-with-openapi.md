@@ -3,20 +3,15 @@ title: Diffusion de fragments de contenu AEM avec OpenAPI
 description: En savoir plus sur la diffusion de fragments de contenu AEM avec OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # Diffusion de fragments de contenu AEM avec OpenAPI {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->Cette API est disponible via le programme des utilisateurs et utilisatrices précoces.
->
->Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Dans Adobe Experience Manager (AEM) as a Cloud Service, l’OpenAPI AEM pour la diffusion de fragments de contenu :
 
@@ -33,7 +28,7 @@ Cette API :
 
 * est une alternative HTTP REST à l’API AEM GraphQL [à utiliser avec des fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 
-Pour consulter la documentation complète, voir [Schémas d’API AEM Sites - API de diffusion de fragments de contenu (2024.07-stade expérimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/).
+Pour consulter la documentation complète, voir [Diffusion de fragments de contenu AEM avec OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
 
 >[!NOTE]
 >
