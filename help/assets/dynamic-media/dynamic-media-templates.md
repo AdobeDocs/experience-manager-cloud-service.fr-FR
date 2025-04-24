@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 1%
 
 ---
@@ -322,8 +322,7 @@ Pour ajouter un lien CTA à une couche, procédez comme suit :
 
    ![ajouter CTA](/help/assets/assets/add-cta.png)
 
-1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser votre modèle et voir ses paramètres définis.
-1. Cliquez sur **[!UICONTROL Publier]** et sélectionnez **[!UICONTROL Oui]** pour publier le modèle, s’il n’a pas été publié précédemment.
+1. Cliquez sur **[!UICONTROL Aperçu]** et sélectionnez **[!UICONTROL Publier]** pour publier votre modèle, s’il n’a pas été publié auparavant.
 1. Accédez au dossier dans lequel ce modèle est enregistré, sélectionnez-le et cliquez sur ![page de détails](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Détails]**.
 1. Cliquez sur **[!UICONTROL Copier les options]** et sélectionnez **[!UICONTROL Copier le code intégré]**. Veillez à publier les images du modèle dans [!DNL AEM and Dynamic Media] pour copier le code incorporé.
 
