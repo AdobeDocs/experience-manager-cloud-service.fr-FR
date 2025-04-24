@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 93%
 
 ---
 
@@ -26,6 +26,13 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
    * Les différences dans le texte et les images sont mises en évidence.
 * La distorsion du temps utilise les versions de pages pour déterminer l’état de l’environnement de publication.
 
+>[!NOTE]
+>
+>Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, le CSS et le JavaScript ne sont pas versionnées.
+>
+>* Lors de l’affichage des versions, le contenu est affiché avec le code, le CSS et le JavaScript actuels du référentiel.
+>* Lors de la restauration de versions, seul le contenu est restauré et le code, CSS et JavaScript actuels du référentiel lui sont appliqués.
+
 ## Création d’une version {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
@@ -38,7 +45,7 @@ Vous pouvez créer une version de votre ressource depuis :
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez le rail **Frise chronologique**.
-1. Sélectionnez les points de suspension près du champ de commentaire pour afficher les options :
+1. Sélectionnez les points de suspension en regard du champ de commentaire pour afficher les options :
 
    ![Versions dans le rail de la frise chronologique](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
