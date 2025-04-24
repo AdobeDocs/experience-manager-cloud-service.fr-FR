@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
-ht-degree: 84%
+source-wordcount: '2377'
+ht-degree: 83%
 
 ---
 
@@ -411,7 +411,7 @@ Pour définir le niveau de journal par environnement, utilisez la branche condit
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Pour définir le niveau de journal par environnement, utilisez la branche condit
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ Les journaux du réseau CDN sont distincts des autres journaux en ce qu’ils re
 | *pop* | Centre de données du serveur de cache de réseau CDN. |
 | *rules* | Les noms des [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) et indicateurs WAF correspondants, indiquant également si la correspondance a entraîné un blocage. Vide si aucune règle ne correspond. |
 
+Les journaux du réseau CDN peuvent être étendus avec vos propres propriétés à l’aide de [transformations requête/réponse](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Comment accéder aux journaux {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ Les journaux AEM se trouvent dans le dossier `crx-quickstart/logs`, où vous pou
 * Journal des requêtes HTTP AEM : `request.log`
 * Journal des accès HTTP AEM : `access.log`
 
-Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=fr) pour savoir comment le démarrer.
+Les journaux de couche Apache, y compris de Dispatcher, se trouvent dans le conteneur Docker qui contient Dispatcher. Consultez la [documentation de Dispatcher](/help/implementing/dispatcher/disp-overview.md) pour savoir comment le démarrer.
 
 Pour récupérer les journaux :
 

@@ -4,10 +4,10 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 2%
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **Actions**
@@ -153,12 +156,20 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **défini** | (reqProperty ou reqHeader ou queryParam ou reqCookie), valeur | Définit un paramètre de requête spécifié (seule la propriété « path » est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, sur une valeur donnée, qui peut être un littéral de chaîne ou un paramètre de requête. |
-|     | var, valeur | Définit une propriété de requête spécifiée sur une valeur donnée. |
-| **désactivé** | reqProperty | Supprime un paramètre de requête spécifié (seule la propriété « path » est prise en charge), ou un en-tête de requête, un paramètre de requête ou un cookie, à une valeur donnée, qui peut être un littéral de chaîne ou un paramètre de requête. |
-|         | var | Supprime une variable spécifiée. |
-|         | queryParamMatch | Supprime tous les paramètres de requête qui correspondent à une expression régulière spécifiée. |
-|         | queryParamDoesNotMatch | Supprime tous les paramètres de requête qui ne correspondent pas à une expression régulière spécifiée. |
+| **défini** | reqProperty, value | Définit un paramètre de requête spécifié (seule la propriété « path » est prise en charge) |
+|     | reqHeader, valeur | Définit un en-tête de requête spécifié sur une valeur donnée. |
+|     | queryParam, valeur | Définit un paramètre de requête spécifié sur une valeur donnée. |
+|     | reqCookie, valeur | Définit un cookie de requête spécifié sur une valeur donnée. |
+|     | logProperty, valeur | Définit une propriété de journal CDN spécifiée sur une valeur donnée. |
+|     | var, valeur | Définit une variable spécifiée sur une valeur donnée. |
+| **désactivé** | reqProperty | Supprime un paramètre de requête spécifié (seule la propriété « path » est prise en charge) |
+|     | reqHeader, valeur | Supprime un en-tête de requête spécifié. |
+|     | queryParam, valeur | Supprime un paramètre de requête spécifié. |
+|     | reqCookie, valeur | Supprime un cookie spécifié. |
+|     | logProperty, valeur | Supprime une propriété de journal CDN spécifiée. |
+|     | var | Supprime une variable spécifiée. |
+|     | queryParamMatch | Supprime tous les paramètres de requête qui correspondent à une expression régulière spécifiée. |
+|     | queryParamDoesNotMatch | Supprime tous les paramètres de requête qui ne correspondent pas à une expression régulière spécifiée. |
 | **transformation** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var), correspondance, remplacement | Remplace une partie du paramètre de requête (seule la propriété « path » est prise en charge), ou de l’en-tête de requête, ou du paramètre de requête, ou du cookie, ou de la variable par une nouvelle valeur . |
 |              | op:tlower, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var) | Définit le paramètre de requête (seule la propriété « path » est prise en charge), ou l’en-tête de requête, ou le paramètre de requête, ou le cookie, ou la variable sur sa valeur en minuscules. |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### Propriété de journal {#logproperty}
+
+Vous pouvez ajouter vos propres propriétés de journal dans vos journaux CDN à l’aide de transformations de requête et de réponse.
+
+Exemple de configuration :
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+Exemple de journal :
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## Transformations de réponse {#response-transformations}
 
-Les règles de transformation de réponse vous permettent de définir et de dédéfinir les en-têtes des réponses sortantes du réseau CDN. Consultez également l’exemple ci-dessus pour référencer une variable précédemment définie dans une règle de transformation de requête. Le code d’état de la réponse peut également être défini.
+Les règles de transformation de réponse vous permettent de définir et de dédéfinir des en-têtes, des cookies et le statut des réponses sortantes du réseau CDN. Consultez également l’exemple ci-dessus pour référencer une variable précédemment définie dans une règle de transformation de requête.
 
 Exemple de configuration :
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **Actions**
@@ -300,9 +376,15 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **défini** | reqHeader, valeur | Définit un en-tête spécifié sur une valeur donnée dans la réponse. |
-|          | respProperty, valeur | Définit une propriété de réponse. Prend uniquement en charge la propriété « status » afin de définir le code d’état. |
+| **défini** | respProperty, valeur | Définit une propriété de réponse. Prend uniquement en charge la propriété « status » afin de définir le code d’état. |
+|     | respHeader, valeur | Définit un en-tête de réponse spécifié sur une valeur donnée. |
+|     | respCookie, attributs (expires, domain, path, secure, httpOnly, extension), valeur | Définit un cookie de requête spécifié avec des attributs spécifiques sur une valeur donnée. |
+|     | logProperty, valeur | Définit une propriété de journal CDN spécifiée sur une valeur donnée. |
+|     | var, valeur | Définit une variable spécifiée sur une valeur donnée. |
 | **désactivé** | respHeader | Supprime un en-tête spécifié de la réponse. |
+|     | respCookie, valeur | Supprime un cookie spécifié. |
+|     | logProperty, valeur | Supprime une propriété de journal CDN spécifiée. |
+|     | var | Supprime une variable spécifiée. |
 
 ## Sélecteurs d’origine {#origin-selectors}
 
