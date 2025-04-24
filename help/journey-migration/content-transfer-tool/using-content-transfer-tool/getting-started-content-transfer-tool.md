@@ -4,10 +4,10 @@ description: Découvrez comment commencer à utiliser l’outil de transfert de 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 66%
+source-wordcount: '1642'
+ht-degree: 62%
 
 ---
 
@@ -95,11 +95,13 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    La boîte de dialogue suivante s’affiche. Notez qu’un jeu de migration expire après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pendnat un certain temps, le jeu de migration expire et ses données ne sont plus disponibles. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+   Lors de la création du jeu de migration, vous pouvez sélectionner la région géographique dans laquelle les données de migration temporaires seront stockées.  Il est recommandé de choisir la région la plus proche de votre environnement cloud cible pour garantir des performances optimales lors des ingestions.  La région ne peut pas être modifiée après la création du jeu de migration ; pour utiliser une autre région, vous devez créer un nouveau jeu de migration.
+
+   ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >Le nom doit respecter les mêmes conventions qu’un nœud AEM. Il ne peut donc pas contenir les caractères suivants : . / : [ ] | *
+   >Le nom doit respecter les mêmes conventions qu’un nœud AEM et ne peut donc contenir aucun des caractères suivants : `. / : [ ] | * &lt; > ^ ? { } % # «ni symboles ou émoticônes inhabituels.
 
 1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois petits points (**...**) pour ouvrir la liste déroulante, puis sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
