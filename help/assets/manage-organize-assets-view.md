@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 65%
+source-wordcount: '1700'
+ht-degree: 67%
 
 ---
 
@@ -214,10 +214,6 @@ Pour définir la cible de validation :
 
 
    Pour plus d’informations sur les options disponibles, consultez [Cible d’approbation par défaut et destinations de publication pour les ressources approuvées](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media est activé avec OpenAPI, il l’est par défaut.
 
    ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
 
