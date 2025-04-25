@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 48%
+source-wordcount: '1713'
+ht-degree: 43%
 
 ---
 
@@ -162,6 +162,20 @@ L’**exécution** de Java 21 la plus performante est automatiquement déployé
 >[!IMPORTANT]
 >
 > L’**exécution** Java 21 a été déployée dans vos environnements de développement/RDE en février. Elle sera appliquée à vos environnements d’évaluation/de production les **28 et 29 avril**. Notez que la **création de code** avec Java 21 (ou Java 17) est indépendante de l’exécution Java 21. Vous devez engager des mesures explicites pour créer du code avec Java 21 (ou Java 17).
+
+### Application de la politique de configuration de la journalisation d’AEM {#logconfig-policy}
+
+Pour assurer une surveillance efficace des environnements client, les journaux Java d’AEM doivent conserver un format cohérent et ne doivent pas être remplacés par des configurations personnalisées. La sortie du journal doit rester redirigée vers les fichiers par défaut. Pour le code de produit AEM, les niveaux de journal par défaut doivent être conservés. Cependant, il est acceptable d’ajuster les niveaux de journal pour le code développé par le client.
+
+À cette fin, aucune modification ne doit être apportée aux propriétés OSGi suivantes :
+* **Configuration du journal Apache Sling** (PID : `org.apache.sling.commons.log.LogManager`) — *toutes les propriétés*
+* **Configuration de l’enregistreur de journaux Apache Sling** (PID d’usine : `org.apache.sling.commons.log.LogManager.factory.config`) :
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+À la mi-mai, AEM appliquera une politique selon laquelle toute modification personnalisée de ces propriétés sera ignorée. Passez en revue vos processus en aval et ajustez-les en conséquence. Par exemple, si vous utilisez la fonction de transfert de journal :
+* Si votre destination de journalisation s’attend à un format de journal personnalisé (autre que celui par défaut), vous devrez peut-être mettre à jour vos règles d’ingestion.
+* Si les modifications apportées aux niveaux de journal réduisent la verbosité du journal, sachez que les niveaux de journal par défaut peuvent entraîner une augmentation significative du volume du journal.
 
 ### Transfert de journal AEM vers d’autres destinations - Programme Beta {#log-forwarding-earlyadopter}
 
