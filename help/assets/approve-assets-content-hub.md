@@ -2,10 +2,10 @@
 title: Approuver des ressources pour le hub de contenus
 description: Découvrez comment approuver des ressources dans Assets as a Cloud Service pour les rendre disponibles dans Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 20%
+source-wordcount: '1276'
+ht-degree: 19%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 20%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ Les ressources marquées comme `approved` dans Assets as a Cloud Service sont au
 
 >[!NOTE]
 >
-Assets as a Cloud Service et Content Hub doivent utiliser la même organisation pour que les ressources s’affichent dans Content Hub.
+>Assets as a Cloud Service et Content Hub doivent utiliser la même organisation pour que les ressources s’affichent dans Content Hub.
 
 Pour définir le statut de la ressource comme `approved` à l’aide de la vue Assets dans AEM as a Cloud Service :
 
@@ -98,6 +98,52 @@ Pour approuver en bloc des ressources dans un dossier dans la vue Assets :
 1. Sélectionnez **[!UICONTROL Approuvé]** dans le champ **[!UICONTROL Statut]** disponible dans la section [!UICONTROL Propriétés] du volet de droite.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
+## Définir la cible de validation {#set-approval-target}
+
+La vue Assets vous permet de publier des ressources approuvées dans Dynamic Media avec des fonctionnalités OpenAPI et/ou Content Hub, en fonction de la valeur que vous avez définie dans le champ **Cible d’approbation** disponible sur la page Détails de la ressource.
+
+Pour définir la cible de validation :
+
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
+
+1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+
+1. Si vous sélectionnez **Approuvé** à l’étape 2, sélectionnez une cible d’approbation. Les valeurs possibles sont les suivantes : Diffusion et Content Hub.
+
+   * **Diffusion** est l’option par défaut sélectionnée dans le menu déroulant et elle publie la ressource dans [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) et [Content Hub](/help/assets/product-overview.md), si les deux sont activés pour Experience Manager Assets.
+
+   * La sélection de **Content Hub** publie la ressource uniquement dans Content Hub. Content Hub s’affiche en tant qu’option uniquement s’il est activé pour Experience Manager Assets.
+
+   * Si vous ne sélectionnez pas d’option dans la liste déroulante, l’option par défaut activée pour votre environnement AEM as a Cloud Service est automatiquement appliquée à la ressource.
+
+
+   Pour plus d’informations sur les options disponibles, consultez [Cible d’approbation par défaut et destinations de publication pour les ressources approuvées](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >La définition d’une cible de validation est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer ou la désactiver en créant un ticket d’assistance. Si Dynamic Media est activé avec OpenAPI, il l’est par défaut.
+
+   ![Statut d&#39;approbation](/help/assets/assets/approval-status-delivery.png)
+
+1. Spécifiez d’autres propriétés de ressource et cliquez sur **[!UICONTROL Enregistrer]**.
+
+Voici quelques autres points à noter :
+
+* Lorsque vous n’utilisez pas le formulaire de métadonnées par défaut et que vous ne pouvez pas afficher le champ **[!UICONTROL Cible d’approbation]**, [modifiez votre formulaire de métadonnées](/help/assets/metadata-assets-view.md#metadata-forms) pour faire glisser le champ **[!UICONTROL Approbation de]** des composants disponibles vers votre formulaire de métadonnées et cliquez sur **[!UICONTROL Enregistrer]**.
+
+* Lorsque vous sélectionnez la cible de validation comme `Content Hub` dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub.
+
+### Cible d’approbation par défaut et destinations de publication pour les ressources approuvées {#default-approval-target-options-publish-destinations}
+
+Le tableau suivant illustre les conditions préalables à l’affichage de `Approval Target` liste déroulante et de la cible d’approbation par défaut en fonction de l’activation de DM avec OpenAPI et Content Hub dans votre environnement AEM as a Cloud Service :
+
+| Dynamic Media avec OpenAPI | Content Hub | La liste déroulante Cible d&#39;approbation s&#39;affiche ? | Cible d’approbation par défaut des ressources approuvées | Destination de publication |
+| --- | --- | --- | --- |---|
+| Activé | Activé | Oui | Diffusion | Dynamic Media avec OpenAPI et Content Hub |
+| Pas activé | Activé | Oui | Content Hub | Content Hub |
+| Activé | Pas activé | Oui | Diffusion | Dynamic Media avec OpenAPI |
+| Pas activé | Pas activé | Non | N/A | S/O |
 
 ## Automatiser l’approbation des ressources nouvellement ingérées dans la vue Administration {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Pour automatiser l’approbation des ressources nouvellement ingérées dans [!D
 
 >[!NOTE]
 > 
-Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier , vous devez les sélectionner et les approuver manuellement.
+>Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier , vous devez les sélectionner et les approuver manuellement.
 
 ## Gestion des ressources chargées à l’aide de Content Hub {#manage-assets-uploaded-using-content-hub}
 

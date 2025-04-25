@@ -3,10 +3,10 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger des ressources à partir du portail Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ Pour télécharger une ressource et ses rendus, procédez comme suit :
 
    >[!NOTE]
    >
-   * Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   * Vous pouvez télécharger tous les rendus [statiques, dynamiques et de recadrage intelligent](#types-of-renditions) lors du téléchargement d’une ressource.
+   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Vous pouvez télécharger tous les rendus [statiques, dynamiques et de recadrage intelligent](#types-of-renditions) lors du téléchargement d’une ressource.
 
 1. Sélectionnez un ou plusieurs rendus, puis cliquez sur **[!UICONTROL Télécharger]**.
 
@@ -86,7 +86,7 @@ Si vous téléchargez une ressource sous licence, sélectionnez **[!UICONTROL J�
 
 >[!NOTE]
 >
-Les utilisateurs ayant accès à [Dynamic Media avec fonctionnalités d’API ouvertes](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
+> Les utilisateurs ayant accès à [Dynamic Media avec fonctionnalités d’API ouvertes](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
 
 ## Téléchargement de plusieurs ressources et de leurs rendus {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Pour télécharger plusieurs ressources et leurs rendus, procédez comme suit :
 
      >[!NOTE]
      >
-     * Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     * Vous pouvez uniquement télécharger des [rendus statiques](#types-of-renditions) lors du téléchargement de plusieurs ressources.
+     >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+     >* Vous pouvez uniquement télécharger des [rendus statiques](#types-of-renditions) lors du téléchargement de plusieurs ressources.
 
    Si l’une des ressources sélectionnées est une ressource sous licence, cliquez sur la licence de la ressource dans le volet de gauche pour afficher son aperçu, ce qui vous permet de sélectionner **[!UICONTROL J’ai lu et accepté les conditions générales mentionnées ci-dessus]** puis cliquez sur **[!UICONTROL Télécharger]**. L’aperçu de la licence s’affiche uniquement si la ressource est approuvée à l’aide de l’environnement de création Assets as a Cloud Service. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -153,17 +153,35 @@ En savoir plus sur [affichage et gestion des rendus dans Experience Manager Asse
 
 * [Rendus statiques](/help/assets/renditions.md#static-renditions) : les rendus statiques sont des versions précréées des ressources numériques, généralement générées lors de l’ingestion ou de la modification des ressources. Ils sont optimisés pour des utilisations et des plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour les conceptions réactives ou les fichiers haute résolution pour l’impression, offrant ainsi une expérience rationalisée et cohérente.
 
-* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création.
+* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [ Activation des rendus dynamiques ](#enable-dynamic-media-renditions).
 
 * [Recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) : le recadrage intelligent se concentre uniquement sur la partie essentielle d’une ressource pendant le processus de recadrage. Le recadrage intelligent Dynamic Media pour tire parti de l’intelligence artificielle optimisée par Adobe Sensei pour effectuer le suivi du point ciblé, en s’assurant que vos ressources ont l’aspect le plus favorable quelle que soit la taille de l’écran. [!DNL Adobe Experience Manager] recadrage intelligent affiche la largeur et la hauteur des rendus d’une ressource avec le titre. Pour en savoir plus, consultez la section [Utilisation du recadrage intelligent avec AEM Assets Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  Les rendus de recadrage intelligent s’affichent et ne peuvent être téléchargés que si vous avez accès à [Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Les rendus de recadrage intelligent ne sont disponibles que pour les ressources d’image.
+
   ![Types de rendus](/help/assets/assets/renditions-types.png)
 
+### Activation des rendus dynamiques {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* La fonctionnalité de rendus de recadrage dynamique et intelligent est en phase d’adoption précoce. Pour accéder à cette fonctionnalité, [créez et envoyez un dossier de support client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-* Les clients nouvellement intégrés aux [services d’API ouverts Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) doivent réviser leurs paramètres d’image prédéfinis existants pour approbation.
+Pour activer les rendus dynamiques :
+
+1. Vérifiez que vous avez accès à [Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+
+   Une fois que vous avez accès à Dynamic Media avec les fonctionnalités OpenAPI, toutes les ressources marquées comme `Approved` peuvent être diffusées au public à l’aide de Dynamic Media.
+
+1. Définissez la [ cible d’approbation de la ressource ](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
+
+1. Activez le bouton (bascule) **[!UICONTROL Activer la disponibilité des rendus]** disponible dans l’onglet **[!UICONTROL Rendus]** de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+
+1. Enregistrez à nouveau les paramètres d’image prédéfinis existants pour les rendre disponibles sur Content Hub. Il s’applique uniquement si vous avez récemment intégré Dynamic Media avec OpenAPI.
+
+   Pour enregistrer à nouveau les paramètres d’image prédéfinis existants, accédez à la vue Administration et sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Paramètres d’image prédéfinis]**. Sélectionnez un paramètre prédéfini, cliquez sur **[!UICONTROL Modifier]** puis sur **[!UICONTROL Enregistrer]**.
+
+
+
+   >[!NOTE]
+   > 
+   > Les rendus dynamiques sont disponibles uniquement pour les ressources d’image.
 
 
 
