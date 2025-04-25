@@ -1,67 +1,109 @@
 ---
-Title: Authoring a Form
-Description: This article provides information on various form authoring platforms, including the Universal Editor, document-based authoring, and Adaptive Forms editors (Core Components and Foundation Components).
-Keywords: Universal Editor for WYSIWYG authoring, document-based authoring, Adaptive Forms editors, Adaptive Forms editors for Core Components authoring, Adaptive Forms editors for Foundation Components authoring
-feature: Edge Delivery Services
-Role: User, Developer
+title: Comment créer des formulaires dans AEM ?
+description: Découvrez les différentes plateformes de création de formulaires disponibles dans Adobe Experience Manager (AEM) et comment choisir celle qui convient le mieux à vos besoins.
+feature: Edge Delivery Services, Adaptive Forms, Core Components
+role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: bdc0e51a8b16df432f1f1aeabed11135fb8c8e0c
-workflow-type: ht
-source-wordcount: '877'
-ht-degree: 100%
+source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 12%
 
 ---
 
 
-# Création d’un formulaire
+# Comment créer du Forms dans Adobe Experience Manager (AEM) ?
 
-Adobe Experience Manager propose et prend en charge plusieurs éditeurs pour créer un formulaire. Vous pouvez utiliser :
-* Éditeur universel (pour la création WYSIWYG)
-* Microsoft Excel ou Google Sheets (création basée sur des documents)
-* Éditeurs de formulaires adaptatifs (pour la création basée sur les composants principaux ou les composants de base)
+Adobe Experience Manager (AEM) offre une plateforme flexible pour créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. Il offre une interface utilisateur intuitive et un riche ensemble de composants prêts à l’emploi pour la création et la gestion de Forms adaptatif. Forms peut être créé avec ou sans modèle de formulaire ou schéma, selon vos besoins.
 
-**[image à ajouter]**
+## Considérations essentielles lors du choix d’une plateforme de création
 
-## Éditeur universel (pour la création WYSIWYG)
+AEM propose plusieurs options de création de formulaires pour créer des formulaires interactifs et attrayants. Lors de la sélection d’un environnement de création de formulaires, tenez compte des facteurs suivants :
 
-L’éditeur universel est un éditeur visuel polyvalent qui offre une fonctionnalité « ce que vous voyez est ce que vous obtenez » (WYSIWYG), assurant ainsi une expérience de création de formulaire intuitive. Il est recommandé d’utiliser l’éditeur universel lors de la création de formulaires, car ce dernier offre une conception moderne et conviviale dotée d’une interface pratique par glisser-déposer.
+| ?? **Considération** | ?? **Que demander** |
+|----------------------|--------------------|
+| **Expertise utilisateur** | Qui créera les formulaires (développeurs, utilisateurs professionnels ou auteurs de contenu) ? |
+| **Complexité du formulaire** | Le formulaire a-t-il besoin de règles avancées, de sections dynamiques ou d’intégrations ? |
+| **Besoins en matière de réutilisation** | Des parties du formulaire seront-elles réutilisées dans différents formulaires ou projets ? |
+| **Flexibilité de la conception** | Avez-vous besoin d’un contrôle total de la mise en page, des thèmes et du style ? |
+| **Exigences d’intégration** | Le formulaire doit-il se connecter à des modèles de données, des workflows ou des systèmes externes ? |
+| **Facilité d’utilisation** | La plateforme est-elle intuitive en fonction du niveau de compétence technique de votre équipe ? |
+| **Performances et évolutivité** | Le formulaire sera-t-il utilisé à grande échelle ou dans des environnements à trafic élevé ? |
+| **Diffusion omnicanal** | Le formulaire sera-t-il utilisé sur des sites web, des applications mobiles, des kiosques ou plusieurs canaux ? |
+| **Flexibilité de publication** | Où les formulaires seront-ils publiés sur AEM, Edge Delivery ou des applications personnalisées ? |
 
-Pour créer des formulaires à l’aide de l’éditeur universel, les modèles Edge Delivery Services disponibles dans l’environnement AEM sont utilisés. Ces formulaires héritent de l’aspect des configurations dans le référentiel GitHub Edge Delivery Services. [Une connexion entre votre environnement AEM et le référentiel GitHub Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md) est établie pour permettre la publication de ces formulaires sur les Edge Delivery Services.
+## Présentation des méthodes de création de formulaires dans AEM
 
-Pour des informations détaillées sur la création à l’aide de l’éditeur universel, consultez l’article [Créer du contenu avec l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
+AEM prend en charge plusieurs méthodes de création, chacune adaptée aux différents besoins des utilisateurs, niveaux de compétences techniques et destinations de publication.
 
-## Microsoft Excel ou Google Sheets (création basée sur des documents)
+* [Composants de base](/help/forms/create-adaptive-form-tutorial.md) : utilisez les composants de base pour créer des formulaires interactifs traditionnels. Idéal pour les formulaires qui s’intègrent à des systèmes hérités ou reposent sur des workflows établis de longue date. Les Forms créées avec des composants de base peuvent uniquement être publiées sur AEM et ne sont pas compatibles avec Edge Delivery Services.
 
-Vous pouvez créer des formulaires à l’aide de la création basée sur des documents avec des fichiers Microsoft Excel ou Google Sheets, ce qui vous permet d’exploiter les solides écosystèmes et API de Google Sheets, Microsoft Excel et Microsoft SharePoint. Cette approche est particulièrement utile pour créer des formulaires simples sans services d’envoi avancés.
+* [Composants principaux](/help/forms/creating-adaptive-form-core-components.md) : utilisez les composants principaux pour créer des formulaires modernes, réactifs et évolutifs. Ils prennent en charge la réutilisation, l’accessibilité et de meilleures performances. Forms créé avec les composants principaux peut être publié sur AEM et Edge Delivery Services, offrant ainsi une flexibilité entre les plateformes.
 
-Pour commencer à créer un formulaire à l’aide de Microsoft Excel ou de Google Sheets, [configurez un projet AEM à l’aide du modèle standard d’AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block), puis clonez le référentiel GitHub correspondant sur votre ordinateur local. AEM Forms Edge Delivery propose une fonctionnalité appelée Bloc de formulaires adaptatifs, qui simplifie le processus de création de formulaires pour la capture et le stockage des données. Pour savoir comment créer et publier des formulaires à l’aide du bloc de formulaires adaptatifs sur Edge Delivery Services, reportez-vous à la section [Créer un formulaire](/help/edge/docs/forms/create-forms.md).
+* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md) : Edge Delivery Services Forms transforme la création, l’exécution et le traitement des formulaires. Grâce à Edge Delivery Services, les entreprises peuvent créer des formulaires numériques rapides, sécurisés et hautement disponibles, afin d’améliorer l’expérience client et l’efficacité opérationnelle dans un environnement de développement rapide. Vous pouvez créer le Forms Edge Delivery Services de deux manières :
+   * [Création WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : utilisez l’éditeur universel pour la création visuelle de formulaires par glisser-déposer idéale pour les créateurs de contenu avec des connaissances techniques limitées. Les Forms créées avec l’éditeur universel sont diffusées à l’aide de Edge Delivery Services pour un rendu rapide et léger.
+   * [Création basée sur des documents](/help/edge/docs/forms/tutorial.md) : utilisez des outils tels que Microsoft Excel ou Google Sheets pour définir la structure et le contenu des formulaires. Cette méthode est utile pour les utilisateurs professionnels qui préfèrent les entrées pilotées par feuille de calcul. Ces formulaires sont généralement publiés via Edge Delivery Services et sont adaptés aux cas d’utilisation légers et volumineux.
+* [Création découplée](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service) : utilisez les API pour effectuer le rendu des formulaires au format JSON pour n’importe quel front-end, par exemple React, Angular, les applications mobiles ou les kiosques, sans dépendre d’AEM. Actuellement, seuls les composants principaux prennent en charge la diffusion découplée. Les formulaires découplés sont idéaux pour les cas d’utilisation omnicanaux et sont utilisés indépendamment du rendu des pages d’AEM, ce qui les rend flexibles pour les déploiements front-end personnalisés.
 
-## Éditeurs de formulaires adaptatifs (pour la création basée sur les composants principaux ou les composants de base)
+### Analyse comparative des méthodes de création de formulaires AEM
 
-Vous pouvez créer des formulaires attrayants, réactifs et dynamiques. L’éditeur de formulaire adaptatif fournit un assistant convivial qui vous permet de créer rapidement des formulaires adaptatifs. L’assistant de formulaire offre une navigation facile par onglets, ce qui vous permet de sélectionner des modèles préconfigurés pour les composants de base ou principaux, les thèmes, les modèles de données et les options d’envoi, afin de créer un formulaire de manière efficace.
+&#x200B; Le tableau suivant présente une comparaison concise des différentes méthodes de création de formulaires AEM, en mettant en évidence les approches, les fonctionnalités, les options de publication et les cas d’utilisation idéaux pour vous aider à sélectionner la méthode la plus adaptée à vos besoins.
 
-La [création de formulaires avec des composants principaux](/help/forms/creating-adaptive-form-core-components.md) vous permet d’exploiter des composants de capture de données normalisés qui peuvent être personnalisés, ce qui réduit le temps de développement et les coûts de maintenance pour les expériences d’inscription numérique. Ces formulaires peuvent être publiés à l’aide du bloc de formulaires adaptatifs sur Edge Delivery Services ou via l’instance de publication AEM.
+| **Considération** | **Composants de base** | **Composants principaux** | **Éditeur universel (WYSIWYG)** | **Création basée sur des documents** | **Création découplée** |
+|--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Idéal Pour** | Gestion des formulaires et des workflows hérités dans AEM | Formulaires évolutifs et modernes avec des processus et des intégrations complexes | Création de formulaires pour les sites Edge Delivery Service avec des exigences complexes | Prototypage rapide ou formulaires de base sans services d’envoi avancés | Expériences omnicanal sur les plateformes (web, mobiles, kiosques, etc.) |
+| **Expertise utilisateur** | Développeurs, auteurs de contenu | Développeurs, Auteurs Avancés | Utilisateurs professionnels, auteurs de contenu | Utilisateurs professionnels | Développeurs et développeuses |
+| **Complexité du formulaire** | Formulaires de base | Formulaires complexes avec sections dynamiques | Formulaires complexes avec actions personnalisées | Formulaires simples | Formulaires hautement complexes pilotés par API |
+| **Flexibilité de la conception** | Limité | Élevée (personnalisation CSS/JS) | Modéré (sur la base de modèles) | Limité | Élevée (contrôle du framework frontal) |
+| **Fonction d’intégration** | Workflows AEM de base | Avancé (modèles de données, workflows) | Intégration avec des systèmes externes | De base (Google Sheets, Excel) | Contrôle complet via les API |
+| **Méthode de publication** | AEM uniquement | AEM et Edge Delivery Services | Edge Delivery Services | Edge Delivery Services | N’importe quel système frontal via les API |
+| **Performance et SEO** | Standard | Amélioration des composants de base | Scores Google Lighthouse élevés pour un rendu plus rapide et un meilleur SEO | Scores Google Lighthouse élevés pour un rendu plus rapide et un meilleur SEO | Dépend de l’implémentation |
+| **Diffusion omnicanal** | Limité | Modéré | Modéré | Limité | Élevée |
 
-La [création de formulaires avec des composants de base](/help/forms/create-an-adaptive-form.md) utilise des composants de capture de données classiques. Ces formulaires ne peuvent être publiés qu’à l’aide de l’instance de publication AEM.
+<!--
+| **Form authoring methods** | **Key Approach** | **Features** | **Publishing Method** | **Use Cases** |
+|-----------------------------|------------------|--------------|-----------------------|---------------|
+| **Foundation Components** | Classic AEM authoring interface designed for standard web pages. | Includes basic components like text, images, tables, and charts. Limited reuse capabilities and primarily web-based. | Published on AEM only. | Best for maintaining legacy forms and workflows within AEM. |
+| **Core Components** | Provides a modern, flexible approach with high customization capabilities. | Component-based authoring within AEM, offering high customization with CSS and JS. Built around accessibility guidelines and integrated with AEM Sites. | Published on AEM and Edge Delivery Services. | Suitable for scalable, modern forms with complex workflows and integrations. |
+| **Universal Editor (WYSIWYG)** | Offers a WYSIWYG interface for intuitive form creation. | Forms are designed using an intuitive drag-and-drop interface. These forms inherit look and feel from the configured Edge Delivery Services GitHub repository for the corresponding form. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for creating forms for Edge Delivery Service sites and pages, especially scenarios involving complex forms, workflows, custom actions, or integrations with external systems. |
+| **Document-based Authoring** | Uses familiar tools like Google Docs and Microsoft Office for form creation. | Forms are designed using spreadsheets, with data directly submitted to Google Sheets or Microsoft Excel. These forms are faster to create and deploy. No prior knowledge of AEM is required to develop custom components and styles for these forms. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for quick prototyping or basic forms where advanced submission services are not needed. Well-suited for surveys, registration, or feedback forms requiring data storage in spreadsheets. |
+| **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |-->
 
-Vous pouvez également publier des formulaires créés à l’aide des éditeurs de formulaires adaptatifs sur Edge Delivery Services en établissant une [connexion entre votre environnement AEM et le référentiel GitHub Edge Delivery Services ](/help/edge/docs/forms/publishing-forms.md).
+### Comparaison des fonctionnalités des méthodes de création de formulaires AEM
 
-## Comment choisir entre différents types de création de formulaires ?
+Le tableau suivant présente une comparaison détaillée des fonctionnalités clés des différentes méthodes de création de formulaires AEM, afin de vous aider à sélectionner l’approche la plus adaptée à vos besoins&#x200B;
 
-Le tableau suivant décrit les fonctionnalités et les cas d’utilisation de chaque éditeur de création, ce qui vous permet de choisir le bon en fonction de vos besoins et de vos envois de formulaire.
+| **Fonction** | **Composants de base** | **Composants principaux** | **Éditeur universel (WYSIWYG)** | **Création basée sur des documents** | **Création découplée** |
+|-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
+| **Composition unifiée avec Sites** | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Prise en charge des formulaires incorporés** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Règles (comportement dynamique)** | Éditeur de règles avancé avec fonctions personnalisées | Éditeur de règles avancé avec fonctions personnalisées | Éditeur de règles avancé avec fonctions personnalisées | Limité : afficher/masquer, calculer la valeur, fonctions personnalisées | Limité : nécessite une implémentation personnalisée |
+| **Prise en charge des pièces jointes** | ✅ | ✅ | ✅ | ℹ️ (Accès anticipé) | ❌ |
+| **Prise en charge de CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), tourniquet (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Nécessite une intégration personnalisée |
+| **Fonctionnalités d’envoi** | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appeler un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appeler un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appeler un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Feuille de calcul uniquement | Points d’entrée d’API personnalisés |
+| **Schéma de données** | FDM, personnalisé | FDM, personnalisé | FDM, personnalisé | Personnalisé | Personnalisé |
+| **Pré-remplir** | ✅ | ✅ | ?? (via l’assistant) | ✅ | Implémentation personnalisée |
+| **fragments** | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **Éditeur visuel de règles** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Localisation** | ✅ | ✅ | ?? (via Sites) | ℹ️ (Excel - Manuel, Fonction Google Sheets) | Implémentation personnalisée |
+| **Schéma De Données (Arborescence De Données)** | ✅ | ✅ | ?? (via l’extension d’IU) | ❌ | Implémentation personnalisée |
+| **Prise en charge des modèles** | ✅ | ✅ | Contenu Initial Uniquement, Pas De Politique | ❌ | Implémentation personnalisée |
+| **Portail** | ✅ | ✅ | ❌ | ❌ | ❌ |
+| **Création de document d’enregistrement** | ✅ | ✅ | ?? (via Derlina) | ❌ | ❌ |
+| **génération du document d’enregistrement** | ✅ | ✅ | ?? (FORMS-2475 Nouveau) | ❌ | ❌ |
+| **Thème** | ✅ | ✅ | ℹ️ (au niveau du projet) | ℹ️ (au niveau du projet) | Implémentation personnalisée |
+| **Composant personnalisé** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Fonctions prêtes à l’emploi et personnalisées** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Référence du fragment** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Intégration Sign** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Prise en charge de RTL** | ❌ | ✅ | ?? | ?? | Implémentation personnalisée |
+| **Expérimentation** | ❌ | ❌ | ✅ | ✅ | Implémentation personnalisée |
+| **Gestion des tâches via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Extension Personalization** | ❌ | ❌ | ?? | ❌ | Implémentation personnalisée |
+| **Personnalisation de l’éditeur** | ❌ | ❌ | ✅ (via l’extension d’interface utilisateur) | ❌ | Implémentation personnalisée |
+| **Action Envoyer** | ✅ | ✅ | ✅ | Feuille de calcul uniquement | Implémentation personnalisée |
 
-| **Éditeur de création de formulaire** | **Approche clé** | **Fonctionnalités** | **Méthode de publication** | **Cas d’utilisation** |
-|--------|-----------|-------|-------|------------------------------------------------|
-| **Création basée sur des documents** | Tire parti d’outils familiers tels que Google Docs et Microsoft Office pour la création de formulaires. | Les formulaires sont conçus à l’aide de feuilles de calcul, avec des données directement envoyées aux feuilles Google Sheets ou Microsoft Excel. </br> </br> Ces formulaires sont plus rapides à créer et à déployer. Vous n’avez pas besoin d’une connaissance préalable d’AEM pour développer des composants et des styles personnalisés pour ces formulaires. | Ces formulaires sont publiés sur Edge Delivery Services et ont un score Google Lighthouse très élevé. </br> </br> Le score élevé entraîne un rendu plus rapide et un meilleur référencement. | Ces formulaires sont parfaits pour le prototypage rapide ou les formulaires de base pour lesquels des services d’envoi avancés ne sont pas nécessaires. </br> </br> Ils sont adaptés aux formulaires d’enquête, d’enregistrement ou de commentaires nécessitant un stockage des données dans des feuilles de calcul. Ces formulaires sont publiés dans Edge Delivery Services |
-| **Éditeur universel** </br> </br> Utilisez l’éditeur universel pour créer vos formulaires. | Offre une interface WYSIWYG pour la création intuitive de formulaires. | Les formulaires sont conçus à l’aide d’une interface intuitive par glisser-déposer. </br> </br> Ces formulaires empruntent l’apparence du référentiel GitHub Edge Delivery Services configuré pour le formulaire correspondant. | Ces formulaires sont publiés sur Edge Delivery Services et ont un score Google Lighthouse très élevé. </br> </br> Le score élevé entraîne un rendu plus rapide et un meilleur référencement. | Ces formulaires sont parfaits pour les sites et les pages Edge Delivery Service. Ces scénarios de formulaires impliquent des formulaires et des workflows complexes, des actions personnalisées ou des intégrations à des systèmes externes |
-| **Éditeur de formulaires adaptatifs** | Fournit une approche pilotée par un assistant pour lancer rapidement la création de formulaires à l’aide de modèles, de styles et de champs prédéfinis. | Utilisez ces éditeurs pour créer des formulaires basés sur les composants principaux ou des formulaires basés sur les composants de base. | Ces formulaires peuvent être publiés sur Edge Delivery Services ou via des instances de publication AEM. | Utilisez ces éditeurs pour créer des formulaires basés sur les composants principaux ou des formulaires basés sur les composants de base. Ils sont parfaits pour les scénarios impliquant des formulaires et des workflows complexes, des actions personnalisées ou des intégrations à des systèmes externes. |
-
-
->[!NOTE]
->
->
-> Si vous constatez des fonctionnalités manquantes dans l’éditeur universel qui étaient auparavant disponibles dans l’éditeur de formulaires adaptatifs, vous pouvez les demander en envoyant un e-mail à mailto:aem-forms-ea@adobe.com à l’aide de votre adresse e-mail officielle.
 
 ## Article connexe
 
@@ -69,7 +111,3 @@ Le tableau suivant décrit les fonctionnalités et les cas d’utilisation de ch
 * [Éditeur universel pour la création WYSIWYG](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 * [Créer un formulaire adaptatif (composants de base)](/help/forms/creating-adaptive-form.md)
 * [Créer un formulaire adaptatif (composants principaux)](/help/forms/create-an-adaptive-form.md)
-
-## Voir également
-
-{{see-more-forms-eds}}

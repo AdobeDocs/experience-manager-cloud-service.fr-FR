@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
 workflow-type: tm+mt
-source-wordcount: '3131'
-ht-degree: 90%
+source-wordcount: '3152'
+ht-degree: 89%
 
 ---
 
@@ -103,6 +103,9 @@ Vous pouvez utiliser des actions d’envoi telles que « Envoyer par e-mail »
 ![Actions d’envoi d’image](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> Vous pouvez enregistrer le document d’enregistrement pour n’importe quel modèle de données de formulaire à l’aide de la propriété **[!UICONTROL Champ de référence de liaison de document d’enregistrement]**.
 
 ## Mises à jour incrémentielles du modèle de document d’enregistrement {#document-of-record-template-incremental-updates}
 
@@ -331,7 +334,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
         >[!NOTE]
         >
-        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers du PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
+        > AEM Forms propose toute une gamme de polices intégrées qui s’intègrent de manière transparente aux fichiers PDF. Pour afficher la liste des polices prises en charge, [cliquez ici](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Inclure les objets de formulaire qui ne sont pas associés à un modèle de données** : la définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
 

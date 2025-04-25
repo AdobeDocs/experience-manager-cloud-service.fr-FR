@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 57%
+source-wordcount: '2333'
+ht-degree: 50%
 
 ---
 
@@ -26,17 +26,21 @@ En comprenant et en utilisant les types d’opérateur et d’événement dispon
 
 L’éditeur de règles fournit les opérateurs logiques et les événements suivants à l’aide desquels vous pouvez créer des règles.
 
-* **est égal à**
-* **n&#39;est pas égal à**
-* **Commence par**
-* **Se termine par**
-* **Contient**
-* **Ne contient pas**
-* **Est vide**
-* **N’est pas vide**
-* **A sélectionné :** renvoie la valeur True lorsque l’utilisateur sélectionne une option donnée pour une case à cocher, une liste déroulante, un bouton radio.
-* **Est initialisé (événement) :** renvoie la valeur True si un objet de formulaire est généré dans le navigateur.
-* **Est modifié (événement) :** renvoie la valeur True si l’utilisateur modifie la valeur saisie ou l’option sélectionnée pour un objet de formulaire.
+* **Est égal à** - Vérifie si un objet de formulaire correspond à une valeur spécifiée.
+* **N’est pas égal à** - Vérifie si l’objet d’un formulaire ne correspond pas à une valeur spécifiée.
+* **Commence par** - Vérifie si un objet de formulaire commence par une chaîne donnée.
+* **Se termine par** - Vérifie si un objet de formulaire se termine par une chaîne spécifiée.
+* **Contient** - Vérifie si l’objet d’un formulaire inclut une sous-chaîne spécifiée.
+* **Ne contient pas** - Vérifie si l’objet d’un formulaire n’inclut pas une sous-chaîne spécifiée.
+* **Est vide** - Vérifie si un objet de formulaire est vide ou non fourni.
+* **N’est pas vide** - Vérifie si un objet de formulaire est présent et non vide.
+* **A sélectionné** - Renvoie « true » lorsqu’un utilisateur sélectionne une option de case à cocher, de liste déroulante ou de bouton radio spécifique.
+* **Est initialisé (événement)** - Renvoie la valeur True si un objet de formulaire est généré dans le navigateur.
+* **Est modifié (événement)** - Renvoie « true » lorsqu’un utilisateur modifie la valeur ou la sélection d’un objet de formulaire.
+* **Est cliqué (événement)** - Renvoie la valeur True si un utilisateur clique sur un objet de formulaire, par exemple un bouton. Un utilisateur peut [ajouter plusieurs conditions au clic sur le bouton](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **Est valide** - Vérifie si un objet de formulaire répond aux critères de validation.
+* **N’est pas valide** - Vérifie si un objet de formulaire ne répond pas aux critères de validation.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -112,6 +116,10 @@ _
 * Assurez-vous que le composant [principal) est défini sur la version 3.0.14 ou ultérieure](https://github.com/adobe/aem-core-forms-components) pour utiliser cette fonctionnalité dans l’éditeur de règles.
 * Si des règles sont appliquées à différents champs dans la condition Lorsque, la règle se déclenche même si un seul de ces champs est modifié.
 * Vous pouvez uniquement ajouter les plusieurs champs dans la condition **Lorsque** pour une règle **ET**. Cela n’est pas possible pour une règle **OR**.
+
+>[!NOTE]
+>
+> Pour ajouter plusieurs conditions qui incluent un clic sur un bouton, assurez-vous que l’événement de clic sur le bouton est placé en tant que première condition. Par exemple, `When button is clicked AND text input equals '5'` est valide, alors que `When text input equals '5' AND button is clicked` n’est pas pris en charge.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.

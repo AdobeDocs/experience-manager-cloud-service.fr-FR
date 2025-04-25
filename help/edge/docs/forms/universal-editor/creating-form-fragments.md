@@ -3,17 +3,19 @@ title: Comment créer des fragments de formulaire pour la création basée sur W
 description: Découvrez comment créer des fragments de formulaire dans l’éditeur universel et les ajouter aux formulaires.
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: true
-hidefromtoc: true
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 615f4686fed0d17b7d7aa5cd86c545b11952d792
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 90%
 
 ---
 
-# Création et utilisation de fragments de formulaire Edge Delivery Services dans l’éditeur universel
+# Création de fragments de formulaire dans l’éditeur universel
+
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
 Les formulaires comprennent souvent des sections courantes telles que les coordonnées, les détails d’identification ou les accords de consentement. Les développeurs et développeuses de formulaires créent ces sections à chaque création de formulaire, ce qui est répétitif et prend beaucoup de temps.
 Pour éliminer cette duplication des efforts, l’éditeur universel permet de créer des segments de formulaire réutilisables, tels que des panneaux ou des groupes de champs, une seule fois et de les réutiliser dans différents formulaires. Ces segments réutilisables, modulaires et autonomes s’appellent des fragments de formulaire. Par exemple, le même fragment de contact d’urgence peut être utilisé dans différentes sections d’un formulaire, comme pour les coordonnées des personnes employées et en charge de la supervision.
@@ -22,8 +24,12 @@ Pour éliminer cette duplication des efforts, l’éditeur universel permet de c
 
 ## Fonctionnalités des fragments de formulaire Edge Delivery Services
 
-* **Conservation de la cohérence avec les fragments de formulaire**
-Vous pouvez intégrer des fragments à différents formulaires, ce qui vous permet de maintenir des dispositions cohérentes et un contenu normalisé. Avec une approche « Modifier une fois, refléter partout », toute mise à jour apportée à un fragment s’applique automatiquement à tous les formulaires.
+* **Conserver la cohérence avec les fragments de formulaire**
+Vous pouvez intégrer des fragments dans différents formulaires, ce qui vous permet de maintenir des dispositions cohérentes et un contenu normalisé.
+
+  >[!NOTE]
+  >
+  > Avec une approche « Modifier une fois, refléter partout », toute mise à jour apportée à un fragment s’applique automatiquement à tous les formulaires en mode Prévisualisation. Cependant, en mode de publication, vous devez publier le fragment ou republier le formulaire pour que les modifications se reflètent.
 
 * **Ajout de fragments de formulaire plusieurs fois dans un formulaire**
 Vous pouvez ajouter plusieurs fois un fragment de formulaire dans un formulaire et configurer ses propriétés de liaison de données aux sources de données ou aux schémas.
@@ -38,13 +44,13 @@ Vous pouvez créer des fragments de formulaire imbriqués, ce qui signifie que v
 ## Remarques concernant l’utilisation des fragments de formulaire Edge Delivery Services
 
 * Vous devez ajouter la même URL GitHub à la fois dans le fragment et dans le formulaire dans lequel vous avez l’intention d’utiliser le fragment.
-* Vous ne pouvez pas modifier un fragment de formulaire, inséré par référence, au sein même d’un formulaire. Pour ce faire, modifiez le fragment de formulaire autonome.
+* Vous ne pouvez pas modifier un fragment de formulaire dans un formulaire. Pour apporter des modifications, modifiez le fragment de formulaire autonome.
 
-## Conditions préalables à la création de fragments de formulaire Edge Delivery Services
+## Prérequis
 
 * [Configurez votre référentiel GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) pour établir une connexion entre votre environnement AEM et le référentiel GitHub.
 * Si vous utilisez déjà des Edge Delivery Services, ajoutez la dernière version du [bloc de formulaires adaptatifs](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) à votre référentiel GitHub.
-* L’instance de création AEM Forms comprend un modèle basé sur des Edge Delivery Services. Assurez-vous que la [dernière version des composants principaux](https://github.com/adobe/aem-core-forms-components) est installée dans votre environnement.
+* L’instance d’auteur AEM Forms comprend un modèle basé sur Edge Delivery Services.
 * Conservez à portée de main l’URL de votre instance de création AEM Forms as a Cloud Service et de votre référentiel GitHub.
 
 ## Utilisation de fragments de formulaire Edge Delivery Services
@@ -108,7 +114,7 @@ Pour créer un fragment de formulaire dans l’éditeur universel, procédez com
 
 ### Ajout de fragments de formulaire à un formulaire
 
-Créons un formulaire `Employee Details` simple qui comprend des informations sur la personne employée et celle en charge de la supervision. Vous pouvez utiliser le fragment `Contact Details` dans les panneaux de la personne employée et de celle en charge de la supervision. Pour utiliser le fragment de formulaire dans votre formulaire, procédez comme suit :
+Créons un formulaire de `Employee Details` simple qui comprend des renseignements sur l&#39;employé et le superviseur. Vous pouvez utiliser le fragment `Contact Details` dans les panneaux de la personne employée et de celle en charge de la supervision. Pour utiliser le fragment de formulaire dans votre formulaire, procédez comme suit :
 
 1. Ouvrez le formulaire en mode d’édition.
 1. Ajoutez le composant Fragment de formulaire au formulaire.
@@ -132,7 +138,7 @@ Créons un formulaire `Employee Details` simple qui comprend des informations su
 
 1. Cliquez sur **[!UICONTROL Sélectionner]**.
 
-   Le fragment de formulaire est ajouté par référence au formulaire et est synchronisé avec le fragment de formulaire autonome. Cela signifie que toutes les modifications apportées au fragment sont répercutées dans toutes les instances où le fragment est incorporé dans les formulaires.
+   Le fragment de formulaire est ajouté par référence au formulaire et reste synchronisé avec le fragment de formulaire autonome.
 
    ![Fragment dans le formulaire](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 

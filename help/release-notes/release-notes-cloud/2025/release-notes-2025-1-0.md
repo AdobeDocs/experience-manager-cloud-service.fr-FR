@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 92%
 
 ---
 
@@ -97,9 +97,6 @@ Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP
 
 * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos.
 
-**Relations des ressources**
-
-La vue Assets prend désormais en charge l’affichage et la modification des relations de ressources dans un panneau simplifié de détails des ressources. Ajoutez facilement des relations telles que Source et Dérivé au contenu afin que les utilisateurs et utilisatrices puissent trouver plus efficacement du contenu Hero essentiel.
 
 **Retraiter les ressources**
 

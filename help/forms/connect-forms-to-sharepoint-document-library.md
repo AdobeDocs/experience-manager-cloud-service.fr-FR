@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Comment connecter la bibliothèque de documents SharePoint à un formulaire adaptatif, l’envoyer à SharePoint, créer une configuration de bibliothèque de documents SharePoint, utiliser l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif, utiliser la bibliothèque de documents SharePoint du modèle de données AEM Forms, la bibliothèque de documents SharePoint du modèle de données Forms, intégrer le modèle de données Forms à la bibliothèque de documents SharePoint
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 48%
+source-wordcount: '635'
+ht-degree: 46%
 
 ---
-
 
 # Connexion d’un formulaire adaptatif à la bibliothèque de documents Microsoft® SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ Vous pouvez utiliser la configuration de bibliothèque de documents SharePoint c
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié.
-La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+>[!NOTE]
+>
+> Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié. La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Les pièces jointes sont également stockées dans le répertoire `/folder_name/form_name/year/month/date/submission_id/data`. Cependant, si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine.
+> ![image ](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## Articles connexes
 
