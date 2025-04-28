@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 42%
@@ -31,7 +31,8 @@ Vous pouvez créer une règle sur le bouton `Next` pour valider le premier panne
 
 Lorsque vous cliquez sur le bouton **Suivant**, le panneau **Informations personnelles** est validé. Si les informations saisies sont correctes, le focus se déplace vers le panneau **Sécurité du compte**. Dans le cas contraire, un message d’erreur vous invite à renseigner les informations manquantes.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Navigation dans les panneaux à l’aide du bouton
 

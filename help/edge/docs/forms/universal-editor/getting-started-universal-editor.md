@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,7 @@ ht-degree: 99%
 
 AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous permet de créer facilement des formulaires Edge Delivery Services pour capturer et stocker les données. Vous pouvez [créer un projet AEM préconfiguré avec le bloc de formulaires adaptatifs](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouter le bloc de formulaires adaptatifs à un projet AEM existant](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-<!-->
-![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
+![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Ce tutoriel vous guide tout au long de la création, de la prévisualisation et de la publication de votre formulaire avec un projet de site Adobe Experience Manager nouveau ou existant à l’aide de la création WYSIWYG dans l’éditeur universel.
 
