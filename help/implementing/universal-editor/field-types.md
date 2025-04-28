@@ -4,10 +4,10 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -703,12 +703,7 @@ Un type de composant de référence permet de faire référence à un autre obje
 
 #### Texte enrichi {#rich-text}
 
-Le texte enrichi permet une entrée de texte enrichi multiligne. Il propose d’autres types de validation.
-
-| Type de validation | Type de valeur | Description | Requis |
-|---|---|---|---|
-| `maxSize` | `number` | Nombre maximal de caractères autorisés | Non |
-| `customErrorMsg` | `string` | Message qui s’affichera en cas de dépassement de la `maxSize` | Non |
+Le texte enrichi permet une entrée de texte enrichi multiligne.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ Le texte enrichi permet une entrée de texte enrichi multiligne. Il propose d’
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Exemple 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
