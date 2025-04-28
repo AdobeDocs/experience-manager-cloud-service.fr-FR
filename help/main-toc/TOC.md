@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
 source-wordcount: '6134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -411,7 +411,7 @@ ht-degree: 99%
          + [Utilisation des workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md)
          + [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personnalisation  {#personalization}
+      + Personnalisation {#personalization}
          + [Présentation de la personnalisation](/help/sites-cloud/authoring/personalization/overview.md)
          + [Aperçu des pages à l’aide des données ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Création de contenu ciblé en mode Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -1303,7 +1303,7 @@ ht-degree: 99%
       + Éditeur universel {#universal-editor}
          + [Présentation](/help/implementing/universal-editor/introduction.md)
          + [Cas d’utilisation](/help/implementing/universal-editor/use-cases.md)
-         + [L’éditeur universel et l’éditeur Sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [Éditeur universel et éditeur de sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attributs et types d’élément](/help/implementing/universal-editor/attributes-types.md)
          + [Définition du composant](/help/implementing/universal-editor/component-definition.md)
          + [Définitions de modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)
@@ -1351,7 +1351,7 @@ ht-degree: 99%
       + [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
       + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
       + [Le navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md)
-   + Personnalisation  {#personalization}
+   + Personnalisation {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Configuration de ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Ajout de ContextHub aux pages](/help/implementing/developing/personalization/adding-contexthub.md)
