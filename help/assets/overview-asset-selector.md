@@ -4,9 +4,9 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Vous devez vous assurer que les méthodes de communication suivantes sont dispon
 
 * L’application hôte s’exécute sur HTTPS.
 * Vous ne pouvez pas exécuter l’application sur `localhost`. Si vous souhaitez intégrer le sélecteur de ressources sur votre ordinateur local, vous devez créer un domaine personnalisé, par exemple `[https://<your_campany>.localhost.com:<port_number>]`, et l’ajouter dans la `redirectUrl list`.
-* Vous pouvez configurer et ajouter clientID dans la variable d’environnement AEM Cloud Service avec les `imsClientId` correspondantes.
+* Vous pouvez configurer et ajouter des clientID dans la variable d’environnement Cloud Service AEM avec les `imsClientId` correspondants.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * La liste des portées IMS doit être définie dans la configuration de l’environnement.
