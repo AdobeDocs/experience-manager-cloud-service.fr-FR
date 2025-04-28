@@ -21,7 +21,7 @@ Pour une présentation générale de l’Adobe Experience Manager as a Cloud Se
 * [Présentation d’AEM as a Cloud Service – Nouveautés et différences](/help/overview/what-is-new-and-different.md)
 * la [ Présentation d’Assets as a Cloud Service ](/help/assets/overview.md) pour une présentation d’Assets
 
-Si vous connaissez déjà les versions précédentes d’AEM, reportez-vous à la section suivante pour obtenir une vue d’ensemble des modifications notables apportées à AEM as a Cloud Service :
+Si vous connaissez déjà les versions précédentes d’AEM, reportez-vous à la section suivante pour obtenir une vue d’ensemble des modifications notables apportées à AEM as a Cloud Service :
 
 * [Modifications notables apportées à AEM as a Cloud Service (notes de mise à jour)](/help/release-notes/aem-cloud-changes.md)
 * [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
