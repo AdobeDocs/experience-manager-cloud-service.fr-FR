@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2817'
 ht-degree: 6%
 
 ---
 
 # Créer des fragments de contenu {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->Diverses fonctionnalités de l’éditeur de fragment de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
->
->Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 La création de vos fragments de contenu est axée à la fois sur la diffusion découplée et la création de pages.
 
@@ -76,7 +70,7 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
   >
   >Selon les définitions du modèle sous-jacent, les champs peuvent être soumis à certains types de [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
-![Éditeur de fragment de contenu - Aperçu](assets/cf-authoring-overview.png)
+![Éditeur de fragment de contenu - Vue d’ensemble](assets/cf-authoring-overview.png)
 
 ## Navigation dans la structure du fragment de contenu. {#navigate-structure}
 
@@ -577,7 +571,7 @@ Le panneau **Champs** répertorie tous les champs du fragment de contenu. L’ic
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Espace réservé pour tabulation</b></p><p>Bien que n’étant pas représenté par une icône réelle, un <b>Espace réservé d’onglet</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, soit horizontalement comme illustré, soit dans une liste déroulante (lorsqu’il y en a trop à afficher horizontalement).</p> </td>
+   <td><p><b>Espace réservé pour onglet</b></p><p>Bien que n’étant pas représenté par une icône réelle, un <b>Espace réservé d’onglet</b> est représenté dans le panneau de gauche. <br>Il est également représenté dans le panneau central, soit horizontalement comme illustré, soit dans une liste déroulante (lorsqu’il y en a trop à afficher horizontalement).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

@@ -1,24 +1,18 @@
 ---
-title: Définir des modèles de fragment de contenu
+title: Définition de modèles de fragment de contenu
 description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM, ce qui vous permet de créer du contenu structuré à utiliser dans une diffusion découplée ou dans la création de pages.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 40%
+source-wordcount: '2230'
+ht-degree: 43%
 
 ---
 
-# Définir des modèles de fragment de contenu {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->Diverses fonctionnalités des modèles de fragment de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces .
->
->Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+# Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés pour la création de pages ou comme base pour votre contenu découplé.
 
@@ -137,7 +131,7 @@ Une sélection de types de données est disponible pour la définition de votre 
       * Modifier directement le fragment référencé.
       * Créer un fragment de contenu basé sur le modèle approprié
       * Création de nouvelles instances du champ
-   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée sous la forme d’un identifiant universel unique (UUID) qui référence la ressource
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée en tant qu’identifiant universel unique (UUID) qui référence la ressource.
       * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder au fragment requis
 
 * **Référence de contenu**
@@ -149,7 +143,7 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
    * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
-   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée sous la forme d’un identifiant universel unique (UUID) qui référence la ressource
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée en tant qu’identifiant universel unique (UUID) qui référence la ressource.
       * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder à la ressource requise
 
 * **Objet JSON.**

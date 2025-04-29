@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 36%
+source-wordcount: '2260'
+ht-degree: 37%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 36%
 Dans la console Fragments de contenu , vous pouvez gérer vos modèles de fragment de contenu, puis [ouvrir l’éditeur](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) pour définir la structure.
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés comme base pour votre contenu découplé ou pour la création de pages.
-
->[!IMPORTANT]
->
->Différentes fonctionnalités de la console Fragments de contenu sont disponibles via le programme des utilisateurs et utilisatrices précoces.
->
->Pour consulter le statut et savoir comment appliquer la version si vous êtes intéressé, consultez les [Notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -255,7 +249,7 @@ Si vous saisissez d’abord le **Titre**, le **Nom** est généré à partir de 
 
    ![Titre et description](assets/cf-managing-content-fragment-models-create.png)
 
-1. Utilisez **Créer** pour enregistrer le modèle vide ou **Créer et ouvrir**.
+1. Utilisez **Créer** pour enregistrer le modèle vide, ou **Créer et ouvrir**.
 
 ### Activation d’un modèle de fragment de contenu {#enabling-a-content-fragment-model}
 
