@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 43%
@@ -98,8 +98,8 @@ Vous pouvez désormais sélectionner et comparer rapidement n’importe quelle v
 * **Éditeur de règles** :
    * [Condition binaire avec événement de clic dans la clause « When »](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor) : l’éditeur de règles permet désormais de combiner un événement de clic de bouton (_Est cliqué_) avec d’autres conditions dans la clause « When ». Cela permet un contrôle plus précis de l’exécution des règles en fonction de l’interaction utilisateur et d’autres facteurs. Remarque : lorsque vous utilisez plusieurs conditions, l’événement de clic doit être la première condition répertoriée.
    * [Conditions de validation des champs et des panneaux](/help/forms/rule-editor-core-components-usecases.md) : l’éditeur de règles inclut désormais les conditions _IsValid_ et _IsNotValid_. Ils vous permettent de vérifier l’état de validation de champs spécifiques ou de panneaux entiers (y compris des dispositions telles que les onglets horizontaux, verticaux, accordéons et assistants), ce qui améliore la navigation dans les formulaires et l’expérience utilisateur en fonction des résultats de validation.
-* **Amélioration de la gestion de l’étendue pour les listes SharePoint** : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
-* **Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint** : Forms créé à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peut désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement . Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
+* [Amélioration de la gestion de l’étendue pour les listes SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
+* [Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields) : Forms créé à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peut désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement . Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
 
 ### Fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
 

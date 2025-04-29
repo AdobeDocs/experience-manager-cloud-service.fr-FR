@@ -3,13 +3,11 @@ title: Comment créer des formulaires autonomes basés sur des modèles de compo
 description: Cet article explique comment créer un Forms adaptatif en sélectionnant un modèle basé sur les composants principaux ou un modèle basé sur Edge Delivery Services dans l’assistant de création de formulaire. Vous pouvez également publier les formulaires dans AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 1e5711a1b671663653fe22ee08bc01f584655d76
+source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 15%
+source-wordcount: '1644'
+ht-degree: 29%
 
 ---
 
@@ -43,222 +41,222 @@ Avant de commencer à créer des formulaires dans AEM et à les publier via Edge
    * Si vous disposez d’un référentiel, ajoutez le bloc de Forms adaptatif à votre référentiel existant. Vous trouverez des instructions détaillées dans la [Prise en main de Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Établir une connexion entre votre environnement AEM et le référentiel GitHub. [Comment faire ? ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
-<!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
+Diagramme de flux de décision destiné à guider la configuration et la publication de Forms adaptatif :
 
-![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
+![Workflow du référentiel Github](/help/forms/assets/repo-workflow.png){width=auto}
 
-## Authoring forms in AEM and publishing them to Edge Delivery Services
+## Créer des formulaires dans AEM et les publier dans Edge Delivery Services
 
-Follow these steps to author forms in AEM and publish them on Edge Delivery Services:
+Pour créer des formulaires dans AEM et les publier sur Edge Delivery Services, procédez comme suit :
 
-[1. Choose a template and create the form](#choose-a-template-and-create-the-form)
+[1. Choisissez un modèle et créez le formulaire](#choose-a-template-and-create-the-form)
 
-[2. Author the form](#author-the-form)
+[2. Créer le formulaire](#author-the-form)
 
-[3. Publish a form](#publish-a-form)
+[3. Publication d’un formulaire](#publish-a-form)
 
-### Choose a template and create the form 
+### Choisir un modèle et créer le formulaire
 
-You can create forms on an AEM instance for publishing to Edge Delivery Services using:
+Vous pouvez créer des formulaires sur une instance AEM pour les publier dans Edge Delivery Services à l’aide des méthodes suivantes :
 
 >[!BEGINTABS]
 
->[!TAB Edge Delivery Services-based template]
+>[!TAB modèle basé sur Edge Delivery Services]
 
-Perform the following steps to choose the template and create the form:
+Pour choisir le modèle et créer le formulaire, procédez comme suit :
 
-1. Login in to your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
-1. In the **Source** tab, select an **Edge Delivery Services-based template**:
+1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant.
+1. Dans l’onglet **Source**, sélectionnez un modèle basé sur **Edge Delivery Services** :
 
-      ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
+   ![Créer des formulaires EDS](/help/edge/assets/create-eds-forms.png)
 
-      When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
-1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
-1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
-1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears:
-   
-    1. Specify the **Name** and **Title**. 
-    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
-    `https://github.com/wkndforms/edsforms`
+   Lorsque vous sélectionnez un modèle basé sur **Edge Delivery Services**, le bouton **[!UICONTROL Créer]** est activé.
+1. (Facultatif) Dans les onglets **[!UICONTROL Source de données]** ou **[!UICONTROL Envoi]**, vous pouvez sélectionner une source de données ou une action d’envoi.
+1. (Facultatif) Dans l’onglet **[!UICONTROL Diffusion]**, vous pouvez spécifier une date de publication ou d’annulation de publication pour un formulaire.
+1. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche :
 
-    ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
+   1. Spécifiez le **Nom** et le **Titre**.
+   1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
+      `https://github.com/wkndforms/edsforms`
 
-    When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
+   ![Assistant Créer un formulaire](/help/edge/assets/create-form-wizard.png)
 
-    ![author the form](/help/edge/assets/author-form.png)
-1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Universal Editor](#author-the-form).
+   Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en vue Création.
 
->[!TAB Core Component-based template]
+   ![créer le formulaire](/help/edge/assets/author-form.png)
+1. Cliquez sur **[!UICONTROL Créer]** pour créer le formulaire. Vous pouvez désormais [créer le formulaire à l’aide de l’éditeur universel](#author-the-form).
 
-Perform the following steps to choose the template and create the form:
+>[!TAB  Modèle basé sur les composants principaux ]
 
-1. Login in to your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
-1. In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
-          
-  ![Core Component based template](/help/forms/assets/core-component-based-template.png)
+Pour choisir le modèle et créer le formulaire, procédez comme suit :
 
-1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
-1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
-1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
-     1. Specify the **Name** and **Title**.
-     2. Specify the location in the **Path** field where the Adaptive Form is to be saved.
-          
-      ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
+1. Connectez-vous à votre instance d’auteur AEM Forms as a Cloud Service.
+1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant.
+1. Dans l’onglet **Source**, sélectionnez un modèle **basé sur les composants principaux** et un **thème**, le bouton **[!UICONTROL Créer]** est activé. :
 
-      When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
+![ Modèle basé sur les composants principaux ](/help/forms/assets/core-component-based-template.png)
 
-      ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+1. (Facultatif) Dans les onglets **[!UICONTROL Source de données]** ou **[!UICONTROL Envoi]**, vous pouvez sélectionner une source de données ou une action d’envoi.
+1. (Facultatif) Dans l’onglet **[!UICONTROL Diffusion]**, vous pouvez spécifier une date de publication ou d’annulation de publication pour un formulaire.
+1. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche pour :
+   1. Spécifiez le **Nom** et le **Titre**.
+   2. Indiquez l’emplacement dans le champ **Chemin** où le formulaire adaptatif doit être enregistré.
 
-1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Adaptive Form Editor](#author-the-form).
+   ![Assistant Créer un formulaire](/help/forms/assets/create-cc-form.png)
+
+   Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur de formulaires adaptatifs à des fins de création.
+
+   ![ Éditeur de formulaire adaptatif ](/help/forms/assets/af-editor-form.png)
+
+1. Cliquez sur **[!UICONTROL Créer]** pour créer le formulaire. Vous pouvez désormais [créer le formulaire à l’aide de l’éditeur de formulaire adaptatif](#author-the-form).
 
 >[!ENDTABS]
 
-### Author the form
+### Créer le formulaire
 
-The forms created using the Edge Delivery Services-based template open in the [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) for authoring. However, the forms created using the Core Component-based template open in the Adaptive Form Editor for authoring.
+Les formulaires créés à l’aide du modèle basé sur Edge Delivery Services s’ouvrent dans l’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) en vue de leur création. Toutefois, les formulaires créés à l’aide du modèle basé sur les composants principaux s’ouvrent dans l’éditeur de formulaires adaptatifs à des fins de création.
 
-Perform the following steps to author forms using the Universal Editor for Edge Delivery Services-based template or using Adaptive Form Editor for  Core Component based template:
+Effectuez les étapes suivantes pour créer des formulaires à l’aide de l’éditeur universel pour le modèle basé sur Edge Delivery Services ou à l’aide de l’éditeur de formulaire adaptatif pour le modèle basé sur les composants principaux :
 
 >[!BEGINTABS]
 
->[!TAB Edge Delivery Services-based template]
-  
+>[!TAB modèle basé sur Edge Delivery Services]
 
- 1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-    ![content tree](/help/edge/assets/content-tree.png)
+1. Ouvrez l’explorateur de contenu et accédez au composant **[!UICONTROL Formulaire adaptatif]** dans l’**arborescence de contenu**.
 
- 1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
-    ![add component](/help/edge/assets/add-component.png)
+   ![arborescence de contenu](/help/edge/assets/content-tree.png)
 
-     The screenshot below displays the `Registration Form` authored in the Universal Editor:
+1. Cliquez sur l’icône **[!UICONTROL Ajouter]** et ajoutez les composants de votre choix dans la liste **Composants de formulaire adaptatif**.
+   ![ajouter un composant](/help/edge/assets/add-component.png)
 
-     ![contact us form](/help/edge/assets/contact-us.png)
+   La capture d’écran ci-dessous affiche le `Registration Form` créé dans l’éditeur universel :
 
-  >[!NOTE]
-  >
-  > For detailed instructions on authoring an Adaptive Form using the Universal Editor, [click here](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+   ![Formulaire de contact](/help/edge/assets/contact-us.png)
 
-  Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
+>[!NOTE]
+>
+> Pour obtenir des instructions détaillées sur la création d’un formulaire adaptatif à l’aide de l’éditeur universel, [cliquez ici](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
->[!TAB Core Component-based template]
+Vous pouvez maintenant [configurer et personnaliser des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-  1. Click **[!UICONTROL Insert component]** in the **Drag components here** section.
+>[!TAB  Modèle basé sur les composants principaux ]
 
-     ![Drag components here](/help/forms/assets/drag-components-af-editor.png)
+1. Cliquez sur **[!UICONTROL Insérer le composant]** dans la section **Faire glisser les composants ici**.
 
-  1. Add the desired components from the **Adaptive Form Components** list. 
+   ![Faites glisser les composants ici](/help/forms/assets/drag-components-af-editor.png)
 
-     ![Add components](/help/forms/assets/add-component-af.png)
+1. Ajoutez les composants de votre choix dans la liste **Composants de formulaire adaptatif**.
 
-   The screenshot below displays the `Enrollment Form` authored in the Adaptive Form Editor:
+   ![Ajouter des composants](/help/forms/assets/add-component-af.png)
 
-   ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+La capture d’écran ci-dessous affiche le `Enrollment Form` créé dans l’éditeur de formulaire adaptatif :
 
-  >[!NOTE]
-  >
-  > For detailed guidance on creating an Adaptive Form based on the Core Component template, [click here](/help/forms/creating-adaptive-form-core-components.md).
+![ Éditeur de formulaire adaptatif ](/help/forms/assets/af-editor-form.png)
 
-  Now you can [configure the submit actions for forms](/help/forms/configure-submit-actions-core-components.md).
+>[!NOTE]
+>
+> Pour obtenir des conseils détaillés sur la création d’un formulaire adaptatif basé sur le modèle de composant principal, [cliquez ici](/help/forms/creating-adaptive-form-core-components.md).
+
+Vous pouvez maintenant [configurer les actions d’envoi de formulaires](/help/forms/configure-submit-actions-core-components.md).
 
 >[!ENDTABS]
 
-### Publish the Form
+### Publier le formulaire
 
-To publish an Adaptive Form on Edge Delivery Services, you need to [create an Edge Delivery Services Configuration on an AEM](#create-an-edge-delivery-services-configuration) instance. 
+Pour publier un formulaire adaptatif sur Edge Delivery Services, vous devez [créer une configuration Edge Delivery Services sur une instance AEM](#create-an-edge-delivery-services-configuration).
 
-#### Create an Edge Delivery Services Configuration
+#### Création d’une configuration Edge Delivery Services
 
-Perform the following steps to create the Edge Delivery Services Configuration:
+Pour créer la configuration Edge Delivery Services, procédez comme suit :
 
 >[!BEGINTABS]
->[!TAB For forms created using the Edge Delivery Services-based template]
+>[!TAB Pour les formulaires créés à l’aide du modèle basé sur Edge Delivery Services ]
 
 
-  The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
+La configuration Edge Delivery Services des formulaires basés sur le modèle Edge Delivery Services est créée automatiquement dans le conteneur de configurations du formulaire.
 
-  ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
+![Configuration Edge Delivery Services](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB For forms created using the Core Component-based template]
+>[!TAB Pour les formulaires créés à l’aide du modèle basé sur les composants principaux]
 
-  1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de Edge Delivery Services]** sur votre instance de création AEM Forms as a Cloud Service.
 
-     ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
+   ![Sélectionner la configuration Edge Delivery Services](/help/edge/assets/select-eds-conf.png)
 
-  1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
+1. Sélectionnez le dossier correspondant au nom du formulaire. Par exemple, si votre formulaire est appelé `enrollment-form`, choisissez le dossier `forms/enrollment-form` et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Configuration]** :
 
-     ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
+   ![Configuration Edge Delivery Services](/help/forms/assets/create-eds-conf.png)
 
-  1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
-     
-     ![Automatically created configuration](/help/forms/assets/eds-conf.png)
+1. Cliquez sur la configuration **[!UICONTROL Edge Delivery Services]** puis sur **[!UICONTROL Propriétés]** pour afficher les propriétés :
 
-     The Edge Delivery Services Configuration appears.
+   ![Configuration créée automatiquement](/help/forms/assets/eds-conf.png)
 
-  1. Specify the following in the Edge Delivery Services Configuration:
+   La configuration de Edge Delivery Services s’affiche.
 
-     * **Organization**: Specify your GitHub organization name.
+1. Spécifiez les éléments suivants dans la Configuration Edge Delivery Services :
 
-     * **Site Name**: Specify your GitHub repository name.
-     * **Branch**: Specify the branch name. Leave the textbox empty if using the main branch.
-     * **(Optional) Edge Host**: Leave the Edge Host option as it is. The form is published to both preview (.page) and live (.live) environments.
-     * **(Optional) Site Authentication Token**: Use the Site Authentication Token to securely authenticate requests between your AEM instance and Edge Delivery Services.
+   * **Organisation** : indiquez le nom de votre organisation GitHub.
 
-  1. Click **[!UICONTROL Save and Close]**. The configuration is created.
+   * **Nom du site** : spécifiez le nom de votre référentiel GitHub.
+   * **Branche** : indiquez le nom de la branche. Laissez la zone de texte vide si vous utilisez la branche principale.
+   * **(Facultatif) Hôte Edge** : laissez l’option Hôte Edge telle quelle. Le formulaire est publié dans les environnements de prévisualisation (.page) et d’activation (.live).
+   * **(Facultatif) Jeton d’authentification du site** : utilisez le jeton d’authentification du site pour authentifier en toute sécurité les requêtes entre votre instance AEM et Edge Delivery Services.
+
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La configuration est créée.
 
 >[!ENDTABS]
 
-#### Access the form on Edge Delivery Services
+#### Accès au formulaire sous Edge Delivery Services
 
-To access the form on Edge Delivery Services, it is mandatory to publish the form. Perform the following steps to publish the form:
+Pour accéder au formulaire sous Edge Delivery Services, il est obligatoire de le publier. Effectuez les étapes suivantes pour publier le formulaire :
 
 >[!BEGINTABS]
->[!TAB On Universal Editor]
+>[!TAB Dans l’éditeur universel]
 
-   1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
+1. Publiez le formulaire en cliquant sur le bouton **[!UICONTROL Publier]** dans le coin supérieur droit de l’éditeur universel.
 
-  ![publish form](/help/edge/assets/publish-form.png)
+![publier le formulaire](/help/edge/assets/publish-form.png)
 
-   >[!NOTE]
-   >
-   > Refer to the [Publish and Deploy](/help/edge/docs/forms/universal-editor/publish-forms.md) article to learn how to publish a form to Edge Delivery Services.
+>[!NOTE]
+>
+> Reportez-vous à l’article [Publier et déployer](/help/edge/docs/forms/universal-editor/publish-forms.md) pour savoir comment publier un formulaire dans Edge Delivery Services.
 
->[!TAB On Adaptive Form Editor]
+>[!TAB Dans l’éditeur de formulaire adaptatif]
 
-  1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish.
+1. Dans la console Experience Manager Forms, accédez au dossier parent et sélectionnez un formulaire que vous souhaitez publier.
 
-  1. Click **[!UICONTROL Publish]**  option from the toolbar, take a look at all the reference assets that would be published with form.
+1. Cliquez sur l’option **[!UICONTROL Publier]** dans la barre d’outils, consultez toutes les ressources de référence qui seraient publiées avec le formulaire.
 
-  ![Publish Form on Adaptive Form Editor](/help/forms/assets/publish-af-editor.png)
+![Publication d’un formulaire dans l’éditeur de formulaire adaptatif](/help/forms/assets/publish-af-editor.png)
 
-  >[!NOTE]
-  >
-  > Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
+>[!NOTE]
+>
+> Reportez-vous à l’article [Gérer la publication dans Experience Manager Forms](/help/forms/manage-publication.md) pour savoir comment publier un formulaire dans l’éditeur de formulaires adaptatifs.
 
 >[!ENDTABS]
 
-* **Staged Version (for testing)**: The staged version displays the unpublished, working version of the form for testing purposes. Use the following URL format to preview the form before it goes live:
+* **Version intermédiaire (pour les tests)** : la version intermédiaire affiche la version de travail dépubliée du formulaire à des fins de test. Utilisez le format d’URL suivant pour prévisualiser le formulaire avant sa mise en ligne :
 
-    `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
 
-    
 
-* **Live Version (published form)**:   The live version displays the most recently published version of the form, accessible to end users. Use the following URL format to access the published, live version of the form:
 
-    `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+* **Version en direct (formulaire publié)** : la version active affiche la dernière version publiée du formulaire, accessible aux utilisateurs finaux. Utilisez le format d’URL suivant pour accéder à la version active publiée du formulaire :
 
-     The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context.
+  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
 
-The below screenshots compares staged and live form URLs and visual previews for forms created using Edge Delivery Services-based and Core Component-based templates:
+  La structure de l’URL reste la même pour les versions intermédiaires et actives. Cependant, le contenu affiché diffère en fonction du contexte.
+
+Les captures d’écran ci-dessous comparent les URL de formulaires intermédiaires et dynamiques et les aperçus visuels pour les formulaires créés à l’aide de modèles basés sur Edge Delivery Services et sur les composants principaux :
 
 >[!BEGINTABS]
->[!TAB Accessing forms created using Edge Delivery Services-based Template]
+>[!TAB Accès aux formulaires créés à l’aide d’un modèle Edge Delivery Services]
 
-  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
     <tr>
       <th style="width: 20%;"><strong>Version</strong></th>
@@ -267,19 +265,19 @@ The below screenshots compares staged and live form URLs and visual previews for
     </thead>
     <tbody>
     <tr>
-      <td>Staged Version</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Staged version of registration form" style="width: 100%; height: auto;" /></td>
+      <td>Version intermédiaire</td>
+      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Version intermédiaire du formulaire d’enregistrement" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>Live Version</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Live version of registration form" style="width: 100%; height: auto;" /></td>
+      <td>Version en direct</td>
+      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Version active du formulaire d’enregistrement" style="width: 100%; height: auto;" /></td>
     </tr>
     </tbody>
   </table>
 
->[!TAB Accessing forms created using Core Component-based Template]
+>[!TAB Accès aux formulaires créés à l’aide d’un modèle basé sur les composants principaux]
 
-  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
       <th style="width: 20%;"><strong>Version</strong></th>
@@ -288,31 +286,31 @@ The below screenshots compares staged and live form URLs and visual previews for
   </thead>
   <tbody>
     <tr>
-      <td>Staged Version</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="Staged version of enrollment form" style="width: 100%; height: auto;" /></td>
+      <td>Version intermédiaire</td>
+      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="Version intermédiaire du formulaire d’inscription" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>Live Version</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Live version of enrollment form" style="width: 100%; height: auto;" /></td>
+      <td>Version en direct</td>
+      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Version active du formulaire d’inscription" style="width: 100%; height: auto;" /></td>
     </tr>
   </tbody>
   </table>
 
 >[!ENDTABS]
 
-## Troubleshooting 
+## Résolution des problèmes
 
-Having trouble loading your form? Here are some common issues and how to fix them:
+Vous rencontrez des problèmes pour charger votre formulaire ? Voici quelques problèmes courants et comment les résoudre :
 
-* **Form URL**: Double-check that your form's URL doesn't include the ".html" extension at the end. Edge Deliver Service does not require this extension.
+* **URL du formulaire** : vérifiez à nouveau que l’URL de votre formulaire n’inclut pas l’extension « .html » à la fin. Edge Delivery Services ne nécessite pas cette extension.
 
-* **AEM Author UR**L: Make sure the AEM Author URL listed in your `fstab.yaml` file is formatted correctly. It should include the following details:
+* **URL de création AEM** : vérifiez que l’URL de création AEM répertoriée dans votre fichier `fstab.yaml` est correctement formatée. Elle doit inclure les détails suivants :
 
-    * The correct GitHub owner
-    * The correct repository name
-    * The specific branch that you're using for Edge Delivery Services
+   * Propriétaire GitHub
+   * Nom de référentiel
+   * Branche spécifique utilisée pour Edge Delivery Services
 
-## Start creating forms
+## Commencer à créer des formulaires
 
 {{universal-editor-see-also}}
 
