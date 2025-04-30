@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 27%
 
 ---
@@ -22,7 +22,7 @@ Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud M
 
 ## Configuration d’un référentiel externe
 
-La configuration d’un référentiel externe dans Cloud Manager se compose de trois étapes :
+La configuration d’un référentiel externe dans Cloud Manager comprend les étapes suivantes :
 
 1. [Ajoutez un référentiel externe](#add-external-repo) à un programme sélectionné.
 1. Fournissez un jeton d’accès au référentiel externe.
