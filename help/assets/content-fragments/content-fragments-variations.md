@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 70%
+source-wordcount: '2530'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,11 @@ Les [variations](/help/assets/content-fragments/content-fragments.md#constituent
 >
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
->Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**. Voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir de la console **Fragments de contenu**).
+>Il existe deux éditeurs pour créer des fragments de contenu : le nouvel éditeur et l’éditeur d’origine. Le nouvel éditeur est la valeur par défaut. Bien que les fonctionnalités de base soient les mêmes, il existe quelques différences.
+>
+>Cette section couvre l’éditeur d’origine. Il est [ouvert via le nouvel éditeur](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Consultez la documentation de Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour obtenir des détails complets sur le nouvel éditeur.
 
 Dans l’onglet **Variations**, vous pouvez :
 
@@ -47,7 +51,7 @@ effectuer diverses autres actions selon le type de données que vous modifiez, p
 
 ## Création de contenu {#authoring-your-content}
 
-Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** s’ouvre par défaut. Ici, vous pouvez créer le contenu, pour le gabarit ou toute autre variation que vous avez. Le fragment structuré contient des champs de différents types de données qui ont été définis dans le modèle de contenu.
+Lorsque vous ouvrez votre fragment de contenu pour le modifier dans l’éditeur d’origine, l’onglet **Variations** s’ouvre par défaut. Ici, vous pouvez créer le contenu, pour le contenu principal ou toute autre variation que vous avez. Le fragment structuré contient des champs de différents types de données qui ont été définis dans le modèle de contenu.
 
 Par exemple :
 

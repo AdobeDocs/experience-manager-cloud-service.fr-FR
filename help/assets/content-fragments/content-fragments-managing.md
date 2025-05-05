@@ -5,14 +5,14 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 88%
+source-wordcount: '1925'
+ht-degree: 81%
 
 ---
 
-# Gérer des fragments de contenu {#managing-content-fragments}
+# Gestion des fragments de contenu {#managing-content-fragments}
 
 Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM, que ce soit pour la base de votre contenu découplé ou pour la création de pages.
 
@@ -37,11 +37,19 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
->Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
+>Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés en tant que **Assets**.
 >
->Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
+>Ils sont principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Il existe deux éditeurs pour créer des fragments de contenu ; bien que la fonctionnalité de base soit la même, il existe quelques différences. Cette section couvre l’éditeur d’origine, accessible principalement à partir de la console **Assets**. Voir la documentation Sites, [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md), pour plus d’informations sur le nouvel éditeur (principalement accessible à partir de la console **Fragments de contenu**). Les deux éditeurs comportent un bouton bascule dans la barre d’outils supérieure pour fournir un accès rapide à l’autre éditeur.
+>Il existe deux éditeurs pour créer des fragments de contenu : le nouvel éditeur et l’éditeur d’origine. Le nouvel éditeur est la valeur par défaut. Bien que les fonctionnalités de base soient les mêmes, il existe quelques différences.
+>
+>Cette section couvre l’éditeur d’origine.
+>
+>L’éditeur par défaut pour [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md) est le nouvel éditeur, accessible à partir des consoles **Fragments de contenu** et **Assets**. Pour plus d’informations sur le nouvel éditeur, consultez la documentation Sites [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md).
+>
+>Pour utiliser l’[éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md), ouvrez d’abord le nouvel éditeur, puis désactivez le commutateur **Nouvel éditeur**.
+>
+>Les deux éditeurs comportent un bouton bascule dans la barre d’outils supérieure pour fournir un accès rapide à l’autre éditeur.
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
-Pour ouvrir votre fragment à des fins de modification :
+Pour ouvrir le fragment à modifier dans l’éditeur d’origine :
 
 >[!CAUTION]
 >
 >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administration système.
 
-1. Utilisez la console **Ressources** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
-1. Ouvrez le fragment à modifier, en effectuant l’une des opérations suivantes :
+1. Accédez à l’emplacement de votre fragment de contenu.
 
-   * Cliquer/appuyer sur le fragment ou le lien du fragment (cela dépend de l’affichage de la console).
-   * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
+1. Ouvrez le fragment à modifier.
 
-1. L’éditeur de fragment s’ouvre. Apportez les modifications nécessaires :
+1. Le fragment s’ouvre dans le nouvel éditeur. Désactivez le bouton **Nouvel éditeur** (en haut à droite) pour ouvrir l’éditeur d’origine :
 
    ![Éditeur de fragment](assets/cfm-managing-03.png)
 
-1. Après avoir apporté vos modifications, cliquez sur **Enregistrer**, **Enregistrer et fermer** ou **Fermer** selon les besoins.
+1. Apportez les modifications nécessaires.
+
+1. Une fois prêt, utilisez **Enregistrer**, **Enregistrer et fermer** ou **Fermer** selon les besoins.
 
    >[!NOTE]
    >

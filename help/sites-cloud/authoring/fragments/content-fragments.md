@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 85%
+source-wordcount: '1272'
+ht-degree: 84%
 
 ---
 
@@ -24,12 +24,11 @@ Les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service 
 >
 >Les fragments de contenu sont une fonctionnalité **Sites**, mais sont stockés en tant que **Assets**.
 >
->Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Ils sont principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, mais ils peuvent toujours être gérés à partir de la console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Il existe deux éditeurs pour créer des fragments de contenu :
+>L’éditeur par défaut pour [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md) est le nouvel éditeur ; accessible à partir des consoles **Fragments de contenu** et **Assets**.
 >
->* Le nouvel éditeur de [Fragments de contenu - Création](/help/sites-cloud/administering/content-fragments/authoring.md) est principalement accessible à partir de la console **Fragments de contenu**.
->* L’[éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md) est principalement accessible à partir de la console **Assets**.
+>Pour utiliser l’[éditeur d’origine](/help/assets/content-fragments/content-fragments-variations.md), ouvrez d’abord le nouvel éditeur, puis désactivez le commutateur **Nouvel éditeur**.
 
 >[!NOTE]
 >
