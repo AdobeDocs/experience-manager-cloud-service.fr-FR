@@ -27,7 +27,7 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 **Imagerie dynamique :**
 
 * L’activation de l’imagerie dynamique dans Dynamic Media permet d’optimiser automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
-Vous souhaitez en savoir plus ? Accédez à [ Imagerie dynamique ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+Vous souhaitez en savoir plus ? Accédez à [ Imagerie dynamique ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Il améliore les performances de diffusion des images en ajustant dynamiquement ces paramètres.
 * Vous pouvez évaluer l’imagerie dynamique à l’aide de l’outil d’auto-évaluation [Instantané](https://snapshot.scene7.com/).
 
@@ -87,7 +87,7 @@ L’accentuation des images est l’aspect le plus complexe du contrôle des ima
 
 * L’article technique [Bonnes pratiques concernant la qualité d’image et l’accentuation de la netteté avec Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-* Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion, lors de la diffusion, ou les deux. En général, cependant, il est préférable d’accentuer les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la diffusion, sur une URL, vous donne généralement les meilleurs résultats.
 
@@ -111,7 +111,7 @@ Vous pouvez utiliser deux méthodes d’accentuation d’image :
 
       * L’article technique [Bonnes pratiques concernant la qualité d’image et l’accentuation de la netteté avec Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 

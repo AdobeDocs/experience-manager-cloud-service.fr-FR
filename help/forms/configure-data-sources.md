@@ -17,7 +17,7 @@ ht-degree: 81%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 ![Intégration de données](do-not-localize/data-integeration.png)
@@ -39,7 +39,7 @@ L’intégration de données prend en charge l’authentification OAuth2.0, ([Co
 ### Prérequis
 
 Avant de configurer des bases de données relationnelles à l’aide de la Configuration de la console web [!DNL Experience Manager], il est obligatoire d’effectuer les actions suivantes :
-* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
+* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr), car les ports sont désactivés par défaut.
 * [Ajouter des dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr#mysql-driver-dependencies).
 
 
@@ -72,7 +72,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    >[!NOTE]
    >
-   > Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
+   > Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr) pour plus d’informations.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
@@ -318,7 +318,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
 To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

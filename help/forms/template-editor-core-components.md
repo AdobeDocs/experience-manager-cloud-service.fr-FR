@@ -139,7 +139,7 @@ Lors de la modification d’un modèle, vous pouvez définir la mise en page, qu
 
 ![Conteneur de dispositions dans le calque de structure](/help/forms/assets/layout-template-core-component.png)
 
-Pour plus d’informations, reportez-vous à l’article [Comprendre la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) .
+Pour plus d’informations, reportez-vous à l’article [Comprendre la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=fr) .
 
 ## Activation du modèle {#enabling-the-template}
 

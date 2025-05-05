@@ -94,9 +94,9 @@ Utilisez le composant Image v3 pour le recadrage intelligent afin d’améliorer
 Incluez uniquement le fichier JavaScript de la visionneuse principale sur votre page. Évitez de référencer d’autres fichiers JavaScript que la logique d’exécution de la visionneuse peut télécharger. Plus précisément, ne liez pas directement à la bibliothèque de `Utils.js` SDK HTML5 à partir du chemin de contexte `/s7viewers` (connu sous le nom d’inclusion SDK consolidée). La logique de la visionneuse gère l’emplacement des bibliothèques de visionneuse d’exécution `Utils.js` ou similaires, qui peuvent changer entre les versions. Adobe ne conserve pas les anciennes versions des inclusions de visionneuse secondaire sur le serveur. Par conséquent, le fait de les référencer directement peut interrompre la fonctionnalité de la visionneuse dans les futures mises à jour.
 * **Instructions d’incorporation :**
 Utilisez la documentation pour obtenir des instructions d’intégration spécifiques à chaque visionneuse.
-Vous souhaitez en savoir plus ? Accédez à [Visionneuses pour AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Vous souhaitez en savoir plus ? Accédez à [Visionneuses pour AEM Assets](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Tutoriel et exemples SDK :**
-Consultez le [Tutoriel sur la visionneuse SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) et [les exemples d’applications HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API des composants SDK.
+Consultez le [Tutoriel sur la visionneuse SDK](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/c-tutorial) et [les exemples d’applications HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) pour une compréhension approfondie des API des composants SDK.
 
 
 ## Préparation des ressources pour la diffusion
@@ -224,7 +224,7 @@ Si vous souhaitez superposer un logo ou une icône sur une image existante, Dyna
 | **Charger et publier le logo ou l’image de l’icône** | Ensuite, chargez et publiez l’image à superposer sur l’image de base. Cette image doit être un fichier PNG transparent avec le logo ou l’icône à superposer.<br>Voici l’image PNG transparente d’un objet étoile avec des effets de transparence qui va être superposée :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Application de l’URL Dynamic Media** | Créez à présent une URL Dynamic Media qui combine l’image de base et le logo ou l’image d’icône. Vous pouvez utiliser des commandes d’URL pour obtenir cet effet.<br>La structure de l’URL ressemble à ce qui suit :<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>où la ressource<ul><li> `hotspotRetailBaseImage` est l’image de base.</li><li> `starxp` est l’image du logo/de l’icône.</li><li> `layer=1` indique que le logo ou l’icône doit être superposé sur l’image de base.</li><li> `scale=1.25` ajuste la taille du logo/de l’icône.</li><li> `posN=0.33,-.25` détermine la position du logo/de l’icône par rapport à l’image de base.</li><li> `fmt=png` garantit que la sortie est au format PNG.</li></ul> |
 
-Que savoir de plus ? Accédez à [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la commande `src` et d’autres commandes d’URL Dynamic Media.
+Que savoir de plus ? Accédez à [src](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) pour plus d’informations sur la commande `src` et d’autres commandes d’URL Dynamic Media.
 
 
 #### Recouvrement de texte promotionnel
@@ -276,7 +276,7 @@ Dérivé de l&#39;image originale, soulignant la pièce.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop)
 
 N’hésitez pas à explorer ces variations en fonction de vos besoins spécifiques.
-Vous souhaitez en savoir plus sur les commandes disponibles dans une URL ? Accédez à [ Référence des commandes ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Vous souhaitez en savoir plus sur les commandes disponibles dans une URL ? Accédez à [ Référence des commandes ](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Diffusion d’images GIF
 
@@ -320,7 +320,7 @@ Utilisez l’URL fournie pour créer un lien direct vers la vidéo. Créez des l
    * **Incorporer la vidéo :**
 Copiez le code incorporé fourni et collez-le dans l’HTML de votre page web où vous souhaitez que la vidéo apparaisse. Cela permet à la vidéo d’être lue directement sur votre site.
 
-Vous souhaitez en savoir plus ? Accédez à [ Vidéo ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Vous souhaitez en savoir plus ? Accédez à [ Vidéo ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Configurer des vidéos pour une qualité et un engagement optimaux
 

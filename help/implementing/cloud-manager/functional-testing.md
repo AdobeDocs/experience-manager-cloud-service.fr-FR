@@ -58,7 +58,7 @@ Le diagramme suivant fournit une vue détaillée des points de contrôle qualit�
 
 Nous vous recommandons de fournir les tests unitaires pour votre application AEM, qui constituent la base de chaque stratégie de test. Ils sont conçus pour fonctionner rapidement et souvent et donner des retours rapides et précoces. Ils sont étroitement intégrés aux workflows des développeurs, à vos propres CI/CD et aux pipelines de déploiement du service cloud d’AEM.
 
-Ils sont implémentés à l’aide de JUnit et exécutés avec Maven. Consultez le module [core de l’archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) pour obtenir un exemple de test unitaire pour AEM et pour commencer.
+Ils sont implémentés à l’aide de JUnit et exécutés avec Maven. Consultez le module [core de l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) pour obtenir un exemple de test unitaire pour AEM et pour commencer.
 
 ### Qualité du code
 

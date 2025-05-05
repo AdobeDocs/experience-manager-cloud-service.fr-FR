@@ -27,7 +27,7 @@ La date de publication de Cloud Acceleration Manager est le 25 octobre 2021.
 
 ### Nouveautés {#what-is-new-cam}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs de visualiser les rapports historiques BPA dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser les progrès quʼils réalisent sous la forme dʼune représentation graphique facile à utiliser. Consultez la section [Utilisation de lʼoption Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) pour plus d’informations.
+Cloud Acceleration Manager permet désormais aux utilisateurs de visualiser les rapports historiques BPA dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser les progrès quʼils réalisent sous la forme dʼune représentation graphique facile à utiliser. Consultez la section [Utilisation de lʼoption Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#trendline-view-cam) pour plus d’informations.
 
 ### Date de publication {#release-date-october-cam}
 
@@ -35,7 +35,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Consultez les étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Consultez les étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#best-practices-analysis).
 
 
 ## Outil de transfert de contenu {#ctt-release}
@@ -46,7 +46,7 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Nouveautés {#what-is-new-ctt-oct}
 
-* Amélioration de l’outil de mappage des utilisateurs pour une expérience utilisateur simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, consultez la section [Utilisation de l’outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience utilisateur simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, consultez la section [Utilisation de l’outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=fr).
    * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
    * Le mappage des utilisateurs n’échoue plus si le **Jeton d’accès** expire après 24 heures. Le mappage des utilisateurs et des utilisatrices peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.

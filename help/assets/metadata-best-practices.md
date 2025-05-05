@@ -131,7 +131,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -200,4 +200,4 @@ Examinez la chaîne d’approvisionnement du contenu pour trouver les sources de
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.

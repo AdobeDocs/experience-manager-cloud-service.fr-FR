@@ -117,7 +117,7 @@ Pour ajouter la prise en charge de nouveaux paramètres régionaux à un formula
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article de Adobe Experience League &quot;[Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article de Adobe Experience League &quot;[Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git)&quot;.
 
    **Votre projet est prêt !**
 
@@ -394,7 +394,7 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif. Cela simplifie le processus de localisation.
-* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une option **Langue** a été incorporée dans la boîte de dialogue de configuration de [composant Sélecteur de date](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [composant Zone numérique](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Lorsque les composants Zone numérique et Sélecteur de date sont traduits dans un paramètre régional spécifique, des problèmes de mise en forme peuvent se produire. Pour atténuer ce problème, une option **Langue** a été incorporée dans la boîte de dialogue de configuration de [composant Sélecteur de date](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) et [composant Zone numérique](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestion des nouveaux champs :

@@ -16,7 +16,7 @@ ht-degree: 30%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour appliquer un style à un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
@@ -71,7 +71,7 @@ La personnalisation d’un thème fait référence au processus de modification,
 ### Configuration de votre environnement
 
 * [Activez les composants principaux de Forms adaptatif](/help/forms/enable-adaptive-forms-core-components.md) pour votre environnement de développement local et de Cloud Service.
-* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) pour votre environnement de Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
+* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr) pour votre environnement de Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -321,7 +321,7 @@ Pour déployer le thème dans votre environnement de Cloud Service à l’aide d
 
 ##### 5.1 Création d’un référentiel pour le thème{#create-a-new-theme-repo}
 
-Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
+Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
 
 1. Créez un référentiel pour un thème en cliquant sur le **[!UICONTROL Référentiels]** > **[!UICONTROL Ajouter un référentiel]**.
 
@@ -373,7 +373,7 @@ Désormais, envoyez les modifications au référentiel de thèmes de votre Cloud
 
 ##### 5.3 Exécution du pipeline front-end {#run-a-frontend-pipeline}
 
-Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Pour déployer le thème, effectuez les étapes suivantes :
+Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr). Pour déployer le thème, effectuez les étapes suivantes :
 
 1. Connectez-vous à votre référentiel AEM Cloud Manager.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** dans la section **[!UICONTROL Pipelines]**.
@@ -441,7 +441,7 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr)
 
 
 >[!MORELIKETHIS]

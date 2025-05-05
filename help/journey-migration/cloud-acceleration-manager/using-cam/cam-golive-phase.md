@@ -20,7 +20,7 @@ Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet e
 ![Activation](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Pour en savoir plus, consultez la section [Créer et gérer un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project).
+>Pour en savoir plus, consultez la section [Créer et gérer un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=fr#create-project).
 
 
 ## Utilisation de la carte d’activité d’activation {#go-live}

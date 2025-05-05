@@ -23,7 +23,7 @@ Le service de création permet aux utilisateurs internes de créer, gérer et pu
 
 Il est recommandé de définir les autorisations en fonction des groupes dans AEM. Également appelés groupes locaux, ces groupes peuvent être gérés dans l’environnement de création AEM.
 
-Le moyen le plus simple de gérer l’appartenance à un groupe consiste à utiliser les groupes Adobe Identity Management System (IMS) et à attribuer des [Groupes IMS aux groupes AEM locaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
+Le moyen le plus simple de gérer l’appartenance à un groupe consiste à utiliser les groupes Adobe Identity Management System (IMS) et à attribuer des [Groupes IMS aux groupes AEM locaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=fr#managing-permissions-in-aem).
 
 ![Flux d’autorisation Admin Console](assets/admin-console-aem-group-permissions.png)
 

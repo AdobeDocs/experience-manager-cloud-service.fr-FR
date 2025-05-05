@@ -19,7 +19,7 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 
 >[!IMPORTANT]
 >
->Le tableau de bord Licence s’applique uniquement aux programmes AEM as a Cloud Service. [Les programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord de la licence.
+>Le tableau de bord Licence s’applique uniquement aux programmes AEM as a Cloud Service. [Les programmes AMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord de la licence.
 >
 >Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), voir [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 

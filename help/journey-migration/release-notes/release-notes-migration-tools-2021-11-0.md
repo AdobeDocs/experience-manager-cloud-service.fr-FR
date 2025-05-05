@@ -27,6 +27,6 @@ La date de publication de l’outil de transfert de contenu version v1.7.2 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Prise en charge d’une étape facultative de [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) ajoutée à utiliser avec l’outil de transfert de contenu lorsque l’instance AEM source est configurée pour utiliser le File Data Store afin d’accélérer considérablement la phase d’extraction.
+* Prise en charge d’une étape facultative de [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) ajoutée à utiliser avec l’outil de transfert de contenu lorsque l’instance AEM source est configurée pour utiliser le File Data Store afin d’accélérer considérablement la phase d’extraction.
 
 * Ajout de messages descriptifs supplémentaires à la phase d’ingestion dans l’interface utilisateur de l’outil de transfert de contenu pour indiquer le moment où les étapes d’indexation et de récupération Mongo sont en cours.

@@ -52,7 +52,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    >[!NOTE]
    >
-   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Pour maintenir une instance de workflow saine, consultez les rubriques [Purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [Bonnes pratiques en matière de workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 

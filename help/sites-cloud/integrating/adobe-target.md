@@ -32,7 +32,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 * Experience Platform Launch est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Target (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Target s’effectue de façon conjointe (voir les liens ci-dessous).
 
 <!--   
-  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=fr)
 -->
 
 * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
@@ -47,7 +47,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 >[!CAUTION]
 >
->Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support) si vous devez réactiver l’agent de réplication.
+>Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr#support) si vous devez réactiver l’agent de réplication.
 
 >[!NOTE]
 >

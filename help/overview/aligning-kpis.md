@@ -42,4 +42,4 @@ Dans un monde numérique, il est possible de presque tout mesurer. Choisir des K
 
 >[!TIP]
 >
->[**Télécharger le modèle de méthodologie des KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**Télécharger le modèle de méthodologie des KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=fr)

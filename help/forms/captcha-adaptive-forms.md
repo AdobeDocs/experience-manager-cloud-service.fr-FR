@@ -24,7 +24,7 @@ ht-degree: 70%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 | Application | Formulaire adaptatif basé sur les composants de base. <br> Pour un formulaire adaptatif basé sur les composants principaux, [cliquez ici](/help/forms/captcha-adaptive-forms-core-components.md). |
 

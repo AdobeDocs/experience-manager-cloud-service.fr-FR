@@ -90,7 +90,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents en complétant des fichiers de modèle avec des données XML
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat
@@ -99,7 +99,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 * **Document d’enregistrement basé sur Acrobat** : vous pouvez également [utiliser Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) comme modèle de document d’enregistrement en plus du modèle de formulaire basé sur XFA.
 
-* **Connecteur Microsoft® Azure Data Store** : vous pouvez désormais [connecter le modèle de données de formulaire à Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
+* **Connecteur Microsoft® Azure Data Store** : vous pouvez désormais [connecter le modèle de données de formulaire à Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

@@ -93,7 +93,7 @@ Il est possible d’utiliser cette configuration concrète comme plan directeur,
 
 >[!TIP]
 >
->Voir [Utilisation de plusieurs référentiels Git Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) pour en savoir plus sur cette configuration.
+>Voir [Utilisation de plusieurs référentiels Git Source](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) pour en savoir plus sur cette configuration.
 
 ### Considérations relatives à une configuration multi-équipe {#considerations}
 

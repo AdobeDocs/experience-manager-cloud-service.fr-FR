@@ -16,7 +16,7 @@ ht-degree: 55%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 L’intégration de Adobe Experience Manager (AEM) Forms avec Salesforce permet aux entreprises de rationaliser les processus en connectant leurs fonctionnalités de création et de gestion de formulaires à la plateforme Salesforce. La connexion d’un formulaire adaptatif à Salesforce permet un exchange de données transparent entre les deux plateformes. Lorsque les utilisateurs envoient des formulaires, les données sont automatiquement synchronisées avec Salesforce. Elle garantit que toutes les informations sur les clients sont à jour et centralisées dans le système.

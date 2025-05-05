@@ -22,7 +22,7 @@ Outre cette documentation, vous trouverez également une série de tutoriels con
 >
 >Vous pouvez configurer une mise en réseau avancée dans AEM as a Cloud Service via l’interface utilisateur de Cloud Manager ou à l’aide de l’API Cloud Manager (cURL, par exemple).
 >
->Cet article porte sur l’utilisation de la méthode d’interface utilisateur . Si vous préférez automatiser la configuration par le biais de l’API, consultez le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Cet article porte sur l’utilisation de la méthode d’interface utilisateur . Si vous préférez automatiser la configuration par le biais de l’API, consultez le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatisation de la mise en réseau avancée à l’aide de l’API**
 >Pour automatiser la configuration avancée de la mise en réseau (telle que la création de VPN), vous pouvez utiliser l’API Cloud Manager :
@@ -44,7 +44,7 @@ Outre cette documentation, vous trouverez également une série de tutoriels con
 >   }'
 >```
 >
->Consultez le tutoriel complet et d’autres exemples d’API dans le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Consultez le tutoriel complet et d’autres exemples d’API dans le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Vue d’ensemble {#overview}
@@ -59,7 +59,7 @@ Cet article décrit en détail chacune de ces options et les raisons pour lesque
 
 >[!CAUTION]
 >
->Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#home).
+>Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&amp;lang=fr#home).
 >
 >Toute tentative de configuration d’une mise en réseau avancée à l’aide de la technologie héritée peut avoir un impact sur la connectivité du site.
 

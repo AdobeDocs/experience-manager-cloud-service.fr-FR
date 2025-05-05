@@ -40,7 +40,7 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans l’ `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) pour plus d’informations.
+* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, activez-la dans l’ `System Console` de l’environnement d’AEM source. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-ctt}
 

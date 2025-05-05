@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=fr) |
 | AEM as a Cloud Service (composants de base) | [Cliquez ici](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (composants principaux) | Cet article |
 
@@ -58,7 +58,7 @@ La mise en page de l’assistant permet de simplifier un formulaire complexe en 
 
 Disposition de l’assistant
 
-Vous pouvez utiliser le [composant assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [assistant component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
+Vous pouvez utiliser le [composant assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [assistant component](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
 
 >[!TAB Disposition Verticale Des Onglets]
 
@@ -68,7 +68,7 @@ La disposition à onglets verticaux est également appelée onglets dans la disp
 
 Disposition des onglets verticaux
 
-Vous pouvez utiliser le [composant Onglets verticaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) pour ajouter la mise en page Onglets verticaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets verticaux, reportez-vous à l’article [Composant Onglets verticaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) .
+Vous pouvez utiliser le [composant Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) pour ajouter la mise en page Onglets verticaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets verticaux, reportez-vous à l’article [Composant Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) .
 
 
 >[!TAB Disposition à onglets horizontaux]
@@ -80,7 +80,7 @@ La disposition des onglets horizontaux est également appelée Onglets dans la d
 
 Disposition des onglets horizontaux
 
-Vous pouvez utiliser le [composant Onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition Onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [Composant Onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Vous pouvez utiliser le [composant Onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition Onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [Composant Onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Mise en page en accordéon]
@@ -91,7 +91,7 @@ La disposition en accordéon affiche le contenu dans des sections ou des panneau
 
 Disposition en accordéon
 
-Vous pouvez utiliser le [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition d’accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant d’accordéon, reportez-vous à l’article [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+Vous pouvez utiliser le [composant d’accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition d’accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant d’accordéon, reportez-vous à l’article [composant d’accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
 
 >[!ENDTABS]
 

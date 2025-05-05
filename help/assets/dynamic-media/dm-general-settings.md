@@ -89,7 +89,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
   Contrôle la conservation de toute définition de recadrage manuel existante.
 
-  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
+  Voir aussi `preserveCrop` dans [UploadPostJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) et [ReprocessAssetsJob](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), tous deux dans le Guide de référence des visionneuses Dynamic Media.
 
 ## Options de chargement par défaut {#default-upload-options}
 

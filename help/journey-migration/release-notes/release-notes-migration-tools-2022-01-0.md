@@ -23,7 +23,7 @@ La date de publication de l’outil de transfert de contenu version v1.7.18 est
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) lors de l’extraction. Pour des vitesses d’extraction optimales, la pré-copie lors de l’extraction doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière extraction.
+* Bouton bascule ajouté à la phase d’extraction dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver la [pré-copie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) lors de l’extraction. Pour des vitesses d’extraction optimales, la pré-copie lors de l’extraction doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière extraction.
 
 ### Correctifs {#bug-fixes-ctt}
 

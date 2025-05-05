@@ -66,7 +66,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
-* **Connecteur Microsoft® Azure Data Store** : vous pouvez désormais [connecter le modèle de données de formulaire à Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
+* **Connecteur Microsoft® Azure Data Store** : vous pouvez désormais [connecter le modèle de données de formulaire à Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=fr). Il vous permet de récupérer et de stocker des données de formulaire adaptatif dans Microsoft® Azure Storage as a BLOB.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Forms] {#prerelease-features-forms}
 

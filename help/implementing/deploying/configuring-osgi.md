@@ -48,7 +48,7 @@ selon le format de configuration OSGi `cfg.json`.
 
 >[!NOTE]
 >
->Les configurations OSGi ne sont pas stockées sous /apps comme les instances AEM standard dans le cloud, elles sont stockées dans un emplacement externe. Archivez Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) pour afficher les configurations OSGi.
+>Les configurations OSGi ne sont pas stockées sous /apps comme les instances AEM standard dans le cloud, elles sont stockées dans un emplacement externe. Archivez Cloud Manager [Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) pour afficher les configurations OSGi.
 
 ## Résolution du mode d’exécution {#runmode-resolution}
 

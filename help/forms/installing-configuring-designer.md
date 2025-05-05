@@ -17,7 +17,7 @@ ht-degree: 68%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Cet article |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=fr) |
 
 Designer est un outil de conception de formulaires graphiques de type pointer-cliquer qui simplifie la création de modèles de formulaires XDP et PDF. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Un formulaire XDP et PDF servent de modèle de document d’enregistrement dans un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
 

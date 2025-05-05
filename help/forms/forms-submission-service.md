@@ -37,7 +37,7 @@ Vous trouverez ci-dessous les conditions préalables requises pour utiliser le s
 
 ## Configuration du service d’envoi Forms
 
-Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
+Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
 
 Vous pouvez [configurer manuellement le service de soumission Forms](#configuring-the-forms-submission-service-manually) ou [configurer le service de soumission Forms à l’aide de l’API](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +47,7 @@ Vous pouvez [configurer manuellement le service de soumission Forms](#configurin
 
 #### 1. Créer un formulaire à l’aide d’une définition de formulaire
 
-Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La capture d’écran ci-dessous affiche la définition du formulaire utilisée pour créer le formulaire :
 
@@ -55,7 +55,7 @@ La capture d’écran ci-dessous affiche la définition du formulaire utilisée 
 
 #### 2. Activez la feuille de calcul pour accepter les données.
 
-Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Feuille entrante](/help/forms/assets/form-submission-incoming-sheet.png)
 

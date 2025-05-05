@@ -25,7 +25,7 @@ La section suivante décrit comment créer des canaux dans le fournisseur de con
 
 >[!NOTE]
 >**Prérequis**
->Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
+>Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=fr) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
 
 Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 
@@ -42,7 +42,7 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
    ![L’icône de la page Aperçu du Cloud Manager s’affiche à l’extrémité gauche d’une barre d’outils.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Si vous n’avez créé aucun programme, reportez-vous à la section [Première connexion à Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). La rubrique vous guide tout au long de l’ajout d’un programme pour Screens as a Cloud Service, dans Cloud Manager.
+   >Si vous n’avez créé aucun programme, reportez-vous à la section [Première connexion à Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=fr). La rubrique vous guide tout au long de l’ajout d’un programme pour Screens as a Cloud Service, dans Cloud Manager.
 
 1. Sélectionnez le lien à partir de la vignette **Environnements** pour pouvoir accéder au fournisseur de contenu Screens.
 
@@ -58,4 +58,4 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, poursuivez votre parcours Screens as a Cloud Service en consultant le document [Création et gestion d’un projet dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).
+Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, poursuivez votre parcours Screens as a Cloud Service en consultant le document [Création et gestion d’un projet dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=fr).

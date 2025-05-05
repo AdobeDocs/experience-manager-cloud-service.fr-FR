@@ -20,7 +20,7 @@ ht-degree: 79%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=fr) |
 | Composants principaux | [Cliquez ici](supporting-new-language-localization-core-components.md) |
 | Composants de base | Cet article |
 
@@ -56,7 +56,7 @@ Pour ajouter la prise en charge d’un nouveau paramètre régional lors de l’
 #### 1. Cloner le référentiel {#clone-the-repository}
 
 1. Sur la ligne de commande, accédez à l’emplacement où vous souhaitez cloner le référentiel Forms Cloud Service.
-1. Exécutez la commande [récupérée à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Exécutez la commande [récupérée à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git). Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilisez le nom d’utilisateur et le mot de passe Git pour cloner le référentiel.
 1. Ouvrez le dossier de référentiel de Forms Cloud Service cloné dans l’éditeur de votre choix.
 

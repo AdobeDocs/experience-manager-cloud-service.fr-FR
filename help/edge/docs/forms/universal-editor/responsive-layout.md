@@ -85,7 +85,7 @@ La disposition de panneau est utile pour organiser les champs associés de mani�
 
 **Comportement réactif :** sur les plus petits écrans, les panneaux s’empilent généralement verticalement, en conservant leurs regroupements distincts tout en s’ajustant à la largeur plus étroite.
 
-Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Disposition de l’Assistant
 
@@ -97,7 +97,7 @@ La disposition « Assistant » permet de simplifier un formulaire complexe en le
 
 **Comportement réactif :** sur les appareils mobiles, l’assistant conserve son approche étape par étape, mais ajuste le contenu de chaque étape pour l’adapter à l’écran plus étroit, en empilant souvent des éléments qui apparaîtraient côte à côte sur des écrans plus grands.
 
-Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Disposition en accordéon
 
@@ -109,7 +109,7 @@ La disposition en accordéon affiche le contenu dans des sections ou des panneau
 
 **Comportement réactif :** les accordéons fonctionnent particulièrement bien sur les appareils mobiles, car ils conservent naturellement l’espace vertical en n’affichant que la section de contenu développée, ce qui les rend idéaux pour les écrans plus petits.
 
-Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 ### Comment choisir la bonne disposition ?
 

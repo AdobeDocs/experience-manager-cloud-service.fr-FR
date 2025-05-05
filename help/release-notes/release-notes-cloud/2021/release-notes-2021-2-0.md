@@ -161,7 +161,7 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.2 est le 18 f�
 ### Nouveautés des outils de refactorisation du code {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce module comprend plusieurs correctifs pour Repository Modernizer.
-Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) pour en savoir plus sur ce module externe.
+Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
 
 ### Correctifs {#bug-fixes-crt}
 

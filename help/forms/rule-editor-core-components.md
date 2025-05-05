@@ -19,7 +19,7 @@ ht-degree: 62%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (composants principaux) | Cet article |
 | AEM as a Cloud Service (composants de base) | [Cliquez ici](/help/forms/rule-editor.md) |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr) |
 
 Dans un formulaire adaptatif basé sur les composants principaux, la fonction d’éditeur de règles permet aux utilisateurs professionnels et aux développeurs d’écrire des règles pour les objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cette fonctionnalité permet de rationaliser davantage l’expérience de remplissage de formulaire, en assurant à la fois précision et vitesse.
 

@@ -119,7 +119,7 @@ Une carte (ou une ligne dans un tableau) représente chaque programme, fournissa
 * Nom attribué au programme. L’image ci-dessus montre « SecurBank Sample » comme nom du programme.
 * Type de service :
    * **Cloud Experience Manager** — pour les programmes AEM as a Cloud Service
-   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) :
    * Sandbox
    * Production

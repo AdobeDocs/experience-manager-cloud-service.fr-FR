@@ -86,7 +86,7 @@ Ces rendus permettent aux entreprises de fournir des expériences personnalisée
    * [Paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md)
 
   Vous pouvez [changer de vue](/help/assets/assets-view-introduction.md#how-to-access-assets-view) ultérieurement pour prévisualiser les rendus dynamiques dans la vue Assets.
-* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publiez des ressources dans Dynamic Media pour rendre les rendus Dynamic Media disponibles dans la vue Assets. Pour plus d’informations, voir [Publication d’Assets dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Affichage et téléchargement des rendus Dynamic Media {#view-download-dm-renditions}

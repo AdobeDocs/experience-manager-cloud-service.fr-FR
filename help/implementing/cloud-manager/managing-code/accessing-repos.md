@@ -66,4 +66,4 @@ La fonction **Accéder à Repo Info** est également disponible sur la page [**R
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette requête](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support). Le ticket est traité avec une priorité élevée et est généralement révoqué dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette requête](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&amp;support-tab=home#support). Le ticket est traité avec une priorité élevée et est généralement révoqué dans la journée.

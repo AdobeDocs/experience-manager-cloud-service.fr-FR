@@ -191,7 +191,7 @@ Explorons ses composants clés :
 
   >[!NOTE]
   >
-  > Pour obtenir des instructions détaillées sur l’utilisation de l’option Générer des variations pour les formulaires, reportez-vous à l’article [Générer des variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+  > Pour obtenir des instructions détaillées sur l’utilisation de l’option Générer des variations pour les formulaires, reportez-vous à l’article [Générer des variations](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 - **Expérimentation**
 

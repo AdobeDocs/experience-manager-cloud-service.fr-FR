@@ -106,5 +106,5 @@ Les développeurs peuvent accéder aux fonctionnalités décrites ci-dessous :
 
 Pour les programmes de production, la mention « Cloud Manager - Rôle de développeur » dans Adobe Admin Console contrôle l’accès à AEM as a Cloud Service Developer Console. Pour les programmes Sandbox, tout utilisateur disposant d’un profil de produit accordant l’accès à AEM peut utiliser Developer Console. Pour tous les programmes, la mention « Cloud Manager - Rôle de développeur » est requise pour les vidages de statut et l’accès au navigateur de référentiel. Pour afficher les données des services de création et de publication, les utilisateurs doivent également être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM sur les deux services.
 
-Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 

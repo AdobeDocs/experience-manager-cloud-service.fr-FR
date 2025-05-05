@@ -21,7 +21,7 @@ Les scénarios incluent :
 * Une page HTML renommée.
 * Optimisation de l’optimisation pour les moteurs de recherche.
 
-AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) pour implémenter les redirections côté serveur, mais la stratégie décrite dans cet article, redirections sans pipeline, est un bon choix lorsque :
+AEM as a Cloud Service propose [plusieurs approches](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/url-redirection) pour implémenter les redirections côté serveur, mais la stratégie décrite dans cet article, redirections sans pipeline, est un bon choix lorsque :
 
 * Les personnes qui gèrent les redirections sont les utilisateurs professionnels, qui n’ont pas l’accès nécessaire pour valider les modifications de fichier dans le contrôle de code source ou la possibilité d’exécuter un pipeline de configuration de niveau web Cloud Manager.
 * Le nombre de redirections va de quelques dizaines de milliers à quelques dizaines de milliers.
@@ -40,7 +40,7 @@ Le cœur de cette fonctionnalité est la possibilité pour AEM Apache/Dispatcher
 >[!NOTE]
 > L’utilisation de cette fonctionnalité de Redirect Map Manager nécessite ACS Commons version **6.7.0 ou ultérieure** tandis que l’utilisation de Redirect Manager nécessite version **6.10.0 ou ultérieure**.
 
-Pour obtenir un guide de mise en œuvre détaillé, reportez-vous au tutoriel [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
+Pour obtenir un guide de mise en œuvre détaillé, reportez-vous au tutoriel [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## La carte de réécriture {#rewrite-map}
 
@@ -87,5 +87,5 @@ Gardez à l’esprit les points suivants :
 
 ## Tutoriels {#tutorials}
 
-1. [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [Redirections d’URL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [Mise en œuvre des redirections d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [Redirections d’URL](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/url-redirection)

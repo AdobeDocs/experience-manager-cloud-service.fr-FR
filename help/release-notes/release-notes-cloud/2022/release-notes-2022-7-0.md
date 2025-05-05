@@ -118,7 +118,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets pour [restrein
 
 ## Adobe Learning Manager Connectors {#learn-manage}
 
-* Le nouveau Adobe Learning Manager dispose de connecteurs à Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, consultez le [Guide de l’utilisateur de Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
+* Le nouveau Adobe Learning Manager dispose de connecteurs à Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, consultez le [Guide de l’utilisateur de Adobe Learning Manager](https://helpx.adobe.com/fr/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -76,7 +76,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 ### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
-* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) pour en savoir plus sur ce module externe.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
 
 * Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) .
 
@@ -90,7 +90,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
+* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication).
 
 ### Analyseurs de build de SDK {#sdk-build-analyzers}
 

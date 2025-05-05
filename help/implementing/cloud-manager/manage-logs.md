@@ -101,5 +101,5 @@ Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur 
 
 Consultez les ressources supplémentaires suivantes pour en savoir plus sur les fichiers journaux dans AEM as a Cloud Service :
 
-* [Cloud 5 AEM Fichiers journaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Cloud 5 AEM Fichiers journaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=fr)
 * [Débogage d’AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr)

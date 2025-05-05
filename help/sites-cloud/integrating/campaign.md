@@ -31,7 +31,7 @@ La prise en charge de l’intégration à AEM as a Cloud Service dépend de la v
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=fr) | Non pris en charge |
 | [Campaign v8 (console cliente)](https://experienceleague.adobe.com/fr/docs/campaign-v8) | Non pris en charge |
-| Interface utilisateur web de Campaign | Pris en charge. [ En savoir plus ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
+| Interface utilisateur web de Campaign | Pris en charge. [ En savoir plus ](https://experienceleague.adobe.com/fr/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Intégrer à Adobe Campaign Standard {#acs}
 
