@@ -22,16 +22,16 @@ ht-degree: 100%
 
 Découvrez les options de stockage d’App Builder et pourquoi le stockage est important dans une application App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343547/?quality=12&learn=on&captions=fre_fr)
 
 ## Utilisation de la bibliothèque de stockage d’état
 
 Découvrez comment installer la bibliothèque de stockage d’état dans l’application App Builder et l’utiliser pour gérer l’état.
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343553/?quality=12&learn=on&captions=fre_fr)
 
 ## Utilisation de la bibliothèque de stockage de fichiers
 
 Découvrez comment installer la bibliothèque de stockage de fichiers dans l’application App Builder pour enregistrer, récupérer et supprimer des données.
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343560/?quality=12&learn=on&captions=fre_fr)

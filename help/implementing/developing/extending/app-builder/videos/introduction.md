@@ -22,22 +22,22 @@ ht-degree: 100%
 
 Découvrez App Builder, ses fonctionnalités et la valeur ajoutée d’App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342923/?quality=12&learn=on&captions=fre_fr)
 
 ## Points de contact
 
 Découvrez comment les utilisateurs finaux interagissent avec les SPA d’App Builder et où les développeurs peuvent en savoir plus sur le développement d’App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342915/?quality=12&learn=on&captions=fre_fr)
 
 ## Architecture
 
 Découvrez l’architecture d’application d’App Builder, et ses avantages.
 
->[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342908/?quality=12&learn=on&captions=fre_fr)
 
 ## Valeur commerciale et cas d’utilisation
 
 Découvrez les principes de conception d’App Builder et les cas d’utilisation courants.
 
->[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342901/?quality=12&learn=on&captions=fre_fr)

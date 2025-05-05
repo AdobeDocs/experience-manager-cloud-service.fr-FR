@@ -32,7 +32,7 @@ Ne vous inquiétez pas si vous ne connaissez pas tous les termes utilisés sur c
 
 Cette vidéo résume le processus d’intégration décrit dans ce parcours et est conçue comme une présentation des options. Toutes les rubriques de la vidéo sont présentées en détail dans le parcours.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431499/?quality=12&learn=on&captions=fre_fr)
 
 ## Votre contrat {#contract}
 

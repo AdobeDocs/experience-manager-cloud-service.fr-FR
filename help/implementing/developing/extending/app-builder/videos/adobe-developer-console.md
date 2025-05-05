@@ -20,22 +20,22 @@ ht-degree: 100%
 
 Découvrez ce qu’est Adobe Developer Console, comment y accéder et y naviguer.
 
->[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342293/?quality=12&learn=on&captions=fre_fr)
 
 ## Utilisation de projets et de modèles
 
 Découvrez comment créer un projet App Builder à l’aide du modèle App Builder d’Adobe Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342318/?quality=12&learn=on&captions=fre_fr)
 
 ## Informations d’identification du projet
 
 Découvrez comment utiliser les options du menu des informations d’identification d’Adobe Developer Console et du processus d’approbation.
 
->[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342311/?quality=12&learn=on&captions=fre_fr)
 
 ## Informations et utilisation des quotas
 
 Découvrez les informations sur l’application App Builder et l’utilisation des quotas.
 
->[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342285/?quality=12&learn=on&captions=fre_fr)

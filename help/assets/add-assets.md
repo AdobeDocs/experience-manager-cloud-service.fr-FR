@@ -185,7 +185,7 @@ Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes su
 
 Cet outil est fourni uniquement au groupe des administrateurs et administratrices pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341383/?quality=12&learn=on&captions=fre_fr)
 
 L’image suivante illustre les différentes étapes de l’ingestion de ressources dans Experience Manager à partir d’un magasin de données :
 

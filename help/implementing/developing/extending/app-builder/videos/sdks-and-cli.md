@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Découvrez le SDK d’Adobe I/O et son utilisation pour développer des applications App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343412/?quality=12&learn=on&captions=fre_fr)
 
 ## Interface de ligne de commande
 
 Découvrez l’interface de ligne de commande de l’Adobe I/O et comment l’utiliser pour le développement d’App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343407/?quality=12&learn=on&captions=fre_fr)
