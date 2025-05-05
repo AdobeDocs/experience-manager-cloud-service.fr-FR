@@ -17,7 +17,7 @@ ht-degree: 81%
 >id="development_guidelines"
 >title="Conseils de développement sur AEM as a Cloud Service"
 >abstract="Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS."
->additional-url="https://video.tv.adobe.com/v/345902/?captions=fre_fr" text="Démonstration de la structure du package"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=fre_fr" text="Démonstration de la structure du package"
 
 Ce document présente les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 
@@ -37,7 +37,7 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 N’utilisez pas le système de fichiers de l’instance dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
-À titre d’exemple, lorsque l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publish doit s’assurer que toutes les données qui doivent être conservées sont envoyées à un service externe pour un stockage à plus long terme.
+À titre d’exemple, lorsque l’utilisation du système de fichiers n’est pas prise en charge, le niveau Publication doit s’assurer que toutes les données qui doivent être conservées sont envoyées à un service externe pour un stockage à plus long terme.
 
 ## Observation {#observation}
 
@@ -71,7 +71,7 @@ En plus de fournir des délais d’expiration, une gestion appropriée de ces d�
 
 ## Gérer les limites de taux de requête {#rate-limit-handling}
 
-Lorsque le taux de requêtes entrantes vers AEM dépasse les niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques vers AEM peuvent envisager de coder de manière défensive, en réessayant après quelques secondes avec une stratégie d’interruption exponentielle. Avant la mi-août 2023, AEM a répondu à la même condition avec le code d’erreur HTTP 503.
+Lorsque le taux de requêtes entrantes vers AEM dépasse les niveaux sains, AEM répond aux nouvelles requêtes avec le code d’erreur HTTP 429. Les applications qui effectuent des appels programmatiques vers AEM peuvent envisager un codage défensif, en réessayant après quelques secondes avec une stratégie d’interruption exponentielle. Avant la mi-août 2023, AEM répondait à la même condition avec le code d’erreur HTTP 503.
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
 
@@ -111,7 +111,7 @@ Par exemple, la modification d’une définition d’index sur un référentiel 
 
 Pour le développement en local, les entrées de journaux sont écrites dans des fichiers locaux dans le dossier `/crx-quickstart/logs`.
 
-Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Dans les environnements cloud, les développeurs peuvent télécharger les journaux via Cloud Manager ou utiliser un outil de ligne de commande pour en afficher les dernières lignes. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Définition du niveau de journalisation**
 
@@ -179,11 +179,11 @@ Lors du développement local (à l’aide du SDK), les `/apps` et les `/libs` pe
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 >
 
 >[!NOTE]
->Certains clients auront la possibilité de tester une expérience repensée pour AEM Cloud Service Developer Console. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
+>Certains clients auront la possibilité de tester une expérience repensée pour le Developer Console AEM Cloud Service. Voir [cet article](/help/implementing/developing/introduction/aem-developer-console.md) pour plus d’informations.
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
