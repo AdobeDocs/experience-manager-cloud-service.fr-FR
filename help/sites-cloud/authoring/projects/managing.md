@@ -138,7 +138,7 @@ Pour activer/désactiver un projet :
 
    >[!NOTE]
    >
-   Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
+   >Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Sélectionnez **Modifier**.
 1. Remplacez le sélecteur **Actif** par **Inactif** (ou inversement).

@@ -177,7 +177,7 @@ Le tableau suivant donne une vue d’ensemble des principaux termes utilisés av
 
 >[!TIP]
 >
->Pour connaître les noms d’objet](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voir [ Extension de Multi Site Manager .
+>Pour connaître les noms d’objet[&#128279;](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voir  Extension de Multi Site Manager .
 
 ## Live Copies {#live-copies}
 

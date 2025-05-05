@@ -92,7 +92,7 @@ Si vous téléchargez une ressource sous licence, sélectionnez **[!UICONTROL J�
 
 Pour télécharger plusieurs ressources et leurs rendus, procédez comme suit :
 
-1. Sélectionnez les ressources et cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]**. L’écran [!UICONTROL  Télécharger les ressources ] répertorie toutes les ressources sélectionnées.
+1. Sélectionnez les ressources et cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]**. L’écran [!UICONTROL &#x200B; Télécharger les ressources &#x200B;] répertorie toutes les ressources sélectionnées.
 1. Cliquez sur **[!UICONTROL Télécharger]** pour effectuer une sélection parmi les différentes options de téléchargement pour commencer le téléchargement :
 
    * **Télécharger [!UICONTROL les originaux]** : sélectionnez cette option pour télécharger les ressources sélectionnées dans le formulaire d’origine.

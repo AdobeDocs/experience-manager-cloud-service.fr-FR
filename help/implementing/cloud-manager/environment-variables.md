@@ -37,7 +37,7 @@ Les cas d’utilisation types des variables d’environnement incluent les cas s
 
 ## Ajout d’une variable d’environnement {#add-variables}
 
-Si vous souhaitez ajouter plusieurs variables, Adobe vous recommande d’ajouter la première variable, puis d’utiliser ![Ajouter une icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **** dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. Cette méthode permet de les ajouter avec une mise à jour de l’environnement.
+Si vous souhaitez ajouter plusieurs variables, Adobe vous recommande d’ajouter la première variable, puis d’utiliser ![Ajouter une icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **&#x200B;**&#x200B;dans la boîte de dialogue **Configuration de l’environnement** pour ajouter les variables supplémentaires. Cette méthode permet de les ajouter avec une mise à jour de l’environnement.
 
 Pour ajouter, mettre à jour ou supprimer des variables d’environnement, vous devez être membre du rôle [**Deployment Manager**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
@@ -76,7 +76,7 @@ Si vous ajoutez une variable d’environnement pour la première fois, cliquez s
 
 ## Mise à jour d’une variable d’environnement {#update-variables}
 
-Après avoir créé des variables d’environnement, vous pouvez les mettre à jour à l’aide de l’icône ![Ajouter/Mettre à jour - Ajouter un cercle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **** pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
+Après avoir créé des variables d’environnement, vous pouvez les mettre à jour à l’aide de l’icône ![Ajouter/Mettre à jour - Ajouter un cercle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **&#x200B;**&#x200B;pour ouvrir la boîte de dialogue **Configuration de l’environnement**.
 
 Si vous souhaitez mettre à jour plusieurs variables, Adobe vous recommande d’utiliser la boîte de dialogue **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires à la fois avant de cliquer sur **Enregistrer**. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
 

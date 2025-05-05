@@ -476,7 +476,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 ```
 
 * L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-* L’élément de légende (<legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+* L’élément de légende (&lt;legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
 * Dans le fieldset, plusieurs éléments .{Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
 * Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
@@ -637,6 +637,7 @@ le sélecteur définit le style de tous les panneaux qui peuvent être répété
   margin-bottom: 10px;
 }
 ```
+
 ce sélecteur définit le style de tous les wrappers de champ dans un panneau répétable, en assurant un espacement cohérent entre les champs.
 
 * Ciblage de champs spécifiques (dans un panneau) :

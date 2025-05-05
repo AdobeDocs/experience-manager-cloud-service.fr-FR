@@ -156,7 +156,7 @@ Content Hub permet aux administrateurs de configurer des filtres qui s’affiche
 
    >[!NOTE]
    >
-   Le nouveau filtre ne s’affiche sur la page Rechercher que s’il existe au moins une ressource dans le référentiel correspondant aux critères de filtre.
+   >Le nouveau filtre ne s’affiche sur la page Rechercher que s’il existe au moins une ressource dans le référentiel correspondant aux critères de filtre.
 
 De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque filtre disponible, pour modifier les libellés ou cliquer sur l’icône de suppression pour supprimer un filtre existant. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
 

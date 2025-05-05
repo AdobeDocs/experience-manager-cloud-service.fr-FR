@@ -181,7 +181,7 @@ Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 >
 >Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [&#128279;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes {#faqs}
 

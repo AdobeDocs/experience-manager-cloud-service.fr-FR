@@ -87,9 +87,11 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 1. Les deux :
 
    1. Le type de ressource du modèle (le nœud initial) doit hériter de :
+
       `cq/experience-fragments/components/xfpage`
 
    1. Et le nom du modèle doit commencer par :
+
       `experience-fragments`
 Ce modèle permet de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 

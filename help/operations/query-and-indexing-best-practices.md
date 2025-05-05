@@ -276,7 +276,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques à prendre en compte lors de
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la documentation sur l’index Oak Lucene [](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Pour plus d’informations, voir la documentation sur l’index Oak Lucene [&#128279;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Les vérifications automatisées du pipeline Cloud Manager appliqueront certaines des bonnes pratiques décrites ci-dessus.
 

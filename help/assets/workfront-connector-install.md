@@ -89,7 +89,7 @@ Avant d’installer le connecteur, procédez comme suit :
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. Assurez-vous que les recouvrements suivants n’existent pas dans le référentiel [!DNL Experience Manager] : Si ces chemins contiennent des recouvrements préexistants, vous devez supprimer les recouvrements ou fusionner les différences de modifications entre les deux :

@@ -105,7 +105,7 @@ Vous pouvez accéder aux résultats complets de l’audit en cliquant sur l’on
 
 Cliquez sur **Afficher les pages les plus lentes** pour ouvrir la boîte de dialogue **5 pages les plus lentes** . Les cinq pages les moins performantes que vous [ avez configurées pour effectuer un audit](#configuration) s’affichent.
 
-![ {5](assets/experience-audit-slowest-five.png)
+![ &lbrace;5](assets/experience-audit-slowest-five.png)
 
 Cloud Manager répartit les scores par **Performance**, **Accessibilité**, **Bonnes pratiques** et **SEO**, indiquant l’écart entre chaque mesure et l’audit précédent.
 

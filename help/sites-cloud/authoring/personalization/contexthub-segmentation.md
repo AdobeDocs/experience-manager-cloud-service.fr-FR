@@ -215,6 +215,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Le dossier s’affiche dans la liste des segments.
    * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
    * Vous pouvez sélectionner les en-têtes de colonne pour ajuster votre tri.
+
      ![Le nouveau dossier](../assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}

@@ -200,7 +200,7 @@ Les balises et les espaces de noms peuvent être modifiés après leur création
 
    * **Titre**
    * **Description**
-   * [**Localisation **](#managing-tags-in-different-languages)
+   * [**Localisation &#x200B;**](#managing-tags-in-different-languages)
 
 1. Une fois les modifications apportées, sélectionnez **Envoyer**.
 

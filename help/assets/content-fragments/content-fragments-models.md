@@ -87,9 +87,9 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
         >[!CAUTION]
         >
-        Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
+        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
-        Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -121,9 +121,9 @@ Une sélection de types de données est disponible pour la définition de votre 
 
   >[!NOTE]
   >
-  Que la zone de texte soit du texte enrichi, du texte brut ou Markdown, est définie dans le modèle par la propriété **Type par défaut**.
+  >Que la zone de texte soit du texte enrichi, du texte brut ou Markdown, est définie dans le modèle par la propriété **Type par défaut**.
   >
-  Ce format ne peut pas être modifié à partir de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
+  >Ce format ne peut pas être modifié à partir de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
 
 * **Nombre**
    * Ajouter un champ numérique
@@ -167,7 +167,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
      >[!NOTE]
      >
-     Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
+     >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
@@ -179,7 +179,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Souvent, cette propriété vous permet de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances. Lorsque le **champ multiple** est utilisé, vous pouvez définir le nombre minimal et maximal d’éléments. Voir [Validation](#validation) pour plus de détails.
@@ -209,15 +209,15 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
   >[!NOTE]
   >
-  L’unicité est assurée par la racine de langue.
+  >L’unicité est assurée par la racine de langue.
 
   >[!NOTE]
   >
-  Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+  >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
   >[!CAUTION]
   >
-  Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute contrainte **unique** doit être supprimée de tous les types de données utilisés dans les modèles de fragment de contenu respectifs.
+  >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute contrainte **unique** doit être supprimée de tous les types de données utilisés dans les modèles de fragment de contenu respectifs.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -270,18 +270,18 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
      >[!NOTE]
      >
-     Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
 >
-AEM dispose d’une protection récurrente pour :
+>AEM dispose d’une protection récurrente pour :
 >
-* Références du contenu
-Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>* Références du contenu
+>Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
-* Références de fragments dans GraphQL
-Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>* Références de fragments dans GraphQL
+>Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
@@ -323,7 +323,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -349,9 +349,9 @@ Indique un chemin racine pour tout fragment référencé.
 
 >[!NOTE]
 >
-Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
-Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+>Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
@@ -366,7 +366,7 @@ Vous pouvez modifier les **propriétés** d’un modèle de fragment de contenu�
 
      >[!NOTE]
      >
-     Il n’est utilisé que par le *nouvel* éditeur de fragment de contenu. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
+     >Il n’est utilisé que par le *nouvel* éditeur de fragment de contenu. Voir [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) pour plus d’informations.
 
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
@@ -416,7 +416,7 @@ Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **P
 
 >[!NOTE]
 >
-Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
+>Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
 Pour configurer les **politiques** des **modèles de fragments de contenu autorisés** :
 
@@ -451,7 +451,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 
 >[!CAUTION]
 >
-La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
+>La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
 Pour supprimer un modèle de fragment de contenu :
 
@@ -462,7 +462,7 @@ Pour supprimer un modèle de fragment de contenu :
 
    >[!NOTE]
    >
-   Si le modèle est référencé, un avertissement s’affiche. Agissez de manière appropriée.
+   >Si le modèle est référencé, un avertissement s’affiche. Agissez de manière appropriée.
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
@@ -478,7 +478,7 @@ Le statut publié est indiqué dans la console.
 
    >[!NOTE]
    >
-   Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
+   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle est publié avec le fragment.
 
 ## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
@@ -566,6 +566,6 @@ Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l
 
      >[!NOTE]
      >
-     Un avertissement peut toujours s’afficher en haut de l’écran, mais seulement lorsque le modèle est déjà utilisé par les fragments de contenu existants.
+     >Un avertissement peut toujours s’afficher en haut de l’écran, mais seulement lorsque le modèle est déjà utilisé par les fragments de contenu existants.
 
    * **Annuler** vous ramène à la console.

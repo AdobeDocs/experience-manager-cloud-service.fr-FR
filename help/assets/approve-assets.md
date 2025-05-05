@@ -81,13 +81,13 @@ Si vous devez afficher la propriété à laquelle le champ **[!UICONTROL Statut 
 
    >[!NOTE]
    >
-   Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
+   >Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
-Si vos ressources ou dossiers ont un schéma par défaut différent, veillez à effectuer cette mise à jour dans ce schéma particulier.
+>Si vos ressources ou dossiers ont un schéma par défaut différent, veillez à effectuer cette mise à jour dans ce schéma particulier.
 
 ## Approuver des ressources {#approve-assets}
 
@@ -112,7 +112,7 @@ Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fo
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Profils de métadonnées]**.
 1. Cliquez sur **[!UICONTROL Créer]** en haut à droite de la page.
 1. Ajoutez un titre de profil et cliquez sur **[!UICONTROL Créer]**. Le profil de métadonnées a été créé.
-1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**s’ouvre avec l’onglet **[!UICONTROL De base]**en surbrillance.
+1. Sélectionnez le profil de métadonnées que vous venez de créer et cliquez sur **[!UICONTROL Modifier le(s) _(s)_]**. <br>Le formulaire **[!UICONTROL Modifier le profil de métadonnées]**&#x200B;s’ouvre avec l’onglet **[!UICONTROL De base]**&#x200B;en surbrillance.
 1. Effectuez un glisser-déposer d’un **[!UICONTROL champ de texte monoligne]** de la section **[!UICONTROL Créer un formulaire]** sur le côté droit de la section Métadonnées du formulaire.
 1. Cliquez sur le champ nouvellement ajouté, puis effectuez les mises à jour suivantes dans le panneau **[!UICONTROL Paramètres]** :
    1. Remplacez **[!UICONTROL Libellé du champ]** par _Assets approuvé_.
@@ -127,7 +127,7 @@ Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fo
 
    >[!NOTE]
    >
-   Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
+   >Lorsque vous sélectionnez la cible de validation en tant que Content Hub dans la vue Assets, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub. Lorsque vous sélectionnez la cible de validation comme Diffusion , les ressources sont disponibles pour tous les utilisateurs.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Sur la page **[!UICONTROL Profils de métadonnées]**, sélectionnez le profil de métadonnées que vous venez de créer.
 1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées au(x) dossier(s)]** dans la barre d’actions supérieure.
@@ -138,7 +138,7 @@ Simplifiez votre workflow en approuvant rapidement plusieurs ressources à la fo
 
 >[!NOTE]
 > 
-Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier , vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
+>Cette approche approuve les ressources nouvellement créées dans le dossier . Pour les ressources existantes dans le dossier , vous devez les sélectionner et les approuver manuellement. <br> Vous pouvez également utiliser l’option **[!UICONTROL Retraiter]** pour appliquer les modifications du profil de métadonnées aux ressources plus anciennes.
 
 De même, pour approuver en bloc des ressources dans un dossier dans la vue Assets :
 
@@ -157,7 +157,7 @@ De même, pour approuver en bloc des ressources dans un dossier dans la vue Asse
 
    >[!NOTE]
    >
-   Si vous sélectionnez la cible de validation comme `Content Hub` dans la vue Assets d’une organisation, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub.
+   >Si vous sélectionnez la cible de validation comme `Content Hub` dans la vue Assets d’une organisation, les ressources sont mises à la disposition des utilisateurs de la même organisation dans Content Hub.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -178,6 +178,6 @@ Pour copier l’URL de diffusion d’une ressource approuvée dans le référent
 
    >[!NOTE]
    >
-   L’option permettant de copier l’URL de diffusion pour les ressources approuvées est uniquement disponible dans la vue Assets.
+   >L’option permettant de copier l’URL de diffusion pour les ressources approuvées est uniquement disponible dans la vue Assets.
 
 Pour plus d’informations sur les autres rendus qui s’affichent dans le panneau Dynamic Media, voir [Affichage et téléchargement des rendus Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

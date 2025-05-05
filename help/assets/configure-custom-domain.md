@@ -79,4 +79,4 @@ La vérification DNS peut prendre quelques heures en raison des délais de propa
 
 >[!NOTE]
 >
-Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées . La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Contactez l’équipe Adobe correspondante pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.
+>Ajoutez le domaine personnalisé à la liste des URL de redirection autorisées . La liste se trouve dans le client IMS pour le sélecteur de ressources.<br>Contactez l’équipe Adobe correspondante pour exécuter cette tâche en fournissant la chaîne de domaine personnalisée.

@@ -149,7 +149,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
 
-1. Sélectionnez [!UICONTROL  Fichiers ].
+1. Sélectionnez [!UICONTROL &#x200B; Fichiers &#x200B;].
 
 1. Dans l’interface d’Assets, accédez au dossier auquel vous souhaitez appliquer des balises de couleurs.
 
@@ -157,7 +157,7 @@ Pour appliquer des balises de couleurs aux images ou aux dossiers (y compris les
 
 1. Sélectionnez l’icône [!UICONTROL Retraiter les ressources] ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) et sélectionnez l’option [!UICONTROL Processus complet].
 
-Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL  Balises de couleurs intelligentes ] de l’onglet [!UICONTROL De base].
+Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle image dans le dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL &#x200B; Balises de couleurs intelligentes &#x200B;] de l’onglet [!UICONTROL De base].
 
 
 ## Afficher les balises de couleurs intelligentes des images {#view-color-tags}

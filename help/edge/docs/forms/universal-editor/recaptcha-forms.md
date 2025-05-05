@@ -46,7 +46,7 @@ Les deux options utilisent la détection basée sur les scores (0,0 à 1,0) pour
 
 Avant de configurer reCAPTCHA Enterprise, vous aurez besoin des éléments suivants :
 
-- Un projet Google Cloud [](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=fr#before-you-begin) avec votre [ID de projet](https://support.google.com/googleapi/answer/7014113)
+- Un projet Google Cloud [&#128279;](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=fr#before-you-begin) avec votre [ID de projet](https://support.google.com/googleapi/answer/7014113)
 - [API reCAPTCHA Enterprise activée](https://cloud.google.com/recaptcha/docs/prepare-environment?hl=fr#enable-api) pour votre projet
 - Une [clé API](https://console.cloud.google.com/apis/credentials) pour l’authentification
 - Une [clé de site](https://console.cloud.google.com/security/recaptcha) pour votre domaine

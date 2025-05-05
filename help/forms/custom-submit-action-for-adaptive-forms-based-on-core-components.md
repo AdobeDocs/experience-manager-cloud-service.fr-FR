@@ -44,6 +44,7 @@ Le diagramme ci-dessous illustre les étapes de création d’une action d’env
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **Où trouver ces informations ?**
 
    Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article de Adobe Experience League &quot;[Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
@@ -67,6 +68,7 @@ Le diagramme ci-dessous illustre les étapes de création d’une action d’env
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **Important** : remplacez `<app-id>` par votre ID d’application réel.
 
 1. Créez un dossier pour votre action d’envoi personnalisée et attribuez-lui un nom de votre choix. Par exemple, nommez le dossier `customsubmitaction`.
@@ -79,7 +81,7 @@ Le diagramme ci-dessous illustre les étapes de création d’une action d’env
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important` : Remplacer <app-id> avec votre ID d’application réel.
+   `Important` : Remplacer &lt;app-id> avec votre ID d’application réel.
 
 1. Créez un fichier de configuration.
 Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
@@ -117,6 +119,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    Par exemple, ajoutez la ligne de code suivante pour ajouter le dossier `customsubmitaction` dans le fichier `filter.xml` :
 
    ```
@@ -131,7 +134,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
 1. Accédez au répertoire suivant dans votre `[AEMaaCS project directory]` :
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important` : Remplacer <app-id> avec votre ID d’application réel.
+   `Important` : Remplacer &lt;app-id> avec votre ID d’application réel.
 1. Créez un fichier Java pour mettre en oeuvre le service pour l’action d’envoi ajoutée. Par exemple, ajoutez un nouveau fichier Java en tant que `CustomSubmitService.java`.
 
    ![Dossier d’action d’envoi personnalisé](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![Déploiement local](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Déployer le code pour l’environnement du Cloud Service**
@@ -212,7 +216,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
       Déclenchez un déploiement de votre code par le biais du [pipeline de pile complète existant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline). Il crée et déploie automatiquement le code mis à jour avec la nouvelle prise en charge de l’action d’envoi personnalisée.
 
-      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).[
+      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
 
       ![Déploiement cloud](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

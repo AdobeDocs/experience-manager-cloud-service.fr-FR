@@ -63,6 +63,7 @@ Les fragments de contenu, basés sur un modèle de fragment de contenu, sont map
 * L’ensemble du contenu est stocké sous le nœud `jcr:content/data` de la ressource :
 
    * Les données d’élément sont stockées sous le sous-noeud maître :
+
      `jcr:content/data/master`
 
    * Les variations sont stockées sous un sous-noeud portant le nom de la variation :

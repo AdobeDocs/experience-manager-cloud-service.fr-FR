@@ -91,7 +91,7 @@ Les autorisations sont ventilées dans les catégories suivantes.
 
 >[!NOTE]
 >
-Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
+>Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
 
 ### Onglet Réplication {#replication-tab}
 
@@ -192,9 +192,9 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 
 >[!NOTE]
 >
-La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
+>La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
-La validation du nœud créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer de nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+>La validation du nœud créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer de nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 

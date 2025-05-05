@@ -183,14 +183,17 @@ Pour créer une configuration de déploiement :
 1. Ajoutez les propriétés suivantes à ce nœud :
 
    * **Nom** : `jcr:title`
+
      **Type** : `String`
      **Valeur** : titre d’identification qui apparaîtra dans l’interface utilisateur
 
    * **Nom** : `jcr:description`
+
      **Type** : `String`
      **Valeur** : une description facultative.
 
    * **Nom** : `cq:trigger`
+
      **Type** : `String`
      **Value** : [ Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
       * `rollout`
@@ -636,6 +639,7 @@ La propriété de boîte de dialogue détermine si une propriété de page est s
       * **Type** : `String`
       * **Valeur** : contient le nom de la propriété considérée et est comparable à la valeur de la propriété `name`
          * Par exemple, consultez
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la chaîne interagit avec le MSM de la façon suivante :

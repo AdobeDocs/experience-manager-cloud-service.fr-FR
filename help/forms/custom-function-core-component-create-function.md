@@ -109,6 +109,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
          #base=js
        function.js
    ```
+
 1. Dans le dossier `js`, ajoutez le fichier javascript en tant que `function.js` qui comprend les fonctions personnalisées :
 
    ```javascript
@@ -133,6 +134,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
     return age;
     }
    ```
+
 1. Enregistrez les fichiers.
 
 ![Structure de dossier de fonction personnalisée](/help/forms/assets/custom-function-added-files.png)
@@ -166,7 +168,7 @@ Déployez le [répertoire de projet AEMaaCS] d’AEM as a Cloud Service dans vot
 
    1. Déclenchez un déploiement de votre code par le biais du pipeline de pile complète existant. Cette opération génère et déploie automatiquement le code mis à jour.
 
-Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).[
+Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
 
 Une fois le pipeline exécuté avec succès, la fonction personnalisée ajoutée à la bibliothèque cliente devient disponible dans votre [éditeur de règles de formulaire adaptatif](/help/forms/rule-editor-core-components.md).
 

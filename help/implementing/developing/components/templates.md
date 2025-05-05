@@ -439,7 +439,7 @@ Ce nœud contient des propriétés pour le modèle :
 
 * **Nom** : `jcr:title`
 * **Nom** : `status`
-   * ``**Type** : `String`
+   * &grave;&grave;**Type** : `String`
    * **Valeur** : `draft`, `enabled` ou `disabled`
 
 ### Structure {#structure}
@@ -501,6 +501,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -513,6 +514,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
+
      `cq:allowedTemplates`
 Sur le nœud `jcr:content` de la branche requise.
 

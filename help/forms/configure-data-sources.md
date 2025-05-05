@@ -128,7 +128,7 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 >[!NOTE]
 > Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) ou le fichier [!DNL Swagger] ([Swagger Version 3.0](https://swagger.io/specification/v3/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
 
-### Configurez les services RESTful pour la version 2.0 de la spécification Open API {#configure-restful-services-open-api-2.0}.
+### Configurez les services RESTful pour la version 2.0 de la spécification Open API. {#configure-restful-services-open-api-2.0}
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -137,8 +137,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les champs suivants sont préremplis avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
@@ -153,7 +153,7 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
-### Configurez les services RESTful pour la version 3.0 de la spécification Open API {#configure-restful-services-open-api-3.0}.
+### Configurez les services RESTful pour la version 3.0 de la spécification Open API. {#configure-restful-services-open-api-3.0}
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -162,8 +162,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les informations de connexion au serveur cible s’affichent.
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.

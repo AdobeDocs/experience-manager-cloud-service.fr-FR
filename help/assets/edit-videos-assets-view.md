@@ -131,7 +131,7 @@ Votre vidéo peut être téléchargée au format GIF. Vous pouvez enregistrer la
 
 ### Étapes suivantes {#next-steps}
 
-* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL  Commentaires ] disponible dans l’interface utilisateur de l’affichage d’Assets.
+* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL &#x200B; Commentaires &#x200B;] disponible dans l’interface utilisateur de l’affichage d’Assets.
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 

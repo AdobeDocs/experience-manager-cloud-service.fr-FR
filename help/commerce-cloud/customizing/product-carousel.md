@@ -38,6 +38,7 @@ Vous pouvez étendre la logique métier du carrousel de produit en mettant en oe
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
+
 1. Créez ensuite une classe d’implémentation `CustomCarouselImpl.java` sur `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
 Le motif de délégation des modèles Sling permet à `CustomCarouselImpl` de référencer le modèle `ProductCarousel` via la propriété `sling:resourceSuperType` :
 

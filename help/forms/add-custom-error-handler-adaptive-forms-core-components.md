@@ -256,6 +256,7 @@ Ajoutons le code suivant au fichier JavaScript pour afficher la réponse et les 
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+
    Dans le code ci-dessus, `return true` appelle automatiquement le gestionnaire d’erreurs par défaut. Pour empêcher le gestionnaire d’erreurs par défaut d’être appelé par défaut, incluez `return false`.
 
    >[!NOTE]

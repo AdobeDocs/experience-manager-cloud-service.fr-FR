@@ -153,8 +153,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     curl -X POST « https://forms.adobe.com/adobe/forms/af/submit/{id} » \
     —header « Content-Type : application/json » \
     —header « x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization] » \
-    —data &#39;{
-    « data »: {
+    —data &#39;&lbrace;
+    « data »: &lbrace;
     « startDate »: « 2025-01-10 »,
     « endDate »: « 2025-01-25 »,
     « destination »: « Australia »,
@@ -165,8 +165,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     « age »: « 35 »,
     « subscribe »: null,
     « email »: « mary@gmail.com »
-    }
-    }&#39;
+    &rbrace;
+    &rbrace;&#39;
     
      »
 

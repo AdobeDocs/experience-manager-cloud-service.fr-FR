@@ -66,7 +66,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 

@@ -548,7 +548,7 @@ La vidéo ci-dessous montre le composant terminé et comment l’ajouter à un c
 
 ## Code terminé {#finished-code}
 
-Vous trouverez ci-dessous le code final du tutoriel. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** et **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sont les packages AEM compilés. Le fichier **SRC-screens-weretail-run-0.0.1.zip **est le code source non compilé qui peut être déployé à l’aide de Maven.
+Vous trouverez ci-dessous le code final du tutoriel. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** et **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sont les packages AEM compilés. Le fichier **SRC-screens-weretail-run-0.0.1.zip &#x200B;** est le code source non compilé qui peut être déployé à l’aide de Maven.
 
 [Obtenir le fichier](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

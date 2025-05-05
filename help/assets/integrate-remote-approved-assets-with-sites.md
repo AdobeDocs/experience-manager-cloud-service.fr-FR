@@ -77,6 +77,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 * Configurez les [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md#add-variables) suivantes pour AEM as a Cloud Service :
 
    * ASSET_DELIVERY_REPOSITORY_ID= « delivery-pxxxxx-eyyyyyy.adobeaemcloud.com » <br>
+
      `pXXXX` fait référence à l’ID de programme <br>
      `eYYYY` fait référence à l’identifiant d’environnement
 
@@ -161,7 +162,7 @@ Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fra
 
    >[!NOTE]
    >
-   Si vous ne disposez pas d’un modèle de fragment de contenu AEM, vous devrez peut-être en [créer un](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Si vous ne disposez pas d’un modèle de fragment de contenu AEM, vous devrez peut-être en [créer un](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Cliquez sur l’icône ![icône en forme de coche](/help/assets/assets/do-not-localize/checkmark-icon.svg) en regard du composant de texte.
 1. Sélectionnez **[!UICONTROL Distant]** pour récupérer la ressource à partir du DAM distant. <br>

@@ -544,7 +544,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 * **Nom des propriétés de publication et Live Copy**
 Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* L’astérisque (&amp;ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
+* L’astérisque (&ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 

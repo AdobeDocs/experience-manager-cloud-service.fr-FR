@@ -55,7 +55,7 @@ Voir aussi [Facultatif - Installer et configurer des paramètres de Dynamic Medi
    * Onglet [Illustrator](#illustrator-tab)
 
    ![Page des paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
+   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**&#x200B;sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 

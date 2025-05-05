@@ -50,7 +50,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets vous permet désormais de charger des documents dans d’autres types de format pris en charge et de les prévisualiser à l’aide de la visionneuse de Documents Cloud incluse ](/help/assets/manage-pdf-documents.md). [ Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
+* Experience Manager Assets vous permet désormais de charger des documents dans d’autres types de format pris en charge et de les prévisualiser à l’aide de la visionneuse de Documents Cloud incluse [&#128279;](/help/assets/manage-pdf-documents.md).  Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
 
   ![Rendu PDF pour d’autres formats](/help/release-notes/assets/multi-page-other-formats.png)
 

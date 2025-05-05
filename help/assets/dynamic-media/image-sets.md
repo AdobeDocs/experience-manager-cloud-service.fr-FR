@@ -243,6 +243,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pour réorganiser les images, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône Réorganiser pour déplacer des éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, cliquez sur l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, cliquez sur **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]** en haut à droite de la page.
+
      >[!NOTE]
      >
      >Si vous supprimez l’image utilisée par Experience Manager pour la miniature en la remplaçant par une autre image, la ressource originale s’affiche toujours.

@@ -94,6 +94,7 @@ Vous devez créer une configuration de site et l’ajouter à votre mappage de c
        }
    }'
    ```
+
 1. Vérifiez que la configuration publique a été définie et qu’elle est disponible avec une commande cURL similaire à la suivante.
 
    ```text

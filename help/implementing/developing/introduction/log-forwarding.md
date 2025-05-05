@@ -116,14 +116,14 @@ Un autre scénario consiste à désactiver le transfert des journaux CDN ou des 
 Certaines organisations choisissent de limiter le trafic pouvant être reçu par les destinations de journalisation, d’autres peuvent nécessiter d’utiliser des ports autres que HTTPS (443).  Si tel est le cas, [Mise en réseau avancée](/help/security/configuring-advanced-networking.md) doit être configuré avant le déploiement de la configuration de transfert de journal.
 
 Utilisez le tableau ci-dessous pour connaître les exigences relatives à la configuration avancée de la mise en réseau et de la journalisation selon que vous utilisez le port 443 ou non et que vous avez besoin ou non que vos journaux apparaissent à partir d’une adresse IP fixe.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>Oui</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >Le fait que vos journaux s’affichent à partir d’une seule adresse IP dépend de la configuration de mise en réseau avancée que vous avez choisie.  Une sortie dédiée doit être utilisée pour faciliter cette opération.

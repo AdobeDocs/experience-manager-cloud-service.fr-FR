@@ -392,6 +392,7 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    float: right;
    }
    ```
+
    Le code vous permet de définir le style et l’aspect visuel du composant personnalisé.
 
 1. Pour ajouter les fonctionnalités, accédez au fichier `/blocks/form/components/range/range.js` et ajoutez la ligne de code suivante :

@@ -33,17 +33,21 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 1. **Workflows en cours d’exécution** indique le nombre de workflows en cours d’exécution et leur statut. Par exemple, dans les images données, le nombre de **workflows en cours d’exécution** et le **statut** de l’instance AEM sont affichés :
 
    * **Statut : sain**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Statut : non sain**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Si vous souhaitez avoir des **détails sur le statut** des instances de workflow, cliquez sur **Détails** pour afficher le **nombre d’instances de workflows en cours d’exécution**, les **instances de workflow terminées**, les **instances de workflow abandonnées**, **instances de workflow en échec**, etc. Par exemple, ci-dessous, les images données qui affichent les **détails sur le statut** avec :
 
    * **Détails sur le statut : sain**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Détails sur le statut : non sain**
+
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -112,7 +116,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le **message d’échec**, **étape et la **pile d’échec**.
+Ouvre une fenêtre pour afficher le **message d’échec**, **étape et la &#x200B;** pile d’échec**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.

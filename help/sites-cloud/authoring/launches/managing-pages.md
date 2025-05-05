@@ -28,6 +28,7 @@ Vous pouvez naviguer parmi la structure de votre lancement depuis :
 * L’éditeur de page :
 
    * Sélectionnez **Naviguer** pour ouvrir la structure de lancement dans la console :
+
      ![Navigation dans le lancement à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

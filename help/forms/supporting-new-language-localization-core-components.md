@@ -375,7 +375,7 @@ Vous êtes maintenant prêt à utiliser le nouveau paramètre régional avec vot
 
       Déclenchez un déploiement de votre code par le biais du [pipeline de pile complète existant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline). Cette opération génère et déploie automatiquement le code mis à jour avec la nouvelle prise en charge des paramètres régionaux.
 
-      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).[
+      Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
 
 
 ## Aperçu d’un formulaire adaptatif avec les paramètres régionaux nouvellement ajoutés
@@ -399,7 +399,7 @@ Ces étapes vous guident tout au long de l’aperçu d’un formulaire adaptatif
 
 * Gestion des nouveaux champs :
 
-   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et exécuter à nouveau le projet de traduction](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant. [ Les nouveaux champs ajoutés après le projet de traduction initial restent non traduits.
+   * **Traduction automatique** : si vous utilisez la traduction automatique, vous devez recréer le dictionnaire et exécuter à nouveau le projet de traduction[&#128279;](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) après avoir ajouté de nouveaux champs à un formulaire adaptatif existant.  Les nouveaux champs ajoutés après le projet de traduction initial restent non traduits.
 
    * **Traduction humaine** : pour les processus de traduction humaine, exportez le dictionnaire à l’aide de l’interface utilisateur à l’adresse `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire des nouveaux champs et téléchargez la version révisée.
 

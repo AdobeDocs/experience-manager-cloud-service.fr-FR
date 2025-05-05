@@ -64,7 +64,7 @@ Les utilisateurs Adobe Express et [Content Hub autorisés à remixer les ressour
 
 >[!NOTE]
 >
-Vous pouvez modifier des images de types de fichiers PNG et JPG/JPEG à l’aide de [!DNL Adobe Express].
+>Vous pouvez modifier des images de types de fichiers PNG et JPG/JPEG à l’aide de [!DNL Adobe Express].
 
 ## Modifier des images à l’aide d’[!DNL Adobe Express] {#edit-images-using-content-hub}
 
