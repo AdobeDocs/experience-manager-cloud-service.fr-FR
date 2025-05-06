@@ -4,7 +4,7 @@ description: Découvrez comment ajouter une configuration de réseau CDN à un s
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -66,7 +66,9 @@ Dans le tableau du site Edge Delivery, cliquez sur ![Icône Plus](https://spectr
 
 Utilisez le point d’entrée de l’API `/program/{programId}/site/{siteId}` pour migrer un site Edge Delivery entre Helix 4 et Helix 5.
 
-Les configurations de réseau CDN pour les sites Web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe car les sites de production clients peuvent toujours s’exécuter sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
+>[!IMPORTANT]
+>
+>Les configurations de réseau CDN pour les sites Web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe car les sites de production clients peuvent toujours s’exécuter sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
 
 **Conditions préalables**
 
