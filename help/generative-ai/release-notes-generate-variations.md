@@ -5,9 +5,9 @@ exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez [accéder à Générer des variations](/help/generative-ai/generate-
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser la version 3.0.0, car bien que la version précédente de [Générer des variations soit toujours directement accessible](/help/generative-ai/generate-variations.md) elle sera abandonnée à l’avenir.
+>Il est recommandé d’utiliser la version 3.0.0, car même si la version précédente de [Générer des variations est toujours directement accessible](/help/generative-ai/generate-variations.md), elle sera abandonnée à l’avenir.
 
 ### 2.2.0 {#release-notes-2-2-0}
 

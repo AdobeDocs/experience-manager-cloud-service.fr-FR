@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez [accéder à Générer des variations](#access-generate-variations) 
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser cette version, car bien que la version autonome de [Générer des variations soit toujours directement accessible](/help/generative-ai/generate-variations.md) elle sera abandonnée à l’avenir.
+>Il est recommandé d’utiliser cette version, car même si la version autonome de [Générer des variations est toujours directement accessible](/help/generative-ai/generate-variations.md), elle sera abandonnée à l’avenir.
 
 Vous pouvez ensuite :
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->Voir la [Fiche d’information sur la sécurité pour plus d’informations sur la fonction Générer une variation dans AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
+>Consultez la [Fiche d’information sur la sécurité pour en savoir sur la fonctionnalité Générer des variations dans AEM](https://www.adobe.com/content/dam/cc/fr/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Vue d’ensemble {#overview}
 
@@ -172,7 +172,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 ## Accès à Générer des variations {#access-generate-variations}
 

@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -187,7 +187,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 
 >[!IMPORTANT]
 >
->Si vous utilisez l’[Éditeur universel pour la création de contenu](/help/implementing/universal-editor/introduction.md) et que vous souhaitez également utiliser les listes autorisées [IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) vous devez également [ajouter et appliquer une liste autorisée avec les adresses IP du service Éditeur universel.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Si vous utilisez l’[Éditeur universel pour la création de contenu](/help/implementing/universal-editor/introduction.md) et que vous souhaitez également utiliser les [listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), vous devez [ajouter et appliquer une liste autorisée d’adresses IP du service Éditeur universel.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Utiliser Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 

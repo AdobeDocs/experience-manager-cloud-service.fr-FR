@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -412,7 +412,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 * Adobe Express
 
