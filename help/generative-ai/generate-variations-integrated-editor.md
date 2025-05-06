@@ -172,7 +172,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 ## Accès à Générer des variations {#access-generate-variations}
 
@@ -325,9 +325,9 @@ Pour plus d’informations, vous pouvez également consulter :
 
 * [Générer des variations GenAI sur GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [ IA générative dans les produits Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [ IA générative dans les produits Experience Cloud ](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai)
 
-   * [IA générative dans les produits Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [IA générative dans les produits Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai#aem)
 
 ## Historique des versions {#release-history}
 
