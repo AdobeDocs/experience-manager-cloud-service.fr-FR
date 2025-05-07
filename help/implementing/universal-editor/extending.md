@@ -3,13 +3,13 @@ title: Extension de l’éditeur universel
 description: Découvrez les différentes options permettant d’étendre les fonctionnalités de l’éditeur universel afin de prendre en charge les besoins des auteurs de contenu.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0cab4a807be4aa402667feddb6a948f0d2db371f
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
+source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # Extension de l’éditeur universel {#extending}
 
@@ -23,6 +23,12 @@ Découvrez les différentes options permettant d’étendre les fonctionnalités
 
 En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide d’App Builder et d’Experience Manager. Adobe propose de nombreuses extensions toutes prêtes que vous pouvez utiliser pour votre projet.
 
+* **[Extension AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)** : interrompre ou rétablir l’héritage au niveau du composant
+* **[Extension Propriétés de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** : accédez à la fenêtre Propriétés de page de la page dans l’éditeur universel
+* **[Extension AEM Site Admin](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)** : ouvrez la console Sites sur l’emplacement de la page dans l’éditeur universel
+* **[Extension de verrouillage de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)** : affichez et modifiez le statut de verrouillage de page à partir de l’éditeur universel
+* **[Extension AEM Workflows](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)** : démarrez des workflows sur la page et le contenu de la page à partir de l’éditeur universel
+* **[Extension de connexion au développement de l’éditeur universel AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)** : authentifiez facilement votre SDK AEM local lors du développement local
 * **[Sélecteur de produit AEM pour l’éditeur universel ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)** : intégrez les données Adobe Commerce en sélectionnant ou en supprimant les données de produit de l’éditeur.
 * **[Brouillons de contenu de l’éditeur universel](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)** : créez, modifiez et gérez plusieurs brouillons de contenu.
 * **[Sélecteur de ressources configurable](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)** : permet d’activer la sélection de ressources à partir de référentiels autres que celui utilisé par la page modifiée.
@@ -42,7 +48,7 @@ Si vous souhaitez explorer les possibilités de créer vos propres extensions, c
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 

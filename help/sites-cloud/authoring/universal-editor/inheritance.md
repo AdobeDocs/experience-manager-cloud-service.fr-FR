@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '528'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Découvrez comment l’éditeur universel prend en charge l’héritage de conte
 
 >[!NOTE]
 >
->Cette fonction n’est disponible que pour le contenu stocké dans le référentiel AEM.
+>Cette fonctionnalité n’est disponible que pour le contenu stocké dans le référentiel AEM.
 
 ## Cas d’utilisation {#use-case}
 
@@ -44,17 +44,25 @@ Lorsqu’une page fait partie de MSM ou d’un lancement et que le contenu est m
 
 L’auteur n’a pas besoin de cliquer sur un bouton ni de prendre d’autres mesures pour désactiver l’héritage avant d’apporter des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ce workflow est différent de l’[ Éditeur de page ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+L’héritage peut être rétabli pour la page entière via :
+
+* [Console Vue d’ensemble de la Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Console de lancements](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* à l’aide du bouton **Réinitialiser** sur l’onglet **Live Copy** de la fenêtre [Propriétés de la page](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 L’éditeur universel n’affecte pas le mécanisme sous-jacent de l’héritage. Pour plus d’informations sur le fonctionnement de l’héritage, consultez la documentation suivante.
 
 * [Gestion multisite (MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md)
 
+### Extension AEM Multi-Site-Management (MSM) {#msm-extension}
+
+S’il est installé, l’extension **AEM Multi-Site-Management (MSM)** affiche le statut d’héritage actuel du composant sélectionné et vous permet de rompre ou de rétablir l’héritage au niveau du composant.
+
+Pour plus d’informations, consultez la [documentation de création](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
+
 ## Limites {#limitations}
 
-* Les auteurs ne peuvent pas rétablir l’héritage pour des composants uniques.
-   * L’héritage ne peut être rétabli que pour la page entière via le .
-      * [Console Vue d’ensemble de la Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Console de lancements](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * à l’aide du bouton **Réinitialiser** sur l’onglet **Live Copy** de la fenêtre [Propriétés de la page](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Les auteurs n’ont pas de retour visuel pour savoir quels composants ont leur héritage désactivé et lesquels l’ont toujours conservé.
+* Pour rétablir l’héritage pour des composants uniques, l’extension **AEM Multi-Site-Management (MSM)** doit être activée.
+* Pour que les commentaires visuels indiquent quels composants ont leur héritage désactivé et lesquels l’ont toujours conservé, l’extension **AEM Multi-Site-Management (MSM)** doit être activée.
 * Ces fonctionnalités sont actuellement limitées aux composants dans les pages et ne s’appliquent pas encore aux [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md), bien qu’ils disposent également de fonctionnalités MSM et Launch.
