@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 
 >[!IMPORTANT]
 >
->Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
+>Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
 >Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Questions fréquentes {#faq}
 
-+++**Qu’est-ce qu’une requête de contenu ?**{#what-is-a-content-request}
+### Qu’est-ce qu’une requête de contenu ?{#what-is-a-content-request}
 
 Une requête de contenu est toute requête adressée à AEM Sites ou à un système de mise en cache fourni par le client, comme un réseau de diffusion de contenu. Il récupère le contenu ou les données au format HTML pour les pages vues. Ou au format JSON pour les appels API.
 
@@ -109,29 +109,25 @@ Une demande de contenu est comptabilisée pour chaque page vue ou chaque fois qu
 Les demandes de contenu excluent les demandes ou activités initiées par ou pour le compte d’Adobe dans le seul but de fournir des produits et des services. Le trafic des agents utilisateurs identifiés par Adobe provenant des robots associés aux moteurs de recherche et aux services de médias sociaux est également exclu.
 
 Consultez également la section [Présentation des requêtes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Comment Adobe Experience Manager mesure-t-il les demandes de contenu ?**{#how-are-content-requests-measured}
+### Comment Adobe Experience Manager mesure-t-il les demandes de contenu ?{#how-are-content-requests-measured}
 
 Les demandes de contenu sont suivies sur les serveurs Edge d’AEM as a Cloud Service. Le trafic d’origine n’est pas comptabilisé dans les demandes de contenu. Le réseau CDN intégré à AEM as a Cloud Service effectue le suivi des requêtes HTML et JSON valides.
 
 AEM a également mis en place des règles pour exclure les robots connus, notamment les services connus qui visitent régulièrement le site pour actualiser leur index ou service de recherche.
 
 Voir aussi [Comprendre les demandes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Pourquoi mon rapport Analytics présente-t-il des résultats différents de ceux des requêtes de contenu AEM ?**{#why-are-reports-different}
+### Pourquoi mon rapport Analytics présente-t-il des résultats différents de ceux des requêtes de contenu AEM ?{#why-are-reports-different}
 
 Les demandes de contenu peuvent présenter des variations avec les outils de création de rapports Analytics d’une organisation. Pour plus d’informations, voir [Comprendre les demandes de contenu Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Que se passe-t-il si je souhaite en savoir plus sur le volume de ma demande de contenu ?**{#current-request-volumes}
+### Comment en savoir plus sur le volume de ma requête de contenu ?{#current-request-volumes}
 
 Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe Adobe ou le service clientèle Adobe pour demander un rapport sur l’utilisation optimale.
-+++
 
-+++**Que se passe-t-il si j’utilise mon propre réseau CDN ?**{#using-own-cdn}
+### Que se passe-t-il si j’utilise mon propre réseau CDN ?{#using-own-cdn}
 
 Le tableau de bord des licences affiche uniquement les données suivies par le réseau CDN Cloud Service. Si vous choisissez d’importer votre propre réseau CDN (BYOCDN), vous signalez annuellement votre volume de requête de contenu à Adobe, comme indiqué dans votre contrat.
-+++
+
 
