@@ -4,9 +4,9 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éd
 * **[Extension de verrouillage de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)** : affichez et modifiez le statut de verrouillage de page à partir de l’éditeur universel
 * **[Extension AEM Workflows](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)** : démarrez des workflows sur la page et le contenu de la page à partir de l’éditeur universel
 * **[Extension de connexion au développement de l’éditeur universel AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)** : authentifiez facilement votre SDK AEM local lors du développement local
+* **[Générer des variations](/help/generative-ai/generate-variations-integrated-editor.md)** : utilisez l’intelligence artificielle (IA) générative pour créer des variations pour votre contenu directement dans le panneau des propriétés.
 * **[Sélecteur de produit AEM pour l’éditeur universel ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)** : intégrez les données Adobe Commerce en sélectionnant ou en supprimant les données de produit de l’éditeur.
 * **[Brouillons de contenu de l’éditeur universel](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)** : créez, modifiez et gérez plusieurs brouillons de contenu.
 * **[Sélecteur de ressources configurable](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)** : permet d’activer la sélection de ressources à partir de référentiels autres que celui utilisé par la page modifiée.
@@ -48,7 +49,7 @@ Si vous souhaitez explorer les possibilités de créer vos propres extensions, c
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 

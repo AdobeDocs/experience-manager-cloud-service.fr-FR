@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1729'
 ht-degree: 17%
 
 ---
@@ -219,9 +219,9 @@ Par exemple, la possibilité de dépublier une page (c’est-à-dire d’inverse
 
 L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans la barre d’outils, cela signifie que votre éditeur universel a été étendu.
 
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, [consultez la documentation sur la création dans l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* Pour plus d’informations sur les possibilités d’extension, consultez la [Extension de l’éditeur universel](/help/implementing/universal-editor/extending.md).
-* Pour plus d’informations sur l’installation d’une extension individuelle, consultez la [documentation Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, [consultez la documentation sur la création dans l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Pour plus d’informations sur les possibilités d’extension, consultez la [Extension de l’éditeur universel.](/help/implementing/universal-editor/extending.md)
+* Pour plus d’informations sur l’installation d’une extension individuelle, consultez la [documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### L’éditeur {#editor}
 
@@ -236,6 +236,8 @@ Si l’éditeur se trouve en [mode Aperçu](#preview-mode), le contenu peut êtr
 Le panneau Propriétés est toujours présent le long du côté droit de l’éditeur. Selon son mode, il peut afficher les détails d’un composant sélectionné dans le contenu ou la hiérarchie du contenu de la page.
 
 ![Panneau Propriétés](assets/properties-rail.png)
+
+Selon la configuration de votre programme, il peut également présenter des [fonctionnalités supplémentaires qui ont été activées en tant qu’extensions par votre administrateur.](#additional-properties-panel-buttons)
 
 #### Mode Propriétés {#properties-mode}
 
@@ -315,12 +317,13 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 >
 >Utilisez le raccourci `Shift+Backspace` pour supprimer un composant sélectionné d’un conteneur.
 
-## Fonctionnalités supplémentaires {#additional-features}
+#### Boutons supplémentaires {#additional-properties-panel-buttons}
 
-L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons ou des options supplémentaires dans le panneau des propriétés ou la barre d’outils, cela signifie que votre éditeur universel a été étendu.
+L’éditeur universel offre une expérience de création personnalisable et extensible. Si vous voyez des boutons supplémentaires dans le panneau des propriétés, cela signifie que votre éditeur universel a été étendu.
 
-* Pour plus d’informations sur les possibilités d’extension, consultez la [Personnalisation et extension de l’éditeur universel](/help/implementing/universal-editor/customizing.md).
-* Pour plus d’informations sur le fonctionnement d’une extension individuelle, consultez la [documentation Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Pour plus d’informations sur le fonctionnement d’une extension individuelle, [consultez la documentation sur la création dans l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Pour plus d’informations sur les possibilités d’extension, consultez la [Extension de l’éditeur universel.](/help/implementing/universal-editor/extending.md)
+* Pour plus d’informations sur l’installation d’une extension individuelle, consultez la [documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Étapes suivantes {#next-steps}
 
