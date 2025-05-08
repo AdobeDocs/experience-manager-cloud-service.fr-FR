@@ -4,7 +4,7 @@ description: Découvrez comment accéder à l’éditeur universel et comment co
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -178,6 +178,8 @@ Les variables suivantes sont disponibles pour définir vos mappages dans le cham
 Votre application est désormais instrumentée pour utiliser l’éditeur universel
 
 Reportez-vous à [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) et découvrez à quel point il est facile et intuitif pour les auteurs et autrices de créer du contenu à l’aide de l’éditeur universel.
+
+{{ue-headless-auth}}
 
 ## Ressources supplémentaires {#additional-resources}
 

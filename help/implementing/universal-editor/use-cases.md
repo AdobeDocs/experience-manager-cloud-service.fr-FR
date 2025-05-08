@@ -4,7 +4,7 @@ description: Découvrez les principaux cas d’utilisation de l’éditeur unive
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -55,6 +55,8 @@ Si c’est votre cas d’utilisation, l’étape suivante immédiate consiste à
 * [Exemple d’application SecurBank pour l’éditeur universel](/help/implementing/universal-editor/securbank.md)
 
 Une fois que vous avez lu ce document, vous pouvez revenir à cette page pour en savoir plus sur le cas d’utilisation de la création WYSIWYG et sur le fonctionnement de l’éditeur universel en général.
+
+{{ue-headless-auth}}
 
 ## Fonctionnement de l’éditeur universel {#how-ue-works}
 

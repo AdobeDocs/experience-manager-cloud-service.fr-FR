@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # Fragments de code {#snippets}
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
@@ -259,3 +259,9 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 * [Afficher un message de remerciement personnalisé après l’envoi du formulaire](/help/edge/docs/forms/thank-you-page-form.md)
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
 * [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
+
+## Authentification découplée de l’éditeur universel {#ue-headless-auth}
+
+>[!NOTE]
+>
+>Si vous utilisez l’éditeur universel dans un cas d’utilisation découplé, votre application découplée doit gérer sa propre authentification.
