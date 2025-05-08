@@ -59,7 +59,7 @@ L’éditeur universel n’affecte pas le mécanisme sous-jacent de l’héritag
 
 S’il est installé, l’extension **AEM Multi-Site-Management (MSM)** affiche le statut d’héritage actuel du composant sélectionné et vous permet de rompre ou de rétablir l’héritage au niveau du composant.
 
-Pour plus d’informations sur l’utilisation de cette extension, consultez la documentation de création [](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
+Pour plus d’informations sur l’utilisation de cette extension, consultez la documentation de création [&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
 
 Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
