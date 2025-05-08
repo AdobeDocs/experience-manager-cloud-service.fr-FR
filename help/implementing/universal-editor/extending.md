@@ -4,9 +4,9 @@ description: Découvrez les différentes options permettant d’étendre les fon
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Découvrez les différentes options permettant d’étendre les fonctionnalités
 
 ## Extensions {#extensions}
 
-En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide d’App Builder et d’Experience Manager. Adobe propose de nombreuses extensions toutes prêtes que vous pouvez utiliser pour votre projet.
+En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éditeur universel peut être étendue à l’aide d’App Builder et d’Experience Manager. Adobe propose de nombreuses extensions prêtes à l’emploi disponibles via [Extension Manager](https://experience.adobe.com/aem/extension-manager) que vous pouvez utiliser pour votre projet.
 
 * **[Extension AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)** : interrompre ou rétablir l’héritage au niveau du composant
 * **[Extension Propriétés de page AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** : accédez à la fenêtre Propriétés de page de la page dans l’éditeur universel
@@ -37,6 +37,8 @@ En tant que service Adobe Experience Cloud, l’interface utilisateur de l’éd
 * **[Exporter des fragments de contenu vers Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)** : exportez des fragments de contenu, créés dans Adobe Experience Manager as a Cloud Service vers Adobe Target pour être utilisés comme offres dans les activités Target, afin de tester et de personnaliser des expériences à grande échelle.
 * **[Workflows de fragment de contenu](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)** : lancez un workflow AEM pour les fragments de contenu sélectionnés.
 
+Pour plus d’informations sur l’activation de ces extensions, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## Étendre l’interface utilisateur {#extending-ui}
 
 Les extensions de l’interface utilisateur de l’éditeur universel sont des applications JavaScript créées avec Adobe App Builder. À l’aide de ces mêmes outils, vous pouvez également ajouter vos propres boutons et actions au menu d’en-tête et au panneau des propriétés, ainsi que créer vos propres événements pour l’éditeur universel.
@@ -49,7 +51,7 @@ Si vous souhaitez explorer les possibilités de créer vos propres extensions, c
 
 >[!TIP]
 >
->Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
+>Si vous préférez apprendre par l’exemple, consultez le tutoriel sur l’extensibilité de l’interface utilisateur d’AEM [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Bien qu’il se concentre sur l’extension de la console Fragments de contenu, les concepts d’implémentation d’une extension d’interface utilisateur dans l’éditeur universel sont les mêmes.
 
 [En utilisant Extension Manager dans AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), vous pouvez activer ou désactiver vos extensions par instance, accéder aux extensions propriétaires d’Adobe, y compris celles de l’éditeur universel, et bien plus encore.
 

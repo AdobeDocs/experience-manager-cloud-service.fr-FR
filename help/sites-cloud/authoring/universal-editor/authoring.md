@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 9%
@@ -214,7 +214,7 @@ L’icône **Héritage rompu** indique que l’héritage a été rompu pour le c
 
 Appuyez ou cliquez sur l’icône pour rétablir l’héritage pour le composant sélectionné. Vous devez recharger la page pour actualiser le contenu afin d’afficher le contenu hérité.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ L’extension **Propriétés de page AEM** permet un accès rapide à la fenêtr
 
 Appuyez ou cliquez sur l’icône **Propriétés de page** dans la barre d’outils de l’éditeur universel pour ouvrir les propriétés de page de la page dans un nouvel onglet du navigateur.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ L’extension **AEM Site Admin Extension** permet un accès rapide à la page en
 
 Appuyez ou cliquez sur l’icône pour ouvrir la console Sites dans un nouvel onglet du navigateur, et accédez à la page qui se trouve actuellement dans l’éditeur.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Verrouillage et déverrouillage de pages {#locking-pages}
 
@@ -264,7 +264,7 @@ L’icône **Verrouillé** de la barre d’outils de l’éditeur universel indi
 
 Appuyez ou cliquez sur l’icône pour déverrouiller la page si vous êtes l’utilisateur ou l’utilisatrice qui l’a verrouillée.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’
 1. Dans la liste **Contenu à inclure dans le workflow**, utilisez les cases à cocher pour définir le contenu à inclure dans le workflow.
 1. Appuyez ou cliquez sur **Démarrer le workflow** pour démarrer le workflow ou sur **Fermer** pour abandonner.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### Connexion du développeur {#developer-login}
 
@@ -297,7 +297,7 @@ Appuyez ou cliquez sur l’icône **Ouverture de session du développeur** dans 
 
 ![Boîte de dialogue modale de connexion du développeur](assets/developer-login.png)
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Fonctionnalités du panneau Propriétés facultatives {#properties-panel-options}
 
@@ -311,7 +311,7 @@ L’extension **Generate Variations** vous permet d’utiliser l’intelligence 
 
 Appuyez ou cliquez sur l’icône **Générer des variations** dans le panneau des propriétés de l’éditeur universel pour recevoir des recommandations et créer des variations. Consultez le document [Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md) pour plus d’informations sur le fonctionnement de la génération de variations.
 
-Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Ressources supplémentaires {#additional-resources}
 

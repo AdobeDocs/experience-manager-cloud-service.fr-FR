@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,9 @@ L’éditeur universel n’affecte pas le mécanisme sous-jacent de l’héritag
 
 S’il est installé, l’extension **AEM Multi-Site-Management (MSM)** affiche le statut d’héritage actuel du composant sélectionné et vous permet de rompre ou de rétablir l’héritage au niveau du composant.
 
-Pour plus d’informations, consultez la [documentation de création](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
+Pour plus d’informations sur l’utilisation de cette extension, consultez la documentation de création [](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance).
+
+Pour plus d’informations sur la manière d’activer cette extension, [consultez la documentation d’Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Limites {#limitations}
 
