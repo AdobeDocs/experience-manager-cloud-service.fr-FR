@@ -742,8 +742,8 @@ ht-degree: 99%
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporer un formulaire adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Intégration d’AEM Forms à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-         + [Incorporation d’un formulaire adaptatif basé sur des composants Foundation à une page web externe](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [Intégration d’AEM Forms à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+         + [Incorporation d’un formulaire adaptatif basé sur des composants de base à une page web externe](/help/forms/embed-adaptive-form-external-web-page.md)
          + Intégration des formulaires adaptatifs à Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
             + [Intégrer Adobe Marketo Engage à AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
             + [Configurer un nouveau formulaire à intégrer à Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)

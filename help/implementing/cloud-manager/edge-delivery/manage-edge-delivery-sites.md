@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -62,19 +62,19 @@ Dans le tableau du site Edge Delivery, cliquez sur ![Icône Plus](https://spectr
 
      ![Ajout d’un site Edge Delivery à partir du bouton Sites Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## Gestion d’un site Edge Delivery entre Helix 4 et Helix 5
+## Gérer un site Edge Delivery entre Helix 4 et Helix 5
 
-Utilisez le point d’entrée de l’API `/program/{programId}/site/{siteId}` pour migrer un site Edge Delivery entre Helix 4 et Helix 5.
+Utilisez le point d’entrée de l’API `/program/{programId}/site/{siteId}` pour migrer un site Edge Delivery entre Helix 4 et Helix 5.
 
 >[!IMPORTANT]
 >
->Les configurations de réseau CDN pour les sites Web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe car les sites de production clients peuvent toujours s’exécuter sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
+>Les configurations de réseau CDN pour les sites web Helix 4 ne peuvent pas être migrées automatiquement vers Helix 5. Cette limitation existe, car les sites de production clients peuvent toujours s’exécuter sur Helix 4, tandis que leurs versions Helix 5 sont toujours en cours de développement.
 
 **Conditions préalables**
 
 * Le `sitename` doit déjà exister.
-* connaître les valeurs `branchName`, Helix `version` et `repo` appropriées ;
-* La migration modifie uniquement `branchName`, Helix `version` et `repo`. Le champ du propriétaire ne peut pas être modifié.
+* Vous devez connaîtres les valeurs `branchName`, Helix `version` et `repo` appropriées.
+* La migration modifie uniquement `branchName`, Helix `version` et `repo`. Le champ de propriétaire ne peut pas être modifié.
 
 **Format d’API**
 
@@ -94,7 +94,7 @@ Crée un remplacement pour un site Edge Delivery afin d’appliquer l’origine 
 }
 ```
 
-### Exemple 1 : migration vers Helix 5
+### Exemple 1 : migrer vers Helix 5
 
 **http**
 
@@ -114,12 +114,12 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Retourne un site Edge Delivery avec l&#39;URL d&#39;origine suivante :
+Renvoie un site Edge Delivery avec l’URL d’origine suivante :
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
 
-### Exemple 2 : migration vers Helix 4
+### Exemple 2 : migrer vers Helix 4
 
 **http**
 
@@ -139,11 +139,11 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Renvoie un site Edge Delivery avec l’URL d’origine suivante :
+Renvoie un site Edge Delivery avec l’URL d’origine suivante :
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### Exemple 3 : migration du site repoless vers Helix 5
+### Exemple 3 : migrer du site repoless vers Helix 5
 
 **http**
 
@@ -163,7 +163,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Résultat de l’URL d’origine**
-Retourne un site Edge Delivery avec l&#39;URL d&#39;origine suivante :
+Renvoie un site Edge Delivery avec l’URL d’origine suivante :
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 
