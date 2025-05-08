@@ -1,13 +1,13 @@
 ---
-title: Commencez avec Edge Delivery Services pour AEM Forms. Créez un formulaire.
-description: Créez rapidement des formulaires parfaits. ⚡ Création basée sur des documents de formulaires AEM Forms Edge Delivery = vitesse époustouflante et formulaires compatibles avec l’optimisation du moteur de recherche pour des utilisateurs et utilisatrices plus heureux.
+title: Création d’un formulaire à l’aide du bloc de Forms adaptatif
+description: Prise en main de Edge Delivery Services pour AEM Forms. Créez rapidement des formulaires parfaits. Création basée sur des documents AEM Forms Edge Delivery = une vitesse fulgurante et des formulaires compatibles avec le référencement pour des utilisateurs et des moteurs de recherche plus heureux.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: ccadacb5db3c0dd57e61a9a1404049dbe7aa98d2
+source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 96%
 
 ---
 
