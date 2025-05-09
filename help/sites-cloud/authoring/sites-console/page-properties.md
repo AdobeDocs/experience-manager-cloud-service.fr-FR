@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 89%
+source-wordcount: '2454'
+ht-degree: 84%
 
 ---
 
@@ -242,7 +242,9 @@ Grâce à une configuration simple, une personne en charge de la création de co
 
 >[!NOTE]
 >
->Voir [Activation des fonctionnalités d’application web progressive](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Voir [Activation des fonctionnalités d’application web progressive](/help/sites-cloud/authoring/sites-console/enable-pwa.md) pour plus d’informations.
+
+{{pwa-deprecation}}
 
 * **Configurer l’expérience d’installation**
 
@@ -337,3 +339,35 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
+
+## Héritage de propriété {#inheritance}
+
+Si la page est basée sur un plan directeur ou hérite du contenu d’une autre page, l’héritage se reflète dans la fenêtre **Propriétés de la page** pour le champ individuel.
+
+![ Propriétés héritées ](assets/property-inhertiance.png)
+
+Impossible de modifier les propriétés héritées. Appuyez ou cliquez sur l’icône **Annuler l’héritage** en regard d’un champ particulier pour rompre son héritage.
+
+![Annuler l’héritage](assets/cancel-inheritance.png)
+
+Confirmez l’annulation dans la fenêtre modale **Annuler l’héritage**.
+
+![Boîte de dialogue modale de confirmation d’annulation de l’héritage](assets/cancel-inheriance-confirmation.png)
+
+Une fois que l’héritage est annulé pour un champ, il devient modifiable.
+
+![héritage annulé](assets/property-inheritance-broken.png)
+
+Pour rétablir l’héritage, appuyez ou cliquez sur l’icône **Rétablir l’héritage** en regard du champ.
+
+![Rétablir l’héritage](assets/revert-inheritance.png)
+
+Confirmez la réversion dans la fenêtre modale **Rétablir l’héritage**.
+
+![Boîte de dialogue modale de confirmation de l’héritage](assets/revert-inhertiance-confirmation.png)
+
+Sélectionnez **Synchroniser la page après le rétablissement de l’héritage** pour mettre à jour le champ avec les dernières valeurs du plan directeur. Si vous ne le faites pas, les valeurs seront mises à jour la prochaine fois que la Live Copy sera synchronisée.
+
+>[!TIP]
+>
+>Pour plus d’informations sur l’héritage, consultez le document [ Multi Site Manager et traduction ](/help/sites-cloud/administering/msm-and-translation.md)
