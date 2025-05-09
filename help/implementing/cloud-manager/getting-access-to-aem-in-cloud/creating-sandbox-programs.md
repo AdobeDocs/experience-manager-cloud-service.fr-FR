@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -30,7 +30,7 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 
 1. Sous **Objectif du programme**, sélectionnez ![Icône de baguette magique](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Configurer un sandbox**.
 
-   ![Création d’un type de programme.](assets/create-sandbox.png)
+   ![Création d’un type de programme](assets/create-sandbox.png)
 
 1. (Facultatif) Dans le coin inférieur droit de la boîte de dialogue de l’assistant, effectuez l’une des opérations suivantes :
 
@@ -43,7 +43,7 @@ Pour en savoir plus sur les types de programme, consultez le document [Présenta
 1. Dans la zone de liste **Solutions et modules complémentaires**, sélectionnez une ou plusieurs solutions à inclure dans le programme.
 
    * Cliquez sur le chevron situé à gauche du nom d’une solution pour afficher tous les modules complémentaires facultatifs disponibles que vous souhaitez inclure avec une solution sélectionnée.
-   * Les solutions **Sites**, **Assets** et **Edge Deliver Services** sont toujours sélectionnées par défaut lorsque vous créez un programme Sandbox. Vous ne pouvez pas les désélectionner.
+   * Les solutions **Sites**, **Assets** et **Edge Delivery Services** sont toujours sélectionnées par défaut lorsque vous créez un programme Sandbox. Vous ne pouvez pas les désélectionner.
 
    ![Sélection de solutions et de modules complémentaires pour une sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -71,7 +71,7 @@ Une fois qu’un nouveau programme Sandbox est créé, vous pouvez afficher les 
 
    ![Lien Accès à AEM](assets/create-program5.png)
 
-1. Une fois terminé le déploiement du pipeline hors production vers le développement, l’assistant décrit dans l’appel à l’action vous permet d’accéder à l’environnement de développement AEM ou de déployer du code dans l’environnement de développement.
+1. Une fois terminé le déploiement du pipeline hors production vers le développement, l’assistant de call-to-action vous permet d’accéder à l’environnement de développement AEM ou de déployer du code dans l’environnement de développement.
 
    ![Déploiement d’une Sandbox](assets/create-program-setup-deploy.png)
 

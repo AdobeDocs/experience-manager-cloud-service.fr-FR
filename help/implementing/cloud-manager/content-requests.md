@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
+source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 3%
 Les demandes de contenu incluent les demandes envoyées à AEM Sites. Ces requêtes peuvent être acheminées via Edge Delivery Services ou des systèmes de mise en cache fournis par le client, tels qu’un réseau de diffusion de contenu (CDN). Ces requêtes diffusent des données structurées au format HTML ou JSON et prennent en charge les pages vues (par exemple, les pages et les fragments d’expérience) ou les retours JSON par le biais d’API de manière découplée.
 
 Le système comptabilise les demandes de contenu lorsqu’un utilisateur ou une utilisatrice consulte une page à l’aide d’HTML ou de JSON. Il mesure la requête au moment où le premier système de mise en cache la reçoit. Certaines requêtes HTTP sont incluses ou exclues à des fins de comptage des requêtes de contenu. Consultez la liste complète des [demandes de contenu incluses](#included-content-requests) et [demandes de contenu exclues](#excluded-content-request) HTTP.
+
+>[!NOTE]
+>
+>Les données affichées dans la vue Demandes de contenu sont actualisées toutes les 24 heures.
 
 ## À propos des demandes de contenu Cloud Service {#understanding-cloud-service-content-requests}
 

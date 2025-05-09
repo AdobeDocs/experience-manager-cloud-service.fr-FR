@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Voir [Options de programme de production supplémentaires](#options).
 
    * Si vous ne savez pas si vous avez besoin d’un ou de plusieurs programmes pour les différentes solutions disponibles, sélectionnez celle qui vous intéresse le plus. Vous pouvez activer des solutions supplémentaires en [modifiant le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) plus tard. Consultez le [document Présentation des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) pour plus de recommandations sur la configuration des programmes.
    * Au moins une solution est requise pour la création du programme.
-   * Sélectionnez **Edge Delivery Services** pour obtenir une solution CDN entièrement gérée qui optimise les expériences digitales. Voir [ À propos de l’utilisation de Edge Delivery Services pour diffuser votre projet Cloud Manager](#edge-overview)
+   * Sélectionnez **Edge Delivery Services** pour obtenir une solution de réseau CDN entièrement gérée qui optimise les expériences digitales. Voir [ À propos de l’utilisation de Edge Delivery Services pour diffuser votre projet Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * Si vous avez sélectionné l’option **[Activer la sécurité renforcée](#security)**, vous ne pouvez sélectionner que les solutions conformes à la norme HIPAA.
 
      ![Solutions sélectionnées](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Outre les droits requis, l’utilisation de la version 99,99 % de SLA pour les p
 
 1. Sélectionnez **Cloud Manager** pour accéder à la page **Aperçu** de Cloud Manager.
 
-1. La carte d’appel à l’action principale de la page d’aperçu vous guide tout au long de la création d’un environnement, d’un pipeline hors production et, enfin, d’un pipeline de production.
+1. La carte call-to-action principale de la page d’aperçu vous guide tout au long de la création d’un environnement, d’un pipeline hors production et, enfin, d’un pipeline de production.
 
    ![Vue d’ensemble du programme](assets/set-up-prod5.png)
 
