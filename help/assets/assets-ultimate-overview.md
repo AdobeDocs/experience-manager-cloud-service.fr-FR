@@ -4,10 +4,10 @@ description: Découvrez les aspects clés d’Assets Ultimate, tels que les ava
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: ccd2334528ed7309c271d069209adec333de356c
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 97%
+source-wordcount: '902'
+ht-degree: 94%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
@@ -138,6 +138,6 @@ Le tableau suivant récapitule les types d’utilisateurs et d’utilisatrices A
 | AEM > Instance de création de production > Administration AEM | − | − | − | ✓ |
 | **Informations supplémentaires** | Voir [Activation de Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Voir [Intégration des utilisateurs collaborateurs et des utilisatrices collaboratrices](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Voir [Intégration des utilisateurs et utilisatrices experts](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Pour plus d’informations sur la prise en main d’Assets Ultimate, voir [Activation d’AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
+Pour plus d’informations sur la prise en main d’Assets Ultimate, voir [ Activer AEM Assets Ultimate ](/help/assets/enable-assets-ultimate.md). Si des utilisateurs AEM Assets existants ont des questions sur le moment où vous pouvez effectuer la mise à niveau vers Assets Ultimate, contactez votre représentant de compte Adobe. Vous pouvez également consulter [Activer Assets Ultimate pour les clients existants](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) pour plus d’informations.
 
 AEM Assets fournit également une gestion des ressources numériques plus légère pour les clientes et clients qui ne disposent pas d’exigences avancées telles que l’extensibilité de l’interface d’utilisation, l’automatisation axée sur les API et le déploiement de code personnalisé. Pour plus d’informations, voir [AEM Assets Prime](/help/assets/assets-prime.md).
