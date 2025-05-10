@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager dans AEM as a Cloud Service vous permet d’activer Edge Deli
 
 ## Présentation d’Edge Delivery Services dans Cloud Manager {#edge-in-cloud-manager}
 
-Si vous disposez d’Edge Delivery Services sous licence avec Adobe Experience Manager Sites, vous pouvez désormais intégrer votre site à Edge Delivery Services directement dans Cloud Manager et publier votre contenu [à l’aide d’une expérience guidée en libre-service](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+Si vous disposez d’Edge Delivery Services sous licence avec Adobe Experience Manager Sites, vous pouvez désormais intégrer votre site à Edge Delivery Services directement dans Cloud Manager et publier votre contenu [à l’aide d’une expérience guidée en libre-service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 De plus, vous pouvez accéder à une expérience unifiée pour gérer toutes vos propriétés AEM tout en assurant la cohérence entre les workflows clés. Ces workflows comprennent notamment la gestion des noms de domaine, la gestion des certificats SSL et les mappages de réseau CDN.
 
@@ -47,14 +47,14 @@ En outre, l’utilisation de Cloud Manager vous permet d’utiliser le [réseau
 
 ## À propos de l’ajout d’Edge Delivery Services à un programme de production ou à un programme sandbox
 
-Un Edge Delivery Services peut être ajouté de différentes manières en fonction de la manière dont vous avez commencé votre projet ou du moment où vous souhaitez créer le site.
+Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction de la façon dont vous avez commencé votre projet ou de quand vous souhaitez créer le site.
 
 | Cas d’utilisation | Description |
 | --- | --- |
 | Je veux ajouter Edge Delivery Services à un nouveau programme de production. | Voir [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).<br>Dans l’assistant, sous l’onglet **Solutions et modules complémentaires**, sélectionnez **Edge Delivery Services**. |
 | Je veux ajouter Edge Delivery Services à un programme de production existant. | Voir [Modification de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).<br>Dans la boîte de dialogue **Modification de programme**, sous l’onglet **Solutions et modules complémentaires**, sélectionnez **Edge Delivery Services**. |
 | Je veux ajouter un site Edge Delivery à Cloud Manager. | Voir [Ajout d’un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
-| Je souhaite créer un site Edge Delivery maintenant | Voir [ Création rapide d’un site Edge Delivery dans Cloud Manager en un clic de bouton](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
+| Je souhaite créer un site Edge Delivery maintenant. | Consultez [Créer rapidement un site Edge Delivery dans Cloud Manager en un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | Je souhaite ajouter Edge Delivery Services à un nouveau programme sandbox ou à un programme sandbox existant. | Voir [Création de programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>Lorsque vous créez un programme sandbox, Edge Delivery Services est ajouté au programme par défaut ; vous n’avez pas besoin de le sélectionner.<br>Les programmes sandbox existants avant la disponibilité générale d’Edge Delivery héritent automatiquement d’Edge Delivery Services. |
 
 >[!NOTE]
@@ -76,14 +76,14 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | --- | --- | --- |
 | 1 | Rejoindre le canal de collaboration de produit | Cliquer sur **Envoyer la demande maintenant** envoie une demande à Adobe pour créer un canal pour votre entreprise. Si le canal existe déjà, vous faites l’objet d’un transfert vers le canal de votre entreprise. |
 | 2 | Remplir les conditions préalables | Voir [Afficher le tutoriel de prise en main](https://www.aem.live/developer/tutorial). |
-| 3 | Ajouter un site Edge Delivery OU <br>Créer un site maintenant | Voir [Ajout d’un site Edge Delivery](#eds-add-site).<br>Voir [Création d’un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
+| 3 | Ajouter un site Edge Delivery OU <br>Créer un site maintenant | Voir [Ajout d’un site Edge Delivery](#eds-add-site).<br>Consultez [Créer un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Ajouter un domaine | Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Ajouter le certificat SSL | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurer le réseau CDN de votre site Edge Delivery | Voir [Ajout d’une configuration de réseau CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
 | 7 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Mise en production | Voir [Liste de contrôle de mise en production](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 
