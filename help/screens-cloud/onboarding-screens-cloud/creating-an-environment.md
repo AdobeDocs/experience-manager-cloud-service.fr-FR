@@ -4,10 +4,10 @@ description: Cette page décrit la création d’un environnement dans Cloud Ma
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 44%
+source-wordcount: '193'
+ht-degree: 38%
 
 ---
 
@@ -22,13 +22,13 @@ Cette section décrit comment créer un environnement pour votre programme dans 
 
 La section suivante décrit la création d’un environnement pour votre programme dans Cloud Manager.
 
-## Procédure de création d’un environnement pour votre projet Screens dans Cloud Manager {#steps-branch-creation}
+## Procédure de création d’un environnement pour votre projet dans Cloud Manager {#steps-branch-creation}
 
-Une fois la création du projet terminée, vous pouvez voir la mise à jour de la carte d’appel à l’action sur la page Aperçu du Cloud Manager .
+Une fois la création du projet terminée, la mise à jour de la carte call-to-action s’affiche sur la page Aperçu de Cloud Manager.
 
-1. Accédez à Cloud Manager et sélectionnez l’icône afin d’accéder à la page **Aperçu** de Cloud Manager.
+1. Accédez à Cloud Manager et sélectionnez l’icône pour accéder à la page Cloud Manager **Aperçu**.
 
-1. Cliquez sur **Ajouter un environnement** sur la page **Aperçu** de Cloud Manager.
+1. Cliquez sur **Ajouter un environnement** dans la page Cloud Manager **Aperçu**.
 
    ![Image](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
@@ -36,10 +36,10 @@ Une fois la création du projet terminée, vous pouvez voir la mise à jour de l
 
    ![Image](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Une fois l’ajout d’un environnement terminé, la carte d’appel à l’action est mise à jour, comme illustré dans la figure ci-dessous.
+1. Une fois l’ajout d’un environnement terminé, la carte call-to-action est mise à jour, comme illustré dans la figure ci-dessous.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante. L’étape suivante du processus d’intégration est [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Après avoir appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à la suite. L’étape suivante du processus d’intégration est [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
