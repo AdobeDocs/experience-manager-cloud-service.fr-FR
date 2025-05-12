@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
+source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 83%
+source-wordcount: '2546'
+ht-degree: 79%
 
 ---
 
@@ -99,6 +99,10 @@ Bien que la journalisation Java prenne en charge plusieurs autres niveaux de gra
 
 Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. C’est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements, afin de s’assurer que les journaux disponibles par l’intermédiaire d’AEM as a Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
 
+>[!NOTE]
+>
+>Pour garantir une surveillance efficace des environnements client, ne modifiez pas le niveau de journalisation par défaut. En outre, ne modifiez pas le format de journalisation par défaut. La sortie du journal doit rester redirigée vers les fichiers par défaut. Voir [la section ci-dessous](#configuration-loggers) pour obtenir des instructions spécifiques.
+
 **Exemple de sortie de journal**
 
 ```
@@ -153,6 +157,19 @@ Configurez la journalisation Java pour des packages Java personnalisés via des 
 | `org.apache.sling.commons.log.file` | Spécifiez la cible de la sortie : `logs/error.log` |
 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
+
+Comme indiqué dans une section précédente, pour garantir une surveillance efficace des environnements client :
+* Les journaux Java pour le code de produit AEM doivent conserver leur niveau de journal par défaut « INFO » et ne doivent pas être remplacés par des configurations personnalisées.
+* Il est acceptable de définir les niveaux de journal sur DEBUG pour le code de produit, mais utilisez-les avec parcimonie afin d’éviter une dégradation des performances et de restaurer le niveau INFO lorsqu’il n’est plus nécessaire.
+* Il est acceptable d’ajuster les niveaux de journal pour le code développé par le client.
+* Tous les journaux (tant pour le code de produit AEM que pour le code développé par le client) doivent conserver le format de journalisation par défaut.
+* La sortie du journal doit rester redirigée vers le fichier par défaut « logs/error.log ».
+
+À cette fin, aucune modification ne doit être apportée aux propriétés OSGi suivantes :
+* **Configuration du journal Apache Sling** (PID : `org.apache.sling.commons.log.LogManager`) - *toutes les propriétés*
+* **Configuration de l’enregistreur de journaux Apache Sling** (PID d’usine : `org.apache.sling.commons.log.LogManager.factory.config`)
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
 
 Vous trouverez ci-dessous des exemples de configurations de journalisation recommandées (à l’aide de l’espace réservé de package Java `com.example`) pour les trois types d’environnements AEM as a Cloud Service.
 
