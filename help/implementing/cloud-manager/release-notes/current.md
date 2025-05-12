@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.5.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 21%
+source-wordcount: '780'
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ La configuration de la source de contenu diffère entre Helix 4 et Helix 5 de la
 
 Cet article fournit des étapes de configuration complètes, des exemples et des instructions de validation pour les deux versions.
 
-B **Avant de commencer**
+**Avant de commencer**
 
 Si vous utilisez [Edge Delivery en un clic dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), votre site s’appelle Helix 5 avec un seul référentiel. Suivez les instructions de Helix 5 et utilisez la version Helix 4 YAML fournie comme solution de secours.
 
@@ -131,7 +131,7 @@ Utilisez l’API du service de configuration.
 1. S’authentifier via une clé API ou un jeton d’accès.
 1. Effectuez l’appel API `PUT` suivant :
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
