@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: e0286ed9aad7ce8c6d4d1f254f6f8a602b4216fc
-workflow-type: ht
-source-wordcount: '2537'
-ht-degree: 100%
+source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
+workflow-type: tm+mt
+source-wordcount: '2554'
+ht-degree: 97%
 
 ---
 
@@ -86,101 +86,90 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>Utilisez les interfaces Auth Core / Auth Core SPI de Sling comme alternative. <a href="#org.apache.sling.commons.auth">Voir les notes de suppression ci-dessous.</a></td>
     <td>2015</td>
-    <td>30/07/2021</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
     <td>2015</td>
-    <td>30/07/2021</td>
+    <td>7/30/2021</td>
   </tr>
   <tr>
     <td>org.json</td>
     <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
-    <td>30/04/2021</td>
-    <td>31/12/2021</td>
+    <td>4/30/2021</td>
+    <td>12/31/2021</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place.</td>
-    <td>30/04/2021</td>
-    <td>31/12/2021</td>
+    <td>4/30/2021</td>
+    <td>12/31/2021</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3 est en mode de maintenance. Commons Collections 4 devrait être utilisé à la place.</td>
-    <td>30/04/2021</td>
-    <td>31/12/2021</td>
+    <td>4/30/2021</td>
+    <td>12/31/2021</td>
   </tr>
   <tr>
-    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
+    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>La console web Felix n’est pas prise en charge dans les environnements cloud</td>
-    <td>30/04/2021</td>
-    <td>30/07/2021</td>
+    <td>4/30/2021</td>
+    <td>8/31/2025</td>
   </tr>
-  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
+  <tr>
+<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>   
     <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. <a href="#org.eclipse.jetty">Voir les notes de suppression ci-dessous.</a></td>
-    <td>27/05/2021</td>
-    <td>26/08/2021</td>
+    <td>5/27/2021</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. <a href="#com.mongodb">Voir les notes de suppression ci-dessous.</a></td>
-    <td>27/05/2021</td>
-    <td>30/07/2021</td>
+    <td>5/27/2021</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Cette API est obsolète, car le projet Apache Abdera a été supprimé en 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
-    <td>29/07/2021</td>
-    <td>29/09/2021</td>
+    <td>7/29/2021</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Cette API est obsolète, car le projet Apache Abdera a été supprimé en 2017.</td>
-    <td>08/04/2019</td>
-    <td>29/09/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>API héritée d’AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
-    <td>08/04/2019</td>
-    <td>29/09/2021</td>
+    <td>4/8/2019</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>Le tableau blanc HTTP Apache Felix nʼest plus pris en charge. Migrez votre code vers le tableau blanc HTTP OSGI. <a href="#org.apache.felix.http.whiteboard">Voir les notes de suppression ci-dessous.</a></td>
     <td>27/01/2022</td>
-    <td>24/03/2022</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>Cette API est obsolète. Migrez votre code vers les API XML fournies par le JDK.</td>
     <td>27/01/2022</td>
-    <td>24/03/2022</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service ne prend pas en charge cette API de journalisation interne.</td>
     <td>27/01/2022</td>
-    <td>24/03/2022</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service ne prend pas en charge cette API log4j interne.</td>
     <td>27/01/2022</td>
-    <td>24/03/2022</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 a atteint sa fin de vie en 2015 et n’est plus pris en charge.</td>
     <td>27/01/2022</td>
-    <td>24/03/2022</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>Cette API n’est plus prise en charge. Utilisez org.apache.sling.api.resource.ResourceResolverFactory à la place.</td>
-    <td>29/09/2022</td>
-    <td>24/11/2022</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
@@ -195,19 +184,13 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Les bibliothèques principales de Google Guava sont obsolètes.</td>
     <td>15/05/2023</td>
-    <td>15/06/2023</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.slf4j.event    </td>
+    <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service ne prend pas en charge cette API slf4j interne.</td>
     <td>11/04/2022</td>
-    <td>30/08/2024</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
-    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
-    <td>17/05/2024</td>
-    <td>30/06/2024</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
@@ -225,13 +208,19 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>com.drew.*</td>
     <td>L’extraction des métadonnées des images et des vidéos doit s’effectuer via Asset Compute dans Cloud Service ou via Apache POI ou Apache Tika.</td>
     <td>17/09/2024</td>
-    <td>17/12/2024</td>
+    <td>8/31/2025</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td></td>
+    <td>Cette API est réservée à un usage interne.</td>
     <td>23/092024</td>
-    <td>23/12/2024</td>
+    <td>8/31/2025</td>
+  </tr>       
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.memory</td>
+    <td>Cette API est réservée à un usage interne.</td>
+    <td>23/092024</td>
+    <td>8/31/2025</td>
   </tr>       
 </tbody>
 </table>
@@ -267,8 +256,7 @@ Vous trouverez ci-dessous une liste exhaustive des API AEM supprimées.
     <td>org.apache.felix.systemready</td>
     <td>Il est recommandé d’utiliser l’API Apache Felix HealthCheck à la place</td>
   </tr>
-  <tr> <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread
-</td>
+  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
     <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge.</td>
   </tr>  
   <tr>
@@ -292,12 +280,28 @@ Vous trouverez ci-dessous une liste exhaustive des API AEM supprimées.
     <td>Les classes util liées à Apache Xerces sont supprimées dans les versions ultérieures, ce qui entraîne un changement de version majeur. Comme ces utilitaires sont destinés à un usage interne à Filevault, lʼAPI devient obsolète dans lʼinterface de lʼAPI publique.</td>
   </tr>
   <tr>
+    <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
+    <td>API héritée d’AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
+  </tr>
+  <tr>
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>AEM as a Cloud Service ne prend pas en charge cette API de journalisation interne.</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
     <td>Mise à niveau de Handlebars requise de la version 4.0.5 à la version 4.3.0 en raison d’une vulnérabilité de sécurité. Ce package n’est plus présent dans les mises à niveau de Handlebars.</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.resourceresolverhelper</td>
+    <td>Cette API n’est plus prise en charge. Utilisez org.apache.sling.api.resource.ResourceResolverFactory à la place.</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.cache</td>
+    <td>Cette API est réservée à un usage interne.</td>
   </tr>
 </tbody>
 </table>
