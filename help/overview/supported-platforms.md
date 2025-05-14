@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 26%
 
 ---
-
 
 # Plateformes clientes prises en charge {#supported-platforms}
 
@@ -35,7 +35,7 @@ Adobe définit les niveaux de prise en charge suivants pour les plateformes clie
 
 L’interface utilisateur d’AEM est optimisée pour les grands écrans des notebooks, des ordinateurs de bureau et des tablettes (comme Apple iPad ou Microsoft Surface). Le format de téléphone n’est pris en charge dans aucun cas d’utilisation de création.
 
-L’interface utilisateur de Adobe Experience Manager fonctionne avec les plateformes clientes suivantes en fonction de [ méthode de création ](/help/edge/authoring-methods.md).
+L’interface utilisateur de Adobe Experience Manager fonctionne avec les plateformes clientes suivantes en fonction de [ méthode de création ](/help/edge/overview.md#authoring-method).
 
 * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)
