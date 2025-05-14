@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 14%
 
 ---
@@ -33,9 +33,8 @@ L’activation des fonctionnalités de la version 2025.5.0 fournit l’ensemble
 * SITES-27775 : recherche de référence optimisée lors de la publication.
 * SITES-30885 : traitement JSON optimisé dans les requêtes persistantes.
 * SITES-25433 : Edge Delivery avec éditeur universel : prend en charge le rendu de page complet lors de la comparaison d’anciennes versions.
-* SITES-27792 : Edge Delivery avec éditeur universel : déplacez entièrement la configuration EDS vers la configuration CA.
+* SITES-27792 : Edge Delivery avec éditeur universel : ajoutez un modèle spécifique pour les configurations de service Edge Delivery.
 * SITES-19754 : Edge Delivery avec éditeur universel : message d’erreur incontournable lorsque la configuration est interrompue.
-* SITES-30267 : Edge Delivery avec éditeur universel : feuille V2 (accès anticipé).
 * SITES-30328 : Edge Delivery avec éditeur universel : aperçu à partir de la prise en charge de Sidekick.
 * SITES-23499 : Edge Delivery avec éditeur universel : permet l’utilisation de plusieurs champs pour les options de bloc.
 * SITES-29987 : permet de définir des `previewUrlPattern` lors de la création de modèles de fragment de contenu.
