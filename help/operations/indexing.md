@@ -4,10 +4,10 @@ description: Découvrez la recherche et l’indexation de contenu dans AEM as a 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 51%
+source-wordcount: '2850'
+ht-degree: 49%
 
 ---
 
@@ -31,9 +31,9 @@ Voici la liste des principaux changements par rapport à AEM 6.5 et les version
 
 Restrictions :
 
-* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`.
-* Seuls les analyseurs standard sont pris en charge (c’est-à-dire les analyseurs fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
+* Actuellement, la gestion des index sur AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`. Cela signifie que toutes les personnalisations d’index doivent être de type `lucene`. La propriété `async` ne peut être que l’une des suivantes : `[async]`, `[async,nrt]` ou `[fulltext-async]`.
 * En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur Skyline, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et par l’utilisateur ou l’utilisatrice, mais certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients et les clientes n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
+* Seuls les analyseurs standard sont pris en charge (c’est-à-dire les analyseurs fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 * La recherche par vecteurs de caractéristiques similaires (`useInSimilarity = true`) n’est pas prise en charge.
 
 >[!TIP]
@@ -78,6 +78,9 @@ Pour les personnalisations d’un index prêt à l’emploi, préparez un nouvea
 Pour un index entièrement personnalisé, préparez un nouveau package de définition d’index contenant la définition d’index qui suit ce modèle de dénomination :
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+Comme indiqué dans les sections sur les limites , la `type` de la définition d’index personnalisée doit toujours être définie sur `lucene` même si la définition d’index extraite à l’aide du gestionnaire de packages est d’un type différent (par exemple, `elasticsearch`).
+La propriété `async` doit également être modifiée au cas où la définition d’index extraite est définie sur `elastic-async`. La propriété `async` doit être définie sur l’une des propriétés suivantes : `[async]`, `[async,nrt]` ou `[fulltext-async]` pour la définition d’index personnalisée.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
