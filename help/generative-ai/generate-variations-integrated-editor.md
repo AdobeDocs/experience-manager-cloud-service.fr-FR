@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -172,7 +172,7 @@ La gestion de l’utilisation dépend de l’action effectuée :
 
   >[!NOTE]
   >
-  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/fr/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
+  >Consultez [Adobe Experience Manager : Cloud Service | Description du produit](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) pour plus d’informations sur les droits de base et contactez votre équipe en charge des comptes si vous souhaitez acheter des actions génératives supplémentaires.
 
 ## Accès à Générer des variations {#access-generate-variations}
 
@@ -313,10 +313,10 @@ Pour utiliser la fonction Générer des variations dans le sidekick (Edge Deliv
 
 ### Obtenir un accès à partir de l’éditeur universel AEM {#access-aem-universal-editor}
 
-L’accès à partir de l’[Éditeur universel d’AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) est implémenté en tant qu’extension.
+L’accès à partir de l’[éditeur universel AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) est mis en œuvre sous la forme d’une extension.
 
-* Pour plus d’informations sur l’accès à la génération de variations à partir de l’éditeur universel, consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations).
-* Pour plus d’informations sur la manière d’activer l’extension, consultez le document [Extension Manager dans AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+* Pour plus d’informations sur la création à l’aide de l’éditeur universel, consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations).
+* Pour plus d’informations sur la manière d’activer l’extension, consultez le document [Extension Manager dans AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/).
 
 ### Obtenir un accès à partir de l’éditeur de fragment de contenu AEM {#access-aem-content-fragment-editor}
 
@@ -328,9 +328,9 @@ Pour plus d’informations, vous pouvez également consulter :
 
 * [Générer des variations GenAI sur GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Expérimentation Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [ IA générative dans les produits Experience Cloud ](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai)
+* [IA générative dans les produits Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai)
 
-   * [IA générative dans les produits Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai#aem)
+   * [IA générative dans les produits Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/generative-ai#aem)
 
 ## Historique des versions {#release-history}
 

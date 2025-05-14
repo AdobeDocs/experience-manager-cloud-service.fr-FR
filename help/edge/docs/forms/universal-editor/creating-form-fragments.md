@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Pour créer un fragment de formulaire dans l’éditeur universel, procédez com
    ![Création d’un fragment](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    L’assistant **Créer un fragment de formulaire adaptatif** s’affiche.
-1. Sélectionnez le modèle basé sur Edge Delivery Services dans l’onglet **Sélectionner le modèle** et cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez le modèle basé sur Egde Delivery Services dans l’onglet **Sélectionner le modèle** et cliquez sur **[!UICONTROL Suivant]**.
    ![Sélection de modèle Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Indiquez le titre, le nom, la description et les balises du fragment. Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.

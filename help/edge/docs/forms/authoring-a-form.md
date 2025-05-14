@@ -3,13 +3,13 @@ title: Comment créer des formulaires dans AEM ?
 description: Découvrez les différentes plateformes de création de formulaires disponibles dans Adobe Experience Manager (AEM) et choisissez celle qui convient le mieux à vos besoins.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
-workflow-type: tm+mt
+exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
+source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
+workflow-type: ht
 source-wordcount: '1176'
 ht-degree: 100%
 
 ---
-
 
 # Comment créer des formulaires dans Adobe Experience Manager (AEM) ?
 
