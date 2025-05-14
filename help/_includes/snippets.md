@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Fragments de code {#snippets}
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
@@ -260,11 +260,11 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 * [Composants de bloc de formulaire adaptatif et leurs propriétés](/help/edge/docs/forms/form-components.md)
 * [Utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
 
-## Authentification découplée de l’éditeur universel {#ue-headless-auth}
+## Authentification découplée pour l’éditeur universel {#ue-headless-auth}
 
 >[!NOTE]
 >
->Si vous utilisez l’éditeur universel dans un cas d’utilisation découplé, votre application découplée doit gérer sa propre authentification.
+>Si vous utilisez l’éditeur universel dans un cas d’usage découplé, votre application découplée doit gérer sa propre authentification.
 
 ## Obsolescence de PWA {#pwa-deprecation}
 
