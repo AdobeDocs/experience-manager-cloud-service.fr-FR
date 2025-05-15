@@ -3,13 +3,11 @@ title: Comment intégrer un modèle de données de formulaire (FDM) pour un form
 description: Découvrez comment créer des formulaires basés sur un modèle de données de formulaire (FDM). Générer et modifiez des données d’exemples pour les objets de modèle de données dans FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +15,13 @@ ht-degree: 100%
 
 L’intégration de formulaires à un modèle de données de formulaire (FDM) dans l’éditeur universel vous permet d’utiliser diverses sources de données back-end pour créer un modèle de données de formulaire (FDM). Vous pouvez utiliser le modèle de données de formulaire (FDM) comme schéma dans divers workflows de formulaire. Configurez les sources de données et créez un modèle de données de formulaire (FDM) basé sur les objets et services de modèle de données disponibles dans les sources de données.
 
-## Remarque
+## Considérations
+
+* Si l’icône **Sources de données** ne s’affiche pas dans l’interface de l’éditeur universel ou si la propriété **Référence de liaison** n’apparaît pas dans le panneau de propriété de droite, activez l’extension **Source de données** dans l’**Extension Manager**.
+
+  ![gestionnaire d’extensions](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 * Le service de préremplissage des formulaires dans l’éditeur universel n’est actuellement pas pris en charge.
 
@@ -32,6 +36,7 @@ Avant de configurer votre formulaire avec le modèle de données de formulaire d
 ## Création de formulaires avec un modèle de données de formulaire dans l’éditeur universel
 
 Dans l’éditeur universel, vous pouvez créer ce qui suit :
+
 * [Formulaire basé sur un schéma](#schema-based-form) : un formulaire basé sur un schéma utilise une source de données configurée lors de la création du formulaire dans l’onglet **Données**, liant automatiquement les données aux champs du formulaire.
 * [Formulaire non basé sur un schéma](#non-schema-based-form) : un formulaire non basé sur un schéma nécessite que vous ajoutiez manuellement une source de données et que vous liiez chaque champ à partir de l’arborescence de contenu.
 
@@ -44,14 +49,14 @@ Ces méthodes vous offrent la possibilité de connecter des modèles de données
 Lorsque vous créez un formulaire basé sur un schéma, il est automatiquement configuré avec une source de données et les champs du formulaire sont déjà liés aux données par le biais de liaisons de données. Pour créer un formulaire basé sur un schéma à l’aide de l’assistant de création de formulaire, procédez comme suit :
 
 1. Connectez-vous à votre instance de création [!DNL Experience Manager Forms].
-2. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
-3. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant. Dans l’onglet **Source**, sélectionnez un modèle :
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant. Dans l’onglet **Source**, sélectionnez un modèle :
 
    ![Modèle Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
    Lorsque vous sélectionnez un modèle basé sur Edge Delivery Services, le bouton **[!UICONTROL Créer]** est activé. Vous pouvez accéder aux onglets **[!UICONTROL Source de données]** ou **[!UICONTROL Envoi]** pour sélectionner une source de données ou une action d’envoi.
 
-4. Dans l’onglet **Données**, vous pouvez sélectionner l’un des modèles de données suivants :
+1. Dans l’onglet **Données**, vous pouvez sélectionner l’un des modèles de données suivants :
 
    * **Modèle de données de formulaire (FDM)** : intégrez des objets et des services de modèle de données provenant de sources de données dans votre formulaire. Choisissez le modèle de données de formulaire (FDM) si votre formulaire nécessite la lecture et l’écriture de données provenant de plusieurs sources.
 
@@ -64,11 +69,11 @@ Lorsque vous créez un formulaire basé sur un schéma, il est automatiquement c
 
      Par défaut, tous les champs du schéma JSON ou du modèle de données de formulaire (FDM) associé sont automatiquement sélectionnés et convertis en composants de formulaire correspondants, ce qui simplifie le processus de création. L’assistant vous permet également de sélectionner les champs à inclure dans le formulaire à l’aide de cases à cocher.
 
-5. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche.
-6. Spécifiez le **Nom** et le **Titre**.
-7. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
+1. Cliquez sur **[!UICONTROL Créer]** et l’assistant **Créer un formulaire** s’affiche.
+1. Spécifiez le **Nom** et le **Titre**.
+1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
    `https://github.com/wkndforms/edsforms`
-8. Cliquez sur **[!UICONTROL Créer]**.
+1. Cliquez sur **[!UICONTROL Créer]**.
 
    ![Créer un formulaire basé sur un schéma](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,12 +133,29 @@ Lorsque vous créez un formulaire non basé sur un schéma, aucune source de don
 
    ![Créer le formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Vous devez ajouter manuellement une liaison de données à un élément de formulaire en la spécifiant dans les propriétés **Référence de liaison** de l’élément de formulaire.
-Par exemple, ajoutons une référence de liaison de données à la zone de texte **Pet Name** déjà présente dans le formulaire :
+Vous pouvez ajouter une liaison de données à un champ de formulaire en la sélectionnant dans la propriété **Référence de liaison**. Par exemple, ajoutons une référence de liaison de données à la zone de texte **Id** déjà présente dans le formulaire.
+Pour sélectionner la liaison de données pour le champ de formulaire dans l’arborescence de la source de données, procédez comme suit :
+
+1. Ouvrez les propriétés du champ de formulaire pour lequel vous souhaitez ajouter la référence de liaison de données.
+1. Accédez à la propriété **Référence de liaison** et cliquez sur l’icône **Parcourir**.
 
    ![Ajout manuel de la liaison de données pour un champ de formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   Vous pouvez maintenant ajouter et [configurer l’action d’envoi](/help/edge/docs/forms/universal-editor/submit-action.md) pour votre formulaire.
+1. Choisissez la référence de liaison de données dans l’arborescence de la source de données de l’assistant **Sélectionner une référence de liaison**.
+
+   ![sélectionner la référence de liaison de données](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. Sélectionnez dans l’arborescence de la source de données l’élément de données que vous souhaitez lier au champ de formulaire, puis cliquez sur **Sélectionner**.
+
+   ![sélectionner l’élément de données](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   Le champ de formulaire est lié à l’élément de données et il apparaît dans la propriété **Référence de liaison**.
+
+   ![Liaison de données automatique](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   Vous pouvez également modifier manuellement la propriété **Référence de liaison** pour le champ de formulaire.
+
+Vous pouvez maintenant ajouter et [configurer l’action d’envoi](/help/edge/docs/forms/universal-editor/submit-action.md) pour votre formulaire.
 
 ## Voir également
 
