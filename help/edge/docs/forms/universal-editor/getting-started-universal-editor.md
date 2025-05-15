@@ -71,6 +71,7 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
       ![ouvrir le fichier fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. Modifiez le fichier **fstab.yaml** pour mettre à jour le point de montage de votre projet. Remplacez l’URL par l’URL de votre instance de création AEM as a Cloud Service.
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![modifier le fichier fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -344,7 +345,7 @@ Vous pouvez configurer un environnement de développement AEM local pour dévelo
        npm install -g @adobe/aem-cli
    ```
 
-1. **Clonez votre projet GitHub** : clonez votre référentiel de projet AEM à partir de GitHub à l’aide de la commande suivante, en remplaçant <owner> la personne propriétaire du référentiel et <repo> le nom du référentiel :
+1. **Clonez votre projet GitHub** : clonez votre référentiel de projet AEM à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>
