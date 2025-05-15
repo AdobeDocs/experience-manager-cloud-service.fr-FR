@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -81,12 +81,12 @@ Suivez l’assistant comme vous le feriez pour toute autre page et vous avez cr�
 
 Les modèles de page ne définissent que le contenu initial des pages. Les pages sont alors entièrement modifiables avec l’éditeur universel.
 
-* Les pages créées à partir de modèles de pages sont des copies indépendantes du modèle.
+* Les pages créées à partir de modèles de page sont des copies indépendantes du modèle.
 * Si le modèle change, les pages existantes basées sur ce modèle ne changent pas.
 * La personne ayant créé le contenu peut modifier et mettre à jour le contenu de la page résultant du processus, le cas échéant, sans restriction de la part du modèle.
 
 ## Modèles modifiables {#editable-templates}
 
-Les pages créées avec l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) peuvent également être basées sur des modèles. Les modèles utilisés pour créer des pages pour l’éditeur universel et l’éditeur de page tirent tous deux parti des [modèles modifiables](/help/implementing/developing/components/templates.md) AEM.
+Les pages créées avec l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) peuvent également être basées sur des modèles. Les modèles utilisés pour créer des pages pour l’éditeur universel et l’éditeur de page exploitent tous deux AEM [modèles modifiables](/help/implementing/developing/components/templates.md).
 
 Les modèles utilisés pour créer des pages modifiables avec l’éditeur de page exploitent toutes les fonctionnalités des modèles modifiables. Les modèles utilisés pour créer des pages modifiables avec l’éditeur universel n’utilisent que la fonction de contenu initial.
