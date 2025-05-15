@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.2.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Nous continuerons à activer le nouvel éditeur de fragments de contenu basé su
 
 **API Translation HTTP**
 
-L’API REST AEM Translation HTTP, en mode d’adoption précoce depuis un certain temps, est désormais généralement disponible. Vous trouverez la documentation [ici](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). L’API permet d’automatiser les étapes requises dans le processus de gestion de traduction du contenu dans AEM.
+L’API REST AEM Translation HTTP, en mode d’adoption précoce depuis un certain temps, est désormais généralement disponible. La documentation se trouve [ici.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L’API permet d’automatiser les étapes requises dans le processus de gestion de traduction du contenu dans AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
