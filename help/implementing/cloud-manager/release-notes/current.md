@@ -4,9 +4,9 @@ description: En savoir plus sur la version 2025.5.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1050'
 ht-degree: 16%
 
 ---
@@ -166,11 +166,11 @@ Participez au programme des utilisateurs et utilisatrices précoces de Cloud Man
 
 Les opportunités d’utilisateurs et utilisatrices précoces suivantes sont actuellement disponibles :
 
-### Ajouter un pipeline Edge Delivery {#add-eds-pipeline}
+### Ajouter le pipeline de configuration Edge Delivery {#add-eds-pipeline}
 
-Les **pipelines** sont désormais pris en charge pour les sites créés avec Edge Delivery Services, étendant cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser **Pipelines** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Voir [ Configurations prises en charge ](/help/operations/config-pipeline.md#configurations).
+Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, étendant cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser **Pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Voir [ Configurations prises en charge ](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![Ajout d’un pipeline Edge Delivery dans la liste déroulante Ajouter un pipeline ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
