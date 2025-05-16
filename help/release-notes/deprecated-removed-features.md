@@ -4,9 +4,9 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
+source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2560'
 ht-degree: 97%
 
 ---
@@ -48,6 +48,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Foundation] | L’onglet Distribuer de l’écran d’administration de l’agent de réplication et l’API de réplication ne peuvent pas répliquer des packages de contenu de plus de 10 Mo. | [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Étape de workflow d’activation de l’arborescence](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Les intégrations qui utilisent des informations d’identification générées à partir des projets Adobe Developer Console perdent progressivement la prise en charge des informations d’identification du compte de service (JWT). Depuis le 1er mai 2024, les nouvelles informations d’identification du compte de service (JWT) ne peuvent plus être créées dans Adobe Developer Console. Les informations d’identification de compte de service (JWT) existantes restent utilisables pour les intégrations configurées jusqu’au 1er janvier 2025, après quoi elles cesseront de fonctionner, ce qui nécessitera que les clientes et clients et clientes migrent vers les informations d’identification OAuth de serveur à serveur. [En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrez](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) vers les informations d’identification OAuth serveur à serveur. |
 | [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/replication.md#tree-activation), qui est plus performante. |
+| Sites | [Automatisation de la configuration d’Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Aucun |
 
 
 ## Fonctionnalités supprimées {#removed-features}

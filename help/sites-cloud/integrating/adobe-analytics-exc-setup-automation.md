@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 87%
+source-wordcount: '727'
+ht-degree: 86%
 
 ---
 
 # Intégration d’Adobe Analytics à l’automatisation de la configuration des Experience Cloud {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>La fonctionnalité Automatisation de la configuration d’Experience Cloud est obsolète.
 
 L’automatisation de la configuration d’Experience Cloud offre un moyen simple et automatisé d’intégrer et d’utiliser Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface simple d’assistant de l’interface utilisateur.
 
@@ -32,7 +36,7 @@ Avant d’utiliser cette fonctionnalité, il est recommandé de suivre les instr
 
 1. Connectez-vous à Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Assurez-vous que l’identifiant de l’organisation IMS approprié est sélectionné dans le coin supérieur droit.
-1. Cliquez sur l’option de navigation Produits .
+1. Cliquez sur l’option Navigation dans les produits .
 1. Vérifiez qu’« Adobe Experience Manager as a Cloud Service » a été configuré pour l’organisation IMS.
 1. Vérifiez qu’« Adobe Analytics » a été configuré pour l’organisation IMS.
 1. Accédez à Cloud Manager (https://experience.adobe.com/cloud-manager).
@@ -47,13 +51,13 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
 1. Accédez à **Sites** et sélectionnez la racine du site à intégrer à Adobe Analytics.
 1. Développez le menu du rail latéral et sélectionnez **Configuration d’Analytics**.
 
-   Il s’agit d’une nouvelle option du rail latéral qui ouvre un panneau qui fournit des commandes et un état pour l’automatisation de la configuration de l’Experience Cloud.
-1. Sélectionnez le bouton **Intégrer Analytics** .
+   Il s’agit d’une nouvelle option du rail latéral qui ouvre un panneau qui fournit des commandes et un état pour l’automatisation de la configuration d’Experience Cloud.
+1. Sélectionnez le bouton **Intégrer Analytics**.
 1. Dans la boîte de dialogue qui s’affiche, fournissez un nom au **Identifiant de suite de rapports**.
 
-   Cette chaîne est utilisée pour créer un [identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme entrepôt de données pour les données d’analyse du site d’AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
+   Cette chaîne est utilisée pour créer un [identifiant de suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr) dans Adobe Analytics comme magasin de données pour les données d’analyse du site AEM sélectionné. La chaîne fournie est ajoutée avec les identifiants d’environnement et de niveau pour garantir l’unicité.
 
-1. Actualisez la page et le panneau et sélectionnez **Vérifier l’état de l’intégration** pour vérifier l’état de l’automatisation.
+1. Actualisez la page et le panneau, puis sélectionnez **Vérifier l’état d’intégration** pour vérifier l’état de l’automatisation.
 
    La configuration de l’automatisation se produit de manière asynchrone. La **Vérification de l’état d’intégration** affiche l’état actuel de l’intégration.
 
