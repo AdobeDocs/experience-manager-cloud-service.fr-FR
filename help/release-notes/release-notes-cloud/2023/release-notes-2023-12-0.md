@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2023.12.0 d’ [!DNL Adobe Exp
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -27,7 +27,7 @@ La section suivante concerne les notes de mise à jour de la version 2023.12.0 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2023.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 14 décembre 2023. La prochaine disponibilité des fonctionnalités (2024.1.0) est prévue pour le jeudi 25 janvier 2023.
+La date de publication de la version actuelle (2023.12.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 14 décembre 2023. La prochaine version des fonctionnalités (2024.1.0) est prévue pour le jeudi 25 janvier 2023.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -51,7 +51,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 La surveillance de l’utilisation en temps réel (RUM) offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il constitue une excellente opportunité d’obtenir des informations avancées sur les performances de votre page. Il est ainsi utile pour la clientèle qui utilise un réseau CDN géré ou non par Adobe. Par ailleurs, pour les personnes utilisant un réseau CDN non géré par Adobe, il est désormais possible de créer automatiquement des rapports sur le trafic, ce qui leur évite d’avoir à partager n’importe quel rapport sur le trafic avec Adobe.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un email à `aemcs-rum-adopter@adobe.com`, ainsi que votre nom de domaine pour l’environnement de production, d’évaluation et de développement, à partir de votre adresse électronique associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance de l’utilisation réelle (RUM) pour vous.
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à `aemcs-rum-adopter@adobe.com`, ainsi que votre nom de domaine pour l’environnement de production, d’évaluation et de développement, à partir de l’adresse e-mail associée à votre Adobe ID. L’équipe produit d’Adobe activera alors le service de données de surveillance d’utilisation réelle (RUM) pour vous.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -83,7 +83,7 @@ Vous pouvez désormais facilement rechercher du contenu en sélectionnant une im
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Connexion d’un formulaire adaptatif à une liste Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)** : AEM Forms assure une intégration prête à l’emploi pour envoyer les données de formulaire directement à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer Microsoft SharePoint List comme source de données pour un modèle de données de formulaire et utiliser l’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** pour connecter un formulaire adaptatif à la liste SharePoint.
+* **[Connexion d’un formulaire adaptatif à une liste Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)** : AEM Forms assure une intégration prête à l’emploi pour envoyer les données de formulaire directement à la liste SharePoint, ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer la liste Microsoft SharePoint en tant que source de données pour un modèle de données de formulaire et utiliser l’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** pour connecter un formulaire adaptatif à la liste SharePoint.
 
 <!-- 
 
@@ -105,9 +105,9 @@ Vous pouvez désormais facilement rechercher du contenu en sélectionnant une im
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Programme d’adoption précoce pour la configuration du réseau CDN {#cdn-config-early-adopter}
+### Programme de mappage de domaines pour les utilisateurs et utilisatrices précoces {#cdn-config-early-adopter}
 
-Outre les [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’applications web (WAF) pouvant faire l’objet d’une licence facultative, il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau de diffusion de contenu. Nous aimerions bien connaître vos cas pratiques, notamment :
+Outre les [ Règles de filtrage du trafic ](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’application web (WAF) sous licence facultative, vous pouvez utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires
 * Transformations d’URL
@@ -116,7 +116,7 @@ Outre les [règles de filtrage du trafic](/help/security/traffic-filter-rules-in
 * authentification par nom d’utilisateur/mot de passe
 * toute autre configuration CDN utile
 
-Envoyez un email à **aemcs-cdn-config-adopter@adobe.com** à partir de votre ID d&#39;email officiel avec vos commentaires.
+Envoyez un e-mail à **aemcs-cdn-config-adopter@adobe.com** à partir de votre ID d’e-mail officiel avec vos commentaires.
 
 ## Cloud Manager {#cloud-manager}
 

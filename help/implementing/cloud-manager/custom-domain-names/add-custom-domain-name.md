@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 17%
@@ -75,7 +75,7 @@ Lors de la saisie du nom de domaine, n’incluez pas de `http://`, de `https://`
 
    >[!NOTE]
    >
-   >Si vous utilisez votre propre certificat SSL géré par le client (OV/EV ou DV), vous n’avez pas besoin d’ajouter de certificat SSL. Cette règle s’applique également si vous prévoyez d’utiliser un ***fournisseur*** de réseau de diffusion de contenu (CDN) géré par le client. Au lieu de cela, accédez directement à [ Ajouter une configuration de réseau CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) lorsque vous êtes prêt(e).
+   >Si vous utilisez votre propre certificat SSL géré par le client (OV/EV ou DV), vous n’avez pas besoin d’ajouter de certificat SSL. Cette règle s’applique également si vous prévoyez d’utiliser un ***fournisseur*** de réseau de diffusion de contenu (CDN) géré par le client. Au lieu de cela, accédez directement à [Ajouter un mappage de domaine](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) lorsque vous êtes prêt(e).
 
 
 ### étapes de certificat géré par Adobe {#adobe-managed-cert-steps}

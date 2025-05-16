@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.3.0 d’ [!DNL Adobe Expe
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Regardez la vidéo de vue d’ensemble de la version de mars 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.3.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450361?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites peut désormais être utilisé comme source de contenu pour Edge Del
 
 ![Création AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=fr#M43905)
+Pour plus d’informations, consultez la [documentation](/help/edge/overview.md) et regardez [AEM Gems - Commencer avec la création AEM et Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Éditeur universel pour des implémentations découplées**
 
@@ -201,7 +201,7 @@ Les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-includin
 
 Vous pouvez maintenant envoyer un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour rejoindre le programme d’adoption précoce pour pouvoir recevoir une alerte chaque fois que vos règles de filtrage du trafic sont déclenchées. Les notifications par e-mail du Centre d’actions vous tiendront au courant lorsque certaines conditions de trafic se produisent afin que vous puissiez prendre les mesures appropriées.
 
-#### Configuration du réseau CDN (Programme d’adoption précoce) {#cdn-config-early-adopter}
+#### Mappage de domaine (programme des utilisateurs et utilisatrices précoces) {#cdn-config-early-adopter}
 
 Outre les [Règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) récemment publiées qui incluent les règles WAF (Web Application Firewall) sous licence optionnelle, il existe une opportunité d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration du réseau CDN. [En savoir plus](/help/implementing/dispatcher/cdn-configuring-traffic.md) et rejoindre le programme d’adoption précoce en envoyant un e-mail à **<aemcs-cdn-config-adopter@adobe.com>** pour accéder aux éléments suivants :
 

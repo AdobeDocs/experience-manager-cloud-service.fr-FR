@@ -4,7 +4,7 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 36%
@@ -19,11 +19,11 @@ ht-degree: 36%
 >title="Réseau de diffusion de contenu dans AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service est fourni avec un réseau CDN. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
 
-AEM as a Cloud Service est fourni avec un réseau CDN intégré, conçu pour réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds Edge près du navigateur de l’utilisateur. Ce réseau CDN entièrement géré est optimisé pour les performances des applications AEM.
+AEM as a Cloud Service est fourni avec un réseau CDN intégré, conçu pour réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds Edge près du navigateur de l’utilisateur. Ce réseau CDN entièrement géré est optimisé pour les performances de l’application AEM.
 
 Le réseau CDN géré par AEM répond aux besoins de la plupart des clients en matière de performances et de sécurité. Pour le niveau de publication, les clients et clientes peuvent choisir d’acheminer le trafic via leur propre réseau CDN, qu’ils ou elles doivent gérer. Cette option est disponible au cas par cas, en particulier lorsque les clients disposent d’intégrations héritées existantes avec un fournisseur de réseau CDN, difficiles à remplacer.
 
-Les clients qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par l’Adobe ](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Les clients et clientes qui souhaitent effectuer une publication au niveau Edge Delivery Services peuvent tirer parti du réseau CDN géré par Adobe. Voir [Réseau CDN géré par Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
@@ -32,12 +32,12 @@ Les clients qui souhaitent effectuer une publication au niveau Edge Delivery Ser
 
 <!-- CQDOC-21758, 5a -->
 
-Pour préparer la diffusion de contenu à l’aide du réseau CDN intégré d’AEM via l’interface utilisateur en libre-service de Cloud Manager, vous pouvez tirer parti des fonctionnalités de réseau CDN géré par Adobe. Cette fonctionnalité vous permet de gérer la gestion du réseau CDN en libre-service, y compris la configuration et l’installation de certificats SSL tels que les certificats DV (Validation de domaine) ou EV/OV (Validation d’organisation/étendue). Pour plus d’informations sur ces méthodes, voir :
+Pour préparer la diffusion de contenu à l’aide du réseau CDN intégré d’AEM via l’interface utilisateur en libre-service de Cloud Manager, vous pouvez tirer parti des fonctionnalités du réseau CDN géré par Adobe. Cette fonctionnalité vous permet de gérer la gestion du réseau CDN en libre-service, y compris la configuration et l’installation de certificats SSL tels que les certificats DV (Validation de domaine) ou EV/OV (Validation d’organisation/étendue). Pour plus d’informations sur ces méthodes, voir :
 
 * [Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Configuration d’un réseau CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configuration d’un réseau CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **Limitation du trafic**
 
@@ -56,7 +56,7 @@ Vous pouvez configurer le trafic sur le réseau CDN de différentes manières, n
 * blocage du trafic malveillant à l’aide de [règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md) (y compris les règles WAF avancées éventuellement sous licence)
 * modification de la nature de la [requête et réponse](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * application des redirections 301/302 [côté client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* déclaration de [sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) pour inverser une requête de proxy vers des serveurs principaux non AEM
+* déclaration des [sélecteurs d’origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) pour inverser une requête de proxy vers des serveurs principaux non AEM
 
 Utilisez les fichiers YAML dans Git pour configurer ces fonctionnalités. Vous pouvez également utiliser le [Pipeline de configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md) de Cloud Manager pour les déployer.
 
@@ -81,7 +81,7 @@ Pour les cas d’utilisation d’authentification légers, notamment les parties
 >title="Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM"
 >abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner."
 
-Si un client ou une cliente doit utiliser son réseau CDN, il ou elle peut le gérer et le pointer vers le réseau CDN géré par AEM, dans la mesure où les conditions suivantes sont satisfaites :
+Si un client ou une cliente doit utiliser son réseau CDN existant, il ou elle peut le gérer et le pointer vers le réseau CDN géré par AEM, dans la mesure où les conditions suivantes sont satisfaites :
 
 * Le client ou la cliente doit disposer d’un réseau CDN existant, ce qui serait coûteux à remplacer.
 * Le client doit le gérer.
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN d’Adobe est effectué à l’aide du `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` de domaine par défaut, qui doit être envoyé dans l’en-tête du `Host` de requête. Le remplacement de l’en-tête `Host` de la requête par un nom de domaine personnalisé peut acheminer la requête incorrectement via le réseau CDN d’Adobe ou entraîner des erreurs 421.
+>Lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN d’Adobe est effectué à l’aide de la `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` de domaine par défaut, qui doit être envoyée dans l’en-tête du `Host` de requête. Le remplacement de l’en-tête `Host` de la requête par un nom de domaine personnalisé peut acheminer la requête de manière incorrecte via le réseau CDN Adobe ou entraîner des erreurs 421.
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ Le réseau de diffusion de contenu géré par AEM ajoute des en-têtes à chaque
 >
 >S’il existe un réseau CDN géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau CDN du client plutôt que le client réel. Les clients doivent gérer les en-têtes de géolocalisation via leur propre réseau CDN lors de l’utilisation d’un réseau CDN géré par le client.
 
-Les valeurs des codes pays sont les codes Alpha-2 décrits dans la norme [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1).
+Les valeurs des codes de pays sont les codes Alpha-2 décrits dans la norme [ISO 3166-1](https://fr.wikipedia.org/wiki/ISO_3166-1).
 
 Les valeurs des codes du continent sont les suivantes :
 
