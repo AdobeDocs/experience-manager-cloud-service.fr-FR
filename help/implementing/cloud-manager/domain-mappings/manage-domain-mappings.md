@@ -38,7 +38,7 @@ Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **R
 
 1. Dans la boîte de dialogue **Modifier la configuration du réseau de diffusion de contenu**, définissez une ou plusieurs des options dans la liste déroulante correspondante.
 
-   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **** ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
+   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **&#x200B;**&#x200B;ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
 
 1. Cliquez sur **Mettre à jour**.
 
@@ -63,7 +63,7 @@ Les étapes de modification d’une configuration de réseau CDN à partir de la
 
 1. Dans la boîte de dialogue **Modifier le mappage de domaine**, définissez une ou plusieurs des options dans la liste déroulante correspondante.
 
-   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **** ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
+   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **&#x200B;**&#x200B;ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
 
 1. Cliquez sur **Mettre à jour**.
 
