@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2540'
 ht-degree: 79%
 
 ---
@@ -154,7 +154,6 @@ Configurez la journalisation Java pour des packages Java personnalisés via des 
 |---|---|
 | `org.apache.sling.commons.log.names` | Packages Java pour lesquels collecter les instructions de journal. |
 | `org.apache.sling.commons.log.level` | Niveau de journalisation auquel consigner les packages Java, spécifié par `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Spécifiez la cible de la sortie : `logs/error.log` |
 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
