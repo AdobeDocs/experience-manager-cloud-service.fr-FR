@@ -42,7 +42,7 @@ Le service de télémétrie opérationnelle est conçu pour minimiser la collect
 * Nom d’hôte du site visité, par exemple : `experienceleague.adobe.com`
 * Type d’agent utilisateur général et système d’exploitation utilisés pour afficher la page, par exemple : `desktop:windows` ou `mobile:ios`
 * Heure à laquelle les données ont été collectées, par exemple : `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs`
+* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs?lang=fr`
 * URL du référent (URL de la page qui a été liée à la page active, si l’utilisateur a suivi un lien)
 * Identifiant de la page vue généré de manière aléatoire, dans un format similaire à : `2Ac6`
 * Poids ou inverse du taux d’échantillonnage, tel que : `100`. Cela signifie que seule une page vue sur cent est enregistrée
