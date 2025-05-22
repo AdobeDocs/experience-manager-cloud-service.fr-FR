@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.5.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3448064?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ Les actions et les workflows de traduction de contenu déclenchent désormais de
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Service de surveillance des utilisateurs et utilisatrices en temps réel (RUM) {#real-use-monitoring}
+#### Service Opérationnel De Télémétrie {#real-use-monitoring}
 
-* **[Le service de données Real User Monitoring (surveillance des utilisateurs et utilisatrices en temps réel, RUM) est désormais en disponibilité générale](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**. Il permet la collecte de données côté client pour AEM as a Cloud Service.
+* **[Le service de télémétrie opérationnelle est désormais généralement disponible](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** ce qui permet la collecte de données côté client pour AEM as a Cloud Service.
 Le service de surveillance des utilisateurs et utilisatrices en temps réel (RUM) et sa collecte côté client offrent un reflet plus précis des interactions, assurant ainsi une mesure fiable de l’engagement du site web. Il dote la clientèle d’informations avancées sur le trafic et les performances de leurs pages. Il permet d’approfondir les performances de vos pages et d’obtenir des informations pour les améliorer.
 
 #### Création AEM pour Edge Delivery Services {#edge-enhancements}

@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.6.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Consultez la vidéo Vue d’ensemble de la version de juin 2024 pour obtenir un
 
 ### Nouvelles fonctionnalités dans Experience Manager Sites {#new-feature-sites}
 
-**Service de données de surveillance d’utilisation réelle (RUM)** {#real-use-monitoring}
+**Service Opérationnel De Données Télémétriques** {#real-use-monitoring}
 
-Le [service de surveillance des utilisateurs et utilisatrices en temps réel (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) est désormais en disponibilité générale. Il permet la collecte de données côté client pour AEM as a Cloud Service. Ce service offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il offre aux clientes et clients des informations avancées sur le trafic et les performances de leurs pages, ce qui leur offre une occasion précieuse de comprendre et d’améliorer les performances de ces pages.
+Le [service de télémétrie opérationnelle](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) est désormais disponible pour tous, ce qui permet la collecte de données côté client pour AEM as a Cloud Service. Ce service offre un reflet plus précis des interactions des utilisateurs et utilisatrices, assurant une mesure fiable de l’engagement du site web. Il offre aux clientes et clients des informations avancées sur le trafic et les performances de leurs pages, ce qui leur offre une occasion précieuse de comprendre et d’améliorer les performances de ces pages.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 

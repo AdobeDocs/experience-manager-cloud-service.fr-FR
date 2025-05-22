@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 90%
+source-wordcount: '798'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 90%
 Edge Delivery Services est un ensemble de services composable qui offre une grande flexibilité quant à la manière dont vous créez du contenu sur votre site web. Cette fonctionnalité permet d’effectuer les opérations suivantes :
 
 * Créer des sites rapides avec un score Lighthouse parfait.
-* Surveiller continuellement les performances grâce à la fonction RUM (surveillance de l’utilisation réelle).
+* Surveillez en permanence les performances grâce à la télémétrie opérationnelle.
 * Augmenter l’efficacité de la création en découplant les sources de contenu.
 
 Vous pouvez utiliser la gestion de contenu AEM et la création WYSIWYG à l’aide de l’éditeur universel, ainsi que la création basée sur des documents.
@@ -86,7 +86,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 7 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Mise en production | Voir [Liste de contrôle de mise en production](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

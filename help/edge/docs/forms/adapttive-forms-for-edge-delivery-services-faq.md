@@ -6,10 +6,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ### Q : est-il possible de créer un formulaire une seule fois et de l’utiliser sur plusieurs pages web ?
 
-**R :** oui, vous pouvez créer un formulaire à un emplacement et le référencer sur plusieurs pages web, comme le fait la fonctionnalité de composant d’incorporation des formulaires dans les formulaires adaptatifs.
+**R :** Oui, vous pouvez créer un formulaire à un emplacement et le référencer sur plusieurs pages web, comme le fait la fonctionnalité de composant d’incorporation des formulaires dans les formulaires adaptatifs.
 
 ## Intégration et mappage des données
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 **R :** il existe plusieurs options pour l’analyse et le tracking :
 
 - SDK web Adobe Experience Platform (recommandation principale)
-- Surveillance des utilisateurs et utilisatrices réels (RUM) pour les mesures échantillonnées
+- Télémétrie opérationnelle pour les mesures échantillonnées
 - Intégration à d’autres systèmes d’analyse, si nécessaire
 
 ## Documentation et ressources
