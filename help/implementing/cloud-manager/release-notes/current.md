@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 24%
+ht-degree: 52%
 
 ---
 
@@ -21,15 +21,15 @@ Consultez également les [notes de mise à jour actuelles d’Adobe Experience�
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.5.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 8 mai 2025.
+La date de publication de la version 2025.5.0 de Cloud Manager dans AEM as a Cloud Service est le jeudi 8 mai 2025.
 
-La prochaine version est prévue le vendredi 5 juin 2025.
+La prochaine version est prévue le jeudi 5 juin 2025.
 
 ## Nouveautés {#what-is-new}
 
 ### Configuration de la source de contenu en un clic pour Edge Delivery Services
 
-Adobe Experience Manager (AEM) Edge Delivery Services permet la diffusion de contenu à partir de plusieurs sources telles que Google Drive, SharePoint ou AEM lui-même, à l’aide d’un réseau Edge rapidement distribué dans le monde entier.
+Adobe Experience Manager (AEM) Edge Delivery Services permet la diffusion de contenu à partir de plusieurs sources telles que Google Drive, SharePoint ou AEM lui-même, à l’aide d’un réseau Edge Network rapide distribué dans le monde entier.
 
 La configuration de la source de contenu diffère entre Helix 4 et Helix 5. Apprenez la différence et suivez les étapes de configuration complètes, les exemples et les instructions de validation pour les deux versions.
 
@@ -38,26 +38,26 @@ Voir [Configurer votre source de contenu](/help/implementing/cloud-manager/edge-
 
 ## Programme d’adoption précoce {#early-adoption}
 
-Participez au programme des utilisateurs et utilisatrices précoces de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme d’adoption précoce de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les opportunités d’utilisateurs et utilisatrices précoces suivantes sont actuellement disponibles :
+Les possibilités d’adoption précoce suivantes sont actuellement disponibles :
 
 ### Ajouter le pipeline de configuration Edge Delivery {#add-eds-pipeline}
 
-Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, étendant cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser **Pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Voir [ Configurations prises en charge ](/help/operations/config-pipeline.md#configurations).
+Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, étendant cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser **Pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Consultez [Configurations prises en charge](/help/operations/config-pipeline.md#configurations).
 
 ![Ajout d’un pipeline Edge Delivery dans la liste déroulante Ajouter un pipeline ](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
-### Apportez votre propre Git avec la prise en charge immédiate des opérations de développement Azure. {#gitlab-bitbucket-azure-vsts}
+### Apportez votre propre Git, maintenant avec prise en charge d’Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-Les clients peuvent désormais intégrer leurs référentiels Git Azure DevOps dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS hérités (Visual Studio Team Services).
+Les clientes et clients peuvent désormais intégrer leurs référentiels Git Azure DevOps dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS (Visual Studio Team Services) hérités.
 
-* Pour les utilisateurs de Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
-* Pour les utilisateurs d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et frontend.
+* Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
+* Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
 
 La prise en charge de types de pipeline supplémentaires et de la validation des demandes d’extraction par le biais de pipelines de qualité du code sera bientôt disponible.
 
