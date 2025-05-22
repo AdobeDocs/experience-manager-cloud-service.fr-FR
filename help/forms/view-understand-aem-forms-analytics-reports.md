@@ -19,7 +19,7 @@ ht-degree: 2%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Cet article |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=fr) |
 
 Dans le paysage en rapide évolution de l’analyse numérique, il est impératif de rester à l’écoute des tendances mondiales pour prendre des décisions éclairées et optimiser les expériences digitales. Pour résoudre ce problème, le Forms adaptatif s’intègre de manière transparente à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires et documents que vous avez publiés. L’objectif derrière l’analyse de ces mesures est de prendre des décisions basées sur les données, en utilisant des mesures et des analyses afin d’améliorer l’utilisation et l’efficacité des formulaires.
 
@@ -57,7 +57,7 @@ Elle contient les mesures Rendus de formulaire, Envois de formulaire, Erreurs de
 
 * **Erreurs de validation** : les erreurs de validation affichent le nombre total d’erreurs liées à la validation qui se sont produites dans les champs des formulaires.
 
-* **Visiteurs uniques** : les visiteurs uniques représentent le nombre de fois où le formulaire est généré par un visiteur. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement du client](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Visiteurs uniques** : les visiteurs uniques représentent le nombre de fois où le formulaire est généré par un visiteur. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement du client](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr).
 
   ![Performances de Forms](assets/forms-performance.png){width="100%"}
 
@@ -65,8 +65,8 @@ Elle contient les mesures Rendus de formulaire, Envois de formulaire, Erreurs de
 
 Vous obtiendrez ainsi des informations précieuses sur l’activité des visiteurs et visiteuses sur vos formulaires :
 
-* **Visites et envois** : il décrit la fréquence des visites sur vos formulaires dans une période et le nombre correspondant d’envois de formulaire. Pour plus d’informations sur ce clic [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-* **Visiteurs uniques et leur nombre total de visites** : il fait la distinction entre les nouveaux utilisateurs et les utilisateurs récurrents. Par exemple, un visiteur ou une visiteuse peut se rendre sur votre site tous les jours pendant un mois, mais il ou elle compte toujours comme un visiteur unique. Consultez [Visiteurs uniques](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) pour obtenir des informations détaillées.
+* **Visites et envois** : il décrit la fréquence des visites sur vos formulaires dans une période et le nombre correspondant d’envois de formulaire. Pour plus d’informations sur ce clic [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr).
+* **Visiteurs uniques et leur nombre total de visites** : il fait la distinction entre les nouveaux utilisateurs et les utilisateurs récurrents. Par exemple, un visiteur ou une visiteuse peut se rendre sur votre site tous les jours pendant un mois, mais il ou elle compte toujours comme un visiteur unique. Consultez [Visiteurs uniques](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr) pour obtenir des informations détaillées.
 
   ![Visiteurs Forms](assets/forms-visitors.png){width="100%"}
 
