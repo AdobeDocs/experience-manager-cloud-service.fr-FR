@@ -63,7 +63,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 
 >[!NOTE]
 >
->Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs et utilisatrices, des groupes et des droits d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
+>Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs et utilisatrices, des groupes et des droits d’accès](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
 ![Recherche d’autorisations d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour « dam-users », comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
 
