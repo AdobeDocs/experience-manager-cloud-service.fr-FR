@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448064?quality=12&captions=fre_fr)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
