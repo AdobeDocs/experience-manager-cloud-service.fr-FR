@@ -5,24 +5,19 @@ keywords: Activation d’Adobe Analytics pour un formulaire adaptatif à l’aid
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1588'
 ht-degree: 6%
 
 ---
 
-# (Obsolète) Activer Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration d’Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
-
->[!CAUTION]
->
->La fonctionnalité Automatisation de la configuration d’Experience Cloud est obsolète.
-
+# Activation d’Adobe Analytics pour un formulaire adaptatif à l’aide de l’automatisation de la configuration Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Cet article |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 L’automatisation de la configuration d’Experience Cloud permet de connecter Adobe Analytics à Adaptive Forms, ce qui permet d’analyser rapidement les interactions des utilisateurs avec vos formulaires et d’obtenir des informations sur les interactions et l’engagement des visiteurs. L’automatisation de la configuration d’Experience Cloud permet également de surveiller les performances des formulaires, ce qui implique d’évaluer des mesures telles que les délais d’achèvement et les points de dépôt. Cette analyse permet d’optimiser les formulaires pour une meilleure expérience utilisateur, tout en distinguant le comportement des utilisateurs et utilisatrices en fonction du statut de connexion, par exemple les utilisateurs et utilisatrices anonymes, afin d’identifier les tendances et les modèles généraux.
 
@@ -76,7 +71,7 @@ Pour vérifier que les éléments ci-dessus sont disponibles pour votre environn
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=fr)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configuration d’Adobe Analytics {#configure-adobe-analytics}
