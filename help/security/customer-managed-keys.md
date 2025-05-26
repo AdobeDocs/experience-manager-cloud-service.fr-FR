@@ -6,30 +6,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
-workflow-type: ht
-source-wordcount: '1199'
-ht-degree: 100%
+source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 86%
 
 ---
 
 # Configuration des clés gérées par le client ou la cliente pour AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service stocke actuellement les données client dans Stockage Blob Azure et MongoDB, en utilisant des clés de chiffrement gérées par le fournisseur par défaut pour sécuriser les données. Bien que cette configuration réponde aux besoins de sécurité de nombreuses organisations, les entreprises des secteurs réglementés ou celles nécessitant une souveraineté renforcée des données peuvent chercher à mieux contrôler leurs pratiques de chiffrement. Pour les entreprises qui accordent la priorité à la sécurité des données, à la conformité et à la capacité à gérer leurs clés de chiffrement, la solution de clés gérées par le client ou la cliente (CMK, Customer-Managed Keys) offre une amélioration essentielle.
+AEM as a Cloud Service stocke actuellement les données client dans Stockage Blob Azure et MongoDB, en utilisant des clés de chiffrement gérées par le fournisseur par défaut pour sécuriser les données. Bien que cette configuration réponde aux besoins de sécurité de nombreuses organisations, les entreprises des secteurs réglementés ou celles qui ont besoin d’une sécurité des données renforcée peuvent chercher à mieux contrôler leurs pratiques de chiffrement. Pour les entreprises qui accordent la priorité à la sécurité des données, à la conformité et à la capacité à gérer leurs clés de chiffrement, la solution de clés gérées par le client ou la cliente (CMK, Customer-Managed Keys) offre une amélioration essentielle.
 
 ## Le problème en cours de résolution {#the-problem-being-solved}
 
-Les clés gérées par le fournisseur peuvent créer des problèmes pour les entreprises dans des secteurs tels que la finance, la santé et les administrations, où des réglementations strictes exigent un contrôle complet de la sécurité des données. Sans contrôle sur la gestion des clés, les entreprises éprouvent des difficultés à respecter les exigences de conformité, à mettre en œuvre des politiques de sécurité personnalisées et à garantir une souveraineté complète des données.
+Les clés gérées par le fournisseur peuvent créer des problèmes pour les entreprises qui ont besoin de confidentialité et d’intégrité supplémentaires. Sans contrôle sur la gestion des clés, les entreprises rencontrent des difficultés pour répondre aux exigences de conformité, mettre en œuvre des politiques de sécurité personnalisées et assurer une sécurité complète des données.
 
 L’introduction des clés gérées par le client ou la cliente (CMK) résout ces problèmes en permettant aux clientes et clients d’AEM de contrôler entièrement leurs clés de chiffrement. En s’authentifiant via Microsoft Entra ID (anciennement Azure Active Directory), AEM CS se connecte en toute sécurité au coffre de clés Azure du client ou de la cliente, ce qui leur permet de gérer le cycle de vie de leurs clés de chiffrement (création, rotation et révocation des clés).
 
 La solution CMK offre plusieurs avantages :
 
-* **Sécurité renforcée :** les clientes et clients peuvent s’assurer que leurs pratiques de chiffrement répondent à des exigences de sécurité spécifiques, ce qui leur permet de garder l’esprit tranquille quant à la protection des données.
-* **Flexibilité en matière de conformité :** avec un contrôle total du cycle de vie des clés, les entreprises peuvent facilement s’adapter aux normes réglementaires en constante évolution telles que le RGPD, la loi HIPAA ou la CCPA, en s’assurant que leur niveau de conformité reste élevé.
-* **Intégration transparente :** la solution CMK s’intègre directement à Stockage Blob Azure et à MongoDB dans AEM CS, en ne perturbant pas les opérations de stockage ou la convivialité, tout en fournissant aux clientes et clients de puissantes fonctionnalités de chiffrement.
+* **Contrôle des données et chiffrement de l’application :** renforce la sécurité grâce à la gouvernance directe de votre application AEM et de vos clés de chiffrement des données.
+* **Améliorer la confidentialité et l’intégrité :** réduire la probabilité d’accès et de divulgation involontaires de données sensibles ou propriétaires grâce à une gestion complète du chiffrement.
+* **Prise en charge d’Azure Key Vault :** l’utilisation d’Azure Key Vault permet le stockage des clés, le traitement des opérations secrètes et l’exécution de rotations de clés.
 
-En adoptant la solution CMK, les clientes et clients peuvent mieux contrôler leurs pratiques de sécurité et de chiffrement des données, améliorer la conformité et atténuer les risques, tout en continuant à bénéficier de l’évolutivité et de la flexibilité d’AEM CS.
+En adoptant la fonction CMK, les clients peuvent accroître le contrôle sur leurs pratiques de sécurité et de chiffrement des données, améliorer la sécurité et atténuer les risques, tout en continuant à bénéficier de l’évolutivité et de la flexibilité d’AEM CS.
 
 AEM as a Cloud Service vous permet d’apporter vos propres clés de chiffrement pour chiffrer les données au repos. Ce guide décrit les étapes à suivre pour configurer une clé gérée par le client ou la cliente (CMK) dans Azure Key Vault pour AEM as a Cloud Service.
 
@@ -103,7 +103,7 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Accorder à Adobe l’accès au coffre de clés {#grant-adone-access-to-the-key-vault}
+## Accorder à Adobe l’accès au coffre de clés {#grant-adobe-access-to-the-key-vault}
 
 Au cours de cette étape, vous allez permettre à Adobe d’accéder à votre coffre de clés via une application Entra. L’ID de l’application Entra doit déjà avoir été fourni par Adobe.
 
