@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 75%
+source-wordcount: '306'
+ht-degree: 65%
 
 ---
 
@@ -19,18 +19,22 @@ AEM propose un service d’aperçu Sites qui permet aux développeurs et aux aut
 
 Il facilite la prévisualisation des expériences de page qui ne seraient pas visibles autrement à partir de l’environnement de création, comme les transitions de page et tout autre contenu côté publication uniquement.
 
+>[!IMPORTANT]
+>
+>L’accès à l’environnement de prévisualisation nécessite la configuration d’une liste autorisée IP. Pour plus d’informations, consultez [Accès au service d’aperçu](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>Pour plus d’informations sur tous les environnements, voir [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->Comme le contenu est *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
-
-Pour plus d’informations sur les environnements de prévisualisation, consultez le document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Le contenu étant *publié* dans l’environnement de prévisualisation, il est accessible par URL.
 
 ## Publication de contenu en vue de la prévisualisation {#publishing-content-to-preview}
 
 Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de **Publication gérée**.
 
-1. Dans la console Sites, sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication** .
-1. Dans l’assistant suivant, sélectionnez **Preview** comme destination.
+1. Dans la console Sites , sélectionnez la ou les pages à envoyer en prévisualisation, puis cliquez sur le bouton **Gérer la publication**.
+1. Dans l’assistant suivant, sélectionnez **Aperçu** comme destination.
 
    ![publication gérée](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
@@ -40,7 +44,7 @@ Vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’in
 
    >[!NOTE]
    >
-   >Comme le contenu est *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
+   >Le contenu étant *publié* dans l’environnement de prévisualisation, il est accessible par URL (il n’a donc pas besoin d’accéder à AEM).
 
 Vous pouvez également utiliser les URL affichées dans l’assistant pour afficher le contenu de l’aperçu, ou ajouter `preview-` à l’URL de publication de votre instance de production.
 
@@ -48,7 +52,7 @@ Vous pouvez également utiliser les URL affichées dans l’assistant pour affic
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Consultez le document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
+Voir [ Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
 
 Le contenu peut également être publié pour la prévisualisation à l’aide d’un [workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre `agentId` défini sur `preview` ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un `AgentFilter` configuré pour la prévisualisation.
 
