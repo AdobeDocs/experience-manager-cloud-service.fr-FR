@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 859af15f4038b28e6e1398e5168dc008d22985e9
+source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 96%
+source-wordcount: '555'
+ht-degree: 51%
 
 ---
 
@@ -16,72 +16,85 @@ ht-degree: 96%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
->[!NOTE]
->
-> Les versions 20936 et 20783 ont été rendues privées.
+## Version 21005 {#21005}
 
-## Version 20626 {#20626}
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 21005, rendue publique le mercredi 27 mai 2025. La version de maintenance précédente était la version 20626.
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 20626, rendue publique le 29 avril 2025. La version de maintenance précédente était la version 20476.
+L’activation des fonctionnalités de la version 2025.5.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
-L’activation des fonctionnalités 2025.5.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+### Améliorations {#enhancements-21005}
 
-### Améliorations {#enhancements-20626}
+* GRANITE-58927 : améliorations du bouton bascule Recherche sémantique .
+* GRANITE-58800 : mise à jour des collections Apache Commons vers la version 4.5.0.
+* GRANITE-58866 : mise à jour d’Oak vers la version 1.80.0.
+* SKYOPS-106509 : compatibilité GSON améliorée via l’accès réfléchissant dans Java 21.
+* SKYOPS-107761 : mise à jour des modèles Sling Jackson Exporter vers la version 1.1.6.
+* SKYOPS-107813 : mise à jour vers Sling ResourceResolver 1.12.8.
 
-* ASSETS-46413, ASSETS-46580 : ajout d’un nouveau statut de révision, « Prévisualisation ».
-* ASSETS-49542 : extension des langues prises en charge pour la transcription et la traduction vidéo et audio.
-* ASSETS-48264 : extension de la prise en charge de la qualité PNG des rendus.
+### Problèmes résolus {#fixed-issues-21005}
 
-### Problèmes résolus {#fixed-issues-20626}
-
-* ASSETS-50387 : correction de la miniature par défaut des fragments de contenu à utiliser dans GenStudio.
-* ASSETS-49006 : affichage des propriétés vidéo lorsque la personne ne dispose pas des autorisations d’écriture.
-* ASSETS-46757, ASSETS-46997 : amélioration de l’accessibilité dans l’éditeur de recadrage intelligent.
-* ASSETS-48018 : amélioration du suivi des références de ressources dans le rapport de publication Assets.
-* ASSETS-35846 : amélioration de la cohérence de l’accès entre le niveau de création et celui de diffusion.
-* ASSETS-48171 : amélioration de la cohérence du modèle Dynamic Media avec la zone de travail.
-* ASSETS-49813 : amélioration des notifications d’expiration.
-* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287 : amélioration de la gestion et de la visibilité des opérations en masse.
-* ASSETS-50003, ASSETS-50004 : amélioration de l’attribution de noms et du contrôle des rendus inclus dans un téléchargement de ressource.
-* ASSETS-47939 : amélioration de l’organisation des réponses pour Content Hub.
-* ASSETS-46738 : amélioration des performances des collections très volumineuses.
-* ASSETS-50121 : amélioration de la fiabilité des événements publiés sur les ressources.
-* ASSETS-48490 : amélioration de la résilience du traitement automatisé lors de l’ingestion d’images.
-* ASSETS-28106, ASSETS-49404 : amélioration de la robustesse de la recherche en texte intégral.
-* ASSETS-50006, ASSETS-50423 : amélioration des performances de recherche et de traversée dans un dossier volumineux.
-* ASSETS-46021 : amélioration de l’affichage vidéo pour les navigateurs Safari et mobiles.
-* ASSETS-49002 : amélioration de la gestion de la modification des modèles Dynamic Media.
-* ASSETS-48376 : diverses améliorations de l’interface d’utilisation de Content Hub.
-* ASSETS-48504, ASSETS-49378 : diverses améliorations du comportement de l’interface d’utilisation.
-* ASSETS-49540 : sortie de la phase expérimentale de l’OpenAPI Asset Relations.
-* ASSETS-40284 : mise à jour de la documentation sur l’intégration d’Adobe Stock.
-* ASSETS-49739 : travail d’intégration de Figma à partir du sélecteur de ressources.
+* CNTBF-443 : correction de la propriété `EVENT_JOB_TOPIC` SearchSlingJob.
+* GRANITE-57853 : correction des problèmes d’alignement des listes déroulantes dans l’interface utilisateur.
+* GRANITE-58107 : correction des erreurs 404 sur l’instance de publication en désactivant l’affinité pod basée sur l’utilisateur dans le gestionnaire OAuth.
+* GRANITE-58276, SLING-12755 : correction des cycles de dépendance OSGi qui empêchaient le démarrage correct de la fabrique de moteurs de scripts HTL, provoquant des erreurs de rendu côté serveur intermittentes.
+* SKYOPS-105151 : correction du NPE lors de l’accès à la liste de lots.
+* SKYOPS-83910, SKYOPS-82371 - Correction des problèmes de simultanéité de la compilation JSP.
 
 #### Guides AEM {#guides}
 
-* GUIDES-21734 : la génération de nouveaux identifiants pour les éléments échoue lorsque ces éléments sont ajoutés via des fragments de code ou créés via des modèles, même si l’option de génération automatique d’identifiants est activée dans XMLEditorConfig.
-* GUIDES-25969 : si l’attribut `scope=external` est absent des liens externes dans une rubrique DITA, la publication HTML5 échoue sans indiquer les fichiers dans lesquels cet attribut est absent des journaux d’erreurs, en particulier lorsque le microservice est activé.
-* GUIDES-27288 : impossible de transmettre les propriétés de métadonnées pour mapper les pages de destination générées à l’aide de la nouvelle publication AEM Sites.
+* GUIDES-26919 : lors de l&#39;ouverture d&#39;un plan DITA avec Unified Shell activé, l&#39;éditeur s&#39;actualise par intermittence.
+* GUIDES-26282 : si vous ne fermez pas les connexions de session JCR lors de la mise à jour ou de la création de rubriques, des fuites de mémoire et des temps d’arrêt du service se produisent.
+* GUIDES-26434 : la publication native de PDF se poursuit indéfiniment, si le contenu DITA comporte un lien web sans portée comme `external`.
+* GUIDES-26516 : la publication des PDF natifs et des sites AEM est bloquée et mise en file d’attente en cas d’erreur dans le contenu.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problèmes connus {#known-issues-20626}
+### Problèmes connus {#known-issues-21005}
 
 Aucun.
 
-### Fonctionnalités et API obsolètes {#deprecated-20626}
+### Fonctionnalités et API obsolètes {#deprecated-21005}
+
+* GRANITE-54164 : `org.apache.jackrabbit.oak.plugins.blob` supprimé de l’API publique.
+* GRANITE-54280 : `org.apache.jackrabbit.oak.cache` supprimé de l’API publique.
+* GRANITE-58332 : `org.apache.jackrabbit.oak.plugins.memory` obsolète dans l’API publique.
+* La fonctionnalité [Automatisation de la configuration d’Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) est obsolète.
 
 Les fonctionnalités et API obsolètes et supprimées dans AEM as a Cloud Service sont présentées dans le document [Fonctionnalités et API obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-### Correctifs de sécurité {#security-20626}
+### Correctifs de sécurité {#security-21005}
 
-AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 11 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
+AEM as a Cloud Service est dédié à l’optimisation de la sécurité et des performances de votre plateforme. Cette version de maintenance corrige 5 vulnérabilités identifiées, renforçant ainsi notre engagement envers une protection robuste des systèmes.
 
-### Technologies intégrées {#embedded-tech-20626}
+### Avis de modification {#change-notice-21005}
+
+* Cette version contient les nouvelles versions de l’index de produit suivantes :
+   * **damAssetLucene-12**
+
+Les versions personnalisées des versions d’index précédentes seront automatiquement fusionnées avec la nouvelle version de l’index de produit. Appliquez d’autres mises à jour personnalisées à la version fusionnée.
+
+#### Mettre à jour aem-cloud-testing-clients {#update-aem-cloud-testing-clients-21005}
+
+Les modifications à venir nécessiteront que la bibliothèque [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) utilisée dans vos tests fonctionnels personnalisés soit mise à jour vers au moins la version **1.2.1** (Recommandé : dernière version 1.2.9)
+
+Assurez-vous que votre dépendance dans `it.tests/pom.xml` a été mis à jour.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.9</version>
+</dependency>
+```
+
+Cette modification doit être effectuée avant le 15 juin 2025.
+Si vous ne mettez pas à jour la bibliothèque de dépendances, des échecs de pipeline se produiront à l’étape « Tests fonctionnels personnalisés ».
+
+### Technologies intégrées {#embedded-tech-21005}
 
 | Technologie | Version | Lien |
 |---|---|---|
-| AEM Oak | 1.78.0 | [API Oak 1.78.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
+| AEM Oak | 1,80,0 | [API Oak 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.26-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Composants principaux d’AEM | 2.29.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
