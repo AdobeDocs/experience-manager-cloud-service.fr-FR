@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 source-git-commit: ccd2334528ed7309c271d069209adec333de356c
-workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '882'
+ht-degree: 100%
 
 ---
 
@@ -138,6 +138,6 @@ Le tableau suivant récapitule les types d’utilisateurs et d’utilisatrices A
 | AEM > Instance de création de production > Administration AEM | − | − | − | ✓ |
 | **Informations supplémentaires** | Voir [Activation de Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Voir [Intégration des utilisateurs collaborateurs et des utilisatrices collaboratrices](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Voir [Intégration des utilisateurs et utilisatrices experts](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Pour plus d’informations sur la prise en main d’Assets Ultimate, voir [ Activer AEM Assets Ultimate ](/help/assets/enable-assets-ultimate.md). Si des utilisateurs AEM Assets existants ont des questions sur le moment où vous pouvez effectuer la mise à niveau vers Assets Ultimate, contactez votre représentant de compte Adobe. Vous pouvez également consulter [Activer Assets Ultimate pour les clients existants](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) pour plus d’informations.
+Pour plus d’informations sur la prise en main d’Assets Ultimate, consultez [Activation d’AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Si des utilisateurs et utilisatrices d’AEM Assets existants ont des questions sur le moment où effectuer la mise à niveau vers Assets Ultimate, contactez votre représentant ou représentante de compte Adobe. Vous pouvez également consulter [Activer Assets Ultimate pour les clientes et clients existants](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) pour plus d’informations.
 
 AEM Assets fournit également une gestion des ressources numériques plus légère pour les clientes et clients qui ne disposent pas d’exigences avancées telles que l’extensibilité de l’interface d’utilisation, l’automatisation axée sur les API et le déploiement de code personnalisé. Pour plus d’informations, voir [AEM Assets Prime](/help/assets/assets-prime.md).

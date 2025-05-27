@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 # Fragments de code {#snippets}
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
@@ -270,6 +270,6 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 >[!IMPORTANT]
 >
->Les fonctionnalités de l’application web progressive (PWA) pour AEM Sites [ont été abandonnées](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>Les fonctionnalités de l’application web progressive (PWA) pour AEM Sites [ont été abandonnées](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Les projets existants utilisant cette fonctionnalité continueront à être pris en charge, mais les nouveaux projets ne doivent pas utiliser cette fonctionnalité.
