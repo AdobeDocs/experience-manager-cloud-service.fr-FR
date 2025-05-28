@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 37%
 
 ---
@@ -98,6 +98,7 @@ Une fois les fragments créés, vous pouvez :
    * collaborer avec d’autres auteurs à l’aide de Commentaires
 * [Analysez](/help/sites-cloud/administering/content-fragments/analysis.md) la structure de votre fragment de contenu à l’aide de l’éditeur.
 * [Accédez à vos fragments avec GraphQL, pour une diffusion découplée vers vos applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Intégrer et utiliser vos fragments de contenu dans Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * [Ou utilisez vos fragments pour la création de pages](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -176,7 +177,7 @@ Les fragments de contenu sont :
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
    * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
