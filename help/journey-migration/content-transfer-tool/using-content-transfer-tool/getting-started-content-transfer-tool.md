@@ -4,10 +4,10 @@ description: Découvrez comment commencer à utiliser l’outil de transfert de 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
+source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 62%
+source-wordcount: '1654'
+ht-degree: 61%
 
 ---
 
@@ -64,7 +64,7 @@ Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pou
 >id="aemcloud_ctt_demo"
 >title="Exécution de l’outil de transfert de contenu"
 >abstract="Découvrez comment utiliser l’outil de transfert de contenu pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu."
->additional-url="https://video.tv.adobe.com/v/327069/?quality=12&learn=on&captions=fre_fr" text=" Voir Démonstration"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=fre_fr" text=" Voir Démonstration"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
 La section suivante s’applique à la nouvelle version de l’outil de transfert de contenu. Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service à l’aide de l’outil de transfert de contenu :
@@ -101,7 +101,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    >[!NOTE]
    >
-   >Le nom doit respecter les mêmes conventions qu’un nœud AEM et ne peut donc contenir aucun des caractères suivants : &grave;. / : [ ] | * &lt; > ^ ? { } % # «ni symboles ou émoticônes inhabituels.
+   >Le nom doit respecter les mêmes conventions qu’un nœud AEM et ne peut donc contenir aucun des caractères suivants : `. / : [ ] | * &lt; > ^ ? { } % # «ni symboles ou émoticônes inhabituels.
 
 1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Sélectionnez le symbole des trois petits points (**...**) pour ouvrir la liste déroulante, puis sélectionnez **Copier la clé d’extraction**. Vous avez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
@@ -145,10 +145,9 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration
       >Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
       >[!NOTE]
-      >À partir de la version CTT (3.0.24), de nouvelles fonctionnalités ont été incluses dans l’outil de transfert de contenu, ce qui améliore le processus d’inclusion et d’exclusion des chemins d’accès. Auparavant, les chemins d’accès devaient être sélectionnés un par un, ce qui était fastidieux et chronophage. Désormais, les utilisateurs peuvent inclure des chemins d’accès directement à partir de l’interface utilisateur ou charger un fichier CSV en fonction de leurs préférences.
+      >À partir de la version CTT (3.0.24), de nouvelles fonctionnalités ont été incluses dans l’outil de transfert de contenu, ce qui améliore le processus d’inclusion et d’exclusion des chemins d’accès. Auparavant, les chemins d’accès devaient être sélectionnés un par un, ce qui était fastidieux et chronophage. Désormais, les utilisateurs peuvent inclure des chemins d’accès directement à partir de l’interface utilisateur ou charger un fichier CSV en fonction de leurs préférences.  Le fichier CSV doit comporter un chemin d’accès par ligne et aucune virgule.
 
    1. **Chemins à inclure** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte la saisie par saisie ou par sélection. Les utilisateurs ne peuvent sélectionner qu’une seule option pour inclure des chemins d’accès : dans l’interface utilisateur ou en chargeant un fichier CSV.
-
       >[!IMPORTANT]
       >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
       >* `/apps`
