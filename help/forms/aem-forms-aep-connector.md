@@ -5,13 +5,13 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
+source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1554'
 ht-degree: 2%
 
 ---
-
 
 # Intégration d’AEM Forms à Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
 
@@ -56,21 +56,21 @@ La vidéo ci-dessous présente un guide détaillé sur les conditions préalable
 Avant de configurer le connecteur AEP dans AEM Forms, vérifiez que vous avez effectué les opérations suivantes dans Adobe Experience Platform :
 
 1. Configuration du schéma
-   * [Créer un schéma XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Activer le schéma pour le profilage](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Définir un champ d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Créer un schéma XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Activer le schéma pour le profilage](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Définir un champ d’identité](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configuration des données
-   * [Créer un jeu de données](https://experienceleague.adobe.com/fr/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configurer une connexion en continu](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (vous aurez besoin de l’URL du point d’entrée en continu ultérieurement, alors prenez-en note maintenant.)
+   * [Créer un jeu de données](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configurer une connexion en continu](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (vous aurez besoin de l’URL du point d’entrée en continu ultérieurement, alors prenez-en note maintenant.)
 
 3. Authentification
-   * [Générer des informations d’identification d’API](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identifiant client et secret client) à partir de Adobe Developer Console
+   * [Générer des informations d’identification d’API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (identifiant client et secret client) à partir de Adobe Developer Console
 
 
 ## Étapes de mise en œuvre
 
-### 1. Création d’une configuration cloud AEP
+### &#x200B;1. Création d’une configuration cloud AEP
 
 1. Accédez à votre **instance Adobe Experience Manager** > **Outils** > **Services cloud** > **Adobe Experience Platform**.
 1. Sélectionnez un **Conteneur de configurations** pour stocker la configuration.
@@ -81,12 +81,14 @@ Avant de configurer le connecteur AEP dans AEM Forms, vérifiez que vous avez ef
    * Secret client (obtenu à partir de la console de développement)
    * URL OAuth (il existe une URL par défaut, mais elle peut également être obtenue à partir de la Developer Console).
 
+   ![Configuration d’AEP Cloud](/help/forms/assets/aep-cloud-configuration.png)
+
 1. Cliquez sur **Connexion** pour établir la connexion. Après avoir établi la connexion, configurez les paramètres supplémentaires suivants :
    * URL de base : platform.adobe.io (il s’agit d’une URL par défaut qui peut être obtenue à partir de Developer Console. En outre, les URL oauth et platform sont définies par défaut sur les URL de production. Si nécessaire, vous devez vous connecter à l’environnement d’évaluation. Les URL d’évaluation doivent être utilisées.)
    * ID d’organisation (obtenu à partir de la Developer Console avec l’ID client/secret)
    * Nom du sandbox (requis pour les environnements de développement et de production)
 
-### 2. Création de formulaire avec intégration de schéma XDM {#form-creation}
+### &#x200B;2. Création de formulaire avec intégration de schéma XDM {#form-creation}
 
 1. Accédez à l’assistant de création de formulaire :
    * Accédez à votre **instance Adobe Experience Manager** > **Forms** > **Forms et documents**.
@@ -94,13 +96,18 @@ Avant de configurer le connecteur AEP dans AEM Forms, vérifiez que vous avez ef
 1. Sélectionnez un modèle dans l’onglet **source**
 1. Dans l’onglet **Données**, sélectionnez l’option **Adobe Experience Platform**.
 
-1. Dans le volet des propriétés, sélectionnez votre configuration cloud. Le système charge tous les schémas disponibles à partir de Adobe Experience Platform
+1. Dans le volet des propriétés, sélectionnez votre configuration cloud.
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   Le système charge tous les schémas disponibles à partir de Adobe Experience Platform
 
    >[!NOTE]
    >
    >
    > * Seuls les schémas activés et non générés par le système sont récupérés.
    > * Le chargement initial du schéma peut prendre un certain temps lors de la première configuration.
+
 1. Sélectionnez les champs appropriés/obligatoires du schéma. (Voir la vidéo pour obtenir des instructions détaillées)
 1. Dans l’onglet Envoi :
    * Sélectionnez l’action d’envoi **Envoyer à Adobe Experience Platform**
@@ -156,7 +163,7 @@ R : Ce connecteur fonctionne avec les composants principaux de Forms adaptatif e
 R : Actuellement, chaque formulaire ne peut envoyer qu’à un seul jeu de données.
 
 **Q : Existe-t-il une limite au nombre d’envois de formulaire pouvant être traités ?**
-R : Les envois de formulaires sont soumis à l’ingestion par flux d’AEP [quotas et limites de débit](https://experienceleague.adobe.com/fr/docs/experience-platform/data-lifecycle/api/quota).
+R : Les envois de formulaires sont soumis à l’ingestion par flux d’AEP [quotas et limites de débit](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota).
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -196,8 +203,8 @@ Pour commencer à utiliser cette intégration :
 * [Documentation AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr)
 * [Documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
 * [ Présentation du système XDM ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr)
-* [Ingestion par flux dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr)
-* [Présentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
+* [Ingestion par flux dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Présentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Fonctionnalités d’accès anticipé AEM Forms](/help/forms/early-access-ea-features.md)
 * [Création d’un Forms adaptatif avec des composants principaux](/help/forms/creating-adaptive-form-core-components.md)
 * [Utilisation de modèles de données de formulaire dans AEM Forms](/help/forms/using-form-data-model.md)
@@ -230,5 +237,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
