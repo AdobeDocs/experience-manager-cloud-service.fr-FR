@@ -3,10 +3,10 @@ title: Sélecteur de ressources pour  [!DNL Adobe Experience Manager]  as a  [!
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
 * ![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vue Galerie**] : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale verrouillée au milieu.
 * ![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vue** Cascade] : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
 
+### Détails et métadonnées des ressources {#asset-details-and-metadata}
+
+La page Détails de la ressource fournit une vue d’ensemble complète d’une ressource spécifique, consolidant toutes les informations clés en un seul endroit. Il comprend un aperçu avec le nom, le format de fichier, le statut et une brève description, ainsi qu’un aperçu ou une miniature pour une identification visuelle facile. Elle inclut également les métadonnées d’une ressource telles que la date de création, l’auteur, la taille, le modèle de couleurs, etc. Ces attributs permettent d’effectuer une recherche, un filtrage et une classification efficaces d’une ressource. Le panneau des détails de la ressource est disponible dans les vues rail et modale du sélecteur de ressources. En mode rail, il est nécessaire d’activer et de configurer `onDrop` propriété pour renvoyer une ressource. Dans la vue modale, `handleSelection` propriété renvoie également une ressource. Voir [Propriétés du sélecteur de ressources](asset-selector-properties.md).
+
+Pour afficher les détails d’une ressource et de métadonnées, procédez comme suit :
+
+1. Ouvrez le Sélecteur de ressources MFE et accédez à une ressource.
+1. Pointez sur la ressource, puis cliquez sur ![icône d’informations](/help/assets/assets/info-icon-solid-black.svg).
+1. Accédez à l’onglet **[!UICONTROL Infos]** pour afficher les détails de la ressource. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+Pour personnaliser le panneau d’affichage des détails d’une ressource, consultez [Personnaliser les informations en mode modal](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Détails de la ressource](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## En savoir plus sur les principales fonctionnalités {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources à des applications d’Adobe – Graphique"><br/>
- <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources à des applications Adobe</a>
+ <a href="integrate-asset-selector-adobe-app.md">Intégration du sélecteur de ressources à des applications Adobe</a>
         <p>
         <em>Découvrez comment intégrer le sélecteur de ressources à diverses applications Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources – Graphique"><br/>
- <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources à des applications tierces</a>
+ <a href="integrate-asset-selector-non-adobe-app.md">Intégration du sélecteur de ressources à des applications tierces</a>
         <p>
         <em>Augmentez les possibilités permettant d’intégrer le sélecteur de ressources à des applications autres qu’Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Intégration du sélecteur de ressources – Graphique"><br/>
- <a href="integrate-asset-selector.md">Intégration du sélecteur de ressources aux API Dynamic Media OpenAPI</a>
+ <a href="integrate-asset-selector-dynamic-media-open-api.md">Intégration du sélecteur de ressources aux API Dynamic Media OpenAPI</a>
         <p>
         <em>Découvrez comment intégrer le sélecteur de ressources aux API Dynamic Media OpenAPI.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Propriétés du sélecteur de ressources – Graphique"><br/>
-        <a href="asset-selector-customization.md">Propriétés du sélecteur de ressources</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemples du sélecteur de ressources – Graphique"><br/>
+        <a href="asset-selector-properties.md">Propriétés du sélecteur de ressources</a>
         <p>
-        <em>Découvrez les principes de base de la personnalisation de composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
+        <em>Utilisez les propriétés de manière pratique. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemples du sélecteur de ressources – Graphique"><br/>
- <a href="asset-selector-customization.md">Exemples du sélecteur de ressources</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Propriétés du sélecteur de ressources – Graphique"><br/>
+ <a href="asset-selector-examples.md">Exemples du sélecteur de ressources</a>
         <p>
-        <em>Utilisez les propriétés de manière pratique. </em>
+        <em>Découvrez les principes de base de la personnalisation de composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
         </p>
     </td>
     <td>
