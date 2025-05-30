@@ -118,7 +118,7 @@ Vérifiez que les images figurant dans la série de formation sont conformes aux
 >[!NOTE]
 >
 >Vous pouvez utiliser les mêmes images pour entraîner différents modèles de balises. Cependant, ces modèles n’associent pas une image à plus d’une balise dans un modèle donné. Il est donc possible de baliser la même image avec des balises différentes appartenant à différents modèles.
->>Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
+>&#x200B;>Vous ne pouvez pas annuler l’entraînement. Les instructions ci-dessus doivent vous aider à choisir les bonnes images pour l’entraînement.
 
 ## Entraînement du modèle pour vos balises personnalisées {#train-model}
 
@@ -161,7 +161,7 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 >[!NOTE]
 >
 >Que se passe-t-il si je souhaite transférer l’entraînement aux balises intelligentes d’une instance à une autre via une exportation ?
->>Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
+>&#x200B;>Vous n’avez pas besoin d’exporter l’entraînement aux balises intelligentes si l’environnement appartient à la même organisation IMS. Il est automatiquement partagé. Si l’environnement se trouve dans plusieurs organisations IMS, il n’est alors pas possible de partager ou d’exporter l’entraînement sur les balises intelligentes.
 
 ## Restrictions et bonnes pratiques relatives aux balises intelligentes {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 >[!NOTE]
 >
 >La capacité des balises intelligentes à s’entraîner à partir de vos balises et à les appliquer à d’autres images dépend de la qualité des images que vous utilisez pour l’entraînement.
->>Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
+>&#x200B;>Pour obtenir des résultats optimaux, Adobe recommande d’utiliser des images visuellement similaires afin d’entraîner le service pour chaque balise.
