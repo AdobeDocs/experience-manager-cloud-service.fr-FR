@@ -4,7 +4,7 @@ description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Clou
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 90%
@@ -26,13 +26,13 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **[Composants principaux 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)** : Adobe Experience Manager as a Cloud Service bénéficie des mises à jour automatiques de la dernière version des composants principaux. La version 2.12.0 comprend les dernières améliorations apportées par la communauté. Ces améliorations comprennent [un nouveau gestionnaire de formulaires POST ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=fr#post-data) la possibilité d’inclure des [balises CSS, JavaScript et de métadonnées personnalisées via une configuration contextuelle ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading) et un utilitaire [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr#enabling-custom-components) destiné à simplifier l’intégration de la couche de données Adobe aux composants personnalisés. Voir la [liste des modifications](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) dans la version 2.12.0.
 
-* **[Archétype de projet 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)** : la base recommandée pour démarrer un nouveau projet Experience Manager a été améliorée. Elle comprend désormais la nouvelle couche de données client d’Adobe [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr), la possibilité de [diffuser le site dans AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) et de nouveaux points d’extension [ pour ajouter le projet CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading).
+* **[Archétype de projet 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)** : la base recommandée pour démarrer un nouveau projet Experience Manager a été améliorée. Elle comprend désormais la nouvelle [couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr), la possibilité de [diffuser le site dans AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) et de nouveaux points d’extension [pour ajouter un projet CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading).
 
 * **[Dossiers ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)** : possibilité de créer des dossiers d’audience pour organiser, rechercher et sélectionner facilement des segments d’audience à utiliser pour les fonctionnalités de ciblage d’offre ContextHub.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]Balisage intelligent de vidéo optimisé par**: en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les utilisateurs de la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]Balisage intelligent de vidéo optimisé par**: en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les utilisateurs de la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-for-videos.md).
 
 * **Améliorations apportées à Brand Portal** : les nouvelles fonctionnalités suivantes et bien d’autres sont disponibles dans [!DNL Brand Portal]. Pour plus d’informations, voir [[!DNL Brand Portal] Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=fr).
 
@@ -55,9 +55,9 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de variables de workflow AEM en cours de traitement qui contiennent des éléments de données personnelles sensibles (DPS) dans un référentiel géré par le client pour un traitement sécurisé. Lors du traitement du workflow, les données stockées dans les variables du workflow ne sont pas conservées dans le référentiel AEM. Ils sont récupérés à la demande à partir du référentiel géré par le client.
 
-### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+### Fonctionnalités bêta de [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode batch.
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode batch.
 
 Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
@@ -65,7 +65,7 @@ Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscri
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication du site de référence CIF Venia - 2020.10.2 qui comprend les derniers composants principaux CIF version 1.4.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) pour plus d’informations.
+* Publication du site de référence CIF Venia - 2020.10.2 qui comprend les derniers composants principaux de CIF version 1.4.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) pour plus d’informations.
 
 * Publication des composants principaux de CIF version 1.4.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) pour plus d’informations.
 

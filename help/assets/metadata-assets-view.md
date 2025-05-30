@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 85%
+source-wordcount: '2448'
+ht-degree: 81%
 
 ---
 
@@ -219,23 +219,23 @@ Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
 
-### Utilisation du composant Balises dans le formulaire de métadonnées {#tag-component-metadata-form}
+### Utiliser le composant Balises dans un formulaire de métadonnées {#tag-component-metadata-form}
 
 L’élément racine représente l’arborescence des balises que vous pouvez associer aux ressources et qui permet d’identifier la ressource en fonction de la balise qui lui est attribuée. De plus, vous pouvez restreindre l’accès à une taxonomie spécifique lors de la configuration du formulaire de métadonnées dans l’éditeur de métadonnées.
 
 #### Configuration du composant Balises {#tags-component-configuration}
 
-Configurez le composant Balises en procédant comme suit :
+Configurez le composant Balises en procédant comme suit :
 
-1. Accédez à l’éditeur de métadonnées, puis à l’**[!UICONTROL Balises]** et placez-le sur la zone de travail.
-1. Renommez le composant sur la zone de travail. Pour ce faire, accédez à **[!UICONTROL Libellé]** sous la propriété [!UICONTROL Métadonnées] dans le panneau Paramètres et ajoutez le texte pour son identification.
-1. Sous la [!UICONTROL propriété de métadonnées] dans le panneau Paramètres, recherchez la propriété de métadonnées que vous souhaitez affecter au composant.
+1. Accédez à l’éditeur de métadonnées, puis au composant **[!UICONTROL Balises]** et placez-le sur la zone de travail.
+1. Renommez le composant sur la zone de travail. Pour ce faire, accédez à **[!UICONTROL Libellé]** sous [!UICONTROL Propriété de métadonnées] dans le panneau Paramètres et ajoutez le texte pour son identification.
+1. Sous [!UICONTROL Propriété de métadonnées] dans le panneau Paramètres, recherchez la propriété de métadonnées que vous souhaitez affecter au composant.
 1. Cliquez sur **[!UICONTROL Restreindre à une taxonomie spécifique]** pour restreindre le chemin racine de la taxonomie. Pour ce faire, parcourez les balises et choisissez la taxonomie du chemin d’accès particulier.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
-   ![Configuration des balises racine](assets/root-tag-config.png)
+   ![Configuration des balises racines](assets/root-tag-config.png)
 
-1. [Attribuer un formulaire de métadonnées à des dossiers](#assign-metadata-form-folder).
+1. [Attribuez un formulaire de métadonnées à des dossiers](#assign-metadata-form-folder).
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -249,7 +249,34 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-Pour afficher les balises racine configurées, accédez à la page de détails de la ressource où le mappage entre le formulaire de métadonnées et les balises racine est effectué.
+Pour afficher les balises racines configurées, accédez à la page de détails de la ressource où le mappage entre le formulaire de métadonnées et les balises racines est effectué.
+
+## Amélioration de la découverte de contenu avec les balises intelligentes générées par l’IA {#ai-smart-tags}
+
+Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Cette approche améliore non seulement l’efficacité en éliminant le balisage manuel, mais garantit également la cohérence et l’évolutivité sur de grands volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![Balises intelligentes améliorées](assets/enhanced-smart-tags.png)
+
+### Utilisation de balises intelligentes générées par l’IA {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez comme suit :
+
+1. Dans l’interface [!DNL Experience Manager], accédez au dossier souhaité, puis cliquez sur **[!UICONTROL Ajouter Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Les formats de fichiers image compatibles sont `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` et `bmp`.
+
+1. Patientez jusqu’à ce que la ressource nouvellement chargée soit traitée. Une fois l’opération terminée, accédez aux détails de la ressource.
+
+1. Accédez à l’onglet **[!UICONTROL Généré par l’IA]**. Si [!DNL Experience Manager] version est incompatible ou n’est pas mise à jour, cet onglet n’est pas visible. La version minimale requise d’AEM est la `20626`. Les champs suivants sont disponibles :
+
+   * **[!UICONTROL Titre généré] :** le titre fournit un titre clair et concis qui capture l’idée principale d’une ressource téléchargée, ce qui facilite sa compréhension en un coup d’œil. Lors de l’ajout d’une ressource, si vous fournissez un titre (en `dc:title`), il sera affiché dans la vue de navigation des ressources. Si rien n’est indiqué, un titre généré par l’IA est automatiquement attribué.
+   * **[!UICONTROL Description générée] :** la description fournit un résumé bref mais informatif de la ressource, aidant les utilisateurs et les modules de recherche à appréhender rapidement sa pertinence.
+   * **[!UICONTROL Mots-clés générés] :** les mots-clés sont des termes ciblés qui représentent les thèmes principaux d’une ressource, facilitant le balisage et le filtrage de contenu.
+
+1. [Facultatif] Vous pouvez ajouter des balises supplémentaires ou créer les vôtres si vous pensez qu’il manque des balises pertinentes. Pour ce faire, écrivez vos balises dans le champ **[!UICONTROL Mots-clés générés]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Étapes suivantes {#next-steps}
 
@@ -259,7 +286,7 @@ Pour afficher les balises racine configurées, accédez à la page de détails d
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
