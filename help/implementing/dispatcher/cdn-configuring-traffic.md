@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ Les types de règle des sections ci-dessous partagent une syntaxe commune.
 
 Une règle est référencée par un nom, une « clause de quand » conditionnelle et des actions.
 
-La clause when détermine si une règle sera évaluée en fonction des propriétés, notamment le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est identique pour tous les types de règle ; pour plus d’informations, consultez la section [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) de l’article Règles de filtrage du trafic .
+La clause « quand » détermine si une règle sera évaluée en fonction des propriétés, notamment le domaine, le chemin, les chaînes de requête, les en-têtes et les cookies. La syntaxe est identique pour tous les types de règle ; pour plus d’informations, consultez la section [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) de l’article Règles de filtrage du trafic .
 
 Les détails du nœud d’actions diffèrent selon le type de règle et sont décrits dans les sections individuelles ci-dessous.
+
+Dans les règles de configuration, vous pouvez référencer des secrets définis comme variables d’environnement (voir [Secrets de configuration](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Transformations de requête {#request-transformations}
 
