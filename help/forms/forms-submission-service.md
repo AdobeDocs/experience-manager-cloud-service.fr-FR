@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # Service de soumission Forms avec Edge Delivery Services Forms
 
-<span class="preview"> Cette fonctionnalité est disponible via le programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 Le service d’envoi Forms vous permet de stocker les données des envois de formulaire dans n’importe quelle feuille de calcul, telle que OneDrive, SharePoint ou Google Sheets, ce qui vous permet d’accéder facilement aux données de formulaire et de les gérer sur votre plateforme de feuille de calcul préférée.
 
@@ -37,7 +37,7 @@ Vous trouverez ci-dessous les conditions préalables requises pour utiliser le s
 
 ## Configuration du service d’envoi Forms
 
-Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
+Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
 
 Vous pouvez [configurer manuellement le service de soumission Forms](#configuring-the-forms-submission-service-manually) ou [configurer le service de soumission Forms à l’aide de l’API](#configuring-the-forms-submission-service-using-api).
 
@@ -45,17 +45,21 @@ Vous pouvez [configurer manuellement le service de soumission Forms](#configurin
 
 ![Processus pour le service d’envoi de formulaires](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. Créer un formulaire à l’aide d’une définition de formulaire
+#### &#x200B;1. Créer un formulaire à l’aide d’une définition de formulaire
 
-Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La capture d’écran ci-dessous affiche la définition du formulaire utilisée pour créer le formulaire :
 
 ![Définition du formulaire](/help/forms/assets/form-submission-definition.png)
 
-#### 2. Activez la feuille de calcul pour accepter les données.
+>[!IMPORTANT]
+>
+>**La feuille dans laquelle le formulaire est créé présente des restrictions quant au nom qui lui est attribué. Seuls `helix-default` et `shared-aem` peuvent être utilisés comme noms de feuille.**
 
-Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+#### &#x200B;2. Activez la feuille de calcul pour accepter les données.
+
+Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Feuille entrante](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -63,7 +67,7 @@ Une fois que vous avez créé et prévisualisé le formulaire, activez la feuill
 >
 > Si la feuille de `incoming` n’existe pas, AEM n’envoie aucune donnée à ce classeur.
 
-#### 3. Partager la feuille de calcul et générer un lien.
+#### &#x200B;3. Partager la feuille de calcul et générer un lien.
 
 Pour partager la feuille de calcul avec le compte `forms@adobe.com` et générer un lien, procédez comme suit :
 
@@ -77,7 +81,7 @@ Cliquez sur l’icône représentant un œil, sélectionnez l’accès **Modifie
 
    ![Copier le lien de la feuille entrante](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. Liez la feuille de calcul dans la définition du formulaire
+#### &#x200B;4. Liez la feuille de calcul dans la définition du formulaire
 
 Pour configurer le service d’envoi de Forms avec Google Sheets ou Microsoft Excel, procédez comme suit :
 
@@ -153,8 +157,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     curl -X POST « https://forms.adobe.com/adobe/forms/af/submit/{id} » \
     —header « Content-Type : application/json » \
     —header « x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization] » \
-    —data &#39;&lbrace;
-    « data »: &lbrace;
+    —data &#39;{
+    « data »: {
     « startDate »: « 2025-01-10 »,
     « endDate »: « 2025-01-25 »,
     « destination »: « Australia »,
@@ -165,8 +169,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     « age »: « 35 »,
     « subscribe »: null,
     « email »: « mary@gmail.com »
-    &rbrace;
-    &rbrace;&#39;
+    }
+    }&#39;
     
      »
 

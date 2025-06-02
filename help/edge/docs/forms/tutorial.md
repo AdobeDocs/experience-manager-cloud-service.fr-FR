@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 91%
+source-wordcount: '1922'
+ht-degree: 90%
 
 ---
 
@@ -189,6 +189,10 @@ L’exemple de contenu inclut une feuille « demande » qui sert de modèle po
 
 ![Formulaire de demande](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**La feuille dans laquelle le formulaire est créé présente des restrictions quant au nom qui lui est attribué. Seuls `helix-default` et `shared-aem` peuvent être utilisés comme noms de feuille.**
+
 Commençons par mettre à jour un libellé de champ. Ouvrez la feuille « demande » pour effectuer des modifications, modifiez le libellé du bouton Envoyer en `Let's Talk` et utilisez AEM Sidekick pour prévisualiser et publier le fichier.
 
 ![Formulaire de demande](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -237,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
+1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant <owner> la personne propriétaire du référentiel et <repo> le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>
