@@ -64,9 +64,9 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
         >[!CAUTION]
         >
-        Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms doivent contenir *uniquement* A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
+        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, les noms doivent contenir *uniquement* A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
-        Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
      Par exemple :
 
@@ -98,9 +98,9 @@ Une sélection de types de données est disponible pour la définition de votre 
 
   >[!NOTE]
   >
-  Que la zone de texte soit du texte enrichi, du texte brut ou Markdown, est définie dans le modèle par la propriété **Type par défaut**.
+  >Que la zone de texte soit du texte enrichi, du texte brut ou Markdown, est définie dans le modèle par la propriété **Type par défaut**.
   >
-  Ce format ne peut pas être modifié à partir de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
+  >Ce format ne peut pas être modifié à partir de l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), mais uniquement à partir du modèle.
 
 * **Nombre**
    * Ajouter un champ numérique
@@ -137,7 +137,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
   >[!NOTE]
   >
-  Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
+  >Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
 
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
@@ -154,7 +154,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
   >[!NOTE]
   >
-  Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
+  >Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
 
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
@@ -169,7 +169,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
      >[!NOTE]
      >
-     Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
+     >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés (types de données) {#properties}
 
@@ -181,7 +181,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendre en tant que**
 
@@ -212,11 +212,11 @@ Le contenu (pour le champ spécifique) doit être unique pour tous les fragments
 
   >[!NOTE]
   >
-  L’unicité est assurée par la racine de langue.
+  >L’unicité est assurée par la racine de langue.
 
   >[!NOTE]
   >
-  Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+  >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -272,28 +272,28 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
      >[!NOTE]
      >
-     Cette méthode est particulièrement intéressante lorsque vous utilisez [diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     >Cette méthode est particulièrement intéressante lorsque vous utilisez [diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
 >
-Voir [Mettre à niveau vos fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) pour plus d’informations sur la référence de contenu/fragment et la référence de contenu/fragment (UUID), et mettre à niveau vers les types de données basés sur UUID.
+>Voir [Mettre à niveau vos fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) pour plus d’informations sur la référence de contenu/fragment et la référence de contenu/fragment (UUID), et mettre à niveau vers les types de données basés sur UUID.
 
 >[!NOTE]
 >
-AEM dispose d’une protection récurrente pour :
+>AEM dispose d’une protection récurrente pour :
 >
-* Références de contenu
-Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>* Références de contenu
+>Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
-* Références à des fragments dans GraphQL
-Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
+>* Références à des fragments dans GraphQL
+>Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
 
 >[!CAUTION]
 >
-Si vous souhaitez interroger plusieurs fragments référencés, il n’est pas recommandé que les différents modèles de fragment aient des noms de champ portant le même nom, mais avec des types différents.
+>Si vous souhaitez interroger plusieurs fragments référencés, il n’est pas recommandé que les différents modèles de fragment aient des noms de champ portant le même nom, mais avec des types différents.
 >
-Pour plus d’informations, consultez [API AEM GraphQL à utiliser avec des fragments de contenu - Limites](/help/headless/graphql-api/content-fragments.md#limitations)
+>Pour plus d’informations, consultez [API AEM GraphQL à utiliser avec des fragments de contenu - Limites](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Référence de contenu {#content-reference}
 
@@ -304,16 +304,16 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 * Le **Chemin racine**, qui spécifie ou représente l’emplacement de stockage de tout contenu référencé
   >[!NOTE]
   >
-  Ceci est obligatoire si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
+  >Ceci est obligatoire si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
   >
-  Voir [Images de référence](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) pour plus d’informations.
+  >Voir [Images de référence](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) pour plus d’informations.
 
 * Types de contenu pouvant être référencés
   >[!NOTE]
   >
-  Ils doivent inclure **Image** si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
+  >Ils doivent inclure **Image** si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
   >
-  Voir [Images de référence](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) pour plus d’informations.
+  >Voir [Images de référence](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) pour plus d’informations.
 
 * Limites relatives aux tailles de fichier
 * Si une image est référencée :
@@ -347,7 +347,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Les références de fragment sont particulièrement intéressantes pour la [diffusion de contenu découplé à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+>Les références de fragment sont particulièrement intéressantes pour la [diffusion de contenu découplé à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Outre les propriétés standard, vous pouvez définir les éléments suivants :
 
@@ -373,6 +373,6 @@ Cette propriété spécifie ou représente un chemin racine pour tous les fragme
 
 >[!NOTE]
 >
-Un mécanisme de protection contre les répétitions est en place. Elle interdit à l’utilisateur de sélectionner le fragment de contenu actuel dans la référence de fragment et peut conduire à une boîte de dialogue vide du sélecteur de référence de fragment.
+>Un mécanisme de protection contre les répétitions est en place. Elle interdit à l’utilisateur de sélectionner le fragment de contenu actuel dans la référence de fragment et peut conduire à une boîte de dialogue vide du sélecteur de référence de fragment.
 >
-Il existe également une protection contre la périodicité pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+>Il existe également une protection contre la périodicité pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
