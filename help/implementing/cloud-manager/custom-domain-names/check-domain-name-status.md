@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 20%
+source-wordcount: '920'
+ht-degree: 18%
 
 ---
 
@@ -62,7 +62,13 @@ Vous trouverez ci-dessous quelques erreurs courantes de vérification des noms d
 
 ### Erreur de domaine non installé {#domain-not-installed}
 
-Cette erreur peut se produire lors de la validation du domaine du certificat EV/OV même après avoir vérifié que le certificat a été mis à jour de manière appropriée.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+Lorsque vous ajoutez un mappage de domaine dans Cloud Manager, le message d’erreur suivant peut s’afficher :
+
+*Le domaine est déjà installé dans un compte Fastly. Supprimez-le d’abord de cet emplacement avant de l’ajouter à Cloud Service.*
+
+Ce message indique que le domaine est actuellement associé à un compte Fastly différent, généralement en dehors du contrôle d’Adobe. Pour continuer, le domaine doit être dissocié de l’autre compte avant de pouvoir être ajouté au Cloud Service géré par Adobe. Ce problème se produit généralement lorsque le même domaine est déjà mappé à une origine différente dans une configuration Fastly non Adobe.
 
 #### Cause de l’erreur {#cause}
 
