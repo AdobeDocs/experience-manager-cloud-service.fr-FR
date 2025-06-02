@@ -4,10 +4,10 @@ description: L’outil de copie de contenu permet de copier du contenu modifiabl
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 81%
+source-wordcount: '1321'
+ht-degree: 78%
 
 ---
 
@@ -200,3 +200,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Ensuite, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
+* Les [ Modèles de fragments de contenu ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) peuvent spécifier des champs de référence en fonction d’identifiants universels uniques (UUID). Ces UUID étant spécifiques au référentiel, l’outil de copie de contenu recalcule ces UUID dans l’environnement cible lors de la copie de fragments de contenu.
