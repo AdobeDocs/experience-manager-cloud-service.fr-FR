@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 17%
@@ -56,9 +56,9 @@ Cloud Manager vérifie la propriété du domaine via le certificat SSL géré pa
 | Échec de la suppression | La suppression d’un nom de domaine personnalisé a échoué et doit être réexécutée.<br>Voir [Gérer les noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus. |
 
 
-## Erreurs de nom de domaine {#domain-error}
+## Erreur de nom de domaine {#domain-error}
 
-Vous trouverez ci-dessous quelques erreurs courantes de vérification des noms de domaine et leurs résolutions standard.
+Voici une erreur courante de vérification des noms de domaine et sa résolution standard.
 
 ### Erreur de domaine non installé {#domain-not-installed}
 
