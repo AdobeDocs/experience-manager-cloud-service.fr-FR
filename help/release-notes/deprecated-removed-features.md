@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
+source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 88%
+source-wordcount: '2912'
+ht-degree: 87%
 
 ---
 
@@ -35,6 +35,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Fonctionnalités | Fonctionnalité obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
+| Sites | [Prise en charge des fragments de contenu dans l’API HTTP Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Diffusion de fragments de contenu avec OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>avec<br> [API ouvertes de gestion des fragments de contenu et des modèles de fragment de contenu](/help/headless/content-fragment-openapis.md) |
 | Sites | [Fonctionnalités PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Aucun |
 | Sites | [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. |
 | [!DNL Sites] | [API JavaScript Use](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API JavaScript Use](https://experienceleague.adobe.com/fr/docs/experience-manager-htl/content/java-use-api) |

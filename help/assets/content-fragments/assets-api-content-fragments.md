@@ -4,14 +4,14 @@ description: Découvrez la prise en charge des fragments de contenu dans l’API
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1859'
 ht-degree: 59%
 
 ---
 
-# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Vue d’ensemble {#overview}
 
@@ -20,7 +20,13 @@ ht-degree: 59%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion découplée Adobe Experience Manager (AEM).
+>[!CAUTION]
+>
+>La prise en charge des fragments de contenu dans l’API HTTP Assets est désormais [obsolète](/help/release-notes/deprecated-removed-features.md).
+>
+>Elle a été remplacée par [Diffusion de fragments de contenu avec OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) ainsi que [Fragments de contenu et Gestion des modèles de fragments de contenu OpenAPI](/help/headless/content-fragment-openapis.md).
+
+Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion Adobe Experience Manager (AEM) en mode découplé.
 
 >[!NOTE]
 >
@@ -47,9 +53,9 @@ L’API permet d’utiliser Adobe Experience Manager as a Cloud Service as a Hea
 
 Par exemple, les [applications monopages](/help/implementing/developing/hybrid/introduction.md), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-Bien que les [composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API personnalisable qui peut servir les opérations de lecture requises à cet effet et dont la sortie JSON peut être personnalisée, ils nécessitent le savoir-faire AEM WCM (Web Content Management) pour la mise en œuvre. En effet, ils doivent être hébergés dans des pages qui reposent sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
+Bien que les [composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API personnalisable qui peut servir les opérations de lecture requises à cet effet et dont la sortie JSON peut être personnalisée, ils nécessitent le savoir-faire AEM WCM (Web Content Management) pour la mise en œuvre. En effet, ils doivent être hébergés dans des pages basées sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
-Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les intégrer dans une page puis diffuser leur contenu au format JSON sérialisé.
+Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les incorporer dans une page puis diffuser leur contenu au format JSON sérialisé.
 
 >[!NOTE]
 >
@@ -145,8 +151,8 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   </tr>
   <tr>
    <td>Remarques architecturales</td>
-   <td><p>L’accès en écriture concerne généralement une instance de création.</p> <p>La lecture peut également être redirigée vers une instance Publish.</p> </td>
-   <td>Cette approche étant en lecture seule, elle est généralement utilisée pour les instances Publish.</td>
+   <td><p>L’accès en écriture concerne généralement une instance de création.</p> <p>La lecture peut également être redirigée vers une instance de publication.</p> </td>
+   <td>Cette approche étant en lecture seule, elle est généralement utilisée pour les instances de publication.</td>
   </tr>
   <tr>
    <td>Sortie</td>
@@ -158,7 +164,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
 
 ### Sécurité {#security}
 
-Si l’API REST Assets est utilisée dans un environnement sans exigence d’authentification spécifique, le filtre CORS AEM doit être configuré correctement.
+Si l’API REST Assets est utilisée dans un environnement sans exigences d’authentification spécifiques, le filtre CORS d’AEM doit être configuré correctement.
 
 >[!NOTE]
 >
@@ -261,14 +267,14 @@ Le contenu associé n’est pas exposé.
 
 ## Utiliser {#using}
 
-L’utilisation peut varier selon que vous utilisez un environnement de création AEM ou Publish, selon votre cas d’utilisation spécifique.
+L’utilisation peut varier selon que vous utilisez un environnement de création ou de publication AEM, selon votre cas d’utilisation spécifique.
 
 * Il est recommandé de lier la création à une instance d’auteur ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
+   * Le stockage et la diffusion à partir d’une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance AEM Publish est recommandée.
+   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >
@@ -377,4 +383,4 @@ Pour accéder aux références d’API détaillées :
 Pour en savoir plus, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=fr)
+* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
