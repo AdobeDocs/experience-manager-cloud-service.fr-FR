@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Le champ d’application actuel de l’assistant AI se concentre sur les questio
 
 ## Assistant AI pour AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Outre l’assistant AI général pour la connaissance des produits, AEM propose un **assistant AI pour AEM Forms (Forms Experience Builder)** spécialisé. Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
+Outre l’assistant AI général pour la connaissance des produits, AEM propose un **[assistant AI pour AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)** spécialisé. Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
 
 ### Fonctionnalités essentielles
 
@@ -76,7 +76,7 @@ L’assistant AI pour AEM Forms est disponible dans :
 >
 > L’assistant AI pour AEM Forms (Forms Experience Builder) est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à partir de votre adresse professionnelle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès.
 
-Pour en savoir plus sur l’utilisation de l’assistant AI pour AEM Forms, notamment pour consulter des exemples détaillés et des bonnes pratiques, consultez la documentation sur l’assistant AI pour AEM Forms .
+Pour en savoir plus sur l’utilisation de l’assistant AI pour AEM Forms, notamment pour consulter des exemples détaillés et des bonnes pratiques, consultez la documentation sur l’[assistant AI pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Exemples de cas d’utilisation
 

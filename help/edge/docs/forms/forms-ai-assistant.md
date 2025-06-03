@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 2%
 
 ---
@@ -232,6 +232,69 @@ Votre contribution est inestimable pour l’amélioration continue de l’assist
 - **Fournir des commentaires :** utilisez la commande ou le bouton intégré **« Fournir des commentaires »** dans l’interface de l’assistant d’IA pour partager vos expériences, signaler des problèmes ou suggérer des améliorations. (par exemple, vous pouvez saisir `/feedback` ou rechercher une icône de commentaires).
 - **Assistance officielle :** pour les problèmes critiques ou toute assistance supplémentaire, contactez les canaux d’assistance officiels d’Adobe ou les contacts d’assistance désignés de votre organisation.
 
+
+
+## Utilisation des pièces jointes
+
+L’assistant AI prend en charge les pièces jointes pour améliorer votre expérience de création et de configuration de formulaires. Vous pouvez joindre différents types de fichiers pour fournir un contexte visuel, des références de conception ou des formulaires existants à convertir.
+
+### Types de pièce jointe pris en charge
+
+| Type de fichier | Cas d’utilisation | Commandes Prenant En Charge Les Pièces Jointes | Exemples |
+|-----------|-----------|-----------------------------------|----------|
+| **Images** (PNG, JPG, JPEG, GIF) | Références de disposition de formulaire, maquettes d’interface utilisateur, analyses de formulaires papier | /create-form, /add-form, /create-panel, /add-panel, /update-field | Charger une capture d’écran de la mise en page souhaitée |
+| **Fichiers PDF** | Formulaires existants à convertir, spécifications de conception | /create-form, /add-form, /create-panel, /add-panel | Convertir les formulaires de demande PDF |
+| **Fichiers Figma** | Concevoir des références système, des prototypes d’interface utilisateur | /create-form, /add-form, /create-panel | Importer les cadres de conception Figma |
+| **Fichiers de conception** (esquisse, exportations Adobe XD) | Références de conception visuelle | /create-form, /add-form, /create-panel | Composants du système de conception de référence |
+
+### Utilisation des pièces jointes
+
+1. **Joignez avant ou avec votre commande :**
+
+   - Cliquez sur l’icône de pièce jointe dans l’interface de l’assistant AI
+   - Sélectionnez le ou les fichiers sur votre appareil
+   - Saisissez la commande référençant le fichier joint
+
+2. **Pièces jointes de référence dans les commandes :**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Plusieurs pièces jointes :**
+
+   - Vous pouvez joindre plusieurs fichiers à des fins de comparaison ou de référence
+   - Spécifiez la pièce jointe à utiliser : « à l’aide de la première image jointe » ou « en fonction du fichier PDF »
+
+### Bonnes pratiques relatives aux pièces jointes
+
+- **Images claires et de haute qualité :** assurez-vous que les images chargées sont claires et lisibles pour une meilleure analyse de l’IA
+- **Noms de fichiers pertinents :** utilisez des noms de fichier descriptifs pour aider l’IA à comprendre le contexte
+- **Focus unique :** chaque pièce jointe doit se concentrer sur un aspect spécifique (disposition, conception des champs, etc.)
+- **Formats pris en charge :** utilisez les formats courants (PNG, JPG, PDF) pour une meilleure compatibilité.
+- **Taille du fichier :** conservez les pièces jointes de moins de 10 Mo pour une vitesse de traitement optimale
+
+### Exemple de workflows de pièce jointe
+
+**Conversion d’un formulaire papier :**
+
+1. Scannez ou photographiez clairement le formulaire papier
+2. Charger le fichier image
+3. Utiliser la commande : `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Correspondance d’un système de conception :**
+
+1. Exporter ou créer une capture d’écran des composants de conception pertinents
+2. Joindre la référence de conception
+3. Utiliser la commande : `/create-panel following the visual style and layout shown in the attached design`
+
+**Référence de style de champ :**
+
+1. Joindre une capture d’écran de l’aspect du champ souhaité
+2. Utiliser la commande : `/update-field @email to match the styling and layout shown in the attached image`
 
 ## Contenu connexe
 

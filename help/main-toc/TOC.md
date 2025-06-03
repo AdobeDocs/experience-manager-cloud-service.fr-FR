@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: fd134169b97204d9338c99c113045226b073456b
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '6192'
+source-wordcount: '6208'
 ht-degree: 98%
 
 ---
@@ -1175,6 +1175,8 @@ ht-degree: 98%
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Générer des variations](/help/generative-ai/generate-variations.md)
    + [Assistant (version bêta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistant AI pour AEM Forms (Forms Experience Builder) (utilisateur(utilisatrice) précoce)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistant AEM Forms AI - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implémentation {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
