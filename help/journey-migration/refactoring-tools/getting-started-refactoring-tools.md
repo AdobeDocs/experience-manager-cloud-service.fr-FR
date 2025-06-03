@@ -17,7 +17,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,7 +35,7 @@ Utilisez l’outil de refactorisation pour migrer votre code à des fins de comp
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-&#x200B;---
+---
 
 ## Chargement du code Source {#uploading}
 
@@ -72,7 +72,7 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
 >[!NOTE]
 >Les tâches de refactorisation ne peuvent être exécutées que si le chargement du code source réussit.
 
-&#x200B;---
+---
 
 ## Traitements de refactorisation {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Lorsque vous cliquez sur l’onglet **Tâche de refactorisation**, une liste des
 >[!NOTE]
 >Vous pouvez déclencher des tâches de refactorisation individuelles ou exécuter tous les outils disponibles en une seule fois à l’aide de l’option **Tous les outils ensemble**.
 
-&#x200B;---
+---
 
 ### &#x200B;2. Statut de la tâche
 

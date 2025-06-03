@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Auparavant disponibles uniquement en tant qu’utilitaires d’interface de ligne de commande, les outils de refactorisation fournissent désormais une interface unifiée avec des fonctionnalités telles que l’inspection automatisée, la génération de configurations et l’exécution de tâches, ce qui réduit les frais généraux manuels et améliore la visibilité.
 
-&#x200B;---
+---
 
 ## Workflow d’inspection {#inspection-workflow}
 
@@ -34,7 +34,7 @@ Le **workflow d’inspection** simplifie le processus de préparation pour l’e
 * **Génération de configuration** - Les outils examinent le code source chargé et génèrent les configurations nécessaires.
 * **Envoi de la payload** - Ces configurations sont transmises directement aux outils sélectionnés pour exécution.
 
-&#x200B;---
+---
 
 ## Outils de refactorisation disponibles
 
@@ -46,7 +46,7 @@ Le **workflow d’inspection** simplifie le processus de préparation pour l’e
 
 Le **transformateur de code** utilise la reconnaissance intelligente de motifs et l’analyse pilotée par l’IA pour détecter et mettre à jour les segments de code incompatibles avec AEMaaCS. Cet outil simplifie les tâches de migration et réduit les modifications manuelles du code.
 
-&#x200B;---
+---
 
 ## Refactorisation des phases de workflow {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ Les outils de refactorisation suivent un processus structuré en deux phases :
 >[!NOTE]
 >Pendant le processus d&#39;inspection, il n&#39;est pas permis de charger un autre projet.
 
-&#x200B;---
+---
 
 ### Phase 2 : déclenchement d’une tâche de refactorisation
 
