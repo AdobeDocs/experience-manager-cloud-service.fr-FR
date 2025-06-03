@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 28%
+source-wordcount: '1547'
+ht-degree: 29%
 
 ---
 
@@ -103,9 +103,7 @@ Les fonctionnalités suivantes peuvent ne pas fonctionner correctement lorsqu’
 
 #### Exigences d’exécution {#runtime-requirements}
 
-Le runtime Java 21 est utilisé pour les versions avec Java 21 et Java 17, et il sera progressivement appliqué aux versions Java 11 également (voir la note ci-dessous). Un environnement doit se trouver dans une version d’AEM 17098 ou plus récente pour recevoir la mise à jour Java 21. Pour garantir la compatibilité, les ajustements suivants sont nécessaires.
-
-Les mises à jour des bibliothèques peuvent être appliquées à tout moment, car elles restent compatibles avec les versions Java plus anciennes.
+L’exécution Java 21 a été appliquée à tous les environnements éligibles, qui sont des environnements de la version AEM 17098 ou ultérieure qui répondent aux critères ci-dessous. Si un environnement ne répond pas aux critères, il est important d’effectuer des ajustements pour garantir les performances, la disponibilité et la sécurité.
 
 * **Version minimale d’ASM:**
 Mettez à jour l’utilisation du package Java`org.objectweb.asm` souvent regroupé dans des artefacts `org.ow2.asm.*`, vers la version 9.5 ou ultérieure pour garantir la prise en charge des exécutions JVM plus récentes.
@@ -127,8 +125,7 @@ Lors de l’exécution locale d’AEM avec Java 21, les scripts de démarrage (`
 
 >[!IMPORTANT]
 >
->Lorsque `.cloudmanager/java-version` est défini sur `21` ou `17`, l’exécution Java 21 est déployée. L’exécution de Java 21 est planifiée pour un déploiement progressif vers tous les environnements (et pas seulement ceux dont le code est créé avec Java 11) à partir du mardi 4 février 2025. Les déploiements commencent par les sandbox et les environnements de développement, suivis de tous les environnements de production en avril 2025. Les clients qui souhaitent adopter l’exécution Java 21 *auparavant* peuvent contacter Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
+>Si un environnement n’a pas encore été automatiquement mis à jour vers l’exécution Java 21, vous pouvez le déclencher en créant avec Java 17 ou 21. Pour ce faire, définissez `.cloudmanager/java-version` sur `21` ou `17`. Pour toute question, contactez Adobe à l’adresse [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Exigences de temps de création {#build-time-reqs}
 
