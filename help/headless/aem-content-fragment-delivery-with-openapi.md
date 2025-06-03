@@ -4,10 +4,10 @@ description: En savoir plus sur la diffusion de fragments de contenu AEM avec Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,14 @@ Pour consulter la documentation complète, voir [Diffusion de fragments de conte
 >
 >Consultez [API AEM pour la diffusion et la gestion de contenu structuré](/help/headless/apis-headless-and-content-fragments.md) pour un aperçu des différentes API disponibles et une comparaison de certains des concepts impliqués.
 
+>[!IMPORTANT]
+>
+>Pour activer la diffusion de fragments de contenu avec OpenAPI sur AEM as a Cloud Service, vérifiez qu’elle n’est pas déjà activée, puis envoyez un ticket de support Adobe avec le titre **Activer la diffusion de fragments de contenu avec OpenAPI** et en spécifiant :
+>
+>* le programme Cloud Service et les identifiants d’environnement ;
+>* détails du cas d’utilisation que vous souhaitez résoudre avec l’OpenAPI de diffusion de fragments de contenu.
+>* détails de tous les contacts auxquels Adobe doit répondre et qui doivent être tenus informés de la demande et du projet (si nécessaire)
+
 ## Mise en cache {#caching}
 
 AEM s’intègre au réseau CDN d’AEM rapidement. Cela signifie que les réponses JSON diffusées au niveau de publication sont mises en cache au niveau Fastly .
@@ -49,4 +57,28 @@ Les réponses sont ensuite mises en cache, en fonction des en-têtes de mise en 
 * Le contenu obsolète peut être diffusé, par erreur, pendant 1 jour au maximum
    * `stale-on-error`=`86400`
 
-AEM est également fourni avec l’invalidation active du cache du réseau CDN. Cela signifie que chaque fois que le contenu est mis à jour ou publié, les réponses OpenAPI JSON correspondantes sont automatiquement invalidées, par le biais d’une requête de purge réversible envoyée à Fastly. Cela vous permet de voir les modifications répercutées dans la sortie JSON avant que l’âge réel du cache du réseau CDN (`s-maxage`) ne soit atteint.
+La diffusion de fragments de contenu avec OpenAPI prend en charge l’invalidation active du cache CDN. Cela signifie que chaque fois que le contenu est mis à jour ou publié, les réponses OpenAPI JSON correspondantes sont automatiquement invalidées, par le biais d’une requête de purge réversible envoyée à Fastly. Cela vous permet de voir les modifications répercutées dans la sortie JSON avant que l’âge réel du cache du réseau CDN (`s-maxage`) ne soit atteint.
+
+## Disponibilité {#availability}
+
+La diffusion de fragments de contenu avec OpenAPI est disponible sur les niveaux Aperçu et Publication. L’API OpenAPI diffuse des fragments de contenu au format JSON pour la prévisualisation et la diffusion en direct.
+
+Pour obtenir un aperçu, la diffusion de fragments de contenu avec OpenAPI peut :
+
+* Publier dans l’aperçu
+* Activer l’accès à l’aperçu avec la liste autorisée IP
+* obtenir l’URL d’aperçu
+
+## CORS {#cors}
+
+[Origines autorisées CORS](/help/headless/deployment/cross-origin-resource-sharing.md) définissez les origines qui peuvent appeler l’API.
+
+Les origines autorisées CORS définies du côté de la configuration du Dispatcher, spécifiquement pour GraphQL, ne sont pas prises en compte par cette API.
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->
