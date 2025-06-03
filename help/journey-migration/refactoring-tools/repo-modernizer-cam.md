@@ -40,7 +40,7 @@ Repository Modernizer prend désormais en charge les types de projets suivants :
 
 ## Utilisation de Repository Modernizer {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412959/?quality=12&learn=on&captions=fre_fr)
 
 - Repository Modernizer est désormais appelé automatiquement par le service de refactorisation, sous l’onglet Tâche de refactorisation . Les clients doivent simplement charger leur projet et déclencher la tâche de refactorisation, aucune configuration supplémentaire n’est nécessaire.
 
