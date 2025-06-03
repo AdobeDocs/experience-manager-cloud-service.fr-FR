@@ -1,10 +1,10 @@
 ---
 title: Repository Modernizer
-description: Découvrez comment restructurer des packages de projet existants et les rendre compatibles avec la structure de projet définie pour Adobe Experience Manager as a Cloud Service.
+description: Découvrez comment restructurer les packages de projets existants et les rendre compatibles avec la structure de projet définie pour Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6920651420da9b427510518b7add0637479adef5
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 82%
@@ -28,13 +28,14 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 * Le package `all` est un package de conteneur qui contient les sous-packages `ui.apps` et `ui.content`.
 
 >[!NOTE]
+>
 >La structure de projet est basée sur *Archetype 24* pour les packages et leurs `pom.xml/filter.xml files`. Pour plus d’informations, voir [Archetype 24](https://github.com/adobe/aem-project-archetype).
 
 ## Utilisation de Repository Modernizer {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/3412959/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Par Adobe I/O CLI : Adobe recommande d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (module externe de refactorisation de code AEM as a Cloud Service pour l’interface de ligne de commande d’Adobe I/O).
+* Par le biais de l’interface de ligne de commande Adobe I/O : Adobe recommande d’utiliser Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (plug-in de refactorisation du code AEM as a Cloud Service pour l’interface de ligne de commande Adobe I/O).
 
   Consultez **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour apprendre à installer et à utiliser le plug-in.
 
