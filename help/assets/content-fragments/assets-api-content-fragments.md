@@ -383,4 +383,4 @@ Pour accéder aux références d’API détaillées :
 Pour en savoir plus, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
+* [Session AEM Gem : OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=fr)
