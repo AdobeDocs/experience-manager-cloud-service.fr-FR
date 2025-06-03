@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Tous les navigateurs sont testés avec l’ensemble par défaut de plug-ins et d
 | Mozilla Firefox (Evergreen) | A : pris en charge | A : pris en charge | Z : non pris en charge |
 | Mozilla Firefox, dernier ESR [1] | A : pris en charge | A : pris en charge | Z : non pris en charge |
 | Safari sous macOS (Evergreen) | A : pris en charge | A : pris en charge | Z : non pris en charge |
-| Safari sous iOS (Evergreen) [2] | Z : non pris en charge | A : pris en charge | Z : non pris en charge |
+| Safari sur iPadOS (evergreen) | Z : non pris en charge | A : pris en charge | Z : non pris en charge |
 
 1. Version de prise en charge étendue de Firefox ([en savoir plus sur mozilla.org](https://www.mozilla.org/fr/firefox/enterprise/))
-1. Prise en charge d’Apple iPad uniquement
 
 >[!NOTE]
 >
