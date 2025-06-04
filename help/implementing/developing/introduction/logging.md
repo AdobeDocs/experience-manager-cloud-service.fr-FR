@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud 
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 79%
+source-wordcount: '2556'
+ht-degree: 78%
 
 ---
 
@@ -158,8 +158,8 @@ Configurez la journalisation Java pour des packages Java personnalisés via des 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
 Comme indiqué dans une section précédente, pour garantir une surveillance efficace des environnements client :
-* Les journaux Java pour le code de produit AEM doivent conserver leur niveau de journal par défaut « INFO » et ne doivent pas être remplacés par des configurations personnalisées.
-* Il est acceptable de définir les niveaux de journal sur DEBUG pour le code de produit, mais utilisez-les avec parcimonie afin d’éviter une dégradation des performances et de restaurer le niveau INFO lorsqu’il n’est plus nécessaire.
+* Le niveau de journal de la configuration de journal par défaut d’AEM (configuration de journalisation Apache Sling) ne doit pas être modifié à partir de sa valeur par défaut « INFO ».
+* Il est acceptable de définir les niveaux de journal sur DEBUG pour des packages individuels de code de produit (à l’aide d’instances de la configuration OSGi « Configuration de l’enregistreur de journalisation Apache Sling »), mais utilisez-le avec parcimonie afin d’éviter une dégradation des performances et de restaurer les informations INFO lorsqu’elles ne sont plus nécessaires.
 * Il est acceptable d’ajuster les niveaux de journal pour le code développé par le client.
 * Tous les journaux (tant pour le code de produit AEM que pour le code développé par le client) doivent conserver le format de journalisation par défaut.
 * La sortie du journal doit rester redirigée vers le fichier par défaut « logs/error.log ».
