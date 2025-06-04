@@ -4,10 +4,10 @@ description: Découvrez la recherche et l’indexation de contenu dans AEM as a 
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
+source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 49%
+source-wordcount: '2918'
+ht-degree: 39%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 49%
 
 ## Changements dans AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec des conteneurs n-x pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques CI/CD. Il en va de même pour les changements d’index, car ceux-ci peuvent avoir un impact sur la stabilité et les performances du système s’ils ne sont pas spécifiés, testés et réindexés avant leur mise en production.
+Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec des conteneurs n-x pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les modifications de configuration dans la production enfreignent les politiques CI/CD. Il en va de même pour les modifications d’index, car celles-ci peuvent avoir un impact sur la stabilité et les performances du système si elles ne sont pas spécifiées, testées et réindexées avant leur mise en production.
 
 Voici la liste des principaux changements par rapport à AEM 6.5 et les versions antérieures :
 
-1. Les utilisateurs et utilisatrices n’ont plus accès au gestionnaire d’index d’une seule instance AEM pour déboguer, configurer ou gérer l’indexation. Le gestionnaire d’index n’est utilisé que pour le développement local et les déploiements On-Prem.
-1. Les utilisateurs ou utilisatrices ne changent pas d’index sur une seule instance AEM et n’ont plus à s’inquiéter des vérifications de cohérence ni de la réindexation.
-1. En général, les changements d’index sont amorcés avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
+1. Les utilisateurs n’ont plus accès au gestionnaire d’index d’une seule instance AEM pour déboguer, configurer ou gérer l’indexation. Le gestionnaire d’index n’est utilisé que pour le développement local et les déploiements On-Prem.
+1. Les utilisateurs ne modifient pas les index sur une seule instance AEM et n’ont plus à se soucier des vérifications de cohérence ou de la réindexation.
+1. En règle générale, les modifications d’index sont initiées avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
 1. Toutes les mesures associées, y compris les performances de recherche en production, sont disponibles pour les clients au moment de l’exécution afin de fournir une vue d’ensemble sur les sujets de la recherche et de l’indexation.
 1. Les clients et les clientes peuvent configurer des alertes en fonction de leurs besoins.
 1. Les SRE surveillent l’intégrité du système 24 h sur 24, 7 jours sur 7 et prennent des mesures dès que possible.
@@ -32,13 +32,13 @@ Voici la liste des principaux changements par rapport à AEM 6.5 et les version
 Restrictions :
 
 * Actuellement, la gestion des index sur AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`. Cela signifie que toutes les personnalisations d’index doivent être de type `lucene`. La propriété `async` ne peut être que l’une des suivantes : `[async]`, `[async,nrt]` ou `[fulltext-async]`.
-* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur Skyline, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et par l’utilisateur ou l’utilisatrice, mais certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients et les clientes n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
+* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur AEM as a Cloud Service, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est pas visible par l’utilisateur ou l’utilisatrice. Cependant, certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients et les clientes n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
 * Seuls les analyseurs standard sont pris en charge (c’est-à-dire les analyseurs fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 * La recherche par vecteurs de caractéristiques similaires (`useInSimilarity = true`) n’est pas prise en charge.
 
 >[!TIP]
 >
->Pour plus d’informations sur l’indexation et les requêtes Oak, y compris une description détaillée des fonctionnalités avancées de recherche et d’indexation, consultez la [documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Pour plus d’informations sur l’indexation et les requêtes Oak, y compris une description détaillée des fonctionnalités avancées de recherche et d’indexation, consultez la [documentation d’Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Utilisation {#how-to-use}
@@ -55,23 +55,23 @@ Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index da
 
 Une définition d’index peut appartenir à l’une des catégories suivantes :
 
-1. Index prêt à l’emploi. Par exemple : `/oak:index/cqPageLucene-2` ou `/oak:index/damAssetLucene-8`.
+1. Index prêt à l’emploi. Il s’agit d’index prédéfinis fournis par AEM. Par exemple : `/oak:index/cqPageLucene-2` ou `/oak:index/damAssetLucene-8`.
 
-2. Personnalisation d’un index prêt à l’emploi. Ils sont indiqués en ajoutant `-custom-` suivi d’un identifiant numérique au nom d’index d’origine. Par exemple : `/oak:index/damAssetLucene-8-custom-1`.
+2. Personnalisation d’un index prêt à l’emploi. Pour personnaliser un index prêt à l’emploi, ajoutez `-custom-` suivi d’un nombre. Par exemple, `/oak:index/damAssetLucene-8-custom-1` correspond à la personnalisation du `/oak:index/damAssetLucene-8` d’index prêt à l’emploi. Une personnalisation consiste généralement en une copie de l’index prêt à l’emploi, ainsi que des propriétés supplémentaires qui doivent être indexées.
 
-3. Index entièrement personnalisé : il est possible de créer un index entièrement nouveau à partir de zéro. Leur nom doit comporter un préfixe pour éviter les conflits de noms. Par exemple : `/oak:index/acme.product-1-custom-2`, où le préfixe est `acme.`
+3. Index entièrement personnalisé : vous pouvez créer un index entièrement nouveau à partir de zéro. Ces index doivent également se terminer par `-custom-` et un numéro de version. En outre, pour éviter les conflits de noms, utilisez un préfixe dans le nom de l’index. Par exemple : `/oak:index/acme.product-1-custom-2`, où `acme.` est le préfixe.
 
 >[!NOTE]
 >
->L’introduction de nouveaux index sur le type de nœud `dam:Asset` (en particulier les index de texte intégral) est vivement déconseillée, car ils peuvent entrer en conflit avec les fonctionnalités du produit prêtes à l’emploi, ce qui entraîne des problèmes fonctionnels et de performances. En règle générale, l’ajout de propriétés supplémentaires à la version d’index `damAssetLucene-*` actuelle est la manière la plus appropriée d’indexer les requêtes sur le type de nœud `dam:Asset` (ces modifications sont automatiquement fusionnées dans une nouvelle version de produit de l’index si celui-ci est ensuite publié). En cas de doute, contactez l’assistance Adobe pour obtenir des conseils.
+>Il est vivement déconseillé d’introduire de nouveaux index sur le type de nœud `dam:Asset` (en particulier les index de texte intégral), car ils peuvent entrer en conflit avec les fonctionnalités du produit prêtes à l’emploi, ce qui entraîne des problèmes fonctionnels et de performances. Au lieu de cela, la méthode la plus appropriée pour indexer des requêtes sur le type de nœud `dam:Asset` consiste à personnaliser l’index `damAssetLucene-*` en ajoutant les propriétés supplémentaires. Ces modifications seront automatiquement fusionnées dans une nouvelle version du produit dans les versions ultérieures. En cas de doute, contactez l’assistance Adobe pour obtenir des conseils.
 
 ## Préparation de la nouvelle définition d’index {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-8`, copiez la dernière définition d’index d’usine à partir d’un environnement *Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`) . Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Cela permet de s’assurer que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé déployé dans un environnement AEM Cloud Service, mais n’existe pas sur le SDK AEM local.
+>Lors de la personnalisation d’un index prêt à l’emploi, par exemple, `damAssetLucene-8`, copiez la dernière définition d’index prêt à l’emploi à partir d’un environnement *Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`) . Renommez-le en `damAssetLucene-8-custom-1` (ou version ultérieure) et ajoutez vos personnalisations dans le fichier XML. Si l’index dans l’environnement cloud est de type `elasticsearch`, des modifications supplémentaires sont nécessaires : modifiez la propriété `type` en `lucene`, modifiez la propriété `async` en `[async,nrt]` et modifiez la propriété `similarityTags` en `true`. Cela permet de s’assurer que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-8/tika` est requis dans l’index personnalisé déployé dans un environnement AEM Cloud Service, mais n’existe pas sur le SDK AEM local.
 
-Pour les personnalisations d’un index prêt à l’emploi, préparez un nouveau package contenant la définition d’index réelle qui suit ce modèle de dénomination :
+Pour les personnalisations d’un index prêt à l’emploi, préparez un nouveau package contenant la définition d’index personnalisée. Le nom de l’index doit suivre le modèle de dénomination :
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -256,7 +256,7 @@ La gestion des index consiste à ajouter, supprimer et modifier des index. Chang
 
 ### Que sont les déploiements en continu ? {#what-are-rolling-deployments}
 
-Un déploiement en continu peut réduire les temps d’arrêt. Il permet également des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application s’exécute en même temps que la nouvelle version.
+Un déploiement en continu permet des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application s’exécute en même temps que la nouvelle version.
 
 ### Zones en lecture seule et en lecture-écriture {#read-only-and-read-write-areas}
 
@@ -282,7 +282,7 @@ Lors du développement ou de l’utilisation d’installations on-premise, les i
 
 Avec des déploiements en continu, il n’existe pas de temps d’arrêt. Pendant un certain temps lors d’une mise à jour, l’ancienne version (par exemple, la version 1) de l’application et la nouvelle version (la version 2) s’exécutent simultanément sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2. L’index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, il est garanti que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
 
-Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester disponibles un certain temps afin d’accélérer les restaurations, le cas échéant.
+Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index sont généralement conservés pendant une semaine afin d’accélérer les restaurations (si une restauration doit être nécessaire).
 
 Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions tandis que index `damAssetLucene-custom-1` l’est uniquement dans la version 2.
 
@@ -292,23 +292,23 @@ Le tableau suivant présente cinq définitions d’index : l’index `cqPageLu
 
 | Index | Index prêt à l’emploi | Utilisation dans la version 1 | Utilisation dans la version 2 |
 |---|---|---|---|
-| /oak:index/damAssetLucene | Oui | Oui | Non |
-| /oak:index/damAssetLucene-custom-1 | Oui (personnalisé) | Non | Oui |
-| /oak:index/acme.product-custom-1 | Non | Oui | Non |
-| /oak:index/acme.product-custom-2 | Non | Non | Oui |
-| /oak:index/cqPageLucene | Oui | Oui | Oui |
+| /oak:index/damAssetLucene-8 | Oui | Oui | Non |
+| /oak:index/damAssetLucene-8-custom-1 | Oui (personnalisé) | Non | Oui |
+| /oak:index/acme.product-1-custom-1 | Non | Oui | Non |
+| /oak:index/acme.product-1-custom-2 | Non | Non | Oui |
+| /oak:index/cqPageLucene-2 | Oui | Oui | Oui |
 
 Le numéro de version est incrémenté chaque fois que l’index est modifié. Pour éviter que des noms d’index personnalisés n’entrent en conflit avec des noms d’index du produit lui-même, les index personnalisés et les modifications apportées aux index prêts à l’emploi doivent se terminer par `-custom-<number>`.
 
 ### Modifications apportées aux index prêts à l’emploi {#changes-to-out-of-the-box-indexes}
 
-Lorsqu’Adobe modifie un index prêt à l’emploi tel que &quot;damAssetLucene&quot; ou &quot;cqPageLucene&quot;, un nouvel index nommé `damAssetLucene-2` ou `cqPageLucene-2` est créé. Ou, si l’index a déjà été personnalisé, la définition d’index personnalisé est fusionnée avec les modifications de l’index prêt à l’emploi, comme illustré ci-dessous. La fusion des modifications se produit automatiquement. Cela signifie que vous n’avez rien à faire si un index prêt à l’emploi change. Cependant, il est possible de personnaliser à nouveau l’index ultérieurement.
+Après qu’Adobe a modifié un index prêt à l’emploi tel que `damAssetLucene` ou `cqPageLucene`, un nouvel index nommé `damAssetLucene-2` ou `cqPageLucene-2` est créé. Ou, si l’index a déjà été personnalisé, la définition d’index personnalisé est fusionnée avec les modifications de l’index prêt à l’emploi, comme illustré ci-dessous. La fusion des modifications se produit automatiquement. Cela signifie que vous n’avez rien à faire si un index prêt à l’emploi change. Cependant, il est possible de personnaliser à nouveau l’index ultérieurement. Dans ce cas, il est important d’utiliser la dernière version (fusionnée) comme ligne de base.
 
 | Index | Index prêt à l’emploi | Utilisation dans la version 2 | Utilisation dans la version 3 |
 |---|---|---|---|
-| /oak:index/damAssetLucene-custom-1 | Oui (personnalisé) | Oui | Non |
-| /oak:index/damAssetLucene-2-custom-1 | Oui (automatiquement fusionné à partir de damAssetLucene-custom-1 et damAssetLucene-2) | Non | Oui |
-| /oak:index/cqPageLucene | Oui | Oui | Non |
+| /oak:index/damAssetLucene-1-custom-1 | Oui (personnalisé) | Oui | Non |
+| /oak:index/damAssetLucene-2-custom-1 | Oui (automatiquement fusionné de damAssetLucene-1-custom-1 et damAssetLucene-2) | Non | Oui |
+| /oak:index/cqPageLucene-1 | Oui | Oui | Non |
 | /oak:index/cqPageLucene-2 | Oui | Non | Oui |
 
 Il est important de noter que les environnements peuvent se trouver dans différentes versions d’AEM. Par exemple : `dev` environnement est en version `X+1` alors que l’évaluation et la production sont toujours en version `X` et attendent d’être mises à niveau vers la version `X+1` après que les tests requis sur les `dev` ont été effectués. Si la version `X+1` est fournie avec une version plus récente d’un index de produit qui a été personnalisé et qu’une nouvelle personnalisation de cet index est requise, le tableau suivant explique les versions à définir sur les environnements basés sur la version AEM :
@@ -328,11 +328,11 @@ Seuls les analyseurs intégrés sont pris en charge (c’est-à-dire les analyse
 
 Actuellement, l’indexation du contenu des `/oak:index` n’est pas prise en charge.
 
-Pour de meilleures performances opérationnelles, les index ne doivent pas être trop volumineux. La taille totale de tous les index peut servir de guide. Si cette taille augmente de plus de 100 % après l’ajout d’index personnalisés et si les index standard ont été ajustés sur un environnement de développement, les définitions d’index personnalisées doivent être ajustées. AEM as a Cloud Service peut empêcher le déploiement d’index qui auraient un impact négatif sur la stabilité et les performances du système.
+Pour de meilleures performances opérationnelles, les index ne doivent pas être trop volumineux. La taille totale de tous les index peut servir de guide. Si cette taille augmente de plus de 100 % après l’ajout d’index personnalisés et si les index standard ont été ajustés sur un environnement de développement, les définitions d’index personnalisées doivent être ajustées. AEM as a Cloud Service peut empêcher le déploiement de ou supprimer des index qui auraient un impact négatif sur la stabilité et les performances du système.
 
 ### Ajouter un index {#adding-an-index}
 
-Pour ajouter un index entièrement personnalisé nommé « `/oak:index/acme.product-custom-1` » à utiliser dans une nouvelle version de l’application et ultérieurement, l’index doit être configuré comme suit :
+Pour ajouter un index entièrement personnalisé nommé « `/oak:index/acme.product-1-custom-1` » à utiliser dans une nouvelle version de l’application et ultérieurement, l’index doit être configuré comme suit :
 
 `acme.product-1-custom-1`
 
@@ -342,15 +342,15 @@ Comme ci-dessus, cette configuration garantit que l’index n’est utilisé que
 
 ### Modifier un index {#changing-an-index}
 
-Lorsqu’un index existant est modifié, un nouvel index doit être ajouté avec la définition d’index modifiée. Par exemple, imaginons que l’index existant « `/oak:index/acme.product-custom-1` » a été modifié. L’ancien index est stocké sous `/oak:index/acme.product-custom-1` et le nouvel index sous `/oak:index/acme.product-custom-2`.
+Lorsqu’un index existant est modifié, un nouvel index doit être ajouté avec la définition d’index modifiée. Par exemple, imaginons que l’index existant « `/oak:index/acme.product-1-custom-1` » a été modifié. L’ancien index est stocké sous `/oak:index/acme.product-1-custom-1` et le nouvel index sous `/oak:index/acme.product-1-custom-2`.
 
 L’ancienne version de l’application utilise la configuration suivante :
 
-`/oak:index/acme.product-custom-1`
+`/oak:index/acme.product-1-custom-1`
 
 La nouvelle version de l’application utilise la configuration suivante (modifiée) :
 
-`/oak:index/acme.product-custom-2`
+`/oak:index/acme.product-1-custom-2`
 
 >[!NOTE]
 >
@@ -358,19 +358,20 @@ La nouvelle version de l’application utilise la configuration suivante (modifi
 
 ### Annuler une modification {#undoing-a-change}
 
-Parfois, il devient nécessaire d’annuler une modification dans une définition d’index. Cela peut se produire en raison d’une erreur par inadvertance ou parce que la modification n’est plus nécessaire. Prenez, par exemple, la définition d’index `damAssetLucene-8-custom-3,` qui a été créée par erreur et qui a déjà été déployée. Par conséquent, vous souhaitez revenir à la définition d’index précédente, `damAssetLucene-8-custom-2.` Pour ce faire, vous devez introduire un nouvel index nommé `damAssetLucene-8-custom-4` qui incorpore la définition de l’index précédent, `damAssetLucene-8-custom-2.`
+Parfois, il est nécessaire d’annuler une modification dans une définition d’index, par exemple en raison d’une erreur ou parce que la modification n’est plus nécessaire. Par exemple, si la définition d’index `damAssetLucene-8-custom-3` contient une erreur, vous pouvez revenir à la définition précédente, `damAssetLucene-8-custom-2`. Pour ce faire, créez un index nommé `damAssetLucene-8-custom-4` qui est une copie de l’index précédent, `damAssetLucene-8-custom-2.`
 
 ### Suppression d’un index {#removing-an-index}
 
 Les éléments suivants s’appliquent uniquement aux personnalisations des index prêts à l’emploi et aux index entièrement personnalisés. Notez que les index prêts à l’emploi d’origine ne peuvent pas être supprimés, car ils sont utilisés par AEM.
 
-Pour garantir l’intégrité et la stabilité du système, les définitions d’index doivent être traitées comme immuables une fois déployées. Pour obtenir l’effet de la suppression d’un index personnalisé, créez une nouvelle version de l’index personnalisé avec une définition qui simule efficacement la suppression de l’index.
+Pour garantir l’intégrité et la stabilité du système, les définitions d’index doivent être traitées comme immuables une fois déployées. Si vous devez supprimer un index personnalisé ou une personnalisation, créez une nouvelle version de cet index avec une définition qui simule efficacement la suppression
+(voir les exemples ci-dessous).
 
 Une fois qu’une nouvelle version d’un index est déployée, l’ancienne version du même index ne sera plus utilisée par les requêtes.
 L’ancienne version ne sera pas immédiatement supprimée de l’environnement.
 mais deviendra éligible à la récupération de l’espace mémoire par un mécanisme de nettoyage qui s’exécute périodiquement.
 Après une période de grâce conçue pour permettre la récupération en cas d&#39;erreurs
-(actuellement, 7 jours à compter de la date à laquelle l’indexation a été supprimée, mais peut être modifiée),
+(actuellement, 7 jours à compter de la date de suppression de l’indexation, mais sous réserve de modifications),
 ce mécanisme de nettoyage supprimera les données d’index inutilisées,
 et désactivent ou suppriment l’ancienne version de l’index de l’environnement.
 
@@ -382,10 +383,10 @@ Suivez les étapes décrites dans [Annulation d’une modification](#undoing-a-c
 
 #### Suppression d’un index entièrement personnalisé
 
-Suivez les étapes décrites dans [Annulation d’une modification](#undoing-a-change-undoing-a-change) en utilisant un index factice comme nouvelle version. Un index factice n’est jamais utilisé pour les requêtes et ne contient aucune donnée. L’effet est donc le même que si l’index n’existait pas. Par exemple, vous pouvez le nommer `/oak:index/acme.product-custom-3`. Ce nom remplace l’index `/oak:index/acme.product-custom-2`. Voici un exemple d’index factice :
+Suivez les étapes décrites dans [Annulation d’une modification](#undoing-a-change-undoing-a-change) en utilisant un index factice comme nouvelle version. Un index factice n’est jamais utilisé pour les requêtes et ne contient aucune donnée. L’effet est donc le même que si l’index n’existait pas. Par exemple, vous pouvez le nommer `/oak:index/acme.product-1-custom-3`. Ce nom remplace l’index `/oak:index/acme.product-1-custom-2`. Voici un exemple d’index factice :
 
 ```xml
-<acme.product-custom-3
+<acme.product-1-custom-3
         jcr:primaryType="oak:QueryIndexDefinition"
         async="async"
         compatVersion="2"
@@ -402,10 +403,8 @@ Suivez les étapes décrites dans [Annulation d’une modification](#undoing-a-c
                 </properties>
             </rep:root>
         </indexRules>
-</acme.product-custom-3>
+</acme.product-1-custom-3>
 ```
-
-
 
 ## Optimisations des index et des requêtes {#index-query-optimizations}
 
