@@ -1,28 +1,29 @@
 ---
-title: Prise en main des outils de refactorisation
+title: Présentation des outils de refactorisation
 description: Découvrez comment commencer à utiliser les outils de refactorisation d’AEM
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="Vue d’ensemble"
->abstract="Les outils de refactorisation sont une solution développée par Adobe pour aider à refactoriser les projets AEM existants pour des raisons de compatibilité avec AEM as a Cloud Service. Les outils sont exécutés via Cloud Acceleration Manager (CAM) et automatisent les tâches de modernisation essentielles."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# Prise en main des outils de refactorisation {#getting-started-refactoring-tools}
+-->
+
+# Présentation des outils de refactorisation {#refactoring-tools-overview}
 
 **Outils de refactorisation** rationalisez le processus de mise à jour des projets AEM existants pour les rendre compatibles avec **AEM as a Cloud Service (AEMaaCS)**. Ces outils automatisent les tâches courantes de refactorisation et de modernisation et sont intégrés à **Cloud Acceleration Manager (CAM)** pour une expérience transparente.
 
 Auparavant disponibles uniquement en tant qu’utilitaires d’interface de ligne de commande, les outils de refactorisation fournissent désormais une interface unifiée avec des fonctionnalités telles que l’inspection automatisée, la génération de configurations et l’exécution de tâches, ce qui réduit les frais généraux manuels et améliore la visibilité.
-
-&#x200B;---
 
 ## Workflow d’inspection {#inspection-workflow}
 
@@ -34,8 +35,6 @@ Le **workflow d’inspection** simplifie le processus de préparation pour l’e
 * **Génération de configuration** - Les outils examinent le code source chargé et génèrent les configurations nécessaires.
 * **Envoi de la payload** - Ces configurations sont transmises directement aux outils sélectionnés pour exécution.
 
-&#x200B;---
-
 ## Outils de refactorisation disponibles
 
 ### Repository Modernizer {#repo-modernizer}
@@ -45,8 +44,6 @@ Le **workflow d’inspection** simplifie le processus de préparation pour l’e
 ### Transformateur de code {#code-transformer}
 
 Le **transformateur de code** utilise la reconnaissance intelligente de motifs et l’analyse pilotée par l’IA pour détecter et mettre à jour les segments de code incompatibles avec AEMaaCS. Cet outil simplifie les tâches de migration et réduit les modifications manuelles du code.
-
-&#x200B;---
 
 ## Refactorisation des phases de workflow {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ Les outils de refactorisation suivent un processus structuré en deux phases :
 
 >[!NOTE]
 >Pendant le processus d&#39;inspection, il n&#39;est pas permis de charger un autre projet.
-
-&#x200B;---
 
 ### Phase 2 : déclenchement d’une tâche de refactorisation
 
