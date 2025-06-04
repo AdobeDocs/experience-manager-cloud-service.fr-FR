@@ -4,10 +4,10 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
+source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 87%
+source-wordcount: '3028'
+ht-degree: 70%
 
 ---
 
@@ -18,20 +18,19 @@ ht-degree: 87%
 >title="Fonctionnalités obsolètes et supprimées dans AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service dispose d’un modèle de déploiement natif dans le cloud. Cet onglet met en évidence les capacités et fonctionnalités remplacées par leurs homologues natifs cloud."
 
-Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur globale apportée à la clientèle, le tout en faisant toujours attention à la rétrocompatibilité. Étant donné qu’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] utilise un modèle de déploiement natif au cloud, il remplace certaines capacités et fonctionnalités par des équivalents natifs cloud.
+Adobe passe régulièrement en revue les fonctionnalités, y compris les API et les configurations, afin de s’assurer qu’elles répondent à des normes en constante évolution en termes de performances, de sécurité et de valeur globale pour AEM as a Cloud Service. Selon ces évaluations, certaines fonctionnalités peuvent être marquées comme obsolètes. Dans la mesure du possible, Adobe fournira un remplacement approprié.
 
-Pour communiquer la suppression/le remplacement imminent de fonctionnalités d’[!DNL Experience Manager], les règles suivantes s’appliquent :
+Lorsqu’une obsolescence est annoncée, la fonctionnalité ne reste disponible que pendant une période limitée et les clients doivent supprimer toute utilisation avant une date de suppression spécifiée. Adobe fournira un préavis et des conseils raisonnables pour faciliter une transition en douceur.
 
-1. L’annonce de la suppression arrive en premier. Les capacités obsolètes demeurent disponibles, mais ne sont plus améliorées.
-1. Les fonctionnalités annoncées comme obsolètes sont supprimées au plus tôt dans la version majeure qui suit. La date cible réelle de la suppression est annoncée.
+Pendant la période d’obsolescence, Adobe rappelle aux clients les actions qu’ils doivent entreprendre pour cesser d’utiliser une fonctionnalité par le biais de notifications par e-mail, d’alertes du Centre d’actions ou de rappels dans Cloud Manager.
 
-Ce processus donne aux clients au moins un cycle de version afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
+>[!WARNING]
+>
+>Dans certains cas, la suppression d’une fonctionnalité peut être nécessaire avant de déployer une nouvelle version de Cloud Manager ou d’effectuer une mise à niveau vers la dernière version d’AEM as a Cloud Service.
 
-## Fonctionnalités obsolètes {#deprecated-features}
+## Fonctionnalité obsolète {#deprecated-features}
 
-Cette section répertorie les fonctionnalités qui ont été marquées comme obsolètes dans [!DNL Experience Manager] as a [!DNL Cloud Service]. En règle générale, les fonctionnalités qui doivent être supprimées dans une version ultérieure sont d’abord définies comme obsolètes, et une alternative est fournie.
-
-Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionnalité dans leur déploiement actuel et de prévoir la modification de leur mise en œuvre de façon à utiliser l’alternative proposée.
+La fonctionnalité du tableau ci-dessous a été annoncée comme obsolète, mais n’a pas encore été supprimée.  L’utilisation de la fonctionnalité doit cesser avant la date de suppression cible, faute de quoi vous risquez des problèmes liés aux performances, à la disponibilité et à la sécurité.
 
 | Fonctionnalités | Fonctionnalité obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
@@ -52,9 +51,9 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Foundation] | Workflow de publication d’arborescence de contenu et étape de workflow de publication d’arborescence de contenu associée, qui a été utilisée pour les réplications de hiérarchies de contenu. | Utilisez l’[étape de workflow d’activation d’arborescence](/help/operations/replication.md#tree-activation), qui est plus performante. |
 | [!DNL Foundation] | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. | Adobe recommande aux clients de passer à Google Closure Compiler (GCC) pour leur mise en œuvre. |
 
-## Fonctionnalités supprimées {#removed-features}
+## Fonctionnalité supprimée {#removed-features}
 
-Cette section répertorie les capacités et fonctionnalités qui ont été supprimées d’[!DNL Experience Manager] avec [!DNL Experience Manager] as a [!DNL Cloud Service].
+Cette section répertorie les fonctionnalités qui ont été supprimées.
 
 | Domaine | Fonctionnalité | Remplacement | Date de suppression visée |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -68,11 +67,11 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Foundation] | Prise en charge d’Apache Felix Http Whiteboard | OSGi Http Whiteboard | Mars 2022 |
 | [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS | Mars 2023 |
 | [!DNL Foundation] | Prise en charge de la fonctionnalité org.apache.sling.serviceusermapping pour [obtenir l’ID d’utilisateur ou d’utilisatrice du service](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | S/O | 30/08/24 |
+| [!DNL Foundation] | L’exécution de Java 11 est obsolète et a été remplacée par Adobe avec l’exécution de Java 21. Notez qu’il est acceptable que le code soit toujours créé avec Java 11 (Java 17 et 21 sont les autres options) | Le runtime Java 21 est appliqué. Pour garantir la compatibilité, il est essentiel de mettre à jour les versions de bibliothèque comme indiqué dans [Exigences d’exécution](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | Mars 5/29/25 |
 
+## API obsolètes {#aem-apis}
 
-## API d’AEM {#aem-apis}
-
-Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur date de suppression prévue. Il est attendu des clients qu’ils suppriment de leur code les API d’ici la date de suppression cible. Toute utilisation de l’API après la date de suppression peut générer des erreurs dans l’environnement de développement/SDK local et le processus de création Cloud Manager.
+Les API du tableau ci-dessous (cliquez pour les développer) ont été annoncées comme obsolètes, mais n’ont pas encore été supprimées.  L’utilisation de ces API doit cesser avant la date de suppression cible, faute de quoi vous risquez des problèmes liés aux performances, à la disponibilité et à la sécurité. Certaines API font référence à la section Guide de suppression des API ci-dessous.
 
 <details>
   <summary>Développez pour afficher la liste des API obsolètes.</summary>
@@ -91,47 +90,17 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>7/30/2021</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place. <a href="#apache.commons">Voir les notes de suppression ci-dessous.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 est en mode de maintenance. Commons Collections 4 doit être utilisé à la place. <a href="#apache.commons">Voir les notes de suppression ci-dessous.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>La console web Felix n’est pas prise en charge dans les environnements cloud. <a href="#org.apache.felix.webconsole">Voir les notes de suppression ci-dessous.</a></td>
-    <td>4/30/2021</td>
-    <td>8/31/2025</td>
-  </tr>
-  <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Les packages Eclipse Jetty et Felix Http Jetty ne sont plus pris en charge. <a href="#org.eclipse.jetty">Voir les notes de suppression ci-dessous.</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+ <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service. <a href="#com.mongodb">Voir les notes de suppression ci-dessous.</a></td>
     <td>5/27/2021</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
+   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Cette API est obsolète, car le projet Apache Abdera a été supprimé en 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Voir les notes de suppression ci-dessous.</a></td>
     <td>7/29/2021</td>
@@ -173,17 +142,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>27/01/2022</td>
     <td>8/31/2025</td>
   </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>Cette API est obsolète. Utilisez les créateurs de ressources d’Apache Sling à la place.</td>
-    <td>31/10/2022</td>
-    <td>01/01/2023</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service ne prend pas en charge cette API.</td>
-    <td>15/05/2023</td>
-    <td>15/06/2023</td>
-  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+  <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Les bibliothèques principales de Google Guava sont obsolètes.</td>
     <td>15/05/2023</td>
     <td>8/31/2025</td>
@@ -193,20 +152,8 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>AEM as a Cloud Service ne prend pas en charge cette API slf4j interne. <a href="#org.slf4j">Voir les notes de suppression ci-dessous.</a></td>
     <td>11/04/2022</td>
     <td>8/31/2025</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>Utilisez org.apache.sling.xss à la place.</td>
-    <td>12/12/2023</td>
-    <td>30/06/2024</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>Utilisez org.apache.sling.xss à la place.</td>
-    <td>12/12/2023</td>
-    <td>30/06/2024</td>
-  </tr>
-  <tr>
+  </tr> 
+    <tr>
     <td>com.drew.*</td>
     <td>L’extraction des métadonnées des images et des vidéos doit s’effectuer via Asset Compute dans Cloud Service ou via Apache POI ou Apache Tika.</td>
     <td>17/09/2024</td>
@@ -225,16 +172,70 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+<td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
+    <td>La console web Felix n’est pas prise en charge dans les environnements cloud. <a href="#org.apache.felix.webconsole">Voir les notes de suppression ci-dessous.</a></td>
+    <td>4/30/2021</td>
+    <td>8/31/2025</td>
+  </tr>
+<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>L’utilisation de cette API n’est pas prise en charge dans AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
     <td>8/31/2025</td>
+  </tr>  
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>À déterminer</td>
   </tr>
-</tbody>
+  <tr>
+    <td>org.json</td>
+    <td>L’implémentation Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> est recommandée et devrait être utilisée. </td>
+    <td>4/30/2021</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 est en mode de maintenance. Commons Lang 3 devrait être utilisé à la place. <a href="#apache.commons">Voir les notes de suppression ci-dessous.</a></td>
+    <td>4/30/2021</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 est en mode de maintenance. Commons Collections 4 doit être utilisé à la place. <a href="#apache.commons">Voir les notes de suppression ci-dessous.</a></td>
+    <td>4/30/2021</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>Cette API est obsolète. Utilisez les créateurs de ressources d’Apache Sling à la place.</td>
+    <td>31/10/2022</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service ne prend pas en charge cette API.</td>
+    <td>15/05/2023</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Utilisez org.apache.sling.xss à la place.</td>
+    <td>12/12/2023</td>
+    <td>À déterminer</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Utilisez org.apache.sling.xss à la place.</td>
+    <td>12/12/2023</td>
+    <td>À déterminer</td>
+  </tr>
+  </tbody>
 </table>
 </details>
 
-Vous trouverez ci-dessous une liste exhaustive des API AEM supprimées.
+## API supprimées {#removed-apis}
+
+Cette section répertorie les API obsolètes et supprimées. Certaines API font référence à la section Guide de suppression des API ci-dessous.
 
 <details>
   <summary>Développez pour afficher la liste des API supprimées.</summary>
@@ -314,6 +315,10 @@ Vous trouverez ci-dessous une liste exhaustive des API AEM supprimées.
 </tbody>
 </table>
 </details>
+
+## Conseils de suppression des API {#api-removal-guidance}
+
+Cette section reflète les conseils de suppression des API pour diverses API dans les tableaux ci-dessus.
 
 ### Suppression de `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -412,7 +417,7 @@ Liste d’actions :
 
 ## Configuration OSGI {#osgi-configuration}
 
-Les deux listes ci-dessous représentent la surface de configuration OSGi d’AEM as a Cloud Service, décrivant ce que les clientes et clients peuvent configurer.
+Les sections ci-dessous présentent la surface de configuration OSGi d’AEM as a Cloud Service, décrivant ce que les clients peuvent configurer.
 
 1. Le code client ne doit pas configurer les configurations OSGi répertoriées.
 1. Liste des configurations OSGi dont les propriétés peuvent être configurées, mais doivent respecter les règles de validation indiquées. Ces règles indiquent si la déclaration de la propriété est requise, son type et, dans certains cas, sa plage de valeurs autorisée.
@@ -423,212 +428,115 @@ Ces règles sont validées pendant le processus de création de Cloud Manager. D
 
 Vous trouverez des informations supplémentaires sur la configuration OSGI à [cet emplacement](/help/implementing/deploying/configuring-osgi.md).
 
-+++Configurations OSGi qui ne peuvent pas être modifiées.
+### Propriétés OSGi obsolètes (celles qui ne seront plus modifiables) {#deprecated-osgi-properties}
 
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-* **`org.apache.felix.http (Factory)`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Date d’annonce : 25/08/2021, Date d’application : 26/11/2021)
-+++
+Certaines propriétés des PID de composant OSGi suivants ne peuvent plus être modifiées. Cela s’appliquera dans le délai décrit ci-dessous.
 
-+++Configurations OSGi soumises aux règles de validation de version.
+| **ID du composant OSGI** | **Propriétés non modifiables** | **Obsolescence** | **Application** |
+|---|---|---|---|
+| **`org.apache.sling.commons.log.LogManager`** | tout | 4/24/25 | 8/31/25 (configuration ignorée en juin) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (configuration ignorée en juin) |
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | tout | 2024 | 8/31/25 |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | tout | 2024 |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | tout | 2024 | 8/31/25 |
+| **`org.apache.felix.http (Factory)`** | tout | 2024 | 8/31/25 |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | tout | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | tout | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | tout | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.impl`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | tout | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | tout | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | tout | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.factory`** | tout | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | tout | 6/3/25 | 8/31/25 |
 
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * Type : entier
-   * Plage requise : 2 à 100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * Type : double
-* `org.apache.felix.eventadmin.Timeout`
-   * Type : entier
-* `org.apache.felix.eventadmin.RequireTopic`
-   * Type : booléen
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * Obligatoire
-   * Type : tableau de chaînes
-   * Plage requise : doit inclure au moins tous les éléments `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * Type : tableau de chaînes
-* **`org.apache.felix.http`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-   * `org.apache.felix.http.timeout`
-      * Type : entier
-   * `org.apache.felix.http.session.timeout`
-      * Type : entier
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * Type : entier
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * Type : entier
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * Type : entier
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * Type : entier
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * Type : entier
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * Type : booléen
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * Type : booléen
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * Type : chaîne
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * Type : booléen
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * Type : chaîne
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * Type : chaîne
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * Type : chaîne
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * Type : entier
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * Type : entier
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * Type : booléen
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * Type : entier
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * Type : entier
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * Type : entier
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * Type : booléen
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * Type : chaîne
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * Type : tableau de chaînes
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * Type : tableau de chaînes
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * Type : tableau de chaînes
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * Type : tableau de chaînes
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * Type : tableau de chaînes
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * Type : tableau de chaînes
-   * `org.apache.felix.http.session.invalidate`
-      * Type : booléen
-   * `org.apache.felix.http.session.container.attribute`
-      * Type : tableau de chaînes
-   * `org.apache.felix.http.session.uniqueid`
-      * Type : booléen
-* **`org.apache.sling.scripting.cache`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-   * `org.apache.sling.scripting.cache.size`
-      * Type : entier
-      * Plage requise : >= 2048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * Obligatoire
-      * Type : tableau de chaînes
-      * Plage requise : doit inclure js
-* **`com.day.cq.mailer.DefaultMailService`** (Date d’annonce : 30/04/2021, Date d’application : 31/07/2021)
-   * `smtp.host`
-      * Type : chaîne
-   * `smtp.port`
-      * Type : entier
-      * Plage requise : 465, 587 ou 25
-   * `smtp.user`
-      * Type : chaîne
-   * `smtp.password`
-      * Type : chaîne
-   * `from.address`
-      * Type : chaîne
-   * `smtp.ssl`
-      * Type : chaîne
-   * `smtp.starttls`
-      * Type : booléen
-   * `smtp.requiretls`
-      * Type : booléen
-   * `debug.email`
-      * Type : booléen
-   * `oauth.flow`
-      * Type : booléen
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Date d’annonce: 16/11/21, Date d’application : 16/02/21)
-   * `org.apache.sling.commons.log.level`
-      * Type : énumération
-      * Plage requise : INFO, DEBUG ou TRACE
-   * `org.apache.sling.commons.log.names`
-      * Type : chaîne
-   * `org.apache.sling.commons.log.file`
-      * Type : chaîne
-   * `org.apache.sling.commons.log.additiv`
-      * Type : booléen
-+++
+<!--
+### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+
+Properties for the following OSGi component PIDs cannot be modified, as described below.
+-->
+
+### Restrictions des propriétés OSGi {#restrictions-osgi-properties}
+
+Les valeurs de certaines propriétés OSGi sont limitées aux règles décrites ci-dessous.
+
+| PID du composant OSGi |   | Obligatoire | Type | Restriction (le cas échéant) |
+|---|---|---|---|---|
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | Oui | integer | 2-100 |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | double | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | integer | -- |
+|   | `org.apache.felix.eventadmin.RequireTopic` |   | booléen | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | Oui | tableau de chaînes | Doit inclure au moins tous les `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | tableau de chaînes | -- |
+| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | integer |   |
+|   | `org.apache.felix.http.session.timeout` |   | integer |   |
+|   | `org.apache.felix.http.jetty.threadpool.max` |   | integer |   |
+|   | `org.apache.felix.http.jetty.headerBufferSize` |   | integer |   |
+|   | `org.apache.felix.http.jetty.requestBufferSize` |   | integer |   |
+|   | `org.apache.felix.http.jetty.responseBufferSize` |   | integer |   |
+|   | `org.apache.felix.http.jetty.maxFormSize` |   | integer |   |
+|   | `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | booléen |   |
+|   | `org.apache.felix.https.jetty.session.cookie.secure` |   | booléen |   |
+|   | `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | chaîne |   |
+|   | `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding` |   | booléen |   |
+|   | `org.eclipse.jetty.servlet.SessionCookie` |   | chaîne |   |
+|   | `org.eclipse.jetty.servlet.SessionDomain` |   | chaîne |   |
+|   | `org.eclipse.jetty.servlet.SessionPath` |   | chaîne |   |
+|   | `org.eclipse.jetty.servlet.MaxAge` |   | integer |   |
+|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | integer |   |
+|   | `org.apache.felix.jetty.gziphandler.enable` |   | booléen |   |
+|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | integer |   |
+|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | integer |   |
+|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | integer |   |
+|   | `org.apache.felix.jetty.gzip.syncFlush` |   | booléen |   |
+|   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | chaîne |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | tableau de chaînes |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | tableau de chaînes |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | tableau de chaînes |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | tableau de chaînes |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | tableau de chaînes |   |
+|   | `org.apache.felix.http.session.invalidate` |   | booléen |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | tableau de chaînes |   |
+|   | `org.apache.felix.http.session.uniqueid` |   | booléen |   |
+| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | Oui | integer | >= 2048 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | Oui | tableau de chaînes | doit inclure « js » |
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | chaîne |   |
+|   | `smtp.port` | Oui | integer | « 465 », « 587 » ou « 25 » |
+|   | `smtp.user` |   | chaîne |   |
+|   | `smtp.password` |   | chaîne |   |
+|   | `from.address` |   | chaîne |   |
+|   | `smtp.ssl` |   | chaîne |   |
+|   | `smtp.starttls` |   | booléen |   |
+|   | `smtp.requiretls` |   | booléen |   |
+|   | `debug.email` |   | booléen |   |
+|   | `oauth.flow` |   | booléen |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Oui | chaîne | soit « INFO », « DEBUG » ou « TRACE » |
+|   | `org.apache.sling.commons.log.names` |   | tableau de chaînes |   |
+|   | `org.apache.sling.commons.log.additiv` |   | booléen |   |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | Non | chaîne |   |
+|   | `request.log.outputtype` | Non | chaîne |   |
+|   | `request.log.entry.format` | Non | chaîne |   |
+|   | `request.log.exit.format` | Non | chaîne |   |
+|   | `request.log.enabled` | Non | chaîne |   |
+|   | `access.log.output` | Non | chaîne |   |
+|   | `access.log.outputtype` | Non | chaîne |   |
+|   | `access.log.enabled` | Non | chaîne |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | Non | chaîne |   |
+|   | `servletresolver.cacheSize` | Non | integer |   |
+|   | `servletresolver.paths` | Non | chaîne[] |   |
+|   | `servletresolver.defaultExtensions` | Non | chaîne |   |
+|   | `servletresolver.mountProviders` | Non | booléen |   |
+|   | `servletresolver.scriptUser` | Non | chaîne | obsolète, ne pas utiliser |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | Non | chaîne[] |   |
+|   | `externalizer.encodedpath` | Non | booléen |   |
+|   | `externalizer.host` | Non | chaîne |   |
+|   | `externalizer.contextpath` | Non | chaîne |   |
 
 ## Mise à jour de Java Runtime vers la version 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service passe à l’environnement d’exécution Java 21. Pour garantir la compatibilité, il est essentiel de mettre à jour les versions de bibliothèque comme indiqué dans la section [Exigences d’exécution](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Adobe Experience Manager as a Cloud Service est passé à l’exécution Java 21. Pour garantir la compatibilité, il est essentiel de mettre à jour les versions de bibliothèque comme indiqué dans la section [Exigences d’exécution](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
-<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
-
-### Runtime Requirements
-
-These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
-
-Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of org.apache.groovy {#org.apache.groovy}
-
-Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
-
-This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
-
-### Build-time Requirements
-
-These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
-
-Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
-
-#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
-
-Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
-
-Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
-
-#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
-
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
--->
