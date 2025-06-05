@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->>La fonctionnalité décrite dans cet article n’est disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 L’environnement de test spécialisé, ou DevXL, est un nouveau type d’environnement Cloud Manager que vous pouvez créer. Il est conçu pour prendre en charge des cas d’utilisation avancés tels que les tests d’acceptation utilisateur (UAT) et la validation des performances. Contrairement aux environnements de développement, de développement rapide ou d’évaluation traditionnels, les environnements DevXL fonctionnent en dehors du pipeline de déploiement de production. Ils vous offrent donc une plus grande flexibilité tout en maintenant une isolation stricte afin d’éviter toute interférence avec les workflows de production.
 
@@ -66,7 +66,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Cliquez sur [**Environnement de test spécialisé**](#environment-types).
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
 
    ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 
