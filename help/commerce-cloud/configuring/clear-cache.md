@@ -3,13 +3,13 @@ title: Effacer le cache du composant et du GraphQL
 description: Découvrez comment activer et vérifier la fonctionnalité d’effacement du cache dans AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 63a3a40cc19a83ce51a74899434c73f0ff4f318c
+exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
+source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 2%
 
 ---
-
 
 # Effacer le cache du composant et du GraphQL {#clear-cache}
 
@@ -23,14 +23,16 @@ Par défaut, la fonction d’effacement du cache est désactivée dans la config
   >[!NOTE]
   >
   > La configuration doit être activée uniquement pour les instances de création.
+
 * Activez le listener pour effacer le cache de chaque instance d’AEM (publication et création) en ajoutant la configuration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` dans votre projet, comme illustré [ici](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuration doit être activée pour les instances de création et de publication.
    * Activation du cache de Dispatcher (facultatif) : vous pouvez activer le paramètre Effacer le cache du Dispatcher en définissant la propriété `enableDispatcherCacheInvalidation` sur true dans la configuration ci-dessus. Cette option permet d’effacer le cache du Dispatcher.
-
   >[!NOTE]
   >
   > Cela ne fonctionne qu’avec les instances de publication.
-  > * Veillez également à indiquer le modèle correspondant qui convient à votre produit, à votre catégorie et à la page CMS qui doit être ajoutée au fichier de configuration ci-dessus pour le supprimer du cache du Dispatcher.
+
+   * Veillez également à indiquer le modèle correspondant qui convient à votre produit, à votre catégorie et à la page CMS qui doit être ajoutée au fichier de configuration ci-dessus pour le supprimer du cache du Dispatcher.
+
 * Pour améliorer les performances des requêtes SQL afin de trouver la page correspondante associée au produit et à la catégorie, ajoutez l’index correspondant dans votre projet (recommandé). Pour plus d’informations, voir [cifCacheInvalidationSupport/]&#x200B;(link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Vérification de la fonctionnalité Effacer le cache {#verify-clear-cache}
@@ -57,7 +59,6 @@ Maintenant, pour vérifier si les caches sont correctement effacés :
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Si tout se passe bien, les nouvelles modifications sont répercutées dans chaque instance. Si les modifications ne sont pas prises en compte pour l’instance de publication, vérifiez dans la fenêtre privée les pages PLP et PDP correspondantes.
 
 >[!NOTE]
