@@ -4,9 +4,9 @@ description: En savoir plus sur la version 2025.6.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 33%
 
 ---
@@ -27,7 +27,7 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
 
 ## Nouveautés {#what-is-new}
 
-* Le tableau de bord des licences **(UI) inclut désormais la licence Edge Delivery Services**
+* **Le tableau de bord des licences comprend désormais la licence Edge Delivery Services**
 
   L’utilisation de la licence Edge Delivery Services s’affiche désormais dans le tableau de bord des licences, ce qui vous permet de mieux connaître vos droits et votre statut. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
 
   Voir [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
 
-* **de la configuration du site Edge Delivery (interface utilisateur)**
+* **Configuration du site Edge Delivery mise à jour**
 
   Simplification du flux d’ajout d’un site Edge Delivery en demandant l’**origine Edge Delivery** au lieu de l’**URL du référentiel**, ce qui rend l’intégration et la configuration plus rapides et plus intuitives <!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
 
   Voir [Ajouter un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **favoris du pipeline (interface utilisateur)**
+* **Favoris de pipeline**
 
   Dans cette version, Cloud Manager offre la possibilité d’épingler les pipelines favoris, ce qui vous permet de marquer des pipelines spécifiques comme favoris afin qu’ils apparaissent en haut de la liste sur la page **Pipelines**. Cette amélioration facilite la recherche et l’exécution des pipelines fréquemment consultés. <!-- CMGR-68293 -->
 
