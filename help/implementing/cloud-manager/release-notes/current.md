@@ -4,9 +4,9 @@ description: En savoir plus sur la version 2025.6.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '961'
 ht-degree: 33%
 
 ---
@@ -61,7 +61,7 @@ Les possibilités d’adoption précoce suivantes sont actuellement disponibles�
 
 ### Gérer les jetons d’accès{#manage-access-tokens}
 
-Utilisez la fonctionnalité **Gérer les jetons d’accès** de Cloud Manager pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own Git, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+Utilisez **Gérer les jetons d’accès** dans Cloud Manager pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own Git, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 
 Voir [ Gestion des jetons d’accès ](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
 
