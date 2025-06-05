@@ -82,8 +82,8 @@ Si la boîte de dialogue **[!UICONTROL Télécharger des ressources]** affiche l
 
    >[!NOTE]
    >
-   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Les utilisateurs ayant accès à [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
+   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Les utilisateurs ayant accès à [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
    >* L’aperçu de la licence s’affiche uniquement si la ressource est approuvée à l’aide de [!DNL Assets as a Cloud Service] environnement de création. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
