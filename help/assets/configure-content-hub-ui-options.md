@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 18%
+source-wordcount: '1987'
+ht-degree: 16%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 18%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -213,25 +213,37 @@ L’administration peut définir les champs de métadonnées qui font l’objet 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications de sorte que la nouvelle propriété de métadonnées s’affiche dans la liste des champs de métadonnées.
 
 De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit_icon.svg), disponible en regard de chaque propriété de métadonnées disponible, pour modifier la propriété ou cliquer sur l’icône de suppression pour supprimer une propriété existante. Cliquez sur **[!UICONTROL Enregistrer]** après avoir effectué toutes les modifications pour appliquer les modifications.
-
 ![Recherche dans l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
-Les administrateurs peuvent également personnaliser le titre et le corps du texte de la bannière du portail Content Hub, en fonction de vos exigences de marque. Pour cela, procédez comme suit :
+En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque. Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Branding]**.
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
+1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
-1. Spécifiez du texte dans les champs **[!UICONTROL Texte du titre sur la bannière]** et **[!UICONTROL Texte du corps sur la bannière]**.
+Sélectionnez l’option **[!UICONTROL Réinitialiser les valeurs par défaut]** pour annuler vos modifications et restaurer le thème par défaut.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
+#### Modification de l’image de bannière{#Change-the-banner-image}
 
-![Configuration du branding de l’interface utilisateur sur Content Hub](assets/configuration-ui-branding.png)
+Sur la page ![Image de marque](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Image de marque]**, effectuez les étapes suivantes pour modifier l’image de bannière de votre déploiement [!DNL Content Hub] :
 
-Les mises à jour d’identité graphique activées dans l’interface utilisateur de configuration s’affichent dans la bannière du portail Content Hub :
+1. Cliquez sur ![sélectionner une image](/help/assets/assets/Browse.svg) **[!UICONTROL Sélectionner dans la galerie]** pour sélectionner une image de bannière à l’aide de la boîte de dialogue du sélecteur de ressources. Le sélecteur de ressources affiche uniquement les images approuvées.
+1. Sélectionnez l’image, cliquez sur **[!UICONTROL Sélectionner]**, puis cliquez sur **[!UICONTROL Enregistrer]** pour l’afficher en tant qu’image de bannière de votre déploiement [!DNL Content Hub].
 
-![Configuration du branding de l’interface utilisateur sur Content Hub](assets/configuration-ui-branding-updates.png)
+#### Ajoutez le titre et le corps du texte à votre bannière et modifiez la couleur du texte{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les champs respectifs de la section **[!UICONTROL Bannière]** pour ajouter le titre et le corps du texte à votre bannière.
+Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de bannière]** pour sélectionner une couleur de texte dans le sélecteur de couleurs pour votre texte de bannière ou spécifiez le code hexadécimal de la couleur dans le champ en regard de la zone carrée du sélecteur de couleurs.
+
+#### Modification de la couleur principale et de la couleur secondaire{#Change-the-primary-and-secondary-color}
+
+Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
+
+**[!UICONTROL Couleur du Principal ]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Ressources expirées{#expired-assets-content-hub}
 
@@ -261,7 +273,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
