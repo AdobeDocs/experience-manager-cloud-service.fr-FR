@@ -3,10 +3,10 @@ title: Partagez Assets dans  [!DNL the Content Hub]
 description: Partagez Assets dans  [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 0e66b355d09e2fd2c4c8a5ddacc9b2d033b41bf2
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 11%
+source-wordcount: '486'
+ht-degree: 17%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -57,50 +57,47 @@ ht-degree: 11%
 >
 >[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
 
-Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition des utilisateurs [!DNL the Content Hub]. Cette fonctionnalité permet aux utilisateurs autorisés d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement des ressources à partir d’un lien partagé, [!DNL the Content Hub] utilise un service asynchrone qui offre un téléchargement plus rapide et ininterrompu.
+Créez un lien vers les ressources sélectionnées pour les partager facilement avec d’autres personnes. En tant qu’utilisateur [!DNL Content Hub] autorisé, sélectionnez une ou plusieurs ressources disponibles dans votre environnement [!DNL Content Hub], générez un lien et envoyez-le à d’autres utilisateurs privés ou publics.
 
 ## Prérequis {#prerequisites}
 
-[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
+[Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent créer un lien vers les ressources sélectionnées et le partager avec d’autres utilisateurs.
 
-## Partage d’une seule ressource {#share-a-single-asset}
+## Partager des ressources {#share-assets}
 
-Vous pouvez partager une seule ressource en procédant comme suit :
+Pour partager une ou plusieurs ressources avec des utilisateurs privés ou publics, procédez comme suit :
+1. Accédez à la page d’accueil de votre [!DNL Content Hub], sélectionnez une ou plusieurs ressources, puis cliquez sur ![partager](/help/assets/assets/share.svg) **[!UICONTROL Partager]** pour afficher une seule ressource sélectionnée ou une liste de plusieurs ressources sélectionnées dans la boîte de dialogue **[!UICONTROL Partager les ressources]**.
+Vous pouvez également sélectionner et partager des ressources disponibles dans ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
+1. Affichez une ressource ou consultez la liste des ressources disponibles dans la boîte de dialogue **[!UICONTROL Partage de ressources]**. Cliquez sur ![désélectionner](/help/assets/assets/Close.svg) en regard d’une ressource pour la désélectionner de la liste.
+1. Sélectionnez une **[!UICONTROL période d’expiration]** et cliquez sur **[!UICONTROL Générer un lien privé]** pour générer un lien à partager avec des utilisateurs privés. Les utilisateurs privés se connectent à leur environnement [!DNL Content Hub] pour accéder à la page des ressources partagées.
+   ![lien privé et public](/help/assets/assets/private-and-public-link.png)
+Activez le bouton (bascule) **[!UICONTROL Lien public]**, sélectionnez une **[!UICONTROL période d’expiration]** et cliquez sur **[!UICONTROL Générer un lien public]** pour générer un lien à partager avec les utilisateurs publics. Les utilisateurs publics, en tant qu’invités, accèdent à la page des ressources partagées sans se connecter à [!DNL Content Hub].
+   ![lien privé et public](/help/assets/assets/public-and-private-link.png)
 
-1. Sélectionnez une ressource et cliquez sur l’icône ![partager](assets/share.svg) pour la partager.
+   >[!NOTE]
+   > 
+   > [Activez le partage de liens public à partir de la page de configuration](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) pour afficher le bouton bascule **[!UICONTROL Lien public]** dans la boîte de dialogue **[!UICONTROL Partager les ressources]**.
 
-   ![Partage d’une ressource unique](assets/sharing-single-asset.png)
+## Partage d’une ressource à partir de sa page d’aperçu {#share-asset-from-preview-page}
 
-1. Utilisez le champ **[!UICONTROL Expiration]** pour spécifier une date d’expiration pour le lien. Sélectionnez l’une des options disponibles, par exemple 24 heures, 1 semaine, 30 jours, 90 jours, 1 an ou spécifiez une date personnalisée.
+Pour partager une ressource en cours de prévisualisation, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Copier le lien de partage]**. Vous pouvez ensuite partager le lien copié avec le destinataire.
-
-## Partage de plusieurs ressources {#share-multiple-assets}
-
-[!DNL The Content Hub] permet de partager plusieurs ressources via un lien partagé. Procédez comme suit :
-
-1. Sélectionnez les ressources que vous devez partager avec le destinataire autorisé. Vous pouvez sélectionner plusieurs ressources une par une ou cliquer sur **[!UICONTROL Tout sélectionner]** pour sélectionner toutes les ressources disponibles en même temps. L’option **[!UICONTROL Tout sélectionner]** s’affiche uniquement lorsque vous sélectionnez au moins une ressource.
-
-1. Cliquez sur l’icône ![icône de partage](assets/share.svg).
-
-   ![Partage de plusieurs ressources](assets/sharing-multiple-assets.png)
-
-1. Dans la section de prévisualisation, vous pouvez également supprimer des ressources en fonction de vos besoins. Utilisez le champ **[!UICONTROL Expiration]** pour spécifier une date d’expiration pour le lien. Sélectionnez l’une des options disponibles, par exemple 24 heures, 1 semaine, 30 jours, 90 jours, 1 an ou spécifiez une date personnalisée.
-
-1. Cliquez sur **[!UICONTROL Copier le lien de partage]**. Vous pouvez ensuite partager le lien copié avec le destinataire.
-
-## Prévisualisation et partage de ressources {#preview-assets}
-
-Vous pouvez prévisualiser pour voir à quoi ressemble une ressource numérique que vous allez partager avant de la partager avec un destinataire de lien. Cliquez sur la ressource à prévisualiser. La [!DNL Content Hub] affiche la [ vue détaillée de la ressource ](asset-properties-content-hub.md).
-
-Cliquez sur l’icône ![partager](assets/share.svg) pour partager une ressource. Utilisez le champ **[!UICONTROL Expiration]** pour spécifier une date d’expiration pour le lien. Sélectionnez l’une des options disponibles, par exemple 24 heures, 1 semaine, 30 jours, 90 jours, 1 an ou spécifiez une date personnalisée. Cliquez sur **[!UICONTROL Copier le lien de partage]**. Vous pouvez ensuite partager le lien copié avec le destinataire.
-
-![Aperçu des ressources dans Content Hub](assets/preview-assets-content-hub.png)
+1. Accédez à la page d’accueil [!DNL Content Hub] et cliquez sur la miniature de la ressource pour la prévisualiser et afficher les options de menu dans le volet droit de la boîte de dialogue.
+1. Sélectionnez ![partager](/help/assets/assets/share.svg) pour afficher le panneau **[!UICONTROL Partager]**.
+   ![partager une ressource lors de sa prévisualisation](/help/assets/assets/share-assets-from-share-panel.png)
+1. Suivez l’étape 3 de la section [Partage de ressources](#share-assets) pour générer et partager le lien de la ressource (privée ou publique) à partir de ce panneau **[!UICONTROL Partage]**.
 
 ## Accéder aux ressources partagées {#access-shared-assets}
 
-Après avoir partagé le lien pour les ressources, les destinataires autorisés peuvent cliquer sur le lien pour prévisualiser ou télécharger les ressources partagées dans un navigateur web.
+Accédez à la page des ressources partagées via le lien et procédez comme suit :
 
-Cliquez sur le lien partagé, puis sur l’icône de téléchargement disponible sur la carte de la ressource pour télécharger une ressource.  Vous pouvez également sélectionner plusieurs ressources et cliquer sur **[!UICONTROL Télécharger]**. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] télécharge chaque ressource une par une dans le système de fichiers local.
+* Sélectionnez une ou plusieurs ressources, puis cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]** pour sélectionner les rendus **[!UICONTROL Original]**, **[!UICONTROL Statique]** ou les deux à partir des options de téléchargement disponibles.
+  ![](/help/assets/assets/download-shared-assets.png)
+* Cliquez sur la miniature de la ressource pour afficher ses métadonnées.
+* Sur la page des ressources partagées ([accessible via un lien privé](#share-assets)), cliquez sur la miniature d’une ressource et sélectionnez ![télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus dynamiques disponibles de la ressource dans le panneau **[!UICONTROL Télécharger]** avant de les sélectionner et de les télécharger.
+  ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-![Accès aux liens partagés](assets/content-hub-access-shared-links.png)
+
+
+
+

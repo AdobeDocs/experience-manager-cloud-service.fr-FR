@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
+source-git-commit: 1b569e7e14cd27a8963e230fba5bcdc55f2bcdf6
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6235'
 ht-degree: 98%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 98%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [En cours](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -697,6 +698,7 @@ ht-degree: 98%
       + [Approuver des ressources pour le hub de contenus](/help/assets/approve-assets-content-hub.md)
       + [Rechercher des ressources dans le hub de contenus](/help/assets/search-assets-content-hub.md)
       + [Propriétés de la ressource](/help/assets/asset-properties-content-hub.md)
+      + [Contrôle d’accès basé sur les attributs](/help/assets/attribute-based-access-control.md)
       + [Partager des ressources dans le hub de contenus](/help/assets/share-assets-content-hub.md)
       + [Télécharger des ressources à l’aide du hub de contenus](/help/assets/download-assets-content-hub.md)
       + [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -993,12 +995,14 @@ ht-degree: 98%
          + [Options de mise en cache](/help/commerce-cloud/configuring/caching.md)
          + [En-têtes HTTP personnalisés](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Configuration du panier et du Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [Effacer le cache du composant et du GraphQL](/help/commerce-cloud/configuring/clear-cache.md)
       + Développement {#developing}
          + [Développement avec le SDK AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Style des composants CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personnalisation des composants CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Utilisation des sélecteurs de catalogue CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [Attributs personnalisés pour le carrousel de produit CIF](/help/commerce-cloud/customizing/product-carousel.md)
+         + [Métadonnées JSON](/help/commerce-cloud/customizing/json-ld.md)
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [Questions fréquentes](/help/commerce-cloud/faq.md)
@@ -1196,12 +1200,14 @@ ht-degree: 98%
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
+      + [Environnements de test spécialisés (utilisateurs précoces)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajouter un référentiel externe (adoption précoce)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Ajout d’un référentiel externe (adoption précoce)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gérer les jetons d’accès des référentiels externes (utilisateurs et utilisatrices précoces)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

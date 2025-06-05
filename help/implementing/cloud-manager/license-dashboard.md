@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # Tableau de bord des licences {#license-dashboard}
 
-Cloud Manager fournit un tableau de bord pour un affichage convivial des produits AEMaaCS disponibles pour votre entreprise ou vos clients.
+Cloud Manager fournit un tableau de bord pour un affichage convivial des produits Adobe Experience Manager as a Cloud Service (AEMaaCS) disponibles pour votre entreprise ou vos clients.
 
 >[!IMPORTANT]
 >
->Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
+>Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
 >Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -41,7 +41,10 @@ Le tableau de bord des licences Cloud Manager permet d’accéder facilement aux
 
 Le tableau de bord se divise en trois sections, comme suit :
 
-* **Solutions** - Quelles solutions disposez-vous d’une licence ?
+* **Solutions** - Quelles solutions disposez-vous d’une licence ? Par exemple, Sites, Edge Delivery Services et Assets.
+
+  ![Liste des solutions](assets/solutions.png)
+
 * **Modules complémentaires** - Quels modules complémentaires sont disponibles pour vos solutions sous licence ?
 * **Autres droits** - Quel sandbox et environnement de développement et autres droits peuvent être consommés au sein de votre client.
 

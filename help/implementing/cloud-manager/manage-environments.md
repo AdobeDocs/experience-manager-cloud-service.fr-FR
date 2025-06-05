@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 40%
+source-wordcount: '2430'
+ht-degree: 38%
 
 ---
 
@@ -26,8 +26,13 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 | **Production + Évaluation** | Les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test. Effectuez des tests de performance et de sécurité sur l’environnement d’évaluation. Celui-ci a la même taille que l’environnement de production. |
 | **Développement** | Un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production. Les environnements de développement n’ont pas la même taille que les environnements de test et de production et ne doivent pas être utilisés pour effectuer des tests de performance et de sécurité. |
 | **Développement rapide** | Un environnement de développement rapide (RDE) permet aux développeurs de déployer et d’examiner rapidement les modifications. Cette fonctionnalité réduit le temps nécessaire pour tester les fonctionnalités qui ont déjà été validées dans un environnement de développement local. Pour plus d’informations sur l’utilisation d’un RDE, consultez la [documentation sur l’environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md). |
+| **Environnement de test spécialisé** | Les environnements de test spécialisés offrent un espace dédié pour valider les fonctionnalités dans des conditions de quasi-production, idéal pour les tests de résistance et les contrôles avancés avant déploiement. Voir [Ajout d’un environnement de test spécialisé](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
-Les fonctionnalités de chaque environnement dépendent des solutions qui ont été activées dans le [programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de l’environnement.
+>[!NOTE]
+>
+>La fonctionnalité **Environnement de test spécialisé** n’est actuellement disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+
+Les fonctionnalités de chaque environnement dépendent des solutions activées dans le [programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de l’environnement.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -66,7 +71,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
@@ -105,7 +110,7 @@ Si vous souhaitez configurer la variable [réseau avancé](/help/security/config
 
 ### Modification de plusieurs régions de publication {#edit-regions}
 
-Si vous n’avez initialement spécifié aucune zone géographique supplémentaire, vous pouvez le faire après la création des environnements si vous disposez des droits nécessaires.
+Si vous n’avez pas spécifié de régions supplémentaires au départ, vous pouvez le faire après la création de l’environnement et vous disposez des droits nécessaires.
 
 Vous pouvez également supprimer d’autres zones géographiques de publication. Cependant, vous ne pouvez ajouter ou supprimer des régions que dans une seule transaction. Si vous devez ajouter une zone géographique et en supprimer une, ajoutez-la d’abord, enregistrez votre modification, puis supprimez-la (ou inversement).
 
@@ -209,7 +214,7 @@ Si des problèmes sont signalés avec d’autres régions de publication, veuill
 
 La durée pendant laquelle vous attendez que le système se rétablisse de lui-même avant de prendre des mesures supplémentaires dépend de l’impact de la défaillance de cette région sur vos systèmes.
 
-Quoi qu’il en soit, [le trafic est toujours acheminé vers la région en ligne la plus proche](/help/operations/additional-publish-regions.md). Si vous continuez à rencontrer des problèmes, contactez l’Assistance clientèle d’Adobe.
+Quoi qu’il en soit, [le trafic est toujours acheminé vers la région en ligne la plus proche](/help/operations/additional-publish-regions.md). Si les problèmes persistent, contactez l’assistance clientèle d’Adobe.
 
 ## Mettre à jour les environnements {#updating-dev-environment}
 
@@ -221,7 +226,7 @@ Toutefois, les mises à jour apportées aux environnements dans les programmes S
 
 ### Mises à jour et pipelines {#updates-pipelines}
 
-Les pipelines sont le seul moyen de [déployer le code dans les environnements d’AEM as a Cloud Service](deploy-code.md). Pour cette raison, chaque pipeline est associé à une version AEM particulière.
+Les pipelines sont le seul moyen de [déployer le code dans les environnements d’AEM as a Cloud Service](deploy-code.md). Pour cette raison, chaque pipeline est associé à une version d’AEM spécifique.
 
 Lorsque Cloud Manager détecte une version d’AEM plus récente que la dernière déployée avec le pipeline, il affiche le statut **Mise à jour disponible** de l’environnement.
 
@@ -282,7 +287,7 @@ Sélectionnez **Gérer l’accès** depuis le menu représentant des points de s
 
 >[!TIP]
 >
->Voir [Équipe AEM as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) pour découvrir comment l’équipe AEM as a Cloud Service et les profils de produits peuvent accorder et restreindre l’accès à vos solutions d’Adobe sous licence.
+>Voir [Équipe AEM as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) pour découvrir comment l’équipe AEM as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
 
 ## Accès à la Developer Console {#accessing-developer-console}
 
@@ -294,7 +299,7 @@ Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à **
 
 Seul un utilisateur ou une utilisatrice possédant le rôle de **développeur** aura accès à la **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
+Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
 
 Cette option est également disponible à partir de l’onglet **Environnement** de la fenêtre **Aperçu** lorsque vous cliquez sur l’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) d’un environnement individuel.
 
