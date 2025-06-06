@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un site Edge Delivery à votre programme
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!IMPORTANT]
 >
 >Découvrez pourquoi intégrer votre site Edge Delivery Services à Cloud Manager.
->&#x200B;>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Pour ajouter un site Edge Delivery à Cloud Manager, procédez comme suit :**
 
@@ -40,7 +40,7 @@ Près du coin supérieur droit de la page, cliquez sur **Ajouter un site**.
    | Champ de texte | Description |
    | - | --- |
    | Nom du site | Saisissez le nom du site Edge Delivery que vous ajoutez.<br>Le nom sert d’identifiant unique au site dans Cloud Manager. |
-   | Edge Delivery Origin | Cette valeur spécifie le chemin d’URL vers la source de contenu de votre site dans Edge Delivery Services. Cloud Manager est également lié à votre site en ligne.<br>L’URL inclut généralement les *branche*, *projet* et *client*, comme dans l’exemple suivant (à des fins d’illustration uniquement) :<br>`https://main--projectname--tenant.aem.live` |
+   | Origine Edge Delivery | Cette valeur spécifie le chemin d’URL vers la source de contenu de votre site dans Edge Delivery Services. Cloud Manager est également lié à votre site en ligne.<br>L’URL inclut généralement les *branche*, *projet* et *client*, comme dans l’exemple suivant (à des fins d’illustration uniquement) :<br>`https://main--{site}--{org}.aem.live` |
    | Description du site (facultative) | Saisissez une brève description du site Edge Delivery que vous ajoutez.<br>Une description permet d’identifier et de différencier le site, ce qui facilite la gestion et la reconnaissance des autres sites que vous avez ajoutés. |
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Ajouter**.
