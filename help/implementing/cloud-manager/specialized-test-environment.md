@@ -4,7 +4,8 @@ description: Découvrez comment les environnements de test spécialisés dans Cl
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: 408e472470244c619e09ef58691b1cff7cdd0188
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -15,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La fonctionnalité décrite dans cet article n’est disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 L’environnement de test spécialisé, ou DevXL, est un nouveau type d’environnement Cloud Manager que vous pouvez créer. Il est conçu pour prendre en charge des cas d’utilisation avancés tels que les tests d’acceptation utilisateur (UAT) et la validation des performances. Contrairement aux environnements de développement, de développement rapide ou d’évaluation traditionnels, les environnements DevXL fonctionnent en dehors du pipeline de déploiement de production. Ils vous offrent donc une plus grande flexibilité tout en maintenant une isolation stricte afin d’éviter toute interférence avec les workflows de production.
 
@@ -63,14 +64,13 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
 
 1. Dans la boîte de dialogue **Ajouter un environnement**, procédez comme suit :
 
-   * Cliquez sur [**Environnement de test spécialisé**](#environment-types).
+   * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
 
    ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 
 1. Cliquez sur **Enregistrer**.
 
    La page **Aperçu** affiche désormais votre nouvel environnement dans la vignette **Environnements**. Vous pouvez désormais configurer des pipelines pour votre nouvel environnement.
-

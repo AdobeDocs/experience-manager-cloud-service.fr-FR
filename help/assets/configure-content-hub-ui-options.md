@@ -2,9 +2,9 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2110'
 ht-degree: 15%
 
 ---
@@ -113,9 +113,7 @@ En tant qu’administrateur, gérez les options de configuration suivantes pour 
 
 * [Liens personnalisés](#configure-custom-links-content-hub)
 
-* [Gouvernance des collections](#configure-collections-content-hub)
-
-* [Activer le partage de liens public](#enable-public-link-sharing)
+* [Collections et partage](#configure-collections-sharing-content-hub)
 
 ### Import {#configure-import-options-content-hub}
 
@@ -223,7 +221,7 @@ De même, vous pouvez cliquer sur ![icône Modifier](assets/do-not-localize/edit
 
 En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour répondre à vos exigences en matière de marque. Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
@@ -245,9 +243,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Ressources expirées{#expired-assets-content-hub}
 
@@ -277,7 +275,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
@@ -313,9 +311,9 @@ Le lien personnalisé s’affiche sous la forme d’un nouvel onglet en regard d
 
 ![Onglets de liens personnalisés de l’interface utilisateur de configuration de Content Hub](assets/configuration-ui-custom-link-tab.png)
 
-### Gouvernance des collections {#configure-collections-content-hub}
+### Collections et partage {#configure-collections-sharing-content-hub}
 
-Les administrateurs peuvent définir des autorisations utilisateur lors de la création de collections. Pour activer ces paramètres, procédez comme suit :
+Les administrateurs peuvent définir des autorisations utilisateur lors de la création des collections et autoriser les utilisateurs de Content Hub à générer un lien public. Pour activer ces paramètres, procédez comme suit :
 
 1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Collections et partage]**.
 
@@ -323,18 +321,11 @@ Les administrateurs peuvent définir des autorisations utilisateur lors de la cr
 
 1. Activez le bouton (bascule) **[!UICONTROL Collections publiques]** pour autoriser les collections qui sont à la fois accessibles et modifiables par tout le monde.
 
+1. Activez le bouton (bascule) **[!UICONTROL Activer le lien public]** pour permettre aux utilisateurs de Content Hub de générer un lien public.
+
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
-   ![Onglet Collections de configurations dans Content Hub](assets/configuration-collections-tab.png)
+   ![Onglet Collections de configurations dans Content Hub](assets/collections-link-sharing.png)
 
-### Activer le partage de liens public {#enable-public-link-sharing}
 
-Activez le paramètre suivant dans l’interface utilisateur Configurations pour permettre aux utilisateurs de Content Hub de générer un lien public :
-
-1. Dans l’interface utilisateur [Configurations](#access-configuration-options-content-hub), cliquez sur **[!UICONTROL Collections et partage]**.
-
-1. Activez le bouton (bascule) **[!UICONTROL Activer le lien public]** et cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
-
-   ![Activer le partage de liens public dans Content Hub](assets/enable-public-link-sharing-tab.png)
-
-En savoir plus sur le [partage de ressources dans la  [!DNL Content Hub]](share-assets-content-hub.md).
+   Pour plus d’informations sur les collections et le partage de ressources, voir [Gestion des collections dans Content Hub](/help/assets/collections-content-hub.md) et [Partage de ressources dans [!DNL Content Hub]](share-assets-content-hub.md).
