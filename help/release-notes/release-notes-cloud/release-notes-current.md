@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
+source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 32%
@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -231,7 +231,7 @@ Toutefois, pour optimiser les performances du référentiel, à partir de **fin 
 
 * Vous pouvez modifier ces valeurs par défaut par le biais de remplacements de la configuration OSGi.
 
-Pour plus d’informations, consultez l’article [ Tâches de maintenance ](/help/operations/maintenance.md#default).
+Pour plus d’informations, consultez l’article [ Tâches de maintenance ](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (Programme Alpha) {#edge-computing}
 
