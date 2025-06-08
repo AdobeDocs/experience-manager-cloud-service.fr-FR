@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2062'
 ht-degree: 32%
 
 ---
@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepteu
 
 **Contrôle d’accès basé sur les attributs (ABAC)**
 
-Content Hub vous permet désormais d’appliquer des restrictions basées sur des règles pour accéder aux ressources. Les autorisations des ressources assurent la gouvernance et s’assurent également que seules les ressources appropriées sont accessibles aux utilisateurs.
+[Content Hub vous permet désormais d’appliquer des restrictions basées sur des règles pour accéder aux ressources](/help/assets/attribute-based-access-control.md). Les autorisations des ressources assurent la gouvernance et s’assurent également que seules les ressources appropriées sont accessibles aux utilisateurs.
 
 Les règles de restriction de ressources sont basées sur des métadonnées et si les conditions définies dans la règle correspondent aux métadonnées de la ressource, la ressource est affichée pour les groupes d’utilisateurs.
 
@@ -78,21 +78,21 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 
 **Image de marque de l’interface utilisateur**
 
-Content Hub permet désormais aux administrateurs de personnaliser l’interface utilisateur avec des éléments spécifiques à la marque, notamment des images de bannière, des titres de bannière et du corps de texte, ainsi que des couleurs primaires et secondaires. Ces améliorations permettent d’assurer la cohérence de la marque, de simplifier l’intégration des utilisateurs et d’établir la confiance.
+Content Hub permet désormais aux administrateurs de [personnaliser l’interface utilisateur avec des éléments spécifiques à la marque](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) tels que des images de bannière, des titres de bannière et du corps de texte, ainsi que des couleurs primaires et secondaires. Ces améliorations permettent d’assurer la cohérence de la marque, de simplifier l’intégration des utilisateurs et d’établir la confiance.
 
 ![Image de marque de l’interface utilisateur](/help/assets/assets/content-hub-ui-branding.png)
 
 **Partage de liens public**
 
-Content Hub prend désormais en charge la génération de liens partageables pour permettre aux utilisateurs externes, sans accès aux applications, d’afficher les métadonnées des ressources ou de télécharger des ressources.
+Content Hub prend désormais en charge la [génération de liens partageables pour permettre aux utilisateurs externes](/help/assets/share-assets-content-hub.md##share-assets) sans accès aux applications, d’afficher les métadonnées des ressources ou de télécharger des ressources.
 
 ![Image de marque de l’interface utilisateur](/help/assets/assets/public-and-private-link.png)
 
 **Gouvernance des collections**
 
-Content Hub vous permet désormais de contrôler l’accès aux collections lors de leur création, de sorte que seuls les utilisateurs autorisés puissent afficher ou gérer des ressources regroupées. Il garantit une sécurité améliorée, une meilleure collaboration, une gestion des ressources organisée et une gouvernance simplifiée.
+Content Hub vous permet désormais de [contrôler l’accès aux collections lors de leur création, en veillant à ce que seuls les utilisateurs autorisés puissent afficher ou gérer les ressources regroupées](/help/assets/collections-content-hub.md##create-collections). Il garantit une sécurité améliorée, une meilleure collaboration, une gestion des ressources organisée et une gouvernance simplifiée.
 
-![ Gouvernance des collections ](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Content Hub vous permet désormais de contrôler l’accès aux collections lors
 
 **Télécharger plusieurs ressources au format ZIP**
 
-Content Hub vous permet désormais de télécharger les ressources sélectionnées et leurs rendus dans un fichier ZIP et non plus dans des fichiers séparés, ce qui simplifie la gestion des fichiers.
+Content Hub vous permet désormais de [télécharger les ressources sélectionnées et leurs rendus dans un fichier ZIP](/help/assets/download-assets-content-hub.md#download-asset-renditions) et non plus dans des fichiers séparés, ce qui simplifie la gestion des fichiers.
 
 **Rendus Dynamic Media dans Content Hub**
 
-Accédez à tous vos rendus de paramètres prédéfinis Dynamic Media et recadrages intelligents pour les télécharger, directement depuis l’interface utilisateur de Content Hub.
+Accédez à tous vos [rendus de paramètres prédéfinis Dynamic Media et recadrages intelligents pour téléchargement, directement depuis l’interface utilisateur de Content Hub](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
 &#x200B;![Rendus Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Accédez à tous vos rendus de paramètres prédéfinis Dynamic Media et recadra
 
 **Intégration native de Dynamic Media à AJO B2C&#x200B;**
 
-Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C, ce qui permet aux spécialistes marketing d’incorporer facilement des ressources Dynamic Media AEM (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
+[Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes marketing d’incorporer facilement des ressources Dynamic Media AEM (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
-&#x200B;![Rendus Dynamic Media](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
