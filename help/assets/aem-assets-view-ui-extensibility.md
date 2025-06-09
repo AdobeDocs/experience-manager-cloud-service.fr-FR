@@ -4,10 +4,10 @@ description: Découvrez la fonctionnalité d’extensibilité de l’interface u
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '633'
+ht-degree: 7%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 4%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
@@ -85,3 +85,11 @@ Remplissez les conditions requises suivantes pour commencer à ajouter le compos
 1. Configurez votre environnement local et créez votre première extension d’interface utilisateur pour découvrir de première main le processus de développement des extensions d’interface utilisateur dans [!DNL Assets View]. Voir [Développement pas à pas de l’extension AEM Assets View](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) pour plus d’informations.
 1. Configurez votre application à l’aide de l’interface de ligne de commande AIO pour générer la structure d’extension de base et le code requis. Pour plus d’informations, voir [génération du code pour [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Testez vos extensions localement pour vous assurer qu’elles fonctionnent comme prévu avant le déploiement. Exécutez votre extension dans un environnement entièrement isolé ou partiellement isolé et connectez-la au [!DNL AEM Assets View] de production à des fins de test. Voir [Dépannage - [!DNL AEM Assets View] extensibilité](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) pour plus d’informations.
+
+## Personnalisation des actions rapides et de la barre d’actions dans la vue Assets {#customize-quick-actions-and-actions-bar}
+
+Vous pouvez personnaliser les actions qui s’affichent lorsque vous sélectionnez une ou plusieurs ressources (barre d’actions) dans la vue Assets. La vue Assets vous permet également de personnaliser les actions qui s’affichent lorsque vous cliquez sur Plus d’options (...) dans la carte de la ressource. Pour plus d’informations, voir [Vue Parcourir](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Ouvrir les boîtes de dialogue personnalisées dans la vue Assets {#open-custom-dialogs-assets-view}
+
+La vue Assets permet également d’ouvrir des boîtes de dialogue personnalisées avec le texte de votre choix. Vous pouvez également ajouter des liens au texte. Pour plus d’informations, voir [API modale](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
