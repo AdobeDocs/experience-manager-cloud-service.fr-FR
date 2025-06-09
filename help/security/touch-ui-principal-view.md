@@ -3,21 +3,21 @@ title: Affichage principal de la gestion des autorisations
 description: Découvrez la nouvelle interface utilisateur tactile qui facilite la gestion des autorisations.
 feature: Security
 role: Admin
-source-git-commit: 66ec051a2412fdbfb18dec5b79c6d5d5ca496216
-workflow-type: tm+mt
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+source-git-commit: bdc5249a7a48224007c1ab697343245001e03168
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
-
 
 # Affichage principal de la gestion des autorisations {#principal-view-for-permissions-management}
 
 ## Présentation {#overview}
 
-AEM introduit la gestion des autorisations pour les utilisateurs et les groupes. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais celle-ci est plus efficace et conviviale.
+AEM introduit la gestion des autorisations pour les utilisateurs et utilisatrices et pour les groupes. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais celle-ci est plus efficace et conviviale.
 
-## Accès à l’interface utilisateur {#accessing-the-ui}
+## Accès à l’interface d’utilisation {#accessing-the-ui}
 
 La nouvelle gestion des autorisations basée sur l’interface utilisateur est accessible via la carte Autorisations sous Sécurité, comme illustré ci-dessous :
 
@@ -25,9 +25,9 @@ La nouvelle gestion des autorisations basée sur l’interface utilisateur est a
 
 Le nouvel affichage facilite la consultation de l’ensemble des privilèges et restrictions pour un principal donné pour tous les chemins d’accès pour lesquels les autorisations ont été accordées explicitement. Ainsi, plus besoin d’accéder à
 
-CRXDE pour gérer les privilèges et les restrictions avancés. Elle a été consolidée dans la même vue.
+CRXDE pour gérer les privilèges et les restrictions avancés. L’affichage a été fusionné.
 
-![Vue Autorisation](assets/permissionView.png)
+![Affichage des autorisations](assets/permissionView.png)
 
 Il existe un filtre qui permet aux utilisateurs et utilisatrices de sélectionner le type d’entités à examiner : **Utilisateurs**, **Groupes** ou **Tous**, et de rechercher n’importe quelle entité&#x200B;**.**
 
@@ -113,53 +113,53 @@ Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’en
 
 ![Supprimer les ACE](assets/image2019-3-21_0-53-19.png) ![Supprimer les ACE](assets/unspe.png)
 
-## Vue Autorisations {#permissions-view}
+## Affichage des autorisations {#permissions-view}
 
-### Vue Autorisations de l’interface utilisateur tactile {#touch-ui-permisions-view}
+### Affichage Autorisations de l’interface d’utilisation tactile {#touch-ui-permisions-view}
 
-Les administrateurs ont besoin de plus de contrôle granulaire et de visibilité sur les attributions d’autorisations au niveau du nœud pour une meilleure sécurité et gestion dans AEM. Auparavant, seule une vue des autorisations basée sur les principaux était disponible, ce qui limitait la possibilité de voir comment les listes de contrôle d’accès étaient appliquées à des nœuds spécifiques ou à des vues filtrées. Le nouveau nœud et la vue filtrée offrent une perspective détaillée et contextualisée des attributions d’autorisations, permettant une meilleure gestion et un meilleur audit des configurations de sécurité. Cette fonctionnalité améliore la surveillance administrative et simplifie la gestion des autorisations, améliore la sécurité, réduit les erreurs de configuration et rationalise les contrôles d’accès des utilisateurs dans AEM.
+Les administrateurs et administratrices ont besoin d’un contrôle plus granulaire et de davantage de visibilité sur les attributions d’autorisations au niveau du nœud pour une sécurité et une gestion améliorées dans AEM. Auparavant, seule un affichage des autorisations basé sur les principaux était disponible, ce qui limitait la possibilité de voir comment les listes de contrôle d’accès étaient appliquées à des nœuds spécifiques ou à des vues filtrées. Le nouveau nœud et la vue filtrée offrent une perspective détaillée et contextualisée des attributions d’autorisations, ce qui permet une meilleure gestion et un meilleur audit des configurations de sécurité. Cette fonctionnalité améliore la surveillance administrative et simplifie la gestion des autorisations, améliore la sécurité, réduit les erreurs de configuration et rationalise les contrôles d’accès des utilisateurs et utilisatrices dans AEM.
 
 
-Vous pouvez accéder à la vue de l’interface utilisateur tactile Autorisations en cliquant sur **Outils - Sécurité - Autorisations**, comme illustré ci-dessous :
+Vous pouvez accéder à la vue de l’interface d’utilisation tactile Autorisations en cliquant sur **Outils - Sécurité - Autorisations**, comme illustré ci-dessous :
 
-![ Carte de l’interface utilisateur tactile des autorisations ](assets/image-2025-2-5_15-37-59.png)
+![Carte de l’interface d’utilisation tactile des autorisations](assets/image-2025-2-5_15-37-59.png)
 
-Une fois que vous avez lancé la vue Autorisations, vous pouvez cliquer sur **Vue du nœud** ou **Vue filtrée** dans le coin supérieur droit de l’écran, en fonction de vos préférences d’affichage.
+Une fois que vous avez lancé l’affichage Autorisations, vous pouvez cliquer sur **Affichage des nœuds** ou **Affichage filtré** dans le coin supérieur droit de l’écran, en fonction de vos préférences d’affichage.
 
 #### Affichage des nœuds
 
-Dans cette vue, les listes de contrôle d’accès sont présentées pour chaque nœud individuel (chemin d’accès). Il fournit des informations sur :
+Dans cette vue, les listes de contrôle d’accès sont présentées pour chaque nœud individuel (chemin d’accès). Cela fournit des informations sur les éléments suivants :
 
 Listes de contrôle d’accès locales pour le nœud sélectionné.
-Listes de contrôle d’accès effectives, qui incluent les listes de contrôle d’accès appliquées à chaque nœud parent jusqu’à la racine (« / »).
-Les utilisateurs ont la possibilité d’ajouter, de supprimer ou de mettre à jour des listes ACL. Lorsque l’utilisateur clique sur un chemin, le volet de gauche affiche ses enfants, tandis que le côté droit présente une vue tabulaire de toutes les listes de contrôle d’accès associées à ce chemin.
+Listes de contrôle d’accès effectives, qui incluent les listes de contrôle d’accès appliquées à chaque nœud parent jusqu’à la racine (« / »).
+Les utilisateurs et utilisatrices ont la possibilité d’ajouter, de supprimer ou de mettre à jour des listes ACL. Lorsque la personne clique sur un chemin, le volet de gauche affiche ses enfants, tandis que le côté droit présente une vue tabulaire de toutes les listes de contrôle d’accès associées à ce chemin.
 
-![Mode Nœud](assets/image-2025-2-5_15-26-2.png)
+![Affichage des nœuds](assets/image-2025-2-5_15-26-2.png)
 
 #### Affichage filtré
 
-Cette vue permet aux utilisateurs de rechercher efficacement des autorisations sur un chemin d’accès et des principaux spécifiés. Dans cette vue, les utilisateurs peuvent facilement déterminer le type d’autorisations accordées à un groupe d’entités de sécurité pour le chemin d’accès sélectionné.
+Cette vue permet aux utilisateurs et utilisatrices de rechercher efficacement des autorisations sur un chemin d’accès et des principaux spécifiés. Dans cette vue, les utilisateurs et utilisatrices peuvent facilement déterminer le type d’autorisations accordées à un groupe d’entités de sécurité pour le chemin d’accès sélectionné.
 En outre, la vue filtrée fournit des informations sur les listes de contrôle d’accès actuelles. Elle affiche les listes de contrôle d’accès associées au nœud parent du chemin d’accès sélectionné, en tenant compte du principal sélectionné et des principaux communs.
 
-![Vue Filtre](assets/FilteredView.png)
+![Affichage Filtre](assets/FilteredView.png)
 
-### Vue Autorisations du navigateur de référentiel {#the-repository-browser-permissions-view}
+### Affichage Autorisations du navigateur de référentiel {#the-repository-browser-permissions-view}
 
-La vue des autorisations est également accessible via le [navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
+L’affichage des autorisations est également accessible via le [navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md).
 
-Vous pouvez y accéder comme suit :
+Vous pouvez y accéder en procédant comme suit :
 
-1. Ouvrez Developer Console, puis cliquez sur l’onglet **Repository Browser**, puis sur **open Repository Browser**.
+1. Ouvrez Developer Console, puis cliquez sur l’onglet **Navigateur de référentiel**, puis sur **Ouvrir le navigateur de référentiel**.
 
    ![Lancement du navigateur de référentiel](assets/image-2025-2-5_15-38-47.png)
 
-1. Une fois dans le navigateur de référentiel, cliquez sur l’onglet **Autorisations**
+1. Une fois dans le navigateur de référentiel, cliquez sur l’onglet **Autorisations**.
 
    ![Onglet Autorisations](assets/image-2025-2-5_15-29-33.png)
 
-**Remarque** : pour afficher les autorisations, des droits d’administrateur sont requis. Suivez les étapes mentionnées [ici](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) pour accéder aux autorisations.
+**Note** : pour afficher les autorisations, des droits d’administration sont requis. Suivez les étapes mentionnées [ici](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) pour accéder aux autorisations.
 
-## Combinaisons de privilèges de l’interface utilisateur classique {#classic-ui-privilege-combinations}
+## Combinaisons de privilèges de l’interface d’utilisation classique {#classic-ui-privilege-combinations}
 
 La nouvelle interface utilisateur des autorisations utilise explicitement l’ensemble de base de privilèges au lieu de combinaisons prédéfinies qui ne reflètent pas vraiment les privilèges sous-jacents exacts qui ont été accordés.
 
@@ -168,7 +168,7 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
 <table>
  <tbody>
   <tr>
-   <th>Combinaisons de privilèges de l’interface utilisateur classique</th>
+   <th>Combinaisons de privilèges de l’interface d’utilisation classique</th>
    <th>Privilège de l’interface utilisateur Autorisations</th>
   </tr>
   <tr>
