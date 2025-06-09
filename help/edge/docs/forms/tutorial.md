@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -241,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
+1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant <owner> la personne propriétaire du référentiel et <repo> le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -273,19 +273,19 @@ Si vous disposez déjà d’un projet AEM, vous pouvez intégrer le bloc de form
 >[!NOTE]
 >
 >
-> Cette étape s’applique aux projets créés avec [AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate). Si vous avez créé votre projet AEM à l’aide du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), vous pouvez ignorer cette étape.
+> Cette étape s’applique aux projets créés à l’aide du [modèle standard AEM XWalk](https://github.com/adobe/aem-boilerplate). Si vous avez créé votre projet AEM à l’aide du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), vous pouvez ignorer cette étape.
 
-Pour effectuer l’intégration :
+Pour effectuer l’intégration, procédez comme suit :
 
-1. Accédez au dossier Référentiel du projet AEM sur votre système local.
+1. Accédez au dossier du référentiel du projet AEM sur votre système local.
 
 1. Copiez et collez les dossiers et fichiers suivants du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) dans votre projet AEM :
 
-   * [bloc de formulaire](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) dossier
+   * Dossier [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
    * Fichier [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
    * Fichier [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
-1. Accédez au fichier `/scripts/editor-support.js` dans votre projet AEM et mettez-le à jour avec le fichier [editor-support.js dans AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Accédez au `/models/_section.json` dans votre projet AEM et ajoutez « form » et « embed-adaptive-form » au tableau de composants de l’objet `filters` :
+1. Accédez au fichier `/scripts/editor-support.js` dans votre projet AEM et mettez-le à jour avec les modifications du [fichier editor-support.js dans le modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js).
+1. Accédez au fichier `/models/_section.json` dans votre projet AEM et ajoutez « form » et « embed-adaptive-form » au tableau de composants de l’objet `filters` :
 
    ```
        "filters": [
@@ -301,7 +301,7 @@ Pour effectuer l’intégration :
     }]
    ```
 
-1. (Facultatif) Accédez à `/.eslintignore` dans votre projet AEM et ajoutez les lignes de code suivantes :
+1. (Facultatif) Accédez à `/.eslintignore` dans votre projet AEM et ajoutez les lignes de code suivantes :
 
    ```
    blocks/form/rules/formula/*
@@ -311,7 +311,7 @@ Pour effectuer l’intégration :
    scripts/editor-support-rte.js
    ```
 
-1. (Facultatif) Accédez à `/.eslintrc.js` dans votre projet AEM et ajoutez les lignes de code ci-dessous dans l’objet `rules` :
+1. (Facultatif) Accédez à `/.eslintrc.js` dans votre projet AEM et ajoutez les lignes de code suivantes dans l’objet `rules` :
 
    ```
    'xwalk/max-cells': ['error', {
@@ -344,7 +344,7 @@ Pour effectuer l’intégration :
    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
    ```
 
-1. Ouvrez le terminal et exécutez les commandes suivantes :
+1. Ouvrez le terminal et exécutez les commandes suivantes :
 
    ```
    npm i
@@ -353,7 +353,7 @@ Pour effectuer l’intégration :
 
    >[!NOTE]
    >
-   > Avant d’envoyer les modifications au référentiel de votre projet AEM sur GitHub, assurez-vous que les fichiers `component-definition.json`, `component-models.json` et `component-filters.json` situés au niveau racine du projet AEM sont mis à jour avec les objets liés au formulaire.
+   > Avant de transmettre les modifications au référentiel de votre projet AEM sur GitHub, assurez-vous que les fichiers `component-definition.json`, `component-models.json` et `component-filters.json` situés au niveau racine du projet AEM sont mis à jour avec les objets liés au formulaire.
 
 1. Validez et envoyez ces modifications vers votre référentiel de projet AEM sur GitHub.
 
@@ -363,8 +363,8 @@ C’est terminé. Le bloc de formulaires adaptatifs fait désormais partie de vo
 
 Assurez-vous d’avoir un processus de génération GitHub fluide en résolvant les problèmes potentiels :
 
-* **Erreur de chemin d&#39;accès du module Resolve:**
-Si vous rencontrez l’erreur « Impossible de résoudre le chemin d’accès au module « /scripts/lib-franklin.js », accédez au fichier [Projet EDS]/blocks/forms/form.js. Mettez à jour l’instruction d’import en remplaçant le fichier lib-franklin.js par le fichier aem.js.
+* **Résoudre l’erreur de chemin d’accès du module :**
+si vous rencontrez l’erreur « Impossible de résoudre le chemin d’accès au module &quot;scripts/lib-franklin.js&quot; », accédez au fichier [EDS Project]/blocks/forms/form.js. Mettez à jour l’instruction d’import en remplaçant le fichier lib-franklin.js par le fichier aem.js.
 
 * **Gérer les erreurs de lint :**
 si vous rencontrez des erreurs de lint, vous avez la possibilité de les contourner. Ouvrez le fichier /package.json [Projet EDS] et modifiez le script « lint » de `"lint": "npm run lint:js && npm run lint:css"` en `"lint": "echo 'skipping linting for now'"`. Enregistrez le fichier et validez les modifications apportées à votre projet GitHub.

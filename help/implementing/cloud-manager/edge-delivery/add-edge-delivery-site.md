@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 83%
+ht-degree: 91%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 83%
 
 >[!IMPORTANT]
 >
->Découvrez pourquoi intégrer votre site Edge Delivery Services à Cloud Manager.
->&#x200B;>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Découvrez pourquoi vous devez intégrer votre site Edge Delivery Services à Cloud Manager.
+>>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Pour ajouter un site Edge Delivery à Cloud Manager, procédez comme suit :**
 
-1. Assurez-vous d’avoir d’abord créé votre programme avec une licence Edge Delivery Services avant d’intégrer un site Edge Delivery dans Cloud Manager.
-Voir [ Création d’un programme de production ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+1. Assurez-vous d’avoir d’abord créé votre programme avec une licence Edge Delivery Services avant d’intégrer un site Edge Delivery à Cloud Manager.
+Consultez [Créer un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 1. Connectez-vous à Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
 1. Utilisez l’une des méthodes suivantes :
 

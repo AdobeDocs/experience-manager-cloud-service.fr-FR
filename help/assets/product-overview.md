@@ -1,15 +1,15 @@
 ---
-title: Vue d’ensemble de Content Hub
+title: Vue d’ensemble de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: dbf83611f31ee598b43208f44614d3d8210a20f1
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Vue d’ensemble de Content Hub {#overview-content-hub}
+# Vue d’ensemble de Content Hub {#overview-content-hub}
 
 <table>
     <tr>
@@ -51,7 +51,7 @@ ht-degree: 99%
 >
 >Le guide de Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub est disponible dans le cadre d’Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux. Il se concentre sur la distribution des ressources pour activation à grande échelle et la création de variantes de contenu adaptées à la marque afin d’améliorer l’agilité marketing.
 
@@ -75,7 +75,7 @@ Content Hub vous permet de créer du contenu avec Adobe Express (si vous dispos
 
 [!DNL Content Hub] fournit des informations précieuses sur les ressources, ce qui permet de répondre à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, il fournit des informations exploitables essentielles à l’amélioration de l’expérience d’utilisation.
 
-## Démo Content Hub {#content-hub-demo}
+## Démonstration de Content Hub {#content-hub-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
