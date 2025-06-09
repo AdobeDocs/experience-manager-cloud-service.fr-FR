@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 32%
+ht-degree: 57%
 
 ---
 
@@ -90,12 +90,12 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 **Questions fréquentes sur BYOG**
 
-| Question | Répondre |
+| Question | Réponse |
 |---|---|
-| *Comment un projet peut-il revenir au référentiel Git géré par Adobe si nécessaire ?* | Revenir en arrière est simple. [Mettez à jour les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pour pointer vers le référentiel Adobe et supprimer le référentiel externe s’il n’est plus nécessaire. |
-| *Est-il possible de configurer différents référentiels pour différents environnements (par exemple, hors production ou production) afin d’autoriser d’abord les tests en dehors de la production ?* | Oui, différents référentiels peuvent être configurés pour des environnements distincts. Par exemple, le pipeline de développement ou de qualité du code peut pointer vers un référentiel externe tandis que le pipeline de production reste connecté au référentiel Adobe. Assurez-vous que la tâche de synchronisation entre les deux référentiels reste active pendant cette configuration. |
-| *Les paramètres existants tels que les listes autorisées IP continuent-ils à fonctionner ?* | Oui, les listes autorisées IP existantes continuent de fonctionner comme d’habitude. Cependant, si le référentiel Git externe est protégé par un pare-feu, les [adresses IP Adobe nécessaires doivent être ajoutées à la liste autorisée ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
-| *Toutes les URL du référentiel GitLab fonctionnent-elles ? L’URL du référentiel utilisée suit le format `https://gitlab_dedicated_url.com/path/repo-name.git`, qui diffère de l’exemple de la documentation.* | Oui, tout référentiel GitLab prenant en charge l’API V3 ou V4 est pris en charge, y compris les URL GitLab auto-hébergées telles que celle décrite dans [Ajout de référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+| *Comment un projet peut-il revenir au référentiel Git géré par Adobe si nécessaire ?* | Il est simple de revenir en arrière. [Mettez à jour les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pour pointer vers le référentiel Adobe et supprimez le référentiel externe s’il n’est plus nécessaire. |
+| *Est-il possible de configurer différents référentiels pour différents environnements (par exemple, hors production ou en production) afin d’autoriser d’abord les tests hors production ?* | Oui, différents référentiels peuvent être configurés pour des environnements distincts. Par exemple, le pipeline de développement ou de qualité du code peut pointer vers un référentiel externe tandis que le pipeline de production reste connecté au référentiel Adobe. Assurez-vous que le traitement de synchronisation entre les deux référentiels reste actif pendant cette configuration. |
+| *Les paramètres existants comme les listes d’adresses IP autorisées continuent-ils à fonctionner ?* | Oui, les listes d’adresses IP autorisées existantes continuent de fonctionner comme d’habitude. Cependant, si le référentiel Git externe est protégé par un pare-feu, les [adresses IP Adobe nécessaires doivent être ajoutées à la liste autorisée](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Toutes les URL du référentiel GitLab fonctionnent-elles ? L’URL du référentiel utilisée suit le format `https://gitlab_dedicated_url.com/path/repo-name.git`, qui diffère de l’exemple de la documentation.* | Oui, tout référentiel GitLab prenant en charge l’API V3 ou V4 est pris en charge, y compris les URL GitLab auto-hébergées telles que celle décrite dans [Ajout de référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
 #### Gérer les jetons d’accès{#manage-access-tokens}
@@ -107,9 +107,9 @@ Voir [ Gestion des jetons d’accès ](/help/implementing/cloud-manager/managing
 Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
 
-### Ajouter le pipeline de configuration Edge Delivery {#add-eds-pipeline}
+### Ajouter un pipeline de configuration Edge Delivery {#add-eds-pipeline}
 
-Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, étendant cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser **Pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Consultez [Configurations prises en charge](/help/operations/config-pipeline.md#configurations).
+Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, ce qui étend cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser les **pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Consultez [Configurations prises en charge](/help/operations/config-pipeline.md#configurations).
 
 ![Ajout d’un pipeline Edge Delivery dans la liste déroulante Ajouter un pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Ajout d’un pipeline Edge Delivery à partir de la page **Aperçu du programme**,**Carte Pipelines**.*
 
