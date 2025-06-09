@@ -60,6 +60,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
+
         [Prévisualisation de vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
         [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Utilisation des métadonnées vidéo
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
+
         [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos à vos pages web.
 
       * Intégrez une vidéo à l’aide d’une URL :
+
         [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Intégrez une vidéo à l’aide du code intégré dans la page web :
+
         [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/dynamic-media/embed-code.md).
 
    * [Génération de rapports vidéo](#viewing-video-reports).
