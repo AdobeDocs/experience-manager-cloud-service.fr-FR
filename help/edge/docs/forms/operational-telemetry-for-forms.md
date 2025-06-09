@@ -1,23 +1,23 @@
 ---
-title: Télémétrie opérationnelle pour Edge Delivery Services pour AEM Forms as a Cloud Service
-description: La télémétrie opérationnelle pour Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions des utilisateurs avec les formulaires.
+title: Télémétrie opérationnelle pour Edge Delivery Services d’AEM Forms as a Cloud Service
+description: La télémétrie opérationnelle pour Edge Delivery Services pour AEM Forms as a Cloud Service implique le suivi et l’analyse continus des interactions des personnes avec les formulaires.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Télémétrie opérationnelle pour Edge Delivery Services pour AEM Forms as a Cloud Service
+# Télémétrie opérationnelle pour Edge Delivery Services d’AEM Forms as a Cloud Service
 
-La télémétrie opérationnelle vous permet d’obtenir des informations réelles sur la manière dont les visiteurs interagissent avec vos sites web Adobe Experience Manager (AEM). Cet outil intégré fournit des données précieuses pour comprendre le comportement des utilisateurs et utilisatrices, diagnostiquer les problèmes de performances et mesurer l’efficacité des expériences sur les sites web. La télémétrie opérationnelle va au-delà des tests synthétiques en capturant les interactions d’utilisation réelle, offrant ainsi une image plus précise des performances de votre site.
+La télémétrie opérationnelle vous permet d’obtenir des informations concrètes sur la manière dont les visiteurs et visiteuses interagissent avec vos sites web Adobe Experience Manager (AEM). Cet outil intégré fournit des données précieuses pour comprendre le comportement des utilisateurs et utilisatrices, diagnostiquer les problèmes de performances et mesurer l’efficacité des expériences sur les sites web. La télémétrie opérationnelle va plus loin que les tests synthétiques en captant les interactions réelles, ce qui procure une image plus précise des performances de votre site.
 
-Cependant, la télémétrie opérationnelle donne la priorité à la confidentialité des visiteurs. Elle emploie donc des techniques d’échantillonnage pour collecter des données auprès d’un sous-ensemble représentatif de personnes, en s’assurant qu’aucune information d’identification personnelle ne soit jamais recueillie. En outre, la télémétrie opérationnelle est conçue en tenant compte de la minimisation des données, en ne collectant que les mesures essentielles requises pour l’analyse des performances. Cette approche vous permet d’optimiser vos sites AEM tout en préservant la confiance des utilisateurs et utilisatrices.
+Cependant, la télémétrie opérationnelle accorde la priorité à la confidentialité des visiteurs et visiteuses. Elle emploie donc des techniques d’échantillonnage pour collecter des données auprès d’un sous-ensemble représentatif de personnes, en s’assurant qu’aucune information d’identification personnelle ne soit jamais recueillie. En outre, la télémétrie opérationnelle est conçue avec un accent sur la minimisation des données, puisqu’elle ne collecte que les mesures essentielles à l’analyse des performances. Cette approche vous permet d’optimiser vos sites AEM tout en préservant la confiance des utilisateurs et utilisatrices.
 
 
 ## Conditions préalables
@@ -26,7 +26,7 @@ Vous pouvez afficher le tableau de bord de surveillance des Edge Delivery Serv
 
 https://data.aem.live/?ext=forms
 
-![Écran de connexion à la télémétrie opérationnelle pour Edge Delivery Services for Forms](/help/edge/assets/rum-login-screen.png)
+![Écran de connexion à la télémétrie opérationnelle pour Edge Delivery Services pour Forms](/help/edge/assets/rum-login-screen.png)
 
 Pour vous connecter au tableau de bord de surveillance des Edge Delivery Services d’AEM Forms as a Cloud Service, saisissez les informations suivantes :
 
@@ -40,7 +40,7 @@ Après avoir saisi l’URL et les clés de domaine dans l’écran de connexion,
 
 L’illustration ci-dessous présente le tableau de bord des Edge Delivery Services pour AEM Forms as a Cloud Service :
 
-![ Tableau de bord Forms de télémétrie opérationnelle ](/help/edge/assets/rum-forms-dashboard.png)
+![Tableau de bord Forms de télémétrie opérationnelle](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Différentes mesures clés du tableau de bord pour les formulaires {#different-metrics-operational-telemetry-dashboard-forms}
 

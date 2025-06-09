@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment gérer des sites Edge Delivery dans Cloud Manager en ajoutan
 
 ## Ajouter un mappage de domaine à un site Edge Delivery existant {#add-cdn-to-edge-delivery-site}
 
-Voir [ Ajouter un mappage de domaine ](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
+Consultez [Ajouter un mappage de domaine](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Attribution d’un nouveau nom à un site Edge Delivery (#rename-edge-delivery-site)
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Ces services permettent d’effectuer les opérations suivantes :
 
 * **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft SharePoint ou Google Drive) et la création WYSIWYG (éditeur universel ou éditeur de formulaires adaptatifs). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets, l’éditeur unversel ou l’éditeur de formulaires adaptatifs.
 
-* **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui chargent et génèrent rapidement et surveillent en permanence les performances de vos formulaires grâce à la télémétrie opérationnelle. Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
+* **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui se chargent et génèrent leur rendu rapidement, et surveillez en permanence les performances de vos formulaires grâce à la télémétrie opérationnelle. Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
 
 * **Utiliser l’ensemble d’outils destiné à l’équipe de développement :** Edge Delivery Services pour AEM Forms utilise du HTML brut, du code CSS moderne et du code Vanilla JavaScript pour créer des expériences exceptionnelles, en évitant la courbe abrupte d’apprentissage d’un framework spécifique. Une personne chargée du développement disposant de compétences de développement web de base peut personnaliser et créer facilement des composants de formulaire et des expériences. Il n’est pas nécessaire d’attendre l’exécution d’un pipeline. Il vous suffit d’enregistrer votre code dans GitHub pour que vos modifications soient appliquées.
 
@@ -62,7 +62,7 @@ La création basée sur des documents vous permet de créer des formulaires à l
 * Intégration de Google reCAPTCHA pour la protection contre les spams.
 * Possibilité de créer des composants de formulaire personnalisés pour des besoins spécifiques.
 * Envoi des données de formulaire directement à Microsoft Excel ou Google Sheets ou à des adresses e-mail.
-* Surveillance des performances de vos formulaires par télémétrie opérationnelle
+* Surveiller les performances de vos formulaires grâce à la télémétrie opérationnelle
 
 #### Fonctionnalités de la création WYSIWYG
 

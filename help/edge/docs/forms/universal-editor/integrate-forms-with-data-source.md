@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ L’intégration de formulaires à un modèle de données de formulaire (FDM) da
 
 ## Considérations
 
-* Si l’icône **Sources de données** ne s’affiche pas dans l’interface de l’éditeur universel ou si la propriété **Référence de liaison** n’apparaît pas dans le panneau de propriété de droite, activez l’extension **Source de données** dans l’**Extension Manager**.
+* Si l’icône **Sources de données** ne s’affiche pas dans l’interface de l’éditeur universel ou si la propriété **Référence de liaison** n’apparaît pas dans le panneau de propriété de droite, activez l’extension **Source de données** dans **Extension Manager**.
 
-  ![gestionnaire d’extensions](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
+  Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 * Le service de préremplissage des formulaires dans l’éditeur universel n’est actuellement pas pris en charge.
 
@@ -134,7 +134,7 @@ Lorsque vous créez un formulaire non basé sur un schéma, aucune source de don
    ![Créer le formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Vous pouvez ajouter une liaison de données à un champ de formulaire en la sélectionnant dans la propriété **Référence de liaison**. Par exemple, ajoutons une référence de liaison de données à la zone de texte **Id** déjà présente dans le formulaire.
-Pour sélectionner la liaison de données pour le champ de formulaire dans l’arborescence de la source de données, procédez comme suit :
+Pour sélectionner la liaison de données pour le champ de formulaire dans l’arborescence de la source de données, procédez comme suit :
 
 1. Ouvrez les propriétés du champ de formulaire pour lequel vous souhaitez ajouter la référence de liaison de données.
 1. Accédez à la propriété **Référence de liaison** et cliquez sur l’icône **Parcourir**.
@@ -143,11 +143,11 @@ Pour sélectionner la liaison de données pour le champ de formulaire dans l’a
 
 1. Choisissez la référence de liaison de données dans l’arborescence de la source de données de l’assistant **Sélectionner une référence de liaison**.
 
-   ![sélectionner la référence de liaison de données](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+   ![Sélection de la référence de liaison de données](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. Sélectionnez dans l’arborescence de la source de données l’élément de données que vous souhaitez lier au champ de formulaire, puis cliquez sur **Sélectionner**.
+1. Dans l’arborescence de la source de données, sélectionnez l’élément de données que vous souhaitez lier au champ de formulaire, puis cliquez sur **Sélectionner**.
 
-   ![sélectionner l’élément de données](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+   ![Sélection de l’élément de données](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
    Le champ de formulaire est lié à l’élément de données et il apparaît dans la propriété **Référence de liaison**.
 
