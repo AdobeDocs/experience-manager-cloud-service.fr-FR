@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le canal de version préliminaire pour 
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1264'
-ht-degree: 100%
+source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 58%
 
 ---
 
@@ -18,78 +18,43 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
+Adobe Experience Manager as a Cloud Service propose régulièrement de nouvelles fonctionnalités. La liste des nouvelles fonctionnalités et des fonctionnalités à venir pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-Pour vous familiariser avec les fonctionnalités programmées pour la prochaine mise à jour, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les modifications accessibles par le biais de l’interface utilisateur d’AEM et créer du code par rapport à toute nouvelle API en version préliminaire.
+Les fonctionnalités à venir sont généralement disponibles de l’une des deux façons suivantes :
 
-La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
+* Dans le cadre d’un programme destiné aux utilisateurs et utilisatrices précoces
+* Dans le cadre du canal de version préliminaire
 
-## Mises à jour d’AEM as a Cloud Service {#releases}
+Ce document décrit comment activer le canal de version préliminaire. Le canal de version préliminaire permet d’accéder aux premières fonctionnalités qui seront introduites dans une prochaine version d’AEM. Vous avez ainsi la possibilité de valider les nouvelles fonctionnalités et de planifier leur adoption en vue de leur publication ultérieure. Consultez le document [Notes de mise à jour de Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) pour plus d’informations sur le planning des versions d’AEM.
 
-AEM as a Cloud Service comporte deux types de mises à jour :
+## Activer le canal de version préliminaire pour accéder aux fonctionnalités à venir et les essayer {#enable-prerelease}
 
-* Une fois activées, les **mises à jour** ajoutent de nouvelles fonctionnalités à AEM as a Cloud Service.
-* Les **versions de maintenance** ajoutent des mises à jour de sécurité, des améliorations de performances et des correctifs. Elles sont appliquées régulièrement et fréquemment.
+Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Le canal de version préliminaire ne peut pas être activé dans les environnements d’évaluation ou de production.
 
-Ce calendrier de publication permet d’offrir des mises à jour continues sans interruption de service.
-
-Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités contenues dans la prochaine mise à jour. Vous pouvez ainsi les évaluer et planifier leur mise en œuvre dans vos propres projets. Vous prenez ainsi une longueur d’avance pour la mise en œuvre de la prochaine version.
-
-Par exemple, si nous sommes au mois de mai et que vous disposez d’un abonnement au canal de version préliminaire, vous pouvez évaluer les fonctionnalités de la version de juin.
-
-![Graphique illustrant le rythme de publication des versions préliminaires](assets/prerelease-cadence.png)
-
-En vous abonnant au canal de version préliminaire, vous pouvez découvrir les prochaines fonctionnalités d’AEM un mois avant leur publication. Vous disposez ainsi de suffisamment de temps pour évaluer l’impact des nouvelles fonctionnalités sur vos projets et personnalisations, ainsi que pour planifier le déploiement des fonctionnalités, les tests et la formation des utilisateurs et utilisatrices.
-
-Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre étapes suivantes.
-
-1. [Marquez votre calendrier](#mark-calendars)
-1. [Consultez les notes de mise à jour](#release-notes)
-1. [Accédez aux nouvelles fonctionnalités et testez-les](#new-features)
-1. [Formez vos utilisateurs et utilisatrices](#train-users)
-
-## Marquer votre calendrier {#mark-calendars}
-
-Le calendrier des mises à jour est établi bien à l’avance et les dates de publication sont publiées sur [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service).
-
-Notez les dates dans votre agenda afin de consacrer du temps à l’examen et aux tests des prochaines fonctionnalités.
-
-## Consulter les notes de mise à jour {#release-notes}
-
-Une fois les dates de publication ajoutées à votre calendrier, accédez au site web [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) le jour J pour consulter les dernières notes de mise à jour.
-
-Chaque version est accompagnée de notes de mise à jour qui décrivent les nouveautés apportées par la version, mais également les fonctionnalités disponibles en version préliminaire. Prenez une longueur d’avance et tirez parti des dernières fonctionnalités d’AEMaaCS !
-
-Vous pouvez également [consulter les problèmes connus](/help/release-notes/maintenance/latest.md), publiés avec chaque version, afin d’être informé(e) de tout problème technique qui pourrait empêcher le bon déroulement des tests ou l’adoption des nouvelles fonctionnalités.
-
-## Activer le canal de version préliminaire pour accéder aux nouvelles fonctionnalités et les essayer {#new-features}
-
-Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Toutefois, il ne peut pas être activé dans les environnements d’évaluation et de production.
-
-Les fonctionnalités de la version préliminaire peuvent être expérimentées de différentes manières :
+Le canal de version préliminaire est accessible de deux manières différentes :
 
 * [Environnements cloud](#cloud-environments)
 * [SDK local](#local-sdk)
 
 ### Environnements cloud {#cloud-environments}
 
-Pour activer le canal de version préliminaire dans un environnement cloud, vous devez ajouter une nouvelle variable d’environnement. Cette opération peut être réalisée dans l’interface utilisateur de Cloud Manager ou l’interface de ligne de commande.
+Pour mettre à jour un environnement cloud afin d’utiliser le canal de version préliminaire, vous devez ajouter une nouvelle variable d’environnement. Cette opération peut être réalisée dans l’interface utilisateur de Cloud Manager ou l’interface de ligne de commande.
 
 #### Ajouter une variable d’environnement à l’aide de l’interface utilisateur {#add-with-ui}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Accédez au programme pour lequel vous souhaitez activer le canal de version préliminaire.
+1. Accédez au programme dans lequel vous souhaitez activer le canal de version préliminaire.
 
-1. Sélectionnez l’environnement dans lequel vous souhaitez activer le canal de version préliminaire, puis accédez à **Programme** > **Environnement** > **Configuration de l’environnement** pour le configurer.
+1. Sélectionnez l’environnement dans lequel vous souhaitez activer le canal de version préliminaire et accédez à sa configuration via **Programme** > **Environnement** > **Configuration de l’environnement**.
 
-1. Ajoutez une nouvelle [variable d’environnement](../implementing/cloud-manager/environment-variables.md).
+1. Ajoutez une nouvelle [variable d’environnement](/help/implementing/cloud-manager/environment-variables.md).
 
    | Nom | Valeur | Service appliqué | Type |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Tous | Variable |
 
-1. Enregistrez les modifications et l’environnement s’actualisera avec les boutons (bascule) pour les fonctionnalités de version préliminaire activées.
+1. Enregistrez les modifications. L’environnement s’actualisera alors avec le canal de version préliminaire activé.
 
    ![Nouvelle variable d’environnement](assets/env-configuration-prerelease.png)
 
@@ -116,15 +81,15 @@ Vous pouvez également utiliser l’API Cloud Manager et l’interface de ligne
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
   ```
 
-La variable peut être supprimée ou redéfinie sur une autre valeur si vous souhaitez que l’environnement soit restauré avec le comportement du canal normal (hors version préliminaire).
+La variable peut être supprimée si vous souhaitez restaurer le comportement standard de l’environnement (canal hors version préliminaire).
 
 ### SDK local {#local-sdk}
 
-Vous pouvez voir les nouvelles fonctionnalités de la console Sites dans le SDK de démarrage rapide local et le code par rapport aux nouvelles API dans la version préliminaire en configurant votre projet Maven de façon à référencer le `API Jar` de la version préliminaire situé dans Maven Central. Vous pouvez également voir ces fonctionnalités dans votre environnement de développement local en démarrant le SDK de démarrage rapide standard en mode version préliminaire.
+Vous pouvez accéder aux fonctionnalités à venir du canal de version préliminaire dans votre Quickstart SDK local et coder par rapport aux nouvelles API en configurant votre projet Maven pour référencer le canal de version préliminaire `API Jar` situé dans Maven Central. Vous pouvez également voir l’accès au canal de version préliminaire dans votre environnement de développement local en démarrant le SDK de démarrage rapide standard en mode version préliminaire.
 
 #### Démarrer le SDK de démarrage rapide en mode version préliminaire {#prerelease-mode}
 
-1. Téléchargez le SDK à partir du portail de distribution de logiciels et installez-le comme décrit dans la section [Accès au SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+1. Téléchargez le SDK à partir de la distribution logicielle et installez-le comme décrit dans la section [Accès à AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 1. Lors du lancement du démarrage rapide du SDK, incluez l’argument `-r prerelease`.
 
 La valeur est sticky. Elle ne peut donc être sélectionnée que lors du premier démarrage. Réinstallez le SDK pour modifier l’option de ligne de commande.
@@ -181,7 +146,7 @@ Les JavaDocs sont publiés sur Maven Central.
 
 1. Procédez au déploiement sur votre serveur local.
 
-1. Si vous êtes satisfait(e) de son fonctionnement local, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement abonné au canal de version préliminaire.
+1. S’il fonctionne comme prévu localement, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement [dont le canal de version préliminaire est activé](#cloud-environments).
 
 >[!CAUTION]
 > 
@@ -189,22 +154,12 @@ Les JavaDocs sont publiés sur Maven Central.
 
 Le [module externe maven d’analyseur de création du SDK CS AEM version 1.0, et versions ultérieures](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) détectera si l’API de version préliminaire est utilisée dans un projet en examinant les dépendances. Si l’analyseur le trouve, il utilisera l’API du SDK de version préliminaire pour analyser le projet.
 
-## Former vos utilisateurs et utilisatrices {#train-users}
-
-Après avoir testé les nouvelles fonctionnalités dans le canal de version préliminaire et une fois que vous avez décidé de les exploiter dans vos projets, vous devez former vos utilisateurs et utilisatrices.
-
-Adobe Experience League propose de nombreuses ressources pour apprendre à utiliser AEMaaCS.
-
-* [Documentation d’AEMaaCS.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr)
-* [Tutoriels](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=fr)
-* [Vidéo de présentation de la version mensuelle](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) dans les notes de mise à jour.
-
 ## Considérations {#considerations}
 
 Quelques éléments doivent être pris en compte lors de l’utilisation du canal de version préliminaire.
 
 * Le canal de version préliminaire ne contient pas nécessairement toutes les nouvelles fonctionnalités à déployer dans la version suivante.
 * Les fonctionnalités de la version préliminaire sont soumises à un contrôle qualité rigoureux et sont conçues pour être complètes et non en version bêta. Si vous constatez des problèmes, signalez-les comme vous le feriez si vous suspectez des bogues dans les fonctionnalités d’une version d’AEM normale.
-* Pour déterminer si un environnement est configuré pour le canal de version préliminaire, accédez à la page **À propos** de la console AEM et vérifiez si le numéro de version AEM comprend un suffixe *version préliminaire* tel que ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
+* Pour déterminer si un environnement est configuré pour le canal de version préliminaire, accédez à la page **À propos** de la console AEM et vérifiez si le numéro de version AEM comprend un suffixe `PRERELEASE` tel que `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE`.
 
 ![À propos](/help/release-notes/assets/about.png)
