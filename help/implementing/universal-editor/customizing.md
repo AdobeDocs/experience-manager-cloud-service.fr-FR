@@ -4,9 +4,9 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ Découvrez les différentes options de personnalisation de l’éditeur universe
 
 >[!TIP]
 >
->L’éditeur universel offre également de nombreux points d’extension [&#128279;](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
+>L’éditeur universel offre également de nombreux points d’extension [](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
 
 ## Désactivation de la publication {#disable-publish}
 
@@ -38,6 +38,14 @@ L’option **Aperçu** dans la fenêtre de publication peut donc être supprimé
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Désactivation de l’ouverture de la page {#open-page}
+
+Le bouton **Ouvrir la page** peut être entièrement supprimé dans une application en ajoutant les métadonnées suivantes.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Filtrage des composants {#filtering-components}
@@ -87,7 +95,7 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic](https:
 
 ## URL d&#39;aperçu personnalisées {#custom-preview-urls}
 
-Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Cela est particulièrement utile pour les applications avec des exigences de prévisualisation spécifiques, telles que celles [utilisant Edge Delivery Services avec la création WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 

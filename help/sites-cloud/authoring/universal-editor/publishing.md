@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
+source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 42%
+source-wordcount: '555'
+ht-degree: 31%
 
 ---
 
@@ -30,7 +30,7 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 ![Publication de pages](assets/publish-menu.png)
 
 1. Dans l’éditeur universel, appuyez ou cliquez sur [l’icône **Publier** dans la barre d’outils de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-1. Si un [service d’aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible, vous pouvez choisir l’endroit où vous publiez votre contenu, soit en **Aperçu** ou **Publication**.
+1. Si un [service d’aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible, vous pouvez choisir l’endroit où vous publiez votre contenu, soit dans **[Aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (le cas échéant) ou **Publication**.
 1. La section **Éléments** répertorie le contenu inclus dans la publication, notamment :
    * **Nouveaux** éléments qui n’ont pas encore été publiés.
    * **Modifié** contenu qui a été publié, mais modifié depuis la dernière publication.
@@ -44,6 +44,10 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 1. Appuyez ou cliquez sur **Publier** pour publier ou **Annuler** pour abandonner.
 
+>[!NOTE]
+>
+>L’option de publication dans la prévisualisation [peut être désactivée](/help/implementing/universal-editor/customizing.md#publish-preview) et peut donc ne pas apparaître dans votre éditeur.
+
 ## Dépublication de contenu à partir de l’éditeur universel {#unpublishing-content}
 
 La dépublication de contenu fonctionne de la même manière que la publication de contenu. Lorsque vous êtes en tant que créateur de contenu et que vous êtes prêt à supprimer du contenu de la publication, appuyez ou cliquez sur l’icône représentant des points de suspension dans la barre d’outils de l’éditeur universel, puis sur **Dépublier**.
@@ -53,28 +57,6 @@ Vous disposez alors des mêmes options de dépublication du contenu que lors de 
 ## Publication et dépublication à partir de la console Sites {#publishing-sites-console}
 
 Vous pouvez également publier [à partir de la console Sites](/help/sites-cloud/authoring/sites-console/publishing-pages.md) ce qui peut s’avérer utile lorsque vous souhaitez publier plusieurs pages de contenu ou planifier la publication ou la dépublication.
-
-## Similarités avec l’éditeur de page {#similarities}
-
-Pour les utilisateurs de l’éditeur de page [AEM](/help/sites-cloud/authoring/page-editor/introduction.md) le processus de publication de contenu avec l’éditeur universel fonctionne comme vous en avez l’habitude : lors de la publication dans AEM, le contenu est répliqué du niveau création vers le niveau publication.
-
-## Différences {#differences}
-
-Ce qui rend la publication avec l’éditeur universel un peu différente n’est pas tant l’éditeur lui-même, mais plutôt l’hébergement externe de l’application que l’éditeur universel rend possible.
-
-Lorsqu’elle est hébergée en externe, l’application web s’assure que le contenu est chargé à partir du niveau création lorsque l’application est ouverte par les créateurs et créatrices dans l’éditeur et qu’il est chargé à partir du niveau publication lorsque les personnes accèdent à l’application.
-
-## Détection du niveau dans l’application {#detecting}
-
-Pour déterminer s’il convient d’accéder au niveau création ou au niveau publication, il suffit d’une simple instruction conditionnelle dans l’application pour choisir le point d’entrée de création ou de publication approprié lors de la détection de son ouverture dans l’éditeur.
-
-Une autre option consiste à déployer l’application dans deux environnements différents, configurés différemment, de sorte que l’un récupère son contenu à partir du niveau création et que l’autre le récupère à partir du niveau publication. Pour permettre aux créateurs et créatrices d’ouvrir l’URL publiée dans l’éditeur universel, un petit script peut être créé pour « convertir » l’URL côté publication en son équivalent dans l’environnement de création (par exemple, en ajoutant un sous-domaine `author` ), de sorte que les créateurs et créatrices soient automatiquement redirigés.
-
-## Résumé {#summary}
-
-L’objectif de l’éditeur universel est de ne pas imposer de modèle particulier, de sorte que l’implémentation puisse atteindre ses objectifs de manière complètement découplée tout en restant la plus simple et directe possible.
-
-L’éditeur universel n’impose pas non plus d’obligation quant à la manière dont un projet particulier doit déterminer à partir de quel niveau diffuser le contenu. Il offre plutôt plusieurs possibilités et permet au projet de déterminer la solution la mieux adaptée à ses besoins.
 
 ## Ressources supplémentaires {#additional-resources}
 

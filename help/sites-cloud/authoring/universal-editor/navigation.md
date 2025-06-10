@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 17%
 
 ---
@@ -183,9 +183,9 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 >
 >Utilisez le raccourci clavier `p` pour activer/désactiver le mode Aperçu.
 
-#### Ouvrir l’aperçu de l’application {#open-app-preview}
+#### Ouvrir la page {#open-page}
 
-Sélectionnez l’icône Ouvrir l’aperçu de l’application pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans passer par l’éditeur pour prévisualiser votre contenu.
+Sélectionnez l’icône Ouvrir la page pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans passer par l’éditeur pour prévisualiser votre contenu.
 
 ![Ouvrir l’aperçu de l’application](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Sélectionnez l’icône Ouvrir l’aperçu de l’application pour ouvrir la pa
 >
 >L’URL d’aperçu de votre application [peut être personnalisée](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>Le bouton Ouvrir la page [peut être désactivé](/help/implementing/universal-editor/customizing.md#open-page) et peut donc ne pas s’afficher dans votre éditeur.
+
 #### Publication {#publish}
 
 Sélectionnez le bouton Publier afin de publier les modifications apportées au contenu dynamique pour que vos lecteurs et lectrices puissent les utiliser ou pour les prévisualiser dans un environnement en vue de les réviser.
@@ -206,6 +210,10 @@ Sélectionnez le bouton Publier afin de publier les modifications apportées au 
 >[!TIP]
 >
 >Consultez le document [Publication de contenu avec l’éditeur universel](publishing.md) pour plus d’informations sur la publication avec l’éditeur universel.
+
+>[!NOTE]
+>
+>Le bouton de publication [peut être désactivé](/help/implementing/universal-editor/customizing.md#disable-publish) et peut donc ne pas s’afficher dans votre éditeur.
 
 #### Points de suspension {#ellipsis}
 
