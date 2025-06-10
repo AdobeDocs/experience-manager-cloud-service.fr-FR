@@ -49,7 +49,7 @@ L’éditeur universel prend en charge les deux principales configurations d’A
 L’éditeur universel est pris en charge par :
 
 * AEM as a Cloud Service (version `2023.8.13099` ou ultérieure)
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * L’hébergement sur site et AMS est pris en charge.
 * [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * L’hébergement sur site et AMS est pris en charge.
@@ -104,7 +104,7 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 Pendant que vous explorez l’éditeur universel et que vous progressez dans sa mise en œuvre dans vos propres projets, gardez à l’esprit les limites suivantes.
 
 * Pas plus de 25 ressources AEM (fragments de contenu, pages, fragments d’expérience, Assets, etc.) ne doivent être référencées en tant qu’instrumentation sur une seule page.
-* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) et [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls serveurs principaux AEM pris en charge.
+* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) et [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) sont les seuls serveurs principaux AEM pris en charge.
 * Une version `2023.8.13099` ou supérieure est requise pour AEM as a Cloud Service.
 * Les auteurs de contenu doivent disposer de leurs propres comptes Experience Cloud.
 * Dans le cadre d’AEM, l’éditeur universel [prend en charge les mêmes navigateurs de bureau qu’AEM.](/help/overview/supported-platforms.md)
