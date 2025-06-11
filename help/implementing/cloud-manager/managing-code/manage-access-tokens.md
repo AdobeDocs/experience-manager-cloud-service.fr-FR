@@ -4,13 +4,13 @@ description: Découvrez comment afficher, modifier et supprimer les jetons d’a
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 3%
 
 ---
-
 
 # Gestion des jetons d’accès pour les référentiels externes {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implem
 ## Modification d’un jeton d’accès {#edit-access-tokens}
 
 1. Dans la boîte de dialogue **Gérer les jetons d’accès**, à droite d’un nom de jeton, cliquez sur ![Modifier l’icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. Dans la boîte de dialogue **Modifier le jeton d’accès**, dans le champ de texte **Nom du jeton**, mettez à jour le nom du jeton.
+1. Dans la boîte de dialogue **Modifier le jeton d’accès**, mettez à jour la valeur **Nom du jeton** ou **Jeton d’accès**, ou les deux.
 
-   Le secret du jeton d’accès lui-même ne peut pas être modifié.
+   Si le **jeton d’accès** est en cours d’utilisation, une notification s’affiche pour vous avertir que tous les référentiels associés sont automatiquement revalidés après la mise à jour.
 
    ![Boîte de dialogue Modifier le jeton d’accès](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
