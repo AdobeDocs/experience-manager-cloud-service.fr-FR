@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez les différentes options de personnalisation de l’éditeur universe
 
 >[!TIP]
 >
->L’éditeur universel offre également de nombreux points d’extension [&#128279;](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
+>L’éditeur universel offre également de nombreux points d’extension [](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
 
 ## Désactivation de la publication {#disable-publish}
 
@@ -47,6 +47,18 @@ Le bouton **Ouvrir la page** peut être entièrement supprimé dans une applicat
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## Bouton Désactiver les doublons {#duplicate-button}
+
+Certains workflows de création peuvent être amenés à limiter la possibilité pour le créateur ou la créatrice de contenu de dupliquer des composants. Vous pouvez désactiver l’icône [dupliquer](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) en ajoutant les métadonnées suivantes.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Modification de votre point d’entrée {#custom-endpoint}
+
+Si vous souhaitez ne pas utiliser le service d’éditeur universel, qui est hébergé par Adobe, mais votre propre version hébergée, vous pouvez le définir dans une balise meta . Consultez le document [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) pour plus d’informations.
 
 ## Filtrage des composants {#filtering-components}
 
@@ -95,7 +107,7 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic](https:
 
 ## URL d&#39;aperçu personnalisées {#custom-preview-urls}
 
-Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Cela est particulièrement utile pour les applications avec des exigences de prévisualisation spécifiques, telles que celles [utilisant Edge Delivery Services avec la création WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
