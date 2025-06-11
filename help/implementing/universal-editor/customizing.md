@@ -18,7 +18,7 @@ Découvrez les différentes options de personnalisation de l’éditeur universe
 
 >[!TIP]
 >
->L’éditeur universel offre également de nombreux points d’extension [](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
+>L’éditeur universel offre également de nombreux points d’extension [&#128279;](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
 
 ## Désactivation de la publication {#disable-publish}
 
@@ -107,7 +107,7 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic](https:
 
 ## URL d&#39;aperçu personnalisées {#custom-preview-urls}
 
-Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Cela est particulièrement utile pour les applications avec des exigences de prévisualisation spécifiques, telles que celles [utilisant Edge Delivery Services avec la création WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
