@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
+source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2082'
 ht-degree: 31%
 
 ---
@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Accédez à tous vos [rendus de paramètres prédéfinis Dynamic Media et recadr
 
 **Intégration native de Dynamic Media à AJO B2C&#x200B;**
 
-[Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes marketing d’incorporer facilement des ressources Dynamic Media AEM (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
+[Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes marketing d’incorporer facilement des ressources Dynamic Media AEM (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463784/?learn=on&enablevpops=&autoplay=true&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -216,7 +216,7 @@ Toutefois, pour optimiser les performances du référentiel, à partir de **fin 
    * Toutes les versions des 7 dernières années sont conservées.
    * Ce seuil par défaut élevé empêche la suppression involontaire des données récentes. Cependant, il est recommandé de configurer des valeurs plus faibles pour optimiser les performances du référentiel.
 
-* Vous pouvez modifier ces valeurs par défaut par le biais de remplacements de la configuration OSGi.
+* Vous pouvez modifier ces valeurs par défaut via la configuration YAML, déployée à l’aide du pipeline de configuration.
 
 #### Journal d’audit {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ Toutefois, pour optimiser les performances du référentiel, à partir de **fin 
    * Tous les événements sont consignés par défaut.
    * Ce seuil par défaut élevé empêche la suppression involontaire des données récentes. Cependant, il est recommandé de configurer des valeurs plus faibles pour optimiser les performances du référentiel.
 
-* Vous pouvez modifier ces valeurs par défaut par le biais de remplacements de la configuration OSGi.
+* Vous pouvez modifier ces valeurs par défaut via la configuration YAML, déployée à l’aide du pipeline de configuration.
 
 Pour plus d’informations, consultez l’article [ Tâches de maintenance ](/help/operations/maintenance.md#defaults).
 
