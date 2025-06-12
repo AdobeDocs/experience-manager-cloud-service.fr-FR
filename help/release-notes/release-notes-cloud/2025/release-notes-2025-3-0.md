@@ -3,9 +3,10 @@ title: Notes de mise à jour de la version 2025.3.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.3.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b1a551aeebd0b3c5cf8111bf30341bd4ac41536f
+exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
+source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1123'
 ht-degree: 100%
 
 ---
@@ -32,15 +33,11 @@ La date de publication de la version actuelle d’[!DNL Adobe Experience Manager
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vidéo de mise à jour {#release-video}
 
-## Release Video {#release-video}
+Regardez la vidéo de vue d’ensemble de la version de mars 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.3.0 :
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
