@@ -3,9 +3,9 @@ title: Gestion des jetons d’accès des référentiels externes dans Cloud Mana
 description: Découvrez comment afficher, modifier et supprimer les jetons d’accès utilisés pour apporter votre propre Git dans AEM Cloud Manager.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implem
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans cet article ne sont disponibles que dans le cadre du programme d’adoption précoce. Pour plus d’informations et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, voir [Apporter votre propre Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>Les fonctionnalités décrites dans cet article ne sont disponibles que via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version Private Beta, voir [Apporter votre propre Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Afficher les jetons d’accès {#view-access-tokens}
 

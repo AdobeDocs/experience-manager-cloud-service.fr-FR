@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.6.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -52,11 +52,11 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
   Voir [Marquer les favoris du pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
-## Programme d’adoption précoce {#early-adoption}
+## Programme Private Beta {#private-beta-program}
 
-Participez au programme d’adoption précoce de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme Beta privé de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les possibilités d’adoption précoce suivantes sont actuellement disponibles :
+Les opportunités de version bêta privée suivantes sont actuellement disponibles :
 
 
 ### Environnement de test spécialisé {#specialized-test-environment}

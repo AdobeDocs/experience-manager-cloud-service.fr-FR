@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 38%
@@ -30,7 +30,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 >[!NOTE]
 >
->La fonctionnalité **Environnement de test spécialisé** n’est actuellement disponible que dans le cadre du programme d’adoption précoce. Pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [ Environnement de test spécialisé ](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>La fonctionnalité **Environnement de test spécialisé** est actuellement disponible uniquement via le programme bêta privé. Pour vous inscrire à la version bêta privée, voir [Environnement de test spécialisé](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Les fonctionnalités de chaque environnement dépendent des solutions activées dans le [programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de l’environnement.
 
@@ -71,7 +71,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
@@ -299,7 +299,7 @@ Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à **
 
 Seul un utilisateur ou une utilisatrice possédant le rôle de **développeur** aura accès à la **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
+Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
 
 Cette option est également disponible à partir de l’onglet **Environnement** de la fenêtre **Aperçu** lorsque vous cliquez sur l’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) d’un environnement individuel.
 

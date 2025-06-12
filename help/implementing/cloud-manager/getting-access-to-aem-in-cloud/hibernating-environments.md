@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
 1. Sur la page **Developer Console**, cliquez sur **Mise en veille**.
 
-<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
 ![Bouton Hibernate](assets/hibernate-1.png) (Mise en veille)
 
@@ -108,7 +108,7 @@ Lorsqu’un utilisateur envoie une requête de navigateur au service de créatio
 
 ![Page de destination du service mis en veille](assets/de-hibernation-img5.png)
 
-## Déploiements et mises à jour AEM {#deployments-updates}
+## Déploiements et mises à jour d’AEM {#deployments-updates}
 
 Les environnements mis en veille permettent toujours les déploiements et les mises à niveau manuelles d’AEM.
 

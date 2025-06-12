@@ -1,5 +1,5 @@
 ---
-title: Assistant d’IA dans Adobe Experience Manager (Beta limité)
+title: Assistant d’IA dans Adobe Experience Manager (bêta privée)
 description: Utilisez l’assistant AI dans Adobe Experience Manager pour vous aider à trouver des réponses, à résoudre les problèmes et à explorer Sites, Assets, Forms et Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
 
 # À propos de l’assistant AI dans Adobe Experience Manager {#aem-home}
 
-L’assistant d’IA dans AEM (Adobe Experience Manager) offre une interface de conversation conçue pour rationaliser la recherche de réponses à vos requêtes liées à Adobe Experience Manager. Il vous permet d’accéder aux connaissances sur les produits, de résoudre les problèmes et d’explorer les informations disponibles dans Experience League. Pendant le programme Beta, l’assistant d’IA prend en charge Adobe Experience Manager as a Cloud Service, notamment Sites, Assets, Forms et Cloud Manager.
+L’assistant d’IA dans AEM (Adobe Experience Manager) offre une interface de conversation conçue pour rationaliser la recherche de réponses à vos requêtes liées à Adobe Experience Manager. Il vous permet d’accéder aux connaissances sur les produits, de résoudre les problèmes et d’explorer les informations disponibles dans Experience League. Pendant le programme bêta privé, l’assistant AI prend en charge Adobe Experience Manager as a Cloud Service, notamment Sites, Assets, Forms et Cloud Manager.
 
 >[!IMPORTANT]
->Assurez-vous d’avoir examiné et envoyé le contrat d’utilisation afin qu’Adobe puisse activer la fonctionnalité d’assistant d’IA pour que vous puissiez le tester et participer au programme Beta.
+>Assurez-vous d’avoir examiné et envoyé le contrat d’utilisation afin qu’Adobe puisse activer la fonctionnalité d’assistant d’IA pour que vous puissiez tester et participer au programme bêta privé.
 >
 >Pour toute question, envoyez un e-mail à [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
@@ -74,7 +74,7 @@ L’assistant AI pour AEM Forms est disponible dans :
 
 >[!NOTE]
 >
-> L’assistant AI pour AEM Forms (Forms Experience Builder) est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à partir de votre adresse professionnelle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès.
+> L’assistant AI pour AEM Forms (Forms Experience Builder) est disponible sous le programme bêta privé. Envoyez un e-mail à partir de votre adresse professionnelle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès.
 
 Pour en savoir plus sur l’utilisation de l’assistant AI pour AEM Forms, notamment pour consulter des exemples détaillés et des bonnes pratiques, consultez la documentation sur l’[assistant AI pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 

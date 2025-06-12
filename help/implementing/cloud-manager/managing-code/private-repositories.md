@@ -4,7 +4,7 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 34%
@@ -23,7 +23,7 @@ En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé 
 >* Référentiels GitLab (versions `gitlab.com` et auto-hébergées de GitLab)
 >* Référentiels Bitbucket (`bitbucket.org` et Bitbucket Server, la version auto-hébergée de BitBucket)
 >
->Voir [Ajout de référentiels externes dans Cloud Manager - Version bêta limitée](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>Voir [Ajout de référentiels externes dans Cloud Manager - version bêta privée](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 

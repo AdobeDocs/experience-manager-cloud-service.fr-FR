@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6239'
 ht-degree: 98%
 
 ---
@@ -1201,14 +1201,14 @@ ht-degree: 98%
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
-      + [Environnements de test spécialisés (utilisateurs précoces)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [Environnements de test spécialisés (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajout d’un référentiel externe (adoption précoce)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gérer les jetons d’accès des référentiels externes (utilisateurs et utilisatrices précoces)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Ajouter un référentiel externe (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gestion des jetons d’accès des référentiels externes (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
