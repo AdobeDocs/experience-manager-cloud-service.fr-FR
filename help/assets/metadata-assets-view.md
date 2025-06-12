@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 81%
+source-wordcount: '2499'
+ht-degree: 79%
 
 ---
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Pour afficher les balises racines configurées, accédez à la page de détails de la ressource où le mappage entre le formulaire de métadonnées et les balises racines est effectué.
 
-## Amélioration de la découverte de contenu avec les balises intelligentes générées par l’IA {#ai-smart-tags}
+## Amélioration de la découverte de contenu avec les métadonnées générées par l’IA {#ai-smart-tags}
 
 Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Cette approche améliore non seulement l’efficacité en éliminant le balisage manuel, mais garantit également la cohérence et l’évolutivité sur de grands volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![Balises intelligentes améliorées](assets/enhanced-smart-tags.png)
+![Métadonnées générées par l’IA](/help/assets/assets/enhanced-smart-tags.png)
 
-### Utilisation de balises intelligentes générées par l’IA {#using-ai-generated-smart-tags}
+### Comment activer les métadonnées générées par l’IA ? {#enable-ai-generated-metadata}
+
+Pour activer les métadonnées générées par l’IA :
+
+* La version minimale requise d’AEM est `20626`.
+
+* Vous devez signer un contrat GenAI Rider. Pour plus d’informations, contactez votre représentant Adobe.
+
+  >[!IMPORTANT]
+  >
+  > Le titre d’une ressource généré par l’IA s’affiche dans la carte Ressource uniquement lorsque vous n’avez pas défini le titre de la ressource. Il ne remplace pas le titre de la ressource que vous avez spécifié.
+
+### Utilisation de métadonnées générées par l’IA {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 1. Patientez jusqu’à ce que la ressource nouvellement chargée soit traitée. Une fois l’opération terminée, accédez aux détails de la ressource.
 
-1. Accédez à l’onglet **[!UICONTROL Généré par l’IA]**. Si [!DNL Experience Manager] version est incompatible ou n’est pas mise à jour, cet onglet n’est pas visible. La version minimale requise d’AEM est la `20626`. Les champs suivants sont disponibles :
+1. Accédez à l’onglet **[!UICONTROL Généré par l’IA]**. Si [!DNL Experience Manager] version est incompatible ou n’est pas mise à jour, cet onglet n’est pas visible.  Les champs suivants sont disponibles :
 
    * **[!UICONTROL Titre généré] :** le titre fournit un titre clair et concis qui capture l’idée principale d’une ressource téléchargée, ce qui facilite sa compréhension en un coup d’œil. Lors de l’ajout d’une ressource, si vous fournissez un titre (en `dc:title`), il sera affiché dans la vue de navigation des ressources. Si rien n’est indiqué, un titre généré par l’IA est automatiquement attribué.
    * **[!UICONTROL Description générée] :** la description fournit un résumé bref mais informatif de la ressource, aidant les utilisateurs et les modules de recherche à appréhender rapidement sa pertinence.
@@ -286,7 +298,7 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
