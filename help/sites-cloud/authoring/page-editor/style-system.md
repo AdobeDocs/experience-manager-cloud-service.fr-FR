@@ -5,18 +5,25 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 90%
+source-wordcount: '1338'
+ht-degree: 88%
 
 ---
 
-# Système de style{#style-system}
+
+# Système de style {#style-system}
 
 Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 
 Cela évite d’avoir à développer un composant personnalisé pour chaque style ou à personnaliser la boîte de dialogue du composant pour activer cette fonctionnalité de style. Elle génère des composants mieux réutilisables qui peuvent être rapidement et facilement adaptés aux besoins des auteurs et autrices de contenu sans développement back-end AEM.
+
+>[!NOTE]
+>
+>Le système de style s’applique uniquement aux pages créées avec l’éditeur de page.
+>
+>Il est possible de mettre en forme des pages créées avec l’[éditeur universel](/help/implementing/universal-editor/introduction.md) et diffusées avec [Edge Delivery Services](/help/edge/overview.md) entièrement via votre projet GitHub.
 
 ## Cas d’utilisation {#use-case}
 
@@ -49,7 +56,7 @@ L’utilisation du système de style se passe généralement comme suit.
 
 1. L’auteur des pages AEM peut alors choisir les styles conçus dans l’éditeur de page via le menu de style de la barre d’outils du composant.
 
-Seules les trois dernières étapes sont effectivement réalisées dans AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
+Seules les trois dernières étapes sont réellement effectuées dans AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
 
 En fait, la mise en œuvre des styles ne nécessite que le déploiement sur AEM et la sélection dans les composants des modèles souhaités.
 

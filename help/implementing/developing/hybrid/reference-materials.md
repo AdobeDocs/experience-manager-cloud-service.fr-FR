@@ -4,12 +4,14 @@ description: Aperçu des références d’API d’application sur une seule page
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
+
 
 # Documents de référence SPA {#spa-reference-materials}
 

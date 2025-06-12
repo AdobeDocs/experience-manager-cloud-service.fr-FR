@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 73%
@@ -17,11 +17,9 @@ ht-degree: 73%
 
 Découvrez comment organiser votre site web avec AEM. Une fois que vous avez compris comment organiser vos pages, vous pouvez [créer de nouvelles pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) et [gérer les pages existantes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
-{{edge-delivery-authoring}}
-
 ## Organisation de votre site {#organizing-your-site}
 
-En tant qu’auteur, vous devez organiser votre site au sein d’AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
+En tant qu’auteur, vous devez organiser votre site dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
 * vous puissiez les trouver facilement dans l’environnement de création ;
 * les visiteurs sur votre site puissent facilement les parcourir dans l’environnement de publication.
@@ -95,7 +93,7 @@ Vous trouverez la liste complète et détaillée des caractères autorisés dans
 
 ### Titre {#title}
 
-Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM crée la page **Nom** à partir de cette chaîne et [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
+Si vous n’indiquez qu’une page **Titre** lors de la création d’une page, AEM déduit la page **Nom** de cette chaîne et [valide le nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
 Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
@@ -130,7 +128,7 @@ AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles d
 
 ## Composants {#components}
 
-Les [composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM pour vous permettre d’ajouter des types de contenu spécifiques. AEM propose toute une gamme de composants prêts à l’emploi, appelés [composants principaux](/help/implementing/developing/components/overview.md#core-components), qui offrent des fonctionnalités complètes. Voici quelques exemples de composants :
+Les [composants](/help/implementing/developing/components/overview.md) sont les éléments fournis par AEM pour vous permettre d’ajouter des types de contenu spécifiques. AEM est fourni avec un éventail de composants prêts à l’emploi, appelés [composants principaux](/help/implementing/developing/components/overview.md#core-components), qui fournissent des fonctionnalités complètes. Voici quelques exemples de composants :
 
 * Texte
 * Image

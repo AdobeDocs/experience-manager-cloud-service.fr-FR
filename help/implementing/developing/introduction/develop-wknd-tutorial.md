@@ -4,7 +4,7 @@ description: Vous découvrez le développement AEM ? Vous avez besoin d’une m
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 # Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Vue d’ensemble {#overview}
+
+{{traditional-aem}}
 
 Vous ne connaissez pas bien le développement d’Adobe Experience Manager as a Cloud Service ? Besoin d’une actualisation sur les toutes dernières pratiques ? Voici l’endroit idéal pour bien commencer !
 

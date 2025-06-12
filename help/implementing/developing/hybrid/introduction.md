@@ -4,12 +4,14 @@ description: Cet article présente les concepts d’une SPA et décrit l’utili
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 95%
 
 ---
+
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction}
 
@@ -134,7 +136,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 
 ## Applications SPA et éditeur de SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-Expérimenter le comportement d’un SPA pour l’utilisateur, puis inspecter la page SPA permet de mieux comprendre le fonctionnement d’une application SAP avec l’éditeur SPA dans AEM.
+Expérimenter le comportement d’une SPA pour l’utilisateur, puis inspecter la page SPA permet de mieux comprendre le fonctionnement d’une SPA avec l’éditeur de SPA dans AEM.
 
 ### Utilisation d’une SPA {#using-an-spa-application}
 
@@ -213,7 +215,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
-En outre, pour la personne en charge de la création de contenu, la création de contenu à l’aide d’un éditeur SPA est transparente au sein d’AEM.
+En outre, pour la personne en charge de la création de contenu, la création de contenu à l’aide d’un éditeur SPA est transparente dans AEM.
 
 Dans la section suivante, nous allons examiner le contrat qui permet à l’éditeur de SPA de relier les composants de la SPA aux composants d’AEM et d’offrir cette expérience de modification transparente.
 
@@ -233,7 +235,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
    Ce chemin d’accès permet de récupérer et d’associer l’objet de configuration de contexte de modification de chaque composant.
 
-   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur SPA détermine la configuration modifiable associée au composant, de sorte que le cadre, la barre d’outils, etc. appropriés soient chargés.
+   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine la configuration modifiable associée au composant, de sorte que l’image, la barre d’outils, etc. appropriées soient chargées.
 
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 
@@ -245,7 +247,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. En outre, SPA peut être utilisé au sein d’AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée de manière découplée.
+Les SPA peuvent être activées avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développées et gérées en dehors d’AEM. En outre, les SPA peuvent être utilisées dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée de manière découplée.
 
 >[!TIP]
 >

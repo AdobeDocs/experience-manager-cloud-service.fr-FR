@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: ht
-source-wordcount: '1523'
-ht-degree: 100%
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
+source-wordcount: '1556'
+ht-degree: 97%
 
 ---
 # Fragments de code {#snippets}
@@ -169,11 +169,11 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >[!IMPORTANT]
 >
 >Le pipeline front-end requiert que la liste autorisée des adresses IP suivante soit ajoutée au préalable à Cloud Manager.
->Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
->Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
+>>Si nécessaire, [ajoutez la liste autorisée des adresses IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) en copiant le bloc d’adresses ci-dessous. Chaque adresse est séparée par une virgule. Collez le bloc dans le champ **Adresse IP/CIDR** de la boîte de dialogue **Ajouter une liste autorisée des adresses IP**. Placez le curseur juste après la première virgule dans la liste des adresses et appuyez sur **Entrée**. Enregistrez la liste.
+>>Pour éviter toute interruption de l’exécution du pipeline front-end, assurez-vous que cette liste autorisée des adresses IP est ajoutée à Cloud Manager *avant* d’activer le pipeline.
 >
 >**Liste autorisée des adresses IP de Cloud Manager**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Ajouter une liste des adresses IP autorisées de Cloud Manager et des pipelines front-end {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 >[!IMPORTANT]
 >
 >Si vous utilisez (ou envisagez d’utiliser) le pipeline front-end pour développer des sites, la liste des adresses IP autorisées de Cloud Manager doit être ajoutée au préalable.
->Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>>Voir la section [Utiliser la liste des adresses IP autorisées de Cloud Manager avec le pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Listes d’adresses IP autorisées et éditeur universel {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
@@ -273,3 +273,11 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 >Les fonctionnalités de l’application web progressive (PWA) pour AEM Sites [ont été abandonnées](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Les projets existants utilisant cette fonctionnalité continueront à être pris en charge, mais les nouveaux projets ne doivent pas utiliser cette fonctionnalité.
+
+## AEM traditionnel {#traditional-aem}
+
+>[!TIP]
+>
+>**Avez-vous envisagé Edge Delivery Services pour AEM ?**
+>
+>Vous pouvez continuer à utiliser les méthodes décrites dans ce document pour les projets existants. Toutefois, pour les nouveaux projets, Adobe recommande d’utiliser [Edge Delivery Services.](/help/edge/overview.md)

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 86%
@@ -13,6 +13,8 @@ ht-degree: 86%
 ---
 
 # Thèmes de site {#site-themes}
+
+{{traditional-aem}}
 
 Découvrez comment les thèmes de site AEM peuvent être utilisés pour personnaliser le style et la conception de votre site.
 

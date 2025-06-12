@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 85%
@@ -13,6 +13,8 @@ ht-degree: 85%
 ---
 
 # Modèles de site {#site-templates}
+
+{{traditional-aem}}
 
 Découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
 

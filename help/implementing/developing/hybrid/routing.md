@@ -4,12 +4,14 @@ description: Concernant les applications sur une seule page (SPA) dans AEM, c’
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 92%
 
 ---
+
 
 # Routage du modèle de SPA {#spa-model-routing}
 
@@ -51,7 +53,7 @@ Par défaut, ce comportement est activé automatiquement. Pour le désactiver, l
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Chaque itinéraire du SPA doit correspondre à une ressource accessible dans AEM (par exemple, « `/content/mysite/mypage"`), car l’`PageModelManager` essaiera automatiquement de charger le modèle de page correspondant une fois l’itinéraire sélectionné. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
+Chaque route de la SPA doit correspondre à une ressource accessible dans AEM (par exemple, « `/content/mysite/mypage"`), car l’`PageModelManager` tentera automatiquement de charger le modèle de page correspondant une fois la route sélectionnée. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

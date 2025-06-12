@@ -1,17 +1,18 @@
 ---
-title: Obsolescence de l’éditeur de SPA
+title: Abandon de l’éditeur de SPA
 description: Bien que l’éditeur de SPA reste pris en charge par Adobe, découvrez ce que sa dépréciation signifie pour votre projet et les options dont vous disposez pour les projets futurs.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# Obsolescence de l’éditeur de SPA {#spa-editor-deprecation}
+# Abandon de l’éditeur de SPA {#spa-editor-deprecation}
 
 Bien que l’éditeur de SPA reste pris en charge par Adobe, découvrez ce que sa dépréciation signifie pour votre projet et les options dont vous disposez pour les projets futurs.
 

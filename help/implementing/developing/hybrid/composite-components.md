@@ -4,12 +4,14 @@ description: Découvrez comment créer vos propres composants composites, compos
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 81%
 
 ---
+
 
 # Composants composites dans les SPA {#composite-components-in-spas}
 
@@ -31,7 +33,7 @@ Les modèles suivants, qui concernent la prise en charge des cas d’utilisation
 
 * Votre instance de développement AEM s’exécute localement sur le port 4502 avec un exemple de projet.
 * Vous disposez d’une application React externe opérationnelle [activée pour la modification dans AEM](editing-external-spa.md).
-* L’application React est chargée dans l’éditeur AEM à l’[ du composant RemotePage](remote-page.md).
+* L’application React est chargée dans l’éditeur AEM [à l’aide du composant RemotePage](remote-page.md).
 
 ## Ajout de composants composites à une SPA {#adding-composite-components}
 
@@ -178,4 +180,4 @@ Si le contenu existe dans AEM, il peut être directement inclus dans la SPA en f
 
 ![Chemin composite dans la structure du nœud](assets/composite-path.png)
 
-Le composant `AEMCard` est identique à la valeur définie [dans le cas d’utilisation précédent](#content-does-not-exist). Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans le SPA.
+Le composant `AEMCard` est identique à la valeur définie [dans le cas d’utilisation précédent](#content-does-not-exist). Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans la SPA.

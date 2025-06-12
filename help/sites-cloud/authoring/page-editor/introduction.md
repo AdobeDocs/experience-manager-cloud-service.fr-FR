@@ -1,20 +1,20 @@
 ---
-title: Éditeur de page AEM
-description: L’éditeur de page d’AEM est un puissant outil de création de contenu.
+title: Éditeur de page d’AEM
+description: L’éditeur de page d’AEM est un outil puissant pour créer votre contenu.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 40%
 
 ---
 
-# Éditeur de page AEM {#editing-page-content}
+# Éditeur de page d’AEM {#editing-page-content}
 
-Une fois votre page créée dans la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), vous pouvez en modifier le contenu à l’aide de l’éditeur de page AEM, un puissant outil de création de contenu.
+Une fois votre page créée dans la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), vous pouvez en modifier le contenu à l’aide de l’éditeur de page d’AEM, un puissant outil de création de contenu.
 
 >[!NOTE]
 >
@@ -23,6 +23,8 @@ Une fois votre page créée dans la console [**Sites**](/help/sites-cloud/author
 >[!NOTE]
 >
 >Votre compte a besoin des droits d’accès et des autorisations appropriés pour modifier des pages. Contactez votre administrateur système si vous ne disposez pas des autorisations nécessaires.
+
+{{traditional-aem}}
 
 ## Orientation {#orientation}
 

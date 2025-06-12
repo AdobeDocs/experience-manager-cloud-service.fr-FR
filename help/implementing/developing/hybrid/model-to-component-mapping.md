@@ -4,12 +4,14 @@ description: Cet article décrit le fonctionnement du mappage du modèle dynamiq
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
 
 ---
+
 
 # Mappage du modèle dynamique avec les composants pour les SPA {#dynamic-model-to-component-mapping-for-spas}
 

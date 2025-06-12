@@ -4,10 +4,10 @@ description: Découvrez comment AEM as a Cloud Service peut bénéficier des
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 96%
+source-wordcount: '1321'
+ht-degree: 94%
 
 ---
 
@@ -21,6 +21,12 @@ En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 * Créez des sites rapides avec un score Lighthouse parfait et surveillez en permanence les performances de votre site grâce à la télémétrie opérationnelle.
 * Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser nativement les instances de création AEM avec l’éditeur universel et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
 * Utiliser un framework d’expérimentation intégré qui permet la création rapide de tests, l’exécution sans impact sur les performances et la mise en production rapide de la meilleure version.
+
+>[!TIP]
+>
+>**Vous souhaitez vous familiariser avec le sujet tout de suite ?**
+>
+>Si vous souhaitez vous familiariser avec le sujet immédiatement, vous pouvez démarrer votre propre projet Edge Delivery Services avec la création AEM en moins de 30 minutes en [consultez le tutoriel sur aem.live.](https://www.aem.live/developer/ue-tutorial)
 
 ## Réaction agile aux besoins de l’entreprise {#agile-reaction}
 
@@ -54,6 +60,22 @@ Le diagramme suivant illustre comment modifier du contenu dans Microsoft Word (c
 
 Edge Delivery Services utilise GitHub pour vous permettre de gérer et de déployer du code directement à partir de votre référentiel GitHub. Le nouveau contenu est ajouté instantanément sans nouveau processus de création.
 
+### Création AEM avec l’éditeur universel{#wysiwyg-authoring}
+
+L’éditeur universel est un emplacement unique et personnalisable qui vous permet de modifier du contenu en direct et en contexte à l’aide d’un aperçu visuel. Ce que vous voyez est ce que vous obtenez (WYSIWYG).
+
+* Grâce à la création AEM avec l’éditeur universel, vous augmentez l’efficacité de la création, qu’elle soit découplée ou couplée.
+* Vous pouvez tirer parti des fonctionnalités complètes de gestion de contenu AEM, notamment de workflow et de gouvernance.
+* Tirez parti de nombreux points d’extension pour prendre en charge vos propres processus et intégrations.
+* Les fonctionnalités de votre site peuvent être développées à l’aide de CSS et JavaScript dans GitHub.
+
+![Création AEM avec l’éditeur universel](assets/wysiwyg-authoring.png)
+
+Commencez la création dans AEM avec l’éditeur universel et Edge Delivery Services :
+
+* Pour une vue d’ensemble de la création AEM avec l’éditeur universel, consultez le document [Création avec AEM pour Edge Delivery Services](https://www.aem.live/docs/aem-authoring) dans la documentation aem.live.
+* Pour obtenir une vue d’ensemble du développement, consultez le document [Commencer - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) dans la documentation aem.live.
+
 ### Création basée sur des documents {#document-based}
 
 Grâce à la création basée sur des documents, vous pouvez utiliser du contenu directement à partir de Microsoft Word ou de Google Docs de sorte que ces sources deviennent des pages de votre site web. Les en-têtes, listes, images et éléments de police peuvent tous être transférés de la source initiale vers le site web.
@@ -70,22 +92,6 @@ Pour plus d’informations, voir la documentation sur la création basée sur de
 * Pour plus d’informations sur la prise en main d’Edge Delivery, reportez-vous à la [section Créer de la documentation aem.live](https://www.aem.live/docs/#build).
 * Pour comprendre comment créer et publier du contenu à l’aide d’Edge Delivery, consultez la [section Publier de la documentation aem.live](https://www.aem.live/docs/authoring).
 * Pour comprendre comment lancer correctement votre projet de site web, consultez la [section Démarrer de la documentation aem.live](https://www.aem.live/docs/#launch).
-
-### Création AEM avec l’éditeur universel{#wysiwyg-authoring}
-
-L’éditeur universel est un emplacement unique et personnalisable qui vous permet de modifier du contenu en direct et en contexte à l’aide d’un aperçu visuel. Ce que vous voyez est ce que vous obtenez (WYSIWYG).
-
-* Grâce à la création AEM avec l’éditeur universel, vous augmentez l’efficacité de la création, qu’elle soit découplée ou couplée.
-* Vous pouvez tirer parti des fonctionnalités complètes de gestion de contenu AEM, notamment de workflow et de gouvernance.
-* Tirez parti de nombreux points d’extension pour prendre en charge vos propres processus et intégrations.
-* Les fonctionnalités de votre site peuvent être développées à l’aide de CSS et JavaScript dans GitHub.
-
-![Création AEM avec l’éditeur universel](assets/wysiwyg-authoring.png)
-
-Commencez la création dans AEM avec l’éditeur universel et Edge Delivery Services :
-
-* Pour une vue d’ensemble de la création AEM avec l’éditeur universel, consultez le document [Création avec AEM pour Edge Delivery Services](https://www.aem.live/docs/aem-authoring) dans la documentation aem.live.
-* Pour obtenir une vue d’ensemble du développement, consultez le document [Commencer - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) dans la documentation aem.live.
 
 ### Choix de votre méthode de création {#authoring-method}
 

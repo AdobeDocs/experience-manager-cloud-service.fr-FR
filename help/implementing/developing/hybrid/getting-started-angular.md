@@ -4,12 +4,14 @@ description: Cet article présente un exemple de SPA, explique comment cette app
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 95%
 
 ---
+
 
 # Prise en main des SPA dans AEM avec Angular {#getting-started-with-spas-in-aem-using-angular}
 
@@ -280,4 +282,4 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 * La section [Aperçu de l’éditeur de SPA](editor-overview.md) aborde plus en détail le modèle de communication entre AEM et la SPA.
 * Le tutoriel [Projet SPA WKND](wknd-tutorial.md) est un tutoriel détaillé qui met en œuvre un projet SPA simple dans AEM.
 * La section [Mappage d’un modèle dynamique sur un composant pour les SPA](model-to-component-mapping.md) explique le mappage d’un modèle dynamique sur un composant et présente son fonctionnement au sein des SPA dans AEM.
-* [SPA Blueprint](blueprint.md) propose une exploration approfondie du fonctionnement de SPA SDK pour AEM au cas où vous souhaiteriez mettre en œuvre SPA dans AEM pour un framework autre que React ou Angular, ou simplement pour une meilleure compréhension.
+* Le [Plan directeur de SPA](blueprint.md) offre une exploration approfondie du fonctionnement de la SPA SDK pour AEM au cas où vous souhaiteriez implémenter des SPA dans AEM pour un framework autre que React ou Angular, ou tout simplement pour mieux comprendre ce qu’il en est.

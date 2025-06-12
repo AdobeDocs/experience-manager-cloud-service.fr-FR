@@ -1,19 +1,20 @@
 ---
-title: Limites de l’éditeur
-description: L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs et développeuses.
+title: Limites de l’éditeur de page
+description: L’éditeur de page utilise des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs et développeuses.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 99%
+source-wordcount: '312'
+ht-degree: 88%
 
 ---
 
-# Limites de l’éditeur {#editor-limitations}
 
-L’éditeur de l’interface utilisateur optimisée pour les écrans tactiles emploie des recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des contournements lorsque cela s’avère possible.
+# Limites de l’éditeur de page {#editor-limitations}
+
+[L’éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) utilise les recouvrements pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des contournements lorsque cela s’avère possible.
 
 ## Limites fonctionnelles {#functional-limitations}
 
@@ -27,7 +28,7 @@ Lors de la [modification d’une page](/help/sites-cloud/authoring/page-editor/e
 
 ### Pages de structure {#structure-pages}
 
-Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de page.
+Impossible de nommer les pages `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de page.
 
 ## Limitations de CSS {#css-limitations}
 

@@ -4,12 +4,14 @@ description: Ce document décrit les étapes recommandées pour charger une SPA 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 97%
 
 ---
+
 
 # Modification d’une SPA externe dans AEM {#editing-external-spa-within-aem}
 
@@ -29,7 +31,7 @@ Les conditions préalables sont simples.
 * Créez un projet de base de SPA AEM à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr?#available-properties).
    * Il s’agit de la base du projet AEM qui est mis à jour pour inclure la SPA externe.
    * Pour les exemples de ce document, nous utilisons [le projet SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr#spa-editor) comme point de départ.
-* Ayez à portée de main le SPA React externe fonctionnel que vous souhaitez intégrer.
+* Disposez de la SPA React externe opérationnelle que vous souhaitez intégrer.
 
 ## Chargement de la SPA vers le projet AEM {#upload-spa-to-aem-project}
 
@@ -81,7 +83,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 * `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Ce chemin peut être utilisé pour récupérer le `rootModel` à l’initialisation, le cas échéant.
 * `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
+* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
@@ -360,7 +362,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Vérifiez la modification de la page dans AEM.
 
-   * Déployez le projet sur AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
+   * Déployez le projet dans AEM et accédez à la page de `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
 
 ## Restrictions du framework {#framework-limitations}
 
