@@ -19,7 +19,7 @@ ht-degree: 54%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Cet article |
 
 AEM Forms prend en charge des fonctions personnalisées, ce qui permet aux utilisateurs et utilisatrices de définir des fonctions JavaScript pour implémenter des règles métier complexes. Ces fonctions personnalisées étendent les fonctionnalités des formulaires en facilitant la manipulation et le traitement des données saisies afin de répondre à des exigences spécifiques. Ils permettent de modifier dynamiquement le comportement du formulaire en fonction de critères prédéfinis. Les fonctions personnalisées permettent également aux développeurs et développeuses d’appliquer une logique de validation complexe, d’effectuer des calculs dynamiques et de contrôler l’affichage ou le comportement des éléments de formulaire en fonction des interactions utilisateur ou de critères prédéfinis.
