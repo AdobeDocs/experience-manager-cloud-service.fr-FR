@@ -168,6 +168,7 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
             // code to be executed
         }
 ```
+
 Si l’utilisateur ou l’utilisatrice n’ajoute aucune annotation JavaScript à la fonction personnalisée, elle est répertoriée dans l’éditeur de règles par son nom de fonction. Toutefois, il est recommandé d’inclure des annotations JavaScript pour améliorer la lisibilité des fonctions personnalisées.
 
 ### Fonction arrow avec annotations ou commentaire JavaScript obligatoires
