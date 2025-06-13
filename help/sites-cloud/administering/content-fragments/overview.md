@@ -181,7 +181,7 @@ Les fragments de contenu sont :
    * Les fragments de contenu (et leurs variantes) peuvent être créés et conservés à partir de la [console Fragments de contenu](#content-fragments-console).
    * Créés et modifiés dans l’[ Éditeur de fragment de contenu ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [](/help/headless/graphql-api/content-fragments.md).
+* Accessible pour la diffusion de contenu à l’aide de l’API AEM GraphQL [&#128279;](/help/headless/graphql-api/content-fragments.md).
 
 * Disponible dans l’[éditeur de page à l’aide du composant Fragment de contenu](/help/sites-cloud/authoring/fragments/content-fragments.md) (composant référençant) :
 
