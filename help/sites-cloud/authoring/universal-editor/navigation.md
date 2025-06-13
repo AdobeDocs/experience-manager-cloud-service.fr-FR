@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 17%
+source-wordcount: '1782'
+ht-degree: 16%
 
 ---
 
@@ -269,7 +269,8 @@ En mode d’arborescence de contenu, le panneau affiche la hiérarchie du conten
 
 ![Mode Arborescence de contenu](assets/content-tree-mode.png)
 
-Lorsque vous sélectionnez un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne.
+* Lorsque vous sélectionnez un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne.
+* Lorsque vous double-cliquez sur un élément dans l’arborescence de contenu, l’éditeur fait défiler l’écran jusqu’à ce contenu et le sélectionne, puis ouvre les propriétés associées en mode [propriétés](#properties-mode).
 
 ![Arborescence de contenu](assets/content-tree.png)
 
