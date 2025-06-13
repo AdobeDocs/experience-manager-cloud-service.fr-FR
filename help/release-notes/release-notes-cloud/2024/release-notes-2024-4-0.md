@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2024.4.0 d’ [!DNL Adobe Expe
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2689'
 ht-degree: 95%
 
 ---
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3446306?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -238,9 +238,6 @@ En tant qu’administrateur ou administratrice, vous pouvez créer des groupes d
 
 
 Dans l’ensemble, la création de groupes de langues renforce l’efficacité et la productivité des projets de traduction, améliorant ainsi le processus de localisation dans plusieurs langues.
-
-
-Découvrir comment [traduire des documents à partir de l’éditeur web](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
 ### Expérience redéfinie pour la recherche et le filtrage de fichiers dans la vue du référentiel
 

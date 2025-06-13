@@ -4,9 +4,9 @@ description: Découvrez comment activer les offres  [!DNL Dynamic Media] Prime e
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1075'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
 
 1. [Accédez à l’interface utilisateur de Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 
-1. [Créez un environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) si vous n’avez pas accès à un environnement existant.
+1. [Créez un environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments) si vous n’avez pas accès à un environnement existant.
 
 1. Sélectionnez **[!UICONTROL Cliquer pour activer]** dans la ligne **[!UICONTROL Dynamic Media]** de la section **[!UICONTROL Informations sur l’environnement]** de la page Détails de l’environnement.
 
@@ -94,7 +94,7 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
 
 1. Cliquez sur **[!UICONTROL Activer]** dans la boîte de dialogue de confirmation pour lancer le processus d’activation du [!DNL Dynamic Media with OpenAPI]. Une fois l’activation réussie, le Cloud Manager affiche les mises à jour de statut suivantes :
    1. **[!UICONTROL Étape de l’environnement]** : **[!UICONTROL En cours d’exécution]**
-   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; les fonctionnalités OpenAPI sont activées &#x200B;]**
+   1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  les fonctionnalités OpenAPI sont activées ]**
 
       ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -103,7 +103,7 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
 Si l’activation échoue, le Cloud Manager affiche les mises à jour de statut suivantes :
 
 * **[!UICONTROL Étape de l’environnement]** : échec de **[!UICONTROL DM avec OpenAPI]**
-* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**: échec de l’activation des fonctionnalités&#x200B;**[!UICONTROL &#x200B; OpenAPI &#x200B;]**
+* ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**: échec de l’activation des fonctionnalités**[!UICONTROL  OpenAPI ]**
 
   ![réessayer l’activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -134,7 +134,7 @@ Vérifiez que vous disposez des éléments suivants pour configurer les solution
 
 Procédez comme suit :
 
-1. [Créez un programme](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) ou accédez à un programme existant et cliquez sur **[!UICONTROL Modifier]**. La page **[!UICONTROL Configurer pour la production]** affiche l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
+1. [Créez un programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program) ou accédez à un programme existant et cliquez sur **[!UICONTROL Modifier]**. La page **[!UICONTROL Configurer pour la production]** affiche l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
 1. Sélectionnez **[!UICONTROL Assets]**, **[!UICONTROL Assets Prime]**, **[!UICONTROL Assets Ultimate]** ou **[!UICONTROL Sites]** pour ajouter la solution **[!UICONTROL Dynamic Media]** à votre programme.
 
@@ -206,17 +206,17 @@ Assurez-vous de répondre aux exigences suivantes avant de démarrer le processu
 1. [Accès à Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Déjà activé [!DNL Dynamic Media with OpenAPI] dans votre environnement](#activate-dynamic-media-with-openapi).
 1. Activation du [!DNL Dynamic Media with OpenAPI] à l’état prêt.
-1. Certificat de type EV ou OV pour le domaine à utiliser pour le niveau de diffusion. Voir [Présentation des certificats SSL](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations.
+1. Certificat de type EV ou OV pour le domaine à utiliser pour le niveau de diffusion. Voir [Présentation des certificats SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) pour plus d’informations.
 
 #### Configuration d’un domaine personnalisé dans le niveau de diffusion à l’aide de Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
 Exécutez les étapes suivantes dans Cloud Manager pour configurer un domaine personnalisé dans le niveau de diffusion :
 
-1. [Ajoutez un certificat SSL géré par le client](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
+1. [Ajoutez un certificat SSL géré par le client](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
-1. [Ajoutez un nom de domaine personnalisé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
+1. [Ajoutez un nom de domaine personnalisé](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Accédez à la page des détails de l’environnement et [ajoutez une configuration CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Lors de l’ajout de la configuration, sélectionnez **[!UICONTROL Diffusion]** dans le champ **[!UICONTROL Niveau]** de la boîte de dialogue **[!UICONTROL Configurer le réseau CDN]**.
+1. Accédez à la page des détails de l’environnement et [ajoutez une configuration CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Lors de l’ajout de la configuration, sélectionnez **[!UICONTROL Diffusion]** dans le champ **[!UICONTROL Niveau]** de la boîte de dialogue **[!UICONTROL Configurer le réseau CDN]**.
 
    ![Configurer le réseau CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
@@ -228,7 +228,7 @@ Exécutez les étapes suivantes dans Cloud Manager pour configurer un domaine pe
 
    ![option de préparation en ligne](/help/assets/assets/go-live-readiness-option.png)
 
-1. Exécutez les étapes **[!UICONTROL Configurer CNAME]** pour mapper [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (enregistrement CNAME) dans l’enregistrement DNS du fournisseur de services DNS. Ce mappage garantit que les requêtes reçues au niveau du domaine personnalisé sont redirigées vers le réseau CDN d’Adobe.
+1. Exécutez les étapes **[!UICONTROL Configurer CNAME]** pour mapper les `cdn.adobeaemcloud.com` (enregistrement CNAME) dans l’enregistrement DNS du fournisseur de services DNS. Ce mappage garantit que les requêtes reçues au niveau du domaine personnalisé sont redirigées vers le réseau CDN d’Adobe.
 
    ![boîte de dialogue de préparation à la mise en production](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
@@ -248,9 +248,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -273,7 +273,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -297,7 +297,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 

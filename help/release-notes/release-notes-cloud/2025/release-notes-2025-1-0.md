@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2025.1.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 92%
 
 ---
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de janvier 2025 pour un résumé des fonctionnalités ajoutées dans la version 2025.1.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3456076?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -165,7 +165,7 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 
 * [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [API Sites and Assets Folders](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge Computing - Demande de commentaires {#edge-computing-feedback}
@@ -180,7 +180,7 @@ Tout le monde peut accéder à la version Beta publique en cliquant sur le bouto
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Vous trouverez une liste complète des nouvelles fonctionnalités améliorées de la dernière version d’Adobe Experience Manager Guides [ici](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
 
 ## Cloud Manager {#cloud-manager}
 

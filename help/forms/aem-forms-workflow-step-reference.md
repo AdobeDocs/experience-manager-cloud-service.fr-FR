@@ -1,24 +1,24 @@
 ---
-title: Quelles étapes de workflow sont disponibles pour dans AEM Forms Cloud Service pour créer un workflow ou pour l’automatisation des processus métier (BPM) ?
+title: Pour quelles étapes de workflow la création d’un workflow ou l’automatisation des processus métier (BPM) sont-elles disponibles sur AEM Forms Cloud Service ?
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: Utiliser des workflows AEM, à l’aide des étapes Affecter une tâche, convertir en étape PDF/A, Générer un document de l’étape enregistrée, utiliser des workflows, Signer l’étape de document, Générer l’étape de sortie imprimée, Générer une sortie PDF non interactive
+keywords: Utiliser des workflows AEM, à l’aide des étapes d’affectation de tâche, convertir en étape PDF/A, générer un document de l’étape enregistrée, utiliser des workflows, signer une étape de document, générer une étape de sortie imprimée, générer une sortie PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 77%
 
 ---
 
 
-# Utilisation de Forms-centric AEM Workflows - Guide de référence des étapes pour automatiser les processus métier {#forms-centric-workflow-on-osgi-step-reference}
+# Utiliser des processus AEM orientés Forms - Guide de référence des étapes pour automatiser les processus métier {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
@@ -121,7 +121,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
     -->
 
 * **[!UICONTROL Personne désignée]** > **[!UICONTROL Options d’affectation]** : indiquez la méthode à utiliser pour affecter la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
-* **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour plus d’informations, consultez [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour plus d’informations, voir [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs, des utilisatrices ou des groupes pour l’option RandomParticipantChooser.
 
@@ -136,7 +136,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **[!UICONTROL Adresse e-mail du destinataire]** : vous pouvez stocker une adresse e-mail dans une variable, utiliser un littéral pour spécifier une adresse e-mail permanente ou utiliser l’adresse e-mail par défaut de la personne désignée spécifiée dans son profil. Vous pouvez utiliser le littéral ou une variable pour spécifier l’adresse électronique d’un groupe. L’option de variable permet de récupérer et d’utiliser de manière dynamique une adresse électronique. L’option **[!UICONTROL Utiliser l’adresse électronique par défaut de la personne désignée]** n’est destinée qu’à une seule personne désignée. Dans ce cas, l’adresse e-mail stockée dans le profil utilisateur de la personne désignée est utilisée.
 
-* **[!UICONTROL Modèle d’e-mail d’HTML]** : sélectionnez le modèle de l’e-mail de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
+* **[!UICONTROL Modèle d’e-mail HTML]** : sélectionnez le modèle de l’e-mail de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **[!UICONTROL Autoriser la délégation à :]** la boîte de réception AEM permet à l’utilisateur connecté de déléguer le processus affecté à un autre utilisateur. Vous pouvez déléguer au sein du même groupe ou à l’utilisateur ou l’utilisatrice du workflow d’un autre groupe. Si la tâche est affectée à un seul utilisateur ou une seule utilisatrice et que la fonction **[!UICONTROL Autoriser la délégation aux membres du groupe désigné]** est sélectionnée, alors il n’est pas possible de déléguer la tâche à un autre utilisateur ou une autre utilisatrice ou un autre groupe.
 * **[!UICONTROL Paramètres de partage]** : la boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec un autre utilisateur :
    * Lorsque l’option **[!UICONTROL Autoriser les personnes désignées à partager explicitement dans la boîte de réception]** est sélectionnée, l’utilisateur peut sélectionner la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur AEM.
@@ -151,7 +151,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **[!UICONTROL Titre d’itinéraires]** : indiquez le titre de l’itinéraire. Elle s’affiche dans la boîte de réception AEM.
 * **[!UICONTROL Icône Coral]** : spécifiez l’attribut HTML d’une icône Coral. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez choisir et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
-* **[!UICONTROL Autoriser les personnes désignées à ajouter des commentaires]** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires depuis la boîte de réception AEM au moment de l’envoi de la tâche.
+* **[!UICONTROL Autoriser les personnes désignées à ajouter des commentaires]** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **[!UICONTROL Enregistrer le commentaire dans la variable]** : enregistrez le commentaire dans une variable de type de données Chaîne. Cette option s’affiche uniquement si vous cochez la case **[!UICONTROL Autoriser la personne désignée à ajouter un commentaire]**.
 
 * **[!UICONTROL Autoriser la personne désignée à ajouter des pièces jointes à la tâche]** : sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche. Vous pouvez également limiter la taille maximale **[!UICONTROL (Taille maximale du fichier)]** d’une pièce jointe. La taille par défaut est de 2 Mo.
@@ -187,7 +187,7 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 
 ## Étape Envoyer un e-mail {#send-email-step}
 
-Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’une <!-- , link of an interactive communication--> de formulaire adaptatif ou avec un document de PDF joint. L’étape Envoyer un e-mail prend en charge l’[e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Les e-mails HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du ou de la destinataire. Vous pouvez utiliser un modèle d’e-mail HTML pour définir l’apparence, le modèle de couleurs et le comportement de l’e-mail.
+Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’une <!-- , link of an interactive communication--> de formulaire adaptatif ou avec un document PDF joint. L’étape Envoyer un e-mail prend en charge l’[e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Les e-mails HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du ou de la destinataire. Vous pouvez utiliser un modèle d’e-mail HTML pour définir l’apparence, le modèle de couleurs et le comportement de l’e-mail.
 
 L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous que le service de messagerie est configuré. Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports afin d’envoyer des e-mails et d’activer le protocole SMTP pour votre environnement. La restriction contribue à améliorer la sécurité de la plateforme.
 
@@ -217,7 +217,7 @@ L’étape Envoyer un courrier électronique possède les propriétés suivantes
 
 -->
 
-* **[!UICONTROL Image :]** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
+* **[!UICONTROL Image :]** utilisez cette option pour incorporer une image dans l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
 **[!UICONTROL Adresse e-mail du destinataire/expéditeur]** : sélectionnez l’option **[!UICONTROL Littéral]** pour spécifier manuellement une adresse e-mail ou sélectionnez l’option **[!UICONTROL Récupérer à partir des métadonnées de processus]** pour récupérer l’adresse e-mail d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **[!UICONTROL Récupérez à partir des métadonnées de processus]**. Sélectionnez l’option **[!UICONTROL Variable]** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 

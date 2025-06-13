@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.9.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ Consultez la vidéo Vue d’ensemble de la version de septembre 2024 pour obten
 
 #### Gestion des traductions {#translation-management}
 
-Les workflows de traduction et les actions d’API AEM déclenchent désormais des événements fournissant des informations sur les modifications de l’état des tâches de traduction. Les personnes peuvent s’abonner à ces événements par le biais d’Adobe Developer Console. Voir [ici](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) pour plus d’informations sur l’API de gestion de traduction AEM.
+Les workflows de traduction et les actions d’API AEM déclenchent désormais des événements fournissant des informations sur les modifications de l’état des tâches de traduction. Les utilisateurs peuvent s’abonner à ces événements via Adobe Developer Console.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 

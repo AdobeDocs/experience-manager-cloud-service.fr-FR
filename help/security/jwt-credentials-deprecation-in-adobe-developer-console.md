@@ -4,10 +4,10 @@ description: Découvrez l’impact de l’obsolescence des informations d’iden
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: ht
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Cet article fournit un contexte supplémentaire sur la manière dont AEM as a�
 
 Le principal point à retenir est qu’AEM prend désormais en charge les nouvelles informations d’identification OAuth de serveur à serveur pour AEM as a Cloud Service. Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT. Cette migration peut maintenant être effectuée.
 
-Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, maintenant qu’AEM les prend en charge. [Découvrez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) migrer les informations d’identification.
+Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, maintenant qu’AEM les prend en charge. [Découvrez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) migrer les informations d’identification.
 
 >[!NOTE]
 >

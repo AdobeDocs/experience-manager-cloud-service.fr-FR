@@ -3,10 +3,10 @@ title: Limiter la diffusion des ressources avec Dynamic Media avec les fonctionn
 description: Découvrez comment restreindre la diffusion des ressources à l’aide des fonctionnalités OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 5%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ Vous pouvez restreindre la diffusion des ressources dans [!DNL Experience Manage
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est actuellement pas en libre-service. Pour restreindre la diffusion des ressources pour IMS [utilisateurs](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) et [groupes](https://helpx.adobe.com/in/enterprise/using/user-groups.html), contactez votre équipe d’assistance aux entreprises pour obtenir des conseils sur la manière de récupérer les informations requises pour restreindre l’accès à partir du portail [Adobe Admin Console](https://adminconsole.adobe.com/) et sur la manière de configurer l’accès dans le service de création AEM as a Cloud Service.
+> Cette fonctionnalité n’est actuellement pas en libre-service. Pour restreindre la diffusion des ressources pour IMS [utilisateurs](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) et [groupes](https://helpx.adobe.com/in/enterprise/using/user-groups.html), contactez votre équipe d’assistance aux entreprises pour obtenir des conseils sur la manière de récupérer les informations requises pour restreindre l’accès à partir du portail [Adobe Admin Console](https://adminconsole.adobe.com/) et sur la manière de configurer l’accès dans le service de création AEM as a Cloud Service.
 
 ### Limiter la diffusion des ressources à l’aide des dates et heures d’activation et de désactivation {#restrict-delivery-assets-date-time}
 
@@ -113,7 +113,7 @@ De même, pour la vue Assets, si votre ressource n’est pas basée sur le sché
 
 ## Diffusion de ressources restreintes {#delivery-restricted-assets}
 
-La diffusion des ressources restreintes repose sur l’obtention d’autorisations d’accès aux ressources. L’autorisation se fait via [Jetons du porteur IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (application pour les requêtes initiées à partir du [sélecteur de ressources AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)) ou un cookie sécurisé (si des fournisseurs d’identité personnalisés sont configurés sur vos services de publication/prévisualisation AEM et que vous avez configuré la création et l’inclusion de cookies sur les pages).
+La diffusion des ressources restreintes repose sur l’obtention d’autorisations d’accès aux ressources. L’autorisation se fait via [Jetons du porteur IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (application pour les requêtes initiées à partir du [sélecteur de ressources AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)) ou un cookie sécurisé (si des fournisseurs d’identité personnalisés sont configurés sur vos services de publication/prévisualisation AEM et que vous avez configuré la création et l’inclusion de cookies sur les pages).
 
 ### Diffusion pour les requêtes de l’auteur ou du sélecteur de ressources AEM {#delivery-aem-author-asset-selector}
 
@@ -125,8 +125,8 @@ Sur les services de création AEM Cloud Service, ainsi que sur le sélecteur de 
 >Pour plus d’informations sur la manière d’activer l’authentification IMS sur les intégrations basées sur le sélecteur de ressources AEM, contactez l’assistance aux entreprises
 
 1. Pour les expériences non basées sur le sélecteur de ressources, AEM as a Cloud Service et Dynamic Media avec les fonctionnalités OpenAPI prennent actuellement en charge les intégrations d’api côté serveur et peuvent générer des jetons porteur IMS.
-   * Suivez les instructions [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations d’API service à serveur qui peuvent récupérer les jetons du porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
-   * Pour une durée limitée, l’accès développeur local (non destiné aux cas d’utilisation de production) et les jetons porteur IMS de courte durée pour l’utilisateur authentifié sur [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) peuvent être générés en suivant les instructions [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+   * Suivez les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) pour effectuer des intégrations d’API service à serveur qui peuvent récupérer les jetons du porteur IMS via [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Pour une durée limitée, l’accès développeur local (non destiné aux cas d’utilisation de production) et les jetons porteur IMS de courte durée pour l’utilisateur authentifié sur [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) peuvent être générés en suivant les instructions [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
 1. Lors de l’exécution des requêtes d’API [Search](search-assets-api.md) et [Delivery](deliver-assets-apis.md), ajoutez le jeton du porteur IMS obtenu à l’en-tête **[!UICONTROL Authorization]** de la requête HTTP (assurez-vous que sa valeur comporte le préfixe **[!UICONTROL Bearer]**).
 
@@ -136,4 +136,4 @@ Sur les services de création AEM Cloud Service, ainsi que sur le sélecteur de 
 
 ### Diffusion pour les fournisseurs d’identité personnalisés sur le service de publication {#delivery-custom-identity-provider}
 
-AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, ce qui permet de configurer une diffusion restreinte des ressources sur les sites web hébergés sur le service de publication ou d’aperçu AEM. Le flux de diffusion sécurisé utilise des cookies de navigateur pour établir l’accès de l’utilisateur. Pour mettre en œuvre ce cas d’utilisation, vous devez disposer d’un domaine personnalisé pour le niveau de diffusion qui est un sous-domaine du domaine de publication. Si les services de publication et de prévisualisation d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), un nouveau cookie appelé `delivery-token` encapsulant l’appartenance à un groupe de l’utilisateur doit être défini sur le domaine de publication après l’authentification de l’utilisateur. Le niveau de diffusion extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. Enregistrez un [ticket d’assistance pour les entreprises](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) pour plus d’informations.
+AEM Sites, AEM Assets et Dynamic Media avec des licences OpenAPI peuvent être utilisés conjointement, ce qui permet de configurer une diffusion restreinte des ressources sur les sites web hébergés sur le service de publication ou d’aperçu AEM. Le flux de diffusion sécurisé utilise des cookies de navigateur pour établir l’accès de l’utilisateur. Pour mettre en œuvre ce cas d’utilisation, vous devez disposer d’un domaine personnalisé pour le niveau de diffusion qui est un sous-domaine du domaine de publication. Si les services de publication et de prévisualisation d’AEM Sites sont configurés pour utiliser un [fournisseur d’identité personnalisé (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), un nouveau cookie appelé `delivery-token` encapsulant l’appartenance à un groupe de l’utilisateur doit être défini sur le domaine de publication après l’authentification de l’utilisateur. Le niveau de diffusion extrait le matériel d’autorisation du cookie sécurisé et valide l’accès. Enregistrez un [ticket d’assistance pour les entreprises](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) pour plus d’informations.

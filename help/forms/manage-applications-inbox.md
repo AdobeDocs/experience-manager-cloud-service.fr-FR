@@ -1,5 +1,5 @@
 ---
-title: Comment gérer les formulaires, les applications et les tâches dans la boîte de réception AEM ?
+title: Comment gérer les formulaires, les applications et les tâches dans la boîte de réception d’AEM ?
 description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
@@ -9,17 +9,17 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 78%
+source-wordcount: '1083'
+ht-degree: 77%
 
 ---
 
-
 # Gestion des applications et des tâches Forms dans la boîte de réception AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-L’une des nombreuses façons de lancer ou de déclencher un processus orienté formulaire consiste à utiliser des applications dans la boîte de réception AEM. Vous devez créer une application de workflow pour qu’un Forms Workflow soit disponible en tant qu’application dans la boîte de réception. Pour plus d’informations sur l’application de processus et d’autres façons de lancer les processus de Forms, voir [Lancement d’un processus orienté formulaire sur OSGi](aem-forms-workflow.md#launch).
+L’une des nombreuses façons de lancer ou de déclencher un processus orienté formulaire consiste à utiliser des applications dans la boîte de réception AEM. Vous devez créer une application de workflow pour rendre un Forms Workflow disponible en tant qu’application dans la boîte de réception. Pour plus d’informations sur l’application de processus et d’autres façons de lancer les processus de Forms, voir [Lancement d’un processus orienté formulaire sur OSGi](aem-forms-workflow.md#launch).
 
 En outre, la boîte de réception AEM rassemble les notifications et les tâches provenant de divers composants d’AEM, y compris les workflows de Forms. Lorsqu’un Forms Workflow contenant une étape Affecter une tâche est déclenché, l’application associée est répertoriée en tant que tâche dans la boîte de réception de la personne désignée. Si l’entité désignée est un groupe, la tâche apparaît dans la boîte de réception de toutes les personnes membres du groupe jusqu’à ce qu’une personne demande ou délègue la tâche.
 
@@ -35,11 +35,11 @@ En résumé, la boîte de réception vous permet de créer une application et de
 
 1. Accédez à la boîte de réception AEM à l’adresse https://’[serveur]:[port/]’/aem/inbox.
 1. Dans l’interface utilisateur de la boîte de réception, sélectionnez **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Submit]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
-Lorsqu’un workflow Forms se déclenche et que vous êtes une personne désignée ou faites partie du groupe désigné, une tâche s’affiche dans votre boîte de réception. Vous pouvez afficher les détails de la tâche et exécuter les actions disponibles sur la tâche depuis la boîte de réception.
+Lorsqu’un workflow Forms se déclenche et que vous êtes une personne désignée ou que vous faites partie du groupe de personnes désignées, une tâche apparaît dans votre boîte de réception. Vous pouvez afficher les détails de la tâche et effectuer les actions disponibles sur la tâche à partir de la boîte de réception.
 
 ### Demande ou délégation de tâches {#claim-or-delegate-tasks}
 
@@ -97,13 +97,13 @@ En outre, l’onglet affiche l’historique de la tâche pour chaque étape term
 
 #### Barre d’outils Actions {#actions-toolbar}
 
-La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Bien que les actions Enregistrer, Réinitialiser et Déléguer soient des actions par défaut, d’autres actions disponibles sont configurées dans l’[étape Affecter une tâche](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
+La barre d’outils Actions affiche toutes les options disponibles pour la tâche. Les actions Enregistrer, Réinitialiser et Déléguer sont des actions par défaut, mais d’autres actions disponibles sont configurées à l’étape [ Affecter une tâche ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem). Dans l’exemple ci-dessus, les options Approuver et Rejeter sont configurées dans le workflow.
 
-Lorsque vous agissez sur la tâche, celle-ci se poursuit plus loin dans le workflow.
+Lorsque vous agissez sur la tâche, elle se poursuit dans le workflow.
 
 ### Afficher les tâches terminées {#view-completed-tasks}
 
-La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin. Pour afficher les tâches terminées :
+La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, le statut, les dates de début et de fin, etc. Pour afficher les tâches terminées :
 
 1. Dans la boîte de réception AEM, sélectionnez ![toggle-side-panel1](assets/toggle-side-panel1.png) pour ouvrir le sélecteur de filtres.
 1. Sélectionnez l’accordéon **[!UICONTROL Statut de la tâche]** et sélectionnez **[!UICONTROL Terminé]**. Toutes vos tâches terminées s’affichent.
@@ -124,9 +124,9 @@ L’onglet **[!UICONTROL Détails du processus]** affiche chaque étape du proc
 
 ## Résolution des problèmes {#troubleshooting-workflows}
 
-### Impossible d’afficher les éléments liés au workflow AEM dans AEM boîte de réception {#unable-to-see-aem-worklow-items}
+### Impossible de voir des éléments liés au workflow AEM dans la boîte de réception AEM {#unable-to-see-aem-worklow-items}
 
-Un propriétaire de modèle de workflow ne peut pas afficher les éléments liés à AEM workflow dans AEM boîte de réception. Pour résoudre ce problème, ajoutez les index suivants à votre référentiel AEM et recréez l’index.
+Un propriétaire de modèle de workflow ne peut pas afficher des éléments liés au workflow AEM dans la boîte de réception AEM. Pour résoudre ce problème, ajoutez les index suivants à votre référentiel AEM et recréez l’index.
 
 1. Pour ajouter des index, utilisez l’une des méthodes suivantes :
 
@@ -153,5 +153,4 @@ Un propriétaire de modèle de workflow ne peut pas afficher les éléments lié
 
 1. [Créez un index de propriétés et définissez-le sur Vrai](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=fr#the-property-index).
 
-1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un package, [réindexez le référentiel](https://helpx.adobe.com/fr/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
+1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un package, réindexez le référentiel.

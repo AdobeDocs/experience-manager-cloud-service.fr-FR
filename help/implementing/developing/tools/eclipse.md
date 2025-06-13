@@ -1,13 +1,13 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: Découvrez comment utiliser les outils de développement AEM pour Eclipse, un module externe Eclipse basé sur le module externe Eclipse pour Apache Sling.
+description: Découvrez comment utiliser les outils de développement AEM pour Eclipse, un plug-in Eclipse basé sur le plug-in Eclipse pour Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -32,7 +32,7 @@ Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 Avant d’utiliser AEM Developer Tools, vous devez :
 
 * Téléchargez et installez l’[IDE Eclipse pour les développeurs Enterprise Java™](https://www.eclipse.org/downloads/packages/).
-* Configurez l’installation d’Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de segment en modifiant votre fichier de configuration `eclipse.ini` de la manière décrite dans les [questions fréquentes Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Configurez l’installation d’Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de tas en modifiant votre fichier de configuration `eclipse.ini` comme décrit dans la [FAQ Eclipse.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
-1. Ouvrez le site Web [AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Ouvrez le site web [AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copiez le **lien d’installation**.
 
@@ -192,7 +192,7 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 1. Veillez à enregistrer toutes vos modifications. Vous pouvez désormais synchroniser ce nouveau contenu avec votre instance AEM.
 
 1. Dans le panneau Servers (Serveurs), assurez-vous que votre connexion est démarrée. Si ce n’est pas le cas, démarrez-la.
-1. Cliquez sur l’icône **Nettoyer et Publish**.
+1. Cliquez sur l’icône **Nettoyer et publier**.
 
 Une fois cette opération terminée, votre package devrait être exécuté sur votre instance. Lors de l’enregistrement, toute modification est automatiquement synchronisée avec l’instance.
 

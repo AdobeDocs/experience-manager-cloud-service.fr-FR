@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.3.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
-source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
+source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1122'
+ht-degree: 99%
 
 ---
 
@@ -126,7 +126,7 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 
 * [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [API Sites and Assets Folders](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
