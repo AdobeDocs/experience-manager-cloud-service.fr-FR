@@ -5,10 +5,10 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 95%
+source-wordcount: '635'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ Le côté sélectionné s’affiche dans la totalité de la fenêtre, mais la ba
 
 >[!NOTE]
 >
->Si la largeur du navigateur ne peut pas contenir les deux noms de page en mode Plein écran, seul le nom de la page affichée s’affiche et l’autre est disponible derrière les points de suspension.
+>Si la largeur du navigateur ne peut pas prendre en charge les deux noms de page en mode Plein écran, seul le nom de la page affichée s’affiche et l’autre est disponible derrière des points de suspension.
 
 Vous pouvez également quitter le mode plein écran en cliquant sur l’icône de fermeture du mode plein écran.
 
@@ -90,6 +90,7 @@ Vous pouvez quitter le mode de comparaison côte à côte à tout moment en cliq
 
 Dans certains cas, l’outil de comparaison des pages peut ne pas détecter toutes les différences.
 
+* Lorsque vous différenciez des pages créées pour une utilisation avec le [Edge Delivery Services](/help/edge/overview.md) les pages sont affichées côte à côte pour faciliter la comparaison, mais les différences ne sont pas mises en évidence.
 * Lors de la comparaison des versions et lancements, la comparaison ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
 * Pour les versions, l’outil de comparaison ne recrée pas la politique de contrôle d’accès ni les relations Live Copy.
 * Si une page a été déplacée, vous ne pouvez plus la comparer à des versions antérieures au déplacement.
