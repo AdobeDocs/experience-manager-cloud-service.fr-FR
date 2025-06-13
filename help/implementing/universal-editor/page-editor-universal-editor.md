@@ -4,9 +4,9 @@ description: L’éditeur de page reste pris en charge par Adobe, mais l’édit
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Comme l’écart de fonctionnalités entre les deux éditeurs diminue constammen
 
 |  | Éditeur de page | Remarques | Éditeur universel | Remarques |
 |---|---|---|---|---|
-| [Diffusion AEM Classic](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponible]{type=Positive} | Recommandé pour une utilisation avec les composants principaux | [!BADGE Indisponible]{type=Negative} | Les pages AEM classiques reposent généralement sur plusieurs fonctionnalités spécifiques à l’éditeur de page, qui sont difficiles à répliquer en l’état avec l’éditeur universel. |
+| [Publier la diffusion](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponible]{type=Positive} | Recommandé pour une utilisation avec les composants principaux et les projets AEM traditionnels | [!BADGE Indisponible]{type=Negative} | Les pages AEM traditionnelles reposent généralement sur plusieurs fonctionnalités spécifiques à l’éditeur de page, qui sont difficiles à répliquer en l’état avec l’éditeur universel. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE Indisponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} |  |
 | [ Diffusion découplée ](/help/headless/introduction.md) | [!BADGE Partiellement disponible]{type=Caution} | Uniquement avec [l’éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) qui a été [obsolète](/help/implementing/developing/hybrid/spa-editor-deprecation.md) en faveur de l’éditeur universel | [!BADGE Disponible]{type=Positive} | L’éditeur universel permet aux développeurs d’apporter leur propre application web sans imposer d’exigences de framework spécifiques ou de contraintes d’implémentation. |
 
@@ -103,6 +103,6 @@ Il n’existe pas de chemin de migration direct de l’éditeur de page vers l�
    * Cela affecte de nombreux domaines des boîtes de dialogue, tels que les widgets personnalisés, la validation des champs, l’affichage/le masquage des règles et les personnalisations basées sur des modèles.
       * Bien que de telles fonctionnalités soient toujours possibles, l’éditeur universel les résout par le biais de la configuration, au lieu d’un JavaScript personnalisé déployé dans les boîtes de dialogue.
 
-Bien que l’éditeur universel puisse techniquement activer la modification des pages AEM classiques (par exemple, créées avec les composants principaux), ces sites reposent généralement sur plusieurs fonctionnalités spécifiques à l’éditeur de page, telles que le système de style, la grille réactive, les modèles modifiables et le code JavaScript personnalisé dans les boîtes de dialogue.
+Bien que l’éditeur universel puisse techniquement activer la modification des pages pour les projets AEM traditionnels (par exemple, créés avec les composants principaux), ces sites reposent généralement sur plusieurs fonctionnalités spécifiques à l’éditeur de page, telles que le système de style, la grille réactive, les modèles modifiables et le code JavaScript personnalisé dans les boîtes de dialogue.
 
 Dans la mesure où l’éditeur universel suit une approche plus rationalisée et moderne qui ne prend pas en charge ces fonctionnalités héritées, la migration de ces sites nécessiterait une refactorisation importante. Pour cette raison, **la migration des sites de l’éditeur de page vers l’éditeur universel n’est recommandée que pour les projets qui passent à Edge Delivery Services.**
