@@ -1,9 +1,9 @@
 ---
 title: Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services
 description: Découvrez comment diagnostiquer et résoudre les erreurs 403 Interdit lors de l’envoi de formulaires de Edge Delivery Services au service de publication AEM. Ce guide couvre les causes courantes, notamment les problèmes de CORS, de règles Dispatcher et de filtre de référent.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%

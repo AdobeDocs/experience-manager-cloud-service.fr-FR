@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 98%
 
 ---
@@ -1073,7 +1073,8 @@ ht-degree: 98%
          + [Publication et déploiement de formulaires : Guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Intégration du modèle de données de formulaire : intégration des formulaires au modèle de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Segments réutilisables, modulaires et autonomes : création et utilisation des fragments de formulaire dans les formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Segments réutilisables, modulaires et autonomes : création et utilisation de fragments de formulaire dans les formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Création de formulaires à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
