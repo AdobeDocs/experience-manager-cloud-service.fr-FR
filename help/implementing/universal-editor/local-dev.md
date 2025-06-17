@@ -4,7 +4,7 @@ description: Découvrez comment exécuter votre propre service d’éditeur univ
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -156,7 +156,7 @@ Une fois défini, vous devriez voir chaque appel de mise à jour de contenu acc�
 
 ## Modification d’une page avec le service d’éditeur universel local {#editing}
 
-Avec le [service d’éditeur universel s’exécutant localement](#running-ue) et votre page de contenu [ exécutée pour utiliser le service local](#using-loca-ue), vous pouvez maintenant démarrer l’éditeur.
+Avec le [service d’éditeur universel s’exécutant localement](#running-ue) et votre page de contenu [ exécutée pour utiliser le service local](/help/implementing/universal-editor/getting-started.md), vous pouvez maintenant démarrer l’éditeur.
 
 1. Ouvrez votre navigateur pour `https://localhost:8000/ping`.
 1. Demandez à votre navigateur d’accepter [votre certificat auto-signé](#ue-https).
