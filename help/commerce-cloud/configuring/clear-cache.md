@@ -4,9 +4,9 @@ description: Découvrez comment activer et vérifier la fonctionnalité d’effa
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,13 @@ Par défaut, la fonction d’effacement du cache est désactivée dans la config
 * Activez le listener pour effacer le cache de chaque instance d’AEM (publication et création) en ajoutant la configuration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` dans votre projet, comme illustré [ici](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuration doit être activée pour les instances de création et de publication.
    * Activation du cache de Dispatcher (facultatif) : vous pouvez activer le paramètre Effacer le cache du Dispatcher en définissant la propriété `enableDispatcherCacheInvalidation` sur true dans la configuration ci-dessus. Cette option permet d’effacer le cache du Dispatcher.
-
      >[!NOTE]
      >
      > Cela ne fonctionne qu’avec les instances de publication.
 
    * Veillez également à indiquer le modèle correspondant qui convient à votre produit, à votre catégorie et à la page CMS qui doit être ajoutée au fichier de configuration ci-dessus pour le supprimer du cache du Dispatcher.
 
-* Pour améliorer les performances des requêtes SQL afin de trouver la page correspondante associée au produit et à la catégorie, ajoutez l’index correspondant dans votre projet (recommandé). Pour plus d’informations, voir [cifCacheInvalidationSupport/]&#x200B;(link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* Pour améliorer les performances des requêtes SQL afin de trouver la page correspondante associée au produit et à la catégorie, ajoutez l’index correspondant dans votre projet (recommandé). Pour plus d’informations, voir [cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Vérification de la fonctionnalité Effacer le cache {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ Maintenant, pour vérifier si les caches sont correctement effacés :
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-Si tout se passe bien, les nouvelles modifications sont répercutées dans chaque instance. Si les modifications ne sont pas prises en compte pour l’instance de publication, vérifiez dans la fenêtre privée les pages PLP et PDP correspondantes.
+Si tout se passe bien, les nouvelles modifications sont répercutées dans chaque instance. Si les modifications ne sont pas visibles sur l’instance de publication, essayez d’accéder aux pages appropriées du PLP et du PDP dans une fenêtre de navigateur privée/privée.
 
 >[!NOTE]
 >
@@ -79,7 +77,7 @@ Type de demande : `POST`
 
 ### En-têtes
 
-| Paramètre | Valeur  | Obligatoire | Commentaire |
+| Paramètre | Valeur | Obligatoire | Commentaire |
 |------------------------------|-------------------|---|---|
 | `Content-Type` | `application/json` | Obligatoire |  |
 | `Authorization` | Informations d’identification de l’utilisateur de l’auteur correspondant (type d’authentification : authentification de base) | Obligatoire | Ajoutez le nom d’utilisateur et le mot de passe correspondants. |
