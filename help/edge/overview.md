@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Avec Edge Delivery Services, AEM offre des expériences exceptionnelles qui fa
 
 En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 
-* Créez des sites rapides avec un score Lighthouse parfait et surveillez en permanence les performances de votre site grâce à la télémétrie opérationnelle.
+* Créer des sites rapides avec un score Lighthouse parfait et surveiller en permanence les performances de votre site grâce à la télémétrie opérationnelle.
 * Augmenter l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser nativement les instances de création AEM avec l’éditeur universel et la création basée sur des documents. Ainsi, vous pouvez utiliser plusieurs sources de contenu sur le même site web.
 * Utiliser un framework d’expérimentation intégré qui permet la création rapide de tests, l’exécution sans impact sur les performances et la mise en production rapide de la meilleure version.
 
@@ -108,7 +108,7 @@ Les Edge Delivery Services font partie d’Adobe Experience Manager. Ainsi, les 
 
 Consultez le document [Commencer - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) dans la documentation aem.live afin d’apprendre à démarrer votre propre projet pour créer avec AEM et Edge Delivery Services.
 
-Vous pouvez également utiliser Edge Delivery Services avec [Adobe Target](https://www.aem.live/developer/target-integration), [Télémétrie opérationnelle](https://www.aem.live/developer/rum) pour diagnostiquer l’utilisation et les performances de vos sites et [Launch.](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
+Vous pouvez également utiliser Edge Delivery Services avec [Adobe Target](https://www.aem.live/developer/target-integration) et la [télémétrie opérationnelle](https://www.aem.live/developer/rum) pour diagnostiquer l’utilisation et les performances de vos sites, ainsi que [Launch](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home).
 
 ## Obtenir de l’aide à partir d’Adobe {#getting-help}
 
