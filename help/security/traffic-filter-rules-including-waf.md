@@ -4,9 +4,9 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ Cet article comprend les sections suivantes :
 * **Outils de tableau de bord :** analysez vos journaux du réseau CDN pour obtenir de nouvelles règles de filtre de trafic.
 * **Règles de démarrage recommandées :** ensemble de règles avec lesquelles commencer.
 * **Tutoriel :** connaissances pratiques relatives à la fonctionnalité, notamment à l’utilisation des outils de tableau de bord pour déclarer les règles appropriées.
-
-Adobe vous invite à faire part de vos commentaires ou à poser des questions sur les règles de filtre de trafic en envoyant un e-mail à l’adresse suivante : **aemcs-waf-adopter@adobe.com**.
 
 ## Vue d’ensemble de la protection du trafic {#traffic-protection-overview}
 
@@ -637,7 +635,7 @@ data:
 
 ### Format du journal {#cdn-log-format}
 
-Vous trouverez ci-dessous une liste des noms de champs utilisés dans les journaux de réseau CDN, ainsi qu’une brève description.
+Vous trouverez ci-dessous une liste des noms de champ utilisés dans les journaux CDN, ainsi qu’une brève description.
 
 | **Nom du champ** | **Description** |
 |---|---|
