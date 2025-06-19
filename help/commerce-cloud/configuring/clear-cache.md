@@ -31,6 +31,7 @@ Par défaut, la fonction d’effacement du cache est désactivée dans la config
 * Activez le listener pour effacer le cache de chaque instance d’AEM (publication et création) en ajoutant la configuration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` dans votre projet, comme illustré [ici](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuration doit être activée pour les instances de création et de publication.
    * Activation du cache de Dispatcher (facultatif) : vous pouvez activer le paramètre Effacer le cache du Dispatcher en définissant la propriété `enableDispatcherCacheInvalidation` sur true dans la configuration ci-dessus. Cette option permet d’effacer le cache du Dispatcher.
+
      >[!NOTE]
      >
      > Cela ne fonctionne qu’avec les instances de publication.
@@ -63,6 +64,7 @@ Maintenant, pour vérifier si les caches sont correctement effacés :
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 Si tout se passe bien, les nouvelles modifications sont répercutées dans chaque instance. Si les modifications ne sont pas visibles sur l’instance de publication, essayez d’accéder aux pages appropriées du PLP et du PDP dans une fenêtre de navigateur privée/privée.
 
 >[!NOTE]
