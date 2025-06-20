@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ Vous pouvez [créer une page](/help/sites-cloud/authoring/sites-console/creating
 
 1. Utilisez la console **Sites** pour [accéder à la page nouvelle ou existante](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) que vous souhaitez utiliser comme modèle, puis appuyez ou cliquez dessus pour la sélectionner.
 
-1. Une fois la page sélectionnée, appuyez ou cliquez sur l’icône [**Propriétés** de la barre d’outils](/help/sites-cloud/authoring/sites-console/page-properties.md).
+1. Une fois la page sélectionnée, appuyez ou cliquez sur l’icône [**Propriétés** de la barre d’outils](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 1. Dans l’onglet **Avancé** de la boîte de dialogue des propriétés, sous la section **Paramètres du modèle**, sélectionnez le bouton (bascule) **Utiliser la page comme modèle**.
 

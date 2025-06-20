@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 89%
@@ -30,7 +30,7 @@ Ces composants sont disponibles dans l’onglet **Composants** du panneau latér
 
 Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite le modifier à l’aide des méthodes suivantes :
 
-* [Configurer les propriétés](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [Configurer les propriétés](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [Modifier le contenu](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Modifier le contenu - Mode plein écran](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
@@ -44,7 +44,7 @@ La [console des composants](/help/sites-cloud/authoring/components-console.md) p
 
 Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
 
-Elles sont conçues selon les meilleures pratiques d’AEM et constituent la base de l’expérience de création d’AEM. Les composants principaux peuvent être facilement étendus par les développeurs pour répondre aux besoins spécifiques des projets.
+Ils sont créés à l’aide des bonnes pratiques d’AEM et constituent la base de l’expérience de création d’AEM. Les composants principaux peuvent être facilement étendus par les développeurs pour répondre aux besoins spécifiques des projets.
 
 Outre les composants principaux WCM, vous pouvez également utiliser les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). Ces composants principaux fournissent des méthodes standard et plus simples pour [créer ou ajouter des formulaires à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 

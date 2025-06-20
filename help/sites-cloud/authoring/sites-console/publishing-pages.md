@@ -1,28 +1,35 @@
 ---
-title: Publier des pages
-description: Découvrez comment publier et dépublier vos pages à l’aide de divers mécanismes dans AEM.
+title: Publication de pages à partir de la console Sites
+description: Découvrez comment publier et dépublier vos pages à l’aide de la console Sites.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 78%
+source-wordcount: '1635'
+ht-degree: 76%
 
 ---
 
-# Publication de pages {#publishing-pages}
+
+# Publication de pages à partir de la console Sites {#publishing-pages}
 
 Une fois le contenu créé et révisé dans l’environnement de création, l’objectif est de [le rendre disponible sur votre site web public](/help/sites-cloud/authoring/author-publish.md) (votre environnement de publication).
 
 On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lors de la publication et de la dépublication, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
 
-Vous pouvez publier/dépublier une page immédiatement ou à une date/heure prédéfinies.
+Vous pouvez utiliser la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md) pour publier/dépublier une page immédiatement ou à une date/heure prédéfinie dans le futur.
 
->[!NOTE]
+>[!TIP]
 >
->La publication d’un [fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) suit globalement la même procédure que pour une page, à partir de la console de Fragments d’expérience ou de l’éditeur.
+>Vous pouvez effectuer la publication à partir d’emplacements autres que la console Sites.
+>
+>* [Dans l’éditeur de page](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [Dans l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [À partir de la console Fragment d’expérience](/help/sites-cloud/authoring/fragments/experience-fragments.md) ou de l’éditeur
+>
+>La publication à partir de ces emplacements offre différentes options, mais suivez des procédures similaires et des idées générales décrites ici.
 
 ## Terminologie {#terminology}
 
@@ -38,14 +45,6 @@ Dans le cadre de votre utilisation d’Adobe Experience Manager (AEM) as a Cloud
    * Il s’agit de termes techniques décrivant le mouvement des données (contenu de page, fichiers, code et commentaires utilisateur, par exemple) d’un service vers un autre lorsque vous publiez une page (de l’auteur à l’aperçu, par exemple).
    * Ces termes sont principalement utilisés par les développeurs.
 
-## Publication de pages {#publishing-pages-1}
-
-Selon votre emplacement, vous pouvez effectuer la publication :
-
-* [À partir de l’éditeur de page](#publishing-from-the-page-editor)
-* [À partir du ](#publishing-from-the-sites-console)
-* [À partir de l’éditeur universel](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
@@ -60,50 +59,17 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >
 >L’ordre des pages n’est pas garanti :
 >
->* si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
->* si les pages parentes et enfants sont publiées dans des actions distinctes
+>* Si seules les pages enfants sont sélectionnées pour la publication (car les informations de commande sont conservées sur la page parente)
+>* Si les pages parentes et enfants sont publiées dans des actions distinctes
 
-### Publication à partir de l’éditeur de page {#publishing-from-the-page-editor}
-
-Si vous modifiez une page dans l’[éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md), elle peut être publiée directement à partir de l’éditeur.
-
-1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu, puis sélectionnez l’option **Publier la page**.
-
-   ![Publication d’une page via les options de page](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. Selon que la page comporte des références qui doivent être publiées :
-
-   * La page est publiée directement, s’il n’y a aucune référence à publier.
-   * Si la page comporte des références à publier, celles-ci sont répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
-      * Indiquez les ressources, balises ou autres que vous souhaitez publier avec la page, puis utilisez **Publier** pour terminer le processus.
-      * Sélectionner **Annuler** pour abandonner l’opération.
-
-   ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. L’option **Publier** réplique la page dans l’environnement de publication. Une bannière d’informations est affichée dans l’éditeur de page pour confirmer l’opération de publication.
-
-   ![Bannière d’informations sur l’état de publication](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Lorsque vous affichez la même page dans la console, l’état de publication mis à jour est visible.
-
-   ![État de publication de la page dans le mode d’affichage Colonnes de la console Sites](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->Une publication à partir de l’éditeur de page est une publication superficielle, c’est-à-dire que seules la ou les pages sélectionnées sont publiées alors que les pages enfants ne le sont pas.
-
->[!NOTE]
->
->Les pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
-
-### Publication à partir de la console Sites {#publishing-from-the-sites-console}
+## Publication de pages à partir de la console Sites {#publishing-from-the-sites-console}
 
 La console **Sites** propose deux options de publication :
 
 * [Publication rapide](#quick-publish)
 * [Gérer la publication](#manage-publication)
 
-#### Publication rapide {#quick-publish}
+### Publication rapide {#quick-publish}
 
 L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. Pour cette raison, toutes les références non publiées seront également publiées automatiquement.
 
@@ -123,7 +89,7 @@ Pour publier une page avec publication rapide :
 >
 >La publication rapide est une publication superficielle, c’est-à-dire que seules la ou les pages sélectionnées sont publiées alors que les pages enfants ne le sont pas.
 
-#### Gérer la publication {#manage-publication}
+### Gérer la publication {#manage-publication}
 
 **Gérer la publication** offre plus d’options que **Publication rapide**, notamment l’inclusion de pages enfants, la personnalisation des références, la publication sur un service d’aperçu (le cas échéant) et le démarrage de workflows applicables, ainsi que la possibilité de publier la page à une date ultérieure.
 
@@ -149,13 +115,13 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
      La publication différée lance un workflow pour publier la ou les pages sélectionnées à un moment précis. A l’inverse, la dépublication différée lance un workflow pour dépublier la ou les pages sélectionnées à un moment précis.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au workflow correspondant.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >La planification de la publication du contenu n’est pas identique à l’[**Heure d’activation** et à l’**Heure de désactivation** disponibles dans les propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) mais peut être utilisée dans des circonstances similaires.
+     >La planification de la publication de contenu reproduit le contenu et respecte les workflows de publication. Si vous souhaitez masquer temporairement le contenu déjà publié sans dépublier, pensez à [**Heure d’activation** et **Heure de désactivation** disponibles dans les propriétés de la page.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
 1. Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
 
-
-
 ## Dépublication de pages {#unpublishing-pages}
 
 La dépublication d’une page supprime cette page de votre environnement de publication ou de [prévisualisation](/help/sites-cloud/authoring/sites-console/previewing-content.md), de sorte que vos lecteurs et lectrices ne puissent plus y accéder.
-
-Vous pouvez dépublier une ou plusieurs pages de la destination souhaitée en procédant de la [même manière que pour leur publication](#publishing-pages) :
-
-* [À partir de l’éditeur de page](#unpublishing-from-the-editor)
-* [À partir de la console Sites](#unpublishing-from-the-console)
-
-### Dépublication à partir de l’éditeur {#unpublishing-from-the-editor}
-
-Lors de la modification d’une page, pour la dépublier, sélectionnez **Dépublier la page** dans le menu **Informations sur la page** comme vous le feriez [publier la page](#publishing-from-the-editor).
-
->[!NOTE]
->
->Les pages accessibles par [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
-
-### Dépublication à partir de la console {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](#manage-publication), vous pouvez l’utiliser pour la dépublication.
 

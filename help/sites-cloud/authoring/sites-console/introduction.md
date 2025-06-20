@@ -5,7 +5,7 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 47%
@@ -236,13 +236,13 @@ La barre d’outils des actions ne s’affiche que lorsqu’une ressource est s�
 
 * [**Créer**](#create-action) - Créer du contenu ou des actions liées au contenu
 * **Modifier** - Selon le mode de création de la page sélectionnée, l’action **Modifier** ouvre l’éditeur approprié.
-   * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) - Pour les pages créées avec l’éditeur de page AEM
+   * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md) - Pour les pages créées avec l’éditeur de page d’AEM
    * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md) - Pour les pages créées avec l’éditeur universel
-* [**Propriétés**](/help/sites-cloud/authoring/sites-console/page-properties.md) : ouvre la fenêtre des propriétés de la page.
+* [**Propriétés**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) : ouvre la fenêtre des propriétés de la page.
 * [**Verrouiller**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Verrouiller une page pour empêcher d’autres personnes de la modifier
 * [**Copier**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copier une page
 * [**Déplacer**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Déplacer ou renommer une page
-* [**Quick Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish immédiatement d’une ou de plusieurs pages
+* [**Publication rapide**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publiez immédiatement une ou plusieurs pages
 * [**Gérer la publication**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Planifier la publication d’une ou de plusieurs pages
 * [**Restaurer**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaure une version d’une page ou d’une arborescence de pages
 * [**Supprimer**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Supprime une ou plusieurs pages

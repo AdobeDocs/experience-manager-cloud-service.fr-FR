@@ -4,7 +4,7 @@ description: L’éditeur de page reste pris en charge par Adobe, mais l’édit
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -67,13 +67,13 @@ Comme l’écart de fonctionnalités entre les deux éditeurs diminue constammen
 | Publier (également pour la prévisualisation) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Démarrer le workflow](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension |
 | Commentaire | [!BADGE Disponible]{type=Positive} | Utilisation de [annotations](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Indisponible]{type=Negative} | Planifiés |
-| Intégration de Workfront | [!BADGE Indisponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension |
+| Intégration Workfront | [!BADGE Indisponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension |
 | [ MSM et lancements ](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible pour les pages en tant qu’extension |
 | Expérimentation et personnalisation | [!BADGE Disponible]{type=Positive} | Utilisation du [mode cible](/help/sites-cloud/authoring/personalization/targeted-content.md) | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension pour Edge Delivery Services |
 | Arborescence de contenu | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Permet également de réorganiser l’arborescence |
 | Simulation d’appareil | [!BADGE Disponible]{type=Positive} | [Les appareils configurés peuvent être simulés](/help/sites-cloud/administering/responsive-layout.md) mais l’utilisateur ne peut pas saisir manuellement d’autres dimensions d’écran à simuler. | [!BADGE Disponible]{type=Positive} | [Il est possible de saisir manuellement toutes les dimensions d’écran à simuler](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) mais les points d’arrêt par défaut ne peuvent pas être configurés. |
 | [Verrouillage de page](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Respecte le statut de verrouillage défini dans la console Sites avec l’extension disponible pour verrouiller/déverrouiller des pages à partir de l’éditeur |
-| [Propriétés de la page](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible auprès de l’administrateur du site, avec extension pour accéder également aux propriétés des pages à partir de l’éditeur |
+| [Propriétés de la page](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible auprès de l’administrateur du site, avec extension pour accéder également aux propriétés des pages à partir de l’éditeur |
 | Propriétés multi-champs | [!BADGE Disponible]{type=Positive} |  | [!BADGE Indisponible]{type=Negative} | Planifiés |
 | [DAM distant](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Contrôle de version des pages](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |

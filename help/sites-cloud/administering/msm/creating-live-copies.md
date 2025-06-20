@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -161,7 +161,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 * **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy (la valeur par défaut est basée sur le titre)
 * **Propriétaire du site** : (facultatif) informations sur le responsable de la Live Copy
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas synchronisée ultérieurement avec la source.
-* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations[&#128279;](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) voir  Spécification des configurations de déploiement à utiliser .
+* **Configurations de déploiement** : (facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) voir [ Spécification des configurations de déploiement à utiliser .
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
@@ -212,7 +212,7 @@ Pour afficher les propriétés :
 
 ### Affichage des Live Copies d’une page de plan directeur {#seeing-the-live-copies-of-a-blueprint-page}
 
-Les pages de plan directeur (référencées dans la configuration de plan directeur) fournissent une liste des pages Live Copy qui utilisent la page (plan directeur) actuelle comme source. Utilisez cette liste pour conserver la trace des Live Copies. La liste s’affiche dans l’onglet **Plan directeur** des [propriétés de page](/help/sites-cloud/authoring/sites-console/page-properties.md).
+Les pages de plan directeur (référencées dans la configuration de plan directeur) fournissent une liste des pages Live Copy qui utilisent la page (plan directeur) actuelle comme source. Utilisez cette liste pour conserver la trace des Live Copies. La liste s’affiche dans l’onglet **Plan directeur** des [propriétés de page.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Onglet Plan directeur des propriétés de page](../assets/live-copy-blueprint-tab.png)
 

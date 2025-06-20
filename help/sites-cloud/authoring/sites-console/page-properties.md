@@ -1,373 +1,283 @@
 ---
-title: Modification des propriétés de page
-description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
+title: Propriétés de page
+description: Découvrez les différentes propriétés qu’une page peut avoir, comment elles contrôlent le comportement de la page et comment elle est gérée.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
+mini-toc-levels: 2
+source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
 workflow-type: tm+mt
-source-wordcount: '2454'
-ht-degree: 84%
+source-wordcount: '2138'
+ht-degree: 34%
 
 ---
 
-# Modification des propriétés de page {#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être ou non connectées à une Live Copy. Le cas échéant, les informations de Live Copy sont disponibles.
+# Propriétés de page {#page-properties}
 
-## Propriétés de page {#page-properties}
+Découvrez les différentes propriétés qu’une page peut avoir, comment elles contrôlent le comportement de la page et comment elle est gérée.
 
-Les propriétés sont réparties sur plusieurs onglets.
+>[!TIP]
+>
+>Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [ Modification des propriétés de page ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
-### De base {#basic}
+## Présentation et disponibilité des propriétés {#overview}
 
-* **Titre et balises**
+Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [ propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
-   * **Titre** - Le titre de la page s’affiche à différents emplacements. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
-      * Ce champ est obligatoire.
-   * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
-      * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
-      * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
-         * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-         * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
-      * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
-      * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
-      * Pour plus d’informations sur les balises, consultez la section [Utilisation des balises](/help/sites-cloud/authoring/sites-console/tags.md).
-   * **Masquer dans la navigation** : indique si la page est affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+>[!NOTE]
+>
+>Ce document décrit toutes les propriétés de page possibles. Selon le type de page, toutes les propriétés ne sont pas disponibles.
 
-* **Valorisation de marque**
+## Onglet De base {#basic}
 
-  Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant Page de la version 2.14.0 ou ultérieure des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+### Titre et balises {#title-tags}
 
-   * **Slug de la marque**
+* **Titre** - Définit le titre des métadonnées de page à des fins d’optimisation du moteur de recherche (SEO) ainsi que le titre affiché dans le contenu de la page (sauf s’il est remplacé)
+   * Le titre de la page est affiché à divers emplacements de l’interface utilisateur d’AEM, y compris dans les vues Carte/Liste **Sites** de la [Console Sites.](/help/sites-cloud/authoring/sites-console/introduction.md)
+   * Ce champ est obligatoire.
+* **Balises** - Définit les balises de métadonnées de page à des fins d’optimisation pour les moteurs de recherche.
+   * Vous pouvez ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
+   * Utilisez la liste déroulante pour effectuer une sélection parmi des balises existantes.
+   * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
+   * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
+      * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
+      * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
+   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
+   * Pour plus d’informations sur les balises, voir [Utilisation des balises.](/help/sites-cloud/authoring/sites-console/tags.md)
+* **Masquer dans la navigation** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte
 
-      * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
-         * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
-      * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
-         * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
+### Branding {#branding}
 
-* **ID HTML**
+Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **ID** – Identification HTML à appliquer au composant.
+* **Slug de la marque**
+   * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
+      * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
+   * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
+      * La valeur est ajoutée au titre de la page après une barre verticale, par exemple `Cycling Tuscany | Always ready for the WKND`
 
-* **Autres titres et descriptions**
+### ID HTML {#html-id}
 
-   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si rien n’est indiqué, le **titre** est utilisé.
-   * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si rien n’est indiqué, le **titre** est utilisé.
-   * **Légende** - Sous-titre à utiliser sur la page.
-   * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
+* **ID** – Identification HTML à appliquer au composant.
 
-* **Heure d’activation/de désactivation**
+### Autres titres et descriptions {#more-titles}
 
-  >[!NOTE]
-  >
-  > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
+* **Titre de la page** - Titre à utiliser sur la page
+   * Il est généralement utilisé par les composants de titre.
+   * Si rien n’est indiqué, le **titre** est utilisé.
+* **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis).
+   * Si ce champ est vide, le **Titre de la page** est utilisé.
+* **Sous-titre** - Sous-titre à utiliser sur la page
+* **Description** - Votre description de la page, son objectif ou tout autre détail que vous souhaitez ajouter
 
-  >[!NOTE]
-  >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
+### Heure d’activation/de désactivation {#on-off-time}
 
-   * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
+L’heure d’activation/de désactivation d’une page est un moyen pratique de masquer temporairement le contenu déjà publié. Le contenu reste sur l’instance de publication lorsqu’elle est désactivée. La désactivation d’une page ne dépublie pas le contenu.
 
-      * Si elle a déjà été [publiée (manuellement)](/help/sites-cloud/authoring/sites-console/publishing-pages.md), cette page reste inactive (masquée) jusqu’à son rendu au moment spécifié.
-      * Si elle n’est pas publiée et configurée pour la réplication automatique, la page est automatiquement publiée, puis rendue au moment spécifié.
-      * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
+* **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
-   * **Heure de désactivation** – Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
+   * Si elle est déjà [publiée)](/help/sites-cloud/authoring/sites-console/publishing-pages.md) cette page est disponible sur l’instance de publication, mais reste inactive (masquée) jusqu’au rendu à l’heure spécifiée.
+   * Si elle n’est pas publiée et [configurée pour la réplication automatique](/help/operations/replication.md#on-and-off-times-trigger-configuratio) la page est automatiquement publiée, puis rendue, à l’heure spécifiée.
+   * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas automatiquement publiée. Une erreur 404 s’affiche donc lorsqu’une tentative d’accès à la page est effectuée.
 
-   * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
+* **Heure de désactivation** – Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
 
-* **URL de redirection**
+Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
-   * Permet de saisir une URL de redirection pour cette page, ce qui peut vous permettre d’avoir une URL plus courte ou plus expressive.
-   * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
+>[!NOTE]
+>Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
-  >[!CAUTION]
-  >
-  >L’URL Vanity :
-  >
-  >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
-  >* Elles ne prennent pas en charge les modèles d’expression régulière.
-  >* ne doit pas être définie sur une page existante.
+>[!TIP]
+>
+>Les heures d’activation/désactivation traitent strictement du contenu déjà publié (manuellement ou par réplication automatique). Pour cette raison, les workflows de publication tels que ceux destinés à l’approbation de contenu ne sont pas déclenchés par les heures d’activation/de désactivation et les heures d’activation/de désactivation n’affectent pas le statut de publication de la page. Pour cette raison, les heures d’activation/de désactivation sont plus appropriées pour afficher/masquer temporairement le contenu déjà approuvé et publié.
+>
+>Si vous souhaitez publier un nouveau contenu avec tous les workflows associés ou supprimer entièrement (dépublier le contenu) de votre site, pensez à [gérer votre publication.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
-   * **Ajouter** - Sélectionnez cette option pour afficher un champ afin de définir une URL d’origine pour la page.
-      * Sélectionnez à nouveau pour ajouter plusieurs éléments.
-      * Sélectionnez l’icône **Supprimer** pour supprimer l’URL Vanity.
-   * **Rediriger l’URL Vanity** – Indique si vous souhaitez que la page utilise l’URL Vanity.
+### URL de redirection {#vanity-url}
 
-### Avancé {#advanced}
+Cette propriété vous permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte ou plus expressive. Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
-* **Paramètres**
+>[!CAUTION]
+>
+>L’URL Vanity :
+>
+>* Doit être unique.
+>* Elles ne prennent pas en charge les modèles d’expression régulière.
+>* ne doit pas être définie sur une page existante.
 
-   * **Langue** – Langue de la page.
-   * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Rediriger** - Indique la page vers laquelle cette page doit être automatiquement redirigée avec un statut de `302 Found` HTML.
-      * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un statut HTML `301 Moved Permanently`.
-   * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
-   * **Alias** – Indique un alias à utiliser avec cette page.
-      * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
-      * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
-      * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
-      * Voir [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/overview/seo-and-url-management.md#localized-page-names).
+* **Ajouter** - Sélectionnez cette option pour afficher un champ afin de définir une URL d’origine pour la page.
+   * Sélectionnez à nouveau pour ajouter plusieurs éléments.
+   * Sélectionnez l’icône **Supprimer** pour supprimer l’URL Vanity.
+* **Rediriger l’URL Vanity** - Indique si vous souhaitez que la page utilise l’URL Vanity ou la redirige vers l’URL réelle de la page
 
-* **Configuration**
+## Avancé {#advanced}
 
-   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; active la disponibilité de la **Configuration du cloud** pour la sélection.
+### Paramètres {#settings}
 
-   * **Configuration du cloud** – Chemin d’accès à la configuration sélectionnée
+* **Langue** – Langue de la page.
+* **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
+* **Rediriger** - Indique la page vers laquelle cette page doit être automatiquement redirigée avec un statut de `302 Found` HTML
+   * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un statut HTML `301 Moved Permanently`.
+* **Conception**
+* **Alias** – Indique un alias à utiliser avec cette page.
+   * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
+   * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
+   * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
+   * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
-* **Paramètres de modèles**
+### Configuration {#configuration}
 
-   * **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
-   * **Utiliser la page comme modèle** - [Créez un modèle basé sur la page active.](/help/sites-cloud/authoring/universal-editor/templates.md)
-      * S’applique uniquement aux pages créées pour être utilisées avec l’éditeur universel exploitant Edge Delivery Services.
+* **Hérité de &lt;path>** - Activez/désactivez l’héritage de la **Configuration du cloud** de la page
+   * Active/désactive la disponibilité de la **configuration cloud** pour modification
 
-* **Exigence d’authentification**
+* **Configuration du cloud** – Chemin d’accès à la configuration sélectionnée
 
-   * **Activer** – Activer l’utilisation de l’authentification pour accéder à la page
+### Paramètres de modèles {#template-settings}
 
-     >[!NOTE]
-     >
-     >Les groupes d’utilisateurs fermés pour la page sont définis dans l’onglet **[Autorisations](#permissions)**.
+* **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
+   * Chaque valeur doit être un chemin d’accès absolu vers un modèle.
+   * Utilisez `/.*` pour autoriser tous les modèles sous ce chemin d’accès.
+* **Utiliser la page comme modèle** - [Créez un modèle basé sur la page active.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * S’applique uniquement aux pages créées pour être utilisées avec l’éditeur universel exploitant Edge Delivery Services.
 
-   * **Page de connexion** – Page à utiliser pour la connexion
+### Exigence d’authentification {#authentication}
 
-* **Exportation**
+* **Activer** - Active l’utilisation de l’authentification pour accéder à la page
 
-   * **Configuration de l’exportation** – Spécifie une configuration d’exportation.
+>[!NOTE]
+>
+>Les groupes d’utilisateurs fermés pour la page sont définis dans l’onglet **[Autorisations](#permissions)**.
 
-* **SEO**
+* **Page de connexion** – Page à utiliser pour la connexion
 
-   * **URL canonique** – Peut être utilisée pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page est son URL canonique
+### Export {#export}
 
-   * **Balises robots** - sélectionner les balises robots pour contrôler le comportement des robots des moteurs de recherche.
+* **Configuration de l’exportation** – Spécifie une configuration d’exportation.
 
-     >[!NOTE]
-     >
-     >Certaines des options sont en conflit les unes avec les autres. En cas de conflit, l’option la plus permissive est prioritaire.
+## SEO {#seo}
 
-   * **Générer un plan de site** – Lorsque cette option est sélectionnée, un fichier sitemap.xml est généré pour cette page et ses descendants.
+* **URL canonique** - Utilisé pour remplacer l’URL canonique de la page
+   * Si rien n’est indiqué, l’URL de la page correspond à son URL canonique.
 
-### Images {#images}
+* **Balises robots** - Utilisez la liste déroulante pour sélectionner les balises robots afin de contrôler le comportement des robots des moteurs de recherche
+   * Certaines options sont en conflit les unes avec les autres. Dans ce cas, l’option la plus permissive est prioritaire.
 
-* **Image en vedette**
+* **Générer un plan de site** : lorsque cette option est sélectionnée, un `sitemap.xml` est généré pour cette page et ses descendants.
 
-  Sélectionnez et configurez l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
+## Images {#images}
 
-   * **Image**
+### Image en vedette {#featured-image}
 
-     Vous pouvez **Choisir** une ressource ou rechercher un fichier à charger, puis sélectionner **Modifier** ou **Effacer**.
+Cette section permet de sélectionner et de configurer l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
-   * **Texte secondaire** : texte utilisé pour représenter la signification et/ou la fonction de l’image, par exemple, pour une utilisation par des lecteurs d’écran.
+* **Image** - Vous pouvez **Choisir** une ressource ou rechercher un fichier à charger, puis **Modifier** ou **Effacer** l’image sélectionnée.
+* **Texte secondaire** - Texte utilisé pour représenter la signification et/ou la fonction de l’image, généralement utilisé par les lecteurs d’écran
+* **Hériter - Valeur issue de la ressource DAM** - Lorsque cette case est cochée, le texte secondaire est renseigné avec la valeur des `dc:description`métadonnées dans la gestion des ressources numériques.
 
-   * **Hériter - Valeur issue de la ressource DAM** : lorsque cette option est cochée, le texte secondaire est renseigné avec la valeur des métadonnées `dc:description`dans DAM.
+### Miniature {#thumbnail}
 
-* **Miniature**
+Cette section permet de sélectionner et de configurer la miniature de l’image de la page. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
-  Configuration de la miniature de la page
+* **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
+* **Télécharger l’image** – Transfère une image à utiliser comme miniature
+* **Sélectionner une image** - Sélectionnez une ressource existante à utiliser comme miniature.
+* **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez la rétablir avant de l’enregistrer.
 
-   * **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
-   * **Télécharger l’image** – Transfère une image à utiliser comme miniature
-   * **Sélectionner une image** – Sélectionne une ressource existante à utiliser comme miniature.
-   * **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez la rétablir avant de l’enregistrer.
+## Services cloud {#cloud-services}
 
-### Services cloud {#cloud-services}
+* **Configurations de Cloud Service** - Définit la configuration utilisée pour les services cloud de la page
+* **Hérité de** - Pour les Live Copies et les copies de langue, les configurations cloud sont par défaut héritées du plan directeur.
+   * Décochez cette case pour remplacer l’héritage.
 
-* **Configurations du service cloud** – Définition des propriétés des services cloud
+## Personnalisation {#personalization}
 
-### Personnalisation {#personalization}
+### Configurations ContextHub {#contexthub-config}
 
-* **Configurations ContextHub**
+* **Chemin ContextHub** – Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+* **Chemin d’accès aux segments** – Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-   * **Hérité de &lt;path>** : active/désactive l’héritage ; active la disponibilité du **Chemin d’accès ContextHub** et du **Chemin d’accès des segments** pour la sélection
+### Configuration du ciblage {#targeting-config}
 
-   * **Chemin ContextHub** – Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Chemin d’accès aux segments** – Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+* **Marque** - Définit une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md)
+   * Cette option nécessite que le compte utilisateur figure dans le groupe `Target Administrators`.
 
-* **Configuration du ciblage**
+## Autorisations {#permissions}
 
-   * **Marque** – Définit une [marque pour spécifier la portée du ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Utilisez l’onglet **Autorisations** pour définir quels utilisateurs, groupes ou [groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=fr) peuvent accéder à la page et/ou la modifier.
 
-  >[!NOTE]
-  >Cette option nécessite que le compte d’utilisateur figure dans le groupe `Target Administrators`.
+* **Ajouter des autorisations**
+* **Modifier le groupe d’utilisateurs fermé**
+* Afficher les **autorisations effectives**
 
-### Autorisations {#permissions}
+## Blueprint {#blueprint}
 
-* **Autorisations**
+Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
 
-   * **Ajouter des autorisations**
-   * **Modifier le groupe d’utilisateurs fermé**
-   * Afficher les **autorisations effectives**
+* **Déploiement** - Lancez un déploiement du contenu du plan directeur sur les Live Copies
+* **Aperçu de la Live Copy** - Ouvrez une fenêtre pour parcourir la structure de la page Live Copy
+* **Live Copies actuelles** - Liste des pages basées sur (c’est-à-dire, Live Copies de) la page de plan directeur sélectionnée
 
-### Blueprint {#blueprint}
+## Live Copy {#live-copy}
 
-Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les [plans directeurs](#blueprint) les Live Copies font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies actuelles** – Listes de pages basées sur (c’est-à-dire qu’il s’agit de Live Copies de) cette page de plan directeur
-
-* **Configurations du déploiement** – Détermine les circonstances dans lesquelles les modifications sont propagées à la Live Copy
-
-### Live Copy {#live-copy}
-
-Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
-
-* **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
-* **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
+* **Synchroniser** - Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
+* **Réinitialiser** - Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
 * **Suspendre** – Suspendre la Live Copy des modifications de déploiement supplémentaires.
-* **Désolidariser** – Désolidariser la Live Copy du plan directeur
+* **Désolidariser** - Désolidariser la Live Copy du plan directeur
 
-* **Source**
+### Source {#source}
 
-   * Affiche le chemin du plan directeur pour cette Live Copy
+* Affiche le chemin du plan directeur pour cette Live Copy
 
-* **État**
+### Statut {#status}
 
-   * Liste l’état actuel de la Live Copy de la page
+* Liste l’état actuel de la Live Copy de la page
 
-* **Configuration**
+### Configuration {#live-copy-config}
 
-   * **Héritage de Live Copy** – Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
-   * **Hériter des configurations de déploiement du parent** – Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
-   * **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
+* **Héritage de Live Copy** - Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
+* **Hériter des configurations de déploiement du parent** - Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
+* **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
+* **Liste des chemins exclus**
 
-### Prévisualisation {#preview}
+## Prévisualisation {#preview}
 
-Lorsqu’un environnement de prévisualisation est activé, les éléments suivants s’affichent :
+Lorsqu’un [environnement de prévisualisation](/help/sites-cloud/authoring/sites-console/previewing-content.md) est activé, les détails suivants sont disponibles :
 
-* URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
+* **URL de prévisualisation** - URL utilisée pour accéder au contenu dans l’environnement de prévisualisation
 
-### Application web progressive {#progressive-web-app}
+## Application web progressive {#progressive-web-app}
 
-Grâce à une configuration simple, une personne en charge de la création de contenu peut désormais activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites.
+Grâce à une configuration simple, un créateur de contenu peut activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites. Votre site peut ensuite se comporter comme une application native en devenant installable sur l’écran d’accueil de l’appareil des visiteurs et visiteuses et disponible hors ligne.
+
+{{pwa-deprecation}}
+
+### Configurer l’expérience d’installation {#config-pwa}
+
+* **Activer PWA** - Lorsqu’il est activé, les visiteurs de la page peuvent installer le site en tant que PWA.
+* **URL de démarrage** - URL à charger lorsque l’utilisateur lance l’application web
+   * Si l’URL est relative, l’URL de manifeste est utilisée comme URL de base pour la résolution
+   * Lorsqu’elle est vide, l’URL de la page à partir de laquelle l’application a été installée est utilisée.
+   * Il est cependant recommandé de définir une valeur pour cette page.
+* **Mode d’affichage** - Méthode de masquage ou d’affichage du navigateur sur l’appareil local
+* **Orientation de l’écran** - Comment le PWA gérera les orientations de l’appareil
+* **Couleur du thème** - La couleur de l’application qui affecte la manière dont le système d’exploitation de l’utilisateur local affiche la barre d’outils de l’interface utilisateur native et les commandes de navigation
+* **Couleur d’arrière-plan** - Couleur d’arrière-plan de l’application affichée au chargement de l’application
+* **Icône** - Icône représentant l’application sur l’appareil de l’utilisateur ou de l’utilisatrice lors de l’installation de PWA
+
+### Gestion du cache (avancé) {#cache-management}
+
+* **Stratégie de mise en cache et fréquence d’actualisation du contenu** - Définit le modèle de mise en cache de votre PWA.
+* **Fichiers à mettre en cache pour une utilisation hors ligne**
+   * **Prémise en cache des fichiers (aperçu technique)** - Les fichiers hébergés sur AEM sont enregistrés dans la mémoire cache du navigateur local lorsque l’agent de service effectue l’installation et avant son utilisation.
+   * **Bibliothèques côté client** - Bibliothèques côté client à mettre en cache pour une expérience hors ligne
+   * **Inclusions des chemins** - Les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache et à la fréquence d’actualisation configurées pour le contenu
+   * **Exclusions des chemins** - Ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans Prémise en cache des fichiers et dans Inclusions des chemins .
 
 >[!NOTE]
 >
 >Voir [Activation des fonctionnalités d’application web progressive](/help/sites-cloud/authoring/sites-console/enable-pwa.md) pour plus d’informations.
 
-{{pwa-deprecation}}
-
-* **Configurer l’expérience d’installation**
-
-   * **Activer PWA** : active/désactive la fonction ; permet d’installer le site en tant que PWA.
-   * **StartupURL** : URL de démarrage préférée
-   * **Mode d’affichage** : définit la manière dont le navigateur doit être masqué ou présenté sur l’appareil local
-   * **Orientation de l’écran** : définit comment le PWA gère les orientations de l’appareil
-   * **Couleur du thème** : la couleur de l’application utilisée pour l’affichage de la barre d’outils et des commandes de navigation de l’interface utilisateur native par le système d’exploitation de l’utilisateur ou de l’utilisatrice local
-   * **Couleur d’arrière-plan** : la couleur d’arrière-plan de l’application qui s’affiche au chargement de l’application
-   * **Icône** : l’icône qui représente l’application sur l’appareil de l’utilisateur
-
-* **Gestion du cache (avancé)**
-
-   * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : définit le modèle de mise en cache de votre PWA
-   * **Fichiers à mettre en cache pour une utilisation hors ligne**
-      * **Prémise en cache des fichiers (aperçu technique)** – Les fichiers hébergés sur AEM sont enregistrés dans la mémoire cache du navigateur local lorsque l’agent de service effectue l’installation et avant son utilisation
-      * **Bibliothèques côté client** : bibliothèques côté client à mettre en cache pour une expérience hors ligne
-      * **Inclusions des chemins** : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache et à la fréquence d’actualisation configurées pour le contenu
-      * **Exclusions des chemins** : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans Prémise en cache des fichiers et dans Inclusions des chemins
-
-## Modification des propriétés de page {#editing-page-properties-1}
-
-* Dans la console **Sites** :
-   * [En créant une page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
-   * En cliquant ou en appuyant sur **Propriétés**
-      * Pour une seule page
-      * Pour plusieurs pages (seul un sous-ensemble des propriétés peut être modifié en masse)
-* À partir de l’éditeur de page :
-   * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
-
-### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
-
-Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la page :
-
-1. Dans la console **Sites**, accédez à l’emplacement de la page pour laquelle afficher et modifier les propriétés.
-1. Sélectionnez l’option **Propriétés** pour la page requise, en utilisant :
-   * [Actions rapides](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
-   * [Mode de sélection](/help/sites-cloud/authoring/basic-handling.md#selecting-resources)
-   * Les propriétés de la page sont affichées dans les onglets appropriés.
-1. Affichez ou modifiez les propriétés selon les besoins.
-1. Puis cliquez sur **Enregistrer** pour enregistrer vos modifications et sur **Fermer** pour revenir à la console.
-
-### Lors de la modification d’une page {#when-editing-a-page}
-
-Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour définir ses propriétés :
-
-1. Ouvrez la page dont vous souhaitez modifier les propriétés.
-1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
-1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
-   * **Annuler**
-   * **Enregistrez et fermez**
-1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.
-
-### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}
-
-Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en bloc des propriétés de la page.
-
-Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
-
-* lorsque vous parcourez la console **Sites** ;
-* après avoir utilisé **Rechercher** pour localiser un ensemble de pages.
-
-Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
-
-![Modification groupée des propriétés de page](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
-
-Vous ne pouvez modifier en masse que des pages qui :
-
-* Partagent le même type de ressource.
-* Ne font pas partie d’une Live Copy.
-   * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
-
-Une fois le mode de modification en bloc activé, vous pouvez effectuer les opérations suivantes :
-
-* **Mode**
-
-   * Liste des pages affectées
-      * Vous pouvez sélectionner/désélectionner si nécessaire.
-      * Onglets
-         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous les onglets.
-   * Un sous-ensemble de propriétés
-      * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
-      * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
-   * Propriétés communes partageant une valeur commune
-      * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), les valeurs ne s’affichent que lorsque *toutes* sont communes. Si seulement certains sont communs, ils ne seront affichés que lors de la modification.
-      * En l’absence de propriétés avec une valeur commune, un message s’affiche.
-
-* **Modifier**
-
-   * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
-      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
-   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
-
-## Héritage de propriété {#inheritance}
-
-Si la page est basée sur un plan directeur ou hérite du contenu d’une autre page, l’héritage se reflète dans la fenêtre **Propriétés de la page** pour le champ individuel.
-
-![ Propriétés héritées ](assets/property-inhertiance.png)
-
-Impossible de modifier les propriétés héritées. Appuyez ou cliquez sur l’icône **Annuler l’héritage** en regard d’un champ particulier pour rompre son héritage.
-
-![Annuler l’héritage](assets/cancel-inheritance.png)
-
-Confirmez l’annulation dans la fenêtre modale **Annuler l’héritage**.
-
-![Boîte de dialogue modale de confirmation d’annulation de l’héritage](assets/cancel-inheriance-confirmation.png)
-
-Une fois que l’héritage est annulé pour un champ, il devient modifiable.
-
-![héritage annulé](assets/property-inheritance-broken.png)
-
-Pour rétablir l’héritage, appuyez ou cliquez sur l’icône **Rétablir l’héritage** en regard du champ.
-
-![Rétablir l’héritage](assets/revert-inheritance.png)
-
-Confirmez la réversion dans la fenêtre modale **Rétablir l’héritage**.
-
-![Boîte de dialogue modale de confirmation de l’héritage](assets/revert-inhertiance-confirmation.png)
-
-Sélectionnez **Synchroniser la page après le rétablissement de l’héritage** pour mettre à jour le champ avec les dernières valeurs du plan directeur. Si vous ne le faites pas, les valeurs seront mises à jour la prochaine fois que la Live Copy sera synchronisée.
-
->[!TIP]
->
->Pour plus d’informations sur l’héritage, consultez le document [ Multi Site Manager et traduction ](/help/sites-cloud/administering/msm-and-translation.md)
