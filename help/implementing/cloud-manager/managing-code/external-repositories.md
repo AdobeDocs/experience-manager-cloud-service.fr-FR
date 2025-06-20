@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 54f86f7bc204c6171fb031ecb94dd3da0379dacf
+source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2292'
 ht-degree: 28%
 
 ---
@@ -216,8 +216,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Événements webhook obligatoires |
 | --- |
@@ -261,8 +260,7 @@ Le comportement varie en fonction du fournisseur Git que vous utilisez, comme in
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
