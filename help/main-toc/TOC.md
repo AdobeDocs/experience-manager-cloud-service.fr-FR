@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
 workflow-type: tm+mt
-source-wordcount: '6263'
+source-wordcount: '6267'
 ht-degree: 98%
 
 ---
@@ -443,6 +443,7 @@ ht-degree: 98%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Ressources dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Fragments de contenu avec Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
          + [Extension Des Références Externes AJO De Fragments De Contenu](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
