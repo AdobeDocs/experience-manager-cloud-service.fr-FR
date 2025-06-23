@@ -1,67 +1,66 @@
 ---
-title: Assistant AEM Forms AI - Bibliothèque d’invites
-description: Collection de modèles d’invite éprouvés et d’exemples pour créer des formulaires avec l’aide de l’IA dans l’interface utilisateur de gestion de Forms, l’éditeur de Forms adaptatif et l’éditeur universel.
+title: Assistant IA AEM Forms - Bibliothèque de prompts
+description: Collection de modèles de prompts et d’exemples éprouvés pour créer des formulaires avec l’aide de l’IA dans l’interface d’utilisation de gestion de Forms, l’éditeur de formulaires adaptatifs et l’éditeur universel.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Assistant IA AEM Forms - Bibliothèque de prompts
 
-
-# Assistant AEM Forms AI - Bibliothèque d’invites
-
-Collection de modèles d’invite réutilisables et d’exemples pour les scénarios courants de création de formulaires. Considérez-les comme des modèles que vous pouvez adapter à vos besoins spécifiques. Chaque section couvre un cas d’utilisation particulier avec des conseils sur son utilisation et des exemples éprouvés.
+Collection de modèles de prompts réutilisables et d’exemples pour les scénarios courants de création de formulaires. Vous pouvez adapter ces modèles à vos besoins spécifiques. Chaque section couvre un cas d’utilisation particulier avec des conseils sur son opportunité d’utilisation et des exemples éprouvés.
 
 >[!NOTE]
 >
-> L’assistant AI pour AEM Forms est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à mailto:aem-forms-ea@adobe.com à partir de votre adresse professionnelle pour demander l’accès.
+> L’assistant IA pour AEM Forms est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à mailto:aem-forms-ea@adobe.com à partir de votre adresse professionnelle pour demander l’accès.
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette bibliothèque d’invites est en cours de test par rapport au produit et est sujette à des mises à jour et des révisions. Les invites, les exemples et les bonnes pratiques peuvent changer à mesure que l&#39;assistant AI pour AEM Forms continue d&#39;évoluer pendant le programme des utilisateurs et utilisatrices précoces.
+> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que l’assistant IA pour AEM Forms continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices précoces.
 
 ## Bonnes pratiques pour des résultats optimaux
 
-Pour tirer le meilleur parti de l’assistant d’IA, tenez compte des conseils suivants :
+Pour tirer le meilleur parti de l’assistant IA, tenez compte des conseils suivants :
 
-### Démarrer Simple, Créer Progressivement
+### Démarrez simplement, progressez pas à pas.
 
-Commencez par des commandes plus petites et spécifiques (par exemple, « Ajouter une entrée de texte pour « Prénom ») plutôt que par des requêtes à plusieurs étapes trop complexes. Cette approche permet d’assurer la précision et facilite la résolution des problèmes si quelque chose ne fonctionne pas comme prévu.
+Commencez par des commandes simples et spécifiques (par exemple, « Ajouter une entrée de texte pour &quot;Prénom&quot; ») plutôt que par des requêtes en plusieurs étapes trop complexes. Cette approche permet d’assurer la précision et facilite la résolution des problèmes si quelque chose ne fonctionne pas comme prévu.
 
-**Exemple de démarrage simple :**
+**Exemple pour démarrer simplement :**
 
 ```
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**Ensuite, Créer Incrémentiellement :**
+**Ensuite, progressez pas à pas :**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
 ```
 
-### Utiliser la terminologie AEM Forms
+### Terminologie de l’API AEM Forms
 
-Utilisez des termes tels que « panneau », « champ de saisie de texte », « groupe de cases à cocher », « action d’envoi », « règle », etc., pour une meilleure compréhension par l’assistant. Cela permet de s’assurer que l’IA interprète correctement vos requêtes dans le contexte d’AEM Forms.
+Utilisez des termes tels que « panneau », « champ de saisie de texte », « groupe de cases à cocher », « action d’envoi », « règle », etc., pour une meilleure compréhension par l’assistant. Ainsi, l’IA interprète correctement vos requêtes dans le contexte d’AEM Forms.
 
-**Termes privilégiés :**
+**Termes privilégiés :**
 
-- « champ de saisie de texte » au lieu de « zone de texte »
-- « checkbox group » au lieu de « checkboxes »
-- « liste déroulante » au lieu de « sélectionner la liste »
-- « panel » au lieu de « section » ou « conteneur »
-- « action envoyer » au lieu de « envoi du formulaire »
-- « règle » au lieu de « logique » ou « condition »
+- « champ de saisie de texte » au lieu de « zone de texte »
+- « groupe de cases à cocher » au lieu de « cases à cocher »
+- « liste déroulante » au lieu de « liste de sélection »
+- « panneau » au lieu de « section » ou « conteneur »
+- « action envoyer » au lieu de « envoi du formulaire »
+- « règle » au lieu de « logique » ou « condition »
 
 ### Référencez les champs clairement
 
-Lors de la configuration de champs existants, utilisez la notation @fieldName (par exemple, « Rendre le @firstName obligatoire »). Cela permet à l’IA d’identifier exactement le champ auquel vous faites référence, en particulier dans les formulaires complexes comportant de nombreux champs.
+Lors de la configuration de champs existants, utilisez la notation @fieldName (par exemple, « Rendre le @firstName obligatoire »). Cela permet à l’IA d’identifier exactement le champ auquel vous faites référence, en particulier dans les formulaires complexes comportant de nombreux champs.
 
 **Exemples :**
 
@@ -69,124 +68,124 @@ Lors de la configuration de champs existants, utilisez la notation @fieldName (p
 - `Show @spouseInfo panel when @maritalStatus equals "Married"`
 - `Set @country default value to "United States"`
 
-### Consulter toujours les plans
+### Consultez toujours les plans
 
-Examinez toujours attentivement les plans pour les modifications proposées par l’assistant dans l’éditeur universel avant de cliquer sur « Appliquer ». L’IA vous montrera ce qu’elle prévoit de faire, prenez le temps de vérifier que cela correspond à vos attentes.
+Examinez toujours attentivement les plans pour les modifications proposées par l’assistant dans l’éditeur universel avant de cliquer sur « Appliquer ». L’IA vous indique ce qu’elle prévoit de faire. Prenez le temps de vérifier que cela correspond à vos attentes.
 
-### Validation manuelle
+### Validez manuellement
 
 Une fois que l’assistant a apporté des modifications, prévisualisez et testez toujours votre formulaire pour vous assurer qu’il se comporte et s’affiche comme prévu. L’IA est un outil puissant, mais la validation finale est essentielle pour garantir la qualité.
 
-**Liste de contrôle de validation :**
+**Liste de contrôle de validation :**
 
 - Tester la fonctionnalité de formulaire en mode d’aperçu
 - Vérifier que la logique conditionnelle fonctionne correctement
-- Vérifier la réactivité mobile
+- Vérifier la réactivité sur mobile
 - Tester un envoi de formulaire
-- Validation des fonctionnalités d’accessibilité
+- Valider les fonctionnalités d’accessibilité
 
 ### Itérer et affiner
 
-Si la première invite ne donne pas le résultat exact, essayez de reformuler ou de ventiler la requête en plus petites étapes. L’IA apprend du contexte, de sorte que fournir des détails plus spécifiques améliore souvent les résultats.
+Si le premier prompt ne donne pas le résultat exact, essayez de reformuler ou de ventiler la requête en plus petites étapes. L’IA apprend du contexte. Ainsi, le fait de fournir des détails plus spécifiques améliore souvent les résultats.
 
-**Exemple d’itération :**
+**Exemple d’itération :**
 
-1. Première tentative : « Rendre le formulaire compatible avec les appareils mobiles »
-2. Affiné : « Optimisez la disposition des formulaires pour les écrans mobiles de moins de 768 pixels avec une disposition à une seule colonne et des cibles tactiles plus grandes »
+1. Première tentative : « Rends le formulaire compatible avec les appareils mobiles. »
+2. Plus précis : « Optimise la mise en page des formulaires pour les écrans mobiles de moins de 768 pixels avec une mise en page à une seule colonne et des cibles tactiles plus grandes.»
 
-### Fournir un retour d’informations
+### Fournir un retour d’expérience
 
-Utilisez le mécanisme de retour d&#39;informations intégré pour aider l&#39;assistant à apprendre et à s&#39;améliorer. Vos commentaires contribuent à rendre l’IA meilleure pour tous.
+Utilisez le mécanisme de retour d’expérience intégré pour aider l’assistant à apprendre et à s’améliorer. Vos commentaires contribuent à rendre l’IA meilleure pour tous.
 
 
 ## Exemples de développement incrémentiel
 
-Ces exemples montrent comment créer des formulaires pas à pas, en commençant par simple et en ajoutant progressivement de la complexité :
+Ces exemples montrent comment créer des formulaires pas à pas, en commençant par simplement et en procédant pas à pas :
 
-### Exemple 1 : création incrémentielle d’un formulaire de contact
+### Exemple 1 : création pas à pas d’un formulaire de contact
 
-**Étape 1 - Démarrage simple :**
+**Étape 1 : démarrer simplement :**
 
 ```
 Create a basic contact form with name, email, and message fields
 ```
 
-**Étape 2 - Ajouter la validation :**
+**Étape 2 : ajouter la validation :**
 
 ```
 Make @name and @email mandatory fields with appropriate validation
 ```
 
-**Étape 3 - Améliorer l’expérience utilisateur :**
+**Étape 3 : améliorer l’expérience d’utilisation :**
 
 ```
 Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
 ```
 
-**Étape 4 - Ajout de fonctionnalités avancées :**
+**Étape 4 : ajouter des fonctionnalités avancées :**
 
 ```
 Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
 ```
 
-**Étape 5 - Implémenter Une Logique Conditionnelle :**
+**Étape 5 : implémenter une logique conditionnelle :**
 
 ```
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
 ```
 
-### Exemple 2 : création incrémentielle d’un formulaire d’enregistrement
+### Exemple 2 : création pas à pas d’un formulaire d’enregistrement
 
-**Étape 1 - Structure de base :**
+**Étape 1 : structure de base :**
 
 ```
 Create a user registration form with personal information panel
 ```
 
-**Étape 2 - Ajouter des champs principaux :**
+**Étape 2 : ajouter des champs principaux :**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
 ```
 
-**Étape 3 - Ajouter la validation :**
+**Étape 3 : ajouter la validation :**
 
 ```
 Make @firstName, @lastName, and @email mandatory with real-time validation
 ```
 
-**Étape 4 - Ajout des informations de compte :**
+**Étape 4 : ajouter des informations de compte :**
 
 ```
 Create a new panel "Account Information" with @username and @password fields
 ```
 
-**Étape 5 - Amélioration de la sécurité :**
+**Étape 5 : améliorer la sécurité :**
 
 ```
 Add password confirmation field @confirmPassword with validation to match @password
 ```
 
-**Étape 6 - Ajouter des préférences :**
+**Étape 6 : ajouter des préférences :**
 
 ```
 Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
 ```
 
-Cette approche incrémentielle vous permet d’effectuer les opérations suivantes :
+Cette approche pas à pas vous permet d’effectuer les opérations suivantes :
 
 - Intercepter les problèmes avant qu’ils ne se multiplient
 - Tester minutieusement chaque fonctionnalité
-- Effectuer des ajustements en fonction des commentaires de l’utilisateur
+- Effectuer des ajustements en fonction des commentaires de la personne
 - Mieux contrôler le processus de développement
 
-## Démarrer un nouveau Forms
+## Démarrage de nouveaux formulaires
 
-**Utilisation :** au début d’un projet de formulaire. Cette invite aide l’IA à comprendre vos besoins et à créer la structure de base.
+**Opportunité d’utilisation :** au début d’un projet de formulaire. Ce prompt aide l’IA à comprendre vos besoins et à créer la structure de base.
 
-**Utilisation :** Commencez par la structure de base et les exigences principales. Spécifiez le type de formulaire, l’audience cible et l’objectif principal. Ajoutez de la complexité dans les invites suivantes.
+**Méthode d’utilisation :** commencer par la structure de base et les exigences principales. Spécifiez le type de formulaire, l’audience cible et l’objectif principal. Ajoutez de la complexité dans les prompts suivants.
 
-**Exemple d’invite - Démarrage simple :**
+**Exemple de prompt : démarrer simplement :**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**Ensuite, Créer Incrémentiellement :**
+**Ensuite, progressez pas à pas :**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -213,7 +212,7 @@ Add employment information panel with @employer, @jobTitle, and @annualIncome fi
 Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
 ```
 
-**Autres invites de démarrage simples :**
+**Autres prompts de démarrage simples :**
 
 ```
 Create a basic **event registration form** with name, email, and event selection fields
@@ -227,13 +226,13 @@ Build a simple **contact form** with name, email, and message fields
 Design a basic **feedback survey** with rating scale and comments field
 ```
 
-## Structure et disposition du formulaire
+## Structure et mise en page de formulaire
 
-**Utilisation :** lorsque vous devez organiser des formulaires complexes ou améliorer l’expérience utilisateur grâce à une meilleure conception de la disposition.
+**Opportunité d’utilisation :** lorsque vous devez organiser des formulaires complexes ou améliorer l’expérience d’utilisation grâce à une meilleure conception de la mise en page.
 
-**Utilisation :** Concentrez-vous sur le parcours utilisateur et le regroupement logique des informations. Spécifiez les préférences de disposition et les modèles de navigation.
+**Méthode d’utilisation :** se concentrer sur le parcours d’utilisation et le regroupement logique des informations. Spécifiez les préférences de mise en page et les modèles de navigation.
 
-**Exemple d’invite - Structure de formulaire à plusieurs étapes :**
+**Exemple de prompt : structure de formulaire à plusieurs étapes :**
 
 ```
 Convert this single-page form into a **3-step wizard** with:
@@ -258,7 +257,7 @@ Convert this single-page form into a **3-step wizard** with:
 Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
 ```
 
-**Invites d’optimisation de la mise en page :**
+**Prompts d’optimisation de la mise en page :**
 
 ```
 Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
@@ -274,11 +273,11 @@ Create a **vertical tabbed interface** for this form with tabs for: Basic Info, 
 
 ## Gestion et validation des champs
 
-**Utilisation :** lorsque vous devez ajouter, modifier ou améliorer des champs de formulaire avec des règles et des comportements de validation spécifiques.
+**Opportunité d’utilisation :** lorsque vous devez ajouter, modifier ou améliorer des champs de formulaire avec des règles et des comportements de validation spécifiques.
 
-**Utilisation :** être précis sur les types de champs, les exigences de validation et les attentes en matière d’expérience utilisateur. Référencez des champs existants à l’aide de la syntaxe @fieldName.
+**Méthode d’utilisation :** travailler précisément sur les types de champs, les exigences de validation et les attentes en matière d’expérience d’utilisation. Référencez des champs existants à l’aide de la syntaxe @fieldName.
 
-**Exemple d’invite - Amélioration du champ :**
+**Exemple de prompt : amélioration du champ :**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -305,7 +304,7 @@ Enhance the form fields with these specific requirements:
 - Show upload progress and file names after upload
 ```
 
-**Invites Spécifiques Au Champ :**
+**Prompts spécifiques au champ :**
 
 ```
 Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
@@ -321,11 +320,11 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 ## Logique et règles conditionnelles
 
-**Utilisation :** lorsque vous avez besoin d’un comportement de formulaire dynamique basé sur des entrées utilisateur ou des règles métier.
+**Opportunité d’utilisation :** lorsque vous avez besoin d’un comportement de formulaire dynamique basé sur des entrées d’utilisation ou des règles métier.
 
-**Utilisation :** définissez clairement les conditions et les actions qui en résultent. Utilisez des références de champ spécifiques et des opérateurs logiques.
+**Méthode d’utilisation :** définir clairement les conditions et les actions qui en résultent. Utilisez des références de champ spécifiques et des opérateurs logiques.
 
-**Exemple d’invite - Logique conditionnelle complexe :**
+**Exemple de prompt : logique conditionnelle complexe :**
 
 ```
 Implement these conditional rules for the application form:
@@ -357,7 +356,7 @@ Implement these conditional rules for the application form:
   - Add accessibility preferences section
 ```
 
-**Invites Spécifiques Aux Règles :**
+**Prompts spécifiques aux règles :**
 
 ```
 Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
@@ -373,11 +372,11 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 ## Intégration et envoi de données
 
-**Utilisation :** lorsque vous devez connecter des formulaires à des systèmes principaux, des bases de données ou des services externes.
+**Opportunité d’utilisation :** lorsque vous devez connecter des formulaires à des systèmes principaux, des bases de données ou des services externes.
 
-**Utilisation :** commencez par la configuration de base de l’envoi, puis ajoutez des intégrations supplémentaires de manière incrémentielle. Spécifiez le type d’intégration, les exigences en matière de format de données et les préférences de gestion des erreurs.
+**Méthode d’utilisation :** commencer par la configuration de base de l’envoi, puis ajouter des intégrations supplémentaires de manière incrémentielle. Spécifiez le type d’intégration, les exigences en matière de format de données et les préférences de gestion des erreurs.
 
-**Exemple d’invite - Commencer par l’envoi de base :**
+**Exemple de prompt : commencer par l’envoi de base :**
 
 ```
 Configure basic form submission for @applicationForm:
@@ -389,7 +388,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**Ajoutez Ensuite Des Actions Secondaire De Manière Incrémentielle :**
+**Ajoutez ensuite des actions secondaire pas à pas :**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -399,7 +398,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**Exemple d’invite - Envoi multicanal avancé :**
+**Exemple de prompt : envoi multicanal avancé :**
 
 ```
 Configure form submission with multiple data destinations:
@@ -428,7 +427,7 @@ Configure form submission with multiple data destinations:
 - Display estimated processing timeline
 ```
 
-**Invites Spécifiques À L’Intégration :**
+**Prompts spécifiques à l’Intégration :**
 
 ```
 Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
@@ -442,13 +441,13 @@ Set up **workflow trigger** when form is submitted. Pass all form data and trigg
 Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
 ```
 
-## Importation et conversion de conception
+## Import et conversion de conception
 
-**Utilisation :** lorsque vous disposez de conceptions de formulaire existantes (PDF, Figma, images) qui doivent être converties en formulaires AEM fonctionnels.
+**Opportunité d’utilisation :** lorsque vous disposez de conceptions de formulaire existantes (PDF, Figma, images) qui doivent être converties en formulaires AEM fonctionnels.
 
-**Utilisation :** fournissez un contexte clair sur la conception de la source et indiquez les modifications ou améliorations nécessaires.
+**Méthode d’utilisation :** fournir un contexte clair sur la conception de la source et indiquer les modifications ou améliorations nécessaires.
 
-**Exemple d’invite - Conversion de formulaire PDF :**
+**Exemple de prompt : conversion de formulaire PDF :**
 
 ```
 Convert this uploaded **PDF application form** into a functional AEM adaptive form:
@@ -480,7 +479,7 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 Preserve all original field labels and help text, but improve the user experience with modern form interactions.
 ```
 
-**Invites d’importation de conception :**
+**Prompts d’import de conception :**
 
 ```
 Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
@@ -496,11 +495,11 @@ Convert this **existing HTML form** to AEM adaptive form format. Preserve all fu
 
 ## Optimisation et réactivité pour mobiles
 
-**Quand utiliser :** quand les formulaires doivent fonctionner de manière transparente sur tous les types d’appareils et toutes les tailles d’écran.
+**Opportunité d’utilisation :** quand les formulaires doivent fonctionner de manière transparente sur tous les types d’appareils et toutes les tailles d’écran.
 
-**Utilisation :** commencez par une optimisation mobile de base, puis améliorez-la à l’aide de fonctionnalités avancées. Mettez l’accent sur l’approche mobile d’abord et spécifiez progressivement les comportements de point d’arrêt.
+**Méthode d’utilisation :** commencer par une optimisation mobile de base, puis l’améliorer à l’aide de fonctionnalités avancées. Mettez l’accent sur l’approche mobile d’abord et spécifiez pas à pas les comportements des points d’arrêt.
 
-**Exemple d’invite - Commencer par l’optimisation mobile de base :**
+**Exemple de prompt : commencer par l’optimisation mobile de base :**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -511,7 +510,7 @@ Make @contactForm mobile-friendly with:
 - Responsive design that works on phones and tablets
 ```
 
-**Ajoutez Ensuite Des Fonctionnalités Mobiles Avancées :**
+**Ajoutez ensuite des fonctionnalités mobiles avancées :**
 
 ```
 Enhance @contactForm mobile experience with:
@@ -520,7 +519,7 @@ Enhance @contactForm mobile experience with:
 - Swipe gestures for multi-step navigation
 ```
 
-**Exemple d’invite - Optimisation complète de la priorité des appareils mobiles :**
+**Exemple de prompt : optimisation complète de la priorité des appareils mobiles :**
 
 ```
 Optimize this form for **mobile-first responsive design**:
@@ -557,7 +556,7 @@ Optimize this form for **mobile-first responsive design**:
 - Progressive enhancement approach
 ```
 
-**Invites simples spécifiques à Mobile :**
+**Prompt simples spécifiques aux mobiles :**
 
 ```
 Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
@@ -573,11 +572,11 @@ Enable offline functionality for @applicationForm with local data saving
 
 ## Accessibilité et conformité
 
-**Utilisation :** lorsque les formulaires doivent respecter les normes d’accessibilité (WCAG 2.1 AA) ou des exigences de conformité.
+**Opportunité d’utilisation :** lorsque les formulaires doivent respecter les normes d’accessibilité (WCAG 2.1 AA) ou des exigences de conformité.
 
-**Utilisation :** spécifiez les exigences d’accessibilité et les normes de conformité qui doivent être respectées.
+**Méthode d’utilisation :** spécifier les exigences d’accessibilité et les normes de conformité qui doivent être respectées.
 
-**Exemple d’invite - Implémentation de l’accessibilité :**
+**Exemple de prompt : implémentation de l’accessibilité :**
 
 ```
 Make this form **WCAG 2.1 AA compliant** with these accessibility features:
@@ -619,7 +618,7 @@ Make this form **WCAG 2.1 AA compliant** with these accessibility features:
 - Validate HTML for semantic correctness
 ```
 
-**Invites Spécifiques À La Conformité :**
+**Prompts spécifiques à la conformité :**
 
 ```
 Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
@@ -633,13 +632,13 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## Assurance de test et de qualité
+## Tests et assurance qualité
 
-**Utilisation :** lorsque vous devez valider les fonctionnalités de formulaire, l’expérience utilisateur et les performances techniques.
+**Opportunité d’utilisation :** lorsque vous devez valider les fonctionnalités de formulaire, l’expérience d’utilisation et les performances techniques.
 
-**Utilisation :** spécifiez les scénarios de test, les cas Edge et les critères de qualité qui doivent être vérifiés.
+**Méthode d’utilisation :** spécifier les scénarios de test, les cas extrêmes et les critères de qualité qui doivent être vérifiés.
 
-**Exemple d’invite - Test complet du formulaire :**
+**Exemple de prompt : test complet du formulaire :**
 
 ```
 Create a **comprehensive testing plan** for this application form:
@@ -687,7 +686,7 @@ Create a **comprehensive testing plan** for this application form:
 - Check print functionality across browsers
 ```
 
-**Invites Spécifiques Au Test :**
+**Prompts spécifique au test :**
 
 ```
 Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
@@ -703,11 +702,11 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 ## Fonctionnalités et intégrations avancées
 
-**Utilisation :** lorsque vous avez besoin de fonctionnalités de formulaire sophistiquées telles que l’assistance d’IA, des workflows avancés ou des intégrations complexes.
+**Opportunité d’utilisation :** lorsque vous avez besoin de fonctionnalités de formulaire sophistiquées telles que l’assistance de l’IA, des workflows avancés ou des intégrations complexes.
 
-**Utilisation :** définissez clairement les exigences en matière de fonctionnalités avancées et d’intégration.
+**Méthode d’utilisation :** définir clairement les exigences en matière de fonctionnalités avancées et d’intégration.
 
-**Exemple d’invite - Formulaire optimisé par l’IA :**
+**Exemple de prompt : formulaire optimisé par l’IA :**
 
 ```
 Add **AI-powered features** to enhance this application form:
@@ -749,7 +748,7 @@ Add **AI-powered features** to enhance this application form:
 - Extract structured data from unstructured input
 ```
 
-**Invites d’intégration avancées :**
+**Prompts d’intégration avancée :**
 
 ```
 Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
@@ -763,13 +762,13 @@ Connect to **payment gateway** for secure transaction processing with PCI compli
 Implement **blockchain verification** for document authenticity, immutable audit trails, and decentralized identity verification.
 ```
 
-## Dépannage et optimisation
+## Résolution des incidents et optimisation
 
-**Utilisation :** lorsque les formulaires présentent des problèmes de performances, des problèmes d’expérience utilisateur ou des difficultés techniques.
+**Opportunité d’utilisation :** lorsque les formulaires présentent des problèmes de performances, des problèmes d’expérience d’utilisation ou des difficultés techniques.
 
-**Utilisation :** Décrivez clairement le problème et le résultat souhaité.
+**Méthode d’utilisation :** Décrire clairement le problème et le résultat souhaité.
 
-**Exemple d’invite - Optimisation des performances :**
+**Exemple de prompt : optimisation des performances :**
 
 ```
 Optimize this form for **better performance and user experience**:
@@ -809,7 +808,7 @@ Optimize this form for **better performance and user experience**:
 - A/B test improvements with real users
 ```
 
-**Résolution des problèmes liés aux invites :**
+**Résolution des incidents liés aux prompts :**
 
 ```
 **Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
@@ -823,19 +822,19 @@ Optimize this form for **better performance and user experience**:
 **Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
 ```
 
-## Bonnes Pratiques Spécifiques À Un Environnement
+## Bonnes pratiques en matière d’environnement
 
-### Interface utilisateur de gestion de Forms
+### Interface d’utilisation de gestion des formulaires
 
-**Utilisation :** pour la création et la gestion de formulaires de haut niveau.
+**Opportunité d’utilisation :** pour la création et la gestion de formulaires de haut niveau.
 
 ```
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### Éditeur de Forms adaptatif
+### Éditeur de formulaires adaptatifs
 
-**Utilisation :** pour une configuration de formulaire détaillée et la création de règles complexes.
+**Opportunité d’utilisation :** pour une configuration de formulaire détaillée et la création de règles complexes.
 
 ```
 In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
@@ -843,7 +842,7 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### Éditeur universel
 
-**Utilisation :** pour les formulaires Edge Delivery Services avec modification visuelle.
+**Opportunité d’utilisation :** pour les formulaires Edge Delivery Services avec modification visuelle.
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
@@ -851,93 +850,93 @@ In Universal Editor, create a **responsive contact form** for the company websit
 
 ## Guide rapide de référence des commandes
 
-| Commande | Meilleur cas d’utilisation | Exemple |
+| Commande | Meilleurs cas d’utilisation | Exemple |
 |---------|---------------|---------|
-| `/create-form` | Démarrer de nouveaux formulaires | `/create-form employee onboarding with personal info and benefits selection` |
-| `/add-form` | Ajout de formulaires à des pages | `/add-form newsletter signup with email and preferences` |
+| `/create-form` | Démarrage de nouveaux formulaires | `/create-form employee onboarding with personal info and benefits selection` |
+| `/add-form` | Ajout de formulaires aux pages | `/add-form newsletter signup with email and preferences` |
 | `/update-layout` | Modification de la structure d’un formulaire | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
 | `/update-field` | Modification des propriétés des champs | `/update-field @email to be mandatory with real-time validation` |
 | `/create-rule` | Ajout d’un comportement dynamique | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
 | `/create-panel` | Organisation des sections de formulaire | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | Conversion de conceptions | `/add-panel from uploaded form image with field recognition` |
-| `/configure-submit` | Configuration de la gestion des données | `/configure-submit to CRM and send confirmation email` |
+| `/configure-submit` | Configuration de la gestion de données | `/configure-submit to CRM and send confirmation email` |
 | `/help` | Obtention d’assistance | `/help how to implement multi-step validation?` |
 
 ## Référence des propriétés de composant prises en charge
 
 ### Propriétés universelles (tous les composants)
 
-- **Type** : type de composant (texte, e-mail, numéro, téléphone, date, case à cocher, radio, liste déroulante, fichier, etc.).
-- **Name** : identifiant du champ pour l&#39;envoi du formulaire
-- **Libellé** : texte d’affichage du champ.
-- **Description** : texte d’aide pour le champ
-- **Visible** : booléen pour la visibilité initiale
-- **Obligatoire** : valeur booléenne pour les champs obligatoires.
+- **Type** : type de composant (texte, e-mail, numéro, téléphone, date, case à cocher, radio, liste déroulante, fichier, etc.)
+- **Nom** : identifiant du champ pour l’envoi du formulaire
+- **Libellé** : texte d’affichage du champ
+- **Description** : texte d’aide pour le champ
+- **Visible** : booléen pour la visibilité initiale
+- **Obligatoire** : valeur booléenne pour les champs obligatoires
 
-### Propriétés du champ de saisie
+### Propriétés des champs d’entrée
 
-- **Value** : valeur par défaut/initiale
-- **Espace réservé** : texte d’indice pour les champs de saisie
-- **Min** : valeur minimale (pour les nombres/dates)
-- **Max** : valeur maximale (pour les nombres/dates)
+- **Valeur** : valeur par défaut/initiale
+- **Espace réservé** : texte d’indice pour les champs de saisie
+- **Min.** : valeur minimale (pour les nombres/dates)
+- **Max.** : valeur maximale (pour les nombres/dates)
 
 ### Propriétés de chargement de fichier
 
-- **Accepter** : types de fichiers (.pdf, .doc, .docx, .jpg, .png, etc.)
-- **Multiple** : valeur booléenne pour la sélection de plusieurs fichiers
+- **Accepter** : types de fichiers (.pdf, .doc, .docx, .jpg, .png, etc.)
+- **Multiple** : valeur booléenne pour la sélection de plusieurs fichiers
 
 ### Propriétés du contrôle de sélection
 
-- **Options** : choix des listes déroulantes (liste séparée par des virgules)
-- **Coché** : sélection par défaut des cases à cocher/cases d’option
+- **Options** : choix des listes déroulantes (liste séparée par des virgules)
+- **Coché** : sélection par défaut des cases à cocher/cases d’option
 
 ### Propriétés du conteneur
 
-- **Fieldset** : regroupement des champs associés
-- **Répétable** : booléen pour les sections répétables
+- **Fieldset** : regroupement des champs associés
+- **Répétable** : valeur booléenne pour les sections répétables
 
 ### Propriétés avancées
 
-- **Expression visible** : formule de visibilité conditionnelle (=formule)
-- **Expression de valeur** : formule pour les valeurs calculées (=formule)
+- **Expression visible** : formule de visibilité conditionnelle (=formule)
+- **Expression de valeur** : formule pour les valeurs calculées (=formule)
 
 ## Résumé des bonnes pratiques
 
 ### Directives techniques
 
-- **Utiliser uniquement les propriétés prises en charge** de la spécification officielle des composants AEM Forms
-- **Respectez la syntaxe correcte** pour les références de champ (@fieldName) et les expressions (=formule)
-- **Test incrémentiel** après chaque modification pour détecter les problèmes au plus tôt.
-- **Planifiez l’accessibilité** dès le début, et non après coup
-- **Tenir compte des utilisateurs mobiles** dans chaque décision de conception
+- **Utiliser uniquement les propriétés prises en charge** de la spécification officielle des composants AEM Forms
+- **Respecter la syntaxe correcte** pour les références de champ (@fieldName) et les expressions (=formule)
+- **Tester pas à pas** après chaque modification pour détecter les problèmes au plus tôt.
+- **Planifier l’accessibilité** dès le début, et non après coup
+- **Tenir compte des utilisateurs et utilisatrices mobiles** dans chaque décision de conception
 - **Documenter des règles complexes** pour la maintenance future et la collaboration d’équipe
 
 ### Approche stratégique
 
-- **Commencez par les besoins des utilisateurs** - Concentrez-vous sur ce que les utilisateurs doivent accomplir, et pas seulement sur les fonctionnalités techniques.
-- **Conception pour achèvement** - Réduisez la friction et la charge cognitive dans la conception de formulaire.
-- **Planifier le flux de données** précocement - réfléchissez à la manière dont les données seront traitées, stockées et utilisées
-- **Créer à grande échelle** : concevez des formulaires capables de gérer la croissance attendue du volume d’utilisateurs et de données
-- **Implémenter une amélioration progressive** - Assurez-vous que les fonctionnalités de base fonctionnent, puis ajoutez des fonctionnalités avancées
+- **Commencer par les besoins des personnes** : concentrez-vous sur ce que les personnes doivent accomplir, et pas seulement sur les fonctionnalités techniques.
+- **Concevoir pour la finalité** : réduisez la friction et la charge cognitive dans la conception de formulaire.
+- **Planifier le flux de données** précocement : réfléchissez à la manière dont les données seront traitées, stockées et utilisées.
+- **Créer à grande échelle** : concevez des formulaires capables de gérer la croissance attendue du volume de personnes et de données.
+- **Implémenter une amélioration progressive** : assurez-vous que les fonctionnalités de base fonctionnent, puis ajoutez des fonctionnalités avancées.
 
 ### Pièges courants à éviter
 
-- **Requêtes initiales trop complexes** - Divisez les tâches volumineuses en étapes plus petites et plus faciles à gérer
-- **Utilisation de propriétés non prises en charge** non incluses dans la spécification AEM Forms
+- **Requêtes initiales trop complexes** : divisez les tâches volumineuses en étapes plus petites et plus faciles à gérer.
+- **Utilisation de propriétés non prises en charge** non incluses dans la spécification AEM Forms
 - **Expérience mobile ignorée** jusque tard dans le processus de développement
-- **Test utilisateur ignoré** avec des scénarios réels et des cas de périphérie
-- **En supposant que l’IA comprenne le contexte** sans fournir d’instructions claires et spécifiques
-- **Oublier les exigences d’accessibilité** de conformité
+- **Test d’utilisation ignoré** avec des scénarios réels et des cas extrêmes
+- **Supposition selon laquelle que l’IA comprend le contexte** sans fournir d’instructions claires et spécifiques
+- **Oubli des exigences d’accessibilité** et de conformité
 - **Pas de validation des modifications** avant de passer à l’étape suivante
 
-### Approche de la qualité dans Assurance
+### Approche de l’assurance qualité
 
-1. **Aperçu fréquent** - Vérifiez votre travail en mode aperçu après chaque modification importante
-2. **Test des cas de périphérie** - Essayez des entrées inhabituelles, du texte long, des caractères spéciaux.
-3. **Validation sur plusieurs appareils** - Test sur mobile, tablette et bureau
-4. **Vérifier l’accessibilité** - Vérifier la compatibilité entre le clavier et le lecteur d’écran
-5. **Test de performance** - Assurez-vous que les formulaires se chargent rapidement et répondent correctement
-6. **Test d’acceptation utilisateur** - Demandez à de vrais utilisateurs de tester le formulaire avant le déploiement
+1. **Aperçu fréquent** : vérifiez votre travail en mode aperçu après chaque modification importante.
+2. **Test des cas extrêmes** : essayez des entrées inhabituelles, du texte long, des caractères spéciaux.
+3. **Validation sur plusieurs appareils** : testez sur mobile, tablette et bureau.
+4. **Vérifier l’accessibilité** : vérifiez la compatibilité entre le clavier et le lecteur d’écran.
+5. **Test de performance** : assurez-vous que les formulaires se chargent rapidement et répondent correctement.
+6. **Test d’acceptation d’utilisation** : demandez à de vraies personnes de tester le formulaire avant le déploiement.
 
 
-*Cette bibliothèque d’invites est continuellement mise à jour en fonction des commentaires des utilisateurs et des nouvelles fonctionnalités de l’assistant d’IA. Pour consulter les derniers exemples et fonctionnalités, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr).*
+*Cette bibliothèque de prompts est continuellement mise à jour en fonction des commentaires des personnes et des nouvelles fonctionnalités de l’assistant IA. Pour consulter les derniers exemples et fonctionnalités, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr).*

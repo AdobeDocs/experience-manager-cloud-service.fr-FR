@@ -4,9 +4,9 @@ description: Utilisez le sélecteur de ressources pour rechercher, trouver et r�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -205,17 +205,17 @@ Le sélecteur de ressources vous permet d’afficher la ressource dans quatre vu
 
 ### Détails et métadonnées des ressources {#asset-details-and-metadata}
 
-La page Détails de la ressource fournit une vue d’ensemble complète d’une ressource spécifique, consolidant toutes les informations clés en un seul endroit. Il comprend un aperçu avec le nom, le format de fichier, le statut et une brève description, ainsi qu’un aperçu ou une miniature pour une identification visuelle facile. Elle inclut également les métadonnées d’une ressource telles que la date de création, l’auteur, la taille, le modèle de couleurs, etc. Ces attributs permettent d’effectuer une recherche, un filtrage et une classification efficaces d’une ressource. Le panneau des détails de la ressource est disponible dans les vues rail et modale du sélecteur de ressources. En mode rail, il est nécessaire d’activer et de configurer `onDrop` propriété pour renvoyer une ressource. Dans la vue modale, `handleSelection` propriété renvoie également une ressource. Voir [Propriétés du sélecteur de ressources](asset-selector-properties.md).
+La page Détails des ressources fournit une vue d’ensemble complète d’une ressource spécifique, consolidant toutes les informations clés en un seul endroit. Elle comprend un aperçu avec le nom, le format de fichier, le statut et une brève description, ainsi qu’un aperçu ou une miniature pour une identification visuelle facile. Elle inclut également les métadonnées d’une ressource telles que la date de création, l’auteur, la taille, le modèle de couleurs, etc. Ces attributs permettent d’effectuer une recherche, un filtrage et une classification efficaces d’une ressource. Le panneau des détails de la ressource est disponible dans les vues rail et modale du sélecteur de ressources. En mode rail, il est nécessaire d’activer et de configurer la propriété `onDrop` pour renvoyer une ressource. Dans la vue modale, la propriété `handleSelection` renvoie également une ressource. Voir [Propriétés du sélecteur de ressources](asset-selector-properties.md).
 
-Pour afficher les détails d’une ressource et de métadonnées, procédez comme suit :
+Pour afficher les détails d’une ressource et de métadonnées, procédez comme suit :
 
 1. Ouvrez le Sélecteur de ressources MFE et accédez à une ressource.
-1. Pointez sur la ressource, puis cliquez sur ![icône d’informations](/help/assets/assets/info-icon-solid-black.svg).
+1. Pointez sur la ressource, puis cliquez sur l’![icône d’informations](/help/assets/assets/info-icon-solid-black.svg).
 1. Accédez à l’onglet **[!UICONTROL Infos]** pour afficher les détails de la ressource. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
 Pour personnaliser le panneau d’affichage des détails d’une ressource, consultez [Personnaliser les informations en mode modal](asset-selector-customization.md#customize-info-in-modal-view).
 
-![Détails de la ressource](assets/asset-details.png)
+![Détails des ressources](assets/asset-details.png)
 
 <!--
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -276,17 +276,17 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemples du sélecteur de ressources – Graphique"><br/>
-        <a href="asset-selector-properties.md">Propriétés du sélecteur de ressources</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Exemples du sélecteur de ressources - Graphique"><br/>
+<a href="asset-selector-properties.md">Propriétés du sélecteur de ressources</a>
         <p>
-        <em>Utilisez les propriétés de manière pratique. </em>
+        <em>Découvrez comment utiliser les propriétés de manière pratique. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Propriétés du sélecteur de ressources – Graphique"><br/>
- <a href="asset-selector-examples.md">Exemples du sélecteur de ressources</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Propriétés du sélecteur de ressources - Graphique"><br/>
+<a href="asset-selector-examples.md">Exemples du sélecteur de ressources</a>
         <p>
         <em>Découvrez les principes de base de la personnalisation de composants du sélecteur de ressources, tels que les filtres, la sélection de ressources, les ressources expirées, etc. </em>
         </p>
