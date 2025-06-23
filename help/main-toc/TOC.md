@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
 source-wordcount: '6281'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -341,11 +341,11 @@ ht-degree: 97%
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Outils de refactorisation du code {#refactoring-tools}
-      + [Prise en main des outils de refactorisation](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
-      + [Présentation des outils de refactorisation](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
+      + [Commencer avec les outils de refactorisation](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [Vue d’ensemble des outils de refactorisation](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Expérience unifiée](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [Repository Modernizer (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [Outil de modernisation du référentiel (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [Index Converter](/help/journey-migration/refactoring-tools/index-converter.md)
       + [Migration des workflows de ressources](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [Convertisseur du Dispatcher AEM](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -448,7 +448,7 @@ ht-degree: 97%
          + [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Ressources dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Fragments de contenu avec Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [Extension Des Références Externes AJO De Fragments De Contenu](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [Extension des références externes AJO de fragments de contenu](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [Raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Création de site {#site-creation}
          + [Créer un site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -542,7 +542,7 @@ ht-degree: 97%
       + [Prévisualiser les ressources 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balises intelligentes pour les vidéos](/help/assets/smart-tags-for-videos.md)
-      + [Organisation des ressources](/help/assets/organize-assets.md)
+      + [Comment organiser des ressources](/help/assets/organize-assets.md)
       + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
@@ -1003,14 +1003,14 @@ ht-degree: 97%
          + [Options de mise en cache](/help/commerce-cloud/configuring/caching.md)
          + [En-têtes HTTP personnalisés](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Configuration du panier et du Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [Effacer le cache du composant et du GraphQL](/help/commerce-cloud/configuring/clear-cache.md)
+         + [Effacer le cache du composant et de GraphQL](/help/commerce-cloud/configuring/clear-cache.md)
       + Développement {#developing}
          + [Développement avec le SDK AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Style des composants CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personnalisation des composants CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Utilisation des sélecteurs de catalogue CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [Attributs personnalisés pour le carrousel de produit CIF](/help/commerce-cloud/customizing/product-carousel.md)
-         + [Métadonnées JSON](/help/commerce-cloud/customizing/json-ld.md)
+         + [Métadonnées JSON-LD](/help/commerce-cloud/customizing/json-ld.md)
    + [PWA Studio dans Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migration](/help/commerce-cloud/migration.md)
    + [Questions fréquentes](/help/commerce-cloud/faq.md)
@@ -1189,8 +1189,8 @@ ht-degree: 97%
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Générer des variations](/help/generative-ai/generate-variations.md)
    + [Assistant (version bêta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Assistant AI pour AEM Forms (Forms Experience Builder) (utilisateur(utilisatrice) précoce)](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Assistant AEM Forms AI - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Assistant AI pour AEM Forms (Créateur d’expériences de formulaires) (utilisateurs et utilisatrices précoces)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implémentation {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
