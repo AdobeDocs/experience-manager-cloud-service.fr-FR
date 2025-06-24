@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,9 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/implem
 1. Dans la boîte de dialogue **Gérer les jetons d’accès**, à droite d’un nom de jeton, cliquez sur ![Modifier l’icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 1. Dans la boîte de dialogue **Modifier le jeton d’accès**, mettez à jour la valeur **Nom du jeton** ou **Jeton d’accès**, ou les deux.
 
-   Si le **jeton d’accès** est en cours d’utilisation, une notification s’affiche pour vous avertir que tous les référentiels associés sont automatiquement revalidés après la mise à jour.
-
    ![Boîte de dialogue Modifier le jeton d’accès](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. Si le jeton est en cours d’utilisation, une notification vous avertit que tous les référentiels associés sont automatiquement revalidés.
+1. Si le **jeton d’accès** est en cours d’utilisation, une notification s’affiche pour vous avertir que tous les référentiels associés sont automatiquement revalidés après la mise à jour.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer les modifications.
 
