@@ -3,10 +3,10 @@ title: Intégration du sélecteur de ressources à l’API ouverte Dynamic Media
 description: Intégrer le sélecteur de ressources à diverses applications Adobe, non Adobe et tierces.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 9%
+source-wordcount: '982'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,7 @@ Toutes les ressources sélectionnées sont transportées par `handleSelection` f
 | Objet | JSON |
 |---|---|
 | Hôte | `assetJsonObj["repo:repositoryId"]` |
-| Racine de l’API | `/adobe/dynamicmedia/deliver` |
+| Racine de l’API | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | format | `.jpg` |
@@ -105,16 +105,17 @@ Toutes les ressources sélectionnées sont transportées par `handleSelection` f
 #### Spécification de l’API de diffusion des ressources approuvées {#approved-assets-delivery-api-specification}
 
 Format de l&#39;URL :
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Où,
 
 * L’hôte est `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * La racine de l’API est `"/adobe/assets"`
 * `<asset-id>` est l’identifiant de la ressource
+* `as` est la partie constante de la spécification d’API ouverte indiquant comment la ressource doit être appelée
 * `<seo-name>` est le nom d’une ressource
 * `<format>` est le format de sortie
-* `<image modification query parameters>` comme prise en charge par la spécification de l’API de diffusion des ressources approuvées
+* `<image modification query parameters>` pris en charge par la spécification de l’API de diffusion des ressources approuvées
 
 #### API de diffusion de rendu d’origine des ressources approuvées {#approved-assets-delivery-api}
 
@@ -168,7 +169,7 @@ Dans la capture d’écran ci-dessus, l’URL de diffusion du rendu original PDF
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Après l’intégration au sélecteur de ressources micro front-end d’Adobe, v
 
 ![Dynamic Media avec interface utilisateur des fonctionnalités OpenAPI](assets/polaris-ui.png)
 
-* **A** : [masquer/afficher le panneau](#hide-show-panel)
-* **B** : [Assets](#repository)
-* **C** : [Tri](#sorting)
-* **D** : [filtres](#filters)
-* **E** : [barre de recherche](#search-bar)
-* **F** : [tri par ordre croissant ou décroissant](#sorting)
+* **A** : masquer/afficher le panneau
+* **B** : ASSETS
+* **C** : tri
+* **D** : filtres
+* **E** : barre de recherche
+* **F** : tri par ordre croissant ou décroissant
 * **G** : Annuler la sélection
 * **H** : sélectionner une ou plusieurs ressources
 
