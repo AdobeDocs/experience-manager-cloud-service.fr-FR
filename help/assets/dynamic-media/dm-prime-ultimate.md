@@ -3,9 +3,9 @@ title: Dynamic Media Prime et Ultimate
 description: Découvrez Dynamic Media Prime et Ultimate, leurs avantages et les différences entre les deux.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '395'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager as a Cloud Service vous permet d’accéder aux offres 
 
 ## Prime Dynamic Media {#dynamic-media-prime}
 
-Dynamic Media Prime est un service d’activation de Experience Manager Assets qui offre des [fonctionnalités de base de Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) permettant aux entreprises d’intégrer AEM Assets à des applications Adobe ou autres qu’Adobe. Elle prend en charge la transformation (rotation, recadrage, retournement, taille, préférence webp, hauteur, largeur, qualité) et une diffusion optimisée.
+Dynamic Media Prime est un service d’activation de Experience Manager Assets qui offre des [fonctionnalités de base de Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) permettant aux entreprises d’intégrer AEM Assets à des applications Adobe ou autres qu’Adobe. Elle prend en charge la transformation (rotation, recadrage, retournement, hauteur, largeur, qualité) et une diffusion optimisée.
 
 Si vous avez besoin de fonctionnalités de base et avancées de Dynamic Media, ainsi que d’un accès à la solution Dynamic Media dans AEM as a Cloud Service, reportez-vous à la section [Dynamic Media Ultimate](#dynamic-media-ultimate).
 
@@ -40,7 +40,7 @@ Voici quelques-uns des autres principaux avantages de Dynamic Media Prime :
 
 Dynamic Media Ultimate est un service d’activation de Experience Manager Assets qui comprend [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) des fonctionnalités de base et avancées, ainsi que [la solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md). Il permet aux entreprises de générer et de diffuser plusieurs variantes de contenu riche en temps réel par le biais de son réseau mondial, évolutif et optimisé pour optimiser les performances.
 
-Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d’AEM Assets à des applications Adobe ou autres qu’Adobe, la transformation (rotation, recadrage, retournement, taille, preference webp, hauteur, largeur, qualité) et la diffusion optimisée, Dynamic Media Ultimate offre également les avantages suivants :
+Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d’AEM Assets à des applications Adobe ou autres qu’Adobe, la transformation (rotation, recadrage, inversion, hauteur, largeur, qualité) et la diffusion optimisée, Dynamic Media Ultimate offre également les avantages suivants :
 
 * [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) offre des fonctionnalités avancées telles que :
 
@@ -50,8 +50,8 @@ Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d
 * [Solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), qui comprend également les fonctionnalités clés suivantes :
 
    * [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Principes de base des modèles](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuration visuelle](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Principes de base des modèles](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuration visuelle](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prérequis {#pre-requisites-dm-ultimate}
 
