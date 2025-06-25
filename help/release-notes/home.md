@@ -4,10 +4,10 @@ description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 3d25a9279433e5bf6cc2b2e552ae6266a811c88b
-workflow-type: ht
-source-wordcount: '622'
-ht-degree: 100%
+source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 93%
 
 ---
 
@@ -67,12 +67,12 @@ Vous pouvez également [consulter les problèmes connus](/help/release-notes/mai
 
 Les fonctionnalités à venir sont généralement disponibles de l’une des deux façons suivantes :
 
-* Dans le cadre d’un programme destiné aux utilisateurs et utilisatrices précoces
+* Dans le cadre d’un programme à disponibilité limitée, Alpha ou Beta
 * Dans le cadre du canal de version préliminaire
 
 La mise à disposition d’une fonctionnalité à venir sera détaillée dans les [notes de mise à jour](#release-notes).
 
-* Si elle fait partie d’un programme destiné aux utilisateurs et utilisatrices précoces, vous devez généralement contacter Adobe pour l’activer, comme indiqué dans les notes de mise à jour.
+* S’il fait partie d’un programme Alpha, Beta ou à disponibilité limitée, vous devez généralement contacter Adobe pour l’activer, comme indiqué dans les notes de mise à jour.
 * Si elle fait partie du canal de version préliminaire, vous devez [activer le canal de version préliminaire dans un environnement de développement ou de sandbox](/help/release-notes/prerelease.md).
 
 ## Former vos utilisateurs et utilisatrices {#train-users}
