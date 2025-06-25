@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ En utilisant Edge Delivery Services, vous pouvez accomplir ce qui suit :
 
 >[!TIP]
 >
->**Vous souhaitez vous familiariser avec le sujet tout de suite ?**
+>**Vous voulez passer à la pratique tout de suite ?**
 >
->Si vous souhaitez vous familiariser avec le sujet immédiatement, vous pouvez démarrer votre propre projet Edge Delivery Services avec la création AEM en moins de 30 minutes en [consultez le tutoriel sur aem.live.](https://www.aem.live/developer/ue-tutorial)
+>Si vous voulez passer à la pratique tout de suite, vous pouvez démarrer votre propre projet Edge DeliveryServices avec la création AEM en moins de 30 minutes en [consultant le tutoriel sur aem.live.](https://www.aem.live/developer/ue-tutorial)
 
 ## Réaction agile aux besoins de l’entreprise {#agile-reaction}
 

@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ La prochaine version est prévue le 10 juillet 2025.
 
 ## Programme Private Beta {#private-beta-program}
 
-Participez au programme Beta privé de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme Private Beta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les opportunités de version bêta privée suivantes sont actuellement disponibles :
+Les possibilités de Private Beta suivantes sont actuellement disponibles :
 
 
 ### Environnement de test spécialisé {#specialized-test-environment}

@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -18,20 +18,20 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service propose régulièrement de nouvelles fonctionnalités. La liste des nouvelles fonctionnalités et des fonctionnalités à venir pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+Adobe Experience Manager as a Cloud Service propose régulièrement de nouvelles fonctionnalités. La liste des nouvelles fonctionnalités et de celles à venir pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-Les fonctionnalités à venir sont généralement disponibles de l’une des deux façons suivantes :
+Les fonctionnalités à venir sont généralement disponibles de l’une des deux façons suivantes :
 
 * Dans le cadre d’un programme destiné aux utilisateurs et utilisatrices précoces
 * Dans le cadre du canal de version préliminaire
 
-Ce document décrit comment activer le canal de version préliminaire. Le canal de version préliminaire permet d’accéder aux premières fonctionnalités qui seront introduites dans une prochaine version d’AEM. Vous avez ainsi la possibilité de valider les nouvelles fonctionnalités et de planifier leur adoption en vue de leur publication ultérieure. Consultez le document [Notes de mise à jour de Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) pour plus d’informations sur le planning des versions d’AEM.
+Ce document décrit comment activer le canal de version préliminaire. Le canal de version préliminaire permet d’accéder aux premières fonctionnalités qui seront introduites dans une prochaine version d’AEM. Vous avez ainsi la possibilité de valider les nouvelles fonctionnalités et de planifier leur adoption en vue de leur publication ultérieure. Pour plus d’informations sur le planning des versions d’AEM, consultez le document [Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md).
 
 ## Activer le canal de version préliminaire pour accéder aux fonctionnalités à venir et les essayer {#enable-prerelease}
 
-Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Le canal de version préliminaire ne peut pas être activé dans les environnements d’évaluation ou de production.
+Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Le canal de version préliminaire ne peut pas être activé dans les environnements d’évaluation et de production.
 
-Le canal de version préliminaire est accessible de deux manières différentes :
+Le canal de version préliminaire est accessible de deux manières :
 
 * [Environnements cloud](#cloud-environments)
 * [SDK local](#local-sdk)
@@ -44,9 +44,9 @@ Pour mettre à jour un environnement cloud afin d’utiliser le canal de version
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Accédez au programme dans lequel vous souhaitez activer le canal de version préliminaire.
+1. Accédez au programme pour lequel vous souhaitez activer le canal de version préliminaire.
 
-1. Sélectionnez l’environnement dans lequel vous souhaitez activer le canal de version préliminaire et accédez à sa configuration via **Programme** > **Environnement** > **Configuration de l’environnement**.
+1. Sélectionnez l’environnement dans lequel vous souhaitez activer le canal de version préliminaire, puis accédez à sa configuration via **Programme** > **Environnement** > **Configuration de l’environnement**.
 
 1. Ajoutez une nouvelle [variable d’environnement](/help/implementing/cloud-manager/environment-variables.md).
 
@@ -54,7 +54,7 @@ Pour mettre à jour un environnement cloud afin d’utiliser le canal de version
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Tous | Variable |
 
-1. Enregistrez les modifications. L’environnement s’actualisera alors avec le canal de version préliminaire activé.
+1. Enregistrez les modifications et l’environnement s’actualisera avec le canal de version préliminaire activé.
 
    ![Nouvelle variable d’environnement](assets/env-configuration-prerelease.png)
 
@@ -85,11 +85,11 @@ La variable peut être supprimée si vous souhaitez restaurer le comportement st
 
 ### SDK local {#local-sdk}
 
-Vous pouvez accéder aux fonctionnalités à venir du canal de version préliminaire dans votre Quickstart SDK local et coder par rapport aux nouvelles API en configurant votre projet Maven pour référencer le canal de version préliminaire `API Jar` situé dans Maven Central. Vous pouvez également voir l’accès au canal de version préliminaire dans votre environnement de développement local en démarrant le SDK de démarrage rapide standard en mode version préliminaire.
+Vous pouvez accéder aux fonctionnalités à venir du canal de version préliminaire dans votre SDK de démarrage rapide local et développer avec les nouvelles API en configurant votre projet Maven pour référencer le fichier `API Jar` du canal de version préliminaire situé dans Maven Central. Vous pouvez également accéder au canal de version préliminaire dans votre environnement de développement local en démarrant le SDK de démarrage rapide standard en mode version préliminaire.
 
 #### Démarrer le SDK de démarrage rapide en mode version préliminaire {#prerelease-mode}
 
-1. Téléchargez le SDK à partir de la distribution logicielle et installez-le comme décrit dans la section [Accès à AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Téléchargez le SDK à partir du portail de distribution logicielle et installez-le comme décrit dans la section [Accès au SDK d’AEM as a Cloud Service.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 1. Lors du lancement du démarrage rapide du SDK, incluez l’argument `-r prerelease`.
 
 La valeur est sticky. Elle ne peut donc être sélectionnée que lors du premier démarrage. Réinstallez le SDK pour modifier l’option de ligne de commande.
@@ -146,7 +146,7 @@ Les JavaDocs sont publiés sur Maven Central.
 
 1. Procédez au déploiement sur votre serveur local.
 
-1. S’il fonctionne comme prévu localement, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement [dont le canal de version préliminaire est activé](#cloud-environments).
+1. Si son fonctionnement local vous satisfait, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un [environnement dont le canal de version préliminaire est activé.](#cloud-environments)
 
 >[!CAUTION]
 > 

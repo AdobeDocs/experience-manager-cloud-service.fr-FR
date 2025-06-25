@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ AEM Assets utilise désormais [l’IA pour générer automatiquement des métad
 
 **Intégration à Figma**
 
-AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepteurs et conceptrices d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface d’utilisation d’Adobe Express. Vous pouvez placer le contenu géré dans AEM Assets dans la zone de travail Figma, puis enregistrer le contenu nouveau ou modifié dans le référentiel AEM Assets. Pour accéder au connecteur AEM Assets disponible sur la page Communauté Figma, cliquez [ici](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepteurs et conceptrices d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface d’utilisation d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail de Figma, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. Pour accéder au connecteur AEM Assets disponible sur la page Communauté Figma, cliquez [ici](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -114,7 +114,7 @@ Accédez à tous vos [rendus prédéfinis et recadrages intelligents Dynamic Me
 
 [Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes du marketing d’incorporer facilement des ressources AEM Dynamic Media (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463784/?learn=on&enablevpops=&autoplay=true&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 
 ### Purge par défaut des anciennes versions et des journaux d’audit {#mt-defaults}
 
-Actuellement, les versions de contenu et les journaux d’audit ont leurs *tâches de maintenance de purge* associées désactivées par défaut. Aucune donnée n’est donc supprimée, sauf configuration explicite.
+Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées, sauf si elles sont configurées explicitement..
 
 Toutefois, pour optimiser les performances du référentiel, à compter de **fin juin 2025**, la purge sera activée par défaut, en suivant ces directives :
 
