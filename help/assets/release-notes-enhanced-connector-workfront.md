@@ -4,10 +4,10 @@ description: Notes de mise à jour de [!DNL Workfront for Experience Manager enh
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: ht
-source-wordcount: '1724'
-ht-degree: 100%
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 98%
 
 ---
 
@@ -52,13 +52,17 @@ ht-degree: 100%
 
 La section suivante présente les notes de mise à jour générales de [!DNL Workfront for Experience Manager enhanced connector].
 
-La date de publication de la dernière version 1.9.20 de [!DNL Workfront for Experience Manager enhanced connector] est le 6 septembre 2024.
+La date de publication de la dernière version 1.9.21 de [!DNL Workfront for Experience Manager enhanced connector] est le jeudi 25 juin 2025.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
-La dernière version de [!DNL Workfront for Experience Manager enhanced connector] comprend les correctifs de bug suivants :
+La dernière version de [!DNL Workfront for Experience Manager enhanced connector] comprend les améliorations et correctifs suivants :
 
-* Le type MIME est perdu lors du chargement et de la création d’une nouvelle version d’une ressource existante.
+* Amélioration de la journalisation des requêtes API pour éviter la journalisation faussement positive des échecs d’authentification.
+
+* Correction d’une fuite de connexion sur les appels API Workfront.
+
+* Prise en charge du connecteur amélioré Workfront avec 6.5 LTS pour les versions Java 17 et Java 21.
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 * Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. L’option **[!UICONTROL Envoyer à]** fonctionne correctement avec la liste déroulante **[!UICONTROL Actions de document]**. L’option **[!UICONTROL Envoyer à]** fonctionne correctement pour la liste déroulante **[!UICONTROL Plus]**. La liste déroulante **[!UICONTROL Actions de document]** est disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version de septembre 2024 {#september-2024-release}
+
+* Le type MIME est perdu lors du chargement et de la création d’une nouvelle version d’une ressource existante.
 
 ### Version d’avril 2024 {#april-2024-release}
 
