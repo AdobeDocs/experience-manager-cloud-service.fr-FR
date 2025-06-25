@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
+source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2322'
+ht-degree: 27%
 
 ---
 
@@ -242,9 +242,9 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
-| Événements webhook obligatoires |
+| Événements webhook requis et authentification |
 | --- |
-| Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Référentiel : Push</li></li></ul></ul></ul> |
+| Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Référentiel : Push</li></ul>Définition de l’authentification :<br>1. Dans le champ **Nom d’utilisateur de l’authentification de base**, saisissez `cloudmanager`.<br>2. Dans le champ **Mot de passe d’authentification de base**, saisissez le secret Webhook généré à partir de l’interface utilisateur de Cloud Manager. |
 
 >[!ENDTABS]
 
