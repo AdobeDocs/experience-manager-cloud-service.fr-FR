@@ -1,20 +1,18 @@
 ---
-title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notes de mise à jour de la version 2025.5.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2025.5.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
+source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 89%
+source-wordcount: '2108'
+ht-degree: 98%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour de la version 2025.5.0 d’[!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour de la version 2025.5.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,37 +26,112 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 26 juin 2025. La prochaine disponibilité des fonctionnalités (2025.7.0) est prévue pour le vendredi 31 juillet 2025.
+La date de publication de la version actuelle (2025.5.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 5 juin 2025. La prochaine mise à jour des fonctionnalités (2025.6.0) est prévue pour le 26 juin 2025.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vidéo de mise à jour {#release-video}
 
-## Release Video {#release-video}
+Consultez la vidéo Vue d’ensemble de la version de mai 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.5.0 :
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Gestion améliorée des formulaires de métadonnées dans la vue Assets**
+**Métadonnées générées par l’IA**
 
-Vous pouvez désormais importer les formulaires de métadonnées de la vue Administration directement dans la vue Assets. Toutes les mises à jour apportées à ces formulaires dans la vue Assets sont automatiquement répercutées dans la vue Administration , ce qui garantit la cohérence entre les deux expériences. Cette fonctionnalité permet une transition transparente vers la nouvelle vue Assets tout en maintenant la continuité avec vos configurations de métadonnées existantes.
+AEM Assets utilise désormais [l’IA pour générer automatiquement des métadonnées, y compris le titre, la description et les mots-clés](/help/assets/metadata-assets-view.md#ai-smart-tags). Ces champs générés par l’IA améliorent la précision des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Non seulement cette approche améliore l’efficacité en éliminant le balisage manuel, mais elle garantit également la cohérence et l’évolutivité sur de gros volumes de contenu numérique.
 
-![Métadonnées générées par l’IA](/help/assets/assets/import-metadata-forms-page.png)
+![Métadonnées générées par l’IA](/help/assets/assets/enhanced-smart-tags.png)
+
+**Intégration à Figma**
+
+AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepteurs et conceptrices d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface d’utilisation d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail de Figma, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. Pour accéder au connecteur AEM Assets disponible sur la page Communauté Figma, cliquez [ici](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
+
 
 ### Nouvelles fonctionnalités dans Content Hub {#new-features-content-hub}
+
+**Vue d’ensemble du contrôle d’accès basé sur les attributs (ABAC)**
+
+[Content Hub permet désormais d’appliquer des restrictions basées sur des règles pour accéder aux ressources](/help/assets/attribute-based-access-control.md). Les autorisations des ressources garantissent la gouvernance et s’assurent également que seules les ressources appropriées sont accessibles aux utilisateurs.
+
+Les règles de restriction des ressources sont basées sur des métadonnées. Si les conditions définies dans la règle correspondent aux métadonnées de la ressource, la ressource s’affiche pour les groupes d’utilisateurs et d’utilisatrices.
+
+Voici quelques-uns des principaux avantages du contrôle d’accès basé sur les attributs :
+
+* Élimine la dépendance à la structure de dossiers pour les autorisations
+
+* Permet aux administrateurs et administratrices de charger des ressources et de déterminer rétroactivement les structures d’autorisation
+
+* Réduit le nombre de doublons - améliore l’intégrité des ressources. Des doublons sont nécessaires dans les autorisations basées sur des dossiers lorsqu’une même ressource est partagée avec différents groupes.
+
+**Image de marque de l’UI**
+
+Le hub de contenus permet désormais aux administrateurs et administratrices de [personnaliser l’interface d’utilisation avec des éléments spécifiques à la marque](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), tels que des images de bannière, des titres de bannière et du corps de texte, ainsi que des couleurs primaires et secondaires. Ces améliorations permettent d’assurer la cohérence de la marque, de simplifier l’intégration des utilisateurs et utilisatrices et d’établir la confiance.
+
+![Image de marque de l’UI](/help/assets/assets/content-hub-ui-branding.png)
+
+**Partage de lien public**
+
+Le hub de contenus prend désormais en charge la [génération de liens partageables pour permettre aux utilisateurs et utilisatrices externes](/help/assets/share-assets-content-hub.md##share-assets), sans accès aux applications, d’afficher les métadonnées des ressources ou de télécharger des ressources.
+
+![Image de marque de l’UI](/help/assets/assets/public-and-private-link.png)
 
 **Gouvernance des collections**
 
 Le hub de contenus permet désormais de [contrôler l’accès aux collections lors de leur création, en veillant à ce que seuls les utilisateurs et utilisatrices autorisés puissent afficher ou gérer les ressources regroupées](/help/assets/collections-content-hub.md##create-collections). Il garantit l’amélioration de la sécurité et de la collaboration, une gestion des ressources organisée et une gouvernance simplifiée.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>La gouvernance des collections est une fonctionnalité à disponibilité limitée. Vous pouvez l’activer en créant un ticket d’assistance.
+
+**Télécharger plusieurs ressources au format ZIP**
+
+Le hub de contenus permet désormais de [télécharger les ressources sélectionnées et leurs rendus dans un fichier ZIP](/help/assets/download-assets-content-hub.md#download-asset-renditions) et non plus dans des fichiers séparés, ce qui simplifie la gestion des fichiers.
+
+**Rendus Dynamic Media dans le hub de contenus**
+
+Accédez à tous vos [rendus prédéfinis et recadrages intelligents Dynamic Media pour le téléchargement, directement depuis l’interface d’utilisation du hub de contenus](/help/assets/download-assets-content-hub.md#download-asset-renditions).
+
+![Rendus Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Nouvelles fonctionnalités de Dynamic Media {#new-features-dynamic-media}
+
+**Intégration native de Dynamic Media à AJO B2C**
+
+[Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes du marketing d’incorporer facilement des ressources AEM Dynamic Media (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Fonctionnalités de version préliminaire
+
+* [Éditeur universel - Fragments de formulaire](/help/edge/docs/forms/universal-editor/creating-form-fragments.md) : l’éditeur universel vous permet désormais de créer et de réutiliser des fragments de formulaire pour le formulaire adaptatif. Ces fragments sont des sections de formulaire réutilisables (par exemple, coordonnées, champs de consentement) qui peuvent être créées une seule fois et appliquées à plusieurs formulaires. Cette fonctionnalité simplifie la création de formulaires, assure la cohérence et améliore l’efficacité de création.
+
+* [Bibliothèque de documents SharePoint - Enregistrer les pièces jointes avec les noms de fichier d’origine](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library) : vous avez désormais la possibilité d’enregistrer les pièces jointes de formulaire en utilisant leurs noms de fichier d’origine lors de leur stockage dans une bibliothèque de documents SharePoint. Cette amélioration simplifie l’identification et la gestion des fichiers chargés.
+
+* **Éditeur de règles** :
+   * [Condition binaire avec événement de clic dans la clause « When »](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor) : l’éditeur de règles permet désormais de combiner un événement de clic de bouton (_Est cliqué_) avec d’autres conditions dans la clause « When ». Cela permet un contrôle plus précis de l’exécution des règles en fonction de l’interaction utilisateur et d’autres facteurs. Remarque : lorsque vous utilisez plusieurs conditions, l’événement de clic doit être la première condition répertoriée.
+   * [Conditions de validation des champs et des panneaux](/help/forms/rule-editor-core-components-usecases.md) : l’éditeur de règles inclut désormais les conditions _IsValid_ et _IsNotValid_. Ils vous permettent de vérifier l’état de validation de champs spécifiques ou de panneaux entiers (y compris des dispositions telles que les onglets horizontaux, verticaux, accordéons et assistants), ce qui améliore la navigation dans les formulaires et l’expérience client en fonction des résultats de validation.
+* [Amélioration de la gestion de l’étendue pour les listes SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
+* [Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields) : les formulaires créés à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peuvent désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement. Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
+
+### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
+
+Le programme d’accès anticipé d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement.
+
+Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
+
+#### Intégration d’Adobe Experience Platform (AEP) à Forms
+
+Les fonctionnalités d’intégration entre Forms et AEP sont désormais disponibles pour les utilisateurs et utilisatrices précoces.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -104,7 +177,7 @@ Propriétés OSGi :
 
 L’**exécution Java 11** est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**exécution Java 21** plus performante.
 
-Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes suivantes spécifiques. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
+Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
 Remarque : la version de l’exécution est distincte de la version de build de votre code. Bien que nous recommandions la création de versions avec Java 21, les versions Java 11 sont toujours prises en charge pour l’instant. Un avis d’obsolescence distinct pour les versions Java 11 sera partagé ultérieurement.
 
@@ -112,7 +185,7 @@ Remarque : la version de l’exécution est distincte de la version de build de
 
 Comme indiqué dans les notes de mise à jour d’avril, les journaux Java d’AEM doivent respecter un format standard pour assurer une surveillance fiable dans tous les environnements de la clientèle. Les configurations de journal personnalisées, telles que les modifications apportées à la mise en forme du journal, aux fichiers de sortie ou aux niveaux de journal par défaut, ne sont plus prises en charge. Les journaux doivent rester dirigés vers les fichiers par défaut et les niveaux de journal par défaut du code de produit AEM doivent être conservés. Consultez toutes les informations dans [l’article Journalisation](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-À compter de **fin août**, tous les remplacements de journalisation personnalisée non pris en charge seront ignorés. D’après notre analyse, la plupart des clients ne seront pas affectés. Adobe a donc contacté ceux dont la configuration actuelle pourrait être affectée.
+À compter de **fin août**, tous les remplacements de journalisation personnalisée non pris en charge seront ignorés. D’après notre analyse, la plupart des clientes et clients ne seront pas affectés et Adobe contactera directement ceux dont la configuration actuelle peut être affectée.
 
 Passez en revue et mettez à jour tous les processus en aval qui reposent sur un comportement de journalisation personnalisé. Par exemple :
 
@@ -123,7 +196,7 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 
 Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées, sauf si elles sont configurées explicitement..
 
-Toutefois, pour optimiser les performances du référentiel, à compter de **début juillet 2025**, la purge sera activée par défaut, en suivant ces instructions :
+Toutefois, pour optimiser les performances du référentiel, à compter de **fin juin 2025**, la purge sera activée par défaut, en suivant ces directives :
 
 #### Versions du contenu {#mt-content}
 

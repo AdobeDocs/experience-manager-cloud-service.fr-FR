@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7ae30d2053a17c2855c66b265c831ea27d19d535
+source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 13%
+source-wordcount: '1758'
+ht-degree: 11%
 
 ---
 
@@ -31,11 +31,14 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * FORMS-19336 : recherche ajoutée dans l’arborescence de Source de données dans l’éditeur AF.
 * FORMS-19417 : prise en charge des boutons radio en mode Hiérarchie.
 * FORMS-19603 : prend en charge les gabarits de page et les pages de conception dans l’éditeur de règles.
+* SITES-5358 : API REST de fragments de contenu : copie de CF avec enfants.
 * SITES-10575 : « MSM Blueprint Bloomfilter Loader » tente de charger plus de 100000 lignes.
 * SITES-14542 : le changement de nom/le déplacement d’une page source de Live Copy doit déclencher la publication de la page Live Copy renommée/déplacée, si elle a déjà été publiée.
 * SITES-19754 : Edge Delivery avec éditeur universel : ajoutez un message d’erreur lisible par l’utilisateur lorsque l’intégration rencontre des problèmes.
 * SITES-23499 : Edge Delivery avec éditeur universel : ajoutez la prise en charge de plusieurs champs à utiliser pour les options de bloc.
 * SITES-23518 : Edge Delivery avec éditeur universel : ajoutez la prise en charge des rendus de ressources spécifiques à Edge Delivery.
+* SITES-24436 : API REST de fragments de contenu : introduction du cache local pour accélérer la récupération des références en double.
+* SITES-25155 : API REST de fragments de contenu : supprimez le paramètre de requête « enabledForFolder » obsolète dans la liste Modèles .
 * SITES-25913 : API REST de fragments de contenu : validation temporelle des ressources avant le démarrage du workflow de publication.
 * SITES-25976 : les liens au sein des fragments d’expérience ne s’adaptent pas après le déploiement de MSM.
 * SITES-26271 : API REST de fragments de contenu : passez à Traversée BFS pour le point d’entrée de variation GET.
@@ -43,10 +46,16 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * SITES-27775 : recherche de référence optimisée pendant la publication (chargement différé des métadonnées).
 * SITES-27782 : Edge Delivery avec éditeur universel : ajoutez une implémentation éditeur-abonné spécifique pour publier du contenu vers Edge Delivery (accès anticipé).
 * SITES-27792 : Edge Delivery avec éditeur universel : ajoutez un modèle de configuration de service Edge Delivery dédié.
+* SITES-28557 : API REST de fragments de contenu : autorisez l’utilisation des ETags récupérés en appelant `/cf/fragments/{fragmentId}` avec `references=direct` pour corriger un fragment de contenu.
 * SITES-28683 : permet aux recherches MSM LiveRelationship d’ignorer le statut avancé.
+* SITES-29601 : API REST de fragments de contenu : validation des références de fragment de contenu de champs de texte long.
+* SITES-29614 : API REST de fragments de contenu : récupérez un workflow à l’aide du point d’entrée `/cf/workflows/{workflowInstanceId}`, où workflowInstanceIda est l’identifiant renvoyé par la demande de publication.
+* SITES-29615 : API REST de fragments de contenu : répertoriez toutes les requêtes par lots créées via les `/cf/batch` POST à l’aide de `GET /cf/batch`.
+* SITES-29874 : API REST de fragments de contenu : les références des champs de texte longs des fragments de contenu sont désormais récupérées et hydratées.
 * SITES-29930 : API REST de fragments de contenu : ajoutez des mesures pour le workflow de publication de fragment de contenu.
 * SITES-29986 : API REST de fragments de contenu : prend en charge la dénomination technique du modèle CF.
 * SITES-30088 : API REST de fragments de contenu : publication CF - ignorer la récupération des références lorsque filterReferencesByStatus est vide.
+* SITES-30126 : API REST de fragments de contenu : amélioration des performances de publication CF : a remplacé la vérification si une ressource est un fragment par une vérification minimale.
 * SITES-30328 : Edge Delivery avec éditeur universel : ajoutez la prise en charge de l’aperçu à partir de Sidekick.
 * SITES-30445 : API REST de fragments de contenu : schéma d’interface utilisateur du modèle CF : ajoutez une option pour contrôler l’état initial du réductible.
 * SITES-30604 : API REST de fragments de contenu : prend en charge l’adoption du schéma de métadonnées de modèle dans la nouvelle interface utilisateur.
@@ -54,11 +63,14 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * SITES-30886 : API REST de fragments de contenu : workflows GET pour le point d’entrée de fragment de contenu basé sur les UUID de fragment stockés dans les métadonnées de workflow.
 * SITES-31005 : amélioration de l’interface utilisateur des tâches de déploiement pour afficher la progression.
 * SITES-31020 : améliorez l’interface utilisateur de création d’une tâche de Live Copy pour afficher la progression.
+* SITES-31111 : API REST de fragments de contenu : autorisez l’API de correctif de variation à accepter les références de fragments de contenu dans les lancements de fragments de contenu.
+* SITES-31343 : API REST de fragments de contenu : ajoutez le filtrage et la pagination par date au point d’entrée qui répertorie les requêtes par lots.
 * SITES-31472 : la suppression du lancement peut entraîner une interruption du référentiel en cas de lancement massif.
+* SITES-31641 : API REST de fragments de contenu : ajoutez une propriété aux champs de modèle pour stocker les mappages dynamiques liés aux extensions.
 * SITES-31677 : l’espace de travail personnalisé prend en charge l’exportation de fragments de contenu AEM vers Target.
+* SITES-31770 : API REST de fragments de contenu : améliorations des performances de PATCH.
 * SITES-31782 : API REST de fragments de contenu : ajoutez une description pour les ressources locales.
 * SITES-32175 : autorise les validations intermédiaires pour la création de Live Copy et le déploiement des pages MSM.
-* SITES-5358 : API REST de fragments de contenu : copie de CF avec enfants.
 
 ### Problèmes résolus {#fixed-issues-21331}
 
@@ -85,6 +97,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * SITES-25235 : le message de chargement du contenu du rail de filtrage n’est pas annoncé par le lecteur d’écran.
 * SITES-25254 : la barre de défilement horizontale s’affiche dans la boîte de dialogue modale du carrousel lorsque le contenu est affiché à 320 px.
 * SITES-25433 : Edge Delivery avec éditeur universel : correction du rendu des versions de page pour les structures de site multilingues.
+* SITES-26064 : API REST de fragments de contenu : correction du code de statut renvoyé lors de la création d’un fragment et de l’obtention d’un `AccessDeniedException` sur le serveur principal.
 * SITES-26890 : lors de l’utilisation du clavier, le focus au clavier Portée « En-têtes de tableau » n’est pas visible dans la page Gérer la publication.
 * SITES-29075 : l’aperçu de la Live Copy ne fonctionne pas pour les sites web à volume élevé.
 * SITES-29514 : Edge Delivery avec éditeur universel : rendez l’URL GitHub/de projet obligatoire lors de la création d’un site.
@@ -94,7 +107,6 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * SITES-29789 : problème de modification du lien du composant sur les pages racine copiées.
 * SITES-29987 : API REST de fragments de contenu : la fonctionnalité Créer et modifier un modèle de fragment de contenu ne prend pas en charge `previewUrlPattern`.
 * SITES-30140 : problème de double fenêtre lors de la création d’une référence de fragment de contenu.
-* SITES-30260 : API REST de fragments de contenu : erreur lors de la mise à jour/suppression de CF à l’aide du dernier ETag.
 * SITES-30327 : API REST de fragments de contenu : la publication de fragments de contenu sans autorisation crée des workflows distincts pour chaque ressource de payload.
 * SITES-30333 : lisez les métadonnées des ressources à partir du jcr pour éviter les problèmes d’analyse xmp.
 * SITES-30353 : GraphQL DataFetchingExceptions pour le champ « src » dans les fragments de contenu AEM.
@@ -112,13 +124,16 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * SITES-30899 : l’option Déployer « ultérieurement » permet de continuer sans aucune date sélectionnée.
 * SITES-30947 : exception de pointeur nul en raison d’une propriété « comportement » manquante sur le plan directeur pendant le déploiement.
 * SITES-31157 : API REST de fragments de contenu : le correctif échoue est un cas spécifique.
+* SITES-31162 : API REST de fragments de contenu : correction d’un problème de casting pour `DateTimeField` champ dans `ModelFieldMapper`.
+* SITES-31174 : API REST de fragments de contenu : les balises n’ont pas été publiées avec la demande de publication.
 * SITES-31272 : impossible de créer une copie de langue Assets via PageManager.copy.
 * SITES-31327 : API REST de fragments de contenu : supprimez la validation ETag dans la demande de fragment de GET.
 * SITES-31387 : erreur JavaScript « ns.ui.alert n’est pas une fonction » lors de la réactivation de l’héritage du composant fantôme.
+* SITES-31454 : API REST de fragments de contenu : relâchez le modèle pour que les champs de référence de fragment acceptent également les UUID.
 * SITES-31455 : API REST de fragments de contenu : correction d’une incohérence d’ETag entre les points d’entrée d’un même modèle de fragment de contenu.
 * SITES-31459 : API REST de fragments de contenu : la Live Copy CF ne peut pas être modifiée en présence d’un champ référence de contenu.
 * SITES-31467 : js-errors de contexthub.authoring-hook.js dans l’éditeur de page.
-* SITES-31594 : API REST de fragments de contenu : erreur `extractMetadataSchemaFieldLabel`.
+* SITES-31487 : API REST de fragments de contenu : autorisez l’appel du point d’entrée des autorisations pour le dossier racine.
 * SITES-31621 : Edge Delivery avec éditeur universel : permet de supprimer les lignes vides des feuilles de calcul qui sont des Live Copies.
 * SITES-31676 : la création ou la suppression de composants laisse un espace vide au bas de la page.
 * SITES-31822 : libellé de case à cocher ClassicUI manquant et codé dans HTML.
