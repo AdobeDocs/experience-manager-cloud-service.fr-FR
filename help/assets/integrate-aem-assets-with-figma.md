@@ -4,7 +4,7 @@ description: Découvrez comment intégrer  [!DNL AEM Assets]  avec pour accéder
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 10%
@@ -76,7 +76,7 @@ Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets
 
 [Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] ](#access-aem-assets-connector) dans l’interface de conception de [!DNL Figma] et procédez comme suit :
 
-1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [ Utilisation du sélecteur de ressources ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [ Utilisation du sélecteur de ressources ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Faites glisser et déposez la ressource sur la zone de travail ou sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]** pour apporter la ressource sur la zone de travail.
 
@@ -101,4 +101,3 @@ Cette intégration présente actuellement les limites suivantes :
 
 * Pour importer des ressources [!DNL AEM] dans Figma, les formats pris en charge sont **JPEG** et **PNG**.
 * Pour l’exportation de conceptions de [!DNL Figma] vers [!DNL AEM Assets], les formats pris en charge sont les suivants : **PNG**, **PDF**, **JPG**, **SVG**.
-
