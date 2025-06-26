@@ -76,8 +76,10 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 1. Sélectionnez un ou plusieurs formulaires dans le tableau, puis cliquez sur **[!UICONTROL Démarrer l’importation]** pour importer les formulaires de métadonnées et leurs dossiers associés dans [!DNL Assets View]. Un message de traitement s’affiche (par exemple, *Importation de 3 formulaires de métadonnées. Veuillez patienter.*). Une fois l’importation terminée, un message de réussite confirme que les formulaires ont bien été importés et la page **[!UICONTROL Forms de métadonnées]** (sur [!DNL Assets View]) affiche les formulaires récemment importés et les formulaires existants disponibles dans [!DNL Assets View]. Vous pouvez effectuer les opérations suivantes sur cette page :
    * Cliquez sur l’en-tête de colonne pour trier le tableau par [!UICONTROL Nom], [!UICONTROL Modifié] ou [!UICONTROL Auteur].
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Supprimer du ou des dossiers)]** puis vérifiez le nom du dossier dans le chemin d’accès au dossier pour vous assurer que le dossier est correctement transféré.
+
      ![page vérifier les formulaires de métadonnées](/help/assets/assets/confirm-ported-folder.png)
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Modifier]** pour afficher toutes les configurations prises en charge du formulaire de métadonnées. Consultez [Configuration du Forms de métadonnées](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) pour plus d’informations sur les formulaires de métadonnées, leurs composants et champs.
+
      ![page vérifier les formulaires de métadonnées](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Vérification des formulaires de métadonnées importés{#Verify-the-imported-metadata-forms}
