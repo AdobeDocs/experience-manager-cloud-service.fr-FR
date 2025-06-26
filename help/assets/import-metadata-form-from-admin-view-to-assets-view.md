@@ -83,6 +83,7 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 
    * Cliquez sur l’en-tête de colonne pour trier le tableau par [!UICONTROL Nom], [!UICONTROL Modifié] ou [!UICONTROL Auteur].
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Supprimer du ou des dossiers)]** puis vérifiez le nom du dossier dans le chemin d’accès au dossier pour vous assurer que le dossier est correctement transféré.
+
      ![page vérifier les formulaires de métadonnées](/help/assets/assets/confirm-ported-folder.png)
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Modifier]** pour afficher toutes les configurations prises en charge du formulaire de métadonnées. Consultez [Configuration du Forms de métadonnées](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) pour plus d’informations sur les formulaires de métadonnées, leurs composants et champs.
 
