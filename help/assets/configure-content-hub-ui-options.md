@@ -277,7 +277,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
