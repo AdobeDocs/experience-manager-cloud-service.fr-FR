@@ -3,9 +3,9 @@ title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des personnes disposant de différents types de privilèges (chargement de ressources, utilisateurs et utilisatrices d’Adobe Express) et comment accorder des privilèges d’administration aux utilisateurs et utilisatrices.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: be6c75dc12d80b252131e4e7369c1c5555432215
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1649'
 ht-degree: 12%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 12%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -55,7 +55,7 @@ ht-degree: 12%
 >
 >Le guide de Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub est disponible dans le cadre de Experience Manager Assets as a Cloud Service pour démocratiser l’accès au contenu de marque pour les organisations et leurs partenaires commerciaux.
 
@@ -97,7 +97,14 @@ Le tableau suivant résume les types d’utilisateurs Content Hub disponibles, l
 
 ## Étape 1 : activer Content Hub pour Experience Manager Assets à l’aide de Cloud Manager {#enable-content-hub}
 
-Pour accéder au portail Content Hub, les administrateurs doivent d’abord activer Content Hub pour Experience Manager Assets as a Cloud Service à l’aide de Cloud Manager. Procédez comme suit :
+
+Pour accéder au portail Content Hub, les administrateurs doivent d’abord activer Content Hub pour Experience Manager Assets as a Cloud Service à l’aide de Cloud Manager.
+
+### Autorisations {#permissions-edit-program}
+
+Vous devez disposer du rôle Propriétaire de l’entreprise pour modifier les programmes dans Cloud Manager. Pour plus d’informations, voir [Modifier des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+Pour activer Content Hub pour Experience Manager Assets :
 
 1. Connectez-vous à Cloud Manager. Veillez à sélectionner la bonne organisation lors de la connexion. Le Cloud Manager répertorie tous vos programmes.
 
@@ -262,4 +269,4 @@ Pour configurer les utilisateurs de Experience Manager Assets :
 
    >[!NOTE]
    >
-   >Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [Content Hub](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
+   > Vous n&#39;avez pas besoin d&#39;être ajouté au profil de produit [Content Hub](#onboard-content-hub-users) pour les utilisateurs de Experience Manager Assets.
