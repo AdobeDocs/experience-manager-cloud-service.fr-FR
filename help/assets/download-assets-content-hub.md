@@ -3,7 +3,7 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger une ou plusieurs ressources et leurs rendus à partir du portail Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -56,7 +56,7 @@ ht-degree: 8%
 >
 > [!DNL Content Hub] guide est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
 >
->[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Le [!DNL Content Hub] vous permet de télécharger et de partager vos ressources. L’interface utilisateur d’[!DNL Content Hub] affiche uniquement les ressources approuvées. Ces ressources peuvent inclure des images, des vidéos ou tout autre contenu numérique. Le [!DNL Content Hub] améliore l’accessibilité et l’adaptabilité pour une distribution efficace des ressources.
 
@@ -82,8 +82,8 @@ Si la boîte de dialogue **[!UICONTROL Télécharger des ressources]** affiche l
 
    >[!NOTE]
    >
-   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [[!UICONTROL [Configuration]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Les utilisateurs ayant accès à [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
+   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Les utilisateurs ayant accès à [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
    >* L’aperçu de la licence s’affiche uniquement si la ressource est approuvée à l’aide de [!DNL Assets as a Cloud Service] environnement de création. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
