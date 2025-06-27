@@ -1,15 +1,15 @@
 ---
-title: Comment activer les composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local AEM Forms ?
-description: Découvrez comment activer les composants principaux de Forms adaptatif as a Cloud Service AEM Forms.
+title: Comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service et l’environnement de développement local ?
+description: Découvrez comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 92%
+source-wordcount: '1113'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-L’activation des composants principaux de Forms adaptatif as a Cloud Service AEM Forms vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
+L’activation des composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service Forms vous permet de commencer à créer, publier et diffuser des Forms adaptatifs et découplés basés sur les composants principaux à l’aide de vos instances AEM Forms Cloud Service sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
 
 ## Considérations
 
@@ -30,16 +30,15 @@ L’activation des composants principaux de Forms adaptatif as a Cloud Service A
 
 * Si votre environnement de service cloud existant propose une option permettant de [créer des formulaires adaptatifs basés sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés sont déjà activés pour votre environnement. Vous pouvez utiliser les formulaires adaptatifs basés sur les composants principaux en tant que formulaires découplés pour les canaux mobiles et web, les applications natives et les services qui nécessitent une représentation découplée de formulaires adaptatifs.
 
-
 ## Activer les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés {#enable-headless-forms}
 
 Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés pour un environnement AEM Forms as a Cloud Service
 
 
-![Activer les composants principaux et les formulaires adaptatifs sans tête](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![Activer les composants principaux et les formulaires adaptatifs découplés](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
+## &#x200B;1. Cloner votre référentiel Git AEM Forms as a Cloud Service {#clone-git-repository}
 
 1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
@@ -59,7 +58,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les compo
    Lorsque l’on vous y invite, saisissez les informations d’identification. Le référentiel est cloné sur votre ordinateur local.
 
 
-## 2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Ajouter les dépendances des composants principaux des formulaires adaptatifs à votre référentiel Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Ouvrez votre dossier du référentiel Git dans un éditeur de code de texte brut. Par exemple, VS Code.
 1. Ouvrez le fichier `[AEM Repository Folder]\pom.xml` en mode d’édition.
@@ -276,7 +275,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les compo
 
 1. Enregistrez et fermez le fichier.
 
-## 3. Créer et déployer le code mis à jour
+## &#x200B;3. Créer et déployer le code mis à jour
 
 Déployez le code mis à jour dans vos environnements de développement local et de service cloud afin d’activer les composants principaux sur les deux environnements :
 
@@ -356,6 +355,13 @@ Pour vérifier que les composants principaux des formulaires adaptatifs sont act
    ![Localisez l’artefact core-forms-components-af-core dans all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png).
 
    Si les dépendances existent, les composants principaux des formulaires adaptatifs sont activés pour votre environnement.
+
+### Pourquoi le rendu des formulaires basés sur les composants principaux échoue-t-il dans le projet ?
+
+Le rendu des formulaires basés sur les composants principaux peut échouer en raison d’une incohérence de version entre le package de composants principaux Forms et la version incluse dans l’archétype de projet. Ce problème se produit généralement lorsque la version spécifiée dans l’archétype du projet est égale ou supérieure à la version fournie avec le package des composants principaux Forms. Pour résoudre ce problème, effectuez l’une des opérations suivantes :
+
+* Utilisez une version inférieure du package Composants principaux Forms dans l’archétype du projet.
+* Supprimez la dépendance Composants principaux Forms de l’archétype du projet, car la version requise est déjà incluse dans AEM as a Cloud Service. Le package Composants principaux Forms est fourni avec AEM as a Cloud SDK à partir de la version 20133, par exemple `AEM SDK v2025.3.20133.20250325T063357Z-250300`.
 
 >[!MORELIKETHIS]
 >
