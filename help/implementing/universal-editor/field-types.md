@@ -4,9 +4,9 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -91,7 +91,7 @@ Un objet de champ possède la définition de type suivante.
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
 | `component` | `ComponentType` | Rendu du composant | Oui |
-| `name` | `string` | Propriété dans laquelle les données doivent être conservées | Oui |
+| `name` | `string` | Propriété [ou chemin](#nesting) dans laquelle les données doivent être conservées | Oui |
 | `label` | `FieldLabel` | Libellé du champ | Oui |
 | `description` | `FieldDescription` | Description du champ | Non |
 | `placeholder` | `string` | Espace réservé pour le champ | Non |
@@ -105,7 +105,15 @@ Un objet de champ possède la définition de type suivante.
 | `validation` | `ValidationType` | Règle(s) de validation pour le champ | Non |
 | `raw` | `unknown` | Données brutes pouvant être utilisées par le composant | Non |
 
-### Types de composants {#component-types}
+### Nom Champ et imbrication {#nesting}
+
+Le champ `name` peut pointer directement vers une propriété de la ressource active ou, dans le cas des composants dans `cq:Pages`, il peut également utiliser un chemin d’accès vers une propriété imbriquée. Par exemple :
+
+```json
+"name": "teaser/image/fileReference"
+```
+
+### Types de composant {#component-types}
 
 Vous trouverez ci-dessous les types de composants qui peuvent être utilisés pour le rendu des champs.
 
@@ -281,7 +289,7 @@ Semblable à une valeur booléenne, un type de composant de groupe de cases à c
 
 #### Conteneur {#container}
 
-Un type de composant de conteneur permet de regrouper des composants. Il propose une configuration supplémentaire.
+Un type de composant de conteneur permet de regrouper les composants, y compris la prise en charge multichamp. Il propose une configuration supplémentaire.
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Un type de composant de conteneur permet de regrouper des composants. Il propose
 
 ![Capture d’écran du type de composant de conteneur](assets/component-types/container.png)
 
+>[!TAB Prise en charge multichamp]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Fragment de contenu {#content-fragment}
 
@@ -673,7 +710,7 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 #### Référence {#reference}
 
-Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [&#128279;](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
+Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
 
 Un type de composant de référence permet de faire référence à un autre objet de données de l’objet actif.
 
