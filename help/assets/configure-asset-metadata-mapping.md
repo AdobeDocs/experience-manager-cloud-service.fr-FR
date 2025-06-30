@@ -91,6 +91,7 @@ Pour configurer le mappage des métadonnées à l’aide d’un nouveau formulai
    1. Spécifiez `Project Name` dans le champ **[!UICONTROL Libellé du champ]**.
 
    1. Spécifiez `./jcr:content/metadata/wm:projectName` dans le champ **[!UICONTROL Mapper à la propriété]**. Pour vous guider, utilisez le modèle suivant pour définir les mappages de champs dans Experience Manager Assets :
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Lors de la configuration des mappages dans Workfront, vous avez mappé le champ Experience Manager Assets `wm:projectName` au champ Workfront Projet > Nom.

@@ -46,7 +46,7 @@ Vous pouvez rendre la recherche plus spécifique en ajoutant votre mot-clé de r
 
 <!--![Finding exact match](assets/simple-search-2.png)-->
 
-La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets ****.
+La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets **&#x200B;**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
@@ -99,7 +99,7 @@ De même, vous pouvez rechercher toutes les voitures, mais pas les jeep. La requ
 
 ![Recherche à l’aide de l’opérateur NOT](assets/images-jeep.png)
 
-La vue Assets **** ne prend pas en charge l’utilisation des opérateurs.
+La vue Assets **&#x200B;**&#x200B;ne prend pas en charge l’utilisation des opérateurs.
 
 ## Caractères génériques {#wildcards}
 
@@ -123,7 +123,7 @@ L’astérisque est un opérateur de caractère générique utilisé pour élarg
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
-La vue Assets **** ne prend pas en charge l’utilisation de caractères génériques.
+La vue Assets **&#x200B;**&#x200B;ne prend pas en charge l’utilisation de caractères génériques.
 
 ## Filtres {#filters}
 
@@ -168,10 +168,10 @@ Exécutez les étapes suivantes dans **[!UICONTROL vue Administration]** :
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
-Exécutez les étapes suivantes dans la vue Assets **** :
+Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
 
 1. Saisissez `classic car` dans la barre de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL  Type MIME ], sélectionnez [!UICONTROL PDF].
+1. Accédez à Filtres. Sous [!UICONTROL &#x200B; Type MIME &#x200B;], sélectionnez [!UICONTROL PDF].
 1. Accédez à [!UICONTROL Statut de la ressource], sélectionnez [!UICONTROL Tous] pour inclure toutes les ressources publiées et dépubliées.
 
 **Scénario 5 : rechercher toutes les images à l’exception de PNG**
@@ -184,7 +184,7 @@ Lorsque vous n’êtes pas sûr du titre ou de la méta-description d’une ress
 
 <!--![Search all images except jeep](assets/images-png.png)-->
 
-Pour rechercher des ressources à l’aide du scénario mentionné dans la vue Assets ****, procédez comme suit :
+Pour rechercher des ressources à l’aide du scénario mentionné dans la vue Assets **&#x200B;**, procédez comme suit :
 
 1. Accédez aux filtres de recherche.
 1. Accédez à Filtres. Sous [!UICONTROL Type MIME], sélectionnez tous les types MIME donnés, mais désélectionnez PNG.
@@ -207,7 +207,7 @@ Pour rechercher le scénario 6, procédez comme suit :
 
 <!--![Scenario 6](assets/scenario-6.png)-->
 
-Le scénario 6 ne peut pas être exécuté dans la vue Assets **** car il ne prend pas en charge l’utilisation de caractères génériques.
+Le scénario 6 ne peut pas être exécuté dans la vue Assets **&#x200B;**&#x200B;car il ne prend pas en charge l’utilisation de caractères génériques.
 
 **Scénario 7 : recherchez tous les documents du référentiel Experience Manager dans lesquels le contenu du document doit inclure des `car` mais en exclure `classic`. La même condition s’applique aux métadonnées d’une ressource.**
 
@@ -219,7 +219,7 @@ Priorité 2 : Balises intelligentes
 
 <!--![Scenario 7](assets/scenario-7.png)-->
 
-Le scénario 7 ne peut pas être exécuté dans la vue Assets **** car il ne prend pas en charge l’utilisation de caractères génériques.
+Le scénario 7 ne peut pas être exécuté dans la vue Assets **&#x200B;**&#x200B;car il ne prend pas en charge l’utilisation de caractères génériques.
 
 <!--
 **Scenario 9: Search for all images except PNG**
@@ -243,7 +243,7 @@ Vous pouvez capturer un critère spécifique à l’aide de différents filtres 
 
 <!--![Search using tags](assets/search-tags.png)-->
 
-La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets ****.
+La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets **&#x200B;**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
@@ -260,7 +260,7 @@ Sélectionnez la ressource > accédez aux points de suspension en haut à droite
 
 1. Remarquez la barre de recherche. La miniature de la ressource sélectionnée s’affiche sur la barre de recherche pour indiquer vos besoins en matière de recherche. Par conséquent, il renvoie des ressources avec des balises intelligentes similaires.
 
-Exécutez les étapes suivantes dans la vue Assets **** :
+Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
 
 1. Recherchez la ressource en fonction de vos besoins.
 1. Sélectionnez l’option image > accéder à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.

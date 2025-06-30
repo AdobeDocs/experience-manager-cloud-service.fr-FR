@@ -37,7 +37,7 @@ Vous pouvez publier des ressources dans [!DNL AEM and Dynamic Media] lors du cha
 * **[!UICONTROL Immédiat] :** lorsque des ressources sont chargées dans ce dossier, le système les ingère dans Experience Manager et fournit instantanément l’URL/le code intégré.
 * **[!UICONTROL Publication sélective] :** les Assets sont publiées selon votre choix [!DNL Experience Manager] ou à [!DNL Dynamic Media] pour diffusion dans le domaine public.
 
-### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
+### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
 
 Pour publier des ressources lors de leur chargement dans un dossier dont le [!DNL Dynamic Media Publish Mode] est défini sur **[!UICONTROL Lors de l’activation]** :
 
@@ -59,7 +59,7 @@ Pour publier des ressources lors de leur chargement dans un dossier dont le [!UI
 
    Pour afficher le statut de publication mis à jour de ces ressources, voir [Vérification du statut de publication](#check-publish-status).
 
-### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL  Publication sélective ] {#dynamic-media-publish-mode-set-to-selective-publish}
+### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL &#x200B; Publication sélective &#x200B;] {#dynamic-media-publish-mode-set-to-selective-publish}
 
 Pour publier des ressources lors du chargement dans un dossier avec le [!UICONTROL mode de publication Dynamic Media] défini sur **[!UICONTROL Publication sélective]** :
 

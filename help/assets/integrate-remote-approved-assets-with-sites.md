@@ -34,6 +34,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 * Configurez les [variables d’environnement](/help/implementing/cloud-manager/environment-variables.md#add-variables) suivantes pour AEM as a Cloud Service :
 
    * ASSET_DELIVERY_REPOSITORY_ID= « delivery-pxxxxx-eyyyyyy.adobeaemcloud.com » <br>
+
      `pXXXX` fait référence à l’ID de programme <br>
      `eYYYY` fait référence à l’identifiant d’environnement
 

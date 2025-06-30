@@ -50,6 +50,7 @@ L’environnement d’affichage AEM Assets offre des fonctionnalités de créati
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin d’un rapport de ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
    1. **Sélectionner l’intervalle de dates :** sélectionnez la période pour afficher l’activité de chargement ou de téléchargement dans le dossier.
+
    <br>
 
    >[!NOTE]
@@ -202,6 +203,7 @@ Pour planifier un rapport, procédez comme suit :
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier afin de générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
    1. Activer **Planifier un rapport :** activez cette option pour planifier le rapport à une date ultérieure ou récurrente.
+
       ![Planification d’un rapport](/help/assets/assets/schedule-reports1.svg)
 
    1. **Choisir la fréquence :** spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou ponctuel) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport ponctuel, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées entre le 10 et le 29 (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates**.

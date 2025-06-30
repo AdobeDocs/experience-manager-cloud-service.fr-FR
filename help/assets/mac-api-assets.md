@@ -292,7 +292,7 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 ## Respect des bonnes pratiques et des limites de notes {#tips-limitations}
 
-* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL  est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
+* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL &#x200B; est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
 
 * L’API HTTP Assets renvoie uniquement un sous-ensemble de métadonnées. Les espaces de noms sont codés en dur et seuls ces espaces de noms sont renvoyés. Pour obtenir des métadonnées complètes, consultez le chemin d’accès à la ressource `/jcr_content/metadata.json`.
 

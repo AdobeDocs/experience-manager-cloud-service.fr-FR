@@ -32,8 +32,8 @@ Si vous apportez des modifications ultérieures à la ressource, au dossier ou �
 >[!NOTE]
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
->>Assets doit être publié par lots. La recommandation pour la taille de lot est de 15 000.
->> Pour [!DNL Experience Manager Assets] en [!DNL Cloud Service], le taux de transfert observé dans les conditions du laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
+>&#x200B;>Assets doit être publié par lots. La recommandation pour la taille de lot est de 15 000.
+>&#x200B;> Pour [!DNL Experience Manager Assets] en [!DNL Cloud Service], le taux de transfert observé dans les conditions du laboratoire est de 1 000 ressources par heure. Le taux est observé avec une taille moyenne de 10 Mo de ressources.
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +93,12 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 >
 > * Les utilisateurs existants appartenant au groupe DAM-Users ont un accès en lecture sur le chemin d’accès « /conf/global/settings/cloudconfigs/mediaportal »
 > * Les nouveaux utilisateurs (ou utilisateurs non-administrateurs) ont besoin des droits suivants pour publier sur Brand Portal.
->   > Chemins d’accès :
->   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   >`/libs : jcr:read`
->   >`/conf : jcr:read`
->   >`/content : jcr:read, crx:replicate`
->   >`/content/dam/ : jcr:read,modify, crx:replicate`
+>   &#x200B;> Chemins d’accès :
+>   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   &#x200B;>`/libs : jcr:read`
+>   &#x200B;>`/conf : jcr:read`
+>   &#x200B;>`/content : jcr:read, crx:replicate`
+>   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
