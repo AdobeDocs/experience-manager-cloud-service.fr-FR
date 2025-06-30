@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 924fa9e731935ca43387801d10ddd339929cc3d4
 workflow-type: tm+mt
 source-wordcount: '6320'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -389,7 +389,7 @@ ht-degree: 98%
          + [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Panneau côté éditeur](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Modifier des pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
-         + [Publication de pages à partir de l’éditeur de page](/help/sites-cloud/authoring/page-editor/publishing.md)
+         + [Publication de pages à partir de l’éditeur de pages](/help/sites-cloud/authoring/page-editor/publishing.md)
          + [Modèles de page](/help/sites-cloud/authoring/page-editor/templates.md)
          + [Ajouter des annotations de page](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [Éditeur de texte enrichi](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -717,7 +717,7 @@ ht-degree: 98%
    + Bonnes pratiques{#best-practices}
       + [Bonnes pratiques de recherche](/help/assets/search-best-practices.md)
       + [Gestion des métadonnées et bonnes pratiques](/help/assets/metadata-best-practices.md)
-   + Intégration avec Figma {#integration-figma}
+   + Intégration à Figma {#integration-figma}
       + [Intégration native à Figma](/help/assets/integrate-aem-assets-with-figma.md)
    + Intégration à Adobe Workfront {#integrations}
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
@@ -730,8 +730,8 @@ ht-degree: 98%
       + [Intégration native à Adobe Express](/help/assets/native-integration-adobe-express.md)
    + Intégration à Creative Cloud {#integration-creative-cloud}
       + [Connexion d’AEM Assets à Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
-   + Intégration d’AEM Assets à Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
-      + [Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + Intégrer AEM Assets à Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
+      + [Intégrer AEM Assets lors de la création de contenu pour Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Formulaires {#forms}
    + Vue d’ensemble {#forms-overview}
       + [Présentation](/help/forms/home.md)
@@ -1081,8 +1081,8 @@ ht-degree: 98%
          + [Publication et déploiement de formulaires : Guide de publication de l’éditeur universel](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Intégration du modèle de données de formulaire : intégration des formulaires au modèle de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Segments réutilisables, modulaires et autonomes : création et utilisation de fragments de formulaire dans les formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Segments réutilisables, modulaires et autonomes : création et utilisation de fragments de formulaire dans des formulaires](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Résolution des erreurs 403 lors de l’envoi de formulaires dans Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
          + [Créer votre premier formulaire : Guide de démarrage rapide avec Google Sheets et Excel](/help/edge/docs/forms/tutorial.md)
          + [Création de formulaires à l’aide de Google Sheets ou d’Excel : Guide détaillé](/help/edge/docs/forms/create-forms.md)
@@ -1214,14 +1214,14 @@ ht-degree: 98%
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
-      + [Environnements de test spécialisés (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [Environnements de test spécialisés (version bêta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajouter un référentiel externe (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gestion des jetons d’accès des référentiels externes (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Ajouter un référentiel externe (version bêta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gérer les jetons d’accès des référentiels externes (version bêta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
