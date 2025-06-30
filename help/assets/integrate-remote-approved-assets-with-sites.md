@@ -42,7 +42,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId] : vous devez envoyer un ticket d’assistance Adobe pour obtenir l’identifiant du client IMS.
 
-     ou configurez les [ paramètres OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
+     ou configurez les [ paramètres OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=fr) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
 
    1. Connectez-vous à la console et cliquez sur **[!UICONTROL OSGi] >** ou
 Utilisez l’URL directe, par exemple : `https://localhost:4502/system/console/configMgr`.
@@ -63,11 +63,11 @@ où `pXXXX` fait référence à l’ID de programme
 
       ![Fenêtre de configuration OSGi de la configuration Dynamic Media de nouvelle génération](/help/assets/assets/remote-assets-osgi.png)
 
-  En savoir plus sur l’authentification [IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+  En savoir plus sur l’authentification [IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=fr).
 
   Pour plus d’informations sur la configuration d’OSGi, consultez les documents suivants :
 
-   * [Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) pour AEM as a Cloud Service
+   * [Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr) pour AEM as a Cloud Service
    * [Configuration d’OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr) pour AEM 6.5
 
 * Accès IMS pour vous connecter à une instance AEM as a Cloud Service de gestion des ressources numériques distante. Il fait référence à l’auteur Sites qui dispose d’un accès IMS à l’environnement DAM distant.
@@ -119,7 +119,7 @@ Suivez les étapes ci-dessous pour utiliser des ressources distantes dans un fra
 
    >[!NOTE]
    >
-   >Si vous ne disposez pas d’un modèle de fragment de contenu AEM, vous devrez peut-être en [créer un](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Si vous ne disposez pas d’un modèle de fragment de contenu AEM, vous devrez peut-être en [créer un](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=fr).
 
 1. Cliquez sur l’icône ![icône en forme de coche](/help/assets/assets/do-not-localize/checkmark-icon.svg) en regard du composant de texte.
 1. Sélectionnez **[!UICONTROL Distant]** pour récupérer la ressource à partir du DAM distant. <br>

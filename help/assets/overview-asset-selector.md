@@ -202,7 +202,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -286,4 +286,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [Intégration du sélecteur de ressources à diverses applications](/help/assets/integrate-asset-selector.md)
 >* [Propriétés du sélecteur de ressources](/help/assets/asset-selector-properties.md)
 >* [Intégration du sélecteur de ressources à Dynamic Media avec fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Visuels de produit optimisés par l’intégration AEM Assets pour Commerce](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)
+>* [Visuels de produit optimisés par l’intégration AEM Assets pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce/product-visuals/overview)
