@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Les données dynamiques telles que le prix ou l’inventaire ne sont pas mises e
 
 ## &#x200B;9. Comment l’invalidation du cache pour le Dispatcher AEM fonctionne-t-elle avec AEM et la solution de commerce ?
 
-Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou l’inventaire, Adobe recommande d’effectuer le rendu des données côté client. Pour plus d’informations sur l’invalidation du cache TTL, voir [Optimisation du cache Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=fr)
+Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou l’inventaire, Adobe recommande d’effectuer le rendu des données côté client. Pour plus d’informations sur l’invalidation de cache TTL, consultez [Optimiser le cache de Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=fr)
 
 ## &#x200B;10. Y a-t-il une recommandation sur la recherche unifiée dans le contenu AEM avec Commerce ?
 
