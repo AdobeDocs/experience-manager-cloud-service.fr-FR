@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: fdd74e4d9b74600fd462e951046abfb1bb8e203b
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 8%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
 # Importation de formulaires de métadonnées de [!DNL Admin View] vers [!DNL Assets View] {#import-metadata-forms-from-admin-view-to-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’IU</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activer Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] vous permet d’importer des formulaires de métadonnées et leurs associations de dossiers de [!DNL Admin View] vers [!DNL Assets View].
 
@@ -83,9 +46,8 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 
    * Cliquez sur l’en-tête de colonne pour trier le tableau par [!UICONTROL Nom], [!UICONTROL Modifié] ou [!UICONTROL Auteur].
    * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Supprimer du ou des dossiers)]** puis vérifiez le nom du dossier dans le chemin d’accès au dossier pour vous assurer que le dossier est correctement transféré.
-
      ![page vérifier les formulaires de métadonnées](/help/assets/assets/confirm-ported-folder.png)
-   * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Modifier]** pour afficher toutes les configurations prises en charge du formulaire de métadonnées. Consultez [Configuration du Forms de métadonnées](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) pour plus d’informations sur les formulaires de métadonnées, leurs composants et champs.
+   * Sélectionnez le formulaire importé et cliquez sur **[!UICONTROL Modifier]** pour afficher toutes les configurations prises en charge du formulaire de métadonnées. Consultez [Configuration du Forms de métadonnées](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) pour plus d’informations sur les formulaires de métadonnées, leurs composants et champs.
 
    ![page vérifier les formulaires de métadonnées](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -94,8 +56,8 @@ En tant qu’administrateur, procédez comme suit pour importer les formulaires 
 Après avoir importé les formulaires de métadonnées de [!DNL Admin View] vers [!DNL Assets View], procédez comme suit pour vérifier l’importation :
 
 1. Accédez à l’un des dossiers associés au formulaire de métadonnées importé.
-1. Accédez à la page des détails d’une [ ressource](/help/assets/navigate-assets-view.md#preview-assets) et vérifiez que les composants de métadonnées, les champs de composant et les valeurs de champ pris en charge sont synchronisés à partir de [!DNL Admin View]. Consultez l’article [Métadonnées dans Assets Essentials](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/metadata) pour plus d’informations sur les composants de métadonnées, les champs de composant et les valeurs de champ.
+1. Accédez à la page des détails d’une [ ressource](/help/assets/navigate-assets-view.md#preview-assets) et vérifiez que les composants de métadonnées, les champs de composant et les valeurs de champ pris en charge sont synchronisés à partir de [!DNL Admin View]. Consultez l’article [Métadonnées dans Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) pour plus d’informations sur les composants de métadonnées, les champs de composant et les valeurs de champ.
 
    >[!NOTE]
    >
-   > Dans [[!DNL Assets View] la page de détails](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) ou [[!DNL Admin View] la page de propriétés](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/administer/metadata-schemas), les modifications apportées aux valeurs de propriété des métadonnées sont automatiquement synchronisées entre les deux interfaces. Toutefois, les modifications structurelles du formulaire, telles que l’ajout ou la suppression de champs, ou d’autres modifications, ne sont pas synchronisées.
+   > Dans [[!DNL Assets View] la page de détails](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) ou [[!DNL Admin View] la page de propriétés](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), les modifications apportées aux valeurs de propriété des métadonnées sont automatiquement synchronisées entre les deux interfaces. Toutefois, les modifications structurelles du formulaire, telles que l’ajout ou la suppression de champs, ou d’autres modifications, ne sont pas synchronisées.

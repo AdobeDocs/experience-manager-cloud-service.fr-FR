@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques en matière de métadonnées pour g
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 2%
+source-wordcount: '1384'
+ht-degree: 1%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # Gestion des métadonnées et bonnes pratiques {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Pour que votre entreprise se démarque et interagisse avec davantage de clients, il est essentiel d’utiliser des visuels de haute qualité tels que des images, des vidéos et d’autres ressources numériques. Pour ce faire, vous avez besoin d’un processus qui vous permet d’ajouter des métadonnées à toutes les ressources numériques, afin qu’elles puissent être facilement recherchées. Les métadonnées sont les données qui fournissent des informations essentielles sur les ressources numériques, notamment leur nom, leur type, leur emplacement dans un référentiel, leur date de modification et les balises associées. Les métadonnées rationalisent la gestion des ressources, améliorent la recherche et l’accessibilité, et assurent un contrôle efficace des versions.
 
@@ -131,7 +97,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -200,4 +166,4 @@ Examinez la chaîne d’approvisionnement du contenu pour trouver les sources de
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.

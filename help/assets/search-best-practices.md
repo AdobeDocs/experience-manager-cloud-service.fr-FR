@@ -5,48 +5,14 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2570'
-ht-degree: 9%
+source-wordcount: '2527'
+ht-degree: 8%
 
 ---
 
 # Bonnes pratiques de recherche d’AEM Assets
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue. Par conséquent, la fonctionnalité de recherche de ressources dans [!DNL Adobe Experience Manager Assets] est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs de gestion des ressources numériques.
 
@@ -80,7 +46,7 @@ Vous pouvez rendre la recherche plus spécifique en ajoutant votre mot-clé de r
 
 <!--![Finding exact match](assets/simple-search-2.png)-->
 
-La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets **&#x200B;**.
+La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets ****.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
@@ -133,7 +99,7 @@ De même, vous pouvez rechercher toutes les voitures, mais pas les jeep. La requ
 
 ![Recherche à l’aide de l’opérateur NOT](assets/images-jeep.png)
 
-La vue Assets **&#x200B;**&#x200B;ne prend pas en charge l’utilisation des opérateurs.
+La vue Assets **** ne prend pas en charge l’utilisation des opérateurs.
 
 ## Caractères génériques {#wildcards}
 
@@ -157,7 +123,7 @@ L’astérisque est un opérateur de caractère générique utilisé pour élarg
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
-La vue Assets **&#x200B;**&#x200B;ne prend pas en charge l’utilisation de caractères génériques.
+La vue Assets **** ne prend pas en charge l’utilisation de caractères génériques.
 
 ## Filtres {#filters}
 
@@ -202,10 +168,10 @@ Exécutez les étapes suivantes dans **[!UICONTROL vue Administration]** :
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
-Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
+Exécutez les étapes suivantes dans la vue Assets **** :
 
 1. Saisissez `classic car` dans la barre de recherche.
-1. Accédez à Filtres. Sous [!UICONTROL &#x200B; Type MIME &#x200B;], sélectionnez [!UICONTROL PDF].
+1. Accédez à Filtres. Sous [!UICONTROL  Type MIME ], sélectionnez [!UICONTROL PDF].
 1. Accédez à [!UICONTROL Statut de la ressource], sélectionnez [!UICONTROL Tous] pour inclure toutes les ressources publiées et dépubliées.
 
 **Scénario 5 : rechercher toutes les images à l’exception de PNG**
@@ -218,7 +184,7 @@ Lorsque vous n’êtes pas sûr du titre ou de la méta-description d’une ress
 
 <!--![Search all images except jeep](assets/images-png.png)-->
 
-Pour rechercher des ressources à l’aide du scénario mentionné dans la vue Assets **&#x200B;**, procédez comme suit :
+Pour rechercher des ressources à l’aide du scénario mentionné dans la vue Assets ****, procédez comme suit :
 
 1. Accédez aux filtres de recherche.
 1. Accédez à Filtres. Sous [!UICONTROL Type MIME], sélectionnez tous les types MIME donnés, mais désélectionnez PNG.
@@ -241,7 +207,7 @@ Pour rechercher le scénario 6, procédez comme suit :
 
 <!--![Scenario 6](assets/scenario-6.png)-->
 
-Le scénario 6 ne peut pas être exécuté dans la vue Assets **&#x200B;**&#x200B;car il ne prend pas en charge l’utilisation de caractères génériques.
+Le scénario 6 ne peut pas être exécuté dans la vue Assets **** car il ne prend pas en charge l’utilisation de caractères génériques.
 
 **Scénario 7 : recherchez tous les documents du référentiel Experience Manager dans lesquels le contenu du document doit inclure des `car` mais en exclure `classic`. La même condition s’applique aux métadonnées d’une ressource.**
 
@@ -253,7 +219,7 @@ Priorité 2 : Balises intelligentes
 
 <!--![Scenario 7](assets/scenario-7.png)-->
 
-Le scénario 7 ne peut pas être exécuté dans la vue Assets **&#x200B;**&#x200B;car il ne prend pas en charge l’utilisation de caractères génériques.
+Le scénario 7 ne peut pas être exécuté dans la vue Assets **** car il ne prend pas en charge l’utilisation de caractères génériques.
 
 <!--
 **Scenario 9: Search for all images except PNG**
@@ -277,7 +243,7 @@ Vous pouvez capturer un critère spécifique à l’aide de différents filtres 
 
 <!--![Search using tags](assets/search-tags.png)-->
 
-La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets **&#x200B;**.
+La recherche affiche également des résultats similaires si vous travaillez dans la vue Assets ****.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
@@ -294,7 +260,7 @@ Sélectionnez la ressource > accédez aux points de suspension en haut à droite
 
 1. Remarquez la barre de recherche. La miniature de la ressource sélectionnée s’affiche sur la barre de recherche pour indiquer vos besoins en matière de recherche. Par conséquent, il renvoie des ressources avec des balises intelligentes similaires.
 
-Exécutez les étapes suivantes dans la vue Assets **&#x200B;**&#x200B;:
+Exécutez les étapes suivantes dans la vue Assets **** :
 
 1. Recherchez la ressource en fonction de vos besoins.
 1. Sélectionnez l’option image > accéder à [!UICONTROL Rechercher une image similaire] dans la barre de navigation supérieure.
@@ -302,7 +268,7 @@ Vous accédez ainsi à la collection de ressources avec des métadonnées et une
 
 ## Facettes de recherche personnalisées {#custom-search-facets}
 
-Les facettes de recherche dans Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéfini ou . Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats en fonction de vos besoins. Lisez [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr#) pour obtenir un guide détaillé sur l’ajout d’un prédicat personnalisé.
+Les facettes de recherche dans Adobe Experience Manager vous permettent de rechercher des ressources de plusieurs manières plutôt que dans un seul ordre taxonomique, prédéfini ou . Vous pouvez personnaliser les facettes de recherche et ajouter des prédicats en fonction de vos besoins. Lisez [Facettes de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) pour obtenir un guide détaillé sur l’ajout d’un prédicat personnalisé.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later

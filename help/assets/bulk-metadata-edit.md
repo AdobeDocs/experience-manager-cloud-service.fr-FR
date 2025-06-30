@@ -1,52 +1,15 @@
 ---
 title: Modification des métadonnées en bloc dans  [!DNL Assets View]
-description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [!DNL ! Vue Assets] simultanément.
+description: Découvrez comment mettre à jour un ensemble prédéfini de champs de métadonnées standard pour plusieurs ressources disponibles sur la [DNL! Vue Assets] simultanément.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
 # Modification des métadonnées en bloc dans [!DNL Assets View]{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 La fonctionnalité **[!DNL Bulk Metadata Edit]** de [!DNL Assets View] vous permet de modifier simultanément un ensemble prédéfini de champs de métadonnées standard pour plusieurs fichiers de ressources. Sélectionnez plusieurs ressources et mettez à jour en une fois leur ensemble prédéfini de métadonnées standard au lieu de mettre à jour individuellement ces métadonnées standard pour chaque ressource. Cette fonctionnalité permet de maintenir l’efficacité, la cohérence et la précision de l’ensemble des propriétés de métadonnées standard sur les grands ensembles de ressources, ce qui améliore la capacité de recherche et l’organisation de ces ressources.
 
@@ -58,14 +21,13 @@ Exécutez les étapes suivantes pour modifier en bloc les métadonnées de plusi
 1. Recherchez des ressources spécifiques ou recherchez-les à l’aide de mots-clés dans la barre de recherche.
 1. Sélectionnez les ressources et cliquez sur **[!UICONTROL Modification des métadonnées en bloc]** dans le menu supérieur.
    ![bulk-metadata-edit](/help/assets/assets/bulk-metadata-edit1.png)
-1. Sur la page [!UICONTROL &#x200B; Modifier les métadonnées &#x200B;], modifiez les champs suivants dans le panneau **[!UICONTROL Propriétés]** :
+1. Sur la page [!UICONTROL  Modifier les métadonnées ], modifiez les champs suivants dans le panneau **[!UICONTROL Propriétés]** :
    * **[!UICONTROL Statut] :** sélectionnez un statut pour les ressources sélectionnées.
    * **[!UICONTROL Date d’expiration] :** définissez une date après laquelle les ressources ne sont plus valides ou nécessaires.
    * **[!UICONTROL Auteur] :** spécifiez le nom de l’auteur.
    * **[!UICONTROL Mots-clés] :** ajoutez des termes ou des chaînes de texte spécifiques qui fournissent des informations générales sur les ressources afin d’améliorer leur visibilité. Ajoutez un mot-clé et appuyez sur **Entrée** ou **Retour** pour ajouter un autre mot-clé à la liste.
    * **[!UICONTROL Balises] :** cliquez sur ![modification des métadonnées en bloc](/help/assets/assets/tags-icon.svg) pour sélectionner des balises dans les options disponibles. Les balises fournissent des informations plus spécifiques sur les ressources et améliorent leur visibilité. Les balises déjà appliquées aux ressources sélectionnées s’affichent dans le panneau **[!UICONTROL Propriétés]**. Si vous ne trouvez pas les balises appropriées, créez-les et affectez-les aux ressources sélectionnées. Voir [Gérer les balises dans [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) pour plus d’informations sur la création et l’affectation de balises à des ressources.
    * Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les mises à jour de métadonnées ci-dessus aux ressources sélectionnées. Une fois enregistrés, les **[!UICONTROL Mots-clés]** et **[!UICONTROL Balises]** sont ajoutés, tandis que les détails mis à jour pour **[!UICONTROL Statut]**, **[!UICONTROL Date d’expiration]** et **[!UICONTROL Auteur]** remplacent leurs détails existants.
-
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

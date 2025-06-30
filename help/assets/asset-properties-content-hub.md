@@ -3,59 +3,16 @@ title: Aperçu de la ressource et de ses propriétés dans  [!DNL the Content Hu
 description: Découvrez comment prévisualiser des ressources et des propriétés dans  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 16%
+source-wordcount: '636'
+ht-degree: 11%
 
 ---
 
 # Aperçu de la ressource et de ses propriétés dans Content Hub {#asset-properties}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
 ![Image de bannière de métadonnées](assets/metadata-banner-image.png)
-
->[!AVAILABILITY]
->
->Le guide de Content Hub est désormais disponible au format PDF. Téléchargez l’intégralité du guide et utilisez l’assistant IA Adobe Acrobat pour répondre à vos requêtes.
->
->[!BADGE Guide PDF de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/fr/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub] vous permet d’afficher des informations sur la ressource, ce qui est essentiel pour une distribution efficace des ressources. Il s’agit de la collecte de toutes les données disponibles pour une ressource.
 
@@ -148,7 +105,7 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 * **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe Sensei pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités d’IA d’Adobe Sensei.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités d’IA d’Adobe Sensei.
 
 * Date du chargement
 

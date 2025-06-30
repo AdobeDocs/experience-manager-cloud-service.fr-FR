@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 76%
+source-wordcount: '1691'
+ht-degree: 77%
 
 ---
 
 # Gestion des ressources numériques à l’aide de l’API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime et Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouvelle</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Intégration d’AEM Assets à Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilité de l’interface utilisateur</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nouveau</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Activation de Dynamic Media Prime et Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Bonnes pratiques de recherche</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Bonnes pratiques relatives aux métadonnées</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Hub de contenus</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Fonctionnalités Dynamic Media avec OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentation de développement pour AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -329,7 +292,7 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 ## Respect des bonnes pratiques et des limites de notes {#tips-limitations}
 
-* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL &#x200B; est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
+* Assets et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] et l’API HTTP lorsque l’heure de [!UICONTROL  est atteinte] L’API renvoie une erreur 404 si l’[!UICONTROL Heure d’activation] est dans le futur ou l’[!UICONTROL Heure de désactivation] est dans le passé.
 
 * L’API HTTP Assets renvoie uniquement un sous-ensemble de métadonnées. Les espaces de noms sont codés en dur et seuls ces espaces de noms sont renvoyés. Pour obtenir des métadonnées complètes, consultez le chemin d’accès à la ressource `/jcr_content/metadata.json`.
 
