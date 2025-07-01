@@ -4,10 +4,10 @@ description: Accès, connexion, cas d’utilisation pris en charge et problèmes
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ La gestion de vos ressources numériques à l’aide d’[!DNL Assets View] ne n
 * **Étape 2** : [rechercher](/help/assets/search-assets-view.md) et [télécharger](/help/assets/manage-organize-assets-view.md#download) des ressources.
 * **Étape 3** : [gérer et organiser](/help/assets/manage-organize-assets-view.md) vos ressources.
 
-Pour utiliser [!DNL Assets View], connectez-vous à l’adresse [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). Lors de la connexion, sélectionnez `Company or School Account`. Pour recevoir un accès, contactez l’administrateur ou l’administratrice de votre organisation.
+Pour utiliser [!DNL Assets View], connectez-vous à l’adresse [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). Lors de la connexion, sélectionnez `Company or School Account`. Pour recevoir l’accès, contactez l’administrateur de votre entreprise.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -66,7 +66,7 @@ Vous trouverez ci-dessous les différentes tâches de gestion des actifs numéri
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

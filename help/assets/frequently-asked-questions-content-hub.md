@@ -2,10 +2,10 @@
 title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Qu’est-ce que Content Hub ? {#what-is-content-hub}
 
-Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
+Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins. En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
 

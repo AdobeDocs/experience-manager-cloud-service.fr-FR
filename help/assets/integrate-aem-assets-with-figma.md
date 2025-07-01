@@ -4,12 +4,13 @@ description: Découvrez comment intégrer  [!DNL AEM Assets]  avec pour accéder
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 1%
 
 ---
+
 
 # Intégration d’[!DNL AEM Assets] à [!DNL Figma]{#integrate-aem-assets-with-figma}
 
@@ -39,7 +40,7 @@ Vous pouvez également accéder aux [[!DNL Adobe Experience Manager (AEM) Assets
 
 [Accédez au panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)] ](#access-aem-assets-connector) dans l’interface de conception de [!DNL Figma] et procédez comme suit :
 
-1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [ Utilisation du sélecteur de ressources ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Recherchez des ressources dans le panneau Connecteur Assets [!UICONTROL Adobe Experience Manager (AEM)]. Pour plus d’informations, voir [ Utilisation du sélecteur de ressources ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Faites glisser et déposez la ressource sur la zone de travail ou sélectionnez la ressource et cliquez sur **[!UICONTROL Sélectionner]** pour apporter la ressource sur la zone de travail.
 
