@@ -4,10 +4,10 @@ description: En savoir plus sur la diffusion de fragments de contenu AEM avec Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ Pour obtenir un aperçu, la diffusion de fragments de contenu avec OpenAPI peut 
 
 Les origines autorisées CORS définies du côté de la configuration du Dispatcher, spécifiquement pour GraphQL, ne sont pas prises en compte par cette API.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## Limites de taux d’API {#api-rate-limits}
+
+L’API autorise de nouvelles requêtes à raison de 200 requêtes maximum par seconde et par environnement.
+
+Une fois cette limite dépassée, l’API commence à envoyer des erreurs 429. Ces erreurs doivent être gérées par toutes les applications clientes et les requêtes ayant échoué doivent être relancées à la suite d’une reprise exponentielle.
 
 <!-- 
 ## Limitations {#limitations}
