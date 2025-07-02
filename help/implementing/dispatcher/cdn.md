@@ -6,8 +6,8 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 35%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Pour les cas d’utilisation d’authentification légers, notamment les parties
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="Le réseau CDN client (ou proxy) pointe vers le réseau CDN géré par AEM"
+>title="Le CDN du client ou de la cliente (ou proxy) pointe vers le CDN géré par AEM."
 >abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner."
 
 Si un client ou une cliente doit utiliser son réseau CDN existant (ou tout type de proxy inverse, par exemple une répartition de charge ou un WAF), il ou elle peut le gérer et le pointer vers le réseau CDN géré par AEM, dans la mesure où les conditions suivantes sont satisfaites :
