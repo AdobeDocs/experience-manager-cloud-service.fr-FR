@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 83%
 
 ---
@@ -146,7 +146,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 
 ### Problèmes connus {#known-issues-21331}
 
-Aucun.
+* SITES-33177 : les styles de section stockés sous forme de chaînes séparées par des virgules sont rompus.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21331}
 
