@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 54%
+source-wordcount: '1336'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 54%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Cet article |
 
 AEM Forms prend en charge des fonctions personnalisées, ce qui permet aux utilisateurs et utilisatrices de définir des fonctions JavaScript pour implémenter des règles métier complexes. Ces fonctions personnalisées étendent les fonctionnalités des formulaires en facilitant la manipulation et le traitement des données saisies afin de répondre à des exigences spécifiques. Ils permettent de modifier dynamiquement le comportement du formulaire en fonction de critères prédéfinis. Les fonctions personnalisées permettent également aux développeurs et développeuses d’appliquer une logique de validation complexe, d’effectuer des calculs dynamiques et de contrôler l’affichage ou le comportement des éléments de formulaire en fonction des interactions utilisateur ou de critères prédéfinis.
@@ -214,6 +214,16 @@ Pour répertorier les fonctions personnalisées dans l’éditeur de règles d�
 ```
 
 Si l’utilisateur ou l’utilisatrice n’ajoute aucune annotation JavaScript à la fonction personnalisée, celle-ci n’est pas répertoriée dans l’éditeur de règles d’un formulaire adaptatif.
+
+## Problème Connu
+
+* Les fonctions personnalisées ne prennent pas en charge les littéraux d’expression régulière JavaScript. L’utilisation de littéraux regex dans une fonction personnalisée entraîne des erreurs lors de l’exécution. Par exemple :
+  `const pattern = /^abc$/;`
+
+  Pour garantir la compatibilité, utilisez le constructeur RegExp dans les fonctions personnalisées.
+
+  `const pattern = new RegExp("^abc$");`
+Refactorisez les expressions régulières pour utiliser le constructeur RegExp afin d’assurer une exécution cohérente et fiable.
 
 ## Étape suivante
 
