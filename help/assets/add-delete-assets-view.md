@@ -4,10 +4,10 @@ description: Chargez des ressources vers  [!DNL Assets view], affichez les statu
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Pour ajouter de nouvelles ressources à utiliser, chargez quelques ressources à
 Vous pouvez utiliser les méthodes suivantes pour charger une ou plusieurs ressources ou un dossier contenant des ressources :
 
 * Faites glisser des ressources ou des dossiers sur l’interface utilisateur et suivez les instructions à l’écran.
-* Cliquez sur l’option **[!UICONTROL Ajouter Assets]** dans la barre d’outils et ajoutez des fichiers à la boîte de dialogue de chargement.
+* Cliquez sur l’option **[!UICONTROL Ajouter des ressources]** dans la barre d’outils et ajoutez des fichiers à la boîte de dialogue de chargement.
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ Les utilisateurs peuvent supprimer individuellement des ressources ou des dossie
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).

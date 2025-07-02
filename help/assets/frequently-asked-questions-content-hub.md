@@ -2,10 +2,10 @@
 title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## Qu’est-ce que Content Hub ? {#what-is-content-hub}
 
-Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
+Content Hub est une fonctionnalité d’Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub permet aux équipes plus larges de découvrir facilement des ressources pertinentes et approuvées grâce à un portail intuitif et de les adapter rapidement à leurs besoins. En outre, Content Hub fournit un mécanisme d’ingestion qui permet à ces utilisateurs et utilisatrices de se servir facilement lorsqu’ils chargent des ressources dans la gestion des ressources numériques. Cela permet de répondre directement aux besoins des entreprises en termes de vitesse de création de contenu, tout en préservant la cohérence de la marque et la conformité avec les garanties appropriées.
 
@@ -84,7 +84,7 @@ Il existe quelques configurations de la manière dont les utilisateurs et utilis
    >
    >La personne affectée aux profils de produits Express et Assets dans deux Admin Consoles doit avoir la même adresse e-mail et utiliser un compte professionnel **d’entreprise ou d’établissement scolaire**, et non **personnel**. La configuration idéale consiste à configurer les deux Admin Consoles en tant que **Federated ID** avec une relation de confiance entre elles, de sorte que l’utilisateur ou l’utilisatrice bénéficie d’une expérience d’authentification unique fluide. Certaines formules Express (par exemple, Express Équipe) ne prennent pas en charge Federated ID/l’authentification unique.
 
-Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[!UICONTROL # /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[#UICONTROL /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Puis-je configurer Content Hub de sorte que les directives de marque de mon entreprise s’affichent sous la forme d’un lien sur la page d’accueil ? {#content-hub-setup-brand-guidelines}
 
