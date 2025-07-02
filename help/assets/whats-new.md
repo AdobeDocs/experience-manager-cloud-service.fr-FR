@@ -2,10 +2,11 @@
 title: Nouveautés de Content Hub
 description: En savoir plus sur certaines des fonctionnalités de Content Hub récemment lancées
 role: User
-source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
+exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
+source-git-commit: 721be5448a43f4501aeb9d0017ad97cf0d851e58
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 44%
+source-wordcount: '441'
+ht-degree: 45%
 
 ---
 
@@ -49,7 +50,7 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 
 * Réduit le nombre de doublons - améliore l’intégrité des ressources. Des doublons sont nécessaires dans les autorisations basées sur des dossiers lorsqu’une même ressource est partagée avec différents groupes.
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
 
 ## Branding de l’interface utilisateur {#ui-branding}
 
@@ -57,7 +58,7 @@ Content Hub permet désormais aux administrateurs de personnaliser l’interface
 
 ![Image de marque de l’UI](/help/assets/assets/content-hub-ui-branding.png)
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
 
 ## Partage de lien public {#public-link-sharing}
 
@@ -65,7 +66,7 @@ Content Hub prend désormais en charge la génération de liens partageables pou
 
 ![Image de marque de l’UI](/help/assets/assets/public-and-private-link.png)
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
 
 ## Gouvernance des collections {#collections-governance}
 
@@ -73,7 +74,7 @@ Content Hub vous permet désormais de contrôler l’accès aux collections lors
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
 
 >[!NOTE]
 >
@@ -83,7 +84,7 @@ Content Hub vous permet désormais de contrôler l’accès aux collections lors
 
 Content Hub vous permet désormais de télécharger les ressources sélectionnées et leurs rendus dans un fichier ZIP et non plus dans des fichiers séparés, ce qui simplifie la gestion des fichiers.
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
 
 ## Rendus Dynamic Media dans Content Hub {#dynamic-media-renditions}
 
@@ -91,4 +92,4 @@ Accédez à tous vos rendus de paramètres prédéfinis Dynamic Media et recadra
 
 ![Rendus Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 
-|Informatif (par défaut)|[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE En savoir plus]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
