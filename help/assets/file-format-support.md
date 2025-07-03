@@ -37,8 +37,8 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] ne prend en charge que les formats de fichiers répertoriés dans cet article.
->>Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
->>Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
+>&#x200B;>Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
+>&#x200B;>Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
 
 ## Formats Adobe {#adobe-formats}
 
