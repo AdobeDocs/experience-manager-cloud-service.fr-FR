@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 99%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +33,12 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 | ✓ | Pris en charge |
 | * | Référez-vous aux remarques ci-dessous. |
 | - | Non applicable |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] ne prend en charge que les formats de fichiers répertoriés dans cet article.
+>>Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
+>>Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
 
 ## Formats Adobe {#adobe-formats}
 
@@ -192,7 +198,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Conseils et restrictions {#limitations-and-tips}
 
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de fichiers volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de ressources volumineuses, l’opération d’extraction des métadonnées peut parfois échouer.
 
 ## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#video-dynamic-media-transcoding}
 
