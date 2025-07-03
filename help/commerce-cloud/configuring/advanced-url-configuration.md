@@ -11,10 +11,11 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 100%
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) offrent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation pour les moteurs de recherche (SEO). La vidéo suivante explique comment configurer le `UrlProvider` service et les fonctionnalités du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/38579/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuration {#configuration}
 

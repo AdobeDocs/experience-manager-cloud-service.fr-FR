@@ -4,7 +4,8 @@ description: Découvrez comment personnaliser les composants principaux AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 96%
@@ -132,7 +133,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ad
 
 Avant de passer au code AEM, il est utile d’explorer l’[Aperçu GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) à l’aide d’un IDE GraphQL. L’intégration d’Adobe Commerce avec AEM s’effectue principalement par le biais d’une série de requêtes GraphQL. Comprendre et modifier les requêtes GraphQL est l’un des principaux moyens d’étendre les composants principaux CIF.
 
-Ensuite, utilisez un IDE GraphQL pour vérifier que l’attribut `eco_friendly` a été ajouté au jeu d’attributs du produit. Les captures d’écran de ce tutoriel utilisent l’extension Google Chrome _Altair GraphQL Client_.
+Ensuite, utilisez un IDE GraphQL pour vérifier que l’attribut `eco_friendly` a été ajouté au jeu d’attributs du produit. Les captures d’écran de ce tutoriel utilisent l’extension _Altair GraphQL Client_ Google Chrome.
 
 1. Ouvrez l’IDE GraphQL et entrez l’URL `http://<commerce-server>/graphql` dans la barre d’URL de votre IDE ou extension.
 2. Ajoutez la [requête de produit](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) suivante, `YOUR_SKU` correspondant au **SKU** du produit utilisé dans l’exercice précédent :
@@ -179,7 +180,7 @@ Ensuite, utilisez un IDE GraphQL pour vérifier que l’attribut `eco_friendly` 
 
 ## Mettre à jour le modèle Sling du teaser de produit {#updating-sling-model-product-teaser}
 
-Vous allez ensuite étendre la logique commerciale du teaser de produit en mettant en œuvre un modèle Sling. [Les modèles Sling](https://sling.apache.org/documentation/bundles/models.html) sont des objets POJO (Plain Old Java™ Object) pilotés par les annotations et qui implémentent la logique métier nécessaire au composant. Ils sont utilisés avec les scripts HTL dans le cadre du composant. Suivez le [motif de délégation des modèles Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) afin de pouvoir étendre des parties du modèle de teaser de produit existant.
+Vous allez ensuite étendre la logique commerciale du teaser de produit en mettant en œuvre un modèle Sling. Les [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) sont des POJO (Plain Old Java™ Objects) pilotés par des annotations qui implémentent la logique commerciale nécessaire au composant. Ils sont utilisés avec les scripts HTL dans le cadre du composant. Suivez le [motif de délégation des modèles Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) afin de pouvoir étendre des parties du modèle de teaser de produit existant.
 
 Les modèles Sling sont implémentés sous forme de code Java™ et se trouvent dans le module **core** du projet généré.
 
@@ -385,7 +386,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
 
    Lors de l’appel d’une méthode de modèle Sling dans HTL, les parties `get` et `is` de la méthode sont ignorées et la première lettre est une minuscule. `isShowBadge()` devient donc `.showBadge`, et `isEcoFriendly` devient `.ecoFriendly`. La valeur booléenne renvoyée par `.isEcoFriendly()` détermine si `<span>Eco Friendly</span>` est affiché.
 
-   Vous trouverez plus d’informations sur `data-sly-test` et d’autres instructions de bloc HTL dans [La spécification HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=fr).
+   Vous trouverez plus d’informations sur les instructions de bloc `data-sly-test` et autres instructions de bloc HTL dans [La spécification HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=fr).
 
 1. Enregistrez les modifications et déployez les mises à jour dans AEM à l’aide de vos compétences Maven, à partir d’un terminal de ligne de commande :
 

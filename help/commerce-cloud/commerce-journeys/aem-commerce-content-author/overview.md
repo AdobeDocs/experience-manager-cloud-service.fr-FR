@@ -4,7 +4,8 @@ description: Commencez ici pour un parcours guidé à travers la création d’A
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 95%
@@ -43,7 +44,7 @@ Les informations présentées dans ce parcours peuvent être utiles à d’autre
 
 Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous apportent des connaissances fondamentales et vous proposent un lien vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content et Commerce, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content and Commerce, Adobe vous recommande de commencer par le début et de progresser de manière séquentielle.
 
 | Numéro | Article | Description |
 |---|---|---|

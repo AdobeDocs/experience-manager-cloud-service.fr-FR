@@ -1,33 +1,34 @@
 ---
-title: '[!DNL Live Search] Composant CIF de page de liste de produits'
-description: Utilisation de CIF composants pour activer le composant  [!DNL Live Search] Page de liste de produits sur un site AEM
+title: Composant CIF de la page de liste de produits [!DNL Live Search]
+description: Utilisation des composants CIF pour activer  [!DNL Live Search]  composant Page de liste de produits sur un site AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] CIF composant {#live-search-cif-component}
+# Composant [!DNL Live Search] CIF {#live-search-cif-component}
 
-La recherche en direct pour Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive, sans frais supplémentaires. La recherche en direct optimisée par Adobe Sensei utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat pertinentes et personnalisées.
+Live Search pour Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive sans coût supplémentaire. La recherche en direct optimisée par Adobe Sensei utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat pertinentes et personnalisées.
 
-Cette rubrique décrit l’utilisation d’un composant CIF d’AEM pour implémenter le widget [!DNL Live Search] Product Listing Page (PLP) sur votre site AEM.
+Cette rubrique décrit comment utiliser un composant AEM CIF pour implémenter le widget [!DNL Live Search] de page de liste de produits (PLP) dans votre site AEM.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-Cette rubrique suppose que vous avez configuré un [environnement AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr) local.
+Cette rubrique suppose que vous disposez d’un environnement [AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr) configuré.
 
-Le composant PLP nécessite l’installation du [[!DNL Live Search] composant CIF de fenêtre contextuelle](live-search-popover.md). Le widget PLP nécessite une variable de session de navigateur générée par la fenêtre contextuelle.
+Le composant PLP nécessite l’installation du composant [[!DNL Live Search] Popover CIF](live-search-popover.md). Le widget PLP nécessite une variable de session de navigateur générée par la fenêtre contextuelle.
 
 ## Mettre à jour le compositeur {#update-composer}
 
-Ajoutez des modules d’événement à `ui.frontend/package.json`.
+Ajoutez des modules d’événements aux `ui.frontend/package.json`.
 
-À la ligne 27, changez :
+À la ligne 27, modifiez :
 
 ```json
 ...
@@ -54,11 +55,11 @@ vers :
 
 ## Modifications des fichiers {#files-changes}
 
-Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!DNL Live Search]. Modifiez les fichiers suivants. Les numéros de ligne peuvent être légèrement différents de ceux affichés ici.
+Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité de [!DNL Live Search]. Modifiez les fichiers suivants. Les numéros de ligne peuvent être légèrement différents de ceux affichés ici.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  Ajoutez `core.cif.productlist.v1` à la ligne `embed`.
+  Ajoutez des `core.cif.productlist.v1` à la ligne de `embed`.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -89,7 +90,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  Créez le fichier `productlist.css`
+  Créer le fichier `productlist.css`
 
   ```css
     /* #search-plp-root */
@@ -281,7 +282,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/productlist.html
 
-  Créer un fichier `productlist.html` :
+  Créer un `productlist.html` de fichier :
 
   ```html
   <div
@@ -295,7 +296,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  Modifiez `.content.xml` à la ligne 6 :
+  Modifier le `.content.xml` à la ligne 6 :
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -303,7 +304,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  Modifiez `.content.xml` sur la ligne 21-22 :
+  Modifiez `.content.xml` ligne 21-22 :
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -311,7 +312,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  Modifiez `.content.xml` sur la ligne 26 :
+  Modifier le `.content.xml` à la ligne 26 :
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +320,7 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
 
 * ui.frontend/src/main/components/App/App.js
 
-  Modifiez `App.js` sur la ligne 47, juste au-dessus de `../../site/main.scss` :
+  Modifiez `App.js` à la ligne 47, juste au-dessus de la `../../site/main.scss` :
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -333,18 +334,18 @@ Plusieurs fichiers doivent être mis à jour pour activer la fonctionnalité [!D
   describe.skip('Product List Component Dialog', function () {
   ```
 
-## Pages non PLP {#non-plp-pages}
+## Pages non-PLP {#non-plp-pages}
 
-Il peut y avoir certaines catégories dans lesquelles la catégorie ou la page de catalogue par défaut est souhaitée, plutôt que d’utiliser le widget PLP. Dans AEM, ces pages de catégorie doivent être configurées manuellement.
+Il peut y avoir certaines catégories pour lesquelles la catégorie ou la page de catalogue par défaut est souhaitée, plutôt que d’utiliser le widget PLP. Dans AEM, ces pages de catégories doivent être configurées manuellement.
 
-1. Sur la page Auteur , sélectionnez un modèle de page de catégorie. _Venia Store - Home_ > _Catalog Page_ > _Venia Store - Category Page_ et sélectionnez &quot;Shop the look&quot; ou créez un modèle de page.
+1. Sur la page Auteur , sélectionnez un modèle de page de catégorie. _Venia Store - Accueil_ > _Page de catalogue_ > _Venia Store - Page de catégorie_ et sélectionnez « Shop the look » ou créez un modèle de page.
 
 ![Sélectionnez le modèle](../assets/cif-widget-1.jpg)
 
-1. Cliquez sur la section _Propriétés_ et sélectionnez l’onglet _Commerce_ .
+1. Cliquez sur la section _Propriétés_ et sélectionnez l’onglet _Commerce_.
 
-![Choisir les propriétés](../assets/cif-widget-2.jpg)
+![Choisissez Propriétés](../assets/cif-widget-2.jpg)
 
-1. Sélectionnez la catégorie à afficher avec le modèle de page de catégorie sélectionné.
+1. Choisissez la catégorie que vous souhaitez afficher avec le modèle de page de catégorie sélectionné.
 
-![Sélectionnez la catégorie](../assets/cif-widget-3.jpg)
+![Sélectionner la catégorie](../assets/cif-widget-3.jpg)

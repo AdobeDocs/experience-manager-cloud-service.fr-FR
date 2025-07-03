@@ -4,7 +4,8 @@ description: Découvrez comment gérer les pages et les modèles de catalogue de
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 83%
@@ -63,7 +64,7 @@ Les modèles peuvent être modifiés en ouvrant directement la page du modèle o
 
 ### Modèles spécifiques à une catégorie ou à un produit {#specific}
 
-CIF prend en charge plusieurs modèles en quelques clics seulement. Pour créer un autre modèle, sélectionnez le modèle générique dans la catégorie correspondante et créez une page à l’aide de l’action **Créer** .
+CIF prend en charge plusieurs modèles en quelques clics seulement. Pour créer un autre modèle, sélectionnez le modèle générique dans la catégorie correspondante et créez une page à l’aide de l’action **Créer**.
 
 ![créer une page de modèle](assets/create-template-page.png)
 
@@ -91,11 +92,11 @@ Le modèle peut être prévisualisé avec n’importe quelle catégorie/produit.
 
 ![créer un modèle ](assets/create-template-picker.png)
 
-Vous devez maintenant attribuer ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la catégorie **Shop The Look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
+Vous devez maintenant affecter ce modèle à la catégorie spécifique. Ouvrez les propriétés dans le menu **Informations sur la page** et passez à l’onglet commerce. Cliquez sur l’icône de dossier pour sélectionner la catégorie **Shop The Look** dans le sélecteur de catégorie. Il est possible d’affecter plusieurs catégories à un modèle et d’inclure également des sous-catégories en activant la case à cocher.
 
 ![créer un modèle associé](assets/create-template-associate.png)
 
-Revenez à la page d’accueil principale et cliquez sur **Shop The Look** pour afficher le modèle spécifique. Toutes les autres catégories utilisent toujours le modèle générique.
+Revenez à la page d’accueil principale et cliquez sur la catégorie **Shop The Look** pour afficher le modèle spécifique. Toutes les autres catégories utilisent toujours le modèle générique.
 
 ![créer le résultat du modèle](assets/create-template-result.png)
 
@@ -109,7 +110,7 @@ Maintenant que vous avez terminé cette partie du parcours, vous devriez :
 * comprendre comment fonctionnent les modèles génériques
 * avoir créé un modèle individuel ;
 
-Tirez parti de ces connaissances et continuez votre parcours en consultant le document [Gérer les expériences de catalogue de produits étape](staged-catalog.md), dans lequel vous apprendrez à travailler avec les données de produits étape par étape et AEM les lancements.
+Tirez parti de ces connaissances et poursuivez votre parcours en consultant le document [Gérer les expériences de catalogue de produits étape par étape](staged-catalog.md), dans lequel vous apprendrez à utiliser des données de produit intermédiaires et des lancements AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 

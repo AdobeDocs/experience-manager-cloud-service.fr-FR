@@ -5,7 +5,8 @@ thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 87%
@@ -54,5 +55,5 @@ Dans les projets, les composants principaux AEM CIF et les composants de projet 
 
 ## Recherche {#search}
 
-CIF fournit par défaut un [composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) qui est une expérience de recherche générée côté serveur basée sur l’ [API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients Commerce ont la possibilité d&#39;utiliser [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=fr) à la place. Suivez ce [lien](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Recherche en direct.
+CIF fournit un [composant principal de recherche](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) prêt à l’emploi qui est une expérience de recherche générée côté serveur basée sur [l’API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Les clients Commerce ont la possibilité d’utiliser [recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) à la place. Suivez ce [lien](/help/commerce-cloud/integrating/live-search-plp.md) pour en savoir plus sur l’intégration CIF - Live Search.
 

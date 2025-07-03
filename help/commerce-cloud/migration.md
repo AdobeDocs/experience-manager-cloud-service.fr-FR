@@ -4,10 +4,11 @@ description: Comment migrer vers le module complémentaire CIF (Commerce Integra
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

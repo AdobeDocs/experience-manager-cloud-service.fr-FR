@@ -6,7 +6,8 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 89%
@@ -63,8 +64,8 @@ Pour connecter PWA Studio au point d’entrée GraphQL d’AEM, vous pouvez util
 
    Vous trouverez plus d’informations sur la personnalisation du composant Navigation dans [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) et dans la documentation [Framework d’extensibilité](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) de PWA Studio.
 
-1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point de terminaison à cet emplacement, personnalisez la configuration UPWARD de votre application de PWA Studio :
-a. Ajoutez la variable AEM_CFM_GRAPHQL à pwa-root/.env et adaptez-la pour qu’elle pointe vers votre point de terminaison GraphQL de fragments de contenu AEM.
+1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point d’entrée à cet emplacement, personnalisez la configuration UPWARD de votre application PWA Studio :
+a. Ajoutez la variable AEM_CFM_GRAPHQL à pwa-root/.env et adaptez-la pour qu’elle pointe vers votre point d’entrée GraphQL de fragments de contenu AEM.
 
    Exemple : `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -107,7 +108,7 @@ Consultez la documentation relatives aux fragments de contenu AEM pour configure
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Pour présenter le point de terminaison GraphQL, il existe des exemples de données et de modèles de fragments de contenu préparés via un module de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
+Pour présenter le point d’entrée GraphQL, vous disposez de quelques exemples de données et de modèles de fragment de contenu préparés via un package de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
 
 ## Utilisation {#how-to-use}
 
@@ -119,7 +120,7 @@ Les configurations de production peuvent varier sous plusieurs aspects.
 
 * Vous pouvez disposer d’un point d’entrée GraphQL fédéré unique qui combine des données GraphQL AEM et Adobe Commerce au lieu de personnaliser le client Apollo.
 * Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (par exemple, CDN).
-* L’approche qui vous convient le mieux dépend également de la manière dont vous diffusez l’application de PWA Studio à l’utilisateur.
+* L’approche qui vous convient le mieux dépend également grandement de la manière dont vous diffusez l’application PWA Studio à l’utilisateur.
 
 Cette extension est fournie avec deux exemples.
 

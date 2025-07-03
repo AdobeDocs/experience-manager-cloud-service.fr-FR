@@ -1,17 +1,18 @@
 ---
-title: Métadonnées JSON
+title: Métadonnées JSON-LD
 description: Découvrez comment activer et vérifier la fonctionnalité JSON+LD dans AEM CIF.
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
-# Métadonnées JSON {#json-ld}
+# Métadonnées JSON-LD {#json-ld}
 
 Ce guide explique comment activer et vérifier la fonctionnalité JSON+LD dans AEM CIF.
 
@@ -22,8 +23,8 @@ Ce guide explique comment activer et vérifier la fonctionnalité JSON+LD dans A
 ## Activation de JSON+LD dans la configuration CIF {#enabling}
 
 Par défaut, la case à cocher **Activer JSON+LD** n’est pas visible dans la configuration de CIF. Pour activer cette fonctionnalité, le projet doit inclure la configuration OSGi nécessaire, qui permet d’afficher la case à cocher. Cette configuration permet aux utilisateurs d’activer/désactiver la prise en charge des scripts JSON+LD sur les pages de produits.
-Pour que la case **Activer JSON+LD** soit disponible dans la configuration CIF, ajoutez la configuration OSGi suivante à votre projet : &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+Pour que la case **Activer JSON+LD** soit disponible dans la configuration CIF, ajoutez la configuration OSGi suivante à votre projet : `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 Pour plus d’informations sur l’ajout de cette configuration, reportez-vous à la section [Ajoute une configuration pour Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) dans le référentiel public aem-cif-guides-venia.
 
 Une fois cette configuration ajoutée et déployée, la case à cocher devient visible dans les paramètres de configuration de CIF et voici les étapes pour activer **JSON+LD** :

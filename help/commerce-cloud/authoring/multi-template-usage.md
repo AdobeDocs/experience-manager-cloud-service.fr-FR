@@ -11,7 +11,8 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 100%
@@ -26,7 +27,7 @@ ht-degree: 100%
 
 Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) permettent aux auteurs de contenu de créer des pages de catégories et de produits supplémentaires. Ces pages peuvent être enrichies par du contenu marketing supplémentaire et configurées pour cibler des catégories et des produits spécifiques. La vidéo suivante passe cette fonctionnalité en revue.
 
->[!VIDEO](https://video.tv.adobe.com/v/32786/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Les pages de produits spécifiques peuvent être sélectionnées soit par SKU, soit par catégorie de produits. Ce dernier n’est pris en charge que par certains formats d’URL de page de produits par défaut, car il nécessite que les informations de catégorie soient codées dans l’URL du produit.
 

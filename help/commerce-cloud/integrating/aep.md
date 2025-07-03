@@ -11,7 +11,8 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 76%
@@ -154,7 +155,7 @@ Pour que [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cach
 
 1. Accédez au module `ui.frontend` et enregistrez le fichier en tant que `./src/main/possibleTypes.js`.
 
-1. Mettez à jour la section `DefinePlugin` du fichier `webpack.common.js` afin de remplacer les variables statiques requises pendant la génération.
+1. Mettez à jour la section `webpack.common.js` du fichier `DefinePlugin` afin de remplacer les variables statiques requises pendant la génération.
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -462,7 +463,7 @@ Pour déclencher l’événement, vous pouvez utiliser le service de création o
 
 Le [connecteur Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur la [connexion de données pour Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html), qui fait partie du projet [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La bibliothèque [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le connecteur CIF Experience Platform [&#128279;](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente à Experience Platform.
+Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La bibliothèque [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le connecteur CIF Experience Platform [](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente à Experience Platform.
 
 
 ## Événements pris en charge {#supported-events}
@@ -500,6 +501,6 @@ __Événements XDM de profil :__
 Pour plus d’informations, consultez les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=fr)
-- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=fr)
+- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Vue d’ensemble d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

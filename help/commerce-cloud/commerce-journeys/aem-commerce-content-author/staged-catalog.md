@@ -4,7 +4,8 @@ description: Découvrez comment gérer les expériences de catalogue de produits
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 91%
@@ -27,7 +28,7 @@ Ce document vous aide à comprendre comment gérer l’expérience du catalogue 
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible uniquement avec Adobe Commerce ou Cloud Edition et les connecteurs tiers qui prennent en charge l’authentification par jeton. Voir [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=fr) pour plus d’informations.
+>Cette fonctionnalité est disponible uniquement avec Adobe Commerce ou Cloud Edition et les connecteurs tiers qui prennent en charge l’authentification par jeton. Consultez [Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=fr) pour plus d’informations.
 
 Tout d’abord, voyons comment les auteurs peuvent accéder aux données des produits échelonnées avec le CIF.
 
@@ -47,7 +48,7 @@ Vous pouvez désormais parcourir le catalogue avec les données échelonnées. S
 
 >[!NOTE]
 >
->L’omni-recherche n’a pas de contexte et ne renvoie donc que des données de catalogue de produits en direct.
+>Omnisearch n’a pas de contexte et ne renvoie donc que les données du catalogue de produits en direct.
 
 ## AEM Launches {#launches}
 

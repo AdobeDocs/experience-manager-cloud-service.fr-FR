@@ -1,17 +1,18 @@
 ---
-title: Effacer le cache du composant et du GraphQL
+title: Effacer le cache du composant et de GraphQL
 description: Découvrez comment activer et vérifier la fonctionnalité d’effacement du cache dans AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Effacer le cache du composant et du GraphQL {#clear-cache}
+# Effacer le cache du composant et de GraphQL {#clear-cache}
 
 Ce document fournit un guide complet sur l’activation et la vérification de la fonctionnalité d’effacement du cache dans AEM CIF.
 
@@ -31,7 +32,6 @@ Par défaut, la fonction d’effacement du cache est désactivée dans la config
 * Activez le listener pour effacer le cache de chaque instance d’AEM (publication et création) en ajoutant la configuration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` dans votre projet, comme illustré [ici](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configuration doit être activée pour les instances de création et de publication.
    * Activation du cache de Dispatcher (facultatif) : vous pouvez activer le paramètre Effacer le cache du Dispatcher en définissant la propriété `enableDispatcherCacheInvalidation` sur true dans la configuration ci-dessus. Cette option permet d’effacer le cache du Dispatcher.
-
      >[!NOTE]
      >
      > Cela ne fonctionne qu’avec les instances de publication.
@@ -64,7 +64,6 @@ Maintenant, pour vérifier si les caches sont correctement effacés :
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Si tout se passe bien, les nouvelles modifications sont répercutées dans chaque instance. Si les modifications ne sont pas visibles sur l’instance de publication, essayez d’accéder aux pages appropriées du PLP et du PDP dans une fenêtre de navigateur privée/privée.
 
 >[!NOTE]

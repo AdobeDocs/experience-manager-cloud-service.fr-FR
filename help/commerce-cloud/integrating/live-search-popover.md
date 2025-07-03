@@ -1,20 +1,21 @@
 ---
-title: '[!DNL Live Search] Visionneuse CIF composant'
-description: Utilisation de CIF composants pour activer le composant de fenêtre contextuelle  [!DNL Live Search] sur un site AEM
+title: Composant [!DNL Live Search] Popover CIF
+description: Utilisation des composants CIF pour activer  [!DNL Live Search]  composant Popover sur un site AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Composant de CIF de fenêtre contextuelle {#live-search-popover}
+# Composant CIF de fenêtre contextuelle [!DNL Live Search] {#live-search-popover}
 
-La fenêtre contextuelle [!DNL Live Search] est l’élément qui contient les résultats [!DNL Live Search] lorsque vous tapez dans le champ de recherche.
-Cette rubrique décrit comment intégrer ce composant à votre site AEM.
+La fenêtre contextuelle [!DNL Live Search] est l’élément qui contient les résultats [!DNL Live Search] au fur et à mesure que vous saisissez dans le champ de recherche.
+Cette rubrique décrit comment intégrer ce composant dans votre site AEM.
 
 ## Structure de fichier {#file-strucure}
 
@@ -570,7 +571,7 @@ Pour activer le composant CIF, les fichiers doivent être modifiés et créés.
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     Modifiez le fichier `searchbar.js`, Ligne 19-20, changeant `describe` en `describe.skip` :
+     Modifiez le fichier `searchbar.js`, Ligne 19-20, en remplaçant `describe` par `describe.skip` :
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {
