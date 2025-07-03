@@ -23,8 +23,8 @@ Ce guide explique comment activer et vérifier la fonctionnalité JSON+LD dans A
 ## Activation de JSON+LD dans la configuration CIF {#enabling}
 
 Par défaut, la case à cocher **Activer JSON+LD** n’est pas visible dans la configuration de CIF. Pour activer cette fonctionnalité, le projet doit inclure la configuration OSGi nécessaire, qui permet d’afficher la case à cocher. Cette configuration permet aux utilisateurs d’activer/désactiver la prise en charge des scripts JSON+LD sur les pages de produits.
-Pour que la case **Activer JSON+LD** soit disponible dans la configuration CIF, ajoutez la configuration OSGi suivante à votre projet : `
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
+Pour que la case **Activer JSON+LD** soit disponible dans la configuration CIF, ajoutez la configuration OSGi suivante à votre projet : &grave;
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
 Pour plus d’informations sur l’ajout de cette configuration, reportez-vous à la section [Ajoute une configuration pour Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) dans le référentiel public aem-cif-guides-venia.
 
 Une fois cette configuration ajoutée et déployée, la case à cocher devient visible dans les paramètres de configuration de CIF et voici les étapes pour activer **JSON+LD** :

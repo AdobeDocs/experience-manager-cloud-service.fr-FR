@@ -224,15 +224,15 @@ Les réécritures d’URL peuvent également être obtenues en utilisant le serv
 
 Comme indiqué précédemment, la sélection dʼun des formats par défaut disponibles, ou même lʼimplémentation dʼun format personnalisé, dépendent fortement des besoins et des exigences dʼun magasin. Les suggestions suivantes peuvent vous aider à prendre la bonne décision.
 
-_**Utilisez un format d’URL de page produit qui contient le SKU.**_
+_&#x200B;**Utilisez un format d’URL de page produit qui contient le SKU.**&#x200B;_
 
 Les composants principaux CIF utilisent le SKU comme identifiant principal dans tous les composants. Si le format d’URL de la page produit ne contient pas le SKU, une requête GraphQL est nécessaire pour le résoudre. Cette résolution peut avoir une incidence sur le temps de chargement du premier octet (TTFB). Il peut également être souhaitable que les nouveaux acheteurs et acheteuses puissent trouver des produits par SKU en utilisant des moteurs de recherche.
 
-_**Utilisez un format dʼURL de page produit qui contient le contexte de la catégorie.**_
+_&#x200B;**Utilisez un format dʼURL de page produit qui contient le contexte de la catégorie.**&#x200B;_
 
 Certaines fonctionnalités du fournisseur dʼURL CIF ne sont disponibles que lors de lʼutilisation de formats dʼURL de produits qui codent le contexte de la catégorie, comme la `url_key` ou l’`url_path` de la catégorie. Même si ces fonctionnalités sont facultatives pour un nouveau magasin, lʼutilisation de lʼun de ces formats dʼURL dès le départ permet de réduire les efforts de migration à lʼavenir.
 
-_**Compromis entre la longueur de lʼURL et les informations codées.**_
+_&#x200B;**Compromis entre la longueur de lʼURL et les informations codées.**&#x200B;_
 
 En fonction de la taille du catalogue, en particulier de la taille et de la profondeur de lʼarbre des catégories, il peut ne pas être raisonnable dʼencoder lʼ`url_path` complet des catégories dans lʼadresse URL. Dans ce cas, la longueur de lʼURL peut être réduite en incluant uniquement la `url_key` de la catégorie. Cette méthode permet de prendre en charge presque toutes les fonctionnalités disponibles lors de l’utilisation de l’`url_path` de la catégorie.
 
