@@ -751,7 +751,7 @@ ht-degree: 99%
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
-      + [Activer le bouton (bascule) des fonctionnalités sur le kit de développement logiciel Adobe Experience (AEM SDK)](/help/forms/enable-feature-toggle.md)
+      + [Activer le bouton (bascule) des fonctionnalités sur le kit de développement logiciel Adobe Experience (AEM SDK)](/help/forms/enable-feature-toggle.md)
    + Prise en main {#getting-started-forms}
       + [Consulter des cas d’utilisation et configurer l’environnement de développement](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Créer le formulaire de demande de prêt](/help/forms/create-adaptive-form-tutorial.md)
