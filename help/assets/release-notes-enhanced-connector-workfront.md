@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 98%
 
 La section suivante présente les notes de mise à jour générales de [!DNL Workfront for Experience Manager enhanced connector].
 
-La date de publication de la dernière version 1.9.21 de [!DNL Workfront for Experience Manager enhanced connector] est le jeudi 25 juin 2025.
+La date de publication de la dernière version 1.9.21 de [!DNL Workfront for Experience Manager enhanced connector] est le 25 juin 2025.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
 La dernière version de [!DNL Workfront for Experience Manager enhanced connector] comprend les améliorations et correctifs suivants :
 
-* Amélioration de la journalisation des requêtes API pour éviter la journalisation faussement positive des échecs d’authentification.
+* Amélioration de la journalisation des requêtes API pour éviter la journalisation faussement positive des échecs d’authentification.
 
-* Correction d’une fuite de connexion sur les appels API Workfront.
+* Correction d’une fuite de connexion sur les appels API Workfront.
 
-* Prise en charge du connecteur amélioré Workfront avec 6.5 LTS pour les versions Java 17 et Java 21.
+* Prise en charge du connecteur amélioré Workfront avec 6.5 LTS pour les versions Java 17 et Java 21.
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le vendredi 26 juin 2025. La prochaine disponibilité des fonctionnalités (2025.7.0) est prévue pour le vendredi 31 juillet 2025.
+La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 26 juin 2025. La prochaine mise à jour des fonctionnalités (2025.7.0) est prévue pour le 31 juillet 2025.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,7 +48,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Gestion améliorée des formulaires de métadonnées dans la vue Assets**
 
-Vous pouvez désormais importer les formulaires de métadonnées de la vue Administration directement dans la vue Assets. Toutes les mises à jour apportées à ces formulaires dans la vue Assets sont automatiquement répercutées dans la vue Administration , ce qui garantit la cohérence entre les deux expériences. Cette fonctionnalité permet une transition transparente vers la nouvelle vue Assets tout en maintenant la continuité avec vos configurations de métadonnées existantes.
+Vous pouvez désormais importer des formulaires de métadonnées de la vue Administration directement dans la vue Assets. Toutes les mises à jour apportées à ces formulaires dans la vue Assets sont automatiquement répercutées dans la vue Administration, ce qui garantit la cohérence entre les deux expériences. Cette fonctionnalité permet une transition transparente vers la nouvelle vue Assets, tout en maintenant la continuité avec vos configurations de métadonnées existantes.
 
 ![Métadonnées générées par l’IA](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ Propriétés OSGi :
 
 L’**exécution Java 11** est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**exécution Java 21** plus performante.
 
-Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes suivantes spécifiques. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
+Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
 Remarque : la version de l’exécution est distincte de la version de build de votre code. Bien que nous recommandions la création de versions avec Java 21, les versions Java 11 sont toujours prises en charge pour l’instant. Un avis d’obsolescence distinct pour les versions Java 11 sera partagé ultérieurement.
 
@@ -112,7 +112,7 @@ Remarque : la version de l’exécution est distincte de la version de build de
 
 Comme indiqué dans les notes de mise à jour d’avril, les journaux Java d’AEM doivent respecter un format standard pour assurer une surveillance fiable dans tous les environnements de la clientèle. Les configurations de journal personnalisées, telles que les modifications apportées à la mise en forme du journal, aux fichiers de sortie ou aux niveaux de journal par défaut, ne sont plus prises en charge. Les journaux doivent rester dirigés vers les fichiers par défaut et les niveaux de journal par défaut du code de produit AEM doivent être conservés. Consultez toutes les informations dans [l’article Journalisation](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-À compter de **fin août**, tous les remplacements de journalisation personnalisée non pris en charge seront ignorés. D’après notre analyse, la plupart des clients ne seront pas affectés. Adobe a donc contacté ceux dont la configuration actuelle pourrait être affectée.
+À compter de **fin août**, tous les remplacements de journalisation personnalisée non pris en charge seront ignorés. D’après notre analyse, la plupart des clientes et clients ne seront pas affectés et Adobe a contacté ceux dont la configuration actuelle peut être affectée.
 
 Passez en revue et mettez à jour tous les processus en aval qui reposent sur un comportement de journalisation personnalisé. Par exemple :
 
@@ -123,7 +123,7 @@ Passez en revue et mettez à jour tous les processus en aval qui reposent sur un
 
 Actuellement, les *tâches de maintenance de purge* des versions de contenu et des journaux d’audit sont désactivées par défaut. Par conséquent, les données ne sont supprimées, sauf si elles sont configurées explicitement..
 
-Toutefois, pour optimiser les performances du référentiel, à compter de **début juillet 2025**, la purge sera activée par défaut, en suivant ces instructions :
+Toutefois, pour optimiser les performances du référentiel, à compter de **début juillet 2025**, la purge sera activée par défaut, en suivant ces directives :
 
 #### Versions du contenu {#mt-content}
 
@@ -162,7 +162,7 @@ Cas d’utilisation courants :
 * Authentification des utilisateurs et utilisatrices auprès d’un fournisseur d’identités avant d’accorder l’accès au contenu
 * Personnalisation du contenu en fonction de la géolocalisation, du type d’appareil ou des attributs d’utilisateur ou d’utilisatrice
 * Fonctionnement en tant que middleware entre le réseau CDN et votre origine
-* Reformatage des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
+* Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur en périphérie à l’aide de contenu assemblé à partir de divers serveurs principaux
 
 Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’instance de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
