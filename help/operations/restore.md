@@ -4,9 +4,9 @@ description: Découvrez comment restaurer votre contenu AEM as a Cloud Servi
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 49%
 
 ---
@@ -56,7 +56,7 @@ Par défaut, aucun utilisateur n’est autorisé à exécuter des restaurations 
 
 1. Créez un profil de produit avec un nom expressif qui fait référence à la restauration de contenu.
 1. Fournissez l’autorisation **Accès au programme** sur le programme requis.
-1. Fournissez l’autorisation **Restauration de contenu** dans l’environnement requis ou dans tous les environnements du programme, selon votre cas d’utilisation.
+1. Fournissez l’autorisation **Créer une restauration d’environnement** sur l’environnement requis ou sur tous les environnements du programme, selon votre cas d’utilisation.
 1. Attribuez des utilisateurs à ce profil.
 
 Pour plus d’informations sur la gestion des autorisations, consultez la documentation [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
@@ -93,7 +93,7 @@ Commencez par déterminer la période du contenu que vous souhaitez restaurer. E
 
    ![Sauvegardes disponibles](assets/backup-available.png)
 
-1. Recherchez la sauvegarde que vous souhaitez restaurer à l’aide de l’icône d’information pour afficher les informations concernant la version du code et la version AEM incluse dans cette sauvegarde et tenez compte des implications d’une restauration lors du [choix de la sauvegarde](#choosing-the-right-backup).
+1. Recherchez la sauvegarde à restaurer à l’aide de l’icône d’information pour afficher les informations concernant la version du code et la version d’AEM incluse dans cette sauvegarde et tenez compte des implications d’une restauration lors du [choix de la sauvegarde](#choosing-the-right-backup).
 
    ![Informations de sauvegarde](assets/backup-info.png)
 

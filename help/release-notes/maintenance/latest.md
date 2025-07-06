@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
+source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 99%
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -147,6 +147,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 ### Problèmes connus {#known-issues-21331}
 
 * SITES-33177 : les styles de section stockés sous forme de chaînes séparées par des virgules sont rompus.
+* SITES-33262 : les blocs sans propriété de nom ne parviennent pas à effectuer le rendu et la publication des pages.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21331}
 
