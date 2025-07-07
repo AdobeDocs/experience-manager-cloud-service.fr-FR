@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 
 ### Problèmes connus {#known-issues-21331}
 
-* SITES-33177 : les styles de section stockés sous forme de chaînes séparées par des virgules sont rompus.
+* SITES-33177 : les styles de section stockés sous forme de chaînes séparées par des virgules ne fonctionnent pas.
 * SITES-33262 : les blocs sans propriété de nom ne parviennent pas à effectuer le rendu et la publication des pages.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21331}
