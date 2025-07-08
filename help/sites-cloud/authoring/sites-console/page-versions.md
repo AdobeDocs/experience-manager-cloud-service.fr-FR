@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
+source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 94%
 
 ---
 
@@ -28,10 +28,10 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 
 >[!NOTE]
 >
->Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, le CSS et le JavaScript ne sont pas versionnées.
+>Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, la feuille de style CSS et le code JavaScript ne sont pas versionnées.
 >
->* Lors de l’affichage des versions, le contenu est affiché avec le code, le CSS et le JavaScript actuels du référentiel.
->* Lors de la restauration de versions, seul le contenu est restauré et le code, CSS et JavaScript actuels du référentiel lui sont appliqués.
+>* Lors de l’affichage des versions, le contenu est affiché avec le code, la feuille de style CSS et le code JavaScript actuels du référentiel.
+>* Lors de la restauration de versions, seul le contenu est restauré et le code, la feuille de style CSS et le code JavaScript actuels du référentiel lui sont appliqués.
 
 ## Création d’une version {#creating-a-new-version}
 
@@ -202,10 +202,6 @@ Pour comparer une version précédente à la page actuelle :
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
->[!TIP]
->
->[Il est également possible d’utiliser la fonction Timewarp avec les lancements pour obtenir un aperçu du futur](/help/sites-cloud/authoring/launches/preview.md).
-
 La création de contenu étant un processus continu et collaboratif, l’objectif de Timewarp est de permettre aux auteurs et autrices d’effectuer le suivi d’un site web publié au fil du temps afin qu’ils comprennent l’évolution du contenu. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication.
 
 Pour utiliser cette fonctionnalité :
@@ -214,6 +210,16 @@ Pour utiliser cette fonctionnalité :
 * Cela signifie que la version affichée a été créée/activée *avant* l’heure sélectionnée dans Timewarp.
 * Si vous accédez à une page qui a été supprimée, celle-ci sera également affichée, à condition toutefois que les anciennes versions de la page soient toujours disponibles dans le référentiel.
 * Si aucune version publiée n’a été trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (et ce, afin d’éviter une erreur/page 404, ce qui rendrait impossible toute poursuite de la navigation).
+
+>[!NOTE]
+>
+>Timewarp fonctionne et est destiné à être utilisé pour les pages AEM : versions pour l’historique et lancements pour les états de contenu futurs.
+>
+>Cela ne fonctionne pas pour les lancements imbriqués ou lorsque des fragments d’expérience sont utilisés.
+
+>[!TIP]
+>
+>[Il est également possible d’utiliser la fonction Timewarp avec les lancements pour obtenir un aperçu du futur](/help/sites-cloud/authoring/launches/preview.md).
 
 ### Utilisation de Timewarp {#using-timewarp}
 
@@ -240,6 +246,7 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 * **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](#revert-to-a-version).
 * **Timewarp est basé sur le contenu de la page :** si des éléments pour le rendu du site web ont été modifiés (code, css et ressources, par exemple), la vue diffère de celle d’origine. Ces éléments ne sont pas versionnés dans le référentiel.
+* Timewarp ne fonctionne pas pour les lancements imbriqués ou lorsque des fragments d’expérience sont utilisés.
 
 >[!CAUTION]
 >
