@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1780'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 ### Problèmes connus {#known-issues-21331}
 
 * SITES-33177 : les styles de section stockés sous forme de chaînes séparées par des virgules ne fonctionnent pas.
-* SITES-33262 : les blocs sans propriété de nom ne parviennent pas à effectuer le rendu et la publication des pages.
+* SITES-33262 : les blocs sans propriété de nom ne parviennent pas à effectuer le rendu et la publication des pages.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21331}
 
