@@ -1,20 +1,20 @@
 ---
 title: Modifier le contenu d’une page à l’aide de l’éditeur de page AEM
-description: L’éditeur de page d’AEM est un puissant outil de création de contenu.
+description: L’éditeur de page d’AEM est un outil puissant pour créer votre contenu.
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 35%
 
 ---
 
 # Modifier le contenu d’une page à l’aide de l’éditeur de page AEM {#edit-content}
 
-L’éditeur de page d’AEM est un puissant outil de création du contenu d’une page. Découvrez comment l’utiliser pour faire glisser et déposer du contenu et le modifier sur place.
+L’éditeur de page d’AEM est un outil puissant permettant de créer le contenu d’une page. Découvrez comment l’utiliser pour faire glisser et déposer du contenu et le modifier sur place.
 
 ## Vue d’ensemble {#overview}
 
@@ -31,6 +31,10 @@ En outre, l’éditeur vous permet d’organiser le contenu existant sur votre p
 * [Déplacer des composants](#moving-components)
 * [Modifier la disposition du composant](#editing-component-layout)
 * [Modifier l’héritage des composants](#inherited-components)
+
+>[!NOTE]
+>
+>Votre équipe de projet peut personnaliser l’éditeur si nécessaire. Voir [Personnalisation de la création de pages](/help/implementing/developing/extending/page-authoring.md) pour plus d’informations.
 
 ## Ajout de composants {#adding-components}
 
