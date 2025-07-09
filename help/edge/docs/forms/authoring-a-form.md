@@ -4,10 +4,12 @@ description: Découvrez les différentes plateformes de création de formulaires
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) offre une plateforme flexible permettant de cr�
 
 AEM propose plusieurs options de création de formulaires permettant de créer des formulaires interactifs et attrayants. Lors de la sélection d’un environnement de création de formulaires, tenez compte des facteurs suivants :
 
-| ?? **Considération** | ?? **Questions à se poser** |
+| 📝 **Considération** | 💡 **Que demander** |
 |----------------------|--------------------|
 | **Expertise d’utilisation** | Qui sera responsable de la création des formulaires (équipe de développement, utilisateurs et utilisatrices professionnels, ou créateurs et créatrices de contenu) ? |
 | **Complexité du formulaire** | Le formulaire a-t-il besoin de règles avancées, de sections dynamiques ou d’intégrations ? |
@@ -81,25 +83,25 @@ Le tableau suivant présente une comparaison détaillée des fonctionnalités cl
 | **Prise en charge de CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Nécessite une intégration personnalisée. |
 | **Fonctionnalités d’envoi** | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appel d’un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appel d’un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Point d’entrée REST, e-mail, modèle de données de formulaire (FDM), appel d’un workflow AEM, SharePoint, OneDrive, stockage Azure Blob, Power Automate, Workfront Fusion (EA) | Feuille de calcul uniquement | Points d’entrée d’API personnalisés |
 | **Schéma de données** | FDM, personnalisé | FDM, personnalisé | FDM, personnalisé | Personnalisé | Personnalisé |
-| **Pré-remplissage** | ✅ | ✅ | ?? (via l’assistant) | ✅ | Implémentation personnalisée |
+| **Pré-remplissage** | ✅ | ✅ | 💡 (via l’assistant) | ✅ | Implémentation personnalisée |
 | **Fragments** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Éditeur de règles visuel** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Localisation** | ✅ | ✅ | ?? (via Sites) | ℹ️ (Excel - Manuel, Fonction Google Sheets) | Implémentation personnalisée |
-| **Schéma de données (arborescence de données)** | ✅ | ✅ | ?? (via l’extension d’interface d’utilisation) | ❌ | Implémentation personnalisée |
+| **Localisation** | ✅ | ✅ | 💡 (via Sites) | ℹ️ (Excel - Manuel, Fonction Google Sheets) | Implémentation personnalisée |
+| **Schéma de données (arborescence de données)** | ✅ | ✅ | 💡 (via l’extension d’interface utilisateur) | ❌ | Implémentation personnalisée |
 | **Prise en charge de modèles** | ✅ | ✅ | Contenu initial uniquement, pas de stratégie | ❌ | Implémentation personnalisée |
 | **Portail** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Création de document d’enregistrement** | ✅ | ✅ | ?? (via Derlina) | ❌ | ❌ |
-| **Génération de document d’enregistrement** | ✅ | ✅ | ?? (FORMS-2475, nouveau) | ❌ | ❌ |
+| **Création de document d’enregistrement** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
+| **Génération de document d’enregistrement** | ✅ | ✅ | 💡 (FORMS-2475 Nouveau) | ❌ | ❌ |
 | **Thème** | ✅ | ✅ | ℹ️ (au niveau du projet) | ℹ️ (au niveau du projet) | Implémentation personnalisée |
 | **Composant personnalisé** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Fonctions prêtes à l’emploi et personnalisées** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Référence du fragment** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Intégration de Sign** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Prise en charge de RTL** | ❌ | ✅ | ?? | ?? | Implémentation personnalisée |
+| **Prise en charge de RTL** | ❌ | ✅ | 💡 | 💡 | Implémentation personnalisée |
 | **Expérimentation** | ❌ | ❌ | ✅ | ✅ | Implémentation personnalisée |
 | **Gestion des tâches via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Extension personnalisée** | ❌ | ❌ | ?? | ❌ | Implémentation personnalisée |
-| **Personnalisation de l’éditeur** | ❌ | ❌ | ✅ (via l’extension d’interface d’utilisation) | ❌ | Implémentation personnalisée |
+| **Extension personnalisée** | ❌ | ❌ | 💡 | ❌ | Implémentation personnalisée |
+| **Personnalisation de l’éditeur** | ❌ | ❌ | ✅ (via l’extension d’interface utilisateur) | ❌ | Implémentation personnalisée |
 | **Action Envoyer** | ✅ | ✅ | ✅ | Feuille de calcul uniquement | Implémentation personnalisée |
 
 
