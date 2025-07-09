@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez les différentes options de personnalisation de l’éditeur universe
 
 >[!TIP]
 >
->L’éditeur universel offre également de nombreux points d’extension [&#128279;](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
+>L’éditeur universel offre également de nombreux points d’extension [](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités pour répondre aux besoins de votre projet.
 
 ## Désactivation de la publication {#disable-publish}
 
@@ -107,9 +107,7 @@ Les conditions peuvent être définies à l’aide du schéma [JsonLogic](https:
 
 ## URL d&#39;aperçu personnalisées {#custom-preview-urls}
 
-Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
-
-Cela est particulièrement utile pour les applications avec des exigences de prévisualisation spécifiques, telles que celles [utilisant Edge Delivery Services avec la création WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
+Vous pouvez spécifier une URL d’aperçu personnalisée par le biais d’une méta configuration `urn:adobe:aue:config:preview`, qui s’ouvre en cliquant sur le bouton **Ouvrir la page** dans la barre d’outils supérieure droite de l’éditeur de [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Pour ce faire, il vous suffit d’inclure l’URL d’aperçu souhaitée dans une balise meta de l’application instrumentée, comme dans l’exemple suivant.
 
