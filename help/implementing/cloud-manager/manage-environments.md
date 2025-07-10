@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 38%
+source-wordcount: '2474'
+ht-degree: 37%
 
 ---
 
@@ -71,7 +71,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
@@ -130,22 +130,25 @@ Les modifications apportées à l’environnement de production s’appliquent a
 
 Si vous souhaitez configurer la variable [réseau avancé](/help/security/configuring-advanced-networking.md) pour le programme, il est recommandé de procéder à cette configuration avant d’ajouter aux environnements des zones géographiques de publication supplémentaires. Sinon, le trafic des zones géographiques de publication supplémentaires passe par le proxy de la zone géographique principale.
 
-## Accès aux détails de l’environnement {#viewing-environment}
+## Affichage des détails d’un environnement {#viewing-environment}
 
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Pour accéder aux détails de l’environnement, effectuez l’une des opérations suivantes :
+1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, cliquez sur le programme pour lequel vous souhaitez afficher les détails d’un environnement.
 
-   * Sur la page **Aperçu**, dans le menu de gauche, cliquez sur ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
+1. Répertoriez tous les environnements du programme en effectuant l’une des opérations suivantes :
 
-   ![Onglet Environnements](assets/environments-tab2.png)
+   * Dans le menu de gauche, sous **Services**, cliquez sur ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environnements**.
 
-   * Dans la vignette **Environnements**, cliquez sur ![Icône de workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Tout afficher**.
+   ![Onglet Environnements](assets/environments-1.png)
 
-     ![Option Tout afficher](assets/environment-showall.png)
+   * Dans le menu de gauche, sous **Programme**, cliquez sur **Aperçu**, puis, dans la vignette **Environnements**, cliquez sur ![Icône de workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Tout afficher**.
 
-   La page **Environnements** s’ouvre et répertorie tous les environnements du programme.
+     ![Option Tout afficher](assets/environments-2.png)
 
-   ![Onglet Environnements.](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >La carte **Environnements** répertorie uniquement trois environnements. Cliquez sur **Tout afficher** dans la carte pour afficher *tous* les environnements du programme.
 
 1. Sur la page Environnements , effectuez l’une des opérations suivantes :
 
@@ -155,11 +158,13 @@ Si vous souhaitez configurer la variable [réseau avancé](/help/security/config
 
    * Cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de l’environnement souhaité, puis sur **Afficher les détails**.
 
-   ![Affichage des détails de l’environnement](assets/view-environment-details.png)
+   ![Affichage des détails de l’environnement.](assets/view-environment-details.png)
 
->[!NOTE]
->
->La carte **Environnements** répertorie uniquement trois environnements. Cliquez sur **Tout afficher** dans la carte pour afficher tous les environnements du programme.
+
+## Restaurer le contenu d’un environnement (Alpha) {#restore-environment}
+
+Voir [ Restauration de contenu dans AEM as a Cloud Service](/help/operations/restore.md).
+
 
 ### Accès au service d’aperçu {#access-preview-service}
 
@@ -299,7 +304,7 @@ Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à **
 
 Seul un utilisateur ou une utilisatrice possédant le rôle de **développeur** aura accès à la **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
+Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
 
 Cette option est également disponible à partir de l’onglet **Environnement** de la fenêtre **Aperçu** lorsque vous cliquez sur l’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) d’un environnement individuel.
 

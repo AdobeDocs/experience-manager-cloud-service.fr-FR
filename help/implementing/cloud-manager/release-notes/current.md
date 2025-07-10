@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.7.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 66%
+source-wordcount: '1198'
+ht-degree: 60%
 
 ---
 
@@ -37,34 +37,50 @@ La prochaine version est prévue le vendredi 7 août 2025.
 
   ![Page des détails d’utilisation des sites](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  Voir le [tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
+
 ## Programmes pour les utilisateurs et utilisatrices précoces {#private-beta-program}
 
 Participez aux programmes alpha et bêta de Cloud Manager pour obtenir un accès anticipé et exclusif aux fonctionnalités à venir avant leur publication générale.
 
 Les opportunités suivantes sont actuellement disponibles :
 
-
 ### Restauration en un clic pour les déploiements de pipeline {#one-click-rollback}
 
-Revenez rapidement à un déploiement précédent si le dernier code ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![Restaurez le code source du client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer**>**Code précédent déployé**pour un environnement sélectionné.*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
+
+
+![Restauration de l’activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement **Restauration**jusqu’à la fin du déploiement.*
+
+
+![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version du code source active utilisée.*
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [restorecode@adobe.com](mailto:restorecode@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
+
+Voir aussi [Restauration de contenu dans AEM as a Cloud Service](/help/operations/restore.md).
+
+
+### Environnement de test spécialisé {#specialized-test-environment}
+
+Cloud Manager prend désormais en charge l’ajout d’un nouveau type d’environnement appelé **Environnement de test spécialisé**. L’environnement est conçu pour aider les équipes à valider les fonctionnalités dans des conditions proches de la production avant la mise en ligne. Ce type d’environnement est distinct des environnements *Production+Évaluation*, *Développement* ou *Développement rapide* et offre un espace ciblé pour exécuter des scénarios de validation avancés.
+
+Amélioration récente : vous pouvez désormais configurer des environnements de test spécialisés sur un pipeline hors production grâce à un workflow plus simple et plus intuitif. La configuration rationalisée accélère l’achèvement et réduit les erreurs de configuration.
+
+Voir la section [Ajouter un environnement de test spécialisé](/help/implementing/cloud-manager/specialized-test-environment.md).
+
+![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
+
+
+### Apportez votre propre Git (BYOG), maintenant avec prise en charge d’Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 

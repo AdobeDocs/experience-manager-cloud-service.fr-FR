@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager fournit un tableau de bord pour un affichage convivial des produit
 
 >[!IMPORTANT]
 >
->Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
+>Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service. Les [programmes AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) ne sont pas inclus dans le tableau de bord des licences.
 >
 >Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez [Navigation dans l’interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -77,6 +77,8 @@ La fenêtre **Détails d’utilisation des sites** présente des graphiques donn
 Le côté gauche de la fenêtre présente un graphique en secteurs présentant la répartition du contrat pour l&#39;année sélectionnée dans le menu déroulant **Afficher l&#39;année du contrat**.
 
 Le côté droit de la fenêtre présente un graphique en aires montrant l’utilisation répartie par programme au fil du temps pour l’année de contrat sélectionnée. Un pointeur affiche une fenêtre contextuelle avec des détails par programme pour le moment sélectionné.
+
+Dans le coin supérieur droit de la page du tableau de bord, vous pouvez cliquer sur **Télécharger le rapport** pour exporter ses données au format CSV. Ce téléchargement simplifie l’analyse et le partage des tendances d’utilisation.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
