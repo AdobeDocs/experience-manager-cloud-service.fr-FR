@@ -3,7 +3,8 @@ title: Bonnes pratiques relatives à la conception de Forms hautes performances
 description: Découvrez les bonnes pratiques essentielles pour créer des formulaires conviviaux, accessibles et hautement performants à l’aide d’AEM Forms. Améliorez la qualité des données, l’expérience utilisateur et les taux de réussite des envois.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Ce guide présente un aperçu de l’utilisation de forms avec AEM Edge Delivery
 * [Création basée sur des documents avec Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Éditeur universel avec Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [Création de documents (DA) et incorporation de contenu](https://www.aem.live/developer/da-tutorial)
-* [Service de soumission AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [Service d’envoi AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

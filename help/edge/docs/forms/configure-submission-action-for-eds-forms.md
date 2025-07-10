@@ -3,13 +3,13 @@ title: Configuration des actions Envoyer pour AEM Forms avec Edge Delivery Servi
 description: Découvrez comment configurer des actions Envoyer dans AEM Forms à l’aide de Edge Delivery Services. Choisissez entre le service d’envoi Forms et l’action d’envoi Publication AEM pour gérer les données de formulaire de manière sécurisée et efficace.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
 
 ---
-
 
 # Configuration Des Envois De Formulaires : Où Vont Vos Données ?
 
@@ -46,7 +46,6 @@ Le service d’envoi [Forms](/help/forms/forms-submission-service.md) est un poi
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Envoi Forms](/help/forms/assets/eds-fss.png)
 
 Ce diagramme de flux montre comment le service d’envoi de Forms prend les données envoyées et les envoie à une feuille de calcul ou un e-mail configuré.
@@ -145,7 +144,6 @@ La page sur laquelle vous souhaitez que le formulaire apparaisse (appelons-le «
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Architecture de formulaire incorporée](/help/forms/assets/eds-embedded-form.png)
 Ce diagramme montre la page hôte récupérant le formulaire HTML à partir du Source de formulaire et l’affichant. L’envoi utilise le point d’entrée configuré du formulaire d’origine.
 
