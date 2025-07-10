@@ -4,7 +4,7 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 62%
@@ -18,7 +18,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 21484 {#21484}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 21484, publiée le mercredi 8 juillet 2025. La version de maintenance précédente était la version 21331.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 21484, publiée le vendredi 10 juillet 2025. La version de maintenance précédente était la version 21331.
 
 L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
