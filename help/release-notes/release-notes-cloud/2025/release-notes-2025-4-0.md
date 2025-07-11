@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464004?quality=12&captions=fre_fr)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
