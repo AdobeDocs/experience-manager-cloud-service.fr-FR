@@ -17,7 +17,7 @@ ht-degree: 34%
 
 > **Disponibilité de la version**
 >
-> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5** : [Présentation d’AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=fr)
 > * **AEM as a Cloud Service** : cet article
 
 ## Présentation
