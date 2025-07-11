@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 9%
 
 ---
@@ -129,6 +129,8 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 1. Sélectionnez ensuite l’icône d’ajout dans le panneau des propriétés.
 
    ![Sélectionner l’icône d’ajout](assets/add-icon.png)
+
+1. Si plusieurs composants sont autorisés pour le conteneur, sélectionnez celui que vous souhaitez insérer dans la liste déroulante. Si un seul composant est autorisé, il est inséré automatiquement.
 
 Le composant est inséré dans le conteneur et peut être modifié dans l’éditeur.
 

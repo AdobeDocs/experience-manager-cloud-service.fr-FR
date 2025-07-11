@@ -4,9 +4,9 @@ description: Découvrez les attributs de données et les types d’éléments re
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 44%
 
 ---
@@ -52,6 +52,6 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 * Elle n’est pas nécessaire directement sur la balise où la `data-aue-type` est définie.
 * S’il n’est pas défini, l’attribut `data-aue-resource` d’un parent le plus proche est utilisé.
 
-`data-aue-prop` est obligatoire chaque fois que vous souhaitez effectuer une modification dans le contexte de , à l’exception d’un conteneur où elle est facultative (si défini, le conteneur est un fragment de contenu et que la prop pointe vers un champ à références multiples).
+`data-aue-prop` est obligatoire chaque fois que vous souhaitez effectuer une modification en contexte, à l’exception d’un conteneur où elle est facultative (si le conteneur est défini, il s’agit d’un fragment de contenu et que la prop pointe vers un champ à références multiples).
 
 * Le `data-aue-prop` est l’attribut à mettre à jour pour la clé primaire de `data-aue-resource`.

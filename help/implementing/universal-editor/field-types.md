@@ -4,9 +4,9 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 11%
 
 ---
@@ -101,7 +101,7 @@ Un objet de champ possède la définition de type suivante.
 | `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
 | `hidden` | `boolean` | Le champ est-il masqué par défaut ? | Non |
 | `condition` | `RulesLogic` | Règle d’affichage ou de masquage du champ selon une [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Non |
-| `multi` | `boolean` | Le champ est-il un champ multiple ? | Non |
+| `multi` | `boolean` | Le champ est-il un champ multiple <br/>Notez que l’imbrication de conteneurs n’est pas autorisée pour les champs multiples dans le panneau des propriétés | Non |
 | `validation` | `ValidationType` | Règle(s) de validation pour le champ | Non |
 | `raw` | `unknown` | Données brutes pouvant être utilisées par le composant | Non |
 
@@ -289,7 +289,7 @@ Semblable à une valeur booléenne, un type de composant de groupe de cases à c
 
 #### Conteneur {#container}
 
-Un type de composant de conteneur permet de regrouper les composants, y compris la prise en charge multichamp. Il propose une configuration supplémentaire.
+Un type de composant de conteneur permet de regrouper les composants, y compris la prise en charge multichamp. Il propose une configuration supplémentaire. Notez que l’imbrication de conteneurs n’est pas autorisée pour les champs multiples dans le panneau des propriétés
 
 | Configuration | Type de valeur | Description | Requis |
 |---|---|---|---|
@@ -710,7 +710,7 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 #### Référence {#reference}
 
-Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [&#128279;](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
+Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
 
 Un type de composant de référence permet de faire référence à un autre objet de données de l’objet actif.
 

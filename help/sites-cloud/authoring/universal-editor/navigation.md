@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1820'
 ht-degree: 16%
 
 ---
@@ -154,6 +154,10 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez [définir un en-tête d’authentification personnalisé à des fins de développement local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Bouton Paramètres d’en-tête d’authentification](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>Ce bouton est masqué par défaut, car sa valeur est limitée dans la plupart des cas. Si vous en avez besoin, envoyez un e-mail à votre responsable du succès client Adobe à partir de l’adresse e-mail associée à votre Adobe ID.
 
 #### Paramètres de l&#39;émulateur {#emulator}
 
