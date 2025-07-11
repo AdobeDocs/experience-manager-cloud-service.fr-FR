@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 99%
+source-wordcount: '1828'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464004?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ Vous pouvez désormais sélectionner et comparer rapidement n’importe quelle v
 
 ![Comparer des versions de ressources](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Fonctionnalités de version préliminaire
 
-* [Éditeur universel - Fragments de formulaire](/help/edge/docs/forms/universal-editor/creating-form-fragments.md) : l’éditeur universel vous permet désormais de créer et de réutiliser des fragments de formulaire pour le formulaire adaptatif. Ces fragments sont des sections de formulaire réutilisables (par exemple, coordonnées, champs de consentement) qui peuvent être créées une seule fois et appliquées à plusieurs formulaires. Cette fonctionnalité simplifie la création de formulaires, assure la cohérence et améliore l’efficacité de création.
+* [Éditeur universel pour les Forms adaptatifs et les fragments de formulaire](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : l’éditeur universel prend désormais en charge la création de Forms adaptatif et de fragments de formulaire réutilisables. Les auteurs peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et améliore la protection contre le spam et les abus automatisés.
 
 * [Bibliothèque de documents SharePoint - Enregistrer les pièces jointes avec les noms de fichier d’origine](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library) : vous avez désormais la possibilité d’enregistrer les pièces jointes de formulaire en utilisant leurs noms de fichier d’origine lors de leur stockage dans une bibliothèque de documents SharePoint. Cette amélioration simplifie l’identification et la gestion des fichiers chargés.
 
 * **Éditeur de règles** :
    * [Condition binaire avec événement de clic dans la clause « When »](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor) : l’éditeur de règles permet désormais de combiner un événement de clic de bouton (_Est cliqué_) avec d’autres conditions dans la clause « When ». Cela permet un contrôle plus précis de l’exécution des règles en fonction de l’interaction utilisateur et d’autres facteurs. Remarque : lorsque vous utilisez plusieurs conditions, l’événement de clic doit être la première condition répertoriée.
    * [Conditions de validation des champs et des panneaux](/help/forms/rule-editor-core-components-usecases.md) : l’éditeur de règles inclut désormais les conditions _IsValid_ et _IsNotValid_. Ils vous permettent de vérifier l’état de validation de champs spécifiques ou de panneaux entiers (y compris des dispositions telles que les onglets horizontaux, verticaux, accordéons et assistants), ce qui améliore la navigation dans les formulaires et l’expérience client en fonction des résultats de validation.
-* **Amélioration de la gestion de l’étendue pour les listes SharePoint** : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
-* **Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint** : les formulaires créés à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peuvent désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement. Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
+* [Amélioration de la gestion de l’étendue pour les listes SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
+* [Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields) : les formulaires créés à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peuvent désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement. Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
+* [Prise en charge du mappage automatique pour les fragments de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form) : le Forms adaptatif prend désormais en charge l’insertion automatique de fragments correspondants lorsque les objets de schéma s’alignent sur une structure de fragment définie, ce qui permet de rationaliser la création de formulaires et de promouvoir leur réutilisation.
 
 ### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Intégration d’Adobe Experience Platform (AEP) à Forms
 
-Les fonctionnalités d’intégration entre Forms et AEP sont désormais disponibles pour les utilisateurs et utilisatrices précoces.
+* [Intégration d’AEM Forms à Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md) : le connecteur AEM Forms vers Adobe Experience Platform permet une intégration transparente entre Adaptive Forms et Adobe Experience Platform. Cette fonctionnalité permet de mapper les données de formulaire aux schémas XDM et de les envoyer directement à AEP en temps réel. Il rationalise la capture de données pour les cas d’utilisation de personnalisation et d’activation dans les solutions Adobe Experience Cloud.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

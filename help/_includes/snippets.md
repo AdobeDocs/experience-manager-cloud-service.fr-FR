@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1556'
-ht-degree: 100%
+source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+workflow-type: tm+mt
+source-wordcount: '1560'
+ht-degree: 97%
 
 ---
 # Fragments de code {#snippets}
@@ -111,9 +111,9 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </td>
    </tr>
    <tr>
-    <td>Prise en charge d’ES10 </td>
-    <td>ES10 n’est pas encore pris en charge. Il ne prend en charge que les fonctionnalités JavaScript ES5. </td>
-    <td>Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées. 
+    <td>Assistance ES2022 </td>
+    <td>ES2022 n’est pas encore pris en charge ; la prise en charge se limite aux fonctionnalités ES5 JavaScript. </td>
+    <td>La prise en charge des fonctionnalités JavaScript modernes, telles que les fonctions de gauche et de flèche, jusqu’à ES2022, est disponible dans les fonctions personnalisées. 
    </td>
    </tr>
    </tr>
@@ -222,7 +222,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 

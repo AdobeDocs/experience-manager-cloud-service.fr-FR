@@ -1,21 +1,21 @@
 ---
-title: Cet article explique l’interface utilisateur de l’éditeur de règles d’un formulaire adaptatif basé sur des composants principaux.
-description: L’éditeur de règles de Forms adaptatif permet aux utilisateurs d’écrire des règles qui déclenchent des actions en fonction de conditions, d’entrées et d’interactions de l’utilisateur.
+title: Cet article explique l’interface utilisateur de l’éditeur de règles d’un formulaire adaptatif basé sur les composants principaux.
+description: L’éditeur de règles de Forms adaptatif permet aux utilisateurs de créer des règles qui déclenchent des actions en fonction des conditions, des entrées utilisateur et des interactions.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2298'
-ht-degree: 71%
+ht-degree: 82%
 
 ---
 
+# Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux
 
-# Interface utilisateur de l’éditeur de règles pour Forms adaptatif basée sur les composants principaux
-
-L’interface utilisateur de l’éditeur de règles pour les Forms adaptatives basées sur les composants principaux améliore le processus de création de formulaires dans Adobe Experience Manager (AEM). Il permet à la fois aux utilisateurs professionnels et aux développeurs d’implémenter un comportement dynamique et une logique complexe dans des formulaires en écrivant des règles qui déclenchent des actions en fonction de conditions prédéfinies, d’entrées utilisateur et d’interactions. Cette fonctionnalité prend en charge les fonctionnalités JavaScript modernes, notamment les fonctionnalités ES10, et offre un éditeur visuel intuitif qui simplifie le processus d’écriture de règles.
-L’éditeur de règles contribue à rationaliser l’expérience de remplissage de formulaire, en assurant à la fois précision et efficacité. Il permet la validation ou la réinitialisation des panneaux et des formulaires, ainsi que l’exécution de fonctions personnalisées pour calculer les valeurs des objets de formulaire. Grâce à sa prise en charge des conditions imbriquées et à la possibilité d’appeler les services de modèle de données de formulaire, l’interface utilisateur de l’éditeur de règles est un composant essentiel pour la création de formulaires adaptatifs réactifs, conviviaux.
+L’interface utilisateur de l’éditeur de règles pour le Forms adaptatif basé sur les composants principaux améliore le processus de création de formulaires dans Adobe Experience Manager (AEM). Il permet aux utilisateurs professionnels et aux développeurs d’implémenter un comportement dynamique et une logique complexe dans les formulaires en écrivant des règles qui déclenchent des actions en fonction de conditions prédéfinies, de saisies d’utilisateurs et d’interactions. Cette fonctionnalité prend en charge les fonctionnalités JavaScript modernes jusqu’à ES2022 et offre un éditeur visuel intuitif qui simplifie le processus de création de règles.
+L’éditeur de règles joue un rôle essentiel dans la rationalisation du remplissage du formulaire, en garantissant à la fois précision et efficacité. Il permet la validation ou la réinitialisation des panneaux et des formulaires, ainsi que l’exécution de fonctions personnalisées pour calculer les valeurs des objets de formulaire. Grâce à sa prise en charge des conditions imbriquées et à la possibilité d’appeler les services de modèle de données de formulaire, l’interface utilisateur de l’éditeur de règles est un composant essentiel pour la création de formulaires réactifs, conviviaux et adaptatifs.
 
 ## Présentation de l’interface utilisateur de l’éditeur de règles {#understanding-the-rule-editor-user-interface}
 
@@ -38,7 +38,7 @@ Examinons en détail chaque composant de l’interface utilisateur de l’édite
 
 ### A. Affichage composant-règle {#a-component-rule-display}
 
-Affiche le titre de l’objet de formulaire adaptatif à partir duquel vous avez lancé l’éditeur de règles et le type de règle actuellement sélectionné. Dans l’exemple ci-dessus, l’éditeur de règles est lancé à partir d’un objet de formulaire adaptatif intitulé Question 1 et le type de règle sélectionné est Lorsque.
+Affiche le titre de l’objet de formulaire adaptatif à partir duquel vous avez lancé l’éditeur de règles et le type de règle actuellement sélectionné. Dans l’exemple ci-dessus, l’éditeur de règles est lancé à partir de l’objet de formulaire adaptatif intitulé Question 1 et le type de règle sélectionné est Lorsque.
 
 ### B. Objets de formulaire et fonctions {#b-form-objects-and-functions-br}
 
@@ -48,15 +48,15 @@ L’onglet Objets de formulaire affiche une arborescence de tous les objets cont
 
 Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont désignés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est désigné par un point jaune.
 
-L’onglet Fonctions comporte un jeu de fonctions intégrées, comme Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans les panneaux et les lignes de tableau répétables et pour les instructions d’action et de condition lors de la création de règles. Vous pouvez toutefois créer des fonctions personnalisées.
+L’onglet Fonctions comporte un jeu de fonctions intégrées, comme Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans les panneaux et les lignes de tableau répétables et pour les instructions d’action et de condition lors de la création de règles. Cependant, vous pouvez également créer des fonctions personnalisées.
 
-Certaines fonctions de la liste sont affichées dans la figure :
+Certaines fonctions de la liste sont affichées dans la figure :
 
 ![L’onglet Fonctions](assets/functions.png)
 
 >[!NOTE]
 >
->Vous pouvez effectuer une recherche de texte sur les noms et titres des objets et des fonctions dans les onglets Objets et fonctions Forms .
+>Vous pouvez effectuer une recherche de texte dans les noms et titres des objets et des fonctions à partir des onglets Objets et Fonctions de Forms.
 
 Dans l’arborescence de gauche des objets de formulaire, vous pouvez sélectionner les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire. Pour plus d’informations, reportez-vous à la section [Règles de copier-coller](rule-editor.md#p-copy-paste-rules-p).
 
@@ -68,7 +68,7 @@ Le bouton Basculer, lorsqu’il est sélectionné, permet de basculer entre le v
 
 Lorsque l’interface utilisateur de l’éditeur de règles est en mode éditeur visuel, l’éditeur de règles visuel est la zone dans laquelle vous créez des règles. Il vous permet de sélectionner un type de règle et de définir en conséquence des conditions et des actions. Lors de la définition des conditions et des actions dans une règle, vous pouvez glisser-déposer des objets de formulaire et des fonctions depuis le volet Objets de formulaire et Fonctions.
 
-Pour plus d’informations sur l’utilisation d’un éditeur de règles visuel, voir [Écrire des règles](rule-editor.md#p-write-rules-p).
+Pour plus d’informations sur l’utilisation d’un éditeur de règles visuel, voir [Création de règles](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -91,15 +91,15 @@ Le bouton **[!UICONTROL Annuler]** annule toutes les modifications que vous avez
 
 ## Règles d’écriture {#write-rules}
 
-Vous pouvez écrire des règles à l’aide de l’éditeur de règles visuel <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Vous pouvez écrire des règles à l’aide de l’éditeur de règles visuel <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->.
 
-Commençons par découvrir comment écrire des règles à l’aide d’un éditeur visuel.
+Examinons d’abord comment écrire des règles à l’aide d’un éditeur visuel.
 
 +++
 
-+++ Utilisation de l’éditeur visuel {#using-visual-editor}
++++ Utilisation des {#using-visual-editor} de l’éditeur visuel
 
-Découvrez comment créer une règle dans un éditeur visuel à l’aide de l’exemple de formulaire suivant.
+Examinons comment créer une règle dans un éditeur visuel à l’aide de l’exemple de formulaire suivant.
 
 ![Create-rule-example](assets/create-rule-example.png)
 
@@ -110,7 +110,7 @@ La section Conditions de prêt dans l’exemple de formulaire de demande de prê
 
 Pour créer des règles :
 
-1. Tout d’abord, écrivez la règle pour contrôler la visibilité du champ Salaire du conjoint en fonction de l’option que l’utilisateur sélectionne pour le bouton radio État civil .
+1. Tout d’abord, créez la règle pour contrôler la visibilité du champ Salaire du conjoint en fonction de l’option que l’utilisateur sélectionne pour le bouton radio État civil.
 
    Ouvrez le formulaire de demande de prêt en mode Création. Sélectionnez le composant **[!UICONTROL État civil]** et choisissez ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
@@ -124,7 +124,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-1. Dans le champ **[!UICONTROL Entrer une chaîne]** de la règle, sélectionnez **Marié** dans le menu déroulant.
+1. Dans le champ **[!UICONTROL Saisissez une chaîne]** de la règle, sélectionnez **Marié(e)** dans le menu déroulant.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -134,20 +134,20 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    Définissez ensuite l’action à effectuer si cette condition est False.
-1. Cliquez sur **[!UICONTROL Ajouter une autre section]** pour ajouter une autre condition pour le champ **[!UICONTROL Salaire du conjoint]**, au cas où vous sélectionneriez État civil comme seul.
+1. Cliquez sur **[!UICONTROL Ajouter une section Else]** pour ajouter une autre condition pour le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]**, au cas où vous sélectionneriez célibataire pour État civil.
 
    ![when-else](assets/when-else.png)
 
 
-1. Dans l’instruction Else, sélectionnez **[!UICONTROL Masquer]** dans la liste déroulante **[!UICONTROL Sélectionner une action]**.
+1. Dans l’instruction Else, choisissez **[!UICONTROL Masquer]** dans le menu déroulant **[!UICONTROL Sélectionner l’action]**.
    ![when-else](assets/when-else-1.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**. Vous pouvez également sélectionner le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]**, puis le champ **[!UICONTROL Salaire du conjoint ou de la conjointe]** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
    ![when-else](assets/when-else-2.png)
 
    La règle s’affiche comme suit dans l’éditeur de règles.
@@ -163,11 +163,11 @@ Pour créer des règles :
 
 >[!NOTE]
 >
-> Vous pouvez également écrire une règle Afficher sur le champ Salaire du conjoint, au lieu d’une règle Lorsque sur le champ État civil, pour mettre en oeuvre le même comportement.
+> Vous pouvez également créer une règle Afficher dans le champ Salaire du conjoint ou de la conjointe, au lieu de deux règles Lorsque dans le champ État civil pour mettre en œuvre le même comportement.
 
 ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
-1. Ensuite, créez une règle pour calculer le niveau d’éligibilité de prêt, à hauteur de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. Pour obtenir ce résultat, créez des règles **[!UICONTROL Définir la valeur de]** sur le champ Éligibilité de prêt .
+1. Ensuite, créez une règle pour calculer le niveau d’éligibilité de prêt, à hauteur de 50 % du salaire total, puis affichez-la dans le champ Éligibilité de prêt. Pour obtenir ce résultat, créez des règles **[!UICONTROL Définir la valeur de]** dans le champ Éligibilité de prêt.
 
    En mode Création, sélectionnez le champ **[!UICONTROL Éligibilité de prêt]**, puis ![edit-rules](assets/edit-rules-icon.svg). Ensuite, sélectionnez **[!UICONTROL Créer]** pour lancer l’éditeur de règles.
 
@@ -227,7 +227,7 @@ Vous pouvez également utiliser la règle Définir la valeur de pour calculer l�
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-Vous pouvez écrire une règle combinée pour contrôler la visibilité du champ Salaire du conjoint et calculer l’éligibilité de prêt lorsque l’état civil est Marié à l’aide de la condition Sinon.
+De même, vous pouvez écrire une règle combinée pour contrôler la visibilité du champ Salaire du conjoint ou de la conjointe lorsque la valeur d’état civil est Marié ou mariée à l’aide de la condition Else.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
@@ -238,7 +238,7 @@ Vous pouvez écrire une règle combinée pour contrôler la visibilité du champ
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -257,7 +257,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
 
-Outre les fonctions prêtes à l’emploi telles que *Somme de* répertoriées sous **Fonctions Output**, vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. L’éditeur de règles prend en charge la syntaxe ECMAScript 2019 de JavaScript pour les scripts et les fonctions personnalisées. Pour plus d’informations sur la création de fonctions personnalisées, consultez l’article [Fonctions personnalisées dans les formulaires adaptatifs](/help/forms/create-and-use-custom-functions.md).
+Outre les fonctions prêtes à l’emploi, comme *Somme de*, qui sont répertoriées sous **Sortie de fonction**, vous pouvez également utiliser des fonctions personnalisées dans l’éditeur de règles L’éditeur de règles prend en charge la syntaxe JavaScript ECMASScript 2019 pour les scripts et les fonctions personnalisées. Pour plus d’informations sur la création de fonctions personnalisées, consultez l’article [Fonctions personnalisées dans les formulaires adaptatifs](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -441,14 +441,14 @@ Vous pouvez effectuer les actions suivantes sur les règles :
 
 * **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu entier des règles n’est pas visible dans l’affichage par défaut, sélectionnez ![expand-rule-content](assets/Smock_ChevronDown.svg) pour le développer.
 
-* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous disposez de règles Lorsque, Afficher, Activer et Lorsque à la première, deuxième, troisième et quatrième position depuis le haut, respectivement, la règle Lorsque dans la partie supérieure est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
+* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque à la première, deuxième, troisième et quatrième position du haut, respectivement, la règle Lorsque en haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.svg) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
 * **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. Les options de modification et de suppression de la règle s’affichent. Sélectionnez **[!UICONTROL Modifier]** pour ouvrir la règle sélectionnée dans l’éditeur de règles.
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/Désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et sélectionner **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule-cc.png)
 
@@ -458,7 +458,7 @@ Vous pouvez copier-coller une règle d’un champ à d’autres champs similaire
 
 Pour copier-coller des règles, procédez comme suit :
 
-1. Sélectionnez l’objet de formulaire à partir duquel vous souhaitez copier une règle, puis, dans la barre d’outils du composant, sélectionnez ![modifier la règle](assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
+1. Sélectionnez l’objet de formulaire à partir duquel vous souhaitez copier une règle puis, dans la barre d’outils des composants, sélectionnez ![edit-rules](assets/edit-rules-icon.svg). L’interface utilisateur de l’éditeur de règles s’affiche avec l’objet de formulaire sélectionné, et les règles existantes s’affichent.
 
    ![copy rule](assets/copyrule.png)
 
@@ -478,7 +478,7 @@ Pour copier-coller des règles, procédez comme suit :
 
 ## Étape suivante
 
-Pour comprendre les différents types d’opérateurs et événements dans l’éditeur de règles d’un formulaire adaptatif, reportez-vous à l’article [Types d’opérateurs et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif](/help/forms/rule-editor-core-components-events-operators.md) .
+Pour comprendre les différents types d’opérateur et événements dans l’éditeur de règles d’un formulaire adaptatif, reportez-vous à l’article [Types d’opérateur et événements disponibles dans l’éditeur de règles d’un formulaire adaptatif](/help/forms/rule-editor-core-components-events-operators.md).
 
 
 ## Voir également

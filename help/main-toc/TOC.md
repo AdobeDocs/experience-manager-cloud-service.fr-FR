@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54fedd6eb2abe4f60af20c39ac70e21378687b45
+source-git-commit: abee266772fc2b09d59a2fa4dcc6a60ba3fe1752
 workflow-type: tm+mt
-source-wordcount: '6343'
+source-wordcount: '6351'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,7 @@ ht-degree: 99%
    + Communication interactive {#interactive-communocation}
       + [Présentation des communications interactives](/help/forms/introduction-to-interactive-communication.md)
       + [Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
+      + [Générer une sortie AFP à l’aide de l’API AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Questions fréquentes](/help/forms/interactive-communications-faq.md)
    + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Présentation du workflow basé sur l’utilisation de Forms](/help/forms/aem-forms-workflow.md)

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+workflow-type: tm+mt
+source-wordcount: '1810'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -59,6 +59,33 @@ Vous pouvez désormais importer des formulaires de métadonnées de la vue Admin
 Le hub de contenus permet désormais de [contrôler l’accès aux collections lors de leur création, en veillant à ce que seuls les utilisateurs et utilisatrices autorisés puissent afficher ou gérer les ressources regroupées](/help/assets/collections-content-hub.md##create-collections). Il garantit l’amélioration de la sécurité et de la collaboration, une gestion des ressources organisée et une gouvernance simplifiée.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+* [Éditeur universel pour les Forms adaptatifs et les fragments de formulaire](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : l’éditeur universel prend désormais en charge la création de Forms adaptatif et de fragments de formulaire réutilisables. Les auteurs peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et améliore la protection contre le spam et les abus automatisés.
+
+### Fonctionnalités de version préliminaire
+
+* [Générer et synchroniser les rendus AFP à partir de Forms adaptatif](/help/forms/document-generation-afp-api.md) : l’API de synchronisation de sortie AFP permet aux administrateurs et aux utilisateurs de générer une sortie AFP (présentation de fonction avancée) à partir de Forms adaptatif et de synchroniser la sortie avec des systèmes ou des emplacements de stockage externes. L’AFP est un format de document haute performance optimisé pour l’impression, souvent utilisé dans les environnements d’entreprise à grande échelle.
+
+* [Bibliothèque de documents SharePoint - Enregistrer les pièces jointes avec les noms de fichier d’origine](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library) : vous avez désormais la possibilité d’enregistrer les pièces jointes de formulaire en utilisant leurs noms de fichier d’origine lors de leur stockage dans une bibliothèque de documents SharePoint. Cette amélioration simplifie l’identification et la gestion des fichiers chargés.
+
+* **Éditeur de règles** :
+   * [Condition binaire avec événement de clic dans la clause « When »](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor) : l’éditeur de règles permet désormais de combiner un événement de clic de bouton (_Est cliqué_) avec d’autres conditions dans la clause « When ». Cela permet un contrôle plus précis de l’exécution des règles en fonction de l’interaction utilisateur et d’autres facteurs. Remarque : lorsque vous utilisez plusieurs conditions, l’événement de clic doit être la première condition répertoriée.
+   * [Conditions de validation des champs et des panneaux](/help/forms/rule-editor-core-components-usecases.md) : l’éditeur de règles inclut désormais les conditions _IsValid_ et _IsNotValid_. Ils vous permettent de vérifier l’état de validation de champs spécifiques ou de panneaux entiers (y compris des dispositions telles que les onglets horizontaux, verticaux, accordéons et assistants), ce qui améliore la navigation dans les formulaires et l’expérience client en fonction des résultats de validation.
+* [Amélioration de la gestion de l’étendue pour les listes SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) : les sites SharePoint prennent désormais en charge tous les chemins gérés, par exemple /sites et /team. Cette amélioration permet une intégration plus large entre différentes structures de site SharePoint, offrant ainsi une plus grande flexibilité pour se connecter au contenu organisationnel.
+* [Prise en charge de l’enregistrement du document d’enregistrement dans la liste SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields) : les formulaires créés à l’aide d’un modèle de données de formulaire (FDM) basé sur une liste SharePoint peuvent désormais enregistrer le document d’enregistrement (DoR) dans les listes SharePoint en configurant la propriété de champ Référence de liaison de document d’enregistrement. Cette amélioration permet une intégration transparente des données de formulaire et des documents pris en charge avec le stockage SharePoint.
+
+### Fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
+
+Le programme d’accès anticipé d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement.
+
+Les notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
+
+#### Intégration d’Adobe Experience Platform (AEP) à Forms
+
+* [Intégration d’AEM Forms à Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md) : le connecteur AEM Forms vers Adobe Experience Platform permet une intégration transparente entre Adaptive Forms et Adobe Experience Platform. Cette fonctionnalité permet de mapper les données de formulaire aux schémas XDM et de les envoyer directement à AEP en temps réel. Il rationalise la capture de données pour les cas d’utilisation de personnalisation et d’activation dans les solutions Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

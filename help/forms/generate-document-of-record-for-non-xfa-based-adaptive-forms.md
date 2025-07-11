@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 91%
+source-wordcount: '4225'
+ht-degree: 90%
 
 ---
 
@@ -395,6 +395,14 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
    ```
 
 1. Pour enregistrer les modifications d’identité graphique, sélectionnez **[!UICONTROL Terminé]**.
+
+>[!NOTE]
+> 
+> Pour afficher un titre de formulaire personnalisé dans votre document d’enregistrement, modifiez le **Titre de formulaire personnalisé** dans **Propriétés du document d’enregistrement** > **Propriétés de page de Principal**. Ce titre personnalisé :
+> 
+> * Apparaît dans l’en-tête du PDF généré
+> * Apparaît comme titre dans les propriétés du document PDF
+> * S’affiche en tant que titre d’affichage initial à l’ouverture du PDF
 
 ## Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif {#dor-support-in-adaptiveform}
 

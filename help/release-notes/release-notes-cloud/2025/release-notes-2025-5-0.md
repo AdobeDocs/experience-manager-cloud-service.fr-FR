@@ -3,10 +3,11 @@ title: Notes de mise à jour de la version 2025.5.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.5.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 98%
+source-wordcount: '2162'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464352?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -107,13 +108,13 @@ Accédez à tous vos [rendus prédéfinis et recadrages intelligents Dynamic Me
 
 [Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes du marketing d’incorporer facilement des ressources AEM Dynamic Media (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463784/?learn=on&enablevpops=&autoplay=true&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Fonctionnalités de version préliminaire
 
-* [Éditeur universel - Fragments de formulaire](/help/edge/docs/forms/universal-editor/creating-form-fragments.md) : l’éditeur universel vous permet désormais de créer et de réutiliser des fragments de formulaire pour le formulaire adaptatif. Ces fragments sont des sections de formulaire réutilisables (par exemple, coordonnées, champs de consentement) qui peuvent être créées une seule fois et appliquées à plusieurs formulaires. Cette fonctionnalité simplifie la création de formulaires, assure la cohérence et améliore l’efficacité de création.
+* [Éditeur universel pour les Forms adaptatifs et les fragments de formulaire](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : l’éditeur universel prend désormais en charge la création de Forms adaptatif et de fragments de formulaire réutilisables. Les auteurs peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et améliore la protection contre le spam et les abus automatisés.
 
 * [Bibliothèque de documents SharePoint - Enregistrer les pièces jointes avec les noms de fichier d’origine](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library) : vous avez désormais la possibilité d’enregistrer les pièces jointes de formulaire en utilisant leurs noms de fichier d’origine lors de leur stockage dans une bibliothèque de documents SharePoint. Cette amélioration simplifie l’identification et la gestion des fichiers chargés.
 
@@ -131,7 +132,7 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Intégration d’Adobe Experience Platform (AEP) à Forms
 
-Les fonctionnalités d’intégration entre Forms et AEP sont désormais disponibles pour les utilisateurs et utilisatrices précoces.
+* [Intégration d’AEM Forms à Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md) : le connecteur AEM Forms vers Adobe Experience Platform permet une intégration transparente entre Adaptive Forms et Adobe Experience Platform. Cette fonctionnalité permet de mapper les données de formulaire aux schémas XDM et de les envoyer directement à AEP en temps réel. Il rationalise la capture de données pour les cas d’utilisation de personnalisation et d’activation dans les solutions Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -235,7 +236,7 @@ Cas d’utilisation courants :
 * Authentification des utilisateurs et utilisatrices auprès d’un fournisseur d’identités avant d’accorder l’accès au contenu
 * Personnalisation du contenu en fonction de la géolocalisation, du type d’appareil ou des attributs d’utilisateur ou d’utilisatrice
 * Fonctionnement en tant que middleware entre le réseau CDN et votre origine
-* Reformatage des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
+* Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
 * Composition et diffusion de HTML rendu sur le serveur en périphérie à l’aide de contenu assemblé à partir de divers serveurs principaux
 
 Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’instance de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
