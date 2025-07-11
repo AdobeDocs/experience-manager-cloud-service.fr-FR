@@ -4,10 +4,10 @@ description: Comprendre l’interface utilisateur et de la navigation dans [!DNL
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 76%
+source-wordcount: '980'
+ht-degree: 77%
 
 ---
 
@@ -40,11 +40,8 @@ Quand vous naviguez dans le dossier des ressources, vous pouvez utiliser l’int
 * **Récemment consultés** : liste des ressources que vous avez récemment prévisualisées. [!DNL Assets view] affiche uniquement les ressources que vous prévisualisez. Cette fonctionnalité n’affiche pas les ressources que vous faites défiler en naviguant dans les fichiers ou dossiers du référentiel.
 * [Collections](/help/assets/manage-collections-assets-view.md) : une collection est un ensemble de ressources, de dossiers ou d’autres collections dans la vue Assets d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs et utilisatrices. Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
-<!--
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics) : dans [!DNL Assets view], vous pouvez afficher des insights en temps réel sur votre tableau de bord. La vue Assets vous permet d’afficher des données en temps réel pour votre environnement Assets à l’aide du tableau de bord Insights. Vous pouvez afficher les mesures d’événement en temps réel au cours des 30 derniers jours ou au cours des 12 derniers mois.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
-
--->
 * **Corbeille** : répertorie les ressources supprimées du dossier racine **[!UICONTROL Ressources]**. Vous pouvez sélectionner une ressource dans le dossier Corbeille pour la restaurer à son emplacement d’origine ou la supprimer définitivement. Vous pouvez spécifier un mot-clé ou appliquer des filtres tels que le statut de la ressource, le type de fichier, le type MIME, la taille de l’image, la création, la modification et les dates d’expiration des ressources, ainsi que le filtrage par ressources ignorées par la personne actuelle. Vous pouvez également appliquer des filtres personnalisés pour rechercher les ressources appropriées dans le dossier Corbeille. Pour plus d’informations sur l’utilisation de filtres standard et personnalisés, consultez la section [Recherche de ressources dans la vue Assets](/help/assets/search-assets-view.md).
 * **Paramètres** : vous pouvez configurer différentes options de la vue Assets à l’aide des **Paramètres**, par exemple, les formulaires de métadonnées, les rapports et la gestion de la taxonomie.
 
@@ -80,7 +77,7 @@ Pour prévisualiser une ressource, sélectionnez-la et cliquez sur ![icône de d
 
 ![Aperçu d’une ressource](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A** : revenez au dossier actuel ou au résultat de la recherche actuel dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : affecter des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaires et annotations **G** : afficher les tâches liées à la ressource sélectionnée **H** : [afficher et gérer les versions](/help/assets/manage-organize-assets-view.md#versions-of-assets)I **: afficher les rendus de l’image** J **: modifier l’image** K **&#x200B;**&#x200B;: afficher les rendus Dynamic Media, y compris le recadrage intelligent et les rendus avec fonctionnalités OpenAPI. **L** : métadonnées de base **M** : métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier **P** : aperçu plus détaillé. Zoom, plein écran et d’autres options.
+**A** : revenez au dossier actuel ou au résultat de la recherche actuel dans le référentiel **B** : nom et format du fichier que vous prévisualisez **C** : affecter des tâches **D** : métadonnées avancées **E** : mots-clés et balises intelligentes **F** : commentaires et annotations **G** : afficher les tâches liées à la ressource sélectionnée **H** : [afficher et gérer les versions](/help/assets/manage-organize-assets-view.md#versions-of-assets)I **: afficher les rendus de l’image** J **: modifier l’image** K **** : afficher les rendus Dynamic Media, y compris le recadrage intelligent et les rendus avec fonctionnalités OpenAPI. **L** : métadonnées de base **M** : métadonnées avancées **N** : mots-clés et balises intelligentes **O** : passez à la ressource précédente ou suivante dans le dossier actif sans revenir au dossier **P** : aperçu plus détaillé. Zoom, plein écran et d’autres options.
 
 Vous pouvez également prévisualiser des vidéos.
 

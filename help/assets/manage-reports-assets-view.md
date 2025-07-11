@@ -6,10 +6,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 85%
+source-wordcount: '1504'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,6 @@ L’environnement d’affichage AEM Assets offre des fonctionnalités de créati
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier pour générer le rapport des ressources chargées et téléchargées dans ce dossier spécifique. Par exemple, si vous avez besoin d’un rapport de ressources chargées dans un dossier, indiquez le chemin d’accès à ce dossier.
    1. **Sélectionner l’intervalle de dates :** sélectionnez la période pour afficher l’activité de chargement ou de téléchargement dans le dossier.
-
    <br>
 
    >[!NOTE]
@@ -143,7 +142,7 @@ Obtenez des informations de diffusion pour les ressources diffusées avec Dynami
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Conditions préalables {#prereqs-dynamic-media-delivery-reports}
@@ -205,7 +204,6 @@ Pour planifier un rapport, procédez comme suit :
    1. **Description :** ajoutez une description facultative au rapport.
    1. **Sélectionner le chemin d’accès au dossier :** sélectionnez un chemin d’accès au dossier afin de générer un rapport pour les ressources qui seront chargées ou téléchargées à partir de ce dossier spécifique à l’avenir.
    1. Activer **Planifier un rapport :** activez cette option pour planifier le rapport à une date ultérieure ou récurrente.
-
       ![Planification d’un rapport](/help/assets/assets/schedule-reports1.svg)
 
    1. **Choisir la fréquence :** spécifiez l’intervalle de génération du rapport (par exemple, quotidien, hebdomadaire, mensuel, annuel ou ponctuel) et définissez la date et l’heure d’exécution du rapport ainsi que la date de fin de la périodicité. Pour un rapport ponctuel, sélectionnez la période du rapport sur le type d’activité sélectionné dans l’environnement AEM. Par exemple, si vous avez besoin d’un rapport sur les ressources téléchargées entre le 10 et le 29 (dates futures) d’un mois spécifique, sélectionnez ces dates dans le champ **Sélectionner l’intervalle de dates**.
@@ -249,11 +247,11 @@ Cliquez sur les **[!UICONTROL Insights]** disponibles dans le volet de navigatio
 
 * **Chargements** : nombre de ressources chargées dans l’environnement d’affichage Assets au cours des 30 derniers jours ou 12 derniers mois, représentées à l’aide d’un graphique linéaire.
   ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
-  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
-* **Utilisation du stockage** : utilisation du stockage, en octets, pour l’environnement d’affichage Assets représenté à l’aide d’un graphique à barres.
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
-  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
