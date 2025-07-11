@@ -3,9 +3,9 @@ title: Intégration lors  [!DNL AEM Assets]  la création de contenu pour  [!DNL
 description: Découvrez comment intégrer le [!DNL AEM Assets] avec [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  [!DNL Microsoft Word]  et [!DNL Google Docs], integrate [!DNL AEM Assets] avec [!DNL Universal Editor], integrate [!DNL Dynamic Media] avec [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Universal Editor] et l’intégrer [!DNL Dynamic Media with OpenAPI capabilities] avec [!DNL Microsoft Word] et [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Vous pouvez également utiliser les ressources diffusées à l’aide de [!DNL D
 * La gouvernance (références ou copies de la ressource), qui permet la propagation automatique d’événements du cycle de vie des ressources tels que l’expiration, la suppression et les mises à jour.
 * Rendus d’images dynamiques et recadrage intelligent.
 * Optimisation et diffusion des médias riches, telles que la diffusion vidéo adaptative par flux prêt à l’emploi et la diffusion de ressources d’origine pour les PDF.
-* Rapport Impressions au niveau des ressources ([disponibilité limitée](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+<!--
+
+* Asset-level impressions report ([limited availability](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+
+-->
 
 Pour plus d’informations sur ces fonctionnalités, consultez la documentation [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
