@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Aucun.
 
 #### AEM Guides {#guides-21484}
 
-* GUIDES-29781 : lorsqu’un commentaire XML est ajouté dans un élément de la vue Source, les espaces de début et de fin autour du commentaire sont perdus lors du changement de vue.
-* GUIDES-29078 : lors de l’ouverture d’une rubrique en mode Auteur après l’actualisation du navigateur, les balises précédemment appliquées dans le panneau Propriétés du fichier ne sont pas conservées et l’ajout de nouvelles balises remplace les balises existantes, en particulier lorsqu’un grand nombre de balises sont disponibles pour la sélection.
-* GUIDES-28214 : Les tentatives de création de tâches de révision par le biais du workflow AEM échouent systématiquement, car le nœud de révision n’est pas créé.
-* GUIDES-28104 : la publication d’un plan DITA avec `chunk=to-content` attribut crée des nœuds JCR en double dans la nouvelle sortie AEM Sites, ce qui entraîne une structure de contenu redondante dans AEM Sites.
-* GUIDES-29065, GUIDES-28793 : des problèmes de performances tels que des temps de chargement plus longs et des délais d’expiration intermittents sont observés lors de l’utilisation de collections volumineuses.
+* GUIDES-29781 : lorsqu’un commentaire XML est ajouté dans un élément de la vue Source, les espaces de début et de fin autour du commentaire sont perdues lors du changement de vue.
+* GUIDES-29078 : lors de l’ouverture d’une rubrique en mode Création après l’actualisation du navigateur, les balises précédemment appliquées dans le panneau Propriétés du fichier ne sont pas conservées et l’ajout de nouvelles balises remplace les balises existantes, en particulier lorsqu’un grand nombre de balises sont disponibles à la sélection.
+* GUIDES-28214 : les tentatives de création de tâches de révision par le biais du workflow AEM échouent systématiquement, car le nœud de révision n’est pas créé.
+* GUIDES-28104 : la publication d’un plan DITA avec un attribut `chunk=to-content` crée des nœuds JCR en double dans la nouvelle sortie AEM Sites, ce qui entraîne une structure de contenu redondante dans AEM Sites.
+* GUIDES-29065, GUIDES-28793 : des problèmes de performances tels que des temps de chargement plus longs et des délais d’expiration intermittents sont observés lors de l’utilisation de collections volumineuses.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
