@@ -1,18 +1,18 @@
 ---
-title: Restauration de contenu dans AEM as a Cloud Service
+title: Restaurer du contenu dans AEM as a Cloud Service
 description: Découvrez comment restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 26%
+source-wordcount: '1359'
+ht-degree: 23%
 
 ---
 
 
-# Restauration de contenu dans AEM as a Cloud Service {#content-restore}
+# Restaurer du contenu dans AEM as a Cloud Service {#content-restore}
 
 Vous pouvez restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
 
@@ -20,7 +20,7 @@ Vous pouvez restaurer votre contenu AEM as a Cloud Service à partir de la sauve
 
 Le processus de restauration en libre-service de Cloud Manager copie les données des sauvegardes système d’Adobe et les restaure dans son environnement d’origine. Une restauration est effectuée pour renvoyer à leur état d’origine les données qui ont été perdues, endommagées ou supprimées accidentellement.
 
-Le processus de restauration affecte uniquement le contenu, laissant votre code et votre version d’AEM inchangés. Vous pouvez lancer la restauration de différents environnements à tout moment.
+Le processus de restauration affecte uniquement le contenu, laissant votre code et votre version d’AEM inchangés. Vous pouvez lancer une opération de restauration de différents environnements à tout moment. (Si vous devez restaurer le code source précédemment déployé de manière facile et rapide, sans avoir à démarrer une nouvelle exécution de pipeline, vous pouvez utiliser [Restaurer le code précédemment déployé](/help/operations/restore-previous-code-deployed.md)).
 
 Cloud Manager fournit deux types de sauvegardes à partir desquelles vous pouvez restaurer du contenu.
 
@@ -87,7 +87,7 @@ Pour plus d’informations sur la gestion des autorisations, voir [Autorisations
      >
      >La carte **Environnements** répertorie uniquement trois environnements. Cliquez sur **Tout afficher** dans la carte pour afficher *tous* les environnements du programme.
 
-1. Dans le tableau Environnements , à droite d’un environnement dont vous souhaitez restaurer le contenu, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis sur **Restaurer le contenu**.
+1. Dans le tableau Environnements , à droite d’un environnement dont vous souhaitez restaurer le contenu, cliquez sur ![Icône Plus ou icône du menu représentant des points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), puis cliquez sur **Restaurer le contenu**.
 
    ![Option Restaurer le contenu du menu représentant des points de suspension](/help/operations/assets/environments-ellipsis-menu.png)
 
