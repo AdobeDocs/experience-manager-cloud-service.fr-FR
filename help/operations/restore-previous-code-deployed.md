@@ -1,12 +1,12 @@
 ---
-title: Restaurer le code Source précédent déployé dans AEM as a Cloud Service
+title: Restaurer le code Source précédent déployé
 description: Découvrez comment restaurer un environnement à sa dernière version &ndash; réussie ; aucune exécution de pipeline requise.
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
