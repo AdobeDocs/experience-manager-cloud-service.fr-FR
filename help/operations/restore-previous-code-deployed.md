@@ -4,9 +4,10 @@ description: Découvrez comment restaurer un environnement à sa dernière versi
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 3%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
@@ -29,12 +30,12 @@ Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant 
 
 La fonctionnalité **Restaurer le code précédent déployé** n’est disponible que lorsque **chaque** condition ci-dessous est remplie :
 
-* Vous détenez l’autorisation **Créer une restauration d’environnement**. Pour plus d’informations sur la gestion des autorisations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
+* Vous détenez les autorisations **Environment Restore Create**. Pour plus d’informations sur la gestion des autorisations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
 * Votre entreprise est inscrite au programme des utilisateurs et utilisatrices précoces et l’indicateur de fonctionnalité est activé.
-* Le programme s&#39;exécute sur **AEM as a Cloud Service**.
-* L&#39;environnement choisi est un environnement **DEV** (limite temporaire d&#39;Alpha).
-* Le dernier pipeline pour cet environnement s’est terminé **avec succès** et s’est exécuté **il y a moins de 10 jours**.
-* Le statut de l’environnement est **En cours d’exécution** et aucun pipeline n’est en cours.
+* Le programme s’exécute sur AEM as a Cloud Service.
+* L&#39;environnement choisi est un environnement `Development` (limite temporaire d&#39;Alpha).
+* Le dernier pipeline pour cet environnement s’est terminé avec succès et s’est exécuté il y a **de 10 jours**.
+* Le statut de l’environnement est *En cours d’exécution* et aucun pipeline n’est en cours.
 * La version du code source cible que vous souhaitez restaurer a été déployée **dans les 30 jours**.
 
 Si une vérification échoue, Cloud Manager ouvre la boîte de dialogue suivante qui répertorie une ou plusieurs conditions non remplies et désactive **Confirmer**, empêchant la restauration.
