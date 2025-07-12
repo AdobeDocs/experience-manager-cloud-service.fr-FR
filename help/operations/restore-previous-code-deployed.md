@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha destiné aux utilisateurs et utilisatrices précoces. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
