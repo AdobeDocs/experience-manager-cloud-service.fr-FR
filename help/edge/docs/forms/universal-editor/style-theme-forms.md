@@ -142,6 +142,7 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
   }
   
 ```
+
 * `.{Type}-wrapper` : cible l’élément `div` externe en fonction du type de champ. Par exemple : `.text-wrapper` cible tous les champs de texte.
 * `.field-{Name}` : affine la sélection de l’élément en fonction du nom de champ spécifique. Par exemple, `.field-first-name` cible le champ de texte « Prénom ». Bien que ce sélecteur puisse être utilisé pour cibler les éléments avec la classe field-{Name} , il est important d’être prudent. Dans ce cas spécifique, il ne serait pas utile de définir le style de champs d’entrée, car cela ciblerait non seulement l’entrée elle-même, mais également les éléments de libellé et de description. Il est recommandé d’utiliser des sélecteurs plus spécifiques comme ceux dont vous disposez pour cibler les champs d’entrée de texte (entrée .text-wrapper).
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * Cibler le wrapper : le premier sélecteur (`.drop-down-wrapper`) cible l’élément wrapper externe, assurant ainsi l’application des styles à l’ensemble du composant de liste déroulante.
 * Disposition Flexbox : Flexbox organise le libellé, la liste déroulante et la description verticalement pour une disposition claire.
 * Définition du style de libellé : le libellé se distingue par une police plus épaisse et une légère marge.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### Groupes de boutons radio
 
@@ -282,6 +284,7 @@ Tout comme les composants de liste déroulante, les groupes de boutons radio pr�
     padding: 10px;
   }
 ```
+
 Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper. Cela s’avère utile pour appliquer des styles généraux à l’ensemble du groupe de boutons radio.
 
 * Ciblage des libellés de boutons radio
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-* L’élément de légende (<legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+* L’élément de légende (&lt;legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
 * Dans le fieldset, plusieurs éléments.Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans ce cas) représentent des champs de formulaire individuels dans le panneau.
 * Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 ce sélecteur définit le style de tous les wrappers de champ dans un panneau répétable, en assurant un espacement cohérent entre les champs.
 
 * Ciblage de champs spécifiques (dans un panneau) :
