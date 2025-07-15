@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 28%
+source-wordcount: '2219'
+ht-degree: 27%
 
 ---
 
@@ -73,21 +73,6 @@ Voici ce que le Forms de conversation apporte de plus :
 
 Les Forms de conversation sont plus qu’une nouveauté : elles changent la donne en termes d’expérience utilisateur.  Stimulez l’engagement, réduisez l’abandon de formulaire et rendez l’interaction avec votre site web plus agréable pour tous.
 
-
-### Création WYSIWYG pour Edge Delivery Services
-
-La création WYSIWYG fournit des interfaces WYSIWYG (éditeur universel et éditeur de Forms adaptatif) pour créer et publier des formulaires adaptatifs sur Edge Delivery Services. La création WYSIWYG offre toutes les fonctionnalités de la [création basée sur les documents](/help/edge/docs/forms/overview.md#document-based-authoring-features), ainsi qu’un large éventail de fonctionnalités supplémentaires :
-
-* Éditeur de règles avancé pour créer une logique complexe.
-* Extensibilité côté serveur pour les fonctionnalités personnalisées.
-* Expérience d’édition WYSIWYG pour une création et une visualisation de formulaire simples.
-* Fonctionnalité de document d’enregistrement pour créer des archives inviolables de données envoyées.
-* Intégration à Adobe Sign pour les signatures électroniques.
-* Intégration à différentes sources de données pour préremplir les formulaires et envoyer des données.
-* Modèle de données de formulaire (FDM) pour définir la structure des données et les interactions avec diverses sources de données.
-* Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris l’envoi de données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics et de nombreuses autres sources de données.
-
-
 ### Connecteur AEM Forms vers Marketo
 
 Le connecteur [AEM Forms vers Marketo](/help/forms/integrate-form-to-marketo-engage.md) comble le fossé entre vos formulaires web (Forms adaptatif) créés avec Adobe Experience Manager (AEM) et votre plateforme d’automatisation du marketing, Marketo.
@@ -140,7 +125,7 @@ Les communications interactives sur le cloud constituent une solution puissante 
 
 Prêt à démarrer ? L’éditeur de communications interactives est disponible sous le programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
 
-### Intégration d’AEM Forms à Adobe Experience Platform (AEP)
+### Intégration d’AEM Forms à Adobe Experience Platform (AEP)
 
 Vous pouvez connecter AEM Forms à Adobe Experience Platform (AEP) afin d’exploiter les profils et les données des clients pour des expériences de formulaire personnalisées et déclencher des workflows en aval en fonction des envois de formulaires. En envoyant des données de formulaire directement aux jeux de données AEP, vous pouvez enrichir les profils client et obtenir des informations plus précises sur les interactions utilisateur.
 

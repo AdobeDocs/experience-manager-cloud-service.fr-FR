@@ -4,10 +4,10 @@ description: Cet article détaille la création d’un formulaire adaptatif à l
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Diagramme de flux de décision destiné à guider la configuration et la publica
 
 Pour créer des formulaires dans AEM et les publier sur Edge Delivery Services, suivez ces étapes :
 
-[1. Choisir un modèle et créer le formulaire](#choose-a-template-and-create-the-form)
+[&#x200B;1. Choisir un modèle et créer le formulaire](#choose-a-template-and-create-the-form)
 
-[2. Créer le formulaire](#author-the-form)
+[&#x200B;2. Créer le formulaire](#author-the-form)
 
-[3. Publier un formulaire](#publish-a-form)
+[&#x200B;3. Publier un formulaire](#publish-a-form)
 
 ### Choisir un modèle et créer le formulaire
 
@@ -85,7 +85,7 @@ Pour choisir le modèle et créer le formulaire, procédez comme suit :
 
    Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en mode Création.
 
-   ![créer le formulaire](/help/edge/assets/author-form.png)
+   ![Capture d’écran de l’éditeur universel montrant un formulaire en cours de création avec la palette de composants à gauche, la zone de travail de formulaire au centre et le panneau Propriétés à droite](/help/edge/assets/author-form.png)
 1. Cliquez sur **[!UICONTROL Créer]** pour créer le formulaire. Vous pouvez maintenant [créer le formulaire à l’aide de l’éditeur universel](#author-the-form).
 
 >[!TAB Modèle basé sur les composants principaux]
@@ -135,7 +135,7 @@ Pour créer des formulaires à l’aide de l’éditeur universel pour le modèl
 
    La copie d’écran ci-dessous affiche le formulaire `Registration Form` créé dans l’éditeur universel :
 
-   ![formulaire de contact](/help/edge/assets/contact-us.png)
+   ![Capture d’écran d’un formulaire de contact rempli dans l’éditeur universel affichant les champs de formulaire pour le nom, l’e-mail, le téléphone et le message avec un style et une disposition appropriés](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Pour accéder au formulaire sur Edge Delivery Services, il est obligatoire de le
 
 1. Publiez maintenant le formulaire en cliquant sur le bouton **[!UICONTROL Publier]** dans le coin supérieur droit de l’éditeur universel.
 
-![publier le formulaire](/help/edge/assets/publish-form.png)
+![Capture d’écran de l’éditeur universel affichant la boîte de dialogue de publication avec les options de publication de formulaire et les boutons de confirmation](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

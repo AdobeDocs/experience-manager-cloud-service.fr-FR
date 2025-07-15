@@ -4,14 +4,52 @@ description: Configurez les actions Envoyer pour un formulaire adaptatif.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 79%
 
 ---
 
 # Action Envoyer pour formulaire adaptatif
+
+## Vue d’ensemble
+
+L’envoi d’un formulaire est la dernière étape essentielle du parcours utilisateur, c’est-à-dire l’endroit où les données collectées sont traitées et où des actions sont entreprises. Ce document fournit un guide complet pour la configuration et la gestion des actions d’envoi pour le Forms adaptatif dans l’éditeur universel.
+
+### Ce que vous apprendrez :
+
+À la fin de ce document, vous comprendrez comment :
+
+* Configurer différents types d’actions d’envoi pour vos formulaires
+* Configuration des envois de point d’entrée REST pour l’intégration à des systèmes externes
+* Configurer les envois d’e-mails pour les réponses de formulaire
+* Implémenter des actions d’envoi personnalisées pour des besoins professionnels spécifiques
+* Gérer la validation du formulaire et les scénarios d’erreur lors de l’envoi
+
+### Audience cible
+
+Ce guide est conçu pour :
+
+* **Développeurs de formulaires** implémentation de la logique d’envoi
+* **Intégrateurs système** connexion de formulaires aux systèmes principaux
+* **Analystes métier** définition des workflows de formulaire
+* **Architectes techniques** conception des processus d’envoi de formulaire
+
+### Actions Envoyer disponibles
+
+L’éditeur universel fournit deux types d’actions d’envoi principaux :
+
+1. **Envoyer vers le point d’entrée REST** * Envoyer les données de formulaire aux points d’entrée API
+2. **Envoyer un e-mail** * Diffuser les réponses au formulaire par e-mail
+
+### Prérequis
+
+Avant de configurer des actions d’envoi, vérifiez les points suivants :
+
+* Accès à l’éditeur universel
+* Autorisations appropriées pour la configuration des formulaires
+* Compréhension de votre point d’entrée d’envoi cible ou de la configuration des e-mails
 
 Une action Envoyer spécifie la destination des données collectées par le biais d’un formulaire adaptatif. Le processus d’envoi commence lorsque l’utilisateur ou l’utilisatrice clique sur le bouton **[!UICONTROL Envoyer]** du formulaire. AEM Forms propose deux types d’actions d’envoi décrites ci-dessous et vous permet de créer et d’utiliser des actions d’envoi personnalisées pour répondre à vos besoins spécifiques. Les actions d’envoi prêtes à l’emploi sont les suivantes :
 
@@ -42,7 +80,7 @@ Pour configurer un point d’entrée REST :
 1. Spécifiez l’URL du point d’entrée REST.
 1. Vous pouvez également **Activer la requête POST** et fournir une adresse URL pour la publication de la requête.
 
-![Activer la requête POST pour les formulaires adaptatifs](/help/forms/assets/enable-post-request-ue.png)
+![Copie d’écran du panneau des propriétés de l’éditeur universel présentant les champs de configuration des points d’entrée REST, y compris l’entrée d’URL et le bouton (bascule) Activer la requête POST pour l’envoi de formulaire](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ Pour configurer une action d’envoi en tant qu’e-mail pour l’envoi du formu
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

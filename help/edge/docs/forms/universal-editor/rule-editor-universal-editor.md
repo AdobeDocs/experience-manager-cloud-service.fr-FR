@@ -4,17 +4,17 @@ description: L’éditeur de règles dans l’éditeur universel permet d’ajou
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 99%
+source-wordcount: '2253'
+ht-degree: 98%
 
 ---
 
 
 # Présentation de l’Éditeur de règles dans la création WYSIWYG
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 
 Vous pouvez ajouter un comportement de formulaire dynamique à l’aide de l’éditeur de règles, qui permet de créer des règles. Ces règles permettent une visibilité conditionnelle des champs, automatisent les calculs en fonction des entrées des utilisateurs et utilisatrices et améliorent l’expérience globale d’utilisation. En rationalisant le processus de remplissage des formulaires, l’éditeur de règles garantit à la fois précision et efficacité.
@@ -188,7 +188,7 @@ Maintenant, découvrons comment [écrire des règles dans l’éditeur de règle
 
 Pour comprendre comment écrire des règles dans l’éditeur visuel de règles, prenons l’exemple simple d’un formulaire de calcul des taxes :
 
-![Exemple de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Capture d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique de date et heure pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 Dans le formulaire décrit ci-dessus, l’utilisateur ou l’utilisatrice saisit le salaire brut. En fonction de cette entrée, le champ conditionnel s’affiche et la taxe à payer est calculée.
 
@@ -223,7 +223,7 @@ Pour créer un formulaire dans l’éditeur universel :
    * Envoyer (bouton Envoyer)
 1. Masquez le champ de formulaire `Additional Deduction` en ouvrant ses `Properties`.
 
-   ![Exemple de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Capture d’écran d’un formulaire de calcul des impôts avec des champs d’entrée pour le salaire brut, la situation de famille et les enfants à charge, présentant la structure du formulaire avant l’application des règles](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### 2. Ajouter une règle conditionnelle pour un champ de formulaire
 
@@ -261,7 +261,7 @@ La règle s’affiche comme suit dans l’éditeur de règles.
 >
 > Vous pouvez également créer une règle Afficher dans le champ Déduction supplémentaire, au lieu d’une règle Lorsque dans le champ Salaire brut pour mettre en œuvre le même comportement.
 
-### 3. Ajouter des règles de calcul pour les champs du formulaire
+### &#x200B;3. Ajouter des règles de calcul pour les champs du formulaire
 
 Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différence entre `Gross Salary` et `Additional Deduction` (le cas échéant). Pour ajouter une règle de calcul dans le champ **[!UICONTROL Revenu imposable]**, procédez comme suit :
 
@@ -278,7 +278,6 @@ Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différ
    * Sélectionnez **[!UICONTROL Moins]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
    * Sélectionnez ou faites glisser et déposez, depuis l’onglet Objet de formulaire, le champ **[!UICONTROL Déduction supplémentaire]** dans l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
-
      ![Exemple 15 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
@@ -296,7 +295,6 @@ Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différ
    * Sélectionnez **[!UICONTROL Multiplié par]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
    * Sélectionnez **Nombre** dans le champ **[!UICONTROL Sélectionner une option]** et saisissez la valeur `10` dans le champ **[!UICONTROL Saisir un nombre]**.
-
      ![Exemple 18 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Ensuite, sélectionnez la zone en surbrillance autour du champ Expression et choisissez **[!UICONTROL Étendre l’expression]**.
    ![Exemple 19 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différ
    ![Exemple 20 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
 
-### 4. Prévisualiser un formulaire
+### &#x200B;4. Prévisualiser un formulaire
 
 Désormais, lorsque vous prévisualisez le formulaire et saisissez `60,000` pour le **Salaire brut**, le champ **Déduction supplémentaire** s’affiche et les champs **Revenu imposable** et **Impôt à payer** sont calculés en conséquence.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Ajout d’une fonction personnalisée](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Utiliser une fonction personnalisée dans l’éditeur de règles

@@ -4,23 +4,23 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 98%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # Créer un composant personnalisé en création WYSIWYG
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 
 Edge Delivery Services pour AEM Forms offre des possibilités de personnalisation, ce qui permet aux développeurs et développeuses front-end de créer des composants de formulaire personnalisés. Ces composants personnalisés s’intègrent de manière transparente à l’expérience de création WYSIWYG, ce qui permet aux créateurs et créatrices de formulaires de les ajouter, de les configurer et de les gérer facilement dans l’éditeur de formulaires. Grâce aux composants personnalisés, les créateurs et créatrices peuvent améliorer leurs fonctionnalités tout en assurant un processus de création fluide et intuitif.
 
 Ce document décrit les étapes à suivre pour créer des composants personnalisés en mettant en forme les composants de formulaire HTML natifs afin d’améliorer l’expérience client et l’attrait visuel du formulaire.
 
-## Prérequis
+## Conditions préalables
 
 Avant de commencer à créer votre composant personnalisé, vous devez :
 
@@ -39,7 +39,7 @@ L’ajout d’un composant personnalisé dans l’éditeur universel permet de m
 
 Prenons pour exemple la création d’un composant personnalisé appelé **range (plage)**. Le composant « range » (plage) apparaît sous la forme d’une ligne droite et affiche des valeurs telles que les valeurs minimale, maximale ou sélectionnée.
 
-![Style du composant « range » (plage)](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Représentation visuelle d’un composant de plage présentant un curseur avec des valeurs minimales et maximales, ainsi qu’un indicateur de valeur sélectionné](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 À la fin de cet article, vous saurez créer entièrement des composants personnalisés.
 
@@ -106,7 +106,7 @@ Le fichier `_range.json`, après avoir ajouté la définition du composant, est 
 >
 > Tous les composants liés aux formulaires suivent la même approche que Sites lors de l’ajout de blocs à l’éditeur universel. Pour plus d’informations, consultez l’article [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block).
 
-### 2. Définir les propriétés de votre composant personnalisé pour la création
+### &#x200B;2. Définir les propriétés de votre composant personnalisé pour la création
 
 Le composant personnalisé comprend un modèle de composant qui spécifie les propriétés configurables par la personne à l’origine du formulaire. Ces propriétés apparaissent dans la boîte de dialogue **Propriétés** de l’éditeur universel, ce qui permet aux créateurs et aux créatrices d’ajuster les paramètres tels que les libellés, les règles de validation, les styles et d’autres attributs. Pour définir les propriétés :
 
@@ -253,7 +253,7 @@ Par conséquent, après l’ajout de la définition du composant, du modèle de 
 ![définition et modèle de composant](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. Rendre votre composant personnalisé visible dans la liste des composants WYSIWYG
+### &#x200B;3. Rendre votre composant personnalisé visible dans la liste des composants WYSIWYG
 
 Un filtre définit la section dans laquelle le composant personnalisé peut être utilisé dans l’éditeur universel. Cela permet de s’assurer que le composant ne peut être utilisé que dans les sections appropriées, en conservant sa structure et sa convivialité.
 
@@ -299,7 +299,7 @@ Pour vous assurer que le composant personnalisé apparaît dans la liste des com
 
 ![filtre du composant](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. Enregistrer votre composant personnalisé
+### &#x200B;4. Enregistrer votre composant personnalisé
 
 Pour permettre au bloc de formulaire de reconnaître le composant personnalisé et de charger ses propriétés définies dans le modèle de composant lors de la création de formulaire, ajoutez la valeur `fd:viewType` de la définition de composant au fichier `mappings.js`.
 Pour enregistrer un composant :
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 Lorsque les étapes ci-dessus ont été réalisées, le composant personnalisé apparaît dans la liste des composants du formulaire, dans l’éditeur universel. Vous pouvez ensuite le faire glisser et le déposer dans la section de votre formulaire.
 
-![composant « range » (plage)](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Copie d’écran de la palette du composant Éditeur universel présentant le composant de plage personnalisée disponible par glisser-déposer dans des formulaires](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 La copie d’écran ci-dessous montre les propriétés du composant `range` ajouté au modèle de composant, lequel spécifie les propriétés que le créateur ou la créatrice du formulaire peut configurer :
 
-![Propriétés du composant « range » (plage)](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Copie d’écran du panneau Propriétés de l’éditeur universel affichant les paramètres configurables pour le composant de plage, y compris les propriétés de base, les règles de validation et les options de style](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Vous pouvez maintenant définir le comportement d’exécution de votre composant personnalisé en ajoutant des styles et des fonctionnalités.
 
-### 5. Ajouter le comportement d’exécution de votre composant personnalisé
+### &#x200B;5. Ajouter le comportement d’exécution de votre composant personnalisé
 
 Vous pouvez modifier des composants personnalisés à l’aide d’annotations prédéfinies, comme expliqué dans la section [Style des champs de formulaire](/help/edge/docs/forms/style-theme-forms.md). Pour ce faire, utilisez des feuilles de style en cascade (CSS) et du code personnalisés afin d’améliorer l’aspect du composant. Pour ajouter le comportement d’exécution de votre composant :
 
@@ -392,7 +392,6 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    float: right;
    }
    ```
-
    Le code vous permet de définir le style et l’aspect visuel du composant personnalisé.
 
 1. Pour ajouter les fonctionnalités, accédez au fichier `/blocks/form/components/range/range.js` et ajoutez la ligne de code suivante :
@@ -457,7 +456,7 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    Lorsque le style et les fonctionnalités personnalisés ont été intégrés, l’aspect et le comportement du composant « range » (plage) sont améliorés. La conception mise à jour reflète les styles appliqués, tandis que les fonctionnalités ajoutées garantissent une expérience client plus dynamique et interactive.
 La copie d’écran ci-dessous illustre le composant « range » (plage) mis à jour.
 
-![Style du composant « range » (plage)](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![Le composant de plage finale en action présentant un curseur stylisé avec un affichage à bulles de valeurs et une fonctionnalité interactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Questions fréquentes
 

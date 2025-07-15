@@ -4,17 +4,17 @@ description: Utilisez l’éditeur universel d’Edge Delivery Services pour A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 97%
+source-wordcount: '1049'
+ht-degree: 99%
 
 ---
 
 
 # Éditeur universel d’Edge Delivery Services pour AEM Forms
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès précoce. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation GitHub et le nom du référentiel à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
 L’éditeur universel révolutionne la création de formulaires pour Adobe Edge Delivery Services en offrant une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive. Conçu pour les créateurs et créatrices de contenu et les auteurs et autrices de formulaires, il facilite les processus de création de formulaires traditionnels et les rend accessibles même aux utilisateurs et utilisatrices n’ayant pas de connaissances techniques.
 
@@ -22,7 +22,7 @@ L’éditeur universel vous permet de concevoir rapidement des formulaires réac
 
 Que vous gériez un rendu léger côté client, assuriez la compatibilité entre les navigateurs ou respectiez des normes d’accessibilité strictes, l’éditeur universel fournit une solution rationalisée pour la création et la gestion des formulaires.
 
-![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80 %, align-center}
+![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Principales fonctionnalités de l’éditeur universel d’Edge Delivery Services pour AEM Forms
 
@@ -45,7 +45,7 @@ Que vous gériez un rendu léger côté client, assuriez la compatibilité entre
 
 | ![Analyses et tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragments de formulaire](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Liaison de données](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analyses et tracking**](https://www.aem.live/developer/martech-integration) | **Fragments de formulaire** (prochainement) | **Liaison de données** (prochainement) |
+| [**Analyses et tracking**](https://www.aem.live/developer/martech-integration) | **Fragments de formulaire** (prochainement) | [**Liaison de données**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
 | Obtenez des informations sur le comportement des utilisateurs et utilisatrices, les interactions des formulaires et les taux d’envoi grâce aux analyses et au tracking intégrés pour permettre une optimisation des formulaires pilotée par les données. | Les fragments de formulaire permettent la réutilisation : il est ainsi possible de créer une seule fois des sections couramment utilisées et de les réutiliser dans plusieurs formulaires, ce qui garantit la cohérence et réduit les efforts de maintenance. | La liaison des données permet des connexions directes entre les champs de formulaire et les sources de données back-end, prenant en charge les mises à jour en temps réel et le mappage de données avancé. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporation de formulaires](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuration du remerciement](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Intégration
 
-Pour activer l’éditeur universel et ses fonctionnalités avancées telles que l’éditeur de règles, écrivez-nous à l’adresse aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel. L’équipe d’Adobe est là pour vous aider à transformer votre expérience de création de formulaires.
+<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
 
 ## Questions fréquentes
 
