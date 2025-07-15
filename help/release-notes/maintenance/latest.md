@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
+source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 
 ### Problèmes connus {#known-issues-21484}
 
-Aucun.
+* Le SDK rendu disponible dans le portail de distribution de logiciels présente des problèmes d’exécution locale. Veuillez continuer à utiliser le SDK précédent pour les tests locaux.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21484}
 
