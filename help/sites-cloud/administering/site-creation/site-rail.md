@@ -1,14 +1,14 @@
 ---
 title: Utilisation du panneau Site pour gérer le thème de votre site
-description: Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site.
+description: Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site pour les projets de création AEM traditionnels avec une diffusion de publication.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 31%
+source-wordcount: '607'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 31%
 
 {{traditional-aem}}
 
-Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site.
+Découvrez les puissantes fonctionnalités du panneau Site pour vous aider à personnaliser et gérer facilement le thème de votre site pour les projets de création AEM traditionnels avec une diffusion de publication.
 
 ## Vue d’ensemble {#overview}
 
-Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site. [Comme les autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) tels que les panneaux Arborescence de contenu, Références ou Chronologie , le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
+Le panneau Site vous permet de gérer le thème et les ressources de modèle de votre site pour les projets de création AEM traditionnels avec diffusion [publication).](/help/sites-cloud/authoring/author-publish.md) [Comme les autres panneaux](/help/sites-cloud/authoring/sites-console/console-side-panel.md) tels que les panneaux Arborescence de contenu, Références ou Chronologie, le panneau Site s’affiche en tant que panneau le plus à gauche de la console Sites et affiche des informations sur l’élément sélectionné. Contrairement aux autres panneaux, le panneau Site s’applique uniquement aux racines du site.
 
 Le panneau Site permet de gérer les informations relatives au thème et au modèle pour votre site, notamment :
 
@@ -36,7 +36,7 @@ Le panneau Site permet de gérer les informations relatives au thème et au mod�
 
 ## Télécharger les sources de thème {#downloading-theme-sources}
 
-Lorsque vous créez un site dans AEM d’après un [modèle de site](site-templates.md), vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du panneau Site.
+Lorsque vous créez un site dans AEM à partir d’un modèle de site [site](site-templates.md) vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du panneau Site.
 
 Avec le panneau Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site.
 
@@ -46,7 +46,7 @@ Sélectionnez **Télécharger des sources de thème** pour télécharger une cop
 
 ## Télécharger les ressources de modèle {#downloading-template-resources}
 
-[Modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site](site-themes.md). Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
+Les [modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site.](site-themes.md) Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
 
 Si votre site est basé sur un modèle de site, avec le panneau Site affiché dans la console Sites, sélectionnez la racine de votre site pour afficher les informations sur le thème du site, y compris des ressources supplémentaires.
 
@@ -86,4 +86,4 @@ Avec le panneau Site affiché dans la console Sites, sélectionnez la racine de 
 
 ![Activation du pipeline front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Pour plus d’informations, consultez le document [Activation du pipeline front-end](enable-front-end-pipeline.md).
+Pour plus d’informations, consultez le document [Activation du pipeline front-end.](enable-front-end-pipeline.md)

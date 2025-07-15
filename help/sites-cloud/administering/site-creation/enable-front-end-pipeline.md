@@ -1,26 +1,27 @@
 ---
 title: Activer le pipeline front-end
-description: Découvrez comment activer le pipeline front-end pour les sites existants afin d’utiliser les thèmes du site pour personnaliser votre site plus rapidement.
+description: Découvrez comment activer le pipeline front-end pour les sites de création AEM traditionnels existants avec diffusion de publication afin d’utiliser les thèmes du site pour personnaliser votre site plus rapidement.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 25%
+source-wordcount: '930'
+ht-degree: 24%
 
 ---
+
 
 # Activer le pipeline front-end {#enable-front-end-pipeline}
 
 {{traditional-aem}}
 
-Découvrez comment activer le pipeline front-end pour les sites existants afin d’utiliser les thèmes du site pour personnaliser votre site plus rapidement.
+Découvrez comment activer le pipeline front-end pour les sites de création AEM traditionnels existants avec diffusion de publication afin d’utiliser les thèmes du site pour personnaliser votre site plus rapidement.
 
 ## Vue d’ensemble {#overview}
 
-Le pipeline front-end est un mécanisme qui peut rapidement déployer uniquement le code front-end de vos sites web en fonction de [thèmes du site](site-themes.md) et [modèles de site](site-templates.md).
+Le pipeline front-end est un mécanisme pour les projets de création AEM traditionnels avec [diffusion de publication](/help/sites-cloud/authoring/author-publish.md) qui peut rapidement déployer uniquement le code front-end de vos sites web en fonction de [thèmes du site](site-themes.md) et [modèles de site.](site-templates.md)
 
 Ce pipeline ne gère que le code front-end, ce qui rend le processus de déploiement plus rapide que les déploiements full-stack. Il permet aux développeurs front-end de personnaliser facilement votre site sans avoir besoin de connaître AEM.
 
@@ -46,7 +47,7 @@ Lorsque vous activez le pipeline front-end d’un site, AEM apporte les modifica
 
 ## Conditions requises {#requirements}
 
-AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page).
+AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activation du pipeline front-end {#enabling}
 
