@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,6 @@ ht-degree: 99%
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + [Configuration de l’envoi pour Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [Bonnes pratiques relatives à la création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + Création WYSIWYG {#universal-editor}
          + [Présentation de l’éditeur universel de formulaires pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Commencement de la création à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1110,6 +1109,7 @@ ht-degree: 99%
          + [Protéger vos formulaires : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des performances du formulaire : guides de télémétrie opérationnelle](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+   + [Bonnes pratiques relatives à la création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Ressources Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utiliser Sidekick](/help/edge/docs/sidekick.md)

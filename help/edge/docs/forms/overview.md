@@ -4,10 +4,10 @@ description: Créez et diffusez des formulaires hautement performants sur Adobe 
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 48%
+source-wordcount: '890'
+ht-degree: 50%
 
 ---
 
@@ -30,14 +30,11 @@ Ces services permettent d’effectuer les opérations suivantes :
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) vous permet de diffuser des expériences web extrêmement rapides et évolutives à partir de la périphérie. Ce guide explique **comment créer et publier des formulaires pour ces expériences** avec une hiérarchie de recommandations claire :
 
-1. **Éditeur universel (UE) - Meilleur choix pour la plupart des équipes**
-2. **Création basée sur des documents (documents/feuilles) - Idéal pour les formulaires rapides et simples**
-3. **Création de documents (DA) - Utilisez pour incorporer des formulaires dans des pages créées par DA**
+* **Éditeur universel (UE) - Meilleur choix pour la plupart des équipes**
+* **Création basée sur des documents (documents/feuilles) - Idéal pour les formulaires rapides et simples**
+* **Création de documents (DA) - Utilisez pour incorporer des formulaires dans des pages créées par DA**
 
 À la fin, vous pourrez choisir la bonne méthode de création, comprendre les options d’envoi et suivre les étapes suivantes pour les formulaires prêts pour la production.
-
-
-
 
 
 | Équipe et exigence | Méthode recommandée | Pourquoi |
@@ -53,7 +50,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS) vous permet de diffu
 
 <span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
 
-L’éditeur universel est un outil de création visuel par glisser-déposer destiné aux marketeurs et aux concepteurs qui associe vitesse et puissance de niveau professionnel :
+[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un outil de création visuel par glisser-déposer destiné aux marketeurs et aux concepteurs qui combine vitesse et puissance de niveau professionnel :
 
 * Modification du WYSIWYG en temps réel et aperçu des appareils.
 * Intégration directe à des ressources, des workflows et un modèle de données de formulaire (FDM) AEM.
@@ -69,12 +66,12 @@ L’éditeur universel est un outil de création visuel par glisser-déposer des
 * Possibilité de choisir parmi plusieurs actions d’envoi pour gérer les envois de formulaire, y compris envoyer des données à Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, et de nombreuses autres sources de données.
 * Envoi à l’aide des actions d’envoi Forms Submission Service (FSS) ou AEM Publish
 
-> **Recommandation** : démarrez chaque nouveau projet de formulaire avec l’éditeur universel, sauf si votre équipe est axée à 100 % sur les documents et que le formulaire est très basique.
+**Recommandation** : démarrez chaque nouveau projet de formulaire avec l’éditeur universel, sauf si votre équipe est axée à 100 % sur les documents et que le formulaire est très basique.
 
 
 ### Création basée sur des documents (à l’aide de documents Microsoft ou de feuilles de Google)
 
-La création basée sur des documents est idéale pour créer des formulaires simples et peu complexes à l’aide d’outils familiers tels que Microsoft Word, Google Docs ou Google Sheets. Cette méthode est idéale pour les équipes de contenu qui ont besoin d’une méthode rapide et simple pour créer des formulaires.
+La [création basée sur des documents](/help/edge/docs/forms/tutorial.md) est idéale pour créer des formulaires simples et peu complexes à l’aide d’outils familiers tels que Microsoft Word, Google Docs ou Google Sheets. Cette méthode est idéale pour les équipes de contenu qui ont besoin d’une méthode rapide et simple pour créer des formulaires.
 
 * Composants accessibles pour une expérience conviviale.
 * Structure HTML normalisée pour un rendu cohérent.
@@ -115,9 +112,11 @@ Le diagramme suivant illustre comment modifier des formulaires dans Microsoft E
 
 ## Étapes suivantes
 
-1. **Commencer avec l’éditeur universel :** consultez le [guide de prise en main de l’éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) pour commencer à créer des formulaires.
-1. **Utiliser la création basée sur des documents :** pour créer des formulaires avec Microsoft Excel ou Google Sheets, suivez le tutoriel [Création basée sur des documents](/help/edge/docs/forms/tutorial.md).
-1. **Incorporer Forms dans la création de documents :** si vous créez des pages dans la création de documents, créez le formulaire à l’aide de l’**éditeur universel** (recommandé) ou de la création basée sur des documents, puis incorporez le formulaire à une page [DA](https://www.aem.live/developer/da-tutorial).
+* [Fonctionnalités de l’éditeur universel pour Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Créer votre premier formulaire à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Créez votre premier formulaire à l’aide de Google Sheets ou de Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Incorporer Forms dans la création de documents (DA)](https://www.aem.live/developer/da-tutorial)
+
 
 Vous êtes maintenant prêt à créer votre premier formulaire hautes performances avec AEM Edge Delivery Services.
 

@@ -4,11 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -37,7 +39,7 @@ Vous trouverez ci-dessous les conditions préalables requises pour utiliser le s
 
 ## Configuration du service d’envoi Forms
 
-Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
+Créez un projet AEM configuré avec le bloc de Forms adaptatif. Reportez-vous à l’article [Prise en main - Tutoriel pour les développeurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour savoir comment créer un projet AEM. Mettez à jour le fichier `fstab.yaml` dans votre projet. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec le `forms@adobe.com` .
 
 Vous pouvez [configurer manuellement le service de soumission Forms](#configuring-the-forms-submission-service-manually) ou [configurer le service de soumission Forms à l’aide de l’API](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +49,7 @@ Vous pouvez [configurer manuellement le service de soumission Forms](#configurin
 
 #### &#x200B;1. Créer un formulaire à l’aide d’une définition de formulaire
 
-Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Créez un formulaire à l’aide de Google Sheets ou de Microsoft Excel. Pour savoir comment créer un formulaire à l’aide d’une définition de formulaire dans Microsoft Excel ou Google Sheets, [cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La capture d’écran ci-dessous affiche la définition du formulaire utilisée pour créer le formulaire :
 
@@ -59,7 +61,7 @@ La capture d’écran ci-dessous affiche la définition du formulaire utilisée 
 
 #### &#x200B;2. Activez la feuille de calcul pour accepter les données.
 
-Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Une fois que vous avez créé et prévisualisé le formulaire, activez la feuille de calcul correspondante pour commencer à recevoir des données. ajoutez une nouvelle feuille en tant que `incoming`. Vous pouvez [activer manuellement la feuille de calcul pour accepter les données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Feuille entrante](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -157,8 +159,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     curl -X POST « https://forms.adobe.com/adobe/forms/af/submit/{id} » \
     —header « Content-Type : application/json » \
     —header « x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization] » \
-    —data &#39;&lbrace;
-    « data »: &lbrace;
+    —data &#39;{
+    « data »: {
     « startDate »: « 2025-01-10 »,
     « endDate »: « 2025-01-25 »,
     « destination »: « Australia »,
@@ -169,8 +171,8 @@ Par exemple, exécutez la commande ci-dessous dans le terminal ou à l’invite 
     « age »: « 35 »,
     « subscribe »: null,
     « email »: « mary@gmail.com »
-    &rbrace;
-    &rbrace;&#39;
+    }
+    }&#39;
     
      »
 
