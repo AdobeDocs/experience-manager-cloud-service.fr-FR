@@ -3,10 +3,10 @@ title: Personnaliser l’application du sélecteur de ressources
 description: Utilisez des fonctions pour personnaliser le sélecteur de ressources dans votre application.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 28%
+source-wordcount: '1261'
+ht-degree: 27%
 
 ---
 
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Charger dans le sélecteur de ressources {#upload-in-asset-selector}
 
-Vous pouvez charger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local. Pour charger des fichiers à l’aide du système de fichiers local, vous devez généralement utiliser une fonctionnalité de chargement fournie par une microapplication front-end du sélecteur de ressources. Divers fragments de code requis pour appeler le chargement dans le sélecteur de ressources impliquent :
+Vous pouvez charger des fichiers ou des dossiers vers le sélecteur de ressources à partir de votre système de fichiers local. Pour charger des fichiers à l’aide du système de fichiers local, vous devez généralement utiliser une fonctionnalité de chargement fournie par une microapplication front-end du sélecteur de ressources. Les `upload` divers fragments de code requis pour appeler le chargement dans le sélecteur de ressources incluent :
 
 * [Extrait de code de formulaire de chargement de base](#basic-upload)
+* [Charger la configuration](#upload-config)
 * [Chargement avec des métadonnées](#upload-with-metadata)
 * [Chargement personnalisé](#customized-upload)
 * [Chargement à l’aide de sources tierces](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Charger la configuration {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*D’autres propriétés incluent `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange` et`uploadingPlaceholder`*. Voir [Propriétés du sélecteur de ressources](#asset-selector-properties.md) pour plus d’informations.
 
 ### Chargement avec des métadonnées {#upload-with-metadata}
 

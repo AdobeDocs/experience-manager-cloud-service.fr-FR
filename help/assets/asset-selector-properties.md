@@ -3,10 +3,10 @@ title: Propriétés du sélecteur de ressources pour la personnalisation
 description: Utilisez le sélecteur de ressources pour rechercher, trouver et récupérer les métadonnées et les rendus des ressources dans votre application.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 42%
+source-wordcount: '1420'
+ht-degree: 40%
 
 ---
 
@@ -47,16 +47,16 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 | *filterRepoList* | Fonction | Non |  | Vous pouvez utiliser `filterRepoList` fonction de rappel qui appelle le référentiel Experience Manager et renvoie une liste filtrée de référentiels. |
 | *expiryOptions* | Fonction | | | Vous pouvez utiliser entre les deux propriétés suivantes : **getExpiryStatus** qui fournit le statut d’une ressource arrivée à expiration. La fonction renvoie des `EXPIRED`, des `EXPIRING_SOON` ou des `NOT_EXPIRED` en fonction de la date d’expiration d’une ressource que vous fournissez. Voir [ Personnalisation des ressources expirées ](/help/assets/asset-selector-customization.md#customize-expired-assets). De plus, vous pouvez utiliser **allowSelectionAndDrag** dans lequel la valeur de la fonction peut être `true` ou `false`. Lorsque la valeur est définie sur `false`, la ressource expirée ne peut pas être sélectionnée ni glissée-déplacée sur la zone de travail. |
 | *showToast* | | Non | | Cela permet au sélecteur de ressources d’afficher un message toast personnalisé pour la ressource expirée. |
-| *metadataSchema* | Tableau | Non | | Ajoutez un tableau de champs que vous fournissez pour collecter les métadonnées de l’utilisateur. Cette propriété vous permet également d’utiliser des métadonnées masquées qui sont automatiquement affectées à une ressource, mais ne sont pas visibles par l’utilisateur. |
-| *onMetadataFormChange* | Fonction de rappel | Non | | Il se compose de `property` et de `value`. `Property` est égal à *mapToProperty* du champ transmis à partir du *metadataSchema* dont la valeur est mise à jour. Tandis que `value` est égal à , la nouvelle valeur est fournie en tant qu’entrée. |
-| *targetUploadPath* | Chaîne |  | `"/content/dam"` | Le chemin de chargement cible pour les fichiers qui sont par défaut la racine du référentiel de ressources. |
-| *hideUploadButton* | Booléen | | False | Cela permet de s’assurer que le bouton de chargement interne doit être masqué ou non. |
-| *onUploadStart* | Fonction | Non |  | Il s’agit d’une fonction de rappel utilisée pour transmettre la source de chargement entre Dropbox, OneDrive ou le déploiement local. La syntaxe est `(uploadInfo: UploadInfo) => void` |
-| *importSettings* | Fonction | | | Elle permet la prise en charge de l’importation de ressources provenant de sources tierces. `sourceTypes` utilise un tableau des sources d’importation que vous souhaitez activer. Les sources prises en charge sont Onedrive et Dropbox. La syntaxe est `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | Fonction | Non | | Il s’agit d’une fonction de rappel utilisée pour transmettre le statut de chargement du fichier parmi les valeurs réussi, échec ou dupliqué. La syntaxe est `(uploadStats: UploadStats) => void` |
-| *onFilesChange* | Fonction | Non | | Il s’agit d’une fonction de rappel utilisée pour afficher le comportement d’un chargement lorsqu’un fichier est modifié. Il transmet le nouveau tableau de fichiers en attente de chargement et le type de source du chargement. Le type Source peut être nul en cas d&#39;erreur. La syntaxe est `(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | Chaîne | | | Il s’agit d’une image d’espace réservé qui remplace le formulaire de métadonnées lorsqu’un chargement de la ressource est lancé. La syntaxe est `{ href: string; alt: string; } ` |
-| *uploadConfig* | Objet | | | Il s’agit d’un objet qui contient la configuration personnalisée pour le chargement. |
+| *uploadConfig* | Objet | | | Il s’agit d’un objet qui contient la configuration personnalisée pour le chargement. Pour plus d’informations[ consultez la section ](#asset-selector-customization.md#upload-config)configuration de chargement . |
+| *metadataSchema* | Tableau | Non | | Cette propriété est imbriquée sous `uploadConfig` propriété . Ajoutez un tableau de champs que vous fournissez pour collecter les métadonnées de l’utilisateur. Cette propriété vous permet également d’utiliser des métadonnées masquées qui sont automatiquement affectées à une ressource, mais ne sont pas visibles par l’utilisateur. |
+| *onMetadataFormChange* | Fonction de rappel | Non | | Cette propriété est imbriquée sous `uploadConfig` propriété . Il se compose de `property` et de `value`. `Property` est égal à *mapToProperty* du champ transmis à partir du *metadataSchema* dont la valeur est mise à jour. Tandis que `value` est égal à , la nouvelle valeur est fournie en tant qu’entrée. |
+| *targetUploadPath* | Chaîne |  | `"/content/dam"` | Cette propriété est imbriquée sous `uploadConfig` propriété . Le chemin de chargement cible pour les fichiers qui sont par défaut la racine du référentiel de ressources. |
+| *hideUploadButton* | Booléen | | False | Cela permet de s’assurer que le bouton de chargement interne doit être masqué ou non. Cette propriété est imbriquée sous `uploadConfig` propriété . |
+| *onUploadStart* | Fonction | Non |  | Il s’agit d’une fonction de rappel utilisée pour transmettre la source de chargement entre Dropbox, OneDrive ou le déploiement local. La syntaxe est `(uploadInfo: UploadInfo) => void`. Cette propriété est imbriquée sous `uploadConfig` propriété . |
+| *importSettings* | Fonction | | | Elle permet la prise en charge de l’importation de ressources provenant de sources tierces. `sourceTypes` utilise un tableau des sources d’importation que vous souhaitez activer. Les sources prises en charge sont Onedrive et Dropbox. La syntaxe est `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`. De plus, cette propriété est imbriquée sous `uploadConfig` propriété . |
+| *onUploadComplete* | Fonction | Non | | Il s’agit d’une fonction de rappel utilisée pour transmettre le statut de chargement du fichier parmi les valeurs réussi, échec ou dupliqué. La syntaxe est `(uploadStats: UploadStats) => void`. De plus, cette propriété est imbriquée sous `uploadConfig` propriété . |
+| *onFilesChange* | Fonction | Non | | Cette propriété est imbriquée sous `uploadConfig` propriété . Il s’agit d’une fonction de rappel utilisée pour afficher le comportement d’un chargement lorsqu’un fichier est modifié. Il transmet le nouveau tableau de fichiers en attente de chargement et le type de source du chargement. Le type Source peut être nul en cas d&#39;erreur. La syntaxe est `(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | Chaîne | | | Il s’agit d’une image d’espace réservé qui remplace le formulaire de métadonnées lorsqu’un chargement de la ressource est lancé. La syntaxe est `{ href: string; alt: string; }`. De plus, cette propriété est imbriquée sous `uploadConfig` propriété . |
 | *featureSet* | Tableau | Chaîne | | La propriété `featureSet:[ ]` est utilisée pour activer ou désactiver une fonctionnalité particulière dans l’application du sélecteur de ressources. Pour activer le composant ou une fonctionnalité, vous pouvez transmettre une valeur de chaîne dans le tableau ou laisser le tableau vide pour désactiver ce composant.  Par exemple, si vous souhaitez activer la fonctionnalité de chargement dans le sélecteur de ressources, utilisez la syntaxe `featureSet:[0:"upload"]`. De même, vous pouvez utiliser `featureSet:[0:"collections"]` pour activer des collections dans le sélecteur de ressources. En outre, utilisez `featureSet:[0:"detail-panel"]` pour activer le [panneau de détails](overview-asset-selector.md#asset-details-and-metadata) d’une ressource. Pour utiliser ces fonctions ensemble, la syntaxe est `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
