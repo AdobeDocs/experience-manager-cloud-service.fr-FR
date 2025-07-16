@@ -46,6 +46,7 @@ Le [service d’envoi de formulaires](/help/forms/forms-submission-service.md) e
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Envoi de formulaires](/help/forms/assets/eds-fss.png)
 
 Cet organigramme montre la façon dont le service d’envoi de formulaire récupère les données envoyées et les envoie à une feuille de calcul ou un e-mail configuré.
@@ -144,6 +145,7 @@ La page sur laquelle vous souhaitez voir apparaître le formulaire (appelons-la 
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![Architecture de formulaire incorporée](/help/forms/assets/eds-embedded-form.png)
 Ce diagramme montre la page d’accueil récupérant le code HTML du formulaire à partir de la Source du formulaire et l’affichant. L’envoi utilise le point d’entrée configuré du formulaire d’origine.
 
