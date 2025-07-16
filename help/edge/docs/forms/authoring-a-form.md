@@ -7,9 +7,9 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
 source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1075'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) offre une plateforme flexible permettant de cr�
 
 AEM propose plusieurs options de création de formulaires permettant de créer des formulaires interactifs et attrayants. Lors de la sélection d’un environnement de création de formulaires, tenez compte des facteurs suivants :
 
-| 📝 **Considération** | 💡 **Que demander** |
+| 📝 **Remarque** | 💡 **Que demander** |
 |----------------------|--------------------|
 | **Expertise d’utilisation** | Qui sera responsable de la création des formulaires (équipe de développement, utilisateurs et utilisatrices professionnels, ou créateurs et créatrices de contenu) ? |
 | **Complexité du formulaire** | Le formulaire a-t-il besoin de règles avancées, de sections dynamiques ou d’intégrations ? |
@@ -87,11 +87,11 @@ Le tableau suivant présente une comparaison détaillée des fonctionnalités cl
 | **Fragments** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Éditeur de règles visuel** | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Localisation** | ✅ | ✅ | 💡 (via Sites) | ℹ️ (Excel - Manuel, Fonction Google Sheets) | Implémentation personnalisée |
-| **Schéma de données (arborescence de données)** | ✅ | ✅ | 💡 (via l’extension d’interface utilisateur) | ❌ | Implémentation personnalisée |
+| **Schéma de données (arborescence de données)** | ✅ | ✅ | 💡 (via l’extension d’UI) | ❌ | Implémentation personnalisée |
 | **Prise en charge de modèles** | ✅ | ✅ | Contenu initial uniquement, pas de stratégie | ❌ | Implémentation personnalisée |
 | **Portail** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Création de document d’enregistrement** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
-| **Génération de document d’enregistrement** | ✅ | ✅ | 💡 (FORMS-2475 Nouveau) | ❌ | ❌ |
+| **Création de document de référence** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
+| **Génération de document de référence** | ✅ | ✅ | 💡 (FORMS-2475 Nouveau) | ❌ | ❌ |
 | **Thème** | ✅ | ✅ | ℹ️ (au niveau du projet) | ℹ️ (au niveau du projet) | Implémentation personnalisée |
 | **Composant personnalisé** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Fonctions prêtes à l’emploi et personnalisées** | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -101,7 +101,7 @@ Le tableau suivant présente une comparaison détaillée des fonctionnalités cl
 | **Expérimentation** | ❌ | ❌ | ✅ | ✅ | Implémentation personnalisée |
 | **Gestion des tâches via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Extension personnalisée** | ❌ | ❌ | 💡 | ❌ | Implémentation personnalisée |
-| **Personnalisation de l’éditeur** | ❌ | ❌ | ✅ (via l’extension d’interface utilisateur) | ❌ | Implémentation personnalisée |
+| **Personnalisation de l’éditeur** | ❌ | ❌ | ✅ (via l’extension d’UI) | ❌ | Implémentation personnalisée |
 | **Action Envoyer** | ✅ | ✅ | ✅ | Feuille de calcul uniquement | Implémentation personnalisée |
 
 
