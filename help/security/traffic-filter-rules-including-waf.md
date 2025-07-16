@@ -4,10 +4,10 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
-workflow-type: ht
-source-wordcount: '4262'
-ht-degree: 100%
+source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
+workflow-type: tm+mt
+source-wordcount: '4582'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +20,9 @@ Les règles de filtre de trafic peuvent être utilisées pour bloquer ou autoris
 * Définir des limites de débit pour être moins sensible aux attaques par déni de service (DoS) volumétriques
 * Empêcher les adresses IP connues pour être malveillantes de cibler vos pages
 
-La plupart de ces règles de filtre de trafic sont disponibles pour tous les clientes et clients d’AEM as a Cloud Service Sites et Forms. Elles fonctionnent principalement sur les propriétés de requête et les en-têtes de requête, notamment l’adresse IP, le nom d’hôte, le chemin d’accès et l’agent utilisateur.
+La plupart de ces règles de filtrage du trafic sont disponibles pour tous les clients AEM as a Cloud Service Sites et Forms. Appelées *règles de filtrage de trafic standard*, elles fonctionnent principalement sur les propriétés de requête et les en-têtes de requête, y compris l’adresse IP, le nom d’hôte, le chemin et l’agent utilisateur. Les règles de filtrage de trafic standard incluent des règles de limite de débit pour se prémunir contre les pics de trafic.
 
-Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécurité renforcée ou une licence Protection WAF-DDoS. Ces règles puissantes sont connues sous le nom de règles de filtreag de trafic WAF (pare-feu d’application web, ou règles WAF, en abrégé) et ont accès aux [Indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
+Une sous-catégorie de règles de filtre de trafic nécessite une licence Sécurité renforcée ou une licence Protection WAF-DDoS. Ces puissantes règles sont connues sous le nom de règles de filtrage du trafic WAF (Pare-feu d’application web) (ou *règles de WAF* en abrégé) et ont accès aux [indicateurs WAF](#waf-flags-list) décrits plus loin dans cet article.
 
 Les règles de filtrage du trafic peuvent être déployées par le biais de pipelines de configuration de Cloud Manager vers des types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
@@ -61,23 +61,23 @@ Les clientes et clients peuvent prendre des mesures proactives pour limiter les 
 
 Par exemple, au niveau de la couche Apache, les clientes et clients peuvent configurer l’une des options suivantes : [module Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou [ModSecurity](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) pour limiter l’accès à certains contenus.
 
-Comme le décrit cet article, des règles de filtrage du trafic peuvent être déployées sur le réseau CDN géré par Adobe à l’aide des [pipelines de configuration](/help/operations/config-pipeline.md) de Cloud Manager. Outre les règles de filtre de trafic basées sur des propriétés telles que l’adresse IP, le chemin d&#39;accès et les en-têtes, ou des règles basées sur la définition de limites de débit, les clientes et clients peuvent également acquérir sous licence une sous-catégorie puissante de règles de filtre de trafic appelées règles WAF.
+Comme le décrit cet article, des règles de filtrage du trafic peuvent être déployées sur le réseau CDN géré par Adobe à l’aide des [pipelines de configuration](/help/operations/config-pipeline.md) de Cloud Manager. En plus des *règles de filtrage du trafic standard* basées sur des propriétés telles que l’adresse IP, le chemin et les en-têtes, ou des règles basées sur la définition de limites de débit, les clients peuvent également acquérir une sous-catégorie puissante de règles de filtrage du trafic appelées *règles de WAF*.
 
 ## Processus suggéré {#suggested-process}
 
 Voici un processus de bout en bout de haut niveau recommandé pour obtenir les règles de filtrage de trafic appropriées :
 
 1. Configurez les pipelines de configuration hors production et en production, comme décrit dans la section [Configuration](#setup).
-1. Les clientes et clients qui possèdent une licence pour la sous-catégorie des règles de filtrage du trafic de WAF doivent les activer dans Cloud Manager.
+1. Les clients qui disposent d’une licence pour les règles de filtrage du trafic *WAF* doivent les activer dans Cloud Manager.
 1. Lisez et testez le tutoriel pour comprendre concrètement comment utiliser les règles de filtrage du trafic, y compris les règles WAF si elles sont sous licence. Ce tutoriel vous guide tout au long des étapes du déploiement de règles dans un environnement de développement, de la simulation du trafic malveillant et du téléchargement des [journaux du réseau CDN](#cdn-logs) à leur analyse dans les [outils du tableau de bord](#dashboard-tooling).
-1. Copiez les règles de démarrage recommandées dans `cdn.yaml` et déployez la configuration dans l’environnement de production en mode journal.
-1. Après avoir collecté du trafic, analysez les résultats à l’aide des [outils du tableau de bord](#dashboard-tooling) pour voir s’il y a des correspondances. Recherchez les faux positifs et effectuez les réglages nécessaires, en activant les règles de démarrage en mode bloc.
-1. Ajoutez des règles personnalisées basées sur l’analyse des journaux du réseau CDN, d’abord en testant avec du trafic simulé sur les environnements de développement avant de procéder au déploiement dans les environnements intermédiaire et de production en mode journal, puis en mode bloc.
+1. Copiez les règles de démarrage recommandées dans `cdn.yaml` et déployez la configuration dans l’environnement de production, avec certaines des règles en mode journal.
+1. Après avoir collecté du trafic, analysez les résultats à l’aide des [outils du tableau de bord](#dashboard-tooling) pour voir s’il y a des correspondances. Recherchez les faux positifs et effectuez les ajustements nécessaires, pour finalement activer toutes les règles de démarrage en mode bloc.
+1. Si nécessaire, ajoutez des règles personnalisées basées sur l’analyse des journaux CDN, en commençant par tester avec le trafic simulé sur les environnements de développement avant de le déployer dans les environnements d’évaluation et de production en mode journal, puis en mode bloc.
 1. Surveillez le trafic de manière continue, en modifiant les règles à mesure que le paysage de la menace évolue.
 
 ## Configuration {#setup}
 
-1. Créez un fichier `cdn.yaml` avec un ensemble de règles de filtrage du trafic, y compris les règles WAF.
+1. Créez un `cdn.yaml` de fichiers avec un ensemble de règles de filtrage du trafic, y compris des règles WAF. Par exemple :
 
    ```
    kind: "CDN"
@@ -107,13 +107,13 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
 
    1. Pour configurer le WAF sur un programme existant, [modifiez votre programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) et dans l’onglet **Sécurité**, décochez ou cochez la case **WAF-DDOS** à tout moment.
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’[article sur le pipeline de configuration](/help/operations/config-pipeline.md#managing-in-cloud-manager). Le pipeline fera référence à un dossier `config` de niveau supérieur avec le fichier `cdn.yaml` placé quelque part en dessous. Voir la section [Utiliser des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager). Le pipeline fera référence à un dossier `config` de niveau supérieur avec le fichier `cdn.yaml` placé quelque part en dessous. Voir la section [Utiliser des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxe des règles de filtrage de trafic {#rules-syntax}
 
 Vous pouvez configurer des *règles de filtrage du trafic* pour établir une correspondance sur des modèles tels que les adresses IP, l’agent utilisateur, les en-têtes de requête, le nom d’hôte, la zone géographique et l’URL.
 
-Les clientes et les clients qui détiennent une licence pour l’offre de sécurité améliorée ou de protection WAF-DDoS peuvent également configurer une catégorie spéciale de règles de filtrage du trafic appelée *Règles de filtrage du trafic* (ou règles WAF) qui font référence à un ou plusieurs [indicateurs WAF](#waf-flags-list).
+Les clients qui disposent d’une licence pour l’offre Sécurité renforcée ou Protection DDoS WAF peuvent également configurer une catégorie spéciale de règles de filtrage du trafic appelée *Règles de filtrage du trafic WAF* (ou *Règles WAF* en abrégé) qui font référence à un ou plusieurs [indicateurs WAF](#waf-flags-list).
 
 Voici un exemple d’un ensemble de règles de filtrage du trafic, qui incluent également une règle WAF.
 
@@ -237,8 +237,8 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 
 | **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
 |---|---|---|
-| ATTACK | Attaque | Indicateur utilisé pour identifier les requêtes contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
-| ATTACK-FROM-BAD-IP | Attaque provenant d’une adresse IP incorrecte | Indicateur utilisé pour identifier les requêtes de `BAD-IP` contenant un ou plusieurs des types d’attaque répertoriés dans ce tableau |
+| ATTACK | Attaque | Agrégation des indicateurs liés au trafic malveillant (SQLI, CMDEXE, XSS, etc.). Consultez la [section Règles de WAF recommandées](#recommended-waf-starter-rules) pour savoir comment utiliser cet indicateur efficacement. |
+| ATTACK-FROM-BAD-IP | Attaque provenant d’une adresse IP incorrecte | Similaire à l’indicateur ATTACK, mais « logiquement ET modifié » avec l’indicateur `BAD-IP` afin qu’une requête soit marquée si elle correspondait à la fois à ATTACK et à BAD-IP. Consultez la [section Règles de WAF recommandées](#recommended-waf-starter-rules) pour savoir comment utiliser cet indicateur efficacement. |
 | SQLI | Injection SQL | L’injection SQL est une tentative d’accès à une application ou d’obtention d’informations privilégiées en exécutant des requêtes de base de données arbitraires. |
 | BACKDOOR | Backdoor | Un signal backdoor est une requête qui tente de déterminer si un fichier backdoor commun est présent sur le système. |
 | CMDEXE | Exécution de commande | L’exécution de commande est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes système arbitraires au moyen d’entrées de l’utilisateur ou de l’utilisatrice. |
@@ -254,7 +254,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | **ID d’indicateur** | **Nom de l’indicateur** | **Description** |
 |---|---|---|
 | ABNORMALPATH | Chemin d’accès anormal | Le chemin d’accès anormal indique que le chemin d’accès d’origine est différent du chemin d’accès normalisé (par exemple, `/foo/./bar` est normalisé en `/foo/bar`). |
-| BAD-IP | Adresse IP incorrecte | Indicateur utilisé pour identifier les requêtes provenant d’adresses IP qui sont identifiées comme incorrectes, soit parce qu’il existe des sources identifiées comme malveillantes (`SANS`, `TORNODE`), soit parce qu’elles ont été identifiées comme incorrectes par le WAF après avoir envoyé trop de requêtes malveillantes |
+| BAD-IP | Adresse IP incorrecte | Identifie les requêtes provenant d’adresses IP connues pour être malveillantes, soit en raison de leur inclusion dans des jeux de données tels que `SANS` et `TORNODE`, soit en fonction d’une détection préalable de comportement malveillant par le WAF |
 | BHH | En-têtes de saut incorrects | Les en-têtes de saut incorrects indiquent une tentative de passage HTTP via un en-tête de transcodage (TE) ou de longueur de contenu (CL) mal formé, ou un en-tête de TE et de CL bien formé. |
 | CODEINJECTION | Injection de code | L’injection de code est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes arbitraires de code d’application à l’aide d’entrées de l’utilisateur ou de l’utilisatrice. |
 | COMPRESSED | Compression détectée | Le corps de la requête POST est compressé et ne peut pas être inspecté. Par exemple, si un en-tête de requête `Content-Encoding: gzip` est spécifié et que le corps POST n’est pas en texte brut. |
@@ -661,11 +661,20 @@ Adobe fournit un mécanisme de téléchargement des outils de tableau de bord su
 
 Les outils de tableau de bord peuvent être clonés directement à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 
-Les [tutoriels](#tutorial) contiennent des instructions concrètes sur l’utilisation des outils de tableau de bord.
+[Un tutoriel](#tutorial) est disponible pour obtenir des instructions concrètes sur l’utilisation des outils du tableau de bord.
 
 ## Règles de démarrage recommandées {#recommended-starter-rules}
 
-Vous pouvez copier les règles recommandées ci-dessous dans votre `cdn.yaml` pour commencer. Commencez en mode journal, analysez votre trafic, puis, une fois que tout est satisfaisant, passez en mode bloc. Vous pouvez modifier les règles en fonction des caractéristiques uniques du trafic en direct de votre site web.
+Adobe suggère de commencer par les règles de filtrage du trafic ci-dessous, puis de les affiner au fil du temps. Les *règles standard* sont disponibles avec une licence Sites ou Forms, tandis que les *règles WAF* nécessitent une licence de sécurité renforcée ou de protection WAF-DDoS.
+
+### Règles standard recommandées {#recommended-nonwaf-starter-rules}
+
+Commencez par les règles suivantes :
+
+1. Limite de débit (mode de journal) :
+   * consigner lorsque le trafic provenant d’une adresse IP donnée dépasse une limite de débit. Passez en mode bloc après avoir vérifié qu’aucune alerte n’est reçue. Si des alertes avaient été reçues, cela aurait indiqué que la valeur limite était trop basse.
+2. pays spécifiques (mode bloc) :
+   * bloquer le trafic provenant de certains pays (modifiez les codes de pays en fonction des besoins de votre entreprise)
 
 ```
 kind: "CDN"
@@ -701,8 +710,9 @@ data:
         groupBy:
           - reqProperty: clientIp
       action: log
+      alert: true
     # Block requests coming from OFAC countries
-    - name: block-ofac-countries
+    - name: ofac-countries
       when:
         allOf:
           - { reqProperty: tier, in: ["author", "publish"] }
@@ -720,7 +730,53 @@ data:
               - ZW
               - CU
               - CI
-      action: log
+      action: block
+```
+
+### Règles WAF recommandées {#recommended-waf-starter-rules}
+
+Ajoutez les règles suivantes à votre configuration existante :
+
+1. Indicateur d’ATTAQUE DEPUIS UNE MAUVAISE ADRESSE IP (mode bloc) :
+   * Bloquez immédiatement le trafic qui correspond à des modèles suspects (y compris plusieurs dans la liste [indicateurs WAF](#waf-flags-list)) et provient d&#39;adresses IP connues pour être malveillantes.
+   * L&#39;indicateur ATTACK-FROM-BAD-IP remplit intrinsèquement les deux conditions (correspondance de motifs et adresse IP malveillante connue), ce qui réduit le risque de faux positifs. Ainsi, vous pouvez appliquer cette règle en toute sécurité et immédiatement en mode blocage.
+2. Indicateur d’attaque (mode journal) :
+   * Consignez (plutôt que de bloquer) le trafic correspondant à des modèles suspects, mais ne provenant pas d’adresses IP malveillantes connues. Cette approche prudente de la journalisation plutôt que du blocage permet d’éviter de bloquer par inadvertance le trafic légitime (faux positifs).
+   * Après avoir déployé cette règle, analysez soigneusement les journaux du réseau CDN pour vérifier que les requêtes légitimes ne sont pas incorrectement marquées. Une fois que vous êtes certain qu’aucun trafic légitime n’est affecté, passez en mode bloc.
+
+>[!NOTE]
+> Notre expérience indique que les faux positifs associés à l&#39;indicateur ATTACK sont rares. Par conséquent, il peut s’agir d’une stratégie pratique pour bloquer immédiatement tout trafic suspect, même si l’adresse IP n’est pas considérée comme malveillante, et utiliser ensuite l’analyse des journaux du réseau CDN pour identifier et introduire des règles d’autorisation pour le trafic légitime. Chaque organisation doit évaluer sa propre tolérance au risque, en pesant les avantages d’une plus grande protection contre le risque de bloquer par inadvertance des demandes légitimes.
+>
+
+```
+    # blocks likely attack traffic, which also comes from suspected IPs
+    - name: attacks-from-bad-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: block
+        wafFlags:
+          - ATTACK-FROM-BAD-IP
+    # log likely attack traffic, and later switch to block mode if false positives aren't observed
+    - name: attacks-from-any-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: log
+        wafFlags:
+          - ATTACK
+```
+
+### Anciennes règles de WAF recommandées {#previous-waf-starter-rules}
+
+Avant juillet 2025, Adobe recommandait les règles WAF répertoriées ci-dessous, qui sont toujours valides et efficaces dans la défense contre le trafic malveillant. Pour plus d’informations sur la migration vers les nouvelles règles recommandées, consultez le tutoriel .
+
+<details>
+  <summary>Développez pour afficher les anciennes règles recommandées de WAF.</summary>
+
+```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
@@ -743,32 +799,21 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
+</details>
 
-## Tutoriels {#tutorial}
+## Tutoriel {#tutorial}
 
-Deux tutoriels sont disponibles.
+Utilisez [une série de tutoriels](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) pour acquérir des connaissances et une expérience pratiques sur les règles de filtrage du trafic, y compris les règles de WAF.
 
-### Protéger les sites web avec des règles de filtrage du trafic (y compris des règles WAF) {#tutorial-protecting-websites}
+Les tutoriels incluent :
 
-[Effectuez un tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) pour acquérir des connaissances générales et pratiques, ainsi que de l’expérience sur les règles de filtrage de trafic incluant des règles WAF.
-
-Ce tutoriel vous guide à travers les éléments suivants :
-
-* Configuration du pipeline de configuration de Cloud Manager
-* Utilisation d’outils pour simuler le trafic malveillant
-* Déclaration des règles de filtre de trafic, y compris les règles WAF
-* Analyse des résultats à l’aide des outils de tableau de bord
+* Présentation des règles de filtrage du trafic standard et WAF
+* Configuration des règles de filtrage du trafic WAF et standard recommandées pour bloquer les attaques, y compris les attaques par déni de service (DoS) et d’autres menaces
+* Déploiement de règles à l’aide du pipeline de configuration Cloud Manager
+* Test de vos règles à l’aide d’outils de simulation de trafic malveillant
+* Analyse des résultats à l’aide de l’outil d’analyse du journal
 * Bonnes pratiques
 
-### Bloquer les attaques DoS et DDoS à l’aide de règles de filtrage du trafic {#tutorial-blocking-DDoS-with-rules}
-
-[Découvrez en profondeur comment bloquer](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) les attaques par déni de service (DoS) et par déni de service distribué (DDoS) à l’aide de règles de filtrage du trafic limitant le débit et d’autres stratégies.
-
-Ce tutoriel vous guide à travers les éléments suivants :
-
-* Comprendre la protection
-* Recevoir des alertes lorsque les limites de débit sont dépassées.
-* Analyser des modèles de trafic à l’aide des outils de tableau de bord pour configurer des seuils pour les règles de filtrage du trafic limitant le débit
 
 
 
