@@ -4,10 +4,10 @@ description: Découvrez les principes de base et les bonnes pratiques de déploi
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ Pour développer du code personnalisé pour une version interne, vous devez tél
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/32993?quality=9&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,8 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Les clients et clientes déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des packages de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application sur AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom comprend « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Pour obtenir une documentation détaillée sur le convertisseur, voir [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-sling-org-apache-sling-feature-cpconverter sur GitHub.
+Les clients et clientes déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des packages de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application sur AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom comprend « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Pour obtenir une documentation détaillée sur le convertisseur, voir [
+sling-org-apache-sling-feature-cpconverter sur GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Les packages de contenu écrits pour les applications sur AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
 
@@ -112,7 +112,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
    * Scripts (les packages peuvent déclencher des hooks d’installation à différentes étapes du processus d’installation de l’installation de package. Consultez la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
 
-Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
+Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
 >Les packages de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
@@ -279,7 +279,7 @@ La modification des personnes utilisant le service ou des listes de contrôle d�
 
 ### Modifications des index {#index-changes}
 
-Si des modifications sont apportées aux index, il est important que la nouvelle version continue à utiliser ses index jusqu’à son arrêt, tandis que l’ancienne version utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion d’index décrites dans [Recherche et indexation de contenu](/help/operations/indexing.md).
+Si des modifications sont apportées aux index, il est important que l’ancienne version continue à utiliser ses index jusqu’à ce qu’elle soit terminée, tandis que la nouvelle version utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion d’index décrites dans [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Codage conservateur pour les restaurations {#conservative-coding-for-rollbacks}
 
