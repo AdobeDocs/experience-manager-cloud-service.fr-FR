@@ -4,10 +4,10 @@ description: AEM s’accompagne d’un outil standard destiné à la gestion des
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 93%
+source-wordcount: '583'
+ht-degree: 91%
 
 ---
 
@@ -28,6 +28,10 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 >Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de la pile complète à la réponse.
 >
 >Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est **toujours** désactivé (même s’il est configuré comme étant activé).
+
+>[!NOTE]
+>
+>Pour plus d’informations sur la gestion des erreurs avec le Dispatcher, voir [Configuration des pages d’erreur du réseau CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
@@ -73,7 +77,7 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 >[!NOTE]
 >
 >Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au back-end de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
->Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
+>>Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 >[!CAUTION]
 >
