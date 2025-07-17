@@ -3,9 +3,10 @@ title: Comment utiliser l’API de synchronisation de sortie AFP ?
 description: Découvrez comment utiliser l’API de synchronisation de sortie AFP pour récupérer et synchroniser les rendus de sortie.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '235'
 ht-degree: 11%
 
 ---
@@ -100,4 +101,4 @@ Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour véri
 
 Vous pouvez enregistrer la réponse et ouvrir le fichier enregistré dans le lecteur AFP pour l’afficher.
 
-![Lecteur PDF](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
