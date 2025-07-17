@@ -41,7 +41,7 @@ Pour développer du code personnalisé pour une version interne, vous devez tél
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/32993?quality=9&captions=fre_fr)
 
 <!--
 >[!NOTE]
