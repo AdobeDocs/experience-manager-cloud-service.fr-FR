@@ -4,10 +4,10 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 2%
+source-wordcount: '2409'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 2%
 
 Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
-* Amazon S3 (version bêta privée, voir la remarque ci-dessous)
-* Stockage Azure Blob
-* Datadog
-* Elasticsearch ou OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic (version bêta privée, voir la note ci-dessous)
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Technologie des journaux</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>Réseau de diffusion de contenu (CDN)</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td style="background-color: #ffb3b3;">Non</td>
+    </tr>
+    <tr>
+      <td>Stockage Azure Blob</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td style="background-color: #ffb3b3;">Non</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td style="background-color: #ffb3b3;">Non</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Logique Sumo</td>
+      <td style="background-color: #ffb3b3;">Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td style="background-color: #ffb3b3;">Non</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Pour les technologies dans Private Beta, veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
 Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
 Il existe une option pour que les journaux AEM et Apache/Dispatcher soient acheminés via l’infrastructure de réseau avancée d’AEM, telle que l’adresse IP de sortie dédiée.
 
 Notez que la bande passante réseau associée aux journaux envoyés à la destination de journalisation est considérée comme faisant partie de l’utilisation des E/S réseau de votre entreprise.
-
->[!NOTE]
->
->Amazon S3 et Sumo Logic sont disponibles dans Private Beta et ne prennent en charge que les journaux AEM (y compris Apache/Dispatcher).  New Relic via HTTPS est également en version bêta privée. Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
 ## Organisation de cet article {#how-organized}
 
@@ -49,7 +133,7 @@ L’organisation de cet article est la suivante :
 
 ## Configuration {#setup}
 
-1. Créez un fichier nommé `logForwarding.yaml`. Il doit contenir des métadonnées, comme décrit dans l’article [configuration du pipeline](/help/operations/config-pipeline.md#common-syntax) (**kind** doit être défini sur `LogForwarding` et la version doit être définie sur « 1 »), avec une configuration similaire à la suivante (nous utilisons Splunk comme exemple).
+1. Créez un fichier nommé `logForwarding.yaml`. Il doit contenir des métadonnées, comme décrit dans l’article [Pipeline de configuration](/help/operations/config-pipeline.md#common-syntax) (**kind** doit être défini sur `LogForwarding` et la version doit être définie sur « 1 »), avec une configuration similaire à la suivante (nous utilisons Splunk comme exemple).
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ Un autre scénario consiste à désactiver le transfert des journaux CDN ou des 
 Certaines organisations choisissent de limiter le trafic pouvant être reçu par les destinations de journalisation, d’autres peuvent nécessiter d’utiliser des ports autres que HTTPS (443).  Si tel est le cas, [Mise en réseau avancée](/help/security/configuring-advanced-networking.md) doit être configuré avant le déploiement de la configuration de transfert de journal.
 
 Utilisez le tableau ci-dessous pour connaître les exigences relatives à la configuration avancée de la mise en réseau et de la journalisation selon que vous utilisez le port 443 ou non et que vous avez besoin ou non que vos journaux apparaissent à partir d’une adresse IP fixe.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>Définition de port LogForwarding.yaml nécessaire</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>Non</td>
       <td>Non</td>
       <td>Non</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>Oui</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Le fait que vos journaux s’affichent à partir d’une seule adresse IP dépend de la configuration de mise en réseau avancée que vous avez choisie.  Une sortie dédiée doit être utilisée pour faciliter cette opération.
@@ -194,13 +278,17 @@ Les configurations des destinations de journalisation prises en charge sont rép
 
 ### Amazon S3 {#amazons3}
 
+Le transfert de journal vers Amazon S3 prend en charge les journaux AEM et Dispatcher. Les journaux CDN ne sont pas encore pris en charge.
+
 >[!NOTE]
 >
->Journaux écrits périodiquement dans S3, toutes les 10 minutes pour chaque type de fichier journal.  Cela peut entraîner un délai initial pour l’écriture des journaux dans S3 une fois la fonctionnalité basculée.  Vous trouverez plus d’informations sur les raisons de ce comportement [ici](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+>Journaux écrits périodiquement dans S3, toutes les 10 minutes pour chaque type de fichier journal.  Cela peut entraîner un délai initial pour l’écriture des journaux dans S3 une fois la fonctionnalité basculée.  [Informations supplémentaires sur ce comportement](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-Pour utiliser le redirecteur de journal S3, vous devez préconfigurer un utilisateur AWS IAM avec la politique appropriée pour accéder à votre compartiment S3.  Voir [ici](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) pour savoir comment créer des informations d’identification d’utilisateur IAM.
+Pour utiliser le redirecteur de journal S3, vous devez préconfigurer un utilisateur AWS IAM avec la politique appropriée pour accéder à votre compartiment S3.  Consultez la [Documentation de l’utilisateur AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) pour savoir comment créer des informations d’identification d’utilisateur IAM.
 
 La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`.  Par exemple :
 
@@ -228,7 +316,7 @@ La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`. 
 }
 ```
 
-Voir [ici](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre de la politique de compartiment AWS.
+Consultez la [documentation de la politique de compartiment AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre.
 
 ### Stockage Azure Blob {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-Considérations :
+#### Considérations
 
 * Créez une clé API, sans intégration à un fournisseur de cloud spécifique.
 * La propriété des balises est facultative
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-Considérations :
+#### Considérations
 
 * par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`
 * Pour les informations d’identification, veillez à utiliser les informations d’identification de déploiement plutôt que les informations d’identification de compte. Voici les informations d’identification générées dans un écran qui peut ressembler à cette image :
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-Considérations :
+#### Considérations
 
 * La chaîne d&#39;URL doit inclure **https://** sinon la validation échouera.
 * L’URL peut inclure un port. Par exemple, `https://example.com:8443/aem_logs/aem`. Si aucun port n’est inclus dans la chaîne d’URL, le port 443 (port HTTPS par défaut) est supposé.
-
-#### API du journal New Relic {#newrelic-https}
-
-Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
-
->[!NOTE]
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement de configuration de votre compte New Relic.  Voir [ici](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) pour consulter la documentation de New Relic.
 
 #### Journaux de réseau CDN HTTPS {#https-cdn}
 
@@ -413,6 +494,52 @@ Il existe également une propriété nommée `Source-Type`, qui est définie sur
 * aemhttpdaccess
 * aemhttpderror
 
+### API du journal New Relic {#newrelic-https}
+
+Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’ingestion.  Actuellement, il ne prend en charge que les journaux d’AEM et de Dispatcher ; les journaux CDN ne sont pas encore pris en charge.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>Le transfert du journal vers New Relic n’est disponible que pour les comptes New Relic détenus par le client.
+>
+>Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+>
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+
+### API du journal Dynatrace {#dynatrace-https}
+
+Le transfert du journal vers Dynatrace utilise l’API HTTPS Dynatrace pour l’ingestion.  Actuellement, il ne prend en charge que les journaux d’AEM et de Dispatcher ; les journaux CDN ne sont pas encore pris en charge.
+
+L’attribut de portée « Ingérer des journaux » est obligatoire pour le jeton.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-Considérations :
+#### Considérations
 
 * Par défaut, le port est 443. Il peut éventuellement être remplacé par une propriété nommée `port`.
 * Le champ sourcetype possède l’une des valeurs suivantes, en fonction du journal spécifique : *aemaccess*, *aemerror*,
@@ -441,6 +568,8 @@ Considérations :
 > [En cas de migration](#legacy-migration) du transfert de journal hérité vers ce modèle en libre-service, les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé. Ajustez-les en conséquence.
 
 ### Logique Sumo {#sumologic}
+
+Le transfert de journal vers Sumo Logic prend en charge les journaux AEM et Dispatcher ; les journaux CDN ne sont pas encore pris en charge.
 
 Lors de la configuration de la logique Sumo pour l’ingestion de données, une « adresse HTTP Source » s’affiche, qui fournit l’hôte, l’URI du destinataire et la clé privée dans une seule chaîne.  Par exemple :
 
