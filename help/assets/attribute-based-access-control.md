@@ -2,10 +2,11 @@
 title: Contrôle d’accès basé sur les attributs
 description: Découvrez comment activer le contrôle d’accès basé sur les attributs pour définir des règles basées sur les métadonnées afin de définir le niveau d’accès aux ressources disponibles dans Content Hub
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +24,24 @@ Voici quelques-uns des principaux avantages du contrôle d’accès basé sur le
 
 * Élimine la dépendance à la structure de dossiers pour les autorisations
 
-* Permet aux administrateurs de charger des ressources et de déterminer rétroactivement des structures d’autorisation
+* Permet aux administrateurs et administratrices de charger des ressources et de déterminer rétroactivement les structures d’autorisation
 
-* Réduit le nombre de doublons - améliore l’intégrité des ressources. Des doublons sont nécessaires dans les autorisations basées sur des dossiers lorsque les mêmes ressources sont partagées avec différents groupes.
+* Réduit le nombre de doublons - améliore l’intégrité des ressources. Des doublons sont nécessaires dans les autorisations basées sur des dossiers lorsqu’une même ressource est partagée avec différents groupes.
 
 ## Comment activer le contrôle d’accès basé sur les attributs ? {#enable-attribute-based-access-control}
 
-Pour l’instant, vous ne pouvez pas créer de règles de contrôle d’accès basé sur les attributs vous-même à l’aide de l’interface utilisateur de Content Hub. Créez un ticket d’assistance Adobe pour définir des règles dans une feuille de calcul à l’aide des instructions définies dans cet article.
+Pour l’instant, vous ne pouvez pas créer de règles de contrôle d’accès basé sur les attributs vous-même à l’aide de l’interface utilisateur de Content Hub.
+
+Cliquez sur **Télécharger la feuille de calcul** pour télécharger et définir des règles dans une feuille de calcul. Créez un ticket d’assistance pour Adobe et fournissez à Adobe les règles définies dans la feuille de calcul.
+
+[!BADGE Télécharger la feuille de calcul]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Définissez des règles dans la feuille de calcul à l&#39;aide des instructions définies dans cet article.
+
+>[!IMPORTANT]
+>
+> Après avoir défini les règles, accédez à l’onglet **Erreurs de validation** de la feuille de calcul et cliquez sur **Exécuter les validations ABAC**. **Toutes les validations effectuées** le message confirme que vous pouvez fournir les règles définies à Adobe.
 
 ## Exemple de cas d’utilisation de contrôle d’accès basé sur les attributs {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Cela vous permet d’écrire des règles simples et expressives, telles que : AL
 * Saisissez l’intention commerciale de la règle dans le commentaire, que la condition soit correctement écrite ou non, car l’intention nous aide à valider et à corriger la logique, si nécessaire.
 
 * Les fichiers PDF de licence, qui sont définis pour DRM, doivent être visibles par tous, afin que les utilisateurs puissent les voir lorsqu’ils téléchargent la ressource avec licence.
-
-
-
-
-
-
-
-
-
-
