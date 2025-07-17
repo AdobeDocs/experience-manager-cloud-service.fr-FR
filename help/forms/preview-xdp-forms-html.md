@@ -38,7 +38,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
 
-   *  d’AEM Forms sur JEE
+   * d’AEM Forms sur JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs

@@ -172,9 +172,9 @@ Par exemple :
 >[!NOTE]
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). Par conséquent, pour la configuration de journal 2-b6, les niveaux de journalisation pour les différentes catégories sont les suivants :
->>a (xfa) : 2 (niveau par défaut ERROR)
->>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
->>a (xfaPerf) : 2 (niveau par défaut ERROR)
+>&#x200B;>a (xfa) : 2 (niveau par défaut ERROR)
+>&#x200B;>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
+>&#x200B;>a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
 
