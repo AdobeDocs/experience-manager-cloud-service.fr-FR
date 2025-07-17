@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
+source-wordcount: '6521'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [Créer et gérer des révisions pour un formulaire adaptatif](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Mots-clés de formulaires adaptatifs](/help/forms/adaptive-forms-keywords.md)
       + [Prévisualiser un formulaire](/help/forms/previewing-forms.md)
+   + Formulaires HTML5 {#html5-forms}
+      + [Présentation des formulaires HTML5](/help/forms/introductionhtml5.md)
+      + [Prise en main des formulaires HTML5](/help/forms/get-started.md)
+      + [Architecture des formulaires HTML5](/help/forms/html5-forms-architecture.md)
+      + [Différences de caractéristiques entre formulaires HTML5 et formulaires PDF](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [Questions fréquentes (FAQ) des formulaires HTML5](/help/forms/faqhtml5.md)
+      + [Conception de modèles de formulaires HTML5](/help/forms/designing-form-template.md)
+      + [Recommandations relatives aux formulaires HTML5](/help/forms/best-practices-for-html5-forms.md)
+      + [Conception de formulaires HTML5 accessibles](/help/forms/design-accessible-html5-forms.md)
+      + [Génération de l’aperçu HTML5 d’un formulaire XDP](/help/forms/preview-xdp-forms-html.md)
+      + [Rendu du modèle de formulaire pour des formulaires HTML5](/help/forms/rendering-form-template.md)
+      + [Activation des pièces jointes à un formulaire HTML5](/help/forms/enabling-attachments-html5-form.md)
+      + [Proxy de service de formulaires HTML5](/help/forms/service-proxy.md)
+      + [Optimisation des formulaires HTML5](/help/forms/optimize-html5-forms.md)
+      + [Lecteurs d’écran pour les formulaires HTML5](/help/forms/screen-readers.md)
+      + [Création d’un profil personnalisé pour HTML5 forms](/help/forms/custom-profile.md)
+      + [Langues écrites de droite à gauche dans les formulaires HTML5](/help/forms/right-left-languages.md)
+      + [Intégration d’un objet Form Bridge à un portail personnalisé pour les formulaires HTML5](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [Créer des apparences personnalisées dans les formulaires HTML5](/help/forms/custom-widgets.md)
+      + [Modification des styles par défaut des formulaires HTML5](/help/forms/changing-default-styles.md)
+      + [Prise en charge des clauses d’image pour HTML5 forms](/help/forms/picture-clause-support.md)
+      + [Créer des tableaux complexes accessibles dans des formulaires HTML5](/help/forms/accessible-tables.md)
+      + [Création de styles CSS pour des formulaires HTML5](/help/forms/css-styles.md)
+      + [Personnalisation des messages d’erreur pour les formulaires HTML5](/help/forms/customzing-errors-html5-forms.md)
+      + [Enregistrement d’un formulaire HTML5 en tant que brouillon](/help/forms/saving-html5-form-draft.md)
+      + [Activation de la journalisation des formulaires au format HTML5](/help/forms/enable-logs.md)
+      + [Débogage des formulaires HTML5](/help/forms/debug.md)
+      + [Prise en charge des scripts pour les formulaires HTML5](/help/forms/scripting-support.md)
+      + [Jeu de formulaires dans AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Communication interactive {#interactive-communocation}
       + [Présentation des communications interactives](/help/forms/introduction-to-interactive-communication.md)
       + [Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
