@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
+source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 81%
+source-wordcount: '276'
+ht-degree: 63%
 
 ---
 
@@ -28,7 +28,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 
 ### Améliorations {#enhancements-21570}
 
-Aucune
+* Migration vers Apache Httpd 2.4.63
 
 ### Problèmes résolus {#fixed-issues-21570}
 
@@ -37,6 +37,7 @@ Aucune
 ### Problèmes connus {#known-issues-21570}
 
 * Le SDK AEM associé porte un ID de version différent (21575) et est disponible via le portail de distribution de logiciels .
+* La version 2.4.63 du serveur HTTP Apache a introduit un changement majeur dans la façon dont `mod_rewrite` gère les points d’interrogation (`?`) dans les URL. Cette modification a été mise en œuvre pour empêcher l’utilisation de l’indicateur `UnsafeAllow3F`, qui a été considéré comme un risque pour la sécurité. Cela affecte toutes les directives `RewriteRule` qui reposent sur la détection de points d’interrogation dans les modèles d’URL.
 
 ### Fonctionnalités et API obsolètes {#deprecated-21570}
 
@@ -53,4 +54,5 @@ Aucune
 | AEM Oak | 1.80.0 | [API Oak 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
+| Serveur HTTP Apache | 2,4,63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | Composants principaux d’AEM | 2.29.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
