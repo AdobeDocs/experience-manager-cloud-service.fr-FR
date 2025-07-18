@@ -1,11 +1,11 @@
 ---
 title: Panneau latéral de la console Sites
-description: Découvrez comment utiliser le panneau latéral dans la console AEM Sites pour mieux comprendre et parcourir votre contenu.
+description: Découvrez comment utiliser le panneau latéral dans la console Sites d’AEM pour mieux comprendre votre contenu et naviguer dans celui-ci.
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -14,7 +14,7 @@ ht-degree: 23%
 
 # Panneau latéral de la console Sites {#side-panel}
 
-Découvrez comment utiliser le panneau latéral dans la console AEM **Sites** pour mieux comprendre et parcourir votre contenu.
+Découvrez comment utiliser le panneau latéral dans la console AEM **Sites** pour mieux comprendre votre contenu et naviguer dans celui-ci.
 
 ## Orientation {#orientation}
 
@@ -99,8 +99,8 @@ La vue **Références** affiche une liste des types de références vers ou depu
 
 Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
 
-* La section **Liens entrants** fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à l’une de ces pages **Modifier** lorsque vous sélectionnez un lien spécifique.
-   * Cela permet uniquement d’afficher des liens statiques, et non des liens générés dynamiquement, comme à partir du composant Liste .
+* La section **Liens entrants** fournit une liste de pages qui font directement référence à la page sélectionnée, ainsi qu’un accès direct à l’une de ces pages **Modifier** lorsque vous sélectionnez un lien spécifique.
+   * Cette option affiche uniquement les liens statiques, et non les liens générés dynamiquement, comme ceux du composant Liste .
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md) donne accès aux lancements associés.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
 * Le [plan directeur](/help/sites-cloud/administering/msm/best-practices.md) fournit des détails et la possibilité de diverses actions.
