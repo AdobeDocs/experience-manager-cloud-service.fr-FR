@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 99%
 
 ---
+
 
 # Jeu de formulaires dans AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ Les jeux de formulaires sont également pris en charge dans l’application AEM 
 
 Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés via Designer, dans un jeu de formulaires. Des jeux de formulaires peuvent ensuite être utilisés pour rendre de manière sélective les XDP en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et leurs profils.
 
-Utilisez [l’interface utilisateur d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) pour gérer tous vos formulaires, vos jeux de formulaires et vos ressources associés.
+Utilisez [l’interface utilisateur d’AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) pour gérer tous vos formulaires, vos jeux de formulaires et vos ressources associés.
 
 ### Créer un jeu de formulaires {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Pour créer un jeu de formulaire, procédez ainsi :
 
    * Ordre des formulaires : faites glisser les formulaires pour les réorganiser. L’ordre des formulaires définit l’ordre dans lequel les formulaires se présentent à l’utilisateur final dans l’application AEM Forms et le rendu autonome.
    * Identifiant de formulaire : indique une identité unique pour les formulaires à utiliser dans les expressions d’éligibilité.
-   * Racine des données : pour chaque formulaire du jeu, l’auteur peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Racine des données : pour chaque formulaire du jeu, l’auteur peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Expression d’éligibilité : spécifie une expression JavaScript qui évalue une valeur booléenne et indique si un formulaire du jeu est éligible au remplissage. Si la valeur est « false », il n’est pas demandé à l’utilisateur ou à l’utilisatrice de remplir le formulaire, qui n’est même pas affiché. En règle générale, l’expression est basée sur les valeurs des champs qui sont collectées avant ce formulaire. Les expressions contiennent également des appels à la valeur de fs.valueOf de l’API du jeu de formulaires pour extraire les valeurs renseignées par l’utilisateur dans un champ de formulaire du jeu de formulaires :
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*
@@ -286,7 +289,7 @@ prefillXML : O
 
 La sous-arborescence indique les données des formulaires dans le jeu de formulaires. L’élément est optionnel dans le XML prérempli uniquement si l’élément du jeu de formulaires n’est pas présent.
 
-### XDP :XDP {#xdp-xdp}
+### XDP:XDP {#xdp-xdp}
 
 `parent elements: fs_data/null`
 
@@ -300,7 +303,7 @@ La sous-arborescence indique les données des formulaires dans le jeu de formula
 
 Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l’envoi XML s’il est présent dans le XML prérempli ou s’il n’y a aucun XML prérempli. Cette balise peut être supprimée du XML prérempli.
 
-### XFA : DATASETS {#xfa-datasets}
+### XFA :DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -312,7 +315,7 @@ Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l
 
 `children: xfa:data`
 
-### XFA:DATA {#xfa-data}
+### XFA :DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -338,7 +341,7 @@ Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l
 
 Le rootElement du nom est simplement un espace réservé. Le nom réel est sélectionné dans les formulaires utilisés dans le jeu de formulaires. La sous-arborescence qui débute avec rootElement contient les données des champs et des sous-formulaires à l’intérieur des formulaires dans l’ensemble de formulaires. Des facteurs multiples déterminent la structure du rootElement et de ses enfants.
 
-Dans le code XML prérempli, cette balise est optionnelle, mais si elle est manquante, le code XML entier est ignoré.
+Dans le code XML de préremplissage, cette balise est facultative, mais si elle est manquante, le code XML entier est ignoré.
 
 NOM DE LA BALISE DE L’ÉLEMENT RACINE
 
