@@ -5,9 +5,9 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 23%
 
 ---
