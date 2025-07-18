@@ -139,7 +139,7 @@ Voici les réponses à certaines questions courantes sur l’assistant d’IA :
 
 ## Assistant AEM Forms AI (Forms Experience Builder) {#ai-forms-builder}
 
-Outre l’assistant IA d’AEM général pour la connaissance des produits, AEM propose un assistant IA d’AEM Forms spécialisé **[](/help/edge/docs/forms/forms-ai-assistant.md)** (Forms Experience Builder). Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
+Outre l’assistant IA d’AEM général pour la connaissance des produits, AEM propose un assistant IA d’AEM Forms spécialisé **[&#128279;](/help/edge/docs/forms/forms-ai-assistant.md)** (Forms Experience Builder). Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
 
 ### Fonctionnalités essentielles
 
