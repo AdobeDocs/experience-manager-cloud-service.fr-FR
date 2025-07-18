@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 60%
+ht-degree: 99%
 
 ---
 
@@ -21,59 +21,59 @@ Consultez également les [notes de mise à jour actuelles d’Adobe Experience�
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.7.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 10 juillet 2025.
+La date de publication de la version 2025.7.0 de Cloud Manager dans AEM as a Cloud Service est le jeudi 10 juillet 2025.
 
-La prochaine version est prévue le vendredi 7 août 2025.
+La prochaine version est prévue le jeudi 7 août 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **Cloud Manager ajoute la prise en charge du certificat SSL ECDSA (Elliptic Curve Digital Signature Algorithm)**
+* **Cloud Manager ajoute la prise en charge du certificat SSL ECDSA (Elliptic Curve Digital Signature Algorithm).**
 
-  Cloud Manager prend désormais en charge les certificats ECDSA. La fonctionnalité offre une sécurité renforcée avec des tailles de clé plus petites, ce qui permet aux clients d’appliquer une cryptographie moderne légère dans leurs configurations de réseau CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+  Cloud Manager prend désormais en charge les certificats ECDSA. La fonctionnalité offre une sécurité renforcée avec des tailles de clé plus petites, ce qui permet à la clientèle d’appliquer une cryptographie moderne légère dans ses configurations de réseau CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
 * **Télécharger le rapport d’utilisation de la licence du site**
 
-  Sur la page **Détails d’utilisation des sites** (dans Cloud Manager, cliquez sur **Licence**. Dans le tableau Solutions , dans la ligne **Sites**, cliquez sur **Afficher les détails d’utilisation**). Les clients peuvent désormais cliquer sur **Télécharger le rapport** pour exporter ses données au format CSV. Ce téléchargement simplifie l’analyse et le partage des tendances d’utilisation. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  Sur la page **Détails d’utilisation des sites** (dans Cloud Manager, cliquez sur **Licence**. Dans le tableau Solutions, dans la ligne **Sites**, cliquez sur **Afficher les détails d’utilisation**). La clientèle peut désormais cliquer sur **Télécharger le rapport** pour exporter ses données au format CSV. Ce téléchargement simplifie l’analyse et le partage des tendances d’utilisation. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
-  ![Page des détails d’utilisation des sites](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
+  ![Page Détails d’utilisation des sites](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
-  Voir le [tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
+  Consultez le [tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Programmes pour les utilisateurs et utilisatrices précoces {#private-beta-program}
+## Programmes d’adoption précoce {#private-beta-program}
 
-Participez aux programmes alpha et bêta de Cloud Manager pour obtenir un accès anticipé et exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez aux programmes Beta et Alpha de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les opportunités suivantes sont actuellement disponibles :
+Les opportunités suivantes sont actuellement disponibles :
 
 ### Restauration en un clic pour les déploiements de pipeline {#one-click-rollback}
 
-Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source du client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer**>**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 
-![Restauration de l’activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement **Restauration**&#x200B;jusqu’à la fin du déploiement.*
+![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 
-![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version du code source active utilisée.*
+![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un e-mail à [restorecode@adobe.com](mailto:restorecode@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [restorecode@adobe.com](mailto:restorecode@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
 Voir [Restaurer le code précédemment déployé dans AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
-Voir aussi [Restauration de contenu dans AEM as a Cloud Service](/help/operations/restore.md).
+Consultez également [Restauration de contenu dans AEM as a Cloud Service](/help/operations/restore.md).
 
 
 ### Environnement de test spécialisé {#specialized-test-environment}
 
 Cloud Manager prend désormais en charge l’ajout d’un nouveau type d’environnement appelé **Environnement de test spécialisé**. L’environnement est conçu pour aider les équipes à valider les fonctionnalités dans des conditions proches de la production avant la mise en ligne. Ce type d’environnement est distinct des environnements *Production+Évaluation*, *Développement* ou *Développement rapide* et offre un espace ciblé pour exécuter des scénarios de validation avancés.
 
-Amélioration récente : vous pouvez désormais configurer des environnements de test spécialisés sur un pipeline hors production grâce à un workflow plus simple et plus intuitif. La configuration rationalisée accélère l’achèvement et réduit les erreurs de configuration.
+Amélioration récente : vous pouvez désormais configurer des environnements de test spécialisés sur un pipeline hors production grâce à un workflow plus simple et plus intuitif. La configuration rationalisée accélère l’achèvement et réduit les erreurs de configuration.
 
 Voir la section [Ajouter un environnement de test spécialisé](/help/implementing/cloud-manager/specialized-test-environment.md).
 
@@ -133,12 +133,12 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 ## Correctifs
 
 * Cloud Manager met désormais à jour la version de tous les pipelines lors des mises à niveau de l’environnement, assurant ainsi un suivi de version cohérent sur tous les types de pipeline. <!-- CMGR-69043 -->
-* L’interface utilisateur affiche désormais des messages de statut et d’erreur détaillés lorsqu’un certificat SSL de validation de domaine (DV) échoue, ce qui permet de comprendre et de résoudre les problèmes de certificat. <!-- CMGR-68872 -->
-* Lors de la modification d’un mappage de domaine, l’interface utilisateur empêche désormais de sélectionner des certificats SSL qui ne correspondent pas au domaine sélectionné, ce qui réduit les erreurs de configuration et améliore la fiabilité lors de la configuration. <!-- CMGR-64307 -->
+* L’interface d’utilisation affiche désormais des messages de statut et d’erreur détaillés lorsqu’un certificat SSL de validation de domaine (DV) échoue, ce qui permet de comprendre et de résoudre les problèmes de certificat. <!-- CMGR-68872 -->
+* Lors de la modification d’un mappage de domaine, l’interface d’utilisation empêche désormais de sélectionner des certificats SSL qui ne correspondent pas au domaine sélectionné, ce qui réduit les erreurs de configuration et améliore la fiabilité lors de la configuration. <!-- CMGR-64307 -->
 * Dans certains cas, les certificats n’ont pas été correctement supprimés, la maintenance du domaine est toujours active. <!-- CMGR-69867 -->
 * Correction d’un problème qui pouvait bloquer les mises à niveau de *Adobe Assets* vers *Adobe Assets Ultimate* dans certains cas. Les transitions sont désormais plus fluides et plus fiables. <!-- CMGR-69506 -->
 * Correction d’un problème où les champs de région clés étaient automatiquement définis lors de la création d’environnements multi-régions pour prendre en charge les services et déploiements en aval en douceur. <!-- CMGR-69471 -->
-* Correction d’un problème en raison duquel certains pipelines de configuration ne s’arrêtaient pas correctement après l’exécution. Désormais, les pipelines sont terminés avec succès et fermés comme prévu, ce qui améliore la fiabilité. <!-- CMGR-69344 -->
+* Correction d’un problème en raison duquel certains pipelines de configuration ne s’arrêtaient pas correctement après l’exécution. Désormais, les pipelines se terminent correctement et se ferment comme prévu, ce qui améliore la fiabilité. <!-- CMGR-69344 -->
 
 
 <!-- ## Known issues {#known-issues} -->
