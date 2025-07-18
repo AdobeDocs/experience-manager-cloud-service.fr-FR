@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
 workflow-type: tm+mt
-source-wordcount: '6521'
+source-wordcount: '6522'
 ht-degree: 99%
 
 ---
@@ -821,7 +821,7 @@ ht-degree: 99%
             + [Utiliser hCAPTCHA dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Utiliser Turnstile Captcha dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [Ajout d’un paramètre régional pour Forms adaptatif basé sur les composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
+            + [Ajout des paramètres régionaux pour les formulaires adaptatifs sur la base des composants principaux](/help/forms/supporting-new-language-localization-core-components.md)
             + [Créer un schéma JSON pour un formulaire adaptatif (composants principaux)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
@@ -1230,8 +1230,8 @@ ht-degree: 99%
    + [IA générative dans AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + [Assistant (version bêta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Assistant AI pour AEM Forms (Créateur d’expériences de formulaires) (utilisateurs et utilisatrices précoces)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistant d’IA pour AEM (Beta limité)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistant d’IA pour AEM Forms (Forms Experience Builder) (utilisateur précoce)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implémentation {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
