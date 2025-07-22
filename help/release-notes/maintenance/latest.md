@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 34%
 
 ---
@@ -63,7 +63,7 @@ L’activation des fonctionnalités de la version 2025.7.0 fournit l’ensemble
 * CQ-4360256 : incluez le chemin d’accès au contexte du servlet dans le chemin d’accès de la requête pour les requêtes HTTP gérées via le contexte du servlet `/adobe`.
 * CQ-4360317 : ajoutez une méthode pour définir l’en-tête Date de fin lors de la création de réponses.
 * GRANITE-60311 : démarrage rapide AEM SDK - NPE sur « Imprimante de configuration du programme d’installation OSGi ».
-* GS-15285 : les utilisateurs s’affichent comme désactivés.
+* GS-15285 : les utilisateurs sont marqués comme désactivés.
 
 ### Problèmes connus {#known-issues-21644}
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 
 | Technologie | Version | Lien |
 |---|---|---|
-| AEM Oak | 1.80.0 | [API Oak 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1.80.0 | [API Oak 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
 | Serveur HTTP Apache | 2,4,63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
