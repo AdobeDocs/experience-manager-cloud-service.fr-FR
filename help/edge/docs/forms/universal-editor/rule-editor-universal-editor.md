@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Présentation de l’Éditeur de règles dans la création WYSIWYG
 
-<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 
 Vous pouvez ajouter un comportement de formulaire dynamique à l’aide de l’éditeur de règles, qui permet de créer des règles. Ces règles permettent une visibilité conditionnelle des champs, automatisent les calculs en fonction des entrées des utilisateurs et utilisatrices et améliorent l’expérience globale d’utilisation. En rationalisant le processus de remplissage des formulaires, l’éditeur de règles garantit à la fois précision et efficacité.
@@ -188,7 +188,7 @@ Maintenant, découvrons comment [écrire des règles dans l’éditeur de règle
 
 Pour comprendre comment écrire des règles dans l’éditeur visuel de règles, prenons l’exemple simple d’un formulaire de calcul des taxes :
 
-![Capture d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique de date et heure pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Capture d’écran de l’interface de l’éditeur de règles présentant la création d’une règle conditionnelle avec la logique WHEN-THEN (LORSQUE-ALORS) pour la visibilité des champs de formulaire](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 Dans le formulaire décrit ci-dessus, l’utilisateur ou l’utilisatrice saisit le salaire brut. En fonction de cette entrée, le champ conditionnel s’affiche et la taxe à payer est calculée.
 
@@ -223,7 +223,7 @@ Pour créer un formulaire dans l’éditeur universel :
    * Envoyer (bouton Envoyer)
 1. Masquez le champ de formulaire `Additional Deduction` en ouvrant ses `Properties`.
 
-   ![Capture d’écran d’un formulaire de calcul des impôts avec des champs d’entrée pour le salaire brut, la situation de famille et les enfants à charge, présentant la structure du formulaire avant l’application des règles](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Capture d’écran d’un formulaire de calcul des impôts avec des champs de saisie pour le salaire brut, la situation de famille et les enfants à charge, présentant la structure du formulaire avant l’application des règles](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### 2. Ajouter une règle conditionnelle pour un champ de formulaire
 
@@ -278,7 +278,6 @@ Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différ
    * Sélectionnez **[!UICONTROL Moins]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
    * Sélectionnez ou faites glisser et déposez, depuis l’onglet Objet de formulaire, le champ **[!UICONTROL Déduction supplémentaire]** dans l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]**.
-
      ![Exemple 15 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
@@ -296,7 +295,6 @@ Ensuite, créez une règle pour calculer le `Taxable Income`, qui est la différ
    * Sélectionnez **[!UICONTROL Multiplié par]** dans le champ **[!UICONTROL Sélectionner un opérateur]**.
 
    * Sélectionnez **Nombre** dans le champ **[!UICONTROL Sélectionner une option]** et saisissez la valeur `10` dans le champ **[!UICONTROL Saisir un nombre]**.
-
      ![Exemple 18 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Ensuite, sélectionnez la zone en surbrillance autour du champ Expression et choisissez **[!UICONTROL Étendre l’expression]**.
    ![Exemple 19 de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Ajout d’une fonction personnalisée](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Utiliser une fonction personnalisée dans l’éditeur de règles

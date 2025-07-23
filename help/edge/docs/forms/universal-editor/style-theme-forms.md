@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1833'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Personnaliser l’apparence de vos formulaires
 
-<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 
 Les formulaires sont essentiels pour les interactions des utilisateurs et des utilisatrices sur les sites web, car cela leur permet de saisir des données. Vous pouvez utiliser des feuilles de style en cascade (CSS) pour mettre en forme les champs d’un formulaire, améliorer la présentation visuelle de vos formulaires et améliorer l’expérience client.
@@ -54,7 +54,7 @@ Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui s
 
 * **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant les `/blocks/form/form.css file`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition d’un style uniforme entre les formulaires.
 
-* **Style CSS pour les formulaires** : pour vous assurer que vos styles sont appliqués correctement, enveloppez le fichier CSS spécifique au formulaire dans le sélecteur de `main .form form`. Cela garantit que vos styles ciblent uniquement les éléments de formulaire dans la zone de contenu principale, évitant les conflits avec d’autres parties du site web.
+* **Style CSS pour les formulaires** : pour vous assurer que vos styles sont appliqués correctement, enveloppez le fichier CSS spécifique au formulaire dans le sélecteur de `main .form form`. Vos styles ciblent ainsi uniquement les éléments de formulaire dans la zone de contenu principale, ce qui évite des conflits avec d’autres parties du site web.
 
   Exemple :
 
@@ -93,10 +93,10 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 ```
 
 * Classes : l’élément div comporte plusieurs classes pour le ciblage d’éléments et de définitions de styles spécifiques. Vous avez besoin des classes `{Type}-wrapper` ou `field-{Name}` pour développer un sélecteur CSS afin de définir le style d’un champ de formulaire :
-* {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
-* {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques, les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)`, et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
-* {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement.
-* {Required} : valeur booléenne indiquant si le champ est obligatoire.
+* {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
+* {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques, les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)`, et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
+* {FieldId} : il s’agit de l’identifiant unique du champ, généré automatiquement.
+* {Required} : il s’agit d’une valeur booléenne indiquant si le champ est obligatoire.
 * Libellé : l’élément `label` fournit un texte descriptif pour le champ et l’associe à l’élément d’entrée à l’aide de l’attribut `for`.
 * Entrée : l’élément `input` définit le type de données à renseigner. Par exemple : texte, nombre, e-mail.
 * Description (facultatif) : `div` avec la classe `field-description` fournit des informations ou des instructions supplémentaires à l’intention de l’utilisateur ou de l’utilisatrice.
@@ -142,9 +142,8 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
   }
   
 ```
-
 * `.{Type}-wrapper` : cible l’élément `div` externe en fonction du type de champ. Par exemple : `.text-wrapper` cible tous les champs de texte.
-* `.field-{Name}` : affine la sélection de l’élément en fonction du nom de champ spécifique. Par exemple, `.field-first-name` cible le champ de texte « Prénom ». Bien que ce sélecteur puisse être utilisé pour cibler les éléments avec la classe field-{Name} , il est important d’être prudent. Dans ce cas spécifique, il ne serait pas utile de définir le style de champs d’entrée, car cela ciblerait non seulement l’entrée elle-même, mais également les éléments de libellé et de description. Il est recommandé d’utiliser des sélecteurs plus spécifiques comme ceux dont vous disposez pour cibler les champs d’entrée de texte (entrée .text-wrapper).
+* `.field-{Name}` : affine la sélection de l’élément en fonction du nom de champ spécifique. Par exemple, `.field-first-name` cible le champ de texte « Prénom ». Bien que ce sélecteur puisse être utilisé pour cibler des éléments avec la classe field-{Name}, il est important de faire preuve de prudence. Dans ce cas spécifique, il ne serait pas utile de définir le style de champs d’entrée, car cela ciblerait non seulement l’entrée elle-même, mais également les éléments de libellé et de description. Il est recommandé d’utiliser des sélecteurs plus spécifiques comme ceux dont vous disposez pour cibler les champs d’entrée de texte (entrée .text-wrapper).
 
 **Exemples de sélecteurs CSS pour les composants généraux**
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * Cibler le wrapper : le premier sélecteur (`.drop-down-wrapper`) cible l’élément wrapper externe, assurant ainsi l’application des styles à l’ensemble du composant de liste déroulante.
 * Disposition Flexbox : Flexbox organise le libellé, la liste déroulante et la description verticalement pour une disposition claire.
 * Définition du style de libellé : le libellé se distingue par une police plus épaisse et une légère marge.
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### Groupes de boutons radio
 
@@ -284,7 +282,6 @@ Tout comme les composants de liste déroulante, les groupes de boutons radio pr�
     padding: 10px;
   }
 ```
-
 Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper. Cela s’avère utile pour appliquer des styles généraux à l’ensemble du groupe de boutons radio.
 
 * Ciblage des libellés de boutons radio
@@ -465,8 +462,8 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-* L’élément de légende (&lt;legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
-* Dans le fieldset, plusieurs éléments.Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans ce cas) représentent des champs de formulaire individuels dans le panneau.
+* L’élément de légende (<legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+* Dans le fieldset, plusieurs éléments.Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
 * Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
 +++
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 ce sélecteur définit le style de tous les wrappers de champ dans un panneau répétable, en assurant un espacement cohérent entre les champs.
 
 * Ciblage de champs spécifiques (dans un panneau) :

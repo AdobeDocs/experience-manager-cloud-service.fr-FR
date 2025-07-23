@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,14 +79,13 @@ Pour choisir le modèle et créer le formulaire, procédez comme suit :
 
    1. Spécifiez le **Nom** et le **Titre**.
    1. Spécifiez l’**URL GitHub**. Par exemple, si votre référentiel GitHub est nommé `edsforms`, il se trouve sous le compte `wkndforms`, l’URL est la suivante :
-
       `https://github.com/wkndforms/edsforms`
 
    ![Assistant Créer un formulaire](/help/edge/assets/create-form-wizard.png)
 
    Lorsque vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en mode Création.
 
-   ![Capture d’écran de l’éditeur universel montrant un formulaire en cours de création avec la palette de composants à gauche, la zone de travail de formulaire au centre et le panneau Propriétés à droite](/help/edge/assets/author-form.png)
+   ![Capture d’écran de l’éditeur universel montrant un formulaire en cours de création avec la palette de composants à gauche, la zone de travail de formulaire au centre et le panneau des propriétés à droite](/help/edge/assets/author-form.png)
 1. Cliquez sur **[!UICONTROL Créer]** pour créer le formulaire. Vous pouvez maintenant [créer le formulaire à l’aide de l’éditeur universel](#author-the-form).
 
 >[!TAB Modèle basé sur les composants principaux]
@@ -136,7 +135,7 @@ Pour créer des formulaires à l’aide de l’éditeur universel pour le modèl
 
    La copie d’écran ci-dessous affiche le formulaire `Registration Form` créé dans l’éditeur universel :
 
-   ![Capture d’écran d’un formulaire de contact rempli dans l’éditeur universel affichant les champs de formulaire pour le nom, l’e-mail, le téléphone et le message avec un style et une disposition appropriés](/help/edge/assets/contact-us.png)
+   ![Capture d’écran d’un formulaire de contact rempli dans l’éditeur universel affichant les champs de formulaire Nom, E-mail, Téléphone et Message avec un style et une disposition appropriés](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Les formulaires comprennent souvent des sections courantes telles que les coordonnées, les détails d’identification ou les accords de consentement. Les développeurs et développeuses de formulaires créent ces sections à chaque création de formulaire, ce qui est répétitif et prend beaucoup de temps.
 Pour éliminer cette duplication des efforts, l’éditeur universel permet de créer des segments de formulaire réutilisables, tels que des panneaux ou des groupes de champs, une seule fois et de les réutiliser dans différents formulaires. Ces segments réutilisables, modulaires et autonomes s’appellent des fragments de formulaire. Par exemple, le même fragment de contact d’urgence peut être utilisé dans différentes sections d’un formulaire, comme pour les coordonnées des personnes employées et en charge de la supervision.
@@ -108,7 +108,7 @@ Pour créer un fragment de formulaire dans l’éditeur universel, procédez com
 
    La capture d’écran ci-dessous affiche le `contact fragment` créé dans l’éditeur universel.
 
-   ![Copie d’écran d’un fragment de formulaire de coordonnées terminé dans l’éditeur universel, affichant les champs de nom, de téléphone, d’adresse électronique et d’adresse qui peuvent être réutilisés dans plusieurs formulaires](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Copie d’écran d’un fragment de formulaire de coordonnées terminé dans l’éditeur universel, affichant les champs Nom, Téléphone, E-mail et Adresse qui peuvent être réutilisés dans plusieurs formulaires.](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Une fois le fragment créé, vous pouvez [ajouter le fragment créé dans les formulaires Edge Delivery Services](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Créons un formulaire `Employee Details` simple qui comprend des informations su
 
    Le fragment de formulaire est ajouté par référence au formulaire et est synchronisé avec le fragment de formulaire autonome.
 
-   ![Capture d’écran montrant le fragment de détails de contact intégré avec succès à un formulaire d’employé dans l’éditeur universel, montrant comment les fragments conservent leur structure lorsqu’ils sont réutilisés](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Capture d’écran montrant le fragment relatif aux coordonnées, intégré au formulaire des effectifs d’une entreprise dans l’éditeur universel, présentant la façon dont les fragments conservent leur structure lorsqu’ils sont réutilisés](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    Vous pouvez prévisualiser le formulaire pour découvrir comment il s’affiche en mode **Prévisualisation**.
 

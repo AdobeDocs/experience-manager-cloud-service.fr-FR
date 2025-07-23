@@ -3,9 +3,9 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Il est possible d’évaluer Content Hub sans affecter le contenu des utilisateu
 
 Il existe un programme d’accès anticipé à Content Hub sur les programmes Sandbox et leurs environnements de production de création. Pour en savoir plus, voir [Présentation des programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Pour en savoir plus sur le programme d’accès anticipé, contactez votre équipe Adobe en charge des comptes.
 
-Content Hub n’est pas encore disponible pour les environnements hors production (évaluation et développement). La disponibilité attendue pour les environnements d’évaluation/de développement pour Assets Ultimate est en mars 2025.
+Content Hub n’est pas encore disponible pour les environnements hors production (évaluation et développement). La disponibilité attendue des environnements d’évaluation et de développement pour Assets Ultimate est mars 2025.
 
 ## Pourquoi les ressources ne s’affichent-elles pas une fois que ma connexion à Content Hub est effective ? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Il existe quelques configurations de la manière dont les utilisateurs et utilis
    >
    >La personne affectée aux profils de produits Express et Assets dans deux Admin Consoles doit avoir la même adresse e-mail et utiliser un compte professionnel **d’entreprise ou d’établissement scolaire**, et non **personnel**. La configuration idéale consiste à configurer les deux Admin Consoles en tant que **Federated ID** avec une relation de confiance entre elles, de sorte que l’utilisateur ou l’utilisatrice bénéficie d’une expérience d’authentification unique fluide. Certaines formules Express (par exemple, Express Équipe) ne prennent pas en charge Federated ID/l’authentification unique.
 
-Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[!UICONTROL # /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[#UICONTROL /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Puis-je configurer Content Hub de sorte que les directives de marque de mon entreprise s’affichent sous la forme d’un lien sur la page d’accueil ? {#content-hub-setup-brand-guidelines}
 
@@ -98,40 +98,40 @@ Adobe fournit une assistance pour la migration de Brand Portal vers Content Hub 
 
 Pour accéder à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md), vous devez être [administrateur ou administratrice Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Si vous possédez un profil de produit Administration AEM sur l’instance de création de production dans Adobe Admin Console, mais que vous ne pouvez toujours pas voir l’option de configuration, vérifiez que le profil de produit Administration AEM n’ait pas été renommé. Pour plus d’informations, voir [Équipe et profils de produit AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Comment Content Hub résout-il les limites de Brand Portal ? {#content-hub-brand-portal-comparison}
+## Comment Content Hub gère-t-il les limites de Brand Portal ? {#content-hub-brand-portal-comparison}
 
 
-Le tableau ci-dessous présente les principales différences entre les deux solutions :
+Le tableau ci-dessous présente les principales différences entre les deux solutions :
 
-| Aire | Fonction | Content Hub | Brand Portal |
+| Aire | Fonction | Content Hub | Brand Portal |
 |---|---|----|----|
-| Configuration de l’expérience de distribution | Configuration des métadonnées pour les filtres, les détails des ressources et l’ajout de pages de ressources | ✓ | − |
-|  | Configuration de liens externes à partir du portail | ✓ | − |
-|  | Configurer la messagerie de bannière | ✓ | ✓ |
+| Configurer l’expérience de distribution | Configurer des métadonnées pour les filtres, les détails des ressources et la page d’ajout de ressources | ✓ | − |
+|  | Configurer des liens externes à partir du portail | ✓ | − |
+|  | Configurer la messagerie par bannière | ✓ | ✓ |
 |  | Configurer une image de bannière pour le branding | ✓ | ✓ |
-|  | Configurez les couleurs primaires et secondaires de l’interface utilisateur en fonction des exigences de branding | ✓ | − |
-| Partage de ressources à partir de la gestion des ressources numériques | Partage des ressources approuvées d’origine à partir de la gestion des ressources numériques | ✓ | ✓ |
-|  | Les modifications de ressources approuvées ont été synchronisées automatiquement. | ✓ | − |
+|  | Configurer les couleurs primaires et secondaires de l’UI en fonction des exigences de branding | ✓ | − |
+| Partager les ressources à partir de la gestion des ressources numériques | Partager les ressources approuvées d’origine à partir de la gestion des ressources numériques | ✓ | ✓ |
+|  | Les modifications approuvées pour les ressources ont été automatiquement synchronisées. | ✓ | − |
 | Recherche et filtres | Filtres dynamiques (les options s’affichent de manière dynamique en fonction des ressources affichées) | ✓ | − |
-|  | Historique de recherche | ✓ | − |
+|  | Rechercher dans l’historique | ✓ | − |
 | Chargement de ressources | Lecteur local | ✓ | ✓ |
-|  | Ajout de métadonnées configurables lors du chargement de ressources | ✓ | − |
+|  | Ajouter des métadonnées configurables lors du chargement des ressources | ✓ | − |
 | Téléchargement et rendus | Télécharger la ressource d’origine | ✓ | ✓ |
-|  | Partage et téléchargement de rendus statiques à partir de la gestion des ressources numériques | ✓ | ✓ |
-|  | Téléchargement de rendus dynamiques (paramètres prédéfinis et recadrages intelligents) | ✓ | ✓ |
+|  | Partager et télécharger des rendus statiques à partir de la gestion des ressources numériques | ✓ | ✓ |
+|  | Télécharger des rendus dynamiques (paramètres prédéfinis et recadrages intelligents) | ✓ | ✓ |
 |  | Possibilité de restreindre l’affichage et le téléchargement des ressources expirées | ✓ | − |
-| Partage de liens et collections | Partage de liens pour les utilisateurs connectés | ✓ | ✓ |
+| Partage de liens et collections | Partage de liens pour les utilisateurs et utilisatrices connectés | ✓ | ✓ |
 |  | Collections publiques | ✓ | ✓ |
 |  | Recherche dans les collections | ✓ | − |
 |  | Partage de lien anonyme | ✓ | ✓ |
 |  | Collections privées | ✓ | ✓ |
-| Autorisations | Autorisations basées sur une liste de contrôle d’accès | − | ✓ |
+| Autorisations | Autorisations basées sur ACL | − | ✓ |
 |  | Contrôle d’accès basé sur les attributs | ✓ | − |
-| Intégration d’Express | Modifier Content Hub Assets dans Adobe Express et l’enregistrer dans la gestion des ressources numériques | ✓ | − |
+| Intégration d’Express | Modifier les ressources Content Hub dans Adobe Express et enregistrer dans la gestion des ressources numériques | ✓ | − |
 | Tableaux de bord et rapports | Tableau de bord des informations | ✓ | − |
 | Extensibilité de l’interface d’utilisation | Points d’extension personnalisés sur la page des détails de la ressource | Disponibilité limitée | − |
-| Innovations à venir | Collections favorites par utilisateur | ✓ | − |
-|  | Collections épinglées par l’administrateur | ✓ | − |
+| Innovations bientôt disponibles | Collections favorites par utilisateur ou utilisatrice | ✓ | − |
+|  | Collections épinglées par l’administrateur ou l’administratrice | ✓ | − |
 |  | Recherche sémantique | ✓ | − |
 |  | Recherche localisée et affichage des métadonnées | ✓ | − |
 

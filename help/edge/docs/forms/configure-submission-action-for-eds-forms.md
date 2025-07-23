@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2166'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,6 @@ Le [service d’envoi de formulaires](/help/forms/forms-submission-service.md) e
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Envoi de formulaires](/help/forms/assets/eds-fss.png)
 
 Cet organigramme montre la façon dont le service d’envoi de formulaire récupère les données envoyées et les envoie à une feuille de calcul ou un e-mail configuré.
@@ -74,7 +73,7 @@ Pour les besoins plus complexes, les [formulaires (en particulier ceux créés a
 * [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Envoyer à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Envoyer à Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Envoyer à Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -145,7 +144,6 @@ La page sur laquelle vous souhaitez voir apparaître le formulaire (appelons-la 
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Architecture de formulaire incorporée](/help/forms/assets/eds-embedded-form.png)
 Ce diagramme montre la page d’accueil récupérant le code HTML du formulaire à partir de la Source du formulaire et l’affichant. L’envoi utilise le point d’entrée configuré du formulaire d’origine.
 
@@ -319,5 +317,5 @@ Ce guide présente une vue d’ensemble de l’utilisation des formulaires avec 
 
 * [Création basée sur des documents avec les formulaires Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Éditeur universel avec formulaires Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Création de documents (DA) et incorporation de contenu](https://www.aem.live/developer/da-tutorial)
+* [Création de documents (DA) et incorporation de contenu](https://www.aem.live/developer/da-tutorial?lang=fr)
 * [Service d’envoi de formulaires AEM](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

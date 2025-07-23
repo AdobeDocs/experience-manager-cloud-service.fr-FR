@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1012'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Éditeur universel d’Edge Delivery Services pour AEM Forms
 
-<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 L’éditeur universel révolutionne la création de formulaires pour Adobe Edge Delivery Services en offrant une interface What You See Is What You Get (WYSIWYG) simple, visuelle et intuitive. Conçu pour les créateurs et créatrices de contenu et les auteurs et autrices de formulaires, il facilite les processus de création de formulaires traditionnels et les rend accessibles même aux utilisateurs et utilisatrices n’ayant pas de connaissances techniques.
 
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Intégration
 
-<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 ## Questions fréquentes
 

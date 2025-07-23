@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Publier votre formulaire adaptatif vers Edge Delivery Services
 
-<span class="preview"> Il s’agit d’une fonctionnalité en version préliminaire disponible via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 
 Une fois votre formulaire finalisé et prêt à être utilisé, vous pouvez le publier pour le rendre accessible à vos clientes et clients, à des fins de collecte et d’envoi de données. La publication garantit que le formulaire est disponible sur Edge Delivery, ce qui permet aux utilisateurs et utilisatrices d’interagir avec lui de manière transparente. Ce processus permet de remplir et d’envoyer le formulaire en temps réel, ce qui garantit une capture des données efficace et un traitement rationalisé.
@@ -57,7 +57,6 @@ Modifiez la valeur `submitBaseUrl` du fichier **constant.js** dans le bloc de fo
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **Pour le développement local :**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 Pour le développement local, reportez-vous à la [documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) pour activer CORS à partir de votre **URL hôte de l’interface utilisateur de développement**.
 
 ### Configurer le filtre Référent

@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ L’intégration de formulaires à un modèle de données de formulaire (FDM) da
 
 * Si l’icône **Sources de données** ne s’affiche pas dans l’interface de l’éditeur universel ou si la propriété **Référence de liaison** n’apparaît pas dans le panneau de propriété de droite, activez l’extension **Source de données** dans **Extension Manager**.
 
-  ![Capture d’écran de l’interface Extension Manager de l’éditeur universel présentant les extensions disponibles, y compris l’extension Sources de données, qui peuvent être activées pour l’intégration de formulaires](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Capture d’écran de l’interface Extension Manager de l’éditeur universel présentant les extensions disponibles, y compris l’extension Sources de données, qui peuvent être activées pour l’intégration de formulaires](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
@@ -79,7 +79,7 @@ Lorsque vous créez un formulaire basé sur un schéma, il est automatiquement c
 
    Dès que vous cliquez sur **[!UICONTROL Créer]**, le formulaire s’ouvre dans l’éditeur universel en vue Création.
 
-   ![Copie d’écran de l’éditeur universel présentant un formulaire basé sur un schéma avec des champs de formulaire préremplis et l’explorateur de contenu affichant les éléments de source de données disponibles](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![Copie d’écran de l’éditeur universel présentant un formulaire basé sur un schéma avec des champs de formulaire préremplis et le navigateur de contenu affichant les éléments de source de données disponibles](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    Le formulaire est créé à l’aide des éléments de données de la source de données associée, les champs du formulaire ayant une liaison de données préconfigurée.
 
@@ -131,7 +131,7 @@ Lorsque vous créez un formulaire non basé sur un schéma, aucune source de don
 
    Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif. Lorsque vous cliquez sur **[!UICONTROL Ajouter]**, les éléments sélectionnés de l’onglet **[!UICONTROL Source de données]** sont ajoutés à votre formulaire et une coche apparaît devant les éléments ajoutés.
 
-   ![Capture d’écran montrant l’éditeur universel avec un formulaire non schématique en cours de création en faisant glisser des éléments de données de l’onglet Source de données vers la structure du formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![Capture d’écran montrant l’éditeur universel avec un formulaire non schématique en cours de création par glisser-déposer d’éléments de données, de l’onglet Source de données vers la structure du formulaire](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Vous pouvez ajouter une liaison de données à un champ de formulaire en la sélectionnant dans la propriété **Référence de liaison**. Par exemple, ajoutons une référence de liaison de données à la zone de texte **Id** déjà présente dans le formulaire.
 Pour sélectionner la liaison de données pour le champ de formulaire dans l’arborescence de la source de données, procédez comme suit :
