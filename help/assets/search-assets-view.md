@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et trouver des ressources dans la vue
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 [!DNL Assets view] offre des fonctionnalités de recherche efficaces, qui fonctionnent simplement par défaut. La recherche fonctionne de façon exhaustive, car il s’agit d’une recherche de type plein texte. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu. [!DNL Assets view] fournit une recherche plein texte, ou même des capacités de recherche basées sur les métadonnées telles que les balises intelligentes, le titre, la date de création et le copyright.
 
-Pour rechercher des ressources,
+Pour rechercher des ressources :
 
 * Cliquez dans la zone de recherche située en haut de la page. Par défaut, la recherche s’effectue dans le dossier que vous êtes en train de parcourir. Utilisez l’une des méthodes suivantes :
 
@@ -120,6 +120,40 @@ Pour supprimer des filtres personnalisés :
 1. Sans la boîte de dialogue **[!UICONTROL Gestion des filtres personnalisés]**, désélectionnez les filtres que vous devez supprimer de la liste des filtres existants.
 
 1. Cliquez sur **[!UICONTROL Confirmer]** pour supprimer les filtres de l’interface utilisateur.
+
+## Recherche sémantique {#semantic-search}
+
+La recherche sémantique est une fonctionnalité de recherche avancée qui comprend la signification et l’intention derrière la requête d’un utilisateur ou d’une utilisatrice plutôt que de s’appuyer sur des correspondances exactes de mots-clés. Il utilise l’intelligence artificielle (IA), le traitement du langage naturel (NLP) et le machine learning pour fournir des résultats plus précis et contextuels.
+
+Contrairement à la recherche traditionnelle par mots-clés, qui recherche des termes exacts, la recherche sémantique interprète les relations entre les mots, les concepts et l’intention de l’utilisateur. Cela permet de s’assurer que les utilisateurs et les utilisatrices trouvent ce qu’ils recherchent, même si leur requête est formulée différemment, contient des fautes de frappe ou est dans une autre langue.
+
+Voici quelques-uns de ses principaux avantages :
+
+* **Prise en charge multilingue** : effectuez des recherches dans plusieurs langues sans nécessiter de traduction exacte. Les utilisateurs peuvent trouver du contenu pertinent quel que soit leur langage de requête.
+
+* **Gère les fautes d’orthographe** : corrige ou interprète automatiquement les fautes de frappe et d’orthographe, garantissant ainsi des résultats précis même avec une saisie imparfaite.
+
+* **Comprend les synonymes** : fournit des résultats pour les termes et expressions associés, de sorte que les utilisateurs n’ont pas besoin de deviner le bon mot-clé.
+
+* **Recherche contextuelle** : reconnaît l’intention derrière une requête, pas seulement les mots.
+
+* **Recherche basée sur des invites textuelles** : Experience Manager Assets applique des filtres au contenu et affiche automatiquement les résultats appropriés en fonction d’invites textuelles simples.
+
+>[!IMPORTANT]
+>
+> Spécifiez trois mots ou plus pour que la recherche sémantique affiche les résultats appropriés.
+
+### Exemples de recherche sémantique {#examples-semantic-search}
+
+**Exemple d’invite** : *Femme buvant du café*
+
+La recherche traditionnelle par mot-clé recherche les correspondances exactes des métadonnées de ressource, telles que Femme, Café, etc., et renvoie les ressources qui incluent ces mots-clés.
+
+Cependant, la recherche sémantique recherche des mots similaires tels que `Girl`, `Lady` dans le cas d’options de `Woman` et de café, comme `Cappuccino` et `Latte` dans le cas d’`Coffee`.
+
+De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
+
+![Recherche sémantique dans la vue Assets](assets/semantic-search.png)
 
 ## Rechercher des ressources à l’aide d’[!DNL Adobe Firefly] {#search-firefly}
 
@@ -343,6 +377,6 @@ Si vous devez fournir des commentaires sur la fonction de recherche contextuelle
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
 
 
