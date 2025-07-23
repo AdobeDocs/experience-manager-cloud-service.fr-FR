@@ -702,7 +702,7 @@ ht-degree: 99%
       + [Extensibilité de l’interface utilisateur de la vue Assets d’AEM](/help/assets/aem-assets-view-ui-extensibility.md)
 
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
-   + Content Hub {#content-hub}
+   + Content Hub {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
       + [Nouveautés de Content Hub](/help/assets/whats-new.md)
       + [Déployer Content Hub](/help/assets/deploy-content-hub.md)
@@ -940,7 +940,7 @@ ht-degree: 99%
    + Communication interactive {#interactive-communocation}
       + [Présentation des communications interactives](/help/forms/introduction-to-interactive-communication.md)
       + [Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
-      + [Générer une sortie AFP à l’aide de l’API AEM Forms](/help/forms/document-generation-afp-api.md)
+      + [Générer une sortie AFP à l’aide de l’API AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Questions fréquentes](/help/forms/interactive-communications-faq.md)
    + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Présentation du workflow basé sur l’utilisation de Forms](/help/forms/aem-forms-workflow.md)
@@ -1502,8 +1502,8 @@ ht-degree: 99%
    + [Surveillance des infrastructures et des services dans AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tâches de maintenance](/help/operations/maintenance.md)
    + [Restaurer le contenu](/help/operations/restore.md)
-   + [Restaurer le code précédemment déployé (Alpha)](/help/operations/restore-previous-code-deployed.md)
-   + [Tâches asynchrones](/help/operations/asynchronous-jobs.md)
+   + [Restaurer le code précédemment déployé (Alpha)](/help/operations/restore-previous-code-deployed.md)
+   + [Traitements asynchrones](/help/operations/asynchronous-jobs.md)
    + [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md)
    + [Suppression de l’index générique Lucene](/help/operations/removal-generic-lucene-index.md)
    + [Bonnes pratiques en matière de requête et d’indexation](/help/operations/query-and-indexing-best-practices.md)
