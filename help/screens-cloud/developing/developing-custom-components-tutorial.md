@@ -4,10 +4,10 @@ description: Le tutoriel suivant décrit les étapes à suivre pour créer un co
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 95%
+source-wordcount: '2039'
+ht-degree: 94%
 
 ---
 
@@ -83,7 +83,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
 
 1. **Accédez au projet AEM Screens > We.Retail Run :**
 
-   Dans le menu Démarrer d’AEM > Cliquez sur l’icône Screens. Vérifiez que le projet d’exécution We.Retail est visible.
+   Dans la navigation globale d’AEM, cliquez sur l’icône Screens . Vérifiez que le projet d’exécution We.Retail est visible.
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
@@ -131,7 +131,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=fr#page-modes) utilisé :
+   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilisé :
 
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
    1. **Modifier** : utilisé pour tous les autres modes de création, à savoir la modification, la conception, la génération de modèles automatique, le développement...
@@ -378,7 +378,7 @@ Une troisième catégorie de bibliothèque cliente : `cq.screens.components.edi
 
 ## Création d’une page de conception {#design-page}
 
-AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=fr) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=fr) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
+AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
 
 Une page de conception d’exécution We.Retail est créée ci-dessous pour stocker toutes les configurations spécifiques au projet d’exécution We.Retail.
 
@@ -400,7 +400,7 @@ Une page de conception d’exécution We.Retail est créée ci-dessous pour stoc
 
 Le composant Hello World est destiné à être utilisé sur un canal de séquence. Pour tester le composant, un nouveau canal de séquence est créé.
 
-1. Dans le menu Démarrer d’AEM, accédez à **Screens** > **We.Retail.Run** > et sélectionnez **Canaux**.
+1. Dans la navigation globale d’AEM, accédez à **Screens** > **We.Retail Ru** n > et sélectionnez **Canaux**.
 
 1. Cliquez sur le bouton **Créer**
 
@@ -548,7 +548,7 @@ La vidéo ci-dessous montre le composant terminé et comment l’ajouter à un c
 
 ## Code terminé {#finished-code}
 
-Vous trouverez ci-dessous le code final du tutoriel. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** et **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sont les packages AEM compilés. Le fichier **SRC-screens-weretail-run-0.0.1.zip &#x200B;** est le code source non compilé qui peut être déployé à l’aide de Maven.
+Vous trouverez ci-dessous le code final du tutoriel. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** et **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sont les packages AEM compilés. Le fichier **SRC-screens-weretail-run-0.0.1.zip **est le code source non compilé qui peut être déployé à l’aide de Maven.
 
 [Obtenir le fichier](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
