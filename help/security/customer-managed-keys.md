@@ -6,14 +6,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 69%
 
 ---
 
-# Configuration des clés gérées par le client ou la cliente pour AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# Configuration des clés gérées par le client ou la cliente pour AEM as a Cloud Service {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service stocke actuellement les données client dans Stockage Blob Azure et MongoDB, en utilisant des clés de chiffrement gérées par le fournisseur par défaut pour sécuriser les données. Bien que cette configuration réponde aux besoins de sécurité de nombreuses organisations, les entreprises des secteurs réglementés ou celles nécessitant une sécurité des données renforcée peuvent chercher à mieux contrôler leurs pratiques de chiffrement. Pour les entreprises qui accordent la priorité à la sécurité des données, à la conformité et à la capacité à gérer leurs clés de chiffrement, la solution de clés gérées par le client ou la cliente (CMK, Customer-Managed Keys) offre une amélioration essentielle.
 
@@ -42,8 +42,8 @@ Vous bénéficierez également d’un accompagnement à travers les étapes suiv
 1. Configuration de votre environnement
 1. Obtenir un ID de l’application à partir d’Adobe
 1. Créer un groupe de ressources
-1. Créer un coffre de clés
-1. Accorder à Adobe l’accès au coffre de clés
+1. Création d’un coffre de clés
+1. Octroi de l’accès Adobe au coffre de clés
 1. Créer une clé de chiffrement
 
 Vous devrez partager l’URL du coffre de clés, le nom de la clé de chiffrement et des informations sur le coffre de clés avec Adobe.
@@ -58,9 +58,24 @@ Avant de passer au reste de ce guide, connectez-vous à l’interface en ligne d
 >
 >Bien que ce guide utilise l’interface de ligne de commande Azure, il est possible d’effectuer les mêmes opérations via la console Azure. Si vous préférez utiliser la console Azure, utilisez les commandes ci-dessous comme référence.
 
+
+## Démarrer le processus de configuration du CMK pour AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
+
+Vous devez demander la configuration des Clés gérées par le client (CMK) pour votre environnement AEM as a Cloud Service via l’interface utilisateur. Pour ce faire, accédez à l’interface utilisateur d’AEM Home Security, sous la section **Clés gérées par le client**.
+Vous pouvez ensuite démarrer le processus d’intégration en cliquant sur le bouton **Démarrer l’intégration**.
+
+![Commencer l’intégration d’un site web à l’aide de l’interface utilisateur CMK](./assets/cmk/step1.png)
+
+
 ## Obtenir un ID de l’application à partir d’Adobe {#obtain-an-application-id-from-adobe}
 
-Adobe vous fournira un ID d’application Entra dont vous aurez besoin dans la suite de ce guide. Si vous ne disposez pas déjà d’un ID d’application, contactez Adobe pour en obtenir un.
+Une fois le processus d’intégration démarré, Adobe fournit un identifiant d’application Entra. Cet identifiant d’application est nécessaire pour la suite du guide et sera utilisé pour créer un principal de service qui permet à Adobe d’accéder à votre coffre de clés. Si vous ne disposez pas déjà d’un identifiant d’application, vous devez attendre qu’il soit fourni par Adobe.
+
+![La demande est en cours de traitement, attendez qu’Adobe fournisse l’ID de l’application entrante](./assets/cmk/step2.png)
+
+Une fois la requête terminée, vous pourrez voir l’ID d’application dans l’interface utilisateur du CMK.
+
+![L’ID de l’application entrante est fourni par Adobe](./assets/cmk/step3.png)
 
 ## Créer un groupe de ressources {#create-a-new-resource-group}
 
@@ -79,7 +94,7 @@ Si vous disposez déjà d’un groupe de ressources, n’hésitez pas à l’uti
 
 ## Créer un coffre de clés {#create-a-key-vault}
 
-Vous devez créer un coffre de clés pour y stocker votre clé de chiffrement. La protection contre la purge doit être activée pour le coffre de clés. La protection contre la purge est nécessaire pour chiffrer les données au repos d’autres services Azure. L’accès au réseau public doit également être activé pour que le client Adobe puisse accéder au coffre de clés.
+Vous devez créer un coffre de clés pour y stocker votre clé de chiffrement. La protection contre la purge doit être activée pour le coffre de clés. La protection contre la purge est nécessaire pour chiffrer les données au repos d’autres services Azure. L’accès au réseau public doit être activé pour que les services Adobe puissent accéder au coffre de clés.
 
 >[!IMPORTANT]
 >La création du coffre Key Vault avec l’accès réseau public désactivé impose l’exécution de toutes les opérations liées au coffre Key Vault, telles que la création ou la rotation de clés, à partir d’un environnement disposant d’un accès réseau au coffre KeyVault, par exemple, une machine virtuelle pouvant accéder au coffre KeyVault.
@@ -97,7 +112,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -107,7 +122,7 @@ az keyvault create `
 
 Au cours de cette étape, vous allez permettre à Adobe d’accéder à votre coffre de clés via une application Entra. L’ID de l’application Entra doit déjà avoir été fourni par Adobe.
 
-Tout d’abord, vous devez créer un principal de service associé à l’application Entra et lui affecter les rôles **Lecteur Key Vault** et **Utilisateur de chiffrement Key Vault**. Les rôles sont limités au coffre de clés créé dans ce guide.
+Tout d’abord, vous devez créer un principal de service associé à l’application Entra et lui affecter les rôles **Reader du coffre de clés** et **Utilisateur de chiffrement du coffre de clés**. Les rôles sont limités au coffre de clés créé dans ce guide.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -128,7 +143,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## Créer une clé de chiffrement {#create-an-ecryption-key}
+## Créer une clé de chiffrement {#create-an-encryption-key}
 
 Enfin, vous pouvez créer une clé de chiffrement dans votre coffre de clés. Notez que vous aurez besoin du rôle **Agent de chiffrement Key Vault** pour effectuer cette étape. Si la personne connectée ne dispose pas de ce rôle, contactez votre administrateur ou administratrice système pour que ce rôle vous soit accordé ou demandez à une personne disposant déjà de ce rôle de terminer cette étape pour vous.
 
@@ -138,7 +153,7 @@ Un accès réseau au coffre de clés est requis pour créer la clé de chiffreme
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -147,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## Partager les informations du coffre de clés {#share-the-key-vault-information}
 
-À ce stade, tout est prêt. Il vous suffit de partager certaines informations requises avec Adobe, qui se chargera de la configuration de votre environnement pour vous.
+À ce stade, tout est prêt. Il vous suffit de partager certaines informations requises par le biais de l’interface utilisateur du CMK, ce qui lancera le processus de configuration de l’environnement.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -167,7 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+Fournissez les informations suivantes dans l’interface utilisateur du CMK :
+![Renseignez les informations dans l’interface utilisateur](./assets/cmk/step3a.png)
 
 ## Implications de la révocation de l’accès aux clés {#implications-of-revoking-key-access}
 
@@ -177,27 +193,16 @@ Si vous décidez de révoquer l’accès de la plateforme à vos données, vous 
 
 ## Étapes suivantes {#next-steps}
 
-Contactez Adobe et partagez :
+Une fois que vous avez fourni les informations requises dans l’interface utilisateur du CMK, Adobe lance le processus de configuration de votre environnement AEM as a Cloud Service. Ce processus peut prendre un certain temps et vous serez averti une fois qu’il sera terminé.
 
-* L’URL de votre coffre de clés. Vous l’avez récupérée au cours de cette étape et enregistrée dans la variable `$keyVaultUri`.
-* Le nom de votre clé de chiffrement. Vous avez créé la clé dans une étape précédente et vous l’avez enregistrée dans la variable `$keyName`.
-* Le `$resourceGroup`, `$subscriptionId` et `$tenantId` nécessaires pour configurer la connexion au coffre de clés.
+![Attendez qu’Adobe configure l’environnement.](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
 
-### Private Link Approvals {#private-link-approvals}
+## Terminer la configuration du CMK {#complete-the-cmk-setup}
 
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+Une fois le processus de configuration terminé, vous pourrez voir le statut de votre configuration du CMK dans l’interface utilisateur. Vous pouvez également voir le coffre de clés et la clé de chiffrement.
+![Le processus est maintenant terminé](./assets/cmk/step5.png)
 
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+## Questions et assistance {#questions-and-support}
 
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-## Clés gérées par le client ou la cliente dans Private Beta {#customer-managed-keys-in-private-beta}
-
-L’équipe d’ingénierie d’Adobe travaille actuellement sur une implémentation améliorée de la fonction CMK exploitant Liaison privée Azure. La nouvelle implémentation permettra de partager votre clé via le réseau principal Azure grâce à une connexion de liaison privée directe entre le client d’Adobe et votre coffre de clés.
-
-Cette implémentation améliorée est actuellement disponible dans Private Beta et peut être activée pour quelques clientes et clients qui acceptent de s’abonner au programme Private Beta et de travailler en étroite collaboration avec l’équipe d’ingénierie d’Adobe. Si Private Beta pour la fonction CMK à l’aide de Private Link vous intéresse, contactez Adobe pour obtenir plus d’informations.
+Contactez-nous si vous avez des questions, des demandes ou si vous avez besoin d’aide concernant la configuration des clés gérées par le client pour AEM as a Cloud Service. L’assistance Adobe peut vous aider si vous avez des questions.
