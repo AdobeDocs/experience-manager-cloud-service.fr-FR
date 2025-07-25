@@ -42,7 +42,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 >[!CAUTION]
 >
->Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support) si vous devez réactiver l’agent de réplication.
+>Dans AEM as a Cloud Service, l’agent de réplication qui synchronise les offres et les activités d’AEM vers Adobe Target est désactivé par défaut. Contactez l’[assitance technique d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support) si vous devez réactiver l’agent de réplication.
 
 >[!NOTE]
 >
