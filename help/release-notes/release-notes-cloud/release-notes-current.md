@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 26 juin 2025. La prochaine disponibilité des fonctionnalités (2025.7.0) est prévue pour le vendredi 7 août 2025.
+La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 26 juin 2025. La prochaine disponibilité des fonctionnalités (2025.7.0) est prévue pour le 7 août 2025.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
