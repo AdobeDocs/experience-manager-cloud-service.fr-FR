@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
-ht-degree: 80%
+source-wordcount: '2430'
+ht-degree: 79%
 
 ---
 
@@ -130,10 +130,10 @@ Vous trouverez ci-dessous un aperçu de chaque type de propriété et de leur mo
 | Case à cocher | Permet d’ajouter une valeur booléenne. Stockée comme TRUE ou FALSE quand une valeur est enregistrée. |
 | Date | Permet d’ajouter un composant de date. |
 | Liste déroulante | Permet d’ajouter une liste déroulante. |
-| État | Permet d’ajouter la propriété d’état du référentiel (mappée sur repo:state) |
-| Statut de la ressource | Permet d’ajouter la propriété du statut de la ressource par défaut (mappée sur dam:assetStatus) |
-| Balises | Permettent d’ajouter une balise à partir des valeurs stockées dans la Gestion de la taxonomie (mappée sur xcm:tags). |
-| Mots-clés | Permettent d’ajouter des mots-clés de forme libre (mappés sur dc:subject). |
+| État | Ajoutez la propriété d’état du référentiel (mappée à repo:state) |
+| Statut de la ressource | Ajoutez la propriété Statut de la ressource par défaut (mappée à la gestion des ressources numériques:assetStatus) |
+| Balises | Ajoutez une balise à partir des valeurs stockées dans la gestion de la taxonomie (mappée sur xcm:tags). |
+| Mots-clés | Ajoutez des mots-clés de forme libre (mappés à dc:subject). |
 | Balises intelligentes | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
 
 ### Attribuer un formulaire de métadonnées à un dossier {#assign-metadata-form-folder}
@@ -228,9 +228,6 @@ Pour activer les métadonnées générées par l’IA :
 
 * Vous devez signer un contrat GenAI Rider. Pour plus d’informations, contactez votre représentant Adobe.
 
-  >[!IMPORTANT]
-  >
-  > Le titre d’une ressource généré par l’IA s’affiche dans la carte Ressource uniquement lorsque vous n’avez pas défini le titre de la ressource. Il ne remplace pas le titre de la ressource que vous avez spécifié.
 
 ### Utilisation de métadonnées générées par l’IA {#using-ai-generated-smart-tags}
 
@@ -253,6 +250,8 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 1. [Facultatif] Vous pouvez ajouter des balises supplémentaires ou créer les vôtres si vous pensez qu’il manque des balises pertinentes. Pour ce faire, écrivez vos balises dans le champ **[!UICONTROL Mots-clés générés]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
+Pour plus d’informations sur la désactivation des métadonnées générées par l’IA, voir [Désactiver les métadonnées générées par l’IA](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+
 ## Étapes suivantes {#next-steps}
 
 * [Regardez une vidéo pour gérer les formulaires de métadonnées dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=fr)
@@ -261,7 +260,7 @@ Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
