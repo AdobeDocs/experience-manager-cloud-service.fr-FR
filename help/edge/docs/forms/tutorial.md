@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,8 +111,8 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 1. Maintenant que votre dossier de contenu est configuré, il est temps de le lier à votre projet sur GitHub que vous avez créé plus tôt à l’aide du modèle standard AEM Forms. Pour le connecter :
 
    1. Accédez au référentiel GitHub que vous avez créé plus tôt à l’aide du modèle standard AEM Forms.
-   1. Ouvrez `fstab.yaml` pour édition.
-   1. Remplacez la référence existante par le chemin d’accès au dossier que vous avez partagé avec l’utilisateur ou l’utilisatrice AEM (forms@adobe.com).
+   1. Ajoutez le fichier `fstab.yaml` dans le dossier racine.
+   1. Ajoutez la référence avec le chemin d’accès au dossier que vous avez partagé avec l’utilisateur AEM (forms@adobe.com).
 
       ![Exemple de contenu sur Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
       Pour plus d’informations sur la gestion des fichiers avec Microsoft SharePoint, consultez [Utilisation d’Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Validez le fichier `fsatb.yaml` mis à jour une fois que vous avez mis à jour la référence et que tout semble correct. Si vous rencontrez des problèmes de génération, consultez [Résolution des problèmes de génération dans GitHub](#troubleshooting-github-build-issues).
+   1. Validez le fichier `fsatb.yaml`, une fois que vous avez ajouté la référence et que tout semble correct. Si vous rencontrez des problèmes de génération, consultez [Résolution des problèmes de génération dans GitHub](#troubleshooting-github-build-issues).
 
       ![Validation du fichier fsatab.yaml mis à jour](/help/edge/assets/commit-updated-fstab-yaml.png)
 

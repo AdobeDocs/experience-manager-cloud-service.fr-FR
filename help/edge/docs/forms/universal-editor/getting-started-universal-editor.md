@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms fournit un bloc, appelé bloc de formulaires adaptatifs, qui vous per
 ![Workflow du référentiel Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Ce tutoriel vous guide tout au long de la création, de la prévisualisation et de la publication de votre formulaire avec un projet de site Adobe Experience Manager nouveau ou existant à l’aide de la création WYSIWYG dans l’éditeur universel.
-
 
 ## Prérequis
 
@@ -66,16 +65,16 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
 1. Liez maintenant le référentiel GitHub que vous avez créé à l’aide du modèle standard AEM Forms à votre environnement de création de projet AEM. Pour le connecter :
 
    1. Accédez au référentiel GitHub que vous avez créé plus tôt à l’aide du modèle standard AEM Forms.
-   1. Ouvrez le fichier **fstab.yaml** pour le modifier.
+   1. Ajoutez le fichier **fstab.yaml** dans le dossier racine.
 
       ![ouvrir le fichier fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. Modifiez le fichier **fstab.yaml** pour mettre à jour le point de montage de votre projet. Remplacez l’URL par l’URL de votre instance de création AEM as a Cloud Service.
+   1. Ajoutez le point de montage de votre projet au fichier **fstab.yaml**. Ajoutez l’URL de votre instance de création AEM as a Cloud Service.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![modifier le fichier fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Validez le fichier **fstab.yaml** mis à jour une fois que vous avez mis à jour la référence et que tout semble correct.
+   1. Validez le fichier **fstab.yaml** une fois que vous avez ajouté la référence et que tout semble correct.
 
       ![valider les modifications](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -245,7 +244,7 @@ Pour effectuer l’intégration, procédez comme suit :
 
    >[!NOTE]
    >
-   > Avant d’envoyer les modifications au référentiel de votre projet AEM sur GitHub, assurez-vous que les fichiers `component-definition.json`, `component-models.json` et `component-filters.json` situés au niveau racine du projet AEM sont mis à jour avec les objets liés au formulaire.
+   > Avant de transmettre les modifications au référentiel de votre projet AEM sur GitHub, assurez-vous que les fichiers `component-definition.json`, `component-models.json` et `component-filters.json` situés au niveau racine du projet AEM sont mis à jour avec les objets liés au formulaire.
 
 1. Validez et envoyez ces modifications vers votre référentiel de projet AEM sur GitHub.
 
