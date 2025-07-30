@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
@@ -53,3 +53,22 @@ Consultez également la section [Réseau CDN géré par Adobe](https://www.aem.l
    | Autre fournisseur de réseau CDN | Sélectionnez cette option si vous utilisez votre propre fournisseur de réseau CDN et non le réseau CDN géré par Adobe disponible.<br>Sous **Détails de configuration**, dans la liste déroulante **Domaine**, sélectionnez le nom de domaine à utiliser.<br>Aucun domaine vérifié disponible dans la liste déroulante ? Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Cliquez sur **Enregistrer**.
+
+   Adobe vous recommande de tester le mappage de domaine.
+
+## Test du mappage de domaine {#test-domain-mapping}
+
+Vous pouvez vérifier qu’un nouveau mappage de domaine est actif sur le réseau CDN géré par Adobe sans attendre la propagation du DNS public.
+
+Exécutez une commande **curl** qui remplace la résolution DNS et pointe directement vers la périphérie du réseau CDN :
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Remplacez **`www.example.com`** par votre domaine.
+* Remplacez **151.101.3.10** par l’adresse IP Edge affichée dans Cloud Manager pour ce mappage.
+
+L’indicateur `--resolve` force la requête à l’adresse IP spécifiée et renvoie un succès uniquement après l’installation correcte du certificat et du routage pour votre domaine.
+

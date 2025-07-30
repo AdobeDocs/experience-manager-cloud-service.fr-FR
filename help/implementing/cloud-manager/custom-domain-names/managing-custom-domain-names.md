@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 22%
+source-wordcount: '833'
+ht-degree: 21%
 
 ---
 
@@ -105,6 +105,12 @@ Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsabl
 
 
 ### Suppression d’un nom de domaine personnalisé d’un environnement spécifique {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>Supprimez les enregistrements DNS du domaine auprès de votre fournisseur DNS *avant* de supprimer le domaine dans Cloud Manager. Les entrées DNS abandonnées (non exploitées) peuvent être piratées et poser un risque pour la sécurité.
+
+**Pour supprimer un nom de domaine personnalisé d’un environnement spécifique, procédez comme suit**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
