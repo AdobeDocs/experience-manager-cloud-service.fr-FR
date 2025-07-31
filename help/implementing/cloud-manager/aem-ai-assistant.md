@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
+source-git-commit: 71041c9e4d4afe964f549f193daf8ec72bd97a41
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1322'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ Pendant la version bêta privée, l’assistant AEM AI prend en charge AEM as a 
 * Formulaires
 
 Il est directement incorporé à AEM et accessible à partir de l’interface utilisateur d’AEM Experience Hub, de Cloud Manager et de l’instance de création.
+
+La vidéo de 3 minutes et 39 secondes qui suit présente une présentation détaillée de l’assistant AEM AI.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 >[!IMPORTANT]
 >Assurez-vous d’avoir examiné et envoyé le contrat d’utilisation afin qu’Adobe puisse activer la fonctionnalité d’assistant d’IA pour que vous puissiez tester et participer au programme bêta privé.
@@ -55,7 +59,6 @@ Cet article décrit les fonctionnalités centrées sur la confiance que vous pou
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-
 ## Découvrez l’assistant d’IA d’AEM pour la connaissance des produits et la création automatisée de tickets d’assistance {#ai-prod-insights}
 
 La connaissance des produits englobe les concepts et les sujets dérivés de la documentation d’Adobe Experience League. Ces questions peuvent être classées dans les sous-groupes suivants :
@@ -66,7 +69,7 @@ La connaissance des produits englobe les concepts et les sujets dérivés de la 
 | Apprentissage par points | <ul><li>Qu’est-ce que l’éditeur universel ?</li><li>Comment créer un programme dans Cloud Manager ?</li></ul> |
 | Ouvrir la découverte | <ul><li>Comment utiliser l’éditeur universel ?</li><li>Existe-t-il un moyen de copier du contenu d’un environnement à un autre ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi ne puis-je pas accéder à l’éditeur universel ?</li><li>Pourquoi mon pipeline échoue-t-il ?</li></ul> |
-| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs &#x200B;**<br>**exemples** |
+| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs **<br>**exemples** |
 | Création automatisée de tickets d’assistance capturant l’historique et le contexte de la conversation de l’assistant AI | <ul><li>Créez un ticket d’assistance pour moi.</li></ul> |
 | Récupération du statut du ticket d’assistance | <ul><li>Montrez-moi tous les tickets d&#39;assistance que j&#39;ai ouverts.</li><li>Me montrer le statut du ticket « E----------- »</li></ul> |
 
@@ -106,7 +109,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -164,7 +167,7 @@ Voici les réponses à certaines questions courantes sur l’assistant d’IA :
 
 ## Assistant AEM Forms AI (Forms Experience Builder) {#ai-forms-builder}
 
-Outre l’assistant IA d’AEM général pour la connaissance des produits, AEM propose un assistant IA d’AEM Forms spécialisé **[&#128279;](/help/edge/docs/forms/forms-ai-assistant.md)** (Forms Experience Builder). Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
+Outre l’assistant IA d’AEM général pour la connaissance des produits, AEM propose un assistant IA d’AEM Forms spécialisé **[](/help/edge/docs/forms/forms-ai-assistant.md)** (Forms Experience Builder). Cet assistant amélioré peut vous aider activement à créer et à configurer des formulaires à l’aide d’invites en langage naturel et à répondre aux questions spécifiques aux formulaires.
 
 ### Fonctionnalités essentielles
 
