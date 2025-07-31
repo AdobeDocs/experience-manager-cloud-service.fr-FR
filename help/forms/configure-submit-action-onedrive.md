@@ -1,39 +1,39 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
-keywords: Intégration d’AEM Forms OneDrive, connexion à Microsoft OneDrive, configuration de OneDrive avec AEM forms
-feature: Adaptive Forms, Core Components
+Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+keywords: Intégration d’AEM Forms OneDrive, Connexion à Microsoft OneDrive, Configuration OneDrive avec AEM Forms
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: "Comment configurer une action Envoyer pour un formulaire adaptatif ?"
+title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 67%
+source-wordcount: '865'
+ht-degree: 51%
 
 ---
 
 # Envoyer un formulaire adaptatif à Microsoft® OneDrive
 
-L’action d’envoi **[!UICONTROL Soumettre à OneDrive]** connecte un formulaire adaptatif à un stockage Microsoft® OneDrive. Vous pouvez envoyer les données de formulaire, les fichiers, les pièces jointes ou le document d’enregistrement au Microsoft® OneDrive Storage connecté.
+L’action d’envoi **[!UICONTROL Soumettre à OneDrive]** connecte un formulaire adaptatif à un stockage Microsoft® OneDrive. Vous pouvez envoyer les données de formulaire, les fichiers, les pièces jointes ou le document d’enregistrement au stockage OneDrive Microsoft® connecté.
 
-AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaire. Vous pouvez en savoir plus sur ces options dans l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md) .
+AEM as a Cloud Service propose différentes actions d’envoi prêtes à l’emploi pour gérer les envois de formulaires. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/aem-forms-submit-action.md).
 
 ## Avantages
 
 Voici quelques-uns des avantages de l’intégration transparente d’AEM Forms et de Microsoft® OneDrive :
 
-* L’accessibilité entre appareils de OneDrive garantit que les données de formulaire stockées sont facilement disponibles sur différentes plateformes. Les utilisateurs peuvent accéder aux données, pièces jointes et documents envoyés depuis des ordinateurs de bureau, des ordinateurs portables, des tablettes et des appareils mobiles, ce qui optimise l’accessibilité et la flexibilité.
-* L’intégration de OneDrive à AEM forms offre une solution fiable et évolutive pour un stockage de données efficace. Tous les envois de formulaire adaptatif, tels que les fichiers, les pièces jointes et les documents d’enregistrement, peuvent être facilement enregistrés dans OneDrive, ce qui garantit des données organisées et accessibles.
+* L’accessibilité de OneDrive sur plusieurs appareils garantit que les données de formulaire stockées sont facilement disponibles sur différentes plateformes. Les utilisateurs peuvent accéder aux données, aux pièces jointes et aux documents envoyés à partir d’ordinateurs de bureau, d’ordinateurs portables, de tablettes et d’appareils mobiles, ce qui améliore l’accessibilité et la flexibilité.
+* L’intégration de OneDrive à AEM forms offre une solution fiable et évolutive pour un stockage de données efficace. Tous les envois de formulaires adaptatifs, tels que les fichiers, les pièces jointes et le document d’enregistrement, peuvent être enregistrés facilement dans OneDrive, ce qui garantit l’organisation et l’accessibilité des données.
 
-## Connexion de OneDrive à un formulaire adaptatif
+## Connecter OneDrive à un formulaire adaptatif
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
-Pour configurer OneDrive pour l’envoi par AEM Forms, procédez comme suit :
+Configurer OneDrive pour l’envoi AEM Forms, procédez comme suit :
 
 1. [Créer une configuration OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration) : connecte AEM Forms à votre stockage Microsoft® OneDrive.
-2. [Utilisez l’action d’envoi Envoyer à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af) : cela connecte votre formulaire adaptatif à Microsoft® OneDrive configuré.
+2. [Utiliser l’action d’envoi Soumettre à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af) : connecte votre formulaire adaptatif au stockage Microsoft® OneDrive configuré.
 
 ### Créer une configuration OneDrive {#create-onedrice-configuration}
 
@@ -69,21 +69,61 @@ Vous pouvez désormais utiliser cette configuration de stockage OneDrive pour l�
 
 ### Utiliser la configuration OneDrive dans un formulaire adaptatif {#use-onedrive-configuartion-in-af}
 
-Vous pouvez utiliser la configuration de stockage OneDrive créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans un dossier OneDrive. Suivez les étapes ci-après pour utiliser la configuration de stockage OneDrive dans un formulaire adaptatif :
-1. Créez un [formulaire adaptatif](/help/forms/creating-adaptive-form.md).
+Vous pouvez utiliser la configuration de stockage OneDrive créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans un dossier OneDrive.
 
-   >[!NOTE]
-   >
-   > * Sélectionnez le même [!UICONTROL conteneur de configuration] pour le formulaire adaptatif dans lequel vous avez créé votre espace de stockage OneDrive.
-   > * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
+>[!NOTE]
+>
+> * Sélectionnez le même [!UICONTROL conteneur de configuration] pour le formulaire adaptatif dans lequel vous avez créé votre espace de stockage OneDrive.
+> * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
 
-1. Sélectionnez l’**action Envoyer** pour **[!UICONTROL Envoyer à OneDrive]**.
-   ![GIF OneDrive](/help/forms/assets/onedrive-video.gif)
-1. Sélectionnez la **[!UICONTROL configuration de stockage]** dans laquelle enregistrer vos données.
+>[!BEGINTABS]
+
+>[!TAB Composant de base]
+
+Pour utiliser la configuration de stockage OneDrive dans un formulaire adaptatif basé sur un composant de base comme suit :
+
+1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer à OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
+Vous pouvez également enregistrer un document d’enregistrement dans OneDrive.
+1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
 Lorsque vous soumettez le formulaire, les données sont enregistrées dans le stockage Microsoft® OneDrive que vous avez spécifié.
 La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!TAB Composant principal]
+
+Pour utiliser la configuration de stockage OneDrive dans un formulaire adaptatif basé sur le composant principal comme suit :
+
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer à OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+Vous pouvez également enregistrer un document d’enregistrement dans OneDrive.
+1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
+
+>[!TAB Éditeur universel]
+
+Pour utiliser la configuration de stockage OneDrive dans un formulaire adaptatif créé dans l’éditeur universel, procédez comme suit :
+
+1. Ouvrez le formulaire adaptatif pour le modifier.
+1. Cliquez sur l’extension **Modifier les propriétés du formulaire** dans l’éditeur.
+La boîte de dialogue **Propriétés du formulaire** s’affiche.
+
+   >[!NOTE]
+   >
+   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
+   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à OneDrive]**.
+   ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
+Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**
+
+>[!ENDTABS]
 
 ## Articles connexes
 

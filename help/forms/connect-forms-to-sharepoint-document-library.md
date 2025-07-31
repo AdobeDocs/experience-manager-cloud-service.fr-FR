@@ -2,13 +2,13 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Comment connecter la bibliothèque de documents SharePoint à un formulaire adaptatif, l’envoyer à SharePoint, créer une configuration de bibliothèque de documents SharePoint, utiliser l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif, utiliser la bibliothèque de documents SharePoint du modèle de données AEM Forms, la bibliothèque de documents SharePoint du modèle de données Forms, intégrer le modèle de données Forms à la bibliothèque de documents SharePoint
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 46%
+source-wordcount: '964'
+ht-degree: 40%
 
 ---
 
@@ -21,7 +21,7 @@ Pour utiliser l’action d’envoi **[!UICONTROL Envoyer à la bibliothèque de 
 1. [Création d’une configuration de bibliothèque de documents SharePoint](#1-create-a-sharepoint-document-library-configuration) : connecte AEM Forms à votre stockage Microsoft® SharePoint.
 2. [Utiliser l’action d’envoi Soumettre à SharePoint dans un formulaire adaptatif](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form) : connecte votre formulaire adaptatif au stockage Microsoft® SharePoint configuré.
 
-## 1. Création d’une configuration de bibliothèque de documents SharePoint
+## &#x200B;1. Création d’une configuration de bibliothèque de documents SharePoint
 
 Pour connecter AEM Forms au stockage de votre bibliothèque de documents Microsoft® SharePoint :
 
@@ -59,30 +59,73 @@ Pour connecter AEM Forms au stockage de votre bibliothèque de documents Microso
 
 Vous pouvez désormais utiliser cette configuration de sites SharePoint pour l’action d’envoi dans un formulaire adaptatif.
 
-### 2. Utilisation de la configuration de la bibliothèque de documents SharePoint dans un formulaire adaptatif
+### &#x200B;2. Utilisation de la configuration de la bibliothèque de documents SharePoint dans un formulaire adaptatif
 
-Vous pouvez utiliser la configuration de bibliothèque de documents SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans un dossier SharePoint. Pour utiliser une configuration de stockage de bibliothèque de documents SharePoint dans un formulaire adaptatif, procédez comme suit :
+Vous pouvez utiliser la configuration de bibliothèque de documents SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans un dossier SharePoint.
 
-1. Créez un [formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md).
+>[!NOTE]
+>
+> * Sélectionnez le même [!UICONTROL Conteneur de configurations] pour le formulaire adaptatif dans lequel vous avez créé le stockage de votre bibliothèque de documents SharePoint.
+> * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
 
-   >[!NOTE]
-   >
-   > * Sélectionnez le même [!UICONTROL Conteneur de configurations] pour le formulaire adaptatif dans lequel vous avez créé le stockage de votre bibliothèque de documents SharePoint.
-   > * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
+>[!BEGINTABS]
 
-1. Sélectionnez l’**action d’envoi** **[!UICONTROL Soumettre à SharePoint]**.
+>[!TAB Composant de base]
+
+Pour utiliser une configuration de stockage de bibliothèque de documents SharePoint dans un formulaire adaptatif basé sur un composant de base comme suit :
+
+1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
+1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez **Action d’envoi** comme **[!UICONTROL Envoyer à SharePoint]**.
+   ![GIF SharePoint](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
+
+>[!NOTE]
+>
+> * Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié. La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Les pièces jointes sont également stockées dans le répertoire `/folder_name/form_name/year/month/date/submission_id/data`. Cependant, si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine.
+
+>[!TAB Composant principal]
+
+Pour utiliser une configuration de stockage de bibliothèque de documents SharePoint dans un formulaire adaptatif basé sur un composant principal comme suit :
+
+1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
+1. Dans la liste déroulante **[!UICONTROL Action d’envoi]**, sélectionnez **Action d’envoi** comme **[!UICONTROL Envoyer à SharePoint]**.
    ![GIF SharePoint](/help/forms/assets/sharedrive-video.gif)
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
 >[!NOTE]
 >
-> Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié. La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié. La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Les pièces jointes sont également stockées dans le répertoire `/folder_name/form_name/year/month/date/submission_id/data`. Cependant, si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine.
+
+>[!TAB Éditeur universel]
+
+Pour utiliser une configuration de stockage de bibliothèque de documents SharePoint dans un formulaire adaptatif créé dans l’éditeur universel, procédez comme suit :
+
+1. Ouvrez le formulaire adaptatif pour le modifier.
+1. Cliquez sur l’extension **Modifier les propriétés du formulaire** dans l’éditeur.
+La boîte de dialogue **Propriétés du formulaire** s’affiche.
+
+   >[!NOTE]
+   >
+   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
+   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+
+1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à SharePoint]** action d’envoi.
+   ![GIF SharePoint](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les paramètres d’envoi.
 
 >[!NOTE]
 >
-> Les pièces jointes sont également stockées dans le répertoire `/folder_name/form_name/year/month/date/submission_id/data`. Cependant, si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine.
-> ![image ](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+> * Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de bibliothèque de documents Microsoft® SharePoint spécifié. La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Les pièces jointes sont également stockées dans le répertoire `/folder_name/form_name/year/month/date/submission_id/data`. Cependant, si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine.
+
+>[!ENDTABS]
 
 ## Articles connexes
 

@@ -1,21 +1,21 @@
 ---
 Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
-keywords: comment envoyer un courrier électronique pour un formulaire adaptatif, une action Envoyer par messagerie, un courrier électronique de formulaire adaptatif, un courrier électronique d’envoi de formulaire, un guide d’envoi de courrier électronique
-feature: Adaptive Forms, Core Components
+keywords: Guide d’envoi et d’envoi de formulaire adaptatif, Comment envoyer un e-mail pour un formulaire adaptatif, Action d’envoi d’e-mail, E-mail de formulaire adaptatif, Envoyer un e-mail
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: "Comment configurer une action Envoyer pour un formulaire adaptatif ?"
+title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 16%
+source-wordcount: '827'
+ht-degree: 18%
 
 ---
 
 # Configurer l’action Envoyer un e-mail pour un formulaire adaptatif
 
-L’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** vous permet d’envoyer un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Cette action Envoyer permet de créer un email pouvant inclure des données de formulaire dans un format prédéfini. Prenons l’exemple du modèle suivant où le nom du client, l’adresse de livraison, le nom de l’état et le code postal sont récupérés dans les données de formulaire envoyées :
+L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’envoyer un e-mail à un ou à plusieurs destinataires lors de l’envoi réussi du formulaire. Cette action Envoyer vous permet de créer un e-mail qui peut inclure des données de formulaire dans un format prédéfini. Prenons l’exemple du modèle suivant, dans lequel le nom du client, l’adresse d’expédition, le nom de l’état et le code postal sont récupérés à partir des données de formulaire envoyées :
 
 
     &quot;
@@ -29,44 +29,92 @@ L’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** vous per
     
     Regards,
     WKND
-    
     &quot;
-
 
 ## Avantages
 
-La configuration d’un formulaire adaptatif avec l’action Envoyer un courrier électronique présente les avantages suivants :
+Voici quelques avantages de la configuration d’un formulaire adaptatif avec une action d’envoi Envoyer un e-mail :
 
-* Il permet une communication rapide, car les données de formulaire sont directement envoyées aux destinataires désignés de l’e-mail.
-* Cela permet de rationaliser le processus en intégrant directement les envois de formulaire dans les notifications électroniques.
-* Il aide les entreprises à personnaliser le contenu de l’email, ce qui le rend adapté à des besoins de communication spécifiques.
+* Il permet une communication rapide, car les données de formulaire sont directement envoyées aux destinataires d’e-mail désignés.
+* Elle permet de rationaliser le workflow en intégrant directement les envois de formulaire dans les notifications par e-mail.
+* Elle permet aux entreprises de personnaliser le contenu des e-mails, afin qu’il réponde à des besoins de communication spécifiques.
 
-## Configuration de l’action Envoyer un courrier électronique {#steps-to-configure-send-email-submit-action}
+>[!BEGINTABS]
 
-Pour configurer l’action Envoyer :
+>[!TAB Composant de base]
+
+Pour configurer une action Envoyer un e-mail pour le composant de base :
+
+1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer un e-mail]**.
+
+   ![Configuration de l’action Envoyer un e-mail](/help/forms/assets/send-email-fc.png)
+
+1. Indiquez l’ID d’e-mail de l’expéditeur dans la zone de texte **[!UICONTROL De]**.
+1. Ajoutez l’ID d’e-mail du destinataire dans la zone de texte **[!UICONTROL À]**. Vous pouvez ajouter plusieurs destinataires en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. [Facultatif] Ajoutez le destinataire pour Cc et Cci en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. Spécifiez une ligne d’objet dans la zone de texte **[!UICONTROL Objet]**.
+1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
+   * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
+   * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
+1. Cliquez sur **[!UICONTROL Terminé]**.
+
+>[!TAB Composant principal]
+
+Pour configurer l’action d’envoi Envoyer un e-mail pour le composant principal :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
-1. Dans la liste déroulante **[!UICONTROL Submit Action]**, sélectionnez **[!UICONTROL Send email]**.
+1. Dans la liste déroulante **[!UICONTROL Action Envoyer]**, sélectionnez **[!UICONTROL Envoyer un e-mail]**.
 
-   ![ Configuration d’action de Send Email](/help/forms/assets/send-email-action-configuration.gif)
-1. Indiquez l’ID d’adresse électronique de l’expéditeur dans la zone de texte **[!UICONTROL De]** .
-1. Ajoutez l’ID d’email du destinataire dans la zone de texte **[!UICONTROL À]** . Vous pouvez ajouter plusieurs destinataires en cliquant sur le bouton **[!UICONTROL Ajouter]** .
-1. [Facultatif] Ajoutez le destinataire pour CC et Cci en cliquant sur le bouton **[!UICONTROL Ajouter]** .
-1. Spécifiez un objet dans la zone de texte **[!UICONTROL Objet]**.
-1. Ajoutez un modèle de courrier électronique pour configurer l’action d’envoi de courrier électronique.
-   * Vous pouvez spécifier le chemin d’accès au modèle de courrier électronique externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]** .
-   * Vous pouvez également ajouter un modèle de courrier électronique personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle de courrier électronique]** .
-1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** permet d’inclure des pièces jointes et un [document d’enregistrement (DoR)](generate-document-of-record-core-components.md) avec le courrier électronique.
+   ![Configuration de l’action Envoyer un e-mail](/help/forms/assets/send-email-action-configuration.gif)
+1. Indiquez l’ID d’e-mail de l’expéditeur dans la zone de texte **[!UICONTROL De]**.
+1. Ajoutez l’ID d’e-mail du destinataire dans la zone de texte **[!UICONTROL À]**. Vous pouvez ajouter plusieurs destinataires en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. [Facultatif] Ajoutez le destinataire pour Cc et Cci en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. Spécifiez une ligne d’objet dans la zone de texte **[!UICONTROL Objet]**.
+1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
+   * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
+   * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
 1. Cliquez sur **[!UICONTROL Terminé]**.
+
+>[!TAB Éditeur universel]
+
+Pour configurer l’action d’envoi Envoyer un e-mail dans l’éditeur universel :
+
+1. Ouvrez le formulaire adaptatif pour le modifier.
+1. Cliquez sur l’extension **Modifier les propriétés du formulaire** dans l’éditeur.
+La boîte de dialogue **Propriétés du formulaire** s’affiche.
+
+   >[!NOTE]
+   >
+   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
+   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+
+
+1. Cliquez sur l’onglet **Envoi** et sélectionnez l’action d’envoi **[!UICONTROL Envoyer un e-mail]**.
+
+   ![Envoyer un e-mail à l’éditeur universel](/help/forms/assets/send-email-ue.png)
+
+1. Indiquez l’ID d’e-mail de l’expéditeur dans la zone de texte **[!UICONTROL De]**.
+1. Ajoutez l’ID d’e-mail du destinataire dans la zone de texte **[!UICONTROL À]**. Vous pouvez ajouter plusieurs destinataires en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. [Facultatif] Ajoutez le destinataire pour Cc et Cci en cliquant sur le bouton **[!UICONTROL Ajouter]**.
+1. Spécifiez une ligne d’objet dans la zone de texte **[!UICONTROL Objet]**.
+1. Ajoutez un modèle d’e-mail pour configurer l’action d’envoi d’e-mail.
+   * Vous pouvez spécifier le chemin d’accès au modèle d’e-mail externe enregistré dans vos ressources AEM à l’aide de l’option **[!UICONTROL Chemin d’accès au modèle externe]**.
+   * Vous pouvez également ajouter un modèle d’e-mail personnalisé pour l’envoi du formulaire dans la zone de texte **[!UICONTROL Modèle d’e-mail]**.
+1. [Facultatif] L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’inclure des pièces jointes et un [document d’enregistrement)](generate-document-of-record-core-components.md) dans l’e-mail.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+
+>[!ENDTABS]
 
 ## Bonnes pratiques {#best-practices}
 
-* Il est recommandé de garder le contenu de l&#39;email clair et concis. Les utilisateurs doivent comprendre l’objectif de l’email et les actions qu’ils doivent entreprendre.
-* Il est recommandé que tous les champs de formulaire aient des noms d’éléments uniques, même s’ils sont placés sur différents panneaux dans un formulaire adaptatif.
-* Lors de l’utilisation d’AEM as a Cloud Service, le courrier électronique sortant nécessite un chiffrement. Par défaut, la fonctionnalité des emails sortants est désactivée. Pour l&#39;activer, envoyez un ticket d&#39;assistance à [request access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email).
-
+* Il est recommandé de garder le contenu de l’e-mail clair et concis. Les utilisateurs doivent comprendre l’objectif de l’e-mail et toute action qu’ils doivent entreprendre.
+* Il est recommandé que tous les champs de formulaire aient des noms d’élément uniques, même s’ils sont placés sur différents panneaux au sein d’un formulaire adaptatif.
+* Lorsque vous utilisez AEM as a Cloud Service, les e-mails sortants doivent être chiffrés. Par défaut, la fonctionnalité d’e-mail sortant est désactivée. Pour les désactiver, envoyez un ticket d’assistance pour [demander l’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email).
 
 ## Articles connexes
 

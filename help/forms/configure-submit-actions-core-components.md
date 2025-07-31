@@ -5,81 +5,81 @@ keywords: comment sélectionner une action envoyer pour un formulaire adaptatif,
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '347'
 ht-degree: 37%
 
 ---
 
 
-# Action Envoyer pour formulaire adaptatif {#configuring-the-submit-action}
+# Actions Envoyer prises en charge dans le Forms adaptatif en fonction des composants principaux
 
 <span class="preview"> Adobe recommande d’utiliser les composants principaux pour [ajouter des formulaires adaptatifs à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer des formulaires adaptatifs autonomes](/help/forms/creating-adaptive-form-core-components.md). </span>
 
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=fr) |
-| AEM as a Cloud Service (composants de base) | [Cliquez ici](/help/forms/configuring-submit-actions.md) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service (composants de base) | [Cliquer ici](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (composants principaux) | Cet article |
+| AEM as a Cloud Service (Edge Delivery Services) | [Cliquer ici](/help/forms/configure-submit-action-eds-forms.md) |
 
-Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Il est déclenché lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Forms as a Cloud Service, pour le Forms adaptatif basé sur les composants principaux, propose un tableau d’actions Envoyer préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Il est déclenché lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Le composant Forms adaptatif basé sur les composants principaux prend en charge diverses [actions d’envoi prêtes à l’emploi](#submit-actions-supported-by-adaptive-forms-based-on-core-components).
 
-* Envoyez facilement des données de formulaire par e-mail.
-* Lancez les flux Microsoft® Power Automate ou les workflows AEM lors de la transmission des données.
-* Transmettez directement les données de formulaire à Microsoft® SharePoint Server, Microsoft® Azure Blob Storage ou Microsoft® OneDrive.
-* Envoyez facilement les données à une source de données configurée à l’aide du modèle de données de formulaire (FDM).
-* Envoyez facilement les données à un point d’entrée REST.
+<!--You can also configure different actions for an Adaptive Form submissions.
 
-Vous pouvez [étendre les actions Envoyer par défaut](custom-submit-action-form.md). Vous pouvez également personnaliser les actions Envoyer pour les besoins spécifiques à l’entreprise.
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-Pour définir une action Envoyer pour un formulaire adaptatif, utilisez la boîte de dialogue Configurer d’un composant **Conteneur de formulaires adaptatifs**. La boîte de dialogue de configuration d’un composant **Conteneur de formulaires adaptatifs** comprend les éléments suivants :
+## Actions Envoyer pour Forms en fonction des composants principaux
 
-* Onglet De base
-* Onglet Modèle de données de formulaire
-* Onglet Envoi
-
-Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de la boîte de dialogue de configuration. Pour en savoir plus sur la boîte de dialogue de configuration d’un composant Conteneur de formulaires, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=fr).
-
-## Sélection et configuration d’une action Envoyer pour un formulaire adaptatif {#select-and-configure-submit-action}
-
-Pour sélectionner et configurer une action Envoyer pour votre formulaire :
-
-1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
-
-1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
-
-   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une action d’envoi.](/help/forms/assets/adaptive-forms-submit-message.png)
-
-1. Sélectionnez et configurez une **[!UICONTROL action Envoyer]** en fonction de vos besoins.
-
-Vous pouvez également configurer différentes actions pour les envois de formulaires adaptatifs.
-* **URL/chemin de redirection** - Cette option permet à l’utilisateur ou à l’utilisatrice de configurer une page pour chaque formulaire, vers laquelle les utilisateurs et utilisatrices du formulaire sont redirigés après l’envoi d’un formulaire adaptatif.
-* **Afficher le message** - Cette option permet aux utilisateurs et utilisatrices d’ajouter un message qui s’affiche lorsque le formulaire adaptatif est envoyé avec succès. Le texte prédéfini est inclus dans la boîte de dialogue et peut être modifié par l’utilisateur ou l’utilisatrice.
-
-Pour plus d’informations sur les actions Envoyer suivantes, voir :
+Les actions Envoyer suivantes sont prises en charge par le Forms adaptatif en fonction des composants principaux :
 
 * [Envoyer un e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Appeler un flux Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Envoyer à SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Appeler une Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Envoyer à l’aide du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)
+* [Envoyer à l’aide du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)
 * [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
 * [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Appeler un workflow AEM](/help/forms/configure-submit-action-workflow.md)
 * [Envoyer à Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Envoyer à Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 
-Vous pouvez également envoyer un formulaire adaptatif à d’autres configurations de stockage :
+Vous pouvez également envoyer un formulaire adaptatif basé sur les composants principaux à d’autres configurations de stockage :
 
 * [Connecter un formulaire adaptatif à l’application Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connecter un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [Connecter un formulaire adaptatif à Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-Vous pouvez [personnaliser les actions Envoyer par défaut](custom-submit-action-form.md). De plus, vous pouvez personnaliser les actions Envoyer pour vous aligner sur les exigences spécifiques de l’entreprise.
+De plus, vous pouvez [personnaliser les actions Envoyer par défaut](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) pour vous aligner sur les exigences spécifiques de l’entreprise.
 
+
+### Configuration d’une action Envoyer pour un formulaire adaptatif en fonction des composants principaux
+
+<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+
+* Basic Tab
+* Form Data Model Tab
+* Submission Tab
+  ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
+  -->
+
+Vous pouvez définir les propriétés du conteneur de formulaires à l’aide de l’onglet Envoi de la boîte de dialogue de configuration. Pour en savoir plus sur la boîte de dialogue de configuration d’un composant Conteneur de formulaires, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
+
+![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une action d’envoi.](/help/forms/assets/adaptive-forms-submit-message.png)
+
+<!--To select and configure a Submit Action for your form:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+
+1. Click the  **[!UICONTROL Submission]** tab. 
+
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. -->
 
 <!--
 ## Send Email {#send-email}
@@ -87,7 +87,7 @@ Vous pouvez [personnaliser les actions Envoyer par défaut](custom-submit-action
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 
@@ -211,18 +211,14 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
--->
 
-## Gérer les erreurs sur l’action d’envoi {#error-handling-on-submit-action}
+## Error handling on Submit Action {#error-handling-on-submit-action}
 
-Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
+As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-Lorsque vous préremplissez un modèle de données de formulaire (FDM) ou un formulaire adaptatif basé sur un schéma avec des données XML ou JSON conformes à un schéma, ce qui signifie que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire (FDM). Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
-
-
-<!--
+<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -233,5 +229,5 @@ Lorsque vous préremplissez un modèle de données de formulaire (FDM) ou un for
 
 ## Voir également {#see-also}
 
-{{see-also}}
+{{af-submit-action}}
 
