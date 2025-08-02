@@ -31,7 +31,7 @@ Il est directement incorporé à AEM et accessible à partir de l’interface ut
 
 La vidéo de 3 minutes et 39 secondes qui suit présente une présentation détaillée de l’assistant AEM AI.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470357?learn=on&captions=fre_fr)
 
 >[!IMPORTANT]
 >Assurez-vous d’avoir examiné et envoyé le contrat d’utilisation afin qu’Adobe puisse activer la fonctionnalité d’assistant d’IA pour que vous puissiez tester et participer au programme bêta privé.
