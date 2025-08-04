@@ -71,12 +71,12 @@ Les deux modèles peuvent coexister au sein du même programme Cloud Manager, ce
 ## Prérequis {#prerequisites}
 
 1. Intégration de votre site dans Cloud Manager
-- Requis pour les deux modèles de déploiement. Suivez la section Intégration d’un site AEM.
+&#x200B;- Requis pour les deux modèles de déploiement. Suivez la section Intégration d’un site AEM.
 
 2. Apportez votre propre Git (BYOG) (facultatif)
-- Si vous stockez le code du site en dehors d’Adobe Git, effectuez l’intégration BYOG.
+&#x200B;- Si vous stockez le code du site en dehors d’Adobe Git, effectuez l’intégration BYOG.
 
 3. Licence Edge Delivery
-- Vérifiez que votre programme dispose d’une licence pour Edge Delivery Services.
+&#x200B;- Vérifiez que votre programme dispose d’une licence pour Edge Delivery Services.
 
 
