@@ -2,9 +2,9 @@
 title: Vue d’ensemble de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '683'
+source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
+workflow-type: tm+mt
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -36,10 +36,6 @@ Les propriétés les plus courantes de Content Hub, telles que les filtres de re
 **Permettre aux personnes ne faisant pas partie de l’équipe de création de modifier et de remixer du contenu tout en conservant la cohérence de la marque**
 
 Content Hub vous permet de créer du contenu avec Adobe Express (si vous disposez de droits d’Adobe Express). Vous pouvez modifier du contenu existant à l’aide d’outils simples d’utilisation, produire des variations de marque avec des modèles et des éléments de marque et créer du contenu avec les dernières fonctionnalités GenAI d’Adobe Firefly.
-
-**Obtenir des informations sur l’utilisation du contenu entre les équipes**
-
-[!DNL Content Hub] fournit des informations précieuses sur les ressources, ce qui permet de répondre à un défi commun auquel les parties prenantes marketing sont souvent confrontées : les statistiques d’utilisation des ressources utilisées dans les campagnes marketing, les canaux et les différentes régions. En acquérant une compréhension claire des performances et de la popularité des ressources, il fournit des informations exploitables essentielles à l’amélioration de l’expérience d’utilisation.
 
 ## Conditions préalables {#prerequisites-content-hub}
 
