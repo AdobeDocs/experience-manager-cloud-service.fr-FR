@@ -2,10 +2,10 @@
 title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 89%
 
 ---
 
@@ -134,5 +134,29 @@ Le tableau ci-dessous présente les principales différences entre les deux sol
 |  | Collections épinglées par l’administrateur ou l’administratrice | ✓ | − |
 |  | Recherche sémantique | ✓ | − |
 |  | Recherche localisée et affichage des métadonnées | ✓ | − |
+
+## Comment sélectionner un référentiel pour afficher les ressources uniquement pour l’environnement sélectionné ? {#select-repository-multiple-environments}
+
+Lorsque vous avez configuré Content Hub pour la production et d’autres environnements inférieurs pour le même programme, vous pouvez sélectionner le référentiel et afficher les ressources pour l’environnement sélectionné. Procédez comme suit :
+
+1. Cliquez sur l’icône utilisateur dans le volet de droite.
+
+1. Dans la section **[!UICONTROL Paramètres du produit]**, sélectionnez **[!UICONTROL Sélectionner le référentiel]**.
+
+1. Sélectionnez le référentiel dans le menu déroulant **[!UICONTROL Référentiel]**, puis cliquez sur **[!UICONTROL OK]** pour confirmer.
+
+   Content Hub affiche désormais les ressources pour l’environnement sélectionné.
+
+## Comment Content Hub peut-il afficher l’aperçu des miniatures pour le type de fichier .ZIP ? {#thumbnail-preview-zip-file}
+
+Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.preview.jpg` ou `cq5dam.preview.png` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service.
+
+Image ajoutée en tant que rendu :
+
+* Peut être au format JPG, JPEG ou PNG.
+
+* Doit être inférieur à 50 Mo
+
+Lorsqu’elle est disponible, Content Hub affiche l’image comme miniature d’aperçu pour le fichier .ZIP sur Content Hub.
 
 

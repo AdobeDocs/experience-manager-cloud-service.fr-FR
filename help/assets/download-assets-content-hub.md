@@ -3,9 +3,9 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger une ou plusieurs ressources et leurs rendus à partir du portail Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -138,6 +138,10 @@ En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manage
   Les rendus de recadrage intelligent s’affichent et ne peuvent être téléchargés que si vous avez accès à [Dynamic Media avec les fonctionnalités OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Les rendus de recadrage intelligent ne sont disponibles que pour les ressources d’image.
 
   ![Types de rendus](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > Le panneau Télécharger affiche uniquement les rendus statiques personnalisés. Les miniatures de `cq5dam.*` par défaut ne s’affichent pas dans Content Hub.
 
 ### Activation des rendus dynamiques {#enable-dynamic-media-renditions}
 
