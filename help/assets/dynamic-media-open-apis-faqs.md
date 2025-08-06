@@ -3,22 +3,21 @@ title: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1520'
-ht-degree: 100%
+source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+workflow-type: tm+mt
+source-wordcount: '1572'
+ht-degree: 87%
 
 ---
 
 # Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Toutes les ressources du référentiel Experience Manager Assets as a Cloud Service sont-elles disponibles pour la recherche et la diffusion à l’aide de Dynamic Media avec des fonctionnalités OpenAPI ?**
+## Toutes les ressources du référentiel Experience Manager Assets as a Cloud Service sont-elles disponibles pour la recherche et la diffusion à l’aide de Dynamic Media avec les fonctionnalités OpenAPI ? {#assets-available-for-search}
 
 Non, seule la [version approuvée et la dernière version des ressources](/help/assets/approve-assets.md) est disponible pour la recherche et la diffusion à l’aide des fonctionnalités Dynamic Media avec OpenAPI, ce qui assure la cohérence de la marque sur tous les canaux et applications.
 
-+++
 
-+++**Comment les administrateurs et administratrices peuvent-ils marquer les nouvelles ressources et les ressources existantes ajoutées à un dossier comme approuvées ?**
+## Comment les administrateurs peuvent-ils marquer les ressources nouvelles et existantes ajoutées à un dossier comme approuvées ? {#add-assets-to-folder-as-approved}
 
 Le statut d’une ressource dans Experience Manager Assets est régi par la propriété `jcr:content/metadata/dam:status`. Les valeurs de cette propriété peuvent être les suivantes :
 
@@ -50,15 +49,12 @@ De même, Experience Manager Assets distingue le statut Rejeté dans la vue As
 ![Ressources rejetées dans la vue Assets](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
-
-+++**Comment pouvez-vous utiliser l’identifiant d’utilisateur ou d’utilisatrice ou l’identifiant de groupe Adobe IMS (Adobe Identity Management Services) pour définir les rôles sur les ressources dans la vue d’administration Experience Manager, afin de sécuriser l’expérience de diffusion et de recherche ?**
+## Comment obtenir l’ID d’utilisateur ou de groupe Adobe IMS (Adobe Identity Management Services) à utiliser pour définir les rôles sur les ressources dans la vue d’administration Experience Manager, afin de sécuriser l’expérience de diffusion et de recherche ? {#set-roles-secure-delivery-search}
 
 Les utilisateurs et utilisatrices demandant l’accès au service de l’instance de création AEM sont gérés en tant qu’utilisateurs et utilisatrices Adobe IMS dans Adobe Admin Console. Découvrez ce que sont les utilisateurs et utilisatrices Adobe IMS et comment ils sont accessibles et gérés dans Admin Console en consultant [Utilisateurs et utilisatrices Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=fr).
 
-+++
 
-+++**Pouvez-vous approuver plusieurs ressources simultanément dans un dossier ?**
+## Pouvez-vous approuver plusieurs ressources simultanément dans un dossier ? {#approve-multiple-assets-in-folder}
 
 Oui, vous pouvez approuver plusieurs ressources dans un dossier simultanément.
 
@@ -78,9 +74,7 @@ De même, pour approuver plusieurs ressources simultanément dans un dossier dan
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 
-+++
-
-+++**Comment sécuriser la diffusion des ressources et rechercher les API OpenAPI Dynamic Media ?**
+## Comment sécuriser la diffusion des ressources et rechercher les API Dynamic Media ouvertes ? {#secure-asset-delivery}
 
 La gouvernance centrale des ressources dans Experience Manager permet aux administrateurs et administratrices de gestion des ressources numériques ou aux personnes responsables de marque de gérer l’accès aux ressources. Ils peuvent restreindre l’accès en configurant les rôles ou en définissant l’heure d’activation et de désactivation pour les ressources approuvées du côté création, en particulier sur l’instance de création d’AEM as a Cloud Service.
 
@@ -88,21 +82,18 @@ Les utilisateurs et utilisatrices finaux qui recherchent ou utilisent des URL de
 
 Pour plus d’informations, consultez [Restreindre l’accès aux ressources dans Experience Manager](restrict-assets-delivery.md#authoring).
 
-+++
 
-+++**Comment obtenir des autorisations pour modifier le statut d’approbation d’une ressource ?**
+## Comment obtenir des autorisations pour modifier le statut d’approbation d’une ressource ? {#permissions-edit-approval-status}
 
 En tant qu’utilisateur ou utilisatrice de la gestion des ressources numériques, vous ne disposez peut-être pas des autorisations nécessaires pour [approuver les ressources](approve-assets.md#approve-assets). Afin d’obtenir les autorisations nécessaires pour modifier le statut d’approbation d’une ressource, les administrateurs et administratrices peuvent modifier le schéma de métadonnées par défaut ou tout autre schéma de métadonnées appliqué au dossier de ressources afin de fournir des autorisations de modification au champ **[!UICONTROL Statut de révision]**. Pour plus d’informations, voir [Comment désactiver la modification du champ Statut de révision](approve-assets.md#configuration).
 
-+++
 
-+++**Quelle est la taille de fichier prise en charge pour les vidéos ?**
+## Quelle est la taille de fichier prise en charge pour les vidéos ? {#supported-file-formats-videos}
 
 Dynamic Media avec OpenAPI prend en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
-+++
 
-+++**En quoi les fonctionnalités de Dynamic Media avec OpenAPI diffèrent de la solution Dynamic Media ?**
+## En quoi Dynamic Media avec les fonctionnalités OpenAPI diffère-t-il de la solution Dynamic Media ? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamic Media avec des fonctionnalités OpenAPI et Dynamic Media représentent des solutions distinctes, chacune offrant ses fonctionnalités de diffusion spécialisées. Il est impératif de passer minutieusement en revue vos exigences spécifiques afin de déterminer la solution la plus adaptée à vos besoins.
 
@@ -124,9 +115,8 @@ Voici quelques-unes des principales différences entre Dynamic Media avec les fo
 | Codes de vidéo dynamique, ce qui garantit que les meilleurs codes sont diffusés en fonction de la vidéo d’entrée. Aucune configuration n’est requise pour la diffusion vidéo native. | Code Standard 3 indépendamment de la vidéo d’entrée (peut avoir une incidence sur les performances de diffusion vidéo). Vous devez configurer manuellement différents codes pour différents débits vidéo. |
 | Difficile de deviner les URL basées sur UID de la ressource (obscurcissement des URL activé), mais amélioration de l’optimisation du moteur de recherche (SEO). | L’obscurcissement des URL n’est disponible que pour les paramètres de requête d’URL. Les identifiants de ressources (noms de ressources) dans les URL sont reconnaissables. |
 
-+++
 
-+++**Comment Dynamic Media avec les fonctionnalités OpenAPI résout les limites de la fonctionnalité de ressources connectées ?**
+## Comment Dynamic Media avec les fonctionnalités OpenAPI résout les limites de la fonctionnalité Assets connectée ? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 Le tableau ci-dessous présente les principales différences entre les deux solutions :
 
@@ -141,4 +131,14 @@ Le tableau ci-dessous présente les principales différences entre les deux solu
 | Toutes les modifications apportées aux ressources approuvées disponibles lors du déploiement DAM distant, y compris les mises à jour de version et les modifications de métadonnées, sont automatiquement répercutées sur l’instance Sites avec une valeur TTL (durée de vie) courte de 10 minutes. | Les mises à jour des ressources sur le déploiement DAM distant sont gérées automatiquement via les événements de cycle de vie, mais prennent beaucoup plus de temps que dans Dynamic Media avec les fonctionnalités OpenAPI. |
 | Les métadonnées des ressources sur DAM distant sont également disponibles sur l’instance AEM Sites. | Les métadonnées des ressources sur DAM distant ne sont pas disponibles sur l’instance AEM Sites. |
 
-+++
+## Certains modificateurs sont marqués comme Disponibilité limitée. Comment puis-je les utiliser ? {#use-limited-availability-modifiers}
+
+Pour activer l’utilisation en production de modificateurs en disponibilité limitée sur votre compte :
+
+1. [Créez un dossier d’assistance Adobe à l’aide d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+
+1. Indiquez les informations suivantes dans le cas d’assistance Adobe :
+
+   * Organisation IMS
+
+   * Liste des modificateurs à activer
