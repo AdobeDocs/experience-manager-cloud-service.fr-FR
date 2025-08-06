@@ -3,9 +3,9 @@ title: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 87%
 
 ---
@@ -133,7 +133,7 @@ Le tableau ci-dessous présente les principales différences entre les deux solu
 
 ## Certains modificateurs sont marqués comme Disponibilité limitée. Comment puis-je les utiliser ? {#use-limited-availability-modifiers}
 
-Pour activer l’utilisation en production de modificateurs en disponibilité limitée sur votre compte :
+Pour activer l’utilisation en production de [modificateurs en disponibilité limitée](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) sur votre compte :
 
 1. [Créez un dossier d’assistance Adobe à l’aide d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
