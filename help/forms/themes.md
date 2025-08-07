@@ -4,7 +4,7 @@ description: Utilisez les thèmes de formulaire adaptatif pour appliquer un styl
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 98%
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif<!-- or interactive communication -->.
@@ -212,7 +212,7 @@ L’éditeur de thèmes est divisé en deux panneaux :
 
 * **Zone de travail** : apparaît du côté droit. Elle montre un exemple de formulaire adaptatif <!--  or interactive communication --> dans lequel toutes les modifications de style sont immédiatement répercutées. Vous pouvez également sélectionner des objets directement à partir de la zone de travail pour consulter les styles qui y sont associés et les modifier. Une règle de résolution de l’appareil dans la partie supérieure régit la zone de travail. La sélection d’un point d’arrêt de résolution de la règle affiche l’aperçu de l’exemple de formulaire <!--  or interactive communication --> à la résolution appropriée. La zone de travail est expliquée en détails [ci-dessous](themes.md#using-canvas).
 
-* **Barre latérale** : apparaît sur le côté gauche. Elle comporte les éléments suivants :
+* **Barre latérale*** S’affiche sur le côté gauche. Elle comporte les éléments suivants :
 
    * **Sélecteur :** affiche le composant sélectionné pour le style, ainsi que ses propriétés dont vous pouvez définir le style. Le sélecteur représente tous les composants d’un type. Si vous sélectionnez un composant de zone de texte dans un thème pour la mise en forme, toutes les zones de texte de votre formulaire <!-- or interactive communication --> héritent du style. Les sélecteurs vous permettent de choisir un composant générique ou un composant spécifique pour le style. Par exemple, un composant de champ est un composant générique, et une zone de texte est un composant spécifique.
 

@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM propose plusieurs options de création de formulaires permettant de créer d
 
 AEM prend en charge plusieurs méthodes de création, chacune adaptée aux différents besoins de chaque personne, aux niveaux de compétences techniques et aux destinations de publication.
 
-* [Composants de base](/help/forms/create-adaptive-form-tutorial.md) : utilisez les composants de base pour créer des formulaires interactifs traditionnels. Idéal pour les formulaires qui s’intègrent à des systèmes hérités ou reposent sur des workflows établis de longue date. Les formulaires créées avec des composants de base peuvent uniquement être publiées sur AEM et ne sont pas compatibles avec Edge Delivery Services.
+- [Composants de base](/help/forms/create-adaptive-form-tutorial.md) : utilisez les composants de base pour créer des formulaires interactifs traditionnels. Idéal pour les formulaires qui s’intègrent à des systèmes hérités ou reposent sur des workflows établis de longue date. Les formulaires créées avec des composants de base peuvent uniquement être publiées sur AEM et ne sont pas compatibles avec Edge Delivery Services.
 
-* [Composants principaux](/help/forms/creating-adaptive-form-core-components.md) : utilisez les composants principaux pour créer des formulaires modernes, réactifs et évolutifs. Ils prennent en charge la réutilisation et l’accessibilité, et offrent de meilleures performances. Les formulaires créés avec les composants principaux peuvent être publiés sur AEM et Edge Delivery Services, ce qui offre une plus grande flexibilité entre les plateformes.
+- [Composants principaux](/help/forms/creating-adaptive-form-core-components.md) : utilisez les composants principaux pour créer des formulaires modernes, réactifs et évolutifs. Ils prennent en charge la réutilisation et l’accessibilité, et offrent de meilleures performances. Les formulaires créés avec les composants principaux peuvent être publiés sur AEM et Edge Delivery Services, ce qui offre une plus grande flexibilité entre les plateformes.
 
-* [Formulaires Edge Delivery Services](/help/edge/docs/forms/overview.md) : les formulaires Edge Delivery Services révolutionnent la création, l’exécution et le traitement des formulaires. Grâce à Edge Delivery Services, les entreprises peuvent créer des formulaires numériques rapides, sécurisés et hautement disponibles, afin d’améliorer l’expérience d’utilisation et l’efficacité opérationnelle dans un environnement de développement rapide. Vous pouvez créer les formulaires Edge Delivery Services de deux manières :
-   * [Création WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : utilisez l’éditeur universel pour la création visuelle de formulaires par glisser-déposer. Idéal pour les créateurs et créatrices de contenu ayant des connaissances techniques limitées. Les formulaires créées avec l’éditeur universel sont diffusées à l’aide d’Edge Delivery Services de façon à permettre un rendu rapide et léger.
-   * [Création basée sur un document](/help/edge/docs/forms/tutorial.md) : utilisez des outils tels que Microsoft Excel ou Google Sheets pour définir la structure et le contenu des formulaires. Cette méthode est utile pour les utilisateurs et utilisatrices professionnels qui préfèrent les entrées basées sur une feuille de calcul. Ces formulaires sont généralement publiés par l’intermédiaire d’Edge Delivery Services et sont adaptés aux cas d’utilisation légers et volumineux.
-* [Création découplée](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service) : utilisez les API pour réaliser le rendu des formulaires au format JSON pour n’importe quel front-end, par exemple React, Angular, les applications mobiles ou les kiosques, sans dépendre d’AEM. Actuellement, seuls les composants principaux prennent en charge la diffusion découplée. Les formulaires découplés sont idéaux pour les cas d’utilisation omnicanal et sont utilisés indépendamment du rendu des pages d’AEM, ce qui les rend flexibles pour les déploiements front-end personnalisés.
+- [Formulaires Edge Delivery Services](/help/edge/docs/forms/overview.md) : les formulaires Edge Delivery Services révolutionnent la création, l’exécution et le traitement des formulaires. Grâce à Edge Delivery Services, les entreprises peuvent créer des formulaires numériques rapides, sécurisés et hautement disponibles, afin d’améliorer l’expérience d’utilisation et l’efficacité opérationnelle dans un environnement de développement rapide. Vous pouvez créer les formulaires Edge Delivery Services de deux manières :
+   - [Création WYSIWYG ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : utilisez l’éditeur universel pour la création visuelle de formulaires par glisser-déposer. Idéal pour les créateurs et créatrices de contenu ayant des connaissances techniques limitées. Les formulaires créées avec l’éditeur universel sont diffusées à l’aide d’Edge Delivery Services de façon à permettre un rendu rapide et léger.
+   - [Création basée sur un document](/help/edge/docs/forms/tutorial.md) : utilisez des outils tels que Microsoft Excel ou Google Sheets pour définir la structure et le contenu des formulaires. Cette méthode est utile pour les utilisateurs et utilisatrices professionnels qui préfèrent les entrées basées sur une feuille de calcul. Ces formulaires sont généralement publiés par l’intermédiaire d’Edge Delivery Services et sont adaptés aux cas d’utilisation légers et volumineux.
+- [Création découplée](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service) : utilisez les API pour réaliser le rendu des formulaires au format JSON pour n’importe quel front-end, par exemple React, Angular, les applications mobiles ou les kiosques, sans dépendre d’AEM. Actuellement, seuls les composants principaux prennent en charge la diffusion découplée. Les formulaires découplés sont idéaux pour les cas d’utilisation omnicanal et sont utilisés indépendamment du rendu des pages d’AEM, ce qui les rend flexibles pour les déploiements front-end personnalisés.
 
 ### Analyse comparative des méthodes de création de formulaires AEM
 
@@ -107,7 +107,7 @@ Le tableau suivant présente une comparaison détaillée des fonctionnalités cl
 
 ## Article connexe
 
-* [Création basée sur des documents à l’aide de Microsoft Excel ou de Google Sheets](/help/edge/docs/forms/create-forms.md)
-* [Éditeur universel pour la création WYSIWYG](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [Créer un formulaire adaptatif (composants de base)](/help/forms/creating-adaptive-form.md)
-* [Créer un formulaire adaptatif (composants principaux)](/help/forms/create-an-adaptive-form.md)
+- [Création basée sur des documents à l’aide de Microsoft Excel ou de Google Sheets](/help/edge/docs/forms/create-forms.md)
+- [Éditeur universel pour la création WYSIWYG](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Créer un formulaire adaptatif (composants de base)](/help/forms/creating-adaptive-form.md)
+- [Créer un formulaire adaptatif (composants principaux)](/help/forms/create-an-adaptive-form.md)

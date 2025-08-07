@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4225'
-ht-degree: 90%
+source-wordcount: '4221'
+ht-degree: 89%
 
 ---
 
@@ -145,7 +145,7 @@ Gardez en tête les considérations et les limitations suivantes lorsque vous ut
 * Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur ou l’utilisatrice apparaît en tant que texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
-* La version localisée du document d’enregistrement est créée sur demande pour un paramètre régional lorsque l’utilisateur demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
+* La version localisée du document d’enregistrement est créée sur demande pour des paramètres régionaux lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
@@ -281,7 +281,6 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
 | Composant de formulaire adaptatif | Composant XFA correspondant | Remarques |
 |---|---|---|
 | Image | Image | Qu’ils soient liés ou non, les composants TextDraw et Image s’affichent toujours dans le document d’enregistrement concernant un formulaire adaptatif basé sur XSD, sauf si cela est exclu dans les paramètres de document d’enregistrement. |
-| Texte | Texte |
 
 ### Tableaux {#tables}
 
@@ -338,7 +337,7 @@ Respectez rigoureusement les conventions et instructions mentionnées ci-dessus 
 
 Lors de la génération d’un document d’enregistrement, vous pouvez modifier les informations d’identité graphique pour le document d’enregistrement sous l’onglet Document d’enregistrement. L’onglet Document d’enregistrement inclut des options telles que le logo, l’apparence, la mise en page, l’en-tête et le pied de page, la clause de non-responsabilité et si vous souhaitez inclure des options de case à cocher et de bouton radio désélectionnées.
 
-Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
+Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que les paramètres régionaux du navigateur sont définis correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configurer](assets/configure.png).
 1. Sélectionnez ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
@@ -364,7 +363,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
       * **Séparateur pour plusieurs valeurs** : vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
-      * **Nombre d’options d’alignement horizontal** : vous pouvez définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
+      * **Nombre d’options d’alignement horizontal**:You permet de définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
 
       ![Propriétés des champs de formulaire](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ Effectuez les étapes suivantes à partir de l’instance d’auteur de l’édi
 1. Cliquez sur l’![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
 1. Ouvrez l’onglet **[!UICONTROL Modèle de document d’enregistrement]** et sélectionnez l’une des options suivantes :
    * **[!UICONTROL Aucun]** : lorsque cette option est sélectionnée, aucun modèle de [!UICONTROL document d’enregistrement] n’est créé pour votre formulaire adaptatif.
-
-   * **[!UICONTROL Associer un modèle de formulaire comme modèle de document d’enregistrement]** : lorsque cette option est sélectionnée, le formulaire XFA est utilisé comme modèle de document d’enregistrement.
-
+   * **[!UICONTROL Associer le modèle de formulaire en tant que modèle de document d’enregistrement]**:When si cette option est sélectionnée, le formulaire XFA est utilisé comme modèle de document d’enregistrement.
    * **[!UICONTROL Générer un document d’enregistrement]** : lorsque cette option est sélectionnée, le modèle de [!UICONTROL document d’enregistrement] est généré automatiquement pour votre formulaire adaptatif.
 
 1. Sélectionnez ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
@@ -474,7 +471,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 | config/present/pdf/scriptModel | Contrôle si des informations spécifiques à XFA sont incluses dans le document PDF de sortie. |
 | config/present/common/data/adjustData | Contrôle si l’application XFA ajuste les données après la fusion. |
 | config/present/pdf/renderPolicy | Contrôle si la génération du contenu de la page est effectuée sur le serveur ou différée au client. |
-| config/present/common/locale | Spécifie le paramètre régional par défaut utilisé dans le document de sortie. |
+| config/present/common/locale | Spécifie les paramètres régionaux par défaut utilisés dans le document de sortie. |
 | config/present/destination | Lorsque contenu par un élément présent, indique le format de sortie. Lorsqu’il est contenu par un élément openAction, spécifie l’action à effectuer lors de l’ouverture du document dans un client interactif. |
 | config/present/output/type | Spécifie le type de compression à appliquer à un fichier ou le type de sortie à produire. |
 | config/present/common/temp/uri | Spécifie l’URI du formulaire. |

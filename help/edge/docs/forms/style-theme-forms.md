@@ -1,72 +1,72 @@
 ---
-title: Personnalisation du thème et des styles pour Edge Delivery Services for AEM Forms
-description: Personnalisation du thème et des styles pour Edge Delivery Services for AEM Forms
+title: Personnaliser le thème et les styles Edge Delivery Services pour AEM Forms
+description: Personnaliser le thème et les styles Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 72%
+source-wordcount: '1901'
+ht-degree: 98%
 
 ---
 
 
 # Personnaliser l’apparence de vos formulaires
 
-Les formulaires sont essentiels pour les interactions des utilisateurs et des utilisatrices sur les sites web, car cela leur permet de saisir des données. Vous pouvez utiliser des feuilles de style en cascade (CSS) pour mettre en forme des champs de formulaire, améliorer la présentation visuelle de vos formulaires et améliorer l’expérience utilisateur.
+Les formulaires sont essentiels pour les interactions des utilisateurs et des utilisatrices sur les sites web, car cela leur permet de saisir des données. Vous pouvez utiliser des feuilles de style en cascade (CSS) pour mettre en forme les champs d’un formulaire, améliorer la présentation visuelle de vos formulaires et améliorer l’expérience client.
 
-Le bloc de formulaires adaptatifs crée une structure cohérente pour tous les champs de formulaire. Cette structure cohérente facilite le développement de sélecteurs CSS pour sélectionner et mettre en forme les champs de formulaire en fonction du type de champ et des noms de champ.
+Le bloc de formulaires adaptatifs crée une structure cohérente pour tous les champs de formulaire. La structure cohérente facilite le développement de sélecteurs CSS pour sélectionner et mettre en forme les champs de formulaire en fonction du type de champ et des noms des champs.
 
-Ce document décrit la structure d’HTML pour divers composants de formulaire et vous aide à mieux comprendre comment créer des sélecteurs CSS pour divers champs de formulaire afin de mettre en forme les champs de formulaire d’un bloc de Forms adaptatif.
+Ce document décrit la structure HTML pour divers composants de formulaire. Il vous aide à mieux comprendre comment créer des sélecteurs CSS pour divers champs de formulaire afin de mettre en forme les champs de formulaire d’un bloc de formulaires adaptatifs.
 
-À la fin de l’article, vous pourrez :
+À la fin de cet article, vous serez capable d’accomplir ce qui suit :
 
-* Comprendre la structure du fichier CSS par défaut inclus dans le bloc de Forms adaptatif
-* Comprenez la structure HTML des composants de formulaire fournis par le bloc de Forms adaptatif, y compris les composants généraux et les composants spécifiques tels que les listes déroulantes, les groupes de cases d’option et les groupes de cases à cocher
-* Découvrez comment mettre en forme les champs de formulaire en fonction du type et des noms de champ à l’aide de sélecteurs CSS, ce qui permet d’appliquer un style cohérent ou unique en fonction des besoins
+- Comprendre la structure du fichier CSS par défaut inclus dans le bloc de formulaires adaptatifs
+- Comprendre la structure HTML des composants de formulaire fournis par le bloc de formulaires adaptatifs, notamment les composants généraux et des composants spécifiques tels que les listes déroulantes, les groupes de boutons radio et les groupes de cases à cocher
+- Apprendre à définir le style de champs de formulaire en fonction du type de champ et des noms de champ à l’aide de sélecteurs CSS, permettant ainsi d’obtenir un style cohérent ou unique en fonction des besoins
 
 
 ## Présentation des types de champs de formulaire
 
 Avant de passer à la définition du style, examinons les [types de champs](/help/edge/docs/forms/form-components.md) de formulaire communs pris en charge par le bloc de formulaires adaptatifs :
 
-* Champs de saisie : ils incluent des entrées de texte, des entrées d’e-mail, des entrées de mot de passe, etc
-* Groupes de cases à cocher : utilisé pour sélectionner plusieurs options
-* Groupes de cases d’option : permet de sélectionner une seule option dans un groupe
-* Listes déroulantes : également appelées zones de sélection, utilisées pour sélectionner une option dans une liste
-* Panneaux/conteneurs : utilisés pour regrouper des éléments de formulaire associés
+- Champs de saisie : ces champs incluent des entrées de texte, des entrées d’e-mail, des entrées de mot de passe, et bien plus encore.
+- Groupes de cases à cocher : utilisés pour sélectionner plusieurs options.
+- Groupes de boutons radio : utilisés pour sélectionner une seule option dans un groupe.
+- Listes déroulantes : également appelées zones de sélection, utilisées pour sélectionner une option dans une liste.
+- Panneaux/conteneurs : utilisés pour regrouper les éléments de formulaire associés.
 
 ## Principes de base de la définition du style
 
 Il est essentiel de comprendre les [concepts de base de CSS](https://www.w3schools.com/css/css_intro.asp) avant de définir le style de champs de formulaire spécifiques :
 
-* [Sélecteurs](https://www.w3schools.com/css/css_selectors.asp) : les sélecteurs CSS vous permettent de cibler des éléments HTML spécifiques pour la définition du style. Vous pouvez utiliser des sélecteurs d’éléments, de classes ou d’identifiants
-* [Propriétés](https://www.w3schools.com/css/css_syntax.asp) : les propriétés CSS définissent l’apparence visuelle des éléments. Les propriétés courantes pour la mise en forme des champs de formulaire comprennent la couleur, la couleur d’arrière-plan, la bordure, la marge intérieure, la marge, etc
-* [Modèle Box ](https://www.w3schools.com/css/css_boxmodel.asp) : le modèle box CSS décrit la structure des éléments HTML sous la forme d’une zone de contenu entourée d’une marge intérieure, de bordures et de marges
-* Flexbox/Grille : les CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) et [Grid](https://www.w3schools.com/css/css_grid.asp) sont des outils puissants pour créer des conceptions réactives et flexibles
+- [Sélecteurs](https://www.w3schools.com/css/css_selectors.asp) : les sélecteurs CSS vous permettent de cibler des éléments HTML spécifiques pour la définition du style. Vous pouvez utiliser des sélecteurs d’éléments, des sélecteurs de classe ou des sélecteurs d’ID.
+- [Propriétés](https://www.w3schools.com/css/css_syntax.asp) : les propriétés CSS définissent l’apparence visuelle des éléments. Les propriétés courantes de définition du style des champs de formulaire incluent les suivantes : couleur, couleur d’arrière-plan, bordure, marge intérieure, marge, et bien plus encore.
+- [Modèle de zone](https://www.w3schools.com/css/css_boxmodel.asp) : modèle de zone CSS décrit la structure des éléments HTML sous la forme d’une zone de contenu entourée d’une marge intérieure, de bordures et de marges.
+- Flexbox/grille : les [dispositions Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) et [Grille](https://www.w3schools.com/css/css_grid.asp) CSS sont des outils puissants pour créer des conceptions réactives et flexibles.
 
 ## Définir le style d’un formulaire pour un bloc de formulaires adaptatifs
 
 Le bloc de formulaires adaptatifs offre une structure HTML normalisée, ce qui simplifie le processus de sélection et de définition du style des composants de formulaire :
 
-* **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant le fichier `/blocks/form/form.css`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition de style uniforme entre les formulaires. Pour plus d’informations sur l’ajout du bloc de formulaires adaptatifs à votre projet, reportez-vous à [Création d’un formulaire](/help/edge/docs/forms/create-forms.md).
+- **Mettre à jour les styles par défaut** : vous pouvez modifier les styles par défaut d’un formulaire en modifiant le fichier `/blocks/form/form.css`. Ce fichier fournit une définition de style de formulaire complet, qui prend en charge les formulaires de l’assistant en plusieurs étapes. Il met l’accent sur l’utilisation de variables CSS personnalisées pour faciliter la personnalisation, la maintenance et la définition de style uniforme entre les formulaires. Pour plus d’informations sur l’ajout du bloc de formulaires adaptatifs à votre projet, reportez-vous à [Création d’un formulaire](/help/edge/docs/forms/create-forms.md).
 
-* **Personnalisation** : utilisez le `forms.css` par défaut comme base et personnalisez-le pour modifier l’aspect de vos composants de formulaire, en les rendant attrayants visuellement et conviviaux. La structure du fichier encourage l’organisation et la gestion des styles pour les formulaires, ce qui favorise la cohérence des conceptions sur votre site web.
+- **Personnalisation** : utilisez le fichier `forms.css` par défaut comme base et personnalisez-le pour modifier l’aspect de vos composants de formulaire, ce qui le rend visuellement attrayant et convivial. La structure du fichier incite l’organisation et la gestion des styles pour les formulaires, ce qui favorise la cohérence des conceptions sur votre site web.
 
-## Répartition de la structure forms.css
+## Répartition de la structure de forms.css
 
-* **Variables globales :** définies au niveau `:root`, ces variables (`--variable-name`) stockent les valeurs utilisées dans toute la feuille de style pour assurer la cohérence et faciliter les mises à jour. Ces variables définissent les couleurs, les tailles de police, le remplissage et d’autres propriétés. Vous pouvez déclarer vos propres variables globales ou modifier les variables existantes pour modifier le style du formulaire.
+- **Variables globales :** définies au niveau `:root`, ces variables (`--variable-name`) stockent les valeurs utilisées dans toute la feuille de style pour assurer la cohérence et faciliter les mises à jour. Ces variables définissent les couleurs, les tailles de police, le remplissage et d’autres propriétés. Vous pouvez déclarer vos propres variables globales ou modifier les variables existantes pour modifier le style du formulaire.
 
-* **Styles du sélecteur universel :** le sélecteur `*` correspond à chaque élément du formulaire, en veillant à ce que les styles soient appliqués par défaut à tous les composants, y compris la définition de la propriété `box-sizing` sur `border-box`.
+- **Styles du sélecteur universel :** le sélecteur `*` correspond à chaque élément du formulaire, en veillant à ce que les styles soient appliqués par défaut à tous les composants, y compris la définition de la propriété `box-sizing` sur `border-box`.
 
-* **Définition du style du formulaire :** cette section porte sur la définition du style des composants de formulaire à l’aide de sélecteurs afin de cibler des éléments HTML spécifiques. Elle définit des styles pour les champs d’entrée, les zones de texte, les cases à cocher, les boutons radio, les entrées de fichier, les libellés de formulaire et les descriptions.
+- **Définition du style du formulaire :** cette section porte sur la définition du style des composants de formulaire à l’aide de sélecteurs afin de cibler des éléments HTML spécifiques. Elle définit des styles pour les champs d’entrée, les zones de texte, les cases à cocher, les boutons radio, les entrées de fichier, les libellés de formulaire et les descriptions.
 
-* **Définition du style de l’assistant (le cas échéant) :** cette section est consacrée à la définition du style de la disposition de l’assistant, un formulaire en plusieurs étapes dans lequel chaque étape est affichée une par une. Elle définit des styles pour le conteneur de l’assistant, les jeux de champs, les légendes, les boutons de navigation et les dispositions réactives.
+- **Définition du style de l’assistant (le cas échéant) :** cette section est consacrée à la définition du style de la disposition de l’assistant, un formulaire en plusieurs étapes dans lequel chaque étape est affichée une par une. Elle définit des styles pour le conteneur de l’assistant, les jeux de champs, les légendes, les boutons de navigation et les dispositions réactives.
 
-* **Requêtes de média :** celles-ci fournissent des styles pour différentes tailles d’écran, en ajustant la disposition et le style en conséquence.
+- **Requêtes de média :** celles-ci fournissent des styles pour différentes tailles d’écran, en ajustant la disposition et le style en conséquence.
 
-* **Styles divers :** cette section couvre les styles pour les messages de succès ou d’erreur, les zones de chargement de fichier et d’autres éléments que vous pouvez rencontrer dans un formulaire.
+- **Styles divers :** cette section décrit les styles des messages de réussite ou d’erreur, les zones de chargement de fichiers et d’autres éléments que vous pouvez rencontrer dans un formulaire.
 
 
 ## Structure des composants
@@ -75,7 +75,7 @@ Le bloc Formulaires adaptatifs offre une structure HTML cohérente pour divers �
 
 ### Composants généraux (à l’exception des listes déroulantes, des groupes de boutons radio et des groupes de cases à cocher) :
 
-Tous les champs de formulaire, à l’exception des listes déroulantes, des groupes de cases d’option et des groupes de cases à cocher, présentent la structure HTML suivante :
+Tous les champs de formulaire, à l’exception des listes déroulantes, des groupes de boutons radio et des groupes de cases à cocher, présentent la structure HTML suivante :
 
 +++ Structure HTML des composants généraux
 
@@ -89,14 +89,14 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 </div>
 ```
 
-* Classes : l’élément div comporte plusieurs classes pour le ciblage d’éléments et de définitions de styles spécifiques. Vous avez besoin des classes `{Type}-wrapper` ou `field-{Name}` pour développer un sélecteur CSS afin de définir le style d’un champ de formulaire :
-   * {Type} : identifie le composant par type de champ. Par exemple, text (text-wrapper), number (number-wrapper), date (date-wrapper)
-   * {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques. Plusieurs tirets consécutifs dans le nom sont remplacés par un seul tiret `(-)`. Les tirets de début et de fin d’un nom de champ sont supprimés. Par exemple, prénom (field-first-name field-wrapper)
-   * {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement
-   * {Required} : valeur booléenne indiquant si le champ est obligatoire
-* Libellé : l’élément `label` fournit un texte descriptif pour le champ et l’associe à l’élément d’entrée en utilisant l’attribut `for`
-* Entrée : l’élément `input` définit le type de données à renseigner. Par exemple, texte, nombre, e-mail
-* Description (facultatif) : la `div` avec la classe `field-description` fournit des informations ou des instructions supplémentaires pour l’utilisateur
+- Classes : l’élément div comporte plusieurs classes pour le ciblage d’éléments et de définitions de styles spécifiques. Vous avez besoin des classes `{Type}-wrapper` ou `field-{Name}` pour développer un sélecteur CSS afin de définir le style d’un champ de formulaire :
+   - {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
+   - {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques. Les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)` et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
+   - {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement
+   - {Required} : valeur booléenne indiquant si le champ est obligatoire
+- Libellé : l’élément `label` fournit un texte descriptif pour le champ et l’associe à l’élément d’entrée à l’aide de l’attribut `for`.
+- Entrée : l’élément `input` définit le type de données à renseigner. Par exemple : texte, nombre, e-mail.
+- Description (facultatif) : l’élément `div` avec la classe `field-description` fournit des informations ou des instructions supplémentaires à l’intention de l’utilisateur ou de l’utilisatrice.
 
 **Exemple de structure HTML**
 
@@ -138,8 +138,8 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 }
 ```
 
-* `.{Type}-wrapper` : cible l’élément de `div` externe en fonction du type de champ. Par exemple : `.text-wrapper` cible tous les champs de texte
-* `.field-{Name}` : affine la sélection de l’élément en fonction du nom de champ spécifique. Par exemple, `.field-first-name` cible le champ de texte « Prénom ». Bien que ce sélecteur puisse être utilisé pour cibler des éléments avec la classe field-{Name}, il est important de faire preuve de prudence. Dans ce cas spécifique, il ne serait pas utile de définir le style de champs d’entrée, car cela ciblerait non seulement l’entrée elle-même, mais également les éléments de libellé et de description. Il est recommandé d’utiliser des sélecteurs plus spécifiques, comme ceux dont vous disposez pour le ciblage des champs de saisie de texte (entrée .text-wrapper)
+- `.{Type}-wrapper` : cible l’élément `div` externe en fonction du type de champ. Par exemple, `.text-wrapper` cible tous les champs de texte.
+- `.field-{Name}` : affine la sélection de l’élément en fonction du nom de champ spécifique. Par exemple, `.field-first-name` cible le champ de texte « Prénom ». Bien que ce sélecteur puisse être utilisé pour cibler des éléments avec la classe field-{Name}, il est important de faire preuve de prudence. Dans ce cas spécifique, il ne serait pas utile de définir le style de champs d’entrée, car cela ciblerait non seulement l’entrée elle-même, mais également les éléments de libellé et de description. Il est recommandé d’utiliser des sélecteurs plus spécifiques comme ceux dont vous disposez pour cibler les champs de saisie de texte (entrée .text-wrapper).
 
 **Exemples de sélecteurs CSS pour les composants généraux**
 
@@ -280,7 +280,7 @@ Tout comme les composants de liste déroulante, les groupes de boutons radio pr�
 
 +++ Sélecteurs CSS pour les groupes de boutons radio
 
-* Ciblage de filedset
+- Ciblage de filedset
 
 ```CSS
   .radio-group-wrapper {
@@ -291,7 +291,7 @@ Tout comme les composants de liste déroulante, les groupes de boutons radio pr�
 
 Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper. Cela s’avère utile pour appliquer des styles généraux à l’ensemble du groupe de boutons radio.
 
-* Ciblage des libellés de boutons radio
+- Ciblage des libellés de boutons radio
 
 ```CSS
 .radio-wrapper label {
@@ -300,7 +300,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
   }
 ```
 
-* Cibler tous les libellés de bouton radio dans un fieldset spécifique en fonction de son nom
+- Cibler tous les libellés de bouton radio dans un fieldset spécifique en fonction de son nom
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -350,7 +350,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 
 +++ Sélecteurs CSS pour les groupes de cases à cocher
 
-* Ciblage du wrapper externe : ces sélecteurs ciblent les conteneurs les plus éloignés des groupes de boutons radio et de cases à cocher, vous permettant ainsi d’appliquer des styles généraux à l’ensemble de la structure du groupe. Cela s’avère utile pour définir l’espacement, l’alignement ou d’autres propriétés liées à la disposition.
+- Ciblage du wrapper externe : ces sélecteurs ciblent les conteneurs les plus éloignés des groupes de boutons radio et de cases à cocher, vous permettant ainsi d’appliquer des styles généraux à l’ensemble de la structure du groupe. Cela s’avère utile pour définir l’espacement, l’alignement ou d’autres propriétés liées à la disposition.
 
 
   ```CSS
@@ -366,7 +366,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
   ```
 
 
-* Ciblage des libellés de groupes : ce sélecteur cible l’élément `.field-label` dans les wrappers de groupes de boutons radio et de cases à cocher. Cela vous permet de définir le style des libellés propres à ces groupes, ce qui peut les rendre plus remarquables.
+- Ciblage des libellés de groupes : ce sélecteur cible l’élément `.field-label` dans les wrappers de groupes de boutons radio et de cases à cocher. Cela vous permet de définir le style des libellés propres à ces groupes, ce qui peut les rendre plus remarquables.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -377,7 +377,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 
 
 
-* Ciblage d’entrées et de libellés individuels : ces sélecteurs offrent un contrôle plus précis sur les boutons radio et cases à cocher individuels et les libellés qui leur sont associés. Vous pouvez les utiliser pour ajuster le dimensionnement, l’espacement ou appliquer des styles visuels plus distincts.
+- Ciblage d’entrées et de libellés individuels : ces sélecteurs offrent un contrôle plus précis sur les boutons radio et cases à cocher individuels et les libellés qui leur sont associés. Vous pouvez les utiliser pour ajuster le dimensionnement, l’espacement ou appliquer des styles visuels plus distincts.
 
   ```CSS
   /* Styling radio buttons */
@@ -404,7 +404,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 
 
 
-* Personnalisation de l’apparence des boutons radio et des cases à cocher : cette technique masque l’entrée par défaut et utilise les pseudo-éléments `:before` et `:after` pour créer des visuels personnalisés qui modifient l’apparence en fonction de l’état « coché ».
+- Personnalisation de l’apparence des boutons radio et des cases à cocher : cette technique masque l’entrée par défaut et utilise les pseudo-éléments `:before` et `:after` pour créer des visuels personnalisés qui modifient l’apparence en fonction de l’état « coché ».
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -475,10 +475,10 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 </fieldset>
 ```
 
-* L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-* L’élément de légende (&lt;legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
-* Dans le fieldset, plusieurs éléments .{Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
-* Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
+- L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
+- L’élément de légende (<legend>) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+- Dans le fieldset, plusieurs éléments .Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
+- Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
 +++
 
@@ -497,7 +497,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
  }
 ```
 
-* le sélecteur `.panel-wrapper` définit le style de tous les éléments avec la classe panel-wrapper, créant ainsi un aspect cohérent pour tous les panneaux.
+- le sélecteur `.panel-wrapper` définit le style de tous les éléments avec la classe panel-wrapper, créant ainsi un aspect cohérent pour tous les panneaux.
 
 1. Ciblage du titre du panneau :
 
@@ -513,7 +513,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
   }
 ```
 
-* le sélecteur `.panel-wrapper legend` définit le style de l’élément de légende dans le panneau, ce qui permet de distinguer visuellement le titre.
+- le sélecteur `.panel-wrapper legend` définit le style de l’élément de légende dans le panneau, ce qui permet de distinguer visuellement le titre.
 
 
 1. Ciblage de champs individuels dans le panneau :
@@ -526,7 +526,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 }
 ```
 
-* le sélecteur `.panel-wrapper .{Type}-wrapper` cible tous les wrappers avec la classe `.{Type}-wrapper` dans le panneau, ce qui vous permet de définir le style de l’espacement entre les champs de formulaire.
+- le sélecteur `.panel-wrapper .{Type}-wrapper` cible tous les wrappers avec la classe `.{Type}-wrapper` dans le panneau, ce qui vous permet de définir le style de l’espacement entre les champs de formulaire.
 
 1. Ciblage de champs spécifiques (facultatif) :
 
@@ -542,7 +542,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
   }
 ```
 
-* ces sélecteurs facultatifs vous permettent de cibler des wrappers de champ spécifiques dans le panneau pour une définition de style unique, comme la mise en surbrillance du champ du nom d’utilisateur ou d’utilisatrice.
+- ces sélecteurs facultatifs vous permettent de cibler des wrappers de champ spécifiques dans le panneau pour une définition de style unique, comme la mise en surbrillance du champ du nom d’utilisateur ou d’utilisatrice.
 
 +++
 
@@ -604,15 +604,15 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 
 Chaque panneau présente la même structure que l’exemple de panneau unique, avec des attributs supplémentaires :
 
-* data-repeatable=&quot;true&quot; : cet attribut indique que le panneau peut être répété de manière dynamique à l’aide de JavaScript ou d’un framework.
+- data-repeatable=&quot;true&quot; : cet attribut indique que le panneau peut être répété de manière dynamique à l’aide de JavaScript ou d’un framework.
 
-* Identifiants et noms uniques : chaque élément du panneau comprend un identifiant unique (par exemple, name-1, email-1) et un attribut name basé sur l’index du panneau (par exemple, name=&quot;contacts[0].name&quot;). Cela permet une collecte de données correcte lorsque plusieurs panneaux sont envoyés.
+- Identifiants et noms uniques : chaque élément du panneau comprend un identifiant unique (par exemple, name-1, email-1) et un attribut name basé sur l’index du panneau (par exemple, name=&quot;contacts[0].name&quot;). Cela permet une collecte de données correcte lorsque plusieurs panneaux sont envoyés.
 
 +++
 
 +++ Sélecteurs CSS pour un panneau répétable
 
-* Ciblage de tous les panneaux répétables :
+- Ciblage de tous les panneaux répétables :
 
 ```CSS
   /* Target all panels with the repeatable attribute */
@@ -628,7 +628,7 @@ Chaque panneau présente la même structure que l’exemple de panneau unique, a
 le sélecteur définit le style de tous les panneaux qui peuvent être répétés, assurant ainsi un aspect cohérent.
 
 
-* Ciblage de champs individuels dans un panneau :
+- Ciblage de champs individuels dans un panneau :
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -637,10 +637,9 @@ le sélecteur définit le style de tous les panneaux qui peuvent être répété
   margin-bottom: 10px;
 }
 ```
-
 ce sélecteur définit le style de tous les wrappers de champ dans un panneau répétable, en assurant un espacement cohérent entre les champs.
 
-* Ciblage de champs spécifiques (dans un panneau) :
+- Ciblage de champs spécifiques (dans un panneau) :
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -694,15 +693,15 @@ ce sélecteur définit le style de tous les wrappers de champ dans un panneau r�
 </div>
 ```
 
-* L’attribut class utilise le nom fourni pour le fichier joint (claim_form).
-* Les attributs id et name de l’élément d’entrée correspondent au nom du fichier joint (claim_form).
-* La section files-list est initialement vide. Elle est renseignée de manière dynamique avec JavaScript lorsque des fichiers sont chargés.
+- L’attribut class utilise le nom fourni pour le fichier joint (claim_form).
+- Les attributs id et name de l’élément d’entrée correspondent au nom du fichier joint (claim_form).
+- La section files-list est initialement vide. Elle est renseignée de manière dynamique avec JavaScript lorsque des fichiers sont chargés.
 
 +++
 
 +++ Sélecteurs CSS pour le composant de fichier joint
 
-* Ciblage de l’ensemble du composant de fichier joint :
+- Ciblage de l’ensemble du composant de fichier joint :
 
 ```CSS
 /* Target the entire file attachment component */
@@ -717,7 +716,7 @@ ce sélecteur définit le style de tous les wrappers de champ dans un panneau r�
 
 ce sélecteur définit le style de l’ensemble du composant de fichier joint, y compris la légende, la zone de déplacement, le champ d’entrée et la liste.
 
-* Ciblage d’éléments spécifiques :
+- Ciblage d’éléments spécifiques :
 
 ```CSS
 /* Target the drag and drop area */
@@ -808,12 +807,12 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
 </div>
 ```
 
-* Chaque champ est encapsulé dans un élément `div` avec plusieurs classes :
-   * `{Type}-wrapper` : identifie le type de champ. Par exemple : `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
-   * `field-{Name}` : identifie le champ par son nom. Par exemple : `form-name`, `form-age`, `form-email`.
-   * `field-wrapper` : classe générique pour tous les wrappers de champ.
-* L’attribut `data-required` indique si le champ est obligatoire ou facultatif.
-* Chaque champ comporte un libellé, un élément d’entrée et d’éventuels éléments supplémentaires correspondants, tels que des espaces réservés et des descriptions.
+- Chaque champ est encapsulé dans un élément `div` avec plusieurs classes :
+   - `{Type}-wrapper` : identifie le type de champ. Par exemple : `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
+   - `field-{Name}` : identifie le champ par son nom. Par exemple : `form-name`, `form-age`, `form-email`.
+   - `field-wrapper` : classe générique pour tous les wrappers de champ.
+- L’attribut `data-required` indique si le champ est obligatoire ou facultatif.
+- Chaque champ comporte un libellé, un élément d’entrée et d’éventuels éléments supplémentaires correspondants, tels que des espaces réservés et des descriptions.
 
 
 +++
@@ -880,6 +879,3 @@ Ce CSS cible tous les éléments d’entrée situés dans un élément qui poss�
 
 +++
 
-## Voir également
-
-{{see-more-forms-eds}}

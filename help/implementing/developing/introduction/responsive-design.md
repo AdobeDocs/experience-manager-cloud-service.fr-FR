@@ -4,10 +4,10 @@ description: Avec le responsive design, les mêmes expériences peuvent être af
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 44%
+ht-degree: 56%
 
 ---
 
@@ -85,7 +85,7 @@ Le [tutoriel WKND](develop-wknd-tutorial.md) utilise cette stratégie pour défi
 
 ### Utiliser des requêtes de média avec des pages AEM {#using-media-queries-with-aem-pages}
 
-[L’exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=fr), qui inclut les bibliothèques clientes via la politique de page.
+[L’exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), qui inclut les bibliothèques clientes via la politique de page.
 
 Si votre propre composant de page n’est pas basé sur le composant principal Page, vous pouvez également inclure le dossier de bibliothèque cliente dans son script HTL ou JSP. Cela génère et référence le fichier CSS avec les requêtes de média nécessaires au fonctionnement de la grille réactive.
 
@@ -137,14 +137,14 @@ Les pages réactives s’adaptent dynamiquement au périphérique sur lequel ell
 
 [le composant Image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comporte des fonctionnalités telles que la sélection d’images adaptatives.
 
-* Par défaut, le composant d’image utilise le [ servlet d’image adaptative ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=fr) pour fournir le rendu approprié.
+* Par défaut, le composant d’image utilise le [ servlet d’image adaptative ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
 * La [ Diffusion d’images optimisées pour le web ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa politique, qui diffuse des ressources d’image à partir de la gestion des ressources numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
 
 ## Conteneur de disposition {#layout-container}
 
-Le conteneur de disposition AEM permet d’implémenter efficacement une disposition réactive pour adapter les dimensions de la page à la fenêtre d’affichage cliente.
+Le conteneur de disposition d’AEM permet d’implémenter efficacement une disposition réactive pour adapter les dimensions de la page à la fenêtre d’affichage cliente.
 
->[La documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la grille réactive est une référence qui peut être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes d’HTML statiques pour un futur site AEM.
+>[La documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la grille réactive est une référence qui peut être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un futur site AEM.
 
 >[!TIP]
 >
@@ -154,14 +154,14 @@ Le conteneur de disposition AEM permet d’implémenter efficacement une disposi
 
 Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactives pour répondre aux besoins de votre projet. Toutefois, gardez à l’esprit que la bonne pratique recommandée par Adobe est de garder la structure aussi plate que possible.
 
-Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
 
 * Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
 * Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.
 
 Cela inclut tous les conteneurs structurels du modèle de page.
 
-Le numéro de colonne du récipient intérieur ne doit jamais être supérieur à celui du récipient extérieur. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
+Le numéro de colonne du conteneur interne ne doit jamais être supérieur à celui du conteneur externe. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
 
 >[!BEGINTABS]
 
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemple d’HTML résultant]
+>[!TAB Exemple de page HTML]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

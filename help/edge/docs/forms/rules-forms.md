@@ -4,8 +4,8 @@ description: Les services Edge Delivery Services pour AEM Forms, conçus pour
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
 
@@ -21,16 +21,16 @@ Cet article vous guide dans l’utilisation des diverses propriétés du bloc de
 
 Les règles sont comme des instructions qui nous disent quoi faire dans différentes situations. Une règle contient généralement les éléments suivants :
 
-* Conditions : indiquent les circonstances dans lesquelles la règle s’applique. Considérez-les comme une question à laquelle il faut répondre (oui ou non).
+- Conditions : indiquent les circonstances dans lesquelles la règle s’applique. Considérez-les comme une question à laquelle il faut répondre (oui ou non).
 
-* Actions : définissent ce qui se passe lorsque la condition est remplie (true) ou non (false).
+- Actions : définissent ce qui se passe lorsque la condition est remplie (true) ou non (false).
 
 
 Par exemple, pour afficher une zone d’e-mail, lorsqu’une case à cocher est sélectionnée :
 
-* Condition : la case Aimez-vous vous abonner à Magazine et Activités ? est cochée. (Oui ou non ?). Cette condition est définie dans la propriété `Visible` du formulaire.
-* Action (True) : la zone d’e-mail s’affiche. (Que se passe-t-il si Oui ?). L’`Visibility Expression` utilise la condition définie pour la propriété `visible` afin d’afficher dynamiquement les champs.
-* Action (False) : la zone d’e-mail est masquée. (Que se passe-t-il si Non) ? L’`Visibility Expression` utilise la condition définie pour la `Value` pour masquer dynamiquement les champs.
+- Condition : la case Aimez-vous vous abonner à Magazine et Activités ? est cochée. (Oui ou non ?). Cette condition est définie dans la propriété `Visible` du formulaire.
+- Action (True) : la zone d’e-mail s’affiche. (Que se passe-t-il si Oui ?). L’`Visibility Expression` utilise la condition définie pour la propriété `visible` afin d’afficher dynamiquement les champs.
+- Action (False) : la zone d’e-mail est masquée. (Que se passe-t-il si Non) ? L’`Visibility Expression` utilise la condition définie pour la `Value` pour masquer dynamiquement les champs.
 
 Pour obtenir des instructions détaillées, reportez-vous à la section [Afficher/masquer un champ d’e-mail en fonction d’une condition](#example-1-conditional-email-field)
 
@@ -41,8 +41,8 @@ Pour obtenir des instructions détaillées, reportez-vous à la section [Affiche
 
 Imaginez un interrupteur pour votre champ de formulaire. La propriété `Visible` est identique à ce commutateur, en ce qu’elle contrôle si le champ est initialement visible sur le formulaire lors de son premier chargement.
 
-* True (comme si l’interrupteur était activé) : le champ s’affiche sur le formulaire.
-* False (comme si l’interrupteur était désactivé) : le champ est masqué sur le formulaire.
+- True (comme si l’interrupteur était activé) : le champ s’affiche sur le formulaire.
+- False (comme si l’interrupteur était désactivé) : le champ est masqué sur le formulaire.
 
 Vous pouvez utiliser la formule de feuille de calcul (y compris la balise = ) pour écrire une formule à l’aide d’une logique de type feuille de calcul afin de déterminer la visibilité du champ. Vous pouvez utiliser les valeurs d’autres champs de votre formulaire dans cette formule. Par exemple, si une personne sélectionne « Individu » dans un champ de type d’enregistrement, vous pouvez masquer le champ de l’e-mail à l’aide d’une formule qui vérifie cette valeur.
 
@@ -73,10 +73,10 @@ Utilisez la variable `=FORMULATEXT("Address of the corresponding Value property)
 
 Voici une analogie pour consolider ces concepts :
 
-* Visible : imaginez un formulaire comme une maison. La propriété « Visible » est semblable à l’interrupteur pour chaque pièce (champ). Vous décidez si la pièce est initialement éclairée (visible) ou éteinte (masquée) lorsque quelqu’un entre dans la maison (ouvre le formulaire).
-* Expression visible : elle fonctionne comme un interrupteur avec détecteur de mouvement. La pièce (champ) peut être initialement éteinte (masquée), mais une formule (détecteur de mouvement) peut l’allumer (afficher le champ) si quelqu’un entre (modifie la valeur dans un autre champ).
-* Valeur : elle fonctionne comme un interrupteur variateur de lumière prédéfini (données initiales dans le champ). Les utilisateurs et utilisatrices peuvent alors régler la luminosité (modifier la valeur).
-* Expression de valeur : elle fonctionne comme une calculatrice fantaisiste intégrée à la balise de prix d’un produit de la maison (formulaire). La balise de prix (champ) indique le prix final en fonction d’une formule (par exemple, l’ajout de la taxe au prix de base) qui utilise d’autres informations comme le prix de base (valeur d’un autre champ).
+- Visible : imaginez un formulaire comme une maison. La propriété « Visible » est semblable à l’interrupteur pour chaque pièce (champ). Vous décidez si la pièce est initialement éclairée (visible) ou éteinte (masquée) lorsque quelqu’un entre dans la maison (ouvre le formulaire).
+- Expression visible : elle fonctionne comme un interrupteur avec détecteur de mouvement. La pièce (champ) peut être initialement éteinte (masquée), mais une formule (détecteur de mouvement) peut l’allumer (afficher le champ) si quelqu’un entre (modifie la valeur dans un autre champ).
+- Valeur : elle fonctionne comme un interrupteur variateur de lumière prédéfini (données initiales dans le champ). Les utilisateurs et utilisatrices peuvent alors régler la luminosité (modifier la valeur).
+- Expression de valeur : elle fonctionne comme une calculatrice fantaisiste intégrée à la balise de prix d’un produit de la maison (formulaire). La balise de prix (champ) indique le prix final en fonction d’une formule (par exemple, l’ajout de la taxe au prix de base) qui utilise d’autres informations comme le prix de base (valeur d’un autre champ).
 
 En combinant ces propriétés à des [fonctions de feuille de calcul](#spreadsheet-functions-for-rules), vous pouvez créer un large éventail de comportements dynamiques dans vos formulaires.
 
@@ -86,19 +86,19 @@ Le bloc de formulaires adaptatifs prend en charge diverses fonctions de feuille 
 
 ### Fonctions logiques
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110) : inverse l’état logique (TRUE devient FALSE et vice versa).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND) : renvoie TRUE uniquement si toutes les conditions spécifiées sont TRUE.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR) : renvoie TRUE si au moins l’une des conditions spécifiées est TRUE.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110) : inverse l’état logique (TRUE devient FALSE et vice versa).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND) : renvoie TRUE uniquement si toutes les conditions spécifiées sont TRUE.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR) : renvoie TRUE si au moins l’une des conditions spécifiées est TRUE.
 
 ### Fonctions conditionnelles
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110) : évalue une condition et renvoie une valeur spécifique si TRUE, et une autre valeur si FALSE.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110) : évalue une condition et renvoie une valeur spécifique si TRUE, et une autre valeur si FALSE.
 
 ### Fonctions mathématiques
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM) : ajoute des valeurs d’une plage de cellules spécifiée.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND) : arrondit un nombre à un nombre spécifié de décimales.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN) : renvoie la valeur la plus petite d’une plage de cellules spécifiée.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM) : ajoute des valeurs d’une plage de cellules spécifiée.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND) : arrondit un nombre à un nombre spécifié de décimales.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN) : renvoie la valeur la plus petite d’une plage de cellules spécifiée.
 
 ## Créer une règle
 
@@ -156,7 +156,7 @@ Voici quelques exemples des fonctions de feuille de calcul les plus courantes :
 
 **Fonctions logiques :**
 
-* **NOT() :** inverse l’état logique (TRUE devient FALSE et vice versa).
+- **NOT() :** inverse l’état logique (TRUE devient FALSE et vice versa).
 
   Exemple : masquer un champ « Confirmer l’e-mail » si le champ de l’e-mail n’est pas renseigné.
 
@@ -170,9 +170,9 @@ Voici quelques exemples des fonctions de feuille de calcul les plus courantes :
       ![AEM Forms - Formule d’expression visible](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND() : renvoie TRUE uniquement si toutes les conditions spécifiées valent TRUE.
+- AND() : renvoie TRUE uniquement si toutes les conditions spécifiées valent TRUE.
 
-   * Exemple : activer un bouton « Envoyer » uniquement si tous les champs obligatoires sont renseignés.
+   - Exemple : activer un bouton « Envoyer » uniquement si tous les champs obligatoires sont renseignés.
 
    1. Définissez la propriété `Visible` du bouton « Envoyer » sur :
 
@@ -202,9 +202,9 @@ Voici quelques exemples des fonctions de feuille de calcul les plus courantes :
 
       Cette formule affiche le bouton « Envoyer » (TRUE) uniquement si tous les champs (nom, e-mail, téléphone) sont renseignés (NOT(()) renvoie TRUE pour chacun), sinon elle masque le bouton (AND(multiple FALSES) = FALSE).
 
-* OR() : renvoie TRUE si au moins l’une des conditions spécifiées vaut TRUE.
+- OR() : renvoie TRUE si au moins l’une des conditions spécifiées vaut TRUE.
 
-   * Exemple : appliquer une remise si une personne saisit l’un des codes de coupon de remise applicables.
+   - Exemple : appliquer une remise si une personne saisit l’un des codes de coupon de remise applicables.
 
    1. Définissez la propriété `Visible` du champ « montant final » sur :
 
@@ -229,9 +229,9 @@ Voici quelques exemples des fonctions de feuille de calcul les plus courantes :
 
 **Fonctions de texte :**
 
-* IF() : évalue une condition et renvoie une valeur spécifique si TRUE, et une autre valeur si FALSE.
+- IF() : évalue une condition et renvoie une valeur spécifique si TRUE, et une autre valeur si FALSE.
 
-   * Exemple : affichage d’un message personnalisé en fonction d’une catégorie de produits sélectionnée.
+   - Exemple : affichage d’un message personnalisé en fonction d’une catégorie de produits sélectionnée.
 
    1. Définissez la propriété `Value` du champ `message` sur `Only upto 7 kg check-in lagguage is allowed!` :
 
@@ -264,7 +264,7 @@ Voici quelques exemples des fonctions de feuille de calcul les plus courantes :
 
 **Fonctions mathématiques :**
 
-* SUM() : ajoute des valeurs d’une plage de cellules spécifiée.
+- SUM() : ajoute des valeurs d’une plage de cellules spécifiée.
 
   Exemple : calcul du coût total des articles d’un panier.
 
@@ -273,7 +273,7 @@ SUM(price * quantity)
 
   Cette formule suppose que vous disposiez de champs distincts pour le « prix » et la « quantité » de chaque élément. Elle les multiplie et utilise SUM() pour additionner le coût total de tous les articles du panier.
 
-* ROUND() : arrondit un nombre à un nombre spécifié de décimales.
+- ROUND() : arrondit un nombre à un nombre spécifié de décimales.
 
   Exemple : arrondissement d’un montant de remise calculé à deux décimales.
 
@@ -282,7 +282,7 @@ ROUND(discount, 2)
 
   Cette formule arrondit la valeur de remise à deux décimales.
 
-* MIN() : renvoie la plus petite valeur d’une plage de cellules spécifiée.
+- MIN() : renvoie la plus petite valeur d’une plage de cellules spécifiée.
 
   Exemple : recherche de l’âge minimum requis pour un formulaire d’inscription en fonction d’un pays sélectionné.
 
@@ -303,9 +303,9 @@ Le bloc de formulaires adaptatifs prêt à l’emploi fournit des mises en œuvr
 
 Les fonctions personnalisées résident dans le fichier `[Adaptive form block]/functions.js`. Le processus de création comprend généralement les étapes suivantes :
 
-* Déclaration de fonction : définissez le nom de la fonction et ses paramètres (entrées qu’elle accepte).
-* Mise en œuvre logique : écrivez le code qui décrit les calculs ou les manipulations spécifiques effectués par la fonction.
-* Export de fonction : rendez la fonction accessible dans vos règles en l’exportant à partir du fichier approprié.
+- Déclaration de fonction : définissez le nom de la fonction et ses paramètres (entrées qu’elle accepte).
+- Mise en œuvre logique : écrivez le code qui décrit les calculs ou les manipulations spécifiques effectués par la fonction.
+- Export de fonction : rendez la fonction accessible dans vos règles en l’exportant à partir du fichier approprié.
 
 ### Exemple : fonction Year
 
@@ -314,9 +314,9 @@ Cet exemple illustre deux fonctions personnalisées qui imitent la fonction YEAR
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -324,11 +324,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

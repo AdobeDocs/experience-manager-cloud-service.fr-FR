@@ -4,7 +4,7 @@ description: Découvrez comment créer une ou plusieurs sections répétables da
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 92%
@@ -31,10 +31,10 @@ Prenons l’exemple d’un formulaire utilisé pour collecter des informations s
 * définir le nombre minimal ou maximal de répétitions pour un composant de formulaire adaptatif ;
 * utiliser l’éditeur de règles pour configurer les actions d’ajout ou de suppression pour les sections répétables
 
-Vous pouvez utiliser les composants [Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants à ces composants pour créer une section répétable dans un formulaire.
+Vous pouvez utiliser les composants [Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants à ces composants pour créer une section répétable dans un formulaire.
 
 
-Les exemples de ce document reposent sur le composant [Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Vous pouvez effectuer les mêmes étapes pour rendre les composants [Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) répétables.
+Les exemples de ce document reposent sur le composant [Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Vous pouvez effectuer les mêmes étapes pour rendre les composants [Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html#features?lang=fr), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html#features?lang=fr), [Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html#features?lang=fr) répétables.
 
 ## Ajouter ou supprimer des sections répétables dans un formulaire {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -49,6 +49,7 @@ Pour répéter un panneau dans le formulaire ou supprimer les panneaux répétab
 ![Onglet Accessibilité](/help/forms/assets/repeat-panel.png)
 
 Pour activer la répétition d’un panneau, procédez comme suit :
+
 1. Sélectionnez un conteneur de panneau et sélectionnez ![cmppr](/help/forms/assets/cmppr.png).
 1. Cliquez sur **Répéter le panneau** et mettez le bouton (bascule) sur **Activer la répétition du panneau**.
 1. Définissez les **répétitions minimales** comme requis pour les sections répétables minimales. Vous pouvez définir les **répétitions minimales** sur zéro pour ne pas répéter de panneaux ou pour supprimer les panneaux répétés. Par défaut, la valeur de répétition minimale est zéro.
@@ -135,30 +136,9 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
 >
 >
 
-<!-- 
->For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63_fr).      
--->
-
 >[!NOTE]
 >
-> Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
-
-<!--
-![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
--->
-
-<!--
-
-## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
-
-A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
-
-1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
-
-   Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
-
--->
+> Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, « _panelName.addInstance() ». Elle ajoute une instance du panneau supprimé.
 
 ## Utilisation des sous-formulaires qui se répètent du modèle de formulaire (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 

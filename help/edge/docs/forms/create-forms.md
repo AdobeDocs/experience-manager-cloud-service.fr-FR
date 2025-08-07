@@ -4,9 +4,9 @@ description: Commencer avec Edge Delivery Services pour AEM Forms. Créer rap
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ Ces formulaires envoient directement les données vers un fichier Microsoft Exc
 
 Avant de commencer, vérifiez que vous avez déjà effectué les étapes suivantes :
 
-* Vous avez configuré un [projet AEM à l’aide du modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouté un bloc de formulaires adaptatifs à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloné le référentiel GitHub correspondant sur votre ordinateur local.
+- Vous avez configuré un [projet AEM à l’aide du modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [ajouté un bloc de formulaires adaptatifs à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) et cloné le référentiel GitHub correspondant sur votre ordinateur local.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Assurez-vous d’avoir accès à Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+- Assurez-vous d’avoir accès à Google Sheets ou à Microsoft SharePoint. Pour configurer Microsoft SharePoint en tant que source de contenu, voir [Utilisation de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ Étape 1 : créez un formulaire à l’aide de Microsoft Excel ou Google Sheets.
@@ -105,9 +105,9 @@ Pour poursuivre la création du formulaire :
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` fait référence à la branche de votre référentiel GitHub.
-   * `<repository>` indique votre référentiel GitHub.
-   * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
+   - `<branch>` fait référence à la branche de votre référentiel GitHub.
+   - `<repository>` indique votre référentiel GitHub.
+   - `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
    Par exemple, si le référentiel de votre projet est nommé « wefinance », qu’il se trouve dans le compte « wkndform » et que vous utilisez la branche « main », l’URL ressemble à ceci :
 
@@ -164,6 +164,3 @@ Pour poursuivre la création du formulaire :
 [Préparez votre feuille de calcul](/help/edge/docs/forms/submit-forms.md) pour commencer à accepter les données lors de l’envoi du formulaire.
 
 
-## Voir également
-
-{{see-more-forms-eds}}

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 56%
 
 ---
@@ -142,6 +142,3 @@ Vous disposez désormais d’un modèle de données de formulaire (FDM) auquel d
 Pour plus d’informations, reportez-vous à la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md).
 
 
->[!MORELIKETHIS]
->
->* [Utilisation du modèle de données de formulaire (FDM)](/help/forms/using-form-data-model.md)

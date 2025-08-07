@@ -4,8 +4,8 @@ description: Découvrez comment créer et diffuser des formulaires hautement per
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Prise en main des formulaires sur AEM Edge Delivery Services
 
-<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) vous permet de diffuser des expériences web extrêmement rapides et évolutives à partir du serveur Edge. Ce guide explique **comment créer et publier des formulaires pour ces expériences**, avec une hiérarchie de recommandations claire :
 
@@ -41,11 +41,11 @@ Après avoir lu le guide, vous pourrez choisir la bonne méthode de création, c
 
 L’éditeur universel est un outil visuel de création par glisser-déposer destiné aux personnes spécialistes du marketing et de la conception, qui associe vitesse et puissance de niveau professionnel :
 
-* Modifications WYSIWYG en temps réel et prévisualisation des appareils.
-* Règles avancées et UI de validation : aucun code requis.
-* Intégration directe à des ressources, des workflows et un modèle de données de formulaire (FDM) d’AEM.
-* Transmission transparente aux développeurs et développeuses de composants personnalisés en JS/CSS classique.
-* Cibles d’envoi flexibles : commencez simplement avec le **service d’envoi de formulaires (FSS)** ou passez aux **actions d’envoi de l’instance de publication AEM** au fur et à mesure de l’évolution de vos besoins.
+- Modifications WYSIWYG en temps réel et prévisualisation des appareils.
+- Règles avancées et UI de validation : aucun code requis.
+- Intégration directe à des ressources, des workflows et un modèle de données de formulaire (FDM) d’AEM.
+- Transmission transparente aux développeurs et développeuses de composants personnalisés en JS/CSS classique.
+- Cibles d’envoi flexibles : commencez simplement avec le **service d’envoi de formulaires (FSS)** ou passez aux **actions d’envoi de l’instance de publication AEM** au fur et à mesure de l’évolution de vos besoins.
 
 > **Recommandation** : démarrez chaque nouveau projet de formulaire avec l’éditeur universel, sauf si votre équipe est axée à 100 % sur les documents et que le formulaire est très basique.
 
@@ -54,10 +54,10 @@ L’éditeur universel est un outil visuel de création par glisser-déposer des
 
 La création basée sur des documents est idéale pour créer des formulaires peu complexes à l’aide d’outils familiers tels que Microsoft Word, Google Docs ou Google Sheets. Cette méthode convient parfaitement aux équipes de contenu qui ont besoin d’une méthode rapide et simple pour créer des formulaires.
 
-* Définissez des champs de formulaire dans un tableau (documents) ou sous forme de lignes (feuilles de calcul).
-* Prend en charge la validation de champ de base et Google reCAPTCHA pour la protection contre le spam.
-* Les envois de formulaires sont gérés exclusivement par le biais du service d’envoi de formulaires.
-* Publication instantanée : toutes les modifications apportées au document source sont immédiatement répercutées sur le site sans nécessiter de pipeline de déploiement.
+- Définissez des champs de formulaire dans un tableau (documents) ou sous forme de lignes (feuilles de calcul).
+- Prend en charge la validation de champ de base et Google reCAPTCHA pour la protection contre le spam.
+- Les envois de formulaires sont gérés exclusivement par le biais du service d’envoi de formulaires.
+- Publication instantanée : toutes les modifications apportées au document source sont immédiatement répercutées sur le site sans nécessiter de pipeline de déploiement.
 
 
 ### Incorporer des formulaires dans la création de documents (DA)

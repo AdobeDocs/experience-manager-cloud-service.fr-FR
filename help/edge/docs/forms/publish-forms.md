@@ -4,10 +4,10 @@ description: Publier un Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 78%
+source-wordcount: '585'
+ht-degree: 100%
 
 ---
 
@@ -17,20 +17,20 @@ Une fois que vous êtes en mesure de partager votre formulaire avec vos clientes
 
 ![Écosystème de création basé sur des documents](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
-## Prérequis
+## Conditions préalables
 
-* Vous disposez d’un projet AEM basé sur [le modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou vous avez [ajouté un bloc de formulaire adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
-* Votre formulaire a été entièrement testé et est prêt à l’emploi.
-* Votre [feuille de calcul est configurée](/help/edge/docs/forms/submit-forms.md) pour accepter les données.
+- Vous disposez d’un projet AEM basé sur [le modèle standard AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou vous avez [ajouté un bloc de formulaire adaptatif à votre projet AEM existant](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- Votre formulaire a été entièrement testé et est prêt à l’emploi.
+- Votre [feuille de calcul est configurée](/help/edge/docs/forms/submit-forms.md) pour accepter les données.
 
 
 ## Publier votre formulaire
 
-+++ 1. Publier votre feuille de calcul
++++ &#x200B;1. Publier votre feuille de calcul
 
 1. Ouvrez votre compte Microsoft SharePoint ou votre compte Google Drive et accédez au répertoire de votre projet AEM Edge Delivery.
 
-1. Ouvrez la feuille de calcul qui contient votre formulaire. Par exemple, le classeur Excel [query](/help/edge/assets/enquiry.xlsx) de Microsoft.
+1. Ouvrez la feuille de calcul qui contient votre formulaire. Par exemple, le classeur Microsoft Excel de formulaires [enquiry](/help/edge/assets/enquiry.xlsx).
 
 1. Utilisez [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) pour prévisualiser la feuille.
 
@@ -47,18 +47,18 @@ Une fois que vous êtes en mesure de partager votre formulaire avec vos clientes
        https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
-   * `<branch>` fait référence à la branche de votre référentiel GitHub.
-   * `<repository>` indique votre référentiel GitHub.
-   * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
+   - `<branch>` fait référence à la branche de votre référentiel GitHub.
+   - `<repository>` indique votre référentiel GitHub.
+   - `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le compte « wkndform » et que vous utilisez la branche « principale » et le formulaire « query », l’URL ressemble à ce qui suit :
+   Par exemple, si le référentiel de votre projet est nommé « wefinance », qu’il se trouve dans le compte « wkndform », que vous utilisez la branche « main » et le formulaire « enquiry », l’URL ressemble à ceci :
 
    `https://main--wefinance--wkndform.aem.live/enquiry.json`
 &lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
-+++ 2. Ajouter le formulaire à votre page web
++++ &#x200B;2. Ajouter le formulaire à votre page web
 
 Ajoutez `<form>.json` à une page web pour faciliter l’interaction client, ce qui permet aux utilisateurs et aux utilisatrices de remplir et d’envoyer le formulaire sans effort.
 
@@ -67,11 +67,11 @@ Pour ajouter le formulaire à votre page web :
 
 1. Accédez à votre compte Microsoft SharePoint ou à votre compte Google Drive et accédez à votre `[AEM Edge Delivery project directory]`.
 
-1. Ouvrez un document dans lequel vous avez l’intention d’incorporer le formulaire. Par exemple, vous pouvez ouvrir le fichier [query-form.docx](/help/edge/assets/enquiry-form.docx) ou créer un nouveau document.
+1. Ouvrez un document dans lequel vous avez l’intention d’incorporer le formulaire. Vous pouvez, par exemple, ouvrir le fichier [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) ou créer un nouveau document.
 
 1. Identifiez la section du document dans laquelle vous souhaitez insérer le formulaire puis accédez-y.
 
-1. Ajoutez un bloc nommé « Form » dans le fichier. Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « windform » et vous utilisez la branche « principale ».
+1. Ajoutez un bloc nommé « Formulaire » au fichier. Par exemple, si le référentiel de votre projet s’appelle « wefinance », la personne propriétaire du compte est « wkndforms » et vous utilisez la branche « main ».
 
    | Formulaire |
    |---|
@@ -86,9 +86,9 @@ Pour ajouter le formulaire à votre page web :
    >
    > Assurez-vous que l’URL est formatée en tant que lien hypertexte et non sous forme de texte brut.
 
-   Utilisez l’URL d’aperçu (.page URL) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production.
+   Utilisez l’URL de prévisualisation (URL .page) à des fins de développement ou de test, ou l’URL de publication (.live) pour la production.
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « windform » et vous utilisez la branche « principale ».
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », la personne propriétaire du compte est « wkndforms » et vous utilisez la branche « main ».
 
    Voici quelques exemples d’URL de prévisualisation et de publication :
 
@@ -125,6 +125,4 @@ Si vous rencontrez une erreur similaire au message suivant, cela indique que la 
 +++
 
 
-## Voir également
 
-{{see-more-forms-eds}}

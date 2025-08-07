@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 100%
 
 ---
 
@@ -23,20 +23,20 @@ L’envoi d’un formulaire est la dernière étape essentielle du parcours de l
 
 À la fin de ce document, vous aurez appris à :
 
-* Configurer différents types d’actions d’envoi pour vos formulaires
-* Configurer des envois de point d’entrée REST pour l’intégration à des systèmes externes
-* Configurer les envois d’e-mails pour les réponses de formulaire
-* Implémenter des actions d’envoi personnalisées pour des besoins professionnels spécifiques
-* Gérer la validation du formulaire et les scénarios d’erreur lors de l’envoi
+- Configurer différents types d’actions d’envoi pour vos formulaires
+- Configurer des envois de point d’entrée REST pour l’intégration à des systèmes externes
+- Configurer les envois d’e-mails pour les réponses de formulaire
+- Implémenter des actions d’envoi personnalisées pour des besoins professionnels spécifiques
+- Gérer la validation du formulaire et les scénarios d’erreur lors de l’envoi
 
 ### Audience cible
 
 Ce guide est conçu pour les publics suivants :
 
-* **Développeurs et développeuses de formulaires** qui implémentent la logique d’envoi
-* **Intégrateurs et intégratrices système** qui connectent des formulaires aux systèmes principaux
-* **Analystes métier** qui définissent des workflows de formulaire
-* **Architectes techniques** qui conçoivent des processus d’envoi de formulaire
+- **Développeurs et développeuses de formulaires** qui implémentent la logique d’envoi
+- **Intégrateurs et intégratrices système** qui connectent des formulaires aux systèmes principaux
+- **Analystes métier** qui définissent des workflows de formulaire
+- **Architectes techniques** qui conçoivent des processus d’envoi de formulaire
 
 ### Actions d’envoi disponibles
 
@@ -49,16 +49,16 @@ L’éditeur universel fournit deux types d’actions d’envoi principaux :
 
 Avant de configurer les actions d’envoi, vérifiez les points suivants :
 
-* Accéder à l’éditeur universel
-* Autorisations appropriées pour la configuration des formulaires
-* Comprendre votre point d’entrée d’envoi cible ou la configuration des e-mails
+- Accéder à l’éditeur universel
+- Autorisations appropriées pour la configuration des formulaires
+- Comprendre votre point d’entrée d’envoi cible ou la configuration des e-mails
 
 Une action Envoyer spécifie la destination des données collectées par le biais d’un formulaire adaptatif. Le processus d’envoi commence lorsque l’utilisateur ou l’utilisatrice clique sur le bouton **[!UICONTROL Envoyer]** du formulaire. AEM Forms propose deux types d’actions d’envoi décrites ci-dessous et vous permet de créer et d’utiliser des actions d’envoi personnalisées pour répondre à vos besoins spécifiques. Les actions d’envoi prêtes à l’emploi sont les suivantes :
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [Envoyer vers le point d’entrée REST](#rest-endpoint-submission-ue)
-* [Envoyer un e-mail](#email-submission-ue)
+- [Envoyer vers le point d’entrée REST](#rest-endpoint-submission-ue)
+- [Envoyer un e-mail](#email-submission-ue)
 
 
 ### Envoyer vers le point d’entrée REST {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Une action Envoyer spécifie la destination des données collectées par le biai
 L’action Envoyer vers le point d’entrée REST est utilisée pour envoyer les données de formulaire envoyées à un point d’entrée REST spécifié. Le point d’entrée peut appartenir à un serveur interne sur lequel le formulaire est hébergé ou à un serveur externe en utilisant un chemin relatif ou un chemin absolu. Pour envoyer des données au serveur AEM qui héberge le formulaire, utilisez un chemin d’accès relatif correspondant au chemin racine du serveur AEM. Par exemple, `/content/forms/af/SampleForm.html`. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ Pour configurer un point d’entrée REST :
 
 >[!NOTE]
 >
-> * Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, `/content/restEndPoint`. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
-> * Pour publier des données sur un serveur externe, indiquez une URL. Le format d’URL est le suivant : `https://host:port/path_to_rest_end_point`. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
+> - Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, `/content/restEndPoint`. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
+> - Pour publier des données sur un serveur externe, indiquez une URL. Le format d’URL est le suivant : `https://host:port/path_to_rest_end_point`. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
 
 ### Envoyer un e-mail {#email-submission-ue}
 
@@ -176,11 +176,8 @@ L’option Lors de l’envoi vous permet de configurer un message d’action d�
 1. Sélectionnez votre **[!UICONTROL Bloc de formulaire adaptatif]**.
 1. Cliquez sur l’icône des propriétés ![propriétés](/help/forms/assets/Smock_Properties_18_N.svg).
 1. En cliquant, l’option suivante s’affiche :
-   * **[!UICONTROL Lors de l’envoi]** : cette option vous permet de personnaliser un message à afficher lorsqu’un formulaire est envoyé. Par défaut, un message personnalisé « Merci pour votre envoi du formulaire » s’affiche pour l’utilisateur ou l’utilisatrice lorsqu’un formulaire est envoyé.
+   - **[!UICONTROL Lors de l’envoi]** : cette option vous permet de personnaliser un message à afficher lorsqu’un formulaire est envoyé. Par défaut, un message personnalisé « Merci pour votre envoi du formulaire » s’affiche pour l’utilisateur ou l’utilisatrice lorsqu’un formulaire est envoyé.
 Vous pouvez également personnaliser le message de remerciement lors de l’envoi du formulaire en sélectionnant l’option **[!UICONTROL Afficher le message]** et en ajoutant/modifiant votre message dans l’**Éditeur** de texte enrichi.
 
 
-## Voir également
-
-{{universal-editor-see-also}}
 

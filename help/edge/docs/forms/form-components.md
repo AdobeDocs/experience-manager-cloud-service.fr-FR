@@ -4,9 +4,9 @@ description: Ce document présente une vue d’ensemble des composants de formul
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ Voici une vue d’ensemble des composants disponibles :
 
 ### Champs d’entrée
 
-* Tous les [types d’entrées](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/input#input_types) HTML5 valides et [textarea](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/textarea). Par exemple : bouton, case à cocher, couleur, date, heure locale, e-mail, fichier, contenu masqué, image, mois, nombre, mot de passe, bouton radio, plage, réinitialisation, envoi, numéro de téléphone, texte, heure, URL et semaine.
+- Tous les [types d’entrées](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/input#input_types) HTML5 valides et [textarea](https://developer.mozilla.org/fr-fr/docs/Web/HTML/Element/textarea). Par exemple : bouton, case à cocher, couleur, date, heure locale, e-mail, fichier, contenu masqué, image, mois, nombre, mot de passe, bouton radio, plage, réinitialisation, envoi, numéro de téléphone, texte, heure, URL et semaine.
 
 ### Contrôles de sélection
 
-* [Groupes de cases à cocher](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : pour sélectionner plusieurs options.
-* [Groupes de boutons radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : pour sélectionner une seule option dans un groupe.
-* [Menus déroulants](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : pour afficher un menu d’options. Par exemple, une zone de liste déroulante.
+- [Groupes de cases à cocher](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) : pour sélectionner plusieurs options.
+- [Groupes de boutons radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio) : pour sélectionner une seule option dans un groupe.
+- [Menus déroulants](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) : pour afficher un menu d’options. Par exemple, une zone de liste déroulante.
 
 ### Conteneurs
 
-* Panneaux/Conteneurs : pour regrouper les éléments de formulaire associés en vue d’une meilleure organisation. Il s’agit d’une combinaison de [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et de [légende](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+- Panneaux/Conteneurs : pour regrouper les éléments de formulaire associés en vue d’une meilleure organisation. Il s’agit d’une combinaison de [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) et de [légende](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Propriétés des composants
@@ -64,8 +64,3 @@ Chaque composant de formulaire est accompagné de différentes propriétés qui 
 | Répétable | Tous | Propriété booléenne pour `fieldset` indiquant qu’un jeu de champs particulier peut être répété selon le nombre de fois `Min` et `Max` spécifié. La propriété `Min` doit être définie sur 1 ou plus. Ne définissez pas la propriété `Min` sur 0. |
 | Expression visible | Tous | Une expression visible fait référence à une formule de feuille de calcul, indiquée par la balise « = », utilisée pour contrôler la visibilité d’un champ. Dans cette formule, seule la propriété value d’autres champs peut être utilisée, ce qui permet de gérer facilement la visibilité des champs dans le système. |
 | Expression de valeur | Tous | Une expression de valeur fait référence à une formule de feuille de calcul, indiquée par la balise « = », utilisée pour contrôler la valeur d’un champ. Dans cette formule, seule la propriété value d’autres champs peut être utilisée, ce qui permet de gérer facilement la valeur des champs dans le système. |
-
-
-## Voir également
-
-{{see-more-forms-eds}}

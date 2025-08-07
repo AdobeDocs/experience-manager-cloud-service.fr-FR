@@ -4,17 +4,14 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1804'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 96%
 
 ---
 
 # Créer un composant personnalisé en création WYSIWYG
-
-<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
-
 
 Edge Delivery Services pour AEM Forms offre des possibilités de personnalisation, ce qui permet aux développeurs et développeuses front-end de créer des composants de formulaire personnalisés. Ces composants personnalisés s’intègrent de manière transparente à l’expérience de création WYSIWYG, ce qui permet aux créateurs et créatrices de formulaires de les ajouter, de les configurer et de les gérer facilement dans l’éditeur de formulaires. Grâce aux composants personnalisés, les créateurs et créatrices peuvent améliorer leurs fonctionnalités tout en assurant un processus de création fluide et intuitif.
 
@@ -24,8 +21,8 @@ Ce document décrit les étapes à suivre pour créer des composants personnalis
 
 Avant de commencer à créer votre composant personnalisé, vous devez :
 
-* posséder des connaissances de base sur les [composants HTML natifs](/help/edge/docs/forms/form-components.md) ;
-* savoir [appliquer un style aux champs de formulaire en fonction du type de champ à l’aide des sélecteurs CSS](/help/edge/docs/forms/style-theme-forms.md).
+- posséder des connaissances de base sur les [composants HTML natifs](/help/edge/docs/forms/form-components.md) ;
+- savoir [appliquer un style aux champs de formulaire en fonction du type de champ à l’aide des sélecteurs CSS](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Créer un composant personnalisé
 
@@ -52,9 +49,9 @@ Ajoutez un dossier et des fichiers pour votre nouveau composant personnalisé da
    1. Ouvrez votre projet AEM et accédez à `../blocks/form/components/`.
    1. Ajoutez un dossier pour votre composant personnalisé sur `../blocks/form/components/<component_name>`. Dans cet exemple, nous allons créer un dossier nommé `range`.
    1. Accédez au dossier nouvellement créé sur `../blocks/form/components/<component_name>`. Par exemple, accédez à `../blocks/form/components/range` et ajoutez les fichiers suivants :
-      * `/blocks/form/components/range/_range.json` : contient la définition du composant personnalisé.
-      * `../blocks/form/components/range/range.css` : définit le style du composant personnalisé.
-      * `../blocks/form/components/range/range.js` : personnalise le composant personnalisé au moment de l’exécution.
+      - `/blocks/form/components/range/_range.json` : contient la définition du composant personnalisé.
+      - `../blocks/form/components/range/range.css` : définit le style du composant personnalisé.
+      - `../blocks/form/components/range/range.js` : personnalise le composant personnalisé au moment de l’exécution.
 
         ![Ajouter le composant personnalisé pour la création](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ Ajoutez un dossier et des fichiers pour votre nouveau composant personnalisé da
 
    Pour ajouter la définition, les champs à ajouter dans le fichier `_range.json` sont les suivants :
 
-   * **title** : titre du composant qui s’affiche dans l’éditeur universel.
-   * **id** : identifiant unique du composant.
-   * **fieldType** : Forms prend en charge différents **fieldType** pour capturer des types spécifiques d’entrée utilisateur. Le [fieldType pris en charge se trouve dans la section Octet supplémentaire](#supported-fieldtypes).
-   * **resourceType** : chaque composant personnalisé est associé à un type de ressource en fonction de son fieldType. Le [resourceType pris en charge se trouve dans la section Octet supplémentaire](#supported-resourcetype).
-   * **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
-   * **fd:viewType** : représente le nom du composant personnalisé. Il s’agit de l’identifiant unique du composant. Vous devez créer une vue personnalisée pour le composant.
+   - **title** : titre du composant qui s’affiche dans l’éditeur universel.
+   - **id** : identifiant unique du composant.
+   - **fieldType** : Forms prend en charge différents **fieldType** pour capturer des types spécifiques d’entrée utilisateur. Le [fieldType pris en charge se trouve dans la section Octet supplémentaire](#supported-fieldtypes).
+   - **resourceType** : chaque composant personnalisé est associé à un type de ressource en fonction de son fieldType. Le [resourceType pris en charge se trouve dans la section Octet supplémentaire](#supported-resourcetype).
+   - **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
+   - **fd:viewType** : il représente le nom du composant personnalisé. Il s’agit de l’identifiant unique du composant. Vous devez créer une vue personnalisée pour le composant.
 
 Le fichier `_range.json`, après avoir ajouté la définition du composant, est le suivant :
 
@@ -118,17 +115,17 @@ Le composant personnalisé comprend un modèle de composant qui spécifie les pr
 
    1. **Créer un modèle**
 
-      * Dans le tableau de modèles, ajoutez un objet et définissez l’`id` du modèle de composant pour qu’il corresponde à la propriété `fd:viewType` configurée précédemment dans la définition du composant.
-      * Incluez un tableau de champs dans cet objet.
+      - Dans le tableau de modèles, ajoutez un objet et définissez l’`id` du modèle de composant pour qu’il corresponde à la propriété `fd:viewType` configurée précédemment dans la définition du composant.
+      - Incluez un tableau de champs dans cet objet.
 
    2. **Définir des champs pour la boîte de dialogue Propriété**
 
-      * Chaque objet du tableau des champs doit être un composant de type conteneur, ce qui lui permet d’apparaître sous la forme d’un onglet dans la boîte de dialogue **Propriété**.
-      * Certains champs peuvent faire référence à des propriétés réutilisables disponibles dans `models/form-common`.
+      - Chaque objet du tableau des champs doit être un composant de type conteneur, ce qui lui permet d’apparaître sous la forme d’un onglet dans la boîte de dialogue **Propriété**.
+      - Certains champs peuvent faire référence à des propriétés réutilisables disponibles dans `models/form-common`.
 
    3. **Utiliser un modèle de composant existant comme référence**
 
-      * Vous pouvez copier le contenu d’un modèle de composant existant correspondant au `fieldType` de votre choix et le modifier si nécessaire. Par exemple, le composant `number-input` est étendu pour créer un composant **range (plage)** afin que nous puissions utiliser le tableau de modèles de `models/form-components/_number-input.json` comme référence.
+      - Vous pouvez copier le contenu d’un modèle de composant existant correspondant au `fieldType` de votre choix et le modifier si nécessaire. Par exemple, le composant `number-input` est étendu pour créer un composant **range (plage)** afin que nous puissions utiliser le tableau de modèles de `models/form-components/_number-input.json` comme référence.
 
    Après l’ajout du composant, le fichier `_range.json` ressemble à celui-ci :
 
@@ -186,10 +183,10 @@ Pour ajouter la propriété personnalisée Step Value (Valeur d’étape), ajout
 
 Le fragment de code JSON définit une propriété personnalisée appelée **Step Value** (Valeur d’étape) pour un composant **Range** (Plage). Vous trouverez ci-dessous une répartition de chaque champ :
 
-* **component** : indique le type de champ de saisie utilisé dans la boîte de dialogue Propriété. Dans ce cas, `number` indique que le champ accepte des valeurs numériques.
-* **name** : identifiant de la propriété, utilisé pour la référencer dans la logique du composant. Ici, la `stepValue` représente le paramètre de valeur d’étape de la plage.
-* **label** : nom d’affichage de la propriété tel qu’il apparaît dans la boîte de dialogue Propriété.
-* **valueType** : définit le type de données attendu pour la propriété. La valeur `number` garantit que seules les entrées numériques sont autorisées.
+- **component** : indique le type de champ de saisie utilisé dans la boîte de dialogue Propriété. Dans ce cas, `number` indique que le champ accepte des valeurs numériques.
+- **name** : identifiant de la propriété, utilisé pour la référencer dans la logique du composant. Ici, la `stepValue` représente le paramètre de valeur d’étape de la plage.
+- **label** : nom d’affichage de la propriété tel qu’il apparaît dans la boîte de dialogue Propriété.
+- **valueType** : définit le type de données attendu pour la propriété. La valeur `number` garantit que seules les entrées numériques sont autorisées.
 
 Vous pouvez désormais utiliser `stepValue` comme propriété personnalisée dans les propriétés JSON de `range.js` et implémenter un comportement dynamique en fonction de sa valeur au moment de l’exécution.
 
@@ -263,46 +260,48 @@ Pour vous assurer que le composant personnalisé apparaît dans la liste des com
 1. Recherchez le tableau de composants dans l’objet qui contient `id="form"`.
 1. Ajoutez la valeur `fd:viewType` de `definitions[]` au tableau de composants de l’objet avec `id="form"`.
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![filtre du composant](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. Enregistrer votre composant personnalisé
 
-Pour permettre au bloc de formulaire de reconnaître le composant personnalisé et de charger ses propriétés définies dans le modèle de composant lors de la création de formulaire, ajoutez la valeur `fd:viewType` de la définition de composant au fichier `mappings.js`.
+Pour permettre au bloc de formulaire de reconnaître le composant personnalisé et de charger ses propriétés définies dans le modèle de composant lors de la création de formulaire, ajoutez la valeur de `fd:viewType` de la définition de composant au fichier `mappings.js`.
+
 Pour enregistrer un composant :
+
 1. Accédez au fichier `/blocks/form/mappings.js`.
 1. Recherchez le tableau `customComponents[]`.
 1. Ajoutez la valeur `fd:viewType` du tableau `definitions[]` au tableau `customComponents[]`.
@@ -347,7 +346,7 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -392,6 +391,7 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    float: right;
    }
    ```
+
    Le code vous permet de définir le style et l’aspect visuel du composant personnalisé.
 
 1. Pour ajouter les fonctionnalités, accédez au fichier `/blocks/form/components/range/range.js` et ajoutez la ligne de code suivante :
@@ -407,7 +407,7 @@ Vous pouvez modifier des composants personnalisés à l’aide d’annotations p
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -460,18 +460,18 @@ La copie d’écran ci-dessous illustre le composant « range » (plage) mis �
 
 ## Questions fréquentes
 
-* **Si j’ajoute des styles à la fois dans component.css et dans forms.css, lesquels sont prioritaires ?**
+- **Si j’ajoute des styles à la fois dans component.css et dans forms.css, lesquels sont prioritaires ?**
 Lorsque des styles sont définis à la fois dans `component.css` et dans **forms.css**, `component.css` est prioritaire. En effet, les styles au niveau du composant sont plus spécifiques et remplacent les styles globaux de `forms.css`.
 
-* **Mon composant personnalisé n’est pas visible dans la liste des composants disponibles dans l’éditeur universel. Comment puis-je résoudre ce problème ?**
+- **Mon composant personnalisé n’est pas visible dans la liste des composants disponibles dans l’éditeur universel. Comment puis-je résoudre ce problème ?**
 Si votre composant personnalisé n’apparaît pas, vérifiez les fichiers suivants pour vous assurer que le composant est correctement enregistré :
-   * **component-definition.json** : vérifiez que le composant est correctement défini.
-   * **component-filters.json** : assurez-vous que le composant est autorisé dans les sections appropriées.
-   * **component-models.json** : vérifiez que le modèle de composant est correctement configuré.
+   - **component-definition.json** : vérifiez que le composant est correctement défini.
+   - **component-filters.json** : assurez-vous que le composant est autorisé dans les sections appropriées.
+   - **component-models.json** : vérifiez que le modèle de composant est correctement configuré.
 
 ## Bonnes pratiques
 
-* Vous pouvez [configurer un environnement de développement AEM local](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) pour développer localement des styles et composants personnalisés.
+- Vous pouvez [configurer un environnement de développement AEM local](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) pour développer localement des styles et composants personnalisés.
 
 
 ## Octet supplémentaire
@@ -496,19 +496,17 @@ Si votre composant personnalisé n’apparaît pas, vérifiez les fichiers suiva
 ### fieldTypes pris en charge
 
 Les fieldTypes pris en charge pour les formulaires sont les suivants :
-* text-input
-* number-input
-* date-input
-* panel
-* checkbox
-* drop-down
-* radio-group
-* plain-text
-* file-input
-* email
-* image
-* button
 
-## Voir également
+- text-input
+- number-input
+- date-input
+- panel
+- checkbox
+- drop-down
+- radio-group
+- plain-text
+- file-input
+- email
+- image
+- button
 
-{{universal-editor-see-also}}

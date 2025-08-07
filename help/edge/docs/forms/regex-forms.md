@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ Voici quelques expressions régulières que vous pouvez utiliser pour améliorer
 
 Garantit au moins 8 caractères avec :
 
-* Lettre minuscule (a-z)
-* Lettre majuscule (A-Z)
-* Chiffre (0-9)
-* Caractère spécial (@$!%*?&amp;)
+- Lettre minuscule (a-z)
+- Lettre majuscule (A-Z)
+- Chiffre (0-9)
+- Caractère spécial (@$!%*?&amp;)
 
 
 ## Adresse e-mail
@@ -76,7 +76,7 @@ Valide les dates au format AAAA-MM-JJ.
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-Valide les heures au format HH:MM (format 24 heures).
+Valide les heures au format HH:MM (format de 24 heures).
 
 
 ## Code postal (format américain)

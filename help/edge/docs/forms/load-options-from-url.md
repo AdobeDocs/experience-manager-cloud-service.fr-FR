@@ -4,10 +4,10 @@ description: Les options de la liste déroulante sont incluses dans une feuille 
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ Les formulaires comprennent souvent des menus déroulants que les utilisateurs e
 
 Les avantages du chargement des options de liste déroulante depuis une feuille de calcul distincte sont les suivants :
 
-* Gestion simplifiée : conserver les options de liste déroulante dans un emplacement centralisé facilite les mises à jour et les ajouts.
-* Efficacité améliorée : vous évitez de devoir ajouter manuellement de longues listes d’options dans la définition du formulaire.
+- Gestion simplifiée : conserver les options de liste déroulante dans un emplacement centralisé facilite les mises à jour et les ajouts.
+- Efficacité améliorée : vous évitez de devoir ajouter manuellement de longues listes d’options dans la définition du formulaire.
 
 ![Options de liste déroulante](/help/forms/assets/drop-down-options.png)
 
 
 À la fin de cet article, vous saurez accomplir ce qui suit :
 
-* [Définir les options dans une feuille de calcul distincte](#define-options)
-* [Ajouter l’URL pour charger les options de liste déroulante](#add-url)
+- [Définir les options dans une feuille de calcul distincte](#define-options)
+- [Ajouter l’URL pour charger les options de liste déroulante](#add-url)
 
 ## Définir les options dans une feuille distincte {#define-options}
 
@@ -39,8 +39,8 @@ Définir les options dans une feuille de calcul distincte
    1. Ajoutez une nouvelle feuille. Par exemple, « shared-country ».
 1. Définissez les colonnes d’options :
 ajoutez deux colonnes : « Option » et « Valeur ».
-   * « Option » définit le texte affiché dans le menu déroulant.
-   * La « Valeur » définit la valeur envoyée lorsqu’une personne sélectionne l’option.
+   - « Option » définit le texte affiché dans le menu déroulant.
+   - La « Valeur » définit la valeur envoyée lorsqu’une personne sélectionne l’option.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ saisissez les options de votre pays dans la colonne « Option » (et la colonn
 
 1. Prévisualisez et publiez la feuille `shared-country` à l’aide d’[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Par exemple, si le référentiel de votre projet s’appelle « wefinance », il se trouve sous le propriétaire du compte « wkndform » et vous utilisez la branche « main », l’URL qui présente la feuille de `shared-country` :
+   Par exemple, si le référentiel de votre projet s’appelle « wefinance », que la personne propriétaire du compte est « wkndform » et que vous utilisez la branche « main », l’URL affiche la feuille `shared-country` :
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ Vous pouvez faire référence à la [feuille de calcul de demande](/help/edge/as
 
 Après l’intégration de l’URL dans la définition de formulaire pour charger les options de liste déroulante, les options de la liste déroulante `Destination` commencent à s’afficher à partir de l’URL.
 
-Par exemple, si le référentiel de votre projet s’appelle « wefinance », qu’il se trouve sous le propriétaire du compte « wkndform » et que vous utilisez la branche « main », l’URL ci-dessous affiche le formulaire `enquiry` avec les options enregistrées dans la feuille séparée :
+Par exemple, si le référentiel de votre projet s’appelle « wefinance », que la personne propriétaire du compte est « wkndforms » et que vous utilisez la branche « main », l’URL ci-dessous affiche le formulaire `enquiry` avec les options enregistrées dans une feuille séparée :
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Voir également
-
-{{see-more-forms-eds}}
 
 

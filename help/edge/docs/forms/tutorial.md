@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1921'
+ht-degree: 98%
 
 ---
 
@@ -23,10 +23,10 @@ Ce tutoriel AEM Forms vous guide tout au long des étapes de création, de pré
 
 ## Prérequis
 
-* Vous disposez d’un compte GitHub et vous comprenez les concepts de base de Git.
-* Vous disposez d’un compte Google ou Microsoft SharePoint.
-* Vous comprenez les principes de base du HTML, du CSS et du JavaScript.
-* Node/npm est installé pour le développement local.
+- Vous disposez d’un compte GitHub et vous comprenez les concepts de base de Git.
+- Vous disposez d’un compte Google ou Microsoft SharePoint.
+- Vous comprenez les principes de base du HTML, du CSS et du JavaScript.
+- Node/npm est installé pour le développement local.
 
 **Attention.** Ce tutoriel utilise macOS, Chrome et Visual Studio Code. Bien que les étapes puissent être adaptées à d’autres configurations, les captures d’écran et des éléments spécifiques de l’interface utilisateur peuvent différer en fonction du système d’exploitation, du navigateur et de l’éditeur de code que vous avez choisi d’utiliser.
 
@@ -63,9 +63,9 @@ Le modèle standard AEM Forms vous permet de prendre rapidement en main un proj
 
    Félicitations. Vous avez désormais un nouveau site web en cours d’exécution dans `https://<branch>--<repo>--<owner>.aem.page/`.
 
-   * `<branch>` fait référence à la branche de votre référentiel GitHub.
-   * `<repository>` indique votre référentiel GitHub.
-   * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
+   - `<branch>` fait référence à la branche de votre référentiel GitHub.
+   - `<repository>` indique votre référentiel GitHub.
+   - `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
    Par exemple, si le nom de la branche est `main`, le référentiel est `wefinance` et la personne propriétaire est `wkndforms`, le site web serait opérationnel à l’adresse `https://main--wefinance--wkndforms.aem.page`
 &lt;!—(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ Pour prévisualiser du contenu non publié :
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>` fait référence à la branche de votre référentiel GitHub.
-   * `<repository>` indique votre référentiel GitHub.
-   * `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
+   - `<branch>` fait référence à la branche de votre référentiel GitHub.
+   - `<repository>` indique votre référentiel GitHub.
+   - `<owner>` fait référence au nom d’utilisateur ou d’utilisatrice de votre compte GitHub qui héberge votre référentiel GitHub.
 
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
@@ -241,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
+1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant <owner> la personne propriétaire du référentiel et <repo> le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,9 +281,9 @@ Pour effectuer l’intégration, procédez comme suit :
 
 1. Copiez et collez les dossiers et fichiers suivants du [modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) dans votre projet AEM :
 
-   * Dossier [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
-   * Fichier [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
-   * Fichier [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+   - Dossier [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+   - Fichier [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+   - Fichier [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 1. Accédez au fichier `/scripts/editor-support.js` dans votre projet AEM et mettez-le à jour avec les modifications du [fichier editor-support.js dans le modèle standard AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js).
 1. Accédez au fichier `/models/_section.json` dans votre projet AEM et ajoutez « form » et « embed-adaptive-form » au tableau de composants de l’objet `filters` :
 
@@ -363,13 +363,9 @@ C’est terminé. Le bloc de formulaires adaptatifs fait désormais partie de vo
 
 Assurez-vous d’avoir un processus de génération GitHub fluide en résolvant les problèmes potentiels :
 
-* **Résoudre l’erreur de chemin d’accès du module :**
+- **Résoudre l’erreur de chemin d’accès du module :**
 si vous rencontrez l’erreur « Impossible de résoudre le chemin d’accès au module &quot;scripts/lib-franklin.js&quot; », accédez au fichier [EDS Project]/blocks/forms/form.js. Mettez à jour l’instruction d’import en remplaçant le fichier lib-franklin.js par le fichier aem.js.
 
-* **Gérer les erreurs de lint :**
+- **Gérer les erreurs de lint :**
 si vous rencontrez des erreurs de lint, vous avez la possibilité de les contourner. Ouvrez le fichier /package.json [Projet EDS] et modifiez le script « lint » de `"lint": "npm run lint:js && npm run lint:css"` en `"lint": "echo 'skipping linting for now'"`. Enregistrez le fichier et validez les modifications apportées à votre projet GitHub.
 
-
-## Voir également
-
-{{see-more-forms-eds}}

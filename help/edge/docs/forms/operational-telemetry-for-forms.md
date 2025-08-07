@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '789'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
@@ -30,9 +30,9 @@ https://data.aem.live/?ext=forms
 
 Pour vous connecter au tableau de bord de surveillance des Edge Delivery Services d’AEM Forms as a Cloud Service, saisissez les informations suivantes :
 
-* **URL** : l’URL est spécifique au site ou au domaine de l’utilisateur ou de l’utilisatrice. Les utilisateurs et utilisatrices ont la possibilité de filtrer le site ou le domaine pour afficher le tableau de bord en fonction de leurs besoins.
+- **URL** : l’URL est spécifique au site ou au domaine de l’utilisateur ou de l’utilisatrice. Les utilisateurs et utilisatrices ont la possibilité de filtrer le site ou le domaine pour afficher le tableau de bord en fonction de leurs besoins.
 
-* **Clé domaine** : l’utilisateur ou l’utilisatrice génère manuellement la clé de domaine. Pour obtenir les clés de domaine de vos formulaires, contactez votre représentant ou représentante Adobe.
+- **Clé domaine** : l’utilisateur ou l’utilisatrice génère manuellement la clé de domaine. Pour obtenir les clés de domaine de vos formulaires, contactez votre représentant ou représentante Adobe.
 
 ### Tableau de bord de surveillance des Edge Delivery Services d’AEM Forms as a Cloud Service
 
@@ -46,36 +46,34 @@ L’illustration ci-dessous présente le tableau de bord des Edge Delivery Ser
 
 Ce tableau de bord fournit des informations clés sur la manière dont les visiteurs et visiteuses interagissent avec les formulaires de votre site web Adobe Experience Manager (AEM). En surveillant ces mesures, vous pouvez identifier les zones à améliorer et optimiser vos formulaires pour une meilleure expérience client et des taux de conversion supérieurs :
 
-* **Vues de formulaire** : suivre le nombre total d’affichages des formulaires
-* **Envois de formulaire** : suivre le nombre total d’envois terminés
+- **Vues de formulaire** : suivre le nombre total d’affichages des formulaires
+- **Envois de formulaire** : suivre le nombre total d’envois terminés
 
-* **Largest Contentful Paint** : indique la vitesse de chargement de l’URL, soit le temps nécessaire pour afficher l’élément de contenu le plus volumineux visible dans la fenêtre d’affichage à partir du moment où l’utilisateur ou l’utilisatrice demande l’URL. Cet élément de contenu volumineux peut être une image, une vidéo ou un élément de texte de niveau bloc important. Les performances de vitesse de chargement des URL sont classées comme suit :
-   * **Bon** : si le temps de chargement est de 2,5 secondes ou moins.
-   * **OK** : si le temps de chargement est supérieur à 2,5 secondes mais inférieur ou égal à 4 secondes.
-   * **Mauvais** : si le temps de chargement dépasse 4 secondes.
+- **Largest Contentful Paint** : indique la vitesse de chargement de l’URL, soit le temps nécessaire pour afficher l’élément de contenu le plus volumineux visible dans la fenêtre d’affichage à partir du moment où l’utilisateur ou l’utilisatrice demande l’URL. Cet élément de contenu volumineux peut être une image, une vidéo ou un élément de texte de niveau bloc important. Les performances de vitesse de chargement des URL sont classées comme suit :
+   - **Bon** : si le temps de chargement est de 2,5 secondes ou moins.
+   - **OK** : si le temps de chargement est supérieur à 2,5 secondes mais inférieur ou égal à 4 secondes.
+   - **Mauvais** : si le temps de chargement dépasse 4 secondes.
 
-* **Décalage cumulé de disposition** : mesure la somme totale de tous les scores individuels de décalage de la disposition pour chaque décalage de disposition inattendu qui survient tout au long de la durée de vie de la page. Cette mesure joue un rôle essentiel pour déterminer les performances d’une page, car lorsqu’un élément de page se décale lorsqu’un utilisateur ou une utilisatrice tente d’interagir avec celui-ci, cela conduit à une mauvaise expérience d’utilisation. Ce score est compris entre zéro et n’importe quel nombre positif : zéro indique qu’il n’y a pas de décalage, tandis qu’un nombre plus élevé signifie qu’il y a davantage de décalages de la disposition sur la page. Les mesures de performances utilisées pour évaluer les scores de décalages de la disposition sont classées comme suit :
+- **Décalage cumulé de disposition** : mesure la somme totale de tous les scores individuels de décalage de la disposition pour chaque décalage de disposition inattendu qui survient tout au long de la durée de vie de la page. Cette mesure joue un rôle essentiel pour déterminer les performances d’une page, car lorsqu’un élément de page se décale lorsqu’un utilisateur ou une utilisatrice tente d’interagir avec celui-ci, cela conduit à une mauvaise expérience d’utilisation. Ce score est compris entre zéro et n’importe quel nombre positif : zéro indique qu’il n’y a pas de décalage, tandis qu’un nombre plus élevé signifie qu’il y a davantage de décalages de la disposition sur la page. Les mesures de performances utilisées pour évaluer les scores de décalages de la disposition sont classées comme suit :
 
-   * **Bon** : si le score de décalage de la mise en page est égal ou inférieur à 0,1.
-   * **OK** : si le score de décalage de la mise en page est supérieur à 0,1 mais inférieur à 0,25.
-   * **Mauvais** : si le score du décalage de la mise en page dépasse 0,25.
+   - **Bon** : si le score de décalage de la mise en page est égal ou inférieur à 0,1.
+   - **OK** : si le score de décalage de la mise en page est supérieur à 0,1 mais inférieur à 0,25.
+   - **Mauvais** : si le score du décalage de la mise en page dépasse 0,25.
 
-* **Interaction to Next Paint (INP)** : évalue la vitesse de réaction d’une page aux interactions des utilisateurs et des utilisatrices, en tenant compte du temps nécessaire à la page pour répondre aux clics, aux appuis et aux saisies du clavier lors de la visite d’un utilisateur ou d’une utilisatrice sur la page. La valeur finale est l’interaction la plus longue observée, sans tenir compte des anomalies. Les mesures de performances pour Interaction to Next Paint sont classées comme suit :
-   * **Bon** : si la durée entre les actions de l’utilisateur ou de l’utilisatrice est de 200 millisecondes (ms) ou moins.
-   * **OK** : si la durée est supérieure à 200 ms mais inférieure ou égale à 500 ms.
-   * **Mauvais** : si la durée dépasse 500 ms.
+- **Interaction to Next Paint (INP)** : évalue la vitesse de réaction d’une page aux interactions des utilisateurs et des utilisatrices, en tenant compte du temps nécessaire à la page pour répondre aux clics, aux appuis et aux saisies du clavier lors de la visite d’un utilisateur ou d’une utilisatrice sur la page. La valeur finale est l’interaction la plus longue observée, sans tenir compte des anomalies. Les mesures de performances pour Interaction to Next Paint sont classées comme suit :
+   - **Bon** : si la durée entre les actions de l’utilisateur ou de l’utilisatrice est de 200 millisecondes (ms) ou moins.
+   - **OK** : si la durée est supérieure à 200 ms mais inférieure ou égale à 500 ms.
+   - **Mauvais** : si la durée dépasse 500 ms.
 
 ## Informations exploitables
 
 L’analyse de ces mesures permet d’identifier des opportunités pour ce qui suit :
 
-* Simplifier les formulaires et réduire le nombre de champs.
-* Améliorer la précision des formulaires grâce à des instructions et des libellés clairs.
-* Optimiser la disposition des formulaires pour une réactivité sur les appareils mobiles.
-* Résoudre les problèmes techniques qui ralentissent le chargement des formulaires.
+- Simplifier les formulaires et réduire le nombre de champs.
+- Améliorer la précision des formulaires grâce à des instructions et des libellés clairs.
+- Optimiser la disposition des formulaires pour une réactivité sur les appareils mobiles.
+- Résoudre les problèmes techniques qui ralentissent le chargement des formulaires.
 
 En vous concentrant sur ces domaines, vous pouvez créer des formulaires plus faciles à utiliser et inciter les visiteurs et visiteuses à les remplir, ce qui augmente les taux de conversion.
 
-## Voir également
 
-{{see-more-forms-eds}}

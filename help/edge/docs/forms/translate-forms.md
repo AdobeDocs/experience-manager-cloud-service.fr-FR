@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,8 +21,8 @@ Dans Edge Delivery Services, la traduction d’un formulaire implique de conve
 
 À la fin de cet article, vous saurez accomplir ce qui suit :
 
-* [Traduire des formulaires dans Google Drive](#translate-form-google-drive)
-* [Traduire des formulaires dans un site SharePoint](#translate-form-sharepoint)
+- [Traduire des formulaires dans Google Drive](#translate-form-google-drive)
+- [Traduire des formulaires dans un site SharePoint](#translate-form-sharepoint)
 
 ## Traduire des formulaires dans Google Drive {#translate-form-google-drive}
 
@@ -66,11 +66,11 @@ Reportez-vous à l’URL ci-dessous pour consulter le formulaire ainsi que sa tr
 
 ## Problèmes connus {#known-issues}
 
-* Les libellés du formulaire sont traduits dans la langue localisée spécifiée dans la feuille `shared-default`, mais les messages d’erreur s’affichent dans la langue par défaut du navigateur.
+- Les libellés du formulaire sont traduits dans la langue localisée spécifiée dans la feuille `shared-default`, mais les messages d’erreur s’affichent dans la langue par défaut du navigateur.
 
   ![Message d’erreur](/help/forms/assets/translate-error-message.png)
 
-* Lorsque vous ouvrez le calendrier, la liste déroulante du calendrier s’affiche dans la langue par défaut du navigateur.
+- Lorsque vous ouvrez le calendrier, la liste déroulante du calendrier s’affiche dans la langue par défaut du navigateur.
 
   ![Message d’erreur](/help/forms/assets/translate-calender-display.png)
 
@@ -81,16 +81,13 @@ Reportez-vous à l’URL ci-dessous pour consulter le formulaire ainsi que sa tr
 
 **Réponse** : pour saisir du texte dans une langue localisée spécifique, ajustez les paramètres du clavier de votre appareil. Reportez-vous aux liens suivants pour obtenir des instructions sur la manière de procéder :
 
-* [Configurer votre appareil Mac pour saisir des données dans une autre langue](https://support.apple.com/fr-fr/guide/mac-help/mchlp1406/mac)
-* [Configurer votre appareil Windows pour saisir des données dans une autre langue](https://support.microsoft.com/fr-fr/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [Configurer votre appareil Android ou votre iPhone/iPad pour saisir des données dans une autre langue](https://support.google.com/gboard/answer/7068494?hl=fr&amp;co=GENIE.Platform%3DAndroid)
+- [Configurer votre appareil Mac pour saisir des données dans une autre langue](https://support.apple.com/fr-fr/guide/mac-help/mchlp1406/mac)
+- [Configurer votre appareil Windows pour saisir des données dans une autre langue](https://support.microsoft.com/fr-fr/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [Configurer votre appareil Android ou votre iPhone/iPad pour saisir des données dans une autre langue](https://support.google.com/gboard/answer/7068494?hl=fr&co=GENIE.Platform%3DAndroid)
 
 
-**Question** : comment puis-je récupérer une liste des langues utilisées dans la fonction `GOOGLETRANSLATE` ?
+**Question** : comment puis-je récupérer une liste de paramètres régionaux utilisés dans la fonction `GOOGLETRANSLATE` ?
 
-**Réponse** : vous pouvez vous reporter à la [documentation officielle de Google](https://cloud.google.com/translate/docs/languages) pour obtenir une liste complète des langues utilisées dans la fonction GOOGLETRANSLATE.
+**Réponse** : vous pouvez vous reporter à la [documentation officielle de Google](https://cloud.google.com/translate/docs/languages) pour obtenir une liste complète des paramètres régionaux utilisés dans GOOGLETRANSLATE.
 
-## Voir également
-
-{{see-more-forms-eds}}
 

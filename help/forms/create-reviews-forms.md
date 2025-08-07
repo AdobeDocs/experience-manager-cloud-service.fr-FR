@@ -5,21 +5,21 @@ topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '704'
 ht-degree: 91%
 
 ---
 
 # Création et gestion des révisions de formulaires{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+<span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base. </span>
 
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Révision {#review}
@@ -35,7 +35,7 @@ Une révision est un mécanisme qui permet à un ou plusieurs réviseurs ou rév
    * **Titre** (obligatoire) : il peut contenir des caractères alphanumériques, des tirets et des traits de soulignement.
    * **Description** (factultative) : description de la finalité ou du contenu de la révision.
    * **Échéance** (facultative) : date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
-   * **Nom du réviseur ou de la réviseuse** : au moins un nom doit être indiqué. Utilisez la zone liste déroulante pour ajouter des réviseurs ou réviseuses, en saisissant une liste de tous les noms correspondants. Sélectionnez un nom, puis cliquez sur **Ajouter**. Dans la section suivante de l’onglet **Réviseurs**, les noms de tous les réviseurs s’affichent.
+   * **Nom du réviseur ou de la réviseuse** : au moins un nom doit être indiqué. Utilisez la zone liste déroulante pour ajouter des réviseurs ou réviseuses, en saisissant une liste de tous les noms correspondants. Sélectionnez un nom, puis cliquez sur **Ajouter**. La section suivante de l’onglet **Réviseurs** affiche les noms de tous les réviseurs.
 
 1. Cliquez sur **Démarrer** pour lancer une révision.
 
@@ -116,17 +116,3 @@ Cette section décrit ce qui se produit lorsque **vous modifiez ou mettez fin à
    1. **Toutes** : la révision s’affiche dans la section des révisions précédentes. Plus aucun commentaire ne peut être ajouté.
 
    ![Révision terminée](assets/review-complete-imgg.png).
-
-
-## Voir également {#see-also}
-
-{{see-also}}
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
-
--->

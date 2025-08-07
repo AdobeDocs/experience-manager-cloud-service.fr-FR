@@ -4,10 +4,10 @@ description: Découvrez comment créer des fragments de formulaire dans l’édi
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Les formulaires comprennent souvent des sections courantes telles que les coordonnées, les détails d’identification ou les accords de consentement. Les développeurs et développeuses de formulaires créent ces sections à chaque création de formulaire, ce qui est répétitif et prend beaucoup de temps.
 Pour éliminer cette duplication des efforts, l’éditeur universel permet de créer des segments de formulaire réutilisables, tels que des panneaux ou des groupes de champs, une seule fois et de les réutiliser dans différents formulaires. Ces segments réutilisables, modulaires et autonomes s’appellent des fragments de formulaire. Par exemple, le même fragment de contact d’urgence peut être utilisé dans différentes sections d’un formulaire, comme pour les coordonnées des personnes employées et en charge de la supervision.
@@ -24,17 +24,17 @@ Pour éliminer cette duplication des efforts, l’éditeur universel permet de c
 
 ## Fonctionnalités des fragments de formulaire Edge Delivery Services
 
-* **Conservation de la cohérence avec les fragments de formulaire**
+- **Conservation de la cohérence avec les fragments de formulaire**
 Vous pouvez intégrer des fragments à différents formulaires, ce qui vous permet de maintenir des dispositions cohérentes et un contenu normalisé.
 
   >[!NOTE]
   >
   > Avec une approche « Modifier une fois, refléter partout », toute mise à jour apportée à un fragment s’applique automatiquement à tous les formulaires en mode de prévisualisation. Cependant, en mode de publication, vous devez publier le fragment ou republier le formulaire pour refléter les modifications.
 
-* **Ajout de fragments de formulaire plusieurs fois dans un formulaire**
+- **Ajout de fragments de formulaire plusieurs fois dans un formulaire**
 Vous pouvez ajouter plusieurs fois un fragment de formulaire dans un formulaire et configurer ses propriétés de liaison de données aux sources de données ou aux schémas.
 
-* **Utilisation de fragments dans des fragments**
+- **Utilisation de fragments dans des fragments**
 Vous pouvez créer des fragments de formulaire imbriqués, ce qui signifie que vous pouvez faire glisser un fragment dans un autre fragment, et avoir une structure de fragment imbriquée.
 
   >[!NOTE]
@@ -43,23 +43,23 @@ Vous pouvez créer des fragments de formulaire imbriqués, ce qui signifie que v
 
 ## Remarques concernant l’utilisation des fragments de formulaire Edge Delivery Services
 
-* Vous devez ajouter la même URL GitHub à la fois dans le fragment et dans le formulaire dans lequel vous avez l’intention d’utiliser le fragment.
-* Vous ne pouvez pas modifier un fragment de formulaire dans un formulaire. Pour apporter des modifications, modifiez le fragment de formulaire autonome.
+- Vous devez ajouter la même URL GitHub à la fois dans le fragment et dans le formulaire dans lequel vous avez l’intention d’utiliser le fragment.
+- Vous ne pouvez pas modifier un fragment de formulaire dans un formulaire. Pour apporter des modifications, modifiez le fragment de formulaire autonome.
 
 ## Prérequis
 
-* [Configurez votre référentiel GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) pour établir une connexion entre votre environnement AEM et le référentiel GitHub.
-* Si vous utilisez déjà Edge Delivery Services, ajoutez la dernière version du [bloc de formulaires adaptatifs](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) à votre référentiel GitHub.
-* L’instance de création AEM Forms comprend un modèle basé sur Edge Delivery Services.
-* Conservez à portée de main l’URL de votre instance de création AEM Forms as a Cloud Service et de votre référentiel GitHub.
+- [Configurez votre référentiel GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) pour établir une connexion entre votre environnement AEM et le référentiel GitHub.
+- Si vous utilisez déjà Edge Delivery Services, ajoutez la dernière version du [bloc de formulaires adaptatifs](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) à votre référentiel GitHub.
+- L’instance de création AEM Forms comprend un modèle basé sur Edge Delivery Services.
+- Conservez à portée de main l’URL de votre instance de création AEM Forms as a Cloud Service et de votre référentiel GitHub.
 
 ## Utilisation de fragments de formulaire Edge Delivery Services
 
 Vous pouvez créer des fragments de formulaire Edge Delivery Services dans l’éditeur universel et ajouter les fragments créés aux formulaires Edge Delivery Services. Vous pouvez effectuer les actions suivantes avec les fragments de formulaire Edge Delivery Services :
 
-* [Création de fragments de formulaire](#creating-form-fragments)
-* [Ajout de fragments de formulaire à un formulaire](#adding-form-fragments-to-a-form)
-* [Gestion de fragments de formulaire](#managing-form-fragments)
+- [Création de fragments de formulaire](#creating-form-fragments)
+- [Ajout de fragments de formulaire à un formulaire](#adding-form-fragments-to-a-form)
+- [Gestion de fragments de formulaire](#managing-form-fragments)
 
 ### Création de fragments de formulaire
 
@@ -84,14 +84,14 @@ Pour créer un fragment de formulaire dans l’éditeur universel, procédez com
 
    ![Affichage du type de modèle dans l’onglet Modèle de formulaire](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **Modèle de données de formulaire (FDM)** : intégrez des objets et des services de modèle de données provenant de sources de données dans votre fragment. Choisissez le modèle de données de formulaire (FDM) si votre formulaire nécessite la lecture et l’écriture de données provenant de plusieurs sources.
+   - **Modèle de données de formulaire (FDM)** : intégrez des objets et des services de modèle de données provenant de sources de données dans votre fragment. Choisissez le modèle de données de formulaire (FDM) si votre formulaire nécessite la lecture et l’écriture de données provenant de plusieurs sources.
 
-   * **Schéma JSON** : intégrez votre formulaire à un système back-end en associant un schéma JSON qui définit la structure des données. Cela vous permet d’ajouter du contenu dynamique à l’aide des éléments de schéma.
-   * **Aucun** : indique que le fragment doit être créé de zéro sans utiliser de modèle de formulaire.
+   - **Schéma JSON** : intégrez votre formulaire à un système back-end en associant un schéma JSON qui définit la structure des données. Cela vous permet d’ajouter du contenu dynamique à l’aide des éléments de schéma.
+   - **Aucun** : indique que le fragment doit être créé de zéro sans utiliser de modèle de formulaire.
 
    >[!NOTE]
    >
-   > Pour savoir comment intégrer des formulaires ou des fragments à un modèle de données de formulaire (FDM) dans l’éditeur universel afin d’utiliser diverses sources de données back-end, [cliquez ici](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Pour savoir comment intégrer des formulaires ou des fragments à un modèle de données de formulaire (FDM) dans l’éditeur universel afin d’utiliser diverses sources de données principales, consultez [Intégration de formulaires à un modèle de données de formulaire dans l’éditeur universel](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Facultatif) Spécifiez la **Date de publication** ou la **Date de dépublication** du fragment dans l’onglet **Avancé**.
 
@@ -211,10 +211,8 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire depu
 
 ## Bonnes pratiques
 
-* Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
-* Toute expression, tout script ou tout style d’un fragment de formulaire autonome est conservé lorsqu’il est inséré par référence ou incorporé dans un formulaire.
-* Lorsque vous publiez un formulaire, les fragments de formulaire insérés par référence dans le formulaire sont automatiquement publiés.
+- Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
+- Toute expression, tout script ou tout style d’un fragment de formulaire autonome est conservé lorsqu’il est inséré par référence ou incorporé dans un formulaire.
+- Lorsque vous publiez un formulaire, les fragments de formulaire insérés par référence dans le formulaire sont automatiquement publiés.
 
-## Voir également
 
-{{universal-editor-see-also}}
