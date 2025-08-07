@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
