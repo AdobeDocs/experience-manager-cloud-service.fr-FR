@@ -90,7 +90,7 @@ Content Hub comprend désormais une option **Tout afficher** dans les filtres, c
 
 Bénéficiez du chargement automatisé de nouveaux fichiers et dossiers, d’opérations de fichiers améliorées, d’une découverte de ressources plus intelligente et d’une intégration transparente à AEM, ce qui rend la gestion de contenu plus rapide, plus claire et plus intuitive.
 
-Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
