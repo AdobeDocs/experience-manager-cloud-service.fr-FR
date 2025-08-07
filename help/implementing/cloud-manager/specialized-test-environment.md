@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 8%
+source-wordcount: '519'
+ht-degree: 10%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta privé. Pour vous inscrire à la version bêta privée, voir [Environnement de test spécialisé](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta privé. Pour vous inscrire à la version bêta privée, voir [Environnement de test spécialisé](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 L’environnement de test spécialisé, ou DevXL, est un nouveau type d’environnement Cloud Manager que vous pouvez créer. Il est conçu pour prendre en charge des cas d’utilisation avancés tels que les tests d’acceptation utilisateur (UAT) et la validation des performances. Contrairement aux environnements de développement, de développement rapide ou d’évaluation traditionnels, les environnements DevXL fonctionnent en dehors du pipeline de déploiement de production. Ils vous offrent donc une plus grande flexibilité tout en maintenant une isolation stricte afin d’éviter toute interférence avec les workflows de production.
 
@@ -31,7 +31,7 @@ DevXL est conçu pour refléter la taille, l’évolutivité et les configuratio
 | Taille de l’environnement | Correspond à l’environnement d’évaluation. |
 | Isolement | Complètement isolé des autres environnements. |
 | Pipelines de code | Identique à l’environnement de développement (validation, création, déploiement). |
-| Copie de contenu | Autorisé depuis l’environnement de production ou d’évaluation. |
+| Copier le contenu | Autorisé depuis un environnement de production, d’évaluation ou de test spécialisé. |
 | Restauration du contenu | Identique à l’environnement de développement. |
 | Journaux d’accès | Identique à l’environnement de développement. |
 | Developer Console | Identique à l’environnement de développement. |
@@ -52,9 +52,8 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
 
 1. Utilisez l’une des méthodes suivantes :
 
-   Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut être dû à un manque d’autorisations ou à une dépendance aux ressources sous licence.
-
    * Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sur la carte **Environnements**, cliquez sur **Ajouter un environnement**.
+Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut être dû à un manque d’autorisations ou à une dépendance aux ressources sous licence.
 
    ![Carte Environnements](assets/no-environments.png)
 
@@ -67,7 +66,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
 
    ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 

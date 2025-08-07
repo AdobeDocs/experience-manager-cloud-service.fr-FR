@@ -3,27 +3,28 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2321'
 ht-degree: 27%
 
 ---
 
 # Ajout de référentiels externes dans Cloud Manager {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 
-Les clients peuvent désormais également intégrer leurs référentiels Git Azure DevOps dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS hérités (Visual Studio Team Services).
+Les clients peuvent désormais également intégrer leurs référentiels Git Azure DevOps (Beta) dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS hérités (Visual Studio Team Services).
 
 * Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
 * Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans cet article ne sont disponibles que via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version Private Beta, voir [Apporter votre propre Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>La prise en charge ajoutée pour les opérations de développement Azure décrites dans cet article est disponible uniquement via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version bêta, voir [Apporter votre propre Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts).
 
 
 ## Configuration d’un référentiel externe
@@ -120,7 +121,7 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 
 Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB Opérations de développement Azure]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -238,7 +239,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 | --- |
 | Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Demande d’extraction : créée<li>Demande d’extraction : mise à jour<li>Demandes d’extraction : fusionnées<li>Demande d’extraction : commentaire<li>Référentiel : Push</li></li></li></ul></ul></ul> |
 
->[!TAB Opérations de développement Azure]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 

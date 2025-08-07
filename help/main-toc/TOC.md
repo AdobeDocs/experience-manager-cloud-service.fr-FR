@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51993fe0eabb1e96931e6d64757e165b1b0d0ea9
+source-git-commit: 56c51ea764cc59687766e7f8b069b083e0677af8
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6609'
 ht-degree: 98%
 
 ---
@@ -128,6 +128,7 @@ ht-degree: 98%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [En cours](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -1280,6 +1281,7 @@ ht-degree: 98%
          + [Introduction aux pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurer un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurer un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Configuration d’un pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Déployer votre code](/help/implementing/cloud-manager/deploy-code.md)
@@ -1303,6 +1305,7 @@ ht-degree: 98%
          + [Présentation d’Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Ajouter un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Créer votre premier site Edge Delivery en un seul clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Configurer la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Configurer votre source de contenu](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Gérer les sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
