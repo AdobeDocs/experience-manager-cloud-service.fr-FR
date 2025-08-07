@@ -3,9 +3,9 @@ title: Restaurer le code Source précédent déployé
 description: Découvrez comment restaurer un environnement à sa dernière version &ndash; réussie ; aucune exécution de pipeline requise.
 feature: Operations
 role: Admin
-badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
+source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->La fonctionnalité décrite dans cet article n’est disponible que via le programme Alpha. Pour vous inscrire à la version alpha, consultez [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta. Pour vous inscrire à la version bêta, voir [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
@@ -31,9 +31,9 @@ Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant 
 La fonctionnalité **Restaurer le code précédent déployé** n’est disponible que lorsque **chaque** condition ci-dessous est remplie :
 
 * Vous détenez les autorisations **Environment Restore Create**. Pour plus d’informations sur la gestion des autorisations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
-* Votre entreprise est inscrite au programme Alpha et l’indicateur de fonctionnalité est activé.
+* Votre entreprise est inscrite au programme bêta et l’indicateur de fonctionnalité est activé.
 * Le programme s’exécute sur AEM as a Cloud Service.
-* L&#39;environnement choisi est un environnement `Development` (limite temporaire d&#39;Alpha).
+* L&#39;environnement choisi est un environnement `Development` (limite temporaire de Beta).
 * Le dernier pipeline pour cet environnement s’est terminé avec succès et s’est exécuté il y a **de 30 jours**.
 * Le statut de l’environnement est *En cours d’exécution* et aucun pipeline n’est en cours.
 
