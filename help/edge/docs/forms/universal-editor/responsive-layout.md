@@ -172,7 +172,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Utilisez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Regroupez les champs associés dans chaque panneau.
 3. Ajoutez des en-têtes clairs pour chaque section.
 4. Assurer un espacement adéquat entre les panneaux.
@@ -205,7 +205,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le composant [Wizard](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Utilisez le composant [Wizard](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Divisez les formulaires complexes en étapes logiques (3 à 7 étapes sont optimales).
 3. Incluez des indicateurs de progression pour l’orientation de l’utilisateur.
 4. Fournissez des commandes de navigation claires (Suivant, Précédent, Enregistrer).
@@ -245,7 +245,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le composant [Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Utilisez le composant [Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Regroupez les contenus facultatifs associés dans chaque section.
 3. Utilisez des en-têtes de section descriptifs.
 4. Définissez les états d’ouverture/de fermeture par défaut appropriés.

@@ -16,7 +16,7 @@ ht-degree: 7%
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-L’intégration d’AEM Forms à [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) permet aux utilisateurs de tirer parti des fonctionnalités de Marketo Engage pour élaborer une logique commerciale à partir des données capturées et automatiser les workflows, y compris les campagnes intelligentes et l’automatisation des e-mails. Le formulaire configuré peut envoyer les données capturées à Marketo Engage pour traitement.
+L’intégration d’AEM Forms à [Adobe Marketo Engage](https://experienceleague.adobe.com/fr/docs/marketo/using/home) permet aux utilisateurs de tirer parti des fonctionnalités de Marketo Engage pour élaborer une logique commerciale à partir des données capturées et automatiser les workflows, y compris les campagnes intelligentes et l’automatisation des e-mails. Le formulaire configuré peut envoyer les données capturées à Marketo Engage pour traitement.
 
 ## Avantages de l’intégration de Marketo Engage aux formulaires
 
@@ -52,7 +52,7 @@ Le tableau ci-dessous présente les quelques raisons de choisir AEM Forms plutô
 Quelques considérations à prendre en compte lors de l’intégration de Marketo Engage à AEM Forms :
 
 * AEM ne prend en charge que la base de données Personnes (Leads) parmi les différentes bases de données Marketo.
-* Marketo permet la [création de 10 objets personnalisés](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) en tant qu’objets définis par l’utilisateur pour stocker des données spécialisées au-delà des champs standard des prospects, en prenant en charge les besoins spécifiques de l’entreprise.
+* Marketo permet la [création de 10 objets personnalisés](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) en tant qu’objets définis par l’utilisateur pour stocker des données spécialisées au-delà des champs standard des prospects, en prenant en charge les besoins spécifiques de l’entreprise.
 * AEM ne peut accéder aux objets personnalisés que s’ils sont associés à la base de données du lead
 
 ## Conditions préalables à l’intégration de Marketo Engage aux formulaires
@@ -60,7 +60,7 @@ Quelques considérations à prendre en compte lors de l’intégration de Market
 Vous trouverez ci-dessous les conditions préalables à la connexion de Marketo Engage à AEM Forms :
 
 * Une licence Adobe Marketo Engage valide
-* Une instance de travail de Marketo Engage pour [récupérer l’ID client et le secret client](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) afin de créer une configuration cloud.
+* Une instance de travail de Marketo Engage pour [récupérer l’ID client et le secret client](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api) afin de créer une configuration cloud.
 
 ## Créez une configuration de service cloud pour connecter AEM Forms (Adaptive Forms) à Marketo Engage
 
