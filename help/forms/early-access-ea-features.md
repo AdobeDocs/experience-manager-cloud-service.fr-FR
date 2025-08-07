@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 24%
+source-wordcount: '2837'
+ht-degree: 21%
 
 ---
 
@@ -116,6 +116,8 @@ Les communications interactives sur le cloud constituent une solution puissante 
 
 * **Flexibilité du format** : sortie aux formats PDF, HTML, PCL, PostScript® et ZPL.
 
+* **Éditeur de règles** : créez des actions dynamiques basées sur les données directement dans vos documents à l’aide d’une interface intuitive de type pointer-cliquer. Définissez facilement une logique conditionnelle, automatisez les workflows et personnalisez le contenu sans écrire de code.
+
 #### Cas d’utilisation :
 
 * Institutions financières générant des relevés de compte
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms vous permet d’effectuer le rendu des modèles de formula
 * **Enregistrement d’un brouillon** : enregistrez un formulaire HTML5 en tant que brouillon et reprenez le remplissage du formulaire ultérieurement.
 
 Prêt à démarrer ? La documentation [Présentation d’HTML5 forms](/help/forms/introductionhtml5.md) fournit un aperçu complet et un guide de prise en main pour cette innovation.
+
+### Interface de ligne de commande d’AEM Forms Scaffolder pour composants personnalisés
+
+Accélérez votre développement AEM Forms Edge Delivery Services avec l’outil d’interface de ligne de commande AEM Forms. Cette interface de ligne de commande vous permet de générer instantanément le code et le câblage nécessaires pour lancer le développement de composants personnalisés, sans tracas.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+**Fonctionnalités principales :**
+
+* **Génération rapide de modèles automatique** : générez instantanément la structure et le code des nouveaux composants personnalisés, ce qui réduit le temps de configuration manuelle.
+* **Bonnes pratiques intégrées** : l’outil suit les modèles recommandés pour AEM Forms Edge Delivery Services, en assurant la cohérence et la maintenabilité.
+* **Productivité des développeurs** : concentrez-vous sur la création d’une logique commerciale et d’une interface utilisateur, tandis que l’interface de ligne de commande gère des tâches de configuration répétitives.
+* **Intégration transparente** : les composants générés sont prêts à être utilisés et à s’intégrer à vos projets AEM Forms existants.
+
+Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dans le cadre du programme d’accès anticipé pour les déploiements de Forms as a Cloud Service. Pour demander l’accès, envoyez l’ID d’organisation et les détails du programme par e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre adresse officielle.
+
+### Outil d’intégration d’API pour les données de formulaire dynamique
+
+L’outil d’intégration d’API permet aux auteurs de formulaires de créer des formulaires dynamiques et intelligents qui récupèrent et renseignent automatiquement les données des API REST externes en fonction des interactions utilisateur. Cette fonctionnalité d’intégration sans code transforme les formulaires statiques en interfaces réactives de collecte de données.
+
+Les principales fonctionnalités sont les suivantes :
+
+* **Interface de configuration visuelle** : créez des intégrations d’API par le biais d’une interface intuitive de type pointer-cliquer, sans codage personnalisé
+* **Population de données en temps réel** : renseignez automatiquement les champs de formulaire en fonction des entrées de l’utilisateur (par exemple, remplissez automatiquement la ville et l’état lorsque l’utilisateur saisit le code postal)
+* **Prise en charge flexible des API** : connectez-vous à toute API REST accessible au public avec la prise en charge des méthodes GET/POST, de l’authentification et des réponses JSON/XML
+* **Déclencheurs basés sur des règles** : définissez à quel moment les appels API sont déclenchés à l’aide du moteur de règle intégré (par exemple, modifications de champ, événements de formulaire)
+* **Mappage de données intelligent** : configurez la manière dont les données de réponse de l’API sont mappées à des champs de formulaire spécifiques à l’aide des fonctionnalités d’analyse JSON Adobe
+* **Expérience utilisateur améliorée** : réduisez la saisie manuelle des données, améliorez la précision des données et créez des interactions de formulaire plus attrayantes
+
+Cet outil est particulièrement utile pour les scénarios tels que la saisie automatique des adresses, la population de listes déroulantes dynamiques, la validation en temps réel par rapport aux bases de données externes et la création d’expériences de formulaire adaptées au contexte qui s’adaptent en fonction des entrées de l’utilisateur.
+
+
 
 ## Autres innovations en matière d&#39;accès précoce
 

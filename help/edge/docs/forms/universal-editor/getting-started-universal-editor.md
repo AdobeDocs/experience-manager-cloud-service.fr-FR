@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 2%
 
 ---
@@ -182,8 +182,8 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
 **Validation :** confirmez la connexion de votre référentiel GitHub à AEM.
 
->[!NOTE]
->
+    >[!REMARQUE]
+    >
 >Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build GitHub](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Passons en revue chaque étape :
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Mettre à jour .eslintrc.js**
@@ -648,7 +648,7 @@ Un environnement de développement local vous permet d’apporter des modificati
    L’interface de ligne de commande d’AEM simplifie les tâches de développement local :
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Clonez votre référentiel**
