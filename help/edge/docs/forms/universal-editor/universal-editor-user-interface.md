@@ -330,7 +330,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-Outils optimisés par l’IA +++
++++Outils optimisés par l’IA 
 
 #### **Générer des variations**
 

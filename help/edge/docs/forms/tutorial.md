@@ -241,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant <owner> la personne propriétaire du référentiel et <repo> le nom du référentiel :
+1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>

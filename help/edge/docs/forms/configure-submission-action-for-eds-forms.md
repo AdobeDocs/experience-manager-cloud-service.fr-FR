@@ -150,13 +150,14 @@ Configurez le partage de ressources entre origines multiples (CORS) sur la sourc
 
 2. **Exemple de configuration** :
 
-       # Configuration pour le site hébergeant le formulaire
+       &#x200B;# Configuration pour le site hébergeant le formulaire
        headers:
        - chemin : /forms/**
        custom:
        Access-Control-Allow-Origin : https://host-domain.com
        Access-Control-Allow-Methods : GET, OPTIONS
    
+
 ### Étapes d’incorporation
 
 1. **Créer et publier un formulaire**
