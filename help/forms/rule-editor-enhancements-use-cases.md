@@ -4,7 +4,9 @@ description: Cet article explore différents cas d’utilisation de l’éditeur
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
