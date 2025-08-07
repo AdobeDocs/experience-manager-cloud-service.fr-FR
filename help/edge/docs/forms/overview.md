@@ -48,7 +48,7 @@ Après avoir lu le guide, vous pourrez choisir la bonne méthode de création, c
 
 ### Éditeur universel
 
-<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. </span>
+<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
 
 L’[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un outil visuel de création par glisser-déposer destiné aux personnes spécialistes du marketing et de la conception, qui associe vitesse et puissance de niveau professionnel :
 
