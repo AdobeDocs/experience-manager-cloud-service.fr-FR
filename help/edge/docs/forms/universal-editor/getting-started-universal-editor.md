@@ -182,9 +182,9 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
 **Validation :** confirmez la connexion de votre référentiel GitHub à AEM.
 
-    >[!REMARQUE]
+    >[ !REMARQUE]
     >
->Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build GitHub](#troubleshooting-github-build-issues).
+    >Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build GitHub](#troubleshooting-github-build-issues).
 
 +++
 
