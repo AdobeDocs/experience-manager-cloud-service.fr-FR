@@ -2,10 +2,10 @@
 title: Configurer l’interface d’utilisation du hub de contenus
 description: Configurer l’interface d’utilisation du hub de contenus
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 11%
+source-wordcount: '2189'
+ht-degree: 10%
 
 ---
 
@@ -177,11 +177,20 @@ En tant qu’administrateur, personnalisez votre portail [!DNL Content Hub] pour
 ![réinitialiser la valeur par défaut](/help/assets/assets/reset-default-content-hub.png)
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez les sections **[!UICONTROL Bannière]**, **[!UICONTROL Couleurs]** et **[!UICONTROL Image de bannière]** pour exécuter les personnalisations suivantes :
 
-1. [Modifiez l’image de bannière à partir de la section [!UICONTROL &#x200B; Image de bannière &#x200B;]](#Change-the-banner-image)
+1. [Modifiez l’image du logo à partir de la section [!UICONTROL  Image du logo ]](#Change-the-logo-image)
+1. [Modifiez l’image de bannière à partir de la section [!UICONTROL  Image de bannière ]](#Change-the-banner-image)
 1. [Mettez à jour le titre et le texte du corps de la bannière et modifiez la couleur du texte dans la section [!UICONTROL Bannière]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Modifiez la couleur principale et secondaire de la section [!UICONTROL Couleurs] pour appliquer un jeu de couleurs qui s’aligne sur le thème de votre marque](#Change-the-primary-and-secondary-color)
 
 Sélectionnez l’option **[!UICONTROL Réinitialiser les valeurs par défaut]** pour annuler vos modifications et restaurer le thème par défaut.
+
+#### Modification de l’image du logo{#change-the-logo-image}
+
+Sur la page ![Image de marque](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Image de marque]**, effectuez les étapes suivantes pour modifier l’image de logo de votre déploiement [!DNL Content Hub] :
+
+1. Cliquez sur ![sélectionner une image](/help/assets/assets/Browse.svg) **[!UICONTROL Sélectionner une image]** pour sélectionner une image de logo à l’aide de la boîte de dialogue du sélecteur de ressources. Le sélecteur de ressources affiche uniquement les images approuvées.
+1. Sélectionnez l’image, cliquez sur **[!UICONTROL Sélectionner]**, puis cliquez sur **[!UICONTROL Enregistrer]** pour l’afficher en tant qu’image de logo de votre déploiement [!DNL Content Hub].
+   ![image de bannière](/help/assets/assets/logo-image-content-hub1.png)
 
 #### Modification de l’image de bannière{#Change-the-banner-image}
 
@@ -190,6 +199,12 @@ Sur la page ![Image de marque](/help/assets/assets/ColorPalette.svg) **[!UICONTR
 1. Cliquez sur ![sélectionner une image](/help/assets/assets/Browse.svg) **[!UICONTROL Sélectionner dans la galerie]** pour sélectionner une image de bannière à l’aide de la boîte de dialogue du sélecteur de ressources. Le sélecteur de ressources affiche uniquement les images approuvées.
 1. Sélectionnez l’image, cliquez sur **[!UICONTROL Sélectionner]**, puis cliquez sur **[!UICONTROL Enregistrer]** pour l’afficher en tant qu’image de bannière de votre déploiement [!DNL Content Hub].
    ![image de bannière](/help/assets/assets/banner-image-content-hub1.png)
+
+>[!NOTE]
+>
+> * La taille recommandée pour **Image de bannière** est `height = 200 to 450px` et `width = 1920 to 2560px`.
+> * La taille recommandée pour **Image du logo** est de `height = 80 to 120px` et `width = 120 to 200px`.
+> * Les **types MIME pris en charge** pour les images de bannière et de logo sont `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'` et `'GIF', value: 'image/gif'`.
 
 #### Ajoutez le titre et le corps du texte à votre bannière et modifiez la couleur du texte{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -201,9 +216,9 @@ Cliquez sur la zone carrée en regard de la **[!UICONTROL Couleur du texte de ba
 
 Sur la page ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilisez la section **[!UICONTROL Couleurs]** pour définir les couleurs primaires et secondaires en les sélectionnant à l’aide du sélecteur de couleurs ou en définissant le code hexadécimal de la couleur. Ces couleurs définissent les couleurs d’arrière-plan, de texte et d’icône des éléments de l’interface utilisateur pour aligner votre interface utilisateur [!DNL Content Hub] avec le thème de votre marque.
 ![couleur primaire et secondaire](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Couleur du Principal &#x200B;]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
+**[!UICONTROL Couleur du Principal ]:** Le jeu de couleurs principal s’applique aux actions de sélection, aux éléments interactifs tels que les cases à cocher, les barres de recherche et les commutateurs à travers les [!DNL Content Hub], y compris [!DNL Content Hub] page d’accueil et la page [!UICONTROL Configuration]. Elle s’applique également aux options d’action disponibles sur les interfaces de [!DNL Content Hub] principales, telles que les options disponibles sur les pages **[!UICONTROL Toutes les Assets]** et **[!UICONTROL Collections]**.
 
-**[!UICONTROL Couleur Secondaire &#x200B;]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
+**[!UICONTROL Couleur Secondaire ]:** Sur la page d&#39;accueil [!DNL Content Hub], le jeu de couleurs secondaire s&#39;applique aux options de l&#39;interface utilisateur et aux champs de saisie disponibles dans les boîtes de dialogue. Elle s’applique à toutes les options de menu de configuration disponibles sur la page [!UICONTROL Configuration], à l’exception des actions de sélection, des cases à cocher, des barres de recherche et des commutateurs.
 
 ### Visibilité des ressources{#asset-visibility-content-hub}
 
@@ -233,7 +248,7 @@ Si la visibilité des ressources arrivées à expiration est activée, Content H
 
 ### Rendus {#renditions-content-hub}
 
-Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Les rendus sont des versions personnalisées des ressources numériques, telles que les images, les documents, etc., conçues pour différents appareils et plateformes afin d’assurer des performances optimales. En savoir plus sur les [rendus dans Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Pour cela, procédez comme suit :
 
