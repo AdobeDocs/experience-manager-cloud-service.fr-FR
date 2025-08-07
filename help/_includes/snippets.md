@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 # Fragments de code {#snippets}
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [Connecter un formulaire adaptatif au stockage Blob Azure Microsoft](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
 * [Connecter un formulaire adaptatif à Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Utiliser Adobe Sign dans un formulaire adaptatif AEM](/help/forms/working-with-adobe-sign.md)
-* [Ajouter un nouveau paramètre régional pour un formulaire adaptatif](/help/forms/supporting-new-language-localization-core-components.md)
+* [Ajouter de nouveaux paramètres régionaux pour un formulaire adaptatif](/help/forms/supporting-new-language-localization-core-components.md)
 * [Envoyer des données de formulaire adaptatif à une base de données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Envoyer des données de formulaire adaptatif à un point d’entrée REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Envoyer des données de formulaire adaptatif à un workflow AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
@@ -111,10 +111,9 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
    </td>
    </tr>
    <tr>
-    <td>Assistance ES2022 </td>
-    <td>ES2022 n’est pas encore pris en charge ; la prise en charge se limite aux fonctionnalités JavaScript ES5. </td>
-    <td>La prise en charge des fonctionnalités JavaScript modernes, telles que les fonctions let et flèche, jusqu’à ES2022, est disponible dans les fonctions personnalisées. 
-   </td>
+    <td>Prise en charge des versions ECMAScript</td>
+    <td>Prend uniquement en charge les fonctionnalités ES5 JavaScript.</td>
+    <td>Prend en charge les fonctionnalités JavaScript modernes (par exemple, <code>let</code>, fonctions de flèche) dans les fonctions personnalisées.</td>
    </tr>
    </tr>
    <tr>
@@ -222,7 +221,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
