@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 51%
+source-wordcount: '882'
+ht-degree: 50%
 
 ---
 
@@ -29,6 +29,8 @@ Voici quelques-uns des avantages de l’intégration transparente d’AEM Forms 
 ## Connecter OneDrive à un formulaire adaptatif
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
 
 Configurer OneDrive pour l’envoi AEM Forms, procédez comme suit :
 

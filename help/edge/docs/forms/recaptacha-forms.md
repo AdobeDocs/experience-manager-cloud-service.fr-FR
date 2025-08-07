@@ -4,17 +4,17 @@ description: Utiliser Google reCAPTCHA dans un formulaire pour Edge Delivery S
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 97%
+source-wordcount: '815'
+ht-degree: 100%
 
 ---
 
 
 # Utiliser reCAPTCHA avec Edge Delivery Services pour AEM Forms as a Cloud Service
 
-<span>La fonctionnalité **reCAPTCHA** est dans le programme de version préliminaire. Pour demander l’accès à la fonctionnalité **reCAPTCHA** pour Edge Delivery Services for AEM Forms, envoyez un e-mail à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com.</span>
+<!--<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for Edge Delivery Services for AEM Forms, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>-->
 
 reCAPTCHA est un outil couramment utilisé pour protéger les sites web contre les activités frauduleuses, le spam et les abus. Dans Edge Delivery Services, le bloc de formulaire adaptatif permet d’ajouter Google reCAPTCHA pour distinguer les personnes des robots. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices de protéger leur site web contre le spam et les abus.
 Prenons l’exemple d’un formulaire de demande qui collecte des données telles que les dates de début et de fin d’un voyage, le prix d’une chambre, l’estimation du coût du voyage et les informations sur la personne qui voyage. Dans de tels cas, il existe un risque que des utilisateurs et des utilisatrices malveillants exploitent le formulaire pour envoyer des e-mails de phishing ou pour le saturer de contenu non pertinent ou nuisible en utilisant des robots de spam. L’intégration de reCAPTCHA fournit une sécurité supplémentaire en vérifiant que les envois proviennent d’utilisateurs et d’utilisatrices authentiques, réduisant en pratique les entrées de spam.

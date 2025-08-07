@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ La **barre d’outils de l’éditeur universel** contient vos outils principaux
 **Objectif :** afficher votre formulaire dans un nouvel onglet sans l’interface de l’éditeur\
 **Utilisation :** pour les tests en plein écran, partage avec les parties prenantes pour révision
 
-    .[Ouvrir La Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Ouvrir la page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Publier**
 
 **Objectif :** rendre votre formulaire actif et accessible aux utilisateurs\
 **Quand utiliser :** après des tests approfondis en modes Aperçu et Réactif
 
-    .[Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Publier](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Liste de contrôle de validation avant publication :**
 
@@ -216,12 +216,22 @@ La **barre d’outils de l’éditeur universel** contient vos outils principaux
 
 **Ces outils sont utilisés pour des scénarios spécifiques ou des configurations avancées :**
 
-#### **Modifier les propriétés du formulaire**
+#### **Propriétés de formulaire AEM**
 
 **Objectif :** configurer des paramètres au niveau du formulaire tels que le modèle de données de formulaire (FDM) et les dates de publication\
 **Utilisation :** configuration des intégrations de données, planification de la publication
 
 ![Propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Assistant Propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+Le panneau Propriétés du formulaire comprend les sections suivantes :
+
+- **Envoi** : définissez ce qui se passe après l’envoi du formulaire par un utilisateur. Faites votre choix parmi plusieurs actions d’envoi, telles que l’envoi de données par e-mail, l’envoi à SharePoint, l’utilisation d’un modèle de données de formulaire ou l’intégration à des services tels que Adobe Experience Platform ou Microsoft Power Automate. Pour obtenir la liste complète des actions d’envoi prises en charge, reportez-vous à l’article [Action d’envoi](/help/edge/docs/forms/universal-editor/submit-action.md).
+
+- **Préremplissage** : configurez la manière dont les champs de formulaire sont automatiquement renseignés avant que l’utilisateur interagisse avec le formulaire. Vous pouvez vous connecter à des sources de données telles qu’un modèle de données de formulaire (FDM) ou utiliser des paramètres d’URL pour préremplir des champs, ce qui améliore l’expérience utilisateur et réduit la saisie manuelle. Pour en savoir plus, consultez l’article [Service de préremplissage](/help/edge/docs/forms/universal-editor/prefill-form.md).
+
+- **Merci** : personnalisez ce que voient les utilisateurs et utilisatrices après l’envoi du formulaire. Vous pouvez afficher un message de confirmation ou les rediriger vers une autre page web, assurant ainsi une expérience d’achèvement fluide et professionnelle. Pour savoir comment configurer un message de remerciement pour les formulaires, reportez-vous à l’article [Configurer un message de remerciement](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Éditeur de règles** (accès anticipé)
 
@@ -330,7 +340,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-+++Outils optimisés par l’IA 
+Outils optimisés par l’IA +++
 
 #### **Générer des variations**
 
@@ -521,4 +531,3 @@ Maintenant que vous comprenez l’interface de l’éditeur universel, procédez
 4. **Éditeur de règles de Principal** - Ajoutez des comportements dynamiques avec le [Guide de l’éditeur de règles](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **À retenir :** l’éditeur universel est conçu pour rendre la création de formulaires intuitive. Commencez par les éléments essentiels et explorez progressivement les fonctionnalités avancées à mesure que vos besoins augmentent.
-

@@ -4,9 +4,9 @@ description: Créez et diffusez des formulaires hautement performants sur Adobe�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '879'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Après avoir lu le guide, vous pourrez choisir la bonne méthode de création, c
 
 ### Éditeur universel
 
-<span class="preview"> Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. </span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 L’[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un outil visuel de création par glisser-déposer destiné aux personnes spécialistes du marketing et de la conception, qui associe vitesse et puissance de niveau professionnel :
 

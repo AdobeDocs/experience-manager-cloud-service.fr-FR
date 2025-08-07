@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 23%
@@ -16,6 +16,7 @@ ht-degree: 23%
 # Éditeur de règles pour Dynamic Forms dans l’éditeur universel
 
 L’éditeur de règles de l’éditeur universel vous permet de créer des formulaires dynamiques intelligents qui répondent en temps réel aux entrées de l’utilisateur. Vous pouvez transformer des formulaires statiques en expériences interactives avec une visibilité de champ conditionnelle, des calculs automatisés et une logique d’entreprise complexe, le tout sans avoir à écrire de code.
+
 
 ## Ce que vous apprendrez :
 

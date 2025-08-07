@@ -4,18 +4,18 @@ description: Découvrez comment créer des fragments de formulaire dans l’édi
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1347'
 ht-degree: 97%
 
 ---
 
 # Création de fragments de formulaire dans l’éditeur universel
 
-<span class="preview"> Cette fonctionnalité est disponible par le biais du programme d’accès anticipé. Pour demander l’accès, envoyez un e-mail avec le nom de votre organisation et le nom de votre référentiel GitHub à partir de votre adresse officielle à <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Par exemple, si l’URL du référentiel est https://github.com/adobe/abc, le nom de l’organisation est adobe et le nom du référentiel est abc.</span>
+<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>-->
 
 Les formulaires comprennent souvent des sections courantes telles que les coordonnées, les détails d’identification ou les accords de consentement. Les développeurs et développeuses de formulaires créent ces sections à chaque création de formulaire, ce qui est répétitif et prend beaucoup de temps.
 Pour éliminer cette duplication des efforts, l’éditeur universel permet de créer des segments de formulaire réutilisables, tels que des panneaux ou des groupes de champs, une seule fois et de les réutiliser dans différents formulaires. Ces segments réutilisables, modulaires et autonomes s’appellent des fragments de formulaire. Par exemple, le même fragment de contact d’urgence peut être utilisé dans différentes sections d’un formulaire, comme pour les coordonnées des personnes employées et en charge de la supervision.

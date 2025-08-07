@@ -5,9 +5,9 @@ Keywords: Submit data to Marketo engage, Configure submit action as Submit to Ma
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '733'
 ht-degree: 13%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 13%
 
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
-L’éditeur de Forms adaptatif fournit l’action d’envoi **Envoyer à Marketo Engage** pour envoyer des données de Forms adaptatif à Adobe Marketo Engage en vue de leur traitement. Vous pouvez configurer un formulaire adaptatif existant pour envoyer des données à [Adobe Marketo Engage](https://experienceleague.adobe.com/fr/docs/marketo/using/home) lors de l’envoi.
+L’éditeur de Forms adaptatif fournit l’action d’envoi **Envoyer à Marketo Engage** pour envoyer des données de Forms adaptatif à Adobe Marketo Engage en vue de leur traitement. Vous pouvez configurer un formulaire adaptatif existant pour envoyer des données à [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) lors de l’envoi.
 
 Diverses actions d’envoi prêtes à l’emploi sont disponibles pour gérer les envois de formulaire. Pour en savoir plus sur ces options, consultez l’article [Action d’envoi de formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md).
 
@@ -35,6 +35,9 @@ Prérequis pour configurer l’action d’envoi vers Marketo Engage :
 ## Comment configurer une action d’envoi vers Marketo Engage pour les formulaires existants ?
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
+
 
 >[!BEGINTABS]
 
@@ -94,7 +97,7 @@ Après avoir configuré l’action d’envoi pour le formulaire adaptatif en tan
 
 ## Étape suivante
 
-Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
+Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
 
 ## Articles connexes
 

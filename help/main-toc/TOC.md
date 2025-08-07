@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
-source-wordcount: '6566'
-ht-degree: 99%
+source-wordcount: '6586'
+ht-degree: 98%
 
 ---
 
@@ -787,6 +787,7 @@ ht-degree: 99%
          + [Configuration de l’action Envoyer pour un formulaire adaptatif basé sur les composants principaux](/help/forms/configure-submit-actions-core-components.md)
          + [Configuration de l’action d’envoi pour Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
          + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
+         + [Intégration d’un formulaire adaptatif au modèle de données de formulaire](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Connexion d’un formulaire adaptatif à Microsoft® SharePoint{#connect-to-sharepoint}
             + [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -1111,6 +1112,7 @@ ht-degree: 99%
          + [Présentation de l’éditeur universel de formulaires pour Edge Delivery Services - Guide complet](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Commencement de la création à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Création de votre premier formulaire à l’aide de l’éditeur universel - Tutoriel détaillé](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Guider les utilisateurs après l’envoi : configurer les redirections et les messages de remerciement dans l’éditeur universel](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [Guide de l’interface de l’éditeur universel : présentation des outils, des fonctionnalités et de la navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendre vos formulaires compatibles avec les appareils mobiles : conception réactive dans l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Concevoir des formulaires élégants : Guide de style et de thème pour l’éditeur universel](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

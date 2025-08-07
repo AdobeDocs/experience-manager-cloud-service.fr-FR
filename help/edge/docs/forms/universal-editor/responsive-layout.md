@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # Création d’un Forms réactif avec l’éditeur universel
 
 Les utilisateurs accèdent aux formulaires sur de nombreux appareils, notamment des ordinateurs de bureau, des tablettes et des smartphones. La conception de formulaires réactifs garantit une expérience optimale à tous les utilisateurs et utilisatrices, quel que soit l’appareil. Ce guide explique comment concevoir, tester et optimiser des formulaires pour n’importe quelle taille d’écran à l’aide de l’éditeur universel.
+
 
 La création de formulaires réactifs implique deux activités principales :
 
@@ -171,7 +172,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Utilisez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Regroupez les champs associés dans chaque panneau.
 3. Ajoutez des en-têtes clairs pour chaque section.
 4. Assurer un espacement adéquat entre les panneaux.
@@ -204,7 +205,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le composant [Wizard](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Utilisez le composant [Wizard](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Divisez les formulaires complexes en étapes logiques (3 à 7 étapes sont optimales).
 3. Incluez des indicateurs de progression pour l’orientation de l’utilisateur.
 4. Fournissez des commandes de navigation claires (Suivant, Précédent, Enregistrer).
@@ -244,7 +245,7 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 **Étapes d’implémentation :**
 
-1. Utilisez le composant [Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Utilisez le composant [Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Regroupez les contenus facultatifs associés dans chaque section.
 3. Utilisez des en-têtes de section descriptifs.
 4. Définissez les états d’ouverture/de fermeture par défaut appropriés.

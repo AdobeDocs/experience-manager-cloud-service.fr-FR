@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 9%
+source-wordcount: '1304'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 <span class="preview"> Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre identifiant e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=fr) automatise la répétition des mêmes tâches, comme les workflows d’approbation de documents, le filtrage et le tri des e-mails, ce qui vous permet de vous concentrer sur de nouvelles tâches plutôt que sur des tâches récurrentes. Adobe Workfront Fusion comprend plusieurs scénarios. Un scénario se compose d’une série de modules qui exécutent le transfert de données entre les applications et les services web. Dans un scénario, vous ajoutez différentes étapes (modules) pour automatiser une tâche.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatise la répétition des mêmes tâches, comme les workflows d’approbation de documents, le filtrage et le tri des e-mails, ce qui vous permet de vous concentrer sur de nouvelles tâches plutôt que sur des tâches récurrentes. Adobe Workfront Fusion comprend plusieurs scénarios. Un scénario se compose d’une série de modules qui exécutent le transfert de données entre les applications et les services web. Dans un scénario, vous ajoutez différentes étapes (modules) pour automatiser une tâche.
 
 Par exemple, à l’aide de Workfront Fusion, vous pouvez créer un scénario afin de collecter des données avec un formulaire adaptatif, de traiter les données et d’envoyer les données à un magasin de données pour archivage. Une fois qu’un scénario est configuré, Workfront Fusion exécute automatiquement les tâches chaque fois qu’un utilisateur remplit un formulaire, mettant ainsi à jour l’entrepôt de données de manière transparente.
 
@@ -31,11 +31,13 @@ AEM Forms as a Cloud Service fournit un connecteur prêt à l’emploi pour se c
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
+
 ## Conditions préalables à l’intégration d’AEM Forms à Adobe Workfront Fusion {#prerequisites}
 
 Pour établir une connexion entre Workfront Fusion et AEM Forms, les éléments suivants sont nécessaires :
 
-* Une licence [Workfront et Workfront Fusion valide](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=fr).
+* Une licence [Workfront et Workfront Fusion valide](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Un utilisateur d’AEM disposant du droit d’accéder à [la console de développement](https://my.cloudmanager.adobe.com/) pour [récupérer les informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr).
 
 ## Intégration d’AEM Forms à Adobe Workfront Fusion
