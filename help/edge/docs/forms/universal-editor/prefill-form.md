@@ -1,18 +1,17 @@
 ---
-title: Comment préremplir des champs de formulaire adaptatif ?
+title: Comment préremplir des champs de formulaire adaptatif
 description: Utilisez des données existantes pour préremplir les champs d’un formulaire adaptatif. Les utilisateurs peuvent préremplir les informations de base dans un formulaire en se connectant avec leurs profils sociaux.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 4%
 
 ---
-
 
 # Configuration du service de préremplissage dans le Forms adaptatif à l’aide de Edge Delivery Services
 
@@ -37,9 +36,9 @@ Le diagramme suivant illustre le processus de préremplissage automatique qui se
 Le processus de préremplissage comprend quatre étapes clés :
 
 1. **L’utilisateur ouvre un formulaire** : l’utilisateur accède à un formulaire adaptatif par une URL ou une navigation
-2. **Identifier le Source de données** : le service de préremplissage détermine la source de données configurée (modèle de données de formulaire ou service de brouillon)
-3. **Récupérer les données** : le système récupère les données utilisateur pertinentes en fonction du contexte, des paramètres ou de l’identification de l’utilisateur
-4. **Mapper et afficher** : les données sont mappées aux champs du formulaire à l’aide des propriétés `bindRef` et le formulaire renseigné est affiché pour l’utilisateur ou l’utilisatrice
+1. **Identifier le Source de données** : le service de préremplissage détermine la source de données configurée (modèle de données de formulaire ou service de brouillon)
+1. **Récupérer les données** : le système récupère les données utilisateur pertinentes en fonction du contexte, des paramètres ou de l’identification de l’utilisateur
+1. **Mapper et afficher** : les données sont mappées aux champs du formulaire à l’aide des propriétés `bindRef` et le formulaire renseigné est affiché pour l’utilisateur ou l’utilisatrice
 
 Ce processus automatisé garantit que les utilisateurs voient un formulaire prérempli avec leurs informations pertinentes, ce qui améliore considérablement l’expérience utilisateur et les taux de remplissage du formulaire.
 
@@ -62,7 +61,6 @@ Le format des données doit correspondre à votre modèle de formulaire :
 - **Formulaires de schéma JSON** : compatible JSON avec le schéma
 - **Formulaires de modèle de données de formulaire (FDM)** : JSON correspondant à la structure FDM
 - **Formulaires sans schéma** : tous les champs sont non liés et utilisent du code XML non lié
-
 
 ## Prérequis
 
@@ -106,39 +104,39 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 ## Configuration du service de préremplissage d’un formulaire
 
-
 +++Phase 1 : Configuration Du Modèle De Données De Formulaire
 
 ### Étape 1 : création d’un modèle de données de formulaire
 
 1. Connectez-vous à votre instance AEM Forms as a Cloud Service
-2. Accédez à **Adobe Experience Manager** > **Forms** > **Intégrations de données**
-3. Sélectionnez **Créer** > **Modèle de données de formulaire**
-4. Choisissez votre **Configuration de Source de données** et sélectionnez la **Source de données** configurée
+1. Accédez à **Adobe Experience Manager** > **Forms** > **Intégrations de données**
+1. Sélectionnez **Créer** > **Modèle de données de formulaire**
+1. Choisissez votre **Configuration de Source de données** et sélectionnez la **Source de données** configurée
 
    ![Modèle de données de formulaire créé](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Pour obtenir des instructions détaillées sur la création de modèles de données de formulaire, voir [Créer un modèle de données de formulaire](/help/forms/create-form-data-models.md).
+   >Pour obtenir des instructions détaillées sur la création de modèles de données de formulaire, voir [Créer un modèle de données de formulaire](/help/forms/create-form-data-models.md).
 
 ### Étape 2 : configuration des services FDM
 
 1. Accédez à **Adobe Experience Manager** > **Forms** > **Intégrations de données**
-2. Ouvrez votre modèle de données de formulaire en mode d’édition
-3. Sélectionnez un objet de modèle de données et cliquez sur **Modifier les propriétés**
-4. Configurez les services **Lecture** et **Écriture** pour les objets de modèle de données sélectionnés
+1. Ouvrez votre modèle de données de formulaire en mode d’édition
+1. Sélectionnez un objet de modèle de données et cliquez sur **Modifier les propriétés**
+1. Configurez les services **Lecture** et **Écriture** pour les objets de modèle de données sélectionnés
 
    ![Configuration du service de lecture/écriture](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configurez les arguments de service :
+1. Configurez les arguments de service :
+
    - Cliquez sur l’icône de modification de l’argument de service de lecture
    - Liez l’argument à une **Attribut du profil utilisateur**, **Attribut de requête** ou **Valeur littérale**
    - Spécifiez la valeur de liaison (par exemple, `petid` pour un formulaire d&#39;enregistrement d&#39;animal de compagnie)
 
    ![Configurer l’argument d’identifiant animal de compagnie](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
+1. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Aperçu sous HTML**
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Exemple :**
 
@@ -271,19 +269,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    &lbrace;
-    « afBoundData »: &lbrace;
-    « user »: &lbrace;
+    {
+    « afBoundData »: {
+    « user »: {
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    &rbrace;
-    &rbrace;,
-    « afUnBoundData »: &lbrace;
+    }
+    },
+    « afUnBoundData »: {
     « additionalInfo »: « Préférences utilisateur chargées »
-    &rbrace;
-    &rbrace;
+    }
+    }
     
      »
 
