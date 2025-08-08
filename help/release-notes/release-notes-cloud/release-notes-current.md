@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 51%
+source-wordcount: '2235'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Nouvelles fonctionnalités d’Experience Manager Sites {#enhancements-sites}
 
-**Améliorations des fragments de contenu**
-
-* Vous pouvez désormais copier des fragments de contenu avec des enfants.
-* Vous pouvez désormais configurer un espace de travail personnalisé dans les paramètres des dossiers pour exporter les fragments de contenu vers l’espace de travail configuré dans Adobe Target.
+* Vous pouvez désormais copier des fragments de contenu avec des fragments référencés (enfants) en une seule opération. Cela permet de réutiliser les structures de fragment de contenu existantes pour créer du contenu.
+* Dans l’interface d’administration des fragments de contenu, vous pouvez désormais afficher le statut des workflows pour les fragments de contenu, avec des informations détaillées sur les workflows passés et en cours d’exécution pour un fragment sélectionné.
+* Le changement de nom ou le déplacement d’une page source de Live Copy déclenchent désormais la republication d’une page Live Copy renommée ou déplacée en conséquence.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Content Hub comprend désormais une option **Tout afficher** dans les filtres, c
 
 Bénéficiez du chargement automatisé de nouveaux fichiers et dossiers, d’opérations de fichiers améliorées, d’une découverte de ressources plus intelligente et d’une intégration transparente à AEM, ce qui rend la gestion de contenu plus rapide, plus claire et plus intuitive.
 
-Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/release-notes).
+Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ Propriétés OSGi :
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
-Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime &#x200B;** Java 21** plus performant.
+Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime **Java 21** plus performant.
 
 Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
