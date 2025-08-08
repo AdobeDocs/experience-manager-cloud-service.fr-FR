@@ -1,10 +1,10 @@
 ---
 title: Présentation des fragments d’expérience
-description: Étendre les fragments d’expérience pour Adobe Experience Manager as a Cloud Service
+description: Extension des fragments d’expérience pour Adobe Experience Manager as a Cloud Service
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 97%
@@ -49,7 +49,7 @@ Par exemple :
 
 ![Rendu HTML brut](assets/xf-14.png)
 
-Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. Le [module de réécriture Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
+Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires. Le [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Ce transformateur est configuré comme suit :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -74,12 +74,14 @@ Adobe recommande de configurer le module de réécriture à l’aide d’un reco
 >
 >Les fragments d’expérience ne peuvent être utilisés que sur des pages reposant sur des modèles modifiables.
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 Lors du développement d’un nouveau modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard en vigueur pour un modèle modifiable.
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
@@ -87,11 +89,9 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 1. Les deux :
 
    1. Le type de ressource du modèle (le nœud initial) doit hériter de :
-
       `cq/experience-fragments/components/xfpage`
 
    1. Et le nom du modèle doit commencer par :
-
       `experience-fragments`
 Ce modèle permet de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
@@ -101,7 +101,8 @@ Ce modèle permet de créer des fragments d’expérience dans /content/experien
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->

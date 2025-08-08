@@ -4,7 +4,7 @@ description: Utilisez les thèmes de formulaire adaptatif pour appliquer un styl
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 98%
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif<!-- or interactive communication -->.
@@ -509,7 +509,8 @@ Pour configurer un thème pour utiliser la configuration Adobe Fonts, effectuez 
 
    Maintenant, vous pouvez voir que les polices sont ajoutées à la propriété font-family du thème.
 
-<!-- >
+<!-- 
+
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
@@ -519,7 +520,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
    ![theme-config](assets/theme-config.png)
 
-1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
+1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. 
+-->
 
 #### Sélectionner des polices dans l’éditeur de thèmes {#selecting-fonts-in-theme-editor}
 

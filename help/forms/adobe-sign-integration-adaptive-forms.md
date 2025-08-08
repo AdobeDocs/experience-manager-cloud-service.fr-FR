@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 84%
+source-wordcount: '2197'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=fr#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Cet article |
 
 [!DNL Adobe Acrobat Sign] active des workflows de signature électronique pour les formulaires adaptatifs et les workflows AEM. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
@@ -84,7 +84,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
    où :
 
-   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL &#x200B; Adobe Acrobat Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
+   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL  Adobe Acrobat Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -114,7 +114,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
 1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Acrobat Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez l’[**[!UICONTROL ID client]** (également appelé ID de l’application) et le **[!UICONTROL Secret client]**]. Utilisez l’[ID client et le secret client de l’application Adobe Acrobat Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) que vous avez créés à l’étape précédente.
 
-1. Dans la section [!UICONTROL &#x200B; Portée de l’autorisation &#x200B;], vous pouvez modifier les portées en « compte » ou « self » en ajoutant le préfixe « self » ou « account » aux portées, si nécessaire.
+1. Dans la section [!UICONTROL  Portée de l’autorisation ], vous pouvez modifier les portées en « compte » ou « self » en ajoutant le préfixe « self » ou « account » aux portées, si nécessaire.
    ![Champ d’application de l’autorisation](/help/forms/assets/authorization-scope.png)
 
 1. Sélectionnez l’option **[!UICONTROL Activer Adobe Acrobat Sign pour les pièces jointes]** pour ajouter les fichiers joints à un formulaire adaptatif au document [!DNL Adobe Acrobat Sign] correspondant envoyé à des fins de signature.
@@ -225,7 +225,7 @@ La personne représentante génère et partage alors les informations d’identi
 
    où :
 
-   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL &#x200B; Adobe Acrobat Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
+   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL  Adobe Acrobat Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -239,7 +239,9 @@ La personne représentante génère et partage alors les informations d’identi
 
    ![Succès de la configuration Adobe Acrobat Sign Cloud](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration.
 
@@ -260,7 +262,7 @@ Par défaut, les services de Planificateur [!DNL Adobe Acrobat Sign] vérifient 
 
 Pour modifier l’intervalle par défaut, spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) pour la propriété **sign.status.exp** de la configuration **Service de configuration Adobe Sign**.
 
-Par exemple, pour exécuter le service de configuration tous les jours à 00:00, définissez la propriété **sign.status.exp** de la configuration **Service de configuration Adobe Sign** pour spécifier `0 0 0 1/1 * ? *`. Le fichier JSON suivant affiche l’échantillon d’exécution du service de configuration tous les jours à 00:00 :
+Par exemple, pour exécuter le service de configuration tous les jours à :00 heures, définissez la propriété **sign.status.exp** de la configuration **Service de configuration Adobe Acrobat Sign** pour spécifier `0 0 0 1/1 * ? *`. Le fichier JSON suivant affiche l’exemple d’exécution du service de configuration tous les jours à :00 heures :
 
 ```json
 {
