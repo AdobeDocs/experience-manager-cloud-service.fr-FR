@@ -57,11 +57,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/using">
    <img alt="Utilisation de l’appli de bureau AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/using">
       <strong>Utilisation de l’appli de bureau AEM</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets fournit des fonctionnalités qui vous permettent d’accéder plus fa
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
    <img alt="Bonnes pratiques relatives à la gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -583,11 +583,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Intégration à Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Intégration à Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
