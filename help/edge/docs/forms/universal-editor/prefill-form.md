@@ -249,7 +249,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Aperçu sous HTML**
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Exemple :**
 
@@ -269,19 +269,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    {
-    « afBoundData »: {
-    « user »: {
+    &lbrace;
+    « afBoundData »: &lbrace;
+    « user »: &lbrace;
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    }
-    },
-    « afUnBoundData »: {
+    &rbrace;
+    &rbrace;,
+    « afUnBoundData »: &lbrace;
     « additionalInfo »: « Préférences utilisateur chargées »
-    }
-    }
+    &rbrace;
+    &rbrace;
     
      »
 
