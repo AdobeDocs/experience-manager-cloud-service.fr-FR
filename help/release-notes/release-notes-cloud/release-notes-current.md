@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 50%
 
 ---
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ AEM Assets vous permet désormais de [configurer l’affichage des titres des re
 
 Vous pouvez désormais également choisir de désactiver les métadonnées générées par l’IA au niveau du dossier.
 
-
 ### Nouvelles fonctionnalités dans Content Hub {#new-features-content-hub}
 
 **Amélioration de la flexibilité de l’image de marque dans Content Hub**
@@ -89,7 +88,7 @@ Content Hub comprend désormais une option **Tout afficher** dans les filtres, c
 
 Bénéficiez du chargement automatisé de nouveaux fichiers et dossiers, d’opérations de fichiers améliorées, d’une découverte de ressources plus intelligente et d’une intégration transparente à AEM, ce qui rend la gestion de contenu plus rapide, plus claire et plus intuitive.
 
-Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/release-notes).
+Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ L’outil d’intégration d’API permet aux auteurs de formulaires de créer d
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### Affichage principal de la gestion des autorisations {#principal-view}
+
+AEM introduit la gestion des autorisations pour les utilisateurs et utilisatrices et pour les groupes. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais elle est plus conviviale et plus efficace. Voir l’article [ dédié](/help/security/touch-ui-principal-view.md) pour plus d’informations.
+
 ### Processus d’obsolescence mis à jour {#updated-deprecation-process}
 
 Adobe passe régulièrement en revue les fonctionnalités, les bibliothèques, les API et les configurations afin de s’assurer qu’elles répondent aux normes de performances, de sécurité et de valeur. Lorsque les fonctionnalités ne répondent plus à ces normes, elles sont marquées pour obsolescence et vous devez cesser de les utiliser à la date de suppression spécifiée. D’ici là, Adobe rappellera aux clientes et clients, par le biais de notifications par e-mail, les actions à entreprendre dans Cloud Manager avant de poursuivre ou de déployer de nouvelles versions. Si vous ne prenez pas les mesures nécessaires, il se peut que vous ne puissiez pas effectuer la mise à niveau vers de nouvelles versions d’AEM, ce qui peut avoir des répercussions sur la sécurité, les performances, la fiabilité et la disponibilité.
@@ -222,7 +225,7 @@ Propriétés OSGi :
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
-Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime &#x200B;** Java 21** plus performant.
+Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime **Java 21** plus performant.
 
 Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
