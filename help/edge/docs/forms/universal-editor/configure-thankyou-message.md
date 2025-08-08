@@ -4,7 +4,7 @@ description: Découvrez comment les utilisateurs et utilisatrices peuvent voir a
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -56,5 +56,3 @@ Pour configurer la page de redirection ou le message de remerciement :
 ![merci](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Pour chaque formulaire, les auteurs et les autrices peuvent configurer une page vers laquelle les utilisateurs et les utilisatrices seront redirigés après l’envoi du formulaire.
-
-

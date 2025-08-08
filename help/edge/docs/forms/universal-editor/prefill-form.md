@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 3%
@@ -140,9 +140,9 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 6. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
 
-       >[ !REMARQUE]
+       >[!REMARQUE]
        >
-       > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
+   > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    &lbrace;
-    « afBoundData »: &lbrace;
-    « user »: &lbrace;
+    {
+    « afBoundData »: {
+    « user »: {
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    &rbrace;
-    &rbrace;,
-    « afUnBoundData »: &lbrace;
+    }
+    },
+    « afUnBoundData »: {
     « additionalInfo »: « Préférences utilisateur chargées »
-    &rbrace;
-    &rbrace;
+    }
+    }
     
      »
 
@@ -432,7 +432,7 @@ Vous pouvez configurer un service de préremplissage principal par formulaire. C
 
 +++
 
-
+=
 ## Rubriques connexes
 
 - [Intégrer des formulaires à un modèle de données de formulaire dans l’éditeur universel](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)

@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.6.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2679466939e1c2e25e426c62f0fd6bde1bf90b93
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,10 +70,10 @@ Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/r
 
 Développez la liste ci-dessous pour afficher les API et les configurations OSGi obsolètes qui ne doivent plus être utilisées. Pour plus d’informations, y compris concernant les délais de suppression, reportez-vous à l’article sur l’obsolescence.
 
-<details>
-  <summary>Développer pour afficher les éléments obsolètes</summary>
++++Développez pour afficher les obsolètes.
 
 API Java :
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -96,7 +96,7 @@ Propriétés OSGi :
 * `org.apache.sling.commons.log.LogManager` (toutes les propriétés)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-</details>
++++
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
@@ -125,7 +125,7 @@ Toutefois, pour optimiser les performances du référentiel, à compter de **dé
 
 #### Versions du contenu {#mt-content}
 
-* **Nouveaux environnements** (créés après une date à venir, qui sera communiquée ultérieurement)
+* **Nouveaux environnements** (créés après une date à venir qui sera communiquée ultérieurement)
    * Les versions de plus de **30 jours** seront régulièrement supprimées.
    * Les cinq versions les plus récentes des 30 derniers jours sont conservées, tout comme la version la plus récente et la version actuelle, quel que soit leur ancienneté.
 

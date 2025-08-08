@@ -3,7 +3,7 @@ title: Comment intégrer le modèle de données de formulaire (FDM) d’un formu
 description: Découvrez comment créer des formulaires basés sur un modèle de données de formulaire (FDM). Générer et modifiez des données d’exemples pour les objets de modèle de données dans FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 31%
@@ -66,15 +66,19 @@ Pour configurer le modèle de données de formulaire avec un formulaire adaptati
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 1. Cliquez sur l’extension **Modifier les propriétés du formulaire** dans l’éditeur.
-La boîte de dialogue **Propriétés du formulaire** s’affiche.
+
+   La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
    >[!NOTE]
    >
    > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
    > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]**.
+
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
 Si vous sélectionnez **Enregistrer les pièces jointes avec le nom d’origine**, les pièces jointes sont stockées dans le dossier à l’aide de leurs noms de fichier d’origine. Vous pouvez également enregistrer un document d’enregistrement (DE) dans le stockage Blob Azure.
+
 1. Sélectionnez la **[!UICONTROL configuration de stockage]** où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**
 

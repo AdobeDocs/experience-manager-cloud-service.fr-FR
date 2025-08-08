@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
@@ -59,7 +59,7 @@ Dans la règle ci-dessus, le bouton **Suivant** vérifie la validité des champs
 
 >[!NOTE]
 >
-> Vous pouvez utiliser la méthode **validate()** sur des formulaires, des fragments ou des champs individuels. Lorsqu’un fragment est inclus dans un formulaire, le formulaire et le fragment apparaissent tous deux comme des options dans le contexte de validation. Dans ce cas, le fragment fait référence aux champs qu’il contient, tandis que le formulaire fait référence au formulaire parent dans lequel le fragment est incorporé.
+>Vous pouvez utiliser la méthode **validate()** sur des formulaires, des fragments ou des champs individuels. Lorsqu’un fragment est inclus dans un formulaire, le formulaire et le fragment apparaissent tous deux comme des options dans le contexte de validation. Dans ce cas, le fragment fait référence aux champs qu’il contient, tandis que le formulaire fait référence au formulaire parent dans lequel le fragment est incorporé.
 
 ## Télécharger Dor en tant que fonction prête à l’emploi dans l’éditeur de règles
 
@@ -67,7 +67,7 @@ L’utilisation de la fonction prête à l’emploi **DownloadDor()** dans l’�
 
 >[!NOTE]
 >
-> Si le formulaire n’est pas configuré pour le document d’enregistrement, un message d’erreur s’affiche lorsque la règle utilisant la fonction **downloadDoR()** est appliquée au bouton.
+>Si le formulaire n’est pas configuré pour le document d’enregistrement, un message d’erreur s’affiche lorsque la règle utilisant la fonction **downloadDoR()** est appliquée au bouton.
 
 **Scénario** : une agence gouvernementale fournit un formulaire de demande numérique pour l’émission de certificats. Après avoir soumis le formulaire, les demandeurs ont souvent besoin d&#39;une copie du formulaire rempli pour leurs dossiers ou pour le partager avec un autre ministère. Afin d&#39;améliorer l&#39;expérience utilisateur, l&#39;agence souhaite donner aux demandeurs la possibilité de télécharger un document d&#39;enregistrement immédiatement après la soumission ou à tout moment avant la soumission finale.
 
