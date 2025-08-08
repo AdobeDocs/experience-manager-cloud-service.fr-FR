@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 3%
@@ -140,9 +140,9 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 6. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
 
-       >[ !REMARQUE]
+       >[!REMARQUE]
        >
-       > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
+   > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    &lbrace;
-    « afBoundData »: &lbrace;
-    « user »: &lbrace;
+    {
+    « afBoundData »: {
+    « user »: {
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    &rbrace;
-    &rbrace;,
-    « afUnBoundData »: &lbrace;
+    }
+    },
+    « afUnBoundData »: {
     « additionalInfo »: « Préférences utilisateur chargées »
-    &rbrace;
-    &rbrace;
+    }
+    }
     
      »
 
@@ -431,8 +431,6 @@ L’authentification dépend de la configuration de votre source de données. Po
 Vous pouvez configurer un service de préremplissage principal par formulaire. Cependant, vous pouvez combiner différentes sources de données dans un seul modèle de données de formulaire pour obtenir des fonctionnalités similaires.
 
 +++
-
-=
 
 ## Rubriques connexes
 
