@@ -8,7 +8,7 @@ badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manage
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -26,9 +26,12 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 >
 >Un pipeline Edge Delivery ne peut pas être configuré tant que les actions suivantes n’ont pas été effectuées :
 >
->* Un programme contenant un site Edge Delivery Services et un domaine mappé est créé. Sinon, l’option **Ajouter un pipeline Edge Delivery** apparaît désactivée dans l’interface utilisateur et une info-bulle explique les exigences manquantes. <!-- CMGR‑69680 -->
+>* Un programme contenant un site Edge Delivery Services et un domaine mappé est créé. Sinon, l’option **Ajouter un pipeline Edge Delivery** apparaît désactivée dans l’interface utilisateur et une info-bulle explique les exigences manquantes.
 >* Le référentiel Git comporte au moins une branche.
 >* Les environnements de production et d’évaluation sont créés.
+
+<!-- CMGR‑69680 -->
+
 
 Avant de commencer à déployer votre code, configurez les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 

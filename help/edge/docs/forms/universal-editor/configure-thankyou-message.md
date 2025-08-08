@@ -4,7 +4,7 @@ description: Découvrez comment les utilisateurs et utilisatrices peuvent voir a
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -27,8 +27,8 @@ Vous pouvez configurer l’action d’envoi pour les formulaires créés dans l�
 
 >[!NOTE]
 >
-> * Si l’icône **Propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
-> * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+>* Si l’icône **Propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+>* Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
 
 ## Comment configurer une redirection ou un message de remerciement ?
 
@@ -37,9 +37,9 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 Pour configurer la page de redirection ou le message de remerciement :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-2. Ouvrez l’arborescence de contenu et sélectionnez le **[!UICONTROL conteneur de guide]**.
-3. Cliquez sur l’icône des propriétés de conteneur de formulaires adaptatifs ![propriétés de conteneur de formulaires adaptatifs](/help/forms/assets/configure-icon.svg). La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
-4. Ouvrez l’onglet **[!UICONTROL Envoi]**. Les options de paramétrage d’une page de redirection ou d’un message s’affichent :
+1. Ouvrez l’arborescence de contenu et sélectionnez le **[!UICONTROL conteneur de guide]**.
+1. Cliquez sur l’icône des propriétés de conteneur de formulaires adaptatifs ![propriétés de conteneur de formulaires adaptatifs](/help/forms/assets/configure-icon.svg). La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+1. Ouvrez l’onglet **[!UICONTROL Envoi]**. Les options de paramétrage d’une page de redirection ou d’un message s’affichent :
 
    ![Boîte de dialogue d’envoi du conteneur de guide pour configurer une page de redirection ou un message](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
