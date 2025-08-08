@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 3%
+source-wordcount: '1829'
+ht-degree: 4%
 
 ---
 
@@ -140,9 +140,9 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 6. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
 
-       >[ !REMARQUE]
-       >
-       > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
+   >[!NOTE]
+   >
+   > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -151,35 +151,36 @@ L’éditeur universel fournit deux options de service de préremplissage :
 ### Étape 3 : créer un formulaire adaptatif
 
 1. Accédez à **Adobe Experience Manager** > **Forms** > **Forms et documents**
-2. Sélectionnez **Créer** > **Forms adaptatif**
-3. Dans l&#39;onglet **Source**, sélectionnez un modèle Edge Delivery Services :
+1. Sélectionnez **Créer** > **Forms adaptatif**
+1. Dans l&#39;onglet **Source**, sélectionnez un modèle Edge Delivery Services :
 
-       .[modèle Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
-   
-4. Cliquez sur **Créer** pour ouvrir l’assistant **Créer un formulaire**
-5. Spécifiez les détails du formulaire :
+   ![Modèle Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
+
+1. Cliquez sur **Créer** pour ouvrir l’assistant **Créer un formulaire**
+1. Spécifiez les détails du formulaire :
+
    - **Nom** : saisissez un nom explicite pour votre formulaire
    - **Titre** : fournissez un titre convivial.
    - **URL GitHub** : saisissez l’URL de votre référentiel (par exemple, `https://github.com/wkndforms/edsforms`).
 
-6. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
-       .[Créer un formulaire basé sur un schéma](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![Créer un formulaire basé sur un schéma](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 Le formulaire s’ouvre dans l’éditeur universel pour la création.
 
 ### Étape 4 : Configurer le Source de données de formulaire
 
 1. Sélectionnez votre formulaire et cliquez sur **Propriétés**
 
-       .[Sélectionner les propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![Sélectionner les propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. Ouvrez l’onglet **Modèle de formulaire**
 3. Dans la liste déroulante **Sélectionner à partir de**, choisissez **Modèle de données de formulaire (FDM)**
 4. Sélectionnez le modèle de données de formulaire (par exemple, PetFDM) créé dans la liste déroulante
 
-       .[Sélectionnez l’onglet Modèle de formulaire](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![Sélection de l’onglet Modèle de formulaire](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. Cliquez sur **Enregistrer et fermer**.
 6. Ouvrez le formulaire pour le modifier dans l’éditeur universel.
 
@@ -193,6 +194,7 @@ Les éléments de formulaire de votre FDM apparaissent dans l’onglet **Source 
    ![Capture d’écran de l’éditeur universel affichant le formulaire basé sur un schéma](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Ajoutez la liaison de données aux champs de formulaire :
+
    - Sélectionner un champ de formulaire
    - Dans le panneau **Propriétés**, recherchez la propriété **Référence de liaison**
    - Sélectionner la référence de liaison de données appropriée
@@ -208,12 +210,14 @@ Les éléments de formulaire de votre FDM apparaissent dans l’onglet **Source 
 Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 
 1. **Extension Des Propriétés D’AEM Form**
+
    - Ouvrez **Extension Manager** dans l’éditeur universel
    - Activez l’extension **Propriétés de formulaire AEM**
 
    ![Icône Propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Extension Data Source**
+1. **Extension Data Source**
+
    - Activez l’extension **Data source** si vous ne voyez pas l’icône **Data Sources**
 
    ![Capture d’écran de l’éditeur universel Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Cliquez sur l’onglet **Préremplissage**
 4. Sélectionnez **Service de préremplissage du modèle de données de formulaire**
 
-       .[Sélectionnez le service de préremplissage](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![Sélectionnez le service de préremplissage](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. Cliquez sur **Enregistrer et fermer**.
 
 +++
@@ -247,14 +251,14 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Aperçu sous HTML**
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **Exemple :**
 
-       https://your-preview-url.com?petid=12345
-       
-        ![Formulaire de préremplissage](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![Préremplir le formulaire](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 Le formulaire doit être automatiquement rempli avec des données en fonction du paramètre fourni.
 
 +++
@@ -267,19 +271,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    &lbrace;
-    « afBoundData »: &lbrace;
-    « user »: &lbrace;
+    {
+    « afBoundData »: {
+    « user »: {
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    &rbrace;
-    &rbrace;,
-    « afUnBoundData »: &lbrace;
+    }
+    },
+    « afUnBoundData »: {
     « additionalInfo »: « Préférences utilisateur chargées »
-    &rbrace;
-    &rbrace;
+    }
+    }
     
      »
 
@@ -306,11 +310,11 @@ Les URL ci-dessous sont fournies à titre d’illustration uniquement et ne fonc
 
 **Test de préremplissage de base :**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Test de paramètres multiples:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Résolution des problèmes
@@ -330,21 +334,25 @@ Les URL ci-dessous sont fournies à titre d’illustration uniquement et ne fonc
 +++Étapes de débogage
 
 1. **Vérifier la configuration FDM :**
+
    - Vérifier si les services sont correctement configurés
    - Tester les services FDM indépendamment
    - Valider la connectivité de la source de données
 
 2. **Vérifier la configuration du formulaire :**
+
    - Confirmer que le formulaire est associé au FDM correct
    - Vérifier les valeurs de `bindRef` des champs
    - Tester le formulaire sans préremplissage
 
 3. **Tester le flux de données :**
+
    - Utilisation des outils de développement du navigateur pour inspecter les requêtes réseau
    - Rechercher les erreurs JavaScript dans la console
    - Valider le format des données de réponse
 
 4. **Messages d’erreur courants :**
+
    - « Service de préremplissage introuvable » : vérifiez la configuration du service.
    - « Échec de la liaison de données » : vérifiez `bindRef` précision
    - « Format de données non valide » : assurez-vous que les données correspondent au schéma
