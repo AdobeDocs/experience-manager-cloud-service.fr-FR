@@ -140,9 +140,9 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 6. Cliquez sur **Terminé** pour enregistrer l’argument et sur **Enregistrer** pour enregistrer le FDM
 
-       >[!REMARQUE]
+       >[ !REMARQUE]
        >
-   > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
+       > En savoir plus sur la configuration des services FDM dans [Utilisation d’un modèle de données de formulaire (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Le formulaire doit être automatiquement rempli avec des données en fonction du
 
      »
     
-    {
-    « afBoundData »: {
-    « user »: {
+    &lbrace;
+    « afBoundData »: &lbrace;
+    « user »: &lbrace;
     « firstName »: « John »,
     « lastName »: « Doe »,
     « email »: « john.doe@example.com »,
     « phone »: « +1-555-0123 »
-    }
-    },
-    « afUnBoundData »: {
+    &rbrace;
+    &rbrace;,
+    « afUnBoundData »: &lbrace;
     « additionalInfo »: « Préférences utilisateur chargées »
-    }
-    }
+    &rbrace;
+    &rbrace;
     
      »
 
@@ -433,6 +433,7 @@ Vous pouvez configurer un service de préremplissage principal par formulaire. C
 +++
 
 =
+
 ## Rubriques connexes
 
 - [Intégrer des formulaires à un modèle de données de formulaire dans l’éditeur universel](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
