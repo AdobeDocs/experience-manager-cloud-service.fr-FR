@@ -18,7 +18,7 @@ ht-degree: 22%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Après avoir créé la configuration de service cloud pour intégrer Marketo Engage à AEM Forms, vous pouvez configurer un formulaire adaptatif à intégrer à [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
+Après avoir créé la configuration de service cloud pour intégrer Marketo Engage à AEM Forms, vous pouvez configurer un formulaire adaptatif à intégrer à [Adobe Marketo Engage](https://experienceleague.adobe.com/fr/docs/marketo/using/home).
 
 Vous pouvez connecter Marketo Engage à un formulaire adaptatif à l’aide de l’assistant de formulaire, ce qui simplifie le processus de configuration en vous guidant à travers chaque étape. Cela inclut la sélection de modèles, de styles et de champs de données, ainsi que la configuration du mappage de données pour vous assurer que votre formulaire est prêt à communiquer avec Marketo Engage une fois créé. À l’aide de l’assistant de formulaire, vous pouvez également configurer le formulaire adaptatif pour envoyer directement les données à Adobe Marketo Engage lors de l’envoi.
 
@@ -180,7 +180,7 @@ Le formulaire adaptatif est maintenant configuré pour se connecter à l’insta
 
 ## Étape suivante
 
-Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
+Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
 
 ## Articles connexes
 
