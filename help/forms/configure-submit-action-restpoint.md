@@ -115,13 +115,13 @@ Pour publier des données sur un serveur externe, indiquez une URL. Le format d�
 
    Vous pouvez également **[!UICONTROL Activer la requête POST]** et fournir une URL pour la publication de la requête. Pour envoyer des données au serveur AEM qui héberge le formulaire, utilisez un chemin d’accès relatif correspondant au chemin racine du serveur AEM. Par exemple, `/content/forms/af/SampleForm.html`. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
-+++
+   +++
 
    +++Configuration
 
    Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
@@ -172,13 +172,13 @@ Pour publier des données sur un serveur externe, indiquez une URL. Le format d�
 
    Vous pouvez également **[!UICONTROL Activer la requête POST]** et fournir une URL pour la publication de la requête. Pour envoyer des données au serveur AEM qui héberge le formulaire, utilisez un chemin d’accès relatif correspondant au chemin racine du serveur AEM. Par exemple, `/content/forms/af/SampleForm.html`. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
-+++
+   +++
 
    +++Configuration
 
    Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 

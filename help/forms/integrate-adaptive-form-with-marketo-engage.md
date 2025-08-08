@@ -180,7 +180,7 @@ Le formulaire adaptatif est maintenant configuré pour se connecter à l’insta
 
 ## Étape suivante
 
-Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
+Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
 
 ## Articles connexes
 
