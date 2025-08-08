@@ -1,15 +1,14 @@
 ---
-Title: How to send an email on submission of an Adaptive Form?
-Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+description: Découvrez le processus de configuration des notifications par e-mail lors de l’envoi d’un formulaire adaptatif.
 keywords: Guide d’envoi et d’envoi de formulaire adaptatif, Comment envoyer un e-mail pour un formulaire adaptatif, Action d’envoi d’e-mail, E-mail de formulaire adaptatif, Envoyer un e-mail
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 18%
+source-wordcount: '851'
+ht-degree: 17%
 
 ---
 
@@ -18,18 +17,18 @@ ht-degree: 18%
 L’action d’envoi **[!UICONTROL Envoyer un e-mail]** permet d’envoyer un e-mail à un ou à plusieurs destinataires lors de l’envoi réussi du formulaire. Cette action Envoyer vous permet de créer un e-mail qui peut inclure des données de formulaire dans un format prédéfini. Prenons l’exemple du modèle suivant, dans lequel le nom du client, l’adresse d’expédition, le nom de l’état et le code postal sont récupérés à partir des données de formulaire envoyées :
 
 
-    &quot;
-    Hi ${customer_Name},
+    ```
+    Bonjour ${customer_Name},
     
-    Les paramètres suivants sont définis comme votre adresse de livraison par défaut :
+    Les paramètres suivants sont définis comme votre adresse d’expédition par défaut :
     ${customer_Name},
     ${customer_Shipping_Address},
     ${customer_State},
     ${customer_ZIPCode}
     
-    Regards,
+    Cordialement,
     WKND
-    &quot;
+    ```
 
 ## Avantages
 
