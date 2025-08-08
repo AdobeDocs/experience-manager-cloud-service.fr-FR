@@ -7,7 +7,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Vous bénéficierez également d’un accompagnement à travers les étapes suiv
 1. Configuration de votre environnement
 1. Obtenir un ID de l’application à partir d’Adobe
 1. Créer un groupe de ressources
-1. Création d’un coffre de clés
-1. Octroi de l’accès Adobe au coffre de clés
+1. Créer un coffre de clés
+1. Accorder à Adobe l’accès au coffre de clés
 1. Créer une clé de chiffrement
 
 Vous devrez partager l’URL du coffre de clés, le nom de la clé de chiffrement et des informations sur le coffre de clés avec Adobe.
@@ -57,23 +57,23 @@ Avant de passer au reste de ce guide, connectez-vous à l’interface en ligne d
 >Bien que ce guide utilise l’interface de ligne de commande Azure, il est possible d’effectuer les mêmes opérations via la console Azure. Si vous préférez utiliser la console Azure, utilisez les commandes ci-dessous comme référence.
 
 
-## Démarrer le processus de configuration du CMK pour AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
+## Démarrer le processus de configuration de CMK pour AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
-Vous devez demander la configuration des Clés gérées par le client (CMK) pour votre environnement AEM as a Cloud Service via l’interface utilisateur. Pour ce faire, accédez à l’interface utilisateur d’AEM Home Security, sous la section **Clés gérées par le client**.
+Vous devez demander la configuration des Clés gérées par le client ou la cliente (CMK) pour votre environnement AEM as a Cloud Service via l’interface d’utilisation. Pour ce faire, accédez à l’interface d’utilisation d’AEM Home Security, sous la section **Clés gérées par le client ou la cliente**.
 Vous pouvez ensuite démarrer le processus d’intégration en cliquant sur le bouton **Démarrer l’intégration**.
 
-![Commencer l’intégration d’un site web à l’aide de l’interface utilisateur CMK](./assets/cmk/step1.png)
+![Commencer l’intégration d’un site web à l’aide de l’interface d’utilisation CMK](./assets/cmk/step1.png)
 
 
 ## Obtenir un ID de l’application à partir d’Adobe {#obtain-an-application-id-from-adobe}
 
-Une fois le processus d’intégration démarré, Adobe fournit un identifiant d’application Entra. Cet identifiant d’application est nécessaire pour la suite du guide et sera utilisé pour créer un principal de service qui permet à Adobe d’accéder à votre coffre de clés. Si vous ne disposez pas déjà d’un identifiant d’application, vous devez attendre qu’il soit fourni par Adobe.
+Une fois le processus d’intégration démarré, Adobe fournit un ID d’application Entra. Cet ID d’application est nécessaire pour la suite du guide et sera utilisé pour créer un principal de service qui permet à Adobe d’accéder à votre coffre de clés. Si vous ne disposez pas déjà d’un ID d’application, vous devez attendre qu’il soit fourni par Adobe.
 
-![La demande est en cours de traitement, attendez qu’Adobe fournisse l’ID de l’application entrante](./assets/cmk/step2.png)
+![La demande est en cours de traitement, attendez qu’Adobe fournisse l’ID d’application Entra](./assets/cmk/step2.png)
 
-Une fois la requête terminée, vous pourrez voir l’ID d’application dans l’interface utilisateur du CMK.
+Une fois la demande terminée, vous pourrez voir l’ID d’application dans l’interface d’utilisation CMK.
 
-![L’ID de l’application entrante est fourni par Adobe](./assets/cmk/step3.png)
+![L’ID d’application Entra est fourni par Adobe](./assets/cmk/step3.png)
 
 ## Créer un groupe de ressources {#create-a-new-resource-group}
 
@@ -120,7 +120,7 @@ az keyvault create `
 
 Au cours de cette étape, vous allez permettre à Adobe d’accéder à votre coffre de clés via une application Entra. L’ID de l’application Entra doit déjà avoir été fourni par Adobe.
 
-Tout d’abord, vous devez créer un principal de service associé à l’application Entra et lui affecter les rôles **Reader du coffre de clés** et **Utilisateur de chiffrement du coffre de clés**. Les rôles sont limités au coffre de clés créé dans ce guide.
+Tout d’abord, vous devez créer un principal de service associé à l’application Entra et lui affecter les rôles **Lecteur Key Vault** et **Utilisateur ou utilisatrice de chiffrement Key Vault**. Les rôles sont limités au coffre de clés créé dans ce guide.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -160,7 +160,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## Partager les informations du coffre de clés {#share-the-key-vault-information}
 
-À ce stade, tout est prêt. Il vous suffit de partager certaines informations requises par le biais de l’interface utilisateur du CMK, ce qui lancera le processus de configuration de l’environnement.
+À ce stade, tout est prêt. Il vous suffit de partager certaines informations requises par le biais de l’interface d’utilisation CMK, ce qui lancera le processus de configuration de l’environnement.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,9 +180,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-Fournissez les informations suivantes dans l’interface utilisateur du CMK :
-![Renseignez les informations dans l’interface utilisateur](./assets/cmk/step3a.png)
+Fournissez les informations suivantes dans l’interface d’utilisation CMK :
+![Renseignez les informations dans l’interface d’utilisation](./assets/cmk/step3a.png)
 
 ## Implications de la révocation de l’accès aux clés {#implications-of-revoking-key-access}
 
@@ -192,16 +191,16 @@ Si vous décidez de révoquer l’accès de la plateforme à vos données, vous 
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez fourni les informations requises dans l’interface utilisateur du CMK, Adobe lance le processus de configuration de votre environnement AEM as a Cloud Service. Ce processus peut prendre un certain temps et vous serez averti une fois qu’il sera terminé.
+Une fois que vous avez fourni les informations requises dans l’interface d’utilisation CMK, Adobe lance le processus de configuration de votre environnement AEM as a Cloud Service. Ce processus peut prendre un certain temps et vous recevrez une notification une fois qu’il sera terminé.
 
 ![Attendez qu’Adobe configure l’environnement.](./assets/cmk/step4.png)
 
 
-## Terminer la configuration du CMK {#complete-the-cmk-setup}
+## Terminer la configuration CMK {#complete-the-cmk-setup}
 
-Une fois le processus de configuration terminé, vous pourrez voir le statut de votre configuration du CMK dans l’interface utilisateur. Vous pouvez également voir le coffre de clés et la clé de chiffrement.
+Une fois le processus de configuration terminé, vous pourrez voir le statut de votre configuration CMK dans l’interface d’utilisation. Vous pouvez également voir le coffre de clés et la clé de chiffrement.
 ![Le processus est maintenant terminé](./assets/cmk/step5.png)
 
 ## Questions et assistance {#questions-and-support}
 
-Contactez-nous si vous avez des questions, des demandes ou si vous avez besoin d’aide concernant la configuration des clés gérées par le client pour AEM as a Cloud Service. L’assistance Adobe peut vous aider si vous avez des questions.
+Contactez-nous si vous avez des questions, des demandes ou si vous avez besoin d’aide concernant la configuration des clés gérées par le client ou la cliente pour AEM as a Cloud Service. L’assistance Adobe peut vous aider si vous avez des questions.
