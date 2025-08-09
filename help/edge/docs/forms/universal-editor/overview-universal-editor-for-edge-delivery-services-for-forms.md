@@ -4,10 +4,10 @@ description: Utilisez l’éditeur universel d’Edge Delivery Services pour A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Que vous gériez un rendu léger côté client, assuriez la compatibilité entre
 
 | ![Style](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Services de préremplissage](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Tests A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Style**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Services de préremplissage** (prochainement) | [**Tests A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Style**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Préremplir des formulaires](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**Tests A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | L’utilisation de styles avec les CSS permet aux équipes de développement de personnaliser l’aspect des éléments de formulaire et de créer une conception visuellement attrayante, en harmonie avec l’esthétique du site web. | Les services de préremplissage renseignent automatiquement les champs de formulaire avec des données d’utilisateurs ou d’utilisatrices pertinentes provenant de diverses sources, ce qui réduit la saisie manuelle et améliore l’expérience d’utilisation. | Les tests A/B permettent aux entreprises de tester différentes conceptions, dispositions et fonctionnalités de formulaire afin d’identifier les variantes les plus performantes. |
 
 | ![Analyses et tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragments de formulaire](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Liaison de données](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

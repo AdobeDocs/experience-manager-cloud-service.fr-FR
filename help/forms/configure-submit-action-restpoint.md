@@ -1,13 +1,13 @@
 ---
+title: Comment configurer l’action d’envoi Envoyer vers le point d’entrée REST pour un formulaire adaptatif ?
 description: Découvrez les étapes de configuration d’un point d’entrée REST lors de l’envoi d’un formulaire adaptatif.
 keywords: Point d’entrée REST AEM Forms, envoyer au point d’entrée REST, publier les données dans l’URL REST, configurer l’action de point d’entrée REST
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1471'
 ht-degree: 58%
 
 ---
@@ -115,13 +115,13 @@ Pour publier des données sur un serveur externe, indiquez une URL. Le format d�
 
    Vous pouvez également **[!UICONTROL Activer la requête POST]** et fournir une URL pour la publication de la requête. Pour envoyer des données au serveur AEM qui héberge le formulaire, utilisez un chemin d’accès relatif correspondant au chemin racine du serveur AEM. Par exemple, `/content/forms/af/SampleForm.html`. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
-   +++
++++
 
    +++Configuration
 
    Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
@@ -172,13 +172,13 @@ Pour publier des données sur un serveur externe, indiquez une URL. Le format d�
 
    Vous pouvez également **[!UICONTROL Activer la requête POST]** et fournir une URL pour la publication de la requête. Pour envoyer des données au serveur AEM qui héberge le formulaire, utilisez un chemin d’accès relatif correspondant au chemin racine du serveur AEM. Par exemple, `/content/forms/af/SampleForm.html`. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
-   +++
++++
 
    +++Configuration
 
    Cette option vous permet d’ajouter une configuration HTTP prédéfinie gérée via l’explorateur de configurations d’AEM. Vous pouvez sélectionner la configuration créée pour votre type d’authentification de point d’entrée Rest de service et les types de contenu. Pour en savoir plus sur le type d’authentification et les types de contenu, consultez [configuration des sources de données](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 

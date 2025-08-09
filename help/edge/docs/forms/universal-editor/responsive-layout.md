@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 1%
 
 # Création d’un Forms réactif avec l’éditeur universel
 
-Les utilisateurs accèdent aux formulaires sur de nombreux appareils, notamment des ordinateurs de bureau, des tablettes et des smartphones. La conception de formulaires réactifs garantit une expérience optimale à tous les utilisateurs et utilisatrices, quel que soit l’appareil. Ce guide explique comment concevoir, tester et optimiser des formulaires pour n’importe quelle taille d’écran à l’aide de l’éditeur universel.
+Le paysage web moderne exige des formulaires qui fonctionnent de manière transparente sur un spectre sans cesse croissant d’appareils et de tailles d’écran. Des grands écrans de bureau aux écrans de smartphones compacts, les utilisateurs attendent des expériences homogènes et intuitives, quel que soit l’appareil qu’ils choisissent. La création de formulaires réactifs n’est plus facultative. Il s’agit d’une exigence fondamentale pour fournir des expériences digitales professionnelles, accessibles et optimisées pour la conversion.
 
+L’éditeur universel fournit des outils et des méthodologies complets pour développer des formulaires réactifs qui s’adaptent intelligemment à diverses dimensions d’écran, méthodes de saisie et contextes utilisateur. Ce guide explore les bases techniques, les stratégies d’implémentation et les techniques d’optimisation nécessaires à la création de formulaires offrant des performances exceptionnelles sur tous les appareils, tout en préservant la convivialité, l’accessibilité et l’attrait visuel.
 
 La création de formulaires réactifs implique deux activités principales :
 
@@ -160,115 +161,116 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 ### Disposition de panneau
 
-**Objectif :** organise le contenu associé en sections visuellement distinctes pouvant être affichées simultanément.
+La disposition Panneau organise le contenu associé en sections visuellement distinctes, ce qui permet aux utilisateurs et aux utilisatrices d’afficher plusieurs sections à la fois. Cette disposition est idéale pour les formulaires contenant des informations classées qui bénéficient d’une présentation côte à côte sur des écrans plus grands.
 
 ![Exemple de disposition de panneau](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Comportement réactif :**
+**comportement réactif**
 
-- **Ordinateur de bureau (1 200 px+) :** les panneaux s’affichent côte à côte ou dans une grille
-- **Tablette (768 px-1199 px) :** Les panneaux s’empilent verticalement avec un espacement
-- **Mobile (320 px-767 px) :** disposition sur une seule colonne avec des sauts de section clairs
+- **Ordinateur de bureau (1 200 px et plus) :** les panneaux sont affichés côte à côte ou dans une grille pour une visibilité maximale.
+- **Tablette (768 px-1199 px) :** Les panneaux s’empilent verticalement avec un espacement approprié pour maintenir la clarté.
+- **Mobile (320 px-767 px) :** les panneaux sont présentés dans une disposition à une seule colonne, avec une séparation nette entre les sections pour une navigation facile.
 
-**Étapes d’implémentation :**
+**Mise en œuvre**
 
-1. Utilisez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Regroupez les champs associés dans chaque panneau.
-3. Ajoutez des en-têtes clairs pour chaque section.
-4. Assurer un espacement adéquat entre les panneaux.
+1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) à votre formulaire.
+2. Regroupez les champs associés dans chaque panneau pour conserver une organisation logique.
+3. Attribuez des en-têtes explicites et clairs à chaque section de panneau.
+4. Assurez-vous que l’espacement entre les panneaux est suffisant pour éviter tout encombrement visuel.
 
-**Bonnes pratiques :**
+**Bonnes pratiques**
 
-- Limitez-vous à 3 ou 4 panneaux sur le bureau pour éviter de surcharger les utilisateurs.
-- Utilisez des titres descriptifs pour chaque panneau.
-- Regroupez logiquement les champs liés afin de réduire la charge cognitive.
-- Tester la navigation du panneau sur les appareils tactiles.
+- Limitez le nombre de panneaux à 3 ou 4 sur le bureau pour éviter de surcharger les utilisateurs.
+- Utilisez des titres concis et descriptifs pour chaque panneau afin de faciliter la compréhension de l’utilisateur.
+- Organisez les champs dans les panneaux de manière logique pour réduire la charge cognitive.
+- Testez la navigation du panneau sur les appareils tactiles pour garantir sa convivialité sur toutes les plateformes.
 
-**Exemples de cas d’utilisation :**
+**Cas d’utilisation courants**
 
-- **Poste :** Informations personnelles, Éducation, Expérience, Références
-- **Enregistrement du produit :** informations de base, spécifications techniques, informations sur la garantie
-- **Survey Forms : Données démographiques** Préférences, Commentaires, Contact
+- **Application de la fonction :** sections pour les informations personnelles, l’éducation, l’expérience et les références.
+- **Enregistrement du produit :** des panneaux pour des informations de base, des spécifications techniques et des informations sur la garantie.
+- **Survey Forms : regroupements** données démographiques, de préférences, de commentaires et d’informations de contact.
 
 ### Disposition de l’Assistant
 
-**Objectif :** guide les utilisateurs à travers des processus complexes étape par étape, en réduisant la charge cognitive et en améliorant les taux d&#39;achèvement.
+La disposition « Assistant » guide les utilisateurs et utilisatrices tout au long d’un processus à plusieurs étapes, présentant une section à la fois. Cette disposition est particulièrement efficace pour les formulaires complexes, car elle réduit la charge cognitive et augmente les taux d’achèvement en divisant le processus en étapes gérables.
 
 ![Exemple de mise en page Assistant](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Comportement réactif :**
+**comportement réactif**
 
-- **Tous les appareils :** maintient le focus en une seule étape pour une expérience mobile optimale.
-- **Contenu de l’étape :** s’adapte à chaque étape (empilement ou côte à côte).
-- **Navigation :** boutons tactiles suffisamment espacés.
-- **Indicateur de progression :** se met à l’échelle en fonction de la taille de l’écran.
+- **Tous les appareils :** permet de garder le focus en une seule étape, ce qui est optimal pour les utilisateurs d’appareils mobiles.
+- **Contenu de l’étape :** chaque étape s’adapte de manière réactive, en empilant les champs ou en les organisant côte à côte en fonction de la taille de l’écran.
+- **Navigation :** comprend des boutons tactiles avec un espacement adéquat pour une interaction facile.
+- **Indicateur de progression :** les barres de progression ou les indicateurs d’étape se dimensionnent de manière appropriée pour différents appareils, fournissant ainsi des commentaires clairs sur le statut d’achèvement.
 
-**Étapes d’implémentation :**
+**Mise en œuvre**
 
-1. Utilisez le composant [Wizard](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Divisez les formulaires complexes en étapes logiques (3 à 7 étapes sont optimales).
-3. Incluez des indicateurs de progression pour l’orientation de l’utilisateur.
-4. Fournissez des commandes de navigation claires (Suivant, Précédent, Enregistrer).
+1. Insérez le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
+2. Divisez le formulaire en étapes logiques, idéalement entre 3 et 7, pour que chaque étape reste ciblée et gérable.
+3. Ajoutez des indicateurs de progression pour aider les utilisateurs et utilisatrices à comprendre leur position dans le processus.
+4. Fournissez des commandes de navigation claires, telles que les boutons Suivant, Précédent et Enregistrer.
 
-**Optimisation mobile :**
+**Conseils d’optimisation pour Mobile**
 
-- Utilisez des cibles tactiles de grande taille (minimum 44 px) pour les boutons de navigation.
-- Assurez-vous que les indicateurs d’étape sont clairs et visibles sur les petits écrans.
-- Limitez le nombre de champs par étape pour réduire le défilement.
-- Activez l’enregistrement automatique pour éviter la perte de données.
+- Utilisez des cibles tactiles de grande taille (au moins 44 pixels de hauteur) pour les commandes de navigation afin d’améliorer l’accessibilité.
+- Assurez-vous que les indicateurs d’étape sont visibles et lisibles sur les petits écrans.
+- Limitez le nombre de champs par étape pour minimiser le défilement et améliorer la mise au point.
+- Activez la fonctionnalité d’enregistrement automatique pour éviter la perte de données si les utilisateurs quittent le formulaire.
 
-**Bonnes pratiques :**
+**Bonnes pratiques**
 
-- Assurez la progression logique des étapes : chaque étape doit s’appuyer sur la précédente.
-- Utilisez des titres d’étape clairs afin que les utilisateurs sachent à quoi s’attendre.
-- Validez l’entrée à chaque étape pour détecter les erreurs de manière précoce.
-- Autoriser les utilisateurs à revenir en arrière pour consulter ou modifier des informations.
+- Concevez des étapes pour suivre une progression logique, chaque étape s’appuyant sur la précédente.
+- Utilisez des titres clairs et descriptifs pour chaque étape afin de définir les attentes des utilisateurs.
+- Validez les entrées utilisateur à chaque étape pour détecter les erreurs au plus tôt et réduire la frustration.
+- Permet aux utilisateurs de revenir en arrière pour consulter ou modifier les informations précédentes sans perdre de données.
 
-**Exemples de cas d’utilisation :**
+**Cas d’utilisation courants**
 
-- **Réclamations d&#39;assurance :** Incident → Preuve → Examen des → personnelles
-- **Configuration du compte :** informations de base → préférences → confirmation de la → de sécurité
-- **Processus de commande :** Produits → Expédition → Paiement → Synthèse
+- **Réclamations d’assurance :** procédure à suivre pour les détails sur l’incident, la soumission des preuves, les informations personnelles et l’examen.
+- **Configuration du compte :** étapes pour les informations de base, les préférences, les paramètres de sécurité et la confirmation.
+- **Processus de commande :** étapes de sélection des produits, des informations d’expédition, des détails de paiement et de la synthèse de la commande.
 
 ### Disposition en accordéon
 
-**Objectif :** permet d’économiser de l’espace en organisant le contenu en sections réductibles, idéales pour les informations facultatives ou secondaires.
+La disposition en accordéon permet de gagner de l’espace en organisant le contenu en sections réductibles, ce qui le rend idéal pour les informations facultatives ou secondaires. Cette disposition est particulièrement efficace pour les formulaires dont le contenu peut être regroupé logiquement et n’a pas besoin d’être affiché en une seule fois.
 
 ![Exemple de disposition en accordéon](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Comportement réactif :**
+**comportement réactif**
 
-- **Excellentes performances mobiles :** seul le contenu pertinent est affiché.
-- **En-têtes optimisés pour les écrans tactiles :** sections faciles à appuyer et à développer.
-- **Animations fluides :** fournit un retour visuel pour les interactions.
-- **Gain d’espace :** réduit le défilement sur tous les appareils.
+- **Performances mobiles :** seule la section appropriée est développée, ce qui réduit la nécessité de faire défiler l’écran et améliore les temps de chargement.
+- **En-têtes optimisés pour les écrans tactiles :** les en-têtes de section sont faciles à appuyer et à développer et prennent en charge les gestes naturels sur les appareils mobiles.
+- **Animations lissées :** le développement et la réduction des sections fournissent un retour visuel pour les interactions utilisateur.
+- **Efficacité de l’espace :** les sections réduites réduisent l’espace vertical, ce qui facilite la navigation dans le formulaire sur tous les appareils.
 
-**Étapes d’implémentation :**
+**Mise en œuvre**
 
-1. Utilisez le composant [Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Regroupez les contenus facultatifs associés dans chaque section.
-3. Utilisez des en-têtes de section descriptifs.
-4. Définissez les états d’ouverture/de fermeture par défaut appropriés.
+1. Ajoutez le [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
+2. Regroupez les contenus secondaires ou facultatifs associés dans chaque section d’accordéon.
+3. Utilisez des en-têtes clairs et descriptifs pour chaque section afin d’aider les utilisateurs et les utilisatrices à comprendre les informations qu’elles contiennent.
+4. Définissez les états d’ouverture ou de fermeture par défaut appropriés pour chaque section en fonction de l’importance et des besoins de l’utilisateur.
 
-**Avantages mobiles :**
+**Avantages mobiles**
 
-- Réduit le défilement en réduisant les sections inutilisées.
-- Interaction conviviale avec des mouvements naturels de développement/réduction.
-- Chargement plus rapide : seul le contenu actif est visible.
-- Meilleure concentration : les utilisateurs ne voient que ce dont ils ont besoin.
+- Réduit le défilement en réduisant les sections inutilisées, ce qui permet aux utilisateurs de se concentrer sur une section à la fois.
+- L’interaction tactile prend en charge les mouvements naturels de développement/réduction.
+- Chargement plus rapide, car seul le contenu actif est visible.
+- Amélioration de la cible d’action, car les utilisateurs et utilisatrices ne voient que les informations dont ils ont besoin à un moment donné.
 
-**Bonnes pratiques :**
+**Bonnes pratiques**
 
-- Utilisez des en-têtes de section clairs afin que les utilisateurs sachent ce qu’il contient avant de développer.
-- Regroupez logiquement les contenus associés dans chaque section.
-- Définissez les sections importantes à développer si nécessaire.
-- Fournissez de brefs aperçus des sections pour aider les utilisateurs à décider quoi développer.
+- Utilisez des en-têtes de section clairs afin que les utilisateurs sachent à quoi s’attendre avant de développer une section.
+- Regroupez logiquement le contenu associé dans chaque section pour faciliter la compréhension.
+- Définissez les sections importantes à développer si une attention immédiate est requise.
+- Fournissez de brefs aperçus ou des résumés des sections pour aider les utilisateurs et les utilisatrices à décider quelles sections développer.
 
-**Exemples de cas d’utilisation :**
+**Cas d’utilisation courants**
 
-- **Configuration du produit :** de base → accessoires → avancés → support
-- **FAQ Forms :** Facturation des → de compte → → technique Général
-- **Paramètres Forms :** Confidentialité → Notifications → Apparence → Avancé
+- **Configuration du produit :** sections pour les options de base, les paramètres avancés, les accessoires et l’assistance.
+- **FAQ Forms :** regroupements pour les questions relatives au compte, à la facturation, aux aspects techniques et aux aspects généraux.
+- **Paramètres Forms :** sections pour les options Confidentialité, Notifications, Apparence et Avancé.
+
 
 ## Partie 3 : bonnes pratiques en matière de conception réactive
 
@@ -276,42 +278,42 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 +++Optimisation mobile (320 px-767 px)
 
-**Pratiques essentielles :**
+**Disposition et interaction :**
 
-- Utilisez une disposition sur une seule colonne pour tout le contenu.
-- Fournissez de grands boutons tactiles (hauteur minimale de 44 px).
-- Simplifiez la navigation avec des options de retour/suivant claires.
-- Réduire le défilement dans chaque section.
-- Mise au point automatique sur le premier champ pour afficher le clavier.
+- Utilisez une disposition à une seule colonne pour tout le contenu du formulaire afin d’optimiser la lisibilité et la facilité d’utilisation.
+- Assurez-vous que tous les boutons et éléments interactifs ont une hauteur d’au moins 44 pixels pour une interaction tactile fiable.
+- Fournissez une navigation claire et simple avec des boutons Précédent et Suivant visibles.
+- Réduisez le besoin de faire défiler chaque section en divisant les formulaires longs.
+- Concentrez-vous automatiquement sur le premier champ de saisie pour demander le clavier mobile.
 
-**Instructions Spécifiques Au Champ :**
+**Instructions relatives aux champs :**
 
-- **Entrées de texte :** pleine largeur avec une marge intérieure suffisante.
-- **Listes déroulantes :** utilisez des éléments de sélection natifs pour une meilleure expérience tactile.
-- **Sélecteurs de date :** utilisez des entrées de date natives pour la compatibilité mobile.
-- **Chargements de fichiers :** fournissez des zones de chargement larges et claires.
+- Les champs de texte doivent couvrir toute la largeur de l’écran avec une marge intérieure suffisante pour l’entrée tactile.
+- Utilisez des éléments de liste déroulante/sélection natifs pour une convivialité mobile optimale.
+- Implémentez des sélecteurs de date natifs pour une expérience mobile cohérente.
+- Agrandissez les zones de chargement de fichiers et donnez-leur des libellés clairs pour un accès facile.
 
 +++
 
 +++Optimisation des tablettes (768 px-1 199 px)
 
-**Stratégies de mise en page :**
+**Disposition et convivialité :**
 
-- Utilisez des dispositions à deux colonnes pour les champs associés.
-- Testez les orientations portrait et paysage.
-- Prise en charge des interactions tactiles et souris.
-- Fournissez des zones de contenu plus vastes tout en préservant la lisibilité.
+- Utilisez des dispositions à deux colonnes pour les champs connexes afin de tirer parti de l’espace d’écran accru.
+- Testez l’aspect et la convivialité du formulaire dans les orientations portrait et paysage.
+- Conçu pour les entrées tactiles et de souris, il garantit que toutes les commandes sont facilement accessibles.
+- Augmentez la taille de la zone de contenu tout en conservant une hiérarchie visuelle et une lisibilité claires.
 
 +++
 
 +++Optimisation de l’ordinateur de bureau (1 200 px+)
 
-**Fonctionnalités avancées :**
+**Fonctionnalités avancées et mise en page :**
 
-- Utilisez des dispositions à plusieurs colonnes pour une utilisation efficace de l’espace.
-- Proposez des raccourcis clavier aux utilisateurs expérimentés.
-- Implémentez les états de survol pour les commentaires interactifs.
-- Fournissez une validation avancée avec des messages d’erreur détaillés.
+- Utilisez des dispositions à plusieurs colonnes pour utiliser efficacement l’espace horizontal et réduire le défilement vertical.
+- Fournissez des raccourcis clavier pour des actions fréquentes afin de prendre en charge les utilisateurs expérimentés.
+- Implémentez des états de survol et un retour visuel pour les éléments interactifs.
+- Proposez une validation avancée avec des messages d’erreur clairs et détaillés pour les formulaires complexes.
 
 +++
 
@@ -321,52 +323,52 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 +++Sauts de disposition de formulaire sur mobile
 
-**Causes fréquentes :**
+**Causes possibles :**
 
-- Eléments à largeur fixe qui ne sont pas mis à l’échelle
-- CSS conçu pour des dispositions bureau-first
-- Images ou contenu qui débordent de leurs conteneurs
+- Éléments à largeur fixe qui ne s’adaptent pas aux écrans plus petits
+- Desktop-first CSS qui remplace les styles mobiles
+- Des images ou du contenu débordant de leurs conteneurs
 
-**Solutions:**
+**Comment corriger :**
 
-- Assurez-vous que les images et les conteneurs s’adaptent à la taille de l’écran.
-- Utilisez une conception mobile-first avec amélioration progressive.
-- Testez avec des émulateurs d’appareil et des appareils réels.
-- Utilisez un dimensionnement flexible au lieu de dimensions fixes.
+- Assurez-vous que toutes les images et tous les conteneurs utilisent un dimensionnement relatif ou en pourcentage.
+- Commencez par une approche CSS mobile-first et superposez les améliorations pour les écrans plus grands.
+- Testez des formulaires à l’aide d’émulateurs d’appareil et d’appareils réels.
+- Évitez les cotes fixes et utilisez des mises en page flexibles.
 
 +++
 
 +++Toucher les cibles trop petites
 
-**Causes fréquentes :**
+**Causes possibles :**
 
-- Boutons de moins de 44 px × 44 px
+- Boutons ou liens de moins de 44 px par 44 px
 - Éléments interactifs placés trop près les uns des autres
-- CSS personnalisé remplaçant les paramètres par défaut de l’éditeur tactile
+- CSS personnalisé réduisant la taille cible tactile par défaut
 
-**Solutions:**
+**Comment corriger :**
 
-- Assurez-vous que tous les éléments interactifs font au moins 44 px × 44 px.
-- Ajouter un espacement entre les boutons et les liens.
-- Testez l’interaction tactile avec les doigts réels, pas seulement avec une souris.
-- Augmentez les zones cibles tactiles pour faciliter la touche.
+- Assurez-vous que chaque élément interactif fait au moins 44 px par 44 px.
+- Ajoutez un espacement adéquat entre les boutons, les liens et les autres commandes.
+- Testez avec de vrais appareils tactiles, pas seulement avec une souris.
+- Développez les zones cibles tactiles selon vos besoins pour l’accessibilité.
 
 +++
 
 +++Problèmes de dépassement de capacité du contenu
 
-**Causes fréquentes :**
+**Causes possibles :**
 
 - Texte long ou étiquettes qui ne sont pas renvoyées à la ligne
-- Conteneurs à largeur fixe
-- Images qui ne sont pas correctement dimensionnées
+- Conteneurs à largeurs fixes
+- Images qui ne sont pas dimensionnées de manière réactive
 
-**Solutions:**
+**Comment corriger :**
 
-- Activez l’habillage du texte pour le contenu long.
-- Utilisez des images réactives à l’échelle appropriée.
-- Mettez en œuvre des dispositions flexibles qui s’adaptent au contenu.
-- Testez avec différentes longueurs de contenu.
+- Activez l’habillage du texte pour tous les libellés et contenus.
+- Utilisez des images réactives qui s’adaptent au conteneur.
+- Concevez des dispositions flexibles qui s’adaptent à des longueurs de contenu variables.
+- Testez avec du contenu court et long pour garantir l’adaptabilité.
 
 +++
 
@@ -374,18 +376,18 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 +++Chargement lent sur Mobile
 
-**Causes fréquentes :**
+**Causes possibles :**
 
-- Images volumineuses non optimisées pour les appareils mobiles
-- Exécution excessive de JavaScript
-- Trop de champs de formulaire à la fois
+- Images volumineuses non optimisées
+- JavaScript lourde ou excessive
+- Trop de champs de formulaire chargés simultanément
 
-**Solutions:**
+**Comment corriger :**
 
-- Optimisez les images pour différentes tailles d’écran.
-- Chargez du contenu non critique uniquement lorsque cela est nécessaire.
-- Utilisez des techniques pour accélérer le chargement mobile.
-- Réduisez les scripts et widgets tiers.
+- Optimisez les images pour les appareils mobiles et utilisez les formats de fichiers appropriés.
+- Différer ou charger en différé du contenu non critique.
+- Réduisez l’utilisation de scripts et de widgets tiers.
+- Rationalisez les champs de formulaire pour ne charger que ce qui est nécessaire.
 
 +++
 
@@ -393,18 +395,18 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 +++Différences entre émulateur et appareil réel
 
-**Causes fréquentes :**
+**Causes possibles :**
 
-- Différences de rendu spécifiques au navigateur
-- Différences entre les interactions tactile et souris
-- Variations de vitesse du réseau
+- Différences dans les moteurs de rendu du navigateur
+- L’interaction tactile n’est pas simulée avec précision par la souris
+- Incohérences de vitesse réseau
 
-**Solutions:**
+**Comment corriger :**
 
-- Testez sur les appareils réels chaque fois que possible.
-- Utilisez plusieurs navigateurs pour les tests d’émulateur.
-- Simulez différentes vitesses de réseau pendant les tests.
-- Effectuez une validation avec des utilisateurs réels dans des environnements cibles.
+- Toujours effectuer des tests sur des appareils réels en plus des émulateurs.
+- Utilisez plusieurs navigateurs et appareils pour effectuer des tests complets.
+- Simulez différentes vitesses de réseau pour identifier les goulots d’étranglement en termes de performances.
+- Recueillez les commentaires de véritables utilisateurs de votre audience cible.
 
 +++
 
@@ -412,33 +414,34 @@ Les modèles de disposition déterminent la manière dont le contenu du formulai
 
 +++Indicateurs clés de performance
 
-**Mesures d’expérience utilisateur :**
+**Expérience utilisateur :**
 
-- **Taux d’achèvement du formulaire :** Cible 85 %+ sur mobile
-- **Délai d’exécution :** le délai d’exécution mobile doit être inférieur à 20 % du bureau.
-- **Taux d’erreur :** erreurs de validation inférieures à 5 %
-- **Points d’abandon :** identifier l’endroit où les utilisateurs abandonnent
+- **Taux de remplissage des formulaires :** visez un taux de 85 % ou plus sur les appareils mobiles.
+- **Délai d’exécution :** les utilisateurs mobiles doivent remplir les formulaires dans un délai de 20 % du temps d’exécution du bureau.
+- **Taux d’erreur :** conserver les erreurs de validation en dessous de 5 %.
+- **Points d’abandon :** identifier et gérer les étapes de restitution des utilisateurs.
 
 **Performances techniques :**
 
-- **Temps de chargement des pages :** moins de 3 secondes sur les réseaux 3G
-- **Core Web Vitals :** tous les benchmarks de performances de Google
-- **Score d’accessibilité :** conformité WCAG 2.1 AA
-- **Compatibilité entre navigateurs :** plus de 98 % de fonctionnalités dans les principaux navigateurs
+- **Temps de chargement de la page :** moins de 3 secondes sur une connexion 3G.
+- **Core Web Vitals :** atteignez ou dépassez les seuils recommandés pour le Google.
+- **Accessibilité :** respecter la norme WCAG 2.1 AA.
+- **Compatibilité des navigateurs :** garantir plus de 98 % de fonctionnalités sur tous les principaux navigateurs.
 
 +++
 
 +++Liste de contrôle de test
 
-**Avant publication :**
+**Liste de contrôle de pré-publication :**
 
-- Testez le formulaire sur les appareils mobiles réels.
+- Testez le formulaire sur des appareils mobiles réels (pas seulement des émulateurs).
 - Assurez-vous que toutes les cibles tactiles sont au moins de 44 px × 44 px.
-- Vérifiez la lisibilité du texte à toutes les tailles d’écran.
-- Confirmez que la validation du formulaire fonctionne sur tous les appareils.
-- Vérifiez que le temps de chargement est inférieur à 3 secondes sur le mobile.
-- Vérifiez que tous les éléments interactifs sont accessibles.
+- Vérifiez la lisibilité du texte pour toutes les tailles d’écran prises en charge.
+- Vérifiez que la validation des formulaires fonctionne de manière cohérente sur tous les appareils et navigateurs.
+- Assurez-vous que le temps de chargement du mobile est inférieur à 3 secondes.
+- Vérifiez que tous les éléments interactifs sont accessibles via le clavier et les lecteurs d’écran.
 - Testez l’envoi du formulaire sur tous les appareils pris en charge.
+
 
 +++
 

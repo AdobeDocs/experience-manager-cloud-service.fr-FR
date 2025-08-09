@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [publier les formulaires, Edge Delivery Services, configuration des formulaires, CORS, filtre référent]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # Publication de Forms adaptatif avec Edge Delivery Services
-
-## Vue d’ensemble
 
 La publication d’un formulaire adaptatif le rend disponible sur Edge Delivery Services pour que les utilisateurs finaux puissent y accéder et l’envoyer. Ce processus comprend trois phases principales : publication du formulaire, configuration des paramètres de sécurité et accès au formulaire dynamique.
 
@@ -28,29 +26,35 @@ La publication d’un formulaire adaptatif le rend disponible sur Edge Delivery 
 
 ## Prérequis
 
-- **Exigences de formulaire :**
-   - Formulaire adaptatif créé à l’aide du modèle Edge Delivery Services
-   - Formulaire testé et prêt à être utilisé en production
+- Formulaire adaptatif créé à l’aide du modèle Edge Delivery Services
+- Formulaire testé et prêt à être utilisé en production
+- Autorisations d’auteur AEM Forms
+- Accès à Cloud Manager (pour la configuration de production)
+- Accès des développeurs au code bloc de formulaire (pour la configuration de l’envoi)
 
-- **Conditions d’accès requises :**
-   - Autorisations d’auteur AEM Forms
-   - Accès à Cloud Manager (pour la configuration de production)
-   - Accès des développeurs au code bloc de formulaire (pour la configuration de l’envoi)
+## Présentation du processus de publication
 
-- **Documentation connexe :**
-   - [Création de formulaires avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Configuration des actions d’envoi](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+La publication de formulaires dans Edge Delivery Services suit une approche en trois phases :
 
-## Phase 1 : Publier Votre Formulaire
+- **Phase 1 : publication du formulaire** - Publiez votre formulaire sur le réseau CDN et vérifiez le statut de publication
+- **Phase 2 : configuration de la sécurité** - Configurez les politiques CORS et les filtres de référent pour des envois sécurisés
+- **Phase 3 : accès et validation** - Tester la fonctionnalité de formulaire et valider l’ensemble du workflow
 
-### Étape 1 : lancer la publication
+Chaque phase s’appuie sur la précédente pour assurer un déploiement sécurisé et fonctionnel.
+
+### Phase 1 : Publier Votre Formulaire
+
++++ Étape 1 : lancer la publication
 
 1. **Accéder à votre formulaire** : ouvrez votre formulaire adaptatif dans l’éditeur universel
 2. **Démarrer la publication** : cliquez sur l’icône **Publier** dans la barre d’outils
 
    ![Cliquer sur Publier](/help/forms/assets/publish-icon-eds-form.png)
 
-### Étape 2 : vérifier et confirmer
++++
+
+
++++ Étape 2 : vérifier et confirmer
 
 1. **Vérification de la publication des ressources** : le système affiche toutes les ressources en cours de publication, y compris votre formulaire
 
@@ -61,7 +65,10 @@ La publication d’un formulaire adaptatif le rend disponible sur Edge Delivery 
 
    ![Publication réussie](/help/forms/assets/publish-success.png)
 
-### Étape 3 : vérification du statut de publication
++++
+
+
++++ Étape 3 : vérification du statut de publication
 
 **Vérifier le statut** : cliquez de nouveau sur l’icône **Publier** pour afficher le statut actuel
 
@@ -73,7 +80,10 @@ La publication d’un formulaire adaptatif le rend disponible sur Edge Delivery 
 - Aucun message d’erreur lors du processus de publication
 - Le formulaire apparaît dans la liste des ressources publiées
 
-### Gestion du Forms publié
++++
+
+
++++ Gestion du Forms publié
 
 **Pour dépublier un formulaire :**
 
@@ -83,9 +93,12 @@ La publication d’un formulaire adaptatif le rend disponible sur Edge Delivery 
 
 ![Dépublier le formulaire](/help/forms/assets/unpublish--form.png)
 
-## Phase 2 : configuration des paramètres de sécurité
++++
 
-### Pourquoi une configuration de sécurité est requise
+
+### Phase 2 : configuration des paramètres de sécurité
+
++++ Pourquoi une configuration de sécurité est requise
 
 Pour activer l’envoi sécurisé de formulaires, vous devez configurer les paramètres de sécurité qui :
 
@@ -98,7 +111,11 @@ Pour activer l’envoi sécurisé de formulaires, vous devez configurer les para
 >
 >**Obligatoire pour la production** : ces configurations sont obligatoires pour que les envois de formulaire fonctionnent dans les environnements de production.
 
-### Étape 1 : configurer l’URL d’envoi de formulaire
++++
+
+
+
++++ Étape 1 : configurer l’URL d’envoi de formulaire
 
 **Objectif** : envoyer directement des formulaires à votre instance AEM
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - L’URL correspond à votre environnement (production, évaluation ou local).
 - Pas de barre oblique de fin dans l’URL
 
-### Étape 2 : configurer les paramètres CORS
++++
+
+
+
++++ Étape 2 : configurer les paramètres CORS
 
 **Objectif** : autoriser les demandes d’envoi de formulaire provenant de domaines Edge Delivery Services
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [ Guide de configuration CORS ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Documentation sur le filtre Référent](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### Étape 3 : Configurer le filtre Référent
++++
+
+
+
++++ Étape 3 : Configurer le filtre Référent
 
 **Objectif** : limiter les opérations d’écriture aux domaines Edge Delivery Services autorisés
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Configuration du filtrage des référents via Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## Phase 3 : Accéder Au Formulaire Publié
++++
 
-### Structure d’URL pour Edge Delivery Services
+
+### Phase 3 : Accéder Au Formulaire Publié
+
+
+
++++ Structure d’URL pour Edge Delivery Services
 
 **Format d’URL standard :**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### Étapes de validation finales
++++
+
+
+
++++ Étapes de validation finales
 
 **Vérifier l’accessibilité du formulaire :**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - Les données apparaissent dans la destination configurée (feuille de calcul, e-mail, etc.)
 - Aucune erreur de console liée à CORS ou aux politiques de sécurité
 
++++
+
 
 ## Étapes suivantes
 
-**Actions immédiates :**
-
-- Testez minutieusement le formulaire publié.
-- Surveillance des données d’envoi de formulaire
-- Configurer le suivi Analytics si nécessaire
-
-**Rubriques avancées :**
 
 - [Configuration des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Donner un style et un thème à vos formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [Ajouter une protection reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Création de dispositions de formulaires réactifs](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## Résumé
 
-Vous avez réussi à :
-
-- Publication de votre formulaire adaptatif dans Edge Delivery Services
-- Paramètres de sécurité configurés pour l’envoi de formulaire
-- Configurer l’accès à l’URL approprié pour les utilisateurs finaux
-- Vérifier le fonctionnement et l’accessibilité des formulaires
-
-Votre formulaire est maintenant en ligne et prêt à être utilisé en production.

@@ -1,13 +1,13 @@
 ---
+title: Comment envoyer un e-mail lors de l’envoi d’un formulaire adaptatif ?
 description: Découvrez le processus de configuration des notifications par e-mail lors de l’envoi d’un formulaire adaptatif.
 keywords: Guide d’envoi et d’envoi de formulaire adaptatif, Comment envoyer un e-mail pour un formulaire adaptatif, Action d’envoi d’e-mail, E-mail de formulaire adaptatif, Envoyer un e-mail
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: Comment configurer une action Envoyer pour un formulaire adaptatif ?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '841'
 ht-degree: 17%
 
 ---
