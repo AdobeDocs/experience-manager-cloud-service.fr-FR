@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
+source-git-commit: 060a00e887a8709a4fd3c4b160b540a8e2867769
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 8%
@@ -67,8 +67,8 @@ curl -svo /dev/null https://www.example.com \
 --resolve www.example.com:443:151.101.3.10
 ```
 
-* Remplacez **`www.example.com`** par votre domaine.
-* L’adresse IP ``151.101.3.10`` est l’une des adresses IP qui peuvent être utilisées pour accéder à AEM Cloud Service. Voir aussi [enregistrement APEX](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record).
+* Remplacez `www.example.com` par votre domaine.
+* L’adresse IP `151.101.3.10` est l’une des adresses IP qui peuvent être utilisées pour accéder à AEM Cloud Service. Voir aussi [enregistrement APEX](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record).
 
 L’indicateur `--resolve` force la requête à l’adresse IP spécifiée et renvoie un succès uniquement après l’installation correcte du certificat et du routage pour votre domaine.
 
