@@ -4,7 +4,7 @@ description: Utilisez l’éditeur universel d’Edge Delivery Services pour A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 99%
@@ -173,11 +173,13 @@ Absolument. L’éditeur universel prend en charge la liaison de données transp
 **Q : Est-il possible de personnaliser les composants de formulaire ?**
 Oui, l’éditeur universel permet aux développeurs et aux développeuses de créer des composants personnalisés et adaptés aux besoins spécifiques de l’entreprise. De plus, vous pouvez étendre les fonctionnalités de l’éditeur par le biais d’extensions d’interface d’utilisation et de workflows personnalisés.
 
+**Q : Quel type d’analyse puis-je obtenir des formulaires ?**
+L’éditeur universel comprend des outils d’analyse et de suivi intégrés pour surveiller les interactions utilisateur, les taux d’envoi de formulaires et les mesures de conversion. Ces informations vous aident à optimiser vos formulaires pour de meilleures performances.
+
 **Q : Comment l’éditeur universel gère-t-il l’accessibilité ?**
 L’éditeur universel est conçu dans le strict respect des normes d’accessibilité, y compris les directives d’accessibilité du contenu web (WCAG). Cela permet de s’assurer que les formulaires sont utilisables par les personnes en situation de handicap, et offre ainsi une expérience inclusive.
 
-**Q : Quel type d’analyse puis-je obtenir des formulaires ?**
-L’éditeur universel comprend des outils d’analyse et de suivi intégrés pour surveiller les interactions utilisateur, les taux d’envoi de formulaires et les mesures de conversion. Ces informations vous aident à optimiser vos formulaires pour de meilleures performances.
+
 
 
 

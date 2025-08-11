@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2382'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ La disposition Panneau organise le contenu associé en sections visuellement dis
 
 **Mise en œuvre**
 
-1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) à votre formulaire.
+1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) à votre formulaire.
 2. Regroupez les champs associés dans chaque panneau pour conserver une organisation logique.
 3. Attribuez des en-têtes explicites et clairs à chaque section de panneau.
 4. Assurez-vous que l’espacement entre les panneaux est suffisant pour éviter tout encombrement visuel.
@@ -206,7 +206,7 @@ La disposition « Assistant » guide les utilisateurs et utilisatrices tout au l
 
 **Mise en œuvre**
 
-1. Insérez le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
+1. Insérez le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
 2. Divisez le formulaire en étapes logiques, idéalement entre 3 et 7, pour que chaque étape reste ciblée et gérable.
 3. Ajoutez des indicateurs de progression pour aider les utilisateurs et utilisatrices à comprendre leur position dans le processus.
 4. Fournissez des commandes de navigation claires, telles que les boutons Suivant, Précédent et Enregistrer.
@@ -246,7 +246,7 @@ La disposition en accordéon permet de gagner de l’espace en organisant le con
 
 **Mise en œuvre**
 
-1. Ajoutez le [composant d’accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
+1. Ajoutez le [composant d’accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
 2. Regroupez les contenus secondaires ou facultatifs associés dans chaque section d’accordéon.
 3. Utilisez des en-têtes clairs et descriptifs pour chaque section afin d’aider les utilisateurs et les utilisatrices à comprendre les informations qu’elles contiennent.
 4. Définissez les états d’ouverture ou de fermeture par défaut appropriés pour chaque section en fonction de l’importance et des besoins de l’utilisateur.
@@ -317,7 +317,7 @@ La disposition en accordéon permet de gagner de l’espace en organisant le con
 
 +++
 
-## Dépannage complet
+## Résolution des problèmes
 
 ### Problèmes de mise en page
 

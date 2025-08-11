@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [publier les formulaires, Edge Delivery Services, configuration des formulaires, CORS, filtre référent]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 2%
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Configuration des actions d’envoi de formulaire](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Donner un style et un thème à vos formulaires](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Ajouter une protection reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Création de dispositions de formulaires réactifs](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Ajouter une protection reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

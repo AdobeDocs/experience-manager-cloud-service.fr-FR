@@ -4,7 +4,7 @@ description: Personnalisez efficacement le thème et le style des formulaires AE
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -147,7 +147,6 @@ Les variables de typographie et d’espacement permettent de contrôler entière
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
-
 +++
 
 +++ Variables de disposition et de structure
@@ -1109,7 +1108,6 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
   text-align: center;
 }
 ```
-
 +++
 
 +++ Définition de style basée sur le nom du champ
@@ -1447,32 +1445,6 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Erreurs de sélecteur courantes
-
-```css
-/- ❌ Incorrect: Assumes direct nesting */
-.form form input {
-  /- This might miss inputs in wrappers */
-}
-
-/- ✅ Correct: Target actual structure */
-.form .text-wrapper input {
-  /- Targets actual HTML structure */
-}
-
-/- ❌ Avoid: Unnecessary specificity */
-main .form form .text-wrapper input {
-  /- Too specific, harder to override */
-}
-
-/- ✅ Preferred: Balanced specificity */
-.form .text-wrapper input {
-  /- Easier to maintain and override */
-}
-```
-
-+++
-
 +++ Style de l’état du formulaire
 
 ```css
@@ -1499,6 +1471,34 @@ main .form form .text-wrapper input {
 ```
 
 +++
+
++++ Erreurs de sélecteur courantes
+
+```css
+/- ❌ Incorrect: Assumes direct nesting */
+.form form input {
+  /- This might miss inputs in wrappers */
+}
+
+/- ✅ Correct: Target actual structure */
+.form .text-wrapper input {
+  /- Targets actual HTML structure */
+}
+
+/- ❌ Avoid: Unnecessary specificity */
+main .form form .text-wrapper input {
+  /- Too specific, harder to override */
+}
+
+/- ✅ Preferred: Balanced specificity */
+.form .text-wrapper input {
+  /- Easier to maintain and override */
+}
+```
+
++++
+
+
 
 ### **Bonnes pratiques spécifiques aux composants**
 

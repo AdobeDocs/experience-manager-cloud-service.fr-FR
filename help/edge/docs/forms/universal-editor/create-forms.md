@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 5%
@@ -41,10 +41,12 @@ Avant de commencer, déterminez quel type de modèle correspond à vos besoins :
 
 **Guide de décision :**
 
+![Décision de sélection de modèle](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Utilisez les **composants principaux** pour les workflows complexes, l’intégration approfondie d’AEM ou l’utilisation de ressources AEM existantes.
 - Utilisez **Edge Delivery Services** pour les performances, la simplicité et les pratiques de développement modernes.
 
-![Décision de sélection de modèle](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Organigramme de décision permettant de choisir le type de modèle approprié*
 
 ## Prérequis
@@ -506,7 +508,7 @@ Si les problèmes persistent :
 
 1. Vérifiez l’état du service Adobe Experience Cloud.
 2. Consultez la documentation de [Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr).
-3. Visitez [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=fr).
+3. Visitez [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
 4. Contactez l’assistance clientèle d’Adobe.
 
 +++

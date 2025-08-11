@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 4%
@@ -340,7 +340,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-+++Outils optimisés par l’IA 
+Outils optimisés par l’IA +++
 
 #### **Générer des variations**
 
@@ -507,19 +507,19 @@ Effectuez un Principal de ces raccourcis pour créer des formulaires plus rapide
 - **Planifier avant de créer** - Esquissez la structure du formulaire avant de commencer.
 - **Restez simple** Évitez de surcharger les utilisateurs avec trop de champs.
 
-### **Optimisation des performances**
-
-- **Réduire les composants** - Utilisez uniquement les champs de formulaire nécessaires
-- **Optimiser les images** - Compressez les images utilisées dans les formulaires
-- **Test sur mobile** - Garantissez de bonnes performances sur les connexions mobiles plus lentes
-- **Valider tôt** - Configurez une validation appropriée pour éviter les erreurs d’envoi
-
 ### **Expérience client**
 
 - **Tester fréquemment** - Utilisez le mode Aperçu après chaque modification majeure
 - **À l’instar des utilisateurs** - Tenez compte de l’expérience de remplissage complète du formulaire
 - **Fournir des libellés clairs** - Rendre les fonctions de champ évidentes pour les utilisateurs et les utilisatrices
 - **Ajouter du texte utile** - Utilisez du texte d’aide pour les champs complexes.
+
+### **Optimisation des performances**
+
+- **Réduire les composants** - Utilisez uniquement les champs de formulaire nécessaires
+- **Optimiser les images** - Compressez les images utilisées dans les formulaires
+- **Test sur mobile** - Garantissez de bonnes performances sur les connexions mobiles plus lentes
+- **Valider tôt** - Configurez une validation appropriée pour éviter les erreurs d’envoi
 
 ## Étapes suivantes
 

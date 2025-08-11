@@ -4,9 +4,9 @@ description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une acti
 keywords: comment sélectionner une action envoyer pour un formulaire adaptatif, connecter un formulaire adaptatif à une liste sharepoint, connecter un formulaire adaptatif à une bibliothèque de documents sharepoint, connecter un formulaire adaptatif à un modèle de données de formulaire (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 46%
 
 ---
@@ -15,12 +15,11 @@ ht-degree: 46%
 
 | Version | Lien de l’article |
 |---------|-----------------------------|
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (composants de base) | [Cliquer ici](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (composants principaux) | [Cliquer ici](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Cet article |
 
-## Vue d’ensemble
 
 L’envoi d’un formulaire est la dernière étape essentielle du parcours de l’utilisateur ou de l’utilisatrice. C’est à ce moment-là que les données collectées sont traitées et que des actions sont lancées. Ce document contient un guide complet pour la configuration et la gestion des actions d’envoi pour les formulaires adaptatifs dans l’éditeur universel.
 

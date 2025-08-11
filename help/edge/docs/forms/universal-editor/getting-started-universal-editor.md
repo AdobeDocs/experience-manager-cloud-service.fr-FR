@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 2%
@@ -184,9 +184,9 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
 **Validation :** confirmez la connexion de votre référentiel GitHub à AEM.
 
-    >[ !REMARQUE]
+    >[!REMARQUE]
     >
-    >Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build GitHub](#troubleshooting-github-build-issues).
+>Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -759,27 +759,6 @@ Si vous voyez « Impossible de résoudre le chemin d’accès sur le module « /
 
 +++
 
-+++Problèmes liés à l’éditeur universel
-
-**Problème :** composants de formulaire n’apparaissent pas dans l’éditeur universel
-
-**Solutions:**
-
-- Vérifiez que la synchronisation du code AEM est installée et en cours d’exécution.
-- Vérifiez que `fstab.yaml` possède l’URL d’auteur AEM appropriée.
-- Assurez-vous que l’accès anticipé à votre instance AEM est activé.
-- Confirmer `component-definition.json` inclut les composants de formulaire
-
-**Problème :** modifications non visibles après publication
-
-**Solutions:**
-
-- Attendez l’actualisation du cache CDN.
-- Vérification du cache du navigateur (essayer en mode incognito/privé)
-- Vérifiez que le format d’URL utilisé est correct
-
-+++
-
 +++Problèmes de fonctionnalité de formulaire
 
 **Problème :** envois de formulaire ne fonctionnent pas
@@ -801,4 +780,27 @@ Si vous voyez « Impossible de résoudre le chemin d’accès sur le module « /
 - Test dans l’environnement de développement local
 
 +++
+
++++Problèmes liés à l’éditeur universel
+
+**Problème :** composants de formulaire n’apparaissent pas dans l’éditeur universel
+
+**Solutions:**
+
+- Vérifiez que la synchronisation du code AEM est installée et en cours d’exécution.
+- Vérifiez que `fstab.yaml` possède l’URL d’auteur AEM appropriée.
+- Assurez-vous que l’accès anticipé à votre instance AEM est activé.
+- Confirmer `component-definition.json` inclut les composants de formulaire
+
+**Problème :** modifications non visibles après publication
+
+**Solutions:**
+
+- Attendez l’actualisation du cache CDN.
+- Vérification du cache du navigateur (essayer en mode incognito/privé)
+- Vérifiez que le format d’URL utilisé est correct
+
++++
+
+
 

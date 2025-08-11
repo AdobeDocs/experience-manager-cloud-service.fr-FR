@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ Vous allez créer un formulaire qui :
 
 1. **Ouvrez l’éditeur universel** :
    - Accédez à la console AEM Sites, sélectionnez votre page, puis cliquez sur **Modifier**
-   - Vérifiez que l’[éditeur universel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=fr) est correctement configuré
+   - Vérifiez que l’[éditeur universel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) est correctement configuré
 
 2. **Ajoutez les composants de formulaire dans cet ordre** :
    - Titre (H2) : « Formulaire de calcul de l&#39;impôt »
@@ -664,7 +664,7 @@ Forms deviennent des outils puissants pour la collecte de données, la qualifica
 
 +++
 
-+++ Étapes suivantes
+## Étapes suivantes
 
 **Parcours d’apprentissage recommandé** :
 
@@ -676,8 +676,7 @@ Forms deviennent des outils puissants pour la collecte de données, la qualifica
 
 **Ressources supplémentaires** :
 
-- [Documentation sur l’éditeur universel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=fr) pour un contexte plus large
+- [Documentation sur l’éditeur universel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) pour un contexte plus large
 - [guide d’Extension Manager](/help/implementing/developing/extending/extension-manager.md) pour activer des fonctionnalités supplémentaires
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) pour des conseils complets sur le développement de formulaires
 
-+++

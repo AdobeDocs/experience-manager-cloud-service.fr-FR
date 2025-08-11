@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 4%
@@ -249,7 +249,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Aperçu sous HTML**
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Exemple :**
 
@@ -422,17 +422,19 @@ Vérifiez que tous les champs ont des valeurs de `bindRef` correctes qui corresp
 
 +++
 
++++Puis-je utiliser plusieurs services de préremplissage dans un seul formulaire ?
+
+Vous pouvez configurer un service de préremplissage principal par formulaire. Cependant, vous pouvez combiner différentes sources de données dans un seul modèle de données de formulaire pour obtenir des fonctionnalités similaires.
+
++++
+
 +++Comment gérer l’authentification pour les services de préremplissage ?
 
 L’authentification dépend de la configuration de votre source de données. Pour le préremplissage basé sur FDM, configurez l’authentification dans les paramètres de votre source de données. Pour le préremplissage des brouillons, les utilisateurs doivent généralement être connectés pour accéder aux brouillons enregistrés.
 
 +++
 
-+++Puis-je utiliser plusieurs services de préremplissage dans un seul formulaire ?
 
-Vous pouvez configurer un service de préremplissage principal par formulaire. Cependant, vous pouvez combiner différentes sources de données dans un seul modèle de données de formulaire pour obtenir des fonctionnalités similaires.
-
-+++
 
 ## Rubriques connexes
 
