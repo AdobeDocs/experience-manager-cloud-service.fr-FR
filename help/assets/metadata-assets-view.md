@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 79%
+source-wordcount: '2557'
+ht-degree: 75%
 
 ---
+
 
 # Métadonnées dans la vue Assets {#metadata}
 
@@ -181,7 +182,6 @@ Suivez les étapes ci-dessous pour utiliser le composant Lien sur le formulaire 
    * Cliquez sur ![l’icône d’édition](assets/do-not-localize/edit.svg) pour modifier l’URL.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
 
-
 ### Utiliser le composant Balises dans un formulaire de métadonnées {#tag-component-metadata-form}
 
 L’élément racine représente l’arborescence des balises que vous pouvez associer aux ressources et qui permet d’identifier la ressource en fonction de la balise qui lui est attribuée. De plus, vous pouvez restreindre l’accès à une taxonomie spécifique lors de la configuration du formulaire de métadonnées dans l’éditeur de métadonnées.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 Pour afficher les balises racines configurées, accédez à la page de détails de la ressource où le mappage entre le formulaire de métadonnées et les balises racines est effectué.
+
+## Modifier le Forms de métadonnées {#edit-metadata-forms}
+
+Pour modifier un formulaire de métadonnées, procédez comme suit :
+
+1. Accédez à [!DNL Assets View] page d’accueil et sélectionnez **[!DNL Metadata Forms]** pour afficher une liste de formulaires de métadonnées.
+1. Sélectionnez un formulaire et cliquez sur **[!UICONTROL Modifier]** pour ouvrir la page de [!DNL Metadata Form Editor]. Cette page affiche les composants du formulaire de métadonnées dans le volet de gauche, des onglets tels que De base, Avancé, Balises et plus dans le volet central, ainsi que le panneau Paramètres permettant de modifier les propriétés de métadonnées dans le volet de droite.
+1. Ouvrez un onglet (**[!DNL Basic]**, **[!DNL Advanced]** ou **[!DNL Tags]**).
+1. Sélectionnez une propriété de métadonnées pour modifier ses paramètres dans le panneau **[!UICONTROL Paramètres]**. Vous pouvez mettre à jour les mappages de propriété, renommer les libellés, modifier ou ajouter des valeurs de propriété et effectuer d’autres modifications de ce type dans le panneau **[!UICONTROL Paramètres]**.
+1. Cliquez sur **[!UICONTROL Aperçu]** pour passer en revue les modifications apportées au formulaire avant de les enregistrer.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour appliquer les modifications.
 
 ## Amélioration de la découverte de contenu avec les métadonnées générées par l’IA {#ai-smart-tags}
 
@@ -260,7 +271,7 @@ Pour plus d’informations sur la désactivation des métadonnées générées p
 
 * Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
 
-* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support).
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support).
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
