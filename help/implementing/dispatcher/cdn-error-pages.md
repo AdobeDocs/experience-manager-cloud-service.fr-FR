@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Configuration des pages d’erreur du réseau CDN {#cdn-error-pages}
 
-Dans le cas peu probable où le réseau CDN géré par Adobe [](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+Dans le cas peu probable où le réseau CDN géré par Adobe [&#128279;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuration {#setup}
 

@@ -252,10 +252,10 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
    ![Message de remerciement](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
-   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **** afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
+   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **&#x200B;**&#x200B;afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
 1. Accédez à `http://<host>:<port>/system/console/configMgr`.
 
-1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **** à l’adresse `http://<host>:<port>/system/console/slinglog`.
+1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **&#x200B;**&#x200B;à l’adresse `http://<host>:<port>/system/console/slinglog`.
 
    ![ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
 

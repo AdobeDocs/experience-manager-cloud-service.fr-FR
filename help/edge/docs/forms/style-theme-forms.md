@@ -637,6 +637,7 @@ le sélecteur définit le style de tous les panneaux qui peuvent être répété
   margin-bottom: 10px;
 }
 ```
+
 ce sélecteur définit le style de tous les wrappers de champ dans un panneau répétable, en assurant un espacement cohérent entre les champs.
 
 - Ciblage de champs spécifiques (dans un panneau) :
