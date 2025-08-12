@@ -134,7 +134,7 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 N’appelez pas le modèle d’origine. Veillez plutôt à copier le modèle et à appeler cette copie.
 
-Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
 
 Vous pouvez également créer un modèle de workflow qui utilise l’étape de processus `Publish Content Tree`.
 

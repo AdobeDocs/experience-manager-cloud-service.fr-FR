@@ -16,7 +16,7 @@ ht-degree: 48%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez déplacer des Forms adaptatives et des ressources connexes telles que des thèmes de formulaire adaptatif, un modèle de données de formulaire (FDM), des modèles de formulaire adaptatif, des fragments et des PDF forms entre des instances [!DNL AEM Forms].
