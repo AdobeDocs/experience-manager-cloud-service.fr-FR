@@ -115,6 +115,7 @@ Configurez maintenant le gestionnaire d’authentification OIDC. Plusieurs conne
       "storeRefreshToken": false
    }
    ```
+
 1. Configurez ensuite ses propriétés comme suit :
    * `groupsInIdToken` : défini sur true si les groupes sont envoyés dans le jeton d’ID. Si la valeur est false ou n’est pas spécifiée, les groupes sont lus à partir du point d’entrée UserInfo.
    * `groupsClaimName` : le nom de la réclamation contient les groupes à synchroniser dans AEM.
