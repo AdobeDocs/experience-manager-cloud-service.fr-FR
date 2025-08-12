@@ -4,7 +4,8 @@ description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une acti
 keywords: comment sélectionner une action envoyer pour un formulaire adaptatif, connecter un formulaire adaptatif à une liste sharepoint, connecter un formulaire adaptatif à une bibliothèque de documents sharepoint, connecter un formulaire adaptatif à un modèle de données de formulaire (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 46%
@@ -15,7 +16,7 @@ ht-degree: 46%
 
 | Version | Lien de l’article |
 |---------|-----------------------------|
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (composants de base) | [Cliquer ici](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (composants principaux) | [Cliquer ici](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Cet article |
@@ -23,7 +24,7 @@ ht-degree: 46%
 
 L’envoi d’un formulaire est la dernière étape essentielle du parcours de l’utilisateur ou de l’utilisatrice. C’est à ce moment-là que les données collectées sont traitées et que des actions sont lancées. Ce document contient un guide complet pour la configuration et la gestion des actions d’envoi pour les formulaires adaptatifs dans l’éditeur universel.
 
-### Ce que vous apprendrez :
+## Ce que vous apprendrez :
 
 À la fin de ce document, vous aurez appris à :
 
@@ -33,7 +34,7 @@ L’envoi d’un formulaire est la dernière étape essentielle du parcours de l
 - Implémenter des actions d’envoi personnalisées pour des besoins professionnels spécifiques
 - Gérer la validation du formulaire et les scénarios d’erreur lors de l’envoi
 
-### Audience cible
+## Audience cible
 
 Ce guide est conçu pour les publics suivants :
 
@@ -77,6 +78,3 @@ Vous pouvez configurer l’action d’envoi pour les formulaires créés dans l�
 >
 > - Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
 > - Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
-
-
-

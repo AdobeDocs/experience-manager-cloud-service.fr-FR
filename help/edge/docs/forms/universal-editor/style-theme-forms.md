@@ -4,7 +4,7 @@ description: Personnalisez efficacement le thème et le style des formulaires AE
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ Le bloc Formulaires adaptatifs offre une structure HTML cohérente pour divers �
 
 Tous les champs de formulaire, à l’exception des listes déroulantes, des groupes de boutons radio et des groupes de cases à cocher, présentent la structure HTML suivante :
 
-#### Structure HTML des composants généraux
+### Structure HTML des composants généraux
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ Vous pouvez définir le style des champs de formulaire en fonction de leur type 
 
 Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifiques et appliquer les styles de manière cohérente.
 
-#### Structure HTML
+### Structure HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
 
 
 
-#### Exemple de sélecteurs CSS
+### Exemple de sélecteurs CSS
 
 ```CSS
 /- Primary Pattern: Target all text input fields */
