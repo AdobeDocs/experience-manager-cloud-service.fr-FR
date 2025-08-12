@@ -1,15 +1,15 @@
 ---
-title: Prise en main des outils de refactorisation
+title: Commencer avec les outils de refactorisation
 description: Découvrez comment commencer à utiliser les outils de refactorisation dans AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
-source-git-commit: c89acee0c5090f32136306b41a669d7241002a37
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Prise en main des outils de refactorisation {#getting-started-refactoring-tools}
+# Commencer avec les outils de refactorisation {#getting-started-refactoring-tools}
 
 ## Disponibilité {#availability}
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=fr" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,8 +35,6 @@ Utilisez l’outil de refactorisation pour migrer votre code à des fins de comp
 1. Lorsque vous accédez pour la première fois à la vue de code **Source**, un état vide s’affiche vous invitant à charger votre code source.
 
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Chargement du code Source {#uploading}
 
@@ -68,12 +66,12 @@ Lorsque les clients accèdent pour la première fois aux **outils de refactorisa
    ![Image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Le chargement d’un nouveau projet supprimera le projet existant. Assurez-vous que toutes les données nécessaires sont enregistrées avant de continuer.
 
 >[!NOTE]
+>
 >Les tâches de refactorisation ne peuvent être exécutées que si le chargement du code source réussit.
-
-&#x200B;---
 
 ## Traitements de refactorisation {#refactoring-jobs}
 
@@ -90,9 +88,8 @@ Lorsque vous cliquez sur l’onglet **Tâche de refactorisation**, une liste des
 ![Image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >Vous pouvez déclencher des tâches de refactorisation individuelles ou exécuter tous les outils disponibles en une seule fois à l’aide de l’option **Tous les outils ensemble**.
-
-&#x200B;---
 
 ### &#x200B;2. Statut de la tâche
 
@@ -111,4 +108,5 @@ Une fois la tâche terminée, le bouton **Télécharger** devient disponible et 
 ![Image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Chaque tâche peut prendre jusqu’à 1 heure. Si le statut n’est pas mis à jour, contactez l’assistance Adobe.

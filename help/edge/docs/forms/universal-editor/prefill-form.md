@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: préremplissage du formulaire adaptatif, services de diffusion edge des formulaires adaptatifs, remplissage automatique des formulaires adaptatifs
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 4%
@@ -249,7 +250,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Aperçu sous HTML**
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **Exemple :**
 

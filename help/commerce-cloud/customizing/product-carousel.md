@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -22,10 +22,15 @@ Le composant Carrousel de produit est étendu tout au long de ce tutoriel. Dans 
 1. Insérez un nouveau composant de carrousel de produit dans le conteneur de mises en page principal de la page.
    ![Composant du carrousel de produit](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Développez le Panneau latéral (s’il n’est pas déjà basculé) et basculez la liste déroulante de l’outil de recherche de ressources sur **Produits**.
-     ![Produits du carrousel](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![Produits du carrousel](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Cela devrait afficher la liste des produits disponibles à partir d’une instance Adobe Commerce connectée.
+
    ![Instance connectée](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Les produits s’affichent comme ci-dessous avec les propriétés par défaut :
+
    ![Produit affiché avec les propriétés](/help/commerce-cloud/assets/discount.png)
 
 ## Mettre à jour le modèle Sling {#update-sling-model}
@@ -50,7 +55,7 @@ Le modèle de délégation pour les modèles Sling `CustomCarouselImpl` permet d
    private ProductCarousel productCarousel;
    ```
 
-1. L’annotation @PostConstruct garantit que cette méthode est appelée lorsque le modèle Sling est initialisé. La requête de GraphQL de produit a déjà été étendue à l’aide de la méthode extendProductQueryWith pour récupérer les attributs. Mettez à jour la requête GraphQL pour inclure le  attribut dans la requête partielle :
+1. L’annotation @PostConstruct garantit que cette méthode est appelée lorsque le modèle Sling est initialisé. La requête de GraphQL de produit a déjà été étendue à l’aide de la méthode extendProductQueryWith pour récupérer les attributs. Mettez à jour la requête GraphQL pour inclure l’attribut dans la requête partielle :
 
    ```
    @PostConstruct

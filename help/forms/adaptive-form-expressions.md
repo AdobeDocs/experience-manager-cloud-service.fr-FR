@@ -5,13 +5,13 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 97%
+source-wordcount: '2682'
+ht-degree: 96%
 
 ---
-
 
 # Expressions de formulaire adaptatif {#adaptive-form-expressions}
 
@@ -22,7 +22,7 @@ JavaScript™ est le langage d’expression utilisé pour les formulaires adapta
 ## Bonnes pratiques relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
-* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champs utilisés lors de l’écriture d’expressions.
+* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champ utilisés lors de l’écriture d’expressions.
 * Lors de la création d’expressions multilignes, utilisez un point-virgule à la fin d’une instruction.
 
 ## Recommandations relatives aux expressions impliquant un panneau de répétition {#best-practices-for-expressions-involving-repeating-panel}
@@ -31,7 +31,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 * Pour créer un panneau de répétition, dans la boîte de dialogue du panneau, ouvrez les paramètres, puis paramétrez la valeur du champ de nombre maximal sur un chiffre supérieur à 1.
 * La valeur du nombre minimum des paramètres de répétition du panneau peut être un ou plusieurs, mais ne peut pas être supérieure à la valeur du nombre maximal.
-* Lorsqu’une expression fait référence à un champ de panneau de répétition, les noms de champ dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
+* Lorsqu’une expression fait référence à un champ de panneau répétable, les noms de champ dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
 * Les formulaires adaptatifs fournissent quelques fonctions spéciales pour simplifier le calcul des panneaux à répétition comme la somme, le compte, le minimum, le maximum, le filtre, etc. Pour obtenir la liste complète des fonctionnalités, consultez la [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/af.html)
 * Les API pour manipuler les instances d’un panneau de répétition sont :
 
@@ -209,7 +209,7 @@ Le format d’affichage peut être utilisé pour afficher les données dans diff
 
 ### GuideBridge - API et événements {#guidebridge-apis-and-events}
 
-GuideBridge est un ensemble d’API qui peut être utilisé pour interagir avec le Forms adaptatif dans un modèle de mémoire dans un navigateur. Pour en savoir plus sur les API GuideBridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
+GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en interaction avec le Forms adaptatif dans le modèle de mémoire d’un navigateur. Pour en savoir plus sur les API GuideBridge, les méthodes de classe, les événements exposés, consultez la [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -217,9 +217,9 @@ GuideBridge est un ensemble d’API qui peut être utilisé pour interagir avec 
 
 #### Utilisation de GuideBridge dans différentes expressions {#guidebridge-usage-in-various-expressions}
 
-* Pour réinitialiser les champs de formulaire, vous pouvez déclencher l’API `guideBridge.reset()` dans l’expression de clic d’un bouton. De même, il existe une API d’envoi qui peut être appelée expression de clic `guideBridge.submit()`**.**
+* Pour réinitialiser les champs de formulaire, vous pouvez déclencher l’API `guideBridge.reset()` dans l’expression de clic d’un bouton. De même, il existe une API d’envoi qui peut être appelée `guideBridge.submit()` d’expression de clic.
 
-* Vous pouvez utiliser l’API `setFocus()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). Le paramètre `setFocus()` offre toute une série d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour passer au panneau suivant, vous pouvez utiliser : guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
+* Vous pouvez utiliser l’API `setFocus()` pour définir la cible d’action sur différents champs et panneaux (car la cible d’action du panneau est définie sur le premier champ automatiquement). `setFocus()` propose un large éventail d’options pour naviguer sur différents panneaux, passer à la traversée précédente/suivante, régler la cible d’action sur un champ en particulier, etc. Par exemple, pour passer au panneau suivant, vous pouvez utiliser : `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`.
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 
@@ -274,14 +274,13 @@ Comme mentionné ci-dessus, les formulaires adaptatifs permettent à l’auteur 
 Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à un type de champ spécifique et pour le réutiliser avec d’autres champs du même type :
 
 1. Accédez à CRXDE Lite sur votre instance de création.
-1. Créez un dossier pour conserver vos modèles personnalisés. Sous le répertoire /apps , créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
+1. Créez un dossier pour conserver vos modèles personnalisés. Dans le répertoire /apps, créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
 1. Ouvrez l’onglet Propriétés du nœud créé. Par exemple, ouvrez l’onglet Propriétés de `textboxpatterns`. Ajoutez la propriété `guideComponentType` à ce nœud et définissez sa valeur sur *fd/af/components/formatter/guideTextBox*.
 
 1. La valeur de cette propriété dépend du champ pour lequel vous souhaitez définir les modèles. Pour un champ numérique, la valeur de la propriété `guideComponentType` est *fd/af/components/formatter/guideNumericBox*. La valeur du champ de sélecteur de date est *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Vous pouvez ajouter un modèle personnalisé en affectant une propriété au nœud `textboxpatterns`. Ajoutez une propriété qui dispose d’un nom (par exemple, `pattern1`) et définissez sa valeur sur le modèle que vous voulez ajouter. Par exemple, ajoutez une propriété `pattern1` avec une valeur Fax=text{99-999-9999999}. Le modèle est disponible pour toutes les zones de texte que vous utilisez dans les formulaires adaptatifs.
 
    ![Création de modèles personnalisés pour les champs dans CrxDe](assets/creating-custom-patterns.png)
 
    Création de modèles personnalisés
-

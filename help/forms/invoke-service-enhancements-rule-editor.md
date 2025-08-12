@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 L’éditeur visuel de règles d’un formulaire adaptatif prend en charge la fonctionnalité **Invoquer le service**, qui vous permet de sélectionner un service dans la liste des modèles de données de formulaire (FDM) configurés pour votre instance. Vous pouvez mapper des champs de formulaire directement aux paramètres d’entrée du service. Pour mapper des champs de formulaire aux paramètres de sortie, utilisez l’option de payload d’événement pour le service de modèle de données de formulaire spécifié. En outre, l’éditeur visuel de règles vous permet de créer des règles pour les gestionnaires de succès et d’échec des opérations **Invoke Service** en fonction de ses réponses de sortie. Les gestionnaires de succès gèrent la réussite de l’exécution de l’opération **Invoke Service**, tandis que les gestionnaires d’échec traitent les erreurs qui se produisent.
 
-### Avantages de l’utilisation du service d’appel dans l’éditeur de règles du formulaire
+## Avantages de l’utilisation du service d’appel dans l’éditeur de règles du formulaire
 
 L’utilisation de l’opération Invoke Service dans l’éditeur de règles d’un formulaire adaptatif présente les avantages suivants :
 

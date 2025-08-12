@@ -1,11 +1,11 @@
 ---
 title: Création et ajout de fonctions personnalisées dans un formulaire adaptatif
-description: AEM Forms prend en charge les fonctions personnalisées qui permettent aux utilisateurs de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
+description: AEM Forms prend en charge les fonctions personnalisées, qui permettent aux utilisateurs de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
 keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 51%
@@ -14,8 +14,8 @@ ht-degree: 51%
 
 # Créer une fonction personnalisée pour un formulaire adaptatif basé sur les composants principaux
 
-Les Forms adaptatives basées sur les composants principaux offrent des expériences utilisateur dynamiques en ajustant le contenu et le comportement en fonction des entrées de l’utilisateur. Les fonctions personnalisées permettent aux développeurs d’étendre les fonctionnalités, en s’assurant que les formulaires répondent à des exigences spécifiques. En intégrant des fonctions personnalisées, les développeurs peuvent implémenter une logique complexe, automatiser les processus et introduire des interactions uniques qui correspondent aux besoins spécifiques de l’entreprise ou aux attentes de l’utilisateur. Il permet de s’assurer que les formulaires s’adaptent non seulement à des conditions variées, mais qu’ils offrent également une solution plus précise et plus efficace pour divers cas d’utilisation.
-Cet article vous guide tout au long des étapes de création de fonctions personnalisées pour le Forms adaptatif à l’aide des composants principaux.
+Le Forms adaptatif basé sur les composants principaux offre des expériences utilisateur dynamiques en ajustant le contenu et le comportement en fonction des entrées utilisateur. Les fonctions personnalisées permettent aux développeurs et aux développeuses d’étendre les fonctionnalités, en veillant à ce que les formulaires puissent répondre à des exigences spécifiques. En intégrant des fonctions personnalisées, les développeurs et les développeuses peuvent mettre en œuvre une logique complexe, automatiser les processus et introduire des interactions uniques qui s’alignent sur les besoins spécifiques de l’entreprise ou les attentes des utilisateurs et utilisatrices. Cela permet de s’assurer que les formulaires s’adaptent à des conditions variables, mais aussi qu’ils fournissent une solution plus précise et plus efficace pour divers cas d’utilisation.
+Cet article vous guide tout au long des étapes de création de fonctions personnalisées pour le Forms adaptatif à l’aide de composants principaux.
 
 ## Considérations
 
@@ -31,9 +31,9 @@ Cet article vous guide tout au long des étapes de création de fonctions person
 
 ## Conditions préalables pour créer une fonction personnalisée
 
-Avant de commencer à ajouter une fonction personnalisée à votre Forms adaptatif, assurez-vous que vous disposez des éléments suivants :
+Avant de commencer à ajouter une fonction personnalisée à votre Forms adaptatif, vérifiez que vous disposez des éléments suivants :
 
-**Logiciel :**
+**Logiciel:**
 
 * **Éditeur de texte brut (IDE)** : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme Microsoft Visual Studio Code offre des fonctionnalités avancées pour faciliter la modification.
 
@@ -45,6 +45,7 @@ Avant de commencer à ajouter une fonction personnalisée à votre Forms adaptat
 Créez une bibliothèque cliente pour appeler des fonctions personnalisées dans l’éditeur de règles. Pour plus d’informations, voir [Utilisation des bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr#developing).
 
 Les étapes de création de fonctions personnalisées sont les suivantes :
+
 1. [Créez une bibliothèque cliente.](#create-client-library)
 1. [Ajout d’une bibliothèque cliente à un formulaire adaptatif](#use-custom-function)
 
@@ -52,23 +53,23 @@ Les étapes de création de fonctions personnalisées sont les suivantes :
 
 Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque cliente. Pour créer une bibliothèque cliente, procédez comme suit :
 
-**Cloner le référentiel**
+**Clonez le référentiel**
 
-Cloner votre [référentiel as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
+Clonez votre référentiel AEM Forms as a Cloud Service [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
 
-1. Ouvrez la ligne de commande ou la fenêtre de terminal.
+1. Ouvrez la ligne de commande ou la fenêtre du terminal.
 
-1. Accédez à l’emplacement souhaité sur votre ordinateur où stocker le référentiel.
+1. Accédez à l’emplacement souhaité sur votre ordinateur, où vous souhaitez stocker le référentiel.
 
 1. Exécutez la commande suivante pour cloner le référentiel :
 
    `git clone [Git Repository URL]`
 
-Cette commande télécharge le référentiel et crée un dossier local du référentiel cloné sur votre ordinateur. Dans ce guide, nous nous référons à ce dossier en tant que [répertoire de projet AEMaaCS].
+Cette commande télécharge le référentiel et crée un dossier local du référentiel cloné sur votre ordinateur. Tout au long de ce guide, nous nous référons à ce dossier sous le nom de [répertoire de projet AEMaaCS].
 
 **Ajouter un dossier de bibliothèque cliente**
 
-Pour ajouter un nouveau dossier de bibliothèques clientes au [répertoire de projet AEMaaCS], procédez comme suit :
+Pour ajouter un nouveau dossier de bibliothèque cliente au [répertoire de projet AEMaaCS], procédez comme suit :
 
 1. Ouvrez le [répertoire de projet AEMaaCS] dans un éditeur.
 
@@ -84,7 +85,7 @@ Pour ajouter un nouveau dossier de bibliothèques clientes au [répertoire de pr
 
 Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
-* fichier .content.xml
+* Fichier .content.xml
 * fichier js.txt
 * dossier js
 
@@ -152,7 +153,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 **Déployez le dossier de bibliothèque cliente nouvellement créé dans votre environnement AEM**
 
-Déployez le [répertoire de projet AEMaaCS] d’AEM as a Cloud Service dans votre environnement de Cloud Service. Pour effectuer un déploiement sur votre environnement de Cloud Service :
+Déployez l’AEM as a Cloud Service, [répertoire de projet AEMaaCS], dans votre environnement Cloud Service. Pour effectuer un déploiement dans votre environnement Cloud Service :
 
 1. Validez les modifications
 
@@ -166,11 +167,11 @@ Déployez le [répertoire de projet AEMaaCS] d’AEM as a Cloud Service dans vot
 
 1. Déployez le code mis à jour :
 
-   1. Déclenchez un déploiement de votre code par le biais du pipeline de pile complète existant. Cette opération génère et déploie automatiquement le code mis à jour.
+   1. Déclenchez un déploiement de votre code via le pipeline full stack existant. Cela crée et déploie automatiquement le code mis à jour.
 
-Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur la configuration d’un pipeline pour AEM Forms as a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
+Si vous n’avez pas encore configuré de pipeline, reportez-vous au guide sur [comment configurer un pipeline pour AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline).
 
-Une fois le pipeline exécuté avec succès, la fonction personnalisée ajoutée à la bibliothèque cliente devient disponible dans votre [éditeur de règles de formulaire adaptatif](/help/forms/rule-editor-core-components.md).
+Une fois le pipeline exécuté correctement, la fonction personnalisée ajoutée dans la bibliothèque cliente est disponible dans votre [éditeur de règles de formulaire adaptatif](/help/forms/rule-editor-core-components.md).
 
 ### Ajout d’une bibliothèque cliente à un formulaire adaptatif{#use-custom-function}
 
@@ -185,15 +186,15 @@ Une fois que vous avez déployé votre bibliothèque cliente dans votre environn
 
    >[!NOTE]
    >
-   > Plusieurs catégories peuvent être ajoutées en spécifiant une liste séparée par des virgules dans le champ **[!UICONTROL Catégorie de bibliothèque cliente]** .
+   > Vous pouvez ajouter plusieurs catégories en spécifiant une liste séparée par des virgules dans le champ **[!UICONTROL Catégorie de bibliothèque cliente]**.
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
-Vous pouvez utiliser la fonction personnalisée dans l’ [ éditeur de règles d’un formulaire adaptatif](/help/forms/rule-editor-core-components.md) à l’aide des [ annotations JavaScript](##js-annotations).
+Vous pouvez utiliser la fonction personnalisée dans l’[éditeur de règles d’un formulaire adaptatif](/help/forms/rule-editor-core-components.md) à l’aide des [annotations JavaScript](##js-annotations).
 
 ## Utilisation d’une fonction personnalisée dans un formulaire adaptatif
 
-Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisées dans l’éditeur de règles](/help/forms/rule-editor-core-components.md). Ajoutons le code suivant au fichier JavaScript (`Function.js`) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Créez une fonction personnalisée `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
+Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisées dans l’éditeur de règles](/help/forms/rule-editor-core-components.md). Ajoutons le code ci-après au fichier JavaScript (fichier `Function.js`) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Créez une fonction personnalisée `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
 
 ```javascript
     /**
@@ -220,29 +221,29 @@ Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisée
 
 Dans l’exemple ci-dessus, lorsque la personne saisit la date de naissance au format (AAAA-MM-JJ), la fonction personnalisée `calculateAge` est appelée et renvoie l’âge.
 
-![Fonction personnalisée Calcul de l’âge dans l’éditeur de règles](/help/forms/assets/custom-function-calculate-age.png)
+![Fonction personnalisée Calculalte Agae dans l’éditeur de règles](/help/forms/assets/custom-function-calculate-age.png)
 
 Prévisualisons le formulaire pour observer comment les fonctions personnalisées sont implémentées par le biais de l’éditeur de règles :
 
-![Fonction personnalisée Calcul de l’âge dans l’aperçu de formulaire de l’éditeur de règles](/help/forms/assets/custom-function-age-calculate-form.png)
+![Fonction personnalisée Calculate Agae dans l’aperçu du formulaire de l’éditeur de règles](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
 > Vous pouvez vous référer au dossier [fonction personnalisée](/help/forms/assets//customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
-## Fonctions des fonctions personnalisées
+## Fonctionnalités des fonctions personnalisées
 
 Les fonctions personnalisées d’AEM forms offrent une solution robuste pour étendre et personnaliser les fonctionnalités de vos formulaires. Vous pouvez utiliser les fonctions personnalisées pour répondre aux besoins spécifiques de votre entreprise.
 
-Ces fonctions prennent en charge diverses fonctionnalités, notamment l’utilisation de champs spécifiques, l’utilisation de champs globaux et d’opérations asynchrones, ainsi que l’incorporation de mécanismes de mise en cache. Cette flexibilité garantit que les formulaires peuvent s’adapter à des exigences complexes et offrir une expérience utilisateur efficace et personnalisée. En exploitant ces fonctionnalités avancées, vous pouvez améliorer les interactions des formulaires et optimiser les performances, rendant vos formulaires AEM plus fonctionnels et réactifs.
+Ces fonctions prennent en charge diverses fonctionnalités, notamment l’utilisation de champs spécifiques, l’utilisation de champs globaux et les opérations asynchrones, ainsi que l’intégration de mécanismes de mise en cache. Cette flexibilité garantit que les formulaires peuvent s’adapter à des exigences complexes et offrir une expérience utilisateur efficace et personnalisée. Grâce à ces fonctionnalités avancées, vous pouvez améliorer les interactions entre les formulaires et optimiser les performances, ce qui rend vos formulaires AEM plus fonctionnels et plus réactifs.
 
 Explorons les fonctionnalités des fonctions personnalisées.
 
-### Prise en charge asynchrone dans les fonctions personnalisées {#support-of-async-functions}
+### Prise en charge asynchrone des fonctions personnalisées {#support-of-async-functions}
 
-Vous pouvez implémenter des fonctions asynchrones dans l’éditeur de règles à l’aide de fonctions personnalisées. Pour plus d’informations sur la procédure à suivre, reportez-vous à l’article [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md).
+Vous pouvez implémenter des fonctions asynchrones dans l’éditeur de règles à l’aide de fonctions personnalisées. Pour plus d’informations sur la procédure à suivre, consultez l’article [Utilisation de fonctions asynchrones dans un formulaire adaptatif](/help/forms/using-async-funct-in-rule-editor.md).
 
-### Prise en charge des objets de champ et de portée globale dans les fonctions personnalisées {#support-field-and-global-objects}
+### Prise en charge des objets de champ et d’étendue globale dans les fonctions personnalisées {#support-field-and-global-objects}
 
 Les objets de champ font référence aux composants ou éléments individuels d’un formulaire, tels que les champs de texte et les cases à cocher. L’objet Globals contient des variables en lecture seule, telles que l’instance de formulaire, l’instance de champ cible et des méthodes permettant de modifier le formulaire dans des fonctions personnalisées.
 
@@ -250,7 +251,7 @@ Les objets de champ font référence aux composants ou éléments individuels d�
 >
 > Le paramètre `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
 
-Pour plus d’informations sur les objets de portée, consultez l’article [Objets de portée dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md) .
+Pour plus d&#39;informations sur les objets Scope, voir l&#39;article [Objets Scope dans les fonctions personnalisées](/help/forms/custom-function-core-component-scope-function.md).
 
 ### Prise en charge de la mise en cache dans une fonction personnalisée
 
@@ -272,7 +273,7 @@ Si les fonctions personnalisées sont modifiées, la mise en cache est invalidé
 
 ## Étape suivante
 
-Nous allons maintenant voir divers [exemples de fonctions personnalisées pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-components-use-cases.md).
+Examinons maintenant divers [exemples de fonctions personnalisées pour un formulaire adaptatif basé sur les composants principaux](/help/forms/custom-function-core-components-use-cases.md).
 
 ## Voir également
 

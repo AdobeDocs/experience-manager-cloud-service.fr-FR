@@ -2,8 +2,8 @@
 title: Gestion des principaux
 description: Gestion des entités pour la migration à l’aide d’Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Avant que le contenu ne soit transféré vers l’environnement cloud AEM as a Cloud Service, certaines tâches peuvent être effectuées sur Admin Console.  Il s’agit de : créer des utilisateurs et utilisatrices, créer des groupes et affecter des utilisateurs et utilisatrices à des groupes ; ces utilisateurs et utilisatrices et groupes existent dans IMS, le service Identity Management d’Adobe, qui est utilisé pour gérer les utilisateurs et utilisatrices et les groupes pour tous les services cloud d’Adobe.
 
-### Création de groupes et de leurs utilisateurs et utilisatrices dans Admin Console
+## Création de groupes et de leurs utilisateurs et utilisatrices dans Admin Console
 
 [L’utilisation d’Admin Console pour les entités AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) fournit des instructions détaillées sur la création d’utilisateurs et utilisatrices et de groupes dans IMS, ainsi que sur la manière d’ajouter des utilisateurs et utilisatrices aux groupes en même temps ou ultérieurement.  Le document comprend trois options pour les créer : manuellement par l’intermédiaire d’Admin Console, au moyen d’un fichier CSV chargé via Admin Console et via un outil de synchronisation des utilisateurs et utilisatrices.
 

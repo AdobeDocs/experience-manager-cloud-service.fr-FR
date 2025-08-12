@@ -4,10 +4,10 @@ description: Découvrir les bonnes pratiques pour le mappage des utilisateurs et
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ La séquence d’obtention d’un service `Session/ResourceResolver` fonctionne 
 
 1. Obtenez les noms principaux à partir de `ServiceUserMapper` => connectez-vous au référentiel avec pré-authentification comme décrit ci-dessous.
 1. Récupérez l’identifiant de l’utilisateur ou de l’utilisatrice à partir de `ServiceUserMapper`.
-1. Recherchez une « 1ServiceUserConfiguration » obsolète pour l’identifiant d’utilisateur ou d’utilisatrice actuel.
+1. Rechercher des `1ServiceUserConfiguration` obsolètes pour l’ID d’utilisateur actuel
 1. Connectez-vous au service Sling par défaut avec l’identifiant de l’utilisateur ou de l’utilisatrice (par exemple, une séquence de `createAdministrativeSession` avec emprunt de l’identité de l’identifiant de l’utilisateur ou de l’utilisatrice de service).
 
 Le nouveau mappage avec les noms principaux entraîne la connexion simplifiée suivante au référentiel :
@@ -109,7 +109,7 @@ Il est recommandé de réutiliser les utilisateurs et utilisatrices de service e
 Ne réutilisez pas les utilisateurs et les utilisatrices de service existants dans les cas suivants :
 
 * Vous devez modifier leurs autorisations concernant d’autres éléments pour que cela fonctionne.
-* Si vous n’avez besoin que d’une petite partie des autorisations que ceux-ci fournissent et que vous les réutilisez uniquement parce que cela permet à votre fonctionnalité de fonctionner, et non en raison d’une correspondance réelle.
+* Si vous n’avez besoin que d’un petit sous-ensemble des autorisations que ceux-ci fournissent et que vous les réutilisez uniquement parce que cela permet à votre fonctionnalité de fonctionner, et non en raison d’une correspondance réelle.
 * Si leur nom indique une intention totalement différente de celle dont vous avez besoin. Choisir cette option uniquement parce que c’est celle qui fonctionne peut entraîner des problèmes dans le futur, car l’équipe chargée des fonctionnalités qui est propriétaire d’un service spécifique peut modifier les autorisations et entraîner une détérioration du fonctionnement de votre fonctionnalité.
 
 ### Créer un utilisateur ou une utilisatrice de service {#creating-a-service-user}

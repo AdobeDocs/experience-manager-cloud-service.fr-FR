@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Les actions disponibles sont expliquées dans le tableau ci-dessous.
 |     | queryParamMatch | Supprime tous les paramètres de requête qui correspondent à une expression régulière spécifiée. |
 |     | queryParamDoesNotMatch | Supprime tous les paramètres de requête qui ne correspondent pas à une expression régulière spécifiée. |
 | **transformation** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var), correspondance, remplacement | Remplace une partie du paramètre de requête (seule la propriété « path » est prise en charge), ou de l’en-tête de requête, ou du paramètre de requête, ou du cookie, ou de la variable par une nouvelle valeur . |
-|              | op:tlower, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var) | Définit le paramètre de requête (seule la propriété « path » est prise en charge), ou l’en-tête de requête, ou le paramètre de requête, ou le cookie, ou la variable sur sa valeur en minuscules. |
+|              | op:tolower, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var) | Définit le paramètre de requête (seule la propriété « path » est prise en charge), ou l’en-tête de requête, ou le paramètre de requête, ou le cookie, ou la variable sur sa valeur en minuscules. |
 
 Remplacez les actions qui prennent en charge les groupes de capture, comme illustré ci-dessous :
 

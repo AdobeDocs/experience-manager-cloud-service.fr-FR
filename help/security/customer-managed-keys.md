@@ -4,7 +4,7 @@ description: Découvrez comment gérer les clés de chiffrement pour AEM as a�
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 100%
@@ -180,6 +180,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 Fournissez les informations suivantes dans l’interface d’utilisation CMK :
 ![Renseignez les informations dans l’interface d’utilisation](./assets/cmk/step3a.png)
 

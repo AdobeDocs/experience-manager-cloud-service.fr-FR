@@ -4,7 +4,7 @@ description: Découvrez la distribution et le dépannage de la réplication dans
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 71%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de 
 >[!NOTE]
 >
 >Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [ Workflow d’activation de l’arborescence ](#tree-activation), qui peut gérer efficacement des payloads volumineux.
->&#x200B;>Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
->&#x200B;>Si, pour une raison quelconque, vous devez effectuer une personnalisation, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
->&#x200B;>Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent en évitant de publier un grand nombre de contenus, si ce n’est pas nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow d’activation de l’arborescence.
+>>Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
+>>Si, pour une raison quelconque, vous devez effectuer une personnalisation, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
+>>Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent en évitant de publier un grand nombre de contenus, si ce n’est pas nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow d’activation de l’arborescence.
 
 ### Publication/dépublication rapide – Publication/dépublication planifiée {#publish-unpublish}
 
@@ -126,8 +126,7 @@ Le workflow traite le contenu par blocs, chacun représentant un sous-ensemble d
 >
 >Cette fonctionnalité est abandonnée au profit de l’étape d’activation de l’arborescence plus performante, qui peut être incluse dans un workflow personnalisé.
 
-<details>
-<summary>Cliquez ici pour en savoir plus sur cette fonctionnalité obsolète.</summary>
++++ Cliquez ici pour en savoir plus sur cette fonctionnalité obsolète.
 
 Vous pouvez déclencher une réplication d’arborescence en choisissant **Outils – Workflow – Modèles** et en copiant le modèle de workflow prêt à l’emploi **Publier l’arborescence de contenu**, comme illustré ci-dessous :
 
@@ -135,7 +134,7 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 N’appelez pas le modèle d’origine. Veillez plutôt à copier le modèle et à appeler cette copie.
 
-Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
+Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Vous pouvez également créer un modèle de workflow qui utilise l’étape de processus `Publish Content Tree`.
 
@@ -194,7 +193,7 @@ Vous trouverez ci-dessous des exemples de journaux générés lors d’un exempl
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### API de réplication {#replication-api}
 

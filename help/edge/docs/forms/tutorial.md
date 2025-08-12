@@ -4,10 +4,10 @@ description: Ce tutoriel vous permet de prendre en main un nouveau projet Adobe�
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -241,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant &lt;owner> la personne propriétaire du référentiel et &lt;repo> le nom du référentiel :
+1. Clonez votre projet GitHub : clonez le référentiel de votre projet à partir de GitHub à l’aide de la commande suivante, en remplaçant `<owner>` par le propriétaire du référentiel et `<repo>` par le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>

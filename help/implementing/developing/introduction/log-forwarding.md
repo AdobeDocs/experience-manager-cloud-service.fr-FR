@@ -4,7 +4,7 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 Les clients disposant d’une licence auprès d’un fournisseur de journalisation ou qui hébergent un produit de journalisation peuvent transférer les journaux AEM (y compris Apache/Dispatcher) et les journaux CDN vers la destination de journalisation associée. AEM as a Cloud Service prend en charge les destinations de journalisation suivantes :
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ Un autre scénario consiste à désactiver le transfert des journaux CDN ou des 
 Certaines organisations choisissent de limiter le trafic pouvant être reçu par les destinations de journalisation, d’autres peuvent nécessiter d’utiliser des ports autres que HTTPS (443).  Si tel est le cas, [Mise en réseau avancée](/help/security/configuring-advanced-networking.md) doit être configuré avant le déploiement de la configuration de transfert de journal.
 
 Utilisez le tableau ci-dessous pour connaître les exigences relatives à la configuration avancée de la mise en réseau et de la journalisation selon que vous utilisez le port 443 ou non et que vous avez besoin ou non que vos journaux apparaissent à partir d’une adresse IP fixe.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Oui</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Le fait que vos journaux s’affichent à partir d’une seule adresse IP dépend de la configuration de mise en réseau avancée que vous avez choisie.  Une sortie dédiée doit être utilisée pour faciliter cette opération.
@@ -270,6 +247,7 @@ data:
 Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisée, comme décrit dans la section [Documentation Fastly - Liste publique d’adresses IP](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si cette liste d’adresses IP partagées est trop volumineuse, pensez à envoyer le trafic vers un serveur https ou un Azure Blob Store (autre qu’Adobe) où une logique peut être écrite pour envoyer les journaux d’une adresse IP connue vers leur destination finale.
 
 >[!NOTE]
+>
 >Il n’est pas possible que les journaux du réseau CDN apparaissent à partir de la même adresse IP que celle à partir de laquelle vos journaux AEM apparaissent. En effet, les journaux sont envoyés directement depuis Fastly et non depuis AEM Cloud Service.
 
 ## Consignation de la configuration de destination {#logging-destinations}
@@ -304,15 +282,15 @@ Pour utiliser le redirecteur de journal S3, vous devez préconfigurer un utilisa
 La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`.  Par exemple :
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,11 +490,12 @@ Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’
 ```
 
 >[!NOTE]
+>
 >Le transfert du journal vers New Relic n’est disponible que pour les comptes New Relic détenus par le client.
 >
 >Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 >
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [&#128279;](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
 ### API du journal Dynatrace {#dynatrace-https}
 
@@ -538,6 +517,7 @@ L’attribut de portée « Ingérer des journaux » est obligatoire pour le jeto
 ```
 
 >[!NOTE]
+>
 > Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ Une fois prêt à migrer, configurez simplement le fichier YAML comme décrit da
 Il est recommandé, mais pas obligatoire, de déployer une configuration sur tous les environnements afin qu’ils soient tous en libre-service. Dans le cas contraire, vous pouvez oublier les environnements qui ont été configurés par Adobe par rapport à ceux qui ont été configurés en libre-service.
 
 >[!NOTE]
+>
 >Les valeurs du champ `sourcetype` envoyées à votre index Splunk peuvent avoir changé, ajustez-les en conséquence.
 >
 >Lorsque le transfert de journal est déployé dans un environnement précédemment configuré par le support Adobe, vous pouvez recevoir des journaux en double pendant quelques heures au maximum. Cela finira par se résoudre automatiquement.

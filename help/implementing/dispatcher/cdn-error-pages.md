@@ -4,7 +4,7 @@ description: Découvrez comment remplacer la page d’erreur par défaut en héb
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Configuration des pages d’erreur du réseau CDN {#cdn-error-pages}
 
-Dans le cas peu probable où le réseau CDN géré par l’Adobe [&#128279;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+Dans le cas peu probable où le réseau CDN géré par Adobe [](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuration {#setup}
 
@@ -30,7 +30,7 @@ Avant de pouvoir remplacer la page d’erreur par défaut, procédez comme suit 
 
 ### Syntaxe {#syntax}
 
-La page d’erreur est implémentée en tant qu’application sur une seule page (SPA) et fait référence à quelques propriétés, comme illustré dans l’exemple ci-dessous.  Les fichiers statiques référencés par les URL doivent être hébergés par vous sur un service accessible par Internet, tel qu’Amazon S3 ou Azure Blob Storage.
+La page d’erreur est implémentée en tant qu’application monopage (SPA) et référence une poignée de propriétés, comme illustré dans l’exemple ci-dessous.  Les fichiers statiques référencés par les URL doivent être hébergés par vous sur un service accessible par Internet, tel qu’Amazon S3 ou Azure Blob Storage.
 
 Exemple de configuration :
 
@@ -58,9 +58,9 @@ Voir [Utilisation des pipelines de configuration](/help/operations/config-pipeli
 |     | cssUrl | URL vers un fichier CSS. |
 |     | jsUrl | URL vers un fichier JavaScript. |
 
-### Exemple d’HTML généré {#sample-generated-html}
+### Exemple d’HTML générée {#sample-generated-html}
 
-Le code d’HTML généré par le réseau CDN et diffusé au client, tel qu’un navigateur, ressemble (mais n’est pas identique) au fragment de code suivant :
+Le code HTML généré par le réseau CDN et diffusé au client, tel qu’un navigateur, ressemblera (sans être identique) au fragment de code suivant :
 
 ```
 <!DOCTYPE html>

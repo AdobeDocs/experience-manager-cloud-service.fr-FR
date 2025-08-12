@@ -1,11 +1,11 @@
 ---
 title: Comment concevoir un schéma JSON pour les composants principaux d’un formulaire adaptatif ?
-description: Découvrez comment créer un schéma JSON pour les composants principaux d’un formulaire adaptatif et créer un formulaire adaptatif (composants principaux) basé sur le schéma pour produire des données de réclamation de schéma.
+description: Découvrez comment créer un schéma JSON pour les composants principaux d’un formulaire adaptatif et comment créer un formulaire adaptatif (composants principaux) basé sur le schéma afin de produire des données conformes au schéma.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 82%
@@ -17,11 +17,11 @@ ht-degree: 82%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| Foundation | [Cliquez ici](/help/forms/adaptive-form-json-schema-form-model.md) |
+| Foundation | [Cliquer ici](/help/forms/adaptive-form-json-schema-form-model.md) |
 | Composants principaux | Cet article |
 
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 La création d’un formulaire adaptatif basé sur des composants principaux à l’aide d’un schéma JSON comme modèle de formulaire nécessite une compréhension de base du schéma JSON. Il est recommandé de lire le contenu suivant avant cet article.
 
@@ -30,16 +30,16 @@ La création d’un formulaire adaptatif basé sur des composants principaux à 
 
 ## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms prend en charge la création d’un formulaire adaptatif basé sur des composants principaux en utilisant un schéma JSON existant comme modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation.  Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms prend en charge la création d’un formulaire adaptatif basé sur les composants principaux en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation.  Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
 Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suivantes :
 
-* La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON vers le formulaire adaptatif en fonction des composants principaux.
+* La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON dans le formulaire adaptatif en fonction des composants principaux.
 * Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
 * Au moment de l’envoi, les données saisies par l’utilisateur ou l’utilisatrice sont envoyées au format JSON approprié pour le schéma associé.
-* Vous pouvez également créer le formulaire en fonction du schéma JSON, conformément aux spécifications de la version [2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* Vous pouvez également créer le formulaire basé sur le schéma JSON conformément aux spécifications de la version [2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
-Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés dans un formulaire adaptatif, ils sont automatiquement mappés aux composants de formulaire adaptatif correspondants.
+Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés sur un formulaire adaptatif, ils sont automatiquement associés aux composants de formulaire adaptatif correspondants.
 
 Cette mise en correspondance des éléments JSON avec les composants de formulaires adaptatifs est la suivante :
 
@@ -128,176 +128,176 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 >[!TAB Schéma JSON v4]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -428,9 +428,10 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 
 >[!ENDTABS]
 
-Les modifications clés des spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
-* L’ID est déclaré `$id`
-* definitions est déclaré `$defs`
+Les principales modifications apportées aux spécifications du schéma JSON V4 vers la version 2020-12 sont les suivantes :
+
+* L’ID est déclaré comme `$id`
+* les définitions sont déclarées comme `$defs`
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
@@ -482,8 +483,10 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 
 ```
+-->
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!-- 
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
@@ -756,7 +759,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Limite des valeurs possibles pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de base de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs possibles pour un composant principal de formulaire adaptatif :
 
 <table>
  <tbody>
@@ -893,7 +896,7 @@ Vous disposez de deux options :
 
 L’extension d’un fichier de schéma JSON doit être .schema.json, Par exemple, &lt;nom_fichier>.schema.json.
 
-**`aem:afProperties` Est-il pris en charge dans le cadre du schéma JSON dans Adaptive Forms en fonction des composants principaux ?**
+**La `aem:afProperties` est-elle prise en charge dans le cadre du schéma JSON dans le Forms adaptatif en fonction des composants principaux ?**
 
 Non, `aem:afProperties` n’est pas pris en charge pour les composants principaux. Cette propriété n’est prise en charge que pour les composants de base.
 

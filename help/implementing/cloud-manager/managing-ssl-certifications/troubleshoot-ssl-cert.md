@@ -1,26 +1,26 @@
 ---
 title: Résolution des problèmes liés aux certificats SSL
-description: Découvrez comment résoudre les problèmes liés aux certificats SSL en identifiant les causes courantes afin que vous puissiez maintenir des connexions sécurisées.
+description: Découvrez comment résoudre les problèmes liés aux certificats SSL en identifiant les causes courantes afin de pouvoir maintenir des connexions sécurisées.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
+exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 33%
 
 ---
 
-
 # Résolution des problèmes liés aux certificats SSL {#certificate-problems}
 
-Découvrez comment résoudre les problèmes liés aux certificats SSL en identifiant les causes courantes afin que vous puissiez maintenir des connexions sécurisées.
+Découvrez comment résoudre les problèmes liés aux certificats SSL en identifiant les causes courantes afin de pouvoir maintenir des connexions sécurisées.
 
 +++**Certificat non valide**
 
 ## Certificat non valide {#invalid-certificate}
 
-Cette erreur se produit car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
+Cette erreur se produit, car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
 
 +++
 
@@ -28,13 +28,13 @@ Cette erreur se produit car le client a utilisé une clé privée chiffrée et a
 
 ## La clé privée doit être au format PKCS 8. {#pkcs-8}
 
-Cette erreur se produit car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
+Cette erreur se produit, car le client a utilisé une clé privée chiffrée et a fourni la clé au format DER.
 
 +++
 
 +++**Ordre de certificat correct**
 
-## Correction de l’ordre du certificat {#certificate-order}
+## Ordre de certificat correct {#certificate-order}
 
 La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre.
 
@@ -58,27 +58,27 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondante pour votre certificat `main/server`, vous devez recréer le certificat en générant une nouvelle CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
+>La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondant à votre certificat `main/server`, vous devez entrer à nouveau la clé du certificat en générant un nouveau CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
 +++
 
-+++**Supprimer les certificats du client**
++++**Supprimer les certificats clients**
 
-## Suppression des certificats du client {#client-certificates}
+## Supprimer les certificats clients {#client-certificates}
 
-Lors de l’ajout d’un certificat, si vous recevez une erreur similaire à celle-ci :
+Lors de l’ajout d’un certificat, si vous recevez une erreur similaire à ce qui suit :
 
 ```text
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-Vous avez probablement inclus le certificat client dans la chaîne de certificats. Assurez-vous que la chaîne ne contient pas le certificat client et réessayez.
+Vous avez probablement inclus le certificat client dans la chaîne de certificats. Assurez-vous que la chaîne n’inclut pas le certificat client, puis réessayez.
 
 +++
 
-+++**Stratégie de certificat**
++++**Politique de certificat**
 
-## Stratégie de certificat {#policy}
+## Politique de certificat {#policy}
 
 Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre certificat.
 
@@ -86,7 +86,7 @@ Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre cer
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Les valeurs OID intégrées identifient normalement les stratégies de certificat. La génération d’un certificat dans du texte et la recherche de l’OID révèlent la stratégie du certificat.
+Les valeurs OID intégrées identifient normalement les politiques de certificat. La génération d’un certificat dans du texte et la recherche de l’OID révèlent la politique du certificat.
 
 Vous pouvez générer les détails de votre certificat sous forme de texte à l’aide de l’exemple suivant comme guide.
 
@@ -130,9 +130,9 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++Validité des **certificats
++++**Validité du certificat
 
-## Validité des certificats {#validity}
+## Validité du certificat {#validity}
 
 Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moins 90 jours à compter de la date actuelle. Vérifiez la validité de la chaîne de certificats.
 
@@ -144,10 +144,10 @@ Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moin
 
 Supposons que vous souhaitiez lier `dev.yoursite.com` et `stage.yoursite.com` à votre environnement hors production et `prod.yoursite.com` à votre environnement de production.
 
-Pour configurer le réseau de diffusion de contenu pour ces domaines, vous avez besoin d’un certificat installé pour chacun d’eux. Vous devez donc installer un certificat qui couvre `*.yoursite.com` pour vos domaines hors production et un autre qui couvre également `*.yoursite.com` pour vos domaines de production.
+Pour configurer le réseau CDN pour ces domaines, vous avez besoin d’un certificat installé pour chacun d’eux. Vous installez donc un certificat qui couvre les `*.yoursite.com` pour vos domaines hors production et un autre qui couvre également les `*.yoursite.com` pour vos domaines de production.
 
-Cette configuration est valide. Cependant, lorsque vous mettez à jour l’un des certificats, car les deux certificats couvrent la même entrée SAN, le CDN installe le certificat le plus récent sur tous les domaines applicables, ce qui peut sembler inattendu.
+Cette configuration est valide. Cependant, lorsque vous mettez à jour l’un des certificats, car les deux certificats couvrent la même entrée SAN, le réseau CDN installe le certificat le plus récent sur tous les domaines applicables, ce qui peut sembler inattendu.
 
-Bien que cela puisse être inattendu, il ne s’agit pas d’une erreur et il s’agit du comportement standard du réseau de diffusion de contenu sous-jacent. Si vous disposez de deux certificats SAN ou plus qui couvrent la même entrée de domaine SAN, si ce domaine est couvert par un certificat et que l’autre est mis à jour, ce dernier sera installé pour le domaine.
+Bien que cela puisse être inattendu, il ne s’agit pas d’une erreur et il s’agit du comportement standard du réseau CDN sous-jacent. Si vous disposez de plusieurs certificats SAN couvrant la même entrée de domaine SAN, si ce domaine est couvert par un certificat et que l’autre est mis à jour, ce dernier est désormais installé pour le domaine.
 
 +++
