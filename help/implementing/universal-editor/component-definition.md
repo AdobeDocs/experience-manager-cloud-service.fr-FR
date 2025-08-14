@@ -4,10 +4,10 @@ description: Comprenez en détail le contrat JSON entre la définition du compos
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ Le fichier `component-definition.json` définit les composants disponibles pour 
 
 >[!TIP]
 >
->Pour une présentation du processus de modélisation de contenu, consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Pour une présentation du processus de modélisation de contenu, consultez le document [Modélisation de contenu pour la création WYSIWYG avec des projets Edge Delivery Services](https://www.aem.live/developer/component-model-definitions).
 
 >[!TIP]
 >
->Vous n’avez pas besoin de créer entièrement votre propre fichier `component-definition.json`. Le modèle de projet que vous utilisez pour [amorcer votre projet](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contient un [fichier `component-definition.json` entièrement fonctionnel](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) que vous pouvez adapter à vos besoins.
+>Vous n’avez pas besoin de créer entièrement votre propre fichier `component-definition.json`. Le modèle de projet que vous utilisez pour [amorcer votre projet](https://www.aem.live/developer/ue-tutorial) contient un [fichier `component-definition.json` entièrement fonctionnel](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) que vous pouvez adapter à vos besoins.
 
 ## Exemple de définition de composant {#example}
 
@@ -109,7 +109,7 @@ Une fois la `plugin` définie, vous devez indiquer si elle est liée à une page
 
 Si le composant correspond au contenu de la page, vous pouvez fournir les informations suivantes.
 
-* `resourceType` définit le `resourceType` [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) utilisé pour le rendu du composant.
+* `resourceType` définit le [ ](/help/implementing/developing/introduction/sling-cheatsheet.md)Sling`resourceType` utilisé pour le rendu du composant.
 * `template` définit les clés/valeurs facultatives à écrire automatiquement dans le composant nouvellement créé et définit le filtre et/ou le modèle à appliquer au composant.
    * Utile pour le texte explicatif, d’exemple ou d’espace réservé.
 

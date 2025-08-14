@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2024.8.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ La fonctionnalité existante [Héritage](/help/sites-cloud/authoring/universal-e
 
 En outre, les fonctionnalités de gestion de page suivantes sont désormais prises en charge :
 
-* Les [balises AEM](/help/sites-cloud/authoring/sites-console/tags.md) peuvent être exportées en tant que [taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) vers Edge Delivery Services.
+* Les [balises AEM](/help/sites-cloud/authoring/sites-console/tags.md) peuvent être exportées en tant que [taxonomie](https://www.aem.live/docs/authoring-taxonomy) vers Edge Delivery Services.
 * Les [modèles](/help/sites-cloud/authoring/universal-editor/templates.md) pour Edge Delivery Services seront bientôt disponibles.
 
 ### Programme d’adoption précoce {#sites-early-adopter}

@@ -4,9 +4,9 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 11%
 
 ---
@@ -166,7 +166,7 @@ Un type de composant de balise AEM active un sélecteur de balises AEM, qui peut
 
 >[!TIP]
 >
->Consultez le document [Gestion des données de taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) pour plus d’informations sur l’utilisation de feuilles de calcul afin de gérer les données de taxonomie pour votre projet Edge Delivery Services.
+>Consultez le document [Gestion des données de taxonomie](https://www.aem.live/docs/authoring-taxonomy) pour plus d’informations sur l’utilisation de feuilles de calcul afin de gérer les données de taxonomie pour votre projet Edge Delivery Services.
 
 #### Contenu AEM {#aem-content}
 
@@ -710,7 +710,7 @@ Un type de composant de groupe de cases d’option permet une sélection mutuell
 
 #### Référence {#reference}
 
-Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [&#128279;](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
+Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au composant de contenu AEM [](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant de référence ne peut référencer que des ressources. Il propose un type de validation supplémentaire.
 
 Un type de composant de référence permet de faire référence à un autre objet de données de l’objet actif.
 

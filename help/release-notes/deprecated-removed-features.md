@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ La fonctionnalité du tableau ci-dessous a été annoncée comme obsolète, mais
 | ------------ | ------------------ | ----------- |
 | Sites | [Prise en charge des fragments de contenu dans l’API Assets HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | [Diffusion de fragments de contenu avec OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br> avec <br> [API OpenAPI de fragments de contenu et de gestion de modèles de fragment de contenu](/help/headless/content-fragment-openapis.md) |
 | Sites | [Fonctionnalités PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Aucune |
-| Sites | [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/edge/wysiwyg-authoring/authoring.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. |
+| Sites | [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](https://www.aem.live/docs/aem-authoring) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. |
 | [!DNL Sites] | [API JavaScript Use](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API JavaScript Use](https://experienceleague.adobe.com/fr/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propriétés des fragments d’expérience pour le **statut des médias sociaux**. | La suppression de la fonctionnalité est prévue prochainement. |
 | Sites | [Automatisation de la configuration d’Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Aucune |

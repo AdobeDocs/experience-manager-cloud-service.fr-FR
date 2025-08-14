@@ -4,9 +4,9 @@ description: Découvrez les principaux cas d’utilisation de l’éditeur unive
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Ainsi, vous pouvez bénéficier des outils disponibles dans la console Sites tel
 
 Si c’est votre cas d’utilisation, la prochaine étape immédiate consiste à consulter les documents suivants pour obtenir un aperçu complet de la mise en service de l’éditeur universel dans AEM.
 
-1. [Guide de prise en main des développeurs pour la création dans WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Commencez avec votre premier projet d’éditeur universel dans AEM
-1. [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](/help/edge/wysiwyg-authoring/create-block.md) - Découvrez comment instrumenter les blocs pour rendre votre contenu modifiable dans l’éditeur universel
-1. [Modélisation de contenu pour la création dans WYSIWYG avec des projets Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Découvrez les détails de la structure des blocs pour modéliser efficacement votre contenu à utiliser avec l’éditeur universel.
+1. [Guide de prise en main des développeurs pour la création dans WYSIWYG avec Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) - Commencez avec votre premier projet d’éditeur universel dans AEM
+1. [Création de blocs instrumentés pour une utilisation avec l’éditeur universel](https://www.aem.live/developer/universal-editor-blocks) - Découvrez comment instrumenter les blocs pour rendre votre contenu modifiable dans l’éditeur universel
+1. [Modélisation de contenu pour la création dans WYSIWYG avec des projets Edge Delivery Services](https://www.aem.live/developer/component-model-definitions) - Découvrez les détails de la structure des blocs pour modéliser efficacement votre contenu à utiliser avec l’éditeur universel.
 
 Une fois que vous avez lu ces documents, vous pouvez revenir à cette page pour en savoir plus sur le cas d’utilisation de la création découplée et sur le fonctionnement de l’éditeur universel en général.
 
@@ -65,7 +65,7 @@ La puissance de l’éditeur universel est sa capacité à créer n’importe qu
 L’éditeur universel fonctionne de la manière suivante.
 
 1. Un développeur instrumente l’application ou la page pour utiliser l’éditeur universel. Cette instrumentation indique à l’éditeur quel contenu est modifiable et comment le conserver.
-   * Si vous suivez la documentation [Guide de prise en main pour les développeurs et développeuses pour la création WYSIWYG avec Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), vos pages sont automatiquement instrumentées.
+   * Si vous suivez la documentation [Guide de prise en main pour les développeurs et développeuses pour la création WYSIWYG avec Edge Delivery Services](https://www.aem.live/developer/ue-tutorial), vos pages sont automatiquement instrumentées.
    * Pour la création découplée, votre application peut être facilement instrumentée.
 1. La personne en charge la création de contenu charge l’éditeur universel, qui à son tour charge votre page à modifier. Étant instrumenté, il sait quel contenu est modifiable et comment il doit être représenté et conservé.
 1. L’auteur de contenu modifie le contenu de la page dans une interface WYSIWYG intuitive, en modifiant sur place.

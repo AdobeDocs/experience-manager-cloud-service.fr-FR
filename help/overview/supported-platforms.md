@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ L’interface d’utilisation d’Adobe Experience Manager fonctionne avec les
 
 * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Éditeur de page](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Création basée sur des documents](/help/edge/docs/authoring.md) à l’aide de [Sidekick](/help/edge/docs/sidekick.md)
+* [Création basée sur des documents](https://www.aem.live/docs/aem-authoring) à l’aide de [Sidekick](https://www.aem.live/docs/sidekick)
 
 Tous les navigateurs sont testés avec l’ensemble par défaut de plug-ins et de modules complémentaires.
 
@@ -64,4 +64,4 @@ Tous les navigateurs sont testés avec l’ensemble par défaut de plug-ins et d
 
 La prise en charge des navigateurs pour les sites web rendus par AEM dépend de l’implémentation des modèles de page, des blocs, de la conception et de la sortie des composants d’AEM. Par conséquent, l’équipe de développement qui met en œuvre votre projet est également responsable du niveau de compatibilité de votre site.
 
-Les [modèles de projet standard](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project), les [composants principaux](/help/implementing/developing/components/overview.md#aem-core-components) et l’[exemple de site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) d’AEM sont compatibles avec tous les navigateurs modernes.
+Les [modèles de projet standard](https://www.aem.live/developer/ue-tutorial#create-github-project), les [composants principaux](/help/implementing/developing/components/overview.md#aem-core-components) et l’[exemple de site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) d’AEM sont compatibles avec tous les navigateurs modernes.

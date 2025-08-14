@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de novembre 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.11.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ Tansformez rapidement une page Edge Delivery en modèle de page. Vous pouvez ain
 
 Importateur CSV **[!DNL Edge Delivery Services]pour la publication via une instance AEM**
 
-Gérez efficacement vos données de feuille de calcul Edge Delivery (par exemple, les redirections) dans votre outil de feuille de calcul préféré et chargez-les dans AEM via le nouvel importateur CSV. [En savoir plus](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+Gérez efficacement vos données de feuille de calcul Edge Delivery (par exemple, les redirections) dans votre outil de feuille de calcul préféré et chargez-les dans AEM via le nouvel importateur CSV. [En savoir plus](https://www.aem.live/docs/authoring-tabular-data).
 
 ### Fonctionnalités de version préliminaire dans AEM Sites
 
-Amélioration du [référencement de fragment de contenu avec des références basées sur des ID uniques](/help/headless/graphql-api/uuid-reference-upgrade.md), ce qui garantit des liens stables qui restent valides même lorsque des ressources ou des fragments sont déplacés, éliminant ainsi la nécessité de mises à jour ou de republication. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
+Amélioration du [référencement de fragments de contenu avec des références basées sur des identifiants uniques](/help/headless/graphql-api/uuid-reference-upgrade.md), afin de garantir des liens stables et valides même lorsque des ressources ou des fragments sont déplacés, ce qui rend inutiles les mises à jour ou la republication. Limites actuelles : les références de page ne sont pas encore prises en charge avec les identifiants uniques. Si des pages sont référencées dans des fragments de contenu, cette fonctionnalité ne doit pas être utilisée.
 
 ### Programme d’adoption précoce {#sites-early-adopter}
 

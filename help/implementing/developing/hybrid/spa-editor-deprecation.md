@@ -4,9 +4,9 @@ description: Bien que l’éditeur de SPA reste pris en charge par Adobe, décou
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ L’obsolescence signifie que les SDK suivants sont maintenant bloqués.
 
 Le remplacement le plus approprié pour l’éditeur de SPA dépend des besoins de vos projets.
 
-* **[L’éditeur universel](/help/edge/wysiwyg-authoring/authoring.md)** est le meilleur remplacement direct de l’éditeur de SPA.
+* **[L’éditeur universel ](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
    * L’éditeur universel est également un éditeur visuel et a été conçu spécifiquement pour les implémentations découplées, incorporant toute l’expérience d’Adobe à partir de l’éditeur de SPA.
    * L’éditeur universel a également été [publié pour AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (avec la version 2024.11.05 d’AEM 6.5) et prend donc en charge les cas d’utilisation AMS et On-Prem en plus des Cloud Services.
 * **[l’éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md)** est une alternative pour ceux qui préfèrent un éditeur basé sur les formulaires.

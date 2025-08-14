@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '618'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Les services Edge Delivery Services augmentent également la vitesse de créatio
 
 L’éditeur universel offre une expérience de création What You See Is What You Get (WYSIWYG) fluide que vous pouvez utiliser pour créer n’importe quel contenu.
 
-Consultez le document [Création de contenu WYSIWYG pour Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) pour en savoir plus sur la création de contenu avec l’éditeur universel.
+Consultez le document [Création de contenu WYSIWYG pour Edge Delivery Services](https://www.aem.live/docs/aem-authoring) pour en savoir plus sur la création de contenu avec l’éditeur universel.
 
 ### Création basée sur des documents {#document-authoring}
 

@@ -4,9 +4,9 @@ description: Présentation de l’architecture d’Adobe Experience Manager as a
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2711'
 ht-degree: 99%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="Présentation de l’architecture d’AEM as a Cloud Service"
 >abstract="Dans cet onglet, vous pouvez afficher la nouvelle architecture d’AEM as a Cloud Service et comprendre les modifications. AEM a généré une architecture dynamique avec un nombre variable d’images. Il est donc important de prendre le temps de comprendre l’architecture cloud."
->additional-url="https://video.tv.adobe.com/v/346181?captions=fre_fr" text="Aperçu de l’architecture"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Aperçu de l’architecture"
 
 Adobe Experience Manager (AEM) as a Cloud Service propose un ensemble de services composables pour la création et la gestion d’expériences à fort impact.
 
@@ -53,7 +53,7 @@ Quatre types d’[environnements](/help/implementing/cloud-manager/manage-enviro
 
 * Environnement d’évaluation :
 
-   * Un environnement d’évaluation est toujours couplé à un environnement de production unique dans une relation 1:1.
+   * Un environnement d’évaluation est généralement associé à un environnement de production dans une relation 1:1.
    * L’environnement d’évaluation est principalement conçu pour les tests automatisés avant que les modifications apportées à l’application ne soient transmises à l’environnement de production.
       * Cela est indépendant des modifications initiées par Adobe dans le cadre d’une mise à jour de maintenance ou par vos déploiements de code.
       * Vous pouvez également effectuer des tests manuels dans le cas d’un déploiement de code.
@@ -138,7 +138,7 @@ Il existe d’autres services connexes :
 * Le service de données :
    * est chargé d’exposer les données client, telles que les mesures de licence (par exemple, les demandes de contenu, le stockage, les utilisateurs et utilisatrices) ou les rapports d’utilisation (tels que le nombre de chargements et de téléchargements) ;
    * permet l’exposition des données client via des API et dans des interfaces utilisateur de produit (telles que Cloud Manager).
-* Le service de télémétrie opérationnelle :
+* Le service de télémétrie opérationnelle :
    * est chargé de collecter les mesures clés d’une expérience client (telles que les pages vues, les principaux éléments web vitaux, les événements de conversion) et de répondre aux requêtes associées (par exemple, les principales pages vues d’un domaine donné au cours des 7 derniers jours).
 * Le service Asset Compute :
    * est responsable du traitement des images, vidéos et documents chargés. Par exemple, des fichiers PDF et Adobe Photoshop. Le traitement peut utiliser Adobe Sensei pour extraire des métadonnées image et vidéo (telles que des balises descriptives ou des tons de couleur primaires), puis générer des rendus (tels que des tailles ou des formats différents), en accédant aux API telles que les API Adobe Photoshop et Adobe Lightroom.
@@ -238,5 +238,5 @@ La nouvelle architecture d’AEM as a Cloud Service s’accompagne de quelques 
    * [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services :
    * [AEM Aperçu as a Cloud Service - avec les Edge Delivery Services](/help/edge/overview.md)
-   * [Utiliser Edge Delivery Services](/help/edge/using.md)
+   * [Utiliser Edge Delivery Services](/help/edge/overview.md)
    * [Explorez l’architecture sous-jacente et les éléments importants d’AEM as a Cloud Service avec Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)
