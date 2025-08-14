@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 17%
+source-wordcount: '1089'
+ht-degree: 16%
 
 ---
 
@@ -94,13 +94,18 @@ Pour configurer ces paramètres, déterminez si un enregistrement `CNAME` ou ape
 >
 >Pour les réseaux de diffusion de contenu gérés par Adobe, lors de l’utilisation de certificats DV (Validation de domaine), seuls les sites avec validation ACME sont autorisés.
 
-#### Conditions requises {#adobe-managed-cert-dv-requirements}
 
-Remplissez ces conditions avant de configurer vos enregistrements DNS.
+### Configuration du DNS{#config-dns}
+
+>[!WARNING]
+>
+>Le principe du « registre avant de faire de la publicité » s&#39;applique ici. En d’autres termes, la configuration du DNS ne doit être effectuée qu’*après* l’ajout du mappage de domaine réussi. Cela permet de s’assurer que Cloud Manager reconnaît et valide que le domaine existe dans sa propre configuration avant de pouvoir répondre aux demandes qui lui sont adressées. Il évite également toute tentative de prise de contrôle de domaine.
+
+Veillez à respecter les exigences suivantes *avant* de configurer vos enregistrements DNS :
 
 * Identifiez l’hôte ou le serveur d’enregistrement de votre domaine si vous ne le connaissez pas déjà.
 * Être en mesure de modifier les enregistrements DNS du domaine de votre organisation ou contacter la personne appropriée qui peut le faire.
-* Vous devez avoir déjà vérifié votre nom de domaine personnalisé configuré comme décrit dans le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* Vous avez déjà vérifié votre nom de domaine personnalisé configuré comme décrit dans le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 #### Enregistrement CNAME {#adobe-managed-cert-cname-record}
 
