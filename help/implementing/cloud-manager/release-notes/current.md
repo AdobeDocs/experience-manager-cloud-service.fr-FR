@@ -4,7 +4,7 @@ description: En savoir plus sur la version 2025.8.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c6493d05c60c01b4840c8f12d06aa4508bdbb534
+source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 55%
@@ -68,13 +68,13 @@ Les opportunités suivantes sont actuellement disponibles :
 
 Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 ![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**&#x200B;jusqu’à la fin du déploiement.*
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 ![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
@@ -139,7 +139,6 @@ Utilisez **Gérer les jetons d’accès** dans Cloud Manager pour afficher, ren
 Voir la section [Gérer les jetons d’accès](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
-
 
 ### Ajouter un pipeline de configuration Edge Delivery {#add-eds-pipeline}
 
