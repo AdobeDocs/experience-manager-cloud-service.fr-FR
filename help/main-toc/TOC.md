@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [Validation des champs de formulaire : ajouter des vérifications des erreurs à vos formulaires](/help/edge/docs/forms/validate-forms.md)
          + [Concevoir des formulaires élégants : Guide de style et de personnalisation](/help/edge/docs/forms/style-theme-forms.md)
          + [Créer des messages réussis : personnaliser la page de remerciement de votre formulaire](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Guide d’envoi de formulaire : utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
          + [Champs de formulaire dynamique : options de chargement à partir des URL](/help/edge/docs/forms/load-options-from-url.md)
          + [Ajouter un comportement intelligent : Guide de logique et de règles de formulaire](/help/edge/docs/forms/rules-forms.md)
          + [Validation avancée des formulaires : Guide d’expression régulière](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des performances du formulaire : guides de télémétrie opérationnelle](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Configurer l’envoi pour les formulaires Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Guide d’envoi de formulaire : utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
       + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Bonnes pratiques relatives à la création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Découplé {#headless}

@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # Naviguer dans l’interface de l’éditeur universel pour AEM Forms
 
-L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fournit une interface visuelle pour créer AEM Forms avec Edge Delivery Services. Ce guide vous aide à comprendre l’interface pour créer efficacement des formulaires.
+L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fournit une interface visuelle pour créer AEM Forms avec Edge Delivery Services. Il offre une expérience **What You See Is What You Get (WYSIWYG)** qui affiche exactement comment vos formulaires apparaîtront aux utilisateurs.
 
 ![Présentation de l’interface de l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Vue d’ensemble
-
-L’éditeur universel offre une expérience **What You See Is What You Get (WYSIWYG)** qui affiche exactement comment vos formulaires apparaîtront aux utilisateurs. Que vous débutiez dans la création de formulaires ou que vous soyez un développeur expérimenté, ce guide vous aidera à :
+Ce guide vous aide à comprendre l’interface pour créer efficacement des formulaires. Que vous débutiez dans la création de formulaires ou que vous soyez un développeur expérimenté, ce guide vous aidera à :
 
 **Apprenez les compétences essentielles :**
 
@@ -37,6 +35,8 @@ L’éditeur universel offre une expérience **What You See Is What You Get (WYS
 - Créer des formulaires du concept à la publication
 - Test et prévisualisation de formulaires sur plusieurs appareils
 - Collaborer avec des membres de l’équipe sur des projets de formulaire
+
+
 
 ## Prise en main rapide
 
@@ -323,7 +323,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 **Ces outils offrent des fonctionnalités de formulaire sophistiquées :**
 
-+++Intégration de données
++++Intégration de données 
 
 #### **Source de données**
 
@@ -340,7 +340,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-+++Outils optimisés par l’IA 
++++Outils optimisés par l’IA
 
 #### **Générer des variations**
 
@@ -378,7 +378,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-Outils Collaboration
++++Outils Collaboration
 
 #### **Gestion des tâches**
 
@@ -459,7 +459,7 @@ Effectuez un Principal de ces raccourcis pour créer des formulaires plus rapide
 
 ### **Problèmes d’interface**
 
-+++Les éléments de l’interface ne se chargent pas
++++Éléments D’Interface Non Chargés
 
 **Problème :** les boutons de la barre d’outils, le panneau Propriétés ou d’autres éléments d’interface n’apparaissent pas
 
@@ -472,7 +472,7 @@ Effectuez un Principal de ces raccourcis pour créer des formulaires plus rapide
 
 +++
 
-+++Composants ne répondant pas
++++Composants qui ne répondent pas
 
 **Problème :** impossible de sélectionner les composants ou le panneau Propriétés ne se met pas à jour
 
@@ -485,7 +485,7 @@ Effectuez un Principal de ces raccourcis pour créer des formulaires plus rapide
 
 +++
 
-+++Problèmes du mode Aperçu
++++Problèmes de mode de prévisualisation
 
 **Problème :** le mode Aperçu ne fonctionne pas correctement ou affiche des erreurs
 

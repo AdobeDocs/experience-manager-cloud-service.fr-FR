@@ -5,12 +5,10 @@ keywords: Service d’envoi Forms, formulaires Edge Delivery Services, intégrat
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -115,7 +113,7 @@ Choisissez l’une des plateformes prises en charge :
 
 >[!TIP]
 >
->**Vous découvrez Edge Delivery Services ?** Commencez par le [tutoriel de prise en main](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour configurer la base de votre projet.
+>**Vous découvrez Edge Delivery Services ?** Commencez par le [tutoriel de prise en main](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) pour configurer la base de votre projet.
 
 ## Méthodes de configuration
 
@@ -135,7 +133,7 @@ Le service d’envoi de Forms propose deux approches de configuration. Choisisse
 
 Avant de configurer l’une des méthodes, vérifiez que votre base de projet AEM est prête :
 
-1. **Créez ou mettez à jour votre projet AEM** avec le dernier bloc de Forms adaptatif ([tutoriel de prise en main](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Créez ou mettez à jour votre projet AEM** avec le dernier bloc de Forms adaptatif ([tutoriel de prise en main](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Mettez à jour le`fstab.yaml`** dans la racine de votre projet :
 
@@ -147,6 +145,8 @@ Avant de configurer l’une des méthodes, vérifiez que votre base de projet AE
 
 
 3. **Partagez le dossier du projet** avec `forms@adobe.com` (les autorisations de modification sont requises)
+
++++
 
 +++
 
@@ -168,7 +168,7 @@ Créez votre structure de formulaire à l’aide de Google Sheets ou de Microsof
 1. **Ouvrez votre plateforme de feuilles de calcul** (Google Sheets ou Microsoft Excel)
 2. **Créer une nouvelle feuille de calcul** pour votre projet de formulaire
 3. **Nommez votre feuille** (doit être `helix-default` ou `shared-aem`).
-4. **Définissez votre structure de formulaire** à l’aide du [guide de création de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Définissez votre structure de formulaire** à l’aide du [guide de création de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Définition du formulaire](/help/forms/assets/form-submission-definition.png)
 *Exemple : définition de formulaire avec des types de champs, des libellés et des règles de validation*
@@ -367,36 +367,36 @@ Postman fournit une interface conviviale pour tester les envois d’API.
 1. **Créer une requête POST** dans Postman
 2. **Configurer le point d’entrée :** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **Remplacer les espaces réservés :**
-
    - `{id}` → votre ID de formulaire réel
    - `[repository]` → Nom de votre référentiel GitHub
    - `[organization]` → votre organisation/nom d’utilisateur GitHub
 
 **Configuration de la demande:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+     « json 
 
-Headers:
-Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+PUBLIER https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Body (JSON):
+En-têtes :
+Type de contenu : application/json
+x-adobe-routing: tier=live,bucket=main—your-repo—your-org
+
+Corps (JSON) :
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+« data » : {
+« startDate » : « 2025-01-10 »,
+« endDate » : « 2025-01-25 »,
+« destination » : « Australie »,
+« class » : « First Class »,
+« budget » : « 2000 »
+« amount » : « 1000000 »,
+« name » : « Mary »,
+« age » : « 35 »,
+« subscribe » : nul,
+« email » : « mary@gmail.com »
 }
-```
+}
+«
 
 **Réponse attendue :**
 
@@ -442,9 +442,9 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB Invite de commandes Windows]
+>[!TAB Windows Command Prompt]
 
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
@@ -475,15 +475,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
 +++
 
-+++ Réponse et vérification de l’API
++++ API Response & Verification
 
-**Réponse réussie :**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -569,7 +569,7 @@ Solutions:
 
 - **Problèmes d’accès anticipé :** e-mail [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **Documentation de l’API :** [Référence du développeur](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Assistance communautaire :** [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=fr)
+- **Assistance communautaire :** [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
 
 +++
 
@@ -580,7 +580,7 @@ Maintenant que le service d’envoi Forms est configuré, explorez les rubriques
 
 +++ Améliorez votre Forms
 
-- **[Créer un Forms avancé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Ajouter la validation, la logique conditionnelle et le style personnalisé
+- **[Créer un Forms avancé](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Ajouter la validation, la logique conditionnelle et le style personnalisé
 - **[Guide des composants de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Explorer les types de champ de formulaire disponibles
 
 +++
