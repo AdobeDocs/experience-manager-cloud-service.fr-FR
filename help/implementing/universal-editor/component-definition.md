@@ -109,7 +109,7 @@ Une fois la `plugin` définie, vous devez indiquer si elle est liée à une page
 
 Si le composant correspond au contenu de la page, vous pouvez fournir les informations suivantes.
 
-* `resourceType` définit le [ ](/help/implementing/developing/introduction/sling-cheatsheet.md)Sling`resourceType` utilisé pour le rendu du composant.
+* `resourceType` définit le [&#128279;](/help/implementing/developing/introduction/sling-cheatsheet.md)Sling`resourceType` utilisé pour le rendu du composant.
 * `template` définit les clés/valeurs facultatives à écrire automatiquement dans le composant nouvellement créé et définit le filtre et/ou le modèle à appliquer au composant.
    * Utile pour le texte explicatif, d’exemple ou d’espace réservé.
 
