@@ -6,8 +6,8 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
 source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 36%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="Réseau de diffusion de contenu dans AEM as a Cloud Service"
->abstract="AEM as a Cloud Service est fourni avec un réseau CDN. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
+>abstract="AEM as a Cloud Service est fourni avec un réseau CDN intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
 
 AEM as a Cloud Service est fourni avec un réseau CDN intégré, conçu pour réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds Edge près du navigateur de l’utilisateur. Ce réseau CDN entièrement géré est optimisé pour les performances de l’application AEM.
 
