@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
 workflow-type: tm+mt
-source-wordcount: '3467'
-ht-degree: 36%
+source-wordcount: '3577'
+ht-degree: 34%
 
 ---
 
@@ -151,13 +151,13 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est donc pas la récupération du jeton qui a posé problème.
 
 * AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il finit par être disponible.
-* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée IP pendant le processus d’ingestion et d’indexation.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’Assistance clientèle d’Adobe.
 
 ### Mises à jour et assimilations de version AEM {#aem-version-updates-and-ingestions}
 
-Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
+Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
 
 Si la fonction « Mises à jour de la version d’AEM » est intégrée au programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant son démarrage. Une fois l’ingestion terminée, l’état de la mise à jour de version est rétabli à ce qu’il était avant le début des ingestions.
 
@@ -194,7 +194,7 @@ Assurez-vous que l’environnement de création est disponible et patientez quel
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakConstraint0030 : la contrainte d’unicité a violé la propriété [jcr:uuid] avec la valeur a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5 : /some/path/jcr:content, /some/other/path/jcr:content
 
 Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu’un nœud en cours d’ingestion présente le même uuid qu’un nœud existant à un chemin d’accès différent sur l’instance de destination. Cette situation peut se produire pour deux raisons :
 
@@ -239,7 +239,7 @@ Il s’agit d’une restriction MongoDB.
 
 Pour plus d’informations et pour obtenir un lien vers un outil Oak qui pourrait vous aider à trouver tous les nœuds volumineux, consultez la note de `Node property value in MongoDB` dans la section [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Une fois tous les nœuds de grande taille résolus, exécutez à nouveau l’extraction et l’ingestion.
 
-Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [ « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [ « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -269,6 +269,15 @@ Parfois, des problèmes intermittents inattendus peuvent se produire lors d’é
 >abstract="L’extraction que l’ingestion attendait ne s’est pas terminée correctement. L’ingestion a été annulée, car elle n’a pas pu être exécutée."
 
 Une ingestion créée avec une extraction en cours d’exécution en tant que jeu de migration source attend patiemment que cette extraction réussisse et commence normalement à ce stade. Si l’extraction échoue ou est arrêtée, l’ingestion et sa tâche d’indexation ne commencent pas, mais sont annulées. Dans ce cas, vérifiez l’extraction pour déterminer pourquoi elle a échoué, corrigez le problème et recommencez l’extraction. Une fois l’extraction fixe en cours d’exécution, une nouvelle ingestion peut être planifiée.
+
+### Échec du démarrage de l’ingestion en attente {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Ingestion En Attente Non Démarrée"
+>abstract="L’ingestion n’a pas pu démarrer après avoir attendu la fin d’une extraction."
+
+Une ingestion créée avec une extraction en cours d’exécution en tant que jeu de migration source attend que cette extraction réussisse. À ce stade, l’ingestion tente de démarrer normalement. Si l’ingestion ne démarre pas, elle est marquée comme ayant échoué. Les raisons possibles de ne pas démarrer sont les suivantes : une Liste autorisée IP est configurée sur l’environnement de création cible ; l’environnement cible n’est pas disponible pour une autre raison.  Dans ce cas, vérifiez pourquoi l’ingestion n’a pas démarré, corrigez le problème, puis redémarrez l’ingestion (il n’est pas nécessaire de réexécuter l’extraction).
 
 ### Ressource supprimée absente après la réexécution de l’ingestion
 
