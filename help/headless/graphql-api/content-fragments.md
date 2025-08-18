@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
+source-wordcount: '5984'
 ht-degree: 79%
 
 ---
@@ -51,7 +51,7 @@ GraphQL est :
 
   Voir [Explore GraphQL](https://www.graphql.com).
 
-* *« ... un langage et une spécification de requête de données développés en interne par Facebook en 2012 avant d’être rendus open source en 2015. C’est une alternative aux architectures basées sur REST destinée à accroître la productivité des développeurs et à réduire les quantités de données transférées. GraphQL est utilisé en production par des centaines d’entreprises de toutes tailles... »*
+* *« ... un langage et une spécification de requête de données développés en interne par Facebook en 2012 avant d’être rendus open source en 2015. Il offre une alternative aux architectures REST dans le but d’augmenter la productivité des développeurs et de réduire au minimum les quantités de données transférées. GraphQL est utilisé en production par des centaines d’entreprises de toutes tailles... »*
 
   Voir [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -109,7 +109,7 @@ GraphQL permet de réaliser des requêtes pour renvoyer, au choix :
 
 * Une **[liste d’entrées](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en [Requêtes persistantes, qui peuvent être mises en cache](/help/headless/graphql-api/persisted-queries.md) par Dispatcher et le réseau CDN.
+AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en [Requêtes persistantes, qui peuvent être mises en cache](/help/headless/graphql-api/persisted-queries.md) par le Dispatcher et le réseau CDN.
 
 ### Bonnes pratiques en matière de requêtes GraphQL (Dispatcher et réseau CDN) {#graphql-query-best-practices}
 
@@ -167,9 +167,9 @@ Les requêtes GraphQL sont exécutées avec l’autorisation de l’utilisateur 
 
 En outre, l’utilisateur ou l’utilisatrice doit avoir accès à un point d’entrée GraphQL pour pouvoir exécuter des requêtes GraphQL.
 
-## Génération de schémas {#schema-generation}
+## Création de schémas {#schema-generation}
 
-GraphQL est une API fortement typée, ce qui signifie que les données doivent être clairement structurées et organisées par type.
+GraphQL est une API dans laquelle les données doivent être clairement structurées et organisées par type.
 
 La spécification GraphQL fournit une série de directives sur la création d’une API robuste pour interroger les données sur une certaine instance. Pour ce faire, un client doit récupérer le [Schéma](#schema-generation), qui contient tous les types nécessaires à une requête.
 
@@ -375,7 +375,7 @@ Vous pouvez afficher tous les types GraphQL de métadonnées si vous affichez le
 >[!NOTE]
 >
 >**Différence entre les métadonnées normales et les métadonnées de tableau**
->&#x200B;>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
+>>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
 >
 >Par exemple, en appelant le champ `stringMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String` et en appelant `stringArrayMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String[]`.
 
@@ -1171,7 +1171,7 @@ Les limitations actuelles sont les suivantes :
 
   >[!NOTE]
   >
-  >L’URL complète doit ensuite être construite côté client, en fonction de l’[API de diffusion de ressources](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >L’URL complète doit ensuite être construite côté client, en fonction de l’[API de diffusion de ressources](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Seules les ressources *approuvées* pourront être référencées à partir des référentiels distants
 * Si une ressource référencée est supprimée du référentiel distant, la référence à une ressource de fragment de contenu sera rompue.
@@ -1225,7 +1225,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Pour le contenu :
 
       * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un ensemble de paramètres régionaux donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata` : pour afficher les métadonnées de votre fragment
          * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)

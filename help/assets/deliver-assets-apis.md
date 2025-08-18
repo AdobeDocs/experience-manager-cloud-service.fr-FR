@@ -3,9 +3,9 @@ title: API de diffusion
 description: Découvrez comment utiliser les API de diffusion.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '575'
 ht-degree: 6%
 
 ---
@@ -24,13 +24,13 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 
 | API de diffusion | Description |
 |---|---|
-| [Représentation binaire optimisée pour le web de la ressource au format de sortie demandé](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Renvoie la représentation binaire optimisée pour le web de la ressource au format de sortie demandé en fonction de l’identifiant de ressource envoyé dans la requête. Vous pouvez également définir différents modificateurs d’image tels que la largeur, la hauteur, la rotation, le retournement, la qualité, le recadrage, le format et le [recadrage intelligent](/help/assets/dynamic-media/image-profiles.md). Voir [Détails de l’API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) pour connaître les formats et les modificateurs d’image pris en charge.<br>Adobe recommande d’utiliser cette API pour tous les types de format d’image. |
-| [Représentation binaire optimisée pour le web de la ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | API pratique qui applique les valeurs par défaut à la représentation binaire optimisée pour le web de la ressource renvoyée dans la réponse. Les valeurs par défaut comprennent un format JPEG/WEBP standard, une qualité => 65 et une largeur => 1024. |
-| [Fichier binaire original chargé de la ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Renvoie les fichiers binaires chargés initialement pour la ressource. Adobe recommande d’utiliser cette API pour les types de format de document et les images SVG. |
-| [Rendu prégénéré de la ressource disponible dans l’environnement de création AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Renvoie le flux binaire du rendu de la ressource disponible dans l’environnement de création AEM Assets en fonction de l’identifiant de la ressource et du nom du rendu envoyés dans la requête. |
-| [Métadonnées de ressource](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Renvoie les propriétés associées à une ressource, telles que le titre, la description, CreateDate, ModifyDate, etc. |
-| [Conteneur du lecteur pour la ressource vidéo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Renvoie le conteneur du lecteur pour la ressource vidéo. Vous pouvez incorporer le lecteur dans un élément HTML iframe et lire la vidéo. |
-| [Manifestes de lecture au format de sortie sélectionné](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Renvoie le fichier de manifeste de lecture pour la ressource vidéo spécifiée au format de sortie sélectionné. Vous devez créer un lecteur personnalisé capable de diffuser en continu adaptative par le biais des protocoles HLS ou DASH pour pouvoir extraire le fichier de manifeste de lecture et lire la vidéo. |
+| [Représentation binaire optimisée pour le web de la ressource au format de sortie demandé](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | Renvoie la représentation binaire optimisée pour le web de la ressource au format de sortie demandé en fonction de l’identifiant de ressource envoyé dans la requête. Vous pouvez également définir différents modificateurs d’image, tels que la largeur, la hauteur, la rotation, le retournement, la qualité, le recadrage, le format et le [recadrage intelligent](/help/assets/dynamic-media/image-profiles.md). Voir [Détails de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) pour connaître les formats et les modificateurs d’image pris en charge.<br>Adobe recommande d’utiliser cette API pour tous les types de format d’image. |
+| [Représentation binaire optimisée pour le web de la ressource](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | L’API conviviale qui applique la valeur par défaut est une représentation binaire optimisée pour le web de la ressource renvoyée dans la réponse. Les valeurs par défaut comprennent un format JPEG/WEBP standard, une qualité => 65 et une largeur => 1024. |
+| [Fichier binaire original chargé de la ressource](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetOriginal) | Renvoie les fichiers binaires chargés initialement pour la ressource. Adobe recommande d’utiliser cette API pour les types de format de document et les images SVG. |
+| [Rendu prégénéré de la ressource disponible dans l’environnement de création AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetRendition) | Renvoie le flux binaire du rendu de la ressource disponible dans l’environnement de création AEM Assets en fonction de l’identifiant de la ressource et du nom du rendu envoyés dans la requête. |
+| [Métadonnées de ressource](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata) | Renvoie les propriétés associées à une ressource, telles que le titre, la description, CreateDate, ModifyDate, etc. |
+| [Conteneur du lecteur pour la ressource vidéo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Renvoie le conteneur du lecteur pour la ressource vidéo. Vous pouvez incorporer le lecteur dans un élément HTML iframe et lire la vidéo. |
+| [Manifestes de lecture au format de sortie sélectionné](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Renvoie le fichier de manifeste de lecture pour la ressource vidéo spécifiée au format de sortie sélectionné. Vous devez créer un lecteur personnalisé capable de diffuser en continu adaptative par le biais des protocoles HLS ou DASH pour pouvoir extraire le fichier de manifeste de lecture et lire la vidéo. |
 
 Dynamic Media avec les fonctionnalités OpenAPI prend également en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 
@@ -47,7 +47,7 @@ Le domaine de diffusion est similaire, par sa structure, au domaine de l’envir
 
 `eYYYY` fait référence à l’identifiant d’environnement
 
-Voir [Détails de l’API](https://adobe-aem-assets-delivery.redoc.ly/#tag/Assets) pour plus d’informations.
+Voir [Détails de l’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#tag/Assets) pour plus d’informations.
 
 ## Méthode de requête des API de diffusion {#delivery-api-request-method}
 
@@ -64,7 +64,7 @@ headers: {
     }
 ```
 
-Pour appeler les API de diffusion, un jeton IMS est requis dans les détails de la `Authorization` pour diffuser une ressource restreinte. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#fetch-the-aem-as-a-cloud-service-credentials) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#generating-the-access-token) pour générer le jeton IMS et l’utiliser de manière appropriée dans l’en-tête de la requête des API de diffusion.
+Pour appeler les API de diffusion, un jeton IMS est requis dans les détails de la `Authorization` pour diffuser une ressource restreinte. Le jeton IMS est récupéré à partir d’un compte technique. Voir [Récupérer les informations d’identification AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour créer un compte technique. Voir [Génération du jeton d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) pour générer le jeton IMS et l’utiliser de manière appropriée dans l’en-tête de la requête des API de diffusion.
 
 
-Pour afficher des exemples de requêtes, des exemples de réponses et des codes de réponse, voir [API de diffusion](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+Pour afficher des exemples de requêtes, des exemples de réponses et des codes de réponse, voir [API de diffusion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 6%
@@ -176,7 +176,7 @@ Voir [ Générer des variations - Intégré aux éditeurs AEM](/help/generative-
 
 Pour supprimer une variante de votre fragment de contenu :
 
-    >[ !REMARQUE]
+    >[!REMARQUE]
     >
     >Vous ne pouvez pas supprimer **Principal**.
 
@@ -205,7 +205,7 @@ Les champs définis en tant que Texte brut ou Markdown ont une simple zone de te
 Pour les champs **[texte multiligne](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** définis en tant que **texte enrichi**, différentes fonctionnalités sont disponibles :
 
 * Modifiez le contenu :
-   * Annuler/rétablir
+   * Annuler, rétablir
    * Coller en tant que texte
    * Copier
    * Sélectionner le format de paragraphe
@@ -267,7 +267,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**&#x200B;dans la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
   >
   >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
@@ -354,9 +354,9 @@ Il existe certaines limitations lors du référencement de ressources distantes 
 
 * Aucune métadonnée de ressource n’est exposée via l’API de gestion ou l’API de diffusion. Vous devez utiliser l’API de métadonnées de ressource pour récupérer les détails des métadonnées de la ressource :
 
-   * les métadonnées de la ressource : [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * les métadonnées de la ressource : [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * obtenez des informations de métadonnées en bloc à l’aide de l’API de recherche (expérimental) : [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * obtenez des informations de métadonnées en bloc à l’aide de l’API de recherche (expérimental) : [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
