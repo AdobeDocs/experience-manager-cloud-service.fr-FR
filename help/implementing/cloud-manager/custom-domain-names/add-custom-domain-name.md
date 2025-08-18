@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 16%
@@ -95,7 +95,7 @@ Pour configurer ces paramètres, déterminez si un enregistrement `CNAME` ou ape
 >Pour les réseaux de diffusion de contenu gérés par Adobe, lors de l’utilisation de certificats DV (Validation de domaine), seuls les sites avec validation ACME sont autorisés.
 
 
-### Configuration du DNS{#config-dns}
+## Configuration du DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ Veillez à respecter les exigences suivantes *avant* de configurer vos enregistr
 * Être en mesure de modifier les enregistrements DNS du domaine de votre organisation ou contacter la personne appropriée qui peut le faire.
 * Vous avez déjà vérifié votre nom de domaine personnalisé configuré comme décrit dans le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Enregistrement CNAME {#adobe-managed-cert-cname-record}
+### Enregistrement CNAME {#adobe-managed-cert-cname-record}
 
 Un enregistrement de nom canonique ou CNAME est un type d’enregistrement DNS qui mappe un nom d’alias à un nom de domaine réel ou canonique. Les enregistrements CNAME sont généralement utilisés pour mapper un sous-domaine tel que `www.example.com` au domaine hébergeant le contenu de ce sous-domaine.
 
@@ -117,7 +117,7 @@ Connectez-vous à votre fournisseur de services DNS et créez un enregistrement 
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### Enregistrement APEX {#adobe-managed-cert-apex-record}
+### Enregistrement APEX {#adobe-managed-cert-apex-record}
 
 Un domaine apex est un domaine personnalisé qui ne contient pas de sous-domaine, tel que `example.com`. Un domaine apex est configuré avec un enregistrement `A`, `ALIAS` ou `ANAME` via votre fournisseur DNS. Des domaines apex doivent pointer vers des adresses IP spécifiques.
 
