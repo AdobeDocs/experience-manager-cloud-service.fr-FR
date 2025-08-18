@@ -136,7 +136,7 @@ Vous pouvez utiliser un groupe d’utilisateurs AEM existant s’il répond aux 
    ![Ajouter des utilisateurs à cette page de groupe d’utilisateurs](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. Dans le coin inférieur droit de la page, cliquez sur **Enregistrer**.
-1. Affectez maintenant le profil de produit au groupe d’utilisateurs](#assign-product-profile).
+1. Affectez maintenant le profil de produit au groupe d’utilisateurs&rbrack;(#assign-product-profile).
 
 >[!TAB Ajout d’utilisateurs en bloc]
 
@@ -144,7 +144,7 @@ Vous pouvez utiliser la fonction de chargement en bloc dans Admin Console.
 
 1. Préparez un fichier CSV contenant des informations sur l’utilisateur.
 1. Utilisez l’option **`Add users by CSV`** pour un ajout en bloc efficace.
-1. Affectez maintenant le profil de produit au groupe d’utilisateurs](#assign-product-profile).
+1. Affectez maintenant le profil de produit au groupe d’utilisateurs&rbrack;(#assign-product-profile).
 
 >[!ENDTABS]
 
