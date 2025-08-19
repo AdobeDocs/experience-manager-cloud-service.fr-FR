@@ -22,7 +22,7 @@ ht-degree: 73%
 
 # Composants principaux AEM-CIF et intégration à Adobe Experience Platform {#aem-cif-aep-integration}
 
-Les composants principaux [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) fournissent une intégration transparente à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html), ce qui permet de transférer les événements de storefront et leurs données à partir d’interactions côté client, telles que l’__ajout au panier__.
+Les composants principaux [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) fournissent une intégration transparente à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=fr), ce qui permet de transférer les événements de storefront et leurs données à partir d’interactions côté client, telles que l’__ajout au panier__.
 
 Le projet de [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) fournit une bibliothèque JavaScript appelée [Connecteur Adobe Experience Platform pour Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) afin de collecter des données d’événement à partir de votre storefront Commerce. Ces données d’événement sont envoyées à Experience Platform, où elles sont utilisées dans d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, pour créer un profil à 360 degrés couvrant un parcours client. En connectant les données de Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches comme analyser le comportement des utilisateurs et utilisatrices sur votre site, effectuer un AB Testing et créer des campagnes personnalisées.
 
@@ -494,6 +494,6 @@ __Événements XDM de profil :__
 Pour plus d’informations, consultez les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [[!DNL Data Connection] présentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=fr)
+- [[!DNL Data Connection] Événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=fr)
 - [Vue d’ensemble d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

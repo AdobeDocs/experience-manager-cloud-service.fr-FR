@@ -258,5 +258,5 @@ Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-gui
 ## Ressources supplémentaires {#additional}
 
 * [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappage des ressources AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [Mappage des ressources AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
