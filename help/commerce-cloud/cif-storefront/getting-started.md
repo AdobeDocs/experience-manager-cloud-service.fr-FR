@@ -57,7 +57,7 @@ Il existe deux options pour configurer le point d’entrée :
 
 ### Par le biais de l’interface utilisateur de Cloud Manager (par défaut) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343271?quality=12&learn=on&captions=fre_fr)
 
 Vous pouvez effectuez cette configuration à l’aide d’une boîte de dialogue sur la page Détails de l’environnement. Lorsque vous affichez cette page pour un programme compatible avec Commerce, un bouton s’affiche si le point d’entrée n’est pas actuellement configuré :
 
