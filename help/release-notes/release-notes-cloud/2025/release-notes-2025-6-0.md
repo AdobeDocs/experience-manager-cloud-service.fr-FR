@@ -3,10 +3,11 @@ title: Notes de mise à jour de la version 2025.6.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ La date de publication de la version actuelle (2025.6.0) d’[!DNL Adobe Experie
 
 Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vidéo de mise à jour {#release-video}
 
-## Release Video {#release-video}
+Consultez la vidéo Vue d’ensemble de la version de juin 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.6.0 :
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/r
 
 Développez la liste ci-dessous pour afficher les API et les configurations OSGi obsolètes qui ne doivent plus être utilisées. Pour plus d’informations, y compris concernant les délais de suppression, reportez-vous à l’article sur l’obsolescence.
 
-+++Développez pour afficher les obsolètes.
++++Développer pour afficher les éléments obsolètes
 
 API Java :
 
