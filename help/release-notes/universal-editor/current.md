@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.07.31
-description: Il s’agit des notes de mise à jour de la version 2025.07.31 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.08.14
+description: Il s’agit des notes de mise à jour de la version 2025.08.14 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: f3003f8e607121c8dd9a8ccef5e0d5a3dd35255f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 56%
+source-wordcount: '233'
+ht-degree: 69%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.07.31 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.08.14 {#release-notes}
 
-Voici les notes de mise à jour de la version du 31 juillet 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 14 août 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,15 +22,8 @@ Voici les notes de mise à jour de la version du 31 juillet 2025 de l’éditeur
 
 ## Nouveautés {#what-is-new}
 
-* [L’option de barre d’outils d’en-tête d’authentification](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) reste derrière un bouton de fonctionnalité, comme introduit dans la version 2025.07.09.[ de ](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * Toutefois, il est désormais activé par défaut.
-* Nouvelles fonctionnalités pour les [utilisateurs précoces de l’éditeur de texte enrichi](#new-rte)
-   * Ajout de la prise en charge du mode sombre.
-   * Ajout de la prise en charge de l&#39;alignement du texte.
-      * Désactivé par défaut et disponible uniquement pour les projets découplés
-   * La prise en charge de la mise en retrait a été ajoutée.
-      * Désactivé par défaut et disponible uniquement pour les projets découplés
-   * Les sauts (`<br>`) sont maintenant insérés en appuyant sur Maj + Entrée.
+* Nouvelle fonctionnalité pour les [utilisateurs et utilisatrices précoces de l’éditeur de texte enrichi](#new-rte)
+   * Une option de configuration a été ajoutée pour désactiver Target dans la boîte de dialogue du lien de l’éditeur de texte enrichi.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -49,10 +42,9 @@ Les fonctions Annuler et Rétablir sont désormais disponibles pour les créateu
 
 ## Autres améliorations {#other-improvements}
 
-* Correctifs pour l’éditeur de texte enrichi adopté rapidement
-   * Appuyez sur Entrée pour créer un nouvel élément de liste (`<li>`) dans une liste.
-* Les vidéos sont désormais correctement mises à jour lors de l’utilisation de la gestion des ressources numériques à distance.
-* Ajout de la prise en charge des services pour 6.5 LTS.
+* Correction d’un problème de défilement en plein écran dans le [nouvel éditeur de texte enrichi](#new-rte).
+* Le comportement de persistance lors de la modification des champs conditionnels a été corrigé.
+* `aem-content-fragment` a été activé pour basculer entre les variations.
 
 ## Obsolescence {#deprecations}
 
