@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 79%
@@ -28,7 +28,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 >
 >GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) as a Cloud Service :
 >
->* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce utilise les données d’une plateforme Commerce via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* Les fragments de contenu d’AEM fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
 
 >[!NOTE]
@@ -375,7 +375,7 @@ Vous pouvez afficher tous les types GraphQL de métadonnées si vous affichez le
 >[!NOTE]
 >
 >**Différence entre les métadonnées normales et les métadonnées de tableau**
->&#x200B;>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
+>>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
 >
 >Par exemple, en appelant le champ `stringMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String` et en appelant `stringArrayMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String[]`.
 

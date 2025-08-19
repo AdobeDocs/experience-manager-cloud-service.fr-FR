@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464004?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ Vous pouvez désormais sélectionner et comparer rapidement n’importe quelle v
 
 ### Fonctionnalités de version préliminaire
 
-* [Éditeur universel pour les Forms adaptatifs et les fragments de formulaire](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : l’éditeur universel prend désormais en charge la création de Forms adaptatif et de fragments de formulaire réutilisables. Les auteurs peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et améliore la protection contre le spam et les abus automatisés.
+* [Éditeur universel pour les formulaires adaptatifs et les fragments de formulaire](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) : l’éditeur universel prend désormais en charge la création de formulaires adaptatifs et de fragments de formulaire réutilisables. Les auteurs et autrices peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et accroît la protection contre le spam et les abus automatisés.
 
 * [Bibliothèque de documents SharePoint - Enregistrer les pièces jointes avec les noms de fichier d’origine](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library) : vous avez désormais la possibilité d’enregistrer les pièces jointes de formulaire en utilisant leurs noms de fichier d’origine lors de leur stockage dans une bibliothèque de documents SharePoint. Cette amélioration simplifie l’identification et la gestion des fichiers chargés.
 
@@ -105,15 +105,15 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Intégration d’Adobe Experience Platform (AEP) à Forms
 
-* [Intégration d’AEM Forms à Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md) : le connecteur AEM Forms vers Adobe Experience Platform permet une intégration transparente entre Adaptive Forms et Adobe Experience Platform. Cette fonctionnalité permet de mapper les données de formulaire aux schémas XDM et de les envoyer directement à AEP en temps réel. Il rationalise la capture de données pour les cas d’utilisation de personnalisation et d’activation dans les solutions Adobe Experience Cloud.
+* [Intégration d’AEM Forms à Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md) : le connecteur AEM Forms vers Adobe Experience Platform permet une intégration transparente entre les formulaires adaptatifs et Adobe Experience Platform. Cette fonctionnalité permet de mapper les données de formulaire aux schémas XDM et de les envoyer directement à AEP en temps réel. Il rationalise la capture de données pour les cas d’utilisation de personnalisation et d’activation dans les solutions Adobe Experience Cloud.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Améliorations {#enhancements-cif}
 
 * Ajout d’une sélection de variantes de produit pour le type de données de référence de produit CIF.
-* **Expérimental** : [JSON+LD dans les composants principaux CIF dans les PDP](/help/commerce-cloud/customizing/json-ld.md)
-* **Expérimental** : [Capacité de CIF à effacer le cache](/help/commerce-cloud/configuring/clear-cache.md)
+* **Expérimental** : [JSON+LD dans les composants principaux CIF dans les PDP](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Expérimental** : [Capacité de CIF à effacer le cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Correctifs {#bug-fixes-cif}
 
