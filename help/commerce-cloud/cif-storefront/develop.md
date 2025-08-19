@@ -37,7 +37,7 @@ Le module complémentaire est fourni sous la forme d’une archive de fonctionna
 >[!TIP]
 >
 >**Vous découvrez AEM as a Cloud Service ?**
->>Consultez [un guide plus détaillé de configuration d’environnement de développement local à l’aide d’AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
+>&#x200B;>Consultez [un guide plus détaillé de configuration d’environnement de développement local à l’aide d’AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
 
 ### Logiciels requis {#required-software}
 
