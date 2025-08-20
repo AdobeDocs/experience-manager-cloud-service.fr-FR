@@ -4,10 +4,10 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -162,3 +162,4 @@ Les référentiels privés validés peuvent être associés à des [pipelines fu
 * La [fonctionnalité de réutilisation des artefacts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.
 * Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub depuis Cloud Manager.
 Si le référentiel GitHub est validé dans Cloud Manager, Cloud Manager tente toujours de valider les demandes d’extraction créées pour ce référentiel.
+* Si l’organisation GitHub dispose de restrictions IP, créez un dossier de support pour recevoir la liste des adresses IP à autoriser.
