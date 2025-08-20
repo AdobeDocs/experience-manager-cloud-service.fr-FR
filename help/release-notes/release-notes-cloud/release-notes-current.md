@@ -134,7 +134,7 @@ Toutes les demandes d’image OpenAPI exploitent désormais pleinement l’image
 
 * **Amélioration de la gestion des erreurs pour les types de fichiers restreints**
 
-  [La gestion des erreurs pour les types de fichiers restreints](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) est désormais prise en charge, ce qui bloque les chargements de fichiers non pris en charge. Lorsque les utilisateurs tentent d’envoyer un fichier en modifiant son type dans un format non pris en charge, le formulaire renvoie une erreur lors de l’envoi.
+  [La gestion des erreurs pour les types de fichiers restreints](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) est désormais prise en charge, ce qui bloque les chargements de fichiers non pris en charge. Lorsque les utilisateurs tentent d’envoyer un fichier en modifiant son type dans un format non pris en charge, le formulaire renvoie une erreur lors de l’envoi.
 
 
 <!--
