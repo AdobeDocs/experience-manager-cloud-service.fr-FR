@@ -4,7 +4,7 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -493,7 +493,7 @@ Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’
 >
 >Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
 >
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [&#128279;](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
 ### API du journal Dynatrace {#dynatrace-https}
 
@@ -561,7 +561,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  sumologic:
+  sumoLogic:
     default:
       enabled: true
       collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
