@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -20,7 +20,7 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 21994, publiée le mercredi 19 août 2025. La version de maintenance précédente était la version 21772.
 
-L’activation des fonctionnalités de la version 2025.8.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
+L’activation des fonctionnalités de la version 2025.8.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Consultez [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
 ### Nouvelles fonctionnalités  {#new-features-21994}
 
