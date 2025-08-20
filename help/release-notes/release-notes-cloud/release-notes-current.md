@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 49%
+source-wordcount: '2350'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -88,7 +88,7 @@ Content Hub comprend désormais une option **Tout afficher** dans les filtres, c
 
 Bénéficiez du chargement automatisé de nouveaux fichiers et dossiers, d’opérations de fichiers améliorées, d’une découverte de ressources plus intelligente et d’une intégration transparente à AEM, ce qui rend la gestion de contenu plus rapide, plus claire et plus intuitive.
 
-Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/release-notes).
+Pour obtenir la liste complète des fonctionnalités, voir [Notes de mise à jour de l’application de bureau](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Toutes les demandes d’image OpenAPI exploitent désormais entièrement l’ima
 
 ### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
 
-**Éditeur universel pour les Forms adaptatifs et les fragments de formulaire**
+* **Éditeur universel pour les Forms adaptatifs et les fragments de formulaire**
 
-L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) prend désormais en charge la création de Forms adaptatifs et de fragments de formulaire réutilisables. Les auteurs et autrices peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et accroît la protection contre le spam et les abus automatisés.
+  L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) prend désormais en charge la création de Forms adaptatifs et de fragments de formulaire réutilisables. Les auteurs et autrices peuvent créer des formulaires visuellement, configurer des actions d’envoi et ajouter une validation reCAPTCHA, le tout dans un environnement de création WYSIWYG simplifié. Cette fonctionnalité accélère la création de formulaires, améliore la cohérence et accroît la protection contre le spam et les abus automatisés.
 
-![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![Éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Service d’envoi Forms pour Edge Delivery Services Forms**
+* **Service d’envoi Forms pour Edge Delivery Services Forms**
 
-Voir [Service d’envoi Forms](/help/forms/forms-submission-service.md). vous permet de stocker en toute transparence les données des envois de formulaires adaptatifs directement dans des plateformes de feuilles de calcul populaires telles que Google Sheets, Microsoft OneDrive ou SharePoint. Cette intégration rationalise la gestion des données en permettant l’envoi direct des données de formulaire à la feuille de calcul de votre choix, ce qui élimine le transfert manuel de données et réduit les erreurs.
+  Le service d’envoi [Forms](/help/forms/forms-submission-service.md) vous permet de stocker facilement des données des envois de formulaires adaptatifs directement dans des plateformes de feuilles de calcul populaires telles que Google Sheets, Microsoft OneDrive ou SharePoint. Cette intégration simplifie la gestion des données en permettant l’envoi direct des données de formulaire à la feuille de calcul de votre choix, en éliminant le transfert manuel de données et en réduisant les erreurs. Les principaux avantages sont les suivants :
 
-Les principaux avantages sont les suivants :
+   * **Intégration directe :** configurez vos formulaires pour envoyer directement des données à une feuille de calcul spécifiée.
+   * **Mappage de données personnalisé :** mappez les champs de formulaire aux colonnes de feuille de calcul correspondantes pour le stockage organisé.
+   * **Contrôle d’accès :** utilisez les autorisations de feuille de calcul existantes pour gérer qui peut accéder aux données envoyées ou les modifier.
 
-* **Intégration directe :** configurez vos formulaires pour envoyer directement des données à une feuille de calcul spécifiée.
-* **Mappage de données personnalisé :** mappez les champs de formulaire aux colonnes de feuille de calcul correspondantes pour le stockage organisé.
-* **Contrôle d’accès :** utilisez les autorisations de feuille de calcul existantes pour gérer qui peut accéder aux données envoyées ou les modifier.
+* **Génération et synchronisation de rendus AFP à partir de Forms adaptatif**
 
-**Génération et synchronisation de rendus AFP à partir de Forms adaptatif**
+  L’[API de synchronisation de sortie AFP](/help/forms/document-generation-afp-api.md) permet aux administrateurs et aux utilisateurs de générer une sortie AFP (présentation de fonction avancée) à partir du Forms adaptatif et de synchroniser la sortie avec des systèmes ou des emplacements de stockage externes. AFP est un format de document haute performance optimisé pour l’impression, souvent utilisé dans les environnements d’entreprise à grande échelle.
 
-L’[API de synchronisation de sortie AFP](/help/forms/document-generation-afp-api.md) permet aux administrateurs et aux utilisateurs de générer une sortie AFP (présentation de fonction avancée) à partir du Forms adaptatif et de synchroniser la sortie avec des systèmes ou des emplacements de stockage externes. AFP est un format de document haute performance optimisé pour l’impression, souvent utilisé dans les environnements d’entreprise à grande échelle.
+* **Prise en charge du mappage automatique pour les fragments de formulaire adaptatif**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  Les Forms adaptatives prennent désormais en charge [mappage automatique des fragments de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Grâce à cette amélioration, les fragments correspondants sont automatiquement insérés lorsque les objets de schéma s’alignent sur une structure de fragment définie. Il simplifie la création de formulaires, améliore la réutilisation des fragments et assure la cohérence entre les formulaires intégrés aux données.
+
+* **Titre de formulaire personnalisé dans le document d’enregistrement**
+
+  Les auteurs peuvent désormais définir un [ titre de formulaire personnalisé dans le document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) en modifiant le titre du formulaire personnalisé. Le titre personnalisé apparaît dans l’en-tête de PDF, les propriétés du document de PDF et comme titre d’affichage initial à l’ouverture du PDF, ce qui permet d’assurer une identification claire et une valorisation de marque cohérente.
+
+* **Amélioration de la gestion des erreurs pour les types de fichiers restreints**
+
+  [La gestion des erreurs pour les types de fichiers restreints](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) est désormais prise en charge, ce qui bloque les chargements de fichiers non pris en charge. Lorsque les utilisateurs tentent d’envoyer un fichier en modifiant son type dans un format non pris en charge, le formulaire renvoie une erreur lors de l’envoi.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ L’[API de synchronisation de sortie AFP](/help/forms/document-generation-afp-a
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### Nouvelles fonctionnalités d’accès anticipé dans AEM Forms {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-Le programme d’accès anticipé d’AEM Forms vous offre une opportunité unique d’obtenir un accès exclusif aux innovations de pointe et de contribuer à façonner leur développement.
-
-Ces notes de mise à jour répertorient les innovations de la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, voir [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ Propriétés OSGi :
 
 ### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
 
-Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime &#x200B;** Java 21** plus performant.
+Le **runtime Java 11*- est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers le runtime **Java 21** plus performant.
 
 Si votre environnement n’a pas pu être mis à niveau en raison de dépendances non prises en charge (voir les [Exigences d’exécution Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), vous avez dû recevoir un e-mail d’Adobe contenant les étapes spécifiques à réaliser. Veillez à ce que toutes les mises à jour requises soient terminées d’ici le **28 août 2025**, afin que votre environnement puisse être mis à niveau sans interruption.
 
