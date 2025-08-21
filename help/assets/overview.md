@@ -3,7 +3,7 @@ title: Présentation d’Assets as a Cloud Service pour la gestion des ressou
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 100%
 
@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets inclut des fonctionnalités qui vous permettent d’accéder plus fac
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -474,11 +474,11 @@ Vous pouvez intégrer le sélecteur de ressources à une application Adobe ou no
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>Vue d’ensemble de Fonctionnalités Dynamic Media avec OpenAPI</strong>
+      <strong>Vue d’ensemble de Dynamic Media avec fonctionnalités OpenAPI</strong>
       </a>
    </div>
    <p>
-      <em>Découvrez les principaux avantages et comment en tirer profit.</em>
+      <em>Découvrez les principaux avantages et comment les activer. </em>
    </p>
 </td>
 
