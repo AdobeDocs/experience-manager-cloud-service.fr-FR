@@ -3,22 +3,23 @@ title: Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)
 description: Créer des formulaires puissants plus rapidement à l’aide de fragments de formulaire
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)
+
+# Prise en main de l’assistant AI pour AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> La fonctionnalité d’assistant IA pour AEM Forms (Créateur d’expériences de formulaires) est disponible dans le cadre du **programme destiné aux utilisateurs et utilisatrices précoces**. Si cela vous intéresse, envoyez un e-mail à l’adresse mailto:aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.
+> La fonctionnalité d’assistant IA pour AEM Forms (Créateur d’expériences de formulaires) est disponible dans le cadre du **programme destiné aux utilisateurs et utilisatrices précoces**. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.
 
 >[!IMPORTANT]
 >
@@ -339,7 +340,7 @@ Utilisez ces termes pour obtenir les meilleurs résultats :
 Aidez-nous à améliorer l’Assistant IA :
 
 - **Envoyer des commentaires** : utiliser le bouton Commentaires dans l’interface de l’Assistant IA
-- **Problèmes de rapport** : contacter l’assistance Adobe par le biais des moyens officiels
+- **Problèmes de rapport** : contactez l’assistance Adobe en passant par les canaux officiels
 - **Partager des expériences** : grâce à vos commentaires, nous adaptons davantage l’assistant aux besoins de tous
 
 ## Ressources connexes

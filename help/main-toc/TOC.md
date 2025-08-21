@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 42dc06910f6309fa8ac72c065f908a8cdbe37fb8
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
 workflow-type: tm+mt
-source-wordcount: '6500'
+source-wordcount: '6515'
 ht-degree: 96%
 
 ---
@@ -1198,10 +1198,12 @@ ht-degree: 96%
    + [IA générative dans AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + [Assistant AI dans AEM - Configuration](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [Assistant AI dans AEM (Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Assistant d’IA dans AEM Forms (Forms Experience Builder) (utilisateur initial)](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Assistant AI dans AEM Forms - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Assistant (version Beta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Configuration de l’assistant d’IA dans AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+   + [Prise en main de l’assistant AI pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Prise en main de l’assistant AI pour AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implémentation {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
