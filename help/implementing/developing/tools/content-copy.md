@@ -4,10 +4,10 @@ description: L’outil de copie de contenu permet de copier du contenu modifiabl
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 78%
+source-wordcount: '1340'
+ht-degree: 77%
 
 ---
 
@@ -133,6 +133,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
       * Production
       * Évaluation
       * Développement/RDE
+   * Par défaut, la copie de contenu entre programmes est désactivée. Cependant, à la demande du client, elle peut être activée, ce qui rendra disponible un champ d’entrée **Programme de destination** supplémentaire.
 
 1. Si nécessaire, vous pouvez également sélectionner **Inclure les listes de contrôle d’accès** dans votre processus de copie.
 
@@ -193,7 +194,6 @@ L’outil de copie de contenu présente les limites suivantes.
 
 * Le contenu ne peut pas être copié d’un environnement inférieur vers un environnement supérieur.
 * Il ne peut être copié que depuis et vers les services de création.
-* Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * N’utilisez pas l’outil de copie de contenu comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
