@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95ef5d2257c6f074ddd1a6a01ec09ab708e88af0
+source-git-commit: 42dc06910f6309fa8ac72c065f908a8cdbe37fb8
 workflow-type: tm+mt
-source-wordcount: '6498'
+source-wordcount: '6500'
 ht-degree: 96%
 
 ---
@@ -1207,6 +1207,7 @@ ht-degree: 96%
    + Utiliser Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
+      + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1220,14 +1221,14 @@ ht-degree: 96%
          + [Configuration du projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Environnement de création](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
-      + [Environnements de test spécialisés (version bêta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [Environnements de test spécialisés (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestion du code {#managing-code}
          + [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gérer les référentiels dans Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Ajouter un référentiel Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Ajout d’un référentiel privé](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Ajouter un référentiel externe (version bêta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gérer les jetons d’accès des référentiels externes (version bêta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Ajouter un référentiel externe (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gérer les jetons d’accès des référentiels externes (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Prise en charge des sous-modules Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1297,7 +1298,7 @@ ht-degree: 96%
       + [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [Environnements de développement rapide AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Conseils de développement sur AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
-      + [Developer Console AEM as a Cloud Service (Bêta)](/help/implementing/developing/introduction/aem-developer-console.md)
+      + [Developer Console AEM as a Cloud Service (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
       + [Journalisation](/help/implementing/developing/introduction/logging.md)
       + [Transfert de journaux](/help/implementing/developing/introduction/log-forwarding.md)
       + [Configurations et l’explorateur de configurations](/help/implementing/developing/introduction/configurations.md)
