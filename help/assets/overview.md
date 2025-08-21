@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets inclut des fonctionnalités qui vous permettent d’accéder plus fac
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
