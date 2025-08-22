@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: eaa3e3cccdffd7d3837fbe611b8b8a7e99f7d075
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6520'
 ht-degree: 96%
 
 ---
@@ -1194,16 +1194,18 @@ ht-degree: 96%
          + [Principes de base de la création en découplage avec AEM](/help/journey-headless/author/basics.md)
          + [En savoir plus sur l’utilisation de références dans les fragments de contenu](/help/journey-headless/author/references.md)
          + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
++ Assistant IA {#ai-assistant}
+   + [Configuration de l’assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [À propos de l’assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + IA générative {#generative-ai}
    + [IA générative dans AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + [Assistant (version Beta limitée)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Configuration de l’assistant d’IA dans AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [Prise en main de l’assistant AI pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Prise en main de l’assistant AI pour AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Assistant AI dans AEM - Configuration](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [Assistant AI dans AEM (Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistant d’IA dans AEM Forms (Forms Experience Builder) (utilisateur initial)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistant AI dans AEM Forms - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Assistant AI dans AEM Forms - Prise en main](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
 + Implémentation {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utiliser Cloud Manager {#using-cloud-manager}
