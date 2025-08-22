@@ -197,6 +197,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
        - Message (zone de texte requise, 500 caractères max.)
        - Envoyer à une notification par e-mail
    
+
 ### Problèmes de mise en page et de style
 
 **Symptômes :**
