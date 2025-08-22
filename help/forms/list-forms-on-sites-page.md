@@ -1,34 +1,34 @@
 ---
 title: Comment répertorier les formulaires sur une page Adobe Experience Manager Sites à l’aide du composant Forms Portal ?
-description: Découvrez comment répertorier des formulaires sur une page AEM Sites.
+description: Découvrez comment répertorier les formulaires sur une page AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '675'
 ht-degree: 13%
 
 ---
 
-
 # Répertorier les formulaires sur la page Sites
 
-Imaginez un utilisateur visitant le site web de la banque à la recherche d’un formulaire d’ouverture de compte. La banque utilise le composant Portail Forms pour aider les utilisateurs à trouver rapidement le formulaire en saisissant des mots-clés spécifiques ou en effectuant un filtrage par catégories telles que &quot;Nouveaux comptes&quot; ou &quot;Banques personnelles&quot;. Elle permet également aux utilisateurs de localiser facilement le formulaire souhaité sans avoir à parcourir de longues listes.
+Imaginez un utilisateur visitant le site Web de la banque à la recherche d&#39;un formulaire d&#39;ouverture de compte. La banque utilise le composant Portail Forms pour aider les utilisateurs à trouver rapidement le formulaire en saisissant des mots-clés spécifiques ou en filtrant par catégories telles que « Nouveaux comptes » ou « Services bancaires aux particuliers » et permet aux utilisateurs de localiser facilement le formulaire souhaité sans avoir à faire défiler de longues listes.
 
-Le composant **Search &amp; Lister** du portail Forms vous permet d’afficher et de répertorier des formulaires sur une page Sites. Les utilisateurs peuvent configurer et présenter une liste complète de formulaires en fonction de critères spécifiques pour répondre aux besoins de l’entreprise. Les utilisateurs anonymes peuvent consulter la page Sites pour afficher et parcourir les formulaires disponibles. Les formulaires répertoriés peuvent être triés par ordre croissant ou décroissant à l’aide de l’option déroulante **Trier par** située dans le coin supérieur droit de l’écran.
+Le composant **Search &amp; Lister** du portail Forms vous permet d’afficher et de répertorier des formulaires sur une page Sites. Les utilisateurs et utilisatrices peuvent configurer et présenter une liste complète de formulaires basée sur des critères spécifiques pour répondre aux exigences d’entreprise. Les utilisateurs anonymes peuvent consulter la page Sites pour afficher et parcourir les formulaires disponibles. Les formulaires répertoriés peuvent être triés par ordre croissant ou décroissant à l’aide de l’option déroulante **Trier par** située dans le coin supérieur droit de l’écran.
 
 ![Icône Recherche et énumérateur](assets/search-and-lister-component.png)
 
 ## Condition préalable
 
-Avant d’explorer les différentes fonctionnalités d’un composant Forms Portal, assurez-vous que les composants principaux sont activés pour votre environnement. Pour obtenir des instructions détaillées sur l’activation des composants principaux pour votre environnement, [cliquez ici](/help/forms/enable-adaptive-forms-core-components.md).
+Avant d’explorer les différentes fonctionnalités d’un composant du portail Forms, assurez-vous que les composants principaux sont activés pour votre environnement. Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
 <!--
 ## Enable Forms Portal components for your existing environment
 
 To enable out-of-the-box Forms Portal components on existing AEM Forms as a Cloud Service, perform the following steps:
 
-1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=fr).  
+1. **Clone Cloud Manager Git repository on your local development instance:**  Your Cloud Manager Git repository contains a default AEM project. It is based on [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. For details on accessing the repository, see [Accessing Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).  
 
 1. **Create [!DNL Experience Manager Forms] as a [Cloud Service] project:** Create [!DNL Experience Manager Forms] as a [Cloud Service] project based on [AEM Archetype 50](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-50) or later. The archetype help developers easily start developing for [!DNL AEM Forms] as a Cloud Service. It also includes some sample themes and templates to help you started quickly.
 
@@ -46,61 +46,61 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
     `mvn -PautoInstallPackage clean install`
 
-    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#building-and-installing)
+    For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr#embeddeds). -->
+1. [Deploy the archetype to your [!DNL AEM Forms] as a Cloud Service environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds). -->
 
-Après avoir déployé les derniers composants principaux dans votre environnement, les composants du portail Forms deviennent accessibles dans votre environnement de création.
+Après le déploiement des derniers composants principaux dans votre environnement, les composants du portail Forms deviennent accessibles dans votre environnement de création.
 
 ## Répertorier les formulaires sur la page Sites
 
 Pour ajouter le composant de portail **Search &amp; Lister** à votre page Sites, procédez comme suit :
 
-1. Ouvrez la page AEM Sites en mode **Modifier** .
+1. Ouvrez la page AEM Sites en mode **Modifier**.
 1. Accédez à **[!UICONTROL Informations sur la page]** > **[!UICONTROL Modifier le modèle]**.
-   ![Modifier la stratégie de modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Modifier la politique du modèle](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Cliquez sur la **[!UICONTROL stratégie]** et cochez la case **[!UICONTROL Search &amp; Lister]** sous le **[nom de projet AEM archetype] - Forms and Communications Portal**.
+1. Cliquez sur le **[!UICONTROL Politique]** et cochez la case **[!UICONTROL Recherche et énumérateur]** sous **[Nom du projet de l’archétype AEM] - Portail Forms et communications**.
 
-   ![Sélection de stratégie](/help/forms/assets/search-lister-enable-policy.png)
+   ![Sélection de politique](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]**.
-1. Maintenant, rouvrez la page AEM Sites en mode création.
-1. Recherchez la section dans l’éditeur de page qui vous permet d’ajouter le composant Portail Forms .
+1. Rouvrez maintenant la page AEM Sites en mode création.
+1. Recherchez la section dans l’éditeur de page qui vous permet d’ajouter le composant Forms Portal.
 
-1. Cliquez sur l&#39;icône **Ajouter** . L’icône est un signe plus (+) qui indique l’option d’ajout de nouveaux composants.
+1. Cliquez sur l’icône **Ajouter**. L’icône est un signe plus (+) qui signifie que vous pouvez ajouter de nouveaux composants.
 
-   Cliquez sur l’icône **Ajouter** pour afficher une boîte de dialogue **Insérer un nouveau composant** qui affiche divers composants à insérer.
+   Cliquez sur l’icône **Ajouter** pour afficher une boîte de dialogue **Insérer un nouveau composant** qui affiche différents composants à insérer.
 
    >[!NOTE]
    >
-   > Vous pouvez également faire glisser et déposer le composant.
+   > Vous pouvez également effectuer un glisser-déposer du composant.
 
-1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez un composant dans la liste. Par exemple, sélectionnez le composant **Search and Lister** dans la liste pour ajouter le composant **Search &amp; Lister** Forms Portal.
+1. Parcourez les composants disponibles dans la boîte de dialogue et sélectionnez le composant de votre choix dans la liste. Par exemple, sélectionnez le composant **Recherche et énumérateur** dans la liste pour ajouter le composant **Recherche et énumérateur** Portail Forms.
 
    ![Composant Search &amp; Lister](/help/forms/assets/add-search-lister.png)
 
 Maintenant, configurez les propriétés du composant **Search and Lister**.
 
-## Présentation des propriétés du composant Search and Lister
+## Comprendre les propriétés du composant Recherche et énumérateur
 
-Vous pouvez facilement personnaliser les propriétés du composant **Search and Lister** à l’aide de la boîte de dialogue de configuration pour une expérience utilisateur transparente. Pour la configuration, sélectionnez le composant, puis sélectionnez l’icône ![Configurer](assets/configure_icon.png). La boîte de dialogue **[!UICONTROL Recherche et énumérateur]** s’ouvre.
+Vous pouvez facilement personnaliser les propriétés des composants **Search and Lister** à l’aide de la boîte de dialogue de configuration pour une expérience utilisateur fluide. Pour configurer, sélectionnez le composant, puis sélectionnez l’icône ![Configurer](assets/configure_icon.png). La boîte de dialogue **[!UICONTROL Recherche et énumérateur]** s’ouvre.
 
 ### Onglet Affichage
 
 ![Onglet Affichage](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. Dans **[!UICONTROL Titre]**, spécifiez le titre du composant Recherche et énumérateur. Un titre indicatif permet aux utilisateurs d’effectuer une recherche rapide dans la liste des formulaires.
-1. Dans la liste **[!UICONTROL Disposition]**, sélectionnez la disposition pour représenter les formulaires au format carte ou liste.
+1. Dans la liste **[!UICONTROL Disposition]**, sélectionnez la disposition pour représenter les formulaires au format vignette ou liste.
 1. Sélectionnez **[!UICONTROL Masquer la recherche]** et **[!UICONTROL Masquer le tri]** pour masquer les fonctionnalités de recherche et de tri.
 1. Dans **[!UICONTROL Info-bulle]**, fournissez l’info-bulle qui s’affiche lorsque vous placez le pointeur de la souris sur le composant.
 
-### Onglet Ressource
+### Onglet Contenu
 
-![Onglet Ressource](/help/forms/assets/search-and-lister-asset-tab.png)
+![Onglet Ressources](/help/forms/assets/search-and-lister-asset-tab.png)
 
-1. Dans l’onglet **[!UICONTROL Asset Folder]**, spécifiez l’emplacement d’extraction et de liste des formulaires sur la page.
-1. À l’aide de **[!UICONTROL Ajouter un autre emplacement]**, vous pouvez configurer plusieurs emplacements de dossiers.
+1. Dans l’onglet **[!UICONTROL Dossier de ressources]**, indiquez l’emplacement à partir duquel les formulaires sont extraits et répertoriés sur la page.
+1. À l’aide de l’option **[!UICONTROL Ajouter un autre emplacement]**, vous pouvez configurer plusieurs emplacements de dossiers.
 
 ### Onglet Résultats
 
@@ -108,9 +108,9 @@ Vous pouvez facilement personnaliser les propriétés du composant **Search and 
 
 Dans l’onglet **[!UICONTROL Résultats]**, configurez le nombre maximum de formulaires à afficher par page. La valeur par défaut est de huit formulaires par page.
 
-## Afficher les formulaires sur la page Sites à l’aide du composant Search &amp; Lister
+## Affichez des formulaires sur la page Sites à l’aide du composant Search &amp; Lister
 
-Pour afficher la liste des formulaires, utilisez le composant Portail Forms **Search &amp; Lister**. Prévisualisez la page AEM Sites pour afficher la liste des formulaires du dossier **Assets** affiché à l’écran. Vous pouvez également rechercher un formulaire spécifique à l’aide de la barre de recherche.
+Pour afficher la liste des formulaires, utilisez le composant **Search &amp; Lister** Portail Forms. Prévisualisez la page AEM Sites pour afficher la liste des formulaires du dossier **Assets** affichée à l’écran. Vous pouvez également rechercher un formulaire spécifique à l’aide de la barre de recherche.
 
 ![Icône Recherche et énumérateur](assets/search-and-lister-component.png)
 
@@ -139,7 +139,7 @@ Perform the following steps to configure Unified Storage Connector for AEM Workf
 
 ## Enable Forms Portal Components {#enable-forms-portal-components}
 
-To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr#create-proxy-components). 
+To use any core component (including the out-of-the-box portal components) in an Adobe Experience Manager (AEM) site, you must create a proxy component and enable it for your site. For creating a proxy component and enabling portal components, see [Using Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components). 
 
 Once a portal component is enabled, you can use it in the author instance of your sites page.
 
@@ -223,7 +223,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Étapes suivantes
 
-Dans l’article suivant, apprenez à [enregistrer des formulaires en tant que brouillons et à les répertorier sur une page Sites à l’aide du composant Portail Forms Brouillons et envois](/help/forms/save-core-component-based-form-as-draft.md).
+Dans l’article suivant, découvrez [comment enregistrer des formulaires en tant que brouillons et les répertorier sur une page Sites à l’aide du composant Portail Forms Brouillons et envois](/help/forms/save-core-component-based-form-as-draft.md).
 
 ## Articles connexes
 

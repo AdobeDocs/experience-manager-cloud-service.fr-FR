@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '3145'
-ht-degree: 39%
+source-wordcount: '3143'
+ht-degree: 38%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 39%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -24,7 +24,7 @@ ht-degree: 39%
 
 AEM Forms permet aux développeurs et développeuses de formulaires d’incorporer facilement des formulaires adaptatifs dans une page AEM Sites ou dans une page web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel, et les utilisateurs et utilisatrices peuvent le remplir et l’envoyer sans quitter la page. Cela permet à l’utilisateur ou à l’utilisatrice de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire. Cela permet à vos utilisateurs et utilisatrices de remplir et d’envoyer des formulaires de manière pratique sans jamais quitter la page sur laquelle ils se trouvent. Cette intégration offre un moyen pratique de réutiliser le Forms adaptatif déjà créé.
 
-Vous pouvez utiliser l’éditeur de page d’AEM pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation d’AEM Page Editor permet aux créateurs et créatrices de contenu de créer des expériences de capture de données transparentes dans une page Sites à l’aide de la puissance des composants Forms adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération de documents d’enregistrement et l’automatisation des processus métier. L’éditeur de page permet également d’utiliser différentes fonctionnalités des pages d’AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+Vous pouvez utiliser l’éditeur de page d’AEM pour incorporer rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page d’AEM permet aux auteurs de contenu de créer des expériences de capture de données transparentes dans une page Sites à l’aide de la puissance des composants Forms adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération de documents d’enregistrement et l’automatisation des processus métier. L’éditeur de page permet également d’utiliser différentes fonctionnalités des pages d’AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
 AEM Forms fournit des composants **[!UICONTROL Conteneur de formulaires adaptatifs]** et **[!UICONTROL Forms adaptatif - Incorporer (v2)]**. Vous pouvez utiliser le composant **[!UICONTROL Forms adaptative - Incorporer (v2)]** pour ajouter un formulaire adaptatif existant ou créer un formulaire à l’aide de l’éditeur de Forms adaptatif , tandis que l’**[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites.
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -77,7 +77,7 @@ Avant de commencer à incorporer un nouveau formulaire adaptatif ou un formulair
 
 ### Activer les composants principaux des formulaires adaptatifs pour votre environnement AEM Cloud Service
 
-Assurez-vous que les [composants principaux de formulaires adaptatifs sont activés pour votre environnement AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
+Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
 ### Ajouter des bibliothèques clientes de formulaires adaptatifs à votre page AEM Sites ou votre fragment d’expérience
 
@@ -267,7 +267,7 @@ Un cadre intégré (iframe) est un élément HTML qui charge un formulaire adapt
      >
      > Pour incorporer plusieurs formulaires dans une page AEM Sites, cochez la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]**.
 
-   * Si la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]** n’est pas cochée, un formulaire adaptatif ne couvre pas toute la largeur du conteneur. À la place, un iframe est utilisé pour générer le formulaire, qui ne peut pas être étendu au-delà d’une largeur spécifique. Cette approche est utile lorsqu’un formulaire adaptatif a des limites précises et doit coexister avec d’autres composants AEM à côté dans le conteneur. Si cette option n’est pas cochée, elle permet à un seul Forms adaptatif de la page AEM Sites de s’incorporer sans iframe.
+   * Si la case **[!UICONTROL Le formulaire couvre toute la largeur du cadre]** n’est pas cochée, un formulaire adaptatif ne couvre pas toute la largeur du conteneur. À la place, un iframe est utilisé pour générer le formulaire, qui ne peut pas être étendu au-delà d’une largeur spécifique. Cette approche est utile lorsqu’un formulaire adaptatif a des limites définies et doit coexister avec d’autres composants AEM situés à côté dans le conteneur. Si cette option n’est pas cochée, elle permet à un seul Forms adaptatif de la page AEM Sites de s’incorporer sans iframe.
 
      >[!NOTE]
      >
@@ -339,7 +339,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Formulaire adaptatif incorporé à Publish {#publishing-embedded-adaptive-form}
+## Publication d’un formulaire adaptatif incorporé {#publishing-embedded-adaptive-form}
 
 Examinons les scénarios suivants concernant la publication d’un formulaire adaptatif incorporé dans une page AEM Sites :
 

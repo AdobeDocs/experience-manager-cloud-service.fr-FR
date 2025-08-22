@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2340'
 ht-degree: 77%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 77%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -35,7 +35,8 @@ Avant de commencer, découvrez les types de composants de formulaires disponible
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
-* **Activer les composants principaux de Forms adaptative pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptative sont déjà activés pour votre environnement. Si vous disposez d’un environnement Forms as a Cloud Service basé sur Archetype 39 ou une version antérieure, [Activez les composants principaux de Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md). Lors de l’activation des composants principaux pour votre environnement, les modèles et thèmes **Forms adaptative (composant principal)** sont ajoutés à votre environnement. Si votre version du SDK AEM est antérieure à 2023.02.0, [assurez-vous que l’indicateur `prerelease` est activé dans votre environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features), car les composants principaux des formulaires adaptatifs faisaient partie de la version préliminaire avant la version 2023.02.0.
+
+* **Activer les composants principaux de Forms adaptative pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptative sont déjà activés pour votre environnement.  Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service. Lors de l’activation des composants principaux pour votre environnement, les modèles et thèmes **Forms adaptative (composant principal)** sont ajoutés à votre environnement. Si votre version du SDK AEM est antérieure à 2023.02.0, [assurez-vous que l’indicateur `prerelease` est activé dans votre environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features), car les composants principaux des formulaires adaptatifs faisaient partie de la version préliminaire avant la version 2023.02.0.
 
 * **Modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, sans nom :
 
@@ -55,7 +56,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Créer un formulaire adaptatif  {#create-an-adaptive-form-core-components}

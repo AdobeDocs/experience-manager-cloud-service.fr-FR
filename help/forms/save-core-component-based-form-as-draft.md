@@ -4,17 +4,17 @@ description: Découvrez comment enregistrer le formulaire adaptatif basé sur le
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 7%
+source-wordcount: '1373'
+ht-degree: 6%
 
 ---
 
 
 # Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qui doit se suspendre et revenir ultérieurement. AEM propose une option `save-as-draft`, qui permet à l’utilisateur ou à l’utilisatrice d’enregistrer le formulaire en tant que brouillon en vue d’un remplissage ultérieur. Pour faciliter la tâche, AEM fournit le composant du portail Forms **Brouillons et envois** prêt à l’emploi, qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons en vue d’une finalisation ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher les formulaires qu’ils ont envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce dernier n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
@@ -22,7 +22,7 @@ Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qu
 
 ## Conditions préalables
 
-* [Activation des composants principaux des formulaires adaptatifs pour votre environnement](/help/forms/enable-adaptive-forms-core-components.md).
+* Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
   Après le déploiement des derniers composants principaux dans votre environnement, les composants du portail Forms deviennent accessibles dans votre environnement de création.
 

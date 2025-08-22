@@ -4,9 +4,9 @@ description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Exp
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1282'
 ht-degree: 57%
 
 ---
@@ -149,4 +149,4 @@ Vous trouverez une liste complète des versions des outils de migration [ici](/h
 
 * Impossible d’envoyer le Forms adaptatif en fonction des composants principaux. Le problème se produit pour les Forms adaptatives créées à l’aide des composants principaux versions 2.0.38 à 2.0.60.
 
-  Pour résoudre le problème. vous pouvez passer aux composants principaux de formulaire adaptatif version 2.0.62 ou ultérieure. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, [définissez les versions des composants core.forms.components.version, core.forms.components.af.version et core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) les dépendances de votre référentiel Forms as a Cloud Service ou de votre projet basé sur l’archétype AEM et [déployez les modifications dans votre environnement Forms as a Cloud Service](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptative dans [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Pour résoudre le problème. vous pouvez passer aux composants principaux de formulaire adaptatif version 2.0.62 ou ultérieure. Pour définir une version des composants principaux de Forms adaptatif pour votre environnement, définissez les versions des dépendances `core.forms.components.version`, `core.forms.components.af.version` et `core.wcm.components.version component` dans votre référentiel Forms as a Cloud Service ou votre projet basé sur l’archétype AEM et déployez les modifications dans votre environnement Forms as a Cloud Service. Vous trouverez la dernière version des dépendances des composants principaux de Forms adaptative dans [Référentiel Git des composants principaux de Forms adaptatif](https://github.com/adobe/aem-core-forms-components#system-requirements).

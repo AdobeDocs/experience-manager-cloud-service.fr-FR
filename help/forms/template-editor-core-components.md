@@ -1,13 +1,13 @@
 ---
 title: Comment créer un modèle de formulaire adaptatif basé sur un composant principal ?
-description: Créez des modèles de formulaire adaptatif basés sur le composant principal pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
+description: Créez des modèles de formulaire adaptatif basés sur les composants principaux pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1951'
 ht-degree: 58%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 58%
 
 Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle contenant la structure de base et le contenu initial que les auteurs et autrices peuvent utiliser pour créer des formulaires.
 
-Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de certaines zones de texte, de boutons de navigation, ainsi qu’un bouton permettant de soumettre un formulaire d’inscription. Vous pouvez créer un modèle avec les composants que les auteurs et autrices peuvent utiliser pour créer un formulaire qui soit cohérent avec d’autres formulaires d’inscription. Lorsque les auteurs utilisent le modèle pour créer un formulaire adaptatif, le nouveau formulaire hérite de la structure, des composants et de ceux que vous avez spécifiés dans le modèle. L’éditeur de modèles permet d’effectuer les opérations suivantes :
+Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de certaines zones de texte, de boutons de navigation, ainsi qu’un bouton permettant de soumettre un formulaire d’inscription. Vous pouvez créer un modèle avec les composants que les auteurs et autrices peuvent utiliser pour créer un formulaire qui soit cohérent avec d’autres formulaires d’inscription. Lorsque les auteurs utilisent le modèle pour créer un formulaire adaptatif, le nouveau formulaire hérite de la structure, des éléments et des composants que vous avez spécifiés dans le modèle. L’éditeur de modèles permet d’effectuer les opérations suivantes :
 
 * Ajoutez les composants d’en-tête et de pied de page d’un formulaire dans le calque de structure.
 * Fournissez le contenu initial pour le formulaire.
@@ -28,19 +28,19 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Condition préalable
 
-**Activer les composants principaux de Forms adaptatif pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement as a Cloud Service formulaire basé sur [AEM Archetype 39 ou version antérieure](https://github.com/adobe/aem-project-archetype), [Activez les composants principaux Forms adaptatif pour votre environnement](enable-adaptive-forms-core-components.md).
+**Activer les composants principaux de Forms adaptative pour votre environnement** : lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Installez la dernière version de FAR pour activer les composants principaux de Forms adaptative pour votre environnement AEM Cloud Service.
 
 >[!NOTE]
 >
-> Lors du déploiement de l’environnement Forms as a Cloud Service basé sur Archetype 45, les modèles **Adaptive Forms (Core Component)** et les thèmes basés sur les composants principaux sont ajoutés à votre environnement.
+> Lors du déploiement de l’environnement Forms as a Cloud Service basé sur l’archétype 45, les modèles **Adaptive Forms (composant principal)** et les thèmes basés sur les composants principaux sont ajoutés à votre environnement.
 
-## Utilisation d’un modèle {#working-with-templates}
+## Utiliser un modèle {#working-with-templates}
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables.
 
 >[!NOTE]
 >
-> Vous pouvez trouver les modèles modifiables basés sur des composants principaux dans les dossiers spécifiques aux composants principaux.
+> Vous trouverez les modèles modifiables basés sur les composants principaux dans les dossiers spécifiques aux composants principaux.
 
 Experience Manager met à disposition un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=fr#editing-templates-template-authors).
 
@@ -48,10 +48,10 @@ Experience Manager met à disposition un dossier global pour organiser les modè
 
 Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour créer un modèle :
 
-1. Sélectionnez **[!UICONTROL Créer]** dans le dossier que vous avez créé.
-1. Dans la section **[!UICONTROL Choisir un type de modèle]**, sélectionnez le **[!UICONTROL modèle de formulaire adaptatif (composant principal)]** et sélectionnez **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Créer]** à l’intérieur du dossier que vous avez créé.
+1. Dans la section **[!UICONTROL Choisir un type de modèle]**, sélectionnez **[!UICONTROL Modèle de formulaire adaptatif (composant principal)]** puis sélectionnez **[!UICONTROL Suivant]**.
 
-1. Dans la section **[!UICONTROL Détails du modèle]**, indiquez un **Titre du modèle** et sélectionnez **[!UICONTROL Créer]**.
+1. Dans la section **[!UICONTROL Détails du modèle]**, fournissez un **Titre du modèle** et sélectionnez **[!UICONTROL Créer]**.
 Vous pouvez également fournir une description.
 
 1. Sélectionnez **[!UICONTROL Terminé]** pour revenir à la console ou **[!UICONTROL Ouvrir]** pour ouvrir le modèle dans l’éditeur.
@@ -66,7 +66,7 @@ Contient les options suivantes :
    * **Activer/désactiver le panneau latéral** : affiche ou masque la barre latérale.
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication/dépublication, les vignettes, les bibliothèques côté client, la politique de page et la bibliothèque côté client de conceptions de pages.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Sélecteur de mode :** permet de modifier le mode. Vous pouvez choisir le mode **[!UICONTROL Structure]**, **[!UICONTROL Contenu initial]** ou **[!UICONTROL Contrôle de mise en page]**. Le mode Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le Mode Contenu initial vous permet de personnaliser le contenu du formulaire.
+   * **Sélecteur de mode :** permet de changer de mode. Vous pouvez choisir le mode **[!UICONTROL Structure]**, **[!UICONTROL Contenu initial]** ou **[!UICONTROL Contrôle de mise en page]**. Le mode Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le Mode Contenu initial vous permet de personnaliser le contenu du formulaire.
    * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 * **Barre latérale** : fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 * **Barre d’outils de composant** : quand vous choisissez un composant, vous voyez une barre d’outils qui vous permet de personnaliser le composant.
@@ -86,7 +86,7 @@ Le sélecteur de calques est disponible en regard de l’option Aperçu dans le 
 
 ### Structure {#structure}
 
-Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles, il est utile de prédéfinir le contenu qui ne peut pas être modifié lors de la création d’un Forms adaptatif associé au modèle.
+Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles, il permet de prédéfinir le contenu qui ne peut pas être modifié lors de la création du Forms adaptatif associé au modèle.
 
 <!-- you can see the layout containers above and below the Adaptive Form Container. Authors can use these layout containers for header and footer. -->
 
@@ -119,11 +119,11 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 ### Contenu initial {#initial-content}
 
-Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Il vous permet de créer un contenu prédéfini qui peut être modifié lors de la création d’un Forms adaptatif associé au modèle. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
+Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Il permet de créer un contenu prédéfini qui peut être modifié lors de la création du Forms adaptatif associé au modèle. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
 
-Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![ ](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
+Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
 
-![En-tête et pied de page ajoutés dans la couche Contenu initial](assets/header-and-footer.png)
+![En-tête et pied de page ajoutés dans le calque Contenu initial](assets/header-and-footer.png)
 
 Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 
@@ -135,24 +135,24 @@ Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif q
 
 ### Disposition {#layout}
 
-Lors de la modification d’un modèle, vous pouvez définir la mise en page, qui utilise une mise en page réactive standard. La mise en page permet de gérer la largeur d’un composant en fonction de la largeur de l’appareil pour faciliter une conception de formulaire adaptatif réactive.
+Lorsque vous modifiez un modèle, vous pouvez définir la mise en page et utiliser une mise en page réactive standard. La disposition permet de gérer la largeur d’un composant en fonction de la largeur de l’appareil afin de faciliter une conception de formulaire adaptatif réactive.
 
 ![Conteneur de dispositions dans le calque de structure](/help/forms/assets/layout-template-core-component.png)
 
-Pour plus d’informations, reportez-vous à l’article [Comprendre la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=fr) .
+Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) pour plus d’informations.
 
 ## Activation du modèle {#enabling-the-template}
 
 Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le modèle afin de l’utiliser pour créer des formulaires adaptatifs. Pour activer un formulaire :
 
-1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Modèles]** et ouvrez le dossier dans lequel vous avez créé le modèle.
+1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Modèles]**, puis ouvrez le dossier dans lequel vous avez créé le modèle.
 Le modèle que vous avez créé est marqué comme Brouillon.
 1. Sélectionnez le modèle, puis cliquez sur **[!UICONTROL Activer]** dans la barre d’outils.
 Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affiché lorsque vous êtes invité à choisir un modèle.
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}
 
-Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formulaire adaptatif créé à l’aide d’un modèle personnalisé, celui-ci n’est pas téléchargé. Lorsque vous importez le formulaire dans une autre instance [!DNL AEM Forms], il est importé sans son modèle. Si le modèle d’un formulaire importé n’est pas disponible, le formulaire n’est pas rendu. Vous pouvez compresser le modèle personnalisé à partir du nœud `/conf` dans `https://<server>:<port>/crx/packmgr` et le transférer dans l’instance dans laquelle vous souhaitez charger le formulaire. [!DNL AEM Forms]. Vous pouvez également [ créer un modèle à l’aide d’AEM Archetype et le déployer sur votre instance de Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=fr#prerequisites).
+Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formulaire adaptatif créé à l’aide d’un modèle personnalisé, celui-ci n’est pas téléchargé. Lorsque vous importez le formulaire dans une autre instance [!DNL AEM Forms], il est importé sans son modèle. Si le modèle d’un formulaire importé n’est pas disponible, le formulaire n’est pas rendu. Vous pouvez compresser le modèle personnalisé à partir du nœud `/conf` dans `https://<server>:<port>/crx/packmgr` et le transférer dans l’instance dans laquelle vous souhaitez charger le formulaire. [!DNL AEM Forms]. Vous pouvez également [Créer un modèle à l’aide de l’archétype AEM et le déployer sur votre instance de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=fr#prerequisites).
 
 >[!NOTE]
 >
@@ -160,12 +160,12 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 ## Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
 
-Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans un éditeur de modèles. Il permet aux créateurs et aux créatrices de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un créateur ou une créatrice de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Il permet aux auteurs de formulaires de réglementer l’utilisation du schéma et de gagner du temps pour les auteurs de formulaires. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
+Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans un éditeur de modèles. Il permet aux créateurs et aux créatrices de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un créateur ou une créatrice de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Cela permet aux créateurs et aux créatrices de formulaires de réglementer l’utilisation du schéma et de gagner du temps. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
 
-1. Sélectionnez **[!UICONTROL Explorateur de contenu]** situé sur le côté gauche.
+1. Sélectionnez **[!UICONTROL Explorateur de contenu]** sur le côté gauche.
 1. Accédez au conteneur de formulaires **[!UICONTROL Paramètre]**.
 1. Sélectionnez **[!UICONTROL Modèle de données]**.
-1. Choisissez votre modèle de données de formulaire (FDM) via **[!UICONTROL Sélectionner le modèle de données de formulaire]** et enregistrez la configuration.
+1. Choisissez votre modèle de données de formulaire (FDM) via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.
 
 ![Modèle de données d’association avec Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -202,44 +202,44 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Ajout de propriétés personnalisées aux composants de formulaire adaptatif à l’aide de la stratégie de modèle
 
-Les propriétés personnalisées vous permettent d’associer des attributs personnalisés (paires clé-valeur) à un composant principal de formulaire adaptatif à l’aide du modèle de formulaire. Les propriétés personnalisées sont répercutées dans la section **[!UICONTROL properties]** du rendu sans affichage du composant. Cela permet de créer un comportement de formulaire dynamique qui s’adapte en fonction des valeurs d’attributs personnalisés. Par exemple, les développeurs et développeuses peuvent concevoir plusieurs rendus d’un composant de formulaires découplés pour des plateformes mobiles, de bureau ou web, ce qui améliore considérablement l’expérience client sur un large éventail d’appareils.
+Les propriétés personnalisées vous permettent d’associer des attributs personnalisés (paires clé-valeur) à un composant principal de formulaire adaptatif à l’aide du modèle de formulaire. Les propriétés personnalisées sont reflétées dans la section **[!UICONTROL properties]** du rendu découplé du composant. Cela permet de créer un comportement de formulaire dynamique qui s’adapte en fonction des valeurs d’attributs personnalisés. Par exemple, les développeurs et développeuses peuvent concevoir plusieurs rendus d’un composant de formulaires découplés pour des plateformes mobiles, de bureau ou web, ce qui améliore considérablement l’expérience client sur un large éventail d’appareils.
 
-Les étapes pour ajouter des propriétés personnalisées aux champs de composant principal de formulaire adaptatif sont les suivantes :
+Les étapes permettant d’ajouter des propriétés personnalisées aux champs des composants principaux des formulaires adaptatifs sont les suivantes :
 
-1. [Ajout d’un nom de groupe personnalisé dans la stratégie d’un éditeur de modèles](#add-a-custom-group-name)
-1. [Sélectionnez un nom de groupe personnalisé dans la boîte de dialogue de modification du composant d’un formulaire adaptatif](#select-a-custom-group-name)
+1. [Ajout d’un nom de groupe personnalisé dans la politique d’un éditeur de modèles](#add-a-custom-group-name)
+1. [Sélectionnez un nom de groupe personnalisé dans la boîte de dialogue de modification d’un composant de formulaire adaptatif](#select-a-custom-group-name)
 
-#### Ajout d’un nom de groupe personnalisé dans la stratégie de l’éditeur de modèles {#add-a-custom-group-name}
+#### Ajouter un nom de groupe personnalisé dans la politique de l’éditeur de modèles {#add-a-custom-group-name}
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]**.
-1. Sélectionnez le modèle en fonction des composants principaux et ouvrez-le en mode d’édition.
-1. Cliquez sur l’icône **[!UICONTROL Stratégie]** ![Stratégie](/help/forms/assets/Smock_FeedManagement_18_N.svg) d’un champ de composant principal de formulaire adaptatif sur lequel les propriétés personnalisées doivent être définies. La boîte de dialogue **[!UICONTROL Champ de formulaire adaptatif]** s’affiche.
-1. Sélectionnez l’onglet **[!UICONTROL Propriétés personnalisées]** .
-1. Spécifiez le **[!UICONTROL titre de la stratégie]** sous la section **[!UICONTROL Stratégie]** .
-1. Spécifiez le **[!UICONTROL nom du groupe]** et ajoutez la paire clé-valeur associée à un groupe spécifique. Le nom du groupe est visible par les auteurs de formulaires dans la boîte de dialogue de modification d’un composant. Si vous sélectionnez le nom du groupe, chaque paire clé-valeur associée s’applique à un composant.
+1. Sélectionnez le modèle basé sur les composants principaux et ouvrez-le en mode d’édition.
+1. Cliquez sur l’icône **[!UICONTROL Politique]** ![Politique](/help/forms/assets/Smock_FeedManagement_18_N.svg) d’un champ de composant principal de formulaire adaptatif sur lequel les propriétés personnalisées doivent être définies. La boîte de dialogue **[!UICONTROL Champ de formulaire adaptatif]** s’affiche.
+1. Sélectionnez l’onglet **[!UICONTROL Propriétés personnalisées]**.
+1. Spécifiez le **[!UICONTROL Titre de la politique]** sous la section **[!UICONTROL Politique]**.
+1. Spécifiez le **[!UICONTROL nom du groupe]** et ajoutez une paire clé-valeur associée à un groupe spécifique. Le nom du groupe est visible pour les auteurs de formulaire dans la boîte de dialogue de modification d’un composant. Si vous sélectionnez le nom du groupe, chaque paire clé-valeur associée est applicable à un composant.
 1. Cliquez sur **[Terminé]**.
 
-![Ajout d’un nom de groupe de propriétés personnalisées dans l’éditeur de modèles](/help/forms/assets/custom-properties-core-component.png)
+![Ajout du nom de groupe de propriétés personnalisées dans l’éditeur de modèles](/help/forms/assets/custom-properties-core-component.png)
 
 Lorsque vous ajoutez au moins un groupe de propriétés personnalisé à l’aide de la stratégie de modèle, l’onglet **[!UICONTROL Avancé]** devient visible dans la boîte de dialogue Modifier d’un composant principal correspondant.
 
-#### Sélectionner un nom de groupe personnalisé dans la boîte de dialogue de modification d’un composant principal {#select-a-custom-group-name}
+#### Sélectionnez un nom de groupe personnalisé dans la boîte de dialogue de modification d’un composant principal {#select-a-custom-group-name}
 
 1. Ouvrez un formulaire adaptatif en mode d’édition.
-1. Sélectionnez le composant pour lequel les propriétés personnalisées ont été définies dans l’éditeur de modèles et sélectionnez ![settings_icon](assets/configure-icon.svg) pour ouvrir la boîte de dialogue de modification du composant.
+1. Sélectionnez le composant pour lequel les propriétés personnalisées ont été définies dans l’éditeur de modèles, puis sélectionnez ![settings_icon](assets/configure-icon.svg) pour ouvrir la boîte de dialogue de modification du composant.
 1. Sélectionnez l’onglet **[!UICONTROL Avancé]**.
-1. Sélectionnez le nom du groupe de propriétés personnalisées dans la liste déroulante **[!UICONTROL Custom Property Select]** . Tous les noms de groupes personnalisés définis sont automatiquement renseignés dans la liste déroulante.
+1. Sélectionnez le nom du groupe de propriétés personnalisées dans le menu déroulant **[!UICONTROL Sélection de propriété personnalisée]**. Tous les noms de groupes personnalisés définis sont automatiquement renseignés dans la liste déroulante.
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les propriétés.
 
-![select custom property group name](/help/forms/assets/select-custom-properties-group-name.png)
+![sélectionnez nom du groupe de propriétés personnalisées](/help/forms/assets/select-custom-properties-group-name.png)
 
 >[!NOTE]
 >
-> * La case à cocher **[!UICONTROL Additional Custom Properties]** vous permet d’ajouter dynamiquement des propriétés personnalisées spécifiques à un composant en plus de celles fournies dans la stratégie de modèle. La propriété personnalisée du composant spécifique prévaut sur la propriété personnalisée définie dans la stratégie de modèle lorsque les valeurs de nom de clé correspondent.
+> * La case à cocher **[!UICONTROL Propriétés personnalisées supplémentaires]** vous permet d’ajouter dynamiquement des propriétés personnalisées spécifiques au composant en plus de celles fournies dans la stratégie du modèle. La propriété personnalisée du composant spécifique est prioritaire sur la propriété personnalisée définie dans la stratégie de modèle lorsque les valeurs de nom de clé correspondent.
 
 ## Création d’un formulaire adaptatif à l’aide du modèle {#creating-an-adaptive-form-using-the-template}
 
-Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/creating-adaptive-form-core-components.md).
+Une fois que vous avez créé et activé un modèle, il est disponible dans le gestionnaire de formulaires lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [ Création d’un formulaire adaptatif basé sur les composants principaux ](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 
@@ -280,9 +280,9 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Bonnes pratiques {#best-practices}
 
-* Créez des modèles à l’aide des composants basés sur les composants principaux, par exemple Texte de formulaire adaptatif, Conteneur de formulaires adaptatifs, etc. Pour obtenir des informations sur les composants principaux de Forms adaptatif, [ cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr).
-* Limitez le nombre de modèles pour qu’ils correspondent aux différents types de formulaires fondamentalement différents disponibles sur les sites web.
-* Fournissez la flexibilité et les fonctionnalités de configuration nécessaires à vos composants personnalisés utilisés dans un modèle.
+* Créez des modèles à l’aide des composants basés sur les composants principaux, par exemple Texte de formulaire adaptatif, Conteneur de formulaires adaptatifs, etc. Pour plus d’informations sur les composants principaux de Forms adaptatif, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr).
+* Limitez le nombre de modèles pour qu’ils correspondent aux différents types de formulaires fondamentalement disponibles sur les sites web
+* Fournissez la flexibilité et les fonctionnalités de configuration nécessaires aux composants personnalisés utilisés dans un modèle.
 
 <!--
 ## See next

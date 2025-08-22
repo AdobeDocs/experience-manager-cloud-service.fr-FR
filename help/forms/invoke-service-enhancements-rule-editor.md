@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Vous trouverez ci-dessous les conditions préalables à remplir avant d’utilis
 
 * Assurez-vous d’avoir configuré une source de données. Pour obtenir des instructions sur la configuration d’une source de données, [cliquez ici](/help/forms/configure-data-sources.md).
 * Créez un modèle de données de formulaire en utilisant la source de données configurée. Pour obtenir des conseils sur la création d’un modèle de données de formulaire, [cliquez ici](/help/forms/create-form-data-models.md).
-* Assurez-vous que les composants principaux sont activés pour votre environnement. Pour obtenir des instructions détaillées sur la manière d’activer les composants principaux pour votre environnement, [cliquez ici](/help/forms/enable-adaptive-forms-core-components.md).
+* Assurez-vous que les composants principaux sont activés pour votre environnement. Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
 ## Explorer le service Invoke à travers différents cas d’utilisation
 

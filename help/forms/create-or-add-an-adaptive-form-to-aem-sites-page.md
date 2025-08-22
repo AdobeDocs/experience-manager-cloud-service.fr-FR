@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3160'
 ht-degree: 82%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -74,7 +74,7 @@ Avant de commencer la création d’un formulaire adaptatif, activez les composa
 
 ### Activer les composants principaux des formulaires adaptatifs pour votre environnement AEM Cloud Service
 
-Assurez-vous que les [composants principaux de formulaires adaptatifs sont activés pour votre environnement AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
+Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
 ### Ajouter des bibliothèques clientes de formulaires adaptatifs à votre page AEM Sites ou votre fragment d’expérience
 

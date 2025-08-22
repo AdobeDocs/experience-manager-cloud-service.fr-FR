@@ -5,9 +5,9 @@ keywords: Composants principaux de style de formulaires adaptatifs. Utilisation 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2816'
+source-wordcount: '2803'
 ht-degree: 30%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 30%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour appliquer un style à un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
@@ -25,7 +25,7 @@ Dans cet article, nous expliquons comment concevoir des styles personnalisés po
 
 ## Thèmes disponibles pour la mise en forme des composants principaux
 
-Forms as a Cloud Service fournit les thèmes suivants pour le Forms adaptatif basé sur les composants principaux :
+Forms as a Cloud Service fournit les thèmes répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux :
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -47,7 +47,7 @@ Un thème est un package qui inclut des composants de style tels que le fichier 
 
 ## Créer un thème
 
-Forms as a Cloud Service fournit les thèmes de style de formulaire adaptatif répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux.
+Forms as a Cloud Service fournit, les thèmes de style de formulaire adaptatif répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux.
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -70,8 +70,8 @@ La personnalisation d’un thème fait référence au processus de modification,
 
 ### Configuration de votre environnement
 
-* [Activez les composants principaux de Forms adaptatif](/help/forms/enable-adaptive-forms-core-components.md) pour votre environnement de développement local et de Cloud Service.
-* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr) pour votre environnement de Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
+* Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
+* Configurez un [pipeline de déploiement front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) pour votre environnement Cloud Service. Vous pouvez également configurer le pipeline ultérieurement, ce qui vous offre la possibilité de hiérarchiser les tests et d’affiner le thème avant de configurer le pipeline de déploiement.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -96,7 +96,7 @@ Les exemples fournis dans le document sont basés sur le thème **Zone de travai
 
 Commençons par un processus de création d’une expérience de marque pour votre Forms adaptative basée sur les composants principaux à l’aide des thèmes ?
 
-#### 1. Cloner un thème {#download-a-theme-core-components}
+#### &#x200B;1. Cloner un thème {#download-a-theme-core-components}
 
 Pour cloner un thème pour les formulaires adaptatifs basés sur les composants principaux, choisissez l’un des thèmes suivants :
 
@@ -125,7 +125,7 @@ Pour cloner un thème, effectuez les instructions suivantes :
    Une fois la commande exécutée, une copie locale du thème est disponible sur votre ordinateur dans le dossier `aem-forms-theme-canvas`.
 
 
-#### 2. Définir le nom d’un thème {#set-name-of-theme}
+#### &#x200B;2. Définir le nom d’un thème {#set-name-of-theme}
 
 1. Ouvrez le dossier du thème dans votre IDE. Par exemple, pour ouvrir le dossier `aem-forms-theme-canvas` dans l’éditeur de code Visual Studio.
 
@@ -169,9 +169,9 @@ Pour cloner un thème, effectuez les instructions suivantes :
 * Il est recommandé de mettre à jour le `version` de thème dans `Package.json` fichier et `Package-lock.json` fichier pour refléter précisément les modifications et améliorations apportées à votre thème au fil du temps.
 * Pour obtenir des informations importantes sur l’utilisation, les instructions d’installation et d’autres détails pertinents, il est recommandé de mettre à jour le nom du thème dans le fichier `ReadMe`.
 
-#### 3. Personnaliser un thème {#customize-the-theme}
+#### &#x200B;3. Personnaliser un thème {#customize-the-theme}
 
-Vous pouvez personnaliser des composants individuels ou apporter des modifications au niveau du thème à l’aide des variables globales d’un thème. Toute modification apportée aux variables globales a un impact sur tous les composants individuels. Par exemple, vous pouvez utiliser des variables globales pour modifier la couleur de bordure de tous les composants d’un formulaire adaptatif et une couleur de remplissage lumineuse pour définir CTA (appel à l’action) à l’aide du composant Bouton :
+Vous pouvez personnaliser des composants individuels ou apporter des modifications au niveau du thème à l’aide des variables globales d’un thème. Toute modification apportée aux variables globales a un impact sur tous les composants individuels. Par exemple, vous pouvez utiliser des variables globales pour modifier la couleur de bordure de tous les composants d’un formulaire adaptatif et une couleur de remplissage claire pour définir CTA (Call to action) à l’aide du composant Bouton :
 
 * [Définir des styles de niveau de thème](#theme-customization-global-level)
 
@@ -211,9 +211,9 @@ Vous pouvez également modifier la police, la couleur, la taille et d’autres p
    >
    > Lorsqu’un style est défini au niveau du thème et du composant, le style défini au niveau du composant est prioritaire.
 
-#### 4. Tester un thème personnalisé {#test-the-theme}
+#### &#x200B;4. Tester un thème personnalisé {#test-the-theme}
 
-Pour prévisualiser et tester les modifications dans l’environnement local et personnaliser le thème en fonction des exigences des différents composants AEM, procédez comme suit :
+Pour prévisualiser et tester les modifications dans l’environnement local et personnaliser le thème en fonction des exigences des différents composants d’AEM, procédez comme suit :
 
 * 4.1 [Configuration d’un environnement local pour les tests](#rename-env-file-theme-folder)
 * 4.2 [Tester le thème à l’aide de l’environnement local](#start-a-local-proxy-server)
@@ -273,7 +273,7 @@ Après avoir suivi les exemples de mise en forme d’un formulaire adaptatif (co
 
 La personnalisation d’un thème permet de concevoir les styles personnalisés du Forms adaptatif basé sur les composants principaux en fonction des exigences de l’entreprise.
 
-###### Tester le thème pour les formulaires hébergés dans un environnement de Cloud Service
+###### Tester le thème pour les formulaires hébergés dans un environnement Cloud Service
 
 Vous pouvez également tester le thème du formulaire adaptatif hébergé sur votre instance AEM Forms as a Cloud Service. Pour configurer et définir l’environnement local pour le test des thèmes avec le Forms adaptatif hébergé sur l’instance cloud, procédez comme suit :
 
@@ -311,9 +311,9 @@ Vous pouvez également tester le thème du formulaire adaptatif hébergé sur vo
 
 Vous pouvez prévisualiser le formulaire adaptatif avec les dernières modifications. Une fois que vous êtes satisfait des modifications apportées à un dossier de thème, déployez le thème dans votre environnement AEM Cloud Service à l’aide du pipeline front-end.
 
-#### 5. Déploiement d’un thème {#deploy-the-theme}
+#### &#x200B;5. Déploiement d’un thème {#deploy-the-theme}
 
-Pour déployer le thème dans votre environnement de Cloud Service à l’aide du pipeline front-end :
+Pour déployer le thème dans votre environnement Cloud Service à l’aide du pipeline front-end :
 
 * 5.1 [Créer un référentiel pour le thème](#create-a-new-theme-repo)
 * 5.2 [Envoyez les modifications au référentiel](#committing-the-changes)
@@ -321,7 +321,7 @@ Pour déployer le thème dans votre environnement de Cloud Service à l’aide d
 
 ##### 5.1 Création d’un référentiel pour le thème{#create-a-new-theme-repo}
 
-Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
+Vous avez besoin d’un référentiel pour déployer le thème. Connectez-vous à votre référentiel [AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) et ajoutez un nouveau référentiel pour votre thème.
 
 1. Créez un référentiel pour un thème en cliquant sur le **[!UICONTROL Référentiels]** > **[!UICONTROL Ajouter un référentiel]**.
 
@@ -373,11 +373,11 @@ Désormais, envoyez les modifications au référentiel de thèmes de votre Cloud
 
 ##### 5.3 Exécution du pipeline front-end {#run-a-frontend-pipeline}
 
-Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=fr). Pour déployer le thème, effectuez les étapes suivantes :
+Le thème est déployé à l’aide du [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Pour déployer le thème, effectuez les étapes suivantes :
 
 1. Connectez-vous à votre référentiel AEM Cloud Manager.
 1. Cliquez sur le bouton **[!UICONTROL Ajouter]** dans la section **[!UICONTROL Pipelines]**.
-1. Sélectionnez **[!UICONTROL Ajouter un pipeline hors production]** ou **[!UICONTROL Ajouter un pipeline de production]** en fonction de l’environnement du Cloud Service. Par exemple, ici, l’option **[!UICONTROL Ajouter un pipeline de production]** est sélectionnée.
+1. Sélectionnez **[!UICONTROL Ajouter un pipeline hors production]** ou **[!UICONTROL Ajouter un pipeline de production]** en fonction de l’environnement Cloud Service. Par exemple, ici, l’option **[!UICONTROL Ajouter un pipeline de production]** est sélectionnée.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un pipeline de production]** qui fait partie des étapes **[!UICONTROL Configuration]**, indiquez le nom de votre pipeline. Par exemple, le nom du pipeline est `customcanvastheme`.
 1. Cliquez sur **[!UICONTROL Continuer]**.
 1. Sélectionnez les options **[!UICONTROL Déploiement ciblé]** > **[!UICONTROL Code front-end]** dans
@@ -387,7 +387,7 @@ les étapes de **[!UICONTROL Source Code]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
    ![créer un pipeline front-end](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
-   Une fois la configuration du pipeline terminée, la carte d’appel à l’action est mise à jour.
+   Une fois la configuration du pipeline terminée, la carte call-to-action est mise à jour.
 
 1. Cliquez avec le bouton droit sur le pipeline créé.
 1. Cliquez sur **[!UICONTROL Exécuter]** .
@@ -441,12 +441,7 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr)
-
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -458,4 +453,3 @@ Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle 
 * [Génération d’un document d’enregistrement pour le Forms adaptatif (composants principaux)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Création d’un Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
 * [Exemples de modèles de thèmes et de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr)
-* [Activer les composants principaux des formulaires adaptatifs AEM Forms as a Cloud Service et dans l’environnement de développement local](/help/forms/enable-adaptive-forms-core-components.md)
