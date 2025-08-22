@@ -6,13 +6,14 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
+
 
 # Forms Experience Builder - Bibliothèque d’invites
 
@@ -140,7 +141,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **Utilisation :** lorsque vous devez créer de nouveaux formulaires ou modifier des formulaires existants.
 
-**Utilisation :** choisissez l’une des deux approches suivantes : Créer en partant de zéro ou Importer et convertir (voir [Guide de prise en main](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Utilisation :** choisissez l’une des deux approches suivantes : Créer en partant de zéro ou Importer et convertir (voir [Guide de prise en main](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
 **Exemple d’invite - Création simple de formulaire :**
 
@@ -517,7 +518,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **Utilisation :** lorsque vous disposez de formulaires, documents ou conceptions existants à transformer en formulaires AEM modernes.
 
-**Utilisation :** chargez votre fichier source et décrivez les exigences de conversion (voir [ Guide d’importation](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Utilisation :** chargez votre fichier source et décrivez les exigences de conversion (voir [ Guide d’importation](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Exemple de prompt : conversion de formulaire PDF :**
 

@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1113'
 ht-degree: 3%
 
 ---
@@ -175,11 +175,9 @@ Le créateur d’expérience Forms suit une approche simple et conversationnelle
 Transformez vos formulaires existants en puissantes expériences digitales grâce à la conversion optimisée par l’IA.
 
 
-### 📄 de PDF au numérique
+#### Transformation de PDF forms en Forms numérique
 
-**Des documents statiques aux formulaires interactifs**
-
-Transformez PDF forms avec plus de 50 champs en expériences digitales dynamiques grâce à des calculs automatisés et à une conception réactive aux appareils mobiles.
+Transformez PDF forms avec plusieurs champs en expériences digitales dynamiques grâce à des calculs automatisés et à une conception réactive aux appareils mobiles.
 
 **Principaux avantages :**
 
@@ -188,17 +186,10 @@ Transformez PDF forms avec plus de 50 champs en expériences digitales dynamique
 - Optimisation de la disposition réactive pour les appareils mobiles
 - Réduction de 95 % des erreurs de traitement
 
-**Idéal pour :** formulaires fiscaux, applications gouvernementales, documents commerciaux complexes
 
-**Gain de temps :** 2 à 3 heures → 15 minutes par formulaire
+#### Modernisation des formulaires XFA hérités
 
-
-
-### Modernisation de XFA héritée de 🏛️
-
-**Insufflez une nouvelle vie dans des formes dépassées**
-
-Convertissez des applications XFA complexes en assistants modernes à plusieurs étapes avec validation en temps réel et conformité en matière d’accessibilité.
+Vous pouvez convertir des applications XFA complexes en assistants modernes à plusieurs étapes offrant une validation en temps réel et la conformité en matière d’accessibilité.
 
 **Principaux avantages :**
 
@@ -207,37 +198,21 @@ Convertissez des applications XFA complexes en assistants modernes à plusieurs 
 - Intégration de bases de données gouvernementales
 - Conformité complète à WCAG 2.1 en matière d’accessibilité
 
-**Idéal pour** autorisations gouvernementales, applications d’entreprise, formulaires de conformité
 
-**Impact :** achèvement 70 % plus rapide, 90 % moins d’erreurs
+#### Convertir une capture d’écran d’un formulaire en formulaire numérique
 
-
-
-
-### 📱 une capture d’écran au format numérique
-
-**Transformez n’importe quel formulaire papier en une expérience digitale**
-
-Chargez une image de n’importe quel formulaire papier et observez les champs d’extraction de l’IA, optimisez la mise en page et créez des formulaires numériques prêts pour l’intégration.
+Vous pouvez transformer n’importe quel formulaire papier en expérience digitale. AEM Forms optimise automatiquement la disposition et crée des formulaires numériques prêts à l’intégration à partir d’une capture d’écran.
 
 **Principaux avantages :**
 
-- Détection intelligente du type de champ (précision supérieure ou égale à 99 %)
+- Détection intelligente du type de champ
 - Génération de mises en page réactives optimisée
 - Validation améliorée au-delà du papier original
 - Architecture prête pour l’intégration
 
-**Idéal pour :** applications papier, formulaires manuscrits, documents hérités
+#### Importer et améliorer des formulaires web existants
 
-**Temps de traitement :** 2 heures → 5 minutes par formulaire
-
-
-
-### Amélioration d’🌐 HTML
-
-**Optimiser vos formulaires web existants**
-
-Ajoutez une validation avancée, une logique conditionnelle et un envoi multicanal aux formulaires HTML de base sans interrompre les fonctionnalités existantes.
+Vous pouvez importer votre formulaire web existant et ajouter une validation avancée, une logique conditionnelle et un envoi multicanal à vos formulaires sans interrompre les fonctionnalités existantes.
 
 **Principaux avantages :**
 
@@ -245,11 +220,6 @@ Ajoutez une validation avancée, une logique conditionnelle et un envoi multican
 - Comportements de champ conditionnel et workflows
 - Options d’envoi multicanal
 - Analyses intégrées et suivi des performances
-
-**Idéal pour :** formulaires de contact, formulaires d’enregistrement, applications web simples
-
-**Amélioration de la conversion :** +40 % avec une expérience utilisateur améliorée
-
 
 ## Forms Experience Builder par rapport au développement traditionnel
 
