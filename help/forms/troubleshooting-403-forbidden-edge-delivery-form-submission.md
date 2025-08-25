@@ -3,13 +3,13 @@ title: Résolution des erreurs 403 interdites lors de l’envoi du formulaire Ed
 description: Découvrez comment diagnostiquer et résoudre les erreurs 403 Interdit lors de l’envoi de formulaires de Edge Delivery Services au service de publication AEM. Ce guide couvre les causes courantes, notamment les problèmes de CORS, de règles Dispatcher et de filtre de référent.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ Configurez le filtrage des référents pour autoriser vos domaines de site Edge 
 
 >[!IMPORTANT]
 >
->**Pour les configurations sans objet :** vous devez ajouter chaque domaine de site individuellement au tableau de `allow.hosts`. L’utilisation de modèles d’expression régulière uniquement peut ne pas suffire pour tous les scénarios. Incluez des domaines spécifiques et des modèles d’expression régulière pour une couverture complète.
+>**Pour les configurations sans réponse :** vous devez ajouter chaque domaine de site individuellement au tableau `allow.hosts`. L’utilisation de modèles d’expression régulière uniquement peut ne pas suffire pour tous les scénarios. Incluez des domaines spécifiques et des modèles d’expression régulière pour une couverture complète.
 
 >[!WARNING]
 >
@@ -269,7 +269,7 @@ Avec les architectures Helix-5 et Repoless, suivez ces instructions :
 ## Rubriques connexes
 
 - [Configuration des actions Envoyer](/help/forms/configuring-submit-actions.md)
-- [Service de soumission Forms](/help/forms/forms-submission-service.md)
+- [Service d’envoi de formulaires](/help/forms/forms-submission-service.md)
 - [Vue d’ensemble d’Edge Delivery Services](/help/edge/overview.md)
 
 

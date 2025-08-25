@@ -4,9 +4,9 @@ description: Découvrez comment configurer des actions d’envoi dans AEM Forms
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '810'
 ht-degree: 13%
 
 ---
@@ -98,27 +98,100 @@ Envoyez directement les données de formulaire à votre instance de publication 
 
 ### Configuration requise
 
-#### &#x200B;1. Configuration AEM Dispatcher
+#### &#x200B;1. Mettre à jour l’URL de l’instance AEM dans Edge Delivery
 
-Configurez Dispatcher sur votre instance de publication AEM :
+Mettez à jour l’URL de l’instance AEM Cloud Service dans le fichier `constant.js` du bloc `form` sous `submitBaseUrl`. Vous pouvez configurer l’URL en fonction de votre environnement :
 
-- **Autoriser les chemins d’envoi** : modifiez les `filters.any` pour autoriser les requêtes POST à `/adobe/forms/af/submit/...`
-- **Pas de redirection** : assurez-vous que les règles Dispatcher ne redirigent pas les chemins d’envoi de formulaire
+**Pour l’instance Cloud Service**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**Pour le développement local**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. Filtre référent OSGi
 
-Dans la console OSGi AEM (`/system/console/configMgr`) :
+Configurez le filtrage des référents pour autoriser vos domaines de site Edge Delivery spécifiques :
 
-1. Recherchez « Apache Sling Referrer Filter »
-2. Ajouter votre domaine Edge Delivery à la liste « Hôtes autorisés »
-3. Inclure des domaines comme `https://your-eds-domain.hlx.page`
+1. Créez ou mettez à jour le fichier de configuration OSGi : `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### &#x200B;3. Règles de redirection CDN
+2. Ajoutez la configuration suivante à vos domaines de site spécifiques :
 
-Configurez votre réseau CDN Edge Delivery pour acheminer les envois :
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- Acheminer les requêtes de `/adobe/forms/af/submit/...` vers votre instance de publication AEM
-- L’implémentation varie selon le fournisseur de réseau CDN (Fastly, Akamai, Cloudflare)
+3. Déploiement de la configuration via Cloud Manager
+
+Pour obtenir une configuration détaillée du filtre Référent OSGi, reportez-vous au Guide [Filtre Référent](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+
+#### &#x200B;3. Problèmes de partage des ressources entre origines multiples (CORS)
+
+Configurez les paramètres CORS dans AEM pour autoriser les requêtes provenant de vos domaines de site Edge Delivery spécifiques :
+
+**Localhost du développeur**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Edge Delivery Sites : ajoutez chaque domaine de site individuellement**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**Domaines Franklin hérités (s’ils sont toujours en cours d’utilisation)**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>Remplacez `main--abc--adobe.aem.live` et `main--abc1--adobe.aem.live` par vos domaines de site réels. Chaque site hébergé à partir du même référentiel nécessite une entrée de configuration CORS distincte.
+
+Pour la configuration CORS détaillée, reportez-vous au [Guide de configuration CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+Pour activer la norme CORS pour votre environnement de développement local, reportez-vous à l’article [Présentation du partage de ressources entre origines multiples (CORS)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. Configuration du formulaire
 
@@ -128,55 +201,54 @@ Configurez votre réseau CDN Edge Delivery pour acheminer les envois :
 4. Publication du formulaire sur un site Edge Delivery
 
 +++
+<!--
++++ Form Embedding
 
-+++ Incorporation de formulaire (facultatif)
+Embed forms created in one location into different web pages or sites.
 
-Incorporez les formulaires créés à un emplacement dans différentes pages web ou sites.
+### Use Cases
 
-### Cas d’utilisation
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- Réutilisation de formulaires standard sur plusieurs pages de destination
-- Inclure des formulaires spécialisés dans le contenu créé à l’aide de documents
-- Tenir à jour un seul formulaire pour plusieurs projets EDS
+### CORS Configuration
 
-### Configuration CORS
+Configure Cross-Origin Resource Sharing on the form source:
 
-Configurez le partage de ressources entre origines multiples (CORS) sur la source de formulaire :
-
-1. **Ajoutez des en-têtes CORS** pour former des réponses source :
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **Exemple de configuration** :
+2. **Example Configuration**:
 
-       &#x200B;# Configuration pour le site hébergeant le formulaire
-       headers:
-       - chemin : /forms/**
-       custom:
-       Access-Control-Allow-Origin : https://host-domain.com
-       Access-Control-Allow-Methods : GET, OPTIONS
-   
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-### Étapes d’incorporation
+### Embedding Steps
 
-1. **Créer et publier un formulaire**
-   - Créer un formulaire à l’aide de la création de documents ou de l’éditeur universel
-   - Configuration de la méthode d’envoi (FSS ou publication AEM)
-   - Publier sur une URL autonome
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-2. **Configurer CORS**
-   - Configurer des en-têtes CORS sur le site source du formulaire
-   - Autoriser le domaine de la page hôte à récupérer le formulaire
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-3. **Incorporer dans la page hôte**
-   - Ajout d’un bloc d’incorporation de formulaire à la page hôte
-   - Pointer le bloc vers l’URL du formulaire publiée
-   - Publier la page hôte
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-![Architecture de formulaire incorporée](/help/forms/assets/eds-embedded-form.png)
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Problèmes courants
 
