@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Il est directement incorporé à AEM et accessible à partir de l’interface ut
 
 La vidéo de 3 minutes et 39 secondes qui suit présente une présentation détaillée de l’assistant d’IA dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470357?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Accéder à l’assistant AI dans AEM{#get-access}
 
@@ -42,19 +43,17 @@ Pour accorder aux utilisateurs l’accès à l’assistant AI dans AEM, votre ad
 * **Accès à l’assistant AI** - Autorisation d’utiliser l’assistant AI dans AEM pour acquérir des connaissances sur les produits, ce qui permet aux utilisateurs de poser des questions relatives aux produits dans la conversation de l’assistant AI. Cette autorisation doit être activée.
 * **Accès à l’assistance** - Les utilisateurs doivent également être autorisés à ouvrir des tickets d’assistance, ce qui nécessite le rôle **Administrateur de l’assistance**.
 
-Les requêtes des assistants d’IA dans AEM sont authentifiées via les services Adobe Identity Management (IMS). Pour plus d’informations, consultez la présentation des services Adobe Identity Management [&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
-
->[!NOTE]
-> 
->Les organisations clientes doivent accepter des conditions juridiques supplémentaires pour activer l’assistant AI. Pour plus d’informations, contactez votre représentant de compte Adobe.
+Les requêtes des assistants d’IA dans AEM sont authentifiées via les services Adobe Identity Management (IMS). Pour plus d’informations, consultez la présentation des services Adobe Identity Management [](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Pour accéder à l’assistant AI dans AEM, procédez comme suit**
 
-1. [Les clients doivent signer l’avenant IA dédiée à la génération avec Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+1. Les clients doivent avoir un accord supplémentaire en place pour accéder à la plupart des fonctionnalités d’IA et d’agent dans Adobe Experience Manager. Contactez votre représentant Adobe pour plus d’informations.
 
-   Le Rider GenAI est un accord légal entre un client et Adobe, qui est nécessaire pour utiliser la plupart des fonctionnalités d’IA et d’agence. Pour en savoir plus, contactez l’assistance clientèle d’Adobe.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. L’administrateur AEM configure l’assistant AI à utiliser dans son organisation. Voir [Configuration de l’assistant AI dans AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. L’administrateur AEM configure l’assistant AI à utiliser dans son organisation. Voir [Configuration de l’assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +92,7 @@ La connaissance des produits englobe les concepts et les sujets dérivés de la 
 | Apprentissage par points | <ul><li>Qu’est-ce que l’éditeur universel ?</li><li>Comment créer un programme dans Cloud Manager ?</li></ul> |
 | Ouvrir la découverte | <ul><li>Comment utiliser l’éditeur universel ?</li><li>Existe-t-il un moyen de copier du contenu d’un environnement à un autre ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi ne puis-je pas accéder à l’éditeur universel ?</li><li>Pourquoi mon pipeline échoue-t-il ?</li></ul> |
-| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs &#x200B;**<br>**exemples** |
+| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs **<br>**exemples** |
 | Création automatisée de tickets d’assistance capturant l’historique et le contexte de la conversation de l’assistant AI | <ul><li>Créez un ticket d’assistance pour moi.</li></ul> |
 | Récupération du statut du ticket d’assistance | <ul><li>Montrez-moi tous les tickets d&#39;assistance que j&#39;ai ouverts.</li><li>Me montrer le statut du ticket « E----------- »</li></ul> |
 
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ Vous pouvez réinitialiser l’assistant d’IA dans AEM et démarrer une nouvel
 
    ![Icône Assistant IA de la barre d’outils](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. Dans la zone de texte du panneau **Assistant AI** située en bas, saisissez votre question, puis appuyez sur `Enter` ou cliquez sur ![Icône Envoyer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Dans la zone de texte du panneau **Assistant AI** située en bas, saisissez votre question ou votre invite, puis appuyez sur `Enter` ou cliquez sur ![Icône Envoyer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   >[!NOTE]
+   >
+   >Les données personnelles ne doivent pas être incluses dans vos données, car elles ne sont pas nécessaires pour utiliser cet outil.
 
    ![Zone de texte au bas du panneau de l’assistant AI](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ L’assistant AI d’AEM comprend une fonction de capacité de découverte pour 
    *Panneau affichant les catégories d’invite dans l’assistant AI.*
 
 1. Sélectionnez une catégorie pour afficher la liste des invites associées.
-1. Sélectionnez une invite pour afficher des exemples des types de questions auxquelles l’assistant AEM AI peut répondre.
+1. Sélectionnez une invite pour afficher des exemples des types de questions auxquelles l’assistant AI peut répondre.
 
 1. Pour masquer le panneau de détection d’invite, cliquez de nouveau sur ![Icône Apprendre](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 

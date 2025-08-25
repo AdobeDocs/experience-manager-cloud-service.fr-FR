@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 38%
+source-wordcount: '1693'
+ht-degree: 37%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 38%
 # Navigation dans l’interface utilisateur de Cloud Manager {#navigation}
 
 Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
+
 
 L’interface d’utilisation de Cloud Manager est composée principalement de deux interfaces graphiques :
 
@@ -26,6 +27,12 @@ L’interface d’utilisation de Cloud Manager est composée principalement de 
 >
 >Consultez également le [parcours de documentation d’intégration](/help/journey-onboarding/overview.md) pour un aperçu complet de la mise en service d’AEM as a Cloud Service à l’aide de Cloud Manager.
 
+
+## Assistant AI dans AEM
+
+Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
+
 ## Console Mes programmes {#my-programs-console}
 
 Lorsque vous vous connectez à Cloud Manager sur la page [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et que vous sélectionnez l’organisation appropriée, vous accédez à la console **Mes programmes**.
@@ -35,7 +42,7 @@ Lorsque vous vous connectez à Cloud Manager sur la page [my.cloudmanager.adobe
 La console Mes programmes fournit une vue d’ensemble de tous les programmes auxquels vous avez accès dans l’organisation sélectionnée. Elle est constituée de plusieurs éléments.
 
 1. Des [Barres d’outils](#toolbars-my-programs-toolbars) pour la sélection de l’organisation, les alertes et les paramètres de compte.
-1. Des onglets qui permettent de changer l’affichage actuel de vos programmes.
+1. Onglets permettant de changer l’affichage actuel de vos programmes.
    * Vue **Accueil** (par défaut) qui sélectionne la vue **Mes programmes** avec une vue d’ensemble de tous les programmes.
    * **Licence** qui accède au [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md).
    * Notez que les onglets sont fermés par défaut et peuvent être affichés à l’aide de l’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) dans l’en-tête [Cloud Manager](#cloud-manager-header).
@@ -58,8 +65,8 @@ La première est l’en-tête de Cloud Manager, qui est présent en permanence 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
 1. Cliquez sur ![Afficher l&#39;icône de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (afficher ou masquer le menu latéral) pour accéder à divers onglets qui peuvent vous conduire à des parties spécifiques d&#39;un programme individuel. Vous pouvez également basculer entre la console [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
-1. Cliquez sur le bouton Adobe Cloud Manager pour revenir à la console Mes programmes de Cloud Manager, où que vous soyez dans Cloud Manager.
-1. Cliquez sur **Commentaires** pour fournir des commentaires à l’Adobe sur Cloud Manager.
+1. Cliquer sur le bouton Adobe Cloud Manager vous ramène à la console Mes programmes de Cloud Manager, où que vous soyez dans Cloud Manager.
+1. Cliquez sur **Commentaires** pour fournir des commentaires à Adobe sur Cloud Manager.
 1. Cliquez sur le sélecteur d’organisation pour afficher l’organisation dans laquelle vous êtes actuellement connecté (dans cet exemple, Foundation Internal). Cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
 1. Cliquez sur ![Icône Applications](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (sélecteur de solutions) pour accéder rapidement à d’autres solutions Experience Cloud.
 1. Cliquez sur ![icône d’aide](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) pour accéder rapidement aux ressources d’apprentissage et d’assistance.
@@ -78,7 +85,7 @@ La barre d’outils des programmes fournit des liens pour basculer entre les pro
 
 ### Statistiques et appels à l’action {#statistics}
 
-La section statistiques et appels à l’action fournit des données agrégées pour votre organisation. Par exemple, si vous avez correctement configuré vos programmes, les statistiques de vos activités au cours des 90 derniers jours peuvent s’afficher, notamment :
+La section Statistiques et call-to-action fournit des données agrégées pour votre organisation. Par exemple, si vous avez correctement configuré vos programmes, les statistiques de vos activités au cours des 90 derniers jours peuvent s’afficher, notamment :
 
 * Le nombre de [déploiements](/help/implementing/cloud-manager/deploy-code.md)
 * Le nombre de [problèmes relatifs à la qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) identifiés
@@ -118,8 +125,8 @@ Une carte (ou une ligne dans un tableau) représente chaque programme, fournissa
 * Image associée au programme, si elle est configurée. L’image ci-dessus est « WKND ».
 * Nom attribué au programme. L’image ci-dessus montre « SecurBank Sample » comme nom du programme.
 * Type de service :
-   * **Cloud Experience Manager** — pour les programmes AEM as a Cloud Service
-   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager Cloud** — pour les programmes AEM as a Cloud Service
+   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) :
    * Sandbox
    * Production
@@ -146,7 +153,7 @@ L’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Mor
 * Accédez à une ![icône de données](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [environnement](/help/implementing/cloud-manager/manage-environments.md) du programme
 * Ouvrez l’![icône de présentation du programme](/help/implementing/cloud-manager/assets/program-overview.svg) [présentation du programme](#program-overview)
 * ![icône Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [modifier le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -233,7 +240,7 @@ Dans le coin supérieur gauche de l&#39;en-tête [Cloud Manager](#cloud-manager-
 
 La section Appel à l’action fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les étapes suivantes données et un rappel d’une date de mise en production, [définie lors de la création du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
-![Appel à l&#39;action pour un nouveau programme](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+![Call-to-action pour un nouveau programme](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 Pour un programme actif, vous pouvez voir le statut de votre dernier déploiement accompagné de liens pour obtenir plus de détails pour démarrer un nouveau déploiement.
 
