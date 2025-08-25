@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 43e2abd67486b5c4b93f4022b57533d269d60c92
+source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
 workflow-type: tm+mt
-source-wordcount: '6541'
+source-wordcount: '6560'
 ht-degree: 96%
 
 ---
@@ -950,6 +950,10 @@ ht-degree: 96%
       + [Prise en charge des scripts pour les formulaires HTML5](/help/forms/scripting-support.md)
       + [Jeu de formulaires dans AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Communication interactive {#interactive-communocation}
+      + [Présentation de l’éditeur de communication interactive](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+      + [Création d’une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Présentation des communications interactives](/help/forms/introduction-to-interactive-communication.md)
       + [Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
       + [Générer une sortie AFP à l’aide de l’API AEM Forms](/help/forms/document-generation-afp-api.md)
