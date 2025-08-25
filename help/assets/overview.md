@@ -57,11 +57,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/get-started">
    <img alt="Utiliser l’application de bureau AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/get-started">
       <strong>Utiliser l’application de bureau AEM</strong>
       </a>
    </div>
@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -270,11 +270,11 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la r
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -520,7 +520,7 @@ Vous pouvez intégrer le sélecteur de ressources à une application Adobe ou no
 
 * **Intégration à Adobe Workfront** : [!DNL Adobe Workfront] est une application de gestion du travail qui vous permet de gérer l’ensemble du cycle de vie du travail en un seul endroit. L’intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
-  Adobe offre la possibilité d’[intégrer [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] de manière native](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Adobe offre la possibilité d’[intégrer [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] de manière native](https://experienceleague.adobe.com/fr/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Intégration à Figma** : AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepteurs et conceptrices d’accéder aux ressources directement stockées dans AEM Assets depuis l’interface utilisateur de Figma. Vous pouvez placer le contenu géré dans AEM Assets dans la zone de travail Figma, puis enregistrer le contenu nouveau ou modifié dans le référentiel AEM Assets. Pour accéder au connecteur AEM Assets disponible sur la page Communauté Figma, cliquez [ici](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -599,11 +599,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
