@@ -1,6 +1,6 @@
 ---
-title: Comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service et l’environnement de développement local ?
-description: Découvrez comment activer les composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service.
+title: Vérification et activation des composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service
+description: Découvrez comment vérifier si les composants principaux de Forms adaptatifs sont activés et comment les activer si nécessaire sur AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -8,34 +8,66 @@ feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: 3c1931d67e69d155e777c8761fe2bbbd21461ddf
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 81%
+source-wordcount: '1235'
+ht-degree: 54%
 
 ---
 
-# Activer les composants principaux des formulaires adaptatifs {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Vérification et activation des composants principaux de Forms adaptatif {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-L’activation des composants principaux de Forms adaptatif sur AEM Forms as a Cloud Service Forms vous permet de commencer à créer, publier et diffuser des Forms adaptatifs et découplés basés sur les composants principaux à l’aide de vos instances AEM Forms Cloud Service sur plusieurs canaux. L’environnement des composants principaux des formulaires adaptatifs doit être activé pour utiliser les formulaires adaptatifs découplés.
+Les composants principaux de Forms adaptatif et le Forms adaptatif découplé sont déjà activés pour la plupart des clients AEM Forms as a Cloud Service. Forms Vous pouvez ainsi créer, publier et diffuser des Forms adaptatifs et découplés basés sur les composants principaux à l’aide de vos instances AEM Forms Cloud Service sur plusieurs canaux.
 
-## Considérations
+## Vérifier si les composants principaux de Forms adaptatif sont activés {#check-if-enabled}
 
-* Lorsque vous créez un programme AEM Forms as a Cloud Service, [les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés sont déjà activés pour votre environnement](#are-adaptive-forms-core-components-enabled-for-my-environment).
+Avant de suivre toute étape d’activation, vérifiez si les composants principaux de Forms adaptatif sont déjà activés pour votre environnement :
 
-* Si vous disposez d’un programme Forms as a Cloud Service plus ancien où les composants principaux [ne sont pas activés](#enable-components), vous pouvez [ajouter des dépendances de composants principaux de formulaires adaptatifs](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) dans votre référentiel AEM as a Cloud Service, puis déployer le référentiel dans vos environnements de service cloud pour activer les formulaires adaptatifs découplés.
+### Pour les nouveaux programmes AEM Forms as a Cloud Service
 
-* Si votre environnement de service cloud existant propose une option permettant de [créer des formulaires adaptatifs basés sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés sont déjà activés pour votre environnement. Vous pouvez utiliser les formulaires adaptatifs basés sur les composants principaux en tant que formulaires découplés pour les canaux mobiles et web, les applications natives et les services qui nécessitent une représentation découplée de formulaires adaptatifs.
+Lorsque vous créez un nouveau programme AEM Forms as a Cloud Service, les composants principaux de Forms adaptatif et le Forms adaptatif découplé sont déjà activés pour votre environnement.
 
-## Activer les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés {#enable-headless-forms}
+### Pour les environnements Cloud Service existants
 
-Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les composants principaux des formulaires adaptatifs et les formulaires adaptatifs découplés pour un environnement AEM Forms as a Cloud Service
+Si votre environnement Cloud Service existant offre la possibilité de [créer un Forms adaptatif basé sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux de Forms adaptatif et le Forms adaptatif découplé sont déjà activés pour votre environnement.
 
+### Vérifier en vérifiant votre référentiel
+
+Pour confirmer que les composants principaux de Forms adaptatif sont activés pour votre environnement :
+
+1. Clonez votre référentiel AEM Forms as a Cloud Service.
+
+1. Ouvrez le fichier `[AEM Repository Folder]/all/pom.xml` du référentiel Git AEM Forms Cloud Service.
+
+1. Recherchez les dépendances suivantes :
+
+   * core-forms-components-af-core
+   * core-forms-components-core
+   * core-forms-components-apps
+   * core-forms-components-af-apps
+   * core-forms-components-examples-apps
+   * core-forms-components-examples-content
+
+   ![Localisez l’artefact core-forms-components-af-core dans all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png).
+
+   Si ces dépendances existent, les composants principaux de Forms adaptatif sont activés pour votre environnement.
+
+## Lorsqu’une activation manuelle est nécessaire {#when-manual-enablement-needed}
+
+Ce n’est que si vous disposez d’un programme Forms as a Cloud Service plus ancien dans lequel les composants principaux ne sont pas activés (ce que confirme la case ci-dessus) que vous devez ajouter manuellement les dépendances des composants principaux de Forms adaptatif à votre référentiel AEM as a Cloud Service et déployer le référentiel dans vos environnements Cloud Service.
+
++++ Étapes d’activation manuelle 
+
+>[!WARNING]
+>
+>Suivez ces étapes uniquement si la vérification ci-dessus confirme que les composants principaux de Forms adaptatif ne sont PAS activés pour votre environnement.
+
+Pour activer les composants principaux de Forms adaptatif et le Forms adaptatif découplé pour un environnement AEM Forms as a Cloud Service, procédez comme suit, dans l’ordre indiqué :
 
 ![Activer les composants principaux et les formulaires adaptatifs découplés](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
@@ -321,6 +353,7 @@ Déployez le code mis à jour dans vos environnements de développement local et
 
    Une fois l’exécution du pipeline terminée, les composants principaux des formulaires adaptatifs sont activés pour l’environnement correspondant. En outre, un modèle de formulaire adaptatif (composants principaux) et un thème Canvas 3.0 sont ajoutés à votre environnement Forms as a Cloud Service, ce qui vous permet de personnaliser et de créer des composants principaux basés sur les formulaires adaptatifs.
 
++++
 
 ## Questions fréquentes {#faq}
 
@@ -337,26 +370,14 @@ Lorsque les composants principaux des formulaires adaptatifs sont activés pour 
 * [Créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux](/help/forms/using-themes-in-core-components.md).
 * [Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr).
 
-### Les composants principaux des formulaires adaptatifs sont-ils activés pour mon environnement ? {#enable-components}
+### Comment savoir si je dois activer manuellement les composants principaux de Forms adaptatif ? {#manual-enablement-needed-faq}
 
-Pour vérifier que les composants principaux des formulaires adaptatifs sont activés pour votre environnement :
+La plupart des clients ont déjà activé les composants principaux de Forms adaptatif. Vous ne devez les activer manuellement que si :
 
-1. [Clonez votre référentiel AEM Forms as a Cloud Service](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. Un ancien programme Forms as a Cloud Service a été créé avant l’inclusion automatique des composants principaux
+1. La vérification effectuée dans la section [Vérifier si les composants principaux de Forms adaptatif sont activés](#check-if-enabled) confirme que les dépendances requises sont manquantes dans votre référentiel
 
-1. Ouvrez le fichier `[AEM Repository Folder]/all/pom.xml` du référentiel Git AEM Forms Cloud Service.
-
-1. Recherchez les dépendances suivantes :
-
-   * core-forms-components-af-core
-   * core-forms-components-core
-   * core-forms-components-apps
-   * core-forms-components-af-apps
-   * core-forms-components-examples-apps
-   * core-forms-components-examples-content
-
-   ![Localisez l’artefact core-forms-components-af-core dans all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png).
-
-   Si les dépendances existent, les composants principaux des formulaires adaptatifs sont activés pour votre environnement.
+Si vous n’êtes pas sûr, suivez les étapes de vérification de la section [Vérifier si les composants principaux de Forms adaptatif sont activés](#check-if-enabled) ci-dessus.
 
 ### Pourquoi le rendu des formulaires basés sur les composants principaux échoue-t-il dans le projet ?
 
