@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 139c3d2f071a18336a5196bed0e33874b6eb5ce6
+source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
 workflow-type: tm+mt
 source-wordcount: '6549'
 ht-degree: 96%
@@ -949,8 +949,8 @@ ht-degree: 96%
       + [Débogage des formulaires HTML5](/help/forms/debug.md)
       + [Prise en charge des scripts pour les formulaires HTML5](/help/forms/scripting-support.md)
       + [Jeu de formulaires dans AEM Forms](/help/forms/formset-in-aem-forms.md)
-   + Communication interactive {#interactive-communocation}
-      + [Présentation de l’éditeur de communication interactive](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+   + Communication interactive {#interactive-communication}
+      + [Présentation de l’éditeur de communication interactive](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [Création d’une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
