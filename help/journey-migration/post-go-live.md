@@ -17,7 +17,7 @@ ht-degree: 63%
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
 >abstract="Examinez les bonnes pratiques pour le développement et la gestion continus des journaux. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Accéder aux journaux et les gérer"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Accéder aux journaux et les gérer"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
 Ce parcours est la dernière partie. Vous apprendrez ainsi à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurer le nettoyage des fichiers temporaires, passer en revue les bonnes pratiques de développement continu et gérer les journaux.
