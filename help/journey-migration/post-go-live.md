@@ -4,23 +4,27 @@ description: Découvrez comment surveiller les problèmes et améliorer les perf
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 64%
+source-wordcount: '417'
+ht-degree: 60%
 
 ---
 
 # Post-activation {#post-go-live}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Résolution des incidents liés à AEM"
->abstract="Examinez les bonnes pratiques pour le développement et la gestion continus des journaux. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accéder aux journaux et les gérer"
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
-Ce parcours est la dernière partie. Vous apprenez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurez le nettoyage des fichiers temporaires, passez en revue les bonnes pratiques de développement continu et gérez les journaux.
+-->
+
+Ce parcours est la dernière partie. Vous apprendrez ainsi à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurer le nettoyage des fichiers temporaires, passer en revue les bonnes pratiques de développement continu et gérer les journaux.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -42,18 +46,18 @@ Pour en savoir plus sur les outils de développement, consultez la section [Impl
 
 ## CRXDE Lite {#crxde-lite}
 
-En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements intermédiaire ou de production.
+En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
 
 >[!IMPORTANT]
 >L’écriture dans des référentiels non modifiables, tels que `/libs` et `/apps` au moment de l’exécution, entraîne des erreurs. En outre, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Voir [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur la manière de développer votre application AEM à l’aide de CRXDE Lite.
+Consultez [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur le développement de votre application AEM à l’aide de CRXDE Lite.
 
 ## Gestion des journaux {#managing-logs}
 
 Les utilisateurs et utilisatrices peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer à l’aide de l’interface utilisateur ou de l’API par le biais de Cloud Manager.
+Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou l’API via le Cloud Manager.
 
 ## Contacter l’assistance {#contacting-support}
 
@@ -71,9 +75,9 @@ Une fois la migration terminée, documentez les connaissances acquises au cours 
 
 * Qu’est-ce qui a bien fonctionné et qu’est-ce qui n’a pas fonctionné ?
 * Quels ont été les principaux problèmes ?
-* Recommendations en cas de migration ultérieure.
+* Recommandations en cas de migration ultérieure.
 
-Partagez ces leçons post-migration avec les parties prenantes et les équipes de votre entreprise.
+Partagez ces apprentissages post-migration avec les parties prenantes et les équipes de votre entreprise.
 
 ## Serait-ce la fin de notre voyage ?  {#journey-ends}
 
