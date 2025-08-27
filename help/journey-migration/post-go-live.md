@@ -4,25 +4,21 @@ description: Découvrez comment surveiller les problèmes et améliorer les perf
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 60%
+source-wordcount: '458'
+ht-degree: 63%
 
 ---
 
 # Post-activation {#post-go-live}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
-
--->
+>title="Résolution des incidents liés à AEM"
+>abstract="Examinez les bonnes pratiques pour le développement et la gestion continus des journaux. Découvrez des outils tels que Developer Console et CRXDE Lite pour vous aider à résoudre les problèmes liés à AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Accéder aux journaux et les gérer"
+>additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
 Ce parcours est la dernière partie. Vous apprendrez ainsi à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Assurer le nettoyage des fichiers temporaires, passer en revue les bonnes pratiques de développement continu et gérer les journaux.
 
