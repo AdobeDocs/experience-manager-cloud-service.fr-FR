@@ -1,41 +1,41 @@
 ---
-title: Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe
-description: Découvrez comment lier un site Edge Delivery à un référentiel Git privé ou d’entreprise.
+title: Configurer un site Edge Delivery pour utiliser un référentiel Git externe
+description: Découvrez comment lier un site Edge Delivery à un référentiel Git privé ou d’entreprise.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
-workflow-type: tm+mt
+exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
+source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
+# Configurer un site Edge Delivery pour utiliser un référentiel Git externe
 
-# Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe
+Vous pouvez configurer votre site Edge Delivery pour extraire du code de tout référentiel Git privé déjà intégré à Cloud Manager.
 
-Vous pouvez configurer votre site Edge Delivery pour extraire du code de tout référentiel Git privé déjà intégré à Cloud Manager.
+**Fournisseurs Git pris en charge**
 
-**Fournisseurs Git Pris En Charge**
-
-| Niveau de prise en charge | Fournisseurs | Remarques |
+| Niveau de prise en charge | Fournisseurs | Notes |
 | --- | --- | --- |
-| Disponibilité générale | · GitHub Enterprise (version auto-hébergée)<br>· Bitbucket (version cloud)<br>· GitLab (version cloud et auto-hébergée) | Se connecter sans demandes d’activation |
-| programme Alpha | Azure DevOps (version cloud) | [Demander l’accès](mailto:grp-cloudmanager_byog@adobe.com) |
-| Programme Beta | Référentiel hébergé par Adobe (créé dans Cloud Manager) | [Demander l’accès](mailto:grp-cloudmanager_byog@adobe.com) |
+| Disponibilité générale | • GitHub Enterprise (version auto-hébergée)<br>• Bitbucket (version cloud)<br>• GitLab (version cloud et auto-hébergée) | Se connecter sans demandes d’activation |
+| Programme Alpha | Azure DevOps (version cloud) | [Demander l’accès](mailto:grp-cloudmanager_byog@adobe.com) |
+| Programme bêta | Référentiel hébergé par Adobe (créé dans Cloud Manager) | [Demander l’accès](mailto:grp-cloudmanager_byog@adobe.com) |
 
-**Pour configurer un site Edge Delivery afin d’utiliser un référentiel Git externe, procédez comme suit**
+**Pour configurer un site Edge Delivery afin d’utiliser un référentiel Git externe, procédez comme suit :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez le programme approprié.
-1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme avec Edge Delivery Services configuré, dans lequel vous souhaitez configurer un site Edge Delivery pour utiliser un référentiel Git externe.
-1. Dans le rail de gauche, sous l’en-tête **Programme**, cliquez sur **![Icône Aperçu](/help/implementing/cloud-manager/edge-delivery/assets/overview.svg) Aperçu**.
+1. Dans la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme avec Edge Delivery Services configuré, là où vous souhaitez configurer un site Edge Delivery afin d’utiliser un référentiel Git externe.
+1. Dans le rail de gauche, sous l’en-tête **Programme**, cliquez sur **![Icône Vue d’ensemble](/help/implementing/cloud-manager/edge-delivery/assets/overview.svg) Vue d’ensemble**.
 1. Sur la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Edge Delivery**.
-1. Dans le tableau **Sites Edge Delivery**, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez configurer le site pour utiliser un référentiel externe, puis cliquez sur **Apporter votre propre référentiel Git**.
-1. Dans la boîte de dialogue Apporter votre propre référentiel Git, dans la liste déroulante **Nom du référentiel**, choisissez un référentiel Git avec `READY` statut, puis cliquez sur **Confirmer**.
+1. Dans le tableau **Sites Edge Delivery**, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous souhaitez configurer le site pour utiliser un référentiel externe, puis cliquez sur **Apporter votre propre référentiel Git**.
+1. Dans la boîte de dialogue Apporter votre propre référentiel Git, dans la liste déroulante **Nom du référentiel**, choisissez un référentiel Git avec le statut `READY`, puis cliquez sur **Confirmer**.
 
-   Cloud Manager renvoie un jeton secret à usage unique. Si vous reconfigurez le site, Cloud Manager génère un nouveau jeton secret.
+   Cloud Manager renvoie un jeton secret à usage unique. Si vous reconfigurez le site, Cloud Manager génère un nouveau jeton secret.
 
-1. Copiez le jeton et ajoutez-le à la configuration du site dans **helix-admin**, comme décrit dans le guide [BYO Git](https://www.aem.live/developer/byo-git).
-1. De retour dans Cloud Manager, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous venez de configurer le site pour utiliser un référentiel externe, puis cliquez sur **Code de synchronisation**.
+1. Copiez le jeton et ajoutez-le à la configuration du site dans **helix-admin**, comme décrit dans le [guide BYO Git](https://www.aem.live/developer/byo-git).
+1. De retour dans Cloud Manager, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) à la fin d’une ligne dont vous venez de configurer le site pour utiliser un référentiel externe, puis cliquez sur **Synchroniser le code**.
 1. Sélectionnez la branche à synchroniser, puis cliquez sur **Synchroniser**.
 
-Chaque validation sur une branche déclenche désormais une synchronisation automatique. Utilisez à nouveau le **code de synchronisation** chaque fois qu’une synchronisation manuelle complète est requise.
+Chaque validation sur une branche déclenche désormais une synchronisation automatique. Réutilisez **Synchroniser le code** chaque fois qu’une synchronisation manuelle complète est requise.

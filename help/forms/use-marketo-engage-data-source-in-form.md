@@ -1,14 +1,14 @@
 ---
-title: Comment configurer les données Marketo Engage pour le Forms adaptatif ?
-description: Découvrez comment utiliser le schéma Marketo Engage dans Adaptive Forms.
-keywords: Utilisation de la source de données Marketo Engage dans le Forms adaptatif. Comment connecter une source de données d’instance Marketo à un formulaire ? , Connecter un formulaire à Marketo.
+title: Comment configurer les données de Marketo Engage pour les formulaires adaptatifs ?
+description: Découvrez comment utiliser le schéma Marketo Engage dans les formulaires adaptatifs.
+keywords: Utilisation de la source de données Marketo Engage dans les formulaires adaptatifs. Comment connecter une source de données d’instance Marketo à un formulaire ? , Connecter un formulaire à Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -38,13 +38,13 @@ Condition préalable pour utiliser la source de données Marketo Engage avec le
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
-<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants éditeur universel/de base, reportez-vous à l’article </span>.
 
 >[!BEGINTABS]
 
 >[!TAB Composant de base]
 
-Pour configurer un formulaire adaptatif en fonction des composants de base avec la source de données Marketo Engage, procédez comme suit :
+Pour configurer un formulaire adaptatif avec la source de données Marketo Engage, procédez comme suit :
 
 1. Connectez-vous à votre instance de création [!DNL Experience Manager Forms].
 1. Ouvrez le formulaire adaptatif pour le modifier et accédez à la section **[!UICONTROL Modèle de données]** des propriétés du conteneur de formulaires adaptatifs et sélectionnez un modèle de formulaire en tant que **Connecteur**.
@@ -65,7 +65,7 @@ Le formulaire adaptatif est maintenant configuré avec la source de données de 
 
 >[!TAB Composant principal]
 
-Pour configurer un formulaire adaptatif basé sur les composants principaux avec la source de données Marketo Engage, procédez comme suit :
+Pour configurer un formulaire adaptatif fondé sur les composants principaux et utilisant la source de données Marketo Engage, procédez comme suit :
 
 1. Connectez-vous à votre instance de création [!DNL Experience Manager Forms].
 
@@ -91,10 +91,10 @@ Le formulaire adaptatif est maintenant configuré avec la source de données de 
 
 >[!TAB Éditeur universel]
 
-Pour configurer un formulaire adaptatif créé dans l’éditeur universel avec la source de données Marketo Engage, procédez comme suit :
+Pour configurer un formulaire adaptatif créé dans l’éditeur universel avec la source de données Marketo Engage, procédez comme suit :
 
 1. Ouvrez les propriétés du formulaire pour les modifier.
-1. Sélectionnez le **[!UICONTROL modèle de formulaire]**.
+1. Sélectionnez le **[!UICONTROL Modèle de formulaire]**.
 1. Sélectionnez **Connecteur** dans le **[!UICONTROL Modèle de formulaire]**.
 1. Après avoir sélectionné le **[!UICONTROL Connecteur]**, vous pouvez sélectionner la configuration cloud.
 
@@ -102,11 +102,11 @@ Pour configurer un formulaire adaptatif créé dans l’éditeur universel avec 
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-Selon la configuration Marketo Engage sélectionnée, les éléments de formulaire sont affichés dans l’onglet **[!UICONTROL Source de données]** de l’explorateur de contenu dans le panneau Propriétés. Vous pouvez faire glisser et déposer ces éléments pour créer votre formulaire adaptatif.
+Selon la configuration Marketo Engage sélectionnée, les éléments de formulaire sont affichés dans l’onglet **[!UICONTROL Source de données]** de l’Explorateur de contenu dans le panneau Propriétés. Vous pouvez faire glisser et déposer ces éléments pour créer votre formulaire adaptatif.
 
 ![Source de données Marketo](/help/forms/assets/marketo-engage-data-source-ue.png)
 
-Le formulaire est maintenant configuré avec la source de données de l’instance Marketo Engage connectée. Maintenant, configurez-le pour envoyer des données à Adobe Marketo Engage.
+Le formulaire est maintenant configuré avec la source de données de l’instance Marketo Engage connectée. Maintenant, configurez-le pour envoyer des données à Adobe Marketo Engage.
 
 >[!ENDTABS]
 

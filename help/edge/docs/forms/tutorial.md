@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
 
    1. Accédez au référentiel GitHub que vous avez créé plus tôt à l’aide du modèle standard AEM Forms.
    1. Ajoutez le fichier `fstab.yaml` dans le dossier racine.
-   1. Ajoutez la référence avec le chemin d’accès au dossier que vous avez partagé avec l’utilisateur AEM (forms@adobe.com).
+   1. Ajoutez la référence au chemin d’accès au dossier que vous avez partagé avec l’utilisateur ou l’utilisatrice AEM (forms@adobe.com).
 
       ![Exemple de contenu sur Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Pour copier l’exemple de contenu dans votre propre dossier de contenu et point
       Pour plus d’informations sur la gestion des fichiers avec Microsoft SharePoint, consultez [Utilisation d’Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Validez le fichier `fsatb.yaml`, une fois que vous avez ajouté la référence et que tout semble correct. Si vous rencontrez des problèmes de génération, consultez [Résolution des problèmes de génération dans GitHub](#troubleshooting-github-build-issues).
+   1. Validez le fichier `fsatb.yaml` une fois que vous avez mis à jour la référence et que tout semble correct. Si vous rencontrez des problèmes de génération, consultez [Résolution des problèmes de génération dans GitHub](#troubleshooting-github-build-issues).
 
       ![Validation du fichier fsatab.yaml mis à jour](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -241,7 +241,7 @@ Pour être rapidement capable d’opérer avec un environnement de développemen
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonez votre projet GitHub : clonez le référentiel de votre projet à partir de GitHub à l’aide de la commande suivante, en remplaçant `<owner>` par le propriétaire du référentiel et `<repo>` par le nom du référentiel :
+1. Clonez votre projet GitHub : clonez votre référentiel de projet à partir de GitHub à l’aide de la commande suivante, en remplaçant `<owner>` par la personne propriétaire du référentiel et `<repo>` par le nom du référentiel :
 
    ```
    git clone https://github.com/<owner>/<repo>

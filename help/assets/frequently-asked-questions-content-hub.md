@@ -3,9 +3,9 @@ title: Questions fréquentes sur Content Hub
 description: Obtenez des réponses à certaines des questions les plus fréquentes (FAQ) pour Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Il existe quelques configurations de la manière dont les utilisateurs et utilis
    >
    >La personne affectée aux profils de produits Express et Assets dans deux Admin Consoles doit avoir la même adresse e-mail et utiliser un compte professionnel **d’entreprise ou d’établissement scolaire**, et non **personnel**. La configuration idéale consiste à configurer les deux Admin Consoles en tant que **Federated ID** avec une relation de confiance entre elles, de sorte que l’utilisateur ou l’utilisatrice bénéficie d’une expérience d’authentification unique fluide. Certaines formules Express (par exemple, Express Équipe) ne prennent pas en charge Federated ID/l’authentification unique.
 
-Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[!UICONTROL # /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Outre les droits appropriés sur les produits, l’intégration d’Adobe Express à Content Hub nécessite que la personne affectée dispose au moins des autorisations [!UICONTROL Peut modifier] sur l’environnement de création Assets qui alimente Content Hub, au moins sur la hiérarchie de dossiers **[#UICONTROL /content/dam/hydrated-assets/]**, où les utilisateurs et utilisatrices Content Hub peuvent enregistrer le contenu créé à l’aide d’Express. Consultez [Gestion des autorisations](/help/security/touch-ui-principal-view.md) dans la vue Administration (interface d’utilisation tactile) ou [Gestion des autorisations dans la vue simplifiée Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Puis-je configurer Content Hub de sorte que les directives de marque de mon entreprise s’affichent sous la forme d’un lien sur la page d’accueil ? {#content-hub-setup-brand-guidelines}
 
@@ -135,28 +135,28 @@ Le tableau ci-dessous présente les principales différences entre les deux sol
 |  | Recherche sémantique | ✓ | − |
 |  | Recherche localisée et affichage des métadonnées | ✓ | − |
 
-## Comment sélectionner un référentiel pour afficher les ressources uniquement pour l’environnement sélectionné ? {#select-repository-multiple-environments}
+## Comment sélectionner un référentiel pour afficher les ressources uniquement pour l’environnement sélectionné ? {#select-repository-multiple-environments}
 
-Lorsque vous avez configuré Content Hub pour la production et d’autres environnements inférieurs pour le même programme, vous pouvez sélectionner le référentiel et afficher les ressources pour l’environnement sélectionné. Procédez comme suit :
+Lorsque vous avez configuré le hub de contenus pour la production et d’autres environnements inférieurs pour le même programme, vous pouvez sélectionner le référentiel et afficher les ressources pour l’environnement sélectionné. Procédez comme suit :
 
-1. Cliquez sur l’icône utilisateur dans le volet de droite.
+1. Cliquez sur l’icône Utilisateur dans le volet de droite.
 
 1. Dans la section **[!UICONTROL Paramètres du produit]**, sélectionnez **[!UICONTROL Sélectionner le référentiel]**.
 
 1. Sélectionnez le référentiel dans le menu déroulant **[!UICONTROL Référentiel]**, puis cliquez sur **[!UICONTROL OK]** pour confirmer.
 
-   Content Hub affiche désormais les ressources pour l’environnement sélectionné.
+   Le hub de contenus affiche désormais les ressources pour l’environnement sélectionné.
 
-## Comment Content Hub peut-il afficher l’aperçu des miniatures pour le type de fichier .ZIP ? {#thumbnail-preview-zip-file}
+## Comment le hub de contenus peut-il afficher l’aperçu des miniatures pour le type de fichier .ZIP ? {#thumbnail-preview-zip-file}
 
-Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans Content Hub, vous pouvez ajouter un rendu nommé `cq5dam.preview.jpg` ou `cq5dam.preview.png` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service.
+Pour fournir un aperçu des miniatures pour des types de fichiers tels que .ZIP dans le hub de contenus, vous pouvez ajouter un rendu nommé `cq5dam.preview.jpg` ou `cq5dam.preview.png` à la racine du chemin d’accès où le fichier .ZIP est disponible dans l’environnement de création AEM as a Cloud Service.
 
-Image ajoutée en tant que rendu :
+Image ajoutée en tant que rendu :
 
 * Peut être au format JPG, JPEG ou PNG.
 
-* Doit être inférieur à 50 Mo
+* Doit être inférieure à 50 Mo.
 
-Lorsqu’elle est disponible, Content Hub affiche l’image comme miniature d’aperçu pour le fichier .ZIP sur Content Hub.
+Lorsqu’elle est disponible, le hub de contenus affiche l’image comme miniature d’aperçu pour le fichier .ZIP dans le hub de contenus.
 
 

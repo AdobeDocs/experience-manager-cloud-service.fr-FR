@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Prenons pour exemple la création d’un composant personnalisé appelé **range
 
 Avant de pouvoir être utilisé, un composant personnalisé doit être enregistré afin que l’éditeur universel le reconnaisse comme une option disponible. Pour ce faire, utilisez une définition de composant qui inclut un identifiant unique, des propriétés par défaut et la structure du composant. Pour rendre le composant personnalisé disponible pour la création de formulaires, procédez comme suit :
 
-1. **Ajouter un nouveau dossier et de nouveaux fichiers**
+1. **Ajout d’un dossier et de fichiers**
 
-   Ajoutez de nouveaux dossiers et fichiers pour votre nouveau composant personnalisé dans votre projet AEM.
+   Ajoutez un dossier et des fichiers pour votre nouveau composant personnalisé dans votre projet AEM.
 
    1. Ouvrez votre projet AEM et accédez à `../blocks/form/components/`.
    1. Ajoutez un dossier pour votre composant personnalisé sur `../blocks/form/components/<component_name>`. Dans cet exemple, nous allons créer un dossier nommé `range`.
@@ -72,8 +72,8 @@ Avant de pouvoir être utilisé, un composant personnalisé doit être enregistr
    - **id** : identifiant unique du composant.
    - **fieldType** : Forms prend en charge différents **fieldType** pour capturer des types spécifiques d’entrée utilisateur. Le [fieldType pris en charge se trouve dans la section Octet supplémentaire](#supported-fieldtypes).
    - **resourceType** : chaque composant personnalisé est associé à un type de ressource en fonction de son fieldType. Le [resourceType pris en charge se trouve dans la section Octet supplémentaire](#supported-resourcetype).
-   - **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
-   - **fd:viewType** : il représente le nom du composant personnalisé. Il s’agit de l’identifiant unique du composant. Vous devez créer une vue personnalisée pour le composant.
+   - **jcr:title** : similaire à un titre, mais il est stocké dans la structure du composant.
+   - **fd:viewType** : représente le nom du composant personnalisé. Il s’agit de l’identifiant unique du composant. Vous devez créer une vue personnalisée pour le composant.
 
 Le fichier `_range.json`, après avoir ajouté la définition du composant, est le suivant :
 
@@ -301,7 +301,7 @@ Pour vous assurer que le composant personnalisé apparaît dans la liste des com
 
 ### &#x200B;4. Enregistrer votre composant personnalisé
 
-Pour permettre au bloc de formulaire de reconnaître le composant personnalisé et de charger ses propriétés définies dans le modèle de composant lors de la création de formulaire, ajoutez la valeur de `fd:viewType` de la définition de composant au fichier `mappings.js`.
+Pour permettre au bloc de formulaire de reconnaître le composant personnalisé et de charger ses propriétés définies dans le modèle de composant lors de la création de formulaire, ajoutez la valeur `fd:viewType` de la définition de composant au fichier `mappings.js`.
 
 Pour enregistrer un composant :
 
