@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c273b78fe698ef0cdc4bf3999a0479d0509c7ad4
+source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
-source-wordcount: '6552'
-ht-degree: 96%
+source-wordcount: '6557'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 96%
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [Notes de mise à jour de la version 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [Notes de mise à jour de la version 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [Notes de mise à jour de la version 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [Notes de mise à jour de la version 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
@@ -790,20 +791,20 @@ ht-degree: 96%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
          + [Conception d’un schéma XML pour un formulaire adaptatif](/help/forms/adaptive-form-xml-schema-form-model.md)
-      + Définition de l’action Envoyer pour un formulaire adaptatif {#set-submit-action}
-         + [Actions Envoyer prises en charge par Adaptive Forms](/help/forms/aem-forms-submit-action.md)
-         + [Configuration de l’action Envoyer pour un formulaire adaptatif en fonction des composants de base](/help/forms/configuring-submit-actions.md)
-         + [Configuration de l’action Envoyer pour un formulaire adaptatif basé sur les composants principaux](/help/forms/configure-submit-actions-core-components.md)
-         + [Configuration de l’action d’envoi pour Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+      + Définir l’action Envoyer pour un formulaire adaptatif {#set-submit-action}
+         + [Actions d’envoi prises en charge par les formulaires adaptatifs](/help/forms/aem-forms-submit-action.md)
+         + [Configurer une action d’envoi pour un formulaire adaptatif en fonction des composants de base](/help/forms/configuring-submit-actions.md)
+         + [Configurer une action d’envoi pour un formulaire adaptatif en fonction des composants principaux](/help/forms/configure-submit-actions-core-components.md)
+         + [Configurer une action d’envoi pour les formulaires Edge Delivery Services](/help/forms/configure-submit-action-eds-forms.md)
          + [Configurer l’action Envoyer un e-mail pour un formulaire adaptatif](/help/forms/configure-submit-action-send-email.md)
-         + [Intégration d’un formulaire adaptatif au modèle de données de formulaire](/help/forms/integrate-adaptive-form-with-fdm.md)
+         + [Intégrer un formulaire adaptatif au modèle de données de formulaire](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Connexion d’un formulaire adaptatif à Microsoft® SharePoint{#connect-to-sharepoint}
             + [Connexion d’un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Envoyer à la bibliothèque de documents SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
             + [Envoyer à la liste SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
             + [Configurer un site SharePoint avec accès limité à l’aide du champ d’application de l’autorisation](/help/forms/configure-sharepoint-site-limited-access.md)
-         + [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Envoyer un formulaire adaptatif à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Envoyer un formulaire adaptatif à Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Configurer l’action Envoyer vers le point d’entrée REST pour les formulaires adaptatifs](/help/forms/configure-submit-action-restpoint.md)
          + [Envoyer un formulaire adaptatif à Microsoft](/help/forms/configure-submit-action-onedrive.md)
@@ -831,7 +832,7 @@ ht-degree: 96%
             + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
-            + [Utiliser Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Utiliser Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Utiliser hCAPTCHA dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Utiliser Turnstile Captcha dans les composants principaux d’un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Ajout d’un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -1037,7 +1038,7 @@ ht-degree: 96%
    + Storefront tiers {#thrid-party-storefront}
       + [Présentation](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF Storefront {#cif-storefront}
-      + [Présentation de CIF](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [Vue d’ensemble de CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Modifications notables apportées à AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
       + Parcours de Commerce {#journeys}
          + Parcours de création de contenu {#author}
@@ -1085,19 +1086,19 @@ ht-degree: 96%
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
       + Création WYSIWYG {#universal-editor}
          + [Éditeur universel d’Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Naviguer dans l’interface de l’éditeur universel pour AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Prise en main de Edge Delivery Services pour AEM Forms à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Création et publication de Forms adaptatif avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Création d’un Forms réactif avec l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Personnaliser le thème et le style d’un Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Éditeur de règles pour Dynamic Forms dans l’éditeur universel](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Comment créer des fragments de formulaire pour la création basée sur WYSIWYG](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Comment configurer une action Envoyer pour un formulaire adaptatif ?](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Naviguer dans l’interface de l’éditeur universel pour AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Prise en main d’Edge Delivery Services pour AEM Forms à l’aide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Créer et publier des formulaires adaptatifs avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Créer des formulaires réactifs avec l’éditeur universel](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Personnaliser le thème et le style pour Edge Delivery Services pour AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Éditeur de règles pour les formulaires dynamiques dans l’éditeur universel](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Création de fragments de formulaire pour la création WYSIWYG](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Configuration d’une action d’envoi pour un formulaire adaptatif](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Comment configurer une page de redirection ou un message de remerciement](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [Ajout de Google reCAPTCHA à Forms dans l’éditeur universel](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Comment intégrer un modèle de données de formulaire (FDM) pour un formulaire dans l’éditeur universel ?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Comment préremplir des champs de formulaire adaptatif](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Publication de Forms adaptatif avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Ajouter Google reCAPTCHA aux formulaires dans l’éditeur universel](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Intégration d’un modèle de données de formulaire (FDM) pour un formulaire dans l’éditeur universel](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Préremplissage des champs d’un formulaire adaptatif](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [Publier des formulaires adaptatifs avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants personnalisés pour un formulaire EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Résolution des erreurs 403 lors de l’envoi de formulaires dans Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Création basée sur des documents {#getting-started-edge-delivery-services-forms}
@@ -1119,8 +1120,8 @@ ht-degree: 96%
          + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des performances du formulaire : guides de télémétrie opérationnelle](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guide d’envoi de formulaire : utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
-      + [Configurer l’envoi pour les formulaires Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [Configurer l’envoi pour les formulaires Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Bonnes pratiques relatives à la création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
@@ -1251,7 +1252,7 @@ ht-degree: 96%
          + [Introduction aux pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurer un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurer un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Configuration d’un pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [Configurer un pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Déployer votre code](/help/implementing/cloud-manager/deploy-code.md)
@@ -1275,7 +1276,7 @@ ht-degree: 96%
          + [Présentation d’Edge Delivery Services dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Ajouter un site Edge Delivery à Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Créer votre premier site Edge Delivery en un seul clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [Configurer un site Edge Delivery pour utiliser un référentiel Git externe](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Configurer la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Configurer votre source de contenu](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Gérer les sites Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

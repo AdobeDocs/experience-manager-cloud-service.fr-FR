@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '823'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -80,14 +80,14 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 1 | Rejoindre le canal de collaboration de produit | Cliquer sur **Envoyer la demande maintenant** envoie une demande à Adobe pour créer un canal pour votre entreprise. Si le canal existe déjà, vous faites l’objet d’un transfert vers le canal de votre entreprise. |
 | 2 | Remplir les conditions préalables | Voir [Afficher le tutoriel de prise en main](https://www.aem.live/developer/tutorial). |
 | 3 | Ajouter un site Edge Delivery OU <br>Créer un site maintenant | Voir [Ajout d’un site Edge Delivery](#eds-add-site).<br>Consultez [Créer un site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
-| 4 | Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe | Voir [ Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
+| 4 | Configurer un site Edge Delivery pour utiliser un référentiel Git externe | Consultez la section [Configuration d’un site Edge Delivery pour utiliser un référentiel Git externe](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
 | 5 | Ajouter un domaine | Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 6 | Ajouter le certificat SSL | Voir [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 7 | Configurer le réseau CDN de votre site Edge Delivery | Consultez [Ajouter un mappage de domaine](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
+| 7 | Configurer le CDN de votre site Edge Delivery | Consultez [Ajouter un mappage de domaine](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

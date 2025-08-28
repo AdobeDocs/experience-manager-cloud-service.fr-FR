@@ -1,5 +1,5 @@
 ---
-title: Personnaliser le thème et le style d’un Edge Delivery Services pour AEM Forms
+title: Personnaliser le thème et le style pour Edge Delivery Services pour AEM Forms
 description: Personnalisez efficacement le thème et le style des formulaires AEM Forms diffusés via Edge Delivery Services, afin d’offrir une expérience client cohérente et conforme à la marque.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,27 +7,27 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Personnaliser l’apparence de vos formulaires
 
-Le style des formulaires Edge Delivery Services pour AEM Forms nécessite une compréhension approfondie des propriétés personnalisées CSS, de l’architecture par blocs et des stratégies de ciblage spécifiques aux composants. Contrairement aux approches de style de formulaire traditionnelles, le bloc de Forms adaptatif implémente un système de jetons de conception systématique qui permet d’obtenir un thème cohérent tout en conservant les avantages en termes de performances et d’accessibilité de Edge Delivery Services.
+Le style des formulaires Edge Delivery Services pour AEM Forms nécessite une compréhension approfondie des propriétés personnalisées CSS, de l’architecture par blocs et des stratégies de ciblage spécifiques aux composants. Contrairement aux approches de style de formulaire traditionnelles, le bloc de formulaires adaptatifs implémente un système de jetons de conception systématique qui permet d’obtenir un thème cohérent tout en conservant les avantages en termes de performances et d’accessibilité d’Edge Delivery Services.
 
-L’architecture en blocs de Forms adaptative génère des structures HTML normalisées sur tous les composants de formulaire, ce qui crée des modèles prévisibles pour le ciblage et la personnalisation CSS. Cette cohérence permet aux développeurs de mettre en œuvre des systèmes de style complets qui s’adaptent à toutes les implémentations de formulaires complexes, tout en préservant les optimisations de performances par bloc qui rendent Edge Delivery Services exceptionnellement rapide.
+L’architecture en bloc de formulaires adaptatifs génère des structures HTML normalisées sur tous les composants de formulaire, ce qui crée des modèles prévisibles pour le ciblage et la personnalisation CSS. Cette cohérence permet aux développeurs et aux développeuses de mettre en œuvre des systèmes de style complets qui s’adaptent à toutes les implémentations de formulaires complexes, tout en préservant les optimisations de performances par bloc qui rendent Edge Delivery Services exceptionnellement rapide.
 
-Ce guide complet couvre les bases techniques du style de formulaire dans l’écosystème Edge Delivery Services, y compris les systèmes de propriétés personnalisées CSS, les modèles de structure HTML de composant et les techniques de style avancées. La documentation fournit à la fois une compréhension théorique et des conseils pratiques d’implémentation pour créer des expériences de formulaire de marque sophistiquées.
+Ce guide complet couvre les bases techniques du style de formulaire dans l’écosystème Edge Delivery Services, y compris les systèmes de propriétés personnalisées CSS, les modèles de structure HTML de composant et les techniques de style avancées. La documentation fournit à la fois une compréhension théorique et des conseils pratiques d’implémentation pour créer des expériences de formulaire de marque sophistiquées.
 
-## Ce que vous allez Principal
+## Ce que vous apprendrez :
 
-**Maîtrise des propriétés personnalisées CSS** : comprenez le système de variables complet qui contrôle l’aspect du formulaire, y compris les modèles de couleurs, les échelles de typographie, les systèmes d’espacement et les paramètres de disposition. Découvrez comment remplacer et étendre ces propriétés pour implémenter des thèmes de marque complets.
+**Maîtrise des propriétés personnalisées CSS** : comprenez le système de variables complet qui contrôle l’aspect du formulaire, y compris les modèles de couleurs, les échelles de typographie, les systèmes d’espacement et les paramètres de mise en page. Découvrez comment remplacer et étendre ces propriétés pour implémenter des thèmes de marque complets.
 
-**Compréhension de l’architecture des composants** : approfondissez vos connaissances des modèles de structure HTML utilisés par chaque type de composant de formulaire, ce qui permet un ciblage et une personnalisation CSS précis sans rompre avec les fonctionnalités ou les fonctionnalités d’accessibilité sous-jacentes.
+**Compréhension de l’architecture des composants** : approfondissez vos connaissances des modèles de structure HTML utilisés par chaque type de composant de formulaire, ce qui permet un ciblage et une personnalisation CSS précis sans rompre avec les fonctionnalités ou les fonctionnalités d’accessibilité sous-jacentes.
 
-**Techniques de style avancées** : implémentez des modèles de style sophistiqués, notamment un style basé sur l’état, une intégration de conception réactive et des stratégies de personnalisation optimisées pour les performances, qui conservent les caractéristiques de chargement rapide de Edge Delivery Services.
+**Techniques de style avancées** : implémentez des modèles de style sophistiqués, notamment un style basé sur l’état, une intégration de conception réactive et des stratégies de personnalisation optimisées pour les performances, qui conservent les caractéristiques de chargement rapide d’Edge Delivery Services.
 
-**Stratégies d’implémentation professionnelles** : découvrez les approches standard du secteur en matière de style de formulaire, y compris l’intégration du système de conception, l’architecture CSS maintenable et les techniques de dépannage pour les scénarios de style complexes.
+**Stratégies d’implémentation professionnelles** : découvrez les approches standard du secteur en matière de style de formulaire, y compris l’intégration du système de conception, l’architecture CSS gérable et les techniques de dépannage pour les scénarios de style complexes.
 
 ## Présentation des types de champs de formulaire
 
@@ -53,25 +53,25 @@ Il est essentiel de comprendre les [concepts de base de CSS](https://www.w3schoo
 
 ## Style de formulaire complet avec propriétés personnalisées CSS
 
-Le bloc de Forms adaptatif utilise une architecture CSS sophistiquée basée sur des propriétés personnalisées (variables CSS) qui permettent un thème systématique et un style cohérent sur tous les composants de formulaire. La compréhension de cette structure est essentielle pour une personnalisation et une valorisation de marque efficaces des formulaires.
+Le bloc de formulaires adaptatifs utilise une architecture CSS sophistiquée basée sur des propriétés personnalisées (variables CSS) qui permettent un thème systématique et un style cohérent sur tous les composants de formulaire. La compréhension de cette structure est essentielle pour une personnalisation et une valorisation de marque efficaces des formulaires.
 
-### Présentation de l’architecture de forms.css
+### Comprendre l’architecture de forms.css
 
-Les styles de formulaire par défaut se trouvent dans le référentiel de votre projet à l’adresse `/blocks/form/form.css` et suivent une approche structurée qui donne la priorité à la maintenabilité, la cohérence et la flexibilité de personnalisation. L’architecture se compose de plusieurs composants clés :
+Les styles de formulaire par défaut se trouvent dans le référentiel de votre projet à l’adresse `/blocks/form/form.css` et suivent une approche structurée qui privilégie la facilité de maintenance, la cohérence et la flexibilité de personnalisation. L’architecture se compose de plusieurs composants clés :
 
-**Custom Properties Foundation CSS** : le système de style est basé sur les propriétés personnalisées CSS définies au niveau du `:root`, fournissant un système de thème centralisé qui se répercute en cascade sur tous les composants de formulaire. Ces variables établissent des jetons de conception pour les couleurs, la typographie, l’espacement et les propriétés de disposition.
+**Fondation des propriétés personnalisées CSS** : le système de style est basé sur les propriétés personnalisées CSS définies au niveau du `:root`, fournissant un système de thème centralisé qui se répercute en cascade sur tous les composants de formulaire. Ces variables établissent des jetons de conception pour les couleurs, la typographie, l’espacement et les propriétés de mise en page.
 
-**Structure CSS basée sur les blocs** : Edge Delivery Services utilise une architecture basée sur les blocs, où la classe `.form` sert d’espace de noms principal pour tous les styles liés au formulaire, ce qui garantit une isolation de portée appropriée et empêche les conflits CSS avec d’autres composants de page.
+**Structure CSS basée sur les blocs** : Edge Delivery Services utilise une architecture basée sur les blocs, où la classe `.form` sert d’espace de noms principal pour tous les styles liés au formulaire, ce qui garantit une isolation de portée appropriée et empêche les conflits CSS avec d’autres composants de page.
 
-**Style spécifique aux composants** : les composants de formulaire individuels sont stylisés à l’aide de modèles d’enveloppe cohérents (`.{Type}-wrapper`) qui fournissent un ciblage prévisible pour différents types de champs tout en préservant l’intégrité globale du système de conception.
+**Style spécifique aux composants** : les composants de formulaire individuels sont stylisés à l’aide de modèles de wrapper cohérents (`.{Type}-wrapper`) qui fournissent un ciblage prévisible pour différents types de champs tout en préservant l’intégrité globale du système de conception.
 
 ### Référence et personnalisation des propriétés personnalisées CSS
 
-Le système de style de formulaire comprend plus de 50 propriétés personnalisées CSS qui contrôlent tous les aspects de l’aspect et du comportement du formulaire. La compréhension de ces propriétés permet une personnalisation complète tout en maintenant la cohérence de la conception.
+Le système de style de formulaire comprend plus de 50 propriétés personnalisées CSS qui contrôlent tous les aspects de l’aspect et du comportement du formulaire. La compréhension de ces propriétés permet une personnalisation complète tout en maintenant la cohérence de la conception.
 
 +++ Variables de couleur et de thème
 
-Le système de couleurs établit une base visuelle complète pour les formulaires grâce à des propriétés personnalisées soigneusement organisées :
+Le système de couleurs établit une base visuelle complète pour les formulaires grâce à des propriétés personnalisées soigneusement organisées :
 
 ```css
 :root {
@@ -94,7 +94,7 @@ Le système de couleurs établit une base visuelle complète pour les formulaire
 }
 ```
 
-**Exemple de personnalisation pratique** : pour implémenter un thème sombre pour vos formulaires, remplacez les variables de couleur de base :
+**Exemple pratique de personnalisation** : pour implémenter un thème sombre pour vos formulaires, remplacez les variables de couleur de base :
 
 ```css
 :root {
@@ -110,9 +110,9 @@ Cette modification unique se propage à tous les composants de formulaire, car l
 
 +++
 
-+++ Typographie et variables d’espacement
++++ Variables de typographie et d’espacement
 
-Les variables de typographie et d’espacement permettent de contrôler entièrement la présentation du texte et l’espacement des mises en page :
+Les variables de typographie et d’espacement permettent de contrôler entièrement la présentation du texte et l’espacement des mises en page :
 
 ```css
 :root {
@@ -135,7 +135,7 @@ Les variables de typographie et d’espacement permettent de contrôler entière
 }
 ```
 
-**Exemple de personnalisation pratique** : pour créer une disposition de formulaire plus compacte avec une typographie plus petite :
+**Exemple pratique de personnalisation** : pour créer une mise en page de formulaire plus compacte avec une typographie plus petite :
 
 ```css
 :root {
@@ -150,9 +150,9 @@ Les variables de typographie et d’espacement permettent de contrôler entière
 
 +++
 
-+++ Variables de disposition et de structure
++++ Variables de mise en page et de structure
 
-Les variables de disposition contrôlent les dimensions du formulaire, le comportement de la grille et la disposition des composants :
+Les variables de mise en page contrôlent les dimensions du formulaire, le comportement de la grille et la disposition des composants :
 
 ```css
 :root {
@@ -174,7 +174,7 @@ Les variables de disposition contrôlent les dimensions du formulaire, le compor
 }
 ```
 
-**Exemple de personnalisation pratique** : pour créer un formulaire de style carte avec une profondeur visuelle améliorée :
+**Exemple pratique de personnalisation** : pour créer un formulaire de style carte avec une profondeur visuelle améliorée :
 
 ```css
 :root {
@@ -199,11 +199,11 @@ Les variables de disposition contrôlent les dimensions du formulaire, le compor
 
 ### Modèles de style CSS et bonnes pratiques
 
-Le bloc de Forms adaptatif suit des modèles CSS spécifiques qui assurent un style maintenable, performant et cohérent à tous les composants.
+Le bloc de formulaires adaptatifs suit des modèles CSS spécifiques qui assurent un style facile à maintenir, performant et cohérent à tous les composants.
 
-+++ Modèles de style de Principal
++++ Modèles de style principaux
 
-**Conteneur de formulaires au niveau du bloc** : ciblez le conteneur de formulaires principal pour la mise en page globale et le style d’arrière-plan :
+**Conteneur de formulaires au niveau du bloc** : ciblez le conteneur de formulaires principal pour la mise en page globale et le style d’arrière-plan :
 
 ```css
 .form {
@@ -216,7 +216,7 @@ Le bloc de Forms adaptatif suit des modèles CSS spécifiques qui assurent un st
 }
 ```
 
-**Modèles de wrapper de composants** : ciblez des types de champs spécifiques à l’aide de classes de wrapper cohérentes :
+**Modèles de wrapper de composants** : ciblez des types de champs spécifiques à l’aide de classes de wrapper cohérentes :
 
 ```css
 /* Text input fields */
@@ -252,11 +252,11 @@ Le bloc de Forms adaptatif suit des modèles CSS spécifiques qui assurent un st
 }
 ```
 
-+++
++++ 
 
 +++ Modèles de personnalisation avancés
 
-**Ciblage spécifique au champ** : ciblez des champs individuels par nom pour des exigences de style uniques :
+**Ciblage spécifique au champ** : ciblez des champs individuels par nom pour des exigences de style uniques :
 
 ```css
 /* Style specific fields */
@@ -274,7 +274,7 @@ Le bloc de Forms adaptatif suit des modèles CSS spécifiques qui assurent un st
 }
 ```
 
-**Style basé sur l’état** : implémentez la validation et les états d’interaction :
+**Style basé sur l’état** : implémentez la validation et les états d’interaction :
 
 ```css
 /* Validation states */
@@ -368,10 +368,10 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 }
 ```
 
-- `.form .{Type}-wrapper` : cible l’élément wrapper du champ en fonction du type de champ. Par exemple, `.form .text-wrapper` cible tous les conteneurs de champs de texte.
-- `.form .{Type}-wrapper input` : cible les éléments d’entrée réels dans le wrapper. Il s’agit du modèle recommandé pour la mise en forme des entrées de formulaire.
-- `.form .field-{Name}` : cible les éléments en fonction du nom de champ spécifique. Par exemple, `.form .field-first-name` cible le conteneur de champs « Prénom ». Utilisez `.form .field-{Name} input` pour cibler spécifiquement l’élément d’entrée.
-- **Éviter** : `main .form form .{Type}-wrapper` - Cela crée une spécificité CSS inutile et est plus difficile à gérer.
+- `.form .{Type}-wrapper` : cible l’élément du champ de wrapper en fonction du type de champ. Par exemple, `.form .text-wrapper` cible tous les conteneurs de champs de texte.
+- `.form .{Type}-wrapper input` : cible les éléments d’entrée réels dans le wrapper. Il s’agit du modèle recommandé pour la mise en forme des entrées de formulaire.
+- `.form .field-{Name}` : cible les éléments en fonction du nom de champ spécifique. Par exemple, `.form .field-first-name` cible le conteneur de champ « Prénom ». Utilisez `.form .field-{Name} input` pour cibler spécifiquement l’élément d’entrée.
+- **Évitez** : `main .form form .{Type}-wrapper` - Cela crée une spécificité CSS inutile et est plus difficile à gérer.
 
 **Exemples de sélecteurs CSS pour les composants généraux**
 
@@ -763,7 +763,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 ```
 
 - L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-- L’élément de légende (`<legend>`) sert de titre au panneau avec le texte « Informations de connexion » et le libellé du champ de la classe. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+- L’élément de légende (`<legend>`) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
 - Dans le fieldset, plusieurs éléments.Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
 - Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
@@ -1158,26 +1158,26 @@ main .form .field-otp input {
 }
 ```
 
-Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe `field-otp`. La structure de formulaire Edge Delivery Services suit les conventions de blocs de Forms adaptatif, où les conteneurs sont marqués de classes spécifiques au champ comme « field-otp » pour les champs portant le nom « otp ».
+Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe `field-otp`. La structure de formulaire Edge Delivery Services suit les conventions de bloc de formulaires adaptatifs, où les conteneurs sont marqués de classes spécifiques au champ comme « field-otp » pour les champs portant le nom « otp ».
 
 
 ## Structure et implémentation des fichiers CSS
 
 ### **Implémentation de référence**
 
-La référence complète du style de formulaire est disponible dans le référentiel standard d’AEM Forms :
+La référence complète du style de formulaire est disponible dans le référentiel standard d’AEM Forms :
 
 ```
 https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
 ```
 
-Ce fichier sert d’implémentation canonique du système de propriétés personnalisées CSS et fournit la base de tous les styles de formulaire. Il comprend des définitions complètes de toutes les variables CSS, les modèles de style de composant et les implémentations de Responsive Design.
+Ce fichier sert d’implémentation canonique du système de propriétés personnalisées CSS et fournit la base de tous les styles de formulaire. Il comprend des définitions complètes de toutes les variables CSS, les modèles de style de composant et les implémentations en responsive design.
 
 +++
 
-+++ Intégration de projet
++++ Intégration du projet
 
-Dans votre projet Edge Delivery Services, implémentez le style de formulaire au moyen de cette approche structurée :
+Dans votre projet Edge Delivery Services, implémentez le style de formulaire au moyen de cette approche structurée :
 
 ```
 /blocks/form/form.css          // Core form block styles (copied from boilerplate)
@@ -1189,7 +1189,7 @@ Dans votre projet Edge Delivery Services, implémentez le style de formulaire au
 
 +++ Stratégie de mise en œuvre
 
-**Remplacements de propriétés personnalisées CSS** : remplacez les variables de formulaire dans vos styles globaux pour implémenter un thème spécifique à la marque :
+**Remplacements de propriétés personnalisées CSS** : remplacez les variables de formulaire dans vos styles globaux pour implémenter un thème spécifique à la marque :
 
 ```css
 /* In /styles/styles.css */
@@ -1201,8 +1201,8 @@ Dans votre projet Edge Delivery Services, implémentez le style de formulaire au
 }
 ```
 
-**Personnalisations spécifiques aux composants** :
-Ajoutez un style spécifique au composant tout en conservant le système de variables CSS :
+**Personnalisations spécifiques aux composants** :
+ajoutez un style spécifique au composant tout en conservant le système de variables CSS :
 
 ```css
 /* Enhanced component styling */
@@ -1217,7 +1217,7 @@ Ajoutez un style spécifique au composant tout en conservant le système de vari
 }
 ```
 
-**Responsive Design Integration** : utilisez des propriétés personnalisées CSS dans les requêtes de média pour obtenir un comportement réactif cohérent :
+**Intégration en responsive design** : utilisez des propriétés personnalisées CSS dans les requêtes de média pour obtenir un comportement réactif cohérent :
 
 ```css
 @media (max-width: 768px) {
@@ -1233,7 +1233,7 @@ Ajoutez un style spécifique au composant tout en conservant le système de vari
 
 ### Exemple d’implémentation de style complète
 
-Cette section explique comment créer un formulaire moderne, avec marque, à l’aide des propriétés personnalisées CSS. La mise en œuvre est divisée en sous-sections claires pour une compréhension et une navigation plus faciles.
+Cette section explique comment créer un formulaire moderne et conforme à l’identité de marque en utilisant des propriétés CSS personnalisées. La mise en œuvre est divisée en sous-sections claires pour une compréhension et une navigation plus faciles.
 
 
 
@@ -1276,7 +1276,7 @@ Définissez la palette de couleurs, l’espacement et la typographie de votre ma
 
 +++ &#x200B;2. Style du conteneur de formulaires
 
-Appliquez un arrière-plan moderne, un rayon de bordure et une ombre au conteneur de formulaire pour une disposition visuellement attrayante.
+Appliquez un arrière-plan moderne, un rayon de bordure et une ombre au conteneur de formulaire pour une mise en page visuellement attrayante.
 
 
 ```css
@@ -1404,7 +1404,7 @@ Vous pouvez étendre davantage la mise en forme du formulaire en ciblant des cha
 }
 ```
 
-Cette approche complète montre comment les propriétés personnalisées CSS permettent un thème sophistiqué tout en conservant l’intégrité structurelle et les fonctionnalités d’accessibilité du système de blocs de Forms adaptatif.
+Cette approche complète montre comment les propriétés personnalisées CSS permettent un thème sophistiqué tout en conservant l’intégrité structurelle et les fonctionnalités d’accessibilité du système de blocs de formulaires adaptatifs.
 
 +++
 
@@ -1527,7 +1527,7 @@ main .form form .text-wrapper input {
 
 +++
 
-+++ Conception de formulaire réactif
++++ Formulaire en responsive design
 
 ```css
 /- Mobile-first approach */
@@ -1549,12 +1549,12 @@ main .form form .text-wrapper input {
 
 ## Résumé des bonnes pratiques
 
-1. **Utiliser des propriétés personnalisées CSS** : utilisez des variables pour obtenir un thème cohérent
-2. **Suivre l’architecture basée sur les blocs** : utilisez `.form` comme sélecteur de blocs principal
-3. **Évitez la sur-spécificité** : n’utilisez pas `main .form form` sauf si nécessaire
-4. **Wrappers Target** : utilisez des modèles de `.{Type}-wrapper` pour le ciblage des composants
-5. **Maintenir la cohérence** : utilisez les mêmes modèles de sélecteur tout au long du projet
-6. **Test sur tous les appareils** : assurez-vous que les formulaires fonctionnent correctement sur les appareils mobiles, les tablettes et les ordinateurs de bureau
-7. **Valider l’accessibilité** : assurez-vous que les styles n’interfèrent pas avec les lecteurs d’écran ou la navigation au clavier
+1. **Utiliser des propriétés personnalisées CSS** : utilisez des variables pour obtenir un thème cohérent
+2. **Suivre l’architecture basée sur les blocs** : utilisez `.form` comme sélecteur de blocs principal
+3. **Évitez la sur-spécificité** : n’utilisez `main .form form` que si nécessaire
+4. **Cibler les wrappers** : utilisez des modèles `.{Type}-wrapper` pour le ciblage des composants
+5. **Maintenir la cohérence** : utilisez les mêmes modèles de sélecteur tout au long du projet
+6. **Tester sur tous les appareils** : assurez-vous que les formulaires fonctionnent correctement sur les appareils mobiles, les tablettes et les ordinateurs de bureau
+7. **Valider l’accessibilité** : assurez-vous que les styles n’interfèrent pas avec les lecteurs d’écran ou la navigation au clavier
 
 

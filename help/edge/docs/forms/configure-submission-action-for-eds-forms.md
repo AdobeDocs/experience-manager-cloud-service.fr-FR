@@ -7,86 +7,86 @@ exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 13%
+ht-degree: 79%
 
 ---
 
-# Configuration des actions Envoyer pour AEM Forms
+# Configurer les actions Envoyer pour AEM Forms
 
-Configurez la gestion de l’envoi des formulaires pour acheminer les données vers des feuilles de calcul, des e-mails ou des systèmes principaux à l’aide d’AEM Forms avec Edge Delivery Services.
+Configurez la gestion de l’envoi de formulaire pour acheminer les données vers des feuilles de calcul, des e-mails ou des systèmes back-end à l’aide d’AEM Forms avec Edge Delivery Services.
 
 ## Guide de décision rapide
 
-Choisissez votre méthode d’envoi :
+Choisissez votre méthode d’envoi :
 
-| Méthode | Idéal pour | Complexité de la configuration | Cas d’utilisation |
+| Méthode | Idéale pour | Complexité de la configuration | Cas d’utilisation |
 |--------|----------|------------------|-----------|
-| **Service d’envoi Forms** | Capture de données simple | Faible | Formulaires de contact, enquêtes, collecte de données de base |
-| **Envoi de la publication AEM** | Workflows complexes | Élevée | Intégrations d’entreprise, traitement personnalisé, workflows |
+| **Service d’envoi de formulaires** | Capture de données simple | Faible | Formulaires de contact, enquêtes, collecte de données de base |
+| **Envoi de publication AEM** | Workflows complexes | Élevée | Intégrations d’entreprise, traitement personnalisé, workflows |
 
 ## Prérequis
 
 Avant de configurer les actions d’envoi, vérifiez les points suivants :
 
-- Instance AEM Forms as a Cloud Service
-- Projet Edge Delivery Services configuré
+- Instance AEM Forms as a Cloud Service
+- Projet Edge Delivery Services configuré
 - Formulaire créé à l’aide de la création de documents ou de l’éditeur universel
 - Autorisations requises pour les destinations cibles (feuilles de calcul, systèmes de messagerie ou AEM)
 
-+++ Méthode 1 : service d’envoi Forms
++++ Méthode 1 : service d’envoi de formulaires
 
-Le service d’envoi Forms est un point d’entrée hébergé sur Adobe idéal pour les scénarios de capture de données simples.
+Le service d’envoi de formulaires est un point d’entrée hébergé par Adobe idéal pour les scénarios de capture de données simples.
 
 ### Destinations prises en charge
 
-- **Feuilles de calcul** : Google Sheets, Microsoft Excel (OneDrive/SharePoint)
-- **E-mail** : envoyez les données de formulaire aux adresses e-mail spécifiées
+- **Feuilles de calcul** : Google Sheets, Microsoft Excel (OneDrive/SharePoint).
+- **E-mail** : envoyer les données de formulaire aux adresses e-mail spécifiées
 
 ### Étapes de configuration
 
-1. **Configurer l’accès à la destination**
-   - Pour les feuilles de calcul : octroyer l’autorisation de modification pour `forms@adobe.com` sur une feuille de calcul cible
-   - Pour les e-mails : vérifier que les adresses e-mail des destinataires sont accessibles
+1. **Configuration de l’accès à la destination**
+   - Pour les feuilles de calcul : octroyez l’autorisation de modification pour `forms@adobe.com` sur une feuille de calcul cible.
+   - Pour les e-mails : vérifiez que les adresses e-mail des personnes destinataires sont accessibles.
 
-2. **Configurer l’envoi du formulaire**
-   - Ouvrez votre formulaire dans l’environnement de création
-   - Définir l’action d’envoi sur « Forms Submission Service »
-   - Spécifier l’URL ou les adresses e-mail de la feuille de calcul cible
-   - Enregistrer et publier le formulaire
+2. **Configuration de l’envoi de formulaire**
+   - Ouvrez votre formulaire dans l’environnement de création.
+   - Définissez l’action Envoyer sur « Service d’envoi de formulaires ».
+   - Indiquez l’URL de la feuille de calcul ou les adresses e-mail cibles.
+   - Enregistrez et publiez le formulaire.
 
-3. **Tester l’envoi**
-   - Envoi de données de test via le formulaire
-   - Vérifier que les données apparaissent dans la destination cible
-   - Vérifier les journaux d’erreurs en cas d’échec de l’envoi
+3. **Test de l’envoi**
+   - Envoyez les données de test via le formulaire.
+   - Vérifiez que les données apparaissent dans la destination cible.
+   - Consultez les journaux d’erreurs en cas d’échec de l’envoi.
 
 ### Remarques importantes
 
-- Le compte de service `forms@adobe.com` nécessite un accès en modification aux feuilles de calcul cibles
-- Les notifications par e-mail sont envoyées immédiatement après l’envoi du formulaire
-- La validation des données se produit au niveau du service
+- Le compte de service `forms@adobe.com` nécessite un accès en modification aux feuilles de calcul cibles.
+- Les notifications par e-mail sont envoyées immédiatement après l’envoi du formulaire.
+- La validation des données se produit au niveau du service.
 
-![Flux du service d’envoi Forms](/help/forms/assets/eds-fss.png)
+![Flux du service d’envoi de formulaires](/help/forms/assets/eds-fss.png)
 
 +++
 
-+++ Méthode 2 : envoi de l’instance de publication AEM
++++ Méthode 2 : envoi de publication AEM
 
 Envoyez directement les données de formulaire à votre instance de publication AEM as a Cloud Service pour un traitement complexe.
 
-### Quand utiliser la publication AEM
+### Quand utiliser la publication AEM
 
-- Workflows AEM personnalisés requis après l’envoi
+- Workflows AEM personnalisés requis après l’envoi
 - Intégration du modèle de données de formulaire (FDM) aux bases de données
-- Intégrations de services tiers (Marketo, Power Automate, Workfront Fusion)
-- Azure Blob Storage ou bibliothèques de documents SharePoint
+- Intégrations de services tiers (Marketo, Power Automate, Workfront Fusion)
+- Bibliothèques de données de stockage Azure Blob ou SharePoint
 - Logique complexe de validation ou de traitement côté serveur
 
 ### Actions d’envoi disponibles
 
-- [Envoyer vers le point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
-- [Envoyer un e-mail via les services de messagerie AEM](/help/forms/configure-submit-action-send-email.md)
+- [Envoyer au point d’entrée REST](/help/forms/configure-submit-action-restpoint.md)
+- [Envoyer un e-mail via des services de messagerie AEM](/help/forms/configure-submit-action-send-email.md)
 - [Envoyer à l’aide du modèle de données de formulaire](/help/forms/configure-data-sources.md)
-- [Appeler le processus AEM](/help/forms/aem-forms-workflow-step-reference.md)
+- [Appeler le workflow AEM](/help/forms/aem-forms-workflow-step-reference.md)
 - [Envoyer à SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 - [Envoyer à OneDrive](/help/forms/configure-submit-action-onedrive.md)
 - [Envoyer au stockage Blob Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
@@ -94,7 +94,7 @@ Envoyez directement les données de formulaire à votre instance de publication 
 - [Envoyer à Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 - [Envoyer à Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-![Flux d’envoi de publication AEM](/help/forms/assets/eds-aem-publish.png)
+![Flux d’envoi de publication AEM](/help/forms/assets/eds-aem-publish.png)
 
 ### Configuration requise
 
@@ -114,7 +114,7 @@ export const submitBaseUrl = '<aem-publish-instance-URL>';
 export const submitBaseUrl = 'http://localhost:<port-number>';
 ```
 
-#### &#x200B;2. Filtre référent OSGi
+#### &#x200B;2. Filtre de référent OSGi
 
 Configurez le filtrage des référents pour autoriser vos domaines de site Edge Delivery spécifiques :
 
@@ -195,10 +195,10 @@ Configure your Edge Delivery CDN to route submissions:
 
 #### &#x200B;4. Configuration du formulaire
 
-1. Création d’un formulaire dans l’éditeur universel
-2. Configuration de l’action d’envoi pour cibler l’action AEM Forms
-3. Spécifier le chemin du point d’entrée d’envoi
-4. Publication du formulaire sur un site Edge Delivery
+1. Créez un formulaire dans l’éditeur universel.
+2. Configurez l’action Envoyer pour cibler l’action AEM Forms.
+3. Indiquez le chemin du point d’entrée d’envoi.
+4. Publiez le formulaire sur le site Edge Delivery.
 
 +++
 <!--
@@ -254,50 +254,50 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 | Problème | Solution |
 |-------|----------|
-| **L’envoi du formulaire échoue** | Vérification des erreurs de console, vérification de l’URL du point d’entrée, confirmation des autorisations |
-| **Le formulaire incorporé n’apparaît pas** | Configurez les en-têtes CORS sur la source de formulaire et vérifiez l’URL du formulaire. |
-| Erreurs **403/401 avec AEM** | Mettre à jour le filtre de référent Sling, vérifier les paramètres d’authentification |
-| **Les données n’atteignent pas la feuille de calcul** | Vérifiez que `forms@adobe.com` a un accès en modification, vérifiez l&#39;URL de la feuille de calcul |
-| **Erreurs CORS** | Ajouter les en-têtes de `Access-Control-Allow-Origin` appropriés à la source de formulaire |
+| **L’envoi du formulaire échoue** | Vérifier les erreurs de console, vérifier l’URL du point d’entrée, confirmer les autorisations |
+| **Le formulaire incorporé n’apparaît pas** | Configurer des en-têtes CORS sur la source du formulaire, vérifier l’URL du formulaire |
+| **Erreurs 403/401 avec AEM** | Mettre à jour le filtre de référent Sling, vérifier les paramètres d’authentification |
+| **Les données n’atteignent pas la feuille de calcul** | Vérifier que `forms@adobe.com` a un accès en modification, vérifier l’URL de la feuille de calcul |
+| **Erreurs CORS** | Ajouter les en-têtes `Access-Control-Allow-Origin` appropriés à la source du formulaire |
 
 +++
 
 ## Exemples de configurations
 
-+++ Formulaire basé sur des documents avec envoi de feuilles de calcul
++++ Formulaire basé sur des documents avec envoi de feuille de calcul
 
-1. Création de la structure d’un formulaire dans Google Docs/Sheets
-2. Configurer le point d’entrée du service de soumission Forms
-3. Octroi de l’accès `forms@adobe.com` modification à la feuille de calcul cible
-4. Publier le document sur le site Edge Delivery
+1. Créer la structure de formulaire dans Google Docs/Sheets
+2. Configurer le point d’entrée du service d’envoi de formulaires
+3. Octroyer à `forms@adobe.com` un accès en modification à la feuille de calcul cible
+4. Publier le document sur le site Edge Delivery
 5. Tester l’envoi du formulaire et le flux de données
 
 +++
 
-+++ Formulaire d’éditeur universel avec workflow AEM
++++ Formulaire d’éditeur universel avec workflow AEM
 
 1. Créer un formulaire dans l’éditeur universel
-2. Configurer l’action d’envoi pour « Appeler un workflow AEM »
-3. Configurer le Dispatcher et le filtre référent sur l’instance de publication AEM
-4. Configurer des règles de routage CDN
+2. Configurer l’action Envoyer sur « Appeler un workflow AEM »
+3. Configurer Dispatcher et le filtre de référent sur la publication AEM
+4. Configurer des règles de routage CDN
 5. Publier le formulaire et tester l’exécution du workflow
 
 +++
 
 ## Bonnes pratiques
 
-- **Utiliser le service d’envoi Forms** pour les scénarios de capture de données simples
-- **Choisissez l’instance de publication AEM** lorsque des processus ou des intégrations complexes sont requis
-- **Testez minutieusement** dans l’environnement d’évaluation avant le déploiement en production
-- **Surveiller les envois** en utilisant les journaux AEM et les erreurs de la console
-- **Implémenter une gestion des erreurs appropriée** pour les envois ayant échoué
-- **Valider les données** au niveau du client et du serveur
-- **Utilisez HTTPS** pour tous les envois de formulaire et la transmission de données.
+- **Utilisez le service d’envoi de formulaire** pour les scénarios de capture de données simples.
+- **Choisissez la publication AEM** lorsqu’un traitement ou des intégrations complexes sont requis.
+- **Testez minutieusement** dans l’environnement d’évaluation avant le déploiement en production.
+- **Surveillez les envois** à l’aide des journaux AEM et des erreurs de la console.
+- **Implémentez une gestion des erreurs appropriée** pour les envois ayant échoué.
+- **Validez les données** au niveau du client et du serveur.
+- **Utilisez HTTPS** pour tous les envois de formulaires et la transmission de données.
 
 ## Rubriques connexes
 
-- [Création basée sur les documents avec EDS Forms](/help/edge/docs/forms/tutorial.md)
-- [Éditeur universel avec EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-- [Service d’envoi de formulaires AEM](/help/forms/forms-submission-service.md)
-- [Configurer les sources de données](/help/forms/configure-data-sources.md)
-- [Référence sur les workflows AEM Forms](/help/forms/aem-forms-workflow-step-reference.md)
+- [Création basée sur des documents avec EDS Forms](/help/edge/docs/forms/tutorial.md)
+- [Éditeur universel avec EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Service d’envoi AEM Forms](/help/forms/forms-submission-service.md)
+- [Configurer des sources de données](/help/forms/configure-data-sources.md)
+- [Référence du workflow AEM Forms](/help/forms/aem-forms-workflow-step-reference.md)

@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,8 +92,8 @@ Tous les champs de formulaire, à l’exception des listes déroulantes, des gro
 - Classes : l’élément div comporte plusieurs classes pour le ciblage d’éléments et de définitions de styles spécifiques. Vous avez besoin des classes `{Type}-wrapper` ou `field-{Name}` pour développer un sélecteur CSS afin de définir le style d’un champ de formulaire :
    - {Type} : identifie le composant par type de champ. Par exemple, texte (text-wrapper), nombre (number-wrapper), date (date-wrapper).
    - {Name} : identifie le composant par son nom. Le nom du champ ne peut contenir que des caractères alphanumériques. Les tirets consécutifs multiples dans le nom sont remplacés par un seul tiret `(-)` et les tirets de début et de fin dans le nom d’un champ sont supprimés. Par exemple, first-name (field-first-name field-wrapper).
-   - {FieldId} : il s’agit d’un identifiant unique pour le champ, généré automatiquement
-   - {Required} : valeur booléenne indiquant si le champ est obligatoire
+   - {FieldId} : il s’agit de l’identifiant unique du champ, généré automatiquement.
+   - {Required} : il s’agit d’une valeur booléenne indiquant si le champ est obligatoire.
 - Libellé : l’élément `label` fournit un texte descriptif pour le champ et l’associe à l’élément d’entrée à l’aide de l’attribut `for`.
 - Entrée : l’élément `input` définit le type de données à renseigner. Par exemple : texte, nombre, e-mail.
 - Description (facultatif) : l’élément `div` avec la classe `field-description` fournit des informations ou des instructions supplémentaires à l’intention de l’utilisateur ou de l’utilisatrice.
@@ -240,7 +240,7 @@ Pour les menus déroulants, l’élément `select` est utilisé à la place d’
 
 Tout comme les composants de liste déroulante, les groupes de boutons radio présentent une structure HTML et une structure CSS qui leur sont propres :
 
-+++ Structure HTML du groupe de boutons radio
++++ Structure HTML du groupe de boutons radio 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 }
 ```
 
-+++
++++ 
 
 ### Groupes de cases à cocher
 
-+++ Structure HTML du groupe de cases à cocher
++++ Structure HTML du groupe de cases à cocher 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
      }
   ```
 
-+++
++++ 
 
 ### Composants de panneau/conteneur
 
@@ -476,11 +476,11 @@ Ce sélecteur cible n’importe quel fieldset avec la classe radio-group-wrapper
 ```
 
 - L’élément fieldset fait office de conteneur de panneau avec la classe panel-wrapper et des classes supplémentaires pour définir le style en fonction du nom du panneau (field-login).
-- L’élément de légende (`<legend>`) sert de titre au panneau avec le texte « Informations de connexion » et le libellé du champ de la classe. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
+- L’élément de légende (`<legend>`) sert de titre de panneau avec le texte « Informations de connexion » et la classe field-label. L’attribut data-visible=&quot;false&quot; peut être utilisé avec JavaScript pour contrôler la visibilité du titre.
 - Dans le fieldset, plusieurs éléments .Les éléments {Type}-wrapper (.text-wrapper et .password-wrapper dans cet exemple) représentent des champs de formulaire individuels dans le panneau.
 - Chaque wrapper contient un libellé, un champ d’entrée et une description, comme dans les exemples précédents.
 
-+++
++++ 
 
 +++ Exemples de sélecteurs CSS pour les composants de panneau/conteneur
 
@@ -608,7 +608,7 @@ Chaque panneau présente la même structure que l’exemple de panneau unique, a
 
 - Identifiants et noms uniques : chaque élément du panneau comprend un identifiant unique (par exemple, name-1, email-1) et un attribut name basé sur l’index du panneau (par exemple, name=&quot;contacts[0].name&quot;). Cela permet une collecte de données correcte lorsque plusieurs panneaux sont envoyés.
 
-+++
++++ 
 
 +++ Sélecteurs CSS pour un panneau répétable
 
@@ -698,7 +698,7 @@ ce sélecteur définit le style de tous les wrappers de champ dans un panneau r�
 - Les attributs id et name de l’élément d’entrée correspondent au nom du fichier joint (claim_form).
 - La section files-list est initialement vide. Elle est renseignée de manière dynamique avec JavaScript lorsque des fichiers sont chargés.
 
-+++
++++ 
 
 +++ Sélecteurs CSS pour le composant de fichier joint
 
@@ -816,7 +816,7 @@ Vous pouvez utiliser des sélecteurs CSS pour cibler des types de champ spécifi
 - Chaque champ comporte un libellé, un élément d’entrée et d’éventuels éléments supplémentaires correspondants, tels que des espaces réservés et des descriptions.
 
 
-+++
++++ 
 
 
 +++ Exemple de sélecteurs CSS
@@ -864,7 +864,7 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 </div>
 ```
 
-+++
++++ 
 
 +++ Exemple de sélecteur CSS
 
@@ -878,5 +878,5 @@ Vous pouvez également cibler des champs individuels par nom pour appliquer des 
 
 Ce CSS cible tous les éléments d’entrée situés dans un élément qui possède la classe `field-otp`. La structure HTML de votre formulaire suit les conventions du bloc de formulaires adaptatifs, ce qui implique qu’un conteneur marqué avec la classe &quot;field-otp&quot; contient le champ nommé &quot;otp&quot;.
 
-+++
++++ 
 
