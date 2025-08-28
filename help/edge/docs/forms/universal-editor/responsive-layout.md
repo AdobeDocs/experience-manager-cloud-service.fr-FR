@@ -173,7 +173,7 @@ La mise en page Panneau organise le contenu associé en sections visuellement di
 
 **Implémentation**
 
-1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
+1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
 2. Regroupez les champs associés dans chaque panneau pour conserver une organisation logique.
 3. Attribuez des en-têtes explicites et clairs à chaque section de panneau.
 4. Assurez-vous que l’espacement entre les panneaux est suffisant pour éviter tout encombrement visuel.
@@ -206,7 +206,7 @@ La mise en page Assistant guide les utilisateurs et les utilisatrices tout au lo
 
 **Implémentation**
 
-1. Insérez le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
+1. Insérez le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
 2. Divisez le formulaire en étapes logiques, idéalement entre 3 et 7, pour que chaque étape reste ciblée et gérable.
 3. Ajoutez des indicateurs de progression pour aider les utilisateurs et les utilisatrices à comprendre leur position dans le processus.
 4. Fournissez des commandes de navigation claires, telles que les boutons Suivant, Précédent et Enregistrer.
@@ -246,7 +246,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 **Implémentation**
 
-1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
+1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
 2. Regroupez les contenus secondaires ou facultatifs associés dans chaque section d’accordéon.
 3. Utilisez des en-têtes clairs et descriptifs pour chaque section afin d’aider les utilisateurs et les utilisatrices à comprendre les informations qu’elles contiennent.
 4. Définissez les états d’ouverture ou de fermeture par défaut appropriés pour chaque section en fonction de l’importance et des besoins de l’utilisateur et de l’utilisatrice.
