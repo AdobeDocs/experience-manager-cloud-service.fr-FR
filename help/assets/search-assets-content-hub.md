@@ -3,16 +3,16 @@ title: Rechercher des ressources dans le hub de contenus
 description: Découvrez comment rechercher des ressources dans  [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # Rechercher dans Assets en [!DNL Content Hub] {#search-assets}
 
-Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel, la recherche de la bonne ressource prend du temps. [!DNL The Content Hub] recherche vous permet de rechercher les ressources approuvées afin d’effectuer des actions supplémentaires sur celles-ci, telles que le téléchargement, le partage ou la création de collections. Vous pouvez utiliser différentes fonctionnalités pour affiner les résultats de votre recherche, par exemple, effectuer une recherche textuelle, utiliser des filtres, effectuer une recherche par balises ou balises intelligentes, rechercher un format de fichier particulier, etc.
+Lorsque vous disposez d’un grand nombre de ressources dans votre référentiel, la recherche de la bonne ressource prend du temps. [!DNL The Content Hub] recherche vous permet de rechercher les ressources approuvées afin d’effectuer des actions supplémentaires sur celles-ci, telles que le téléchargement, le partage ou la création de collections. Vous pouvez utiliser différentes fonctionnalités pour affiner les résultats de votre recherche, telles que l’exécution d’une recherche textuelle, l’utilisation de filtres, l’exécution de balises ou d’une recherche spécifique aux balises intelligentes, la recherche d’un format de fichier particulier, etc.
 
 ## Prérequis {#prerequisites}
 
@@ -148,6 +148,24 @@ Les filtres par défaut incluent le format de fichier, approuvé par, la date d�
 
 -->
 
+## Recherche en masse {#bulk-search}
+
+La recherche en bloc de ressources vous permet de rechercher plusieurs ressources simultanément en saisissant une liste d’identifiants (tels que les noms, les formats de fichiers, les couleurs, les balises, etc.). Au lieu de rechercher des ressources une par une, [!DNL Content Hub] recherche en bloc accélère la découverte des ressources dont vous avez besoin. Grâce à cette fonctionnalité, vous pouvez saisir plusieurs valeurs pour n’importe quelle propriété de filtre (séparée par un délimiteur (par exemple, plusieurs ID de SKU)) et récupérer instantanément toutes les ressources correspondantes à l’aide d’une seule recherche.
+
+Pour rechercher plusieurs ressources à la fois, saisissez plusieurs valeurs dans une seule requête en les séparant par des délimiteurs ` [ , | \t | \r | \n | \r\n ]`. Vous pouvez également ajouter d’autres délimiteurs en fonction de votre cas d’utilisation. Voir [Configurer la recherche en bloc](configure-content-hub-ui-options.md#bulk-search-configuration).
+
+Pour effectuer une recherche en bloc dans le [!DNL Content Hub], procédez comme suit :
+
+1. Une fois la recherche en bloc [configurée](configure-content-hub-ui-options.md#bulk-search-configuration), vous pouvez voir le bouton (bascule) Recherche en bloc dans les propriétés de filtre de [!DNL Content Hub] que vous avez configurées. Vous pouvez l’activer ou le désactiver en fonction des besoins.
+
+1. Ajoutez une requête de recherche contenant les délimiteurs spécifiés dans la configuration . La requête de recherche doit contenir une chaîne accompagnée de plusieurs valeurs séparées par des virgules.
+
+![Interface utilisateur de recherche en bloc](assets/bulk-search-ui.png)
+
 ## En savoir plus avec la recherche {#do-more-with-search}
 
 [!DNL The Content Hub] ne se limite pas à la recherche. Il vous permet plutôt d’effectuer des actions supplémentaires, telles que [télécharger](download-assets-content-hub.md), [partager](share-assets-content-hub.md) et [ajouter des ressources à la collection](collections-content-hub.md), directement à partir de l’interface de recherche ou de prévisualisation. Sélectionnez les ressources sur la page des résultats de la recherche pour afficher ces options.
+
+En savoir plus sur la [configuration des ressources dans la  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+
