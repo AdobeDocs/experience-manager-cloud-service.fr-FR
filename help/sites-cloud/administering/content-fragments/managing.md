@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2920'
 ht-degree: 35%
 
 ---
@@ -134,6 +134,18 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
    * Sélectionnez le nombre pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le **Titre** dans la boîte de dialogue.
 
      ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cf-managing-console-languages-dialog.png)
+
+* **Workflows**
+
+   * Informations uniquement
+
+   * Sélectionnez l’icône d’un fragment spécifique :
+
+     ![ Console Fragments de contenu - Icône Workflows ](assets/cf-managing-console-workflows-icon.png)
+
+     Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment.:
+
+     ![Console Fragments de contenu - Boîte de dialogue Workflows](assets/cf-managing-console-workflows-dialog.png)
 
 ## Actions {#actions}
 
