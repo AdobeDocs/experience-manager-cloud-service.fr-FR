@@ -13,7 +13,7 @@ ht-degree: 14%
 
 # Générer une sortie AFP à l’aide de l’API AEM Forms
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
 La présentation de fonctions avancées (AFP) est un format de document haute performance conçu principalement à des fins d&#39;impression.\
 Ce guide décrit toutes les étapes et configurations nécessaires pour générer une sortie AFP à l’aide d’AEM Forms.
