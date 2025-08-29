@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
-workflow-type: ht
-source-wordcount: '1295'
-ht-degree: 100%
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+workflow-type: tm+mt
+source-wordcount: '1348'
+ht-degree: 78%
 
 ---
 
@@ -38,11 +38,17 @@ Par conséquent :
 
 ## Concepts et objectif {#concepts}
 
-Bien qu’il semble y avoir beaucoup à apprendre lors de la prise en main d’AEM as a Cloud Service, il n’y a conceptuellement que quelques éléments logiques.
+<!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-* **Le contrat** : vous devez bien connaître votre contrat Adobe, car il définit les aspects du processus d’intégration.
-* **Admin Console** : c’est là que les utilisateurs et utilisatrices sont gérés et que les rôles sont attribués.
-* **Cloud Manager** : il s’agit de l’outil permettant de configurer des ressources telles que des programmes et des environnements. C’est également là que vous accédez à Git et créez des pipelines pour gérer et déployer votre code personnalisé.
+Le parcours d’intégration d’AEM as a Cloud Service est axé sur les éléments principaux suivants :
+
+* **Contrat** - Consultez votre contrat Adobe pour connaître les détails essentiels du processus d’intégration.
+* **Experience Hub** - Utilisez [experience.adobe.com](https://experience.adobe.com/) comme point d’entrée central pour les fonctionnalités d’AEM. Experience Hub s’adapte à votre profil et à vos droits afin que vous puissiez travailler efficacement. À partir de là, accédez à :
+   * **Admin Console** - Gérez les utilisateurs et attribuez des rôles.
+   * **Cloud Manager** - Configurez des programmes et des environnements, accédez à Git et créez des pipelines pour gérer et déployer du code personnalisé.
+   * **Sites** - Créez, gérez et diffusez des expériences digitales. (Droit basé sur une licence)
+   * **Assets** - Organisez, stockez et distribuez vos ressources numériques. (Droit basé sur une licence)
+   * **Forms** - Créez et gérez des formulaires adaptatifs et réactifs. (Droit basé sur une licence)
 
 Ces concepts seront présentés en détail dans ce parcours d’intégration. L’objectif est qu’à la fin du parcours, vous puissiez effectuer les opérations suivantes :
 
@@ -59,10 +65,10 @@ Le parcours d’intégration est écrit spécifiquement pour l’**administrateu
 L’administrateur ou administratrice système gère tous les aspects des utilisateurs et utilisatrices AEMaaCS de son entreprise, de l’accès aux autorisations. Cependant, l’administrateur ou administratrice système doit interagir avec d’autres personnes tout au long de son parcours.
 
 | Personne | Description | Rôle dans le Parcours |
-|---|---|---|
-| Administrateur système | L’objectif de ce parcours est de veiller au déploiement initial des ressources cloud et à l’assignation des utilisateurs et des utilisatrices aux rôles appropriés selon leurs responsabilités professionnelles. | Gère tous les aspects liés aux utilisateurs, depuis l’accès jusqu’aux autorisations |
-| Créateur de contenu | Crée et révise le contenu dans AEM | Une fois les autorisations accordées par l’administrateur ou administratrice système, les personnes chargées de la création de contenu peuvent commencer leur propre parcours. |
-| Développeur ou développeuse | Développe des applications AEM qui consomment du contenu provenant de différentes sources. | Une fois les autorisations accordées par l’administrateur ou administratrice système, les personnes chargées du développement peuvent commencer leur propre parcours. |
+| --- | --- | --- |
+| Administrateur système | L’objectif de ce parcours est de fournir l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles. | Le rôle vous permet de gérer tous les aspects liés aux utilisateurs, depuis l’accès jusqu’aux autorisations. |
+| Créateur de contenu | Crée et révise le contenu dans AEM. | Une fois les autorisations accordées par l’administrateur système, les auteurs peuvent lancer leur propre parcours de création de contenu. |
+| Développeur ou développeuse | Développe des applications AEM qui consomment du contenu provenant de différentes sources. | Une fois les autorisations accordées par l’administrateur système, les développeurs peuvent lancer leur propre parcours de développement de solutions. |
 | Responsable de déploiement | Ajoute ou met à jour un environnement, exécute un pipeline et déploie du code dans l’environnement AEM ou teste les performances du code. | Une fois les autorisations accordées par l’administrateur système, les responsables de déploiement peuvent lancer leur propre parcours de gestion des déploiements. |
 
 Ce guide d’intégration illustre l’ensemble du processus d’intégration en tant qu’administrateur système. Les rôles des utilisateurs, des développeurs et des responsables de déploiement AEM sont brièvement présentés comme des parties supplémentaires et facultatives du parcours.
@@ -76,18 +82,19 @@ Ce guide d’intégration illustre l’ensemble du processus d’intégration en
 Les articles suivants décrivent en détail les principaux concepts d’intégration et vous donnent des connaissances fondamentales sur AEM as a Cloud Service. Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept d’intégration est nouveau pour vous, nous vous recommandons de commencer par le début et de continuer de manière chronologique.
 
 | | Article | Description | Audience |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 0 | Parcours d’intégration | Ce document | Administrateur système |
 | 1 | [Préparation à l’intégration](preparation.md) | Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système. | Administrateur système |
 | 2 | [Terminologie d’AEM as a Cloud Service](terminology.md) | Avant de vous connecter pour la première fois à AEMaaCS, il est utile de comprendre une partie de la terminologie du système et sa structure de base. | Administrateur système |
 | 3 | [Admin Console](admin-console.md) | Découvrez ce qu’est Admin Console, comment vous y connecter et comment vérifier votre profil en tant qu’administrateur système. | Administrateur système |
-| 4 | [Attribuer des profils de produits Cloud Manager](assign-profiles-cloud-manager.md) | Passez en revue les profils de produit Cloud Manager et apprenez à attribuer des membres de l’équipe aux profils de produit Cloud Manager. | Administrateur système |
-| 5 | [Accès à Cloud Manager](cloud-manager.md) | Découvrez comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet. | Administrateur système |
-| 6 | [Créer un programme](create-program.md) | Découvrez comment créer un programme à l’aide de Cloud Manager. | Administrateur système |
-| 7 | [Créer des environnements](create-environments.md) | Découvrez comment créer un environnement à l’aide de Cloud Manager. | Administrateur système |
-| 8 | [Attribuer des profils de produit AEM](assign-profiles-aem.md) | Découvrez comment l’administrateur ou l’administratrice système attribue les membres de votre équipe à des profils de produit dans AEM as a Cloud Service. | Administrateur système |
-| 9 | [Tâches du développeur et du responsable de déploiement](developers.md) | Facultatif - Découvrez comment, en tant que développeur ou développeuse, vous pouvez accéder au Git de Cloud Manager et le gérer et en tant que responsable de déploiement, comment configurer des pipelines et déployer du code dans Cloud Manager. | Développeurs et responsables de déploiement |
-| 10 | [Tâches utilisateur d’AEM](aem-users.md) | Facultatif - Découvrez comment, en tant qu’auteur ou autrice AEM, vous pouvez accéder à l’instance AEM as a Cloud Service et vous familiariser avec la création de contenu pour AEM as a Cloud Service. | Utilisateurs et utilisatrices AEM |
+| 4 | [Attribuer des profils de produits Cloud Manager](assign-profiles-cloud-manager.md) | Passez en revue les profils de produit Cloud Manager et apprenez à affecter des membres de l’équipe aux profils de produit Cloud Manager. | Administrateur système |
+| 5 | [Accéder à Experience Hub](/help/experience-hub.md) | Utilisez Experience Hub qui sert de point d’entrée unifié et personnalisé pour l’écosystème AEM. | Utilisateurs et utilisatrices AEM |
+| 6 | [Accès à Cloud Manager](cloud-manager.md) | Découvrez comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet. | Administrateur système |
+| 7 | [Créer un programme](create-program.md) | Découvrez comment créer un programme à l’aide de Cloud Manager. | Administrateur système |
+| 8 | [Créer des environnements](create-environments.md) | Découvrez comment créer un environnement à l’aide de Cloud Manager. | Administrateur système |
+| 9 | [Attribuer des profils de produit AEM](assign-profiles-aem.md) | Découvrez comment l’administrateur système attribue les membres de votre équipe à des profils de produit dans AEM as a Cloud Service. | Administrateur système |
+| 10 | [Tâches du développeur et du responsable de déploiement](developers.md) | Facultatif - Découvrez comment accéder au Git Cloud Manager et le gérer en tant que développeur ou développeuse. En tant que responsable de déploiement, découvrez comment configurer des pipelines et déployer du code dans Cloud Manager. | Développeurs et responsables de déploiement |
+| 11 | [Tâches utilisateur d’AEM](aem-users.md) | Facultatif - Découvrez comment, en tant qu’auteur ou autrice AEM, vous pouvez accéder à l’instance AEM as a Cloud Service et vous familiariser avec la création de contenu pour AEM as a Cloud Service. | Utilisateurs et utilisatrices AEM |
 
 ## Prochaines étapes {#what-is-next}
 
