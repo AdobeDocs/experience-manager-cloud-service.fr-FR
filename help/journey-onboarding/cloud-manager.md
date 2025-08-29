@@ -4,7 +4,7 @@ description: Découvrez comment accéder à Cloud Manager afin de pouvoir confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 84%
@@ -42,7 +42,7 @@ Avant que les personnes membres de l’équipe que vous avez affectées au rôle
 
    Revenez à l’étape précédente, [Affecter des personnes membres de l’équipe à des profils de produits Cloud Manager](assign-profiles-cloud-manager.md), pour plus d’informations sur l’attribution du rôle de **Propriétaire de l’entreprise** à l’administrateur ou l’administratrice système.
 
-1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com/).
+1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com).
 1. Dans le groupe Accès rapide, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
