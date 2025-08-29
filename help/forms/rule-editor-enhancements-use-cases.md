@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. Ces améliorations s’appliquent également à Edge Delivery Services Forms.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. Ces améliorations s’appliquent également à Edge Delivery Services Forms.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
@@ -105,6 +105,8 @@ Pour éviter d’encombrer le formulaire avec des champs masqués, l’entrepris
 
 **Implémentation à l’aide des fonctions Définir la valeur de la variable et Obtenir la valeur de la variable dans l’éditeur de règles**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 Une règle est configurée sur le fragment **Address** à l’aide de la fonction **Set Variable Value** pour affecter une variable temporaire nommée **extracharge**. La valeur de cette variable change dynamiquement en fonction du pays sélectionné. Par exemple :
 
 * Si l’utilisateur sélectionne États-Unis, **extracharge** est défini sur 500.
@@ -122,7 +124,7 @@ Le champ **Coût total d’expédition** se met à jour de manière dynamique po
 >[!NOTE]
 >
 > Vous pouvez également ajouter la fonction **Obtenir la valeur de la variable** dans la condition Lorsque.
-> &#x200B;> ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Cette approche permet des calculs dynamiques en temps réel sans ajouter de champs supplémentaires au formulaire, ce qui permet de garder la structure propre et conviviale.
 
@@ -135,6 +137,9 @@ L’éditeur de règles amélioré prend en charge la gestion des événements p
 Au lieu de lier directement la logique aux champs, le formulaire utilise une approche basée sur les événements avec **Distribuer l’événement** et **Activer l’événement déclencheur** pour améliorer la modularité et la maintenabilité.
 
 **Implémentation à l’aide de l’événement Dispatch et de l’événement déclencheur On**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 Le fragment de connexion est ajouté au formulaire, contenant des champs prédéfinis pour le nom d’utilisateur et le mot de passe. Une règle est configurée sur le bouton **Obtenir le mot de passe à usage unique** pour afficher le **Panneau de validation**, qui comprend le champ de saisie permettant de saisir et de valider le mot de passe à usage unique.
 
