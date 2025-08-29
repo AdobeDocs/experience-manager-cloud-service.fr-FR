@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2598'
-ht-degree: 100%
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+workflow-type: tm+mt
+source-wordcount: '2781'
+ht-degree: 93%
 
 ---
 
@@ -533,6 +533,7 @@ Image : ajout de fonctions personnalisées au fichier functions.js.
 ![Fonction personnalisée dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Image : sélection et configuration de fonctions personnalisées dans l’interface de l’éditeur de règles.
 
+
 **Bonnes pratiques relatives à l’utilisation des fonctions** :
 
 - **Gestion des erreurs** : incluez toujours un comportement de secours pour les échecs de fonction.
@@ -541,6 +542,56 @@ Image : sélection et configuration de fonctions personnalisées dans l’inter
 - **Tests** : créez des cas de test couvrant les cas normaux et les cas particuliers.
 
 +++
+
+
+### Imports statiques pour les fonctions personnalisées
+
+L’éditeur de règles de l’éditeur universel prend en charge les importations statiques, ce qui vous permet d’organiser une logique réutilisable dans plusieurs fichiers et formulaires. Au lieu de conserver toutes les fonctions personnalisées dans un seul fichier (/blocks/form/functions.js), vous pouvez importer des fonctions d’autres modules.
+Par exemple : Importation de fonctions à partir d’un fichier externe
+Tenez compte de la structure de dossiers suivante :
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+Vous pouvez importer des fonctions de `commonLib/functions.js` dans votre fichier `functions.js` principal, comme illustré ci-dessous :
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Organisation De Fonctions Personnalisées Dans Différents Forms
+
+Vous pouvez créer différents ensembles de fonctions dans des fichiers ou des dossiers distincts et les exporter selon vos besoins :
+
+- Si vous souhaitez que certaines fonctions ne soient disponibles que dans des formulaires spécifiques, vous pouvez fournir le chemin d’accès au fichier de fonctions dans la configuration du formulaire.
+
+- Si la zone de texte du chemin n’est pas renseignée, l’éditeur de règles charge par défaut les fonctions à partir de l’adresse `/blocks/form/functions.js`
+
+![Fonction personnalisée en UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+Dans la capture d’écran ci-dessus, le chemin d’accès de la fonction personnalisée est ajouté à la zone de texte Chemin d’accès de la fonction personnalisée . Les fonctions personnalisées de ce formulaire sont chargées à partir du fichier spécifié (`cc_function.js`).
+
+Vous bénéficiez ainsi d’une certaine flexibilité en partageant des fonctions sur plusieurs formulaires ou en les maintenant isolées par formulaire.
 
 ## Bonnes pratiques en matière de développement de règles
 

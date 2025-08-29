@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ Créez une règle dans la zone de texte `Pet ID` pour appeler le service `getPet
 Saisissez `102` dans la zone de texte `Pet ID` et le bouton **Envoyer** est masqué.
 
 ![Output](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> Vous pouvez également [intégrer l’API directement dans l’interface de l’éditeur de règles](/help/forms/api-integration-in-rule-editor.md) sans utiliser de modèle de données de formulaire prédéfini.
 
 ## Questions fréquentes
 

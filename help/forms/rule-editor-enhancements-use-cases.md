@@ -4,22 +4,21 @@ description: Cet article explore différents cas d’utilisation de l’éditeur
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
+source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. Ces améliorations s’appliquent également à Edge Delivery Services Forms.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
-Le tableau ci-dessous répertorie les récentes améliorations apportées à l’éditeur de règles dans le Forms adaptatif, ainsi qu’une brève description et les principaux avantages de chaque fonctionnalité.:
+Le tableau ci-dessous répertorie les récentes améliorations apportées à l’éditeur de règles dans le Forms adaptatif, ainsi qu’une brève description et les principaux avantages de chaque fonctionnalité :
 
 | Amélioration | Description | Avantages |
 |---|----|---|
@@ -29,6 +28,10 @@ Le tableau ci-dessous répertorie les récentes améliorations apportées à l�
 | **Règles personnalisées basées sur un événement** | Définissez des règles qui répondent à des événements personnalisés au-delà des déclencheurs standard. | - Prend en charge les cas d’utilisation avancés <br> - Un meilleur contrôle sur le moment et la manière dont les règles sont exécutées <br> - Améliore l’interactivité |
 | **Exécution de panneau répétable contextuelle** | Les règles s’exécutent désormais dans le contexte approprié pour chaque panneau répété, au lieu de la dernière instance uniquement. | - Application précise des règles pour chaque instance de répétition <br> - Réduit les erreurs dans les sections dynamiques <br> - Améliore l’expérience utilisateur avec le contenu répété |
 | **Prise en charge des paramètres de chaîne de requête, UTM et de navigateur** | Créez des règles qui adaptent le comportement du formulaire en fonction des paramètres d’URL ou de valeurs spécifiques au navigateur. | - Permet la personnalisation en fonction des <br> de la source ou de l’environnement - Utile pour les flux spécifiques au marketing ou au suivi <br> - Aucun besoin de script ou de personnalisation supplémentaire |
+
+>[!NOTE]
+>
+> Les améliorations apportées à l’éditeur de règles s’appliquent également à Edge Delivery Services Forms.
 
 Examinons maintenant en détail chaque méthode avec des cas d’utilisation spécifiques pour vous aider à comprendre comment ces fonctionnalités peuvent être utilisées pour offrir une expérience personnalisée aux utilisateurs et utilisatrices
 
@@ -89,58 +92,63 @@ Si le formulaire est configuré pour la génération du document d’enregistrem
 
 ## Prise en charge des variables dynamiques dans les règles
 
-L’éditeur de règles amélioré prend désormais en charge la création et l’utilisation de variables dynamiques (temporaires). Ces variables peuvent être définies et récupérées tout au long du cycle de vie du formulaire à l’aide des fonctions intégrées **Définir la valeur de la variable** et **Obtenir la valeur de la variable**.
+L’éditeur de règles amélioré prend en charge la création et l’utilisation de variables dynamiques (temporaires). Ces variables peuvent être définies et récupérées tout au long du cycle de vie du formulaire à l’aide des fonctions intégrées **Définir la valeur de la variable** et **Obtenir la valeur de la variable**.
 Ces variables :
 
 * Ne sont pas envoyés avec les données de formulaire.
 * Peut contenir des valeurs intermédiaires ou calculées.
 * Peut être utilisé dans une logique conditionnelle et des actions.
 
-**Scénario** : une société de commerce électronique fournit un formulaire de commande dans lequel les utilisateurs peuvent sélectionner un produit et une méthode d’expédition préférée. Alors que le prix du produit est capturé par le biais d’un champ de formulaire, le coût d’expédition est déterminé dynamiquement en fonction de la méthode sélectionnée et du pays choisi.
+**Scénario** : un formulaire d’achat en ligne permet aux utilisateurs et aux utilisatrices de sélectionner un produit, de saisir une quantité et de choisir un pays pour l’expédition. Le prix du produit est une valeur fixe capturée par le biais d’un champ de formulaire, tandis que les frais d’expédition varient dynamiquement en fonction du pays sélectionné.
 
-Pour que la structure du formulaire reste propre et éviter d’ajouter des champs masqués inutiles, l’entreprise souhaite gérer les frais d’expédition sous la forme d’une valeur temporaire qui prend en charge le calcul en temps réel du montant total.
+Pour éviter d’encombrer le formulaire avec des champs masqués, l’entreprise décide de stocker les frais de livraison dans une variable temporaire et de les utiliser pour des calculs en temps réel.
 
 **Implémentation à l’aide des fonctions Définir la valeur de la variable et Obtenir la valeur de la variable dans l’éditeur de règles**
 
-Une règle est configurée pour définir une variable temporaire nommée **extracharge** à l’aide de la fonction **Définir la valeur de la variable**. La valeur de cette variable dépend du pays sélectionné. Par exemple, si l’utilisateur sélectionne « États-Unis », la valeur est définie sur 50. Pour tout autre pays, il est fixé à 100.
+Une règle est configurée sur le fragment **Address** à l’aide de la fonction **Set Variable Value** pour affecter une variable temporaire nommée **extracharge**. La valeur de cette variable change dynamiquement en fonction du pays sélectionné. Par exemple :
+
+* Si l’utilisateur sélectionne États-Unis, **extracharge** est défini sur 500.
+* Pour tout autre pays, **extracharge** est défini sur 100.
 
 ![Définir la valeur de la variable](/help/forms/assets/setvalue.png)
 
-Par la suite, lors du calcul du coût total d&#39;expédition, la fonction **Obtenir la valeur de la variable** récupère la valeur **extracharge** en fonction du pays sélectionné.
+Ultérieurement, lorsque le **coût total d’expédition** est calculé, la fonction **Obtenir la valeur de la variable** est utilisée pour récupérer la valeur de **extracharge**. Cette valeur est ajoutée au **Prix du produit × Quantité du produit** pour calculer le montant final payable lors du clic sur le bouton.
 
 ![Obtenir la valeur de la variable](/help/forms/assets/getvalue.png)
 
-Cette valeur est ensuite ajoutée aux frais d’expédition du produit et le résultat s’affiche dans le champ **Total des frais d’expédition**.
-
+Le champ **Coût total d’expédition** se met à jour de manière dynamique pour refléter à la fois le coût du produit et les frais d’expédition lorsque l’utilisateur modifie le pays ou la quantité.
 ![output](/help/forms/assets/getsetvalue-output.png)
 
-Cette approche vous permet de calculer et d’afficher les frais supplémentaires de manière dynamique sans les stocker dans un champ visible, ce qui offre une expérience utilisateur nette, réactive et sans code.
+>[!NOTE]
+>
+> Vous pouvez également ajouter la fonction **Obtenir la valeur de la variable** dans la condition Lorsque.
+> > ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
+Cette approche permet des calculs dynamiques en temps réel sans ajouter de champs supplémentaires au formulaire, ce qui permet de garder la structure propre et conviviale.
 
 ## Prise en charge des règles basées sur un événement personnalisé
 
 L’éditeur de règles amélioré prend en charge la gestion des événements personnalisés à l’aide des fonctions **Distribuer l’événement** et **Activer l’événement déclencheur**. Ces fonctions permettent à différentes parties du formulaire de communiquer en émettant et en écoutant des événements personnalisés, ce qui permet une logique modulaire plus épurée sans étroitement lier les actions à des champs spécifiques.
 
-**Scénario** : Un formulaire de candidature est intégré à un système RH externe qui effectue la vérification des antécédents. Une fois la vérification terminée, le système met à jour le formulaire avec le **Vérification en arrière-plan terminée!** le message. Le formulaire doit ajuster dynamiquement ce que le demandeur voit en fonction de ce résultat.
+**Scénario** : un formulaire de connexion est créé à l’aide d’un fragment de connexion réutilisable contenant les champs **Saisir le nom d’utilisateur** et **Saisir le mot de passe**. Lorsqu’un utilisateur ou une utilisatrice fournit des informations d’identification valides, le formulaire valide l’entrée et lance le processus **Get OTP**. Une fois que l’utilisateur a saisi un mot de passe à usage unique valide, il est redirigé vers la page appropriée.
 
-Au lieu de lier directement la logique au champ recevant le statut, le formulaire utilise une approche basée sur un événement personnalisé pour améliorer la modularité et la maintenabilité.
+Au lieu de lier directement la logique aux champs, le formulaire utilise une approche basée sur les événements avec **Distribuer l’événement** et **Activer l’événement déclencheur** pour améliorer la modularité et la maintenabilité.
 
 **Implémentation à l’aide de l’événement Dispatch et de l’événement déclencheur On**
 
-Lorsque le statut de vérification de l’arrière-plan est mis à jour, une règle utilise **Distribuer l’événement** pour émettre un événement personnalisé en tant que **bgvmsg** ainsi que le résultat du statut. Une règle distincte écoute cet événement à l’aide de **Activer l’événement déclencheur**.
+Le fragment de connexion est ajouté au formulaire, contenant des champs prédéfinis pour le nom d’utilisateur et le mot de passe. Une règle est configurée sur le bouton **Obtenir le mot de passe à usage unique** pour afficher le **Panneau de validation**, qui comprend le champ de saisie permettant de saisir et de valider le mot de passe à usage unique.
 
-Les captures d’écran ci-dessous affichent les règles appliquées à l’option « La vérification en arrière-plan est-elle terminée ? » bouton radio et le champ de texte « bgvmsg ».
+![Obtenir la règle OTP](/help/forms/assets/get-otp-rule.png)
 
-![répartir l’événement](/help/forms/assets/dispatch-event-rule.png)
+Dans le **panneau Validation**, une règle est configurée sur le bouton Valider . L’intégration d’API est utilisée pour valider le mot de passe à usage unique saisi dans le champ **Saisir le mot de passe à usage unique**. Si la validation réussit, un **Événement de répartition** nommé **LoggedIn** est déclenché avec la payload de l’événement contenant la réponse de l’API.
 
-![sur événement déclencheur](/help/forms/assets/trigger-event-rule.png)
+![Dans la règle d’événement de déclenchement](/help/forms/assets/trigger-event-rule.png)
 
-Lorsque l’événement est détecté, il vérifie le statut et met à jour le formulaire en conséquence. Par exemple :
+Au niveau du formulaire, une règle est configurée pour écouter l’événement **LoggedIn**. Lorsque cet événement est déclenché, la règle affiche le message de redirection et dirige l’utilisateur vers la page du tableau de bord.
 
-* Si la vérification d’arrière-plan est réussie, le formulaire affiche un message de confirmation.
-* Si d’autres documents sont nécessaires, le formulaire affiche une section demandant au demandeur de télécharger les informations requises, ainsi qu’un message d’alerte.
+![règle d’événement de répartition](/help/forms/assets/dispatch-event-rule.png)
 
-![Distribuer la sortie d’événement](/help/forms/assets/dispatch-trigger-output.png)
+Lorsque l’utilisateur envoie le formulaire avec les informations d’identification correctes et un mot de passe à usage unique valide, la connexion réussit et l’utilisateur est redirigé vers son tableau de bord.
 
 Prise en charge des événements personnalisés permettant aux développeurs et aux développeuses de créer et de déclencher des événements personnalisés pouvant être utilisés comme conditions dans l’éditeur de règles.
 
@@ -192,3 +200,7 @@ Si la valeur du paramètre **utm_source** est égale à « google », un message
 Les marketeurs peuvent ainsi diffuser du contenu pertinent aux utilisateurs en fonction de la campagne qui les a amenés dans le formulaire, sans avoir à effectuer une saisie manuelle du champ ni à utiliser un script personnalisé.
 
 Ces améliorations étendent de manière significative les fonctionnalités de l’éditeur de règles du Forms adaptatif, en fournissant aux développeurs et développeuses des outils puissants pour créer des formulaires plus dynamiques, interactifs et intelligents. Chaque amélioration répond à des besoins professionnels spécifiques tout en conservant la facilité d’utilisation qui rend l’éditeur de règles accessible aux utilisateurs et utilisatrices techniques et non techniques.
+
+## Ressources supplémentaires
+
+{{see-also-rule-editor}}

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 10%
 
 ---
@@ -47,7 +47,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 
    **Où trouver ces informations ?**
 
-   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) ».
+   Pour obtenir des instructions détaillées sur la localisation de ces détails, reportez-vous à l’article Adobe Experience League « [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) ».
 
    **Votre projet est prêt !**
 
@@ -252,10 +252,10 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
    ![Message de remerciement](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
-   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **&#x200B;**&#x200B;afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
+   Une fois le formulaire envoyé, vous pouvez vérifier la configuration de la console web de Adobe Experience Manager **** afin de vérifier l’action de l’action d’envoi personnalisée dans l’environnement de développement local.
 1. Accédez à `http://<host>:<port>/system/console/configMgr`.
 
-1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **&#x200B;**&#x200B;à l’adresse `http://<host>:<port>/system/console/slinglog`.
+1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **** à l’adresse `http://<host>:<port>/system/console/slinglog`.
 
    ![ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
 
@@ -268,7 +268,14 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
    >[!NOTE]
    >
-   > Pour afficher les journaux d’erreurs dans l’environnement AEM as a Cloud Service, vous pouvez utiliser Splunk.
+   > * Pour afficher les journaux d’erreurs dans l’environnement AEM as a Cloud Service, vous pouvez utiliser Splunk.
+   > * Si un service d’action d’envoi personnalisé rencontre une erreur non gérée, AEM as a Cloud Service renvoie une page d’erreur 502 d’HTML.
+
+
+## Questions fréquentes
+
+**Q : Pourquoi mon formulaire adaptatif affiche-t-il une page d’erreur 5.x.x après l’envoi ?**
+Échec du service d’action d’envoi personnalisé avec une erreur non gérée. AEM Cloud Service renvoie ensuite sa page d’erreur par défaut.
 
 <!--
 ## Best practices

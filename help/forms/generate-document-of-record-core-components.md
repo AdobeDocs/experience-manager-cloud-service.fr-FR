@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3207'
-ht-degree: 88%
+source-wordcount: '3244'
+ht-degree: 86%
 
 ---
 
@@ -144,7 +144,7 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez u
 * Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur ou l’utilisatrice apparaît en tant que texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document d’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
-* La version localisée du document d’enregistrement est créée sur demande pour un paramètre régional lorsque l’utilisateur demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
+* La version localisée du document d’enregistrement est créée sur demande pour des paramètres régionaux lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
@@ -320,7 +320,7 @@ Respectez rigoureusement les conventions et instructions mentionnées ci-dessus 
 
 Lors de la génération d’un document d’enregistrement, vous pouvez modifier les informations d’identité graphique pour le document d’enregistrement sous l’onglet Document d’enregistrement. L’onglet Document d’enregistrement inclut des options telles que le logo, l’apparence, la mise en page, l’en-tête et le pied de page, la clause de non-responsabilité et si vous souhaitez inclure des options de case à cocher et de bouton radio désélectionnées.
 
-Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
+Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que les paramètres régionaux du navigateur sont définis correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configurer](assets/configure.png).
 1. Sélectionnez ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
@@ -348,7 +348,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
       * **Séparateur pour plusieurs valeurs** : vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
       * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
-      * **Nombre d’options d’alignement horizontal** : vous pouvez définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
+      * **Nombre d’options d’alignement horizontal**:You permet de définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
 
 
 
@@ -415,6 +415,7 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 * **Afficher le panneau sous forme de tableau** : la définition de cette propriété affiche le panneau sous forme de tableau dans le document d’enregistrement s’il comporte moins de 6 champs. Applicable au panneau uniquement.
 * **Exclure le titre du document d’enregistrement** : la définition de la propriété exclut le titre du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
 * **Exclure la description du document d’enregistrement** : la définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
+* **Exclure les champs masqués du document d’enregistrement** : la sélection de cette propriété exclut les champs masqués du document d’enregistrement. Elle s’applique à tous les champs de formulaire. Par défaut, l’option **Exclure les champs masqués du document d’enregistrement** n’est pas sélectionnée.
 
 **Paramètres des niveaux de formulaires**
 
