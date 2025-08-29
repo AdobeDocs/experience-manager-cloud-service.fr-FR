@@ -4,10 +4,10 @@ description: AEM fournit des dossiers de bibliothèques côté client qui vous p
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 91%
+source-wordcount: '2422'
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 
 ## Que sont les bibliothèques côté client ? {#what-are-clientlibs}
 
-Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente est un mécanisme AEM permettant de référencer (par catégorie si nécessaire) et de diffuser ces ressources.
+Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque cliente est un mécanisme d’AEM à référencer (par catégorie si nécessaire) et qui fournit ces ressources.
 
 AEM collecte le CSS et code JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie d’une ressource est incluse dans la sortie HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
 
@@ -197,7 +197,7 @@ Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour ide
 
 * **Nom :** dependencies
 * **Type :** chaîne[]
-* **Valeurs :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques en cours.
+* **Values :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques actif.
 
 Par exemple, `/etc/clientlibs/myclientlibs/publicmain` comporte une dépendance sur la bibliothèque `cq.jquery`. La page qui fait référence à la bibliothèque cliente principale génère un fichier HTML qui comprend le code suivant :
 
@@ -288,7 +288,7 @@ Les préprocesseurs enfichables permettent une utilisation flexible, notamment 
 
 >[!NOTE]
 >
->Par défaut, AEM utilise YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des clientlibs spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
+>Par défaut, AEM utilise le compresseur GCC pour réduire Javascript.
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ Les préprocesseurs enfichables permettent une utilisation flexible, notamment 
 Vous pouvez choisir de configurer les préprocesseurs par bibliothèque cliente ou à l’échelle du système.
 
 * Ajoutez les propriétés à plusieurs valeurs `cssProcessor` et `jsProcessor` sur le nœud clientlibrary (bibliothèque cliente).
-* Vous pouvez également définir la configuration par défaut du système par le biais de la configuration OSGi du **Gestionnaire de bibliothèques HTML**.
 
-La configuration d’un préprocesseur sur le nœud clientlibrary est prioritaire sur la configuration OSGI.
+La définition de la configuration système par défaut via la configuration OSGi **Gestionnaire de bibliothèques HTML** n’est pas prise en charge. Elle s’appliquera uniquement au SDK local et non aux exécutions de pipeline full stack.
 
 #### Format et exemples {#format-and-examples}
 
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 #### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
-YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
-
-1. Accédez à Apache Felix Config Manager à l’adresse `http://<host>:<port/system/console/configMgr`.
-1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
-1. Activez l’option **Minifier** (le cas échéant).
-1. Définissez la valeur **Configuration par défaut du processeur JS** sur `min:gcc`.
-   * Les options peuvent être transmises si elles sont séparées par un point-virgule, par exemple, `min:gcc;obfuscate=true`.
-1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
+La définition du minificateur système par défaut n’est pas prise en charge dans AEM as a Cloud Service.
