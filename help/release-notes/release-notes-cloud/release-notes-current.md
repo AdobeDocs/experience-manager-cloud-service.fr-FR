@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 827077d8dd39520a74992907134e0466b7beb648
+source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 47%
+source-wordcount: '1961'
+ht-degree: 48%
 
 ---
 
@@ -81,32 +81,59 @@ Créez des URL Vanity pour la diffusion de ressources dans DM avec OpenAPI, en r
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités d’AEM Forms {#forms-new-features}
+### Nouvelles fonctionnalités de Experience Manager Forms {#new-features-forms}
 
-* [Composant d’entrée de date et d’heure](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) : un composant de date et d’heure est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement les valeurs dans un format pris en charge.
-* [Amélioration de la gestion des erreurs pour les chargements de fichiers](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) : le composant Pièce jointe valide désormais automatiquement le type de fichier chargé par rapport à la liste autorisée. Si un utilisateur télécharge un fichier dans un format non pris en charge, le formulaire affiche une erreur lors de l’envoi. Le composant vérifie également le contenu du fichier pour valider son type, ce qui améliore la sécurité globale du formulaire.
-* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée ](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
-* [Exclusion des champs masqués du document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings) : une nouvelle propriété a été ajoutée pour permettre l’exclusion des champs masqués du document d’enregistrement. Par défaut, cette option n’est pas sélectionnée et s’applique à tous les champs de formulaire.
+**Composant Entrée De Date Et D’Heure**
+
+Un composant [Date et heure](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner à la fois la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement des valeurs dans un format pris en charge.
+
+**Amélioration de la gestion des erreurs pour les chargements de fichiers**
+
+Le composant [ Pièce jointe ](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) valide désormais automatiquement le type de fichier chargé par rapport à la liste autorisée. Si un utilisateur télécharge un fichier dans un format non pris en charge, le formulaire affiche une erreur lors de l’envoi. Le composant vérifie également le contenu du fichier pour valider son type, ce qui améliore la sécurité globale du formulaire.
+
+**Réponse d’erreur spécifiée pour l’action d’envoi personnalisée**
+
+Lorsqu’une [action d’envoi personnalisée](/help/forms/custom-submit-action-troubleshooting.md) rencontre une erreur non gérée, le système renvoie le code d’erreur 502. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
+
+**Exclusion des champs masqués du document d’enregistrement**
+
+Une nouvelle propriété permet d’exclure les champs masqués du [document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). Par défaut, cette option n’est pas sélectionnée et s’applique à tous les champs de formulaire.
+
 
 ### Fonctionnalités de version préliminaire d’AEM Forms
 
-* [Générer et synchroniser les rendus AFP](/help/forms/document-generation-afp-api.md) : vous pouvez désormais utiliser l’API de communication AEM Forms pour convertir un fichier XDP au format AFP. L&#39;AFP est un format haute performance largement utilisé dans l&#39;impression d&#39;entreprise à grande échelle.
-* **Améliorations apportées à l’éditeur de règles**
-   * [Méthode de validation dans la liste de fonctions](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list) : les méthodes de validation et de réinitialisation prennent désormais en charge l’exécution au niveau du panneau, du champ et du formulaire. Auparavant, elles n’étaient prises en charge qu’au niveau du formulaire.
-   * [Prise en charge moderne de JavaScript](/help/forms/rule-editor-core-components-difference-tables.md) : la prise en charge des fonctionnalités ECMAScript 2019 et versions ultérieures a été ajoutée pour les fonctions personnalisées, ce qui vous permet d’écrire du code plus efficace, modulaire et réutilisable
-   * [Option Télécharger le document d’enregistrement dans l’éditeur de règles](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor) : une fonction permettant de télécharger le document d’enregistrement a été ajoutée en tant qu’option prête à l’emploi dans l’éditeur de règles.
-     ![ Document d’enregistrement ](/help/forms/assets/document-of-record-rn.gif)
-   * [Variables dynamiques dans l’éditeur de règles](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules) : vous pouvez désormais utiliser des variables dynamiques (temporaires) dans l’éditeur de règles pour une plus grande flexibilité dans la définition des conditions et des actions. Les champs masqués ne sont plus nécessaires pour stocker des valeurs temporaires.
-   * [Prise en charge des règles basées sur un événement personnalisé](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support) : vous pouvez désormais définir des événements personnalisés et déclencher des règles basées sur ces événements.
-   * [Règles de panneau répétables basées sur le contexte](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels) : dans les panneaux répétables, les règles sont désormais exécutées en fonction du contexte, au lieu d’être appliquées uniquement à la dernière instance de panneau.
-   * [Règles déclenchées par des paramètres](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms) : l’éditeur de règles prend désormais en charge l’exécution de règles en fonction des paramètres de requête, des paramètres UTM ou des paramètres de navigateur.
-   * [Fonctions personnalisées spécifiques aux formulaires](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms) : Edge Delivery Services Forms prend désormais en charge les scripts de fonction personnalisée spécifiques aux formulaires, offrant ainsi une plus grande flexibilité dans la gestion de la logique réutilisable.
-   * [Imports statiques pour les fonctions personnalisées ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions) : l’éditeur de règles de l’éditeur universel prend désormais en charge les importations statiques, ce qui permet aux développeurs et aux développeuses d’organiser, de partager et de réutiliser des fonctions dans plusieurs formulaires.
+**Générer et synchroniser des rendus AFP**
 
-### Fonctionnalités d’adoption précoce dans AEM Forms
+Vous pouvez désormais utiliser l’[API de communication AEM Forms](/help/forms/document-generation-afp-api.md) pour convertir un fichier XDP au format AFP. L&#39;AFP est un format haute performance largement utilisé dans l&#39;impression d&#39;entreprise à grande échelle.
 
-* [Composant Signature tactile](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) : vous pouvez désormais utiliser le composant Signature tactile pour aider les utilisateurs et les utilisatrices à ajouter leurs signatures à un formulaire, comme dans un formulaire d’accord. Le composant permet aux utilisateurs de tracer leur signature directement dans le formulaire à l’aide d’une souris, d’un stylet ou d’un écran tactile.
-* [Intégration directe de l’API dans l’éditeur de règles](/help/forms/api-integration-in-rule-editor.md) : le Forms adaptatif prend désormais en charge l’intégration directe de l’API dans l’éditeur visuel de règles sans nécessiter de modèle de données de formulaire. Les auteurs peuvent configurer des API à l’aide d’une importation d’URL ou cURL, mapper des paramètres d’entrée/sortie et sécuriser les appels avec authentification.
+**Améliorations apportées à l’éditeur de règles**
+
+* [Méthode de validation dans la liste de fonctions](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list) : les méthodes de validation et de réinitialisation prennent désormais en charge l’exécution au niveau du panneau, du champ et du formulaire. Auparavant, elles n’étaient prises en charge qu’au niveau du formulaire.
+* [Prise en charge moderne de JavaScript](/help/forms/rule-editor-core-components-difference-tables.md) : la prise en charge des fonctionnalités ECMAScript 2019 et versions ultérieures a été ajoutée pour les fonctions personnalisées, ce qui vous permet d’écrire du code plus efficace, modulaire et réutilisable.
+* [Option Télécharger le document d’enregistrement dans l’éditeur de règles](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor) : une fonction permettant de télécharger le document d’enregistrement a été ajoutée en tant qu’option prête à l’emploi dans l’éditeur de règles.
+
+  ![ Document d’enregistrement ](/help/forms/assets/document-of-record-rn.gif)
+
+* [Variables dynamiques dans l’éditeur de règles](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules) : vous pouvez désormais utiliser des variables dynamiques (temporaires) dans l’éditeur de règles pour une plus grande flexibilité dans la définition des conditions et des actions. Les champs masqués ne sont plus nécessaires pour stocker des valeurs temporaires.
+* [Prise en charge des règles basées sur un événement personnalisé](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support) : vous pouvez désormais définir des événements personnalisés et déclencher des règles basées sur ces événements.
+* [Règles de panneau répétables basées sur le contexte](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels) : dans les panneaux répétables, les règles sont désormais exécutées en fonction du contexte, au lieu d’être appliquées uniquement à la dernière instance de panneau.
+* [Règles déclenchées par des paramètres](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms) : l’éditeur de règles prend désormais en charge l’exécution de règles en fonction des paramètres de requête, des paramètres UTM ou des paramètres de navigateur.
+* [Fonctions personnalisées spécifiques aux formulaires](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms) : Edge Delivery Services Forms prend désormais en charge les scripts de fonction personnalisée spécifiques aux formulaires, offrant ainsi une plus grande flexibilité dans la gestion de la logique réutilisable.
+* [Imports statiques pour les fonctions personnalisées ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions) : l’éditeur de règles de l’éditeur universel prend désormais en charge les importations statiques, ce qui permet aux développeurs et aux développeuses d’organiser, de partager et de réutiliser des fonctions dans plusieurs formulaires.
+
+### Nouvelles fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
+
+Le programme d’accès anticipé d’AEM Forms offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement.
+
+Ces notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, consultez [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
+
+**Composant Signature tactile**
+
+Vous pouvez désormais utiliser le [composant Signature tactile](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) pour aider les utilisateurs et les utilisatrices à ajouter leurs signatures à un formulaire, comme dans un formulaire d’accord. Le composant permet aux utilisateurs de tracer leur signature directement dans le formulaire à l’aide d’une souris, d’un stylet ou d’un écran tactile.
+
+**Intégration directe de l’API dans l’éditeur de règles**
+
+Le Forms adaptatif prend désormais en charge l’intégration [API directe](/help/forms/api-integration-in-rule-editor.md) dans l’éditeur visuel de règles sans avoir besoin de modèle de données de formulaire. Les auteurs peuvent configurer des API à l’aide d’une importation d’URL ou cURL, mapper des paramètres d’entrée/sortie et sécuriser les appels avec authentification.
 
 <!--
 **Forms Optimization opportunities**
@@ -153,6 +180,7 @@ Plusieurs API obsolètes ciblent la suppression le 31 août et ne doivent donc p
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--
