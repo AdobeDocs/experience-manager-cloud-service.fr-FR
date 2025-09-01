@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 38%
+source-wordcount: '632'
+ht-degree: 37%
 
 ---
 
@@ -65,6 +65,8 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 ### Problèmes connus {#known-issues-21994}
 
 * La version 2.4.65 d’Apache HTTPD introduit des modifications qui peuvent affecter certaines configurations en raison de nouvelles restrictions implémentées dans le cadre de correctifs de sécurité. Ces correctifs corrigent les vulnérabilités en s’assurant que les directives telles que `RequestHeader set`, `edit` et `edit_r` utilisées pour modifier l’en-tête Type de contenu sont désormais correctement limitées aux en-têtes de requête. Cette modification empêche toute modification involontaire des en-têtes de réponse, en particulier pour le contenu statique.
+* La version 2.4.65 d’Apache HTTPD introduit des modifications dans mod_proxy lors de l’utilisation de connexions ProxyRemote. Si vous rencontrez des problèmes, définissez l’indicateur disablereuse sur Activé.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Fonctionnalités et API obsolètes {#deprecated-21994}
 
