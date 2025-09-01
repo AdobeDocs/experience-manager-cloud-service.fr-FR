@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '317'
+ht-degree: 9%
 
 ---
 
-
 # Créer un modèle de communication interactive
+
+>[!NOTE]
+>
+> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès.
+
+>[!IMPORTANT]
+>
+> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les invites, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer pendant le programme destiné aux utilisateurs et utilisatrices précoces.
 
 Les modèles de communication interactive d’AEM permettent aux utilisateurs de définir des structures de disposition réutilisables telles que les en-têtes, les pieds de page, les logos et le style par défaut. Ces modèles servent de base pour créer des communications cohérentes, de marque et efficaces.
 
