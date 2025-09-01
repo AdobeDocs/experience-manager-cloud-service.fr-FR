@@ -4,16 +4,19 @@ description: L’outil de copie de contenu permet de copier du contenu modifiabl
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 77%
+source-wordcount: '1450'
+ht-degree: 67%
 
 ---
 
 # Outil de copie de contenu {#content-copy}
 
 L’outil de copie de contenu permet de copier du contenu modifiable à la demande à partir des environnements de production depuis AEM as a Cloud Service vers des environnements inférieurs, et ce à des fins de test.
+
+>[!NOTE]
+>Bien que le flux de copie de contenu principal aille d’environnements supérieurs à des environnements inférieurs, une fonctionnalité supplémentaire, **Flux de transfert**, permet de copier des environnements inférieurs hors production vers des environnements supérieurs hors production (par exemple, développement → évaluation, RDE → évaluation). Voir [Limites](#limitations) pour plus d’informations, y compris les exigences de disponibilité.
 
 ## Présentation {#introduction}
 
@@ -83,8 +86,8 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 1. Si nécessaire, vous pouvez modifier les chemins spécifiés.
 
-   1. Cliquez sur le X en regard des sous-chemins exclus pour pouvoir les supprimer.
-   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer**.
+   1. Cliquez sur le X à côté des sous-chemins exclus pour les supprimer.
+   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins d’accès afin d’afficher les options **Modifier** et **Supprimer**.
 
    ![Modifier la liste de chemins](assets/add-content-set-excluded-paths.png)
 
@@ -105,7 +108,7 @@ Lors de la modification de votre jeu de contenu, vous pouvez développer les che
 Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour copier du contenu. Procédez comme suit pour copier du contenu.
 
 >[!NOTE]
-> N’utilisez pas la copie de contenu dans un environnement lorsqu’une opération de [transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) s’exécute dans cet environnement.
+> N’utilisez pas de copie de contenu sur un environnement lorsqu’une opération [transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) est en cours d’exécution sur cet environnement.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -133,7 +136,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
       * Production
       * Évaluation
       * Développement/RDE
-   * Par défaut, la copie de contenu entre programmes est désactivée. Cependant, à la demande du client, elle peut être activée, ce qui rendra disponible un champ d’entrée **Programme de destination** supplémentaire.
+   * Par défaut, la copie de contenu sur l’ensemble des programmes est désactivée. Cependant, à la demande du client, elle peut être activée, ce qui rendra disponible un champ d’entrée **Programme de destination** supplémentaire.
 
 1. Si nécessaire, vous pouvez également sélectionner **Inclure les listes de contrôle d’accès** dans votre processus de copie.
 
@@ -192,7 +195,9 @@ Les journaux sont téléchargés sur votre ordinateur local. Si le téléchargem
 
 L’outil de copie de contenu présente les limites suivantes.
 
-* Le contenu ne peut pas être copié d’un environnement inférieur vers un environnement supérieur.
+* L’outil de copie de contenu prend en charge deux modes de flux :
+   1. Flux descendant : le contenu peut être copié depuis des environnements supérieurs vers des environnements inférieurs (par exemple, Production → Évaluation, Évaluation → Développement/RDE).
+   2. Flux de transfert (nouvelle fonctionnalité) : le contenu peut également être copié d’un environnement hors production inférieur vers un environnement hors production supérieur (par exemple, Développement → évaluation, RDE → évaluation). Cette fonctionnalité est disponible uniquement sur demande explicite et reste activée jusqu’à ce qu’il soit explicitement demandé de la désactiver. Les environnements de production ne sont jamais des destinations valides pour le flux de transfert.
 * Il ne peut être copié que depuis et vers les services de création.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
