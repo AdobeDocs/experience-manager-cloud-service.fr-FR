@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # Présentation de l’éditeur de communication interactive
+
+>[!NOTE]
+>
+> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès.
+
+>[!IMPORTANT]
+>
+> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les invites, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer pendant le programme destiné aux utilisateurs et utilisatrices précoces.
 
 ## Qu’est-ce que l’éditeur de communication interactive ?
 
