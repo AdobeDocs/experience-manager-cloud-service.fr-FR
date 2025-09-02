@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 4%
 
 ---
@@ -99,31 +99,38 @@ Le créateur d’expérience Forms suit une approche simple et conversationnelle
 
 ## Exemples de scénarios
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=fr)
-
-**Transformer PDF forms en Forms numérique**
-
-Convertissez des documents Acroforms, XFA PDF ou plat PDF en formulaires numériques réactifs et interactifs dotés de fonctionnalités améliorées.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
-
-**Moderniser l’ancien Forms XFA**
-
-Transformez des applications XFA complexes en expériences numériques modernes et accessibles grâce à des workflows utilisateur améliorés.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=fr)
-
-**Convertir des captures d’écran en Forms numérique**
-
-Transformez des images, des captures d’écran ou des formulaires dessinés à la main en expériences digitales entièrement fonctionnelles.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Transformation de PDF forms en Forms numérique</p>
+                    <p class="is-size-6">Convertissez des documents Acroforms, XFA PDF ou plat PDF en formulaires numériques réactifs et interactifs dotés de fonctionnalités améliorées.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Moderniser l’ancien Forms XFA</p>
+                    <p class="is-size-6">Transformez des applications XFA complexes en expériences numériques modernes et accessibles grâce à des workflows utilisateur améliorés.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Convertir des captures d’écran en Forms numérique</p>
+                    <p class="is-size-6">Transformez des images, des captures d’écran ou des formulaires dessinés à la main en expériences digitales entièrement fonctionnelles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- #### Import and Enhance Web Forms
 
@@ -148,39 +155,48 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Avantages pour les organisations
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=fr)
-
-**Création de formulaire démocratisée**
-
-Permettre aux utilisateurs non techniques de créer des formulaires sophistiqués sans connaissances en programmation grâce à des conversations en langage naturel.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=fr)
-
-**Délai de rentabilisation réduit (TTV)**
-
-Accélérez considérablement le développement des formulaires, de quelques jours à quelques heures, ce qui permet une mise sur le marché plus rapide des initiatives numériques.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=fr)
-
-**Simplicité de l’interface**
-
-Éliminez la courbe d’apprentissage grâce à une interface conversationnelle intuitive, ce qui réduit le temps de formation et accroît l’adoption.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
-
-**Intensification des efforts de modernisation**
-
-Modernisez efficacement les portfolios de formulaires hérités, en préservant la logique commerciale et en améliorant l’expérience utilisateur sur l’ensemble de votre écosystème de formulaires.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Création de formulaire démocratisée</p>
+                    <p class="is-size-6">Permettre aux utilisateurs non techniques de créer des formulaires sophistiqués sans connaissances en programmation grâce à des conversations en langage naturel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Rentabilité réduite (TTV)</p>
+                    <p class="is-size-6">Accélérez considérablement le développement des formulaires, de quelques jours à quelques heures, ce qui permet une mise sur le marché plus rapide des initiatives numériques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Simplicité de l'interface</p>
+                    <p class="is-size-6">Éliminez la courbe d’apprentissage grâce à une interface conversationnelle intuitive, ce qui réduit le temps de formation et accroît l’adoption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Adaptation des efforts de modernisation</p>
+                    <p class="is-size-6">Modernisez efficacement les portfolios de formulaires hérités, en préservant la logique commerciale et en améliorant l’expérience utilisateur sur l’ensemble de votre écosystème de formulaires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Intégration
 
