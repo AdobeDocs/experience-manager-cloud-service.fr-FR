@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,7 +57,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - « Accès refusé » ou messages d’erreur similaires
 - Icône Forms Experience Builder manquante dans l’éditeur
 
-**Solutions:**
+**Solutions :**
 
 1. **Vérifier l’inscription anticipée au programme**
    - Confirmer que vous avez été approuvé pour le programme des utilisateurs et utilisatrices précoces
@@ -82,7 +83,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Utilisation des indicateurs de chargement qui ne sont pas terminés
 - Erreurs JavaScript dans la console du navigateur
 
-**Solutions:**
+**Solutions :**
 
 1. **Dépannage du navigateur**
    - Actualisez la page (Ctrl+F5 ou Cmd+Maj+R)
@@ -112,7 +113,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Aucune suggestion de saisie automatique n’apparaît
 - Les commandes génèrent des messages d’erreur
 
-**Solutions:**
+**Solutions :**
 
 1. **Vérification de la syntaxe de la commande**
    - Vérifiez que le format de commande est correct : `/command-name description`
@@ -138,7 +139,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Messages d’erreur relatifs à des champs inconnus
 - Les modifications de champ ne s’appliquent pas correctement
 
-**Solutions:**
+**Solutions :**
 
 1. **Vérification du nom du champ**
    - Vérifier l’orthographe exacte des noms de champ (sensible à la casse)
@@ -168,7 +169,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Mises en page ou types de champs incorrects
 - La structure du formulaire ne correspond pas à la description.
 
-**Solutions:**
+**Solutions :**
 
 1. **Amélioration de la spécificité de l&#39;invite**
    - être plus détaillés dans les descriptions de formulaire ;
@@ -197,7 +198,6 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
        - Message (zone de texte requise, 500 caractères max.)
        - Envoyer à une notification par e-mail
    
-
 ### Problèmes de mise en page et de style
 
 **Symptômes :**
@@ -207,7 +207,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Les champs ne s’affichent pas correctement
 - Mauvaise hiérarchie visuelle
 
-**Solutions:**
+**Solutions :**
 
 1. **Réactivité mobile**
    - Demander des optimisations spécifiques aux appareils mobiles : « Rendre ce formulaire compatible avec les appareils mobiles »
@@ -236,7 +236,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - La logique de validation ne fonctionne pas.
 - Échec des règles métier complexes
 
-**Solutions:**
+**Solutions :**
 
 1. **Simplification des règles**
    - Scinder les règles complexes en conditions plus petites et plus simples
@@ -267,7 +267,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Messages d’erreur lors de la conversion dans PDF
 - Mauvaise reconnaissance de champ de PDF
 
-**Solutions:**
+**Solutions :**
 
 1. **Format et taille du fichier**
    - Assurez-vous que les fichiers PDF font moins de 10 Mo
@@ -296,7 +296,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Éléments de formulaire manquants
 - Erreurs de conversion ou délais d’expiration
 
-**Solutions:**
+**Solutions :**
 
 1. **Exigences de qualité d’image**
    - Utiliser des images haute résolution (minimum 300 DPI)
@@ -327,7 +327,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Les données n’atteignent pas les destinations prévues
 - Erreurs de délai d’expiration lors de l’envoi
 
-**Solutions:**
+**Solutions :**
 
 1. **Configuration de l’action Envoyer**
    - Vérifiez que l’action d’envoi est correctement configurée.
@@ -356,7 +356,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Incohérences du format des données
 - Délais d’expiration ou erreurs d’intégration
 
-**Solutions:**
+**Solutions :**
 
 1. **Vérification de la configuration API**
    - Vérifiez que les URL des points d’entrée de l’API sont correctes et accessibles.
@@ -385,7 +385,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Formatage d’e-mail incorrect
 - Données de formulaire manquantes dans les e-mails
 
-**Solutions:**
+**Solutions :**
 
 1. **Configuration des e-mails**
    - Vérifier que les adresses e-mail sont correctement formatées
@@ -416,7 +416,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Délais d’expiration pendant les opérations de formulaire
 - Mauvaises performances sur les appareils mobiles
 
-**Solutions:**
+**Solutions :**
 
 1. **Optimisation des formulaires**
    - Réduction du nombre de champs et de la complexité
@@ -445,7 +445,7 @@ Ce guide de dépannage complet vous permet d’identifier, de diagnostiquer et d
 - Gel du formulaire pendant la validation
 - Erreurs de délai d’expiration lors de la validation du champ
 
-**Solutions:**
+**Solutions :**
 
 1. **Optimisation de la validation**
    - Réduction de la fréquence de validation en temps réel

@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 15%
+source-wordcount: '2013'
+ht-degree: 6%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-> La fonctionnalité Forms Experience Builder est disponible dans le cadre du **programme destiné aux utilisateurs et utilisatrices précoces**. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès à la fonctionnalité.
+> La fonctionnalité Forms Experience Builder est disponible dans le cadre du programme **Accès anticipé (EA)**. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès à la fonctionnalité.
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que le Forms Experience Builder continue d’évoluer au cours du programme destiné aux utilisateurs et utilisatrices précoces.
+> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que le Forms Experience Builder continue d’évoluer pendant le programme d’accès anticipé.
 
 Ce guide complet vous aide à commencer à créer et gérer des formulaires à l’aide de la technologie d’IA conversationnelle. Que vous soyez un débutant à la recherche de la création de votre premier formulaire ou un utilisateur expérimenté cherchant à tirer parti de fonctionnalités sophistiquées, vous trouverez des informations détaillées et des exemples pratiques pour guider votre parcours à travers les fonctionnalités du Forms Experience Builder.
 
@@ -30,11 +30,35 @@ Ce guide complet vous aide à commencer à créer et gérer des formulaires à l
 
 ### &#x200B;1. Demander l’accès
 
-Si vous n’avez pas accès à Forms Experience Builder :
+Forms Experience Builder est actuellement disponible dans le cadre du programme d’accès anticipé (EA). Pour participer et y accéder, vous aurez besoin des informations suivantes :
 
-1. **Demander l&#39;accès** : envoyez un e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) à partir de votre e-mail professionnel.
-2. **Inclure les informations** : nom de l’organisation et détails du projet
-3. **En attente d’approbation** : Adobe examinera et fournira des instructions d’intégration.
+**Informations requises**
+
+- **ID d’organisation IMS** : identifiant de votre organisation Adobe
+- **ID de programme** : identifiant de programme spécifique dans Adobe Experience Cloud
+- **Détails du projet** : calendrier, portée et cas d’utilisation prévus
+- **E-mail professionnel officiel** : associé au compte Adobe de votre entreprise
+
+**Comment obtenir l’identifiant de l’organisation IMS et l’identifiant du programme**
+
+Pour obtenir des instructions détaillées afin de localiser votre ID d’organisation IMS et votre ID de programme, voir :
+
+- [Guide de configuration de l’organisation Adobe Experience Cloud](/help/onboarding/cloud-manager-introduction.md)
+- [Gestion des programmes et de l&#39;environnement](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+**Demander l’accès**
+
+1. Rassemblez votre identifiant d’organisation IMS et votre identifiant de programme à l’aide des guides ci-dessus
+2. Envoyer un e-mail à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pour demander l’accès
+3. Inclure dans votre demande :
+   - Nom de l’organisation et ID de l’organisation IMS
+   - ID de programme
+   - Chronologie et portée du projet
+   - Cas d’utilisation prévus et objectifs commerciaux
+
+>[!IMPORTANT]
+>
+> **Programme de disponibilité limitée** : l’accès à Forms Experience Builder est soumis à l’approbation des parties prenantes internes. Adobe examinera votre demande en fonction de la capacité du programme et de l&#39;alignement sur les critères d&#39;accès anticipé. L’approbation n’est pas garantie et dépend de la disponibilité actuelle du programme.
 
 ### &#x200B;2. Vérifiez que Forms est activé
 
@@ -44,58 +68,81 @@ Avant d’utiliser Forms Experience Builder, vérifiez qu’[AEM Forms est activ
 ### &#x200B;3. Configuration De Votre Environnement
 
 
-* **Pour Edge Delivery Services (EDS) :**
+- **Pour Edge Delivery Services (EDS) :**
 
-   * [Configuration de l’environnement pour Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   * [Création d’un formulaire à partir du modèle Edge Delivery Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
+   - [Configuration de l’environnement pour Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Création d’un formulaire à partir du modèle Edge Delivery Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
 
-* **Pour les formulaires basés sur les composants principaux :**
+- **Pour les formulaires basés sur les composants principaux :**
 
-   * Sur votre instance Adobe Experience Manager, accédez à Forms > Forms et documents
-   * [Créer une page à l’aide du modèle de composants principaux](/help/forms/creating-adaptive-form-core-components.md)
+   - Sur votre instance Adobe Experience Manager, accédez à Forms > Forms et documents
+   - [Créer une page à l’aide du modèle de composants principaux](/help/forms/creating-adaptive-form-core-components.md)
+
 
 ## Démarrage rapide
 
 ### Accès au Forms Experience Builder
 
-**Éditeur universel**
+Forms Experience Builder est disponible dans l’interface utilisateur de gestion de Forms, l’éditeur universel et l’éditeur de Forms adaptatif. Vous pouvez utiliser l’une de ces méthodes pour accéder au formulaire :
 
-* Ouvrez votre page EDS dans l’éditeur universel.
-* Recherchez l’icône Forms Experience Builder dans le panneau de gauche
-* Cliquer pour ouvrir l’interface de conversation
+**Interface utilisateur de gestion de Forms (pour les composants principaux)**
 
-**Éditeur de formulaires adaptatifs**
+1. **Accédez à Forms** : accédez à AEM > Forms > Forms et documents.
+1. Cliquez sur l’icône Forms Experience Builder dans la barre d’outils. Il se trouve près du coin supérieur gauche de l’interface utilisateur.
+   ![Icône de l’assistant IA*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+1. Commencer la création du formulaire de conversation
 
-* Accédez à : AEM > Forms > Forms et documents .
-* Créer ou ouvrir un formulaire basé sur des composants principaux pour le modifier
-* Cliquez sur l’icône Forms Experience Builder dans la barre d’outils de l’éditeur
+
+**Éditeur de Forms adaptatif (pour les composants principaux)**
+
+1. Accédez à AEM > Forms > Forms et documents .
+2. [Créer un formulaire à l’aide du modèle Composants principaux](/help/forms/creating-adaptive-form-core-components.md)
+3. Ouvrez le formulaire pour le modifier
+4. Cliquez sur l’icône Forms Experience Builder dans la barre d’outils de l’éditeur
+   ![Icône de l’assistant IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+
+5. Commencer la création du formulaire de conversation
+
+
+**Éditeur universel (pour Edge Delivery Services Forms)**
+
+1. Suivez le guide de configuration de [Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) pour créer votre page EDS
+1. Accédez à la page EDS dans l’éditeur universel.
+1. Recherchez l’icône Forms Experience Builder dans le panneau de droite
+1. Cliquer pour ouvrir l’interface de conversation
+
+
 
 ### Votre premier formulaire
 
-Essayez cette conversation simple pour commencer :
+| Exemple de conversation |   |
+|--------------------------------------------------------------------------------------------------------------------------------------------|---|
+| **Essayez cette conversation pour créer un formulaire de contact complet (basé sur la démonstration de Summit) :**<br><br>**Vous :** « Créez un formulaire de contact pour capturer des informations personnelles, y compris le nom complet, l’adresse e-mail, le numéro de téléphone, le nom de la société, l’intitulé de la fonction et un champ de message pour les demandes »<br><br>**AI :** sélectionnez un modèle<br>    Liste déroulante pour sélectionner un modèle <br><br>**AI :** un thème<br>    Liste déroulante pour sélectionner un thème <br><br>**AI :** Créer un formulaire | ![Votre Premier Formulaire](/help/edge/docs/forms/assets/create-form.png) |
+| <br>**AI:** Ouvrir le formulaire créé | </br> Le formulaire est créé et ouvert dans l’éditeur |
 
-```
-👤 You: "Create a simple contact form"
-🤖 AI: "I'll create a contact form with name, email, and message fields for you."
-
-👤 You: "Make the email field required"
-🤖 AI: "Updated the email field to be required with validation."
-```
 
 ### Commandes Essentielles
 
-| Symbole | Objectif | Utilisation |
-|--------|---------|------------|
-| `/` | Actions rapides et raccourcis | Saisissez `/create` pour la création de formulaire, `/help` pour obtenir de l’aide |
-| `@` | Référencer les champs de formulaire existants | Tapez `@fieldName` pour modifier des champs spécifiques (par exemple, `@email`) |
-| Texte brut | Conversation naturelle | Décrivez ce que vous souhaitez : « Ajouter un champ de numéro de téléphone obligatoire » |
+| Symbole | Objectif | Exemple d’utilisation |
+|--------|---------|---------------|
+| `/` | Actions rapides et raccourcis | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
+| `@` | Référencer les champs de formulaire existants | `@email`, `@firstName`, `Make @phoneNumber required` |
+| Texte brut | Conversation naturelle | « Ajouter un champ de numéro de téléphone obligatoire », « Créer une validation pour l’e-mail » |
+
+**Exemples de commandes spécifiques :**
+
+- `/create-form customer survey` - Crée un formulaire d’enquête auprès des clients
+- `/add-field @email validation` - Ajoute la validation au champ d’e-mail existant
+- `/create-rule show @spouse if @maritalStatus equals married` - Crée une logique conditionnelle
+- `/configure-submit to email support@company.com` - Configuration de l’envoi d’e-mails
+- `/help multi-step forms` - Obtient de l’aide sur la création de formulaires à plusieurs étapes
 
 ### Conseils pour réussir
 
-* **Soyez précis** : « Ajouter un champ d’e-mail obligatoire avec validation » fonctionne mieux que « Ajouter un e-mail »
-* **Référencer des champs existants** : utiliser des `@fieldName` lors de la modification de formulaires
-* **Demander de l’aide** : saisissez `/help` suivi de votre question
-* **Itérer** : effectuez une modification à la fois pour obtenir de meilleurs résultats
+- **Soyez précis** : « Ajouter un champ d’e-mail obligatoire avec validation » fonctionne mieux que « Ajouter un e-mail »
+- **Référencer des champs existants** : utiliser des `@fieldName` lors de la modification de formulaires
+- **Demander de l’aide** : saisissez `/help` suivi de votre question
+- **Itérer** : effectuez une modification à la fois pour obtenir de meilleurs résultats
 
 
 ## Méthodes de création d’un formulaire
@@ -106,9 +153,9 @@ Décrivez les exigences de votre formulaire en langage naturel. Forms Experience
 
 **Exemples :**
 
-* « Créez un formulaire de demande de prêt avec des informations personnelles, des détails financiers et des chargements de documents. »
-* « Créer un formulaire de commentaires des clients avec des évaluations, des commentaires et des catégories de produits »
-* « J&#39;ai besoin d&#39;un formulaire d&#39;inscription en plusieurs étapes pour une conférence avec traitement des paiements »
+- « Créez un formulaire de demande de prêt avec des informations personnelles, des détails financiers et des chargements de documents. »
+- « Créer un formulaire de commentaires des clients avec des évaluations, des commentaires et des catégories de produits »
+- « J&#39;ai besoin d&#39;un formulaire d&#39;inscription en plusieurs étapes pour une conférence avec traitement des paiements »
 
 ### &#x200B;2. Importer et convertir
 
@@ -116,27 +163,25 @@ Transformez les formulaires et documents existants en expériences modernes et i
 
 **Sources prises en charge :**
 
-* **PDF forms** : chargez des PDF statiques pour les convertir en formulaires numériques interactifs avec validations.
-* **Captures d’écran ou images** : chargez une photo de formulaires papier pour générer des versions numériques fonctionnelles
-* **HTML Forms** : importez et convertissez des formulaires web de base en AEM Forms amélioré avec des fonctionnalités avancées.
-* **XFA Forms** : convertir des formulaires XFA hérités en formulaires réactifs modernes
-* **URLs** : convertir des formulaires web existants en formulaires AEM Forms natifs avec une expérience utilisateur améliorée
+- **PDF forms** : chargez des PDF statiques pour les convertir en formulaires numériques interactifs avec validations.
+- **Captures d’écran ou images** : chargez une photo de formulaires papier pour générer des versions numériques fonctionnelles
+- **XFA Forms** : convertir des formulaires XFA hérités en formulaires réactifs modernes
 
 **Importer :**
 
 1. Cliquez sur l’icône de pièce jointe dans l’interface de Forms Experience Builder
 2. Chargez votre fichier (PDF, image, conception Figma, etc.)
 3. Décrivez vos exigences :
-   * « Convertir ce formulaire PDF en version numérique »
-   * « Créer un formulaire correspondant à cette disposition de capture d’écran »
-   * « Crée ce formulaire à partir de mon design Figma. »
+   - « Convertir ce formulaire PDF en version numérique »
+   - « Créer un formulaire correspondant à cette disposition de capture d’écran »
+   - « Crée ce formulaire à partir de mon design Figma. »
 
 **Types de fichiers pris en charge :**
 
-* **Images** (PNG, JPG, GIF) : dispositions de formulaires, maquettes d’interface utilisateur, formulaires numérisés
-* **Fichiers PDF** : formulaires, spécifications, documents existants
-* **Fichiers Figma** : prototypes de conception, directives de marque
-* **Fichiers de conception** : références visuelles, guides de style
+- **Images** (PNG, JPG, GIF) : dispositions de formulaires, maquettes d’interface utilisateur, formulaires numérisés, schémas dessinés à la main
+- **Fichiers PDF** : formulaires existants, spécifications, documents, Acroforms, formulaires XFA
+- **Captures d’écran** : captures d’écran d’applications de bureau ou mobiles, photos de formulaires papier, schémas de tableaux blancs
+- **Croquis dessinés à la main** : croquis de serviettes, maquettes, dessins de concept (photographiés)
 
 ### Interactions clés
 
@@ -144,91 +189,69 @@ Transformez les formulaires et documents existants en expériences modernes et i
 
 **Ajouts de base :**
 
-```
-👤 You: "Add a section for personal information"
-🤖 AI: "Added a personal information panel with standard fields"
-
-👤 You: "Include a file upload for resume"
-🤖 AI: "Added a secure file upload component for documents"
-
-👤 You: "Add a dropdown for country selection"
-🤖 AI: "Added a country dropdown with common options"
-```
+    👤 Vous : « Ajouter une section pour les informations personnelles »
+    👤 Vous : « Inclure un téléchargement de fichier pour un CV »
+    👤 Vous : « Ajouter une liste déroulante pour la sélection de pays »
 
 **Spécifications détaillées :**
 
-```
-👤 You: "Add a personal information panel with fields for full name, date of birth, phone number, and email address"
-🤖 AI: "Created a personal information panel with all requested fields and appropriate validation"
-
-👤 You: "Include a secure file upload component for documents, limited to PDF files under 5MB"
-🤖 AI: "Added a file upload field with PDF restriction and 5MB size limit"
-
-👤 You: "Add a country dropdown with options for USA, Canada, UK, and Germany"
-🤖 AI: "Added a country dropdown with the specified options"
-```
+    👤 Vous : « Ajoutez un panneau d’informations personnelles avec des champs pour le nom complet, la date de naissance, le numéro de téléphone et l’adresse e-mail »
+    👤 Vous : « Incluez un composant de chargement de fichier sécurisé pour les documents, limité aux fichiers PDF de moins de 5 Mo »
+    👤 Vous : « Ajoutez une liste déroulante par pays avec des options pour les États-Unis, le Canada, le Royaume-Uni et l’Allemagne »
 
 #### Création d’un comportement dynamique
 
 **Approche simple :**
 
-```
-👤 You: "Show additional fields when 'Other' is selected"
-🤖 AI: "Created a conditional rule that shows additional fields when 'Other' is chosen"
-
-👤 You: "Make the email field required"
-🤖 AI: "Updated the email field to be required with validation"
-
-👤 You: "Calculate the total automatically"
-🤖 AI: "Added calculation logic to automatically compute totals"
-```
+    👤 Vous : « Afficher les champs supplémentaires lorsque « Autre » est sélectionné »
+    🤖 AI : « Création d’une règle conditionnelle qui affiche des champs supplémentaires lorsque « Autre » est sélectionné »
+    
+    👤 Vous : « Rendre le champ d’e-mail obligatoire »
+    🤖 AI : « Mettre à jour le champ d’e-mail pour qu’il soit obligatoire avec la validation »
+    
+    👤 Vous : « Calculer le total automatiquement »
+    🤖 AI : « Ajout d’une logique de calcul pour calculer automatiquement les totaux »
 
 **Règles métier complexes :**
 
-```
-👤 You: "Show the spouse information fields only when marital status is set to 'Married'"
-🤖 AI: "Created a conditional rule that displays spouse fields based on marital status"
-
-👤 You: "Calculate the total cost by multiplying quantity and price, then add 10% tax"
-🤖 AI: "Added calculation logic with quantity, price, and tax computation"
-
-👤 You: "Enable the submit button only when all required fields are completed and terms are accepted"
-🤖 AI: "Created validation logic that enables submission only when all conditions are met"
-```
+    👤 Vous : « Afficher les champs d’informations sur le conjoint uniquement lorsque l’état civil est défini sur « Marié(e) » »
+    🤖 AI : « Création d’une règle conditionnelle qui affiche les champs de conjoint(e) en fonction de l’état civil »
+    
+    👤 Vous : « Calculez le coût total en multipliant la quantité et le prix, puis ajoutez la taxe de 10 % »
+    🤖 AI : « Ajout d’une logique de calcul avec le calcul de la quantité, du prix et de la taxe »
+    
+    👤 Vous : « Activez le bouton de soumission uniquement lorsque tous les champs obligatoires sont remplis et que les conditions sont acceptées »
+    🤖 AI : « Création d’une logique de validation qui permet la soumission uniquement lorsque toutes les conditions sont remplies »
 
 #### Mise en page et conception de formulaire
 
 **Modifications de la mise en page :**
 
-```
-👤 You: "Make this a multi-step form"
-🤖 AI: "Converted the form to a progressive layout with navigation"
-
-👤 You: "Organize fields in two columns"
-🤖 AI: "Updated the layout to display fields in a two-column arrangement"
-
-👤 You: "Convert to an accordion layout"
-🤖 AI: "Transformed the form to use accordion-style sections"
-```
+    👤 Vous : « Créer un formulaire à plusieurs étapes »
+    🤖 AI : « A converti le formulaire en disposition progressive avec navigation »
+    
+    👤 Vous : « Organiser les champs en deux colonnes »
+    🤖 AI : « A mis à jour la disposition pour afficher les champs dans une disposition à deux colonnes »
+    
+    👤 Vous : « A converti en disposition en accordéon »
+    🤖 AI : « A transformé le formulaire pour utiliser des sections de style accordéon »
 
 **Améliorations de la conception :**
 
-```
-👤 You: "Create a wizard-style form with 3 steps: personal info, preferences, and review"
-🤖 AI: "Created a wizard form with three distinct steps and navigation"
+    👤 Vous : « Créez un formulaire de style assistant avec 3 étapes : informations personnelles, préférences et révision »
+    🤖 AI : « Création d’un formulaire d’assistant avec trois étapes et une navigation distinctes »
+    
+    👤 Vous : « Organisez les champs d’adresse dans une disposition compacte à deux colonnes »
+    🤖 AI : « Champs d’adresse organisés dans un format compact à deux colonnes »
+    
+    👤 Vous : « Mettez à jour la disposition pour qu’elle corresponde au cadre filaire joint »
+    🤖 AI : « Modification de la disposition pour qu’elle corresponde à la référence de conception fournie »
 
-👤 You: "Arrange the address fields in a compact two-column layout"
-🤖 AI: "Organized address fields in a compact two-column format"
-
-👤 You: "Update the layout to match the attached wireframe"
-🤖 AI: "Modified the layout to match the provided design reference"
-```
-
-### Configuration de l&#39;intégration
+### Envoyer la configuration
 
 Forms Experience Builder peut configurer différents points d’entrée d’envoi pour connecter vos formulaires à des systèmes et services externes :
 
-| Type d’intégration | Commande d&#39;installation | Cas d’utilisation |
+| Type d’action Envoyer | Commande d&#39;installation | Cas d’utilisation |
 |------------------|---------------|----------|
 | **E-mail** | « Envoyer le formulaire à un e-mail » | Notifications et confirmations pour les envois de formulaire |
 | **API REST** | « Envoyer vers le point d’entrée REST » | Applications personnalisées et systèmes tiers |
@@ -236,18 +259,16 @@ Forms Experience Builder peut configurer différents points d’entrée d’envo
 | **Workflow** | « Se connecter à Power Automate » | Automatisation et approbations des processus métier |
 | **Marketing** | « Intégration à Marketo » | Automatisation de la gestion des leads et du marketing |
 
-**Exemples d’intégration avancés :**
+**Exemples de configuration d’envoi avancée :**
 
-```
-👤 You: "Send form submissions to hr@company.com and create a case in our CRM system"
-🤖 AI: "Configured email submission and CRM integration"
-
-👤 You: "Submit data to our REST API endpoint and trigger the new customer workflow"
-🤖 AI: "Set up REST API submission with workflow triggers"
-
-👤 You: "Email responses to the sales team and add the lead to our marketing automation platform"
-🤖 AI: "Configured multi-channel submission with email and marketing automation"
-```
+    👤 Vous : « Envoyer des envois de formulaire à hr@company.com et créer un dossier dans notre système CRM »
+    🤖 AI : « Envoi d’e-mail configuré et action d’envoi CRM »
+    
+    👤 Vous : « Envoyer des données à notre point d’entrée de l’API REST et déclencher le nouveau workflow client »
+    🤖 AI : « Configurer l’envoi de l’API REST avec des déclencheurs de workflow »
+    
+    👤 Vous : « Envoyer des réponses par e-mail à l’équipe commerciale et ajouter le prospect à notre plateforme d’automatisation marketing »
+    🤖 AI : « Envoi multicanal configuré avec automatisation des e-mails et du marketing »
 
 
 
@@ -260,134 +281,30 @@ Forms Experience Builder peut configurer différents points d’entrée d’envo
 
 Créez une validation sophistiquée et une logique commerciale qui répond aux interactions des utilisateurs et assure l’intégrité des données :
 
-```
-👤 You: "Show the address section only if the user selects 'Ship to different address'"
-🤖 AI: "Created a conditional rule that shows/hides the address panel based on checkbox selection"
-```
+    👤 vous : « Afficher la section d’adresse uniquement si l’utilisateur sélectionne « Adresse de livraison différente » »
+    🤖 AI : « Création d’une règle conditionnelle qui affiche/masque le panneau d’adresse en fonction de la sélection de la case à cocher »
 
 ### Création de formulaire à plusieurs étapes
 
-```
-👤 You: "Create a progressive form with 3 steps: personal info, preferences, confirmation"
-🤖 AI: "Created a progressive form with navigation between steps and validation at each stage"
-```
+    👤 vous : « Créer un formulaire progressif avec 3 étapes : informations personnelles, préférences, confirmation »
+    🤖 AI : « Création d’un formulaire progressif avec une navigation entre les étapes et la validation à chaque étape »
 
 ### Types de champs avancés
 
-* Chargement de fichier avec validation et restrictions de taille pour la gestion des documents
-* Sélecteurs de date avec contraintes et règles de gestion pour la planification
-* Listes déroulantes avec des options dynamiques qui changent en fonction des sélections de l’utilisateur
-* Cases d&#39;option avec logique conditionnelle pour arbres de décision complexes
+- Chargement de fichier avec validation et restrictions de taille pour la gestion des documents
+- Sélecteurs de date avec contraintes et règles de gestion pour la planification
+- Listes déroulantes avec des options dynamiques qui changent en fonction des sélections de l’utilisateur
+- Cases d&#39;option avec logique conditionnelle pour arbres de décision complexes
 
 
 ### Conversion de PDF en formulaire
 
-```
-👤 You: "Convert this PDF into an interactive form"
-🤖 AI: "Analyzed the PDF and created a form with appropriate field types and validation"
-```
+    👤 : « Convertir ce PDF en formulaire interactif »
+    🤖 IA : « Analyser le PDF et créer un formulaire avec les types de champs et la validation appropriés »
 
-### Conversion de l’URL en formulaire
 
-```
-👤 You: "Create a form from this website"
-🤖 AI: "Extracted form elements and created a native AEM Form with enhanced functionality"
-```
 
-### Analyse des performances
 
-```
-👤 You: "Analyze this form's conversion performance"
-🤖 AI: "Provided insights on form effectiveness and suggested optimizations"
-```
-
-### Personnalisation avancée
-
-#### Règles de validation personnalisées
-
-* Dépendances de champs qui créent un comportement de formulaire dynamique en fonction des entrées utilisateur
-* Logique conditionnelle complexe qui adapte l’expérience du formulaire aux besoins de l’utilisateur
-* Messages d’erreur personnalisés qui fournissent des conseils clairs aux utilisateurs
-* Validation entre champs qui garantit la cohérence des données sur plusieurs entrées
-
-#### Optimisation de la disposition
-
-* Réactivité mobile qui garantit le fonctionnement transparent des formulaires sur tous les appareils
-* Conformité en matière d’accessibilité qui rend les formulaires utilisables par les personnes en situation de handicap
-* Améliorations de la conception visuelle qui améliorent l’interaction client et les taux d’achèvement
-* Améliorations de l’expérience utilisateur qui réduisent les frictions et améliorent la satisfaction
-
-#### Workflows d’intégration
-
-* Processus d’approbation en plusieurs étapes qui acheminent les envois de formulaire via les workflows métier
-* Transformation de données qui convertit les données de formulaire en formats requis par les systèmes externes
-* Logique commerciale personnalisée qui applique des règles et des calculs spécifiques aux envois de formulaires
-* Gestion avancée des erreurs permettant une récupération efficace après des problèmes système
-
-## Référence des commandes
-
-### Commandes Essentielles
-
-| Symbole | Objectif | Utilisation |
-|--------|---------|------------|
-| `/` | Actions rapides et raccourcis | Saisissez `/create` pour la création de formulaire, `/help` pour obtenir de l’aide |
-| `@` | Référencer les champs de formulaire existants | Tapez `@fieldName` pour modifier des champs spécifiques (par exemple, `@email`) |
-| Texte brut | Conversation naturelle | Décrivez ce que vous souhaitez : « Ajouter un champ de numéro de téléphone obligatoire » |
-
-### Commandes de barre oblique
-
-| Commande | Contexte | Exemple d’utilisation |
-|---------|---------|---------------|
-| `/create-form` | Tous les environnements | `/create-form customer survey` |
-| `/add-form` | Éditeur universel | `/add-form contact form` |
-| `/update-layout` | Éditeur de formulaires | `/update-layout wizard with 3 steps` |
-| `/update-field` | Éditeur de formulaires | `/update-field @email to be required` |
-| `/create-rule` | Éditeur de formulaires | `/create-rule show @spouse if married` |
-| `/create-panel` | Éditeur de formulaires | `/create-panel Personal Information` |
-| `/configure-submit` | Éditeur de formulaires | `/configure-submit to email support` |
-| `/help` | Tous les environnements | `/help multi-step forms` |
-
-### Références de champ
-
-Utilisez `@fieldName` pour référencer les champs existants :
-
-* `@firstName`, `@lastName` * Champs de nom
-* `@email`, `@phoneNumber` * Champs de contact
-* `@address`, `@city`, `@zipCode` * Champs d’adresse
-* `@dateOfBirth`, `@startDate` * Champs de date
-
-### Types de composant
-
-Utilisez les termes suivants pour décrire les éléments de formulaire :
-
-* `text input` * Champ de texte monoligne
-* `text area` * Champ de texte multiligne
-* `dropdown` * Sélectionner une liste avec des options
-* `checkbox` * Case à cocher unique
-* `checkbox group` * Cases à cocher multiples
-* `radio group` * Groupe de boutons radio
-* `date picker` * Champ de sélection de date
-* `file upload` * Champ de pièce jointe
-* `panel` * Conteneur pour le regroupement des champs
-
-### Commandes d’intégration
-
-| Service | Commande Langage Naturel | Conditions requises |
-|---------|--------------------------|--------------|
-| E-mail | « Envoyer des envois à [e-mail] » | Adresse e-mail valide |
-| API REST | « Envoyer vers le point d’entrée REST [URL] » | Point d’entrée et informations d’identification de l’API |
-| Stockage Azure | « Enregistrer des fichiers sur le stockage Azure » | Configuration du compte de stockage |
-| SharePoint | « Stocker dans SharePoint [site] » | Accès au site SharePoint |
-| Power Automate | « Déclencher le flux Power Automate » | Configuration de flux |
-| Marketo | « Ajouter des prospects à Marketo » | Informations d’identification de l’API Marketo |
-
-### Conseils
-
-1. **Utiliser le langage naturel** : l’IA comprend les requêtes complexes et peut interpréter les exigences détaillées
-2. **Soyez précis** : les descriptions détaillées donnent de meilleurs résultats et génèrent des formulaires plus précis
-3. **Itérer** : affinez les formulaires par la conversation pour obtenir une expérience utilisateur parfaite
-4. **Utiliser le contexte** : référencez les éléments de formulaire existants pour tirer parti de ce que vous possédez déjà.
-5. **Tester minutieusement** : valider tous les scénarios utilisateur pour s’assurer que les formulaires fonctionnent comme prévu
 
 ## Aide sur les produits et apprentissages
 
@@ -395,78 +312,51 @@ Forms Experience Builder peut également vous apprendre à utiliser les fonction
 
 ### Poser des questions du type :
 
-* « Comment créer un formulaire à plusieurs étapes ? »
-* « Quelle est la différence entre les panneaux et les sections ? »
-* « Comment configurer les notifications par e-mail ? »
-* « Quelles sont les bonnes pratiques concernant les formulaires compatibles avec les appareils mobiles ? »
-* « Comment appliquer des thèmes à mes formulaires ? »
+- « Comment créer un formulaire à plusieurs étapes ? »
+- « Quelle est la différence entre les panneaux et les sections ? »
+- « Comment configurer les notifications par e-mail ? »
+- « Quelles sont les bonnes pratiques concernant les formulaires compatibles avec les appareils mobiles ? »
+- « Comment appliquer des thèmes à mes formulaires ? »
 
 ### Obtenir de l’aide sur :
 
-* Concepts et terminologie d’AEM Forms
-* Instructions détaillées relatives aux fonctionnalités complexes
-* Bonnes pratiques et recommandations
-* Résolution des problèmes courants
+- Concepts et terminologie d’AEM Forms
+- Instructions détaillées relatives aux fonctionnalités complexes
+- Bonnes pratiques et recommandations
+- Résolution des problèmes courants
 
 ## Bonnes pratiques
 
 ### Conception de formulaire
 
-* **Restez simple** : commencez par les champs essentiels et ajoutez de la complexité uniquement lorsque cela est nécessaire pour éviter de surcharger les utilisateurs
-* **Utiliser des libellés clairs** : rendez les objectifs des champs évidents avec des libellés descriptifs qui guident les utilisateurs et les utilisatrices tout au long du formulaire
-* **Fournir un texte d’aide** : guide les utilisateurs à travers des champs complexes avec une aide contextuelle et des exemples
-* **Test approfondi** : validez tous les chemins d’accès utilisateur pour vous assurer que les formulaires fonctionnent correctement dans tous les scénarios.
+- **Restez simple** : commencez par les champs essentiels et ajoutez de la complexité uniquement lorsque cela est nécessaire pour éviter de surcharger les utilisateurs
+- **Utiliser des libellés clairs** : rendez les objectifs des champs évidents avec des libellés descriptifs qui guident les utilisateurs et les utilisatrices tout au long du formulaire
+- **Fournir un texte d’aide** : guide les utilisateurs à travers des champs complexes avec une aide contextuelle et des exemples
+- **Test approfondi** : validez tous les chemins d’accès utilisateur pour vous assurer que les formulaires fonctionnent correctement dans tous les scénarios.
 
 ### Expérience utilisateur
 
-* **Divulgation progressive** : afficher les champs pertinents en fonction du contexte pour réduire la charge cognitive et améliorer les taux d’achèvement
-* **Navigation claire** : aidez les utilisateurs et les utilisatrices à comprendre où ils se trouvent dans le formulaire et quelles étapes restent
-* **Conception réactive** : assurez-vous que les formulaires fonctionnent sur tous les appareils et toutes les tailles d’écran pour une accessibilité maximale
-* **Accessibilité** : suivez les directives WCAG pour rendre les formulaires utilisables par les personnes en situation de handicap
+- **Divulgation progressive** : afficher les champs pertinents en fonction du contexte pour réduire la charge cognitive et améliorer les taux d’achèvement
+- **Navigation claire** : aidez les utilisateurs et les utilisatrices à comprendre où ils se trouvent dans le formulaire et quelles étapes restent
+- **Conception réactive** : assurez-vous que les formulaires fonctionnent sur tous les appareils et toutes les tailles d’écran pour une accessibilité maximale
+- **Accessibilité** : suivez les directives WCAG pour rendre les formulaires utilisables par les personnes en situation de handicap
 
 ### Performance
 
-* **Optimiser le nombre de champs** : demandez uniquement les informations nécessaires pour réduire l’abandon de formulaire et améliorer les taux d’achèvement
-* **Utiliser une validation appropriée** : prévenir les erreurs avant l’envoi pour fournir des commentaires et des conseils immédiats
-* **Taux d’achèvement des tests** : surveiller et améliorer l’efficacité des formulaires par le biais d’analyses et des commentaires des utilisateurs
-* **Mises à jour régulières** : maintenez les formulaires à jour avec les besoins de l’entreprise et les attentes des utilisateurs pour des performances optimales
+- **Optimiser le nombre de champs** : demandez uniquement les informations nécessaires pour réduire l’abandon de formulaire et améliorer les taux d’achèvement
+- **Utiliser une validation appropriée** : prévenir les erreurs avant l’envoi pour fournir des commentaires et des conseils immédiats
+- **Taux d’achèvement des tests** : surveiller et améliorer l’efficacité des formulaires par le biais d’analyses et des commentaires des utilisateurs
+- **Mises à jour régulières** : maintenez les formulaires à jour avec les besoins de l’entreprise et les attentes des utilisateurs pour des performances optimales
 
 ### Cohérence de la marque
 
-* **Créer des modèles de marque** : préparez les modèles de formulaire de marque avec les couleurs, les polices et le style de votre entreprise avant de commencer la création de formulaire
-* **Définir des normes de style** : définissez des styles de bouton, une disposition des champs et des instructions d’espacement cohérents qui peuvent être référencés dans les invites
-* **Utiliser des ressources de marque** : préparez les logos, les codes couleur et les directives de la marque pour une référence facile lors de la création de formulaires
-* **Bibliothèque de modèles** : créez une collection de modèles de formulaire de marque pour les cas d’utilisation courants (contact, enregistrement, commentaires).
-* **Invites de style** : incluez des instructions spécifiques à la marque : « Utiliser le bleu de la société (#1234AB) pour les boutons et les polices d’entreprise Helvetica »
+- **Créer des modèles de marque** : préparez les modèles de formulaire de marque avec les couleurs, les polices et le style de votre entreprise avant de commencer la création de formulaire
+- **Définir des normes de style** : définissez des styles de bouton, une disposition des champs et des instructions d’espacement cohérents qui peuvent être référencés dans les invites
+- **Utiliser des ressources de marque** : préparez les logos, les codes couleur et les directives de la marque pour une référence facile lors de la création de formulaires
+- **Bibliothèque de modèles** : créez une collection de modèles de formulaire de marque pour les cas d’utilisation courants (contact, enregistrement, commentaires).
+- **Invites de style** : incluez des instructions spécifiques à la marque : « Utiliser le bleu de la société (#1234AB) pour les boutons et les polices d’entreprise Helvetica »
 
-### Conseils pour obtenir de meilleurs résultats
 
-**Démarrer simple, créer**
-
-* Commencer par une demande de base : « Créer un formulaire de contact »
-* Ajouter des détails progressivement : « Ajouter la validation au champ d’e-mail »
-* Tester et affiner : « Rendre le champ du numéro de téléphone facultatif »
-
-**Soyez Précis Si Nécessaire**
-
-* Au lieu de : « Créer un beau formulaire »
-* Essayer : « Utiliser des couleurs professionnelles et une typographie simple »
-
-**Utiliser le langage naturel**
-
-* Au lieu de : « Ajouter un composant de saisie de texte »
-* Essayer : « Ajouter un champ pour le prénom »
-
-**Référencer des éléments existants**
-
-* Utiliser `@fieldName` pour les champs existants : « Rendre @email obligatoire »
-* Faire preuve de précision concernant les noms de champ : « Mettre à jour le champ @phoneNumber »
-
-**Ventilez Les Requêtes Complexes**
-
-* Au lieu d’une seule longue requête, essayer plusieurs requêtes plus petites
-* Créer le formulaire étape par étape
-* Tester chaque modification avant de passer à la suivante
 
 ## Résolution des problèmes
 
@@ -477,7 +367,7 @@ Forms Experience Builder peut également vous apprendre à utiliser les fonction
 | **@fieldName non reconnu** | Vérifier l’orthographe et s’assurer que le champ existe en premier |
 | **Échec du chargement du fichier** | Utilisez PDF/JPG/PNG de moins de 10 Mo. |
 | **L’apparence du formulaire est incorrecte** | Soyez plus précis : « Rendez-le compatible avec les appareils mobiles » |
-| **Échec de l’intégration** | Vérification des informations d’identification et des autorisations d’API |
+| **Échec de la configuration d’envoi** | Vérification des informations d’identification et des autorisations d’API |
 
 **Vous avez encore besoin d&#39;aide ?** Type `/help` suivi de votre question spécifique ou contactez votre administrateur système.
 
