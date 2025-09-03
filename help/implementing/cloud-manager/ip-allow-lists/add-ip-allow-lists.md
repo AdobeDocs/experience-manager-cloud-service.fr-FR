@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 14%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,9 @@ Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsab
 
 **Pour ajouter une Liste autorisée IP, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com/experiencemanager/).
+
+1. Dans le menu de gauche, cliquez sur Cloud Manager, puis sélectionnez l’organisation appropriée.
 
 1. Sur la console **[Mes programmes](/help/implementing/cloud-manager/navigation.md#my-programs)**, sélectionnez le programme.
 
@@ -38,7 +40,12 @@ Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsab
 
 1. Dans la boîte de dialogue **Ajouter une Liste autorisée IP**, dans le champ **Nom de la Liste autorisée IP**, saisissez le nom que vous souhaitez utiliser pour référencer la Liste autorisée IP. Ce nom est fourni uniquement à titre d’information. Assurez-vous qu’elle est suffisamment descriptive pour vous aider à identifier la liste.
 
-1. Dans le champ **Adresse IP / CIDR** , saisissez un bloc IP ou CIDR IP. Séparez plusieurs blocs par une virgule ou un onglet.
+1. Dans le champ **Adresse IP / CIDR** , saisissez jusqu’à 50 adresses IP ou blocs CIDR. Vous pouvez les ajouter de l’une des façons suivantes :
+
+   * Une par une : saisissez une adresse, puis appuyez sur `Enter`. Répétez l’opération pour chaque adresse supplémentaire.
+   * Multiple à la fois : saisissez des adresses séparées par des virgules (,) ou des tabulations, puis appuyez sur `Enter` pour que chaque adresse soit reconnue individuellement.
+
+1. Une fois que vous avez terminé de saisir la dernière adresse IP ou le dernier bloc CIDR, appuyez sur `Enter` pour confirmer l’entrée. L’entrée n’est validée qu’après avoir appuyé sur `Enter` et le bouton **Enregistrer** devient actif.
 
 1. Cliquez sur **Enregistrer**.
 
