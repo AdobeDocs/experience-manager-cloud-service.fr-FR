@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 98%
+source-wordcount: '3177'
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes su
 
 Cet outil est fourni uniquement au groupe des administrateurs et administratrices pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/341383/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 L’image suivante illustre les différentes étapes de l’ingestion de ressources dans Experience Manager à partir d’un magasin de données :
 
@@ -384,7 +384,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur d’[!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Le code personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
-* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Si vous essayez de le faire, vous risquez d’obtenir un message d’alerte indiquant : « Ce répertoire contient plus de 1 000 éléments. Les chargements et la création de nouveaux dossiers peuvent être retardés. » Bien que vous puissiez ajouter d’autres ressources à un dossier, vous pouvez rencontrer des problèmes de performances, tels qu’une navigation plus lente vers ces dossiers.
+* [!DNL Experience Manager Assets] prend désormais en charge les dossiers contenant un grand nombre de ressources enfants. Une fois qu’un dossier contient plus de 1 000 enfants directs (des ressources ou des sous-dossiers), l’interface utilisateur d’administration utilise un index mis à jour de manière asynchrone pour répertorier le contenu du dossier. Ainsi, il peut y avoir un court délai dans la visibilité des dossiers et ressources nouvellement créés (généralement quelques secondes seulement) et lors de l’ouverture d’un tel dossier dans la vue Administration, une bannière s’affiche pour informer les utilisateurs finaux de ce comportement, indiquant ce qui suit : « Ce répertoire contient plus de 1 000 éléments. Les chargements et la création de nouveaux dossiers peuvent être retardés. »
 
 * Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si la fonction [Statistiques sur les ressources](/help/assets/assets-insights.md) est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 
