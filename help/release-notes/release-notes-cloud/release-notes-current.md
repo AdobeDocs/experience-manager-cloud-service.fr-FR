@@ -85,7 +85,7 @@ Créez des URL Vanity pour la diffusion de ressources dans DM avec OpenAPI, en r
 
 **Composant Entrée De Date Et D’Heure**
 
-Un composant [Date et heure](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner à la fois la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement des valeurs dans un format pris en charge.
+Un composant [Date et heure](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner à la fois la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement des valeurs dans un format pris en charge.
 
 **Amélioration de la gestion des erreurs pour les chargements de fichiers**
 
@@ -129,7 +129,7 @@ Ces notes de mise à jour répertorient les innovations apportées à la version
 
 **Composant Signature tactile**
 
-Vous pouvez désormais utiliser le [composant Signature tactile](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) pour aider les utilisateurs et les utilisatrices à ajouter leurs signatures à un formulaire, comme dans un formulaire d’accord. Le composant permet aux utilisateurs de tracer leur signature directement dans le formulaire à l’aide d’une souris, d’un stylet ou d’un écran tactile.
+Vous pouvez désormais utiliser le [composant Signature tactile](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) pour aider les utilisateurs et les utilisatrices à ajouter leurs signatures à un formulaire, comme dans un formulaire d’accord. Le composant permet aux utilisateurs de tracer leur signature directement dans le formulaire à l’aide d’une souris, d’un stylet ou d’un écran tactile.
 
 **Intégration directe de l’API dans l’éditeur de règles**
 
