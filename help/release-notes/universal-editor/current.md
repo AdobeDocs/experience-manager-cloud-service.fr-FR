@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: cd717eac1e4eb6eda3b2a60fc28ad63d92e858ec
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 67%
+ht-degree: 71%
 
 ---
 
@@ -49,5 +49,5 @@ Les fonctions Annuler et Rétablir sont désormais disponibles pour les créateu
 
 ## Obsolescence {#deprecations}
 
-* Les composants `text-input` et `text-area` ont été officiellement abandonnés avec la version 2025.07.09.[ de ](/help/release-notes/universal-editor/2025/2025-07-09.md)
+* Les composants `text-input` et `text-area` ont été officiellement abandonnés avec la [version 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md).
    * Dans `model-definition.json`, utilisez le composant texte pour créer des entrées de texte pour le panneau Propriétés.

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 67%
+ht-degree: 70%
 
 ---
 
@@ -60,9 +60,9 @@ AEM as a Cloud Service est dédié à l’optimisation de la sécurité et de
 
 | Technologie | Version | Lien |
 |---|---|---|
-| AEM Oak | 1,84,0 | [API Oak 1.84.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
+| AEM Oak | 1.84.0 | [API Oak 1.84.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Serveur HTTP Apache | 2,4,65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| Serveur HTTP Apache | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Composants principaux d’AEM | 2.29.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (par défaut) | [Versions de Node.js prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
