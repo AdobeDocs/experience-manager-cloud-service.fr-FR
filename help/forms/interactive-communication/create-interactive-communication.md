@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 6%
@@ -28,7 +28,7 @@ La communication interactive vous permet de créer, de gérer et de diffuser des
 
 Imaginez que vous ayez besoin d’envoyer un relevé bancaire, une police d’assurance ou une facture de services publics à des milliers de clients. Chacune a la même disposition, mais des données personnalisées. La communication interactive (IC) rend cela possible de manière efficace.
 
-![Rechercher un document IC](/help/forms/interactive-communication/assets/Picture1.png)
+![Rechercher un document IC](/help/forms/interactive-communication/assets/introimg.png)
 
 La production manuelle de ces documents peut prendre du temps et entraîne souvent des incohérences, en particulier lorsque la personnalisation et l’intégration des données sont requises. Avec l’éditeur de communication interactive, les utilisateurs et utilisatrices peuvent rationaliser le processus de création d’une communication interactive.
 
