@@ -3,9 +3,9 @@ title: Aperçu de la ressource et de ses propriétés dans  [!DNL the Content Hu
 description: Découvrez comment prévisualiser des ressources et des propriétés dans  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ Avant d’utiliser, de partager ou de télécharger une ressource, vous pouvez l
 * **K:** Fermer l’écran d’aperçu
 * **L:** Informations sur une ressource qui incluent le titre, le format, la taille, la résolution, les balises, les balises de couleur et les balises intelligentes.
 
-## Formats de ressources pris en charge {#supported-formats}
+## Formats de fichiers pris en charge {#supported-formats}
 
 [!DNL Content Hub] prend en charge tous les types et formats de ressources pris en charge par le référentiel [!DNL Assets] sous-jacent. Le tableau suivant répertorie les formats de fichiers clés dans [!DNL the Content Hub], qui offrent une prise en charge supplémentaire de la prévisualisation visuelle des ressources :
 
@@ -54,46 +54,66 @@ Avant d’utiliser, de partager ou de télécharger une ressource, vous pouvez l
      <tr>
       <th><strong>Type de fichier</strong></th>
       <th><strong>Formats pris en charge</strong></th>
+      <th><strong>Taille</strong></th>
      </tr>
      <tr>
-      <td>Image</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Vidéo</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>Document</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt] (brut)</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Média imprimé</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> Image </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximum 250 Ko</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Vidéo </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3 840 x 3 840 pixels, 200 Mo maximum</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 200 Mo maximum </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Document </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (brut)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Média imprimé </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### Propriétés dérivées {#derived-properties}
 
@@ -105,7 +125,7 @@ Certaines propriétés des ressources affichées dans [!DNL Content Hub] sont d�
 
 * **Balises intelligentes :** [!DNL The Content Hub] utilise les services de contenu dynamique d’Adobe Sensei pour entraîner des ressources à l’aide de l’algorithme de reconnaissance sur la structure basée sur les balises. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Les balises intelligentes augmentent la vitesse du contenu de vos projets en vous permettant de trouver rapidement les ressources appropriées. Les balises intelligentes sont un exemple d’informations de ressource qui ne sont pas contenues dans l’image. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources, par défaut.
 
-* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=fr) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités d’IA d’Adobe Sensei.
+* **Balises de couleurs :** [Balises de couleurs](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) permet de reconnaître une ressource à l’aide de couleurs automatiquement identifiées dans une ressource à l’aide des fonctionnalités d’IA d’Adobe Sensei.
 
 * Date du chargement
 

@@ -4,10 +4,10 @@ description: L’intégration native d’AEM Assets à Adobe Express vous permet
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 10%
+source-wordcount: '704'
+ht-degree: 9%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 7. Cliquez sur **[!UICONTROL Charger]** pour charger la ou les ressources dans AEM Assets.
 
-## Formats de fichiers pris en charge {#supported-formats}
+Pour plus d&#39;informations, consultez la section [Formats de fichiers pris en charge](asset-properties-content-hub.md#supported-formats).
 
 [!DNL Content Hub] prend en charge tous les types et formats de ressources pris en charge par le référentiel [!DNL Assets] sous-jacent. Le tableau suivant répertorie les formats de fichiers clés dans [!DNL the Content Hub], qui offrent une prise en charge supplémentaire de la prévisualisation visuelle des ressources :
 
@@ -133,13 +133,13 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
         <td> - </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## Limites {#limitations}
 
 1. Pour l’importation et l’exportation, le type de fichier vidéo pris en charge est MP4.
 
-2. Pour l’importation de vidéos **MP4** reportez-vous à la section [Formats de fichiers pris en charge](#supported-formats). En outre, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
+2. Pour l’importation de vidéos **MP4** reportez-vous à la section [Formats de fichiers pris en charge](asset-properties-content-hub.md#supported-formats). En outre, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
