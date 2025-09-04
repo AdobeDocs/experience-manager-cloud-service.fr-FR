@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
+source-git-commit: 99e17dbc675a6dd86afddcc44e0fd9e1d84b3858
 workflow-type: tm+mt
-source-wordcount: '6571'
+source-wordcount: '6575'
 ht-degree: 98%
 
 ---
@@ -234,6 +234,7 @@ ht-degree: 98%
    + Notes de mise à jour de l’éditeur universel {#univeral-editor}
       + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Notes de mise à jour de la version 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [Notes de mise à jour de la version 2025.08.14](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [Notes de mise à jour de la version 2025.07.31](/help/release-notes/universal-editor/2025/2025-07-31.md)
          + [Notes de mise à jour de la version 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -270,7 +271,7 @@ ht-degree: 98%
    + [Règles de filtre de trafic incluant des règles WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Prise en charge d’Open ID Connect pour AEM as a Cloud Service au niveau publication](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [Prise en charge d’Open ID Connect pour AEM as a Cloud Service au niveau publication](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configurer des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Affichage principal de la gestion des autorisations](/help/security/touch-ui-principal-view.md)
    + [Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
