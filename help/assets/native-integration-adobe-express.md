@@ -4,10 +4,10 @@ description: L’intégration native d’AEM Assets à Adobe Express vous permet
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 9%
+source-wordcount: '646'
+ht-degree: 10%
 
 ---
 
@@ -50,7 +50,10 @@ Après avoir incorporé les modifications appropriées dans la zone de travail E
 
    ![Enregistrement de ressources dans AEM](assets/adobe-express-share.png)
 
-2. Dans la section Stockage du volet de droite, sélectionnez **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
+2. Dans la section **[!UICONTROL Recommandé]** du volet de droite, sélectionnez **AEM Assets**. Adobe Express affiche la boîte de dialogue de chargement.
+
+   ![Enregistrement de ressources dans AEM](assets/adobe-express-aem.png)
+
 3. Sélectionnez **Page actuelle** ou **Toutes les pages**. Spécifiez un nom et un format pour la ou les ressources à exporter. Vous pouvez exporter le contenu de la zone de travail aux formats PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. Le format s’ajuste automatiquement en fonction des ressources sur la ou les pages de la zone de travail.
 Sélectionner **Page active** enregistre la ressource sur la page active dans le dossier de destination. Si vous sélectionnez **Toutes les pages** et que le format d’exportation n’est pas PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichiers distincts dans un nouveau dossier de votre dossier de destination. Si le format d’exportation est PDF, toutes les pages de la zone de travail sont enregistrées en tant que fichier PDF unique dans le dossier de destination.
 
@@ -65,20 +68,12 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 7. Cliquez sur **[!UICONTROL Charger]** pour charger la ou les ressources dans AEM Assets.
 
-Pour plus d&#39;informations, consultez la section [Formats de fichiers pris en charge](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] prend en charge tous les types et formats de ressources pris en charge par le référentiel [!DNL Assets] sous-jacent. Le tableau suivant répertorie les formats de fichiers clés dans [!DNL the Content Hub], qui offrent une prise en charge supplémentaire de la prévisualisation visuelle des ressources :
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>Type de fichier</strong></th>
       <th><strong>Formats pris en charge</strong></th>
       <th><strong>Taille</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Image </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Pour plus d&#39;informations, consultez la section [Formats de fichiers pris en 
         <td> Maximum 250 Ko</td>
     </tr>
     <tr>
-        <td rowspan="4"> Vidéo </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3 840 x 3 840 pixels, 200 Mo maximum</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> 200 Mo maximum </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Document </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (brut)</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Média imprimé </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Pour plus d&#39;informations, consultez la section [Formats de fichiers pris en 
 
 1. Pour l’importation et l’exportation, le type de fichier vidéo pris en charge est MP4.
 
-2. Pour l’importation de vidéos **MP4** reportez-vous à la section [Formats de fichiers pris en charge](asset-properties-content-hub.md#supported-formats). En outre, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
+2. Pour l’importation vidéo **MP4** les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
