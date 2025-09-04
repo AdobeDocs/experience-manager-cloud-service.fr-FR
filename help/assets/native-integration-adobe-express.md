@@ -4,14 +4,14 @@ description: L’intégration native d’AEM Assets à Adobe Express vous permet
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '702'
+ht-degree: 10%
 
 ---
 
-# Intégration native à Adobe Express {#native-integration-adobe-express}
+# Intégration native à Adobe Express {#native-integration-adobe-express}
 
 AEM Assets s’intègre de manière native à Adobe Express, ce qui vous permet d’accéder directement aux ressources stockées dans AEM Assets depuis l’interface utilisateur d’Adobe Express. Vous pouvez placer du contenu géré dans AEM Assets dans la zone de travail d’Express, puis enregistrer du contenu nouveau ou modifié dans un référentiel AEM Assets. L’intégration offre les principaux avantages suivants :
 
@@ -22,7 +22,6 @@ AEM Assets s’intègre de manière native à Adobe Express, ce qui vous perme
 ## Prérequis {#prerequisites}
 
 Autorisations d&#39;accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être n’importe lequel des référentiels d’Assets as a Cloud Service ou d’Assets Essentials.
-
 
 ## Utilisation d’AEM Assets dans l’éditeur Adobe Express {#use-aem-assets-in-express}
 
@@ -66,19 +65,88 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
 
 7. Cliquez sur **[!UICONTROL Charger]** pour charger la ou les ressources dans AEM Assets.
 
+## Formats de fichiers pris en charge {#supported-formats}
+
+[!DNL Content Hub] prend en charge tous les types et formats de ressources pris en charge par le référentiel [!DNL Assets] sous-jacent. Le tableau suivant répertorie les formats de fichiers clés dans [!DNL the Content Hub], qui offrent une prise en charge supplémentaire de la prévisualisation visuelle des ressources :
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>Type de fichier</strong></th>
+      <th><strong>Formats pris en charge</strong></th>
+      <th><strong>Taille</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> Image </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximum 250 Ko</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Vidéo </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3 840 x 3 840 pixels, 200 Mo maximum</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> 200 Mo maximum </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Document </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (brut)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Média imprimé </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## Limites {#limitations}
 
 1. Pour l’importation et l’exportation, le type de fichier vidéo pris en charge est MP4.
 
-2. Pour l’importation vidéo MP4 :
+2. Pour l’importation de vidéos **MP4** reportez-vous à la section [Formats de fichiers pris en charge](#supported-formats). En outre, les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite dépasse, un message d’alerte s’affiche.
-   2. La résolution maximale prise en charge est de 3 840 x 3 840 pixels.
-   3. Les vidéos avec arrière-plans transparents (couche alpha) ne sont pas prises en charge.
-
-3. Pour l’exportation de vidéos MP4 :
-
-   1. La taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est dépassée, une alerte suggère de réduire la vidéo à 200 Mo ou moins, ou de la charger manuellement dans le dossier de destination AEM Assets après l’avoir téléchargée.
+3. Pour l’exportation de vidéo **MP4**, la taille de fichier maximale prise en charge est de 200 Mo. Si cette limite est dépassée, une alerte suggère de réduire la vidéo à 200 Mo ou moins, ou de la charger manuellement dans le dossier de destination AEM Assets après l’avoir téléchargée.
 
 
 
