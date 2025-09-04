@@ -4,10 +4,10 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ En configurant Cloud Manager pour l’intégration à votre cloud GitHub privé 
 >
 >Vous pouvez également ajouter les types de référentiel suivants avec des Webhooks :
 >
->* Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub)
->* Référentiels GitLab (versions `gitlab.com` et auto-hébergées de GitLab)
->* Référentiels Bitbucket (`bitbucket.org` et Bitbucket Server, la version auto-hébergée de BitBucket)
+>* Référentiels GitHub Enterprise Server (version auto-hébergée de GitHub) .
+>* Référentiels GitLab (versions `gitlab.com` et auto-hébergées de GitLab).
+>* Référentiels Bitbucket (`bitbucket.org` et Bitbucket Server, la version auto-hébergée de BitBucket).
+>* Référentiels Azure DevOps ([dev.azure.com](http://dev.azure.com) et versions auto-hébergées d’Azure DevOps).
 >
 >Voir [Ajout de référentiels externes dans Cloud Manager - version bêta privée](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -153,13 +154,13 @@ Les référentiels privés validés peuvent être associés à des [pipelines fu
 
 
 
-## Remarques sur l’utilisation {#usage-notes}
+## Limites {#limitations}
 
-* Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés.
+Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
+
 * Aucune balise Git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile pleine de production.
 * Si l’application Adobe GitHub est supprimée de votre organisation GitHub, la fonction de validation des demandes d’extraction est supprimée pour tous les référentiels.
 * Les pipelines qui utilisent des référentiels cloud GitHub privés et le déclencheur de build « on-commit » ne sont pas démarrés automatiquement lorsqu’une nouvelle validation est poussée dans la branche sélectionnée.
 * La [fonctionnalité de réutilisation des artefacts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.
-* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub depuis Cloud Manager.
-Si le référentiel GitHub est validé dans Cloud Manager, Cloud Manager tente toujours de valider les demandes d’extraction créées pour ce référentiel.
-* Si l’organisation GitHub dispose de restrictions IP, créez un dossier de support pour recevoir la liste des adresses IP à autoriser.
+* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub à partir de Cloud Manager. Si le référentiel GitHub est validé dans Cloud Manager, Cloud Manager tente toujours de valider les demandes d’extraction créées pour ce référentiel.
+* Si votre organisation GitHub applique des restrictions IP, ouvrez un dossier de support pour obtenir la liste des adresses IP qui doivent être autorisées.

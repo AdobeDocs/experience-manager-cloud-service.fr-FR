@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8d1010eccc1f3bc7579aa0042cb7c3b5acb7ef27
+source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
 workflow-type: tm+mt
-source-wordcount: '6579'
+source-wordcount: '6591'
 ht-degree: 98%
 
 ---
@@ -130,6 +130,7 @@ ht-degree: 98%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [En cours](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -1250,13 +1251,14 @@ ht-degree: 98%
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utiliser plusieurs référentiels](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuration de l’équipe de développement d’entreprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Configuration du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Vérifications des demandes d’extraction pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Annotations du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD Cloud Manager {#cicd-pipelines}
          + [Introduction aux pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurer un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurer un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Pipeline partagé d’évaluation et de production uniquement (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [Configurer un pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [Gérer les pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)

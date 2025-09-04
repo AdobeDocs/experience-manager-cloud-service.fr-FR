@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un référentiel externe dans Cloud Man
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 27%
+source-wordcount: '2452'
+ht-degree: 26%
 
 ---
 
@@ -17,14 +17,15 @@ ht-degree: 27%
 
 Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 
-Les clients peuvent désormais également intégrer leurs référentiels Git Azure DevOps (Beta) dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS hérités (Visual Studio Team Services).
+Les clients peuvent désormais également intégrer leurs référentiels Git Azure DevOps dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS hérités (Visual Studio Team Services).
 
 * Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
 * Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
 
+<!--
 >[!NOTE]
 >
->La prise en charge ajoutée pour les opérations de développement Azure décrites dans cet article est disponible uniquement via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version bêta, voir [Apporter votre propre Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts).
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## Configuration d’un référentiel externe
@@ -121,14 +122,14 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 
 Voir aussi [Gérer les jetons d’accès](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Opérations de développement Azure]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Azure DevOps.<br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Azure DevOps, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)</li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Azure DevOps.<br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Azure DevOps, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Code (lecture)</li><li>Code (Statut)</li><li>Pull Request Threads (lecture/écriture)</li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
 
@@ -239,13 +240,13 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 | --- |
 | Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Demande d’extraction : créée<li>Demande d’extraction : mise à jour<li>Demandes d’extraction : fusionnées<li>Demande d’extraction : commentaire<li>Référentiel : Push</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Opérations de développement Azure]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Événements webhook requis et authentification |
 | --- |
-| Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Référentiel : Push</li></ul>Définition de l’authentification :<br>1. Dans le champ **Nom d’utilisateur de l’authentification de base**, saisissez `cloudmanager`.<br>2. Dans le champ **Mot de passe d’authentification de base**, saisissez le secret Webhook généré à partir de l’interface utilisateur de Cloud Manager. |
+| Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Code poussé</li><li>Demande d’extraction commentée par</li><li>Demande d’extraction créée</li><li>Demande d’extraction mise à jour</li></ul>Définition de l’authentification :<br>1. Dans le champ **Nom d’utilisateur de l’authentification de base**, saisissez `cloudmanager`.<br>2. Dans le champ **Mot de passe d’authentification de base**, saisissez le secret Webhook généré à partir de l’interface utilisateur de Cloud Manager. |
 
 >[!ENDTABS]
 
@@ -303,6 +304,25 @@ Utilise le statut de validation pour le suivi de la progression de la validation
 
 ![Statut de validation de la demande d’extraction pour Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB Opérations de développement Azure]
+
+Azure DevOps effectue le suivi de la validation de la demande de tirage par le biais de contrôles de statut. Lorsque Cloud Manager exécute la validation de la demande d’extraction, il ajoute des vérifications de statut qui apparaissent dans l’interface de demande d’extraction Azure DevOps.
+
+Lors de la validation de la qualité du code, une vérification de l’état indique que le processus est en cours :
+
+![Validation Azure DevOps des demandes d’extraction avec webhooks-1](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+
+Une fois la validation de la qualité du code terminée, la vérification de statut se met à jour pour refléter les résultats :
+
+![Validation Azure DevOps des demandes d’extraction avec webhooks-2](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+
+Si la validation échoue, des informations d’erreur détaillées sont fournies dans les détails de vérification de l’état. Vous pouvez cliquer sur la vérification de statut pour afficher les résultats complets de la validation dans Cloud Manager.
+
+![Validation Azure DevOps des demandes d’extraction avec webhooks-3](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+
+Pour les commentaires et les retours de la demande d’extraction, Cloud Manager ajoute directement des commentaires à la demande d’extraction dans Azure DevOps avec les détails de validation et les actions nécessaires.
+
+![Validation Azure DevOps des demandes d’extraction avec webhooks-4](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

@@ -1,28 +1,28 @@
 ---
-title: Configuration de la vérification GitHub pour les référentiels privés
+title: Vérifications des demandes d’extraction pour les référentiels privés
 description: Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque requête d’extraction dans un référentiel privé.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# Configuration de la vérification GitHub pour les référentiels privés {#github-check-config}
+# Vérifications des demandes d’extraction pour les référentiels privés {#github-check-config}
 
 Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque requête d’extraction dans un référentiel privé.
 
-## Configuration des vérifications GitHub {#configuration}
+## Configuration des vérifications de référentiel privé {#configuration}
 
 Lors de l’utilisation de [référentiels privés](private-repositories.md#using), un [pipeline de qualité de code de pile pleine](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) est créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
 
-Vous pouvez contrôler ces contrôles en créant un fichier de configuration `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
+Vous pouvez contrôler ces vérifications en créant un fichier de configuration `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
@@ -36,13 +36,13 @@ pipelines:
 
 | Paramètre | Valeurs possibles | Valeur par défaut | Description |
 | --- | --- | --- | --- |
-| `shouldDeletePreviousComment` | `true` ou `false` | `false` | Si vous souhaitez conserver uniquement le dernier commentaire avec les résultats de l’analyse du code sur cette demande d’extraction GitHub ou conserver tout. La définition de cette valeur sur `false` (valeur par défaut) signifie que les commentaires précédents ne sont pas supprimés. |
-| `shouldSkipCheckAnnotations` | `true` ou `false` | `false` | Indique si des annotations supplémentaires doivent être présentes dans la vérification de la requête d’extraction GitHub. La définition de cette valeur sur `false` (par défaut) signifie que les annotations de vérification ne sont pas ignorées et sont incluses dans les commentaires. |
-| `type` | `CI_CD` | n/a | Définit le comportement des configurations de pipeline CI/CD (intégration continue/déploiement continu). |
-| `template.programId` | Entier | Aucune variable de pipeline n’est réutilisée. | Vous pouvez l’utiliser pour réutiliser les [variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) définies sur un pipeline existant automatiquement créé par chaque requête de tirage. |
-| `template.pipelineId` | Entier | Aucune variable de pipeline n’est réutilisée. | Vous pouvez l’utiliser pour réutiliser les [variables de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) définies sur un pipeline existant automatiquement créé par chaque requête de tirage. |
-| `namePrefix` | Chaîne | `Full Stack Code Quality Pipeline for PR` | Utilisé pour définir le préfixe du nom du pipeline créé automatiquement. |
-| `importantMetricsFailureBehavior` | `CONTINUE` ou `FAIL` ou `PAUSE` | `CONTINUE` | Définit le comportement de mesure important du pipeline<br>`CONTINUE` = Si une mesure importante échoue, le pipeline se déplace automatiquement<br>`FAIL` = Le pipeline se termine avec un état ÉCHEC si une mesure importante échoue<br>`PAUSE` = L’étape d’analyse du code reçoit un état ATTENDU lorsqu’une mesure importante échoue et doit être reprise manuellement |
+| `shouldDeletePreviousComment` | `true` ou `false` | `false` | Conserver uniquement le dernier commentaire avec les résultats de l’analyse du code pour cette requête d’extraction GitHub ou tout conserver. La définir sur `false` (par défaut) signifie que les commentaires précédents ne sont pas supprimés. |
+| `shouldSkipCheckAnnotations` | `true` ou `false` | `false` | Indique si des annotations supplémentaires doivent être présentes ou non sur la vérification de la requête de tirage GitHub. La définir sur `false` (par défaut) signifie que les annotations de vérification ne sont pas ignorées et sont incluses dans les commentaires. |
+| `type` | `CI_CD` | n/a | Définit le comportement des configurations de pipeline CI/CD (Continuous Integration/Continuous Deployment). |
+| `template.programId` | Entier | Aucune variable de pipeline n’est réutilisée. | Vous pouvez l’utiliser pour réutiliser les [ variables de pipeline ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) définies sur un pipeline existant automatiquement créé par chaque demande d’extraction. |
+| `template.pipelineId` | Entier | Aucune variable de pipeline n’est réutilisée. | Vous pouvez l’utiliser pour réutiliser les [ variables de pipeline ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) définies sur un pipeline existant automatiquement créé par chaque demande d’extraction. |
+| `namePrefix` | Chaîne | `Full Stack Code Quality Pipeline for PR` | Utilisé pour définir le préfixe du nom du pipeline qui est créé automatiquement. |
+| `importantMetricsFailureBehavior` | `CONTINUE` ou `FAIL` ou `PAUSE` | `CONTINUE` | Définit le comportement des mesures importantes du pipeline<br>`CONTINUE` = Si une mesure importante échoue, le pipeline se déplace automatiquement<br>`FAIL` = Le pipeline se termine par un statut EN ÉCHEC si une mesure importante échoue<br>`PAUSE` = L’étape d’analyse du code reçoit un statut EN ATTENTE lorsqu’une mesure importante échoue et doit être reprise manuellement |
 
 
 
