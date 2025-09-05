@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.9.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 98182e835e10b0b29aa2ae21c2a02562ca64111a
+source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 90%
+source-wordcount: '1125'
+ht-degree: 89%
 
 ---
 
@@ -41,15 +41,12 @@ La prochaine version est prévue le vendredi 2 octobre 2025.
 
   Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Voir [Extraction des vérifications de requête pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
-* **Cloud Manager ajoute la prise en charge du certificat SSL ECDSA (Elliptic Curve Digital Signature Algorithm).**
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-  Cloud Manager prend désormais en charge les certificats ECDSA. La fonctionnalité offre une sécurité renforcée avec des tailles de clé plus petites, ce qui permet à la clientèle d’appliquer une cryptographie moderne légère dans ses configurations de réseau CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-### Pipelines dédiés uniquement à l’évaluation ou la production {#staging-production-only-pipelines}
-
-La prise en charge des [pipelines dédiés uniquement à l’évaluation ou la production](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) a été mise en place, ce qui vous permet de diviser les pipelines de pile complète de déploiement de production en déploiements spécialisés et plus petits.
-
-Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-cloudmanager_splitpipelines@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
 
 
 ## Programmes bêta {#private-beta-program}
@@ -66,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 ![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**&#x200B;jusqu’à la fin du déploiement.*
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 ![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
