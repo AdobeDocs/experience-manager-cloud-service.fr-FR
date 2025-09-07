@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 37%
 
 ---
@@ -126,7 +126,7 @@ Une carte (ou une ligne dans un tableau) représente chaque programme, fournissa
 * Nom attribué au programme. L’image ci-dessus montre « SecurBank Sample » comme nom du programme.
 * Type de service :
    * **Experience Manager Cloud** — pour les programmes AEM as a Cloud Service
-   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) :
    * Sandbox
    * Production
@@ -153,7 +153,7 @@ L’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Mor
 * Accédez à une ![icône de données](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [environnement](/help/implementing/cloud-manager/manage-environments.md) du programme
 * Ouvrez l’![icône de présentation du programme](/help/implementing/cloud-manager/assets/program-overview.svg) [présentation du programme](#program-overview)
 * ![icône Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [modifier le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
