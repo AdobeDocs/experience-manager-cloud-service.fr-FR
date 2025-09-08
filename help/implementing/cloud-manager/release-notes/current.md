@@ -4,10 +4,10 @@ description: En savoir plus sur la version 2025.9.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 89%
+source-wordcount: '1137'
+ht-degree: 88%
 
 ---
 
@@ -33,13 +33,13 @@ La prochaine version est prévue le vendredi 2 octobre 2025.
 
   ![renouvellement du certificat SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Ajout de la prise en charge des opérations de développement Azure pour les référentiels privés**
+* **Ajout de la prise en charge d’Azure DevOps (référentiels privés)**
 
   Les mises à jour de la documentation incluent les étapes de configuration pour apporter votre propre Git avec Azure DevOps et la validation de la demande d’extraction. Voir [Ajout de référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Vérifications des demandes d’extraction pour les référentiels privés**
+* **Apportez votre propre prise en charge Git (BYOG) étendue aux pipelines de configuration (référentiels privés)**
 
-  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Voir [Extraction des vérifications de requête pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Ce soutien accélère encore le cycle de développement. Voir [Extraction des vérifications de requête pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 ![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**&#x200B;jusqu’à la fin du déploiement.*
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 ![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
