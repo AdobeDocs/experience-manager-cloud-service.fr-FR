@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 96%
+source-wordcount: '2142'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser des fragments d’expérience :
 Sans les fragments d’expérience, il doit copier et coller ce fragment. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur.
 Les fragments d’expérience rendent inutiles les opérations de copier/coller.
 * Pour gérer le scénario d’utilisation CMS sans interface.
-Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système ou un point de contact tiers utiliserait cette expérience, puis la diffuserait à l’utilisateur.
+Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur.
 * Avec la [gestion multisite (MSM, Multi-Site Management)](/help/sites-cloud/administering/msm/overview.md) en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
@@ -68,13 +68,13 @@ Les fragments d’expérience doivent être utilisés :
 * Lorsque vous souhaitez réutiliser des expériences.
    * Expériences qui sont réutilisées avec un même contenu ou un contenu similaire.
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
-   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu.
+   * Toute solution qui souhaite utiliser AEM en tant que plateforme de diffusion de contenu.
    * Incorporation de contenu dans des points de contact tiers.
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
    * Variations spécifiques au canal ou au contexte.
-   * Expériences qu’il est logique de regrouper ; par exemple, une campagne avec des expériences différentes selon les canaux.
+   * Expériences qu’il est logique de regrouper, par exemple, une campagne avec des expériences différentes sur les canaux.
 * Lorsque vous avez recours au commerce omnicanal.
-   * Conversion des points de contact en points de transaction.
+   * Rendre les points de contact transactionnels.
 
 ## Organisation des fragments d’expérience {#organizing-your-experience-fragments}
 
@@ -337,7 +337,7 @@ La personnalisation de votre fragment d’expérience vous permet, en tant que s
 * élimine le besoin de spécifier les variations requises pour chaque audience à chaque fois que le fragment est utilisé ;
 * maintient le style à travers les offres.
 
-Vous pouvez créer un fragment d’expérience comportant plusieurs composants regroupés dans ce fragment unique. Vous pouvez également créer des variations du fragment pour chaque segment ciblé spécifique, puis réutiliser ces fragments d’expérience sur les canaux requis.
+Vous pouvez créer un fragment d’expérience comportant plusieurs composants regroupés dans ce fragment unique. Vous pouvez également créer des variations du fragment pour chaque segment d’audience spécifique, puis réutiliser ces fragments d’expérience sur les canaux requis.
 
 La personnalisation s’effectue en définissant les propriétés de **Personnalisation** du fragment d’expérience ou de la variation, ou du dossier contenant les fragments. Ainsi, l’héritage peut remplacer les propriétés de personnalisation.
 
@@ -373,7 +373,7 @@ Pour personnaliser votre fragment, procédez comme suit :
    >
    >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
    >
-   >Le **Chemin d’accès aux segments** sélectionné dans l’onglet **Personalization** doit être :
+   >Le **chemin d’accès aux segments** sélectionné dans l’onglet **Personalization** doit être :
    >
    >* le même chemin d’accès que celui configuré pour la page sur laquelle le fragment est rendu
    >
@@ -445,6 +445,16 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 La publication de votre fragment d’expérience est essentiellement identique à [publication d’une page](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (à partir de la console Fragments d’expérience ou de l’éditeur).
 
 Vous pouvez également [Publier en aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) (toujours à partir de la console de Fragments d’expérience ou de l’éditeur).
+
+>[!CAUTION]
+>
+>Par défaut, la publication du dossier racine des fragments d’expérience (situé directement sous `/content/experience-fragments`) :
+>
+>* ne publie que le dossier de conteneur lui-même
+>* ne publie aucun enfant
+>* dépublie tous les enfants déjà publiés
+>
+>Pour la publication de tous les fragments d’expérience dans le dossier , chacun doit être publié séparément.
 
 ## Exportation de fragments d’expérience {#exporting-experience-fragments}
 
