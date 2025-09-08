@@ -4,9 +4,9 @@ description: Découvrez comment choisir les IPC appropriés pour votre mise en o
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 100%
 
 Dans un monde numérique, il est possible de presque tout mesurer. Choisir des KPI appropriés pour votre mise en œuvre d’Adobe Experience Manager aide votre équipe à se concentrer sur ce qui compte le plus.
 
-
 ## **Suivez ces six étapes pour décider de ce que vous souhaitez mesurer et comment**
-
 
 1. **Commencez par vos objectifs commerciaux.** Cela peut être par exemple d’augmenter les recettes en ligne, de réduire les dépenses d’exploitation ou de réduire les frais juridiques associés aux violations liées au Digital Rights Management (gestion des droits numériques, DRM).
 
@@ -40,6 +38,8 @@ Dans un monde numérique, il est possible de presque tout mesurer. Choisir des K
 
 1. **Définissez l’audience pour chaque indicateur de performance clé.** Votre dernière tâche pour cette semaine est d’identifier le groupe d’acteurs les plus impliqués pour chaque IPC. La semaine suivante, vous travaillerez avec chaque groupe pour confirmer les indicateurs de performance clés, affiner la méthodologie et convenir du format et de la planification de vos rapports.
 
+<!--
 >[!TIP]
 >
->[**Télécharger le modèle de méthodologie des KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=fr)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
