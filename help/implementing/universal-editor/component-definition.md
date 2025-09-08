@@ -4,10 +4,10 @@ description: Comprenez en détail le contrat JSON entre la définition du compos
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 2%
+source-wordcount: '606'
+ht-degree: 3%
 
 ---
 
@@ -94,9 +94,9 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 
 `plugins` définit le plug-in responsable de la conservation du composant. Les plug-ins courants incluent :
 
-* `aem` pour AEM as a Cloud Service.
-* `aem5` pour AEM 6.5.
-* `xwalk` pour la création dans AEM as a Cloud Service WYSIWYG.
+* `aem` pour [AEM as a Cloud Service.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service)
+* `aem65` pour [AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
+* `xwalk` pour [Création avec AEM Sites pour Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` ou `cf` {#page-cf}
 
@@ -109,7 +109,7 @@ Une fois la `plugin` définie, vous devez indiquer si elle est liée à une page
 
 Si le composant correspond au contenu de la page, vous pouvez fournir les informations suivantes.
 
-* `resourceType` définit le [&#128279;](/help/implementing/developing/introduction/sling-cheatsheet.md)Sling`resourceType` utilisé pour le rendu du composant.
+* `resourceType` définit le [ ](/help/implementing/developing/introduction/sling-cheatsheet.md)Sling`resourceType` utilisé pour le rendu du composant.
 * `template` définit les clés/valeurs facultatives à écrire automatiquement dans le composant nouvellement créé et définit le filtre et/ou le modèle à appliquer au composant.
    * Utile pour le texte explicatif, d’exemple ou d’espace réservé.
 
