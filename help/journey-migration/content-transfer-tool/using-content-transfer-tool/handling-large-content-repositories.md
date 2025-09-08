@@ -4,10 +4,10 @@ description: Cette section décrit la gestion des référentiels de contenu volu
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 96%
+source-wordcount: '1842'
+ht-degree: 94%
 
 ---
 
@@ -61,7 +61,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 Consultez cette section pour savoir comment configurer l’utilisation d’AzCopy en tant qu’étape de pré-copie avec l’outil de transfert de contenu afin de migrer le contenu vers AEM as a Cloud Service :
 
-### 0. Déterminer la taille totale de tout le contenu du magasin de données {#determine-total-size}
+### &#x200B;0. Déterminer la taille totale de tout le contenu du magasin de données {#determine-total-size}
 
 Il est important de déterminer la taille totale de la banque de données pour deux raisons :
 
@@ -88,7 +88,7 @@ Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille 
 * Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
   `dir /a/s [location of datastore]`.
 
-### 1. Installer AzCopy {#install-azcopy}
+### &#x200B;1. Installer AzCopy {#install-azcopy}
 
 [AzCopy](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) est un outil de ligne de commande fourni par Microsoft® qui doit être disponible sur l’instance source pour activer cette fonctionnalité.
 
@@ -97,7 +97,7 @@ En résumé, vous voulez télécharger le binaire Linux® x86-64 à partir de la
 >[!IMPORTANT]
 >Prenez note de l’emplacement où vous avez placé le fichier binaire, car vous aurez besoin de son chemin d’accès complet à une étape ultérieure.
 
-### 2. Installez une version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy. {#install-ctt-azcopy-support}
+### &#x200B;2. Installez une version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy. {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >La version la plus récente de CTT doit être utilisée.
@@ -106,7 +106,7 @@ La prise en charge d’AzCopy pour Amazon S3, le service Stockage Blob Azure e
 Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 Notez que seules les versions 2.0.0 et ultérieures seront prises en charge et il est conseillé d’utiliser la version la plus récente.
 
-### 3. Configurer un fichier azcopy.config. {#configure-azcopy-config-file}
+### &#x200B;3. Configurer un fichier azcopy.config. {#configure-azcopy-config-file}
 
 Sur l’instance AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé `azcopy.config`.
 
@@ -156,13 +156,13 @@ La propriété azCopyPath doit contenir le chemin d’accès complet de l’empl
 
 Si la propriété `repository.home` est manquante dans azcopy.config, alors l’emplacement par défaut du magasin de données `/mnt/crx/author/crx-quickstart/repository/datastore` est utilisé pour effectuer la précopie.
 
-### 4. Extraire avec AzCopy {#extracting-azcopy}
+### &#x200B;4. Extraire avec AzCopy {#extracting-azcopy}
 
 Une fois le fichier de configuration ci-dessus en place, la phase de précopie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
 
 >[!NOTE]
 >Si AzCopy n’est pas configuré correctement, le message suivant s’affiche dans les journaux :
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, consultez [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
@@ -194,16 +194,19 @@ En cas de problème avec AzCopy, l’extraction échoue immédiatement et les jo
 Les objets Blob qui ont été copiés avant l’erreur sont automatiquement ignorés par AzCopy lors des exécutions suivantes et n’ont pas besoin d’être copiés à nouveau.
 
 >[!TIP]
->Il est désormais possible de planifier le démarrage automatique d’une ingestion dès qu’une extraction est réussie. Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+>Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [ Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+
+>[!TIP]
+>Si le transfert d’objets Blob avec AzCopy a progressé pendant un certain temps, mais qu’il a ensuite échoué pour quelques objets Blob uniquement, réexécutez l’extraction avec les options PréCopy et Remplacer le conteneur d’évaluation décochées. Seuls les objets Blob restants qui n’ont pas été transférés précédemment seront migrés.
 
 #### Pour File Data Store {#file-data-store-extract}
 
 Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vous devriez voir des messages comme ceux-ci dans les journaux indiquant que les dossiers sont en cours de traitement :
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
-### 5. Ingestion avec AzCopy {#ingesting-azcopy}
+### &#x200B;5. Ingestion avec AzCopy {#ingesting-azcopy}
 
-Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans la cible à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue &quot;Nouvelle ingestion&quot;.
+Consultez la section [ Ingestion de contenu dans Target ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
 
 Pour tirer parti d’AzCopy lors de l’ingestion, la version 2021.6.5561 d’AEM as a Cloud Service ou ultérieure est nécessaire.
 
