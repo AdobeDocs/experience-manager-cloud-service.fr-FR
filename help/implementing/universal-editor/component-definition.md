@@ -95,7 +95,7 @@ Voici un exemple complet, mais simple de `component-definition.json`.
 `plugins` définit le plug-in responsable de la conservation du composant. Les plug-ins courants incluent :
 
 * `aem` pour [AEM as a Cloud Service.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service)
-* `aem65` pour [AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65) et [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `aem65` pour [AEM 6.5.](https://experienceleague.adobe.com/fr/docs/experience-manager-65) et [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts)
 * `xwalk` pour [Création avec AEM Sites pour Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` ou `cf` {#page-cf}
