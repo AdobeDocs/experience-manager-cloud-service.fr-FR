@@ -3,9 +3,9 @@ title: Dynamic Media Prime et Ultimate
 description: Découvrez Dynamic Media Prime et Ultimate, leurs avantages et les différences entre les deux.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '421'
 ht-degree: 12%
 
 ---
@@ -30,6 +30,10 @@ Voici quelques-uns des autres principaux avantages de Dynamic Media Prime :
 * Diffusion d’images optimisées pour le web
 * Diffusion vidéo en continu adaptative
 
+>[!NOTE]
+>
+>Les clients DM Prime peuvent utiliser des modificateurs d’image de base, notamment la rotation, le recadrage, le retournement, la hauteur, la largeur et la qualité. L’imagerie dynamique ne prend pas en charge AVIF pour les clients DM Prime.
+
 ### Prérequis {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
@@ -50,8 +54,8 @@ Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d
 * [Solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), qui comprend également les fonctionnalités clés suivantes :
 
    * [Modèles Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Principes de base des modèles](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configuration visuelle](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Principes de base des modèles](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configuration visuelle](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prérequis {#pre-requisites-dm-ultimate}
 
