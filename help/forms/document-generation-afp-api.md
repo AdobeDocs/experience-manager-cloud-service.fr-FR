@@ -4,16 +4,16 @@ description: Découvrez comment utiliser l’API de synchronisation de sortie AF
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 14%
 
 ---
 
 # Générer une sortie AFP à l’aide de l’API AEM Forms
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 La présentation de fonctions avancées (AFP) est un format de document haute performance conçu principalement à des fins d&#39;impression.\
 Ce guide décrit toutes les étapes et configurations nécessaires pour générer une sortie AFP à l’aide d’AEM Forms.
@@ -101,4 +101,4 @@ Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour véri
 
 Vous pouvez enregistrer la réponse et ouvrir le fichier enregistré dans le lecteur AFP pour l’afficher.
 
-![Lecteur PDF](/help/forms/assets/afp-pdf.png)
+![Rechercher un document IC](/help/forms/interactive-communication/assets/introimg.png)

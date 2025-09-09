@@ -1,21 +1,21 @@
 ---
-title: Éditeur de règles pour les formulaires dynamiques dans l’éditeur universel
+title: Éditeur de règles pour Edge Delivery Services Forms
 description: Créez des formulaires dynamiques et intelligents à l’aide de l’éditeur de règles dans l’éditeur universel. Ajoutez une logique conditionnelle, des calculs et des comportements interactifs sans codage.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# Éditeur de règles pour les formulaires dynamiques dans l’éditeur universel
+# Éditeur de règles pour Edge Delivery Services Forms
 
-L’éditeur de règles permet aux créateurs et créatrices de transformer des formulaires statiques en expériences réactives et intelligentes, sans avoir à écrire de code. Vous pouvez afficher des champs de manière conditionnelle, effectuer des calculs, valider des données, guider les utilisateurs et les utilisatrices tout au long des flux et intégrer une logique commerciale qui s’adapte lors de la saisie des personnes.
+L’éditeur de règles permet aux auteurs de transformer des formulaires statiques en expériences réactives et intelligentes sans avoir à écrire de code. Vous pouvez afficher des champs de manière conditionnelle, effectuer des calculs, valider des données, guider les utilisateurs et les utilisatrices tout au long des flux et intégrer une logique commerciale qui s’adapte lors de la saisie des personnes.
 
 ## Ce que vous apprendrez :
 

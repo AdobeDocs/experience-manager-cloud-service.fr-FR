@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1598'
 ht-degree: 1%
 
 ---
 
-# Utilisation du service d’appel dans l’éditeur visuel de règles pour les formulaires basés sur les composants principaux
+# Intégration d’API externes à l’éditeur visuel de règles dans le Forms des composants principaux
 
-L’éditeur visuel de règles d’un formulaire adaptatif prend en charge la fonctionnalité **Invoquer le service**, qui vous permet de sélectionner un service dans la liste des modèles de données de formulaire (FDM) configurés pour votre instance. Vous pouvez mapper des champs de formulaire directement aux paramètres d’entrée du service. Pour mapper des champs de formulaire aux paramètres de sortie, utilisez l’option de payload d’événement pour le service de modèle de données de formulaire spécifié. En outre, l’éditeur visuel de règles vous permet de créer des règles pour les gestionnaires de succès et d’échec des opérations **Invoke Service** en fonction de ses réponses de sortie. Les gestionnaires de succès gèrent la réussite de l’exécution de l’opération **Invoke Service**, tandis que les gestionnaires d’échec traitent les erreurs qui se produisent.
+L’éditeur visuel de règles d’un formulaire adaptatif prend en charge la fonctionnalité **Invoquer le service**, ce qui vous permet de vous connecter à des API externes par le biais des modèles de données de formulaire (FDM) configurés pour votre instance. Vous pouvez mapper les champs de formulaire directement aux paramètres d’entrée du service et utiliser l’option de payload d’événement pour mapper les paramètres de sortie. L’éditeur visuel de règles vous permet également de définir des règles pour les gestionnaires de succès et d’échec en fonction de la réponse du service : les gestionnaires de succès gèrent les appels d’API réussis, tandis que les gestionnaires d’échec gèrent les erreurs.
+
+Vous pouvez ainsi envoyer facilement des requêtes d’API à partir de votre formulaire, traiter les réponses de l’API et afficher ou utiliser les données renvoyées de manière dynamique dans le formulaire. Il garantit une intégration transparente entre votre formulaire adaptatif et les systèmes ou sources de données externes.
+
 
 ## Avantages de l’utilisation du service d’appel dans l’éditeur de règles du formulaire
 
 L’utilisation de l’opération Invoke Service dans l’éditeur de règles d’un formulaire adaptatif présente les avantages suivants :
 
-* **Intégration rationalisée** : l’éditeur de règles visuel simplifie le processus d’intégration de services ou d’API externes à votre Forms adaptative. En utilisant le **service Invoke**, vous pouvez facilement connecter des formulaires à différentes sources de données et services sans avoir à recourir à un codage complexe, ce qui rend l’intégration des formulaires plus efficace.
+* **Intégration rationalisée d’API** : l’éditeur de règles visuel simplifie le processus d’intégration de services ou d’API externes à votre Forms adaptative. En utilisant le **service Invoke**, vous pouvez facilement connecter des formulaires à différentes sources de données et services sans avoir à recourir à un codage complexe, ce qui rend l’intégration des formulaires plus efficace.
 
 * **Gestion des réponses dynamiques** : vous pouvez gérer les réponses de succès et d’erreur en fonction des réponses de sortie du **Invoke Service**, ce qui permet aux formulaires de réagir dynamiquement à différents scénarios. Cela permet aux formulaires de gérer diverses conditions de manière appropriée, améliorant ainsi la flexibilité et le contrôle.
 
