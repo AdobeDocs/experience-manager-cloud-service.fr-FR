@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 ## Version 22171 {#22171}
 
-Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 22171, publiée le mercredi 2 septembre 2025. La version de maintenance précédente était la version 21994.
+Vous trouverez ci-dessous un résumé des améliorations continues de la version de maintenance 22171, publiée le 2 septembre 2025. La version de maintenance précédente était la version 21994.
 
 L’activation des fonctionnalités de la version 2025.9.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Consultez [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) pour plus d’informations.
 
 ### Nouvelles fonctionnalités  {#new-features-22171}
 
-* ASSETS-53136 : prise en charge des identifiants Vanity dans Dynamic Media avec OpenAPI.
+* ASSETS-53136 : prise en charge des ID Vanity dans Dynamic Media avec OpenAPI.
 
 ### Améliorations {#enhancements-22171}
 
@@ -32,15 +32,15 @@ Aucun.
 
 ### Problèmes résolus {#fixed-issues-22171}
 
-* ASSETS-52510 : la détection des noms de fichier en double échoue pour les noms de fichier contenant des `U+202F` Unicode.
-* ASSETS-53489 : la suppression de dossiers de l’interface utilisateur de l’affichage Assets n’annule pas l’approbation de toutes les ressources contenues.
-* ASSETS-54821 : « erreur de serveur » intermittente dans Asset Link.
-* ASSETS-55024 : image endommagée dans le modèle AEM Assets « Télécharger par e-mail ».
-* ASSETS-55325 : les URL statiques Dynamic Media omettent l’extension de fichier après le changement de nom de la ressource.
-* ASSETS-55334 : la boîte de dialogue Partager un lien clignote brièvement et disparaît ou n’apparaît jamais.
-* ASSETS-55382 : redémarrage des tâches de ressources asynchrones pour créer un dossier de destination en double.
-* ASSETS-55472 : l’option Gérer la publication « Inclure seulement les pages déjà publiées » est ignorée.
-* SITES-31600 : erreur Contexthub lors de la rupture de la personnalisation.
+* ASSETS-52510 : la détection des noms de fichier en double échoue pour les noms de fichier contenant des caractères Unicode `U+202F`.
+* ASSETS-53489 : la suppression de dossiers de l’interface d’utilisation de l’affichage Assets n’annule pas l’approbation de toutes les ressources contenues.
+* ASSETS-54821 : « erreur de serveur » intermittente dans Asset Link.
+* ASSETS-55024 : image endommagée dans le modèle AEM Assets « Télécharger par e-mail ».
+* ASSETS-55325 : les URL statiques Dynamic Media omettent l’extension de fichier après le changement de nom de la ressource.
+* ASSETS-55334 : la boîte de dialogue Partage de lien clignote brièvement et disparaît ou n’apparaît jamais.
+* ASSETS-55382 : le redémarrage des tâches de ressources asynchrones crée un dossier de destination en double.
+* ASSETS-55472 : l’option de gestion de publication « Inclure uniquement les pages déjà publiées » est ignorée.
+* SITES-31600 : une erreur javaScript dans ContextHub empêche la personnalisation de fonctionner.
 
 Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, ainsi que sur les problèmes résolus dans la version, consultez la [Feuille de route de publication d’Experience Manager Guides](https://experienceleague.adobe.com/fr/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
