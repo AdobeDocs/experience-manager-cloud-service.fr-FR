@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 16%
+source-wordcount: '1854'
+ht-degree: 14%
 
 ---
 
@@ -89,15 +89,9 @@ L’organisation dans laquelle vous êtes actuellement connecté s’affiche. S�
 
 ![Indicateur d’organisation](assets/organization.png)
 
-#### Solutions {#solutions}
+#### Centre dʼaide {#help}
 
-Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
-
-![Sélecteur de solutions](assets/solutions.png)
-
-#### Aide {#help}
-
-L’icône d’aide permet d’accéder rapidement aux ressources d’apprentissage et d’assistance.
+L’icône du centre d’aide permet d’accéder rapidement aux ressources d’apprentissage et de support.
 
 ![Aide](assets/help.png)
 
@@ -107,9 +101,15 @@ Cette icône contient un badge indiquant le nombre de [notifications](/help/impl
 
 ![Notifications](assets/notifications.png)
 
-#### Propriétés de l’utilisateur ou de l’utilisatrice {#user-properties}
+#### Applications {#solutions}
 
-Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre utilisatrice pour accéder à vos paramètres d’utilisateur ou d’utilisatrice. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
+Appuyez ou cliquez sur le sélecteur d’applications pour accéder rapidement à d’autres solutions Experience Cloud.
+
+![ Sélecteur d’applications ](assets/solutions.png)
+
+#### Compte {#user-properties}
+
+Sélectionnez l’icône représentant votre utilisateur pour accéder aux paramètres de votre compte. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Sur la page de démarrage, vous pouvez saisir l’URL du site à modifier à l�
 >
 >Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel](/help/implementing/universal-editor/getting-started.md).
 
+Une section **Liens rapides** fournit des ressources d’aide et une section **Récents** fournit des liens vers les pages que vous avez récemment ouvertes avec l’éditeur universel.
+
 #### Barre d’emplacement {#location-bar}
 
 La barre d’emplacement affiche l’adresse de la page que vous modifiez. Sélectionnez cette option pour saisir l’adresse d’une autre page à modifier.
@@ -149,21 +151,32 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 >
 >Toute page que vous souhaitez modifier à l’aide de l’éditeur universel doit être [instrumentée pour prendre en charge l’éditeur universel](/help/implementing/universal-editor/getting-started.md).
 
-#### Paramètres d&#39;en-tête d&#39;authentification {#authentication-settings}
+#### Annuler et rétablir {#undo-redo}
 
-Sélectionnez l’icône des paramètres d’en-tête d’authentification si vous devez [définir un en-tête d’authentification personnalisé à des fins de développement local](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur. Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) pour plus d’informations.
+
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
+
+>[!TIP]
+>
+>Utilisez la touche de raccourci `Command-Z` ou `Shift-Command-Z` pour annuler ou rétablir, respectivement.
+
+#### En-têtes d’authentification {#authentication-settings}
+
+Sélectionnez l’icône en-têtes d’authentification si vous devez [définir un en-tête d’authentification personnalisé à des fins de développement local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Bouton Paramètres d’en-tête d’authentification](assets/authentication-header-settings.png)
 
-#### Paramètres de l&#39;émulateur {#emulator}
+#### Mode réactif {#emulator}
 
-Sélectionnez l’icône d’émulation pour définir la manière dont l’éditeur universel effectue le rendu de la page.
+Sélectionnez l’icône de mode réactif pour définir la manière dont l’éditeur universel effectue le rendu de la page.
 
-![Icône Émulateur](assets/emulator.png)
+![Icône Mode réactif](assets/emulator.png)
 
-Appuyez ou cliquez sur l’icône d’émulation pour afficher les options.
+Appuyez ou cliquez sur l’icône de mode réactif pour afficher les options.
 
-![ Options d’émulation ](assets/emulation-options.png)
+![Options du mode réactif](assets/emulation-options.png)
 
 Par défaut, l’éditeur s’ouvre dans une disposition de bureau où la hauteur et la largeur sont automatiquement définies par le navigateur.
 
@@ -173,7 +186,7 @@ Vous pouvez également choisir d’émuler un appareil mobile et dans l’édite
 * Définir la largeur et la hauteur
 * Modifier l’orientation
 
-#### Mode Aperçu {#preview-mode}
+#### Prévisualisation {#preview-mode}
 
 En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtrait sur votre service publié. Cela permet à l’auteur de contenu de parcourir le contenu en cliquant sur des liens, etc.
 

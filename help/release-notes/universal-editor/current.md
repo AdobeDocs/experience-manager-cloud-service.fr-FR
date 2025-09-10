@@ -4,10 +4,10 @@ description: Il s’agit des notes de mise à jour de la version 2025.09.04 de 
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 71%
+source-wordcount: '215'
+ht-degree: 52%
 
 ---
 
@@ -23,13 +23,9 @@ Voici les notes de mise à jour de la version du 4 septembre 2025 de l’éditeu
 ## Nouveautés {#what-is-new}
 
 * Le copier-coller est disponible pour les [utilisateurs initiaux](#copy-paste)
-
-### Annuler, rétablir {#undo-redo}
-
-Les fonctions Annuler et Rétablir sont désormais disponibles pour les créateurs et créatrices de contenu dans l’éditeur universel.
-
-* Cela inclut les modifications effectuées en contexte, les modifications effectuées via le panneau Propriétés, ainsi que l’ajout (ou la duplication), le déplacement et la suppression de blocs.
-* Les options Annuler et Rétablir sont limitées à la session de navigateur en cours.
+* Les fonctions [Annuler et rétablir](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) sont désormais disponibles pour les personnes créant du contenu.
+   * Vous pouvez annuler et rétablir des modifications effectuées dans le contexte, des modifications effectuées via le panneau Propriétés, ainsi qu’ajouter, dupliquer, déplacer et supprimer des blocs.
+   * Les options Annuler et Rétablir sont limitées à la session de navigateur en cours.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -47,8 +43,3 @@ La copie et le collage de composants dans la même page sont désormais disponib
 
 * Mise à jour du style de la barre d’outils de l’éditeur afin de mieux s’aligner sur le nouvel éditeur de texte enrichi à venir.
 * Les filtres de la boîte de dialogue du sélecteur de ressources ont été restaurés.
-
-## Obsolescence {#deprecations}
-
-* Les composants `text-input` et `text-area` ont été officiellement abandonnés avec la [version 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md).
-   * Dans `model-definition.json`, utilisez le composant texte pour créer des entrées de texte pour le panneau Propriétés.

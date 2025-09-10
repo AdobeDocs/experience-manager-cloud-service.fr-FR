@@ -4,10 +4,10 @@ description: L’éditeur de page reste pris en charge par Adobe, mais l’édit
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 3%
+source-wordcount: '1068'
+ht-degree: 15%
 
 ---
 
@@ -63,7 +63,7 @@ Comme l’écart de fonctionnalités entre les deux éditeurs diminue constammen
 | Bloc Couper/Copier-Coller | [!BADGE Disponible]{type=Positive} |  | [!BADGE Indisponible]{type=Negative} | Planifiés |
 | Application de styles | [!BADGE Disponible]{type=Positive} | Les styles peuvent être appliqués aux composants à l’aide [du système de style](/help/sites-cloud/authoring/page-editor/style-system.md). | [!BADGE Disponible]{type=Positive} | Les styles peuvent être appliqués à l’aide des propriétés standard du composant (ou du fragment de contenu). Le même sélecteur de style n’est pas disponible dans l’éditeur universel, mais il est possible d’obtenir une expérience utilisateur très similaire à l’aide d’un widget à sélection multiple. |
 | Appliquer la mise en page | [!BADGE Disponible]{type=Positive} | Sites doit implémenter la [grille réactive AEM](/help/implementing/developing/introduction/responsive-design.md) pour permettre aux auteurs de redimensionner les composants sur trois points d’arrêt prédéfinis. | [!BADGE Disponible]{type=Positive} | Les mises en page peuvent être appliquées à l’aide des propriétés de composant standard (ou de fragment de contenu). Toutefois, la grille réactive n’est pas prise en charge. |
-| Annuler-rétablir | [!BADGE Disponible]{type=Positive} |  | [!BADGE Indisponible]{type=Negative} | Planifiés |
+| Annuler-rétablir | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Publier (également pour la prévisualisation) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | [Démarrer le workflow](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | Disponible en tant qu’extension |
 | Commentaire | [!BADGE Disponible]{type=Positive} | Utilisation de [annotations](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Indisponible]{type=Negative} | Planifiés |
@@ -87,20 +87,20 @@ Comme l’écart de fonctionnalités entre les deux éditeurs diminue constammen
 L’éditeur universel offre de nombreux avantages, ce qui en fait une excellente solution pour les nouveaux projets.
 
 * **Modification visuelle :** comme pour l’éditeur de page, les auteurs peuvent modifier le contenu directement dans l’aperçu et voir instantanément comment leurs modifications affectent l’expérience du visiteur.
-* **Préparation à l’avenir :** la feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
-* **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit le verrouillage de tech stack.
-* **Apportez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet l’adoption sans nécessiter de refactorisation complexe.
-* **Extensibilité :** l’éditeur universel bénéficie d’un cadre d’extension [ robuste,](/help/implementing/universal-editor/extending.md) qui comprend des intégrations à GenAI, Workfront, etc.
+* **Pérennisation :** feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
+* **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit les contraintes de tech stack.
+* **Utilisez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet une adoption sans nécessiter de restructuration complexe.
+* **Extensibilité :** l’éditeur universel bénéficie d’un [framework d’extension robuste](/help/implementing/universal-editor/extending.md), qui inclut des intégrations à l’IA générative, Workfront, etc.
 
-### Migration vers l’éditeur universel {#migrate-ue}
+### Migrer vers l’éditeur universel {#migrate-ue}
 
 Il n’existe pas de chemin de migration direct de l’éditeur de page vers l’éditeur universel. Cela est dû à des différences fondamentales entre les deux technologies.
 
-* L’éditeur universel ne réintroduit pas de fonctionnalités telles que l’éditeur de modèles, le système de style ou la grille réactive.
+* L’éditeur universel ne réintègre pas de fonctionnalités telles que l’éditeur de modèles, le système de style ou la grille réactive.
    * Ces cas d’utilisation peuvent désormais être gérés plus efficacement avec un CSS front-end et JavaScript allégés dans les projets Edge Delivery Services ou découplés.
 * Comme l’éditeur universel est un éditeur en tant que service, il ne peut pas permettre aux personnes en charge de l’implémentation d’injecter des éléments CSS ou JS dans les boîtes de dialogue des composants.
-   * Cela empêche la conversion automatique des boîtes de dialogue de composant à partir de l’éditeur de page.
-   * Cela affecte de nombreux domaines des boîtes de dialogue, tels que les widgets personnalisés, la validation des champs, l’affichage/le masquage des règles et les personnalisations basées sur des modèles.
+   * Cela permet d’éviter une conversion automatique des boîtes de dialogue de composants à partir de l’éditeur de page.
+   * Cela concerne de nombreux domaines relatifs aux boîtes de dialogue, tels que les widgets personnalisés, la validation des champs, les règles d’affichage/de masquage et les personnalisations basées sur des modèles.
       * Bien que de telles fonctionnalités soient toujours possibles, l’éditeur universel les résout par le biais de la configuration, au lieu d’un JavaScript personnalisé déployé dans les boîtes de dialogue.
 
 Bien que l’éditeur universel puisse techniquement activer la modification des pages pour les projets AEM traditionnels (par exemple, créés avec les composants principaux), ces sites reposent généralement sur plusieurs fonctionnalités spécifiques à l’éditeur de page, telles que le système de style, la grille réactive, les modèles modifiables et le code JavaScript personnalisé dans les boîtes de dialogue.

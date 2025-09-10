@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2319'
 ht-degree: 9%
 
 ---
@@ -172,13 +172,27 @@ Composant sélectionné supprimé.
 
    ![Réorganisation des composants](assets/ue-reordering-components.png)
 
-1. Le composant déplacé devient gris dans l’arborescence de contenu, tandis que le point d’insertion est représenté par une ligne bleue. Libérez le composant pour le placer à son nouvel emplacement.
+1. Le composant déplacé est grisé dans l’arborescence de contenu, tandis que votre point d’insertion est représenté par une ligne bleue. Libérez le composant pour le placer à son nouvel emplacement.
 
 Les composants sont réorganisés dans l’arborescence de contenu et dans l’éditeur.
 
 >[!NOTE]
 >
 >Les composants ne peuvent être déplacés entre des conteneurs que si les conteneurs cibles [filtre de composant](/help/implementing/universal-editor/filtering.md) autorisent le composant sélectionné.
+
+### Annuler et rétablir {#undo-redo}
+
+Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
+
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
+
+* Vous pouvez annuler et rétablir des modifications effectuées dans le contexte, des modifications effectuées via le panneau Propriétés, ainsi qu’ajouter, dupliquer, déplacer et supprimer des blocs.
+* Les options Annuler et Rétablir sont limitées à la session de navigateur en cours.
+
+>[!TIP]
+>
+>Utilisez la touche de raccourci `Command-Z` ou `Shift-Command-Z` pour annuler ou rétablir, respectivement.
 
 ## Prévisualisation du contenu {#previewing-content}
 

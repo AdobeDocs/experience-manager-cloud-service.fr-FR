@@ -5,9 +5,9 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '563'
 ht-degree: 31%
 
 ---
@@ -31,7 +31,7 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 1. Dans l’éditeur universel, appuyez ou cliquez sur [l’icône **Publier** dans la barre d’outils de l’éditeur universel.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. Si un [service d’aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible, vous pouvez choisir l’endroit où vous publiez votre contenu, soit dans **[Aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (le cas échéant) ou **Publication**.
-1. La section **Éléments** répertorie le contenu inclus dans la publication, notamment :
+1. La section **Éléments** répertorie le contenu inclus dans la composition. Appuyez ou cliquez sur **Afficher** pour afficher les détails, notamment :
    * **Nouveaux** éléments qui n’ont pas encore été publiés.
    * **Modifié** contenu qui a été publié, mais modifié depuis la dernière publication.
    * **Publié** contenu qui a été publié et qui n’a pas été modifié depuis cette publication.
