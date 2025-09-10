@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -28,17 +28,16 @@ Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant 
 >
 >![Version du code Source utilisée](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-La fonctionnalité **Restaurer le code précédent déployé** n’est disponible que lorsque **chaque** condition ci-dessous est remplie :
+**La restauration du code précédent déployé** n’est disponible que lorsque les conditions suivantes sont remplies :
 
 * Une seule restauration est autorisée par exécution réussie du pipeline. Pour effectuer une nouvelle restauration, exécutez un autre pipeline avec succès.
 * Vous détenez les autorisations **Environment Restore Create**. Pour plus d’informations sur la gestion des autorisations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
 * Votre entreprise est inscrite au programme bêta et l’indicateur de fonctionnalité est activé.
 * Le programme s’exécute sur AEM as a Cloud Service.
-* La restauration du code source précédent peut être effectuée sur un environnement de `Development`, un environnement de `Stage` ou un `Specialized Testng Environment`.
 * Le dernier pipeline pour cet environnement s’est terminé avec succès et s’est exécuté il y a **de 30 jours**.
 * Le statut de l’environnement est *En cours d’exécution* et aucun pipeline n’est en cours.
+* **La restauration du code déployé précédent** peut être effectuée sur un environnement `Development`, `Stage` ou un `Specialized Testng Environment`.
 
-Restaurer L’environnement choisi est un environnement de test `Development`, intermédiaire ou spécialisé.
 Si une vérification échoue, Cloud Manager ouvre la boîte de dialogue suivante qui répertorie une ou plusieurs conditions non remplies et désactive **Confirmer**, empêchant la restauration.
 
 ![Boîte de dialogue Restaurer le code précédent déployé en échec](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
