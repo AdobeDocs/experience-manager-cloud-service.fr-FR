@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
+source-git-commit: 15f2096221d7c521d6e69fb9e425368e869dea09
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6599'
 ht-degree: 98%
 
 ---
@@ -277,7 +277,7 @@ ht-degree: 98%
    + [Affichage principal de la gestion des autorisations](/help/security/touch-ui-principal-view.md)
    + [Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Clés gérées par le client ou la cliente pour Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
-+ Experience Hub {#experience-hub}
++ Experience Hub {#experience-hub}
    + [À propos d’Experience Hub](/help/experience-hub.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
@@ -524,6 +524,7 @@ ht-degree: 98%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -1209,8 +1210,8 @@ ht-degree: 98%
          + [En savoir plus sur l’utilisation de références dans les fragments de contenu](/help/journey-headless/author/references.md)
          + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
 + Assistant IA {#ai-assistant}
-   + [Configuration de l’assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [À propos de l’assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + [Configuration de l’assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [À propos de l’assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + IA générative {#generative-ai}
    + [IA générative dans AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
