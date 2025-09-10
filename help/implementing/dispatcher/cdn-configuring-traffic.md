@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 1%
 
 ---
@@ -445,8 +445,9 @@ Les connexions aux origines sont SSL uniquement et utilisent le port 443.
 
 Il existe des scénarios où les sélecteurs d’origine doivent être utilisés pour acheminer le trafic via l’instance de publication AEM vers AEM Edge Delivery Services :
 
-* Certains contenus sont diffusés par un domaine géré par l’instance de publication AEM, tandis que d’autres contenus du même domaine sont diffusés par Edge Delivery Services
-* Le contenu diffusé par Edge Delivery Services bénéficierait des règles déployées via le pipeline de configuration, y compris les règles de filtrage du trafic ou les transformations de requête/réponse
+* Certains contenus sont diffusés par un domaine géré par l’instance de publication AEM, tandis que d’autres contenus du même domaine sont diffusés par Edge Delivery Services.
+* Le contenu diffusé par Edge Delivery Services bénéficie des règles déployées via le pipeline de configuration, y compris les règles de filtrage du trafic ou les transformations de requête/réponse.
+* Le pipeline de configuration Edge Delivery vous permet de configurer les paramètres du réseau CDN géré par Adobe en définissant des règles telles que `trafficFilters`, `originSelectors` et `redirects`. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 Voici un exemple de règle de sélecteur d’origine qui peut accomplir cela :
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> Puisque le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation Edge Delivery Services [Configuration de l’invalidation des notifications push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Redirections côté serveur {#server-side-redirectors}
