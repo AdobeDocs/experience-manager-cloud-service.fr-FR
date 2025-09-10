@@ -5,9 +5,9 @@ keywords: Comment sélectionner une action envoyer pour un formulaire adaptatif,
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ Vous pouvez configurer l’action Envoyer pour les formulaires créés dans l’
 
 ![Icône Propriétés du formulaire](/help/forms/assets/ue-form-properties-icon.png)
 
-![Propriétés de formulaire de l’éditeur universel](/help/forms/assets/ue-form-properties.png)
+![Assistant des propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 >[!NOTE]
 >

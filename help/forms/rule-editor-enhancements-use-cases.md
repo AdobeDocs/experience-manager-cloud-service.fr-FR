@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Améliorations de l’éditeur de règles et cas d’utilisation
 
-<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">canal de version préliminaire</a>. Ces améliorations s’appliquent également à Edge Delivery Services Forms.
+<span class="preview"> Il s’agit de fonctionnalités de version préliminaire disponibles via notre <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">canal de version préliminaire</a>. Ces améliorations s’appliquent également à Edge Delivery Services Forms.
 
 Cet article présente les dernières améliorations apportées à l’éditeur de règles dans le Forms adaptatif. Ces mises à jour sont conçues pour vous aider à définir plus facilement le comportement du formulaire, sans devoir écrire de code personnalisé, et à créer des expériences de formulaire plus dynamiques, plus réactives et plus personnalisées.
 
@@ -31,7 +31,7 @@ Le tableau ci-dessous répertorie les récentes améliorations apportées à l�
 
 >[!NOTE]
 >
-> Les améliorations apportées à l’éditeur de règles s’appliquent également à Edge Delivery Services Forms.
+> Ces améliorations s’appliquent également à l’[éditeur de règles de Forms des services Edge Delivery](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Examinons maintenant en détail chaque méthode avec des cas d’utilisation spécifiques pour vous aider à comprendre comment ces fonctionnalités peuvent être utilisées pour offrir une expérience personnalisée aux utilisateurs et utilisatrices
 
@@ -124,7 +124,7 @@ Le champ **Coût total d’expédition** se met à jour de manière dynamique po
 >[!NOTE]
 >
 > Vous pouvez également ajouter la fonction **Obtenir la valeur de la variable** dans la condition Lorsque.
-> &#x200B;> ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Cette approche permet des calculs dynamiques en temps réel sans ajouter de champs supplémentaires au formulaire, ce qui permet de garder la structure propre et conviviale.
 

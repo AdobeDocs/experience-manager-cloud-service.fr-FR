@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Préremplir un formulaire adaptatif, formulaires adaptatifs Edge Delivery Services, remplissage automatique de formulaire adaptatif
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 94%
 
 ---
 
@@ -105,7 +105,7 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 ## Configurer un service de préremplissage pour un formulaire
 
-+++Phase 1 : configuration du modèle de données de formulaire
++++Phase 1 : Configuration Du Modèle De Données De Formulaire
 
 ### Étape 1 : créer un modèle de données de formulaire
 
@@ -145,7 +145,7 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 +++
 
-+++Phase 2 : création et configuration du formulaire adaptatif
++++Phase 2 : création et configuration du formulaire adaptatif
 
 ### Étape 3 : création d’un formulaire adaptatif
 
@@ -156,6 +156,11 @@ L’éditeur universel fournit deux options de service de préremplissage :
    ![Modèle Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
 1. Cliquez sur **Créer** pour ouvrir l’assistant **Créer un formulaire**.
+
+   >
+   >
+   > Vous pouvez configurer la source de données à partir de l’onglet **Données** ou ultérieurement en modifiant les propriétés du formulaire.
+
 1. Spécifiez les détails du formulaire :
 
    - **Nom** : saisissez un nom explicite pour votre formulaire
@@ -202,7 +207,7 @@ Les éléments de formulaire de votre FDM apparaissent dans l’onglet **Source 
 
 +++
 
-+++Phase 3 : configuration du service de préremplissage
++++Phase 3 : configuration du service de préremplissage
 
 ### Étape 6 : activer les extensions requises
 
@@ -241,7 +246,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 
 +++
 
-+++Phase 4 : test de votre configuration de préremplissage
++++Phase 4 : Test De La Configuration De Préremplissage
 
 ### Étape 8 : prévisualisation et test
 
@@ -250,7 +255,7 @@ Assurez-vous que ces extensions sont activées dans l’éditeur universel :
 3. Choisissez **Prévisualiser au format HTML**.
 4. Testez le préremplissage en ajoutant des paramètres à l’URL :
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Exemple :**
 
@@ -394,13 +399,13 @@ Les URL ci-dessous sont fournies à titre d’illustration uniquement et ne fonc
 
 ## Questions fréquentes
 
-+++Comment vérifier si le préremplissage fonctionne correctement ?
++++Comment vérifier si le préremplissage fonctionne correctement ?
 
 Prévisualisez votre formulaire et ajoutez des paramètres de préremplissage à l’URL à l’aide du format suivant : `?<bindreferencefield>=<value>`. Assurez-vous que le champ comporte une valeur `bindRef` valide correspondant à votre structure de données. Utilisez les outils de développement du navigateur pour inspecter les requêtes réseau et vérifier que les données sont récupérées correctement.
 
 +++
 
-+++Quels formats de données sont pris en charge pour le préremplissage des formulaires adaptatifs ?
++++Quels formats de données sont pris en charge pour le préremplissage du Forms adaptatif ?
 
 Les formulaires adaptatifs prennent en charge plusieurs formats en fonction de votre modèle de formulaire :
 
@@ -411,25 +416,25 @@ Les formulaires adaptatifs prennent en charge plusieurs formats en fonction de v
 
 +++
 
-+++Puis-je préremplir des champs liés et non liés ?
++++Puis-je préremplir des champs liés et non liés ?
 
 Oui, vous pouvez préremplir les deux types de champs. Les champs liés utilisent la section `afBoundData` et doivent correspondre à votre schéma de modèle de formulaire. Les champs non liés utilisent la section `afUnBoundData` et peuvent contenir toutes les données supplémentaires.
 
 +++
 
-+++Que dois-je faire si seuls certains champs sont préremplis ?
++++Que dois-je faire si seuls certains champs sont préremplis ?
 
 Vérifiez que tous les champs ont des valeurs `bindRef` correctes qui correspondent exactement à votre FDM. Vérifiez que votre source de données contient tous les champs obligatoires et que la structure des données correspond à votre schéma de modèle de formulaire.
 
 +++
 
-+++Puis-je utiliser plusieurs services de préremplissage dans un seul formulaire ?
++++Puis-je utiliser plusieurs services de préremplissage dans un formulaire ?
 
 Vous pouvez configurer un service de préremplissage principal par formulaire. Cependant, vous pouvez combiner différentes sources de données dans un seul modèle de données de formulaire pour obtenir des fonctionnalités similaires.
 
 +++
 
-+++Comment gérer l’authentification pour les services de préremplissage ?
++++Comment gérer l’authentification pour les services de préremplissage ?
 
 L’authentification dépend de la configuration de votre source de données. Pour le préremplissage basé sur FDM, configurez l’authentification dans les paramètres de votre source de données. Pour le préremplissage des brouillons, les utilisateurs et utilisatrices doivent généralement se connecter pour accéder aux brouillons enregistrés.
 

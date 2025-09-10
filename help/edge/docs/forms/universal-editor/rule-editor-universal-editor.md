@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ Image : interface de l’éditeur de règles pour la modification des règles d
 ![Interface d’utilisation de l’éditeur de règles](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Image : interface complète de l’éditeur de règles avec des composants numérotés.
 
-- **Titre du composant et type de règle** : confirme le composant sélectionné et le type de règle actif.
-- **Panneau Objets de formulaire et Fonctions** :
+1. **Titre du composant et type de règle** : confirme le composant sélectionné et le type de règle actif.
+2. **Panneau Objets de formulaire et Fonctions** :
+
    - Objets de formulaire : vue hiérarchique des champs et des conteneurs pour le référencement dans les règles.
    - Fonctions : assistants intégrés de mathématiques, de chaînes, de dates et de validation
-- **Basculement de panneau** : affichez/masquez le panneau Objets et fonctions pour augmenter l’espace de travail.
-- **Créateur visuel de règles** : création de règles par glisser-déposer et menus déroulants.
-- **Contrôles** : Terminé (enregistrer), Annuler (ignorer). Testez toujours les règles avant d’enregistrer.
+
+3. **Basculement de panneau** : affichez/masquez le panneau Objets et fonctions pour augmenter l’espace de travail.
+4. **Créateur visuel de règles** : création de règles par glisser-déposer et menus déroulants.
+5. **Contrôles** : Terminé (enregistrer), Annuler (ignorer). Testez toujours les règles avant d’enregistrer.
 
 +++
 
@@ -302,7 +304,7 @@ Vous allez créer un formulaire qui :
 
 +++
 
-+++ Étape 1 : création du formulaire Foundation
++++ Étape 1 : créer le formulaire
 
 **Objectif** : créer le formulaire de base avec tous les champs et paramètres initiaux.
 
@@ -533,6 +535,9 @@ Image : ajout de fonctions personnalisées au fichier functions.js.
 ![Fonction personnalisée dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Image : sélection et configuration de fonctions personnalisées dans l’interface de l’éditeur de règles.
 
+>
+>
+> Les améliorations apportées à l’éditeur de règles, notamment les règles basées sur un événement personnalisé, la prise en charge des variables dynamiques et l’intégration d’API, sont également disponibles pour Edge Delivery Services Forms. Pour en savoir plus sur ces améliorations et sur la manière de les utiliser, consultez l’article [ Améliorations de l’éditeur de règles et cas d’utilisation ](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Bonnes pratiques relatives à l’utilisation des fonctions** :
 

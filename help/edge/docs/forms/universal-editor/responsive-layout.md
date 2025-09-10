@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 93%
 
 ---
 
 
-# Créer des formulaires réactifs avec l’éditeur universel
+# Création d’un Forms réactif avec l’éditeur universel - Guide complet
 
 Le paysage web moderne exige des formulaires qui fonctionnent de manière transparente sur un éventail toujours croissant d’appareils et de tailles d’écran. Des grands écrans de bureau aux écrans compacts des smartphones, les utilisateurs et utilisatrices attendent des expériences homogènes et intuitives, quel que soit l’appareil qu’ils choisissent. La création de formulaires réactifs n’est plus facultative. Il s’agit d’une exigence fondamentale pour fournir des expériences numériques professionnelles, accessibles et optimisées pour la conversion.
 
@@ -33,20 +33,21 @@ La création de formulaires réactifs implique deux activités principales :
 - Résoudre des problèmes courants liés aux formulaires réactifs.
 - Optimiser les formulaires pour les performances mobiles.
 
-## Importance des formulaires réactifs
+<!--
+## Why Responsive Forms Are Important
 
-**Impact sur l’expérience d’utilisation :**
+**User Experience Impact:**
 
-- Plus de 60 % des utilisateurs et utilisatrices accèdent aux formulaires sur des appareils mobiles
-- Les mauvaises expériences mobiles entraînent un taux d’abandon 67 % plus élevé
-- Les formulaires réactifs peuvent augmenter les taux de remplissage jusqu’à 25 %
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**Avantages commerciaux :**
+**Business Benefits:**
 
-- Taux de remplissage de formulaire plus élevés
-- Amélioration de la satisfaction des utilisateurs et utilisatrices
-- Amélioration de la conformité en matière d’accessibilité
-- Réduction des coûts de développement et de maintenance
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -173,7 +174,7 @@ La mise en page Panneau organise le contenu associé en sections visuellement di
 
 **Implémentation**
 
-1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
+1. Ajoutez le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) au formulaire.
 2. Regroupez les champs associés dans chaque panneau pour conserver une organisation logique.
 3. Attribuez des en-têtes explicites et clairs à chaque section de panneau.
 4. Assurez-vous que l’espacement entre les panneaux est suffisant pour éviter tout encombrement visuel.
@@ -206,7 +207,7 @@ La mise en page Assistant guide les utilisateurs et les utilisatrices tout au lo
 
 **Implémentation**
 
-1. Insérez le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
+1. Insérez le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) dans votre formulaire.
 2. Divisez le formulaire en étapes logiques, idéalement entre 3 et 7, pour que chaque étape reste ciblée et gérable.
 3. Ajoutez des indicateurs de progression pour aider les utilisateurs et les utilisatrices à comprendre leur position dans le processus.
 4. Fournissez des commandes de navigation claires, telles que les boutons Suivant, Précédent et Enregistrer.
@@ -246,7 +247,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 **Implémentation**
 
-1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
+1. Ajoutez le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) à votre formulaire.
 2. Regroupez les contenus secondaires ou facultatifs associés dans chaque section d’accordéon.
 3. Utilisez des en-têtes clairs et descriptifs pour chaque section afin d’aider les utilisateurs et les utilisatrices à comprendre les informations qu’elles contiennent.
 4. Définissez les états d’ouverture ou de fermeture par défaut appropriés pour chaque section en fonction de l’importance et des besoins de l’utilisateur et de l’utilisatrice.
@@ -276,7 +277,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 ### Bonnes pratiques par type d’appareil
 
-+++Optimisation mobile (320 px-767 px)
++++Optimisation mobile (320 px-767 px)
 
 **Mise en page et interaction :**
 
@@ -295,18 +296,18 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 +++
 
-+++Optimisation des tablettes (768 px-1199 px)
++++Optimisation des tablettes (768 px-1 199 px)
 
 **Disposition et convivialité :**
 
-- Utilisez des dispositions à deux colonnes pour les champs connexes afin de tirer parti de l’espace d’écran accru.
+- Utilisez des dispositions à deux colonnes pour les champs associés afin de tirer parti de l’espace d’écran accru.
 - Testez l’aspect et la convivialité du formulaire dans les orientations portrait et paysage.
 - Concevez pour les saisies tactiles et à la souris, en veillant à ce que tous les contrôles soient facilement accessibles.
 - Augmentez la taille de la zone de contenu tout en conservant une hiérarchie visuelle claire et une bonne lisibilité.
 
 +++
 
-+++Optimisation de l’ordinateur de bureau (1200 px+)
++++Optimisation des ordinateurs de bureau (1 200 px+)
 
 **Fonctionnalités avancées et mise en page :**
 
@@ -317,11 +318,45 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 +++
 
+## Configuration de dispositions personnalisées avec des points d’arrêt de requête multimédia
+
+Lors de la création de mises en page personnalisées pour les composants dans le Forms adaptatif à l’aide de **l’éditeur universel**, vous devez définir un comportement réactif à l’aide de **points d’arrêt de requête de média CSS**. Cela permet de s’assurer que les formulaires s’affichent correctement sur différents appareils et tailles d’écran.
+
+**Points d’arrêt recommandés (en fonction des composants principaux d’AEM)**
+
+| **Type d’appareil** | **Point d’arrêt recommandé** |
+|-----------------|---------------------------|
+| **Bureau** | `min-width: 1200px` |
+| **Tablette** | `min-width: 768px and max-width: 1199px` |
+| **Mobile** | `max-width: 767px` |
+
+**Points clés**
+
+- Utilisez ces points d’arrêt pour contrôler la manière dont les composants redimensionnent, empilent ou masquent sur différents appareils.
+- Suivez les directives de conception réactive de votre entreprise pour une expérience utilisateur cohérente.
+- Testez des dispositions sur plusieurs appareils et des orientations pour garantir la convivialité et l’accessibilité.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> L’éditeur universel ne fournit pas d’interface utilisateur pour définir le comportement réactif. Toute la personnalisation de la disposition doit être gérée via CSS.
+
+
+
 ## Résolution des problèmes
 
 ### Problèmes de mise en page
 
-+++Sauts de mise en page de formulaire sur mobile
++++Sauts de disposition de formulaire sur mobile
 
 **Causes possibles :**
 
@@ -355,7 +390,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 +++
 
-+++Problèmes de dépassement de capacité du contenu
++++Problèmes de dépassement de contenu
 
 **Causes possibles :**
 
@@ -393,7 +428,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 ### Problèmes de test et de validation
 
-+++Différences entre émulateur et appareil réel
++++Différences entre l’émulateur et les appareils réels
 
 **Causes possibles :**
 
@@ -430,7 +465,7 @@ La mise en page Accordéon permet de gagner de l’espace en organisant le conte
 
 +++
 
-+++Liste de contrôle des tests
++++Liste de contrôle de test
 
 **Liste de contrôle prépublication :**
 

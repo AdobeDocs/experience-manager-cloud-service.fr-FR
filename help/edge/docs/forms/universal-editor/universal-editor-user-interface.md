@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 97%
+source-wordcount: '2390'
+ht-degree: 95%
 
 ---
 
@@ -112,11 +112,16 @@ La **barre d’outils de l’éditeur universel** fournit des actions clés pour
 
 **Pour votre premier formulaire :**
 
-1. **Commencer la création**: ajoutez des composants à l’aide du bouton **Ajouter** (`a`).
-2. **Configurer les champs** : sélectionnez les composants et utilisez le **mode Propriétés** (`d`).
-3. **Tester le formulaire** : utilisez le **mode Aperçu** (`p`) pour interagir avec le formulaire.
-4. **Vérifier la vue mobile** : basculez vers le **mode réactif** pour les tests mobiles.
-5. **Mettre en ligne** : cliquez sur **Publier** lorsque vous avez terminé.
+1. **Ajouter un composant de formulaire adaptatif** - Insérez le composant de `Adaptive Form` dans une section.
+2. **Commencer la création**: ajoutez des composants à l’aide du bouton **Ajouter** (`a`).
+3. **Configurer les champs** : sélectionnez les composants et utilisez le **mode Propriétés** (`d`).
+4. **Tester le formulaire** : utilisez le **mode Aperçu** (`p`) pour interagir avec le formulaire.
+5. **Vérifier la vue mobile** : basculez vers le **mode réactif** pour les tests mobiles.
+6. **Mettre en ligne** : cliquez sur **Publier** lorsque vous avez terminé.
+
+>[!NOTE]
+>
+> Pour connaître les étapes détaillées afin de créer des formulaires dans l’éditeur universel, voir [Création et publication de Forms adaptatif avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Points de contrôle de validation :**
 
@@ -218,7 +223,7 @@ La **barre d’outils de l’éditeur universel** contient vos outils principaux
 
 #### **Propriétés du formulaire AEM**
 
-**Objectif :** configurer des paramètres au niveau du formulaire tels que le modèle de données de formulaire (FDM) et les dates de publication.\
+**Objectif :** configurer des paramètres au niveau du formulaire tels que le modèle de données de formulaire (FDM), configurer des actions d’envoi et des dates de publication\
 **Quand utiliser cette option :** lorsque vous configurez des intégrations de données et planifiez la publication.
 
 ![Propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ Le panneau Propriétés du formulaire comprend les sections suivantes :
 
 Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la création et la configuration de formulaires. Il change en fonction de ce que vous sélectionnez et fournit différents outils pour diverses tâches.
 
-![Panneau Propriétés](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![Panneau Propriétés](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **Principaux outils de création de formulaires**
 

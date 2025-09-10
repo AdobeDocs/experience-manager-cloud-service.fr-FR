@@ -4,10 +4,10 @@ description: Découvrez comment créer des fragments de formulaire dans l’édi
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ Les fragments de formulaire dans Edge Delivery Services offrent de puissantes 
 
 Vous pouvez créer des fragments de formulaire Edge Delivery Services dans l’éditeur universel et ajouter les fragments créés aux formulaires Edge Delivery Services. Vous pouvez effectuer les actions suivantes avec les fragments de formulaire Edge Delivery Services :
 
-- [Création de fragments de formulaire](#creating-form-fragments)
-- [Ajout de fragments de formulaire dans un formulaire](#adding-form-fragments-to-a-form)
-- [Gestion de fragments de formulaire](#managing-form-fragments)
+- [Création de fragments de formulaire dans l’éditeur universel](#creating-form-fragments-in-universal-editor)
+   - [Compréhension des fragments de formulaire](#understanding-form-fragments)
+   - [Prérequis](#prerequisites)
+   - [Utilisation de fragments de formulaire Edge Delivery Services](#working-with-edge-delivery-services-form-fragments)
+   - [Bonnes pratiques](#best-practices)
+   - [Résumé](#summary)
 
 +++ Création de fragments de formulaire
 
@@ -175,6 +178,10 @@ Pour intégrer un fragment de formulaire dans votre formulaire :
 
    ![Capture d’écran montrant le fragment relatif aux coordonnées, intégré au formulaire des effectifs d’une entreprise dans l’éditeur universel, présentant la façon dont les fragments conservent leur structure lorsqu’ils sont réutilisés](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
+   >[!NOTE]
+   >
+   > Le bouton **Modifier le fragment** permet aux utilisateurs et utilisatrices de naviguer directement vers le fragment de formulaire pour le modifier.
+
    Vous pouvez prévisualiser le formulaire pour découvrir comment il s’affiche en mode **Prévisualisation**.
 
    ![Prévisualisation](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
@@ -246,7 +253,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire depu
     </tbody>
     </table>
 
-+++
++++ 
 
 ## Bonnes pratiques
 
@@ -285,10 +292,10 @@ Vous avez appris à utiliser les fragments de formulaire dans Edge Delivery Se
 
 **Étapes suivantes :**
 
-- Créer une bibliothèque de fragments couramment utilisés pour votre organisation
-- Définir des conventions de nommage et des politiques de gouvernance pour l’utilisation des fragments
+- Créez une bibliothèque de fragments couramment utilisés pour votre organisation.
+- Définissez des conventions de nommage et des politiques de gouvernance pour l’utilisation des fragments.
 - Explorer une intégration avancée avec les [modèles de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) pour les fragments dynamiques pilotés par les données
-- Implémenter des modèles de formulaire basés sur des fragments pour des expériences d’utilisation cohérentes
+- Implémentez des modèles de formulaire basés sur des fragments pour des expériences utilisateur cohérentes.
 
 Vos formulaires bénéficient désormais d’une architecture modulaire et gérable qui s’adapte efficacement à l’ensemble des projets tout en assurant des expériences d’utilisation cohérentes.
 

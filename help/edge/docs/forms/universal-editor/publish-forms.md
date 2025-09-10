@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: Publier des formulaires, Edge Delivery Services, configuration de formulaire, CORS, filtre de référent
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Chaque phase s’appuie sur la précédente pour assurer un déploiement sécuri
 1. **Accéder à votre formulaire** : ouvrez votre formulaire adaptatif dans l’éditeur universel.
 2. **Démarrer la publication** : cliquez sur l’icône **Publier** dans la barre d’outils.
 
-   ![Clic sur Publier](/help/forms/assets/publish-icon-eds-form.png)
+   ![Clic sur Publier](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Chaque phase s’appuie sur la précédente pour assurer un déploiement sécuri
 
 1. **Vérifier les ressources de publication** : le système affiche toutes les ressources en cours de publication, y compris votre formulaire.
 
-   ![Publication en un clic](/help/forms/assets/on-click-publish.png)
+   ![Publication en un clic](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Confirmer la publication** : cliquez sur **Publier** pour continuer.
 3. **Vérifier la réussite** : recherchez le message de confirmation.
 
-   ![Publication réussie](/help/forms/assets/publish-success.png)
+   ![Publication réussie](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Chaque phase s’appuie sur la précédente pour assurer un déploiement sécuri
 
 **Vérifier le statut** : recliquez sur l’icône **Publier** pour afficher le statut actuel.
 
-![Statut de publication](/help/forms/assets/publish-status.png)
+![Statut de publication](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Points de contrôle de validation :**
 
@@ -91,7 +91,7 @@ Chaque phase s’appuie sur la précédente pour assurer un déploiement sécuri
 2. Cliquez sur le menu à trois points (⋯) dans le coin supérieur droit.
 3. Sélectionnez **Dépublier**.
 
-![Dépublier le formulaire](/help/forms/assets/unpublish--form.png)
+![Dépublier le formulaire](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
+ht-degree: 96%
 
 ---
 
@@ -90,7 +90,7 @@ Pour lancer correctement votre nouveau projet avec les formulaires intégrés, v
 
 Les sections suivantes vous guideront à travers chaque étape en détail, afin d’assurer une expérience de configuration de projet fluide et efficace.
 
-+++Étape 1 : créer un référentiel GitHub à partir d’un modèle
++++Étape 1 : créer un référentiel GitHub à partir d’un modèle
 
 1. **Accès au modèle standard d’AEM Forms**
    - Accédez à [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
@@ -117,7 +117,7 @@ Les sections suivantes vous guideront à travers chaque étape en détail, afin 
 
 +++
 
-+++Étape 2 : installer la synchronisation du code AEM
++++Étape 2 : installation de la synchronisation du code AEM
 
 La synchronisation du code AEM synchronise automatiquement les modifications de contenu entre votre environnement de création AEM et votre référentiel GitHub.
 
@@ -136,7 +136,7 @@ La synchronisation du code AEM synchronise automatiquement les modifications de 
 
 +++
 
-+++Étape 3 : configurer l’intégration d’AEM
++++Étape 3 : Configuration de l’intégration AEM
 
 Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement de création AEM pour la synchronisation du contenu.
 
@@ -157,7 +157,10 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **Remplacer :**
@@ -184,13 +187,13 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
 **Validation :** confirmez la connexion de votre référentiel GitHub à AEM.
 
-    >[!REMARQUE]
-    >
->Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build dans GitHub](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Vous rencontrez des problèmes de build ? Voir [Résolution des problèmes de build dans GitHub](#troubleshooting-github-build-issues).
 
 +++
 
-+++Étape 4 : créer un site AEM connecté à votre référentiel GitHub
++++Étape 4 : créer un site AEM connecté à votre référentiel GitHub.
 
 1. **Accéder à la console AEM Sites**
    - Connectez-vous à votre instance de création AEM as a Cloud Service.
@@ -258,7 +261,7 @@ Le fichier `fstab.yaml` connecte votre référentiel GitHub à l’environnement
 
 +++
 
-+++Étape 5 : publier votre site
++++Étape 5 : Publier votre site
 
 La publication rend votre site disponible sur Edge Delivery Services pour un accès global.
 
@@ -343,7 +346,7 @@ Vous allez effectuer les étapes de haut niveau suivantes :
 3. Ajustez les règles ESLint pour prendre en charge les nouveaux fichiers et modèles de codage.
 4. Créez votre projet et validez les modifications dans votre référentiel.
 
-+++Étape 1 : copier les fichiers de bloc Forms
++++Étape 1 : Copier les fichiers de bloc Forms
 
 1. **Accédez à votre projet local**
 
@@ -368,7 +371,7 @@ Vous allez effectuer les étapes de haut niveau suivantes :
 
 +++
 
-+++Étape 2 : mettre à jour la configuration du composant
++++Étape 2 : mettre à jour la configuration du composant
 
 1. **Mettre à jour le modèle de section**
 
@@ -397,7 +400,7 @@ Vous allez effectuer les étapes de haut niveau suivantes :
 
 +++
 
-+++Étape 3 : configurer ESLint (facultatif)
++++Étape 3 : Configurer ESLint (facultatif)
 
 **Pourquoi cette étape :** empêche les erreurs de linting provenant des fichiers spécifiques aux formulaires et configure des règles de validation appropriées.
 
@@ -462,7 +465,7 @@ Vous allez effectuer les étapes de haut niveau suivantes :
 
 +++
 
-+++Étape 4 : créer et déployer
++++Étape 4 : créer et déployer
 
 1. **Installer des dépendances et créer**
 
@@ -528,7 +531,7 @@ Le processus de création d’un formulaire dans l’éditeur universel comprend
 
 Les sections suivantes vous guideront à travers chacune de ces étapes en détail, afin de garantir une expérience de création de formulaire fluide et efficace.
 
-+++Étape 1 : ajouter un bloc de formulaire adaptatif
++++Étape 1 : Ajouter Un Bloc De Formulaire Adaptatif
 
 1. **Ouvrir votre page dans l’éditeur universel**
    - Accédez à la console **Sites** dans AEM.
@@ -550,7 +553,7 @@ Les sections suivantes vous guideront à travers chacune de ces étapes en déta
 
 +++
 
-+++Étape 2 : ajouter des composants de formulaire
++++Étape 2 : Ajouter des composants de formulaire
 
 1. **Accéder à votre bloc de formulaire**
    - Dans l’arborescence de contenu, recherchez la section de formulaire adaptatif que vous venez d’ajouter.
@@ -602,7 +605,7 @@ Les sections suivantes vous guideront à travers chacune de ces étapes en déta
 
 +++
 
-+++Étape 3 : publier votre formulaire
++++Étape 3 : Publier Votre Formulaire
 
 1. **Publier à partir de l’éditeur universel**
    - Cliquez sur le bouton **Publier** dans l’éditeur universel.
@@ -626,13 +629,13 @@ Les sections suivantes vous guideront à travers chacune de ces étapes en déta
    Votre formulaire est maintenant en ligne à l’adresse :
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **Exemple d’URL :**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Page de formulaire en ligne](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -661,7 +664,7 @@ Maintenant que vous disposez d’un formulaire opérationnel, vous pouvez :
 
 Un environnement de développement local vous permet d’apporter des modifications et de les voir instantanément sans passer par le cycle de publication.
 
-+++Configurer l’interface de ligne de commande AEM et le développement local
++++Configuration de l’interface de ligne de commande AEM et du développement local
 
 1. **Installer l’interface de ligne de commande AEM**
 

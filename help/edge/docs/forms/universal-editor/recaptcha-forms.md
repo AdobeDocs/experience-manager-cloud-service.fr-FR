@@ -6,10 +6,10 @@ keywords: reCAPTCHA dans les formulaires, Utilisation de reCAPTCHA dans l’édi
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,6 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 - Accès à la création AEM as a Cloud Service
 - Accès à l’éditeur universel avec des autorisations d’édition de formulaire
-- Inscription au programme d’accès anticipé pour les fonctionnalités reCAPTCHA
 
 ### Exigences techniques
 
@@ -218,7 +217,7 @@ Les formulaires Edge Delivery Services prennent en charge deux options Google
 
 ## Configurer reCAPTCHA Standard
 
-+++Étape 1 : obtenir des clés API reCAPTCHA (voir les détails)
++++Étape 1 : obtenir des clés API reCAPTCHA (voir les détails)
 
 >[!IMPORTANT]
 >
@@ -256,7 +255,7 @@ Les formulaires Edge Delivery Services prennent en charge deux options Google
 
 +++
 
-+++Étape 2 : configurer le conteneur de configuration cloud AEM (voir les détails)
++++Étape 2 : Configurer le conteneur de configuration cloud AEM (voir les détails)
 
 Suivez le même processus que dans la configuration Enterprise :
 
@@ -268,7 +267,7 @@ Suivez le même processus que dans la configuration Enterprise :
 
 +++
 
-+++Étape 3 : configurer le service Standard reCAPTCHA dans AEM (voir les détails)
++++Étape 3 : Configurer le service standard reCAPTCHA dans AEM (voir les détails)
 
 ![Écran de configuration reCAPTCHA Standard](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Figure : interface de configuration de reCAPTCHA Standard dans AEM*
@@ -313,22 +312,22 @@ Après avoir configuré le service reCAPTCHA, ajoutez une protection à votre fo
 ![Ajout du composant reCAPTCHA à un formulaire](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figure : ajout du composant Captcha invisible à votre formulaire*
 
-+++1. Ouvrir un formulaire dans l’éditeur universel
-Accédez à votre formulaire dans AEM Sites et cliquez sur Modifier pour l’ouvrir dans l’éditeur universel. Attendez que l’éditeur se charge.
++++&#x200B;1. Ouvrir un formulaire dans l’éditeur universel
+Accédez à votre formulaire dans AEM Sites et cliquez sur Modifier pour l’ouvrir dans l’éditeur universel. Attendez que l’éditeur se charge.
 
 - Accédez à votre formulaire dans AEM Sites.
 - Cliquez sur Modifier pour ouvrir dans l’éditeur universel.
 - Attendez que l’éditeur se charge.
 +++
 
-+++2. Localiser la structure du formulaire
++++&#x200B;2. Localisez la structure du formulaire
 Dans l’arborescence de contenu (panneau de gauche), recherchez la section de votre formulaire adaptatif et développez la structure du formulaire pour afficher les points d’insertion.
 
 - Dans l’arborescence de contenu (panneau de gauche), recherchez la section Formulaire adaptatif.
 - Développez la structure du formulaire pour afficher les points d’insertion.
 +++
 
-+++3. Ajouter le composant reCAPTCHA
++++&#x200B;3. Ajouter le composant reCAPTCHA
 Ajoutez le composant Captcha (invisible) à votre formulaire.
 
 - Cliquez sur l’icône Ajouter (+) dans la section de votre formulaire.
@@ -336,15 +335,15 @@ Ajoutez le composant Captcha (invisible) à votre formulaire.
 - Vous pouvez également faire glisser et déposer le composant depuis le panneau des composants.
 +++
 
-+++4. Configurer le composant (facultatif)
-Sélectionnez le composant Captcha nouvellement ajouté et vérifiez qu’il utilise votre configuration reCAPTCHA.
++++&#x200B;4. Configurer Le Composant (Facultatif)
+Sélectionnez le composant captcha nouvellement ajouté et vérifiez qu’il utilise votre configuration reCAPTCHA.
 
 - Sélectionnez le composant Captcha nouvellement ajouté.
 - Dans le panneau Propriétés, vérifiez qu’il utilise votre configuration reCAPTCHA.
 - Aucune configuration supplémentaire n’est nécessaire pour l’installation de base.
 +++
 
-+++5. Publier vos modifications
++++&#x200B;5. Publiez Vos Modifications
 Publiez vos modifications et vérifiez qu’il n’y a aucune erreur.
 
 - Cliquez sur Publier dans l’éditeur universel.
