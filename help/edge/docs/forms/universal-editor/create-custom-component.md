@@ -4,9 +4,9 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Le composant de carte personnalisée s’affiche maintenant, comme illustré ci-
 
 ![Composant personnalisé Carte](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Valider et envoyer les modifications
+### &#x200B;3. Valider et envoyer les modifications
 
 Une fois que vous avez implémenté le JavaScript et le CSS de votre composant personnalisé et que vous l’avez vérifié localement, validez et transmettez les modifications à votre référentiel Git.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 Vous avez créé un composant de sélection de carte personnalisée complexe en quelques étapes simples.
 
-## Méthode manuelle ou héritée pour créer un composant personnalisé
++++ ## Méthode manuelle ou héritée pour créer un composant personnalisé
 
 Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes décrites ci-dessous :
 
@@ -522,13 +522,13 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettre à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe avec `id custom-components` avec un objet de la manière suivante :
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
+   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 
