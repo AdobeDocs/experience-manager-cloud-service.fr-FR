@@ -4,7 +4,7 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
+source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 4%
@@ -120,12 +120,14 @@ La fonction **decoration** est le point d’entrée de votre composant personnal
 #### Signature de fonction :
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -141,18 +143,20 @@ La fonction **subscribe** permet à votre composant de réagir aux modifications
 
 ### Signature de fonction :
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -249,28 +253,39 @@ Ajoutons une classe **card** au composant pour le style et ajoutez une image pou
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
 **Ajouter le comportement d’exécution du composant personnalisé dans cards.css**
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 ```
 
@@ -289,64 +304,49 @@ Lorsque l’API est appelée, elle définit le modèle de champ et doit écouter
 Convertissons le code d’affichage de l’étape précédente en une fonction et appelons-le dans la fonction subscribe dans `cards.js` comme illustré ci-dessous :
 
 ```javascript
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-    if (enums[index]?.name) {  
+      label.textContent = enums[index]?.name;
+    }
 
-      let label = radioWrapper.querySelector('label');  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      if (!label) {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-        label = document.createElement('label');  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        radioWrapper.appendChild(label);  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      }  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **Utilisez la fonction Subscribe pour écouter les changements d’événement dans cards.js**
@@ -362,81 +362,58 @@ Pour synchroniser les modifications de la vue avec le modèle de champ, vous dev
 **Utilisation de l’API de modèle de champ dans cards.js**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 Le composant de carte personnalisée s’affiche maintenant, comme illustré ci-dessous :
@@ -453,7 +430,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 Vous avez créé un composant de sélection de carte personnalisée complexe en quelques étapes simples.
 
-+++ ## Méthode manuelle ou héritée pour créer un composant personnalisé
++++ **Méthode manuelle ou héritée pour créer un composant personnalisé**
 
 Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes décrites ci-dessous :
 
@@ -484,23 +461,29 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 7. Enregistrez votre composant en tant que variante dans le créateur de formulaires et définissez la propriété de variante ou
    `fd:viewType/:type` dans le fichier JSON au nom de votre composant, par exemple, ajoutez la valeur `fd:viewType` du `definitions[]` sous forme de cartes au tableau de composants de l’objet avec `id="form`.
 
-   ```javascript
-   {
-   "definitions": [
-   {
-   "title": "Cards",
-   "id": "cards", "plugins": {
-   "xwalk": {
-   "page": {
-   "resourceType":
-   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-   "jcr:title": "Cards",
-   "fieldType": "radio-button", "fd:viewType": "cards",
-   "enabled": true, "visible": true}
+   ```
+       {
+     "definitions": [
+       {
+         "title": "Cards",
+         "id": "cards",
+         "plugins": {
+           "xwalk": {
+             "page": {
+               "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+               "template": {
+                 "jcr:title": "Cards",
+                 "fieldType": "radio-button",
+                 "fd:viewType": "cards",
+                 "enabled": true,
+                 "visible": true
+               }
+             }
+           }
+         }
+       }
+     ]
    }
-   } }
-   }
-   ]}
    ```
 
 8. **Mettre à jour mappings.js** : ajoutez le nom de votre composant à la liste **OOTBComponentDecorators** (pour les composants de style OOTB) ou **customComponents** afin qu’il soit reconnu et chargé par le système.
@@ -522,19 +505,21 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettre à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe avec `id custom-components` avec un objet de la manière suivante :
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
+   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 
 12. Validez et transmettez vos modifications à votre référentiel Git.
 
 Vous pouvez maintenant ajouter le composant personnalisé à votre formulaire.
+
++++
 
 ## Création d’un composant composite
 
@@ -548,81 +533,44 @@ Par exemple, un composant composite de conditions générales se compose d’un 
 Cette structure de composition est définie comme modèle à l’intérieur du fichier JSON du composant correspondant. L’exemple suivant montre comment définir un modèle pour un composant Termes et conditions :
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
 
 ## Bonnes pratiques
