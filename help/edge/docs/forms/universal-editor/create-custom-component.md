@@ -4,7 +4,7 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ Dans cette section, vous découvrirez le processus de création d’un composant
 #### 1.1 Fichiers et dossiers
 
 La première étape consiste à configurer les fichiers nécessaires du composant personnalisé et à le connecter au code dans le référentiel. Ce processus est effectué automatiquement par l’**interface de ligne de commande d’AEM Forms Scaffolder**, ce qui accélère la génération de modèles et le câblage des fichiers nécessaires.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. Ouvrez le terminal et accédez à la racine de votre projet de formulaire.
 2. Exécutez les commandes suivantes :
@@ -520,13 +522,13 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettre à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe avec `id custom-components` avec un objet de la manière suivante :
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
+   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 
