@@ -4,9 +4,9 @@ description: En savoir plus sur la version 2025.9.0 de Cloud Manager dans Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
+source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1138'
 ht-degree: 88%
 
 ---
@@ -29,7 +29,7 @@ La prochaine version est prévue le vendredi 2 octobre 2025.
 
 * **Renouveler manuellement les certificats de validation de domaine gérés par Adobe**
 
-  Vous pouvez désormais renouveler manuellement les certificats de validation de domaine (DV) gérés par Adobe à partir de Cloud Manager ou de l’API publique pour actualiser les certificats de manière proactive. <!-- CMGR-68738 -->
+  Vous pouvez désormais renouveler manuellement les certificats de validation de domaine (DV) gérés par Adobe ayant échoué à partir de Cloud Manager ou de l’API publique pour actualiser les certificats de manière proactive. <!-- CMGR-68738 -->
 
   ![renouvellement du certificat SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 ![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**&#x200B;jusqu’à la fin du déploiement.*
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 ![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
