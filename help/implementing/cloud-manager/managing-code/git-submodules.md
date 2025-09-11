@@ -4,9 +4,9 @@ description: Découvrez comment vous pouvez utiliser des sous-modules Git pour f
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 24%
 
 ---
@@ -68,7 +68,7 @@ Le résultat est un fichier `.gitmodules` similaire au fichier suivant :
 
 Consultez également le [Manuel de référence Git](https://git-scm.com/book/fr/v2/Git-Tools-Submodules) pour plus d’informations sur les sous-modules Git.
 
-## Remarques sur l’utilisation {#usage-notes}
+## Notes d’utilisation des référentiels Adobe {#usage-notes-recommendations-adobe-repos}
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite dans la section précédente.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
@@ -94,4 +94,4 @@ Cependant, après avoir configuré votre fichier `pom.xml` et exécuté les comm
 
 * Les URL Git de sous-module peuvent être au format HTTPS ou SSH, mais doivent pointer vers un référentiel GitHub.com. L’ajout d’un sous-module de référentiel Adobe à un référentiel agrégateur GitHub ou inversement n’est pas pris en charge.
 * Les sous-modules GitHub doivent être accessibles par le biais de l’application GitHub Adobe.
-* [Les limites d’utilisation des sous-modules Git avec des référentiels gérés par Adobe](#limitations-recommendations) s’appliquent également.
+* [Les limites d’utilisation des sous-modules Git avec des référentiels gérés par Adobe](#usage-notes-recommendations-adobe-repos) s’appliquent également.
