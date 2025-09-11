@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 316c2fcbd90c4268816faabbe9836383d12139e1
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '6599'
+source-wordcount: '6603'
 ht-degree: 98%
 
 ---
@@ -235,6 +235,7 @@ ht-degree: 98%
    + Notes de mise à jour de l’éditeur universel {#universal-editor}
       + [Notes de mise à jour actuelles de l’éditeur universel](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Notes de mise à jour de la version 2025.09.04](/help/release-notes/universal-editor/2025/2025-09-04.md)
          + [Notes de mise à jour de la version 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [Notes de mise à jour de la version 2025.08.14](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [Notes de mise à jour de la version 2025.07.31](/help/release-notes/universal-editor/2025/2025-07-31.md)
@@ -524,7 +525,7 @@ ht-degree: 98%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -832,7 +833,7 @@ ht-degree: 98%
             + [Créer un fragment de formulaire adaptatif](/help/forms/adaptive-form-fragments-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif – Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Créer un formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
-            + [Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaire XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
+            + [Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaires XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -882,7 +883,7 @@ ht-degree: 98%
             + [Création d’un modèle](/help/forms/template-editor.md)
             + [Création d’un thème](/help/forms/themes.md)
             + [Fragments de formulaire adaptatif de référence](/help/forms/reference-adaptive-form-fragments.md)
-            + [Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
             + [Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Créer un schéma JSON pour un formulaire adaptatif](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/lazy-loading-adaptive-forms.md)

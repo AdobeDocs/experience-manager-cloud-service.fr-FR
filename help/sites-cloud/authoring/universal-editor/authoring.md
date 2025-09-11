@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 9%
 
 ---
@@ -193,6 +193,24 @@ Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dern
 >[!TIP]
 >
 >Utilisez la touche de raccourci `Command-Z` ou `Shift-Command-Z` pour annuler ou rétablir, respectivement.
+
+### Copier/coller {#copy-paste}
+
+Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs [.](/help/implementing/universal-editor/field-types.md#container) Cela n’est possible que dans la même page et si le conteneur [target permet de coller le composant.](/help/implementing/universal-editor/filtering.md)
+
+![ Icône Copier ](assets/copy.png)
+![Icône Coller](assets/paste.png)
+
+1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
+1. L’icône **Copier** s’affiche dans le panneau [Propriétés.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Appuyez ou cliquez dessus.
+1. L’icône **Coller** s’affiche dans le panneau des propriétés.
+1. Sélectionnez le composant _après_ auquel vous souhaitez coller le composant copié.
+1. Appuyez ou cliquez sur Coller.
+1. Le composant copié est collé _après_ le composant sélectionné.
+
+>[!TIP]
+>
+>Utilisez la touche de raccourci `Command-C` ou `Command-V` pour copier ou coller, respectivement.
 
 ## Prévisualisation du contenu {#previewing-content}
 

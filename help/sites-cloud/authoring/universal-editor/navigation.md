@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 14%
+source-wordcount: '1894'
+ht-degree: 13%
 
 ---
 
@@ -338,6 +338,19 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 >[!TIP]
 >
 >Utilisez le raccourci `Shift+Backspace` pour supprimer un composant sélectionné d’un conteneur.
+
+##### Copier/coller {#copy-paste}
+
+Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container)
+
+![ Icône Copier ](assets/copy.png)
+![Icône Coller](assets/paste.png)
+
+>[!TIP]
+>
+>Utilisez la touche de raccourci `Command-C` ou `Command-V` pour copier ou coller, respectivement.
+
+Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) pour plus d’informations.
 
 #### Boutons supplémentaires {#additional-properties-panel-buttons}
 

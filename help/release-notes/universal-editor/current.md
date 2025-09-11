@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.09.04
-description: Il s’agit des notes de mise à jour de la version 2025.09.04 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.09.11
+description: Il s’agit des notes de mise à jour de la version 2025.09.11 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 52%
+source-wordcount: '220'
+ht-degree: 46%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.09.04 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.09.11 {#release-notes}
 
-Voici les notes de mise à jour de la version du 4 septembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 11 septembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Voici les notes de mise à jour de la version du 4 septembre 2025 de l’éditeu
 
 ## Nouveautés {#what-is-new}
 
-* Le copier-coller est disponible pour les [utilisateurs initiaux](#copy-paste)
-* Les fonctions [Annuler et rétablir](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) sont désormais disponibles pour les personnes créant du contenu.
-   * Vous pouvez annuler et rétablir des modifications effectuées dans le contexte, des modifications effectuées via le panneau Propriétés, ainsi qu’ajouter, dupliquer, déplacer et supprimer des blocs.
-   * Les options Annuler et Rétablir sont limitées à la session de navigateur en cours.
+* Le [copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) est désormais disponible pour les composants dans les conteneurs d’une même page.
+* 6.5 LTS SP1 est désormais pris en charge.
+* L’éditeur universel prend désormais en charge l’[héritage de gestion multisite](/help/sites-cloud/authoring/universal-editor/inheritance.md) pour les fragments de contenu, y compris la rupture automatique de l’héritage lorsqu’un fragment de contenu de Live Copy est modifié.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -35,11 +34,11 @@ Si vous souhaitez tester ces nouvelles fonctionnalités à venir et partager vos
 
 Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de page dans la boîte de dialogue du lien, est désormais disponible dans le panneau de droite.
 
-### Copier/Coller {#copy-paste}
+### Copier et coller sur plusieurs pages {#copy-paste}
 
-La copie et le collage de composants dans la même page sont désormais disponibles pour les auteurs de contenu.
+Il est désormais possible de copier et coller sur plusieurs pages, en plus de dans la même page.
 
 ## Autres améliorations {#other-improvements}
 
-* Mise à jour du style de la barre d’outils de l’éditeur afin de mieux s’aligner sur le nouvel éditeur de texte enrichi à venir.
-* Les filtres de la boîte de dialogue du sélecteur de ressources ont été restaurés.
+* Plusieurs petites améliorations des performances ont été apportées à l’éditeur universel qui fonctionne avec AEM en tant que système principal.
+* Les fragments de contenu sont désormais publiés à l’aide de l’API ouverte, ce qui améliore les performances et est cohérent avec la publication dans l’éditeur de fragments de contenu et la console.
