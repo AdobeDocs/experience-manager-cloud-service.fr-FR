@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ Consultez également les [notes de mise à jour actuelles d’Adobe Experience�
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.9.0 de Cloud Manager dans AEM as a Cloud Service est le vendredi 4 septembre 2025.
+La date de publication de la version 2025.9.0 de Cloud Manager dans AEM as a Cloud Service est le jeudi 4 septembre 2025.
 
-La prochaine version est prévue le vendredi 2 octobre 2025.
+La prochaine version est prévue le jeudi 2 octobre 2025.
 
 ## Nouveautés {#what-is-new}
 
@@ -31,15 +31,15 @@ La prochaine version est prévue le vendredi 2 octobre 2025.
 
   Vous pouvez désormais renouveler manuellement les certificats de validation de domaine (DV) gérés par Adobe ayant échoué à partir de Cloud Manager ou de l’API publique pour actualiser les certificats de manière proactive. <!-- CMGR-68738 -->
 
-  ![renouvellement du certificat SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+  ![Renouvellement du certificat SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
 * **Ajout de la prise en charge d’Azure DevOps (référentiels privés)**
 
-  Les mises à jour de la documentation incluent les étapes de configuration pour apporter votre propre Git avec Azure DevOps et la validation de la demande d’extraction. Voir [Ajout de référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+  Les mises à jour de la documentation incluent les étapes de configuration pour Apporter votre propre Git (BYOG) avec Azure DevOps et la validation de la demande d’extraction. Voir [Ajouter des référentiels externes dans Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Apportez votre propre prise en charge Git (BYOG) étendue aux pipelines de configuration (référentiels privés)**
+* **Prise en charge de Bring Your Own Git (BYOG) étendue aux pipelines de configuration (référentiels privés)**
 
-  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Ce soutien accélère encore le cycle de développement. Voir [Extraction des vérifications de requête pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Cette prise en charge accélère encore le cycle de développement. Voir [Vérifications des demandes de tirage pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Revenez rapidement à un déploiement précédent si le dernier code source client ne fonctionne pas comme prévu ; il n’est pas nécessaire de réexécuter le pipeline complet ou de rétablir manuellement les validations.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**&#x200B;pour un environnement sélectionné.*
+![Restaurez le code source client à partir de la carte Environnements](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Carte Environnements ci-dessus présentant l’option **Restaurer** >**Code précédent déployé**pour un environnement sélectionné.*
 
 ![Boîte de dialogue Restaurer le code déployé précédent](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Dans la boîte de dialogue **Restaurer le code déployé précédent**, passez en revue la version actuellement déployée et la version à restaurer, puis cliquez sur **Confirmer***.
 
 ![Activation de la restauration](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**&#x200B;jusqu’à la fin du déploiement.*
+*Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts et marque l’environnement comme **restauré**jusqu’à la fin du déploiement.*
 
 ![Version du code Source utilisée](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La vue Détails de l’environnement, comme illustré ci-dessus, affiche désormais également la version active utilisée du code source.*
 
@@ -135,13 +135,13 @@ Voir la section [Gérer les jetons d’accès](/help/implementing/cloud-manager/
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Ajout du pipeline de configuration Edge Delivery {#add-eds-pipeline}
+### Ajouter un pipeline de configuration Edge Delivery {#add-eds-pipeline}
 
 Les pipelines de configuration sont désormais pris en charge pour les sites créés avec Edge Delivery Services, ce qui étend cette fonctionnalité au-delà des seuls environnements Cloud Service. Vous pouvez utiliser les **pipelines de configuration** pour gérer des paramètres tels que les règles de filtrage du trafic et les configurations du pare-feu d’application web (WAF), le cas échéant. Consultez [Configurations prises en charge](/help/operations/config-pipeline.md#configurations).
 
 **Amélioration récente**
 
-* Les pipelines de configuration d’Edge Delivery prennent désormais en charge les secrets via les variables de pipeline Cloud Manager.
+* Les pipelines de configuration d’Edge Delivery prennent désormais en charge les secrets via les variables de pipeline Cloud Manager.
 * Les pipelines Edge Delivery Services affichent désormais **Configuration** dans la colonne **Code déployé**, ce qui permet d’identifier instantanément les déploiements de configuration uniquement. <!-- CMGR‑69681 -->
 * Cloud Manager affiche **Ajouter un pipeline Edge Delivery** dès qu’un programme contient au moins un site Edge Delivery Services et un domaine mappé. Dans le cas contraire, l’option est désactivée et une info-bulle explique les exigences manquantes. <!-- CMGR‑69680 -->
 * L’onglet **Edge Delivery** affiche un nouveau widget **Pipelines Edge Delivery** qui répertorie le nom, le statut, le référentiel et la branche de chaque pipeline. <!-- (CMGR-69052) -->
@@ -162,7 +162,7 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-La version de septembre de Cloud Manager ne contient aucun correctif significatif.
+La version de septembre de Cloud Manager ne contient aucun correctif important.
 
 
 <!-- ## Known issues {#known-issues} -->
