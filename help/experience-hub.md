@@ -4,12 +4,12 @@ description: En savoir plus sur la page Adobe Experience Hub.
 landing-page-description: Découvrez Experience Hub, un point de départ centralisé pour accéder à toutes les fonctionnalités d’AEM.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
+source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,6 @@ S’il n’existe aucun environnement de production AEM Cloud Service ou Managed
 
 ![Experience Hub sans environnements de production](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
-## Assistant AI dans AEM
+## Assistant IA dans AEM
 
 Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
