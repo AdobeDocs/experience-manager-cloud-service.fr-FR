@@ -7,7 +7,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -74,7 +74,7 @@ Les balises intelligentes sont implémentées dans AEM Assets à l’aide du wor
 
 ## Préparation d’une ressource pour le balisage intelligent prêt à l’emploi
 
-Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL &#x200B; Balises intelligentes &#x200B;]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
+Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL  Balises intelligentes ]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
 
 ![Elles sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés de la ressource.](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets non balisé dans la gestion des ressources numériques (DAM) {#smart-tag-existing-assets}
 
-Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
+Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -188,7 +188,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 Comme le balisage automatisé des ressources s’exécute en parallèle d’autres tâches de traitement des ressources telles que la création de miniatures et l’extraction de métadonnées, cela peut prendre du temps. Pour accélérer le traitement des ressources, vous pouvez exclure le balisage intelligent lors du chargement au niveau du dossier. Pour exclure la génération automatisée de balises intelligentes pour les ressources chargées dans un dossier spécifique :
 
 1. Ouvrez l’onglet [!UICONTROL Traitement des ressources] dans le dossier [!UICONTROL Propriétés].
-1. Dans le menu [!UICONTROL &#x200B; Balises intelligentes pour les vidéos &#x200B;], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
+1. Dans le menu [!UICONTROL  Balises intelligentes pour les vidéos ], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
 
    Lorsque l’option [!UICONTROL Hérité] est sélectionnée, le chemin d’accès au dossier hérité est également visible avec les informations indiquant s’il est défini sur [!UICONTROL Activer] ou [!UICONTROL Désactiver].
 

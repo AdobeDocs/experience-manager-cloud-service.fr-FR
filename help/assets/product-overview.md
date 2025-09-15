@@ -3,7 +3,7 @@ title: Vue d’ensemble de Content Hub
 description: En savoir plus sur Content Hub, ses principaux avantages, comment y accéder et comment fournir des commentaires sur les options disponibles dans Content Hub.
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%
 
