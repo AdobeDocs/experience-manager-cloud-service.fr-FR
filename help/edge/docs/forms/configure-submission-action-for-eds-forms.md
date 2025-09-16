@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Choisissez votre méthode d’envoi :
 | **Service d’envoi de formulaires** | Capture de données simple | Faible | Formulaires de contact, enquêtes, collecte de données de base |
 | **Envoi de publication AEM** | Workflows complexes | Élevée | Intégrations d’entreprise, traitement personnalisé, workflows |
 
-## Prérequis
+## Conditions préalables
 
 Avant de configurer les actions d’envoi, vérifiez les points suivants :
 
@@ -98,11 +98,11 @@ Envoyez directement les données de formulaire à votre instance de publication 
 
 ### Configuration requise
 
-#### &#x200B;1. Mettre à jour l’URL de l’instance AEM dans Edge Delivery
+#### &#x200B;1. Mettre à jour l’URL de l’instance AEM dans Edge Delivery
 
-Mettez à jour l’URL de l’instance AEM Cloud Service dans le fichier `constant.js` du bloc `form` sous `submitBaseUrl`. Vous pouvez configurer l’URL en fonction de votre environnement :
+Mettez à jour l’URL de l’instance AEM Cloud Service dans le fichier `constant.js` du bloc `form` sous `submitBaseUrl`. Vous pouvez configurer l’URL en fonction de votre environnement :
 
-**Pour l’instance Cloud Service**
+**Pour l’instance Cloud Service**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. Filtre de référent OSGi
 
-Configurez le filtrage des référents pour autoriser vos domaines de site Edge Delivery spécifiques :
+Configurez le filtre de référent pour autoriser vos domaines de site Edge Delivery spécifiques :
 
-1. Créez ou mettez à jour le fichier de configuration OSGi : `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. Créez ou mettez à jour le fichier de configuration OSGi : `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. Ajoutez la configuration suivante à vos domaines de site spécifiques :
+2. Ajoutez la configuration suivante à vos domaines de site spécifiques :
 
    ```json
    {
@@ -148,13 +148,13 @@ Configurez le filtrage des référents pour autoriser vos domaines de site Edge 
    }
    ```
 
-3. Déploiement de la configuration via Cloud Manager
+3. Déployer la configuration via Cloud Manager
 
-Pour obtenir une configuration détaillée du filtre Référent OSGi, reportez-vous au Guide [Filtre Référent](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+Pour obtenir une configuration détaillée du filtre de référent OSGi, consultez le [Guide du filtre de référent](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
-#### &#x200B;3. Problèmes de partage des ressources entre origines multiples (CORS)
+#### &#x200B;3. Problèmes liés à CORS (partage des ressources entre origines multiples)
 
-Configurez les paramètres CORS dans AEM pour autoriser les requêtes provenant de vos domaines de site Edge Delivery spécifiques :
+Configurez les paramètres CORS dans AEM pour autoriser les requêtes provenant de vos domaines de site Edge Delivery spécifiques :
 
 **Localhost du développeur**
 
@@ -162,14 +162,14 @@ Configurez les paramètres CORS dans AEM pour autoriser les requêtes provenant 
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Edge Delivery Sites : ajoutez chaque domaine de site individuellement**
+**Sites Edge Delivery : ajoutez chaque domaine de site individuellement**.
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**Domaines Franklin hérités (s’ils sont toujours en cours d’utilisation)**
+**Domaines Franklin hérités (s’ils sont toujours utilisés)**.
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->Remplacez `main--abc--adobe.aem.live` et `main--abc1--adobe.aem.live` par vos domaines de site réels. Chaque site hébergé à partir du même référentiel nécessite une entrée de configuration CORS distincte.
+>Remplacez `main--abc--adobe.aem.live` et `main--abc1--adobe.aem.live` par vos domaines de site réels. Chaque site hébergé à partir du même référentiel requiert une entrée de configuration CORS distincte.
 
-Pour la configuration CORS détaillée, reportez-vous au [Guide de configuration CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Pour obtenir une configuration détaillée de CORS, consultez le [Guide de configuration de CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Pour activer la norme CORS pour votre environnement de développement local, reportez-vous à l’article [Présentation du partage de ressources entre origines multiples (CORS)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+Pour activer la norme CORS pour votre environnement de développement local, reportez-vous à l’article [Comprendre le partage de ressources entre origines multiples (CORS)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
 
 <!--
 #### 4. CDN Redirect Rules

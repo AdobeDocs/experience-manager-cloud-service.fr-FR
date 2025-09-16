@@ -5,9 +5,9 @@ exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -18,29 +18,29 @@ Découvrez les différents types d’appels effectués sur votre application par
 
 ## Vue d’ensemble {#overview}
 
-L’éditeur universel communique avec votre application instrumentée par le biais d’une série d’appels définis. Cette opération est transparente pour et n’a aucun effet sur l’expérience de l’utilisateur final.
+L’éditeur universel communique avec votre application instrumentée par le biais d’une série d’appels définis. Cette opération est transparente pour et n’a aucun impact sur l’expérience client finale.
 
-Toutefois, pour le développeur, comprendre ces appels et ce qu’ils font peut s’avérer utile lors du débogage de votre application lors de l’utilisation de l’éditeur universel. Si vous avez instrumenté votre application et qu’elle ne se comporte pas comme prévu, il peut être utile d’ouvrir l’onglet **Réseau** des outils de développement de votre navigateur et d’examiner les appels lorsque vous modifiez le contenu de votre application.
+Pour le développeur ou la développeuse, en revanche, comprendre ces appels et leur rôle peut s’avérer utile lors du débogage de l’application avec l’éditeur universel. Si l’application a été instrumentée et ne se comporte pas comme prévu, il peut être utile d’ouvrir l’onglet **Réseau** des outils de développement du navigateur et d’examiner les appels lors de la modification du contenu dans l’application.
 
-![Exemple d’appel de détails sur l’onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
+![Exemple d’appel détaillé dans l’onglet Réseau des outils de développement du navigateur](assets/calls-network-tab.png)
 
-* La **payload** de l’appel contient des détails sur ce qui est mis à jour par l’éditeur, y compris l’identification de ce qui doit être mis à jour et comment le mettre à jour.
-* La **réponse** comprend des détails sur ce qui a été mis à jour exactement par le service d’éditeur. Cela facilite l’actualisation du contenu dans l’éditeur. Dans certains cas, comme lors d’un appel `move`, la page entière doit être actualisée.
+* La **payload** de l’appel contient des informations sur les éléments mis à jour par l’éditeur, notamment l’identification de ce qui doit être mis à jour et la façon de le faire.
+* La **réponse** comprend des informations précises sur les éléments mis à jour par le service d’éditeur. Cela permet de faciliter l’actualisation du contenu dans l’éditeur. Dans certains cas, comme lors d’un appel `move`, l’ensemble de la page doit être actualisé.
 
-Une fois l’appel terminé avec succès, les événements sont déclenchés et incluent la payload de la requête et de la réponse, qui peut être personnalisée pour votre propre application. Consultez le document [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md) pour plus d’informations.
+Une fois l’appel terminé avec succès, des événements sont déclenchés et incluent la payload de la requête et de la réponse, qui peut être personnalisée pour l’application. Pour plus d’informations, consultez le document [Événements de l’éditeur universel](/help/implementing/universal-editor/events.md).
 
-Vous trouverez ci-dessous une liste des types d’appels que l’éditeur universel effectue à votre application avec des exemples de payloads et de réponses.
+Vous trouverez ci-dessous une liste des types d’appels effectués par l’éditeur vers l’application, accompagnée d’exemples de payloads et de réponses.
 
 ## Mettre à jour {#update}
 
-Un appel `update` se produit lorsque vous modifiez du contenu dans votre application à l’aide de l’éditeur universel. La `update` conserve les modifications.
+Un appel `update` se produit lors de la modification de contenu dans l’application à l’aide de l’éditeur universel. La `update` conserve les modifications.
 
-Sa payload comprend des détails sur les éléments à écrire dans le JCR.
+Sa payload contient des informations sur ce qui doit être écrit dans le JCR.
 
-* `resource` : chemin JCR à mettre à jour
-* `prop` : propriété JCR en cours de mise à jour
-* `type` : type de valeur JCR de la propriété mise à jour
-* `value` : les données mises à jour
+* `resource` : le chemin JCR à mettre à jour
+* `prop` : la propriété JCR en cours de mise à jour
+* `type` : le type de valeur JCR de la propriété mise à jour
+* `value` : les données mises à jour
 
 >[!BEGINTABS]
 
@@ -82,12 +82,12 @@ Sa payload comprend des détails sur les éléments à écrire dans le JCR.
 
 ## Détails {#details}
 
-Un appel `details` se produit lors du chargement de votre application dans l’éditeur universel pour récupérer le contenu de l’application.
+Un appel `details` se produit lors du chargement de l’application dans l’éditeur universel afin de récupérer le contenu de l’application.
 
-Sa payload inclut les données à rendre, ainsi que des détails sur ce que les données représentent (le schéma) afin qu’elles puissent être rendues dans l’éditeur universel.
+Sa payload contient les données à restituer ainsi que des informations sur la signification de ces données (le schéma), afin qu’elles puissent être restituées dans l’éditeur universel.
 
-* Pour un composant, l’éditeur universel récupère uniquement un objet `data`, puisque le schéma des données est défini dans l’application.
-* Pour les fragments de contenu, l’éditeur universel récupère également un objet `schema`, car le modèle de fragment de contenu est défini dans le JCR.
+* Pour un composant, l’éditeur universel récupère uniquement un objet `data`, car le schéma des données est défini dans l’application.
+* Pour les fragments de contenu, l’éditeur universel récupère également un objet `schema`, puisque le modèle de fragment de contenu est défini dans le JCR.
 
 >[!BEGINTABS]
 
@@ -146,7 +146,7 @@ Sa payload inclut les données à rendre, ainsi que des détails sur ce que les 
 
 ## Ajouter {#add}
 
-Un appel `add` se produit lorsque vous placez un nouveau composant dans votre application à l’aide de l’éditeur universel.
+Un appel `add` se produit lors de l’ajout d’un nouveau composant dans l’application à l’aide de l’éditeur universel.
 
 Sa payload comprend un objet `path` contenant l’emplacement où le contenu doit être ajouté.
 
@@ -258,7 +258,7 @@ Sa payload comprend un objet `from` définissant l’emplacement du composant et
 
 >[!ENDTABS]
 
-## Supprimez {#remove}
+## Supprimer {#remove}
 
 Un appel `remove` se produit lorsque vous supprimez un composant dans votre application à l’aide de l’éditeur universel.
 
@@ -308,9 +308,9 @@ Sa payload inclut le chemin d’accès de l’objet supprimé.
 
 >[!ENDTABS]
 
-## Publication {#publish}
+## Publier {#publish}
 
-Un appel `publish` se produit lorsque vous cliquez sur le bouton **Publish** dans l’éditeur universel pour publier le contenu que vous avez modifié.
+Un appel `publish` se produit lorsque vous cliquez sur le bouton **Publier** dans l’éditeur universel pour publier le contenu que vous avez modifié.
 
 L’éditeur universel effectue une itération sur le contenu et génère une liste de références qui doivent également être publiées.
 

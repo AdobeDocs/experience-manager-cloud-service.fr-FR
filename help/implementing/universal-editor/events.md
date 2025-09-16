@@ -1,33 +1,33 @@
 ---
 title: Événements de l’éditeur universel
-description: Découvrez les différents événements envoyés par l’éditeur universel que vous pouvez utiliser pour réagir aux modifications de contenu ou d’interface utilisateur dans votre application distante.
+description: Découvrez les événements envoyés par l’éditeur universel que vous pouvez utiliser pour réagir aux modifications de contenu ou d’interface d’utilisation dans votre application distante.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Événements de l’éditeur universel {#events}
 
-Découvrez les différents événements envoyés par l’éditeur universel que vous pouvez utiliser pour réagir aux modifications de contenu ou d’interface utilisateur dans votre application distante.
+Découvrez les événements envoyés par l’éditeur universel que vous pouvez utiliser pour réagir aux modifications de contenu ou d’interface d’utilisation dans votre application distante.
 
 ## Présentation {#introduction}
 
-Les applications peuvent avoir des exigences différentes pour les mises à jour de page ou de composant. Par conséquent, l’éditeur universel envoie les événements définis aux applications distantes. Si l’application distante ne dispose pas d’écouteur d’événement personnalisé pour l’événement envoyé, un [ écouteur d’événement de secours ](#fallback-listeners) fourni par le package `universal-editor-cors` est exécuté.
+Les applications peuvent avoir des exigences différentes pour les mises à jour des pages ou des composants. Par conséquent, l’éditeur universel envoie les événements définis aux applications distantes. Si l’application distante ne dispose pas d’écouteur d’événement personnalisé pour l’événement envoyé, un [écouteur d’événement de secours](#fallback-listeners) fourni par le package `universal-editor-cors` est exécuté.
 
-Tous les événements sont appelés sur l’élément DOM concerné de la page distante. Les événements se propagent jusqu’à l’élément `BODY` où l’écouteur d’événement par défaut fourni par le package `universal-editor-cors` est enregistré. Il existe des événements pour le contenu et des événements pour l’interface utilisateur.
+Tous les événements sont appelés sur l’élément DOM concerné de la page distante. Les événements se propagent jusqu’à l’élément `BODY` où l’écouteur d’événement par défaut fourni par le package `universal-editor-cors` est enregistré. Il existe des événements pour le contenu et des événements pour l’interface d’utilisation.
 
 Tous les événements suivent une convention de nommage.
 
 * `aue:<content-or-ui>-<event-name>`
 
-Par exemple, `aue:content-update` et `aue:ui-select`
+Par exemple, `aue:content-update` et `aue:ui-select`.
 
-Les événements incluent la payload de la requête et de la réponse et sont déclenchés une fois l’appel correspondant réussi. Pour plus d’informations sur les appels et des exemples de payloads, consultez le document [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md).
+Les événements incluent la payload de la requête et de la réponse et sont déclenchés une fois l’appel correspondant effectué. Pour plus d’informations sur les appels et des exemples de payloads, consultez le document [Appels de l’éditeur universel](/help/implementing/universal-editor/calls.md).
 
 ## Événements de mise à jour du contenu {#content-events}
 
@@ -74,7 +74,7 @@ La payload correspond au contenu du composant et, éventuellement, à son schém
 
 L’événement `aue:content-move` est déclenché lorsqu’un composant est déplacé.
 
-La payload est le composant , le conteneur source et le conteneur cible.
+La payload correspond au composant, au conteneur source et au conteneur cible.
 
 ```json
 {
@@ -112,7 +112,7 @@ La payload est un correctif JSON des propriétés mises à jour.
 
 L’événement `aue:content-remove` est déclenché lorsqu’un composant est supprimé d’un conteneur.
 
-La payload est l’identifiant d’élément du composant supprimé.
+La payload correspond à l’identifiant d’élément du composant supprimé.
 
 ```json
 {
@@ -128,7 +128,7 @@ La payload est l’identifiant d’élément du composant supprimé.
 
 L’événement `aue:content-update` est déclenché lorsque les propriétés d’un composant sont mises à jour en contexte.
 
-La payload est la valeur mise à jour.
+La payload correspond à la valeur mise à jour.
 
 ```json
 {
@@ -142,9 +142,9 @@ La payload est la valeur mise à jour.
 
 ### Transmission des payloads {#passing-payloads}
 
-Pour tous les événements de mise à jour de contenu, la payload demandée ainsi que la payload de réponse sont transmises à l’événement. Par exemple, pour un appel de mise à jour :
+Pour tous les événements de mise à jour de contenu, la payload demandée et la payload de réponse sont transmises à l’événement. Par exemple, pour un appel de mise à jour :
 
-Payload de requête :
+Payload de demande :
 
 ```json
 {
@@ -178,11 +178,11 @@ Payload de réponse
 }
 ```
 
-## Événements d’interface utilisateur {#ui-events}
+## Événements d’interface d’utilisation {#ui-events}
 
 ### aue:ui-preview {#ui-preview}
 
-L’événement `aue:ui-preview` est déclenché lorsque le mode de modification de la page devient **Aperçu**.
+L’événement `aue:ui-preview` est déclenché lorsque le mode de modification de la page est remplacé par **Aperçu**.
 
 La payload est vide pour cet événement.
 
@@ -239,18 +239,18 @@ La payload est vide pour cet événement.
 |---|---|
 | `aue:content-add` | Rechargement de page |
 | `aue:content-details` | Ne rien faire |
-| `aue:content-move` | Déplacez le contenu/la structure du composant vers la zone cible |
+| `aue:content-move` | Déplacer le contenu/la structure du composant vers la zone cible |
 | `aue:content-patch` | Rechargement de page |
 | `aue:content-remove` | Supprimer l’élément DOM |
-| `aue:content-update` | Mise à jour de la `innerHTML` avec la payload |
+| `aue:content-update` | Mettre à jour le `innerHTML` avec la payload |
 
-### Événements d’interface utilisateur {#ui-event-fallbacks}
+### Événements d’interface d’utilisation {#ui-event-fallbacks}
 
 | Événement | Comportement |
 |---|---|
 | `aue:ui-select` | Faire défiler jusqu’à l’élément sélectionné |
-| `aue:ui-preview` | Ajouter des `class="adobe-ue-preview"` à la balise HTML |
-| `aue:ui-edit` | Ajouter des `class=adobe-ue-edit"` à la balise HTML |
+| `aue:ui-preview` | Ajouter `class="adobe-ue-preview"` à la balise HTML |
+| `aue:ui-edit` | Ajouter `class=adobe-ue-edit"` à la balise HTML |
 | `aue:ui-viewport-change` | Ne rien faire |
 | `aue:initialized` | Ne rien faire |
 

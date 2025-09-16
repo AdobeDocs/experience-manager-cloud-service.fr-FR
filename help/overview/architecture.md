@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="Présentation de l’architecture d’AEM as a Cloud Service"
 >abstract="Dans cet onglet, vous pouvez afficher la nouvelle architecture d’AEM as a Cloud Service et comprendre les modifications. AEM a généré une architecture dynamique avec un nombre variable d’images. Il est donc important de prendre le temps de comprendre l’architecture cloud."
->additional-url="https://video.tv.adobe.com/v/346181?captions=fre_fr" text="Aperçu de l’architecture"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Aperçu de l’architecture"
 
 Adobe Experience Manager (AEM) as a Cloud Service propose un ensemble de services composables pour la création et la gestion d’expériences à fort impact.
 
@@ -53,7 +53,7 @@ Quatre types d’[environnements](/help/implementing/cloud-manager/manage-enviro
 
 * Environnement d’évaluation :
 
-   * Un environnement d’évaluation est généralement associé à un environnement de production dans une relation 1:1.
+   * Un environnement d’évaluation est toujours couplé à un environnement de production unique dans une relation 1:1.
    * L’environnement d’évaluation est principalement conçu pour les tests automatisés avant que les modifications apportées à l’application ne soient transmises à l’environnement de production.
       * Cela est indépendant des modifications initiées par Adobe dans le cadre d’une mise à jour de maintenance ou par vos déploiements de code.
       * Vous pouvez également effectuer des tests manuels dans le cas d’un déploiement de code.

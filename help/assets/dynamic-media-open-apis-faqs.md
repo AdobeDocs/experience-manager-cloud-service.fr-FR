@@ -4,9 +4,9 @@ description: Questions fréquentes sur Dynamic Media avec fonctionnalités OpenA
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ De même, pour approuver plusieurs ressources simultanément dans un dossier dan
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 
-## Comment sécuriser la diffusion des ressources et rechercher Dynamic Media avec les API ouvertes ? {#secure-asset-delivery}
+## Comment sécuriser la distribution des ressources et la recherche dans Dynamic Media à l’aide des OpenAPI ? {#secure-asset-delivery}
 
 La gouvernance centrale des ressources dans Experience Manager permet aux administrateurs et administratrices de gestion des ressources numériques ou aux personnes responsables de marque de gérer l’accès aux ressources. Ils peuvent restreindre l’accès en configurant les rôles ou en définissant l’heure d’activation et de désactivation pour les ressources approuvées du côté création, en particulier sur l’instance de création d’AEM as a Cloud Service.
 
@@ -104,16 +104,16 @@ Voici quelques-unes des principales différences entre Dynamic Media avec les fo
 | Dynamic Media avec fonctionnalités OpenAPI | Dynamic Media |
 |---|---|
 | [Disponible uniquement avec Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Également disponible avec On-premise ou Adobe Managed Services avec des étapes de configuration et d’approvisionnement supplémentaires. |
-| [Ensemble riche de modificateurs d’image pris en charge, tels que la largeur, la hauteur, la rotation, le retournement, la qualité et le format](/help/assets/deliver-assets-apis.md) | Riche ensemble de modificateurs d’image disponibles |
+| [Ensemble limité de modificateurs d’image pris en charge, tels que la largeur, la hauteur, la rotation, le pivotement, la qualité et le format](/help/assets/deliver-assets-apis.md) | Riche ensemble de modificateurs d’image disponibles |
 | [Diffusion de ressources limitée basée sur les utilisateurs et utilisatrices, les rôles, la date et l’heure](/help/assets/restrict-assets-delivery.md) | Les ressources publiées sur Dynamic Media sont accessibles à tous les utilisateurs et utilisatrices. |
 | La plupart des développeurs et développeuses connaissent les spécifications d’OpenAPI. L’extensibilité d’AEM Assets devient très simple en utilisant le [sélecteur de ressources micro front-end](/help/assets/overview-asset-selector.md). | API SOAP, qui deviennent un obstacle lors du développement de personnalisations de l’intégration. |
 | Toute modification apportée aux ressources approuvées dans la gestion des ressources numériques, y compris les mises à jour de version et les modifications de métadonnées, est automatiquement répercutée dans les URL de diffusion. Avec une durée de vie (Time To Live, TTL) de 10 minutes configurée pour Dynamic Media avec fonctionnalités OpenAPI via CDN, les mises à jour deviennent visibles dans toutes les interfaces de création et de publication en moins de 10 minutes. | La durée de vie (TTL) recommandée du réseau CDN est de 10 heures. Vous pouvez remplacer la valeur TTL à l’aide de l’action d’invalidation du cache. |
 | Seules les ressources approuvées sont disponibles pour la diffusion des ressources vers les applications en aval, ce qui permet d’activer les ressources approuvées par marque dans les expériences numériques. | Toutes les mises à jour apportées à une ressource publiée par Dynamic Media sont publiées automatiquement sans processus d’approbation, ce qui ne garantit pas l’utilisation de ressources approuvées par la marque dans les expériences numériques. |
 | Rapports d’utilisation basés sur le nombre de ressources diffusées. Cette fonctionnalité sera bientôt disponible. | Les rapports d’utilisation ne sont pas disponibles. Cette fonctionnalité sera bientôt disponible. |
 | Les ressources marquées comme ayant expiré sur le référentiel Assets as a Cloud Service ne sont plus disponibles pour les applications en aval. | Aucune expiration de ressource inhérente. Une ressource reste publique jusqu’à ce qu’elle soit supprimée du référentiel AEM as a Cloud Service. |
-| Ne prend pas en charge les fonctionnalités de recadrage intelligent de vidéo. | Prend en charge les fonctionnalités de recadrage intelligent vidéo. |
+| Ne prend pas en charge les fonctionnalités de recadrage intelligent de vidéo. | Prend en charge les fonctionnalités de recadrage intelligent de vidéo. |
 | Codes de vidéo dynamique, ce qui garantit que les meilleurs codes sont diffusés en fonction de la vidéo d’entrée. Aucune configuration n’est requise pour la diffusion vidéo native. | Code Standard 3 indépendamment de la vidéo d’entrée (peut avoir une incidence sur les performances de diffusion vidéo). Vous devez configurer manuellement différents codes pour différents débits vidéo. |
-| Active des URL sécurisées et obscurcies à l’aide d’UID de ressource sans compromettre l’optimisation du moteur de recherche. | L’obscurcissement des URL n’est disponible que pour les paramètres de requête d’URL. Les identifiants de ressources (noms de ressources) dans les URL sont reconnaissables. |
+| Active des URL sécurisées et obscurcies à l’aide d’UID de ressource sans compromettre l’optimisation du moteur de recherche | L’obscurcissement des URL n’est disponible que pour les paramètres de requête d’URL. Les identifiants de ressources (noms de ressources) dans les URL sont reconnaissables. |
 
 
 ## Comment Dynamic Media avec les fonctionnalités OpenAPI résout les limites de la fonctionnalité de ressources connectées ? {#dynamic-media-openapi-addresses-connected-assets-limitations}
@@ -144,7 +144,7 @@ Pour activer l’utilisation en production de [modificateurs en disponibilité l
    * Liste des modificateurs à activer
 
 
-## Comment tester des modificateurs expérimentaux ? {#modifiers-not-generally-available}
+## Comment tester des modificateurs expérimentaux ? {#modifiers-not-generally-available}
 
-Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, &lt;/adobe/experiment/advancemodifiers-expires-YYYYMMDD/assets>
+Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
 Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [ liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

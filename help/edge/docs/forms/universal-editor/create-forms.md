@@ -1,33 +1,33 @@
 ---
 title: Créer et publier des formulaires adaptatifs avec Edge Delivery Services
-description: Cette section contient des instructions détaillées sur la création et la publication de Forms adaptatif à l’aide de modèles Edge Delivery Services dans AEM, avec un accent mis sur la précision et la clarté techniques.
-keywords: formulaires adaptatifs, edge delivery services, éditeur universel, création de formulaire, AEM forms, publication de formulaire
+description: Instructions détaillées pour créer, rédiger et publier des formulaires adaptatifs à l’aide des modèles Edge Delivery Services dans AEM, en mettant l’accent sur la précision technique et la clarté.
+keywords: Formulaires adaptatifs, Edge Delivery Services, éditeur universel, création de formulaires, AEM Forms, publication de formulaires
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Créer et publier des formulaires adaptatifs avec Edge Delivery Services
 
-Ce document fournit des instructions détaillées sur la création, la configuration et la publication de Forms adaptatif à l’aide de modèles Edge Delivery Services dans AEM. Il couvre l’ensemble du workflow, de la création du formulaire au déploiement en production.
+Ce document fournit des instructions détaillées pour créer, configurer et publier des formulaires adaptatifs à l’aide des modèles Edge Delivery Services dans AEM. Il couvre l’ensemble du workflow, de la création du formulaire au déploiement en production.
 
 Après avoir consulté ce guide, vous saurez accomplir ce qui suit :
 
-- Création de formulaires à l’aide de modèles Edge Delivery Services
+- Créer des formulaires à l’aide de modèles Edge Delivery Services
 - Créer des formulaires à l’aide de l’éditeur universel
 - Configurer et publier des formulaires dans Edge Delivery Services
 - Accéder aux formulaires publiés et vérifier le déploiement
 
 
 
-## Prérequis
+## Conditions préalables
 
 Assurez-vous que les conditions préalables suivantes sont remplies avant de continuer :
 
@@ -50,14 +50,14 @@ Assurez-vous que les conditions préalables suivantes sont remplies avant de con
 
 Le processus est composé de trois phases principales :
 
-- **Phase 1:** [Création de formulaire](#step-1-form-creation)
+- **Phase 1 :** [création de formulaire](#step-1-form-creation)
 - **Phase 2 :** [création et conception du formulaire](#step-2-form-authoring-and-design)
 - **Phase 3 :** [configuration et publication](#step-3-configuration-and-publishing)
 
 Chaque phase comprend des étapes de validation pour confirmer une configuration correcte.
 
 
-### Étape 1 : création de formulaire
+### Étape 1 : création de formulaire
 
 1. **Accéder à la création de formulaires**
    - Connectez-vous à votre instance de création AEM Forms as a Cloud Service.
@@ -114,7 +114,7 @@ Chaque phase comprend des étapes de validation pour confirmer une configuration
 1. **Concevoir le formulaire**
    - Configurez les propriétés du champ dans le panneau des propriétés.
    - Définissez des règles et des comportements de validation.
-   - Ajustez le style et la disposition selon vos besoins.
+   - Ajustez le style et la mise en page selon vos besoins.
 
    ![Formulaire d’enregistrement complété](/help/edge/assets/contact-us.png)
 
@@ -130,9 +130,9 @@ Chaque phase comprend des étapes de validation pour confirmer une configuration
 - [Configurer les actions d’envoi](/help/edge/docs/forms/universal-editor/submit-action.md) pour la gestion des données.
 - [Guide de l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) pour les fonctionnalités avancées.
 
-### Étape 03 : configuration et publication
+### Étape 3 : configuration et publication
 
-Configurez Edge Delivery Services et publiez votre formulaire.
+Configurez Edge Delivery Services et publiez votre formulaire.
 
 **Configuration :** automatique (aucune configuration manuelle requise).
 
@@ -207,7 +207,7 @@ Exemple pour le formulaire `contact-us` dans le référentiel `forms-project` de
 
 Vous trouverez ci-dessous les problèmes courants et les solutions pour AEM Forms avec Edge Delivery Services.
 
-+++Formulaire non chargé
++++Le formulaire ne charge pas
 
 **Problème :** l’URL du formulaire renvoie une page 404 ou vide.
 
@@ -291,7 +291,7 @@ Si les problèmes persistent :
 
 1. Vérifiez l’état du service Adobe Experience Cloud.
 2. Consultez la [documentation d’Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr).
-3. Visitez [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=fr).
+3. Visitez [Communauté Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
 4. Contactez l’assistance clientèle Adobe.
 
 +++

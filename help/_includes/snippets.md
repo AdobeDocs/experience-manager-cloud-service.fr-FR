@@ -1,6 +1,6 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ Le tableau suivant montre les différences entre les fonctionnalités disponible
 <table>
   <tbody>
   <tr>
-    <td><strong>Fonctions</strong></td>
+    <td><strong>Fonctionnalités</strong></td>
     <td><strong>Composants de base des formulaires adaptatifs</strong></td>
     <td><strong>Composants principaux des formulaires adaptatifs</strong></td>   
     </tr>
@@ -220,7 +220,7 @@ Pour enregistrer un ticket d’assistance, vous devez d’abord enregistrer votr
 
 **Pour enregistrer un ticket d’assistance, procédez comme suit :**
 
-1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/fr?support-tab=home#support) et créez un ticket.
+1. [Suivez le processus de prise en charge standard](https://experienceleague.adobe.com/?support-tab=home#support) et créez un ticket.
 1. Ajoutez **Edge Delivery** dans le titre du ticket.
 1. Dans la description, fournissez les détails suivants en plus de la description du problème :
 
