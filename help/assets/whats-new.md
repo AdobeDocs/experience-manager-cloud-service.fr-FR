@@ -32,7 +32,7 @@ La date de publication de la version Content Hub (2025.8.0) est le 28 août 2
 
 Content Hub permet désormais de découvrir plus rapidement les ressources dont vous avez besoin. Grâce à la nouvelle fonctionnalité de recherche en masse, vous pouvez saisir plusieurs valeurs pour n’importe quelle propriété de filtre, séparées par un délimiteur (par exemple, plusieurs ID de SKU), et récupérer instantanément toutes les ressources correspondantes à l’aide d’une seule recherche.
 
-[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## Fonctionnalités de la version de juillet {#july-release-features}
 
