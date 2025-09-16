@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '4221'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -50,7 +50,7 @@ Avant de commencer à apprendre et à préparer les ressources requises pour un 
 
 Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez les étapes suivantes pour configurer un formulaire adaptatif afin d’utiliser un modèle XFA (fichier XDP) comme modèle de document d’enregistrement :
 
-1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
+1. Dans l’instance de création Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -63,7 +63,7 @@ Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XD
 
 Chargez votre PDF Adobe Acrobat (Acroform) sur votre instance AEM Forms. Suivez les étapes suivantes pour configurer un formulaire adaptatif afin d’utiliser Adobe Acrobat PDF (acroform) comme modèle de document d’enregistrement :
 
-1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
+1. Dans l’instance de création Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -84,7 +84,7 @@ Lorsqu’un formulaire adaptatif est configuré pour générer automatiquement u
 
 Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de générer automatiquement un document d’enregistrement :
 
-1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
+1. Dans l’instance de création Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, sélectionnez **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -362,7 +362,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
    2. **Propriétés des champs de formulaire** :
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
       * **Séparateur pour plusieurs valeurs** : vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
-      * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
+      * **Alignement des options** : vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) à afficher sur le [!UICONTROL document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs du [!UICONTROL document d’enregistrement]. La définition des propriétés à partir des [!UICONTROL Propriétés des champs de formulaire] du document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez l’option [!UICONTROL Identique au formulaire adaptatif], l’alignement tel que configuré dans une instance de création de formulaire adaptatif est utilisé pour les champs du [!UICONTROL document d’enregistrement].
       * **Nombre d’options d’alignement horizontal**:You permet de définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
 
       ![Propriétés des champs de formulaire](/help/forms/assets/formfieldpropertiesdor.png)
@@ -405,9 +405,9 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
 ## Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif {#dor-support-in-adaptiveform}
 
-Vous pouvez configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
+Vous pouvez configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs.
 
-Effectuez les étapes suivantes à partir de l’instance d’auteur de l’éditeur de formulaire adaptatif :
+Effectuez les étapes suivantes à partir de l’instance d’auteur du créateur de formulaires adaptatifs :
 
 1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]**.
 1. Cliquez sur l’![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.

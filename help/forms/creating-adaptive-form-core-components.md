@@ -1,26 +1,27 @@
 ---
-title: Comment créer un formulaire adaptatif basé sur les composants principaux ?
-description: Découvrez comment créer un formulaire adaptatif à l’aide de [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire (FDM) et un schéma XML ou JSON.
+title: 'Créateur de formulaires : créez des formulaires avec des composants principaux'
+description: Découvrez comment utiliser le créateur de formulaires d’AEM Forms pour créer des formulaires adaptatifs avec des composants principaux. Parfait pour les créateurs de formulaires qui ont besoin de formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations.
+keywords: créateur de formulaires, composants principaux, créer des formulaires, créateur de formulaires, formulaires adaptatifs, créer des formulaires, AEM forms, formulaires réactifs
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 72%
 
 ---
 
-# Créer un formulaire adaptatif (composants principaux) {#creating-an-adaptive-form-core-components}
+# Créateur de formulaires : créez des formulaires avec des composants principaux {#creating-an-adaptive-form-core-components}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | Cet article |
 
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux utilisateurs professionnels pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+Le créateur de formulaires d’AEM Forms vous permet de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. Que vous soyez un créateur de formulaires qui crée des formulaires professionnels ou que vous ayez besoin de créer rapidement des formulaires réactifs, AEM Forms fournit un assistant convivial. L’assistant offre une navigation rapide par onglets pour sélectionner facilement des modèles, un style, des champs et des options d’envoi préconfigurés.
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
@@ -56,7 +57,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Créer un formulaire adaptatif  {#create-an-adaptive-form-core-components}
@@ -112,7 +113,7 @@ Vous pouvez maintenant faire glisser et déposer le [Composants principaux de Fo
 >
 > Vous pouvez également [créer un Forms adaptatif à l’aide de modèles de formulaire XFA (*.XDP)](/help/forms/create-adaptive-form-using-xfa-templates.md). Il permet de gagner du temps en réutilisant les champs des fichiers XDP directement dans le Forms adaptatif.
 
-## Configurer l’action Envoyer pour un formulaire adaptatif {#configure-submit-action-for-form}
+## Configuration d’une action d’envoi pour un formulaire adaptatif {#configure-submit-action-for-form}
 
 Une action Soumettre vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur ou une utilisatrice clique sur le bouton Soumettre d’un formulaire adaptatif. Les formulaires adaptatifs incluent certaines actions de soumission prêtes à l’emploi. Vous pouvez également étendre les actions de soumission par défaut pour créer votre propre action de soumission. Pour configurer une action de soumission pour votre formulaire :
 
@@ -176,7 +177,7 @@ Vous pouvez utiliser le service de préremplissage pour remplir automatiquement 
 * [Créer un service de préremplissage personnalisé](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Utiliser le service de préremplissage de modèle de données de formulaire](#fdm-prefill-service)
 
-### Utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif {#fdm-prefill-service}
+### Utilisez le service de préremplissage du modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif {#fdm-prefill-service}
 
 Vous pouvez utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif à l’aide d’un modèle de données de formulaire ou d’un service de préremplissage personnalisé. Le service de préremplissage de modèle de données de formulaire utilise la méthode [Obtenir le service du modèle de données de formulaire configuré](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) pour récupérer des données. Pour utiliser le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif :
 
@@ -187,7 +188,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Sélectionnez un modèle de données de formulaire (FDM). Ouvrez l’onglet **[!UICONTROL De base]**. Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]**.
 1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser l’[éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
 
-## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
+## Modification des propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
 1. Sélectionnez le formulaire adaptatif et sélectionnez ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Ouvrir les propriétés]**. La page Propriétés du formulaire s’ouvre.
 
@@ -196,7 +197,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
 
-## Comment renommer un formulaire adaptatif AEM ? {#rename-an-AEM-Adaptive-Form}
+## Comment renommer un formulaire adaptatif AEM ? {#rename-an-AEM-Adaptive-Form}
 
 Pour renommer un formulaire adaptatif, procédez comme suit :
 

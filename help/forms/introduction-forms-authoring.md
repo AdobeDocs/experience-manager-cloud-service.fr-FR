@@ -1,20 +1,20 @@
 ---
-title: Présentation de la création de formulaires adaptatifs
-description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des formulaires adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
+title: Présentation de la création de Forms adaptatif
+description: AEM Forms fournit une interface à la fois conviviale et puissante permettant de créer des Forms adaptatifs. Les nombreux composants et outils proposés vous permettent de créer des formulaires.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2496'
 ht-degree: 93%
 
 ---
 
-# Éditeur de formulaires adaptatifs {#introduction-to-authoring-adaptive-forms}
+# Créateur de Forms adaptatif {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -43,7 +43,7 @@ Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle
 
   >[!NOTE]
   >
-  > Vous pouvez modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaires adaptatifs ou de l’éditeur de modèles de formulaires adaptatifs. Pour plus d’informations, consultez l’article [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > Vous pouvez modifier les propriétés du modèle de formulaire à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs. Pour plus d’informations, consultez l’article [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Pour créer un formulaire adaptatif, consultez l’article [créer un formulaire adaptatif](creating-adaptive-form.md).
 
@@ -157,7 +157,7 @@ Il permet de faire glisser des éléments du modèle de formulaire sur le formul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Pièce jointe</td>
@@ -364,9 +364,9 @@ La structure de contenu contient généralement les composants principaux ci-des
 
 * **ressources** : ce nœud contient des informations supplémentaires au sujet de la création de formulaires. Il s’agit, par exemple, de détails sur le modèle de formulaire, de détails de localisation, etc.
 
-## Assistant AI dans AEM
+## Assistant IA dans AEM
 
-Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Pour les clients et clientes qui ont [rempli les conditions préalables](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant IA dans AEM est disponible pour les utilisateurs et utilisatrices de leur entreprise. Voir [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Voir également {#see-also}
 

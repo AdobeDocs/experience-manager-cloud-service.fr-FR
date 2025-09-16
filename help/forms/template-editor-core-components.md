@@ -1,18 +1,18 @@
 ---
-title: Comment créer un modèle de formulaire adaptatif basé sur un composant principal ?
+title: Comment créer un modèle de formulaire adaptatif avec des composants principaux ?
 description: Créez des modèles de formulaire adaptatif basés sur les composants principaux pour définir la structure de base et le contenu initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 58%
+source-wordcount: '1949'
+ht-degree: 57%
 
 ---
 
-# Créer un formulaire adaptatif basé sur les composants principaux {#adaptive-form-templates}
+# Création d’un modèle de formulaire adaptatif avec des composants principaux {#adaptive-form-templates}
 
 Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle contenant la structure de base et le contenu initial que les auteurs et autrices peuvent utiliser pour créer des formulaires.
 
@@ -139,7 +139,7 @@ Lorsque vous modifiez un modèle, vous pouvez définir la mise en page et utilis
 
 ![Conteneur de dispositions dans le calque de structure](/help/forms/assets/layout-template-core-component.png)
 
-Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=fr) pour plus d’informations.
+Reportez-vous à l’article [présentation de la mise en page réactive](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) pour plus d’informations.
 
 ## Activation du modèle {#enabling-the-template}
 
@@ -156,7 +156,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 >[!NOTE]
 >
-> * Vous pouvez également configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif. Pour de plus amples informations, voir [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Vous pouvez également configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs. Pour de plus amples informations, voir [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Voir également {#see-also}
 
 {{see-also}}
+
 * [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
 * [Création d’un formulaire adaptatif (composants principaux)](/help/forms/creating-adaptive-form-core-components.md)
 

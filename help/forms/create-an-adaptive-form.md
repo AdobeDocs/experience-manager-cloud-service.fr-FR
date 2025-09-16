@@ -1,28 +1,28 @@
 ---
 title: Comment créer un formulaire adaptatif ?
-description: Découvrez comment créer des Forms adaptatifs réactifs sur les appareils mobiles à l’aide de notre tutoriel détaillé. Ces formulaires s’adaptent de manière transparente sur tous les appareils, assurant ainsi une expérience fluide.
-keywords: Forms adaptatif, Responsive Forms, HTML5 Forms
+description: Découvrez comment utiliser le créateur de formulaires d’AEM Forms pour créer des formulaires adaptatifs réactifs sur les appareils mobiles. Parfait pour les créateurs et les développeurs de formulaires qui ont besoin de formulaires qui s’adaptent facilement sur plusieurs appareils.
+keywords: créateur de formulaires, créateur de formulaires, créer des formulaires, créateur de formulaires, formulaires adaptatifs, formulaires réactifs, HTML5 forms, créer des formulaires, AEM forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '2679'
-ht-degree: 74%
+source-wordcount: '2703'
+ht-degree: 71%
 
 ---
 
-# Créer un formulaire adaptatif {#creating-an-adaptive-form}
+# Guide de prise en main du créateur de formulaires {#creating-an-adaptive-form}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | Cet article |
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux utilisateurs professionnels pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+Le créateur de formulaires d’AEM Forms vous permet de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. Que vous soyez un créateur de formulaires qui crée des formulaires professionnels ou que vous ayez besoin de créer rapidement des formulaires réactifs, AEM Forms fournit un assistant convivial. L’assistant offre une navigation rapide par onglets pour sélectionner facilement des modèles, un style, des champs et des options d’envoi préconfigurés.
 
 ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
@@ -103,7 +103,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 Vous pouvez maintenant faire glisser et déposer les éléments [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#components) ou de schéma pour créer votre formulaire adaptatif.
 
 
-## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-core-components-based-adaptive-forms}
+## Modification des propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-core-components-based-adaptive-forms}
 
 1. Sélectionnez le formulaire adaptatif et sélectionnez ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Ouvrir les propriétés]**. La page Propriétés du formulaire s’ouvre.
 
@@ -128,7 +128,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 ## Créer un formulaire adaptatif {#create-an-adaptive-form-foundation-components}
 
-1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms]. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
+1. Accédez à l’instance de création [!DNL Experience Manager Forms]. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
@@ -198,7 +198,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -231,7 +231,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 >You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
 
-## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-foundation-components}
+## Modification des propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-foundation-components}
 
 Vous pouvez modifier le modèle d’un formulaire adaptatif (basé sur JSON ou modèle de données de formulaire (FDM)). Vous ne pouvez pas passer d’un modèle de formulaire à un autre.
 
@@ -243,7 +243,7 @@ Vous pouvez modifier le modèle d’un formulaire adaptatif (basé sur JSON ou m
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
-Vous pouvez également modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
+Vous pouvez également modifier les propriétés du modèle de formulaire à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs.
 
 1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]**.
 1. Cliquez sur l’![icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.

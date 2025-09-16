@@ -10,7 +10,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 80%
@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Fragments de formulaire adaptatif de référence {#reference-adaptive-form-fragments}
 
-Un fragment de formulaire adaptatif est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez faire glisser et déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
+Un fragment de formulaire adaptatif est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez faire glisser et déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans le créateur de formulaires.
 
 Pour les auteurs de Forms adaptatif, les fragments de référence sont fournis dans le package [!DNL AEM Forms] [!DNL AEM FORMS] REFERENCE FRAGMENTS. Il inclut les fragments suivants :
 

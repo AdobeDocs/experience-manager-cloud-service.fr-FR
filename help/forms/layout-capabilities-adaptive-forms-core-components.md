@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: Disposition d’un formulaire adaptatif en fonction des composants principaux, dispositions différentes pour les formulaires, dispositions de formulaires dynamiques AEM, dispositions de formulaires AEM Cloud Service, types de dispositions de formulaires dans les composants principaux AEM, dispositions de formulaires adaptatifs
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2106'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 17%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=fr) |
-| AEM as a Cloud Service (composants de base) | [Cliquer ici](/help/forms/layout-capabilities-adaptive-forms.md) |
-| AEM as a Cloud Service (composants principaux) | Cet article |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service (Composants de base) | [Cliquer ici](/help/forms/layout-capabilities-adaptive-forms.md) |
+| AEM as a Cloud Service (Composants principaux) | Cet article |
 
 Le Forms adaptatif fournit des composants de première classe pour mettre en page et concevoir les formulaires efficacement. La disposition contrôle l’affichage des composants dans un formulaire. Forms adaptatif prend en charge différentes dispositions : panneau, assistant, accordéon, onglets supérieurs/horizontaux et onglets gauche/vertical.
 
@@ -32,6 +32,7 @@ Avant d’explorer les différentes fonctionnalités d’une disposition, assure
 ## Types de disposition de Forms adaptatif
 
 Les formulaires adaptatifs basés sur les composants principaux prennent en charge les types de dispositions suivants :
+
 * **Mise en page du panneau**
 * **Disposition Assistant**
 * **Disposition verticale**
@@ -40,25 +41,25 @@ Les formulaires adaptatifs basés sur les composants principaux prennent en char
 
 >[!BEGINTABS]
 
->[!TAB Disposition de panneau]
+>[!TAB Mise en page Panneau]
 
 La disposition de panneau est utile pour organiser les champs associés de manière à faciliter la navigation et la recherche du contenu correspondant. La disposition des panneaux organise les composants de formulaire en sections ou panneaux distincts dans un formulaire adaptatif.
 
-![Disposition de panneau](/help/forms/assets/panel-layout.png)
+![Mise en page Panneau](/help/forms/assets/panel-layout.png)
 
-Disposition de panneau
+Mise en page Panneau
 
-Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Vous pouvez utiliser le [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) pour ajouter la disposition de panneau dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Panneau, reportez-vous à l’article [composant Panneau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
->[!TAB Disposition de l’Assistant]
+>[!TAB Mise en page Assistant]
 
 La disposition de l’Assistant permet de simplifier un formulaire complexe en le divisant en étapes distinctes. Chaque étape représente une partie différente du processus et les utilisateurs naviguent de manière séquentielle parmi les étapes, souvent avec les boutons **Suivant** et **Précédent**. Vous pouvez utiliser la disposition de l’Assistant pour créer un formulaire qui implique plusieurs sections ou étapes.
 
 ![Disposition de l’Assistant](/help/forms/assets/wizard-layout-compare.gif)
 
-Disposition de l’Assistant
+Mise en page Assistant
 
-Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Vous pouvez utiliser le [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) pour ajouter la disposition de l’Assistant dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Assistant, reportez-vous à l’article [composant Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Disposition d’onglets verticaux]
 
@@ -80,18 +81,18 @@ La disposition des onglets horizontaux est également appelée disposition Ongle
 
 Disposition des onglets horizontaux
 
-Vous pouvez utiliser le composant [onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition des onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [composant Onglets horizontaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Vous pouvez utiliser le composant [onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) pour ajouter la disposition des onglets horizontaux dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Onglets horizontaux, reportez-vous à l’article [composant Onglets horizontaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
->[!TAB Disposition en accordéon]
+>[!TAB Mise en page Accordéon]
 
 La disposition en accordéon affiche le contenu dans des sections ou des panneaux réductibles d’un formulaire adaptatif. Lorsqu’une section est développée, elle y affiche le contenu tandis que les autres sections restent réduites. Cette disposition est idéale pour afficher de grandes quantités d’informations sous une forme compacte.
 
 ![Disposition en accordéon](/help/forms/assets/accordion-layout-compare.gif)
 
-Disposition en accordéon
+Mise en page Accordéon
 
-Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Vous pouvez utiliser le [composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) pour ajouter la disposition en accordéon dans un formulaire. Pour obtenir des instructions détaillées sur la configuration des différentes propriétés du composant Accordéon, reportez-vous à l’article [Composant Accordéon](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -136,9 +137,9 @@ Examinons le processus détaillé d’insertion d’une disposition et d’ajout
 
    Vous pouvez également [créer un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Recherchez la section dans l’éditeur de formulaires qui vous permet d’ajouter une mise en page.
+1. Recherchez la section du créateur de formulaires qui vous permet d’ajouter une disposition.
 
-   ![Éditeur de formulaire](/help/forms/assets/form-editor.png)
+   ![Créateur de formulaires](/help/forms/assets/form-editor.png)
 1. Cliquez sur l’icône **Ajouter**. L’icône est un signe plus (+) qui signifie que vous pouvez ajouter de nouveaux composants.
 
    ![Insérer une disposition](/help/forms/assets/insert-layout-add-icon.png)
@@ -342,7 +343,7 @@ Pour remplacer la mise en page existante d’un formulaire, procédez comme suit
 
 ## Octets supplémentaires
 
-Pour faire glisser et déposer des composants dans l’éditeur de formulaires, procédez comme suit :
+Pour faire glisser des composants dans le créateur de formulaires, procédez comme suit :
 
 1. Recherchez la section qui vous permet d’ajouter des composants.
 1. Accédez au panneau de gauche de votre environnement de création et cliquez sur **Composants**.

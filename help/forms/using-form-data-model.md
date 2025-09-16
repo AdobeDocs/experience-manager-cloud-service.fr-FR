@@ -1,14 +1,14 @@
 ---
 title: Comment créer un modèle de données de formulaire (FDM) pour un formulaire adaptatif ?
-description: Découvrez comment créer des Forms et des fragments adaptatifs basés sur un modèle de données de formulaire (FDM). Générer et modifier des exemples de données pour les objets de modèle de données dans FDM.
+description: Découvrez comment créer des Forms et des fragments adaptatifs basés sur un modèle de données de formulaire (FDM). Générez et modifiez des données d’exemples pour les objets de modèle de données dans FDM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 41%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -33,7 +33,7 @@ Un modèle de données de formulaire (FDM) est une extension du schéma JSON que
 
 * [créer des formulaires adaptatifs et des fragments](#create-af) ;
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
-* [Aperçu avec des exemples de données](#preview-ic)
+* [Aperçu avec des données d’exemple](#preview-ic)
 * [Utilisation du service de modèle de données de formulaire](#prefill)
 * [écrire les données de formulaires adaptatifs envoyés dans les sources de données ;](#write-af)
 * [appeler les services à l’aide des règles de formulaire adaptatif.](#invoke-services)
@@ -56,7 +56,7 @@ Vous pouvez créer des [Forms adaptatif](creating-adaptive-form.md) et des fragm
 
    ![create-af-3](assets/create-af-3.png)
 
-   Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire (FDM) créé, les objets de modèle de données de formulaire apparaissent dans l’onglet **[!UICONTROL Sources de données]** de l’explorateur de contenu dans l’éditeur de formulaires adaptatifs.
+   Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire (FDM) créé, les objets de modèle de données de formulaire apparaissent dans l’onglet **[!UICONTROL Sources de données]** de l’explorateur de contenu dans le créateur de formulaires adaptatifs.
 
    >[!NOTE]
    >
@@ -86,9 +86,9 @@ For more information, see:
 
 [List fragments](lists.md) -->
 
-## Aperçu avec des exemples de données {#preview-ic}
+## Aperçu avec des données d’exemple {#preview-ic}
 
-L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire (FDM). Vous pouvez utiliser ces données pour prévisualiser et tester les formulaires adaptatifs <!--interactive communications and-->. Vous devez générer les exemples de données avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md#sample).
+L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire (FDM). Vous pouvez utiliser ces données pour prévisualiser et tester les formulaires adaptatifs <!--interactive communications and-->. Vous devez générer les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 

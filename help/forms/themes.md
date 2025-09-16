@@ -4,10 +4,10 @@ description: Utilisez les thèmes de formulaire adaptatif pour appliquer un styl
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif<!-- or interactive communication -->.
@@ -297,7 +297,7 @@ Lorsque vous mettez en forme un composant, les styles sont mis en cache et répe
 
 Dans cet exemple, le style du libellé du champ est modifié. Lorsque l’option Description du panneau réactif est sélectionnée pour le style, une entrée de liste est ajoutée à la bibliothèque de ressources. L’entrée dans la bibliothèque de ressources peut être utilisée pour modifier le style de la description du panneau réactif.
 
-Lorsqu’un style est ajouté à la bibliothèque de ressources, il est disponible pour d’autres thèmes et dans le [mode Style](inline-style-adaptive-forms.md) de l’éditeur de formulaires UI. De même, lorsque vous utilisez le mode Style de l’éditeur <!-- or interactive communication editor -->de formulaires pour personnaliser un composant, le style est mis en cache et disponible dans les thèmes.
+Lorsqu’un style est ajouté à la bibliothèque de ressources, il est disponible pour d’autres thèmes et dans le [mode Style](inline-style-adaptive-forms.md) de l’interface utilisateur du créateur de formulaires. De même, lorsque vous utilisez le mode Style de l’interface utilisateur <!-- or interactive communication editor --> du créateur de formulaires pour appliquer un style à un composant, le style est mis en cache et disponible dans les thèmes.
 
 Le bouton Plus de la bibliothèque de ressources vous permet d’enregistrer le style de façon permanente avec le nom de votre choix. Le bouton Plus enregistre le style, même si vous ne cliquez pas sur le bouton Enregistrer dans la barre latérale pour appliquer le style à un composant. Le bouton Plus permettant d’enregistrer un style pour une utilisation ultérieure n’est pas disponible en mode Style.
 
@@ -503,7 +503,7 @@ Pour configurer Adobe Fonts dans Experience Manager, effectuez les étapes suiva
 
 Pour configurer un thème pour utiliser la configuration Adobe Fonts, effectuez les étapes suivantes :
 
-1. Dans l’instance de l’auteur, ouvrez un thème dans l’éditeur de thèmes.
+1. Dans l’instance de création, ouvrez un thème dans l’éditeur de thèmes.
 1. Dans l’éditeur de thèmes, cliquez sur **[!UICONTROL Options du thème]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurer]**.
 1. Dans le champ **[!UICONTROL Configuration d’Adobe Fonts]**, sélectionnez un kit et cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -671,10 +671,10 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
 
   Il n’est pas recommandé de modifier la largeur de disposition du panneau conteneur. Lorsque vous spécifiez la largeur d’un panneau de contenu, il devient statique et ne s’adapte pas aux différents affichages.
 
-* **Dans quel cas utiliser l’éditeur de formulaires ou l’éditeur de thèmes pour travailler sur l’en-tête et le pied de page**
+* **Quand utiliser le créateur de formulaires ou l’éditeur de thèmes pour travailler avec l’en-tête et le pied de page**
 
   Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
-Si vous souhaitez fournir des informations comme une image de logo, le nom de l’entreprise dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.
+Si vous souhaitez fournir des informations telles qu’une image de logo, le nom de la société dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options du créateur de formulaires.
 
 
 ## Voir également {#see-also}

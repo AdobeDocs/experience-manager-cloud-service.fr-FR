@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 80%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous pouvez définir l’aspect général et le style d’un formulaire adaptatif en spécifiant les styles à l’aide d’un [éditeur de thèmes](themes.md). En outre, vous pouvez appliquer des styles CSS intégrés à différents composants de formulaire adaptatif et prévisualiser les modifications apportées à la volée. Les styles intégrés remplacent les styles fournis dans le thème.
@@ -29,7 +29,7 @@ Vous pouvez définir l’aspect général et le style d’un formulaire adaptati
 
 Pour ajouter des styles intégrés à un composant :
 
-1. Ouvrez votre formulaire dans l’éditeur de formulaires, puis choisissez le mode Style. Pour passer au mode Style, dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Ouvrez votre formulaire dans le créateur de formulaires, puis choisissez le mode Style. Pour passer au mode Style, dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
 1. Sélectionnez un composant dans la page, puis sélectionnez le bouton Modifier ![edit-button](assets/edit.svg). Les propriétés de style s’ouvrent dans la barre latérale.
 
    Vous pouvez également sélectionner des composants dans l’arborescence de hiérarchie de formulaire dans la barre latérale. L’arborescence de hiérarchie de formulaires est disponible sous forme d’objets de formulaire dans la barre latérale.

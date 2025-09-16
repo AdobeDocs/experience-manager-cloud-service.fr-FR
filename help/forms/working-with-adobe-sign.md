@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 88%
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -85,7 +85,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
 
    1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   Le conteneur de configurations contient les services [!DNL Adobe Sign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans l’éditeur de formulaires adaptatifs.
+   Le conteneur de configurations contient les services [!DNL Adobe Sign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans le créateur de formulaires adaptatifs.
 
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
@@ -124,8 +124,8 @@ Pour ajouter des champs à un formulaire adaptatif et personnaliser diverses opt
 
    >[!NOTE]
    >
-   >  * L’utilisation du bloc [!DNL Adobe Sign] n’est pas obligatoire pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif. Si vous n’utilisez pas le bloc [!DNL Adobe Sign] et ajoutez des champs pour les destinataires, le champ de signature par défaut est affiché en bas des documents de signature.
-   >  * Utilisez le bloc [!DNL Adobe Sign] seulement pour les formulaires adaptatifs qui génèrent automatiquement un document d’enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas pris en charge.
+   > * L’utilisation du bloc [!DNL Adobe Sign] n’est pas obligatoire pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif. Si vous n’utilisez pas le bloc [!DNL Adobe Sign] et ajoutez des champs pour les destinataires, le champ de signature par défaut est affiché en bas des documents de signature.
+   > * Utilisez le bloc [!DNL Adobe Sign] seulement pour les formulaires adaptatifs qui génèrent automatiquement un document d’enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas pris en charge.
 
 
 1. Sélectionnez le composant **[!UICONTROL Bloc Adobe Sign]** et sélectionnez l’icône **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg). Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
@@ -134,7 +134,7 @@ Pour ajouter des champs à un formulaire adaptatif et personnaliser diverses opt
 
    **A.** Sélection et ajout de champs [!DNL Adobe Sign]. **B.** Développement du bloc [!DNL Adobe Sign] en mode plein écran
 
-1. Sélectionnez l’icône Champ **[!UICONTROL Adobe Sign]** ![Adobe Sign](assets/adobesign.png) . Elle affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
+1. Sélectionnez l’icône **[!UICONTROL Champ Adobe Sign]** ![Adobe Sign](assets/adobesign.png) . Elle affiche des options permettant de sélectionner et d’ajouter des champs [!DNL Adobe Sign].
 
    Développez le champ déroulant **[!UICONTROL Type]** pour sélectionner un champ de [!DNL Adobe Sign], puis sélectionnez l’icône Terminé ![Enregistrer](assets/save_icon.svg) pour ajouter le champ sélectionné [!DNL Adobe Sign] bloc. Le champ déroulant **[!UICONTROL Type]** comprend les types de champs Signature, Informations du destinataire et Données. Intégration d’[!DNL Adobe Sign] aux champs de prise en charge [!DNL Forms] d’AEM répertoriés dans la liste déroulante [!UICONTROL Type] uniquement. Pour plus d’informations sur les champs [!DNL Adobe Sign], voir la [documentation Adobe Sign](https://helpx.adobe.com/fr/sign/help/field-types.html).
 
@@ -170,7 +170,7 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 
    Si la liste **[!UICONTROL Adobe Sign Cloud Service]** est vide, consultez l’article [Configuration d’ [!DNL Adobe Sign] avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) pour configurer le service.
 
-   La liste déroulante répertorie les Cloud Service qui existent dans le dossier `global` dans Outils > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Service qui existent dans le dossier que vous sélectionnez dans le champ **[!UICONTROL Conteneur de configurations]** lors de la création d’un formulaire adaptatif.
+   La liste déroulante répertorie les Cloud Services présents dans le dossier `global` dans Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Services qui existent dans le dossier que vous sélectionnez dans le champ **[!UICONTROL Conteneur de configurations]** lorsque vous créez un formulaire adaptatif.
 
 1. Sélectionnez l’option pour configurer l’action d’envoi à l’aide de **[!UICONTROL Envoyer le formulaire]**. Vous pouvez sélectionner l’une des deux options suivantes :
    * **Envoyer le formulaire (et envoyer le contrat pour signature)** : cette option envoie immédiatement le formulaire, puis envoie le formulaire à signer aux destinataires.
@@ -217,7 +217,7 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
 
    >[!NOTE]
    >
-   >    * Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le service d’assistance [!DNL Adobe Sign] pour activer d’autres fournisseurs d’authentification sociale.
+   > * Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le service d’assistance [!DNL Adobe Sign] pour activer d’autres fournisseurs d’authentification sociale.
    >
 
    * Champs **[!DNL Adobe Sign]à remplir ou à signer :** sélectionnez les champs [!DNL Adobe Sign] pour le destinataire. Un formulaire adaptatif peut avoir plusieurs champs [!DNL Adobe Sign]. Vous pouvez choisir d’activer des champs spécifiques pour un destinataire. Le champ affiche tous les blocs [!DNL Adobe Sign] disponibles. Lorsque vous sélectionnez un bloc, tous les champs du bloc sont sélectionnés. Vous pouvez utiliser l’icône X pour désélectionner un champ.
@@ -234,7 +234,7 @@ Après avoir ajouté des champs [!DNL Adobe Sign] à un formulaire adaptatif, ac
 
 Les actions de signature et d’envoi d’un formulaire sont indépendantes l’une des l’autre. L’envoi d’un formulaire adaptatif a lieu dès qu’un accord Adobe Sign est créé après l’envoi d’un formulaire par un utilisateur. [!DNL AEM Forms] as a Cloud Service n’attend pas que les destinataires signent ou effectuent d’autres actions pour envoyer un formulaire adaptatif. Un formulaire est envoyé dès qu’un utilisateur clique sur le bouton Envoyer ou qu’une étape Résumé affiche le résumé du formulaire.
 
-En outre, un formulaire adaptatif prenant en charge [!DNL Adobe Sign] contient l’ID de contrat Adobe Sign pour envoyer des données. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
+En outre, un formulaire adaptatif prenant en charge [!DNL Adobe Sign] incorpore l’ID de contrat Adobe Sign pour envoyer des données. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
 
 L’ID de l’accord Adobe Sign (agreementId) est inclus dans les données d’envoi du formulaire adaptatif. Par défaut, il se trouve dans le nœud `afSubmissionInfo` des données envoyées.
 

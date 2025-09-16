@@ -1,13 +1,13 @@
 ---
 title: Comment créer un modèle de formulaire adaptatif ?
-description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
+description: Créez des modèles de formulaires adaptatifs en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -164,7 +164,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 >[!NOTE]
 >
-> * Vous pouvez également configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif. Pour de plus amples informations, voir [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Vous pouvez également configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs. Pour de plus amples informations, voir [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 ## Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
