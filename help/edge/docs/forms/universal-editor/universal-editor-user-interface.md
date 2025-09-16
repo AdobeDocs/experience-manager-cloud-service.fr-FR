@@ -9,14 +9,14 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '2390'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # Naviguer dans l’interface de l’éditeur universel pour AEM Forms
 
-L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fournit une interface visuelle pour créer des formulaires AEM avec Edge Delivery Services. Il offre une expérience **What You See Is What You Get (WYSIWYG)** qui affiche exactement comment vos formulaires apparaîtront aux utilisateurs.
+L’[éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fournit une interface visuelle pour créer des formulaires AEM avec Edge Delivery Services. Il offre une expérience **What You See Is What You Get (WYSIWYG)** qui affiche vos formulaires exactement de la manière dont ils apparaîtront aux utilisateurs et utilisatrices.
 
 ![Vue d’ensemble de l’interface de l’éditeur universel](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -328,7 +328,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 **Ces outils offrent des fonctionnalités de formulaire sophistiquées :**
 
-+++Intégration de données 
++++Intégration de données
 
 #### **Source de données**
 
@@ -383,7 +383,7 @@ Le **Panneau Propriétés** (côté droit) est votre centre de contrôle pour la
 
 +++
 
-+++Outils Collaboration
++++Outils de collaboration
 
 #### **Gestion des tâches**
 
@@ -464,7 +464,7 @@ Maîtrisez ces raccourcis pour créer des formulaires plus rapidement et plus ef
 
 ### **Problèmes d’interface**
 
-+++Éléments D’Interface Non Chargés
++++Les éléments de l’interface ne se chargent pas
 
 **Problème :** les boutons de la barre d’outils, le panneau Propriétés ou d’autres éléments d’interface n’apparaissent pas.
 
@@ -477,7 +477,7 @@ Maîtrisez ces raccourcis pour créer des formulaires plus rapidement et plus ef
 
 +++
 
-+++Composants qui ne répondent pas
++++Les composants ne répondent pas
 
 **Problème :** impossible de sélectionner les composants ou le panneau Propriétés ne se met pas à jour.
 
@@ -490,7 +490,7 @@ Maîtrisez ces raccourcis pour créer des formulaires plus rapidement et plus ef
 
 +++
 
-+++Problèmes de mode de prévisualisation
++++Problèmes du mode Aperçu
 
 **Problème :** le mode Aperçu ne fonctionne pas correctement ou affiche des erreurs.
 

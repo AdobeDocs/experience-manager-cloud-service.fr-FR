@@ -1,6 +1,6 @@
 ---
 title: Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)
-description: Créer des formulaires puissants plus rapidement à l’aide de fragments de formulaire
+description: Créer des formulaires performants plus rapidement à l’aide de fragments de formulaire
 feature: Edge Delivery Services
 hide: true
 index: false
@@ -9,21 +9,21 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Prise en main de l’assistant AI pour AEM Forms (Forms Experience Builder)
+# Prise en main de l’assistant IA pour AEM Forms (Créateur d’expériences de formulaires)
 
 >[!NOTE]
 >
 >
-> La fonctionnalité d’assistant IA pour AEM Forms (Créateur d’expériences de formulaires) est disponible dans le cadre du **programme destiné aux utilisateurs et utilisatrices précoces**. Si vous êtes intéressé, envoyez un e-mail rapide à partir de votre adresse professionnelle à mailto:aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.
+> La fonctionnalité d’assistant IA pour AEM Forms (Forms Experience Builder) est disponible dans le cadre du **programme d’accès anticipé**. Si cela vous intéresse, envoyez un e-mail rapide à l’adresse mailto:aem-forms-ea@adobe.com depuis votre adresse e-mail professionnelle pour demander l’accès à la fonctionnalité.
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que l’assistant IA pour AEM Forms continue d’évoluer au cours du programme destiné aux utilisateurs et utilisatrices précoces.
+> **Documentation susceptible de modification** : cette documentation est actuellement testée par rapport au produit et peut faire l’objet de mises à jour et de révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que l’assistant IA pour AEM Forms continue d’évoluer au cours du programme destiné aux utilisateurs et utilisatrices précoces.
 
 L’assistant IA pour AEM Forms transforme la création de formulaires : il vous suffit de décrire vos besoins en langage naturel afin de voir vos formulaires prendre vie. Disponible dans l’interface d’utilisation de gestion des formulaires, l’éditeur de formulaires adaptatifs et l’éditeur universel, il comprend votre intention et crée exactement ce que vous recherchez.
 
@@ -246,7 +246,7 @@ Chargez des fichiers pour aider l’IA à comprendre exactement ce que vous rech
 - Créer le formulaire étape par étape
 - Tester chaque modification avant de passer à la suivante
 
-## Aide sur les produits et apprentissages
+## Aide sur les produits et apprentissage
 
 L’Assistant IA peut également vous apprendre à utiliser les fonctionnalités d’AEM Forms :
 
@@ -293,7 +293,7 @@ Utilisez `@fieldName` pour référencer les champs existants :
 - `@phoneNumber` - Champ Numéro de téléphone
 - `@dateOfBirth` - Champ Date de naissance
 
-### Types de composant
+### Types de composants
 
 Utilisez ces termes pour obtenir les meilleurs résultats :
 
@@ -345,4 +345,4 @@ Aidez-nous à améliorer l’Assistant IA :
 
 ## Ressources connexes
 
-[Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[Assistant IA AEM Forms - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)

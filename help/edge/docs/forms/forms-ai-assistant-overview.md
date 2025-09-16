@@ -1,6 +1,6 @@
 ---
-title: Forms Experience Builder
-description: Créer des formulaires puissants plus rapidement à l’aide de fragments de formulaire
+title: Forms Experience Builder
+description: Créer des formulaires performants plus rapidement à l’aide de fragments de formulaire
 feature: Edge Delivery Services
 hide: true
 index: false
@@ -9,20 +9,20 @@ role: Admin, Architect, Developer
 source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 4%
+ht-degree: 40%
 
 ---
 
 
-# Présentation de Forms Experience Builder
+# Présentation de Forms Experience Builder
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que le Forms Experience Builder continue d’évoluer au cours du programme destiné aux utilisateurs et utilisatrices précoces.
+> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent évoluer à mesure que Forms Experience Builder se développe dans le cadre du programme d’accès anticipé.
 
 AEM Forms Experience Builder tire parti de la puissance de Generative AI pour démocratiser et accélérer la création et la mise à jour d’expériences de formulaires numériques. En activant des workflows basés sur l’intention pilotés par des interactions en langage naturel, il permet aux utilisateurs et aux utilisatrices de concevoir, modifier et optimiser les formulaires en toute simplicité et rapidité.
 
-Basé sur des technologies web modernes et optimisé par des services d’IA avancés, le Forms Experience Builder permet aux utilisateurs techniques et non techniques de créer des formulaires sophistiqués de qualité professionnelle par le biais d’interfaces de conversation. Cette approche révolutionnaire réduit le délai de rentabilisation de plusieurs jours à plusieurs heures, élimine les obstacles techniques grâce à la simplicité de l’interface et adapte les efforts de modernisation à l’ensemble de votre écosystème de formulaires.
+Basé sur des technologies web modernes et optimisé par des services d’IA avancés, Forms Experience Builder permet aux personnes avec des profils techniques et non techniques de créer des formulaires sophistiqués de qualité professionnelle par le biais d’interfaces de conversation. Cette approche révolutionnaire réduit le délai de rentabilisation de plusieurs jours à plusieurs heures, élimine les obstacles techniques grâce à la simplicité de l’interface et adapte les efforts de modernisation à l’ensemble de votre écosystème de formulaires.
 
 
 
@@ -34,26 +34,26 @@ Forms Experience Builder propose deux workflows principaux pour créer des formu
 
 **Génération de formulaires en langage naturel**
 
-Créez des formulaires complets à partir de zéro à l’aide de descriptions en anglais simples. Il vous suffit de décrire vos exigences, telles que « Créer un formulaire de commentaires client avec des échelles de notation et des champs de commentaire », pour que le Forms Experience Builder génère la structure de formulaire appropriée. Vous utilisez le créateur d’expériences des éditeurs visuels pour ajouter d’autres champs, des règles de validation et une logique d’envoi.
+Créez des formulaires complets à partir de zéro à l’aide de descriptions simples en anglais. Il vous suffit de décrire vos exigences, telles que « Créer un formulaire de commentaires client avec des échelles de notation et des champs de commentaire », pour que le Forms Experience Builder génère la structure de formulaire appropriée. Vous utilisez le créateur d’expériences des éditeurs visuels pour ajouter d’autres champs, des règles de validation et une logique d’envoi.
 
-**Dynamic Field Management**
+**Gestion dynamique des champs**
 
-Ajouter, modifier ou supprimer des champs de formulaire par le biais de commandes de conversation. L’IA comprend le contexte et peut suggérer intelligemment des types de champs, des règles de validation et des améliorations de l’interface utilisateur en fonction de vos besoins.
+Ajoutez, modifiez ou supprimez des champs de formulaire par le biais de commandes de conversation. L’IA comprend le contexte et peut suggérer intelligemment des types de champs, des règles de validation et des améliorations de l’interface d’utilisation en fonction de vos besoins.
 
-**Optimisation de la disposition**
+**Optimisation de la mise en page**
 
-Mettez à jour les dispositions et configurations de formulaire en langage naturel. Demandez des modifications telles que « Modification de la disposition du formulaire dans la disposition de l’assistant » et le Forms Experience Builder appliquera le style et les ajustements de disposition appropriés.
+Mettez à jour les mises en page et configurations de formulaire via le langage naturel. Demandez des modifications telles que « Modification de la disposition du formulaire dans la disposition de l’assistant » et le Forms Experience Builder appliquera le style et les ajustements de disposition appropriés.
 
 **Configuration complète de l’action Envoyer**
 
-Configurez les envois de formulaire à intégrer à vos systèmes d’entreprise existants :
+Configurez les envois de formulaire à intégrer aux systèmes existants dans votre entreprise :
 
-- **Intégration de la messagerie électronique** : configurer des notifications et des confirmations automatisées par courrier électronique
-- **Points d’entrée de l’API REST** : connexion à des applications et services personnalisés
-- **Stockage dans le cloud** : intégration à Azure Blob Storage, SharePoint et OneDrive
-- **Automatisation des workflows** : connexion à Power Automate et Workfront Fusion
-- **Plateformes marketing** : intégration directe à Marketo pour la gestion des prospects
-- **Workflows AEM** : tirer parti des fonctionnalités existantes des workflows AEM
+- **Intégration de la messagerie électronique** : configurez des notifications et des confirmations automatisées par e-mail.
+- **Points d’entrée de l’API REST** : connexion à des applications et services personnalisés.
+- **Espace de stockage dans le cloud** : intégration à Azure Blob Storage, SharePoint et OneDrive.
+- **Automatisation des workflows** : connexion à Power Automate et Workfront Fusion.
+- **Plateformes marketing** : intégration directe à Marketo pour la gestion des leads.
+- **Workflows AEM** : tirez parti des fonctionnalités existantes des workflows AEM.
 
 
 ### &#x200B;2. Importation et conversion intelligentes
@@ -81,7 +81,7 @@ Le contenu chargé est analysé pour :
 
 ## Fonctionnement
 
-Le créateur d’expérience Forms suit une approche simple et conversationnelle :
+Forms Experience Builder suit une approche simple et conversationnelle :
 
     ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
     │ 1. Décrire    │───▶│ 2. L’IA crée des │───▶│ 3. Affiner et    │
@@ -104,7 +104,7 @@ Le créateur d’expérience Forms suit une approche simple et conversationnelle
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Transformation de PDF forms en Forms numérique</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Transformation de formulaires PDF en formulaires numériques</p>
                     <p class="is-size-6">Convertissez des documents Acroforms, XFA PDF ou plat PDF en formulaires numériques réactifs et interactifs dotés de fonctionnalités améliorées.</p>
                 </div>
             </div>
@@ -143,14 +143,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 - Multi-channel submission options
 - Enhanced user experience design -->
 
-## Forms Experience Builder par rapport au développement traditionnel
+## Forms Experience Builder comparé au développement traditionnel
 
-| Aspect | Création de formulaire traditionnelle | Forms Experience Builder |
+| Aspect | Création de formulaire traditionnelle | Forms Experience Builder |
 |--------|---------------------------|----------------------|
-| **Heure de création** | 2-3 jours | 2-3 heures |
-| **Connaissances techniques** | Obligatoire | Non requis |
+| **Temps de création** | 2 à 3 jours | 2 à 3 heures |
+| **Connaissances techniques** | Nécessaires | Non nécessaires |
 | **Règles de validation** | Codage manuel | Langage naturel |
-| **Accessibilité** | Implémentation manuelle | Conformité intégrée |
+| **Accessibilité** | Mis en œuve manuelle | Conformité intégrée |
 
 
 ## Avantages pour les organisations
@@ -170,7 +170,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Rentabilité réduite (TTV)</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Court délai de rentabilisation (TTV)</p>
                     <p class="is-size-6">Accélérez considérablement le développement des formulaires, de quelques jours à quelques heures, ce qui permet une mise sur le marché plus rapide des initiatives numériques.</p>
                 </div>
             </div>
@@ -190,7 +190,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Adaptation des efforts de modernisation</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Accélération de la modernisation</p>
                     <p class="is-size-6">Modernisez efficacement les portfolios de formulaires hérités, en préservant la logique commerciale et en améliorant l’expérience utilisateur sur l’ensemble de votre écosystème de formulaires.</p>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Intégration
 
-Forms Experience Builder est actuellement disponible dans le cadre du programme d’accès anticipé (EA). Pour participer et y accéder, vous aurez besoin des informations suivantes :
+Forms Experience Builder est actuellement disponible dans le cadre du programme d’accès anticipé. Pour participer et y accéder, vous aurez besoin des informations suivantes :
 
 ### Informations requises
 
@@ -236,6 +236,6 @@ Pour plus d’informations sur le programme d’accès anticipé et ses fonction
 
 ## Prise en main
 
-Pour commencer à utiliser Forms Experience Builder, consultez la [documentation de Forms Experience Builder](forms-ai-assistant-getting-started.md). Vous pouvez accéder au Forms Experience Builder par le biais de l’éditeur AEM Forms ou de l’éditeur universel, selon votre choix de workflow.
+Pour commencer à utiliser Forms Experience Builder, consultez la [documentation de Forms Experience Builder](forms-ai-assistant-getting-started.md). Vous pouvez accéder à Forms Experience Builder par le biais de l’éditeur AEM Forms ou de l’éditeur universel, selon votre workflow.
 
-Pour les entreprises qui cherchent à transformer leurs processus de création de formulaires, le Forms Experience Builder offre une solution puissante et intuitive qui combine la flexibilité de l’IA conversationnelle avec la robustesse de la gestion des formulaires de niveau entreprise.
+Pour les entreprises qui cherchent à transformer leurs processus de création de formulaires, Forms Experience Builder offre une solution performante et intuitive qui combine la flexibilité de l’IA conversationnelle avec la fiabilité de la gestion des formulaires de niveau professionnel.

@@ -1,5 +1,5 @@
 ---
-title: Forms Experience Builder - Bibliothèque d’invites
+title: Forms Experience Builder - Bibliothèque de prompts
 description: Collection de modèles de prompts et d’exemples éprouvés pour créer des formulaires avec l’aide de l’IA dans l’interface d’utilisation de gestion de Forms, l’éditeur de formulaires adaptatifs et l’éditeur universel.
 feature: Edge Delivery Services
 hide: true
@@ -10,42 +10,42 @@ exl-id: c8f64082-a23f-4919-ad66-042faad77d31
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 13%
+ht-degree: 39%
 
 ---
 
 
-# Forms Experience Builder - Bibliothèque d’invites
+# Forms Experience Builder - Bibliothèque de prompts
 
-Collection de modèles d’invite réutilisables et d’exemples optimisés pour Forms Experience Builder. Cette bibliothèque rationalisée se concentre sur les deux méthodes de création principales : Créer en partant de zéro et Importer et convertir, avec une prise en charge améliorée des champs intelligents optimisés par LLM et la cohérence de la marque.
+Collection de modèles et d’exemples de prompts réutilisables pour Forms Experience Builder. Cette bibliothèque rationalisée se concentre sur les deux méthodes de création principales (créer à partir de zéro ou importer et convertir) avec une prise en charge améliorée des champs intelligents optimisés par LLM et la cohérence de la marque.
 
 >[!NOTE]
 >
-> Forms Experience Builder est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès.
+> Forms Experience Builder est disponible dans le cadre du programme d’accès anticipé. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les invites, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer pendant le programme destiné aux utilisateurs et utilisatrices précoces.
+> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
-## Utilisation de cette bibliothèque d&#39;invites
+## Utilisation de cette bibliothèque de prompts
 
-Cette bibliothèque fournit des modèles d’invite réutilisables pour les scénarios courants de création de formulaires. Pour connaître les bonnes pratiques complètes, consultez le [Guide de prise en main de Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
+Cette bibliothèque fournit des modèles de prompt réutilisables pour les cas courants de création de formulaires. Pour connaître l’ensemble des bonnes pratiques, consultez le [Guide de prise en main de Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-### Conseils rapides pour cette bibliothèque
+### Conseils rapides relatifs à cette bibliothèque
 
-- **Commencez par des exemples** - Utilisez les invites fournies comme modèles et adaptez-les selon vos besoins
-- **Deux méthodes de création** - Choisissez Créer en partant de zéro ou Importer et convertir .
-- **Soyez précis** - Ajoutez vos propres détails aux exemples génériques.
-- **Tester minutieusement** - Toujours valider les résultats dans votre environnement spécifique
+- **Commencer par des exemples** : utilisez les prompts fournis comme modèles et adaptez-les à vos besoins.
+- **Deux méthodes de création** : choisissez entre Créer à partir de zéro et Importer et convertir.
+- **Précision** : ajoutez vos propres détails aux exemples génériques.
+- **Tester minutieusement** : toujours valider les résultats dans votre environnement spécifique.
 
 ### Modèles et styles de marque
 
-**Préparez les ressources de marque à l’avance pour une création de formulaire cohérente :**
+**Préparez les ressources de marque à l’avance pour créer des formulaires cohérents :**
 
 - **Modèles de marque** - Préparez des modèles de formulaire normalisés avec les couleurs, les polices et les modèles de disposition de votre entreprise
 - **Instructions de style** - Définissez un style de champ, des conceptions de bouton et des normes d’espacement cohérents que Forms Experience Builder peut appliquer
 - **Bibliothèque de composants** - Travaillez avec votre équipe de développement pour préparer des composants de formulaire réutilisables qui correspondent à votre identité de marque
-- **Visual Assets** - Préparez les logos, les icônes et les éléments d’arrière-plan pour l’intégration des formulaires
+- **Ressources visuelles** : préparez les logos, les icônes et les éléments d’arrière-plan pour les intégrer aux formulaires.
 
 <!-- **Example Brand Application Prompt:**
 
@@ -100,29 +100,29 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
     Créer un formulaire d’enregistrement d’utilisateur avec le panneau Informations personnelles
 
-**Étape 2 - Ajouter les champs obligatoires :**
+**Étape 2 : ajouter des champs obligatoires :**
 
     Ajoutez des champs pour les @firstName, les @lastName, les @email et les @phoneNumber avec la validation appropriée
 
-**Étape 3 - Ajouter une logique commerciale :**
+**Étape 3 : ajouter une logique commerciale :**
 
     Créer une règle : si @age a moins de 18 ans, afficher la section d’informations sur le parent/tuteur
 
-**Étape 4 - Amélioration avec les préférences :**
+**Étape 4 : améliorer avec les préférences :**
 
     Ajouter un panneau de préférences avec @newsletterSubscription, @marketingConsent, @termsAccepted
 
-**Étape 5 - Ajouter le téléchargement de fichier :**
+**Étape 5 : ajouter le chargement de fichier :**
 
     Incluez un champ de chargement de fichier pour les @profilePicture dont la taille est limitée à 5 Mo
 
 ## Création et gestion de formulaires
 
-**Utilisation :** lorsque vous devez créer de nouveaux formulaires ou modifier des formulaires existants.
+**Contexte d’utilisation :** lorsque vous devez créer de nouveaux formulaires ou modifier des formulaires existants.
 
-**Utilisation :** choisissez l’une des deux approches suivantes : Créer en partant de zéro ou Importer et convertir (voir [Guide de prise en main](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**Méthode d’utilisation :** choisissez l’une des deux approches suivantes : créer en partant de zéro ou importer et convertir (voir [Guide de prise en main](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
-**Exemple d’invite - Création simple de formulaire :**
+**Exemple de prompt : création simple de formulaire :**
 
     Créer un formulaire de commentaires client avec :
     - Évaluation du produit (1 à 5 étoiles)
@@ -130,11 +130,11 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     - E-mail du client (facultatif)
     - Envoyer à une notification par e-mail
 
-**Exemple d’invite - Création de formulaire complexe :**
+**Exemple de prompt : création de formulaire complexe :**
 
     Créez un formulaire d’intégration complet des employés avec :
     
-    **&#x200B;**&#x200B;Section des renseignements personnels :**
+    **** Section des renseignements personnels :**
     - Nom complet (prénom, milieu, dernier)
     - Date de naissance avec validation de l’âge
     - Coordonnées (adresse e-mail, téléphone, adresse)
@@ -144,13 +144,13 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     - Choix du poste et du service
     - Date de début avec validation du jour ouvrable
     - Informations salariales avec avis de confidentialité
-    - Structure de déclaration&#x200B;**Chargement du document :**
+    - Structure de déclaration**Chargement du document :**
     
     - Reprise/Chargement du CV (PDF, DOC, DOCX)
     - Documents de vérification de l’identité
     - Formulaires fiscaux et informations bancaires
     - Emploi signé agreement
-    **&#x200B;**&#x200B;Préférences:**
+    **** Préférences:**
     
     - Sélection des avantages avec le calculateur de coûts
     - Préférences du programme de travail
@@ -171,7 +171,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
      
      
 
-**Invites de gestion des formulaires :**
+**Prompts de gestion des formulaires :**
 
     Importez ce formulaire de demande PDF et convertissez-le en formulaire adaptatif avec validation améliorée
     
@@ -179,17 +179,17 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     
     Réorganisez le formulaire d’inscription en un assistant en 3 étapes : informations personnelles, préférences, confirmation
 
-## Gestion et configuration des champs
+## Gestion et validation des champs
 
-**Utilisation :** lorsque vous devez ajouter, modifier ou configurer des champs de formulaire.
+**Contexte d’utilisation :** lorsque vous devez ajouter, modifier ou configurer des champs de formulaire.
 
-**Utilisation :** être précis sur les types de champs, les règles de validation et les exigences en matière d’expérience utilisateur.
+**Méthode d’utilisation :** soyez précis lorsque vous travaillez sur les types de champs, les règles de validation et les attentes en matière d’expérience d’utilisation.
 
-**Exemple d’invite - Ajout d’un champ de base :**
+**Exemple de prompt : ajout d’un champ de base :**
 
     Ajoutez un champ de saisie de texte pour « Nom de la société » avec l’espace réservé « Entrez le nom de votre société »
 
-**Exemple d’invite - Configuration avancée des champs :**
+**Exemple de prompt : configuration avancée des champs :**
 
     Ajoutez une section d’adresse complète avec :
     
@@ -212,7 +212,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
      
      
 - Conformité en matière d’accessibilité
-**Invites de configuration de champ :**
+**Prompts de configuration de champs :**
 
     Rendre @email champ obligatoire avec la validation en temps réel et le message d’erreur personnalisé
     
@@ -224,20 +224,20 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ## Champs intelligents améliorés par LLM
 
-**Quand l’utiliser :** quand vous avez besoin de champs avec des options préremplies qui exploitent la base de connaissances de l’IA.
+**Contexte d’utilisation :** lorsque vous avez besoin de champs avec des options préremplies qui exploitent la base de connaissances de l’IA.
 
-**Utilisation :** permet de demander des champs qui nécessitent des jeux de données complets. L’IA peut renseigner automatiquement les options à l’aide de ses connaissances intégrées.
+**Méthode d’utilisation :** demandez champs qui nécessitent des jeux de données complets. L’IA peut renseigner automatiquement les options à l’aide de ses connaissances intégrées.
 
 ### Champs géographiques et de localisation
 
-**Aéroports et transports :**
+**Aéroports et transports :**
 
     Ajouter un menu déroulant pour les aéroports de départ avec tous les principaux aéroports internationaux
     Ajouter le champ de l&#39;aéroport d&#39;arrivée avec les codes IATA et les noms complets
     Créer un champ pour l&#39;aéroport le plus proche de l&#39;emplacement de l&#39;utilisateur
     Ajouter une sélection de gares pour les villes européennes
 
-**Régions administratives :**
+**Régions administratives :**
 
     Ajouter une liste complète des États américains avec des abréviations
     Créer une liste déroulante de pays avec des codes ISO et des noms complets
@@ -247,7 +247,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ### Données relatives aux entreprises et au secteur
 
-**Classifications d’entreprise :**
+**Classifications des entreprises :**
 
     Ajoutez un champ pour la classification des industries avec les codes SCIAN
     Créez une liste déroulante des types d&#39;entités commerciales (LLC, Corporation, Société de personnes, etc.)
@@ -255,7 +255,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     Inclure la sélection de service pour les grandes organisations
     Ajouter un champ pour les types de services professionnels
 
-**Classifications professionnelles :**
+**Classifications professionnelles :**
 
     Ajoutez un champ pour les titres de poste avec des rôles courants du secteur
     Créez une liste déroulante des certifications professionnelles par champ
@@ -265,7 +265,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ### Normes et réglementation
 
-**Financier et juridique :**
+**Financier et juridique :**
 
     Ajouter un champ pour les codes devise avec des symboles et des taux de change
     Créer une liste déroulante des types d&#39;ID taxe par pays
@@ -273,7 +273,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     Ajouter des options de mode de paiement avec des fonctions de sécurité
     Créer une sélection pour les établissements bancaires par pays
 
-**Normes techniques :**
+**Normes techniques :**
 
     Ajout d’une liste déroulante de types de format de fichier avec les extensions
     Inclusion des options de protocole réseau
@@ -282,7 +282,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ### Soins de santé et médical
 
-**Classifications médicales :**
+**Classifications médicales :**
 
     Ajouter un champ pour les spécialités médicales
     Créer une liste déroulante de médicaments courants avec des noms génériques
@@ -292,7 +292,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ### Intelligence temporelle et calendaire
 
-**Champs de date et d’heure :**
+**Options de date et d’heure :**
 
     Ajouter un champ pour les heures ouvrables avec gestion des fuseaux horaires
     Créer une liste déroulante des jours fériés par pays
@@ -302,7 +302,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ### Catégories de produits et de services
 
-**Classifications e-commerce :**
+**Classifications d’e-commerce :**
 
     Ajouter un champ pour les catégories de produits avec des sous-catégories
     Créer une liste déroulante de modes d’expédition avec des estimations de diffusion
@@ -310,7 +310,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     Ajouter une sélection pour les niveaux de priorité des clients
     Créer un champ pour les cycles de facturation des abonnements
 
-**Exemples d’invites de champ dynamique :**
+**Exemples de prompts de champ intelligent :**
 
     « Ajouter un champ aéroport de départ avec tous les principaux aéroports du monde entier, y compris les codes IATA et les noms de ville »
     
@@ -324,15 +324,15 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 ## Création de règles et logique commerciale
 
-**Utilisation :** lorsque vous devez implémenter une logique conditionnelle, des règles de validation ou des processus d’entreprise.
+**Contexte d’utilisation :** lorsque vous devez implémenter une logique conditionnelle, des règles de validation ou des processus d’entreprise.
 
-**Utilisation :** Décrivez clairement la logique commerciale, en spécifiant les conditions et les actions.
+**Méthode d’utilisation :** décrivez clairement la logique commerciale, en spécifiant les conditions et les actions.
 
-**Exemple d’invite - Logique conditionnelle simple :**
+**Exemple de prompt : logique conditionnelle simple :**
 
-    Créez une règle qui affiche @spouseInformation panneau uniquement lorsque @maritalStatus est égal à « Marié(e) »
+    Créer une règle qui n’affiche le panneau @spouseInformation que lorsque @maritalStatus est égal à « Marié(e) »
 
-**Exemple d’invite - Règles métier complexes :**
+**Exemple de prompt : règles métier complexes :**
 
     Mettre en œuvre une validation complète de la demande de prêt :
     
@@ -384,9 +384,9 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     
     Ajoutez l’intégration CRM aux @applicationForm : créez un enregistrement de prospect avec @firstName, @lastName, @email et définissez le statut sur « Nouvelle application »
 
-**Exemple d’invite - Envoi multicanal standard :**
+**Exemple de prompt : envoi multicanal standard :**
 
-**&#x200B; **     Configurer l’envoi de formulaire avec plusieurs destinations de données :
+** **     Configurer l’envoi de formulaire avec plusieurs destinations de données :
     
     **Envoi de Principal :**
     - Envoyer des données de formulaire au point d’entrée REST : `/api/v1/applications`
@@ -411,7 +411,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
      
      
 
-**Prompts spécifiques à l’Intégration :**
+**Prompts spécifiques à l’intégration :**
 
     Connectez ce formulaire au système **CRM** pour créer de nouveaux prospects. Mappez @firstName sur FirstName, @email sur Email, définissez LeadSource sur « Web Form » et Status sur « New »
     
@@ -677,7 +677,7 @@ Set up **performance monitoring** to track form load times and user interactions
 
 ## Référence des commandes
 
-### Commandes Essentielles
+### Commandes essentielles
 
 | Commande | Meilleurs cas d’utilisation | Exemple |
 |---------|---------------|---------|
@@ -690,81 +690,81 @@ Set up **performance monitoring** to track form load times and user interactions
 | `/add-panel` | Conversion de conceptions | `/add-panel from uploaded form image with field recognition` |
 | `/help` | Obtention d’assistance | `/help how to implement multi-step validation?` |
 
-### Références de champ
+### Références des champs
 
-Utilisez la syntaxe `@fieldName` pour référencer les champs existants dans vos invites :
+Utilisez la syntaxe `@fieldName` pour référencer les champs existants dans vos prompts :
 
-- `@email` - Champ d’e-mail de référence
-- `@firstName` - Champ de prénom de référence
+- `@email` - Champ E-mail de référence
+- `@firstName` - Champ Prénom de référence
 - `@maritalStatus` - Champ État civil de référence
 
-### Types de composant
+### Types de composants
 
-**Composants d’entrée :**
+**Composants d’entrée :**
 
 - `text`, `email`, `number`, `tel`, `date`, `checkbox`, `radio`, `dropdown`, `file`, `textarea`
 
-**Composants de conteneur :**
+**Composants de conteneur :**
 
 - `fieldset`, `panel`, `repeatable`, `wizard`
 
-### Propriétés du composant
+### Propriétés des composants
 
-**Propriétés universelles (tous les composants) :**
+**Propriétés universelles (tous les composants)**
 
-- **Type** : type de composant
+- **Type** : type de composant
 - **Nom** : identifiant du champ pour l’envoi du formulaire
 - **Libellé** : texte d’affichage du champ
 - **Description** : texte d’aide pour le champ
 - **Visible** : booléen pour la visibilité initiale
 - **Obligatoire** : valeur booléenne pour les champs obligatoires
 
-**Propriétés du champ de saisie :**
+**Propriétés des champs d’entrée :**
 
 - **Valeur** : valeur par défaut/initiale
 - **Espace réservé** : texte d’indice pour les champs de saisie
 - **Min.** : valeur minimale (pour les nombres/dates)
 - **Max.** : valeur maximale (pour les nombres/dates)
 
-**Propriétés de chargement de fichier :**
+**Propriétés de chargement de fichier :**
 
 - **Accepter** : types de fichiers (.pdf, .doc, .docx, .jpg, .png, etc.)
 - **Multiple** : valeur booléenne pour la sélection de plusieurs fichiers
 
-**Propriétés du contrôle Selection :**
+**Propriétés du contrôle de sélection :**
 
 - **Options** : choix des listes déroulantes (liste séparée par des virgules)
 - **Coché** : sélection par défaut des cases à cocher/cases d’option
 
-**Propriétés du conteneur :**
+**Propriétés du conteneur :**
 
 - **Fieldset** : regroupement des champs associés
 - **Répétable** : valeur booléenne pour les sections répétables
 
-**Propriétés avancées :**
+**Propriétés avancées :**
 
 - **Expression visible** : formule de visibilité conditionnelle (=formule)
 - **Expression de valeur** : formule pour les valeurs calculées (=formule)
 
 ### Commandes d’intégration
 
-**Actions Envoyer :**
+**Actions d’envoi :**
 
 - Notifications par e-mail
 - Envois de l’API REST
-- Stockage dans le cloud (Azure, SharePoint)
+- Espace de stockage dans le cloud (Azure, SharePoint)
 - Automatisation des workflows (Power Automate, Workfront Fusion)
 - Plateformes marketing (Marketo)
 - Intégrations CRM
 
-### Instructions relatives à la syntaxe de l&#39;invite
+### Instructions relatives à la syntaxe des prompts
 
-- **Références de champ** : utilisez des `@fieldName` pour les champs existants
-- **Commandes** : utilisez des `/command` pour des actions spécifiques
-- **Langage naturel** : décrivez les exigences de manière claire et spécifique.
+- **Références de champ** : utilisez `@fieldName` pour les champs existants.
+- **Commandes** : utilisez `/command` pour des actions spécifiques.
+- **Langage naturel** : décrivez les exigences de manière claire et spécifique.
 
-### Liste de contrôle de validation
+### Liste de contrôle de validation :
 
-Pour obtenir des bonnes pratiques et des instructions de validation complètes, consultez le [Guide de prise en main de Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
+Pour consulter les bonnes pratiques et les instructions relatives à la validation, consultez le [Guide de prise en main de Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-*Cette bibliothèque d’invites est continuellement mise à jour en fonction des commentaires des utilisateurs et des nouvelles fonctionnalités de Forms Experience Builder. Pour consulter les derniers exemples et fonctionnalités, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr).*
+*Cette bibliothèque de prompts est continuellement mise à jour en fonction des commentaires des utilisateurs et utilisatrices et des nouvelles fonctionnalités de Forms Experience Builder. Pour consulter les derniers exemples et fonctionnalités, consultez la [documentation d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr).*
