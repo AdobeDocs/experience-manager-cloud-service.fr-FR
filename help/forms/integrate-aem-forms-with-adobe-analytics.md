@@ -916,7 +916,7 @@ Même avec une implémentation soigneuse, les configurations d’analyse de form
 
 >[!TIP]
 >
->Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [](/help/forms/form-creation-failing.md).
+>Pour obtenir d’autres conseils de dépannage, consultez nos guides de dépannage de la collection [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) et de dépannage de la création de formulaires [&#128279;](/help/forms/form-creation-failing.md).
 
 **Problèmes de configuration**
 
