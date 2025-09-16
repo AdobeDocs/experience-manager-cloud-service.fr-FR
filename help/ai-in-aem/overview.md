@@ -3,7 +3,7 @@ title: L’IA dans AEM as a Cloud Service
 description: En savoir plus sur l’IA dans Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 81%
@@ -39,6 +39,7 @@ L’IA générative est utilisée dans AEM :
      >[!NOTE]
      >
      >Il est recommandé d’accéder à [Générer des variations intégrées dans les éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md), car la version précédente sera abandonnée à l’avenir.
+
    * [Notes de mise à jour pour la fonction Générer des variations](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Vue d’ensemble de Content Hub](/help/assets/product-overview.md)
