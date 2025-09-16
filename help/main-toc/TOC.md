@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
+source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 97%
+source-wordcount: '6624'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ ht-degree: 97%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Notes de mise à jour de la maintenance 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Notes de mise à jour de la maintenance 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Notes de mise à jour de la maintenance 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [Notes de mise à jour de la maintenance 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -274,12 +275,12 @@ ht-degree: 97%
    + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Prise en charge d’Open ID Connect pour AEM as a Cloud Service au niveau publication](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
-   + [Configurer des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [Configuration des intégrations IMS pour AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Affichage principal de la gestion des autorisations](/help/security/touch-ui-principal-view.md)
    + [Bonnes pratiques pour le mappage des utilisateurs et des utilisatrices de service et la définition des utilisateurs et des utilisatrices de service dans Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Clés gérées par le client ou la cliente pour Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [À propos d’Experience Hub](/help/experience-hub.md)
+   + [À propos d’Experience Hub](/help/experience-hub.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
@@ -525,7 +526,7 @@ ht-degree: 97%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -721,7 +722,7 @@ ht-degree: 97%
       + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
    + Content Hub {#content-hub}
       + [Vue d’ensemble](/help/assets/product-overview.md)
-      + [Nouveautés de Content Hub](/help/assets/whats-new.md)
+      + [Nouveautés de Content Hub](/help/assets/whats-new.md)
       + [Déployer Content Hub](/help/assets/deploy-content-hub.md)
       + [Charger ou importer des ressources approuvées par la marque dans le hub de contenus](/help/assets/upload-brand-approved-assets.md)
       + [Configurer l’interface d’utilisation du hub de contenus](/help/assets/configure-content-hub-ui-options.md)
@@ -849,7 +850,7 @@ ht-degree: 97%
             + [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modèles d’e-mail dans les formulaires adaptatifs](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Gestion de la publication dans Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Gestion de la publication dans Experience Manager Forms](/help/forms/manage-publication.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
                + [Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components.md)
                + [Interface d’utilisation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md)
@@ -960,8 +961,8 @@ ht-degree: 97%
       + [Prise en charge des scripts pour les formulaires HTML5](/help/forms/scripting-support.md)
       + [Jeu de formulaires dans AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Communication interactive {#interactive-communication}
-      + [Présentation de l’éditeur de communication interactive](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [Création d’une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Présentation de l’éditeur de communications interactives](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Présentation des communications interactives](/help/forms/introduction-to-interactive-communication.md)
@@ -1010,13 +1011,13 @@ ht-degree: 97%
    + Générer des variations {#generate-variations}
       + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + Forms Experience Builder {#forms-experience-builder}
+   + Forms Experience Builder {#forms-experience-builder}
       + [Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Prise en main de l’assistant AI pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Prise en main de l’assistant AI pour AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [Assistant IA AEM Forms - Bibliothèque de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - Bonnes pratiques](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - Guide de dépannage](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Prise en main de l’assistant IA pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [Prise en main de l’assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [Assistant IA AEM Forms - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [Créateur d’expériences de formulaires - Meilleures pratiques](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder - Guide de résolution des problèmes](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Présentation de Screens as a Cloud Service {#overview}
       + [Présentation](/help/screens-cloud/introduction/introduction.md)
@@ -1056,11 +1057,11 @@ ht-degree: 97%
    + [Questions fréquentes sur Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [Présentation et vue d’ensemble](/help/commerce-cloud/introduction.md)
-   + Edge Delivery Services Storefront {#edge-storefront}
+   + Storefront Edge Delivery Services {#edge-storefront}
       + [Présentation](/help/commerce-cloud/edge-storefront/introduction.md)
    + Storefront tiers {#thrid-party-storefront}
       + [Présentation](/help/commerce-cloud/third-party-storefront/introduction.md)
-   + CIF Storefront {#cif-storefront}
+   + Storefront CIF {#cif-storefront}
       + [Vue d’ensemble de CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Modifications notables apportées à AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
       + Parcours de Commerce {#journeys}
@@ -1103,7 +1104,7 @@ ht-degree: 97%
       + [Migration](/help/commerce-cloud/cif-storefront/migration.md)
       + [Questions fréquentes](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Présentation de Edge Delivery Services](/help/edge/overview.md)
+   + [Vue d’ensemble d’Edge Delivery Services](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + Créer des formulaires {#build-forms}
       + [Vue d’ensemble](/help/edge/docs/forms/overview.md)
@@ -1148,10 +1149,10 @@ ht-degree: 97%
          + [Protéger vos formulaires : ajouter une sécurité reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Créer des composants de formulaire personnalisés : Guide de développement](/help/edge/docs/forms/custom-components-forms.md)
          + [Surveillance des performances du formulaire : guides de télémétrie opérationnelle](/help/edge/docs/forms/operational-telemetry-for-forms.md)
-      + [Guide d’envoi de formulaire : utiliser le service d’envoi de formulaires](/help/forms/forms-submission-service.md)
+      + [Guide d’envoi de formulaire : utilisation du service d’envoi de formulaires](/help/forms/forms-submission-service.md)
       + [Configurer l’envoi pour les formulaires Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [Bonnes pratiques relatives à la création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [Meilleures Pratiques en matière de création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
    + [Présentation d’AEM découplé](/help/headless/introduction.md)
@@ -1375,7 +1376,7 @@ ht-degree: 97%
          + [Présentation](/help/implementing/universal-editor/introduction.md)
          + [Cas d’utilisation](/help/implementing/universal-editor/use-cases.md)
          + [Éditeur universel et éditeur de sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
-         + [Attributs et types d’élément](/help/implementing/universal-editor/attributes-types.md)
+         + [Attributs et types d’éléments](/help/implementing/universal-editor/attributes-types.md)
          + [Définition du composant](/help/implementing/universal-editor/component-definition.md)
          + [Définitions de modèles, champs et types de composants](/help/implementing/universal-editor/field-types.md)
          + [Publication](/help/implementing/universal-editor/publishing.md)
