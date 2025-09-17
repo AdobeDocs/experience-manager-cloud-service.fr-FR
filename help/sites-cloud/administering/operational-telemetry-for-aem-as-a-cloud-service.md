@@ -4,7 +4,7 @@ description: Découvrez Operational Telemetry , un service automatisé qui perme
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Le service de télémétrie opérationnelle est conçu pour minimiser la collect
 * Nom d’hôte du site visité, par exemple : `experienceleague.adobe.com`
 * Type d’agent utilisateur général et système d’exploitation utilisés pour afficher la page, par exemple : `desktop:windows` ou `mobile:ios`
 * Heure à laquelle les données ont été collectées, par exemple : `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs?lang=fr`
+* URL de la page visitée ; par exemple : `https://experienceleague.adobe.com/docs`
 * URL du référent (URL de la page qui a été liée à la page active, si l’utilisateur a suivi un lien)
 * Identifiant de la page vue généré de manière aléatoire, dans un format similaire à : `2Ac6`
 * Poids ou inverse du taux d’échantillonnage, tel que : `100`. Cela signifie que seule une page vue sur cent est enregistrée
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Se désinscrire peut signifier rater une chance d’améliorer l’engagement du trafic sur votre site web. Cependant, si vous rencontrez des problèmes, vous pouvez désactiver la télémétrie opérationnelle en [définissant une variable d’environnement dans Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) nommée `AEM_OPTEL_DISABLED` à la valeur `true`. Si vous souhaitez réactiver la télémétrie opérationnelle ultérieurement, il vous suffit de supprimer à nouveau cette variable d’environnement.
 
-1. **Puis-je utiliser une politique de sécurité du contenu avec une valeur à usage unique ?
+1. **Puis-je utiliser une politique de sécurité du contenu avec une valeur à usage unique ?**
 
    La prise en charge de la télémétrie opérationnelle contient une fonctionnalité expérimentale pour prendre en charge une politique de sécurité du contenu à usage unique. Cette fonction peut être activée en [définissant une variable d’environnement dans Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) nommée `AEM_OPTEL_NONCE` à la valeur `true`. Si vous souhaitez la désactiver à nouveau ultérieurement, il vous suffit de supprimer à nouveau cette variable d’environnement.
 
