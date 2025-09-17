@@ -41,14 +41,14 @@ Pour développer du code personnalisé pour une version interne, vous devez tél
 
 La vidéo suivante présente un aperçu général du déploiement du code vers AEM as a Cloud Service :
 
->[!VIDEO](https://video.tv.adobe.com/v/32993?quality=9&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## Déploiement de packages de contenu au moyen de Cloud Manager et du gestionnaire de modules {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## Déploiement de modules de contenu au moyen de Cloud Manager et du gestionnaire de modules {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Déploiements par le biais de Cloud Manager {#deployments-via-cloud-manager}
 
@@ -56,15 +56,15 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Les clients et clientes déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des packages de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application sur AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom comprend « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Pour obtenir une documentation détaillée à propos du convertisseur, voir [sling-org-apache-sling-feature-cpconverter sur GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Les clients et clientes déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application sur AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom comprend « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Pour obtenir une documentation détaillée à propos du convertisseur, voir [sling-org-apache-sling-feature-cpconverter sur GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Les packages de contenu écrits pour les applications sur AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
+Les modules de contenu écrits pour les applications sur AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
 Le reste de cette section décrit la composition et les implications des packages modifiables et non modifiables.
 
-### Packages de contenu non modifiables {#immutabe-content-packages}
+### Modules de contenu non modifiable {#immutabe-content-packages}
 
 L’ensemble du contenu et du code conservés dans le référentiel non modifiable doit être archivé dans git et déployé via Cloud Manager. En d’autres termes, contrairement aux solutions AEM actuelles, le code n’est jamais déployé directement sur une instance AEM en cours d’exécution. Ce processus garantit que le code en cours d’exécution est identique pour une version donnée dans n’importe quel environnement cloud, ce qui élimine le risque de variation non intentionnelle du code en production. Par exemple, la configuration OSGI doit être validée dans le contrôle de code source plutôt que d’être gérée au moment de l’exécution par le biais du gestionnaire de configuration de la console web AEM.
 
@@ -87,11 +87,11 @@ Pour plus d’informations sur la configuration d’OSGI, voir la section [Confi
 
 Il peut parfois s’avérer utile de préparer les changements de contenu dans le contrôle de code source afin qu’il puisse être déployé par Cloud Manager chaque fois qu’un environnement est mis à jour. Par exemple, il peut être raisonnable d’amorcer certaines structures de dossiers racine. Vous pouvez également aligner les modifications apportées aux modèles modifiables pour activer les composants de politiques qui ont été mis à jour par le déploiement de l’application.
 
-Il existe deux stratégies pour décrire le contenu qui est déployé par Cloud Manager vers le référentiel modifiable, les packages de contenu modifiable et les instructions `repoinit`.
+Il existe deux stratégies pour décrire le contenu qui est déployé par Cloud Manager vers le référentiel modifiable, les modules de contenu modifiable et les instructions `repoinit`.
 
-### Packages de contenu modifiables {#mutable-content-packages}
+### Modules de contenu modifiable {#mutable-content-packages}
 
-Les contenus tels que les hiérarchies de chemins de dossier, les utilisateurs du service et les contrôles d’accès (ACL) sont généralement validés dans un projet AEM Maven basé sur l’archétype. Les techniques incluent l’exportation depuis AEM ou l’écriture directe au format XML. Au cours du processus de création et de déploiement, Cloud Manager crée le package de contenu modifiable résultant. Le contenu modifiable est installé à trois reprises lors de la phase de déploiement du pipeline :
+Les contenus tels que les hiérarchies de chemins de dossier, les utilisateurs du service et les contrôles d’accès (ACL) sont généralement validés dans un projet AEM Maven basé sur l’archétype. Les techniques incluent l’exportation depuis AEM ou l’écriture directe au format XML. Au cours du processus de création et de déploiement, Cloud Manager crée le module de contenu modifiable résultant. Le contenu modifiable est installé à trois reprises lors de la phase de déploiement du pipeline :
 
 Avant le démarrage de la nouvelle version de l’application :
 
@@ -114,9 +114,9 @@ Après le basculement vers la nouvelle version de l’application :
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été effectuée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la documentation d’[AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
->Les packages de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
+>Les modules de contenu sont déployés sur tous les types d’environnement (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
-En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du package de contenu modifiable après leur application. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
+En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du module de contenu modifiable après leur application. Si les clients et clientes détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
 Les packages tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraîne un échec du déploiement.
 
@@ -140,13 +140,13 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
 
 Il est préférable d’opter pour repoinit pour ces scénarios de modification de contenu pris en charge en raison des avantages suivants :
 
-* `Repoinit` crée des ressources au démarrage si bien que la logique peut prendre l’existence de ces ressources pour acquise. Dans l’approche du package de contenu modifiable, les ressources sont créées après le démarrage. Le code de l’application reposant sur ces ressources peut donc échouer.
-* `Repoinit` est un jeu d’instructions relativement sûr, car vous contrôlez explicitement l’action à entreprendre. En outre, les seules opérations prises en charge sont les ajouts, à l’exception de quelques cas liés à la sécurité qui permettent de supprimer des utilisateurs et utilisatrices, des utilisateurs et utilisatrices du service et des groupes. En revanche, la suppression d’un élément dans l’approche du package de contenu modifiable est explicite ; lorsque vous définissez un filtre, tout élément couvert par ce filtre est supprimé. Néanmoins, il faut être prudent car, pour tout contenu, il existe des scénarios où la présence d’un nouveau contenu peut modifier le comportement de l’application.
-* `Repoinit` effectue des opérations atomiques et rapides. Cependant, les packages de contenu modifiable peuvent fortement dépendre des performances selon les structures couvertes par un filtre. Même si vous mettez à jour un nœud unique, un instantané d’une grande arborescence peut être créé.
+* `Repoinit` crée des ressources au démarrage si bien que la logique peut prendre l’existence de ces ressources pour acquise. Dans l’approche du module de contenu modifiable, les ressources sont créées après le démarrage. Le code de l’application reposant sur ces ressources peut donc échouer.
+* `Repoinit` est un jeu d’instructions relativement sûr, car vous contrôlez explicitement l’action à entreprendre. En outre, les seules opérations prises en charge sont les ajouts, à l’exception de quelques cas liés à la sécurité qui permettent de supprimer des utilisateurs et utilisatrices, des utilisateurs et utilisatrices du service et des groupes. En revanche, la suppression d’un élément dans l’approche du module de contenu modifiable est explicite ; lorsque vous définissez un filtre, tout élément couvert par ce filtre est supprimé. Néanmoins, il faut être prudent car, pour tout contenu, il existe des scénarios où la présence d’un nouveau contenu peut modifier le comportement de l’application.
+* `Repoinit` effectue des opérations atomiques et rapides. Cependant, les modules de contenu modifiable peuvent fortement dépendre des performances selon les structures couvertes par un filtre. Même si vous mettez à jour un nœud unique, un instantané d’une grande arborescence peut être créé.
 * Il est possible de valider les instructions `repoinit` sur un environnement de développement local au moment de l’exécution, car elles sont exécutées lorsque la configuration OSGi est enregistrée.
 * Les instructions `Repoinit` sont atomiques, explicites et ignorées si l’état correspond déjà.
 
-Lorsque Cloud Manager déploie l’application, il exécute ces instructions, indépendamment de l’installation des packages de contenu.
+Lorsque Cloud Manager déploie l’application, il exécute ces instructions, indépendamment de l’installation des modules de contenu.
 
 Pour créer des instructions `repoinit`, procédez comme suit :
 
@@ -170,27 +170,27 @@ Pour plus d’informations sur `repoinit`, voir la [documentation Sling](https:/
 
 above appears to be internal, to confirm with Brian -->
 
-### Utilisation ponctuelle du gestionnaire de packages pour les packages de contenu modifiables {#package-manager-oneoffs-for-mutable-content-packages}
+### Utilisation ponctuelle du gestionnaire de modules pour les modules de contenu modifiables {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Gestionnaire de modules – Migration de packages de contenu modifiable"
->abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un package de contenu doit être installé de façon ponctuelle. L’installation comprend l’importation de contenu spécifique de la production vers l’évaluation pour déboguer un problème de production, le transfert de petits packages de contenu de l’environnement On-Premise vers les environnements AEM Cloud, etc."
+>title="Gestionnaire de modules – Migration de modules de contenu modifiable"
+>abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. L’installation comprend l’importation de contenu spécifique de la production vers l’évaluation pour déboguer un problème de production, le transfert de petits modules de contenu de l’environnement On-Premise vers les environnements AEM Cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr" text="Outil de transfert de contenu"
 
-Il existe des cas d’utilisation où un package de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans les environnements sur AEM as a Cloud Service.
+Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans les environnements sur AEM as a Cloud Service.
 
-Le gestionnaire de packages étant un concept d’exécution, il n’est pas possible d’installer du contenu ni du code dans le référentiel non modifiable. Par conséquent, ces packages doivent être constitués uniquement de contenu modifiable (principalement `/content` ou `/conf`). Si le package comprend du contenu mixte (modifiable et non modifiable), seul le contenu modifiable est installé.
+Le gestionnaire de modules étant un concept d’exécution, il n’est pas possible d’installer du contenu ni du code dans le référentiel non modifiable. Par conséquent, ces packages doivent être constitués uniquement de contenu modifiable (principalement `/content` ou `/conf`). Si le module comprend du contenu mixte (modifiable et non modifiable), seul le contenu modifiable est installé.
 
 >[!IMPORTANT]
 >
->L’interface utilisateur du gestionnaire de packages peut renvoyer un message d’erreur **non défini** si l’installation d’un package prend plus de dix minutes.
+>L’interface d’utilisation du gestionnaire de modules peut renvoyer un message d’erreur **non défini** si l’installation d’un package prend plus de dix minutes.
 >
 >Ce délai n’est pas dû à une erreur lors de l’installation, mais à une temporisation que Cloud Service applique à toutes les requêtes.
 >
 >N’essayez pas d’effectuer une nouvelle installation si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent provoquer des conflits.
 
-Les packages de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface utilisateur du gestionnaire de packages AEM. Ces packages ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
+Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface d’utilisation du gestionnaire de modules AEM. Ces packages ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
 
 ### Inclure des packages tiers {#including-third-party}
 
@@ -297,7 +297,7 @@ Dans les solutions AEM existantes, les clients et les clientes peuvent exécuter
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les bundles OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
 * Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création et à la publication pour le service. Une combinaison de `<service>.<environment_type>` est prise en charge, tandis que ces environnements doivent être utilisés dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
-* Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
+* Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le module de contenu sous `install.author` ou `install.publish`.
 
 AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu destiné à des environnements ou des services spécifiques. Si un environnement de développement doit être alimenté avec des données ou un HTML qui ne se trouvent pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
 

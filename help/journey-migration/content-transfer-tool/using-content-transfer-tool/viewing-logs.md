@@ -1,6 +1,6 @@
 ---
-title: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
-description: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
+title: Affichage des journaux d’un ensemble de migration dans l’outil de transfert de contenu
+description: Affichage des journaux d’un ensemble de migration dans l’outil de transfert de contenu
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 83%
 
 ---
 
-# Affichage des journaux d’un jeu de migration {#view-logs-content-transfer-tool}
+# Affichage des journaux d’un ensemble de migration {#view-logs-content-transfer-tool}
 
 
 >[!CONTEXTUALHELP]
@@ -27,11 +27,11 @@ Une fois chaque étape terminée (extraction et ingestion), vérifiez les journa
 
 ### Journaux d’extraction
 
-Pour afficher les journaux d’extraction, accédez à votre instance source Adobe Experience Manager, puis sélectionnez le jeu de migration souhaité.
+Pour afficher les journaux d’extraction, accédez à votre instance source Adobe Experience Manager, puis sélectionnez l’ensemble de migration souhaité.
 
 Suivez ensuite les étapes ci-dessous :
 
-1. Sélectionnez un jeu de migration et cliquez sur **Afficher le journal** dans la barre d’actions. La boîte de dialogue Journaux s’affiche. Cliquez sur **Journaux d’extraction** pour afficher les journaux dans un nouvel onglet.
+1. Sélectionnez un ensemble de migration et cliquez sur **Afficher le journal** dans la barre d’actions. La boîte de dialogue Journaux s’affiche. Cliquez sur **Journaux d’extraction** pour afficher les journaux dans un nouvel onglet.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    Ou cliquez sur le statut **TERMINÉ** pour afficher les journaux dans un nouvel onglet.

@@ -18,11 +18,11 @@ ht-degree: 39%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
->abstract="L’extraction fait référence à l’extraction de contenu de l’instance Adobe Experience Manager (AEM) source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
+>abstract="L’extraction fait référence à l’extraction de contenu de l’instance Adobe Experience Manager (AEM) source dans une zone temporaire appelée ensemble de migration. Un ensemble de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
 
 
-Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
+Pour extraire votre ensemble de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
 >[!NOTE]
 >Si Amazon S3, Azure Data Store ou File Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie pour augmenter la vitesse de la phase d’extraction. L’étape de précopie est la plus efficace pour la première extraction et ingestion complète. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
@@ -69,23 +69,23 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 
 >[!NOTE]
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première extraction complète, vous pouvez ignorer la précopie pour les extractions de compléments suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go). En effet, cela peut rallonger l’ensemble du processus.
->En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
+>>En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 >[!NOTE]
 >Une fois que les chemins d’accès au contenu ont été migrés vers le conteneur d’évaluation, ces chemins ou les sous-chemins qu’ils contiennent ne peuvent pas être supprimés ou exclus des migrations complémentaires suivantes.
->Exemple : migration initiale : content/dam/weRetail,
->Prochaine tentative d’exclusion du complément : content/dam/weRetail/ab.
->Dans ce scénario, l’exclusion de content/dam/weRetail/ab n’est pas possible, car les données ont déjà été migrées vers le conteneur d’évaluation.
+>>Exemple : migration initiale : content/dam/weRetail,
+>>Prochaine tentative d’exclusion du complément : content/dam/weRetail/ab.
+>>Dans ce scénario, l’exclusion de content/dam/weRetail/ab n’est pas possible, car les données ont déjà été migrées vers le conteneur d’évaluation.
 
 Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément.
 
 Suivez les étapes ci-dessous :
 
-1. Accédez à l’assistant de **transfert de contenu** et sélectionnez le jeu de migration pour lequel vous souhaitez effectuer l’extraction de complément. Cliquez sur **Extraire** pour démarrer l’extraction de complément.
+1. Accédez à l’assistant de **transfert de contenu** et sélectionnez l’ensemble de migration pour lequel vous souhaitez effectuer l’extraction de complément. Cliquez sur **Extraire** pour démarrer l’extraction de complément.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. La boîte de dialogue **Migration Set extraction** (Extraction du jeu de migration) s’affiche. Cliquez sur **Extraire**.
+1. La boîte de dialogue **Extraction de l’ensemble de migration** s’ouvre. Cliquez sur **Extraire**.
 
    >[!IMPORTANT]
    >Il est préférable de désactiver l’option **Overwrite staging container during extraction** (Remplacer le conteneur d’évaluation pendant l’extraction).

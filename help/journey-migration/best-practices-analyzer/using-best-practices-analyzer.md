@@ -46,9 +46,9 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
 >title="Téléchargement de l’analyseur des bonnes pratiques"
->abstract="Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du gestionnaire de packages sur votre instance source Adobe Experience Manager (AEM)."
+>abstract="Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM)."
 
-Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM).
+Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Téléchargez l’analyseur des bonnes pratiques depuis le portail de [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -67,7 +67,7 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
 >title="Charger automatiquement le rapport de l’analyseur des bonnes pratiques vers CAM"
->abstract="Fournissez la clé de chargement de l’analyseur des bonnes pratiques pour charger automatiquement le rapport généré vers Cloud Acceleration Manager (CAM)."
+>abstract="Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers Cloud Acceleration Manager (CAM)."
 
 Consultez cette section pour savoir comment afficher le rapport de l’analyseur des bonnes pratiques :
 
@@ -167,7 +167,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >title="Interprétation du rapport de l’analyseur des bonnes pratiques"
 >abstract="Il existe deux options pour afficher les sorties de rapport de l’analyseur des bonnes pratiques : IU et CSV. Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport de l’IU s’affiche sous la forme de résultats dans la fenêtre des outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#analysis-report" text="Consultation du rapport d’analyse des bonnes pratiques"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories de rapports de l’analyseur des bonnes pratiques"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories du rapport de l’analyseur des bonnes pratiques"
 
 Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
 
