@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5074e777c68c51955b9ad8f055e04067163b9596
+source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6634'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -691,6 +691,7 @@ ht-degree: 98%
          + [Questions fréquentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configurer un domaine personnalisé](/help/assets/configure-custom-domain.md)
          + [Optimisation des images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [Création d’URL de redirection vers un microsite](/help/assets/vanity-urls.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
       + [Prise en main](/help/assets/get-started-assets-view.md)
