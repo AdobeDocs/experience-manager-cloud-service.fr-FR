@@ -4,28 +4,29 @@ description: Découvrez comment AEM as a Cloud Service peut bénéficier des
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Vue d’ensemble d’Edge Delivery Services {#edge-delivery-services}
 
+>[!TIP]
+>
+>**Vous voulez passer à la pratique tout de suite ?**
+>
+>Si vous souhaitez vous familiariser immédiatement avec Edge Delivery Services, vous disposez de deux options.
+>* [Commencez immédiatement la création avec un environnement de tutoriel préconfiguré, entièrement configuré et prêt à l’emploi.](https://www.aem.live/developer/ue-trial)
+>* Découvrez plus de détails et configurez votre propre environnement en moins de 30 minutes en [consultez le tutoriel sur aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## Qu’est-ce qu’Edge Delivery Services ? {#what-is-edge}
 
 Edge Delivery Services est un framework de diffusion de contenu moderne qui repense la création et la diffusion des sites web, en optimisant la vitesse, la simplicité et l’évolutivité. Il s’agit d’un élément essentiel d’Adobe Experience Manager qui offre des expériences numériques plus rapides en rapprochant le rendu et la diffusion de l’utilisateur ou de l’utilisatrice, au niveau de la périphérie (edge) du réseau.
 
 Il ne remplace pas un réseau de diffusion de contenu (CDN), mais il s’intègre de manière transparente à votre propre CDN ou au CDN inclus [géré par Adobe.](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**Vous voulez passer à la pratique tout de suite ?**
->
->Si vous voulez passer à la pratique tout de suite, vous pouvez démarrer votre propre projet Edge DeliveryServices avec la création AEM en moins de 30 minutes en [consultant le tutoriel sur aem.live.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## Pourquoi utiliser Edge Delivery Services ? {#why-edge}
 
