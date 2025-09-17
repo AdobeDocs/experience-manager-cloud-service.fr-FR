@@ -3,14 +3,14 @@ title: À propos d’Experience Hub
 description: En savoir plus sur la page Adobe Experience Hub.
 landing-page-description: Découvrez Experience Hub, un point de départ centralisé pour accéder à toutes les fonctionnalités d’AEM.
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ La page Adobe Experience Manager a été actualisée avec une navigation amélio
 >
 >Les widgets, outils et artefacts affichés dépendent du personnage de l’utilisateur, des droits et du type de déploiement d’AEM (AEM as a Cloud Service ou Managed Services 6.5/6.5 LTS).
 
-Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. En outre, les nouveaux éléments de navigation permettent d’accéder rapidement aux principales fonctionnalités de Adobe Experience Manager spécifiques aux solutions activées, telles qu’Assets, Sites, Forms, Fragments de contenu, Lancements, etc.
+Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. Les nouveaux éléments de navigation permettent d’accéder rapidement aux fonctionnalités d’AEM liées à vos solutions activées. Accédez à Assets, Sites, Forms, Fragments de contenu, Lancements, etc.
 
 ![Environnements Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Ces fonctionnalités sont disponibles pour l’environnement de production principal auquel vous avez accès ou vous pouvez sélectionner un environnement spécifique à cibler si vous avez accès à plusieurs instances AEM.
+Utilisez ces fonctionnalités dans votre environnement de production principal. Si vous avez accès à plusieurs instances AEM, sélectionnez l’environnement à cibler.
 
 ![Environnements de production et d’évaluation](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Les widgets peuvent également être redimensionnés et repositionnés sur la pa
 
 ![Widgets Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-La section **Environnements de création** affiche tous les environnements AEM qui vous sont accessibles, avec des raccourcis spécifiques pour les solutions et les pages disponibles pour ces environnements, ce qui vous permet également d’épingler des environnements spécifiques que vous souhaitez afficher en haut de la liste.
+La section **Environnements de création** répertorie tous les environnements AEM auxquels vous pouvez accéder et inclut des raccourcis vers leurs solutions et pages. Vous pouvez épingler des environnements spécifiques pour les maintenir en haut de la liste.
 
 La section **Récents**, illustrée dans l’image ci-dessous, répertorie les pages que vous avez récemment visitées dans AEM. Selon la licence de votre client, le widget peut inclure des éléments tels que le programme, l’exécution de pipeline, Assets, l’éditeur de page et l’éditeur de formulaire.
 
