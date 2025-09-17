@@ -1,14 +1,14 @@
 ---
 title: Forms Experience Builder
-description: Créer des formulaires performants plus rapidement à l’aide de fragments de formulaire
+description: Présentation de Forms Experience Builder
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 40%
 
 ---
@@ -64,7 +64,6 @@ Transformer des formulaires et des documents existants en expériences digitales
 - **PDF plats** : documents statiques convertis en formulaires interactifs
 - **Images et captures d’écran** : JPG, formats PNG (vérifiez les limites de taille auprès de l’équipe).
 - **Forms dessiné à la main** : croquis et photographies de formulaires papier
-
 
 **Processus de conversion intelligent**
 
@@ -206,7 +205,6 @@ Forms Experience Builder est actuellement disponible dans le cadre du programme 
 - **Détails du projet** : calendrier, portée et cas d’utilisation prévus
 - **E-mail professionnel officiel** : associé au compte Adobe de votre entreprise
 
-
 ### Comment obtenir l’ID d’organisation IMS et l’ID de programme
 
 Pour obtenir des instructions détaillées afin de localiser votre ID d’organisation IMS et votre ID de programme, voir :
@@ -229,7 +227,6 @@ Pour obtenir des instructions détaillées afin de localiser votre ID d’organi
 > **Programme de disponibilité limitée** : l’accès à Forms Experience Builder est soumis à l’approbation des parties prenantes internes. Adobe examinera votre demande en fonction de la capacité du programme et de l&#39;alignement sur les critères d&#39;accès anticipé. L’approbation n’est pas garantie et dépend de la disponibilité actuelle du programme.
 
 Pour plus d’informations sur le programme d’accès anticipé et ses fonctionnalités, consultez la [documentation sur l’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
-
 
 ## Prise en main
 
