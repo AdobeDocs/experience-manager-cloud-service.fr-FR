@@ -4,13 +4,10 @@ description: Créez des fragments de communication interactive dans AEM Forms po
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 8%
+ht-degree: 18%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
-> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail de votre adresse professionnelle à `aem-forms-ea@adobe.com` pour demander l’accès.
+> La fonctionnalité de communication interactive est disponible dans le cadre du programme destiné aux utilisateurs et utilisatrices précoces. Envoyez un e-mail à `aem-forms-ea@adobe.com` à partir de votre adresse professionnelle pour demander l’accès.
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les invites, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer pendant le programme destiné aux utilisateurs et utilisatrices précoces.
+> **Documentation sujette à modification** : cette bibliothèque de prompts est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les prompts, les exemples et les bonnes pratiques peuvent changer à mesure que Forms Experience Builder continue d’évoluer dans le cadre du programme des utilisateurs et utilisatrices initiaux.
 
 Un fragment de communication interactive permet aux utilisateurs et utilisatrices de créer des blocs de contenu modulaires réutilisables, tels que des en-têtes, des pieds de page ou des clauses de non-responsabilité standard, qui peuvent être utilisés dans plusieurs documents de communication. Ces fragments permettent de maintenir la cohérence, de réduire le travail répétitif et d’accélérer le processus de conception lors de la création de communications personnalisées intégrées aux données.
 
@@ -42,7 +39,7 @@ Pour créer un fragment de communication interactive, procédez comme suit :
 
 1. Lorsque vous sélectionnez le fragment de communication interactive, un écran s’affiche où vous définissez les détails du fragment clé tels que le titre, le nom, la description, le modèle de données (une représentation structurée des données du serveur principal) et les balises.
 
-   Pour en savoir plus, consultez le [Guide de configuration du modèle de données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Pour en savoir plus, consultez le [Guide de configuration du modèle de données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Rechercher un document IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
