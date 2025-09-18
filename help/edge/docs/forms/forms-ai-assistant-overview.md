@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
+source-git-commit: 69f17a4abddf025207448caed11f138c275e7b33
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 40%
+source-wordcount: '809'
+ht-degree: 44%
 
 ---
 
@@ -95,13 +95,14 @@ Forms Experience Builder suit une approche simple et conversationnelle :
 
 ## Exemples de scénarios
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Transformation de formulaires PDF en formulaires numériques</p>
-                    <p class="is-size-6">Convertissez des documents Acroforms, XFA PDF ou plat PDF en formulaires numériques réactifs et interactifs dotés de fonctionnalités améliorées.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Transform PDF Forms to Digital Forms</p>
+                    <p class="is-size-6">Convert Acroforms, XFA PDFs, or flat PDF documents into responsive, interactive digital forms with enhanced functionality.</p>
                 </div>
             </div>
         </div>
@@ -110,8 +111,8 @@ Forms Experience Builder suit une approche simple et conversationnelle :
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Moderniser l’ancien Forms XFA</p>
-                    <p class="is-size-6">Transformez des applications XFA complexes en expériences numériques modernes et accessibles grâce à des workflows utilisateur améliorés.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Modernize Legacy XFA Forms</p>
+                    <p class="is-size-6">Transform complex XFA applications into modern, accessible digital experiences with improved user workflows.</p>
                 </div>
             </div>
         </div>
@@ -120,13 +121,14 @@ Forms Experience Builder suit une approche simple et conversationnelle :
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Convertir des captures d’écran en Forms numérique</p>
-                    <p class="is-size-6">Transformez des images, des captures d’écran ou des formulaires dessinés à la main en expériences digitales entièrement fonctionnelles.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Convert Screenshots to Digital Forms</p>
+                    <p class="is-size-6">Turn images, screenshots, or hand-drawn forms into fully functional digital experiences.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -151,13 +153,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Avantages pour les organisations
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Création de formulaire démocratisée</p>
-                    <p class="is-size-6">Permettre aux utilisateurs non techniques de créer des formulaires sophistiqués sans connaissances en programmation grâce à des conversations en langage naturel.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Democratized Form Creation</p>
+                    <p class="is-size-6">Empower non-technical users to create sophisticated forms without programming knowledge through natural language conversations.</p>
                 </div>
             </div>
         </div>
@@ -166,8 +169,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Court délai de rentabilisation (TTV)</p>
-                    <p class="is-size-6">Accélérez considérablement le développement des formulaires, de quelques jours à quelques heures, ce qui permet une mise sur le marché plus rapide des initiatives numériques.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Reduced Time to Value (TTV)</p>
+                    <p class="is-size-6">Dramatically accelerate form development from days to hours, enabling faster go-to-market for digital initiatives.</p>
                 </div>
             </div>
         </div>
@@ -176,8 +179,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Simplicité de l'interface</p>
-                    <p class="is-size-6">Éliminez la courbe d’apprentissage grâce à une interface conversationnelle intuitive, ce qui réduit le temps de formation et accroît l’adoption.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Interface Simplicity</p>
+                    <p class="is-size-6">Eliminate the learning curve with an intuitive conversational interface, reducing training time and increasing adoption.</p>
                 </div>
             </div>
         </div>
@@ -186,13 +189,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Accélération de la modernisation</p>
-                    <p class="is-size-6">Modernisez efficacement les portfolios de formulaires hérités, en préservant la logique commerciale et en améliorant l’expérience utilisateur sur l’ensemble de votre écosystème de formulaires.</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Scaling Modernization Efforts</p>
+                    <p class="is-size-6">Modernize legacy form portfolios efficiently, preserving business logic and enhancing user experience across your entire form ecosystem.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 ## Intégration
 
