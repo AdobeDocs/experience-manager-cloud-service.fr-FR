@@ -4,7 +4,7 @@ description: Découvrez comment Adobe Experience Manager (AEM) as a Cloud Servic
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 10%
@@ -23,28 +23,27 @@ AEM as a Cloud Service utilise l’intégration continue et la diffusion con
 >[!NOTE]
 > Comme les instances de développement sont déjà mises à jour automatiquement, les mises à jour manuelles pour les instances de développement peuvent ne pas être disponibles pour _certains_ de vos programmes. Cette fonctionnalité est en cours de transition vers les mises à jour automatiques.
 
-Avant que vos instances ne soient automatiquement mises à jour, une nouvelle version de maintenance AEM est publiée 3 à 5 jours à l’avance. Pendant cette période, votre instance de développement peut être automatiquement mise à jour ou, si elle est disponible, vous pouvez éventuellement [déclencher la mise à jour de vos instances de développement](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Les mises à jour de version sont automatiquement appliquées en premier à vos environnements de développement. Si la mise à jour est réussie, le processus de mise à jour se poursuit vers vos instances d’évaluation et de production. Les instances de développement et d’évaluation font office de point de contrôle qualité automatisé, où vos tests écrits et personnalisés sont exécutés avant que la mise à jour ne soit appliquée à votre environnement de production.
+Avant que vos instances ne soient automatiquement mises à jour, une nouvelle version de maintenance d’AEM est publiée 3 à 5 jours à l’avance. Pendant cette période, votre instance de développement peut être automatiquement mise à jour ou, si elle est disponible, vous pouvez éventuellement [déclencher la mise à jour de vos instances de développement](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Les mises à jour de version sont automatiquement appliquées en premier à vos environnements de développement. Si la mise à jour est réussie, le processus de mise à jour se poursuit vers vos instances d’évaluation et de production. Les instances de développement et d’évaluation font office de point de contrôle qualité automatisé, où vos tests écrits et personnalisés sont exécutés avant que la mise à jour ne soit appliquée à votre environnement de production.
 
 ### NIMU (mises à jour de maintenance non intrusives) {#nimu}
 
 Les mises à jour de maintenance non intrusives sont des mises à jour automatiques appliquées sans impliquer les pipelines du client.
-Grâce à NIMU, le client peut utiliser le pipeline à tout moment, même si une mise à jour de la version AEM est planifiée ou en cours et que les mises à jour de maintenance n’apparaissent plus dans l’historique d’exécution du pipeline client, ce qui facilite le suivi de l’historique des déploiements de code.
+Grâce à NIMU, le client peut utiliser le pipeline à tout moment, même si une mise à jour de la version d’AEM est planifiée ou en cours et que les mises à jour de maintenance n’apparaissent plus dans l’historique d’exécution du pipeline client, ce qui facilite le suivi de l’historique des déploiements de code.
 
 #### Mettre à jour les activités
 
-La version AEM actuelle peut toujours être vérifiée pour chaque environnement, comme auparavant, à l’aide du panneau Environnements de l’interface utilisateur de Cloud Manager . Les mêmes points de contrôle qualité que ceux utilisés dans le pipeline sont utilisés par les mises à jour de maintenance non intrusives, y compris les tests écrits par le client.
-Une notification de l’interface utilisateur de Cloud Manager [&#128279;](/help/implementing/cloud-manager/notifications.md) sera envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez également configurer son envoi à votre adresse e-mail.
+La version actuelle d’AEM peut toujours être vérifiée pour chaque environnement, comme auparavant, à l’aide du panneau Environnements de l’interface utilisateur de Cloud Manager . Les mêmes points de contrôle qualité que ceux utilisés dans le pipeline sont utilisés par les mises à jour de maintenance non intrusives, y compris les tests écrits par le client.
+Une notification de l’interface utilisateur de Cloud Manager [](/help/implementing/cloud-manager/notifications.md) sera envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez également configurer son envoi à votre adresse e-mail.
 
 >[!NOTE]
 >
 > Remarque : les mises à jour de maintenance non intrusive seront progressivement activées pour tous les clients en 2024.
 
-
 ## Type de mises à jour {#update-types}
 
 Il existe deux types de mises à jour de la version d’AEM :
 
-* [Mises à jour de maintenance AEM **](/help/release-notes/maintenance/latest.md)
+* [**Mises à jour de maintenance AEM**](/help/release-notes/maintenance/latest.md)
 
    * Elles sont principalement destinées à la maintenance et comprennent les derniers correctifs de bugs et les mises à jour de sécurité.
    * L’impact est minimal, car les modifications sont appliquées régulièrement.
@@ -55,13 +54,13 @@ Il existe deux types de mises à jour de la version d’AEM :
 
 >[!NOTE]
 >
-> Vérifiez les dates clés des versions mensuelles de la feuille de route des versions d’[Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités essentielles afin de vous préparer à la version.
+> Vérifiez les dates clés des versions mensuelles de la feuille de route des versions d’[Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 
 ## Échec de la mise à jour {#update-failure}
 
-Les mises à jour d’AEM passent par un pipeline de validation de produit avancé et entièrement automatisé, impliquant plusieurs étapes et ne perturbant pas le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces vérifications échouent lors d’une mise à jour d’AEM as a Cloud Service, la version ne se poursuit pas et Adobe enquête sur la raison pour laquelle la mise à jour a provoqué ce comportement inattendu.
+Les mises à jour d’AEM passent par un pipeline de validation de produit avancé et entièrement automatisé, impliquant plusieurs étapes et ne perturbant pas le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces vérifications échouent lors d’une mise à jour d’AEM as a Cloud Service, la publication ne se poursuit pas et Adobe enquête sur les raisons pour lesquelles la mise à jour a provoqué ce comportement inattendu.
 
-Lorsque vous déployez une nouvelle version de code personnalisé sur votre environnement, les [tests fonctionnels de produit et personnalisés](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) jouent un rôle essentiel. Ils garantissent que les systèmes de production restent stables et fonctionnels même après l’application d’une modification. Ces tests sont également appliqués dans le processus de mise à jour de la version AEM.
+Lorsque vous déployez une nouvelle version de code personnalisé sur votre environnement, les [tests fonctionnels de produit et personnalisés](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) jouent un rôle essentiel. Ils garantissent que les systèmes de production restent stables et fonctionnels même après l’application d’une modification. Ces tests sont également appliqués dans le processus de mise à jour de la version d’AEM.
 
 Si la mise à jour de l’environnement de production échoue, Cloud Manager restaurera automatiquement l’environnement d’évaluation. Cette opération s’effectue automatiquement afin de s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production utilisent la même version d’AEM.
 De même, si la mise à jour automatisée d’un environnement de développement échoue, les environnements d’évaluation et de production ne sont pas mis à jour.
@@ -89,7 +88,7 @@ De même, si la mise à jour automatisée d’un environnement de développement
 
 * **Tests fonctionnels automatisés**
    * Incluez des tests automatisés dans votre pipeline afin de pouvoir tester des fonctionnalités critiques.
-   * Les tests fonctionnels du client [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) sont bloqués, s’ils échouent, la version AEM n’est pas déployée.
+   * Les tests fonctionnels du client [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) sont bloqués, s’ils échouent, la version d’AEM n’est pas déployée.
 
 ## Régression {#regression}
 
