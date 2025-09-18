@@ -4,8 +4,8 @@ description: Découvrez comment accéder à l’éditeur universel et comment co
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 100%
 
@@ -69,8 +69,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### Exemple de connexion {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
