@@ -33,7 +33,7 @@ Grâce à NIMU, le client peut utiliser le pipeline à tout moment, même si une
 #### Mettre à jour les activités
 
 La version actuelle d’AEM peut toujours être vérifiée pour chaque environnement, comme auparavant, à l’aide du panneau Environnements de l’interface utilisateur de Cloud Manager . Les mêmes points de contrôle qualité que ceux utilisés dans le pipeline sont utilisés par les mises à jour de maintenance non intrusives, y compris les tests écrits par le client.
-Une notification de l’interface utilisateur de Cloud Manager [](/help/implementing/cloud-manager/notifications.md) sera envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez également configurer son envoi à votre adresse e-mail.
+Une notification de l’interface utilisateur de Cloud Manager [&#128279;](/help/implementing/cloud-manager/notifications.md) sera envoyée chaque fois qu’une mise à jour de maintenance non intrusive est appliquée aux environnements de votre programme. Vous pouvez également configurer son envoi à votre adresse e-mail.
 
 >[!NOTE]
 >
