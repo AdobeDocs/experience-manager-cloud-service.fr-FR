@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Notes de mise à jour de l’éditeur universel version 2025.09.11 {#release-notes}
 
-Voici les notes de mise à jour de la version du 11 septembre 2025 de l’éditeur universel.
+Il s’agit des notes de mise à jour de la version du 11 septembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -23,7 +23,7 @@ Voici les notes de mise à jour de la version du 11 septembre 2025 de l’édite
 ## Nouveautés {#what-is-new}
 
 * Le [copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) est désormais disponible pour les composants dans les conteneurs d’une même page.
-* 6.5 LTS SP1 est désormais pris en charge.
+* 6.5 LTS SP1 est désormais pris en charge.
 * L’éditeur universel prend désormais en charge l’[héritage de gestion multisite](/help/sites-cloud/authoring/universal-editor/inheritance.md) pour les fragments de contenu, y compris la rupture automatique de l’héritage lorsqu’un fragment de contenu de Live Copy est modifié.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
