@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 9%
+source-wordcount: '2495'
+ht-degree: 12%
 
 ---
 
@@ -81,6 +81,22 @@ Le panneau [propriétés](/help/sites-cloud/authoring/universal-editor/navigatio
 
 Appuyez ou cliquez sur **Annuler** ou **Terminé** pour ignorer ou enregistrer les modifications, respectivement.
 
+#### Options de formatage de texte enrichi {#formatting-options}
+
+L’éditeur de texte enrichi (RTE) de l’éditeur universel permet à l’auteur d’appliquer une mise en forme de texte standard. Par défaut, les options suivantes sont disponibles.
+
+* Paragraphe (h1, h2, h3, etc.)
+* Gras
+* Italique
+* Souligné
+* Exposant
+* Indice
+* Liste à puces
+* Liste numérotée
+* Lien
+
+L’éditeur de texte enrichi peut être configuré pour masquer des options ou afficher des options supplémentaires en fonction des besoins des auteurs. Consultez le document [Configuration de l’éditeur de texte enrichi pour l’éditeur universel](/help/implementing/universal-editor/configure-rte.md) pour plus d’informations.
+
 ### Modification de médias {#edit-media}
 
 Vous pouvez afficher les détails dans le panneau [Propriétés](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
@@ -116,9 +132,9 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel [valide les champs de fragment de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation) ce qui vous permet d’appliquer des règles d’intégrité des données telles que des modèles d’expression régulière et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
->Cela garantit que votre contenu répond aux besoins spécifiques de l’entreprise avant d’être publié.
+>Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
 ### Ajout de composants aux conteneurs {#adding-components}
 
@@ -351,9 +367,9 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 Pour savoir comment publier du contenu avec l’éditeur universel, consultez ce document.
 
-* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Publication de contenu avec l’éditeur universel](publishing.md) : découvrez comment l’éditeur universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 
-Pour en savoir plus sur les détails techniques de l’éditeur universel, consultez ces documents de développement.
+Pour en savoir plus sur les détails techniques de l’éditeur universel, consultez ces documents destinés au développeur ou à la développeuse.
 
 * [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en œuvre afin que vous puissiez offrir des expériences exceptionnelles et augmenter la vitesse du contenu.
 * [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.

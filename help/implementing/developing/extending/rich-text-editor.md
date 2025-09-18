@@ -5,12 +5,13 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 99%
+source-wordcount: '1892'
+ht-degree: 96%
 
 ---
+
 
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
@@ -23,6 +24,10 @@ Les concepts et les étapes de configuration de l’éditeur de texte enrichi so
 | [Présentation de l’interface](#understand-rte-ui) | [Présentation et définition des emplacements de configuration](#understand-the-configuration-paths-and-locations) | [Configuration des modules externes](#enable-rte-functionalities-by-activating-plug-ins) |
 | [Types de modes de modification](#editingmodes) | [Activation des modules externes](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Définition des propriétés des fonctions](#aboutplugins) |
 | [À propos des modules externes](#aboutplugins) | [Configuration des barres d’outils de l’éditeur de texte enrichi](#dialogfullscreen) | [Configuration des modes de collage](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>L’éditeur de texte enrichi décrit dans ce document décrit celui qui est disponible dans l’éditeur de page. Si vous utilisez l’éditeur universel moderne, consultez le document [Configuration de l’éditeur universel](/help/implementing/universal-editor/configure-rte.md) pour plus d’informations.
 
 ## Présentation de l’interface utilisateur disponible pour les auteurs {#understand-rte-ui}
 
@@ -41,9 +46,9 @@ Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience 
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
-| Éditeur de texte enrichi en plein écran | Couvre la page entière. | Toutes les fonctions requises d’éditeur de texte enrichi. |
+| Éditeur de texte enrichi en plein écran | Couvre toute la page. | Toutes les fonctions requises d’éditeur de texte enrichi. |
 | Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière. | Activation judicieuse des fonctionnalités. |
-| Boîte de dialogue plein écran | Identique au mode Plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi. |
+| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue avec l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi. |
 
 >[!NOTE]
 >
@@ -137,7 +142,7 @@ Le tableau suivant répertorie les plug-ins actuels et présente les information
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue :
 
-* `useFixedInlineToolbar` : vous pouvez faire en sorte que la barre d’outils de l’éditeur de texte enrichi soit fixe plutôt que flottante. Définissez cette propriété booléenne définie sur le nœud RTE avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext` sur `True`. Lorsque cette propriété est définie sur `True`, la modification de texte enrichi est lancée sur l’événement `foundation-contentloaded`. Pour éviter cela, définissez la propriété `customStart` sur `True` et déclenchez l’événement `rte-start` afin de commencer la modification avec l’éditeur de texte enrichi. Lorsque cette propriété est définie sur `true`, l’éditeur de texte enrichi ne démarre pas sur un clic et il s’agit du comportement par défaut.
+* `useFixedInlineToolbar` : vous pouvez faire en sorte que la barre d’outils de l’éditeur de texte enrichi soit fixe plutôt que flottante. Définissez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext` sur `True`. Lorsque cette propriété est définie sur `True`, la modification de texte enrichi est lancée sur l’événement `foundation-contentloaded`. Pour éviter cela, définissez la propriété `customStart` sur `True` et déclenchez l’événement `rte-start` afin de commencer la modification avec l’éditeur de texte enrichi. Lorsque cette propriété est définie sur `true`, l’éditeur de texte enrichi ne démarre pas sur un clic et il s’agit du comportement par défaut.
 
 * `customStart` : configurez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi sur `True` pour contrôler à quel moment démarrer l’éditeur de texte enrichi en déclenchant l’événement `rte-start`.
 
