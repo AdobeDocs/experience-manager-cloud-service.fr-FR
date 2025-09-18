@@ -3,9 +3,9 @@ title: Création d’URL de redirection à l’aide de Dynamic Media avec les fo
 description: Utilisez les fonctionnalités OpenAPI de Dynamic Media pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Une URL Vanity est une version courte, propre, facile à mémoriser et lisible de votre URL de diffusion complexe. Vous pouvez inclure le nom de votre marque, les noms de produits et les mots-clés pertinents dans l’URL Vanity pour améliorer la visibilité de votre marque et l’interaction client
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
+source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ En savoir plus sur les [schémas de métadonnées](/help/assets/metadata-schemas
 
      >[!NOTE]
      >
-     > Une seule ressource peut avoir plusieurs ID de redirection vers un microsite. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) et envoyez une demande pour générer les identifiants de redirection requis.
+     > * Utilisez des ID de redirection vers un microsite uniques pour chaque ressource. Vérifiez toujours que les ressources partageant le même formulaire de métadonnées possèdent des ID de redirection uniques pour DM avec diffusion OpenAPI via des URL de redirection. Si deux ressources partagent le même ID Vanity, DM avec OpenAPI fournit la ressource qui a reçu le plus récemment cet ID, en remplaçant le droit précédent de l’ID à une autre ressource.
+     >
+     > * Une seule ressource peut avoir plusieurs ID de redirection vers un microsite. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) et envoyez une demande pour générer les identifiants de redirection requis.
 
 Après avoir configuré votre ID de redirection dans le formulaire de métadonnées de ressource, [mappez ce champ de métadonnées au mécanisme de diffusion du système](#map-cloud-manager-environment-variable).
 
@@ -132,7 +134,7 @@ Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media w
 
 ## Mise à l’échelle à l’aide d’URL de redirection vers un microsite{#scale-using-vanity-url}
 
-AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
+AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
 
 Consultez l’URL Vanity suivante et ses composants personnalisables :
 
@@ -182,7 +184,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
 Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.
    [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
