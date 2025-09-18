@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
+source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6639'
 ht-degree: 98%
 
 ---
@@ -351,8 +351,8 @@ ht-degree: 98%
          + [Extraction de contenu à partir de la source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingestion de contenu dans Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indexation après migration de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
-         + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-         + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+         + [Affichage des journaux d’un ensemble de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+         + [Suppression d’un ensemble de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestion des entités après la migration](/help/journey-migration/managing-principals-after-migration.md)
          + [Chargement en masse des principaux dans IMS après la migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -1152,6 +1152,7 @@ ht-degree: 98%
          + [Surveillance des performances du formulaire : guides de télémétrie opérationnelle](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guide d’envoi de formulaire : utilisation du service d’envoi de formulaires](/help/forms/forms-submission-service.md)
       + [Configurer l’envoi pour les formulaires Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Propriétés de champ de bloc de Forms adaptatif](/help/edge/docs/forms/eds-form-field-properties.md)
       + [Questions fréquentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Meilleures Pratiques en matière de création de formulaires](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Découplé {#headless}
@@ -1418,10 +1419,10 @@ ht-degree: 98%
       + [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
       + [Outils de développement AEM pour Eclipse](/help/implementing/developing/tools/eclipse.md)
       + [Copie de contenu](/help/implementing/developing/tools/content-copy.md)
-      + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
+      + [Plug-in de module de contenu Maven](/help/implementing/developing/tools/maven-plugin.md)
       + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
       + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-      + [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
+      + [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md)
       + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
       + [Le navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md)
    + Personnalisation {#personalization}

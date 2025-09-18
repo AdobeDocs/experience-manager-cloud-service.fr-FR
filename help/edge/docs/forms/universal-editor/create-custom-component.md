@@ -4,9 +4,9 @@ description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ Maintenant que le formulaire contient le composant personnalisé, vous pouvez re
 
 Ajoutons une classe **card** au composant pour le style et ajoutez une image pour chaque radio. Utilisez le code ci-dessous pour cela.
 
-**Appliquer un style au composant personnalisé à l’aide de la fonction de décoration dans cards.js**
+**Mettre en forme le composant à l’aide de card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Ajouter le comportement d’exécution du composant personnalisé dans cards.css**
+**Ajouter un comportement d’exécution à l’aide de cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettre à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe avec `id custom-components` avec un objet de la manière suivante :
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
+   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 
@@ -587,7 +587,7 @@ Gardez les points suivants à l’esprit avant de créer votre propre composant 
 
 ## Références
 
-- form-field-types : structures et propriétés HTML de base pour tous les types de champ. [Cliquez ici](/help/edge/docs/forms/eds-form-field-properties) pour afficher les structures et propriétés détaillées des champs de formulaire.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md) : structures et propriétés HTML de base pour tous les types de champ.
 
 - **blocs/form/models/form-components** : définitions des propriétés de composants prêts à l’emploi et personnalisés.
 
