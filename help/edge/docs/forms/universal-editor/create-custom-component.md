@@ -505,13 +505,13 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettre à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe avec `id custom-components` avec un objet de la manière suivante :
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
+    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 
