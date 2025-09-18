@@ -3,7 +3,7 @@ title: Création d’URL de redirection à l’aide de Dynamic Media avec les fo
 description: Utilisez les fonctionnalités OpenAPI de Dynamic Media pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Une URL Vanity est une version courte, propre, facile à mémoriser et lisible de votre URL de diffusion complexe. Vous pouvez inclure le nom de votre marque, les noms de produits et les mots-clés pertinents dans l’URL Vanity pour améliorer la visibilité de votre marque et l’interaction client
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
+source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Utiliser des URL de redirection vers un microsite ?{#vanity-urls}
+# Utiliser des URL de redirection vers un microsite{#vanity-urls}
 
 Utilisez [!DNL Dynamic Media OpenAPI capabilities] pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Les URL de diffusion de ressources standard incluent les UUID de ressources générés par le système qui rendent l’URL de diffusion complexe, difficile à mémoriser et à partager. Remplacez ces UUID de ressources par des identifiants simples (ID de redirection) pour générer une URL de redirection. Une URL de redirection est une version courte, propre et lisible de votre URL de diffusion complexe.
 
@@ -43,7 +43,7 @@ Dans l’exemple ci-dessus, `43341ab1-4086-44d2-b7ce-ee546c35613b` est l’UUID.
 
 Les URL de redirection vers un microsite comprennent un identifiant de redirection vers un microsite à la place de l’UUID de ressource et suivent le format suivant.
 
-***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 L’URL de redirection vers un microsite comprend `avid` (*identifiant de redirection vers un microsite*) après `urn:` et votre ID de redirection vers un microsite entre `urn:avid:aem:` et `/<seoname>.<format>`.
 
@@ -134,13 +134,13 @@ Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media w
 
 ## Mise à l’échelle à l’aide d’URL de redirection vers un microsite{#scale-using-vanity-url}
 
-AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
+AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
 
 Consultez l’URL Vanity suivante et ses composants personnalisables :
 
 **Format d’URL Vanity :**
 
-`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
 <tr valign="top">
@@ -161,14 +161,14 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 <div style="text-align:center;"><a href="#create-vanity-urls">Créer un ID de redirection</a></div>
 </td>
 <td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
-<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+<code>/as/&lt;seoname&gt;.&lt;format&gt;</code>
 </td>
 </tr>
 </table>
 
 **Format d’URL Vanity avec noms DNS et CDN personnalisés :**
 
-`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
+`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
 **Composants d’URL personnalisables**
 
@@ -184,7 +184,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
 Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.
    [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
