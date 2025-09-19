@@ -113,7 +113,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
     Créez un formulaire d’intégration complet des employés avec :
     
-    **** Section des renseignements personnels :**
+    **&#x200B;**&#x200B;Section des renseignements personnels :**
     - Nom complet (prénom, milieu, dernier)
     - Date de naissance avec validation de l’âge
     - Coordonnées (adresse e-mail, téléphone, adresse)
@@ -123,13 +123,13 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
     - Choix du poste et du service
     - Date de début avec validation du jour ouvrable
     - Informations salariales avec avis de confidentialité
-    - Structure de déclaration**Chargement du document :**
+    - Structure de déclaration&#x200B;**Chargement du document :**
     
     - Reprise/Chargement du CV (PDF, DOC, DOCX)
     - Documents de vérification de l’identité
     - Formulaires fiscaux et informations bancaires
     - Emploi signé agreement
-    **** Préférences:**
+    **&#x200B;**&#x200B;Préférences:**
     
     - Sélection des avantages avec le calculateur de coûts
     - Préférences du programme de travail
@@ -365,7 +365,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : envoi multicanal standard :**
 
-** **     Configurer l’envoi de formulaire avec plusieurs destinations de données :
+**&#x200B; **     Configurer l’envoi de formulaire avec plusieurs destinations de données :
     
     **Envoi de Principal :**
     - Envoyer des données de formulaire au point d’entrée REST : `/api/v1/applications`
