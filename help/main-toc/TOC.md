@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
-source-wordcount: '6648'
-ht-degree: 98%
+source-wordcount: '6665'
+ht-degree: 97%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -1013,12 +1013,16 @@ ht-degree: 98%
       + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Générer des variations](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Prise en main de l’assistant IA pour AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Prise en main de l’assistant IA pour AEM Forms (Créateur d’expériences de formulaires)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [Assistant IA AEM Forms - Bibliothèque d’invites](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Créateur d’expériences de formulaires - Meilleures pratiques](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - Guide de résolution des problèmes](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder - Présentation](/help/forms/experience-builder/product-overview.md)
+      + [Prise en main de Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [Déploiement et configuration de Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + Procédures {#forms-experience-builder-how-to}
+         + [Comment convertir une image en formulaire ?](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [Comment configurer les envois de formulaires et les intégrations ?](/help/forms/experience-builder/form-submission-integration.md)
+         + [Comment créer des champs intelligents optimisés pour LLM dans Forms Experience Builder ?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [Comment démarrer une nouvelle conversation de thread dans Forms Experience Builder ?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [Bibliothèque d&#39;invites](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [Questions fréquentes](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Présentation de Screens as a Cloud Service {#overview}
       + [Présentation](/help/screens-cloud/introduction/introduction.md)
