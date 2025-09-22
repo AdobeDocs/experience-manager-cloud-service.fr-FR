@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: ht
+source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -149,7 +149,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -161,8 +162,7 @@ La compilation JavaScript de la bibliothèque côté client (clientlibs) par dé
 
 Plusieurs API obsolètes seront supprimées le 31 août et ne doivent donc plus être référencées. Début septembre, des notifications du Centre d’actions seront envoyées si l’utilisation des API est détectée. Après le 25 septembre, des notifications s’afficheront pendant les builds de Cloud Manager pour rappeler l’importance d’arrêter d’utiliser les API. Pour plus d’informations, consultez l’[article sur l’obsolescence](/help/release-notes/deprecated-removed-features.md#aem-apis), mais pour plus de commodité, ces API sont répertoriées ci-dessous :
 
-<details>
-  <summary>Développer pour afficher les éléments obsolètes de l’API Java</summary>
++++ Développer pour afficher les éléments obsolètes de l’API Java
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -181,7 +181,7 @@ Plusieurs API obsolètes seront supprimées le 31 août et ne doivent donc plus
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
