@@ -3,7 +3,7 @@ title: Contrôle d’accès basé sur les attributs
 description: Découvrez comment activer le contrôle d’accès basé sur les attributs pour définir des règles basées sur les métadonnées afin de définir le niveau d’accès aux ressources disponibles dans Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Pour l’instant, vous ne pouvez pas créer de règles de contrôle d’accès b
 
 Cliquez sur **Télécharger la feuille de calcul** pour télécharger et définir des règles dans une feuille de calcul. Créez un ticket d’assistance pour Adobe et fournissez à Adobe les règles définies dans la feuille de calcul.
 
-[!BADGE Télécharger la feuille de calcul]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Télécharger la feuille de calcul]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Définissez des règles dans la feuille de calcul à l&#39;aide des instructions définies dans cet article.
