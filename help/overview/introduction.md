@@ -4,7 +4,7 @@ description: Découvrez comment fonctionne Experience Manager as a Cloud Se
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -46,6 +46,7 @@ Grâce à AEM as a Cloud Service :
 * Les professionnels du marketing peuvent obtenir un délai d’évaluation plus rapide.
 
 >[!NOTE]
+>
 >Consultez [Terminologie](terminology.md) pour connaître quelques-uns des nouveaux termes introduits avec AEM as a Cloud Service.
 
 ## Valeur ajoutée en tant que Cloud Service {#value-added-as-a-cloud-service}
