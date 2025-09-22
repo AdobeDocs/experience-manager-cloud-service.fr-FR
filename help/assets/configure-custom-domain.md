@@ -1,26 +1,26 @@
 ---
-title: Configuration d’un domaine personnalisé pour le niveau de publication
-description: Découvrez comment configurer un domaine personnalisé pour le niveau de publication dans Adobe Cloud Manager.
+title: Configuration d’un domaine personnalisé pour le niveau de diffusion
+description: Découvrez comment configurer un domaine personnalisé pour le niveau de diffusion dans Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-# Configuration d’un domaine personnalisé pour le niveau de publication{#configure-custom-domain}
+# Configuration d’un domaine personnalisé pour le niveau de diffusion{#configure-custom-domain}
 
 Dans Adobe Cloud Manager, vous pouvez faire en sorte que votre site web se démarque en ajoutant un domaine personnalisé. Bien qu’AEM as a Cloud Service soit fourni avec un domaine par défaut, vous pouvez le personnaliser en fonction de vos besoins.
 
 ## Avant de commencer
 
 * Vous devez disposer d&#39;un certificat TLS ou SSL multi-SAN (Subject Alternative Name).
-* Le certificat SSL doit comporter des SAN distincts par rapport au certificat mappé pour le niveau de publication dans le même domaine.
+* Le certificat SSL doit comporter des SAN distincts par rapport au certificat mappé pour le niveau de diffusion dans le même domaine.
 * La politique de certificat doit respecter la politique Validation étendue (EV) ou Validation de l’organisation (OV), et non la politique Validation de domaine (DV).
 
 
-## Configuration d’un domaine personnalisé pour le niveau de publication
+## Configuration d’un domaine personnalisé pour le niveau de diffusion
 
 1. Accédez à **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Présentation du programme]** > **[!UICONTROL Certificats SSL]** et ajoutez votre certificat SSL.
    ![image](/help/assets/assets/ssl-certificate.png)
