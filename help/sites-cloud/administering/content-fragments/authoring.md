@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2823'
 ht-degree: 6%
 
 ---
@@ -176,9 +176,9 @@ Voir [ Générer des variations - Intégré aux éditeurs AEM](/help/generative-
 
 Pour supprimer une variante de votre fragment de contenu :
 
-    >[ !REMARQUE]
-    >
-    >Vous ne pouvez pas supprimer **Principal**.
+>[!NOTE]
+>
+>Impossible de supprimer **Principal**.
 
 1. Sélectionnez la variation.
 
@@ -267,7 +267,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**&#x200B;dans la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
   >
   >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
