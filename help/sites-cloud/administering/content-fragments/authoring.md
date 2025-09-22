@@ -267,7 +267,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**&#x200B;dans la variation*.
   >
   >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
