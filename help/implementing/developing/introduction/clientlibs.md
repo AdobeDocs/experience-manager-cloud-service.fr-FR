@@ -4,9 +4,9 @@ description: AEM fournit des dossiers de bibliothèques côté client qui vous p
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2428'
 ht-degree: 88%
 
 ---
@@ -288,7 +288,7 @@ Les préprocesseurs enfichables permettent une utilisation flexible, notamment 
 
 >[!NOTE]
 >
->Par défaut, AEM utilise le compresseur GCC pour réduire Javascript.
+>Par défaut, AEM utilise le compresseur GCC pour réduire Javascript et pour transmettre le code à `ECMASCRIPT_2018`.
 
 >[!CAUTION]
 >
