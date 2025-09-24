@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +82,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
    ![Onglet Code Source dans la boîte de dialogue Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. Dans l’onglet **Contrôle de l’expérience**, l’URL de site spécifiée est l’URL de publication que Cloud Manager vérifie pour la qualité de la page.
+1. Dans l’onglet **Contrôle de l’expérience**, l’URL du site spécifiée est l’URL publiée que Cloud Manager vérifie pour la qualité de la page.
 
 1. Dans le champ **Chemin d’accès à la page**, spécifiez les pages à auditer, puis cliquez sur **![Ajouter une icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Ajouter une page**.
 
@@ -100,7 +101,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
    Cette option insère un point de contrôle d’approbation manuel juste avant l’étape de production. Le pipeline s’arrête et attend qu’un approbateur (un responsable de déploiement ou un propriétaire d’entreprise, par exemple) approuve ou annule le déploiement en production.
 
-   Utilisez-le pour le contrôle des modifications ou les vérifications de dernière minute.
+   Utilisez pour le contrôle des modifications ou les vérifications de dernière minute.
 
 1. Cliquez sur **Enregistrer** pour créer le pipeline de production uniquement avec ces options.
 
@@ -129,7 +130,7 @@ Dans les détails d’exécution, un bouton **Promouvoir la version** s’affich
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Lorsque vous cliquez sur **Promouvoir la création**, s’il existe un pipeline intermédiaire uniquement, une boîte de dialogue de confirmation s’ouvre pour le démarrer. Cliquez sur **Exécuter**.
+Lorsque vous cliquez sur **Promouvoir la création**, une boîte de dialogue s’ouvre pour vous permettre de confirmer l’exécution du pipeline de production associé. Cliquez sur **Exécuter** pour le démarrer.
 
 ![Convertir la version - Exécuter le pipeline, boîte de dialogue](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ Pour un pipeline **de production uniquement**, Cloud Manager affiche les artefac
 
 
 ![Détails d’un artefact](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
