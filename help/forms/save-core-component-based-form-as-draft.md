@@ -4,9 +4,9 @@ description: Découvrez comment enregistrer le formulaire adaptatif basé sur le
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1385'
 ht-degree: 6%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Enregistrer des formulaires en tant que brouillons et les répertorier sur la page Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Prenons le cas d’un utilisateur qui commence à remplir un formulaire, mais qui doit se suspendre et revenir ultérieurement. AEM propose une option `save-as-draft`, qui permet à l’utilisateur ou à l’utilisatrice d’enregistrer le formulaire en tant que brouillon en vue d’un remplissage ultérieur. Pour faciliter la tâche, AEM fournit le composant du portail Forms **Brouillons et envois** prêt à l’emploi, qui affiche les brouillons et les envois sur les pages AEM Sites. Le composant répertorie les formulaires qui ont été enregistrés en tant que brouillons en vue d’une finalisation ultérieure, ainsi que ceux qui ont été envoyés. Seuls les utilisateurs connectés peuvent modifier leurs brouillons ou afficher les formulaires qu’ils ont envoyés. Cependant, si un utilisateur anonyme parcourt la liste des formulaires à l’aide du composant **Search &amp; Lister** et enregistre un formulaire en tant que brouillon, ce dernier n’est pas répertorié par le composant **Drafts &amp; Submissions**. Pour afficher les brouillons et les envois, les utilisateurs doivent être connectés au moment de l’envoi du formulaire.
 
@@ -168,6 +168,10 @@ Lorsque l’option **[!UICONTROL Sélectionner le type]** est sélectionnée en 
 ![Icône Envois](assets/submission-listing.png)
 
 Vous pouvez également ignorer les formulaires en cliquant sur les points de suspension (...) qui s’affichent dans le coin inférieur droit du formulaire.
+
+>[!NOTE]
+>
+> La liste Envois du portail Forms affiche uniquement les envois de formulaires de base.
 
 ## Étapes suivantes
 
