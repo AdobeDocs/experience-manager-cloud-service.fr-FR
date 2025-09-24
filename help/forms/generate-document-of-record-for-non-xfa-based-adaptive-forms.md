@@ -4,10 +4,10 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
-ht-degree: 88%
+source-wordcount: '4217'
+ht-degree: 89%
 
 ---
 
@@ -142,7 +142,7 @@ Désormais, lorsque le formulaire adaptatif est envoyé, un document d’enregis
 
 Gardez en tête les considérations et les limitations suivantes lorsque vous utilisez un document d’enregistrement pour les formulaires adaptatifs.
 
-* Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur ou l’utilisatrice apparaît en tant que texte brut dans le document d’enregistrement.
+* **Prise en charge du texte enrichi** : le document d’enregistrement prend en charge les balises de balisage HTML dans les champs de texte enrichi. Pour plus d’informations sur les balises prises en charge et les considérations relatives à l’accessibilité, consultez [Balises de balisage HTML prises en charge dans le document d’enregistrement](html-markup-tags-support-in-document-of-record.md).
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
 * La version localisée du document d’enregistrement est créée sur demande pour des paramètres régionaux lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -405,9 +405,9 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 
 ## Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif {#dor-support-in-adaptiveform}
 
-Vous pouvez configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir du créateur de formulaires adaptatifs ou du créateur de modèles de formulaires adaptatifs.
+Vous pouvez configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
 
-Effectuez les étapes suivantes à partir de l’instance d’auteur du créateur de formulaires adaptatifs :
+Effectuez les étapes suivantes à partir de l’instance de création de l’éditeur de formulaire adaptatif :
 
 1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]**.
 1. Cliquez sur l’![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.

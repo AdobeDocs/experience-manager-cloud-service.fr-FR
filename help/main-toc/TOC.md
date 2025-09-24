@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '6667'
+source-wordcount: '6675'
 ht-degree: 97%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -839,6 +839,7 @@ ht-degree: 97%
             + [Créer un formulaire adaptatif basé sur les composants principaux](/help/forms/template-editor-core-components.md)
             + [Créer un formulaire adaptatif (composants principaux) basé sur des modèles de formulaires XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
+            + [Balises de balisage HTML prises en charge dans le document d’enregistrement](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Utiliser la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurer une page de redirection ou un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Créer des formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
