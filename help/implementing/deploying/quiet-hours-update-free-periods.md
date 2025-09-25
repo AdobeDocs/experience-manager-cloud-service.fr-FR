@@ -4,7 +4,8 @@ description: Découvrez comment minimiser l’impact opérationnel des mises à 
 feature: Deploying
 role: Admin
 badge: label="Disponibilité limitée" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # Heures calmes et Mettre à jour les périodes libres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Cette fonctionnalité sera disponible en tant que fonctionnalité **à disponibilité limitée** à partir du 29 septembre. Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour activer la fonctionnalité dans vos programmes.
+>Cette fonctionnalité sera disponible en tant que fonctionnalité **à disponibilité limitée** à partir du 25 septembre. Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour activer la fonctionnalité dans vos programmes.
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. Ainsi, AEM as a Cloud Service offre la possibilité de définir une période pendant laquelle les mises à jour automatiques ne se produisent pas pour vos programmes en cours.
 
