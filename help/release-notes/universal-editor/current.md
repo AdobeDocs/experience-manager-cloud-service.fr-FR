@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.09.18
-description: Il s’agit des notes de mise à jour de la version 2025.09.18 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.09.25
+description: Il s’agit des notes de mise à jour de la version 2025.09.25 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.09.18 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.09.25 {#release-notes}
 
-Voici les notes de mise à jour de la version du 18 septembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 25 septembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Voici les notes de mise à jour de la version du 18 septembre 2025 de l’édite
 
 ## Nouveautés {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) est désormais utilisé comme point d’entrée du service pour AMS au lieu d’avoir à héberger le service localement.
-* Les champs multiples composites sont désormais pris en charge lors de l’utilisation de la création AEM.
+* [La fonction de copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) peut désormais être [désactivée à l’aide d’une balise meta.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [Lors de l’utilisation de l’éditeur universel dans des environnements AEM hébergés (AMS),](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) l’éditeur universel utilise désormais le service d’éditeur universel hébergé par AEM et ne dépend plus d’une installation AMS locale, ce qui vous garantit de toujours disposer automatiquement du dernier service d’éditeur universel.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -39,5 +39,5 @@ Il est désormais possible de copier et coller sur plusieurs pages, en plus de d
 
 ## Autres améliorations {#other-improvements}
 
-* Plusieurs petites améliorations des performances ont été apportées à l’éditeur universel qui fonctionne avec AEM en tant que système principal.
-* Les fragments de contenu sont désormais publiés à l’aide de l’API ouverte, ce qui améliore les performances et est cohérent avec la publication dans l’éditeur de fragments de contenu et la console.
+* Le rail des propriétés a été corrigé lors de son utilisation avec la création de documents.
+* Correction d’un problème de modification de plusieurs champs d’un fragment de contenu lors de l’utilisation de MSM.

@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ Certains workflows de création peuvent limiter la possibilité pour le créateu
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Désactivation du copier-coller {#copy-paste}
+
+Certains workflows de création peuvent être amenés à limiter la capacité du créateur ou de la créatrice de contenu à copier et coller des composants. Vous pouvez désactiver les icônes [copier et coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) en ajoutant les métadonnées suivantes.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## Modification de votre point d’entrée {#custom-endpoint}
