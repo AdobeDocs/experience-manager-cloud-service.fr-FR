@@ -4,9 +4,9 @@ description: Découvrez comment créer  [!DNL Dynamic Media]  modèles à l’ai
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 97be1d044ae23859e263756116c8bac8701178b4
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
+Créez des modèles personnalisables en temps réel pour vos bannières et prospectus à l’aide de [!DNL Dynamic Media] templates, un éditeur de modèles WYSIWYG. Publiez votre modèle de [!DNL Dynamic Media] et utilisez-le dans les applications en aval. Un modèle de [!DNL Dynamic Media] comprend des calques d’image et de texte. Ajoutez des paramètres aux calques d’image et de texte du modèle et utilisez [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) pour repositionner et redimensionner le calque et mettre à jour son contenu en temps réel.
 
 Voici quelques-unes des principales fonctionnalités :
 
@@ -83,10 +83,10 @@ Découvrez comment créer un modèle de [!DNL Dynamic Media] étape par étape d
 Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Media] et générer son URL de diffusion :
 
 1. Accès à [!DNL Dynamic Media].
-1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;pour répliquer ce dossier dans&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
+1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**pour répliquer ce dossier dans**[!UICONTROL  Dynamic Media Assets ]**.
 1. [Synchronisez les images disponibles dans votre [!DNL AEM Assets] instance avec  [!DNL Dynamic Media]  pour les utiliser afin de créer le modèle](/help/assets/dynamic-media/config-dm.md).
 1. Publiez les images à utiliser lors de la création du modèle pour générer l’URL de diffusion du modèle après sa création. L’URL de diffusion peut être utilisée dans les applications en aval.
-1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. vérifiez les points suivants dans l’interface utilisateur tactile :
    * Sur la page **[!UICONTROL Modifier [!DNL Dynamic Media] configuration]**, **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** défini sur **[!UICONTROL Désactivé par défaut]** n’est pas appliqué à tous les dossiers AEM (**[!UICONTROL Synchroniser tout le contenu]** est décoché). Voir [Configuration de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d’informations.
    * **[!UICONTROL [!DNL Dynamic Media]mode de synchronisation]** est défini sur **[!UICONTROL Activer pour les sous-dossiers]** pour le dossier ou sous-dossier de destination dans lequel vous enregistrerez le modèle après sa création. Voir [Configuration [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) pour plus d&#39;informations.
@@ -96,9 +96,9 @@ Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Medi
 Pour créer un modèle de [!DNL Dynamic Media], procédez comme suit :
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Créer une zone de travail vierge](#create-a-canvas)
@@ -159,7 +159,7 @@ Cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets
 
 Pour ajouter des images à la zone de travail, procédez comme suit :
 
-1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour ouvrir le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
+1. Cliquez sur ![créer une bannière en un rien de temps](/help/assets/assets/add-image.svg) pour ouvrir le panneau [Sélecteur de ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Le panneau affiche les images de votre instance AEM Assets synchronisées avec [!DNL Dynamic Media].
 1. Parcourez le panneau ou utilisez des mots-clés dans la barre de recherche pour trouver une image spécifique.
 1. Faites glisser et déposez une image sur la zone de travail pour l’utiliser. Pour redimensionner ou repositionner un calque sur la zone de travail, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer).
    ![créez une bannière en quelques secondes](/help/assets/assets/add-image-to-canvas.png)
@@ -176,6 +176,20 @@ Pour ajouter des calques de texte à la zone de travail, procédez comme suit :
    ![meilleures bannières personnalisables](/help/assets/assets/add-text-layer.png)
 
 Pour repositionner, redimensionner, faire pivoter ou supprimer le calque, reportez-vous au [**[!UICONTROL panneau Propriétés]**](#reposition-resize-delete-a-layer). Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau. Le champ **[!UICONTROL Famille de polices]** affiche la police par défaut [!UICONTROL Adobe Sans F2], les polices existantes retraitées et les polices nouvellement chargées et publiées. Pour plus d’informations, reportez-vous au point 5 de la section [Avant de commencer](#prerequisites-for-dynamic-media-wysiwyg-template) ci-dessus.
+
+[Appliquez une mise en forme aux sous-chaînes pour mettre en forme et contrôler indépendamment des parties spécifiques du texte.](#apply-formatting-to-substring)
+
+#### Mise en forme du texte sélectif{#apply-formatting-to-substring}
+
+Exécutez les étapes suivantes pour formater des parties spécifiques d’une chaîne :
+
+1. Sélectionnez un ou plusieurs caractères de la chaîne à mettre en forme.
+1. Appliquez une mise en forme à la sélection à l’aide du panneau [propriétés](#properties-panel). Les options de formatage suivantes s’appliquent aux sous-chaînes et à leurs parties :
+   * **Style de police** : gras, italique, souligné, indice et exposant à l’aide de l’option **[!UICONTROL Style de police]**.
+   * **Propriétés de la police** : modifiez la famille, la couleur et la taille de la police à l’aide des options du panneau correspondant.
+     ![format-substring](/help/assets/assets/format-substring.png)
+
+[Chaque partie de chaîne formatée s’affiche sous la forme d’une sous-chaîne dans le sélecteur de sous-chaîne, disponible dans le panneau Paramètres. Ajoutez des paramètres à ces parties formatées pour les formater dynamiquement à l’aide de l’URL de diffusion du modèle](#substring-parameterisation).
 
 ### Ajouter des formes à la zone de travail {#add-shapes-to-the-canvas}
 
@@ -219,7 +233,7 @@ Pour modifier un calque de texte ou d’image, reportez-vous aux actions courant
 #### Options de formatage du texte{#text-formatting-options-on-properties-panel}
 
 Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
-Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
+Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
 
 ![ création de contenu en un rien de temps ](/help/assets/assets/smart-text-resize.png)
 
@@ -240,23 +254,57 @@ Pour basculer entre le panneau Paramètres d’un calque d’image et de texte, 
 
 Les propriétés paramétrées peuvent être incluses en tant que paramètres d’URL dans l’URL du modèle pour modifier le modèle en temps réel à l’aide de l’URL.
 
-**Paramètres d’image :**
+##### Paramètres de calque{#layer-parameters}
+
+Vous trouverez ci-dessous des paramètres de calque qui s’appliquent à la fois aux calques d’image et de texte.
 
 **[!UICONTROL X]:** Inclure pour déplacer le calque horizontalement le long de son axe central, parallèlement à l’axe X du plan du modèle, en modifiant la valeur du paramètre dans l’URL.
 **[!UICONTROL Y]:** Inclure pour déplacer le calque verticalement le long de son axe central, parallèlement à l’axe Y du plan du modèle, en modifiant la valeur du paramètre dans l’URL.
 **[!UICONTROL Largeur] :** permet d’ajuster la largeur du calque en modifiant la valeur du paramètre dans l’URL.
 **[!UICONTROL Hauteur] :** permet d’ajuster la hauteur du calque en modifiant la valeur du paramètre dans l’URL.
 **[!UICONTROL Masquer] :** permet d’inclure pour masquer ou afficher le calque dans le modèle à l’aide des options 0 (afficher) et 1 (masquer).
-**[!UICONTROL Source]:** Inclure pour remplacer l’image du calque par une nouvelle image en modifiant le chemin d’accès à l’image dans la valeur du paramètre dans l’URL.
 
-**Paramètres de formatage du texte :**
+##### Paramètre de l&#39;image{#image-parameter}
 
-Insérez les paramètres ci-dessous pour modifier le texte, sa police, sa couleur et sa taille à partir de l’URL en mettant à jour les valeurs de paramètre dans l’URL.
+Incluez le paramètre **[!UICONTROL Source]** pour remplacer l&#39;image du calque par une nouvelle image en modifiant le chemin d&#39;accès à l&#39;image dans la valeur du paramètre dans l&#39;URL.
+![paramètre source image](/help/assets/assets/image-parameter.png)
+
+##### Paramètres de formatage du texte{#text-formatting-parameters}
+
+Insérez les paramètres suivants pour modifier le texte, sa police, sa couleur et sa taille à partir de l’URL de diffusion en mettant à jour les valeurs de paramètre dans l’URL :
 
 **[!UICONTROL Texte]:** Inclure pour mettre à jour le texte de l’URL.
 **[!UICONTROL Famille de polices] :** permet d’inclure pour mettre à jour la police du texte à partir de l’URL.
 **[!UICONTROL Taille de police] :** permet d’inclure pour mettre à jour la taille de police du texte à partir de l’URL.
 **[!UICONTROL Couleur du texte] :** incluez pour mettre à jour la couleur de police du texte à partir de l’URL.
+
+##### Paramétrer les sous-chaînes{#substring-parameterisation}
+
+Dans le panneau **[!UICONTROL Paramètres]**, faites défiler l’écran jusqu’à la section **[!UICONTROL Paramètres de sous-chaîne]**. Cette section comprend un **sélecteur de sous-chaîne** qui affiche la chaîne complète (calque de texte sélectionné) avec une mise en forme cohérente ou ses parties mises en forme sous la forme de sous-chaînes distinctes. Sélectionnez une sous-chaîne pour [paramétrer le texte, la famille, la taille et la couleur de la police](#text-formatting-parameters).
+Utilisez le sélecteur sous-chaîne pour [fractionner les sous-chaînes](#split-substring) paramétrer ses différentes parties ou [fusionner les sous-chaînes](#merge-substring) pour appliquer des paramètres uniformes.
+
+###### Fractionner la sous-chaîne{#split-substring}
+
+Pour paramétrer une partie d’une sous-chaîne, extrayez-la afin d’en faire une sous-chaîne distincte pour la sélection et le paramétrage individuels.
+Exécutez les étapes suivantes pour diviser une sous-chaîne en sous-chaînes distinctes :
+
+1. Dans le sélecteur de sous-chaîne, sélectionnez les caractères d’une sous-chaîne pour la séparer.
+1. Cliquez sur ![Sous-chaîne fractionnée](/help/assets/assets/unmerge.svg) pour l’extraire et en faire une sous-chaîne distincte dans le **sélecteur de sous-chaîne**.
+   ![sous-chaîne fractionnée](/help/assets/assets/split-a-substring.png)
+Vous pouvez sélectionner la sous-chaîne requise pour [paramétrer le texte, la famille, la taille et la couleur de la police](#text-formatting-parameters).
+
+###### Fusionner la sous-chaîne{#merge-substring}
+
+La fusion de sous-chaînes supprime leurs paramètres individuels existants et vous permet d’appliquer des paramètres cohérents sur la sous-chaîne nouvellement formée.
+Exécutez les étapes suivantes pour fusionner deux sous-chaînes adjacentes afin d’appliquer des paramètres uniformes à la sous-chaîne résultante :
+
+1. Dans le sélecteur de sous-chaînes, sélectionnez les caractères de deux sous-chaînes adjacentes avec la même mise en forme.
+1. Cliquez sur ![fusionner la sous-chaîne](/help/assets/assets/merge.svg) pour fusionner les sous-chaînes.
+   ![fusionner des sous-chaînes identiques](/help/assets/assets/merge-two-substrings.png)
+Vous pouvez appliquer des paramètres uniformes à la sous-chaîne nouvellement formée.
+   >[!NOTE]
+   >
+   >Seules les sous-chaînes au format identique peuvent être fusionnées.
 
 ### Regroupez les calques pour contrôler leur visibilité simultanément{#group-layers}
 
@@ -299,7 +347,7 @@ Assurez-vous que les images du modèle sont déjà publiées sur AEM et Dynamic 
 
 Pour copier l&#39;URL de diffusion du modèle, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL &#x200B; ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
+1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL  ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
 1. Collez cette URL dans l’onglet de votre navigateur et affichez votre modèle dynamique. Personnalisez le modèle en temps réel en mettant à jour la valeur du paramètre requis (valeur de la clé) dans l’URL directement, comme illustré à l’[étape 2](#preview-and-publish-template-and-copy-template-deliver-url) de la section **Prévisualisation et publication**.
 1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec vos clients ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
 
