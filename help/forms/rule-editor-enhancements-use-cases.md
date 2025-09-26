@@ -124,7 +124,7 @@ Le champ **Coût total d’expédition** se met à jour de manière dynamique po
 >[!NOTE]
 >
 > Vous pouvez également ajouter la fonction **Obtenir la valeur de la variable** dans la condition Lorsque.
-> > ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Cette approche permet des calculs dynamiques en temps réel sans ajouter de champs supplémentaires au formulaire, ce qui permet de garder la structure propre et conviviale.
 

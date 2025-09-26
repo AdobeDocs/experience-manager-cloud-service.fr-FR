@@ -166,7 +166,7 @@ Prêt à démarrer ? La documentation [Présentation d’HTML5 forms](/help/form
 
 Accélérez votre développement AEM Forms Edge Delivery Services avec l’outil d’interface de ligne de commande AEM Forms. Cette interface de ligne de commande vous permet de générer instantanément le code et le câblage nécessaires pour lancer le développement de composants personnalisés, sans tracas.
 
->[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Fonctionnalités principales :**
 

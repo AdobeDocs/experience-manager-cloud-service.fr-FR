@@ -40,4 +40,4 @@ La fonction de police personnalisée vous permet d’améliorer l’aspect de vo
 >[!NOTE]
 >
 > Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> >Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.
+> &#x200B;>Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.

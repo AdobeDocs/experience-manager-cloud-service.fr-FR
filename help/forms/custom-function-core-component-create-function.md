@@ -57,7 +57,7 @@ Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque 
 
 **Clonez le référentiel**
 
-Clonez votre référentiel AEM Forms as a Cloud Service [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
+Clonez votre référentiel AEM Forms as a Cloud Service [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
 
 1. Ouvrez la ligne de commande ou la fenêtre du terminal.
 
