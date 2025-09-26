@@ -5,10 +5,10 @@ keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalis
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 51%
+source-wordcount: '1360'
+ht-degree: 50%
 
 ---
 
@@ -28,6 +28,8 @@ Cet article vous guide tout au long des étapes de création de fonctions person
    * Méthodes de classe
    * Paramètres par défaut
    * Paramètres REST
+
+* Les dernières fonctionnalités ECMAScript sont disponibles en tant qu’accès anticipé (EA), tandis que jusqu’à ECMAScript 2019 est pris en charge en disponibilité générale.
 
 ## Conditions préalables pour créer une fonction personnalisée
 
@@ -55,7 +57,7 @@ Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque 
 
 **Clonez le référentiel**
 
-Clonez votre référentiel AEM Forms as a Cloud Service [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
+Clonez votre référentiel AEM Forms as a Cloud Service [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) :
 
 1. Ouvrez la ligne de commande ou la fenêtre du terminal.
 
@@ -144,10 +146,10 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 1. Accédez au fichier `/ui.apps/src/main/content/META-INF/vault/filter.xml` dans votre [répertoire de projet AEMaaCS].
 
-1. Ouvrez le fichier et ajoutez la ligne suivante à la fin :
+2. Ouvrez le fichier et ajoutez la ligne suivante à la fin :
 
    `<filter root="/apps/experience-league" />`
-1. Enregistrez le fichier.
+3. Enregistrez le fichier.
 
 ![Filtre de fonction personnalisée xml](/help/forms/assets/custom-function-filterxml.png)
 

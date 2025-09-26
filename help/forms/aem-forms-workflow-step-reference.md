@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser des workflows AEM, à l’aide des étapes d’affectation de tâche, convertir en étape PDF/A, générer un document de l’étape enregistrée, utiliser des workflows, signer une étape de document, générer une étape de sortie imprimée, générer une sortie PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '7370'
-ht-degree: 77%
+source-wordcount: '7409'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 77%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
@@ -246,7 +246,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **[!UICONTROL Enregistrez Chemin d’accès du document d’enregistrement généré :]** spécifiez l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez choisir de remplacer le dossier de payload, de placer le document d’enregistrement à un emplacement du répertoire de payload ou de stocker le document d’enregistrement dans une variable de type de données Document.
 
-**[!UICONTROL Paramètre régional]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner le paramètre régional dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+**[!UICONTROL Paramètres régionaux]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner les paramètres régionaux dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer les paramètres régionaux à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 ## Étape Invoquer DDX {#invokeddx}
 
@@ -362,7 +362,12 @@ L’étape Invoquer le service de modèle de données de formulaire (FDM) compor
 
    * **[!UICONTROL Relatif à la charge]** : utilisez cette option pour récupérer le fichier joint enregistré dans un chemin d’accès relatif à la charge. Sélectionnez l’option et indiquez le nom du dossier contenant le fichier joint ou indiquez le nom du fichier joint dans la zone de texte.
 
-     Par exemple, si le dossier Relatif à la charge dans le référentiel CRX inclut un fichier joint à l’emplacement `attachment\attachment-folder`, spécifiez `attachment\attachment-folder` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relatif à la charge]**.
+     >[!NOTE]
+     >
+     > L’étape de workflow **Appeler le modèle de données de formulaire** prend en charge les métadonnées côté workflow pour les tableaux de pièces jointes codées en Base64 dans les modèles de données de formulaire basés sur une liste [SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) et permet aux workflows de transmettre, stocker et récupérer des métadonnées telles que le nom de fichier, le type MIME ou les propriétés personnalisées des pièces jointes.
+     > ![Pièces jointes de la liste SP](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > Le dossier Relatif à la charge comprend une pièce jointe à l’emplacement `attachment`. Spécifiez `attachment` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relatif à la charge]**.
 
    * **[!UICONTROL JSON Dot Notation :]** utilisez cette option lorsque la valeur à utiliser figure dans un fichier JSON. Par exemple, insurance.customerDetails.emailAddress. L’option JSON Dot Notation est disponible uniquement si l’option Mapper les champs de saisie depuis le fichier JSON d’entrée est sélectionnée.
    * **[!UICONTROL Mapper les champs de saisie depuis le fichier JSON d’entrée]** : spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée des arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou Modèle de données de formulaire (FDM).
@@ -388,7 +393,7 @@ L’étape Signer le document possède les propriétés suivantes :
 
 * **[!UICONTROL Nom du contrat :]** indiquez le titre du contrat. Le nom du contrat devient une partie de l’objet et du corps du courrier électronique envoyé aux signataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **[!UICONTROL Littéral]** pour l’ajouter manuellement.
 
-* **[!UICONTROL Paramètre régional :]** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **[!UICONTROL Littéral]** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **[!UICONTROL en_US]** pour l’anglais et **[!UICONTROL fr_FR]** pour le français.
+* **[!UICONTROL Paramètres régionaux]** :  spécifiez la langue pour les options d’e-mail et de vérification. Vous pouvez stocker les paramètres régionaux dans une variable de type de données Chaîne ou sélectionner **[!UICONTROL Littéral]** pour choisir les paramètres régionaux dans la liste des options disponibles. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **[!UICONTROL en_US]** pour l’anglais et **[!UICONTROL fr_FR]** pour le français.
 
 * **[!UICONTROL Configuration cloud Adobe Sign]** : sélectionnez une configuration cloud [!DNL Adobe Sign]. Si vous n’avez pas configuré [!DNL Adobe Sign] pour [!DNL AEM Forms], voir [Intégration d’Adobe Sign à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
@@ -552,12 +557,12 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
-* **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
+* **[!UICONTROL Paramètres régionaux]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
    * **[!UICONTROL Utiliser le serveur par défaut]** :
-(par défaut) utilisez le paramètre régional qui est configuré sur le serveur [!DNL AEM Forms]. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+(par défaut) utilisez les paramètres régionaux qui sont configurés sur le serveur [!DNL AEM Forms]. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL Pour utiliser une valeur personnalisée]** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
+saisissez le code des paramètres régionaux dans la zone littérale ou sélectionnez une variable de chaîne contenant le code des paramètres régionaux. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 

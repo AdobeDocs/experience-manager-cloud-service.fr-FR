@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 21%
+source-wordcount: '2940'
+ht-degree: 22%
 
 ---
 
@@ -37,13 +37,13 @@ Les fonctionnalités d’IA générative proposées par l’intermédiaire de l�
 
 * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. Notre assistant d’IA agit comme votre propre base de connaissances personnelle, fournissant des conseils éclairés et des recommandations directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. Notre IA générative génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. Notre IA générative génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
 * **Génération de panneaux pour Forms** : laissez l’IA faire le gros du travail. Générez des panneaux de formulaires préconfigurés adaptés aux besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clients ou les détails de voyage. Gagnez du temps et assurez la cohérence avec les dispositions et fonctionnalités prédéfinies.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
 
-* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 
 ### Connecteur AEM Forms Workfront Fusion
@@ -83,7 +83,7 @@ Lorsqu’une personne envoie un formulaire sur votre site web créé avec AEM Ad
 
 En rationalisant le processus de transfert de données, le connecteur peut vous aider à améliorer les taux de conversion de votre site web. En envoyant automatiquement les données de prospect à Marketo, vous pouvez vous assurer que les prospects qualifiés sont rapidement intégrés à vos programmes de formation.
 
-En substance, le connecteur AEM Forms vers Marketo vous permet d’exploiter les forces des deux plateformes pour créer un entonnoir marketing plus efficace.
+En substance, le connecteur AEM Forms vers Marketo vous permet d’exploiter les points forts des deux plateformes pour créer un funnel marketing plus efficace.
 
 Prêt à démarrer ? Les articles suivants fournissent des instructions détaillées sur l’utilisation de l’innovation.
 
@@ -117,6 +117,11 @@ Les communications interactives sur le cloud constituent une solution puissante 
 * **Flexibilité du format** : sortie aux formats PDF, HTML, PCL, PostScript® et ZPL.
 
 * **Éditeur de règles** : créez des actions dynamiques basées sur les données directement dans vos documents à l’aide d’une interface intuitive de type pointer-cliquer. Définissez facilement une logique conditionnelle, automatisez les workflows et personnalisez le contenu sans écrire de code.
+
+* **Aperçu PDF :** prévisualisez une communication interactive sans données, fichiers JSON locaux ou modèles de données pour des tests flexibles pilotés par les données.
+* **Polices personnalisées :** intégrez des polices personnalisées ou approuvées par l’organisation pour garantir un rendu PDF cohérent de la marque sur tous les appareils.
+* **Importer et exporter :** migrez et réutilisez facilement la communication interactive avec ses fragments et modèles de données dans les environnements.
+
 
 #### Cas d’utilisation :
 
@@ -161,7 +166,7 @@ Prêt à démarrer ? La documentation [Présentation d’HTML5 forms](/help/form
 
 Accélérez votre développement AEM Forms Edge Delivery Services avec l’outil d’interface de ligne de commande AEM Forms. Cette interface de ligne de commande vous permet de générer instantanément le code et le câblage nécessaires pour lancer le développement de composants personnalisés, sans tracas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Fonctionnalités principales :**
 
@@ -174,7 +179,7 @@ Prêt à démarrer ? L’outil de ligne de commande AEM Forms est disponible dan
 
 ### Outil d’intégration d’API pour les données de formulaire dynamique
 
-L’outil d’intégration d’API permet aux auteurs de formulaires de créer des formulaires dynamiques et intelligents qui récupèrent et renseignent automatiquement les données des API REST externes en fonction des interactions utilisateur. Cette fonctionnalité d’intégration sans code transforme les formulaires statiques en interfaces réactives de collecte de données.
+L’outil d’intégration d’API permet aux créateurs et créatrices de formulaires de créer des formulaires dynamiques et intelligents qui récupèrent et renseignent automatiquement les données des API REST externes en fonction des interactions d’utilisation. Cette fonctionnalité d’intégration sans code transforme les formulaires statiques en interfaces réactives de collecte de données.
 
 Les principales fonctionnalités sont les suivantes :
 
@@ -283,6 +288,10 @@ Le stockage de PDF dans le stockage Blob Azure permet une gestion centralisée d
 * **Sécurité améliorée** : en tirant parti des fonctionnalités de sécurité intégrées d’Azure, telles que le chiffrement au repos et le contrôle d’accès en fonction du rôle (RBAC), les documents sensibles restent protégés pendant le stockage.
 
 * **Chemins de stockage personnalisables** : la possibilité de définir des chemins de répertoire personnalisés garantit que les PDF générés sont stockés dans des emplacements organisés et spécifiques à l’application, améliorant ainsi la gestion des fichiers.
+
+### Améliorations de l’éditeur visuel de règles
+
+* L’éditeur visuel de règles d’un Forms adaptatif prend désormais en charge l’intégration [API directe sans modèle de données de formulaire](/help/forms/api-integration-in-rule-editor.md). Vous pouvez vous connecter à un point d’entrée de l’API en saisissant son URL JSON ou en important la configuration à l’aide d’une commande cURL. Après l’intégration, l’API peut être appelée à l’aide de l’action `Invoke Service`.
 
 ## Voir également
 

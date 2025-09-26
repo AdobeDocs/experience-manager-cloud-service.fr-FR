@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ Le tableau ci-dessous décrit quelques scénarios dans lesquels le **service Inv
 | **Définir le panneau répétable à l’aide de la sortie du service d’appel** | Configure un panneau répétable en utilisant les données de la sortie du service d’appel, ce qui permet d’utiliser des panneaux dynamiques. [Cliquez ici](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) pour afficher l’implémentation. |
 | **Définir le panneau à l’aide de la sortie du service Invoke** | Définit le contenu ou la visibilité d’un panneau à l’aide de valeurs spécifiques issues de la sortie du service Invoke. [Cliquez ici](#use-case-3-set-panel-using-output-of-invoke-service) pour afficher l’implémentation. |
 | **Utilisez le paramètre de sortie du service d’appel pour valider d’autres champs** | Utilise des paramètres de sortie spécifiques du service d’appel pour valider les champs de formulaire. [Cliquez ici](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) pour afficher l’implémentation. |
+| **Utiliser la payload d’événement dans l’action Accéder à dans le service d’appel** | Utilise la payload d’événement pour gérer les réponses de succès et d’échec et pour transmettre des données à l’action Accéder à pendant la navigation. [Cliquez ici](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) pour afficher l’implémentation. |
 
 Créez un formulaire `Get Information` qui récupère des valeurs en fonction de l’entrée saisie dans la zone de texte `Pet ID`. La capture d’écran ci-dessous montre le formulaire utilisé dans ces cas d’utilisation :
 
@@ -142,7 +143,6 @@ Publions le fichier JSON suivant à l’aide du service [addPet](https://petstor
         "status": "available"
     }
 ```
-
 
 Les règles et la logique sont mises en œuvre à l’aide de l’action **Invoquer le service** dans l’éditeur de règles de la zone de texte `Pet ID` pour démontrer les cas d’utilisation mentionnés.
 
@@ -222,9 +222,38 @@ Saisissez `102` dans la zone de texte `Pet ID` et le bouton **Envoyer** est masq
 
 ![Output](/help/forms/assets/output4.png)
 
+### Cas d’utilisation 5 : utiliser la payload d’événement dans Accéder à l’action dans Appeler le service
+
+Ce cas pratique montre comment configurer une règle sur le bouton **Envoyer** qui appelle un **Invoquer le service** puis redirige l’utilisateur vers une autre page à l’aide de l’action **Accéder à**.
+
+#### Implémentation
+
+Créez une règle sur le bouton **Envoyer** pour appeler le service d’API `redirect-api`. Ce service est chargé de rediriger l’utilisateur vers le formulaire **Nous contacter**.
+
+Vous pouvez directement intégrer une API en tant que service d’API `redirect-api` dans l’éditeur de règles à l’aide des données JSON fournies ci-dessous :
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> Vous pouvez également [intégrer l’API directement dans l’interface de l’éditeur de règles](/help/forms/api-integration-in-rule-editor.md) sans utiliser de modèle de données de formulaire prédéfini.
+> Pour savoir comment intégrer directement l’API dans l’interface de l’éditeur de règles, [cliquez ici](/help/forms/api-integration-in-rule-editor.md) sans utiliser de modèle de données de formulaire prédéfini.
+
+Dans **[!UICONTROL Ajouter un gestionnaire de succès]**, configurez l’action **Accéder à** pour rediriger l’utilisateur vers la page **Nous contacter** à l’aide du paramètre `Event Payload`. L’utilisateur peut alors envoyer ses coordonnées.
+
+![Payload d’événement](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Vous pouvez éventuellement configurer un gestionnaire d’erreurs pour afficher un message d’erreur en cas d’échec de l’appel du service.
+
+#### Sortie
+
+Lorsque l’utilisateur clique sur le bouton **Envoyer**, le service d’API `redirect-api` est appelé. En cas de réussite, l’utilisateur est redirigé vers la page **Nous contacter**.
+
+![Sortie de payload d’événement](/help/forms/assets/output5.gif)
 
 ## Questions fréquentes
 
