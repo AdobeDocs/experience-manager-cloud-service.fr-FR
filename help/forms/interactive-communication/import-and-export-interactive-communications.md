@@ -39,7 +39,7 @@ Créez une communication interactive (CI) dans un environnement et réutilisez-l
 
 +++&#x200B;1. Comment exporter une communication interactive
 
-1.1. Sélectionnez une [communication interactive créée](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Sélectionnez une [communication interactive créée](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Cliquez sur l’option **Télécharger** pour l’exporter sous la forme d’un fichier ZIP.
 1.3. Le fichier ZIP téléchargé comprend le CI avec son **modèle**, **fragments** et **modèle de données** sélectionné.
 
