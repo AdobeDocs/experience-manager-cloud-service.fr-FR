@@ -4,10 +4,10 @@ description: Surveillez toute opération effectuée sur les ressources ou dossie
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 100%
+source-wordcount: '774'
+ht-degree: 67%
 
 ---
 
@@ -79,6 +79,8 @@ Pour vous abonner aux catégories de notification, procédez comme suit :
 
 ## Observer et ne pas observer de dossiers, ressources ou collections {#watch-unwatch-assets}
 
+Vous pouvez observer et annuler l’observation de dossiers, ressources ou collections afin de rester informé, ce qui permet une meilleure collaboration autour des ressources que vous surveillez.
+
 Une fois que vous êtes [abonné aux catégories de notification](#subscribe-to-notification-categories), vous devez vous abonner au contenu pour commencer à recevoir des notifications.
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Une fois que vous êtes [abonné aux catégories de notification](#subscribe-to-
 >* Pour les catégories de notification **[!UICONTROL Demandes]** et **[!UICONTROL Attribué à moi]**, vous n’avez pas besoin de vous abonner au contenu après vous être abonné aux catégories de notification. Les notifications vous sont automatiquement envoyées dans les situations suivantes : lorsque vous créez une demande et lorsqu’une tâche vous est affectée.
 >* La vue Assets envoie des notifications uniquement lorsque d’autres personnes utilisatrices effectuent des actions sur le contenu avec abonnement. Vous ne recevez pas de notifications pour les actions que vous effectuez sur le contenu avec abonnement.
 
-Pour vous abonner au contenu, sélectionnez le dossier, la ressource ou la collection auquel vous souhaitez vous abonner, puis cliquez sur **[!UICONTROL Surveiller]**.
+### S’abonner au contenu {#subscribe-to-content}
 
-La vue Assets affiche un message de succès. Sur celui-ci, vous pouvez cliquer sur **[!UICONTROL Accéder aux préférences de notification]** pour modifier votre [abonnement aux catégories de notification](#subscribe-to-notification-categories).
+Pour vous abonner à des dossiers, des ressources ou des collections, procédez comme suit :
 
-![Notifications dans la vue Assets](assets/watch-assets.png)
+1. Parcourez le dossier, la ressource ou la collection auquel vous souhaitez vous abonner, puis cliquez sur **[!UICONTROL Observer]**.
 
-La vue Assets envoie désormais des notifications pour les catégories pour lesquelles vous disposez d’un abonnement. Pour gagner du temps, vous pouvez également sélectionner plusieurs ressources, dossiers ou collections puis cliquer sur **[!UICONTROL Observer]**. Cependant, l’option **[!UICONTROL Observer]** ne s’affiche pas si des entités auxquelles vous êtes déjà abonné ont été sélectionnées.
+1. La vue Assets affiche un message de réussite. Vous pouvez cliquer sur **[!UICONTROL Accéder aux préférences de notification]** dans le message de réussite pour modifier votre [abonnement aux catégories de notification](#subscribe-to-notification-categories).
 
-De même, pour annuler votre abonnement, sélectionnez la ressource, le dossier ou la collection auquel vous vous êtes abonné, puis cliquez sur **[!UICONTROL Ne pas observer]**.
+   ![Notifications dans la vue Assets](assets/watch-assets.png)
+
+La vue Assets enverra désormais des notifications pour les catégories auxquelles vous êtes abonné. Pour gagner du temps, vous pouvez également sélectionner plusieurs ressources, dossiers ou collections puis cliquer sur **[!UICONTROL Observer]**. Toutefois, si vous sélectionnez plusieurs éléments et que certains sont déjà abonnés, l’option **[!UICONTROL Observer]** ne s’affiche pas.
+
+### Afficher le contenu avec abonnement {#view-subscribed-content}
+
+Pour afficher le contenu auquel vous êtes abonné, procédez comme suit :
+
+1. Accédez à **[!UICONTROL Watched Assets]** sous [!UICONTROL Gestion des ressources].
+
+1. La vue Assets affiche une liste des ressources auxquelles vous êtes abonné, y compris leur nom, leur type et leur chemin d’accès. Sélectionnez une ressource, un dossier ou une collection dans la liste pour afficher ses détails, son emplacement ou pour [se désabonner](#unsubscribe-to-content).
+
+   ![afficher le contenu avec abonnement](assets/view-watched-assets.png)
+
+### Afficher les abonnés au contenu {#view-content-subscribers}
+
+Pour afficher vos abonnés au contenu, procédez comme suit :
+
+1. Parcourez le dossier, la ressource ou la collection et sélectionnez **[!UICONTROL Détails]**.
+
+1. Cliquez sur icône œil![œil](assets/do-not-localize/eye-icon.png) dans le volet de droite pour afficher une liste d’observateurs du contenu.
+
+   Vous pouvez également cliquer sur ![icône de commentaire](assets/do-not-localize/comment-icon.svg) dans le volet de droite pour afficher les observateurs de contenu.
+
+### Se désabonner du contenu {#unsubscribe-to-content}
+
+Pour annuler votre abonnement :
+
+1. Accédez à **[!UICONTROL Watched Assets]** sous [!UICONTROL Gestion des ressources].
+
+1. Sélectionnez la ressource, le dossier ou la collection dont vous souhaitez vous désabonner, puis cliquez sur **[!UICONTROL Ne pas observer]**.
+
+   ![désabonner le contenu](assets/unsubscribe-assets.png)
+
+Vous pouvez également parcourir le dossier, la ressource ou la collection sous [!UICONTROL Gestion des ressources]. Sélectionnez la [ressource avec abonnement](#subscribe-to-content) et cliquez sur **[!UICONTROL Ne pas observer]**.
 
 ## Consulter les notifications {#view-notifications}
 
