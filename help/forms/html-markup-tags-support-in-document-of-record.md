@@ -3,13 +3,13 @@ title: Balises de balisage HTML prises en charge dans le document d’enregistre
 description: Guide de référence pour les balises de balisage HTML désormais prises en charge dans la génération de document d’enregistrement, y compris le comportement de rendu et les considérations d’accessibilité
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 9%
 
 ---
-
 
 
 # Balises de balisage HTML prises en charge dans le document d’enregistrement
@@ -132,23 +132,10 @@ Ces balises ne sont pas prises en charge et ne s’affichent pas correctement :
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## Informations connexes
+## Contenu connexe
 
-### Documentation AEM Forms
 
 - [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [Générer un document d’enregistrement pour les composants principaux](/help/forms/generate-document-of-record-core-components.md)
 - [Personnalisation du modèle de document d’enregistrement](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### Références techniques
-
-- [Spécification XFA - Attributs XHTML et CSS](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) (page 1187)
-- [Normes d’accessibilité PDF](https://www.w3.org/TR/WCAG21/)
-- [Mappages principaux des API d’accessibilité](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### Guides des bonnes pratiques
-
-- [Création de PDF accessibles](https://www.adobe.com/accessibility/pdf.html)
-- [Bonnes pratiques relatives au texte enrichi dans les formulaires](/help/forms/creating-accessible-adaptive-forms.md)
-- [Structure du document pour l’accessibilité](/help/forms/creating-accessible-adaptive-forms.md)
 
