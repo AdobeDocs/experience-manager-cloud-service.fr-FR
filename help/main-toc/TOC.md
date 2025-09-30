@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
-source-wordcount: '6698'
-ht-degree: 97%
+source-wordcount: '6799'
+ht-degree: 95%
 
 ---
 
@@ -527,7 +527,7 @@ ht-degree: 97%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ressources {#assets}
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -970,8 +970,23 @@ ht-degree: 97%
       + [Créer une communication interactive](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Créer un modèle de communication interactive](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Créer un fragment de communication interactive](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Présentation de la communication interactive](/help/forms/introduction-to-interactive-communication.md)
       + [Créer votre première communication interactive](/help/forms/create-your-first-communication.md)
+      + [Objet Zone de texte dans l’éditeur de communication interactive](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
+      + [Objet Image dans l’éditeur de communication interactive](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
+      + [Objet de champ d’image dans l’éditeur de communication interactive](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
+      + [Objet de champ de texte dans l’éditeur de communication interactive](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
+      + [Objet de champ numérique dans l’éditeur de communication interactive](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
+      + [Objet de champ Date/Heure dans l’éditeur de communication interactive](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
+      + [Objet de champ de date dans l’éditeur de communication interactive](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
+      + [Objet Case à cocher dans l’éditeur de communication interactive](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
+      + [Objet Bouton radio dans l’éditeur de communication interactive](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
+      + [Objet de sous-formulaire dans l’éditeur de communication interactive](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
+      + [Objet Rectangle dans l’éditeur de communication interactive](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
+      + [Objet Tableau dans l’éditeur de communication interactive](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
+      + [Objet Line dans l’éditeur de communication interactive](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
+      + [Objet Barcode dans l’éditeur de communication interactive](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + [Liaison de données dans l’éditeur de communication interactive](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
+      + [Création de règles dans l’éditeur de communication interactive](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [Importer et exporter une communication interactive](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [Ajouter des polices personnalisées à l’éditeur de communication interactive](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [Aperçu de PDF dans l’éditeur de communication interactive](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)

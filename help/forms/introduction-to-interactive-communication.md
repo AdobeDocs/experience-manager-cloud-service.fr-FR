@@ -4,14 +4,15 @@ description: Concevez facilement des communications dynamiques basées sur les d
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
-
 
 # Communications interactives
 
@@ -33,7 +34,7 @@ Les principales fonctionnalités de l’éditeur de communications interactives 
 | Fonction | Description | Disponibilité |
 |------------|-------------|--------------|
 | Conception conviviale | Interface intuitive par pointer-cliquer nécessitant un minimum de connaissances techniques | ✅ disponible |
-| Intégration de données  | Connectez-vous à des schémas, des bases de données et des services web pour générer du contenu dynamique | ✅ disponible |
+| Intégration de données | Connectez-vous à des schémas, des bases de données et des services web pour générer du contenu dynamique | ✅ disponible |
 | Média enrichi | Intégrez facilement du texte, des images et des éléments interactifs | ✅ disponible |
 | Gestion de version | Suivi des modifications et conservation de l’historique des documents | ✅ disponible |
 | Prise en charge des modèles | Créer en partant de zéro ou utiliser des modèles pour générer efficacement des documents | ✅ disponible |
@@ -41,9 +42,9 @@ Les principales fonctionnalités de l’éditeur de communications interactives 
 | Fragments de document | Réutilisation de blocs de contenu modulaires sur plusieurs documents pour plus de cohérence et d’efficacité | ✅ disponible |
 | Liaison de données intégrée | Liaison directe des données dans le contenu pour une personnalisation en temps réel sans configurations externes | ✅ disponible |
 | Plusieurs composants | Utiliser divers composants pour créer des documents complexes et attrayants | ✅ disponible |
-| Conception Multicanal | Créez des expériences unifiées sur les formats d’impression et numériques en respectant la réglementation | ?? Partiellement disponible |
-| Contenu dynamique | Générer du contenu personnalisé à l’aide de la logique commerciale et de la liaison de données | ?? Partiellement disponible |
-| Flexibilité du format | Sortie aux formats PDF, HTML, PCL, PostScript®️ et ZPL | ?? Partiellement disponible |
+| Conception Multicanal | Créez des expériences unifiées sur les formats d’impression et numériques en respectant la réglementation | 🌓 partiellement disponible |
+| Contenu dynamique | Générer du contenu personnalisé à l’aide de la logique commerciale et de la liaison de données | 🌓 partiellement disponible |
+| Flexibilité du format | Sortie aux formats PDF, HTML, PCL, PostScript®️ et ZPL | 🌓 partiellement disponible |
 | Prise en charge linguistique | Créer des communications dans plusieurs langues avec prise en charge des polices personnalisées | ⏳ Prochainement |
 
 ## Intégration

@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 1%
 
 ---
-
 
 # Présentation d’AEM Forms as a Cloud Service {#introduction}
 
@@ -95,7 +95,7 @@ Implémentez la [logique conditionnelle](/help/forms/rule-editor-core-components
 Effectuez le rendu des formulaires XFA sous la forme de [formulaires HTML5](/help/forms/introductionhtml5.md) pour les appareils mobiles et les navigateurs hérités. HTML5 Forms offre une expérience mobile native sans modules externes tout en conservant la logique de formulaire et la validation à partir des modèles XDP d’origine.
 
 **Communications interactives**
-Créez des communications orientées document telles que des relevés, des factures et des avis à l’aide d’un éditeur visuel. Les [communications interactives](/help/forms/introduction-to-interactive-communication.md) associent du contenu statique à des données dynamiques pour générer des communications personnalisées sur les canaux papier et numériques.
+Créez des communications orientées document telles que des relevés, des factures et des avis à l’aide d’un éditeur visuel. Les [communications interactives](/help/forms/interactive-communication/create-interactive-communication.md) associent du contenu statique à des données dynamiques pour générer des communications personnalisées sur les canaux papier et numériques.
 
 ### Gouverner : examen et conformité {#govern}
 
@@ -249,7 +249,7 @@ Pour les besoins complexes impliquant plusieurs systèmes, la génération de do
 **Services de document et communications :**
 
 1. **[Implémentation des API Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)** pour la génération automatisée de documents
-2. **[Créer des communications interactives](/help/forms/introduction-to-interactive-communication.md)** pour les relevés et avis personnalisés
+2. **[Créer des communications interactives](/help/forms/interactive-communication/create-interactive-communication.md)** pour les relevés et avis personnalisés
 3. **[Configuration du portail Forms](/help/forms/configure-forms-portal.md)** pour une gestion centralisée des formulaires
 
 ### Déploiement en entreprise : échelle et gouvernance {#enterprise-deployment}

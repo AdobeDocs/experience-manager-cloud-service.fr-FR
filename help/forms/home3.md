@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 2%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ Créez des formulaires en utilisant l’approche de création qui correspond le 
 | **Fonctionnement :** concevez des communications personnalisées qui combinent du contenu statique avec des données dynamiques pour les canaux d’impression et numériques. |
 | **Utilisation :** relevés client, factures, avis, communications personnalisées, workflows riches en documents. |
 | 📄 Conception de documents visuels 📄 Intégration de données dynamiques 📄 Sortie multicanal 📄 Personalization |
-| [Prise en main des → de communications interactives](/help/forms/introduction-to-interactive-communication.md) |
+| [Prise en main des → de communications interactives](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Data &amp; Integration {#data-integration}
 
@@ -304,7 +304,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 **Pour la modernisation XFA :** commencez par [HTML5 Forms](/help/forms/introductionhtml5.md)
 
-**Pour les communications de document :** Commencer par [Communications interactives](/help/forms/introduction-to-interactive-communication.md)
+**Pour les communications de document :** Commencer par [Communications interactives](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Démarrage rapide de l’intégration des données {#integration-start}
 
@@ -338,7 +338,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 ### Démarrage rapide de la gestion {#management-start}
 
-**Pour la découverte de formulaires :** Commencer par le portail Forms [&#128279;](/help/forms/configure-forms-portal.md)
+**Pour la découverte de formulaires :** Commencer par le portail Forms [](/help/forms/configure-forms-portal.md)
 
 **Pour le contrôle d’accès :** commencez par [User Management](/help/forms/forms-groups-privileges-tasks.md)
 
