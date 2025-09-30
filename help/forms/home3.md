@@ -338,7 +338,7 @@ Choisissez votre point de départ en fonction de vos besoins immédiats et de vo
 
 ### Démarrage rapide de la gestion {#management-start}
 
-**Pour la découverte de formulaires :** Commencer par le portail Forms [](/help/forms/configure-forms-portal.md)
+**Pour la découverte de formulaires :** Commencer par le portail Forms [&#128279;](/help/forms/configure-forms-portal.md)
 
 **Pour le contrôle d’accès :** commencez par [User Management](/help/forms/forms-groups-privileges-tasks.md)
 
