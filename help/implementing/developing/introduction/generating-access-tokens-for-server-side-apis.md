@@ -71,7 +71,7 @@ L’application qui appelle AEM doit pouvoir accéder aux informations d’ident
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 
-Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
+Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [&#128279;](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
 
 ```
 /*jshint node:true */
