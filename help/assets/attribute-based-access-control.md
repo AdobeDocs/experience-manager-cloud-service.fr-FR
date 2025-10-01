@@ -3,9 +3,9 @@ title: Contrôle d’accès basé sur les attributs
 description: Découvrez comment activer le contrôle d’accès basé sur les attributs pour définir des règles basées sur les métadonnées afin de définir le niveau d’accès aux ressources disponibles dans Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '944'
 ht-degree: 5%
 
 ---
@@ -39,9 +39,13 @@ Cliquez sur **Télécharger la feuille de calcul** pour télécharger et défini
 
 Définissez des règles dans la feuille de calcul à l&#39;aide des instructions définies dans cet article.
 
+<!--
+
 >[!IMPORTANT]
 >
-> Après avoir défini les règles, accédez à l’onglet **Erreurs de validation** de la feuille de calcul et cliquez sur **Exécuter les validations ABAC**. **Toutes les validations effectuées** le message confirme que vous pouvez fournir les règles définies à Adobe.
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## Exemple de cas d’utilisation de contrôle d’accès basé sur les attributs {#example-metadata-based-rules}
 
