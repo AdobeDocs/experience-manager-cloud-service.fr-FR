@@ -1,15 +1,15 @@
 ---
 title: L’IA dans AEM as a Cloud Service
-description: En savoir plus sur l’IA dans Adobe Experience Manager as a Cloud Service
+description: Découvrir l’IA dans Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
+exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
+source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
-
 
 # L’IA dans AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
