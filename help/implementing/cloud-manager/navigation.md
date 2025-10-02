@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 37%
+source-wordcount: '1689'
+ht-degree: 38%
 
 ---
 
@@ -28,9 +28,9 @@ L’interface d’utilisation de Cloud Manager est composée principalement de 
 >Consultez également le [parcours de documentation d’intégration](/help/journey-onboarding/overview.md) pour un aperçu complet de la mise en service d’AEM as a Cloud Service à l’aide de Cloud Manager.
 
 
-## Assistant AI dans AEM
+## Assistant IA dans AEM
 
-Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Pour les clients qui ont [rempli les critères prérequis](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant IA dans AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 
 ## Console Mes programmes {#my-programs-console}
@@ -126,7 +126,7 @@ Une carte (ou une ligne dans un tableau) représente chaque programme, fournissa
 * Nom attribué au programme. L’image ci-dessus montre « SecurBank Sample » comme nom du programme.
 * Type de service :
    * **Experience Manager Cloud** — pour les programmes AEM as a Cloud Service
-   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) :
    * Sandbox
    * Production
@@ -153,7 +153,7 @@ L’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Mor
 * Accédez à une ![icône de données](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [environnement](/help/implementing/cloud-manager/manage-environments.md) du programme
 * Ouvrez l’![icône de présentation du programme](/help/implementing/cloud-manager/assets/program-overview.svg) [présentation du programme](#program-overview)
 * ![icône Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [modifier le programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icône Supprimer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Supprimer un programme Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -214,7 +214,7 @@ Chaque programme comporte de nombreuses options et des données associées. Ces 
 * ![Icône cloche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Activité](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - Historique des exécutions de pipeline du programme
 * ![Icône de workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Tous les pipelines configurés pour le programme
 * ![Icône de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Tous les référentiels configurés pour le programme
-* ![Icône de graphique circulaire](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Rapports](/help/implementing/cloud-manager/sla-reporting.md) - Mesures telles que les données SLA
+* ![Icône de graphique circulaire](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Rapports](/help/implementing/cloud-manager/reports/report-sla.md) - Mesures telles que les données SLA
 
 **Services**
 
@@ -223,7 +223,7 @@ Chaque programme comporte de nombreuses options et des données associées. Ces 
 * ![Icône Paramètres](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Paramètres de domaine](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gérer les noms de domaine personnalisés pour le programme
 * ![Icône cadenas fermé](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Gérer les certificats SSL du programme
 * ![Icône de réseau social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Mappages de domaine](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gérer les mappages de domaine
-* ![Icône de liste des tâches](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Définissez des listes autorisées pour certaines adresses IP
+* ![Icône de la liste des tâches](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Définissez des listes autorisées pour certaines adresses IP
 * ![Icône Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Jeux de contenu](/help/implementing/developing/tools/content-copy.md) - Jeux de contenu créés à des fins de copie
 * ![Icône d’historique](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Activité de copie de contenu](/help/implementing/developing/tools/content-copy.md) - Activités de copie de contenu
 * ![Icône Canal](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Infrastructure réseau](/help/security/configuring-advanced-networking.md) - Gérer les options de mise en réseau avancées pour le programme

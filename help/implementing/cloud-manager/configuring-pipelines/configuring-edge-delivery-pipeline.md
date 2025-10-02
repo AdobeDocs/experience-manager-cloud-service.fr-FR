@@ -4,21 +4,24 @@ description: Découvrez comment ajouter un pipeline Edge Delivery pour créer et
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 4%
+source-wordcount: '613'
+ht-degree: 9%
 
 ---
 
 # Ajout d’un pipeline Edge Delivery {#configure-production-pipeline}
 
-Découvrez comment configurer les pipelines Edge Delivery pour créer et déployer votre code dans les environnements de production. Un pipeline de production déploie le code d’abord dans l’environnement intermédiaire. Lors de la validation, il déploie le même code dans l’environnement de production.
+<!--badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
+Découvrez comment configurer les pipelines Edge Delivery pour créer et déployer votre code dans les environnements de production. Les pipelines Edge Delivery vous permettent de configurer des fonctionnalités, notamment le transfert de journal et le réseau CDN géré par Adobe.
+
+Pour obtenir la liste des configurations prises en charge, voir [Utilisation des pipelines de configuration - configurations prises en charge](/help/operations/config-pipeline.md#configurations).
 
 Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** pour configurer les pipelines de production.
 
@@ -32,7 +35,6 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 
 <!-- CMGR‑69680 -->
 
-
 Avant de commencer à déployer votre code, configurez les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
@@ -41,11 +43,11 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
 **Pour ajouter un pipeline Edge Delivery, procédez comme suit**
 
-1. Connectez-vous à Cloud Manager à l’adresse [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/) puis, dans le panneau de gauche, cliquez sur **Cloud Manager**.
-
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
+1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
+1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation de votre choix.
-
-1. Sur la page **Mes programmes**, sélectionnez le programme de votre choix.
+1. Sur la console **Mes programmes**, cliquez sur un programme.
 
    ![Page Mes programmes dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
@@ -58,12 +60,24 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
          ![Vignette Pipelines de la page Aperçu du programme ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
+         >[!TIP]
+         >
+         >Outre l’utilisation de la carte **Pipeline** comme illustré dans la capture d’écran ci-dessus, vous pouvez également gérer votre pipeline à partir de la page **Pipelines**.
+         >
+         >![Widget de pipeline Edge Delivery affichant le nom, le statut, le référentiel et la branche du pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
    * **Ajouter un pipeline Edge Delivery à partir de la page Pipelines**
 
       1. Dans le rail de gauche, sous **Programme**, cliquez sur **![Icône de workflow ou Icône de pipelines](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
       1. Sur la page Pipelines, près du coin supérieur droit, cliquez sur **Ajouter un pipeline** > **Ajouter un pipeline Edge Delivery**.
 
          ![Page Pipelines avec le bouton Ajouter un pipeline ](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
+
+         >[!TIP]
+         >
+         >Près du coin supérieur gauche, cliquez sur **Filtres** puis, sous la section **Type de diffusion**, cochez la case **Diffusion Edge** pour filtrer la liste uniquement sur les pipelines Edge Delivery (c’est-à-dire les pipelines qui utilisent Edge Delivery Services). <!-- (CMGR-69682) -->
+         >
+         >![Panneau de filtrage présentant le nouveau type de diffusion de la diffusion Edge et de la diffusion Publier](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 1. Dans la boîte de dialogue **Ajouter un pipeline Edge Delivery**, dans le champ de texte **Nom du pipeline**, saisissez un libellé de pipeline descriptif.
 
@@ -84,11 +98,17 @@ Avant de commencer à déployer votre code, configurez les paramètres de votre 
 
      Voir aussi [Ajouter et gérer des référentiels](/help/implementing/cloud-manager/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Utilisez la liste déroulante pour sélectionner une branche spécifique dans le référentiel sélectionné. Si nécessaire, cliquez sur ![icône de recyclage ou icône d’actualisation](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) pour recharger la liste déroulante Branche Git après les notifications push récentes
+   * **Branche Git** - Utilisez la liste déroulante pour sélectionner une branche spécifique dans le référentiel sélectionné. Si nécessaire, cliquez sur ![icône de recyclage ou icône d’actualisation](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) pour recharger la liste déroulante Branche Git après les notifications push récentes.
    * **Emplacement du code** - Définit le chemin du dossier à l’intérieur du référentiel où commence le code prêt pour le pipeline ( `/` est égal à la racine du référentiel).
 
    ![Configurer le pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
 1. Cliquez sur **Enregistrer**.
 
-Vous pouvez désormais [gérer votre pipeline](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme** ou à partir de la page **Pipelines**.
+Vous pouvez désormais [gérer votre pipeline](managing-pipelines.md) à partir de la vignette **Pipelines** de la page **Aperçu du programme** ou de la page **Pipelines**.
+
+
+![Widget de pipeline Edge Delivery affichant le nom, le statut, le référentiel et la branche du pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
+
+

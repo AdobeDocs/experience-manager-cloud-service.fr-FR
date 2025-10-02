@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 33%
+source-wordcount: '1546'
+ht-degree: 32%
 
 ---
 
@@ -116,6 +116,11 @@ Voir [Ajouter un pipeline hors production](/help/implementing/cloud-manager/conf
 À l’aide d’un pipeline de configuration, vous pouvez déployer rapidement les paramètres pour le transfert de journal, les tâches de maintenance liées à la purge et diverses configurations de réseau CDN, y compris les règles de filtrage du trafic (telles que les règles WAF (pare-feu d’application web)). En outre, vous pouvez gérer les transformations de requête et de réponse, les sélecteurs d’origine, les redirections côté client, les pages d’erreur, les clés de réseau CDN géré par le client, les clés d’API de purge et l’authentification de base.
 
 Consultez [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md) pour obtenir la liste complète des fonctionnalités prises en charge et apprendre à gérer les configurations dans votre référentiel afin qu’elles soient correctement déployées.
+
+>[!NOTE]
+>
+>Les pipelines de configuration d’Edge Delivery ne disposent pas d’environnements de développement, d’évaluation et de production distincts. Dans AEM as a Cloud Service, les modifications passent par les niveaux de développement, d’évaluation et de production. En revanche, un pipeline de configuration Edge Delivery applique sa configuration directement à tous les domaines Edge Delivery Sites enregistrés dans Cloud Manager. Pour en savoir plus, voir [Ajouter un pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+
 
 ### Configurer les pipelines de configuration {#configure-config-deployment}
 

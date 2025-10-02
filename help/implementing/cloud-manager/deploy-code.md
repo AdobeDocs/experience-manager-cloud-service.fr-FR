@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 38%
@@ -24,7 +24,7 @@ Le déploiement transparent du code vers les environnements d’évaluation, pui
 1. **Déploiement dans l’environnement d’évaluation** - Le code est créé et déployé dans l’environnement d’évaluation pour les tests fonctionnels automatisés, les tests de l’interface utilisateur, le contrôle de l’expérience et les tests d’acceptation utilisateur (UAT).
 1. **Déploiement dans l’environnement de production** - Une fois la version validée à l’étape d’évaluation et approuvée pour le passage en production, le même artefact de build est déployé dans l’environnement de production.
 
-_Seul le type de pipeline Code full stack prend en charge l’analyse de code, les tests de fonction, les tests d’interface utilisateur et le contrôle de l’expérience._
+_Seul le type de pipeline Code full stack prend en charge l’analyse de code, les tests de fonction, les tests d’interface d’utilisation et l’audit d’expérience._
 
 ## Processus de déploiement {#deployment-process}
 
@@ -83,7 +83,7 @@ La phase de **test d’évaluation** comprend les étapes suivantes :
 | Tests fonctionnels du produit | Le pipeline Cloud Manager exécute des tests qui s’exécutent sur l’environnement d’évaluation.<br>Voir aussi [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Tests fonctionnels personnalisés | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Si le build ne génère pas de fichier JAR de test, le test réussit automatiquement.<br>Voir aussi [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Test d’interface utilisateur personnalisé | Une fonctionnalité facultative qui exécute automatiquement les tests de l’interface utilisateur créés pour des applications personnalisées.Les tests de l’interface utilisateur <br> sont basés sur Selenium et conditionnés dans une image Docker afin d’offrir une flexibilité au niveau du langage et des structures. Cette approche vous permet d’utiliser Java et Maven, Node et WebDriver.io, ou tout framework ou technologie basé sur Selenium.<br>Voir aussi [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Audit d’expérience | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.<ul><li>Les pages configurées sont envoyées au service et évaluées.</li><li>Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.</li><li>Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.</li></ul>Voir [Comprendre les résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Audit d’expérience | Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécutent les contrôles.<ul><li>Les pages configurées sont envoyées au service et évaluées.</li><li>Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.</li><li>Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.</li></ul>Voir [Comprendre les résultats du contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
 

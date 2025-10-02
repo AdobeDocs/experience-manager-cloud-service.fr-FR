@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.8.0.
+title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service pour la version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 90%
 
 ---
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
@@ -22,7 +22,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Possibilité de [restaurer les pages et les sous-pages (arborescences de page) dans une version antérieure](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
+* Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [Éditeur SPA](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -31,7 +31,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Le transcodage vidéo est désormais pris en charge avec les microservices de ressources. Une nouvelle section de la configuration des [!UICONTROL Profils de traitement] permet de définir le débit et les dimensions d’une vidéo. Le format de sortie est MP4 avec le codec H.264. Pour plus d’informations, voir [Gestion des ressources vidéo](/help/assets/manage-video-assets.md#transcode-video). Pour accéder à d’autres options de transcodage et à la diffusion vidéo, utilisez le module complémentaire [!DNL Dynamic Media].
 
-* Pour les nouveaux déploiements d’[!DNL Experience Manager Assets], la fonctionnalité de balisage intelligent est désormais configurée par défaut. Il n’est pas nécessaire d’intégrer manuellement [!DNL Adobe Developer Console]. Sur les déploiements existants, les administrateurs configurent l’intégration des balises intelligentes comme auparavant.
+* Pour les nouveaux déploiements d’[!DNL Experience Manager Assets], la fonctionnalité de balisage intelligent est désormais configurée par défaut. Il n’est pas nécessaire d’intégrer manuellement [!DNL Adobe Developer Console]. Sur les déploiements existants, les administrateurs et administratrices configurent l’intégration des balises intelligentes comme auparavant.
 
 * Une nouvelle [expérience de téléchargement de ressources](/help/assets/download-assets-from-aem.md) offre les avantages suivants :
 
@@ -78,15 +78,15 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
-* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline après des tests fonctionnels personnalisés qui évaluent le site par rapport à plusieurs dimensions, y compris les performances, le SEO (Search Engine Optimization, optimisation du moteur de recherche), l’accessibilité, les bonnes pratiques et le PWA (application web progressive).
+* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape d’audit du contenu est incluse dans le pipeline après des tests fonctionnels personnalisés qui évaluent le site par rapport à plusieurs dimensions, y compris les performances, l’optimisation du moteur de recherche (SEO), l’accessibilité, les bonnes pratiques et le PWA (application web progressive).
 
 
   >[!NOTE]
-  >L’audit de contenu a depuis été renommé audit de l’expérience.
+  >L’audit de contenu a depuis été renommé Audit d’expérience.
 
-  Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+  Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
-* Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec Smart Content Services.
+* Les environnements nouvellement créés dans les programmes Assets seront désormais automatiquement configurés avec les services de contenu dynamique.
 
 * Il est possible de désactiver les environnements placés en veille prolongée à l’aide de la page **Aperçu** de Cloud Manager.
 
@@ -142,6 +142,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus d’informations.
 
-* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : convertisseur AEM Cloud Service Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
+* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Consultez [Ressource Git : AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
 
 * Réécriture du convertisseur du Dispatcher dans ` node.js ` et intégration avec le module AIO-CLI.

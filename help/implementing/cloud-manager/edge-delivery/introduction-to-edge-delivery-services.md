@@ -4,10 +4,10 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '823'
-ht-degree: 100%
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 93%
 
 ---
 
@@ -40,10 +40,10 @@ Optimisez vos avantages grâce à Adobe en accédant à votre licence Edge Deliv
 
 * [Utilisez votre licence sur le programme de votre choix](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) ou [mettez à jour d’autres programmes](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md), ou les deux.
 * Profitez des avantages de la [priorisation des API](https://developer.adobe.com/experience-cloud/experience-manager-apis/) pour effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer).
-* [Accédez aux rapports SLA](/help/implementing/cloud-manager/sla-reporting.md) (*bientôt disponible*)
+* [Accès aux rapports SLA](/help/implementing/cloud-manager/reports/report-sla.md)
 * [Accédez à l’assistance Adobe](/help/edge/overview.md#support-ticket) pour vos programmes de production enregistrés.
 
-Si vous disposez d’une licence Edge Delivery Services (EDS), vous pouvez utiliser un [réseau de diffusion de contenu (CDN) géré par Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) pour votre site Edge Delivery et tirer parti de fonctionnalités telles que la gestion du CDN en libre-service et le renouvellement automatique des certificats DV tous les trois mois, sauf en cas de suppression.
+Si vous disposez d’une licence Edge Delivery Services (EDS), vous pouvez utiliser un [réseau CDN géré par Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) pour votre site Edge Delivery. Cela permet une gestion de réseau CDN en libre-service et des certificats DV qui se renouvellent automatiquement tous les trois mois, sauf si vous supprimez le certificat.
 
 Si vous choisissez d’utiliser votre CDN (c’est-à-dire un CDN non géré par Adobe), indépendamment de votre licence Edge Delivery Services, vous devez le configurer sur la plateforme `aem.live`. Consultez [Configuration de CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
 
@@ -87,7 +87,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

@@ -1,14 +1,14 @@
 ---
 title: Vue d’ensemble des tests Cloud Manager
-description: Obtenez une vue d’ensemble des trois types de tests que Cloud Manager exécute automatiquement pour garantir la qualité de votre code personnalisé.
+description: Obtenez un aperçu des trois types de tests que Cloud Manager exécute automatiquement pour garantir la qualité de votre code personnalisé.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 91%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,11 +25,11 @@ Il existe trois grandes catégories de tests pris en charge par le pipeline Clou
 
 1. [Tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Les tests fonctionnels font partie de la phase de test d’un [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et font éventuellement partie de la phase de test d’un [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Les tests fonctionnels s’exécutent pendant la phase de test d’évaluation d’un [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). Il peut également s’exécuter, éventuellement, pendant la phase de test d’un [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [Tests d’audit d’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * Le test de contrôle de l’expérience est activé dans tous les pipelines de production Cloud Manager et ne peut pas être ignoré.
+   * Les tests d’audit de l’expérience sont activés dans tous les pipelines de production de Cloud Manager et ne peuvent pas être ignorés.
 
 Ces tests peuvent être :
 
