@@ -235,7 +235,7 @@ Sélectionnez par exemple **Activé** dans la colonne **Statut**. Une fois cette
    >
    >L&#39;option **Créer** ne sera disponible que dans les cas suivants :
    >
-   >* Si l[utilisation des modèles de fragment de contenu a été activée ](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* Si l[utilisation des modèles de fragment de contenu a été activée &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md)
    >* lorsque vous avez sélectionné le dossier dans lequel vous souhaitez créer le modèle.
 
 1. Sélectionnez le **Chemin** de la configuration et spécifiez le **Nom**.
@@ -255,7 +255,7 @@ Si vous saisissez d’abord le **Titre**, le **Nom** est généré à partir de 
 
    >[!NOTE]
    >
-   >Voir [ Modèle de fragment de contenu - Propriétés ](#model-properties) pour plus d’informations.
+   >Voir [&#x200B; Modèle de fragment de contenu - Propriétés &#x200B;](#model-properties) pour plus d’informations.
 
    ![Titre et description](assets/cf-managing-content-fragment-models-create.png)
 
