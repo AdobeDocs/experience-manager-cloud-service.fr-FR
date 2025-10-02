@@ -110,11 +110,11 @@ Saisissez les premiers caractères du nom de la branche et la fonction de saisie
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
