@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 80%
+source-wordcount: '3588'
+ht-degree: 72%
 
 ---
 
@@ -28,6 +28,14 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 >Les fragments de contenu sont une fonctionnalité de sites, mais sont stockés sous la forme **Ressources**.
 >
 >Les fragments de contenu et les modèles de fragment de contenu sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, bien que les fragments de contenu puissent toujours être gérés à partir de la console **Assets** et les modèles de fragment de contenu à partir de la console **Outils**. Cette section traite de la gestion à partir des consoles **Assets** et **Tools**.
+
+>[!NOTE]
+>
+>Si un modèle a été créé avec le [nouvel éditeur de modèles](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) vous devez toujours utiliser cet éditeur pour le modèle.
+>
+>Si vous ouvrez ensuite le modèle avec cet éditeur de modèles (d’origine), le message suivant s’affiche :
+>
+>* « Un schéma d’interface utilisateur personnalisé est configuré pour ce modèle. L’ordre des champs affichés dans cette interface utilisateur peut ne pas correspondre au schéma d’interface utilisateur. Pour afficher les champs alignés avec le schéma d’interface utilisateur, vous devez passer au nouvel éditeur de fragment de contenu. »
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -67,6 +75,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
    * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
+   * haut : une option pour essayer le [nouvel éditeur](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Balises**
    * Permet aux auteurs de fragments d’accéder à des zones de balises et de les sélectionner.
 
+* **Référence du fragment**
+   * Fait référence à d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
+      * Modifier directement le fragment référencé.
+      * Créer un fragment de contenu basé sur le modèle approprié
+      * Création de nouvelles instances du champ
+   * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple, `/content/dam/path/to/resource`
+
+* **Référence de fragment (UUID)**
+   * Fait référence à d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
+   * Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
+      * Modifier directement le fragment référencé.
+      * Créer un fragment de contenu basé sur le modèle approprié
+      * Création de nouvelles instances du champ
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée en tant qu’identifiant universel unique (UUID) qui référence la ressource.
+      * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder au fragment requis
+
+  >[!NOTE]
+  >
+  >Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
+
 * **Référence de contenu**
    * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
    * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
    * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
+   * La référence spécifie le chemin d’accès à la ressource référencée ; par exemple, `/content/dam/path/to/resource`
 
-* **Référence du fragment**
-   * Fait référence à d’autres fragments de contenu ; peut être utilisé pour [créer du contenu imbriqué](#using-references-to-form-nested-content)
-   * Le champ peut être configuré pour permettre aux personnes créant des fragments de :
-      * Modifier directement le fragment référencé
-      * Créer un fragment de contenu basé sur le modèle approprié
-      * Création de nouvelles instances du champ
+* **Référence de contenu (UUID)**
+   * Fait référence à d’autres contenus, tous types confondus ; peut être utilisée pour [créer du contenu imbriqué](#using-references-to-form-nested-content).
+   * Si une image est référencée, vous pouvez choisir d’afficher une miniature.
+   * Le champ peut être configuré pour permettre aux auteurs de fragments de créer de nouvelles instances du champ
+   * Dans l’éditeur, la référence spécifie le chemin d’accès à la ressource référencée. En interne, la référence est conservée en tant qu’identifiant universel unique (UUID) qui référence la ressource.
+      * Vous n’avez pas besoin de connaître l’UUID ; dans l’éditeur de fragments, vous pouvez accéder à la ressource requise
+
+  >[!NOTE]
+  >
+  >Les UUID sont spécifiques au référentiel. Si vous utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier des fragments de contenu, les UUID sont recalculés dans l’environnement cible.
 
 * **Objet JSON.**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
@@ -260,32 +295,43 @@ Différents types de données incluent désormais la possibilité de définir le
 
 Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’un des types de données suivants :
 
-* **[Référence de contenu](#content-reference)**
+* [Référence de contenu](#content-reference)
    * Fournit une référence simple à un autre contenu, quel que soit son type.
-   * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
+   * Fournis par les types de données :
+      * **Référence de contenu** - Basé sur un chemin d’accès
+      * **Référence de contenu (UUID)** basée sur UUID
+   * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
-* **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
+* [Référence du fragment](#fragment-reference-nested-fragments) (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
-   * Permet d’intégrer ou de récupérer des données structurées.
+   * Fournis par les types de données :
+      * **Référence de fragment** - Basé sur un chemin d’accès
+      * **Référence de fragment (UUID)** basée sur UUID
+   * Permet d’inclure/récupérer des données structurées.
 
      >[!NOTE]
      >
-     >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-   * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
+     >Cette méthode est particulièrement intéressante lorsque vous utilisez [diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+
+   * Peut être configuré pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
 >
->AEM dispose d’une protection récurrente pour :
+>Voir [Mettre à niveau vos fragments de contenu pour les références UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) pour plus d’informations sur la référence de contenu/fragment et la référence de contenu/fragment (UUID), et mettre à niveau vers les types de données basés sur UUID.
+
+>[!NOTE]
+>
+>AEM dispose d’une protection de récurrence pour :
 >
 >* Références du contenu
->Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>  >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Références de fragments dans GraphQL
->Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>* Références de fragment dans GraphQL
+>  >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
-La référence de contenu vous permet de générer du contenu à partir d’une autre source, par exemple une image ou un fragment de contenu.
+Les types de données **Référence de contenu** et **Référence de contenu (UUID)** vous permettent d’effectuer le rendu d’un contenu provenant d’une autre source, par exemple une image, une page ou un fragment d’expérience.
 
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
@@ -300,7 +346,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 ### Référence du fragment (fragments imbriqués) {#fragment-reference-nested-fragments}
 
-La référence du fragment fait référence à un ou plusieurs fragments de contenu. Cette fonctionnalité présente un intérêt particulier lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
+Les types de données **Référence du fragment** et **Référence du fragment (UUID)** peuvent référencer un ou plusieurs fragments de contenu. Cette fonctionnalité est particulièrement intéressante lors de la récupération de contenu à utiliser dans votre application, car elle vous permet de récupérer des données structurées avec plusieurs calques.
 
 Par exemple :
 
@@ -349,9 +395,9 @@ Indique un chemin racine pour tout fragment référencé.
 
 >[!NOTE]
 >
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>Un mécanisme de protection de récurrence est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+>Il existe également une protection de récurrence pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Modèle de fragment de contenu – Propriétés {#content-fragment-model-properties}
 
