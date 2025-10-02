@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.09.25
-description: Il s’agit des notes de mise à jour de la version 2025.09.25 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.10.02
+description: Il s’agit des notes de mise à jour de la version 2025.10.02 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 46%
+source-wordcount: '169'
+ht-degree: 61%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.09.25 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.10.02 {#release-notes}
 
-Voici les notes de mise à jour de la version du 25 septembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 2 octobre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -22,8 +22,7 @@ Voici les notes de mise à jour de la version du 25 septembre 2025 de l’édite
 
 ## Nouveautés {#what-is-new}
 
-* [La fonction de copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) peut désormais être [désactivée à l’aide d’une balise meta.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [Lors de l’utilisation de l’éditeur universel dans des environnements AEM hébergés (AMS),](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) l’éditeur universel utilise désormais le service d’éditeur universel hébergé par AEM et ne dépend plus d’une installation AMS locale, ce qui vous garantit de toujours disposer automatiquement du dernier service d’éditeur universel.
+* Un bouton a été ajouté pour basculer entre les environnements de prévisualisation et de production.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -39,5 +38,4 @@ Il est désormais possible de copier et coller sur plusieurs pages, en plus de d
 
 ## Autres améliorations {#other-improvements}
 
-* Le rail des propriétés a été corrigé lors de son utilisation avec la création de documents.
-* Correction d’un problème de modification de plusieurs champs d’un fragment de contenu lors de l’utilisation de MSM.
+* La barre d’emplacement et son texte ont été mieux alignés dans l’interface utilisateur.
