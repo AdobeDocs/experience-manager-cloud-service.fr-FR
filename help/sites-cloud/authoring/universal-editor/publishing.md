@@ -56,7 +56,7 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 La dépublication de contenu fonctionne de la même manière que la publication de contenu. Lorsque vous êtes en tant que créateur de contenu et que vous êtes prêt à supprimer du contenu de la publication, appuyez ou cliquez sur l’icône représentant des points de suspension dans la barre d’outils de l’éditeur universel, puis sur **Dépublier**.
 
-Vous disposez alors des mêmes options de dépublication du contenu que lors de la [ publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
+Vous disposez alors des mêmes options de dépublication du contenu que lors de la [&#x200B; publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
 
 ## Publication et dépublication à partir de la console Sites {#publishing-sites-console}
 
