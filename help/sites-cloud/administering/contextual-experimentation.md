@@ -1,15 +1,14 @@
 ---
 title: Expérimentation contextuelle dans AEM as a Cloud Service
-description: Découvrez comment utiliser le plug-in d’expérimentation pour ajouter des fonctionnalités d’expérimentation à vos sites.
+description: Découvrez comment utiliser le plug-in d’expérimentation pour ajouter des fonctionnalités d’expérimentation à votre site.
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # Vue d’ensemble {#overview}
 
@@ -92,7 +91,7 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 
