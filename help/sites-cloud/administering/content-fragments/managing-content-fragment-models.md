@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 35%
 
 ---
@@ -132,20 +132,7 @@ Lorsque vous sélectionnez un modèle spécifique, ses propriétés s’affichen
 * **Titre**
 * **Balises**
 * **Description**
-* **Modèle d’URL de prévisualisation**
-
-  Les modèles de fragment de contenu permettent aux auteurs de **prévisualiser** leur contenu dans une application frontale externe. Une fois le **service de prévisualisation** configuré, ajoutez l’URL de l’application frontale.
-
-  L’URL de prévisualisation doit suivre le modèle suivant :
-    `https://<preview_url>?param=${expression}`
-
-  Les expressions disponibles sont les suivantes :
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[Modèle d’URL de prévisualisation](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
@@ -235,7 +222,7 @@ Sélectionnez par exemple **Activé** dans la colonne **Statut**. Une fois cette
    >
    >L&#39;option **Créer** ne sera disponible que dans les cas suivants :
    >
-   >* Si l[utilisation des modèles de fragment de contenu a été activée &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* Si l[utilisation des modèles de fragment de contenu a été activée ](/help/sites-cloud/administering/content-fragments/setup.md)
    >* lorsque vous avez sélectionné le dossier dans lequel vous souhaitez créer le modèle.
 
 1. Sélectionnez le **Chemin** de la configuration et spécifiez le **Nom**.
@@ -255,7 +242,7 @@ Si vous saisissez d’abord le **Titre**, le **Nom** est généré à partir de 
 
    >[!NOTE]
    >
-   >Voir [&#x200B; Modèle de fragment de contenu - Propriétés &#x200B;](#model-properties) pour plus d’informations.
+   >Voir [ Modèle de fragment de contenu - Propriétés ](#model-properties) pour plus d’informations.
 
    ![Titre et description](assets/cf-managing-content-fragment-models-create.png)
 

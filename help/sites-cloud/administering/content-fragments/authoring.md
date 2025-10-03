@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
-ht-degree: 6%
+source-wordcount: '2778'
+ht-degree: 7%
 
 ---
 
@@ -44,7 +44,7 @@ Lorsque vous ouvrez l’éditeur de fragment de contenu pour la première fois, 
 * barre d’outils supérieure : pour obtenir des informations clés et des actions
    * lien vers la console de fragments de contenu (icône Accueil)
    * informations sur le modèle et le dossier
-   * liens vers [Aperçu (si le modèle d’URL d’aperçu par défaut est configuré pour le modèle)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * des liens vers [Aperçu](#preview-content-fragment) ; si le Modèle d’URL d’aperçu par défaut est configuré pour le modèle ;
    * [Publication](#publish-content-fragment) et [Dépublication](#unpublish-content-fragment)
    * une option pour afficher tout **Références parentes** (icône de lien)
    * le fragment **[État](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, et les dernières informations enregistrées ;
@@ -267,7 +267,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**&#x200B;dans la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
   >
   >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
@@ -497,14 +497,7 @@ Pour vous permettre de collaborer au sein du produit et dans le contexte, l’on
 
 ## Prévisualiser le fragment {#preview-content-fragment}
 
-L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe.
-
-Pour utiliser cette fonctionnalité, vous devez d’abord :
-
-* Contactez votre équipe informatique pour configurer l’application frontale externe qui effectue le rendu du fragment de contenu en utilisant sa sortie JSON.
-* Lorsque l’application frontale externe est configurée, le **Modèle d’URL d’aperçu par défaut** doit être défini en tant que propriété [ du modèle de fragment de contenu approprié](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
-
-Lorsque l’URL a été définie, le bouton **Aperçu** est actif. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
+L’éditeur de fragment de contenu permet aux auteurs de prévisualiser leurs modifications dans une application frontale externe. Pour activer le bouton **[Aperçu](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** dans la barre d’outils supérieure de l’éditeur, le **Modèle d’URL d’aperçu par défaut** doit être défini. Vous pouvez sélectionner ce bouton pour lancer l’application externe (dans un onglet distinct) afin d’effectuer le rendu du fragment de contenu.
 
 ## Publier votre fragment {#publish-content-fragment}
 
