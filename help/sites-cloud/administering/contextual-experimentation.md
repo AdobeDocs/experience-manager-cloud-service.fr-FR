@@ -91,7 +91,7 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 
