@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1953'
 ht-degree: 13%
 
 ---
@@ -113,6 +113,12 @@ Sélectionnez l’icône représentant votre utilisateur pour accéder aux param
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
+Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur. Ces paramètres s’appliquent à Cloud Manager en général et ses fonctionnalités sont détaillées [dans cette documentation](/help/implementing/cloud-manager/navigation.md).
+
+![ Sélecteur d’environnement ](assets/environment-switcher.png)
+
+Pour l’éditeur universel, [si le service d’aperçu est disponible](/help/sites-cloud/authoring/sites-console/previewing-content.md) vous avez également la possibilité de basculer entre vos environnements de production et d’aperçu sous l’en-tête **Paramètres du produit**.
+
 ### Barre d’outils de l’éditeur universel {#universal-editor-toolbar}
 
 La barre d’outils de l’éditeur universel est toujours présente en haut de l’écran, juste en dessous [en-tête Experience Cloud](#experience-cloud-header). Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
@@ -214,7 +220,7 @@ Sélectionnez l’icône Ouvrir la page pour ouvrir la page que vous êtes en tr
 >
 >Le bouton Ouvrir la page [peut être désactivé](/help/implementing/universal-editor/customizing.md#open-page) et peut donc ne pas s’afficher dans votre éditeur.
 
-#### Publication {#publish}
+#### Publier {#publish}
 
 Sélectionnez le bouton Publier afin de publier les modifications apportées au contenu dynamique pour que vos lecteurs et lectrices puissent les utiliser ou pour les prévisualiser dans un environnement en vue de les réviser.
 

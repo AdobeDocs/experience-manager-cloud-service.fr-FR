@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 31%
+source-wordcount: '592'
+ht-degree: 32%
 
 ---
 
@@ -44,6 +44,10 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 1. Appuyez ou cliquez sur **Publier** pour publier ou **Annuler** pour abandonner.
 
+>[!TIP]
+>
+>Si vous publiez dans votre environnement de prévisualisation, [vous pouvez utiliser l’option dans le menu **Compte** de la barre d’outils de l’en-tête d’Experience Manager](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) pour basculer entre les environnements de prévisualisation et de production.
+
 >[!NOTE]
 >
 >L’option de publication dans la prévisualisation [peut être désactivée](/help/implementing/universal-editor/customizing.md#publish-preview) et peut donc ne pas apparaître dans votre éditeur.
@@ -62,9 +66,9 @@ Vous pouvez également publier [à partir de la console Sites](/help/sites-cloud
 
 Pour savoir comment créer du contenu avec l’éditeur universel, consultez ce document.
 
-* [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les créateurs et les créatrices de contenu de créer du contenu à l’aide de l’éditeur universel.
+* [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les personnes chargées de la création de contenu de le faire à l’aide de l’éditeur universel.
 
-Pour en savoir plus sur les détails techniques de l’éditeur universel, consultez ces documents de développement.
+Pour en savoir plus sur les détails techniques de l’éditeur universel, consultez ces documents destinés au développeur ou à la développeuse.
 
 * [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect d’un contenu dans n’importe quelle implémentation afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
 * [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
