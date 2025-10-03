@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
 source-wordcount: '2920'
-ht-degree: 35%
+ht-degree: 34%
 
 ---
 
@@ -433,7 +433,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
 * le **[Service de publication](/help/headless/deployment/architecture.md)** - pour un accès public complet ;
 
-* le **[Service de prévisualisation](/help/headless/deployment/architecture.md)** - pour prévisualiser le contenu avant sa disponibilité complète
+* le **[Service de prévisualisation](/help/headless/deployment/architecture.md)** - pour [prévisualiser](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) le contenu avant sa disponibilité complète.
 
   >[!CAUTION]
   >
