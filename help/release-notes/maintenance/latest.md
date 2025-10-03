@@ -4,10 +4,10 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 51%
+source-wordcount: '433'
+ht-degree: 50%
 
 ---
 
@@ -31,9 +31,9 @@ L’activation des fonctionnalités de la version 2025.10.0 fournit l’ensembl
 * GRANITE-56026 : améliorez les réponses du code d’état de l’API d’autorisations.
 * GRANITE-61015 : ajout `org.apache.commons.io.channels` package à la liste publique exportée.
 * GRANITE-61167 : le journal Felix a été mis à jour vers la dernière spécification OSGI.
-* GRANITE-61167 : mise à jour des dépendances Felix.
+* GRANITE-61167 : mettez à jour un certain nombre de dépendances Apache Felix.
 * GRANITE-61169 : améliorez la vérification des chaînes protégées.
-* GRANITE-61622 : mise à jour des dépendances Sling.
+* GRANITE-61622 : mettez à jour un certain nombre de dépendances Apache Sling.
 * GRANITE-61663 : ajoutez des `com.adobe.granite.repository.indexdefs-1.0.2` au démarrage rapide.
 * GRANITE-61811 : ajoutez des `com.adobe.granite.repository-2.0.0` au démarrage rapide.
 * SITES-32014 : écoutez les événements externes pour mettre à jour les enregistrements de service.
