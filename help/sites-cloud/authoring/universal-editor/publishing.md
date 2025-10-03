@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 32%
+source-wordcount: '563'
+ht-degree: 33%
 
 ---
 
@@ -44,10 +44,6 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 1. Appuyez ou cliquez sur **Publier** pour publier ou **Annuler** pour abandonner.
 
->[!TIP]
->
->Si vous publiez dans votre environnement de prévisualisation, [vous pouvez utiliser l’option dans le menu **Compte** de la barre d’outils de l’en-tête d’Experience Manager](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) pour basculer entre les environnements de prévisualisation et de production.
-
 >[!NOTE]
 >
 >L’option de publication dans la prévisualisation [peut être désactivée](/help/implementing/universal-editor/customizing.md#publish-preview) et peut donc ne pas apparaître dans votre éditeur.
@@ -56,7 +52,7 @@ Lorsque vous, en tant qu’auteur de contenu, êtes prêt à publier votre conte
 
 La dépublication de contenu fonctionne de la même manière que la publication de contenu. Lorsque vous êtes en tant que créateur de contenu et que vous êtes prêt à supprimer du contenu de la publication, appuyez ou cliquez sur l’icône représentant des points de suspension dans la barre d’outils de l’éditeur universel, puis sur **Dépublier**.
 
-Vous disposez alors des mêmes options de dépublication du contenu que lors de la [&#x200B; publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
+Vous disposez alors des mêmes options de dépublication du contenu que lors de la [ publication du contenu.](#publishing-content) d’inclure la dépublication à partir d’une instance d’aperçu si disponible et les éléments à inclure dans la dépublication.
 
 ## Publication et dépublication à partir de la console Sites {#publishing-sites-console}
 

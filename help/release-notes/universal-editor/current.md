@@ -4,10 +4,10 @@ description: Il s’agit des notes de mise à jour de la version 2025.10.02 de 
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 58%
+source-wordcount: '188'
+ht-degree: 55%
 
 ---
 
@@ -22,7 +22,7 @@ Voici les notes de mise à jour de la version du 2 octobre 2025 de l’éditeur 
 
 ## Nouveautés {#what-is-new}
 
-* [Une option a été ajoutée](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) au menu **Compte** dans la barre d’outils de l’en-tête d’Experience Manager pour basculer entre les environnements de prévisualisation et de production.
+* [Une option a été ajoutée](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) au menu **Compte** dans la barre d’outils de l’en-tête d’Experience Manager pour basculer entre la version d’exploitation actuelle de l’éditeur universel et la version d’aperçu à venir.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 

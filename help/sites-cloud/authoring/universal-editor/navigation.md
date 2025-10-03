@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 13%
 
 ---
@@ -42,7 +42,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 ### Accès à dans AEM as a Cloud Service {#accessing-aem}
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service.
-1. Utilisez la console [**Sites** &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
+1. Utilisez la console [**Sites** ](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
 1. Modifiez la page.
 1. L’éditeur universel s’ouvre pour modifier la page sélectionnée.
 
@@ -52,7 +52,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 
 ### Accès direct {#accessing-directly}
 
-1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [&#x200B; l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
+1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [ l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
 
 1. Une fois connecté, saisissez l’URL de la page à modifier dans la [barre d’emplacement](#location-bar) afin de commencer à modifier du contenu tel que du contenu texte ou multimédia.
 
@@ -105,7 +105,7 @@ Cette icône contient un badge indiquant le nombre de [notifications](/help/impl
 
 Appuyez ou cliquez sur le sélecteur d’applications pour accéder rapidement à d’autres solutions Experience Cloud.
 
-![&#x200B; Sélecteur d’applications &#x200B;](assets/solutions.png)
+![ Sélecteur d’applications ](assets/solutions.png)
 
 #### Compte {#user-properties}
 
@@ -115,9 +115,9 @@ Sélectionnez l’icône représentant votre utilisateur pour accéder aux param
 
 Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur. Ces paramètres s’appliquent à Cloud Manager en général et ses fonctionnalités sont détaillées [dans cette documentation](/help/implementing/cloud-manager/navigation.md).
 
-![&#x200B; Sélecteur d’environnement &#x200B;](assets/environment-switcher.png)
+![ Sélecteur d’environnement ](assets/environment-switcher.png)
 
-Pour l’éditeur universel, [si le service d’aperçu est disponible](/help/sites-cloud/authoring/sites-console/previewing-content.md) vous avez également la possibilité de basculer entre vos environnements de production et d’aperçu sous l’en-tête **Paramètres du produit**.
+Pour l’éditeur universel, sous l’en-tête **Paramètres du produit**, il existe une option pour basculer entre la version de production actuelle de l’éditeur universel et la version d’aperçu à venir.
 
 ### Barre d’outils de l’éditeur universel {#universal-editor-toolbar}
 
@@ -125,7 +125,7 @@ La barre d’outils de l’éditeur universel est toujours présente en haut de 
 
 Selon la configuration de votre programme, il peut également présenter des [fonctionnalités supplémentaires qui ont été activées en tant qu’extensions par votre administrateur.](#additional-toolbar-buttons)
 
-![&#x200B; Barre d’outils de l’éditeur universel &#x200B;](assets/universal-editor-toolbar.png)
+![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
 
 #### Le Bouton Accueil {#home-button}
 
@@ -161,8 +161,8 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur. Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) pour plus d’informations.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 >[!TIP]
 >
@@ -349,7 +349,7 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 
 Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container)
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 >[!TIP]
