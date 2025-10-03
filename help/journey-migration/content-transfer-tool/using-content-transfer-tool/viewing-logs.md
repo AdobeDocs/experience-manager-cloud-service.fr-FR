@@ -4,7 +4,7 @@ description: Affichage des journaux d’un ensemble de migration dans l’outil 
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 91f9bcafc087b6f9329d7a47509cc659714705ff
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 83%

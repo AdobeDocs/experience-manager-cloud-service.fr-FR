@@ -3,14 +3,14 @@ title: Expérimentation contextuelle dans AEM as a Cloud Service
 description: Découvrez comment utiliser le plug-in d’expérimentation pour ajouter des fonctionnalités d’expérimentation à votre site.
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# Vue d’ensemble {#overview}
+# Expérimentation contextuelle dans AEM as a Cloud Service {#contextual-experimentation}
 
 >[!NOTE]
 >Actuellement, la fonctionnalité d’expérimentation contextuelle n’est disponible que via le programme bêta. Contactez l’assistance Adobe ou votre gestionnaire de compte pour accéder au programme bêta.
@@ -55,7 +55,7 @@ Le [service de télémétrie opérationnelle](/help/sites-cloud/administering/op
 
 ### Identifiant de l’expérience {#experiment-identifier}
 
-Avant de commencer, chaque expérience doit avoir son propre identifiant à des fins de suivi et d’analyse. Un bon point de départ consiste à trouver un identifiant correct et unique pour votre expérience, qui sera l’« ID d’expérience ». Les expériences sont souvent numérotées linéairement ou corrélées à leur ID de problème dans un système de suivi de problèmes ou de gestion. Les identifiants d’expérience utilisent souvent un préfixe pour le projet, par exemple : OPT-0134, EXP0004 ou CCX0076.
+Avant de commencer, chaque expérience doit avoir son propre identifiant à des fins de suivi et d’analyse. Un bon point de départ consiste à trouver un identifiant correct et unique pour votre expérience, qui sera l’« ID d’expérience ». Les expériences sont souvent numérotées linéairement ou corrélées à leur ID de problème dans un système de suivi de problèmes ou de gestion. Les identifiants d’expérience utilisent souvent un préfixe pour le projet, par exemple : `OPT-0134`, `EXP0004` ou `CCX0076`.
 
 ### Créer votre page Challenger {#create-challenger-page}
 
@@ -91,7 +91,7 @@ Voir l’exemple ci-dessous :
 
 Pour chaque expérience, le trafic est réparti entre toutes les variantes (contrôle et challengers) et est automatiquement défini sur une distribution égale. Ainsi, si vous avez un challenger, il y aura automatiquement une répartition égale de 50/50 entre le contrôle et le challenger. Si vous avez deux concurrents, vous verrez automatiquement un tiers du trafic alloué au contrôle et chaque concurrent et ainsi de suite.
 
-Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [&#x200B; page suivante &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+Vous pouvez remplacer la répartition du trafic en configurant les métadonnées. Pour plus d’informations sur la personnalisation des métadonnées utilisées dans vos expériences, consultez la [ page suivante ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Prévisualiser et préparer vos variantes d’expérience {#preview-stage-experiment}
 
