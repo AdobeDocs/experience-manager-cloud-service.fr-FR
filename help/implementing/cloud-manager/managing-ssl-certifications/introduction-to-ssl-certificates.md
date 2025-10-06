@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ Les commandes suivantes `openssl` peuvent être utilisées pour convertir des ce
 
 ## Limitation du nombre de certificats SSL installés {#limitations}
 
-À tout moment, Cloud Manager prend en charge jusqu’à 50 certificats installés. Ces certificats peuvent être associés à un ou plusieurs environnements dans votre programme et inclure également des certificats expirés.
+À tout moment, Cloud Manager prend en charge jusqu’à 70 certificats installés. Ces certificats peuvent être associés à un ou plusieurs environnements dans votre programme et inclure également des certificats expirés.
 
 Si vous avez atteint la limite, vérifiez vos certificats et envisagez de supprimer tous les certificats expirés. Vous pouvez également regrouper plusieurs domaines dans le même certificat, car un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN).
 
