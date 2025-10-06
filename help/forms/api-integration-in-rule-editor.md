@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: intégration de l’API dans l’éditeur de règles, appeler les améliorations du service
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
 # Intégration de l’API dans l’éditeur de règles
 
-<span>L’intégration de l’API dans l’éditeur de règles se trouve dans le programme des utilisateurs précoces. Vous pouvez écrire à `aem-forms-ea@adobe.com` à partir de votre ID d’e-mail officiel pour rejoindre le programme des utilisateurs et utilisatrices précoces et demander l’accès à la fonctionnalité.</span>
+<span>L’intégration de l’API dans l’éditeur de règles se trouve dans le programme des utilisateurs précoces. Vous pouvez écrire à `aem-forms-ea@adobe.com` depuis votre adresse e-mail officielle pour rejoindre le programme d’accès anticipé et demander l’accès à la fonctionnalité.</span>
+
+>[!NOTE]
+>
+> L’éditeur visuel de règles prend en charge l’intégration d’API dans le Forms adaptatif en fonction des composants principaux et de Edge Delivery Services Forms.
 
 L’éditeur visuel de règles d’un Forms adaptatif prend en charge l’intégration directe d’API sans créer de modèle de données de formulaire. Vous pouvez vous connecter à un point d’entrée de l’API en saisissant l’URL de l’API (au format JSON) ou en important la configuration via une commande cURL. Une fois intégrée, l’action **Invoke Service** peut être utilisée pour appeler l’API.
 
