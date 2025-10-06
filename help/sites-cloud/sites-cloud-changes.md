@@ -44,7 +44,7 @@ Dans AEM Cloud Service, les opérations qui bloquaient traditionnellement l’
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord [ Opérations en arrière-plan ](/help/operations/asynchronous-jobs.md).
+Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord [&#x200B; Opérations en arrière-plan &#x200B;](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >
