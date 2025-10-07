@@ -103,7 +103,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
+![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET
