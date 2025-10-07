@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les outils de développement AEM pour E
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,10 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
-1. Ouvrez le site web [AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Ouvrez le [site web AEM Developer Tools](https://eclipse.adobe.com/).
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copiez le **lien d’installation**.
 
@@ -135,17 +138,17 @@ Vous pouvez utiliser la fonction **Nouveau projet** pour créer la structure qui
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
    1. Cliquez avec le bouton droit sur le dossier `apps` et choisissez **Afficher dans** > **Explorateur système**.
-   1. Supprimez les dossiers `apps` et `etc` que vous devriez voir maintenant et placez ici les dossiers `apps` et `etc` de votre package de contenu.
+   1. Supprimez les dossiers `apps` et `etc` que vous devriez voir maintenant et placez ici les dossiers `apps` et `etc` de votre module de contenu.
    1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.apps` et sélectionnez **Actualiser**.
 
 1. Faites ensuite de même pour `PROJECT.ui.content` et remplacez son dossier de contenu par celui de vos packages :
 
    1. Dans le panneau Project Explorer (Explorateur de projets), développez `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Cliquez avec le bouton droit sur le dossier de contenu le plus profond et sélectionnez **Afficher dans** > **Explorateur système**.
-   1. Supprimez le dossier de contenu que vous devriez voir maintenant et placez ici le dossier de contenu de votre package de contenu.
+   1. Supprimez le dossier de contenu que vous devriez voir maintenant et placez ici le dossier de contenu de votre module de contenu.
    1. Dans Eclipse, cliquez avec le bouton droit sur le projet `PROJECT.ui.content` et sélectionnez **Actualiser**.
 
-1. Vous devez maintenant mettre à jour les fichiers `filter.xml` de ces deux projets pour qu’ils correspondent au contenu de votre package de contenu. Pour cela, ouvrez le fichier `META-INF/vault/filter.xml` de votre package de contenu dans un éditeur de texte/code distinct.
+1. Vous devez maintenant mettre à jour les fichiers `filter.xml` de ces deux projets pour qu’ils correspondent au contenu de votre module de contenu. Pour cela, ouvrez le fichier `META-INF/vault/filter.xml` de votre module de contenu dans un éditeur de texte/code distinct.
 
    * Voici un exemple de l’aspect que peut avoir votre fichier `filter.xml` :
 
