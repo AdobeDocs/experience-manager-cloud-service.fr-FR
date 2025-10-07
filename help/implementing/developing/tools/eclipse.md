@@ -65,7 +65,7 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 
 ## La perspective d’AEM {#the-aem-perspective}
 
-Dans Eclipse, une perspective détermine les actions et les vues disponibles dans une fenêtre et permet une interaction axée sur les tâches avec les ressources. Pour plus d’informations sur les perspectives, consultez la [ documentation d’Eclipse ](https://help.eclipse.org/latest/index.jsp).
+Dans Eclipse, une perspective détermine les actions et les vues disponibles dans une fenêtre et permet une interaction axée sur les tâches avec les ressources. Pour plus d’informations sur les perspectives, consultez la [&#x200B; documentation d’Eclipse &#x200B;](https://help.eclipse.org/latest/index.jsp).
 
 Les _outils de développement Experience Manager pour Eclipse_ offrent une perspective AEM qui vous permet de contrôler intégralement vos projets et instances AEM. Pour ouvrir la perspective AEM :
 
