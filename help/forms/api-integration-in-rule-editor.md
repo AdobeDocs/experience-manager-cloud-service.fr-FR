@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: intégration de l’API dans l’éditeur de règles, appeler les améliorations du service
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '1027'
+ht-degree: 3%
 
 ---
 
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> L’éditeur visuel de règles prend en charge l’intégration d’API dans le Forms adaptatif en fonction des composants principaux et de Edge Delivery Services Forms.
+> L’éditeur visuel de règles prend en charge l’intégration d’API dans le Forms adaptatif en fonction des composants principaux et du Forms [Edge Delivery Services créé dans l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 L’éditeur visuel de règles d’un Forms adaptatif prend en charge l’intégration directe d’API sans créer de modèle de données de formulaire. Vous pouvez vous connecter à un point d’entrée de l’API en saisissant l’URL de l’API (au format JSON) ou en important la configuration via une commande cURL. Une fois intégrée, l’action **Invoke Service** peut être utilisée pour appeler l’API.
 
 Les champs de formulaire peuvent être mappés directement aux paramètres d’entrée définis dans la configuration de l’API. De même, les paramètres de sortie peuvent être mappés à des champs de formulaire à l’aide de l’option **payload d’événement** pour la réponse d’API correspondante.
 
 En outre, l’éditeur visuel de règles vous permet de définir des gestionnaires **succès** et **échec** lors de l’appel d’un service. Les gestionnaires de succès spécifient les actions à exécuter après un appel API réussi, tandis que les gestionnaires d’échec définissent la manière dont le formulaire doit répondre lorsqu’une erreur se produit.
-
->[!NOTE]
->
-> L’intégration de l’API dans l’éditeur de règles s’applique également à [Edge Delivery Services Forms créé dans l’éditeur universel](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparaison : méthodes d’intégration d’API
 
@@ -107,7 +103,7 @@ Vous pouvez intégrer une API sans créer de modèle de données de formulaire e
 
 Un service d’API nommé **getcontendname** est configuré sous **Configuration de l’intégration de l’API** dans l’éditeur de règles :
 
-![&#x200B; Configuration du point d’entrée REST de l’API &#x200B;](/help/forms/assets/api-restendpoint.png)
+![ Configuration du point d’entrée REST de l’API ](/help/forms/assets/api-restendpoint.png)
 
 * **URL du point d’entrée de l’API** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 * **Méthode HTTP** → GET
