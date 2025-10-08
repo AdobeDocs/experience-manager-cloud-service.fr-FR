@@ -122,7 +122,7 @@ Si vous sélectionnez un champ associé à un fragment de contenu, le fragment d
 
 Les modifications sont automatiquement enregistrées une fois que le focus quitte le champ modifié dans le panneau des propriétés.
 
-Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
+Si vous souhaitez plutôt modifier votre fragment de contenu dans l’[éditeur de fragment de contenu](/help/sites-cloud/administering/content-fragments/authoring.md), appuyez ou cliquez sur le bouton [**Ouvrir dans l’éditeur de fragment de contenu** &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) dans le panneau des propriétés.
 
 >[!TIP]
 >
@@ -132,7 +132,7 @@ Selon les besoins de votre workflow, vous pouvez modifier le fragment de contenu
 
 >[!NOTE]
 >
->L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -200,8 +200,8 @@ Les composants sont réorganisés dans l’arborescence de contenu et dans l’�
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur.
 
-![ Icône Annuler ](assets/undo.png)
-![ Icône Rétablir ](assets/redo.png)
+![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
+![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
 
 * Vous pouvez annuler et rétablir des modifications effectuées dans le contexte, des modifications effectuées via le panneau Propriétés, ainsi qu’ajouter, dupliquer, déplacer et supprimer des blocs.
 * Les options Annuler et Rétablir sont limitées à la session de navigateur en cours.
@@ -212,9 +212,9 @@ Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dern
 
 ### Copier/coller {#copy-paste}
 
-Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs](/help/implementing/universal-editor/field-types.md#container) sur le même onglet du navigateur. Cela n’est possible que si aucun filtre n’est défini pour le conteneur [ cible ](/help/implementing/universal-editor/filtering.md).
+Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs](/help/implementing/universal-editor/field-types.md#container) sur le même onglet du navigateur. Cela n’est possible que si aucun filtre n’est défini pour le conteneur [&#x200B; cible &#x200B;](/help/implementing/universal-editor/filtering.md).
 
-![ Icône Copier ](assets/copy.png)
+![&#x200B; Icône Copier &#x200B;](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 1. Sélectionnez un composant dans l’éditeur ou dans l’arborescence de contenu.
@@ -324,7 +324,7 @@ Pour plus d’informations sur la manière d’activer cette extension, [consult
 
 L’extension **AEM Workflows** vous permet de [démarrer un workflow](/help/sites-cloud/authoring/workflows/overview.md) sur la page qui se trouve actuellement dans l’éditeur.
 
-![ Icône Workflows ](assets/workflows-icon.png)
+![&#x200B; Icône Workflows &#x200B;](assets/workflows-icon.png)
 
 Appuyez ou cliquez sur l’icône **Workflows** dans la barre d’outils de l’éditeur universel pour ouvrir la fenêtre modale **Démarrer un workflow**. La fenêtre répertorie le contenu possible auquel vous pouvez appliquer un workflow.
 
