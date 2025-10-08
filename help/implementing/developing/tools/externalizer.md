@@ -4,10 +4,10 @@ description: Externalizer est un service OSGi qui vous permet de transformer, pa
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 77%
+source-wordcount: '647'
+ht-degree: 71%
 
 ---
 
@@ -42,7 +42,11 @@ Le service Externalizer, prêt à l’emploi, mappe un petit nombre d’identifi
 >
 >Le déploiement d’un fichier `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` personnalisé vers AEM as a Cloud Service qui omet l’un de ces mappages de domaine prêts à l’emploi peut entraîner un comportement imprévisible de l’application.
 
-Pour remplacer les valeurs `preview` et `publish`, utilisez les variables d’environnement Cloud Manager comme décrit dans l’article [Configurer OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et définissez les variables prédéfinies `AEM_CDN_DOMAIN_PUBLISH` et `AEM_CDN_DOMAIN_PREVIEW`.
+Ne définissez pas et ne remplacez pas les variables d’environnement `EXTERNALIZER` (par exemple, `AEM_EXTERNALIZER_AUTHOR`) dans Cloud Manager. Au lieu de cela, si vous devez remplacer les valeurs de domaine `publish` ou `preview`, définissez et utilisez les variables d’environnement `AEM_CDN_DOMAIN_PUBLISH` et `AEM_CDN_DOMAIN_PREVIEW`. Ces variables sont automatiquement affectées aux champs correspondants dans la configuration de l’externaliseur au démarrage.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
