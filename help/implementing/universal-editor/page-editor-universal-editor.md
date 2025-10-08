@@ -4,9 +4,9 @@ description: L’éditeur de page continue d’être pris en charge par Adobe, m
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ L’écart de fonctionnalités entre les deux éditeurs se réduisant constammen
 | [Générer des variations](/help/generative-ai/generate-variations.md) | [!BADGE Non disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | [Disponible en tant qu’extension](/help/implementing/universal-editor/extending.md) |
 | Insérer un nouveau bloc | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Réorganiser le bloc | [!BADGE Disponible]{type=Positive} | Possible avec un glisser-déposer contextuel, mais pas dans le panneau latéral « arborescence ». | [!BADGE Disponible]{type=Positive} | Possible par glisser-déposer dans le panneau latéral « arborescence », mais pas encore en contexte (prévu). |
-| Couper/Copier-coller le bloc | [!BADGE Disponible]{type=Positive} |  | [!BADGE Non disponible]{type=Negative} | Prévu |
+| Couper/Copier-coller le bloc | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Appliquer des styles | [!BADGE Disponible]{type=Positive} | Des styles peuvent être appliqués aux composants à l’aide [du système de style](/help/sites-cloud/authoring/page-editor/style-system.md). | [!BADGE Disponible]{type=Positive} | Des styles peuvent être appliqués à l’aide des propriétés de composant (ou de fragment de contenu) classiques. Le même sélecteur de style n’est pas disponible dans l’éditeur universel, mais il est possible d’obtenir une expérience d’utilisation très similaire à l’aide d’un widget à sélections multiples. |
 | Appliquer une mise en page | [!BADGE Disponible]{type=Positive} | Les sites doit implémenter la [grille réactive AEM](/help/implementing/developing/introduction/responsive-design.md) pour permettre aux créateurs et créatrices de redimensionner les composants sur trois points d’arrêt prédéfinis. | [!BADGE Disponible]{type=Positive} | Des mises en page peuvent être appliquées à l’aide des propriétés de composant (ou de fragment de contenu) classiques. La grille réactive n’est toutefois pas prise en charge. |
 | Annuler-rétablir | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |

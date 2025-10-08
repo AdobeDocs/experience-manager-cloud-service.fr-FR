@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 12%
@@ -212,7 +212,7 @@ Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dern
 
 ### Copier/coller {#copy-paste}
 
-Vous pouvez copier et coller des composants qui se trouvent dans des conteneurs [.](/help/implementing/universal-editor/field-types.md#container) Cela n’est possible que dans la même page et si le conteneur [target permet de coller le composant.](/help/implementing/universal-editor/filtering.md)
+Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs](/help/implementing/universal-editor/field-types.md#container) sur le même onglet du navigateur. Cela n’est possible que si aucun filtre n’est défini pour le conteneur [ cible ](/help/implementing/universal-editor/filtering.md).
 
 ![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
