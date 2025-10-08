@@ -5,10 +5,10 @@ keywords: Comment connecter une instance Marketo à un formulaire ? , Connecter 
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 22%
+source-wordcount: '1048'
+ht-degree: 21%
 
 ---
 
@@ -18,15 +18,9 @@ ht-degree: 22%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Après avoir créé la configuration de service cloud pour intégrer Marketo Engage à AEM Forms, vous pouvez configurer un formulaire adaptatif à intégrer à [Adobe Marketo Engage](https://experienceleague.adobe.com/fr/docs/marketo/using/home).
+Après avoir créé la configuration de service cloud pour intégrer Marketo Engage à AEM Forms, vous pouvez configurer un formulaire adaptatif à intégrer à [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 Vous pouvez connecter Marketo Engage à un formulaire adaptatif à l’aide de l’assistant de formulaire, ce qui simplifie le processus de configuration en vous guidant à travers chaque étape. Cela inclut la sélection de modèles, de styles et de champs de données, ainsi que la configuration du mappage de données pour vous assurer que votre formulaire est prêt à communiquer avec Marketo Engage une fois créé. À l’aide de l’assistant de formulaire, vous pouvez également configurer le formulaire adaptatif pour envoyer directement les données à Adobe Marketo Engage lors de l’envoi.
-
-## Remarque concernant la configuration de la source de données Marketo Engage pour les formulaires
-
-Lors de la configuration de la source de données Marketo Engage pour les formulaires, tenez compte des points suivants :
-
-* Il n’est pas possible de connecter des formulaires Edge Delivery Services à Marketo Engage.
 
 ## Condition préalable requise pour connecter Marketo Engage aux formulaires
 
@@ -38,7 +32,7 @@ Prérequis pour connecter Marketo Engage aux formulaires :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
-<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants UE/Foundation, reportez-vous à l’article </span>.
+<span> Cette vidéo s’applique uniquement aux composants principaux. Pour les composants éditeur universel/de base, reportez-vous à l’article </span>.
 
 >[!BEGINTABS]
 
@@ -180,7 +174,7 @@ Le formulaire adaptatif est maintenant configuré pour se connecter à l’insta
 
 ## Étape suivante
 
-Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [&#128279;](https://experienceleague.adobe.com/fr/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
+Vous pouvez également connecter un formulaire adaptatif à la bibliothèque Munchkin [](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) pour suivre le nombre de visites, de clics et d’envois de formulaire.
 
 ## Articles connexes
 

@@ -5,9 +5,9 @@ keywords: Utilisation de la source de données Marketo Engage dans les formulai
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: ht
-source-wordcount: '797'
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -21,12 +21,6 @@ ht-degree: 100%
 Après avoir créé la configuration du service cloud pour intégrer Marketo Engage à la configuration AEM Forms existante, vous pouvez configurer la source de données pour les formulaires.
 
 La configuration de l’intégration de données permet aux utilisateurs et utilisatrices de se connecter à divers schémas ou sources de données. L’intégration à la source de données Marketo Engage et son utilisation dans différents formulaires facilite les opérations sur ces données. Pour explorer les sources de données prêtes à l’emploi prises en charge pour un formulaire adaptatif, reportez-vous à l’article [Configurer les sources de données](/help/forms/configure-data-sources.md).
-
-## Remarque concernant la configuration de la source de données Marketo Engage pour les formulaires
-
-Lors de la configuration de la source de données Marketo Engage pour les formulaires, tenez compte des points suivants :
-
-* Il n’est pas possible de connecter des formulaires Edge Delivery Services à Marketo Engage.
 
 ## Condition préalable pour utiliser la source de données Marketo Engage pour les formulaires
 
