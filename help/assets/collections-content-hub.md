@@ -3,7 +3,7 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -199,5 +199,5 @@ Vous pouvez marquer les collections comme Favoris dans Content Hub, ce qui facil
 
 >[!NOTE]
 >
->[Épingler ou désépingler la collection](#pin-unpin-collection) et [Marquer les collections comme favoris](#favorite-collection) sont des fonctionnalités à disponibilité limitée. Vous pouvez créer et envoyer un dossier d’assistance clientèle Adobe pour l’activer pour votre déploiement.
+>[Épingler ou désépingler la collection](#pin-unpin-collection) et [Marquer les collections comme favoris](#favorite-collection) sont des fonctionnalités à disponibilité limitée. Vous pouvez [créer et envoyer](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) un dossier de support Adobe pour l’activer pour votre déploiement.
 
