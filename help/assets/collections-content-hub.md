@@ -3,9 +3,9 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -167,7 +167,7 @@ Seuls les administrateurs et les créateurs peuvent supprimer une collection. Po
 
 ## Épingler ou désépingler une collection {#pin-unpin-collection}
 
-Les administrateurs et administratrices de Content Hub peuvent épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section épinglée dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main. Pour l’accès rapide, vous pouvez épingler ou désépingler une collection en procédant comme suit :
+Les administrateurs et administratrices de Content Hub peuvent épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section épinglée dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main. Pour un accès rapide, vous pouvez épingler ou désépingler une collection en procédant comme suit :
 
 1. Parcourez les collections que vous souhaitez épingler ou désépingler.
 
@@ -187,13 +187,13 @@ Les administrateurs et administratrices de Content Hub peuvent épingler des col
 
 Vous pouvez marquer les collections comme Favoris dans Content Hub, ce qui facilite leur organisation et leur récupération. Une fois ajoutées, vos collections favorites sont facilement disponibles dans l’onglet Favoris de la page d’accueil de Content Hub. De plus, vous pouvez rechercher des ressources dans les collections favorites. Pour marquer les collections en tant que favoris, procédez comme suit :
 
-1. Parcourez les collections que vous souhaitez épingler ou désépingler.
+1. Parcourez les collections que vous souhaitez marquer comme favorites.
 
 1. Cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Ajouter aux favoris]** pour marquer la collection comme favorite.
 
    ![Marquer les collections comme favorites](assets/mark-favorite-collection.png)
 
-   Les collections marquées comme Favoris apparaissent désormais sous l’onglet **[!UICONTROL Mes favoris]**. Vous pouvez également supprimer les collections de **[!UICONTROL Mes favoris]**. Pour ce faire, cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Supprimer des favoris]**.
+   Les collections marquées comme Favoris s’affichent désormais sous l’onglet **[!UICONTROL Mes favoris]**. Vous pouvez également supprimer les collections de **[!UICONTROL Mes favoris]**. Pour ce faire, cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Supprimer des favoris]**.
 
    ![Supprimer la collection des favoris](assets/remove-favorite-collection.png)
 
