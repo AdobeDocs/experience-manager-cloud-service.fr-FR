@@ -3,10 +3,10 @@ title: Gestion des collections dans Content Hub
 description: Découvrez comment gérer les collections dans Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,10 +25,12 @@ Une collection fait référence à un ensemble de ressources pouvant être parta
 * **Télécharger** : téléchargez les ressources.
 * **Supprimer** : permet de supprimer des ressources spécifiques d’une collection.
 * **Supprimer** : permet de supprimer l’ensemble de la collection.
+* **Épingler/Désépingler** : épingler ou désépingler une collection.
+* **Favori** : marquer la collection comme favori.
 
 Il permet aux utilisateurs et utilisatrices d’accéder facilement aux différentes ressources disponibles dans [!DNL Content Hub] et de les gérer.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 [Les utilisateurs de Content Hub](deploy-content-hub.md#onboard-content-hub-users) peuvent effectuer les actions mentionnées dans cet article.
 
@@ -40,7 +42,7 @@ Vous pouvez choisir de [créer une nouvelle collection](#create-new-collection) 
 
 Pour contrôler l’accès lors de la création de collections, procédez comme suit :
 
-1. Accédez à **[!DNL Collections]** onglet et cliquez sur **[!UICONTROL Créer une collection]**. La fenêtre Nouvelle collection s’affiche.
+1. Accédez à **[!DNL Collections]** onglet et cliquez sur **[!UICONTROL Créer une collection]**. Une nouvelle fenêtre Collection s’affiche.
 
 1. Ajoutez **[!UICONTROL Titre]** et **[!UICONTROL Description]** pour la collection.
 
@@ -163,5 +165,39 @@ Les ressources sélectionnées ont été supprimées de la collection.
 
 Seuls les administrateurs et les créateurs peuvent supprimer une collection. Pour supprimer une collection, accédez à l’onglet **[!UICONTROL Collections]** et cliquez sur la collection à supprimer. Cliquez sur l’icône ![icône de suppression](assets/delete-icon.svg) pour supprimer la collection.
 
+## Épingler ou désépingler une collection {#pin-unpin-collection}
 
+Les administrateurs et administratrices de Content Hub peuvent épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section épinglée dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main. Pour l’accès rapide, vous pouvez épingler ou désépingler une collection en procédant comme suit :
+
+1. Parcourez les collections que vous souhaitez épingler ou désépingler.
+
+1. Cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Épingler pour accéder rapidement]**. Une boîte de confirmation s’affiche.
+
+   ![collection d’épingles](assets/pin-collection.png)
+
+1. Cliquez sur **[!UICONTROL Épingler]** pour confirmer. Le message d’avertissement s’affiche lorsque vous épinglez une collection privée.
+
+   ![Confirmer la collecte des épingles](assets/confirm-pin-collection.png)
+
+   Les collections épinglées s’affichent en haut pour un accès rapide. Pour désépingler la collection, vous pouvez également cliquer sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionner **[!UICONTROL Désépingler]**.
+
+   ![Afficher les collections épinglées](assets/pinned-collections.png)
+
+## Marquer les collections comme favorites {#favorite-collection}
+
+Vous pouvez marquer les collections comme Favoris dans Content Hub, ce qui facilite leur organisation et leur récupération. Une fois ajoutées, vos collections favorites sont facilement disponibles dans l’onglet Favoris de la page d’accueil de Content Hub. De plus, vous pouvez rechercher des ressources dans les collections favorites. Pour marquer les collections en tant que favoris, procédez comme suit :
+
+1. Parcourez les collections que vous souhaitez épingler ou désépingler.
+
+1. Cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Ajouter aux favoris]** pour marquer la collection comme favorite.
+
+   ![Marquer les collections comme favorites](assets/mark-favorite-collection.png)
+
+   Les collections marquées comme Favoris apparaissent désormais sous l’onglet **[!UICONTROL Mes favoris]**. Vous pouvez également supprimer les collections de **[!UICONTROL Mes favoris]**. Pour ce faire, cliquez sur **[!UICONTROL Autres actions]** ![Icône Autres actions](assets/do-not-localize/more-actions.png) et sélectionnez **[!UICONTROL Supprimer des favoris]**.
+
+   ![Supprimer la collection des favoris](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Épingler ou désépingler la collection](#pin-unpin-collection) et [Marquer les collections comme favoris](#favorite-collection) sont des fonctionnalités à disponibilité limitée. Vous pouvez créer et envoyer un dossier d’assistance clientèle Adobe pour l’activer pour votre déploiement.
 
