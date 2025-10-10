@@ -4,10 +4,10 @@ description: L’intégration native d’AEM Assets à Adobe Express vous permet
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 10%
+source-wordcount: '777'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Assets s’intègre de manière native à Adobe Express, ce qui vous perme
 
 * Réduction du temps et des efforts nécessaires à la création de nouvelles ressources ou de nouvelles versions de ressources existantes.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Autorisations d&#39;accès à Adobe Express et à au moins un environnement dans AEM Assets. L’environnement peut être n’importe lequel des référentiels d’Assets as a Cloud Service ou d’Assets Essentials.
 
@@ -33,7 +33,7 @@ Pour commencer à utiliser AEM Assets dans l’éditeur Adobe Express, procédez
 
 3. Cliquez sur **[!UICONTROL Assets]** disponible dans le volet de navigation de gauche. Adobe Express affiche la liste des référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine.
 
-4. Parcourez ou recherchez des ressources dans votre référentiel à faire glisser et à déposer sur la zone de travail. Vous pouvez filtrer les ressources à l’aide de différents filtres disponibles, tels que le type de fichier, le type MIME et les dimensions.
+4. Recherchez ou recherchez des ressources dans votre référentiel, puis faites-les glisser et déposez-les sur la zone de travail. Vous pouvez également cliquer sur les ressources pour les placer sur la zone de travail. Vous pouvez également filtrer les ressources selon différents critères, tels que le type de fichier, le type MIME et les dimensions.
 
    >[!NOTE]
    >
@@ -41,6 +41,21 @@ Pour commencer à utiliser AEM Assets dans l’éditeur Adobe Express, procédez
 
    ![Inclure des ressources à partir du module complémentaire Assets](assets/adobe-express-native-integration.png)
 
+### Remplacer l’image à l’aide du chargement AEM {#replace-image-using-aem-upload}
+
+De plus, vous pouvez remplacer les images ajoutées à l’aide de **[!UICONTROL AEM Upload]**. Pour cela, procédez comme suit :
+
+1. Parcourez ou recherchez des ressources et effectuez un glisser-déposer sur la zone de travail.
+
+1. Sélectionnez l’image à remplacer. Cliquez sur **[!UICONTROL Remplacer]** et sélectionnez **[!UICONTROL AEM Assets]** parmi diverses autres options.
+
+   ![AEM Replace](assets/aem-replace.png)
+
+1. Le panneau **[!UICONTROL Chargement AEM]** s’ouvre dans le volet de navigation de gauche. Adobe Express affiche la liste des référentiels auxquels vous avez accès, ainsi que la liste des ressources et des dossiers disponibles au niveau racine. Sélectionnez une ressource à partir de là pour prévisualiser le remplacement sur la zone de travail, puis cliquez sur **[!UICONTROL Remplacer]** pour confirmer.
+
+   >[!NOTE]
+   >
+   > Les types de fichiers SVG ne sont pas pris en charge.
 
 ## Enregistrement de projets Adobe Express dans AEM Assets {#save-express-projects-in-assets}
 
@@ -77,18 +92,15 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+        <td> 65 Mpx (par exemple, 8K x 8K ou 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8 000 x 8 000 pixels, 40 Mo max.</td>
+        <td> 65 Mpx (par exemple, 8K x 8K ou 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> Maximum 250 Ko</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
