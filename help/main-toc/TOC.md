@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
 workflow-type: tm+mt
 source-wordcount: '6839'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -469,7 +469,7 @@ ht-degree: 95%
          + [Gestion des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
          + [Définition de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [&#x200B; – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -534,7 +534,7 @@ ht-degree: 95%
       + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=fr)
+      + [Utilisation de fragments de contenu dans Adobe Journey Optimizer](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer)
    + [Télémétrie opérationnelle pour AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Expérimentation Contextuelle](/help/sites-cloud/administering/contextual-experimentation.md)
 + Ressources {#assets}
@@ -575,7 +575,7 @@ ht-degree: 95%
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balises intelligentes pour les vidéos](/help/assets/smart-tags-for-videos.md)
       + [Comment organiser des ressources](/help/assets/organize-assets.md)
-      + [Utilisation des ressources [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
       + [Intégration avec [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -591,7 +591,7 @@ ht-degree: 95%
       + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
-      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Balises de couleurs pour les images](/help/assets/color-tag-images.md)
       + [Gestion des documents PDF](/help/assets/manage-pdf-documents.md)
    + Configuration, administration et extension d’[!DNL Assets] {#admin}
@@ -699,7 +699,7 @@ ht-degree: 95%
          + [Prévisualiser des ressources](/help/assets/preview-assets.md)
          + [Questions fréquentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configurer un domaine personnalisé](/help/assets/configure-custom-domain.md)
-         + [Optimisation des images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [Optimiser les images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [Création d’URL de redirection vers un microsite](/help/assets/vanity-urls.md)
    + Utilisation de la vue Ressources {#assets-view}
       + [Présentation](/help/assets/assets-view-introduction.md)
@@ -803,8 +803,8 @@ ht-degree: 95%
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuration du stockage  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuration du stockage  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuration des services cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
@@ -1036,7 +1036,7 @@ ht-degree: 95%
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Redémarrer le SDK d’AEM](/help/forms/restart-aem-sdk.md)
       + [Résoudre les échecs de création de formulaires](/help/forms/form-creation-failing.md)
-      + [Page d’erreur 502 dans l’action d’envoi personnalisée](/help/forms/custom-submit-action-troubleshooting.md)
+      + [Page d’erreur 502 dans l’action d’envoi personnalisée](/help/forms/custom-submit-action-troubleshooting.md)
 + IA dans AEM {#ai-in-aem}
    + [Vue d’ensemble](/help/ai-in-aem/overview.md)
    + Assistant IA {#ai-assistant}
@@ -1045,7 +1045,7 @@ ht-degree: 95%
    + Générer des variations {#generate-variations}
       + [Générer des variations - Intégration aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Générer des variations](/help/generative-ai/generate-variations.md)
-   + Forms Experience Builder {#forms-experience-builder}
+   + Créateur d’expériences de formulaires {#forms-experience-builder}
       + [Forms Experience Builder - Présentation](/help/forms/experience-builder/product-overview.md)
       + [Prise en main de Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
       + [Déploiement et configuration de Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
@@ -1163,8 +1163,8 @@ ht-degree: 95%
          + [Préremplissage des champs d’un formulaire adaptatif](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Publier des formulaires adaptatifs avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Créer des composants personnalisés pour un formulaire EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Résolution des erreurs 403 interdites lors de l’envoi du formulaire Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [Créer un objet de lead Salesforce à l’aide de l’intégration API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + [Résolution des erreurs 403 lors de l’envoi de formulaires dans Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Créer un objet de lead Salesforce à l’aide de l’intégration d’API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + Liste déroulante en cascade {#cascading-drop-down-list}
             + [Présentation](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [Créer une intégration d’API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
@@ -1211,7 +1211,7 @@ ht-degree: 95%
       + Création{#authoring}
          + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=fr)
          + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
-      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=fr)
+      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
       + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
    + Sélecteur de fragment de contenu {#content-fragment-selector}
@@ -1302,7 +1302,7 @@ ht-degree: 95%
          + [Utiliser git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utiliser plusieurs référentiels](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuration de l’équipe de développement d’entreprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Vérifications des demandes d’extraction pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Vérifications des demandes de tirage pour les référentiels privés](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Annotations du contrôle GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables d’environnement](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD Cloud Manager {#cicd-pipelines}
@@ -1434,7 +1434,7 @@ ht-degree: 95%
          + [Prise en main](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
          + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
-         + [&#x200B; Exemple d’application SecurBank &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [ Exemple d’application SecurBank ](/help/implementing/universal-editor/securbank.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1548,7 +1548,7 @@ ht-degree: 95%
    + [Surveillance des infrastructures et des services dans AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tâches de maintenance](/help/operations/maintenance.md)
    + [Restaurer le contenu](/help/operations/restore.md)
-   + [Restaurer le code déployé précédent (Beta)](/help/operations/restore-previous-code-deployed.md)
+   + [Restaurer le code précédemment déployé (Beta)](/help/operations/restore-previous-code-deployed.md)
    + [Traitements asynchrones](/help/operations/asynchronous-jobs.md)
    + [Utilisation des pipelines de configuration](/help/operations/config-pipeline.md)
    + [Suppression de l’index générique Lucene](/help/operations/removal-generic-lucene-index.md)

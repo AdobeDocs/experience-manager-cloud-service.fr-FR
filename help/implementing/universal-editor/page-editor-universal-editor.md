@@ -7,7 +7,7 @@ exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ L’écart de fonctionnalités entre les deux éditeurs se réduisant constammen
 L’éditeur universel offre de nombreux avantages, ce qui en fait une excellente solution pour les nouveaux projets.
 
 * **Modification visuelle :** comme pour l’éditeur de page, les créateurs et créatrices peuvent modifier le contenu directement dans l’aperçu et voir instantanément comment leurs modifications affectent l’expérience du visiteur ou de la visiteuse.
-* **Pérennisation :** feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
+* **Préparation à l’avenir :** la feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
 * **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit le verrouillage de tech stack.
 * **Utilisez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet l’adoption sans nécessiter de refactorisation complexe.
 * **Extensibilité :** l’éditeur universel bénéficie d’un [cadre d’extension](/help/implementing/universal-editor/extending.md) robuste qui comprend des intégrations à GenAI, Workfront, etc.
