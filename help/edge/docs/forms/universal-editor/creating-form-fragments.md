@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -176,11 +176,11 @@ Pour intégrer un fragment de formulaire dans votre formulaire :
 
    Le fragment de formulaire est ajouté par référence au formulaire et est synchronisé avec le fragment de formulaire autonome.
 
-   ![Capture d’écran montrant le fragment relatif aux coordonnées, intégré au formulaire des effectifs d’une entreprise dans l’éditeur universel, présentant la façon dont les fragments conservent leur structure lorsqu’ils sont réutilisés](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Copie d’écran montrant le fragment relatif aux coordonnées, intégré au formulaire des effectifs d’un salarié ou d’une salariée dans l’éditeur universel, présentant la façon dont les fragments conservent leur structure lorsqu’ils sont réutilisés.](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    >[!NOTE]
    >
-   > Le bouton **Modifier le fragment** permet aux utilisateurs et utilisatrices de naviguer directement vers le fragment de formulaire pour le modifier.
+   > Le bouton **Modifier le fragment** permet aux utilisateurs et utilisatrices d’accéder directement au fragment de formulaire pour le modifier.
 
    Vous pouvez prévisualiser le formulaire pour découvrir comment il s’affiche en mode **Prévisualisation**.
 
@@ -292,10 +292,10 @@ Vous avez appris à utiliser les fragments de formulaire dans Edge Delivery Se
 
 **Étapes suivantes :**
 
-- Créez une bibliothèque de fragments couramment utilisés pour votre organisation.
-- Définissez des conventions de nommage et des politiques de gouvernance pour l’utilisation des fragments.
+- Créer une bibliothèque de fragments couramment utilisés pour votre organisation.
+- Définir des conventions de nommage et des politiques de gouvernance pour l’utilisation des fragments.
 - Explorer une intégration avancée avec les [modèles de données de formulaire](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) pour les fragments dynamiques pilotés par les données
-- Implémentez des modèles de formulaire basés sur des fragments pour des expériences utilisateur cohérentes.
+- Mettre en œuvre des modèles de formulaire basés sur des fragments pour des expériences d’utilisation cohérentes.
 
 Vos formulaires bénéficient désormais d’une architecture modulaire et gérable qui s’adapte efficacement à l’ensemble des projets tout en assurant des expériences d’utilisation cohérentes.
 

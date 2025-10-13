@@ -1,21 +1,21 @@
 ---
-title: Éditeur de règles pour Edge Delivery Services Forms
+title: Éditeur de règles pour les formulaires Edge Delivery Services
 description: Créez des formulaires dynamiques et intelligents à l’aide de l’éditeur de règles dans l’éditeur universel. Ajoutez une logique conditionnelle, des calculs et des comportements interactifs sans codage.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Éditeur de règles pour Edge Delivery Services Forms
+# Éditeur de règles pour les formulaires Edge Delivery Services
 
-L’éditeur de règles permet aux auteurs de transformer des formulaires statiques en expériences réactives et intelligentes sans avoir à écrire de code. Vous pouvez afficher des champs de manière conditionnelle, effectuer des calculs, valider des données, guider les utilisateurs et les utilisatrices tout au long des flux et intégrer une logique commerciale qui s’adapte lors de la saisie des personnes.
+L’éditeur de règles permet aux créateurs et aux créatrices de transformer des formulaires statiques en expériences réactives et intelligentes, sans avoir à écrire de code. Vous pouvez afficher des champs de manière conditionnelle, effectuer des calculs, valider des données, guider les utilisateurs et les utilisatrices tout au long des flux et intégrer une logique commerciale qui s’adapte lors de la saisie des personnes.
 
 ## Ce que vous apprendrez :
 
@@ -304,7 +304,7 @@ Vous allez créer un formulaire qui :
 
 +++
 
-+++ Étape 1 : créer le formulaire
++++ Étape 1 : créer le formulaire
 
 **Objectif** : créer le formulaire de base avec tous les champs et paramètres initiaux.
 
@@ -537,7 +537,7 @@ Image : sélection et configuration de fonctions personnalisées dans l’inter
 
 >
 >
-> Les améliorations apportées à l’éditeur de règles, notamment les règles basées sur un événement personnalisé, la prise en charge des variables dynamiques et l’intégration d’API, sont également disponibles pour Edge Delivery Services Forms. Pour en savoir plus sur ces améliorations et sur la manière de les utiliser, consultez l’article [ Améliorations de l’éditeur de règles et cas d’utilisation ](/help/forms/rule-editor-enhancements-use-cases.md).
+> Les améliorations apportées à l’éditeur de règles, notamment les règles basées sur un événement personnalisé, la prise en charge des variables dynamiques et l’intégration d’API, sont également disponibles pour les formulaires Edge Delivery Services. Pour en savoir plus sur ces améliorations et sur leur utilisation, consultez l’article [Améliorations de l’éditeur de règles et cas d’utilisation](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Bonnes pratiques relatives à l’utilisation des fonctions** :
 
@@ -551,9 +551,9 @@ Image : sélection et configuration de fonctions personnalisées dans l’inter
 
 ### Imports statiques pour les fonctions personnalisées
 
-L’éditeur de règles de l’éditeur universel prend en charge les importations statiques, ce qui vous permet d’organiser une logique réutilisable dans plusieurs fichiers et formulaires. Au lieu de conserver toutes les fonctions personnalisées dans un seul fichier (/blocks/form/functions.js), vous pouvez importer des fonctions d’autres modules.
-Par exemple : Importation de fonctions à partir d’un fichier externe
-Tenez compte de la structure de dossiers suivante :
+L’éditeur de règles de l’éditeur universel prend en charge les imports statiques, ce qui vous permet d’organiser une logique réutilisable dans plusieurs fichiers et formulaires. Au lieu de conserver toutes les fonctions personnalisées dans un seul fichier (/blocks/form/functions.js), vous pouvez importer des fonctions d’autres modules.
+Par exemple : import de fonctions à partir d’un fichier externe
+Tenez compte de la structure de dossiers suivante :
 
 ```
       form
@@ -565,7 +565,7 @@ Tenez compte de la structure de dossiers suivante :
       ┗ functions.js
 ```
 
-Vous pouvez importer des fonctions de `commonLib/functions.js` dans votre fichier `functions.js` principal, comme illustré ci-dessous :
+Vous pouvez importer des fonctions de `commonLib/functions.js` dans votre fichier `functions.js` principal, comme indiqué ci-dessous :
 
 ```
 `import {days} from './commonLib/functions';
@@ -584,19 +584,19 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### Organisation De Fonctions Personnalisées Dans Différents Forms
+### Organisation de fonctions personnalisées dans différents formulaires
 
-Vous pouvez créer différents ensembles de fonctions dans des fichiers ou des dossiers distincts et les exporter selon vos besoins :
+Vous pouvez créer différents ensembles de fonctions dans des fichiers ou des dossiers distincts et les exporter selon vos besoins:
 
 - Si vous souhaitez que certaines fonctions ne soient disponibles que dans des formulaires spécifiques, vous pouvez fournir le chemin d’accès au fichier de fonctions dans la configuration du formulaire.
 
-- Si la zone de texte du chemin n’est pas renseignée, l’éditeur de règles charge par défaut les fonctions à partir de l’adresse `/blocks/form/functions.js`
+- Si la zone de texte du chemin n’est pas renseignée, l’éditeur de règles charge par défaut les fonctions à partir de `/blocks/form/functions.js`.
 
-![Fonction personnalisée en UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+![Fonction personnalisée dans l’éditeur universel](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-Dans la capture d’écran ci-dessus, le chemin d’accès de la fonction personnalisée est ajouté à la zone de texte Chemin d’accès de la fonction personnalisée . Les fonctions personnalisées de ce formulaire sont chargées à partir du fichier spécifié (`cc_function.js`).
+Dans la copie d’écran ci-dessus, le chemin d’accès de la fonction personnalisée est ajouté à la zone de texte Chemin d’accès de la fonction personnalisée. Les fonctions personnalisées de ce formulaire sont chargées à partir du fichier spécifié (`cc_function.js`).
 
-Vous bénéficiez ainsi d’une certaine flexibilité en partageant des fonctions sur plusieurs formulaires ou en les maintenant isolées par formulaire.
+Vous bénéficiez ainsi d’une certaine flexibilité en partageant des fonctions entre plusieurs formulaires ou en les isolant pour chaque formulaire.
 
 ## Bonnes pratiques en matière de développement de règles
 

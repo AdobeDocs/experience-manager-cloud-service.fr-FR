@@ -7,7 +7,7 @@ level: Intermediate
 keywords: Publier des formulaires, Edge Delivery Services, configuration de formulaire, CORS, filtre de référent
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
 ht-degree: 100%
 

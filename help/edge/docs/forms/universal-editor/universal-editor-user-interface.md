@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ La **barre d’outils de l’éditeur universel** fournit des actions clés pour
 
 **Pour votre premier formulaire :**
 
-1. **Ajouter un composant de formulaire adaptatif** - Insérez le composant de `Adaptive Form` dans une section.
+1. **Ajouter un composant de formulaire adaptatif** : insérez le composant `Adaptive Form` dans une section.
 2. **Commencer la création**: ajoutez des composants à l’aide du bouton **Ajouter** (`a`).
 3. **Configurer les champs** : sélectionnez les composants et utilisez le **mode Propriétés** (`d`).
 4. **Tester le formulaire** : utilisez le **mode Aperçu** (`p`) pour interagir avec le formulaire.
@@ -121,7 +121,7 @@ La **barre d’outils de l’éditeur universel** fournit des actions clés pour
 
 >[!NOTE]
 >
-> Pour connaître les étapes détaillées afin de créer des formulaires dans l’éditeur universel, voir [Création et publication de Forms adaptatif avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Pour connaître les étapes détaillées afin de créer des formulaires dans l’éditeur universel, voir [Créer et publier des formulaires adaptatifs avec Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Points de contrôle de validation :**
 
@@ -223,7 +223,7 @@ La **barre d’outils de l’éditeur universel** contient vos outils principaux
 
 #### **Propriétés du formulaire AEM**
 
-**Objectif :** configurer des paramètres au niveau du formulaire tels que le modèle de données de formulaire (FDM), configurer des actions d’envoi et des dates de publication\
+**Objectif :** configurer des paramètres au niveau du formulaire tels que le modèle de données de formulaire (FDM) et les dates de publication.\
 **Quand utiliser cette option :** lorsque vous configurez des intégrations de données et planifiez la publication.
 
 ![Propriétés du formulaire](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
