@@ -20,7 +20,7 @@ Créez le formulaire suivant à l’aide de l’éditeur universel. Le formulair
 Lors de l’initialisation, la liste déroulante Pays de résidence est renseignée avec les résultats de l’appel API.
 ![initialize-event](assets/initialize-event.png)
 
-##  Gestionnaire de succès
+## Gestionnaire de succès
 
 Le gestionnaire de succès a été défini pour configurer les valeurs enum et enumNames de la liste déroulante des pays avec les valeurs appropriées du tableau geonames. Le tableau geonames est disponible sous l’option Payload d’événement.
 ![event-payload](assets/event-payload.png)
