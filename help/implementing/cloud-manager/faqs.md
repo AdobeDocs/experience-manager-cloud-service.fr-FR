@@ -61,7 +61,7 @@ Cette valeur permet d’installer les déploiements suivants quand la version n�
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, le cas échéant.
 
-Pour plus d’informations sur la gestion des versions, voir [ Gestion des versions de projet Maven ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Pour plus d’informations sur la gestion des versions, voir [&#x200B; Gestion des versions de projet Maven &#x200B;](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#snapshot-version}
 

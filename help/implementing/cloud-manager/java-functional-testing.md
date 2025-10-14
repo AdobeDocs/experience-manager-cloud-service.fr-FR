@@ -86,7 +86,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
@@ -131,7 +131,7 @@ Les modifications à venir de l’infrastructure en conteneur pour l’exécutio
 >[!NOTE]
 >
 >Cette modification doit être effectuée avant le 6 avril 2024.
->>Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
+>&#x200B;>Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
 
 ### Exécution locale du test {#local-test-execution}
 

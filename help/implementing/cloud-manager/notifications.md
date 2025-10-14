@@ -45,7 +45,7 @@ Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer 
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre Préférences Experience Cloud ****. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
+Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre Préférences Experience Cloud **&#x200B;**. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
 
 ![Icône Paramètres de notification](assets/notifications-configuration.png)
 
