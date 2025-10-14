@@ -44,4 +44,4 @@ Cependant, dans une situation de production, les tâches seront exécutées par 
 
 ## Étape suivante {#next-step}
 
-Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [ Création d’une configuration ](create-configuration.md).
+Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [&#x200B; Création d’une configuration &#x200B;](create-configuration.md).

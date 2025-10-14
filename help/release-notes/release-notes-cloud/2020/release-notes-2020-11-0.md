@@ -119,7 +119,7 @@ Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des prob
 
 ### Autres {#others-foundation}
 
-Nouvelle vérification [&quot;httpd -t&quot; de la syntaxe ](/help/implementing/dispatcher/disp-overview.md#local-validation) pour la configuration Apache et Dispatcher exécutée pendant la génération Cloud Manager, qui peut également être exécutée à l’aide des outils Dispatcher du SDK AEM as a Cloud Service.
+Nouvelle vérification [&quot;httpd -t&quot; de la syntaxe &#x200B;](/help/implementing/dispatcher/disp-overview.md#local-validation) pour la configuration Apache et Dispatcher exécutée pendant la génération Cloud Manager, qui peut également être exécutée à l’aide des outils Dispatcher du SDK AEM as a Cloud Service.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

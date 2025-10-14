@@ -121,7 +121,7 @@ Pour activer et utiliser les outils de modernisation AEM pour votre environnemen
 
 1. Sélectionnez l’option **[!UICONTROL Conversion Forms]**.
 
-   ![Sélectionnez l’option Conversion Forms ](/help/forms/assets/aem-modernize-forms-conversion.png)
+   ![Sélectionnez l’option Conversion Forms &#x200B;](/help/forms/assets/aem-modernize-forms-conversion.png)
 
 1. Cliquez sur **Créer** pour créer une tâche.
 

@@ -96,7 +96,7 @@ Vous pouvez commencer à ajouter des utilisateurs ou des groupes d’utilisateur
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

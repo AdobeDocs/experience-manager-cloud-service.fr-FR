@@ -22,7 +22,7 @@ Utilisez les conditions préalables suivantes si vous intégrez le sélecteur de
 * Pour accéder à Dynamic Media avec des fonctionnalités OpenAPI, vous devez disposer de licences pour :
    * Référentiel Assets (par exemple, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Seules les ressources [ approuvées ](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
+* Seules les ressources [&#x200B; approuvées &#x200B;](/help/assets/approve-assets.md) peuvent être utilisées pour garantir la cohérence de la marque.
 
 ## Intégration de Dynamic Media aux fonctionnalités OpenAPI {#adobe-app-integration-polaris}
 

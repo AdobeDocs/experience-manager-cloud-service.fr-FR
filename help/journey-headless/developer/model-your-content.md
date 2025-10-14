@@ -218,7 +218,7 @@ Ensuite, les modèles de fragments de contenu peuvent être créés et la struct
 
 Une fois la création effectuée, vous pouvez modifier votre modèle. Par exemple :
 
-![Modèle de fragment de contenu ](assets/cfm-model.png)
+![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
 
 >[!NOTE]
 >

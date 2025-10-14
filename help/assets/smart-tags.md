@@ -200,7 +200,7 @@ Comme le balisage automatisé des ressources s’exécute en parallèle d’autr
 
 >[!IMPORTANT]
 >
->Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] ](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
+>Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] &#x200B;](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}

@@ -39,7 +39,7 @@ Les détails du statut s’affichent. Votre domaine personnalisé est prêt à �
 >
 >Si vous utilisez un certificat SSL *géré par Adobe (DV)* avec le domaine, Cloud Manager déclenche automatiquement la vérification lorsque vous cliquez sur **Vérifier** dans la boîte de dialogue Vérifier le domaine lorsque [vous ajoutez un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
->Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [ ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+>Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [&#x200B; ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 
 ## Statuts de vérification {#statuses}

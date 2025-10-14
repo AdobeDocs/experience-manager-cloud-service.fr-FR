@@ -93,7 +93,7 @@ Lorsque vous utilisez [!DNL Dynamic Media with OpenAPI capabilities] pour la dif
 
 ### Conversion automatique du format{#auto-format-conversion}
 
-[!DNL Dynamic Media with OpenAPI] [ convertit automatiquement les images en formats modernes optimisés pour le web, tels que AVIF ou WEBP](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request). La conversion dépend des fonctionnalités du navigateur et de [license-rights](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), quel que soit le format demandé.
+[!DNL Dynamic Media with OpenAPI] [&#x200B; convertit automatiquement les images en formats modernes optimisés pour le web, tels que AVIF ou WEBP](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request). La conversion dépend des fonctionnalités du navigateur et de [license-rights](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), quel que soit le format demandé.
 
 Les formats AVIF et WEBP offrent une meilleure compression, ce qui rend les images plus petites et plus rapides à diffuser et à charger. Le format AVIF est utilisé comme format par défaut, car il gère toutes les fonctionnalités du navigateur.
 
@@ -123,7 +123,7 @@ Consultez les comportements clés suivants des paramètres `quality` et `max-qua
 
 #### Paramètre de qualité{#quality-parameter}
 
-Le paramètre de qualité donne la priorité à la qualité d’image sur la vitesse de chargement. Il fixe la qualité de l’image de sortie sur la valeur demandée (entre 1 et 100) et ignore les conditions réseau. En savoir plus sur le [ paramètre de qualité ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+Le paramètre de qualité donne la priorité à la qualité d’image sur la vitesse de chargement. Il fixe la qualité de l’image de sortie sur la valeur demandée (entre 1 et 100) et ignore les conditions réseau. En savoir plus sur le [&#x200B; paramètre de qualité &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
 #### Paramètre de qualité max{#max-quality-parameter}
 

@@ -18,7 +18,7 @@ Toute modification apportée aux ressources approuvées dans la gestion des ress
 
 L’image suivante illustre les URL de diffusion disponibles :
 
-![ API de diffusion ](assets/delivery-url.png)
+![&#x200B; API de diffusion &#x200B;](assets/delivery-url.png)
 
 Le tableau suivant illustre l’utilisation des différentes API de diffusion disponibles :
 
@@ -35,7 +35,7 @@ Le tableau suivant illustre l’utilisation des différentes API de diffusion di
 >[!IMPORTANT]
 >
 >Vous pouvez tester n’importe quel modificateur, qui n’est généralement pas disponible via les API expérimentales. Par exemple, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`.
->&#x200B;>Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [ liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>&#x200B;>Cliquez ici pour en savoir plus sur l’utilisation des [API expérimentales](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) et la [&#x200B; liste complète des modificateurs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Dynamic Media avec les fonctionnalités OpenAPI prend également en charge les vidéos de forme longue. Les vidéos de forme longue peuvent prendre en charge jusqu’à 50 Go et 2 heures.
 

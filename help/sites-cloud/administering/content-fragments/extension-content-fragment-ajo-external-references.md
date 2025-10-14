@@ -32,7 +32,7 @@ Par exemple, pour utiliser l’extension avec AJO :
 >
 >Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Ouvrez la [ Console Fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Ouvrez la [&#x200B; Console Fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Accédez à votre fragment de contenu : fragment qui a été créé et utilisé sur différents canaux AJO.
 

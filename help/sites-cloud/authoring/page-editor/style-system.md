@@ -73,7 +73,7 @@ Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) e
 Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
 1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section [Vue d’ensemble](#overview).
-1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [ En tant qu’auteur de modèle ](#as-a-template-author).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section [&#x200B; En tant qu’auteur de modèle &#x200B;](#as-a-template-author).
 1. Les créateurs et créatrices de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant que créateur ou créatrice de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}

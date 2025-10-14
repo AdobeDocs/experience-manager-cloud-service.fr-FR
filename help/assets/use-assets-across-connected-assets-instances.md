@@ -25,7 +25,7 @@ Dans les grandes entreprises, l’infrastructure requise pour créer des sites w
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser Dynamic Media avec des fonctionnalités OpenAPI pour connecter AEM Assets as a Cloud Service et AEM Sites. Voir [ Intégration d’AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
+>Adobe recommande d’utiliser Dynamic Media avec des fonctionnalités OpenAPI pour connecter AEM Assets as a Cloud Service et AEM Sites. Voir [&#x200B; Intégration d’AEM Assets distant à AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
 
 La fonctionnalité Ressources connectées prend en charge le cas d’utilisation ci-dessus en intégrant [!DNL Experience Manager Sites] et [!DNL Experience Manager Assets]. Les utilisateurs peuvent créer dans [!DNL Sites] des pages web qui utilisent les ressources numériques à partir de déploiements [!DNL Assets] distincts.
 

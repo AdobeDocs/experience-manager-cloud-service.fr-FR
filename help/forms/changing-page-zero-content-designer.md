@@ -47,5 +47,5 @@ La version [!DNL AEM Forms] de Designer vous permet de modifier le message affic
 
 >[!MORELIKETHIS]
 >
->* [ Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
+>* [&#x200B; Télécharger et installer Forms Designer pour créer des modèles de document d’enregistrement](/help/forms/installing-configuring-designer.md)
 >* [Utilisez Forms Designer pour créer des modèles de document d’enregistrement et des fragments de formulaire ?](/help/forms/use-forms-designer.md)

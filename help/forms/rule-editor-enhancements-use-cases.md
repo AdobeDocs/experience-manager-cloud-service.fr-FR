@@ -24,7 +24,7 @@ Le tableau ci-dessous répertorie les récentes améliorations apportées à l�
 |---|----|---|
 | [Validation à l’aide de la méthode validate()](#validate-method-in-function-list) | Disponible dans la liste des fonctions pour valider des champs individuels, des panneaux ou l’ensemble du formulaire. | - Validation granulaire au niveau du panneau, du champ ou du formulaire <br> - Meilleure expérience utilisateur avec des <br> de messages d’erreur ciblés - Empêche la progression avec des <br> de données incomplètes - Réduit les erreurs d’envoi de formulaire |
 | [Télécharger le document d’enregistrement](#download-document-of-record) | Fonction prête à l’emploi disponible dans l’éditeur de règles pour télécharger le document d’enregistrement (DE). | - Aucun développement personnalisé requis pour le téléchargement des <br> de document d’enregistrement - Expérience de téléchargement cohérente dans tous les formulaires |
-| [ Variables dynamiques ](#support-for-dynamic-variables-in-rules) | Créez des règles à l’aide de variables qui changent en fonction des entrées utilisateur ou d’autres conditions. | - Active des conditions de règle flexibles <br> - Réduit le besoin de <br> logiques en double - Élimine l’exigence de création de champs masqués |
+| [&#x200B; Variables dynamiques &#x200B;](#support-for-dynamic-variables-in-rules) | Créez des règles à l’aide de variables qui changent en fonction des entrées utilisateur ou d’autres conditions. | - Active des conditions de règle flexibles <br> - Réduit le besoin de <br> logiques en double - Élimine l’exigence de création de champs masqués |
 | [Règles personnalisées basées sur un événement](#custom-event-based-rules-support) | Définissez des règles qui répondent à des événements personnalisés au-delà des déclencheurs standard. | - Prend en charge les cas d’utilisation avancés <br> - Un meilleur contrôle sur le moment et la manière dont les règles sont exécutées <br> - Améliore l’interactivité |
 | [Exécution de panneau répétable contextuelle](#context-based-rule-execution-for-repeatable-panels) | Les règles s’exécutent désormais dans le contexte approprié pour chaque panneau répété, au lieu de la dernière instance uniquement. | - Application précise des règles pour chaque instance de répétition <br> - Réduit les erreurs dans les sections dynamiques <br> - Améliore l’expérience utilisateur avec le contenu répété |
 | [Prise en charge des paramètres de chaîne de requête, UTM et de navigateur](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Créez des règles qui adaptent le comportement du formulaire en fonction des paramètres d’URL ou de valeurs spécifiques au navigateur. | - Permet la personnalisation en fonction des <br> de la source ou de l’environnement - Utile pour les flux spécifiques au marketing ou au suivi <br> - Aucun besoin de script ou de personnalisation supplémentaire |
@@ -80,7 +80,7 @@ Un bouton **Télécharger** est ajouté au formulaire à l’aide de l’éditeu
 
 La capture d’écran ci-dessous affiche la règle appliquée au bouton **Télécharger** :
 
-![ Règle du bouton Télécharger ](/help/forms/assets/download-button-rule.png)
+![&#x200B; Règle du bouton Télécharger &#x200B;](/help/forms/assets/download-button-rule.png)
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ Le champ **Coût total d’expédition** se met à jour de manière dynamique po
 >[!NOTE]
 >
 > Vous pouvez également ajouter la fonction **Obtenir la valeur de la variable** dans la condition Lorsque.
-> &#x200B;> ![Obtenir la fonction de valeur variable dans Lorsque la condition ](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Obtenir la fonction de valeur variable dans Lorsque la condition &#x200B;](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Cette approche permet des calculs dynamiques en temps réel sans ajouter de champs supplémentaires au formulaire, ce qui permet de garder la structure propre et conviviale.
 

@@ -85,7 +85,7 @@ L’API `com.day.cq.dam.api.collection.SmartCollection` n’est pas disponible d
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
-* Vous pouvez désormais utiliser le service Automated forms conversion pour [ convertir des PDF forms en français, allemand et espagnol ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) en formulaires adaptatifs.
+* Vous pouvez désormais utiliser le service Automated forms conversion pour [&#x200B; convertir des PDF forms en français, allemand et espagnol &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) en formulaires adaptatifs.
 * Ajout d’un panneau distinct à l’éditeur de modèles pour afficher les erreurs liées aux composants de formulaire adaptatif. Cela permet de consolider toutes les erreurs de formulaire adaptatif à un seul emplacement et de réduire le temps de résolution.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#beta-features-forms}

@@ -12,7 +12,7 @@ ht-degree: 59%
 
 # Intégration du sélecteur de ressources à l’aide de Vanilla JS {#integration-using-vanilla-js}
 
-Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [ Intégration du sélecteur de ressources à diverses applications ](#asset-selector-integration-with-apps).
+Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou non Adobe à [!DNL Experience Manager Assets] référentiel et sélectionner des ressources dans l’application. Voir [&#x200B; Intégration du sélecteur de ressources à diverses applications &#x200B;](#asset-selector-integration-with-apps).
 
 L’intégration est effectuée en important le package Sélecteur de ressources et en se connectant à Assets as a Cloud Service à l’aide de la bibliothèque JavaScript Vanilla. Modifiez un `index.html` ou tout fichier approprié dans votre application pour :
 
@@ -29,7 +29,7 @@ Vous pouvez effectuer une authentification sans définir certaines des propriét
 
 Vous pouvez intégrer le sélecteur de ressources à diverses applications, telles que :
 
-* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Intégration du sélecteur de ressources à une application  [!DNL Adobe] &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Intégrer le sélecteur de ressources à une application non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Intégration de Dynamic Media aux fonctionnalités OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 

@@ -194,7 +194,7 @@ En cas de problème avec AzCopy, l’extraction échoue immédiatement et les jo
 Les objets Blob qui ont été copiés avant l’erreur sont automatiquement ignorés par AzCopy lors des exécutions suivantes et n’ont pas besoin d’être copiés à nouveau.
 
 >[!TIP]
->Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [ Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+>Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [&#x200B; Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
 >[!TIP]
 >Si le transfert d’objets Blob avec AzCopy a progressé pendant un certain temps, mais qu’il a ensuite échoué pour quelques objets Blob uniquement, réexécutez l’extraction avec les options PréCopy et Remplacer le conteneur d’évaluation décochées. Seuls les objets Blob restants qui n’ont pas été transférés précédemment seront migrés.
@@ -206,7 +206,7 @@ Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vou
 
 ### &#x200B;5. Ingestion avec AzCopy {#ingesting-azcopy}
 
-Consultez la section [ Ingestion de contenu dans Target ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
+Consultez la section [&#x200B; Ingestion de contenu dans Target &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
 
 Pour tirer parti d’AzCopy lors de l’ingestion, la version 2021.6.5561 d’AEM as a Cloud Service ou ultérieure est nécessaire.
 

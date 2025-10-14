@@ -139,7 +139,7 @@ Vous pouvez maintenant [utiliser l’ajout de champs Adobe Acrobat Sign à un 
 
 Lorsque vous vous connectez [!DNL Adobe Acrobat Sign] à [!DNL AEM Forms] et trouvez un `Unable to authorize access because the client configuration is invalid: invalid_request` d’erreur, comme illustré dans l’image ci-dessous. Pour résoudre ce problème, procédez comme suit :
 
-![ Erreur de configuration ](/help/forms/assets/config_error_sign.png)
+![&#x200B; Erreur de configuration &#x200B;](/help/forms/assets/config_error_sign.png)
 
 1. Copiez l’URL présente dans la fenêtre active du navigateur dans un bloc-notes et supprimez la partie `/ui#/aem` de l’URL.
 1. Ouvrez une fenêtre de navigateur et connectez-vous au compte de développeur [!DNL Adobe Acrobat Sign].

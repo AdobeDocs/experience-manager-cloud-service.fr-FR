@@ -42,7 +42,7 @@ Le contenu est ajouté à l’aide des [composants](/help/sites-cloud/authoring/
 
 La barre d’outils de la page permet d’accéder à des fonctionnalités adaptées au contexte, en fonction de la configuration de la page.
 
-![ Barre d’outils de l’éditeur de page ](assets/page-editor-toolbar.png)
+![&#x200B; Barre d’outils de l’éditeur de page &#x200B;](assets/page-editor-toolbar.png)
 
 #### Panneau latéral {#side-panel-button}
 
@@ -74,7 +74,7 @@ Le menu **Informations sur la page** peut en outre donner accès à des analyses
 
 #### Emulateur {#emulator}
 
-Cette option permet d’activer ou de désactiver la [ barre d’outils de l’émulateur ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement activée en mode Mise en page.
+Cette option permet d’activer ou de désactiver la [&#x200B; barre d’outils de l’émulateur &#x200B;](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement activée en mode Mise en page.
 
 ![Bouton Émulateur](assets/page-editor-emulator.png)
 
@@ -98,7 +98,7 @@ Le sélecteur de mode affiche le [mode](/help/sites-cloud/authoring/page-editor/
 
 Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
 
-* [ Modifier ](/help/sites-cloud/authoring/page-editor/edit-content.md) - Mode à utiliser lors de la modification du contenu de la page
+* [&#x200B; Modifier &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md) - Mode à utiliser lors de la modification du contenu de la page
 * [Disposition](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Permet de créer et de modifier une disposition réactive selon l’appareil (si la page est basée sur un conteneur de dispositions)
 * [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) - Améliore la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux
 * [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Affichage de l’état d’une page à un moment donné

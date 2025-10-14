@@ -52,7 +52,7 @@ Les logiciels suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF {#accessing-add-on}
 
-Le module complémentaire CIF peut être téléchargé sous la forme d’un fichier zip à partir du portail [ Distribution de logiciels .](/help/implementing/developing/tools/package-manager.md) Le fichier zip contient le module complémentaire CIF en tant qu’**archive des fonctionnalités Sling**, il ne s’agit pas d’un package AEM. Les listes de SDK sont accessibles avec une licence AEM as a Cloud Service.
+Le module complémentaire CIF peut être téléchargé sous la forme d’un fichier zip à partir du portail [&#x200B; Distribution de logiciels .](/help/implementing/developing/tools/package-manager.md) Le fichier zip contient le module complémentaire CIF en tant qu’**archive des fonctionnalités Sling**, il ne s’agit pas d’un package AEM. Les listes de SDK sont accessibles avec une licence AEM as a Cloud Service.
 
 >[!TIP]
 >

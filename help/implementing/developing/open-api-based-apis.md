@@ -27,7 +27,7 @@ Ce document sert de présentation, mais une documentation plus approfondie est d
 
 * Les liens de la section API basée sur OpenAPI de la [documentation de référence](https://developer.adobe.com/experience-cloud/experience-manager-apis/). La documentation de référence de chaque API comprend également un playground d’API, qui permet de tester facilement un point d’entrée à l’aide d’un jeton porteur généré avec le Adobe Developer Console.
 
-* Informations [Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), y compris [ concepts et syntaxe d’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
+* Informations [Guides](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/), y compris [&#x200B; concepts et syntaxe d’API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 
 * Tutoriel de niveau supérieur décrivant [les approches d’authentification](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) et d’autres concepts.
 

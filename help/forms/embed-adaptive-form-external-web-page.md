@@ -171,4 +171,4 @@ Lorsque vous incorporez un formulaire adaptatif dans une page web, prenez en com
 
 >[!MORELIKETHIS]
 >
->* [ Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe ](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [&#x200B; Incorporer un formulaire adaptatif basé sur les composants principaux à une page web externe &#x200B;](/help/forms/embed-adaptive-form-core-components-external-web-page.md)

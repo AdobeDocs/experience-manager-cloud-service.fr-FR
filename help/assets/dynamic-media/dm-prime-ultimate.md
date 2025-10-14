@@ -49,7 +49,7 @@ Outre les fonctionnalités de Dynamic Media Prime, telles que l’intégration d
 * [Dynamic Media avec OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) offre des fonctionnalités avancées telles que :
 
    * la livraison sécurisée des ressources,
-   * [ Recadrage intelligent, imagerie dynamique, paramètres d’image prédéfinis et autres modificateurs d’image](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+   * [&#x200B; Recadrage intelligent, imagerie dynamique, paramètres d’image prédéfinis et autres modificateurs d’image](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * [Solution Dynamic Media dans AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), qui comprend également les fonctionnalités clés suivantes :
 

@@ -76,7 +76,7 @@ Dans de nombreux cas, les utilisateurs et utilisatrices du groupe de formulaires
    ![Annotation](annotation.png)
 
 1. Cliquez sur l’icône **ajouter** située dans le rail supérieur gauche, comme illustré dans l’image, pour ajouter l’annotation.
-   ![ Ajouter une annotation ](add-annotation.png)
+   ![&#x200B; Ajouter une annotation &#x200B;](add-annotation.png)
 
 1. Vous pouvez maintenant ajouter des commentaires, dessiner des esquisses avec plusieurs couleurs pour former des composants.
 

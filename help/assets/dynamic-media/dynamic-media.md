@@ -34,7 +34,7 @@ Dynamic Media s’intègre de manière transparente à votre système de gestion
 
 ## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la section [ Utilisation de Digital Assets ](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la section [&#x200B; Utilisation de Digital Assets &#x200B;](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 

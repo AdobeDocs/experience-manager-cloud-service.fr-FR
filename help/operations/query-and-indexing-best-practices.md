@@ -62,7 +62,7 @@ Une stratégie similaire peut être utilisée pour conserver le résultat dans u
 
 ## Optimiser les requêtes {#optimizing-queries}
 
-La documentation d’Oak fournit une [ présentation générale de l’exécution des requêtes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). C’est la base de toutes les activités d’optimisation décrites dans ce document.
+La documentation d’Oak fournit une [&#x200B; présentation générale de l’exécution des requêtes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). C’est la base de toutes les activités d’optimisation décrites dans ce document.
 
 AEM as a Cloud Service fournit l’outil [Query Performance Tool](#query-performance-tool), conçu pour prendre en charge l’implémentation de requêtes efficaces.
 
@@ -87,7 +87,7 @@ La contrainte principale sur toute requête doit être une correspondance de pro
 
 Le moteur de requête ne prend en compte qu’un seul index. Cela signifie qu’un index existant peut et doit être personnalisé en y ajoutant d’autres propriétés d’index personnalisées.
 
-La section [ Aide-mémoire pour les requêtes JCR ](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également à quoi doit ressembler une définition d’index pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
+La section [&#x200B; Aide-mémoire pour les requêtes JCR &#x200B;](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également à quoi doit ressembler une définition d’index pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
 
 ### Commande {#ordering}
 
@@ -203,7 +203,7 @@ Cette section du plan stipule que :
 * L’ordre est géré par l’index
    * car `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]` apparaît dans la requête Lucene.
 
-Une telle requête est susceptible de fonctionner correctement, car les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (à l’exception du filtrage par contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies (voir la section [ Traversée d’index](#index-traversal) ci-dessous).
+Une telle requête est susceptible de fonctionner correctement, car les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (à l’exception du filtrage par contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies (voir la section [&#x200B; Traversée d’index](#index-traversal) ci-dessous).
 
 En envisageant une autre requête -
 

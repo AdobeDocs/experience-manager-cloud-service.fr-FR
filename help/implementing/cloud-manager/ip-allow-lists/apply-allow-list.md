@@ -33,7 +33,7 @@ Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsab
 1. Sur l’écran **Environnements**, accédez à la page de détails de l’environnement spécifique.
 1. Accédez au tableau **Liste autorisée IP**.
 1. Utilisez les champs de saisie en haut du tableau pour sélectionner la Liste autorisée IP et le service de création, de publication ou de prévisualisation auquel vous souhaitez l’appliquer.
-La Liste autorisée IP doit déjà exister dans Cloud Manager pour pouvoir être appliquée. Voir [ Ajout de Listes autorisées IP ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
+La Liste autorisée IP doit déjà exister dans Cloud Manager pour pouvoir être appliquée. Voir [&#x200B; Ajout de Listes autorisées IP &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 1. Cliquez sur ![Ajouter une icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Appliquer** et confirmez votre envoi.
 
 ## Annuler l’application des Listes autorisées IP {#un-applying}

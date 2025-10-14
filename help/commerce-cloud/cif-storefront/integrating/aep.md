@@ -472,7 +472,7 @@ __Événements Experience XDM :__
 1. Requête de recherche envoyée (AEM)
 1. Réponse de recherche reçue (AEM)
 
-Quand les [composants Peregrine ](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
+Quand les [composants Peregrine &#x200B;](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
 
 __Événements Experience XDM :__
 

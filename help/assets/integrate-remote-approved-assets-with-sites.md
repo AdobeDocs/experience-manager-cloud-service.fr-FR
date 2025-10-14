@@ -42,7 +42,7 @@ La prise en charge des ressources distantes à l’aide de Dynamic Media avec de
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId] : vous devez envoyer un ticket d’assistance Adobe pour obtenir l’identifiant du client IMS.
 
-     ou configurez les [ paramètres OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=fr) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
+     ou configurez les [&#x200B; paramètres OSGi &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=fr) pour AEM 6.5 dans l’instance AEM Sites en procédant comme suit :
 
    1. Connectez-vous à la console et cliquez sur **[!UICONTROL OSGi] >** ou
 Utilisez l’URL directe, par exemple : `https://localhost:4502/system/console/configMgr`.

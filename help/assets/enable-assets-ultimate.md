@@ -53,7 +53,7 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend les profils de 
 
 Si vous avez activé Content Hub pour Assets as a Cloud Service, une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Votre instance AEM as a Cloud Service sur Admin Console comprend maintenant les 
 
 Si Content Hub doit être activé, cliquez sur l’icône Autres options (...) sur le nom du programme dans Cloud Manager et sélectionnez **[!UICONTROL Modifier le programme]**. Développez **[!UICONTROL Assets Ultimate]** puis cliquez sur **[!UICONTROL Content Hub]**. Cette étape active Content Hub pour Assets Ultimate. Une nouvelle instance a été créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

@@ -107,7 +107,7 @@ Vous pouvez désormais facilement rechercher du contenu en sélectionnant une im
 
 ### Programme de mappage de domaines pour les utilisateurs et utilisatrices précoces {#cdn-config-early-adopter}
 
-Outre les [ Règles de filtrage du trafic ](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’application web (WAF) sous licence facultative, vous pouvez utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
+Outre les [&#x200B; Règles de filtrage du trafic &#x200B;](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, qui incluent les règles de pare-feu d’application web (WAF) sous licence facultative, vous pouvez utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires
 * Transformations d’URL

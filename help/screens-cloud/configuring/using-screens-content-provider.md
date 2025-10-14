@@ -35,7 +35,7 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
    ![Landing page pour un accès rapide aux zones d’Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Cliquez sur **Démarrer** à partir de la vignette Cloud Manager. Une fois que vous êtes connecté à [!UICONTROL Cloud Manager], vous êtes prêt à utiliser l’interface utilisateur.
-   ![ Quatre zones de Cloud Manager (Brand Portal, Cloud Manager, Cloud Acceleration Manager et Distribution logicielle) affichant chacune leur propre bouton Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![&#x200B; Quatre zones de Cloud Manager (Brand Portal, Cloud Manager, Cloud Acceleration Manager et Distribution logicielle) affichant chacune leur propre bouton Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Sélectionnez le programme pour Screens as a Cloud Service et cliquez sur l’icône, comme illustré ci-dessous, pour ouvrir la page **Vue d’ensemble** de Cloud Manager pour ce programme spécifique.
 

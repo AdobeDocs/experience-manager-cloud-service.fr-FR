@@ -33,7 +33,7 @@ De plus, vous pouvez également personnaliser la sélection des ressources sous 
 
 ## Affichage des collections {#view-collections}
 
-Le sélecteur de ressources vous permet d’afficher les collections dans une vue ![ liste](assets/do-not-localize/list-view.png) liste ou ![ grille](assets/do-not-localize/grid-view.png) grille. Voir [types de vue dans le sélecteur de ressources](overview-asset-selector.md#types-of-view).
+Le sélecteur de ressources vous permet d’afficher les collections dans une vue ![&#x200B; liste](assets/do-not-localize/list-view.png) liste ou ![&#x200B; grille](assets/do-not-localize/grid-view.png) grille. Voir [types de vue dans le sélecteur de ressources](overview-asset-selector.md#types-of-view).
 
 ## Glisser-déposer des ressources dans la collection {#collection-drag-and-drop}
 

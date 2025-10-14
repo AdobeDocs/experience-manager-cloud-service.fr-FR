@@ -21,7 +21,7 @@ L’explorateur de configurations fournit une API de configuration générique, 
 
 Dans le contexte d’une gestion de contenu découplée dans AEM, considérez une configuration comme un espace de travail dans AEM où vous pouvez créer vos modèles de contenu, qui définissent la structure de votre futur contenu et des fragments de contenu. Vous pouvez avoir plusieurs configurations pour séparer ces modèles.
 
-Si vous connaissez les modèles [ page dans une implémentation AEM full stack](/help/sites-cloud/authoring/page-editor/templates.md), l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
+Si vous connaissez les modèles [&#x200B; page dans une implémentation AEM full stack](/help/sites-cloud/authoring/page-editor/templates.md), l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
 
 ## Création d’une configuration {#how-to-create-a-configuration}
 

@@ -22,7 +22,7 @@ Les rendus sont classés comme statiques et dynamiques, chaque type présentant 
 ## Rendus statiques {#static-renditions}
 
 Les rendus statiques sont des versions prégénérées de ressources numériques, généralement créées lors de l’ingestion ou de la modification de ressources. Ces rendus sont optimisés pour des objectifs et des plateformes spécifiques, tels que des miniatures web, des formats compatibles avec les appareils mobiles pour le responsive design ou des versions haute résolution pour l’impression, afin d’assurer une expérience efficace et cohérente.
-Découvrez comment [ afficher et télécharger des rendus statiques ](#view-and-download-static-renditions) dans Experience Manager Assets.
+Découvrez comment [&#x200B; afficher et télécharger des rendus statiques &#x200B;](#view-and-download-static-renditions) dans Experience Manager Assets.
 
 ### Affichage et téléchargement des rendus statiques{#view-and-download-static-renditions}
 

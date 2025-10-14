@@ -23,7 +23,7 @@ ht-degree: 18%
 
 Les actions Envoyer définissent ce qui se produit lorsqu’un utilisateur envoie un formulaire, comme le stockage des données, le déclenchement de workflows ou l’intégration à des systèmes tiers. Le type d’actions d’envoi que vous pouvez configurer dépend de la méthode de création utilisée pour créer Edge Delivery Services Forms.
 
-Vous pouvez créer Edge Delivery Services Forms à l’aide de l’éditeur [ universel ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ou à l’aide de la création [Forms basé sur les documents](/help/edge/docs/forms/overview.md) et configurer les formulaires avec différentes actions d’envoi en conséquence.
+Vous pouvez créer Edge Delivery Services Forms à l’aide de l’éditeur [&#x200B; universel &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ou à l’aide de la création [Forms basé sur les documents](/help/edge/docs/forms/overview.md) et configurer les formulaires avec différentes actions d’envoi en conséquence.
 
 ## Actions Envoyer pour Forms créées dans l’éditeur universel
 
@@ -63,7 +63,7 @@ You can configure the submit action for forms created in the Universal Editor us
 
 ## Actions Envoyer pour le Forms basé sur les documents
 
-Le Forms basé sur les documents prend en charge l’envoi uniquement aux feuilles de calcul. Pour savoir comment configurer votre feuille de calcul pour recevoir les données envoyées, reportez-vous aux instructions de l’article [ Configurer vos feuilles de calcul Google ou fichiers Microsoft Excel pour commencer à accepter les données ](/help/edge/docs/forms/submit-forms.md).
+Le Forms basé sur les documents prend en charge l’envoi uniquement aux feuilles de calcul. Pour savoir comment configurer votre feuille de calcul pour recevoir les données envoyées, reportez-vous aux instructions de l’article [&#x200B; Configurer vos feuilles de calcul Google ou fichiers Microsoft Excel pour commencer à accepter les données &#x200B;](/help/edge/docs/forms/submit-forms.md).
 
 ## Voir également {#see-also}
 

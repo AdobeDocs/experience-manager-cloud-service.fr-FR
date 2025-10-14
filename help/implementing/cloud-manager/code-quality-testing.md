@@ -29,7 +29,7 @@ Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/co
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [ règles de qualité du code personnalisé ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [&#x200B; règles de qualité du code personnalisé &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Vous pouvez télécharger la liste complète actuelle des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 

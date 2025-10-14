@@ -109,7 +109,7 @@ Le profil personnalisé peut transformer des formats d’image, de vidéo, de do
 
 Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/fr/docs/asset-compute/using/extend/develop-custom-application) qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
-* Utilisez l’API [!DNL Adobe Photoshop]ImageCutout[ de ](https://developer.adobe.com/photoshop/photoshop-api-docs/) et enregistrez le résultat en tant que rendu.
+* Utilisez l’API [!DNL Adobe Photoshop]ImageCutout[&#x200B; de &#x200B;](https://developer.adobe.com/photoshop/photoshop-api-docs/) et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour apporter des modifications, par exemple un système PIM.
 * Utilisez l’API [!DNL Photoshop] pour générer divers rendus à partir du modèle Photoshop.
 * Utilisez l’API [Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) pour optimiser les ressources ingérées et les enregistrer en tant que rendus.

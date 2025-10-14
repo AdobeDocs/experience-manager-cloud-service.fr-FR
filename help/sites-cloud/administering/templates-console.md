@@ -18,7 +18,7 @@ Découvrez comment la console de modèles sert d’emplacement central pour affi
 
 ## Vue d’ensemble {#overview}
 
-Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. [Les modèles modifiables AEM ](/help/implementing/developing/components/templates.md) peuvent définir la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception).
+Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. [Les modèles modifiables AEM &#x200B;](/help/implementing/developing/components/templates.md) peuvent définir la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception).
 
 Une sélection de modèles est présentée aux auteurs de contenu lorsqu’ils [créent des pages dans la console Sites](/help/sites-cloud/authoring/sites-console/creating-pages.md). Les modèles peuvent être utilisés pour créer des pages modifiables avec :
 
@@ -73,7 +73,7 @@ Si l’auteur commence à créer un modèle avec l’éditeur de modèles déjà
 
 ## Propriétés {#properties}
 
-Vous pouvez modifier les [propriétés du modèle](/help/sites-cloud/authoring/page-editor/templates.md) de la même manière que vous pouvez [modifier les propriétés de la page.Les propriétés du modèle de ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) incluent :
+Vous pouvez modifier les [propriétés du modèle](/help/sites-cloud/authoring/page-editor/templates.md) de la même manière que vous pouvez [modifier les propriétés de la page.Les propriétés du modèle de &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) incluent :
 
 * Titre du modèle
 * Description
@@ -135,6 +135,6 @@ Sélectionnez le modèle, puis appuyez ou cliquez sur **Supprimer** pour le supp
 
 ## Création de modèles {#create}
 
-Utilisez le bouton **Créer** de la console pour créer un modèle à votre emplacement actuel. Pour plus d’informations sur la création d’un modèle, consultez le document [ Modèles pour créer des pages modifiables avec l’éditeur de page ](/help/sites-cloud/authoring/page-editor/templates.md).
+Utilisez le bouton **Créer** de la console pour créer un modèle à votre emplacement actuel. Pour plus d’informations sur la création d’un modèle, consultez le document [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Le bouton **Créer** n’est utilisé que pour créer des modèles modifiables avec l’éditeur de page. Consultez le document [Modèles pour créer des pages modifiables avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/templates.md) pour en savoir plus sur la création de modèles basés sur des pages créées avec l’éditeur universel.

@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de 
 
 >[!NOTE]
 >
->Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [ Workflow d’activation de l’arborescence ](#tree-activation), qui peut gérer efficacement des payloads volumineux.
+>Si vous souhaitez publier du contenu en masse, créez un workflow à l’aide de l’étape [&#x200B; Workflow d’activation de l’arborescence &#x200B;](#tree-activation), qui peut gérer efficacement des payloads volumineux.
 >&#x200B;>Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
 >&#x200B;>Si, pour une raison quelconque, vous devez effectuer une personnalisation, vous pouvez déclencher un workflow avec cette étape à l’aide des API de workflow existantes.
 >&#x200B;>Il est toujours recommandé de ne publier que le contenu qui doit être publié. Et soyez prudent en évitant de publier un grand nombre de contenus, si ce n’est pas nécessaire. Cependant, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais des workflows avec l’étape de workflow d’activation de l’arborescence.

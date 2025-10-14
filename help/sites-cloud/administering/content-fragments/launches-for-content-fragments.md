@@ -92,7 +92,7 @@ Alors que le panneau de droite vous permet d’effectuer les opérations suivant
 
 * Définissez également les éléments suivants :
 
-   * Une **Date et heure de promotion** : si le lancement [ doit être automatiquement promu](#promote-automatically)
+   * Une **Date et heure de promotion** : si le lancement [&#x200B; doit être automatiquement promu](#promote-automatically)
 
 ## Création d’un lancement {#create-a-launch}
 
@@ -135,7 +135,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 

@@ -38,7 +38,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* L’onglet [ Personalization pour les fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) permet de définir des fonctionnalités pour l’éditeur de fragments d’expérience et de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-tête et de pied de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
+* L’onglet [&#x200B; Personalization pour les fragments d’expérience](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) permet de définir des fonctionnalités pour l’éditeur de fragments d’expérience et de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-tête et de pied de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
 
 * La [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) permet désormais aux utilisateurs et utilisatrices de gérer efficacement les fragments de contenu traduits. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 

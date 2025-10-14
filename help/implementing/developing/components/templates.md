@@ -21,7 +21,7 @@ Lors de la création d’une page, vous devez sélectionner un modèle. Le modè
 
 * Les modèles modifiables permettent aux créateurs et créatrices de créer et d’utiliser des modèles.
 * Les modèles modifiables peuvent être utilisés pour créer des pages modifiables avec à la fois :
-   * [ Éditeur de page ](/help/sites-cloud/authoring/page-editor/templates.md) et
+   * [&#x200B; Éditeur de page &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) et
    * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Les modèles de page utilisés pour créer des pages modifiables avec l’éditeur universel utilisent un sous-ensemble limité de fonctionnalités de modèle modifiables. Par conséquent, le reste de ce document se concentre sur les modèles modifiables utilisés pour créer des pages modifiables avec l’éditeur de page.
@@ -74,7 +74,7 @@ Lors de la création d’un modèle modifiable :
    * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
    * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
 
-   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques de la structure, consultez la section [Structure](#structure) de ce document.
 
@@ -95,7 +95,7 @@ Lors de la création d’un modèle modifiable :
    * Le contenu initial définit le contenu qui s’affiche lors de la première création d’une page en fonction du modèle.
    * Le contenu initial peut ensuite être modifié par les personnes créant les pages.
 
-   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
+   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Pour plus d’informations techniques sur le contenu initial, reportez-vous à la rubrique [Contenu initial](#initial-content) de ce document.
 
@@ -104,7 +104,7 @@ Lors de la création d’un modèle modifiable :
    * Vous pouvez définir la disposition du modèle pour différents appareils.
    * La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.
 
-   Pour plus d’informations sur la manière dont l’auteur du modèle définit la mise en page du modèle, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
+   Pour plus d’informations sur la manière dont l’auteur du modèle définit la mise en page du modèle, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Pour plus d’informations techniques sur la mise en page d’un modèle, reportez-vous à la rubrique [mise en page](#layout) de ce document.
 
@@ -369,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
-1. Créez un modèle comme vous le feriez pour n’importe quel modèle de page. Voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Cela servira de base à votre type de modèle.
+1. Créez un modèle comme vous le feriez pour n’importe quel modèle de page. Voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Cela servira de base à votre type de modèle.
 1. À l’aide de CRXDE Lite, copiez le modèle créé du nœud `templates` vers le nœud `template-types` sous le dossier [template](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.

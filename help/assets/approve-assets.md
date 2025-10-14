@@ -58,7 +58,7 @@ Pour approuver des ressources dans [!DNL Experience Manager Admin view], procéd
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   De même, vous pouvez approuver des ressources à l’aide de la [ nouvelle vue Assets ](/help/assets/manage-organize-assets-view.md).
+   De même, vous pouvez approuver des ressources à l’aide de la [&#x200B; nouvelle vue Assets &#x200B;](/help/assets/manage-organize-assets-view.md).
 
 ## Approbation en bloc de ressources {#bulk-approve-assets}
 

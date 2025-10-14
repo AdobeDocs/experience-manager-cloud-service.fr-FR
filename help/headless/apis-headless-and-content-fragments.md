@@ -41,7 +41,7 @@ De nombreuses comparaisons sont disponibles en ligne, mais les points forts et l
 
 * Simplicité
 
-   * Les développeurs connaissent (souvent) bien HTTP et REST. Selon le rapport État [Postman des API ](https://www.postman.com/state-of-api/), un pourcentage élevé de développeurs utilisent REST.
+   * Les développeurs connaissent (souvent) bien HTTP et REST. Selon le rapport État [Postman des API &#x200B;](https://www.postman.com/state-of-api/), un pourcentage élevé de développeurs utilisent REST.
 
    * Avec la simplicité vient la familiarité. Avec REST, il n’existe aucune question organisationnelle concernant le propriétaire des requêtes et celui de l’application, alors que ces questions peuvent se poser avec GraphQL.
 

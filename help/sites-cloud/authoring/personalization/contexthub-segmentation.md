@@ -196,7 +196,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [ avoir accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
+1. Après [&#x200B; avoir accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](../assets/contexthub-create-segment.png)
 
@@ -220,7 +220,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après avoir [ accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [&#x200B; accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 
@@ -236,7 +236,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après avoir [ accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
+1. Après avoir [&#x200B; accédé aux segments](#accessing-segments), sélectionnez le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](../assets/contexthub-select-folder.png)
 

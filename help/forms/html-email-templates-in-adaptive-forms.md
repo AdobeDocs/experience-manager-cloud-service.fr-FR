@@ -28,7 +28,7 @@ Cet article vous aide à configurer et à utiliser des modèles d’e-mail dans 
 Voici un aperçu rapide des étapes impliquées :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-1. Configurez l’action d’envoi [ Envoyer un e-mail ](/help/forms/configure-submit-action-send-email.md).
+1. Configurez l’action d’envoi [&#x200B; Envoyer un e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md).
 1. Sélectionnez ou chargez un modèle d’HTML ou saisissez manuellement le modèle d’e-mail.
 1. Testez la configuration de votre e-mail.
 
@@ -159,4 +159,4 @@ Voici un exemple de modèle d’e-mail en texte brut :
 * Utilisez des outils tels que Litmus ou Email on Acid pour prévisualiser votre e-mail sur différents clients de messagerie.
 * Assurez-vous que les noms des espaces réservés correspondent exactement aux noms des champs du formulaire.
 * Recherchez les balises manquantes ou incorrectes dans votre modèle d’HTML.
-* Vérifiez que l’action d’envoi [ Envoyer un e-mail ](/help/forms/configure-submit-action-send-email.md) est correctement configurée.
+* Vérifiez que l’action d’envoi [&#x200B; Envoyer un e-mail &#x200B;](/help/forms/configure-submit-action-send-email.md) est correctement configurée.

@@ -179,7 +179,7 @@ Si vous ne recevez pas d’e-mail de New Relic, procédez comme suit :
 >
 >Si aucune activité **connexion utilisateur** n’est détectée dans votre sous-compte New Relic One pendant 30 jours ou plus, l’agent APM est arrêté. Les données ne sont pas envoyées d’AEM Cloud Service vers New Relic. *Les données ne sont pas envoyées à nouveau tant que votre sous-compte n’est pas réactivé.*
 >
->Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+>Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 
 Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One pour votre programme AEM as a Cloud Service, ouvrez un ticket de support au moyen du Portail d’assistance AEM [&#128279;](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
@@ -205,7 +205,7 @@ Remarque :
 
 +++**Adobe envoie-t-il des notifications d’alerte depuis New Relic One ?**
 
-Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [ profils de notification utilisateur ](/help/journey-onboarding/notification-profiles.md).
+Adobe fournit un accès à New Relic One à des fins d’observabilité uniquement et ne l’utilise pas pour les alertes client ou opérationnelles internes. Les notifications relatives aux incidents sont envoyées à l’aide de [&#x200B; profils de notification utilisateur &#x200B;](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**Qui peut accéder aux données du service cloud New Relic One ?**
@@ -234,5 +234,5 @@ L’assistance Adobe surveille AEM as a Cloud Service avec New Relic One et d’
 
 +++**L&#39;agent APM pour mon compte New Relic One est arrêté. Que s&#39;est-il passé ?**
 
-[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [ Activer votre sous-compte New Relic One ](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
+[Les agents APM sont arrêtés](#limitations) si aucune activité n’est détectée pendant 30 jours ou plus. Suivez les mêmes étapes que celles de la section [&#x200B; Activer votre sous-compte New Relic One &#x200B;](#activate-sub-account) de ce document pour réactiver votre sous-compte New Relic One.
 +++

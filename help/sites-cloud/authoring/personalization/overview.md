@@ -132,7 +132,7 @@ Plusieurs étapes et définitions sont nécessaires pour diffuser votre contenu 
 1. Configurez votre moteur de ciblage en effectuant l’une des opérations suivantes :
 
    1. Configuration de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
-   1. Intégration avec [Adobe Target ](/help/sites-cloud/integrating/integrating-adobe-target.md)
+   1. Intégration avec [Adobe Target &#x200B;](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configurer les audiences.
 

@@ -45,7 +45,7 @@ Dans la vue **Assets** de la console Fragments de contenu, vous pouvez :
 
 ![Console Fragments de contenu - Parcourir les ressources](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* Parcourez la structure et parcourez votre Assets, [ similaire à la fonctionnalité de la console Assets](/help/assets/navigate-assets-view.md)
+* Parcourez la structure et parcourez votre Assets, [&#x200B; similaire à la fonctionnalité de la console Assets](/help/assets/navigate-assets-view.md)
 * [Créer un dossier](/help/assets/manage-digital-assets.md#creating-folders)
 * [Chargement des ressources](/help/assets/add-delete-assets-view.md)
 * Configurez le type d’affichage (Liste, Grille, Galerie, Cascade) et, le cas échéant, les colonnes visibles

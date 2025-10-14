@@ -152,7 +152,7 @@ Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise e
 
 Voir [Ajouter le code intégré Experience Platform Tags](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Experience Platform Tags.
 
-Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [ Incorporation de la visionneuse de vidéos ou d’images dans une page web ](/help/assets/dynamic-media/embed-code.md).
+Pour en savoir plus sur l’utilisation de la fonction de code incorporé d’Experience Manager Dynamic Media, voir [&#x200B; Incorporation de la visionneuse de vidéos ou d’images dans une page web &#x200B;](/help/assets/dynamic-media/embed-code.md).
 
 **Suivi des visionneuses Dynamic Media à l’aide du code incorporé :**
 
@@ -196,7 +196,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [ Guide de référence des visionneuses Dynamic Media ](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers), accédez à la section spécifique à la visionneuse, puis sélectionnez la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [&#x200B; Guide de référence des visionneuses Dynamic Media &#x200B;](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers), accédez à la section spécifique à la visionneuse, puis sélectionnez la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur d’un tel élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, supposons que l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset ». La valeur d’un tel élément de données reçoit des données valides après la première exécution de l’événement LOAD par la visionneuse. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 

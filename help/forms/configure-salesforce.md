@@ -30,7 +30,7 @@ L’intégration de données [[!DNL Experience Manager Forms] Data Integration](
 
 Avant de configurer les services cloud [!DNL Salesforce], assurez-vous d’effectuer les tâches suivantes :
 
-* [Créez une application connectée [!DNL Salesforce] compatible OAuth](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Lorsque vous créez l’application [!DNL Salesforce] connectée, spécifiez l’URL de rappel au format suivant :
+* [Créez une application connectée [!DNL Salesforce] compatible OAuth](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Lorsque vous créez l’application [!DNL Salesforce] connectée, spécifiez l’URL de rappel au format suivant :
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
@@ -62,7 +62,7 @@ Pour accéder au modèle de données de formulaire (FDM) :
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
 1. Sélectionnez le nom du dossier, sélectionnez le **[!UICONTROL modèle de données de Salesforce]**, puis sélectionnez l’icône Modifier ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire (FDM).
 
-Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] ](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
+Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] &#x200B;](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
 
 >[!MORELIKETHIS]
 >

@@ -88,7 +88,7 @@ Après avoir ajouté un type de données, vous devrez définir les **Propriété
 
 Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
 
-![Modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![Modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 
 ### Vos auteurs de contenu {#your-content-authors}
 

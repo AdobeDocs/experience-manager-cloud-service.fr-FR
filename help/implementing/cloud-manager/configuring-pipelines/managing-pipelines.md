@@ -107,7 +107,7 @@ Vous pouvez également cliquer sur l’icône ![Points de suspension - Plus](htt
 
 Pour afficher les détails de l’exécution, cliquez de nouveau sur ![icône représentant des points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) puis sur **[Afficher les détails](#view-details)**.
 
-Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécution en cliquant de nouveau sur ![icône représentant des points de suspension ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) plus puis sur **Annuler**.
+Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécution en cliquant de nouveau sur ![icône représentant des points de suspension &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) plus puis sur **Annuler**.
 
 ## Exécution de plusieurs pipelines {#run-multiple-pipelines}
 
@@ -116,7 +116,7 @@ Avec Cloud Manager, vous pouvez exécuter plusieurs pipelines simultanément, ce
 **Pour exécuter plusieurs pipelines :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Dans le menu de gauche, cliquez sur ![Icône de workflow ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. Dans le menu de gauche, cliquez sur ![Icône de workflow &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 1. Dans le tableau de la page **Pipeline**, cochez les cases en regard des pipelines à exécuter.
 Si nécessaire, cliquez sur ![Icône Filtrer, entonnoir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtres** pour trier les pipelines par nom ou environnement, ou type de code déployé, ou une combinaison des trois.
 1. Dans le coin supérieur droit de la page, cliquez sur **Exécuter la sélection (x)**.
@@ -207,7 +207,7 @@ Vous pouvez annuler en toute sécurité l’exécution du pipeline s’il est en
 
 1. Dans la page d’aperçu du programme, cliquez sur ![icône représentant des points de suspension - Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) du pipeline que vous souhaitez annuler sur la vignette **Pipelines**.
 
-   ![Annulation d’un pipeline ](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+   ![Annulation d’un pipeline &#x200B;](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
 1. Cliquez sur **Annuler**.
 

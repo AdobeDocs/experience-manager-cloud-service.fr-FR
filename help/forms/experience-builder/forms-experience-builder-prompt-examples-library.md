@@ -365,7 +365,7 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : envoi multicanal standard :**
 
-**&#x200B; **     Configurer l’envoi de formulaire avec plusieurs destinations de données :
+**&#x200B; &#x200B;**     Configurer l’envoi de formulaire avec plusieurs destinations de données :
     
     **Envoi de Principal :**
     - Envoyer des données de formulaire au point d’entrée REST : `/api/v1/applications`

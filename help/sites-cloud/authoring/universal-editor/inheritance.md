@@ -42,7 +42,7 @@ Pour modifier le contenu de certaines copies, les auteurs rompent l’héritage 
 
 Lorsqu’une page fait partie de MSM ou d’un lancement et que le contenu est modifié à l’aide de l’éditeur universel, l’éditeur désactive automatiquement l’héritage pour toutes les modifications apportées par les auteurs sur cette page, s’assurant que le contenu modifié est conservé lorsque les mises à jour sont synchronisées à partir du plan directeur.
 
-L’auteur n’a pas besoin de cliquer sur un bouton ni de prendre d’autres mesures pour désactiver l’héritage avant d’apporter des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ce workflow est différent de l’[ Éditeur de page ](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
+L’auteur n’a pas besoin de cliquer sur un bouton ni de prendre d’autres mesures pour désactiver l’héritage avant d’apporter des modifications locales. Dès qu’une modification est apportée, l’héritage est implicitement annulé. Ce workflow est différent de l’[&#x200B; Éditeur de page &#x200B;](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 L’héritage peut être rétabli pour la page entière via :
 

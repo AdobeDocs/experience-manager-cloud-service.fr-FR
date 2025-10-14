@@ -97,7 +97,7 @@ Les auteurs de contenu peuvent maintenant commencer la création !
 Les modèles sont utiles pour configurer rapidement la structure et le style de base d’un site. Cependant, la plupart des projets nécessitent un style et une personnalisation supplémentaires. Les modèles de site permettent de découpler la mise en forme du site, de sorte que les développeurs front-end n’ont pas besoin de connaître AEM pour mettre en forme le site et peuvent
 travailler séparément et parallèlement aux créateurs et créatrices de contenu ; Selon le type de projet, il peut prendre deux formes.
 
-* Pour les projets avec création de pages AEM à l’aide de l’éditeur universel et diffusion via la diffusion [ Edge](/help/edge/overview.md), toute la mise en forme est effectuée dans le projet GitHub.
+* Pour les projets avec création de pages AEM à l’aide de l’éditeur universel et diffusion via la diffusion [&#x200B; Edge](/help/edge/overview.md), toute la mise en forme est effectuée dans le projet GitHub.
    * Consultez le document [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/ue-tutorial) pour plus d’informations.
 * Pour les projets avec la création et la diffusion de pages AEM traditionnelles par le biais de la diffusion [publication](/help/sites-cloud/authoring/author-publish.md) l’administrateur AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils préférés, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
    * Consultez le document [Parcours de création rapide de site AEM](/help/journey-sites/quick-site/overview.md) pour plus d’informations.

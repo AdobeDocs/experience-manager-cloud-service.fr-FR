@@ -32,7 +32,7 @@ Pour extraire votre ensemble de migration à partir de l’outil de transfert de
    ![Image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >[!TIP]
-   >Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [ Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
+   >Une ingestion peut désormais être planifiée pour démarrer automatiquement immédiatement après le succès d’une extraction. Voir [&#x200B; Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour plus d’informations.
 
    >[!IMPORTANT]
    >

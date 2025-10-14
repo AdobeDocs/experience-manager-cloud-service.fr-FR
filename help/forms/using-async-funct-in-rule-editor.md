@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Utilisation de fonctions asynchrones dans un formulaire adaptatif basé sur les composants principaux
 
-L’éditeur de règles [ d’Adaptive Forms](/help/forms/rule-editor-core-components.md) prend en charge les fonctions asynchrones, ce qui vous permet d’intégrer et de gérer les opérations qui nécessitent d’attendre des processus externes ou la récupération de données sans interrompre l’interaction de l’utilisateur avec le formulaire.
+L’éditeur de règles [&#x200B; d’Adaptive Forms](/help/forms/rule-editor-core-components.md) prend en charge les fonctions asynchrones, ce qui vous permet d’intégrer et de gérer les opérations qui nécessitent d’attendre des processus externes ou la récupération de données sans interrompre l’interaction de l’utilisateur avec le formulaire.
 
 ## Quels facteurs déterminent l’utilisation des fonctions asynchrones ou synchrones ?
 
@@ -28,7 +28,7 @@ Supposons, par exemple, qu’un utilisateur charge une image et que l’ensemble
 
 Inversement, avec une approche asynchrone, les utilisateurs peuvent charger des images en arrière-plan tout en continuant à remplir le reste du formulaire de manière transparente. L’interface reste réactive, ce qui permet des mises à jour en temps réel et des commentaires immédiats au fur et à mesure de la progression du chargement. Il améliore l’interaction client, assurant ainsi une expérience fluide et sans interruptions.
 
-![ Fonctions asynchrones et synchrones ](/help/forms/assets/sync-async.png){align=center}
+![&#x200B; Fonctions asynchrones et synchrones &#x200B;](/help/forms/assets/sync-async.png){align=center}
 
 ## Mise en œuvre de fonctions asynchrones pour le Forms adaptatif
 
@@ -47,7 +47,7 @@ Prenons l’exemple d’un formulaire d’enregistrement sur un site web dans le
 
 ![Formulaire de connexion](/help/forms/assets/rule-editor-login-form.png) {width-50%}
 
-Dans un formulaire d’enregistrement, lorsque l’utilisateur clique sur le bouton **Confirmer**, la fonction `matchOTP()` est appelée de manière asynchrone pour vérifier le mot de passe à usage unique saisi. La fonction `matchOTP()` est implémentée en tant que [ fonction personnalisée ](/help/forms/custom-function-core-component-create-function.md). À l’aide du type de règle **[!UICONTROL Appel de fonction asynchrone]** dans l’éditeur de règles, vous pouvez configurer la fonction `matchOTP()` dans l’éditeur de règles d’un formulaire adaptatif. Vous pouvez également implémenter les rappels de succès et d’échec dans l’éditeur de règles.
+Dans un formulaire d’enregistrement, lorsque l’utilisateur clique sur le bouton **Confirmer**, la fonction `matchOTP()` est appelée de manière asynchrone pour vérifier le mot de passe à usage unique saisi. La fonction `matchOTP()` est implémentée en tant que [&#x200B; fonction personnalisée &#x200B;](/help/forms/custom-function-core-component-create-function.md). À l’aide du type de règle **[!UICONTROL Appel de fonction asynchrone]** dans l’éditeur de règles, vous pouvez configurer la fonction `matchOTP()` dans l’éditeur de règles d’un formulaire adaptatif. Vous pouvez également implémenter les rappels de succès et d’échec dans l’éditeur de règles.
 
 La figure suivante illustre les étapes à suivre pour utiliser le type de règle **[!UICONTROL Appel de fonction asynchrone]** afin d’appeler des fonctions asynchrones pour le Forms adaptatif :
 
@@ -58,7 +58,7 @@ La figure suivante illustre les étapes à suivre pour utiliser le type de règl
 >[!NOTE]
 >
 > * L’éditeur de règles d’un formulaire affiche uniquement les fonctions avec un type de retour de `Promise` lorsque vous sélectionnez le type de règle **Appel de fonction asynchrone**.
-> * Pour savoir comment créer une fonction personnalisée, reportez-vous à l’article intitulé [ Création d’une fonction personnalisée pour un formulaire adaptatif basé sur des composants principaux ](/help/forms/custom-function-core-component-create-function.md).
+> * Pour savoir comment créer une fonction personnalisée, reportez-vous à l’article intitulé [&#x200B; Création d’une fonction personnalisée pour un formulaire adaptatif basé sur des composants principaux &#x200B;](/help/forms/custom-function-core-component-create-function.md).
 
 La fonction `matchOTP()` est implémentée en tant que fonction personnalisée. Le code ci-dessous est ajouté dans le fichier JS de la fonction personnalisée :
 
@@ -120,7 +120,7 @@ Lorsque vous sélectionnez **[!UICONTROL Appel de fonction asynchrone]** et les 
 
 La capture d’écran ci-dessous affiche la règle :
 
-![ type de règle ](/help/forms/assets/asyn-function-rule-type.png)
+![&#x200B; type de règle &#x200B;](/help/forms/assets/asyn-function-rule-type.png)
 
 Vous pouvez maintenant procéder à l’implémentation des rappels : `Success` et `Failure` pour la fonction `matchOTP` .
 
@@ -176,7 +176,7 @@ Reportez-vous à la capture d’écran ci-dessous, dans laquelle l’utilisateur
 
 La capture d’écran ci-dessous affiche la règle complète pour utiliser **[!UICONTROL Appel de fonction asynchrone]** afin d’implémenter une fonction asynchrone :
 
-![ Règle pour l’appel de fonction asynchrone ](/help/forms/assets/rule-editor-async-callbacks.png)
+![&#x200B; Règle pour l’appel de fonction asynchrone &#x200B;](/help/forms/assets/rule-editor-async-callbacks.png)
 
 Vous pouvez également modifier les rappels en cliquant sur **[!UICONTROL Modifier le rappel de succès]** et **[!UICONTROL Modifier le rappel d’échec]**.
 

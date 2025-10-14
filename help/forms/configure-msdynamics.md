@@ -101,7 +101,7 @@ Pour configurer la configuration du service cloud [!DNL Microsoft® Dynamics 365
 
    Accédez à votre instance Dynamics dans le **Centre d’administration Power Platform** et accédez à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur de la racine du **service**. Le point d’entrée **API Web** représente la valeur **racine du service** de l’instance Dynamics que vous souhaitez intégrer au Forms adaptatif. L’URL **Racine du service** est au format suivant : `https://<tenant-name>.dynamics.com/api/data/v9.1/`
 
-   ![ Champ racine du service ](/help/forms/assets/dynamics-service-root.png)
+   ![&#x200B; Champ racine du service &#x200B;](/help/forms/assets/dynamics-service-root.png)
 
 1. Sélectionnez le **[!UICONTROL Type d’authentification]** comme **OAuth2.0**.
 1. Spécifiez les valeurs **ID client** (appelé ID d’application) et **Secret client** pour l’application connectée.

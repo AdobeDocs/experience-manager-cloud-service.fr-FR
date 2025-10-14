@@ -149,7 +149,7 @@ Vous pouvez également configurer un formulaire adaptatif pour qu’il soit enre
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône Propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg) et ouvrez l’onglet **[!UICONTROL Brouillons]**.
 
-   ![ Enregistrement automatique ](/help/forms/assets/auto-save.png)
+   ![&#x200B; Enregistrement automatique &#x200B;](/help/forms/assets/auto-save.png)
 
 1. Cochez la case **[!UICONTROL Enregistrer automatiquement les brouillons]** pour activer l’enregistrement automatique du formulaire en tant que brouillons.
 1. Configurez **[!UICONTROL Enregistrer la préférence]** comme **Enregistrer les brouillons à intervalles réguliers** pour enregistrer automatiquement le <!--based on the occurrence of an event or--> de formulaire après un intervalle de temps spécifique.
@@ -175,7 +175,7 @@ Vous pouvez également ignorer les formulaires en cliquant sur les points de sus
 
 ## Étapes suivantes
 
-Dans l’article suivant, découvrez [ comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms ](/help/forms/add-form-link-to-aem-sites-page.md).
+Dans l’article suivant, découvrez [&#x200B; comment ajouter des références à des formulaires sur la page Sites à l’aide du composant Lien du portail Forms &#x200B;](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Articles connexes
 

@@ -41,7 +41,7 @@ Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé 
 
 * La [console de fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) prend désormais en charge les [raccourcis clavier](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM en tant que Cloud Service [diffusion d’image optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions du [ composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permettent d’utiliser ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant d’image.
+* AEM en tant que Cloud Service [diffusion d’image optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions du [&#x200B; composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permettent d’utiliser ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant d’image.
 
 * Les activités de personnalisation AEM peuvent désormais utiliser des fragments d’expérience au lieu de nos offres héritées. Cette fonctionnalité :
    * active un chemin de migration dans lequel AEM contenu promouvrait des offres de fragments d’expérience plutôt que des offres de bibliothèque héritées afin de fournir un contenu stylisé de manière appropriée et conforme à la personnalisation à grande échelle.
@@ -66,7 +66,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets pour [restrein
 
 * **[Prise en charge de l’entrée clavier pour les signatures tactiles](/help/forms/signing-forms-using-scribble.md)** : les Forms adaptatives sont de plus en plus utilisées sur les appareils tactiles et une exigence courante est de prendre en charge les signatures. La signature de documents sur les périphériques tactiles est devenue une méthode acceptée de signature de formulaires. Adaptive Forms prend en charge nativement les signatures tactiles et Adobe Sign pour de tels cas d’utilisation. Désormais, avec d’autres options déjà prises en charge, vous pouvez également utiliser le clavier pour apposer des signatures tactiles dans un formulaire adaptatif. Elle contribue également à améliorer la conformité en matière d’accessibilité.
 
-![ Prise en charge de l’entrée du clavier pour les signatures tactiles sur iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
+![&#x200B; Prise en charge de l’entrée du clavier pour les signatures tactiles sur iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
 * **Utiliser l’assistant de Forms adaptatif dans la langue locale** : vous pouvez utiliser l’assistant dans la langue de votre choix. Il prend désormais en charge toutes les langues prises en charge par Adobe Experience Manager.
 
@@ -103,7 +103,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets pour [restrein
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Le [ navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md) dispose désormais d’un champ d’entrée de chemin d’accès, ce qui permet de passer directement à un dossier spécifique dans la hiérarchie du référentiel.
+* Le [&#x200B; navigateur de référentiel](/help/implementing/developing/tools/repository-browser.md) dispose désormais d’un champ d’entrée de chemin d’accès, ce qui permet de passer directement à un dossier spécifique dans la hiérarchie du référentiel.
 * Sling Content Distribution (SCD) prend désormais en charge une action &quot;d’invalidation&quot; explicite pour invalider le contenu sans que ce contenu soit publié. Voir la page [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus de détails.
 * mod_macro est désormais disponible dans AEM as a Cloud Service. Voir [cette table](/help/implementing/dispatcher/disp-overview.md) pour obtenir la liste des modules Apache pris en charge.
 

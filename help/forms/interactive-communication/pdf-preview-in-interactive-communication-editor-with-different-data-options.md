@@ -53,7 +53,7 @@ Prévisualisez les communications interactives en n’utilisant aucune donnée, 
 
 +++&#x200B;2. Aperçu avec des données JSON locales
 
-2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [ de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
+2.1. Préparez un fichier JSON structuré. À titre de référence, vous pouvez copier les données d’exemple du [&#x200B; de schéma JSON (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilisé pour la communication.
 
 2.2. Dans l’éditeur IC, accédez à **Aperçu PDF** > Utilisation des données locales.
 

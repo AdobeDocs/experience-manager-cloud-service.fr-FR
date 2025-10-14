@@ -169,7 +169,7 @@ Intégration native aux solutions [Salesforce](/help/forms/configure-salesforce.
 Connectez-vous à un service accessible sur le web via des API RESTful via des [actions d’envoi](/help/forms/configure-submit-action-restpoint.md) ou [intégration de données](/help/forms/data-integration.md). Le modèle de données de formulaire abstrait la complexité de l’intégration, fournissant une interface cohérente quelle que soit l’architecture du système sous-jacent.
 
 **Échange De Données En Temps Réel**
-Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [ intégration de données](/help/forms/data-integration.md) complète.
+Activez le flux de données bidirectionnel entre les formulaires et les systèmes d’entreprise. Préremplissez des formulaires à partir d’enregistrements existants, validez les données actives et mettez à jour plusieurs systèmes simultanément lors de leur envoi grâce à une [&#x200B; intégration de données](/help/forms/data-integration.md) complète.
 
 ### Suivi : analyses et surveillance des performances {#track}
 

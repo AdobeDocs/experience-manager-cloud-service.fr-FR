@@ -51,7 +51,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 
 | Fonctions ou cas d’utilisation | Statut dans [!DNL Experience Manager] as a [!DNL Cloud Service] | Commentaires |
 |-----|-----|-----|
-| [Détection des doublons de ressources ](/help/assets/detect-duplicate-assets.md) | Cela fonctionne différemment | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
+| [Détection des doublons de ressources &#x200B;](/help/assets/detect-duplicate-assets.md) | Cela fonctionne différemment | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
 | [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Cela fonctionne différemment | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle qu’[!DNL ImageMagick] était disponible pour générer les rendus. |
 | Écriture différée des métadonnées | Cela fonctionne différemment | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. Les microservices de ressources gèrent l’écriture différée. |
 | Traitement des ressources chargées à l’aide du gestionnaire de packages | Cela nécessite une intervention manuelle | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
@@ -64,7 +64,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Filtre de disposition du contenu | Non pris en charge. | Un cas d’utilisation courant de `ContentDispositionFilter` consiste à permettre aux administrateurs de configurer des [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration Dispatcher. Sur les instances de création, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/content-disposition-filter). |
 | Modèle de séance photo du produit | Non pris en charge. | Voir [Modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Traduction intelligente | Non pris en charge. | La traduction intelligente n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| WebDAV | Non pris en charge. | Pour obtenir des alternatives, consultez Intégration de [[!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md) ou les [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
+| WebDAV | Non pris en charge. | Pour obtenir des alternatives, consultez Intégration de [[!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md) ou les [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
 | Interface utilisateur classique | Non pris en charge. | Seule une interface utilisateur tactile est disponible. |
 
 **Voir également**

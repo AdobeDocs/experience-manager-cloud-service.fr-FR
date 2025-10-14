@@ -179,7 +179,7 @@ L’outil d’intégration d’API permet aux créateurs et créatrices de formu
 
 ### Mode Nœud pour la gestion des autorisations {#node-view}
 
-AEM introduit la gestion des autorisations pour Node View. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais elle est plus conviviale et plus efficace. Voir l’article [ dédié](/help/security/touch-ui-principal-view.md) pour plus d’informations.
+AEM introduit la gestion des autorisations pour Node View. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais elle est plus conviviale et plus efficace. Voir l’article [&#x200B; dédié](/help/security/touch-ui-principal-view.md) pour plus d’informations.
 
 ### Processus d’obsolescence mis à jour {#updated-deprecation-process}
 

@@ -31,7 +31,7 @@ La prise en charge des applications sur une seule page dans AEM s’accompagne d
 
 Pour plus d’informations sur les SPA dans AEM, reportez-vous aux sections suivantes :
 
-* [ Plan directeur d’application d’une seule page ](blueprint.md) pour les exigences techniques d’une application monopage.
+* [&#x200B; Plan directeur d’application d’une seule page &#x200B;](blueprint.md) pour les exigences techniques d’une application monopage.
 * [Prise en main des SPA dans AEM à l’aide de React](getting-started-react.md) pour une présentation rapide d’une SPA simple à l’aide de React.
 * [Prise en main des SPA dans AEM à l’aide d’Angular](getting-started-angular.md) pour une présentation rapide d’une SPA simple à l’aide d’Angular.
 

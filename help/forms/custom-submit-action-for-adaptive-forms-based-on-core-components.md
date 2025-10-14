@@ -86,7 +86,7 @@ Le diagramme ci-dessous décrit les étapes de création d’une action d’envo
 1. Créez un fichier de configuration.
 Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
-   ![ Créer un fichier de configuration ](/help/forms/assets/custom-submit-action-create-config-folder.png)
+   ![&#x200B; Créer un fichier de configuration &#x200B;](/help/forms/assets/custom-submit-action-create-config-folder.png)
 
 1. Ouvrez ce fichier et collez le contenu suivant, en remplaçant `[customsubmitaction]` par le nom de votre action d’envoi
 
@@ -257,7 +257,7 @@ Dans le dossier `customsubmitaction`, créez un fichier nommé `.content.xml`.
 
 1. Accédez à la page Prise en charge du journal de la console web de Adobe Experience Manager **&#x200B;**&#x200B;à l’adresse `http://<host>:<port>/system/console/slinglog`.
 
-   ![ConfigMgr ](/help/forms/assets/custom-submit-action-sling-log.png)
+   ![ConfigMgr &#x200B;](/help/forms/assets/custom-submit-action-sling-log.png)
 
 1. Cliquez sur l’option `logs/error.log` .
    ![Ouvrez le fichier error.log](/help/forms/assets/custom-submit-action-error-log.png)

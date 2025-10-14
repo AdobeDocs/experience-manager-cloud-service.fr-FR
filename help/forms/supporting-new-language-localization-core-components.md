@@ -315,7 +315,7 @@ Cette étape s’applique uniquement aux langues autres que les suivantes couram
 
    Dans le dossier `languages`, créez un fichier nommé `.content.xml`. Ne copiez pas le nom du fichier à partir de ce document, mais saisissez-le manuellement.
 
-   ![ créez un nouveau fichier nommé `.content.xml`](etc-content-xml.png)
+   ![&#x200B; créez un nouveau fichier nommé `.content.xml`](etc-content-xml.png)
 
    Ouvrez ce fichier et collez le contenu suivant, en remplaçant [LOCALE_CODE] par le code de paramètres régionaux réel (par exemple, ar-ae pour l’arabe).
 

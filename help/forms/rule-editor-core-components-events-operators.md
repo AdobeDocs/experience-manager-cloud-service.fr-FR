@@ -365,7 +365,7 @@ Une règle d’appel de fonction asynchrone standard pour exécuter une fonction
 
 `[Callback Function];`
 
-Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [ Utilisation d’appels de fonction asynchrones dans l’éditeur de règles ](/help/forms/using-async-funct-in-rule-editor.md).
+Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [&#x200B; Utilisation d’appels de fonction asynchrones dans l’éditeur de règles &#x200B;](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

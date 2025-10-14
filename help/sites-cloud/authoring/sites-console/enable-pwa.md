@@ -105,7 +105,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Activation de fonctionnalités PWA pour votre site {#enabling-pwa-for-your-site}
 
-Une fois [ conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
+Une fois [&#x200B; conditions préalables remplies](#prerequisites) il est facile pour un créateur ou une créatrice de contenu d’activer les fonctionnalités de PWA sur un site. Vous trouverez ci-dessous un aperçu basique de la procédure. Les différentes options sont présentées dans la section [Options détaillées](#detailed-options).
 
 1. Connectez-vous à AEM.
 1. Dans le menu principal, sélectionnez **Navigation** > **Sites**.

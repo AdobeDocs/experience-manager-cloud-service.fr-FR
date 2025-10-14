@@ -548,7 +548,7 @@ Les applications AEM atteignent souvent d’autres applications à l’aide du p
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ HttpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Consultez le [ Guide d’optimisation ](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
+Consultez le [&#x200B; Guide d’optimisation &#x200B;](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -737,7 +737,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` contient `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->En règle générale, cette situation est un cas de non-respect des [ directives relatives à la structure du package de contenu ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
+>En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -797,7 +797,7 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [ Les packages ne doivent pas contenir de configurations OSGi en double ](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout recouvrement.
+Tout comme la règle [&#x200B; Les packages ne doivent pas contenir de configurations OSGi en double &#x200B;](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout recouvrement.
 
 ### Le mode de création par défaut ne doit pas être défini sur l’interface utilisateur classique {#oakpal-default-authoring}
 
@@ -900,7 +900,7 @@ L’outil de migration dans le [référentiel GitHub de ressources d’Experienc
 
 Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page](/help/implementing/developing/components/templates.md).
 
-La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/).
+La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation Experience Manager &#x200B;](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### L’utilisation des composants de base hérités n’est pas encouragée. {#oakpal-usage-legacy}
 
@@ -911,7 +911,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 
 Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés depuis plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
-[Outils de modernisation Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
+[Outils de modernisation Experience Manager &#x200B;](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
 
 ### Utilisez uniquement les noms et l’ordre des modes d’exécution pris en charge {#oakpal-supported-runmodes}
 
@@ -920,7 +920,7 @@ Les composants de base hérités (c’est-à-dire les composants situés dans `/
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service applique une stratégie de nommage stricte pour les noms des modes d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge est basée sur le document [Déploiement sur un as a Cloud Service Experience Manager ](/help/implementing/deploying/overview.md#runmodes) et tout écart par rapport à cette liste est identifié comme un problème.
+Experience Manager as a Cloud Service applique une stratégie de nommage stricte pour les noms des modes d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge est basée sur le document [Déploiement sur un as a Cloud Service Experience Manager &#x200B;](/help/implementing/deploying/overview.md#runmodes) et tout écart par rapport à cette liste est identifié comme un problème.
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent être des enfants directs de `/oak:index`. {#oakpal-custom-search}
 

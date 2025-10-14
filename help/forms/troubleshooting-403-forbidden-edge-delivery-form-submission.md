@@ -262,7 +262,7 @@ Avec les architectures Helix-5 et Repoless, suivez ces instructions :
 ## Ressources supplémentaires
 
 - [Configuration du filtre Référent avec AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [ Guide de configuration CORS ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [&#x200B; Guide de configuration CORS &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Comprendre le partage de ressources entre origines multiples (CORS)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentation de Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 

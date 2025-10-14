@@ -92,7 +92,7 @@ Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe
 * La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme lorsque vous préremplissez la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lors de l’initialisation du champ.
 * Lorsque vous créez des règles pour les menus déroulants, les boutons radio ou les cases à cocher, les options ou les valeurs de ces objets de formulaire sont préremplies dans l’éditeur de règles.
 
-Pour savoir comment utiliser l’interface utilisateur pour écrire et gérer des règles dans un éditeur de règles, reportez-vous à l’article [ Interface utilisateur de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md) .
+Pour savoir comment utiliser l’interface utilisateur pour écrire et gérer des règles dans un éditeur de règles, reportez-vous à l’article [&#x200B; Interface utilisateur de l’éditeur de règles pour Forms adaptatif basé sur les composants principaux](/help/forms/rule-editor-core-components-user-interface.md) .
 
 ## Voir également
 

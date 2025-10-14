@@ -34,7 +34,7 @@ Dans cet exemple, un utilisateur a sélectionné une zone cliquable et a accéd�
 
 ## Vidéo sur la création de bannières de carrousel {#watch-how-carousel-banners-are-created}
 
-Regardez une présentation sur [la manière dont les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Durée : 10 minutes et 33 secondes). Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
+Regardez une présentation sur [la manière dont les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (Durée : 10 minutes et 33 secondes). Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
 
 >[!NOTE]
 >
@@ -147,10 +147,10 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
    <td>SKU unique, trouvé dans la chaîne de requête.</td>
    <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête <code>productId=</code>, et il s’agit clairement d’une valeur de SKU. Par conséquent, il suffit d’indiquer dans les champs de SKU des zones réactives ou cliquables des valeurs telles que <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -166,9 +166,9 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
    <td>SKU et ID de catégorie dans la chaîne de requête.</td>
    <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie est stocké dans le paramètre <code>category=</code>.</p> <p>En tant que telles, les définitions zone réactive/zone cliquable sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
      <li><p>Le SKU est <strong><code>305466</code></strong> et <code>categoryId</code> est <code>1100004</code>.</p> </li>

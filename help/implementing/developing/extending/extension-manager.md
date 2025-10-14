@@ -30,7 +30,7 @@ Pour plus d’informations :
 * EXTENSION MANAGER :
 
    * L’[Extension Manager dans AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/)
-   * [ Extensions développées par Adobe ](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+   * [&#x200B; Extensions développées par Adobe &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 * AEM App Builder
 

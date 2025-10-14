@@ -228,7 +228,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Afficher comme publié(e)** :
 
-   ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
+   ![Afficher comme publié(e) &#x200B;](../assets/style-cif-component/view-as-published.png)
 
    La page s’ouvre sans aucun code JavaScript AEM de création chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est ajouté à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur l’environnement de création AEM.
 
@@ -468,7 +468,7 @@ Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) 
 
 Lors du déploiement de nouveaux fichiers CSS et/ou JavaScript, il est également important de s’assurer que le navigateur ne diffuse pas de fichiers obsolètes. Vous pouvez éliminer ce problème potentiel en vidant la mémoire cache du navigateur ou en lançant une nouvelle session du navigateur.
 
-AEM tente également de mettre en cache les bibliothèques clientes pour des raisons de performances. Il arrive qu’à la suite d’un déploiement de code les fichiers plus anciens soient diffusés. Vous pouvez invalider manuellement le cache des bibliothèques clientes d’AEM à l’aide de l’outil [ Reconstruire les bibliothèques clientes .](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *Invalider les caches est la méthode recommandée si vous pensez qu’AEM a mis en cache une ancienne version d’une bibliothèque cliente. La reconstruction des bibliothèques est inefficace et prend du temps.*
+AEM tente également de mettre en cache les bibliothèques clientes pour des raisons de performances. Il arrive qu’à la suite d’un déploiement de code les fichiers plus anciens soient diffusés. Vous pouvez invalider manuellement le cache des bibliothèques clientes d’AEM à l’aide de l’outil [&#x200B; Reconstruire les bibliothèques clientes .](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *Invalider les caches est la méthode recommandée si vous pensez qu’AEM a mis en cache une ancienne version d’une bibliothèque cliente. La reconstruction des bibliothèques est inefficace et prend du temps.*
 
 ## Félicitations {#congratulations}
 

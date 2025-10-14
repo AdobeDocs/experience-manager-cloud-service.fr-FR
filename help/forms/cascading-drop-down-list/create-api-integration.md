@@ -58,7 +58,7 @@ La réponse GeoNames se présente comme suit :
 
 
 
-![obtenir-tous-les-pays ](assets/api-integration.png)
+![obtenir-tous-les-pays &#x200B;](assets/api-integration.png)
 
 
 ## GetChildren

@@ -52,7 +52,7 @@ Vous pouvez également utiliser les URL affichées dans l’assistant pour affic
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Voir [ Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
+Voir [&#x200B; Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations sur la manière de récupérer les URL de vos environnements.
 
 Le contenu peut également être publié pour la prévisualisation à l’aide d’un [workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre `agentId` défini sur `preview` ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un `AgentFilter` configuré pour la prévisualisation.
 

@@ -22,9 +22,9 @@ Avant de pouvoir remplacer la page d’erreur par défaut, procédez comme suit 
 
 1. Créez un fichier nommé `cdn.yaml` ou similaire, en vous référant à la section de syntaxe ci-dessous.
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [ Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [&#x200B; Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [ Utilisation de pipelines de configuration ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [&#x200B; Utilisation de pipelines de configuration &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Déployez la configuration.
 

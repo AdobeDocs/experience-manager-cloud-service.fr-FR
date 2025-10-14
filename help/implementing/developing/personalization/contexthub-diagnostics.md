@@ -43,7 +43,7 @@ La section Modules répertorie tous les modules d’IU ContextHub qui ont été 
 
 ## Clientlibs {#clientlibs}
 
-La section Clientlibs répertorie tous les dossiers de bibliothèques clientes [ chargés par ContextHub. ](/help/implementing/developing/introduction/clientlibs.md) Les bibliothèques clientes sont classées comme suit :
+La section Clientlibs répertorie tous les dossiers de bibliothèques clientes [&#x200B; chargés par ContextHub. &#x200B;](/help/implementing/developing/introduction/clientlibs.md) Les bibliothèques clientes sont classées comme suit :
 
 * **kernel.js :** bibliothèques clientes qui implémentent le framework ContextHub, le moteur de segment et les types de stockage.
 * **ui.js :** bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.

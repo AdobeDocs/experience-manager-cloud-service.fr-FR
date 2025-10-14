@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # Contenu associé{#associated-content}
 
-Pour les fragments de contenu as a Cloud Service Adobe Experience Manager (AEM), la fonctionnalité de contenu associée (disponible dans l’éditeur d’origine) fournit la connexion afin que les ressources puissent être utilisées avec le fragment. [ offre ainsi une certaine flexibilité en fournissant une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu ](/help/assets/content-fragments/content-fragments.md#using-associated-content), tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Cette fonctionnalité peut être utilisée à la fois pour la diffusion de contenu sans interface utilisateur graphique et pour la création de pages.
+Pour les fragments de contenu as a Cloud Service Adobe Experience Manager (AEM), la fonctionnalité de contenu associée (disponible dans l’éditeur d’origine) fournit la connexion afin que les ressources puissent être utilisées avec le fragment. [&#x200B; offre ainsi une certaine flexibilité en fournissant une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu &#x200B;](/help/assets/content-fragments/content-fragments.md#using-associated-content), tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Cette fonctionnalité peut être utilisée à la fois pour la diffusion de contenu sans interface utilisateur graphique et pour la création de pages.
 
 >[!NOTE]
 >

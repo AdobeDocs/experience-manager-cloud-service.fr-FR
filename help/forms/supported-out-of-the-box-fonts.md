@@ -52,5 +52,5 @@ La liste des polices prises en charge en standard est la suivante :
 * eurosign.ttf
 
 
-Outre les polices mentionnées ci-dessus, vous pouvez utiliser des polices personnalisées pour donner aux PDF un aspect spécifique. Pour activer les polices personnalisées, vous [ ajoutez des polices personnalisées à votre environnement as a Cloud Service Forms ](/help/forms/use-custom-fonts.md) avec une licence valide.
+Outre les polices mentionnées ci-dessus, vous pouvez utiliser des polices personnalisées pour donner aux PDF un aspect spécifique. Pour activer les polices personnalisées, vous [&#x200B; ajoutez des polices personnalisées à votre environnement as a Cloud Service Forms &#x200B;](/help/forms/use-custom-fonts.md) avec une licence valide.
 

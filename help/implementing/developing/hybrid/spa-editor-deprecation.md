@@ -49,7 +49,7 @@ L’obsolescence signifie que les SDK suivants sont maintenant bloqués.
 
 Le remplacement le plus approprié pour l’éditeur de SPA dépend des besoins de vos projets.
 
-* **[L’éditeur universel ](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
+* **[L’éditeur universel &#x200B;](https://www.aem.live/docs/aem-authoring)** est le meilleur remplacement direct de l’éditeur de SPA.
    * L’éditeur universel est également un éditeur visuel et a été conçu spécifiquement pour les implémentations découplées, incorporant toute l’expérience d’Adobe à partir de l’éditeur de SPA.
    * L’éditeur universel a également été [publié pour AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (avec la version 2024.11.05 d’AEM 6.5) et prend donc en charge les cas d’utilisation AMS et On-Prem en plus des Cloud Services.
 * **[l’éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md)** est une alternative pour ceux qui préfèrent un éditeur basé sur les formulaires.
@@ -65,7 +65,7 @@ L’éditeur universel offre de nombreux avantages, ce qui fait de la migration 
 * **Préparation à l’avenir :** la feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
 * **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit le verrouillage de tech stack.
 * **Apportez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet l’adoption sans nécessiter de refactorisation complexe.
-* **Extensibilité :** l’éditeur universel bénéficie d’un cadre d’extension [ robuste,](/help/implementing/universal-editor/extending.md) qui comprend des intégrations à GenAI, Workfront, etc.
+* **Extensibilité :** l’éditeur universel bénéficie d’un cadre d’extension [&#x200B; robuste,](/help/implementing/universal-editor/extending.md) qui comprend des intégrations à GenAI, Workfront, etc.
 
 Il n’existe pas de chemin de migration direct de l’éditeur de SPA vers l’éditeur universel. Cela est dû à des différences fondamentales entre les deux technologies.
 

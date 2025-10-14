@@ -141,7 +141,7 @@ Par conséquent, il est recommandé d’utiliser uniquement les déclencheurs `o
 
 ### Types/propriétés de nœuds {#node-types-properties}
 
-En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM vous permet d’exclure des types ](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) nœuds de la copie de la source vers la Live Copy.
+En plus de personnaliser les actions de déploiement, MSM vous permet de personnaliser les propriétés des nœuds qui sont déployés. La configuration OSGi [MSM vous permet d’exclure des types &#x200B;](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) nœuds de la copie de la source vers la Live Copy.
 
 ## Informations supplémentaires {#further-information}
 

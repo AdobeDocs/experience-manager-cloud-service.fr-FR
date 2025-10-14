@@ -53,12 +53,12 @@ Pour plus d’informations sur l’utilisation de MSM pour les fragments de cont
 
   >[!CAUTION]
   >
-  >Si vous souhaitez utiliser MSM pour créer des copies de fragments de contenu), toutes les contraintes **Unique** doivent être supprimées de tous les types de données utilisés dans les [ modèles de fragments de contenu ](/help/assets/content-fragments/content-fragments-models.md) respectifs.
+  >Si vous souhaitez utiliser MSM pour créer des copies de fragments de contenu), toutes les contraintes **Unique** doivent être supprimées de tous les types de données utilisés dans les [&#x200B; modèles de fragments de contenu &#x200B;](/help/assets/content-fragments/content-fragments-models.md) respectifs.
 
 * [Afficher les propriétés et l’état de la source et de la Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
 * [Propager les modifications de la source à la Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * Annuler et rétablir l’héritage pour :
-   * champs et variations dans l’ [ éditeur de fragment de contenu ](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * champs et variations dans l’ [&#x200B; éditeur de fragment de contenu &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
    * [métadonnées des ressources associées](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspension et reprise de la relation](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Suppression de la relation dynamique](/help/assets/reuse-assets-using-msm.md#detach)

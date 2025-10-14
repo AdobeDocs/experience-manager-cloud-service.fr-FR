@@ -23,7 +23,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service v
 
 ### Nouveautés de [!DNL Sites]  {#what-is-new-sites}
 
-* Le SDK JavaScript de l’éditeur d’application sur une seule page [ est désormais Open Source ](/help/implementing/developing/hybrid/reference-materials.md).
+* Le SDK JavaScript de l’éditeur d’application sur une seule page [&#x200B; est désormais Open Source &#x200B;](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 

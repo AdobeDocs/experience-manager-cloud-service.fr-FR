@@ -231,7 +231,7 @@ Oui, vous pouvez configurer différents aspects :
 
 Pour une prise en charge supplémentaire :
 
-- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
+- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
 - Consultez le [guide de déploiement et de configuration](deploy-forms-experience-builder.md)
 - Contactez votre administrateur système
 - Contactez l’assistance Adobe pour les problèmes techniques

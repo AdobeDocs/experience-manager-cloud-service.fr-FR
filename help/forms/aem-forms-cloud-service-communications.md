@@ -148,6 +148,6 @@ La [documentation de référence sur les API](https://developer.adobe.com/experi
 >[!MORELIKETHIS]
 >
 >* [Présentation des communications as a Cloud Service AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [ Architecture as a Cloud Service AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [&#x200B; Architecture as a Cloud Service AEM Forms pour les API de communication et de Forms adaptatifs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Traitement des communications - API synchrones](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Traitement des communications - API de lot](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

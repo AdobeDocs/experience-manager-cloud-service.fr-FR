@@ -39,7 +39,7 @@ Ce tutoriel fournit un guide détaillé sur la création d’un formulaire adapt
 
 AEM Forms fournit des composants de base et des composants principaux pour créer des expériences de formulaires. Les composants principaux sont l’approche moderne et recommandée pour créer de nouvelles expériences de formulaires. Pourquoi utiliser les composants principaux ? Ces composants sont légers, Open Source (disponibles sur github), offrent un excellent score Google Lighthouse et des vitaux web, sont compatibles avec l’accessibilité et apportent toutes les fonctionnalités courantes d’AEM Sites (telles que le contrôle de version et la localisation). En outre, ces composants sont plus faciles à mettre en forme. Vous pouvez facilement personnaliser leur aspect selon les directives de valorisation de marque de votre entreprise. Ils n’ont aucune dépendance tierce, tout développeur maîtrisant JavaScript et CSS peut facilement personnaliser ces composants.
 
-![ Pourquoi créer un Forms adaptatif basé sur les composants principaux ? Ces composants sont légers, plus faciles à mettre en forme, offrent un score de phare élevé, prennent en charge les normes d’accessibilité, facilement personnalisables et open source, disponibles sur github, sans dépendance à l’égard des bibliothèques tierces et n’ont pratiquement pas de courbe d’apprentissage pour les développeurs AEM et les auteurs AEM En plus, les composants principaux AEM Forms disposent de toutes les fonctionnalités des composants principaux de la gestion de contenu web d’.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![&#x200B; Pourquoi créer un Forms adaptatif basé sur les composants principaux ? Ces composants sont légers, plus faciles à mettre en forme, offrent un score de phare élevé, prennent en charge les normes d’accessibilité, facilement personnalisables et open source, disponibles sur github, sans dépendance à l’égard des bibliothèques tierces et n’ont pratiquement pas de courbe d’apprentissage pour les développeurs AEM et les auteurs AEM En plus, les composants principaux AEM Forms disposent de toutes les fonctionnalités des composants principaux de la gestion de contenu web d’.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Cas d’utilisation : pré-qualification simplifiée du prêt immobilier avec Forms adaptatif
 
@@ -72,7 +72,7 @@ Le développement local avec AEM SDK vous permet de gagner du temps et de simpli
 
 1. [Installation du SDK AEM](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development) : téléchargez et installez la dernière version du SDK AEM. Cela fournit les outils essentiels au développement AEM. Notez la version du SDK AEM.
 
-   ![ Distribution-Logiciels](/help/forms/assets/software-distribution.png)
+   ![&#x200B; Distribution-Logiciels](/help/forms/assets/software-distribution.png)
 
    ![installer AEM SDK](/help/forms/assets/start-aem-sdk.png)
 

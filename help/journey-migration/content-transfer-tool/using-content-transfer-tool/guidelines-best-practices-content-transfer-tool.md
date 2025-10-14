@@ -38,7 +38,7 @@ Les versions antérieures à la version 2.0.0 ne sont pas prises en charge et il
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 
-* Exécutez le [ nettoyage des révisions ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et les [ contrôles de cohérence de l’entrepôt de données ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=fr) sur le référentiel **source** afin que vous puissiez identifier les problèmes potentiels et réduire la taille du référentiel.
+* Exécutez le [&#x200B; nettoyage des révisions &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et les [&#x200B; contrôles de cohérence de l’entrepôt de données &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=fr) sur le référentiel **source** afin que vous puissiez identifier les problèmes potentiels et réduire la taille du référentiel.
 
 * Lors de la phase d’ingestion, Adobe vous recommande d’exécuter l’ingestion en utilisant le mode *Wipe* activé où le référentiel existant (auteur ou Publish) dans l’environnement de Cloud Service Adobe Experience Manager (AEM) cible est supprimé. Ensuite, mettez à jour avec les données du jeu de migration. Ce mode est plus rapide que le mode sans effacement, où le jeu de migration est appliqué en plus du contenu actuel.
 

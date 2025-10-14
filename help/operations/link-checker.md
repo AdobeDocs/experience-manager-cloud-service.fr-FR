@@ -70,7 +70,7 @@ Le Vérificateur de lien externe repose sur plusieurs services et comprendre leu
 1. Chaque fois qu’un auteur de contenu enregistre un lien vers une page, un gestionnaire d’événements est déclenché.
 1. Le gestionnaire d’événements parcourt tout le contenu sous `/content` et recherche les liens nouveaux ou mis à jour et les ajoute à un cache pour le vérificateur de liens.
 1. Le **Service de vérification de lien Day CQ** s’exécute ensuite selon un calendrier régulier afin de vérifier les entrées du cache et la validité de leur syntaxe.
-1. Les liens validés par la syntaxe s’affichent alors dans la fenêtre [ Vérificateur de lien externe .](#external-using) Cependant, ils auront le statut **En attente**.
+1. Les liens validés par la syntaxe s’affichent alors dans la fenêtre [&#x200B; Vérificateur de lien externe .](#external-using) Cependant, ils auront le statut **En attente**.
 1. La **Tâche de vérification de lien Day CQ** s’exécute ensuite régulièrement pour valider les liens en effectuant un appel GET.
 1. La **Tâche de vérification de lien Day CQ** met ensuite à jour les entrées de la [fenêtre du Vérificateur de lien externe](#external-using) avec les résultats des appels GET.
 
@@ -81,7 +81,7 @@ Le Vérificateur de lien externe est une console qui fournit un aperçu de tous 
 1. Dans la navigation globale, sélectionnez **Outils** -> **Sites**.
 1. Sélectionnez **Vérificateur de lien externe** et une liste de tous les liens externes est affichée.
 
-![ Vérificateur de lien externe ](assets/external-link-checker.png)
+![&#x200B; Vérificateur de lien externe &#x200B;](assets/external-link-checker.png)
 
 Chaque entrée du tableau représente un lien externe détecté par le service Vérificateur de liens. Les colonnes affichées sont les suivantes :
 

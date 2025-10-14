@@ -23,7 +23,7 @@ Dans Adobe Experience Manager (AEM) as a Cloud Service, l’OpenAPI AEM pour la 
 
 Cette API :
 
-* est le successeur de [ Prise en charge des fragments de contenu dans l’API HTTP AEM Assets ](/help/assets/content-fragments/assets-api-content-fragments.md)
+* est le successeur de [&#x200B; Prise en charge des fragments de contenu dans l’API HTTP AEM Assets &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md)
 
 * complète les [API ouvertes de fragments de contenu et de modèles de fragments de contenu](/help/headless/content-fragment-openapis.md), qui vous permettent de gérer les fragments de contenu et les modèles de fragment de contenu (CRUD)
 

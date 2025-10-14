@@ -289,7 +289,7 @@ Pour commencer à utiliser cette intégration :
 
 * [Documentation AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=fr)
 * [Documentation Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
-* [ Présentation du système XDM ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr)
+* [&#x200B; Présentation du système XDM &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr)
 * [Ingestion par flux dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr)
 * [Présentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
 * [Fonctionnalités d’accès anticipé AEM Forms](/help/forms/early-access-ea-features.md)

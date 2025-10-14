@@ -29,7 +29,7 @@ Pour l’exportation de fragments d’expérience et/ou de fragments de contenu 
 
 >[!NOTE]
 >
->Consultez également la documentation d’Adobe Target : [ Intégration de Target à Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/fr/docs/target/using/integrate/aem/aem-target-integration).
+>Consultez également la documentation d’Adobe Target : [&#x200B; Intégration de Target à Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/fr/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Création de la configuration Adobe Target {#create-configuration}
 

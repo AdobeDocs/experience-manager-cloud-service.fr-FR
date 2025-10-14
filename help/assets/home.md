@@ -38,7 +38,7 @@ La documentation Adobe Enterprise offre plus qu’une collection de guides de l�
 + [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/fr/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
-+ [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
++ [Experience Manager &#x200B;](experience-manager-release-information#/help/using/aem-previous-versions.md)
 + [Experience Manager Assets Essentials](experience-manager-assets-essentials#help)
 + [Commerce (y compris Magento Open Source)](commerce.md)
 
@@ -100,7 +100,7 @@ La documentation Adobe Enterprise offre plus qu’une collection de guides de l�
 + [Formation et assistance Document Cloud](https://helpx.adobe.com/fr/support/document-cloud.html)
 + [Tutoriels Document Cloud Enterprise](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=fr#document-cloud-tutorials)
 + [Statut Adobe](https://status.adobe.com/)
-+ [ Guide de l’administrateur ](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
++ [&#x200B; Guide de l’administrateur &#x200B;](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
 
 ## Creative Cloud abonnement Entreprise
 
@@ -113,7 +113,7 @@ La documentation Adobe Enterprise offre plus qu’une collection de guides de l�
 + [Tutoriels sur Creative Cloud for Enterprise](creative-cloud-enterprise-learn#cce-learning-hub)
 + [Statut Adobe](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
-+ [ Guide de l’administrateur ](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
++ [&#x200B; Guide de l’administrateur &#x200B;](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
 
 ## Ressources supplémentaires {#lists-resources}
 
@@ -122,7 +122,7 @@ La documentation Adobe Enterprise offre plus qu’une collection de guides de l�
 + [Événements Experience League](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr#events)
 + [Statut Adobe](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
-+ [ Guide de l’administrateur ](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
++ [&#x200B; Guide de l’administrateur &#x200B;](https://helpx.adobe.com/fr/enterprise/admin-guide.html)
 + [Distribution logicielle](experience-cloud#software-distribution)
 
 ### Ressources d’activation et d’administration

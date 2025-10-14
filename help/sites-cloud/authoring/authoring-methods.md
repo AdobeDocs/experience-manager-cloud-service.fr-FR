@@ -20,10 +20,10 @@ Découvrez les différentes manières de créer du contenu dans AEM, leurs diff�
 
 AEM as a Cloud Service propose plusieurs éditeurs différents pour modifier différents types de contenu et prendre en charge différents cas d’utilisation de création.
 
-* [Création WYSIWYG à l’aide de l’éditeur universel ](#universal-editor) - L’éditeur universel est une interface utilisateur moderne permettant de créer du contenu AEM indépendamment du contenu. Il est disponible pour les projets AEM utilisant Edge Delivery Services.
-* [Création WYSIWYG à l’aide de l’éditeur de page ](#page-editor) - L’éditeur de page est l’éditeur classique pour la création de contenu dans AEM. Il a fait ses preuves et a été approuvé pour des milliers et des milliers de sites web.
+* [Création WYSIWYG à l’aide de l’éditeur universel &#x200B;](#universal-editor) - L’éditeur universel est une interface utilisateur moderne permettant de créer du contenu AEM indépendamment du contenu. Il est disponible pour les projets AEM utilisant Edge Delivery Services.
+* [Création WYSIWYG à l’aide de l’éditeur de page &#x200B;](#page-editor) - L’éditeur de page est l’éditeur classique pour la création de contenu dans AEM. Il a fait ses preuves et a été approuvé pour des milliers et des milliers de sites web.
 * [Création basée sur les documents](#document-based) - Si vous utilisez les services Edge Delivery, vous pouvez choisir de créer votre contenu en tant que documents conventionnels tels que Microsoft Word ou Google Docs entièrement en dehors des consoles AEM.
-* [Éditeur de fragment de contenu AEM ](#cf-editor) - Il s’agit de l’éditeur de choix pour la création de contenu découplé.
+* [Éditeur de fragment de contenu AEM &#x200B;](#cf-editor) - Il s’agit de l’éditeur de choix pour la création de contenu découplé.
 
 En raison de la nature intégrée et évolutive d’AEM, ces méthodes peuvent être utilisées exclusivement ou en combinaison les unes avec les autres en fonction des besoins de votre projet.
 

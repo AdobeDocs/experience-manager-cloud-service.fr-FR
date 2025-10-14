@@ -62,7 +62,7 @@ Pour activer le [!DNL Dynamic Media with OpenAPI] pour votre environnement de se
    1. **[!UICONTROL Étape de l’environnement]** : **[!UICONTROL En cours d’exécution]**
    1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; les fonctionnalités OpenAPI sont activées &#x200B;]**
 
-      ![ activation réussie ](/help/assets/assets/activation-successful.png){width="700" align="left"}
+      ![&#x200B; activation réussie &#x200B;](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
 #### Réessayer l’activation {#retry-activation}
 

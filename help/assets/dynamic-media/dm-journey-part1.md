@@ -262,7 +262,7 @@ Pour prévisualiser une ressource, une autre méthode consiste à sélectionner 
 ![Prévisualisation d’une ressource en fonction du paramètre prédéfini « ZoomVertical_light » de la visionneuse](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Prévisualisation d’une ressource en fonction du paramètre prédéfini de visionneuse « ZoomVertical_light » sélectionné. Le pointeur de la souris (`+`) a été déplacé sur la montre pour effectuer un zoom avant. Remarquez les boutons URL et Incorporer._
 
-Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Facultatif - En savoir plus
 

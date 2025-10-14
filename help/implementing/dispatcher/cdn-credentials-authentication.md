@@ -41,7 +41,7 @@ La valeur *X-AEM-Edge-Key* est référencée par les propriétés `edgeKey1` et 
 Pour plus d’informations sur le débogage et les erreurs courantes, consultez la section [Erreurs courantes](/help/implementing/dispatcher/cdn.md#common-errors).
 
 >[!WARNING]
->L’accès direct sans clé X-AEM-Edge-Key correcte sera refusé pour toutes les requêtes correspondant à la condition (dans l’exemple ci-dessous, cela signifie toutes les requêtes au niveau de publication). Si vous devez introduire progressivement l’authentification, reportez-vous à la section [ Migration en toute sécurité pour réduire le risque de trafic bloqué ](#migrating-safely).
+>L’accès direct sans clé X-AEM-Edge-Key correcte sera refusé pour toutes les requêtes correspondant à la condition (dans l’exemple ci-dessous, cela signifie toutes les requêtes au niveau de publication). Si vous devez introduire progressivement l’authentification, reportez-vous à la section [&#x200B; Migration en toute sécurité pour réduire le risque de trafic bloqué &#x200B;](#migrating-safely).
 
 ```
 kind: "CDN"
@@ -65,7 +65,7 @@ data:
 
 Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
 
-Pour plus d’informations[ consultez l’étape de tutoriel ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)Configurer et déployer une règle CDN de validation d’en-tête HTTP .
+Pour plus d’informations[&#x200B; consultez l’étape de tutoriel &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)Configurer et déployer une règle CDN de validation d’en-tête HTTP .
 
 Les propriétés supplémentaires sont les suivantes :
 

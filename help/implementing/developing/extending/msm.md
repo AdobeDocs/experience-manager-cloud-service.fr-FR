@@ -195,7 +195,7 @@ Pour créer une configuration de déploiement :
    * **Nom** : `cq:trigger`
 
      **Type** : `String`
-     **Value** : [ Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
+     **Value** : [&#x200B; Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
       * `rollout`
       * `modification`
       * `publish`
@@ -228,7 +228,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 1. [Créez le projet Maven](#create-the-maven-project) et importez-le dans Eclipse.
 1. [Ajoutez des dépendances](#add-dependencies-to-the-pom-file) au fichier POM.
-1. [Implémentez l’interface `LiveActionFactory` et déployez ](#implement-liveactionfactory) lot OSGi.
+1. [Implémentez l’interface `LiveActionFactory` et déployez &#x200B;](#implement-liveactionfactory) lot OSGi.
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 

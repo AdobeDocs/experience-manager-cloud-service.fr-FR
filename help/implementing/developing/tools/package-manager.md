@@ -274,7 +274,7 @@ Il n’est pas obligatoire de concevoir immédiatement le package après lʼavoi
 
 >[!TIP]
 >
->Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
+>Pour éviter les délais d’expiration, Adobe recommande [&#x200B; de ne pas créer de packages volumineux](#package-size).
 
 ### Concevoir un package {#building-a-package}
 
@@ -290,7 +290,7 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 
 >[!TIP]
 >
->Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
+>Pour éviter les délais d’expiration, Adobe recommande [&#x200B; de ne pas créer de packages volumineux](#package-size).
 
 ### Modifier un package {#edit-package}
 
@@ -358,7 +358,7 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 >[!TIP]
 >
->Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
+>Pour éviter les délais d’expiration, Adobe recommande [&#x200B; de ne pas créer de packages volumineux](#package-size).
 
 ### Chargement des packages à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
@@ -381,7 +381,7 @@ Le contenu du package existe désormais sur AEM, mais pour rendre le contenu dis
 
 >[!TIP]
 >
->Pour éviter les délais d’expiration, Adobe recommande [ de ne pas créer de packages volumineux](#package-size).
+>Pour éviter les délais d’expiration, Adobe recommande [&#x200B; de ne pas créer de packages volumineux](#package-size).
 
 ### Validation de packages {#validating-packages}
 

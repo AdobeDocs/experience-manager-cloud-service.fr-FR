@@ -107,7 +107,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    * **Destination**
 
-     Choisissez si vous souhaitez effectuer une publication sur votre service de publication (par défaut) ou votre service d’aperçu. Disponible uniquement si un service d’aperçu [ est configuré.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+     Choisissez si vous souhaitez effectuer une publication sur votre service de publication (par défaut) ou votre service d’aperçu. Disponible uniquement si un service d’aperçu [&#x200B; est configuré.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
 
    * **Planification**
 

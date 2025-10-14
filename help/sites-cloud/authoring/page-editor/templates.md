@@ -95,7 +95,7 @@ Lors de la création d’un modèle modifiable :
 >
 >Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/implementing/developing/extending/i18n/dev.md) dans un modèle.
 >
->Pour les éléments de modèle tels que les en-têtes et pieds de page qui doivent être localisés, utilisez les fonctions de localisation [ des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
+>Pour les éléments de modèle tels que les en-têtes et pieds de page qui doivent être localisés, utilisez les fonctions de localisation [&#x200B; des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 

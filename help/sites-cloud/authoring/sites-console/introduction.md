@@ -230,7 +230,7 @@ Sélectionnez la barre de sélection verticale et faites glisser l’élément v
 
 Chaque fois qu’une ressource est sélectionnée, vous pouvez effectuer différentes actions sur l’élément sélectionné. Ces actions s’affichent dans la barre d’outils d’actions.
 
-![ Barre d’outils Actions ](assets/introduction-actions-toolbar.png)
+![&#x200B; Barre d’outils Actions &#x200B;](assets/introduction-actions-toolbar.png)
 
 La barre d’outils des actions ne s’affiche que lorsqu’une ressource est sélectionnée dans la console. L’action disponible dans la barre d’outils d’actions change pour refléter les actions que vous pouvez effectuer sur les éléments spécifiques sélectionnés. Les actions les plus courantes sont les suivantes :
 

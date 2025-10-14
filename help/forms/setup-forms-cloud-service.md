@@ -60,7 +60,7 @@ Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptat
 
    * Si vous disposez d’un environnement de test, sélectionnez **[!UICONTROL Forms]** pour activer Forms - Enregistrement numérique et Forms - Module complémentaire de communications.
 
-     ![ &lbrace;Form-Digital Enrollment selection](assets/forms-digital-enrollment1.png)
+     ![&#x200B; &lbrace;Form-Digital Enrollment selection](assets/forms-digital-enrollment1.png)
 
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.

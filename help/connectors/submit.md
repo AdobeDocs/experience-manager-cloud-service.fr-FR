@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Envoi d’un connecteur AEM
 
-Les informations fournies ci-dessous sont utiles pour l’envoi de connecteurs Adobe Experience Manager (AEM) et doivent être lues avec des articles sur l’ [implémentation](implement.md) et la [ maintenance](maintain.md) des connecteurs.
+Les informations fournies ci-dessous sont utiles pour l’envoi de connecteurs Adobe Experience Manager (AEM) et doivent être lues avec des articles sur l’ [implémentation](implement.md) et la [&#x200B; maintenance](maintain.md) des connecteurs.
 
 Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 

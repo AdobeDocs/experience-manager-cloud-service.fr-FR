@@ -44,7 +44,7 @@ Chaque composant AEM :
 
 ## AEM Core Components {#aem-core-components}
 
-[Les composants principaux d’AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management) normalisés permettant d’AEM accélérer le développement et de réduire les coûts de maintenance de vos sites web.
+[Les composants principaux d’AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management) normalisés permettant d’AEM accélérer le développement et de réduire les coûts de maintenance de vos sites web.
 
 Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustre la manière d’implémenter et d’utiliser les composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 

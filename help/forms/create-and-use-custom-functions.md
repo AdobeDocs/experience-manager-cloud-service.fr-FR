@@ -119,7 +119,7 @@ Tenez compte du fragment de code suivant, où input2 est défini comme un param�
 
 L’illustration suivante s’affiche à l’aide de la fonction personnalisée `OptionalParameterFunction` dans l’éditeur de règles :
 
-![Paramètres facultatifs ou obligatoires ](/help/forms/assets/optional-default-params.png)
+![Paramètres facultatifs ou obligatoires &#x200B;](/help/forms/assets/optional-default-params.png)
 
 Vous pouvez enregistrer la règle sans spécifier de valeur pour les paramètres requis, mais la règle n’est pas exécutée et affiche un message d’avertissement comme suit :
 

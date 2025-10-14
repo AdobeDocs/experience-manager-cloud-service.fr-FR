@@ -128,7 +128,7 @@ Les produits et les données de produit affichés dans AEM sont stockés dans Ad
 
    >[!TIP]
    >
-   > Pour plus d’informations sur la [ gestion du cache, consultez le guide de l’utilisateur d’Adobe Commerce.](https://docs.magento.com/user-guide/system/cache-management.html)
+   > Pour plus d’informations sur la [&#x200B; gestion du cache, consultez le guide de l’utilisateur d’Adobe Commerce.](https://docs.magento.com/user-guide/system/cache-management.html)
 
 ## Utilisation d’un IDE GraphQL pour vérifier l’attribut {#use-graphql-ide}
 

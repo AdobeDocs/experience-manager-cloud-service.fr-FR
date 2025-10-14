@@ -122,5 +122,5 @@ Pour traiter les ressources existantes, sélectionnez les ressources, sélection
 >[!MORELIKETHIS]
 >
 >* [Configuration et utilisation des microservices de ressources via des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
->* [ [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [&#x200B; [!DNL Experience Manager] Intégration avec [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Ingestion et traitement de ressources à l’aide des microservices de ressources : Vue d’ensemble](/help/assets/asset-microservices-overview.md).

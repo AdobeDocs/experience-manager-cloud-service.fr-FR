@@ -42,7 +42,7 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est une ressource structurée qui stocke du texte, des nombres et des dates. Comme il existe plusieurs différences avec les ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] ](/help/assets/content-fragments/assets-api-content-fragments.md).
+Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] &#x200B;](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >

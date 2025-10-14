@@ -69,7 +69,7 @@ Utilisez le composant `ContentFragmentSelector` . Il existe plusieurs options d&
 
 Une fois que le sélecteur de fragments de contenu est configuré et authentifié pour l’utiliser avec votre application AEM as a Cloud Service, vous pouvez sélectionner des fragments de contenu ou effectuer d’autres opérations pour rechercher vos fragments dans le référentiel :
 
-![ Sélecteur de fragment de contenu ](/help/headless/assets/content-fragment-selector-using.png)
+![&#x200B; Sélecteur de fragment de contenu &#x200B;](/help/headless/assets/content-fragment-selector-using.png)
 
 * Le sélecteur **Référentiel** en haut à droite permet de sélectionner le référentiel à utiliser
 * Dans le panneau tout à gauche, vous pouvez :
@@ -92,7 +92,7 @@ Le sélecteur de fragment de contenu vous permet de sélectionner un référenti
 
 Vous pouvez sélectionner le référentiel de votre choix dans le menu déroulant **Référentiel** disponible dans la partie supérieure du panneau principal.
 
-![ Sélecteur de fragment de contenu ](/help/headless/assets/content-fragment-repository-selector.png)
+![&#x200B; Sélecteur de fragment de contenu &#x200B;](/help/headless/assets/content-fragment-repository-selector.png)
 
 Les options de référentiel disponibles dans la liste déroulante reposent sur la propriété `repositoryId` définie dans le fichier `index.html`. Cette propriété est basée sur l’environnement de l’organisation IMS sélectionnée accessible par l’utilisateur actuellement connecté.
 

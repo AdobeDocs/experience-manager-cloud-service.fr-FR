@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Content Credentials {#content-credentials}
 
-Les marques sont plus préoccupées que jamais par la transparence du contenu, la divulgation de l&#39;IA et la prévention de l&#39;altération des ressources. Le Content Authenticity Initiative (CAI) d’Adobe crée des outils conformes à la norme technique C2PA ([ Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model). Content Credentials, qui est un nouveau type de métadonnées chiffrées et infalsifiables, peut aider les visiteurs à comprendre la traçabilité du contenu et à assurer l’intégrité des ressources de la marque. Ils peuvent inclure un large éventail de données de provenance qui offrent insight dans l’historique d’une ressource numérique.
+Les marques sont plus préoccupées que jamais par la transparence du contenu, la divulgation de l&#39;IA et la prévention de l&#39;altération des ressources. Le Content Authenticity Initiative (CAI) d’Adobe crée des outils conformes à la norme technique C2PA ([&#x200B; Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model). Content Credentials, qui est un nouveau type de métadonnées chiffrées et infalsifiables, peut aider les visiteurs à comprendre la traçabilité du contenu et à assurer l’intégrité des ressources de la marque. Ils peuvent inclure un large éventail de données de provenance qui offrent insight dans l’historique d’une ressource numérique.
 
 Ces informations peuvent inclure :
 
