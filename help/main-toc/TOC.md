@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
+source-git-commit: 259fea8d72e2f6bddf390232ad05869ea05e2c3a
 workflow-type: tm+mt
-source-wordcount: '6839'
+source-wordcount: '6845'
 ht-degree: 96%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 96%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Notes de mise à jour de la maintenance 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
          + [Notes de mise à jour de la maintenance 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Notes de mise à jour de la maintenance 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Notes de mise à jour de la maintenance 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
@@ -469,7 +470,7 @@ ht-degree: 96%
          + [Gestion des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
          + [Définition de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [&#x200B; – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -575,7 +576,7 @@ ht-degree: 96%
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balises intelligentes pour les vidéos](/help/assets/smart-tags-for-videos.md)
       + [Comment organiser des ressources](/help/assets/organize-assets.md)
-      + [Utilisation des ressources [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
       + [Intégration avec [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -591,7 +592,7 @@ ht-degree: 96%
       + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
-      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Balises de couleurs pour les images](/help/assets/color-tag-images.md)
       + [Gestion des documents PDF](/help/assets/manage-pdf-documents.md)
    + Configuration, administration et extension d’[!DNL Assets] {#admin}
@@ -650,8 +651,8 @@ ht-degree: 96%
       + [Bonnes pratiques relatives à l’optimisation de la qualité des images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [Profils d’image](/help/assets/dynamic-media/image-profiles.md)
       + [Profils vidéo](/help/assets/dynamic-media/video-profiles.md)
-      + [Gestion des paramètres prédéfinis d’image Dynamic Media](/help/assets/dynamic-media/managing-image-presets.md)
-      + [Application des paramètres d’image prédéfinis Dynamic Media](/help/assets/dynamic-media/image-presets.md)
+      + [Gestion des paramètres d’image prédéfinis Dynamic Media](/help/assets/dynamic-media/managing-image-presets.md)
+      + [Application de paramètres d’image prédéfinis Dynamic Media](/help/assets/dynamic-media/image-presets.md)
       + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](/help/assets/dynamic-media/managing-viewer-presets.md)
       + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](/help/assets/dynamic-media/viewer-presets.md)
       + [Paramètres prédéfinis de lot](/help/assets/dynamic-media/batch-set-presets-dm.md)
@@ -803,8 +804,8 @@ ht-degree: 96%
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuration du stockage  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuration du stockage  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuration des services cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
@@ -1211,7 +1212,7 @@ ht-degree: 96%
       + Création{#authoring}
          + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=fr)
          + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
-      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=fr)
+      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
       + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
    + Sélecteur de fragment de contenu {#content-fragment-selector}
@@ -1434,7 +1435,7 @@ ht-degree: 96%
          + [Prise en main](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
          + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
-         + [&#x200B; Exemple d’application SecurBank &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [ Exemple d’application SecurBank ](/help/implementing/universal-editor/securbank.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
