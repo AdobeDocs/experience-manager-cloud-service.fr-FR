@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 34%
@@ -141,7 +141,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
    * Sélectionnez l’icône d’un fragment spécifique :
 
-     ![&#x200B; Console Fragments de contenu - Icône Workflows &#x200B;](assets/cf-managing-console-workflows-icon.png)
+     ![ Console Fragments de contenu - Icône Workflows ](assets/cf-managing-console-workflows-icon.png)
 
      Pour ouvrir une boîte de dialogue contenant des informations détaillées sur les workflows (passés et actuels) du fragment.:
 
@@ -258,53 +258,6 @@ Pour ouvrir votre fragment à des fins de modification :
 
 ## Copier un fragment de contenu {#copy-a-content-fragment}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
-
-* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
--->
-
-<!-- CQDOC-22785 - will replace above text -->
-
 **Copier** crée une copie du fragment sélectionné à son emplacement.
 
 * Dans l’action **Copier**, vous pouvez choisir de **Copier également les fragments de contenu référencés**. Vous pouvez ainsi copier le fragment de contenu sélectionné et tous les fragments référencés. AEM :
@@ -312,7 +265,7 @@ FolderC
    * Crée une copie du fragment de contenu sélectionné à son emplacement.
    * Crée des copies de tous les fragments référencés par le fragment sélectionné.
 
-     Les [&#x200B; emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
+     Les [ emplacements vers lesquels les fragments référencés sont copiés](#locations-that-the-referenced-fragments-are-copied-to) dépendent de l’option sélectionnée :
 
       * **Copier dans le dossier sélectionné**
 Lorsque cette option est sélectionnée, les fragments référencés sont copiés au même emplacement que le fragment sélectionné d’origine.
@@ -453,7 +406,7 @@ Vous pouvez publier vos fragments de contenu dans :
 
 Vous pouvez publier vos fragments de contenu à l’aide de l’option **Publier** à partir de :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -486,7 +439,7 @@ Après publication, le statut du fragment est mis à jour et visible dans l’é
 
 Vous pouvez dépublier des fragments de contenu :
 
-* la barre d’outils de la console [&#x200B; Fragments de contenu &#x200B;](#actions-selected-content-fragment)
+* la barre d’outils de la console [ Fragments de contenu ](#actions-selected-content-fragment)
 
    * Sélectionnez un ou plusieurs fragments dans la liste.
 
@@ -553,7 +506,7 @@ Par exemple :
 Les détails des copies de langue sont accessibles à partir de :
 
 * la colonne **Langue** de la [Console Fragments de contenu](#information-content-fragments)
-* l’onglet [&#x200B; Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* l’onglet [ Copies de langue de l’éditeur de fragments de contenu](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 L’icône indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu. Par exemple, à partir de la console :
 
