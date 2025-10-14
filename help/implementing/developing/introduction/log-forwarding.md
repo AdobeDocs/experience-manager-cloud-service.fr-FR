@@ -4,9 +4,9 @@ description: Découvrez comment transférer des journaux à des fournisseurs de 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ Les clients disposant d’une licence auprès d’un fournisseur de journalisati
   <tbody>
     <tr>
       <th>Technologie des journaux</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>Réseau de diffusion de contenu (CDN)</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Oui</td>
       <td>Oui</td>
       <td>Oui</td>
-      <td style="background-color: #ffb3b3;">Non</td>
+      <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
     <tr>
       <td>Stockage Azure Blob</td>
-      <td>Non</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>Non</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Oui</td>
       <td>Oui</td>
       <td>Oui</td>
-      <td style="background-color: #ffb3b3;">Non</td>
+      <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>Non</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>Non</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Oui</td>
       <td>Oui</td>
       <td>Oui</td>
-      <td style="background-color: #ffb3b3;">Non</td>
+      <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>Non</td>
       <td>Oui</td>
       <td>Oui</td>
       <td>Oui</td>
     </tr>
     <tr>
       <td>Logique Sumo</td>
-      <td style="background-color: #ffb3b3;">Oui</td>
       <td>Oui</td>
       <td>Oui</td>
-      <td style="background-color: #ffb3b3;">Non</td>
+      <td style="background-color: #ffb3b3;">Futur</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Pour les technologies dans Private Beta, veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+> Pour les prochaines technologies de journal CDN prévues pour l’avenir, veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour vous inscrire.
 
 Le transfert du journal est configuré en libre-service en déclarant une configuration dans Git et peut être déployé via les pipelines de configuration de Cloud Manager vers les types d’environnements de développement, d’évaluation et de production. Le fichier de configuration peut être déployé dans des environnements de développement rapide (RDE) à l’aide de l’outil de ligne de commande.
 
@@ -247,6 +237,8 @@ Pour les journaux CDN, vous pouvez placer les adresses IP sur la liste autorisé
 >[!NOTE]
 >
 >Il n’est pas possible que les journaux du réseau CDN apparaissent à partir de la même adresse IP que celle à partir de laquelle vos journaux AEM apparaissent. En effet, les journaux sont envoyés directement depuis Fastly et non depuis AEM Cloud Service.
+>
+>Pour cette raison, il n’est pas possible d’utiliser le transfert de journal avec des configurations VPN de réseau avancé.
 
 ## Consignation de la configuration de destination {#logging-destinations}
 
@@ -293,6 +285,9 @@ La politique IAM doit permettre à l’utilisateur d’utiliser `s3:putObject`. 
 ```
 
 Consultez la [documentation de la politique de compartiment AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) pour plus d’informations sur la mise en œuvre.
+
+>[!NOTE]
+>La prise en charge du journal CDN pour AWS S3 est prévue pour les années à venir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 
 ### Stockage Azure Blob {#azureblob}
 
@@ -491,9 +486,9 @@ Le transfert du journal vers New Relic utilise l’API HTTPS New Relic pour l’
 >
 >Le transfert du journal vers New Relic n’est disponible que pour les comptes New Relic détenus par le client.
 >
->Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+>La prise en charge du journal CDN pour l’API de journal New Relic est prévue pour l’avenir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 >
->New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [&#128279;](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
+>New Relic fournit des points d’entrée spécifiques à une région en fonction de l’emplacement où votre compte New Relic est configuré.  Pour plus d’informations, consultez la documentation de New Relic [](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
 ### API du journal Dynatrace {#dynatrace-https}
 
@@ -515,8 +510,7 @@ L’attribut de portée « Ingérer des journaux » est obligatoire pour le jeto
 ```
 
 >[!NOTE]
->
-> Envoyer un courrier électronique à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour demander l’accès.
+>La prise en charge du journal CDN pour l’API de journal Dynatrace est prévue pour l’avenir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>La prise en charge du journal CDN pour SumoLogic est prévue pour les années à venir. Veuillez envoyer un e-mail à [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour enregistrer vos intérêts.
+>
 > Vous aurez besoin d&#39;un abonnement Sumo Logic Enterprise pour profiter de la fonctionnalité de champ « index ».  Les journaux des abonnements qui ne sont pas des abonnements d’entreprise seront acheminés vers la partition `sumologic_default` en standard.  Voir la [Documentation sur le partitionnement de la logique Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) pour plus d’informations.
 
 ## Formats d&#39;entrée de journal {#log-formats}
