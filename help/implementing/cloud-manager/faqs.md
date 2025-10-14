@@ -1,14 +1,14 @@
 ---
-title: FAQ relatives à Cloud Manager
+title: Questions fréquentes relatives à Cloud Manager
 description: Trouvez des réponses aux questions les plus fréquentes sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ Oui. Ajoutez `maven-toolchains-plugin` avec les paramètres appropriés pour Jav
 
 Le processus est documenté - voir la section [Assistant de création de projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Par exemple, consultez l’[exemple de code de projet WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Par exemple, consultez l’exemple de code de projet [lWKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Ma version échoue et affiche une erreur concernant maven-scr-plugin, après le passage de Java™ 8 à Java™ 11. Que puis-je faire ? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Pour les builds Cloud Manager, le `maven-enforcer-plugin` peut échouer avec ce
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Cette erreur est un problème connu dû au fait que Cloud Manager utilisait une version différente de Java™ pour exécuter la commande maven plutôt que de compiler le code. Omettez simplement `requireJavaVersion` de vos configurations `maven-enforcer-plugin`.
+Cette erreur est un problème connu en raison duquel Cloud Manager utilise une autre version de Java™ pour exécuter la commande Maven au lieu de compiler le code. Omettez simplement `requireJavaVersion` de vos configurations `maven-enforcer-plugin`.
 
 ## La vérification de la qualité du code a échoué et le déploiement est bloqué. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
-Oui. Tous les échecs de vérification liés à la qualité du code, à l’exception de l’évaluation de la sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés, dans le cadre d’un pipeline de déploiement, en développant les éléments dans l’interface utilisateur des résultats.
+Oui. Tous les échecs de vérification de la qualité du code, à l’exception de la cote de sécurité, ne sont pas des mesures critiques. Par conséquent, ils peuvent être contournés dans le cadre d’un pipeline de déploiement en développant les éléments dans l’interface utilisateur des résultats.
 
-Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.
+Un utilisateur ayant un rôle [Responsable de déploiement, Responsable de projet ou Propriétaire de l’entreprise](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) peut contourner les problèmes. Dans ce cas, le pipeline continue ou ils peuvent accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
 
 Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) et [Configurer des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) pour plus d’informations.
 
@@ -57,11 +57,11 @@ Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/c
 
 Oui. Pour les déploiements de développeurs, les fichiers `pom.xml` de la branche Git doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`.
 
-Cette valeur permet de conserver les déploiements ultérieurs alors que la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
+Cette valeur permet d’installer les déploiements suivants quand la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, le cas échéant.
 
-Pour plus d’informations sur la gestion des versions, voir la section [Gestion des versions du projet Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Pour plus d’informations sur la gestion des versions, voir [ Gestion des versions de projet Maven ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#snapshot-version}
 
@@ -94,25 +94,25 @@ La solution consiste à ajouter un script de [configuration RepositoryInitialize
 
 Dans l’exemple d’erreur précédent, le package `myapp-base.ui.content-*.zip` inclut le contenu situé sous `/conf` et `/var/workflow`. Pour que le déploiement réussisse, les autorisations pour `sling-distribution-importer` sous ces chemins d’accès sont nécessaires.
 
-Voici un exemple [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de configuration OSGi qui permet d’ajouter des autorisations supplémentaires pour l’utilisateur ou l’utilisatrice `sling-distribution-importer`. Cette configuration ajoute des autorisations sous `/var`. Une telle configuration doit être ajoutée au package d’application sous `/apps/myapp/config` (où myapp est le dossier dans lequel le code de votre application est stocké).
+Voici un exemple [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de configuration OSGi qui permet d’ajouter des autorisations supplémentaires pour l’utilisateur ou l’utilisatrice `sling-distribution-importer`. Cette configuration ajoute des autorisations sous `/var`. Une telle configuration doit être ajoutée au package d’application sous `/apps/myapp/config` (où `myapp` correspond au dossier dans lequel le code de votre application est stocké).
 
 ## Mon déploiement de Cloud Manager échoue à l’étape de déploiement dans AEM as a Cloud Service et j’ai déjà ajouté une configuration OSGi RepositoryInitializer. Que puis-je faire d’autre ? {#build-failures}
 
 Si l’[ajout d’une configuration OSGi RepositoryInitializer](#cloud-manager-deployment-cloud-service) n’a pas résolu l’erreur, elle peut être due à l’un des autres problèmes suivants.
 
-* Le déploiement peut échouer en raison d’une configuration OSGi incorrecte qui rompt un service prêt à l’emploi.
+* Le déploiement peut échouer en raison d’une mauvaise configuration OSGi qui rompt un service prêt à l’emploi.
    * Vérifiez les journaux pendant le déploiement pour voir s’il existe des erreurs évidentes.
 
 * Le déploiement peut échouer en raison de configurations incorrectes du Dispatcher ou d’Apache.
    * Veillez à tester Apache et le Dispatcher localement à l’aide de l’image Docker incluse dans le SDK.
    * Voir la section [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) pour savoir comment configurer le conteneur Docker du Dispatcher pour des tests locaux faciles.
 
-* Le déploiement peut échouer en raison d’une autre défaillance lors de la réplication des packages de contenu (distribution Sling) entre les instances de création et de publication.
+* Le déploiement peut échouer en raison d’une autre défaillance lors de la réplication des modules de contenu (distribution Sling) entre les instances d’auteur et de publication.
    * Suivez ces étapes pour simuler le problème sur une configuration locale.
-      1. Installer une instance de création et de publication locale à l’aide des derniers fichiers jar du SDK AEM.
+      1. Installez localement une instance de création et une instance de publication à l’aide des derniers fichiers jar AEM SDK.
       1. Connectez-vous à l’instance de création.
       1. Accédez à **Outils** -> **Déploiement** -> **Distribution**.
-      1. Distribuez les packages de contenu faisant partie de la base de code et vérifiez si la file d’attente est bloquée avec une erreur.
+      1. Distribuez les modules de contenu faisant partie de la base de code et vérifiez si la file d’attente est bloquée avec une erreur.
 
 ## Je ne parviens pas à définir une variable à l’aide d’une commande aio. Que puis-je faire ? {#set-variable}
 

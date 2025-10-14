@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta privé. Pour vous inscrire à la version bêta privée, voir [Environnement de test spécialisé](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta privé. Pour vous inscrire à la version bêta privée, voir [Environnement de test spécialisé](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 L’environnement de test spécialisé, ou DevXL, est un nouveau type d’environnement Cloud Manager que vous pouvez créer. Il est conçu pour prendre en charge des cas d’utilisation avancés tels que les tests d’acceptation utilisateur (UAT) et la validation des performances. Contrairement aux environnements de développement, de développement rapide ou d’évaluation traditionnels, les environnements DevXL fonctionnent en dehors du pipeline de déploiement de production. Ils vous offrent donc une plus grande flexibilité tout en maintenant une isolation stricte afin d’éviter toute interférence avec les workflows de production.
 
@@ -35,7 +35,7 @@ DevXL est conçu pour refléter la taille, l’évolutivité et les configuratio
 | Restauration du contenu | Identique à l’environnement de développement. |
 | Journaux d’accès | Identique à l’environnement de développement. |
 | Developer Console | Identique à l’environnement de développement. |
-| Liste d’adresses IP autorisées | Identique à l’environnement de développement. |
+| `IP Allow List` | Identique à l’environnement de développement. |
 | Mise en réseau | Identique à l’environnement de développement (services, nom de domaine, certificats SSL, réseau avancé). |
 
 Voir aussi [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md)
@@ -61,12 +61,12 @@ Si l’option **Ajouter un environnement** est grisée (désactivée), cela peut
 
      ![Onglet Environnements](assets/environments-tab.png)
 
-1. Dans la boîte de dialogue **Ajouter un environnement**, procédez comme suit :
+1. Dans la boîte de dialogue **Ajouter un environnement**, procédez comme suit :
 
    * Cliquez sur **Environnement de test spécialisé**.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * (Facultatif) Fournissez une **Description** pour l’environnement.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
+   * Sélectionnez une région de Principal **** dans la liste déroulante. Une fois créée, la région principale de l’environnement DevXL (par exemple, *États-Unis (ouest des États-Unis)*) est verrouillée et ne peut pas être modifiée.
 
    ![Boîte de dialogue Ajouter un environnement avec le bouton radio Environnement de test spécialisé sélectionné](assets/specialized-test-environment.png)
 

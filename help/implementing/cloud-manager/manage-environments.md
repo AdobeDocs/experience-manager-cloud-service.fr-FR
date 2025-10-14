@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2489'
 ht-degree: 37%
 
 ---
@@ -65,13 +65,13 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
 
      ![Onglet Environnements](assets/environments-tab.png)
 
-1. Dans la boîte de dialogue **Ajouter un environnement**, procédez comme suit :
+1. Dans la boîte de dialogue **Ajouter un environnement**, procédez comme suit :
 
    * Sélectionnez un [**type d’environnement**](#environment-types). Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le nom du type d’environnement.
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
@@ -290,7 +290,7 @@ L’option **Supprimer** est également disponible à partir de l’onglet **Env
 
 ## Gérer l’accès {#managing-access}
 
-Sélectionnez **Gérer l’accès** depuis le menu représentant des points de suspension de l’environnement dans la carte **Environnements**. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
+Sélectionnez **Gérer l’accès** depuis le menu représentant des points de suspension de l’environnement dans la carte **Environnements**. Vous pouvez accéder directement à l’instance de création et gérer l’accès pour votre environnement.
 
 ![Option Gérer l’accès](assets/environ-access.png)
 
@@ -308,7 +308,7 @@ Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à **
 
 Seul un utilisateur ou une utilisatrice possédant le rôle de **développeur** aura accès à la **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
+Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
 
 Cette option est également disponible à partir de l’onglet **Environnement** de la fenêtre **Aperçu** lorsque vous cliquez sur l’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) d’un environnement individuel.
 
@@ -340,7 +340,7 @@ Pour gérer les Listes autorisées IP, accédez à la page ![Icône Données](ht
 
 ### Application d’une Liste autorisée IP {#apply-ip-allow-list}
 
-L’application d’une Liste autorisée IP relie toutes les plages d’adresses IP définies à un service de création ou de publication dans l’environnement.
+L’application d’une Liste autorisée IP associe toutes les plages d’adresses IP définies à un service de création ou de publication dans l’environnement.
 
 >[!TIP]
 >

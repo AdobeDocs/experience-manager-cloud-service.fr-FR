@@ -5,9 +5,9 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 69%
 
 ---
@@ -39,9 +39,9 @@ Pour télécharger les journaux, procédez comme suit :
 
    ![Boîte de dialogue Télécharger les journaux](assets/download-preview.png)
 
-   Si des [régions Publish supplémentaires](/help/operations/additional-publish-regions.md) sont activées pour votre environnement, vous pourrez sélectionner chaque région et télécharger ses journaux séparément, comme illustré ci-dessous :
+   Si des [Régions de publication supplémentaires](/help/operations/additional-publish-regions.md) sont activées pour votre environnement, vous pouvez sélectionner chaque région et télécharger ses journaux séparément, comme illustré ci-dessous :
 
-   ![Journaux de téléchargement pour d’autres régions de publication](assets/download-publish-region-logs.png)
+   ![Télécharger les journaux pour les régions de publication supplémentaires](assets/download-publish-region-logs.png)
 
 1. Une fois que vous avez sélectionné votre service, cliquez sur l’icône de téléchargement en regard du journal que vous souhaitez récupérer.
 
@@ -101,5 +101,5 @@ Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur 
 
 Consultez les ressources supplémentaires suivantes pour en savoir plus sur les fichiers journaux dans AEM as a Cloud Service :
 
-* [Cloud 5 AEM Fichiers journaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=fr)
-* [Débogage d’AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr)
+* [Fichiers journaux AEM Cloud 5](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

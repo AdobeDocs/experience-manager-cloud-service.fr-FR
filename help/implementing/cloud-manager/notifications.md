@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 79%
+source-wordcount: '585'
+ht-degree: 73%
 
 ---
 
@@ -39,17 +39,15 @@ Cliquez sur une notification ou une annonce pour en afficher les détails. Les n
 
 Cliquez sur l’option **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
-Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône représentant une cloche.
+Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône en forme de cloche.
 
 ## Configuration des notifications {#configuration}
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône d’engrenage en haut de la barre latérale des notifications.
+Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre Préférences Experience Cloud ****. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
 
 ![Icône Paramètres de notification](assets/notifications-configuration.png)
-
-Cela permet d’ouvre la fenêtre **Préférences Experience Cloud** où vous pouvez définir vos abonnements aux notifications et comment vous recevez les notifications.
 
 ### Abonnements {#subscriptions}
 
@@ -57,13 +55,13 @@ Les abonnements définissent les produits pour lesquels vous recevez des notific
 
 ![Abonnements aux notifications](assets/notifications-subscriptions.png)
 
-Par défaut, vous recevrez toutes les notifications pour tous les produits de l’application et par email. Cliquez sur le chevron en regard d’un nom de produit pour afficher les options détaillées et définir les types de notifications que vous recevez pour ce produit. Ou cochez ou décochez les options au niveau du produit pour sélectionner/désélectionner toutes les options du produit.
+Par défaut, vous recevez toutes les notifications pour tous les produits dans l’application et par e-mail. Cliquez sur le chevron en regard d’un nom de produit pour afficher les options détaillées et définir les types de notifications que vous recevez pour ce produit. Vous pouvez également cocher ou désélectionner les options au niveau du produit pour sélectionner/désélectionner toutes les options du produit.
 
 ![Personnalisation de l’abonnement aux notifications](assets/notifications-subscriptions-customize.png)
 
 ### Priorité {#priority}
 
-Les alertes de priorité seront marquées d’une balise de priorité **ÉLEVÉE** et peuvent être configurées pour être reçues exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
+Les alertes de priorité sont marquées d’une balise **ÉLEVÉE**. Vous pouvez les configurer pour qu’ils soient reçus exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
 
 ![Priorité des notifications](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ Par défaut, aucun e-mail n‘est envoyé. Vous pouvez choisir de recevoir des e
 * Chaque jour
 * Chaque semaine
 
-Lorsque vous choisissez **Notifications instantanées**, les e-mails sont envoyés immédiatement pour chaque notification. Pour **Envoi quotidien** et **Envoi hebdomadaire**, vous pouvez choisir le moment où votre résumé quotidien est envoyé, et le jour et le moment où votre résumé hebdomadaire est envoyé.
+Lorsque vous choisissez **Notifications instantanées**, les e-mails sont envoyés immédiatement pour chaque notification. Pour **Résumé quotidien** et **Résumé hebdomadaire**, vous pouvez choisir le moment où votre résumé quotidien est envoyé, et le jour et le moment où votre résumé hebdomadaire est envoyé.
