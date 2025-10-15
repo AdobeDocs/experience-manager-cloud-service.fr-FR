@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 151320e5de3e33ab31ed5ed55826d856d02a8f92
 workflow-type: tm+mt
-source-wordcount: '3356'
+source-wordcount: '3353'
 ht-degree: 94%
 
 ---
@@ -58,7 +58,7 @@ Voir aussi [Facultatif - Paramétrage et configuration des paramètres Dynamic�
    * Onglet [Attributs de gestion des couleurs](#color-management-attributes-tab)
 
    ![Page de configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**&#x200B;sélectionné.*<br><br>
+   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -169,7 +169,7 @@ Si vous le souhaitez, vous pouvez créer un environnement d’évaluation plutô
 
 La plupart des entreprises utilisent Internet derrière un pare-feu. L’accès à Internet est possible par le biais de certains itinéraires et généralement via une plage limitée d’adresses IP publiques.
 
-À partir du réseau de votre entreprise, vous pouvez déterminer votre adresse IP publique à l’aide de sites web tels que [https://www.whatismyip.com/fr](https://www.whatismyip.com/fr/). Vous pouvez également obtenir ces informations auprès de la structure informatique de votre entreprise.
+Depuis votre réseau d’entreprise, vous pouvez découvrir votre adresse IP publique à l’aide de différents sites web ou demander ces informations à votre service informatique d’entreprise.
 
 Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administration d’entreprise d’Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
 
@@ -186,7 +186,7 @@ Les services Secure Testing prennent actuellement en charge les types de ressour
 * Images.
 * Vignettes (requêtes de serveur de rendu).
 * Les clientes et clients doivent demander explicitement la prise en charge du serveur de rendu disponible.
-* Visionneuses, notamment visionneuses d’images, catalogue électronique, visionneuses de rendus et de supports.
+* Visionneuses, notamment ensembles d’images, catalogue électronique, visionneuses de rendus et de supports.
 * Visionneuses de médias riches Adobe Dynamic Media standard.
 * Pages JSP OnDemand Adobe Dynamic Media.
 * Contenu statique, notamment fichiers PDF et vidéos diffusées progressivement.
