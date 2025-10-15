@@ -13,7 +13,7 @@ ht-degree: 66%
 
 # Entraînement des balises intelligentes
 
-L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
+L’entraînement des balises intelligentes vous permet d’entraîner vos balises afin que vous puissiez spécifier les informations si les balises appropriées ne sont pas présentes. Il utilise un cadre d’intelligence artificielle de [Adobe Sensei](https://business.adobe.com/fr/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
 
 ## Détermination des exigences de l’entraînement sur les balises intelligentes {#smart-tag-training-requirement}
 

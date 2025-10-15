@@ -33,7 +33,7 @@ Pour les sites s’exécutant sur Adobe Experience Manager, il existe un **plug-
 
 Le plug-in d’expérimentation est utilisé dans le cadre de [Edge Delivery Services](/help/edge/overview.md) vous aurez donc besoin d’un compte Github, d’un référentiel de contenu tel que SharePoint ou Google Drive, ainsi que de [AEM Sidekick](https://www.aem.live/docs/sidekick). Consultez également les pages [Prise en main - Tutoriel de développement de l’éditeur universel](https://www.aem.live/developer/tutorial) et [Prise en main - Tutoriel de développement](https://www.aem.live/developer/tutorial).
 
-Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
+Une fois que vous avez tout configuré, **regardez cette vidéo** intitulée [Expérimentation instantanée](https://business.adobe.com/fr/products/experience-manager/sites/testing-optimization.html) pour une courte démonstration sur le fonctionnement du plug-in d’expérimentation.
 
 ## Termes fréquemment utilisés {#frequently-used-terms}
 
