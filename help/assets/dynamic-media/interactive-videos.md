@@ -28,11 +28,11 @@ Pour voir une vidéo interactive Shoppable en action, sélectionnez [Live Demos]
 
 * Pour mettre la vidéo en pause et ouvrir l’aperçu rapide du produit, sélectionnez la miniature. Par exemple, sélectionnez la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360° ou utilisez le zoom pour afficher les détails du mixeur.
 
-Voir aussi [Utilisation de vidéos interactives avec Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
+Voir aussi [Utilisation de vidéos interactives avec Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=fr. This must now call a new interactive video
 
 -->
 
