@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.8.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 89%
+source-wordcount: '1934'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Content Hub permet désormais de découvrir plus rapidement les ressources dont
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
-**DM adapté au SEO avec des URL OpenAPI**
+**URL de diffusion de ressources de marque et lisibles**
 
-Créez des URL de redirection pour la diffusion de ressources dans DM avec OpenAPI, en remplaçant les UUID générés par le système longs par des identifiants courts et lisibles. Cela adapte les liens au SEO et les aligne davantage sur votre marque ou vos campagnes. Les URL de redirection sont automatiquement résolues sur l’UUID de ressource d’origine au moment de l’exécution sans interrompre les workflows existants.
+Rendez Dynamic Media avec les URL OpenAPI plus lisibles en utilisant les URL Vanity dans Dynamic Media avec OpenAPI. Les URL de redirection permettent de remplacer de longs UUID générés par le système et difficiles à mémoriser dans les URL de diffusion de ressources par des identifiants courts contrôlés par la marque. Cela rend les URL de redirection plus courtes, plus faciles à lire et à partager, et permet un meilleur alignement avec votre marque ou vos campagnes. Les URL de redirection sont automatiquement résolues sur l’UUID de ressource d’origine au moment de l’exécution sans interrompre les workflows existants.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Créez des URL de redirection pour la diffusion de ressources dans DM avec OpenA
 
 * [Composant d’entrée de date et d’heure](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) : un composant de date et d’heure est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement les valeurs dans un format pris en charge.
 * [Amélioration de la gestion des erreurs pour les chargements de fichiers](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) : le composant Pièce jointe valide désormais automatiquement le type de fichier chargé par rapport à la liste autorisée. Si un utilisateur ou une utilisatrice charge un fichier dans un format non pris en charge, le formulaire affiche une erreur lors de l’envoi. Le composant vérifie également le contenu du fichier pour valider son type, ce qui améliore la sécurité globale du formulaire.
-* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée &#x200B;](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
+* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée ](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
 * [Exclusion des champs masqués du document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings) : une nouvelle propriété a été ajoutée pour permettre l’exclusion des champs masqués du document d’enregistrement. Par défaut, cette option n’est pas sélectionnée et s’applique à tous les champs de formulaire.
 
 ### Fonctionnalités de version préliminaire dans AEM Forms

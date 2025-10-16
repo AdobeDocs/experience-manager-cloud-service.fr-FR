@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 47%
+source-wordcount: '1981'
+ht-degree: 44%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,9 +60,9 @@ Vous pouvez désormais appliquer une mise en forme aux sous-chaînes dans les ca
 
 ### Nouvelles fonctionnalités de Dynamic Media avec OpenAPI {#new-features-dynamic-media-with-openapi}
 
-**DM adapté au SEO avec des URL OpenAPI**
+**URL de diffusion de ressources de marque et lisibles**
 
-Créez des URL de redirection pour la diffusion de ressources dans DM avec OpenAPI, en remplaçant les UUID générés par le système longs par des identifiants courts et lisibles. Cela adapte les liens au SEO et les aligne davantage sur votre marque ou vos campagnes. Les URL de redirection sont automatiquement résolues sur l’UUID de ressource d’origine au moment de l’exécution sans interrompre les workflows existants.
+Rendez Dynamic Media avec les URL OpenAPI plus lisibles en utilisant les URL Vanity dans Dynamic Media avec OpenAPI. Les URL de redirection permettent de remplacer de longs UUID générés par le système et difficiles à mémoriser dans les URL de diffusion de ressources par des identifiants courts contrôlés par la marque. Cela rend les URL de redirection plus courtes, plus faciles à lire et à partager, et permet un meilleur alignement avec votre marque ou vos campagnes. Les URL de redirection sont automatiquement résolues sur l’UUID de ressource d’origine au moment de l’exécution sans interrompre les workflows existants.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ Journées de mise en production, événements en direct, pic des ventes : ces mo
 >[!NOTE]
 >
 >Disponible en tant que fonctionnalité à disponibilité limitée le 25 septembre.
->&#x200B;>Envoyez [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) par e-mail pour l’activer dans vos programmes.
+>>Envoyez [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) par e-mail pour l’activer dans vos programmes.
 
 ### Nouvelle version des outils de développement AEM pour Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -273,7 +273,7 @@ Pour en savoir plus, consultez la [documentation sur le transfert de journaux](/
 
 ### Surveillance étendue des performances des applications (APM) (programme Alpha) {#apm-alpha}
 
-Pour des raisons d’observabilité, AEM Cloud Service prend actuellement en charge [New Relic One](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fourni par Adobe et [Dynatrace](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) géré par le client. Alors que nous explorons la prise en charge d’options APM supplémentaires, veuillez nous envoyer un e-mail à l’adresse [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) en indiquant votre fournisseur ou technologie préféré, ainsi que les cas d’utilisation.
+Pour des raisons d’observabilité, AEM Cloud Service prend actuellement en charge [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fourni par Adobe et [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) géré par le client. Alors que nous explorons la prise en charge d’options APM supplémentaires, veuillez nous envoyer un e-mail à l’adresse [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) en indiquant votre fournisseur ou technologie préféré, ainsi que les cas d’utilisation.
 
 
 ## [!DNL Experience Manager] Guides {#guides}
