@@ -20,7 +20,7 @@ Ces instructions résument les bonnes pratiques recommandées pour installer, co
 Pour vous aider à vous mettre à jour rapidement :
 
 * [Qu’est-ce que le mode découplé ?](/help/headless/what-is-headless.md)
-* Présentation des différents environnements d’AEM [ Architecture ](/help/headless/deployment/architecture.md)
+* Présentation des différents environnements d’AEM [&#x200B; Architecture &#x200B;](/help/headless/deployment/architecture.md)
 
 ## Configuration {#setup}
 
@@ -51,7 +51,7 @@ Pour :
 ### Mise en cache d’AEM Dispatcher {#dispatcher-caching}
 
 >[!NOTE]
->Si la mise en cache dans le Dispatcher est activée[ la configuration ](#cors-setup) CORS n’est pas nécessaire et peut donc être ignorée.
+>Si la mise en cache dans le Dispatcher est activée[&#x200B; la configuration &#x200B;](#cors-setup) CORS n’est pas nécessaire et peut donc être ignorée.
 
 La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients ou clientes qui utilisent le partage de ressources entre origines multiples (CORS) doivent examiner et éventuellement mettre à jour la configuration de Dispatcher.
 
