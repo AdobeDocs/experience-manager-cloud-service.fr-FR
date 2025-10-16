@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
+source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -86,9 +86,11 @@ Comme les modèles de contenu définissent la structure de votre contenu, vous d
 1. Les modèles y sont répertoriés. Sélectionnez le modèle et ouvrez l’éditeur.
 1. L’**Éditeur de modèle de fragment de contenu** s’ouvre.
    ![Éditeur de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
-   1. Le panneau de gauche répertorie les types de données possibles.
-   1. Le panneau de droite affiche les propriétés appropriées au champ sélectionné.
+
+   * Le panneau de gauche répertorie les types de données possibles.
+   * Le panneau de droite affiche les propriétés appropriées au champ sélectionné.
    * Le panneau du milieu contient les champs que vous avez créés et définis, ou que vous définirez.
+
 1. Sélectionnez l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans le panneau de droite.
 1. L’architecte de contenu active la propriété **Traduisible** sur chaque champ de modèle de contenu qui doit être traduit.
 
