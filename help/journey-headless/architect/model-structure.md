@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 76%
+source-wordcount: '691'
+ht-degree: 83%
 
 ---
 
@@ -25,70 +25,41 @@ Cet article s’appuie sur ces principes afin que vous compreniez comment créer
 * **Audience** : débutant
 * **Objectif** : les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
-
 ## Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
 Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie.
 
 1. Dans la console Fragments de contenu, sélectionnez le panneau des modèles de fragment de contenu.
 
-1. Accédez au dossier approprié à votre configuration, ou sous-configuration.
+1. Accédez au dossier adapté à votre configuration, ou sous-configuration.
 
 1. Utilisez **Créer** pour ouvrir la boîte de dialogue **Nouveau modèle de fragment de contenu**.
 
    ![Titre et description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-1. Compléter les détails
+1. Remplir les détails
 
-1. Utilisez **Créer** pour enregistrer le modèle vide ou **Créer et ouvrir**.
-
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
+1. Utilisez **Créer** pour enregistrer le modèle vide, ou **Créer et ouvrir**.
 
 ## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
-Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
+Lorsque vous ouvrez un nouveau modèle pour la première fois, vous voyez : un grand espace vide (assez) au milieu, une longue liste de **Types de données** à gauche et **Propriétés** (vides au début, comme pour le champ sélectionné) à droite :
 
-![Modèle vide](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![Modèle vide](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 Alors, que faire ?
 
-Vous pouvez faire glisser des instances de **Types de données** dans l’espace gauche, et ainsi commencer à définir votre modèle
+Vous pouvez effectuer l’une des actions suivantes :
 
-![Définition de champs](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
+* Faites glisser un type de données du panneau de gauche vers l’emplacement souhaité pour un champ dans le panneau du milieu.
+* Sélectionnez l’icône + en fonction d’un type de données pour l’ajouter en bas de la liste des champs.
+* Sélectionnez Ajouter dans le panneau du milieu, puis le type de données requis dans la liste déroulante qui en résulte pour ajouter un champ au bas de la liste.
+
+Vous êtes déjà en train de définir votre modèle !
 
 Après avoir ajouté un type de données, vous devrez définir les **Propriétés** de ce champ. Ces propriétés dépendent du type utilisé. Par exemple :
 
-![Propriétés des données](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
-
-Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
-
-![Modèle de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![Propriétés des données](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### Vos auteurs de contenu {#your-content-authors}
 
@@ -105,7 +76,7 @@ Les auteurs et autrices de contenu ne voient pas les types de données et les pr
 La gestion de vos modèles de fragment de contenu comprend :
 
 * l’activation (ou la désactivation) de ces fragments, ce qui les rend disponibles pour les auteurs lors de la création de fragments de contenu.
-* Suppression : la suppression est toujours nécessaire, mais vous devez savoir lorsque vous supprimez un modèle déjà utilisé pour les fragments de contenu, en particulier pour les fragments déjà publiés.
+* Suppression : la suppression est toujours nécessaire, mais vous devez savoir lorsque vous supprimez un modèle déjà utilisé pour les fragments de contenu, en particulier pour les fragments déjà publiés.
 
 ## Publication {#publishing}
 
@@ -115,7 +86,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 >[!NOTE]
 >
->Si un auteur ou une autrice tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, et le modèle est publié avec le fragment.
+>Si un auteur ou une autrice essaye de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
 
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cette fonctionnalité a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Ce statut est indiqué dans la console par la mention **Verrouillé**.
 

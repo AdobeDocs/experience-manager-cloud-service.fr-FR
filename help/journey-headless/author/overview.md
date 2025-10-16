@@ -5,8 +5,8 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionna
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre audience, où qu’elle se trouve et quel que soit son canal.
 
 Le contenu découplé n’est pas basé sur la structure traditionnelle des pages et des composants. Il est plutôt basé sur la création de fragments de contenu réutilisables et neutres et pour leur diffusion cross-canal.
 
@@ -40,7 +40,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-documentation/documentation-journeys.md) sont un bon endroit pour commencer.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est conçu pour les auteurs de contenu. En tant qu’auteur ou autrice de contenu, vous créez les fragments de contenu.
 
@@ -64,16 +64,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 
 ## Prochaines étapes {#what-is-next}
 
-Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Création pour AEM Headless as a Cloud Service - Introduction](introduction.md).
-
-<!--
-### Choose Your Own Adventure {#choose-your-path}
-
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
--->
+Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Création pour AEM Headless as a Cloud Service - Introduction](/help/journey-headless/author/introduction.md).
 
 ## Ressources supplémentaires {#additional-resources}
 

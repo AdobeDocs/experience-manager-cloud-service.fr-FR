@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -81,16 +81,15 @@ L’architecte de contenu travaille à définir cette structure dès le début d
 
 Comme les modèles de contenu définissent la structure de votre contenu, vous devez savoir quels champs de vos modèles doivent être traduits. En règle générale, vous travaillez avec l’architecte de contenu pour définir ces éléments. Pour parcourir les champs de vos modèles de contenu, procédez comme suit.
 
-1. Accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
+1. Accédez à la console Fragments de contenu et sélectionnez l’onglet pour les modèles de fragment de contenu.
 1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Sélectionnez le dossier de votre projet.
-1. Les modèles y sont répertoriés. Sélectionnez le modèle pour afficher les détails.
-   ![Modèles de fragment de contenu](assets/content-fragment-models.png)
+1. Les modèles y sont répertoriés. Sélectionnez le modèle et ouvrez l’éditeur.
 1. L’**Éditeur de modèle de fragment de contenu** s’ouvre.
-   1. La colonne de gauche contient les champs du modèle. C’est cette colonne qui nous intéresse.
-   1. La colonne de droite contient les champs qui peuvent être ajoutés au modèle. Nous pouvons ignorer cette colonne.
-      ![Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor.png)
-1. Sélectionnez l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
-   ![Détail de l’Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor-detail.png)
+   ![Éditeur de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. Le panneau de gauche répertorie les types de données possibles.
+   1. Le panneau de droite affiche les propriétés appropriées au champ sélectionné.
+   * Le panneau du milieu contient les champs que vous avez créés et définis, ou que vous définirez.
+1. Sélectionnez l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans le panneau de droite.
 1. L’architecte de contenu active la propriété **Traduisible** sur chaque champ de modèle de contenu qui doit être traduit.
 
 >[!TIP]

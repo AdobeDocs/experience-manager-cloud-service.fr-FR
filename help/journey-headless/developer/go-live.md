@@ -5,8 +5,8 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
 
@@ -29,11 +29,6 @@ Ce document vous aide à comprendre le pipeline de publication découplée AEM e
 * Sécurisez et mettez à l’échelle votre application avant son lancement
 * Surveillance des performances et du débogage
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 Pour préparer votre application AEM découplée pour son lancement, suivez les bonnes pratiques décrites ci-dessous.
 
 ## Sécurisez et mettez à l’échelle votre application découplée avant son lancement {#secure-and-scale-before-launch}
@@ -70,7 +65,7 @@ Une fois que vous avez vérifié que tout a été testé et fonctionne correctem
 
 Une fois les mises à jour chargées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
-Vous pouvez commencer à déployer votre code à l’aide du pipeline CI/CD de Cloud Manager, qui est décrit en détail à la section [Déployer des packages de contenu par le biais de Cloud Manager et du gestionnaire de packages](/help/implementing/deploying/overview.md).
+Vous pouvez commencer à déployer votre code à l’aide du pipeline CI/CD de Cloud Manager, qui est décrit en détail à la section [Déployer des modules de contenu par le biais de Cloud Manager et du gestionnaire de modules](/help/implementing/deploying/overview.md).
 
 ## Surveillance des performances {#performance-monitoring}
 

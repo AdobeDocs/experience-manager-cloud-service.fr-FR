@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -187,11 +187,11 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 * Référence du fragment / UUID de référence du fragment
 * Référence de contenu / UUID de référence de contenu
 * Objet JSON
-* Espace réservé pour tabulation
+* Espace réservé pour onglet
 
 ### Références et contenu imbriqué {#references-nested-content}
 
-Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
+Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
@@ -214,11 +214,11 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Tout cela peut être effectué dans la console Fragments de contenu. Dans la console , sélectionnez le panneau des modèles de fragment de contenu, accédez au dossier approprié, puis utilisez **Créer** pour ouvrir la boîte de dialogue **Nouveau modèle de fragment de contenu**.
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Tout cela peut être effectué dans la console Fragments de contenu. Dans la console, sélectionnez le panneau des modèles de fragment de contenu, accédez au dossier approprié, puis utilisez **Créer** pour ouvrir la boîte de dialogue **Nouveau modèle de fragment de contenu**.
 
 Une fois la création effectuée, vous pouvez modifier votre modèle. Par exemple :
 
-![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
+![Modèle de fragment de contenu ](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -248,19 +248,13 @@ Une fois votre fragment créé, vous pouvez l’ouvrir dans l’éditeur de frag
 
 Après avoir sélectionné le modèle approprié, un fragment de contenu est ouvert pour modification dans l’éditeur de fragment de contenu :
 
-![Éditeur de fragment de contenu - Aperçu](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![Éditeur de fragment de contenu - Vue d’ensemble](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
->Voir Ressources supplémentaires – Utilisation de fragments de contenu.
+>Consultez Ressources supplémentaires – Utilisation de fragments de contenu.
 
 ## Prise en main de quelques exemples {#getting-started-examples}
-
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
 
 Pour obtenir une structure de base en tant qu’exemple, voir la section Exemple de structure de fragment de contenu.
 

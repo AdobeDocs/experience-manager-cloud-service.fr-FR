@@ -5,10 +5,10 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ L’environnement d’évaluation pour les projets découplés est utilisé pour
 
 L’environnement d’exploitation est l’endroit où les auteurs de contenu créent et gèrent leur contenu réel. Les changements de modèle dans l’exploitation doivent être effectués avec soin et en gardant à l’esprit une compatibilité descendante.
 
-Au cours de l’étape de développement, il est recommandé de travailler avec un environnement de développement et d’évaluation. Au fur et à mesure que vous passez aux tests de performance, il est recommandé de passer à l’environnement d’exploitation.
+Au cours de l’étape de développement, il est recommandé de travailler avec un environnement de développement et d’évaluation. Au fur et à mesure que vous passez aux tests de performance, il est recommandé de passer à l’environnement de production.
 
 ### Coopération entre équipe de développement et auteurs de contenu {#cooperation}
 
@@ -132,24 +132,22 @@ Maintenant que vous avez terminé cette partie du parcours de développement dé
 * découvrir les outils et les configurations AEM nécessaires ;
 * connaître les bonnes pratiques vous permettant de fluidifier votre parcours découplé, d’optimiser la génération du contenu et de garantir une diffusion rapide du contenu.
 
-Nous voulons que vous puissiez tirer parti de ces connaissances fondamentales pour comprendre pleinement la puissance et la flexibilité d’AEM découplé afin que vous puissiez en profiter pour vos propres projets. Pour ce faire, vous disposez de différentes options.
+Nous voulons que vous puissiez tirer parti de ces connaissances fondamentales pour comprendre pleinement la puissance et la flexibilité d’AEM découplé afin que vous puissiez en tirer parti pour vos propres projets.
 
-### Choisissez votre propre parcours {#choose-your-path}
-
-Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez dans le lancement de votre projet découplé AEM.
-
-* Si vous préférez continuer à **découvrir les concepts du découplage et les technologies AEM découplées**, vous devez continuer votre parcours découplé AEM en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans AEM.
-* Si vous préférez **apprendre en pratiquant**, vous pouvez passer au [tutoriel Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) où vous allez directement vous lancez dans le développement d’AEM découplé en mettant en œuvre un projet simple pour exposer un contenu AEM découplé.
+Pour ce faire, continuez votre parcours découplé AEM avec [Comment modéliser votre contenu en tant que modèles de contenu AEM](/help/journey-headless/developer/model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu AEM](model-your-content.md), les documents facultatifs suivants approfondissent certains concepts mentionnés dans ce document, mais ils ne sont pas obligatoires pour poursuivre le parcours découplé.
 
+Si vous préférez **apprendre en pratiquant**, vous pouvez passer au [tutoriel de prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr). Vous pourrez ainsi accéder directement au développement avec AEM découplé en mettant en œuvre un projet simple pour exposer un contenu découplé.
+
+Autres ressources :
+
 * [Parcours de traduction découplée AEM](/help/journey-headless/translation/overview.md) : ce parcours d’information vous aide à comprendre les principes de la technologie découplée, la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Développement découplé pour AEM Sites as a Cloud Service](/help/headless/introduction.md) : une présentation rapide pour orienter le développeur AEM découplé vers les fonctionnalités qui lui seront utiles.
 * [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
-* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/fr?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
+* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [Guides AEM WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) : ce projet GitHub comprend des exemples d’applications qui mettent en évidence l’API AEM GraphQL.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) : un aperçu complet de l’architecture AEM.
 * [Configuration découplée](/help/headless/introduction.md#getting-started) : une présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.
