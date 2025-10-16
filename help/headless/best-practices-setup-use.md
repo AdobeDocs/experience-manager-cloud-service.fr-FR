@@ -1,10 +1,10 @@
 ---
 title: Bonnes pratiques pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu
-description: Découvrez les bonnes pratiques recommandées pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu.
+description: Découvrez les bonnes pratiques recommandées pour la configuration et l’utilisation d’AEM GraphQL avec les fragments de contenu.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 40%
@@ -13,22 +13,22 @@ ht-degree: 40%
 
 # Bonnes pratiques pour la configuration et l’utilisation d’AEM GraphQL avec des fragments de contenu{#best-practices-setup-use-aem-graphql-content-fragments}
 
-Ces instructions résument les bonnes pratiques recommandées pour configurer, configurer et utiliser AEM avec GraphQL et les fragments de contenu.
+Ces instructions résument les bonnes pratiques recommandées pour installer, configurer et utiliser AEM avec GraphQL et les fragments de contenu.
 
-## Commencer {#getting-started}
+## Prise en main {#getting-started}
 
-Pour vous aider à vous mettre à niveau :
+Pour vous aider à vous mettre à jour rapidement :
 
-* [Qu&#39;est-ce que l&#39;absence de tête ?](/help/headless/what-is-headless.md)
-* Présentation des différents environnements dans l’AEM [Architecture](/help/headless/deployment/architecture.md)
+* [Qu’est-ce que le mode découplé ?](/help/headless/what-is-headless.md)
+* Présentation des différents environnements d’AEM [ Architecture ](/help/headless/deployment/architecture.md)
 
 ## Configuration {#setup}
 
-Pour configurer AEM GraphQL en toute sécurité en vue de l’utiliser avec les fragments de contenu et vos applications, vous devez configurer divers composants.
+Pour configurer AEM GraphQL en toute sécurité afin de l’utiliser avec des fragments de contenu et vos applications, vous devez configurer divers composants.
 
-### Création de points de terminaison GraphQL (y compris la sécurité) {#graphql-endpoint-creation}
+### Création d’un point d’entrée GraphQL (sécurité incluse) {#graphql-endpoint-creation}
 
-Le point d’entrée est le chemin utilisé pour accéder à GraphQL pour AEM. Ces points de terminaison doivent être créés et publiés afin qu’ils soient accessibles en toute sécurité.
+Le point d’entrée est le chemin utilisé pour accéder à GraphQL pour AEM. Ces points d’entrée doivent être créés et publiés afin d’être accessibles en toute sécurité.
 
 #### Détails {#details-graphql-endpoint-creation}
 
@@ -36,11 +36,11 @@ Le point d’entrée est le chemin utilisé pour accéder à GraphQL pour AEM. C
 
 #### Environnements {#environments-graphql-endpoint-creation}
 
-Les points de fin doivent être configurés dans :
+Les points d’entrée doivent être configurés dans :
 
 * Création
 * Prévisualisation
-* Publier
+* Publication
 
 Pour :
 
@@ -51,7 +51,7 @@ Pour :
 ### Mise en cache d’AEM Dispatcher {#dispatcher-caching}
 
 >[!NOTE]
->Si la mise en cache dans Dispatcher est activée, la [configuration CORS](#cors-setup) n’est pas nécessaire et peut donc être ignorée.
+>Si la mise en cache dans le Dispatcher est activée[ la configuration ](#cors-setup) CORS n’est pas nécessaire et peut donc être ignorée.
 
 La mise en cache des requêtes persistantes n’est pas activée par défaut dans Dispatcher. L’activation par défaut n’est pas possible, car les clients ou clientes qui utilisent le partage de ressources entre origines multiples (CORS) doivent examiner et éventuellement mettre à jour la configuration de Dispatcher.
 
@@ -61,16 +61,16 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 
 #### Environnements {#environments-dispatcher-caching}
 
-Dispatcher est généralement configuré pour :
+Le Dispatcher est généralement configuré pour :
 
-* Publish : production
+* Publication : production
 
 ### Configuration CORS {#cors-setup}
 
 >[!NOTE]
->Si la mise en cache dans [Dispatcher](#dispatcher-caching) est activée, la configuration CORS n’est pas nécessaire. Cette section peut donc être ignorée.
+>Si la mise en cache dans [AEM Dispatcher](#dispatcher-caching) est activée, la configuration CORS n’est pas nécessaire. Cette section peut donc être ignorée.
 
-Pour accéder au point de terminaison GraphQL, une stratégie CORS doit être configurée et ajoutée à un projet AEM déployé sur AEM via Cloud Manager. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
+Pour accéder au point d’entrée GraphQL, une politique CORS doit être configurée et ajoutée à un projet AEM déployé vers AEM via Cloud Manager. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
 
 #### Détails {#details-cors-setup}
 
@@ -80,11 +80,11 @@ Pour accéder au point de terminaison GraphQL, une stratégie CORS doit être co
 
 La norme CORS est généralement configurée pour :
 
-* Publish : production
+* Publication : production
 
 ### Authentification {#authentication}
 
-Un cas d’utilisation principal de l’API GraphQL Adobe Experience Manager as a Cloud Service (AEM) pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
+Un des principaux cas d’utilisation de l’API GraphQL Adobe Experience Manager as a Cloud Service (AEM) pour la diffusion de fragments de contenu consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
 
 #### Détails {#details-authentication}
 
@@ -95,7 +95,7 @@ Un cas d’utilisation principal de l’API GraphQL Adobe Experience Manager as 
 L’authentification est généralement configurée pour :
 
 * Prévisualisation
-* Publier
+* Publication
 
 Pour :
 
@@ -117,7 +117,7 @@ Les autorisations sont généralement configurées pour :
 
 * Création
 * Prévisualisation
-* Publier
+* Publication
 
 Pour :
 
@@ -135,18 +135,18 @@ Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si el
 
 #### Environnements {#environments-cdn}
 
-Un réseau de diffusion de contenu est généralement configuré pour :
+Un réseau CDN est généralement configuré pour :
 
-* Publish : production
+* Publication : production
 
 ### Configuration et création de fragments de contenu {#cconfigure-create-content-fragments}
 
-AEM GraphQL est utilisé pour récupérer des informations de vos fragments de contenu. Ils doivent être configurés, puis une structure et un emplacement définis, avant de pouvoir créer le contenu.
+AEM GraphQL est utilisé pour récupérer des informations à partir de vos fragments de contenu. Ils doivent être configurés, puis une structure et un emplacement définis, avant que vous puissiez créer le contenu.
 
 #### Détails {#details-content-fragments}
 
 * [Création d’une configuration](/help/headless/setup/create-configuration.md)
-* [Création d’un modèle de fragment de contenu](/help/headless/setup/create-content-model.md)
+* [Créer un modèle de fragment de contenu](/help/headless/setup/create-content-model.md)
 * [Création d’un dossier Assets](/help/headless/setup/create-assets-folder.md)
 * [Créer et modifier vos fragments de contenu](/help/headless/setup/create-content-fragment.md)
 
@@ -156,7 +156,7 @@ Les fragments de contenu sont définis, créés, testés, publiés et accessible
 
 * Création
 * Prévisualisation
-* Publier
+* Publication
 
 Pour :
 
@@ -166,7 +166,7 @@ Pour :
 
 ## Utilisation d’AEM GraphQL {#use-aem-graphql}
 
-### Optimisation des requêtes GraphQL {#optimize-graphql-queries}
+### Optimisation de vos requêtes GraphQL {#optimize-graphql-queries}
 
 Ces instructions sont fournies pour vous aider à éviter les problèmes de performances liés à vos requêtes GraphQL.
 
@@ -176,24 +176,24 @@ Ces instructions sont fournies pour vous aider à éviter les problèmes de perf
 
 >[!NOTE]
 >
->Les instructions d’optimisation couvrent la configuration du cache, déjà traitée dans [Configuration](#setup).
+>Les instructions d’optimisation couvrent la configuration du cache, déjà abordée dans [Configuration](#setup).
 
 ### Accès à GraphQL à partir de vos applications {#access-graphql-from-your-apps}
 
-AEM CMS sans interface donne aux développeurs la liberté de créer et de proposer des expériences exceptionnelles en utilisant les langages, les structures et les outils qu’ils connaissent déjà.
+AEM Headless CMS offre aux développeurs la liberté de créer et de diffuser des expériences exceptionnelles à l’aide des langages, des frameworks et des outils qu’ils connaissent déjà.
 
 #### Détails {#details-your-apps}
 
-* [&#x200B; Installez et utilisez le SDK AEM pour le développement &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=fr)
-* [AEM Ressources du développeur sans tête](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* Exemples : [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=fr), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html?lang=fr), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=fr), etc.
+* [Installer et utiliser AEM SDK pour le développement](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=fr)
+* [Ressources de développement découplées AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* Par exemple, [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html) et [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html).
 
 #### Environnements {#environments-your-apps}
 
 Les applications sont généralement développées, testées et utilisées sur :
 
 * Prévisualisation
-* Publier
+* Publication
 
 Pour :
 
@@ -203,8 +203,8 @@ Pour :
 
 ### Ressources supplémentaires
 
-Pour plus d’informations sur AEM GraphQL et les fragments de contenu, voir :
+Pour plus d’informations sur le GraphQL AEM et les fragments de contenu, voir :
 
 * [API AEM GraphQL pour l’utilisation des fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 * [Utilisation de l’IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
-* [AEM Ressources du développeur sans tête](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Ressources de développement découplées AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)

@@ -4,22 +4,22 @@ description: Grâce à ce guide de démarrage rapide, découvrez les fondamentau
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 94%
+source-wordcount: '284'
+ht-degree: 77%
 
 ---
 
 # Configuration découplée {#introduction}
 
-Voici une méthode simple pour créer, gérer et diffuser des expériences à l’aide d’AEM as a Cloud Service en cinq étapes pour les utilisateurs et les utilisatrices qui connaissent déjà AEM et la technologie découplée. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
+Vous trouverez ci-dessous un moyen simple de créer, de gérer et de diffuser des expériences à l’aide d’AEM as a Cloud Service en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie découplée (afin qu’ils puissent se reporter à la documentation détaillée). Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
-1. [Création d’une configuration](create-configuration.md)
-1. [Création d’un modèle de fragment de contenu](create-content-model.md)
-1. [Création d’un dossier Ressources](create-assets-folder.md)
-1. [Création d’un fragment de contenu](create-content-fragment.md)
-1. [Création d’une requête API](create-api-request.md)
+1. [Création d’une configuration](/help/headless/setup/create-configuration.md)
+1. [Créer un modèle de fragment de contenu](/help/headless/setup/create-content-model.md)
+1. [Création d’un dossier Assets](/help/headless/setup/create-assets-folder.md)
+1. [Créer un fragment de contenu](/help/headless/setup/create-content-fragment.md)
+1. [Création d’une requête API](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ Voici une méthode simple pour créer, gérer et diffuser des expériences à l�
 >* [Parcours de création de contenu découplé](/help/journey-headless/author/overview.md)
 >* [Parcours de traduction découplée](/help/journey-headless/translation/overview.md).
 
-## Public {#audience}
+## Audience {#audience}
 
 Les tâches décrites sont nécessaires pour une démonstration de bout en bout des capacités découplées d’AEM. Toute personne disposant d’un accès d’administration à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développement est idéale.
 
@@ -44,4 +44,4 @@ Cependant, dans une situation de production, les tâches seront exécutées par 
 
 ## Étape suivante {#next-step}
 
-Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [&#x200B; Création d’une configuration &#x200B;](create-configuration.md).
+Prêt à en apprendre plus ? Alors commencez par lire la première partie de la Configuration découplée : [ Création d’une configuration ](create-configuration.md).

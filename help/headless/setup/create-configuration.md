@@ -4,14 +4,14 @@ description: Créez une configuration comme première étape de prise en main d�
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 76%
+source-wordcount: '250'
+ht-degree: 68%
 
 ---
 
-# Création d’une configuration - Configuration découplée {#creating-configuration}
+# Création d’une configuration - Configuration découplée {#create-configuration}
 
 Pour commencer à utiliser le découplage dans AEM as a Cloud Service, vous devez créer une configuration.
 
@@ -21,27 +21,13 @@ L’explorateur de configurations fournit une API de configuration générique, 
 
 Dans le contexte d’une gestion de contenu découplée dans AEM, considérez une configuration comme un espace de travail dans AEM où vous pouvez créer vos modèles de contenu, qui définissent la structure de votre futur contenu et des fragments de contenu. Vous pouvez avoir plusieurs configurations pour séparer ces modèles.
 
-Si vous connaissez les modèles [&#x200B; page dans une implémentation AEM full stack](/help/sites-cloud/authoring/page-editor/templates.md), l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
+Si vous connaissez les modèles de page [ dans une implémentation AEM full stack](/help/sites-cloud/authoring/page-editor/templates.md), l’utilisation des configurations pour la gestion des modèles de contenu est similaire.
 
 ## Création d’une configuration {#how-to-create-a-configuration}
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils > Général > Explorateur de configurations**.
-1. Indiquez un **Titre** et un **Nom** pour votre configuration.
-   * Le **Titre** doit être descriptif.
-   * Le **nom** deviendra celui du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et ajusté selon les [conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
-      * Il peut être adapté si nécessaire.
-1. Vérifiez les options suivantes :
-   * **Modèles de fragment de contenu**
-   * **Requêtes persistantes GraphQL**
-
-   ![Création d’une configuration](../assets/create-configuration.png)
-
-1. Sélectionnez **Créer**
-
-Vous pouvez créer plusieurs configurations si nécessaire. Les configurations peuvent également être imbriquées.
+Pour obtenir des détails détaillés, voir [Activation de la fonctionnalité de fragment de contenu dans l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!NOTE]
 >
