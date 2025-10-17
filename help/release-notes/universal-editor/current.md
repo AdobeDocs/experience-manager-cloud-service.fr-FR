@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 50%
+ht-degree: 78%
 
 ---
 
@@ -34,7 +34,7 @@ Si vous souhaitez tester ces nouvelles fonctionnalités à venir et partager vos
 
 ### Nouvel éditeur de texte enrichi {#new-rte}
 
-Le nouvel éditeur de texte enrichi ProseMirror, avec un sélecteur de page dans la boîte de dialogue du lien, est désormais disponible dans le panneau de droite. [Cet éditeur de texte enrichi offre des options de configuration flexibles.](/help/implementing/universal-editor/configure-rte.md)
+Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de page dans la boîte de dialogue du lien, est désormais disponible dans le panneau de droite. [Cet éditeur de texte enrichi offre des options de configuration flexibles.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Autres améliorations {#other-improvements}
 
