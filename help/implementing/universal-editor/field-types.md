@@ -4,10 +4,10 @@ description: Découvrez les champs et les types de composants que l’éditeur u
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Un objet de champ possède la définition de type suivante.
 | `label` | `FieldLabel` | Libellé du champ | Oui |
 | `description` | `FieldDescription` | Description du champ | Non |
 | `placeholder` | `string` | Espace réservé du champ | Non |
-| `value` | `FieldValue` | Valeur par défaut | Non |
+| `value` | `FieldValue` | Il s’agit d’une valeur par défaut qui sert d’espace réservé. Aucune mise à jour de contenu n’est pilotée par cette valeur. C&#39;est juste une représentation dans l&#39;interface utilisateur. | Non |
 | `valueType` | `ValueType` | La validation standard peut être `string`, `string[]`, `number`, `date`, `boolean` | Non |
 | `required` | `boolean` | Le champ est-il obligatoire ? | Non |
 | `readOnly` | `boolean` | Le champ est-il en lecture seule ? | Non |
