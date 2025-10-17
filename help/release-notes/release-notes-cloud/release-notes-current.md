@@ -157,7 +157,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 >[!NOTE]
 >
 >En disponibilité limitée à partir du 25 septembre.
->>Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
+>&#x200B;>Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
 
 ### Nouvelle version des outils de développement AEM pour Eclipse {#aem-develeper-tools-for-eclipse}
 
