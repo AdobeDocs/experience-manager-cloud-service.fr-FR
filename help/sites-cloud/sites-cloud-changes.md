@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Dans AEM Cloud Service, les opérations qui bloquaient traditionnellement l’
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-Vous pouvez afficher le statut des tâches asynchrones dans le tableau de bord [&#x200B; Opérations en arrière-plan &#x200B;](/help/operations/asynchronous-jobs.md).
+Vous pouvez afficher le statut des traitements asynchrones à partir du [tableau de bord des opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >
