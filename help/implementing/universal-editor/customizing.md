@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 
@@ -38,6 +38,26 @@ L’option **Aperçu** dans la fenêtre de publication peut donc être entièrem
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Désactivation de la publication en direct {#publish-live}
+
+Certains workflows de création peuvent empêcher la publication sur le service actif.
+
+L’option **Live** dans la fenêtre de publication peut donc être supprimée entièrement dans une application en ajoutant les métadonnées suivantes.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Désactiver la dépublication {#unpublish}
+
+Certains workflows de création nécessitent un processus d’approbation avant la dépublication du contenu. Dans ce cas, l’option de dépublication ne doit être accessible à aucun auteur.
+
+Le bouton **Dépublier** peut donc être entièrement supprimé dans une application en ajoutant les métadonnées suivantes.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## Désactivation de l’ouverture de la page {#open-page}
