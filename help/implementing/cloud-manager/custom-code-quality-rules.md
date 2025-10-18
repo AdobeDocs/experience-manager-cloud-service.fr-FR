@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 66%
+source-wordcount: '4349'
+ht-degree: 64%
 
 ---
 
@@ -37,7 +37,7 @@ La section suivante détaille les règles SonarQube exécutées par Cloud Manag
 
 ### N’utilisez pas de fonctions potentiellement dangereuses {#do-not-use-potentially-dangerous-functions}
 
-* **Clé** : CQRules:CWE-676
+* **Clé** : CQRules:CWE-676
 * **Type** : vulnérabilité
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
@@ -93,7 +93,7 @@ public class DoThis implements Runnable {
 
 ### N’utilisez pas de chaînes de format pouvant être contrôlées en externe. {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-* **Clé** : CQRules:CWE-134
+* **Clé** : CQRules:CWE-134
 * **Type** : vulnérabilité
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 ### Les requêtes HTTP doivent toujours avoir des délais de socket et de connexion {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-* **Clé** : CQRules:ConnectionTimeoutMechanism
+* **Clé** : CQRules:ConnectionTimeoutMechanism
 * **Type** : bogue
 * **Gravité** : critique
 * **Depuis** : version 2018.6.0
@@ -188,7 +188,7 @@ public void orDoThis () {
 
 ### Toujours fermer les objets ResourceResolver {#resourceresolver-objects-should-always-be-closed}
 
-* **Clé** : CQRules:CQBP-72
+* **Clé** : CQRules:CQBP-72
 * **Type** : `Code Smell`
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
@@ -230,12 +230,12 @@ public void orDoThis(Session session) throws Exception {
 
 ### N’utilisez pas les chemins de servlet Sling pour enregistrer les servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-* **Clé** : CQRules:CQBP-75
+* **Clé** : CQRules:CQBP-75
 * **Type** : `Code Smell`
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la [documentation Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), il est déconseillé de lier les servlets aux chemins. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la documentation [`Sling`](https://sling.apache.org/documentation/the-sling-engine/servlets.html) les servlets de liaison par chemins d’accès sont découragés. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -250,7 +250,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### Les exceptions capturées doivent être consignées ou renvoyées, mais pas les deux. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-* **Clé** : CQRules:CQBP-44---CatchAndEitherLogOrThrow
+* **Clé** : CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -292,7 +292,7 @@ public void orDoThis() throws MyCustomException {
 
 ### Éviter les instructions de journal immédiatement suivies d’une instruction de renvoi {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-* **Clé** : CQRules:CQBP-44---ConsecutivelyLogAndThrow
+* **Clé** : CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -318,11 +318,11 @@ public void doThis() throws Exception {
 
 ### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
+* **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 
-En règle générale, le niveau de journalisation INFO doit être utilisé pour délimiter les actions importantes et, par défaut, Experience Manager est configuré pour le journal au niveau INFO ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes de GET ou d’HEAD, consignez-les aux niveaux AVERTISSEMENT ou ERREUR si un problème s’est produit. Utilisez les niveaux DEBUG ou TRACE si des informations de dépannage détaillées sont nécessaires.
+En règle générale, le niveau de journalisation INFO doit être utilisé pour délimiter les actions importantes et, par défaut, Experience Manager est configuré pour le journal au niveau INFO ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, consignez-vous aux niveaux AVERTISSEMENT ou ERREUR si un problème s’est produit. Utilisez les niveaux DEBUG ou TRACE si des informations de dépannage détaillées sont nécessaires.
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ public void doGet() throws Exception {
 
 ### N’utilisez pas Exception.getMessage() comme premier paramètre d’une instruction de journalisation {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-* **Clé** : CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
+* **Clé** : CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -379,7 +379,7 @@ public void doThis() {
 
 ### La journalisation des blocs catch doit se trouver au niveau d’avertissement ou d’erreur {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-* **Clé** : CQRules:CQBP-44---WrongLogLevelInCatchBlock
+* **Clé** : CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -412,7 +412,7 @@ public void doThis() {
 
 ### Ne pas imprimer les arborescences des appels de procédure sur la console {#do-not-print-stack-traces-to-the-console}
 
-* **Clé** : CQRules:CQBP-44---ExceptionPrintStackTrace
+* **Clé** : CQRules:CQBP-44---ExceptionPrintStackTrace
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -445,7 +445,7 @@ public void doThis() {
 
 ### Ne générez pas de sortie standard ou d’erreur standard. {#do-not-output-to-standard-output-or-standard-error}
 
-* **Clé** : CQRules:CQBP-44—LogLevelConsolePrinters
+* **Key** : CQRules:CQBP-44—LogLevelConsolePrinters
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
@@ -478,12 +478,12 @@ public void doThis() {
 
 ### Éviter les chemins d’accès aux bibliothèques et aux applications codés en dur {#avoid-hardcoded-apps-and-libs-paths}
 
-* **Clé** : CQRules:CQBP-71
+* **Clé** : CQRules:CQBP-71
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche Sling, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
+Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
 
 #### Code non conforme {#non-compliant-code-13}
 
@@ -503,19 +503,19 @@ public void doThis(Resource resource) {
 
 ### N’utilisez pas le planificateur Sling. {#sonarqube-sling-scheduler}
 
-* **Clé** : CQRules:AMSCORE-554
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Clé** : CQRules:AMSCORE-554
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-N’utilisez pas le planificateur Sling pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
+N’utilisez pas le planificateur de `Sling` pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Consultez [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster.
+Voir Gestion des tâches et des événements [`Apache Sling`](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la manière dont les tâches Sling sont gérées dans des environnements en cluster.
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-deprecated}
 
 * **Clé** : AMSCORE-553
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -532,9 +532,9 @@ Cependant, il arrive qu’une API devienne obsolète dans le contexte d’Experi
 * **Gravité** : mineure
 * **Depuis** : Version 2023.11
 
-Le projet Apache Sling décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées à la place.
+Le projet `Apache Sling` décourage l’utilisation de l’annotation `@Inject` dans le contexte des modèles Sling, car elle peut entraîner de mauvaises performances lorsqu’elle est combinée avec la `DefaultInjectionStrategy.OPTIONAL` (au niveau du champ ou de la classe). Des injections plus spécifiques (comme les annotations `@ValueMapValue` ou `@OsgiInjector`) doivent être utilisées à la place.
 
-Consultez la [documentation Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été faite en premier lieu.
+Consultez la documentation [`Apache Sling`](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) pour plus d’informations sur les annotations recommandées et sur les raisons pour lesquelles cette recommandation a été formulée.
 
 
 ### Réutilisation des instances d’un client HTTP {#sonarqube-reuse-httpclient}
@@ -548,7 +548,7 @@ Les applications AEM atteignent souvent d’autres applications à l’aide du p
 
 Cette règle vérifie qu’un tel objet HttpClient n’est pas privé dans une méthode, mais global au niveau de la classe, afin qu’il puisse être réutilisé. Dans ce cas, le champ HttpClient doit être défini dans le constructeur de la classe ou de la méthode `activate()` (si cette classe est un composant/service OSGi).
 
-Consultez le [&#x200B; Guide d’optimisation &#x200B;](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
+Consultez le [ Guide d’optimisation ](https://hc.apache.org/httpclient-legacy/performance.html) du HttpClient pour connaître quelques bonnes pratiques concernant l’utilisation du HttpClient.
 
 #### Code non conforme {#non-compliant-code-14}
 
@@ -579,7 +579,7 @@ La section suivante présente les vérifications OakPAL exécutées par Cloud M
 
 >[!NOTE]
 >
->OakPAL est une structure qui valide les packages de contenu à l’aide d’un référentiel Oak autonome. Un partenaire Experience Manager, qui a remporté le prix Experience Manager Rockstar North America 2019, l&#39;a développé.
+>OakPAL est une structure qui valide les modules de contenu à l’aide d’un référentiel Oak autonome. Un partenaire d’Experience Manager, lauréat du prix Experience Manager Rockstar North America 2019, l’a développé.
 
 ### Les clients ne doivent pas implémenter ni étendre les API de produit annotées avec @ProviderType{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -588,7 +588,7 @@ La section suivante présente les vérifications OakPAL exécutées par Cloud M
 * **Gravité** : critique
 * **Depuis** : version 2018.7.0
 
-L’API Experience Manager contient des interfaces et des classes Java™, destinées uniquement à être utilisées, mais non implémentées, par du code personnalisé. Par exemple, seul l’Experience Manager doit implémenter l’interface `com.day.cq.wcm.api.Page`.
+L’API Experience Manager contient des interfaces et des classes Java™, destinées uniquement à être utilisées, mais non implémentées, par du code personnalisé. Par exemple, seul Experience Manager doit implémenter l’interface `com.day.cq.wcm.api.Page`.
 
 Lorsque de nouvelles méthodes sont ajoutées à ces interfaces, ces méthodes supplémentaires n’ont aucune incidence sur le code existant qui utilise ces interfaces. Par conséquent, l’ajout de nouvelles méthodes à ces interfaces est considéré comme rétrocompatible. Cependant, si le code personnalisé implémente l’une de ces interfaces, il introduit un risque de rétrocompatibilité pour le client ou la cliente.
 
@@ -720,7 +720,7 @@ Pour que la recherche de ressources fonctionne correctement dans Experience Mana
 * **Gravité** : critique
 * **Depuis** : version 2019.6.0
 
-En guise de bonne pratique, il a été établi depuis longtemps que l’arborescence de contenu `/libs` dans le référentiel de contenu Experience Manager doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous `/libs` crée un risque significatif pour les mises à jour majeures et mineures. Utilisez l’Adobe, par le biais des canaux officiels, pour apporter des modifications aux `/libs`.
+En guise de bonne pratique, il a été établi depuis longtemps que l’arborescence de contenu `/libs` dans le référentiel de contenu Experience Manager doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous `/libs` crée un risque significatif pour les mises à jour majeures et mineures. Utilisez Adobe, par le biais de canaux officiels, pour apporter des modifications aux `/libs`.
 
 ### Les packages ne doivent pas contenir de configurations OSGi en double. {#oakpal-package-osgi}
 
@@ -735,9 +735,9 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 >
 >Cette règle crée des problèmes lorsque la même configuration, pour le même chemin, est définie dans plusieurs packages, y compris dans les cas où le même package est dupliqué dans la liste globale des packages créés.
 >
->Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` contient `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
+>Par exemple, si la création génère des packages nommés `com.myco:com.myco.ui.apps` et `com.myco:com.myco.all`, où `com.myco:com.myco.all` incorpore `com.myco:com.myco.ui.apps`, toutes les configurations dans `com.myco:com.myco.ui.apps` seront signalées comme doublons.
 >
->En règle générale, cette situation est un cas de non-respect des [&#x200B; directives relatives à la structure du package de contenu &#x200B;](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `<cloudManagerTarget>none</cloudManagerTarget>` est absente de la `com.myco:com.myco.ui.apps` du package .
+>En règle générale, cette situation est un cas de non-respect des [ directives relatives à la structure du package de contenu ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Dans cet exemple, la propriété `com.myco:com.myco.ui.apps` est absente de la `<cloudManagerTarget>none</cloudManagerTarget>` du package .
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -797,12 +797,12 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [&#x200B; Les packages ne doivent pas contenir de configurations OSGi en double &#x200B;](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout recouvrement.
+Tout comme la règle [ Les packages ne doivent pas contenir de configurations OSGi en double ](#oakpal-package-osgi), cette situation est un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
 
 ### Le mode de création par défaut ne doit pas être défini sur l’interface utilisateur classique {#oakpal-default-authoring}
 
 * **Clé** : ClassicUIAuthoringMode
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -811,11 +811,11 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 ### Les composants avec des boîtes de dialogue doivent avoir des boîtes de dialogue d’interface utilisateur tactile {#oakpal-components-dialogs}
 
 * **Clé** : ComponentWithOnlyClassicUIDialog
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-Les composants Experience Manager qui disposent d’une boîte de dialogue d’interface utilisateur classique doivent toujours avoir une boîte de dialogue d’interface utilisateur tactile correspondante. Les deux offrent une expérience de création optimale compatible avec le modèle de déploiement du Cloud Service, où l’interface utilisateur classique n’est plus prise en charge. Cette règle vérifie les scénarios suivants :
+Les composants Experience Manager dotés d’une boîte de dialogue d’interface utilisateur classique doivent toujours avoir une boîte de dialogue d’interface utilisateur tactile correspondante. Les deux offrent une expérience de création optimale compatible avec le modèle de déploiement Cloud Service, où l’interface utilisateur classique n’est plus prise en charge. Cette règle vérifie les scénarios suivants :
 
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un nœud enfant `dialog`) doit avoir une boîte de dialogue d’interface utilisateur tactile correspondante (c’est-à-dire un nœud enfant `cq:dialog`).
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un nœud `design_dialog`) doit avoir une boîte de dialogue de conception d’interface utilisateur tactile correspondante (c’est-à-dire un nœud enfant `cq:design_dialog`).
@@ -826,11 +826,11 @@ La documentation sur les outils de modernisation d’Experience Manager contient
 ### Les packages ne doivent pas combiner du contenu modifiable et non modifiable. {#oakpal-packages-immutable}
 
 * **Clé** : ImmutableMutableMixedPackage
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-Pour être compatible avec le modèle de déploiement sdu service cloud, les packages de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text` et `/etc/clientlibs/myco` n’est pas compatible avec Cloud Service et provoque la notification d’un problème.
+Pour être compatible avec le modèle de déploiement Cloud Service, les modules de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text` et `/etc/clientlibs/myco` n’est pas compatible avec Cloud Service et provoque la notification d’un problème.
 
 >[!NOTE]
 >
@@ -841,7 +841,7 @@ Pour plus d’informations, consultez la section [Structure de projet Experience
 ### N’utilisez pas d’agents de réplication inverse. {#oakpal-reverse-replication}
 
 * **Clé** : ReverseReplication
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -900,7 +900,7 @@ L’outil de migration dans le [référentiel GitHub de ressources d’Experienc
 
 Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page](/help/implementing/developing/components/templates.md).
 
-La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation Experience Manager &#x200B;](https://opensource.adobe.com/aem-modernize-tools/).
+La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### L’utilisation des composants de base hérités n’est pas encouragée. {#oakpal-usage-legacy}
 
@@ -911,7 +911,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 
 Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés depuis plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
-[Outils de modernisation Experience Manager &#x200B;](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
+[Les outils de modernisation d’Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter cette conversion.
 
 ### Utilisez uniquement les noms et l’ordre des modes d’exécution pris en charge {#oakpal-supported-runmodes}
 
@@ -920,7 +920,7 @@ Les composants de base hérités (c’est-à-dire les composants situés dans `/
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service applique une stratégie de nommage stricte pour les noms des modes d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge est basée sur le document [Déploiement sur un as a Cloud Service Experience Manager &#x200B;](/help/implementing/deploying/overview.md#runmodes) et tout écart par rapport à cette liste est identifié comme un problème.
+Experience Manager as a Cloud Service applique une stratégie de nommage stricte pour les noms des modes d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge est basée sur le document [Déploiement sur Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) et tout écart par rapport à cette liste est identifié comme un problème.
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent être des enfants directs de `/oak:index`. {#oakpal-custom-search}
 
@@ -992,7 +992,7 @@ Experience Manager as a Cloud Service interdit aux définitions d’index d
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation avec cette propriété doit être mise à jour avant la migration vers Experience Manager en tant que .
+Experience Manager as a Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation avec cette propriété doit être mise à jour avant la migration vers Experience Manager en tant que
 Cloud Service. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#how-to-use) pour en savoir plus.
 
 ### Les nœuds Lucene de ressource DAM personnalisés ne doivent pas spécifier `queryPaths` {#oakpal-damAssetLucene-queryPaths}
@@ -1206,7 +1206,7 @@ Pour des index spécifiques, veillez à conserver la propriété des balises et 
 * **Gravité** : mineure
 * **Depuis** : version 2024.6.0
 
-AEM Cloud Service interdit le déploiement de définitions d’index de recherche personnalisées (nœuds de type `oak:QueryIndexDefinition`) dans le package de contenu de l’interface d’utilisation.
+AEM Cloud Service interdit le déploiement de définitions d’index de recherche personnalisées (nœuds de type `oak:QueryIndexDefinition`) dans le module de contenu de l’interface d’utilisation.
 
 >[!WARNING]
 >

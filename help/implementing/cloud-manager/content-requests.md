@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1580'
 ht-degree: 3%
 
 ---
@@ -101,4 +101,4 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 | Exclure les appels Commerce integration framework | Exclu | Les demandes envoyées à AEM qui sont transférées vers Commerce integration framework (l’URL commence par `/api/graphql`) ne sont pas facturables pour Cloud Service afin d’éviter un double comptage. |
 | Exclure le `manifest.json` | Exclu | Le manifeste n’est pas un appel API. Il permet de fournir des informations sur la manière d’installer des sites web sur un ordinateur ou un téléphone mobile. Adobe ne doit pas compter les requêtes JSON à `/etc.clientlibs/*/manifest.json` |
 | Exclure le `favicon.ico` | Exclu | Bien que le contenu renvoyé ne doive pas être HTML ou JSON, il a été observé que certains scénarios tels que les flux d’authentification SAML renvoient des icônes en tant qu’HTML. Par conséquent, les favicons sont explicitement exclus du décompte. |
-| Fragment d’expérience (XF) - Réutilisation dans le même domaine | Exclu | Les requêtes envoyées aux chemins d’accès XF (tels que `/content/experience-fragments/...`) à partir de pages hébergées sur le même domaine (tel qu’identifié par l’en-tête référent correspondant à l’hôte de requête).<br><br> exemple : une page d’accueil sur `aem.customer.com` extrayant un fichier XF pour une bannière ou une carte du même domaine.<br><br>· Correspondances d’URL /content/experience-fragments/...<br>· Correspondances de domaine référent `request_x_forwarded_host`<br><br>**Remarque :** si le chemin d’accès au fragment d’expérience est personnalisé (par exemple à l’aide de `/XFrags/...` ou de tout chemin d’accès en dehors de `/content/experience-fragments/`), la requête ne sera pas exclue et pourra être comptabilisée, même si elle concerne le même domaine. Nous vous recommandons d’utiliser la structure de chemin XF standard d’Adobe pour vous assurer que la logique d’exclusion s’applique correctement. |
+| Fragment d’expérience (XF) - Réutilisation dans le même domaine | Exclu | Les requêtes envoyées aux chemins d’accès XF (tels que `/content/experience-fragments/...`) à partir de pages hébergées sur le même domaine (tel qu’identifié par l’en-tête référent correspondant à l’hôte de requête).<br><br> exemple : une page d’accueil sur `aem.customer.com` extrayant un fichier XF pour une bannière ou une carte du même domaine.<br><br>· Correspondances d’URL /content/experience-fragments/...<br>· Correspondances de domaine référent `request_x_forwarded_host`<br><br>**Remarque :** si le chemin d’accès au fragment d’expérience est personnalisé (par exemple à l’aide de `/XFrags/...` ou de tout chemin d’accès en dehors de `/content/experience-fragments/`), la requête n’est pas exclue et peut être comptabilisée. Ce résultat est vrai même s&#39;il s&#39;agit du même domaine. Adobe recommande d’utiliser la structure de chemin XF standard d’Adobe pour s’assurer que la logique d’exclusion s’applique correctement. |
