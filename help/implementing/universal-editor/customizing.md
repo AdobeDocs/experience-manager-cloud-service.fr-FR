@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ Découvrez les différentes options de personnalisation de l’éditeur universe
 >
 >L’éditeur universel offre également de nombreux [points d’extension](/help/implementing/universal-editor/extending.md) qui vous permettent d’étendre ses fonctionnalités afin de répondre aux besoins de votre projet.
 
-## Désactivation de la publication {#disable-publish}
+## Utilisation des balises de configuration Meta {#meta-tags}
 
-Certains workflows de création nécessitent que le contenu soit révisé avant d’être publié. Dans ce cas, les créateurs et créatrices ne doivent pas avoir accès à l’option de publication.
+Certains workflows de création peuvent nécessiter l’utilisation de certaines fonctionnalités de l’éditeur universel et pas d’autres. Pour prendre en charge ces différents cas de figure, des balises méta sont disponibles pour configurer ou désactiver certaines fonctionnalités ou boutons de l’éditeur.
 
-Le bouton **Publier** peut donc être entièrement supprimé d’une application en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Désactivation de la publication sur le service d’aperçu {#publish-preview}
-
-Certains workflows de création peuvent empêcher la publication sur le [service d’aperçu](/help/sites-cloud/authoring/sites-console/previewing-content.md) (le cas échéant).
-
-L’option **Aperçu** dans la fenêtre de publication peut donc être entièrement supprimée d’une application en ajoutant les métadonnées suivantes.
+Utilisez cette balise dans la section `<head>` de la page pour désactiver une ou plusieurs fonctionnalités :
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Désactivation de la publication en direct {#publish-live}
+Si vous souhaitez désactiver plusieurs fonctionnalités, fournissez une liste de valeurs séparées par des virgules.
 
-Certains workflows de création peuvent empêcher la publication sur le service actif.
+Vous trouverez ci-dessous les valeurs prises en charge pour `content`, c’est-à-dire les fonctionnalités qui peuvent être désactivées avec les balises meta.
 
-L’option **Live** dans la fenêtre de publication peut donc être supprimée entièrement dans une application en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Désactiver la dépublication {#unpublish}
-
-Certains workflows de création nécessitent un processus d’approbation avant la dépublication du contenu. Dans ce cas, l’option de dépublication ne doit être accessible à aucun auteur.
-
-Le bouton **Dépublier** peut donc être entièrement supprimé dans une application en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Désactivation de l’ouverture de la page {#open-page}
-
-Le bouton **Ouvrir la page** peut être entièrement supprimé d’une application en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Désactivation du bouton Dupliquer {#duplicate-button}
-
-Certains workflows de création peuvent limiter la possibilité pour le créateur ou la créatrice de contenu de dupliquer des composants. Vous pouvez désactiver l’icône [dupliquer](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Désactivation du copier-coller {#copy-paste}
-
-Certains workflows de création peuvent être amenés à limiter la capacité du créateur ou de la créatrice de contenu à copier et coller des composants. Vous pouvez désactiver les icônes [copier et coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) en ajoutant les métadonnées suivantes.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Valeur du contenu | Description |
+|---|---|
+| `publish` | Désactivez le bouton [Publier](/help/sites-cloud/authoring/universal-editor/navigation.md#publish). |
+| `publish-live` | Désactivation de la [publication](/help/sites-cloud/authoring/universal-editor/publishing.md) en direct |
+| `publish-preview` | Désactiver la prévisualisation de la publication (si le [service de prévisualisation](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible) |
+| `unpublish` | Désactive le bouton [dépublier](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | Désactive les boutons [copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | Désactive le bouton [dupliquer](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | Désactive le bouton [ouvrir la page](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## Modification de votre point d’entrée {#custom-endpoint}
 
