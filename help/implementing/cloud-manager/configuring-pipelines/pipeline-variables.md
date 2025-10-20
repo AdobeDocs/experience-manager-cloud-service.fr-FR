@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
+source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 14%
@@ -48,10 +48,10 @@ Si un pipeline est actif, la gestion des variables est bloquée.
    | --- | --- |
    | Nom | Nom unique de la variable de configuration. Il identifie la variable spécifique utilisée dans le pipeline. Il doit respecter les conventions de dénomination suivantes :<ul><li>Les variables ne peuvent contenir que des caractères alphanumériques et le trait de soulignement (`_`).</li><li>Les noms doivent être en majuscules.</li><li>Il existe une limite de 200 variables par pipeline.</li><li>Chaque nom doit comporter 100 caractères ou moins.</li><li>La valeur `string` de chaque variable doit comporter moins de 2 048 caractères.</li><li>La valeur de chaque variable de type `secretString` doit comporter 500 caractères ou moins.</li></ul> |
    | Valeur | Valeur de la variable. |
-   | Étape appliquée | Obligatoire. L’étape du pipeline à laquelle la variable s’applique :<ul><li>**Build** - La variable est appliquée pendant le processus de création.</li><li>**Tests fonctionnels** - La variable est utilisée pendant l’étape de test fonctionnel.</li><li>**Test de l’interface utilisateur** - La variable est utilisée pendant la phase de test de l’interface utilisateur.</li>&lt;li&lt;**Deploy** - La variable est utilisée lors de l’étape de déploiement. Par exemple, utilisez cette variable pour les pipelines Edge Delivery Services.</li></ul> |
+   | Étape appliquée | Obligatoire. L’étape du pipeline à laquelle la variable s’applique :<ul><li>**Build** - La variable est appliquée pendant le processus de création.</li><li>**Tests fonctionnels** - La variable est utilisée pendant l’étape de test fonctionnel.</li><li>**Test de l’interface utilisateur** - La variable est utilisée pendant la phase de test de l’interface utilisateur.</li>&lt;li **Deploy** - La variable est utilisée lors de l’étape de déploiement. Par exemple, utilisez cette variable pour les pipelines Edge Delivery Services.</li></ul> |
    | Type | Sélectionnez cette option si la variable est en texte brut ou chiffrée en tant que secret. |
 
-   ![&#x200B; Ajouter une variable &#x200B;](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
+   ![ Ajouter une variable ](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
 1. Cliquez sur **Ajouter**.
 
