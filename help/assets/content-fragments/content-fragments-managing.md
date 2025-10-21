@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 81%
@@ -136,7 +136,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/manage-digital-assets.md) et/ou l’[application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 

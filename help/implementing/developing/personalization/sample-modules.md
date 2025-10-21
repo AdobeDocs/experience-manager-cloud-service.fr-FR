@@ -4,7 +4,7 @@ description: ContextHub fournit plusieurs exemples de module d’IU que vous pou
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 95%
@@ -40,7 +40,7 @@ Le code source se trouve dans `/libs/granite/contexthub/code/ui/container/js/Con
 Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Incluez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
 
 * **image :** URL d’une image à afficher en tant qu’icône.
-* **icon :** nom d’une classe d’icône [IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
+* **icon :** nom d’une classe d’icône [IU Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon). Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
 * **title :** nom du module d’IU. Le titre apparaît lorsque le pointeur s’arrête sur l’icône du module d’IU.
 * **fullscreen :** valeur booléenne qui indique si le module d’IU prend en charge le mode plein écran. Utilisez `true` pour prendre en charge le mode plein écran et `false` pour ne pas accepter le mode plein écran.
 * **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Utilisez au maximum deux balises `<p>`.
@@ -172,7 +172,7 @@ La source du module d’IU se trouve à l’adresse `/libs/granite/contexthub/co
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module affiche une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, cliquez sur le module pour afficher un pop-up dans lequel vous pouvez sélectionner l’orientation.
 
 ```javascript
 {
@@ -188,7 +188,7 @@ Les instances du module d’IU `contexthub.screen-orientation` ne nécessitent p
 
 ## Type de module d’IU contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Le module d’IU `contexthub.tagcloud` affiche des informations sur les balises. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat `contexthub.tagcloud`.
+Le module d’IU `contexthub.tagcloud` affiche des informations sur les balises. Dans la barre d’outils, le module d’IU affiche le nombre de balises. Le pop-up affiche un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat `contexthub.tagcloud`.
 
 ![Module contexthub.tagcloud](assets/tagcloud-module.png)
 
@@ -212,7 +212,7 @@ Les instances du module d’IU `contexthub.tagcloud` ne nécessitent pas de vale
 
 ## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
-Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle affiche le nom de connexion de l’utilisateur et vous permet de modifier la valeur du nom d’affichage. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](sample-stores.md#granite-profile-sample-store-candidate).
+Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. Le pop-up affiche le nom d’utilisateur et permet de modifier la valeur du nom d’affichage. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](sample-stores.md#granite-profile-sample-store-candidate).
 
 ![Module granite.profil](assets/profile-module.png)
 
