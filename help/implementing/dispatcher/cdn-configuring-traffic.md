@@ -507,7 +507,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Redirections côté serveur {#server-side-redirectors}
