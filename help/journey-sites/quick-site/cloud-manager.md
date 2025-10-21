@@ -5,12 +5,14 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
 ---
+
 
 # Présentation de Cloud Manager et du workflow de création rapide de site {#understand-cloud-manager}
 

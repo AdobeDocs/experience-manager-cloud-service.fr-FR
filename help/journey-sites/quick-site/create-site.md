@@ -5,12 +5,14 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
 ---
+
 
 # Créer un site à partir d’un modèle {#create-site-from-template}
 
@@ -45,7 +47,7 @@ Les modèles de site permettent de combiner du contenu de site de base dans un p
 
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
-* `site` : package de contenu du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
+* `site` : module du contenu copié pour chaque site créé à partir de ce modèle, tel que des modèles de page, des pages, etc.
 * `theme` : sources du thème du modèle pour modifier l’aspect du site, y compris CSS, JavaScript, etc.
 
 Les modèles sont efficaces car ils sont réutilisables afin que vos auteurs de contenu puissent créer rapidement un site. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de répondre à divers besoins professionnels.

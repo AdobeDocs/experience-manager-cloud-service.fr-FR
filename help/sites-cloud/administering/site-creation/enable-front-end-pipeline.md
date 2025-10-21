@@ -5,7 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -47,7 +48,7 @@ Lorsque vous activez le pipeline front-end d’un site, AEM apporte les modifica
 
 ## Conditions requises {#requirements}
 
-AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page).
+AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activation du pipeline front-end {#enabling}
 
@@ -76,7 +77,7 @@ Le pipeline front-end peut être utilisé avec la fonctionnalité de domaines pe
 
 ### Fichiers front-end statiques {#static-files}
 
-Les ressources front-end statiques déployées via le pipeline front-end sont, par défaut, diffusées à partir du domaine statique prédéfini d’Adobe.
+Les ressources front-end statiques déployées via le pipeline front-end seront, par défaut, diffusées à partir du domaine statique prédéfini d’Adobe.
 
 Si vous avez besoin d’un domaine personnalisé pour les ressources front-end, vous pouvez installer un domaine personnalisé au niveau de publication et configurer le Dispatcher pour acheminer des chemins spécifiques (tels que `/static/`) vers l’emplacement d’hébergement statique d’Adobe. Cette méthode nécessite la mise à jour de vos [règles Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher) pour transférer et mettre en cache correctement les requêtes pour les ressources statiques.
 
@@ -109,4 +110,4 @@ Si vous devez développer et tester les ressources front-end localement avant de
 * Servez manuellement vos fichiers de thème à partir d’un serveur de développement local et mettez à jour le `prefixPath` en `HtmlPageItemsConfig` de correspondre à l’adresse du serveur local.
 * Assurez-vous que la mise en cache du navigateur est désactivée pendant le test pour afficher les mises à jour en direct.
 
-Pour plus d’informations sur le développement front-end local, consultez la documentation du [&#x200B; Créateur de thèmes de site &#x200B;](https://github.com/adobe/aem-site-theme-builder).
+Pour plus d’informations sur le développement front-end local, consultez la documentation du [ Créateur de thèmes de site ](https://github.com/adobe/aem-site-theme-builder).

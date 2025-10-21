@@ -4,12 +4,14 @@ description: Vous découvrez le développement AEM ? Vous avez besoin d’une m
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 8015fba9f4c42615ac311c0a04442948389637fc
+workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
 
 ---
+
 
 # Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 

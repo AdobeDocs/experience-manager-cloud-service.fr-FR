@@ -5,12 +5,14 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
+
 
 # Parcours de création rapide de site AEM {#quick-site-creation-journey}
 
@@ -40,9 +42,9 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des problèmes d’activité liés aux sites grâce à AEM, les parcours AEM Sites représentent un parfait point de départ.
 
-## Public {#audience}
+## Audience {#audience}
 
-Ce parcours présente les exigences, les étapes et les méthodes de personnalisation des thèmes AEM Sites. Son principal public est le développeur front-end, qui n’a pas besoin de connaître AEM. Toutefois, pour illustrer l’ensemble du processus, le parcours implique l’administration, qui est censée posséder des connaissances de base sur AEM Sites et Cloud Manager. En pratique, de nombreuses personnes peuvent remplir plusieurs fonctions et ce parcours prend en charge les perspectives des administrateurs et des développeurs front-end.
+Ce parcours présente les exigences, les étapes et les méthodes de personnalisation des thèmes AEM Sites. Sa principale audience est le développeur front-end, qui n’a pas besoin de connaître AEM. Toutefois, pour illustrer l’ensemble du processus, le parcours implique l’administration, qui est censée posséder des connaissances de base sur AEM Sites et Cloud Manager. En pratique, de nombreuses personnes peuvent remplir plusieurs fonctions et ce parcours prend en charge les perspectives des administrateurs et des développeurs front-end.
 
 | Personne | Description | Rôle dans le Parcours |
 |---|---|---|
