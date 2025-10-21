@@ -4,9 +4,9 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 L’action disponible est expliquée dans le tableau ci-dessous.
 
 | Nom | Propriétés | Signification |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | Nom de l’une des origines définies. |
-|     | skipCache (facultatif, la valeur par défaut est false) | Indique s’il faut utiliser la mise en cache pour les requêtes correspondant à cette règle. Par défaut, les réponses sont mises en cache en fonction de l’en-tête de mise en cache des réponses (par exemple, Cache-Control ou Expires) |
+|                     | skipCache (facultatif, la valeur par défaut est false) | Indique s’il faut utiliser la mise en cache pour les requêtes correspondant à cette règle. Par défaut, les réponses sont mises en cache en fonction de l’en-tête de mise en cache des réponses (par exemple, Cache-Control ou Expires) |
+|                     | en-têtes (facultatif, la valeur par défaut est `{}`) | Paires clé-valeur contenant des en-têtes HTTP supplémentaires à envoyer au serveur principal sélectionné lorsque la règle est déclenchée. Avec des clés correspondant aux noms des en-têtes et des valeurs correspondant aux valeurs des en-têtes |
 | **selectAemOrigin** | originName | Nom de l’une des origines AEM prédéfinies (valeur prise en charge : `static`). |
-|     | skipCache (facultatif, la valeur par défaut est false) | Indique s’il faut utiliser la mise en cache pour les requêtes correspondant à cette règle. Par défaut, les réponses sont mises en cache en fonction de l’en-tête de mise en cache des réponses (par exemple, Cache-Control ou Expires) |
+|                     | skipCache (facultatif, la valeur par défaut est false) | Indique s’il faut utiliser la mise en cache pour les requêtes correspondant à cette règle. Par défaut, les réponses sont mises en cache en fonction de l’en-tête de mise en cache des réponses (par exemple, Cache-Control ou Expires) |
+|                     | en-têtes (facultatif, la valeur par défaut est `{}`) | Paires clé-valeur contenant des en-têtes HTTP supplémentaires à envoyer au serveur principal sélectionné lorsque la règle est déclenchée. Avec des clés correspondant aux noms des en-têtes et des valeurs correspondant aux valeurs des en-têtes |
 
 **Origines**
 
@@ -503,7 +507,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Redirections côté serveur {#server-side-redirectors}
@@ -539,7 +543,7 @@ data:
 
 | Nom | Propriétés | Signification |
 |-----------|--------------------------|-------------|
-| **rediriger** | location | Valeur pour l’en-tête « Emplacement ». |
+| **redirection** | location | Valeur pour l’en-tête « Emplacement ». |
 |     | Statut (facultatif, la valeur par défaut est 301) | Statut HTTP à utiliser dans le message de redirection, 301 par défaut, les valeurs autorisées sont : 301, 302, 303, 307, 308. |
 
 Les emplacements d’une redirection peuvent être des littéraux de chaîne (par exemple, https://www.example.com/page) ou le résultat d’une propriété (par exemple, path) qui est éventuellement transformée, avec la syntaxe suivante :
