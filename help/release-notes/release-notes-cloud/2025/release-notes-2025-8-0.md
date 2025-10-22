@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2025.8.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.8.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1919'
 ht-degree: 86%
 
 ---
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,13 +75,13 @@ Rendez Dynamic Media avec les URL OpenAPI plus lisibles en utilisant les URL Van
 
 >[!NOTE]
 >
->Cette fonctionnalité sera disponible en tant que fonctionnalité à disponibilité limitée le 10 septembre. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
+>Cette fonctionnalité est en disponibilité limitée. Consultez [cet article](/help/assets/vanity-urls.md) pour commencer.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 * [Composant d’entrée de date et d’heure](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) : un composant de date et d’heure est désormais disponible, ce qui permet aux utilisateurs et aux utilisatrices de sélectionner la date et l’heure à l’aide d’une interface de calendrier et d’horloge, ou en saisissant manuellement les valeurs dans un format pris en charge.
 * [Amélioration de la gestion des erreurs pour les chargements de fichiers](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) : le composant Pièce jointe valide désormais automatiquement le type de fichier chargé par rapport à la liste autorisée. Si un utilisateur ou une utilisatrice charge un fichier dans un format non pris en charge, le formulaire affiche une erreur lors de l’envoi. Le composant vérifie également le contenu du fichier pour valider son type, ce qui améliore la sécurité globale du formulaire.
-* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée &#x200B;](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
+* [Réponse d’erreur spécifiée pour l’action d’envoi personnalisée ](/help/forms/custom-submit-action-troubleshooting.md) : lorsqu’une action d’envoi personnalisée rencontre une erreur non gérée, le code d’erreur 502 est renvoyé. Cela permet d’identifier que le problème est lié à l’action d’envoi personnalisée, ce qui facilite le débogage.
 * [Exclusion des champs masqués du document d’enregistrement](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings) : une nouvelle propriété a été ajoutée pour permettre l’exclusion des champs masqués du document d’enregistrement. Par défaut, cette option n’est pas sélectionnée et s’applique à tous les champs de formulaire.
 
 ### Fonctionnalités de version préliminaire dans AEM Forms
@@ -160,7 +160,7 @@ OSGi properties:
 
 -->
 
-### Obsolescence de l’exécution Java 11 {#java11-runtime-deprecation}
+### Obsolescence de Java 11 Runtime {#java11-runtime-deprecation}
 
 L’*exécution Java 11* est désormais obsolète et la plupart des environnements ont déjà été mis à niveau vers l’**exécution Java 21** plus performante.
 

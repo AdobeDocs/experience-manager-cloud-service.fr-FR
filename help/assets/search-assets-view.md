@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et trouver des ressources dans la vue
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 83%
+source-wordcount: '2255'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 >abstract="Recherchez des ressources en spécifiant un mot-clé dans la barre de recherche ou en filtrant les ressources en fonction de leur statut, de leur type de fichier, de leur type MIME, de leur taille ou de leurs dates de création, de modification et d’expiration. Outre les filtres standard, vous pouvez également appliquer des filtres personnalisés. Vous pouvez enregistrer les résultats filtrés sous la forme d’une recherche enregistrée ou d’une collecte dynamique."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=fr#manage-smart-collection" text="Créer des collectes dynamiques"
 
-[!DNL Assets view] offre des fonctionnalités de recherche efficaces, qui fonctionnent simplement par défaut. La recherche fonctionne de façon exhaustive, car il s’agit d’une recherche de type plein texte. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu. [!DNL Assets view] fournit une recherche plein texte, ou même des capacités de recherche basées sur les métadonnées telles que les balises intelligentes, le titre, la date de création et le copyright.
+[!DNL Assets view] offre des fonctionnalités de recherche efficaces, qui fonctionnent simplement par défaut. La recherche fonctionne de façon exhaustive, car il s’agit d’une recherche de type plein texte. Ses puissantes fonctionnalités de recherche vous permettent de trouver rapidement la ressource appropriée et d’améliorer la vitesse de votre contenu. [!DNL Assets view] fournit une recherche en texte intégral, ou même des capacités de recherche basées sur les métadonnées telles que les balises intelligentes, le titre, la date de création et le copyright.
 
 Pour rechercher des ressources :
 
@@ -81,7 +81,7 @@ La vue Assets fournit les filtres personnalisés suivants :
      </tr>
      <tr>
       <td>Balises prédites</td>
-      <td>Filtrage des ressources à l’aide de la balise dynamique de ressource. Le nom de balise dynamique que vous indiquez dans les critères de recherche sensibles à la casse doit correspondre exactement au nom de balise dynamique de la ressource à afficher dans les résultats. Vous ne pouvez pas spécifier plusieurs balises dynamiques dans les critères de recherche.</td>
+      <td>Filtrage des ressources à l’aide de la balise intelligente de ressource. Le nom de balise intelligente que vous indiquez dans les critères de recherche avec respect de la casse doit correspondre exactement au nom de balise intelligente de la ressource à afficher dans les résultats. Vous ne pouvez pas spécifier plusieurs balises intelligentes dans les critères de recherche.</td>
      </tr>    
     </tbody>
    </table>
@@ -137,8 +137,6 @@ Voici quelques-uns de ses principaux avantages :
 
 * **Recherche contextuelle** : reconnaît l’intention derrière une requête, pas seulement les mots.
 
-* **Recherche basée sur des invites textuelles** : Experience Manager Assets applique des filtres au contenu et affiche automatiquement les résultats appropriés en fonction d’invites textuelles simples.
-
 >[!IMPORTANT]
 >
 > Spécifiez trois mots ou plus pour que la recherche sémantique affiche les résultats appropriés.
@@ -173,7 +171,7 @@ Pour générer de nouvelles ressources en utilisant [!DNL Adobe Firefly] :
 
    ![Intégration de Firefly](assets/firefly-integration.png)
 
-   Les nouvelles ressources sont générées. Vous pouvez également modifier la description de l’image en saisissant la nouvelle invite de texte dans la zone de description. [Découvrez comment écrire une bonne invite d’IA pour générer du contenu extraordinaire et pertinent](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Vous pouvez également [modifier l’image avec d’autres fonctionnalités telles que la modification du style, des dimensions de l’image, etc](https://helpx.adobe.com/in/firefly/using/text-to-image.html).
+   Les nouvelles ressources sont générées. Vous pouvez également modifier la description de l’image en saisissant le nouveau prompt de texte dans la zone de description. [Découvrez comment écrire une bonne invite d’IA pour générer du contenu extraordinaire et pertinent](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Vous pouvez également [modifier l’image avec d’autres fonctionnalités telles que la modification du style, des dimensions de l’image, etc](https://helpx.adobe.com/in/firefly/using/text-to-image.html).
 
    ![Intégration de Firefly](assets/bugatti-type-57.png)
 
@@ -222,7 +220,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Vous pouvez sélectionner les ressources qui s’affichent dans les résultats de recherche et effectuer les opérations suivantes :
 
-* **Rechercher une image similaire** : recherchez une ressource d’image similaire dans l’interface utilisateur d’Assets en fonction des métadonnées et des balises intelligentes.
+* **Rechercher une image similaire** : recherchez une ressource d’image similaire dans l’interface d’utilisation d’Assets en fonction des métadonnées et des balises intelligentes.
 
 * **Détails** : affichez et modifiez les propriétés de la ressource.
 
@@ -287,7 +285,7 @@ Vous pouvez prévisualiser votre page d’accueil axée sur la recherche afin d�
 
 ## Recherche contextuelle {#contextual-search}
 
-Vous pouvez également rechercher des ressources disponibles dans le référentiel en définissant des invites de texte. Experience Manager Assets transforme automatiquement ces invites de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
+Vous pouvez également rechercher des ressources disponibles dans le référentiel en définissant des prompts de texte. Experience Manager Assets transforme automatiquement ces prompts de texte en filtres de recherche et affiche les résultats de la recherche. Vous pouvez afficher et modifier des filtres automatiques à l’aide du volet Filtres pour affiner davantage les résultats de la recherche.
 
 ### Accéder à la recherche contextuelle {#access-contextual-search}
 
@@ -297,15 +295,15 @@ Pour accéder à la recherche contextuelle dans Experience Manager Assets :
 
    ![Recherche contextuelle](assets/access-contextual-search.png)
 
-1. Définissez l’invite de texte dans la zone de texte Rechercher et cliquez sur **[!UICONTROL Recherche contextuelle]**.
+1. Définissez le prompt de texte dans la zone de texte Rechercher et cliquez sur **[!UICONTROL Recherche contextuelle]**.
 
-   ![Invite de texte de recherche contextuelle](/help/assets/assets/wknd-contextual-search.png)
+   ![Prompt de texte de recherche contextuelle](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] affiche les résultats de la recherche.
 
 ### Filtres pris en charge {#supported-filters}
 
-La recherche contextuelle prend en charge les filtres prêts à l’emploi suivants. Basez vos invites de texte sur ces filtres pour afficher les résultats de recherche appropriés.
+La recherche contextuelle prend en charge les filtres prêts à l’emploi suivants. Basez vos prompts de texte sur ces filtres pour afficher les résultats de recherche appropriés.
 
 * Hauteur de l’image
 
@@ -325,11 +323,11 @@ La recherche contextuelle prend en charge les filtres prêts à l’emploi suiva
 
 * Ressources expirées
 
-### Exemples d’invites de texte {#text-prompts-examples}
+### Exemples de prompts de texte {#text-prompts-examples}
 
 **Exemple 1**
 
-**Invite de texte** : images créées ce mois-ci.
+**Prompt de texte** : images créées ce mois-ci.
 
 [!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
 
@@ -337,7 +335,7 @@ La recherche contextuelle prend en charge les filtres prêts à l’emploi suiva
 
 **Exemple 2**
 
-**Invite de texte** : images d’au moins 200 px de haut et 100 px de large avec plage et ciel clair.
+**Prompt de texte** : images d’au moins 200 px de haut et 100 px de large avec plage et ciel clair.
 
 [!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
 
@@ -345,13 +343,13 @@ La recherche contextuelle prend en charge les filtres prêts à l’emploi suiva
 
 **Exemple 3**
 
-**Invite de texte** : j’ai besoin d’images de ciel bleu de 1 500 et 2 500 pixels de hauteur, créées au cours du dernier mois et qui ne sont pas expirées ni approuvées.
+**Prompt de texte** : j’ai besoin d’images de ciel bleu de 1 500 et 2 500 pixels de hauteur, créées au cours du dernier mois et qui ne sont pas expirées ni approuvées.
 
 [!DNL Experience Manager Assets] applique automatiquement les filtres suivants et affiche les résultats de la recherche :
 
 ![Exemple de recherche contextuelle 3](assets/contextual-search-example3.png)
 
-La vidéo suivante illustre le processus de bout en bout, de l’accès à l’interface utilisateur de la recherche contextuelle à la définition d’invites de texte, en passant par l’affichage des résultats de la recherche.
+La vidéo suivante illustre le processus de bout en bout, de l’accès à l’interface utilisateur de la recherche contextuelle à la définition de prompts de texte, en passant par l’affichage des résultats de la recherche.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
@@ -361,11 +359,11 @@ Les administrateurs et administratrices ont également la possibilité de désac
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
 
-1. Dans la section [!UICONTROL Recherche contextuelle], désactivez la fonction **[!UICONTROL Activer la recherche contextuelle pour votre organisation]** pour désactiver la fonction de recherche contextuelle pour toutes les personnes de votre organisation.
+1. Dans la section [!UICONTROL Recherche contextuelle], désactivez le bouton (bascule) **[!UICONTROL Activer la recherche contextuelle pour votre organisation]** pour désactiver la fonction de recherche contextuelle pour toutes les personnes de votre organisation.
 
 ### Commentaires sur la recherche contextuelle {#contextual-search-feedback}
 
-Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur l’![icône Recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg), puis sur l’icône Commentaires. Sélectionnez le type de commentaire, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Soumettre]**.
+Si vous devez fournir des commentaires sur la fonction de recherche contextuelle, cliquez sur l’![icône Recherche contextuelle](assets/do-not-localize/Smock_Help_18_N.svg), puis sur l’icône Commentaires. Sélectionnez le type de feedback, spécifiez l’objet et la description, puis cliquez sur **[!UICONTROL Envoyer]**.
 
 ![Commentaires sur la recherche contextuelle](assets/contextual-search-feedback.png)
 
@@ -377,6 +375,6 @@ Si vous devez fournir des commentaires sur la fonction de recherche contextuelle
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
 
 

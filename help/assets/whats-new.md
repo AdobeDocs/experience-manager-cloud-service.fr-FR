@@ -3,10 +3,10 @@ title: Nouveautés de Content Hub
 description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub récemment lancées.
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,21 @@ La vidéo suivante présente les principales fonctionnalités de Content Hub :
 
 ## Date de publication {#release-date}
 
-La date de publication de la version Content Hub (2025.8.0) est le 28 août 2025 (la même que celle de la version AEM as a Cloud Service). La prochaine disponibilité des fonctionnalités (2025.9.0) est prévue pour le 25 septembre 2025.
+La date de publication de la version Content Hub (2025.9.0) est le vendredi 25 septembre 2025 (la même que celle de la version AEM as a Cloud Service). La prochaine disponibilité des fonctionnalités (2025.10.0) est prévue pour le 30 octobre 2025.
+
+## Fonctionnalités de la version de septembre {#september-release-features}
+
+**Marquer les collections comme favoris**
+
+Vous pouvez désormais marquer les collections en tant que Favoris dans Content Hub, ce qui facilite leur organisation et leur récupération. Une fois ajoutées, vos collections favorites sont facilement disponibles dans l’onglet **[!UICONTROL Favoris]** de la page d’accueil de Content Hub.
+
+**Épingler des collections pour un accès rapide**
+
+Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
+
+>[!IMPORTANT]
+>
+>Ces fonctionnalités sont disponibles en tant que fonctionnalités à disponibilité limitée. Vous pouvez [créer et envoyer un dossier d’assistance client Adobe](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour l’activer pour votre déploiement.
 
 ## Fonctionnalités de la version d’août {#august-release-features}
 
