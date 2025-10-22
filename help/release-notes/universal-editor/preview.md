@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 ## Nouvelles fonctionnalités à venir {#what-is-new}
 
 * Les opérations de copier-coller dans les onglets des navigateurs sont désormais prises en charge.
+   * Limité à entre les onglets ouverts en même temps.
+   * La copie de contenu puis l’ouverture d’un nouvel onglet ne sont pas prises en charge.
 * Vous pouvez désormais désactiver le bouton de dépublication à l’aide d’une balise meta.
 
 ## Améliorations à venir {#other-improvements}

@@ -4,10 +4,10 @@ description: Découvrez les différentes options de personnalisation de l’édi
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 69%
+source-wordcount: '412'
+ht-degree: 67%
 
 ---
 
@@ -36,10 +36,10 @@ Vous trouverez ci-dessous les valeurs prises en charge pour `content`, c’est-�
 
 | Valeur du contenu | Description |
 |---|---|
-| `publish` | Désactivez le bouton [Publier](/help/sites-cloud/authoring/universal-editor/navigation.md#publish). |
+| `publish` | Désactivez toutes les fonctionnalités [publication](/help/sites-cloud/authoring/universal-editor/publishing.md), c’est-à-dire les boutons [publier](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) et [dépublier](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis). |
 | `publish-live` | Désactivation de la [publication](/help/sites-cloud/authoring/universal-editor/publishing.md) en direct |
 | `publish-preview` | Désactiver la prévisualisation de la publication (si le [service de prévisualisation](/help/sites-cloud/authoring/sites-console/previewing-content.md) est disponible) |
-| `unpublish` | Désactive le bouton [dépublier](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `unpublish` | Désactivez le [bouton de dépublication](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ([fonction Aperçu](/help/release-notes/universal-editor/preview.md)). |
 | `copy` | Désactive les boutons [copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Désactive le bouton [dupliquer](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Désactive le bouton [ouvrir la page](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
