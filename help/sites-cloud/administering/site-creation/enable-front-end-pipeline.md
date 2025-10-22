@@ -5,8 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -48,7 +48,7 @@ Lorsque vous activez le pipeline front-end d’un site, AEM apporte les modifica
 
 ## Conditions requises {#requirements}
 
-AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page).
+AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activation du pipeline front-end {#enabling}
 
@@ -110,4 +110,4 @@ Si vous devez développer et tester les ressources front-end localement avant de
 * Servez manuellement vos fichiers de thème à partir d’un serveur de développement local et mettez à jour le `prefixPath` en `HtmlPageItemsConfig` de correspondre à l’adresse du serveur local.
 * Assurez-vous que la mise en cache du navigateur est désactivée pendant le test pour afficher les mises à jour en direct.
 
-Pour plus d’informations sur le développement front-end local, consultez la documentation du [&#x200B; Créateur de thèmes de site &#x200B;](https://github.com/adobe/aem-site-theme-builder).
+Pour plus d’informations sur le développement front-end local, consultez la documentation du [ Créateur de thèmes de site ](https://github.com/adobe/aem-site-theme-builder).
