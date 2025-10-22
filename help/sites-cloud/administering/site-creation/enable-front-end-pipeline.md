@@ -110,4 +110,4 @@ Si vous devez développer et tester les ressources front-end localement avant de
 * Servez manuellement vos fichiers de thème à partir d’un serveur de développement local et mettez à jour le `prefixPath` en `HtmlPageItemsConfig` de correspondre à l’adresse du serveur local.
 * Assurez-vous que la mise en cache du navigateur est désactivée pendant le test pour afficher les mises à jour en direct.
 
-Pour plus d’informations sur le développement front-end local, consultez la documentation du [ Créateur de thèmes de site ](https://github.com/adobe/aem-site-theme-builder).
+Pour plus d’informations sur le développement front-end local, consultez la documentation du [&#x200B; Créateur de thèmes de site &#x200B;](https://github.com/adobe/aem-site-theme-builder).
