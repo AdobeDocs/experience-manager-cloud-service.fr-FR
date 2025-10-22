@@ -48,7 +48,7 @@ Lorsque vous activez le pipeline front-end d’un site, AEM apporte les modifica
 
 ## Conditions requises {#requirements}
 
-AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
+AEM peut adapter automatiquement votre site existant pour utiliser le pipeline front-end. Pour pouvoir effectuer ce workflow, votre site doit utiliser [v2 ou une version ultérieure du composant Page des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Activation du pipeline front-end {#enabling}
 
