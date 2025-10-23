@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connecter AEM forms à Power Automate, Power Automate automation AEM Forms, Intégrer Power Automate à Adaptive Forms, envoyer des données de Adaptive Forms à Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 77%
+source-wordcount: '1546'
+ht-degree: 80%
 
 ---
 
 
 # Connecter un formulaire adaptatif à Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | Cet article |
 
 <span class="preview"> Si vous êtes sur GovCloud et que vous devez vous connecter à un client GCC (Government Cloud Computing), envoyez un e-mail à partir de votre adresse officielle à l’adresse aem-forms-ea@adobe.com pour demander l’accès via le programme d’adoption précoce. </span>
 
@@ -144,7 +149,7 @@ Après la [Connexion de votre instance Forms as a Cloud Service à Microsoft® P
 
 >[!TAB Composant de base]
 
-1. Connectez-vous à votre instance Création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
+1. Connectez-vous à votre instance de création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le conteneur de configuration, recherchez et sélectionnez le conteneur créé dans la section [Créer une configuration cloud du Dataverse de Microsoft® Power Automate](#microsoft-power-automate-dataverse-cloud-configuration), puis choisissez **[!UICONTROL Enregistrer et fermer]**.
 1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
 1. Dans le conteneur de propriétés, pour **[!UICONTROL Envoyer des actions]** sélectionnez l’option **[!UICONTROL Appeler un flux Power Automate]** et sélectionnez un **[!UICONTROL flux Power Automate]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
@@ -218,7 +223,7 @@ Après la [Connexion de votre instance Forms as a Cloud Service à Microsoft® P
 
 >[!TAB Composant principal]
 
-1. Connectez-vous à votre instance Création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
+1. Connectez-vous à votre instance de création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le conteneur de configuration, recherchez et sélectionnez le conteneur créé dans la section [Créer une configuration cloud du Dataverse de Microsoft® Power Automate](#microsoft-power-automate-dataverse-cloud-configuration), puis choisissez **[!UICONTROL Enregistrer et fermer]**.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
@@ -302,8 +307,8 @@ La boîte de dialogue **Propriétés du formulaire** s’affiche.
 
    >[!NOTE]
    >
-   > * Si l’icône **Modifier les propriétés de formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés de formulaire** dans Extension Manager.
-   > * Consultez l’article [Caractéristiques des fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer ou désactiver les extensions dans l’éditeur universel.
+   > * Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas dans l’interface de l’éditeur universel, activez l’extension **Modifier les propriétés du formulaire** dans Extension Manager.
+   > * Consultez l’article [Principales fonctionnalités d’Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) pour savoir comment activer et désactiver les extensions dans l’éditeur universel.
 
 
 1. Cliquez sur l’onglet **Envoi** et sélectionnez **[!UICONTROL Appeler un flux Power Automate]** Action d’envoi. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
 workflow-type: tm+mt
-source-wordcount: '3143'
-ht-degree: 38%
+source-wordcount: '3323'
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 38%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Cet article |
 
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -68,14 +68,14 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité à l’aide des opti
 
 * Lorsque vous créez ou ajoutez un formulaire à l’aide du composant **[!UICONTROL Forms adaptative - Incorporer (v2)]**, les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. Le composant **[!UICONTROL Forms adaptative - Incorporer (v2)]** ne permet pas d’accéder à différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
-* Lorsque vous utilisez le **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. Le **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser diverses fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire multisite.
+* Lorsque vous utilisez le **[!UICONTROL Conteneur de formulaires adaptatifs]** pour créer un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie linguistique) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies linguistiques du formulaire. Le **[!UICONTROL Conteneur de formulaires adaptatifs]** vous permet également d’utiliser diverses fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire multisite.
 
 
 ## Conditions requises pour incorporer un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience AEM {#before-you-start-embedding-an-adaptive-form}
 
 Avant de commencer à incorporer un nouveau formulaire adaptatif ou un formulaire adaptatif préexistant à l’aide de l’option **[!UICONTROL Forms adaptatif - Incorporer (v2)]**, activez **Composants principaux de Forms adaptatif** et ajoutez **Bibliothèques clientes de Forms adaptatif** à votre page AEM Sites :
 
-### Activer les composants principaux des formulaires adaptatifs pour votre environnement AEM Cloud Service
+### Activer les composants principaux des formulaires adaptatifs pour votre environnement Cloud Service AEM
 
 Installez la dernière version de pour activer les composants principaux de Forms adaptatif pour votre environnement AEM Cloud Service.
 
@@ -85,12 +85,13 @@ Lorsque l’option **[!UICONTROL Lorsque le formulaire couvre toute la largeur d
 
 ![Lorsque le formulaire couvre toute la largeur d’une page , l’option est sélectionnée et le formulaire adaptatif avec composants principaux est utilisé](/help/forms/assets/overlaycorecomponent.gif)
 
+**Cas 1 : Utilisation de composants de page Sites distincts**
 
 Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs** à votre page AEM Sites à l’aide du pipeline de déploiement. Pour ajouter les bibliothèques clientes :
 
 1. Accédez à et clonez votre [référentiel Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=fr).
-1. Ouvrez le dossier Référentiel Git AEM Cloud Service dans un éditeur de texte brut. Par exemple, Microsoft® Visual Code.
-1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` et ajoutez le code suivant au fichier :
+2. Ouvrez le dossier Référentiel Git AEM Cloud Service dans un éditeur de texte brut. Par exemple, Microsoft® Visual Code.
+3. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` et ajoutez le code suivant au fichier :
 
    ```
        //Customheaderlibs.html
@@ -99,7 +100,7 @@ Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs**
        </sly> 
    ```
 
-1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` et ajoutez le code suivant au fichier :
+4. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` et ajoutez le code suivant au fichier :
 
    ```
        //customfooterlibs.html
@@ -108,7 +109,7 @@ Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs**
        </sly> 
    ```
 
-1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` et ajoutez le code suivant au fichier :
+5. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` et ajoutez le code suivant au fichier :
 
    ```
        //Customheaderlibs.html
@@ -117,7 +118,7 @@ Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs**
        </sly> 
    ```
 
-1. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` et ajoutez le code suivant au fichier :
+6. Ouvrez le fichier `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` et ajoutez le code suivant au fichier :
 
    ```
        //customfooterlibs.html
@@ -126,7 +127,23 @@ Ajoutez les bibliothèques clientes **Customheaderlibs** et **Customfooterlibs**
        </sly> 
    ```
 
-1. [Exécutez le pipeline de déploiement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=fr) pour déployer les bibliothèques clientes dans votre environnement AEM as a Cloud Service.
+7. [Exécutez le pipeline de déploiement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=fr) pour déployer les bibliothèques clientes dans votre environnement AEM as a Cloud Service.
+
+>[!NOTE]
+>
+> Codez en dur la bibliothèque cliente de fonction personnalisée uniquement lorsqu’elle est requise pour tous les formulaires. Pour les bibliothèques qui diffèrent en fonction du type de formulaire, ajoutez-les par le biais de politiques de page de modèle, comme expliqué dans la section suivante.
+
+**2e cas : utiliser le même composant de page Sites**
+
+Incluez les bibliothèques clientes d’exécution ou les bibliothèques de fonctions personnalisées dans la politique de page du modèle utilisé pour créer des pages avec des formulaires.
+
+1. Ouvrez la page AEM Sites ou le fragment d’expérience pour modification. Pour ouvrir la page à modifier, sélectionnez-la, puis cliquez sur **[!UICONTROL Modifier]**.
+2. Ouvrez le modèle de votre page Sites ou Fragment d’expérience. Pour ouvrir le modèle, accédez aux **[!UICONTROL Informations sur la page]** ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Modifier le modèle]**. Le modèle correspondant s’ouvre dans l’éditeur de modèles.
+3. Dans la section **[!UICONTROL Informations sur la page]** ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) du modèle, sélectionnez l’option **[!UICONTROL Politique de page]**. Cette action ouvre les propriétés du modèle AEM Sites, dans lequel vous pouvez définir des fonctions personnalisées ou des bibliothèques clientes d’exécution.
+4. Cliquez sur le bouton **[!UICONTROL Ajouter]** dans l’onglet **[!UICONTROL Propriétés]** pour ajouter de nouvelles bibliothèques de fonctions personnalisées ou les bibliothèques d’exécution.
+5. Cliquez sur **[Terminé]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### Activer le Forms adaptatif - Incorporer (v2) pour votre page AEM Sites ou fragment d’expérience
 
