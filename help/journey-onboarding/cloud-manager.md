@@ -4,10 +4,10 @@ description: Découvrez comment accéder à Cloud Manager afin de pouvoir confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 94%
 
 ---
 
@@ -42,30 +42,41 @@ Avant que les personnes membres de l’équipe que vous avez affectées au rôle
 
    Revenez à l’étape précédente, [Affecter des personnes membres de l’équipe à des profils de produits Cloud Manager](assign-profiles-cloud-manager.md), pour plus d’informations sur l’attribution du rôle de **Propriétaire de l’entreprise** à l’administrateur ou l’administratrice système.
 
-1. Connectez-vous à Cloud Manager sur [experiece.adobe.com](https://experience.adobe.com).
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com).
 1. Dans le regroupement Accès rapide, cliquez sur **Experience Manager**.
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
    ![Cloud Manager sur console](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-En vous connectant en tant qu’administrateur ou administratrice système avec le rôle **Propriétaire de l’entreprise**, vous utilisez Cloud Manager pour une utilisation par les autres personnes affectées au rôle **Propriétaire de l’entreprise**. Vous ne recevez aucune confirmation ni aucun message. Il vous suffit de vous connecter.
+Un administrateur système avec le rôle **Propriétaire de l’entreprise** doit d’abord se connecter à Cloud Manager. Cette connexion initiale permet à d’autres utilisateurs dotés du rôle **Propriétaire de l’entreprise** de créer des programmes ; aucune confirmation ne s’affiche.
 
-Jusqu’à ce que vous vous connectiez à Cloud Manager en tant qu’administrateur ou administratrice système avec le rôle **Propriétaire de l’entreprise**, les autres personnes dont le rôle est **Propriétaire de l’entreprise** ne pourront pas créer de programmes dans Cloud Manager. Cette règle est vraie, même si les rôles appropriés leur sont attribués.
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-L’utilisateur ou l’utilisatrice dont le rôle est **Propriétaire de l’entreprise** recevra un e-mail de bienvenue avec un lien pour commencer. Suivez les étapes ci-dessous pour accéder à Cloud Manager à l’aide de cet e-mail de bienvenue.
+1. Accédez à [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager).
+1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
-1. Dans l’e-mail de bienvenue, cliquez sur **Commencer**, comme illustré ci-dessous.
-   ![Exemple d’e-mail](/help/journey-onboarding/assets/get-started-email.png)
+>[!NOTE]
+>
+>Selon les rôles affectés dans Cloud Manager et l’état de l’application, plusieurs écrans s’affichent lors de l’utilisation de l’interface utilisateur de Cloud Manager.
 
-1. Accédez à la page **Programmes et produits** de Cloud Manager.
+<!--
+Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
+
+1. From your welcome email, click **Get started**, as shown in the figure below.
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
+
+1. Navigate to Cloud Manager's **Programs & Products** page.
 
    >[!TIP]
    >
-   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Mettez un signet sur cette page pour vous en servir ultérieurement.
+   >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. Vous accédez à la page de destination de Cloud Manager.
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
