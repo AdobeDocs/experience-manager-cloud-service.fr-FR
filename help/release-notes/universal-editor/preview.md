@@ -3,10 +3,10 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +27,15 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Nouvelles fonctionnalités à venir {#what-is-new}
 
-* À déterminer
+* Insérer une image pour le nouvel éditeur de texte enrichi
+* Nouveau point d’entrée `/configuration`
 
 ## Améliorations à venir {#other-improvements}
 
-* À déterminer
-
+* L’événement de mise à jour est désormais informé si l’action a été annulée.
+* `No results` chaîne dépend désormais des paramètres régionaux du navigateur dans les balises de l’éditeur universel.
+* Correction d’un saut de ligne supplémentaire dans le bouton de publication de l’éditeur universel.
+* Le nettoyage a été effectué sur l’API de correctif.
+* Le bouton Sélectionner le contenu est désormais visible dans Safari.
+* La version RPM a été corrigée.
+* Mise à jour CORS pour éviter de mettre à jour à nouveau le texte modifié après l’enregistrement.
