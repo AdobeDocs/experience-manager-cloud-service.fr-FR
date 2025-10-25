@@ -33,7 +33,7 @@ Ne vous inquiétez pas si vous ne connaissez pas tous les termes utilisés sur c
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431499/?captions=fre_fr&quality=12&learn=on)
 
 -->
 
