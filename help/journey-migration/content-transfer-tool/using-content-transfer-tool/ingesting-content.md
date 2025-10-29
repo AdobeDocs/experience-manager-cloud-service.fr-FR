@@ -212,7 +212,7 @@ Ce conflit doit être résolu manuellement. Une personne qui connait le contenu 
 >abstract="Les conflits entre versions pour un nœud particulier sur l’instance de destination sont une cause courante de l’échec d’ingestion hors balayage. Les versions du nœud doivent être corrigées."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
 
-Un conflit de version pour un nœud particulier sur l’instance de destination est une autre cause courante de l’échec de l’[ Ingestion complémentaire ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+Un conflit de version pour un nœud particulier sur l’instance de destination est une autre cause courante de l’échec de l’[&#x200B; Ingestion complémentaire &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
 >java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakIntegrity0001 : impossible de supprimer le nœud référencé : 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
@@ -239,7 +239,7 @@ Il s’agit d’une restriction MongoDB.
 
 Pour plus d’informations et pour obtenir un lien vers un outil Oak qui pourrait vous aider à trouver tous les nœuds volumineux, consultez la note de `Node property value in MongoDB` dans la section [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Une fois tous les nœuds de grande taille résolus, exécutez à nouveau l’extraction et l’ingestion.
 
-Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [ « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [&#x200B; « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -290,6 +290,6 @@ Dans le scénario où une ressource précédemment migrée est supprimée et où
 
 ## Prochaines étapes {#whats-next}
 
-Une fois l’ingestion réussie, l’indexation AEM démarre automatiquement. Pour plus d’informations, consultez [Indexation après la migration ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) contenu .
+Une fois l’ingestion réussie, l’indexation AEM démarre automatiquement. Pour plus d’informations, consultez [Indexation après la migration &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) contenu .
 
 Une fois l’ingestion de contenu dans Cloud Service terminée, vous pouvez afficher les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un ensemble de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) pour en savoir plus.
