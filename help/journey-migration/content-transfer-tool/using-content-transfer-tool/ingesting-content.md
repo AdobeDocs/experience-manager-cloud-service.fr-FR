@@ -4,9 +4,9 @@ description: Découvrez comment utiliser Cloud Acceleration Manager pour ingére
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
+source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
 workflow-type: tm+mt
-source-wordcount: '3591'
+source-wordcount: '3616'
 ht-degree: 35%
 
 ---
@@ -122,7 +122,7 @@ Commencez par créer une tâche d’ingestion et assurez-vous que l’option **E
 
 ### Impossible pour CAM de récupérer le jeton de migration {#cam-unable-to-retrieve-the-migration-token}
 
-La récupération automatique du jeton de migration peut échouer pour différentes raisons, y compris la [configuration d’une liste autorisée d’adresses IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) dans l’environnement Cloud Service cible. Dans ce cas de figure, la boîte de dialogue suivante s’affiche lorsque vous tentez de démarrer une ingestion :
+La récupération automatique du jeton de migration peut échouer pour différentes raisons, y compris la [configuration d’une liste autorisée d’adresses IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) dans l’environnement Cloud Service cible. Dans ce cas de figure, la boîte de dialogue suivante s’affiche lorsque vous tentez de démarrer une ingestion :
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -151,13 +151,13 @@ Ce message indique que Cloud Acceleration Manager n’a pas pu atteindre le se
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est donc pas la récupération du jeton qui a posé problème.
 
 * AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il finit par être disponible.
-* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Par exemple, si [Mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applique une mise à jour, le système peut être occupé et le service de migration régulièrement indisponible. Une fois ce processus terminé, le début de l’ingestion peut être réessayé.
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est dynamique. Actuellement, la seule solution consiste à désactiver le place sur la liste autorisée IP pendant le processus d’ingestion et d’indexation en ajoutant temporairement du 0.0.0.0/0 à la place sur la liste autorisée pendant l’exécution du processus d’ingestion et d’indexation.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion ou l’indexation continue d’échouer, contactez l’Assistance clientèle d’Adobe.
 
 ### Mises à jour et assimilations de version AEM {#aem-version-updates-and-ingestions}
 
-Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
+Les [mises à jour de la version d’AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) sont automatiquement appliquées aux environnements pour les tenir à jour avec la version d’AEM as a Cloud Service la plus récente. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, notamment la corruption de l’environnement.
 
 Si la fonction « Mises à jour de la version d’AEM » est intégrée au programme de destination, le processus d’ingestion tente de désactiver sa file d’attente avant son démarrage. Une fois l’ingestion terminée, l’état de la mise à jour de version est rétabli à ce qu’il était avant le début des ingestions.
 
@@ -212,7 +212,7 @@ Ce conflit doit être résolu manuellement. Une personne qui connait le contenu 
 >abstract="Les conflits entre versions pour un nœud particulier sur l’instance de destination sont une cause courante de l’échec d’ingestion hors balayage. Les versions du nœud doivent être corrigées."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestion de complément"
 
-Un conflit de version pour un nœud particulier sur l’instance de destination est une autre cause courante de l’échec de l’[&#x200B; Ingestion complémentaire &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+Un conflit de version pour un nœud particulier sur l’instance de destination est une autre cause courante de l’échec de l’[ Ingestion complémentaire ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
 >java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakIntegrity0001 : impossible de supprimer le nœud référencé : 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
@@ -239,7 +239,7 @@ Il s’agit d’une restriction MongoDB.
 
 Pour plus d’informations et pour obtenir un lien vers un outil Oak qui pourrait vous aider à trouver tous les nœuds volumineux, consultez la note de `Node property value in MongoDB` dans la section [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Une fois tous les nœuds de grande taille résolus, exécutez à nouveau l’extraction et l’ingestion.
 
-Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [&#x200B; « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Pour éviter cette restriction, exécutez l’[analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sur l’instance AEM source et passez en revue les résultats qu’il présente, notamment le modèle [ « Structure de référentiel non prise en charge » (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -260,6 +260,7 @@ Parfois, des problèmes intermittents inattendus peuvent se produire lors d’é
 * `Exhausted mongo restore retries` - Les tentatives de restauration d’une image mémoire locale du contenu du jeu de migration ingéré dans la base de données cloud sont épuisées. Cela indique un problème d’intégrité global/de réseau avec MongoDB, qui guérit souvent spontanément en quelques minutes.
 * `Mongo network error` - Parfois, l’établissement d’une connexion à MongoDB peut échouer, ce qui entraîne la sortie précoce du processus d’ingestion et le signalement comme un échec. Une simple reprise de l’ingestion doit être tentée.
 * `Mongo server selection error` - Il s’agit d’une rare erreur de délai d’expiration côté client mongo qui peut se produire pour plusieurs raisons sous-jacentes. Il est probable qu’une nouvelle tentative corrigera le problème.
+* `Mongo took too long to start` - Dans de très rares cas, la base de données MongoDB locale utilisée dans le workflow d’ingestion peut ne pas démarrer. Il est probable qu’une nouvelle tentative corrigera le problème.
 
 ### Ingestion annulée {#ingestion-rescinded}
 
@@ -289,6 +290,6 @@ Dans le scénario où une ressource précédemment migrée est supprimée et où
 
 ## Prochaines étapes {#whats-next}
 
-Une fois l’ingestion réussie, l’indexation AEM démarre automatiquement. Pour plus d’informations, consultez [Indexation après la migration &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) contenu .
+Une fois l’ingestion réussie, l’indexation AEM démarre automatiquement. Pour plus d’informations, consultez [Indexation après la migration ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) contenu .
 
 Une fois l’ingestion de contenu dans Cloud Service terminée, vous pouvez afficher les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un ensemble de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) pour en savoir plus.
