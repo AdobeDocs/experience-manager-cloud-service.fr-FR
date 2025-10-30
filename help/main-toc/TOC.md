@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 98218684e27e3112007cf3fe646b252b36b1b7e3
+source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
 workflow-type: tm+mt
-source-wordcount: '6850'
-ht-degree: 96%
+source-wordcount: '6877'
+ht-degree: 95%
 
 ---
 
@@ -472,7 +472,7 @@ ht-degree: 96%
          + [Gestion des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
          + [Définition de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [&#x200B; – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [ – créer du contenu de fragment](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Suppression de considérations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structure d’analyse](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -578,7 +578,7 @@ ht-degree: 96%
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balises intelligentes pour les vidéos](/help/assets/smart-tags-for-videos.md)
       + [Comment organiser des ressources](/help/assets/organize-assets.md)
-      + [Utilisation des ressources [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
       + [Intégration avec [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -594,7 +594,7 @@ ht-degree: 96%
       + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
-      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Balises de couleurs pour les images](/help/assets/color-tag-images.md)
       + [Gestion des documents PDF](/help/assets/manage-pdf-documents.md)
    + Configuration, administration et extension d’[!DNL Assets] {#admin}
@@ -806,8 +806,8 @@ ht-degree: 96%
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Connexion d’un formulaire adaptatif à l’application Salesforce à l’aide du flux d’informations d’identification client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configuration du stockage  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configuration du stockage  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configuration des services cloud [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configuration des services cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
@@ -864,7 +864,7 @@ ht-degree: 96%
             + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparer les formulaires adaptatifs](/help/forms/compare-forms.md)
             + [Créer une action d’envoi personnalisée](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Convertir des formulaires adaptatifs basés sur des composants de base en formulaires adaptatifs basés sur des composants principaux à l’aide de l’outil utilitaire de migration](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modèles d’e-mail dans les formulaires adaptatifs](/help/forms/html-email-templates-in-adaptive-forms.md)
             + [Gestion de la publication dans Experience Manager Forms](/help/forms/manage-publication.md)
             + Présentation de l’éditeur de règles pour les formulaires adaptatifs basés sur les composants principaux{#rule-editor-core-components}
@@ -909,7 +909,7 @@ ht-degree: 96%
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
             + [Utiliser hCaptcha dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Utiliser CAPTCHA Turnstile dans un formulaire adaptatif](/help/forms/integrate-adaptive-forms-turnstile.md)
-            + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+            + [Utilisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
             + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
             + [Ajouter la prise en charge des notes de bas de page à un formulaire adaptatif](/help/forms/footnotes-richtextsupport.md)
@@ -1004,6 +1004,10 @@ ht-degree: 96%
       + [Importer et exporter une communication interactive](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [Ajouter des polices personnalisées à l’éditeur de communication interactive](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [Aperçu de PDF dans l’éditeur de communication interactive](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+      + [Verrouillage de modèle dans l’éditeur de communication interactive](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+      + [Numérotation dynamique de page dans l’éditeur de communication interactive](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+      + [Gestion du dépassement de contenu dans l’éditeur de communication interactive](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+      + [Prise en charge de l’édition XDP dans l’éditeur de communication interactive](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
       + [Questions fréquentes](/help/forms/interactive-communications-faq.md)
    + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Présentation du workflow basé sur l’utilisation de Forms](/help/forms/aem-forms-workflow.md)
@@ -1214,7 +1218,7 @@ ht-degree: 96%
       + Création{#authoring}
          + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=fr)
          + [Éditeur de balisage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=fr)
-      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=fr)
+      + [Aperçu des fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=fr)
    + Sélecteur de fragment de contenu {#content-fragment-selector}
       + [Sélecteur de fragment de contenu micro front-end - Vue d’ensemble](/help/headless/content-fragment-selector/overview.md)
@@ -1436,7 +1440,7 @@ ht-degree: 96%
          + [Prise en main](/help/implementing/universal-editor/getting-started.md)
          + [Vue d’ensemble destinée à l’équipe de développement](/help/implementing/universal-editor/developer-overview.md)
          + [Développement AEM local](/help/implementing/universal-editor/local-dev.md)
-         + [&#x200B; Exemple d’application SecurBank &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [ Exemple d’application SecurBank ](/help/implementing/universal-editor/securbank.md)
       + [Gestion de l’expérience découplée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
