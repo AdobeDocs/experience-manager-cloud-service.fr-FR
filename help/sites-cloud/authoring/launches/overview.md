@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 79%
+source-wordcount: '1027'
+ht-degree: 75%
 
 ---
 
@@ -18,17 +18,15 @@ Dans Adobe Experience Manager (AEM) as a Cloud Service, les lancements vous perm
 
 Un *Launch* est créé pour vous permettre d’apporter des modifications en vue d’une publication ultérieure, tout en conservant votre contenu actuel. Pour les pages AEM, cela signifie que vous modifiez deux versions simultanément : les pages actuellement publiées et une version de ces pages, qui sera publiée à un moment donné dans le futur. Une fois ce délai écoulé, vous pouvez remplacer les pages d’origine et publier les nouvelles versions.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>Les lancements sont également disponibles pour les fragments de contenu. Les concepts de base sont les mêmes, mais il existe des différences dans la manière de les gérer dans AEM.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Pour plus d’informations, voir [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 Vous créez un *lancement*, puis, après avoir modifié et mis à jour vos pages de *lancement*, vous les *reconvertissez* en *Source*. Vous pouvez ensuite activer ces pages *Source* (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
-Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
+Par exemple, les pages produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
 * Les modifications apportées aux pages source après des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
 * Les modifications effectuées directement sur les pages de lancement en préparation du trimestre suivant.
@@ -115,13 +113,11 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
 ## Console Lancements {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>Cette console est réservée aux lancements de pages.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Pour gérer vos fragments de contenu, voir [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 La console Lancements donne un aperçu de vos lancements et vous permet d’agir sur ceux répertoriés.
 

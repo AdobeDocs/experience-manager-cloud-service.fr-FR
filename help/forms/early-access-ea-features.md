@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
-ht-degree: 22%
+source-wordcount: '3019'
+ht-degree: 21%
 
 ---
 
@@ -122,6 +122,17 @@ Les communications interactives sur le cloud constituent une solution puissante 
 * **Polices personnalisées :** intégrez des polices personnalisées ou approuvées par l’organisation pour garantir un rendu PDF cohérent de la marque sur tous les appareils.
 * **Importer et exporter :** migrez et réutilisez facilement la communication interactive avec ses fragments et modèles de données dans les environnements.
 
+* **Verrouillage de modèle** : verrouillez le contenu et les éléments de disposition dans les modèles pour maintenir l’intégrité de la marque et empêcher toute modification non autorisée.
+
+* **Débordement de contenu** : l’option « Autoriser les sauts de page dans le contenu » pour les dispositions fluides permet une modification fluide de plusieurs pages et une meilleure gestion du texte pour les documents complexes.
+
+* **Modification de fichiers XDP** : vous pouvez désormais modifier les fichiers XDP dans un navigateur au lieu de Forms Designer qui s’exécute uniquement sur l’ordinateur de bureau Microsoft Windows.
+
+##### Numérotation dynamique de page
+
+Affichez automatiquement la mention « N° de page # de ## » sur les gabarits pour une pagination claire et cohérente dans les documents de plusieurs pages.
+
+
 
 #### Cas d’utilisation :
 
@@ -166,7 +177,7 @@ Prêt à démarrer ? La documentation [Présentation d’HTML5 forms](/help/form
 
 Accélérez votre développement AEM Forms Edge Delivery Services avec l’outil d’interface de ligne de commande AEM Forms. Cette interface de ligne de commande vous permet de générer instantanément le code et le câblage nécessaires pour lancer le développement de composants personnalisés, sans tracas.
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Fonctionnalités principales :**
 

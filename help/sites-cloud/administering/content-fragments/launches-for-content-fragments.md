@@ -3,15 +3,12 @@ title: Lancements pour les fragments de contenu
 description: Découvrez comment utiliser les lancements pour les fragments de contenu dans Adobe Experience Manager as a Cloud Service. Les lancements vous permettent de développer efficacement du contenu pour une prochaine version, tout en conservant vos fragments de contenu actuels.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: true
-hidefromtoc: true
-index: false
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 231ce792429347882c93804d370e7a99111ec916
+source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +89,7 @@ Alors que le panneau de droite vous permet d’effectuer les opérations suivant
 
 * Définissez également les éléments suivants :
 
-   * Une **Date et heure de promotion** : si le lancement [&#x200B; doit être automatiquement promu](#promote-automatically)
+   * Une **Date et heure de promotion** : si le lancement [ doit être automatiquement promu](#promote-automatically)
 
 ## Création d’un lancement {#create-a-launch}
 
@@ -135,7 +132,7 @@ Pour créer votre lancement :
 
 1. Sélectionnez **Afficher**, dans la zone de message, pour afficher plus de détails dans la console AEM pour [Opérations en arrière-plan](/help/operations/asynchronous-jobs.md).
 
-   ![&#x200B; Nouveau lancement dans la console &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+   ![ Nouveau lancement dans la console ](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
 ## Modifier le contenu de Launch {#edit-launch-content}
 
