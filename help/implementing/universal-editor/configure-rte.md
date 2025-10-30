@@ -3,13 +3,13 @@ title: Configuration de l’éditeur de texte enrichi pour l’éditeur universe
 description: Découvrez comment configurer l’éditeur de texte enrichi dans l’éditeur universel.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de l’éditeur de texte enrichi pour l’éditeur universel {#configure-rte}
 
@@ -73,7 +73,7 @@ La configuration de la barre d’outils contrôle les options de modification di
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ Les actions Lien prennent en charge le contrôle des attributs de la cible pour 
 * `hideTarget` : `true` - Exclure entièrement l’attribut cible des liens
 
 L&#39;action `unlink` n&#39;apparaît que lorsque le curseur est positionné dans un lien existant. Cela supprime la mise en forme du lien tout en conservant le contenu textuel.
+
+### Actions sur l’image {#image}
+
+Les actions d’image prennent en charge le renvoi à la ligne des éléments d’image pour générer un balisage d’image réactif. Les sections suivantes sont disponibles.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Options de configuration d’image {#image-options}
+
+* `wrapInPicture` : `false` (par défaut) - Génération d’éléments de `<img>` simples
+* `wrapInPicture` : `true` - Envelopper des images dans des éléments `<picture>` pour un design réactif
 
 ### Autres actions {#other}
 

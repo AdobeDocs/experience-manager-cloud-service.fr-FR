@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.10.24
-description: Il s’agit des notes de mise à jour de la version 2025.10.24 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.10.30
+description: Il s’agit des notes de mise à jour de la version 2025.10.30 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 63%
+source-wordcount: '224'
+ht-degree: 58%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.10.24 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.10.30 {#release-notes}
 
-Voici les notes de mise à jour de la version du 24 octobre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 30 octobre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Voici les notes de mise à jour de la version du 24 octobre 2025 de l’éditeur
 
 ## Nouveautés {#what-is-new}
 
-* La fonctionnalité [copier-coller](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) sur les onglets des navigateurs est désormais prise en charge.
-   * Limité à entre les onglets ouverts en même temps.
-   * La copie de contenu puis l’ouverture d’un nouvel onglet ne sont pas prises en charge.
-* Vous pouvez désormais désactiver le bouton de dépublication avec une [balise meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* [Le nouvel éditeur de texte enrichi](#new-rte) peut désormais insérer des images.
+   * Cette fonctionnalité est désactivée en OtB et doit être explicitement activée via une [ définition de filtre ](/help/implementing/universal-editor/configure-rte.md#toolbar).
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -41,6 +39,10 @@ Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de 
 
 ## Autres améliorations {#other-improvements}
 
-* L’arborescence de la structure a été améliorée.
-* Les images liées sont désormais prises en charge.
-* Des améliorations ont été apportées aux opérations d’annulation/de rétablissement.
+* L’événement de mise à jour est désormais informé si l’action a été annulée.
+* `No results` chaîne dépend désormais des paramètres régionaux du navigateur dans les balises de l’éditeur universel.
+* Correction d’un saut de ligne supplémentaire dans le bouton de publication de l’éditeur universel.
+* Le nettoyage a été effectué sur l’API de correctif.
+* Le bouton Sélectionner le contenu est désormais visible dans Safari.
+* La version RPM a été corrigée.
+* Mise à jour CORS pour éviter de mettre à jour à nouveau le texte modifié après l’enregistrement.
