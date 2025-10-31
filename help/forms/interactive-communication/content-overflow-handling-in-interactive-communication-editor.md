@@ -4,10 +4,7 @@ description: La gestion du débordement de contenu dans l’éditeur de communic
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 17%
@@ -27,8 +24,7 @@ ht-degree: 17%
 
 ## Présentation
 
-La fonctionnalité de gestion du débordement de contenu de l’éditeur de communication interactive améliore le comportement du texte dans les mises en page Distribuées et Positionnées.
-Il garantit la continuité du contenu pour les mises en page fluides et fournit des alertes visuelles pour les mises en page positionnées, offrant ainsi aux auteurs un meilleur contrôle et une meilleure flexibilité lors de la conception des communications.
+La fonctionnalité de gestion du débordement de contenu de l’éditeur de communication interactive améliore le comportement du texte dans les mises en page Distribuées et Positionnées. Il garantit la continuité du contenu pour les mises en page fluides et fournit des alertes visuelles pour les mises en page positionnées, offrant ainsi aux auteurs un meilleur contrôle et une meilleure flexibilité lors de la conception des communications.
 
 ## Fonctionnalités essentielles
 

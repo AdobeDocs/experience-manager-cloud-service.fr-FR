@@ -4,10 +4,7 @@ description: Ajoutez des polices personnalisées dans l’éditeur de communicat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 24%
@@ -39,5 +36,5 @@ La fonction de police personnalisée vous permet d’améliorer l’aspect de vo
 
 >[!NOTE]
 >
-> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> &#x200B;>Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.
+> Pour obtenir des étapes de configuration détaillées, les utilisateurs peuvent suivre le guide [Utiliser des polices personnalisées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> >Une fois les étapes terminées et le pipeline exécuté, les polices personnalisées peuvent être utilisées directement dans l’éditeur de communication interactive.

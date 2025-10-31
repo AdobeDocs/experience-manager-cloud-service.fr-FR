@@ -4,10 +4,7 @@ description: La numérotation dynamique de page dans l’éditeur de communicati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: dae482e1f57a3504bf08926b57b89ca9266bd36a
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 18%
@@ -31,7 +28,7 @@ La fonction de numérotation dynamique de page d’une communication interactive
 
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal **&#x200B;**
+- Configuration De La Page De Principal ****
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**

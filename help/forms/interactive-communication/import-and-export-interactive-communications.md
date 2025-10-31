@@ -4,10 +4,7 @@ description: La communication interactive d’import et d’export permet aux ut
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 14%
@@ -39,7 +36,7 @@ Créez une communication interactive (CI) dans un environnement et réutilisez-l
 
 +++&#x200B;1. Comment exporter une communication interactive
 
-1.1. Sélectionnez une [communication interactive créée](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Sélectionnez une [communication interactive créée](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Cliquez sur l’option **Télécharger** pour l’exporter sous la forme d’un fichier ZIP.
 1.3. Le fichier ZIP téléchargé comprend le CI avec son **modèle**, **fragments** et **modèle de données** sélectionné.
 
