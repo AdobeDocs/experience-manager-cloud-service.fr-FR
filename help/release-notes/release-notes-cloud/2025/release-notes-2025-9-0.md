@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.9.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2025.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 L’étape de workflow Appeler un modèle de données de formulaire prend désormais en charge la gestion des métadonnées côté workflow pour les tableaux de pièces jointes codés en base64 dans les modèles de données de formulaire basés sur une liste SharePoint. Grâce à cette amélioration, l’étape de workflow peut transmettre, stocker et récupérer des métadonnées telles que le nom du fichier, le type MIME et les propriétés personnalisées de chaque pièce jointe. Cette fonctionnalité permet une gestion des données plus complète et l’intégration en aval. Pour plus d’informations, voir [Prise en charge améliorée dans l’étape de workflow Appeler un modèle de données de formulaire pour les pièces jointes de la liste SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-### Fonctionnalités de version préliminaire dans AEM Forms
-
-**Améliorations de l’éditeur de règles**
-
-L’éditeur de règles prend désormais en charge la navigation améliorée et permet l’utilisation de fonctions et d’expressions mathématiques dans les paramètres d’entrée.
-
-**Navigation améliorée avec prise en charge de la payload d’événement**
-
-L’action `Navigate To` dans les gestionnaires de service d’appel prend désormais en charge `EVENT_PAYLOAD`, ce qui permet aux créateurs et créatrices de formulaires de configurer des actions de suivi en fonction des réponses d’événement. Cette amélioration offre plus de flexibilité dans la conception des workflows après envoi, assurant des transitions plus fluides et des expériences utilisateur plus personnalisées. Pour plus d’informations, voir [Navigation améliorée avec prise en charge de la payload d’événement](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée**
-
-Les paramètres d’entrée prennent désormais en charge les appels de fonction et les expressions mathématiques, ce qui permet aux créateurs et créatrices de formulaires de transmettre directement des valeurs calculées dynamiquement. Cette amélioration simplifie les configurations des règles, élimine le besoin de champs supplémentaires et rend les formulaires plus adaptables à des scénarios aux logiques complexes et basés sur des calculs. Pour plus d’informations, voir [Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### Nouvelles fonctionnalités d’accès anticipé d’AEM Forms {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ Le programme d’accès anticipé d’AEM Forms offre une opportunité unique d
 
 Ces notes de mise à jour répertorient les innovations apportées à la version actuelle. Pour obtenir la liste complète des innovations disponibles dans le cadre du programme d’accès anticipé, consultez [Documentation du programme d’accès anticipé d’AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Aperçu de PDF dans l’éditeur de communication interactive**
+* **Aperçu de PDF dans l’éditeur de communication interactive**
 
-Les utilisateurs et utilisatrices peuvent prévisualiser les PDF des communications interactives sans données, avec des fichiers de données JSON locaux ou avec des données provenant d’un modèle de données, ce qui permet des tests flexibles pilotés par les données. Pour plus d’informations, voir [Aperçu de PDF dans l’éditeur de communication interactive](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Les utilisateurs et utilisatrices peuvent prévisualiser les PDF des communications interactives sans données, avec des fichiers de données JSON locaux ou avec des données provenant d’un modèle de données, ce qui permet des tests flexibles pilotés par les données. Pour plus d’informations, voir [Aperçu de PDF dans l’éditeur de communication interactive](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Prise en charge des polices personnalisées dans la communication interactive**
+* **Prise en charge des polices personnalisées dans la communication interactive**
 
-La fonction Polices personnalisées permet d’incorporer des polices personnalisées ou approuvées par l’organisation dans les communications interactives, assurant ainsi un rendu PDF cohérent et conforme à la marque sur tous les appareils et plateformes. Pour plus d’informations, voir [Prise en charge des polices personnalisées dans la communication interactive](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  La fonction Polices personnalisées permet d’incorporer des polices personnalisées ou approuvées par l’organisation dans les communications interactives, assurant ainsi un rendu PDF cohérent et conforme à la marque sur tous les appareils et plateformes. Pour plus d’informations, voir [Prise en charge des polices personnalisées dans la communication interactive](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-**Importer et exporter des communications interactives**
+* **Importer et exporter des communications interactives**
 
-Cette fonctionnalité permet la migration et la réutilisation des communications interactives dans différents environnements. Vous pouvez désormais exporter une communication interactive avec ses fragments et modèles de données associés depuis un environnement et l’importer dans un autre. Pour en savoir plus, voir [Importer et exporter des communications interactives](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Cette fonctionnalité permet la migration et la réutilisation des communications interactives dans différents environnements. Vous pouvez désormais exporter une communication interactive avec ses fragments et modèles de données associés depuis un environnement et l’importer dans un autre. Pour en savoir plus, voir [Importer et exporter des communications interactives](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
+* **Améliorations de l’éditeur de règles**
+
+  L’éditeur de règles prend désormais en charge la navigation améliorée et permet l’utilisation de fonctions et d’expressions mathématiques dans les paramètres d’entrée.
+
+   * **Navigation améliorée avec prise en charge de la payload d’événement** : l’action `Navigate To` dans les gestionnaires d’appel de service prend désormais en charge `EVENT_PAYLOAD`, ce qui permet aux auteurs de formulaire de configurer des actions de suivi en fonction des réponses d’événement. Cette amélioration offre plus de flexibilité dans la conception des workflows après envoi, assurant des transitions plus fluides et des expériences utilisateur plus personnalisées. Pour plus d’informations, voir [Navigation améliorée avec prise en charge de la payload d’événement](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+   * **Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée** : les paramètres d’entrée prennent désormais en charge les appels de fonction et les expressions mathématiques, ce qui permet aux auteurs de formulaires de transmettre directement des valeurs calculées dynamiquement. Cette amélioration simplifie les configurations des règles, élimine le besoin de champs supplémentaires et rend les formulaires plus adaptables à des scénarios aux logiques complexes et basés sur des calculs. Pour plus d’informations, voir [Prise en charge des fonctions et des expressions mathématiques dans les paramètres d’entrée](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ Journées de mise en production, événements en direct, pic de ventes : pas d�
 >[!NOTE]
 >
 >En disponibilité limitée à partir du 25 septembre.
->&#x200B;>Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
+>>Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour l’activer dans vos programmes.
 
 ### Nouvelle version des outils de développement AEM pour Eclipse {#aem-develeper-tools-for-eclipse}
 
