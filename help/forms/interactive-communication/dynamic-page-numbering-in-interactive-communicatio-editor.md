@@ -28,7 +28,7 @@ La fonction de numérotation dynamique de page d’une communication interactive
 
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal ****
+- Configuration De La Page De Principal **&#x200B;**
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**
