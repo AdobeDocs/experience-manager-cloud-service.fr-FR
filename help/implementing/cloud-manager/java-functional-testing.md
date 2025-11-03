@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 78%
+source-wordcount: '832'
+ht-degree: 77%
 
 ---
 
@@ -86,7 +86,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
@@ -110,10 +110,6 @@ Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &
 | Délai d’expiration | 30 min | Délai au bout duquel le test s’arrête. |
 | Durée recommandée | 15 min | Adobe recommande de n’écrire les tests que si leur durée n’est pas supérieure à cette durée. |
 
->[!NOTE]
->
-> Si vous avez besoin de davantage de ressources, créez un cas d’assistance clientèle et décrivez votre cas d’utilisation. L’équipe d’Adobe examine votre demande et fournit une assistance appropriée.
-
 #### Dépendances
 
 * aem-cloud-testing-clients :
@@ -131,7 +127,7 @@ Les modifications à venir de l’infrastructure en conteneur pour l’exécutio
 >[!NOTE]
 >
 >Cette modification doit être effectuée avant le 6 avril 2024.
->&#x200B;>Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
+>Si la bibliothèque de dépendances n’est pas mise à jour, des échecs de pipeline peuvent se produire à l’étape « Tests fonctionnels personnalisés ».
 
 ### Exécution locale du test {#local-test-execution}
 
