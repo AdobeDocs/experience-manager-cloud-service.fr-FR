@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
 
 ---
+
 
 # Tests fonctionnels Java™
 
@@ -86,7 +87,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
@@ -101,7 +102,6 @@ Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &
 >Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur ou une utilisatrice avec des autorisations de type administration afin d’obtenir le même comportement.
 
 1. L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est restreinte par les limites suivantes :
-
 
 | Type | Valeur | Description |
 |----------------------|-------|--------------------------------------------------------------------|
@@ -153,8 +153,6 @@ Les propriétés système sont les suivantes.
 | `sling.it.instance.adminUser.2` | Définissez sur l’utilisateur ou l’utilisatrice admin de publication. | `admin` |
 | `sling.it.instance.adminPassword.2` | Définissez sur le mot de passe de l’administrateur de publication. |                         |
 
-
-
 #### Exécution de tous les tests à l’aide de Maven {#using-maven}
 
 1. Ouvrez un conteneur et accédez au dossier `it.tests` dans votre référentiel
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
