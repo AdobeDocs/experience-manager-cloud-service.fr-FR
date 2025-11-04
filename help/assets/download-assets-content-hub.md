@@ -3,9 +3,9 @@ title: Téléchargement de ressources à partir de Content Hub
 description: Découvrez comment télécharger une ou plusieurs ressources et leurs rendus à partir du portail Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '941'
 ht-degree: 1%
 
 ---
@@ -22,23 +22,35 @@ Consultez les [types de rendus disponibles dans Content Hub](#types-of-rendition
 
 Pour télécharger une ou plusieurs ressources et leurs rendus, procédez comme suit :
 
-1. Pour télécharger une ressource, sélectionnez ![télécharger](/help/assets/assets/download-icon.svg) disponible sur la carte de la ressource pour prévisualiser la ressource, sélectionnez les rendus disponibles et cliquez sur l’option **[!UICONTROL Télécharger]** dans la boîte de dialogue pour télécharger les rendus sélectionnés sous la forme d’un fichier ZIP. Si la boîte de dialogue affiche une licence de ressource (pour une ressource sous licence), acceptez les termes et conditions de la licence et cliquez sur **[!UICONTROL Télécharger]**.
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* Pour télécharger une seule ressource et ses rendus :
+   1. Sélectionnez ![Télécharger](/help/assets/assets/download-icon.svg) disponible sur la carte de la ressource pour prévisualiser la ressource et ses rendus disponibles.
+   1. Sélectionnez les rendus disponibles et cliquez sur l’option **[!UICONTROL Télécharger]** dans la boîte de dialogue pour télécharger les rendus sélectionnés sous la forme d’un fichier ZIP. Si la boîte de dialogue affiche une licence de ressource (pour une ressource sous licence), acceptez les termes et conditions de la licence et cliquez sur **[!UICONTROL Télécharger]**.
+      ![télécharger une ressource](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+Vous pouvez également cliquer sur la miniature de la ressource, puis sur ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger.
 
-   Vous pouvez également cliquer sur la miniature de la ressource et sélectionner ![Télécharger](/help/assets/assets/download-icon.svg) pour sélectionner et afficher les rendus disponibles dans la boîte de dialogue avant de les télécharger.
+* Pour télécharger plusieurs ressources et leurs rendus :
+   1. Sélectionnez les ressources, cliquez sur ![Télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]** et consultez la liste des ressources sélectionnées dans la boîte de dialogue **[!UICONTROL Télécharger les ressources]**. Cliquez sur ![désélectionner](/help/assets/assets/Close.svg) en regard d’une ressource pour la désélectionner de la liste.
+   1. Sélectionnez un ou plusieurs rendus à télécharger sous forme de fichier ZIP. La sélection des options **[!UICONTROL Recadrage intelligent]** et **[!UICONTROL Rendus statiques]** télécharge tous les rendus de recadrage statique et intelligent disponibles de chaque ressource sélectionnée.
+   1. Facultatif : désélectionnez l’option **[!UICONTROL Créer un dossier distinct pour chaque ressource]** pour télécharger les ressources sélectionnées et leurs rendus sous la forme d’une hiérarchie plate dans un dossier du fichier compressé. Par défaut, [!DNL Content Hub] télécharge les ressources sélectionnées et leurs rendus dans des dossiers distincts au sein d’un fichier zip.
 
-1. Pour télécharger plusieurs ressources, sélectionnez-les, cliquez sur ![télécharger](/help/assets/assets/download-icon.svg) **[!UICONTROL Télécharger]** et consultez la liste des ressources sélectionnées dans la boîte de dialogue **[!UICONTROL Télécharger les ressources]**. Cliquez sur ![désélectionner](/help/assets/assets/Close.svg) en regard d’une ressource pour la désélectionner de la liste. Sélectionnez un ou plusieurs rendus et cliquez sur **[!UICONTROL Télécharger]** pour les télécharger sous la forme d’un fichier ZIP unique. La sélection des options **[!UICONTROL Recadrage intelligent]** et **[!UICONTROL Rendus statiques]** télécharge tous les rendus de recadrage statique et intelligent disponibles de chaque ressource sélectionnée.
-   ![téléchargement de plusieurs ressources](/help/assets/assets/download-multiple-assets-CH.png)
+      >[!NOTE]
+      >
+      > * Content Hub enregistre votre sélection (**[!UICONTROL Créer un dossier distinct pour chaque ressource]**) comme préférence et la conserve pour les téléchargements ultérieurs.
+      > * L’option **[!UICONTROL Créer un dossier distinct pour chaque ressource]** n’est disponible que pour les utilisateurs [!DNL Content Hub] authentifiés. [!DNL Content Hub] permet aux utilisateurs publics de télécharger des ressources sous la forme de ressources individuelles.
+
+   1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger les ressources sélectionnées et leurs rendus.
+      ![téléchargement de plusieurs ressources](/help/assets/assets/bulk-asset-download-content-hub.png)
+
 Vous pouvez continuer à utiliser [!DNL Content Hub] pendant le téléchargement est en cours. Content Hub n’interrompt pas votre workflow pendant le processus de téléchargement.
-   ![téléchargement de plusieurs ressources](/help/assets/assets/download-assets-notification-ch.png)
+![téléchargement de plusieurs ressources](/help/assets/assets/download-assets-notification-ch.png)
 Si la boîte de dialogue **[!UICONTROL Télécharger des ressources]** affiche les licences des ressources, sélectionnez chaque licence dans le volet de gauche (section [!UICONTROL Documents T&amp;C]) pour prévisualiser la licence et afficher les ressources sélectionnées associées à la licence dans le volet central de la boîte de dialogue. Après avoir examiné chaque licence, sélectionnez les rendus, cliquez sur **[!UICONTROL J’ai lu et accepté les conditions générales mentionnées ci-dessus]** puis sélectionnez **[!UICONTROL Télécharger]** pour les télécharger.
-   ![téléchargement de plusieurs ressources](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![téléchargement de plusieurs ressources](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Les utilisateurs ayant accès à [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
-   >* L’aperçu de la licence s’affiche uniquement si la ressource est approuvée à l’aide de [!DNL Assets as a Cloud Service] environnement de création. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+>[!NOTE]
+>
+>* Les rendus s’affichent uniquement si leur visibilité est activée à l’aide de l’interface utilisateur [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+>* Les utilisateurs ayant accès à [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) peuvent afficher et télécharger des rendus de recadrage dynamique et intelligent.
+>* L’aperçu de la licence s’affiche uniquement si la ressource est approuvée à l’aide de [!DNL Assets as a Cloud Service] environnement de création. Pour plus d’informations, consultez la section [Gestion des ressources sous licence sur Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## Types de rendus {#types-of-renditions}
 
-Les rendus de ressources sont différentes représentations du fichier d’origine d’une ressource. Il peut s’agir de miniatures, de versions optimisées pour le web ou les appareils mobiles, de fichiers avec filigrane ou protégés par DRM, ou même d’éléments dynamiques tels que des recadrages intelligents. Ils n’ont pas besoin de correspondre au type de fichier d’origine, mais servent à représenter la ressource dans divers cas d’utilisation.
+Les rendus de ressources sont différentes représentations du fichier d’origine d’une ressource. Ces rendus peuvent inclure des miniatures, des versions optimisées pour le web ou les appareils mobiles, des fichiers avec filigrane ou protégés par DRM, ou même des éléments dynamiques tels que des recadrages intelligents. Ils n’ont pas besoin de correspondre au type de fichier d’origine, mais servent à représenter la ressource dans divers cas d’utilisation.
 
 En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
@@ -131,7 +143,7 @@ En savoir plus sur [affichage et gestion des rendus dans [!DNL Experience Manage
 
 * [Rendus statiques](/help/assets/renditions.md#static-renditions) : les rendus statiques sont des versions précréées des ressources numériques, généralement générées lors de l’ingestion ou de la modification des ressources. Ils sont optimisés pour des utilisations et des plateformes spécifiques, telles que les miniatures web, les formats compatibles avec les appareils mobiles pour les conceptions réactives ou les fichiers haute résolution pour l’impression, offrant ainsi une expérience rationalisée et cohérente.
 
-* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [&#x200B; Activation des rendus dynamiques &#x200B;](#enable-dynamic-media-renditions).
+* [Rendus dynamiques](/help/assets/renditions.md#dynamic-renditions) : les rendus dynamiques sont des versions personnalisées en temps réel des ressources permettant d’effectuer diverses actions, telles que le redimensionnement des images pour différentes résolutions d’appareil ou le recadrage pour s’adapter à divers proportions. Ces rendus vous permettent d’offrir des expériences personnalisées et optimisées pour des besoins plus larges. Les rendus dynamiques des ressources sont créés dans [!DNL Adobe Experience Manager Assets] environnement de création. Pour plus d’informations sur les étapes requises pour activer les rendus dynamiques, voir [ Activation des rendus dynamiques ](#enable-dynamic-media-renditions).
 
 * [Recadrage intelligent](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) : le recadrage intelligent se concentre uniquement sur la partie essentielle d’une ressource pendant le processus de recadrage. Le recadrage intelligent Dynamic Media tire parti de l’intelligence artificielle optimisée par Adobe Sensei pour effectuer le suivi du point ciblé, en s’assurant que nos ressources ont l’aspect le plus favorable quelle que soit la taille de l’écran. [!DNL Adobe Experience Manager] recadrage intelligent affiche la largeur et la hauteur des rendus d’une ressource avec le titre. Pour en savoir plus, consultez la section [Utilisation du recadrage intelligent avec AEM Assets Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
@@ -151,7 +163,7 @@ Pour activer les rendus dynamiques :
 
    Une fois que vous avez accès à Dynamic Media avec les fonctionnalités OpenAPI, toutes les ressources marquées comme `Approved` peuvent être diffusées au public à l’aide de Dynamic Media.
 
-1. Définissez la [&#x200B; cible d’approbation de la ressource &#x200B;](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
+1. Définissez la [ cible d’approbation de la ressource ](/help/assets/approve-assets-content-hub.md#set-approval-target) sur Content Hub afin d’approuver les ressources uniquement pour Content Hub.
 
 1. Activez le bouton (bascule) **[!UICONTROL Activer la disponibilité des rendus]** disponible dans l’onglet **[!UICONTROL Rendus]** de l’interface utilisateur [Configuration](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 

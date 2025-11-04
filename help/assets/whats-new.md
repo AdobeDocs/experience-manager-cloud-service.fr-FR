@@ -3,10 +3,10 @@ title: Nouveautés de Content Hub
 description: Apprenez-en plus sur certaines des fonctionnalités de Content Hub récemment lancées.
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 88%
+source-wordcount: '883'
+ht-degree: 82%
 
 ---
 
@@ -24,7 +24,15 @@ La vidéo suivante présente les principales fonctionnalités de Content Hub :
 
 ## Date de publication {#release-date}
 
-La date de publication de la version Content Hub (2025.9.0) est le vendredi 25 septembre 2025 (la même que celle de la version AEM as a Cloud Service). La prochaine disponibilité des fonctionnalités (2025.10.0) est prévue pour le 30 octobre 2025.
+La date de publication de la version Content Hub (2025.10.0) est le vendredi 30 octobre 2025 (la même que celle de la version AEM as a Cloud Service). La prochaine version des fonctionnalités (2025.11.0) est prévue pour le vendredi 20 novembre 2025.
+
+## Fonctionnalités de la version d’octobre {#october-release-features}
+
+**Améliorations apportées à l’expérience de téléchargement Content Hub**
+
+Content Hub prend désormais en charge le téléchargement de plusieurs rendus de ressources dans une hiérarchie aplatie, ce qui élimine la nécessité de parcourir plusieurs dossiers. Les préférences utilisateur pour le comportement de téléchargement sont désormais conservées pour une expérience cohérente entre les sessions. La nouvelle expérience de téléchargement de ressources simplifie la gestion des ressources et améliore l’efficacité en facilitant la localisation et l’organisation des fichiers téléchargés.
+
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## Fonctionnalités de la version de septembre {#september-release-features}
 
@@ -35,6 +43,8 @@ Vous pouvez désormais marquer les collections en tant que Favoris dans Content 
 **Épingler des collections pour un accès rapide**
 
 Les administrateurs et administratrices de Content Hub peuvent désormais épingler des collections dans Content Hub pour un accès rapide. Les collections épinglées sont affichées dans une section **[!UICONTROL épinglées]** dédiée sur la page d’accueil Collections, ce qui facilite la conservation des collections importantes à portée de main.
+
+[!BADGE Examiner en détail cette fonctionnalité]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
