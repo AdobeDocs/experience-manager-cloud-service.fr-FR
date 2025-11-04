@@ -4,9 +4,9 @@ description: Découvrez les tâches de maintenance dans AEM as a Cloud Service e
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2042'
 ht-degree: 40%
 
 ---
@@ -47,14 +47,14 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
   <tr>
     <td>Purge de version</td>
     <td>Client</td>
-    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge de version est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> Tâches de maintenance de purge de version et de journal d’audit </a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Client</td>
-    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
+    <td>La purge du journal d’audit est actuellement désactivée par défaut, mais la politique peut être configurée, comme décrit dans la section <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tâches de maintenance de purge de version et de purge du journal d’audit</a>.<br/><br/>La purge sera bientôt activée par défaut et ces valeurs pourront être remplacées.<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=fr#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Voir <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Purge régulière des instances de processus</a>.</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles.
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets d’Adobe <b></b> .</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Consultez la liste des <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">propriétés OSGi</a> pour la configuration de purge des projets Adobe <b></b> .</p>
   </td>
   </tr>
   </tbody>
@@ -303,7 +303,7 @@ Les colonnes indiquant *par défaut* indiquent les valeurs par défaut dans le f
 
 | Propriétés | future valeur par défaut pour env>à déterminer | future valeur par défaut pour env&lt;=à déterminer | obligatoire | Type | Valeurs |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| chemin(s) d’accès | [« /content »] | [« /content »] | Oui | tableau de chaînes | Indique sous quels chemins d’accès purger les versions lorsque de nouvelles versions sont créées.  Les clients doivent déclarer cette propriété, mais la seule valeur autorisée est « /content ». |
+| chemin(s) d’accès | [« /content »] | [« /content »] | Oui | séquence de chaînes de caractères | Indique sous quels chemins d’accès purger les versions lorsque de nouvelles versions sont créées.  Les clients doivent déclarer cette propriété, mais la seule valeur autorisée est « /content ». |
 | maximumAgeDays | 30 | 2557 (7 ans + 2 jours bissextiles) | Oui | Entier | Toute version antérieure à la valeur configurée est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction de l’âge de la version. |
 | maximumVersions | 5 | 0 (pas de limite) | Oui | Entier | Toute version antérieure à la nième version la plus récente est supprimée. Si la valeur est 0, la purge n’est pas effectuée en fonction du nombre de versions. |
 | minimumVersion | 1 | 1 | Oui | Entier | Nombre minimum de versions à conserver, quel que soit l’âge. Notez qu’au moins 1 version est toujours conservée ; sa valeur doit être égale ou supérieure à 1. |
@@ -371,6 +371,6 @@ Les colonnes indiquant *par défaut* indiquent les valeurs par défaut dans le f
 | Propriétés | future valeur par défaut pour env>à déterminer | future valeur par défaut pour env&lt;=à déterminer | obligatoire | Type | Valeurs |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | règles | - | - | Oui | Objet | Un ou plusieurs des nœuds suivants : réplication, pages, gestion des ressources numériques. Chacun de ces nœuds définit des règles, avec les propriétés ci-dessous. Toutes les propriétés doivent être déclarées. |
-| maximumAgeDays | 7 jours | pour tout, 2557 (7 ans + 2 jours bissextiles) | Oui | integer | Pour la réplication, les pages ou la gestion des ressources numériques : nombre de jours pendant lesquels les journaux d’audit sont conservés. Les journaux d’audit antérieurs à la valeur configurée sont purgés. |
+| maximumAgeDays | 7 jours | pour tout, 2557 (7 ans + 2 jours bissextiles) | Oui | entier | Pour la réplication, les pages ou la gestion des ressources numériques : nombre de jours pendant lesquels les journaux d’audit sont conservés. Les journaux d’audit antérieurs à la valeur configurée sont purgés. |
 | contentPath | « /content » | « /content » | Oui | Chaîne | Chemin d’accès sous lequel les journaux d’audit seront purgés, pour le type associé. Doit être défini sur « /content ». |
 | types | toutes les valeurs | toutes les valeurs | Oui | Tableau de l’énumération | Pour **replication**, les valeurs énumérées sont les suivantes : Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Pour **pages**, les valeurs énumérées sont les suivantes : PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled, PageValid, PageInvalid. Pour **dam**, les valeurs énumérées sont les suivantes : ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJETÉ. |

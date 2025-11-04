@@ -4,7 +4,7 @@ description: Balisez les ressources à l’aide d’un service d’intelligence 
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 28%
@@ -19,7 +19,7 @@ Les balises intelligentes sont des mots-clés qui non seulement apparaissent dan
 
 Par exemple, les mots disposés par ordre alphabétique dans un dictionnaire sont plus faciles à trouver que les mots dispersés de manière aléatoire. Le balisage a un objectif similaire. Il organise les ressources en fonction de la taxonomie métier, en veillant à ce que les plus pertinentes apparaissent dans les résultats de recherche. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèle, de sorte que seules les images appropriées soient affichées lors de la conception d’une campagne promotionnelle. Qu’il s’agisse de baliser « runners » ou « running chaussures », les utilisateurs n’ont pas à se soucier des fautes de frappe, des variations d’orthographe ou d’autres termes de recherche ; les balises intelligentes les reconnaissent toutes.
 
-En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/fr/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
+En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
 
 ## Conditions préalables et configuration {#smart-tags-prereqs-config}
 
@@ -47,7 +47,7 @@ Les balises intelligentes sont implémentées dans AEM Assets à l’aide du wor
 
 1. Création ou chargement d’une ressource dans AEM. Des balises prêtes à l’emploi sont générées pour les Assets basées sur des images, des vidéos et du texte.
 
-1. Si vous constatez que des balises spécifiques ne sont pas générées, vous pouvez entraîner vos balises de type image en conséquence. Pour plus d&#39;informations, consultez la section [Entraînement des balises intelligentes](#smart-tags-training.md).
+1. Si vous constatez que des balises spécifiques ne sont pas générées, vous pouvez entraîner vos balises de type image en conséquence. Pour plus d&#39;informations, consultez la section [Entraînement des balises intelligentes](/help/assets/smart-tags-training.md).
 
 ## Formats de fichiers pris en charge pour les balises intelligentes {#supported-file-formats}
 
@@ -74,7 +74,7 @@ Les balises intelligentes sont implémentées dans AEM Assets à l’aide du wor
 
 ## Préparation d’une ressource pour le balisage intelligent prêt à l’emploi
 
-Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL &#x200B; Balises intelligentes &#x200B;]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
+Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL  Balises intelligentes ]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
 
 ![Elles sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés de la ressource.](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets non balisé dans la gestion des ressources numériques (DAM) {#smart-tag-existing-assets}
 
-Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
+Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -188,7 +188,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 Comme le balisage automatisé des ressources s’exécute en parallèle d’autres tâches de traitement des ressources telles que la création de miniatures et l’extraction de métadonnées, cela peut prendre du temps. Pour accélérer le traitement des ressources, vous pouvez exclure le balisage intelligent lors du chargement au niveau du dossier. Pour exclure la génération automatisée de balises intelligentes pour les ressources chargées dans un dossier spécifique :
 
 1. Ouvrez l’onglet [!UICONTROL Traitement des ressources] dans le dossier [!UICONTROL Propriétés].
-1. Dans le menu [!UICONTROL &#x200B; Balises intelligentes pour les vidéos &#x200B;], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
+1. Dans le menu [!UICONTROL  Balises intelligentes pour les vidéos ], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
 
    Lorsque l’option [!UICONTROL Hérité] est sélectionnée, le chemin d’accès au dossier hérité est également visible avec les informations indiquant s’il est défini sur [!UICONTROL Activer] ou [!UICONTROL Désactiver].
 
@@ -200,7 +200,7 @@ Comme le balisage automatisé des ressources s’exécute en parallèle d’autr
 
 >[!IMPORTANT]
 >
->Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] &#x200B;](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
+>Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] ](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
@@ -256,7 +256,7 @@ Les balises intelligentes sont configurables et peuvent être appliquées à n�
 
 +++**Comment savoir que le balisage requiert une formation ?**
 
-Pour plus d&#39;informations, consultez la section [Détermination des exigences de l’entraînement des balises intelligentes](#smart-tags-training.md#smart-tag-training-requirement).
+Pour plus d&#39;informations, consultez la section [Détermination des exigences de l’entraînement des balises intelligentes](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
