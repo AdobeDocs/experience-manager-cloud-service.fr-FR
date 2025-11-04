@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 13%
+source-wordcount: '1818'
+ht-degree: 10%
 
 ---
+
 
 # Accès à l’éditeur universel et navigation dans cet éditeur {#navigating}
 
@@ -42,7 +43,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 ### Accès à dans AEM as a Cloud Service {#accessing-aem}
 
 1. Connectez-vous à votre instance de création AEM as a Cloud Service.
-1. Utilisez la console [**Sites** &#x200B;](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
+1. Utilisez la console [**Sites** ](/help/sites-cloud/authoring/sites-console/introduction.md) pour accéder à la page créée pour être utilisée avec l’éditeur universel que vous souhaitez modifier.
 1. Modifiez la page.
 1. L’éditeur universel s’ouvre pour modifier la page sélectionnée.
 
@@ -52,7 +53,7 @@ Une fois que l’application est instrumentée pour fonctionner avec l’éditeu
 
 ### Accès direct {#accessing-directly}
 
-1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [&#x200B; l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
+1. Connectez-vous à l’éditeur universel. Vous avez besoin d’une Adobe ID pour vous connecter et d’avoir accès [ l’éditeur universel](/help/implementing/universal-editor/getting-started.md#request-access).
 
 1. Une fois connecté, saisissez l’URL de la page à modifier dans la [barre d’emplacement](#location-bar) afin de commencer à modifier du contenu tel que du contenu texte ou multimédia.
 
@@ -71,51 +72,19 @@ L’interface utilisateur est divisée en ces zones principales.
 >
 >L’éditeur universel offre un certain nombre [d’options de personnalisation](/help/implementing/universal-editor/customizing.md) et [de points d’extension](/help/implementing/universal-editor/extending.md) qui peuvent modifier et ajouter des fonctionnalités à l’éditeur. Pour cette raison, vous pouvez voir différentes options par rapport aux options standard documentées ici.
 
-### En-tête Experience Cloud {#experience-cloud-header}
+### Barre de navigation supérieure Experience Platform {#experience-cloud-header}
 
-L’en-tête Experience Cloud est toujours présent en haut de l’écran. Il s’agit d’une ancre de lien qui vous indique où vous vous trouvez dans Experience Cloud et vous aide à accéder à d’autres applications Experience Cloud.
+La barre de navigation supérieure d’Experience Platform est toujours présente en haut de l’écran. Il s’agit d’une ancre de lien qui vous indique où vous vous trouvez dans Experience Cloud et vous aide à accéder à d’autres applications Experience Cloud.
 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-Sélectionnez le lien Adobe Experience Cloud à gauche de l’en-tête pour accéder à la racine de votre solution Experience Manager et aux outils tels que [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) et [Distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
-
-![Bouton Navigation globale](assets/global-navigation.png)
-
-#### Organisation {#organization}
-
-L’organisation dans laquelle vous êtes actuellement connecté s’affiche. Sélectionnez cette option pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
-
-![Indicateur d’organisation](assets/organization.png)
-
-#### Centre dʼaide {#help}
-
-L’icône du centre d’aide permet d’accéder rapidement aux ressources d’apprentissage et de support.
-
-![Aide](assets/help.png)
-
-#### Notifications {#notifications}
-
-Cette icône contient un badge indiquant le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement attribuées.
-
-![Notifications](assets/notifications.png)
-
-#### Applications {#solutions}
-
-Appuyez ou cliquez sur le sélecteur d’applications pour accéder rapidement à d’autres solutions Experience Cloud.
-
-![&#x200B; Sélecteur d’applications &#x200B;](assets/solutions.png)
+Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Compte {#user-properties}
 
-Sélectionnez l’icône représentant votre utilisateur pour accéder aux paramètres de votre compte. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
+Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur.
 
-![Propriétés de l’utilisateur](assets/user-properties.png)
-
-Appuyez ou cliquez sur l’icône de compte pour ouvrir un menu contenant vos paramètres utilisateur. Ces paramètres s’appliquent à Cloud Manager en général et ses fonctionnalités sont détaillées [dans cette documentation](/help/implementing/cloud-manager/navigation.md).
-
-![&#x200B; Sélecteur d’environnement &#x200B;](assets/environment-switcher.png)
+![ Sélecteur d’environnement ](assets/environment-switcher.png)
 
 Pour l’éditeur universel, sous l’en-tête **Paramètres du produit**, il existe une option pour basculer entre la version de production actuelle de l’éditeur universel et la version d’aperçu à venir.
 
@@ -125,7 +94,7 @@ La barre d’outils de l’éditeur universel est toujours présente en haut de 
 
 Selon la configuration de votre programme, il peut également présenter des [fonctionnalités supplémentaires qui ont été activées en tant qu’extensions par votre administrateur.](#additional-toolbar-buttons)
 
-![&#x200B; Barre d’outils de l’éditeur universel &#x200B;](assets/universal-editor-toolbar.png)
+![ Barre d’outils de l’éditeur universel ](assets/universal-editor-toolbar.png)
 
 #### Le Bouton Accueil {#home-button}
 
@@ -161,8 +130,8 @@ La barre d’emplacement affiche l’adresse de la page que vous modifiez. Séle
 
 Sélectionnez les boutons Annuler ou Rétablir pour annuler ou rétablir la dernière modification dans l’éditeur. Consultez le document [Création de contenu avec l’éditeur universel](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) pour plus d’informations.
 
-![&#x200B; Icône Annuler &#x200B;](assets/undo.png)
-![&#x200B; Icône Rétablir &#x200B;](assets/redo.png)
+![ Icône Annuler ](assets/undo.png)
+![ Icône Rétablir ](assets/redo.png)
 
 >[!TIP]
 >
@@ -349,7 +318,7 @@ Appuyez ou cliquez sur le bouton Supprimer [supprime le composant](/help/sites-c
 
 Vous pouvez copier et coller des composants qui se trouvent dans des [conteneurs.](/help/implementing/universal-editor/field-types.md#container)
 
-![&#x200B; Icône Copier &#x200B;](assets/copy.png)
+![ Icône Copier ](assets/copy.png)
 ![Icône Coller](assets/paste.png)
 
 >[!TIP]
