@@ -4,10 +4,10 @@ description: Balisez les ressources à l’aide d’un service d’intelligence 
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 25%
+source-wordcount: '2082'
+ht-degree: 28%
 
 ---
 
@@ -19,7 +19,7 @@ Les balises intelligentes sont des mots-clés qui non seulement apparaissent dan
 
 Par exemple, les mots disposés par ordre alphabétique dans un dictionnaire sont plus faciles à trouver que les mots dispersés de manière aléatoire. Le balisage a un objectif similaire. Il organise les ressources en fonction de la taxonomie métier, en veillant à ce que les plus pertinentes apparaissent dans les résultats de recherche. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèle, de sorte que seules les images appropriées soient affichées lors de la conception d’une campagne promotionnelle. Qu’il s’agisse de baliser « runners » ou « running chaussures », les utilisateurs n’ont pas à se soucier des fautes de frappe, des variations d’orthographe ou d’autres termes de recherche ; les balises intelligentes les reconnaissent toutes.
 
-En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/fr/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
+En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
 
 ## Conditions préalables et configuration {#smart-tags-prereqs-config}
 
@@ -74,7 +74,7 @@ Les balises intelligentes sont implémentées dans AEM Assets à l’aide du wor
 
 ## Préparation d’une ressource pour le balisage intelligent prêt à l’emploi
 
-Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL &#x200B; Balises intelligentes &#x200B;]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
+Lorsque vous [chargez des ressources](add-assets.md#upload-assets) vers [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], les ressources chargées sont traitées. Une fois le traitement terminé, observez l’onglet [!UICONTROL Simple] de la page [!UICONTROL Propriétés] de la ressource. Les balises intelligentes sont automatiquement ajoutées aux ressources sous [!UICONTROL  Balises intelligentes ]. Les microservices de ressources utilisent [!DNL Adobe Sensei] pour créer ces balises intelligentes.
 
 ![Elles sont ajoutées aux vidéos et affichées dans l’onglet Simple des propriétés de la ressource.](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets non balisé dans la gestion des ressources numériques (DAM) {#smart-tag-existing-assets}
 
-Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
+Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -105,7 +105,7 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 ## Score de confiance {#confidence-score}
 
-Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources suggère. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes des ressources.
+Les résultats de la recherche de ressources sont classés en fonction des scores de confiance, ce qui améliore généralement ces résultats au-delà de ce qu’une inspection des balises affectées aux ressources suggère. Les balises inexactes présentent souvent des scores de confiance faibles, de sorte qu’elles apparaissent rarement en haut de la liste des balises intelligentes pour les ressources.
 <!--
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applies a minimum confidence threshold for object and action-smart tags to avoid having too many tags for each asset, which slows down indexing. 
 
@@ -175,7 +175,7 @@ Par défaut, [!DNL Experience Manager] associe les termes de recherche avec une 
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
 
-* ressources dotées de balises dynamiques avec l’un des mots-clés.
+* Ressources dotées de balises intelligentes avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche dans les balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
@@ -188,7 +188,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 Comme le balisage automatisé des ressources s’exécute en parallèle d’autres tâches de traitement des ressources telles que la création de miniatures et l’extraction de métadonnées, cela peut prendre du temps. Pour accélérer le traitement des ressources, vous pouvez exclure le balisage intelligent lors du chargement au niveau du dossier. Pour exclure la génération automatisée de balises intelligentes pour les ressources chargées dans un dossier spécifique :
 
 1. Ouvrez l’onglet [!UICONTROL Traitement des ressources] dans le dossier [!UICONTROL Propriétés].
-1. Dans le menu [!UICONTROL &#x200B; Balises intelligentes pour les vidéos &#x200B;], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
+1. Dans le menu [!UICONTROL  Balises intelligentes pour les vidéos ], par exemple, l’option [!UICONTROL Hérité] est sélectionnée par défaut et la balise intelligente de vidéo est activée.
 
    Lorsque l’option [!UICONTROL Hérité] est sélectionnée, le chemin d’accès au dossier hérité est également visible avec les informations indiquant s’il est défini sur [!UICONTROL Activer] ou [!UICONTROL Désactiver].
 
@@ -200,7 +200,7 @@ Comme le balisage automatisé des ressources s’exécute en parallèle d’autr
 
 >[!IMPORTANT]
 >
->Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] &#x200B;](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
+>Si vous avez choisi de ne pas baliser un dossier au moment du chargement et souhaitez baliser intelligemment le après le chargement, **[!UICONTROL Activer les balises intelligentes]** dans l’onglet [!UICONTROL Traitement des ressources] du dossier [!UICONTROL Propriétés] et utilisez l’option [[!UICONTROL Retraiter les ressources] ](#smart-tag-existing-assets) pour ajouter des balises intelligentes aux ressources.
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
@@ -212,79 +212,6 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
 *  Helps your assets to become organized and categorized.
 -->
-
-## Amélioration de la découverte de contenu avec les métadonnées générées par l’IA {#ai-smart-tags}
-
-Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Cette approche améliore non seulement l’efficacité en éliminant le balisage manuel, mais garantit également la cohérence et l’évolutivité sur de grands volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
-
-![Balises intelligentes améliorées](assets/enhanced-smart-tags1.png)
-
-### Comment activer les métadonnées générées par l’IA ? {#enable-ai-generated-metadata}
-
-Pour activer les métadonnées générées par l’IA :
-
-* La version minimale requise d’AEM est `20626`.
-
-* Vous devez signer un contrat GenAI Rider. Pour plus d’informations, contactez votre représentant Adobe.
-
-### Configurer les titres générés par l’IA {#configure-ai-generated-titles}
-
-AEM vous permet de configurer l’affichage des titres des ressources en mode Carte ou Liste sur la page de navigation des ressources. Vous pouvez choisir d’afficher le titre de la ressource que vous avez défini, le titre généré à l’aide de l’IA ou le titre généré par l’IA uniquement s’il n’existe aucun titre pour la ressource.
-
-Pour configurer les titres générés par l’IA :
-
-1. Accédez à **[!UICONTROL Outils > Assets > Configuration Assets > Configuration de l’amélioration des balises intelligentes]**.
-
-1. Sélectionnez l’une des options suivantes :
-
-   * **Afficher le titre du contrôleur de domaine (par défaut)** : indiquez le titre dans le champ **[!UICONTROL Titre]** disponible dans les propriétés de la ressource pour l’afficher en mode Carte ou Liste. Si le titre de la ressource n’est pas défini, AEM Assets affiche le nom du fichier.
-
-   * **Afficher le titre généré par l’IA** : affiche le titre généré par l’IA et ignore le titre spécifié dans les propriétés de la ressource. Si le titre généré par l’IA n’est pas disponible pour une ressource, AEM Assets affiche le titre de ressource par défaut disponible dans ses propriétés.
-
-   * **Afficher le titre généré par l’IA uniquement s’il n’existe pas** : AEM Assets affiche le titre généré par l’IA uniquement si le titre de la ressource n’est pas défini pour une ressource.
-
-     ![Configurer les titres générés par l’IA](assets/configure-title-ai-generated.png)
-
-### Utilisation de métadonnées générées par l’IA {#using-ai-generated-smart-tags}
-
-<!--[!NOTE]
->
->The enhanced smart tags capability is available only for the newly uploaded assets.
--->
-
-Pour utiliser la fonctionnalité de balises intelligentes améliorée, procédez comme suit :
-
-1. Dans l’interface [!DNL Experience Manager], accédez au dossier souhaité, puis cliquez sur **[!UICONTROL Ajouter Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Les formats de fichiers image compatibles sont `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` et `bmp`.
-
-1. Patientez jusqu’à ce que la ressource nouvellement chargée soit traitée. Une fois que vous avez terminé, accédez aux propriétés de la ressource.
-
-1. Accédez à l’onglet **[!UICONTROL Généré par l’IA]**. Si [!DNL Experience Manager] version est incompatible ou n’est pas mise à jour, cet onglet n’est pas visible. Les champs suivants sont disponibles :
-
-   * **[!UICONTROL Titre généré] :** le titre fournit un titre clair et concis qui capture l’idée principale d’une ressource téléchargée, ce qui facilite sa compréhension en un coup d’œil. Lors de l’ajout d’une ressource, si vous fournissez un titre (en `dc:title`), il sera affiché dans la vue de navigation des ressources. Si rien n’est indiqué, un titre généré par l’IA est automatiquement attribué.
-   * **[!UICONTROL Description générée] :** la description fournit un résumé bref mais informatif de la ressource, aidant les utilisateurs et les modules de recherche à appréhender rapidement sa pertinence.
-   * **[!UICONTROL Mots-clés générés] :** les mots-clés sont des termes ciblés qui représentent les thèmes principaux d’une ressource, facilitant le balisage et le filtrage de contenu.
-
-1. [Facultatif] Vous pouvez ajouter des balises supplémentaires ou créer les vôtres si vous pensez qu’il manque des balises pertinentes. Pour ce faire, écrivez vos balises dans le champ **[!UICONTROL Mots-clés générés]** et cliquez sur **[!UICONTROL Enregistrer]**.
-
-### Désactiver les métadonnées générées par l’IA {#disable-ai-generated-metadata}
-
-Vous pouvez désactiver les métadonnées générées par l’IA au niveau du dossier. Tous les dossiers enfants héritent des propriétés du dossier parent.
-
-Pour désactiver les métadonnées générées par l’IA au niveau du dossier :
-
-1. Accédez à **[!UICONTROL Adobe Experience Manager > Ressources > Fichiers]**.
-
-1. Sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
-
-1. Dans l’onglet **[!UICONTROL Traitement des ressources]**, accédez au dossier **[!UICONTROL Améliorations apportées aux balises intelligentes pour les images]**. Sélectionnez l’une des valeurs suivantes dans la liste déroulante :
-
-   * Hérité : le dossier hérite des options d’activation ou de désactivation du dossier parent.
-
-   * Activer : active les métadonnées générées par l’IA pour le dossier sélectionné.
-
-   * Désactiver - Désactive les métadonnées générées par l’IA pour le dossier sélectionné.
-
-     ![Désactiver les métadonnées générées par l’IA](assets/disable-ai-generated-metadata.png)
 
 ## Restrictions et bonnes pratiques relatives aux balises intelligentes {#limitations-best-practices-smart-tags}
 

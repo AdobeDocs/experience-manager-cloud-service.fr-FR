@@ -3,15 +3,20 @@ title: Améliorez la découverte de contenu avec les métadonnées générées p
 description: Découvrez comment améliorer la découverte de contenu avec les métadonnées générées par l’IA dans la vue Administration
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 14%
+source-wordcount: '646'
+ht-degree: 15%
 
 ---
 
 
 # Amélioration de la découverte de contenu avec les métadonnées générées par l’IA {#ai-smart-tags}
+
+| Interfaces utilisateur | Lien de l’article |
+| -------- | ---------------------------- |
+| Vue Assets | [Cliquer ici](/help/assets/ai-generated-metadata-assets-view.md) |
+| Vue Admin | Cet article |
 
 Au lieu de recourir à une entrée manuelle, l’IA attribue automatiquement des balises descriptives aux ressources numériques. Ces balises générées par l’IA améliorent la qualité des métadonnées, ce qui facilite la recherche, la classification et la recommandation des ressources. Cette approche améliore non seulement l’efficacité en éliminant le balisage manuel, mais garantit également la cohérence et l’évolutivité sur de grands volumes de contenu numérique. Par exemple, si la ressource est une image, l’IA peut identifier des objets, des scènes, des émotions ou même des logos de marque et générer des balises pertinentes telles que « coucher de soleil », « plage », « vacances » ou « sourire ». Le contenu généré par l’IA peut améliorer la recherche de ressources à l’aide de techniques de recherche sémantique et lexicale. En savoir plus [Rechercher dans Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
