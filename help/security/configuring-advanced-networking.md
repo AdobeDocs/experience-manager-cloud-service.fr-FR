@@ -733,7 +733,7 @@ Une fois l’infrastructure réseau créée pour un programme, seules les propri
 
 1. Sur la page **Aperçu du programme**, accédez à l’onglet **Environnements**.
 1. Dans le volet de gauche, cliquez sur **Infrastructure réseau**.
-1. Cliquez sur l’icône Plus ![ contenant des points de suspension ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de l’infrastructure que vous souhaitez supprimer.
+1. Cliquez sur l’icône Plus ![&#x200B; contenant des points de suspension &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de l’infrastructure que vous souhaitez supprimer.
 
    ![Sélection de la modification ou de la suppression de la mise en réseau avancée au niveau du programme](assets/advanced-networking-ui-delete-infrastructure.png)
 
