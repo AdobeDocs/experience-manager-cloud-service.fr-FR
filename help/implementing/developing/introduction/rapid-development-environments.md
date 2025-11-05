@@ -198,7 +198,7 @@ Dans les environnements où aucun utilisateur ne peut exécuter de manière inte
 
    `aio login`
 
-   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+   Ces étapes nécessitent que vous soyez membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
 Pour plus d’informations et des démonstrations, regardez le tutoriel vidéo [comment configurer un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
@@ -224,7 +224,7 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
    * Fichiers de contenu
    * Fichiers ZIP contenant des configurations Apache/Dispatcher
 
-  Il est également possible de référencer un module de contenu distant. Voir [ Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
+  Il est également possible de référencer un module de contenu distant. Voir [&#x200B; Outils de ligne de commande RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
 
 * Testez le code dans l’outil RDE. Les URL de création et de publication sont disponibles dans Cloud Manager.
 
@@ -562,10 +562,10 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
    ![Message de validation de la qualité du code sur GitHub Enterprise](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Aspect sur GitLab :
-   ![ Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
+   ![&#x200B; Message de validation de la qualité du code sur GitLab](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    Comment cela se présente-t-il sur Bitbucket :
-   ![ Message de validation de la qualité du code sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
+   ![&#x200B; Message de validation de la qualité du code sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)
 
 1. **Déclencher le déploiement à l’aide d’un commentaire.**
 
@@ -609,7 +609,7 @@ Le déploiement des RDE à partir d’un référentiel Git externe nécessite le
 
    Comment cela se présente-t-il sur Bitbucket :
 
-   ![ Statut de déploiement de l’environnement sur Bitbucket ](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
+   ![&#x200B; Statut de déploiement de l’environnement sur Bitbucket &#x200B;](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
 
@@ -1170,7 +1170,7 @@ Lors de leur création, les RDE sont définis sur la dernière version de Adobe 
 
 #### Erreurs concernant les autorisations insuffisantes {#insufficient-permissions}
 
-Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [ Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
+Pour utiliser le plug-in RDE, vous devez être membre du profil de produit Cloud Manager **Développeur - Cloud Service**. Voir [&#x200B; Affecter des membres de l’équipe à des profils de produit Cloud Manager - Attribuer le profil de produit Développeur &#x200B;](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus d’informations.
 
 Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous vous connectez à Developer Console à l’aide de la commande suivante :
 
