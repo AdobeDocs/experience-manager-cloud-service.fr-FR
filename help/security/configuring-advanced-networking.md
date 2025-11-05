@@ -1,31 +1,31 @@
 ---
-title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
+title: Configurer la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancée telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 08a73fcadf65e37b621fbbfba1e4e0b8a5e61b91
+source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
 workflow-type: tm+mt
-source-wordcount: '5606'
-ht-degree: 73%
+source-wordcount: '5549'
+ht-degree: 99%
 
 ---
 
 
-# Configuration de la mise en réseau avancée pour AEM as a Cloud Service {#configuring-advanced-networking}
+# Configurer la mise en réseau avancée pour AEM as a Cloud Service {#configuring-advanced-networking}
 
-Cet article présente les fonctionnalités de mise en réseau avancées disponibles dans AEM as a Cloud Service. Ces fonctionnalités incluent la mise en service en libre-service et l’API de VPN, de ports non standard et d’adresses IP de sortie dédiées.
+Cet article présente les fonctionnalités de mise en réseau avancées disponibles dans AEM as a Cloud Service. Ces fonctionnalités comprennent l’approvisionnement en libre-service et par API des VPN, des ports non standard et des adresses IP de sortie dédiées.
 
-Outre cette documentation, vous trouverez également une série de tutoriels conçus pour vous guider dans les différentes options avancées de mise en réseau. Voir [Mise en réseau avancée](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Outre cette documentation, il existe également une série de tutoriels conçus pour vous guider dans les différentes options de mise en réseau avancée à cet emplacement. Voir [Mise en réseau avancée](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
->Vous pouvez configurer une mise en réseau avancée dans AEM as a Cloud Service via l’interface utilisateur de Cloud Manager ou à l’aide de l’API Cloud Manager (cURL, par exemple).
+>Vous pouvez configurer une mise en réseau avancée dans AEM as a Cloud Service via l’interface d’utilisation de Cloud Manager ou à l’aide de l’API Cloud Manager (cURL, par exemple).
 >
->Cet article porte sur l’utilisation de la méthode d’interface utilisateur . Si vous préférez automatiser la configuration par le biais de l’API, consultez le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Cet article porte sur l’utilisation suivant la méthode d’interface d’utilisation. Si vous préférez automatiser la configuration par le biais de l’API, consultez le tutoriel [Réseau privé virtuel (VPN)](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatisation de la mise en réseau avancée à l’aide de l’API**
->Pour automatiser la configuration avancée de la mise en réseau (telle que la création de VPN), vous pouvez utiliser l’API Cloud Manager :
+>Pour automatiser la configuration avancée de la mise en réseau (telle que la création de VPN), vous pouvez utiliser l’API Cloud Manager :
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -59,7 +59,7 @@ Cet article décrit en détail chacune de ces options et les raisons pour lesque
 
 >[!CAUTION]
 >
->Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&lang=fr#home).
+>Si vous disposez déjà d’une technologie de sortie dédiée héritée et que vous souhaitez configurer l’une de ces options de mise en réseau avancée, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#home).
 >
 >Toute tentative de configuration d’une mise en réseau avancée à l’aide de la technologie héritée peut avoir un impact sur la connectivité du site.
 
@@ -69,7 +69,7 @@ Lors de la configuration de fonctionnalités de mise en réseau avancée, les re
 
 * Un programme peut fournir une option de mise en réseau avancée unique (sortie de port flexible, adresse IP de sortie dédiée ou VPN).
 * La mise en réseau avancée n’est pas disponible pour les [programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
-* Un utilisateur doit disposer du rôle **Administrateur** pour ajouter et configurer une infrastructure réseau dans votre programme.
+* Une personne doit bénéficier du rôle **Administrateur ou administratrice** pour ajouter et configurer l’infrastructure réseau dans votre programme.
 * L’environnement de production doit être créé avant que l’infrastructure réseau puisse être ajoutée à votre programme.
 * Votre infrastructure réseau doit se trouver dans la même région que la région principale de votre environnement de production.
    * Dans le cas où votre environnement de production possède [des régions de publication supplémentaires](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), vous pouvez créer une autre infrastructure réseau reflétant chaque région supplémentaire.
@@ -96,7 +96,7 @@ Cette fonctionnalité de mise en réseau avancée vous permet de configurer AEM�
 
 >[!TIP]
 >
->Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise. En effet, Adobe peut optimiser les performances du trafic de sortie de port flexible.
+>Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, il est recommandé de choisir une sortie de port flexible si aucune adresse IP spécifique n’est requise. Cela est dû au fait qu’Adobe peut optimiser les performances du trafic de sortie de port flexible.
 
 >[!NOTE]
 >
@@ -143,8 +143,8 @@ Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau p
 
 Pour le trafic http ou https se rendant dans des ports autres que 80 ou 443, un proxy doit être configuré à l’aide des variables d’environnement hôte et port suivantes :
 
-* pour HTTP : `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
-* pour HTTPS : `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
+* pour HTTP : `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
+* pour HTTPS : `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
 
 Par exemple, voici un exemple de code pour envoyer une requête à `www.example.com:8443` :
 
@@ -224,7 +224,7 @@ Le tableau ci-dessous décrit le routage du trafic :
 
 #### Configuration Apache/Dispatcher {#apache-dispatcher}
 
-La directive `mod_proxy` Apache au niveau Dispatcher d’AEM Cloud Service peut être configurée à l’aide des propriétés décrites ci-dessus.
+La directive `mod_proxy` Apache au niveau du Dispatcher d’AEM Cloud Service peut être configurée à l’aide des propriétés décrites ci-dessus.
 
 ```
 ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
@@ -240,25 +240,25 @@ ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
 
-## Adresse IP Egress dédiée {#dedicated-egress-ip-address}
+## Adresse IP de sortie dédiée {#dedicated-egress-ip-address}
 
-Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration aux fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de votre instance AEM Cloud Service est autorisé à circuler dans le service externe. Cette approche s’ajoute au trafic provenant de toutes les autres adresses IP autorisées.
+Cette adresse IP dédiée peut améliorer la sécurité lors de l’intégration aux fournisseurs SaaS (comme un fournisseur de solutions de gestion de la relation client) ou d’autres intégrations en dehors d’AEM as a Cloud Service qui offrent une liste d’adresses IP autorisées. L’ajout de l’adresse IP dédiée à la liste autorisée garantit que seul le trafic provenant de votre instance AEM Cloud Service est autorisé à circuler dans le service externe. Cette approche s’ajoute au trafic provenant de toute autre adresse IP autorisée.
 
 La même adresse IP dédiée est appliquée à tous les environnements d’un programme et s’applique aux services de création et de publication.
 
-Si la fonction d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un ensemble partagé d’adresses IP. Ces adresses IP sont utilisées par d’autres clients d’AEM as a Cloud Service.
+Si la fonctionnalité d’adresse IP dédiée n’est pas activée, le trafic provenant d’AEM as a Cloud Service passe par un ensemble partagé d’adresses IP. Ces adresses IP sont utilisées par d’autres personnes clientes d’AEM as a Cloud Service.
 
-La configuration d’une adresse IP de sortie dédiée est similaire à la [sortie de port flexible](#flexible-port-egress). La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique après l’application de cette configuration. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer, mais si elle le doit malgré tout, vous recevez une notification avancée.
+La configuration de l’adresse IP de sortie dédiée est identique à celle d’une [sortie de port flexible](#flexible-port-egress). La principale différence est que le trafic sortira toujours d’une adresse IP dédiée et unique après l’application de cette configuration. Pour trouver cette adresse IP, utilisez un résolveur DNS pour identifier l’adresse IP associée à `p{PROGRAM_ID}.external.adobeaemcloud.com`. L’adresse IP n’est pas censée changer, mais si elle le doit malgré tout, vous recevez une notification avancée.
 
 >[!TIP]
 >
->Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, choisissez une sortie de port flexible si aucune adresse IP spécifique n’est requise. En effet, Adobe peut optimiser les performances du trafic de sortie de port flexible.
+>Lorsque vous hésitez entre une adresse IP de sortie de port flexible et de sortie dédiée, choisissez une sortie de port flexible si aucune adresse IP spécifique n’est requise. Cela est dû au fait qu’Adobe peut optimiser les performances du trafic de sortie de port flexible.
 
 >[!NOTE]
 >
 >Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021 (à savoir la version de septembre 2021), votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
 >
->Ce résultat inclut le HTTP/1.1 et le HTTP/2 lorsqu’ils sont chiffrés. En outre, un point d’entrée de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
+>Ce résultat inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. De plus, un point d’entrée de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
 
 >[!NOTE]
 >
@@ -345,7 +345,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td>Via la configuration du proxy http, configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard</td>
+    <td>Par la configuration du proxy http, configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard</td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -383,7 +383,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### Utilisation de la fonctionnalité {#feature-usage}
 
-Cette fonctionnalité est compatible avec les bibliothèques ou le code Java™ générant du trafic sortant, à condition que les propriétés système Java™ standard soient utilisées pour les configurations de proxy. En pratique, cette approche devrait inclure la plupart des bibliothèques courantes.
+Cette fonctionnalité est compatible avec les bibliothèques ou le code Java™ générant du trafic sortant, à condition que les propriétés système Java™ standard soient utilisées pour les configurations de proxy. Dans la pratique, cette approche devrait inclure la plupart des bibliothèques courantes.
 
 Voici un exemple de code :
 
@@ -425,7 +425,7 @@ Pour contrôler que le trafic est effectivement sortant sur l’adresse IP dédi
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
-Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cette fonctionnalité peut s’avérer utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter à des fournisseurs SaaS tels qu’un fournisseur CRM qui prend en charge le VPN.
+Un VPN permet de se connecter à une infrastructure On-Premise ou à un centre de données à partir des instances de création, de publication ou d’aperçu. Cette fonctionnalité peut être utile, par exemple, pour sécuriser l’accès à une base de données. Il permet également de se connecter à des fournisseurs SaaS tels qu’un fournisseur CRM qui prend en charge le VPN.
 
 La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge. Consultez les informations de la colonne **Instructions de configuration basées sur l’itinéraire** dans [cette liste d’appareils](https://learn.microsoft.com/fr-fr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configurez l’appareil comme décrit dans le tableau.
 
@@ -448,13 +448,13 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 
 1. Dans l’assistant **Ajouter une infrastructure réseau** qui démarre, sélectionnez **Réseau privé virtuel** et fournissez les informations nécessaires avant de cliquer sur **Continuer**.
 
-   * **Région** - Région dans laquelle l’infrastructure doit être créée.
+   * **Région** : région dans laquelle l’infrastructure doit être créée.
    * **Espace d’adresses** : l’espace d’adresses ne peut être qu’un /26 CIDR (64 adresses IP) ou une plage d’adresses IP plus grande dans votre espace client.
       * Cette valeur ne peut pas être modifiée ultérieurement.
-   * **Informations DNS** - Liste de résolveurs DNS distants.
+   * **Informations DNS** : liste de résolveurs DNS distants.
       * Appuyez sur `Enter` après avoir saisi une adresse de serveur DNS pour en ajouter une autre.
       * Cliquez sur le bouton `X` à la suite d’une adresse pour la supprimer.
-   * **Clé partagée** - Votre clé VPN prépartagée.
+   * **Clé partagée** : votre clé prépartagée VPN.
       * Sélectionnez **Afficher la clé partagée** pour afficher la clé afin de pouvoir vérifier sa valeur.
 
    ![Configuration du VPN](assets/advanced-networking-ui-vpn.png)
@@ -465,9 +465,9 @@ La plupart des appareils VPN dotés de la technologie IPSec sont pris en charge.
 
 1. Dans la boîte de dialogue **Ajouter une connexion**, définissez votre connexion VPN, puis cliquez sur **Enregistrer**.
 
-   * **Nom de la connexion** - Nom descriptif de votre connexion VPN, que vous avez fourni à l’étape précédente et qui peut être mis à jour ici.
-   * **Address** : adresse IP de l’appareil VPN.
-   * **Espace d’adresse** - Les plages d’adresses IP à acheminer via le VPN.
+   * **Nom de connexion** : nom explicite de votre connexion VPN, que vous avez fourni à l’étape précédente et que vous pouvez mettre à jour ici.
+   * **Adresse** : adresse IP du périphérique VPN.
+   * **Emplacement de l’adresse** : plages d’adresses IP à acheminer par le VPN.
       * Appuyez sur `Enter` après avoir saisi une plage pour en ajouter une autre.
       * Cliquez sur le bouton `X` à la suite d’une plage pour la supprimer.
    * **Politique de sécurité IP** : ajustez les valeurs par défaut selon les besoins.
@@ -486,9 +486,9 @@ Un nouvel enregistrement s’affiche sous l’en-tête **Infrastructure réseau*
 
 ### Configuration de l’API {#configuring-vpn-api}
 
-Une fois par programme, le point d’entrée POST `/program/<programId>/networkInfrastructures` est appelé. Il transmet une payload d’informations de configuration. Ces informations incluent la valeur de **vpn** pour le paramètre `kind`, la région, l’espace d’adresse (liste des CIDR ; notez que cette valeur ne peut pas être modifiée plus tard), les résolveurs DNS (pour résoudre les noms dans votre réseau). Cela inclut également des informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité IP. Le point d’entrée répond avec l’`network_id` et d’autres informations, y compris le statut.
+Une fois par programme, le point d’entrée POST `/program/<programId>/networkInfrastructures` est appelé. Il transmet une payload d’informations de configuration. Ces informations incluent la valeur **vpn** pour le paramètre `kind`, la région, l’espace d’adresses (liste des CIDR ; notez que cela ne peut pas être modifié ultérieurement), les résolveurs DNS (pour résoudre les noms dans votre réseau). Cela inclut également des informations de connexion VPN telles que la configuration de la passerelle, la clé VPN partagée et la politique de sécurité IP. Le point d’entrée répond avec l’`network_id` et d’autres informations, y compris le statut.
 
-Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement entre 45 et 60 minutes. La méthode GET de l’API peut être appelée pour renvoyer le statut qui passe en fin de compte de `creating` à `ready`. Consultez la documentation de l’API pour connaître tous les statuts.
+Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement de 45 à 60 minutes. La méthode GET de l’API peut être appelée pour renvoyer le statut qui passe en fin de compte de `creating` à `ready`. Consultez la documentation de l’API pour connaître tous les statuts.
 
 >[!TIP]
 >
@@ -532,21 +532,21 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP est comprise dans la plage d’adresses de la passerelle VPN <i>adresse</i> et par la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard)</td>
+    <td>Si l’adresse IP est comprise dans la plage d’espace d’<i>adresses de la passerelle VPN</i>, et par la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard).</td>
     <td>N’importe lequel</td>
     <td>Par le VPN</td>
     <td><code>10.0.0.1:443</code><br>Il peut également s’agir d’un nom d’hôte.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP n’est pas comprise dans la plage d’espace d’adresse de la passerelle <i>VPN</i> et par la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard)</td>
+    <td>Si l’adresse IP n’est pas comprise dans la plage d’<i>espace d’adresses de la passerelle VPN</i>, et par la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java™ standard).</td>
     <td>N’importe lequel</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Ignore la configuration du proxy http (par exemple, si elle est explicitement supprimée de la bibliothèque cliente HTTP Java™ standard ou si vous utilisez une bibliothèque Java™ qui ignore la configuration du proxy standard)
+    <td>Ignore la configuration du proxy http (par exemple, si elle est explicitement supprimée de la bibliothèque cliente HTTP Java™ standard ou si vous utilisez une bibliothèque Java™ qui ignore la configuration du proxy standard).
 </td>
     <td>80 ou 443</td>
     <td>Via les adresses IP partagées du cluster</td>
@@ -554,7 +554,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Ignore la configuration du proxy http (par exemple, si elle est explicitement supprimée de la bibliothèque cliente HTTP Java™ standard ou si vous utilisez une bibliothèque Java™ qui ignore la configuration du proxy standard)</td>
+    <td>Ignore la configuration du proxy http (par exemple, si elle est explicitement supprimée de la bibliothèque cliente HTTP Java™ standard ou si vous utilisez une bibliothèque Java™ qui ignore la configuration du proxy standard).</td>
     <td>Ports autres que 80 ou 443</td>
     <td>Bloquée</td>
     <td></td>
@@ -593,20 +593,17 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
 <thead>
   <tr>
     <th>Modèle de domaine</th>
-    <th>Destination de la sortie (à partir d’AEM)</th>
-    <th>Destination de l’entrée (vers AEM)</th>
+    <th>Description</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
-    <td>Adresse IP sortante dédiée au trafic envoyé vers Internet plutôt que par des réseaux privés </td>
-    <td>Les connexions à partir du VPN s’afficheraient sur le réseau de diffusion de contenu comme provenant de cette adresse IP. Pour autoriser uniquement les connexions à partir du VPN à accéder à AEM, configurez Cloud Manager pour autoriser uniquement cette adresse IP et bloquer tout le reste. Pour plus d’informations, consultez la section « Restreindre le VPN aux connexions entrantes ».</td>
+    <td>Adresse IP sortante dédiée au trafic allant à Internet plutôt que via des réseaux privés.</td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>S/O</td>
-    <td>L’adresse IP de la passerelle VPN côté AEM. Votre équipe d’ingénierie réseau peut utiliser cette adresse IP pour autoriser uniquement les connexions VPN à votre passerelle VPN à partir d’une adresse IP spécifique. </td>
+    <td>L’adresse IP de la passerelle VPN côté AEM. Votre équipe d’ingénierie réseau peut l’utiliser pour autoriser uniquement les connexions VPN à votre passerelle VPN à partir d’une adresse IP spécifique. </td>
   </tr>
 </tbody>
 </table>
@@ -617,14 +614,14 @@ Une fois que vous avez configuré une option de mise en réseau avancée pour un
 
 Lorsque vous activez une configuration de mise en réseau avancée pour un environnement, vous pouvez également activer le transfert de port facultatif et les hôtes non proxy. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
-* **Transfert de port** - Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, mais uniquement si le protocole http ou https n’est pas utilisé.
+* **Transfert de port** : les règles de transfert de port doivent être déclarées pour les ports de destination autres que le port 80/443, mais uniquement si vous n’utilisez pas le protocole http ou https.
    * Les règles de transfert de port sont définies en spécifiant l’ensemble des hôtes de destination (noms ou adresses IP et ports).
-   * La connexion client qui utilise le port 80/443 via http / https doit toujours utiliser les paramètres proxy dans sa connexion pour que les propriétés de mise en réseau avancée soient appliquées à la connexion.
+   * La connexion du client qui utilise le port 80/443 via http/https doit toujours utiliser les paramètres proxy dans sa connexion pour que les propriétés de la mise en réseau avancée soient appliquées à la connexion.
    * Pour chaque hôte de destination, vous devez mapper le port de destination prévu à un port entre 30 000 et 30 999.
    * Les règles de transfert de port sont disponibles pour tous les types de mise en réseau avancée.
 
 * **Hôtes non proxy** : les hôtes non proxy vous permettent de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée.
-   * Cette approche peut s’avérer utile, car le trafic passant par les adresses IP partagées peut être encore optimisé.
+   * Cette approche peut se révéler utile, car le trafic sortant par les adresses IP partagées peut être optimisé davantage.
    * Les hôtes non proxy ne sont disponibles que pour les adresses IP de sortie dédiées et les types de mise en réseau avancée de VPN.
 
 >[!NOTE]
@@ -641,7 +638,7 @@ Lorsque vous activez une configuration de mise en réseau avancée pour un envir
 
    ![Sélection de l’environnement pour pouvoir activer la mise en réseau avancée](assets/advanced-networking-ui-enable-environments.png)
 
-1. La boîte de dialogue **Configurer la mise en réseau avancée** s’ouvre.
+1. La boîte de dialogue **Configuration de la mise en réseau avancée** s’ouvre.
 
 1. Sur l’onglet **Hôtes non proxy**, pour les adresses IP de sortie dédiées et les VPN, vous pouvez éventuellement définir un ensemble d’hôtes. Ces hôtes définis doivent être acheminés via une plage d’adresses IP partagées plutôt que via l’adresse IP dédiée, en fournissant le nom d’hôte dans le champ **Hôte non proxy** et en cliquant sur **Ajouter**.
 
@@ -674,7 +671,7 @@ L’API doit répondre en quelques secondes seulement et indiquer le statut `upd
 
 Les règles de transfert de port par environnement peuvent être mises à jour en invoquant à nouveau le point d’entrée `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`, en veillant à inclure l’ensemble complet des paramètres de configuration, plutôt qu’un sous-ensemble.
 
-Les types de mise en réseau avancée de VPN et les adresses IP de sortie dédiées prennent en charge un paramètre `nonProxyHosts`. Cette prise en charge vous permet de déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée. Les URL `nonProxyHost` peuvent être calquées sur `example.com` ou `*.example.com`, le caractère générique n’étant pris en charge qu’au début du domaine.
+Les types de mise en réseau avancée de VPN et les adresses IP de sortie dédiées prennent en charge un paramètre `nonProxyHosts`. Vous pouvez ainsi déclarer un ensemble d’hôtes qui doivent passer par une plage d’adresses IP partagées plutôt que par l’adresse IP dédiée. Les URL `nonProxyHost` peuvent suivre le modèle de `example.com` ou `*.example.com`, le caractère générique n’étant pris en charge qu’au début du domaine.
 
 Notez que même en l’absence de règles de routage du trafic de l’environnement (hôtes ou contournements), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit toujours être appelé mais avec une payload vide.
 
@@ -736,7 +733,7 @@ Une fois l’infrastructure réseau créée pour un programme, seules les propri
 
 1. Sur la page **Aperçu du programme**, accédez à l’onglet **Environnements**.
 1. Dans le volet de gauche, cliquez sur **Infrastructure réseau**.
-1. Cliquez sur ![icône Plus, points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de l’infrastructure à supprimer.
+1. Cliquez sur l’icône Plus ![ contenant des points de suspension ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard de l’infrastructure que vous souhaitez supprimer.
 
    ![Sélection de la modification ou de la suppression de la mise en réseau avancée au niveau du programme](assets/advanced-networking-ui-delete-infrastructure.png)
 
@@ -746,7 +743,7 @@ Une fois l’infrastructure réseau créée pour un programme, seules les propri
 
    * Si vous choisissez **Modifier**, l’assistant **Modifier l’infrastructure réseau** s’ouvre. Modifiez selon les besoins en suivant les étapes décrites lors de la création de l’infrastructure.
 
-   * Si vous choisissez **Supprimer**, confirmez la suppression dans la boîte de dialogue **Supprimer la configuration réseau** avec **Supprimer** ou abandonnez avec **Annuler**.
+   * Si vous choisissez **Supprimer**, confirmez la suppression dans la boîte de dialogue de **Suppression de la configuration réseau** avec **Supprimer** ou abandonnez avec **Annuler**.
 
 Les modifications sont répercutées sur l’onglet **Environnements**.
 
@@ -756,7 +753,7 @@ Pour **supprimer** l’infrastructure réseau d’un programme, appelez `DELETE 
 
 ## Modifier le type d’infrastructure de mise en réseau avancée d’un programme {#changing-program}
 
-Il n’est possible de configurer qu’un seul type d’infrastructure réseau avancée à la fois pour un programme. L’infrastructure réseau avancée doit être une sortie de port flexible, une adresse IP de sortie dédiée ou un VPN.
+Il n’est possible de configurer qu’un seul type d’infrastructure réseau avancée à la fois pour un programme. Créez le type d’infrastructure de mise en réseau avancée dont vous avez besoin, au choix : sortie de port flexible, adresse IP de sortie dédiée ou VPN.
 
 Si vous décidez que vous avez besoin d’un autre type d’infrastructure de mise en réseau avancée que celui que vous avez déjà configuré, supprimez le type existant et créez-en un nouveau. Procédez comme suit :
 
@@ -792,14 +789,14 @@ Si une configuration de mise en réseau avancée est déjà activée dans la ré
 
 La procédure est essentiellement similaire aux instructions précédentes. Cependant, si l’environnement de production n’a pas encore été activé pour la mise en réseau avancée, vous avez la possibilité de tester la configuration en l’activant d’abord dans un environnement d’évaluation :
 
-1. Créez une infrastructure réseau pour toutes les régions par le biais d’un appel POST à l’API [Cloud Manager Create Network Infrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON de la payload par rapport à la région principale est la propriété region.
+1. Créez une infrastructure de mise en réseau pour toutes les régions à l’aide d’un appel POST à l’[API de création d’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). La seule différence dans la configuration JSON du payload par rapport à la région principale est la propriété de la région.
 1. Pour l’environnement d’évaluation, activez et configurez l’environnement mis en réseau avancé en exécutant `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Pour plus d’informations, voir la [documentation de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
 1. Si nécessaire, verrouillez l’infrastructure externe, de préférence par le nom de domaine complet (par exemple, `p1234.external.adobeaemcloud.com`). Vous pouvez également le faire par adresse IP
 1. Si l’environnement d’évaluation fonctionne comme prévu, activez et configurez la configuration de mise en réseau avancée de l’environnement pour la production.
 
 #### VPN {#vpn-regions}
 
-La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence réside dans le fait que la propriété region est configurée différemment de la région principale. De plus, vous pouvez éventuellement configurer le champ `connections.gateway` . La configuration peut acheminer vers un autre point d’entrée VPN opéré par votre entreprise, plus proche géographiquement de la nouvelle région.
+La procédure est presque identique aux instructions d’adresses IP sortantes dédiées. La seule différence réside dans le fait que la propriété de région est configurée différemment de la région principale. De plus, vous pouvez éventuellement configurer le champ `connections.gateway`. La configuration peut acheminer vers un autre point d’entrée VPN opéré par votre entreprise, plus proche géographiquement de la nouvelle région.
 
 ## Résolution des problèmes
 
@@ -807,33 +804,33 @@ Veuillez noter que les points suivants sont fournis à titre informatif et qu’
 
 ### Mise en pool de connexions {#connection-pooling-advanced-networking}
 
-La mise en pool de connexions est une technique personnalisée visant à créer et à maintenir un référentiel de connexions pouvant immédiatement servir à n’importe quel thread qui en a besoin. De nombreuses techniques de mise en pool de connexions sont disponibles sur différentes plateformes et ressources en ligne, chacune ayant ses mérites et ses considérations uniques. Adobe encourage les clients à étudier ces méthodologies afin d’identifier celle qui est la plus compatible avec l’architecture de leur système.
+La mise en pool de connexions est une technique personnalisée visant à créer et à maintenir un référentiel de connexions pouvant immédiatement servir à n’importe quel thread qui en a besoin. De nombreuses techniques de mise en pool de connexions sont disponibles sur différentes plateformes et ressources en ligne, chacune ayant ses mérites et ses considérations uniques. Nous encourageons notre clientèle à étudier ces méthodologies, afin d’identifier celle qui est le plus compatible avec l’architecture de ses système.
 
-La mise en œuvre d’une stratégie de mise en pool de connexions appropriée est une mesure proactive visant à corriger une supervision commune dans la configuration du système, ce qui entraîne souvent des performances sous-optimales. En établissant correctement un pool de connexions, Adobe Experience Manager (AEM) peut améliorer l’efficacité des appels externes. Cette approche permet non seulement de réduire la consommation des ressources, mais également d’atténuer le risque d’interruption des services et de réduire la probabilité de rencontrer des requêtes ayant échoué lors de la communication avec les serveurs en amont.
+La mise en œuvre d’une stratégie de mise en pool de connexions appropriée est une mesure proactive visant à corriger une supervision commune dans la configuration du système, ce qui entraîne souvent des performances sous-optimales. En établissant correctement un pool de connexions, Adobe Experience Manager (AEM) peut améliorer l’efficacité des appels externes. Cela permet non seulement de réduire la consommation des ressources, mais aussi d’atténuer le risque de perturbations du service et de réduire la probabilité de rencontrer des demandes en échec lors de la communication avec les serveurs en amont.
 
 Sur la base de ces informations, Adobe vous recommande de passer en revue votre configuration AEM actuelle. Envisagez également d’utiliser intentionnellement le pool de connexions avec vos paramètres de mise en réseau avancés. La gestion du nombre de connexions parallèles et la réduction des connexions obsolètes permettent d’optimiser les performances du réseau. Ces actions réduisent le risque que les serveurs proxy atteignent leurs limites de connexion. Cette mise en œuvre stratégique a donc pour but de réduire la probabilité que les demandes ne parviennent pas à des points d’entrée externes.
 
 #### Questions fréquentes sur les limites de connexion
 
-Lors de l’utilisation d’une mise en réseau avancée, le nombre de connexions est limité afin d’assurer la stabilité entre les environnements et d’empêcher les environnements inférieurs d’épuiser les connexions disponibles.
+Lors de l’utilisation de la mise en réseau avancée, le nombre de connexions est limité afin d’assurer la stabilité entre les environnements et d’empêcher que les environnements inférieurs n’épuisent les connexions disponibles.
 
 Les connexions sont limitées à 1 000 par instance AEM et des alertes sont envoyées aux clientes et clients lorsque le nombre atteint 750.
 
 ##### La limite de connexion est-elle appliquée uniquement au trafic sortant des ports non standard ou à tout le trafic sortant ?
 
-Cette limite concerne uniquement les connexions utilisant une mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une adresse IP de sortie dédiée ou d’un VPN).
+Cette limite s’applique uniquement aux connexions utilisant la mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une adresse IP de sortie dédiée ou d’un VPN).
 
-##### Il ne semble pas y avoir d&#39;augmentation significative du nombre de connexions sortantes. Pourquoi la notification est-elle reçue maintenant ?
+##### Il ne semble pas y avoir d’augmentation significative du nombre de connexions sortantes. Pourquoi la notification est-elle reçue maintenant ?
 
 Si le client ou la cliente crée des connexions de manière dynamique (par exemple, une ou plusieurs connexions pour chaque demande), une augmentation du trafic peut entraîner un pic de connexions.
 
-##### Une situation similaire aurait-elle pu se produire dans le passé sans déclencher d’alerte ?
+##### Une situation similaire aurait-elle pu se produire dans le passé sans déclencher d’alerte ?
 
 Les alertes ne sont envoyées que lorsque la limite basse est atteinte.
 
 ##### Que se passe-t-il si la limite maximale est atteinte ?
 
-Lorsque la limite stricte est atteinte, les nouvelles connexions sortantes d’AEM par le biais d’une mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une adresse IP de sortie dédiée ou d’un VPN) sont ignorées pour se protéger contre une attaque DoS.
+Lorsque la limite maximale est atteinte, les nouvelles connexions de sortie d’AEM par le biais d’une mise en réseau avancée (sortie sur des ports non standard, à l’aide d’une IP de sortie dédiée ou d’un VPN) seront abandonnées pour se protéger contre une attaque DoS.
 
 ##### La limite peut-elle être augmentée ?
 
@@ -841,20 +838,20 @@ Non, un grand nombre de connexions peut avoir un impact significatif sur les per
 
 ##### Les connexions sont-elles automatiquement fermées par le système AEM après un certain temps ?
 
-Oui, les connexions sont fermées au niveau de la JVM et à différents points de l’infrastructure réseau. Cependant, ce workflow est trop tard pour un service de production. Les connexions doivent être explicitement fermées lorsqu’elles ne sont plus nécessaires ou renvoyées au pool lors de l’utilisation du pool de connexions. Dans le cas contraire, la consommation de ressources est trop élevée et peut entraîner l’épuisement des ressources.
+Oui, les connexions sont fermées au niveau JVM et à différents points de l’infrastructure réseau. Cependant, ce workflow es trop tardif pour tout service de production. Les connexions doivent être explicitement fermées lorsqu’elles ne sont plus nécessaires ou renvoyées au pool lors de l’utilisation du pool de connexions. Sinon, la consommation des ressources est trop élevée et peut entraîner un épuisement des ressources.
 
 ##### Si la limite de connexion maximale est atteinte, cela affecte-t-il les licences et entraîne-t-il des coûts supplémentaires ?
 
 Non, cette limite n’est associée à aucune licence ni aucun coût. Il s’agit d’une limite technique.
 
-##### À quel point l’utilisation actuelle est-elle proche de la limite ? Quelle est la limite maximale autorisée ?
+##### À quel point l’utilisation actuelle est-elle proche de la limite ? Quelle est la limite maximale autorisée ?
 
 L’alerte est déclenchée lorsque le nombre de connexions dépasse 750. La limite maximale est de 1 000 connexions par instance AEM.
 
 ##### Cette limite s’applique-t-elle aux VPN ?
 
-Oui, la limite s’applique aux connexions utilisant une mise en réseau avancée, y compris les VPN.
+Oui, la limite s’applique aux connexions utilisant la mise en réseau avancée, y compris les VPN.
 
-##### La limite s’applique-t-elle toujours lors de l’utilisation d’une adresse IP sortante dédiée ?
+##### La limite s’applique-t-elle toujours lors de l’utilisation d’une adresse IP sortante dédiée ?
 
 Oui, la limite est toujours applicable si vous utilisez une adresse IP de sortie dédiée.
