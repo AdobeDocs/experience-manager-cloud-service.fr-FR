@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 69%
+source-wordcount: '1666'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Nouvelles fonctionnalités d’Experience Manager Sites {#new-sites}
 
-* L’[&#x200B; Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
+* [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) : les auteurs de contenu peuvent désormais créer et planifier des variations futures de contenu structuré à l’aide de lancements pour les fragments de contenu. La nouvelle console Fragments de contenu permet de créer, de modifier, de gérer et de planifier les lancements de fragments de contenu sous la forme de branches pour le contenu futur qui peut être synchronisé avec la branche source. Une nouvelle vue Diff offre une vue d’ensemble claire de toutes les modifications de contenu avant de valider un lancement pour une publication ultérieure.
 
-* [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) : l’onglet Lancements de la console Fragments de contenu vous permet de créer des lancements, de répertorier tous les lancements existants, de voir les propriétés clés et d’effectuer des actions sur celles-ci.
+* L’[ Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
