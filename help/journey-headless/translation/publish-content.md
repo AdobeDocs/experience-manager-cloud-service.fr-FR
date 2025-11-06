@@ -4,9 +4,9 @@ description: Découvrez comment publier votre contenu traduit et mettre à jour 
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ AEM est donc physiquement séparé en deux instances.
 1. L’instance **auteur** est le système sur lequel les auteurs et les administrateurs de contenu travaillent à créer et à gérer le contenu.
 1. L’instance de **publication** est le système qui diffuse le contenu aux consommateurs.
 
-Une fois le contenu créé sur l’instance d’auteur, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
+Une fois le contenu créé sur l’instance de création, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
 
 ## Publication de votre contenu traduit {#publishing}
 

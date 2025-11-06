@@ -3,8 +3,8 @@ title: AEM Developer Tools for Eclipse
 description: Découvrez comment utiliser les outils de développement AEM pour Eclipse, un plug-in Eclipse basé sur le plug-in Eclipse pour Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 38%
@@ -121,7 +121,7 @@ Pour créer l’exemple de projet, procédez comme suit :
 
    >[!TIP]
    >
-   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [&#x200B; Débogage à distance du SDK AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
+   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [ Débogage à distance du SDK AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
 
 1. Cliquez sur **Finish** (Terminer).
 
@@ -232,7 +232,7 @@ Eclipse télécharge les dépendances requises. Cela peut prendre un moment.
 
 Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations supplémentaires utiles :
 
-* Le guide d’utilisation [**Apache Sling IDE tooling for Eclipse** &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par les outils de développement AEM.
+* Le guide d’utilisation [**Apache Sling IDE tooling for Eclipse** ](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par les outils de développement AEM.
 * [Résolution des problèmes liés à l’outil IDE Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [Liste des problèmes connus](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 

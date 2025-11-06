@@ -3,7 +3,7 @@ title: Personnaliser l’application du sélecteur de ressources
 description: Utilisez des fonctions pour personnaliser le sélecteur de ressources dans votre application.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 25%
@@ -357,7 +357,7 @@ Utilisez le fragment de code suivant pour afficher un message toast pour l’uti
 
 Le sélecteur de ressources vous permet d’ajouter un filtre de sélecteur de balises. Il prend en charge un groupe de balises qui combine toutes les balises pertinentes à un groupe de balises particulier. En outre, il vous permet de sélectionner des balises supplémentaires correspondant à la ressource que vous recherchez. De plus, vous pouvez également définir les groupes de balises par défaut sous le filtre d’appel contextuel que vous utilisez le plus souvent, afin qu’ils soient accessibles en déplacement.
 
->
+>[!NOTE]
 >
 > * Vous devez ajouter un fragment de code d’appel contextuel pour activer le filtre de balisage dans la recherche.
 > * Il est obligatoire d’utiliser la propriété name correspondant au type de groupe de balises `(property=xcm:keywords.id=)`.

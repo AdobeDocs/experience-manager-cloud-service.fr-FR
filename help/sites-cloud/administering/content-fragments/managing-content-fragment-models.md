@@ -2,10 +2,10 @@
 title: Gestion des modèles de fragment de contenu
 description: Découvrez comment gérer les modèles de fragment de contenu ; ils servent de base pour vos fragments de contenu dans AEM, ce qui vous permet de créer du contenu structuré à utiliser dans une diffusion découplée ou dans la création de pages.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 35%
@@ -222,7 +222,7 @@ Sélectionnez par exemple **Activé** dans la colonne **Statut**. Une fois cette
    >
    >L&#39;option **Créer** ne sera disponible que dans les cas suivants :
    >
-   >* Si l[utilisation des modèles de fragment de contenu a été activée &#x200B;](/help/sites-cloud/administering/content-fragments/setup.md)
+   >* Si l[utilisation des modèles de fragment de contenu a été activée ](/help/sites-cloud/administering/content-fragments/setup.md)
    >* lorsque vous avez sélectionné le dossier dans lequel vous souhaitez créer le modèle.
 
 1. Sélectionnez le **Chemin** de la configuration et spécifiez le **Nom**.
@@ -242,7 +242,7 @@ Si vous saisissez d’abord le **Titre**, le **Nom** est généré à partir de 
 
    >[!NOTE]
    >
-   >Voir [&#x200B; Modèle de fragment de contenu - Propriétés &#x200B;](#model-properties) pour plus d’informations.
+   >Voir [ Modèle de fragment de contenu - Propriétés ](#model-properties) pour plus d’informations.
 
    ![Titre et description](assets/cf-managing-content-fragment-models-create.png)
 

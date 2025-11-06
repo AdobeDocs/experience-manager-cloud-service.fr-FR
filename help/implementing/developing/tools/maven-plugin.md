@@ -1,19 +1,19 @@
 ---
-title: Plug-in Maven Content Package d’Adobe
-description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
+title: Plug-in de module de contenu Maven d’Adobe
+description: Utilisation du plug-in de module de contenu Maven pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 88%
 
 ---
 
-# Plug-in Maven Content Package d’Adobe {#adobe-content-package-maven-plugin}
+# Plug-in de module de contenu Maven d’Adobe {#adobe-content-package-maven-plugin}
 
-Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
+Le plug-in de module de contenu Maven d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 
 Le déploiement des packages construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe et permet l’automatisation des tâches normalement exécutées à l’aide d’AEM [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
 
@@ -41,15 +41,15 @@ AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en ma
 
 >[!TIP]
 >
->Consultez l’article sur la [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Consultez l’article sur la [structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
 
-## Obtention du plug-in Maven Content Package {#obtaining-the-content-package-maven-plugin}
+## Obtention du plug-in de module de contenu Maven {#obtaining-the-content-package-maven-plugin}
 
 Le module externe est disponible à partir du [référentiel central Maven](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
-## Objectifs et paramètres du plug-in Maven Content Package
+## Objectifs et paramètres du plug-in de module de contenu Maven
 
-Pour utiliser le plug-in Content Package Maven, ajoutez l’élément de plug-in suivant à l’élément build de votre fichier POM :
+Pour utiliser le plug-in de module de contenu Maven, ajoutez l’élément de plug-in suivant à l’élément de compilation de votre fichier POM :
 
 ```xml
 <plugin>
@@ -62,11 +62,11 @@ Pour utiliser le plug-in Content Package Maven, ajoutez l’élément de plug-in
 </plugin>
 ```
 
-Pour permettre à Maven de télécharger le plug-in, utilisez le profil fourni dans la section [Obtention du plug-in Content Package Maven](#obtaining-the-content-package-maven-plugin) sur cette page.
+Pour permettre à Maven de télécharger le plug-in, utilisez le profil fourni dans la section [Obtention du plug-in de module de contenu Maven](#obtaining-the-content-package-maven-plugin) sur cette page.
 
-## Version du plug-in Content Package Maven : {#goals-of-the-content-package-maven-plugin}
+## Version du plug-in de module de contenu Maven : {#goals-of-the-content-package-maven-plugin}
 
-Les objectifs et les paramètres d’objectif fournis par le plug-in Content Package sont décrits dans les sections qui suivent. Les paramètres qui sont décrits dans la section Paramètres communs peuvent être utilisés pour la plupart des objectifs. Les paramètres qui s’appliquent à un objectif sont décrits dans la section consacrée à l’objectif en question.
+Les objectifs et les paramètres d’objectif fournis par le plug-in de module de contenu sont décrits dans les sections qui suivent. Les paramètres qui sont décrits dans la section Paramètres communs peuvent être utilisés pour la plupart des objectifs. Les paramètres qui s’appliquent à un objectif sont décrits dans la section consacrée à l’objectif en question.
 
 ### Préfixe du plug-in {#plugin-prefix}
 
@@ -98,15 +98,15 @@ Les paramètres contenus dans le tableau ci-après sont communs à tous les obje
 | `name` | `String` | `build` : Oui, `install` : Non, `rm` : Oui | `build` : Pas de valeur par défaut, `install` : Valeur de la propriété `artifactId` du projet Maven | Nom du package sur lequel exécuter une action | Tous les objectifs, à l’exception de `ls` |
 | `password` | `String` | Oui | `admin` | Mot de passe utilisé pour l’authentification avec AEM | Tous les objectifs, à l’exception de `package` |
 | `serverId` | `String` | Non | ID du serveur à partir duquel récupérer le nom d’utilisateur et le mot de passe pour l’authentification | Tous les objectifs, à l’exception de `package` |
-| `targetURL` | `String` | Oui | `http://localhost:4502/crx/packmgr/service.jsp` | URL de l’API du service HTTP du gestionnaire de packages AEM | Tous les objectifs, à l’exception de `package` |
-| `timeout` | `int` | Non | `5` | Délai de connexion, exprimé en secondes, pour communiquer avec le service du gestionnaire de packages | Tous les objectifs, à l’exception de `package` |
-| `useProxy` | `boolean` | Non | `true` | La valeur `true` entraîne l’utilisation par Maven de la première configuration de proxy active trouvée en réponse aux requêtes de proxy au gestionnaire de packages. | Tous les objectifs, à l’exception de `package` |
+| `targetURL` | `String` | Oui | `http://localhost:4502/crx/packmgr/service.jsp` | URL de l’API du service HTTP du gestionnaire de modules AEM | Tous les objectifs, à l’exception de `package` |
+| `timeout` | `int` | Non | `5` | Délai de connexion, exprimé en secondes, pour communiquer avec le service du gestionnaire de modules | Tous les objectifs, à l’exception de `package` |
+| `useProxy` | `boolean` | Non | `true` | La valeur `true` entraîne l’utilisation par Maven de la première configuration de proxy active trouvée en réponse aux requêtes de proxy au gestionnaire de modules. | Tous les objectifs, à l’exception de `package` |
 | `userId` | `String` | Oui | `admin` | Nom d’utilisateur à authentifier avec AEM | Tous les objectifs, à l’exception de `package` |
 | `verbose` | `boolean` | Non | `false` | Active ou désactive la journalisation documentée | Tous les objectifs, à l’exception de `package` |
 
 ### build {#build}
 
-Crée un package de contenu déjà défini sur une instance AEM.
+Crée un module de contenu déjà défini sur une instance AEM.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ En plus des paramètres suivants, consultez les descriptions de la section [Para
 
 ### ls {#ls}
 
-Répertorie les packages déployés dans le [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md).
+Répertorie les packages déployés dans le [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 #### Paramètres {#parameters-2}
 
@@ -149,7 +149,7 @@ Tous les paramètres de l’objectif sont décrits dans la section [Paramètres 
 
 ### rm {#rm}
 
-Supprime un package du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md).
+Supprime un package du [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 #### Paramètres {#parameters-3}
 
@@ -177,7 +177,7 @@ Tous les paramètres de l’objectif uninstall sont décrits dans la section [Pa
 
 ## Inclusion d’une image de miniature ou d’un fichier de propriétés dans le package {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Remplacez les fichiers de configuration du package par défaut afin de personnaliser les propriétés du package. Incluez, par exemple, une image miniature pour différencier le package dans le [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md).
+Remplacez les fichiers de configuration du package par défaut afin de personnaliser les propriétés du package. Incluez, par exemple, une image miniature pour différencier le package dans le [gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 Les fichiers sources peuvent se trouver n’importe où dans le système de fichiers. Dans le fichier POM, définissez les ressources de création pour copier les fichiers sources dans `target/vault-work/META-INF` à des fins d’inclusion dans le package.
 
@@ -215,4 +215,4 @@ Le dernier archétype de projet AEM met en œuvre la structure de package des bo
 
 >[!TIP]
 >
->Consultez l’article sur la [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.
+>Consultez l’article sur la [structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service et la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Les deux implémentations sont entièrement prises en charge pour AEM 6.5.

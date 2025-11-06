@@ -4,14 +4,14 @@ description: Découvrez comment créer des champs de formulaire intelligents ave
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
-
 
 # Champs intelligents améliorés par LLM dans Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -47,10 +47,10 @@ Créez des champs basés sur l’emplacement avec des données géographiques et
 
 **Aéroports internationaux avec codes IATA :**
 
-    Ajouter un menu déroulant pour les aéroports de départ avec tous les principaux aéroports internationaux
-    Ajouter le champ de l&#39;aéroport d&#39;arrivée avec les codes IATA et les noms complets
-    Créer un champ pour l&#39;aéroport le plus proche de l&#39;emplacement de l&#39;utilisateur
-    Ajouter une sélection de gares pour les villes européennes
+    Ajoutez un menu déroulant pour les aéroports de départ avec tous les principaux aéroports internationaux
+    Ajoutez le champ de l’aéroport d&#39;arrivée avec les codes IATA et les noms complets
+    Créez un champ pour l’aéroport le plus proche de l’emplacement de l’utilisateur ou de l’utilisatrice
+    Ajoutez une sélection de gares pour les villes européennes
 
 **Exemples d’invites :**
 
@@ -62,11 +62,11 @@ Créez des champs basés sur l’emplacement avec des données géographiques et
 
 **Pays, états et provinces :**
 
-    Ajouter une liste complète des États américains avec des abréviations
-    Créer une liste déroulante de pays avec des codes ISO et des noms complets
-    Ajouter un champ pour les grandes villes du monde avec des fuseaux horaires
-    Inclure une liste déroulante des provinces et territoires canadiens
-    Ajouter un champ pour les comtés et zones postales du Royaume-Uni
+    Ajoutez une liste complète des États américains avec des abréviations
+    Créez une liste déroulante de pays avec des codes ISO et des noms complets
+    Ajoutez un champ pour les grandes villes du monde avec des fuseaux horaires
+    Incluez une liste déroulante des provinces et territoires canadiens
+    Ajoutez un champ pour les comtés et zones postales du Royaume-Uni
 
 **Exemples d’invites :**
 
@@ -84,10 +84,10 @@ Tirez parti de classifications professionnelles et de données professionnelles 
 **Types d’entités métier et métier :**
 
     Ajoutez un champ pour la classification des industries avec les codes SCIAN
-    Créez une liste déroulante des types d&#39;entités commerciales (LLC, Corporation, Société de personnes, etc.)
-    Ajouter un champ pour les catégories de taille d’entreprise (démarrage, PME, entreprise)
-    Inclure la sélection de service pour les grandes organisations
-    Ajouter un champ pour les types de services professionnels
+    Créez une liste déroulante des types d’entités commerciales (SARL, société, partenariat, etc.)
+    Ajoutez un champ pour les catégories de taille d’entreprise (startup, PME, société)
+    Incluez la sélection de service pour les grandes organisations
+    Ajoutez un champ pour les types de services professionnels
 
 **Exemples d’invites :**
 
@@ -99,7 +99,7 @@ Tirez parti de classifications professionnelles et de données professionnelles 
 
 **Titres de poste et certifications :**
 
-    Ajoutez un champ pour les titres de poste avec des rôles courants du secteur
+    Ajoutez un champ pour les intitulés de poste avec des rôles courants du secteur
     Créez une liste déroulante des certifications professionnelles par champ
     Incluez les niveaux de formation avec les types de diplômes
     Ajoutez un champ pour les périodes d’expérience
@@ -119,11 +119,11 @@ Accédez à des codes, des classifications et des informations réglementaires n
 
 **Informations sur la devise, la taxe et le paiement :**
 
-    Ajouter un champ pour les codes devise avec des symboles et des taux de change
-    Créer une liste déroulante des types d&#39;ID taxe par pays
-    Inclure un champ pour les types de documents juridiques
-    Ajouter des options de mode de paiement avec des fonctions de sécurité
-    Créer une sélection pour les établissements bancaires par pays
+    Ajoutez un champ pour les codes de devise avec des symboles et des taux de change
+    Créez une liste déroulante des types d’identifiants fiscaux par pays
+    Incluez un champ pour les types de documents juridiques
+    Ajoutez des options de mode de paiement avec des fonctions de sécurité
+    Créez une sélection pour les établissements bancaires par pays
 
 **Exemples d’invites :**
 
@@ -135,10 +135,10 @@ Accédez à des codes, des classifications et des informations réglementaires n
 
 **Formats et protocoles de fichiers :**
 
-    Ajout d’une liste déroulante de types de format de fichier avec les extensions
-    Inclusion des options de protocole réseau
-    Ajout d’un champ pour les types et versions de base de données
-    Création d’une sélection pour les méthodes d’authentification d’API
+    Ajoutez une liste déroulante des types de formats de fichiers avec leurs extensions
+    Incluez des options de protocoles réseau
+    Ajoutez un champ pour les types et les versions de bases de données
+    Créez une sélection pour les méthodes d’authentification d’API
 
 **Exemples d’invites :**
 
@@ -154,11 +154,11 @@ Données médicales et médicales spécialisées pour les formulaires spécifiqu
 
 **Spécialités et données médicales :**
 
-    Ajouter un champ pour les spécialités médicales
+    Ajoutez un champ pour les spécialités médicales
     Créer une liste déroulante de médicaments courants avec des noms génériques
-    Inclure un champ pour les types de fournisseurs d’assurance
-    Ajouter une sélection pour les relations de contact en cas d’urgence médicale
-    Créer un champ pour les restrictions alimentaires et les allergies
+    Incluez un champ pour les types de compagnies d’assurance
+    Ajoutez une sélection pour les relations de contact en cas d’urgence médicale
+    Créez un champ pour les restrictions alimentaires et les allergies
 
 **Exemples d’invites :**
 
@@ -174,11 +174,11 @@ Champs de date et d’heure intelligents avec contexte commercial et intelligenc
 
 **Heures d’ouverture et planification :**
 
-    Ajouter un champ pour les heures ouvrables avec gestion des fuseaux horaires
-    Créer une liste déroulante des jours fériés par pays
-    Inclure des options saisonnières avec périodes
-    Ajouter un champ pour la réservation de salle de conférence avec disponibilité
-    Créer une sélection pour les modèles de réunion récurrents
+    Ajoutez un champ pour les heures ouvrables avec gestion des fuseaux horaires
+    Créez une liste déroulante des jours fériés par pays
+    Incluez des options saisonnières avec des périodes
+    Ajoutez un champ pour la réservation de salle de conférence avec des disponibilités
+    Créez une sélection pour les modèles de réunion récurrents
 
 **Exemples d’invites :**
 
@@ -194,11 +194,11 @@ Le commerce électronique et les domaines axés sur les services avec une catég
 
 **Données de produit et de service :**
 
-    Ajouter un champ pour les catégories de produits avec des sous-catégories
-    Créer une liste déroulante de modes d’expédition avec des estimations de diffusion
-    Inclure un champ pour les options de politique de retour
-    Ajouter une sélection pour les niveaux de priorité des clients
-    Créer un champ pour les cycles de facturation des abonnements
+    Ajoutez un champ pour les catégories de produits avec des sous-catégories
+    Créez une liste déroulante de modes d’expédition avec des estimations des livraisons
+    Incluez un champ pour les options de politique de retour
+    Ajoutez une sélection pour les niveaux de priorité des clientes et clients
+    Créez un champ pour les cycles de facturation des abonnements
 
 **Exemples d’invites :**
 
@@ -296,4 +296,3 @@ Combinez les connaissances LLM avec les données de votre organisation :
 * [Création de formulaires optimisée par l’IA](forms-experience-builder-prompt-examples-library.md)
 * [Création de règles et logique commerciale](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Envoi et intégration du formulaire](form-submission-integration.md)
-

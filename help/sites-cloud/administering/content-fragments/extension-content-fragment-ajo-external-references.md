@@ -2,15 +2,15 @@
 title: Utilisation de l’extension de références externes AJO de fragments de contenu
 description: En savoir plus sur l’extension Références externes AJO de fragments de contenu
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
 
 ---
-
 
 # Extension Références externes AJO de fragments de contenu {#content-fragment-external-references-extension}
 
@@ -30,9 +30,9 @@ Par exemple, pour utiliser l’extension avec AJO :
 
 >[!NOTE]
 >
->Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/integrations/aem-fragments).
+>Voir aussi [Intégration d’AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
-1. Ouvrez la [&#x200B; Console Fragments de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
+1. Ouvrez la [ Console Fragments de contenu ](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
 1. Accédez à votre fragment de contenu : fragment qui a été créé et utilisé sur différents canaux AJO.
 

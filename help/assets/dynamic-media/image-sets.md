@@ -1,30 +1,30 @@
 ---
-title: Visionneuses d’images
-description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
+title: Ensembles d’images
+description: Découvrez comment utiliser des ensemble d’images dans Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2145'
 ht-degree: 97%
 
 ---
 
-# Visionneuses d’images {#image-sets}
+# Ensembles d’images {#image-sets}
 
-Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
+Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les ensembles d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
-Les visionneuses d’images sont désignées par une bannière comportant le mot `IMAGESET`. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, est sur la bannière. En outre, la dernière date de modification, indiquée par l’icône **[!UICONTROL Crayon]**, s’affiche.
+Les ensembles d’images sont désignés par une bannière comportant le mot `IMAGESET`. En outre, si l’ensemble d’images est publié, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, figure sur la bannière. En outre, la dernière date de modification, indiquée par l’icône **[!UICONTROL Crayon]**, s’affiche.
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
-Dans une visionneuse d’images, vous pouvez également créer des échantillons en créant une visionneuse d’images et en ajoutant des miniatures.
+Dans un ensemble d’images, vous pouvez également créer des échantillons en créant un ensemble d’images et en ajoutant des miniatures.
 
-Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
+Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer un ensemble d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
 
-Supposons que vous souhaitiez présenter des images de casquettes avec des visières de couleurs différentes ; les visières sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise avec une visière rouge, une avec une verte, et une avec une bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
+Supposons que vous souhaitiez présenter des images de casquettes avec des visières de couleurs différentes ; les visières sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise avec une visière rouge, une avec une verte, et une avec une bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs et utilisatrices cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratique
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
-## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
+## Démarrage rapide : ensembles d’images {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
 1. Facultatif. [Créez un paramètre prédéfini d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md) et appliquez-le à un nouveau dossier dans lequel vos images de visionneuse à 360° seront chargées.
 
-   Un paramètre prédéfini d’ensemble par lot peut vous aider à automatiser la création de votre visionneuse d’images.
+   Un paramètre prédéfini d’ensemble par lot peut vous aider à automatiser la création de votre ensemble d’images.
 
    >[!IMPORTANT]
    >
@@ -53,88 +53,88 @@ Pour démarrer rapidement :
 
 1. [Chargez les images sources originales pour plusieurs vues](#uploading-assets-in-image-sets).
 
-   Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
+   Chargez les images pour vos ensembles d’images. N’oubliez pas que les utilisateurs et utilisatrices peuvent effectuer un zoom sur les images de la visionneuse d’ensembles d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
-   Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
+   Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles d’images.
 
-1. [Créez une visionneuse d’images](#creating-image-sets).
+1. [Créez un ensemble d’images](#creating-image-sets).
 
-   Dans les visionneuses d’images, les utilisateurs cliquent sur les images miniatures dans la visionneuse d’images.
+   Dans les ensembles d’images, vous cliquez sur les images miniatures de la visionneuse d’images.
 
-   Pour créer une visionneuse d’images dans AEM Assets, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Visionneuses d’images]**. Ajoutez ensuite des images et cliquez sur **[!UICONTROL Enregistrer]**.
+   Pour créer un ensemble d’images dans AEM Assets, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Ensembles d’images]**. Ajoutez ensuite des images et cliquez sur **[!UICONTROL Enregistrer]**.
 
-   Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
+   Voir [Préparation du chargement de ressources d’ensemble  d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
    Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
-1. Ajoutez des [paramètres prédéfinis de visionneuse d’images](/help/assets/dynamic-media/managing-viewer-presets.md), selon les besoins.
+1. Ajoutez des [paramètres prédéfinis de visionneuse d’ensembles d’images](/help/assets/dynamic-media/managing-viewer-presets.md), selon les besoins.
 
-   Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse d’images. Pour afficher vos images avec un paramètre prédéfini de visionneuse, sélectionnez la visionneuse d’images, puis dans la Liste déroulante du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
+   Les administrateurs et administratrices peuvent créer ou modifier les paramètres prédéfinis de visionneuse d’ensembles d’images. Pour afficher vos images avec un paramètre prédéfini de visionneuse, sélectionnez l’ensemble d’images, puis dans la Liste déroulante du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
    Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètre prédéfini de visionneuse]**.
 
-1. (Facultatif) [Afficher les visionneuses d’images](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) créées à l’aide de paramètres prédéfinis d’ensemble par lot.
-1. [Prévisualisez une visionneuse d’images](/help/assets/dynamic-media/previewing-assets.md).
+1. (Facultatif) [Afficher les ensembles d’images](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) créées à l’aide de paramètres prédéfinis d’ensemble par lot.
+1. [Prévisualisez un ensemble d’images](/help/assets/dynamic-media/previewing-assets.md).
 
-   Sélectionnez la visionneuse d’images pour pouvoir la prévisualiser. Pour examiner votre visionneuse d’images dans la visionneuse sélectionnée, sélectionnez les icônes de miniature. Vous pouvez choisir parmi les différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans la liste déroulante du rail gauche.
+   Sélectionnez l’ensemble d’images pour pouvoir le prévisualiser. Pour examiner votre ensemble d’images dans la visionneuse sélectionnée, sélectionnez les icônes de miniature. Vous pouvez choisir parmi les différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans la liste déroulante du rail gauche.
 
-1. [Publiez une visionneuse d’images](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Publiez un ensemble d’images](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-   La publication d’une visionneuse d’images active la chaîne URL et d’incorporation. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/dynamic-media/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
+   La publication d’un ensemble d’images active la chaîne URL et Embed. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/dynamic-media/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
 1. [Liez des URL à l’application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/dynamic-media/embed-code.md).
 
-   Experience Manager Assets crée des appels URL pour les visionneuses d’images et les active une fois que vous avez publié la visionneuse d’images. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site web.
+   Experience Manager Assets crée des appels URL pour les ensembles d’images et les active une fois que vous avez publié l’ensemble d’images. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site web.
 
-   Sélectionnez la visionneuse d’images, puis, dans la liste déroulante du rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
+   Sélectionnez l’ensemble d’images, puis, dans la liste déroulante du rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Voir [Liaison d’une visionneuse d’images à une page web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) et [Intégration de la visionneuse de vidéos ou d’images](/help/assets/dynamic-media/embed-code.md).
+   Voir [Liaison d’un ensemble d’images à une page web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) et [Intégration de la visionneuse d’images ou de vidéos](/help/assets/dynamic-media/embed-code.md).
 
-Pour modifier des visionneuses d’images, voir [Modification de visionneuses d’images](#editing-image-sets). Vous pouvez en outre afficher et modifier les [propriétés de la visionneuse d’images](/help/assets/manage-digital-assets.md#editing-properties).
+Pour modifier des ensembles d’images, voir [Modification d’ensembles d’images](#editing-image-sets). Vous pouvez en outre afficher et modifier les [propriétés de l’ensemble d’images](/help/assets/manage-digital-assets.md#editing-properties).
 
 Si vous rencontrez des problèmes lors de la création des visionneuses, voir Images et visionneuses dans la section [Dépannage de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
-## Chargement de ressources pour les visionneuses d’images {#uploading-assets-in-image-sets}
+## Chargement de ressources pour les ensembles d’images {#uploading-assets-in-image-sets}
 
-Commencez par charger les ressources d’images pour les visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+Commencez par charger les ressources d’images pour les ensembles d’images. N’oubliez pas que les utilisateurs et utilisatrices peuvent effectuer un zoom sur les images de la visionneuse d’ensembles d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
+Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles d’images.
 
-Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+Vous pouvez charger des images pour les ensembles d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-### Préparation du chargement de ressources de visionneuse d’images {#preparing-image-set-assets-for-upload}
+### Préparation du chargement de ressources d’ensemble d’images {#preparing-image-set-assets-for-upload}
 
-Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
+Avant de créer un ensemble d’images, assurez-vous que la taille et le format des images sont corrects.
 
-Pour créer une visionneuse d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
+Pour créer un ensemble d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la plus grande dimension des images comporte au moins 2000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Comme il est possible de zoomer sur les images dans les ensembles d’images, assurez-vous que la plus grande dimension des images comporte au moins 2 000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 >[!NOTE]
 >
 >Si vous utilisez des miniatures pour indiquer des échantillons de produit, procédez comme suit :
 >
->Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images pour la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
+>Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec un ensemble d’images pour la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
 >
 >* Une prise de vue de la même veste en noir, marron et vert.
 >* Une miniature de la veste en noir, marron et vert.
 
-## Créez une visionneuse d’images {#creating-image-sets}
+## Créez un ensemble d’images {#creating-image-sets}
 
-Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou par l’API.
+Vous pouvez créer des ensemble d’images par le biais de l’interface d’utilisation ou via l’API.
 
 >[!NOTE]
 >
->Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
+>Vous pouvez également créer des ensembles d’images automatiquement par l’intermédiaire des [paramètres prédéfinis de visionneuses par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 >**Important** : les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
 >[!NOTE]
 >
->Les visionneuses d’images ne sont pas prises en charge pour les ressources dont le nom de fichier contient une virgule « , ».
+>Les ensembles d’images ne sont pas pris en charge pour les ressources dont le nom de fichier contient une virgule « , ».
 
 Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
@@ -145,24 +145,24 @@ Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratique
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
-**Pour créer une visionneuse d’images** :
+**Pour créer un ensemble d’images** :
 
 1. Dans Adobe Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
-1. Sélectionnez **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
+1. Sélectionnez **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Naviguez jusqu’à l’emplacement où vous souhaitez créer un ensemble d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Ensemble d’images]** pour ouvrir la page de l’éditeur d’ensemble d’images.
 
    Vous pouvez également la créer depuis un dossier qui contient les ressources.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur de visionneuse d’images, tapez un nom pour la visionneuse d’images. Le nom apparaît dans la bannière de la visionneuse d’images. Vous pouvez aussi saisir une description.
+1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur d’ensemble d’images, saisissez un nom pour l’ensemble d’images. Le nom apparaît dans la bannière de l’ensemble d’images. Vous pouvez aussi saisir une description.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Dans le coin supérieur gauche de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Ajouter une ressource]**.
+   * Dans le coin supérieur gauche de la page de l’éditeur d’ensemble d’images, sélectionnez **[!UICONTROL Ajouter une ressource]**.
 
-   * Au milieu de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
+   * Au milieu de la page de l’éditeur d’ensemble d’images, sélectionnez **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
 
    Sélectionnez cette option pour sélectionner les ressources à inclure dans la visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 
@@ -188,19 +188,19 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
 
    >[!NOTE]
    >
-   >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse. Vous pouvez également laisser Experience Manager sélectionner automatiquement la miniature en fonction des ressources de la visionneuse d’images. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’Éditeur de visionneuse d’images. Sélectionnez ensuite une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis que vous souhaitez qu’Experience Manager génère une miniature depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques]**.
+   >Lors de la création de l’ensemble d’images, vous pouvez modifier la miniature correspondante. Vous pouvez également laisser Experience Manager sélectionner automatiquement la miniature en fonction des ressources de l’ensemble d’images. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’Éditeur de l’ensemble d’images. Sélectionnez ensuite une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis que vous souhaitez qu’Experience Manager génère une miniature depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse d’images créée apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images {#viewing-image-sets}
+## Affichage d’ensembles d’images {#viewing-image-sets}
 
-Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
+Vous pouvez créer des ensembles d’images dans l’interface d’utilisation ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >
 >Les ensembles par lots sont créés par IPS [Image Production System] dans le cadre de l’assimilation des ressources.
 
-Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
+Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les ensembles d’images dans l’interface d’utilisation.)
 
 * Ouvrez les propriétés d’une ressource. Les propriétés indiquent les visionneuses dont la ressource sélectionnée fait partie ou auxquelles elle est référencée. Pour afficher l’ensemble de la visionneuse, sélectionnez son nom.
 
@@ -218,27 +218,27 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 
 >[!NOTE]
 >
->Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
+>Vous pouvez afficher les visionneuses par le biais de l’interface d’utilisation, comme indiqué dans la section [Modification d’un ensemble d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images {#editing-image-sets}
+## Modification d’ensembles d’images {#editing-image-sets}
 
-Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, telles que :
+Vous pouvez effectuer diverses tâches de modification sur les ensembles d’images, telles que :
 
-* Ajouter des images à la visionneuse d’images.
-* Réorganiser des images dans la visionneuse d’images.
-* Supprimer des ressources de la visionneuse d’images.
+* Ajouter des images à l’ensemble d’images.
+* Réorganiser des images dans l’ensemble d’images.
+* Supprimer des ressources de l’ensemble d’images.
 * Appliquez les paramètres d’affichage prédéfinis.
-* Supprimez la visionneuse d’images.
+* Supprimez l’ensemble d’images.
 
-**Pour modifier les visionneuses d’images :**
+**Pour modifier les ensembles d’images :**
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Pointez sur une ressource d’image, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon).
-   * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils.
+   * Pointez sur une ressource d’ensemble d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon).
+   * Pointez sur une ressource d’ensemble d’images, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils.
    * Sélectionnez une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon) dans la barre d’outils.
 
-1. Pour modifier les images dans la visionneuse d’images, procédez d’une des manières suivantes :
+1. Pour modifier les images dans l’ensemble d’images, procédez d’une des manières suivantes :
 
    * Pour réorganiser les images, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône Réorganiser pour déplacer des éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, cliquez sur l’en-tête de colonne.
@@ -247,21 +247,22 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
      >[!NOTE]
      >
      >Si vous supprimez l’image utilisée par Experience Manager pour la miniature en la remplaçant par une autre image, la ressource originale s’affiche toujours.
+
    * Pour supprimer une ressource, sélectionnez-la et sélectionnez **[!UICONTROL Supprimer l’élément]**.
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, sélectionnez **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]**.
-   * Pour supprimer l’ensemble d’une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
+   * Pour supprimer un ensemble d’images complet, accédez à cet ensemble, sélectionnez-le, puis sélectionnez **[!UICONTROL Supprimer]**.
 
    >[!NOTE]
    >
-   >Vous pouvez modifier les images dans une visionneuse d’images. Accédez à la visionneuse et sélectionnez **[!UICONTROL Définir les membres]** dans le rail de gauche. Pour ouvrir la fenêtre de modification, sélectionnez l’icône représentant un crayon dans une ressource.
+   >Vous pouvez modifier les images d’un ensemble d’images. Accédez à la visionneuse et sélectionnez **[!UICONTROL Définir les membres]** dans le rail de gauche. Pour ouvrir la fenêtre de modification, sélectionnez l’icône représentant un crayon dans une ressource.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Prévisualisez une visionneuse d’images {#previewing-image-sets}
+## Prévisualisez un ensemble d’images {#previewing-image-sets}
 
 Voir [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publication de visionneuses d’images {#publishing-image-sets}
+## Publication d’ensembles d’images {#publishing-image-sets}
 
 Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

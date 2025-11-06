@@ -3,8 +3,8 @@ title: Package de structure du référentiel de projet AEM
 description: Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel, dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel, dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packages dans Experience Manager as a Cloud Service est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parentes et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
-Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être recensées dans le package de structure du référentiel pour établir ces dépendances. Ce processus est nécessaire pour établir ces dépendances.
+Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être énumérées dans le package de structure du référentiel pour établir ces dépendances. Ce processus est nécessaire pour établir ces dépendances.
 
 ![Package de structure du référentiel](./assets/repository-structure-packages.png)
 
@@ -118,7 +118,7 @@ Veillez à ajouter ce nouveau sous-projet Maven à la liste des `<modules>` des 
 
 ## Référence au package de structure de référentiel
 
-Pour utiliser le package de structure de référentiel, référencez-le par l’intermédiaire de tous les projets Maven de package de code (les sous-packages qui se déploient vers `/apps`) en configurant les modules externes Maven `<repositoryStructurePackage>` du package de contenu FileVault.
+Pour utiliser le package de structure de référentiel, référencez-le par l’intermédiaire de tous les projets Maven de package de code (les sous-packages qui se déploient vers `/apps`) en configurant les modules externes Maven `<repositoryStructurePackage>` du module de contenu FileVault.
 
 Dans le package de code `ui.apps/pom.xml` et tout autre package de code `pom.xml`, ajoutez une référence à la configuration du package de structure de référentiel du projet (#repository-structure-package) dans le module externe Maven du package FileVault.
 
@@ -164,7 +164,7 @@ Par exemple :
 + Le package de code A se déploie dans `/apps/a`
 + Le package de code B se déploie dans `/apps/a/b`
 
-Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. S’il est ensuite suivi du package de code A, qui se déploie dans `/apps/a`, le résultat est la suppression du `/apps/a/b` précédemment installé.
+Si une dépendance au niveau du package n’est pas établie à partir du package de code B sur le package de code A, le package de code B peut être déployé en premier dans `/apps/a`. S’il est ensuite suivi du package de code A, qui se déploie dans `/apps/a`, il en résulte une suppression du `/apps/a/b` précédemment installé.
 
 Dans ce cas :
 
@@ -184,4 +184,4 @@ Cette erreur indique que le package de code responsable de l’interruption n’
 
 ## Ressources supplémentaires
 
-+ [Module Maven de package de contenu FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in Maven de module de contenu FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

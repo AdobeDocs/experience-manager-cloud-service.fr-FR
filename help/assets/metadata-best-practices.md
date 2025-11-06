@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques en matière de métadonnées pour g
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Déterminez d’où proviennent les informations et examinez les détails de la 
 
 >[!NOTE]
 >
->Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr).
+>Découvrez comment [gérer les métadonnées de vos ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Cohérence avec la stratégie de métadonnées
 
@@ -107,11 +107,13 @@ Dans la gestion des métadonnées à l’échelle de l’entreprise, la cohéren
 
 Voici quelques-unes des bonnes pratiques à suivre :
 
-* **Éviter les valeurs en double :** si vous disposez d’une collection d’images d’une campagne marketing, utilisez des noms cohérents et évitez les doublons.<br>
-Par exemple, au lieu d’utiliser des noms en double tels que *campaign_image_001* et *campaign_image_002*, implémentez une convention de nommage systématique telle que *event_promotion* et *product_launch*, pour garantir une identification claire et ordonnée.
+* **Éviter les valeurs en double :** si vous disposez d’une collection d’images d’une campagne marketing, utilisez des noms cohérents et évitez les doublons.
 
-* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md) efficacement.  <br>
-Par exemple, utilisez de manière cohérente des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes afin de maintenir une séquence systématique.
+  Par exemple, au lieu d’utiliser des noms en double tels que *campaign_image_001* et *campaign_image_002*, implémentez une convention de nommage systématique telle que *event_promotion* et *product_launch*, pour garantir une identification claire et ordonnée.
+
+* **Utiliser efficacement des vocabulaires contrôlés :** implémentez des vocabulaires contrôlés en utilisant des termes normalisés pour les balises. Découvrez comment implémenter le [framework de balisage AEM](/help/implementing/developing/introduction/tagging-framework.md) efficacement.
+
+  Par exemple, utilisez de manière cohérente des termes tels que *product_launch* ou *event_promotion* lors du balisage des images avec des thèmes afin de maintenir une séquence systématique.
 
 * **Préserver la précision et l’exhaustivité :** pour garantir la cohérence, la précision, l’exhaustivité et l’alignement des métadonnées sur différentes sources sont essentiels.
 Par exemple, lors de l’ajout de métadonnées à un document PDF, vérifiez que les détails tels que les noms de l’auteur et les mots-clés sont exacts et complets.
@@ -138,7 +140,7 @@ Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La re
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.
@@ -162,8 +164,8 @@ Essayez les bonnes pratiques suivantes pour simplifier les métadonnées :
 
 ### Analyse du parcours de contenu
 
-Examinez la chaîne d’approvisionnement du contenu pour trouver les sources de métadonnées et impliquez toutes les parties prenantes, en commençant par le sommet, pour une approche approfondie des bonnes pratiques. Faites appel à différents membres du personnel pour assurer un soutien complet à l’échelle de l’organisation. <br>Incorporez des métadonnées à différentes étapes pour partager la responsabilité de fournir les détails de la ressource lors du chargement. Par exemple, l’intégration de [!DNL Experience Manager Assets] et [!DNL Workfront] offre des avantages substantiels en termes de gestion des métadonnées, améliorant l’efficacité et la collaboration dans la création et la gestion de contenu. Cette intégration garantit une synchronisation efficace des métadonnées pour les ressources liées et met automatiquement à jour les détails du projet lorsque des modifications sont apportées dans [!DNL Workfront].
+Examinez le supply chain de contenu pour trouver les sources de métadonnées et impliquer toutes les parties prenantes, en commençant par le sommet, pour une approche approfondie des bonnes pratiques. Faites appel à différents membres du personnel pour assurer un soutien complet à l’échelle de l’organisation. <br>Incorporez des métadonnées à différentes étapes pour partager la responsabilité de fournir les détails de la ressource lors du chargement. Par exemple, l’intégration de [!DNL Experience Manager Assets] et [!DNL Workfront] offre des avantages substantiels en termes de gestion des métadonnées, améliorant l’efficacité et la collaboration dans la création et la gestion de contenu. Cette intégration garantit une synchronisation efficace des métadonnées pour les ressources liées et met automatiquement à jour les détails du projet lorsque des modifications sont apportées dans [!DNL Workfront].
 
 Communiquez rapidement les objectifs, les progrès, les jalons et les défis afin de recevoir les commentaires et la coopération de toutes les parties prenantes. Encouragez la collaboration à l’échelle de l’organisation pour créer des processus efficaces et des métadonnées précieuses.
 
-En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=fr) pour gérer efficacement les métadonnées Experience Manager.
+En savoir plus sur [les métadonnées et les concepts associés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) pour gérer efficacement les métadonnées Experience Manager.

@@ -3,8 +3,8 @@ title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 97%
@@ -315,7 +315,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>Chemin masqué</td>
+   <td>Chemin d’accès masqué</td>
    <td>Filtrez selon le chemin, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -482,7 +482,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >Les prédicats de recherche courants sont définis dans :
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Ces informations sont proposées à titre de référence uniquement. Vous ne devez pas modifier `/libs`.
+>Ces informations sont fournies à titre de référence uniquement. Vous ne devez pas modifier les `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -529,7 +529,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Chemin d’accès aux options**
 
-  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné l’icône **+**, ajoutez la sélection à la liste des options valides (puis l’icône **-** à supprimer si nécessaire).
+  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné la combinaison **+**, l’icône est utilisée pour ajouter la sélection à la liste des options valides (puis l’icône **-** à supprimer si nécessaire).
 
   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 
@@ -544,7 +544,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 * **Nom des propriétés de publication et Live Copy**
 Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* L’astérisque (&ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
+* L’astérisque (&amp;ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 

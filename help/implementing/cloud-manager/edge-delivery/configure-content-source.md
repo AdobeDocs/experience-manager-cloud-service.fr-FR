@@ -2,10 +2,10 @@
 title: Configurer votre source de contenu
 description: Découvrez comment configurer la source de contenu de votre site Edge Delivery. Utilisez le fichier « fstab.yaml » avec l’architecture Helix 4 ou utilisez l’assistant guidé dans Cloud Manager (ou l’API du service de configuration) avec l’architecture Helix 5.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 

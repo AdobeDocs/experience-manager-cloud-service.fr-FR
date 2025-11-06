@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Utiliser des workflows AEM, à l’aide des étapes d’affectation de tâche, convertir en étape PDF/A, générer un document de l’étape enregistrée, utiliser des workflows, signer une étape de document, générer une étape de sortie imprimée, générer une sortie PDF non interactive
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 76%
@@ -18,7 +18,7 @@ ht-degree: 76%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Cet article |
 
 Vous utilisez des modèles de workflow . Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem).
@@ -177,6 +177,7 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 **[!UICONTROL Document d’entrée]** : le document d’entrée peut être relatif à la payload, comporter un chemin d’accès absolu, être fourni en tant que payload ou être stocké dans une variable de type de données Document.
 
 **[!UICONTROL Options de conversion]** : cette propriété permet de spécifier les paramètres de conversion des documents PDF en documents PDF/A. Les différentes options disponibles sous cet onglet sont les suivantes :
+
 * **[!UICONTROL Conformité]** : indique la norme à laquelle le document PDF/A de sortie doit se conformer. Différentes normes PDF sont prises en charge, telles que PDF/A-1b, PDF/A-2b ou PDF/A-3b.
 * **[!UICONTROL Niveau de résultat]** : indique le niveau de résultat de la sortie de conversion, qui peut être PassFail, Summary ou Detailed.
 * **[!UICONTROL Espace colorimétrique]** : indique l’espace colorimétrique prédéfini en tant que S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP qui peut être utilisé pour les fichiers de sortie au format PDF/A.
@@ -255,11 +256,13 @@ DDX (Document Description XML) est un langage de marquage déclaratif dont les �
 L’étape Invoquer DDX présente les propriétés suivantes :
 
 **[!UICONTROL Documents d’entrée]** : utilisée pour définir les propriétés d’un document d’entrée. Les différentes options disponibles sous cet onglet sont les suivantes :
+
 * **[!UICONTROL Spécifier DDX à l’aide de]** : spécifie le document d’entrée relatif à la payload, dispose d’un chemin d’accès absolu, peut être fourni comme payload ou stocké dans une variable de type de données Document.
 * **[!UICONTROL Créer le mappage à partir de la payload]** : ajoutez tous les documents dans le dossier de payload au mappage de document d’entrée pour appeler l’API dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans le mappage.
 * **[!UICONTROL Map de document d’entrée]** : cette option est utilisée pour ajouter plusieurs entrées à l’aide du bouton **[!UICONTROL AJOUTER]**. Chaque entrée représente la clé du document dans le mappage et la source du document.
 
 **[!UICONTROL Options d’environnement]** : cette option est utilisée pour définir les paramètres de traitement de l’étape Invoquer l’API. Les différentes options disponibles sous cet onglet sont les suivantes :
+
 * **[!UICONTROL Valider uniquement]** : vérifie la validité du document DDX d’entrée.
 * **[!UICONTROL Échec en cas d’erreur]** : valeur booléenne indiquant si le service d’appel de l’API échoue en cas d’erreur ou non. Par défaut, sa valeur est définie sur False.
 * **[!UICONTROL Premier numéro Bates]** : indique le nombre qui s’incrémente automatiquement. Ce nombre qui s’incrémente automatiquement s’affiche automatiquement sur chaque page consécutive.
@@ -270,6 +273,7 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 >Les options d’environnement sont synchronisées avec les API HTTP.
 
 **[!UICONTROL Documents de sortie]** : indique l’emplacement d’enregistrement du fichier de sortie. Les différentes options disponibles sous cet onglet sont les suivantes :
+
 * **[!UICONTROL Enregistrer la sortie dans payload]** : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
 * **[!UICONTROL Mappage du document de sortie]** : spécifie l’emplacement d’enregistrement explicite de chaque fichier de document en ajoutant une entrée par document. Chaque entrée représente le document et l’emplacement où l’enregistrer. S’il existe plusieurs documents de sortie, cette option est utilisée.
 

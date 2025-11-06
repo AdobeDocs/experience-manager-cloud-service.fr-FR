@@ -10,10 +10,10 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 98%
+source-wordcount: '2032'
+ht-degree: 96%
 
 ---
 
@@ -115,9 +115,9 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : oui, les formulaires HTML5 sont soumis à certaines limitations. Si le nombre de chiffres dépasse celui indiqué dans la clause d’image, les numéros ne sont pas traduits et s’affichent dans les paramètres régionaux anglais.
 
-1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
+1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   Réponse : De nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
+   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, ainsi que des objets. Acrobat prend également en charge la disposition et les scripts.
 

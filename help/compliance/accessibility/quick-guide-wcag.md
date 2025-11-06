@@ -1,13 +1,13 @@
 ---
 title: Guide rapide relatif à WCAG 2.1
-description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
+description: Guide rapide relatif aux règles pour l’accessibilité du contenu web (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -23,15 +23,15 @@ Adobe Experience Manager (AEM) as a Cloud Service a été développé afin de m
 
 >[!NOTE]
 >
->Puisque ces documents ont été écrits la [version mise à jour des directives, WCAG 2.2](https://www.w3.org/TR/WCAG/) a été disponible en octobre 2023.
+>Depuis la rédaction de ces documents, la [version mise à jour des directives WCAG 2.2](https://www.w3.org/TR/WCAG/) a été publiée en octobre 2023.
 >
->Voir [Comparaison avec WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) et [Nouvelles fonctionnalités de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Voir les sections [Comparaison avec WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) et [Nouvelles fonctionnalités de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Elles fournissent aux auteurs, aux concepteurs et aux développeurs de contenu web des conseils à suivre afin de s’assurer que les ressources qu’ils produisent sont aussi accessibles que possible pour autant de personnes que possible, quel que soit le handicap qu’elles peuvent avoir ; par exemple, une déficience visuelle, des troubles de l’audition, des difficultés d’apprentissage ou des restrictions liées à l’âge.
 
 Par exemple, la description d’une image (ou de tout autre contenu non textuel) à l’aide de l’attribut `alt` dans le code HTML avantage considérablement les personnes non voyantes ou malvoyantes. La description textuelle dans l’attribut `alt` peut être convertie en sortie vocale ou transmise aux affichages électroniques en braille actualisables.
 
-En outre, WCAG 2.1 peut présenter des avantages pour d’autres bénéficiaires, y compris les personnes qui peuvent être considérées comme *handicapées par rapport à la situation*. c’est-à-dire les personnes qui, en raison de circonstances telles que la technologie de navigation, la vitesse de la connexion réseau ou l’environnement de navigation, peuvent rencontrer des obstacles similaires à ceux des personnes handicapées.
+En outre, WCAG 2.1 peut présenter des avantages pour d’autres bénéficiaires, y compris les personnes qui peuvent être considérées *handicapées par rapport à la situation*. c’est-à-dire les personnes qui, en raison de circonstances telles que la technologie de navigation, la vitesse de la connexion réseau ou l’environnement de navigation, peuvent rencontrer des obstacles similaires à ceux des personnes handicapées.
 
 En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propriétaires de sites web peuvent créer du contenu web qui satisfait les critères de réussite des niveaux A et AA pertinents de WCAG 2.1.
 
@@ -66,13 +66,13 @@ WCAG 2.1 est constitué de quatre principes clés de conception accessible, par
 1. **Robuste** : le contenu web est-il disponible de la manière prévue dans un nombre suffisamment important d’environnements de navigation, y compris les anciens et les nouveaux environnements de navigation ?
 
 Développons :
-* Chaque **principe** se compose d’une ou de plusieurs **recommandations**.
 
+* Chaque **principe** se compose d’une ou de plusieurs **recommandations**.
 * Les recommandations sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
 * Les recommandations sont numérotées de 1.1 à 4.1, le premier numéro correspondant au principe parent.
 * Chaque recommandation est composée d’un ou de plusieurs **critères de réussite**.
 * Les critères de réussite sont écrits sous la forme d’instructions, qui sont `True` ou `False` pour n’importe quelle page web donnée.
-* Les critères de réussite peuvent inclure des choix ou des exceptions, dans les cas où les critères de réussite ne doivent pas être remplis.
+* Les critères de réussite peuvent inclure des choix ou des exceptions. Il s’agit de situations où le critère de réussite n’a pas besoin d’être rempli.
 * Les critères de réussite sont numérotés selon la recommandation et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court résumant l’intention du critère, à titre de référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
 * Les critères de réussite incluent une liste de **techniques** associées (décrites plus en détail ci-dessous).
 
@@ -85,6 +85,7 @@ En tant que tel, WCAG 2.1 est un document stable qui ne changera pas. Toutefois
 ### Ressources WCAG 2.1 {#wcag-resources}
 
 Cette liste ne vise pas à être exhaustive, mais présente les ressources disponibles :
+
 * [Présentation de tous les documents relatifs à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Résumé des différents documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)

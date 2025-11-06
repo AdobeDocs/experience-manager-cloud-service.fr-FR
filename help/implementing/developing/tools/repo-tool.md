@@ -3,8 +3,8 @@ title: Outil AEM Repo
 description: L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 89%
@@ -15,7 +15,7 @@ ht-degree: 89%
 
 L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire au [module externe Jackrabbit FileVault Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin), à la différence qu’il est plus rapide, a des dépendances minimales et est un simple script Bash.
 
-Cet outil simplifie le transfert des fichiers pour le développeur et peut également être intégré à Eclipse et IntelliJ afin de rendre le développement encore plus efficace.
+Cet outil simplifie le transfert de fichiers pour le développeur et peut également être intégré à Eclipse et IntelliJ pour rendre le développement encore plus efficace.
 
 ## Vue d’ensemble {#overview}
 

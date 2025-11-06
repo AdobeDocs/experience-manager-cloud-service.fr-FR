@@ -3,10 +3,10 @@ title: Intégration de Edge Delivery Services au réseau CDN géré par Adobe da
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Edge Delivery Services peut être configuré à l’aide de l’une des deux opt
 |  | Option de déploiement | Document clé | Fonction | Idéal pour |
 | --- | --- | --- | --- | --- |
 | Option 1 | *avec* un environnement AEM as a Cloud Service (AEMaaCS) existant ; | [Configurer un proxy à partir d’un environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | Le pipeline de configuration est généralement disponible pour les environnements AEMaaCS | Les équipes qui exécutent déjà Sites dans Cloud Manager et qui souhaitent une amélioration rapide et à faible risque des performances. |
-| Option 2 | *Sans* un environnement AEMaaCS existant, connu sous le nom d’« environnement Edge » autonome. | [Configuration d’un site Edge Delivery sans environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Le pipeline de configuration est actuellement disponible uniquement pour les environnements Edge par le biais du programme Beta limité.<br>Voir [Ajouter le pipeline de configuration Edge Delivery](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | Nouvelles versions ou migrations qui souhaitent adopter l’architecture Edge Delivery complète et le routage granulaire. |
+| Option 2 | *Sans* un environnement AEMaaCS existant, connu sous le nom d’« environnement Edge » autonome. | [Configuration d’un site Edge Delivery sans environnement existant](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | Le pipeline de configuration est actuellement disponible uniquement pour les environnements Edge par le biais du programme Beta limité.<br>Voir [Ajouter le pipeline de configuration Edge Delivery](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline). | Nouvelles versions ou migrations qui souhaitent adopter l’architecture Edge Delivery complète et le routage granulaire. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 
@@ -68,7 +68,7 @@ Les deux modèles peuvent coexister au sein du même programme Cloud Manager, ce
 | Besoin d’un déploiement rapide et à modification minimale et d’héberger déjà Sites dans Cloud Manager | Proxy AMC-D |
 | Prévoyez de restructurer le contenu pour Edge Delivery ou souhaitez un routage affiné entre plusieurs origines | Configurer le pipeline de diffusion Edge + `originSelectors` |
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 1. Intégration de votre site dans Cloud Manager - Requis pour les deux modèles de déploiement. Suivez la section Intégration d’un site AEM.
 

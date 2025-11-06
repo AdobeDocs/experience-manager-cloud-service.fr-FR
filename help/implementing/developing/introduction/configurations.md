@@ -3,8 +3,8 @@ title: Configurations et l’explorateur de configurations
 description: Découvrez les configurations Adobe Experience Manager (AEM) et comment elles gèrent les paramètres de l’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 78%

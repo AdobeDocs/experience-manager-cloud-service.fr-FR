@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Améliorations du service d’appel dans VRE, remplissage des options de liste déroulante à l’aide du service d’appel, Définition du panneau répétable à l’aide de la sortie du service d’appel, Définition du panneau à l’aide de la sortie du service d’appel, Utilisation du paramètre de sortie du service d’appel pour valider d’autres champs.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
@@ -87,6 +87,7 @@ Créez un formulaire `Get Information` qui récupère des valeurs en fonction de
 **Champs de formulaire**
 
 Ajoutez les champs suivants au formulaire :
+
 * **Saisir l&#39;ID d&#39;animal domestique** : Zone de texte
 * **Sélectionner des URL de photo** : liste déroulante
 * **Balises** : Panneau
@@ -103,6 +104,7 @@ Ajoutez les champs suivants au formulaire :
 **Configuration des panneaux**
 
 Définissez les panneaux de manière répétitive avec les contraintes suivantes :
+
 * Valeur minimale : 1
 * Valeur maximale : 4
 

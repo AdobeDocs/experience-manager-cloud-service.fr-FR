@@ -3,8 +3,8 @@ title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -164,7 +164,7 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 La procédure suivante décrit comment ajouter une nouvelle langue (par exemple, le finnois) à la boîte de dialogue **Modifier la balise** :
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
-1. Ajoutez `fi_fi`, qui représente le code de langue pour le finnois, et enregistrez les modifications.
+1. Ajoutez `fi_fi`, qui représente le code des paramètres régionaux pour le finnois, et enregistrez les modifications.
 
 Le finnois est désormais disponible dans la boîte de dialogue des propriétés de la page et dans la boîte de dialogue **Modifier la balise** lors de la modification d’une balise dans la console **Balisage**.
 

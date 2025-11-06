@@ -2,10 +2,10 @@
 title: Définition de modèles de fragment de contenu
 description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM, ce qui vous permet de créer du contenu structuré à utiliser dans une diffusion découplée ou dans la création de pages.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 35%
@@ -16,7 +16,7 @@ ht-degree: 35%
 
 Les modèles de fragment de contenu dans Adobe Experience Manager (AEM) as a Cloud Service définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md). Ces fragments peuvent ensuite être utilisés pour la création de pages ou comme base pour votre contenu découplé.
 
-Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [&#x200B; Gestion de vos modèles de fragment de contenu &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+Cette page explique comment définir votre modèle de fragment de contenu à l’aide de l’éditeur dédié. Voir [ Gestion de vos modèles de fragment de contenu ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) pour accéder à d’autres tâches et options disponibles une fois vos fragments créés, y compris [les actions disponibles à partir de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [l’autorisation du modèle sur votre dossier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) et [la publication de votre modèle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Le modèle de fragment de contenu définit efficacement la structure des fragmen
 
    * Vous pouvez repositionner un champ en formant des points à gauche de la zone de champ :
 
-     ![&#x200B; Déplacer le champ &#x200B;](assets/cf-cfmodels-move-field-icon.png)
+     ![ Déplacer le champ ](assets/cf-cfmodels-move-field-icon.png)
 
    * Une fois qu’un champ a été ajouté au modèle (et est sélectionné), le panneau de droite affiche les **Propriétés** qui peuvent être définies pour ce type de données particulier. Vous pouvez définir ici ce qui est requis pour le spécifique
 champ .
@@ -313,10 +313,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection récurrente pour :
 >
 >* Références du contenu
->  &#x200B;>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif et peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
->  &#x200B;>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null lors de la première occurrence.
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Le type de données **Référence de contenu** vous permet d’effectuer le rend
 Outre les propriétés standard, vous pouvez spécifier les éléments suivants :
 
 * Le **Chemin racine**, qui spécifie ou représente l’emplacement de stockage de tout contenu référencé
+
   >[!NOTE]
   >
   >Ceci est obligatoire si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
@@ -338,6 +339,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
   >Voir [Images de référence](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) pour plus d’informations.
 
 * Types de contenu pouvant être référencés
+
   >[!NOTE]
   >
   >Ils doivent inclure **Image** si vous souhaitez charger et référencer directement des images dans ce champ lors de l’utilisation de l’éditeur de fragment de contenu.
@@ -346,6 +348,7 @@ Outre les propriétés standard, vous pouvez spécifier les éléments suivants�
 
 * Limites relatives aux tailles de fichier
 * Si une image est référencée :
+
    * Afficher la miniature
    * Limites de hauteur et de largeur pour l’image
 

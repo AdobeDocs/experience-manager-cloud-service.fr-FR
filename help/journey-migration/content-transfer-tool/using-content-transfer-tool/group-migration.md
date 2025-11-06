@@ -2,9 +2,9 @@
 title: Migration des groupes
 description: Présentation de la migration de groupe dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 6%
 
 ---
@@ -65,12 +65,14 @@ Lorsque ce paramètre est désactivé, les groupes ne sont pas migrés et il n�
 ## Rapport de migration principale et rapport utilisateur {#principal-migration-report}
 
 Lorsque des groupes sont inclus pendant la migration (valeur par défaut), un rapport de migration principal est enregistré, qui décrit ce qui se passe avec chaque groupe pendant la migration.  Pour télécharger ce rapport après une ingestion réussie :
+
 * Dans CAM, accédez à Transfert de contenu et sélectionnez Tâches d’ingestion .
 * Cliquez sur les points de suspension (...) sur la ligne de l’ingestion en question, puis choisissez « Afficher le résumé principal ».
 * Dans la boîte de dialogue qui s’affiche, sélectionnez « Rapport de migration principale » dans la liste déroulante sous « Télécharger un fichier... » et cliquez sur le bouton Télécharger .
 * Enregistrez le fichier CSV obtenu.
 
 Voici quelques-unes des informations enregistrées par groupe :
+
 * Si la migration est effectuée, chemin d’accès à la première liste ACL ou au premier groupe d’utilisateurs fermé ayant provoqué la migration du groupe.
 * Si le groupe a été migré précédemment ; si l’ingestion en cours n’était pas une ingestion par effacement, certains groupes peuvent avoir été migrés lors d’une ingestion précédente.
 * Indique si le groupe est un groupe intégré. Ces groupes ne sont pas migrés, car ils se trouvent toujours dans l’environnement AEMaaCS cible.
@@ -85,7 +87,7 @@ Dans la section Rapport utilisateur , les utilisateurs sont signalés (un par li
 
 Dans le cas d’une opération d’effacement, puis d’une ingestion sans effacement, les groupes de la liste d’un utilisateur de l’ingestion sans effacement sont uniquement les groupes migrés pendant la phase sans effacement.
 
-#### Remarques {#user-report-notes}
+#### Notes {#user-report-notes}
 
 Outre les groupes pour chaque utilisateur, il existe un champ dans le Rapport utilisateur dans lequel des notes sur l’utilisateur peuvent être fournies (et une description détaillée de la signification de la note se trouve également dans le rapport) à titre d’information.  Les notes possibles sont les suivantes :
 
@@ -109,9 +111,9 @@ Voir également [Gérer les utilisateurs](https://helpx.adobe.com/ca/enterprise/
 
 * Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les groupes précédemment transférés à l’instance Cloud Service sont supprimés avec l’ensemble du référentiel existant ; un nouveau référentiel est créé dans lequel le contenu est ingéré. Ce processus réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est valable pour tout utilisateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d’accès à l’ingestion CTT/CAM.
 * Lorsque des ingestions sans effacement sont effectuées (**Effacer le contenu existant** n’est pas défini), si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les groupes ont changé sur le système source. En effet, les groupes ne sont migrés qu’avec le contenu auquel ils sont associés. Pour cette raison, dans ce cas, les groupes membres d’un groupe sur le système source ne seront pas migrés, à moins qu’ils ne fassent partie d’un autre groupe en cours de migration ou dans la liste de contrôle d’accès des différents contenus en cours de migration. Pour migrer ces groupes par la suite, pensez à utiliser des packages, à supprimer des groupes de la cible et à migrer à nouveau le contenu approprié, ou à effectuer une nouvelle migration à l’aide d’une ingestion par effacement.
-* Lors d’une ingestion sans effacement, si un groupe existe avec l’une des mêmes données contraintes d’unicité (rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId) à la fois sur l’instance AEM source et l’instance AEM Cloud Service cible, le groupe en question n’est _pas_ migré et le groupe existant précédemment sur le système cloud reste inchangé. Elles sont consignées dans le rapport de migration principal.
-* Consultez [&#x200B; Migration de groupes d’utilisateurs fermés &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
+* Lors d’une ingestion sans effacement, si un groupe existe avec l’une des mêmes données limitées par l’unicité (rep:principalName, rep:authorizableId :uuid, jcr ou rep:externalId) à la fois sur l’instance AEM source et l’instance AEM Cloud Service cible, le groupe en question n’est _pas_ migré et le groupe existant sur le système cloud reste inchangé. Elles sont consignées dans le rapport de migration principal.
+* Consultez [ Migration de groupes d’utilisateurs fermés ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour en savoir plus sur les groupes utilisés dans une politique de groupe d’utilisateurs fermé (CUG).
 
 ## Résumé final et rapport
 
-Une fois l’extraction et l’ingestion terminées avec succès, un rapport est généré, présentant les détails de la migration du groupe. Pour plus d’informations, consultez [&#x200B; Validation de la migration de groupe &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-group-migration) .
+Une fois l’extraction et l’ingestion terminées avec succès, un rapport est généré, présentant les détails de la migration du groupe. Pour plus d’informations, consultez [ Validation de la migration de groupe ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-group-migration) .

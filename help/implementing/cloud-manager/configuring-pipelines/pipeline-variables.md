@@ -4,8 +4,8 @@ description: Découvrez comment utiliser les variables de pipeline dans Cloud Ma
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: fb180685152a00d520530d21a44337381febba7f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 14%
@@ -51,7 +51,7 @@ Si un pipeline est actif, la gestion des variables est bloquée.
    | Étape appliquée | Obligatoire. L’étape du pipeline à laquelle la variable s’applique :<ul><li>**Build** - La variable est appliquée pendant le processus de création.</li><li>**Tests fonctionnels** - La variable est utilisée pendant l’étape de test fonctionnel.</li><li>**Test de l’interface utilisateur** - La variable est utilisée pendant la phase de test de l’interface utilisateur.</li><li>**Déployer** - La variable est utilisée lors de l’étape de déploiement. Par exemple, utilisez cette variable pour les pipelines Edge Delivery Services.</li></ul> |
    | Type | Sélectionnez cette option si la variable est en texte brut ou chiffrée en tant que secret. |
 
-   ![&#x200B; Ajouter une variable &#x200B;](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
+   ![ Ajouter une variable ](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
 1. Cliquez sur **Ajouter**.
 

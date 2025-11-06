@@ -3,11 +3,11 @@ title: Recouvrements pour Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service applique le principe des recouvrements pour vous permettre d’étendre et de personnaliser les consoles et d’autres fonctionnalités.
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Dans une instance standard, la fonctionnalité prédéfinie est conservée sous 
 
       * Recréez la structure `/libs` appropriée sous `/apps`.
 
-        Cette restructuration ne nécessite aucune copie 1:1, car [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner avec des mécanismes de différenciation (diff).
+        Cette restructuration ne nécessite pas de copie 1:1, car le [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner avec des mécanismes de différenciation (diff).
 
       * Sous `/apps`, effectuez des modifications.
 

@@ -3,8 +3,8 @@ title: Prise en charge des sous-modules Git
 description: Découvrez comment vous pouvez utiliser des sous-modules Git pour fusionner le contenu de plusieurs branches dans des référentiels Git lors de la création.
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 24%

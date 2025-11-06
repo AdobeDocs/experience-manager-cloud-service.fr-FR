@@ -3,8 +3,8 @@ title: ContextHub
 description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 86%

@@ -4,8 +4,8 @@ description: Découvrez comment vérifier que Cloud Manager a confirmé votre no
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 17%
@@ -39,7 +39,7 @@ Les détails du statut s’affichent. Votre domaine personnalisé est prêt à �
 >
 >Si vous utilisez un certificat SSL *géré par Adobe (DV)* avec le domaine, Cloud Manager déclenche automatiquement la vérification lorsque vous cliquez sur **Vérifier** dans la boîte de dialogue Vérifier le domaine lorsque [vous ajoutez un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
->Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [&#x200B; ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+>Si vous envisagez d’utiliser un **certificat SSL géré par le client (OV/EV)**, votre domaine est vérifié *après* vous [ ajouter le certificat SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 
 ## Statuts de vérification {#statuses}

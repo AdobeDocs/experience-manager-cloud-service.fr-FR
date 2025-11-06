@@ -3,8 +3,8 @@ title: Interdire la sérialisation des ResourceResolvers via l’exporteur de mo
 description: Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Interdire la sérialisation des ResourceResolvers via l’exporteur de modèle Sling {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
-La fonctionnalité d’exporteur de modèle Sling permet de sérialiser les objets de modèle Sling au format JSON. Cette fonctionnalité est largement utilisée car elle permet à SPA (applications monopages) d’accéder facilement aux données d’AEM. Du côté de l’implémentation, la bibliothèque Jackson Databind est utilisée pour sérialiser ces objets.
+La fonctionnalité d’exporteur de modèle Sling permet de sérialiser les objets de modèle Sling au format JSON. Cette fonctionnalité est largement utilisée, car elle permet aux SPA (applications d’une seule page) d’accéder facilement aux données d’AEM. Du côté de l’implémentation, la bibliothèque Jackson Databind est utilisée pour sérialiser ces objets.
 
 La sérialisation est une opération récursive. À partir d’un « objet racine », il effectue une itération récursive sur tous les objets éligibles et les sérialise ainsi que leurs enfants. Vous trouverez une description des champs sérialisés dans l’article [Jackson - Choix des champs sérialisés/désérialisés](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
@@ -25,10 +25,10 @@ Cette approche sérialise tous les types d’objets dans JSON. Naturellement, il
 
 La `propertyMap` est particulièrement sensible (voir la documentation de l’API de [`getPropertyMap`](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--)), car il s’agit d’une structure de données interne, qui peut être utilisée à de nombreuses fins, par exemple pour mettre en cache des objets qui partagent le même cycle de vie que la `ResourceResolver`. La sérialisation de ces éléments peut faire fuiter les détails d’implémentation et avoir un impact potentiel sur la sécurité, car les données exposées ne doivent pas être lisibles et accessibles à un utilisateur final. Pour cette raison, `ResourceResolvers` ne doit pas être sérialisé en JSON.
 
-L’Adobe prévoit de désactiver la sérialisation des `ResourceResolvers` dans une approche en deux étapes :
+Adobe prévoit de désactiver la sérialisation des `ResourceResolvers` selon une approche en deux étapes :
 
 1. À partir des 14697 de mise à jour d’AEM as a Cloud Service, chaque fois qu’un `ResourceResolver` est sérialisé, AEM consigne un message d’avertissement. Nous recommandons à tous les clients de vérifier leurs journaux d’application pour trouver ces instructions de journal et d’adapter leur base de code en conséquence.
-1. À un moment ultérieur, l’Adobe désactivera la sérialisation de `ResourceResolver` en tant que JSON.
+1. Ultérieurement, Adobe désactivera la sérialisation de `ResourceResolver` en tant que JSON.
 
 ## Implémentation {#implementation}
 
@@ -43,12 +43,12 @@ Ce message du journal signifie que pendant le processus de sérialisation du `/c
 
 >[!NOTE]
 >
->Il a été validé que [les composants principaux AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) ne sont pas affectés par ce problème.
+>Il a été validé que les [composants principaux d’AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) ne sont pas affectés par ce problème.
 
 ## Action demandée {#requested-action}
 
-Adobe demande à tous les clients de vérifier leurs journaux d’application et leurs bases de code pour voir s’ils sont affectés par ce problème, et de modifier l’application personnalisée si nécessaire, de sorte que ce message d’avertissement n’apparaisse plus dans les journaux.
+Adobe demande à tous les clients de vérifier leurs journaux d’application et leurs bases de code pour voir s’ils sont affectés par ce problème, et de modifier l’application personnalisée si nécessaire, de sorte que ce message d’avertissement ne s’affiche plus dans les journaux.
 
 On suppose que, dans la plupart des cas, ces changements nécessaires sont simples. Les objets `ResourceResolver` ne sont pas du tout requis dans la sortie JSON, puisque les informations qu’ils contiennent ne sont normalement pas requises par les applications frontales, ce qui signifie que dans la plupart des cas, il devrait suffire d’exclure l’objet `ResourceResolver` de sa prise en compte par Jackson (consultez les [règles](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
-Si un modèle Sling est affecté par ce problème, mais n’est pas modifié, la désactivation explicite de la sérialisation de l’objet `ResourceResolver` (tel qu’exécuté par Adobe comme deuxième étape) impose une modification de la sortie JSON.
+Si un modèle Sling est affecté par ce problème, mais n’est pas modifié, la désactivation explicite de la sérialisation de l’objet `ResourceResolver` (telle qu’exécutée par Adobe lors de la deuxième étape) impose une modification de la sortie JSON.

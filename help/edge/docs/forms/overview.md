@@ -3,9 +3,9 @@ title: Vue d’ensemble d’Edge Delivery Services pour AEM Forms
 description: Créez et diffusez des formulaires hautement performants sur Adobe Experience Manager Edge Delivery Services, en mettant l’accent sur l’approche de création utilisant l’éditeur universel.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Edge Delivery Services pour AEM Forms constitue un ensemble de services compo
 
 Ces services permettent d’effectuer les opérations suivantes :
 
-- **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft SharePoint ou Google Drive) et la création WYSIWYG (éditeur universel ou éditeur de formulaires adaptatifs). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets, l’éditeur unversel ou l’éditeur de formulaires adaptatifs.
+- **Créer des expériences d’inscription avec les outils de votre choix :** augmentez l’efficacité de la création en découplant les sources de contenu. Vous pouvez utiliser la création basée sur des documents (Microsoft SharePoint ou Google Drive) et la création WYSIWYG (éditeur universel ou éditeur de formulaires adaptatifs). Vous pouvez utiliser plusieurs sources de contenu sur le même site de formulaires et utiliser vos outils de création préférés, tels que Microsoft Excel, Google Sheets, l’éditeur universel ou l’éditeur de formulaires adaptatifs.
 
 - **Offrir des expériences d’inscription numérique exceptionnelles :** proposez des expériences d’inscription numérique qui se chargent et génèrent leur rendu rapidement, et surveillez en permanence les performances de vos formulaires grâce à la télémétrie opérationnelle. Des temps de chargement plus rapides et une expérience client optimisée contribuent à des taux d’achèvement de formulaire et de conversion plus élevés.
 
@@ -49,7 +49,7 @@ Après avoir lu le guide, vous pourrez choisir la bonne méthode de création, c
 ### Éditeur universel
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 L’[Éditeur universel](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) est un outil visuel de création par glisser-déposer destiné aux personnes spécialistes du marketing et de la conception, qui associe vitesse et puissance de niveau professionnel :

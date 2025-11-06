@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 95%
+source-wordcount: '1135'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,7 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans l’[explorateur de configuration](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) avant d’utiliser l’IDE GraphiQL.
 
 L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
+
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)** ;
@@ -35,9 +36,9 @@ L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en
 * afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
-Vous pouvez accéder à l’éditeur de requêtes à partir de :
+Vous pouvez accéder au requêteur à partir de :
 
-* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+* **Outils** > **Général** > **Requêteur GraphQL**
 * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -100,13 +101,13 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 
 >[!NOTE]
 >
->Voir [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Voir [ Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
 >Les règles de réécriture personnalisées sur le Dispatcher peuvent remplacer les valeurs par défaut de la publication AEM.
 >
->Dans le cas où vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure `/graphql/execute.json/*` des correspondances.
+>Si vous envoyez des en-têtes de contrôle du cache TTL à partir du Dispatcher, en fonction d’un modèle de correspondance d’emplacement, vous pouvez alors, si nécessaire, exclure `/graphql/execute.json/*` des correspondances.
 
 Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler ces paramètres pour votre propre requête persistante.
 
@@ -114,7 +115,7 @@ Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler
 
    ![En-têtes de cache HTTP de requêtes persistantes](assets/cfm-graphqlapi-headers-01.png "En-têtes de cache HTTP de requêtes persistantes")
 
-1. Cette sélection ouvre la boîte de dialogue **Configuration du cache** :
+1. La sélection de cette option ouvre la boîte de dialogue **Configuration du cache** :
 
    ![Paramètres d’en-tête de cache HTTP de requête persistante](assets/cfm-graphqlapi-headers-02.png "Paramètres d’en-tête de cache HTTP de requête persistante")
 
@@ -141,7 +142,7 @@ La requête sera alors activée dans l&#39;environnement que vous sélectionnez.
 
 >[!NOTE]
 >
->La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
+>La définition du `Time To Live` de cache de la requête persistante {« cache-control »:« parameter »:value} a une valeur par défaut de 2 heures (7 200 secondes).
 
 ## Dépublier des requêtes persistantes {#unpublishing-persisted-queries}
 

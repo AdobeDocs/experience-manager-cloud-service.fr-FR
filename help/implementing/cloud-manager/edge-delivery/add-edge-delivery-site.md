@@ -2,12 +2,12 @@
 title: Ajouter un site Edge Delivery à Cloud Manager
 description: Découvrez comment ajouter un site Edge Delivery à votre programme de production ou à votre programme sandbox.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >Découvrez pourquoi vous devez intégrer votre site Edge Delivery Services à Cloud Manager.
->&#x200B;>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Consultez les [Avantages de l’utilisation du chemin recommandé par Adobe pour Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Pour ajouter un site Edge Delivery à Cloud Manager, procédez comme suit :**
 
 1. Assurez-vous d’avoir d’abord créé votre programme avec une licence Edge Delivery Services avant d’intégrer un site Edge Delivery à Cloud Manager.
 Consultez [Créer un programme de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com).
+1. Connectez-vous à Cloud Manager sur [experiece.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation de votre choix.
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 1. Utilisez l’une des méthodes suivantes :

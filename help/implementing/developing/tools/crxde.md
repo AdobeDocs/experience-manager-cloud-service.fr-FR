@@ -3,11 +3,11 @@ title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 86%
+source-wordcount: '1677'
+ht-degree: 85%
 
 ---
 
@@ -42,7 +42,7 @@ L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombr
 
 ### Barre de commutation supérieure {#top-switcher-bar}
 
-La barre de commutation supérieure permet de basculer rapidement entre le CRXDE Lite et le [Gestionnaire de packages](package-manager.md).
+La barre de commutation supérieure permet de basculer rapidement entre CRXDE Lite et [Gestionnaire de packages](package-manager.md).
 
 ### Widget de chemin de nœud {#node-path-widget}
 
@@ -121,7 +121,7 @@ Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez
 Le **bouton Créer** est un menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :
 
 * Nœud – un nœud de type arbitraire
-* Fichier – un nœud `nt:file` et son sous-nœud nt:resource
+* Fichier - un nœud `nt:file` et son sous-nœud nt:resource
 * Dossier – un nœud `nt:folder`
 
 ### Bouton Supprimer {#delete-button}

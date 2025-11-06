@@ -4,8 +4,8 @@ description: Découvrez l’assistant de création de projet qui vous aide à co
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 96%
@@ -28,7 +28,7 @@ Suivez ces étapes pour créer un projet d’application AEM dans Cloud Manager
 
    ![Créer une branche et un projet](assets/create-wizard2.png)
 
-1. Si vous le souhaitez, cliquez sur le séparateur pour afficher les paramètres supplémentaires de votre projet. Les valeurs par défaut sont fournies par l’archétype de projet AEM et n’ont généralement pas besoin d’être modifiées.
+1. Cliquez éventuellement sur le séparateur pour afficher les paramètres supplémentaires de votre projet. Les valeurs par défaut sont fournies par l’archétype de projet AEM et n’ont généralement pas besoin d’être modifiées.
 
    ![Paramètres de projet supplémentaires](assets/create-wizard5.png)
 

@@ -4,8 +4,8 @@ description: Découvrez comment configurer l’éditeur de texte enrichi pour cr
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
@@ -48,7 +48,7 @@ De nouveaux formats block sémantiques sont disponibles pour la sélection.
 1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes](rich-text-editor.md).
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi.
 
-Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, [!DNL Experience Manager] constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, empêchant la création de formatage en ligne. En revanche, les auteurs peuvent sélectionner les éléments structurels appropriés tels que les en-têtes et utiliser les styles globaux choisis dans l’option Styles afin d’assurer des balises claires et des options plus importantes pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
+Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, [!DNL Experience Manager] constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, empêchant la création de formatage en ligne. En revanche, les créateurs et créatrices peuvent sélectionner les éléments structurels appropriés tels que les en-têtes et utiliser les styles globaux choisis dans l’option Styles afin d’assurer des balises claires et plus d’options pour les personnes qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
 
 ## Utilisation de l’option Modification de la source {#use-of-the-source-edit-feature}
 

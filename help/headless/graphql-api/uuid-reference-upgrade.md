@@ -4,10 +4,10 @@ description: Découvrez comment mettre à niveau vos fragments de contenu pour o
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -71,7 +71,7 @@ Actuellement, les restrictions suivantes s’appliquent lors de l’utilisation 
    * Les nouveaux modèles de fragment de contenu avec les champs UUID de fragment de contenu ou UUID de référence de contenu ne peuvent pas être créés via OpenAPI.
    * Le champ `id` des modèles n’a pas été remplacé par basé sur l’UUID. Il utilise le chemin décodé base64 du modèle. Les modèles ne peuvent pas être déplacés. Par conséquent, cette valeur est toujours stable.
 
-* Ressources
+* Assets
 
    * Lors de la création d’un fragment de contenu par le biais d’OpenAPI, les types de champ `fragment-reference` ou `content-reference` doivent être utilisés pour spécifier respectivement les références à un fragment ou à une ressource, même lors de la définition de la valeur d’un champ de référence basé sur UUID.
 
@@ -91,7 +91,7 @@ Exécutez la mise à niveau du contenu en mode `dryRun` pour :
 * identifiez les références non valides en les répertoriant dans les fichiers journaux
 Vous pouvez ensuite corriger ces références avant d’exécuter la mise à niveau réelle du contenu.
 * identifiez les références de page, en les répertoriant dans les fichiers journaux
-Lorsque des références de page sont détectées, vous [&#x200B; devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
+Lorsque des références de page sont détectées, vous [ devez pas exécuter la mise à niveau du contenu](#when-you-should-not-upgrade).
 
 
 ### Application d’un gel du contenu {#enforce-a-content-freeze}
@@ -128,7 +128,7 @@ La mise à niveau du contenu peut être gérée à l’aide du point d’entrée
 
 ### Exemple de demande de mise à niveau de contenu {#example-content-upgrade-request}
 
-+++Demande
++++Requête
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
@@ -191,7 +191,7 @@ Content-Length: 386
 
 ### Exemple de demande de statut de mise à niveau du contenu {#example-content-upgrade-status-request}
 
-+++Demande
++++Requête
 
 ```http
 GET http://localhost:4502/libs/dam/cfm/maintenance.json?action=status&jobId=91af43a6-63ff-45e5-ac7b-06ccf565bdfa
@@ -308,7 +308,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 
 ### Exemple d’abandon d’une demande de mise à niveau du contenu {#example-abort-content-upgrade-request}
 
-+++Demande
++++Requête
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json

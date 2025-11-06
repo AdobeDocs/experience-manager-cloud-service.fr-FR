@@ -4,9 +4,9 @@ description: Utilisez le connecteur de traduction pour traduire votre contenu d�
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -169,9 +169,9 @@ Pour ajouter du contenu à une tâche de traduction :
    ![Explorateur de chemins d’accès.](assets/path-browser.png)
 
 1. Appuyez ou cliquez sur **Sélectionner** pour ajouter le contenu sélectionné à la tâche.
-1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie de langue**.
+1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie linguistique**.
 
-   ![Créer une copie de langue](assets/translate-copy-master.png)
+   ![Créer une copie linguistique](assets/translate-copy-master.png)
 
 1. Le contenu est désormais inclus dans la tâche.
 

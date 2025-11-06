@@ -2,11 +2,11 @@
 title: Prise en main d’Edge Delivery Services pour AEM Forms à l’aide de l’éditeur universel
 description: Découvrez comment créer et publier des formulaires hautes performances à l’aide d’Edge Delivery Services avec la création WYSIWYG de l’éditeur universel.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Pour garantir une expérience fluide et réussie avec Edge Delivery Services p
 - **Maîtrise de Git** : vous devez être à l’aise pour effectuer des opérations Git de base telles que le clonage de référentiels, la validation de modifications et l’envoi de mises à jour. Ces compétences sont essentielles pour la gestion du code source et la collaboration sur les projets.
 - **Compréhension des technologies web** : une connaissance pratique d’HTML, de CSS et de JavaScript est recommandée. Ces technologies constituent la base de la personnalisation et du dépannage des formulaires.
 - **Node.js (version 16 ou ultérieure)** : Node.js est requis pour le développement local et l’exécution des outils de création. Assurez-vous que la version 16 ou une version ultérieure est installée sur votre système.
-- **Gestionnaire de packages (npm ou yarn)** : vous aurez besoin de npm (gestionnaire de packages de nœuds) ou yarn pour gérer les dépendances et les scripts du projet.
+- **Gestionnaire de modules (npm ou yarn)** : vous aurez besoin de npm (gestionnaire de modules de nœuds) ou yarn pour gérer les dépendances et les scripts du projet.
 
 ### Contexte recommandé
 

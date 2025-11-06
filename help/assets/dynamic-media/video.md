@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
-ht-degree: 65%
+source-wordcount: '10063'
+ht-degree: 64%
 
 ---
 
@@ -60,7 +60,6 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
-
         [Prévisualisation de vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
         [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Utilisation des métadonnées vidéo
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
-
         [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos à vos pages web.
 
       * Intégrez une vidéo à l’aide d’une URL :
-
         [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Intégrez une vidéo à l’aide du code intégré dans la page web :
-
         [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/dynamic-media/embed-code.md).
 
    * [Génération de rapports vidéo](#viewing-video-reports).
@@ -135,7 +131,7 @@ La gestion des visionneuses de vidéos adaptatives et uniques prend en charge le
 * Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Diffuser des visionneuses de vidéos adaptatives sur le web et sur les postes de travail, les tablettes et les appareils mobiles.
 
-La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -183,7 +179,7 @@ DASH est la norme internationale et HLS est une norme Apple. Les deux sont utili
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur le système du poste de travail ou de l’appareil mobile de l’utilisateur ou de l’utilisatrice.
 
-Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -290,8 +286,8 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
 | 1 024 × 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1 280 × 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 × 1 080 | 16:9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 280 × 720 | 16 :9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 × 1 080 | 16 :9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
@@ -315,10 +311,10 @@ Le tableau suivant décrit comment les résultats de la formule se traduisent pa
 |--- |--- |
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
-| 1,78 | 16:9 |
+| 1,78 | 16 :9 |
 | 0,56 | 9:16 |
 
-Par exemple, une vidéo qui a une largeur de 1 440 pour une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
+Par exemple, une vidéo d’une largeur de 1 440 × d’une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour coder le fichier vidéo.
 
 ### Débit binaire {#bitrate}
 
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -605,7 +601,7 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
    ![Options Créer des légendes.](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *Le menu déroulant Créer une légende vous propose trois options : Télécharger des fichiers, Convertir des pistes audio et Traduire la légende.*
 
-+++**Option 1 :** *J’ai mes propres fichiers de sous-titres préexistants dans les langues que je souhaite utiliser* (**[!UICONTROL option Télécharger des fichiers]**)
+   +++**Option 1 :** *J’ai mes propres fichiers de sous-titres préexistants dans les langues que je souhaite utiliser* (**[!UICONTROL option Télécharger des fichiers]**)
 
    1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer une légende]** > **[!UICONTROL Télécharger des fichiers]**.
    1. Accédez à un ou plusieurs de vos fichiers `.vtt` préexistants, sélectionnez-les et ouvrez-les.
@@ -629,9 +625,9 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
    1. Si vous avez sélectionné **[!UICONTROL Enregistrer et fermer]** à l’étape précédente, au lieu de sélectionner **[!UICONTROL Enregistrer]**, vous pouvez toujours consulter l’état du traitement des fichiers chargés. Consultez [Afficher le statut du cycle de vie des fichiers de sous-titres et de pistes audio chargés](#lifecycle-status-video).
    1. Passez à l’étape 8.
 
-+++
+   +++
 
-+++**Option 2 :** *Je souhaite que l’IA génère mes fichiers de sous-titres dans plusieurs langues* (**[!UICONTROL option Convertir les pistes audio]**)
+   +++**Option 2 :** *Je souhaite que l’IA génère mes fichiers de sous-titres dans plusieurs langues* (**[!UICONTROL option Convertir les pistes audio]**)
 
    1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer une légende]** > **[!UICONTROL Convertir les pistes audio]**.
 
@@ -663,9 +659,9 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
       Vous pouvez modifier certaines métadonnées de légende ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces détails de métadonnées sont répercutés sur les URL publiques dans les vidéos publiées.
    1. Passez à l’étape 8.
 
-+++
+   +++
 
-+++**Option 3 :** *Le texte d’un fichier de sous-titres (`.vtt`) doit être corrigé, rechargé pour remplacer l’ancien fichier de `.vtt`, puis demandez à l’IA de traduire le fichier corrigé* (**[!UICONTROL Option Traduire les sous-titres]**)
+   +++**Option 3 :** *Le texte d’un fichier de sous-titres (`.vtt`) doit être corrigé, rechargé pour remplacer l’ancien fichier de `.vtt`, puis demandez à l’IA de traduire le fichier corrigé* (**[!UICONTROL Option Traduire les sous-titres]**)
 
    1. Cliquez sur **[!UICONTROL Créer une légende]** > **[!UICONTROL Traduire les légendes]**. Cette option est disponible si un ou plusieurs fichiers de sous-titres ont déjà été ajoutés et traités.
 
@@ -698,7 +694,7 @@ Les sous-titres ajoutés sont pris en charge avec les formats WebVTT et Adobe VT
 
    1. Passez à l’étape 8.
 
-+++
+   +++
 
 1. (Facultatif) Prévisualisez la vidéo avant de la publier pour vous assurer que les sous-titres et le son fonctionnent comme prévu. Voir [Prévisualisation d’une vidéo qui comporte plusieurs légendes et pistes audio](#preview-video-audio-subtitle).
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
@@ -752,11 +748,11 @@ Vous pouvez modifier les sous-titres (légendes) des ressources vidéo directeme
 1. Sur la page Propriétés , sélectionnez l’onglet **[!UICONTROL Légendes et pistes audio]**.
 1. Sous l’en-tête **Légendes**, cliquez sur ![icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) à droite d’un nom de fichier de légendes.
 
-   ![&#x200B; Icône Modifier le sous-titre sous l’en-tête Légendes &#x200B;](/help/assets/dynamic-media/assets/msma-editcaption.png)
+   ![ Icône Modifier le sous-titre sous l’en-tête Légendes ](/help/assets/dynamic-media/assets/msma-editcaption.png)
 
 1. Dans la boîte de dialogue **Modifier le sous-titre**, modifiez le texte du fichier WebVTT selon les besoins.
 
-   ![&#x200B; Boîte de dialogue Modifier le sous-titre &#x200B;](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+   ![ Boîte de dialogue Modifier le sous-titre ](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

@@ -1,14 +1,14 @@
 ---
 title: Comment configurer des sources de données ?
-description: Découvrez comment configurer les services web RESTful, les services web SOAP et les services OData en tant que sources de données pour un modèle de données de formulaire (FDM).
+description: Découvrez comment configurer les services web RESTful, les services web basés sur SOAP et les services OData en tant que sources de données pour un modèle de données de formulaire (FDM).
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=fr) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | Cet article |
 
 ![Intégration de données](do-not-localize/data-integeration.png)
@@ -39,7 +39,8 @@ L’intégration de données prend en charge l’authentification OAuth2.0, ([Co
 ### Prérequis
 
 Avant de configurer des bases de données relationnelles à l’aide de la Configuration de la console web [!DNL Experience Manager], il est obligatoire d’effectuer les actions suivantes :
-* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr), car les ports sont désactivés par défaut.
+
+* [Activez la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
 * [Ajouter des dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr#mysql-driver-dependencies).
 
 
@@ -72,7 +73,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    >[!NOTE]
    >
-   > Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr) pour plus d’informations.
+   > Consultez [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) pour plus d’informations.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
@@ -128,7 +129,7 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 >[!NOTE]
 > Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) ou le fichier [!DNL Swagger] ([Swagger Version 3.0](https://swagger.io/specification/v3/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
 
-### Configurez les services RESTful pour la version 2.0 de la spécification Open API. {#configure-restful-services-open-api-2.0}
+### Configuration des services RESTful pour la version 2.0 de la spécification Open API {#configure-restful-services-open-api-2.0}
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -137,8 +138,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les champs suivants sont préremplis avec des valeurs :
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
@@ -153,7 +154,7 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
-### Configurez les services RESTful pour la version 3.0 de la spécification Open API. {#configure-restful-services-open-api-3.0}
+### Configuration des services RESTful pour la version 3.0 de la spécification Open API {#configure-restful-services-open-api-3.0}
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -162,8 +163,8 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis sélectionnez **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service RESTful :
 
-   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL &#x200B; Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée source [!DNL &#x200B; Swagger], les informations de connexion au serveur cible s’affichent.
+   * Sélectionnez une URL ou un fichier dans la liste déroulante [!UICONTROL Swagger Source], et spécifiez l’[!DNL Swagger 3.0 URL] au fichier de définition [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
@@ -173,6 +174,7 @@ Les services web RESTful peuvent être décrits en utilisant les [spécification
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
 Voici quelques-unes des opérations non prises en charge par la version 3.0 de la spécification Open API des services RESTful :
+
 * Les rappels.
 * l’un de/l’un des.
 * Référence à distance.
@@ -316,19 +318,19 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 1. Sélectionnez **[!UICONTROL Créer]** pour créer la configuration cloud pour le service OData.
 
 <!--
-## Configure Microsoft® SharePoint List {#config-sharepoint-list}
+## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
+To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
       >[!NOTE]
@@ -337,7 +339,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 -->
 

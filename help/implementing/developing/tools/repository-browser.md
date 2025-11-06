@@ -5,8 +5,8 @@ description: Le navigateur de référentiel fournit une vue en lecture seule dan
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 78%
@@ -27,19 +27,19 @@ ht-degree: 78%
 
 Le navigateur de référentiels est un outil de développement qui fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et d’aperçu. Il est conçu pour faciliter l’affichage de la structure de contenu afin de consulter ou de déboguer plus facilement du contenu.
 
-Accessible à partir de [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), elle peut être utilisée pour parcourir le référentiel d’une instance d’auteur ou de publication pour un environnement sélectionné.
+Accessible à partir du [Developer Console AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), il peut être utilisé pour parcourir le référentiel d’une instance de création ou de publication pour un environnement sélectionné.
 
 ### Conditions préalables d’accès {#access-prerequisites}
 
-Ces conditions suivantes doivent être remplies pour accéder au navigateur AEM as a Cloud Service Developer Console ou Repository
+Ces conditions suivantes doivent être remplies pour accéder au Developer Console AEM as a Cloud Service ou au navigateur de référentiel
 
-Pour accéder à AEM as a Cloud Service Developer Console, voir [Accès à Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-Pour accéder à l’explorateur de référentiel, les conditions requises sont les mêmes que pour AEM as a Cloud Service Developer Console (spécifié ci-dessus). Pour afficher le contenu du navigateur de référentiel pour une instance spécifique :
+Pour accéder au navigateur de référentiel, les conditions requises sont les mêmes que pour AEM as a Cloud Service Developer Console (spécifié ci-dessus). Pour afficher le contenu du navigateur de référentiel pour une instance particulière :
 
-* Instances d’auteur : les utilisateurs disposant du profil produit des utilisateurs AEM pour l’ **instance d’auteur** peuvent afficher le navigateur de référentiel avec un accès en lecture minimal ; les autorisations de l’utilisateur sont respectées lors de la navigation dans le référentiel. Les utilisateurs disposant du profil produit Administrateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture complet.
+* Instances d’auteur : les utilisateurs disposant du profil de produit Utilisateurs AEM pour l’**instance d’auteur** peuvent afficher le navigateur de référentiel avec un accès en lecture minimal ; les autorisations de l’utilisateur sont respectées lors de la navigation dans le référentiel. Les utilisateurs disposant du profil produit Administrateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture complet.
 
-* Instances Publish : les utilisateurs disposant du profil produit des utilisateurs AEM pour l’ **instance Publish** peuvent afficher le navigateur de référentiel avec un accès en lecture minimal. Sans ce jeu de profils de produit, les utilisateurs navigueront en tant qu’utilisateur anonyme et certains chemins ne s’afficheront pas en raison d’autorisations limitées.
+* Instances de publication : les utilisateurs disposant du profil de produit Utilisateurs AEM pour l’**instance de publication** peuvent afficher le navigateur de référentiel avec un accès en lecture minimal. Sans cet ensemble de profils de produit, les utilisateurs navigueront en tant qu’utilisateurs anonymes et certains chemins n’apparaîtront pas en raison d’autorisations limitées.
 
 Pour plus d’informations sur la configuration des autorisations des utilisateurs, consultez la [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=fr).
 
@@ -52,7 +52,7 @@ Le navigateur de référentiel peut être lancé en suivant les étapes ci-desso
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Cliquez ensuite sur l’onglet **Navigateur de référentiel**.
-1. Sélectionnez une capsule correspondant à l’auteur, à la publication ou à la prévisualisation en cliquant sur la liste déroulante **Capsule** .
+1. Sélectionnez une capsule à créer, à publier ou à prévisualiser en cliquant sur la liste déroulante **Capsule**.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

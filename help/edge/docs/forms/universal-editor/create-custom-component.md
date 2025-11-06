@@ -2,9 +2,9 @@
 title: Créer des composants personnalisés pour un formulaire EDS
 description: Créer des composants personnalisés pour un formulaire EDS
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 99%
@@ -505,13 +505,13 @@ Pour ce faire, l’ancienne méthode consiste à suivre manuellement les étapes
 
 10. **Mettez à jour _component-definition.json** : dans `models/_component-definition.json`, mettez à jour le tableau au sein du groupe ayant `id custom-components` avec un objet de la manière suivante :
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants.
+   Cela permet de fournir la référence au nouveau composant de cartes à créer avec le reste des composants.
 
 11. **Exécutez le script build:json** : exécutez `npm run build:json` pour compiler et fusionner toutes les définitions JSON des composants dans un seul fichier à diffuser à partir du serveur. Cela garantit que le schéma de votre nouveau composant est inclus dans la sortie fusionnée.
 

@@ -3,8 +3,8 @@ title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Toutes les autres zones du référentiel (par exemple, `/content`, `/conf`, `/va
 
 Les index Oak (`/oak:index`) sont gérés spécifiquement par le processus de déploiement d’AEM as a Cloud Service. En effet, Cloud Manager doit attendre le déploiement d’un nouvel index et sa réindexation complète avant de passer à la nouvelle image de code.
 
-Ainsi, bien que les index Oak soient modifiables au moment de l’exécution, ils doivent être déployés sous forme de code pour pouvoir être installés avant les packages modifiables. Les configurations `/oak:index` font donc partie du package de code, mais pas du package de contenu, [comme décrit ci-dessous](#recommended-package-structure).
+Ainsi, bien que les index Oak soient modifiables au moment de l’exécution, ils doivent être déployés sous forme de code pour pouvoir être installés avant les packages modifiables. Les configurations `/oak:index` font donc partie du package de code, mais pas du module de contenu, [comme décrit ci-dessous](#recommended-package-structure).
 
 >[!TIP]
 >
@@ -79,9 +79,9 @@ La structure de déploiement d’application recommandée est la suivante :
 >Le même code doit être déployé dans tous les environnements. Ce code garantit un niveau de confiance selon lequel les validations dans l’environnement d’évaluation sont également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
 
 
-### Packages de contenu
+### Modules de contenu
 
-+ Le package `ui.content` contient l’ensemble du contenu et de la configuration. Le package de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les packages `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du package `ui.content` :
++ Le package `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les packages `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du package `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
    + Structures de contenu complexes obligatoires (c’est-à-dire présentation de contenu qui s’appuie sur des structures de contenu de référence définies dans Repo Init et les étend),
@@ -93,15 +93,15 @@ La structure de déploiement d’application recommandée est la suivante :
 
 ### Packages conteneurs
 
-+ Le package `all` est un package conteneur n’incluant QUE des artefacts déployables, le fichier Jar du lot OSGI, `ui.apps`, `ui.config` et des packages `ui.content` en tant qu’incorporations. Le package `all` ne doit pas comporter de **contenu ou de code** propre, mais doit déléguer tout le déploiement sur le référentiel à ses sous-packages ou aux fichiers Jar du lot OSGi.
++ Le package `all` est un package conteneur n’incluant QUE des artefacts déployables, le fichier Jar du lot OSGI, `ui.apps`, `ui.config` et des packages `ui.content` en tant qu’éléments incorporés. Le package `all` ne doit pas comporter de **contenu ou de code** propre, mais doit déléguer tout le déploiement sur le référentiel à ses sous-packages ou aux fichiers Jar du lot OSGi.
 
   Les packages sont désormais inclus à l’aide de la [configuration intégrée du plug-in FileVault Package Maven](#embeddeds) et non à l’aide de la configuration `<subPackages>`.
 
-  Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps`, `ui.config` et `ui.content` représentant des clientes, des clients ou des sites spécifiques dans AEM. Si vous suivez cette approche, assurez-vous que la division entre contenu modifiable et non modifiable est respectée et que les packages de contenu et les fichiers Jar du lot OSGi requis sont incorporés sous la forme de sous-packages dans le package du conteneur `all`.
+  Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps`, `ui.config` et `ui.content` représentant des clientes, des clients ou des sites spécifiques dans AEM. Si vous suivez cette approche, assurez-vous que la division entre contenu modifiable et non modifiable est respectée et que les modules de contenu et les fichiers Jar du lot OSGi requis sont incorporés sous la forme de sous-packages dans le module de contenu du conteneur `all`.
 
-  Une structure complexe d’un package de contenu de déploiement peut, par exemple, se présenter comme suit :
+  Une structure complexe d’un module de contenu de déploiement peut, par exemple, se présenter comme suit :
 
-   + Le package de contenu `all` intègre les packages suivants afin de créer un artefact de déploiement unique
+   + Le module de contenu `all` incorpore les packages suivants afin de créer un artefact de déploiement unique
       + `common.ui.apps` déploie le code requis par les sites A **et** B
       + Fichier Jar de bundle OSGi `site-a.core` requis par le site A
       + `site-a.ui.apps` déploie le code requis par le site A
@@ -130,11 +130,11 @@ La structure de déploiement d’application recommandée est la suivante :
 
 ### Packages d’applications supplémentaires{#extra-application-packages}
 
-Si d’autres projets AEM, eux-mêmes composés de leur propre packages de contenu et de code, sont utilisés par le déploiement AEM, leurs packages conteneurs doivent être incorporés dans le package `all` du projet.
+Si d’autres projets AEM, eux-mêmes composés de leur propre module de contenu et package de code, sont utilisés par le déploiement AEM, leurs modules conteneurs doivent être incorporés dans le package `all` du projet.
 
 Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut se présenter comme suit :
 
-+ Le package de contenu `all` intègre les packages suivants afin de créer un artefact de déploiement unique
++ Le module de contenu `all` incorpore les packages suivants afin de créer un artefact de déploiement unique
    + Fichier Jar de bundle OSGi `core` requis par l’application AEM
    + `ui.apps` déploie le code requis par l’application AEM
    + `ui.config` déploie les configurations OSGi requises par l’application AEM
@@ -159,7 +159,7 @@ Pour plus d’informations, consultez la [documentation d’Apache Jackrabbit 
 
 ## Marquage de packages en vue du déploiement par Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Par défaut, Adobe Cloud Manager récupère tous les packages générés par la version Maven. Cependant, étant donné que le package de conteneur (`all`) est l’artefact de déploiement unique qui contient tous les packages de code et de contenu, vous devez vous assurer que **seul** le conteneur (`all`) est déployé. Pour ce faire, les autres modules générés par la version Maven doivent être marqués avec la configuration suivante du plug-in Maven FileVault Content Package : `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+Par défaut, Adobe Cloud Manager récupère tous les packages générés par la version Maven. Cependant, étant donné que le module conteneur (`all`) est l’artefact de déploiement unique qui contient tous les packages de code et modules de contenu, vous devez vous assurer que **seul** le conteneur (`all`) est déployé. Pour ce faire, les autres modules générés par la version Maven doivent être marqués avec la configuration suivante du plug-in Maven de module de contenu FileVault : `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
@@ -203,7 +203,7 @@ Cette exigence porte **uniquement** sur les packages de code, c’est-à-dire to
 
 Pour savoir comment créer un package de structure de référentiel pour votre application, voir [Développement d’un package de structure de référentiel](repository-structure-package.md).
 
-Notez que les packages de contenu (`<packageType>content</packageType>`) **n’ont pas** besoin de ce package de structure de référentiel.
+Notez que les modules de contenu (`<packageType>content</packageType>`) **n’ont pas** besoin de ce package de structure de référentiel.
 
 >[!TIP]
 >
@@ -235,12 +235,12 @@ Ventilation de cette structure de dossiers :
 
   >[!WARNING]
   >
-  >Par convention, les dossiers incorporés des sous-packages sont nommés avec le suffixe de `-packages`. Cette dénomination permet de s’assurer que le code de déploiement et les packages de contenu ne sont **pas** déployés dans les dossiers cibles d’un sous-package `/apps/<app-name>/...`, ce qui entraîne un comportement d’installation destructif et cyclique.
+  >Par convention, les dossiers incorporés des sous-packages sont nommés avec le suffixe de `-packages`. Cette dénomination permet de s’assurer que le code de déploiement et les modules de contenu ne sont **pas** déployés dans les dossiers cibles d’un sous-package `/apps/<app-name>/...`, ce qui entraîne un comportement d’installation destructif et cyclique.
 
 + Le dossier de troisième niveau doit être
   `application`, `content` ou `container`
    + Le dossier `application` contient des packages de code.
-   + Le dossier `content` contient des packages de contenu.
+   + Le dossier `content` contient des modules de contenu.
    + Le dossier `container` contient les [packages d’applications supplémentaires](#extra-application-packages) pouvant être inclus par l’application AEM.
 Ce nom de dossier correspond aux [types de packages](#package-types) qu’il contient.
 + Le dossier de quatrième niveau contient les sous-packages. Il doit s’agir de l’un des dossiers suivants :
@@ -251,7 +251,7 @@ Seulement `install.author` et `install.publish` sont des cibles prises en charge
 
 Par exemple, un déploiement qui contient des packages spécifiques à AEM Author et AEM Publish peut se présenter comme suit :
 
-+ Le package conteneur `all` intègre les packages suivants afin de créer un artefact de déploiement unique
++ Le package conteneur `all` incorpore les packages suivants afin de créer un artefact de déploiement unique
    + `ui.apps` incorporé dans `/apps/my-app-packages/application/install` déploie le code sur AEM Author et AEM Publish
    + `ui.apps.author` incorporé dans `/apps/my-app-packages/application/install.author` déploie le code uniquement sur AEM Author
    + `ui.content` incorporé dans `/apps/my-app-packages/content/install` déploie le contenu et la configuration sur AEM Author et AEM Publish
@@ -281,7 +281,7 @@ Si les packages tiers se trouvent dans un **référentiel d’artefacts Maven ti
 
 Les applications/connecteurs tiers doivent être incorporés à l’aide du package `all`, en tant que conteneur dans le package (`all`) conteneur de votre projet.
 
-L’ajout de dépendances Maven suivant les pratiques Maven standard et l’incorporation d’artefacts tiers (packages de code et contenu) sont [décrits ci-dessus](#embedding-3rd-party-packages).
+L’ajout de dépendances Maven suivant les pratiques Maven standard et l’incorporation d’artefacts tiers (packages de code et modules de contenu) sont [décrits ci-dessus](#embedding-3rd-party-packages).
 
 >[!TIP]
 >
@@ -299,11 +299,11 @@ Une exception notable à cette règle générale est que le package de code non 
 >
 >Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-package-dependencies) ci-dessous.
 
-Les schémas courants applicables aux dépendances des packages de contenu sont les suivants :
+Les schémas courants applicables aux dépendances des modules de contenu sont les suivants :
 
 ### Dépendances de packages dans un déploiement simple {#simple-deployment-package-dependencies}
 
-Dans ce scénario, le package de contenu modifiable `ui.content` est défini de telle sorte qu’il dépende du package de code non modifiable `ui.apps`.
+Dans ce scénario, le module de contenu modifiable `ui.content` est défini de telle sorte qu’il dépende du package de code non modifiable `ui.apps`.
 
 + `all` ne comporte aucune dépendance
    + `ui.apps` ne comporte aucune dépendance
@@ -330,7 +330,7 @@ Vous trouverez, ci-après, des fragments de code de configuration `pom.xml` Mave
 
 ### Types de packages {#xml-package-types}
 
-Les packages de code et de contenu, qui sont déployés sous forme de sous-packages, doivent déclarer un type d’**application** ou de **contenu**, selon ce qu’ils contiennent.
+Les packages de code et modules de contenu, qui sont déployés sous forme de sous-packages, doivent déclarer un type d’**application** ou de **contenu**, selon ce qu’ils contiennent.
 
 #### Types de packages conteneur {#container-package-types}
 
@@ -365,7 +365,7 @@ Dans le fichier `ui.apps/pom.xml`, la directive de configuration de version `<pa
 
 #### Types de packages de contenu (modifiable)  {#mutable-package-types}
 
-Les packages de contenu doivent définir leur `packageType` sur `content`.
+Les modules de contenu doivent définir leur `packageType` sur `content`.
 
 Dans le fichier `ui.content/pom.xml`, la directive de configuration de version `<packageType>content</packageType>` de la déclaration du plug-in `filevault-package-maven-plugin` déclare son type de package.
 
@@ -392,7 +392,7 @@ Dans le fichier `ui.content/pom.xml`, la directive de configuration de version `
 
 ### Marquage de packages en vue d’un déploiement par Adobe Cloud Manager {#cloud-manager-target}
 
-Dans chaque projet générant un package, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. Le package conteneur (`all`) doit être le package unique déployé via Cloud Manager qui, à son tour, incorpore tous les packages de code et de contenu requis.
+Dans chaque projet générant un package, **à l’exception** du projet conteneur (`all`), ajoutez `<cloudManagerTarget>none</cloudManagerTarget>` à la configuration `<properties>` de la déclaration du plug-in `filevault-package-maven-plugin` pour vous assurer que le déploiement n’est **pas** effectué par Adobe Cloud Manager. Le package conteneur (`all`) doit être le package unique déployé via Cloud Manager qui, à son tour, incorpore tous les packages de code et modules de contenu requis.
 
 ```xml
 ...
@@ -628,4 +628,4 @@ Dans `all/pom.xml`, ajoutez le plug-in `maven-clean-plugin` qui nettoie le répe
 ## Ressources supplémentaires {#additional-resources}
 
 + [Gestion des packages à l’aide de Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [Plug-in FileVault Content Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Plug-in Maven de module de contenu FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

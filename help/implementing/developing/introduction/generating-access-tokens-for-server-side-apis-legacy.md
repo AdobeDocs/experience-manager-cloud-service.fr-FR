@@ -4,8 +4,8 @@ description: Découvrez comment faciliter la communication entre un serveur tier
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 94%
@@ -21,11 +21,11 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 <!-- ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
-Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur le service de création AEM, peut générer des informations d’identification d’AEM as a Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par une personne utilisatrice disposant du rôle d’administration AEM as a Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, les informations d’identification expirent après un an, mais elles peuvent être actualisées si nécessaire. Voir [Actualiser les informations d’identification](#refresh-credentials).
+Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur le service de création AEM, peut générer des informations d’identification d’AEM as a Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par une personne disposant du rôle d’administration de l’environnement AEM as a Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, les informations d’identification expirent après un an, mais elles peuvent être actualisées si nécessaire. Voir [Actualiser les informations d’identification](#refresh-credentials).
 
 Le flux de serveur à serveur comprend les étapes suivantes :
 
@@ -37,7 +37,7 @@ Le flux de serveur à serveur comprend les étapes suivantes :
 
 ### Extraction des informations d’identification AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Les personnes utilisatrices ayant accès à la Developer Console d’AEM as a Cloud Service y voient l’onglet Intégrations correspondant à un environnement donné, et deux boutons. Une personne utilisatrice disposant du rôle d’administration d’environnement AEM as a Cloud Service peut cliquer sur le bouton **Générer les informations d’identification du service** pour générer et afficher le fichier JSON des informations d’identification du service. Le fichier JSON contient toutes les informations requises pour le serveur non AEM, y compris l’ID client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quel que soit le pod choisi.
+Les personnes utilisatrices ayant accès à la Developer Console d’AEM as a Cloud Service y voient l’onglet Intégrations correspondant à un environnement donné, et deux boutons. Une personne disposant du rôle d’administration de l’environnement AEM as a Cloud Service peut cliquer sur le bouton **Générer les informations d’identification du service** pour générer et afficher le fichier JSON des informations d’identification du service. Le fichier JSON contient toutes les informations requises pour le serveur non AEM, y compris l’ID client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quel que soit le pod choisi.
 
 ![Génération JWT](assets/JWTtoken3.png)
 
@@ -67,7 +67,7 @@ Une fois générées, les informations d’identification peuvent être récupé
 
 >[!IMPORTANT]
 >
->Une personne administratrice de l’organisation IMS (généralement la même personne qui a configuré l’environnement au moyen de Cloud Manager), qui est également membre du profil produit d’utilisation ou d’administration AEM sur l’instance de création AEM, accède à la Developer Console. Elle doit alors cliquer sur le bouton **Générer les informations d’identification du service** afin que les informations d’identification soient générées et récupérées ultérieurement par une personne utilisatrice disposant d’autorisations d’administration pour l’environnement AEM as a Cloud Service. Si la personne administratrice de l’organisation IMS n’a pas effectué cette tâche, un message l’informera que le rôle d’administration de l’organisation IMS doit lui être attribué.
+>Une personne administratrice de l’organisation IMS (généralement la même personne qui a configuré l’environnement au moyen de Cloud Manager), qui est également membre du profil produit d’utilisation ou d’administration AEM sur l’instance de création AEM, accède à la Developer Console. Elle doit alors cliquer sur le bouton **Générer les informations d’identification du service** afin que les informations d’identification soient générées et récupérées ultérieurement par une personne disposant d’autorisations d’administration pour l’environnement AEM as a Cloud Service. Si la personne administratrice de l’organisation IMS n’a pas effectué cette tâche, un message l’informera que le rôle d’administration de l’organisation IMS doit lui être attribué.
 
 ### Installer les informations d’identification du service AEM sur un serveur non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -77,7 +77,7 @@ L’application non AEM qui appelle AEM doit pouvoir accéder aux informations d
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 
-Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [&#128279;](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
+Les informations d’identification de service AEM CS peuvent être échangées contre un jeton d’accès à l’aide d’exemples de code conçus à cet effet. L’exemple de code est disponible à partir du référentiel GitHub public d’Adobe [](https://github.com/adobe/aemcs-api-client-lib), qui contient des exemples de code que vous pouvez copier et adapter à vos propres projets. Notez que ce référentiel contient un exemple de code à titre de référence et n’est pas conservé en tant que dépendance de bibliothèque prête pour la production.
 
 ```
 /*jshint node:true */
@@ -104,7 +104,7 @@ Le jeton d’accès définit le moment de son expiration, généralement au bout
 
 ### Appel de l’API AEM {#calling-the-aem-api}
 
-Effectuez les appels d’API appropriés de serveur à serveur auprès d’AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`. Par exemple, en utilisant `curl` :
+Effectuez les appels API appropriés de serveur à serveur vers l’environnement AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`. Par exemple, en utilisant `curl` :
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
@@ -128,7 +128,7 @@ Pour plus d’informations sur les autorisations requises pour utiliser la Devel
 >
 >Le jeton d’accès de développement local est valide pendant 24 heures au maximum, après quoi il doit être régénéré selon la même méthode.
 
-Les développeurs peuvent utiliser ce jeton pour émettre des appels depuis leur application de test non AEM vers l’environnement AEM as a Cloud Service. En règle générale, une personne chargée du développement utilise ce jeton avec l’application non AEM sur son propre ordinateur portable. En outre, AEM as a Cloud Service est généralement un environnement distinct de la production.
+Les développeurs et développeuses peuvent utiliser ce jeton pour émettre des appels depuis leur application de test non AEM vers l’environnement AEM as a Cloud Service. En règle générale, une personne chargée du développement utilise ce jeton avec l’application non AEM sur son propre ordinateur portable. En outre, AEM as a Cloud Service est généralement un environnement hors production.
 
 Le flux de développement comprend les étapes suivantes :
 
@@ -143,7 +143,7 @@ Pour générer un jeton d’accès, cliquez sur **Obtenir le jeton de développe
 
 ### Appelez ensuite l’application AEM à l’aide du jeton d’accès {#call-the-aem-application-with-an-access-token}
 
-Effectuez les appels d’API de serveur à serveur appropriés auprès de l’application non AEM vers un environnement AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`.
+Effectuez les appels API de serveur à serveur appropriés auprès de l’application non AEM vers un environnement AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`.
 
 ## Actualisation des informations d’identification {#refresh-credentials}
 

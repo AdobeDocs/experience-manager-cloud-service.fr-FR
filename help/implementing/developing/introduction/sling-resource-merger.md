@@ -3,8 +3,8 @@ title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a C
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 95%
@@ -190,7 +190,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, mais certains ou tous les noeuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement `/apps`, mais certains nœuds enfants, ou tous, ne sont pas requis dans le recouvrement/remplacement `/apps`.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
@@ -198,7 +198,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
       * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
-      Le caractère générique &ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
+      Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
 
 * **Réorganiser les nœuds**
 
@@ -222,7 +222,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 >
 >Lors de l’accès à votre ressource, il est recommandé d’utiliser le point de montage approprié.
 >
->Cela garantit que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
+>Cela permet de s’assurer que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (ce qui réduit la structure qui doit être répliquée à partir de `/libs`).
 
 * Recouvrement :
 

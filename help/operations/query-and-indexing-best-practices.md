@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 45%
 
 ---
@@ -52,7 +52,7 @@ En outre, lorsque vous traitez un ensemble de résultats petit ou homogène, il 
 
 ### Prérécupération des résultats {#prefetching-results}
 
-Parfois, le contenu ou les exigences liées à un composant ne permettent pas d’utiliser le parcours transversal des nœuds comme méthode de récupération des données requises. Dans ce cas, les requêtes requises doivent être exécutées avant le rendu du composant afin que des performances optimales soient garanties.
+Parfois, le contenu ou les exigences liées à un composant ne permettent pas d’utiliser la traversée de nœuds comme méthode de récupération des données requises. Dans ce cas, les requêtes requises doivent être exécutées avant le rendu du composant afin que des performances optimales soient garanties.
 
 Si les résultats requis pour le composant peuvent être calculés au moment de sa création et qu’aucun changement de contenu n’est attendu, la requête peut être exécutée après que des modifications soient effectuées.
 
@@ -62,14 +62,14 @@ Une stratégie similaire peut être utilisée pour conserver le résultat dans u
 
 ## Optimiser les requêtes {#optimizing-queries}
 
-La documentation d’Oak fournit une [&#x200B; présentation générale de l’exécution des requêtes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). C’est la base de toutes les activités d’optimisation décrites dans ce document.
+La documentation d’Oak fournit une [ présentation générale de l’exécution des requêtes](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). C’est la base de toutes les activités d’optimisation décrites dans ce document.
 
 AEM as a Cloud Service fournit l’outil [Query Performance Tool](#query-performance-tool), conçu pour prendre en charge l’implémentation de requêtes efficaces.
 
 * Il affiche les requêtes déjà exécutées avec leurs caractéristiques de performance appropriées et leur plan de requête.
 * Il permet d’exécuter des requêtes ad hoc à différents niveaux, en commençant par afficher le plan de requête jusqu’à l’exécution de la requête complète.
 
-L’outil de performance de requête est accessible via [Developer Console dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries). L’outil de performance de requête d’AEM as a Cloud Service fournit plus d’informations sur les détails de l’exécution de la requête à partir de la version AEM 6.x.
+L’outil de performance de requête est accessible via [Developer Console dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries). L’outil de performance de requête d’AEM as a Cloud Service fournit plus d’informations sur les détails de l’exécution de la requête à partir de la version 6.x d’AEM.
 
 Ce graphique illustre le flux général d’utilisation de l’outil de performance des requêtes pour optimiser les requêtes.
 
@@ -87,7 +87,7 @@ La contrainte principale sur toute requête doit être une correspondance de pro
 
 Le moteur de requête ne prend en compte qu’un seul index. Cela signifie qu’un index existant peut et doit être personnalisé en y ajoutant d’autres propriétés d’index personnalisées.
 
-La section [&#x200B; Aide-mémoire pour les requêtes JCR &#x200B;](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également à quoi doit ressembler une définition d’index pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
+La section [ Aide-mémoire pour les requêtes JCR ](#jcr-query-cheatsheet) de ce document répertorie les contraintes disponibles et décrit également à quoi doit ressembler une définition d’index pour être récupérée. Utilisez l’[outil Performances des requêtes](#query-performance-tool) pour tester la requête et vous assurer que l’index approprié est utilisé et que le moteur de requête n’a pas besoin d’évaluer les contraintes en dehors de l’index.
 
 ### Commande {#ordering}
 
@@ -112,6 +112,7 @@ Reportez-vous à la section [Requêtes avec des jeux de résultats volumineux](#
 ## Outil de performance de requête {#query-performance-tool}
 
 L’outil de performance de requête (situé à l’adresse `/libs/granite/operations/content/diagnosistools/queryPerformance.html` et disponible via le [Developer Console dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries)) fournit :
+
 * Liste de toutes les « requêtes lentes » ; actuellement définies comme étant celles qui lisent/analysent plus de 5 000 lignes.
 * Une liste de « Requêtes populaires »
 * L’outil « Expliquer la requête » permet de comprendre comment une requête spécifique sera exécutée par Oak.
@@ -119,6 +120,7 @@ L’outil de performance de requête (situé à l’adresse `/libs/granite/opera
 ![Outil de performance de requête](assets/query-performance-tool.png)
 
 Les tableaux « Requêtes lentes » et « Requêtes populaires » incluent -
+
 * L’instruction de requête elle-même.
 * Détails du dernier thread qui a exécuté la requête, permettant d’identifier la page ou la fonctionnalité d’application qui exécute la requête.
 * Score « Optimisation de la lecture » pour la requête.
@@ -155,6 +157,7 @@ Pour expliquer une requête, procédez comme suit :
 
 Après avoir sélectionné `Explain`, l’utilisateur voit s’afficher un pop-up décrivant le résultat de l’explication de la requête (et son exécution, si elle est sélectionnée).
 Ce pop-up contient des détails sur -
+
 * Index utilisés lors de l’exécution de la requête (ou aucun index si la requête doit être exécutée à l’aide de [Repository Traversal](#repository-traversal)).
 * Le temps d&#39;exécution (si `Include Execution Time` case a été cochée) et le nombre de résultats lus (si les cases `Read first page of results` ou `Include Node Count` ont été cochées).
 * Le plan d’exécution, qui permet une analyse détaillée de l’exécution de la requête. Pour savoir comment l’interpréter, consultez la section [Lecture du plan d’exécution de la requête](#reading-query-execution-plan) .
@@ -172,6 +175,7 @@ Considérez la requête suivante -
 ```
 
 ...qui contient -
+
 * 3 restrictions
    * Type de nœud (`dam:Asset`)
    * Chemin (descendants de `/content/dam`)
@@ -191,6 +195,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 Cette section du plan stipule que :
+
 * Un index est utilisé pour exécuter cette requête -
    * Dans ce cas, l’index Lucene `/oak:index/damAssetLucene-9` sera utilisé. Par conséquent, les informations restantes se trouvent dans la syntaxe de requête Lucene.
 * Les 3 restrictions sont gérées par l’index .
@@ -203,7 +208,7 @@ Cette section du plan stipule que :
 * L’ordre est géré par l’index
    * car `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]` apparaît dans la requête Lucene.
 
-Une telle requête est susceptible de fonctionner correctement, car les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (à l’exception du filtrage par contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies (voir la section [&#x200B; Traversée d’index](#index-traversal) ci-dessous).
+Une telle requête est susceptible de fonctionner correctement, car les résultats renvoyés par la requête d’index ne seront pas filtrés davantage dans le moteur de requête (à l’exception du filtrage par contrôle d’accès). Cependant, il est toujours possible qu’une telle requête s’exécute lentement si les bonnes pratiques ne sont pas suivies (voir la section [ Traversée d’index](#index-traversal) ci-dessous).
 
 En envisageant une autre requête -
 
@@ -212,6 +217,7 @@ En envisageant une autre requête -
 ```
 
 ...qui contient -
+
 * 3 restrictions
    * Type de nœud (`dam:Asset`)
    * Chemin (descendants de `/content/dam`)
@@ -231,6 +237,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 Cette section du plan stipule que :
+
 * Seules 2 restrictions (sur les 3) sont gérées par l’index -
    * Restriction de type de nœud
       * implicite, car `damAssetLucene-9` indexe uniquement les nœuds de type dam:Asset.
@@ -276,7 +283,7 @@ Vous trouverez ci-dessous quelques bonnes pratiques à prendre en compte lors de
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la documentation sur l’index Oak Lucene [&#128279;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Pour plus d’informations, voir la documentation sur l’index Oak Lucene [](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Les vérifications automatisées du pipeline Cloud Manager appliqueront certaines des bonnes pratiques décrites ci-dessus.
 
@@ -285,7 +292,7 @@ Les vérifications automatisées du pipeline Cloud Manager appliqueront certaine
 Bien qu’il soit recommandé d’éviter les requêtes avec des jeux de résultats volumineux, il existe des cas valides où des jeux de résultats volumineux doivent être traités. Souvent la taille du résultat n’est pas connue à l’avance, certaines précautions doivent donc être prises pour rendre le traitement fiable.
 
 * La requête ne doit pas être exécutée dans une demande. Au lieu de cela, la requête doit être exécutée dans le cadre d’une tâche Sling ou d’un workflow AEM. Ces derniers ne comportent aucune limite dans leur exécution totale et sont redémarrés au cas où l’instance tomberait en panne pendant le traitement de la requête et de ses résultats.
-* Pour dépasser la limite de requête de 100 000 nœuds, vous devez utiliser [Pagination de jeu de clés](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) et diviser la requête en plusieurs sous-requêtes.
+* Pour dépasser la limite de requête de 100 000 nœuds, vous devez utiliser [Pagination de jeu de clés](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) et diviser la requête en plusieurs sous-requêtes.
 
 ## Traversée de référentiel {#repository-traversal}
 

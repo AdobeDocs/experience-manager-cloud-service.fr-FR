@@ -5,17 +5,17 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 92%
 
 ---
 
 # Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features pour activer ou désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features pour activer ou désactiver une ou plusieurs fonctionnalités de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
 Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md).
 
@@ -42,7 +42,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
       * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * Ils sont du type : **jcr:primaryType** `cq:Widget`
+   * Sont de type : **jcr:primaryType** `cq:Widget`
    * Possèdent tous deux les propriétés suivantes :
 
       * **Nom** `name`
@@ -61,7 +61,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
 Après activation d’un module externe, suivez ces instructions pour configurer la propriété `features`.
 
-| | Activer toutes les fonctions | Activez quelques fonctions spécifiques. | Désactiver toutes les fonctions. |
+| | Activer toutes les fonctions | Activez quelques fonctionnalités spécifiques. | Désactiver toutes les fonctions. |
 |---|---|---|---|
 | Nom | features | features | features |
 | Type | Chaîne | `String` (multichaîne ; définissez le type sur `String` et cliquez sur `Multi` dans CRXDE Lite) | Chaîne |
@@ -111,7 +111,7 @@ La configuration permet d’utiliser les trois types de cas suivants :
 
 * Collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant [!DNL Experience Manager]. Configuré à l’aide de `plaintext` ci-dessous.
 
-* Collez le texte, y compris les tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configuré à l’aide de `wordhtml` ci-dessous.
+* Collez le texte, y compris les tableaux, avec mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configuré à l’aide de `wordhtml` ci-dessous.
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/edit`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Dans le nœud `edit`, créez une propriété à l’aide des informations suivantes :
@@ -235,7 +235,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    * **Nom** `externalStyleSheets`
    * **Type** `String[]` (multichaîne ; cliquez sur **Multi** dans CRXDE)
-   * **Valeurs** Chemin d’accès et nom de fichier de chaque feuille de style que vous souhaitez inclure. Utilisez les chemins d’accès au référentiel.
+   * **Valeurs** Chemin d’accès et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins d’accès au référentiel.
 
    >[!NOTE]
    >
@@ -303,7 +303,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
    * Type : `String`
    * Valeur : `jpn-word-wrap` (sans préfixe `.`)
 
-1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
+1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient en sélectionnant le style.
    * Nom : `text`
 *Type : `String`
    * Valeur : `Japanese word-wrap`
@@ -323,15 +323,15 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 ## Configuration des formats de paragraphe {#paraformats}
 
-Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur ou l’autrice peut les sélectionner et les attribuer à l’aide du sélecteur Format. Les exemples de balises block incluent, entre autres, le paragraphe standard &lt;p> et les en-têtes &lt;h1>, &lt;h2>, etc.
+Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur ou l’autrice peut les sélectionner et les attribuer à l’aide du sélecteur Format. Les exemples de balises block comprennent, entre autres, le paragraphe standard &lt;p> et les en-têtes &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 >
->Ce plug-in ne convient pas au contenu avec une structure complexe, telle que des listes ou des tableaux.
+>Ce plug-in n’est pas adapté au contenu avec une structure complexe, comme des listes ou des tableaux.
 
 >[!NOTE]
 >
->Si une balise block, par exemple, une balise `<hr>`, ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe `paraformat`.
+>Si une balise block, par exemple une balise `<hr>`, ne peut pas être affectée à un paragraphe, il ne s’agit pas d’un cas d’utilisation valide pour un plug-in `paraformat`.
 
 Lorsque le plug-in Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
@@ -357,7 +357,7 @@ Pour activer le module externe `paraformat`, procédez comme suit :
 
 >[!CAUTION]
 >
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL Formats des paragraphes] même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL  Formats de paragraphe ], même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
@@ -378,7 +378,7 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
 
    * **Nom** `tag`
    * **Type** `String`
-   * **Valeur** La balise block pour le format, par exemple : p, h1, h2, etc.
+   * **Valeur** balise block du format ; par exemple : p, h1, h2, etc.
 
      Vous n’avez pas besoin de saisir les crochets de séparation.
 
@@ -440,7 +440,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 
 1. Enregistrez les modifications.
 
-Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles pour les auteurs.
+Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre d’autres caractères spéciaux disponibles pour les auteurs.
 
 ![Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-106.png " Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi")
 
@@ -455,18 +455,16 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
    * **Nom** `rangeStart`
-
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
    * **Nom** `rangeEnd`
-
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
 
 1. Enregistrez les modifications.
 
-   Par exemple, définissez une plage comprise entre 9 998 et 1 0000 vous fournit les caractères suivants.
+   Par exemple, définissez une plage comprise entre 9998 et 10000 fournit les caractères suivants.
 
    ![Définition dans CRXDE d’une série de caractères pour qu’elle soit disponible dans l’éditeur de texte enrichi](assets/chlimage_1-107.png)
 
@@ -500,8 +498,8 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
    >* **Type** `String[]`
    >
    >* **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
-   >* `table` pour permettre de modifier les propriétés du tableau, dont les styles.
-   >* `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
+   >   * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
+   >   * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet), car cela revient à définir les [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants selon les besoins :
@@ -541,7 +539,7 @@ Répétez les étapes ci-dessus pour chaque style requis.
 
 ### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hiddenheader}
 
-Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire de fournir du texte interne masqué dans la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres technologies d’assistance d’aider les lecteurs ayant divers besoins à comprendre l’objectif de la colonne.
+Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire de fournir un texte interne masqué dans la cellule de la cellule d’en-tête pour permettre aux lecteurs d’écran et à d’autres technologies d’assistance d’aider les lecteurs ayant différents besoins à comprendre l’objectif de la colonne.
 
 Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres permettent d’appliquer des styles CSS à des en-têtes masqués en mode modification et aperçu. Pour aider les auteurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
@@ -568,7 +566,7 @@ Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de
 Une installation Experience Manager standard comprend les dictionnaires pour les langues suivantes :
 
 * Anglais américain (en_us)
-* Anglais britannique (en_gb)
+* Anglais (fr_fr)
 
 >[!NOTE]
 >
@@ -577,7 +575,7 @@ Une installation Experience Manager standard comprend les dictionnaires pour le
 Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Sélectionnez la langue requise et téléchargez le fichier ZIP contenant les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
+1. Sélectionnez la langue requise et téléchargez le fichier ZIP avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
    >
@@ -590,9 +588,9 @@ Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 >
 >Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il ne s’exécute pas automatiquement lorsque vous commencez à saisir du texte.
 >
->Pour exécuter le vérificateur orthographique, sélectionnez le bouton Vérificateur orthographique dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+>Pour exécuter le vérificateur orthographique, sélectionnez le bouton Vérificateur orthographique dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 >
->Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, cliquez de nouveau sur le bouton Vérificateur orthographique .
+>Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, sélectionnez à nouveau le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 

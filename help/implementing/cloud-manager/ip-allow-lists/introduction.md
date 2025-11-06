@@ -4,8 +4,8 @@ description: Découvrez comment les Listes autorisées IP peuvent limiter les ad
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 21%
@@ -30,7 +30,7 @@ AEM as a cloud service est par défaut accessible par le biais d’Internet. Bie
 
 Les Listes autorisées IP Cloud Manager peuvent être utilisées pour contrôler l’accès et le limiter uniquement à ces adresses IP de confiance. Les utilisateurs de Cloud Manager disposant des autorisations appropriées peuvent [créer et ajouter des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) d’adresses IP de confiance à partir desquelles les utilisateurs de leur site peuvent accéder à leurs domaines AEM.
 
-Après l’ajout, les Listes autorisées IP [&#x200B; peuvent être appliquées ou non appliquées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) plusieurs fois en tant qu’unité ou entité à un service de création ou un service d’éditeur, ou les deux, dans un environnement.
+Après l’ajout, les Listes autorisées IP [ peuvent être appliquées ou non appliquées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) plusieurs fois en tant qu’unité ou entité à un service de création ou un service d’éditeur, ou les deux, dans un environnement.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Après l’ajout, les Listes autorisées IP [&#x200B; peuvent être appliquées 
 
 ### Pipelines front-end et Listes autorisées IP {#front-end-pipeline}
 
-Si vous utilisez ou avez l’intention d’utiliser le pipeline front-end [&#x200B; pour développer des sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), la Liste autorisée IP Cloud Manager suivante doit être ajoutée au préalable.
+Si vous utilisez ou avez l’intention d’utiliser le pipeline front-end [ pour développer des sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), la Liste autorisée IP Cloud Manager suivante doit être ajoutée au préalable.
 
 Lorsque vous [ajoutez la Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), donnez-lui *`Cloud Manager`* nom, puis copiez la liste d’adresses ci-dessous et collez-la dans la boîte de dialogue Liste autorisée IP .
 

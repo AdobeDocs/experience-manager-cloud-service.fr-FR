@@ -3,10 +3,10 @@ title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2129'
 ht-degree: 97%
 
 ---
@@ -17,7 +17,7 @@ AEM est une plateforme robuste fondée sur des technologies éprouvées, évolut
 
 >[!TIP]
 >
->Avant de passer aux technologies de base d’AEM, Adobe vous recommande de suivre le [Tutoriel Prise en main du développement d’AEM Sites - WKND](develop-wknd-tutorial.md).
+>Avant d’étudier les technologies de base d’AEM, Adobe vous recommande de suivre le [Tutoriel Prise en main du développement d’AEM Sites - WKND](develop-wknd-tutorial.md).
 
 ## Principes fondamentaux {#fundamentals}
 
@@ -246,7 +246,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 Utilise le package d’API Sling, `org.apache.sling.*` et des bibliothèques de balises.
 
-### Référencement d’éléments existants avec sling:include {#referencing-existing-elements-using-sling-include}
+### Référencement d’éléments existants à l’aide de sling:include {#referencing-existing-elements-using-sling-include}
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 

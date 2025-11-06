@@ -4,13 +4,13 @@ description: Découvrez comment modifier les propriétés d’une page, modifier
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 26%
 
 ---
-
 
 # Modification des propriétés de page {#page-properties}
 
@@ -24,7 +24,7 @@ Découvrez comment modifier [les propriétés d’une page](/help/sites-cloud/au
 
 Vous pouvez modifier les propriétés de page à plusieurs endroits dans AEM.
 
-* [À partir du &#x200B;](#from-the-sites-console)
+* [À partir du ](#from-the-sites-console)
 * [Dans l’éditeur de page](#from-the-page-editor)
 * [À partir de l’éditeur universel](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ Vous ne pouvez modifier en masse que des pages qui :
 La fenêtre de modification en bloc est divisée en deux verticalement :
 
 * La partie gauche répertorie les pages que vous avez sélectionnées en vue de la modification en bloc.
+
    * Vous pouvez sélectionner/désélectionner les pages selon vos besoins.
    * Par défaut, tous sont sélectionnés.
+
 * La droite est une liste des propriétés [pouvant être modifiées en bloc](/help/implementing/developing/extending/bulk-editor.md).
+
    * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous les onglets.
    * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
    * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
    * Seules les propriétés ayant une valeur commune s’affichent.
    * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), les valeurs ne s’affichent que lorsque *toutes* sont communes. Si seulement certains sont communs, ils ne seront affichés que lors de la modification.
+
 * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
 
 Vous pouvez mettre à jour les valeurs dans les champs disponibles dans les pages que vous sélectionnez. Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**. Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
@@ -103,7 +107,7 @@ Vous pouvez mettre à jour les valeurs dans les champs disponibles dans les page
 
 Si la page est basée sur un plan directeur ou hérite du contenu d’une autre page, l’héritage se reflète dans la fenêtre **Propriétés de la page** pour le champ individuel.
 
-![&#x200B; Propriétés héritées &#x200B;](assets/property-inhertiance.png)
+![ Propriétés héritées ](assets/property-inhertiance.png)
 
 Impossible de modifier les propriétés héritées. Appuyez ou cliquez sur l’icône **Annuler l’héritage** en regard d’un champ particulier pour rompre son héritage.
 
@@ -129,4 +133,4 @@ Sélectionnez **Synchroniser la page après le rétablissement de l’héritage*
 
 >[!TIP]
 >
->Pour plus d’informations sur l’héritage, consultez le document [&#x200B; Multi Site Manager et traduction &#x200B;](/help/sites-cloud/administering/msm-and-translation.md)
+>Pour plus d’informations sur l’héritage, consultez le document [ Multi Site Manager et traduction ](/help/sites-cloud/administering/msm-and-translation.md)

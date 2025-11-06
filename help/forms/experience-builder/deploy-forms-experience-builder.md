@@ -4,14 +4,14 @@ description: Découvrez comment utiliser Forms Experience Builder pour créer 
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 32%
+ht-degree: 74%
 
 ---
-
 
 # Déploiement et configuration de Forms Experience Builder
 
@@ -21,7 +21,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
-> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que le Forms Experience Builder continue d’évoluer pendant le programme d’accès anticipé.
+> **Documentation sujette à modification** : cette documentation est en cours de test produit. Elle est sujette à des mises à jour et des révisions. Les fonctionnalités, commandes et exemples peuvent changer à mesure que Forms Experience Builder se développe dans le cadre du programme d’accès anticipé.
 
 Ce guide complet aide à démarrer la création et la gestion de formulaires avec la technologie d’IA conversationnelle. Que vous débutiez et souhaitiez créer votre premier formulaire, ou que vous cherchiez à exploiter des fonctionnalités sophistiquées, vous trouverez des informations détaillées et des exemples pratiques pour vous guider dans les fonctionnalités de Forms Experience Builder.
 
@@ -68,7 +68,7 @@ Vous pouvez lancer le créateur directement lors de la modification d’un formu
 1. [Créez un formulaire à l’aide d’un modèle de composants principaux](/help/forms/creating-adaptive-form-core-components.md) ou ouvrez un formulaire existant.
 1. Sélectionnez l’icône **Forms Experience Builder** dans la barre d’outils de l’éditeur pour ouvrir l’interface de conversation.
 
-   ![Icône de l’assistant IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+   ![Icône de l’Assistant IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 **1. Éditeur universel (pour Edge Delivery Services Forms)**
 
@@ -81,8 +81,8 @@ Pour les formulaires fournis via Edge Delivery Services, le créateur est intég
 
 | Exemple de conversation |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **Essayez cette conversation pour créer un formulaire de contact complet (basé sur la démonstration de Summit) :**<br><br>**Vous :** « Créez un formulaire de contact pour capturer des informations personnelles, y compris le nom complet, l’adresse e-mail, le numéro de téléphone, le nom de la société, l’intitulé de la fonction et un champ de message pour les demandes »<br><br>**AI :** sélectionnez un modèle<br>    Liste déroulante pour sélectionner un modèle <br><br>**AI :** un thème<br>    Liste déroulante pour sélectionner un thème <br><br>**AI :** Créer un formulaire | ![Votre Premier Formulaire](/help/edge/docs/forms/assets/create-form.png) |
-| <br>**AI:** Ouvrir le formulaire créé | </br> Le formulaire est créé et ouvert dans l’éditeur |
+| **Essayez cette conversation pour créer un formulaire de contact complet (basé sur la démo Summit):**<br><br>**Vous :** « Créez un formulaire de contact pour recueillir des informations personnelles, y compris le nom, l’adresse e-mail, le numéro de téléphone, le nom de l’entreprise, l’intitulé du poste et un champ de message pour les demandes. »<br><br>**IA :** Sélectionner un modèle<br>    Une liste déroulante pour sélectionner un modèle <br><br>**IA :** Sélectionner un thème<br>    Une liste déroulante pour sélectionner un thème <br><br>**IA :** Créer le formulaire | ![Votre premier formulaire](/help/edge/docs/forms/assets/create-form.png) |
+| <br>**IA :** Ouvrir le formulaire créé | </br> Le formulaire est créé et ouvert dans l’éditeur. |
 
 
 ### Commandes essentielles
@@ -91,15 +91,15 @@ Pour les formulaires fournis via Edge Delivery Services, le créateur est intég
 |--------|---------|---------------|
 | `/` | Actions rapides et raccourcis | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
 | `@` | Référencer les champs de formulaire existants | `@email`, `@firstName`, `Make @phoneNumber required` |
-| Texte brut | Conversation naturelle | « Ajouter un champ de numéro de téléphone obligatoire », « Créer une validation pour l’e-mail » |
+| Texte brut | Conversation naturelle | « Ajouter un champ de numéro de téléphone obligatoire », « Créer une validation pour l’e-mail » |
 
-**Exemples de commandes spécifiques :**
+**Exemples de commandes spécifiques :**
 
-* `/create-form customer survey` - Crée un formulaire d’enquête auprès des clients
-* `/add-field @email validation` - Ajoute la validation au champ d’e-mail existant
-* `/create-rule show @spouse if @maritalStatus equals married` - Crée une logique conditionnelle
-* `/configure-submit to email support@company.com` - Configuration de l’envoi d’e-mails
-* `/help multi-step forms` - Obtient de l’aide sur la création de formulaires à plusieurs étapes
+* `/create-form customer survey` : crée un formulaire d’enquête auprès des clientes et clients.
+* `/add-field @email validation` : ajoute la validation au champ d’e-mail existant.
+* `/create-rule show @spouse if @maritalStatus equals married` : crée une logique conditionnelle.
+* `/configure-submit to email support@company.com` : configure l’envoi de l’e-mail.
+* `/help multi-step forms` : obtient de l’aide pour la création de formulaires à plusieurs étapes.
 
 ### Conseils pour réussir
 
@@ -128,69 +128,69 @@ Décrivez les exigences de votre formulaire en langage naturel. Forms Experienc
 
 **Ajouts de base :**
 
-    👤 Vous : « Ajouter une section pour les informations personnelles »
-    👤 Vous : « Inclure un téléchargement de fichier pour un CV »
-    👤 Vous : « Ajouter une liste déroulante pour la sélection de pays »
+    👤 Vous : « Ajoute une section pour les informations personnelles »
+    👤 Vous : « Inclus un chargement de fichier pour un CV »
+    👤 Vous : « Ajoute une liste déroulante pour la sélection de pays »
 
 **Spécifications détaillées :**
 
-    👤 Vous : « Ajoutez un panneau d’informations personnelles avec des champs pour le nom complet, la date de naissance, le numéro de téléphone et l’adresse e-mail »
-    👤 Vous : « Incluez un composant de chargement de fichier sécurisé pour les documents, limité aux fichiers PDF de moins de 5 Mo »
-    👤 Vous : « Ajoutez une liste déroulante par pays avec des options pour les États-Unis, le Canada, le Royaume-Uni et l’Allemagne »
+    👤 Vous : « Ajoute un panneau d’informations personnelles avec des champs pour le nom complet, la date de naissance, le numéro de téléphone et l’adresse e-mail »
+    👤 Vous : « Inclus un composant de chargement de fichier sécurisé pour les documents, limité aux fichiers PDF de moins de 5 Mo »
+    👤 Vous : « Ajoute une liste déroulante par pays avec des options pour les États-Unis, le Canada, le Royaume-Uni et l’Allemagne »
 
 #### Créer un comportement dynamique
 
 **Approche simple :**
 
-    👤 Vous : « Afficher les champs supplémentaires lorsque « Autre » est sélectionné »
-    🤖 AI : « Création d’une règle conditionnelle qui affiche des champs supplémentaires lorsque « Autre » est sélectionné »
+    👤 Vous : « Affiche les champs supplémentaires lorsque « Autre » est sélectionné »
+    🤖 IA : « Règle conditionnelle créée pour afficher des champs supplémentaires lorsque « Autre » est sélectionné »
     
-    👤 Vous : « Rendre le champ d’e-mail obligatoire »
-    🤖 AI : « Mettre à jour le champ d’e-mail pour qu’il soit obligatoire avec la validation »
+    👤 Vous : « Rends le champ d’e-mail obligatoire »
+    🤖 IA : « Champ d’e-mail mise à jour pour qu’il soit obligatoire avec validation »
     
-    👤 Vous : « Calculer le total automatiquement »
-    🤖 AI : « Ajout d’une logique de calcul pour calculer automatiquement les totaux »
+    👤 Vous : « Calcule le total automatiquement »
+    🤖 IA : « Logique de calcul ajoutée pour calculer automatiquement les totaux »
 
 **Règles métier complexes :**
 
-    👤 Vous : « Afficher les champs d’informations sur le conjoint uniquement lorsque l’état civil est défini sur « Marié(e) » »
-    🤖 AI : « Création d’une règle conditionnelle qui affiche les champs de conjoint(e) en fonction de l’état civil »
+    👤 Vous : « Affiche les champs d’informations sur le conjoint ou la conjointe uniquement lorsque la situation maritale est définie sur &quot;Marié&quot; ou &quot;Mariée&quot; »
+    🤖 IA : « Règle conditionnelle créée pour afficher les champs sur le conjoint ou la conjointe en fonction de la situation maritale »
     
-    👤 Vous : « Calculez le coût total en multipliant la quantité et le prix, puis ajoutez la taxe de 10 % »
-    🤖 AI : « Ajout d’une logique de calcul avec le calcul de la quantité, du prix et de la taxe »
+    👤 Vous : « Calcule le coût total en multipliant la quantité et le prix, puis ajoutez la taxe de 10 % »
+    🤖 IA : « Logique de calcul ajoutée avec le calcul de la quantité, du prix et de la taxe »
     
-    👤 Vous : « Activez le bouton de soumission uniquement lorsque tous les champs obligatoires sont remplis et que les conditions sont acceptées »
-    🤖 AI : « Création d’une logique de validation qui permet la soumission uniquement lorsque toutes les conditions sont remplies »
+    👤 Vous : « Active le bouton d’envoi uniquement lorsque tous les champs obligatoires sont remplis et que les conditions sont acceptées »
+    🤖 IA : « Logique de validation créée pour permettre l’envoi uniquement lorsque toutes les conditions sont remplies »
 
 #### Disposition et conception des formulaires
 
 **Modifications de la mise en page :**
 
-    👤 Vous : « Créer un formulaire à plusieurs étapes »
-    🤖 AI : « A converti le formulaire en disposition progressive avec navigation »
+    👤 Vous : « Crée un formulaire à plusieurs étapes »
+    🤖 IA : « Formulaire converti en disposition progressive avec navigation »
     
-    👤 Vous : « Organiser les champs en deux colonnes »
-    🤖 AI : « A mis à jour la disposition pour afficher les champs dans une disposition à deux colonnes »
+    👤 Vous : « Organise les champs en deux colonnes »
+    🤖 IA : « Disposition mise à jour pour afficher les champs dans une disposition à deux colonnes »
     
-    👤 Vous : « A converti en disposition en accordéon »
-    🤖 AI : « A transformé le formulaire pour utiliser des sections de style accordéon »
+    👤 Vous : « Convertis en disposition en accordéon »
+    🤖 IA : « Formulaire converti pour utiliser des sections de style accordéon »
 
 **Améliorations de la conception :**
 
-    👤 Vous : « Créez un formulaire de style assistant avec 3 étapes : informations personnelles, préférences et révision »
-    🤖 AI : « Création d’un formulaire d’assistant avec trois étapes et une navigation distinctes »
+    👤 Vous : « Crée un formulaire en mode assistant avec 3 étapes : informations personnelles, préférences et révision »
+    🤖 IA : « Formulaire en mode assistant créé avec trois étapes distinctes et une navigation »
     
-    👤 Vous : « Organisez les champs d’adresse dans une disposition compacte à deux colonnes »
-    🤖 AI : « Champs d’adresse organisés dans un format compact à deux colonnes »
+    👤 Vous : « Organise les champs d’adresse dans une disposition compacte à deux colonnes »
+    🤖 IA : « Champs d’adresse organisés dans un format compact à deux colonnes »
     
-    👤 Vous : « Mettez à jour la disposition pour qu’elle corresponde au cadre filaire joint »
-    🤖 AI : « Modification de la disposition pour qu’elle corresponde à la référence de conception fournie »
+    👤 Vous : « Mets à jour la disposition pour qu’elle corresponde à la structure filaire jointe »
+    🤖 IA : « Disposition modifiée pour qu’elle corresponde à la référence de conception fournie»
 
 ### Envoyer la configuration
 
-Forms Experience Builder peut configurer différents points d’entrée d’envoi pour connecter vos formulaires à des systèmes et services externes :
+Forms Experience Builder peut configurer différents points d’entrée d’envoi pour associer vos formulaires à des systèmes et services externes :
 
-| Type d’action Envoyer | Commande de configuration | Cas d’utilisation |
+| Type de l’action Envoyer | Commande de configuration | Cas d’utilisation |
 |------------------|---------------|----------|
 | **E-mail** | « Envoie le formulaire par e-mail. » | Notifications et confirmations pour les envois de formulaire |
 | **API REST** | « Envoie vers le point d’entrée REST. » | Applications personnalisées et systèmes tiers |
@@ -198,16 +198,16 @@ Forms Experience Builder peut configurer différents points d’entrée d’envo
 | **Workflow** | « Connecter à Power Automate. » | Automatisation et approbations des processus métier |
 | **Marketing** | « Intégrer à Marketo. » | Automatisation de la gestion des leads et du marketing |
 
-**Exemples de configuration d’envoi avancée :**
+**Exemples de configuration d’envoi avancée :**
 
-    👤 Vous : « Envoyer des envois de formulaire à hr@company.com et créer un dossier dans notre système CRM »
-    🤖 AI : « Envoi d’e-mail configuré et action d’envoi CRM »
+    👤 Vous : « Transmets les envois de formulaire à hr@company.com et crée un dossier dans notre système CRM »
+    🤖 IA : « Envoi d’e-mail et action d’envoi CRM configurés »
     
-    👤 Vous : « Envoyer des données à notre point d’entrée de l’API REST et déclencher le nouveau workflow client »
-    🤖 AI : « Configurer l’envoi de l’API REST avec des déclencheurs de workflow »
+    👤 Vous : « Envoie des données à notre point d’entrée de l’API REST et déclenche le nouveau workflow client »
+    🤖 IA : « Envoi à l’API REST configuré avec des déclencheurs de workflow »
     
-    👤 Vous : « Envoyer des réponses par e-mail à l’équipe commerciale et ajouter le prospect à notre plateforme d’automatisation marketing »
-    🤖 AI : « Envoi multicanal configuré avec automatisation des e-mails et du marketing »
+    👤 Vous : « Envoie les réponses par e-mail à l’équipe commerciale et ajoute le lead à notre plateforme d’automatisation marketing »
+    🤖 IA : « Envoi multicanal configuré avec automatisation des e-mails et du marketing »
 
 
 
@@ -220,13 +220,13 @@ Forms Experience Builder peut configurer différents points d’entrée d’envo
 
 Créez une validation sophistiquée et une logique commerciale qui répond aux interactions des utilisateurs et utilisatrices et garantit l’intégrité des données :
 
-    👤 vous : « Afficher la section d’adresse uniquement si l’utilisateur sélectionne « Adresse de livraison différente » »
-    🤖 AI : « Création d’une règle conditionnelle qui affiche/masque le panneau d’adresse en fonction de la sélection de la case à cocher »
+    👤 Vous : « Affiche la section d’adresse uniquement si &quot;Adresse de livraison différente&quot; est sélectionnée »
+    🤖 IA : « Règle conditionnelle créée pour afficher/masquer le panneau d’adresse en fonction de la sélection de la case à cocher »
 
 ### Création de formulaire à plusieurs étapes
 
-    👤 vous : « Créer un formulaire progressif avec 3 étapes : informations personnelles, préférences, confirmation »
-    🤖 AI : « Création d’un formulaire progressif avec une navigation entre les étapes et la validation à chaque étape »
+    👤 Vous : « Crée un formulaire progressif avec 3 étapes : informations personnelles, préférences, confirmation »
+    🤖 IA : « Formulaire progressif créé avec une navigation entre les étapes et la validation à chaque stade »
 
 ### Types de champs avancés
 
@@ -238,8 +238,8 @@ Créez une validation sophistiquée et une logique commerciale qui répond aux i
 
 ### Conversion de PDF en formulaire
 
-    👤 : « Convertir ce PDF en formulaire interactif »
-    🤖 IA : « Analyser le PDF et créer un formulaire avec les types de champs et la validation appropriés »
+    👤 Vous : « Convertis ce PDF en formulaire interactif »
+    🤖 IA : « PDF analysé et formulaire créé avec les types de champs et la validation appropriés »
 
 
 

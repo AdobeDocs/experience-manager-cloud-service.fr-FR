@@ -5,11 +5,11 @@ index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
@@ -42,9 +42,9 @@ Une fois que vous avez configuré votre programme et que vous disposez au moins 
 >
 >Avant de configurer un pipeline front-end, consultez le [Parcours de création rapide de site d’AEM](/help/journey-sites/quick-site/overview.md) pour obtenir un guide complet à travers l’outil de création rapide de site d’AEM, facile à utiliser. Ce parcours peut vous aider à rationaliser le développement front-end de votre site AEM, ce qui vous permet de personnaliser rapidement votre site sans aucune connaissance du serveur principal AEM.
 
-1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com).
+1. Connectez-vous à Cloud Manager sur [experiece.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation de votre choix.
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 
@@ -110,11 +110,11 @@ Saisissez les premiers caractères du nom de la branche et la fonction de saisie
 
 1. Indiquez les chemins à inclure dans le contrôle de l’expérience.
 
-   * Voir [&#x200B; Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
+   * Voir [ Tests de contrôle de l’expérience](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) pour plus d’informations.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [&#x200B; Comprendre les résultats du contrôle de l’expérience &#x200B;](/help/implementing/cloud-manager/reports/report-experience-audit.md).
+Lorsque le pipeline s’exécute, les chemins configurés pour le contrôle de l’expérience sont envoyés et évalués en fonction des tests de performance, d’accessibilité, d’optimisation du moteur de recherche, des bonnes pratiques et de PWA. Pour plus d’informations, voir [ Comprendre les résultats du contrôle de l’expérience ](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 

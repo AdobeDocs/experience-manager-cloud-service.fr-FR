@@ -4,8 +4,8 @@ description: Découvrez comment recevoir des informations sur les déploiements 
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 73%
@@ -45,7 +45,7 @@ Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer 
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre Préférences Experience Cloud **&#x200B;**. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
+Cliquez sur l’icône d’engrenage en haut de la barre latérale de notifications pour ouvrir la fenêtre Préférences Experience Cloud ****. À partir de là, vous pouvez définir vos abonnements aux notifications et la manière dont vous recevez les notifications.
 
 ![Icône Paramètres de notification](assets/notifications-configuration.png)
 

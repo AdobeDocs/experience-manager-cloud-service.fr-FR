@@ -2,19 +2,19 @@
 title: Fragments de contenu – considérations sur la suppression
 description: Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 46%
 
 ---
 
-# Considérations sur la suppression des fragments de contenu {#delete-considerations-content-fragments}
+# Considérations sur la suppression pour les fragments de contenu {#delete-considerations-content-fragments}
 
-Consultez ces points importants avant de définir vos stratégies de suppression pour les fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+Examinez ces points importants avant de définir vos politiques de suppression pour les fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 
 ## Autorisations – Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 
@@ -24,23 +24,23 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 1. **Le fragment de contenu en tant qu’entité unique.**
 
-   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **et supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu **et supprimer un fragment entier**.
    * **Autorisations** : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes.
 
-2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-noeuds.**
+2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variations, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
-   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu - **sans être autorisé à supprimer un fragment entier**.
+   * **Cas d’utilisation** : utilisateur qui doit modifier/mettre à jour un fragment de contenu, **sans être autorisé à supprimer un fragment entier**.
    * **Autorisations** : voir [Autorisations requises pour la fonctionnalité d’éditeur uniquement](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Voir aussi Contrôle des opérations de gestion des utilisateurs dans AEM.
+>Consultez également Comment auditer les opérations de gestion des utilisateurs dans AEM.
 
 ## Autorisations requises pour la fonctionnalité d’éditeur uniquement {#permissions-required-for-editor-functionality-only}
 
-Pour les utilisateurs qui doivent modifier/mettre à jour un fragment de contenu, **sans leur permettre de supprimer l’intégralité d’un fragment**, des autorisations spécifiques doivent être attribuées, car l’opération de base de l’éditeur de fragment de contenu nécessite que les sous-éléments transitoires puissent être supprimés.
+Pour les utilisateurs et utilisatrices qui doivent modifier/mettre à jour un fragment de contenu, **sans leur permettre de supprimer un fragment entier** des autorisations spécifiques doivent être attribuées, car le fonctionnement de base de l’éditeur de fragment de contenu nécessite que les sous-éléments transitoires puissent être supprimés.
 
 Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
@@ -48,9 +48,9 @@ Par exemple, lors de la manipulation des variantes, mais également lors de la m
 >
 >Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer affectée via la gestion des utilisateurs et/ou des groupes.
 
-Les autorisations nécessaires pour modifier/mettre à jour un fragment doivent être appliquées au noeud contenant le fragment de contenu ou à un noeud parent approprié (à n’importe quel niveau sous `/content/dam`). Lorsqu’elles sont affectées à ce nœud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
+Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`). Lorsqu’elles sont affectées à ce nœud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
 
-Par exemple, un dossier contenant tous les fragments de contenu, comme :
+Par exemple, un dossier pour contenir tous les fragments de contenu, tels que :
 
 * `/content/dam/contentfragments`
 
@@ -60,7 +60,7 @@ Par exemple, un dossier contenant tous les fragments de contenu, comme :
 >
 >Toutefois, cette action applique les mêmes autorisations de suppression à *tous* les autres types de ressources.
 
-Les conditions préalables aux autorisations pour permettre à un utilisateur et/ou à un groupe spécifique de modifier/mettre à jour un fragment de contenu sont les suivantes :
+Les autorisations préalables requises pour permettre à un utilisateur et/ou un groupe spécifique de modifier/mettre à jour un fragment de contenu sont les suivantes :
 
 >[!NOTE]
 >

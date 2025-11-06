@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2025.5.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de mai 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.5.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464352?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ AEM Assets s’intègre de manière native à Figma, ce qui permet aux concepte
 
 **Vue d’ensemble du contrôle d’accès basé sur les attributs (ABAC)**
 
-[Content Hub permet désormais d’appliquer des restrictions basées sur des règles pour accéder aux ressources](/help/assets/attribute-based-access-control.md). Les autorisations des ressources garantissent la gouvernance et s’assurent également que seules les ressources appropriées sont accessibles aux utilisateurs.
+[Content Hub permet désormais d’appliquer des restrictions basées sur des règles pour accéder aux ressources](/help/assets/attribute-based-access-control.md). Les autorisations de ressources assurent la gouvernance et garantissent que seules les ressources appropriées soient accessibles aux utilisateurs et utilisatrices.
 
 Les règles de restriction des ressources sont basées sur des métadonnées. Si les conditions définies dans la règle correspondent aux métadonnées de la ressource, la ressource s’affiche pour les groupes d’utilisateurs et d’utilisatrices.
 
@@ -108,7 +108,7 @@ Accédez à tous vos [rendus prédéfinis et recadrages intelligents Dynamic Me
 
 [Intégration native d’Experience Manager (AEM) Dynamic Media à Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/combine/aem-dynamic), ce qui permet aux spécialistes du marketing d’incorporer facilement des ressources AEM Dynamic Media (rendu et modèle de gestion de contenu) dans le contenu AJO et de fournir des mises à jour en temps réel et des expériences hyper-personnalisées sur plusieurs canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463784/?learn=on&enablevpops=&autoplay=true&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,6 +150,7 @@ Développez la liste ci-dessous pour afficher les API et les configurations OS
   <summary>Développer pour afficher les éléments obsolètes</summary>
 
 API Java :
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -237,21 +238,21 @@ Cas d’utilisation courants :
 * Personnalisation du contenu en fonction de la géolocalisation, du type d’appareil ou des attributs d’utilisateur ou d’utilisatrice
 * Fonctionnement en tant que middleware entre le réseau CDN et votre origine
 * Remise en forme des réponses d’API tierces (et éventuellement agrégation de plusieurs réponses d’API) avant de les diffuser au navigateur
-* Composition et diffusion de HTML rendu sur le serveur en périphérie à l’aide de contenu assemblé à partir de divers serveurs principaux
+* Composition et diffusion de HTML rendu sur le serveur Edge à l’aide de contenu assemblé à partir de divers serveurs principaux
 
 Nous disposons d’un nombre limité d’opportunités pour la diffusion de l’instance de publication AEM ou les projets Edge Delivery Services pour les sites de production en direct. Si vous souhaitez participer ou en savoir plus, adressez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) avec une brève description de votre cas d’utilisation.
 
-### Configuration du réseau CDN pour Edge Delivery Services (programme bêta) {#cdn-eds-beta}
+### Configuration du réseau CDN pour Edge Delivery Services (programme Beta) {#cdn-eds-beta}
 
 Le réseau CDN géré par Adobe offre des options de configuration flexibles, comme indiqué dans l’article [Configurer le pipeline](/help/operations/config-pipeline.md#configurations).
 
-Désormais, en version bêta, déployez un pipeline de configuration pour des fonctionnalités telles que les sélecteurs d’origine du réseau CDN, les transformations de réponse et de requête, etc. Contactez [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) avec les détails de votre cas d’utilisation.
+Désormais, en version Beta, déployez un pipeline de configuration pour des fonctionnalités telles que les sélecteurs d’origine du CDN, les transformations de réponse et de requête, etc. Contactez [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) avec les détails de votre cas d’utilisation.
 
-### Transfert de journal AEM vers d’autres destinations (Programme bêta) {#log-forwarding-beta}
+### Transfert de journal AEM vers d’autres destinations (Programme Beta) {#log-forwarding-beta}
 
 Bien que les journaux puissent être téléchargés depuis Cloud Manager, de nombreuses organisations préfèrent diffuser ces journaux vers une destination de journalisation spécifique. AEM prend déjà en charge le transfert de journaux AEM et de réseau CDN vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Cette fonctionnalité est configurée en libre-service et déployée à l’aide du pipeline de configuration.
 
-Désormais, en version bêta, vous pouvez transférer les journaux AEM vers Amazon S3, Sumo Logic et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, contrairement aux journaux de réseau CDN. Envoyez un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
+Désormais, en version Beta, vous pouvez transférer les journaux AEM vers Amazon S3, Sumo Logic et votre propre compte New Relic (et non le compte fourni par Adobe). Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge pour ces destinations de journalisation, contrairement aux journaux de réseau CDN. Envoyez un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
 
 Pour en savoir plus, consultez la [documentation sur le transfert de journaux](/help/implementing/developing/introduction/log-forwarding.md).
 

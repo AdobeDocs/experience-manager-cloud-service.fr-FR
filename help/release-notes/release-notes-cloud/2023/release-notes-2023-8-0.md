@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2023.8.0 d’ [!DNL Adobe Expe
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 100%
@@ -36,6 +36,7 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
   ![Boîte de dialogue modale Nouveau fragment de contenu.](/help/release-notes/assets/newCFEditor.png)
 
 Le nouvel éditeur de fragment de contenu offre les avantages suivants, qui ne sont pas disponibles dans l’éditeur d’origine :
+
 * Enregistrement automatique pour une meilleure efficacité de création et pour éviter toute perte accidentelle de modifications.
 * Vue hiérarchique d’un fragment de contenu et de ses références à l’aide de l’arborescence Structure pour une navigation rapide au sein d’un fragment profondément structuré.
   ![Arborescence de structure dans l’éditeur de fragments de contenu](/help/release-notes/assets/newCFEditor_StructureTree.png)
@@ -90,7 +91,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * Experience Manager Assets inclut désormais la nouvelle version 9 de `damAssetLucene` index. `damAssetLucene-9` modifie le comportement du comptage des facettes Oak Query en [n’évalue plus le contrôle d’accès sur les comptes de facettes](/help/assets/search-assets.md) renvoyée par l’index de recherche sous-jacent, ce qui entraîne des temps de réponse de recherche plus rapides.
 
-### Nouvelles fonctionnalités disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Fonctionnalités de version préliminaire disponibles dans [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
 * **Dynamic Media** : [prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface d’utilisation.
 
@@ -108,7 +109,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * [**Support aux entreprises pour Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilisez Google reCAPTCHA Enterprise dans un formulaire adaptatif pour offrir une meilleure protection contre les activités frauduleuses et les spams, offrant ainsi une expérience utilisateur plus sûre. Grâce à une analyse avancée des risques et à une intégration transparente, les utilisateurs authentiques peuvent facilement envoyer des formulaires lorsque les robots sont effectivement bloqués.
 
 
-### Nouvelles fonctionnalités disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Fonctionnalités de version préliminaire disponibles dans [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
 * **Adobe Analytics avec automatisation de la configuration Experience Cloud pour Forms**: vous pouvez désormais activer Adobe Analytics avec l’automatisation de la configuration de l’Experience Cloud à l’aide d’un saut de page de deux boutons. Vous pouvez ainsi connecter AEM Forms as a Cloud Service à des balises Experience Platform et à Adobe Analytics afin de capturer et de suivre les mesures de performances des formulaires que vous avez publiés.
 
@@ -116,7 +117,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Rapport adobe analytics d’engagement des utilisateurs de formulaires adaptatifs](/help/forms/assets/forms-analytics-report.png)
 
-* **[Fragment de formulaire dans Forms adaptatif basé sur les composants principaux](/help/forms/adaptive-form-fragments-core-components.md)**: dites adieu à la duplication, optimisez votre inventaire numérique et améliorez la collaboration lorsque vous augmentez votre expérience de création de formulaires avec les fragments de formulaire. Ces composants réutilisables s’intègrent facilement à plusieurs formulaires, ce qui rationalise la création de formulaires cohérents et d’apparence professionnelle. Les fragments de formulaire assurent la réutilisation, la normalisation et la cohérence de la marque grâce à la fonctionnalité &quot;changer une fois et refléter partout&quot;. Expérimentez une plus grande maintenabilité et une plus grande efficacité, car les mises à jour effectuées à un emplacement donné sont automatiquement propagées à tous les formulaires qui utilisent ces fragments.
+* **[Fragment de formulaire dans Forms adaptatif basé sur les composants principaux](/help/forms/adaptive-form-fragments-core-components.md)** : dites adieu à la duplication, optimisez votre inventaire numérique et améliorez la collaboration lorsque vous augmentez votre expérience de création de formulaires avec les fragments de formulaire. Ces composants réutilisables s’intègrent facilement à plusieurs formulaires, ce qui rationalise la création de formulaires cohérents et d’apparence professionnelle. Les fragments de formulaire assurent la réutilisation, la normalisation et la cohérence de la marque grâce à la fonctionnalité &quot;changer une fois et refléter partout&quot;. Expérimentez une plus grande maintenabilité et une plus grande efficacité, car les mises à jour effectuées à un emplacement donné sont automatiquement propagées à tous les formulaires qui utilisent ces fragments.
 
 * **[Étape de processus Adobe Sign améliorée](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: l’étape Processus Adobe Sign a été améliorée afin d’inclure les éléments suivants :
    * **Amélioration de la sécurité avec l’authentification par pièce d’identité officielle pour Adobe Sign :** l’authentification par pièce d’identité officielle d’Adobe Acrobat Sign offre un niveau supplémentaire de vérification en permettant aux utilisateurs et utilisatrices de s’authentifier à l’aide de pièces d’identité délivrées par l’État (permis de conduire, carte d’identité nationale, passeport). En utilisant des documents d’identification approuvés, cette amélioration ajoute un niveau de confiance supplémentaire au processus de signature, ce qui en fait une solution idéale pour les scénarios qui nécessitent une sécurité, une conformité et une validation des utilisateurs et utilisatrices renforcées.

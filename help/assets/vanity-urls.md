@@ -3,19 +3,20 @@ title: Création d’URL de redirection à l’aide de Dynamic Media avec les fo
 description: Utilisez les fonctionnalités OpenAPI de Dynamic Media pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Une URL Vanity est une version courte, propre, facile à mémoriser et lisible de votre URL de diffusion complexe. Vous pouvez inclure le nom de votre marque, les noms de produits et les mots-clés pertinents dans l’URL Vanity pour améliorer la visibilité de votre marque et l’interaction client
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
 
 ---
 
-
 # Utiliser des URL de redirection vers un microsite{#vanity-urls}
 
 Utilisez [!DNL Dynamic Media with OpenAPI capabilities] pour transformer vos URL de diffusion de ressources longues en URL de redirection courtes de marque. Les URL de diffusion de ressources standard incluent les UUID de ressources générés par le système qui rendent l’URL de diffusion complexe, difficile à mémoriser et à partager. Remplacez ces UUID de ressources par des identifiants simples (ID de redirection) pour générer une URL de redirection. Une URL de redirection est une version courte, propre et lisible de votre URL de diffusion complexe.
 
 Consultez les formats d’URL suivants pour comprendre leur différence :
+
 * [URL de diffusion standard](#standard-urls)
 * [URL de redirection](#vanity-url)
 
@@ -81,6 +82,7 @@ Pour créer l’URL de redirection vers un microsite, vérifiez que vous avez [a
 ## Création d’URL de redirection{#create-vanity-urls}
 
 Pour créer des URL de redirection vers un microsite, procédez comme suit :
+
 1. [Configurer les métadonnées des ressources](#set-up-asset-metadata)
 1. [Créer et mapper une variable d’environnement Cloud Manager](#map-cloud-manager-environment-variable)
 1. [Approuver les ressources nécessitant une URL de redirection pour la diffusion](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -89,18 +91,22 @@ Pour créer des URL de redirection vers un microsite, procédez comme suit :
 ### Configurer les métadonnées des ressources{#set-up-asset-metadata}
 
 Exécutez la procédure suivante pour configurer l’ID de redirection dans le formulaire de métadonnées de votre ressource :
+
 1. Accédez à la page de détails du dossier contenant vos ressources pour [!DNL Dynamic Media with OpenAPI] diffusion.
 1. [Modifiez ce formulaire de métadonnées](/help/assets/metadata-assets-view.md#edit-metadata-forms) en effectuant l’une des opérations suivantes :
+
    * Ajoutez un nouveau champ de métadonnées et spécifiez l’ID de redirection requis en tant que valeur de ce champ.
    * Mettez à jour le champ existant en remplaçant la valeur d’une propriété de métadonnées existante par l’ID de redirection requis. Découvrez les [bonnes pratiques](#best-practices) pour créer l’ID de redirection.
-     ![ID de redirection](/help/assets/assets/vanity-id-metadata.png)
-En savoir plus sur les [schémas de métadonnées](/help/assets/metadata-schemas.md).
 
-     >[!NOTE]
-     >
-     > * Utilisez des ID de redirection vers un microsite uniques pour chaque ressource. Vérifiez toujours que les ressources partageant le même formulaire de métadonnées possèdent des ID de redirection uniques pour DM avec diffusion OpenAPI via des URL de redirection. Si deux ressources partagent le même ID Vanity, DM avec OpenAPI fournit la ressource qui a reçu le plus récemment cet ID, en remplaçant le droit précédent de l’ID à une autre ressource.
-     >
-     > * Une seule ressource peut avoir plusieurs ID de redirection vers un microsite. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) et envoyez une demande pour générer les identifiants de redirection requis.
+   ![ID de redirection](/help/assets/assets/vanity-id-metadata.png)
+
+   En savoir plus sur les [schémas de métadonnées](/help/assets/metadata-schemas.md).
+
+   >[!NOTE]
+   >
+   > * Utilisez des ID de redirection vers un microsite uniques pour chaque ressource. Vérifiez toujours que les ressources partageant le même formulaire de métadonnées possèdent des ID de redirection uniques pour DM avec diffusion OpenAPI via des URL de redirection. Si deux ressources partagent le même ID Vanity, DM avec OpenAPI fournit la ressource qui a reçu le plus récemment cet ID, en remplaçant le droit précédent de l’ID à une autre ressource.
+   >
+   > * Une seule ressource peut avoir plusieurs ID de redirection vers un microsite. [Contactez l’assistance Adobe](https://helpx.adobe.com/in/contact.html) et envoyez une demande pour générer les identifiants de redirection requis.
 
 Après avoir configuré votre ID de redirection dans le formulaire de métadonnées de ressource, [mappez ce champ de métadonnées au mécanisme de diffusion du système](#map-cloud-manager-environment-variable).
 
@@ -134,7 +140,7 @@ Lorsque l’utilisateur clique sur l’URL de redirection, [!DNL Dynamic Media w
 
 ## Mise à l’échelle à l’aide d’URL de redirection vers un microsite{#scale-using-vanity-url}
 
-AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
+AEM as a Cloud Service vous permet de [personnaliser les noms DNS et de réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) au sein de vos adresses web. Utilisez ces fonctionnalités AEMCS avec vos URL de redirection pour les transformer en adresses web uniques, propres, descriptives, de marque, intuitives et offrant les [avantages mentionnés ci-dessus](#key-benefits).
 
 Consultez l’URL Vanity suivante et ses composants personnalisables :
 
@@ -184,7 +190,7 @@ Consultez l’URL Vanity suivante et ses composants personnalisables :
 Exécutez les étapes suivantes pour réécrire les règles de réseau CDN pour la diffusion :
 
 1. Accédez à votre référentiel AEM pour créer un fichier de configuration YAML.
-2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
+2. Exécutez les étapes de la section [configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) pour configurer les règles du réseau CDN et déployer la configuration via votre pipeline de configuration Cloud Manager.
 Suivez ces [bonnes pratiques](#best-practices) pour créer le chemin d’accès au domaine.
    [En savoir plus sur les règles de réécriture CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2024.11.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 98%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo Vue d’ensemble de la version de novembre 2024 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2024.11.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -57,7 +57,7 @@ Amélioration du [référencement de fragments de contenu avec des références 
 
 **API AEM REST OpenAPI pour la diffusion de fragments de contenu**
 
-L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
+L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu ](/help/headless/aem-content-fragment-delivery-with-openapi.md) est désormais disponible pour AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,7 +67,7 @@ L’[API AEM REST OpenAPI pour la diffusion de fragments de contenu &#x200B;](/
 
 Adobe Dynamic Media utilise l’intelligence artificielle pour générer automatiquement des sous-titres pour le contenu vidéo. Cette fonctionnalité est conçue pour améliorer l’accessibilité et l’expérience d’utilisation en fournissant des sous-titres précis en temps réel. L’IA analyse la piste audio de la vidéo pour transcrire la parole et créer des sous-titres, qui peuvent être modifiés pour plus de précision ou de personnalisation. Ces sous-titres permettent de répondre aux exigences d’accessibilité et d’améliorer l’engagement vidéo pour les audiences qui dépendent d’une prise en charge vidéo basée sur le texte ou qui préfèrent ce système.
 
-Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe &#x200B;](/help/assets/dynamic-media/video.md##enable-dash).
+Pour bénéficier d’un accès anticipé à la prise en charge des sous-titres générés par l’IA sur votre compte Dynamic Media, vous devez [créer et envoyer un cas d’assistance clientèle Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
 **Rapport de diffusion Dynamic Media**
 
@@ -114,9 +114,9 @@ Les notes de mise à jour répertorient les innovations apportées à la version
 
 #### Formulaires adaptatifs et formulaires HTML5
 
-* **[Créer des formulaires adaptatifs basés sur un modèle XFA existant](/help/forms/create-adaptive-form-using-xfa-templates.md)** : vous pouvez désormais créer des formulaires adaptatifs basés sur des composants principaux à l’aide de modèles de formulaire XFA (*.fichiers XDP). Cette fonctionnalité permet aux clientes et clients On-Premise d’AEM Forms de bénéficier d’investissements existants dans la technologie XFA pour adopter AEM Forms as a Cloud Service.
+* **[Créer des formulaires adaptatifs basés sur un modèle XFA existant](/help/forms/create-adaptive-form-using-xfa-templates.md)** : vous pouvez désormais créer des formulaires adaptatifs basés sur des composants principaux à l’aide de modèles de formulaires XFA (*.fichiers XDP). Cette fonctionnalité permet aux clientes et clients On-Premise d’AEM Forms de bénéficier d’investissements existants dans la technologie XFA pour adopter AEM Forms as a Cloud Service.
 
-* **Formulaires HTML5 (formulaires web XFA)** : les clientes et clients AEM Forms On-Premise qui utilisent la technologie XFA peuvent désormais passer facilement à AEM Forms as a Cloud Service tout en préservant leur expérience d’utilisation existante avec les formulaires HTML5 (formulaires web XFA). Cette fonctionnalité permet le rendu des modèles de formulaire XFA au format HTML5, rendant les formulaires accessibles sur les appareils qui ne prennent pas en charge les formulaires PDF XFA.
+* **Formulaires HTML5 (formulaires web XFA)** : les clientes et clients AEM Forms On-Premise qui utilisent la technologie XFA peuvent désormais passer facilement à AEM Forms as a Cloud Service tout en préservant leur expérience d’utilisation existante avec les formulaires HTML5 (formulaires web XFA). Cette fonctionnalité permet le rendu des modèles de formulaires XFA au format HTML5, rendant les formulaires accessibles sur les appareils qui ne prennent pas en charge les formulaires PDF XFA.
 
   ![Formulaires HTML (formulaires web XFA)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
@@ -173,6 +173,7 @@ Les développeurs et développeuses peuvent intégrer des fonctionnalités AEM 
 Découvrez les [API OpenAPI AEM](/help/implementing/developing/open-api-based-apis.md) et suivez un [tutoriel de bout en bout](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) illustrant la configuration et l’utilisation.
 
 Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disponibles dans le cadre d’un programme d’adoption précoce. Si cela vous intéresse, envoyez un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) décrivant comment vous prévoyez de les utiliser.
+
 * [API Sites Content Fragments](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API de dossiers Sites et Assets
@@ -182,7 +183,7 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 
 L’Edge Computing rapproche le traitement des données du navigateur, ce qui présente des avantages, notamment une latence réduite. En tant que contribution à la feuille de route, nous aimerions savoir si cette technologie est utile pour la diffusion de publication AEM et les projets Edge Delivery Services et ce pour quoi vous envisagez de l’utiliser. Envoyez un e-mail à [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) contenant des questions et des commentaires.
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 

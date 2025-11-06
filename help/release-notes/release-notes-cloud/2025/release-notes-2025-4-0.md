@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.4.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Consultez la vidéo de vue d’ensemble de la version d’avril 2025 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2025.4.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/3464004?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -143,7 +143,7 @@ Utile pour les scénarios comprenant le débogage et l’analyse des données, v
 
 #### Propriétés de région, de continent et d’organisation en tant que conditions correspondantes {#matching-conditions}
 
-Les règles du réseau CDN peuvent désormais correspondre en fonction de la région, du continent et de l’organisation pour des cas d’utilisation, y compris le blocage du trafic et les redirections. `clientRegion` et `clientContinent` augmentent le `clientCountry` déjà pris en charge pour qu’il corresponde en fonction de la géographie, tandis que `clientAsName` et `clientAsNumber` correspondent aux systèmes autonomes pour identifier les grands FAI, les entreprises ou les fournisseurs de cloud. En savoir plus sur ces [propriétés de requête nouvellement exposées](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+Les règles du réseau CDN peuvent désormais correspondre en fonction de la région, du continent et de l’organisation pour des cas d’utilisation, y compris le blocage du trafic et les redirections. `clientRegion` et `clientContinent` augmentent le `clientCountry` déjà pris en charge pour qu’il corresponde en fonction de la géographie, tandis que `clientAsName` et `clientAsNumber` correspondent aux systèmes autonomes pour identifier les grands FAI, les entreprises ou les fournisseurs de services cloud. En savoir plus sur ces [propriétés de requête nouvellement exposées](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
 
 #### Définir la valeur du cookie {#cookie-attributes}
 
@@ -164,18 +164,20 @@ L’**exécution** de Java 21 la plus performante est automatiquement déployé
 Pour assurer une surveillance efficace des environnements client, les journaux Java d’AEM doivent conserver un format cohérent et ne doivent pas être remplacés par des configurations personnalisées. La sortie du journal doit rester redirigée vers les fichiers par défaut. Pour le code de produit AEM, les niveaux de journal par défaut doivent être conservés. Cependant, il est acceptable d’ajuster les niveaux de journal pour le code développé par le client.
 
 À cette fin, aucune modification ne doit être apportée aux propriétés OSGi suivantes :
+
 * **Configuration du journal Apache Sling** (PID : `org.apache.sling.commons.log.LogManager`) - *toutes les propriétés*
 * **Configuration de l’enregistreur de journaux Apache Sling** (PID d’usine : `org.apache.sling.commons.log.LogManager.factory.config`)
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 À la mi-mai, AEM appliquera une politique selon laquelle toute modification personnalisée de ces propriétés sera ignorée. Passez en revue vos processus en aval et ajustez-les en conséquence. Par exemple, si vous utilisez la fonction de transfert de journal :
+
 * Si votre destination de journalisation s’attend à un format de journal personnalisé (autre que celui par défaut), vous devrez peut-être mettre à jour vos règles d’ingestion.
 * Si les modifications apportées aux niveaux de journal réduisent la verbosité du journal, sachez que les niveaux de journal par défaut peuvent entraîner une augmentation significative du volume du journal.
 
 ### Transfert de journal AEM vers d’autres destinations - Programme Beta {#log-forwarding-earlyadopter}
 
-Avec la version bêta, vous pouvez désormais transférer les journaux AEM vers New Relic (à l’aide de HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, contrairement aux journaux de réseau CDN. Envoyer un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
+Avec la version Beta, vous pouvez désormais transférer les journaux AEM vers New Relic (à l’aide de HTTPS), Amazon S3 et Sumo Logic. Notez que les journaux AEM (y compris Apache/Dispatcher) sont pris en charge, contrairement aux journaux de réseau CDN. Envoyer un e-mail à l’adresse [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) pour obtenir l’accès.
 
 Bien que les journaux puissent être téléchargés depuis Cloud Manager, de nombreuses organisations préfèrent diffuser ces journaux vers une destination de journalisation spécifique. AEM prend déjà en charge le transfert de journaux AEM (disponibilité générale) et de réseau CDN vers Azure Blob Storage, Datadog, HTTPS, Elasticsearch (et OpenSearch) et Splunk. Cette fonctionnalité est configurée en libre-service et déployée à l’aide du pipeline de configuration.
 

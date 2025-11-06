@@ -4,9 +4,9 @@ description: Bonnes pratiques pour intégrer un déploiement Experience Manager 
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3438'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 | Proposition de valeur pour les oersonnes impliquées | Offre Adobe | Surfaces impliquées |
 |---|---|---|
 | Les personnes créatives découvrent des ressources à partir de [!DNL Experience Manager], les ouvrent et les utilisent, les modifient et chargent les modifications dans [!DNL Experience Manager], ou encore chargent les nouveaux fichiers dans [!DNL Experience Manager] sans quitter leur application [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign. |
-| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
+| Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
 | Les spécialistes marketing et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock dans Experience Manager. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | Interface web [!DNL Experience Manager] |
 | Améliorez la collaboration entre les concepteurs de produits numériques et les spécialistes marketing. Permettez aux concepteurs d’utiliser les ressources numériques dans les modèles de conception et de structure filaire sur la zone de travail Adobe XD. | [[!DNL Adobe Asset Link] pour [!DNL Adobe XD]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | Les spécialistes marketing peuvent créer automatiquement des variations et des dérivés en fonction des ressources chargées et des actions prédéfinies créées à l’aide de la personnalisation. Utilisez cette automatisation pour améliorer la vitesse du contenu et réduire les efforts manuels. | [Automatisation du contenu](/help/assets/cc-api-integration.md) | Interface Web [!DNL Experience Manager Assets] |
@@ -127,7 +127,7 @@ L’[intégration d’Experience Manager et Adobe Stock](/help/assets/aem-asset
 
 Quelques points importants à savoir concernant cette intégration :
 
-* Lorsque des ressources Adobe Stock sont enregistrées dans Experience Manager, elles deviennent des ressources Experience Manager Assets standard, avec un binaire enregistré dans le référentiel Experience Manager. Certaines métadonnées liées à Adobe Stock sont enregistrées pour la ressource dans Experience Manager. Sinon, le processus d’ingestion ressemble à celui de tout autre fichier. Par exemple, si les balises dynamiques sont actives, les balises sont ajoutées à ces fichiers lors de l’enregistrement.
+* Lorsque des ressources Adobe Stock sont enregistrées dans Experience Manager, elles deviennent des ressources Experience Manager Assets standard, avec un binaire enregistré dans le référentiel Experience Manager. Certaines métadonnées liées à Adobe Stock sont enregistrées pour la ressource dans Experience Manager. Sinon, le processus d’ingestion ressemble à celui de tout autre fichier. Par exemple, si les balises intelligentes sont actives, les balises sont ajoutées à ces fichiers lors de l’enregistrement.
 * La ressource enregistrée dans Experience Manager est une copie et non un lien vers Adobe Stock.
 
 **Utilisation des ressources enregistrées depuis Adobe Stock dans Experience Manager dans Creative Cloud**. Cette intégration est indépendante d’Adobe Asset Link, mais cette fonction reconnaît ces ressources enregistrées depuis Stock de cette manière et affiche d’autres métadonnées et une icône Stock sur ces ressources dans l’interface utilisateur de l’extension Adobe Asset Link dans Photoshop, Illustrator et InDesign. Les fichiers peuvent être parcourus, ouverts, etc., car il s’agit de ressources Experience Manager standard lorsqu’ils sont enregistrés dans Experience Manager.
@@ -203,7 +203,7 @@ Comme nous l’avons vu dans ce document, il est recommandé d’effectuer des m
 Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 
 * Lorsque les utilisateurs et utilisatrices de Photoshop, InDesign ou Illustrator souhaitent modifier un fichier, ils ou elles effectuent une opération d’extraction sur la ressource donnée.
-* La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des utilisateurs synchronisés sur le disque par l’application de bureau Creative Cloud et l’indicateur d’extraction est activé sur la ressource dans Experience Manager afin de minimiser les conflits de modification.
+* La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des profils synchronisés sur le disque par l’application de bureau Creative Cloud et l’indicateur d’extraction est activé sur la ressource dans Experience Manager afin de minimiser les conflits de modification.
 * À partir de là, la personne travaille dans un fichier qui est stocké localement à l’emplacement synchronisé et peut continuer à travailler et à enregistrer les modifications nécessaires à n’importe quelle fréquence.
 * En outre, comme la ressource se trouve dans le compte Creative Cloud, elle est également disponible sur d’autres appareils que la personne peut posséder (par exemple, elle peut être ouverte ou modifiée dans une application mobile Creative Cloud dédiée) et peut être partagée avec d’autres personnes utilisatrices de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans Experience Manager est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’Experience Manager comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie d’ Experience Manager Assets.

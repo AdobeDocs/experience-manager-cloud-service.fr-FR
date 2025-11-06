@@ -3,9 +3,9 @@ title: Vue d’ensemble de l’éditeur universel pour les développeurs et dév
 description: Si vous êtes en charge du développement d’AEM et que le fonctionnement de l’éditeur universel et la manière de l’utiliser dans votre projet vous intéressent, ce document vous donne une introduction de bout en bout en vous guidant tout au long de l’instrumentation du projet WKND pour utiliser l’éditeur universel.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 

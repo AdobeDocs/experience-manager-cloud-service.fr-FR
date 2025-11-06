@@ -4,15 +4,14 @@ description: Collection de modèles de prompts et d’exemples éprouvés pour c
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 38%
+ht-degree: 99%
 
 ---
-
 
 # Forms Experience Builder - Bibliothèque de prompts
 
@@ -41,9 +40,9 @@ Cette bibliothèque fournit des modèles de prompt réutilisables pour les cas c
 
 **Préparez les ressources de marque à l’avance pour créer des formulaires cohérents :**
 
-- **Modèles de marque** - Préparez des modèles de formulaire normalisés avec les couleurs, les polices et les modèles de disposition de votre entreprise
-- **Instructions de style** - Définissez un style de champ, des conceptions de bouton et des normes d’espacement cohérents que Forms Experience Builder peut appliquer
-- **Bibliothèque de composants** - Travaillez avec votre équipe de développement pour préparer des composants de formulaire réutilisables qui correspondent à votre identité de marque
+- **Modèles de marque** : préparez des modèles de formulaire standardisés avec les couleurs, les polices et les modèles de disposition de votre entreprise.
+- **Directives de style** : définissez un style de champ, des conceptions de bouton et des normes d’espacement cohérents que le créateur d’expériences de formulaires peut appliquer.
+- **Bibliothèque de composants** : travaillez avec votre équipe de développement pour préparer des composants de formulaire réutilisables qui correspondent à votre identité de marque.
 - **Ressources visuelles** : préparez les logos, les icônes et les éléments d’arrière-plan pour les intégrer aux formulaires.
 
 
@@ -55,45 +54,45 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Étape 1 : démarrer simplement :**
 
-    Créez un formulaire de contact de base avec des champs de nom, d’e-mail et de message
+    Crée un formulaire de contact avec des champs de nom, d’adresse e-mail, de téléphone et de message
 
 **Étape 2 : ajouter la validation :**
 
-    Rendre les champs @name et @email obligatoires avec la validation appropriée
+    Rends les champs @name et @email obligatoires avec la validation appropriée
 
-**Étape 3 : améliorer l’expérience d’utilisation :**
+**Étape 3 : améliorer l’expérience client :**
 
-    Ajoutez le texte de l’espace réservé : @name « Votre nom complet », @email « your.email@company.com » @message « Dites-nous comment nous pouvons vous aider »
+    Ajoute le texte de l’espace réservé : @name « Votre nom complet », @email « votre.e-mail@entreprise.com » @message « Dites-nous comment nous pouvons vous aider »
 
 **Étape 4 : ajouter des fonctionnalités avancées :**
 
-    Ajoutez une liste déroulante queryType avec les options suivantes : « Question générale », « Demande d’assistance », « Demande de renseignements sur les ventes », « Partenariat »
+    Ajoute une liste déroulante queryType avec les options « Question générale », « Demande d’assistance », « Demande commerciale », « Partenariat »
 
 **Étape 5 : implémenter une logique conditionnelle :**
 
-    /create-rule affiche @urgencyLevel liste déroulante (faible, Medium, élevé) uniquement lorsque la @inquiryType est égale à « Demande d’assistance »
+    /create-rule – Affiche la liste déroulante @urgencyLevel (faible, moyen, élevé) uniquement lorsque @inquiryType est égal à « Demande d’assistance »
 
 ### Exemple 2 : création pas à pas d’un formulaire d’enregistrement
 
 **Étape 1 : structure de base :**
 
-    Créer un formulaire d’enregistrement d’utilisateur avec le panneau Informations personnelles
+    Crée un formulaire d’enregistrement d’utilisateur ou utilisatrice avec le panneau d’informations personnelles
 
 **Étape 2 : ajouter des champs obligatoires :**
 
-    Ajoutez des champs pour les @firstName, les @lastName, les @email et les @phoneNumber avec la validation appropriée
+    Ajoutez des champs pour @firstName, @lastName, @email et @phoneNumber avec la validation appropriée
 
 **Étape 3 : ajouter une logique commerciale :**
 
-    Créer une règle : si @age a moins de 18 ans, afficher la section d’informations sur le parent/tuteur
+    Crée une règle : si @age est inférieur à 18 ans, affiche la section d’informations sur le parent ou la parente, ou le tuteur ou la tutrice
 
-**Étape 4 : améliorer avec les préférences :**
+**Étape 4 : améliorer avec des préférences :**
 
-    Ajouter un panneau de préférences avec @newsletterSubscription, @marketingConsent, @termsAccepted
+    Ajoute un panneau de préférences avec @newsletterSubscription, @marketingConsent, @termsAccepted
 
 **Étape 5 : ajouter le chargement de fichier :**
 
-    Incluez un champ de chargement de fichier pour les @profilePicture dont la taille est limitée à 5 Mo
+    Inclus un champ de chargement de fichier pour @profilePicture avec une taille limitée à 5 Mo
 
 ## Création et gestion de formulaires
 
@@ -103,60 +102,60 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : création simple de formulaire :**
 
-    Créer un formulaire de commentaires client avec :
-    - Évaluation du produit (1 à 5 étoiles)
-    - Champ de commentaire pour des commentaires détaillés
-    - E-mail du client (facultatif)
-    - Envoyer à une notification par e-mail
+    Créez un formulaire de commentaires client avec :
+    - Une évaluation du produit (1 à 5 étoiles)
+    - Un champ de commentaire pour des commentaires détaillés
+    - L’adresse e-mail du client ou de la cliente (facultatif)
+    - Un envoi d’une notification par e-mail lors de la soumission
 
 **Exemple de prompt : création de formulaire complexe :**
 
-    Créez un formulaire d’intégration complet des employés avec :
+    Créez un formulaire complet d’intégration du personnel comprenant les éléments suivants :
     
-    **&#x200B;**&#x200B;Section des renseignements personnels :**
-    - Nom complet (prénom, milieu, dernier)
+    **Informations personnelles :**
+    - Nom complet (prénom, deuxième prénom, nom de famille)
     - Date de naissance avec validation de l’âge
-    - Coordonnées (adresse e-mail, téléphone, adresse)
-    - Coordonnées d’urgence
+    - Coordonnées (e-mail, téléphone, adresse)
+    - Contact d’urgence
     
-    Coordonnées professionnelles :**
-    - Choix du poste et du service
-    - Date de début avec validation du jour ouvrable
-    - Informations salariales avec avis de confidentialité
-    - Structure de déclaration&#x200B;**Chargement du document :**
+    **Détails de l’emploi :**
+    - Sélection du poste et du service
+    - Date de début avec validation des jours ouvrables
+    - Informations salariales avec mention de confidentialité
+    - Structure hiérarchique
     
-    - Reprise/Chargement du CV (PDF, DOC, DOCX)
-    - Documents de vérification de l’identité
+    **Chargement de documents :**
+    - C.V. (PDF, DOC, DOCX)
+    - Documents d’identité pour vérification
     - Formulaires fiscaux et informations bancaires
-    - Emploi signé agreement
-    **&#x200B;**&#x200B;Préférences:**
+    - Contrat de travail signé
     
-    - Sélection des avantages avec le calculateur de coûts
-    - Préférences du programme de travail
-    - Exigences de formation
+    **Préférences :**
+    - Choix des avantages avec calculateur de coûts
+    - Préférences d’horaires de travail
+    - Besoins en formation
     - Besoins en équipement
-    Règles de validation:**
     
-    - Validation du format des e-mails
-    - Validation du format des numéros de téléphone
+    **Règles de validation :**
+    - Validation du format de l’e-mail
+    - Validation du format du numéro de téléphone
+    - L’âge doit être de 18 ans ou plus
     - Tous les documents requis doivent être chargés
-    - Les conditions doivent être acceptées
-    **Soumettre des actions:**
-    - Envoyer un e-mail de confirmation au nouvel employé
+    - Les conditions générales doivent être acceptées
     
-    - Notifier le service des RH
-    - Créer un enregistrement d’employé dans le système des RH
-    - Planifier une réunion d’orientation
-     
-     
+    **Actions d’envoi :**
+    - Envoyer un e-mail de confirmation au nouvel employé ou à la nouvelle employée
+    - Notifier le service RH
+    - Créer le dossier de la personne employée dans le système RH
+    - Planifier la réunion d’orientation
 
 **Prompts de gestion des formulaires :**
 
-    Importez ce formulaire de demande PDF et convertissez-le en formulaire adaptatif avec validation améliorée
+    Importez ce formulaire de candidature PDF et convertissez-le en formulaire adaptatif avec une validation améliorée
     
-    Mettez à jour le formulaire de contact existant pour inclure les identifiants de médias sociaux et la méthode de contact préférée
+    Mettez à jour le formulaire de contact existant pour inclure les identifiants de réseaux sociaux et la méthode de contact préférée
     
-    Réorganisez le formulaire d’inscription en un assistant en 3 étapes : informations personnelles, préférences, confirmation
+    Réorganisez le formulaire d’inscription en un assistant en 3 étapes : informations personnelles, préférences, confirmation
 
 ## Gestion et validation des champs
 
@@ -166,40 +165,40 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : ajout d’un champ de base :**
 
-    Ajoutez un champ de saisie de texte pour « Nom de la société » avec l’espace réservé « Entrez le nom de votre société »
+    Ajoutez un champ de saisie de texte pour « Nom de la société » avec l’espace réservé « Saisissez le nom de votre société. »
 
 **Exemple de prompt : configuration avancée des champs :**
 
-    Ajoutez une section d’adresse complète avec :
+    Ajoutez une section complète d’adresse avec les éléments suivants :
     
-    **Adresse postale :**
-    - Ligne d’adresse 1 (obligatoire, 100 caractères max.)
-    - Ligne d’adresse 2 (facultatif, 100 caractères max.)
-    - Ville (obligatoire, liste déroulante avec villes communes)
-    - État/Province (obligatoire, liste déroulante)
+    **Rue :**
+    - Ligne d’adresse 1 (obligatoire, maximum 100 caractères)
+    - Ligne d’adresse 2 (facultatif, maximum 100 caractères)
+    - Ville (obligatoire, liste déroulante de villes courantes)
+    - État/province (obligatoire, liste déroulante)
     - Code postal (obligatoire, validation du format)
-    - Pays (obligatoire, valeur par défaut « États-Unis »)
+    - Pays (obligatoire, valeur par défaut définie sur « France »)
     
-    **Règles de validation :**
-    - Le code postal doit correspondre à la sélection d’État
-    - La ligne d’adresse 1 ne peut pas être vide
-    - La ville doit être valide pour l’État sélectionné
+    **Règles de validation :**
+    - Le code postal doit correspondre à l’état sélectionné
+    - La ligne d’adresse 1 ne doit pas être vide
+    - La ville doit être valide pour l’état sélectionné
     
-    **Expérience utilisateur : Saisie automatique pour les champs d’adresse
-    - Effacer les libellés et le texte d’aide
-    - Champs d’entrée compatibles avec les appareils mobiles
-     
-     
-- Conformité en matière d’accessibilité
+    **Expérience d’utilisation :**
+    - Saisie semi-automatique pour les champs d’adresse
+    - Libellés clairs et texte d’aide
+    - Champs de saisie adaptés aux appareils mobiles
+    - Conformité en matière d’accessibilité
+
 **Prompts de configuration de champs :**
 
-    Rendre @email champ obligatoire avec la validation en temps réel et le message d’erreur personnalisé
+    Rendez le champ @email obligatoire avec une validation en temps réel et un message d’erreur personnalisé
     
-    Ajouter une liste déroulante pour les @country avec des options pour les États-Unis, le Canada, le Royaume-Uni, l’Allemagne, la France et « Autre »
+    Ajoutez un menu déroulant pour @country avec les options États-Unis, Canada, Royaume-Uni, Allemagne, France et « Autre »
     
-    Configurer @phoneNumber champ au format (XXX) XXX-XXXX et validation
+    Configurez le champ @phoneNumber avec le format (XXX) XXX-XXXX et une validation
     
-    Ajouter un champ de chargement de fichier pour les @resume avec des restrictions PDF et DOC, 5 Mo max
+    Ajoutez un champ de chargement de fichier pour @resume, limité aux formats PDF et DOC, avec une taille maximale de 5 Mo
 
 ## Champs intelligents améliorés par LLM
 
@@ -211,32 +210,32 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Aéroports et transports :**
 
-    Ajouter un menu déroulant pour les aéroports de départ avec tous les principaux aéroports internationaux
-    Ajouter le champ de l&#39;aéroport d&#39;arrivée avec les codes IATA et les noms complets
-    Créer un champ pour l&#39;aéroport le plus proche de l&#39;emplacement de l&#39;utilisateur
-    Ajouter une sélection de gares pour les villes européennes
+    Ajoutez un menu déroulant pour les aéroports de départ avec tous les principaux aéroports internationaux
+    Ajoutez le champ de l’aéroport d&#39;arrivée avec les codes IATA et les noms complets
+    Créez un champ pour l’aéroport le plus proche de l’emplacement de l’utilisateur ou de l’utilisatrice
+    Ajoutez une sélection de gares pour les villes européennes
 
 **Régions administratives :**
 
-    Ajouter une liste complète des États américains avec des abréviations
-    Créer une liste déroulante de pays avec des codes ISO et des noms complets
-    Ajouter un champ pour les grandes villes du monde avec des fuseaux horaires
-    Inclure une liste déroulante des provinces et territoires canadiens
-    Ajouter un champ pour les comtés et zones postales du Royaume-Uni
+    Ajoutez une liste complète des États américains avec des abréviations
+    Créez une liste déroulante de pays avec des codes ISO et des noms complets
+    Ajoutez un champ pour les grandes villes du monde avec des fuseaux horaires
+    Incluez une liste déroulante des provinces et territoires canadiens
+    Ajoutez un champ pour les comtés et zones postales du Royaume-Uni
 
 ### Données relatives aux entreprises et au secteur
 
 **Classifications des entreprises :**
 
     Ajoutez un champ pour la classification des industries avec les codes SCIAN
-    Créez une liste déroulante des types d&#39;entités commerciales (LLC, Corporation, Société de personnes, etc.)
-    Ajouter un champ pour les catégories de taille d’entreprise (démarrage, PME, entreprise)
-    Inclure la sélection de service pour les grandes organisations
-    Ajouter un champ pour les types de services professionnels
+    Créez une liste déroulante des types d’entités commerciales (SARL, société, partenariat, etc.)
+    Ajoutez un champ pour les catégories de taille d’entreprise (startup, PME, société)
+    Incluez la sélection de service pour les grandes organisations
+    Ajoutez un champ pour les types de services professionnels
 
 **Classifications professionnelles :**
 
-    Ajoutez un champ pour les titres de poste avec des rôles courants du secteur
+    Ajoutez un champ pour les intitulés de poste avec des rôles courants du secteur
     Créez une liste déroulante des certifications professionnelles par champ
     Incluez les niveaux de formation avec les types de diplômes
     Ajoutez un champ pour les périodes d’expérience
@@ -246,60 +245,60 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Financier et juridique :**
 
-    Ajouter un champ pour les codes devise avec des symboles et des taux de change
-    Créer une liste déroulante des types d&#39;ID taxe par pays
-    Inclure un champ pour les types de documents juridiques
-    Ajouter des options de mode de paiement avec des fonctions de sécurité
-    Créer une sélection pour les établissements bancaires par pays
+    Ajoutez un champ pour les codes de devise avec des symboles et des taux de change
+    Créez une liste déroulante des types d’identifiants fiscaux par pays
+    Incluez un champ pour les types de documents juridiques
+    Ajoutez des options de mode de paiement avec des fonctions de sécurité
+    Créez une sélection pour les établissements bancaires par pays
 
 **Normes techniques :**
 
-    Ajout d’une liste déroulante de types de format de fichier avec les extensions
-    Inclusion des options de protocole réseau
-    Ajout d’un champ pour les types et versions de base de données
-    Création d’une sélection pour les méthodes d’authentification d’API
+    Ajoutez une liste déroulante des types de formats de fichiers avec leurs extensions
+    Incluez des options de protocoles réseau
+    Ajoutez un champ pour les types et les versions de bases de données
+    Créez une sélection pour les méthodes d’authentification d’API
 
 ### Soins de santé et médical
 
 **Classifications médicales :**
 
-    Ajouter un champ pour les spécialités médicales
+    Ajoutez un champ pour les spécialités médicales
     Créer une liste déroulante de médicaments courants avec des noms génériques
-    Inclure un champ pour les types de fournisseurs d’assurance
-    Ajouter une sélection pour les relations de contact en cas d’urgence médicale
-    Créer un champ pour les restrictions alimentaires et les allergies
+    Incluez un champ pour les types de compagnies d’assurance
+    Ajoutez une sélection pour les relations de contact en cas d’urgence médicale
+    Créez un champ pour les restrictions alimentaires et les allergies
 
 ### Intelligence temporelle et calendaire
 
 **Options de date et d’heure :**
 
-    Ajouter un champ pour les heures ouvrables avec gestion des fuseaux horaires
-    Créer une liste déroulante des jours fériés par pays
-    Inclure des options saisonnières avec périodes
-    Ajouter un champ pour la réservation de salle de conférence avec disponibilité
-    Créer une sélection pour les modèles de réunion récurrents
+    Ajoutez un champ pour les heures ouvrables avec gestion des fuseaux horaires
+    Créez une liste déroulante des jours fériés par pays
+    Incluez des options saisonnières avec des périodes
+    Ajoutez un champ pour la réservation de salle de conférence avec des disponibilités
+    Créez une sélection pour les modèles de réunion récurrents
 
 ### Catégories de produits et de services
 
 **Classifications d’e-commerce :**
 
-    Ajouter un champ pour les catégories de produits avec des sous-catégories
-    Créer une liste déroulante de modes d’expédition avec des estimations de diffusion
-    Inclure un champ pour les options de politique de retour
-    Ajouter une sélection pour les niveaux de priorité des clients
-    Créer un champ pour les cycles de facturation des abonnements
+    Ajoutez un champ pour les catégories de produits avec des sous-catégories
+    Créez une liste déroulante de modes d’expédition avec des estimations des livraisons
+    Incluez un champ pour les options de politique de retour
+    Ajoutez une sélection pour les niveaux de priorité des clientes et clients
+    Créez un champ pour les cycles de facturation des abonnements
 
 **Exemples de prompts de champ intelligent :**
 
-    « Ajouter un champ aéroport de départ avec tous les principaux aéroports du monde entier, y compris les codes IATA et les noms de ville »
+    « Ajoutez un champ pour l’aéroport de départ comprenant tous les grands aéroports du monde, avec les codes IATA et les noms de villes »
     
-    « Créer un champ industriel complet à l&#39;aide de la classification SCIAN standard avec des sous-catégories technologiques »
+    « Créez un champ complet pour le secteur d’activité en utilisant la classification standard NAICS avec des sous-catégories technologiques »
     
-    « Inclure un menu déroulant de certification professionnelle qui s&#39;adapte en fonction du champ d&#39;emploi sélectionné »
+    « Incluez une liste déroulante des certifications professionnelles qui s’adapte en fonction du domaine d’emploi sélectionné »
     
-    « Ajouter un champ de numéro de téléphone international qui se formate en fonction du pays sélectionné »
+    « Ajoutez un champ de numéro de téléphone international qui se met en forme selon le pays sélectionné »
     
-    « Créer un champ de sélection d&#39;université avec les principaux établissements organisés par pays et classement »
+    « Créez un champ de sélection d’université avec les principaux établissements classés par pays et par rang »
 
 ## Création de règles et logique commerciale
 
@@ -309,37 +308,37 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : logique conditionnelle simple :**
 
-    Créer une règle qui n’affiche le panneau @spouseInformation que lorsque @maritalStatus est égal à « Marié(e) »
+    Créer une règle qui n’affiche le panneau @spouseInformation que lorsque @maritalStatus est égal à « Marié(e) ».
 
 **Exemple de prompt : règles métier complexes :**
 
-    Mettre en œuvre une validation complète de la demande de prêt :
+    Mettez en œuvre une validation complète des demandes de prêt :
     
-    **Validation des revenus :**
-    - Si la @annualIncome est inférieure à 30000:
-    - Afficher le message d’avertissement : « Les revenus peuvent être insuffisants pour le montant du prêt demandé »
-    - Exiger une documentation supplémentaire sur les revenus
-    - Afficher le message : « Une documentation supplémentaire peut être requise »
-    - Si la @annualIncome @age est supérieure à 100000:
-    - Afficher les options de services Premium
-    - Activer la case à cocher de traitement prioritaire
+    **Validation des revenus :**
+    - Si @annualIncome sont inférieurs à 30 000 :
+    - Affichez le message d’avertissement : « Les revenus peuvent être insuffisants pour le montant de prêt demandé »
+    - Exigez des documents de revenus supplémentaires
+    - Affichez le message : « Des documents supplémentaires peuvent être requis »
+    - Si @annualIncome sont supérieurs à 100 000 :
+    - Affichez les options des services premium
+    - Activez la case à cocher de traitement prioritaire
     
-    **Validation en fonction de l’âge :**
-    - Si la section d’informations sur le parent/tuteur est inférieure à 18:
-    - Rendre le chargement de la signature du parent obligatoire
-    - Modifier le texte du bouton sur « Soumettre pour révision »
-    - Si @age est 65 dossier:
-    - Afficher les options de remise senior
-    - Ajouter la section Préférences d’accessibilité
-     
+    **Validation en fonction de l’âge :**
+    - Si @age est inférieur à 18 :
+    - Affichez la section informations du parent/tuteur/tutrice
+    - Rendez le téléversement de la signature du parent obligatoire
+    - Modifiez le texte du bouton d’envoi en « Envoyer pour révision »
+    - Si @age est égal ou supérieur à 65 :
+    - Affichez les options de réduction senior
+    - Ajoutez une section pour les préférences d’accessibilité
 
 **Prompts spécifiques aux règles :**
 
-    Créez une **règle de visibilité** qui affiche @spouseInformation panneau uniquement lorsque l’@maritalStatus est égal à « Marié(e) » ou « Partenariat domestique »
+    Créez une **règle de visibilité** qui affiche le panneau @spouseInformation uniquement lorsque @maritalStatus est égal à « Marié(e) » ou « Pacsé(e) »
     
     Ajoutez **divulgation progressive** où des questions supplémentaires apparaissent sur la base des réponses précédentes. Commencez par les informations de base, puis affichez les suivis appropriés
     
-    Implémentez **les valeurs par défaut intelligentes** où @country sélection définit automatiquement les champs associés. Autoriser le remplacement manuel
+    Implémentez **les valeurs par défaut intelligentes** où la sélection de @country définit automatiquement les champs associés. Autorisez le remplacement manuel
 
 ## Intégration et envoi de données
 
@@ -349,54 +348,54 @@ Ces exemples montrent comment créer des formulaires pas à pas, en commençant 
 
 **Exemple de prompt : commencer par l’envoi de base :**
 
-    Configurer l’envoi du formulaire de base pour l’@applicationForm :
+    Configure l’envoi du formulaire de base pour @applicationForm :
     
-    **Envoi du Principal :**
-    - Envoyer les données de formulaire au point d’entrée REST : `/api/v1/applications`
-    - Formater les données au format JSON
-    - Afficher le message de succès : « Application envoyée avec succès »
-    - Afficher le message d’erreur si l’envoi échoue : « Envoi ayant échoué, veuillez réessayer »
+    **Envoi principal :**
+    – Envoie les données de formulaire au point d’entrée REST : `/api/v1/applications`
+    – Formate les données au format JSON
+    – Affiche le message de succès : « Demande envoyée avec succès »
+    – Affiche le message d’erreur si l’envoi échoue : « Échec de l’envoi, réessayez »
 
 **Ajoutez ensuite des actions secondaire pas à pas :**
 
-    Ajouter une notification par e-mail aux @applicationForm : envoyez un e-mail de confirmation à @email adresse avec le numéro de référence de l’application
+    Ajoute une notification par e-mail à @applicationForm : envoie un e-mail de confirmation à @email adresse avec le numéro de référence de la demande
     
-    Ajoutez l’intégration CRM aux @applicationForm : créez un enregistrement de prospect avec @firstName, @lastName, @email et définissez le statut sur « Nouvelle application »
+    Ajoute l’intégration CRM à @applicationForm : crée un enregistrement de lead avec @firstName, @lastName, @email et définissez le statut sur « Nouvelle demande »
 
 **Exemple de prompt : envoi multicanal standard :**
 
-**&#x200B; &#x200B;**     Configurer l’envoi de formulaire avec plusieurs destinations de données :
+    Configure l’envoi de formulaire avec plusieurs destinations de données :
     
-    **Envoi de Principal :**
-    - Envoyer des données de formulaire au point d’entrée REST : `/api/v1/applications`
-    - Inclure l’en-tête d’authentification avec la clé API
-    - Formater les données au format JSON avec des objets imbriqués pour l’adresse et l’activité
-    - Gérer la réponse de succès (201) en affichant le message de remerciement
+    **Envoi principal :**
+    – Envoie des données de formulaire au point d’entrée REST : `/api/v1/applications`
+    – Inclus l’en-tête d’authentification avec la clé d’API
+    – Formate les données au format JSON avec des objets imbriqués pour l’adresse et l’activité
+    – Gère la réponse de succès (201) en affichant le message de remerciement
     
-    **Actions Secondaires :**
-    - Envoyer un e-mail de notification au demandeur à @email adresse
-    - Copier les données d’application dans le système de suivi
-    - Déclencher un processus d’approbation
-    - Créer un enregistrement dans CRM avec statut d’application échoue, enregistre les données localement et réessaye
+    **Actions secondaires :**
+    – Envoie un e-mail de notification au demandeur ou à la demandeuse à l’adresse @email
+    – Copie les données de la demande dans le système de suivi
+    – Déclenche un processus d’approbation
+    – Crée un enregistrement dans CRM avec le statut de lead « Nouvelle demande »
     
-    - Affiche un message d’erreur convivial : « Envoi temporairement indisponible »
-    - Fournit une option pour télécharger les données de formulaire en tant que sauvegarde
-    - Envoie un e-mail d’alerte à l’équipe d’administration à propos de l’échec de l’envoi
-    Flux de succès :**
-    - Redirige vers la page de confirmation avec le numéro de référence de l’application
+    **Gestion des erreurs :**
+    – En cas d’échec de l’envoi, enregistre les données localement et réessaie
+    – Affiche un message d’erreur convivial : « Envoi temporairement indisponible »
+    – Fournis une option pour télécharger les données de formulaire en tant que sauvegarde
+    – Envoie un e-mail d’alerte à l’équipe d’administration à propos de l’échec de l’envoi
     
-    - Envoie un e-mail de confirmation avec les étapes suivantes
-    - Affiche le délai de traitement estimé
-     
-     
+    **Flux de succès :**
+    – Redirige vers la page de confirmation avec le numéro de référence de la demande
+    – Envoie un e-mail de confirmation avec les étapes suivantes
+    – Affiche le délai de traitement estimé
 
 **Prompts spécifiques à l’intégration :**
 
-    Connectez ce formulaire au système **CRM** pour créer de nouveaux prospects. Mappez @firstName sur FirstName, @email sur Email, définissez LeadSource sur « Web Form » et Status sur « New »
+    Connecte ce formulaire au **système CRM** pour créer de nouveaux leads. Mappe @firstName à FirstName, @email sur Email, définis LeadSource sur « Formulaire web » et Status sur « Nouveau »
     
-    Configurez **déclencheur de workflow** lorsque le formulaire est envoyé. Transmettez toutes les données de formulaire et déclenchez le processus d’approbation avec la notification du responsable
+    Configure le **déclencheur de workflow** lorsque le formulaire est envoyé. Transmets toutes les données de formulaire et déclenche le workflow d’approbation avec une notification aux responsables
     
-    Configurez **l’intégration de la base de données** pour enregistrer les envois de formulaire en tant qu’enregistrements. Créez un dossier pour chaque envoi contenant des documents chargés
+    Configure l’**intégration de la base de données** pour enregistrer les envois de formulaire en tant qu’enregistrements. Crée un dossier pour chaque envoi contenant des documents chargés
 
 
 

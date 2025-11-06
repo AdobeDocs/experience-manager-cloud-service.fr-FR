@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2615'
 ht-degree: 84%
@@ -30,11 +30,11 @@ Traduction automatique des ressources dans AEM : le service de traduction autom
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=fr
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=fr
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=fr)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=fr
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -59,9 +59,9 @@ Les ressources multilingues sont des ressources comportant des fichiers binaires
 
 Dans Adobe Experience Manager Assets, les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
 
-Chaque dossier de langue est appelé « copie de langue ». Le dossier racine d’une copie de langue, appelé « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) pour que la bonne langue soit ciblée lors de la traduction des ressources sources.
+Chaque dossier de langue est appelé « copie linguistique ». Le dossier racine d’une copie linguistique, appelé « racine de langue », identifie la langue du contenu de la copie linguistique. Par exemple, `/content/dam/it` est la racine de langue italienne de la copie en italien. Les copies de langue doivent utiliser une [racine de langue correctement configurée](#create-a-language-root) pour que la bonne langue soit ciblée lors de la traduction des ressources sources.
 
-La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
+La copie linguistique pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
 ```shell
 /content
@@ -77,16 +77,16 @@ La copie de langue pour laquelle vous ajoutez initialement des ressources est le
 
 Effectuez les étapes suivantes pour préparer la traduction des ressources :
 
-1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](#create-a-language-root).
+1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie linguistique anglaise dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](#create-a-language-root).
 
 1. Ajoutez des ressources à votre gabarit de langue.
-1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie de langue.
+1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie linguistique.
 
 ### Création d’une racine de langue {#create-a-language-root}
 
-Pour créer la racine de langue, créez un dossier, puis utilisez le code de langue ISO comme valeur de la propriété Nom. Après avoir créé la racine de langue, vous pouvez créer une copie de langue à n’importe quel niveau de la racine de langue.
+Pour créer la racine de langue, créez un dossier, puis utilisez le code de langue ISO comme valeur de la propriété Nom. Après avoir créé la racine de langue, vous pouvez créer une copie linguistique à n’importe quel niveau de la racine de langue.
 
-Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie présente la propriété Nom `it`. La propriété Nom est utilisée comme nom du nœud de ressource dans le référentiel et détermine donc le chemin d’accès des ressources. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
+Par exemple, la page racine de la copie linguistique italienne de l’exemple de hiérarchie présente la propriété Nom `it`. La propriété Nom est utilisée comme nom du nœud de ressource dans le référentiel et détermine donc le chemin d’accès des ressources. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
 1. Dans la console Assets, sélectionnez **[!UICONTROL Créer]** et choisissez **[!UICONTROL Dossier]** dans le menu.
 1. Dans le champ Nom, tapez le code de pays au format `<language-code>`.
@@ -104,14 +104,14 @@ L’IU optimisée pour les écrans tactiles propose un panneau Références qui 
 
 Si vous utilisez cette option, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. Selon les options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou s’exécuter automatiquement dès sa création.
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source pour lequel vous souhaitez créer une copie de langue.
+1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source pour lequel vous souhaitez créer une copie linguistique.
 1. Ouvrez le volet **[!UICONTROL Références]** et sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**.
 1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
 1. Dans le champ **[!UICONTROL Titre du projet]**, saisissez un titre pour le projet.
 1. Sélectionnez sur **[!UICONTROL Créer]**. Les ressources du dossier source sont copiées vers les dossiers cibles pour les paramètres régionaux que vous avez sélectionnés à l’étape 4.
-1. Pour accéder au dossier, sélectionnez la copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
+1. Pour accéder au dossier, sélectionnez la copie linguistique, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 1. Ouvrez le dossier pour afficher le projet de traduction.
 1. Sélectionnez le projet pour ouvrir la page de détails.
@@ -120,7 +120,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible à la fois pour les ressources et les dossiers. Lorsqu’une ressource est sélectionnée au lieu d’un dossier, la hiérarchie de dossiers complète jusqu’à la langue racine est copiée afin de créer une copie de langue pour la ressource.
+>Cette fonctionnalité est disponible à la fois pour les ressources et les dossiers. Lorsqu’une ressource est sélectionnée au lieu d’un dossier, la hiérarchie de dossiers complète jusqu’à la langue racine est copiée afin de créer une copie linguistique pour la ressource.
 
 ### Ajout à un projet de traduction existant {#add-to-existing-translation-project}
 
@@ -132,9 +132,11 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 1. Sélectionnez **[!UICONTROL Créer et traduire]** en bas de la page.
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
+
    >[!NOTE]
    >
    >Si vous choisissez l’option **[!UICONTROL Ajouter à un projet de traduction existant]**, votre projet de traduction n’est ajouté à un projet préexistant que si les paramètres du projet correspondent exactement aux paramètres du projet préexistant. Dans le cas contraire, un nouveau projet est créé.
+
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
 1. Sélectionnez **[!UICONTROL Créer]**. Les fichiers à traduire sont ajoutés au dossier cible. Le dossier mis à jour est répertorié sous la section **[!UICONTROL Copies de langue]**.
 1. Accédez à la console Projets, puis ouvrez le projet de traduction existant auquel vous avez ajouté des ressources.
@@ -153,18 +155,18 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ### Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux donnés. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
 
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
 ### Ajouter à un projet de traduction existant {#add-to-existing-translation-project-1}
 
-Si vous utilisez cette option, l’ensemble de ressources est ajouté à un projet de traduction existant afin de mettre à jour la copie de langue pour les paramètres régionaux que vous sélectionnez.
+Si vous utilisez cette option, l’ensemble de ressources est ajouté à un projet de traduction existant afin de mettre à jour la copie linguistique pour les paramètres régionaux que vous sélectionnez.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier source auquel vous avez ajouté un dossier de ressources.
 1. Ouvrez le **[!UICONTROL volet Références]** et sélectionnez **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
-1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies de langue correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
+1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies linguistiques correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
 1. Sélectionnez **[!UICONTROL Mettre à jour les copies de langue]** en bas de la page.
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Ajouter à un projet de traduction existant]**.
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
@@ -173,12 +175,12 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ### Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviezles ressources traduites. [!DNL Assets] stocke les nouvelles ressources traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie linguistique avec les versions modifiées des ressources d’origine, la copie linguistique existante est conservée jusqu’à ce que vous approuviez les ressources traduites. [!DNL Assets] stocke les nouvelles ressources traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous refusez les ressources, la copie linguistique reste inchangée.
 
 1. Sélectionnez le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis sélectionnez **[!UICONTROL Afficher dans Assets]** pour ouvrir le dossier dans [!DNL Assets].
 1. Dans l’interface utilisateur d’Assets, sélectionnez une ressource que vous avez déjà traduite, puis sélectionnez l’icône **[!UICONTROL Modifier]** dans la barre d’outils pour ouvrir la ressource en mode d’édition.
 1. Modifiez la ressource et enregistrez les modifications.
-1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie de langue.
+1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie linguistique.
 1. Sélectionnez les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**. Dans la liste des ressources sur la page **[!UICONTROL Tâche de traduction]**, vous pouvez voir l’emplacement temporaire dans lequel la version traduite de la ressource est stockée.
 1. Cochez la case en regard de **[!UICONTROL Titre]**.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Accepter la traduction]** puis sélectionnez **[!UICONTROL Accepter]** dans la boîte de dialogue pour remplacer la ressource traduite dans le dossier cible par la version traduite de la ressource modifiée.
@@ -198,7 +200,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 ## Création de projets de traduction {#creating-translation-projects}
 
-Pour créer une copie de langue, déclenchez l’un des workflows de copie de langue disponibles sous le rail Références dans l’interface utilisateur d’Assets :
+Pour créer une copie linguistique, déclenchez l’un des workflows de copie linguistique disponibles sous le rail Références dans l’interface utilisateur d’Assets :
 
 **Créer et traduire**
 
@@ -206,7 +208,7 @@ Dans ce workflow, les ressources à traduire sont copiées dans la racine de la 
 
 **Mise à jour des copies de langue**
 
-Vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
+Vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie linguistique pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
 
 >[!NOTE]
 >

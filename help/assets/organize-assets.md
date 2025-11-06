@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 94%
@@ -100,7 +100,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 * [Modification de métadonnées de ressource](meta-edit.md)
 * [Balises intelligentes dans Assets](smart-tags.md)
-* [Ajout d’un prédicat de balises au panneau de recherche](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [Ajout d’un prédicat de balises au panneau de recherche](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## Organisation en tant que collections {#organize-as-collections}
 

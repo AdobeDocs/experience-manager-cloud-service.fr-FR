@@ -1,11 +1,11 @@
 ---
 title: Raccourcis clavier de la console Fragments de contenu
-description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment une sélection pour la gestion des fragments de contenu.
+description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment une sélection pour gérer les fragments de contenu.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Une sélection de raccourcis clavier est disponible à l’utilisation dans la console Fragments de contenu.
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lors de la [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), d’autres lors de l’ [utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la [modification de pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), d’autres lors de l’[utilisation générale des consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

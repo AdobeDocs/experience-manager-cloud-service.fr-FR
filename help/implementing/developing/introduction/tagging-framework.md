@@ -3,11 +3,11 @@ title: Framework de balisage AEM
 description: Balisez le contenu et utilisez l’infrastructure de balisage AEM pour le classer et l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 93%
+source-wordcount: '1559'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Pour baliser le contenu et utiliser le framework de balisage AEM, procédez comm
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#cq-tags-property) du nœud de contenu et est résolu sur un nœud de type [`cq:Tag`](#cq-tag-node-type).
 
-## cq : balisage du type de nœud {#cq-tag-node-type}
+## cq:Tag Type de nœud {#cq-tag-node-type}
 
 La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`
 
@@ -117,7 +117,7 @@ Une pratique habituelle est la suivante :
 * Accorder aux utilisateurs/auteurs l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
 * Accorder aux utilisateurs/auteurs l’accès en écriture aux espaces de noms dont ils doivent être en mesure de définir librement les balises (`add_node` sous `/content/cq:tags/some_namespace`).
 
-## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
+## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
 
 Pour que les développeurs et développeuses d’application associent le balisage à un type de contenu, l’enregistrement du nœud ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) doit inclure le mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
@@ -151,7 +151,7 @@ Les définitions essentielles relatives aux types de nœud inclus dans AEM sont 
     mixin
 ```
 
-## cq : propriété des balises {#cq-tags-property}
+## cq:tags, propriété {#cq-tags-property}
 
 La propriété `cq:tags` est une table de chaînes `String` utilisée pour stocker un ou plusieurs `TagID` lorsque les auteurs ou les visiteurs du site les appliquent au contenu. La propriété n’a de sens que lorsqu’elle est ajoutée à un nœud qui est défini avec le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 

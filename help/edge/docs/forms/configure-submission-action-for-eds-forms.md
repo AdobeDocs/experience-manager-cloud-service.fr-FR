@@ -2,10 +2,10 @@
 title: Configurer des actions d’envoi pour AEM Forms avec Edge Delivery Services
 description: Découvrez comment configurer des actions d’envoi dans AEM Forms à l’aide d’Edge Delivery Services. Choisissez entre le service d’envoi de formulaires et l’action d’envoi de l’instance de publication AEM pour gérer les données de formulaire de manière sécurisée et efficace.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 

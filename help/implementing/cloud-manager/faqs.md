@@ -4,8 +4,8 @@ description: Trouvez des réponses aux questions les plus fréquentes sur Cloud�
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 81%
@@ -61,7 +61,7 @@ Cette valeur permet d’installer les déploiements suivants quand la version n�
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, le cas échéant.
 
-Pour plus d’informations sur la gestion des versions, voir [&#x200B; Gestion des versions de projet Maven &#x200B;](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Pour plus d’informations sur la gestion des versions, voir [ Gestion des versions de projet Maven ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#snapshot-version}
 

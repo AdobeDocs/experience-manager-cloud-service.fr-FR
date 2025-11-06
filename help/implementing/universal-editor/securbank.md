@@ -3,9 +3,9 @@ title: Exemple d’application SecurBank pour l’éditeur universel
 description: Découvrez l’éditeur universel et son expérience pratique en utilisant l’application SecurBank, conçue pour présenter la puissance, la flexibilité et la convivialité de l’éditeur universel afin d’accélérer la création de contenu.
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 

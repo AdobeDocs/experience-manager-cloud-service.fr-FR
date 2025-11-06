@@ -4,8 +4,8 @@ description: Notes de mise à jour de [!DNL Workfront for Experience Manager enh
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -201,13 +201,13 @@ La version 1.9.5 de [!DNL Workfront for Experience Manager enhanced connector] 
          Assurez-vous que le contenu entre `"objId": "",` et `"url"` correspond à la réponse JSON. Pour ce faire, il est recommandé d’effectuer une copie depuis n’importe quel abonnement à un événement comportant un `objId` puis de supprimer le nombre.
 
       1. Notez l’ID d’abonnement à l’événement.
-
       1. Supprimez l’abonnement à un événement incorrect. Effectuez un appel API de suppression à `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          Le code de réponse `200` indique la suppression réussie des abonnements à des événements incorrects.
-  >[!NOTE]
-  >
-  >Si vous avez déjà supprimé les abonnements aux événements incorrects avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer la dernière étape.
+
+         >[!NOTE]
+         >
+         >Si vous avez déjà supprimé les abonnements aux événements incorrects avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer la dernière étape.
 
 ### Version d’octobre 2022 {#october-2022-release}
 

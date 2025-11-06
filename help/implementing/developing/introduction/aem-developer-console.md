@@ -2,16 +2,16 @@
 title: AEM AS A CLOUD SERVICE DEVELOPER CONSOLE - BETA
 description: En savoir plus sur CRXDE Lite et AEM as a Cloud Service Developer Console.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 11c52f6782df3b608bedd4b120c145a7a80a0702
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 2%
 
 ---
 
-# Developer Console AEM as a Cloud Service (Bêta) {#developer-console}
+# Developer Console AEM as a Cloud Service (Beta) {#developer-console}
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ ht-degree: 2%
 AEM as a Cloud Service Developer Console comprend un ensemble d’outils pour le débogage dans les environnements cloud. Il est accessible via un lien spécifique à l’environnement dans Cloud Manager.
 
 >[!NOTE]
->Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
 >
 
 
@@ -106,5 +106,5 @@ Les développeurs peuvent accéder aux fonctionnalités décrites ci-dessous :
 
 Pour les programmes de production, la mention « Cloud Manager - Rôle de développeur » dans Adobe Admin Console contrôle l’accès à AEM as a Cloud Service Developer Console. Pour les programmes Sandbox, tout utilisateur disposant d’un profil de produit accordant l’accès à AEM peut utiliser Developer Console. Pour tous les programmes, la mention « Cloud Manager - Rôle de développeur » est requise pour les vidages de statut et l’accès au navigateur de référentiel. Pour afficher les données des services de création et de publication, les utilisateurs doivent également être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM sur les deux services.
 
-Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 

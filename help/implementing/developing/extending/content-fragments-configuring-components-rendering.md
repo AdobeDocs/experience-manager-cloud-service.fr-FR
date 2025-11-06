@@ -3,8 +3,8 @@ title: Fragments de contenu – Configuration des composants pour le rendu
 description: Fragments de contenu – Configuration des composants pour le rendu
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 94%
@@ -20,7 +20,7 @@ Pour ce faire, définissez la [Configuration du composant de fragment de contenu
 Ces informations sont requises dans les cas suivants :
 
 * Vous devez mettre en œuvre votre propre composant basé sur les fragments de contenu.
-* Et doivent utiliser les services avancés.
+* Vous devez également utiliser les services avancés.
 
 Adobe recommande d’utiliser les composants principaux.
 
@@ -59,7 +59,7 @@ La configuration doit être liée au service OSGi **Configuration du composant d
 
 Par exemple :
 
-![Configuration OSGi – Configuration du composant de fragment de contenu &#x200B;](assets/cf-component-configuration-osgi.png)
+![Configuration OSGi – Configuration du composant de fragment de contenu ](assets/cf-component-configuration-osgi.png)
 
 La configuration OSGi est la suivante :
 

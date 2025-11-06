@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 34%
@@ -222,6 +222,7 @@ Découvrez comment les fonctions personnalisées utilisent des objets de champ e
 
 La ligne de code suivante :
 `globals.functions.submitForm(globals.functions.exportData(), false);` est utilisée pour envoyer les données de formulaire après la manipulation.
+
 * Le premier argument est celui des données à envoyer.
 * Le deuxième argument indique si le formulaire doit être validé avant envoi. Il est `optional` et est défini sur `true` par défaut.
 * Le troisième argument est le `contentType` de l’envoi, qui est également facultatif avec la valeur par défaut `multipart/form-data`. Les autres valeurs peuvent être `application/json` et `application/x-www-form-urlencoded`.
@@ -526,7 +527,7 @@ Refactorisez les expressions régulières pour utiliser le constructeur RegExp a
 ## Résolution des problèmes
 
 * Si le gestionnaire d’envoi personnalisé ne s’exécute pas comme prévu dans les projets ou formulaires AEM existants, procédez comme suit :
-   * Assurez-vous que la version [&#x200B; des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
+   * Assurez-vous que la version [ des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
 
    * Pour le projet AEM, l’utilisateur ou l’utilisatrice doit remplacer toutes les instances de `submitForm('custom:submitSuccess', 'custom:submitError')` par `submitForm()` et déployer le projet via le pipeline Cloud Manager.
 

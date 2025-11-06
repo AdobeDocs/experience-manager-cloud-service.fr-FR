@@ -3,9 +3,9 @@ title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -31,7 +31,7 @@ La prise en charge des applications sur une seule page dans AEM s’accompagne d
 
 Pour plus d’informations sur les SPA dans AEM, reportez-vous aux sections suivantes :
 
-* [&#x200B; Plan directeur d’application d’une seule page &#x200B;](blueprint.md) pour les exigences techniques d’une application monopage.
+* [ Plan directeur d’application d’une seule page ](blueprint.md) pour les exigences techniques d’une application monopage.
 * [Prise en main des SPA dans AEM à l’aide de React](getting-started-react.md) pour une présentation rapide d’une SPA simple à l’aide de React.
 * [Prise en main des SPA dans AEM à l’aide d’Angular](getting-started-angular.md) pour une présentation rapide d’une SPA simple à l’aide d’Angular.
 

@@ -2,10 +2,10 @@
 title: Extension de l’éditeur universel
 description: Découvrez les différentes options permettant d’étendre les fonctionnalités de l’éditeur universel afin de répondre aux besoins des auteurs ou des autrices de contenu.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 

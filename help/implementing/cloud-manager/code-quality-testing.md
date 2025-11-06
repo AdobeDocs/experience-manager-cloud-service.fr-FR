@@ -4,11 +4,11 @@ description: Découvrez comment fonctionne le test de qualité du code des pipel
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -29,13 +29,13 @@ Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/co
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [&#x200B; règles de qualité du code personnalisé &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette étape est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines règles spécifiques à AEM sont basées sur les bonnes pratiques de l’ingénierie AEM et sont connues sous le nom de [ Règles de qualité du code personnalisé ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-Vous pouvez télécharger la liste complète actuelle des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 >[!IMPORTANT]
 >
->À compter du jeudi 13 février 2025 (Cloud Manager 2025.2.0), la qualité du code Cloud Manager utilise une version 9.9 de SonarQube mise à jour et une liste mise à jour des règles que vous pouvez [télécharger ici](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
+>À compter du jeudi 13 février 2025 (Cloud Manager 2025.2.0), la qualité du code Cloud Manager utilisera une version 9.9 de SonarQube mise à jour et une liste mise à jour des règles que vous pouvez [télécharger ici](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Évaluation à trois niveaux {#three-tiered-gate}
 
@@ -113,19 +113,19 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >[!NOTE]
 >Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Pour en savoir plus sur la sécurité dans Cloud Service, reportez-vous à [Vue d’ensemble de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
-## Optimisation de l’analyse des packages de contenu {#content-package-scanning-optimization}
+## Optimisation de l’analyse des modules de contenu {#content-package-scanning-optimization}
 
-Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des packages de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées. L’optimisation la plus importante cible les projets qui produisent un seul package « all », contenant plusieurs packages de contenu de la version, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
+Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des modules de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées. L’optimisation la plus importante cible les projets qui produisent un seul package « all », contenant plusieurs packages de contenu de la version, qui sont marqués comme ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les modules de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 
-Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, les deux packages incorporés sont analysés au lieu du package de contenu « all ».
+Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux modules de contenu ignorés, les deux packages incorporés sont analysés au lieu du module de contenu « all ».
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner jusqu’à 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau module de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Découvrez les différentes méthodes de gestion et de modification
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 82%
@@ -59,10 +59,10 @@ Pour extraire les fichiers ZIP, procédez comme suit :
 
    ![extraction zip](assets/zip-extraction.png)
 
->[!NOTE]
->
->* La taille de fichier ZIP maximale prise en charge est de 15 Go.
->* Vous pouvez extraire un maximum de trois fichiers ZIP à la fois.
+   >[!NOTE]
+   >
+   >* La taille de fichier ZIP maximale prise en charge est de 15 Go.
+   >* Vous pouvez extraire un maximum de trois fichiers ZIP à la fois.
 
 ## Aperçu des ressources {#previewing-assets}
 
@@ -70,7 +70,6 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement de la ressource à prévisualiser.
 1. Sélectionnez la ressource souhaitée pour l’ouvrir.
-
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/file-format-support.md) (avec modification interactive).
 
    Pour effectuer un zoom avant sur une ressource, sélectionnez `+` (ou sélectionnez la loupe au niveau de la ressource). Pour effectuer un zoom arrière, sélectionnez `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
@@ -80,7 +79,6 @@ Pour prévisualiser une ressource, procédez comme suit.
 ## Modification des propriétés {#editing-properties}
 
 1. Accédez à l’emplacement de la ressource dont vous souhaitez modifier les métadonnées.
-
 1. Sélectionnez la ressource, puis sélectionnez **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher les propriétés de la ressource. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -89,7 +87,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    >[!NOTE]
    >
-   >La disposition de la page [!UICONTROL Propriétés] et les propriétés des métadonnées disponibles dépendent du schéma de métadonnées sous-jacent. Pour savoir comment modifier la disposition de la page [!UICONTROL Propriétés], voir [Schémas des métadonnées](/help/assets/metadata-schemas.md).
+   >La disposition de la page [!UICONTROL Propriétés] et les propriétés des métadonnées disponibles dépendent du schéma de métadonnées sous-jacent. Pour savoir comment modifier la disposition de la page [!UICONTROL Propriétés], voir [Schémas de métadonnées](/help/assets/metadata-schemas.md).
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
@@ -97,17 +95,17 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et sélectionnez ensuite la touche `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager].
 
    YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
 
    >[!NOTE]
    >
-   > Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
+   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture sur le chemin d’accès `/content/cq:tags/default` dans le référentiel CRX.
 
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]**.
-
 1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources dans la vue Carte et dans les colonnes pertinentes dans la vue Liste.
 
 <!-- TBD: Uncomment after verification for Dec release.

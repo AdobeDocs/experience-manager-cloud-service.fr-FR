@@ -3,10 +3,10 @@ title: Modèles modifiables
 description: Découvrez comment les modèles modifiables sont utilisés lors de la création d’une page, de la définition de son contenu initial, de son contenu structuré, des politiques de création et de la mise en page.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 81%
 
 ---
@@ -21,7 +21,7 @@ Lors de la création d’une page, vous devez sélectionner un modèle. Le modè
 
 * Les modèles modifiables permettent aux créateurs et créatrices de créer et d’utiliser des modèles.
 * Les modèles modifiables peuvent être utilisés pour créer des pages modifiables avec à la fois :
-   * [&#x200B; Éditeur de page &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) et
+   * [ Éditeur de page ](/help/sites-cloud/authoring/page-editor/templates.md) et
    * [Éditeur universel](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Les modèles de page utilisés pour créer des pages modifiables avec l’éditeur universel utilisent un sous-ensemble limité de fonctionnalités de modèle modifiables. Par conséquent, le reste de ce document se concentre sur les modèles modifiables utilisés pour créer des pages modifiables avec l’éditeur de page.
@@ -74,7 +74,7 @@ Lors de la création d’un modèle modifiable :
    * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
    * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
 
-   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques de la structure, consultez la section [Structure](#structure) de ce document.
 
@@ -95,7 +95,7 @@ Lors de la création d’un modèle modifiable :
    * Le contenu initial définit le contenu qui s’affiche lors de la première création d’une page en fonction du modèle.
    * Le contenu initial peut ensuite être modifié par les personnes créant les pages.
 
-   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
+   Pour plus d’informations sur la façon dont un auteur de modèles définit la structure, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Pour plus d’informations techniques sur le contenu initial, reportez-vous à la rubrique [Contenu initial](#initial-content) de ce document.
 
@@ -104,7 +104,7 @@ Lors de la création d’un modèle modifiable :
    * Vous pouvez définir la disposition du modèle pour différents appareils.
    * La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.
 
-   Pour plus d’informations sur la manière dont l’auteur du modèle définit la mise en page du modèle, voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
+   Pour plus d’informations sur la manière dont l’auteur du modèle définit la mise en page du modèle, voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Pour plus d’informations techniques sur la mise en page d’un modèle, reportez-vous à la rubrique [mise en page](#layout) de ce document.
 
@@ -128,7 +128,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!TIP]
 >
->Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
+>Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. Pour l’internationalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
-1. Créez un modèle comme vous le feriez pour n’importe quel modèle de page. Voir [&#x200B; Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Cela servira de base à votre type de modèle.
+1. Créez un modèle comme vous le feriez pour n’importe quel modèle de page. Voir [ Modèles pour créer des pages modifiables avec l’éditeur de page](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Cela servira de base à votre type de modèle.
 1. À l’aide de CRXDE Lite, copiez le modèle créé du nœud `templates` vers le nœud `template-types` sous le dossier [template](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
@@ -439,7 +439,7 @@ Ce nœud contient des propriétés pour le modèle :
 
 * **Nom** : `jcr:title`
 * **Nom** : `status`
-   * &grave;&grave;**Type** : `String`
+   * ``**Type** : `String`
    * **Valeur** : `draft`, `enabled` ou `disabled`
 
 ### Structure {#structure}
@@ -501,7 +501,6 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -514,7 +513,6 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-
      `cq:allowedTemplates`
 Sur le nœud `jcr:content` de la branche requise.
 

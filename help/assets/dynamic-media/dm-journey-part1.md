@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 90%
@@ -44,8 +44,8 @@ _Première partie_
 _Deuxième partie_
 
 * Anatomie d’une URL Dynamic Media et méthode de Dynamic Media pour diffuser du contenu
-* Les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources
-* Les visionneuses d’images, visionneuses à 360° et visionneuses de supports variés
+* Principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources
+* Les ensembles d’images, visionneuses à 360° et visionneuses de supports variés
 
 **_Audience_**
 Ce parcours est particulièrement adaptée pour les personnes suivantes si elles sont peu familières avec Dynamic Media dans Experience Manager :
@@ -209,7 +209,7 @@ Voici plusieurs autres cas d’utilisation à prendre en compte.
 
 | **Problème** | **Solution Dynamic Media** |
 |---|---|
-| Expériences clients statiques et aplaties peu engageantes, peu propices à la fidélisation ou à la conversion. | Permet aux utilisateurs non techniques d’ajouter facilement et en toute transparence des éléments interactifs tels que des zones réactives, des carrousels et des visionneuses à 360°, pour offrir des expériences plus dynamiques et attrayantes. |
+| Expériences clients statiques et aplaties peu engageantes, peu propices à la fidélisation ou à la conversion. | Permet aux personnes sans compétences techniques d’ajouter facilement et en toute transparence des éléments interactifs tels que des zones réactives, des carrousels et des visionneuses à 360°, pour offrir des expériences plus dynamiques et attrayantes. |
 | Retour sur investissement limité de ressources numériques et d’expériences client médiocres. | Améliore la conversion et le retour sur investissement générés par des expériences médias riches. |
 
 ## Circulation d’une ressource dans le système Dynamic Media {#dm-journey-c}
@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Tutoriels Dynamic Media_
 
 * [Utilisation de Dynamic Media avec Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=fr)
-* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
+* [Bibliothèque de contenu Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) (recherchez _Dynamic Media_)
 
 _Visionneuses Dynamic Media_
 
@@ -293,7 +293,7 @@ _Visionneuses Dynamic Media_
 
 ## Étapes suivantes de ce Parcours Dynamic Media {#whats-next}
 
-Dans la deuxième partie de ce parcours, vous examinerez de près les URL Dynamic Media afin de mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les visionneuses d’images, à 360° et de supports variés, et leur mode de création.
+Dans la deuxième partie de ce parcours, vous examinerez de près les URL Dynamic Media afin de mieux comprendre ce qui se passe lorsqu’une ressource est diffusée. Vous en apprendrez également davantage sur les principes de base de la création de paramètres d’image prédéfinis pour le rendu des ressources, ainsi que sur les ensembles d’images, les visionneuses à 360° et les visionneuses de supports variés, et leur mode de création.
 
 C’est parti pour le [Parcours Dynamic Media : principes de base, deuxième partie](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

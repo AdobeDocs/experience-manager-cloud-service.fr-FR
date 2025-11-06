@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2023.11.0 d’ [!DNL Adobe Exp
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 57%
@@ -106,7 +106,7 @@ Vous souhaitez tester la fonctionnalité et partager vos commentaires ? Envoyez
 
 * **Envoi d’un formulaire adaptatif au scénario Adobe Workfront Fusion** : Forms as a Cloud Service propose des options prêtes à l’emploi pour connecter facilement un formulaire adaptatif à Adobe Workfront. Cela simplifie le processus d’envoi d’un formulaire adaptatif à un scénario Adobe Workfront, ce qui permet de déclencher un scénario Workfront Fusion lors de l’envoi d’un formulaire adaptatif.
 
-* **Prise en charge des langues de droite à gauche** : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire dans le langage de RTL vous permet d’étendre la portée de vos formulaires adaptatifs afin de répondre aux besoins de ces différentes audiences et d’exploiter les marchés de RTL. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à un public plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
+* **Prise en charge des langues de droite à gauche** : les formulaires adaptatifs reposant sur les composants principaux peuvent désormais être présentés dans une langue de droite à gauche telle que l’arabe, le persan et l’ourdou. Les langues s’écrivant de droite à gauche sont parlées par plus de 2 milliards de personnes dans le monde. L’utilisation d’un formulaire dans le langage de RTL vous permet d’étendre la portée de vos formulaires adaptatifs afin de répondre aux besoins de ces différentes audiences et d’exploiter les marchés de RTL. Dans certaines régions, il en va d’une obligation légale de fournir des formulaires dans la langue locale. En vous adaptant aux langues locales, vous vous ouvrez non seulement à une audience plus large, mais vous garantissez aussi le respect des lois et réglementations pertinentes.
 
   ![Prise en charge des langues de droite à gauche.](/help/forms/assets/right-to-left-language-support.png)
 
@@ -122,11 +122,12 @@ Les règles de filtrage du trafic ont été publiées en octobre et comprennent 
 
 Une fois la licence obtenue, ces règles WAF avancées peuvent être déployées sur le réseau CDN à l’aide du pipeline de configuration Cloud Manager pour ajouter un niveau supplémentaire de protection contre les attaques web.
 
-En savoir plus sur les [&#x200B; Règles de filtrage du trafic &#x200B;](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM pour en savoir plus sur l’obtention d’une licence pour la protection WAF-DDoS ou la sécurité renforcée.
+En savoir plus sur les [ Règles de filtrage du trafic ](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM pour en savoir plus sur l’obtention d’une licence pour la protection WAF-DDoS ou la sécurité renforcée.
 
 ### Programme de mappage de domaines pour les utilisateurs et utilisatrices précoces {#cdn-config-early-adopter}
 
-Outre les [&#x200B; Règles de filtrage du trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
+Outre les [ Règles de filtrage du trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
+
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires
 * Transformations d’URL

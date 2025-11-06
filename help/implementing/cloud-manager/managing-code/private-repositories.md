@@ -3,8 +3,8 @@ title: Ajout d’un référentiel GitHub privé dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub privés.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 34%

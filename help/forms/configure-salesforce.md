@@ -3,13 +3,13 @@ title: Comment configurer des modèles de données de formulaires prêts à l’
 description: Découvrez comment intégrer Salesforce à Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 44%
 
 ---
-
 
 # Configuration de Salesforce pour AEM Forms {#configure-azure-storage}
 
@@ -59,10 +59,11 @@ Pour configurer le service cloud [!DNL Salesforce], procédez comme suit :
 Un modèle de données de formulaire [!DNL Salesforce] (FDM) prêt à l’emploi est disponible sur le serveur [!DNL AEM Forms] après que vous avez [configuré un projet de développement pour Forms basé sur l’archétype Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 Pour accéder au modèle de données de formulaire (FDM) :
+
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Intégrations de données]**.
 1. Sélectionnez le nom du dossier, sélectionnez le **[!UICONTROL modèle de données de Salesforce]**, puis sélectionnez l’icône Modifier ![Modifier](assets/edit.png) pour afficher le modèle de données de formulaire (FDM).
 
-Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] &#x200B;](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
+Après avoir configuré le service de configuration du cloud [[!DNL Salesforce] ](#configure-salesforce-cloud-service), vous pouvez intégrer des formulaires adaptatifs avec le modèle de données [!DNL Salesforce] prêt à l’emploi.
 
 >[!MORELIKETHIS]
 >

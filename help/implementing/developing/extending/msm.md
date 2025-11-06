@@ -3,10 +3,10 @@ title: Étendre Multi Site Manager
 description: Découvrez comment étendre les fonctionnalités de Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 59%
 
 ---
@@ -169,7 +169,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 Pour créer une configuration de déploiement :
 
-1. Ouvrez le CRXDE Lite à `https://<host>:<port>/crx/de`.
+1. Ouvrez CRXDE Lite sur `https://<host>:<port>/crx/de`.
 
 1. Accédez à `/apps/msm/<your-project>/rolloutconfigs`, la version personnalisée de `/libs/msm/wcm/rolloutconfigs` de votre projet.
 
@@ -183,19 +183,16 @@ Pour créer une configuration de déploiement :
 1. Ajoutez les propriétés suivantes à ce nœud :
 
    * **Nom** : `jcr:title`
-
      **Type** : `String`
      **Valeur** : titre d’identification qui apparaîtra dans l’interface utilisateur
 
    * **Nom** : `jcr:description`
-
      **Type** : `String`
      **Valeur** : une description facultative.
 
    * **Nom** : `cq:trigger`
-
      **Type** : `String`
-     **Value** : [&#x200B; Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
+     **Value** : [ Déclencheur de déploiement](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) à utiliser
       * `rollout`
       * `modification`
       * `publish`
@@ -209,7 +206,7 @@ Les configurations de déploiement sont stockées sous le nœud [configuration d
 
 Ajoutez des nœuds enfants de type `cq:LiveSyncAction` pour ajouter des actions de synchronisation à la configuration de déploiement. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
 
-1. Dans CRXDE Lite, sélectionnez le nœud [Configuration du déploiement](#create-the-rollout-configuration), par exemple, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. Dans CRXDE Lite, sélectionnez votre nœud [Configuration du déploiement](#create-the-rollout-configuration), par exemple, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Créez un nœud avec les propriétés de nœud suivantes :
 
@@ -228,7 +225,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 1. [Créez le projet Maven](#create-the-maven-project) et importez-le dans Eclipse.
 1. [Ajoutez des dépendances](#add-dependencies-to-the-pom-file) au fichier POM.
-1. [Implémentez l’interface `LiveActionFactory` et déployez &#x200B;](#implement-liveactionfactory) lot OSGi.
+1. [Implémentez l’interface `LiveActionFactory` et déployez ](#implement-liveactionfactory) lot OSGi.
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 
@@ -238,7 +235,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 La procédure suivante nécessite que vous ayez ajouté le profil `adobe-public` à votre fichier de paramètres Maven.
 
-* Pour plus d’informations sur le profil adobe-public, voir [Obtention du plug-in Maven du package de contenu](/help/implementing/developing/tools/maven-plugin.md#obtaining-the-content-package-maven-plugin).
+* Pour plus d’informations sur le profil adobe-public, voir [Obtention du plug-in de module de contenu Maven](/help/implementing/developing/tools/maven-plugin.md#obtaining-the-content-package-maven-plugin).
 * Pour plus d’informations sur le fichier de paramètres Maven, voir [Référence des paramètres](https://maven.apache.org/settings.html) Maven.
 
 1. Ouvrez une session de terminal ou de ligne de commande, puis modifiez le répertoire pour qu’il pointe vers l’emplacement où le projet sera créé.
@@ -248,7 +245,7 @@ La procédure suivante nécessite que vous ayez ajouté le profil `adobe-public`
    mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault -DarchetypeArtifactId=multimodule-content-package-archetype -DarchetypeVersion=1.0.0 -DarchetypeRepository=adobe-public-releases
    ```
 
-1. Spécifiez les valeurs suivantes à l’invite interactive :
+1. Spécifiez les valeurs suivantes au prompt interactif :
 
    * **`groupId`**: `com.adobe.example.msm`
    * **`artifactId`**: `MyLiveActionFactory`
@@ -507,7 +504,7 @@ La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregist
    mvn -PautoInstallPackage clean install
    ```
 
-1. Le fichier AEM `error.log` doit indiquer que le lot est démarré. Cette information est visible dans les journaux à l’`https://<host>:<port>/system/console/status-slinglogs`.
+1. Le fichier `error.log` d’AEM doit indiquer que le bundle est démarré, visible dans les journaux à l’`https://<host>:<port>/system/console/status-slinglogs`.
 
    ```text
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -525,7 +522,7 @@ Créez la configuration de déploiement du MSM qui utilise la `LiveActionFactory
 
    * **Titre** : exemple de configuration de déploiement
    * **Nom** : examplerolloutconfig
-   * **cq:trigger** : `publish`
+   * **cq:trigger** : `publish`
 
 ### Ajout de la LiveAction à l’exemple de configuration de déploiement {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -639,7 +636,6 @@ La propriété de boîte de dialogue détermine si une propriété de page est s
       * **Type** : `String`
       * **Valeur** : contient le nom de la propriété considérée et est comparable à la valeur de la propriété `name`
          * Par exemple, consultez
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la chaîne interagit avec le MSM de la façon suivante :

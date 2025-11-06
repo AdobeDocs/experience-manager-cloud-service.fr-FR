@@ -3,8 +3,8 @@ title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 78%
@@ -146,7 +146,7 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 
 ### Enregistreurs de configuration {#configuration-loggers}
 
-Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
+Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
 
 Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Trois propriétés de configuration sont prises en charge :
 
@@ -158,6 +158,7 @@ Configurez la journalisation Java pour des packages Java personnalisés via des 
 La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
 Comme indiqué dans une section précédente, pour garantir une surveillance efficace des environnements client :
+
 * Le niveau de journal de la configuration de journal par défaut d’AEM (configuration de journalisation Apache Sling) ne doit pas être modifié à partir de sa valeur par défaut « INFO ».
 * Il est acceptable de définir les niveaux de journal sur DEBUG pour des packages individuels de code de produit (à l’aide d’instances de la configuration OSGi « Configuration de l’enregistreur de journalisation Apache Sling »), mais utilisez-le avec parcimonie afin d’éviter une dégradation des performances et de restaurer les informations INFO lorsqu’elles ne sont plus nécessaires.
 * Il est acceptable d’ajuster les niveaux de journal pour le code développé par le client.
@@ -165,8 +166,10 @@ Comme indiqué dans une section précédente, pour garantir une surveillance eff
 * La sortie du journal doit rester redirigée vers le fichier par défaut « logs/error.log ».
 
 À cette fin, aucune modification ne doit être apportée aux propriétés OSGi suivantes :
+
 * **Configuration du journal Apache Sling** (PID : `org.apache.sling.commons.log.LogManager`) - *toutes les propriétés*
 * **Configuration de l’enregistreur de journaux Apache Sling** (PID d’usine : `org.apache.sling.commons.log.LogManager.factory.config`)
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -636,7 +639,7 @@ Bien que les journaux puissent être téléchargés à partir de Cloud Manager, 
 * Elasticsearch (et OpenSearch)
 * Splunk
 
-Consultez l’article [&#x200B; Transfert de journal &#x200B;](/help/implementing/developing/introduction/log-forwarding.md) pour plus d’informations sur la configuration de cette fonctionnalité.
+Consultez l’article [ Transfert de journal ](/help/implementing/developing/introduction/log-forwarding.md) pour plus d’informations sur la configuration de cette fonctionnalité.
 
 >[!NOTE]
 >

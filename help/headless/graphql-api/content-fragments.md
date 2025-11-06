@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 79%
@@ -232,7 +232,7 @@ Lorsque des fragments de contenu sont imbriqués, il se peut qu’un modèle de 
 
 >[!NOTE]
 >
->L’interface utilisateur d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des packages de contenu, elle peut être effectuée.
+>L’interface d’utilisation d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des modules de contenu, elle peut être effectuée.
 
 Dans ce cas, AEM génère un schéma *incomplet* pour le modèle de fragment de contenu parent. Cela signifie que la référence au fragment, qui dépend du modèle dépublié, est supprimée du schéma.
 
@@ -375,7 +375,7 @@ Vous pouvez afficher tous les types GraphQL de métadonnées si vous affichez le
 >[!NOTE]
 >
 >**Différence entre les métadonnées normales et les métadonnées de tableau**
->&#x200B;>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
+>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
 >
 >Par exemple, en appelant le champ `stringMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String` et en appelant `stringArrayMetadata`, vous recevriez un tableau de toutes les métadonnées stockées dans le référentiel comme `String[]`.
 
@@ -770,10 +770,11 @@ La solution de GraphQL vous permet :
 >[!NOTE]
 >
 >Une **Référence de contenu** peut être utilisée pour les ressources de gestion des ressources numériques et les ressources Dynamic Media. La récupération de l’URL appropriée utilise différents paramètres :
+>
 >* `_dynamicUrl` : ressource DAM
 >* `_dmS7Url` : ressource Dynamic Media
 > 
->Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` est `null`. Voir [&#x200B; Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` est `null`. Voir [ Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -784,13 +785,17 @@ La structure et la syntaxe sont les suivantes :
 * `format` : une énumération avec tous les formats pris en charge par son extension : GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLY ;
 * `seoName` : une chaîne qui est utilisée comme nom de fichier au lieu du nom de nœud ;
 * `crop` : une sous-structure d’image, si la largeur ou la hauteur est omise alors la hauteur ou la largeur est utilisée comme même valeur ;
+
    * `xOrigin` : l’origine x de l’image, obligatoire ;
    * `yOrigin` : l’origine y de l’image, obligatoire ;
    * `width` : la largeur de l’image ;
    * `height` : la hauteur de l’image ;
+
 * `size` : une sous-structure de dimension, si la largeur ou la hauteur est omise alors la hauteur ou la largeur est utilisée comme même valeur ;
+
    * `width` : la largeur de la dimension ;
    * `height` : la hauteur de la dimension ;
+
 * `rotation` : une énumération de toutes les rotations prises en charge : R90, R180, R270 ;
 * `flip` : une énumération de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL ;
 * `quality` : un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
@@ -960,7 +965,7 @@ La solution de GraphQL vous permet :
 
    * La propriété `_smartCrops` expose les configurations de recadrage intelligent disponibles pour une ressource spécifique
 
-   * voir [&#x200B; Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * voir [ Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -975,11 +980,12 @@ La solution de GraphQL vous permet :
 >* `_dmS7Url` : ressource Dynamic Media
 >* `_dynamicUrl` : ressource DAM
 > 
->Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` est `null`. Voir [&#x200B; Diffusion d’images optimisées pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` est `null`. Voir [ Diffusion d’images optimisées pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Voici un exemple de requête :
+
 * pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’un `ImageRef`
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Références multiples{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Voici un exemple de requête :
+
 * pour plusieurs fragments de contenu de type `team` et `person`, renvoi d’un `ImageRef`, d’un `MultimediaRef` et d’un `DocumentRef` :
 
 ```graphql
@@ -1209,10 +1216,11 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Voir [Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >Le filtre `includeVariations` et le champ généré par le système `_variation` ne peuvent pas être utilisés ensemble dans la même définition de requête.
 
 * Si vous souhaitez utiliser un OU logique :
-   * Utilisez ` _logOp: OR`
+   * Utilisez `_logOp: OR`
    * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * L’opérateur logique ET existe également, mais est (souvent) implicite
@@ -1238,7 +1246,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
       * `_id` : UUID du fragment de contenu dans le référentiel
 
-         * Voir [&#x200B; Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * Voir [ Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Voir Exemple de requête pour les fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
@@ -1277,7 +1285,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
             * [Exemple de requête pour la diffusion d’images optimisées pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [&#x200B; ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [ ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
@@ -1378,4 +1386,4 @@ AEM prévoit d’investir dans l’API AEM GraphQL.* »
 
 ## Tutoriel – Prise en main d’AEM découplé et de GraphQL {#tutorial}
 
-Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM Headless et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.
+Vous cherchez un tutoriel pratique ? Consultez le tutoriel complet [Prise en main d’AEM en mode découplé et de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) illustrant comment créer et exposer du contenu à l’aide des API GraphQL d’AEM et consommé par une application externe, dans un scénario CMS découplé.

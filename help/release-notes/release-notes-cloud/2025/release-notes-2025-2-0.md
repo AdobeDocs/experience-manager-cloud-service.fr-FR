@@ -4,7 +4,7 @@ description: Notes de mise à jour de la version 2025.2.0 d’ [!DNL Adobe Expe
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -89,7 +89,7 @@ Les filtres de recherche personnalisés améliorent la précision et l’efficac
 
 ### Fonctionnalités d’accès anticipé dans le hub de contenus {#early-access-content-hub}
 
-Le hub de contenus vous permet désormais d’afficher et de télécharger des rendus de recadrage dynamique et intelligent en plus des rendus statiques existants. En tant qu’administrateur ou administratrice du hub de contenus, vous pouvez également configurer la disponibilité de ces rendus pour les utilisateurs et utilisatrices à l’aide de l’interface d’utilisation de configuration.
+Le hub de contenus vous permet désormais d’afficher et de télécharger des rendus de recadrage intelligent et dynamique en plus des rendus statiques existants. En tant qu’administrateur ou administratrice du hub de contenus, vous pouvez également configurer la disponibilité de ces rendus pour les utilisateurs et utilisatrices à l’aide de l’interface d’utilisation de configuration.
 
 ![Rendus dynamiques](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
@@ -128,6 +128,7 @@ L’**exécution** de Java 21 la plus performante sera automatiquement déploy�
 L’Edge Computing rapproche le traitement des données du navigateur, ce qui présente des avantages, notamment une latence réduite. Adobe aimerait savoir si cette technologie est utile pour la diffusion de publications AEM et les projets Edge Delivery Services. De plus, faites-nous part de l’utilisation que vous envisagez d’en faire afin de contribuer à la feuille de route du produit.
 
 Exemples de cas d’utilisation possibles :
+
 * Authentification avec un IdP pour accéder au contenu
 * Rendu d’un contenu dynamique (personnalisé, localisé) en fonction de la géolocalisation, du type d’appareil, des attributs de l’utilisateur ou de l’utilisatrice, etc.
 * Manipulation d’image avancée
@@ -150,7 +151,7 @@ Concrètement, les points d’entrée d’API répertoriés ci-dessous sont disp
 * API de dossiers Sites et Assets
 * [API Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 

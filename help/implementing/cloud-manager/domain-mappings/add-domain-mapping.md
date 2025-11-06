@@ -3,9 +3,9 @@ title: Ajouter un mappage de domaine
 description: Découvrez comment ajouter un mappage de domaine pour un site Edge Delivery ou un environnement Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 7%

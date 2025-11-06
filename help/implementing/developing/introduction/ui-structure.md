@@ -3,8 +3,8 @@ title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 94%
@@ -172,16 +172,16 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 Pour plus d’informations techniques, consultez l’[ensemble de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) relative à l’éditeur de page.
 
-### Shell unifié {#unified-shell}
+### Unified Shell {#unified-shell}
 
-Voir [AEM as a Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si vous utilisez le Shell unifié comme interface utilisateur AEM.
+Voir [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si vous utilisez Unified Shell en tant qu’interface utilisateur d’AEM.
 
-Si vous avez besoin d’effectuer, ou avez déjà fait, des personnalisations, l’option Unified Shall peut être désactivée :
+Si vous devez effectuer ou avez déjà effectué des personnalisations, Unified shall peut être désactivé :
 
-* [de l’interface utilisateur](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+* [depuis l’interface utilisateur](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* du code de votre projet, par :
+* à partir du code de votre projet, par :
 
-   * sur `/conf/global/setting/unifiedshell`
+   * le `/conf/global/setting/unifiedshell`
 
       * définition de la propriété `Boolean` `enable` sur `false`

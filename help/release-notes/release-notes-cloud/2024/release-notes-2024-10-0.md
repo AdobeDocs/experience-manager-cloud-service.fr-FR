@@ -4,10 +4,10 @@ description: Notes de mise à jour de la version 2024.10.0 d’ [!DNL Adobe Exp
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 100%
+source-wordcount: '1663'
+ht-degree: 99%
 
 ---
 
@@ -44,6 +44,7 @@ Regardez la vidéo de vue d’ensemble de la version d’octobre 2024 pour un r
 **Modernisation des événements de page**
 
 Les événements suivants de la page AEM Sites sont désormais accessibles en tant qu’événements externes consommables, grâce à la plateforme d’événements d’AEM as a Cloud Service. Les événements peuvent être traités via Adobe I/O pour interagir avec des processus externes.
+
 * Page publiée
 * Page non publiée
 * Page supprimée
@@ -128,13 +129,13 @@ Les fonctionnalités de l’IA générative proposées sont les suivantes :
 
 * **Assistant IA pour les requêtes de produits** : obtenez des réponses instantanées à vos question sur les formulaires AEM. L’assistant IA sert de base de connaissances personnelle, fournissant des recommandations et des conseils pertinents directement au sein de la plateforme.
 
-* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des invites d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
+* **Génération de formulaires adaptatifs** : créez facilement des formulaires complets avec des prompts d’IA générative. L’IA générative d’Adobe génère automatiquement des formulaires conviviaux qui réduisent les abandons et personnalisent l’expérience.
 
 * **Génération de panneau pour Forms** : générez des sections de formulaire adaptées à des besoins spécifiques de collecte de données. Par exemple, générez des sections pour collecter des informations sur le paiement, les préférences des clientes et clients ou les détails du voyage.
 
-* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des invites d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les invites d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
+* **Modification des mises en page de formulaire** : testez différentes mises en page et conceptions à l’aide des prompts d’IA générative. Testez différentes mises en page, telles que l’assistant ou les onglets, afin de trouver ce qui convient le mieux pour votre formulaire. Utilisez les prompts d’IA générative afin d’optimiser vos formulaires pour la réactivité mobile et de créer des formulaires attrayants pour les utilisateurs et utilisatrices.
 
-* **Configurer l’action d’envoi** : utilisez les invites d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
+* **Configurer l’action d’envoi** : utilisez les prompts d’IA générative pour configurer facilement une action d’envoi pour votre formulaire. Faites votre choix parmi une bibliothèque d’actions d’envoi préconfigurées ou parmi une liste d’actions d’envoi personnalisées, créées et déployées par votre propre équipe de développement.
 
 >[!IMPORTANT]
 >
@@ -156,7 +157,7 @@ Pour contrôler les envois de formulaires Coral ou Foundation à des emplacement
 1. **Ajouter des chemins d’accès autorisés** : spécifie les chemins où les actions de formulaire sont autorisées.
 1. **Restreindre le comportement** : détermine le comportement des chemins restreints (chemins non inclus dans la liste des chemins autorisés). Faites votre choix parmi les options suivantes :
    * **Fenêtre contextuelle** (par défaut) : affiche une notification contextuelle.
-   * **Empêcher** : bloque l’envoi du formulaire.
+   * **Empêcher**:Blocks envoi de formulaire.
 
 >[!NOTE]
 >
@@ -184,7 +185,7 @@ Lorsque qu’un nouvel environnement AEM est créé, les profils de produit appa
 
 Les nouveaux environnements incluent désormais un ensemble mis à jour de profils de produit, assurant leur compatibilité avec les fonctionnalités futures, comme la génération d’informations d’identification d’API dans Adobe Developer Console. Les environnements existants pourront mettre à jour leurs profils de produit dans une version ultérieure. [En savoir plus](/help/onboarding/aem-cs-team-product-profiles.md).
 
-### Nouvelle AEM Developer Console (version bêta publique) {#aem-developer-console-beta}
+### Nouvelle AEM Developer Console (version Beta publique) {#aem-developer-console-beta}
 
 Testez une [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) repensée qui offre une expérience plus interactive pour le débogage du code dans les environnements cloud.
 

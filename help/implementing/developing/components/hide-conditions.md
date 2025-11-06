@@ -3,8 +3,8 @@ title: Utilisation de conditions de masquage
 description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 94%
@@ -53,7 +53,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/page-editor/templates.md), le créateur ou la créatrice de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition du créateur ou de la créatrice de pages. Des options telles que l’autorisation d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc., peuvent être activées ou désactivées.
+[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/page-editor/templates.md), le créateur ou la créatrice de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition du créateur ou de la créatrice de pages. Des options telles que l’autorisation de la liste en tant que liste statique, une liste de pages enfants, une liste de pages balisées, etc. peuvent être activées ou désactivées.
 
 Si un créateur ou une créatrice de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à cette propriété, ce qui fait que l’option ne s’affiche pas pour le créateur ou la créatrice de la page.
 

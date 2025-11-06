@@ -5,7 +5,7 @@ keywords: Utilisation de la source de données Marketo Engage dans les formulai
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 100%
@@ -109,8 +109,10 @@ Le formulaire est maintenant configuré avec la source de données de l’instan
 **Q : que se passe-t-il lors de la modification du connecteur du formulaire ?**\
 **R :** si vous modifiez le connecteur du formulaire, les liaisons existantes ne sont plus valides.
 
-**Q : quelles sont les trois opérations disponibles dans le service d’appel de l’éditeur de règles pour les formulaires intégrés à Marketo Engage ?**\
+**Q : quelles sont les trois opérations disponibles dans le service d’appel de l’éditeur de règles pour les formulaires intégrés à Marketo Engage ?**
+
 **R :** les trois opérations prêtes à l’emploi disponibles dans le **service d’appel** pour les formulaires intégrés à Marketo Engage sont les suivantes :
+
 * Synchroniser le lead
 * Obtenir le lead par ID
 * Obtenir le lead par type de filtre

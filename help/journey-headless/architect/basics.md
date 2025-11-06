@@ -4,11 +4,11 @@ description: Découvrez les bases de la modélisation du contenu pour votre CMS 
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 Dès le début du [Parcours d’architecture de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) a couvert les concepts de base et la terminologie relatifs à la modélisation du contenu découplé.
 
-Cet article s’appuie sur ces principes afin que vous compreniez comment modéliser votre contenu pour votre projet AEM découplé.
+Cet article s’appuie sur ces principes afin que vous compreniez comment modéliser le contenu de votre projet AEM découplé.
 
 ## Objectif {#objective}
 
@@ -92,7 +92,7 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 * Référence de contenu
 * Référence de contenu (UUID)
 * Objet JSON
-* Espace réservé pour tabulation
+* Espace réservé pour onglet
 
 >[!NOTE]
 >
@@ -100,14 +100,14 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 ## Références et contenu imbriqué {#references-nested-content}
 
-Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
+Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**/**Référence de contenu (UUID)**
-Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
+Référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**/**Référence du fragment (UUID)**
-Cette section fournit des références à d’autres fragments de contenu.
+* **Référence de fragment**/**Référence de fragment (UUID)**
+Références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
    * Modifier directement le fragment référencé.

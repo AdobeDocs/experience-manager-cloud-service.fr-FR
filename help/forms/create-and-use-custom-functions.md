@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 53%
@@ -19,7 +19,7 @@ ht-degree: 53%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Cet article |
 
 AEM Forms prend en charge des fonctions personnalisées, ce qui permet aux utilisateurs et utilisatrices de définir des fonctions JavaScript pour implémenter des règles métier complexes. Ces fonctions personnalisées étendent les fonctionnalités des formulaires en facilitant la manipulation et le traitement des données saisies afin de répondre à des exigences spécifiques. Ils permettent de modifier dynamiquement le comportement du formulaire en fonction de critères prédéfinis. Les fonctions personnalisées permettent également aux développeurs et développeuses d’appliquer une logique de validation complexe, d’effectuer des calculs dynamiques et de contrôler l’affichage ou le comportement des éléments de formulaire en fonction des interactions utilisateur ou de critères prédéfinis.
@@ -31,6 +31,7 @@ AEM Forms prend en charge des fonctions personnalisées, ce qui permet aux utili
 ## Utilisations des fonctions personnalisées {#uses-of-custom-function}
 
 Les avantages des fonctions personnalisées dans les formulaires adaptatifs sont les suivants :
+
 * **Traitement des données** : les fonctions personnalisées aident à traiter les données saisies dans les champs de formulaires.
 * **Validation des données** : les fonctions personnalisées vous permettent d’effectuer des vérifications personnalisées sur les entrées de formulaire et de fournir des messages d’erreur spécifiés.
 * **Comportement dynamique** : les fonctions personnalisées vous permettent de contrôler le comportement dynamique de vos formulaires en fonction de conditions spécifiques. Vous pouvez, par exemple, afficher/masquer des champs, modifier les valeurs de champ ou ajuster dynamiquement la logique du formulaire.
@@ -119,7 +120,7 @@ Tenez compte du fragment de code suivant, où input2 est défini comme un param�
 
 L’illustration suivante s’affiche à l’aide de la fonction personnalisée `OptionalParameterFunction` dans l’éditeur de règles :
 
-![Paramètres facultatifs ou obligatoires &#x200B;](/help/forms/assets/optional-default-params.png)
+![Paramètres facultatifs ou obligatoires ](/help/forms/assets/optional-default-params.png)
 
 Vous pouvez enregistrer la règle sans spécifier de valeur pour les paramètres requis, mais la règle n’est pas exécutée et affiche un message d’avertissement comme suit :
 

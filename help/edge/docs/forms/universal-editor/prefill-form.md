@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Préremplir un formulaire adaptatif, formulaires adaptatifs Edge Delivery Services, remplissage automatique de formulaire adaptatif
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Le processus de préremplissage comprend quatre étapes clés :
 1. **Récupérer les données** : le système récupère les données utilisateur ou utilisatrice pertinentes en fonction du contexte, des paramètres ou de l’identification de l’utilisateur ou de l’utilisatrice.
 1. **Mapper et afficher** : les données sont mappées aux champs du formulaire à l’aide des propriétés `bindRef` et le formulaire renseigné est présenté à l’utilisateur ou l’utilisatrice.
 
-Ce processus automatisé garantit que les utilisateurs et utilisatrices voient un formulaire prérempli avec leurs informations pertinentes, ce qui améliore considérablement l’expérience d’utilisation et les taux de remplissage de formulaire.
+Ce processus automatisé garantit que les utilisateurs et utilisatrices voient un formulaire prérempli avec leurs informations pertinentes, ce qui améliore considérablement l’expérience d’utilisation et les taux d’achèvement des formulaires.
 
 ## Structure des données pour le préremplissage
 
@@ -125,7 +125,7 @@ L’éditeur universel fournit deux options de service de préremplissage :
 1. Accédez à **Adobe Experience Manager** > **Formulaires** > **Intégrations de données**
 1. Ouvrez le modèle de données de formulaire en mode d’édition
 1. Sélectionnez un objet de modèle de données et cliquez sur **Modifier les propriétés**
-1. Configurer les services **Lire** et **Écrire** pour les objets du modèle de données sélectionnés
+1. Configurer les services **Lire** et **Écrire** pour les objets de modèle de données sélectionnés
 
    ![Configuration du service de lecture/écriture](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
@@ -157,7 +157,7 @@ L’éditeur universel fournit deux options de service de préremplissage :
 
 1. Cliquez sur **Créer** pour ouvrir l’assistant **Créer un formulaire**.
 
-   >
+   >[!NOTE]
    >
    > Vous pouvez configurer la source de données à partir de l’onglet **Données** ou ultérieurement en modifiant les propriétés du formulaire.
 

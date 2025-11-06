@@ -3,7 +3,7 @@ title: Contrôle d’accès basé sur les attributs
 description: Découvrez comment activer le contrôle d’accès basé sur les attributs pour définir des règles basées sur les métadonnées afin de définir le niveau d’accès aux ressources disponibles dans Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -68,7 +68,7 @@ Grâce à ces règles, les administrateurs Content Hub disposent des éléments 
 
 >[!IMPORTANT]
 >
-> Par défaut, tous les autres groupes d’utilisateurs, qui ne sont spécifiés par aucune règle dans la [&#x200B; feuille de calcul](#enable-attribute-based-access-control), se voient refuser l’accès. Si un utilisateur ou une utilisatrice ne fait partie d’aucun groupe pour lequel des règles ABAC sont définies, il ou elle ne peut accéder à aucune ressource. Si vous souhaitez que certains utilisateurs aient accès à toutes les ressources (par exemple, les administrateurs), un groupe doté d’un ID de groupe doit être mentionné dans la feuille de calcul avec les détails indiquant que ce groupe spécifique doit avoir accès à toutes les ressources et Adobe le configurera pour vous.
+> Par défaut, tous les autres groupes d’utilisateurs, qui ne sont spécifiés par aucune règle dans la [ feuille de calcul](#enable-attribute-based-access-control), se voient refuser l’accès. Si un utilisateur ou une utilisatrice ne fait partie d’aucun groupe pour lequel des règles ABAC sont définies, il ou elle ne peut accéder à aucune ressource. Si vous souhaitez que certains utilisateurs aient accès à toutes les ressources (par exemple, les administrateurs), un groupe doté d’un ID de groupe doit être mentionné dans la feuille de calcul avec les détails indiquant que ce groupe spécifique doit avoir accès à toutes les ressources et Adobe le configurera pour vous.
 
 
 ## Éléments de règle pris en charge {#supported-rule-constructs}
@@ -86,7 +86,7 @@ Cela vous permet d’écrire des règles simples et expressives, telles que : AL
 
 ## Directives {#guidelines-attribute-based-access-control}
 
-* Les règles ABAC s’appliquent uniquement aux ressources approuvées pour Content Hub. Pour plus d’informations, voir [&#x200B; Approuver Assets pour Content Hub &#x200B;](/help/assets/approve-assets-content-hub.md).
+* Les règles ABAC s’appliquent uniquement aux ressources approuvées pour Content Hub. Pour plus d’informations, voir [ Approuver Assets pour Content Hub ](/help/assets/approve-assets-content-hub.md).
 
 * Ne donnez pas de règles DENY, mais convertissez toujours DENY en règle ALLOW. Par exemple, les `ALLOW if region = <user-region> DENY if assetType = prototype AND confidential = yes` peuvent être convertis en `ALLOW if region = <user-region> AND (assetType != prototype OR confidential != yes)`.
 

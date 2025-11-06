@@ -4,7 +4,7 @@ description: Découvrez comment conserver les requêtes GraphQL dans Adobe Expe
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 80%
@@ -258,37 +258,39 @@ Cette requête peut être conservée sous un chemin `wknd/adventures-by-activity
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-L&#39;encodage UTF-8 `%3B` est pour `;` et `%3D` est l&#39;encodage pour `=`. Les variables de requête et les caractères spéciaux doivent être [correctement encodés](#encoding-query-url) pour que la requête persistante s’exécute.
+Le `%3B` de codage UTF-8 est pour `;` et `%3D` est le codage pour `=`. Les variables de requête et les caractères spéciaux doivent être [correctement encodés](#encoding-query-url) pour que la requête persistante s’exécute.
 
 ### Utilisation des variables de requête - Bonnes pratiques {#query-variables-best-practices}
 
-Lorsque vous utilisez des variables dans vos requêtes, vous devez suivre quelques bonnes pratiques :
+Lorsque vous utilisez des variables dans vos requêtes, quelques bonnes pratiques doivent être suivies :
 
 * Encodage
-En règle générale, il est toujours recommandé de coder tous les caractères spéciaux, par exemple, `;`, `=`, `?`, `&`, entre autres.
+En règle générale, il est toujours recommandé de coder tous les caractères spéciaux ; par exemple, `;`, `=`, `?`, `&`, entre autres.
 
 * Point-virgule
-Les requêtes persistantes qui utilisent plusieurs variables (séparées par des points-virgules) doivent avoir :
-   * le point-virgule codé (`%3B`) ; le codage de l’URL permet également d’obtenir ce résultat.
+Les requêtes persistantes qui utilisent plusieurs variables (séparées par des points-virgules) doivent avoir l’une des caractéristiques suivantes :
+   * le codage des points-virgules (`%3B`) ; le codage de l’URL effectuera également cette opération
    * ou un point-virgule de fin ajouté à la fin de la requête
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Lorsque `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour Dispatcher, les paramètres qui contiennent les caractères `/` ou `\` dans leur valeur sont codés deux fois au niveau Dispatcher.
+Lorsque `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour le Dispatcher, les paramètres qui contiennent les caractères `/` ou `\` dans leur valeur sont codés deux fois au niveau du Dispatcher.
 Pour éviter cette situation :
 
-   * Activez `DispatcherNoCanonURL` sur Dispatcher.
-Cela indique à Dispatcher de transférer l’URL d’origine vers AEM afin d’éviter les codages en double.
-Toutefois, ce paramètre ne fonctionne actuellement qu’au niveau de `vhost`. Par conséquent, si vous disposez déjà de configurations Dispatcher pour réécrire des URL (par exemple, lorsque vous utilisez des URL abrégées), vous pouvez avoir besoin d’un `vhost` distinct pour les URL de requête persistantes.
+   * Activez `DispatcherNoCanonURL` sur le Dispatcher.
+Cette instruction indique au Dispatcher de transférer l’URL d’origine vers AEM, afin d’éviter les codages dupliqués.
+Cependant, ce paramètre ne fonctionne actuellement qu’au niveau des `vhost`. Par conséquent, si vous disposez déjà de configurations Dispatcher pour réécrire les URL (par exemple, lors de l’utilisation d’URL raccourcies), vous aurez peut-être besoin d’une `vhost` distincte pour les URL de requête persistante.
 
-   * Envoyez des caractères `/` ou `\` non codés.
-Lors de l’appel de l’URL de requête persistante, assurez-vous que tous les caractères `/` ou `\` ne sont pas codés dans la valeur des variables de requête persistantes.
+   * Envoyez `/` ou `\` caractères non codés.
+
+     Lors de l’appel de l’URL de la requête persistante , assurez-vous que tous les caractères `/` ou `\` ne sont pas codés dans la valeur des variables de la requête persistante.
+
      >[!NOTE]
      >
-     >Cette option est recommandée uniquement lorsque la solution `DispatcherNoCanonURL` ne peut pas être mise en oeuvre pour une raison quelconque.
+     >Cette option n’est recommandée que lorsque la solution `DispatcherNoCanonURL` ne peut pas être mise en œuvre, quelle que soit la raison.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  Lorsque `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour Dispatcher, le caractère `;` ne peut pas être utilisé dans la valeur d’une variable.
+  Lorsque `CACHE_GRAPHQL_PERSISTED_QUERIES` est activé pour le Dispatcher, le caractère `;` ne peut pas être utilisé dans la valeur d’une variable.
 
 ## Mettre en cache vos requêtes persistantes {#caching-persisted-queries}
 
@@ -411,7 +413,7 @@ Configuration OSGi par défaut pour les instances de publication :
 
 Par défaut, le `PersistedQueryServlet` envoie une réponse `200` lors de l’exécution d’une requête, quel que soit le résultat réel.
 
-Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour la **configuration du service de requête persistante** afin de contrôler si des codes d’état plus détaillés sont renvoyés par le point de terminaison `/execute.json/persisted-query`, en cas d’erreur dans la requête persistante.
+Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour la **Configuration du service de requête persistante** afin de contrôler si des codes d’état plus détaillés sont renvoyés par le point d’entrée `/execute.json/persisted-query`, en cas d’erreur dans la requête persistante.
 
 >[!NOTE]
 >
@@ -420,17 +422,17 @@ Vous pouvez [configurer les paramètres OSGi](/help/implementing/deploying/confi
 Le champ `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) peut être défini selon les besoins :
 
 * `false` (valeur par défaut) :
-peu importe que la requête persistante soit réussie ou non. L’en-tête `Content-Type` renvoyé est `application/json`, et le `/execute.json/persisted-query` *always* renvoie le code d’état `200`.
+peu importe que la requête persistante soit réussie ou non. L’en-tête `Content-Type` renvoyé est `application/json` et le code d’état `/execute.json/persisted-query` *always* renvoie `200`.
 
 * `true` :
-Le `Content-Type` renvoyé est `application/graphql-response+json` et le point de terminaison renvoie le code de réponse approprié en cas d’erreur quelle qu’elle soit lors de l’exécution de la requête persistante :
+Le `Content-Type` renvoyé est `application/graphql-response+json` et le point d’entrée renvoie le code de réponse approprié en cas d’erreur lors de l’exécution de la requête persistante :
 
   | Code | Description |
   |--- |--- |
   | 200 | Réponse réussie |
-  | 400 | Indique qu’il manque des en-têtes ou qu’il y a un problème avec le chemin de requête persistant. Par exemple, nom de configuration non spécifié, suffixe non spécifié, etc.<br>Voir [Dépannage - point de terminaison GraphQL non configuré](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | La ressource demandée est introuvable. Par exemple, le point d’entrée Graphql n’est pas disponible sur le serveur.<br>Voir [Dépannage - Chemin manquant dans l’URL de requête persistante de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
-  | 500 | Erreur interne du serveur. Par exemple, erreurs de validation, erreur de persistance, etc. |
+  | 400 | Indique qu’il manque des en-têtes ou qu’il y a un problème avec le chemin d’accès à la requête persistante. Par exemple, nom de configuration non spécifié, suffixe non spécifié et autres.<br>Voir [Dépannage - Point d’entrée GraphQL non configuré](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | La ressource demandée est introuvable. Par exemple, le point d’entrée Graphql n’est pas disponible sur le serveur.<br>Voir [Dépannage - Chemin manquant dans l’URL de la requête persistante GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Erreur interne du serveur. Par exemple, les erreurs de validation, l’erreur de persistance, etc. |
 
   >[!NOTE]
   >
@@ -477,12 +479,12 @@ Les requêtes persistantes peuvent être intégrées aux [packages AEM](/help/im
 Création d’un package :
 
 1. Accédez à **Outils** > **Déploiement** > **Packages**.
-1. Créez un nouveau package en appuyant sur **Créer un package**. Une boîte de dialogue s’ouvre alors pour définir le module.
+1. Créez un nouveau package en appuyant sur **Créer un package**. Une boîte de dialogue s’ouvre alors pour définir le package.
 1. Dans la boîte de dialogue Définition de package, sous **Général**, saisissez un **Nom** comme « wknd-persistent-queries ».
 1. Saisissez un numéro de version comme « 1.0 ».
 1. Sous **Filtres** ajoutez un nouveau **Filtre**. Utilisez l’outil de recherche de chemin pour sélectionner le dossier `persistentQueries` sous la configuration. Par exemple, pour la configuration `wknd`, le chemin d’accès complet sera `/conf/wknd/settings/graphql/persistentQueries`.
 1. Sélectionnez **Enregistrer** pour enregistrer la nouvelle définition de package et fermez la boîte de dialogue.
-1. Sélectionnez le bouton **Build** dans la définition de package créée.
+1. Sélectionnez le bouton **Créer** dans la définition de package créée.
 
 Une fois le package créé, vous pouvez :
 

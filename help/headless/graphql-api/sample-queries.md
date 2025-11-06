@@ -4,9 +4,9 @@ description: Apprenez à utiliser GraphQL avec AEM pour pourvoir diffuser du con
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1927'
 ht-degree: 90%
 
 ---
@@ -44,9 +44,9 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 >
 >Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse dans l’API GraphQL d’AEM](/help/headless/graphql-api/graphiql-ide.md) pour soumettre et tester des requêtes.
 >
->Vous pouvez accéder à l’éditeur de requêtes à partir de :
+>Vous pouvez accéder au requêteur à partir de :
 >
->* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+>* **Outils** > **Général** > **Requêteur GraphQL**
 >* directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1710,11 +1710,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
+### Exemple de requête pour plusieurs fragments de contenu d’un ensemble de paramètres régionaux donné {#sample-wknd-multiple-fragments-given-locale}
 
 Cette requête interroge :
 
-* à la recherche de fragments de contenu de type `article` dans le paramètre régional `fr`
+* à la recherche de fragments de contenu de type `article` dans les paramètres régionaux `fr`
 
 **Exemple de requête**
 
@@ -1980,10 +1980,10 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 
 | Nom | Pays | Population | Catégories |
 |--- |--- |--- |--- |
-| Bâle | Suisse | 172258 | city:emea |
+| Bâle | Suisse | 172258 | ville :emea |
 | Berlin | Allemagne | 3669491 | city:capital<br>city:emea |
 | Bucarest | Roumanie | 1821000 | city:capital<br>city:emea |
 | San Francisco | États-Unis | 883306 | city:beach<br>city:na |
-| San Jose | États-Unis | 102635 | city:na |
-| Stuttgart | Allemagne | 634830 | city:emea |
+| San Jose | États-Unis | 102635 | ville :na |
+| Stuttgart | Allemagne | 634830 | ville :emea |
 | Zurich | Suisse | 415367 | city:capital<br>city:emea |

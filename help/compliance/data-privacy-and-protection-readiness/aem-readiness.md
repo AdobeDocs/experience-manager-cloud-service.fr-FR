@@ -3,8 +3,8 @@ title: Règlements sur la protection et la confidentialité des données – Pr�
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service pour les différentes règlementations sur la protection et la confidentialité des données et comment vous conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service. Ces réglementations comprennent le Règlement général sur la protection des données (RGPD) de l’UE et la loi sur la protection de la vie privée des consommateurs de Californie (California Consumer Privacy Act).
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -46,7 +46,7 @@ En guise de petite introduction, les règlements relatifs à la confidentialité
 
 * Entités commerciales (CCPA) et/ou Contrôleurs de données (RGPD)
 
-* Prestataires (CCPA) et/ou Responsables du traitement des données (GDPR)
+* Prestataires (CCPA) et/ou Responsables du traitement des données (RGPD)
 
 Les principales dispositions de ces règlements sont les suivantes :
 

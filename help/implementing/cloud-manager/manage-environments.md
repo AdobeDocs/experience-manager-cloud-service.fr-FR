@@ -4,8 +4,8 @@ description: Découvrez les types d’environnements que vous pouvez créer et c
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 37%
@@ -71,7 +71,7 @@ Pour ajouter ou modifier un environnement, un utilisateur doit disposer du rôle
    * Fournissez un environnement **Nom**. Le nom de l’environnement ne peut pas être modifié une fois l’environnement créé.
    * Ajoutez une **Description** de l’environnement (facultatif).
    * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-   * Sélectionnez une région de Principal **&#x200B;**&#x200B;dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
+   * Sélectionnez une région de Principal **** dans la liste déroulante. La région principale ne peut pas être modifiée après la création. En outre, en fonction des droits disponibles, vous pouvez configurer [plusieurs régions](#multiple-regions).
 
    ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
@@ -184,7 +184,7 @@ Un utilisateur disposant des autorisations requises doit effectuer les étapes s
 
 1. Créez une Liste autorisée place sur la liste autorisée IP appropriée, appliquez-la au service d’aperçu et annulez immédiatement l’application de la `Preview Default [<envId>]`.
 
-   Voir [&#x200B; Application et annulation de l’application de Listes autorisées IP &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
+   Voir [ Application et annulation de l’application de Listes autorisées IP ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
 
 1. Utilisez le workflow de mise à jour **Liste autorisée IP** pour supprimer l’adresse IP par défaut et ajouter les adresses IP nécessaires. Voir [Gérer les Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
 
@@ -204,7 +204,7 @@ Si vous avez activé des régions de publication supplémentaires, vous pouvez v
 
 1. Sur la vignette **Environnements**, la colonne **Statut** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Cliquez sur l’icône **Info** pour afficher les détails des régions.
 
-   ![Informations supplémentaires sur le statut des régions de publication dans la carte Environnements &#x200B;](assets/additional-publish-region-status-environments-card.png)
+   ![Informations supplémentaires sur le statut des régions de publication dans la carte Environnements ](assets/additional-publish-region-status-environments-card.png)
 
 Vous pouvez également accéder aux mêmes informations à partir de l’onglet **Environnements**.
 
@@ -217,7 +217,7 @@ Vous pouvez également accéder aux mêmes informations à partir de l’onglet 
    * Le tableau **Informations sur l’environnement** indique les régions configurées pour l’environnement sélectionné.
    * La colonne **Statut** du tableau **Segments d’environnement** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Passez la souris sur le statut pour afficher les détails du problème.
 
-   ![Informations supplémentaires sur le statut des régions de publication dans l’onglet Environnements &#x200B;](assets/additional-publish-region-status-environments-tab.png)
+   ![Informations supplémentaires sur le statut des régions de publication dans l’onglet Environnements ](assets/additional-publish-region-status-environments-tab.png)
 
 Si des problèmes sont signalés avec d’autres régions de publication, veuillez patienter. Cloud Manager tente continuellement de récupérer la région et elle peut être disponible à tout moment. Si le problème persiste au bout de plusieurs heures, vous pouvez supprimer la zone géographique de publication supplémentaire et la rajouter (dans la même zone géographique ou dans une autre) pour déclencher un déploiement complet.
 
@@ -308,7 +308,7 @@ Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à **
 
 Seul un utilisateur ou une utilisatrice possédant le rôle de **développeur** aura accès à la **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
+Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation).
 
 Cette option est également disponible à partir de l’onglet **Environnement** de la fenêtre **Aperçu** lorsque vous cliquez sur l’icône ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) d’un environnement individuel.
 
@@ -344,4 +344,4 @@ L’application d’une Liste autorisée IP associe toutes les plages d’adress
 
 >[!TIP]
 >
->Pour plus d’informations, voir [&#x200B; Présentation des Listes autorisées IP &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Pour plus d’informations, voir [ Présentation des Listes autorisées IP ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

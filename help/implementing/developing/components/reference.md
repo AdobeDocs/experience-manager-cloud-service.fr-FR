@@ -3,11 +3,11 @@ title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 90%
+source-wordcount: '3476'
+ht-degree: 89%
 
 ---
 
@@ -57,7 +57,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour prendre le contenu requis et le rendre selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu en [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir l’HTML nécessaire pour effectuer le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -110,7 +110,7 @@ La définition d’un composant peut être décomposée comme suit :
    * Voir la section [Icône de composant](#component-icon) pour plus d’informations.
 * **Nœuds enfants essentiels** :
    * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants.
-      * Si le composant présente une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
+      * Si le composant possède une boîte de dialogue, elle s’affiche automatiquement dans l’explorateur de composants ou dans Sidekick, même si cq:editConfig n’existe pas.
    * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` – Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
    * `cq:design_dialog (nt:unstructured)` - Modification de la conception du composant.
@@ -339,7 +339,7 @@ Le script HTL type pour effectuer le rendu du code HTML d’espace réservé ci-
 
 Dans l’exemple précédent, `isEmpty` est une variable vraie uniquement lorsque le composant n’a aucun contenu et est invisible pour l’auteur.
 
-Pour éviter la répétition, Adobe recommande aux personnes qui mettent en œuvre les composants d’utiliser un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
+Pour éviter toute répétition, Adobe recommande aux personnes qui mettent en œuvre les composants d’utiliser un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 L’utilisation du modèle dans le lien précédent se fait ensuite grâce à la ligne HTL suivante :
 
@@ -354,13 +354,13 @@ Vous trouverez un exemple d’utilisation de ce modèle dans les composants prin
 
 ### Configuration avec des nœuds enfants cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-#### Dépôt de ressources dans une boîte de dialogue – cq:dropTargets {#cq-droptargets}
+#### Déposer Assets dans une boîte de dialogue - cq:dropTargets {#cq-droptargets}
 
 Le nœud `cq:dropTargets` (type de nœud `nt:unstructured`) définit la cible de dépôt pouvant accepter une ressource déplacée à partir du Content Finder. Il s’agit d’un nœud de type `cq:DropTargetConfig`.
 
 Le nœud enfant de type `cq:DropTargetConfig` définit une cible de dépôt dans le composant.
 
-### Modification locale – cq:inplaceEditing {#cq-inplaceediting}
+### Modification locale - cq:inplaceEditing {#cq-inplaceediting}
 
 Un éditeur local permet à l’utilisateur ou à l’utilisatrice de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, les composants standard **Texte** et **Titre** possèdent tous deux un éditeur local.
 
@@ -383,7 +383,7 @@ La configuration suivante active la modification locale du composant et définit
         editorType="plaintext"/>
 ```
 
-### Gestion des événements de champ – cq:listeners {#cq-listeners}
+### Gestion des événements de champ - cq:listeners {#cq-listeners}
 
 La méthode de gestion des événements dans les champs de boîte de dialogue est appliquée avec les écouteurs d’une [bibliothèque cliente personnalisée](/help/implementing/developing/introduction/clientlibs.md).
 
@@ -451,7 +451,7 @@ Ce événement est déclenché chaque fois que la boîte de dialogue se charge (
 
 ## Comportement de la prévisualisation {#preview-behavior}
 
-Le cookie [WCM Mode &#x200B;](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
+Le cookie [WCM Mode ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html)est défini lors du passage en mode Aperçu même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au mode WCM, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 

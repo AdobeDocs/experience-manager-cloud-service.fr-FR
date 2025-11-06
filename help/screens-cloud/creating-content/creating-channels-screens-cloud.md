@@ -4,7 +4,7 @@ description: Cette page décrit comment créer et gérer des canaux dans Screens
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 85%
@@ -22,7 +22,7 @@ Ce document vous aide à comprendre la création et la gestion de canaux pour vo
 
 * comprendre comment créer des canaux pour le fournisseur de contenu Screens ;
 * gérer et modifier du contenu dans vos canaux.
-* gérer l’attribution et la planification de l’activation de vos canaux dans [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=fr)
+* gérez le planning d’attribution et d’activation de vos canaux dans le fournisseur de services [Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=fr)
 
 ## Procédure de création d’un canal de séquence dans Screens as a Cloud Service {#create-new-channel}
 
@@ -36,7 +36,7 @@ Pour créer un canal de séquence dans Screens as a Cloud Service, procédez com
 
 1. Accédez à votre projet AEM Screens, par exemple *FirstDigitalExperience*.
 
-1. Sélectionnez le dossier **Channels** (Canaux) de votre projet, par exemple **FirstDigitalExperience** —> **Channels** (Canaux), puis cliquez sur **Créer** dans la barre d’actions.
+1. Sélectionnez le dossier **Canaux** de votre projet, par exemple **FirstDigitalExperience** —> **Canaux** et cliquez sur **Créer** dans la barre d’actions.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
@@ -47,7 +47,7 @@ Pour créer un canal de séquence dans Screens as a Cloud Service, procédez com
    >[!NOTE]
    > L’assistant **Créer** fournit différents types de modèles lors de la création d’un canal. Consultez [Modèles disponibles](#available-templates) dans l’assistant de création pour plus d’informations.
 
-1. Saisissez le nom de votre canal de séquence, par exemple **LoopingChannelOne**, puis cliquez sur **Créer**.
+1. Saisissez le nom de votre canal de séquence, par exemple **LoopingChannelOne** et cliquez sur **Créer**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -71,7 +71,7 @@ Pour ajouter du contenu à un canal ou modifier son contenu, suivez les étapes 
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. L’éditeur vous permet d’ajouter à votre canal des ressources/composants que vous souhaitez publier.
+1. L’éditeur vous permet d’ajouter au canal des ressources/composants que vous souhaitez publier.
 
 1. Faites glisser et déposez les ressources à partir du volet de gauche et ajoutez-les à l’éditeur.
 
@@ -93,7 +93,7 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 
 ## Utilisation des informations d’attribution par défaut pour les canaux {#default-channels}
 
-Cette fonctionnalité vous permet de définir un planning d&#39;activation par défaut pour un canal, et de l&#39;utiliser par défaut pour chaque affectation à un affichage. Elle permet de ne pas répéter une définition lourde de planification.
+Cette fonctionnalité vous permet de définir un planning d’activation par défaut pour un canal et de l’utiliser par défaut pour chaque affectation pour un affichage. Elle permet de ne pas répéter une définition lourde de planification.
 
 1. Accédez au [fournisseur de services Screens](https://experience.adobe.com/screens).
 
@@ -105,7 +105,7 @@ Cette fonctionnalité vous permet de définir un planning d&#39;activation par d
    ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Cliquez sur **Définition des informations par défaut**.
-1. Configurez les informations d’attribution par défaut, notamment la priorité, les dates de début et de fin, ainsi que les modèles de périodicité pour le canal, puis cliquez sur **Attribuer**.
+1. Configurez les informations d’attribution par défaut, notamment la priorité, les dates de début et de fin, ainsi que les modèles de récurrence pour le canal, puis cliquez sur **Attribuer**.
 
    ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -114,6 +114,7 @@ Cette fonctionnalité vous permet de définir un planning d&#39;activation par d
    ![image](/help/screens-cloud/assets/display/Assignments3.png)
 
 Cette mosaïque affiche les informations suivantes :
+
 * La priorité par défaut du canal dans l’affichage
 * Les dates de début et de fin de l’activation lorsque la lecture du canal est planifiée
 * Un résumé de l’affichage de la périodicité (horaire/quotidien/hebdomadaire/mensuel/annuel, ainsi que le nom donné à cette périodicité).
@@ -123,7 +124,7 @@ Cette mosaïque affiche les informations suivantes :
 Les canaux avec des informations d’attribution par défaut peuvent être affectés à des affichages de la même manière que les canaux standards, avec en plus la possibilité d’utiliser les informations d’attribution par défaut au lieu de définir manuellement des informations personnalisées, à chaque fois.
 
 1. Accédez à la page des informations de l’affichage auquel vous souhaitez attribuer le canal, puis cliquez sur **Attribuer le canal**.
-vous pouvez également sélectionner l’affichage souhaité dans la vue [inventory](https://experience.adobe.com/screens/displays) et cliquer sur le **canal d’affectation**.
+Vous pouvez également sélectionner l’affichage souhaité dans la vue [inventaire](https://experience.adobe.com/screens/displays) et cliquer sur le **Attribuer le canal**.
 1. La boîte de dialogue Attribution de canaux s’ouvre.
 
    ![image](/help/screens-cloud/assets/display/Assignments4.png)

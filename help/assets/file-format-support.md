@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 94%
@@ -37,8 +37,8 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] ne prend en charge que les formats de fichiers répertoriés dans cet article.
->&#x200B;>Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
->&#x200B;>Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
+>Certaines fonctionnalités peuvent sembler fonctionner avec d’autres formats, mais ces derniers ne sont pas officiellement pris en charge. Les résultats peuvent être incohérents et les fonctionnalités peuvent ne pas fonctionner comme prévu.
+>Pour garantir des résultats cohérents et fiables, utilisez uniquement les formats pris en charge.
 
 ## Formats Adobe {#adobe-formats}
 
@@ -220,7 +220,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats de document pris en charge {#document-support-dynamic-media}
 
-| Format | Charger (format d’entrée) | Créer un paramètre prédéfini d’image (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
+| Format | Charger (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
@@ -232,7 +232,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats d’images pixellisées prises en charge {#image-support-dynamic-media}
 
-| Format | Charger (format d’entrée) | Créer un paramètre prédéfini d’image (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
+| Format | Charger (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |

@@ -3,8 +3,8 @@ title: Personnalisation de l’éditeur universel
 description: Découvrez les différentes options de personnalisation de l’éditeur universel pour prendre en charge les besoins des créateurs et créatrices de contenu.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 68%

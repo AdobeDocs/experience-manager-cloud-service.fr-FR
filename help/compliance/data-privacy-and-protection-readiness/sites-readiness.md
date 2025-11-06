@@ -1,17 +1,17 @@
 ---
-title: Règlements sur la protection et la confidentialité des données - Préparation à AEM Sites
-description: Découvrez la prise en charge d’Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
+title: Règlements sur la protection et la confidentialité des données – Préparation d’AEM Sites
+description: Découvrez la prise en charge d’Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données, notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs et consommatrices de Californie, ainsi que la manière de se conformer à ces règlements lors de l’implémentation d’un nouveau projet AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Préparation de Experience Manager Sites aux réglementations sur la protection et la confidentialité des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Préparation d’Experience Manager Sites pour les réglementations sur la protection et la confidentialité des données {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >

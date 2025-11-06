@@ -4,7 +4,7 @@ description: Découvrez comment utiliser le réseau CDN géré par AEM et commen
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 36%
@@ -68,7 +68,7 @@ Vous pouvez configurer une page d’erreur de réseau CDN pour remplacer la page
 
 La définition de la durée de vie (TTL) à l’aide de l’en-tête de contrôle du cache HTTP est une approche efficace pour équilibrer les performances de diffusion du contenu et l’actualisation du contenu. Cependant, dans les cas où il est essentiel de diffuser immédiatement le contenu mis à jour, il peut être bénéfique de purger directement le cache du réseau CDN.
 
-Découvrez [configuration d’un jeton API de purge](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) et [purge du contenu CDN mis en cache](/help/implementing/dispatcher/cdn-cache-purge.md).
+Découvrez [configuration d’un jeton API de purge](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) et [purge du contenu CDN mis en cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Authentification de base sur le réseau CDN {#basic-auth}
 

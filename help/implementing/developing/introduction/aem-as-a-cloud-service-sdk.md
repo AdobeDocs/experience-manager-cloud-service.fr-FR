@@ -3,8 +3,8 @@ title: SDK AEM as a Cloud Service
 description: Présentation du kit de développement logiciel AEM as a Cloud Service.
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 82f5078740b2cf6ac481d83df40bbbc4fb3c1a77
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 43%
@@ -31,7 +31,7 @@ En outre, certains clientes et clients qui ont déjà été déployés avec AEM�
 
 ## Création pour le SDK {#building-for-the-sdk}
 
-Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Voir la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using). Voici ce qui est réalisé de manière générale :
+Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Voir la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). Voici ce qui est réalisé de manière générale :
 
 * **Compiler le code** - Le code Source est compilé, générant les packages de contenu résultants.
 * **Créer des artefacts** - Les artefacts sont créés pendant ce processus.
@@ -85,11 +85,11 @@ Il est *facultatif* de l’actualiser après une version de maintenance quotidie
 1. Démarrez le nouveau QuickStart avec les modes d’exécution souhaités (en renommant le fichier ou en transmettant les modes d’exécution par le biais du `-r`).
 Assurez-vous qu’il n’y a aucun reste de l’ancien démarrage rapide dans le dossier.
 1. Créez votre application AEM.
-1. Déployez votre application AEM sur une instance AEM locale à l’aide du gestionnaire de packages.
+1. Déployez votre application AEM sur une instance AEM locale à l’aide du gestionnaire de modules.
 1. Installez tous les packages de contenu modifiables nécessaires aux tests de l’environnement local via le gestionnaire de packages.
 1. Poursuivez le développement et déployez les modifications si nécessaire.
 
-Si du contenu doit être installé avec chaque nouvelle version de quickstart d’AEM, incluez-le dans un package de contenu et dans le contrôle de code source du projet. Installez-le ensuite à chaque fois.
+Si du contenu doit être installé avec chaque nouvelle version de quickstart d’AEM, incluez-le dans un module de contenu et dans le contrôle de code source du projet. Installez-le ensuite à chaque fois.
 
 Adobe vous recommande de mettre à jour SDK fréquemment, par exemple toutes les deux semaines. De plus, éliminez quotidiennement l’intégralité de l’état local afin de ne pas dépendre accidentellement des données d’état dans l’application.
 

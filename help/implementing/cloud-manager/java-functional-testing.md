@@ -4,8 +4,8 @@ description: Découvrez comment écrire des tests fonctionnels Java &trade; pour
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
@@ -87,7 +87,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >

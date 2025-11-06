@@ -3,8 +3,8 @@ title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 71%
@@ -13,7 +13,7 @@ ht-degree: 71%
 
 # Documents de référence sur les API {#api-reference-materials}
 
-Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM is built on top of several open-source technologies, which can also be used.
+Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM repose sur plusieurs technologies open source, qui peuvent également être utilisées.
 
 ## API de base d’AEM {#core-aem-apis}
 
@@ -21,9 +21,9 @@ Les API suivantes sont essentielles pour AEM.
 
 | API | Description |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Product abstractions such as pages, assets, workflows, and so on. |
-| [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe&#39;s Open Web stack, providing various essential components (The 6.5 Granite materials apply to AEMaaCS) |
-| [IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe&#39;s visual style for cloud UIs, designed to provide consistency in the user experience |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstractions de produits telles que des pages, des ressources, des workflows, etc. |
+| [IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | la pile Open Web d’Adobe, qui fournit divers composants essentiels (les ressources Granite 6.5 s’appliquent à AEMaaCS) ; |
+| [IU Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Style visuel d’Adobe pour les interfaces utilisateur cloud, conçu pour garantir une expérience utilisateur cohérente |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -31,11 +31,11 @@ Les API suivantes sont essentielles pour AEM.
 
 >[!NOTE]
 >
->For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Pour obtenir les dernières informations sur les API Experience Manager, consultez également la page [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Autres frameworks {#additional-apis}
 
-AEM relies on several additional open-source APIs.
+AEM s’appuie sur plusieurs API open source supplémentaires.
 
 | API | Description |
 |---|---|
@@ -50,16 +50,16 @@ AEM repose sur les quatre principaux ensembles d’API Java suivants, dans l’o
 
 | Priorité | API | Description |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Product abstractions such as pages, assets, workflows, and so on. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstractions de produits telles que des pages, des ressources, des workflows, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST et abstractions basées sur des ressources telles que des ressources, cartes de valeurs et requêtes HTTP. |
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstractions de données et de contenu telles que des nœuds, propriétés et sessions. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstractions du conteneur d’application OSGi telles que les services et les composants (OSGi). |
 
-Si une API est fournie par AEM, préférez-la à Sling, JCR et OSGi. If AEM doesn&#39;t provide an API, then prefer Sling over JCR and OSGi.
+Si une API est fournie par AEM, préférez-la à Sling, JCR et OSGi. Si AEM ne fournit pas d’API, préférez Sling à JCR et OSGi.
 
 >[!TIP]
 >
->For details of these guidelines, see the document [Understand Java API Best Practices](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr).
+>Pour plus d’informations sur ces directives, consultez le document [Comprendre les bonnes pratiques relatives aux API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr).
 
 ## Services et API de diffusion et de gestion de contenu AEM {#delivery-apis}
 
@@ -70,13 +70,13 @@ AEM propose des composants personnalisables et des options de diffusion de conte
 | [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Composants de gestion de contenu web normalisé (WCM) pour AEM dont l’objectif est d’accélérer le développement et de réduire les coûts de maintenance de vos sites web |
 | [Exportateur JSON](/help/implementing/developing/components/json-exporter.md)  | Diffuser le contenu d’une page AEM au format de modèle de données JSON |
 | [Activation de l’exportateur JSON pour un composant](/help/implementing/developing/components/enabling-json-exporter.md) | Générer l’exportation JSON du contenu du composant en fonction d’une structure de modélisation |
-| [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) | Content Fragment and Content Fragment Model OpenAPIs |
-| [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | A HTTP REST API on AEM Edge Delivery Services, designed to deliver structured content from Content Fragments in JSON format. |
+| [OpenAPI de fragment de contenu et de modèle de fragment de contenu](/help/headless/content-fragment-openapis.md) | API ouvertes de fragment de contenu et de modèle de fragment de contenu |
+| [Diffusion de fragments de contenu AEM avec OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | Une API HTTP REST sur AEM Edge Delivery Services, conçue pour diffuser du contenu structuré à partir de fragments de contenu au format JSON. |
 | [API GraphQL de fragments de contenu](/help/headless/graphql-api/content-fragments.md) | Activer la diffusion efficace de fragments de contenu vers les clients JavaScript dans les implémentations CMS découplées |
 |  |  |
 | [API Assets](/help/assets/mac-api-assets.md) | Permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources, y compris des fichiers binaires, des métadonnées, des rendus et des commentaires. Voir API HTTP AEM Assets |
 | [API HTTP de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md) | Accès au contenu de fragment de contenu directement via l’API HTTP via les opérations CRUD |
-| [API HTTP ressources de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr) | Exact format of supported HTTP asset requests |
+| [API HTTP ressources de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr) | Format exact des requêtes de ressources HTTP prises en charge |
 
 >[!NOTE]
 >
@@ -95,4 +95,4 @@ La structure du SDK de l’éditeur d’application monopage AEM fournit des ré
 
 >[!TIP]
 >
->Pour plus d’informations sur les applications d’une seule page (SPA), consultez la section [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md).
+>Pour plus d’informations sur les applications monopage (SPA), consultez la section [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md).

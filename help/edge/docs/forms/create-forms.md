@@ -2,10 +2,10 @@
 title: Créer un formulaire à l’aide du bloc de formulaires adaptatifs
 description: Commencer avec Edge Delivery Services pour AEM Forms. Créer rapidement des formulaires parfaits. Création basée sur des documents de formulaires AEM Forms Edge Delivery = vitesse époustouflante et formulaires adaptés au SEO pour des utilisateurs et utilisatrices plus heureux.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 

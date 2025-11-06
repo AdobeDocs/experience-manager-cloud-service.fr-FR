@@ -3,12 +3,12 @@ title: Partager des pipelines d’évaluation uniquement et de production unique
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 48%
@@ -74,7 +74,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 1. Dans le champ Nom du pipeline hors production , saisissez un nom en texte libre.
 1. Sélectionnez les options de déploiement souhaitées, puis cliquez sur **Continuer**.
 
-   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
+   ![Onglet Configuration de la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
 1. Dans l’onglet **Code Source**, sélectionnez **Code de pile complète**. Cette option crée et déploie l’ensemble de l’application AEM (back-end, configuration de niveau web Dispatcher et tout module front-end du référentiel).
 
@@ -90,7 +90,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
    Le contrôle de l’expérience analyse chaque chemin que vous ajoutez en termes de performances, d’accessibilité, d’applications web progressives, de bonnes pratiques, d’optimisation pour les moteurs de recherche et d’autres contrôles qualité. Vous pouvez ajouter plusieurs chemins d’accès et en supprimer en cliquant sur ![icône taille croisée 400](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
-   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+   ![Onglet Contrôle de l’expérience dans la boîte de dialogue Ajouter un pipeline hors production ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
 1. Cliquez sur **Enregistrer**.
 

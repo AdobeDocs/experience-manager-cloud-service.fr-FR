@@ -3,8 +3,8 @@ title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration F
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
-role: Admin, Architect, User
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+role: Admin, Developer, User
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 97%
@@ -28,9 +28,9 @@ Pour obtenir une solution à cela, vous pouvez stocker les ressources de produit
 
 Non, l’emplacement de déploiement de votre solution de commerce n’a pas d’importance. Le storefront d’AEM et CIF fonctionne indépendamment du modèle de déploiement. Cependant, si la solution est déployée avec l’architecture de référence de bout en bout recommandée, les tests de bout en bout peuvent s’exécuter par rapport aux KPI qui représentent un profil client d’entreprise type. Cette méthode permet d’obtenir des informations supplémentaires qui pourront être utilisées comme référence.
 
-## &#x200B;4. Comment les pages de catalogues ou de produits sont-elles créées dans AEM ? Comment persistent-elles dans AEM ? {#faq-4}
+## &#x200B;4. Comment les pages de catalogues ou produits sont-elles créées dans AEM ? Comment persistent-elles dans AEM ? {#faq-4}
 
-Les pages de catalogues et de produits sont créées et mises en cache dynamiquement dans AEM en fonction de modèles de pages de catalogues et de produits génériques. Aucune donnée de produit ni de catalogue n’est importée et stockée dans AEM.
+Les pages de catalogues et de produits sont créées et mises en cache dynamiquement dans AEM en fonction de modèles de pages de catalogues et produits génériques. Aucune donnée de produit ni de catalogue n’est importée et stockée dans AEM.
 
 ## &#x200B;5. La mise à jour des données de produit dans votre solution de commerce correspond-elle à un transfert Push en temps réel vers AEM ? Ou s’agit-il d’un traitement par lots ? {#faq-5}
 
@@ -38,7 +38,7 @@ Le module complémentaire CIF utilisé avec le Cloud Service AEM permet aux don
 
 ## &#x200B;6. Quelle taille de catalogue AEM peut-il prendre en charge à l’aide de CIF ? {#faq-6}
 
-Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions commerciales ?
+Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions de commerce ?
 
 ## &#x200B;7. Comment PIM opère-t-il dans ce framework ? {#faq-7}
 
@@ -66,7 +66,7 @@ Les données de produit sont déjà traduites dans PIM ou dans Adobe Commerce. 
 
 ## &#x200B;13. Existe-t-il un moyen d’améliorer les données de produit avec le texte commercial ? Où effectuer cette opération ? Dans AEM ou dans la solution de commerce ? {#faq-13}
 
-Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré avec vos produits.
+Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit de votre solution de commerce avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré avec vos produits.
 
 ## &#x200B;14. Comment garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ? {#faq-14}
 

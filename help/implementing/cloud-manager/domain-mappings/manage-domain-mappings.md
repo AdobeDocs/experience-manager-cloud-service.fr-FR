@@ -3,9 +3,9 @@ title: Gérer les mappages de domaine
 description: Découvrez comment utiliser Cloud Manager pour modifier, mettre à jour ou supprimer des configurations de réseau CDN pour un site Edge Delivery ou un environnement Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
@@ -38,7 +38,7 @@ Un utilisateur doit disposer du rôle **Propriétaire de l’entreprise** ou **R
 
 1. Dans la boîte de dialogue **Modifier la configuration du réseau de diffusion de contenu**, définissez une ou plusieurs des options dans la liste déroulante correspondante.
 
-   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **&#x200B;**&#x200B;ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
+   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **** ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
 
 1. Cliquez sur **Mettre à jour**.
 
@@ -63,7 +63,7 @@ Les étapes de modification d’une configuration de réseau CDN à partir de la
 
 1. Dans la boîte de dialogue **Modifier le mappage de domaine**, définissez une ou plusieurs des options dans la liste déroulante correspondante.
 
-   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **&#x200B;**&#x200B;ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
+   Les options affichées dans la boîte de dialogue varient selon que vous utilisez un réseau CDN géré par Adobe **** ou un **autre fournisseur de réseau CDN** (réseau CDN géré par le client).
 
 1. Cliquez sur **Mettre à jour**.
 

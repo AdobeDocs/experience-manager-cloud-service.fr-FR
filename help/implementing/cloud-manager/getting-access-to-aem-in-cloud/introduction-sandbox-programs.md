@@ -4,8 +4,8 @@ description: Découvrez ce que sont les programmes Sandbox et en quoi ils diffè
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 33%
@@ -21,7 +21,7 @@ Découvrez ce que sont les programmes Sandbox et en quoi ils diffèrent des prog
 
 Un programme Sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou aux preuves de concept (POC), ils ne sont donc pas destinés à transporter du trafic en direct.
 
-Un programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant un [&#x200B; programme de production &#x200B;](introduction-production-programs.md). Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programmes.
+Un programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant un [ programme de production ](introduction-production-programs.md). Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programmes.
 
 ## Création automatique {#auto-creation}
 

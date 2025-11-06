@@ -3,10 +3,10 @@ title: Personnaliser la création de pages
 description: Découvrez les mécanismes fournis par AEM as a Cloud Service pour personnaliser la fonctionnalité de création de pages.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 55%
 
 ---
@@ -30,7 +30,7 @@ Voir [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/h
 
 Les recouvrements reposent sur des définitions de nœud et vous permettent de recouvrir la fonctionnalité standard en `/libs` avec votre propre fonctionnalité personnalisée dans `/apps`.
 
-Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la [fusion de ressources sling](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
+Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources [sling](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
 
 Pour plus d’informations, voir la documentation [JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
 
@@ -178,7 +178,7 @@ Le workflow d’usine, **Demande d’activation** :
 
 Pour bénéficier d’un comportement personnalisé lors d’une telle activation, vous pouvez incruster le workflow **Demande d’activation** :
 
-1. Dans `/apps`, recouvrez l’`/libs/wcm/core/content/common/managepublicationwizard` de l’assistant **Sites**
+1. Dans `/apps`, recouvrez l’**de l’assistant** Sites`/libs/wcm/core/content/common/managepublicationwizard`
 
    * Cela a pour effet de remplacer l’instance commune de `/libs/cq/gui/content/common/managepublicationwizard`.
 

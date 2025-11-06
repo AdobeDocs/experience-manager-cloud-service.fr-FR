@@ -2,11 +2,11 @@
 title: Éditeur de règles pour les formulaires Edge Delivery Services
 description: Créez des formulaires dynamiques et intelligents à l’aide de l’éditeur de règles dans l’éditeur universel. Ajoutez une logique conditionnelle, des calculs et des comportements interactifs sans codage.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -535,7 +535,7 @@ Image : ajout de fonctions personnalisées au fichier functions.js.
 ![Fonction personnalisée dans l’éditeur de règles](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Image : sélection et configuration de fonctions personnalisées dans l’interface de l’éditeur de règles.
 
->
+>[!NOTE]
 >
 > Les améliorations apportées à l’éditeur de règles, notamment les règles basées sur un événement personnalisé, la prise en charge des variables dynamiques et l’intégration d’API, sont également disponibles pour les formulaires Edge Delivery Services. Pour en savoir plus sur ces améliorations et sur leur utilisation, consultez l’article [Améliorations de l’éditeur de règles et cas d’utilisation](/help/forms/rule-editor-enhancements-use-cases.md).
 
@@ -716,7 +716,7 @@ L’éditeur de règles de l’éditeur universel transforme les formulaires sta
 
 **Impact commercial** :
 
-Les formulaires deviennent des outils puissants pour la collecte de données, la qualification des prospects et l’interaction client. L’éditeur de règles permet aux créateurs et créatrices non spécialistes d’implémenter une logique commerciale sophistiquée, réduisant les coûts de développement tout en améliorant les taux de remplissage des formulaires et la qualité des données.
+Les formulaires deviennent des outils puissants pour la collecte de données, la qualification des prospects et l’interaction client. L’éditeur de règles permet aux créateurs et créatrices non spécialistes d’implémenter une logique métier sophistiquée, réduisant les coûts de développement tout en améliorant les taux d’achèvement des formulaires et la qualité des données.
 
 +++
 

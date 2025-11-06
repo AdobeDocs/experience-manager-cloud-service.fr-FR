@@ -3,8 +3,8 @@ title: Définitions de modèles, champs et types de composants
 description: Découvrez les champs et les types de composants que l’éditeur universel peut modifier dans le panneau des propriétés avec des exemples. Découvrez comment instrumenter votre application en créant une définition de modèle et en établissant un lien vers le composant.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 98%
@@ -126,7 +126,7 @@ Vous trouverez ci-dessous les types de composants qui peuvent être utilisés po
 | [Fragment de contenu](#content-fragment) | `aem-content-fragment` |
 | [Date et heure](#date-time) | `date-time` |
 | [Fragment d’expérience](#experience-fragment) | `aem-experience-fragment` |
-| [&#x200B; Sélection multiple](#multiselect) | `multiselect` |
+| [ Sélection multiple](#multiselect) | `multiselect` |
 | [Nombre](#number) | `number` |
 | [Groupe de boutons radio](#radio-group) | `radio-group` |
 | [Référence](#reference) | `reference` |
@@ -159,7 +159,7 @@ Un type de composant de balise AEM active un sélecteur de balises AEM, qui peut
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant de balise AEM](assets/component-types/aem-tag-picker.png)
+![ Capture d’écran d’un type de composant de balise AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -199,7 +199,7 @@ Un type de composant de contenu AEM active un sélecteur de contenu AEM, qui peu
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant de contenu AEM](assets/component-types/aem-content-picker.png)
+![ Capture d’écran d’un type de composant de contenu AEM](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -329,7 +329,7 @@ Un type de composant conteneur permet le regroupement de composants, y compris l
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant conteneur](assets/component-types/container.png)
+![ Capture d’écran d’un type de composant conteneur](assets/component-types/container.png)
 
 >[!TAB  Prise en charge de champs multiples]
 
@@ -378,7 +378,7 @@ Il propose également un type de validation supplémentaire.
 
 >[!NOTE]
 >
->L’éditeur universel[&#x200B; valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
+>L’éditeur universel[ valide les champs des fragments de contenu en fonction de leurs modèles](/help/assets/content-fragments/content-fragments-models.md#validation), ce qui permet d’appliquer des règles d’intégrité des données telles que des modèles regex et des contraintes d’unicité.
 >
 >Cela garantit que le contenu répond aux exigences métier spécifiques avant sa publication.
 
@@ -709,7 +709,7 @@ Un type de composant de groupe de boutons radio permet une sélection mutuelleme
 
 #### Référence {#reference}
 
-Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au [&#x200B; composant de contenu AEM](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant référence peut uniquement référencer des ressources. Il propose un type de validation supplémentaire.
+Un type de composant de référence active un sélecteur de ressources AEM, qui peut être utilisé pour sélectionner n’importe quelle ressource AEM à référencer. Contrairement au [ composant de contenu AEM](#aem-content), qui peut sélectionner n’importe quelle ressource AEM, le composant référence peut uniquement référencer des ressources. Il propose un type de validation supplémentaire.
 
 Un type de composant de référence permet de créer une référence à un autre objet de données à partir de l’objet actuel.
 
@@ -733,7 +733,7 @@ Un type de composant de référence permet de créer une référence à un autre
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant référence](assets/component-types/reference.png)
+![ Capture d’écran d’un type de composant référence](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
@@ -793,7 +793,7 @@ Un type de composant de sélection permet de choisir une seule option dans une l
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant de sélection](assets/component-types/select.png)
+![ Capture d’écran d’un type de composant de sélection](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -841,7 +841,7 @@ Si vous souhaitez que des éléments apparaissent au-dessus de tous les onglets,
 
 >[!TAB Capture d’écran]
 
-![&#x200B; Capture d’écran d’un type de composant d’onglet](assets/component-types/tab.png)
+![ Capture d’écran d’un type de composant d’onglet](assets/component-types/tab.png)
 
 >[!ENDTABS]
 

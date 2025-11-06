@@ -3,9 +3,9 @@ title: Utiliser reCAPTCHA avec Edge Delivery Services pour AEM Forms as a 
 description: Utiliser Google reCAPTCHA dans un formulaire pour Edge Delivery Services pour AEM Forms
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -29,6 +29,7 @@ Edge Delivery Services ne prend en charge que le **reCAPTCHA basé sur un scor
 
 
 À la fin de cet article, vous saurez accomplir ce qui suit :
+
 - [Activer Google reCAPTCHA pour un seul formulaire](#enable-google-recaptchas-for-a-single-form)
 - [Activer reCAPTCHA pour tous les formulaires de votre site](#enable-recaptcha-for-all-the-forms)
 

@@ -5,11 +5,11 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ Un utilisateur doit disposer du rôle **[Responsable de déploiement](/help/onbo
 
 ## Pipelines hors production {#non-production-pipelines}
 
-Outre les [pipelines de production](#configuring-production-pipelines.md) qui se déploient sur les environnements d’évaluation et de production, vous pouvez également configurer des pipelines hors production pour valider votre code.
+Outre les [pipelines de production](#configuring-production-pipelines.md) qui se déploient sur les environnements d’évaluation et de production, vous pouvez configurer des pipelines hors production pour valider votre code.
 
 Il existe deux types de pipelines hors production :
 
@@ -37,9 +37,9 @@ Il existe deux types de pipelines hors production :
 
 Une fois que vous avez configuré votre programme et que vous disposez d’au moins un environnement utilisant l’interface utilisateur de Cloud Manager, vous êtes prêt à ajouter un pipeline hors production en suivant ces étapes.
 
-1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com).
+1. Connectez-vous à Cloud Manager sur [experiece.adobe.com](https://experience.adobe.com).
 1. Dans la section **Accès rapide**, cliquez sur **Experience Manager**.
-1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
+1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 1. Sélectionnez l’organisation de votre choix.
 1. Sur la console **Mes programmes**, cliquez sur un programme.
 

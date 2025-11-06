@@ -1,20 +1,18 @@
 ---
-title: Forms Experience Builder
+title: Créateur d’expériences de formulaires
 description: Créer des formulaires performants plus rapidement à l’aide de fragments de formulaire
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 20%
+ht-degree: 31%
 
 ---
-
-
-
 
 # Vue d’ensemble
 
@@ -155,13 +153,13 @@ Experience Builder nécessite un environnement de création de production AEM Fo
 
 ## Fonctionnalités principales
 
-Forms Experience Builder propose deux workflows principaux pour créer des formulaires numériques puissants :
+Forms Experience Builder propose deux workflows principaux pour créer des formulaires numériques puissants :
 
 ### Création de formulaires optimisée par l’IA
 
 **Génération de formulaires en langage naturel**
 
-Créez des formulaires complets à partir de zéro à l’aide de descriptions simples en anglais. Il vous suffit de décrire vos exigences, telles que « Créer un formulaire de commentaires client avec des échelles de notation et des champs de commentaire », pour que le Forms Experience Builder génère la structure de formulaire appropriée. Vous utilisez le créateur d’expériences des éditeurs visuels pour ajouter d’autres champs, des règles de validation et une logique d’envoi.
+Créez des formulaires complets à partir de zéro à l’aide de descriptions simples en anglais. Il vous suffit de décrire vos besoins, tels que « Crée un formulaire de commentaires client avec des échelles de notation et des champs de commentaire. », et le créateur d’expériences de formulaires génère la structure de formulaire appropriée. Vous utilisez le créateur d’expériences des éditeurs visuels pour ajouter des champs, des règles de validation et une logique d’envoi.
 
 **Gestion dynamique des champs**
 
@@ -169,7 +167,7 @@ Ajoutez, modifiez ou supprimez des champs de formulaire par le biais de commande
 
 **Optimisation de la mise en page**
 
-Mettez à jour les mises en page et configurations de formulaire via le langage naturel. Demandez des modifications telles que « Modification de la disposition du formulaire dans la disposition de l’assistant » et le Forms Experience Builder appliquera le style et les ajustements de disposition appropriés.
+Mettez à jour les mises en page et configurations de formulaire via le langage naturel. Demandez des modifications telles que « Modifie la disposition du formulaire dans la disposition de l’assistant » et le créateur d’expériences de formulaire appliquera le style et les ajustements de disposition appropriés.
 
 **Configuration complète de l’action Envoyer**
 
@@ -187,17 +185,17 @@ Configurez les envois de formulaire à intégrer aux systèmes existants dans vo
 
 Transformer des documents existants en expériences digitales interactives. Forms Experience Builder prend en charge divers formats, analysant le contenu chargé pour détecter les types de champ, conserver les dispositions et améliorer les formulaires grâce à une conception réactive et une logique avancée. Les formats pris en charge sont les suivants :
 
-- **Acroforms** : PDF forms interactive avec structures de champ existantes
-- **PDF XFA** : architectures de formulaires complexes basées sur XML
-- **PDF plats** : documents statiques convertis en formulaires interactifs
+- **Acroforms** : PDF forms interactif avec structures de champ existantes
+- **PDF XFA** : architectures de formulaires complexes basées sur XML
+- **PDF plats** : documents statiques convertis en formulaires interactifs
 - **Images et captures d’écran** : JPG, formats PNG
-- **Forms dessiné à la main** : croquis et photographies de formulaires papier
+- **Formulaires manuscrits** : esquisses et photographies de formulaires papier
 
 
 
 ## Forms Experience Builder par rapport au développement traditionnel
 
-| Aspect | Création de formulaire traditionnelle | Forms Experience Builder |
+| Aspect | Création de formulaire traditionnelle | Créateur d’expériences de formulaires |
 |--------|---------------------------|----------------------|
 | **Temps de création** | 2 à 3 jours | 2 à 3 heures |
 | **Connaissances techniques** | Nécessaires | Non nécessaires |
@@ -222,7 +220,7 @@ Forms Experience Builder est actuellement disponible via un programme d’accès
 
 1. **Rassemblez vos informations** : Vous aurez besoin des détails suivants :
    - Identifiant de l’organisation IMS
-   - ID de programme
+   - ID du programme
    - Détails du projet (calendrier, portée, cas d’utilisation)
    - Votre adresse e-mail professionnelle officielle
 

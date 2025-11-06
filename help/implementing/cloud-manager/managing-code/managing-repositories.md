@@ -3,8 +3,8 @@ title: Gérer les référentiels dans Cloud Manager
 description: Découvrez comment ajouter, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 86%
@@ -54,7 +54,7 @@ Un utilisateur ou une utilisatrice doit disposer du rôle **Responsable de dépl
 
 Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-![Boîte de dialogue Ajouter un référentiel](assets/repository-add.png)
+![ Boîte de dialogue Ajouter un référentiel ](assets/repository-add.png)
 *Boîte de dialogue Ajouter un référentiel.*
 
 Cloud Manager prend en charge deux types de référentiels : les référentiels gérés par Adobe (**Référentiel Adobe**) et les référentiels auto-gérés (**Référentiel privé**). Les champs requis pour le paramétrage varient en fonction du type de référentiel que vous choisissez d’ajouter. Pour plus d’informations, consultez les sections suivantes :
@@ -97,9 +97,9 @@ L’action **Supprimer** supprime le référentiel de votre projet. Un référen
 
 ![Supprimer](assets/repository-delete.png)
 
-La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé ultérieurement. Si vous tentez d’ajouter un référentiel portant le même nom qu’un référentiel supprimé, le message d’erreur suivant s’affiche :
+La suppression d’un référentiel rend son nom inutilisable pour tout nouveau référentiel créé à l’avenir. Si vous tentez d’ajouter un référentiel en utilisant le même nom qu’un référentiel supprimé, vous rencontrez le message d’erreur suivant :
 
 `Repository name should be unique within organization.`
 
-En outre, le référentiel supprimé n’est plus disponible dans Cloud Manager et ne peut être lié à aucun pipeline.
+En outre, le référentiel supprimé n’est plus disponible dans Cloud Manager et ne peut pas être lié à des pipelines.
 

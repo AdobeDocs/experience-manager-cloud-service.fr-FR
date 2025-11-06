@@ -3,9 +3,9 @@ title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 95%
@@ -94,10 +94,12 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >[!TIP]
 >
 >Pour obtenir des détails techniques sur le fonctionnement des SPA dans AEM, consultez les articles suivants :
+>
 >* [Prise en main des SPA dans AEM avec React](getting-started-react.md)
 >* [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md)
 >
 >Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
+>
 >* [Présentation de l’éditeur de SPA](editor-overview.md).
 
 ## Modification de contenu avec une SPA {#content-editing-experience-with-spa}

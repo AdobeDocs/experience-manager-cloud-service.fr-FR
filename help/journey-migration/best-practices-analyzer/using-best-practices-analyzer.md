@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’analyseur de bonnes pratiques pour 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 78%
@@ -95,7 +95,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
       ![Image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
-1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[&#x200B; Analyse des bonnes pratiques dans CAM &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[ Analyse des bonnes pratiques dans CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Définir la clé de chargement BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
@@ -144,7 +144,7 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
 
 1. Désélectionnez la case pour filtrer tous les résultats liés à ACS Commons. Un **nombre de résultats filtrés** devrait s’afficher sur le rapport, comme illustré dans l’image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
 
-   ![&#x200B; Nombre de résultats filtrés &#x200B;](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![ Nombre de résultats filtrés ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
@@ -222,6 +222,7 @@ La valeur « \N » dans une colonne concernant un résultat individuel indique
 L’analyseur des bonnes pratiques fournit une interface HTTP, utilisable comme alternative à son interface utilisateur dans AEM. L’interface prend en charge les commandes HEAD et GET. Il peut être utilisé pour générer le rapport BPA et le renvoyer dans l’un des trois formats suivants : JSON, CSV et TSV (valeurs séparées par des tabulations).
 
 Les URL suivantes sont disponibles pour l’accès HTTP, où `<host>` est le nom d’hôte et, si nécessaire, le port du serveur sur lequel l’analyseur des bonnes pratiques est installé :
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` pour le format JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` pour le format CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` pour le format TSV

@@ -4,8 +4,8 @@ description: Dans cette partie du parcours de développement découplé AEM, dé
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -39,15 +39,15 @@ Ce document est destiné à vous permettre de mieux comprendre AEM découplé da
 
 Avant de pouvoir définir votre projet découplé dans AEM, il est important de comprendre certains concepts AEM de base.
 
-### Instance d’auteur {#author}
+### Instance de création {#author}
 
-Dans sa forme la plus simple, AEM se compose d’une instance d’auteur et d’une [instance de publication](#publish) qui fonctionnent conjointement pour créer, gérer et publier votre contenu.
+Dans sa forme la plus simple, AEM se compose d’une instance de création et d’une [instance de publication](#publish) qui fonctionnent conjointement pour créer, gérer et publier votre contenu.
 
-Le contenu commence sur l’instance d’auteur où les auteurs le créent. L’environnement de création propose différents outils pour que les auteurs puissent créer, organiser et réutiliser leur contenu.
+Le contenu commence sur l’instance de création où les auteurs le créent. L’environnement de création propose différents outils pour que les auteurs puissent créer, organiser et réutiliser leur contenu.
 
 ### Instance de publication {#publish}
 
-Une fois que le contenu a été créé sur l’instance d’auteur, il doit être publié pour permettre à d’autres services de l’utiliser. Une instance de publication contient tous les contenus publiés.
+Une fois que le contenu a été créé sur l’instance de création, il doit être publié pour permettre à d’autres services de l’utiliser. Une instance de publication contient tous les contenus publiés.
 
 ### Service de prévisualisation {#preview}
 
@@ -190,7 +190,7 @@ Consultez la section des [ressources supplémentaires](#additional-resources) po
 
 ##### Tirer parti de la hiérarchie du contenu {#content-hierarchy}
 
-La hiérarchie des dossiers peut répondre à deux préoccupations majeures concernant la gestion des contenus :
+La hiérarchie des dossiers peut répondre à deux préoccupations majeures concernant la gestion de contenu :
 
 * [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques pour les paramètres régionaux.
 * Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction, mais aussi à gérer logiquement les fragments de contenu.
@@ -287,12 +287,12 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * Un [Présentation d’AEM en tant que CMS sans affichage](/help/headless/introduction.md)
 * La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels sur AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
-* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/fr?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
+* [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [AEM Guides WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – Ce projet GitHub comprend des exemples d’applications qui mettent en évidence les API GraphQL d’AEM.
 * [Concepts de création](/help/sites-cloud/authoring/author-publish.md) – Documentation technique pour l’environnement de création d’AEM, avec notamment des détails sur la configuration auteur-publication.
 * [Publication de pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – Documentation technique pour la publication de contenu sur AEM
 * [Convention d’affectation de noms](/help/implementing/developing/introduction/naming-conventions.md) – Documentation technique relative aux restrictions d’affectation de noms de pages dans AEM
-* [Multi Site Manager et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Documentation technique sur les puissantes fonctionnalités de traduction d’AEM
+* [Multi-Site Manager et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Documentation technique sur les puissantes fonctionnalités de traduction d’AEM
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) – Documentation technique sur l’automatisation des workflows dans AEM
 * [Fragments de contenu](/help/sites-cloud/administering/content-fragments/overview.md) – Documentation technique sur les fragments de contenu.
 * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – Documentation technique sur les modèles de fragment de contenu.
