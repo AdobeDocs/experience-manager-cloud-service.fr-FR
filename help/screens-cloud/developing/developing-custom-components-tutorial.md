@@ -131,7 +131,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilisé :
+   Les composants Screens nécessitent deux rendus différents selon le [mode de création](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=fr#page-modes) utilisé :
 
    1. **Production**: Mode Aperçu ou Publication (wcmmode=disabled)
    1. **Modifier** : utilisé pour tous les autres modes de création, à savoir la modification, la conception, la génération de modèles automatique, le développement...
@@ -378,7 +378,7 @@ Une troisième catégorie de bibliothèque cliente : `cq.screens.components.edi
 
 ## Création d’une page de conception {#design-page}
 
-AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
+AEM Screens utilise des [Modèles de page statiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=fr) et des [Configurations de conception](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=fr) pour les modifications globales. Les configurations de conception sont fréquemment utilisées pour configurer les composants autorisés pour le Parsys sur un canal. Il est recommandé de stocker ces configurations d’une manière spécifique à l’application.
 
 Une page de conception d’exécution We.Retail est créée ci-dessous pour stocker toutes les configurations spécifiques au projet d’exécution We.Retail.
 

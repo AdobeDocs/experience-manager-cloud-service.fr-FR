@@ -31,7 +31,7 @@ En outre, certains clientes et clients qui ont déjà été déployés avec AEM�
 
 ## Création pour le SDK {#building-for-the-sdk}
 
-Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Voir la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using). Voici ce qui est réalisé de manière générale :
+Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnalisé. Voir la documentation sur l’[archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using). Voici ce qui est réalisé de manière générale :
 
 * **Compiler le code** - Le code Source est compilé, générant les packages de contenu résultants.
 * **Créer des artefacts** - Les artefacts sont créés pendant ce processus.

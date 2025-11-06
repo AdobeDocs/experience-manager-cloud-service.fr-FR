@@ -33,7 +33,7 @@ Accessible à partir du [Developer Console AEM as a Cloud Service](/help/impleme
 
 Ces conditions suivantes doivent être remplies pour accéder au Developer Console AEM as a Cloud Service ou au navigateur de référentiel
 
-Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Pour accéder au Developer Console AEM as a Cloud Service, voir Accès à [Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Pour accéder au navigateur de référentiel, les conditions requises sont les mêmes que pour AEM as a Cloud Service Developer Console (spécifié ci-dessus). Pour afficher le contenu du navigateur de référentiel pour une instance particulière :
 

@@ -352,7 +352,7 @@ Pour plus d’informations sur la création d’une règle pour naviguer dans un
 
 #### [!UICONTROL &#x200B; Appel de fonction asynchrone &#x200B;]
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
 
 Le type de règle **[!UICONTROL Appel de fonction asynchrone]** permet d’exécuter des fonctions asynchrones. Il vous permet de lancer un appel de fonction qui fonctionne indépendamment du thread d’exécution principal, ce qui permet à d’autres processus de continuer à s’exécuter sans attendre que la fonction asynchrone se termine.
 

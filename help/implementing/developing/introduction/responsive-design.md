@@ -85,7 +85,7 @@ Le [tutoriel WKND](develop-wknd-tutorial.md) utilise cette stratégie pour défi
 
 ### Utiliser des requêtes de média avec des pages AEM {#using-media-queries-with-aem-pages}
 
-[L’exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), qui inclut les bibliothèques clientes via la politique de page.
+[L’exemple de projet WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisent le [composant principal Page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=fr), qui inclut les bibliothèques clientes via la politique de page.
 
 Si votre propre composant de page n’est pas basé sur le composant principal Page, vous pouvez également inclure le dossier de bibliothèque cliente dans son script HTL ou JSP. Cela génère et référence le fichier CSS avec les requêtes de média nécessaires au fonctionnement de la grille réactive.
 
@@ -137,7 +137,7 @@ Les pages réactives s’adaptent dynamiquement au périphérique sur lequel ell
 
 [le composant Image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comporte des fonctionnalités telles que la sélection d’images adaptatives.
 
-* Par défaut, le composant d’image utilise le [&#x200B; servlet d’image adaptative &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
+* Par défaut, le composant d’image utilise le [&#x200B; servlet d’image adaptative &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=fr) pour fournir le rendu approprié.
 * La [&#x200B; Diffusion d’images optimisées pour le web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa politique, qui diffuse des ressources d’image à partir de la gestion des ressources numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
 
 ## Conteneur de disposition {#layout-container}
