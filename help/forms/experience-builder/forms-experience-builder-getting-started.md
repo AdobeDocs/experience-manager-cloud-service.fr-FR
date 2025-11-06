@@ -6,10 +6,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 3%
 
 ---
 
@@ -61,11 +61,10 @@ Créer des formulaires à l’aide de descriptions en langage naturel de vos bes
 
 **Exemple :**
 
-    Créez un formulaire de commentaires client avec :
-    &#x200B;- Une évaluation du produit (1 à 5 étoiles)
-    &#x200B;- Un champ de commentaire pour des commentaires détaillés
-    &#x200B;- L’adresse e-mail du client ou de la cliente (facultatif)
-    &#x200B;- Un envoi d’une notification par e-mail lors de la soumission
+    Créez un formulaire de commentaires client avec :
+    - Évaluation du produit (1 à 5 étoiles)
+    - Champ de commentaire pour des commentaires détaillés
+    - E-mail du client (facultatif)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +74,7 @@ Créer des formulaires à l’aide de descriptions en langage naturel de vos bes
 
 Transformer des documents existants en formulaires numériques interactifs.
 
-Avant d’utiliser cette option, chargez votre fichier PDF ou une image du formulaire. Le PDF peut être un formulaire AcroForm ou un formulaire PDF basé sur XFA. Pour [autres types de PDF forms](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilisez l’option [Préparer le formulaire](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) dans Adobe Acrobat pour les convertir en formulaire Acro
+Avant d’utiliser cette option, chargez votre fichier PDF ou une image du formulaire. Le PDF peut être un formulaire AcroForm ou un formulaire PDF basé sur XFA. Pour [autres types de PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilisez l’option [Préparer le formulaire](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) dans Adobe Acrobat pour les convertir en formulaire Acro
 
 **Utilisation :**
 
@@ -131,9 +130,9 @@ Inclure des fonctionnalités supplémentaires :
 
     Ajoutez deux listes déroulantes
     
-    &#x200B;- queryType avec des options : « Question générale », « Demande d’assistance », « Demande de renseignements sur les ventes », « Partenariat »
+    - queryType avec des options : « Question générale », « Demande d’assistance », « Demande de renseignements sur les ventes », « Partenariat »
     
-    &#x200B;- urgenceLevel avec des options (Faible, Medium, Élevé)
+    - urgenceLevel avec des options (Faible, Medium, Élevé)
 
 
 ![Ajout de composants de liste déroulante à l’aide d’invites en langage naturel dans Forms Experience Builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +166,9 @@ Utilisez des `@fieldName` pour référencer des champs spécifiques :
 
 Décrivez ce que vous souhaitez en langage clair :
 
-    &#x200B;- Ajout d’une section pour les informations sur l’entreprise
-    &#x200B;- Création d’une liste déroulante pour la sélection d’un service
-    &#x200B;- Inclusion d’un chargement de fichier pour la reprise
-    &#x200B;- Configuration des notifications par e-mail lors de l’envoi du formulaire
+    - Ajout d’une section pour les informations sur l’entreprise
+    - Création d’une liste déroulante pour la sélection d’un service
+    - Inclusion d’un chargement de fichier pour la reprise
 
 ### Création incrémentielle {#build-incrementally}
 
@@ -190,55 +188,53 @@ Commencez simplement et ajoutez progressivement la complexité :
 **Formulaire de contact de base :**
 
     Créer un formulaire de contact avec :
-    &#x200B;- Nom (obligatoire)
-    &#x200B;- E-mail (obligatoire, validé)
-    &#x200B;- Liste déroulante Objet (Général, Support, Ventes, Partenariat)
-    &#x200B;- Message (obligatoire, multiligne)
-    &#x200B;- Bouton Envoyer
+    - Nom (obligatoire)
+    - E-mail (obligatoire, validé)
+    - Liste déroulante Objet (Général, Support, Ventes, Partenariat)
+    - Message (obligatoire, multiligne)
 
 **Formulaire de commentaires client :**
 
-    Créez un formulaire de commentaires client avec :
-    &#x200B;- Une évaluation du produit (1 à 5 étoiles)
-    &#x200B;- Un champ de commentaire pour des commentaires détaillés
-    &#x200B;- L’adresse e-mail du client ou de la cliente (facultatif)
-    &#x200B;- Un envoi d’une notification par e-mail lors de la soumission
+    Créez un formulaire de commentaires client avec :
+    - Évaluation du produit (1 à 5 étoiles)
+    - Champ de commentaire pour des commentaires détaillés
+    - E-mail du client (facultatif)
 
 ### Formulaires d’inscription et d’intégration {#registration-onboarding-forms}
 
 **Enregistrement des utilisateurs :**
 
     Créer un formulaire d’enregistrement d’utilisateur avec :
-    &#x200B;- Informations personnelles (nom, e-mail, téléphone)
-    &#x200B;- Préférences du compte (newsletter, notifications)
-    &#x200B;- Acceptation des conditions générales
-    &#x200B;- Création d’un mot de passe avec validation du niveau de sécurité
+    - Informations personnelles (nom, e-mail, téléphone)
+    - Préférences du compte (newsletter, notifications)
+    - Acceptation des conditions générales
+    - Création d’un mot de passe avec validation du niveau de sécurité
 
 **Intégration des employés :**
 
     Créez un formulaire d’intégration d’employé avec :
-    &#x200B;- Informations personnelles et coordonnées
-    &#x200B;- Informations sur l’emploi et date de début
-    &#x200B;- Chargements de documents (CV, ID, formulaires fiscaux)
-    &#x200B;- Sélection des avantages et préférences
+    - Informations personnelles et coordonnées
+    - Informations sur l’emploi et date de début
+    - Chargements de documents (CV, ID, formulaires fiscaux)
+    - Sélection des avantages et préférences
 
 ### Formulaires d&#39;enquête et d&#39;évaluation {#survey-assessment-forms}
 
 **Enquête de satisfaction client :**
 
     Créer une enquête de satisfaction client avec :
-    &#x200B;- Note globale (échelle 1-10)
-    &#x200B;- Notes par catégorie (produit, service, support)
-    &#x200B;- Sections de commentaires ouvertes
-    &#x200B;- Informations démographiques (facultatif)
+    - Note globale (échelle 1-10)
+    - Notes par catégorie (produit, service, support)
+    - Sections de commentaires ouvertes
+    - Informations démographiques (facultatif)
 
 **Évaluation des compétences :**
 
     Créer un formulaire d’évaluation des compétences avec :
-    &#x200B;- Catégories de compétences avec niveaux de compétence
-    &#x200B;- Durée de l’expérience pour chaque compétence
-    &#x200B;- Informations sur la certification et la formation
-    &#x200B;- Auto-évaluation et objectifs
+    - Catégories de compétences avec niveaux de compétence
+    - Durée de l’expérience pour chaque compétence
+    - Informations sur la certification et la formation
+    - Auto-évaluation et objectifs
 
 ## Tests et validation {#testing-validation}
 
@@ -275,21 +271,29 @@ Avant de déployer un formulaire :
     Validation du type de fichier d’ajout : PDF, DOC, DOCX uniquement autorisés pour @resume
     Limite de taille de fichier d’ajout : 5 Mo maximum pour les @resume
 
-## Étapes suivantes {#next-steps}
+<!-- 
 
-Maintenant que vous comprenez les principes de base, explorez ces rubriques avancées :
+## Next steps {#next-steps}
 
-* **[Champs intelligents améliorés par LLM](forms-experience-builder-llm-smart-fields.md)** - Créez des champs avec des options préremplies à l’aide des connaissances de l’IA
-* **[Création de formulaires optimisés par l’IA](forms-experience-builder-prompt-examples-library.md)** - Modèles et exemples d’invites avancés
-* **[Import et conversion intelligents](intelligent-import-conversion.md)** - Transformer des documents existants en formulaires
-* **[Envoi et intégration de formulaires](form-submission-integration.md)** - Connectez les formulaires à vos systèmes d’entreprise
+Now that you understand the basics, explore these advanced topics:
+
+* **[LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)** - Create fields with pre-populated options using AI knowledge
+* **[AI-powered form creation](forms-experience-builder-prompt-examples-library.md)** - Advanced prompt patterns and examples
+* **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
+* **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
+
+-->
 
 
 ## Articles connexes
 
 * [Présentation de Forms Experience Builder](product-overview.md)
-* [Champs intelligents améliorés par LLM](forms-experience-builder-llm-smart-fields.md)
-* [Création de formulaires optimisée par l’IA](forms-experience-builder-prompt-examples-library.md)
-* [Import et conversion intelligents](intelligent-import-conversion.md)
-* [Envoi et intégration du formulaire](form-submission-integration.md)
-* [Questions fréquentes](forms-experience-builder-frequently-asked-questions.md)
+
+<!-- 
+* [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
+* [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
+* [Intelligent import and conversion](intelligent-import-conversion.md)
+* [Form submission and integration](form-submission-integration.md)
+* [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->

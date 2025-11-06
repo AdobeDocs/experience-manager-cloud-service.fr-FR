@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ Voici de vrais exemples de ce que vous pouvez accomplir avec un langage simple e
 "Update the layout to match the attached wireframe"
 ```
 
-### Envoi et intégration
+<!-- 
 
-**Envoi de base :**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ Voici de vrais exemples de ce que vous pouvez accomplir avec un langage simple e
 "Redirect to a thank you page"
 ```
 
-**Intégration avancée :**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## Utilisation des pièces jointes
 
@@ -281,8 +285,11 @@ Saisissez `/` pour afficher les raccourcis disponibles :
 | `/update-field` | Modification les propriétés des champs | `/update-field @email to be required` |
 | `/create-rule` | Ajouter un comportement dynamique | `/create-rule show @spouse if married` |
 | `/create-panel` | Ajouter des conteneurs de champs | `/create-panel Personal Information` |
-| `/configure-submit` | Configurer l’envoi des formulaires | `/configure-submit to email support` |
 | `/help` | Obtenir de l’aide | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### Syntaxe de référence du champ
 
