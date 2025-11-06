@@ -20,4 +20,4 @@ ht-degree: 17%
 
 Découvrez la signification du déploiement pour App Builder et comment déployer votre application App Builder à l’aide de l’interface de ligne de commande Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343291/?captions=fre_fr&quality=12&learn=on)

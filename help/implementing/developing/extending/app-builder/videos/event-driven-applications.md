@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Découvrez l’architecture pilotée par les événements, les événements Adobe I/O et les événements personnalisés.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343685/?captions=fre_fr&quality=12&learn=on)
 
 ## Créer des applications App Builder pilotées par les événements
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343692/?captions=fre_fr&quality=12&learn=on)
 
 Découvrez comment créer une publication peut consommer des événements dans une application App Builder.

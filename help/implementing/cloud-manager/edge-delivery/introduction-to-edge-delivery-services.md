@@ -87,7 +87,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441563?captions=fre_fr&learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

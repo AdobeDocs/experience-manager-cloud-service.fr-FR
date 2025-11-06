@@ -90,7 +90,7 @@ Le profil de traitement peut inclure un rendu FPO (pour placement uniquement). V
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/32997?captions=fre_fr&quality=9)
 -->
 
 <!-- This image was removed per cqdoc-15624, as requested by engineering.
