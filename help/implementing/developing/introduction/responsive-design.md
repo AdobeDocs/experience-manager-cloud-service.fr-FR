@@ -137,8 +137,8 @@ Les pages réactives s’adaptent dynamiquement au périphérique sur lequel ell
 
 [le composant Image des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) comporte des fonctionnalités telles que la sélection d’images adaptatives.
 
-* Par défaut, le composant d’image utilise le [ servlet d’image adaptative ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
-* La [ Diffusion d’images optimisées pour le web ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa politique, qui diffuse des ressources d’image à partir de la gestion des ressources numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
+* Par défaut, le composant d’image utilise le [&#x200B; servlet d’image adaptative &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) pour fournir le rendu approprié.
+* La [&#x200B; Diffusion d’images optimisées pour le web &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) est également disponible par le biais d’une simple case à cocher dans sa politique, qui diffuse des ressources d’image à partir de la gestion des ressources numériques au format WebP et peut réduire la taille de téléchargement d’une image d’environ 25 % en moyenne.
 
 ## Conteneur de disposition {#layout-container}
 

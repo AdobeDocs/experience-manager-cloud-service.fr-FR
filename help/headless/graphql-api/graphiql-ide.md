@@ -101,7 +101,7 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 
 >[!NOTE]
 >
->Voir [ Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Voir [&#x200B; Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

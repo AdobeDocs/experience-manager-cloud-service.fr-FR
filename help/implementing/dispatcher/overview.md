@@ -36,4 +36,4 @@ Les sections suivantes fournissent des informations plus détaillées sur la dif
 * [Configuration du réseau CDN](/help/implementing/dispatcher/cdn.md)
 * [Mise en cache](/help/implementing/dispatcher/caching.md)
 
-Pour plus d’informations sur la réplication du service de création vers le service de publication, voir [ Réplication ](/help/operations/replication.md).
+Pour plus d’informations sur la réplication du service de création vers le service de publication, voir [&#x200B; Réplication &#x200B;](/help/operations/replication.md).

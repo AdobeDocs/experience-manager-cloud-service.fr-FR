@@ -639,7 +639,7 @@ Bien que les journaux puissent être téléchargés à partir de Cloud Manager, 
 * Elasticsearch (et OpenSearch)
 * Splunk
 
-Consultez l’article [ Transfert de journal ](/help/implementing/developing/introduction/log-forwarding.md) pour plus d’informations sur la configuration de cette fonctionnalité.
+Consultez l’article [&#x200B; Transfert de journal &#x200B;](/help/implementing/developing/introduction/log-forwarding.md) pour plus d’informations sur la configuration de cette fonctionnalité.
 
 >[!NOTE]
 >

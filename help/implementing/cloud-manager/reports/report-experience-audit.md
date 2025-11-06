@@ -83,7 +83,7 @@ Le contrôle de l’expérience est disponible par défaut pour les pipelines de
 
 Les résultats du contrôle de l’expérience sont présentés dans la phase **test d’évaluation** du pipeline de production via la page [exécution du pipeline de production](/help/implementing/cloud-manager/deploy-code.md).
 
-![ Tableau de bord dans le pipeline ](/help/implementing/cloud-manager/reports/assets/experience-audit-dashboard.png)
+![&#x200B; Tableau de bord dans le pipeline &#x200B;](/help/implementing/cloud-manager/reports/assets/experience-audit-dashboard.png)
 
 Le contrôle de l’expérience fournit les scores Google Lighthouse médians pour les [pages configurées](#configuration) et la différence de score par rapport à l’analyse précédente.
 
@@ -98,7 +98,7 @@ Vous pouvez accéder aux résultats complets de l’audit en cliquant sur l’on
 >
 >Les sections suivantes décrivent comment afficher les résultats du contrôle de l’expérience.
 >
->* Pour en savoir plus sur le fonctionnement de l’audit, voir [ Détails de l’évaluation du contrôle de l’expérience ](#details).
+>* Pour en savoir plus sur le fonctionnement de l’audit, voir [&#x200B; Détails de l’évaluation du contrôle de l’expérience &#x200B;](#details).
 >* Pour savoir comment exécuter un contrôle de l’expérience à la demande, voir [Rapports d’audit à la demande](#on-demand).
 >* Si vous rencontrez des problèmes lors de l’audit, voir [Le contrôle de l’expérience rencontre des problèmes](#issues).
 
@@ -159,7 +159,7 @@ La section **Résultats de l’analyse du contrôle de l’expérience** donne d
 
 ![Pages numérisées](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Cliquez sur le lien d’une page particulière pour mettre à jour le filtre **Sélectionner** de la section [**Scores de la page — Tendance** ](#trend) et afficher l’onglet **Rapports bruts** qui vous donne les scores de chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
+Cliquez sur le lien d’une page particulière pour mettre à jour le filtre **Sélectionner** de la section [**Scores de la page — Tendance** &#x200B;](#trend) et afficher l’onglet **Rapports bruts** qui vous donne les scores de chaque audit de la page. Cliquez sur la date du rapport dans la colonne **Rapport Lighthouse** pour récupérer un fichier JSON des données brutes.
 
 ![Rapport brut](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
@@ -173,7 +173,7 @@ En plus d’être exécutés pendant l’exécution du pipeline, les rapports de
 
 Pour exécuter une analyse à la demande, accédez à l’onglet **Rapports** afin de voir le rapport d’audit complet, puis cliquez sur le bouton **Exécuter l’analyse**.
 
-![ Analyse à la demande ](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
+![&#x200B; Analyse à la demande &#x200B;](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
 
 Le bouton **Exécuter l’analyse** devient indisponible et est marqué d’une icône d’horloge lorsqu’une analyse à la demande est déjà en cours d’exécution.
 
@@ -218,6 +218,6 @@ Voici quelques raisons pour lesquelles les pages peuvent ne pas être disponible
 
 Les détails suivants apportent des informations supplémentaires sur la manière dont le contrôle de l’expérience évalue votre site. Ils ne sont pas nécessaires à l’utilisation générale de la fonctionnalité et sont fournis ici pour plus d’exhaustivité.
 
-* L’audit analyse le domaine d’origine (`.com`) à partir des chemins de page du contrôle de l’expérience [ configurés](#configuration) de l’éditeur afin de simuler de vraies expériences utilisateur, ce qui vous aide à prendre de meilleures décisions concernant la gestion et l’optimisation de vos sites web.
+* L’audit analyse le domaine d’origine (`.com`) à partir des chemins de page du contrôle de l’expérience [&#x200B; configurés](#configuration) de l’éditeur afin de simuler de vraies expériences utilisateur, ce qui vous aide à prendre de meilleures décisions concernant la gestion et l’optimisation de vos sites web.
 * Dans les pipelines de production full stack, l’environnement d’évaluation est analysé. Pour que l’audit fournisse des détails pertinents lors de l’audit, le contenu de l’environnement d’évaluation doit être aussi proche que possible de l’environnement de production.
-* Les pages affichées dans la liste déroulante **Sélectionner** dans la section [**Scores de page — tendance** ](#trend) sont toutes des pages connues que le contrôle de l’expérience a parcourues par le passé.
+* Les pages affichées dans la liste déroulante **Sélectionner** dans la section [**Scores de page — tendance** &#x200B;](#trend) sont toutes des pages connues que le contrôle de l’expérience a parcourues par le passé.

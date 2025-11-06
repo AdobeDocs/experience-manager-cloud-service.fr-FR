@@ -140,7 +140,7 @@ Recherchez la ressource à l’aide des mots-clés que vous avez ajoutés. La re
 
   Découvrez comment [booster la recherche dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
-* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [ modifier ou ajouter des métadonnées personnalisées ](meta-edit.md) dans Experience Manager Assets.
+* **Champs de métadonnées personnalisés :** personnalisez vos champs de métadonnées pour capturer des informations supplémentaires sur les ressources. Par exemple, ajoutez des champs spécifiques pour les détails du projet, des informations de copyright ou toute autre donnée pertinente qui améliore les fonctionnalités de recherche. Découvrez [&#x200B; modifier ou ajouter des métadonnées personnalisées &#x200B;](meta-edit.md) dans Experience Manager Assets.
 
 
 * **Validation des métadonnées :** implémentez des contrôles de validation pour les entrées de métadonnées afin d’assurer la cohérence et la précision. L’utilisation de vocabulaires contrôlés rend le processus de validation plus fluide et réduit les risques d’entrées peu claires ou incohérentes. Cela peut impliquer de définir des instructions pour certaines propriétés de métadonnées afin d’éviter toute information ambiguë ou incohérente.

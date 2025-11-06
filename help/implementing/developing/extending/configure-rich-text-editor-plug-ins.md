@@ -357,7 +357,7 @@ Pour activer le module externe `paraformat`, procédez comme suit :
 
 >[!CAUTION]
 >
->Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL  Formats de paragraphe ], même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si la balise `<p>` est supprimée, l’auteur du contenu ne peut pas sélectionner l’option [!UICONTROL &#x200B; Formats de paragraphe &#x200B;], même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 

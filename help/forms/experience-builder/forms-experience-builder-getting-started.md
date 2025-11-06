@@ -62,10 +62,10 @@ Créer des formulaires à l’aide de descriptions en langage naturel de vos bes
 **Exemple :**
 
     Créez un formulaire de commentaires client avec :
-    - Une évaluation du produit (1 à 5 étoiles)
-    - Un champ de commentaire pour des commentaires détaillés
-    - L’adresse e-mail du client ou de la cliente (facultatif)
-    - Un envoi d’une notification par e-mail lors de la soumission
+    &#x200B;- Une évaluation du produit (1 à 5 étoiles)
+    &#x200B;- Un champ de commentaire pour des commentaires détaillés
+    &#x200B;- L’adresse e-mail du client ou de la cliente (facultatif)
+    &#x200B;- Un envoi d’une notification par e-mail lors de la soumission
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -131,9 +131,9 @@ Inclure des fonctionnalités supplémentaires :
 
     Ajoutez deux listes déroulantes
     
-    - queryType avec des options : « Question générale », « Demande d’assistance », « Demande de renseignements sur les ventes », « Partenariat »
+    &#x200B;- queryType avec des options : « Question générale », « Demande d’assistance », « Demande de renseignements sur les ventes », « Partenariat »
     
-    - urgenceLevel avec des options (Faible, Medium, Élevé)
+    &#x200B;- urgenceLevel avec des options (Faible, Medium, Élevé)
 
 
 ![Ajout de composants de liste déroulante à l’aide d’invites en langage naturel dans Forms Experience Builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +167,10 @@ Utilisez des `@fieldName` pour référencer des champs spécifiques :
 
 Décrivez ce que vous souhaitez en langage clair :
 
-    - Ajout d’une section pour les informations sur l’entreprise
-    - Création d’une liste déroulante pour la sélection d’un service
-    - Inclusion d’un chargement de fichier pour la reprise
-    - Configuration des notifications par e-mail lors de l’envoi du formulaire
+    &#x200B;- Ajout d’une section pour les informations sur l’entreprise
+    &#x200B;- Création d’une liste déroulante pour la sélection d’un service
+    &#x200B;- Inclusion d’un chargement de fichier pour la reprise
+    &#x200B;- Configuration des notifications par e-mail lors de l’envoi du formulaire
 
 ### Création incrémentielle {#build-incrementally}
 
@@ -190,55 +190,55 @@ Commencez simplement et ajoutez progressivement la complexité :
 **Formulaire de contact de base :**
 
     Créer un formulaire de contact avec :
-    - Nom (obligatoire)
-    - E-mail (obligatoire, validé)
-    - Liste déroulante Objet (Général, Support, Ventes, Partenariat)
-    - Message (obligatoire, multiligne)
-    - Bouton Envoyer
+    &#x200B;- Nom (obligatoire)
+    &#x200B;- E-mail (obligatoire, validé)
+    &#x200B;- Liste déroulante Objet (Général, Support, Ventes, Partenariat)
+    &#x200B;- Message (obligatoire, multiligne)
+    &#x200B;- Bouton Envoyer
 
 **Formulaire de commentaires client :**
 
     Créez un formulaire de commentaires client avec :
-    - Une évaluation du produit (1 à 5 étoiles)
-    - Un champ de commentaire pour des commentaires détaillés
-    - L’adresse e-mail du client ou de la cliente (facultatif)
-    - Un envoi d’une notification par e-mail lors de la soumission
+    &#x200B;- Une évaluation du produit (1 à 5 étoiles)
+    &#x200B;- Un champ de commentaire pour des commentaires détaillés
+    &#x200B;- L’adresse e-mail du client ou de la cliente (facultatif)
+    &#x200B;- Un envoi d’une notification par e-mail lors de la soumission
 
 ### Formulaires d’inscription et d’intégration {#registration-onboarding-forms}
 
 **Enregistrement des utilisateurs :**
 
     Créer un formulaire d’enregistrement d’utilisateur avec :
-    - Informations personnelles (nom, e-mail, téléphone)
-    - Préférences du compte (newsletter, notifications)
-    - Acceptation des conditions générales
-    - Création d’un mot de passe avec validation du niveau de sécurité
+    &#x200B;- Informations personnelles (nom, e-mail, téléphone)
+    &#x200B;- Préférences du compte (newsletter, notifications)
+    &#x200B;- Acceptation des conditions générales
+    &#x200B;- Création d’un mot de passe avec validation du niveau de sécurité
 
 **Intégration des employés :**
 
     Créez un formulaire d’intégration d’employé avec :
-    - Informations personnelles et coordonnées
-    - Informations sur l’emploi et date de début
-    - Chargements de documents (CV, ID, formulaires fiscaux)
-    - Sélection des avantages et préférences
+    &#x200B;- Informations personnelles et coordonnées
+    &#x200B;- Informations sur l’emploi et date de début
+    &#x200B;- Chargements de documents (CV, ID, formulaires fiscaux)
+    &#x200B;- Sélection des avantages et préférences
 
 ### Formulaires d&#39;enquête et d&#39;évaluation {#survey-assessment-forms}
 
 **Enquête de satisfaction client :**
 
     Créer une enquête de satisfaction client avec :
-    - Note globale (échelle 1-10)
-    - Notes par catégorie (produit, service, support)
-    - Sections de commentaires ouvertes
-    - Informations démographiques (facultatif)
+    &#x200B;- Note globale (échelle 1-10)
+    &#x200B;- Notes par catégorie (produit, service, support)
+    &#x200B;- Sections de commentaires ouvertes
+    &#x200B;- Informations démographiques (facultatif)
 
 **Évaluation des compétences :**
 
     Créer un formulaire d’évaluation des compétences avec :
-    - Catégories de compétences avec niveaux de compétence
-    - Durée de l’expérience pour chaque compétence
-    - Informations sur la certification et la formation
-    - Auto-évaluation et objectifs
+    &#x200B;- Catégories de compétences avec niveaux de compétence
+    &#x200B;- Durée de l’expérience pour chaque compétence
+    &#x200B;- Informations sur la certification et la formation
+    &#x200B;- Auto-évaluation et objectifs
 
 ## Tests et validation {#testing-validation}
 

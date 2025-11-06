@@ -350,7 +350,7 @@ De même, vous pouvez écrire **Naviguer parmi les panneaux** règle pour dépla
 
 Pour plus d’informations sur la création d’une règle pour naviguer dans un panneau, [cliquez ici](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
-#### [!UICONTROL  Appel de fonction asynchrone ]
+#### [!UICONTROL &#x200B; Appel de fonction asynchrone &#x200B;]
 
 <span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
@@ -366,7 +366,7 @@ Une règle d’appel de fonction asynchrone standard pour exécuter une fonction
 
 `[Callback Function];`
 
-Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [ Utilisation d’appels de fonction asynchrones dans l’éditeur de règles ](/help/forms/using-async-funct-in-rule-editor.md).
+Pour plus d’informations sur l’utilisation de l’appel de fonction asynchrone dans l’éditeur visuel de règles, reportez-vous à l’article [&#x200B; Utilisation d’appels de fonction asynchrones dans l’éditeur de règles &#x200B;](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

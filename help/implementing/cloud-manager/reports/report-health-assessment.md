@@ -27,7 +27,7 @@ Le service d’évaluation de l’intégrité effectue les opérations suivantes
 
 Chaque exécution répertorie les problèmes par gravité, fournit des liens vers des conseils et des correctifs recommandés et prend en charge une exportation PDF du rapport. Vous pouvez utiliser la vue **Dernier rapport** pour l’état actuel et **Rapports précédents** pour comparer les exécutions.
 
-Consultez également la section [ Modèles d’évaluation de l’intégrité ](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
+Consultez également la section [&#x200B; Modèles d’évaluation de l’intégrité &#x200B;](#ha-patterns) pour obtenir des détails sur les définitions de règle et les mesures correctives.
 
 ## Accéder à la page Évaluation de l’intégrité {#access-health-assessment}
 

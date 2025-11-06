@@ -20,11 +20,11 @@ Découvrez les différentes propriétés qu’une page peut avoir, comment elles
 
 >[!TIP]
 >
->Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [ Modification des propriétés de page ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
+>Pour plus d’informations sur la modification des propriétés d’une page, consultez le document [&#x200B; Modification des propriétés de page &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 ## Présentation et disponibilité des propriétés {#overview}
 
-Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [ propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
+Les propriétés de page peuvent contrôler de nombreux aspects d’une page, depuis le titre jusqu’aux autorisations, en passant par le branding. Les propriétés sont réparties sur plusieurs onglets, dont certains peuvent être masqués selon le type de page. Comme la plupart des propriétés dans AEM, [&#x200B; propriétés de page peuvent être héritées.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
 >[!NOTE]
 >

@@ -52,7 +52,7 @@ Vous pouvez également définir différentes propriétés ; par exemple, ajouter
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [ Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
+   >Pour plus d’informations sur le **Modèle d’URL d’aperçu par défaut** voir [&#x200B; Modèle de fragment de contenu - Propriétés](#content-fragment-model-properties).
 
    ![titre et description](assets/cfm-models-02.png)
 

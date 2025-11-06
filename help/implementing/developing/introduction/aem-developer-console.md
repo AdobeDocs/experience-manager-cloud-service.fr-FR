@@ -20,7 +20,7 @@ ht-degree: 2%
 AEM as a Cloud Service Developer Console comprend un ensemble d’outils pour le débogage dans les environnements cloud. Il est accessible via un lien spécifique à l’environnement dans Cloud Manager.
 
 >[!NOTE]
->Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
 >
 
 

@@ -35,7 +35,7 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vous utiliserez pour cela le [mécanisme de recouvrement standard d’AEM ](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et recouvrent les pages par défaut sous `/libs`.
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vous utiliserez pour cela le [mécanisme de recouvrement standard d’AEM &#x200B;](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et recouvrent les pages par défaut sous `/libs`.
 
 1. Dans le référentiel, copiez le ou les scripts par défaut :
 

@@ -179,7 +179,7 @@ Lors du développement local (à l’aide du SDK), les `/apps` et les `/libs` pe
 ### Outils de développement AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [**](https://developer.adobe.com/developer-console/).
+>Le Developer Console AEM as a Cloud Service ne doit pas être confondu avec le Adobe Developer Console [*&#128279;*](https://developer.adobe.com/developer-console/).
 >
 
 >[!NOTE]

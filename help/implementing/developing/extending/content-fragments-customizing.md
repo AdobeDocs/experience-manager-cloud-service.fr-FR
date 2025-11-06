@@ -82,7 +82,7 @@ Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
 #### Autorisations de ressources {#asset-permissions}
 
-Voir [ Fragment de contenu - considérations sur la suppression ](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
+Voir [&#x200B; Fragment de contenu - considérations sur la suppression &#x200B;](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Intégration de fonction {#feature-integration}
 
@@ -100,7 +100,7 @@ Pour une intégration au composant de base Assets :
 >
 >Le [composant Fragment de contenu fait partie des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr). Consultez la section [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit le **[composant principal Fragment de contenu ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr)**, un [ composant qui vous permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr)**.
+Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit le **[composant principal Fragment de contenu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr)**, un [&#x200B; composant qui vous permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr)**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
@@ -327,7 +327,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Exemple : spécification de l’intervalle d’enregistrement automatique {#example-specifying-the-auto-save-interval}
 
-L’[ intervalle d’enregistrement automatique ](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
+L’[&#x200B; intervalle d’enregistrement automatique &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
 * Nœud : `<conf-root>/settings/dam/cfm/jcr:content`
 * Nom de la propriété : `autoSaveInterval`

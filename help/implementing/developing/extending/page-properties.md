@@ -72,10 +72,10 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-cloud/authoring/sit
 
 >[!NOTE]
 >
->Lors de la configuration des propriétés de page pour une utilisation avec des Live Copies, voir [ Extension de Multi Site Manager ](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus d’informations.
+>Lors de la configuration des propriétés de page pour une utilisation avec des Live Copies, voir [&#x200B; Extension de Multi Site Manager &#x200B;](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 
-Cet exemple illustre la technique dialog diff de [ Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) y compris l’utilisation de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Il illustre également l’utilisation de `cq:showOnCreate` et de `cq:hideOnEdit`.
+Cet exemple illustre la technique dialog diff de [&#x200B; Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) y compris l’utilisation de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Il illustre également l’utilisation de `cq:showOnCreate` et de `cq:hideOnEdit`.
 
 Vous trouverez le code de cette page sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

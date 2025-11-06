@@ -126,7 +126,7 @@ Changeons maintenant la **[!UICONTROL Destination]** dans le cas d’utilisation
 >
 >Si [!DNL Dynamic Media] n’est pas configuré sur votre instance [!DNL Experience Manager Assets] et si la **[!UICONTROL Destination]** est sur **[!UICONTROL Publier]**, les ressources et les dossiers sont toujours publiés vers `AEM`.
 >
->La publication vers [!DNL Brand Portal] est indépendante des propriétés d’un dossier. Toutes les ressources, tous les dossiers et toutes les collections peuvent être publiés sur Brand Portal. Consultez [Publication de ressources sur Brand Portal. ](#publish-assets-to-brand-portal)
+>La publication vers [!DNL Brand Portal] est indépendante des propriétés d’un dossier. Toutes les ressources, tous les dossiers et toutes les collections peuvent être publiés sur Brand Portal. Consultez [Publication de ressources sur Brand Portal. &#x200B;](#publish-assets-to-brand-portal)
 
 >[!NOTE]
 >

@@ -106,7 +106,7 @@ Pour ajouter une connexion :
    >
    > L’URL de l’instance est l’adresse web unique qui pointe vers une instance AEM Forms spécifique.
 
-   Vous pouvez récupérer les informations d’identification du service [ à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
+   Vous pouvez récupérer les informations d’identification du service [&#x200B; à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr) requises pour créer une connexion.
 
 1. Remplacez `ims-na1.adobelogin.com` dans le point d’entrée **IMS** par la valeur de **imsEndpoint** à partir des informations d’identification de service dans la Developer Console.
 

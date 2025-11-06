@@ -527,7 +527,7 @@ Refactorisez les expressions régulières pour utiliser le constructeur RegExp a
 ## Résolution des problèmes
 
 * Si le gestionnaire d’envoi personnalisé ne s’exécute pas comme prévu dans les projets ou formulaires AEM existants, procédez comme suit :
-   * Assurez-vous que la version [ des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
+   * Assurez-vous que la version [&#x200B; des composants principaux est mise à jour vers la version 3.0.18 et les versions ultérieures](https://github.com/adobe/aem-core-forms-components). Toutefois, pour les formulaires et les projets AEM existants, il existe d’autres étapes à suivre :
 
    * Pour le projet AEM, l’utilisateur ou l’utilisatrice doit remplacer toutes les instances de `submitForm('custom:submitSuccess', 'custom:submitError')` par `submitForm()` et déployer le projet via le pipeline Cloud Manager.
 

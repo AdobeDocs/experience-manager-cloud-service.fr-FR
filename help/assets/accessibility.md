@@ -243,5 +243,5 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >[!MORELIKETHIS]
 >
 >* [Notes de mise à jour des améliorations apportées à chaque version](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/compliance/accessibility/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/compliance/accessibility/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).

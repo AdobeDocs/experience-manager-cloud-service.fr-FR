@@ -83,7 +83,7 @@ Découvrez comment créer un modèle de [!DNL Dynamic Media] étape par étape d
 Remplissez les conditions suivantes pour créer un modèle de [!DNL Dynamic Media] et générer son URL de diffusion :
 
 1. Accès à [!DNL Dynamic Media].
-1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**pour répliquer ce dossier dans**[!UICONTROL  Dynamic Media Assets ]**.
+1. Sur la page d’accueil [!DNL Assets View], vous disposez d’un dossier dans **[!UICONTROL Dynamic Media Assets]** pour enregistrer votre modèle. [Créez un dossier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) dans ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;pour répliquer ce dossier dans&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
 1. [Synchronisez les images disponibles dans votre [!DNL AEM Assets] instance avec  [!DNL Dynamic Media]  pour les utiliser afin de créer le modèle](/help/assets/dynamic-media/config-dm.md).
 1. Publiez les images à utiliser lors de la création du modèle pour générer l’URL de diffusion du modèle après sa création. L’URL de diffusion peut être utilisée dans les applications en aval.
 1. Pour utiliser une autre police que la police [!UICONTROL Adobe Sans F2] par défaut dans le calque de texte du modèle, [chargez et publiez le fichier de police simultanément dans AEM et Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Les formats de fichiers de polices pris en charge sont AEM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Veillez également à [retraiter](/help/assets/reprocessing-assets-view.md) les polices existantes pour les utiliser. Voir [Polices](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) pour plus d’informations.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -118,14 +118,14 @@ Pour créer une zone de travail vide, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Créer un modèle]**. La boîte de dialogue **[!UICONTROL Nouveau modèle]** s’affiche.
 
-   ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel ](/help/assets/assets/new-template.png)
+   ![comment créer des modèles dynamiques qui peuvent être personnalisés en temps réel &#x200B;](/help/assets/assets/new-template.png)
 
    >[!NOTE]
    >
    >  Le modèle est enregistré à l’emplacement où vous l’avez créé. Sur la page d’accueil de [!DNL Assets View], sélectionnez **[!UICONTROL Dynamic Media Assets]** et cliquez sur **[!UICONTROL Créer un modèle]** pour enregistrer le modèle dans le dossier racine **[!UICONTROL Dynamic Media Assets]**.
 
 1. Indiquez un nom de modèle, définissez la largeur et la hauteur de la zone de travail, puis cliquez sur **[!UICONTROL Créer]**. Une zone de travail vierge s’affiche avec des options de menu des deux côtés à utiliser pour créer le modèle. Pointez sur les options de menu pour afficher leur info-bulle.
-   ![ modèle personnalisable en temps réel ](/help/assets/assets/blank-canvas-page.png)
+   ![&#x200B; modèle personnalisable en temps réel &#x200B;](/help/assets/assets/blank-canvas-page.png)
 
    >[!NOTE]
    >
@@ -141,7 +141,7 @@ Pour créer une zone de travail vide, procédez comme suit :
 
 * ![Modèles DM](/help/assets/assets/layer-selector.svg) : sélectionnez ![Modèles DM](/help/assets/assets/layer-selector.svg) et cliquez sur un calque sur la zone de travail pour le sélectionner.
 * ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) : cliquez sur ![modèles prenant en charge la personnalisation](/help/assets/assets/bring-forward.svg) ou utilisez le raccourci clavier **Ctrl** + **`]`** (Windows) ou **Cmd** + **`]`** (Mac) pour avancer un calque sélectionné.
-* ![comment créer un modèle qui peut être personnalisé facilement ](/help/assets/assets/send-backward.svg) : cliquez sur ![comment créer un modèle qui peut être personnalisé facilement](/help/assets/assets/send-backward.svg) ou utilisez le raccourci clavier **Ctrl** + **`[`** (Windows) ou **Cmd** + **`[`** (Mac) pour renvoyer un calque sélectionné vers l’arrière.
+* ![comment créer un modèle qui peut être personnalisé facilement &#x200B;](/help/assets/assets/send-backward.svg) : cliquez sur ![comment créer un modèle qui peut être personnalisé facilement](/help/assets/assets/send-backward.svg) ou utilisez le raccourci clavier **Ctrl** + **`[`** (Windows) ou **Cmd** + **`[`** (Mac) pour renvoyer un calque sélectionné vers l’arrière.
 * ![créez un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) : cliquez sur ![créer un modèle qui peut être personnalisé instantanément](/help/assets/assets/undo.svg) ou utilisez un raccourci clavier, **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac) pour annuler la dernière action.
 * ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) : cliquez sur ![modèle pour créer rapidement des bannières](/help/assets/assets/redo.svg) ou utilisez le raccourci clavier **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac) pour rétablir la dernière action.
 * ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) : cliquez sur ![modèle pour créer rapidement des prospectus](/help/assets/assets/zoom-in.svg) ou utilisez le raccourci clavier **Ctrl** + **+** (Windows) ou **Cmd** + **+** (Mac) pour effectuer un zoom sur la zone de travail.
@@ -235,7 +235,7 @@ Pour modifier un calque de texte ou d’image, reportez-vous aux actions courant
 Mettez en forme votre texte selon la police, la taille, la couleur, le style et l’alignement requis (dans le calque) en modifiant leurs valeurs dans les champs respectifs sous la section **[!UICONTROL Texte]** du panneau.
 Veillez à inclure **[!UICONTROL Redimensionnement de texte intelligent]**. [!UICONTROL Redimensionnement intelligent de texte] fonctionne sur l’algorithme [Copyfit](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) pour remplir de manière optimale le texte dans la zone de texte, empêcher le débordement du texte et réduire l’espace supplémentaire au bas du texte.
 
-![ création de contenu en un rien de temps ](/help/assets/assets/smart-text-resize.png)
+![&#x200B; création de contenu en un rien de temps &#x200B;](/help/assets/assets/smart-text-resize.png)
 
 ### Calques de paramètres {#parameterise-a-layer}
 
@@ -244,7 +244,7 @@ Après avoir créé un modèle avec plusieurs calques d’images, de textes et d
 Pour paramétrer un calque :
 
 1. Cliquez sur ![création instantanée de contenu](/help/assets/assets/show-layers-list.svg), sélectionnez un calque et cliquez sur **[!UICONTROL Paramètres]**. Le panneau **[!UICONTROL Paramètres]** s’affiche.
-1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Pour connaître le comportement de la propriété après paramétrage[ consultez l’option du panneau ](#parameterisation-options-or-allowed-parameters)Paramètres).
+1. Activez le bouton (bascule) **[!UICONTROL Inclure le paramètre]** pour paramétrer une propriété. Pour connaître le comportement de la propriété après paramétrage[&#x200B; consultez l’option du panneau &#x200B;](#parameterisation-options-or-allowed-parameters)Paramètres).
 1. **Facultatif :** renommez le nom du paramètre. Un nom de paramètre comporte un nom de calque suivi d’un suffixe. Pour un calque sélectionné, toutes ses propriétés paramétrées partagent le même nom de calque suivi d’un suffixe variable. Renommez le nom du calque en suivant la convention de nommage sémantique de sorte que, lorsque vous incluez le paramètre dans l’URL, le nom du paramètre explique lui-même le contenu du calque ou son objectif.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
    ![création instantanée de contenu](/help/assets/assets/parameterise-a-layer.png)
@@ -349,7 +349,7 @@ Assurez-vous que les images du modèle sont déjà publiées sur AEM et Dynamic 
 
 Pour copier l&#39;URL de diffusion du modèle, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL  ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
+1. Cliquez sur **[!UICONTROL Copier l’URL]**. La boîte de dialogue **[!UICONTROL Copier l’URL]** s’affiche. Sélectionnez et copiez l’URL affichée. Le premier paramètre de l’URL commence après un point d’interrogation **([!UICONTROL &#x200B; ?])** et une paire clé-valeur commence par **[!UICONTROL $]** et se termine par **[!UICONTROL &amp;]**. La clé et la valeur sont séparées par un signe égal **([!UICONTROL =])**, avec la clé à gauche et la valeur à droite.
 1. Collez cette URL dans l’onglet de votre navigateur et affichez votre modèle dynamique. Personnalisez le modèle en temps réel en mettant à jour la valeur du paramètre requis (valeur de la clé) dans l’URL directement, comme illustré à l’[étape 2](#preview-and-publish-template-and-copy-template-deliver-url) de la section **Prévisualisation et publication**.
 1. Utilisez cette URL pour un merchandising rapide de vos produits ou services. Vous pouvez partager cette URL avec vos clients ou l’intégrer à votre site web ou à toute application tierce en aval pour afficher la bannière et y apporter des mises à jour en temps réel afin de refléter les offres en cours.
 

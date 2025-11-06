@@ -24,7 +24,7 @@ Découvrez comment modifier [les propriétés d’une page](/help/sites-cloud/au
 
 Vous pouvez modifier les propriétés de page à plusieurs endroits dans AEM.
 
-* [À partir du ](#from-the-sites-console)
+* [À partir du &#x200B;](#from-the-sites-console)
 * [Dans l’éditeur de page](#from-the-page-editor)
 * [À partir de l’éditeur universel](#from-the-universal-editor)
 
@@ -107,7 +107,7 @@ Vous pouvez mettre à jour les valeurs dans les champs disponibles dans les page
 
 Si la page est basée sur un plan directeur ou hérite du contenu d’une autre page, l’héritage se reflète dans la fenêtre **Propriétés de la page** pour le champ individuel.
 
-![ Propriétés héritées ](assets/property-inhertiance.png)
+![&#x200B; Propriétés héritées &#x200B;](assets/property-inhertiance.png)
 
 Impossible de modifier les propriétés héritées. Appuyez ou cliquez sur l’icône **Annuler l’héritage** en regard d’un champ particulier pour rompre son héritage.
 
@@ -133,4 +133,4 @@ Sélectionnez **Synchroniser la page après le rétablissement de l’héritage*
 
 >[!TIP]
 >
->Pour plus d’informations sur l’héritage, consultez le document [ Multi Site Manager et traduction ](/help/sites-cloud/administering/msm-and-translation.md)
+>Pour plus d’informations sur l’héritage, consultez le document [&#x200B; Multi Site Manager et traduction &#x200B;](/help/sites-cloud/administering/msm-and-translation.md)

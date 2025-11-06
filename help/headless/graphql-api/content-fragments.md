@@ -774,7 +774,7 @@ La solution de GraphQL vous permet :
 >* `_dynamicUrl` : ressource DAM
 >* `_dmS7Url` : ressource Dynamic Media
 > 
->Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` est `null`. Voir [ Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si la ressource référencée est une ressource DAM, la valeur de `_dmS7Url` est `null`. Voir [&#x200B; Diffusion de ressources Dynamic Media par URL dans les requêtes GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Structure de la demande de transformation {#structure-transformation-request}
 
@@ -965,7 +965,7 @@ La solution de GraphQL vous permet :
 
    * La propriété `_smartCrops` expose les configurations de recadrage intelligent disponibles pour une ressource spécifique
 
-   * voir [ Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent ](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * voir [&#x200B; Exemple de requête pour la diffusion de ressources Dynamic Media par URL avec recadrage intelligent &#x200B;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -980,7 +980,7 @@ La solution de GraphQL vous permet :
 >* `_dmS7Url` : ressource Dynamic Media
 >* `_dynamicUrl` : ressource DAM
 > 
->Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` est `null`. Voir [ Diffusion d’images optimisées pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si la ressource référencée est une ressource Dynamic Media, la valeur de `_dynamicURL` est `null`. Voir [&#x200B; Diffusion d’images optimisées pour le web dans les requêtes GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Exemple de requête pour la diffusion de ressources Dynamic Media par URL - Référence d’image{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
@@ -1246,7 +1246,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
       * `_id` : UUID du fragment de contenu dans le référentiel
 
-         * Voir [ Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * Voir [&#x200B; Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Voir Exemple de requête pour les fragments de contenu par référence UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
@@ -1285,7 +1285,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
             * [Exemple de requête pour la diffusion d’images optimisées pour le web avec un seul paramètre spécifié](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [ ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url` : sur la référence `ImageRef` pour la diffusion de l’URL vers une [&#x200B; ressource Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
          * Voir [Exemple de requête pour la diffusion de ressources Dynamic Media par URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 

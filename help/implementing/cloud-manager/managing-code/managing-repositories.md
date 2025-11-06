@@ -54,7 +54,7 @@ Un utilisateur ou une utilisatrice doit disposer du rôle **Responsable de dépl
 
 Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-![ Boîte de dialogue Ajouter un référentiel ](assets/repository-add.png)
+![&#x200B; Boîte de dialogue Ajouter un référentiel &#x200B;](assets/repository-add.png)
 *Boîte de dialogue Ajouter un référentiel.*
 
 Cloud Manager prend en charge deux types de référentiels : les référentiels gérés par Adobe (**Référentiel Adobe**) et les référentiels auto-gérés (**Référentiel privé**). Les champs requis pour le paramétrage varient en fonction du type de référentiel que vous choisissez d’ajouter. Pour plus d’informations, consultez les sections suivantes :

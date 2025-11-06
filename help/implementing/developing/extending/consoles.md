@@ -23,7 +23,7 @@ Voir [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/h
 
 ## Recouvrements {#overlays}
 
-Les recouvrements reposent sur des définitions de nœud et vous permettent de recouvrir la fonctionnalité standard disponible sous `/libs` avec votre propre fonctionnalité personnalisée sous `/apps`. Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car [ fusion de ressources Sling ](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
+Les recouvrements reposent sur des définitions de nœud et vous permettent de recouvrir la fonctionnalité standard disponible sous `/libs` avec votre propre fonctionnalité personnalisée sous `/apps`. Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car [&#x200B; fusion de ressources Sling &#x200B;](/help/implementing/developing/introduction/sling-resource-merger.md) permet l’héritage.
 
 Les recouvrements peuvent être utilisés de différentes manières pour étendre vos consoles AEM. Vous trouverez plusieurs exemples dans les sections suivantes.
 

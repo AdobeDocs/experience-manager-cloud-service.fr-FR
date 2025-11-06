@@ -59,7 +59,7 @@ La configuration doit être liée au service OSGi **Configuration du composant d
 
 Par exemple :
 
-![Configuration OSGi – Configuration du composant de fragment de contenu ](assets/cf-component-configuration-osgi.png)
+![Configuration OSGi – Configuration du composant de fragment de contenu &#x200B;](assets/cf-component-configuration-osgi.png)
 
 La configuration OSGi est la suivante :
 

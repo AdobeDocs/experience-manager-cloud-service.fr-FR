@@ -103,11 +103,11 @@ Pour ajouter d’autres formulaires à publier :
 
 1. Cliquez sur le bouton **Ajouter du contenu** pour ajouter plus de contenu.
 
-   ![ Ajouter du contenu ](/help/forms/assets/add-content.png)
+   ![&#x200B; Ajouter du contenu &#x200B;](/help/forms/assets/add-content.png)
 
 2. Sélectionnez le formulaire dans l’écran **Sélectionner le chemin d’accès**.
 
-   ![ Ajouter du contenu ](/help/forms/assets/add-assets.png)
+   ![&#x200B; Ajouter du contenu &#x200B;](/help/forms/assets/add-assets.png)
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Pour ajouter d’autres formulaires à publier :
    ![références publiées](/help/forms/assets/published-references.png)
 
 4. Dans la boîte de dialogue **Références publiées**, désélectionnez les ressources que vous prévoyez de ne pas publier et cliquez sur **[!UICONTROL Terminé]**.
-   ![ boîte de dialogue références publiées ](/help/forms/assets/published-references-dialog.png)
+   ![&#x200B; boîte de dialogue références publiées &#x200B;](/help/forms/assets/published-references-dialog.png)
 
 <!--
 ### Include Folder Settings

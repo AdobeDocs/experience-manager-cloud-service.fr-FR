@@ -43,11 +43,11 @@ Les commentaires offrent aux utilisateurs d’AEM un moyen consolidé de discute
 1. Ouvrez la colonne **Chronologie**.
 1. Ajoutez votre commentaire et appuyez sur **Entrée**.
 
-![Ajouter un commentaire ](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
+![Ajouter un commentaire &#x200B;](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
 
 Les informations de la chronologie sont mises à jour pour indiquer que le commentaire a été ajouté.
 
-![Ajouter un commentaire ](/help/screens-cloud/assets/configure/screens-timeline4.jpg)
+![Ajouter un commentaire &#x200B;](/help/screens-cloud/assets/configure/screens-timeline4.jpg)
 
 ### Enregistrer une version {#saveversion}
 
@@ -67,12 +67,12 @@ Le contrôle de version crée un « instantané » d’un canal à un moment sp�
 1. Ouvrez la colonne **Chronologie**.
 1. Cliquez sur le bouton (trois points) près du champ de commentaire au bas de la page.
 
-   ![Ajouter un commentaire ](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
+   ![Ajouter un commentaire &#x200B;](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
 1. Sélectionnez **Enregistrer comme version**.
 1. Saisissez un **Libellé** et un **Commentaire** pour la version.
 
-   ![Ajouter un commentaire ](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
+   ![Ajouter un commentaire &#x200B;](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
 1. Confirmez la nouvelle version en sélectionnant **Créer**. Les informations de la chronologie sont mises à jour pour indiquer la nouvelle version.
 
@@ -86,7 +86,7 @@ Pour rétablir la version précédente de la page sélectionnée :
 1. Sélectionnez **Tout afficher** ou **Versions** dans la liste déroulante des filtres. Les versions du canal sélectionné sont répertoriées.
 1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
 
-   ![Ajouter un commentaire ](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
+   ![Ajouter un commentaire &#x200B;](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
 
 1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations du journal sont mises à jour.
 

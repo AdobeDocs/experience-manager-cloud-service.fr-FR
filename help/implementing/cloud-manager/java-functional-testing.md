@@ -87,7 +87,7 @@ De plus, pour exclure le code test de la vérification de la couverture de l’a
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests `aem-testing-clients`. Les développeurs et développeuses sont encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur.
 
-Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub ](https://github.com/adobe/aem-testing-clients).
+Pour plus d’informations, voir le [`aem-testing-clients`référentiel GitHub &#x200B;](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >

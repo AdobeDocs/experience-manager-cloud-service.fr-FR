@@ -32,7 +32,7 @@ Adobe encourage l’utilisation de Cypress, car il propose un rechargement en te
 
 Les tests de l’interface utilisateur s’exécutent en tant que point de contrôle qualité à l’étape [**Tests personnalisés de l’interface utilisateur**](/help/implementing/cloud-manager/deploy-code.md), obligatoire dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) et facultatif dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
-Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [ Création de tests d’interface utilisateur](#building-ui-tests).
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker. Les tests peuvent être écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [&#x200B; Création de tests d’interface utilisateur](#building-ui-tests).
 
 >[!TIP]
 >
@@ -307,7 +307,7 @@ Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’�
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** ](/help/implementing/cloud-manager/deploy-code.md).
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger depuis Cloud Manager en cliquant sur le bouton `Download Details` sous l’étape [**Test personnalisé de l’interface utilisateur** &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Charger des fichiers {#upload-files}
 

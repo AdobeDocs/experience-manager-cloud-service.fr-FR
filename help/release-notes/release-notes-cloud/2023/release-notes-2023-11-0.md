@@ -122,11 +122,11 @@ Les règles de filtrage du trafic ont été publiées en octobre et comprennent 
 
 Une fois la licence obtenue, ces règles WAF avancées peuvent être déployées sur le réseau CDN à l’aide du pipeline de configuration Cloud Manager pour ajouter un niveau supplémentaire de protection contre les attaques web.
 
-En savoir plus sur les [ Règles de filtrage du trafic ](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM pour en savoir plus sur l’obtention d’une licence pour la protection WAF-DDoS ou la sécurité renforcée.
+En savoir plus sur les [&#x200B; Règles de filtrage du trafic &#x200B;](/help/security/traffic-filter-rules-including-waf.md), y compris WAF. Contactez votre équipe de compte AEM pour en savoir plus sur l’obtention d’une licence pour la protection WAF-DDoS ou la sécurité renforcée.
 
 ### Programme de mappage de domaines pour les utilisateurs et utilisatrices précoces {#cdn-config-early-adopter}
 
-Outre les [ Règles de filtrage du trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
+Outre les [&#x200B; Règles de filtrage du trafic (y compris WAF)](/help/security/traffic-filter-rules-including-waf.md) récemment publiées, il est possible d’utiliser le pipeline de configuration pour déclarer et déployer d’autres types de configuration de réseau CDN. Nous aimerions en savoir plus sur vos cas d’utilisation, notamment :
 
 * Redirections côté client 301/302
 * Établier un proxy des requêtes en périphérie vers des origines arbitraires

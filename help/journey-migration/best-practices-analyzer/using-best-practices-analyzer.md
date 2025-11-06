@@ -95,7 +95,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
       ![Image](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
-1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[ Analyse des bonnes pratiques dans CAM ](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Fournissez la clé de chargement BPA pour charger automatiquement le rapport BPA généré vers [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Pour obtenir la clé de chargement, accédez à l’[&#x200B; Analyse des bonnes pratiques dans CAM &#x200B;](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![Définir la clé de chargement BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
@@ -144,7 +144,7 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
 
 1. Désélectionnez la case pour filtrer tous les résultats liés à ACS Commons. Un **nombre de résultats filtrés** devrait s’afficher sur le rapport, comme illustré dans l’image ci-dessous. Le filtre est également appliqué au rapport lorsqu’il est exporté au format CSV (valeurs séparées par des virgules).
 
-   ![ Nombre de résultats filtrés ](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![&#x200B; Nombre de résultats filtrés &#x200B;](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
