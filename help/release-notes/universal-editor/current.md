@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.10.30
-description: Il s’agit des notes de mise à jour de la version 2025.10.30 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.11.06
+description: Il s’agit des notes de mise à jour de la version 2025.11.06 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 58%
+source-wordcount: '256'
+ht-degree: 50%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.10.30 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.11.06 {#release-notes}
 
-Voici les notes de mise à jour de la version du 30 octobre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 6 novembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ Voici les notes de mise à jour de la version du 30 octobre 2025 de l’éditeur
 >[!TIP]
 >
 >Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
-
-## Nouveautés {#what-is-new}
-
-* [Le nouvel éditeur de texte enrichi](#new-rte) peut désormais insérer des images.
-   * Cette fonctionnalité est désactivée en OtB et doit être explicitement activée via une [&#x200B; définition de filtre &#x200B;](/help/implementing/universal-editor/configure-rte.md#toolbar).
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -39,10 +34,12 @@ Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de 
 
 ## Autres améliorations {#other-improvements}
 
-* L’événement de mise à jour est désormais informé si l’action a été annulée.
-* `No results` chaîne dépend désormais des paramètres régionaux du navigateur dans les balises de l’éditeur universel.
-* Correction d’un saut de ligne supplémentaire dans le bouton de publication de l’éditeur universel.
-* Le nettoyage a été effectué sur l’API de correctif.
-* Le bouton Sélectionner le contenu est désormais visible dans Safari.
-* La version RPM a été corrigée.
-* Mise à jour CORS pour éviter de mettre à jour à nouveau le texte modifié après l’enregistrement.
+* `og:title` champs de métadonnées peuvent désormais être correctement supprimés.
+* Un problème de navigation a été corrigé lorsqu’un utilisateur modifie la barre d’emplacement dans l’éditeur du navigateur afin que ces modifications soient correctement répercutées et que l’éditeur et/ou l’application accède désormais à l’URL demandée.
+* La résolution du modèle de champ a été corrigée et l’éditeur utilise le modèle du composant, le cas échéant.
+* componentId est désormais inclus dans l’action /add.
+* La possibilité de supprimer certaines propriétés de métadonnées qui ne pouvaient pas être supprimées auparavant a été corrigée.
+* La récupération brute est désormais effectuée de manière conditionnelle pour xwalk lorsqu’elle n’est pas définie par le plug-in AEM.
+* La gestion du MSM de fragment de contenu avec l’éditeur de texte enrichi a été corrigée.
+* La mise en surbrillance des images dans une image est désormais prise en charge.
+
