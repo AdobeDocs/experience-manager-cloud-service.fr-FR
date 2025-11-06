@@ -312,7 +312,7 @@ Génération de piste de processus :
 Pour les problèmes d’intégration :
 
 - Consultez la [FAQ sur Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Consultez le [ Guide de prise en main ](forms-experience-builder-getting-started.md)
+- Consultez le [&#x200B; Guide de prise en main &#x200B;](forms-experience-builder-getting-started.md)
 - Contactez votre administrateur système pour obtenir une assistance technique
 - Consultez la documentation de l’API pour les services externes.
 
