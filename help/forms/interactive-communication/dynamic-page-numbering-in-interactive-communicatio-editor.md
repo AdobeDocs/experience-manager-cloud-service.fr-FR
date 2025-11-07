@@ -4,10 +4,10 @@ description: La numérotation dynamique de page dans l’éditeur de communicati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '404'
+ht-degree: 13%
 
 ---
 
@@ -26,9 +26,28 @@ ht-degree: 18%
 
 La fonction de numérotation dynamique de page d’une communication interactive (IC) permet aux auteurs d’afficher automatiquement les numéros de page dans leur sortie PDF. La numérotation des pages peut être activée au niveau du gabarit de page, ce qui permet d’assurer une numérotation cohérente sur toutes les pages de conception associées. Cela permet de maintenir un suivi des pages clair et une mise en page professionnelle tout au long des communications multipages.
 
+![Rechercher document IC](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## Utilisation de la numérotation dynamique de page dans l’éditeur de communication interactive
+
+1. Ouvrez l’éditeur de communication interactive
+Ouvrez votre projet de communication interactive dans l’éditeur IC.
+
+1. Aller à la page du Principal
+La numérotation de page ne peut être activée que dans la page de Principal. Accédez au gabarit de page de votre communication.
+
+1. Activer la numérotation de page
+Dans le panneau Propriétés, activez le bouton (bascule) Activer le numéro de page . Cela ajoute automatiquement des numéros de page à toutes les pages associées.
+
+1. Personnaliser l’emplacement
+Le composant Numéro de page peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement à l’aide des propriétés de texte standard.
+
+1. Aperçu dans PDF
+Les numéros de page s’affichent uniquement lors de l’aperçu PDF et affichent une numérotation dynamique sur chaque page.
+
 ## Fonctionnalités essentielles
 
-- Configuration De La Page De Principal **&#x200B;**
+- Configuration De La Page De Principal ****
 La numérotation de page peut être activée au niveau du gabarit de page. Le composant peut être placé n’importe où sur la zone de travail après avoir été déposé et personnalisé librement, car il prend en charge toutes les propriétés disponibles dans le composant de texte.
 
 - **Emplacement automatique :**

@@ -1,10 +1,10 @@
 ---
-title: Objet de champ numérique dans l’éditeur de communication interactive
-description: Objet de champ numérique dans l’éditeur de communication interactive d’AEM Forms pour permettre aux auteurs de collecter des entrées numériques des utilisateurs dans un format contrôlé.
+title: Composant de champ numérique dans l’éditeur de communication interactive
+description: Composant de champ numérique dans l’éditeur de communication interactive d’AEM Forms pour permettre aux auteurs de collecter des entrées numériques des utilisateurs dans un format contrôlé.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 ---
 
 
-# Objet de champ numérique dans l’éditeur de communication interactive
+# Composant de champ numérique dans l’éditeur de communication interactive
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ Les auteurs peuvent placer des champs numériques dans des conteneurs de disposi
 
 - Conservez une apparence et une typographie cohérentes pour correspondre aux directives de la marque.
 
-L’objet **champ numérique** de l’éditeur de communication interactive est un outil précis et fiable pour la collecte de données numériques. Grâce à une mise en forme robuste, des contrôles de visibilité et des options de liaison de données, il garantit que les entrées numériques sont capturées de manière claire et intégrées de manière transparente dans les formulaires numériques. Lorsqu’elle est stylisée et configurée correctement, elle améliore considérablement la convivialité des formulaires et la précision globale des données.
+Le composant **Champ numérique** de l’éditeur de communication interactive est un outil précis et fiable pour la collecte de données numériques. Grâce à une mise en forme robuste, des contrôles de visibilité et des options de liaison de données, il garantit que les entrées numériques sont capturées de manière claire et intégrées de manière transparente dans les formulaires numériques. Lorsqu’elle est stylisée et configurée correctement, elle améliore considérablement la convivialité des formulaires et la précision globale des données.
 
 

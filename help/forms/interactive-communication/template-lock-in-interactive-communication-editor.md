@@ -4,10 +4,10 @@ description: Le verrouillage de modèle dans l’éditeur de communication inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 La fonction Verrouillage de modèle de l’éditeur de communication interactive (IC) permet aux personnes créant des modèles de restreindre les modifications à des éléments spécifiques d’un modèle de communication. Cela permet d’assurer la cohérence de la conception, de protéger le contenu critique et d’appliquer la gouvernance entre les équipes qui réutilisent des modèles pour créer des communications personnalisées.
 
 Lorsqu’ils sont appliqués, les composants verrouillés apparaissent visuellement distincts et ne peuvent pas être modifiés par les auteurs ou les contributeurs en aval, selon le jeu de type de verrouillage. Cette fonctionnalité permet de maintenir les normes de marque, l’intégrité des données et l’uniformité de la mise en page sur toutes les communications dérivées.
+
+![Rechercher document IC](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Types de verrous
 
@@ -56,15 +58,29 @@ Lorsqu’elles sont appliquées, les auteurs ne peuvent pas :
 
 - Redimensionner la largeur ou la hauteur de l’élément
 
-## &#x200B;3. Comportement dans les communications dérivées
+## &#x200B;3. Utilisation du verrouillage de modèle dans l’éditeur de communication interactive
 
-- Lorsqu’une communication est créée à partir d’un modèle verrouillé, les éléments verrouillés apparaissent en lecture seule dans l’éditeur IC pour les auteurs de communications.
+Pour appliquer des verrous de contenu ou de disposition à votre modèle de communication interactive (IC), procédez comme suit :
 
-- Les propriétés internes ou les liaisons des composants avec verrouillage de contenu ne peuvent pas être modifiées.
+1. Ouvrez Votre Modèle
+Ouvrez ou créez un modèle, suivez le guide [Créer un modèle de communication interactive](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Les composants avec verrouillage de disposition ne peuvent pas être déplacés ou redimensionnés.
+1. Sélection du composant
+Cliquez sur le composant (zone de texte, image ou sous-formulaire) que vous souhaitez restreindre.
 
-Cela permet aux créateurs de modèles de garder le contrôle sur la conception et la structure tout en permettant aux autres utilisateurs de se concentrer sur le contenu variable et la personnalisation pilotée par les données.
+1. Options de verrouillage d&#39;accès
+Dans le panneau Propriétés, accédez à la section Verrouillage .
+
+1. Appliquer les verrous
+
+   1. Verrouillage de contenu : empêche les modifications de texte, de style et de données.
+
+   1. Verrouillage de la disposition : limite le mouvement et le redimensionnement.
+
+   1. Vous pouvez activer les deux pour une protection complète.
+
+1. Enregistrer et vérifier
+Enregistrez le modèle et créez un code interactif basé sur celui-ci pour confirmer que les éléments verrouillés ne peuvent pas être modifiés.
 
 ## &#x200B;4. Bonnes Pratiques
 

@@ -4,10 +4,10 @@ description: La gestion du débordement de contenu dans l’éditeur de communic
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 17%
+source-wordcount: '487'
+ht-degree: 11%
 
 ---
 
@@ -25,6 +25,35 @@ ht-degree: 17%
 ## Présentation
 
 La fonctionnalité de gestion du débordement de contenu de l’éditeur de communication interactive améliore le comportement du texte dans les mises en page Distribuées et Positionnées. Il garantit la continuité du contenu pour les mises en page fluides et fournit des alertes visuelles pour les mises en page positionnées, offrant ainsi aux auteurs un meilleur contrôle et une meilleure flexibilité lors de la conception des communications.
+
+![Rechercher document IC](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Utilisation de la gestion des débordements de contenu dans l’éditeur de communication interactive
+
+1. Ouvrez l’éditeur de communication interactive
+Ouvrez votre communication dans l’éditeur d’IC pour commencer à modifier la mise en page et le contenu.
+
+1. Sélectionner le type de mise en page
+Choisissez la disposition souhaitée pour votre sous-formulaire, Distribué ou Positionné en fonction de la façon dont vous souhaitez que le contenu se comporte.
+
+1. Pour Les Mises En Page Fluides
+
+   1. Assurez-vous que la hiérarchie du sous-formulaire parent est définie sur Distribuée.
+
+   1. Dans le panneau Propriétés , activez l’option Autoriser les sauts de page dans le contenu (visible uniquement si l’option « Autoriser les sauts de page » du sous-formulaire parent est activée).
+
+   1. Ajoutez ou collez du texte. Lorsque le contenu dépasse une page, il passe automatiquement à la page suivante.
+
+1. Pour les dispositions positionnées
+
+   1. Ajouter ou modifier du texte dans un conteneur fixe.
+
+   1. Si le contenu dépasse la hauteur du conteneur, une bordure rouge s’affiche en bas pour indiquer un débordement.
+
+   1. Redimensionnez manuellement le conteneur pour tenir compte du contenu supplémentaire.
+
+1. Prévisualiser la communication
+Utilisez l’option Aperçu de PDF pour vérifier comment le contenu s’écoule ou déborde sur les pages pour les deux types de disposition.
 
 ## Fonctionnalités essentielles
 

@@ -4,9 +4,9 @@ description: La prise en charge de l’édition XDP dans l’éditeur de communi
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '433'
 ht-degree: 13%
 
 ---
@@ -25,6 +25,20 @@ ht-degree: 13%
 ## Présentation
 
 L’éditeur de communication interactive (IC) offre désormais une prise en charge transparente **pour la modification des fichiers XDP (XML Data Package)** dans l’environnement de création. Cette amélioration permet aux créateurs et aux créatrices de gérer, modifier et gérer les modèles XDP en toute facilité, sans recourir à des outils externes. Grâce à cette fonctionnalité, les utilisateurs peuvent charger, afficher et modifier des fichiers XDP directement dans l’éditeur IC, ce qui permet d’obtenir un workflow de conception à diffusion unifié et efficace.
+
+## Comment utiliser la prise en charge de l’édition XDP dans l’éditeur de communication interactive
+
+![Rechercher document IC](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Accédez à **Forms > Forms et documents**.
+
+1. Chargez votre fichier .xdp à l’aide de l’option **Créer > Chargement de fichier**.
+
+1. Ouvrez le fichier XDP dans **Éditeur de communication interactive**.
+
+1. Apportez les modifications **de conception ou de liaison de données** nécessaires.
+
+1. Enregistrez vos modifications. Les mises à jour sont automatiquement répercutées dans le fichier XDP source.
 
 ## Fonctionnalités essentielles
 
@@ -46,18 +60,6 @@ Si un fragment est manquant, l’éditeur affiche un **message d’avertissement
 - **Réutilisation de fragment dans l’éditeur :**
 Tous les fragments XDP existants apparaissent dans le **panneau Fragments** de l’éditeur IC.
 Les auteurs peuvent **glisser-déposer** ces fragments directement sur la zone de travail. Les références sont conservées, ce qui garantit que les mises à jour des fragments se propagent sur tous les XDP qui les utilisent.
-
-## Exemple d’utilisation
-
-1. Accédez à **Forms > Forms et documents**.
-
-1. Chargez votre fichier .xdp à l’aide de l’option **Créer > Chargement de fichier**.
-
-1. Ouvrez le fichier XDP dans **Éditeur de communication interactive**.
-
-1. Apportez les modifications **de conception ou de liaison de données** nécessaires.
-
-1. Enregistrez vos modifications. Les mises à jour sont automatiquement répercutées dans le fichier XDP source.
 
 ## Avantages
 
