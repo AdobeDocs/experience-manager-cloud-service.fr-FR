@@ -63,7 +63,7 @@ Lorsqu’elles sont appliquées, les auteurs ne peuvent pas :
 Pour appliquer des verrous de contenu ou de disposition à votre modèle de communication interactive (IC), procédez comme suit :
 
 1. Ouvrez Votre Modèle
-Ouvrez ou créez un modèle, suivez le guide [Créer un modèle de communication interactive](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Ouvrez ou créez un modèle, suivez le guide [Créer un modèle de communication interactive](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Sélection du composant
 Cliquez sur le composant (zone de texte, image ou sous-formulaire) que vous souhaitez restreindre.
