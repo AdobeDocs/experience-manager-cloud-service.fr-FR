@@ -1,18 +1,18 @@
 ---
-title: Réutilisation de contenu – Multi Site Manager et Live Copy
-description: Découvrez comment réutiliser du contenu avec les puissantes fonctionnalités de Live Copies et de Multi Site Manager AEM.
+title: Réutilisation de contenu – Multi-Site Manager et Live Copy
+description: Découvrez comment réutiliser du contenu avec les fonctionnalités de Multi-Site Manager et les puissantes Live Copies d’AEM.
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 93%
+source-wordcount: '2719'
+ht-degree: 91%
 
 ---
 
-# Réutilisation de contenu : Multi Site Manager et Live Copy {#multi-site-manager-and-live-copy}
+# Réutilisation de contenu : Multi-Site Manager et Live Copy {#multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) vous permet d’utiliser le même contenu à plusieurs endroits différents. Pour ce faire, MSM utilise sa fonctionnalité Live Copy.
 
@@ -33,7 +33,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 
 >[!NOTE]
 >
->MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [&#x200B; Réutilisation de fragments de contenu à l’aide de MSM pour Assets &#x200B;](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
+>MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [ Réutilisation de fragments de contenu à l’aide de MSM pour Assets ](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
 
 ## Scénarios possibles {#possible-scenarios}
 
@@ -177,7 +177,7 @@ Le tableau suivant donne une vue d’ensemble des principaux termes utilisés av
 
 >[!TIP]
 >
->Pour connaître les noms d’objet[&#128279;](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voir  Extension de Multi Site Manager .
+>Pour connaître les noms d’objet[ voir ](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) Extension de Multi Site Manager .
 
 ## Live Copies {#live-copies}
 
@@ -203,14 +203,14 @@ Dans l’exemple précédent, `/content/wknd/language-masters/en` est le site ga
 >
 >Les graphiques et les descriptions de cette section représentent des instantanés de Live Copies potentielles. Ils ne sont pas exhaustifs, mais offrent un aperçu mettant en évidence les caractéristiques spécifiques.
 
-Lorsque vous créez initialement une Live Copy, les pages sources sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
+Lorsque vous créez initialement une Live Copy, les pages source sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
 
 * [Live Copy avec des pages autres que Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copies imbriquées](#nested-live-copies)
 
 La forme de base de la Live Copy comprend les éléments suivants :
 
-* Les pages Live Copy qui reflètent les pages sources sélectionnées sur une base 1:1.
+* Pages Live Copy qui reflètent les pages source sélectionnées sur une base :1.
 * Une définition de configuration.
 * Une relation en direct définie pour chaque ressource :
    * Liez la ressource de Live Copy à son plan directeur ou sa source.
@@ -293,7 +293,7 @@ Les configurations de déploiement peuvent être réutilisées, de sorte que plu
 
 ### Conflits de déploiement {#rollout-conflicts}
 
-Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu à la fois dans la source et la Live Copy. Il est donc utile de savoir comment AEM gère les [&#x200B; conflits susceptibles de se produire pendant le déploiement](rollout-conflicts.md).
+Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu à la fois dans la source et la Live Copy. Il est donc utile d’être conscient de la manière dont AEM gère les [ conflits susceptibles de se produire pendant le déploiement](rollout-conflicts.md).
 
 ### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
 

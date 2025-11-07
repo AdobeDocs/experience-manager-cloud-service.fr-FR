@@ -4,7 +4,7 @@ description: Découvrez comment conserver les requêtes GraphQL dans Adobe Expe
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 80%
@@ -301,7 +301,7 @@ Par défaut, AEM invalide le cache en fonction d’une définition de durée de 
 | Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control) | cURL | Configuration OSGi  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | Navigateur | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | Réseau de diffusion de contenu | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | Réseau de diffusion de contenu | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 

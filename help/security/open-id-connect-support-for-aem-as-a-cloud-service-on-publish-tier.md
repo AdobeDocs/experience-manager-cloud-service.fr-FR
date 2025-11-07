@@ -4,7 +4,7 @@ description: Découvrez comment configurer Open ID Connect (OIDC) pour AEM a
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ Vous trouverez ci-dessous certains des attributs les plus pertinents à configur
 | `user.dynamicMembership` | Nous vous recommandons d’activer l’appartenance dynamique à un groupe. | true |
 | `user.enforceDynamicMembership` | Nous vous recommandons d’activer l’application de l’appartenance dynamique à un groupe. | true |
 | `group.dynamicGroups` | Nous vous recommandons d’activer les groupes dynamiques. | true |
-| user.propertyMapping | L’implémentation fournie pour `UserInfoProcessor` synchronise uniquement quelques propriétés. Elle peut être modifiée et personnalisée. | <code>« profile/givenName=profile/given_name »,</code><br><code>« profile/familyName=profile/family_name »,</code><br><code>« rep:fullname=profile/name »,</code><br><code>« profile/email=profile/email »,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>« refresh_token=refresh_token »</code> |  |
+| user.propertyMapping | L’implémentation fournie pour `UserInfoProcessor` synchronise uniquement quelques propriétés. Elle peut être modifiée et personnalisée. | <code>« profile/givenName=profile/given_name »,</code><br><code>« profile/familyName=profile/family_name »,</code><br><code>« rep:fullname=profile/name »,</code><br><code>« profile/email=profile/email »,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>« refresh_token=refresh_token »</code> |
 | `user.membershipNestingDepth` | Renvoie la profondeur maximale de l’imbrication de groupes lorsque les relations d’appartenance sont synchronisées. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur n’a aucun effet sur la synchronisation de groupes individuels, mais uniquement sur la synchronisation d’une ascendance d’abonnement d’utilisateurs et d’utilisatrices. | 1 |
 
 ### Configurer le module de connexion externe {#configure-the-external-login-module}

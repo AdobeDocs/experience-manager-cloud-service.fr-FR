@@ -5,7 +5,7 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -55,10 +55,12 @@ Les différents types de fichiers ont différents degrés de prise en charge pou
 
 ## Recherche, utilisation et modification de ressources {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | Type de ressource | [Télécharger](/help/assets/manage-organize-assets-view.md#download) | Glisser-déplacer | [Éditeur d’image](/help/assets/edit-images-assets-view.md) | [Rechercher](/help/assets/search-assets-view.md) | [Balises intelligentes](/help/assets/metadata-assets-view.md#tags) | [Renommer](/help/assets/manage-organize-assets-view.md) | [Versions](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Images pixellisées | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Fichiers RAW | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Fichiers RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Dossiers | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Vidéos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | Bibliothèques CC | − | − | − | − | − | ✓ | ✓ |

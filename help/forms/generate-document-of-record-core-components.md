@@ -4,7 +4,7 @@ description: Découvrez comment générer un modèle de document d’enregistrem
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 86%
@@ -262,7 +262,7 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
 | Composant de formulaire adaptatif | Composant XFA correspondant | Remarques |
 |---|---|---|
 | Image | Image | Qu’ils soient liés ou non, les composants TextDraw et Image s’affichent toujours dans le document d’enregistrement concernant un formulaire adaptatif basé sur XSD, sauf si cela est exclu dans les paramètres de document d’enregistrement. |
-| Texte | Texte |
+| Texte | Texte |  |
 
 ### Tableaux {#tables}
 

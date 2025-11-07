@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '10063'
 ht-degree: 64%
@@ -131,7 +131,7 @@ La gestion des visionneuses de vidéos adaptatives et uniques prend en charge le
 * Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Diffuser des visionneuses de vidéos adaptatives sur le web et sur les postes de travail, les tablettes et les appareils mobiles.
 
-La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -179,7 +179,7 @@ DASH est la norme internationale et HLS est une norme Apple. Les deux sont utili
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur le système du poste de travail ou de l’appareil mobile de l’utilisateur ou de l’utilisatrice.
 
-Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lecture des vidéos sur les ordinateurs de bureau et les appareils mobiles à l’aide de la [visionneuse de vidéos HTML5 Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -456,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -748,11 +748,11 @@ Vous pouvez modifier les sous-titres (légendes) des ressources vidéo directeme
 1. Sur la page Propriétés , sélectionnez l’onglet **[!UICONTROL Légendes et pistes audio]**.
 1. Sous l’en-tête **Légendes**, cliquez sur ![icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) à droite d’un nom de fichier de légendes.
 
-   ![&#x200B; Icône Modifier le sous-titre sous l’en-tête Légendes &#x200B;](/help/assets/dynamic-media/assets/msma-editcaption.png)
+   ![ Icône Modifier le sous-titre sous l’en-tête Légendes ](/help/assets/dynamic-media/assets/msma-editcaption.png)
 
 1. Dans la boîte de dialogue **Modifier le sous-titre**, modifiez le texte du fichier WebVTT selon les besoins.
 
-   ![&#x200B; Boîte de dialogue Modifier le sous-titre &#x200B;](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+   ![ Boîte de dialogue Modifier le sous-titre ](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
@@ -1535,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

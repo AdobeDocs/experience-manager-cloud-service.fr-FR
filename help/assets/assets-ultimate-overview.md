@@ -4,8 +4,8 @@ description: Découvrez les aspects clés d’Assets Ultimate, tels que les ava
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
@@ -91,13 +91,13 @@ Le tableau suivant récapitule les types d’utilisateurs et d’utilisatrices A
 
 | Rôle utilisateur | Utilisateurs et utilisatrices limités | Utilisateurs collaborateurs et utilisatrices collaboratrices | Utilisateurs et utilisatrices experts | Administrateurs et administratrices |
 |---------------|----------|----------|-------------------------|---|
-| **Fonctionnalités** |
+| **Fonctionnalités** |  |  |  |  |
 | Accéder aux ressources approuvées par la marque sur le portail Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Créer et modifier des ressources à l’aide d’Adobe Express et de Firefly intégrés | − | ✓ | ✓ | ✓ |
 | Intégrer des ressources au sein de l’organisation avec des applications Adobe et autres qu’Adobe | − | ✓ | ✓ | ✓ |
 | Accéder à toutes les fonctionnalités AEM Assets, telles que la gestion des ressources, des métadonnées et de la gouvernance globale et de l’automatisation | − | − | ✓ | ✓ |
 | Gérer des autorisations sur le contenu dans l’environnement de création AEM Assets | − | − | − | ✓ |
-| **L’utilisateur ou l’utilisatrice doit se trouver dans ces profils de produit (Admin Console)** |
+| **L’utilisateur ou l’utilisatrice doit se trouver dans ces profils de produit (Admin Console)** |  |  |  |  |
 | AEM > Instance de diffusion > Utilisateurs et utilisatrices limités dans AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instance de création de production > Utilisateurs collaborateurs et utilisatrices collaboratrices AEM Assets | − | ✓ | − | − |
 | AEM > Instance de création de production > Utilisateurs et utilisatrices experts AEM Assets | − | − | ✓ | − |

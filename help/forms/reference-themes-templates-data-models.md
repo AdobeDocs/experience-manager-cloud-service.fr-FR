@@ -1,10 +1,10 @@
 ---
-title: Comment obtenir des thèmes et des modèles de référence pour les formulaires AEM ?
+title: Comment obtenir des thèmes et modèles de référence pour AEM forms ?
 description: AEM Forms fournit des exemples de thèmes de formulaires adaptatifs, de modèles et de modèles de données de formulaire pour vous aider à créer rapidement des formulaires.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 79%
@@ -16,20 +16,20 @@ ht-degree: 79%
 
 | Application | Lien de l’article |
 | -------- | ---------------------------- |
-| Formulaire adaptatif basé sur les composants principaux | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) |
+| Formulaire adaptatif basé sur les composants principaux | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) |
 | Formulaire adaptatif basé sur les composants de base | Cet article |
 
 >[!NOTE]
 >
 > Adobe recommande d’utiliser la capture de données moderne et extensible [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [créer un nouveau Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [ajouter un Forms adaptatif aux pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une ancienne approche de création de Forms adaptatif à l’aide de composants de base.
 
-AEM Forms as a Cloud Service fournit plusieurs thèmes de référence, modèles et modèle de données de formulaire (FDM) pour vous aider à commencer rapidement la création de Forms adaptatif. Vous pouvez télécharger le [package de contenu de référence du portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) et utiliser la fonction [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) dans votre environnement de production, de développement ou de développement local pour envoyer ces ressources de référence à votre environnement.
+AEM Forms as a Cloud Service fournit plusieurs thèmes de référence, modèles et modèle de données de formulaire (FDM) pour vous aider à commencer rapidement la création de Forms adaptatif. Vous pouvez télécharger le [module de contenu de référence du portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) et utiliser la fonction [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer le [module de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) dans votre environnement de production, de développement ou de développement local pour envoyer ces ressources de référence à votre environnement.
 
 Les thèmes, modèles et modèle de données de formulaire (FDM) inclus dans le package de contenu de référence sont les suivants :
 
 
 | Thèmes | Modèles | Modèle de données de formulaire (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | De base | Microsoft Dynamics 365 |
 | Tranquil | Vide | Salesforce |
 | Urbane |   |  |
@@ -40,7 +40,7 @@ Les thèmes, modèles et modèle de données de formulaire (FDM) inclus dans le 
 
 ## Thèmes de référence {#reference-themes}
 
-Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Vous pouvez obtenir les thèmes suivants en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
+Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Vous pouvez obtenir les thèmes suivants en installant le [module de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * Beryl
 * Canvas 3.0
@@ -107,7 +107,7 @@ Le thème FSI donne un aspect minimaliste et fonctionnel à votre formulaire. Lo
 ## Modèles de référence {#reference-templates}
 
 
-Les [modèles](/help/forms/themes.md) vous permettent de définir la structure, le contenu et les actions de votre formulaire initial. Vous pouvez obtenir les modèles suivants en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
+Les [modèles](/help/forms/themes.md) vous permettent de définir la structure, le contenu et les actions de votre formulaire initial. Vous pouvez obtenir les modèles suivants en installant le [module de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * De base
 * Vide

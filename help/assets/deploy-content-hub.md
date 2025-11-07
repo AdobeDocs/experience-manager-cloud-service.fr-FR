@@ -3,7 +3,7 @@ title: Déployer [!DNL Content Hub]
 description: Découvrez comment déployer et activer Content Hub et accorder l’accès à des personnes disposant de différents types de privilèges (chargement de ressources, utilisateurs et utilisatrices d’Adobe Express) et comment accorder des privilèges d’administration aux utilisateurs et utilisatrices.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 8%
@@ -24,26 +24,26 @@ Regardez cette vidéo pour savoir comment activer Content Hub pour Experience Ma
 
 Les variantes des privilèges sur Content Hub incluent :
 
-* [Utilisateurs de Content Hub &#x200B;](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub ](#onboard-content-hub-users) : accédez aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Administrateurs Content Hub &#x200B;](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
+* [Administrateurs Content Hub ](#onboard-content-hub-administrator) : accès à l’[interface utilisateur de configuration](/help/assets/configure-content-hub-ui-options.md) sur Content Hub, en plus d’accéder aux ressources approuvées par la marque, de charger des ressources vers Content Hub et d’intégrer Adobe Express pour modifier les images (si vous disposez de droits Adobe Express).
 
-* [Utilisateurs de Content Hub avec des droits d’ajout de ressources &#x200B;](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Utilisateurs de Content Hub avec des droits d’ajout de ressources ](#onboard-content-hub-users-add-assets) : possibilité de [charger des ressources vers Content Hub](/help/assets/upload-brand-approved-assets.md) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes &#x200B;](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
+* [Les utilisateurs de Content Hub disposant de droits pour remixer les ressources dans de nouvelles variantes ](#onboard-content-hub-users-remix-assets) : [Intégration d’Adobe Express](/help/assets/edit-images-content-hub.md) (si vous disposez de droits Adobe Express) en plus d’accéder aux ressources approuvées par la marque sur le portail Content Hub.
 
-* [Utilisateurs Experience Manager Assets &#x200B;](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
+* [Utilisateurs Experience Manager Assets ](#experience-manager-assets-users) : possibilité d’approuver des ressources sur Experience Manager Assets as a Cloud Service pour les rendre disponibles sur Content Hub.
 
 Le tableau suivant résume les types d’utilisateurs Content Hub disponibles, les privilèges dont ils disposent et les profils de produit requis pour obtenir ces privilèges :
 
 | Rôle utilisateur | Utilisateurs de Content Hub | Utilisateurs de Content Hub autorisés à ajouter des ressources | Utilisateurs de Content Hub autorisés à remixer des ressources | Administrateurs Content Hub |
 |---------------|----------|----------|-------------------------|---|
-| **Fonctionnalités** |
+| **Fonctionnalités** |  |  |  |  |
 | Accéder aux ressources approuvées par la marque sur le portail Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Chargement de ressources à partir du portail Content Hub | − | ✓ | ✓ | ✓ |
 | Utilisation de l’intégration Adobe Express pour modifier les images | − | − | ✓ | − |
 | Accès à l’interface utilisateur de configuration de Content Hub | − | − | − | ✓ |
-| **L’utilisateur ou l’utilisatrice doit se trouver dans ces profils de produit (Admin Console)** |
+| **L’utilisateur ou l’utilisatrice doit se trouver dans ces profils de produit (Admin Console)** |  |  |  |  |
 | AEM > Instance de diffusion > Utilisateurs et utilisatrices limités dans AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instance de création de production > Utilisateurs AEM | − | ✓ | ✓ | − |
 | AEM > Instance de création de production > Administration AEM | − | − | − | ✓ |
@@ -123,7 +123,7 @@ Pour activer Content Hub pour les environnements inférieurs :
 
 Après [activation de Content Hub pour Assets as a Cloud Service à l’aide de Cloud Manager](#enable-content-hub), une nouvelle instance est créée dans AEM Assets as a Cloud Service sur Admin Console avec `delivery` comme suffixe :
 
-![Nouvelle instance pour Content Hub &#x200B;](assets/new-instance-content-hub.png)
+![Nouvelle instance pour Content Hub ](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >

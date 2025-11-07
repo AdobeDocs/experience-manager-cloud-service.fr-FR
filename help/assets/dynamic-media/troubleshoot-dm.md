@@ -1,14 +1,14 @@
 ---
-title: Dépannage de Dynamic Media
+title: 'Dépannage de Dynamic Media '
 description: Découvrez les conseils de dépannage que vous pouvez essayer lorsque vous utilisez des images, des visionneuses et des visionneuses dans Dynamic Media.
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 98%
+source-wordcount: '1144'
+ht-degree: 95%
 
 ---
 
@@ -30,14 +30,14 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 | **Propriété** | **Exemple** | **Description** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicateur général indiquant que le nœud est lié à Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Indicateur général indiquant que le nœud est lié à Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** ou texte d’erreur | Statut du téléchargement de la ressource vers Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Doit être renseigné pour générer des URL vers la ressource distante de Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **succès** ou **échec :`<error text>`** | Statut de synchronisation des visionneuses (visionneuses à 360°, visionneuses d’images, etc.), des paramètres prédéfinis d’image, des paramètres prédéfinis de visionneuse, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **succès** ou **échec :`<error text>`** | Statut de synchronisation des visionneuses (visionneuses à 360°, ensembles d’images, etc.), des paramètres d’image prédéfinis, des paramètres de visionneuse prédéfinis, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
 
 ### Gestion de version {#version-control}
 
@@ -213,7 +213,7 @@ Si les exemples de ressources ou l’illustration du paramètre prédéfini de l
 
 1. Accédez à CRXDE Lite.
 1. Supprimez `<sync-folder>/_CSS/_OOTB`.
-1. Accédez au gestionnaire de packages CRX : `https://localhost:4502/crx/packmgr/`.
+1. Accédez au gestionnaire de modules CRX : `https://localhost:4502/crx/packmgr/`.
 1. Recherchez le package de visionneuse dans la liste ; il commence par `cq-dam-scene7-viewers-content`.
 1. Sélectionnez **Réinstaller**.
 1. Sous Services cloud, accédez à la page Configuration de Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.

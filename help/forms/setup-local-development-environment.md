@@ -4,7 +4,7 @@ description: Configuration d’un environnement de développement local pour Ado
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2759'
 ht-degree: 89%
@@ -13,7 +13,7 @@ ht-degree: 89%
 
 # Configuration d’un environnement de développement local pour AEM Forms {#overview}
 
-Lorsque vous définissez et configurez un environnement [!DNL &#x200B; Adobe Experience Manager Forms] as a [!DNL &#x200B; Cloud Service], vous configurez des environnements de développement, d’évaluation et de production sur le cloud. Vous pouvez en outre également définir et configurer un environnement de développement local.
+Lorsque vous définissez et configurez un environnement [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service], vous configurez des environnements de développement, d’évaluation et de production sur le cloud. Vous pouvez en outre également définir et configurer un environnement de développement local.
 
 Vous pouvez utiliser l’environnement de développement local pour effectuer les actions suivantes sans vous connecter à l’environnement de développement cloud :
 
@@ -21,7 +21,7 @@ Vous pouvez utiliser l’environnement de développement local pour effectuer le
 * [Convertissez des formulaires PDF en formulaires adaptatifs.](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=fr)
 * Créez des applications pour générer des [communications client](aem-forms-cloud-service-communications-introduction.md) à la demande ou en mode batch.
 
-Une fois qu’un formulaire adaptatif ou les ressources associées sont prêts sur l’instance de développement locale ou qu’une application pour générer des [communications client] est prête, vous pouvez exporter l’application de formulaire adaptatif ou de communications client de l’environnement de développement local vers un environnement de Cloud Service pour effectuer d’autres tests ou passer aux environnements de production.
+Une fois qu’un formulaire adaptatif ou les ressources associées sont prêts sur l’instance de développement locale ou qu’une application pour générer des [communications clients] est prête, vous pouvez exporter l’application de formulaire adaptatif ou de communications clients de l’environnement de développement local vers un environnement Cloud Service pour effectuer d’autres tests ou passer aux environnements de production.
 
 Vous pouvez également développer et tester du code personnalisé (composants personnalisés, par exemple) et le service de préremplissage sur l’environnement de développement local. Lorsque le code personnalisé est testé et prêt, vous pouvez utiliser le référentiel Git de votre environnement de développement Cloud Service pour le déployer.
 
@@ -63,7 +63,7 @@ Use a local development environment:
 
 You can use the local development environment to create and test Adaptive Forms without connecting to the service. Adobe provides a SDK for the local development to help test all the cloud-ready functionalities. When your forms and related assets are ready and tested on the local development environment, you can import these forms and related assets to an [!DNL AEM Forms] as a Cloud Service instance for publishing. 
 
-You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html?lang=fr) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
+You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
 
 -->
 
@@ -73,7 +73,7 @@ Pour configurer un environnement de développement local, vous avez besoin des l
 
 | Logiciels | Description | Liens de téléchargement |
 |---|---|---|
-| SDK Adobe Experience Manager as a Cloud Service | Le SDK comprend les outils [!DNL Adobe Experience Manager] QuickStart et Dispatcher | Téléchargez le dernier SDK à partir de la [distribution logicielle](#software-distribution) |  |
+| SDK Adobe Experience Manager as a Cloud Service | Le SDK comprend les outils [!DNL Adobe Experience Manager] QuickStart et Dispatcher | Téléchargez le dernier SDK à partir de la [distribution logicielle](#software-distribution) |
 | Archivage des fonctionnalités Adobe Experience Manager Forms (module complémentaire AEM Forms) | Outils de création, de mise en forme et d’optimisation des formulaires adaptatifs et autres fonctionnalités Adobe Experience Manager Forms | Téléchargement depuis la [distribution logicielle](#software-distribution) |
 | (Facultatif) Contenu de référence Adobe Experience Manager Forms | Outils de création, de mise en forme et d’optimisation des formulaires adaptatifs et autres fonctionnalités Adobe Experience Manager Forms | Téléchargement depuis la [distribution logicielle](#software-distribution) |
 | (Facultatif) Adobe Experience Manager Forms Designer | Outils de création, de mise en forme et d’optimisation des formulaires adaptatifs et autres fonctionnalités Adobe Experience Manager Forms | Téléchargement depuis la [distribution logicielle](#software-distribution) |
@@ -120,7 +120,7 @@ Bien que QuickStart fournisse un environnement de développement local, il ne di
 Pour installer et configurer l’environnement Experience Manager local, procédez comme suit :
 
 * [Téléchargez et extrayez](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) le SDK [!DNL Adobe Experience Manager] as a Cloud Service.
-* [Configurez une instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#set-up-local-aem-author-service).
+* [Configurez une instance de création](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#set-up-local-aem-author-service).
 * [Configurez une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#set-up-local-aem-publish-service).
 
 ## Ajout de l’archive Forms aux instances locales d’auteur et de publication et configurations des utilisateurs spécifiques à Forms {#add-forms-archive-configure-users}
@@ -167,7 +167,7 @@ Créez des utilisateurs comme Développeur de formulaires et Professionnel de fo
 
 Perform the following steps in the listed order to set up and configure your local development environment:
 
-1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr).  
+1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html).  
 
 1. **Install the latest [!DNL AEM Forms] add-on feature archive:** [!DNL AEM Forms] add-on feature archive provides tools to create, style, and optimize Adaptive Forms on the local development environment. Install the package to create an Adaptive Form and use various other features of [!DNL AEM Forms]. To install the package:
 
@@ -192,11 +192,11 @@ Perform the following steps in the listed order to set up and configure your loc
 
 Use this project to update configurations, create overlays, develop custom Adaptive Form components, and custom code using the local development environment. To set up the project:
 
-1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=fr).
+1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html).
 
-1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
+1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
 
-1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr#set-up-an-integrated-development-environment) for detailed instructions.
+1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) for detailed instructions.
  -->
 
 ## Configuration de l’environnement de développement local pour le document d’enregistrement {#docker-microservices}
@@ -213,7 +213,7 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
 
    >[!NOTE]
    >
-   > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances d’auteur AEM locales.
+   > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances de création AEM locales.
    >
    > * Docker Desktop pour Windows prend en charge deux back-ends, Hyper-V
    > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
@@ -232,7 +232,7 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
 
 1. Ouvrez une invite de commandes et accédez au dossier `aem-forms-addon-native-<version>`.
 
-1. Assurez-vous que votre instance d’auteur AEM locale est en cours d’exécution. Exécutez les commandes suivantes pour démarrer le SDK :
+1. Assurez-vous que votre instance de création AEM locale est en cours d’exécution. Exécutez les commandes suivantes pour démarrer le SDK :
 
    * Sous Microsoft® Windows
 
@@ -262,7 +262,7 @@ Vous pouvez maintenant utiliser l’environnement de développement local pour g
 Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises à jour de configuration et des superpositions, créer des composants de formulaire adaptatif personnalisés, effectuer des tests et créer du code personnalisé sur le SDK [!DNL Experience Manager Forms] local. Après avoir effectué des tests localement, vous pouvez déployer le projet sur les environnements [!DNL Experience Manager Forms] as a Cloud Service de production et hors production. Lorsque vous déployez le projet, les ressources AEM Forms suivantes sont également déployées :
 
 | Thèmes | Modèles | Modèle de données de formulaire (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | De base | Microsoft® Dynamics 365 |
 | Tranquil | Vide | Salesforce |
 | Urbane |   |  |
@@ -272,16 +272,16 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 >[!NOTE]
 >
 > Configurez un projet basé sur l’archétype AEM version 30 ou ultérieure pour obtenir et utiliser Microsoft® Dynamics 365 et le modèle de données de formulaire (FDM) Salesforce avec AEM Forms as a Cloud Service.
-> &#x200B;> Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
+> Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
 
 Pour configurer le projet :
 
 1. **Clonez le référentiel Git Cloud Manager sur votre instance de développement locale** : votre référentiel Git Cloud Manager contient un projet AEM par défaut. Il est basé sur l’[archétype AEM](https://github.com/adobe/aem-project-archetype/). Clonez votre référentiel Git Cloud Manager à l’aide de la gestion de compte Git en libre-service depuis l’interface utilisateur de Cloud Manager pour intégrer le projet à votre environnement de développement local. Pour plus d’informations sur l’accès au référentiel, consultez [Accès aux référentiels](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=fr).
 
 <!-- 1. 
-After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr)
+After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
 
-**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
+**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
 1. **Créez un projet [!DNL Experience Manager Forms] as a [Cloud Service] :** créez un projet [!DNL Experience Manager Forms] as a [Cloud Service] basé sur le dernier [archétype AEM](https://github.com/adobe/aem-project-archetype). L’archétype permet aux développeurs de commencer facilement le développement pour [!DNL AEM Forms] as a Cloud Service. Il comprend également des exemples de thème et de modèle pour vous aider à démarrer rapidement.
 
@@ -380,7 +380,7 @@ La mise à niveau du SDK vers une nouvelle version nécessite le remplacement de
 
 La mise à niveau du SDK crée de manière efficace une toute nouvelle instance d’auteur et de publication, y compris un nouveau référentiel ([Configuration d’un projet AEM](#forms-cloud-service-local-development-environment)), ce qui signifie que toutes les modifications apportées au référentiel d’un SDK précédent sont perdues. Pour obtenir des stratégies viables afin de conserver le contenu entre les mises à niveau du SDK, voir [Comment éviter la perte de contenu lors de la mise à niveau du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#optional-local-aem-runtime-set-up-tasks)
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/32993?quality=9&captions=fre_fr).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
 
 ## Upgrade your local development environment {#update-local-setup}
 
@@ -398,7 +398,7 @@ Upgrading the AEM SDK is effectively creating a brand new AEM runtime ([Set up a
 
 Remember, using the above approaches to maintain code between AEM SDK upgrades, indicates a development anti-pattern. Non-disposable code should originate in your Development IDE and flow into AEM SDK via deployments.
 
-For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#local-development-environment-set-up).-->
+For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#local-development-environment-set-up).-->
 
 ### Sauvegarde et importation de contenu spécifique à Forms dans un nouvel environnement de SDK {#backup-and-import-Forms-specific-content-to-new-SDK-environment}
 
@@ -415,7 +415,7 @@ Pour sauvegarder et déplacer des ressources du SDK existant vers un nouvel envi
 Sauvegardez votre Forms adaptative, les modèles, le modèle de données de formulaire (FDM), le thème, les configurations et le code personnalisé. Vous pouvez exécuter l’action suivante pour créer une sauvegarde :
 
 1. [Téléchargez](import-export-forms-templates.md#manage-forms-and-related-assets) les formulaires adaptatifs, les thèmes et les formulaires PDF.
-1. Exportez les modèles de formulaire adaptatif.
+1. Exportez les modèles de formulaires adaptatifs.
 
 1. Téléchargez les modèles de données de formulaire.
 
@@ -437,7 +437,7 @@ Sauvegardez votre Forms adaptative, les modèles, le modèle de données de form
 Importez les formulaires adaptatifs, les modèles, le modèle de données de formulaire, le thème, les configurations et le code personnalisé dans votre nouvel environnement. Vous pouvez effectuer l’action suivante pour importer la sauvegarde :
 
 1. [Importez](import-export-forms-templates.md#manage-forms-and-related-assets) les formulaires adaptatifs, les thèmes et les formulaires PDF dans de nouveaux environnements de SDK.
-1. Importez les modèles de formulaire adaptatif dans un nouvel environnement de SDK.
+1. Importez les modèles de formulaires adaptatifs dans un nouvel environnement de SDK.
 
 1. Chargez les modèles de données de formulaire dans un nouvel environnement SDK.
 

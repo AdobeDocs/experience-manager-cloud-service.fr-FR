@@ -4,7 +4,7 @@ description: Utilisation du plug-in de module de contenu Maven pour déployer de
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 88%
@@ -97,7 +97,7 @@ Les paramètres contenus dans le tableau ci-après sont communs à tous les obje
 | `failOnError` | `boolean` | Non | `false` | La valeur `true` entraîne l’échec de la compilation lorsqu’une erreur se produit. La valeur `false` entraîne la création à ignorer l’erreur. | Tous les objectifs, à l’exception de `package` |
 | `name` | `String` | `build` : Oui, `install` : Non, `rm` : Oui | `build` : Pas de valeur par défaut, `install` : Valeur de la propriété `artifactId` du projet Maven | Nom du package sur lequel exécuter une action | Tous les objectifs, à l’exception de `ls` |
 | `password` | `String` | Oui | `admin` | Mot de passe utilisé pour l’authentification avec AEM | Tous les objectifs, à l’exception de `package` |
-| `serverId` | `String` | Non | ID du serveur à partir duquel récupérer le nom d’utilisateur et le mot de passe pour l’authentification | Tous les objectifs, à l’exception de `package` |
+| `serverId` | `String` | Non | ID du serveur à partir duquel récupérer le nom d’utilisateur et le mot de passe pour l’authentification | Tous les objectifs, à l’exception de `package` |  |
 | `targetURL` | `String` | Oui | `http://localhost:4502/crx/packmgr/service.jsp` | URL de l’API du service HTTP du gestionnaire de modules AEM | Tous les objectifs, à l’exception de `package` |
 | `timeout` | `int` | Non | `5` | Délai de connexion, exprimé en secondes, pour communiquer avec le service du gestionnaire de modules | Tous les objectifs, à l’exception de `package` |
 | `useProxy` | `boolean` | Non | `true` | La valeur `true` entraîne l’utilisation par Maven de la première configuration de proxy active trouvée en réponse aux requêtes de proxy au gestionnaire de modules. | Tous les objectifs, à l’exception de `package` |

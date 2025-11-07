@@ -4,7 +4,7 @@ description: Assurez-vous que votre code et contenu sont prêts pour la migratio
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 96%
@@ -61,7 +61,7 @@ Il permet de spécifier le sous-ensemble de contenu que vous souhaitez transfér
 
 Le processus de migration de contenu consiste en plusieurs étapes, qui demandent une planification, un suivi et une collaboration entre les différentes équipes.
 
-Pour plus d’informations sur le fonctionnement de l’outil et sur la façon dont Adobe vous recommande de l’utiliser, consultez la [documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Pour obtenir une description complète du fonctionnement de l’outil et de la manière dont Adobe vous recommande de l’utiliser, consultez la [documentation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refactorisation du code {#code-refactor}
 
@@ -73,11 +73,11 @@ Tout d’abord, consultez la documentation détaillant les outils de base et com
 
 
 * Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d’être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
-* Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=fr#what-is-a-configuration) dans AEM as a Cloud Service.
+* Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) dans AEM as a Cloud Service.
 * Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 * Pour terminer, familiarisez-vous avec lʼ[API Java AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-Vous pouvez également :
+Vous pouvez également effectuer les opérations suivantes :
 
 * Regardez cette vidéo pour comprendre comment installer le SDK Dispatcher localement :
 
@@ -85,7 +85,7 @@ Vous pouvez également :
 
 * Regardez cette vidéo pour comprendre comment configurer le SDK Dispatcher :
 
-  >[!VIDEO](https://video.tv.adobe.com/v/33557?captions=fre_fr)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Un changement d’état d’esprit {#a-change-in-mindset}
 
@@ -106,15 +106,15 @@ Adobe propose plusieurs outils pour accélérer certaines de vos tâches de refo
 
 * [Migration des processus de ressources](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), un outil qui permet de migrer automatiquement les processus de traitement des ressources
 * [Convertisseur du Dispatcher](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), un outil qui convertit vos configurations de Dispatcher existantes dans un format prêt pour AEM as a Cloud Service.
-* [Référentiel Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=fr), un outil qui prend un projet AEM Multimode en entrée et le convertit en un projet AEM as a Cloud Service.
-* [Convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=fr), un outil qui convertit les index en une forme compatible avec AEM as a Cloud Service
+* [Référentiel Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), un outil qui prend un projet AEM Multimode en entrée et le convertit en un projet AEM as a Cloud Service.
+* [Convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), un outil qui convertit les index en une forme compatible avec AEM as a Cloud Service
 * Les [outils de modernisation](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) une suite d’utilitaires qui peuvent être utilisés pour convertir les anciennes fonctionnalités d’AEM en fonctionnalités modernes et prises en charge par AEM as a Cloud Service.
 
 Une fois que vous avez configuré l’environnement de développement local, familiarisez-vous avec le SDK AEM as a Cloud Service en consultant la [documentation](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
 ### Planifier un gel de code {#schedule-a-code-freeze}
 
-Pour gérer le développement continu de votre code sur votre AEM active, ainsi que les tâches de refactorisation du code dans le cadre de votre parcours de transition, Adobe vous recommande de planifier une période de gel du code jusqu’à ce que vous ayez terminé la restructuration de votre projet Maven afin qu’il soit compatible avec AEM as a Cloud Service.
+Pour gérer le développement de code en cours sur votre AEM actif, ainsi que les tâches de refactorisation du code dans le cadre de votre parcours de transition, Adobe vous recommande de planifier une période de gel du code jusqu’à la fin de la restructuration de votre projet Maven pour assurer la compatibilité avec AEM as a Cloud Service.
 
 Une fois la restructuration du projet terminée, vous pouvez reprendre le développement de nouveau code à l’aide de cette nouvelle structure. Les défaillances du pipeline de Cloud Manager seront ainsi réduites au cours du déploiement et du test du code.
 
@@ -132,7 +132,7 @@ Suivez les bonnes pratiques des documents ci-dessous concernant les tests de qua
 
 ## Préparation à l’activation {#preparing-for-go-live}
 
-La préparation du système source pour la migration implique des tâches au niveau du système et de l’administrateur AEM. Vous pouvez commencer par vérifier que le référentiel de contenu est bien entretenu en contrôlant le [nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et l’état de la tâche de [nettoyage de la mémoire d’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=fr). Si vous exécutez la version 6.3 d’AEM (car l’outil de transfert de contenu est compatible à partir de la version 6.3), il est recommandé d’effectuer un compactage hors ligne, suivi du nettoyage de la mémoire d’entrepôt de données.
+La préparation du système source pour la migration implique des tâches au niveau du système et de l’administrateur AEM. Vous pouvez commencer par vérifier que le référentiel de contenu est bien entretenu en contrôlant le [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et l’état de la tâche de [récupération de l’espace mémoire du magasin de données](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=fr). Si vous exécutez la version 6.3 d’AEM (car l’outil de transfert de contenu est compatible à partir de la version 6.3), il est recommandé d’effectuer un compactage hors ligne, suivi de la récupération de l’espace mémoire du magasin de données.
 
 La [vérification de la cohérence des données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=fr) est recommandée pour toutes les versions d’AEM afin de s’assurer que le référentiel de contenu est en bon état pour lancer des activités de migration.
 
@@ -155,7 +155,7 @@ Une fois que l’accès à un [clone de production](#proof-of-migration) est ét
 >[!NOTE]
 > La section [Stratégie et chronologie de migration du contenu](#content-strategy-and-timeline) explique en détail comment extrapoler les données collectées et créer un plan de migration.
 
-La collecte de données peut vous aider à planifier les activités de migration et les tâches associées. Les temps d’extraction et d’ingestion sont particulièrement utiles car les points de données peuvent être associés à une taille spécifique du jeu de migration. Par conséquent, ces points de données peuvent être extrapolés pour établir une formule :
+La collecte de données peut vous aider à planifier les activités de migration et les tâches associées. Les temps d’extraction et d’ingestion sont particulièrement utiles car les points de données peuvent être associés à une taille spécifique de l’ensemble de migration. Par conséquent, ces points de données peuvent être extrapolés pour établir une formule :
 
 * Durée totale de l’[extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * Durée totale de l’[ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -182,7 +182,7 @@ Le tableau suivant illustre un plan de migration type :
 | PRDCLONE-AUTEUR-INITIAL-USRMAP-CSSTAGE-AUTEUR |   |   |   |   |   |
 | PRDCLONE-PUBLICATION-COMPLEMENT-CSSTAGE-AUTEUR |   |   |   |   |   |
 
-Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l’environnement AEM source, **AUTEUR/PUBLICATION** pour l’environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
+Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de nommage spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l’environnement AEM source, **AUTHOR/PUBLISH** pour l’environnement AEM as a Cloud Service, **CSSTAGE-AUTHOR** pour l’instance AEM as a Cloud Service, etc.
 
 Voici quelques détails importants qui influencent votre plan de migration :
 
@@ -193,9 +193,9 @@ Voici quelques détails importants qui influencent votre plan de migration :
 
 **Nombre total des ingestions requises**
 
-* Il est important de saisir cet élément dans le plan, car un ensemble extrait peut être ingéré dans plusieurs environnements de Cloud Service.
+* Il est important de saisir cet élément dans le plan, car un ensemble extrait peut être ingéré dans plusieurs environnements Cloud Service.
 * Nombre d’ingestions de complément.
-* La migration du contenu de l’auteur source vers l’instance de l’auteur du service cloud et de la publication source vers la publication Cloud Service est la bonne pratique pour éviter d’ingérer tout le contenu de l’auteur dans la publication Cloud Service.
+* La migration du contenu de l’auteur source vers l’instance de création du service cloud et de la publication source vers la publication Cloud Service est la bonne pratique pour éviter d’ingérer tout le contenu de l’auteur dans la publication Cloud Service.
 
 ### Suivi de la migration {#migration-tracker}
 
@@ -209,7 +209,7 @@ L’outil de suivi vous aidera également à :
 
 Le tableau suivant illustre un suivi de migration fonctionnel :
 
-| Source (Environnement / Instance / URL) | Destination (Environnement / Instance / URL) | Nom du jeu de migration, type (initial ou complément) | Taille du jeu de migration (Mo) | Mappage utilisateur (Oui/Non) | Durée de l’extraction (Début, Fin, Temps pris) | Durée d’ingestion (Début, Fin, Temps pris) | Problèmes / Résolutions / Détails |
+| Source (Environnement / Instance / URL) | Destination (Environnement / Instance / URL) | Nom de l’ensemble de migration, type (initial ou complément) | Taille de l’ensemble de migration (Mo) | Mappage utilisateur (Oui/Non) | Durée de l’extraction (Début, Fin, Temps pris) | Durée d’ingestion (Début, Fin, Temps pris) | Problèmes / Résolutions / Détails |
 |---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |
 
@@ -217,7 +217,7 @@ Le tableau suivant illustre un suivi de migration fonctionnel :
 
 La section suivante présente les étapes importantes et les tâches associées qui peuvent être utilisées pour formuler une stratégie et un calendrier de migration de contenu.
 
-![Étapes pour formuler une stratégie de migration](/help/journey-migration/assets/content-migration2.png)
+![Étapes de formulation d’une stratégie de migration](/help/journey-migration/assets/content-migration2.png)
 
 ### Adaptation {#fitment}
 

@@ -2,9 +2,9 @@
 title: Publication rapide vers  [!DNL AEM and Dynamic Media]
 description: La fonction Publication rapide dans vous  [!DNL Assets view]  de publier des ressources simultanément ou  [!DNL AEM and Dynamic Media] . Vous pouvez sélectionner des ressources et des dossiers et choisir de publier vers  [!DNL Dynamic Media]  ou  [!DNL AEM].
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-feature: Publishing, [!DNL Dynamic Media]
+feature: Publishing
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Vous pouvez publier des ressources dans [!DNL AEM and Dynamic Media] lors du cha
 * **[!UICONTROL Immédiat] :** lorsque des ressources sont chargées dans ce dossier, le système les ingère dans Experience Manager et fournit instantanément l’URL/le code intégré.
 * **[!UICONTROL Publication sélective] :** les Assets sont publiées selon votre choix [!DNL Experience Manager] ou à [!DNL Dynamic Media] pour diffusion dans le domaine public.
 
-### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
+### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL Lors de l’activation] {#dynamic-media-publish-mode-set-to-upon-activation}
 
 Pour publier des ressources lors de leur chargement dans un dossier dont le [!DNL Dynamic Media Publish Mode] est défini sur **[!UICONTROL Lors de l’activation]** :
 
@@ -63,7 +63,7 @@ Pour publier des ressources lors de leur chargement dans un dossier dont le [!UI
 
    Pour afficher le statut de publication mis à jour de ces ressources, voir [Vérification du statut de publication](#check-publish-status).
 
-### [!UICONTROL &#x200B; Mode de publication Dynamic Media &#x200B;] défini sur [!UICONTROL &#x200B; Publication sélective &#x200B;] {#dynamic-media-publish-mode-set-to-selective-publish}
+### [!UICONTROL  Mode de publication Dynamic Media ] défini sur [!UICONTROL  Publication sélective ] {#dynamic-media-publish-mode-set-to-selective-publish}
 
 Pour publier des ressources lors du chargement dans un dossier avec le [!UICONTROL mode de publication Dynamic Media] défini sur **[!UICONTROL Publication sélective]** :
 
