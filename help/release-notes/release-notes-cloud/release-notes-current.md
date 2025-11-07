@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/r
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440922?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -50,7 +50,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 * [Lancements pour les fragments de contenu](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) : les auteurs de contenu peuvent désormais créer et planifier des variations futures de contenu structuré à l’aide de lancements pour les fragments de contenu. La nouvelle console Fragments de contenu permet de créer, de modifier, de gérer et de planifier les lancements de fragments de contenu sous la forme de branches pour le contenu futur qui peut être synchronisé avec la branche source. Une nouvelle vue Diff offre une vue d’ensemble claire de toutes les modifications de contenu avant de valider un lancement pour une publication ultérieure.
 
-* L’[&#x200B; Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
+* L’[ Éditeur de modèle de contenu pour les fragments de contenu AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) a été modernisé afin de s’aligner sur les autres interfaces basées sur React Spectrum dans AEM. L’implémentation de son interface d’utilisation et son modèle d’extensibilité sont désormais alignés sur l’éditeur de fragments de contenu et l’éditeur universel. Le nouvel éditeur de modèles s’ouvre désormais par défaut à partir de la nouvelle interface d’administration des modèles de contenu. L’ouverture d’un modèle de contenu dans l’interface d’utilisation tactile ouvre l’éditeur de l’interface d’utilisation tactile et propose de tester le nouvel éditeur.
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Éditeur universel pour les formulaires adaptatifs et les fragments de formulaire**
 
-L’éditeur universel offre désormais une expérience de création unifiée pour créer des Forms adaptatifs et des fragments de formulaire réutilisables. Les auteurs peuvent concevoir visuellement des formulaires, configurer des actions d’envoi et intégrer la validation reCAPTCHA dans un environnement WYSIWYG intuitif.
+L’éditeur universel offre désormais une expérience de création unifiée pour créer des Forms adaptatifs et des fragments de formulaire réutilisables. Les auteurs peuvent concevoir des formulaires visuellement dans un environnement WYSIWYG intuitif, en tirant parti d’extensions puissantes et de fonctionnalités d’envoi complètes. L’éditeur intègre la validation reCAPTCHA pour une sécurité renforcée, fournit des services de préremplissage pour réduire la saisie manuelle et prend en charge le responsive design sur tous les appareils.
+
+**Extensions disponibles :**
+
+* **Éditeur de règles** : l’éditeur de règles visuel permet aux auteurs de formulaires d’ajouter un comportement dynamique aux champs de formulaire sans codage, sans prendre en charge les règles pilotées par un événement, la validation instantanée et la gestion des erreurs.
+* **Propriétés du formulaire** : assistant permettant aux utilisateurs de configurer des actions d’envoi, un service de préremplissage, un message de remerciement et d’autres comportements liés aux formulaires directement dans l’éditeur.
+* **Source de données de formulaire et référence de liaison** : l’extension de source de données permet aux auteurs de formulaires d’ajouter des composants associés à un modèle de données directement dans un formulaire adaptatif et de sélectionner une référence de liaison dans une sélection d’arborescence pour tous les composants.
+
+**Actions Envoyer prises en charge :**
+
+L’éditeur universel prend en charge un large éventail de workflows d’envoi, notamment l’action d’envoi personnalisée, l’envoi à Microsoft SharePoint, l’envoi à Microsoft OneDrive, l’envoi au stockage Azure Blob, l’envoi au point d’entrée REST, l’appel à un workflow AEM, l’appel à un flux Power Automate, l’envoi à Marketo Engage, l’envoi à Adobe Experience Platform (AEP), l’envoi à une feuille de calcul, l’envoi à l’aide du modèle de données de formulaire (FDM), l’envoi à Workfront Fusion et l’envoi d’e-mails.
+
+Pour plus d’informations, consultez la documentation [Éditeur universel pour Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Pour plus d’informations sur la configuration des actions d’envoi, voir [ Action d’envoi de formulaire adaptatif](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
