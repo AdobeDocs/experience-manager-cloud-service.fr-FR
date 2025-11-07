@@ -748,11 +748,11 @@ Vous pouvez modifier les sous-titres (légendes) des ressources vidéo directeme
 1. Sur la page Propriétés , sélectionnez l’onglet **[!UICONTROL Légendes et pistes audio]**.
 1. Sous l’en-tête **Légendes**, cliquez sur ![icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) à droite d’un nom de fichier de légendes.
 
-   ![ Icône Modifier le sous-titre sous l’en-tête Légendes ](/help/assets/dynamic-media/assets/msma-editcaption.png)
+   ![&#x200B; Icône Modifier le sous-titre sous l’en-tête Légendes &#x200B;](/help/assets/dynamic-media/assets/msma-editcaption.png)
 
 1. Dans la boîte de dialogue **Modifier le sous-titre**, modifiez le texte du fichier WebVTT selon les besoins.
 
-   ![ Boîte de dialogue Modifier le sous-titre ](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+   ![&#x200B; Boîte de dialogue Modifier le sous-titre &#x200B;](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 

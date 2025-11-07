@@ -33,7 +33,7 @@ Cette page présente un aperçu de la réutilisation du contenu avec MSM. Les pa
 
 >[!NOTE]
 >
->MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [ Réutilisation de fragments de contenu à l’aide de MSM pour Assets ](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
+>MSM peut également être utilisé pour Assets, y compris les fragments de contenu. Voir [&#x200B; Réutilisation de fragments de contenu à l’aide de MSM pour Assets &#x200B;](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via la console Assets).
 
 ## Scénarios possibles {#possible-scenarios}
 
@@ -177,7 +177,7 @@ Le tableau suivant donne une vue d’ensemble des principaux termes utilisés av
 
 >[!TIP]
 >
->Pour connaître les noms d’objet[ voir ](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) Extension de Multi Site Manager .
+>Pour connaître les noms d’objet[&#x200B; voir &#x200B;](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) Extension de Multi Site Manager .
 
 ## Live Copies {#live-copies}
 
@@ -293,7 +293,7 @@ Les configurations de déploiement peuvent être réutilisées, de sorte que plu
 
 ### Conflits de déploiement {#rollout-conflicts}
 
-Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu à la fois dans la source et la Live Copy. Il est donc utile d’être conscient de la manière dont AEM gère les [ conflits susceptibles de se produire pendant le déploiement](rollout-conflicts.md).
+Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs modifient du contenu à la fois dans la source et la Live Copy. Il est donc utile d’être conscient de la manière dont AEM gère les [&#x200B; conflits susceptibles de se produire pendant le déploiement](rollout-conflicts.md).
 
 ### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
 
