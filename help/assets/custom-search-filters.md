@@ -3,10 +3,10 @@ title: Filtres de recherche personnalisés
 description: En savoir plus sur la personnalisation du formulaire des filtres de recherche
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -18,18 +18,41 @@ En savoir plus sur la [recherche](search-assets-view.md).
 
 Personnalisation des filtres de recherche AEM Assets ne peut être mappé qu’aux entrées de votre index de propriété indexable. Assurez-vous que toutes les métadonnées personnalisées sont incluses avant de configurer votre expérience de filtre personnalisé. [!DNL Assets view] permet de personnaliser les filtres de recherche pour rationaliser le processus de recherche. Pour personnaliser les filtres de recherche personnalisés d’AEM Assets, procédez comme suit :
 
-1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
-1. Accédez à l’onglet **[!UICONTROL Rechercher]**. Cliquez sur **[!UICONTROL Personnaliser]** pour configurer votre formulaire de recherche.
+1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Rechercher]**.
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![paramètres de filtre de recherche personnalisée](assets/custom-search-filter.png)
 
-1. Le formulaire [!UICONTROL &#x200B; Configurer les filtres &#x200B;] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle. Vous pouvez passer en [!UICONTROL mode Aperçu] pour afficher l’aperçu d’un formulaire de recherche existant.
-1. Déposez des éléments de filtre du [filtres personnalisés](#available-custom-filters) sur la zone de travail. Vous pouvez faire glisser et déposer le composant pour le réorganiser si nécessaire.
+1. Dans la section **[!UICONTROL Filtres]**, vous pouvez configurer les éléments suivants :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL Fichiers] :** la configuration des fichiers concerne les types de fichiers, les formats de fichiers, l’état des ressources, la taille du fichier, les dimensions de l’image, la date de création, la date de modification, etc.
+   * **[!UICONTROL Dossiers] :** la configuration des dossiers inclut la date de création, la date d’abandon, la date d’abandon, etc.
+   * **[!UICONTROL Collections] :** la configuration des collections implique la visibilité de la collection, le type de collection, la date de création, etc.
 
-1. Cliquez sur **[!UICONTROL Mode Aperçu]** pour passer en revue les modifications.
-1. Cliquez sur **[!UICONTROL Confirmer]** pour enregistrer.
+1. Vous pouvez prévisualiser le formulaire **[!UICONTROL Filtres de paramètres prédéfinis]** par défaut disponible pour les fichiers, les dossiers ou les collections. En revanche, vous ne pouvez pas personnaliser ni supprimer ce formulaire préexistant. Pour créer un formulaire de filtres personnalisés, vous pouvez également cliquer sur **[!UICONTROL Ajouter un nouveau formulaire]**.
+
+   >[!NOTE]
+   >
+   >Un seul formulaire de filtre personnalisé peut être créé par catégorie (fichier, dossier ou collection).
+
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
+
+## Actions sur un formulaire configuré {#Actions-on-configured-form}
+
+Vous pouvez utiliser les actions suivantes sur un formulaire de filtres configuré :
+
+* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [ filtres personnalisés ](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
+
+* **[!UICONTROL Aperçu] :** cliquez pour passer en revue les modifications.
+
+* **[!UICONTROL Définir comme valeur par défaut] :** cliquez pour définir le formulaire sélectionné comme valeur par défaut.
+
+* **[!UICONTROL Supprimer un formulaire] :** cliquez sur Plus d’options ![Plus d’options](assets/do-not-localize/more-icon.svg) et sélectionnez **[!UICONTROL Supprimer un formulaire]** pour supprimer le formulaire Filtres sélectionné.
+
+* **[!UICONTROL Modifier les libellés du formulaire] :** cliquez sur Plus d’options ![Plus d’options](assets/do-not-localize/more-icon.svg) et ajoutez un nouveau libellé et une nouvelle description à votre formulaire de filtres personnalisés.
+
+  ![modifier les libellés de formulaire](assets/edit-form-labels.png)
 
 ## Filtres personnalisés disponibles {#available-custom-filters}
 
@@ -404,6 +427,7 @@ Chaque élément de filtre est associé à un ensemble de propriétés. Les filt
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Supprimer un élément de filtre {#delete-a-filter-element}
 
@@ -411,7 +435,7 @@ Pour supprimer un filtre de recherche, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
 1. Accédez à l’onglet **[!UICONTROL Rechercher]**. Cliquez sur **[!UICONTROL Personnaliser]** pour configurer votre formulaire de recherche.
-1. Le formulaire [!UICONTROL &#x200B; Configurer les filtres &#x200B;] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
+1. Le formulaire [!UICONTROL  Configurer les filtres ] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
 1. Sélectionnez l’élément de filtre à supprimer. Sélectionnez par exemple **[!UICONTROL Hauteur de l’image]**.
 1. Cliquez sur **[!UICONTROL Supprimer une catégorie]** pour supprimer l’élément de filtre. L’élément **[!UICONTROL Hauteur de l’image]** est supprimé de la zone de travail.
 1. Cliquez sur **[!UICONTROL Confirmer]** pour enregistrer le formulaire.

@@ -4,10 +4,10 @@ description: Une collection est un ensemble de ressources de la vue Experience 
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '1084'
+ht-degree: 84%
 
 ---
 
@@ -37,6 +37,8 @@ Vous pouvez effectuer les tâches suivantes pour gérer et utiliser les collecti
 * [Ajout de ressources à une collection](#add-assets-to-collection)
 
 * [Supprimer les ressources d’une collection](#remove-assets-from-collection)
+
+* [Recherche dans les collections](#search-collection)
 
 * [Créer une collection dynamique](#create-smart-collection)
 
@@ -93,6 +95,32 @@ Pour supprimer des ressources d’une collection :
 1. Cliquez sur la collection et sélectionnez les éléments à supprimer de la collection.
 
 1. Cliquez sur **[!UICONTROL Supprimer]**.
+
+## Recherche dans les collections {#search-collection}
+
+Vous pouvez effectuer une recherche dans une collection pour trouver facilement des ressources pertinentes. Pour cela, procédez comme suit :
+
+* Accédez à **[!DNL Collections]**. Dans la barre de recherche, saisissez un mot-clé pour localiser la collection souhaitée. La barre de recherche affiche l’emplacement de la collection sélectionnée.
+
+* Pour affiner les résultats de la recherche, ouvrez **[!DNL Filters]** et assurez-vous que **[!DNL Collections]** est sélectionné sous **[!DNL Asset Type]**.
+
+* Dans la liste déroulante **[!DNL Collection Visibility]** , choisissez l’une des options suivantes :
+
+   * **[!DNL All]:** affiche toutes les collections, quelle que soit leur visibilité.
+   * **[!DNL Public Collection]:** affiche uniquement les collections visibles par tous les utilisateurs.
+   * **[!DNL Private Collection]:** affiche uniquement les collections qui sont restreintes ou visibles par des utilisateurs ou des groupes spécifiques.
+
+* Dans la liste déroulante [!DNL Collection Type] , choisissez l’une des options suivantes :
+
+   * **[!DNL All]:** affiche les collections standard et intelligentes.
+   * **[!DNL Collection]:** affiche les collections créées manuellement où les ressources sont ajoutées individuellement.
+   * **[!DNL Smart Collection]:** affiche les collections qui incluent automatiquement les ressources enregistrées sous [Collections dynamiques](#manage-smart-collection).
+
+* La liste déroulante **[!DNL Created Date]** vous permet de filtrer les collections en fonction de leur date de création. Vous pouvez spécifier une période pour rechercher des collections récemment créées ou plus anciennes.
+
+  ![Recherche de collection](assets/search-collection.png)
+
+Pour plus d’informations, voir [Recherche de ressources](search-assets-view.md), [filtrage des résultats de recherche](search-assets-view.md#refine-search-results) ou [gestion des recherches enregistrées](search-assets-view.md##saved-search).
 
 ## Gérer une collection dynamique {#manage-smart-collection}
 

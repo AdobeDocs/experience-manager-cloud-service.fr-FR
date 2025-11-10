@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et trouver des ressources dans la vue
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 84%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -33,22 +33,19 @@ Pour rechercher des ressources :
 
 ## Filtrer les résultats de la recherche {#refine-search-results}
 
+Vous pouvez affiner les résultats de recherche pour trouver les ressources appropriées en appliquant plusieurs filtres. Ces filtres, configurés par un administrateur, sont basés sur des fichiers, des dossiers et des collections. Voir [Personnalisation des filtres de recherche](custom-search-filters.md).
+
+![Filtres de recherche](assets/filters-panel.gif)
+
 Vous pouvez filtrer les résultats de la recherche en fonction des paramètres suivants.
 
-![Filtres de recherche](assets/filters1.png)
-
-*Image : filtrage des ressources recherchées en fonction de divers paramètres.*
-
 * Statut de la ressource : filtrez les résultats de recherche à l’aide de `Approved`, `Rejected` ou d’un statut de ressource `No Status`.
-
 * Type de fichier : filtrez les résultats de la recherche selon les types de fichiers pris en charge, à savoir `Images`, `Documents` et `Videos`.
 * Type MIME : filtrez un ou plusieurs formats de fichiers pris en charge. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Taille de l’image : fournissez une ou plusieurs dimensions minimales et maximales pour filtrer les images. Les dimensions sont fournies en pixels et ne correspondent pas à la taille de fichier des images.
 * Date de création : date de création de la ressource telle qu’elle figure dans les métadonnées. Le format de date standard utilisé est `yyyy-mm-dd`.
 * Date de modification : date de dernière modification des ressources. Le format de date standard utilisé est `yyyy-mm-dd`.
-
 * Date d’expiration : filtrez les résultats de la recherche en fonction du statut d’une ressource `Expired`. En outre, vous pouvez spécifier une période d’expiration pour les ressources afin de filtrer davantage les résultats de votre recherche.
-
 * Filtres personnalisés : [ajoutez des filtres personnalisés](#custom-filters) à l’interface utilisateur d’affichage d’Assets. Appliquez ces filtres personnalisés en plus des filtres standard pour affiner les résultats de la recherche.
 
 Vous pouvez trier les ressources recherchées par ordre croissant ou décroissant de `Name`, `Relevance`, `Size`, `Modified` et `Created`. Les ressources recherchées sont triées en fonction de la `Relevance`, par défaut.
@@ -375,6 +372,7 @@ Si vous devez fournir des commentaires sur la fonction de recherche contextuelle
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
+
 
 
