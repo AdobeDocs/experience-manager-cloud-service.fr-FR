@@ -59,7 +59,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
    Une fois que vous avez cliqué sur Créer un compte technique, les informations requises pour générer un jeton d’accès tel que l’identifiant client et le secret client, ainsi que d’autres informations de compte techniques, y compris la clé privée, la clé publique et la date d’expiration, sont générées.
 
-   ![ Informations d’identification JWT ](/help/forms/assets/jwt-credentials.png)
+   ![&#x200B; Informations d’identification JWT &#x200B;](/help/forms/assets/jwt-credentials.png)
 
 
 3. Générer et enregistrer des informations d’identification
