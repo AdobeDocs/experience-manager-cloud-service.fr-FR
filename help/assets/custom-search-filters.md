@@ -42,7 +42,7 @@ Personnalisation des filtres de recherche AEM Assets ne peut être mappé qu’a
 
 Vous pouvez utiliser les actions suivantes sur un formulaire de filtres configuré :
 
-* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [ filtres personnalisés ](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
+* **[!UICONTROL Personnaliser] :** cliquez sur cette option pour ajouter ou modifier le formulaire. Vous pouvez déposer des éléments de filtre depuis les [&#x200B; filtres personnalisés &#x200B;](#available-custom-filters) sur la zone de travail ou les réorganiser si nécessaire.
 
 * **[!UICONTROL Aperçu] :** cliquez pour passer en revue les modifications.
 
@@ -435,7 +435,7 @@ Pour supprimer un filtre de recherche, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Paramètres généraux]**.
 1. Accédez à l’onglet **[!UICONTROL Rechercher]**. Cliquez sur **[!UICONTROL Personnaliser]** pour configurer votre formulaire de recherche.
-1. Le formulaire [!UICONTROL  Configurer les filtres ] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
+1. Le formulaire [!UICONTROL &#x200B; Configurer les filtres &#x200B;] s’affiche. Assurez-vous d’être en mode d’édition afin de pouvoir apporter des modifications au modèle.
 1. Sélectionnez l’élément de filtre à supprimer. Sélectionnez par exemple **[!UICONTROL Hauteur de l’image]**.
 1. Cliquez sur **[!UICONTROL Supprimer une catégorie]** pour supprimer l’élément de filtre. L’élément **[!UICONTROL Hauteur de l’image]** est supprimé de la zone de travail.
 1. Cliquez sur **[!UICONTROL Confirmer]** pour enregistrer le formulaire.
