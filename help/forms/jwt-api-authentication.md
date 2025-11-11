@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’authentification JWT (JSON Web To
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 5%
@@ -59,7 +59,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
    Une fois que vous avez cliqué sur Créer un compte technique, les informations requises pour générer un jeton d’accès tel que l’identifiant client et le secret client, ainsi que d’autres informations de compte techniques, y compris la clé privée, la clé publique et la date d’expiration, sont générées.
 
-   ![&#x200B; Informations d’identification JWT &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ Informations d’identification JWT ](/help/forms/assets/jwt-credentials.png)
 
 
 3. Générer et enregistrer des informations d’identification

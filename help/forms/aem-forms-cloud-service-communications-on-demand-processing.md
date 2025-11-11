@@ -4,9 +4,9 @@ description: Configuration de l’environnement de développement pour les API s
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Assurez-vous de disposer des droits d’accès et des autorisations requis avant
 
 >[!NOTE]
 >
-> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Pour en savoir plus sur l’attribution de rôles et l’octroi de l’accès aux utilisateurs, consultez l’article [Ajouter des utilisateurs et des rôles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accès Cloud Manager**
 
@@ -118,7 +118,7 @@ Clonez le référentiel Git de Cloud Manager pour gérer vos fichiers de configu
       ![Clonage du référentiel Git](/help/forms/assets/repo-clone.png)
 
 
-### Options d’intégration du référentiel Git
+**Options d’intégration du référentiel Git**
 
 Adobe Cloud Manager prend en charge les deux options de référentiel :
 
@@ -310,7 +310,7 @@ Générez manuellement les jetons d’accès dans Adobe Developer Console :
    1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
    2. Copier le jeton d’accès généré
 
-   ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+   ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
@@ -526,7 +526,7 @@ L’interface utilisateur Swagger fournit une interface interactive pour tester 
    - API Forms : [Référence de l’API Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
    - Document Services : [Référence de l’API des services de document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
 Ouvrez la documentation des [API des services de document](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) dans votre navigateur.
-2. Développez la section **Génération de documents** et sélectionnez [&#x200B; Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+2. Développez la section **Génération de documents** et sélectionnez [ Génère un formulaire PDF à remplir à partir d’un modèle XDP ou PDF, éventuellement avec fusion des données](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Dans le volet de droite, cliquez sur **Essayer**.
 
    ![Test Swagger pour l’API](/help/forms/assets/api-doc-generation.png)

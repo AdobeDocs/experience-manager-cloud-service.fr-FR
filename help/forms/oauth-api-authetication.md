@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’authentification de serveur à se
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 3%
@@ -157,7 +157,7 @@ Sélectionnez la méthode d’authentification **OAuth de serveur à serveur**.
       1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
       2. Copier le jeton d’accès généré
 
-      ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
+      ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
 
       >[!NOTE]
       >

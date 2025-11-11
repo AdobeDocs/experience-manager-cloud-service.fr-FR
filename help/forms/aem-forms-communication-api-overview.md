@@ -4,9 +4,9 @@ description: Présentation des API Communications d’AEM Forms, y compris les m
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 8%
@@ -24,7 +24,7 @@ Les API d’AEM Forms sont structurées et accessibles via deux consoles princip
 
 * [AEM Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console fournit des outils de débogage et d’inspection des environnements AEM as a Cloud Service.
 
-Chaque console permet d’accéder à différents API et services pour les tâches de traitement, de génération, de conversion, de chiffrement et de communication de documents. Les API prennent en charge différentes [&#x200B; méthodes d’authentification &#x200B;](#authentication-methods).
+Chaque console permet d’accéder à différents API et services pour les tâches de traitement, de génération, de conversion, de chiffrement et de communication de documents. Les API prennent en charge différentes [ méthodes d’authentification ](#authentication-methods).
 
 ## Méthodes d’authentification
 

@@ -4,16 +4,16 @@ description: Découvrez comment utiliser l’API de synchronisation de sortie AF
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
 # Générer une sortie AFP à l’aide de l’API AEM Forms
 
-<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features). </span>
+<span class="preview">Il s’agit d’une fonctionnalité de version préliminaire accessible par le biais de notre [canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 La présentation de fonctions avancées (AFP) est un format de document haute performance conçu principalement à des fins d&#39;impression.\
 Ce guide décrit toutes les étapes et configurations nécessaires pour générer une sortie AFP à l’aide d’AEM Forms.
@@ -39,12 +39,12 @@ Génère un fichier AFP (Advanced Function Presentation) à l&#39;aide d&#39;un 
 
 ### L’autorisation
 
-Vous pouvez utiliser l’autorisation **BasicAuth** (informations d’identification d’administrateur) pour les environnements locaux ou **BearerAuth** pour les instances AEM Cloud.
+Vous pouvez utiliser **BasicAuth** (informations d’identification d’administrateur) pour les environnements locaux ou **l’autorisation OAuth de serveur à serveur** pour les instances AEM Cloud.
 
 ### Requête
 
 **Point d’entrée:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### En-têtes
 
