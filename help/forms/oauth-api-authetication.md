@@ -157,7 +157,7 @@ Sélectionnez la méthode d’authentification **OAuth de serveur à serveur**.
       1. Cliquez sur le bouton **Générer un jeton d’accès »** dans la section API de votre projet
       2. Copier le jeton d’accès généré
 
-      ![ Générer un jeton d’accès ](/help/forms/assets/adc-access-token.png)
+      ![&#x200B; Générer un jeton d’accès &#x200B;](/help/forms/assets/adc-access-token.png)
 
       >[!NOTE]
       >
