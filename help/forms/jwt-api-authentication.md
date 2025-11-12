@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 5%
 
 ---
@@ -59,7 +59,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
    Une fois que vous avez cliqué sur Créer un compte technique, les informations requises pour générer un jeton d’accès tel que l’identifiant client et le secret client, ainsi que d’autres informations de compte techniques, y compris la clé privée, la clé publique et la date d’expiration, sont générées.
 
-   ![&#x200B; Informations d’identification JWT &#x200B;](/help/forms/assets/jwt-credentials.png)
+   ![ Informations d’identification JWT ](/help/forms/assets/jwt-credentials.png)
 
 
 3. Générer et enregistrer des informations d’identification
@@ -78,7 +78,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
 
 4. Génération de jeton d’accès
 
-   Générez des jetons par programmation à l’aide de l’API Adobe IMS :
+   Générez des jetons par programmation à l’aide de la commande cURL :
 
    **Informations d’identification requises :**
 
@@ -92,7 +92,7 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **Exemple de requête (curl) :**
+   **Exemple de requête (cURL) :**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ Suivez les étapes ci-dessous qui vous montrent comment générer un jeton d’a
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> Pour en savoir plus sur les informations d’identification de service et sur la génération d’un jeton d’accès à l’aide de l’API Adobe IMS, [cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Vous pouvez désormais utiliser le jeton d’accès généré pour effectuer un appel API pour les environnements de développement, d’évaluation ou de production.
 
