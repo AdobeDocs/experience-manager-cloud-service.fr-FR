@@ -4,10 +4,10 @@ description: Découvrez comment exécuter votre propre service d’éditeur univ
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 95%
 
 ---
 
@@ -160,5 +160,7 @@ Avec le service d’éditeur universel [ exécuté localement](#running-ue) et v
 
 1. Ouvrez votre navigateur sur `https://localhost:8000/ping`.
 1. Demandez à votre navigateur d’accepter [votre certificat auto-signé](#ue-https).
-1. Une fois le certificat auto-signé approuvé, vous pouvez modifier la page à l’aide de votre service d’éditeur universel local.
+1. Une fois le certificat auto-signé approuvé, la page est chargée à l’aide de votre service d’éditeur universel local.
+1. Cliquez sur l’[ Connexion du développeur local ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) dans la barre d’outils et authentifiez-vous sur votre instance AEM locale.
 
+Vous pouvez désormais modifier des pages sur votre instance de test AEM locale à l’aide de votre service d’éditeur universel local.

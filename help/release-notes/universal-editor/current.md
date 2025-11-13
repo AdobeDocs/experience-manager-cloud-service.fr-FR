@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de l’éditeur universel version 2025.11.06
-description: Il s’agit des notes de mise à jour de la version 2025.11.06 de l’éditeur universel.
+title: Notes de mise à jour de l’éditeur universel version 2025.11.13
+description: Il s’agit des notes de mise à jour de la version 2025.11.13 de l’éditeur universel.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '219'
+ht-degree: 59%
 
 ---
 
 
-# Notes de mise à jour de l’éditeur universel version 2025.11.06 {#release-notes}
+# Notes de mise à jour de l’éditeur universel version 2025.11.13 {#release-notes}
 
-Voici les notes de mise à jour de la version du 6 novembre 2025 de l’éditeur universel.
+Voici les notes de mise à jour de la version du 13 novembre 2025 de l’éditeur universel.
 
 >[!TIP]
 >
@@ -23,6 +23,14 @@ Voici les notes de mise à jour de la version du 6 novembre 2025 de l’éditeur
 >[!TIP]
 >
 >Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
+
+## Nouveautés {#what-is-new}
+
+* Les actions contextuelles ont été déplacées dans des menus déroulants.
+* les schémas json sont désormais fournis pour validation.
+* [Connexion développeur local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) est désormais une partie essentielle de l’éditeur universel et l’extension n’est plus nécessaire.
+* Le rail de droite a été migré vers une nouvelle interface utilisateur.
+* Les éléments de l’arborescence de contenu se développent désormais automatiquement.
 
 ## Fonctionnalités d’adoption précoce {#early-adopter}
 
@@ -34,12 +42,5 @@ Le nouvel éditeur de texte enrichi ProseMirror, qui présente un sélecteur de 
 
 ## Autres améliorations {#other-improvements}
 
-* `og:title` champs de métadonnées peuvent désormais être correctement supprimés.
-* Un problème de navigation a été corrigé lorsqu’un utilisateur modifie la barre d’emplacement dans l’éditeur du navigateur afin que ces modifications soient correctement répercutées et que l’éditeur et/ou l’application accède désormais à l’URL demandée.
-* La résolution du modèle de champ a été corrigée et l’éditeur utilise le modèle du composant, le cas échéant.
-* componentId est désormais inclus dans l’action /add.
-* La possibilité de supprimer certaines propriétés de métadonnées qui ne pouvaient pas être supprimées auparavant a été corrigée.
-* La récupération brute est désormais effectuée de manière conditionnelle pour xwalk lorsqu’elle n’est pas définie par le plug-in AEM.
-* La gestion du MSM de fragment de contenu avec l’éditeur de texte enrichi a été corrigée.
-* La mise en surbrillance des images dans une image est désormais prise en charge.
-
+* Une largeur spécifique pour le pour le menu contextuel a été ajoutée.
+* Des échecs du service d’éditeur universel en raison de certaines valeurs de `null` ont été corrigés.
