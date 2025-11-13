@@ -4,9 +4,9 @@ description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe E
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 20%
 
 ---
@@ -106,7 +106,7 @@ Pour plus d’informations sur les fonctionnalités nouvelles et améliorées, a
 
 ### Problèmes connus {#known-issues-23320}
 
-Aucun.
+* FORMS-22633 : les envois de formulaires peuvent échouer lorsque du code personnalisé reposant sur les API GuideBridge (`getData` ou `getDataXML`) est utilisé. Si vous rencontrez ce problème, contactez l’assistance Adobe pour obtenir de l’aide.
 
 ### Fonctionnalités et API obsolètes {#deprecated-23320}
 
