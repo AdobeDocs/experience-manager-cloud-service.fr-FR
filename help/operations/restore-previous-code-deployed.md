@@ -85,7 +85,7 @@ Si vous souhaitez simplement restaurer les données perdues, endommagées ou sup
 
    ![Restauration de l’activation](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Près du coin supérieur droit de la page, cliquez sur ![Icône cloche ou Icône de notifications ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** pour savoir quand votre restauration commence et se termine.
+1. Près du coin supérieur droit de la page, cliquez sur ![Icône cloche ou Icône de notifications &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** pour savoir quand votre restauration commence et se termine.
 
    ![Restaurez les notifications de code précédentes lors du démarrage de la restauration et lorsque la restauration est terminée](/help/operations/assets/restore-previous-code-notifications.png)
    *Notifications pour une tâche de restauration du code précédent.*

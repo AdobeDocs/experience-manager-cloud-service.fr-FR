@@ -46,9 +46,9 @@ Dans les deux cas, la version de votre code personnalisé et la version AEM rest
 Avant de procéder à la restauration complète du contenu, prenez en compte les options suivantes pour restaurer plus facilement votre contenu.
 
 * Si un package est disponible pour le chemin supprimé, réinstallez-le à l’aide du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md).
-* Si le chemin supprimé était une page dans Sites, utilisez la fonction [ Restaurer l’arborescence ](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Si le chemin supprimé était une page dans Sites, utilisez la fonction [&#x200B; Restaurer l’arborescence &#x200B;](/help/sites-cloud/authoring/sites-console/page-versions.md).
 * Si le chemin supprimé était un dossier de ressources et que les fichiers d’origine sont disponibles, chargez-les à nouveau via [la console Assets](/help/assets/add-assets.md).
-* Si le contenu supprimé était des ressources, pensez à restaurer [ versions précédentes des ressources](/help/assets/manage-digital-assets.md).
+* Si le contenu supprimé était des ressources, pensez à restaurer [&#x200B; versions précédentes des ressources](/help/assets/manage-digital-assets.md).
 
 Si aucune des options ci-dessus ne fonctionne et que le contenu du chemin supprimé est significatif, effectuez une restauration de contenu comme décrit dans les sections suivantes.
 
@@ -102,7 +102,7 @@ Pour plus d’informations sur la gestion des autorisations, voir [Autorisations
 
 1. Une fois que vous avez sélectionné une date ou défini une heure, la section **Sauvegardes disponibles** ci-dessous présente une liste des sauvegardes disponibles qui peuvent être restaurées.
 
-1. Cliquez sur ![icône d’informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) à côté d’une sauvegarde pour afficher sa version de code et la version d’AEM, puis évaluez l’impact de la restauration avant de sélectionner une sauvegarde (voir [ Choisir la bonne sauvegarde](#choosing-backup)).
+1. Cliquez sur ![icône d’informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) à côté d’une sauvegarde pour afficher sa version de code et la version d’AEM, puis évaluez l’impact de la restauration avant de sélectionner une sauvegarde (voir [&#x200B; Choisir la bonne sauvegarde](#choosing-backup)).
 
    ![Informations de sauvegarde](assets/backup-info.png)
 
