@@ -3,24 +3,27 @@ title: Restaurer le code Source précédent déployé
 description: Découvrez comment restaurer un environnement à sa dernière version &ndash; réussie ; aucune exécution de pipeline requise.
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # Restaurer le code source précédent déployé dans AEM as a Cloud Service {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->La fonctionnalité décrite dans cet article n’est disponible que via le programme bêta. Pour vous inscrire à la version bêta, voir [Restauration en un clic pour les déploiements de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 Utilisez **Restaurer le code précédemment déployé** pour restaurer instantanément un environnement à sa dernière version réussie, aucune exécution de pipeline n’étant requise.
 
 Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant des points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de l’environnement sélectionné, puis de choisir **Restaurer** > **Code précédent déployé** pour restaurer le code source le plus récemment déployé en secondes.
+
+Voir aussi [Restaurer du contenu dans AEM as a Cloud Service](/help/operations/restore.md).
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant 
 
 * Une seule restauration est autorisée par exécution réussie du pipeline. Pour effectuer une nouvelle restauration, exécutez un autre pipeline avec succès.
 * Vous détenez les autorisations **Environment Restore Create**. Pour plus d’informations sur la gestion des autorisations, voir [Autorisations personnalisées](/help/implementing/cloud-manager/custom-permissions.md).
-* Votre entreprise est inscrite au programme bêta et l’indicateur de fonctionnalité est activé.
+* L&#39;indicateur de fonctionnalité qui protège cette fonctionnalité est activé (activé).
 * Le programme s’exécute sur AEM as a Cloud Service.
 * Le dernier pipeline pour cet environnement s’est terminé avec succès et s’est exécuté il y a **de 30 jours**.
 * Le statut de l’environnement est *En cours d’exécution* et aucun pipeline n’est en cours.
@@ -41,7 +44,7 @@ Il vous suffit d’ouvrir le menu ![Icône Plus ou icône du menu représentant 
 
 >[!IMPORTANT]
 >
->Adobe recommande vivement de valider la procédure dans `Stage` *avant* de l’utiliser dans `Production` pour réduire les risques et assurer la stabilité.
+>Pour une première utilisation, Adobe recommande vivement de valider la procédure dans `Stage` *avant* de l’utiliser dans `Production` pour réduire les risques et assurer la stabilité.
 
 
 Si une vérification échoue, Cloud Manager ouvre la boîte de dialogue suivante qui répertorie une ou plusieurs conditions non remplies et désactive **Confirmer**, empêchant la restauration.
@@ -81,3 +84,8 @@ Si vous souhaitez simplement restaurer les données perdues, endommagées ou sup
 1. Cloud Manager restaure l’environnement à sa version précédente, conserve le contenu et la configuration intacts, et marque l’environnement **Restauration** sur la page Environnements jusqu’à ce que le déploiement soit terminé.
 
    ![Restauration de l’activation](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. Près du coin supérieur droit de la page, cliquez sur ![Icône cloche ou Icône de notifications ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** pour savoir quand votre restauration commence et se termine.
+
+   ![Restaurez les notifications de code précédentes lors du démarrage de la restauration et lorsque la restauration est terminée](/help/operations/assets/restore-previous-code-notifications.png)
+   *Notifications pour une tâche de restauration du code précédent.*

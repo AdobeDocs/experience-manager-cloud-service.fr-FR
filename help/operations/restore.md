@@ -4,10 +4,10 @@ description: Découvrez comment restaurer votre contenu AEM as a Cloud Servi
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 23%
+source-wordcount: '1358'
+ht-degree: 24%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 23%
 
 Vous pouvez restaurer votre contenu AEM as a Cloud Service à partir de la sauvegarde à l’aide de Cloud Manager.
 
-## Présentation {#overview}
+
 
 Le processus de restauration en libre-service de Cloud Manager copie les données des sauvegardes système d’Adobe et les restaure dans son environnement d’origine. Une restauration est effectuée pour renvoyer à leur état d’origine les données qui ont été perdues, endommagées ou supprimées accidentellement.
 
-Le processus de restauration affecte uniquement le contenu, laissant votre code et votre version d’AEM inchangés. Vous pouvez lancer une opération de restauration de différents environnements à tout moment. (Si vous devez restaurer le code source précédemment déployé de manière facile et rapide, sans avoir à démarrer une nouvelle exécution de pipeline, vous pouvez utiliser [Restaurer le code précédemment déployé](/help/operations/restore-previous-code-deployed.md)).
+Le processus de restauration affecte uniquement le contenu, laissant votre code et votre version d’AEM inchangés. Vous pouvez lancer la restauration de différents environnements à tout moment.
+
+Si vous devez restaurer le code source précédemment déployé de manière facile et rapide, sans avoir à démarrer une nouvelle exécution de pipeline, vous pouvez utiliser [Restaurer le code précédemment déployé](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager fournit deux types de sauvegardes à partir desquelles vous pouvez restaurer du contenu.
 
@@ -44,9 +46,9 @@ Dans les deux cas, la version de votre code personnalisé et la version AEM rest
 Avant de procéder à la restauration complète du contenu, prenez en compte les options suivantes pour restaurer plus facilement votre contenu.
 
 * Si un package est disponible pour le chemin supprimé, réinstallez-le à l’aide du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md).
-* Si le chemin supprimé était une page dans Sites, utilisez la fonction [&#x200B; Restaurer l’arborescence &#x200B;](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Si le chemin supprimé était une page dans Sites, utilisez la fonction [ Restaurer l’arborescence ](/help/sites-cloud/authoring/sites-console/page-versions.md).
 * Si le chemin supprimé était un dossier de ressources et que les fichiers d’origine sont disponibles, chargez-les à nouveau via [la console Assets](/help/assets/add-assets.md).
-* Si le contenu supprimé était des ressources, pensez à restaurer [&#x200B; versions précédentes des ressources](/help/assets/manage-digital-assets.md).
+* Si le contenu supprimé était des ressources, pensez à restaurer [ versions précédentes des ressources](/help/assets/manage-digital-assets.md).
 
 Si aucune des options ci-dessus ne fonctionne et que le contenu du chemin supprimé est significatif, effectuez une restauration de contenu comme décrit dans les sections suivantes.
 
@@ -100,7 +102,7 @@ Pour plus d’informations sur la gestion des autorisations, voir [Autorisations
 
 1. Une fois que vous avez sélectionné une date ou défini une heure, la section **Sauvegardes disponibles** ci-dessous présente une liste des sauvegardes disponibles qui peuvent être restaurées.
 
-1. Cliquez sur ![icône d’informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) à côté d’une sauvegarde pour afficher sa version de code et la version d’AEM, puis évaluez l’impact de la restauration avant de sélectionner une sauvegarde (voir [&#x200B; Choisir la bonne sauvegarde](#choosing-backup)).
+1. Cliquez sur ![icône d’informations](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) à côté d’une sauvegarde pour afficher sa version de code et la version d’AEM, puis évaluez l’impact de la restauration avant de sélectionner une sauvegarde (voir [ Choisir la bonne sauvegarde](#choosing-backup)).
 
    ![Informations de sauvegarde](assets/backup-info.png)
 
