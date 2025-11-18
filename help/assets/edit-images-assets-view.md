@@ -4,16 +4,16 @@ description: Modifiez les images à l’aide des options optimisées d’ [!DNL 
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 744c76f29a37610313835074f2f13fdd8f098465
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 78%
+source-wordcount: '1151'
+ht-degree: 75%
 
 ---
 
 # Modifier des images dans [!DNL Assets view] {#edit-images-in-assets-view}
 
-L’interface utilisateur Vue Assets permet une modification d’image de base optimisée par Adobe Express et intégrée à l’interface utilisateur. Cette modification inclut le redimensionnement, la suppression en arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG. En outre, il permet une modification avancée via l’interface d’Adobe Express intégrée à l’interface utilisateur de la vue Assets.
+L’interface utilisateur de la vue Assets permet l’édition d’images de base optimisée par Adobe Express, intégrée à l’interface utilisateur. Cette modification inclut le redimensionnement, la suppression en arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG. En outre, il permet une modification avancée via l’interface Adobe Express intégrée dans l’interface utilisateur de la vue Assets.
 
 Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en tant que nouvelle version de cette image. Le contrôle de version vous permet de revenir ultérieurement à la ressource d’origine, si nécessaire. Pour modifier une image, [ouvrez sa prévisualisation](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) et cliquez sur **Modifier l’image**.
 
@@ -25,21 +25,21 @@ Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en ta
 
 ## Modifier l’image {#edit-image}
 
-Accédez à l’interface utilisateur de la vue Assets, en utilisant le lien [Vue Assets](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
-Pour toute information de référence supplémentaire, reportez-vous aux sections [Prise en main de la vue Adobe Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendre l’interface utilisateur de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) et [Cas d’utilisation de la vue Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Accédez à Assets vue UI, en utilisant le lien - [Assets Afficher](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
+Pour obtenir des informations de référence supplémentaires, reportez-vous aux rubriques Commencer [à utiliser Adobe Experience Manager Assets Affichage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Présentation de l’interface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) utilisateur de la vue Assets et [Assets Cas d’utilisation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Modifier l’image dans la vue Assets à l’aide d’Adobe Express {#edit-image-on-assets-view-using-adobe-express}
+### Modifier l’image dans Assets vue à l’aide de Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Après avoir accédé à la vue Assets, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles optimisées par Adobe Express, notamment le redimensionnement, la suppression de l’arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG.
+Après avoir accédé à Assets Affichage, cliquez sur **Assets**, sélectionnez une image, puis cliquez sur **Modifier** dans le rail supérieur. Le nouvel écran affiche les options de modification disponibles optimisées par Adobe Express, notamment le redimensionnement, la suppression de l’arrière-plan, le recadrage et la conversion entre les formats JPEG et PNG.
 
 #### Redimensionnement de l’image {#resize-image-using-express}
 
-Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. La vue Assets vous permet de redimensionner rapidement les images pour les adapter aux tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Pour redimensionner l’image dans la vue Assets, procédez comme suit :
+Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. Assets View vous permet de redimensionner rapidement les images pour les adapter aux tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Pour redimensionner l’image à l’aide de Assets Affichage, procédez comme suit :
 
 1. Cliquez sur **Redimensionner l’image** dans le volet de gauche. Une boîte de dialogue affiche les fonctionnalités de redimensionnement d’image optimisées par Adobe Express.
 1. Sélectionnez la plateforme de médias sociaux appropriée dans la liste déroulante Redimensionner et sélectionnez la taille de l’image parmi les options qui s’affichent.
@@ -85,12 +85,12 @@ Vous pouvez rapidement convertir les formats d’image JPEG et PNG à l’aide d
 
 ### Modifier des images à l’aide de l’éditeur intégré d’Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Les utilisateurs disposant de droits Express peuvent utiliser l’éditeur Express intégré à partir de la vue Assets pour modifier facilement le contenu et en créer de nouveaux à l’aide de GenAI à partir d’Adobe Firefly. Cette fonctionnalité améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
+Les utilisateurs disposant du droit Express peuvent utiliser l’éditeur Express intégré à partir de la vue Assets pour modifier facilement du contenu et créer du contenu avec GenAI à partir de Adobe Firefly. Cette fonctionnalité améliore la réutilisation du contenu et accélère la vitesse du contenu. Vous pouvez également utiliser des éléments prédéfinis pour optimiser l’aspect de vos ressources ou exécuter des actions rapides pour modifier vos images en quelques clics seulement.
 
-![express dans l’interface utilisateur d’essentials](/help/assets/assets/express-in-essentials-ui.jpg)
-Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorporé, procédez comme suit :
+![express dans l’IU](/help/assets/assets/express-in-essentials-ui.jpg) essentials
+Pour modifier des images à l’aide de l’éditeur [!DNL Adobe Express] intégré, suivez les étapes ci-dessous :
 
-1. Accédez à la vue AEM Assets à l’aide du lien [Vue AEM Assets](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
+1. Accédez à AEM Assets View en utilisant le lien - [AEM Assets View](https://experience.adobe.com/#/assets) et sélectionnez le référentiel approprié.
 1. Cliquez sur **Ressources**, saisissez un dossier et sélectionnez une image.
 1. Cliquez sur **Ouvrir dans Adobe Express**. L’image s’ouvre sur une zone de travail Express.
 1. Apportez les modifications requises à l’image.
@@ -114,7 +114,7 @@ Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorpor
 
 * Type de fichier pris en charge : JPEG ou PNG.
 * Taille de fichier maximale prise en charge : 40 Mo.
-* Largeur et hauteur prises en charge : entre 50 et 8 000 pixels.
+* Largeur et hauteur prises en charge : 65MP (par exemple, 8K x 8K ou 16K x 4K).
 * Rechargez la page pour afficher la dernière ressource enregistrée dans le dossier source.
 
 ### Créer des ressources à l’aide d’Adobe Express {#create-new-embedded-editor}
@@ -129,7 +129,8 @@ Pour modifier des images à l’aide de [!DNL Adobe Express]’éditeur incorpor
 #### Limites {#limitations}
 
 * Vous ne pouvez modifier que les images dont les types de format sont `JPEG` et `PNG`.
-* La taille de la ressource doit être inférieure à 40 Mo.
+* La taille de la ressource doit être inférieure à 80 Mo pour les ordinateurs de bureau et à 40 Mo pour les appareils mobiles.
+* La largeur et la hauteur prises en charge sont comprises entre 50 et 8 000 pixels.
 * Vous pouvez enregistrer une image aux formats `PDF`, `JPEG` ou `PNG`.
 
 <!--
@@ -153,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/fr/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -192,7 +193,7 @@ TBD: Insert a video of the available social media options.
 
 ### Étapes suivantes {#next-steps}
 
-* Faites des commentaires sur le produit en utilisant l’option [!UICONTROL &#x200B; Commentaires &#x200B;] disponible dans l’interface utilisateur de l’affichage d’Assets.
+* Fournissez des commentaires sur les produits à l’aide de l’option [!UICONTROL Commentaires] disponible dans l’interface utilisateur de la vue Assets.
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
@@ -200,5 +201,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Actions rapides dans Adobe Express &#x200B;](https://helpx.adobe.com/fr/express/using/resize-image.html)
+>* [Actions rapides dans Adobe Express](https://helpx.adobe.com/fr/express/using/resize-image.html)
 >* [Affichage de l’historique des versions d’une ressource](navigate-assets-view.md)
