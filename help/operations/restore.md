@@ -45,8 +45,8 @@ Dans les deux cas, la version de votre code personnalisé et la version AEM rest
 
 Avant de restaurer une restauration complète du contenu, envisagez ces options pour restaurer votre contenu plus facilement.
 
-* Si un package pour le chemin supprimé est disponible, réinstallez-le à l’aide du Gestionnaire de [](/help/implementing/developing/tools/package-manager.md)packages.
-* Si le chemin supprimé était une page dans Sites, utilisez la fonction[ Restaurer l’arborescence](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Si un package pour le chemin supprimé est disponible, réinstallez-le à l’aide du Gestionnaire de [&#128279;](/help/implementing/developing/tools/package-manager.md)packages.
+* Si le chemin supprimé était une page dans Sites, utilisez la fonction[&#x200B; Restaurer l’arborescence](/help/sites-cloud/authoring/sites-console/page-versions.md).
 * Si le chemin supprimé était un dossier de ressources et que les fichiers d’origine sont disponibles, rechargez-les via [la console](/help/assets/add-assets.md) Assets.
 * Si le contenu supprimé était une ressource, envisagez [de restaurer les versions précédentes des ressources](/help/assets/manage-digital-assets.md).
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur la gestion des autorisations, voir [Autorisations
 
      ![Onglet Environnements](assets/environments-1.png)
 
-   * Dans le menu de gauche, sous Programme **, cliquez** sur **Vue d’ensemble**, puis dans la carte Environnements **, cliquez sur** l’icône![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**Flux de travail Afficher tout**.
+   * Dans le menu de gauche, sous Programme **, cliquez** sur **Vue d’ensemble**, puis dans la carte Environnements **, cliquez sur** l’icône![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**Flux de travail Afficher tout**.
 
      ![Option Tout afficher](assets/environments-2.png)
 
@@ -114,7 +114,7 @@ Pour plus d’informations sur la gestion des autorisations, voir [Autorisations
 
    ![Confirmer la restauration](assets/backup-restore.png)
 
-Le processus de sauvegarde est lancé. Vous pouvez afficher son état dans la liste Restaurer l’activité&#x200B;**[](#restore-activity)**. Le temps nécessaire à l’achèvement d’une opération de restauration dépend de la taille et du profil du contenu restauré.
+Le processus de sauvegarde est lancé. Vous pouvez afficher son état dans la liste Restaurer l’activité&#x200B;**[&#128279;](#restore-activity)**. Le temps nécessaire à l’achèvement d’une opération de restauration dépend de la taille et du profil du contenu restauré.
 
 Une fois la restauration terminée, l’environnement procède comme suit :
 
@@ -165,7 +165,7 @@ Si les clients ont des questions spécifiques ou justifiées concernant le dépl
 Lors de la détermination d’un mappage de région de données approprié, Adobe applique plusieurs critères prioritaires :
 
 1. **Ne quittez pas la région globale**\
-   Les déploiements restent dans l’une des principales régions du monde : **APAC,****EMEA** et **Amériques**.
+   Les déploiements restent dans l’une des principales régions du monde : **APAC,**&#x200B;**EMEA** et **Amériques**.
 
 2. **Ne quittez pas le continent**\
    Dans la mesure du possible, la réplication et le basculement des données restent sur le même continent.
