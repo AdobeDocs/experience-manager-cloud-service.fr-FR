@@ -26,7 +26,7 @@ Après avoir modifié une image, vous pouvez enregistrer la nouvelle image en ta
 ## Modifier l’image {#edit-image}
 
 Accédez à Assets vue UI, en utilisant le lien - [Assets Afficher](https://experience.adobe.com/#/assets) et en sélectionnant le référentiel approprié. Pour recevoir un accès, contactez l’équipe d’administration de votre entreprise.
-Pour obtenir des informations de référence supplémentaires, reportez-vous aux rubriques Commencer [à utiliser Adobe Experience Manager Assets Affichage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Présentation de l’interface](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) utilisateur de la vue Assets et [Assets Cas d’utilisation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)
+Pour obtenir des informations de référence supplémentaires, reportez-vous aux rubriques Commencer [à utiliser Adobe Experience Manager Assets Affichage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Présentation de l’interface](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) utilisateur de la vue Assets et [Assets Cas d’utilisation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/fr/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
