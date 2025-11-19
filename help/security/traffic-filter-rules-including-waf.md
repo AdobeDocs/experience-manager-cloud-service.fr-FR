@@ -4,8 +4,8 @@ description: Configurer des règles de filtre de trafic incluant des règles de 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Les règles de filtre de trafic peuvent être utilisées pour bloquer ou autoris
 
 * Limiter l’accès à des domaines spécifiques au trafic interne de l’entreprise, avant la mise en service d’un nouveau site
 * Définir des limites de débit pour être moins sensible aux attaques par déni de service (DoS) volumétriques
-* Empêcher les adresses IP connues pour être malveillantes de cibler vos pages
+* Empêcher les adresses IP connues pour être malveillantes de cibler vos pages
 
 La plupart de ces règles de filtrage de trafic sont disponibles pour l’ensemble des clientes et clients d’AEM as a Cloud Service Sites et Forms. Appelées *règles de filtrage de trafic standard*, elles s’appliquent principalement sur les propriétés et en-têtes de requête, y compris l’adresse IP, le nom d’hôte, le chemin et l’agent utilisateur. Les règles de filtrage de trafic standard incluent des règles de limite de débit, permettant de se prémunir contre les pics de trafic.
 
@@ -72,7 +72,7 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
 1. Lisez et testez le tutoriel pour comprendre concrètement comment utiliser les règles de filtrage du trafic, y compris les règles WAF si elles sont sous licence. Ce tutoriel vous guide tout au long des étapes du déploiement de règles dans un environnement de développement, de la simulation du trafic malveillant et du téléchargement des [journaux du réseau CDN](#cdn-logs) à leur analyse dans les [outils du tableau de bord](#dashboard-tooling).
 1. Copiez les règles de démarrage recommandées dans `cdn.yaml` et déployez la configuration dans l’environnement de production, en plaçant certaines règles en mode journal.
 1. Après avoir collecté du trafic, analysez les résultats à l’aide des [outils du tableau de bord](#dashboard-tooling) pour voir s’il y a des correspondances. Recherchez les faux positifs et effectuez les réglages nécessaires, en activant les règles de démarrage en mode bloc.
-1. Si nécessaire, ajoutez des règles personnalisées basées sur l’analyse des journaux du réseau CDN, d’abord en les testant avec du trafic simulé sur des environnements de développement, avant de procéder au déploiement dans des environnements d’évaluation et de production en mode journal, puis en mode bloc.
+1. Si nécessaire, ajoutez des règles personnalisées basées sur l’analyse des journaux du CDN, d’abord en les testant avec du trafic simulé sur des environnements de développement, avant de procéder au déploiement dans des environnements d’évaluation et de production en mode journal, puis en mode bloc.
 1. Surveillez le trafic de manière continue, en modifiant les règles à mesure que le paysage de la menace évolue.
 
 ## Configuration {#setup}
@@ -82,8 +82,6 @@ Voici un processus de bout en bout de haut niveau recommandé pour obtenir les r
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ Voici un exemple d’un ensemble de règles de filtrage du trafic, qui incluent 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -244,7 +240,7 @@ La propriété `wafFlags`, qui peut être utilisée dans les règles de filtre d
 | CMDEXE | Exécution de commande | L’exécution de commande est une tentative de contrôle ou d’endommagement d’un système cible par le biais de commandes système arbitraires au moyen d’entrées de l’utilisateur ou de l’utilisatrice. |
 | CMDEXE-NO-BIN | Exécution de commande, sauf sur `/bin/` | Fournit le même niveau de protection que `CMDEXE` lors de la désactivation du faux positif sur `/bin` en raison de l’architecture AEM. |
 | XSS | Scripts intersites | Les scripts intersites consistent à tenter de détourner un compte d’utilisateur ou d’utilisatrice ou une session de navigation web par le biais d’un code JavaScript malveillant. |
-| TRAVERSAL | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
+| TRAVERSÉE | Traversée de répertoire | La traversée de répertoire est une tentative de navigation dans des dossiers privilégiés à travers un système dans l’espoir d’obtenir des informations sensibles. |
 | USERAGENT | Outils d’attaque | Les outils d’attaque consistent à utiliser des logiciels automatisés pour identifier des vulnérabilités de sécurité ou pour tenter d’exploiter une vulnérabilité découverte. |
 | LOG4J-JNDI | Log4J JNDI | Les attaques Log4J JNDI tentent d’exploiter la [Vulnérabilité Log4Shell](https://fr.wikipedia.org/wiki/Log4Shell) présente dans les versions de Log4J antérieures à la version 2.16.0 |
 | CVE | CVE | Indicateur utilisé pour identifier un CVE. Est toujours associé à un indicateur `CVE-<CVE Number>`. Contactez Adobe pour en savoir plus sur les CVE contre lesquels Adobe vous protégera. |
@@ -302,8 +298,6 @@ Cette règle bloque les requêtes provenant de l’**IP192.168.1.1** :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ Cette règle bloque les requêtes sur le chemin d’accès `/helloworld` lors de
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ Cette règle bloque les requêtes à la publication qui contiennent le paramètr
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ Cette règle bloque les requêtes vers le chemin d’accès `/block-me` à la pu
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ Cette règle bloque l’accès aux pays de l’OFAC :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ Cette règle bloque un client pendant 5 millisecondes lorsqu’il dépasse un m
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ Bloque les requêtes sur le chemin d’accès /critical/resource pendant 60 sec
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ La propriété d’alerte peut être appliquée au nœud d’action pour tous le
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -538,8 +518,6 @@ Cette alerte est activée par défaut, mais elle peut être désactivée à l’
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -578,8 +556,6 @@ L’exemple ci-dessous illustre un exemple de `cdn.yaml` et deux entrées de jou
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ Commencez par les règles suivantes :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
