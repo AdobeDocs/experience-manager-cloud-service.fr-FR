@@ -4,7 +4,7 @@ description: Découvrez comment configurer le trafic CDN en déclarant des règl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%
@@ -44,8 +44,6 @@ Avant de pouvoir configurer le trafic sur le réseau CDN, vous devez effectuer l
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
 1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit sous [Pipeline de configuration](/help/operations/config-pipeline.md#folder-structure).
@@ -79,8 +77,6 @@ Exemple de configuration :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -227,8 +223,6 @@ Exemple de configuration :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ Exemple de configuration :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ Exemple de configuration :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -456,8 +446,6 @@ Voici un exemple de règle de sélecteur d’origine qui peut accomplir cela :
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ Voici un exemple de règle de sélecteur d’origine qui peut accomplir cela :
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -507,7 +493,7 @@ data:
 
 >[!NOTE]
 >
->Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[&#x200B; des notifications push de Edge Delivery Services &#x200B;](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>Étant donné que le réseau CDN géré par Adobe est utilisé, veillez à configurer l’invalidation des notifications push en mode **géré**, en suivant la documentation relative à l’[ des notifications push de Edge Delivery Services ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Redirections côté serveur {#server-side-redirectors}
@@ -523,8 +509,6 @@ Exemple de configuration :
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
