@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Configuration des pages d’erreur du réseau CDN {#cdn-error-pages}
 
-Dans le cas peu probable où le réseau CDN géré par Adobe [](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+Dans le cas peu probable où le réseau CDN géré par Adobe [&#128279;](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) ne pourrait pas atteindre l’origine AEM, le réseau CDN diffuse par défaut une page d’erreur générique sans marque qui indique que le serveur ne peut pas être atteint. Vous pouvez remplacer la page d’erreur par défaut en hébergeant des fichiers statiques dans un stockage auto-hébergé tel qu’Amazon S3 ou Azure Blob Storage, et en les référençant dans un fichier de configuration déployé à l’aide du pipeline Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuration {#setup}
 
@@ -22,9 +22,9 @@ Avant de pouvoir remplacer la page d’erreur par défaut, procédez comme suit 
 
 1. Créez un fichier nommé `cdn.yaml` ou similaire, en vous référant à la section de syntaxe ci-dessous.
 
-1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [ Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
+1. Placez le fichier quelque part sous un dossier de niveau supérieur nommé *config* ou similaire, comme décrit dans la section [&#x200B; Utilisation des pipelines de configuration](/help/operations/config-pipeline.md#folder-structure).
 
-1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [ Utilisation de pipelines de configuration ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Créez un pipeline de configuration dans Cloud Manager, comme décrit dans la section [&#x200B; Utilisation de pipelines de configuration &#x200B;](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Déployez la configuration.
 

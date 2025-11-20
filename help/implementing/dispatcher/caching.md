@@ -26,7 +26,7 @@ Ces en-têtes de cache sont généralement définis dans les configurations vhos
 
 La clé de cache pour les ressources CDN contient l’URL de requête complète, y compris les paramètres de requête. Chaque paramètre de requête produit donc une entrée de cache différente. Envisagez de supprimer les paramètres de requête indésirables ; [voir ci-dessous](#marketing-parameters) pour améliorer le taux d’accès au cache.
 
-Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache par le réseau CDN d’AEM as a Cloud Service (voir [ Comment désactiver la mise en cache du réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) pour plus d’informations).  En outre, les réponses qui définissent des cookies, c’est-à-dire qui ont un en-tête de réponse `Set-Cookie`, ne sont pas mises en cache par le réseau CDN.
+Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache par le réseau CDN d’AEM as a Cloud Service (voir [&#x200B; Comment désactiver la mise en cache du réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) pour plus d’informations).  En outre, les réponses qui définissent des cookies, c’est-à-dire qui ont un en-tête de réponse `Set-Cookie`, ne sont pas mises en cache par le réseau CDN.
 
 ### HTML/texte {#html-text}
 
@@ -237,7 +237,7 @@ Actuellement, les images dans l’espace de stockage blob marquées comme privé
 
 ### Analyse du ratio d’accès au cache du réseau CDN {#analyze-chr}
 
-Pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du ratio d’accès au cache de votre site à l’aide d’un tableau de bord[ consultez le ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) tutoriel d’analyse du ratio d’accès au cache .
+Pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du ratio d’accès au cache de votre site à l’aide d’un tableau de bord[&#x200B; consultez le &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) tutoriel d’analyse du ratio d’accès au cache .
 
 ### Comportement de la requête HEAD {#request-behavior}
 
