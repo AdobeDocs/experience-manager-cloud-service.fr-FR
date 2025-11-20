@@ -22,11 +22,11 @@ Cette page décrit également comment le cache du Dispatcher est invalidé, ains
 
 La mise en cache des réponses HTTP dans le réseau CDN AEM as a Cloud Service est contrôlée par les en-têtes de réponse HTTP suivants à partir de l’origine : `Cache-Control`, `Surrogate-Control` ou `Expires`.
 
-Ces en-têtes de cache sont généralement définis dans les configurations vhost d’AEM Dispatcher à l’aide de mod_headers, mais peuvent également être définis dans le code Java™ personnalisé s’exécutant dans l’instance de publication AEM elle-même (voir [Comment activer la mise en cache du réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+Ces en-têtes de cache sont généralement définis dans les configurations vhost d’AEM Dispatcher à l’aide de mod_headers, mais peuvent également être définis dans le code Java™ personnalisé s’exécutant dans l’instance de publication AEM elle-même (voir [Comment activer la mise en cache du réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
 
 La clé de cache pour les ressources CDN contient l’URL de requête complète, y compris les paramètres de requête. Chaque paramètre de requête produit donc une entrée de cache différente. Envisagez de supprimer les paramètres de requête indésirables ; [voir ci-dessous](#marketing-parameters) pour améliorer le taux d’accès au cache.
 
-Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache par le réseau CDN d’AEM as a Cloud Service (voir [&#x200B; Comment désactiver la mise en cache du réseau CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) pour plus d’informations).  En outre, les réponses qui définissent des cookies, c’est-à-dire qui ont un en-tête de réponse `Set-Cookie`, ne sont pas mises en cache par le réseau CDN.
+Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache par le réseau CDN d’AEM as a Cloud Service (voir [&#x200B; Comment désactiver la mise en cache du réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) pour plus d’informations).  En outre, les réponses qui définissent des cookies, c’est-à-dire qui ont un en-tête de réponse `Set-Cookie`, ne sont pas mises en cache par le réseau CDN.
 
 ### HTML/texte {#html-text}
 
@@ -53,7 +53,7 @@ Cette méthode peut se révéler utile, par exemple, lorsque votre logique comme
   ```
 
   >[!NOTE]
-  >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par Adobe. Si vous utilisez un [réseau CDN géré par le client ou la cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau CDN.
+  >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par Adobe. Si vous utilisez un [réseau CDN géré par le client ou la cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=fr#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau CDN.
 
   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou des en-têtes de cache similaires qui correspondent à une expression régulière (regex) large, afin qu’ils ne soient pas appliqués au contenu que vous devez garder privé. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Pour autant, AEM as a Cloud Service supprime l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **`always`** comme suit :
 
@@ -237,7 +237,7 @@ Actuellement, les images dans l’espace de stockage blob marquées comme privé
 
 ### Analyse du ratio d’accès au cache du réseau CDN {#analyze-chr}
 
-Pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du ratio d’accès au cache de votre site à l’aide d’un tableau de bord[&#x200B; consultez le &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) tutoriel d’analyse du ratio d’accès au cache .
+Pour plus d’informations sur le téléchargement des journaux CDN et l’analyse du ratio d’accès au cache de votre site à l’aide d’un tableau de bord[&#x200B; consultez le &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=fr) tutoriel d’analyse du ratio d’accès au cache .
 
 ### Comportement de la requête HEAD {#request-behavior}
 
@@ -512,7 +512,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -524,9 +524,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/fr/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/fr/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Bibliothèques côté client et cohérence entre les versions {#content-consistency}
 
