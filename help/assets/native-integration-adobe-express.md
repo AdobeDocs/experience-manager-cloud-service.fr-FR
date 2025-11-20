@@ -4,9 +4,9 @@ description: L’intégration native d’AEM Assets à Adobe Express vous permet
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
+source-git-commit: 3046da6d16b2494f6a3f18c60df7a4600afcd7ba
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '793'
 ht-degree: 8%
 
 ---
@@ -106,6 +106,9 @@ Adobe recommande, en règle générale, de spécifier des valeurs dans le reste 
         <td>[!UICONTROL MP4]</td>
         <td> 3 840 x 3 840 pixels, 200 Mo maximum</td>
     </tr>
+    <tr>
+      <td colspan="2"> <i> La taille de la ressource doit être inférieure à 80 Mo pour les ordinateurs de bureau et à 40 Mo pour les appareils mobiles. </i></td>
+   </tr>
     </tbody>
 </table>
 
