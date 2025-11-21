@@ -18,7 +18,7 @@ ht-degree: 0%
 >Cette fonctionnalité sera disponible en tant que fonctionnalité **à disponibilité limitée** à partir du 25 septembre. Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour activer la fonctionnalité dans vos programmes.
 
 >[!WARNING]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. Ainsi, AEM as a Cloud Service offre la possibilité de définir une période pendant laquelle les mises à jour automatiques ne se produisent pas pour vos programmes en cours.
 
