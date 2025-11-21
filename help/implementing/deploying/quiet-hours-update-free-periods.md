@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilité limitée" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >Cette fonctionnalité sera disponible en tant que fonctionnalité **à disponibilité limitée** à partir du 25 septembre. Envoyez un e-mail à [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) pour activer la fonctionnalité dans vos programmes.
 
 >[!WARNING]
->Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [&#x200B; Mises à jour de maintenance automatiques &#x200B;](/help/implementing/deploying/aem-version-updates.md).
+>Vous ne pouvez utiliser les fonctions Heures calmes et Mettre à jour les périodes libres qu’après avoir intégré les [ Mises à jour de maintenance automatiques ](/help/implementing/deploying/aem-version-updates.md).
 
 Les [mises à jour de maintenance automatique](/help/implementing/deploying/aem-version-updates.md) d’AEM as a Cloud Service garantissent la sécurité de vos instances et les mettent à jour avec les dernières versions de maintenance. Cela dit, dans certains cas (comme les événements de mise en production), vous devrez peut-être « protéger » ces heures de travail critiques contre d’éventuelles perturbations. Ainsi, AEM as a Cloud Service offre la possibilité de définir une période pendant laquelle les mises à jour automatiques ne se produisent pas pour vos programmes en cours.
 
@@ -27,7 +27,7 @@ Vous pouvez configurer ces périodes à l’aide de deux options de planificatio
 * **Heures calmes** - Vous pouvez définir un intervalle de temps quotidien (jusqu’à 8 heures) où aucune mise à jour n’aura lieu.
 * **Mettre à jour les périodes libres** - Vous pouvez définir une période de 7 jours pendant laquelle aucune mise à jour n’aura lieu. Vous pouvez avoir jusqu’à trois périodes de mise à jour gratuite sur une période de 12 mois.
 
-Les fonctionnalités de mise à jour des périodes libres et des heures creuses sont configurées « par programme ».
+Les fonctionnalités de mise à jour des périodes libres et des heures creuses sont configurées « par programme ». Gardez à l’esprit que seuls les utilisateurs disposant du « rôle utilisateur » **Propriétaire de l’entreprise** et **Responsable de déploiement** peuvent afficher et utiliser ces fonctionnalités.
 
 De plus, pour plus d’informations sur les périodes de maintenance automatique d’AEM as a Cloud Service planifiées, reportez-vous à la page [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -76,3 +76,13 @@ Accédez à **Activités > Mises à jour automatiques > Options de mise à jour*
 ![Mettre à jour la configuration des périodes libres](assets/update-free-periods.png)
 
 Une icône **Actif** s’affiche près de la période d’exemption de mise à jour actuellement active et une icône **Terminé** près des périodes d’exemption de mise à jour terminées.
+
+## Périodes d’exclusion de la maintenance planifiée {#planned-maintenance}
+
+Adobe comporte un certain nombre de périodes d’exclusion de maintenance planifiée. Ces périodes sont définies par Adobe afin de minimiser les risques autour des événements critiques et se produisent généralement deux ou trois fois par an. Vous pouvez consulter le planning exact des périodes d’exclusion de maintenance sur la page [Feuille de route de la version de maintenance](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+Pour vous aider à configurer précisément vos périodes sans mise à jour, les périodes d’exclusion de maintenance sont également affichées dans l’interface utilisateur Heures calmes et Périodes sans mise à jour .
+
+![Périodes d’exclusion de la maintenance planifiée](assets/planned-maintenance.png)
+
+Veuillez noter que vous ne pouvez pas créer de période sans mise à jour pendant les périodes d’exclusion.
