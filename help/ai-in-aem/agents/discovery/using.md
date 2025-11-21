@@ -3,9 +3,9 @@ title: Présentation de l’agent Discovery
 description: Découvrez comment utiliser l’agent Discovery pour diffuser du contenu AEM pertinent à la demande par le biais d’invites naturelles et conversationnelles pour une expérience de découverte rationalisée et sans clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Remarque : la découverte de formulaires prend actuellement en charge les formul
 
 ### Assets {#discovery-agent-search-results-assets}
 
-L&#39;agent Discovery renvoie les 20 premiers résultats pour chaque requête, triés par pertinence pour s&#39;assurer que les correspondances exactes apparaissent en premier. L’agent combine des requêtes basées sur les métadonnées avec de la recherche sémantique pour assembler un ensemble ciblé de correspondances probables, puis utilise un LLM pour les classer en fonction de l’intention de l’utilisateur. Cette approche mixte fournit des résultats précis et contextuels sans dépendre entièrement d’une correspondance directe des mots-clés.
+L&#39;agent Discovery renvoie les meilleurs résultats pour chaque requête, triés par pertinence pour s&#39;assurer que les correspondances exactes apparaissent en premier. L’agent combine des requêtes basées sur les métadonnées avec de la recherche sémantique pour assembler un ensemble ciblé de correspondances probables, puis utilise un LLM pour les classer en fonction de l’intention de l’utilisateur. Cette approche mixte fournit des résultats précis et contextuels sans dépendre entièrement d’une correspondance directe des mots-clés.
 
 Chaque résultat inclut le nom de la ressource ainsi que les métadonnées clés de la ressource telles que le chemin d’accès, le créateur, la date de création, le titre, la description, le format, le dernier modificateur, la date de dernière modification, la taille du fichier, les dimensions, l’[URL de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) et les balises associées. Si une ressource est à l’état approuvé, les résultats incluent également [Dynamic Media avec l’URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
 
@@ -152,11 +152,11 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
-Discovery Agent fournit des fonctionnalités de recherche plein texte pour les fragments de contenu, renvoyant les 20 premiers résultats qui correspondent le mieux à l’invite spécifiée. Chaque résultat comprend le nom du fragment de contenu avec les champs de métadonnées clés tels que le chemin du fragment de contenu, le créateur, la date de création, les variations, le dernier modificateur et les champs de date de dernière modification.
+Discovery Agent fournit des fonctionnalités de recherche de texte intégral pour les fragments de contenu, renvoyant les meilleurs résultats qui correspondent le mieux à l’invite spécifiée. Chaque résultat comprend le nom du fragment de contenu avec les champs de métadonnées clés tels que le chemin du fragment de contenu, le créateur, la date de création, les variations, le dernier modificateur et les champs de date de dernière modification.
 
 ![Rechercher des fragments de contenu à l’aide de l’agent de découverte](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
