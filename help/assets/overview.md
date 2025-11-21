@@ -3,9 +3,9 @@ title: Présentation d’Assets as a Cloud Service pour la gestion des ressou
 description: Présentation d’Assets as a Cloud Service pour la gestion des ressources numériques dans AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
-source-wordcount: '5078'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -70,11 +70,11 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
    </p>
 </td>
 <td>
-   <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
    <img alt="Utiliser Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
    </a>
    <div>
-      <a href="https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html">
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
       <strong>Utiliser Adobe Asset Link</strong>
       </a>
    </div>
@@ -86,7 +86,7 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 
 >[!TAB Fonctionnalités basées sur l’IA]
 
-**Balises intelligentes** : les balises intelligentes utilisent le framework d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’images à prendre en charge votre structure de balises et votre taxonomie d’entreprise. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
+**Balises intelligentes** : les balises intelligentes utilisent le framework d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’images à prendre en charge votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
 
 **Balisage et recherche intelligents basés sur la couleur** : AEM Assets utilise les fonctionnalités d’IA d’Adobe Sensei pour distinguer les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
@@ -191,7 +191,7 @@ Utilisez ces liens pour accéder à la documentation détaillée sur ces outils 
 </td>
 </table>
 
-**Imagerie intelligente** : l’imagerie intelligente offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités du navigateur d’un client ou d’une cliente. Elle fonctionne avec vos paramètres prédéfinis d’image existants et utilise des informations lors de la diffusion. Ces informations permettent de réduire davantage la taille du fichier image en fonction du navigateur et de la vitesse de connexion du réseau.
+**Imagerie intelligente** : l’imagerie intelligente offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités du navigateur d’un client ou d’une cliente. Elle fonctionne avec vos paramètres d’image prédéfinis existants et utilise des informations lors de la diffusion. Ces informations permettent de réduire davantage la taille du fichier image en fonction du navigateur et de la vitesse de connexion du réseau.
 
 **Recadrage intelligent** : une fonctionnalité d’IA d’Adobe Sensei, pour détecter automatiquement le point focal d’une image ou d’une vidéo et le recadrer pour pouvoir le gérer. Il capture le point ciblé prévu, quelle que soit la taille de l’écran, élimine ainsi les tâches manuelles fastidieuses et fournit des images et des vidéos à chargement rapide et de haute qualité qui s’affichent correctement sur n’importe quel appareil ou écran.
 
@@ -251,7 +251,7 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 **Gestion des métadonnées** : les métadonnées constituent l’élément le plus important lorsque vous débutez votre parcours de gestion des ressources. La gestion des métadonnées échappe complètement au contrôle des administrateurs et des administratrices une fois les ressources distribuées aux utilisateurs et aux utilisatrices. Des métadonnées de ressources efficaces permettent d’améliorer la recherche, qui est le but ultime de tout outil de gestion des ressources numériques.
 
 
-**Formulaires de métadonnées** : Assets as a Cloud Service fournit par défaut de nombreux champs de métadonnées standard. Si vous avez des besoins supplémentaires en matière de métadonnées et de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à votre entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page Détails d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources. Vous pouvez créer des formulaires entièrement ou réutiliser un formulaire existant.
+**Formulaires de métadonnées** : Assets as a Cloud Service fournit par défaut de nombreux champs de métadonnées standard. Si vous avez des besoins supplémentaires en matière de métadonnées et de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à votre entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page Détails d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources. Vous pouvez créer des formulaires entièrement ou réutiliser un formulaire existant.
 
 <table>
 <td>
@@ -270,11 +270,11 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Bonnes pratiques de gestion des métadonnées" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=fr">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Bonnes pratiques de gestion des métadonnées</strong>
       </a>
    </div>
@@ -297,7 +297,7 @@ AEM Assets offre des fonctionnalités qui vous aident à trouver rapidement la 
 </td>
 </table>
 
-**Balises intelligentes** : les balises intelligentes utilisent le framework d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’images à prendre en charge votre structure de balises et votre taxonomie d’entreprise. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
+**Balises intelligentes** : les balises intelligentes utilisent le framework d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’images à prendre en charge votre structure de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. Par défaut, AEM applique automatiquement les balises intelligentes aux ressources chargées.
 
 **Recherche de ressources** : une fois les métadonnées appropriées en place, AEM Assets vous permet d’effectuer une recherche à l’aide de divers opérateurs, caractères génériques, requêtes avancées et filtres personnalisés.
 
@@ -599,11 +599,11 @@ Si vous disposez déjà d’un site web [!DNL Edge Delivery Services], consultez
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Intégration à Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Intégration à Commerce</strong>
       </a>
    </div>
@@ -700,7 +700,7 @@ Dynamic Media vous aide à diffuser des ressources visuelles de merchandising e
 
 Dynamic Media propose les principales fonctionnalités suivantes :
 
-* **Imagerie intelligente** : l’imagerie intelligente offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités du navigateur d’un client ou d’une cliente. Elle fonctionne avec vos paramètres prédéfinis d’image existants et utilise des informations lors de la diffusion. Ces informations permettent de réduire davantage la taille du fichier image en fonction du navigateur et de la vitesse de connexion du réseau.
+* **Imagerie intelligente** : l’imagerie intelligente offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités du navigateur d’un client ou d’une cliente. Elle fonctionne avec vos paramètres d’image prédéfinis existants et utilise des informations lors de la diffusion. Ces informations permettent de réduire davantage la taille du fichier image en fonction du navigateur et de la vitesse de connexion du réseau.
 
 * **Visionneuses de vidéos adaptatives** : une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées à des débits et des formats différents. Vous commencez avec votre vidéo principale originale que vous chargez dans le système. Dynamic Media mesure automatiquement, ou transcode, cette vidéo en plusieurs vidéos. Ensuite, au moment de la diffusion, il est intelligemment déterminé quel écran vidéo, quelle qualité et quel format utiliser et la vidéo est diffusée sur le téléphone, la tablette ou l’ordinateur de bureau.
 
