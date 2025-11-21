@@ -3,9 +3,9 @@ title: Compétence en création de formulaire
 description: Découvrez les compétences de création de formulaires de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des formulaires en partant de zéro.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ commandes en langage naturel simple, éliminant la nécessité d’apprendre les
 
 * **Créer un formulaire avec une invite en texte brut** : vous pouvez créer un formulaire en soumettant vos besoins en langage clair. L’agent génère automatiquement la structure de formulaire appropriée, les types de champs et les expériences sur la marque en fonction de votre description en langage naturel et du modèle spécifié. Cette fonctionnalité accélère la création de formulaires tout en garantissant le respect des normes de marque et de conformité.
 
-* **Importer un PDF ou une image et le convertir en formulaire** : vous pouvez importer et transformer une image ou des documents PDF existants en formulaires. L’agent analyse le contenu chargé pour détecter les types de champs, conserver les mises en page et améliorer les formulaires grâce à une conception réactive et à une logique de validation, tout en garantissant le respect des normes de marque et de conformité. Les formats pris en charge sont les documents PDF, les images (JPG, PNG) et les photographies de formulaires dessinées à la main.
+* **Importer un document PDF et le convertir en formulaire** : vous pouvez importer et transformer des documents PDF existants en formulaires. L’agent analyse le contenu chargé pour détecter les types de champs, conserver les mises en page et améliorer les formulaires grâce à une conception réactive et à une logique de validation, tout en garantissant le respect des normes de marque et de conformité.
 
   Lorsque vous utilisez l’une des fonctionnalités ci-dessus, vous êtes invité à choisir le type de formulaire à créer, à spécifier un modèle de formulaires adaptatifs basé sur les composants principaux ou un modèle de formulaires adaptatifs basé sur Edge Delivery Services, puis à indiquer votre chemin préféré pour enregistrer le formulaire. Si vous créez un formulaire basé sur Edge Delivery Services, vous pouvez également spécifier l’URL GitHub de votre référentiel.
 
@@ -40,7 +40,7 @@ commandes en langage naturel simple, éliminant la nécessité d’apprendre les
 * *Créez un formulaire de demande de carte de crédit en important le fichier PDF disponible à l’adresse « https:// [aem-author-url ]/path/to/pdf/file »*
 * *Créez un formulaire de commentaires à l’aide du modèle standard sur « <https://github.com/wkndforms/wesecure> »*
 
-## Étapes suivantes {#refine-with-forms-experience-builder}
+## Affiner le formulaire {#refine-with-forms-experience-builder}
 
 Après avoir créé votre structure de formulaire initiale à l’aide de l’assistant AI, vous pouvez utiliser le Forms Experience Builder pour :
 

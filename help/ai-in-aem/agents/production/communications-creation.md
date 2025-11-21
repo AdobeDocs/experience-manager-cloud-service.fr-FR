@@ -3,15 +3,15 @@ title: Compétence en création de communication
 description: Découvrez les compétences de création de communication de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des communications interactives.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 
-# Compétence en création de communication {#ic-creation-skill}
+# Compétence de création de communication {#ic-creation-skill}
 
 Les communications interactives sont des documents personnalisés, pilotés par les données, conçus pour la correspondance commerciale telle que les relevés de compte, les documents de politique, les factures, les kits de bienvenue et les avis de prestations. Contrairement aux formulaires qui collectent les entrées des utilisateurs, les communications interactives génèrent des documents de sortie avec un contenu dynamique spécifique au destinataire.
 
@@ -25,45 +25,44 @@ Voici quelques-uns des principaux avantages des compétences en création de com
 
 ## Fonctionnalités {#capabilities}
 
-* **Créer des communications personnalisées avec une invite en texte brut** : vous pouvez créer des documents de communication à imprimer (au format PDF) en soumettant vos besoins en langage clair. L’agent génère automatiquement les structures de document, mises en page et liaisons de données appropriées en fonction de la description en langage naturel.
+<!-- * **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description. -->
 
 * **Créer à partir de modèles** : vous pouvez utiliser des modèles organisationnels approuvés pour garantir la cohérence de la marque et les normes de conformité. L’agent tire parti de vos modèles et directives de style existants pour créer une correspondance de marque conforme aux exigences réglementaires.
 
-* **Importer et convertir des documents existants en communications interactives** : vous pouvez importer et transformer des documents existants en communications interactives. L’agent analyse le contenu chargé pour détecter les champs, conserver les mises en page et créer une correspondance pilotée par les données grâce aux fonctionnalités de contenu dynamique. Les formats pris en charge sont les PDF, les fichiers XDP, les images (JPG, PNG) et les modèles dessinés à la main.
+* **Importer et convertir des images et des documents existants en communications interactives** : vous pouvez importer et transformer des documents existants en communications interactives. L’agent analyse le contenu chargé pour détecter les champs, conserver les mises en page et créer une correspondance pilotée par les données grâce aux fonctionnalités de contenu dynamique. Les formats pris en charge sont les PDF, les images (JPG, PNG) et les modèles dessinés à la main.
 
 
 ## Exemples d’invites {#sample-prompts}
 
-* *Créez un relevé de compte bancaire avec un tableau de l&#39;historique des transactions et un graphique de solde*
-* *Générer un résumé du portefeuille de placement avec des graphiques de performances et une répartition des actifs*
-* *Créez un relevé de prêt avec échéancier de paiement et solde restant*
-* *Créer un document de police d’assurance avec les détails de couverture et la répartition des primes*
-* *Générer un résumé de réclamation avec le calendrier de statut et les informations de paiement*
-* *Créez un avis de renouvellement de politique avec un graphique de comparaison des conditions et des prix mis à jour*
-* *Créez une facture de services publics avec un graphique d&#39;utilisation, des détails de paiement et un historique de facturation*
-* *Générer une notification de service avec un résumé de compte et des éléments d’action*
-* *Créer un rapport d’utilisation annuel avec un graphique de consommation mensuelle et une analyse des coûts*
-* *Créer une lettre d&#39;offre d&#39;emploi avec détails sur la rémunération et résumé des avantages*
-* *Générer un document d’intégration des employés avec les politiques de l’entreprise et les formulaires requis*
-* *Créez un avis aux citoyens contenant des informations officielles et des instructions de réponse*
+* *Créez une communication pour un relevé de prêt à l’aide du modèle à l’adresse https://[aem-author-url]/path/to/pdf/file*
+* *Créez une communication à partir de PDF à l’adresse https://[aem-author-url]/path/to/pdf/file*
+* *Créez une communication à partir du fichier image à l’adresse https://[aem-author-url]/path/to/image/file*
+* Créez une lettre en utilisant le fichier PDF à l’adresse https://[aem-author-url]/path/to/pdf/file
 
-## Étapes suivantes {#refine-with-ic-editor}
+## Affiner votre communication {#refine-with-ic-editor}
 
-Après avoir créé votre structure de communication initiale à l’aide de l’assistant AI ou d’Experience Hub, vous pouvez utiliser l’éditeur de communications interactives pour affiner et améliorer votre document :
+Après avoir créé votre structure de communication initiale à l’aide de l’assistant AI, vous pouvez utiliser l’éditeur de communications interactives pour affiner et améliorer votre document. Dans l’éditeur de communications interactives, vous pouvez fournir des invites en langage naturel pour :
 
-* **Modifier des champs à l’aide d’invites en langage naturel** : vous pouvez facilement ajouter, mettre à jour et supprimer des champs et leurs propriétés dans les documents à l’aide d’invites. L’agent interprète vos instructions et apporte les modifications appropriées à la structure du document et aux configurations de champ.
+* **Ajouter des champs et du contenu** : ajoutez de nouveaux champs, blocs de texte, images, graphiques, tableaux et autres composants à vos documents de communication à l’aide d’invites en langage naturel. L’agent interprète vos instructions et insère les éléments appropriés avec une structure et une mise en forme appropriées.
 
-* **Création incrémentielle de composants** : ajoutez ou modifiez des composants individuels tels que du texte, des images, des graphiques, des tableaux et des codes à barres via l’éditeur visuel.
+* **Modifier les champs et le contenu** : modifiez les champs et le contenu existants dans vos documents de communication au moyen de commandes de conversation. Mettez à jour les propriétés du champ, modifiez le contenu du texte, ajustez les liaisons de données et affinez les configurations de composant.
 
-* **Liaison de données dynamique** : configurez des sources de données, configurez des mappages de champs et liez des composants aux données d’arrière-plan pour la personnalisation.
+* **Supprimer des champs et du contenu** : supprimez les champs, composants ou sections indésirables de vos documents de communication à l’aide des instructions en langage naturel. L’agent supprime les éléments spécifiés tout en conservant l’intégrité de la structure du document et de la disposition.
 
-* **Amélioration de la disposition et de la conception** : ajustez le positionnement, la mise en forme, le style et les gabarits des pages pour obtenir une correspondance parfaite en pixels.
+* **Mettre en forme des champs et du contenu** : appliquez une mise en forme et un style aux champs et au contenu à l’aide d’invites en langage naturel. Ajustez les polices, les couleurs, l’alignement, l’espacement et d’autres propriétés visuelles pour répondre aux directives de votre marque et aux exigences de conception.
 
-* **Création et gestion de fragments** : créez des fragments de document réutilisables tels que des en-têtes, des pieds de page, des clauses de non-responsabilité et des blocs de signature par souci de cohérence.
+### Exemples d’invites pour affiner les communications {#sample-prompts-refining}
 
-* **Création de règles et de logique** : définissez du contenu conditionnel, configurez des règles métier et configurez des validations via l’éditeur de règles.
+* *Générer une lettre de règlement de demande d’assurance automobile*
+* *Mettre le texte de clause de non-responsabilité en italique*
+* *Remplacez la taille de police du texte de clause de non-responsabilité par 12*
+* *Mettre à jour la couleur de police du texte de clause de non-responsabilité en rouge*
+* *Mettre à jour la couleur d’arrière-plan des zones de texte d’en-tête et de pied de page en gris clair*
+* *Ajouter un nouveau panneau de clause de non-responsabilité avec des champs de signature et de confirmation*
+* *Supprimer le champ de texte de confirmation*
+* *Ajoutez un tableau des détails de paiement avec trois colonnes*
+* *Mettre à jour l’alignement du champ du numéro de politique sur le centre*
+* *Remplacez l’espacement des lignes de la section Conditions générales par 1.5*
 
-* **Sortie multicanal** : configurez les versions des canaux web et d’impression, en veillant à une présentation optimale sur les formats de diffusion.
-
-Pour plus d’informations, voir [Documentation sur les communications interactives](/help/forms/introduction-to-interactive-communication.md).
+Pour plus d’informations sur les fonctionnalités de l’éditeur de communication interactive, voir [Documentation sur les communications interactives](/help/forms/introduction-to-interactive-communication.md).
 
