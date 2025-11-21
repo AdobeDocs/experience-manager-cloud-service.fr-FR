@@ -3,9 +3,9 @@ title: Compétence en création de formulaire
 description: Découvrez les compétences de création de formulaires de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des formulaires en partant de zéro.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ commandes en langage naturel simple, éliminant la nécessité d’apprendre les
 
 ## Fonctionnalités {#capabilitiess}
 
-* **Création d’un formulaire avec une invite en texte brut** : vous pouvez créer des expériences de formulaire sur marque en soumettant vos exigences en langage clair.
+* **Créer un formulaire avec une invite en texte brut** : vous pouvez créer un formulaire en soumettant vos besoins en langage clair. L’agent génère automatiquement la structure de formulaire appropriée, les types de champs et les expériences sur la marque en fonction de votre description en langage naturel et du modèle spécifié. Cette fonctionnalité accélère la création de formulaires tout en garantissant le respect des normes de marque et de conformité.
 
-* **Importer un PDF ou une image et le convertir en formulaire** : vous pouvez importer et transformer une image ou des documents PDF existants en formulaires. L’agent analyse le contenu chargé pour détecter les types de champs, conserver les mises en page et améliorer les formulaires grâce à une conception réactive et à une logique de validation. Les formats pris en charge sont les Acroforms, les PDF XFA, les PDF aplatis, les images (JPG, PNG) et les photographies de formulaires dessinées à la main.
+* **Importer un PDF ou une image et le convertir en formulaire** : vous pouvez importer et transformer une image ou des documents PDF existants en formulaires. L’agent analyse le contenu chargé pour détecter les types de champs, conserver les mises en page et améliorer les formulaires grâce à une conception réactive et à une logique de validation, tout en garantissant le respect des normes de marque et de conformité. Les formats pris en charge sont les documents PDF, les images (JPG, PNG) et les photographies de formulaires dessinées à la main.
 
   Lorsque vous utilisez l’une des fonctionnalités ci-dessus, vous êtes invité à choisir le type de formulaire à créer, à spécifier un modèle de formulaires adaptatifs basé sur les composants principaux ou un modèle de formulaires adaptatifs basé sur Edge Delivery Services, puis à indiquer votre chemin préféré pour enregistrer le formulaire. Si vous créez un formulaire basé sur Edge Delivery Services, vous pouvez également spécifier l’URL GitHub de votre référentiel.
 
@@ -42,7 +42,7 @@ commandes en langage naturel simple, éliminant la nécessité d’apprendre les
 
 ## Étapes suivantes {#refine-with-forms-experience-builder}
 
-Après avoir créé votre structure de formulaire initiale à l’aide de l’assistant AI, vous pouvez utiliser l’extension de création Forms pour :
+Après avoir créé votre structure de formulaire initiale à l’aide de l’assistant AI, vous pouvez utiliser le Forms Experience Builder pour :
 
 * **Mettre à jour les formulaires** : ajoutez ou modifiez des champs, ajustez les types de champs et mettez à jour le style selon les besoins à l’aide de l’éditeur visuel.
 

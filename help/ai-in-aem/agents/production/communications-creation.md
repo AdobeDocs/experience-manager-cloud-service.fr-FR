@@ -3,9 +3,9 @@ title: Compétence en création de communication
 description: Découvrez les compétences de création de communication de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des communications interactives.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les communications interactives sont des documents personnalisés, pilotés par les données, conçus pour la correspondance commerciale telle que les relevés de compte, les documents de politique, les factures, les kits de bienvenue et les avis de prestations. Contrairement aux formulaires qui collectent les entrées des utilisateurs, les communications interactives génèrent des documents de sortie avec un contenu dynamique spécifique au destinataire.
 
-La compétence Création de communication est une fonctionnalité de l’agent de production d’expérience conçue pour développer des communications interactives à l’aide d’interactions en langage naturel. Il permet aux utilisateurs de créer des correspondances personnalisées basées sur les données sans processus manuels traditionnels. Cette compétence élimine la complexité de la conception de la communication en interprétant les invites conversationnelles et en générant automatiquement les structures de documents, mises en page et liaisons de données appropriées. Les compétences sont accessibles via l’assistant IA et Experience Hub.
+La compétence Création de communication est une fonctionnalité de l’agent de production d’expérience conçue pour développer des communications interactives à l’aide d’invites en langage naturel. Cette compétence génère automatiquement une correspondance personnalisée, pilotée par les données, pour l’impression (au format PDF). La compétence est surfacée via l’assistant d’IA.
 
 Voici quelques-uns des principaux avantages des compétences en création de communication :
 
@@ -23,13 +23,16 @@ Voici quelques-uns des principaux avantages des compétences en création de com
 * **Correspondance cohérente et interne à la marque** : créez des communications qui respectent les directives de votre organisation en matière d’image de marque, de modèles et de style en utilisant des modèles et des styles approuvés.
 * **Barrière technique plus faible** : permet aux utilisateurs professionnels de créer facilement des communications, sans avoir besoin d’une expertise technique avancée ou approfondie en matière de produits.
 
-## Cas d’utilisation et exemples d’invites {#use-cases-prompts}
+## Fonctionnalités {#capabilities}
 
-La compétence Création de communication vous permet de créer une correspondance de marque en soumettant vos exigences dans un langage simple.
+* **Créer des communications personnalisées avec une invite en texte brut** : vous pouvez créer des documents de communication à imprimer (au format PDF) en soumettant vos besoins en langage clair. L’agent génère automatiquement les structures de document, mises en page et liaisons de données appropriées en fonction de la description en langage naturel.
 
-Vous êtes invité à spécifier votre modèle, à indiquer votre chemin préféré pour enregistrer la communication et à fournir tous les détails sur la source de données. En fonction de ces sélections, la compétence Création de communication génère automatiquement le document approprié.
+* **Créer à partir de modèles** : vous pouvez utiliser des modèles organisationnels approuvés pour garantir la cohérence de la marque et les normes de conformité. L’agent tire parti de vos modèles et directives de style existants pour créer une correspondance de marque conforme aux exigences réglementaires.
 
-### Exemples d’invites {#sample-prompts}
+* **Importer et convertir des documents existants en communications interactives** : vous pouvez importer et transformer des documents existants en communications interactives. L’agent analyse le contenu chargé pour détecter les champs, conserver les mises en page et créer une correspondance pilotée par les données grâce aux fonctionnalités de contenu dynamique. Les formats pris en charge sont les PDF, les fichiers XDP, les images (JPG, PNG) et les modèles dessinés à la main.
+
+
+## Exemples d’invites {#sample-prompts}
 
 * *Créez un relevé de compte bancaire avec un tableau de l&#39;historique des transactions et un graphique de solde*
 * *Générer un résumé du portefeuille de placement avec des graphiques de performances et une répartition des actifs*
@@ -47,6 +50,8 @@ Vous êtes invité à spécifier votre modèle, à indiquer votre chemin préfé
 ## Étapes suivantes {#refine-with-ic-editor}
 
 Après avoir créé votre structure de communication initiale à l’aide de l’assistant AI ou d’Experience Hub, vous pouvez utiliser l’éditeur de communications interactives pour affiner et améliorer votre document :
+
+* **Modifier des champs à l’aide d’invites en langage naturel** : vous pouvez facilement ajouter, mettre à jour et supprimer des champs et leurs propriétés dans les documents à l’aide d’invites. L’agent interprète vos instructions et apporte les modifications appropriées à la structure du document et aux configurations de champ.
 
 * **Création incrémentielle de composants** : ajoutez ou modifiez des composants individuels tels que du texte, des images, des graphiques, des tableaux et des codes à barres via l’éditeur visuel.
 
