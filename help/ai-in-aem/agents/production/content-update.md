@@ -3,10 +3,10 @@ title: Compétence de mise à jour du contenu
 description: Découvrez la compétence de mise à jour de contenu de l’agent de production d’expérience et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ Ouvrez l’assistant d’IA à l’adresse experience.adobe.com, puis commencez 
 
 ![Accéder à l&#39;agent Discovery](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### Exemples d’invites {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+Pour lancer les mises à jour de contenu, vous pouvez donner un large éventail d’invites en langage naturel. Vous devez également spécifier l’URL publique de la page que vous souhaitez mettre à jour. Par exemple :
 
-* Change your headlines
+* modifiez la page suivante https://www.your-url.com/sale Mettez à jour l’en-tête principal du héros vers « Black Friday Mega Sale - Jusqu’à 70 % de réduction », modifiez le compte à rebours pour afficher « Se termine dans 48 heures », supprimez « S’inscrire aux mises à jour », modifiez tous les boutons « Shop Now » pour « Saisir l’offre ».
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model Mettre à jour la copie de bannière vers « Economisez 300 USD aujourd'hui seulement », Mettre à jour le prix de 1 299 USD à 999 USD, Supprimer la bannière d'option de financement
+
+* https://www.your-url.com/your-sneaker Mettez à jour le statut du stock de « Stock faible » vers « Stock de retour - Quantités limitées », modifiez le sélecteur de taille pour mettre en surbrillance les tailles disponibles en vert, supprimez le badge « Bientôt disponible »
+
+* https://www.your-url.com/your-sneaker Mettez à jour les images du produit pour afficher de nouvelles couleurs
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ Dans le cas d&#39;une commande `process` pour déclencher des mises à jour, les
 
 ### Activation {#activation}
 
-Pour activer l’agent de production et y accéder avec Jira, vous devez envoyer un e-mail à Adobe. Pour commencer, vous pouvez contacter :
+Pour activer l’agent de production Experience avec Jira et y accéder, vous devez envoyer un e-mail à Adobe. Pour commencer, vous pouvez contacter :
 
 * `experience-production-agent@adobe.com`
 * ou contactez votre équipe de compte
