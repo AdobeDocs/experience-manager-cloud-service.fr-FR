@@ -3,7 +3,7 @@ title: Présentation de l’agent Discovery
 description: Découvrez comment utiliser l’agent Discovery pour diffuser du contenu AEM pertinent à la demande par le biais d’invites naturelles et conversationnelles pour une expérience de découverte rationalisée et sans clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -152,7 +152,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
