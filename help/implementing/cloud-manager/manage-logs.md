@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 68%
 
 ---
 
@@ -22,8 +22,6 @@ Vous pouvez accéder à la liste des fichiers journaux disponibles pour l’envi
 Les journaux sont conservés pendant sept jours.
 
 ## Télécharger les journaux {#download-logs}
-
-Pour télécharger les journaux, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
@@ -101,5 +99,5 @@ Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur 
 
 Consultez les ressources supplémentaires suivantes pour en savoir plus sur les fichiers journaux dans AEM as a Cloud Service :
 
-* [Fichiers journaux AEM Cloud 5](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Fichiers journaux AEM Cloud 5](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Déboguer AEM as a Cloud Service à l’aide de journaux](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
