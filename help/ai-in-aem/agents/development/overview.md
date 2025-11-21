@@ -1,19 +1,19 @@
 ---
-title: Présentation de l’agent de développement d’expérience
-description: Découvrez comment l’agent de développement Experience dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
-feature: Edge Delivery Services, Agentic AI
+title: Présentation de l’agent de développement
+description: Découvrez comment l’agent de développement dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Présentation de l’agent de développement Experience {#development-agent-overview}
+# Présentation de l’agent de développement {#development-agent-overview}
 
-Experience Development Agent aide les développeurs et les administrateurs d’AEM à créer, déboguer, déployer et optimiser le code plus efficacement.
+L’agent de développement permet aux développeurs et aux administrateurs d’AEM de créer, déboguer, déployer et optimiser le code plus efficacement.
 
 Actuellement, l’agent peut récupérer les statuts de pipeline et vous aider à résoudre les problèmes d’échec des étapes de création en suggérant des correctifs, ce qui vous permet de gagner du temps lors du débogage des déploiements d’AEM as a Cloud Service dans les environnements de développement, d’évaluation et de production. Il examine les journaux de génération et le code associé pour vous recommander un correctif que vous pouvez appliquer manuellement.
 
@@ -27,11 +27,11 @@ Actuellement, l’agent peut récupérer les statuts de pipeline et vous aider �
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Accès à l’agent de développement d’expérience via Cloud Manager {#how-to-access-the-agent}
+## Accès à l’agent de développement via Cloud Manager {#how-to-access-the-agent}
 
-Vous accédez à l’agent de développement d’expérience par le biais de l’assistant d’IA présent dans les interfaces utilisateur, y compris Cloud Manager ou Experience Hub.
+Vous accédez à l’agent de développement par le biais de l’assistant d’IA présent dans les interfaces utilisateur, notamment Cloud Manager ou Experience Hub.
 
-**Pour accéder à l’agent de développement d’expérience via Cloud Manager :**
+**Pour accéder à l’agent de développement via Cloud Manager :**
 
 1. Pour commencer, cliquez sur [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
 
@@ -49,7 +49,7 @@ Vous accédez à l’agent de développement d’expérience par le biais de l�
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -73,7 +73,7 @@ Vous accédez à l’agent de développement d’expérience par le biais de l�
 
 ## Autorisations {#permissions}
 
-La tâche de dépannage du pipeline de l’agent Experience Development nécessite le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme.
+La tâche de dépannage du pipeline de l’agent de développement nécessite le rôle Cloud Manager - Développeur ou Cloud Manager - Gestionnaire de programme .
 
 
 
