@@ -19,7 +19,7 @@ Les balises intelligentes sont des mots-clés qui non seulement apparaissent dan
 
 Par exemple, les mots disposés par ordre alphabétique dans un dictionnaire sont plus faciles à trouver que les mots dispersés de manière aléatoire. Le balisage a un objectif similaire. Il organise les ressources en fonction de la taxonomie métier, en veillant à ce que les plus pertinentes apparaissent dans les résultats de recherche. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèle, de sorte que seules les images appropriées soient affichées lors de la conception d’une campagne promotionnelle. Qu’il s’agisse de baliser « runners » ou « running chaussures », les utilisateurs n’ont pas à se soucier des fautes de frappe, des variations d’orthographe ou d’autres termes de recherche ; les balises intelligentes les reconnaissent toutes.
 
-En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
+En arrière-plan, la fonctionnalité utilise le framework d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/fr/products/sensei/adobe-sensei.html) applique automatiquement les balises intelligentes aux ressources chargées, par défaut, avec le texte aligné sur la taxonomie métier.
 
 ## Conditions préalables et configuration {#smart-tags-prereqs-config}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets non balisé dans la gestion des ressources numériques (DAM) {#smart-tag-existing-assets}
 
-Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
+Les ressources existantes ou plus anciennes de la gestion des ressources numériques ne sont pas automatiquement balisées intelligemment. Vous devez [Retraiter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=fr#adjusting-load) Assets manuellement pour générer des balises intelligentes pour eux. Une fois le processus terminé, accédez à la page [!UICONTROL Propriétés] de n’importe quelle ressource du dossier. Les balises ajoutées automatiquement sont affichées dans la section [!UICONTROL Balises intelligentes] de l’onglet [!UICONTROL Simple]. Ces balises intelligentes appliquées sont triées par ordre décroissant de [score de confiance](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
