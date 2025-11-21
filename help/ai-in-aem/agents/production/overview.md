@@ -32,7 +32,7 @@ L’agent effectue les tâches suivantes :
 
 ### Mise à jour du contenu {#content-update}
 
-La [ Mise à jour de contenu ](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant dans CMS, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant dans CMS, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Création du formulaire {#form-creation}
 
@@ -48,7 +48,7 @@ La compétence [Création de communication](/help/ai-in-aem/agents/production/co
 
 ### Migration du site {#site-migration}
 
-Le service [ Migration de sites ](/help/ai-in-aem/agents/production/site-migration.md) migre en toute simplicité des sites non AEM vers des environnements AEM (services de diffusion d’expérience), en s’assurant qu’ils sont performants, conformes et prêts pour les agents. L’agent simplifie l’installation et la transformation, ce qui réduit les efforts manuels et le délai de rentabilisation.
+Le service [&#x200B; Migration de sites &#x200B;](/help/ai-in-aem/agents/production/site-migration.md) migre en toute simplicité des sites non AEM vers des environnements AEM (services de diffusion d’expérience), en s’assurant qu’ils sont performants, conformes et prêts pour les agents. L’agent simplifie l’installation et la transformation, ce qui réduit les efforts manuels et le délai de rentabilisation.
 
 L’agent doit être en mesure de travailler avec d’autres compétences d’agent, par exemple :
 
