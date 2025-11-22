@@ -3,15 +3,19 @@ title: Compétence en création de communication
 description: Découvrez les compétences de création de communication de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des communications interactives.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # Compétence de création de communication {#ic-creation-skill}
+
+>[!NOTE]
+>
+> La compétence Création de communications est actuellement en version Alpha. Si vous souhaitez participer, veuillez envoyer une demande à partir de votre adresse e-mail officielle à [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 Les communications interactives sont des documents personnalisés, pilotés par les données, conçus pour la correspondance commerciale telle que les relevés de compte, les documents de politique, les factures, les kits de bienvenue et les avis de prestations. Contrairement aux formulaires qui collectent les entrées des utilisateurs, les communications interactives génèrent des documents de sortie avec un contenu dynamique spécifique au destinataire.
 
@@ -39,7 +43,9 @@ Voici quelques-uns des principaux avantages des compétences en création de com
 * *Créez une communication à partir du fichier image à l’adresse https://[aem-author-url]/path/to/image/file*
 * Créez une lettre en utilisant le fichier PDF à l’adresse https://[aem-author-url]/path/to/pdf/file
 
+
 ## Affiner votre communication {#refine-with-ic-editor}
+
 
 Après avoir créé votre structure de communication initiale à l’aide de l’assistant AI, vous pouvez utiliser l’éditeur de communications interactives pour affiner et améliorer votre document. Dans l’éditeur de communications interactives, vous pouvez fournir des invites en langage naturel pour :
 
@@ -65,4 +71,3 @@ Après avoir créé votre structure de communication initiale à l’aide de l�
 * *Remplacez l’espacement des lignes de la section Conditions générales par 1.5*
 
 Pour plus d’informations sur les fonctionnalités de l’éditeur de communication interactive, voir [Documentation sur les communications interactives](/help/forms/introduction-to-interactive-communication.md).
-
