@@ -4,10 +4,10 @@ description: Découvrez comment rechercher et trouver des ressources dans la vue
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 80%
+source-wordcount: '1938'
+ht-degree: 78%
 
 ---
 
@@ -145,6 +145,19 @@ Cependant, la recherche par l’IA correspond à des mots similaires tels que `G
 De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
 
 ![Recherche sémantique dans la vue Assets](assets/semantic-search.png)
+
+### Activer ou désactiver la recherche par l’IA dans la vue Assets {#enable-disable-ai-search}
+
+Pour activer ou désactiver la recherche par l’IA, procédez comme suit :
+
+1. Accédez à **[!UICONTROL Paramètres]** >> **[!UICONTROL Paramètres généraux]** et sélectionnez l’onglet **[!UICONTROL Rechercher]**.
+
+1. Dans la section **[!UICONTROL Recherche]**, sélectionnez **[!UICONTROL Recherche par l’IA]** pour activer la recherche par l’IA ou **[!UICONTROL Mot-clé]** pour la désactiver.
+
+   ![Recherche sémantique dans la vue Assets](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
 
 ## Rechercher des ressources à l’aide d’[!DNL Adobe Firefly] {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Faites des commentaires sur la documentation en utilisant les options [!UICONTROL Modifier cette page] ![Modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![Créer un problème GitHub](assets/do-not-localize/github-issue.png) disponibles dans la barre latérale de droite.
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support)
 
 
 

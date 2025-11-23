@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
-ht-degree: 86%
+source-wordcount: '5969'
+ht-degree: 85%
 
 ---
 
@@ -149,7 +149,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -400,44 +400,23 @@ Cependant, la recherche par l’IA correspond à des mots similaires tels que `G
 De même, vous pouvez spécifier cette invite en espagnol ou mal orthographier `Woman` comme `Wman` et obtenir toujours les mêmes résultats.
 
 
+### Activer ou désactiver la recherche par l’IA dans la vue Administration {#enable-disable-ai-search}
+
+Exécutez les étapes suivantes pour activer ou désactiver la recherche par l’IA dans la vue Administration :
+
+1. Accédez à **[!UICONTROL Outils]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Configurations Assets]** >> **[!UICONTROL Configuration Assets Omnisearch]**.
+
+1. Dans la section **[!UICONTROL Recherche]**, sélectionnez **[!UICONTROL Recherche par l’IA]** pour activer la recherche par l’IA ou **[!UICONTROL Mot-clé]** pour la désactiver.
+
+   ![Activer ou désactiver la recherche IA](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
 ## Tâches de configuration et d’administration liées à la fonctionnalité de recherche {#configadmin}
 
 ### Configurations d’index de recherche {#searchindex}
 
 La découverte de ressources repose sur l’indexation du contenu de la gestion des ressources numériques, y compris sur les métadonnées. La précision et la rapidité de la découverte de ressources reposent sur une indexation optimisée et des configurations appropriées. Voir [Indexation](/help/operations/indexing.md).
-
-### Recherche visuelle ou par analogie {#configvisualsearch}
-
-La recherche visuelle utilise des balises intelligentes. Après avoir configuré la fonctionnalité de balisage intelligent, procédez comme suit.
-
-1. Dans le CRXDE [!DNL Experience Manager], dans le nœud `/oak:index/lucene`, ajoutez les propriétés et valeurs suivantes et enregistrez les modifications.
-
-   * La propriété `costPerEntry` de type `Double` avec la valeur `10`
-
-   * La propriété `costPerExecution` de type `Double` avec la valeur `2`
-
-   * La propriété `refresh` de type `Boolean` avec la valeur `true`
-
-   Cette configuration permet d’effectuer des recherches à partir de l’index approprié.
-
-1. Pour créer l’index Lucene, dans CRXDE, à l’adresse `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez le nœud nommé `imageFeatures` de type `nt-unstructured`. Dans le nœud `imageFeatures` :
-
-   * ajoutez la propriété `name` de type `String` avec la valeur `jcr:content/metadata/imageFeatures/haystack0` ;
-
-   * ajoutez la propriété `nodeScopeIndex` de type `Boolean` avec la valeur `true` ;
-
-   * ajoutez la propriété `propertyIndex` de type `Boolean` avec la valeur `true` ;
-
-   * ajoutez la propriété `useInSimilarity` de type `Boolean` avec la valeur `true`.
-
-   Enregistrez les modifications.
-
-1. Accédez à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` et ajoutez la propriété `similarityTags` de type `Boolean` avec la valeur de `true`.
-1. Appliquez des balises intelligentes aux ressources dans votre référentiel [!DNL Experience Manager]. Consultez la section [Configuration des balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=fr#configuring).
-1. Dans CRXDE, dans le nœud `/oak-index/damAssetLucene`, définissez la propriété `reindex` sur `true`. Enregistrez les modifications.
-1. (Facultatif) Si vous disposez d’un formulaire de recherche personnalisé, copiez le nœud `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` sur `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
-
-Pour obtenir des informations connexes, consultez les sections [Présentation des balises intelligentes dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=fr) et [Gestion des balises intelligentes](/help/assets/smart-tags.md).
 
 ### Métadonnées obligatoires {#mandatorymetadata}
 
@@ -578,5 +557,5 @@ Accédez à l’emplacement du dossier pour les ressources affichées dans les r
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)
