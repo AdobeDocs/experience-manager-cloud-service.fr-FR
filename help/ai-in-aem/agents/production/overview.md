@@ -3,9 +3,9 @@ title: Présentation de l’agent de production d’expérience
 description: Découvrez comment l’agent de production Experience dans AEM vous permet d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '352'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ L’agent effectue les tâches suivantes :
 
 ### Mise à jour du contenu {#content-update}
 
-La [&#x200B; Mise à jour de contenu &#x200B;](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant dans CMS, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La [ Mise à jour de contenu ](/help/ai-in-aem/agents/production/content-update.md) met à jour facilement du contenu existant dans CMS, y compris des fragments de contenu, des pages, des formulaires et des ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ### Création du formulaire {#form-creation}
 
@@ -48,7 +48,7 @@ La compétence [Création de communication](/help/ai-in-aem/agents/production/co
 
 ### Migration du site {#site-migration}
 
-Le service [&#x200B; Migration de sites &#x200B;](/help/ai-in-aem/agents/production/site-migration.md) migre en toute simplicité des sites non AEM vers des environnements AEM (services de diffusion d’expérience), en s’assurant qu’ils sont performants, conformes et prêts pour les agents. L’agent simplifie l’installation et la transformation, ce qui réduit les efforts manuels et le délai de rentabilisation.
+Le service [ Migration de sites ](/help/ai-in-aem/agents/production/site-migration.md) migre en toute simplicité des sites non AEM vers des environnements AEM (services de diffusion d’expérience), en s’assurant qu’ils sont performants, conformes et prêts pour les agents. L’agent simplifie l’installation et la transformation, ce qui réduit les efforts manuels et le délai de rentabilisation.
 
 L’agent doit être en mesure de travailler avec d’autres compétences d’agent, par exemple :
 
@@ -62,28 +62,3 @@ Pour activer l’agent de production Experience et y accéder, vous devez contac
 
 * `experience-production-agent@adobe.com`
 * ou contactez votre équipe de compte
-
-Pour accélérer le processus, il est utile de fournir les informations suivantes :
-
-* Pour AEM as a Cloud Service
-   * Vous devez fournir vos :
-      * Identifiant d&#39;organisation
-      * `product_id`
-      * `profile_id`
-
-   * Ces valeurs sont disponibles en procédant comme suit :
-      * Votre administrateur doit visiter <https://adminconsole.adobe.com/>
-      * Sélectionner **Adobe Experience Manager as a Cloud Service**
-      * Sélectionnez l’instance AEM appropriée
-      * Sélectionnez le profil qui autorise les opérations de lecture et d’écriture pour le contenu en question
-      * Récupérer l’URL du navigateur
-      * Extrayez les `product_id` et les `profile_id` de l’URL.
-Par exemple, <https://adminconsole.adobe.com/products/profiles/users>.
-
-* Création de documents Edge Delivery
-   * Fournissez les informations suivantes à votre équipe Adobe :
-      * Domaines pertinents
-      * Informations Github pertinentes :
-         * Org
-         * Référentiel
-         * Branche
