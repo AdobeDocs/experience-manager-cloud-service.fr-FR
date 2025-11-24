@@ -4,7 +4,7 @@ description: Découvrez comment diffuser vos projets Cloud Manager à l’aide 
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 93%
@@ -73,7 +73,7 @@ Vous pouvez ajouter Edge Delivery Services de différentes manières en fonction
 
 La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’intégration destinée à vous guider tout au long de l’intégration et de la gestion de votre site Edge Delivery jusqu’à sa [mise en production](/help/journey-onboarding/go-live-checklist.md).
 
-![Liste de tâches de site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png).
+![Liste de tâches de site Edge Delivery dans Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tâche | Description |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ La **liste de tâches Edge Delivery** est une liste de contrôle de tâches d’
 | 8 | Configuration de la validation push | Voir [Configuration de la validation push pour un site Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Mise en production | Voir [Liste de contrôle de mise en production](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441563?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Soumettre un ticket d’assistance {#eds-support-ticket}
 

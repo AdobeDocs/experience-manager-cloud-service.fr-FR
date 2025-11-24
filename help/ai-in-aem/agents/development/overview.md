@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’agent de développement
 description: Découvrez comment l’agent de développement dans AEM analyse les pipelines ayant échoué dans Cloud Manager et crée des journaux pour suggérer des correctifs de code et accélérer le débogage.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Vous accédez à l’agent de développement par le biais de l’assistant d’I
 
 1. Sur la page **Aperçu du programme**, dans la vignette **Pipelines**, cliquez sur un pipeline.
 
-   ![&#x200B; Pipeline sélectionné &#x200B;](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+   ![ Pipeline sélectionné ](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
 
 1. Sur la page **Génération et analyse du code**, notez l’échec du pipeline.
 
@@ -81,8 +81,8 @@ La tâche de dépannage du pipeline de l’agent de développement nécessite le
 
 | Prompt | Résultat |
 | --- | --- |
-| *Répertorier mes pipelines ayant échoué pour le programme Programme principal.* | Bien que les résultats puissent varier, cette invite doit générer un tableau des pipelines ayant échoué, avec une suggestion de suivi pour référencer un pipeline spécifique à analyser. |
-| *Analysez mon pipeline en échec appelé « Pipeline de développement ».* | Cette invite doit entraîner une analyse du pipeline ayant échoué avec des suggestions de correction. |
+| *Répertorier mes pipelines ayant échoué pour le programme Programme principal.* | Bien que les résultats puissent varier, cette invite génère un tableau des pipelines ayant échoué, avec une suggestion de suivi pour référencer un pipeline spécifique à analyser. |
+| *Analysez mon pipeline en échec appelé « Pipeline de développement ».* | Cette invite génère une analyse du pipeline ayant échoué avec des suggestions pour corriger le problème. |
 
 ## Fonctionnalités hors de portée {#out-of-scope-features}
 
