@@ -3,9 +3,9 @@ title: Compétence de mise à jour du contenu
 description: Découvrez la compétence de mise à jour de contenu de l’agent de production d’expérience et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -109,9 +109,9 @@ Dans le cas d&#39;une commande `process` pour déclencher des mises à jour, les
 
   ![Exemple de Jira utilisant la compétence de mise à jour de contenu de l’agent de production Experience](assets/content-update-jira-example.png)
 
-### Activation {#activation}
+## Activation {#activation}
 
-Pour activer l’agent de production Experience avec Jira et y accéder, vous devez envoyer un e-mail à Adobe. Pour commencer, vous pouvez contacter :
+Pour activer l’agent de production Experience et y accéder, vous devez contacter Adobe. Pour commencer, vous pouvez contacter :
 
 * `experience-production-agent@adobe.com`
 * ou contactez votre équipe de compte
