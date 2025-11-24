@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’aperçu de l’éditeur universel
 description: Voici les notes de mise à jour de la version préliminaire de l’éditeur universel.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Ces notes de mise à jour **aperçu** sont fournies à titre indicatif pour que 
 
 ## Nouvelles fonctionnalités à venir {#what-is-new}
 
+* Les en-têtes d’autorisation ont été désactivés au profit du [nom d’utilisateur du développeur local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login).
 * Un menu contextuel est désormais disponible dans l’arborescence structurée en cas de clic droit.
 * Ajout d’une touche de raccourci pour dupliquer les composants.
 
