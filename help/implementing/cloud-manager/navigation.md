@@ -67,7 +67,7 @@ La première est la barre de navigation supérieure d’Experience Platform, qui
 * L’icône ![Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (afficher ou masquer le menu latéral) vous donne accès à divers onglets qui peuvent vous conduire à des parties spécifiques d’un programme individuel. Vous pouvez également basculer entre la console [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
 * L’![icône Bell](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) vous donne accès aux notifications et aux annonces, entre autres.
 
-Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
+Pour plus d’informations sur la barre de navigation supérieure d’Experience Platform, consultez le guide de l’interface utilisateur de Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Barre d’outils du programme {#program-toolbar}
 
@@ -122,7 +122,7 @@ Une carte (ou une ligne dans un tableau) représente chaque programme, fournissa
 * Nom attribué au programme. L’image ci-dessus montre « SecurBank Sample » comme nom du programme.
 * Type de service :
    * **Experience Manager Cloud** — pour les programmes AEM as a Cloud Service
-   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — pour les programmes [AMS (Adobe Managed Services)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/introduction)
 * [Type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) :
    * Sandbox
    * Production
