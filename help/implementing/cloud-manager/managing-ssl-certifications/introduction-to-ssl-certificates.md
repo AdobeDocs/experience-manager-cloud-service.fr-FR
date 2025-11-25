@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1263'
+ht-degree: 16%
 
 ---
 
@@ -55,7 +55,7 @@ Les deux modèles offrent les fonctionnalités générales suivantes pour gérer
 
 ### Certificats SSL gérés par Adobe (DV) {#adobe-managed}
 
-Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [&#x200B; programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Les certificats DV constituent le niveau de certification SSL le plus élémentaire et sont souvent utilisés à des fins de test ou pour sécuriser des sites web avec un chiffrement de base. Les certificats DV sont disponibles dans les [ programmes de production et les programmes Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Une fois le certificat DV créé, Adobe le renouvelle automatiquement tous les trois mois, sauf s’il est supprimé.
 
@@ -154,16 +154,22 @@ Les commandes suivantes `openssl` peuvent être utilisées pour convertir des ce
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitation du nombre de certificats SSL installés {#limitations}
+## Limites {#limitations}
+
+### Nombre de certificats SSL installés {#number-installed-ssl-certs}
 
 À tout moment, Cloud Manager prend en charge jusqu’à 70 certificats installés. Ces certificats peuvent être associés à un ou plusieurs environnements dans votre programme et inclure également des certificats expirés.
 
 Si vous avez atteint la limite, vérifiez vos certificats et envisagez de supprimer tous les certificats expirés. Vous pouvez également regrouper plusieurs domaines dans le même certificat, car un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN).
+
+### Chiffrement des limites de débit pour les certificats DV gérés par Adobe
+
+Les certificats DV gérés par Adobe reposent sur Let’s Encrypt. Outre la limite de Cloud Manager sur les certificats installés, Let’s Encrypt applique ses propres limites de débit. Une limite de clé est la suivante **Nouveaux certificats par ensemble exact d’identifiants** : jusqu’à 5 certificats peuvent être émis pour le même ensemble de noms d’hôtes au cours d’une période de 7 jours. Si cette limite est atteinte, Cloud Manager affiche l’erreur « Chiffrons en bloc » correspondante et ne peut pas créer d’autres certificats pour ce nom d’hôte tant que la fenêtre de limite de taux n’est pas réinitialisée. Pour connaître les dernières valeurs et d’autres limites associées, consultez la documentation [ Chiffrons les limites de taux ](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## En savoir plus {#learn-more}
 
 Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Pour plus d’informations sur l’utilisation de ces fonctionnalités, consultez les documents suivants.
 
 * [Ajouter un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) <!--CQDOC-21758, #4 -->
-* [Gestion des certificats SSL &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
+* [Gestion des certificats SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) <!--CQDOC-21758, #4 -->
 
