@@ -105,11 +105,11 @@ Le tableau suivant détaille ces valeurs et les valeurs supplémentaires disponi
 | `UES_SPLUNK_TOKEN` | Oui | Aucune | Jeton Splunk |
 | `UES_SPLUNK_INDEX` | Oui | Aucune | Index vers lequel écrire les journaux |
 | `UES_SPLUNK_SOURCE` | Oui | `universal-editor-service` | Nom de la source dans les journaux Splunk |
-| `UES_CORS_PRIVATE_NETWORK` | Oui | `false` | Activer l’envoi des en-têtes CORS pour autoriser [ le réseau privé](https://wicg.github.io/private-network-access/#private-network-request). Requis pour les utilisateurs ou utilisatrices de Chrome version 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Oui | `false` | Activer l’envoi des en-têtes CORS pour autoriser [&#x200B; le réseau privé](https://wicg.github.io/private-network-access/#private-network-request). Requis pour les utilisateurs ou utilisatrices de Chrome version 130+ |
 
 >[!NOTE]
 >
->Avant la version [ du 13 août 2024](/help/release-notes/universal-editor/current.md) de l’éditeur universel, les variables suivantes étaient requises dans le fichier `.env`. Ces valeurs seront prises en charge jusqu’au 1er octobre 2024 pour assurer la rétrocompatibilité.
+>Avant la version [&#x200B; du 13 août 2024](/help/release-notes/universal-editor/current.md) de l’éditeur universel, les variables suivantes étaient requises dans le fichier `.env`. Ces valeurs seront prises en charge jusqu’au 1er octobre 2024 pour assurer la rétrocompatibilité.
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
@@ -156,11 +156,11 @@ Une fois définie, chaque appel de mise à jour de contenu doit être dirigé ve
 
 ## Modification d’une page avec le service d’éditeur universel local {#editing}
 
-Avec le service d’éditeur universel [ exécuté localement](#running-ue) et votre page de contenu [ instrumentée pour utiliser le service local](/help/implementing/universal-editor/getting-started.md), vous pouvez maintenant démarrer l’éditeur.
+Avec le service d’éditeur universel [&#x200B; exécuté localement](#running-ue) et votre page de contenu [&#x200B; instrumentée pour utiliser le service local](/help/implementing/universal-editor/getting-started.md), vous pouvez maintenant démarrer l’éditeur.
 
 1. Ouvrez votre navigateur sur `https://localhost:8000/ping`.
 1. Demandez à votre navigateur d’accepter [votre certificat auto-signé](#ue-https).
 1. Une fois le certificat auto-signé approuvé, la page est chargée à l’aide de votre service d’éditeur universel local.
-1. Cliquez sur l’[ Connexion du développeur local ](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) dans la barre d’outils et authentifiez-vous sur votre instance AEM locale.
+1. Cliquez sur l’[&#x200B; Connexion du développeur local &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) dans la barre d’outils et authentifiez-vous sur votre instance AEM locale.
 
 Vous pouvez désormais modifier des pages sur votre instance de test AEM locale à l’aide de votre service d’éditeur universel local.
