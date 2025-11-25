@@ -459,7 +459,7 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
    >[!NOTE]
    >
-   >Lors de la création d’une variation, c’est toujours le Principal **** qui est copié, et non la variation qui est ouverte.
+   >Lors de la création d’une variation, c’est toujours le Principal **&#x200B;**&#x200B;qui est copié, et non la variation qui est ouverte.
 
    >[!NOTE]
    >
@@ -508,7 +508,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >

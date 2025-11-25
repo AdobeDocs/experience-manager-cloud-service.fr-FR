@@ -110,7 +110,7 @@ Ouvrez l’onglet **Arborescence de structure** de la barre d’outils de l’é
 
 >[!NOTE]
 >
->Voir [ Analyse de la structure du fragment de contenu - Arborescence de structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) pour plus d’informations.
+>Voir [&#x200B; Analyse de la structure du fragment de contenu - Arborescence de structure](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) pour plus d’informations.
 
 ## Enregistrement et enregistrement automatique {#saving-autosaving}
 
@@ -176,7 +176,7 @@ Utilisez les variations génératives pour tirer parti de l’IA générative af
 
 Ouvrez l’éditeur de fragment de contenu pour trouver le point d’entrée afin de générer des variations.
 
-Voir [ Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md) pour en savoir plus.
+Voir [&#x200B; Générer des variations - Intégré aux éditeurs AEM](/help/generative-ai/generate-variations-integrated-editor.md) pour en savoir plus.
 
 ### Suppression d’une variation {#delete-variation}
 
@@ -273,7 +273,7 @@ Le champ multiligne s’ouvre alors en plein écran et :
 
   >[!CAUTION]
   >
-  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**dans la variation*.
+  >La synchronisation n’est disponible que pour copier les modifications *de **Principal**&#x200B;dans la variation*.
   >
   >Le transfert des modifications *d’une variation vers **Principal*** n’est pas disponible en tant qu’option.
 
@@ -391,13 +391,13 @@ Si vous sélectionnez l’icône de lien dans la barre d’outils supérieure, u
 
 Par exemple :
 
-![ Éditeur de fragment de contenu - Afficher les références ](assets/cf-authoring-show-references-link.png)
+![&#x200B; Éditeur de fragment de contenu - Afficher les références &#x200B;](assets/cf-authoring-show-references-link.png)
 
 Une fenêtre s’ouvre, répertoriant toutes les références associées. Pour ouvrir une référence, sélectionnez le nom ou le titre, ou l’icône de lien.
 
 Par exemple :
 
-![ Éditeur de fragment de contenu - Afficher les références ](assets/cf-authoring-show-references.png)
+![&#x200B; Éditeur de fragment de contenu - Afficher les références &#x200B;](assets/cf-authoring-show-references.png)
 
 ## Affichage des propriétés et des balises {#view-properties-tags}
 
@@ -495,7 +495,7 @@ Pour vous permettre de collaborer au sein du produit et dans le contexte, l’on
 * Modifier un commentaire existant
 * Supprimer les commentaires
 
-![ Éditeur de fragment de contenu - Onglet Commentaires ](assets/cf-authoring-comments.png)
+![&#x200B; Éditeur de fragment de contenu - Onglet Commentaires &#x200B;](assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
@@ -512,7 +512,7 @@ Vous pouvez **Publier** votre fragment vers votre :
 * Aperçu de l’instance
 * Instance de publication
 
-Vous pouvez publier le fragment à partir de l’éditeur ou de la console. Voir [ Publication et prévisualisation d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
+Vous pouvez publier le fragment à partir de l’éditeur ou de la console. Voir [&#x200B; Publication et prévisualisation d’un fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) pour plus d’informations.
 
 ## Dépublication du fragment {#unpublish-content-fragment}
 
@@ -521,7 +521,7 @@ Vous pouvez également **Dépublier** votre fragment à partir de votre :
 * Aperçu de l’instance
 * Instance de publication
 
-Vous pouvez dépublier votre fragment à partir de l’éditeur ou de la console. Voir [ Dépublication d’un fragment ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
+Vous pouvez dépublier votre fragment à partir de l’éditeur ou de la console. Voir [&#x200B; Dépublication d’un fragment &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) pour plus d’informations.
 
 ## Champs, types de données et icônes {#fields-datatypes-icons}
 
