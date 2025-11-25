@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 69%
+source-wordcount: '2571'
+ht-degree: 68%
 
 ---
 
@@ -445,6 +445,12 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
 **Pour créer une variation :**
 
+>[!NOTE]
+>
+>Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
+>
+>Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
+
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **Créer une variation**.
@@ -453,7 +459,7 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
    >[!NOTE]
    >
-   >Lors de la création d’une variation, c’est toujours le Principal **&#x200B;**&#x200B;qui est copié, et non la variation qui est ouverte.
+   >Lors de la création d’une variation, c’est toujours le Principal **** qui est copié, et non la variation qui est ouverte.
 
    >[!NOTE]
    >
@@ -502,7 +508,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >
