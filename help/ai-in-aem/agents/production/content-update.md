@@ -3,9 +3,9 @@ title: Compétence de mise à jour du contenu
 description: Découvrez la compétence de mise à jour de contenu de l’agent de production d’expérience et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Vous pouvez accéder à la compétence de mise à jour de contenu à partir de :
 
 ## Assistant IA {#ai-assistant}
 
-Vous pouvez accéder aux agents AEM Business par le biais de l’assistant AI.
+Vous pouvez accéder aux agents dans AEM via l’assistant d’IA.
 
 Ouvrez l’assistant d’IA à l’adresse experience.adobe.com, puis commencez à interagir en spécifiant votre invite en langage naturel à l’aide du champ `Ask AI Assistant anything` :
 

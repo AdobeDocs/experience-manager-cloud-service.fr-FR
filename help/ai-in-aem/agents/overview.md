@@ -1,19 +1,19 @@
 ---
-title: Présentation des agents commerciaux
-description: Découvrez les agents commerciaux disponibles dans AEM pour accélérer la création de votre contenu et orchestrer automatiquement les modifications.
+title: Présentation des agents dans AEM
+description: Découvrez les agents disponibles dans AEM pour accélérer la création de votre contenu et orchestrer automatiquement les modifications.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 
-# Présentation des agents commerciaux AEM {#business-agents-overview}
+# Présentation des agents dans AEM {#overview-of-agents-in-aem}
 
-Ces agents commerciaux sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Service afin d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications.
+Ces agents sont disponibles dans Adobe Experience Manager (AEM) as a Cloud Service afin d’accélérer la création de votre contenu et d’orchestrer automatiquement les modifications.
 
 >[!IMPORTANT]
 >

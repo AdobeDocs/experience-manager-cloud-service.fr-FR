@@ -3,9 +3,9 @@ title: Présentation de l’agent Discovery
 description: Découvrez comment utiliser l’agent Discovery pour diffuser du contenu AEM pertinent à la demande par le biais d’invites naturelles et conversationnelles pour une expérience de découverte rationalisée et sans clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Les agences et les partenaires peuvent facilement rechercher des ressources appr
 
 ## Comment accéder à Discovery Agent ? {#access-discovery-agent}
 
-Vous pouvez accéder aux agents AEM Business par le biais de l’assistant AI. Connectez-vous à experience.adobe.com pour commencer à interagir avec l’assistant AI en spécifiant votre invite en langage naturel à l’aide de la zone de recherche :
+Vous pouvez accéder aux agents dans AEM via l’assistant d’IA. Connectez-vous à experience.adobe.com pour commencer à interagir avec l’assistant AI en spécifiant votre invite en langage naturel à l’aide de la zone de recherche :
 
 ![Accéder à l&#39;agent Discovery](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
@@ -152,7 +152,7 @@ Vous pouvez utiliser ces détails de ressource pour évaluer rapidement si une r
 
 >[!NOTE]
 >
->Le champ [&#x200B; URL Dynamic Media &#x200B;](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
+>Le champ [ URL Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) s’affiche dans les résultats de recherche uniquement si la ressource est publiée et que vous disposez d’une licence Dynamic Media valide. De même, le champ [Dynamic Media avec URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) s’affiche uniquement si vous disposez d’une licence Dynamic Media valide et que Dynamic Media avec OpenAPI est activé pour votre instance AEM as a Cloud Service.
 
 ### Fragments de contenu {#discovery-agent-search-results-content-fragments}
 
