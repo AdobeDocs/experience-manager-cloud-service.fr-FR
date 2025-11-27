@@ -36,7 +36,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
 
-   *  d’AEM Forms sur JEE
+   * d’AEM Forms sur JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -88,7 +88,7 @@ Le **mode protégé** est activé par défaut. Laissez-le activé pour les envir
    >
    >Assurez-vous que le serveur AEM Forms est opérationnel. L’aperçu HTML se connecte au serveur CRX pour *générer* un aperçu.
 
-   ![Options d’AEM Forms Designer ](assets/server_options.png)
+   ![Options d’AEM Forms Designer &#x200B;](assets/server_options.png)
 
    Options d’AEM Forms Designer
 

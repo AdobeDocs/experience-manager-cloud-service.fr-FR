@@ -28,7 +28,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Recherchez et ouvrez l’option *Configuration des journaux de journalisation Apache Sling*. Une boîte de dialogue s’affiche:
 
-   ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
+   ![&#x200B; Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
    Option de configuration des journaux de journalisation Apache Sling
 
