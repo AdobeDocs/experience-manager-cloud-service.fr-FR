@@ -3,9 +3,9 @@ title: Compétence en création de communication
 description: Découvrez les compétences de création de communication de l’agent de production d’expérience et comment utiliser le langage naturel pour créer des communications interactives.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
+source-git-commit: 01fce6fcdf1c8ada0422a84fccb9a89f395e2a0e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -79,31 +79,5 @@ Pour activer l’agent de production Experience pour votre organisation, l’act
 * E-mail : `experience-production-agent@adobe.com`
 * Vous pouvez également contacter l’équipe de compte Adobe désignée.
 
-Pour une expérience d’intégration efficace, préparez et fournissez les détails suivants :
-
-Pour **AEM as a Cloud Service**, partagez les identifiants suivants :
-
-* Identifiant d&#39;organisation
-* `product_id`
-* `profile_id`
-
-Votre administrateur AEM peut les localiser en procédant comme suit :
-
-1. Accès à <https://adminconsole.adobe.com/>
-1. Sélection de **Adobe Experience Manager as a Cloud Service**
-1. Choisir l’instance AEM appropriée dans votre environnement
-1. Sélection d’un profil avec des autorisations de lecture/écriture pour le contenu approprié
-1. Copie de l’URL complète du navigateur à partir de cette page
-1. Extraire les valeurs `product_id` et `profile_id` de l’URL\
-   (par exemple, une URL telle que `https://adminconsole.adobe.com/products/profiles/users` contient ces paramètres).
-
-Pour la **création de documents Edge Delivery**, fournissez les éléments suivants à votre équipe Adobe :
-
-* Domaines pour votre environnement Edge Delivery Services
-* Détails GitHub correspondants :
-   * Organisation (Org)
-   * Référentiel (Repo)
-   * Branche
-
-Fournir des informations complètes et précises accélère le processus d’activation et garantit la mise en service rapide de l’agent de production d’expérience.
+Lorsque vous contactez des personnes, veillez à fournir votre identifiant d’organisation AEM as a Cloud Service.
 
