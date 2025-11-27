@@ -20,7 +20,7 @@ ht-degree: 79%
 
 HTML5 forms est une nouvelle fonctionnalité du logiciel Adobe Experience Manager qui permet d’effectuer le rendu des modèles de formulaire XFA au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les appareils mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature manuscrite, pour les appareils mobiles.
 
-Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de plug-ins de navigateur supplémentaires pour les navigateurs. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
+Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de plug-ins de navigateur supplémentaires pour les navigateurs. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63_fr).-->
 
 ![Aperçu du formulaire HTML5](assets/mobile_form_on_an_ipad_date_14.png)
 
