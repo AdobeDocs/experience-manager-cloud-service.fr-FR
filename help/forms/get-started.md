@@ -2,14 +2,13 @@
 title: Prise en main des formulaires HTML5
 description: Pour commencer, déployez le pack complémentaire AEM Forms et importez les formulaires HTML5 existants dans AEM.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 56%
@@ -23,7 +22,7 @@ ht-degree: 56%
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cela vous permet d’étendre vos solutions et workflows actuels aux tablettes ou smartphones disposant de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
-* **Rendu au format HTML5 des modèles de formulaire XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/introductionhtml5.md). 
+* **Rendu au format HTML5 des modèles de formulaires XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/introductionhtml5.md). 
 
 * **Gestion des formulaires :** en outre, AEM comprend de nouvelles fonctionnalités pour simplifier le processus d’organisation et de gestion des formulaires. Vous pouvez activer, désactiver, publier et prévisualiser des formulaires.<!--For more information, see [Introduction to managing forms](/help/forms/using/introduction-managing-forms.md).-->
 

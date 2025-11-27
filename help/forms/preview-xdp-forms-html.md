@@ -1,14 +1,12 @@
 ---
 title: Générer l’aperçu HTML5 d’un formulaire XDP
 description: L’onglet Aperçu HTML dans LiveCycle Designer permet de prévisualiser les formulaires tels qu’ils apparaissent dans un navigateur.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 96%
@@ -38,7 +36,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
 
-   * d’AEM Forms sur JEE
+   *  d’AEM Forms sur JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -59,7 +57,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 Le **mode protégé** est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez le désactiver pour qu’un environnement de développement effectue un aperçu HTML5 de formulaires dans Designer. Procédez comme suit pour le désactiver :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
+1. Connectez-vous à la console web AEM en tant qu’administrateur ou administratrice.
 
    * L’URL d’AEM Forms on OSGi est `https://'[server]:[port]'/system/console/configMgr`
    * L’URL d’AEM Forms on JEE est `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -90,7 +88,7 @@ Le **mode protégé** est activé par défaut. Laissez-le activé pour les envir
    >
    >Assurez-vous que le serveur AEM Forms est opérationnel. L’aperçu HTML se connecte au serveur CRX pour *générer* un aperçu.
 
-   ![Options d’AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 
@@ -120,9 +118,9 @@ Le test de votre formulaire à l’aide d’une source de données d’exemple p
 
 1. Sélectionnez **Fichier > Propriétés du formulaire**.
 
-1. Cliquez sur l’onglet **Aperçu** et, dans la zone Fichier de données, indiquez le chemin d’accès complet au fichier de données de test. Vous pouvez également vous servir du bouton Parcourir pour naviguer jusqu’au fichier.
+2. Cliquez sur l’onglet **Aperçu** et, dans la zone Fichier de données, indiquez le chemin d’accès complet au fichier de données de test. Vous pouvez également vous servir du bouton Parcourir pour naviguer jusqu’au fichier.
 
-1. Cliquez sur **OK**. La prochaine fois que vous prévisualiserez le formulaire dans l’onglet **Aperçu HTML**, les valeurs des données de l’exemple de fichier XML apparaîtront dans les objets respectifs.
+3. Cliquez sur **OK**. La prochaine fois que vous prévisualiserez le formulaire dans l’onglet **Aperçu HTML**, les valeurs des données de l’exemple de fichier XML apparaîtront dans les objets respectifs.
 
 ## Aperçu des formulaires dans un référentiel {#html-preview-of-forms-in-forms-manager}
 

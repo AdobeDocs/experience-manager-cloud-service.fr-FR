@@ -2,17 +2,16 @@
 title: Créer un profil personnalisé pour HTML5 forms
 description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu des formulaires HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 96%
+source-wordcount: '680'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 96%
 
 Un profil est un nœud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 Forms pour personnaliser l’apparence, le comportement et les interactions de HTML5 Forms. Un nœud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez mettre le nœud directement sous le dossier `/content` ou tout autre sous-dossier du dossier `/content`.
 
-Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**.  Le script de génération du nœud figure dans le dossier /libs/xfaforms/profile.
+Le nœud de profil possède la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**.  Le script de génération du nœud figure dans le dossier /libs/xfaforms/profile.
 
 Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi afin de générer le formulaire demandé.
 
@@ -67,7 +66,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 1. Copiez le paramètre par défaut du nœud et collez le nœud dans un autre dossier(*/content/profiles*) intitulé *hrform*.
 
-1. Sélectionnez le nouveau nœud, *hrform*, puis ajoutez une propriété de chaîne : *sling:resourceType* avec la valeur : *hrform/demo*.
+1. Sélectionnez le nouveau nœud, *hrform*, puis ajoutez une propriété de chaîne : *sling:resourceType* avec la valeur : *hrform/demo*.
 
 1. Cliquez sur Enregistrer tout dans le menu de la barre d’outils pour enregistrer les modifications.
 
@@ -85,4 +84,4 @@ Après avoir créé un profil personnalisé, ajoutez-lui des informations du mot
 
 1. Pour vérifier que le profil est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Pour vérifier les formulaires, **Importez les formulaires** de votre système de fichiers local vers AEM Forms et [affichez l’aperçu du formulaire](/help/forms/previewing-forms.md) sur l’instance d’auteur du serveur AEM.
+Pour vérifier les formulaires, **Importez les formulaires** de votre système de fichiers local vers AEM Forms et [affichez l’aperçu du formulaire](/help/forms/previewing-forms.md) sur l’instance de création du serveur AEM.

@@ -2,17 +2,15 @@
 title: Modifiier les styles par défaut des formulaires HTML5
 description: Le style de formulaires HTML5 est basé sur le code CSS. Vous pouvez modifier les styles par défaut du formulaire.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 93%
+source-wordcount: '391'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +51,7 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
    1. Recherchez la ligne suivante dans la page du rendu :
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=« xfaforms.profile » />
 
    1. Insérez les éléments suivants sous la ligne ci-dessus pour inclure la feuille de style :
 

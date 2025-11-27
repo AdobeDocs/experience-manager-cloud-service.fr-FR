@@ -3,19 +3,17 @@ title: Architecture de HTML5 forms
 description: Les formulaires HTML5 sont déployés sous la forme d’un package au sein de l’instance intégrée d’AEM et expose la fonctionnalité sous la forme d’un point d’entrée REST sur HTTP/S à l’aide de l’architecture Apache Sling RESTful.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 97%
+source-wordcount: '1991'
+ht-degree: 95%
 
 ---
 
@@ -187,5 +185,5 @@ Pour plus d’informations sur les bibliothèques clientes CQ, voir [Documentati
 
 Comme décrit ci-dessus, le rendu de profil JSP appelle le service de formulaires grâce à une inclusion sling. Ce JSP définit également diverses options de débogage en fonction de la configuration de l’administration ou des paramètres de requête.
 
-HTML5 forms permet aux développeurs de créer un profil et un rendu du profil pour personnaliser l’aspect des formulaires. Par exemple, les formulaires HTML permettent aux développeurs d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
+HTML5 forms permet aux développeurs de créer un profil et un rendu du profil pour personnaliser l’aspect des formulaires. Par exemple, les formulaires HTML permettent aux équipes de développement d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
 Pour plus d’informations sur la création de profils personnalisés, reportez-vous à [Création d’un profil personnalisé](/help/forms/custom-profile.md).

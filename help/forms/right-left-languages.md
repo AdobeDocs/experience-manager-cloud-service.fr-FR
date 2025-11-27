@@ -2,14 +2,13 @@
 title: Langues s’écrivant de droite à gauche dans les formulaires HTML5
 description: Les formulaires HTML5 peuvent être affichés ou remplis dans des langues écrites de droite à gauche, telles que l’hébreu.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 feature: HTML5 Forms,Mobile Forms
 exl-id: c65f425b-b0bc-4ec7-ac56-7f24bd8b52d8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 77%

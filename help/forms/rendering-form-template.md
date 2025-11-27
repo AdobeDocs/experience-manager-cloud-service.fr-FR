@@ -2,14 +2,13 @@
 title: Rendu du modèle de formulaire pour des formulaires HTML5
 description: Les profils de formulaires HTML5 sont associés aux rendus de profil. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 95%
@@ -23,9 +22,9 @@ ht-degree: 95%
 
 ## Point d’entrée de rendu {#render-endpoint}
 
-Les formulaires HTML5 intègrent la notion de **Profils**, lesquels sont exposés en tant que points d’entrée REST pour activer le rendu sur périphériques mobile des modèles de formulaire. Ces profils sont associés à des **rendus de profil**. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point d’entrée du rendu. Le point d’netrée de rendu par défaut du formulaire pointant vers le profil « default » ressemble à :
+Les formulaires HTML5 intègrent la notion de **Profils**, lesquels sont exposés en tant que points d’entrée REST pour activer le rendu sur périphériques mobile des modèles de formulaires. Ces profils sont associés à des **rendus de profil**. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point d’entrée du rendu. Le point d’netrée de rendu par défaut du formulaire pointant vers le profil « default » ressemble à :
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
+https://<*host*>:<*port*>/content/xfaforms/profiles/default.html?contentRoot=<*path of the folder containg form xdp*>&template=<*name of the xdp*>
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

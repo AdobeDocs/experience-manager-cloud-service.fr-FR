@@ -3,14 +3,12 @@ title: Activer la journalisation des formulaires au format HTML5
 description: L’utilitaire de journal permet la création d'un journal pour un formulaire et vous permet de déboguer les problèmes liés au formulaire.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 96%
@@ -30,7 +28,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Recherchez et ouvrez l’option *Configuration des journaux de journalisation Apache Sling*. Une boîte de dialogue s’affiche:
 
-   ![&#x200B; Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
+   ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
    Option de configuration des journaux de journalisation Apache Sling
 
@@ -172,9 +170,9 @@ Par exemple :
 >[!NOTE]
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). Par conséquent, pour la configuration de journal 2-b6, les niveaux de journalisation pour les différentes catégories sont les suivants :
->&#x200B;>a (xfa) : 2 (niveau par défaut ERROR)
->&#x200B;>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
->&#x200B;>a (xfaPerf) : 2 (niveau par défaut ERROR)
+>a (xfa) : 2 (niveau par défaut ERROR)
+>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
+>a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
 
