@@ -3,9 +3,9 @@ title: Compétence de mise à jour du contenu
 description: Découvrez la compétence de mise à jour de contenu de l’agent de production d’expérience et ce qu’elle peut vous apporter.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Les compétences de mise à jour de contenu de l’agent de production Experience automatisent la production de contenu afin d’accélérer les tâches quotidiennes pour Adobe Experience Manager (AEM) as a Cloud Service et Edge Delivery Services.
 
-La compétence de mise à jour de contenu met à jour le contenu existant dans CMS, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
+La compétence de mise à jour de contenu met à jour le contenu existant, y compris les fragments de contenu, les pages, les formulaires et les ressources. L’agent peut effectuer des actions telles que la mise à jour, la suppression, le remplacement ou l’ajout d’éléments de contenu pour que les expériences restent exactes et à jour. Les entrées peuvent être des descriptions en langage naturel et, lorsqu’elles sont utilisées avec des PDF et des captures d’écran Jira, elles peuvent également fournir des entrées.
 
 ## Vue d’ensemble {#overview}
 
