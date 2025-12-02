@@ -56,7 +56,7 @@ Consultez également la section [Réseau CDN géré par Adobe](https://www.aem.l
 
       1. Dans la liste déroulante **Domaine**, sélectionnez le nom de domaine que vous souhaitez utiliser.<br>Aucun domaine vérifié disponible dans la liste déroulante ? Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-      1. Dans la liste déroulante **certificat SSL**, sélectionnez un certificat que vous souhaitez utiliser.<br>Aucun certificat SSL disponible dans la liste déroulante ? Voir [ Ajouter un certificat SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+      1. Dans la liste déroulante **certificat SSL**, sélectionnez un certificat que vous souhaitez utiliser.<br>Aucun certificat SSL disponible dans la liste déroulante ? Voir [&#x200B; Ajouter un certificat SSL &#x200B;](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
       1. Cliquez sur **Enregistrer**.
 
