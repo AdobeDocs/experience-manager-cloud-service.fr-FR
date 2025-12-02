@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 4935fbf5f0eb10f2f17280fb32f07d99f69eb875
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 7%
+source-wordcount: '584'
+ht-degree: 5%
 
 ---
 
@@ -36,28 +36,43 @@ Consultez également la section [Réseau CDN géré par Adobe](https://www.aem.l
    | Je souhaite ajouter une configuration de réseau CDN à un site *existant* Edge Delivery dans Cloud Manager | a. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône Pages web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.<br>b. Dans le tableau Edge Delivery, au bout d’une ligne à laquelle aucun domaine n’est associé, cliquez sur ![icône Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Cliquez sur **Configurer le réseau CDN**. |
    | Je souhaite ajouter une configuration de réseau CDN dans Cloud Manager | a. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône de réseau social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mappages de domaine**.<br>b. Dans le coin supérieur droit de la page Mappages de domaine, cliquez sur **Ajouter**. |
 
-1. Dans la boîte de dialogue **Mapper le domaine au réseau CDN**, sélectionnez votre type de réseau CDN et la configuration associée en sélectionnant l’une des options suivantes :
+1. Dans la boîte de dialogue **Mapper le domaine au réseau CDN**, sélectionnez l’un des types de réseau CDN suivants :
 
-   | Type de réseau CDN | Détails de la configuration |
-   | --- | --- |
-   | Réseau CDN géré par Adobe (recommandé) | Sous **Détails de la configuration**, procédez comme suit :<br>a. Dans la liste déroulante **Domaine**, sélectionnez le nom de domaine que vous souhaitez utiliser.<br>Aucun domaine vérifié disponible dans la liste déroulante ? Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
-   | Autre fournisseur de réseau CDN | Sélectionnez cette option si vous utilisez votre propre fournisseur de réseau CDN et non le réseau CDN géré par Adobe disponible.<br>Sous **Détails de configuration**, dans la liste déroulante **Domaine**, sélectionnez le nom de domaine à utiliser.<br>Aucun domaine vérifié disponible dans la liste déroulante ? Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   * **Réseau CDN géré par Adobe (recommandé)** - Un réseau CDN géré par Adobe est utilisé pour cette configuration. Il comprend des fonctions de configuration et de gestion automatisées, ainsi que des fonctions de sécurité intégrées.
+   * **Autre fournisseur de réseau CDN** - Un réseau de fournisseur de réseau CDN autogéré est utilisé pour cette configuration.
 
-   ![Boîte de dialogue Mapper le domaine au réseau CDN avec le bouton radio Adobe Managed CDN sélectionné](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+1. En fonction du type de réseau CDN sélectionné à l’étape précédente, procédez comme suit :
+
+   * **Réseau CDN géré par Adobe**
+
+     ![Boîte de dialogue Mapper le domaine au réseau CDN avec le bouton radio Adobe Managed CDN sélectionné](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
+
+      1. Dans la liste déroulante **Origine**, sélectionnez l’une des options suivantes :
+
+         | Liste déroulante Origine | Description |
+         | --- | --- |
+         | Sites | Sélectionnez un site Edge Delivery. |
+         | Environnement | Sélectionnez un environnement Cloud Service spécifique que vous souhaitez cibler dans votre configuration AEM.<br>Dans la liste déroulante **Niveau**, sélectionnez l’une des options suivantes :<br>· Sélectionnez **Publier** pour cibler un environnement de production en ligne où le contenu est diffusé aux utilisateurs finaux et utilisatrices finales.<br>· Sélectionnez **Aperçu** pour les environnements d’évaluation ou hors production où vous testez les modifications avant qu’elles ne soient mises en ligne. |
+
+      1. Dans la liste déroulante **Domaine**, sélectionnez le nom de domaine que vous souhaitez utiliser.<br>Aucun domaine vérifié disponible dans la liste déroulante ? Consultez [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. Dans la liste déroulante **certificat SSL**, sélectionnez un certificat que vous souhaitez utiliser.<br>Aucun certificat SSL disponible dans la liste déroulante ? Voir [ Ajouter un certificat SSL ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
+      1. Cliquez sur **Enregistrer**.
+
+   * **Autre fournisseur de réseau CDN**
+
+     ![Boîte de dialogue Mapper le domaine au réseau CDN avec le bouton radio Adobe Managed CDN sélectionné](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
+
+     Suivez les étapes de configuration répertoriées pour appliquer les paramètres requis dans votre réseau CDN et confirmer le mappage. Voir aussi [Ajouter un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. Cliquez sur **J’ai configuré mon réseau CDN**.
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
-1. Dans le champ **Domaine**, saisissez le nom d’hôte destiné au client que vous souhaitez servir (par exemple, `www.example.com`)
-1. dans la liste déroulante **Origine**, sélectionnez l’une des options suivantes :
+   <!-- In the **Domain** field, enter the customer-facing hostname you want to serve (for example, `www.example.com`) -->
 
-   | Liste déroulante Origine | Description |
-   | --- | --- |
-   | Sites | Sélectionnez un site Edge Delivery. |
-   | Environnement | Sélectionnez un environnement Cloud Service spécifique que vous souhaitez cibler dans votre configuration AEM.<br>Dans la liste déroulante **Niveau**, sélectionnez l’une des options suivantes :<br>· Sélectionnez **Publier** pour cibler un environnement de production en ligne où le contenu est diffusé aux utilisateurs finaux et utilisatrices finales.<br>· Sélectionnez **Aperçu** pour les environnements d’évaluation ou hors production où vous testez les modifications avant qu’elles ne soient mises en ligne. |
-
-1. Cliquez sur **Enregistrer la configuration**.
-
-   Adobe vous recommande de tester le mappage de domaine.
+1. Adobe vous recommande de tester le mappage de domaine.
 
 ## Test du mappage de domaine {#test-domain-mapping}
 
