@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
+source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1976'
 ht-degree: 2%
 
 ---
@@ -104,7 +104,7 @@ Voir aussi [Tableau de bord des licences](/help/implementing/cloud-manager/licen
 
 ## Gestion des demandes de contenu {#managing-content-requests}
 
-Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [&#x200B; règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
+Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu Cloud Service](#content-requests-variances), les requêtes de contenu peuvent être plus élevées que prévu pour plusieurs raisons, un thread commun étant le trafic atteignant le réseau CDN.  En tant que client AEM, il est à votre avantage de surveiller et de gérer vos demandes de contenu pour respecter votre budget de licence.  La gestion des requêtes de contenu est généralement une combinaison de techniques d’implémentation et de [ règles de filtrage du trafic](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Techniques d’implémentation pour gérer les demandes de contenu {#implementation-techniques-to-manage-crs}
 
@@ -113,6 +113,7 @@ Comme mentionné dans la section ci-dessus [Variances des requêtes de contenu C
 * Trouvez l’équilibre entre vos besoins de fraîcheur de contenu et le coût de licence AEM pour tout moteur de recherche personnalisé que vous avez intégré à votre site.  Un robot d’exploration trop agressif peut consommer beaucoup de requêtes de contenu.
 * Gérez les redirections comme côté serveur (statut 301 ou 302) plutôt que côté client (statut 200 avec redirection JavaScript) pour éviter deux requêtes de contenu distinctes.
 * Combiner ou réduire les appels d’API, qui sont des réponses JSON d’AEM pouvant être chargées pour effectuer le rendu de la page.
+* Assurez-vous que l’agent utilisateur du navigateur est correctement transmis à AEM afin de tirer parti de la règle d’exclusion de demande de contenu « moteur de recherche bien connu » décrite ci-dessus.  Parfois, l’agent utilisateur d’origine est perdu avec certaines implémentations découplées ou configurations de réseau CDN, ce qui peut empêcher l’exclusion et entraîner des demandes de contenu plus élevées que si l’agent utilisateur était transmis.
 
 ### Règles de filtrage du trafic pour la gestion des demandes de contenu {#traffic-filter-rules-to-manage-crs}
 
@@ -129,4 +130,4 @@ trafficFilters:
       action: block
 ```
 
-* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain.  Cela peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [&#x200B; règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez peut-être autoriser à une limite de taux générique.
+* Certains robots ont frappé un site très lourdement un jour et disparaissent le lendemain.  Cela peut empêcher toute tentative de blocage d’une adresse IP ou d’un agent utilisateur spécifique.  Une approche générique consiste à introduire une [ règle de limitation des taux](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Examinez les [exemples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) et créez une règle qui correspond à votre tolérance pour un taux rapide de requêtes.  Consultez la syntaxe [Structure de condition](/help/security/traffic-filter-rules-including-waf.md#condition-structure) pour connaître les exceptions que vous souhaitez peut-être autoriser à une limite de taux générique.
