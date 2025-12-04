@@ -4,9 +4,9 @@ description: Découvrez comment configurer les informations d’identification e
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '2028'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,38 @@ Le réseau CDN fourni par Adobe dispose de plusieurs fonctionnalités et service
 
 Chacune de ces options, y compris la syntaxe de configuration, est décrite dans sa propre section ci-dessous.
 
-Il existe une section sur la [rotation de clés](#rotating-secrets), qui est une bonne pratique de sécurité.
+Les secrets d’environnement ou de pipeline (étape de déploiement) peuvent être référencés avec la syntaxe `${{..}}` et peuvent être utilisés partout où une valeur littérale peut être utilisée, dans des conditions ou des paramètres.
 
->[!NOTE]
-> Les secrets définis comme des variables d’environnement doivent être considérés comme immuables. Au lieu de modifier leur valeur, vous devez créer un nouveau secret avec un nouveau nom et référencer ce secret dans la configuration. Si vous ne le faites pas, la mise à jour des secrets sera peu fiable.
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->Ne supprimez pas les variables d’environnement référencées dans votre configuration de réseau CDN. Cela peut entraîner des échecs de mise à jour de la configuration de votre réseau CDN (par exemple, la mise à jour de règles ou de domaines personnalisés et de certificats).
+Voici quelques instructions à garder à l’esprit lorsque vous utilisez des secrets :
+
+* Les secrets d’environnement doivent être déployés en tant que variable d’environnement de type secret [Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). Pour le champ Service appliqué , sélectionnez Tout.
+* Les références secrètes ne sont pas interpolées à l&#39;intérieur des chaînes (p ex. `"Token ${{AUTH_TOKEN}}"` ne fonctionnera pas)
+* Un secret d’environnement référencé ne doit pas être supprimé s’il est toujours référencé dans la configuration.
+
+  >[!WARNING]
+  >Ne supprimez pas les variables d’environnement référencées dans votre configuration de réseau CDN. Cela peut entraîner des échecs de mise à jour de la configuration de votre réseau CDN (par exemple, la mise à jour de règles ou de domaines personnalisés et de certificats).
+
+* Les secrets doivent être échangés périodiquement. Il existe une section sur la [rotation de clés](#rotating-secrets), qui est une bonne pratique de sécurité.
+
+  >[!NOTE]
+  > Les secrets définis comme des variables d’environnement doivent être considérés comme immuables. Au lieu de modifier leur valeur, vous devez créer un nouveau secret avec un nouveau nom et référencer ce secret dans la configuration. Si vous ne le faites pas, la mise à jour des secrets sera peu fiable.
+
 
 ## Valeur de l’en-tête HTTP du réseau CDN géré par le client {#CDN-HTTP-value}
 
@@ -41,7 +66,7 @@ La valeur *X-AEM-Edge-Key* est référencée par les propriétés `edgeKey1` et 
 Pour plus d’informations sur le débogage et les erreurs courantes, consultez la section [Erreurs courantes](/help/implementing/dispatcher/cdn.md#common-errors).
 
 >[!WARNING]
->L’accès direct sans clé X-AEM-Edge-Key correcte sera refusé pour toutes les requêtes correspondant à la condition (dans l’exemple ci-dessous, cela signifie toutes les requêtes au niveau de publication). Si vous devez introduire progressivement l’authentification, reportez-vous à la section [&#x200B; Migration en toute sécurité pour réduire le risque de trafic bloqué &#x200B;](#migrating-safely).
+>L’accès direct sans clé X-AEM-Edge-Key correcte sera refusé pour toutes les requêtes correspondant à la condition (dans l’exemple ci-dessous, cela signifie toutes les requêtes au niveau de publication). Si vous devez introduire progressivement l’authentification, reportez-vous à la section [ Migration en toute sécurité pour réduire le risque de trafic bloqué ](#migrating-safely).
 
 ```
 kind: "CDN"
@@ -63,7 +88,7 @@ data:
 
 Voir la section [Utiliser les pipelines de configuration](/help/operations/config-pipeline.md#common-syntax) pour obtenir une description des propriétés situées au-dessus du nœud `data`. La valeur de la propriété `kind` doit être *CDN* et la propriété `version` doit être définie sur `1`.
 
-Pour plus d’informations[&#x200B; consultez l’étape de tutoriel &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)Configurer et déployer une règle CDN de validation d’en-tête HTTP .
+Pour plus d’informations[ consultez l’étape de tutoriel ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)Configurer et déployer une règle CDN de validation d’en-tête HTTP .
 
 Les propriétés supplémentaires sont les suivantes :
 
@@ -72,7 +97,7 @@ Les propriétés supplémentaires sont les suivantes :
 * Authentificateurs : vous permet de déclarer un type de jeton ou d’informations d’identification, qui est dans ce cas une clé Edge. Il comprend les propriétés suivantes :
    * name : chaîne descriptive.
    * type : doit être `edge`.
-   * edgeKey1 : valeur de *X-AEM-Edge-Key*, qui doit référencer une variable d’environnement de type secret Cloud Manager [&#128279;](/help/operations/config-pipeline.md#secret-env-vars). Pour le champ Service appliqué , sélectionnez Tout. Il est recommandé que la valeur (par exemple, `${{CDN_EDGEKEY_052824}}`) reflète le jour où elle a été ajoutée.
+   * edgeKey1 : valeur de *X-AEM-Edge-Key*, qui doit référencer une variable d’environnement de type secret Cloud Manager [](/help/operations/config-pipeline.md#secret-env-vars). Pour le champ Service appliqué , sélectionnez Tout. Il est recommandé que la valeur (par exemple, `${{CDN_EDGEKEY_052824}}`) reflète le jour où elle a été ajoutée.
    * edgeKey2 - utilisé pour la rotation des secrets, qui est décrite dans la [section rotation des secrets](#rotating-secrets) ci-dessous. Définissez-le de la même manière que edgeKey1. Au moins un des `edgeKey1` et `edgeKey2` doit être déclaré.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés, et s’il s’agit du niveau de publication et/ou d’aperçu.  Il comprend :
@@ -173,7 +198,7 @@ Les propriétés supplémentaires sont les suivantes :
 * Authentifiants : vous permet de déclarer un type de jeton ou d’informations d’identification, qui est dans ce cas une clé de purge. Il comprend les propriétés suivantes :
    * name : chaîne descriptive.
    * type : doit être purgé.
-   * purgeKey1 - sa valeur doit référencer une variable d’environnement de type secret Cloud Manager [&#128279;](/help/operations/config-pipeline.md#secret-env-vars). Pour le champ Service appliqué , sélectionnez Tout. Il est recommandé que la valeur (par exemple, `${{CDN_PURGEKEY_031224}}`) reflète le jour où elle a été ajoutée.
+   * purgeKey1 - sa valeur doit référencer une variable d’environnement de type secret Cloud Manager [](/help/operations/config-pipeline.md#secret-env-vars). Pour le champ Service appliqué , sélectionnez Tout. Il est recommandé que la valeur (par exemple, `${{CDN_PURGEKEY_031224}}`) reflète le jour où elle a été ajoutée.
    * purgeKey2 - utilisé pour la rotation des secrets, qui est décrite dans la section [rotation des secrets](#rotating-secrets) ci-dessous. Au moins un des `purgeKey1` et `purgeKey2` doit être déclaré.
 * Règles : vous permet de déclarer quels authentificateurs doivent être utilisés, et s’il s’agit du niveau de publication et/ou d’aperçu.  Il comprend :
    * name : chaîne descriptive.
@@ -228,7 +253,7 @@ En outre, la syntaxe comprend :
    * type - doit être `basic`
    * un tableau contenant jusqu’à 10 informations d’identification, chacune d’elles incluant les paires nom/valeur suivantes, que les utilisateurs finaux peuvent saisir dans la boîte de dialogue d’authentification de base :
       * user : nom de l’utilisateur.
-      * password : sa valeur doit référencer une variable d’environnement de type secret Cloud Manager [&#128279;](/help/operations/config-pipeline.md#secret-env-vars), avec **All** sélectionné comme champ de service.
+      * password : sa valeur doit référencer une variable d’environnement de type secret Cloud Manager [](/help/operations/config-pipeline.md#secret-env-vars), avec **All** sélectionné comme champ de service.
 * Règles : permet de déclarer quels authentificateurs doivent être utilisés et quelles ressources doivent être protégées. Chaque règle comprend :
    * name : chaîne descriptive.
    * when : condition qui détermine le moment où la règle doit être évaluée, en fonction de la syntaxe contenue dans l’article [Règles de filtrage de trafic](/help/security/traffic-filter-rules-including-waf.md). En règle générale, il comprend une comparaison du niveau de publication ou de chemins d’accès spécifiques.
