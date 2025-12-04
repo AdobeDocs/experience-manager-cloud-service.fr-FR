@@ -4,10 +4,10 @@ description: Découvrez comment ajouter un site Edge Delivery à votre programme
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 92%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -58,6 +58,12 @@ Dans le coin supérieur droit de la page, cliquez sur ![Icône Lien ou Ajouter](
    | **3** | Créez une demande d’extraction dans le référentiel Git pour les modifications que vous venez de créer, puis fusionnez-la en `main` pour valider le code. |
 
 1. Cliquez sur **Vérifier**.
+
+   >[!NOTE]
+   >
+   >Si votre site Edge Delivery Services utilise l’authentification Helix, le défi de vérification n’est pas accessible. Désactivez temporairement l’authentification, effectuez la vérification du site, puis réactivez l’authentification.
+
+
 
 Une fois le référentiel vérifié, son statut dans le tableau des sites Edge Delivery est mis à jour. Un cercle vert avec une coche blanche à l’intérieur indique le statut.
 
